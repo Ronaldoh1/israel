@@ -14,3 +14,13 @@ python3 tools/embed_israel.py --check  # verify: exits 1 if sophia.html is out o
 ```
 
 Commit `index.html` and `sophia.html` together.
+
+## Sophia pillar cards (Observe, Collapse, Reignite)
+
+Root cards compute their figures from their children when the page loads (`propagateLiveTotals()` in `sophia.html`):
+
+- **Entities mapped**: the sum over every *live* child module (a `NAV_ROOTS` / `NAV_TREE` leaf with `sim` and no `soon`, or an enabled sub-archive entry), read from the child's `"N entities"` (or `"N scenes"`) description.
+- **Footer**: `N live modules · M coming`.
+- **Description**: a root card's `desc` can embed `{modules}`, `{scenes}`, `{entities}` and `{deepdives}`, which are filled from the children, e.g. `'{modules} live — {scenes} and {entities} between them.'`
+
+Adding or updating a child module (its `sim`, `soon` flag or the counts in its `desc`) updates its root card automatically. Avoid typing child totals into a root card's description; use the tokens instead.
