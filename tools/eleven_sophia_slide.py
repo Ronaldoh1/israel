@@ -13,9 +13,9 @@ SLIDE = '''
     <div class="spot-record"><b>Start here</b> — a four-minute intro to the Israel simulation. Double-tap each document to reveal the record.</div>
   </div><!--/ELEVEN-SLIDE-->
   <!--BOOK-SLIDE--><div class="spot-slide" data-target="book" style="--spot-color:#E9DABF;--spot-glow:rgba(233,218,191,0.35)">
-    <div class="spot-top"><span class="spot-flag">📖</span><span class="spot-title">Read It as a Book</span></div>
-    <div class="spot-desc">The Israel Architecture, Book One: the stages to 1948, written as a history you can read straight through.</div>
-    <div class="spot-record"><b>Every claim sourced</b>: tap a note for its source, a figure for who was connected. Bookmarks and notes included.</div>
+    <div class="spot-top"><span class="spot-flag">📖</span><span class="spot-title">The Library</span></div>
+    <div class="spot-desc">The Israel Architecture as a shelf of books: The Baseline and The Road to 1948 open now, more volumes in preparation.</div>
+    <div class="spot-record"><b>Written as history</b>, every claim tied to its source. Search, bookmarks and notes included.</div>
   </div><!--/BOOK-SLIDE-->'''
 anchor = '<div class="spot-slide" data-target="volumes"'
 i = s.index(anchor); i = s.rfind('\n', 0, i)

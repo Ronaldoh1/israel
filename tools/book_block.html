@@ -10,7 +10,7 @@
 body.book-open{overflow:hidden}
 body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{display:none !important}
 #bookView ::selection{background:rgba(184,134,43,.35)}
-.bk-scroll:focus{outline:none}
+.bk-scroll:focus,.bk-lib:focus{outline:none}
 .bk-scroll{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
 .bk-page{max-width:36em;margin:0 auto;padding:84px 26px 140px;font-size:var(--fs);line-height:1.64}
 .bk-page p{margin:0;text-indent:1.4em;hyphens:auto;-webkit-hyphens:auto}
@@ -125,12 +125,85 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-toast{position:absolute;left:50%;top:64px;transform:translateX(-50%);z-index:9;background:var(--ink);color:var(--paper);font:600 14px/1.3 system-ui,sans-serif;padding:10px 16px;border-radius:999px;opacity:0;transition:opacity .3s;pointer-events:none}
 .bk-toast.on{opacity:1}
 @media (max-width:600px){#bookView{--fs:18px}.bk-page{padding:72px 20px 130px}.bk-title h1{font-size:2.1em}.bk-open h1{font-size:2em}.bk-fig,.bk-two{margin-left:-6px;margin-right:-6px}}
+/* myth callout */
+.bk-myth{margin:0 0 1.4em;border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--card);border-radius:4px;overflow:hidden;font-size:.9em;line-height:1.5}
+.bk-myth .mh{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--rule);font:600 12px/1.2 system-ui,-apple-system,sans-serif;letter-spacing:.06em;color:var(--accent)}
+.bk-myth .mt,.bk-myth .mr{padding:12px 14px}
+.bk-myth .mt{border-bottom:1px dashed var(--rule)}
+.bk-myth .k{display:block;font:700 12.5px/1.2 system-ui,-apple-system,sans-serif;margin-bottom:5px;color:var(--muted)}
+.bk-myth .mr .k{color:var(--ink)}
+.bk-myth .mt p{font-style:italic}
+.bk-myth p{margin:0;text-indent:0 !important;text-align:left !important}
+@media (min-width:760px){.bk-myth .body{display:grid;grid-template-columns:1fr 1.25fr}.bk-myth .mt{border-bottom:0;border-right:1px dashed var(--rule)}}
+/* the library */
+.bk-lib{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;display:none;font-family:'Literata',Georgia,serif}
+#bookView.lib .bk-lib{display:block}
+#bookView.lib .bk-scroll,#bookView.lib .bk-head,#bookView.lib .bk-prog,#bookView.lib .bk-fab,#bookView.lib .bk-hint{display:none}
+.lb-wrap{max-width:1180px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top,0px)) 22px 80px}
+.lb-top{display:flex;justify-content:flex-end;gap:8px;margin-bottom:6px;font-family:system-ui,-apple-system,sans-serif}
+.lb-top button{min-height:40px;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:999px;padding:0 14px;font:600 13.5px/1 inherit;cursor:pointer}
+.lb-top button:hover{border-color:var(--ink)}
+.lb-hd{text-align:center;margin:10px 0 26px}
+.lb-hd .s{font-variant:small-caps;letter-spacing:.14em;color:var(--accent);font-size:15px}
+.lb-hd h1{font-size:clamp(34px,6vw,54px);line-height:1.05;margin:.12em 0 .2em;letter-spacing:-.01em}
+.lb-hd p{color:var(--muted);font-style:italic;margin:0 auto;max-width:34em;font-size:17px;line-height:1.5}
+.lb-cont{display:flex;align-items:center;gap:14px;max-width:640px;margin:0 auto 26px;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--card);cursor:pointer;text-align:left;width:100%;color:var(--ink);font-family:inherit}
+.lb-cont .mini{width:40px;flex:none}
+.lb-cont b{display:block;font-size:16px;line-height:1.3}
+.lb-cont small{display:block;font:600 12px/1.3 system-ui,sans-serif;color:var(--accent);letter-spacing:.04em;margin-bottom:2px}
+.lb-cont span.go{margin-left:auto;font:700 14px/1 system-ui,sans-serif;color:var(--accent);white-space:nowrap}
+.lb-ctl{display:flex;gap:10px;flex-wrap:wrap;max-width:760px;margin:0 auto 10px;font-family:system-ui,-apple-system,sans-serif}
+.lb-search{flex:1 1 260px;display:flex;align-items:center;gap:8px;border:1px solid var(--rule);border-radius:10px;padding:0 12px;background:var(--card)}
+.lb-search:focus-within{border-color:var(--ink)}
+.lb-search input{flex:1;min-width:0;min-height:44px;border:0;outline:0;background:transparent;color:var(--ink);font:500 16px/1.2 inherit}
+.lb-search input::-webkit-search-cancel-button{display:none}
+.lb-sort{min-height:46px;border:1px solid var(--rule);border-radius:10px;background:var(--card);color:var(--ink);font:600 14px/1 inherit;padding:0 12px;cursor:pointer}
+.lb-count{text-align:center;color:var(--muted);font:500 13px/1.4 system-ui,sans-serif;margin:6px 0 4px;min-height:18px}
+.lb-sec{margin-top:26px}
+.lb-sec h2{font-size:22px;font-weight:600;margin:0 0 4px}
+.lb-sec .sub{color:var(--muted);font-style:italic;font-size:15px;margin:0 0 18px}
+.lb-row{display:grid;grid-template-columns:repeat(var(--cols,2),minmax(0,1fr));gap:22px 20px;align-items:end;padding:0 10px}
+.lb-metas{align-items:start;margin:10px 0 34px}
+.lb-metas .meta{cursor:pointer}
+.lb-plank{height:14px;margin:0;border-radius:2px;background:linear-gradient(#9b7a51,#7a5c38 60%,#5f4529);box-shadow:0 8px 14px -6px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.25)}
+#bookView[data-theme="night"] .lb-plank{background:linear-gradient(#4a3a28,#382b1d 60%,#2a2016)}
+.lb-book{display:block;width:100%;background:transparent;border:0;padding:0;color:inherit;text-align:left;cursor:pointer;font-family:inherit}
+.lb-book:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+.lb-metas .meta b{display:block;font-size:15px;line-height:1.25;font-weight:600}
+.lb-metas .meta small{display:block;font:500 12px/1.35 system-ui,sans-serif;color:var(--muted);margin-top:3px}
+.lb-metas .pbar{height:3px;background:var(--rule);border-radius:2px;margin-top:6px;overflow:hidden}
+.lb-metas .pbar i{display:block;height:100%;background:var(--accent)}
+.lb-row:not(.lb-metas){padding-top:6px}
+/* covers (temporary, until the illustrated covers arrive) */
+.cv{position:relative;aspect-ratio:2/3;border-radius:3px 7px 7px 3px;background:var(--c,#5B1F1A);color:#E8CC88;overflow:hidden;box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 14px 24px -10px rgba(0,0,0,.55),0 2px 4px rgba(0,0,0,.25);transition:transform .25s}
+.lb-book:hover .cv{transform:translateY(-4px)}
+.cv::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(255,255,255,.12) 2.5%,rgba(0,0,0,.08) 5%,transparent 9%),repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 2px,transparent 2px 4px)}
+.cv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cv .in{position:absolute;inset:8% 9% 7% 13%;display:flex;flex-direction:column;align-items:center;text-align:center;border:1px solid rgba(232,204,136,.55);padding:9% 6%}
+.cv .ser{font:600 clamp(7px,1.6vw,10px)/1.3 'Literata',Georgia,serif;letter-spacing:.16em;font-variant:small-caps;opacity:.9}
+.cv .rule{width:40%;height:1px;background:rgba(232,204,136,.6);margin:8% 0}
+.cv .tt{font:700 clamp(13px,3.4vw,21px)/1.15 'Literata',Georgia,serif;margin:auto 0 0;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.cv .st{font:italic 400 clamp(9px,2.1vw,12.5px)/1.3 'Literata',Georgia,serif;margin:6% 0 auto;padding-bottom:6%;opacity:.92;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cv .vol{flex:none}
+.cv .tt.lg{font-size:clamp(11px,2.7vw,17px)}
+.cv .vol{font:600 clamp(8px,1.8vw,11px)/1 'Literata',Georgia,serif;letter-spacing:.14em;font-variant:small-caps}
+.cv.prep{filter:saturate(.35) brightness(.92)}
+.cv .ribbon{position:absolute;right:-30px;top:14px;transform:rotate(38deg);background:rgba(243,237,225,.92);color:#3a2e1e;font:700 9px/1 system-ui,sans-serif;letter-spacing:.06em;padding:5px 34px}
+.lb-empty{text-align:center;color:var(--muted);font-style:italic;padding:30px 0}
+/* book title page */
+.bk-bt{text-align:center;padding:10px 0 34px}
+.bk-bt .cv{width:min(220px,58%);margin:0 auto 26px}
+.bk-bt .t1{font-variant:small-caps;letter-spacing:.14em;color:var(--accent);font-size:.9em;margin:0}
+.bk-bt h1{font-size:2.5em;line-height:1.05;margin:.2em 0 .15em;font-weight:700}
+.bk-bt .t2{font-style:italic;font-size:1.2em;margin:0 0 1em}
+.bk-bt .t3{color:var(--muted);font-size:.88em;line-height:1.55;max-width:28em;margin:0 auto}
 @media (prefers-reduced-motion:reduce){#bookView *{transition:none !important}}
 @media print{.bk-head,.bk-fab,.bk-acts,.bk-sheet,.bk-shade{display:none !important}}
 </style>
 <div id="bookView" role="dialog" aria-modal="true" aria-label="The Israel Architecture, read as a book">
   <div class="bk-prog" id="bkProg"></div>
   <div class="bk-head" id="bkHead"><span id="bkHeadT">The Israel Architecture</span></div>
+  <div class="bk-lib" id="bkLib" tabindex="-1"></div>
   <div class="bk-scroll" id="bkScroll" tabindex="-1"><article class="bk-page" id="bkPage"></article></div>
   <button class="bk-fab" id="bkFab" type="button" aria-label="Reading menu">+</button>
   <div class="bk-hint" id="bkHint">Double-tap the page to hide or show the menu</div>
@@ -143,7 +216,13 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 <script>
 (function(){
   var $ = function(id){ return document.getElementById(id); };
-  var BOOK = JSON.parse($('book_data').textContent);
+  var LIB = JSON.parse($('book_data').textContent), BOOKS = LIB.books, curBook = 0, BOOK = BOOKS[0];
+  var CLOTH = ['#5B1F1A','#1E2D4F','#23402F','#6B4A1B','#3A2F4A','#2F3E46','#4A2328','#1F3A3D','#4B3B1E','#2B2F4A'];
+  function roman(n){ var r = '', m = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; m.forEach(function(x){ while(n >= x[0]){ r += x[1]; n -= x[0]; } }); return r; }
+  function cover(b, cls){
+    if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
+    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + CLOTH[(b.vol - 1) % CLOTH.length] + '" aria-hidden="true"><div class="in"><div class="ser">The Israel Architecture</div><div class="rule"></div><div class="tt' + (b.title.length > 26 ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">In preparation</div>' : '') + '</div>';
+  }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function ls(k, v){ try{ if(v === undefined){ var r = localStorage.getItem(k); return r ? JSON.parse(r) : null; } localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
@@ -151,8 +230,9 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   function sceneIdx(id){ var a = SC(); for(var i = 0; i < a.length; i++) if(a[i].id === id) return i; return -1; }
   function scene(id){ return SC()[sceneIdx(id)]; }
   var CIT = window.CITATIONS || {}, LBL = window.CITE_LABELS || {};
-  var where = {};  // scene id -> chapter index
-  BOOK.chapters.forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = k; }); });
+  var where = {};  // scene id -> [book index, chapter index]
+  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; }); }); });
+  function useBook(bi){ curBook = bi; BOOK = BOOKS[bi]; }
   var prefs = ls('ots_book_prefs') || {theme:'paper', fs:0};
   function applyPrefs(){ view.setAttribute('data-theme', prefs.theme || 'paper'); var base = window.innerWidth <= 600 ? 18 : 19; view.style.setProperty('--fs', (base + (prefs.fs || 0)) + 'px'); ls('ots_book_prefs', prefs); }
 
@@ -203,31 +283,33 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   function render(k, target){
     var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
     var h = '';
-    if(k === 0) h += '<div class="bk-title"><p class="t1">' + esc(BOOK.series) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="t3">' + esc(BOOK.note) + '</p></div>';
+    if(k === 0) h += '<div class="bk-bt">' + cover(BOOK) + '<p class="t1">The Israel Architecture · Volume ' + roman(BOOK.vol) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="t3">' + esc(LIB.note) + '</p></div>' +
+      (BOOK.intro ? '<div class="bk-open"><div class="lab">Introduction</div></div><div class="bk-intro">' + prose(BOOK.intro).replace('<p>', '<p class="first bk-drop">') + '</div><div class="bk-fl" aria-hidden="true">❦</div>' : '');
     h += '<div class="bk-open" id="bk-top-' + c.id + '"><div class="lab">' + esc(c.label) + '</div><h1>' + esc(c.title) + '</h1><div class="span">' + esc(c.span) + '</div><span class="orn" aria-hidden="true">❦</span></div>';
-    if(c.intro) h += '<div class="bk-intro">' + prose(c.intro).replace('<p>', '<p class="first bk-drop">') + '</div>';
+    if(c.intro) h += '<div class="bk-intro">' + prose(c.intro).replace('<p>', '<p class="first' + (k === 0 && BOOK.intro ? '' : ' bk-drop') + '">') + '</div>';
     var chFig = []; var mp = (window.MAP_CHAPTERS || {})[c.id], db = (window.DASH_CHAPTERS || {})[c.id];
     if(mp && window.MAPS && MAPS[mp]) chFig.push('<button type="button" data-map="' + mp + '">Diagram: ' + esc(MAPS[mp].title) + '</button>');
     if(db && window.DASHBOARDS && DASHBOARDS[db]) chFig.push('<button type="button" data-dash="' + db + '">Money: ' + esc(DASHBOARDS[db].title) + '</button>');
     if(chFig.length) h += '<div class="bk-acts" style="justify-content:center;margin-top:1.6em">' + chFig.join('') + '</div>';
     c.sections.forEach(function(s, i){
       var sc = scene(s.s) || {id:s.s};
-      h += '<div class="bk-fl" aria-hidden="true">· · ·</div><section class="bk-sec" id="bk-' + esc(s.s) + '" data-s="' + esc(s.s) + '"><h2>' + esc(s.h) + '</h2>' + prose(s.html);
-      h += network(sc, (k === 0 ? 'P' : k) + '.' + (i + 1));
-      if(sc.tld && sc.rec) h += '<div class="bk-two"><div class="bk-told"><h4>What is usually taught</h4><p>' + esc(sc.tld) + '</p></div><div class="bk-rec"><h4>What the record shows</h4><p>' + prose(sc.rec) + '</p></div></div>';
+      var myth = (sc.tld && sc.rec && !/^\s*n\/a/i.test(sc.tld)) ? '<aside class="bk-myth" aria-label="What you were told, and what the record shows"><div class="mh">⚑ THE CLAIM AND THE RECORD</div><div class="body"><div class="mt"><span class="k">What you were told</span><p>' + esc(sc.tld) + '</p></div><div class="mr"><span class="k">What the record shows</span><p>' + prose(sc.rec) + '</p></div></div></aside>' : '';
+      h += '<div class="bk-fl" aria-hidden="true">· · ·</div><section class="bk-sec" id="bk-' + esc(s.s) + '" data-s="' + esc(s.s) + '"><h2>' + esc(s.h) + '</h2>' + myth + prose(s.html);
+      h += network(sc, (k + 1) + '.' + (i + 1));
       var acts = [], m2 = (window.MAP_SCENES || {})[s.s], d2 = (window.DASH_SCENES || {})[s.s];
       if(m2 && m2 !== mp && window.MAPS && MAPS[m2]) acts.push('<button type="button" data-map="' + m2 + '">Diagram: ' + esc(MAPS[m2].title) + '</button>');
       if(d2 && d2 !== db && window.DASHBOARDS && DASHBOARDS[d2]) acts.push('<button type="button" data-dash="' + d2 + '">Money: ' + esc(DASHBOARDS[d2].title) + '</button>');
       if(sceneIdx(s.s) >= 0) acts.push('<button type="button" class="sim" data-sim="' + esc(s.s) + '">See this in the simulation</button>');
       h += '<div class="bk-acts">' + acts.join('') + '</div></section>';
     });
-    if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>What this stage built</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
+    if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>' + esc(c.outroTitle || 'In sum') + '</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
     h += '<section class="bk-notes" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = LBL[key] || key;
       return '<li id="bkn-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
-    var nx = BOOK.chapters[k + 1];
+    var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1];
     if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>' + esc(nx.label) + '</small>' + esc(nx.title) + '</button>';
-    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">The chapters after 1948 are being written. The simulation carries the full record in the meantime.</p>' +
-      '<button class="bk-next" type="button" data-close="1"><small>Continue in</small>The simulation</button>';
+    else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: Volume ' + roman(nb.vol) + '</small>' + esc(nb.title) + '</button>';
+    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
+      '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
     $('bkHeadT').textContent = c.label + ' · ' + c.title;
     if(target){ var el = document.getElementById('bk-' + target); if(el){ scroller.scrollTop = el.offsetTop - 60; return; } }
@@ -246,23 +328,31 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     var ch = BOOK.chapters[curCh]; $('bkHeadT').textContent = ch ? (ch.label + ' · ' + (head || ch.title)) : '';
     if(st > lastY + 12 && st > 200) view.classList.add('scrolling-down'); else if(st < lastY - 12) view.classList.remove('scrolling-down');
     lastY = st;
-    clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos', {ch:curCh, sec:curSec, y:st}); }, 500);
+    clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos_' + BOOK.id, {ch:curCh, sec:curSec, y:st, at:Date.now()});
+      var pr = ls('ots_book_progress') || {}, idx = 0, tot = 0; BOOK.chapters.forEach(function(c, k){ if(k < curCh) idx += c.sections.length; tot += c.sections.length; });
+      var inCh = BOOK.chapters[curCh].sections.map(function(x){ return x.s; }).indexOf(curSec); idx += Math.max(0, inCh) + (curSec ? 1 : 0);
+      pr[BOOK.id] = Math.max(pr[BOOK.id] || 0, Math.min(1, idx / Math.max(1, tot))); ls('ots_book_progress', pr); ls('ots_lib_last', {book:BOOK.id, at:Date.now()}); }, 500);
   }
   var lastY = 0; scroller.addEventListener('scroll', onScroll, {passive:true});
 
   /* ---------- open / close ---------- */
+  function bookIndex(id){ for(var i = 0; i < BOOKS.length; i++) if(BOOKS[i].id === id) return i; return -1; }
+  function openReader(bi, k, sec, resume){
+    useBook(bi); var y = null;
+    if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; y = p.y; } } }
+    view.classList.remove('lib'); render(k, sec); if(y != null) scroller.scrollTop = y; onScroll();
+    setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
+  }
   function openBook(target){
     try{ if(typeof closeFab === 'function') closeFab(); }catch(e){}
     try{ if(window.closeChapters) window.closeChapters(); }catch(e){}
     applyPrefs();
-    var k = 0, sec = null, y = null;
-    if(target && where[target] !== undefined){ k = where[target]; sec = target; }
-    else if(target !== 'start'){ var p = ls('ots_book_pos'); if(p && BOOK.chapters[p.ch]){ k = p.ch; y = p.y; } }
     view.classList.add('on'); document.body.classList.add('book-open');
-    render(k, sec); if(y != null) scroller.scrollTop = y; onScroll();
+    if(target && where[target]){ openReader(where[target][0], where[target][1], target); }
+    else if(target && bookIndex(target) >= 0 && BOOKS[bookIndex(target)].status === 'ready'){ openReader(bookIndex(target), null, null, true); }
+    else { showLibrary(); }
     if(!ls('ots_book_hint')){ ls('ots_book_hint', 1); var hn = $('bkHint'); hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
-    setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
-    if(location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
+    if(!view.classList.contains('lib') && location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
   }
   function closeBook(sceneId){
     hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open');
@@ -270,6 +360,66 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
   }
   window.openBook = openBook; window.closeBook = closeBook;
+
+  /* ---------- the library ---------- */
+  var lib = $('bkLib'), libQ = '', libSort = ls('ots_lib_sort') || 'order';
+  function cols(){ var w = lib.clientWidth || window.innerWidth; return w < 520 ? 2 : w < 760 ? 3 : w < 1100 ? 4 : 6; }
+  function eraStart(b){ if(b.eraKey != null) return b.eraKey; var m = String(b.span || '').match(/(\d+)\s*BCE/i); if(m) return -(+m[1]); m = String(b.span || '').match(/\d{4}/); return m ? +m[0] : 9999; }
+  function libText(b){ return (b.title + ' ' + (b.subtitle || '') + ' ' + (b.span || '') + ' ' + (b.keywords || '') + ' ' + (b.chapters || []).map(function(c){ return c.title + ' ' + c.sections.map(function(x){ return x.h; }).join(' '); }).join(' ')).toLowerCase(); }
+  function shelf(list){
+    if(!list.length) return '';
+    var n = cols(), pr = ls('ots_book_progress') || {}, h = '';
+    for(var i = 0; i < list.length; i += n){
+      var row = list.slice(i, i + n);
+      h += '<div class="lb-row" style="--cols:' + n + '">' + row.map(function(b){
+        var bi = BOOKS.indexOf(b);
+        return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title + (b.status === 'ready' ? '' : ', in preparation')) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
+        '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
+        var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? b.chapters.length + ' ' + (b.unit || 'chapters') : b.count + ' parts in the simulation';
+        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
+    }
+    return h;
+  }
+  function renderLib(){
+    var q = libQ.trim().toLowerCase(), list = BOOKS.slice();
+    if(q) list = list.filter(function(b){ return q.split(/\s+/).every(function(w){ return libText(b).indexOf(w) >= 0; }); });
+    var last = ls('ots_lib_last') || {};
+    if(libSort === 'title') list.sort(function(a, b){ return a.title.localeCompare(b.title); });
+    else if(libSort === 'era') list.sort(function(a, b){ return eraStart(a) - eraStart(b); });
+    else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
+    var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
+    $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
+      (prep.length ? '<section class="lb-sec"><h2>In preparation</h2><p class="sub">Being written now. Each opens in the simulation in the meantime.</p>' + shelf(prep) + '</section>' : '') +
+      (!ready.length && !prep.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
+    $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (BOOKS.length + ' volumes · ' + BOOKS.filter(function(b){ return b.status === 'ready'; }).length + ' ready to read');
+  }
+  function showLibrary(){
+    view.classList.add('lib'); hideAll();
+    var last = ls('ots_lib_last'), lb = last ? BOOKS[bookIndex(last.book)] : null, pos = lb ? ls('ots_book_pos_' + lb.id) : null, cont = '';
+    if(lb && pos && lb.chapters[pos.ch]){ var c = lb.chapters[pos.ch]; cont = '<button class="lb-cont" type="button" data-cont="' + bookIndex(lb.id) + '"><span class="mini">' + cover(lb) + '</span><span><small>CONTINUE READING</small><b>' + esc(lb.title) + '</b><span style="font-size:14px;color:var(--muted)">' + esc(c.label + ' · ' + c.title) + '</span></span><span class="go">Resume →</span></button>'; }
+    lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
+      '<div class="lb-hd"><div class="s">Observe The System</div><h1>' + esc(LIB.title) + '</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
+      '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
+      '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option></select></div>' +
+      '<div class="lb-count" id="lbCount" aria-live="polite"></div><div id="lbShelves"></div></div>';
+    $('lbSort').value = libSort;
+    $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
+    $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
+    renderLib(); lib.scrollTop = 0;
+    try{ history.replaceState(null, '', location.pathname + location.search + '#library'); }catch(e){}
+    setTimeout(function(){ try{ lib.focus({preventScroll:true}); }catch(e){} }, 50);
+  }
+  window.openLibrary = function(){ openBook(null); };
+  lib.addEventListener('click', function(e){
+    var b = e.target.closest('[data-b]'); if(b){ if(b.classList.contains('meta')) b = lib.querySelector('.lb-book[data-b="' + b.getAttribute('data-b') + '"]'); var bk = BOOKS[+b.getAttribute('data-b')];
+      if(bk.status === 'ready') openReader(+b.getAttribute('data-b'), null, null, true);
+      else openSheet('<h3>' + esc(bk.title) + '</h3><p style="font-size:15px;line-height:1.5;margin:0 0 10px">Volume ' + roman(bk.vol) + ' is being written. Its ' + bk.count + ' parts are already in the simulation, each with its sources.</p><div class="bk-btns"><button data-a="dismiss">Back to the library</button><button class="pri" data-sim-open="' + esc(bk.first) + '">Open it in the simulation</button></div>');
+      return; }
+    var c = e.target.closest('[data-cont]'); if(c){ openReader(+c.getAttribute('data-cont'), null, null, true); return; }
+    if(e.target.closest('[data-lib-close]')){ closeBook(null); return; }
+    if(e.target.closest('[data-lib-theme]')){ var t = ['paper','sepia','night']; prefs.theme = t[(t.indexOf(prefs.theme || 'paper') + 1) % 3]; applyPrefs(); showLibrary(); }
+  });
+  var rt = null; window.addEventListener('resize', function(){ if(view.classList.contains('lib')){ clearTimeout(rt); rt = setTimeout(renderLib, 150); } });
 
   /* ---------- immersive mode: double-tap the page ---------- */
   var lastTap = 0, lastX = 0, lastY2 = 0, downX = 0, downY = 0;
@@ -295,6 +445,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else if(b.dataset.dash){ try{ window.openDashboard(b.dataset.dash); }catch(er){} }
     else if(b.dataset.sim){ closeBook(b.dataset.sim); }
     else if(b.dataset.ch){ render(+b.dataset.ch); onScroll(); }
+    else if(b.dataset.book){ openReader(+b.dataset.book, 0); }
+    else if(b.dataset.lib){ showLibrary(); }
     else if(b.dataset.close){ closeBook(null); }
   });
   page.addEventListener('keydown', function(e){ var nd = e.target.closest && e.target.closest('.nd'); if(nd && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); nodePop(nd); } });
@@ -304,7 +456,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     showPop('<h5>' + esc(e.nm) + '</h5><p class="r">' + esc(e.rl || '') + '</p><div>' + det + '</div>');
   }
   function goTo(id){
-    if(where[id] !== undefined){ hidePop(); hideAll(); if(where[id] !== curCh) render(where[id], id); else { var el = document.getElementById('bk-' + id); if(el) scroller.scrollTo({top:el.offsetTop - 60, behavior:'smooth'}); } onScroll(); }
+    var w = where[id];
+    if(w){ hidePop(); hideAll(); if(w[0] !== curBook || w[1] !== curCh || view.classList.contains('lib')){ openReader(w[0], w[1], id); } else { var el = document.getElementById('bk-' + id); if(el) scroller.scrollTo({top:el.offsetTop - 60, behavior:'smooth'}); } onScroll(); }
     else closeBook(id);
   }
 
@@ -317,7 +470,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   function menu(){
     var marks = (ls('ots_book_marks') || []).length, notes = (ls('ots_book_notes') || []).length;
     openSheet('<h3>Reading</h3>' +
-      '<button class="row" data-a="toc"><i>☰</i><span>Contents<small>Prologue, Prelude and the six stages to 1948</small></span></button>' +
+      '<button class="row" data-a="lib"><i>▥</i><span>The library<small>All volumes, search and sort</small></span></button>' +
+      '<button class="row" data-a="toc"><i>☰</i><span>Contents<small>' + esc(BOOK.title) + ' · ' + BOOK.chapters.length + ' ' + esc(BOOK.unit || 'chapters') + '</small></span></button>' +
       '<button class="row" data-a="sim"><i>◉</i><span>Switch to the simulation<small>Opens the scene you are reading</small></span></button>' +
       '<button class="row" data-a="mark"><i>🔖</i><span>Bookmark this page</span></button>' +
       '<button class="row" data-a="marks"><i>📑</i><span>Bookmarks<small>' + marks + ' saved</small></span></button>' +
@@ -329,7 +483,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
       '<button class="row" data-a="close"><i>✕</i><span>Close the book</span></button>');
   }
   function toc(){
-    var h = '<h3>Contents</h3><div class="bk-toc">';
+    var h = '<h3>' + esc(BOOK.title) + '</h3><div class="bk-toc">';
     BOOK.chapters.forEach(function(c, k){ h += '<div class="ch"><button data-go-ch="' + k + '"><small>' + esc(c.label) + ' · ' + esc(c.span) + '</small>' + esc(c.title) + '</button><ol>' +
       c.sections.map(function(s){ return '<li><button data-go="' + esc(s.s) + '" class="' + (s.s === curSec ? 'cur' : '') + '">' + esc(s.h) + '</button></li>'; }).join('') + '</ol></div>'; });
     openSheet(h + '</div>');
@@ -348,23 +502,26 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   }
   function exportNotes(){
     var a = ls('ots_book_notes') || []; if(!a.length) return;
-    var txt = 'The Israel Architecture — Book One: The Stages to 1948\nMy notes, exported ' + new Date().toLocaleString() + '\n\n' + a.map(function(n){ return '— ' + n.ch + ' · ' + n.h + '\n' + n.text + '\n'; }).join('\n');
+    var txt = 'The Israel Architecture — my reading notes, exported ' + new Date().toLocaleString() + '\n\n' + a.map(function(n){ return '— ' + n.ch + ' · ' + n.h + '\n' + n.text + '\n'; }).join('\n');
     try{ var url = URL.createObjectURL(new Blob([txt], {type:'text/plain;charset=utf-8'})); var l = document.createElement('a'); l.href = url; l.download = 'israel-architecture-notes.txt'; document.body.appendChild(l); l.click(); setTimeout(function(){ URL.revokeObjectURL(url); l.remove(); }, 1500); toast('Notes exported'); }
     catch(e){ try{ navigator.clipboard.writeText(txt); toast('Notes copied to clipboard'); }catch(er){} }
   }
   sheet.addEventListener('click', function(e){
     var g = e.target.closest('[data-go]'); if(g){ goTo(g.getAttribute('data-go')); return; }
     var gc = e.target.closest('[data-go-ch]'); if(gc){ hideAll(); render(+gc.getAttribute('data-go-ch')); onScroll(); return; }
+    var so = e.target.closest('[data-sim-open]'); if(so){ closeBook(so.getAttribute('data-sim-open')); return; }
     var dm = e.target.closest('[data-del-mark]'); if(dm){ var a = ls('ots_book_marks') || []; a.splice(+dm.getAttribute('data-del-mark'), 1); ls('ots_book_marks', a); listMarks(); return; }
     var dn = e.target.closest('[data-del-note]'); if(dn){ var b = ls('ots_book_notes') || []; b.splice(+dn.getAttribute('data-del-note'), 1); ls('ots_book_notes', b); listNotes(); return; }
     var x = e.target.closest('[data-a]'); if(!x) return; var a2 = x.getAttribute('data-a'), ch = BOOK.chapters[curCh] || {};
     if(a2 === 'toc') toc();
+    else if(a2 === 'lib') showLibrary();
+    else if(a2 === 'dismiss') hideAll();
     else if(a2 === 'menu') menu();
     else if(a2 === 'sim') closeBook(curSec || (ch.sections && ch.sections[0] && ch.sections[0].s));
-    else if(a2 === 'mark'){ var m = ls('ots_book_marks') || []; m.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:ch.label + ' · ' + ch.title, at:Date.now()}); ls('ots_book_marks', m.slice(0, 200)); hideAll(); toast('Bookmarked'); }
+    else if(a2 === 'mark'){ var m = ls('ots_book_marks') || []; m.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:BOOK.title + ' · ' + ch.label + ' · ' + ch.title, at:Date.now()}); ls('ots_book_marks', m.slice(0, 200)); hideAll(); toast('Bookmarked'); }
     else if(a2 === 'marks') listMarks();
     else if(a2 === 'note') addNote();
-    else if(a2 === 'save-note'){ var t = ($('bkTa').value || '').trim(); if(!t){ hideAll(); return; } var nn = ls('ots_book_notes') || []; nn.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:ch.label + ' · ' + ch.title, text:t, at:Date.now()}); ls('ots_book_notes', nn); hideAll(); toast('Note saved'); }
+    else if(a2 === 'save-note'){ var t = ($('bkTa').value || '').trim(); if(!t){ hideAll(); return; } var nn = ls('ots_book_notes') || []; nn.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:BOOK.title + ' · ' + ch.label + ' · ' + ch.title, text:t, at:Date.now()}); ls('ots_book_notes', nn); hideAll(); toast('Note saved'); }
     else if(a2 === 'notes') listNotes();
     else if(a2 === 'export') exportNotes();
     else if(a2 === 'fs-' || a2 === 'fs+'){ var y0 = scroller.scrollTop / Math.max(1, scroller.scrollHeight); prefs.fs = Math.max(-3, Math.min(6, (prefs.fs || 0) + (a2 === 'fs+' ? 1 : -1))); applyPrefs(); scroller.scrollTop = y0 * scroller.scrollHeight; }
@@ -375,10 +532,12 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   $('bkFab').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else menu(); });
   document.addEventListener('keydown', function(e){
     if(!view.classList.contains('on')) return;
-    if(e.target && (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT')) return;
+    if(e.target && (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT')){ if(e.key === 'Escape') e.target.blur(); return; }
     var mpg = $('mapPage'), dpg = $('dashPage'); if((mpg && getComputedStyle(mpg).display !== 'none') || (dpg && getComputedStyle(dpg).display !== 'none')) return;
     if(e.key === 'Escape'){ if(sheet.classList.contains('on') || pop.classList.contains('on')) hideAll(); else closeBook(null); e.stopImmediatePropagation(); e.preventDefault(); return; }
+    if(view.classList.contains('lib')){ if(e.key === '/'){ var q = $('lbQ'); if(q){ q.focus(); e.preventDefault(); } } e.stopImmediatePropagation(); return; }
     if(e.key === 't' || e.key === 'T'){ toc(); e.preventDefault(); }
+    else if(e.key === 'l' || e.key === 'L'){ showLibrary(); e.preventDefault(); }
     else if(e.key === ']' && BOOK.chapters[curCh + 1]){ render(curCh + 1); onScroll(); }
     else if(e.key === '[' && curCh > 0){ render(curCh - 1); onScroll(); }
     e.stopImmediatePropagation();
@@ -386,14 +545,14 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   window.addEventListener('resize', function(){ if(view.classList.contains('on')) applyPrefs(); });
 
   /* ---------- entry points: the + menu, the chapter switcher, links ---------- */
-  (function(){ var o = $('fabOptions'); if(!o) return; var b = document.createElement('button'); b.className = 'fab-option'; b.type = 'button'; b.textContent = '📖 Read as a book';
-    b.addEventListener('click', function(){ var i = (function(){ var m = (($('cnt') || {}).textContent || '').match(/(\d+)\s*\//); return m ? +m[1] - 1 : 0; })(), s = SC()[i]; openBook(s && where[s.id] !== undefined ? s.id : null); });
+  (function(){ var o = $('fabOptions'); if(!o) return; var b = document.createElement('button'); b.className = 'fab-option'; b.type = 'button'; b.textContent = '📖 The library';
+    b.addEventListener('click', function(){ var i = (function(){ var m = (($('cnt') || {}).textContent || '').match(/(\d+)\s*\//); return m ? +m[1] - 1 : 0; })(), s = SC()[i]; openBook(s && where[s.id] ? s.id : null); });
     o.appendChild(b); })();
-  (function(){ var wp = document.querySelector('.welcome-paths'); if(!wp) return; var b = document.createElement('button'); b.className = 'path-btn'; b.type = 'button'; b.textContent = '📖 Read it as a book';
+  (function(){ var wp = document.querySelector('.welcome-paths'); if(!wp) return; var b = document.createElement('button'); b.className = 'path-btn'; b.type = 'button'; b.textContent = '📖 Read it as books';
     b.addEventListener('click', function(){ window.__bookOpening = true; try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 500); }); wp.appendChild(b); })();
-  function fromHash(){ var h = location.hash || ''; if(view.classList.contains('on') && h === '#book') return; if(h === '#book') openBook(null); else if(h.indexOf('#book=') === 0) openBook(decodeURIComponent(h.slice(6)) || null); }
+  function fromHash(){ var h = location.hash || ''; if(view.classList.contains('on') && (h === '#book' || h === '#library')) return; if(h === '#book' || h === '#library') openBook(null); else if(h.indexOf('#book=') === 0) openBook(decodeURIComponent(h.slice(6)) || null); }
   window.addEventListener('hashchange', fromHash);
-  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#book/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){} fromHash(); } }, 700); });
+  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){} fromHash(); } }, 700); });
   try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
 })();
 </script>
