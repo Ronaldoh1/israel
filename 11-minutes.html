@@ -206,7 +206,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:52px;z-index:
 </div>
 
 <section class="end" id="end">
-  <h2>That was fifteen documents.</h2>
+  <h2>That was sixteen documents.</h2>
   <p>Each one is a starting point. The full simulation follows every thread: who funded it, who argued against it, what each side says, and what happened after.</p>
   <p>148 scenes, from the 1690s to 1950, each with its sources.</p>
   <div class="ctas">
@@ -313,6 +313,12 @@ var B = [
   doc:{stat:'5,000,000+', note:'hardcover copies of Exodus sold by 1965'},
   src:[['Exodus (novel)','https://en.wikipedia.org/wiki/Exodus_(Uris_novel)'],['Our Exodus — Wayne State University Press','https://www.wsupress.wayne.edu/9780814334430/'],['The Exodus PR legend — History News Network','https://www.historynewsnetwork.org/article/142442']],
   deep:'s00a', deepT:'How the story is taught'},
+ {deck:2, yr:'1988–91', pl:'The publishing houses', title:'Who owned the presses',
+  taught:'The books and papers we learned from had no stake in this story.',
+  rec:'In 1988 Robert Maxwell bought Macmillan, and in 1989 its school-textbook business went into a joint venture with McGraw-Hill, one of America’s largest textbook publishers. He also owned Pergamon Press and Britain’s Mirror newspapers. When he died in 1991, Israel buried him on the Mount of Olives; its president gave the eulogy, and current and former intelligence chiefs attended. Claims that he worked for Israeli intelligence are reported and disputed. McGraw Hill says he wasn’t on the team that wrote its learning materials, and no review of what his companies published on this history has been documented.',
+  doc:{q:'Mr. Maxwell was the primary shareholder of Macmillan Publishing when its school publishing business entered into a joint venture with McGraw Hill in 1989.', who:'McGraw Hill, statement to Lead Stories, 2023'},
+  src:[['McGraw-Hill and Macmillan combine school units — Education Week, May 1989','https://www.edweek.org/education/mcgraw-hill-macmillan-agree-to-combine-precollegiate-units/1989/05'],['Maxwell laid to rest on the Mount of Olives — JTA, 1991','https://jta.org/archive/maxwell-colossus-even-in-death-laid-to-rest-on-mount-of-olives'],['Robert Maxwell','https://en.wikipedia.org/wiki/Robert_Maxwell'],['No evidence Maxwell put false information in US textbooks — Lead Stories','https://leadstories.com/hoax-alert/2023/03/fact-check-no-evidence-publisher-robert-maxwell-put-false-information-in-us-textbooks.html']],
+  deep:'s16', deepT:'Robert Maxwell and the press empire'},
  {deck:2, yr:'1961–87', pl:'The archives open', title:'Why the record arrived late',
   taught:'The facts about 1948 were known at the time.',
   rec:'For decades the accepted explanation was that Arab leaders ordered civilians out by radio. In 1961 Erskine Childers checked the British and American recordings of 1948 Arab broadcasts and found no such order, only appeals to stay. Israel’s own state and military archives opened under a 30-year rule in the late 1970s and 1980s. Working from them, Israeli historian Benny Morris concluded in 1987 that the main causes of flight were attack, expulsion and fear.',
@@ -339,7 +345,7 @@ function docHTML(d){
 var main = document.getElementById('beats');
 var MID = '<section class="end mid" id="mid"><h2>That was eleven documents.</h2>' +
   '<p>Each one is a starting point. The full simulation follows every thread: who funded it, who argued against it, what each side says, and what happened after. 148 scenes, from the 1690s to 1950, each with its sources.</p>' +
-  '<div class="ctas"><button class="c1" id="keep" type="button">Keep going: four things school left out<span>Including why the record reached the public so late</span></button>' +
+  '<div class="ctas"><button class="c1" id="keep" type="button">Keep going: five things school left out<span>Including why the record reached the public so late</span></button>' +
   '<a class="c2" href="index.html#scene=s07a">Open the full simulation<span>Start from the founding documents</span></a></div></section>';
 var TOUCH = window.matchMedia('(pointer: coarse)').matches;
 main.innerHTML = B.map(function(b, i){
