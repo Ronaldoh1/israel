@@ -1,0 +1,893 @@
+[
+ {
+  "cand": "az-01-amish-shah",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC 2025-26 page shows $146,250.00 in other-committee contributions (coverage to Jul 1, 2026). The 2023-24 figure was not reopened.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H4AZ01194/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "az-01-amish-shah",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "corrected",
+  "finding": "The Intercept: BOLD America received $650K from UDP (per City & State NY) and spent 'just under $1 million opposing Shah' (confirmed). But Crush MAGA's 'over half a million dollars' was spent 'opposing Shah and backing Treble' combined, not all against Shah. Crush MAGA did not itself receive UDP money; it is an affiliate of Save Democracy PAC, which got $100K from UDP. The Intercept also says a third PAC, Pro-Choice Majority Action (funded mainly by EDW Action Fund, which got $1M from UDP; DMFI's PAC gave EDW $37,750), backed Galan-Woods, and that DMFI PAC endorsed Galan-Woods. UDP's statement ('no involvement in any way in AZ-1') is confirmed.",
+  "fix": "Against him in the 2026 primary: BOLD America, which received $650K from UDP in May, spent just under $1M opposing him. Crush MAGA, a vehicle of Save Democracy PAC (which received $100K from UDP), spent over $500K combined opposing him and backing Jonathan Treble. Pro-Choice Majority Action, funded mainly by EDW Action Fund (which received $1M from UDP), backed Marlene Galan-Woods, whom DMFI PAC also backed. UDP said it had 'no involvement in any way in AZ-1', and the record does not show that UDP money was earmarked for this race.",
+  "sources": [
+   "https://theintercept.com/2026/07/15/arizona-democrats-republicans-aipac-house-race/"
+  ]
+ },
+ {
+  "cand": "az-01-amish-shah",
+  "path": "money2.superpac_donors[1]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "BOLD America $650K from UDP and 'just under $1 million' against Shah, as stated.",
+  "fix": "",
+  "sources": [
+   "https://theintercept.com/2026/07/15/arizona-democrats-republicans-aipac-house-race/"
+  ]
+ },
+ {
+  "cand": "az-01-amish-shah",
+  "path": "claims[9]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "KJZZ: Shah posted he was 'proud to earn the endorsement of the Independent Party of Arizona'; spokesperson said it was the No Labels Party; a judge blocked the renaming after both major parties sued; RNC called it a scam. Minor: the No Labels chair did not say outright that Shah was not misleading; he said 'most people see us as being the party that represents independents anyway.'",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/text/elections/2026-09-15/amish-shah-is-touting-arizona-independent-party-endorsement-but-that-party-doesnt-exist"
+  ]
+ },
+ {
+  "cand": "az-01-jay-feely",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC: $323,329.55 other-committee contributions (coverage Apr 1, 2025 - Jul 31, 2026; total receipts $2,528,497.10, so 12.8% of receipts; the 20% figure must be of contributions only and should say so). Fox News: Goodell 2 x $3,500 = $7,000; Bidwill family $17,000 combined; Kraft, Barkley, Nantz amounts not given.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H6AZ05190/?cycle=2026",
+   "https://www.foxnews.com/sports/roger-goodell-notable-sports-figures-donating-ex-nfl-kicker-jay-feely-trump-endorsed-house-bid.amp"
+  ]
+ },
+ {
+  "cand": "az-01-jay-feely",
+  "path": "money2.note",
+  "type": "money",
+  "result": "corrected",
+  "finding": "Fox News lists Arthur Blank among people who donated (amount not given); the dossier says his 'pledged donation was not confirmed'.",
+  "fix": "Bidwill family (Michael, Nicole and Tim) gave $17,000 combined. Kraft, Barkley, Nantz and Arthur Blank also gave; amounts were not stated (Fox News, Jul 2026).",
+  "sources": [
+   "https://www.foxnews.com/sports/roger-goodell-notable-sports-figures-donating-ex-nfl-kicker-jay-feely-trump-endorsed-house-bid.amp"
+  ]
+ },
+ {
+  "cand": "az-01-jay-feely",
+  "path": "money_flags / money2.superpac_donors",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "Omission. The Transformer AI tracker (same source the Stanton dossier uses) records $412,500 from 'pro-safety' AI super PACs opposing Feely in the AZ-01 primary (committees not named on the state page). The Copper Courier reports Musk-linked America PAC spent $12,220 on mailers supporting him (FEC filings Sep 4, 2026). Neither appears in his dossier.",
+  "fix": "Add to money2.superpac_donors / outside spending: 'AI-industry \"pro-safety\" super PACs spent $412,500 opposing him in the primary (Transformer tracker; committees not identified here). America PAC (Elon Musk-linked) spent $12,220 on mailers supporting him (FEC filings Sep 4, 2026, per The Copper Courier).'",
+  "sources": [
+   "https://elections.transformernews.ai/states/az",
+   "https://coppercourier.com/news/politics/elon-musk-super-pac-spends-in-az/"
+  ]
+ },
+ {
+  "cand": "az-01-jay-feely",
+  "path": "claims[2]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "KJZZ: at the RNC Feely grouped Shah with 'Democratic socialists' including Sanders and accused him of backing socialized health care; KJZZ says Shah does not call himself a democratic socialist and has never said he supports a government-run system.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-09-10/jay-feely-praises-trump-at-rnc-accuses-opponent-of-supporting-socialism"
+  ]
+ },
+ {
+  "cand": "az-01-jay-feely",
+  "path": "claims[3]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "KJZZ quotes the 'abolish prisons, abolish borders, abolish the U.S. Senate' line in the same passage naming Shah; Shah's campaign called it 'demonstrably false'. No Shah support for any of the three found.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-09-10/jay-feely-praises-trump-at-rnc-accuses-opponent-of-supporting-socialism"
+  ]
+ },
+ {
+  "cand": "az-02-eli-crane",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $500 total, all direct, USI; $0 IEs.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "az-02-eli-crane",
+  "path": "democracy[0]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia: promoted 'massive amounts of fraud' claim, urged Legislature to decertify Biden's win, asked AG for criminal probe; placed in its 2022 campaign section, no date.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Eli_Crane"
+  ]
+ },
+ {
+  "cand": "az-02-eli-crane",
+  "path": "claims[4]",
+  "type": "claim-true",
+  "result": "confirmed",
+  "finding": "Clerk Roll Call 25 (Jan 23, 2025): H.R. 471 passed 279-141; Crane Yea.",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/202525"
+  ]
+ },
+ {
+  "cand": "az-02-jonathan-nez",
+  "path": "democracy[0]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia: one of Arizona's 2020 electors and one of 17 joint keynote speakers at the 2020 DNC.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jonathan_Nez"
+  ]
+ },
+ {
+  "cand": "az-03-david-redkey",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "KTAR: two felonies (electronic communication to intimidate/threaten/harass; computer tampering) and one misdemeanor (threatening or intimidating); TMU detectives contacted him Sept 19 and he 'admitted to the communications' per the sheriff's office; $150,000 bond. AZFamily: multiple threatening counts plus one computer-tampering count, records sought sealed, hearing 'Thursday'. The Blaze quotes a prosecutor: 'A gun which was never recovered.' Written as charged, not convicted. No later status found in a search on Oct 8.",
+  "fix": "",
+  "sources": [
+   "https://ktar.com/?p=5909851",
+   "https://azfamily.com/2026/09/21/arizona-congressional-candidate-arrested-making-threats-officials-say",
+   "https://www.theblaze.com/news/green-party-threats-arrest-judge"
+  ]
+ },
+ {
+  "cand": "az-03-yassamin-ansari",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "corrected",
+  "finding": "Track AIPAC does list $1,161,274 ($1,156,274 IE, DMFI '24; $5,000 direct). But news reports put DMFI's 2024 spending far lower: Jewish Insider (Aug 2024) said DMFI PAC spent 'nearly $300,000 to boost her campaign'; Jewish Insider (Jul 2026) said DMFI 'pumped more than $400,000' into the race. The $1.16M figure is therefore single-source and about 2.5-4x the reported amount; it was not reconciled with FEC Schedule E (FEC API/OpenSecrets were not reachable). Her pledge to refuse AIPAC/DMFI help is confirmed by JI 2026.",
+  "fix": "Track AIPAC lists $1,161,274 in career pro-Israel money: $1,156,274 in independent expenditures (DMFI named, 2024 primary) and $5,000 in donations. Jewish Insider reported DMFI's 2024 spending for her as 'nearly $300,000' (Aug 2024) and 'more than $400,000' (Jul 2026); the gap with Track AIPAC's figure has not been reconciled against FEC independent-expenditure filings, so treat the $1.16M as unconfirmed. She said in 2026 she will refuse AIPAC and DMFI support.",
+  "sources": [
+   "https://www.trackaipac.com/congress",
+   "https://jewishinsider.com/2024/08/pro-israel-democrat-prevails-in-closely-contested-phoenix-house-race/",
+   "https://jewishinsider.com/2026/07/arizona-jewish-leaders-regret-supporting-yassamin-ansari/"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC 2025-26: $638,725.00 other-committee money (to Jul 1, 2026). Prospect: 'Over $600,000 ... from corporate PACs' with UnitedHealth, Amazon, Google, Walmart, Boeing, RTX among those named; an affiliate of Leading the Future spent $227,000 for him. Transformer tracker: $592,221 pro-AI super PAC spending for him. TMJ4/Scripps: Leading the Future funded by $125M from donors incl. Brockman, Andreessen, Horowitz. Note: the Prospect's 'over $600K corporate' sits close to the FEC total for all PACs ($638,725), which also includes union PACs per Legis1, so the corporate figure is one outlet's count and not reconciled with itemized FEC data.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00657304/?cycle=2026",
+   "https://prospect.org/2026/07/15/rising-momentum-another-progressive-champion-newkirk-arizona/",
+   "https://elections.transformernews.ai/states/az",
+   "https://www.tmj4.com/the-price-of-data/ai-interest-groups-pour-tens-of-millions-of-dollars-into-2026-election"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $321,822, all direct, AIPAC/DMFI/GCSC/JAC/JSTREET/PIA, $0 IE. Prospect: AIPAC 'contributed $6,000 directly.'",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress",
+   "https://prospect.org/2026/07/15/rising-momentum-another-progressive-champion-newkirk-arizona/"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "finances.trades.overlap[0]",
+  "type": "trades",
+  "result": "corrected",
+  "finding": "Raw Story confirms Union Pacific among 94 spouse purchases (mostly $1K-$15K). But the entry leaves out context that bears on fairness: the new firm bought S&P 500-mirroring stock on Sept 26, 2023 without knowing the family's no-individual-stocks policy; Stanton learned Oct 21, asked for divestment Oct 23, and the holdings were moved to ETFs. His office said all reports were filed on time (one clerical date error was corrected). Nothing indicates a targeted rail-sector bet.",
+  "fix": "Add to the overlap entry: 'Bought Sept 26, 2023 as part of an S&P 500-mirroring purchase by a new adviser who was unaware of the family's no-individual-stocks policy; Stanton asked for divestment on Oct 23 and the holdings were moved to ETFs. His office says all reports were filed on time (Raw Story, Nov 14, 2023).'",
+  "sources": [
+   "https://www.rawstory.com/raw-investigates/greg-stanton-arizona-stock-trades/"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "democracy[0..1]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Roll Call 10 (121-303) and 11 (138-282): Stanton Nay on both.",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/202110",
+   "https://clerk.house.gov/Votes/202111"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "claims[3]",
+  "type": "claim-true",
+  "result": "confirmed",
+  "finding": "Roll Call 190 (Jul 3, 2025), H.R. 1 motion to concur in Senate amendment, 218-214; Stanton No. ('Final passage' is the motion to concur; substance unchanged.)",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/2025190"
+  ]
+ },
+ {
+  "cand": "az-04-greg-stanton",
+  "path": "claims[7]",
+  "type": "claim-true",
+  "result": "confirmed",
+  "finding": "Roll Call 289 (Nov 18, 2025), H.R. 4405, 427-1; Stanton Aye.",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/2025289"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "AZ Luminaria: Lamb wrote in his 2020 book that he filed for bankruptcy in Utah in 2003 over Paintball Junkeez.",
+  "fix": "",
+  "sources": [
+   "https://azluminaria.org/2024/12/20/sheriff-mark-lambs-nonprofit-loses-federal-and-state-status-after-administrative-missteps/"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "legal[1]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "AZ Luminaria: IRS auto-revoked status May 2021 for three years of non-filing; no ACC annual report since 2021; ACC said staff would start administrative dissolution; Feb 2018 certificate signed under penalty of perjury checked 'no' on bankruptcy; 2020 Republic: $18,000 unaccounted. Minor wording: Lamb called it an 'honest oversight' with 'no malicious intent' (not 'honest mistake'). No charge or finding, as stated.",
+  "fix": "",
+  "sources": [
+   "https://azluminaria.org/2024/12/20/sheriff-mark-lambs-nonprofit-loses-federal-and-state-status-after-administrative-missteps/",
+   "https://ktar.com/arizona-politics-news/election/perjury-mark-lamb-gop-foe"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "legal[2]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "ABC15 (Jun 24, 2026): County Attorney Brad Miller reviewed the 2020 Board of Supervisors materials plus 3+ GB submitted June 3 and found 'no evidence that Lamb acted in a criminal manner'; matter closed; review found Volkmer apparently never conducted the investigation he claimed. KJZZ: several women alleged he used his position to stop them speaking up; probe did not address the broader allegations. Correctly framed as a closed criminal review, not a finding on the misconduct claims.",
+  "fix": "",
+  "sources": [
+   "https://www.abc15.com/news/local-news/pinal-county-attorney-clears-mark-lamb-of-criminal-wrongdoing-closes-investigation",
+   "https://www.kjzz.org/politics/2026-07-06/sexting-tennessee-and-americas-sheriff-the-race-to-replace-andy-biggs-in-arizonas-deep-red-cd5"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "legal[3]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "KAWC: American Oversight (ACLU counsel) sued Sheriff Lamb and Pinal County in Pinal County Superior Court (filed ~May 29, 2024) over five unanswered requests on the listed subjects. Scoring note: this is an official-capacity records suit against the office; it should not be scored as personal civil liability.",
+  "fix": "",
+  "sources": [
+   "https://www.kawc.org/news/2024-05-30/u-s-senate-candidate-lamb-sued-over-public-records-requests"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Club for Growth release (Jul 7, 2026): Win It Back PAC (Club for Growth Action affiliate) $250,000 TV buy, ad 'Sheriff', touting Trump's October post endorsing Lamb. Classification note: this is an ideological group, not corporate money.",
+  "fix": "",
+  "sources": [
+   "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC candidates page: Lamb $1,000, AMP (American Principles).",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/candidates"
+  ]
+ },
+ {
+  "cand": "az-05-mark-lamb",
+  "path": "claims[2],claims[4] vs legal[1..2]",
+  "type": "double-count",
+  "result": "confirmed",
+  "finding": "The misconduct denial (claims[2]) and the bankruptcy-omission explanation (claims[4]) restate matters already in legal[2] and legal[1]. Both claims are rated 'unverifiable', so the facts are not scored twice. Keep it that way: do not upgrade either claim to false/misleading while the legal entries also count.",
+  "fix": "",
+  "sources": []
+ },
+ {
+  "cand": "az-06-joanna-mendoza",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Amendment PDF #10072198 is an 'Amendment Report' signed/filed 07/01/2026: Radar Strategies $50,001-$100,000; Tucson rental $250,001-$500,000. Free Beacon (Jun 18, 2026): original listed $1M-$5M and omitted the rental property while reporting ~$21K income from it. Copper Courier: campaign said she listed the firm's total value. Note: the 'disclosure-violation' kind label is applied equally to Ciscomani's unadjudicated late-PTR issue; apply one consistent label to both (e.g. 'disclosure-error, amended' vs 'disclosure-issue, unadjudicated').",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10072198.pdf",
+   "https://freebeacon.com/democrats/arizona-democrat-joanna-mendoza-now-claims-shes-not-a-millionaire-after-all-drops-her-net-worth-by-93-percent-in-updated-disclosure/",
+   "https://coppercourier.com/news/politics/mendoza-finances-fact-check/"
+  ]
+ },
+ {
+  "cand": "az-06-joanna-mendoza",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC 2025-26: $516,581.41 other-committee of $7,354,808.32 receipts (7%).",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H6AZ06099/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Annual report #10075962 (signed/filed 07/14/2026) lists JT purchases on 08/28/2025: SPTM ETF $15,001-$50,000, SPDW ETF $1,001-$15,000, U.S. Treasury Bond 4.875% 2045 $15,001-$50,000. Copper Courier (Aug 7): House Ethics guidance says Treasury purchases 'likely require' a PTR; it says he 'appears to have violated' the STOCK Act; first-offense penalty is a $200 fine; no comment from him. The Courier's article addresses only the Treasury bond, not the ETFs. Written as apparent, with no Ethics finding; the headline's 'insider trading' framing is not alleged in the text and should not be imported.",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075962.pdf",
+   "https://coppercourier.com/news/politics/did-ciscomani-violate-insider-trading-law/"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "finances.trades.count",
+  "type": "trades",
+  "result": "corrected",
+  "finding": "The count is 3, but the period text lists four transactions (one 2024 spouse ETF purchase plus three Aug 28, 2025 joint purchases).",
+  "fix": "Set count to 4, or restrict the period to 2025 ('3 transactions, Aug 28, 2025') and move the 2024 spouse AVIG purchase into the note.",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075962.pdf"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC 2025-26: $1,650,409.54 other-committee of $6,172,866.72 receipts (27%).",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H2AZ02360/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $1,224,703, all direct, groups AIPAC, AMP, GCSC, LAFAS, RJC, SUNPAC, USI; $0 IE.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "money2.superpac_donors",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "Omission: Copper Courier reports Musk-linked America PAC spent $12,220 on mailers supporting him (FEC filings Sep 4, 2026). Small, but the dossier says no super PAC spending was retrieved.",
+  "fix": "Add: 'America PAC (Elon Musk-linked) spent $12,220 on mailers supporting him (FEC filings Sep 4, 2026, per The Copper Courier).'",
+  "sources": [
+   "https://coppercourier.com/news/politics/elon-musk-super-pac-spends-in-az/"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "claims[4]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "KJZZ (May 2025): Ciscomani said the bill addresses 'waste, fraud, and abuse through sensible work requirements'; CBO then estimated ~$700B in Medicaid cuts and 'at least 8.6 million' losing coverage. KJZZ (Sep 11, 2026): at the debate he defended SNAP and Medicaid changes as anti-fraud ('There's a lot of fraud out there'); ~500K Arizonans lost SNAP; 3M+ dropped calls; KJZZ says this points to bureaucratic hurdles, not identified fraud. Precision note: the CBO figures are for the House committee draft, not the enacted law, and the SNAP data supports the 2026 repeat, which covered SNAP as well as Medicaid. The record text should say that.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2025-05-23/rep-ciscomani-defends-vote-on-trumps-big-beautiful-bill",
+   "https://www.kjzz.org/politics/2026-09-11/arizonas-cd6-candidates-debate-the-countrys-direction-under-the-second-trump-administration",
+   "https://news.azpm.org/s/101512-ciscomani-defends-medicaid-cuts-in-big-beautiful-bill-act/"
+  ]
+ },
+ {
+  "cand": "az-06-juan-ciscomani",
+  "path": "claims[5]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "Copper Courier: amended/2026 filings do not support 'millionaire'; net worth range about -$310K to +$336K; Radar described as a political consulting firm with no lobbying registration cited. Free Beacon also alleges no lobbying. The record correctly notes the claim relied on her own erroneous original filing.",
+  "fix": "",
+  "sources": [
+   "https://coppercourier.com/news/politics/mendoza-finances-fact-check/",
+   "https://freebeacon.com/democrats/arizona-democrat-joanna-mendoza-now-claims-shes-not-a-millionaire-after-all-drops-her-net-worth-by-93-percent-in-updated-disclosure/"
+  ]
+ },
+ {
+  "cand": "az-07-daniel-butierez",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "corrected",
+  "finding": "KOLD (his account): arrested 1991 for about a gram of marijuana, probation violation, '10 years' sentence, released after about 4.5 years; court voided the conviction in 2020. AZPM instead says he 'spent nearly 10 years in prison' and dates the voided charge to 1992. The two sources conflict on time served, and the dossier gives only KOLD's version.",
+  "fix": "Arrested in 1991 for possessing about a gram of marijuana (his account to KOLD); after a probation violation he was sentenced to 10 years. KOLD reports he served about 4.5 years; AZPM reports 'nearly 10 years'. In 2020 a court ruled the 1992 charge/conviction void, per a court document on his website described by AZPM and his account to KOLD.",
+  "sources": [
+   "https://www.kold.com/2024/10/08/congressional-candidate-daniel-butierez-talks-about-time-prison/",
+   "https://news.azpm.org/p/azelections/2025/3/17/224075-former-grijalva-challenger-enters-race-for-cd-7"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Source NM/Arizona Mirror: Supreme Court refused to skip appeals court, ordered Jantzen to sign final ruling, sanctioned Hamadeh's 'legal team' for misrepresenting they had sought final judgment; fees to Mayes and Fontes. Democracy Docket: sanctioned 'the petitioners' (Hamadeh and RNC). Wikipedia: ordered Hamadeh to pay $55,000. The sources do conflict, and the entry's hedge is accurate.",
+  "fix": "",
+  "sources": [
+   "https://sourcenm.com/2023/08/29/the-az-supreme-court-rebuffed-2-more-requests-to-overturn-gop-losses-in-2022/",
+   "https://www.democracydocket.com/news-alerts/election-deniers-sanctioned-in-all-three-arizona-election-contests-from-2022",
+   "https://en.wikipedia.org/wiki/Abe_Hamadeh"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "legal[1]",
+  "type": "legal",
+  "result": "corrected",
+  "finding": "Wikipedia confirms Pineda ordered fees in April 2024 and the Court of Appeals rescinded the fee order in Oct 2024 while affirming dismissal as untimely. The cited Capitol Times article (Oct 15, 2024) does not mention the rescission. Because the sanction no longer stands, scoring it as civil liability is unfair, and the kind label should show that.",
+  "fix": "Change kind to 'sanction-rescinded' (or exclude from scored legal entries) and set short to 'Fee sanction rescinded on appeal'. Keep the text, adding: 'The fee order no longer stands.'",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abe_Hamadeh",
+   "http://azcapitoltimes.com/news/2024/10/15/hamadeh-refuses-to-give-up-quest-for-re-vote-of-ag-race/",
+   "https://www.tucsonsentinel.com/local/report/042324_hamadeh_fine/"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "foreign[0..1]",
+  "type": "foreign",
+  "result": "confirmed",
+  "finding": "House annual report #10074768 (signed 08/13/2026), Schedule H: Hungarian Government, 05/25-05/31/2025, DC-Budapest-DC; US-Qatar Business Council, 11/21-12/01/2025, DC-Doha-DC. (Also lists an AIEF Israel trip, Aug 3-11, 2025, which the dossier records in its checklist, not foreign.)",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10074768.pdf"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "election_contest_2022 / democracy[1]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Wikipedia describes five actions (premature first suit; Dec 2022 trial loss; provisional-ballot new-trial bid ending with Dec 2024 Supreme Court rejection; Nov 2023 suit; early-ballot quo warranto). Arizona Mirror (Apr 11, 2024): appeals court rejected the 'third challenge'. Capitol Times: Blaney dismissed the printer case as untimely and found no sanctionable conduct. The Capitol Times counts 'three separate arguments', so 'five separate court actions' depends on how they are counted; it is defensible per Wikipedia. The democracy entry and legal[0] describe the same contest, but legal[0] scores only the sanction, so this is not a double count.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abe_Hamadeh",
+   "https://azmirror.com/2024/04/11/appeals-court-rejects-abe-hamadehs-third-challenge-to-his-2022-ag-loss/",
+   "http://azcapitoltimes.com/news/2024/10/15/hamadeh-refuses-to-give-up-quest-for-re-vote-of-ag-race/"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "money2.superpac_donors[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "FEC: ABE PAC 2023-24 receipts $1,652,446.82 (all individuals), IEs $980,956.03. Axios (Feb 5, 2024): Waseem Hamadeh committed $1M; the PAC 'has received nearly all of its money from the candidate's brother' (as of Feb 2024).",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00832980/?cycle=2024",
+   "https://www.axios.com/local/phoenix/2024/02/05/abraham-hamadeh-pac-primary-waseem"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $53,638, all direct, AIPAC/AMP/GCSC; $0 IE.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "az-08-abe-hamadeh",
+  "path": "democracy[0]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia: supported Trump's 'false assertions' he won 2020; alleged fraud in the 2026 LA mayoral election and called for federalizing elections.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abe_Hamadeh"
+  ]
+ },
+ {
+  "cand": "az-09-paul-gosar",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Clerk Roll Call 379: 223-207-1; D 221-0; R 2-207, 1 Present (Joyce, OH), 3 not voting; R yeas Cheney and Kinzinger. Wikipedia: retweeted the video minutes after censure; committee seats restored after the 2022 elections.",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/evs/2021/roll379",
+   "https://en.wikipedia.org/wiki/Paul_Gosar"
+  ]
+ },
+ {
+  "cand": "az-09-paul-gosar",
+  "path": "democracy[0..1]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Roll Call 10: 121-303, Gosar Yea; Roll Call 11: 138-282, Gosar Yea. Wikipedia: Gosar and Cruz 'led a challenge to Arizona's electoral results.'",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/202110",
+   "https://clerk.house.gov/Votes/202111",
+   "https://en.wikipedia.org/wiki/Paul_Gosar"
+  ]
+ },
+ {
+  "cand": "az-09-paul-gosar",
+  "path": "democracy[3]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia: Alexander's since-deleted video ('We four schemed up of putting maximum pressure on Congress'), and it 'was reported' Gosar and Biggs sought pardons around Jan 19, 2021; none granted. The reporting outlet is not named. The entry correctly labels these as reports, not findings.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Paul_Gosar"
+  ]
+ },
+ {
+  "cand": "az-09-paul-gosar",
+  "path": "democracy[4]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "KJZZ: newsletter (Sunday, Sept 24, 2023) said 'in a better society, quislings like ... General Milley would be hung'; the Sund testimony he cited did not mention Milley; no formal action.",
+  "fix": "",
+  "sources": [
+   "https://kjzz.org/content/1858522/gosar-back-spotlight-call-general-be-hung-over-jan-6"
+  ]
+ },
+ {
+  "cand": "az-09-paul-gosar",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $18,250, all direct, AMP/GCSC/USI; $0 IE.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "corrected",
+  "finding": "FEC 2025-26 other-committee $7,000.00 (to Jun 30, 2026) confirmed. But 'Turning Point PAC's ~$1.5M for him in the governor's race' misreads Axios: Axios says 'Sen. Jake Hoffman's companies have been paid about $1.5 million to help defeat Hobbs', and separately that Hoffman's company 1Ten LLC received money from Turning Point PAC 'to help defeat Hobbs and elect ... Biggs'. Axios gives no Turning Point PAC total for Biggs.",
+  "fix": "...$7,000 (2025-26). FEC's summary does not split business/trade from ideological/leadership PACs. Turning Point PAC, an ideological group, is spending to defeat Hobbs and elect Biggs; Axios reports that Sen. Jake Hoffman's companies, including 1Ten LLC, which received Turning Point PAC money, have been paid about $1.5 million for that effort. Turning Point PAC's total for this race and its funders were not retrieved.",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00610451/?cycle=2026",
+   "https://www.axios.com/local/phoenix/2026/09/21/hoffman-gould-hobbs-senate-republican-investigation"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $39,184, all direct, AIPAC/GCSC; $0 IE.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "democracy[0..1]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Roll Call 10 (121-303) and 11 (138-282): Biggs Yea on both.",
+  "fix": "",
+  "sources": [
+   "https://clerk.house.gov/Votes/202110",
+   "https://clerk.house.gov/Votes/202111"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "democracy[2..4]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia: signed the 126-member Texas v. Pennsylvania amicus; 2020 video with Gosar alleging fraud and demanding a Maricopa audit; spoke at 'Stop the Steal' rallies; Alexander testified in deposition he spoke with Biggs in person; Biggs denied the Rolling Stone account; claimed antifa was behind the attack; Bowers testified Jun 21, 2022 that Biggs called the morning of Jan 6 seeking decertification; Jun 23, 2022 witnesses said Biggs sought a pardon.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Andy_Biggs"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "democracy[5]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Wikipedia confirms the May 12, 2022 subpoena. Non-compliance and the Dec 19, 2022 Ethics referral (with McCarthy, Jordan, Perry) are in the Jan 6 committee's final report (per wiki_j6com); the Biggs page section fetched did not restate them. No Ethics outcome reported.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Andy_Biggs"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "democracy[6]",
+  "type": "democracy",
+  "result": "corrected",
+  "finding": "Out of date and unfair framing. On Aug 11, 2026 Judge Sam Myers issued a final ruling dismissing the fake-electors case against the 11 electors, including Hoffman, without prejudice. No charges are pending, though AG Mayes could seek new indictments. 'Faces charges' is no longer accurate. Separately, Hoffman's legal status is Hoffman's matter, not Biggs's democracy record, and should not be scored against Biggs.",
+  "fix": "His campaign's announcement article describes him as having supported failed efforts to overturn Trump's 2020 loss. [Drop the Hoffman sentence from this scored entry; if kept as context elsewhere: 'He was endorsed by state Sen. Jake Hoffman, who was indicted in Arizona's fake-electors case; the case was dismissed without prejudice on Aug 11, 2026, and no charges are pending as of Oct 8, 2026.'] Also update research_notes ('Hoffman is charged, not convicted').",
+  "sources": [
+   "https://www.newsfromthestates.com/article/judge-dismisses-arizona-fake-electors-case-leaves-door-open-new-prosecution",
+   "https://www.newsfromthestates.com/node/422068"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "claims[8]",
+  "type": "claim-true",
+  "result": "confirmed",
+  "finding": "KJZZ: Hobbs has repeatedly vetoed Sen. TJ Shope's bills requiring state contractors to disclose 'anything of value' given to the governor or related entities. Context worth adding: she proposed a competing 2026 bill limiting large donations by bidders, which stalled.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-08-21/arizona-attorney-general-clears-gov-hobbs-in-pay-to-play-investigation"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "claims[10]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "Phoenix New Times: the claim 'doesn't hold up'; Republicans control the Legislature; the two states 'remain decidedly distinct'.",
+  "fix": "",
+  "sources": [
+   "https://www.phoenixnewtimes.com/news/fact-checking-arizona-governor-andy-biggs-campaign-ads-40666446/"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "claims[11]",
+  "type": "claim-misleading",
+  "result": "confirmed",
+  "finding": "PNT: two-day Mexico City trip led and paid for by the Arizona Hispanic Chamber of Commerce; 'far from secret'; tickets first covered by the privately funded protocol fund, which she said she would reimburse.",
+  "fix": "",
+  "sources": [
+   "https://www.phoenixnewtimes.com/news/fact-checking-arizona-governor-andy-biggs-campaign-ads-40666446/"
+  ]
+ },
+ {
+  "cand": "az-gov-andy-biggs",
+  "path": "claims[12]",
+  "type": "claim-partly",
+  "result": "confirmed",
+  "finding": "PNT confirms the remark and her later apology, which the ad omits.",
+  "fix": "",
+  "sources": [
+   "https://www.phoenixnewtimes.com/news/fact-checking-arizona-governor-andy-biggs-campaign-ads-40666446/"
+  ]
+ },
+ {
+  "cand": "az-gov-katie-hobbs",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "KJZZ: Hobbs's attorneys reported $580,840 from Sunshine, Kottoor and others connected to the company, Sept 2022 - May 2024, to the state party, her campaign, inaugural fund and legal defense fund. Axios: $400,000 to the inaugural fund and state party plus $150,000 to the legal defense fund. AG found no evidence of pay-to-play and declined charges.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-08-21/arizona-attorney-general-clears-gov-hobbs-in-pay-to-play-investigation",
+   "https://www.axios.com/local/phoenix/2026/09/21/hoffman-gould-hobbs-senate-republican-investigation"
+  ]
+ },
+ {
+  "cand": "az-gov-katie-hobbs",
+  "path": "legal[1]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "KJZZ: two-year AG probe; Criminal Division found no 'reasonable likelihood of conviction for bribery or any other related offenses'; Hobbs did not advocate for the increase and was told after DCS approved it; she was never interviewed (sent written statements). Axios: Gould named special counsel; subpoenas issued. Minor: KJZZ says the Auditor General 'is leading a separate review' but does not say the Legislature tasked it; that attribution is not confirmed by the sources opened. Framed correctly as a closed probe, not a finding.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-08-21/arizona-attorney-general-clears-gov-hobbs-in-pay-to-play-investigation",
+   "https://www.axios.com/local/phoenix/2026/09/21/hoffman-gould-hobbs-senate-republican-investigation"
+  ]
+ },
+ {
+  "cand": "az-gov-katie-hobbs",
+  "path": "money_flags.corp + legal[1]",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "The same Sunshine Residential matter is scored twice: the donations in money_flags.corp and the AG probe of those donations in legal[1] (kind 'ethics-cleared'). A cleared probe should not add negative weight on top of the money flag.",
+  "fix": "Keep the donations in money_flags.corp. Set legal[1] so it does not score (e.g. kind 'probe-closed-no-charges', unscored), or fold its status line into the money_flags text: 'AG probe closed Aug 21, 2026 with no charges; legislative and Auditor General reviews ongoing.'",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-08-21/arizona-attorney-general-clears-gov-hobbs-in-pay-to-play-investigation"
+  ]
+ },
+ {
+  "cand": "az-gov-katie-hobbs",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "corrected",
+  "finding": "KOLD (Nov 12, 2021): Hobbs was not a defendant, though she was involved in the firing and testified at both trials. The $2.75M was a jury award (Nov 9, 2021) that KOLD said was likely to be cut to $300,000 by the federal cap on employment-discrimination damages. A 2019 jury had awarded $1M and reinstatement before a judge ordered a new trial. Labeling it 'civil-liability' against Hobbs with a '$2.75M judgment' overstates both her role and the amount.",
+  "fix": "Talonya Adams, a Senate Democratic staffer fired in 2015 after raising race and gender pay concerns, sued the Arizona Senate. A 2019 jury awarded her $1M and reinstatement; after a retrial, a jury awarded $2.75M in November 2021, which reporting said was likely to be reduced to about $300,000 under the federal damages cap. Hobbs, then Senate minority leader, took part in the firing decision and testified at both trials but was not a defendant. Change kind to 'employer-verdict (not a party)' and status to 'Jury verdict against the Senate, Nov 2021; final judgment amount not confirmed.'",
+  "sources": [
+   "https://www.kold.com/2021/11/12/jury-issues-275-million-verdict-fired-arizona-senate-staffer/"
+  ]
+ },
+ {
+  "cand": "az-gov-katie-hobbs",
+  "path": "claims[4]",
+  "type": "claim-true",
+  "result": "confirmed",
+  "finding": "AZ Family (Dec 23, 2025): over $642M erased, total more than 485,000 Arizonans, ARPA-funded via Undue Medical Debt.",
+  "fix": "",
+  "sources": [
+   "https://www.azfamily.com/2025/12/23/gov-hobbs-announces-erasure-medical-debt-141000-more-arizonans/"
+  ]
+ },
+ {
+  "cand": "az-gov-risa-lombardo",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "KJZZ Aug 27: unanimous vote; ~5,000 donor names, ~74% tied to more than one of three candidates. Mirror: May 4 lump-sum deposit matching $5 contributions, applied same day; up to $2.8M repayment, from personal funds or limited sources. NFTS Sep 11: AG investigation; six listed donors said they never gave; Collins alleges unreported subcontractors (Uncle Sam Petitions, O'Neil Printing). NFTS Sep 25: La Sota admitted at the Aug 27 meeting she 'had not collected all of the $5 donations herself' and signed anyway 'because she was confused about the rules'; report due by Oct 29. KJZZ Sep 30: Judge Melissa Iyer Julian dismissed the suit as premature; Court of Appeals accepted special action on an expedited schedule. Status additions: both campaigns voluntarily stopped spending public funds in August (not ordered), and La Sota said they would stay frozen if the clawback is not blocked. Consider adding that to status.",
+  "fix": "",
+  "sources": [
+   "https://www.kjzz.org/politics/2026-08-27/az-clean-elections-to-continue-probe-into-3-candidates-who-received-millions-in-public-funding",
+   "https://azmirror.com/?p=28083",
+   "https://www.newsfromthestates.com/node/427282",
+   "https://www.newsfromthestates.com/node/429252",
+   "https://www.kjzz.org/politics/2026-09-30/judge-dismisses-lawsuit-filed-by-candidates-under-investigation-by-clean-elections-commission"
+  ]
+ },
+ {
+  "cand": "az-gov-risa-lombardo",
+  "path": "democracy[0]",
+  "type": "democracy",
+  "result": "confirmed",
+  "finding": "Arizona Mirror: T3 Designs (registered 2023) posted 'Trump Won' and 'Kari Won' buttons on Instagram that year.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/she-sold-maga-merch-now-shes-running-governor-green-party-candidate"
+  ]
+ },
+ {
+  "cand": "az-gov-risa-lombardo",
+  "path": "claims[0]",
+  "type": "claim-partly",
+  "result": "confirmed",
+  "finding": "Mirror: Democrat 2006-2016; GOP primaries 2022 and 2024; LD2 GOP precinct committeeman Oct 2024 to at least Feb 28, 2025; Green statement of interest Mar 5, 2025.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/she-sold-maga-merch-now-shes-running-governor-green-party-candidate"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-GOV",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Green Papers and FOX 10 (Oct 6) agree: Hobbs-Giles (D), Biggs-Kerr (R), Lombardo-Castillo (G), Hourihan-Harrolle Mohan (No Labels); write-ins Gonzalez and Novoa. KJZZ Jul 22: Biggs 73%. Official SoS list still not fetchable (provenance block), as the file already notes. Suggest adding to the Lombardo note that her campaign has frozen public-fund spending (NFTS Sep 25).",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://www.kjzz.org/the-show/2026-07-22/breaking-down-the-results-for-arizonas-primary-election"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-01",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Shah, Feely, Alponte on ballot; Gupta and Thunder write-ins (GP, FOX 10). Primary: Feely 49.8%/Chaplik 35.7%; Shah 39.4%/Galan-Woods 34.4% (Wikipedia). Ajluni appears on Wikipedia only and is already flagged as a discrepancy.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-02",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Crane, Nez, Goodwin (L, 318 votes to a 10-vote write-in).",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-03",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Ansari, Redkey (G, 5 write-in votes), Aversa (No Labels, 571); Parkman R write-in; Glenn (437 R write-in votes per Wikipedia) not listed by GP or FOX 10, as already flagged. Redkey oneliner frames charges correctly.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-04",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Stanton 62.3%/Newkirk 37.7%; Jasser unopposed (39,431); Benoit 65.4%/Fillmore 34.6%; Sanders No Labels write-in; FOX 10 shows Benoit with no party label and notes her paperwork names the Arizona Independent Party.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-05",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Lamb 58.7%/Keenan 41.3%; Lee 66.0%; two candidates on ballot.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-06",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Ciscomani, Mendoza (78,310), Peters (L), Swing (G, 29 write-in votes); Dorland write-in. FEC: Mendoza $7,354,808 vs Ciscomani $6,172,867 through Jul 1.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona",
+   "https://www.fec.gov/data/candidate/H6AZ06099/?cycle=2026",
+   "https://www.fec.gov/data/candidate/H2AZ02360/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "az-races",
+  "path": "districts.AZ-07..AZ-09",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "AZ-07 Grijalva/Butierez (21,934); AZ-08 Hamadeh/Greene-Placentia 65.7%-34.3% over Keeler; AZ-09 Gosar/Sterbinsky (35,700), write-ins Hatch and Perry. All match GP, FOX 10 and Wikipedia.",
+  "fix": "",
+  "sources": [
+   "https://www.thegreenpapers.com/G26/AZ",
+   "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races",
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  ]
+ }
+]

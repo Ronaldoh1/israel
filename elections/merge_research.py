@@ -157,7 +157,7 @@ D['cases'] = {'massie': {
                  {'t': 'Losing does not prove he was right, and the spending against him does not prove anyone\u2019s motive beyond what the groups said publicly. What it documents is what crossing them cost.', 'c': []}]}}
 
 # ---------- States marked complete (every race has full candidate dossiers) ----------
-COMPLETE_STATES = {'AL', 'AK'}
+COMPLETE_STATES = {'AL', 'AK', 'AZ'}
 _st = D['states'] if isinstance(D['states'], list) else list(D['states'].values())
 _cands = D['cands'] if isinstance(D['cands'], dict) else {c['id']: c for c in D['cands']}
 _races = D['races'] if isinstance(D['races'], dict) else {r['id']: r for r in D['races']}

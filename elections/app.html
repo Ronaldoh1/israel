@@ -444,7 +444,9 @@ var LEGAL = {
   'unpaid-obligation':  {lbl:'Unpaid tax lien or judgment', d:0.25, cap:0.5, tone:'warn'},
   'disclosure-violation':{lbl:'Late or missing financial disclosure / STOCK Act', d:0.25, cap:0.75, tone:'warn'},
   'bankruptcy':         {lbl:'Bankruptcy', d:0, tone:'neutral'},
-  'business-closure':   {lbl:'Business closed or failed', d:0, tone:'neutral'}
+  'business-closure':   {lbl:'Business closed or failed', d:0, tone:'neutral'},
+  'sanction-rescinded': {lbl:'Sanction rescinded on appeal', d:0, tone:'neutral'},
+  'context':            {lbl:'Related record (not a party)', d:0, tone:'neutral'}
 };
 
 
@@ -627,7 +629,7 @@ function playFlags(c){
   setTimeout(end, reduce ? 5000 : 7000);
 }
 
-function votesApplies(c){ return !!c.votes_kv || !(c.profile && !c.incumbent); }
+function votesApplies(c){ if(c.votes_kv) return true; if(/-GOV$/.test(c.race || '')) return false; return !(c.profile && !c.incumbent); }   // governors have no congressional votes unless they served in Congress
 
 
 function scoreColor(s){ return s == null ? '#6b7a93' : s >= 4 ? '#33D17A' : s >= 3 ? '#F0B93E' : s >= 2 ? '#FF8A5C' : '#F05A54'; }
