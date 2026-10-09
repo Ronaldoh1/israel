@@ -194,6 +194,54 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:52px;z-index:
 .method{margin-top:14px;font:400 italic 14px/1.5 var(--serif);color:rgba(238,240,244,.6);max-width:46ch}
 .fin a.inl{color:var(--lit)}
 
+
+/* the lines you've heard */
+.heard{margin-top:16px;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;font:800 15.5px/1.3 var(--book);color:#fff;background:transparent;border:1.5px solid rgba(238,240,244,.35);border-radius:12px;padding:12px 16px;cursor:pointer;text-align:left}
+.heard:hover{border-color:#fff}
+.heard i{font-style:normal;flex:none;width:30px;height:30px;border-radius:50%;background:var(--ribbon);display:grid;place-items:center;font:900 15px/1 var(--book)}
+@media (max-width:600px){.heard{align-self:stretch}}
+.lines-list{display:grid;gap:8px;margin-top:8px}
+.lrow{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--room2);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:13px 14px;color:#fff;cursor:pointer;font:700 16px/1.35 var(--book)}
+.lrow:hover{border-color:rgba(255,255,255,.35)}
+.lrow q{flex:1}
+.vchip{flex:none;font:800 12px/1 var(--book);padding:6px 9px;border-radius:999px;color:#fff;background:var(--vc,var(--ribbon));white-space:nowrap}
+.deck{position:fixed;inset:0;z-index:100;background:#0F1524;display:flex;flex-direction:column;opacity:0;pointer-events:none;transition:opacity .3s}
+.deck.on{opacity:1;pointer-events:auto}
+.deck .dtop{display:flex;align-items:center;gap:10px;padding:calc(12px + env(safe-area-inset-top)) 16px 10px;color:#fff;font:800 15px/1.2 var(--book)}
+.deck .dtop .dt{flex:1}
+.deck .dtop .dc{font:600 13px/1 var(--book);color:rgba(238,240,244,.65)}
+.deck .dx{font:800 14px/1 var(--book);background:var(--onion);color:var(--carbon);border:0;border-radius:999px;padding:10px 14px;cursor:pointer}
+.deck .dbar{height:3px;background:rgba(255,255,255,.1);margin:0 16px;border-radius:2px;overflow:hidden}
+.deck .dbar i{display:block;height:100%;background:var(--hi);width:0;transition:width .35s}
+.deck .dscroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:18px 16px 24px;touch-action:pan-y}
+.lcard{max-width:600px;margin:0 auto;animation:lin .4s cubic-bezier(.2,.8,.2,1)}
+@keyframes lin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.post{background:#fff;color:#16181d;border-radius:16px;padding:16px 18px 18px;box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.post .who{display:flex;align-items:center;gap:10px;font:700 13.5px/1.2 var(--book);color:#5b6170;margin-bottom:12px}
+.post .av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c9ced8,#9aa1ae);flex:none}
+.post .claim{font:900 clamp(25px,6.6vw,33px)/1.2 var(--book);margin:0;letter-spacing:-.01em}
+.post .meta{display:flex;gap:18px;margin-top:14px;font:700 13px/1 var(--book);color:#8a909c}
+.check{display:block;width:100%;margin:16px 0 0;font:900 18px/1 var(--book);color:var(--carbon);background:var(--hi);border:0;border-radius:14px;padding:18px;cursor:pointer}
+.check:hover{filter:brightness(1.05)}
+.verdict{display:none;margin:18px 0 0}
+.lcard.checked .verdict{display:block}
+.lcard.checked .check{display:none}
+.stamp{display:inline-block;font:800 30px/1 var(--serif);color:var(--vc);border:3px solid var(--vc);border-radius:8px;padding:6px 12px 8px;transform:rotate(-3deg);background:rgba(255,255,255,.04);animation:stamp .45s cubic-bezier(.3,1.6,.5,1)}
+@keyframes stamp{from{transform:rotate(-3deg) scale(1.6);opacity:0}to{transform:rotate(-3deg) scale(1);opacity:1}}
+.vsub{display:block;font:600 14px/1.4 var(--book);color:rgba(238,240,244,.75);margin:10px 0 0}
+.lrec{background:var(--onion);color:var(--carbon);border-radius:14px;padding:18px 18px 16px;margin-top:14px;background-image:repeating-linear-gradient(to bottom,transparent 0 27px,var(--paper-line) 27px 28px)}
+.lrec p{font:400 18px/1.55 var(--serif);margin:0}
+.lrec .stat{margin-top:14px}
+.lrec .stat b{font-size:46px}
+.dnav{display:flex;gap:10px;padding:10px 16px calc(12px + env(safe-area-inset-bottom));max-width:632px;margin:0 auto;width:100%}
+.dnav button{flex:1;font:800 16px/1 var(--book);border-radius:12px;padding:15px 10px;border:0;cursor:pointer}
+.dnav .dp{background:var(--room2);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.dnav .dn{background:var(--onion);color:var(--carbon)}
+.dnav button:disabled{opacity:.35;cursor:default}
+.srccard h3{font:800 30px/1.1 var(--serif);color:#fff;margin:4px 0 12px}
+.srccard p.lead{font:400 18.5px/1.55 var(--serif);color:#E3E6EE;margin:0 0 14px}
+@media (prefers-reduced-motion:reduce){.lcard,.stamp{animation:none}}
+
 @media (prefers-reduced-motion:reduce){
   .book{transition:opacity .3s}.book.lift{transform:none}
   .taps i::before,.taps i::after,.scrollcue i,.begin.ready,.bp .nd.flash rect{animation:none}
@@ -233,6 +281,13 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:52px;z-index:
   <div id="bpSheet"></div>
 </div></div>
 
+<div class="deck" id="deck" role="dialog" aria-modal="true" aria-label="The lines you've heard, checked against the record">
+  <div class="dtop"><span class="dt">The lines you’ve heard</span><span class="dc" id="dcount"></span><button class="dx" type="button" id="dx">Close</button></div>
+  <div class="dbar"><i id="dbar"></i></div>
+  <div class="dscroll" id="dscroll"></div>
+  <div class="dnav"><button class="dp" type="button" id="dprev">Previous</button><button class="dn" type="button" id="dnext">Next</button></div>
+</div>
+
 <section class="open" id="top">
   <p class="date">Friday, May 14, 1948 · Washington</p>
   <p class="clock" id="clock" aria-label="6:11 p.m.">6:00<small>pm</small></p>
@@ -240,6 +295,7 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:52px;z-index:
     <span class="later" id="later">How did it move that fast? Because the machine behind it had been under construction for 76 years. Watch it get built, one document at a time.</span></p>
   <a class="begin" href="#b1">Begin with 1872</a>
   <p class="howto" id="howto">Eighteen documents. Double-tap each one to reveal it. About four minutes.</p>
+  <button class="heard" type="button" id="heardBtn"><i aria-hidden="true">?</i><span>Heard it online? Check the 13 lines people repeat most against the record</span></button>
 </section>
 
 <div class="wrap">
@@ -450,6 +506,8 @@ var FIN = '<section class="fin" id="fin" hidden>' +
   '<div class="myth"><b><s>“The Rothschilds paid for it all”</s></b><span>The money came from a mass base: over a million American donors in 1948 alone. The Paris Rothschild turned Herzl down.</span></div>' +
   '<div class="myth"><b><s>“Money bought Congress”</s></b><span>Organized pressure is documented in detail. Payments to members before 1948 can’t be shown either way; disclosure law didn’t require the records.</span></div></div>' +
   '<p style="margin-top:10px"><a class="inl" href="' + SIM + 'pn_s01">Seven founding narratives, checked</a></p>' +
+  '<h3 style="margin-top:34px">The lines you’ve heard online</h3><p>The claims people repeat most in comment sections, each checked against the same record. Tap one.</p>' +
+  '<div class="lines-list" id="linesList"></div>' +
   '<h3 style="margin-top:34px">Why you weren’t taught this</h3>' +
   '<div class="both"><div class="myth"><b>The story came first</b><span>Leon Uris’s <i>Exodus</i> (1958) sold over five million hardcover copies by 1965; a scholar of it says it “simplified some facts and distorted others.”</span></div>' +
   '<div class="myth"><b>The files came later</b><span>Israel’s 1948 records opened under a 30-year rule. The “Arab orders” explanation lasted until researchers could check.</span></div>' +
@@ -537,6 +595,123 @@ var sheet = document.getElementById('sheet');
 document.getElementById('mstrip').addEventListener('click', function(){ sheet.classList.add('on'); });
 document.getElementById('sheetx').addEventListener('click', function(){ sheet.classList.remove('on'); });
 sheet.addEventListener('click', function(e){ if(e.target === sheet) sheet.classList.remove('on'); });
+
+/* ---------- the lines you've heard: claims people repeat most, checked against the same record ---------- */
+var V = {
+  F:['False','var(--ribbon)'], M:['Misleading','#C2410C'], H:['Half true','#B7791F'],
+  T:['True, with limits','#2F7D4F'], D:['Depends on what’s said','#2B63D9'], O:['False, aimed the other way','var(--ribbon)']
+};
+var LINES = [
+ {c:'Palestine never existed.', v:'F', sub:'There was no independent Palestinian state. There was a country called Palestine.',
+  r:'Like most of the region, the land was ruled by others: the Ottomans, then Britain. But Palestine as a named country is on the record. From 1872 the Ottomans governed Jerusalem and its districts as one unit. Under British rule Palestine had its own citizenship law (1925), its own currency (1927), its own stamps, and passports held by Arabs and Jews alike.',
+  st:['757,182','people counted in Palestine by Britain’s 1922 census'], deep:'s07', deepT:'Palestine as a named polity',
+  src:[['Palestinian Citizenship Order 1925','https://en.wikipedia.org/wiki/Palestinian_Citizenship_Order_1925'],['Mandatory Palestine passport','https://en.wikipedia.org/wiki/Mandatory_Palestine_passport'],['Palestine pound','https://en.wikipedia.org/wiki/Palestine_pound']]},
+ {c:'Palestinians were invented in the 1960s.', v:'F', sub:'The PLO dates from 1964. The people it spoke for are documented decades earlier.',
+  r:'The Jaffa newspaper Filastin was founded in 1911. Palestinian Arab congresses sent petitions from 1919. Britain counted the population in 1922. Historians date Palestinian national identity to the late Ottoman and British Mandate years, the same period that produced Jordanian, Syrian and Israeli national identities.',
+  st:['1911','the year the newspaper Filastin was founded in Jaffa'], deep:'cmt_s06', deepT:'“Invented in the 1960s,” checked',
+  src:[['Filastin (newspaper)','https://en.wikipedia.org/wiki/Filastin_(newspaper)'],['British census of Palestine, 1931 — Jewish Virtual Library','https://www.jewishvirtuallibrary.org/british-census-of-palestine-1931']]},
+ {c:'“Semitic” means Jewish.', v:'M', sub:'The label isn’t exclusive to Jews. The word “antisemitism” still means hatred of Jews.',
+  r:'“Semitic” was coined in 1781 for a family of languages: Hebrew, Arabic, Aramaic, Amharic. Palestinians speak Arabic, and genetic studies find they descend in large part from the same ancient Levantine population as Jews. Both are Semitic peoples by the word’s own meaning. The other half: “antisemitism,” popularized by Wilhelm Marr in 1879, never meant hostility to speakers of those languages. It meant hatred of Jews, and it still does. “Arabs are Semites too” doesn’t change what the word means.',
+  st:['1879','“antisemitism” spreads in print, meaning hatred of Jews'], deep:'s00b', deepT:'Semitic ≠ Jewish: the root word',
+  src:[['Semitic people','https://en.wikipedia.org/wiki/Semitic_people'],['Behar et al., Nature (2010)','https://doi.org/10.1038/nature09103'],['Wilhelm Marr','https://en.wikipedia.org/wiki/Wilhelm_Marr']]},
+ {c:'“A land without a people for a people without a land.”', v:'F', sub:'A slogan from Christian restorationists, contradicted by every census.',
+  r:'The earliest published version is in an 1843 book by the Scottish clergyman Alexander Keith; Lord Shaftesbury used similar words in 1853; the first Zionist use came in 1901. Historians debate whether it meant literally empty or “without a nation.” Every Ottoman and British count shows a populated country.',
+  st:['89%','of Palestine’s 1922 population was not Jewish'], deep:'sq_s05', deepT:'Three famous claims, checked',
+  src:[['The slogan’s origin — AIJAC','https://aijac.org.au/australia-israel-review/essay-the-slogan-that-wasn-t/'],['British census of Palestine, 1931 — Jewish Virtual Library','https://www.jewishvirtuallibrary.org/british-census-of-palestine-1931']]},
+ {c:'Israel is the only democracy in the Middle East.', v:'H', sub:'True of Israel’s citizens. Millions under its control can’t vote.',
+  r:'In the V-Dem Institute’s 2024 report, Israel was the only electoral democracy in the Middle East and North Africa: competitive elections, a free press, Arab citizens voting and sitting in the Knesset. The same report downgraded it from “liberal” democracy for the first time in about 50 years. Both major indices rate Israel without the occupied territories, where Palestinians live under Israeli military control and can’t vote in its elections.',
+  st:['5.5 million','people under Israeli control without citizenship, by one count'], deep:'sk_s02', deepT:'“The only democracy,” checked',
+  src:[['V-Dem demotes Israel — Globes','https://en.globes.co.il/en/article-vdem-demotes-israel-from-liberal-democracy-status-1001474356'],['Israel Democracy Institute on the downgrade','https://en.idi.org.il/articles/53426']]},
+ {c:'Israel has the right to defend itself.', v:'T', sub:'Every state does. The laws of war still apply, to every side.',
+  r:'Article 51 of the UN Charter recognizes every state’s inherent right of self-defense. In 2004 the International Court of Justice advised that Article 51 didn’t justify the separation wall, because the threat came from territory Israel itself occupies; the opinion was non-binding and contested. What both sides of that legal argument accept: distinction between fighters and civilians, proportionality and precautions bind every party, Hamas included.',
+  deep:'sk_s03', deepT:'What international law actually says',
+  src:[['ICJ advisory opinion on the wall (2004)','https://unispal.un.org/pdfs/C1B3885E02BECE8F85256EEB005534BA.pdf'],['Summary of the opinion','https://en.wikipedia.org/wiki/Legal_Consequences_of_the_Construction_of_a_Wall_in_the_Occupied_Palestinian_Territory']]},
+ {c:'Criticizing Israel is antisemitism.', v:'D', sub:'Two competing definitions. Judge the words, not the topic.',
+  r:'The 2016 IHRA working definition, adopted by the US government, lists examples that treat some criticism of Israel as antisemitic; seven of its eleven examples concern Israel. The 2021 Jerusalem Declaration, signed by more than 200 scholars of Jewish history and the Holocaust, holds that criticism of Israel and anti-Zionism are not antisemitic on their face. Jewish groups campaign for Palestinian rights. Real antisemitism is documented too: the ADL counted a record 9,354 US incidents in 2024. Some speech crosses the line; some criticism is labeled antisemitic for political ends.',
+  deep:'az_s01', deepT:'Three competing definitions',
+  src:[['IHRA working definition','https://holocaustremembrance.com/resources/working-definition-antisemitism'],['Jerusalem Declaration on Antisemitism','https://jerusalemdeclaration.org/'],['Jewish Voice for Peace','https://en.wikipedia.org/wiki/Jewish_Voice_for_Peace']]},
+ {c:'They rejected every offer.', v:'H', sub:'Arab leaders did reject major plans. Not every offer was real, or on the table long.',
+  r:'Arab leaders rejected the 1937 Peel plan and the 1947 UN partition plan. The record also holds Israeli offers that were conditional or withdrawn: the 1949 Lausanne refugee offer, made only within a full peace and later pulled, and the 2000 Camp David proposal, which American participants say was never put in writing.',
+  deep:'sq_s05', deepT:'Three famous claims, checked',
+  src:[['Peel Commission','https://en.wikipedia.org/wiki/Peel_Commission'],['Lausanne Conference of 1949','https://en.wikipedia.org/wiki/Lausanne_Conference_of_1949']]},
+ {c:'They left because Arab leaders told them to.', v:'F', sub:'No general order was found. Attacks, expulsions and fear drove most of the flight.',
+  r:'In 1961 the writer Erskine Childers checked the British and American monitoring records of 1948 Arab radio and found no general evacuation order. When Israel’s archives opened in the late 1970s, Benny Morris found some local evacuations ordered by Arab commanders, but attacks, expulsions and fear as the main causes.',
+  st:['700,000+','Palestinians displaced, 1947–49'], deep:'np_s01', deepT:'How the Nakba was told',
+  src:[['Erskine Barton Childers','https://en.wikipedia.org/wiki/Erskine_Barton_Childers'],['The Birth of the Palestinian Refugee Problem (Morris)','https://en.wikipedia.org/wiki/The_Birth_of_the_Palestinian_Refugee_Problem']]},
+ {c:'The land was bought fair and square.', v:'M', sub:'The purchases were real. They were a small share, and they evicted the farmers.',
+  r:'Land was bought legally, much of it from absentee landlords such as the Beirut-based Sursock family. Sales from absentee owners removed the tenant farmers who worked the land; Britain passed five laws to stop the evictions and none worked. By 1947 Jewish ownership was about 7% of the land. Most of what Israel held after 1948 came through the war and the 1950 Absentees’ Property Law, not purchase.',
+  st:['≈7%','of Palestine’s land was Jewish-owned in 1947'], deep:'s04j', deepT:'The land purchase mechanism',
+  src:[['Jewish land purchase in Palestine','https://en.wikipedia.org/wiki/Jewish_land_purchase_in_Palestine'],['Sursock Purchases','https://en.wikipedia.org/wiki/Sursock_Purchases'],['Village Statistics, 1945','https://en.wikipedia.org/wiki/Village_Statistics,_1945']]},
+ {c:'Jordan is the Palestinian state.', v:'F', sub:'Jordan was split off before partition, and partition never touched it.',
+  r:'Britain made Transjordan a separate emirate in 1921 and excluded it from the Jewish national home provisions in 1922. The UN’s 1947 partition plan divided only the land west of the Jordan River. Many Palestinians in Jordan arrived as refugees in 1948 and 1967.',
+  st:['1921','Transjordan created as a separate emirate'], deep:'cmt_s04', deepT:'“Jordan is Palestine,” checked',
+  src:[['Emirate of Transjordan','https://en.wikipedia.org/wiki/Emirate_of_Transjordan']]},
+ {c:'Why don’t Arab countries just take them?', v:'H', sub:'Jordan did. Others restrict refugees, for reasons they state and critics dispute.',
+  r:'Under its 1954 nationality law Jordan gave citizenship to most Palestinians who arrived after 1948, and it hosts more than two million registered refugees. Lebanon bars Palestinians from dozens of professions and from owning property. The Arab League told members not to grant citizenship, to protect the right of return; critics argue this kept refugees in limbo as a political tool. After October 7, Egypt and Jordan refused to take Gazans, noting that Palestinians forced out have historically not been allowed back.',
+  deep:'sq_s20', deepT:'Jordan did; Lebanon restricts; Egypt fears a one-way door',
+  src:[['Why Arab nations hesitate — PBS NewsHour','https://www.pbs.org/newshour/politics/why-egypt-and-other-arab-nations-are-hesitant-to-take-in-palestinian-refugees'],['Palestinian refugees — ADL','https://www.adl.org/resources/backgrounder/palestinian-refugees']]},
+ {c:'Ashkenazi Jews are really Khazars, with no tie to the land.', v:'O', sub:'The same standard applies to lines aimed at Jews.',
+  r:'A 2012 paper argued for Khazar descent. A 2013 study of 1,774 samples from 106 populations found no particular link to the Khazar region and traced Ashkenazi ancestry mainly to the Middle East and Europe; later genome-wide and ancient-DNA work agrees. The theory has been used since the 19th century to cast Jews as impostors. And genetics doesn’t decide anyone’s rights, Jewish or Palestinian.',
+  deep:'kh_s01', deepT:'What the genetics show',
+  src:[['Untangling the Khazar claims — ADL','https://www.adl.org/resources/article/untangling-false-claims-about-ashkenazi-jews-khazars-and-israel'],['Fact check — AAP','https://www.aap.com.au/factcheck/study-misrepresented-in-jewish-ancestry-claim/']]}
+];
+var NL = LINES.length, TOTAL = NL + 1, li = 0, checked = {};
+var deck = document.getElementById('deck'), dscroll = document.getElementById('dscroll'), dprev = document.getElementById('dprev'), dnext = document.getElementById('dnext'), lastFocus = null;
+function srcLinks(a){ return '<div class="srcs">Sources: ' + a.map(function(s){ return '<a href="' + s[1] + '" target="_blank" rel="noopener">' + esc(s[0]) + '</a>'; }).join(' · ') + '</div>'; }
+function renderLine(){
+  var h;
+  if(li < NL){
+    var L = LINES[li], v = V[L.v];
+    h = '<article class="lcard' + (checked[li] ? ' checked' : '') + '" style="--vc:' + v[1] + '">' +
+      '<div class="post"><div class="who"><span class="av" aria-hidden="true"></span><span>Seen in comment sections, again and again</span></div>' +
+      '<p class="claim">' + esc(L.c) + '</p></div>' +
+      '<button class="check" type="button" id="checkBtn">Check it against the record</button>' +
+      '<div class="verdict" aria-live="polite"><span class="stamp">' + v[0] + '</span><span class="vsub">' + esc(L.sub) + '</span>' +
+      '<div class="lrec"><p>' + esc(L.r) + '</p>' + (L.st ? '<div class="stat"><b>' + esc(L.st[0]) + '</b><span>' + esc(L.st[1]) + '</span></div>' : '') +
+      '<div class="deeper"><a class="go" href="' + SIM + L.deep + '">Go deeper: ' + esc(L.deepT) + '</a></div>' + srcLinks(L.src) + '</div></div></article>';
+  } else {
+    h = '<article class="lcard srccard"><h3>Why you hear the same lines</h3>' +
+      '<p class="lead">Some of these lines were tested before they spread. In 2009 The Israel Project paid pollster Frank Luntz for a messaging guide, marked not for distribution, that was leaked to Newsweek. Its rules: concede a point, then “bridge to a productive pro-Israel message,” and use “the language of America: democracy, freedom, security, and peace.”</p>' +
+      '<p class="lead">In October 2023, the New York Times reported, citing Israeli officials and documents, that Israel’s Diaspora Affairs ministry put about $2 million into a campaign run by a Tel Aviv firm, STOIC, using fake accounts aimed at US lawmakers. Meta removed 510 Facebook and 32 Instagram accounts; the ministry denied involvement.</p>' +
+      '<div class="lrec"><p>A line being part of a campaign doesn’t make it false. Many are sincerely held, and some are accurate. That’s why each one here is checked on its own.</p>' +
+      '<div class="deeper"><a class="go" href="' + SIM + 'sk_s01">Go deeper: where the talking points come from</a><a class="go" href="' + SIM + 'cmt_s01">The full comment-section chapter</a></div>' +
+      srcLinks([['The Luntz guide (2009) — Internet Archive','https://archive.org/details/the-israel-project-global-language-dictionary'],['The STOIC campaign — Times of Israel','https://www.timesofisrael.com/diaspora-ministry-funded-fake-social-media-posts-to-spread-pro-israel-content-nyt/'],['The STOIC campaign — OPB / NPR','https://www.opb.org/article/2024/06/06/a-covert-israeli-online-influence-campaign-tried-to-sway-american-lawmakers/']]) + '</div></article>';
+  }
+  dscroll.innerHTML = h; dscroll.scrollTop = 0;
+  document.getElementById('dcount').textContent = (li + 1) + ' of ' + TOTAL;
+  document.getElementById('dbar').style.width = ((li + 1) / TOTAL * 100) + '%';
+  dprev.disabled = li === 0;
+  dnext.textContent = li === TOTAL - 1 ? 'Done' : (li < NL && !checked[li] ? 'Skip' : 'Next');
+  var cb = document.getElementById('checkBtn');
+  if(cb){ cb.addEventListener('click', function(){ checked[li] = true; dscroll.querySelector('.lcard').classList.add('checked'); dnext.textContent = 'Next'; try{ if(navigator.vibrate) navigator.vibrate(12); }catch(e){} paintList(); }); setTimeout(function(){ try{ cb.focus({preventScroll:true}); }catch(e){} }, 50); }
+}
+function openDeck(i){ li = i || 0; lastFocus = document.activeElement; renderLine(); deck.classList.add('on'); document.body.style.overflow = 'hidden'; }
+function closeDeck(){ deck.classList.remove('on'); document.body.style.overflow = ''; try{ if(lastFocus) lastFocus.focus({preventScroll:true}); }catch(e){} }
+function step(d){ var n = li + d; if(n < 0) return; if(n >= TOTAL){ closeDeck(); return; } li = n; renderLine(); }
+dprev.addEventListener('click', function(){ step(-1); });
+dnext.addEventListener('click', function(){ step(1); });
+document.getElementById('dx').addEventListener('click', closeDeck);
+document.getElementById('heardBtn').addEventListener('click', function(){ openDeck(0); });
+document.addEventListener('keydown', function(e){
+  if(!deck.classList.contains('on')) return;
+  if(e.key === 'Escape'){ e.preventDefault(); closeDeck(); }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); step(1); }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); step(-1); }
+});
+(function(){ var sx = null, sy = 0;
+  dscroll.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, {passive:true});
+  dscroll.addEventListener('touchend', function(e){ if(sx == null) return; var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
+    if(Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1); }, {passive:true});
+})();
+function paintList(){
+  var el = document.getElementById('linesList'); if(!el) return;
+  el.innerHTML = LINES.map(function(L, i){ var v = V[L.v];
+    return '<button class="lrow" type="button" data-i="' + i + '"><q>' + esc(L.c.replace(/^“|”$/g, '')) + '</q>' + (checked[i] ? '<span class="vchip" style="--vc:' + v[1] + '">' + v[0] + '</span>' : '<span class="vchip" style="--vc:#3a4560">Check</span>') + '</button>'; }).join('') +
+    '<button class="lrow" type="button" data-i="' + NL + '"><span style="flex:1">Why you hear the same lines</span><span class="vchip" style="--vc:#3a4560">Read</span></button>';
+}
+paintList();
+document.getElementById('linesList').addEventListener('click', function(e){ var b = e.target.closest('.lrow'); if(b) openDeck(+b.getAttribute('data-i')); });
+try{ if(EMB && window.parent.__elevenLines){ window.parent.__elevenLines = false; setTimeout(function(){ openDeck(0); }, 400); } }catch(e){}
 
 /* ---------- cold open ---------- */
 var clock = document.getElementById('clock'), later = document.getElementById('later'), beginBtn = document.querySelector('.begin');
