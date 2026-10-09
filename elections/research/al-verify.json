@@ -1,0 +1,963 @@
+{
+ "checked": "2026-10-08",
+ "results": [
+  {
+   "cand": "al-01-clyde-jones-jr",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 2026 cycle (7/1/2025–7/22/2026): receipts $85,967.63; unitemized $44,054.90; itemized $39,912.73; PAC $2,000. Principal committee is C00920918.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H6AL01094/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-01-jerry-carl",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "FEC other-committee totals match: $387,000 (2020), $499,500 (2022), $634,500 (2024), $303,059.40 (2026 through 7/22/2026). Alabama Daily News names BCBS of Alabama and Alabama Farmers Federation among Carl's Q4 2025 PAC donors ($71,500 total PAC money that quarter; individual amounts not stated).",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2020",
+    "https://www.fec.gov/data/committee/C00697789/?cycle=2022",
+    "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2024",
+    "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2026",
+    "https://aldailynews.com/marques-outraises-carl-entering-2026-in-al-1-race/"
+   ]
+  },
+  {
+   "cand": "al-01-jerry-carl",
+   "path": "democracy[0]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 10 (Jan. 6, 2021, objection to Arizona): failed 121–303; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202110"
+   ]
+  },
+  {
+   "cand": "al-01-jerry-carl",
+   "path": "democracy[1]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 11 (Jan. 7, 2021, 3:08 a.m., objection to Pennsylvania): failed 138–282; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202111"
+   ]
+  },
+  {
+   "cand": "al-01-jerry-carl",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 2026 cycle through 7/22/2026: receipts $1,162,582.80; itemized $628,936.51; unitemized $45,133.03; PAC $303,059.40; 'other' = $183,453.86 in transfers + $2,000 in offsets = $185,453.86.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-02-rhett-marques",
+   "path": "claims[4]",
+   "type": "claim",
+   "result": "corrected",
+   "finding": "HB152 (2025) exempts these items from the state portion of sales/use tax only, from Sep. 1, 2025 through Aug. 31, 2028. Rafferty sponsored it and Marques is not on the bill's list; the House passed it unanimously. But Marques's launch statement was that he 'worked in the Alabama Legislature to eliminate the state tax on diapers and baby supplies.' The paraphrase 'Eliminated…' overstates what he claimed, so 'overstates his role' is weak. The fair basis for 'partly' is that the exemption is temporary and covers state tax only.",
+   "fix": "Claim: Said he 'worked in the Alabama Legislature to eliminate the state tax on diapers and baby supplies.' Record: HB152 (sponsor Rep. Neil Rafferty, D; passed House unanimously) removes only the state portion of sales/use tax, and only from Sep. 1, 2025 to Aug. 31, 2028. Local taxes still apply unless local governments opt in. Calling the tax 'eliminated' omits that the exemption is temporary and state-only. Verdict: partly.",
+   "sources": [
+    "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2025RS/HB152-enr.pdf",
+    "https://alabamareflector.com/2025/03/20/alabama-house-approves-tax-exemption-on-baby-formula-maternity-clothing-hygiene-products/",
+    "https://aldailynews.com/marques-launches-bid-for-congress-in-al-1/"
+   ]
+  },
+  {
+   "cand": "al-02-rhett-marques",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC C00916775 (7/1/2025–7/22/2026): receipts $1,318,573.55; itemized $1,121,296.98; unitemized $8,807.87; PAC $188,468.70.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00916775/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-02-shomari-figures",
+   "path": "claims[11]",
+   "type": "claim",
+   "result": "unsupported",
+   "finding": "Figures's campaign statement is confirmed: 'voting for a 67 percent tax increase on gas and diesel.' Marques's 2019 Rebuild Alabama vote is documented. But the item's own record says the 67% figure was never checked, and no source I could reach explains it. A 'partly' verdict with no checked basis should not move the score. Unchecked background from the act's terms: it raises gas from 18¢ to 28¢ (≈56%) and diesel from 19¢ to 29¢ (≈53%), then indexes up to 1¢ every two years from 2023. If gas has reached ≈30¢, that is ≈67% for gasoline, so the claim may be closer to accurate than 'partly'.",
+   "fix": "Rate this claim only after checking the ALDOT/Department of Revenue fuel-tax schedule. Until then, list it unrated with the record: 'Marques voted for the 2019 Rebuild Alabama Act (phased 10¢ increase from 18¢ gas / 19¢ diesel, plus inflation indexing from 2023); the 67% figure has not been independently checked.'",
+   "sources": [
+    "https://www.alreporter.com/2026/08/13/cd2-race-draws-national-heat-as-figures-marques-face-partisan-scrutiny/",
+    "https://en.wikipedia.org/wiki/Rhett_Marques"
+   ]
+  },
+  {
+   "cand": "al-02-shomari-figures",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "corrected",
+   "finding": "ProPublica confirms $5,000 each from Regions, Truist, BCBS of Alabama, Ernst & Young, Volkert (DVAHC) and National Beer Wholesalers (2024). The American Crystal Sugar $5,000 was offset by a −$5,000 entry the same day (refunded, net $0), so it should not be listed. Protect Progress spent $1,723,976 (primary) + $668,419 (runoff) = $2,392,395 for him (ProPublica's race total is $2,645,236). PAC share in 2025–26 is $830,337.65 of $1,321,283 in contributions (62.8%).",
+   "fix": "Corporate and trade PACs gave in 2024, including Regions Financial, Truist, Blue Cross Blue Shield of Alabama, Ernst & Young, Volkert (DVAHC) PAC and National Beer Wholesalers ($5,000 each; an American Crystal Sugar PAC gift was refunded). In the 2024 primary and runoff, the crypto-industry super PAC Protect Progress spent about $2.39M supporting him. PAC money is 63% of his 2025–26 contributions.",
+   "sources": [
+    "https://projects.propublica.org/itemizer/committee/C00856237/2024/pac-donations",
+    "https://influence.citationneeded.news/2024/elections/AL-H-02",
+    "https://projects.propublica.org/itemizer/independent_expenditures/2024/al/house/2",
+    "https://www.fec.gov/data/candidate/H4AL02170/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-02-shomari-figures",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "AIPAC PAC $5,000 (Oct. 16, 2024) and DMFI PAC $1,000 (Sep. 24, 2024) appear in the ProPublica itemizer. DMFI PAC IE: $1,400 (Oct. 18, 2024, print ad). Track AIPAC: $63,235 total ($61,835 PAC/donors + $1,400 IE). Note that the $1,400 IE makes Track AIPAC's IE figure non-zero.",
+   "fix": null,
+   "sources": [
+    "https://projects.propublica.org/itemizer/committee/C00856237/2024/pac-donations",
+    "https://projects.propublica.org/itemizer/independent_expenditures/2024/al/house/2",
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-02-shomari-figures",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 2026 through 7/22/2026: receipts $1,355,788.62; unitemized $167,493.40; itemized $323,410.00; PAC $830,337.65; party $42.02; other = transfers $23,682.63 + offsets $10,822.92 = $34,505.55.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H4AL02170/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-03-lee-mcinnis",
+   "path": "claims[5]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "WTVM paraphrases McInnis as saying voters 'have lacked the opportunity to connect with their representative for the last decade.' Wikipedia documents an Aug. 2017 Rogers town hall in Oxford, which falls just inside the decade. Rogers's House site has a town-hall sign-up page, with the format not stated. 'Partly' is reasonable.",
+   "fix": null,
+   "sources": [
+    "https://www.wtvm.com/2026/08/21/democratic-congressional-nominee-holds-town-hall-opelika/",
+    "https://en.wikipedia.org/wiki/Mike_Rogers_(Alabama_politician)",
+    "https://mikerogers.house.gov/news/"
+   ]
+  },
+  {
+   "cand": "al-03-lee-mcinnis",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC C00918433 (7/1/2025–9/30/2026): receipts $60,787.05; itemized $43,560; unitemized $17,227.05; PAC $0.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00918433/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "claims[2]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "The bio says 'With bipartisan support in Congress – Mike initiated and oversaw the creation of the U.S. Space Force.' Wikipedia: the 2017 Rogers–Cooper Space Corps passed the House but not the Senate; very similar language became law two years later (the FY2020 NDAA, per general record). 'Partly' is fair.",
+   "fix": null,
+   "sources": [
+    "https://mikerogers.house.gov/about/",
+    "https://en.wikipedia.org/wiki/Mike_Rogers_(Alabama_politician)"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "claims[7]",
+   "type": "claim",
+   "result": "unsupported",
+   "finding": "The bio says he was 'a practicing attorney and small business owner in Calhoun County.' The Encyclopedia of Alabama says he 'opened a law firm in Anniston' (Calhoun County) after his 1991 law degree. A law firm he founded is itself a small business, so finding no separate business does not make the claim partly true. The record supports the claim.",
+   "fix": "Remove this claim or rate it true: he opened his own law firm in Anniston, which is a small business in Calhoun County.",
+   "sources": [
+    "https://encyclopediaofalabama.org/?p=16586",
+    "https://mikerogers.house.gov/about/"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "FEC 2026: PAC $721,704.50 (matches). 1819 News (Apr. 19, 2023, citing OpenSecrets): Lockheed-affiliated individuals and its PAC gave $60,750 in the 2022 cycle ($10,000 PAC + $50,750 individuals), his top contributor. Rogers said it was 'imperative' to 'accelerate the Next Generation Interceptor program' while Lockheed and Northrop competed for it. 1819 News (Jan. 20, 2023) reported the same for ATACMS to Ukraine. I did not re-add the 11-cycle career total ($7.93M of $18.24M).",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H2AL03032/?cycle=2026",
+    "https://1819news.com/news/item/u-s-rep-rogers-suggests-sending-arms-to-taiwan-would-accelerate-development-of-missiles-his-largest-campaign-contributor-is-competing-for-right-to-produce",
+    "https://1819news.com/news/item/u-s-rep-rogers-urges-white-house-to-approve-without-delay-missile-system-to-ukraine-manufactured-by-his-largest-campaign-contributor"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC (as of 7/5/26): $1,033,286 total, $0 IE. It lists 11 PACs (AIPAC, AGG, CITYPAC, FIPAC, GCSC, MDACC, NACPAC, NATPAC, NORPAC, WAPAC, YJL), which is AIPAC, NORPAC and nine others.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "democracy[1]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 10 (Jan. 6, 2021, objection to Arizona): failed 121–303; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202110"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "democracy[2]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 11 (Jan. 7, 2021, 3:08 a.m., objection to Pennsylvania): failed 138–282; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202111"
+   ]
+  },
+  {
+   "cand": "al-03-mike-rogers",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 1/1/2025–6/30/2026: receipts $2,133,554.37; itemized $1,348,404.69; unitemized $8,028.90; PAC $721,704.50; party $14,000; other = transfers $2,891.29 + other receipts $38,524.99 = $41,416.28.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H2AL03032/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-04-amanda-pusczek",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 10/1/2025–6/30/2026: receipts $15,590.75; itemized $8,010; unitemized $7,452; PAC $0. 'Other' $128.75 is the remainder (other receipts $58.08 plus offsets).",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H6AL05228/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "legal[0]",
+   "type": "legal",
+   "result": "confirmed",
+   "finding": "The Encyclopedia of Alabama says the FEC fined the campaign $13,000 in 2012 for 'inaccurately reporting campaign expenses from 2006 to 2010.' I could not open the FEC enforcement file (MUR) to confirm.",
+   "fix": "The FEC fined his campaign committee $13,000 in 2012 for inaccurately reporting campaign expenses from 2006 to 2010, per the Encyclopedia of Alabama.",
+   "sources": [
+    "https://encyclopediaofalabama.org/article/robert-aderholt/"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "FEC: PAC $422,278.20 (2025–26); 2017–18 PAC $1,066,544.15 vs. individuals $468,336.48 (PACs exceeded individuals). Wikipedia cites CoinDesk (Feb. 2023) on FTX money. I did not re-add the 15-cycle career total.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00313247/?cycle=2026",
+    "https://www.fec.gov/data/committee/C00313247/?cycle=2018",
+    "https://en.wikipedia.org/wiki/Robert_Aderholt"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $116,967; PACs AIPAC, AFGG, GCSC, NATPAC; $0 IE.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "democracy[1]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 10 (Jan. 6, 2021, objection to Arizona): failed 121–303; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202110"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "democracy[2]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 11 (Jan. 7, 2021, 3:08 a.m., objection to Pennsylvania): failed 138–282; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202111"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "finances.trades.overlap[0]",
+   "type": "trade",
+   "result": "unverifiable",
+   "finding": "The underlying 2025 periodic transaction report was not provided as a URL, and House disclosure search was not reachable, so the GSK sale could not be checked. The committee overlap holds: the Encyclopedia of Alabama confirms he chairs Appropriations' Labor-HHS-Education subcommittee and sits on Agriculture-FDA. A $1K–$15K sale of a foreign pharma ADR is plausible but unconfirmed.",
+   "fix": null,
+   "sources": [
+    "https://encyclopediaofalabama.org/article/robert-aderholt/"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "finances.trades.overlap[1]",
+   "type": "trade",
+   "result": "unverifiable",
+   "finding": "The 2023 annual disclosure was not reachable to confirm the HQH entry. The listing calls it an 'acquisition (exchange)', which may be a fund reorganization or exchange rather than a purchase the member chose. Confirm the transaction type before flagging it as a trade.",
+   "fix": null,
+   "sources": [
+    "https://encyclopediaofalabama.org/article/robert-aderholt/"
+   ]
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "finances.trades.overlap[2]",
+   "type": "trade",
+   "result": "unsupported",
+   "finding": "Haleon ADSs went to GSK holders automatically in GSK's July 2022 demerger of its consumer-health business (general record). Receiving spin-off shares is not a trade the member chose, and the '2023-01' date does not match the demerger date. This does not show trading in an overseen industry.",
+   "fix": "Remove from trades.overlap: corporate spin-off distribution, not a discretionary trade.",
+   "sources": []
+  },
+  {
+   "cand": "al-04-robert-aderholt",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 1/1/2025–6/30/2026: receipts $1,022,664.06; itemized $514,721; unitemized $9,102.01; PAC $422,278.20; other = transfers $23,167.44 + other receipts $53,395.41 = $76,562.85.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00313247/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-05-andrew-sneed",
+   "path": "claims[5]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "APR quotes Sneed: 'Strong's campaign… continues to receive overwhelming support from corporations and PACs.' FEC: PACs $631,300 of $1,477,819.41 (42.7%). APR: more than 90% of Strong's Apr. 30–June 30, 2026 money came from PACs, lobbyists or business executives. 'Partly' is fair: overwhelming for the quarter, 43% for the cycle, and corporations cannot give directly. The source list repeats one URL.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00774281/?cycle=2026",
+    "https://www.alreporter.com/2026/07/20/sneed-campaign-outraises-rep-strong-in-latest-fec-filing-report/"
+   ]
+  },
+  {
+   "cand": "al-05-andrew-sneed",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC C00902809 (4/1/2025–6/30/2026): receipts $646,512.03; itemized $545,062.86; unitemized $73,555.20; PAC $2,350; candidate $20,000; other receipts $5,543.97.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00902809/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-05-dale-strong",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "FEC PAC totals: $360,000 (2022), $575,750 (2024), $631,300 (2026). Sum $1,567,050 of $4,773,404 receipts = 32.8%. The APR '>90%' passage is confirmed.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00774281/?cycle=2022",
+    "https://www.fec.gov/data/committee/C00774281/?cycle=2024",
+    "https://www.fec.gov/data/committee/C00774281/?cycle=2026",
+    "https://www.alreporter.com/2026/07/20/sneed-campaign-outraises-rep-strong-in-latest-fec-filing-report/"
+   ]
+  },
+  {
+   "cand": "al-05-dale-strong",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $37,335 (AIPAC); $0 IE.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-05-dale-strong",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 1/1/2025–6/30/2026: receipts $1,477,819.41; itemized $680,393.23; unitemized $6,635.29; PAC $631,300. Small discrepancy: 'other' $153,243.03 = transfers $133,936.19 + other receipts $19,306.84, but it leaves out $6,247.86 in offsets. The headline total is right.",
+   "fix": "other: 159490.89 (transfers 133,936.19 + offsets 6,247.86 + other receipts 19,306.84)",
+   "sources": [
+    "https://www.fec.gov/data/committee/C00774281/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "claims[3]",
+   "type": "claim",
+   "result": "corrected",
+   "finding": "The promise is documented. Reflector: he said in 2014 he 'would only serve 10 years.' Wikipedia: he said no more than five terms and acknowledged it in March 2023 ('own that'). He ran for a sixth term in 2024 and is the 2026 nominee. But the record misattributes the U.S. Term Limits accusation: it was about refusing to cosponsor a term-limits amendment (2021), not the 10-year promise, and his campaign called that 'fake news.' He said he 'prayed for God to give me clarity'; the Reflector says he 'claimed that God gave him clarity.' A promise is better scored as a broken promise (saydo) than a 'false' claim, and the two items double-count.",
+   "fix": "Record: During his 2014 campaign he said he would serve no more than five terms (10 years); he acknowledged the statement in March 2023. He ran for a sixth term in 2024 and is the 2026 nominee for a seventh, saying he had prayed for clarity from God. He argues his signed U.S. Term Limits pledge covered only sponsoring term-limits legislation. (Separately, U.S. Term Limits accused him in 2021 of breaking that pledge by not cosponsoring its amendment.) Consider scoring this only as the saydo item to avoid double-counting.",
+   "sources": [
+    "https://alabamareflector.com/2026/08/11/u-s-rep-gary-palmer-gets-gop-nod-in-alabama-6th-congressional-district/",
+    "https://en.wikipedia.org/wiki/Gary_Palmer_(politician)"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "corrected",
+   "finding": "FEC other-committee totals confirmed: $260,300 (2014), $285,264 (2016), $410,795 (2022), $596,510 (2024), $464,000 (2026; 44%). FTX/CoinDesk via Wikipedia confirmed. But the ProPublica 2023–24 per-PAC amounts do not match what is visible. Farmers Federation $10,000 matches. Koch shows $7,500, NAR $7,000, and Protective Life, Vulcan, Drummond and Regions $5,000 each. Verizon shows $3,000 (not $7,000) and AT&T $3,000 (not $6,000). Alabama Power employees' PAC does not appear. The listing was truncated before Nov. 2023, so missing early-2023 gifts are possible but unconfirmed. I could not reach the Sept. 2014 Alabama Retail Association PAC entry.",
+   "fix": "Business and trade PAC money every documented cycle. FEC 'other committee' contributions were $260,300 (2014), $285,264 (2016), $410,795 (2022), $596,510 (2024) and $464,000 (2025–Jul 22, 2026; about 44% of receipts). 2023–24 donors include the PACs of the Alabama Farmers Federation ($10,000), Koch Inc. ($7,500), National Association of Realtors ($7,000), Protective Life, Vulcan Materials, Drummond Co. and Regions Financial ($5,000 each), Verizon and AT&T ($3,000 each). Several of these are in sectors under his Energy and Commerce committee: energy, coal and telecom. Wikipedia, citing a 2023 CoinDesk report, says he received FTX money.",
+   "sources": [
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2014",
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2016",
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2022",
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2024",
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2026",
+    "https://projects.propublica.org/itemizer/committee/C00551374/2024/pac-donations",
+    "https://en.wikipedia.org/wiki/Gary_Palmer_(politician)"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $88,031; PACs AIPAC, AMP, AGG, MDACC, RJC, USI; $0 IE. ProPublica: AIPAC PAC entries sum to $5,012, including $5,000 on Oct. 14, 2024.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress",
+    "https://projects.propublica.org/itemizer/committee/C00551374/2024/pac-donations"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "democracy[2]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 10 (Jan. 6, 2021, objection to Arizona): failed 121–303; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202110"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "democracy[3]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 11 (Jan. 7, 2021, 3:08 a.m., objection to Pennsylvania): failed 138–282; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202111"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "saydo[0]",
+   "type": "saydo",
+   "result": "corrected",
+   "finding": "Both halves hold and conflict, but the 'said' wording should match the sources: the Reflector says '10 years'; Wikipedia says no more than five terms, which he acknowledged in 2023. He ran for a sixth term in 2024 and is the 2026 GOP nominee. He disputes that his signed pledge required a limit.",
+   "fix": "said: 'During his 2014 campaign, said he would serve no more than five terms (10 years); acknowledged the statement in 2023.' did: 'Ran for a sixth term in 2024 and is the 2026 GOP nominee for a seventh.'",
+   "sources": [
+    "https://alabamareflector.com/2026/08/11/u-s-rep-gary-palmer-gets-gop-nod-in-alabama-6th-congressional-district/",
+    "https://en.wikipedia.org/wiki/Gary_Palmer_(politician)"
+   ]
+  },
+  {
+   "cand": "al-06-gary-palmer",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 1/1/2025–7/22/2026: receipts $1,053,565.57; itemized $549,325; unitemized $806.20; PAC $464,000; other = transfers $32,149.97 + offsets $7,284.40 = $39,434.37.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00551374/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-06-maurice-mercer",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC C00951533 (5/1–6/30/2026): receipts $6,538.96; unitemized $3,680; itemized $500; other receipts $2,358.96. The Reflector says he raised $6,500 through July 22.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00951533/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-07-ammie-akin",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC (4/1–7/22/2026): receipts $150,730.44; itemized $50,208.83; unitemized $521.61. The $100,000 is a loan from the candidate, not a contribution; the 'self' label should say loan.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/H6AL07208/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-07-terri-sewell",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "FEC other-committee totals confirmed: $357,855 (2010), $1,679,747.82 (2022), $2,063,873.95 (2024), $1,589,750 (2026; 81%). ProPublica 2023–24 amounts match: BCBS-AL, UnitedHealth, CVS, Community Health Systems, TIAA, PNC, Norfolk Southern and Vulcan $10,000 each; AHA and Gilead $9,000 each. I could not reach the Ballotpedia 2009–14 industry data.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00458976/?cycle=2010",
+    "https://www.fec.gov/data/committee/C00458976/?cycle=2022",
+    "https://www.fec.gov/data/committee/C00458976/?cycle=2024",
+    "https://www.fec.gov/data/committee/C00458976/?cycle=2026",
+    "https://projects.propublica.org/itemizer/committee/C00458976/2024/pac-donations"
+   ]
+  },
+  {
+   "cand": "al-07-terri-sewell",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $75,552 (AIPAC, AGG), $0 IE. ProPublica AIPAC PAC entries sum to $13,403.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress",
+    "https://projects.propublica.org/itemizer/committee/C00458976/2024/pac-donations"
+   ]
+  },
+  {
+   "cand": "al-07-terri-sewell",
+   "path": "finances.trades.overlap[0]",
+   "type": "trade",
+   "result": "unverifiable",
+   "finding": "The 2026 PTR was not provided as a URL and House disclosure search was not reachable. Ways and Means' health jurisdiction over Medicare reimbursement is accurate. GEHC (GE HealthCare) is a medical-imaging maker.",
+   "fix": null,
+   "sources": []
+  },
+  {
+   "cand": "al-07-terri-sewell",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC 1/1/2025–7/22/2026: receipts $1,961,990.72; itemized $302,469; unitemized $67,583.62; PAC $1,589,750; offsets $2,188.10.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/committee/C00458976/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "claims[0]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "The site says 'expand Medicaid to cover more than 154,000 working Alabamians.' Families USA's 154,842 is enrollees left after a 36% work-reporting loss. It does not count how many are working. 'Partly' is accurate.",
+   "fix": null,
+   "sources": [
+    "https://www.dougjones.com/priorities",
+    "https://familiesusa.org/wp-content/uploads/2026/03/Alabama-MedEx-Fact-Sheet-3-6-26.pdf"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "claims[1]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "Families USA's $181.6M is the sum of state-funded 2026 costs expansion would shift to federal funds ('Estimated Direct Savings to State'): pregnant women, disability, mental health, inmate inpatient care and uncompensated care. It is not total federal funding forgone; the sheet's net state savings is $71.8M. 'Partly' is accurate.",
+   "fix": null,
+   "sources": [
+    "https://familiesusa.org/wp-content/uploads/2026/03/Alabama-MedEx-Fact-Sheet-3-6-26.pdf",
+    "https://www.dougjones.com/priorities"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "claims[3]",
+   "type": "claim",
+   "result": "unverifiable",
+   "finding": "Partly checked. ADN confirms the ad says Tuberville 'says your concerns about higher electric bills, water usage and harms to your communities and environment are bullcrap.' Fox10 confirms the July 23 remark ('I understand why Alabamians might be hesitant'). I could not open the WBRC July 14 article (fetch refused), so it is unconfirmed whether 'bull crap' referred only to the climate claim, which the 'partly' verdict depends on.",
+   "fix": null,
+   "sources": [
+    "https://aldailynews.com/jones-tuberville-launch-first-tv-ads-in-alabama-governors-race/",
+    "https://www.fox10tv.com/2026/07/23/where-do-gubernatorial-candidates-jones-tuberville-stand-data-centers/"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "claims[6]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "Lagniappe: Jones's March 19 email statement is quoted exactly. Homestead has been claimed continuously since buying in 2010. He worked from ArentFox's D.C. office. More than 25 FEC filings since 2021 list its K St. address, plus a $250 Persistence PAC record (Jones says the PAC got it wrong). He declined to share tax receipts. 'Partly' is fair.",
+   "fix": null,
+   "sources": [
+    "https://www.lagniappemobile.com/news/alabama/jones-to-tuberville-i-ll-show-mine-if-you-show-yours/article_6d37a4ce-f697-4546-90ae-a907f7451686.amp.html"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "corrected",
+   "finding": "ProPublica 2020-cycle cycle totals: Charter $7,500 ($5,000 + $2,500), Comcast $5,000, Lockton $5,000, National Apartment Assn. $6,000, AICPA $10,000. The '$5,000 each' wording understates three of the five. FEC other-committee totals confirmed: $875,252 (2017–18) and $1,943,850.37 (2019–20). NBC: Highway 31 spent more than $4M against Roy Moore and was 'predominantly funded by SMP.' The 2026 state-filing claims match the Reflector and ADN, which name only labor, party and politician PACs and no major corporate gifts for Jones.",
+   "fix": "Business and trade-group PAC money in his Senate career, e.g., Charter Communications ($7,500), Comcast/NBCUniversal ($5,000), Lockton ($5,000), National Apartment Association ($6,000) and American Institute of CPAs ($10,000) PACs (2020 cycle totals). Other-committee receipts totaled $875,252 (2017–18) and $1,943,850 (2019–20), a mix of business, labor, party and ideological PACs. In 2017 the Highway 31 super PAC, 'predominantly funded' by Senate Majority PAC, spent more than $4 million against his opponent; SMP's own donors were not retrieved. No corporate contributions were reported in his 2026 state filings. His reported PAC money there is mostly labor, party and Democratic-politician PACs.",
+   "sources": [
+    "https://projects.propublica.org/itemizer/committee/C00640623/2020/pac-donations",
+    "https://www.fec.gov/data/committee/C00640623/?cycle=2018",
+    "https://www.fec.gov/data/committee/C00640623/?cycle=2020",
+    "https://www.nbcnews.com/politics/elections/mysterious-democratic-funded-highway-31-super-pac-spent-4m-defeat-n832871",
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/",
+    "https://alabamareflector.com/2026/08/06/jones-outraises-tuberville-in-governors-race-tuberville-retains-major-financial-edge/"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "ProPublica 2020: NORPAC $5,150, JACPAC $5,000, Friends of Israel PAC $5,000, DMFI PAC $3,000, Pro-Israel America PAC $1,000 = $19,150. He is not on Track AIPAC's current list.",
+   "fix": null,
+   "sources": [
+    "https://projects.propublica.org/itemizer/committee/C00640623/2020/pac-donations",
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-gov-doug-jones",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "ADN (Oct. 2026): Jones has raised $5.87M since entering the race, through the September report. State filing, so no FEC ID.",
+   "fix": null,
+   "sources": [
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "claims[0]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "The Reflector confirms the quote. He coached Auburn from the 1999 season, then Texas Tech 2010–12 and Cincinnati 2013–16. The 2017 ESPN video said he moved to Santa Rosa Beach, FL. The Florida homestead was claimed in 2018. He voted in Florida in Nov. 2018 and registered in Alabama on March 28, 2019 (Lagniappe; WaPo via Mediaite). 'Partly' is fair.",
+   "fix": null,
+   "sources": [
+    "https://alabamareflector.com/2025/05/27/u-s-sen-tommy-tuberville-to-run-for-alabama-governor/",
+    "https://www.lagniappemobile.com/news/alabama/tuberville-changes-homestead-status-years-after-eligibility/article_cc76e9c6-337a-4064-9fbe-a5b96007d321.amp.html",
+    "https://www.mediaite.com/politics/alabama-senator-tommy-tuberville-might-actually-be-living-in-florida-wapo-report",
+    "https://en.wikipedia.org/wiki/Tommy_Tuberville"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "claims[2]",
+   "type": "claim",
+   "result": "corrected",
+   "finding": "The verdict is supported, but the record should add the campaign's explanation and fix the timing. The Reflector (Aug. 6) confirms the Doufexis quote and the cash PAC gifts (Diversified Gas & Oil $2,500, Travelers $2,500, Home Depot $5,000) and in-kinds (BANKPAC $3,600, Truk PAC $7,200 for an event, Alabama Farm PAC ~$3,000). The same article quotes spokeswoman Mallory Jaspers: the campaign returns PAC money it receives but must still report it. In-kind event support cannot simply be returned, so 'false' stands. The $100,000 Realtors PAC gift came in September, after the statement, so it belongs in the saydo item, not as evidence the August statement was false. The January note matches ADN ('previously stated he is not accepting PAC money').",
+   "fix": "Record: His state filings show cash PAC gifts (Diversified Gas & Oil PAC $2,500; Travelers PAC $2,500; Home Depot PAC $5,000) and in-kind PAC support (BANKPAC $3,600; Truk PAC $7,200 for a fundraiser; Alabama Farm PAC about $3,000). The campaign says it returns PAC checks but must report them; in-kind event support was nonetheless received. After the statement, in September 2026, he reported $100,000 from the Alabama Realtors PAC.",
+   "sources": [
+    "https://alabamareflector.com/2026/08/06/jones-outraises-tuberville-in-governors-race-tuberville-retains-major-financial-edge/",
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/",
+    "https://aldailynews.com/jones-raises-483k-in-december-tuberville-has-6m-plus-advantage-in-race/"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "claims[6]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "ADN confirms the ad line. APR: more than 34,000 students approved for 2026–27. 1819 News (July 30, 2026) quotes Jones: 'The kids that are in there now, let them finish, but quit taking applications.' Lagniappe (Aug. 10): he vowed to 'stop the CHOOSE Act in its tracks' and to end or roll back parts of it, without saying current students would lose funding. 'Misleading' is supported.",
+   "fix": null,
+   "sources": [
+    "https://aldailynews.com/lets-educate-not-indoctrinate-tuberville-releases-ad-championing-school-choice/",
+    "https://www.alreporter.com/2026/07/02/funding-for-upcoming-school-years-choose-act-education-savings-accounts-announced/",
+    "https://1819news.com/news/item/doug-jones-rails-against-choose-act-in-huntsville-speech-calls-for-ending-education-savings-account-program",
+    "https://www.lagniappemobile.com/news/alabama/election_2026/jones-vows-to-stop-choose-act-in-its-tracks/article_f47da5b1-f053-44a3-884b-51467523256d.amp.html"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "legal[0]",
+   "type": "legal",
+   "result": "corrected",
+   "finding": "APR: seven investors sued in February 2012 and an eighth joined by amended complaint. Stroud pleaded guilty to criminal securities fraud and got 10 years. Tuberville was never charged; investigators said he was also a victim (he says he lost money). The sealed settlement on Oct. 8, 2013 led to dismissal. Only the plaintiff count needs fixing.",
+   "fix": "Seven investors (an eighth joined later) sued him, partner John David Stroud and their TS Capital entities in federal court in February 2012, alleging securities fraud. Stroud pleaded guilty to criminal securities fraud and got 10 years. Tuberville was never charged (investigators said he was also a victim) and settled with the plaintiffs under sealed terms on Oct. 8, 2013.",
+   "sources": [
+    "https://www.alreporter.com/2020/08/25/doug-jones-campaign-ad-notes-tubervilles-involvement-in-hedge-fund-that-defrauded-investors/",
+    "https://en.wikipedia.org/wiki/Tommy_Tuberville"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "legal[1]",
+   "type": "legal",
+   "result": "confirmed",
+   "finding": "CNBC: about 130 trades Jan.–May 2021, $894K–$3.5M+, disclosed after the 45-day deadline; his office said he was unaware. APR: his office said the late-filing penalty was assessed and paid. CLC filed its Senate Ethics complaint on July 29, 2021.",
+   "fix": null,
+   "sources": [
+    "https://www.cnbc.com/2021/07/27/china-critic-sen-tommy-tuberville-of-alabama-violated-stock-act.html",
+    "https://www.alreporter.com/2021/08/02/watchdog-group-files-ethics-complaint-against-sen-tuberville/",
+    "https://campaignlegal.org/press-releases/breaking-campaign-legal-center-files-complaints-against-three-members-congress"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "ProPublica 2020: Nucor, Raytheon, FedEx, Boeing, U.S. Steel, Vulcan, Marathon, Home Depot and BCBS-AL PACs gave $5,000 each. 2024: Cadence $10,000, Regions $6,000, Endo $2,500, plus ag PACs (USA Rice, Farm Credit, SoyPAC, Alabama Farmers Fed.). Governor race: NaphCare $100K (APR), VGW Luckyland $100K and Applied Digital $25K (Reflector, Aug. report), CVS $20K and Alabama Realtors PAC $100K (ADN, Sept.), AT&T $15K and CSX $5K (ADN, Dec.). Club for Growth: 'Club for Growth Action spent $1,433,763 on the race.'",
+   "fix": null,
+   "sources": [
+    "https://projects.propublica.org/itemizer/committee/C00701672/2020/pac-donations",
+    "https://projects.propublica.org/itemizer/committee/C00701672/2024/pac-donations",
+    "https://www.alreporter.com/2025/06/04/most-of-tubervilles-initial-fundraising-haul-came-from-large-donations/",
+    "https://alabamareflector.com/2026/09/04/jones-outraises-tuberville-in-august-tuberville-retains-large-funding-edge/",
+    "https://aldailynews.com/jones-raises-483k-in-december-tuberville-has-6m-plus-advantage-in-race/",
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/",
+    "https://www.clubforgrowth.org/club-for-growth-pac-congratulates-tommy-tuberville-on-al-sen-runoff-victory/"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $29,184 (AIPAC, AMP, RJC, USI), $0 IE. ProPublica: USI PAC $500 (Nov. 3, 2020) and $4,000 (Mar. 29, 2024).",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress",
+    "https://projects.propublica.org/itemizer/committee/C00701672/2020/pac-donations",
+    "https://projects.propublica.org/itemizer/committee/C00701672/2024/pac-donations"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "democracy[2]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "GPB lists the six senators who voted to sustain the Arizona objection: Hawley, Cruz, Tuberville, Marshall, Kennedy, Hyde-Smith. Senate Democrats' page: 'Not sustained: 6-93.'",
+   "fix": null,
+   "sources": [
+    "https://www.gpb.org/node/552016",
+    "https://www.democrats.senate.gov/2021/01/07/roll-call-vote"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "democracy[3]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "GPB lists the seven senators who voted to sustain the Pennsylvania objection: Cruz, Hawley, Hyde-Smith, Lummis, Marshall, Tuberville, Rick Scott. The tally, 7–92, comes from the general record; GPB does not give it.",
+   "fix": "One of seven senators who voted to sustain the objection to Pennsylvania's electoral votes (failed 7–92).",
+   "sources": [
+    "https://www.gpb.org/node/552016"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "saydo[0]",
+   "type": "saydo",
+   "result": "confirmed",
+   "finding": "Said: Doufexis's 'ZERO PAC' quote and Jaspers's statement that the campaign does not solicit or accept PAC contributions (Reflector, Aug. 6). Did: ADN shows $100,000 from the Alabama Realtors PAC in September 2026, plus earlier reported cash and in-kind PAC gifts. These conflict. Note the campaign says it returns PAC checks; no refund of the Realtors gift has been reported.",
+   "fix": null,
+   "sources": [
+    "https://alabamareflector.com/2026/08/06/jones-outraises-tuberville-in-governors-race-tuberville-retains-major-financial-edge/",
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/",
+    "https://alabamareflector.com/2026/10/06/jones-tuberville-nearly-even-in-september-fundraising-tuberville-maintains-funding-lead/"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "finances.trades.overlap[0]",
+   "type": "trade",
+   "result": "confirmed",
+   "finding": "CNBC: about 130 trades Jan.–May 2021, $894K–$3.5M, including COVID-sensitive health companies (Regeneron, J&J) and 3M, while he sat on the HELP Committee. APR also ties the health-care holdings to his HELP seat.",
+   "fix": null,
+   "sources": [
+    "https://www.cnbc.com/2021/07/27/china-critic-sen-tommy-tuberville-of-alabama-violated-stock-act.html",
+    "https://www.alreporter.com/2021/08/02/watchdog-group-files-ethics-complaint-against-sen-tuberville/"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "finances.trades.overlap[1]",
+   "type": "trade",
+   "result": "unverifiable",
+   "finding": "No URL was given for the 'mw_futures' source and web search budget was exhausted. Wikipedia confirms he sits on the Agriculture Committee but does not cover the 2023 futures trades. The trades were widely reported in 2023 but are not confirmed here, including the ≈$250K figure.",
+   "fix": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tommy_Tuberville"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "finances.trades.overlap[2]",
+   "type": "trade",
+   "result": "unverifiable",
+   "finding": "No URL was given for 'apr_defense' and I could not check it. Armed Services membership is confirmed on Wikipedia. Also, IBM and Accenture are mainly IT/consulting firms, so calling them 'defense-contractor stock' may overstate the overlap; check the source wording.",
+   "fix": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tommy_Tuberville"
+   ]
+  },
+  {
+   "cand": "al-gov-tommy-tuberville",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "ADN (Oct. 2026): Tuberville has raised $15.67M since entering the race, through the September report. State filing.",
+   "fix": null,
+   "sources": [
+    "https://aldailynews.com/tuberville-narrowly-out-raises-jones-in-september/"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "claims[8]",
+   "type": "claim",
+   "result": "corrected",
+   "finding": "The About page says 'In 2010, Barry defeated a six-term Democrat incumbent.' Spicer (D) held District 91 from 1998 to 2010, three four-year terms, and Moore won 9,754–5,383 (Ballotpedia). The core claim (unseated a Democratic incumbent) is true; only the term count is inflated. 'False' overstates the error.",
+   "fix": "verdict: partly — He did defeat Democratic incumbent Terry Spicer in 2010 (9,754–5,383), but Spicer had served three four-year terms (1998–2010), not six.",
+   "sources": [
+    "https://barrymooreforalabama.com/about/",
+    "https://en.wikipedia.org/wiki/Terry_Spicer",
+    "https://ballotpedia.org/Terry_Spicer"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "claims[17]",
+   "type": "claim",
+   "result": "corrected",
+   "finding": "The verdict 'partly' holds and the claim text is confirmed. CBS says the lowest-paid quarter has seen larger percentage raises than the top quarter since 2015, and says this is 'partly' driven by state minimum-wage increases. The record's 'largely' overstates CBS. The 'first time in fifty years' part has no source on the page or in CBS.",
+   "fix": "Record: Atlanta Fed data showed the lowest-paid quarter of workers getting larger percentage raises than the top quarter since 2015, a trend that began before his term and that CBS said was partly driven by state minimum-wage increases. No source was found for the 'first time in fifty years' part.",
+   "sources": [
+    "https://barrymooreforalabama.com/issues/",
+    "https://www.cbsnews.com/news/state-of-the-union-is-donald-trump-delivering-on-his-promise-to-help-workers/"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "claims[18]",
+   "type": "claim",
+   "result": "confirmed",
+   "finding": "CBO (June 12, 2025, on H.R. 1 as passed May 22, 2025): resources generally fall for households toward the bottom and rise for the middle and top. The law includes tips and overtime deductions (Wikipedia). 'Partly' is fair.",
+   "fix": null,
+   "sources": [
+    "https://www.cbo.gov/publication/61387",
+    "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act",
+    "https://barrymooreforalabama.com/issues/"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "legal[0]",
+   "type": "legal",
+   "result": "confirmed",
+   "finding": "Ballotpedia: arrested April 24, 2014 on two felony perjury counts and two false-statement counts; not guilty on all counts Oct. 30, 2014. APR: on Sept. 5, 2014 the Alabama Supreme Court rejected his challenge to the grand jury and the special prosecutors' appointment. Wikipedia covers the Pipkin recording.",
+   "fix": null,
+   "sources": [
+    "https://ballotpedia.org/Barry_Moore_(Alabama)",
+    "https://www.alreporter.com/2014/09/05/supreme-court-rules-against-indicted-lawmaker-moore-trial-to-go-forward/",
+    "https://en.wikipedia.org/wiki/Barry_Moore_(American_politician)"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "money_flags.corp",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Citation Needed lists Defend American Jobs support of $12,203,095 for 'Felix Moore (R)', which is Barry Moore's legal name per FEC. Mother Jones (May 14): nearly $7M before the primary; Fairshake is funded almost entirely by Ripple, Coinbase and a16z. FEC: PAC $881,597.83 through 6/30/2026.",
+   "fix": null,
+   "sources": [
+    "https://influence.citationneeded.news/2026/committees/C00836221",
+    "https://www.motherjones.com/?p=1200536",
+    "https://www.fec.gov/data/candidate/S6AL00476/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "money_flags.lobby",
+   "type": "money_flag",
+   "result": "confirmed",
+   "finding": "Track AIPAC: $30,173 (AIPAC), $0 IE.",
+   "fix": null,
+   "sources": [
+    "https://www.trackaipac.com/congress"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "democracy[0]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 10 (Jan. 6, 2021, objection to Arizona): failed 121–303; this member is recorded Yea.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202110"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "democracy[1]",
+   "type": "objected",
+   "result": "confirmed",
+   "finding": "House Clerk Roll Call 11 (Jan. 7, 2021, objection to Pennsylvania): failed 138–282; Moore (AL) is recorded Yea. Wikipedia also says the vote came just after the Capitol attack.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/202111",
+    "https://en.wikipedia.org/wiki/Barry_Moore_(American_politician)"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "saydo[0]",
+   "type": "saydo",
+   "result": "confirmed",
+   "finding": "The 'did' half is confirmed: House Clerk Roll Call 190 (July 3, 2025), H.R. 1 concurrence passed 218–214 with Moore (AL) voting Aye. Wikipedia: $5T debt-limit increase; CBO about $2.8T in added deficits through 2034. Wikipedia also confirms he voted against the Fiscal Responsibility Act. The '$4 trillion' quote and the 2021 debt-ceiling stance could not be reached (sources without URLs), but the conflict holds on the confirmed parts.",
+   "fix": null,
+   "sources": [
+    "https://clerk.house.gov/Votes/2025190",
+    "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act",
+    "https://en.wikipedia.org/wiki/Barry_Moore_(American_politician)"
+   ]
+  },
+  {
+   "cand": "al-sen-barry-moore",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC (S6AL00476, 1/1/2025–6/30/2026): receipts $3,787,329.72; itemized $2,269,056.81; unitemized $346,553.67; PAC $881,597.83; candidate loan $50,000 (a loan, not a contribution); other = transfers $234,460.16 + other $5,661.25 = $240,121.41. Principal committee C00954974.",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/S6AL00476/?cycle=2026"
+   ]
+  },
+  {
+   "cand": "al-sen-everett-wess",
+   "path": "fec",
+   "type": "money_totals",
+   "result": "confirmed",
+   "finding": "FEC (1/1–6/30/2026): receipts $80,554.63; itemized $8,350.05; unitemized $1,561.35; candidate loans $70,643.23 (a loan, not a contribution).",
+   "fix": null,
+   "sources": [
+    "https://www.fec.gov/data/candidate/S6AL00518/?cycle=2026"
+   ]
+  }
+ ]
+}

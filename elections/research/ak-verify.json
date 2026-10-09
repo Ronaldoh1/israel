@@ -1,0 +1,1019 @@
+[
+ {
+  "cand": "Dan Sullivan",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC 'other committee contributions' match exactly: $2,604,358 (2021-26, thru 7/29/26), $2,462,068.97 (2015-20), $834,683 (2014). Alaska Public Media: Q1 2026 PAC money $277,000 = 24% of his total, mostly industry/trade groups, law and lobbying firms, contractors. The trawl-money characterization is correctly flagged as unquantified.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/S4AK00214/?cycle=2026",
+   "https://www.fec.gov/data/candidate/S4AK00214/?cycle=2020",
+   "https://www.fec.gov/data/candidate/S4AK00214/?cycle=2014",
+   "https://www.ktoo.org/?p=350805"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC (FEC data 7/5/26): Israel Lobby Total $789,874, donations only, IE $0, PACs AIPAC/COPAC/NATPAC/RJC/NORPAC; no endorsement label. Alaska Public Media: AIPAC conveyed about $250,000 in individual (earmarked) contributions in Q1 2026, explicitly not PAC money. Note: the same $250,000 and $789,874 also appear in israel.aipac_pac, israel.others and money2.bundlers - see the double-count item.",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress",
+   "https://www.ktoo.org/?p=350805"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "fec.receipts/src",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC candidate page (1/1/2021-7/29/2026): receipts $11,735,898.20; itemized indiv $4,838,675.54; unitemized $697,893.99; party $62,000; transfers $3,212,070.34; disbursements $5,172,572.02; COH $7,295,069.20. 2025-26 two-year receipts $9,136,966.96.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/S4AK00214/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "fec.quarters_note",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Both figures exist in the cited reports: Alaska Public Media says $1.7M raised in Q1; Straight Arrow News says $2.1M (with $7.5M cash on hand). The conflict is correctly disclosed.",
+  "fix": "",
+  "sources": [
+   "https://www.ktoo.org/?p=350805",
+   "https://san.com/cc/money-pours-into-alaska-race-as-democrats-seek-senate-majority/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "fec.outside.oppose[0]",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "Right For Alaska ~$574,000 against Sullivan (Jul 30-Aug 7) is confirmed by OpenSecrets/Beacon. But the NYT excerpt on Election Law Blog gives $2.2M as Right For Alaska's overall spending in the race (opposing Sullivan AND boosting Southworth and Heikes), not anti-Sullivan spending alone.",
+  "fix": "Right For Alaska (super PAC, Hudson, Wis.) - ~$574,000 opposing him, Jul 30-Aug 7, 2026 (OpenSecrets); the NYT (via Election Law Blog) put the group's total spending in the race - against Sullivan and for Southworth and Heikes combined - at $2.2M by Aug 18. FEC shows $2,353,093 in total independent expenditures through Sep 30.",
+  "sources": [
+   "https://alaskabeacon.com/2026/08/12/why-super-pacs-are-suddenly-spending-big-on-alaskas-us-senate-underdogs/",
+   "https://electionlawblog.org/2026/unusual-spending-raises-prospect-of-election-meddling-in-alaska/",
+   "https://www.fec.gov/data/committee/C00944611/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "fec.outside.oppose[1]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "907 Initiative 'has spent more than $1 million on negative ads and information campaigns featuring' Sen. Sullivan (Alaska Public Media via KYUK, Sep 9). Note the cited ktoo_money_0428 article does not mention 907 Initiative; the support is kyuk_0909.",
+  "fix": "",
+  "sources": [
+   "https://www.kyuk.org/alaska-state-news/2026-09-09/new-campaign-complaint-alleges-petersburg-dan-sullivan-is-getting-undue-help"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "fec.outside (missing aggregate)",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "The outside-spending block lists only opposition groups with dollar figures and no support figures, which makes him look out-spent. Alaska Public Media (Oct 2) reports more than $31M in Senate IEs since the primary, with groups backing Sullivan outspending those backing Peltola by nearly $7M.",
+  "fix": "Add to outside_note (both Sullivan and Peltola files): 'Alaska Public Media (Oct. 2, 2026) reports independent groups have spent more than $31 million in the Senate race since the Aug. 18 primary, about 70% on opposition; groups backing Sullivan have outspent groups backing Peltola by nearly $7 million.'",
+  "sources": [
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "money2.note (Right For Alaska funders)",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "FEC (1/1-9/30/26): receipts $2,375,017; individuals $100,000 (all itemized); party committees $1,285,000; other committees $990,000; IEs $2,353,093.04. Beacon/OpenSecrets: sole disclosed donor at Aug 12 was William Harris, Lexington, Mass., $100,000 on Mar 30.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00944611/",
+   "https://alaskabeacon.com/2026/08/12/why-super-pacs-are-suddenly-spending-big-on-alaskas-us-senate-underdogs/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "finances.trades.overlap[0]",
+  "type": "trade",
+  "result": "confirmed",
+  "finding": "Disclosed Capitol lists a Southwest Airlines (LUV) sale dated Aug 22, 2023 (amount range not shown) and 102 trades. He sits on Commerce, Science and Transportation, which has aviation jurisdiction. No evidence of nonpublic information is claimed, correctly.",
+  "fix": "",
+  "sources": [
+   "https://www.disclosedcapitol.com/politicians/357",
+   "https://en.wikipedia.org/wiki/Dan_Sullivan_(American_senator)"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "finances.note (RPM sales)",
+  "type": "trade",
+  "result": "confirmed",
+  "finding": "Alaska Current: RPM sales Sept 25 2018 (up to $15K), Feb 27 2020 (up to $100K), Nov 30 2022 (up to $50K); assets $4.1M-$12.3M; 'helped triple' wealth; documents timing only. Newsweek: Quiver estimate ~$8.4M, RPM stake $1M-$5M, rental up to $500K.",
+  "fix": "",
+  "sources": [
+   "https://thealaskacurrent.com/?p=25234",
+   "https://www.newsweek.com/sullivan-peltola-net-worth-compared-alaska-12498773"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Alaska Current: two RPM trades from March and May 2018 reported in late July 2018 past the 45-day deadline; Sullivan said managers did not notify him; article also refers to a 2022 reporting violation. No penalty or ethics finding reported - the dossier's status line is accurate.",
+  "fix": "",
+  "sources": [
+   "https://thealaskacurrent.com/?p=25234"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[2]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: CEL lists him 8th on the Top 10 Senate Republicans list (115th Congress), a within-party ranking, not top 10 of all senators.",
+  "fix": "",
+  "sources": [
+   "https://batten.virginia.edu/news/battens-center-for-effective-lawmaking-announces-the-most-effective-lawmakers-in-the-115th-congress/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[11]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'misleading' is supported: the live Issues page still says he is 'currently an infantry officer and Colonel in the U.S. Marine Corps Reserve' and 'the only member of the U.S. Senate still serving in the military'; Wikipedia says he retired as a colonel in 2024. Fairness note: this is stale website text, not a new statement; the dossier says so.",
+  "fix": "",
+  "sources": [
+   "https://dansullivanforalaska.com/issues",
+   "https://en.wikipedia.org/wiki/Dan_Sullivan_(American_senator)"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[14]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'misleading' is supported: FactCheck.org rates the Sullivan/Last Frontier PAC ads misleading; Peltola voted against the July 2023 House NDAA over GOP amendments (incl. abortion access) and for the final conference report keeping the 5.2% raise, which Sullivan also voted for.",
+  "fix": "",
+  "sources": [
+   "https://www.factcheck.org/2026/07/alaska-senate-race-ads-mislead-on-peltolas-votes-on-military-pay-raise/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[15]",
+  "type": "claim",
+  "result": "unverifiable",
+  "finding": "Could not reach Congress.gov/GovTrack to count Peltola's enacted sponsored bills (GovTrack fetch failed; ADN letter blocked). The dossier's 'unverifiable' stands.",
+  "fix": "",
+  "sources": [
+   "https://www.factcheck.org/2026/07/alaska-senate-race-ads-mislead-on-peltolas-votes-on-military-pay-raise/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[16]",
+  "type": "claim",
+  "result": "corrected",
+  "finding": "'unverifiable' is the right verdict, but the record text overstates the court ruling. Judge Thomas Matthews ruled the Division used a 'new, previously unstated good faith criteria' with no basis in the Constitution, statute or regulation; the article does not say he weighed or rejected coordination evidence. Director Beecher cited no coordination evidence. The $100 (Aug 2022) and $30 (Aug 2024) ActBlue gifts and Amber Lee's Democratic work are confirmed.",
+  "fix": "Replace 'a Superior Court judge found the evidence insufficient' with 'a Superior Court judge ruled the Division's new \"good faith\" test had no basis in law (he did not rule on coordination)'.",
+  "sources": [
+   "https://www.pbs.org/newshour/amp/politics/man-with-same-name-as-u-s-sen-dan-sullivan-is-eligible-for-alaskas-primary-ballot-judge-rules",
+   "https://www.alaskasnewssource.com/2026/06/04/sullivan-vs-sullivan-senator-accuses-peltola-rigging-election-evidence-her-involvement-is-unclear/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[0]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "Sample true claim: senator since Jan 2015; beat Al Gross 54%-41% in 2020 per Wikipedia.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dan_Sullivan_(American_senator)"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[3]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "Sample true claim: Wikipedia says he retired in 2024 at the rank of colonel; six-week Afghanistan deployment July 2013.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dan_Sullivan_(American_senator)"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "claims[6]",
+  "type": "claim",
+  "result": "corrected",
+  "finding": "Rated true, but the record leaves the Rice title open. Condoleezza Rice was National Security Advisor during his 2002-2004 NSC/NEC stint and became Secretary of State only in January 2005, so the campaign page's 'Secretary of State' title is wrong for that period. The substance (NSC director) holds.",
+  "fix": "Verdict 'partly'; record: 'White House Fellow and NSC/NEC director 2002-2004. Rice was National Security Advisor then, not Secretary of State (she took that post in Jan. 2005), so the page's title for her is inaccurate.'",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Condoleezza_Rice",
+   "https://en.wikipedia.org/wiki/Dan_Sullivan_(American_senator)"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "profile.oneliner (41.4%)",
+  "type": "ballot",
+  "result": "corrected",
+  "finding": "41.4% and second place are correct per the certified-results reporting (Beacon Aug 31; Ballotpedia). But the cited doe_primary PDF is the UNOFFICIAL Aug 25 report, which shows 42.64% (Peltola 48.22%) and Heikes 4th / Leslie 5th. The citation does not support the figure.",
+  "fix": "Cite the certified results (Alaska Beacon Aug 31, 2026 / Ballotpedia News Sep 14, 2026) instead of the unofficial Aug 25 summary report, or link the certified Division of Elections results.",
+  "sources": [
+   "https://alaskabeacon.com/2026/08/31/petersburgs-dan-j-sullivan-stays-on-alaskas-u-s-senate-ballot-after-third-place-primary-finish/",
+   "https://news.ballotpedia.org/2026/09/14/alaska-voters-to-decide-on-the-second-u-s-senate-general-election-using-ranked-choice-voting/",
+   "https://www.elections.alaska.gov/wp-content/uploads/2026/08/08252026_ElectionSummaryReportRPT.pdf"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan",
+  "path": "double-count: money_flags.lobby vs israel.aipac_pac / israel.others / money2.bundlers",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "The same AIPAC $250,000 Q1 conduit appears in money_flags.lobby, israel.aipac_pac and money2.bundlers; the same $789,874 Track AIPAC total appears in money_flags.lobby and israel.others. If more than one of these sections feeds a score, the same money is counted two or three times.",
+  "fix": "Score pro-Israel money in one place only (israel block); keep money_flags.lobby as a cross-reference with no score weight, or drop the duplicate figures from it.",
+  "sources": [
+   "https://www.trackaipac.com/congress",
+   "https://www.ktoo.org/?p=350805"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "ProPublica Itemizer (2024): Exxon Mobil PAC $5,000 (9/26/24), PwC PAC $5,000, NAR PAC $5,000, NBAA PAC $5,000 total (two gifts: $4,000 + $1,000), NMMA PAC $5,000, Halliburton PAC $2,500, Apache PAC $2,000; list is partial. FEC 2026: other-committee contributions $602,145.64 (1/1-7/29/26). Alaska Public Media: Q1 PAC money ~$450,000 (6%), mostly Democratic leadership PACs.",
+  "fix": "",
+  "sources": [
+   "https://projects.propublica.org/itemizer/committee/C00812388/2024/pac-donations",
+   "https://www.fec.gov/data/candidate/S6AK00276/?cycle=2026",
+   "https://www.ktoo.org/?p=350805"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "ProPublica: 10 AIPAC PAC (C00797670) entries to Mary Peltola For Alaska summing $13,253, incl. $5,000 on Oct 25, 2024; DMFI PAC $4,000 on Sep 24, 2024. Earmark status not shown on the page, as the dossier says. Same figures repeat in israel.aipac_pac/israel.others (double-count risk).",
+  "fix": "",
+  "sources": [
+   "https://projects.propublica.org/itemizer/committee/C00812388/pac-donations/C00797670",
+   "https://projects.propublica.org/itemizer/committee/C00812388/2024/pac-donations"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "fec.receipts/src",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC (1/1-7/29/26): receipts $18,545,132.43; itemized $9,507,127.48; unitemized $6,750,626.43; party $1,500; transfers $1,648,275.45; disbursements $13,908,377.35; COH $4,636,755.08; debts $0. EMILY's List conduit $44,000 and 13% in-state share confirmed by Alaska Public Media.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/S6AK00276/?cycle=2026",
+   "https://www.ktoo.org/?p=350805"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "fec.outside.oppose[0]",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "Fair Deal Alaska ~$152,000 opposing Peltola through Aug 8, donors undisclosed - confirmed. But the 'Hafner' it boosted is Democrat Carol 'Kitty' Hafner (a Senate candidate), not House candidate Eric Hafner; the bare surname invites confusion with the House dossier. Total group spending was >$768,000.",
+  "fix": "Fair Deal Alaska - ~$152,000 opposing her (through Aug 8, 2026) out of >$768,000 total, while boosting Green Richard Grayson and Democrat Carol 'Kitty' Hafner in the Senate primary; donors undisclosed until after the election.",
+  "sources": [
+   "https://alaskabeacon.com/2026/08/12/why-super-pacs-are-suddenly-spending-big-on-alaskas-us-senate-underdogs/",
+   "https://electionlawblog.org/2026/unusual-spending-raises-prospect-of-election-meddling-in-alaska/"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "fec.outside.support[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "Straight Arrow News (citing Politico): Democratic-aligned super PACs spent more than $3 million on Alaska ad buys; PACs not named. Add the Oct 2 Alaska Public Media aggregate (see Sullivan fec.outside item).",
+  "fix": "",
+  "sources": [
+   "https://san.com/cc/money-pours-into-alaska-race-as-democrats-seek-senate-majority/",
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "claims[6]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: FactCheck.org says 'pushed through' is subjective, the 5.2% raise was the largest in 20+ years and followed the ECI formula, and her co-sponsored enacted amendment was unrelated to pay.",
+  "fix": "",
+  "sources": [
+   "https://www.factcheck.org/2026/07/alaska-senate-race-ads-mislead-on-peltolas-votes-on-military-pay-raise/"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "claims[10]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: Alaska Current says trades 'helped triple' his wealth and he made 'an estimated $2 million in stock trades' (its linked headline: 'traded up to $2M'), i.e. volume, not profit. Newsweek reports the campaign's 'up to two million dollars' wording.",
+  "fix": "",
+  "sources": [
+   "https://thealaskacurrent.com/?p=25234",
+   "https://www.newsweek.com/sullivan-peltola-net-worth-compared-alaska-12498773"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "claims[11]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'unverifiable' stands: Newsweek reports only the campaign's statement (no stocks; net worth $62,006-$230,000) and ranges for retirement/529 accounts, mortgage $250K-$500K, credit card $10K-$15K; Alaska Current says she reported no trades.",
+  "fix": "",
+  "sources": [
+   "https://www.newsweek.com/sullivan-peltola-net-worth-compared-alaska-12498773",
+   "https://thealaskacurrent.com/?p=25234"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "revolving[0]",
+  "type": "record",
+  "result": "confirmed",
+  "finding": "Wikipedia: lobbyist in Alaska 2015-2017; Ballotpedia: 'a lobbyist with Sattler Strategies'.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mary_Peltola",
+   "https://ballotpedia.org/Mary_Peltola"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "claims[0]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "Sample true claim (service dates) consistent with Wikipedia.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mary_Peltola"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "double-count: claims[6] vs saydo[2]",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "The same FY2024 NDAA pay-raise vote is scored twice: claims[6] (partly) and saydo[2] (consistent).",
+  "fix": "Keep the fact in one scored slot (claims[6]); mark saydo[2] as context/no score or replace with a different topic.",
+  "sources": [
+   "https://www.factcheck.org/2026/07/alaska-senate-race-ads-mislead-on-peltolas-votes-on-military-pay-raise/"
+  ]
+ },
+ {
+  "cand": "Mary Peltola",
+  "path": "double-count: money_flags.lobby vs israel.aipac_pac/israel.others",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "$13,253 AIPAC PAC and $4,000 DMFI appear in both money_flags.lobby and the israel block.",
+  "fix": "Score pro-Israel PAC money in one section only.",
+  "sources": [
+   "https://projects.propublica.org/itemizer/committee/C00812388/pac-donations/C00797670"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan Jr. (Petersburg)",
+  "path": "claims[5]",
+  "type": "claim",
+  "result": "corrected",
+  "finding": "'unverifiable' is the right verdict. Amber Lee's unpaid 907 Initiative board seat and the pending FEC complaint by Americans for Public Trust (filed Sep 8/9) are confirmed; FEC lacks a quorum to act. But 'a judge found the evidence insufficient' overstates the ruling: Judge Matthews ruled the Division applied a new, unstated 'good faith' test; he did not rule on coordination.",
+  "fix": "Replace 'a judge found the evidence insufficient' with 'a Superior Court judge ruled the Division's \"good faith\" test had no legal basis (no ruling on coordination)'; add that the FEC complaint was filed by Americans for Public Trust and cannot be decided while the FEC lacks a quorum.",
+  "sources": [
+   "https://www.pbs.org/newshour/amp/politics/man-with-same-name-as-u-s-sen-dan-sullivan-is-eligible-for-alaskas-primary-ballot-judge-rules",
+   "https://www.kyuk.org/alaska-state-news/2026-09-09/new-campaign-complaint-alleges-petersburg-dan-sullivan-is-getting-undue-help",
+   "https://www.alaskasnewssource.com/2026/06/04/sullivan-vs-sullivan-senator-accuses-peltola-rigging-election-evidence-her-involvement-is-unclear/"
+  ]
+ },
+ {
+  "cand": "Dan Sullivan Jr. (Petersburg)",
+  "path": "money2.note",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "ActBlue gifts earmarked to Peltola from a Dan Sullivan of Petersburg: $100 (Aug 2022), $30 (Aug 2024); identity with the candidate not confirmed - correctly hedged.",
+  "fix": "",
+  "sources": [
+   "https://www.alaskasnewssource.com/2026/06/04/sullivan-vs-sullivan-senator-accuses-peltola-rigging-election-evidence-her-involvement-is-unclear/"
+  ]
+ },
+ {
+  "cand": "Gerald Heikes",
+  "path": "fec.outside.support[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "Right For Alaska $410,000 supporting Heikes and ~$219,000 for Southworth, ~$574,000 against Sullivan (Jul 30-Aug 7); formed Mar 23, Hudson, Wis., treasurer Thomas Datwyler; sole disclosed donor William Harris $100,000 (Mar 30).",
+  "fix": "",
+  "sources": [
+   "https://alaskabeacon.com/2026/08/12/why-super-pacs-are-suddenly-spending-big-on-alaskas-us-senate-underdogs/"
+  ]
+ },
+ {
+  "cand": "Gerald Heikes",
+  "path": "money2.superpac_donors[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "FEC totals match: $2,375,017 receipts, $1,285,000 party committees, $990,000 other committees, $100,000 individuals, $2,353,093.04 IEs (thru 9/30/26).",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00944611/"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC (1/1/25-7/29/26): other committee contributions $1,028,577 of $5,470,446.24 (18.8%); career $1,384,180.74 across 2022/2024/2026 matches. ADN: Defend American Jobs (pro-crypto) spent 'nearly $500,000' late July supporting him. House disclosure: bitcoin $500,001-$1,000,000. Wikipedia: May 2026 American Reserve Modernization Act (strategic bitcoin reserve). No causal link asserted - correct.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H2AK01083/?cycle=2026",
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/",
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075994.pdf",
+   "https://en.wikipedia.org/wiki/Nick_Begich_III"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "money_flags.lobby",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Track AIPAC: $16,107 donations, IE $0, PACs AIPAC and RJC; no endorsement label. Repeated in israel.others (double-count risk).",
+  "fix": "",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "fec.outside.support",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "Alaska Public Media (Oct 2): >$6M House IEs since primary; groups backing Begich and Hill each spent roughly $3M (groups not named). Defend American Jobs ~$500K per ADN.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races",
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "foreign[0]",
+  "type": "foreign",
+  "result": "confirmed",
+  "finding": "2024 House disclosure: FarShore Partners LLC, 69% interest, $1M-$5M, Carson City NV, 'Software Development'; Wikipedia: mostly based in India, 160 employees internationally in 2016. KTOO: the '~90% of employees in India' figure is a pro-Peltola ad claim (Vote Alaska Before Party), not verified. Fairness note: this is a U.S.-registered company with an offshore workforce, not a foreign-government or foreign-agent tie; label it so wherever 'foreign' entries are scored.",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2024/10067366.pdf",
+   "https://en.wikipedia.org/wiki/Nick_Begich_III",
+   "https://www.ktoo.org/2024/10/10/that-ad-claiming-begich-sold-phony-medical-devices-heres-the-backstory/"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "finances.note / trades.overlap_note",
+  "type": "trade",
+  "result": "confirmed",
+  "finding": "FY2025 report signed 08/13/2026: Earthpulse $1M-$5M (income $100,001-$1M), FarShore $1M-$5M + $250K-$500K loan, Listen Ventures III and OnyxMP $1M-$5M each, Wrangell-St. Elias at Elliott Creek 20.49% $1M-$5M, UCore $15,001-$50,000, Graphite One $1,001-$15,000, Raken sale 9/9/2025 $250,001-$500,000, spouse student loans $10K-$15K + $15K-$50K, Club for Growth Foundation fellow. 2024 report: Earthpulse 17%. KTOO: his father calls him a passive investor (not independently verified). No overlap trades - correct.",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075994.pdf",
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2024/10067366.pdf",
+   "https://www.ktoo.org/2024/10/10/that-ad-claiming-begich-sold-phony-medical-devices-heres-the-backstory/"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "claims[9]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: Wikipedia says the share rises from 50% to 70% starting in 2035.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nick_Begich_III"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "claims[4] / claims[6] / claims[11]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "Sample true claims: Wikipedia cites his vice-chair role on the Energy and Mineral Resources subcommittee and lists Executive Vice Chair of the Western Caucus; FY2025 disclosure shows only the private Raken sale, no public-stock trades.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nick_Begich_III",
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075994.pdf"
+  ]
+ },
+ {
+  "cand": "Nick Begich",
+  "path": "double-count: money_flags.lobby vs israel.others",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "$16,107 Track AIPAC total appears in both money_flags.lobby and israel.others.",
+  "fix": "Score it in one section only.",
+  "sources": [
+   "https://www.trackaipac.com/congress"
+  ]
+ },
+ {
+  "cand": "Bill Hill",
+  "path": "fec.receipts/src",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "FEC (1/1-7/29/26): receipts $1,336,291.63; other committees $62,050; itemized $1,030,946.23; unitemized $233,664.86; transfers $7,400; disbursements $820,405.67; COH $515,885.96.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/candidate/H6AK01092/?cycle=2026"
+  ]
+ },
+ {
+  "cand": "Bill Hill",
+  "path": "money2.superpac_donors[0] / fec.outside.support[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "Wheel Dog PAC (C00944389), hybrid PAC registered 3/20/26: receipts $2,622,253.54; individuals $253,000; other committees $1,400,000; other receipts $950,000.18; IEs $2,186,255.64 (thru 7/29). ADN: has spent more than $2M backing Hill. Contributor names not retrievable.",
+  "fix": "",
+  "sources": [
+   "https://www.fec.gov/data/committee/C00944389/?cycle=2026",
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/"
+  ]
+ },
+ {
+  "cand": "Bill Hill",
+  "path": "fec.outside_note ($50,000)",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "ADN says Wheel Dog sent the 'not the guy in a NY prison' texts and that 'a PAC supporting Hill' spent $50,000 countering the pro-Hafner message; it does not explicitly say the $50,000 was Wheel Dog's.",
+  "fix": "ADN (Aug. 2026) says Wheel Dog PAC backs Hill and had spent more than $2M; a pro-Hill PAC (ADN does not say which) spent $50,000 countering a pro-Hafner text campaign, and Wheel Dog's texts urged voters to back 'the real Alaskan, not the guy in a NY prison.'",
+  "sources": [
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/"
+  ]
+ },
+ {
+  "cand": "Bill Hill",
+  "path": "finances (disclosure)",
+  "type": "record",
+  "result": "confirmed",
+  "finding": "Candidate report (1/1/25-4/15/26, signed 5/15/26): drift permit $100,001-$250,000; Bristol Bay Brailer 40% joint $15,001-$50,000; liabilities FNBA commercial real-estate loan $250,001-$500,000 (May 2025) + two F/V Vellamo loans $100,001-$250,000 each (sum min $450,003); prior-year income $244,049 fishing, $81,778 pension, spouse $48,181.",
+  "fix": "",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10074404.pdf"
+  ]
+ },
+ {
+  "cand": "Bill Hill",
+  "path": "claims[8]",
+  "type": "claim",
+  "result": "corrected",
+  "finding": "The disclosure lists 'Paug-Vik Incorporated: President' with no dates; candidate-report positions cover the reporting period (Jan 2025-Apr 2026), so it does not show he is president now. The dossier's 'former label conflicts with the disclosure' overstates the conflict.",
+  "fix": "Verdict 'unverifiable'; record: 'His May 2026 candidate disclosure lists him as President of Paug-Vik Incorporated during the Jan. 2025-Apr. 2026 reporting period (no end date given); whether he has since left the post is not documented. His Beacon survey says 15 years on the board, 10 as president.'",
+  "sources": [
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10074404.pdf"
+  ]
+ },
+ {
+  "cand": "Eric Hafner",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "DOJ: guilty plea May 17, 2022 before Judge Shipp to three counts (threatening communications with intent to extort; threatening communications; false information about an explosive device); sentenced Dec 7, 2023 by Judge Quraishi to 240 months + 3 years supervised release; conduct July 2016-May 2018 abroad; sought $350,000; bomb threats to an official's office, courthouse, police dept, two law firms, a business. 3d Cir. No. 26-1120 (consol. 23-3258): summary affirmance Feb 27, 2026; rehearing denied May 28, 2026; mandate reissued June 5; motion to recall mandate filed July 20, 2026. This is a conviction by guilty plea - correctly labeled.",
+  "fix": "",
+  "sources": [
+   "https://www.justice.gov/usao-nj/pr/monmouth-county-man-sentenced-20-years-prison-making-threatening-communications-and",
+   "https://dockets.justia.com/docket/circuit-courts/ca3/26-1120"
+  ]
+ },
+ {
+  "cand": "Eric Hafner",
+  "path": "claims[2]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'false' is supported: his 'innocent of all charges' statement is contradicted by his own May 2022 guilty plea and the affirmed judgment.",
+  "fix": "",
+  "sources": [
+   "https://www.justice.gov/usao-nj/pr/monmouth-county-man-sentenced-20-years-prison-making-threatening-communications-and",
+   "https://dockets.justia.com/docket/circuit-courts/ca3/26-1120"
+  ]
+ },
+ {
+  "cand": "Eric Hafner",
+  "path": "fec.outside",
+  "type": "outside-spending",
+  "result": "corrected",
+  "finding": "ADN confirms undisclosed pro-Hafner texts on Aug 14 (sponsor unknown; NRCC did not answer) and Wheel Dog's counter-texts. The $50,000 is attributed by ADN to 'a PAC supporting Hill', not explicitly Wheel Dog.",
+  "fix": "Oppose: 'Wheel Dog PAC (pro-Hill) - texts against \"the guy in a NY prison\"; a pro-Hill PAC (ADN does not say which) spent $50,000 countering the pro-Hafner message.'",
+  "sources": [
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/"
+  ]
+ },
+ {
+  "cand": "Jim McDermott",
+  "path": "fec.outside.support[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "ADN: Cornerstone Founders PAC spent $463,000 on ads promoting Republican Clay Strickland and 'Libertarian Clay McDermott' (name error), backers undisclosed; split not reported.",
+  "fix": "",
+  "sources": [
+   "https://www.adn.com/politics/2026/08/15/shadowy-group-looks-to-boost-new-york-felon-in-alaskas-us-house-race/"
+  ]
+ },
+ {
+  "cand": "Jim McDermott",
+  "path": "claims[1]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: KTOO (Apr 17, 2019) says Fairbanks Libertarian James McDermott was not confirmed to APOC amid a dispute over whether the seat must go to a Democrat.",
+  "fix": "",
+  "sources": [
+   "https://www.ktoo.org/2019/04/17/legislators-reject-six-dunleavy-appointees-to-boards-and-commissions/"
+  ]
+ },
+ {
+  "cand": "Jonathan Kreiss-Tomkins",
+  "path": "money_flags.corp",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Alaska Public Media (Jul 24): $1.8M raised, >$1.3M spent; six Anthropic employees gave a combined $372,000 (=20.7% of $1.8M); Drake Thomas $100,000, largest single gift, lives in Berkeley. Wikipedia notes AI-industry donors. Forward Frontier funded by DGA, Democratic Action, AFSCME; Putting Alaskans First by unions.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-07-24/democrat-in-alaskas-governor-race-reports-1-8-million-fundraising-haul-driven-by-californians",
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election",
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races"
+  ]
+ },
+ {
+  "cand": "Jonathan Kreiss-Tomkins",
+  "path": "money2.superpac_donors",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "News From The States: DGA arm's contributions to Forward Frontier total $1.25M (first gift $650,000); Putting Alaskans First reported $175,000 in radio ads for JKT. Alaska Public Media: Forward Frontier raised >$1.3M (DGA, Democratic Action, AFSCME); Putting Alaskans First ~$1M from AFSCME $350K, NEA $175K, AFT $80K, IBEW $75K, SEIU $75K.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/after-democrats-boost-jkt-national-republicans-send-16-million-alaska-governors-race",
+   "https://www.newsfromthestates.com/node/429838",
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races"
+  ]
+ },
+ {
+  "cand": "Jonathan Kreiss-Tomkins",
+  "path": "fec (APOC totals)",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "Wikipedia APOC table: $2,170,998 raised / $1,861,062 spent / $309,935 COH as of Aug 8, 2026; Beacon Aug 17: 'almost $2.3 million'.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election",
+   "https://alaskapublic.org/news/politics/elections/2026-08-17/alaska-republican-candidate-for-governor-appears-to-massively-violate-a-donation-limit"
+  ]
+ },
+ {
+  "cand": "Jonathan Kreiss-Tomkins",
+  "path": "claims[3]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: Beacon/Yahoo - Dunleavy twice vetoed funding increases; legislators overrode the $700 BSA increase (to $6,660) and restored $51M; Fairbanks seven closures in five years, Anchorage plans three. June 2026 vetoes ($89.5M) left school operating money intact.",
+  "fix": "",
+  "sources": [
+   "https://www.yahoo.com/news/articles/historic-education-funding-increase-alaska-143020826.html",
+   "https://alaskapublic.org/news/politics/alaska-legislature/2026-06-24/gov-dunleavy-vetoes-89-5m-from-alaska-budget-but-leaves-school-funding-intact"
+  ]
+ },
+ {
+  "cand": "Bernadette Wilson",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "corrected",
+  "finding": "Alaska Landmine confirms: Shoreside Petroleum v. Denali Disposal, Wilson and Roberta Zipay, 3AN-22-08465CI, filed Oct 2022; >$52,000 fuel debt; 2020 personal guarantee by Wilson; default judgment $53,800 (2/2/23) amended to $57,400 (5/3/23); bank sweeps; 2023/2024 PFD garnishment; returned checks ~$5,400 and ~$13,000; satisfied 9/23/2025; no criminal charge. Correct to call this a civil default judgment (not a settlement). One wording issue: sources describe Zipay as her mother; Landmine says Wilson owns 75% of the company but does not call Zipay a co-owner.",
+  "fix": "Change 'co-owner Roberta Zipay' to 'her mother, Roberta Zipay'.",
+  "sources": [
+   "https://alaskalandmine.com/?p=31584",
+   "https://alaskalandmine.com/landmines/full-pfd-gubernatorial-candidate-bernadette-wilson-had-2023-and-2024-pfds-garnished/"
+  ]
+ },
+ {
+  "cand": "Bernadette Wilson",
+  "path": "finances.note (Denali Disposal omission)",
+  "type": "record",
+  "result": "confirmed",
+  "finding": "Beacon/APM (Sep 5) and Juneau Independent: her disclosure did not list her ownership of Denali Disposal; no formal complaint before the primary and no action reported. Dept. of Law review was preliminary and 'not a determination that any specific candidate violated' the law.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-09-05/alaska-lt-gov-dahlstrom-reverses-herself-puts-treg-taylor-back-in-governors-race",
+   "https://www.juneauindependent.com/post/treg-taylor-reinstated-to-governor-s-race-in-late-night-friday-announcement-by-lieutenant-governor"
+  ]
+ },
+ {
+  "cand": "Bernadette Wilson",
+  "path": "money2.superpac_donors[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "RGA gave $1.6M to Kodiak PAC, which backs GOP gubernatorial candidates generally; registered by Virginia consultant Casey Phillips.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/after-democrats-boost-jkt-national-republicans-send-16-million-alaska-governors-race",
+   "https://www.newsfromthestates.com/node/429838",
+   "https://alaskapublic.org/news/politics/2026-10-02/outside-groups-pour-millions-into-alaskas-governor-congressional-races"
+  ]
+ },
+ {
+  "cand": "Bernadette Wilson",
+  "path": "saydo[0]",
+  "type": "saydo",
+  "result": "confirmed",
+  "finding": "Wilson placed third overall and top Republican (10.0%) and called on Bronson and Taylor to suspend as 'spoilers' - consistent with her 2025 pledge.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/after-democrats-boost-jkt-national-republicans-send-16-million-alaska-governors-race",
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election"
+  ]
+ },
+ {
+  "cand": "Bernadette Wilson",
+  "path": "double-count: legal[0] vs saydo[1]",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "The Shoreside default judgment/PFD garnishment appears both as legal[0] and as saydo[1] (match 'partly'). The saydo entry itself says it is context, not a contradiction of a policy promise, yet it carries a scoring match value.",
+  "fix": "Set saydo[1] match to a non-scoring value (or remove it) so the judgment is scored once, under legal.",
+  "sources": [
+   "https://alaskalandmine.com/?p=31584"
+  ]
+ },
+ {
+  "cand": "Dave Bronson",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "Alaska Public Media (Oct 12, 2021): APOC imposed $38,500 on Bronson's mayoral campaign for inaccurate reports, including a $95,000 Hackney & Hackney debt disclosed months late; two over-limit contributions not penalized because the $500 limit had been struck by the 9th Circuit; complaint by Forrest Dunbar's lawyers. 'Maximum calculated' and the aggravating-factor details come from the order itself, not re-opened here.",
+  "fix": "",
+  "sources": [
+   "https://www.alaskapublic.org/2021/10/12/commission-in-charge-of-alaska-elections-upholds-38500-fine-for-bronson-mayoral-campaign"
+  ]
+ },
+ {
+  "cand": "Dave Bronson",
+  "path": "legal[1]",
+  "type": "legal",
+  "result": "corrected",
+  "finding": "Settlement confirmed: Assembly approved $250,000 on Oct 8, 2024 (after rejecting it 6-4), after he left office; no admission or court finding. The allegation is described imprecisely: Demboski alleged she was fired in retaliation for raising concerns about illegal and unethical activity (other coverage calls it a discrimination settlement). It was not an allegation that she or the suit proved illegal acts.",
+  "fix": "Amy Demboski, a city manager he appointed and later fired, sued in 2023 alleging she was fired in retaliation for raising concerns about illegal and unethical activities in his administration. The Assembly approved a $250,000 settlement on Oct. 8, 2024, after he left office; no court finding or admission of liability was reported.",
+  "sources": [
+   "https://alaskapublic.org/news/2024-10-09/in-reversal-anchorage-assembly-approves-250k-settlement-with-demboski",
+   "https://www.alaskasnewssource.com/2024/10/09/anchorage-assembly-reconsiders-vote-approves-250000-settlement-former-city-manager"
+  ]
+ },
+ {
+  "cand": "Dave Bronson",
+  "path": "saydo[0]",
+  "type": "saydo",
+  "result": "confirmed",
+  "finding": "KTUU: the Apr 29, 2022 request said the mayor was 'not questioning the results' while offering to pay for a 'forensic audit of election technology', citing an observer's USB allegation; the Election Commission's Apr 26 memo called problems 'fairly minor'.",
+  "fix": "",
+  "sources": [
+   "https://www.alaskasnewssource.com/2022/05/05/bronson-administration-seeks-audit-recent-anchorage-election/"
+  ]
+ },
+ {
+  "cand": "Dave Bronson",
+  "path": "money2.superpac_donors[1]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "RGA $1.6M to Kodiak PAC (generic GOP support; no candidate named).",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/after-democrats-boost-jkt-national-republicans-send-16-million-alaska-governors-race"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "claims[5]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'misleading' is supported: Beacon/APM (Aug 17) - the 2021 Ninth Circuit ruling overturned limits on donations from non-candidates, not the post-July 17 cap on self-contributions; no state or federal record of a Taylor lawsuit.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-17/alaska-republican-candidate-for-governor-appears-to-massively-violate-a-donation-limit"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "saydo[1]",
+  "type": "saydo",
+  "result": "confirmed",
+  "finding": "$260,000 on Aug 3 plus $40,000 = $300,000 after the July 17 cap ($5,000), with no court challenge. Facts confirmed - but see the double-count item.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-17/alaska-republican-candidate-for-governor-appears-to-massively-violate-a-donation-limit"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "double-count: claims[5] vs saydo[1]",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "The same post-deadline self-funding episode is scored twice: claims[5] (campaign's Ninth Circuit defense, 'misleading') and saydo[1] (calls cap unconstitutional but gave $300K without suing, 'partly').",
+  "fix": "Keep one scored entry (claims[5]) and make saydo[1] non-scoring context, or replace it with a different topic.",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-17/alaska-republican-candidate-for-governor-appears-to-massively-violate-a-donation-limit"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "legal[0]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "APM: in Sept 2025 APOC ordered Taylor to disclose his tenant list in electronic form; his June 1, 2026 report lacked the list.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/alaska-campaign-watchdog-says-treg-taylor-should-not-be-allowed-to-run-for-governor"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "legal[1]",
+  "type": "legal",
+  "result": "confirmed",
+  "finding": "APOC voted 4-1 that he did not 'substantially comply' with disclosure requirements (tenant names: first name + last initial, list uploaded July 27; deficiency notice July 21); recommended non-certification; Lt. Gov. declined to certify Aug 31 and reversed Sept 4 citing an informal, preliminary Dept. of Law review; APOC recommendation not withdrawn; no court ruling.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/alaska-campaign-watchdog-says-treg-taylor-should-not-be-allowed-to-run-for-governor",
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/november-ballot-in-alaska-governors-race-set-after-chaotic-last-day-scramble",
+   "https://www.alaskasnewssource.com/2026/08/31/state-says-treg-taylors-campaign-governor-is-over-due-donation-violation/",
+   "https://alaskapublic.org/news/politics/elections/2026-09-05/alaska-lt-gov-dahlstrom-reverses-herself-puts-treg-taylor-back-in-governors-race",
+   "https://www.juneauindependent.com/post/treg-taylor-reinstated-to-governor-s-race-in-late-night-friday-announcement-by-lieutenant-governor"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "double-count: legal[0] vs legal[1] (and claims[6])",
+  "type": "double-count",
+  "result": "corrected",
+  "finding": "legal[0] (Sept 2025 APOC order) and legal[1] (2026 non-certification recommendation) are the same unresolved tenant-disclosure issue at two stages; claims[6] covers it again. Scoring both legal entries counts one dispute twice.",
+  "fix": "Merge legal[0] into legal[1] as its history (one legal entry: 'Tenant-name disclosure dispute, 2025-2026'), and keep claims[6] non-scoring or 'unverifiable' as it is.",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/alaska-campaign-watchdog-says-treg-taylor-should-not-be-allowed-to-run-for-governor"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "claims[1]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: KTUU (Jul 2025) quotes Taylor citing a '40-year low'; arrests/citations 30,810 (2015) to 21,648 (2023); Dept. of Law release: violent crime down nearly 5% in 2023.",
+  "fix": "",
+  "sources": [
+   "https://www.alaskasnewssource.com/2025/07/09/ag-treg-taylor-says-crime-rates-are-going-down-alaska-remains-wary-some-numbers/",
+   "https://law.alaska.gov/press/releases/2025/082125-Taylor-Resignation.html"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "claims[2]",
+  "type": "claim",
+  "result": "confirmed",
+  "finding": "'partly' is supported: Dept. of Law says sexual assault fell more than 25% since 2018; KTUU reported 20% since 2018 and 15.7% in the latest year; Taylor said he was 'a little wary' of the numbers.",
+  "fix": "",
+  "sources": [
+   "https://law.alaska.gov/press/releases/2025/082125-Taylor-Resignation.html",
+   "https://www.alaskasnewssource.com/2025/07/09/ag-treg-taylor-says-crime-rates-are-going-down-alaska-remains-wary-some-numbers/"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "money2.top_donors",
+  "type": "money",
+  "result": "confirmed",
+  "finding": "KTOO (Feb): ~$880,000 raised, about a third from Taylor, >$592,000 from ~250 outside donors, John Morris $100,000; APM: Candice and Stanley English $100,000 on July 28; Wikipedia: $600,000 self-contributed (consistent with ~$290K + $300K).",
+  "fix": "",
+  "sources": [
+   "https://www.ktoo.org/2026/02/19/10-candidates-report-six-figure-hauls-from-early-fundraising-in-alaska-governors-race/",
+   "https://alaskapublic.org/news/politics/elections/2026-08-17/alaska-republican-candidate-for-governor-appears-to-massively-violate-a-donation-limit",
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election"
+  ]
+ },
+ {
+  "cand": "Treg Taylor",
+  "path": "money2.superpac_donors / fec.outside.support[0]",
+  "type": "outside-spending",
+  "result": "confirmed",
+  "finding": "RGA $1.6M to Kodiak PAC; Taylor campaign manager April Gettys said the campaign 'doesn't know anything about the PAC'.",
+  "fix": "",
+  "sources": [
+   "https://www.newsfromthestates.com/article/after-democrats-boost-jkt-national-republicans-send-16-million-alaska-governors-race"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-GOV.candidates[Treg Taylor].running_mate",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Juneau Independent (Sep 5): the Division of Elections updated its candidate list to show Candice English as Taylor's running mate; Tanana Chiefs ballot snapshot (Oct 8) lists 'Treg Taylor / Candi English'; Wikipedia lists English. Jodi Taylor was English's running mate only during the Aug 31-Sep 4 disqualification. The Sep 9 ADN/Journal of Commerce headline remains unexplained (page blocked), so a final look at the official sample ballot is still prudent, but the 'unverified' flag can be lifted.",
+  "fix": "Set running_mate.status to 'confirmed - Division of Elections candidate list per Juneau Independent (Sep 5, 2026); Tanana Chiefs snapshot (Oct 8)'; add cite ji_reinstate.",
+  "sources": [
+   "https://www.juneauindependent.com/post/treg-taylor-reinstated-to-governor-s-race-in-late-night-friday-announcement-by-lieutenant-governor",
+   "https://www.tananachiefs.org/?p=83952",
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election",
+   "https://alaskapublic.org/news/politics/elections/2026-09-05/alaska-lt-gov-dahlstrom-reverses-herself-puts-treg-taylor-back-in-governors-race"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-GOV.candidates[Treg Taylor].oneliner",
+  "type": "ballot",
+  "result": "corrected",
+  "finding": "The oneliner says he was disqualified 'over a late financial-disclosure filing'. The underlying finding was that his disclosure did not substantially comply because it omitted tenants' full names (APOC 4-1); the 'late' framing is the legal consequence (not compliant by the deadline), not a missed filing.",
+  "fix": "...The Lt. Governor declined to certify him Aug 31 after APOC voted 4-1 that his financial disclosure, which listed tenants of his apartment building only by first name and last initial, did not substantially comply with the law by the deadline; she reinstated him Sept 4, citing an informal Department of Law review. His running mate is Candice 'Candi' English...",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/alaska-campaign-watchdog-says-treg-taylor-should-not-be-allowed-to-run-for-governor",
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/november-ballot-in-alaska-governors-race-set-after-chaotic-last-day-scramble",
+   "https://www.alaskasnewssource.com/2026/08/31/state-says-treg-taylors-campaign-governor-is-over-due-donation-violation/",
+   "https://www.juneauindependent.com/post/treg-taylor-reinstated-to-governor-s-race-in-late-night-friday-announcement-by-lieutenant-governor"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "map_note (Taylor/APOC)",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "APOC voted 4-1; the note already names the missing tenant names. APM: did not 'substantially comply' before the deadline. Acceptable; consider 'did not substantially comply' in place of 'was not filed on time' for precision.",
+  "fix": "",
+  "sources": [
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/november-ballot-in-alaska-governors-race-set-after-chaotic-last-day-scramble",
+   "https://www.alaskasnewssource.com/2026/08/31/state-says-treg-taylors-campaign-governor-is-over-due-donation-violation/"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "map_note / AK-SEN (Leslie 4th, Heikes 5th; Peltola 49.5, Sullivan 41.4, Sullivan Jr 2.5, Heikes 1.1)",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Certified-result reporting (Beacon Aug 31; Ballotpedia News Sep 14) gives Peltola 49.5%, Sullivan 41.4%, Dan J. Sullivan 2.5%, Leslie 4th (1.1%), Heikes 5th (1.0-1.1%), Heikes advanced on Leslie's withdrawal. NOTE: the unofficial Aug 25 Division report (doe_primary, cited in some dossiers) has Heikes 4th (1.12%) ahead of Leslie (1.10%) and different percentages; do not cite it for final figures.",
+  "fix": "",
+  "sources": [
+   "https://alaskabeacon.com/2026/08/31/petersburgs-dan-j-sullivan-stays-on-alaskas-u-s-senate-ballot-after-third-place-primary-finish/",
+   "https://news.ballotpedia.org/2026/09/14/alaska-voters-to-decide-on-the-second-u-s-senate-general-election-using-ranked-choice-voting/",
+   "https://www.elections.alaska.gov/wp-content/uploads/2026/08/08252026_ElectionSummaryReportRPT.pdf"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-AL (Begich 44.6, Hill 32.5, Hafner 3.8, McDermott 8th 1.2; withdrawals)",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Wikipedia certified-table: Begich 44.6, Hill 32.5, Schultz 8.1, Hafner 3.8, Williams 2.7, Strickland 2.3, Reynoso 1.8, McDermott 1.2; Schultz, Williams, Strickland, Reynoso withdrew. Final four match the Tanana Chiefs snapshot. Begich 2024 result 51.22%.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_in_Alaska",
+   "https://www.tananachiefs.org/?p=83952"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-GOV (primary %, tickets, ratings)",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Wikipedia: JKT 22.5, Tom Begich 20.8 (withdrew), Wilson 10.0, Bronson 8.1, Taylor 7.3; tickets JKT/Zac Johnson, Wilson/Shower, Bronson/Church, Taylor/English; ratings Cook Likely R (Aug 27), Inside Elections Lean R (Sep 3), Sabato Toss-up (Sep 3). TCC snapshot matches the four tickets.",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election",
+   "https://www.tananachiefs.org/?p=83952",
+   "https://alaskapublic.org/news/politics/elections/2026-08-31/november-ballot-in-alaska-governors-race-set-after-chaotic-last-day-scramble"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-SEN.rating",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Wikipedia predictions table: Cook Tossup (Sep 23, 2026), Inside Elections Tilt R (Sep 17), Sabato Tossup (Sep 22).",
+  "fix": "",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections"
+  ]
+ },
+ {
+  "cand": "ak-races.json",
+  "path": "districts.AK-SEN.candidates (ballot names/labels)",
+  "type": "ballot",
+  "result": "confirmed",
+  "finding": "Tanana Chiefs snapshot (Oct 8): Mary Peltola (D), Daniel J. Sullivan Jr. (no label), Dan S. Sullivan (R), Gerald L. Heikes (R).",
+  "fix": "",
+  "sources": [
+   "https://www.tananachiefs.org/?p=83952"
+  ]
+ }
+]
