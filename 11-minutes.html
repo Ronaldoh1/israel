@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Eleven Minutes</title>
+<meta name="description" content="Palestine before 1948 in eleven documents: what you were taught, and what the record shows.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400&family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --room:#121A2B;      /* the reading room */
+  --room2:#1A2438;
+  --onion:#E3E6DE;     /* onionskin archive paper */
+  --carbon:#1F2A44;    /* carbon-copy ink */
+  --ribbon:#B42318;    /* typewriter red ribbon */
+  --gloss:#2B63D9;     /* school textbook blue */
+  --hi:#FFE14D;        /* highlighter */
+  --paper-line:rgba(31,42,68,.14);
+  --lamp:rgba(255,214,140,.10);
+  --serif:'Newsreader', Georgia, serif;
+  --type:'Courier Prime', 'Courier New', monospace;
+  --book:'Nunito', system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--room);color:#EEF0F4;font-family:var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px;border-radius:4px}
+
+/* ---------- top progress (mobile) ---------- */
+body::before{content:'';position:fixed;top:0;left:0;right:0;height:52px;z-index:29;background:linear-gradient(var(--room) 55%,rgba(18,26,43,0));pointer-events:none}
+@media (min-width:960px){body::before{display:none}}
+.prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:30;background:rgba(255,255,255,.08)}
+.prog span{display:block;height:100%;width:0;background:var(--ribbon);transition:width .35s}
+.count{position:fixed;top:12px;left:14px;opacity:0;transition:opacity .4s;z-index:30;font:600 12px/1 var(--book);color:rgba(238,240,244,.85);background:rgba(18,26,43,.75);padding:6px 9px;border-radius:999px;backdrop-filter:blur(6px)}
+.count.on{opacity:1}
+.skip{position:fixed;top:10px;right:14px;z-index:31;font:800 13px/1 var(--book);color:var(--carbon);background:var(--onion);padding:9px 13px;border-radius:999px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);border:0;cursor:pointer}
+.skip:hover{background:#fff}
+
+/* ---------- cold open ---------- */
+.open{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:72px 22px 40px;max-width:680px;margin:0 auto;position:relative}
+.open::before{content:'';position:fixed;inset:0;background:radial-gradient(60% 45% at 50% 30%,var(--lamp),transparent 70%);pointer-events:none;z-index:0}
+.open > *{position:relative;z-index:1}
+.date{font:400 italic 19px/1.3 var(--serif);color:rgba(238,240,244,.78);margin:0 0 6px}
+.clock{font:800 clamp(88px,26vw,190px)/.9 var(--serif);letter-spacing:-.04em;font-variant-numeric:tabular-nums;margin:0;color:#fff}
+.clock small{font-size:.28em;letter-spacing:0;font-weight:600;margin-left:.15em;color:rgba(238,240,244,.7)}
+.opentext{font:400 21px/1.5 var(--serif);max-width:30ch;margin:22px 0 0;color:#E9ECF2}
+.opentext b{font-weight:800;color:#fff}
+.opentext .later{display:block;margin-top:14px;opacity:0;transition:opacity .9s}
+.opentext .later.on{opacity:1}
+.begin{margin-top:30px;align-self:flex-start;font:900 19px/1 var(--book);color:var(--carbon);background:var(--onion);border:0;border-radius:14px;padding:19px 28px;cursor:pointer;text-decoration:none}
+@media (max-width:600px){.begin{align-self:stretch;text-align:center}}
+.howto{margin-top:14px;font:600 14px/1.4 var(--book);color:rgba(238,240,244,.66)}
+
+/* ---------- layout ---------- */
+.wrap{position:relative}
+.rail{display:none}
+.beats{padding:0 14px 40px}
+.beat{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:64px 0 28px;max-width:560px;margin:0 auto;scroll-margin-top:0}
+.when{display:flex;align-items:baseline;gap:12px;margin:0 2px 14px}
+.when .yr{font:800 54px/.9 var(--serif);letter-spacing:-.03em;color:#fff}
+.when .pl{font:400 italic 17px/1.2 var(--serif);color:rgba(238,240,244,.72)}
+.idx{margin-left:auto;font:600 13px/1 var(--book);color:rgba(238,240,244,.5)}
+
+/* the card: archive beneath, textbook on top */
+.card{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.archive{background:var(--onion);color:var(--carbon);padding:22px 20px 20px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 27px,var(--paper-line) 27px 28px);}
+.archive h2{font:800 27px/1.12 var(--serif);margin:0 0 10px;letter-spacing:-.01em}
+.wastaught{font:600 14px/1.4 var(--book);color:#5A6478;margin:0 0 12px;display:none}
+.wastaught s{text-decoration-color:var(--ribbon);text-decoration-thickness:2px}
+.revealed .wastaught{display:block}
+.rec{font:400 18px/1.55 var(--serif);margin:0}
+.rec a{text-decoration:underline;text-decoration-color:rgba(180,35,24,.55);text-underline-offset:3px;text-decoration-thickness:1.5px}
+.rec a:hover{text-decoration-color:var(--ribbon)}
+.doc{margin:18px 0 4px}
+.quote{font:400 18px/1.5 var(--type);border-left:3px solid var(--ribbon);padding:4px 0 4px 14px;margin:0}
+.quote cite{display:block;font:400 italic 14px/1.4 var(--serif);margin-top:8px;color:#4A5468}
+.stat{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.stat b{font:800 64px/.9 var(--serif);letter-spacing:-.03em;color:var(--ribbon)}
+.stat span{font:400 16px/1.35 var(--type);max-width:22ch}
+.bars{display:grid;gap:10px}
+.bar{font:400 14px/1.3 var(--type)}
+.bar .t{display:flex;justify-content:space-between;margin-bottom:4px}
+.bar .tr{height:16px;background:rgba(31,42,68,.12);border-radius:3px;overflow:hidden}
+.bar .tr i{display:block;height:100%;background:var(--carbon);width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.bar.red .tr i{background:var(--ribbon)}
+.revealed .bar .tr i{width:var(--w)}
+.press{background:#F4F5F0;border:1px solid rgba(31,42,68,.25);padding:18px 16px;font:400 15.5px/1.6 var(--type);position:relative}
+.press p{margin:0 0 12px}
+.ins{position:relative;display:inline-block}
+.ins s{color:rgba(31,42,68,.55);text-decoration-color:var(--carbon)}
+.caret{color:#1d3a8a;font:700 16px/1 var(--type);vertical-align:-2px;margin-right:1px}
+.hand{font:400 italic 21px/1 'Newsreader',serif;color:#1d3a8a;transform:rotate(-3deg);display:inline-block;margin-left:4px}
+.approved{display:flex;justify-content:flex-end;gap:10px;font:400 italic 20px/1.1 var(--serif);color:#1d3a8a;transform:rotate(-2deg)}
+.press .note{font:400 italic 13px/1.4 var(--serif);color:#5A6478;margin:10px 0 0}
+.pp{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.ppc{width:132px;height:178px;flex:none;background:#5a3a22;border-radius:6px 10px 10px 6px;box-shadow:inset 6px 0 0 rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.25);color:#e8c77a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;font:700 11px/1.2 var(--type);letter-spacing:.08em}
+.ppc .big{font-size:15px;letter-spacing:.14em}
+.ppc .crest{font-size:34px;line-height:1}
+.ppn{flex:1;min-width:160px;margin:0;font:400 15px/1.45 var(--type)}
+.crate{border:3px solid var(--carbon);padding:14px;text-align:center;font:700 22px/1.2 var(--type);letter-spacing:.06em;transform:rotate(-1.5deg);background:#D9CCB1;color:#2b2416}
+.crate small{display:block;font:400 13px/1.4 var(--type);letter-spacing:0;margin-top:6px}
+.deeper{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:18px;padding-top:14px;border-top:1px dashed rgba(31,42,68,.3)}
+.deeper a.go{font:800 15px/1 var(--book);color:#fff;background:var(--carbon);padding:11px 14px;border-radius:9px;text-decoration:none}
+.srcs{font:400 13px/1.5 var(--serif);color:#4A5468}
+.srcs a{color:#4A5468}
+
+/* textbook layer: double-tap to lift it away */
+.card{perspective:1400px}
+.book{position:absolute;inset:0;background:var(--gloss);color:#14214A;padding:22px 20px;display:flex;flex-direction:column;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 33px,rgba(255,255,255,.10) 33px 34px);
+  transform-origin:50% 0;transition:transform .8s cubic-bezier(.55,0,.2,1),opacity .35s .5s,box-shadow .8s;
+  cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;z-index:2;border-radius:14px}
+.book .lbl{font:800 14px/1 var(--book);color:rgba(255,255,255,.85)}
+.book .tt{margin:auto 0;font:900 clamp(28px,8vw,36px)/1.25 var(--book)}
+.book .tt span{background:var(--hi);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 5px}
+.cue{display:flex;align-items:center;gap:12px;font:800 16px/1.3 var(--book);color:#fff;background:rgba(10,20,60,.28);border-radius:999px;padding:8px 18px 8px 10px;align-self:center}
+.taps{position:relative;width:40px;height:40px;flex:none}
+.taps i{position:absolute;inset:12px;border-radius:50%;background:#fff}
+.taps i::before,.taps i::after{content:'';position:absolute;inset:-12px;border-radius:50%;border:2px solid #fff;opacity:0;animation:tap 1.8s infinite}
+.taps i::after{animation-delay:.25s}
+@keyframes tap{0%{transform:scale(.4);opacity:.9}55%{transform:scale(1);opacity:0}100%{opacity:0}}
+.book.armed .cue b{display:none}.book .cue em{display:none;font-style:normal}.book.armed .cue em{display:inline}
+.book.armed{box-shadow:inset 0 0 0 3px var(--hi)}
+.book.lift{transform:rotateX(-100deg) translateY(-10px);opacity:0;box-shadow:0 40px 60px rgba(0,0,0,.45);pointer-events:none}
+@media (prefers-reduced-motion:reduce){.book{transition:opacity .3s}.book.lift{transform:none}.taps i::before,.taps i::after{animation:none}}
+.archive{min-height:430px}
+.wastaught s{text-decoration:none;background:linear-gradient(var(--ribbon),var(--ribbon)) no-repeat 0 58%/0 2px;transition:background-size .7s .55s}
+.revealed .wastaught s{background-size:100% 2px}
+.next{display:none;margin:16px auto 0;font:800 16px/1 var(--book);color:var(--carbon);background:var(--onion);border:0;border-radius:999px;padding:13px 20px;cursor:pointer}
+.revealed ~ .next{display:block}
+.beat[hidden],.end[hidden]{display:none}
+.scrollcue{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:28;display:flex;flex-direction:column;align-items:center;gap:4px;font:800 12px/1 var(--book);color:rgba(238,240,244,.85);pointer-events:none;transition:opacity .35s}
+.scrollcue.off{opacity:0}
+.scrollcue i{width:26px;height:26px;border-radius:50%;border:2px solid rgba(238,240,244,.55);position:relative;animation:cue 1.6s ease-in-out infinite}
+.scrollcue i::after{content:'';position:absolute;left:50%;top:6px;width:8px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:translateX(-50%) rotate(45deg)}
+@keyframes cue{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.begin.ready{animation:glow 2.2s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(227,230,222,.45)}50%{box-shadow:0 0 0 12px rgba(227,230,222,0)}}
+@media (prefers-reduced-motion:reduce){.scrollcue i,.begin.ready{animation:none}}
+.mid{min-height:auto;padding:70px 6px 40px;max-width:560px}
+
+/* ---------- the end ---------- */
+.end{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:60px 22px 60px;max-width:640px;margin:0 auto}
+.end h2{font:800 clamp(38px,9vw,64px)/1 var(--serif);letter-spacing:-.03em;margin:0 0 16px}
+.end p{font:400 19px/1.55 var(--serif);color:#E3E6EE;max-width:36ch;margin:0 0 12px}
+.ctas{display:flex;flex-direction:column;gap:10px;margin-top:22px;max-width:420px}
+.ctas a,.ctas button{font:800 17px/1.2 var(--book);text-decoration:none;text-align:left;border-radius:12px;padding:16px 18px;border:0;cursor:pointer}
+.c1{background:var(--onion);color:var(--carbon)}
+.c2{background:var(--room2);color:#fff;border:1px solid rgba(255,255,255,.18)!important}
+.c3{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.18)!important}
+.ctas span{display:block;font:600 13.5px/1.35 var(--book);opacity:.75;margin-top:4px}
+.follow{margin-top:26px;font:600 14px/1.5 var(--book);color:rgba(238,240,244,.7)}
+.method{margin-top:18px;font:400 italic 14px/1.5 var(--serif);color:rgba(238,240,244,.6);max-width:46ch}
+
+/* ---------- desktop: sticky rail + scrolling documents ---------- */
+@media (min-width:960px){
+  .prog,.count{display:none}
+  .wrap{display:grid;grid-template-columns:minmax(300px,38%) 1fr;max-width:1240px;margin:0 auto}
+  .rail{display:block;position:sticky;top:0;height:100vh;padding:56px 40px 40px 48px;border-right:1px solid rgba(255,255,255,.08)}
+  .rail .ry{font:800 128px/.85 var(--serif);letter-spacing:-.05em;color:#fff;font-variant-numeric:tabular-nums}
+  .rail .rp{font:400 italic 20px/1.3 var(--serif);color:rgba(238,240,244,.75);margin-top:10px;min-height:2.6em}
+  .line{position:relative;margin:30px 0 0;height:calc(100vh - 380px);min-height:220px;border-left:2px solid rgba(255,255,255,.14);margin-left:6px}
+  .line i{position:absolute;left:-7px;width:12px;height:12px;border-radius:50%;background:var(--room);border:2px solid rgba(255,255,255,.35);transform:translateY(-6px)}
+  .line i.seen{background:var(--ribbon);border-color:var(--ribbon)}
+  .line i.lock{opacity:.35}
+  .line i.cur{box-shadow:0 0 0 5px rgba(180,35,24,.3)}
+  .line b{position:absolute;left:16px;font:600 12px/1 var(--book);color:rgba(238,240,244,.55);transform:translateY(-6px)}
+  .tally{position:absolute;bottom:34px;left:48px;font:600 14px/1.4 var(--book);color:rgba(238,240,244,.7)}
+  .beats{padding:0 48px 40px}
+  .beat{padding:90px 0 60px}
+  .open{max-width:980px;margin:0 auto;padding-left:48px}
+  .clock{font-size:260px}
+  .opentext{font-size:23px;max-width:34ch}
+  .skip{top:18px;right:22px}
+}
+</style>
+</head>
+<body>
+<div class="prog" aria-hidden="true"><span id="progbar"></span></div>
+<div class="count" id="count" aria-live="polite">0 of 11 revealed</div>
+<div class="scrollcue" id="scrollcue" aria-hidden="true"><i></i><span id="cuet">Scroll</span></div>
+<a class="skip" id="skip" href="index.html">Full simulation</a>
+
+<section class="open" id="top">
+  <p class="date">Friday, May 14, 1948 · Washington</p>
+  <p class="clock" id="clock" aria-label="6:11 p.m.">6:00<small>pm</small></p>
+  <p class="opentext">At 6:00 p.m. a new state came into existence. <b>At 6:11 the United States recognized it.</b>
+    <span class="later" id="later">How did it move that fast? The answer starts 76 years earlier, and most of it was never in your textbook.</span></p>
+  <a class="begin" href="#b1">Begin with 1872</a>
+  <p class="howto" id="howto">Eleven documents. Double-tap each one to reveal it. About two minutes.</p>
+</section>
+
+<div class="wrap">
+  <aside class="rail" aria-hidden="true">
+    <div class="ry" id="ry">1872</div>
+    <div class="rp" id="rp">Ottoman and British Palestine</div>
+    <div class="line" id="line"></div>
+    <div class="tally" id="tally">0 of 11 revealed</div>
+  </aside>
+  <main class="beats" id="beats"></main>
+</div>
+
+<section class="end" id="end">
+  <h2>That was fifteen documents.</h2>
+  <p>Each one is a starting point. The full simulation follows every thread: who funded it, who argued against it, what each side says, and what happened after.</p>
+  <p>148 scenes, from the 1690s to 1950, each with its sources.</p>
+  <div class="ctas">
+    <a class="c1" href="index.html#scene=s04">Go deeper from 1897<span>Begin at the first Zionist Congress</span></a>
+    <a class="c2" href="index.html#scene=s10">Jump to 1948<span>Independence, the Nakba and the Czech guns</span></a>
+    <button class="c3" id="share" type="button">Share these eleven minutes<span>Send it to someone who learned it the way you did</span></button>
+  </div>
+  <p class="follow">Follow @chosen.ron13 on TikTok and Instagram.</p>
+  <p class="method">How to read this: each "taught" line is a common version of the story. Each record line quotes or summarizes the linked source. Where historians disagree, the card says so.</p>
+</section>
+
+<script>
+(function(){
+'use strict';
+var SIM = 'index.html#scene=';
+var EMB = null; try{ if(window.parent && window.parent !== window && window.parent.__eleven) EMB = window.parent.__eleven; }catch(e){}
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href^="index.html"]'); if(!a || !EMB) return;
+  e.preventDefault(); var h = a.getAttribute('href'), m = h.match(/#scene=([\w-]+)/); EMB.close(m ? m[1] : null);
+});
+var B = [
+ {yr:'1872', pl:'Ottoman, then British Palestine', title:'It had a name',
+  taught:'There was no Palestine before 1948.',
+  rec:'From 1872 the Ottomans ran Jerusalem and its surrounding districts as a special unit governed directly from Constantinople, home to roughly half a million people, about nine in ten of them Muslim or Christian Arabs. Under British rule it was “Palestine” in law: a 1925 citizenship order, its own currency (the Palestine pound, 1927), its own stamps, and passports for its citizens, Arab and Jewish. Israel’s best-known English newspaper was founded in 1932 as The Palestine Post.',
+  doc:{passport:true, note:'About 70,000 of these were issued between 1926 and 1935 alone. The newspaper took the name The Jerusalem Post in 1950.'},
+  src:[['Mutasarrifate of Jerusalem — Jerusalem Story','https://www.jerusalemstory.com/en/lexicon/mutasarrifate-jerusalem'],['Demographic history of Palestine','https://en.wikipedia.org/wiki/Demographic_history_of_Palestine_(region)'],['Palestinian Citizenship Order 1925','https://en.wikipedia.org/wiki/Palestinian_Citizenship_Order_1925'],['Mandatory Palestine passport','https://en.wikipedia.org/wiki/Mandatory_Palestine_passport'],['Palestine pound','https://en.wikipedia.org/wiki/Palestine_pound'],['The Jerusalem Post','https://en.wikipedia.org/wiki/The_Jerusalem_Post']],
+  deep:'s07', deepT:'The Mandate: Palestine as a named country'},
+ {yr:'1891', pl:'Washington, then Oxford', title:'Christians asked first',
+  taught:'Christian support for Israel began after the Holocaust.',
+  rec:'Six years before the first Zionist congress, the evangelist William Blackstone sent President Benjamin Harrison a petition signed by 413 prominent Americans, John D. Rockefeller and J. P. Morgan among them, asking for an international conference on giving Palestine to the Jews. In 1909 Oxford University Press published the Scofield Reference Bible, whose notes carried that end-times reading of prophecy to a mass American audience: more than two million copies by the end of World War II.',
+  doc:{q:'Why not give Palestine back to them again?', who:'The Blackstone Memorial, presented to President Harrison, March 1891'},
+  src:[['Blackstone Memorial — Journal of the Evangelical Theological Society (2010)','https://etsjets.org/wp-content/uploads/2011/01/files_JETS-PDFs_53_53-4_JETS_53-4_787-800_Moorhead.pdf'],['Blackstone’s memorial — Wheaton College archives','https://fromthevault.wheaton.edu/2020/07/01/to-show-kindness-to-israel-william-blackstones-memorial/'],['Scofield Reference Bible, first edition — Museum of the Bible','https://collections.museumofthebible.org/artifacts/57905-scofield-reference-bible-first-edition']],
+  deep:'bc_s05', deepT:'Restoration before Zionism'},
+ {yr:'1897', pl:'Basel, Switzerland', title:'The plan came first',
+  taught:'Israel was created because of the Holocaust.',
+  rec:'In August 1897, 208 delegates met in Basel and adopted a program for a “publicly and legally assured home in Palestine.” Many Jewish leaders opposed it from the first day, and the richest patron of Jewish farm colonies, Baron Edmond de Rothschild, turned Herzl down. The movement’s bank was built from small shares: more than 100,000 shareholders by 1899, many in Eastern Europe. Hitler took power 36 years later.',
+  doc:{q:'At Basel, I founded the Jewish State.', who:'Theodor Herzl, diary, after the congress of August 1897'},
+  src:[['First Zionist Congress','https://en.wikipedia.org/wiki/First_Zionist_Congress'],['Herzl at Basel, 125 years later — Times of Israel','https://blogs.timesofisrael.com/theodor-herzl-myth-reality-and-the-first-zionist-congress-125-years-later/'],['Jewish Colonial Trust — Jewish Encyclopedia','https://www.jewishencyclopedia.com/articles/8632'],['Edmond James de Rothschild','https://en.wikipedia.org/wiki/Edmond_James_de_Rothschild']],
+  deep:'s07a', deepT:'Five dates that predate the Holocaust'},
+ {yr:'1917', pl:'London', title:'One letter, three promises',
+  taught:'The Balfour Declaration was a moral gesture to the Jewish people.',
+  rec:'Foreign Secretary Arthur Balfour’s letter was addressed to Lord Walter Rothschild and drafted with Zionist leaders. Britain had already promised Arab leaders independence in 1915 and secretly divided the region with France in 1916. The only Jewish member of the Cabinet, Edwin Montagu, called the policy “anti-Semitic in result.”',
+  doc:{q:'Palestine will become the world’s Ghetto.', who:'Edwin Montagu, memorandum to the British Cabinet, August 23, 1917'},
+  src:[['The Balfour Declaration — British Library','https://www.bl.uk/collection-items/the-balfour-declaration'],['Montagu memorandum — Jewish Virtual Library','https://jewishvirtuallibrary.org/montagu-memo-on-british-government-s-anti-semitism'],['Sykes–Picot, 1916 — The National Archives','https://www.nationalarchives.gov.uk/education/resources/first-world-war-a-global-view/1916-sykes-picot-agreement/']],
+  deep:'s06', deepT:'Sykes–Picot and Balfour'},
+ {yr:'1922', pl:'British Mandate census', title:'Counted',
+  taught:'It was a land without a people.',
+  rec:'Britain’s own census counted 757,182 people. 83,794 of them were Jewish. By 1946, after more than 376,000 Jewish immigrants arrived under British rule, Jews were about a third of the population.',
+  doc:{stat:'11%', note:'of the people Britain counted in 1922 were Jewish'},
+  src:[['1922 census of Palestine','https://en.wikipedia.org/wiki/1922_census_of_Palestine'],['Village Statistics, 1945','https://en.wikipedia.org/wiki/Village_Statistics,_1945']],
+  deep:'cen_s01', deepT:'Counting the country'},
+ {yr:'1942–45', pl:'New York and Washington', title:'The American machine',
+  taught:'American support for Israel grew naturally after 1948.',
+  rec:'In May 1942 a conference at New York’s Biltmore Hotel called for a “Jewish Commonwealth.” A lobby built the next year, the American Zionist Emergency Council, got Palestine into both parties’ 1944 platforms. On July 1, 1945, seventeen wealthy men met Ben-Gurion in a Manhattan apartment and started a network that bought weapons through front companies, including a fake Panamanian airline that moved about 30 surplus U.S. warplanes. Its organizer was later convicted under the Neutrality Act, and pardoned in 2001.',
+  doc:{crate:'USED INDUSTRIAL MACHINERY', note:'A crate with this label split open on a New Jersey dock in January 1948. It held explosives, one of 76 identical crates bound for Palestine.'},
+  src:[['Biltmore Conference','https://en.wikipedia.org/wiki/Biltmore_Conference'],['Zion and party politics, 1944 — Jewish Review of Books','https://jewishreviewofbooks.com/articles/2287/zion-and-party-politics-1944/'],['The Sonneborn meeting — Davidson Institute','https://davidson.org.il/read-experience/?p=19559'],['Al Schwimmer','https://en.wikipedia.org/wiki/Al_Schwimmer']],
+  deep:'s07f', deepT:'AZEC, the domestic political machine'},
+ {yr:'1944', pl:'Bethesda, then Chicago', title:'The dying president',
+  taught:'Truman becoming president was an accident of history.',
+  rec:'In March 1944 a Navy cardiologist found Roosevelt had heart failure. His own doctor told the press he was in “robust health.” A second specialist wrote that Roosevelt likely wouldn’t survive another term; that memo stayed in a safe until 2011. That summer, party bosses dropped Vice President Wallace for Harry Truman. No record ties the swap to Palestine (Wallace was himself pro-Zionist), but it chose the man who would decide in 1948.',
+  doc:{q:'in all probability be the next President', who:'George Allen, one of the party insiders, on whoever became FDR’s running mate in 1944'},
+  src:[['FDR’s health in his final term — History.com','https://www.history.com/news/franklin-d-roosevelt-health-final-term'],['The Lahey memo — WBUR','https://www.wbur.org/news/2011/04/11/fdr-lahey-memo'],['“I hardly know Truman” — American Heritage','https://www.americanheritage.com/i-hardly-know-truman?page=2'],['1944 Democratic National Convention','https://en.wikipedia.org/wiki/1944_Democratic_National_Convention']],
+  deep:'s07c3', deepT:'FDR’s hidden decline'},
+ {yr:'1945', pl:'The White House', title:'Constituents',
+  taught:'Truman backed a Jewish state out of moral conviction alone.',
+  rec:'In November 1945 Truman met his envoys to the Arab world. One of them, William Eddy, later wrote down what Truman told them. Eddy opposed Zionism, and his account dates from 1954, but the meeting itself is in the official State Department record.',
+  doc:{q:'I’m sorry, gentlemen, but I have to answer to hundreds of thousands who are anxious for the success of Zionism; I do not have hundreds of thousands of Arabs among my constituents.', who:'Harry Truman, as recalled by William Eddy'},
+  src:[['Foreign Relations of the United States, 1945 — Office of the Historian','https://history.state.gov/historicaldocuments/frus1945v08/ch2'],['Truman administration — Jewish Virtual Library','https://www.jewishvirtuallibrary.org/harry-truman-administration']],
+  deep:'tr_s01', deepT:'Truman before the money'},
+ {yr:'1947', pl:'United Nations, New York', title:'Short of the votes',
+  taught:'The UN created Israel by international consensus.',
+  rec:'The first count fell short of two-thirds, and the vote was put off. Haiti, Liberia and the Philippines switched to yes amid documented U.S. pressure. Final vote: 33 to 13, with 10 abstaining. The people who lived there had no vote.',
+  doc:{bars:[['Jewish share of the population',33,''],['Land owned by Jews',7,''],['Land given to the Jewish state',56,'red']]},
+  src:[['Resolution 181, text — UN Digital Library','https://digitallibrary.un.org/record/210008'],['Resolution 181 — Avalon Project, Yale','https://avalon.law.yale.edu/20th_century/res181.asp'],['Village Statistics, 1945','https://en.wikipedia.org/wiki/Village_Statistics,_1945']],
+  deep:'s09', deepT:'UN Resolution 181'},
+ {yr:'1948', pl:'March–April', title:'Plan Dalet and Deir Yassin',
+  taught:'Palestinians left because Arab leaders told them to.',
+  rec:'On March 10 the Haganah’s Plan Dalet told brigades to destroy villages that resisted and expel their people beyond the state’s borders; historians disagree on whether it was a master plan or a military plan used unevenly. On April 9 Irgun and Lehi forces attacked Deir Yassin, killing about 110 people, many of them women, children and elderly. Four days later Arab forces killed 78 Jews on a convoy to Hadassah Hospital. By 1949 more than 700,000 Palestinians had been displaced.',
+  doc:{q:'setting fire to, blowing up, and planting mines in the debris', who:'Plan Dalet, on villages that resisted, March 10, 1948'},
+  src:[['Plan Dalet','https://en.wikipedia.org/wiki/Plan_Dalet'],['Deir Yassin massacre','https://en.wikipedia.org/wiki/Deir_Yassin_massacre'],['Why Deir Yassin still matters — Al Jazeera','https://www.aljazeera.com/news/2023/4/9/the-deir-yassin-massacre-why-it-still-matters-75-years-later'],['1948 (Morris) — Yale University Press','https://yalebooks.yale.edu/book/9780300151121/1948/']],
+  deep:'pd_s01', deepT:'Plan Dalet, the document itself'},
+ {yr:'1948', pl:'May 14 · 6:11 p.m.', title:'Eleven minutes',
+  taught:'Congress voted to recognize Israel.',
+  rec:'Recognition was the President’s decision alone. Truman announced it eleven minutes after the state was proclaimed, against the advice of his Secretary of State, the Joint Chiefs, the Defense Secretary and the CIA. The statement was typed in a hurry and corrected by hand: “provisional” and “State of Israel” were added, along with the time, 6.11.',
+  doc:{press:true},
+  src:[['Press release announcing U.S. recognition of Israel — National Archives','https://www.archives.gov/milestone-documents/press-release-announcing-us-recognition-of-Israel'],['The original, with its handwritten corrections — Seth Kaller','https://sethkaller.com/item/284-Harry-S.-Truman-on-His-1948-Proclamation-Recognizing-Israel'],['Zivotofsky v. Kerry (2015) — Supreme Court','https://www.supremecourt.gov/opinions/14pdf/13-628_l5gm.pdf']],
+  deep:'rec_s01', deepT:'Who recognizes a nation?'},
+
+ {deck:2, yr:'1937', pl:'The Peel Commission', title:'“Transfer” went on paper first',
+  taught:'Removing the Arab population was an idea of extremists, after 1948.',
+  rec:'A British royal commission proposed splitting the land, with an “exchange of population”: about 225,000 Arabs moved out of the proposed Jewish state, compulsory “in the last resort.” That year Zionist leaders discussed transfer at the highest level; historians still argue over the exact wording of some of Ben-Gurion’s letters.',
+  doc:{stat:'225,000', note:'Arabs to be moved out of the proposed Jewish state'},
+  src:[['Peel Commission','https://en.wikipedia.org/wiki/Peel_Commission']],
+  deep:'pl_s01', deepT:'The word “transfer” enters the record'},
+ {deck:2, yr:'1950', pl:'The Knesset', title:'Present, but “absent”',
+  taught:'Palestinians who stayed kept their homes as citizens.',
+  rec:'The 1950 Absentees’ Property Law took the property of anyone who had left home during the war, including tens of thousands who never left the country and became citizens. The UN said refugees “should be permitted” to return. It has repeated that every year since 1949.',
+  doc:{stat:'~200,000', note:'“present absentees” among Israel’s Arab citizens, by a 2001 estimate'},
+  src:[['Absentees’ Property Law, text — UN','https://www.un.org/unispal/document/auto-insert-209845/'],['Present absentees','https://en.wikipedia.org/wiki/Present_absentee'],['Resolution 194','https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_194']],
+  deep:'ap_s01', deepT:'The Absentees’ Property Law'},
+ {deck:2, yr:'1958', pl:'Every American bookstore', title:'The story America read',
+  taught:'What we learned about 1948 came from the historical record.',
+  rec:'Leon Uris’s novel Exodus spent 19 weeks at number one and sold more than five million hardcover copies by 1965; the 1960 film reached millions more. Ben-Gurion called it the greatest thing ever written about Israel as propaganda. A scholar of it says it “simplified some facts and distorted others.” A popular claim that a PR firm commissioned the book traces to a single boast and is not supported by Uris’s biographers.',
+  doc:{stat:'5,000,000+', note:'hardcover copies of Exodus sold by 1965'},
+  src:[['Exodus (novel)','https://en.wikipedia.org/wiki/Exodus_(Uris_novel)'],['Our Exodus — Wayne State University Press','https://www.wsupress.wayne.edu/9780814334430/'],['The Exodus PR legend — History News Network','https://www.historynewsnetwork.org/article/142442']],
+  deep:'s00a', deepT:'How the story is taught'},
+ {deck:2, yr:'1961–87', pl:'The archives open', title:'Why the record arrived late',
+  taught:'The facts about 1948 were known at the time.',
+  rec:'For decades the accepted explanation was that Arab leaders ordered civilians out by radio. In 1961 Erskine Childers checked the British and American recordings of 1948 Arab broadcasts and found no such order, only appeals to stay. Israel’s own state and military archives opened under a 30-year rule in the late 1970s and 1980s. Working from them, Israeli historian Benny Morris concluded in 1987 that the main causes of flight were attack, expulsion and fear.',
+  doc:{stat:'30 years', note:'the wait before Israel’s 1948 files began to open'},
+  src:[['“The Other Exodus” — The Spectator, May 12, 1961','https://archive.spectator.co.uk/article/12th-may-1961/8/the-other-exodus'],['New Historians','https://en.wikipedia.org/wiki/New_Historians'],['The Birth of the Palestinian Refugee Problem (Morris, 1987)','https://en.wikipedia.org/wiki/The_Birth_of_the_Palestinian_Refugee_Problem']],
+  deep:'np_s01', deepT:'How the Nakba was told'}
+];
+var N = B.length, N1 = B.filter(function(b){ return !b.deck; }).length, revealed = 0, reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+function docHTML(d){
+  if(d.q) return '<blockquote class="quote">“' + esc(d.q) + '”<cite>' + esc(d.who) + '</cite></blockquote>';
+  if(d.stat) return '<div class="stat"><b>' + esc(d.stat) + '</b><span>' + esc(d.note) + '</span></div>';
+  if(d.bars) return '<div class="bars">' + d.bars.map(function(b){ return '<div class="bar ' + b[2] + '"><div class="t"><span>' + esc(b[0]) + '</span><span>' + (b[1] === 7 ? 'under 7%' : 'about ' + b[1] + '%') + '</span></div><div class="tr"><i style="--w:' + b[1] + '%"></i></div></div>'; }).join('') + '</div>';
+  if(d.passport) return '<div class="pp"><div class="ppc" aria-label="Recreation of a Mandate Palestine passport cover"><b>BRITISH PASSPORT</b><b class="big">PALESTINE</b></div><p class="ppn">' + esc(d.note) + '</p></div>';
+  if(d.crate) return '<div class="crate">' + esc(d.crate) + '<small>' + esc(d.note) + '</small></div>';
+  if(d.press) return '<div class="press" aria-label="Recreation of the typed press release with handwritten corrections">' +
+    '<p>This Government has been informed that a Jewish state has been proclaimed in Palestine, and recognition has been requested by the <span class="caret">^</span><span class="hand">provisional</span> Government thereof.</p>' +
+    '<p>The United States recognizes the provisional government as the de facto authority of the new <span class="caret">^</span><span class="hand">State of Israel</span>.</p>' +
+    '<div class="approved"><span>Approved, May 14, 1948</span><span>6.11</span></div>' +
+    '<p class="note">Recreation for reading; handwritten additions shown in blue. The typed original with its corrections is in the papers of Truman’s press secretary, Charles Ross; see the sources below.</p></div>';
+  return '';
+}
+var main = document.getElementById('beats');
+var MID = '<section class="end mid" id="mid"><h2>That was eleven documents.</h2>' +
+  '<p>Each one is a starting point. The full simulation follows every thread: who funded it, who argued against it, what each side says, and what happened after. 148 scenes, from the 1690s to 1950, each with its sources.</p>' +
+  '<div class="ctas"><button class="c1" id="keep" type="button">Keep going: four things school left out<span>Including why the record reached the public so late</span></button>' +
+  '<a class="c2" href="index.html#scene=s07a">Open the full simulation<span>Start from the founding documents</span></a></div></section>';
+var TOUCH = window.matchMedia('(pointer: coarse)').matches;
+main.innerHTML = B.map(function(b, i){
+  return '<article class="beat" id="b' + (i + 1) + '" data-i="' + i + '">' +
+    '<div class="when"><span class="yr">' + esc(b.yr) + '</span><span class="pl">' + esc(b.pl) + '</span><span class="idx">' + (i < N1 ? (i + 1) + ' of ' + N1 : 'Bonus ' + (i - N1 + 1) + ' of ' + (N - N1)) + '</span></div>' +
+    '<div class="card" id="card' + i + '"><div class="archive">' +
+      '<p class="wastaught">You were taught: <s>' + esc(b.taught) + '</s></p>' +
+      '<h2>' + esc(b.title) + '</h2><p class="rec">' + esc(b.rec) + '</p>' +
+      '<div class="doc">' + docHTML(b.doc) + '</div>' +
+      '<div class="deeper"><a class="go" href="' + SIM + b.deep + '">Go deeper: ' + esc(b.deepT) + '</a></div>' +
+      '<div class="srcs">Sources: ' + b.src.map(function(s){ return '<a href="' + s[1] + '" target="_blank" rel="noopener">' + esc(s[0]) + '</a>'; }).join(' · ') + '</div>' +
+    '</div><div class="book" role="button" tabindex="0" aria-label="What you were taught: ' + esc(b.taught) + ' Double-tap, or press Enter, to reveal the record">' +
+      '<span class="lbl">What you were taught</span><p class="tt"><span>' + esc(b.taught) + '</span></p>' +
+      '<div class="cue"><span class="taps" aria-hidden="true"><i></i></span><span><b>' + (TOUCH ? 'Double-tap' : 'Double-click') + ' to reveal the record</b><em>Tap once more</em></span></div>' +
+    '</div></div>' +
+    '<button class="next" type="button" data-i="' + i + '">' + (i === N1 - 1 ? 'See what it adds up to' : i === N - 1 ? 'Finish' : 'Next: ' + esc(B[i + 1].yr)) + ' \u2193</button>' +
+  '</article>' + (i === N1 - 1 ? MID : '');
+}).join('');
+
+/* ---------- textbook layer: double-tap to lift; in order, one at a time ---------- */
+var cards = [].slice.call(document.querySelectorAll('.card')), books = [], done = [], beats = [].slice.call(document.querySelectorAll('.beat')), endEl = document.getElementById('end'), midEl = document.getElementById('mid');
+beats.forEach(function(el, i){ if(i > 0) el.hidden = true; }); endEl.hidden = true; midEl.hidden = true;
+document.getElementById('keep').addEventListener('click', function(){ beats[N1].hidden = false; setTimeout(updCue, 100); io.observe(beats[N1]); beats[N1].scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'}); setTimeout(function(){ books[N1].focus({preventScroll:true}); }, 600); });
+cards.forEach(function(card, i){
+  var bk = card.querySelector('.book'); books[i] = bk; done[i] = false;
+  var lastT = 0, lastX = 0, lastY = 0, disarm;
+  bk.addEventListener('pointerup', function(e){
+    var now = Date.now();
+    if(now - lastT < 380 && Math.abs(e.clientX - lastX) < 40 && Math.abs(e.clientY - lastY) < 40){ e.preventDefault(); reveal(i); return; }
+    lastT = now; lastX = e.clientX; lastY = e.clientY;
+    bk.classList.add('armed'); clearTimeout(disarm); disarm = setTimeout(function(){ bk.classList.remove('armed'); }, 900);
+  });
+  bk.addEventListener('dblclick', function(e){ e.preventDefault(); reveal(i); });
+  bk.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); reveal(i); } });
+});
+function reveal(i){
+  if(done[i]) return; done[i] = true;
+  books[i].classList.remove('armed'); books[i].classList.add('lift'); cards[i].classList.add('revealed');
+  setTimeout(function(){ books[i].style.display = 'none'; }, 900);
+  try{ if(navigator.vibrate) navigator.vibrate([10, 40, 18]); }catch(e){}
+  revealed++; var t = revealed <= N1 ? revealed + ' of ' + N1 + ' revealed' : 'Bonus ' + (revealed - N1) + ' of ' + (N - N1);
+  document.getElementById('count').textContent = t; document.getElementById('tally').textContent = t;
+  var dot = document.querySelector('.line i[data-i="' + i + '"]'); if(dot){ dot.classList.add('seen'); dot.classList.remove('lock'); }
+  var nd = document.querySelector('.line i[data-i="' + (i + 1) + '"]'); if(nd) nd.classList.remove('lock');
+  bar.style.width = (Math.min(revealed, N1) / N1 * 100) + '%';
+  setTimeout(updCue, 950);
+  if(i === N1 - 1) midEl.hidden = false; else if(i === N - 1) endEl.hidden = false; else { beats[i + 1].hidden = false; io.observe(beats[i + 1]); }
+}
+document.querySelectorAll('.next').forEach(function(btn){ btn.addEventListener('click', function(){
+  var i = +btn.getAttribute('data-i'), t = i === N1 - 1 ? midEl : i === N - 1 ? endEl : beats[i + 1];
+  t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+  setTimeout(function(){ var b = books[i + 1]; if(b && i !== N1 - 1) b.focus({preventScroll:true}); }, 600);
+}); });
+
+/* ---------- desktop rail ---------- */
+var line = document.getElementById('line');
+line.innerHTML = B.map(function(b, i){ var top = (i / (N - 1)) * 100; return '<i data-i="' + i + '" class="' + (i > 0 ? 'lock' : '') + '" style="top:' + top + '%"></i><b style="top:' + top + '%">' + esc(b.yr) + '</b>'; }).join('');
+var ry = document.getElementById('ry'), rp = document.getElementById('rp'), bar = document.getElementById('progbar');
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var i = +e.target.getAttribute('data-i');
+    ry.textContent = B[i].yr; rp.textContent = B[i].pl;
+    document.querySelectorAll('.line i').forEach(function(d){ d.classList.toggle('cur', +d.getAttribute('data-i') === i); });
+  });
+}, {rootMargin:'-45% 0px -45% 0px'});
+io.observe(beats[0]);
+
+/* ---------- cold open: the eleven minutes ---------- */
+var clock = document.getElementById('clock'), later = document.getElementById('later');
+function setClock(m){ clock.innerHTML = '6:' + (m < 10 ? '0' : '') + m + '<small>pm</small>'; }
+var beginBtn = document.querySelector('.begin');
+if(!TOUCH) document.getElementById('howto').textContent = 'Eleven documents. Double-click each one to reveal it. About two minutes.';
+beginBtn.addEventListener('click', function(e){ e.preventDefault(); document.getElementById('b1').scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'}); setTimeout(function(){ books[0].focus({preventScroll:true}); }, 700); });
+var cue = document.getElementById('scrollcue'), cuet = document.getElementById('cuet'), countEl = document.getElementById('count');
+function updCue(){
+  var y = window.scrollY, room = document.documentElement.scrollHeight - (y + window.innerHeight);
+  cue.classList.toggle('off', room < 60);
+  cuet.textContent = y < window.innerHeight * 0.5 ? 'Scroll to begin' : 'Scroll';
+  countEl.classList.toggle('on', y > window.innerHeight * 0.6);
+}
+window.addEventListener('scroll', updCue, {passive:true}); window.addEventListener('resize', updCue); setTimeout(updCue, 50);
+if(reduce){ setClock(11); later.classList.add('on'); beginBtn.classList.add('ready'); }
+else {
+  var m = 0; setTimeout(function tick(){ m++; setClock(m); if(m < 11) setTimeout(tick, 210); else setTimeout(function(){ later.classList.add('on'); beginBtn.classList.add('ready'); }, 350); }, 900);
+}
+
+/* ---------- share ---------- */
+document.getElementById('share').addEventListener('click', function(){
+  var data = {title:'Eleven Minutes', text:'Before 1948, in eleven documents: what we were taught, and what the record shows.', url:location.href.split('#')[0]};
+  if(navigator.share) navigator.share(data).catch(function(){});
+  else { try{ navigator.clipboard.writeText(data.url); this.firstChild.nodeValue = 'Link copied'; }catch(e){} }
+});
+})();
+</script>
+</body>
+</html>
