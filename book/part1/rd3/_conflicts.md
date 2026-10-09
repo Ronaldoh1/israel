@@ -1,0 +1,23 @@
+# rd3 source conflicts presented in the prose
+
+- Mandate's entry into force: League Council minutes, 29 Sept 1923 (standard date) vs Quigley (2026), no valid entry into force; Drummond's Circular Letter 101 supplied the wording. Sections: rd3_mandate_1923, rd3_council_1935, _outro. Scenes/research: tk_s01, lausanne_mandate_citizenship_1923_1925.
+- Conditional approval of the Mandate: 24 July 1922 (UNISPAL) vs 12 August 1922 (Abu Alia and Khalil). Section: rd3_mandate_1923. Research: lausanne_mandate_citizenship_1923_1925.
+- Jewish share of the population in 1922: census 83,794 of 757,182, about 11% vs Jewish Agency (Horowitz, 1937) 84,000, 13%, on a non-Jewish base of 565,000. Sections: cen_s01, us_s06, rd3_council_1935. Scenes/research: cen_s01, economy_1922_1936.
+- "600,000" Revisionists: more than 600,000 petition signatures in 24 countries, 1934 (Encyclopaedia Judaica) vs 600,000 members claimed by 1934 (Betar entry); Betar alone over 70,000 (ijr_src_s04). Section: s07a3. Scenes/research: s07a3, ijr_src_s04, revisionists_1925_1935.
+- The 1925 Revisionist founding: described as a secession from the WZO vs continued sending delegates to Congresses for a decade (a rival faction in practice). Section: s07a3. Scenes/research: s07a3, revisionists_1925_1935.
+- De Haan killing, 1924: Tehomi (1985) named Yitzhak Ben-Zvi as the source of the order vs some historians dispute Ben-Zvi's involvement; rests on Tehomi alone. Section: dh_s01. Scene: dh_s01.
+- Annual Jewish immigration 1923–1936: State Department series from British returns (e.g. 1933: 30,327; 1935: 61,854) vs Porath series printed by JVL (1933: 37,337; 1935: 66,472); agree 1928–1931; 1936 reversed (29,727 vs 29,595); unexplained. Sections: rd3_aliyot, pf_s01, hol_s02, rd3_council_1935, _outro. Research: aliyot_1924_1936.
+- Wave totals vs annual returns: JVL Fourth Aliyah 82,000 (1924–29) exceeds either annual series; JVL 174,000 settled 1933–36 falls between the two series. Section: rd3_aliyot. Research: aliyot_1924_1936.
+- 1935 immigrant categories: Alling's estimate of 44,000 in "other categories" vs 61,854 − 14,653 − 13,076 ≈ 34,000. Sections: rd3_aliyot, rd3_council_1935. Research: aliyot_1924_1936.
+- Brit Shalom's founders: Buber and Magnes "both founders" with Scholem and Szold (s00b3) vs Encyclopaedia Judaica: initiative of Ruppin, different founding members, Magnes never a member. Section: rd3_brit_shalom. Scenes/research: s00b3, hebrew_university_brit_shalom_1925.
+- Louis Marshall's death: one summary places it in the month the riots began (September 1929) vs the violence began in August 1929. Section: us_s03. Scenes: us_s03, s07a4.
+- Jewish dead of August 1929: 133 (EBSCO, JVL) vs 113 (Jerusalem Story, IPS); both give 116 Arabs. Sections: s07a4, _intro, _outro. Scene/research: s07a4, western_wall_riots_1928_1930.
+- Hebron dead: 67 Jews, dated 23 August (HRW) vs one killed on 23 August and 64 at the Heichal on 24 August, totalling 65 (EBSCO). Section: s07a4. Research: western_wall_riots_1928_1930.
+- Hope Simpson's Jewish land figure: about 1,250,000 Turkish dunams held in June 1930 vs about 900,000 metric dunams deducted; units not reconciled in the summarized report. Section: rd3_land. Research: hope_simpson_land_1930.
+- Hope Simpson (no margin without development; 100,000 dunams at most; landless class) vs Jewish Agency memorandum of 1931 challenging his statistical bases. Section: rd3_land. Research: hope_simpson_land_1930.
+- Jaffa cement-barrel seizure: 16 October 1935 (Palestine Post and Peel report, via the cement-barrels account) vs 18 November 1935 (Encyclopaedia Judaica). Sections: s07e2, rd3_qassam. Scene/research: s07e2, haganah_1929_1935.
+- Haganah intelligence: first Jewish intelligence organization founded under the Haganah in 1929 vs the Shai founded in 1940 (same compiled account); 1929 unconfirmed. Section: s07e2. Scene: cia_s01.
+- Haavara total: £8.1 million, about $40.4 million (JVL) vs $100 million (Center for Israel Education). Sections: hv_s01, rd3_arlosoroff. Scene/research: hv_s01, arlosoroff_london_agreements_1933_1935.
+- Al-Qassam's following: 50–200 fighters (Al Majalla, from British archives) vs a claim of 800, called "grossly exaggerated". Section: rd3_qassam. Research: qassam_1921_1935.
+- Al-Qassam's last fight: died with two colleagues (Al Majalla) vs four of his men killed (Palestine Question encyclopedia; US consul, who adds five captured). Section: rd3_qassam. Research: qassam_1921_1935.
+- Al-Qassam's arrival in Haifa: late 1920 vs December 1920. Section: rd3_qassam. Research: qassam_1921_1935.

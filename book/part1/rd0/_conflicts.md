@@ -1,0 +1,49 @@
+# rd0 source conflicts presented in the prose
+
+- Founding year of N M Rothschild & Sons, London: 1809 vs 1811 (bc_s02 [wiki_nathan_mayer_rothschild]; s01 rothL [schama_two_rothschilds]).
+- Founding of the Paris house: firm dated 1817 vs 1812 in other accounts; James's arrival 1812 (s01 rothF/rothP; bc_s04).
+- Waterloo story: real information advantage, "cornered the market" caricature traced to Drumont (s01 rothF deep dive) vs no evidence Nathan knew first, legend traced to Dairnvaell's 1846 "Satan" pamphlet, profit at most about £7,000 (bc_s02; archive words reach the book only via jwatte blog).
+- Suez commission, 1875: critics' 15 per cent vs Disraeli's denial that the commission was interest; rate not found (bc_s02, rd0_suez_1875).
+- Napoleon's 1799 "proclamation to the Jews": forged (Schwarzfuchs, Laurens, Schechter, Popkin, Akadem) vs genuine report or real conception (Gichon, Schur; JVL "debated") (rd0_ottoman, rd0_ottoman_1799_1840).
+- Napoleon's retreat from Acre dated 22 May 1799 (JVL), the same date as the Gazette nationale report; possible conflation unresolved (rd0_ottoman).
+- Hebron, 1834: besieged 24 July, 630 young men sent to Egypt (Rood) vs fell 4 August, about 500 killed and 750 conscripted (reference summary) (rd0_ottoman).
+- 1834 revolt and Palestinian identity: formative (Kimmerling–Migdal) vs no national aim, restoration of Ottoman rule (Morris); Shamir and Manna as further readings (rd0_ottoman).
+- 1831 papal contract: secret right of first refusal on all papal debt vs exclusive management of loan issues (bc_s03).
+- Counterparty to the papal loans: Paris house (James) vs London and Paris vs Paris and Naples vs London alone (bc_s03, oc_ch48; bc_s07).
+- Bride of the 1823 Torlonia–Orsini marriage: Maria Luisa vs Teresa Orsini (bc_s03).
+- Tosti affair, 1834: Cardinal Tosti refinancing with six banks, blocked by Carl Mayer vs papal treasurer Antonio Tosti exposed for embezzlement (bc_s03).
+- Villa Torlonia rented to Mussolini from 1923 vs from 1925, to 1943 (bc_s08, via bc_s03).
+- François Pauly's IOR appointment: 25 March vs 28 April 2026 (bc_s08, via bc_s03).
+- "Land without a people" slogan: meant "empty" vs "without a nation" (sq_s05, bc_s05).
+- First Ottoman parliament: 120 deputies, 14 Arab (PalQuest) vs 115 members, 69 Muslim and 46 non-Muslim (reference account) (rd0_tanzimat).
+- Al-Khalidi's mayoralty: from 1870 (1870–1874, PalQuest) vs from September 1865 for nine years (Jerusalem Story) (rd0_tanzimat).
+- Suspension of the parliament: 14 vs 13 February 1878 (rd0_tanzimat).
+- Character of the 1867 land law: a regulation whose gaps were exploited (Marmara thesis) vs one stage of a wider privatization (Kark) (ot_s01, rd0_land_law_1858_1867).
+- Pinsker on territory: open, including Argentina vs leaning toward North America or Argentina (s02).
+- Russian-Jewish emigration window: 1881–1914 vs 1881–1924 (s02; s01 rus).
+- When Palestine became the fixed goal: Basel 1897 vs 1905, decided by the Russian base (s02, s03).
+- Old Yishuv in 1880: about 24,000 (Barın) vs 23,000 (Elia) (rd0_aliyah).
+- First Aliyah arrivals: 20,000–30,000 (Barın) vs 25,000 (Jewish Agency) vs up to 60,000 (Shapira), with 50–70% leaving (rd0_aliyah).
+- Jewish population at the period's end: about 50,000 by 1903 (Barın) vs about 55,000 (unsourced) vs 80,000 in 1907 (Elia) (rd0_aliyah).
+- Porte's first action: June–July 1882 (Barın) vs recognition in November 1882 despite a May 1882 permit (Mandel, via reference summary) (rd0_limits).
+- Red permit card: implied for the 1880s vs implemented from 1900 (Barın's footnote; 1887–88 dispatches silent) (rd0_limits).
+- Start of the land-sale ban: 1892 (Ocak, Porath) vs 1893, extended April 1894 (Barın) vs the note of 27 March 1894 (US dispatch); s01 rothP reading also uses 1892 (rd0_limits, bc_s04).
+- The 24 June 1891 protest: a petition from Jerusalem notables vs a telegram from Jerusalem and Jaffa (rd0_limits, rd0_arab_responses).
+- Whether early Arab opposition was political: doubtful (Jewish Agency overview) vs directed at the state from the start (Mandel, Beška) (rd0_limits).
+- Span of Barın's "more than 50,000" figure: given as 1882–1920 in bc_s07 vs stated as not given in the passage relied on in rd0_limits (internal inconsistency between sections; needs editorial check).
+- Edmond's refusal of Herzl, July 1896: telegram only, per the diary (herzl_diaries_vol2_archive) vs refusal to receive him, then a meeting via an intermediary (s01 rothP) (bc_s04, s03).
+- Edmond's funding period: 1882–1895 vs 1883–1900 (bc_s04).
+- Edmond and the JCA: told to begin lending in 1896 vs administration transferred in 1899 (bc_s04, s04b).
+- PICA's end: transfer to the Jewish Agency in 1957 vs Yad Hanadiv as successor (bc_s04).
+- Edmond's spending: "$5–6 million", "~40% of early capital", "roughly 30 colonies" (unsourced, s01 rothP) vs "Not totaled in the record" (money_1948:The Streams:0) (bc_s04).
+- Hirsch's death: 1896, "a year before Basel" vs "five years before" (error in s04b's own material).
+- Hirsch's further £7,000,000: stated in one account with no separate source (s04b).
+- Dreyfus degradation: crowd chanting "Death to the Jews" vs "À bas les Juifs!", and its date, 22 December 1894 in one account (s03).
+- Der Judenstaat and Uganda: one entity says the pamphlet weighed Uganda vs the offer came in 1903 (s03, s04f).
+- Weight of Argentina and Palestine in Der Judenstaat: roughly equal vs Argentina first, Palestine preferred (s03, gia_src_s01).
+- Herzl's 12 June 1895 diary entry: evidence of planned removal (Morris, Masalha) vs misread or about another population (s03).
+- Herzl's meeting with Pius X: within 1901–1903 vs January 1904 (s03, vat_s01).
+- Sixth Zionist Congress vote: 295 to 177 vs 295 to 178 (s03).
+- Herzl's Basel diary line: two renderings, one dated 3 September 1897 (s03).
+- Founder of the Bank of England: Paterson's proposal (Bank museum) vs Montagu as deviser (reference summary citing Roseveare) (rd0_bank1694).
+- Stop of the Exchequer: obligations £1,211,065 (Horsefield) vs principal £1,328,526 at end of 1676 (two measures, both reported) (rd0_bank1694).

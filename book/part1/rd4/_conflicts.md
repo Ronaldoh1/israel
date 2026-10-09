@@ -1,0 +1,24 @@
+# rd4 — source contradictions presented in the prose
+
+- Arab Revolt death toll: 2,652 Jews / 618 British / ~5,000 Arabs (attributed to USHMM, unverified) vs Khalidi 5,032 Arab dead, official British figures (2,000+ in combat, 108 hanged, 961 by "gang and terrorist activities"), Unpacked 5,000–8,000 Arab dead, and 400–415 Jewish / 100–200 British dead (Yehudai, JVL, Strickert). Scenes: s07a5, rd4_mufti_war (research arab_revolt_1936_1939).
+- First incident, 15 April 1936: two Jews killed near Tulkarm (Yehudai, Strickert) vs attack on a Jewish bus with three Jewish dead (JVL). Scene: s07a5.
+- Start of the general strike: Nablus call 19 April and Arab Higher Committee 25 April 1936 (research) vs al-Husseini's strike call dated 16 May 1936 (s07a5 scene, USHMM). Scene: s07a5.
+- Neighbouring rulers who mediated the strike's end in October 1936: lists differ between sources (Transjordan, Iraq, Saudi Arabia, Yemen named variously). Scene: s07a5.
+- Al-Husseini's flight in 1937: sanctuary in the Dome of the Rock on 17 July (Wikipedia) vs refuge in the Haram al-Sharif and escape in the autumn; first destination Lebanon (Unpacked, s07a5 scene) vs Syria (JVL). Scenes: s07a5, rd4_mufti_war.
+- Size of Peel's proposed Jewish state: 17% (Yehudai) vs about 20% (Strickert). Scene: s07a6.
+- Twentieth Zionist Congress on Peel: "accepted" partition in principle vs "did not reject it outright" vs rejection of the plan by both Jews and Arabs (UNCCP working paper, 1949). Scenes: s07a6, pl_s01, rd4_woodhead.
+- Peel's exchange of population: ~225,000 Arabs and ~1,250 Jews (Peel report as cited; Middle East Eye) vs about 200,000 and 1,000 (Yehudai). Scene: pl_s01.
+- Ben-Gurion's October 1937 letter to Amos: one key sentence read as supporting expulsion vs, in a different reading of the handwritten Hebrew, the opposite; historians including Morris changed positions. Scene: pl_s01.
+- Arab reception of the 1939 White Paper: "very obvious relief" among Arabs (Wadsworth, FRUS) vs the Arab Higher Committee's formal rejection; and the reason for the rejection (Morris, reported second-hand: al-Husseini not placed at the head of the state) vs the committee's own stated demand for a complete halt to immigration. Scene: rd4_white_paper (s07b).
+- Patria death toll: 267–268 vs rounded "over 260". Scene: s07b2.
+- Exodus 1947 and the UN vote: coverage credited as a genuine contributor to the shift in Western opinion vs US vote turning mainly on domestic political pressure. Scenes: s07b2, ab_s01.
+- Farhud, 1–2 June 1941: USHMM 150–180 killed, 600 injured, ~1,500 homes and stores looted vs other sources 500+ killed vs Volume I (s00e2) at least 128 and up to 180 killed, over 1,000 injured. Scenes: rd4_mufti_war, irq_e03, s00e2.
+- Rekhesh and the Justice Department: account that DOJ declined every request to prosecute or compel registration (cia_s01, medium/IPS) vs the 1949 Neutrality Act convictions of Winters, Greenspun and Schwimmer. Scenes: fa_s01, cia_s01.
+- December 1944 deferral of the Palestine resolution: at the State Department's insistence (AZEC records) vs at the administration's request (other account). Scene: us_s05.
+- Passage of the Palestine resolution: Silver's record credits his 1944 lobbying with securing a resolution vs the congressional record (committee approval 30 Nov 1944, deferral, adoption only in December 1945). Scenes: s07f, us_s05, s07b.
+- Quincy meeting length: roughly five hours (Brookings) vs five and a half hours (memorandum-based account). Scene: s07ca (isa_src_s01).
+- What Roosevelt argued for at the Quincy: a Jewish state vs a Jewish national home. Scene: s07ca (isa_src_s01).
+- Ibn Saud's alternative: land in Germany, "the country of their enemies" vs a Jewish state in Bavaria. Scene: s07ca.
+- Roosevelt's commitment as worded: no decision without consulting Arabs and Jews (Truman Library) vs no action "hostile to the Arab people" (5 April 1945 letter). Scenes: s07ca, s07c2.
+- Holocaust death estimates: Hilberg 5.1 million vs Dawidowicz 5,933,900 (independent methods; Yad Vashem ~4.8 million named). Scene: hol_s05.
+- Vatican non-recognition of Israel: described as a "45-year withholding" (to 1993) but dated "1904–1993" in the same source; the prose states only the 1993 end. Scene: vat_s00b.
