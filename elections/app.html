@@ -1,0 +1,1388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2026 Elections</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0a1220;--bg-900:#0d1728;--bg-800:#122036;--bg-700:#182a46;--bg-el:#182c4a;--bg-el-hi:#1f3757;
+  --line:rgba(200,214,236,.20);--line-hi:rgba(215,226,244,.36);
+  --ink:#FCF9F2;--ink-dim:rgba(252,249,242,.88);--ink-faint:rgba(252,249,242,.68);
+  --gold:#F0B93E;--gold-hi:#FFD873;--ember:#FF6B3D;--ruby:#E8433D;--ruby-hi:#FF7A72;
+  --sapphire:#3E6BFF;--sapphire-hi:#7C9CFF;--emerald:#33D17A;--teal:#2FD0C4;--amethyst:#9B7BE0;
+  --pD:#5B84FF;--pR:#F05A54;--pI:#B79BFF;--pL:#F0B93E;--pG:#33D17A;--pC:#FF8A5C;
+  --serif:'EB Garamond',Georgia,serif;--sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--void);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5}
+body{min-height:100vh;overflow-x:hidden}
+a{color:var(--gold-hi)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.top{position:sticky;top:0;z-index:20;background:rgba(10,18,32,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:10px;min-height:52px}
+.back{display:none;align-items:center;gap:6px;padding:7px 11px;border:1px solid var(--line-hi);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--gold-hi);white-space:nowrap}
+.back.show{display:inline-flex}
+.crumb{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+.crumb b{color:var(--ink)}
+.home-btn{font-size:12px;font-weight:700;color:var(--ink-faint);padding:6px 4px}
+main{max-width:980px;margin:0 auto;padding:18px 16px 80px}
+h1{font-family:var(--serif);font-weight:700;font-size:34px;line-height:1.08;letter-spacing:-.01em}
+h2{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.15;margin:26px 0 10px}
+h3{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:22px 0 10px}
+p{color:var(--ink-dim)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+.lede{font-size:16px;color:var(--ink-dim);margin-top:10px;max-width:680px}
+.muted{color:var(--ink-faint);font-size:13px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:linear-gradient(180deg,var(--bg-el),var(--bg-800));border:1px solid var(--line);border-radius:14px;padding:16px}
+.tap{cursor:pointer;transition:border-color .2s,transform .2s}
+.tap:hover{border-color:var(--line-hi)}
+.tap:active{transform:scale(.99)}
+.big{padding:20px}
+.big .n{font-family:var(--serif);font-size:44px;font-weight:700;line-height:1;color:var(--gold-hi)}
+.big .t{font-size:20px;font-weight:800;margin-top:6px}
+.big .d{font-size:13px;color:var(--ink-faint);margin-top:6px}
+.go{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--gold-hi)}
+.stat-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;color:var(--ink-dim);background:var(--bg-800)}
+.pill b{color:var(--ink)}
+.badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;white-space:nowrap}
+.b-pending{background:rgba(252,249,242,.08);color:var(--ink-faint);border:1px solid var(--line)}
+.b-partial{background:rgba(240,185,62,.14);color:var(--gold-hi);border:1px solid rgba(240,185,62,.4)}
+.b-complete{background:rgba(51,209,122,.14);color:#7FF0AC;border:1px solid rgba(51,209,122,.4)}
+.badge .sdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#F0B93E;margin-right:6px;vertical-align:1px}
+.badge .sdot.live{background:#33D17A;animation:sdotPulse 1.8s ease-out infinite}
+@keyframes sdotPulse{0%{box-shadow:0 0 0 0 rgba(51,209,122,.75)}70%{box-shadow:0 0 0 7px rgba(51,209,122,0)}100%{box-shadow:0 0 0 0 rgba(51,209,122,0)}}
+@media (prefers-reduced-motion:reduce){.badge .sdot.live{animation:none}}
+.party{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:6px;font-size:11px;font-weight:900;color:#0a1220}
+.pD{background:var(--pD)}.pR{background:var(--pR)}.pI{background:var(--pI)}.pL{background:var(--pL)}.pG{background:var(--pG)}.pC{background:var(--pC)}.pO{background:#c8d6ec}
+.search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line-hi);background:var(--bg-800);color:var(--ink);font:inherit;font-size:15px}
+.search::placeholder{color:var(--ink-faint)}
+.results{margin-top:8px}
+.letter{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);margin:18px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.row{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.row:hover{background:rgba(255,255,255,.03)}
+.row .main{flex:1;min-width:0}
+.row .nm{font-weight:700}
+.row .sb{font-size:12.5px;color:var(--ink-faint);overflow:hidden;text-overflow:ellipsis}
+.chev{color:var(--ink-faint);font-size:18px}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin-top:10px}
+.dt{border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center;background:var(--bg-800);cursor:pointer}
+.dt .c{font-family:var(--mono);font-weight:600;font-size:14px}
+.dt .s{margin-top:6px}
+.cand{display:flex;gap:12px;align-items:center}
+.av{width:56px;height:56px;border-radius:12px;flex:none;background:var(--bg-700);border:1px solid var(--line-hi);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--ink-dim);overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+.av.lg{width:104px;height:124px;border-radius:14px;font-size:30px}
+.inc{font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--gold-hi);border:1px solid rgba(240,185,62,.45);border-radius:5px;padding:2px 5px}
+.pending{border:1px dashed var(--line-hi);border-radius:12px;padding:14px;color:var(--ink-faint);font-size:13.5px;background:rgba(255,255,255,.02)}
+.pending b{color:var(--ink-dim)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.kpi{background:var(--bg-800);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi .v{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--gold-hi);line-height:1.1}
+.kpi .l{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+table.tb{width:100%;border-collapse:collapse;font-size:13.5px}
+.tb th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);font-weight:700;padding:8px 6px;border-bottom:1px solid var(--line-hi)}
+.tb td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-dim)}
+.tb td:first-child{color:var(--ink);font-weight:600}
+.tbwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+sup.c a{font-family:var(--mono);font-size:10px;text-decoration:none;color:var(--gold);padding:0 1px}
+.note{border-left:3px solid var(--gold);padding:10px 12px;background:rgba(240,185,62,.07);border-radius:0 10px 10px 0;font-size:13.5px;color:var(--ink-dim);margin:12px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:var(--gold);color:#0a1220;font-weight:800;font-size:13px;letter-spacing:.04em}
+.btn.ghost{background:none;color:var(--gold-hi);border:1px solid rgba(240,185,62,.5)}
+details.acc{border:1px solid var(--line);border-radius:12px;background:var(--bg-800);margin-top:8px}
+details.acc summary{padding:12px 14px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary:after{content:'+';color:var(--gold)}
+details.acc[open] summary:after{content:'\2212'}
+details.acc .b{padding:0 14px 14px;font-size:14px;color:var(--ink-dim)}
+.bar{height:12px;border-radius:6px;background:var(--bg-700);overflow:hidden;display:flex}
+.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12px;color:var(--ink-dim)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.chart{width:100%;height:auto;display:block}
+.src{font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+.srclist li{font-size:12.5px;color:var(--ink-faint);margin:0 0 6px 18px;word-break:break-word}
+.hero{padding:6px 0 4px}
+.count{font-family:var(--mono);font-size:12px;color:var(--teal)}
+.mech .t{font-weight:800}
+.mech .d{font-size:13.5px;color:var(--ink-dim);margin-top:4px}
+.prog{height:6px;border-radius:3px;background:var(--bg-700);overflow:hidden;margin-top:8px}
+.prog span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-hi))}
+.empty{color:var(--ink-faint);font-size:13px;padding:10px 4px}
+.sec{margin-top:6px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
+.tab{padding:7px 12px;border-radius:999px;border:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--ink-dim)}
+.tab.on{background:var(--gold);color:#0a1220;border-color:var(--gold)}
+
+.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0;margin:6px 0 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;padding:7px 12px;border-radius:999px;border:1px solid var(--line-hi);font-size:12.5px;font-weight:700;color:var(--ink-dim);text-decoration:none;background:var(--bg-800)}
+.chips.sticky{position:sticky;top:56px;z-index:10;background:rgba(10,18,32,.94);backdrop-filter:blur(8px);margin:14px -16px 0;padding:10px 16px;border-bottom:1px solid var(--line)}
+.hero2{position:relative;border:1px solid var(--line-hi);border-radius:18px;padding:18px;background:var(--bg-el);background:radial-gradient(120% 80% at 0% 0%,color-mix(in srgb,var(--pc) 22%,transparent),transparent 60%),linear-gradient(180deg,var(--bg-el),var(--bg-800));overflow:hidden}
+.hero2:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--pc)}
+.hero2-top{display:flex;gap:16px;align-items:flex-start}
+.hero2-id{min-width:0}
+.hero2 h1{font-size:30px;margin-top:2px}
+.tagrow{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px}
+.oneliner{margin-top:10px;font-size:14.5px;color:var(--ink-dim)}
+.scorebox{display:flex;gap:16px;align-items:center;margin-top:16px;padding:14px;border-radius:14px;background:rgba(10,18,32,.5);border:1px solid var(--line)}
+.sb-ring{flex:none}
+.sb-axes{flex:1;min-width:0}
+.sb-ax{margin-bottom:8px}
+.sb-ax-h{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-dim);gap:8px}
+.sb-ax-h b{color:var(--ink);font-family:var(--mono);font-size:12px}
+.abar{height:6px;border-radius:3px;background:rgba(252,249,242,.08);overflow:hidden;margin-top:4px}
+.abar span{display:block;height:100%;border-radius:3px}
+.linkbtn{font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--gold-hi);padding:4px 0}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.btn.sm{padding:8px 12px;font-size:12px;margin-top:12px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:8px}
+.facts>div{background:var(--bg-800);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.fl{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.fv{margin-top:3px;font-size:14px}
+.bodyp{margin-top:12px;font-size:15px;line-height:1.6}
+.tl{border-left:2px solid var(--line-hi);margin-left:6px;padding-left:14px}
+.tl-i{position:relative;display:flex;gap:12px;padding:6px 0 10px}
+.tl-i:before{content:'';position:absolute;left:-20px;top:11px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--void)}
+.tl-y{flex:none;width:86px;font-family:var(--mono);font-size:11.5px;color:var(--teal);padding-top:2px}
+.tl-b{min-width:0;font-size:14px}
+.axcard .axhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:8px}
+.axscore{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1}
+.why{list-style:none;margin-top:10px}
+.why li{display:flex;gap:8px;font-size:13px;color:var(--ink-dim);padding:5px 0;border-top:1px solid var(--line)}
+.wv{flex:none;min-width:44px;text-align:center;font-family:var(--mono);font-size:11px;font-weight:600;border-radius:6px;padding:2px 4px;height:fit-content}
+.wv.neg{background:rgba(240,90,84,.16);color:#FF9A94}
+.wv.zero{background:rgba(51,209,122,.12);color:#7FF0AC}
+.wv.pt{background:rgba(240,185,62,.14);color:var(--gold-hi)}
+.rules{margin:8px 0 0 18px}
+.rules li{margin-bottom:8px;color:var(--ink-dim);font-size:14px}
+.rules b{color:var(--ink)}
+.clear{border:1px solid rgba(51,209,122,.35);background:rgba(51,209,122,.07);border-radius:12px;padding:12px 14px;font-size:13.5px;color:var(--ink-dim)}
+.recs{display:grid;gap:8px}
+.rec{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg-800)}
+.rec-h{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.rec-t{margin-top:6px;font-size:14px;color:var(--ink-dim)}
+.tone{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:6px}
+.tone.bad{background:rgba(240,90,84,.16);color:#FF9A94}
+.tone.warn{background:rgba(240,185,62,.14);color:var(--gold-hi)}
+.tone.ok{background:rgba(51,209,122,.12);color:#7FF0AC}
+.tone.neutral{background:rgba(252,249,242,.08);color:var(--ink-dim)}
+.cmp{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);gap:10px;overflow-x:auto;margin-top:14px;padding-bottom:6px;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
+.cmpcol{scroll-snap-align:start;border:1px solid var(--line);border-top:3px solid var(--pc);border-radius:14px;padding:14px;background:linear-gradient(180deg,var(--bg-el),var(--bg-800))}
+.cmp-h{display:flex;gap:10px;align-items:center;cursor:pointer}
+.cmp-ring{display:flex;justify-content:center;margin:12px 0 8px}
+.cmp-rows{margin-top:8px}
+.crow{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-faint);padding:6px 0;border-top:1px solid var(--line)}
+.crow b{color:var(--ink);text-align:right}
+.scorechip{font-family:var(--mono);font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line-hi)}
+.methodcard{border-color:rgba(240,185,62,.45);background:linear-gradient(135deg,rgba(240,185,62,.12),var(--bg-800) 60%)}
+@media(max-width:500px){.hero2 h1{font-size:25px}.scorebox{flex-direction:column;align-items:stretch}.sb-ring{display:flex;justify-content:center}.tl-y{width:70px}}
+@media(min-width:700px){.swipe{display:none}.cmp{grid-auto-flow:row;grid-template-columns:repeat(min(var(--n),3),1fr);overflow:visible}}
+
+.brief{margin-top:14px;border:1px solid rgba(240,185,62,.45);border-radius:16px;padding:14px 16px;background:linear-gradient(135deg,rgba(240,185,62,.10),var(--bg-800) 55%)}
+.brief-h{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.brief-i{display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:14px;color:var(--ink-dim)}
+.brief-i b{color:var(--ink);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.brief-ic{flex:none;width:22px;text-align:center}
+.tallies{display:flex;flex-wrap:wrap;gap:6px}
+.claim .cl-said,.claim .cl-rec{margin-top:8px;font-size:14px;color:var(--ink-dim)}
+.claim .cl-said{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.claim .cl-said .muted{font-family:var(--sans)}
+.cl-k{display:block;font:800 10px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.sd{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;font-size:13.5px;color:var(--ink-dim)}
+@media(max-width:500px){.sd{grid-template-columns:1fr}}
+
+/* ===== American flag theme — official proportions and colors (4 U.S.C. §1; EO 10834) ===== */
+:root{--og-red:#B22234;--og-white:#FFFFFF;--og-blue:#3C3B6E;--flag:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1900 1000%22%3E%3Crect width=%221900%22 height=%221000%22 fill=%22%23FFFFFF%22/%3E%3Crect y=%220.00%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22153.85%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22307.69%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22461.54%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22615.38%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22769.23%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect y=%22923.08%22 width=%221900%22 height=%2276.92%22 fill=%22%23B22234%22/%3E%3Crect width=%22760%22 height=%22538.46%22 fill=%22%233C3B6E%22/%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M63.0,23.2 L69.9,44.5 L92.3,44.5 L74.2,57.6 L81.1,78.9 L63.0,65.8 L44.9,78.9 L51.8,57.6 L33.7,44.5 L56.1,44.5Z M189.0,23.2 L195.9,44.5 L218.3,44.5 L200.2,57.6 L207.1,78.9 L189.0,65.8 L170.9,78.9 L177.8,57.6 L159.7,44.5 L182.1,44.5Z M315.0,23.2 L321.9,44.5 L344.3,44.5 L326.2,57.6 L333.1,78.9 L315.0,65.8 L296.9,78.9 L303.8,57.6 L285.7,44.5 L308.1,44.5Z M441.0,23.2 L447.9,44.5 L470.3,44.5 L452.2,57.6 L459.1,78.9 L441.0,65.8 L422.9,78.9 L429.8,57.6 L411.7,44.5 L434.1,44.5Z M567.0,23.2 L573.9,44.5 L596.3,44.5 L578.2,57.6 L585.1,78.9 L567.0,65.8 L548.9,78.9 L555.8,57.6 L537.7,44.5 L560.1,44.5Z M693.0,23.2 L699.9,44.5 L722.3,44.5 L704.2,57.6 L711.1,78.9 L693.0,65.8 L674.9,78.9 L681.8,57.6 L663.7,44.5 L686.1,44.5Z M126.0,77.2 L132.9,98.5 L155.3,98.5 L137.2,111.6 L144.1,132.9 L126.0,119.8 L107.9,132.9 L114.8,111.6 L96.7,98.5 L119.1,98.5Z M252.0,77.2 L258.9,98.5 L281.3,98.5 L263.2,111.6 L270.1,132.9 L252.0,119.8 L233.9,132.9 L240.8,111.6 L222.7,98.5 L245.1,98.5Z M378.0,77.2 L384.9,98.5 L407.3,98.5 L389.2,111.6 L396.1,132.9 L378.0,119.8 L359.9,132.9 L366.8,111.6 L348.7,98.5 L371.1,98.5Z M504.0,77.2 L510.9,98.5 L533.3,98.5 L515.2,111.6 L522.1,132.9 L504.0,119.8 L485.9,132.9 L492.8,111.6 L474.7,98.5 L497.1,98.5Z M630.0,77.2 L636.9,98.5 L659.3,98.5 L641.2,111.6 L648.1,132.9 L630.0,119.8 L611.9,132.9 L618.8,111.6 L600.7,98.5 L623.1,98.5Z M63.0,131.2 L69.9,152.5 L92.3,152.5 L74.2,165.6 L81.1,186.9 L63.0,173.8 L44.9,186.9 L51.8,165.6 L33.7,152.5 L56.1,152.5Z M189.0,131.2 L195.9,152.5 L218.3,152.5 L200.2,165.6 L207.1,186.9 L189.0,173.8 L170.9,186.9 L177.8,165.6 L159.7,152.5 L182.1,152.5Z M315.0,131.2 L321.9,152.5 L344.3,152.5 L326.2,165.6 L333.1,186.9 L315.0,173.8 L296.9,186.9 L303.8,165.6 L285.7,152.5 L308.1,152.5Z M441.0,131.2 L447.9,152.5 L470.3,152.5 L452.2,165.6 L459.1,186.9 L441.0,173.8 L422.9,186.9 L429.8,165.6 L411.7,152.5 L434.1,152.5Z M567.0,131.2 L573.9,152.5 L596.3,152.5 L578.2,165.6 L585.1,186.9 L567.0,173.8 L548.9,186.9 L555.8,165.6 L537.7,152.5 L560.1,152.5Z M693.0,131.2 L699.9,152.5 L722.3,152.5 L704.2,165.6 L711.1,186.9 L693.0,173.8 L674.9,186.9 L681.8,165.6 L663.7,152.5 L686.1,152.5Z M126.0,185.2 L132.9,206.5 L155.3,206.5 L137.2,219.6 L144.1,240.9 L126.0,227.8 L107.9,240.9 L114.8,219.6 L96.7,206.5 L119.1,206.5Z M252.0,185.2 L258.9,206.5 L281.3,206.5 L263.2,219.6 L270.1,240.9 L252.0,227.8 L233.9,240.9 L240.8,219.6 L222.7,206.5 L245.1,206.5Z M378.0,185.2 L384.9,206.5 L407.3,206.5 L389.2,219.6 L396.1,240.9 L378.0,227.8 L359.9,240.9 L366.8,219.6 L348.7,206.5 L371.1,206.5Z M504.0,185.2 L510.9,206.5 L533.3,206.5 L515.2,219.6 L522.1,240.9 L504.0,227.8 L485.9,240.9 L492.8,219.6 L474.7,206.5 L497.1,206.5Z M630.0,185.2 L636.9,206.5 L659.3,206.5 L641.2,219.6 L648.1,240.9 L630.0,227.8 L611.9,240.9 L618.8,219.6 L600.7,206.5 L623.1,206.5Z M63.0,239.2 L69.9,260.5 L92.3,260.5 L74.2,273.6 L81.1,294.9 L63.0,281.8 L44.9,294.9 L51.8,273.6 L33.7,260.5 L56.1,260.5Z M189.0,239.2 L195.9,260.5 L218.3,260.5 L200.2,273.6 L207.1,294.9 L189.0,281.8 L170.9,294.9 L177.8,273.6 L159.7,260.5 L182.1,260.5Z M315.0,239.2 L321.9,260.5 L344.3,260.5 L326.2,273.6 L333.1,294.9 L315.0,281.8 L296.9,294.9 L303.8,273.6 L285.7,260.5 L308.1,260.5Z M441.0,239.2 L447.9,260.5 L470.3,260.5 L452.2,273.6 L459.1,294.9 L441.0,281.8 L422.9,294.9 L429.8,273.6 L411.7,260.5 L434.1,260.5Z M567.0,239.2 L573.9,260.5 L596.3,260.5 L578.2,273.6 L585.1,294.9 L567.0,281.8 L548.9,294.9 L555.8,273.6 L537.7,260.5 L560.1,260.5Z M693.0,239.2 L699.9,260.5 L722.3,260.5 L704.2,273.6 L711.1,294.9 L693.0,281.8 L674.9,294.9 L681.8,273.6 L663.7,260.5 L686.1,260.5Z M126.0,293.2 L132.9,314.5 L155.3,314.5 L137.2,327.6 L144.1,348.9 L126.0,335.8 L107.9,348.9 L114.8,327.6 L96.7,314.5 L119.1,314.5Z M252.0,293.2 L258.9,314.5 L281.3,314.5 L263.2,327.6 L270.1,348.9 L252.0,335.8 L233.9,348.9 L240.8,327.6 L222.7,314.5 L245.1,314.5Z M378.0,293.2 L384.9,314.5 L407.3,314.5 L389.2,327.6 L396.1,348.9 L378.0,335.8 L359.9,348.9 L366.8,327.6 L348.7,314.5 L371.1,314.5Z M504.0,293.2 L510.9,314.5 L533.3,314.5 L515.2,327.6 L522.1,348.9 L504.0,335.8 L485.9,348.9 L492.8,327.6 L474.7,314.5 L497.1,314.5Z M630.0,293.2 L636.9,314.5 L659.3,314.5 L641.2,327.6 L648.1,348.9 L630.0,335.8 L611.9,348.9 L618.8,327.6 L600.7,314.5 L623.1,314.5Z M63.0,347.2 L69.9,368.5 L92.3,368.5 L74.2,381.6 L81.1,402.9 L63.0,389.8 L44.9,402.9 L51.8,381.6 L33.7,368.5 L56.1,368.5Z M189.0,347.2 L195.9,368.5 L218.3,368.5 L200.2,381.6 L207.1,402.9 L189.0,389.8 L170.9,402.9 L177.8,381.6 L159.7,368.5 L182.1,368.5Z M315.0,347.2 L321.9,368.5 L344.3,368.5 L326.2,381.6 L333.1,402.9 L315.0,389.8 L296.9,402.9 L303.8,381.6 L285.7,368.5 L308.1,368.5Z M441.0,347.2 L447.9,368.5 L470.3,368.5 L452.2,381.6 L459.1,402.9 L441.0,389.8 L422.9,402.9 L429.8,381.6 L411.7,368.5 L434.1,368.5Z M567.0,347.2 L573.9,368.5 L596.3,368.5 L578.2,381.6 L585.1,402.9 L567.0,389.8 L548.9,402.9 L555.8,381.6 L537.7,368.5 L560.1,368.5Z M693.0,347.2 L699.9,368.5 L722.3,368.5 L704.2,381.6 L711.1,402.9 L693.0,389.8 L674.9,402.9 L681.8,381.6 L663.7,368.5 L686.1,368.5Z M126.0,401.2 L132.9,422.5 L155.3,422.5 L137.2,435.6 L144.1,456.9 L126.0,443.8 L107.9,456.9 L114.8,435.6 L96.7,422.5 L119.1,422.5Z M252.0,401.2 L258.9,422.5 L281.3,422.5 L263.2,435.6 L270.1,456.9 L252.0,443.8 L233.9,456.9 L240.8,435.6 L222.7,422.5 L245.1,422.5Z M378.0,401.2 L384.9,422.5 L407.3,422.5 L389.2,435.6 L396.1,456.9 L378.0,443.8 L359.9,456.9 L366.8,435.6 L348.7,422.5 L371.1,422.5Z M504.0,401.2 L510.9,422.5 L533.3,422.5 L515.2,435.6 L522.1,456.9 L504.0,443.8 L485.9,456.9 L492.8,435.6 L474.7,422.5 L497.1,422.5Z M630.0,401.2 L636.9,422.5 L659.3,422.5 L641.2,435.6 L648.1,456.9 L630.0,443.8 L611.9,456.9 L618.8,435.6 L600.7,422.5 L623.1,422.5Z M63.0,455.2 L69.9,476.5 L92.3,476.5 L74.2,489.6 L81.1,510.9 L63.0,497.8 L44.9,510.9 L51.8,489.6 L33.7,476.5 L56.1,476.5Z M189.0,455.2 L195.9,476.5 L218.3,476.5 L200.2,489.6 L207.1,510.9 L189.0,497.8 L170.9,510.9 L177.8,489.6 L159.7,476.5 L182.1,476.5Z M315.0,455.2 L321.9,476.5 L344.3,476.5 L326.2,489.6 L333.1,510.9 L315.0,497.8 L296.9,510.9 L303.8,489.6 L285.7,476.5 L308.1,476.5Z M441.0,455.2 L447.9,476.5 L470.3,476.5 L452.2,489.6 L459.1,510.9 L441.0,497.8 L422.9,510.9 L429.8,489.6 L411.7,476.5 L434.1,476.5Z M567.0,455.2 L573.9,476.5 L596.3,476.5 L578.2,489.6 L585.1,510.9 L567.0,497.8 L548.9,510.9 L555.8,489.6 L537.7,476.5 L560.1,476.5Z M693.0,455.2 L699.9,476.5 L722.3,476.5 L704.2,489.6 L711.1,510.9 L693.0,497.8 L674.9,510.9 L681.8,489.6 L663.7,476.5 L686.1,476.5Z%22/%3E%3C/svg%3E")}
+.top:after{content:'';position:absolute;left:0;right:0;bottom:-5px;height:5px;background:repeating-linear-gradient(90deg,var(--og-red) 0 24px,var(--og-white) 24px 48px)}
+.flaghero{position:relative;border-radius:18px;overflow:hidden;padding:calc(52.632% + 18px) 18px 20px;border:1px solid var(--line-hi);
+  background:var(--flag) top left/100% auto no-repeat,linear-gradient(180deg,#14223f,#0d1728)}
+.flaghero>*{position:relative}
+.flaghero .kicker{color:var(--gold)}
+.flagcard{position:relative;overflow:hidden;padding-top:58px}
+.flagcard:before{content:'';position:absolute;left:0;right:0;top:0;height:39px;background:repeating-linear-gradient(180deg,var(--og-red) 0 3px,var(--og-white) 3px 6px);background-size:100% 6px}
+.flagcard>*{position:relative;z-index:1}
+.letter:before{content:'\2605';color:var(--og-red);margin-right:8px;font-size:16px;vertical-align:3px}
+.dt{border-top:4px solid var(--og-red)}
+.dt:nth-child(3n+2){border-top-color:var(--og-white)}
+.dt:nth-child(3n){border-top-color:var(--og-blue)}
+/* ===== emoji animation ===== */
+#flagfx{position:fixed;inset:0;z-index:60;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,rgba(31,46,92,.45),rgba(10,18,32,.15) 70%);animation:fxFade .4s ease}
+#flagfx.out{opacity:0;transition:opacity .55s ease}
+.fx-e{position:absolute;bottom:-70px;line-height:1;animation-name:fxRise;animation-timing-function:cubic-bezier(.2,.6,.35,1);animation-fill-mode:forwards;opacity:0;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+@keyframes fxRise{0%{transform:translate(0,0) rotate(-8deg) scale(.8);opacity:0}12%{opacity:1}85%{opacity:1}100%{transform:translate(var(--dx),-112vh) rotate(14deg) scale(1.05);opacity:0}}
+@keyframes fxFade{from{opacity:0}to{opacity:1}}
+@keyframes fxIn{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
+.fx-card{position:absolute;left:16px;right:16px;bottom:22px;max-width:520px;margin:0 auto;background:rgba(13,23,40,.95);border:1px solid rgba(240,185,62,.6);border-radius:16px;padding:14px 16px;animation:fxIn .5s .3s both;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.fx-h{font-family:var(--serif);font-size:20px;font-weight:700}
+.fx-l{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px;color:var(--ink-dim)}
+.fx-l b{color:var(--gold-hi)}
+.fx-s{font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+.vchip{font:800 10.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:6px;white-space:nowrap}
+.v-yes{background:#F4F1EA;color:#0a1220}.v-no{background:#3C3B6E;color:#fff;border:1px solid rgba(255,255,255,.35)}.v-nv,.v-present{background:rgba(252,249,242,.08);color:var(--ink-dim)}
+.vmeta{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:8px;font-size:12px;color:var(--ink-faint)}
+.stance{margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12.5px;color:var(--ink-dim)}
+.stance.al{background:rgba(51,209,122,.08);border-left:3px solid #33D17A}.stance.nal{background:rgba(240,90,84,.08);border-left:3px solid #F05A54}
+.stance b{color:var(--ink)}
+.case{border:1px solid rgba(240,185,62,.5);border-radius:16px;padding:16px;background:linear-gradient(135deg,rgba(178,34,52,.18),var(--bg-800) 60%)}
+.wv.pos{background:rgba(51,209,122,.14);color:#7FF0AC}
+.pendbar{position:sticky;top:52px;z-index:19;background:linear-gradient(90deg,rgba(60,59,110,.97),rgba(30,32,72,.97));border-bottom:2px solid #B22234;padding:0 16px;font-size:13px;color:#fff}
+.pendbar details{max-width:760px;margin:0 auto}
+.pendbar summary{list-style:none;cursor:pointer;padding:9px 0;line-height:1.4}
+.pendbar summary::-webkit-details-marker{display:none}
+.pendbar .pb-sub{color:rgba(255,255,255,.82)}
+.pendbar .pb-why{color:#FFD873;font-weight:800;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+.pendbar details[open] .pb-why{display:none}
+.pendbar .pb-body{padding:0 0 12px;color:rgba(255,255,255,.9);line-height:1.55}
+.pendbar .pb-body a{color:#FFD873;font-weight:700}
+.pendbar .pdot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#F0B93E;margin-right:7px;vertical-align:1px;animation:pbPulse 2s ease-out infinite}
+@keyframes pbPulse{0%{box-shadow:0 0 0 0 rgba(240,185,62,.8)}70%{box-shadow:0 0 0 8px rgba(240,185,62,0)}100%{box-shadow:0 0 0 0 rgba(240,185,62,0)}}
+@media (prefers-reduced-motion:reduce){.pendbar .pdot{animation:none}}
+.pendnote{margin-top:10px;font-size:12.5px;line-height:1.5;color:var(--ink-dim);border:1px dashed rgba(240,185,62,.45);border-radius:10px;padding:9px 11px}
+.pendnote b{color:var(--gold-hi)}
+.scorechip.pend{color:var(--gold-hi)!important;border-color:rgba(240,185,62,.45)}
+.provtag{margin-top:6px;text-align:center;font:800 10px/1 var(--mono);letter-spacing:.14em;color:var(--gold-hi);border:1px solid rgba(240,185,62,.5);border-radius:6px;padding:4px 6px}
+.chk .rec-h b{font-weight:600;font-size:13.5px}
+@media(max-width:500px){h1{font-size:28px}.big .n{font-size:38px}.kpi .v{font-size:22px}.av.lg{width:88px;height:106px}}
+</style>
+</head>
+<body>
+<div class="top">
+  <button class="back" id="back">&#9666; BACK</button>
+  <div class="crumb" id="crumb"></div>
+  <button class="home-btn" id="homeBtn" aria-label="Home">HOME</button>
+</div>
+<div class="pendbar" id="pendbar"><details><summary><span class="pdot"></span><b>Overall scores: pending.</b> <span class="pb-sub">Findings are live; final scores release state by state.</span> <span class="pb-why">Why?</span></summary><div class="pb-body">Every overall score depends on public records we are still pulling: federal court dockets, the Justice Department’s foreign-agent (FARA) database and some state campaign-finance filings. We don’t estimate, assume or fill gaps. A missing record is never counted as clean, so a candidate’s overall score publishes only once every record behind it has actually been searched. Until then you can see everything found so far: the money, votes, claims checked against the record, legal history and each part score. Final scores will be released as each state’s searches finish. <a href="#" data-go="method" data-arg="pending">How the scoring works →</a></div></details></div>
+<main id="view"></main>
+<script type="application/json" id="eldata">/*__DATA__*/</script>
+<script>
+(function(){
+'use strict';
+var D = JSON.parse(document.getElementById('eldata').textContent);
+var S = D.states, R = D.races, C = D.cands, CI = D.cites || {};
+var VIEW = document.getElementById('view');
+var stack = [];
+
+/* ---------- helpers ---------- */
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function money(n){
+  if(n == null || isNaN(n)) return '—';
+  var a = Math.abs(n), s = n < 0 ? '−' : '';
+  if(a >= 1e9) return s + '$' + (a/1e9).toFixed(2) + 'B';
+  if(a >= 1e6) return s + '$' + (a/1e6).toFixed(a >= 1e8 ? 0 : 1) + 'M';
+  if(a >= 1e3) return s + '$' + Math.round(a/1e3) + 'K';
+  return s + '$' + Math.round(a);
+}
+function pct(x){ return (x == null || isNaN(x)) ? '—' : (Math.round(x*1000)/10) + '%'; }
+function stateBy(code){ for(var i=0;i<S.length;i++) if(S[i].code === code) return S[i]; return null; }
+var PARTY = {D:'Democrat',R:'Republican',I:'Independent',L:'Libertarian',G:'Green',C:'Constitution',O:'Other'};
+var PCOL = {D:'#5B84FF',R:'#F05A54',I:'#B79BFF',L:'#F0B93E',G:'#33D17A',C:'#FF8A5C'};
+function partyChip(p){ p = PARTY[p] ? p : 'O'; return '<span class="party p'+p+'" title="'+PARTY[p]+'">'+p+'</span>'; }
+function badge(st){
+  if(st === 'complete') return '<span class="badge b-complete"><i class="sdot live"></i>Complete</span>';
+  return '<span class="badge b-partial"><i class="sdot"></i>In progress</span>';
+}
+function initials(n){ return n.split(/\s+/).filter(function(w){return /^[A-Z]/.test(w);}).slice(0,2).map(function(w){return w[0];}).join(''); }
+function avatar(c, lg){
+  var cls = 'av' + (lg ? ' lg' : '');
+  if(c.photo && c.photo.src){
+    return '<div class="'+cls+'"><img src="'+esc(c.photo.src)+'" alt="'+esc(c.name)+'" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.textContent=\''+esc(initials(c.name))+'\'"></div>';
+  }
+  return '<div class="'+cls+'">'+esc(initials(c.name))+'</div>';
+}
+/* citations: keys -> numbered superscript links; page-level source list collected as we render */
+var pageCites = [];
+function cite(keys){
+  if(!keys || !keys.length) return '';
+  return keys.map(function(k){
+    var c = CI[k]; if(!c) return '';
+    var i = pageCites.indexOf(k); if(i < 0){ pageCites.push(k); i = pageCites.length - 1; }
+    return '<sup class="c"><a href="'+esc(c.u)+'" target="_blank" rel="noopener" title="'+esc(c.t)+'">['+(i+1)+']</a></sup>';
+  }).join('');
+}
+function txt(o){ if(!o) return ''; if(typeof o === 'string') return esc(o); return esc(o.t) + cite(o.c); }
+function sourceList(){
+  if(!pageCites.length) return '';
+  return '<h3>Sources</h3><ol class="srclist">' + pageCites.map(function(k){
+    var c = CI[k]; return '<li><a href="'+esc(c.u)+'" target="_blank" rel="noopener">'+esc(c.t)+'</a></li>';
+  }).join('') + '</ol>';
+}
+function raceLabel(r){
+  var st = stateBy(r.state);
+  if(r.chamber === 'senate') return st.name + ' · U.S. Senate' + (r.type === 'special' ? ' (special)' : '');
+  if(r.chamber === 'governor') return st.name + ' · Governor';
+  return st.name + ' · ' + (r.district === 0 ? 'At-large district' : 'District ' + r.district);
+}
+function raceShort(r){ return r.chamber === 'senate' ? r.state + ' Senate' : r.chamber === 'governor' ? r.state + ' Governor' : r.id; }
+function pendingBox(what, st){
+  return '<div class="pending"><b>'+esc(what)+'</b> — not yet researched. '+esc(st ? st.name : 'This state')+' is queued; races are filled state by state, alphabetically, each one checked against FEC filings and the public record.</div>';
+}
+function daysTo(iso){ var d = new Date(iso + 'T12:00:00'), n = new Date(); return Math.ceil((d - n) / 864e5); }
+
+/* ---------- chart helpers (pure SVG, no libraries) ---------- */
+var PAL = ['#F0B93E','#5B84FF','#2FD0C4','#F05A54','#9B7BE0','#33D17A','#FF8A5C','#c8d6ec'];
+function donut(items){
+  var tot = items.reduce(function(a,b){return a + (b[1]||0);}, 0); if(!tot) return '';
+  var R0 = 70, r0 = 44, cx = 90, cy = 90, a0 = -Math.PI/2, paths = '';
+  items.forEach(function(it, i){
+    var v = it[1] || 0; if(!v) return;
+    var a1 = a0 + v/tot * Math.PI*2, large = (a1 - a0) > Math.PI ? 1 : 0;
+    if(v === tot) a1 = a0 + Math.PI*2 - 0.0001;
+    var p = [[cx+R0*Math.cos(a0),cy+R0*Math.sin(a0)],[cx+R0*Math.cos(a1),cy+R0*Math.sin(a1)],[cx+r0*Math.cos(a1),cy+r0*Math.sin(a1)],[cx+r0*Math.cos(a0),cy+r0*Math.sin(a0)]];
+    paths += '<path d="M'+p[0]+' A'+R0+' '+R0+' 0 '+large+' 1 '+p[1]+' L'+p[2]+' A'+r0+' '+r0+' 0 '+large+' 0 '+p[3]+'Z" fill="'+(it[2]||PAL[i%PAL.length])+'"/>';
+    a0 = a1;
+  });
+  var leg = items.filter(function(it){return it[1];}).map(function(it, i){
+    return '<span><i style="background:'+(it[2]||PAL[items.indexOf(it)%PAL.length])+'"></i>'+esc(it[0])+' <b>'+money(it[1])+'</b> ('+pct(it[1]/tot)+')</span>';
+  }).join('');
+  return '<svg class="chart" viewBox="0 0 180 180" style="max-width:220px;margin:0 auto">'+paths+
+    '<text x="90" y="86" text-anchor="middle" fill="#FCF9F2" font-family="EB Garamond,serif" font-size="20" font-weight="700">'+money(tot)+'</text>'+
+    '<text x="90" y="104" text-anchor="middle" fill="rgba(252,249,242,.68)" font-family="Inter,sans-serif" font-size="9" letter-spacing="1">TOTAL</text></svg>'+
+    '<div class="legend">'+leg+'</div>';
+}
+function hbars(items, color){
+  if(!items || !items.length) return '<div class="empty">No entries in the filings for this period.</div>';
+  var max = Math.max.apply(null, items.map(function(x){return x[1]||0;})) || 1, h = 30, W = 340, rows = '';
+  items.forEach(function(it, i){
+    var w = Math.max(2, (it[1]||0)/max * 200), y = i*h;
+    rows += '<text x="0" y="'+(y+11)+'" fill="#FCF9F2" font-family="Inter,sans-serif" font-size="11">'+esc(String(it[0]).slice(0,44))+'</text>'+
+      '<rect x="0" y="'+(y+15)+'" width="'+w.toFixed(1)+'" height="9" rx="4" fill="'+(it[2]||color||'#F0B93E')+'"/>'+
+      '<text x="'+(w+6).toFixed(1)+'" y="'+(y+23)+'" fill="rgba(252,249,242,.88)" font-family="JetBrains Mono,monospace" font-size="10">'+money(it[1])+'</text>';
+  });
+  return '<svg class="chart" viewBox="0 0 '+W+' '+(items.length*h)+'">'+rows+'</svg>';
+}
+function line(points){
+  if(!points || points.length < 2) return '<div class="empty">Not enough filing periods to chart yet.</div>';
+  var W = 340, H = 150, pl = 8, pr = 8, pt = 14, pb = 26, max = Math.max.apply(null, points.map(function(p){return p[1];})) || 1;
+  var xs = function(i){ return pl + i*(W-pl-pr)/(points.length-1); }, ys = function(v){ return pt + (1 - v/max)*(H-pt-pb); };
+  var d = points.map(function(p,i){ return (i?'L':'M') + xs(i).toFixed(1) + ' ' + ys(p[1]).toFixed(1); }).join(' ');
+  var dots = points.map(function(p,i){ return '<circle cx="'+xs(i).toFixed(1)+'" cy="'+ys(p[1]).toFixed(1)+'" r="3" fill="#FFD873"/>'+
+    '<text x="'+xs(i).toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+(i===0?'start':(i===points.length-1?'end':'middle'))+'" fill="rgba(252,249,242,.68)" font-family="JetBrains Mono,monospace" font-size="8">'+esc(p[0])+'</text>'; }).join('');
+  return '<svg class="chart" viewBox="0 0 '+W+' '+H+'"><path d="'+d+'" fill="none" stroke="#F0B93E" stroke-width="2"/>'+dots+
+    '<text x="'+pl+'" y="10" fill="rgba(252,249,242,.68)" font-family="JetBrains Mono,monospace" font-size="8">peak '+money(max)+'</text></svg>';
+}
+function stackBar(items){
+  var tot = items.reduce(function(a,b){return a+(b[1]||0);},0); if(!tot) return '';
+  return '<div class="bar">'+items.map(function(it,i){ return it[1] ? '<span style="width:'+(it[1]/tot*100).toFixed(2)+'%;background:'+(it[2]||PAL[i%PAL.length])+'"></span>' : ''; }).join('')+'</div>'+
+    '<div class="legend">'+items.filter(function(it){return it[1];}).map(function(it){ return '<span><i style="background:'+(it[2]||PAL[items.indexOf(it)%PAL.length])+'"></i>'+esc(it[0])+' '+pct(it[1]/tot)+'</span>'; }).join('')+'</div>';
+}
+
+/* money source buckets — fixed order and colours so every page reads the same way */
+var SRC = [['small','Individuals ≤$200','#2FD0C4'],['large','Individuals >$200','#5B84FF'],['pac_biz','Business/trade PACs','#FF8A5C'],
+           ['pac_ideo','Ideological/issue PACs','#9B7BE0'],['earmark','Bundled via interest groups','#E05FB0'],['pac','PACs (type not yet split)','#FFB37A'],['party','Party committees','#c8d6ec'],['self','Candidate’s own money','#F0B93E'],['other','Other / transfers','#6b7a93']];
+function srcItems(f){ return SRC.map(function(s){ return [s[1], (f.src||{})[s[0]]||0, s[2]]; }); }
+function israelTotals(c){
+  var I = c.israel || {}, direct = 0, outside = 0;
+  var career = 0;   // career totals (not this cycle) are shown, but kept out of this cycle's math
+  if(I.aipac_pac && I.aipac_pac.amt){ if(I.aipac_pac.scope === 'career') career += I.aipac_pac.amt; else direct += I.aipac_pac.amt; }
+  (I.others||[]).forEach(function(o){ if(!o.amt) return; if(o.scope === 'career'){ career += o.amt; return; } if(o.kind !== 'outside') direct += o.amt; else outside += o.amt; });
+  if(I.udp && I.udp.support) outside += I.udp.support;
+  return {direct:direct, outside:outside, against:(I.udp && I.udp.oppose)||0, career:career};
+}
+
+/* ---------- THE RUBRIC (v1.0) ----------
+   Every number here is published on the method page. Scores are computed from the
+   candidate's documented record only; nothing is typed in by hand. Change a weight or
+   a point value here and every page and the method page update together. */
+var RUBRIC = {
+  version: '2.1', published: '2026-10-08',
+  axes: [
+    {id:'prep',      name:'Preparation',                w:0.10, q:'Has this person done the kind of work the job requires?'},
+    {id:'funding',   name:'Funding independence',       w:0.25, q:'Has their career been paid for by voters, or by corporations and lobbies?'},
+    {id:'votes',     name:'Votes for people',           w:0.25, q:'On the key votes, did they side with households or with corporations, lobbies and failed policies?'},
+    {id:'honesty',   name:'Honesty with the public',    w:0.20, q:'Does what they say about themselves and their record match the documents?'},
+    {id:'conflicts', name:'Conflicts & accountability', w:0.15, q:'Is there anything documented that could compromise them?'},
+    {id:'record',    name:'Record & transparency',      w:0.05, q:'Do they show up for votes and file what the law requires?'}
+  ]
+};
+var EDU_PTS = {none:0, hs:0, ged:0, assoc:0.5, bach:1, grad:2};
+var EDU_LBL = {none:'No diploma', hs:'High school', ged:'GED', assoc:'Associate degree', bach:'Bachelor’s degree', grad:'Graduate or professional degree'};
+var PRO_KINDS = {law:'Law', policy:'Policy or government staff', admin:'Public administration', military:'Military service', exec:'Ran an organization of 50+ people', econ:'Economics or finance', health:'Medicine or public health', educ:'Teaching or education leadership'};
+function q4(x){ return Math.round(x * 4) / 4; }
+function clamp(x){ return Math.max(1, Math.min(5, x)); }
+function fmtS(x){ return x == null ? '—' : x.toFixed(2).replace(/0$/, ''); }
+
+function scorePrep(c){
+  var P = c.profile; if(!P || !P.education || !P.career) return null;
+  var why = [], pts = 0;
+  var oy = P.office_years || 0, op = oy >= 6 ? 3 : oy >= 2 ? 2 : oy > 0 ? 1 : 0;
+  pts += op; why.push([op, 3, 'Years in public office: ' + oy + (oy === 1 ? ' year' : ' years')]);
+  var py = 0; (P.career || []).forEach(function(j){ if(PRO_KINDS[j.kind]) py += (j.years || 0); });
+  var pp = py >= 5 ? 2 : py > 0 ? 1 : 0;
+  pts += pp; why.push([pp, 2, 'Years of relevant professional work: ' + py]);
+  var top = 'none'; (P.education || []).forEach(function(e){ if((EDU_PTS[e.level] || 0) >= (EDU_PTS[top] || 0)) top = e.level; });
+  var ep = EDU_PTS[top] || 0;
+  pts += ep; why.push([ep, 2, 'Highest education: ' + (EDU_LBL[top] || top)]);
+  return {s: q4(clamp(1 + 4 * pts / 7)), pts: pts, max: 7, why: why};
+}
+
+function moneyFlags(c){
+  var F = c.money_flags || {}, f = c.fec || {}, sr = f.src || {}, I = israelTotals(c), out = {};
+  if(F.corp) out.corp = F.corp; else if((sr.pac_biz || 0) > 0) out.corp = {t: 'Business or trade PAC money this cycle (' + money(sr.pac_biz) + ')', c: f.c};
+  if(F.lobby) out.lobby = F.lobby; else if(I.direct + I.outside + I.career > 0) out.lobby = {t: 'Pro-Israel PAC or outside money (' + money(I.direct + I.outside + I.career) + (I.career ? ', including career totals' : '') + ')', c: (c.israel && c.israel.others && c.israel.others[0] && c.israel.others[0].c) || []};
+  return out;
+}
+
+var LEGAL = {
+  'conviction-felony':  {lbl:'Felony conviction', d:2,    cap:3,   tone:'bad'},
+  'conviction-misd':    {lbl:'Misdemeanor conviction', d:0.5, cap:1, tone:'bad'},
+  'charge-pending':     {lbl:'Charged — not convicted', d:0.5, cap:1, tone:'warn'},
+  'charge-dismissed':   {lbl:'Charge dismissed', d:0, tone:'ok'},
+  'acquitted':          {lbl:'Acquitted', d:0, tone:'ok'},
+  'civil-liability':    {lbl:'Found liable (civil)', d:0.75, cap:1.5, tone:'bad'},
+  'civil-settled':      {lbl:'Civil case settled', d:0, tone:'neutral'},
+  'ethics-finding':     {lbl:'Ethics finding', d:1, cap:2, tone:'bad'},
+  'ethics-cleared':     {lbl:'Ethics complaint cleared', d:0, tone:'ok'},
+  'foreign-govt':       {lbl:'Payments from a foreign government / FARA', d:1, cap:1, tone:'bad'},
+  'foreign-business':   {lbl:'Foreign business interests or income', d:0.5, cap:0.5, tone:'warn'},
+  'unpaid-obligation':  {lbl:'Unpaid tax lien or judgment', d:0.25, cap:0.5, tone:'warn'},
+  'disclosure-violation':{lbl:'Late or missing financial disclosure / STOCK Act', d:0.25, cap:0.75, tone:'warn'},
+  'bankruptcy':         {lbl:'Bankruptcy', d:0, tone:'neutral'},
+  'business-closure':   {lbl:'Business closed or failed', d:0, tone:'neutral'}
+};
+
+
+
+
+
+/* ===== v0.3 · HONESTY + FULL-RECORD SECTIONS ===== */
+var VERDICT = {
+  'true':        {lbl:'True',               tone:'ok',      d:0},
+  'partly':      {lbl:'Partly true',        tone:'neutral', d:0},
+  'misleading':  {lbl:'Misleading',         tone:'warn',    d:0.25, cap:1},
+  'false':       {lbl:'False',              tone:'bad',     d:0.75, cap:3},
+  'unverifiable':{lbl:'Can’t be verified', tone:'neutral', d:0},
+  'opinion':     {lbl:'Opinion or forecast — not rated', tone:'neutral', d:0}
+};
+var REPEAT_D = 0.5, REPEAT_CAP = 1.5;
+
+
+/* the 60-second brief: generated from the record, never typed by hand */
+function brief(c){
+  var sc = scoreCand(c), out = [], f = sc.ax.funding, h = sc.ax.honesty, I = israelTotals(c);
+  if(f){
+    var parts = ['Small donors ' + pct(f.small), 'PACs and interest-group bundling ' + pct(f.interest)];
+    if(f.outside) parts.push('outside groups spent ' + money(f.outside) + ' to help');
+    out.push(['\u{1F4B5}', 'Who pays', parts.join(' · ') + '.']);
+  }
+  if(c.israel && (I.direct || I.outside)) out.push(['\u{1F3F7}\uFE0F', 'Pro-Israel money', money(I.direct) + ' direct, ' + money(I.outside) + ' in outside spending to help this cycle.']);
+  else if(c.israel && I.career) out.push(['\u{1F3F7}\uFE0F', 'Pro-Israel money', 'None documented this cycle; ' + money(I.career) + ' career total from pro-Israel PACs and their donors.']);
+  else if(c.israel) out.push(['\u{1F3F7}\uFE0F', 'Pro-Israel money', 'None documented in the records searched.']);
+  if(h){
+    var worst = (c.claims || []).filter(function(k){ return k.verdict === 'false'; }).sort(function(a, b){ return (b.repeated ? 1 : 0) - (a.repeated ? 1 : 0); })[0];
+    out.push(['⚖️', 'Claims vs. record', h.nFalse + ' false and ' + h.nMis + ' misleading out of ' + h.rated + ' checkable claims' + (h.nRep ? '; ' + h.nRep + ' repeated after being corrected' : '') + '.' + (worst ? ' Biggest gap: “' + (worst.short || worst.claim) + '”.' : '')]);
+  }
+  var findings = (c.legal || []).filter(function(x){ return /conviction|liability|ethics-finding/.test(x.kind); });
+  if(c.checks && c.checks.legal) out.push(['\u{1F3DB}️', 'Legal record', findings.length ? findings.map(function(x){ return LEGAL[x.kind].lbl + ' (' + (x.d || '') + ')'; }).join(' · ') : 'No convictions, liability findings or ethics findings in the records searched.']);
+  if(c.finances && c.finances.trades){
+    var o = (c.finances.trades.overlap || []).length;
+    out.push(['\u{1F4C8}', 'Stock trades', c.finances.trades.count + ' reported trades' + (o ? ', ' + o + ' in industries their committees oversee' : '') + '.']);
+  }
+  var pr = (c.promises_prev || []);
+  if(pr.length){ var del = pr.filter(function(p){ return /^DELIVERED/.test(p.status); }).length; out.push(['\u{1F4DC}', 'Last time’s promises', del + ' of ' + pr.length + ' delivered in full or modified form.']); }
+  var sd = (c.saydo || []).filter(function(x){ return x.match === 'contradicts'; });
+  if(sd.length) out.push(['\u{1F5E3}️', 'Said vs. did', sd.length + ' place' + (sd.length > 1 ? 's' : '') + ' where their votes contradict what they said: ' + sd.map(function(x){ return x.topic; }).join(', ') + '.']);
+  var vs = (typeof voteStats === 'function') ? voteStats(c) : null;
+  if(vs){ var pl = Object.keys(vs.pres).map(function(P){ return 'President ' + P + '\u2019s position on ' + vs.pres[P][0] + ' of ' + vs.pres[P][1]; }); if(pl.length) out.push(['\u{1F5F3}\uFE0F', 'Key votes', 'Voted with ' + pl.join('; ') + ' key votes' + (vs.party[1] ? '; with their party on ' + vs.party[0] + ' of ' + vs.party[1] : '') + '.']); }
+  if(c.democracy && c.democracy.length){ var obj = c.democracy.filter(function(x){ return x.kind === 'objected'; }); if(obj.length) out.push(['\u{1F5F3}️', 'Election results', 'Objected to certifying results: ' + obj.map(function(x){ return x.d; }).join(', ') + '.']); }
+  return out;
+}
+
+function claimsBlock(c, s){
+  if(!c.checks || !c.checks.claims) return pendingBox('Their claims about themselves and their campaign, checked against records', s);
+  var cl = c.claims || [];
+  var tally = Object.keys(VERDICT).map(function(k){ var n = cl.filter(function(x){ return x.verdict === k; }).length; return n ? '<span class="tone ' + VERDICT[k].tone + '">' + VERDICT[k].lbl + ' · ' + n + '</span>' : ''; }).join(' ');
+  var groups = [['bio', 'What they say about themselves'], ['campaign', 'What they say on the campaign trail']];
+  return '<div class="tallies">' + tally + '</div><p class="muted" style="margin-top:6px">Sample checked: ' + esc(String(c.checks.claims).replace(/^Fixed sample:\s*/i,'').replace(/\.+$/,'')) + '.</p>' +
+    groups.map(function(g){
+      var xs = cl.filter(function(x){ return (x.kind || 'campaign') === g[0]; }); if(!xs.length) return '';
+      return '<h3>' + g[1] + '</h3><div class="recs">' + xs.map(function(x){
+        var V = VERDICT[x.verdict] || {lbl:x.verdict, tone:'neutral'};
+        return '<div class="rec claim"><div class="rec-h"><span class="tone ' + V.tone + '">' + esc(V.lbl) + '</span>' + (x.repeated ? '<span class="tone bad">Said again after correction</span>' : '') + '</div>' +
+          '<div class="cl-said"><span class="cl-k">They said</span>' + (/^(I|I\u2019m|I'm|I\u2019ve|I've|We|My|Our)\b/.test(x.claim) ? '\u201c' + esc(x.claim) + '\u201d' : esc(x.claim)) + '<div class="muted">' + esc((x.said && x.said.d) || '') + (x.said && x.said.where ? ' · ' + esc(x.said.where) : '') + cite(x.said && x.said.c) + '</div></div>' +
+          '<div class="cl-rec"><span class="cl-k">The record</span>' + txt(x.record) + '</div>' +
+          (x.repeated ? '<div class="muted" style="margin-top:6px">Shown false ' + esc(x.repeated.corrected || '') + '; repeated ' + esc(x.repeated.again || '') + cite(x.repeated.c) + '</div>' : '') + '</div>';
+      }).join('') + '</div>';
+    }).join('');
+}
+
+var PSTAT = {'DELIVERED':'ok', 'DELIVERED-MODIFIED':'ok', 'PARTIAL':'warn', 'ATTEMPTED-BLOCKED':'neutral', 'REVERSED':'bad', 'NOT-ATTEMPTED':'bad', 'TOO-SOON-TO-CALL':'neutral'};
+function sayDoBlock(c, s){
+  var h = '', any = false;
+  if((c.saydo || []).length){ any = true;
+    h += '<h3>What they said vs. how they voted</h3><div class="recs">' + c.saydo.map(function(x){
+      var tone = {consistent:'ok', partly:'warn', contradicts:'bad'}[x.match] || 'neutral';
+      return '<div class="rec"><div class="rec-h"><b>' + esc(x.topic) + '</b><span class="tone ' + tone + '">' + esc({consistent:'Matches', partly:'Partly matches', contradicts:'Contradicts'}[x.match] || x.match) + '</span></div>' +
+        '<div class="sd"><div><span class="cl-k">Said · ' + esc(x.said.d) + '</span>' + txt(x.said) + '</div><div><span class="cl-k">Did · ' + esc(x.did.d) + '</span>' + txt(x.did) + '</div></div></div>';
+    }).join('') + '</div>'; }
+  if((c.promises_prev || []).length){ any = true;
+    h += '<h3>Promises from their last campaign</h3><div class="recs">' + c.promises_prev.map(function(p){
+      return '<div class="rec"><div class="rec-h"><span class="tone ' + (PSTAT[p.status] || 'neutral') + '">' + esc(p.status.replace(/-/g, ' ').toLowerCase()) + '</span><span class="muted">' + esc(p.made || '') + '</span></div><div class="rec-t"><b style="color:var(--ink)">' + esc(p.promise) + '</b></div><div class="rec-t">' + txt(p.evidence) + '</div>' + (p.complicating ? '<div class="muted" style="margin-top:4px">What got in the way: ' + txt(p.complicating) + '</div>' : '') + '</div>';
+    }).join('') + '</div>'; }
+  if((c.positions || []).length){ any = true;
+    h += '<h3>How their positions have changed</h3>' + c.positions.map(function(t){
+      return '<div class="card" style="margin-top:8px"><div style="font-weight:800">' + esc(t.topic) + '</div><div class="tl" style="margin-top:8px">' + t.entries.map(function(e){ return '<div class="tl-i"><div class="tl-y">' + esc(e.d) + '</div><div class="tl-b">' + txt(e) + '</div></div>'; }).join('') + '</div></div>';
+    }).join(''); }
+  return any ? h : pendingBox(c.incumbent ? 'Statements vs. votes, last campaign’s promises, and position changes over time' : 'Position changes over time (and statements vs. votes for any prior office)', s);
+}
+
+function money2Block(c){
+  var m = c.money2; if(!m) return '';
+  var h = '<h3>One step further back</h3><p class="muted">Who is behind the money: the largest named donors, and who funds the outside groups spending for this candidate.</p>';
+  if((m.top_donors || []).length) h += '<div class="tbwrap"><table class="tb"><thead><tr><th>Top donors to the campaign</th><th>Amount</th></tr></thead><tbody>' + m.top_donors.map(function(d){ return '<tr><td>' + esc(d[0]) + (d[2] ? '<div class="muted" style="font-weight:400">' + esc(d[2]) + '</div>' : '') + '</td><td>' + money(d[1]) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  (m.superpac_donors || []).forEach(function(p){
+    h += '<div class="card" style="margin-top:10px"><div style="font-weight:800">Who funds ' + esc(p.pac) + '</div><div class="muted">It spent ' + money(p.spent) + ' in this race' + cite(p.c) + '</div>' + hbars(p.donors, '#9B7BE0') + '</div>';
+  });
+  if((m.bundlers || []).length) h += '<p class="muted" style="margin-top:8px">Disclosed bundlers: ' + m.bundlers.map(function(b){ return esc(b[0]) + ' (' + money(b[1]) + ')'; }).join(' · ') + '</p>';
+  return h;
+}
+
+function financesBlock(c, s){
+  var F = c.finances; if(!F) return pendingBox('Net worth range, assets, and stock trades from financial disclosures', s);
+  var h = '<div class="kpis">' + (F.networth ? kpi(money(F.networth.min) + '–' + money(F.networth.max), 'Net worth range (' + F.networth.year + ')') : '') +
+    (F.trades ? kpi(String(F.trades.count), 'Stock trades reported (' + F.trades.period + ')') : '') + (F.trades ? kpi(String((F.trades.overlap || []).length), 'In industries their committees oversee') : '') + '</div>';
+  if(F.networth) h += '<div class="src">Disclosures report ranges, not exact values' + cite(F.networth.c) + '</div>';
+  if(F.trades && (F.trades.overlap || []).length) h += '<div class="tbwrap" style="margin-top:10px"><table class="tb"><thead><tr><th>Trade</th><th>Why it’s listed</th></tr></thead><tbody>' + F.trades.overlap.map(function(t){ return '<tr><td>' + esc(t.d) + ' · ' + esc(t.asset) + '<div class="muted" style="font-weight:400">' + esc(t.amt || '') + '</div></td><td>' + esc(t.sector) + ' — overseen by ' + esc(t.committee) + cite(t.c) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  if(F.note) h += '<p style="margin-top:8px">' + txt(F.note) + '</p>';
+  return h;
+}
+function simpleList(items, fmt){ return '<div class="recs">' + items.map(fmt).join('') + '</div>'; }
+function officeBlock(c, s){
+  var h = '', E = c.effectiveness;
+  if(E){
+    if(E.sponsored != null) h += '<div class="kpis">' + kpi(String(E.sponsored), 'Bills sponsored') + kpi(String(E.law), 'Became law') + (E.cel ? kpi(esc(E.cel.score), 'Effectiveness score') : '') + '</div>';
+    if(E.cel) h += '<div class="src">Center for Effective Lawmaking, ' + esc(E.cel.congress) + ': ' + esc(E.cel.benchmark) + cite(E.cel.c) + '</div>';
+    if((E.committees || []).length) h += '<p style="margin-top:8px"><b>Committees:</b> ' + E.committees.map(esc).join(' · ') + '</p>';
+  }
+  if((c.revolving || []).length) h += '<h3>Lobbying and the revolving door</h3>' + simpleList(c.revolving, function(r){ return '<div class="rec"><div class="rec-h"><b>' + esc(r.role) + '</b><span class="muted">' + esc(r.yrs || '') + '</span></div><div class="rec-t">' + txt(r) + '</div></div>'; });
+  if((c.groups || []).length) h += '<h3>Caucuses and groups</h3><div class="tallies">' + c.groups.map(function(g){ return '<span class="tone neutral">' + esc(g.name) + cite(g.c) + '</span>'; }).join(' ') + '</div>';
+  if(!h) return pendingBox(c.incumbent ? 'Bills, effectiveness score, committees, lobbying ties and caucuses' : 'Lobbying ties and group memberships', s);
+  return h;
+}
+function democracyBlock(c, s){
+  if(!c.checks || !c.checks.democracy) return pendingBox('Votes and statements on certifying and accepting election results', s);
+  if(!(c.democracy || []).length) return '<div class="clear">Checked — nothing documented. Searched: ' + esc(c.checks.democracy) + '.</div>';
+  return simpleList(c.democracy, function(x){ var t = {certified:'ok', objected:'bad', statement:'neutral'}[x.kind] || 'neutral';
+    return '<div class="rec"><div class="rec-h"><span class="tone ' + t + '">' + esc({certified:'Voted to certify', objected:'Objected to certification', statement:'On the record'}[x.kind] || x.kind) + '</span><span class="muted">' + esc(x.d) + '</span></div><div class="rec-t">' + txt(x) + '</div></div>'; });
+}
+function accessBlock(c, s){
+  var A = c.access, Rt = c.roots; if(!A && !Rt) return pendingBox('Debates, town halls and ties to the district', s);
+  var rows = [];
+  if(A && A.debates) rows.push(['Debates', A.debates.accepted + ' accepted · ' + A.debates.declined + ' declined' + cite(A.debates.c)]);
+  if(A && A.townhalls) rows.push(['In-person town halls', A.townhalls.n + ' (' + esc(A.townhalls.period) + ')' + cite(A.townhalls.c)]);
+  if(Rt && Rt.years != null) rows.push(['Years living in the ' + (Rt.unit || 'district'), esc(Rt.years) + cite(Rt.c)]);
+  if(Rt && Rt.note) rows.push(['Note', txt(Rt.note)]);
+  return '<div class="tbwrap"><table class="tb"><tbody>' + rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join('') + '</tbody></table></div>';
+}
+
+/* ===== v0.4 · "WHO'S BEHIND THEM" EMOJI ANIMATION =====
+   Plays once each time a candidate page is opened (not when coming back to it).
+   Each emoji stands for a share of the money around the campaign; the number of emojis grows with the score.
+   Every category of organized money gets its own symbol and is counted the same way. */
+var MOJI = [
+  ['people', '\u{1F1FA}\u{1F1F8}', 'Individual donors & the candidate\u2019s own money'],
+  ['org',    '\u{1F3E2}',          'Corporate, PAC, party & outside-group money'],
+  ['israel', '\u{1F1EE}\u{1F1F1}', 'Pro-Israel PACs & spending']
+];
+function moneyMix(c){
+  var f = c.fec; if(!f || !f.receipts) return null;
+  var s = f.src || {}, I = israelTotals(c), out = 0;
+  ((f.outside || {}).support || []).forEach(function(o){ out += (o[1] || 0); });
+  // transfers between a candidate's own committees ("other") are left out: that money was already counted where it was raised
+  var m = {
+    people: (s.small || 0) + (s.large || 0) + (s.self || 0),
+    org: Math.max(0, (s.pac_biz || 0) + (s.pac_ideo || 0) + (s.pac || 0) + (s.earmark || 0) + (s.party || 0) - I.direct) + Math.max(0, out - I.outside),
+    israel: I.direct + I.outside
+  };
+  var tot = m.people + m.org + m.israel;
+  return tot ? {m: m, tot: tot} : null;
+}
+function playFlags(c){
+  var mix = moneyMix(c); if(!mix) return;
+  var sc = scoreCand(c), score = sc.overall != null ? sc.overall : 3;
+  var N = Math.round(10 + 4 * score);                       // 14 emojis at a score of 1, 30 at a score of 5
+  var bag = [], rem = [];
+  MOJI.forEach(function(k){ var exact = mix.m[k[0]] / mix.tot * N, n = Math.floor(exact); for(var i = 0; i < n; i++) bag.push(k[1]); rem.push([exact - n, k[1]]); });
+  rem.sort(function(a, b){ return b[0] - a[0]; });
+  for(var j = 0; bag.length < N && j < rem.length; j++) bag.push(rem[j][1]);
+  for(var i = bag.length - 1; i > 0; i--){ var r = Math.floor(Math.random() * (i + 1)), t = bag[i]; bag[i] = bag[r]; bag[r] = t; }
+  var legend = MOJI.filter(function(k){ return mix.m[k[0]] > 0; }).map(function(k){ return '<span>' + k[1] + ' ' + esc(k[2]) + ' <b>' + pct(mix.m[k[0]] / mix.tot) + '</b></span>'; }).join('');
+  var old = document.getElementById('flagfx'); if(old) old.remove();
+  var fx = document.createElement('div'); fx.id = 'flagfx';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  fx.innerHTML = (reduce ? '' : bag.map(function(e, i){
+      var left = (4 + Math.random() * 88).toFixed(1), dur = (3.6 + Math.random() * 2.2).toFixed(2), delay = (Math.random() * 2.2).toFixed(2), size = (26 + Math.random() * 18).toFixed(0), drift = (Math.random() * 60 - 30).toFixed(0);
+      return '<span class="fx-e" style="left:' + left + '%;font-size:' + size + 'px;animation-duration:' + dur + 's;animation-delay:' + delay + 's;--dx:' + drift + 'px">' + e + '</span>';
+    }).join('')) +
+    '<div class="fx-card"><div class="fx-h">Who’s behind ' + esc(c.name.split(' ').slice(-1)[0]) + '’s money</div><div class="fx-l">' + legend + '</div><div class="fx-s">A quick read of who funds this campaign: each symbol is a share of the money raised plus outside spending to help. More symbols means a higher score. Tap to close.</div></div>';
+  document.body.appendChild(fx);
+  var done = false, end = function(){ if(done) return; done = true; fx.classList.add('out'); setTimeout(function(){ fx.remove(); }, 600); };
+  fx.addEventListener('click', end);
+  setTimeout(end, reduce ? 5000 : 7000);
+}
+
+function votesApplies(c){ return !!c.votes_kv || !(c.profile && !c.incumbent); }
+
+
+function scoreColor(s){ return s == null ? '#6b7a93' : s >= 4 ? '#33D17A' : s >= 3 ? '#F0B93E' : s >= 2 ? '#FF8A5C' : '#F05A54'; }
+function ring(s, size){
+  size = size || 120; var r = size / 2 - 9, C0 = 2 * Math.PI * r, frac = s == null ? 0 : (s - 1) / 4 || 0.02;
+  return '<svg class="ring" width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '">' +
+    '<circle cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke="rgba(252,249,242,.10)" stroke-width="8"/>' +
+    '<circle cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke="' + scoreColor(s) + '" stroke-width="8" stroke-linecap="round" stroke-dasharray="' + (C0 * frac).toFixed(1) + ' ' + C0.toFixed(1) + '" transform="rotate(-90 ' + size / 2 + ' ' + size / 2 + ')"/>' +
+    '<text x="50%" y="' + (size / 2 + (s == null ? 5 : 2)) + '" text-anchor="middle" fill="#FCF9F2" font-family="EB Garamond,serif" font-weight="700" font-size="' + (s == null ? size * 0.15 : size * 0.3) + '">' + (s == null ? 'Pending' : fmtS(s)) + '</text>' +
+    '<text x="50%" y="' + (size / 2 + size * 0.2) + '" text-anchor="middle" fill="rgba(252,249,242,.68)" font-family="Inter,sans-serif" font-size="' + size * 0.085 + '" letter-spacing="1">' + (s == null ? 'IN REVIEW' : 'OUT OF 5') + '</text></svg>';
+}
+function axisBar(s){ return '<div class="abar"><span style="width:' + (s == null ? 0 : (s - 1) / 4 * 100 || 2) + '%;background:' + scoreColor(s) + '"></span></div>'; }
+
+/* ---------- navigation ---------- */
+var FWD = false;
+function go(name, arg, replace){
+  FWD = !replace;
+  if(!replace) stack.push([name, arg]); else stack[stack.length-1] = [name, arg];
+  render();
+}
+function back(){ if(stack.length > 1){ FWD = false; stack.pop(); render(); } }
+document.getElementById('back').addEventListener('click', back);
+document.getElementById('homeBtn').addEventListener('click', function(){ stack = []; go('home'); });
+VIEW.addEventListener('click', function(e){
+  var a = e.target.closest('a[href^="#"]:not([data-go])');
+  if(a && a.getAttribute('href').length > 1){ e.preventDefault(); var el = document.getElementById(a.getAttribute('href').slice(1)); if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 110, behavior:'smooth'}); return; }
+  var t = e.target.closest('[data-go]'); if(!t) return;
+  e.preventDefault();
+  go(t.getAttribute('data-go'), t.getAttribute('data-arg'));
+});
+
+function crumb(parts){ document.getElementById('crumb').innerHTML = parts.map(function(p,i){ return i === parts.length-1 ? '<b>'+esc(p)+'</b>' : esc(p); }).join(' / '); }
+
+function render(){
+  var top = stack[stack.length-1]; pageCites = [];
+  document.getElementById('back').classList.toggle('show', stack.length > 1);
+  var html = VIEWS[top[0]](top[1]);
+  VIEW.innerHTML = html + sourceList();
+  if(top[0] === 'chamber') bindSearch(top[1]);
+  if(top[0] === 'cand' && FWD){ var cc = C[top[1]]; setTimeout(function(){ try{ playFlags(cc); }catch(e){} }, 380); }
+  else { var fxo = document.getElementById('flagfx'); if(fxo) fxo.remove(); }
+  FWD = false;
+  if(top[0] === 'home') bindGlobalSearch();
+  window.scrollTo(0,0);
+}
+
+/* ---------- progress ---------- */
+function progress(){
+  var done = S.filter(function(s){return s.research === 'complete';}).length;
+  var part = S.filter(function(s){return s.research === 'partial';}).length;
+  var cands = Object.keys(C).map(function(k){return C[k];});
+  var cdone = cands.filter(function(c){return c.research === 'complete';}).length;
+  return {done:done, part:part, cands:cands.length, cdone:cdone};
+}
+
+var VIEWS = {};
+
+/* HOME */
+VIEWS.home = function(){
+  crumb(['COLLAPSE','2026 ELECTIONS']);
+  var p = progress(), days = daysTo(D.meta.election);
+  var senRaces = Object.keys(R).filter(function(k){return R[k].chamber === 'senate';}).length;
+  return '<section class="hero flaghero"><div class="kicker">Midterms · November 3, 2026</div>'+
+    '<h1>Who is paying for the people asking for your vote?</h1>'+
+    '<p class="lede">Every federal race on the 2026 ballot, state by state. Each candidate page shows what they propose, how they line up on Israel, and every dollar the filings show — who gave it, and who spent to elect or defeat them.</p>'+
+    '<div class="stat-row"><span class="pill"><b>'+(days > 0 ? days : 0)+'</b> days to Election Day</span>'+
+    '<span class="pill">Status as of <b>'+esc(D.meta.asof)+'</b></span>'+
+    '<span class="pill"><b>'+p.done+'</b>/50 states researched</span></div></section>'+
+    '<div class="grid g2" style="margin-top:20px">'+
+      '<div class="card big tap flagcard" data-go="chamber" data-arg="senate"><div class="n">'+senRaces+'</div><div class="t">U.S. Senate races</div>'+
+      '<div class="d">33 regularly scheduled seats plus special elections in Florida and Ohio.</div><span class="go">OPEN SENATE →</span></div>'+
+      '<div class="card big tap flagcard" data-go="chamber" data-arg="house"><div class="n">435</div><div class="t">U.S. House seats</div>'+
+      '<div class="d">Every district in all 50 states, with redistricting changes noted where maps were redrawn.</div><span class="go">OPEN HOUSE →</span></div>'+
+      '<div class="card big tap flagcard" data-go="chamber" data-arg="governor"><div class="n">36</div><div class="t">Governor races</div>'+
+      '<div class="d">The people who run the states: budgets, state police, and which companies get state contracts and tax breaks.</div><span class="go">OPEN GOVERNORS →</span></div>'+
+    '</div>'+
+    '<div class="card tap methodcard" data-go="method" style="margin-top:12px"><div class="kicker" style="margin:0">How we source & score</div><div style="font-weight:800;font-size:17px;margin-top:4px">Every candidate gets a score from 1 to 5</div><div class="muted" style="margin-top:4px">Six published parts \u2014 preparation, funding independence, votes for people, honesty, conflicts and record \u2014 calculated from the documented record by the same formula for every party.</div><span class="go">SEE THE RUBRIC →</span></div>'+
+    '<div class="case tap" data-go="casestudy" data-arg="massie" style="margin-top:12px;cursor:pointer"><div class="kicker" style="margin:0">Case study</div><div style="font-weight:800;font-size:17px;margin-top:4px">What happens when a member votes the record, not the money</div><div class="muted" style="margin-top:4px">Thomas Massie took $0 from pro-Israel PACs, crossed the President on the tax bill, the Iran war and the Epstein files \u2014 and became the target of the most expensive House primary ever.</div><span class="go">READ THE CASE \u2192</span></div>'+
+    '<h3>Find a state, district or candidate</h3>'+
+    '<input class="search" id="gsearch" placeholder="Try “Texas”, “TX-23” or a name" autocomplete="off"><div class="results" id="gres"></div>'+
+    '<h3>Research progress</h3>'+
+    '<div class="card"><div class="muted">States fully researched</div><div class="prog"><span style="width:'+(p.done/50*100)+'%"></span></div>'+
+    '<div class="muted" style="margin-top:10px">Candidate pages completed: <b style="color:var(--ink)">'+p.cdone+'</b> of '+p.cands+' listed so far. House candidates are added as each state is researched.</div></div>'+
+    '<h2>How to read a candidate page</h2>'+
+    '<p>Every page uses the same sections, filled from the same public sources, for every party. Nothing here is a score or a label; the record is laid out and you decide.</p>'+
+    acc('Claims vs. the record','What each candidate says about their own life, career and business, and their most-repeated campaign claims, set beside court filings, financial records, votes and other documents. Each checkable claim gets a verdict; claims repeated after being shown false are flagged with both dates.')+
+    acc('What they propose','Platform positions and promises come from the candidate’s own campaign site, debates and on-record statements, with each line linked to where it was said.')+
+    acc('Where the money came from','Totals come from the campaign committee’s FEC reports. Contributions are split into small donors (≤$200), larger individual donors, business and trade PACs, ideological or issue PACs, party committees, and the candidate’s own money. The “through” date on every page is the last report it includes.')+
+    acc('Outside spending','Super PACs and other groups can spend unlimited sums to support or oppose a candidate, as long as they don’t coordinate with the campaign. Those independent expenditures are reported to the FEC on Schedule E. Pages show spending for and against each candidate, by group.'+cite(['fec_ie']))+
+    acc('Pro-Israel alignment','Shown as separate documented markers, never combined into one number: AIPAC endorsement; contributions passed through AIPAC’s PAC; United Democracy Project spending for or against; other PACs in OpenSecrets’ pro-Israel category; recorded votes on Israel-related bills; and on-record statements. Each marker links to its filing or record.'+cite(['aipac_pac','udp']))+
+    acc('Heritage Action score','Heritage Action for America publishes a scorecard of how sitting members voted on bills it chose. The Heritage Foundation itself is a 501(c)(3) and does not endorse candidates. The score is shown only for current members of Congress, with the period it covers.'+cite(['ha_score']))+
+    acc('What the money does and does not show','A donation shows who chose to fund a campaign. It does not by itself show that the money changed a vote or a position. Where reporting documents a link between money and a specific decision, it is cited; where it does not, the page says nothing beyond the filing.')+
+    '<h2>How the money moves in 2026</h2>'+
+    '<p class="muted">The cycle-wide analysis of pro-Israel money is researched alongside the state pages. These are the mechanisms it covers.</p>'+
+    '<div class="grid g2" style="margin-top:12px">'+
+      mech('Pass-through (earmarked) giving','A PAC collects contributions from its members and forwards them to chosen candidates. The FEC treats the PAC as a conduit and requires it to report each forwarded gift.')+
+      mech('Super PAC spending in primaries','A super PAC can raise unlimited sums and spend them on ads for or against a candidate, as long as it doesn’t coordinate with any campaign. Primaries in safe seats are where this spending often decides who reaches Congress.')+
+      mech('Ads about something else','Outside groups don’t have to say why they are spending. The record is checked for races where the ads ran on other issues while the group’s stated mission is a single policy area.')+
+      mech('The wider PAC network','Beyond AIPAC, a set of PACs and donors give to candidates on the same issue. Each is identified by its FEC filings and its own stated mission.')+
+      mech('Alignment on the right','Heritage Action’s scorecard records how members voted on bills it chose. Pages show the score next to Israel-related votes and money, so readers can compare the patterns themselves.')+
+      mech('Both parties, same standard','The same sources, categories and wording are used for Democrats, Republicans and independents. Where money flows to both sides of a race, both are shown.')+
+    '</div>'+
+    '<div class="note">Related modules: <a href="#" id="lnkAudit">the 2026 AIPAC Audit</a> and <a href="#" id="lnkCU">Citizens United</a>, which explains how super PACs became possible.</div>';
+};
+function acc(t, b){ return '<details class="acc"><summary>'+esc(t)+'</summary><div class="b">'+b+'</div></details>'; }
+function mech(t, d){ return '<div class="card mech"><div class="t">'+esc(t)+'</div><div class="d">'+esc(d)+'</div><div style="margin-top:8px">'+badge('pending')+'</div></div>'; }
+
+function bindGlobalSearch(){
+  var inp = document.getElementById('gsearch'), out = document.getElementById('gres');
+  function openParent(k){ try{ if(window.parent && window.parent !== window && window.parent.openSimOverlay){ window.parent.openSimOverlay(k); return true; } }catch(e){} return false; }
+  var a = document.getElementById('lnkAudit'), b = document.getElementById('lnkCU');
+  if(a) a.addEventListener('click', function(e){ e.preventDefault(); if(!openParent('aipac2026')) alert('Open the 2026 AIPAC Audit from Sophia’s Observe pillar.'); });
+  if(b) b.addEventListener('click', function(e){ e.preventDefault(); if(!openParent('citizensunited')) alert('Open Citizens United from Sophia.'); });
+  inp.addEventListener('input', function(){
+    var q = inp.value.trim().toLowerCase(); if(q.length < 2){ out.innerHTML = ''; return; }
+    var hits = [];
+    S.forEach(function(s){ if(s.name.toLowerCase().indexOf(q) > -1 || s.code.toLowerCase() === q) hits.push('<div class="row" data-go="state" data-arg="'+s.code+'"><div class="main"><div class="nm">'+esc(s.name)+'</div><div class="sb">'+s.house+' House seat'+(s.house>1?'s':'')+(s.senate.length?' · Senate race':'')+'</div></div><span class="chev">›</span></div>'); });
+    Object.keys(R).forEach(function(k){ if(k.toLowerCase() === q || k.toLowerCase().replace('-0','-') === q) hits.push('<div class="row" data-go="race" data-arg="'+k+'"><div class="main"><div class="nm">'+esc(k)+'</div><div class="sb">'+esc(raceLabel(R[k]))+'</div></div><span class="chev">›</span></div>'); });
+    Object.keys(C).forEach(function(k){ var c = C[k]; if(c.name.toLowerCase().indexOf(q) > -1) hits.push('<div class="row" data-go="cand" data-arg="'+k+'">'+avatar(c)+'<div class="main"><div class="nm">'+esc(c.name)+' '+partyChip(c.party)+'</div><div class="sb">'+esc(raceLabel(R[c.race]))+'</div></div><span class="chev">›</span></div>'); });
+    out.innerHTML = hits.slice(0,30).join('') || '<div class="empty">No match yet. House candidates appear as each state is researched.</div>';
+  });
+}
+
+/* CHAMBER -> states A-Z */
+VIEWS.chamber = function(ch){
+  var CH = {senate:['SENATE','U.S. Senate','35 races in 35 states. States without a Senate race this year are listed at the bottom.','Senate'],
+            house:['HOUSE','U.S. House','435 seats across 50 states, alphabetically.','House'],
+            governor:['GOVERNORS','Governors','36 governor races this year. States without one are listed at the bottom.','Governors']}[ch];
+  crumb(['2026 ELECTIONS', CH[0]]);
+  return '<div class="kicker">2026 · '+CH[3]+'</div><h1>'+CH[1]+'</h1><p class="lede">'+CH[2]+'</p>'+
+    '<div class="note">Every candidate page is sourced to public records and scored 1–5 on a published rubric. <a href="#" data-go="method">How we source and score</a>.</div>'+
+    '<div style="margin-top:16px"><input class="search" id="ssearch" placeholder="Filter states" autocomplete="off"></div><div id="slist"></div>';
+};
+function stateRows(ch, q){
+  var list = S.filter(function(s){ return !q || s.name.toLowerCase().indexOf(q) > -1 || s.code.toLowerCase() === q; });
+  var html = '', letter = '';
+  var key = ch === 'senate' ? 'senate' : ch === 'governor' ? 'gov' : null;
+  var withRace = key ? list.filter(function(s){return s[key].length;}) : list;
+  withRace.forEach(function(s){
+    var L = s.name[0];
+    if(L !== letter){ letter = L; html += '<div class="letter">'+L+'</div>'; }
+    var sb;
+    if(key){ var r = R[s[key][0]]; sb = (r.type === 'special' ? 'Special election · ' : '') + 'Incumbent ' + r.incumbent.name + ' (' + r.incumbent.party + ') — ' + r.incumbent.status; }
+    else sb = s.house + ' seat' + (s.house > 1 ? 's' : '') + (s.redistricting ? ' · new map' : '');
+    var st = key ? R[s[key][0]].research : s.research;
+    html += '<div class="row" data-go="'+(key ? 'race' : 'state')+'" data-arg="'+(key ? s[key][0] : s.code)+'"><div class="main"><div class="nm">'+esc(s.name)+'</div><div class="sb">'+esc(sb)+'</div></div>'+badge(st)+'<span class="chev">›</span></div>';
+  });
+  if(key){
+    var none = list.filter(function(s){return !s[key].length;});
+    if(none.length) html += '<h3>No '+(key === 'gov' ? 'governor' : 'Senate')+' race in 2026</h3><p class="muted">'+none.map(function(s){return esc(s.name);}).join(' · ')+'</p>';
+  }
+  return html || '<div class="empty">No state matches.</div>';
+}
+function bindSearch(ch){
+  var inp = document.getElementById('ssearch'), out = document.getElementById('slist');
+  out.innerHTML = stateRows(ch, '');
+  inp.addEventListener('input', function(){ out.innerHTML = stateRows(ch, inp.value.trim().toLowerCase()); });
+}
+
+/* STATE -> districts (+ Senate race) */
+VIEWS.state = function(code){
+  var s = stateBy(code); crumb(['2026 ELECTIONS', s.name.toUpperCase()]);
+  var house = Object.keys(R).filter(function(k){ return R[k].state === code && R[k].chamber === 'house'; }).sort();
+  var html = '<div class="kicker">2026 · '+esc(s.code)+'</div><h1>'+esc(s.name)+'</h1>'+
+    '<div class="stat-row"><span class="pill"><b>'+s.house+'</b> House seat'+(s.house>1?'s':'')+'</span>'+(s.senate.length ? '<span class="pill">Senate race on the ballot</span>' : '<span class="pill">No Senate race</span>')+badge(s.research)+'</div>';
+  if(s.redistricting) html += '<div class="note">'+txt(s.redistricting)+'</div>';
+  if(s.senate.length){
+    var r = R[s.senate[0]];
+    html += '<h3>U.S. Senate</h3><div class="card tap" data-go="race" data-arg="'+r.id+'"><div class="nm" style="font-weight:800">'+esc(r.type === 'special' ? 'Special election' : 'Class II seat')+'</div>'+
+      '<div class="muted">'+r.candidates.map(function(id){ return esc(C[id].name)+' ('+C[id].party+')'; }).join(' · ')+'</div><span class="go">OPEN RACE →</span></div>';
+  }
+  if(s.gov && s.gov.length){
+    var g = R[s.gov[0]];
+    html += '<h3>Governor</h3><div class="card tap" data-go="race" data-arg="'+g.id+'"><div class="nm" style="font-weight:800">Governor\u2019s race</div>'+
+      '<div class="muted">'+(g.candidates.length ? g.candidates.map(function(id){ return esc(C[id].name)+' ('+C[id].party+')'; }).join(' \u00b7 ') : 'Nominees to be confirmed')+'</div><span class="go">OPEN RACE \u2192</span></div>';
+  }
+  html += '<h3>U.S. House</h3><div class="dgrid">'+house.map(function(k){
+    var r = R[k];
+    return '<div class="dt" data-go="race" data-arg="'+k+'"><div class="c">'+esc(r.district === 0 ? 'AT-LARGE' : k)+'</div><div class="s">'+badge(r.research).replace('Research pending','Pending')+'</div></div>';
+  }).join('')+'</div>';
+  if(s.research === 'complete') html += '<div class="note" style="margin-top:14px">Every race in '+esc(s.name)+' has a full candidate page: money, votes, claims checked, legal record and said-vs-did. Overall 1\u20135 scores publish once two record searches still blocked from our research tools are done: federal court dockets and the foreign-agent (FARA) database. Part scores are shown now.</div>';
+  if(s.research === 'pending') html += '<div style="margin-top:14px">'+pendingBox('House incumbents and candidates for '+s.name, s)+'</div>';
+  else if(s.research === 'partial') html += '<div class="note" style="margin-top:14px">Nominees, incumbents and voting records are in. Full candidate pages are being filled in district by district.</div>';
+  return html;
+};
+
+/* RACE -> candidates */
+VIEWS.race = function(id){
+  var r = R[id], s = stateBy(r.state);
+  crumb(['2026 ELECTIONS', s.name.toUpperCase(), r.chamber === 'senate' ? 'SENATE' : r.chamber === 'governor' ? 'GOVERNOR' : (r.district === 0 ? 'AT-LARGE' : id)]);
+  var html = '<div class="kicker">'+esc(r.chamber === 'senate' ? 'U.S. Senate · ' + (r.type === 'special' ? 'Special election' : 'Class II') : r.chamber === 'governor' ? 'Governor' : 'U.S. House')+'</div>'+
+    '<h1>'+esc(raceLabel(r))+'</h1><div class="stat-row">'+badge(r.research)+'</div>';
+  if(r.incumbent) html += '<p class="lede">Incumbent: <b style="color:var(--ink)">'+esc(r.incumbent.name)+'</b> '+partyChip(r.incumbent.party)+' — '+esc(r.incumbent.status)+cite(r.src)+'</p>';
+  if(r.note) html += '<div class="note">'+txt(r.note)+'</div>';
+  if(r.context) html += '<p style="margin-top:10px">'+txt(r.context)+'</p>';
+  html += '<h3>On the ballot</h3>';
+  if(!r.candidates.length) html += pendingBox('Candidates for '+raceLabel(r), s);
+  else{
+    html += '<div class="grid g2">'+r.candidates.map(function(cid){
+      var c = C[cid];
+      return '<div class="card tap" data-go="cand" data-arg="'+cid+'"><div class="cand">'+avatar(c)+'<div style="min-width:0"><div style="font-weight:800">'+esc(c.name)+'</div>'+
+        '<div style="margin-top:4px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">'+partyChip(c.party)+'<span class="muted">'+PARTY[c.party]+'</span>'+(c.incumbent?'<span class="inc">INCUMBENT</span>':'')+'</div>'+
+        (c.profile_line ? '<div class="muted" style="margin-top:6px;font-size:12.5px">'+txt(c.profile_line)+'</div>' : '')+'<div style="margin-top:6px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">'+badge(c.research)+(scoreCand(c).overall != null ? '<span class="scorechip" style="color:'+scoreColor(scoreCand(c).overall)+'">'+fmtS(scoreCand(c).overall)+' / 5'+(scoreCand(c).provisional ? ' \u00b7 prov.' : '')+'</span>' : (c.research !== 'pending' ? '<span class="scorechip pend">Score pending</span>' : ''))+'</div></div></div></div>';
+    }).join('')+'</div>';
+    if(r.candidates.length > 1) html += '<div style="margin-top:12px"><button class="btn" data-go="compare" data-arg="'+r.id+'">⇄ Compare the candidates</button></div>';
+    html += raceMoney(r);
+  }
+  return html;
+};
+function raceMoney(r){
+  var cs = r.candidates.map(function(id){return C[id];}).filter(function(c){return c.fec;});
+  if(!cs.length) return '<h3>Money in this race</h3>'+pendingBox('FEC totals and outside spending for this race', stateBy(r.state));
+  var raised = cs.map(function(c){ return [c.name+' ('+c.party+')', c.fec.receipts, PCOL[c.party]||'#c8d6ec']; });
+  var forx = cs.map(function(c){ var o = (c.fec.outside||{}); return [c.name+' — for', (o.support||[]).reduce(function(a,b){return a+b[1];},0), '#33D17A']; })
+    .concat(cs.map(function(c){ var o = (c.fec.outside||{}); return [c.name+' — against', (o.oppose||[]).reduce(function(a,b){return a+b[1];},0), '#F05A54']; }));
+  return '<h3>Money in this race</h3><div class="card"><div class="muted">Campaign receipts</div>'+hbars(raised)+
+    '<div class="muted" style="margin-top:14px">Outside spending</div>'+hbars(forx.filter(function(x){return x[1];}))+
+    '<div class="src">FEC filings; dates on each candidate page.</div></div>';
+}
+
+function israelBlock(c, s){
+  var I = c.israel;
+  if(!I) return pendingBox('AIPAC endorsement, pro-Israel PAC money, outside spending, votes and statements', s);
+  var rows = [];
+  rows.push(['AIPAC endorsement', I.aipac_endorse ? txt(I.aipac_endorse) : 'Not checked yet']);
+  rows.push(['Given through AIPAC PAC', I.aipac_pac ? (I.aipac_pac.amt != null ? money(I.aipac_pac.amt) : 'No dollar figure documented') + (I.aipac_pac.note ? ' \u2014 '+esc(I.aipac_pac.note) : '') + cite(I.aipac_pac.c) : 'Not checked yet']);
+  rows.push(['United Democracy Project', I.udp ? 'For: '+money(I.udp.support)+' · Against: '+money(I.udp.oppose)+cite(I.udp.c) : 'Not checked yet']);
+  (I.others||[]).forEach(function(o){ rows.push([o.name, money(o.amt)+(o.scope === 'career' ? ' (career total, all cycles)' : o.kind === 'outside' ? ' (outside spending)' : '')+cite(o.c)]); });
+  if(I.heritage) rows.push(['Heritage Action score', esc(I.heritage.score)+' — '+esc(I.heritage.period)+cite(I.heritage.c)]);
+  var t = israelTotals(c);
+  var html = '<div class="tbwrap"><table class="tb"><tbody>'+rows.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>';}).join('')+'</tbody></table></div>';
+  if(c.fec && c.fec.receipts) html += '<p class="muted" style="margin-top:8px">This cycle: direct pro-Israel PAC money <b style="color:var(--ink)">'+money(t.direct)+'</b> ('+pct(t.direct/c.fec.receipts)+' of campaign receipts); outside spending in support <b style="color:var(--ink)">'+money(t.outside)+'</b>.'+(t.career ? ' Career totals across all cycles are listed separately above and are not counted in this cycle\u2019s figures.' : '')+'</p>';
+  if(I.votes && I.votes.length) html += '<div style="margin-top:12px" class="tbwrap"><table class="tb"><thead><tr><th>Vote</th><th>How they voted</th></tr></thead><tbody>'+
+    I.votes.map(function(v){ return '<tr><td>'+esc(v.bill)+'<div class="muted" style="font-weight:400">'+esc(v.d)+'</div></td><td><b style="color:var(--ink)">'+esc(v.vote)+'</b> — '+esc(v.what)+cite(v.c)+'</td></tr>'; }).join('')+'</tbody></table></div>';
+  if(I.statements && I.statements.length) html += '<div style="margin-top:10px">'+I.statements.map(function(st){ return '<p style="margin-bottom:8px"><span class="muted">'+esc(st.d)+'</span> — '+txt(st)+'</p>'; }).join('')+'</div>';
+  return html;
+}
+function moneyBlock(c, s){
+  var f = c.fec;
+  if(!f) return pendingBox('FEC receipts, donor breakdown and outside spending', s);
+  var tot = f.receipts || 0, items = srcItems(f);
+  var out = (f.outside||{}), sup = (out.support||[]).reduce(function(a,b){return a+b[1];},0), opp = (out.oppose||[]).reduce(function(a,b){return a+b[1];},0);
+  return '<div class="kpis"><div class="kpi"><div class="v">'+money(f.receipts)+'</div><div class="l">Raised</div></div>'+
+    '<div class="kpi"><div class="v">'+money(f.disbursements)+'</div><div class="l">Spent</div></div>'+
+    '<div class="kpi"><div class="v">'+money(f.coh)+'</div><div class="l">Cash on hand</div></div>'+
+    '<div class="kpi"><div class="v">'+(f.instate_pct != null ? pct(f.instate_pct) : '—')+'</div><div class="l">From in-state donors</div></div></div>'+
+    '<div class="card" style="margin-top:10px"><div class="muted" style="margin-bottom:8px">Where the campaign’s money came from</div>'+stackBar(items)+'</div>'+
+    '<div class="card" style="margin-top:10px"><div class="muted">Outside groups spent <b style="color:var(--ink)">'+money(sup)+'</b> to help and <b style="color:var(--ink)">'+money(opp)+'</b> to hurt this candidate'+(tot ? ' — '+(Math.round((sup+opp)/tot*10)/10)+'× what the campaign itself raised' : '')+'.</div></div>'+
+    (f.history && f.history.length ? '<h3>Money by election</h3><div class="tbwrap"><table class="tb"><thead><tr><th>Cycle</th><th>Raised</th><th>From PACs & committees</th><th>Own money</th></tr></thead><tbody>' + f.history.map(function(h){ var pac = h.pac_all != null ? h.pac_all : h.other_committees; var own = h.self != null ? h.self : h.cand_loans; return '<tr><td>' + esc(h.cycle) + '<div class="muted" style="font-weight:400">' + esc(h.office || '') + '</div></td><td>' + money(h.receipts) + '</td><td>' + (pac != null ? money(pac) + (h.receipts ? ' (' + pct(pac / h.receipts) + ')' : '') : '\u2014') + '</td><td>' + (own != null ? money(own) : '\u2014') + cite(h.c) + '</td></tr>'; }).join('') + '</tbody></table></div>' : '')+
+    (f.note ? '<div class="note">'+txt(f.note)+'</div>' : '')+
+    (f.self_note && (f.src||{}).self ? '<div class="note">'+esc(f.self_note)+'</div>' : '')+
+    '<div class="src">'+esc(f.source || 'FEC filings')+' through '+esc(f.thru || '—')+cite(f.c)+'</div>';
+}
+
+/* DASHBOARD */
+VIEWS.dash = function(id){
+  var c = C[id], r = R[c.race], s = stateBy(r.state);
+  crumb(['2026 ELECTIONS', raceShort(r), c.name.toUpperCase(), 'DASHBOARD']);
+  var html = '<div class="cand" style="gap:12px">'+avatar(c)+'<div><div class="kicker">Financial dashboard</div><h1 style="font-size:26px">'+esc(c.name)+' '+partyChip(c.party)+'</h1><div class="muted">'+esc(raceLabel(r))+'</div></div></div>';
+  var f = c.fec;
+  if(!f) return html + '<div style="margin-top:16px">'+pendingBox('This dashboard', s)+'</div>'+dashPreviewNote();
+  var I = israelTotals(c), out = f.outside||{};
+  html += '<div class="kpis" style="margin-top:16px">'+
+    kpi(money(f.receipts),'Raised')+kpi(money(f.coh),'Cash on hand')+kpi(money(f.debts),'Debts')+
+    kpi(pct(((f.src||{}).small||0)/(f.receipts||1)),'From small donors')+kpi(money(I.direct),'Pro-Israel PAC money')+kpi(money(I.outside),'Pro-Israel outside, for')+'</div>';
+  html += '<div class="grid g2" style="margin-top:12px">'+
+    '<div class="card"><h3 style="margin-top:0">Sources of campaign money</h3>'+donut(srcItems(f))+'</div>'+
+    '<div class="card"><h3 style="margin-top:0">Raised per filing period</h3>'+line(f.quarters)+'</div>'+
+    '<div class="card"><h3 style="margin-top:0">Top donor industries</h3>'+hbars(f.industries,'#2FD0C4')+'<div class="src">Industry coding: OpenSecrets.</div></div>'+
+    '<div class="card"><h3 style="margin-top:0">Top contributing organizations</h3>'+hbars(f.employers,'#5B84FF')+'<div class="src">Totals combine the organization’s PAC and its employees’ individual gifts, as OpenSecrets reports them; organizations do not give directly.</div></div>'+
+    '<div class="card"><h3 style="margin-top:0">Outside spending to help</h3>'+hbars(out.support,'#33D17A')+'</div>'+
+    '<div class="card"><h3 style="margin-top:0">Outside spending to hurt</h3>'+hbars(out.oppose,'#F05A54')+'</div>'+
+  '</div>';
+  var opp = r.candidates.filter(function(x){ return x !== id && C[x].fec; });
+  if(opp.length){
+    var pal = PCOL;
+    var all = [id].concat(opp);
+    html += '<div class="card" style="margin-top:12px"><h3 style="margin-top:0">Against the rest of the field</h3>'+
+      '<div class="muted">Campaign receipts</div>'+hbars(all.map(function(x){return [C[x].name, C[x].fec.receipts, pal[C[x].party]];}))+
+      '<div class="muted" style="margin-top:12px">Share from small donors</div>'+
+      all.map(function(x){ var ff = C[x].fec, sh = ((ff.src||{}).small||0)/(ff.receipts||1); return '<div style="margin:8px 0 2px;font-size:12.5px">'+esc(C[x].name)+' — '+pct(sh)+'</div><div class="bar"><span style="width:'+(sh*100).toFixed(1)+'%;background:'+pal[C[x].party]+'"></span></div>'; }).join('')+'</div>';
+  }
+  if(c.money2) html += '<div class="card" style="margin-top:12px">'+money2Block(c)+'</div>';
+  html += '<div class="src" style="margin-top:12px">FEC filings through '+esc(f.thru || '—')+cite(f.c)+'</div>';
+  return html;
+};
+function kpi(v,l){ return '<div class="kpi"><div class="v">'+v+'</div><div class="l">'+esc(l)+'</div></div>'; }
+function dashPreviewNote(){
+  return '<h3>What this dashboard will show</h3><div class="grid g2">'+
+    ['Sources of campaign money — small donors, large donors, PACs, party, self-funding','Money raised per filing period','Top donor industries and organizations','Outside spending to help and to hurt, by group','Pro-Israel PAC money and outside spending as a share of the total','Side-by-side comparison with the rest of the field']
+    .map(function(t){ return '<div class="card"><div class="muted">'+esc(t)+'</div></div>'; }).join('')+'</div>';
+}
+
+/* METHOD — how everything is sourced and scored */
+VIEWS.method = function(){
+  crumb(['2026 ELECTIONS', 'HOW WE SOURCE & SCORE']);
+  var ax = RUBRIC.axes;
+  var legalRows = Object.keys(LEGAL).map(function(k){ var L = LEGAL[k]; return '<tr><td>' + esc(L.lbl) + '</td><td>' + (L.d ? '−' + L.d + (L.cap && L.cap > L.d ? ' each, up to −' + L.cap : '') : 'Shown, not scored') + '</td></tr>'; }).join('');
+  return '<div class="kicker">Method · Rubric v' + RUBRIC.version + ' · published ' + RUBRIC.published + '</div><h1>How every page is sourced and scored</h1>' +
+    '<p class="lede">The same sources, the same rules and the same rubric for every candidate, Democrat, Republican or independent. Each score is calculated from the documented record by a published formula, so anyone can check it.</p>' +
+    '<div class="chips"><a href="#m-src">Sources</a><a href="#m-rules">Rules</a><a href="#m-rubric">The rubric</a><a href="#m-all">Each page</a><a href="#m-not">Not scored</a><a href="#m-fix">Corrections</a><a href="#m-pend">Pending scores</a></div>' +
+    '<div class="note" id="m-pend"><b>Why overall scores say \u201cPending\u201d.</b> An overall score combines six parts, and each part rests on specific public records: FEC and state campaign-finance filings, court dockets, ethics records, financial disclosures, the FARA foreign-agent database, the candidate\u2019s own claims and their votes. Some of those records can\u2019t yet be searched directly from our research tools. Rather than guess, we hold the overall score until every record has been searched. A part that is ready is shown now; a part resting on news reporting alone is marked provisional; a part with a record not yet searched is left blank. Final scores are released state by state as the searches finish, and every release is dated.</div>' +
+
+    '<h2 id="m-src">Where the information comes from</h2>' +
+    '<div class="tbwrap"><table class="tb"><thead><tr><th>Section</th><th>Primary sources</th></tr></thead><tbody>' +
+    '<tr><td>Money</td><td>FEC campaign reports and Schedule E independent expenditures; OpenSecrets for industry and organization coding.' + cite(['fec_home', 'fec_ie', 'os_home']) + '</td></tr>' +
+    '<tr><td>Pro-Israel money</td><td>AIPAC PAC and United Democracy Project FEC filings; AIPAC’s own endorsement lists; OpenSecrets’ pro-Israel category for other PACs.' + cite(['aipac_pac', 'udp']) + '</td></tr>' +
+    '<tr><td>Background, education, career</td><td>Official biographies, the Congressional Biographical Directory, campaign sites, and reporting by named outlets. Personal details need two independent sources or one primary record.</td></tr>' +
+    '<tr><td>Legal and financial record</td><td>Court dockets, House and Senate Ethics Committee reports, financial disclosure filings, state ethics boards, and reporting that cites those records.</td></tr>' +
+    '<tr><td>Foreign business ties</td><td>Personal financial disclosures (assets and income by country), the Justice Department’s FARA database.' + cite(['fara']) + '</td></tr>' +
+    '<tr><td>Votes and attendance</td><td>House Clerk and Senate roll calls; Heritage Action’s scorecard for its own published score.' + cite(['house_clerk', 'senate_votes', 'ha_score']) + '</td></tr>' +
+    '</tbody></table></div>' +
+
+    '<h2 id="m-rules">Rules that apply to every page</h2>' +
+    '<ul class="rules">' +
+    '<li><b>Charged is not convicted.</b> Charges, dismissals, acquittals and settlements are labelled exactly as the court record has them.</li>' +
+    '<li><b>Family is not the candidate.</b> A spouse’s, parent’s or child’s record counts only where the record shows joint action, such as a joint filing or shared ownership.</li>' +
+    '<li><b>A donation is not a vote.</b> The money is shown in full. A page says that money changed a position only when reporting documents that link.</li>' +
+    '<li><b>Every group is checked the same way.</b> Corporate PACs, unions, crypto, oil, AIPAC, J Street and every other organized interest go through the same checks and count the same way in the score.</li>' +
+    '<li><b>Same sample for everyone.</b> Famous candidates get fact-checked far more often, so counting fact-checks would punish fame, not dishonesty. Every candidate\u2019s claims are checked from the same fixed sample instead.</li>' +
+    '<li><b>Facts, not opinions.</b> Only claims that can be checked against a record get a verdict.</li>' +
+    '<li><b>Searched and found nothing is a finding.</b> When a record was searched and nothing turned up, the page says so and names what was searched.</li>' +
+    '<li><b>Dated.</b> Every money figure carries the filing date it runs through; every page carries the date it was last checked.</li>' +
+    '</ul>' +
+
+    '<h2 id="m-rubric">The rubric</h2>' +
+    '<p>Six parts, each scored from 1 to 5. The overall score is their weighted average, rounded to the nearest quarter point. Three rules make it strict in both directions:</p><ul class="rules">' +
+    '<li><b>Neutral start.</b> Every part except Preparation starts at 3 and moves only on documented evidence, up or down. An empty record looks like an empty record, not a clean one.</li>' +
+    '<li><b>Unknown is never clean.</b> Credit for a clean record is given only after the required records were searched directly. Parts that rest on a search done only through news reporting are marked <i>provisional</i>; parts that rest on a search not yet done are not scored, and no overall score is published.</li>' +
+    '<li><b>No caps.</b> Every documented item counts. The only limits are the floor of 1 and the ceiling of 5.</li></ul>' +
+    '<div class="grid g2" style="margin-top:12px">' + RUBRIC.axes.map(function(a){ return '<div class="card"><div class="kicker" style="margin:0">' + Math.round(a.w * 100) + '% of the score</div><div style="font-weight:800;font-size:17px;margin-top:4px">' + esc(a.name) + '</div><div class="muted" style="margin-top:4px">' + esc(a.q) + '</div></div>'; }).join('') + '</div>' +
+    '<h3>1 \u00b7 Preparation (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='prep';})[0].w*100) + '%)</h3><p>Points out of 7, converted to 1\u20135. Years in public office: none 0, under 2 years 1, 2\u20135 years 2, 6+ years 3. Relevant professional work: none 0, under 5 years 1, 5+ years 2. Highest education: high school or GED 0, associate 0.5, bachelor\u2019s 1, graduate or professional 2. Score = 1 + 4 \u00d7 points \u00f7 7. Experience counts for more than degrees; the Constitution sets only age, citizenship and residency requirements.</p>' +
+    '<h3>2 \u00b7 Funding independence (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='funding';})[0].w*100) + '%)</h3><div class="tbwrap"><table class="tb"><tbody>' +
+    '<tr><td>Corporate or industry money, ever</td><td>\u22120.75 if they have taken business or trade PAC money, been backed by a super PAC funded by corporations, or drawn a large share of money from one company\u2019s or industry\u2019s employees, at any amount, in any cycle. +0.75 only if a complete career search finds none.</td></tr>' +
+    '<tr><td>Foreign-policy lobby money, ever</td><td>\u22120.75 if they have taken money from a PAC or conduit organized around another country\u2019s policy (pro-Israel PACs such as AIPAC\u2019s, or any other country\u2019s), or been backed by its super PAC, at any amount, in any cycle. +0.75 only if a complete career search finds none.</td></tr>' +
+    '<tr><td>Organized money this cycle</td><td>\u22120.25 for every 5% of receipts from PACs, party committees and interest-group bundling. No cap.</td></tr>' +
+    '<tr><td>Small donors (\u2264$200)</td><td>50%+ of receipts +0.5 \u00b7 30%+ +0.25 \u00b7 under 20% \u22120.5 \u00b7 under 10% \u22120.75</td></tr>' +
+    '<tr><td>Outside spending to help</td><td>25%+ of the campaign\u2019s own receipts \u22120.5 \u00b7 more than it raised \u22121. Dark-money spending documented in reporting counts. Spending against a candidate never lowers their score. Returning money later earns no credit.</td></tr>' +
+    '</tbody></table></div>' +
+    '<h3>3 \u00b7 Votes for people (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='votes';})[0].w*100) + '%)</h3><p>For anyone who has voted in Congress. Score = 1 + 4 \u00d7 (key votes matching Sophia\u2019s published position \u00f7 every scored key vote they could have cast). Missed votes count against. Fewer than 8 scored votes makes the part provisional. Candidates who have never voted in Congress are marked not applicable. <a href="#" data-go="stances">See every position</a>.</p>' +
+    '<h3>4 \u00b7 Honesty with the public (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='honesty';})[0].w*100) + '%)</h3><p>Starts at 3. The claim sample is chosen by rule, not by the researcher: every factual claim on the campaign\u2019s biography page, the first ten on its issues page, and its two highest-spending ads. Each is rated against primary records first.</p>' +
+    '<div class="tbwrap"><table class="tb"><tbody><tr><td>True</td><td>+0.25 each, up to +2</td></tr><tr><td>Partly true</td><td>\u22120.25 each</td></tr><tr><td>Misleading</td><td>\u22120.5 each</td></tr><tr><td>False</td><td>\u22121 each</td></tr><tr><td>Said again after being corrected</td><td>\u22120.5 more each, with both dates cited</td></tr><tr><td>Can\u2019t be verified \u2014 about their own life or record</td><td>\u22120.1 each (the burden of proof is theirs)</td></tr><tr><td>Opinion or forecast</td><td>Listed, not rated</td></tr></tbody></table></div>' +
+    '<p class="muted" style="margin-top:8px">At least 5 checkable claims are needed to score this part. Pages say \u201cfalse,\u201d never \u201clie,\u201d because a lie means the person knew, and that usually can\u2019t be proved.</p>' +
+    '<h3>5 \u00b7 Conflicts & accountability (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='conflicts';})[0].w*100) + '%)</h3><p>Scored only after courts, ethics records, financial disclosures, the FARA database and election-certification records have all been searched. Starts at 5 when that search is complete, minus every documented item, with no caps:</p>' +
+    '<div class="tbwrap"><table class="tb"><thead><tr><th>Documented item</th><th>Effect</th></tr></thead><tbody>' + Object.keys(LEGAL).map(function(k){ var L = LEGAL[k]; return '<tr><td>' + esc(L.lbl) + '</td><td>' + (L.d ? '\u2212' + L.d + ' each' : 'Shown, not scored') + '</td></tr>'; }).join('') +
+    '<tr><td>Voted to reject certified election results</td><td>\u22121 each time (applies to both parties: Democrats objected in 2005 and 2017, Republicans in 2021)</td></tr><tr><td>Stock trade in an industry their committee oversees</td><td>\u22120.25 each</td></tr></tbody></table></div>' +
+    '<h3>6 \u00b7 Record & transparency (' + Math.round(RUBRIC.axes.filter(function(a){return a.id==='record';})[0].w*100) + '%)</h3><p>The average of at least two of: missed-vote rate (under 2% scores 5 \u00b7 under 5% 4 \u00b7 under 10% 3 \u00b7 under 20% 2 \u00b7 20%+ 1; key-vote attendance stands in, marked provisional, until the official rate is checked), financial-disclosure timeliness (on time 5 \u00b7 late 3 \u00b7 missing 1) and FEC filing record (clean 5 \u00b7 requests for information 4 \u00b7 fine 3).</p>' +
+    '<h3>How the process is kept honest</h3><ul class="rules">' +
+    '<li><b>Locked before scoring.</b> The key-vote list was chosen before anyone\u2019s votes were looked up. Sophia\u2019s positions are version 2.0, dated October 8, 2026, and are awaiting a blind review, in which positions are confirmed without seeing how anyone voted. Any later change is published below and applied to every candidate already scored.</li>' +
+    '<li><b>Equal effort.</b> Every candidate gets the same research checklist, shown on their page.</li>' +
+    '<li><b>Independent check.</b> Before a page is final, a second researcher who did not write it re-checks every citation and verdict.</li>' +
+    '<li><b>Calibration.</b> The rubric is tested on well-known members of both parties before it is applied state by state; results are published with the method.</li></ul>' +
+    '<h3>Changelog</h3><ul class="rules">' +
+    '<li><b>v2.1 (Oct 8, 2026):</b> neutral start at 3; credit for a clean record only after a complete search; no caps; party money counted as organized money; missed key votes count against; partly true, misleading and unverifiable self-claims now cost points; election-certification objections and committee-related stock trades scored; provisional and incomplete statuses added.</li>' +
+    '<li><b>v2.0 (Oct 8, 2026):</b> flat deductions for ever taking corporate or foreign-policy lobby money; new Votes for people part.</li>' +
+    '<li><b>v1.1 (Oct 8, 2026):</b> Honesty with the public added.</li>' +
+    '<li><b>v1.0 (Oct 8, 2026):</b> first published rubric.</li></ul>' +
+    '<h2 id="m-all">Everything else on each page</h2><p>Shown in full, from the same kinds of records, so voters can see the whole person and not only the score:</p><ul class="rules">' +
+    '<li><b>The 60-second brief</b> \u2014 generated automatically from the record on the page, never written by hand.</li>' +
+    '<li><b>Said vs. did</b> \u2014 statements set against votes, last campaign\u2019s promises and what happened to them, and dated position changes.</li>' +
+    '<li><b>Money one step back</b> \u2014 largest named donors, disclosed bundlers, and who funds the outside groups spending in the race.</li>' +
+    '<li><b>Personal finances and stock trades</b> \u2014 net worth range and trades from financial disclosures, flagged when the industry falls under one of their committees.</li>' +
+    '<li><b>In office</b> \u2014 bills sponsored and passed, the Center for Effective Lawmaking score, committees, lobbying ties and caucuses.</li>' +
+    '<li><b>Election results</b> \u2014 votes on certifying presidential results and on-record statements about accepting results, for both parties (Democrats objected in 2005 and 2017; Republicans in 2021).</li>' +
+    '<li><b>Facing voters</b> \u2014 debates accepted and declined, in-person town halls, and years living in the district or state.</li></ul>' +
+    '<h2 id="m-not">What is shown but not scored</h2>' +
+    '<ul class="rules">' +
+    '<li><b>Policy positions.</b> Whether a position is good for the country depends on the reader’s values, so positions are laid out side by side and left to the reader.</li>' +
+    '<li><b>Bankruptcy and business failures.</b> Shown in the record. Not scored, because hardship is not a conflict of interest. Unpaid tax liens and court judgments are scored, because they are obligations still owed.</li>' +
+    '<li><b>Endorsements and ratings.</b> AIPAC endorsements and Heritage Action scores are shown as part of the record. The money behind them is what counts in the score.</li>' +
+    '<li><b>Family members.</b> See the rules above.</li></ul>' +
+    '<div class="note">The overall score is Sophia’s own published judgment built from documented facts. It is not a fact in itself. Every part score and the weights are shown on every page, so a reader who weighs things differently can recompute it.</div>' +
+
+    '<h2 id="m-fix">Corrections</h2><p>If a page gets something wrong, send the source. A correction backed by a record changes the page and the score, with the change dated at the bottom of that page.</p>';
+};
+
+/* CANDIDATE — premium profile */
+VIEWS.cand = function(id){
+  var c = C[id], r = R[c.race], s = stateBy(r.state), sc = scoreCand(c), P = c.profile || {};
+  crumb(['2026 ELECTIONS', s.name.toUpperCase(), raceShort(r), c.name.toUpperCase()]);
+  var others = r.candidates.filter(function(x){ return x !== id; });
+  var h = '<section class="hero2" style="--pc:' + (PCOL[c.party] || '#c8d6ec') + '">' +
+    '<div class="hero2-top">' + avatar(c, true) + '<div class="hero2-id">' +
+      '<div class="kicker">' + esc(raceLabel(r)) + '</div><h1>' + esc(c.name) + '</h1>' +
+      '<div class="tagrow">' + partyChip(c.party) + '<span class="muted">' + PARTY[c.party] + '</span>' + (c.incumbent ? '<span class="inc">INCUMBENT</span>' : '') + '</div>' +
+      ((P.oneliner || c.profile_line) ? '<p class="oneliner">' + txt(P.oneliner || c.profile_line) + '</p>' : '') +
+    '</div></div>' +
+    '<div class="scorebox"><div class="sb-ring">' + ring(sc.overall, 124) + (sc.provisional ? '<div class="provtag">PROVISIONAL</div>' : '') + '</div><div class="sb-axes">' +
+      RUBRIC.axes.map(function(a){ var v = sc.ax[a.id]; return '<div class="sb-ax"><div class="sb-ax-h"><span>' + esc(a.name) + '</span><b>' + (v ? fmtS(v.s) : (sc.na && sc.na[a.id] ? 'N/A' : '\u2014')) + '</b></div>' + axisBar(v ? v.s : null) + '</div>'; }).join('') +
+      '<button class="linkbtn" data-go="method">How this score works →</button></div></div>' + pendNote(c, sc) +
+    '<div class="actions"><button class="btn" data-go="dash" data-arg="' + id + '">▦ Financial dashboard</button>' +
+      (others.length ? '<button class="btn ghost" data-go="compare" data-arg="' + r.id + '">⇄ Compare this race</button>' : '') +
+      (c.links && c.links.site ? '<a class="btn ghost" href="' + esc(c.links.site) + '" target="_blank" rel="noopener">Campaign site ↗</a>' : '') +
+      (c.links && c.links.official ? '<a class="btn ghost" href="' + esc(c.links.official) + '" target="_blank" rel="noopener">Official site \u2197</a>' : '') +
+      ((c.fec && c.fec.cid) || c.fec_id ? '<a class="btn ghost" href="https://www.fec.gov/data/candidate/' + esc((c.fec && c.fec.cid) || c.fec_id) + '/?cycle=2026" target="_blank" rel="noopener">FEC \u2197</a>' : '') + '</div>' +
+    (c.photo && c.photo.page ? '<div class="src">Photo: <a href="' + esc(c.photo.page) + '" target="_blank" rel="noopener">' + esc(c.photo.credit || 'source') + '</a></div>' : '') +
+    '</section>';
+
+  var B = brief(c);
+  h += '<section class="brief"><div class="brief-h"><span class="kicker" style="margin:0">The 60-second brief</span><span class="muted">Generated from the record below</span></div>' +
+    (B.length ? B.map(function(b){ return '<div class="brief-i"><span class="brief-ic">' + b[0] + '</span><div><b>' + esc(b[1]) + '</b><div>' + esc(b[2]) + '</div></div></div>'; }).join('') : '<div class="empty">Fills in automatically as this candidate is researched.</div>') + '</section>';
+  h += '<nav class="chips sticky"><a href="#c-bg">Background</a><a href="#c-score">Score</a><a href="#c-claims">Claims vs. record</a><a href="#c-pos">Positions</a><a href="#c-saydo">Said vs. did</a><a href="#c-votes">Votes</a><a href="#c-isr">Israel</a><a href="#c-money">Money</a><a href="#c-fin">Finances</a><a href="#c-office">In office</a><a href="#c-dem">Election results</a><a href="#c-access">Access</a><a href="#c-foreign">Foreign ties</a><a href="#c-legal">Legal</a><a href="#c-check">Checklist</a></nav>';
+
+  /* background */
+  h += '<h2 id="c-bg">Who they are</h2>';
+  if(c.profile){
+    var facts = [];
+    if(P.born) facts.push(['Born', txt(P.born)]);
+    if(P.hometown) facts.push(['Raised', txt(P.hometown)]);
+    if(P.residence) facts.push(['Lives', txt(P.residence)]);
+    if(P.office_years != null) facts.push(['Years in office', esc(P.office_years)]);
+    h += facts.length ? '<div class="facts">' + facts.map(function(f){ return '<div><div class="fl">' + f[0] + '</div><div class="fv">' + f[1] + '</div></div>'; }).join('') + '</div>' : '';
+    if(P.upbringing) h += '<p class="bodyp">' + txt(P.upbringing) + '</p>';
+    h += '<h3>Education</h3>' + ((P.education || []).length ? '<div class="tl">' + P.education.map(function(e){ return '<div class="tl-i"><div class="tl-y">' + esc(e.year || '') + '</div><div class="tl-b"><b>' + esc(e.deg || EDU_LBL[e.level]) + '</b><div class="muted">' + esc(e.school || '') + cite(e.c) + '</div></div></div>'; }).join('') + '</div>' : '<div class="empty">None documented.</div>');
+    h += '<h3>Career</h3>' + ((P.career || []).length ? '<div class="tl">' + P.career.map(function(j){ return '<div class="tl-i"><div class="tl-y">' + esc(j.yrs || '') + '</div><div class="tl-b"><b>' + esc(j.role) + '</b><div class="muted">' + esc(j.org || '') + (PRO_KINDS[j.kind] ? ' · counts as ' + PRO_KINDS[j.kind].toLowerCase() : j.kind === 'office' ? ' · public office' : '') + cite(j.c) + '</div></div></div>'; }).join('') + '</div>' : '<div class="empty">None documented.</div>');
+  } else h += pendingBox('Upbringing, education and career', s);
+
+  /* score breakdown */
+  h += '<h2 id="c-score">How the score was reached</h2><p class="muted">Each part starts from the documented record and the published formula. Weights: ' + RUBRIC.axes.map(function(a){ return esc(a.name) + ' ' + Math.round(a.w * 100) + '%'; }).join(' · ') + '.</p>';
+  h += '<div class="grid g2" style="margin-top:10px">' + RUBRIC.axes.map(function(a){
+    var v = sc.ax[a.id];
+    return '<div class="card axcard"><div class="axhead"><div><div style="font-weight:800">' + esc(a.name) + '</div><div class="muted">' + esc(a.q) + '</div></div><div class="axscore" style="color:' + scoreColor(v ? v.s : null) + '">' + (v ? fmtS(v.s) : (sc.na && sc.na[a.id] ? 'N/A' : '\u2014')) + '</div></div>' + axisBar(v ? v.s : null) +
+      (v ? (v.status && v.status !== 'final' ? '<div class="tone warn" style="display:inline-block;margin-top:8px">' + (v.status === 'provisional' ? 'Provisional' : esc(v.status)) + (v.note ? ' \u2014 ' + esc(v.note) : '') + '</div>' : '') + '<ul class="why">' + v.why.map(function(w){ return '<li><span class="wv ' + (w.length === 3 ? 'pt' : (w[0] < 0 ? 'neg' : w[0] > 0 ? 'pos' : 'zero')) + '">' + (w.length === 3 ? w[0] + '/' + w[1] : (w[0] < 0 ? '−' + Math.abs(w[0]) : w[0] > 0 ? '+' + w[0] : '0')) + '</span>' + esc(w[w.length - 1]) + '</li>'; }).join('') + '</ul>' : (sc.na[a.id] ? '<div class="empty">Not applicable: no record of votes in Congress. Its weight is spread across the other parts.</div>' : '<div class="empty">Not yet researched.</div>')) + '</div>';
+  }).join('') + '</div>';
+
+  /* positions */
+  h += '<h2 id="c-claims">Claims vs. the record</h2><p class="muted">The same fixed sample for every candidate: what they say about their own life and career, plus their ten most-repeated campaign claims. Only claims that can be checked against a record get a verdict.</p>' + claimsBlock(c, s);
+  h += '<h2 id="c-pos">What they propose</h2>';
+  if(c.platform && c.platform.length) h += '<div class="tbwrap"><table class="tb"><thead><tr><th>Issue</th><th>Position</th></tr></thead><tbody>' + c.platform.map(function(p){ return '<tr><td>' + esc(p.topic) + '</td><td>' + txt(p) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  else h += pendingBox('Platform and positions', s);
+  if(c.promises && c.promises.length) h += '<h3>Promises on the record</h3><ul class="rules">' + c.promises.map(function(p){ return '<li>' + txt(p) + '</li>'; }).join('') + '</ul>';
+
+  h += '<h2 id="c-saydo">Said vs. did</h2>' + sayDoBlock(c, s);
+  if(r.chamber !== 'governor' || c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + votesBlock(c, s);
+  h += '<h2 id="c-isr">Israel: the documented record</h2>' + israelBlock(c, s);
+  h += '<h2 id="c-money">Who’s paying for this campaign?</h2>' + moneyBlock(c, s) + '' + money2Block(c) + '<div style="margin-top:10px"><button class="btn ghost" data-go="dash" data-arg="' + id + '">Open the full financial dashboard →</button></div>';
+  h += '<h2 id="c-fin">Personal finances & stock trades</h2>' + financesBlock(c, s);
+  h += '<h2 id="c-office">In office: what they’ve done and who they work with</h2>' + officeBlock(c, s);
+  h += '<h2 id="c-dem">Election results: certify and accept?</h2>' + democracyBlock(c, s);
+  h += '<h2 id="c-access">Facing voters</h2>' + accessBlock(c, s);
+
+  h += '<h2 id="c-foreign">Foreign business ties</h2>';
+  if(c.checks && c.checks.foreign){
+    h += (c.foreign && c.foreign.length) ? recList(c.foreign) : '<div class="clear">Checked — nothing documented. Searched: ' + esc(c.checks.foreign) + '.</div>';
+  } else h += pendingBox('Foreign assets, income, FARA registrations and foreign-government payments', s);
+
+  h += '<h2 id="c-legal">Legal & financial record</h2>';
+  if(c.checks && c.checks.legal){
+    h += (c.legal && c.legal.length) ? recList(c.legal) : '<div class="clear">Checked — nothing documented. Searched: ' + esc(c.checks.legal) + '.</div>';
+  } else h += pendingBox('Court cases, ethics findings, liens, judgments, bankruptcies and business closures', s);
+
+  h += '<h2 id="c-check">Research checklist</h2>' + checklistBlock(c);
+  if(c.gaps && c.gaps.length) h += '<h2 id="c-gaps">Still being checked</h2><p class="muted">What the records searched so far could not confirm. Parts of the score that depend on these may change.</p><ul class="rules">' + c.gaps.map(function(g){ return '<li>' + esc(g) + '</li>'; }).join('') + '</ul>';
+  h += '<div class="note">These figures show who funded the campaign and who spent around it. A donation on its own does not show that it changed a vote or a position. Family members’ records are not counted as the candidate’s.</div>';
+  h += '<div class="src">Last checked: ' + esc(c.checked || D.meta.asof) + ' · Rubric v' + RUBRIC.version + '</div>';
+  return h;
+};
+function recList(items){
+  return '<div class="recs">' + items.map(function(it){
+    var L = LEGAL[it.kind] || {lbl:it.kind, tone:'neutral'};
+    return '<div class="rec"><div class="rec-h"><span class="tone ' + L.tone + '">' + esc(L.lbl) + '</span><span class="muted">' + esc(it.d || '') + '</span></div><div class="rec-t">' + txt(it) + '</div>' + (it.status ? '<div class="muted" style="margin-top:4px">Status: ' + esc(it.status) + '</div>' : '') + '</div>';
+  }).join('') + '</div>';
+}
+
+/* COMPARE — every candidate in a race, side by side */
+VIEWS.compare = function(rid){
+  var r = R[rid], s = stateBy(r.state), cs = r.candidates.map(function(x){ return C[x]; });
+  crumb(['2026 ELECTIONS', s.name.toUpperCase(), raceShort(r), 'COMPARE']);
+  var h = '<div class="kicker">Compare the race</div><h1>' + esc(raceLabel(r)) + '</h1>' +
+    '<p class="lede">Every candidate on the same rubric, from the same kinds of records. <a href="#" data-go="method">How the score works</a>.</p>';
+  /* factual superlatives, computed — only from candidates with the data */
+  var withF = cs.filter(function(c){ return scoreCand(c).ax.funding; }), lines = [];
+  if(withF.length > 1){
+    var bySmall = withF.slice().sort(function(a, b){ return scoreCand(b).ax.funding.small - scoreCand(a).ax.funding.small; })[0];
+    var byInt = withF.slice().sort(function(a, b){ return scoreCand(b).ax.funding.interest - scoreCand(a).ax.funding.interest; })[0];
+    lines.push('Largest share from small donors: <b>' + esc(bySmall.name) + '</b> (' + pct(scoreCand(bySmall).ax.funding.small) + ')');
+    lines.push('Largest share from PACs and interest-group bundling: <b>' + esc(byInt.name) + '</b> (' + pct(scoreCand(byInt).ax.funding.interest) + ')');
+    var isr = withF.map(function(c){ return [c, israelTotals(c)]; }).filter(function(x){ return x[1].direct + x[1].outside > 0; });
+    if(isr.length) lines.push('Pro-Israel PAC money or outside spending in support: ' + isr.map(function(x){ return '<b>' + esc(x[0].name) + '</b> ' + money(x[1].direct + x[1].outside); }).join(' · '));
+    else lines.push('No pro-Israel PAC money or supporting outside spending documented for any candidate here this cycle.');
+  }
+  var scored = cs.filter(function(c){ return scoreCand(c).done; });
+  if(scored.length > 1){ var top = scored.slice().sort(function(a, b){ return scoreCand(b).overall - scoreCand(a).overall; }); lines.unshift('Highest overall score: <b>' + esc(top[0].name) + '</b> (' + fmtS(scoreCand(top[0]).overall) + ')' + (scoreCand(top[0]).overall === scoreCand(top[1]).overall ? ', tied with ' + esc(top[1].name) : '')); }
+  if(lines.length) h += '<div class="card" style="margin-top:14px"><h3 style="margin-top:0">At a glance</h3><ul class="rules">' + lines.map(function(l){ return '<li>' + l + '</li>'; }).join('') + '</ul></div>';
+  else h += '<div style="margin-top:14px">' + pendingBox('Scores and money for this race', s) + '</div>';
+
+  if(cs.length > 1) h += '<div class="muted swipe">Swipe sideways to see all ' + cs.length + ' candidates →</div>';
+  h += '<div class="cmp" style="--n:' + cs.length + '">' + cs.map(function(c){
+    var sc = scoreCand(c), f = sc.ax.funding, it = israelTotals(c), P = c.profile || {};
+    var top = 'none'; (P.education || []).forEach(function(e){ if((EDU_PTS[e.level] || 0) >= (EDU_PTS[top] || 0)) top = e.level; });
+    var nCon = (c.legal || []).concat(c.foreign || []).filter(function(x){ return LEGAL[x.kind] && LEGAL[x.kind].d; }).length;
+    return '<div class="cmpcol" style="--pc:' + (PCOL[c.party] || '#c8d6ec') + '"><div class="cmp-h" data-go="cand" data-arg="' + c.id + '">' + avatar(c) + '<div><div style="font-weight:800">' + esc(c.name) + '</div><div class="tagrow">' + partyChip(c.party) + (c.incumbent ? '<span class="inc">INC</span>' : '') + '</div></div></div>' +
+      '<div class="cmp-ring">' + ring(sc.overall, 96) + '</div>' +
+      RUBRIC.axes.map(function(a){ var v = sc.ax[a.id]; return '<div class="sb-ax"><div class="sb-ax-h"><span>' + esc(a.name) + '</span><b>' + (v ? fmtS(v.s) : (sc.na && sc.na[a.id] ? 'N/A' : '\u2014')) + '</b></div>' + axisBar(v ? v.s : null) + '</div>'; }).join('') +
+      '<div class="cmp-rows">' +
+        crow('Raised', c.fec ? money(c.fec.receipts) : '—') +
+        crow('From small donors', f ? pct(f.small) : '—') +
+        crow('PAC & interest-bundled', f ? pct(f.interest) : '—') +
+        crow('Outside spending to help', f ? money(f.outside) : '—') +
+        crow('Pro-Israel money this cycle', c.israel ? money(it.direct + it.outside) : '—') +
+        crow('Highest education', c.profile ? (EDU_LBL[top] || '—') : '—') +
+        crow('Years in office', P.office_years != null ? P.office_years : '—') +
+        crow('Scored conflicts', c.checks && c.checks.legal ? nCon : '—') +
+        crow('Claims rated false / misleading', sc.ax.honesty ? sc.ax.honesty.nFalse + ' / ' + sc.ax.honesty.nMis : '\u2014') +
+        crow('Repeated after correction', sc.ax.honesty ? sc.ax.honesty.nRep : '\u2014') +
+        crow('With the President on key votes', (function(){ var v = voteStats(c); if(!v) return '\u2014'; return Object.keys(v.pres).map(function(P){ return P + ' ' + v.pres[P][0] + '/' + v.pres[P][1]; }).join(' \u00b7 ') || '\u2014'; })()) +
+        crow('Bills that became law', c.effectiveness && c.effectiveness.sponsored != null ? c.effectiveness.law + ' of ' + c.effectiveness.sponsored : '\u2014') +
+      '</div>' +
+      (c.fec ? '<div class="muted" style="margin:10px 0 6px">Where the money came from</div>' + stackBar(srcItems(c.fec)) : '') +
+      '<button class="btn ghost sm" data-go="cand" data-arg="' + c.id + '">Full profile →</button></div>';
+  }).join('') + '</div>';
+  h += '<div class="note">Scores measure documented preparation, funding, honesty, conflicts and record. They do not rate anyone’s policy positions.</div>';
+  return h;
+};
+function crow(l, v){ return '<div class="crow"><span>' + esc(l) + '</span><b>' + v + '</b></div>'; }
+
+/* ===== v0.5 · VOTING RECORD on a fixed, published key-vote list ===== */
+var KV = (D.keyvotes && D.keyvotes.votes) || [], KVBY = {};
+KV.forEach(function(v){ KVBY[v.id] = v; });
+var KCAT = [['pocketbook','Health care, wages & cost of living'],['taxes','Taxes: who gets the cuts'],['israel','Israel'],
+            ['foreign_aid_war','War, defense & foreign aid'],['corporate','Industry & corporations'],['debt_spending','Debt, spending & shutdowns'],
+            ['democracy_rights','Elections & civil liberties'],['immigration','Immigration'],['tariffs_trade','Tariffs & trade']];
+function voteNorm(v){ v = String(v || '').toLowerCase(); return /^(yea|aye|yes)/.test(v) ? 'yes' : /^(nay|no)/.test(v) ? 'no' : /not voting|absent/.test(v) ? 'nv' : /present/.test(v) ? 'present' : ''; }
+function voteStats(c){
+  var mv = c.votes_kv; if(!mv) return null;
+  var out = {n:0, missed:0, party:[0,0], pres:{}};
+  Object.keys(mv).forEach(function(id){
+    var k = KVBY[id]; if(!k) return; var v = voteNorm(mv[id]); out.n++;
+    if(v === 'nv'){ out.missed++; return; }
+    if(v !== 'yes' && v !== 'no') return;
+    var pm = k.party_majority && k.party_majority[c.party === 'I' ? (c.caucus || 'D') : c.party];
+    if(pm){ out.party[1]++; if(voteNorm(pm) === v) out.party[0]++; }
+    if(k.admin && (k.admin.pos === 'support' || k.admin.pos === 'oppose')){
+      var P = k.admin.president, rec = out.pres[P] || (out.pres[P] = [0,0]); rec[1]++;
+      if((k.admin.pos === 'support') === (v === 'yes')) rec[0]++;
+    }
+  });
+  return out;
+}
+function votesBlock(c, s){
+  if(!c.votes_kv) return pendingBox(c.incumbent || (c.profile && c.profile.office_years) ? 'How they voted on the published key-vote list' : 'Voting record (applies to anyone who has served in Congress)', s);
+  var st = voteStats(c), h = '';
+  h += '<p class="muted">Every sitting member is checked against the same published list of ' + KV.filter(function(k){ return k.chamber === (c.votes_chamber || 'house'); }).length + ' key ' + (c.votes_chamber || 'house') + ' votes from 2023–2026, chosen before anyone’s votes were looked up. <a href="#" data-go="keyvotes">See the list and how it was chosen</a>.</p>';
+  var k = [];
+  Object.keys(st.pres).forEach(function(P){ var r = st.pres[P]; k.push(kpi(r[0] + ' of ' + r[1], 'Voted with President ' + P + '’s stated position')); });
+  if(st.party[1]) k.push(kpi(st.party[0] + ' of ' + st.party[1], 'Voted with their party’s majority'));
+  k.push(kpi(String(st.missed), 'Key votes missed'));
+  h += '<div class="kpis" style="margin-top:10px">' + k.join('') + '</div>';
+  KCAT.forEach(function(cat){
+    var rows = KV.filter(function(kv){ return kv.category === cat[0] && c.votes_kv[kv.id] != null; });
+    if(!rows.length) return;
+    h += '<h3>' + esc(cat[1]) + '</h3><div class="recs">' + rows.map(function(kv){
+      var v = voteNorm(c.votes_kv[kv.id]), lbl = {yes:'Voted YES', no:'Voted NO', nv:'Did not vote', present:'Voted present'}[v] || esc(c.votes_kv[kv.id]);
+      var pm = kv.party_majority && kv.party_majority[c.party], withP = pm && (v === 'yes' || v === 'no') ? (voteNorm(pm) === v ? 'with' : 'against') : null;
+      var ad = kv.admin && (kv.admin.pos === 'support' || kv.admin.pos === 'oppose') && (v === 'yes' || v === 'no') ? (((kv.admin.pos === 'support') === (v === 'yes')) ? 'with' : 'against') : null;
+      return '<div class="rec vote"><div class="rec-h"><b>' + esc(kv.bill) + ' · ' + esc(kv.title) + '</b><span class="vchip v-' + v + '">' + lbl + '</span></div>' +
+        '<div class="rec-t">' + esc(kv.what) + '</div>' +
+        (kv.effect && kv.effect.t ? '<div class="muted" style="margin-top:4px">Projected effect: ' + txt(kv.effect) + '</div>' : '') +
+        '<div class="vmeta"><span>' + esc(kv.date) + ' · ' + esc(kv.outcome || '') + '</span>' +
+        (withP ? '<span>' + (withP === 'with' ? 'With' : 'Against') + ' most ' + (c.party === 'D' ? 'Democrats' : c.party === 'R' ? 'Republicans' : 'of their caucus') + '</span>' : '') +
+        (ad ? '<span>' + (ad === 'with' ? 'With' : 'Against') + ' President ' + esc(kv.admin.president) + '’s position</span>' : '') +
+        (kv.url ? '<a href="' + esc(kv.url) + '" target="_blank" rel="noopener">Roll call ↗</a>' : '') + '</div>' +
+        (function(){ var st = D.stances && D.stances.stances[kv.id]; if(!st || (v !== 'yes' && v !== 'no')) return ''; var al = v === st.pos;
+          return '<div class="stance ' + (al ? 'al' : 'nal') + '"><b>' + (al ? 'Sided with households' : 'Sided against households') + '</b> \u00b7 Sophia\u2019s position: ' + st.pos.toUpperCase() + ' \u2014 ' + esc(st.why) + cite(st.c) + '</div>'; })() + '</div>';
+    }).join('') + '</div>';
+  });
+  if(c.votes_note) h += '<div class="note">' + txt(c.votes_note) + '</div>';
+  return h;
+}
+VIEWS.keyvotes = function(){
+  crumb(['2026 ELECTIONS', 'KEY VOTES']);
+  var h = '<div class="kicker">Method</div><h1>The key-vote list</h1><p class="lede">' + esc((D.keyvotes && D.keyvotes.selection_rule) || '') + '</p>';
+  ['house', 'senate'].forEach(function(ch){
+    [119, 118].forEach(function(cg){
+      var vs = KV.filter(function(k){ return k.chamber === ch && k.congress === cg; }); if(!vs.length) return;
+      h += '<h2>' + (ch === 'house' ? 'House' : 'Senate') + ' · ' + cg + 'th Congress (' + (cg === 119 ? '2025–26' : '2023–24') + ')</h2><div class="tbwrap"><table class="tb"><thead><tr><th>Vote</th><th>What it did</th></tr></thead><tbody>' +
+        vs.map(function(k){ return '<tr><td>' + esc(k.bill) + '<div class="muted" style="font-weight:400">' + esc(k.date) + (k.roll ? ' · roll ' + k.roll : '') + (k.verify ? ' · roll number being confirmed' : '') + '</div></td><td>' + esc(k.title) + ' — ' + esc(k.what) + cite(k.c) +
+          (k.admin && k.admin.pos && k.admin.pos !== 'none found' ? '<div class="muted">White House (' + esc(k.admin.president) + '): ' + esc(k.admin.pos) + cite(k.admin.c) + '</div>' : '') + '</td></tr>'; }).join('') + '</tbody></table></div>';
+    });
+  });
+  return h;
+};
+
+/* ===== v0.6 · published positions page + case study ===== */
+VIEWS.stances = function(){
+  crumb(['2026 ELECTIONS', 'SOPHIA\u2019S POSITIONS']);
+  var ST = (D.stances && D.stances.stances) || {};
+  var h = '<div class="kicker">Method \u00b7 Votes for people</div><h1>Where Sophia stands on each key vote</h1><p class="lede">' + esc((D.stances && D.stances.rule) || '') + '</p>' +
+    '<div class="note">These positions are Sophia\u2019s published judgment, built on the documented record cited beside each one. They are applied the same way to every member of every party, and a reader who disagrees with a position can see exactly how it moves each score.</div>';
+  KCAT.forEach(function(cat){
+    var rows = KV.filter(function(k){ return ST[k.id] && ST[k.id].cat === cat[0]; }); if(!rows.length) return;
+    h += '<h3>' + esc(cat[1]) + '</h3><div class="recs">' + rows.map(function(k){ var st = ST[k.id];
+      return '<div class="rec"><div class="rec-h"><b>' + esc(k.bill) + ' \u00b7 ' + esc(k.title) + '</b><span class="vchip v-' + st.pos + '">Sophia: ' + st.pos.toUpperCase() + '</span></div><div class="rec-t">' + esc(st.why) + cite(st.c) + '</div><div class="vmeta"><span>' + (k.chamber === 'house' ? 'House' : 'Senate') + ' \u00b7 ' + esc(k.date) + '</span></div></div>'; }).join('') + '</div>';
+  });
+  var none = KV.filter(function(k){ return !ST[k.id]; });
+  h += '<h3>Shown on pages, not scored</h3><p class="muted">' + none.map(function(k){ return esc(k.bill) + ' (' + (k.chamber === 'house' ? 'House' : 'Senate') + ')'; }).join(' \u00b7 ') + '</p>';
+  return h;
+};
+VIEWS.casestudy = function(id){
+  var cs = (D.cases || {})[id || 'massie']; if(!cs) return '<div class="empty">Case study not found.</div>';
+  crumb(['2026 ELECTIONS', 'CASE STUDY']);
+  var h = '<div class="kicker">Case study \u00b7 ' + esc(cs.kicker) + '</div><h1>' + esc(cs.title) + '</h1><p class="lede">' + txt(cs.lede) + '</p>';
+  h += '<div class="kpis" style="margin-top:14px">' + cs.kpis.map(function(k){ return kpi(esc(k[0]), k[1]); }).join('') + '</div>';
+  cs.sections.forEach(function(sec){ h += '<h2>' + esc(sec.h) + '</h2>' + sec.p.map(function(p){ return '<p class="bodyp">' + txt(p) + '</p>'; }).join(''); });
+  h += '<div class="case" style="margin-top:18px"><div class="kicker" style="margin:0">What the record supports, and what it doesn\u2019t</div>' + cs.discipline.map(function(p){ return '<p class="bodyp">' + txt(p) + '</p>'; }).join('') + '</div>';
+  h += '<div class="note">Open the full record in the Israel simulation: chapter \u201cPro-Israel Money in Congress,\u201d scene \u201cThree Members, Three Records, Three Outcomes.\u201d</div>';
+  return h;
+};
+
+/* ===== Rubric v2.1 · STRICT =====
+   Same rules for everyone. Unknown is never scored as clean. Every part starts from a neutral 3 (except
+   Preparation, which is built from points) and moves only on documented evidence. No caps on deductions. */
+var CHECKS = [
+  ['money_history', 'Career money history (FEC, pro-Israel trackers, super PAC funders)'],
+  ['courts',        'Court records (federal and state dockets)'],
+  ['ethics',        'Ethics records (House/Senate Ethics, OCE, state boards)'],
+  ['disclosures',   'Personal financial disclosures'],
+  ['fara',          'Foreign-agent (FARA) database'],
+  ['claims',        'Fixed claim sample checked'],
+  ['votes',         'Key-vote roll calls'],
+  ['democracy',     'Election-certification votes and statements']
+];
+function chk(c, k){ return (c.checklist || {})[k] || 'no'; }            // 'done' | 'news' | 'na' | 'no'
+function partStatus(c, keys){
+  var st = keys.map(function(k){ return chk(c, k); });
+  if(st.indexOf('no') > -1) return 'incomplete';
+  return st.indexOf('news') > -1 ? 'provisional' : 'final';
+}
+function sum(a){ return a.reduce(function(t, x){ return t + x; }, 0); }
+
+function scoreFunding(c){
+  var f = c.fec; if(!f || !f.receipts || !f.src || chk(c, 'money_history') === 'no') return null;   // no source breakdown = not enough to score
+  var r = f.receipts, s = f.src || {}, why = [], x = 3, fl = moneyFlags(c), full = chk(c, 'money_history') === 'done';
+  if(fl.corp){ x -= 0.75; why.push([-0.75, 'Took or was backed by corporate or industry money (any amount, any cycle): ' + fl.corp.t]); }
+  else if(full){ x += 0.75; why.push([0.75, 'No corporate or industry money anywhere in a fully searched career record']); }
+  else why.push([0, 'No corporate money found, but the career search is not complete, so no credit is given']);
+  if(fl.lobby){ x -= 0.75; why.push([-0.75, 'Took or was backed by foreign-policy lobby money (any amount, any cycle): ' + fl.lobby.t]); }
+  else if(full){ x += 0.75; why.push([0.75, 'No foreign-policy lobby money anywhere in a fully searched career record']); }
+  else why.push([0, 'No foreign-policy lobby money found, but the career search is not complete, so no credit is given']);
+  var org = (s.pac_biz || 0) + (s.pac_ideo || 0) + (s.pac || 0) + (s.earmark || 0) + (s.party || 0), interest = org / r;
+  var d1 = Math.floor(interest * 100 / 5) * 0.25;
+  if(d1){ x -= d1; } why.push([-d1, 'PAC, party and interest-group-bundled money this cycle: ' + pct(interest) + ' of receipts (−0.25 per 5 points)']);
+  var small = (s.small || 0) / r, d2 = small >= 0.5 ? 0.5 : small >= 0.3 ? 0.25 : small < 0.10 ? -0.75 : small < 0.20 ? -0.5 : 0;
+  x += d2; why.push([d2, 'Small donors (≤$200): ' + pct(small) + ' of receipts']);
+  var sup = 0; ((f.outside || {}).support || []).forEach(function(o){ if(!o[3]) sup += (o[1] || 0); });
+  var ratio = sup / r, d3 = ratio >= 1 ? 1 : ratio >= 0.25 ? 0.5 : 0;
+  x -= d3; why.push([-d3, 'Outside groups spending to help: ' + money(sup) + ' (' + (Math.round(ratio * 100) / 100) + '× the campaign’s own receipts)']);
+  return {s: q4(clamp(x)), why: why, interest: interest, small: small, outside: sup, flags: fl, status: partStatus(c, ['money_history'])};
+}
+
+var VERDICT2 = {'true': 0.25, 'partly': -0.25, 'misleading': -0.5, 'false': -1, 'unverifiable': 0, 'opinion': 0};
+function scoreHonesty(c){
+  if(chk(c, 'claims') === 'no') return null;
+  var cl = c.claims || [], x = 3, why = [], pos = 0, rated = 0;
+  cl.forEach(function(k){
+    var v = k.verdict; if(!(v in VERDICT2)) return;
+    if(v !== 'opinion' && v !== 'unverifiable') rated++;
+    var d = VERDICT2[v];
+    if(v === 'true'){ if(pos >= 2) d = 0; else pos += d; }
+    if(v === 'unverifiable' && (k.kind || 'campaign') === 'bio') d = -0.1;          // their own record: the burden of proof is theirs
+    if(d){ x += d; why.push([d, (VERDICT[v] ? VERDICT[v].lbl : v) + ': ' + (k.short || k.claim)]); }
+    if(k.repeated){ x -= 0.5; why.push([-0.5, 'Said again after being corrected: ' + (k.short || k.claim)]); }
+  });
+  why.unshift([0, rated + ' checkable claims rated out of ' + cl.length + ' in the fixed sample']);
+  if(rated < 5) return {s: null, why: why, rated: rated, status: 'incomplete', nFalse: 0, nMis: 0, nRep: 0, note: 'Fewer than 5 checkable claims — not enough to score'};
+  return {s: q4(clamp(x)), why: why, rated: rated, status: partStatus(c, ['claims']),
+          nFalse: cl.filter(function(k){ return k.verdict === 'false'; }).length,
+          nMis: cl.filter(function(k){ return k.verdict === 'misleading'; }).length,
+          nRep: cl.filter(function(k){ return k.repeated; }).length};
+}
+
+function scoreConflicts(c){
+  var need = ['courts', 'ethics', 'disclosures', 'fara', 'democracy'], st = partStatus(c, need);
+  if(st === 'incomplete') return null;
+  var items = (c.legal || []).concat(c.foreign || []), x = 5, why = [];
+  items.forEach(function(it){ var L = LEGAL[it.kind]; if(!L || !L.d) return; x -= L.d; why.push([-L.d, L.lbl + ': ' + (it.short || it.t)]); });
+  var tr = c.finances && c.finances.trades && c.finances.trades.overlap || [];
+  tr.forEach(function(t){ x -= 0.25; why.push([-0.25, 'Stock trade in an industry their committee oversees: ' + t.asset + ' (' + t.d + ')']); });
+  (c.democracy || []).forEach(function(d){ if(d.kind === 'objected'){ x -= 1; why.push([-1, 'Voted to reject certified election results (' + d.d + ')']); } });
+  if(!why.length) why.push([0, 'Nothing found in a completed search of the required records']);
+  return {s: q4(clamp(x)), why: why, status: st};
+}
+
+function scoreRecord(c){
+  var R0 = c.recordx || {}, parts = [], why = [];
+  var miss = R0.missed_pct, src = 'official rate';
+  if(miss == null && c.votes_kv){ var vs = voteStats(c); if(vs && vs.n){ miss = Math.round(vs.missed / vs.n * 1000) / 10; src = 'key-vote attendance; official rate not yet checked'; } }
+  if(miss != null){ var v = miss < 2 ? 5 : miss < 5 ? 4 : miss < 10 ? 3 : miss < 20 ? 2 : 1; parts.push(v); why.push([v, 'Missed votes: ' + miss + '% (' + src + ')']); }
+  if(R0.disclosure){ var dv = {'on-time':5, 'extension':5, 'late':3, 'missing':1}[R0.disclosure]; parts.push(dv); why.push([dv, 'Personal financial disclosure: ' + R0.disclosure.replace('-', ' ')]); }
+  if(R0.fec){ var fv = {'clean':5, 'notices':4, 'fined':3}[R0.fec]; parts.push(fv); why.push([fv, 'FEC filing record: ' + R0.fec]); }
+  if(parts.length < 2) return null;                                       // one item is not a record
+  return {s: q4(sum(parts) / parts.length), why: why, status: (R0.missed_pct == null && c.incumbent) ? 'provisional' : 'final'};
+}
+
+function scoreVotes(c){
+  if(!c.votes_kv) return null;
+  var ST = (D.stances && D.stances.stances) || {}, opp = 0, ok = 0, missed = 0, why = [];
+  Object.keys(c.votes_kv).forEach(function(id){
+    var st = ST[id], k = KVBY[id]; if(!st || !k) return;
+    var v = voteNorm(c.votes_kv[id]); opp++;
+    if(v === 'yes' || v === 'no'){ var al = v === st.pos; if(al) ok++; why.push([al ? 1 : 0, 1, (al ? 'Sided with households: ' : 'Sided against: ') + k.bill + ' — voted ' + v.toUpperCase() + ' (Sophia position: ' + st.pos.toUpperCase() + ')']); }
+    else { missed++; why.push([0, 1, 'Did not vote: ' + k.bill + ' (counted as not standing up)']); }
+  });
+  if(!opp) return null;
+  why.unshift([ok, opp, 'Scored key votes where they sided with Sophia’s published people-first position (missed votes count against)']);
+  return {s: q4(clamp(1 + 4 * ok / opp)), why: why, ok: ok, n: opp, status: opp < 8 ? 'provisional' : 'final', note: opp < 8 ? 'Fewer than 8 scored votes' : ''};
+}
+
+function scoreCand(c){
+  if(c._sc) return c._sc;
+  var ax = {prep:scorePrep(c), funding:scoreFunding(c), votes:scoreVotes(c), honesty:scoreHonesty(c), conflicts:scoreConflicts(c), record:scoreRecord(c)};
+  Object.keys(ax).forEach(function(k){ if(ax[k] && ax[k].s == null) ax[k] = null; });
+  var na = {votes: !votesApplies(c)};
+  var used = RUBRIC.axes.filter(function(a){ return !na[a.id]; });
+  var done = used.every(function(a){ return ax[a.id]; });
+  var W = sum(used.map(function(a){ return a.w; }));
+  var overall = done ? q4(sum(used.map(function(a){ return a.w / W * ax[a.id].s; }))) : null;
+  var prov = done && used.some(function(a){ return ax[a.id].status && ax[a.id].status !== 'final'; });
+  return (c._sc = {ax: ax, overall: overall, done: done, na: na, provisional: prov});
+}
+
+function pendNote(c, sc){
+  if(sc.overall != null || c.research === 'pending') return '';
+  var lbl = {money_history:'full career money history', courts:'court records', ethics:'ethics records', disclosures:'financial disclosures', fara:'the foreign-agent (FARA) database', claims:'the claims check', votes:'key-vote roll calls', democracy:'election-certification record'};
+  var need = CHECKS.filter(function(k){ return chk(c, k[0]) === 'no'; }).map(function(k){ return lbl[k[0]]; });
+  if(sc.ax.honesty == null && chk(c, 'claims') !== 'no') need.push('at least 5 checkable claims (the campaign\u2019s pages could not all be reached yet)');
+  return '<div class="pendnote"><b>Overall score pending \u2014 due diligence in progress.</b> We publish an overall score only after every record behind it has been searched; nothing is estimated or assumed clean.' +
+    (need.length ? ' Still to search: ' + esc(need.join(', ')) + '.' : '') + ' Each part shown above is already calculated from the record; a dash means that part is still waiting on a search.</div>';
+}
+function checklistBlock(c){
+  var lbl = {done:'Searched directly', news:'Through news reporting only', na:'Does not apply', no:'Not yet searched'};
+  return '<div class="recs">' + CHECKS.map(function(k){ var v = chk(c, k[0]);
+    return '<div class="rec chk chk-' + v + '"><div class="rec-h"><b>' + esc(k[1]) + '</b><span class="tone ' + ({done:'ok', news:'warn', na:'neutral', no:'bad'}[v]) + '">' + lbl[v] + '</span></div></div>'; }).join('') + '</div>' +
+    '<p class="muted" style="margin-top:8px">Every candidate gets this same checklist. A part of the score that depends on a record searched only through news reporting is marked provisional; one that depends on a record not yet searched isn’t scored at all.</p>';
+}
+
+(function(){
+  var pb = document.getElementById('pendbar');
+  var anyPending = Object.keys(C).some(function(k){ var c = C[k]; return c.research !== 'pending' && scoreCand(c).overall == null; });
+  if(!anyPending){ pb.style.display = 'none'; return; }
+  pb.addEventListener('click', function(e){
+    var t = e.target.closest('[data-go]'); if(!t) return;
+    e.preventDefault(); pb.querySelector('details').open = false; go('method');
+    setTimeout(function(){ var el = document.getElementById('m-pend'); if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 130, behavior:'smooth'}); }, 60);
+  });
+})();
+(function(){
+  var r = null;
+  try{ if(window.parent && window.parent !== window && window.parent.__el26Route){ r = window.parent.__el26Route; window.parent.__el26Route = null; } }catch(e){}
+  if(!r){ var h = (location.hash || '').replace(/^#/, '').split('/'); if(h[0] && VIEWS[h[0]]) r = [h[0], h[1] ? decodeURIComponent(h[1]) : undefined]; }
+  go('home');
+  if(r && VIEWS[r[0]] && r[0] !== 'home'){ try{ go(r[0], r[1]); }catch(e){ stack = []; go('home'); } }
+})();
+window.__EL26 = {go:go, data:D, score:scoreCand, open:function(v, a){ stack = []; go('home'); if(v && v !== 'home') go(v, a); }};
+})();
+</script>
+</body>
+</html>

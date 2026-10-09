@@ -1,0 +1,208 @@
+{
+ "version": "2.0-draft",
+ "rule": "Sophia takes a published position only on key votes whose documented effects on households, on industry, on Israel policy or on Congress’s war powers are clear from the record. Every other key vote is shown on candidate pages but not scored. The same positions apply to every member of every party.",
+ "cites": {
+  "cbo_hr1_dist": {
+   "t": "CBO — Distributional effects of H.R. 1 (2025)",
+   "u": "https://www.cbo.gov/publication/61387"
+  },
+  "scotus_ieepa": {
+   "t": "U.S. Supreme Court strikes down IEEPA tariffs — Steptoe (2026)",
+   "u": "https://www.steptoe.com/en/news-publications/global-trade-and-investment-law-blog/us-supreme-court-strikes-down-ieepa-tariffs.html"
+  },
+  "kff_aca": {
+   "t": "KFF projections on the enhanced ACA subsidy lapse (via MEXC News)",
+   "u": "https://www.mexc.com/news/91669"
+  },
+  "sophia_t2": {
+   "t": "Sophia — Trump Second-Term Promise Ledger (t01 OBBBA, t02 tariffs, t05 ACA subsidies, t_crypto)",
+   "u": "https://bit.ly/sophia-v3#sim/trump2"
+  },
+  "aclu_aaa": {
+   "t": "ACLU opposes the Antisemitism Awareness Act — ACLU",
+   "u": "https://www.aclu.org/documents/aclu-opposes-antisemitism-awareness-act"
+  }
+ },
+ "stances": {
+  "h118_hjres45_2023": {
+   "pos": "no",
+   "cat": "pocketbook",
+   "why": "Would have overturned the student-loan relief rule and ended the payment pause for borrowers.",
+   "c": []
+  },
+  "s118_hjres45_2023": {
+   "pos": "no",
+   "cat": "pocketbook",
+   "why": "Would have overturned the student-loan relief rule and ended the payment pause for borrowers.",
+   "c": []
+  },
+  "h118_hr7024_2024": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Expanded the refundable child tax credit for lower-income families, alongside business tax breaks.",
+   "c": []
+  },
+  "s118_hr7024_2024": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Expanded the refundable child tax credit for lower-income families, alongside business tax breaks.",
+   "c": []
+  },
+  "h118_hr82_2024": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Restored full Social Security benefits to teachers, police, firefighters and others with public pensions.",
+   "c": []
+  },
+  "s118_hr82_2024": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Restored full Social Security benefits to teachers, police, firefighters and others with public pensions.",
+   "c": []
+  },
+  "h119_hr1834_aca_2026": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Extends the enhanced ACA premium credits; KFF projects the lapse raises premiums about 75% on average and leaves 4 million more uninsured.",
+   "c": [
+    "kff_aca",
+    "sophia_t2"
+   ]
+  },
+  "s119_aca_ext_2025": {
+   "pos": "yes",
+   "cat": "pocketbook",
+   "why": "Extends the enhanced ACA premium credits; KFF projects the lapse raises premiums about 75% on average and leaves 4 million more uninsured.",
+   "c": [
+    "kff_aca",
+    "sophia_t2"
+   ]
+  },
+  "h119_hr1_2025": {
+   "pos": "no",
+   "cat": "taxes",
+   "why": "CBO’s distributional table: resources fall for the lowest-income households and rise for the top; adds about $3.4 trillion to deficits.",
+   "c": [
+    "cbo_hr1_dist",
+    "sophia_t2"
+   ]
+  },
+  "s119_hr1_2025": {
+   "pos": "no",
+   "cat": "taxes",
+   "why": "CBO’s distributional table: resources fall for the lowest-income households and rise for the top; adds about $3.4 trillion to deficits.",
+   "c": [
+    "cbo_hr1_dist",
+    "sophia_t2"
+   ]
+  },
+  "h118_hr4763_2024": {
+   "pos": "no",
+   "cat": "corporate",
+   "why": "Moved most crypto oversight from the SEC to a lighter-touch regime the industry lobbied for.",
+   "c": []
+  },
+  "s118_hjres109_2024": {
+   "pos": "no",
+   "cat": "corporate",
+   "why": "Overturned an SEC accounting rule that protected customers whose crypto is held by custodians.",
+   "c": []
+  },
+  "h119_s1582_2025": {
+   "pos": "no",
+   "cat": "corporate",
+   "why": "Stablecoin framework written with heavy industry backing; the President’s family holds a stablecoin business that benefits from it.",
+   "c": [
+    "sophia_t2"
+   ]
+  },
+  "s119_s1582_2025": {
+   "pos": "no",
+   "cat": "corporate",
+   "why": "Stablecoin framework written with heavy industry backing; the President’s family holds a stablecoin business that benefits from it.",
+   "c": [
+    "sophia_t2"
+   ]
+  },
+  "h119_hjres72_2026": {
+   "pos": "yes",
+   "cat": "tariffs_trade",
+   "why": "Ends the emergency used for the Canada tariffs; courts later ruled the emergency tariffs illegal and they raised prices paid by Americans.",
+   "c": [
+    "scotus_ieepa",
+    "sophia_t2"
+   ]
+  },
+  "s119_sjres37_2025": {
+   "pos": "yes",
+   "cat": "tariffs_trade",
+   "why": "Ends the emergency used for the Canada tariffs; courts later ruled the emergency tariffs illegal and they raised prices paid by Americans.",
+   "c": [
+    "scotus_ieepa",
+    "sophia_t2"
+   ]
+  },
+  "h118_hr8034_2024": {
+   "pos": "no",
+   "cat": "israel",
+   "why": "About $26.4 billion in military and related aid to Israel, with no added conditions, during the Gaza war.",
+   "c": []
+  },
+  "s118_sjres111_2024": {
+   "pos": "yes",
+   "cat": "israel",
+   "why": "Would have blocked a weapons sale to Israel during the Gaza war.",
+   "c": []
+  },
+  "s119_sjres41_2025": {
+   "pos": "yes",
+   "cat": "israel",
+   "why": "Would have blocked a sale of rifles to Israel’s national police.",
+   "c": []
+  },
+  "h119_hr23_2025": {
+   "pos": "no",
+   "cat": "israel",
+   "why": "Sanctions the International Criminal Court for investigating the U.S. or allies such as Israel.",
+   "c": []
+  },
+  "s119_hr23_2025": {
+   "pos": "no",
+   "cat": "israel",
+   "why": "Sanctions the International Criminal Court for investigating the U.S. or allies such as Israel.",
+   "c": []
+  },
+  "h118_hr6090_2024": {
+   "pos": "no",
+   "cat": "israel",
+   "why": "Writes the IHRA definition of antisemitism into civil-rights enforcement; the ACLU warned it would chill protected criticism of Israel.",
+   "c": [
+    "aclu_aaa"
+   ]
+  },
+  "s119_sres852_2026": {
+   "pos": "yes",
+   "cat": "israel",
+   "why": "Requests a State Department report on Israel’s human-rights practices before more security aid.",
+   "c": []
+  },
+  "h119_hconres86_2026": {
+   "pos": "yes",
+   "cat": "foreign_aid_war",
+   "why": "Asserts Congress’s constitutional power over war by directing U.S. forces out of hostilities with Iran.",
+   "c": []
+  },
+  "s119_hconres86_2026": {
+   "pos": "yes",
+   "cat": "foreign_aid_war",
+   "why": "Asserts Congress’s constitutional power over war by directing U.S. forces out of hostilities with Iran.",
+   "c": []
+  },
+  "s119_sjres59_2025": {
+   "pos": "yes",
+   "cat": "foreign_aid_war",
+   "why": "Asserts Congress’s constitutional power over war by directing U.S. forces out of hostilities with Iran.",
+   "c": []
+  }
+ }
+}

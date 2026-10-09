@@ -1,0 +1,1881 @@
+{
+ "selection_rule": "Votes were chosen before looking at how any member voted, using fixed criteria applied identically to every sitting member of Congress. For each chamber and each Congress (118th, 2023–24; 119th, 2025–Oct 8, 2026) we picked the final-passage roll call, or the decisive procedural vote (cloture, motion to discharge, or the rule that cleared a bill) when that vote settled the measure's fate, on the highest-salience measures in nine policy areas: pocketbook (health coverage/costs, Social Security, student debt), taxes, Israel, foreign aid/war powers/defense, corporate and industry regulation (crypto, CRA rollbacks, congressional stock trading), democracy and civil liberties (voter eligibility/ID, FISA 702), debt and spending (debt limit, full-year funding, shutdown-ending CRs, rescissions), immigration, and tariffs/trade. We used at least one vote per area where a recorded vote existed. Salience means measures that became law, were vetoed, or were the subject of a Statement of Administration Policy or sustained national coverage. We included votes the sitting President's party won and votes it lost, and measures backed mainly by each party. Near-unanimous votes were generally excluded because they do not distinguish members, except where the measure's significance warranted inclusion. Each entry reports the administration's documented position (OMB SAP where one exists) and an independent CBO estimate where one exists. Neither is an endorsement. Roll numbers marked verify=true could not be confirmed against an official clerk or Senate page in this research pass.",
+ "cites": {
+  "clerk_2023_200s": {
+   "t": "Roll Call Votes 200-299, 2023 — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/evs/2023/ROLL_200.asp"
+  },
+  "clerk_2024_index": {
+   "t": "Roll Call Votes, 2024 index — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/evs/2024/index.asp"
+  },
+  "clerk_2025_000": {
+   "t": "Roll Call Votes 1-99, 2025 — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/evs/2025/ROLL_000.asp"
+  },
+  "clerk_2026_000": {
+   "t": "Roll Call Votes 1-99, 2026 — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/evs/2026/ROLL_000.asp"
+  },
+  "sen_menu_119_2": {
+   "t": "Roll Call Votes, 119th Congress, 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+  },
+  "sen_118_2_292": {
+   "t": "Roll Call Vote 118th Congress 2nd Session, Vote 292 (S.J.Res. 111) — U.S. Senate (Nov 20, 2024)",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00292.htm"
+  },
+  "sen_119_1_22": {
+   "t": "Roll Call Vote 119th Congress 1st Session, Vote 22 (H.R. 23 cloture) — U.S. Senate (Jan 28, 2025)",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00022.htm"
+  },
+  "sen_119_1_394": {
+   "t": "Roll Call Vote 119-1 Vote 394 (H.R. 4 motion to recommit, Jul 16, 2025) — U.S. Senate (context for numbering)",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00394.htm"
+  },
+  "sen_119_2_231": {
+   "t": "Roll Call Vote 119-2 Vote 231 (S. 5271 cloture) — U.S. Senate (Aug 8, 2026)",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00231.htm"
+  },
+  "digest_2024_12_20": {
+   "t": "Daily Digest, Dec 20, 2024 (Senate Vote Nos. 337-339) — Congressional Record via congress.gov",
+   "u": "https://www.congress.gov/118/crec/2024/12/20/170/190/CREC-2024-12-20-dailydigest.pdf"
+  },
+  "voteview_s118_146": {
+   "t": "118th Congress > Senate > Vote 146 — Voteview (secondary corroboration)",
+   "u": "https://voteview.com/rollcall/RS1180146"
+  },
+  "watchvote_s119_372": {
+   "t": "119-2025 Senate vote 372 — watch.vote (secondary corroboration)",
+   "u": "https://watch.vote/votes/119-2025-s372"
+  },
+  "voteview_s119_411": {
+   "t": "119th Congress > Senate > Vote 411 — Voteview (secondary corroboration, not opened)",
+   "u": "https://voteview.com/rollcall/RS1190411"
+  },
+  "lobbynews_s119_7": {
+   "t": "119-2025 Senate vote 7 — The Lobby News (secondary corroboration, not opened)",
+   "u": "https://www.thelobbynews.com/congress/votes/119-2025/senate/7"
+  },
+  "wiki_genius": {
+   "t": "GENIUS Act — Wikipedia (cites Senate roll call vote 318)",
+   "u": "https://en.wikipedia.org/wiki/GENIUS_Act"
+  },
+  "crs_r49353": {
+   "t": "Overview of Continuing Appropriations for FY2027 (Division A of P.L. 119-103) — CRS via EveryCRSReport (Sep 17, 2026)",
+   "u": "https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html"
+  },
+  "cbo_59225": {
+   "t": "CBO's Estimate of the Budgetary Effects of H.R. 3746, the Fiscal Responsibility Act of 2023 — CBO (May 30, 2023)",
+   "u": "https://cbo.gov/publication/59225"
+  },
+  "cbo_hr7024": {
+   "t": "H.R. 7024, Tax Relief for American Families and Workers Act of 2024, cost estimate — CBO (Jan 25, 2024)",
+   "u": "https://www.cbo.gov/system/files/2024-01/hr7024_1.pdf"
+  },
+  "cbo_hr8034": {
+   "t": "H.R. 8034, Israel Security Supplemental Appropriations Act, 2024 — CBO (Apr 19, 2024)",
+   "u": "https://www.cbo.gov/system/files/2024-04/hr8034_Israel_Security_Supplemental_Appropriations_Act_2024.pdf"
+  },
+  "cbo_60876": {
+   "t": "Long-Term Effects of H.R. 82, the Social Security Fairness Act of 2023 — CBO (Nov 8, 2024)",
+   "u": "https://www.cbo.gov/publication/60876"
+  },
+  "cbo_61570": {
+   "t": "Estimated Budgetary Effects of Public Law 119-21 — CBO (Jul 21, 2025)",
+   "u": "https://www.cbo.gov/publication/61570"
+  },
+  "cbo_61469": {
+   "t": "How H.R. 1, the One Big Beautiful Bill Act, Would Affect the Distribution of Resources Available to Households (House-passed version) — CBO (Jun 2025)",
+   "u": "https://www.cbo.gov/publication/61469"
+  },
+  "cbo_61463": {
+   "t": "Estimated Effects on the Number of Uninsured People in 2034 ... H.R. 1 (House-passed version) — CBO (Jun 4, 2025)",
+   "u": "https://www.cbo.gov/publication/61463"
+  },
+  "cbo_61551": {
+   "t": "S. 1582, the GENIUS Act, as passed by the Senate — CBO cost estimate (Jul 11, 2025)",
+   "u": "https://www.cbo.gov/publication/61551"
+  },
+  "cbo_61473": {
+   "t": "H.R. 4, Rescissions Act of 2025 — CBO cost estimate (Jun 9, 2025)",
+   "u": "https://www.cbo.gov/publication/61473"
+  },
+  "cbo_s3385": {
+   "t": "S. 3385 (extension of enhanced premium tax credits through 2028) — CBO estimate (Dec 10, 2025)",
+   "u": "https://www.cbo.gov/system/files/2025-12/s3385.pdf"
+  },
+  "cbo_s2_5453": {
+   "t": "Amendment 5453 to S. 2, the Secure America Act — CBO estimate (Jun 3, 2026)",
+   "u": "https://www.cbo.gov/system/files/2026-06/Amendment5453toS2.pdf"
+  },
+  "wiki_obbba": {
+   "t": "One Big Beautiful Bill Act — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act"
+  },
+  "wiki_laken": {
+   "t": "Laken Riley Act — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Laken_Riley_Act"
+  },
+  "wiki_rescissions": {
+   "t": "Rescissions Act of 2025 — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Rescissions_Act_of_2025"
+  },
+  "wiki_fra": {
+   "t": "Fiscal Responsibility Act of 2023 — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Fiscal_Responsibility_Act_of_2023"
+  },
+  "wiki_trafwa": {
+   "t": "Tax Relief for American Families and Workers Act — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Tax_Relief_for_American_Families_and_Workers_Act"
+  },
+  "wiki_ssfa": {
+   "t": "Social Security Fairness Act — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Social_Security_Fairness_Act"
+  },
+  "wiki_aaa": {
+   "t": "Antisemitism Awareness Act — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Antisemitism_Awareness_Act"
+  },
+  "crs_r48592": {
+   "t": "FISA Section 702 and the 2024 Reforming Intelligence and Securing America Act — CRS via EveryCRSReport",
+   "u": "https://www.everycrsreport.com/reports/R48592.html"
+  },
+  "tpr_aca_20251211": {
+   "t": "Competing health care plans fail in the Senate as ACA premium hikes loom — NPR via TPR (Dec 11, 2025)",
+   "u": "https://www.tpr.org/news/2025-12-11/competing-health-care-plans-fail-in-the-senate-as-aca-premium-hikes-loom"
+  },
+  "kval_aca_20260108": {
+   "t": "House passes ACA subsidy extension with GOP supporters, defying Trump and Johnson — KVAL/Sinclair (Jan 8, 2026)",
+   "u": "https://kval.com/news/nation-world/house-passes-bill-to-extend-health-care-subsidies-gop-lawmakers-speaker-mike-johnson-senate-hakeem-jeffries"
+  },
+  "wlox_hr7008": {
+   "t": "House passes limits on stock trading, Senate path remains uncertain — Gray DC via WLOX (Jul 25, 2026)",
+   "u": "https://www.wlox.com/2026/07/25/house-passes-limits-stock-trading-senate-path-remains-uncertain/"
+  },
+  "jewishinsider_hcr86": {
+   "t": "Senate approves House-passed Iran war powers resolution in largely symbolic move — Jewish Insider (Jun 2026)",
+   "u": "https://jewishinsider.com/2026/06/senate-passes-concurrent-resolution-on-war-powers-iran/"
+  },
+  "bgov_ukraine_2026": {
+   "t": "House Passes Ukraine Aid, Russia Sanctions in Rebuke to Trump — Bloomberg Government (Jun 2026)",
+   "u": "https://news.bgov.com/bloomberg-government-news/house-passes-ukraine-aid-russia-sanctions-in-rebuke-to-trump"
+  },
+  "approps_suppl_onepager": {
+   "t": "Israel, Ukraine, Indo-Pacific Security Supplemental Appropriations Acts — One Pager, House Appropriations Committee (Apr 2024)",
+   "u": "https://appropriations.house.gov/sites/republicans.appropriations.house.gov/files/Israel,%20Ukraine,%20Indo-Pacific%20Security%20Supplemental%20Appropriations%20Acts%20-%20One%20Pager.pdf"
+  },
+  "omb_sap_index": {
+   "t": "Statements of Administration Policy (index, Jan 2025–Sep 2026) — OMB, whitehouse.gov",
+   "u": "https://www.whitehouse.gov/omb/statements-of-administration-policy/"
+  },
+  "sap_s5": {
+   "t": "SAP: S. 5, Laken Riley Act — OMB (Jan 22, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-Laken-Riley-1.22.25.pdf"
+  },
+  "sap_hr22": {
+   "t": "SAP: H.R. 22, SAVE Act — OMB (Apr 8, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-HR22.pdf"
+  },
+  "sap_sjr37": {
+   "t": "SAP: S.J.Res. 37 (Canada tariff emergency) — OMB (Mar 31, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/09/SJRes37-SAP.pdf"
+  },
+  "sap_hr1": {
+   "t": "SAP: H.R. 1, One Big Beautiful Bill Act — OMB (May 21, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-HR1.pdf"
+  },
+  "sap_hr1_sen": {
+   "t": "SAP: Senate Amendment to H.R. 1 — OMB (Jun 30, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-HR1-SenAmendment.pdf"
+  },
+  "sap_s1582": {
+   "t": "SAP: S. 1582, GENIUS Act — OMB (Jun 9, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-S1582.pdf"
+  },
+  "sap_hr4": {
+   "t": "SAP: H.R. 4, Rescissions Act of 2025 — OMB (Jun 10, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/03/SAP-on-H.R.-4.pdf"
+  },
+  "sap_sjr59": {
+   "t": "SAP: S.J.Res. 59 (Iran war powers) — OMB (Jun 26, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/09/SAP-SJR59.pdf"
+  },
+  "sap_sjr34_41": {
+   "t": "SAP: S.J.Res. 34 and S.J.Res. 41 (arms sales to Israel) — OMB (Jul 30, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/09/SAP-SJR34-SJR41.pdf"
+  },
+  "sap_hr5371_sen": {
+   "t": "SAP: Senate Amendment to H.R. 5371, Continuing Appropriations and Extensions Act, 2026 — OMB (Nov 12, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/11/Senate-Amendment-to-H.R.-5371-SAP.pdf"
+  },
+  "sap_ndaa26": {
+   "t": "SAP: S. 1071, National Defense Authorization Act for FY2026 — OMB (Dec 9, 2025)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2025/12/SAP-NDAA-2026.pdf"
+  },
+  "sap_hcr86_house": {
+   "t": "SAP: H.Con.Res. 86 (Iran war powers), House — OMB (Jun 3, 2026)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2026/06/SAP-HCR86-6.3.26.pdf"
+  },
+  "sap_hcr86_sen": {
+   "t": "SAP: H.Con.Res. 86 (Iran war powers), Senate — OMB (Jun 23, 2026)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2026/06/SAP-Senate-HCR86.pdf"
+  },
+  "sap_s2": {
+   "t": "SAP: S. 2, Secure America Act — OMB (Jun 3, 2026)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2026/06/S.-2-SAP.pdf"
+  },
+  "sap_hr7008": {
+   "t": "SAP: H.R. 7008, Stop Insider Trading Act — OMB (Jul 22, 2026)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2026/07/SAP-HR7008.pdf"
+  },
+  "sap_sres852": {
+   "t": "SAP: S.Res. 852 (Israel human rights information request) — OMB (Sep 29, 2026)",
+   "u": "https://www.whitehouse.gov/wp-content/uploads/2026/09/SAP-S.Res_.-852.pdf"
+  },
+  "biden_sap_hr2": {
+   "t": "SAP: H.R. 2, Secure the Border Act of 2023 — OMB, Biden White House archive (May 2023)",
+   "u": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/05/SAP-H.R.-2.pdf"
+  },
+  "biden_signed_hr3746": {
+   "t": "Press Release: Bills Signed: H.R. 346 and H.R. 3746 — Biden White House archive (Jun 3, 2023)",
+   "u": "https://bidenwhitehouse.archives.gov/briefing-room/legislation/2023/06/03/press-release-bills-signed-h-r-346-h-r-3746"
+  },
+  "biden_signed_hr2670": {
+   "t": "Bill Signed: H.R. 2670 (FY2024 NDAA) — Biden White House archive (Dec 22, 2023)",
+   "u": "https://bidenwhitehouse.archives.gov/briefing-room/legislation/2023/12/22/bill-signed-h-r-2670"
+  },
+  "biden_sap_hr815_sen": {
+   "t": "SAP: Senate Amendment to H.R. 815, Emergency National Security Supplemental Appropriations Act, 2024 — Biden White House archive (Feb 2024)",
+   "u": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/02/Senate-Amendment-to-H.R.-815-%E2%80%93-Emergency-National-Security-Supplemental-Appropriations-Act-2024-SAP.pdf"
+  },
+  "biden_sap_hr815_house": {
+   "t": "SAP: House Amendment to H.R. 815 (Israel/Ukraine/Indo-Pacific package) — Biden White House archive (Apr 2024)",
+   "u": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/04/House-Amendment-to-H.R.-815-Emergency-National-SAP-Final-Version.pdf"
+  },
+  "biden_signed_hr7888": {
+   "t": "Bill Signed: H.R. 7888 — Biden White House archive (Apr 20, 2024)",
+   "u": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/04/20/bill-signed-h-r-7888/"
+  },
+  "biden_sap_hr7024": {
+   "t": "SAP: H.R. 7024, Tax Relief for American Families and Workers Act of 2024 — Biden White House archive (Aug 1, 2024)",
+   "u": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/08/SAP-HR7024-.pdf"
+  },
+  "ucsb_sap_hr2882": {
+   "t": "Statement of Administration Policy: H.R. 2882, Further Consolidated Appropriations Act, 2024 — American Presidency Project (Mar 2024)",
+   "u": "https://www.presidency.ucsb.edu/documents/statement-administration-policy-hr-2882-further-consolidated-appropriations-act-2024"
+  },
+  "ucsb_sap_hr4763": {
+   "t": "Statement of Administration Policy: H.R. 4763, FIT21 — American Presidency Project (May 22, 2024)",
+   "u": "https://www.presidency.ucsb.edu/documents/statement-administration-policy-hr-4763-financial-innovation-and-technology-for-the-21st"
+  },
+  "biden_veto_hjr109": {
+   "t": "Message to the House on the President's Veto of H.J.Res. 109 — Biden White House archive (May 31, 2024)",
+   "u": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/05/31/a-message-to-the-house-of-representatives-on-the-presidents-veto-of-h-j-res-109"
+  },
+  "ballotpedia_veto_hjr39": {
+   "t": "Biden issues third veto of his presidency to maintain suspension of solar panel import tariffs — Ballotpedia News (May 2023)",
+   "u": "https://news.ballotpedia.org/?p=29804"
+  },
+  "rollcall_veto_hjr45": {
+   "t": "Biden vetoes effort to block student loan forgiveness — Roll Call (Jun 7, 2023)",
+   "u": "https://www.rollcall.com/2023/06/07/biden-vetoes-effort-to-block-student-loan-forgiveness/"
+  },
+  "dailysignal_save_2024": {
+   "t": "House GOP Faces Down Biden Veto Threat on Halting Noncitizen Voting — Daily Signal (Jul 9, 2024)",
+   "u": "https://www.dailysignal.com/2024/07/09/house-gop-faces-down-biden-veto-threat-on-halting-noncitizen-voting/"
+  },
+  "fdd_sjr111": {
+   "t": "Biden administration backs Israel in U.S. Senate and UN Security Council — FDD Flash Brief (Nov 21, 2024)",
+   "u": "https://www.fdd.org/analysis/2024/11/21/outbound-biden-administration-backs-israel-in-u-s-senate-and-un-security-council/"
+  },
+  "sen_118_1_109": {
+   "t": "Roll Call Vote 109, 118th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00109.htm"
+  },
+  "sen_118_1_135": {
+   "t": "Roll Call Vote 135, 118th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00135.htm"
+  },
+  "sen_118_1_146": {
+   "t": "Roll Call Vote 146, 118th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00146.htm"
+  },
+  "sen_118_1_343": {
+   "t": "Roll Call Vote 343, 118th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00343.htm"
+  },
+  "sen_118_2_39": {
+   "t": "Roll Call Vote 39, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00039.htm"
+  },
+  "sen_118_2_114": {
+   "t": "Roll Call Vote 114, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00114.htm"
+  },
+  "sen_118_2_150": {
+   "t": "Roll Call Vote 150, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00150.htm"
+  },
+  "sen_118_2_154": {
+   "t": "Roll Call Vote 154, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00154.htm"
+  },
+  "sen_118_2_169": {
+   "t": "Roll Call Vote 169, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00169.htm"
+  },
+  "sen_118_2_230": {
+   "t": "Roll Call Vote 230, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00230.htm"
+  },
+  "sen_118_2_338": {
+   "t": "Roll Call Vote 338, 118th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00338.htm"
+  },
+  "sen_119_1_7": {
+   "t": "Roll Call Vote 7, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.htm"
+  },
+  "sen_119_1_160": {
+   "t": "Roll Call Vote 160, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00160.htm"
+  },
+  "sen_119_1_318": {
+   "t": "Roll Call Vote 318, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.htm"
+  },
+  "sen_119_1_328": {
+   "t": "Roll Call Vote 328, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00328.htm"
+  },
+  "sen_119_1_372": {
+   "t": "Roll Call Vote 372, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm"
+  },
+  "sen_119_1_411": {
+   "t": "Roll Call Vote 411, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00411.htm"
+  },
+  "sen_119_1_454": {
+   "t": "Roll Call Vote 454, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00454.htm"
+  },
+  "sen_119_1_618": {
+   "t": "Roll Call Vote 618, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00618.htm"
+  },
+  "sen_119_1_644": {
+   "t": "Roll Call Vote 644, 119th Congress – 1st Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00644.htm"
+  },
+  "sen_119_2_163": {
+   "t": "Roll Call Vote 163, 119th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00163.htm"
+  },
+  "sen_119_2_184": {
+   "t": "Roll Call Vote 184, 119th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00184.htm"
+  },
+  "sen_119_2_252": {
+   "t": "Roll Call Vote 252, 119th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00252.htm"
+  },
+  "sen_119_2_253": {
+   "t": "Roll Call Vote 253, 119th Congress – 2nd Session — U.S. Senate",
+   "u": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00253.htm"
+  }
+ },
+ "votes": [
+  {
+   "id": "h118_hjres39_2023",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2023-04-28",
+   "roll": 202,
+   "bill": "H.J.Res. 39",
+   "title": "Disapproval of Commerce Dept. rule pausing solar-panel tariffs (CRA)",
+   "category": "tariffs_trade",
+   "what": "Congressional Review Act resolution to overturn the Commerce Department rule implementing a two-year pause on new antidumping/countervailing duties on solar panels from four Southeast Asian countries (Proclamation 10414).",
+   "effect": null,
+   "outcome": "Passed 221–202 (later vetoed; override failed, roll 233)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "ballotpedia_veto_hjr39"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2023202",
+   "c": [
+    "clerk_2023_200s"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr2_2023",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2023-05-11",
+   "roll": 209,
+   "bill": "H.R. 2",
+   "title": "Secure the Border Act of 2023 (passage)",
+   "category": "immigration",
+   "what": "House Republican border package: resumes border-wall construction, restricts asylum eligibility and parole, expands detention, and mandates E-Verify for employers.",
+   "effect": null,
+   "outcome": "Passed 219–213",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr2"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2023209",
+   "c": [
+    "clerk_2023_200s"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hjres45_2023",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2023-05-24",
+   "roll": 234,
+   "bill": "H.J.Res. 45",
+   "title": "Disapproval of Education Dept. student-loan relief rule (CRA)",
+   "category": "pocketbook",
+   "what": "Congressional Review Act resolution to overturn the Education Department's waivers/modifications used for one-time federal student-loan debt cancellation and to end the payment pause.",
+   "effect": null,
+   "outcome": "Passed 218–203 (later vetoed; override failed, roll 277)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "rollcall_veto_hjr45"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2023234",
+   "c": [
+    "clerk_2023_200s"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr3746_2023",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2023-05-31",
+   "roll": 243,
+   "bill": "H.R. 3746",
+   "title": "Fiscal Responsibility Act of 2023 (debt-limit deal, passage)",
+   "category": "debt_spending",
+   "what": "Suspended the federal debt limit through January 1, 2025, capped discretionary spending for FY2024–2025, rescinded some unspent funds, and expanded SNAP/TANF work requirements for some adults.",
+   "effect": {
+    "t": "CBO estimated the act would reduce deficits by about $1.5 trillion over 2023–2033, mostly from the discretionary caps.",
+    "c": [
+     "cbo_59225"
+    ]
+   },
+   "outcome": "Passed 314–117",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr3746"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2023243",
+   "c": [
+    "clerk_2023_200s",
+    "wiki_fra"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr2670_2023",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2023-12-14",
+   "roll": 723,
+   "bill": "H.R. 2670",
+   "title": "National Defense Authorization Act for FY2024 (conference report)",
+   "category": "foreign_aid_war",
+   "what": "Annual defense policy bill authorizing roughly $886 billion in national-defense programs; the final version also extended FISA Section 702 surveillance authority into April 2024.",
+   "effect": null,
+   "outcome": "Passed 310–118 (suspension)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr2670"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2023723",
+   "c": [],
+   "verify": false
+  },
+  {
+   "id": "h118_hr7024_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-01-31",
+   "roll": 30,
+   "bill": "H.R. 7024",
+   "title": "Tax Relief for American Families and Workers Act of 2024 (passage)",
+   "category": "taxes",
+   "what": "Bipartisan tax package that temporarily expanded the refundable Child Tax Credit and restored several expired business tax breaks (R&D expensing, bonus depreciation, interest deductibility), offset mainly by ending the COVID-era Employee Retention Credit early.",
+   "effect": {
+    "t": "CBO/JCT estimated a net deficit increase of about $0.4 billion over 2024–2033 (larger deficits early, offset later).",
+    "c": [
+     "cbo_hr7024"
+    ]
+   },
+   "outcome": "Passed 357–70 (suspension)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr7024"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024030",
+   "c": [
+    "clerk_2024_index",
+    "wiki_trafwa"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr2882_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-03-22",
+   "roll": 102,
+   "bill": "H.R. 2882",
+   "title": "Further Consolidated Appropriations Act, 2024 (final FY2024 funding)",
+   "category": "debt_spending",
+   "what": "Six-bill package providing full-year FY2024 appropriations for Defense, Homeland Security, Labor-HHS-Education, State-Foreign Operations, Financial Services, and the Legislative Branch, averting a partial shutdown. Adopted via H.Res. 1102 (suspension motion to concur with an amendment).",
+   "effect": null,
+   "outcome": "Passed 286–134",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "ucsb_sap_hr2882"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024102",
+   "c": [
+    "clerk_2024_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr7888_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-04-12",
+   "roll": 119,
+   "bill": "H.R. 7888",
+   "title": "Reforming Intelligence and Securing America Act (FISA Section 702 reauthorization)",
+   "category": "democracy_rights",
+   "what": "Reauthorized FISA Section 702 warrantless foreign-intelligence surveillance for two years with procedural changes; an amendment to require warrants for searches of Americans' communications failed on a tie.",
+   "effect": null,
+   "outcome": "Passed 273–147",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr7888"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024119",
+   "c": [
+    "clerk_2024_index",
+    "crs_r48592"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr8035_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-04-20",
+   "roll": 151,
+   "bill": "H.R. 8035",
+   "title": "Ukraine Security Supplemental Appropriations Act, 2024 (passage)",
+   "category": "foreign_aid_war",
+   "what": "Provided about $61 billion in military and economic assistance related to Ukraine, including replenishment of U.S. weapons stocks; later combined into H.R. 815 and enacted.",
+   "effect": {
+    "t": "House Appropriations Committee summary of the April 2024 supplemental package.",
+    "c": [
+     "approps_suppl_onepager"
+    ]
+   },
+   "outcome": "Passed 311–112",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr815_house"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024151",
+   "c": [
+    "clerk_2024_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr8034_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-04-20",
+   "roll": 152,
+   "bill": "H.R. 8034",
+   "title": "Israel Security Supplemental Appropriations Act, 2024 (passage)",
+   "category": "israel",
+   "what": "Emergency appropriations for Israel's missile defense (Iron Dome, David's Sling, Iron Beam), U.S. military operations in the region, weapons-stock replenishment, and humanitarian aid including for Gaza; later combined into H.R. 815 and enacted.",
+   "effect": {
+    "t": "CBO: about $26.4 billion in emergency budget authority for FY2024.",
+    "c": [
+     "cbo_hr8034"
+    ]
+   },
+   "outcome": "Passed 366–58",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr815_house"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024152",
+   "c": [
+    "clerk_2024_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr6090_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-05-01",
+   "roll": 172,
+   "bill": "H.R. 6090",
+   "title": "Antisemitism Awareness Act of 2023 (passage)",
+   "category": "israel",
+   "what": "Directs the Education Department to use the IHRA working definition of antisemitism (including its contemporary examples, some of which concern Israel) when enforcing Title VI anti-discrimination law at schools and colleges.",
+   "effect": null,
+   "outcome": "Passed 320–91 (not taken up by the Senate)",
+   "admin": {
+    "pos": "none found",
+    "president": "Biden",
+    "c": []
+   },
+   "url": "https://clerk.house.gov/Votes/2024172",
+   "c": [
+    "clerk_2024_index",
+    "wiki_aaa"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr4763_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-05-22",
+   "roll": 226,
+   "bill": "H.R. 4763",
+   "title": "Financial Innovation and Technology for the 21st Century Act (FIT21, crypto market structure)",
+   "category": "corporate",
+   "what": "Would create a federal regulatory framework for digital assets, dividing oversight between the CFTC (digital commodities) and the SEC (securities) and setting registration rules for crypto exchanges, brokers and dealers.",
+   "effect": null,
+   "outcome": "Passed 279–136 (not taken up by the Senate)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "ucsb_sap_hr4763"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024226",
+   "c": [
+    "clerk_2024_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr8281_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-07-10",
+   "roll": 345,
+   "bill": "H.R. 8281",
+   "title": "Safeguard American Voter Eligibility (SAVE) Act (passage)",
+   "category": "democracy_rights",
+   "what": "Would require documentary proof of U.S. citizenship to register to vote in federal elections and require states to remove noncitizens from voter rolls.",
+   "effect": null,
+   "outcome": "Passed 221–198 (not taken up by the Senate)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "dailysignal_save_2024"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024345",
+   "c": [
+    "clerk_2024_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h118_hr82_2024",
+   "congress": 118,
+   "chamber": "house",
+   "date": "2024-11-12",
+   "roll": 456,
+   "bill": "H.R. 82",
+   "title": "Social Security Fairness Act (passage)",
+   "category": "pocketbook",
+   "what": "Repealed the Windfall Elimination Provision and Government Pension Offset, which had reduced Social Security benefits for many people who also receive public-sector pensions from non-covered work (e.g., some teachers, police, firefighters).",
+   "effect": {
+    "t": "CBO: permanently increases scheduled Social Security outlays, widening the program's long-term financing gap.",
+    "c": [
+     "cbo_60876"
+    ]
+   },
+   "outcome": "Passed 327–75 (suspension); enacted Jan 2025",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "wiki_ssfa"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2024456",
+   "c": [
+    "clerk_2024_index",
+    "wiki_ssfa"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hjres39_2023",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2023-05-03",
+   "roll": 109,
+   "bill": "H.J.Res. 39",
+   "title": "Disapproval of Commerce Dept. rule pausing solar-panel tariffs (CRA)",
+   "category": "tariffs_trade",
+   "what": "Senate passage of the CRA resolution to reinstate tariffs paused on solar panels from four Southeast Asian countries.",
+   "effect": null,
+   "outcome": "Joint resolution passed 56–41 (later vetoed)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "ballotpedia_veto_hjr39"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00109.htm",
+   "c": [
+    "sen_118_1_109"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hjres45_2023",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2023-06-01",
+   "roll": 135,
+   "bill": "H.J.Res. 45",
+   "title": "Disapproval of Education Dept. student-loan relief rule (CRA)",
+   "category": "pocketbook",
+   "what": "Senate passage of the CRA resolution overturning the Education Department's student-loan cancellation/payment-pause rule.",
+   "effect": null,
+   "outcome": "Joint resolution passed 52–46 (later vetoed)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "rollcall_veto_hjr45"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00135.htm",
+   "c": [
+    "sen_118_1_135"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr3746_2023",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2023-06-01",
+   "roll": 146,
+   "bill": "H.R. 3746",
+   "title": "Fiscal Responsibility Act of 2023 (passage)",
+   "category": "debt_spending",
+   "what": "Suspended the debt limit through Jan. 1, 2025, capped FY2024–2025 discretionary spending, and expanded some SNAP/TANF work requirements.",
+   "effect": {
+    "t": "CBO estimated about $1.5 trillion in deficit reduction over 2023–2033.",
+    "c": [
+     "cbo_59225"
+    ]
+   },
+   "outcome": "Bill passed 63–36",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr3746"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00146.htm",
+   "c": [
+    "voteview_s118_146",
+    "wiki_fra",
+    "sen_118_1_146"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr2670_2023",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2023-12-13",
+   "roll": 343,
+   "bill": "H.R. 2670",
+   "title": "National Defense Authorization Act for FY2024 (conference report)",
+   "category": "foreign_aid_war",
+   "what": "Senate adoption of the FY2024 NDAA conference report (about $886 billion national-defense authorization; short-term FISA 702 extension).",
+   "effect": null,
+   "outcome": "Conference report agreed to 87–13",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr2670"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00343.htm",
+   "c": [
+    "sen_118_1_343"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr815_border_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-02-07",
+   "roll": 39,
+   "bill": "H.R. 815",
+   "title": "Bipartisan border-security deal plus Ukraine/Israel aid (cloture on motion to concur with amendment)",
+   "category": "immigration",
+   "what": "Decisive cloture vote on the negotiated Senate package that paired border and asylum changes (including an emergency border-closure authority) with Ukraine, Israel and Indo-Pacific aid.",
+   "effect": null,
+   "outcome": "Cloture on the motion to proceed to H.R. 815 rejected 49–50 (3/5 required)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr815_sen"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00039.htm",
+   "c": [
+    "sen_118_2_39"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr2882_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-03-23",
+   "roll": 114,
+   "bill": "H.R. 2882",
+   "title": "Further Consolidated Appropriations Act, 2024 (passage)",
+   "category": "debt_spending",
+   "what": "Final six-bill FY2024 funding package (Defense, DHS, Labor-HHS-Education, State-Foreign Ops, FSGG, Legislative Branch), passed just after the funding deadline.",
+   "effect": null,
+   "outcome": "Motion to concur in the House amendment to the Senate amendment agreed to 74–24 (3/5 required); cleared the bill",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "ucsb_sap_hr2882"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00114.htm",
+   "c": [
+    "sen_118_2_114"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr7888_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-04-19",
+   "roll": 150,
+   "bill": "H.R. 7888",
+   "title": "Reforming Intelligence and Securing America Act (FISA 702 reauthorization, passage)",
+   "category": "democracy_rights",
+   "what": "Reauthorized FISA Section 702 for two years; amendments to add a warrant requirement for U.S.-person queries were rejected.",
+   "effect": null,
+   "outcome": "Bill passed 60–34 (3/5 required)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_signed_hr7888"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00150.htm",
+   "c": [
+    "crs_r48592",
+    "sen_118_2_150"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr815_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-04-23",
+   "roll": 154,
+   "bill": "H.R. 815",
+   "title": "National security supplemental: Israel, Ukraine, Indo-Pacific aid + TikTok divestiture (final passage)",
+   "category": "foreign_aid_war",
+   "what": "Final passage of the combined ~$95 billion package: about $61 billion related to Ukraine, about $26 billion for Israel and humanitarian aid including Gaza, about $8 billion for the Indo-Pacific, plus a law forcing TikTok's divestiture. Also serves as the Senate's main 118th-Congress Israel-aid vote.",
+   "effect": {
+    "t": "CBO scored the Israel title at about $26.4 billion in emergency budget authority.",
+    "c": [
+     "cbo_hr8034"
+    ]
+   },
+   "outcome": "Motion to concur in the House amendment to the Senate amendment agreed to 79–18; cleared the bill",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr815_house"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00154.htm",
+   "c": [
+    "sen_118_2_154"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hjres109_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-05-16",
+   "roll": 169,
+   "bill": "H.J.Res. 109",
+   "title": "Disapproval of SEC Staff Accounting Bulletin 121 on crypto custody (CRA)",
+   "category": "corporate",
+   "what": "CRA resolution to overturn SEC staff guidance requiring firms that custody crypto assets for customers to record them as liabilities on their balance sheets, which banks said deterred them from crypto custody.",
+   "effect": null,
+   "outcome": "Joint resolution passed 60–38 (vetoed; House override failed, roll 355)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "biden_veto_hjr109"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00169.htm",
+   "c": [
+    "sen_118_2_169"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr7024_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-08-01",
+   "roll": 230,
+   "bill": "H.R. 7024",
+   "title": "Tax Relief for American Families and Workers Act (cloture on motion to proceed)",
+   "category": "taxes",
+   "what": "Decisive vote to take up the House-passed bipartisan Child Tax Credit expansion and business-tax-break package.",
+   "effect": {
+    "t": "CBO/JCT: net deficit increase of about $0.4 billion over 2024–2033.",
+    "c": [
+     "cbo_hr7024"
+    ]
+   },
+   "outcome": "Cloture on the motion to proceed rejected 48–44 (3/5 required)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "biden_sap_hr7024"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00230.htm",
+   "c": [
+    "wiki_trafwa",
+    "sen_118_2_230"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_sjres111_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-11-20",
+   "roll": 292,
+   "bill": "S.J.Res. 111",
+   "title": "Disapproval of proposed arms sale to Israel (motion to discharge)",
+   "category": "israel",
+   "what": "Motion to discharge a Sanders joint resolution blocking a proposed foreign military sale of defense articles to Israel; one of three related resolutions voted on that day.",
+   "effect": null,
+   "outcome": "Motion to discharge rejected 18–79 (1 present)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Biden",
+    "c": [
+     "fdd_sjr111"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00292.htm",
+   "c": [
+    "sen_118_2_292"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s118_hr82_2024",
+   "congress": 118,
+   "chamber": "senate",
+   "date": "2024-12-21",
+   "roll": 338,
+   "bill": "H.R. 82",
+   "title": "Social Security Fairness Act (passage)",
+   "category": "pocketbook",
+   "what": "Repealed the Windfall Elimination Provision and Government Pension Offset. Vote recorded on legislative day Dec 20, 2024; it took place after midnight, so the calendar date should be confirmed on the Senate page.",
+   "effect": {
+    "t": "CBO: permanently increases scheduled Social Security outlays.",
+    "c": [
+     "cbo_60876"
+    ]
+   },
+   "outcome": "Bill passed 76–20 (3/5 required)",
+   "admin": {
+    "pos": "support",
+    "president": "Biden",
+    "c": [
+     "wiki_ssfa"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00338.htm",
+   "c": [
+    "digest_2024_12_20",
+    "sen_118_2_338"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr23_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-01-09",
+   "roll": 7,
+   "bill": "H.R. 23",
+   "title": "Illegitimate Court Counteraction Act (ICC sanctions, passage)",
+   "category": "israel",
+   "what": "Would require sanctions on International Criminal Court officials and associates who investigate or prosecute protected persons of the U.S. or allied countries, including Israel. Introduced after the ICC's November 2024 arrest warrants for Israeli leaders.",
+   "effect": null,
+   "outcome": "Passed 243–140",
+   "admin": {
+    "pos": "none found",
+    "president": "Biden",
+    "c": []
+   },
+   "url": "https://clerk.house.gov/Votes/2025007",
+   "c": [
+    "clerk_2025_000"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_s5_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-01-22",
+   "roll": 23,
+   "bill": "S. 5",
+   "title": "Laken Riley Act (final passage)",
+   "category": "immigration",
+   "what": "Requires DHS to detain noncitizens who are charged with or arrested for theft, burglary, assaulting a police officer, or crimes causing death or serious injury, and lets state attorneys general sue the federal government over immigration-enforcement decisions.",
+   "effect": null,
+   "outcome": "Passed 263–156; signed into law",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s5"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025023",
+   "c": [
+    "clerk_2025_000",
+    "wiki_laken"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr22_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-04-10",
+   "roll": 102,
+   "bill": "H.R. 22",
+   "title": "SAVE Act (passage)",
+   "category": "democracy_rights",
+   "what": "Would require documentary proof of U.S. citizenship to register to vote in federal elections and require states to remove noncitizens from voter rolls.",
+   "effect": null,
+   "outcome": "Passed 220–208",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr22"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025102",
+   "c": [],
+   "verify": false
+  },
+  {
+   "id": "h119_hr1_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-07-03",
+   "roll": 190,
+   "bill": "H.R. 1",
+   "title": "One Big Beautiful Bill Act (final passage — concur in Senate amendment)",
+   "category": "taxes",
+   "what": "Budget-reconciliation law that made the 2017 individual tax cuts permanent, added new deductions (tips, overtime, seniors, auto-loan interest), raised the SALT cap, increased border/immigration-enforcement and defense funding, and cut projected Medicaid and SNAP spending through work requirements and other changes; it also raised the debt limit by $5 trillion.",
+   "effect": {
+    "t": "CBO: increases deficits by about $3.4 trillion over 2025–2034. CBO's analyses of the House-passed version projected about 10.9 million more uninsured people in 2034 and lower household resources for the lowest-income decile alongside gains for the highest-income decile.",
+    "c": [
+     "cbo_61570",
+     "cbo_61463",
+     "cbo_61469"
+    ]
+   },
+   "outcome": "Passed 218–214; signed July 4, 2025",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr1",
+     "sap_hr1_sen"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025190",
+   "c": [
+    "wiki_obbba"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_s1582_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-07-17",
+   "roll": 200,
+   "bill": "S. 1582",
+   "title": "GENIUS Act (stablecoin regulation, final passage)",
+   "category": "corporate",
+   "what": "Creates a federal licensing and reserve framework for payment stablecoins: issuers must hold 1:1 high-quality reserves, follow anti-money-laundering rules, and register with federal or state regulators.",
+   "effect": {
+    "t": "CBO: increases deficits by about $120 million over 2025–2035, mainly from regulators' administrative costs and reduced Fed remittances.",
+    "c": [
+     "cbo_61551"
+    ]
+   },
+   "outcome": "Passed 308–122; signed into law",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s1582"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025200",
+   "c": [
+    "wiki_genius"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr4_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-07-18",
+   "roll": 203,
+   "bill": "H.R. 4 (via H.Res. 590)",
+   "title": "Rescissions Act of 2025 (final House approval of Senate amendment)",
+   "category": "debt_spending",
+   "what": "Cancels about $9 billion in previously enacted funding: about $7.9 billion in foreign aid and about $1.1 billion for the Corporation for Public Broadcasting. The House cleared the Senate version by adopting the rule H.Res. 590, which provided for agreement to the Senate amendment, so this rule vote is the decisive final vote.",
+   "effect": {
+    "t": "CBO prepared a cost estimate of the rescissions (House-reported version).",
+    "c": [
+     "cbo_61473"
+    ]
+   },
+   "outcome": "Agreed 216–213; signed into law",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr4"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025203",
+   "c": [
+    "wiki_rescissions"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr5371_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-11-12",
+   "roll": 285,
+   "bill": "H.R. 5371",
+   "title": "Continuing Appropriations and Extensions Act, 2026 (ended the 2025 shutdown)",
+   "category": "debt_spending",
+   "what": "Ended the October–November 2025 government shutdown by funding most agencies through Jan. 30, 2026, with full-year funding for three bills (Agriculture-FDA, MilCon-VA, Legislative Branch) and reversal of shutdown-era layoffs. It did not extend the enhanced ACA premium tax credits.",
+   "effect": null,
+   "outcome": "Passed 222–209 (concur in Senate amendment)",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr5371_sen"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025285",
+   "c": [],
+   "verify": false
+  },
+  {
+   "id": "h119_s1071_ndaa_2025",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2025-12-10",
+   "roll": 320,
+   "bill": "S. 1071",
+   "title": "National Defense Authorization Act for FY2026 (final passage)",
+   "category": "foreign_aid_war",
+   "what": "Final FY2026 defense authorization, using S. 1071 (originally a veterans bill) as the legislative vehicle; the clerk's vote description shows the vehicle's original title.",
+   "effect": null,
+   "outcome": "Passed 312–112",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_ndaa26"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2025320",
+   "c": [
+    "omb_sap_index"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr1834_aca_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-01-08",
+   "roll": 11,
+   "bill": "H.R. 1834",
+   "title": "Three-year extension of enhanced ACA premium tax credits (\"Breaking the Gridlock Act\" vehicle)",
+   "category": "pocketbook",
+   "what": "Would extend the expired enhanced Affordable Care Act premium tax credits for three years. Forced to the floor by a discharge petition, with 17 Republicans joining all Democrats.",
+   "effect": null,
+   "outcome": "Passed 230–196",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "kval_aca_20260108"
+    ],
+    "note": "No OMB SAP listed; position per news reporting that passage defied Trump and Speaker Johnson."
+   },
+   "url": "https://clerk.house.gov/Votes/2026011",
+   "c": [
+    "clerk_2026_000",
+    "kval_aca_20260108"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hjres72_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-02-11",
+   "roll": 65,
+   "bill": "H.J.Res. 72",
+   "title": "Terminating the Feb. 1, 2025 national emergency (Canada tariffs)",
+   "category": "tariffs_trade",
+   "what": "Joint resolution to end the national emergency declared Feb. 1, 2025, which the President used as the legal basis for tariffs on imports from Canada.",
+   "effect": null,
+   "outcome": "Passed 219–211",
+   "admin": {
+    "pos": "none found",
+    "president": "Trump",
+    "c": [],
+    "note": "No House SAP listed on OMB's index; the administration opposed the Senate counterpart S.J.Res. 37 (2025) with a veto recommendation."
+   },
+   "url": "https://clerk.house.gov/Votes/2026065",
+   "c": [
+    "clerk_2026_000",
+    "sap_sjr37"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hconres86_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-06-03",
+   "roll": 199,
+   "bill": "H.Con.Res. 86",
+   "title": "War Powers: remove U.S. forces from hostilities with Iran",
+   "category": "foreign_aid_war",
+   "what": "Concurrent resolution under section 5(c) of the War Powers Resolution directing the President to remove U.S. armed forces from hostilities with Iran. As a concurrent resolution it is not presented to the President, and its legal force is disputed.",
+   "effect": null,
+   "outcome": "Agreed 215–208 (4 R yes, 211 D yes); Senate agreed 50–48 on Jun 23, 2026",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_hcr86_house"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2026199",
+   "c": [
+    "jewishinsider_hcr86"
+   ],
+   "verify": false
+  },
+  {
+   "id": "h119_hr2913_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-06-04",
+   "roll": 207,
+   "bill": "H.R. 2913",
+   "title": "Ukraine Support Act (passage)",
+   "category": "foreign_aid_war",
+   "what": "Ukraine assistance and Russia-sanctions bill brought to the floor by a discharge petition.",
+   "effect": null,
+   "outcome": "Passed 226–195 (18 R yes)",
+   "admin": {
+    "pos": "none found",
+    "president": "Trump",
+    "c": [],
+    "note": "No SAP listed; press described passage as a rebuke to Trump. Confirm the administration's stated position."
+   },
+   "url": "https://clerk.house.gov/Votes/2026207",
+   "c": [
+    "bgov_ukraine_2026"
+   ],
+   "verify": true
+  },
+  {
+   "id": "h119_s2_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-06-09",
+   "roll": 214,
+   "bill": "S. 2",
+   "title": "Secure America Act (2026 reconciliation bill, final passage)",
+   "category": "immigration",
+   "what": "Second budget-reconciliation bill of the 119th Congress. It directly appropriates multiyear funding for ICE, CBP/Border Patrol, and DHS border and interior immigration enforcement.",
+   "effect": {
+    "t": "CBO (Senate substitute, Amendment 5453): about $69.5 billion in new direct spending with no offsets, increasing deficits by that amount over 2026–2035.",
+    "c": [
+     "cbo_s2_5453"
+    ]
+   },
+   "outcome": "Passed 214–212 (party line); signed into law",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s2"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2026214",
+   "c": [],
+   "verify": false
+  },
+  {
+   "id": "h119_hr7008_2026",
+   "congress": 119,
+   "chamber": "house",
+   "date": "2026-07-22",
+   "roll": 280,
+   "bill": "H.R. 7008",
+   "title": "Stop Insider Trading Act (congressional stock-trading limits)",
+   "category": "corporate",
+   "what": "Would bar members of Congress and their families from buying new individual stocks (diversified funds allowed) and require advance public notice of planned sales. The House-passed text also attached SAVE America Act provisions requiring photo ID to vote in federal elections, which Democrats cited in opposing it.",
+   "effect": null,
+   "outcome": "Passed 232–198",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr7008"
+    ]
+   },
+   "url": "https://clerk.house.gov/Votes/2026280",
+   "c": [
+    "wlox_hr7008"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_s5_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-01-20",
+   "roll": 7,
+   "bill": "S. 5",
+   "title": "Laken Riley Act (passage)",
+   "category": "immigration",
+   "what": "Requires DHS to detain noncitizens charged with or arrested for theft-related and violent offenses, and gives state attorneys general standing to sue over federal immigration-enforcement decisions.",
+   "effect": null,
+   "outcome": "Bill passed, as amended, 64–35",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s5"
+    ],
+    "note": "SAP is dated Jan 22, 2025, after the Senate vote."
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.htm",
+   "c": [
+    "lobbynews_s119_7",
+    "wiki_laken",
+    "sen_119_1_7"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hr23_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-01-28",
+   "roll": 22,
+   "bill": "H.R. 23",
+   "title": "ICC sanctions bill (cloture on motion to proceed)",
+   "category": "israel",
+   "what": "Decisive vote to take up the House-passed bill requiring sanctions on International Criminal Court personnel who investigate or prosecute U.S. or allied (including Israeli) protected persons.",
+   "effect": null,
+   "outcome": "Cloture on the motion to proceed rejected 54–45 (3/5 required)",
+   "admin": {
+    "pos": "none found",
+    "president": "Trump",
+    "c": []
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00022.htm",
+   "c": [
+    "sen_119_1_22"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_sjres37_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-04-02",
+   "roll": 160,
+   "bill": "S.J.Res. 37",
+   "title": "Terminate national emergency used for Canada tariffs",
+   "category": "tariffs_trade",
+   "what": "Joint resolution to end the national emergency the President declared Feb. 1, 2025, which was the legal basis for tariffs on Canadian imports.",
+   "effect": null,
+   "outcome": "Joint resolution passed 51–48 (not taken up by the House)",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_sjr37"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00160.htm",
+   "c": [
+    "sen_119_1_160"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_s1582_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-06-17",
+   "roll": 318,
+   "bill": "S. 1582",
+   "title": "GENIUS Act (stablecoin regulation, passage)",
+   "category": "corporate",
+   "what": "Creates a federal framework for payment-stablecoin issuers, including 1:1 reserve, AML and licensing requirements.",
+   "effect": {
+    "t": "CBO: about +$120 million in deficits over 2025–2035.",
+    "c": [
+     "cbo_61551"
+    ]
+   },
+   "outcome": "Bill passed, as amended, 68–30",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s1582"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.htm",
+   "c": [
+    "wiki_genius",
+    "sen_119_1_318"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_sjres59_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-06-27",
+   "roll": 328,
+   "bill": "S.J.Res. 59",
+   "title": "War Powers: remove forces from hostilities against Iran (motion to discharge)",
+   "category": "foreign_aid_war",
+   "what": "Kaine resolution, after the June 2025 U.S. strikes on Iranian nuclear sites, directing removal of U.S. forces from hostilities against Iran not authorized by Congress.",
+   "effect": null,
+   "outcome": "Motion to discharge rejected 47–53",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_sjr59"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00328.htm",
+   "c": [
+    "sen_119_1_328"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hr1_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-07-01",
+   "roll": 372,
+   "bill": "H.R. 1",
+   "title": "One Big Beautiful Bill Act (passage, as amended)",
+   "category": "taxes",
+   "what": "Reconciliation law that extended and expanded the 2017 tax cuts, cut projected Medicaid and SNAP spending, raised immigration-enforcement and defense funding, and raised the debt limit by $5 trillion.",
+   "effect": {
+    "t": "CBO: about +$3.4 trillion in deficits over 2025–2034. Distributional and uninsured analyses of the House version showed lower resources for the lowest-income households and about 10.9 million more uninsured in 2034.",
+    "c": [
+     "cbo_61570",
+     "cbo_61463",
+     "cbo_61469"
+    ]
+   },
+   "outcome": "Bill passed, as amended, 51–50 (Vice President voted Yea to break the tie)",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr1_sen"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm",
+   "c": [
+    "watchvote_s119_372",
+    "wiki_obbba",
+    "sen_119_1_372"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hr4_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-07-17",
+   "roll": 411,
+   "bill": "H.R. 4",
+   "title": "Rescissions Act of 2025 (passage, as amended)",
+   "category": "debt_spending",
+   "what": "Cancels about $7.9 billion in foreign aid and about $1.1 billion for the Corporation for Public Broadcasting; the Senate removed proposed PEPFAR cuts.",
+   "effect": {
+    "t": "CBO cost estimate of the rescissions (House-reported version).",
+    "c": [
+     "cbo_61473"
+    ]
+   },
+   "outcome": "Bill passed, as amended, 51–48",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr4"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00411.htm",
+   "c": [
+    "voteview_s119_411",
+    "sen_119_1_394",
+    "wiki_rescissions",
+    "sen_119_1_411"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_sjres41_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-07-30",
+   "roll": 454,
+   "bill": "S.J.Res. 41",
+   "title": "Disapproval of arms sale to Israel: rifles for Israel National Police (motion to discharge)",
+   "category": "israel",
+   "what": "Sanders joint resolution to block a sale of about 20,000 assault rifles to Israel's National Police. It drew the most support of the two July 30, 2025 resolutions; the companion S.J.Res. 34, on bombs and JDAM kits, drew fewer votes.",
+   "effect": null,
+   "outcome": "Motion to discharge rejected 27–70",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_sjr34_41"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00454.htm",
+   "c": [
+    "sen_119_1_454"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hr5371_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-11-10",
+   "roll": 618,
+   "bill": "H.R. 5371",
+   "title": "Continuing Appropriations and Extensions Act, 2026 (passage, as amended — ended the 2025 shutdown)",
+   "category": "debt_spending",
+   "what": "Senate passage of the substitute that ended the 2025 shutdown: funding through Jan. 30, 2026, three full-year bills, and reversal of shutdown layoffs, with a promised later vote on ACA subsidies.",
+   "effect": null,
+   "outcome": "Bill passed, as amended, 60–40",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr5371_sen"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00618.htm",
+   "c": [
+    "sen_119_1_618"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_aca_ext_2025",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2025-12-11",
+   "roll": 644,
+   "bill": "S. 3385",
+   "title": "Democratic three-year extension of enhanced ACA premium tax credits (cloture)",
+   "category": "pocketbook",
+   "what": "Decisive vote on a Democratic bill to extend the enhanced ACA premium tax credits for three years. Collins, Hawley, Murkowski and Sullivan joined Democrats. A competing Republican HSA-based plan (Crapo–Cassidy) failed 51–48 the same day.",
+   "effect": {
+    "t": "CBO's estimate for S. 3385 (extends enhanced credits through 2028): about +$82.9 billion in deficits over 2026–2035 and about 4 million more people insured in 2028. Confirm S. 3385 is the measure voted on.",
+    "c": [
+     "cbo_s3385"
+    ]
+   },
+   "outcome": "Cloture on the motion to proceed to S. 3385 rejected 51–48 (3/5 required)",
+   "admin": {
+    "pos": "none found",
+    "president": "Trump",
+    "c": []
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00644.htm",
+   "c": [
+    "tpr_aca_20251211",
+    "sen_119_1_644"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_s2_2026",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2026-06-05",
+   "roll": 163,
+   "bill": "S. 2",
+   "title": "Secure America Act (2026 reconciliation, passage)",
+   "category": "immigration",
+   "what": "Reconciliation bill appropriating multiyear funding to ICE, CBP/Border Patrol, and DHS for border and interior immigration enforcement.",
+   "effect": {
+    "t": "CBO (Amendment 5453): about $69.5 billion in new direct spending, unoffset.",
+    "c": [
+     "cbo_s2_5453"
+    ]
+   },
+   "outcome": "Bill passed, as amended, 52–47",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_s2"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00163.htm",
+   "c": [
+    "sen_menu_119_2",
+    "sen_119_2_163"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hconres86_2026",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2026-06-23",
+   "roll": 184,
+   "bill": "H.Con.Res. 86",
+   "title": "War Powers: remove U.S. forces from hostilities with Iran (House-passed)",
+   "category": "foreign_aid_war",
+   "what": "Senate agreement to the House-passed concurrent resolution directing removal of U.S. forces from hostilities with Iran under War Powers Resolution section 5(c).",
+   "effect": null,
+   "outcome": "Concurrent resolution agreed to 50–48",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_hcr86_sen"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00184.htm",
+   "c": [
+    "sen_menu_119_2",
+    "jewishinsider_hcr86",
+    "sen_119_2_184"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_s5271_2026",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2026-08-08",
+   "roll": 231,
+   "bill": "S. 5271",
+   "title": "Voter photo-identification requirement (cloture on motion to proceed)",
+   "category": "democracy_rights",
+   "what": "Bill to amend the Help America Vote Act of 2002 to require voters to provide photo identification.",
+   "effect": null,
+   "outcome": "Cloture on the motion to proceed rejected 52–46 (3/5 required)",
+   "admin": {
+    "pos": "none found",
+    "president": "Trump",
+    "c": [],
+    "note": "No SAP for S. 5271 on OMB's index. The administration strongly supported the House SAVE America Act (S. 1383 House amendment), which included a voter-ID requirement."
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00231.htm",
+   "c": [
+    "sen_119_2_231"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_sres852_2026",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2026-09-29",
+   "roll": 252,
+   "bill": "S.Res. 852",
+   "title": "Request for information on Israel's human rights practices (Foreign Assistance Act §502B; motion to discharge)",
+   "category": "israel",
+   "what": "Privileged resolution requiring the State Department to report to Congress on Israel's human rights practices under section 502B(c) of the Foreign Assistance Act, which can lead to restrictions on security assistance.",
+   "effect": null,
+   "outcome": "Motion to discharge rejected 47–51",
+   "admin": {
+    "pos": "oppose",
+    "president": "Trump",
+    "c": [
+     "sap_sres852"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00252.htm",
+   "c": [
+    "sen_menu_119_2",
+    "sen_119_2_252"
+   ],
+   "verify": false
+  },
+  {
+   "id": "s119_hr7008_2026",
+   "congress": 119,
+   "chamber": "senate",
+   "date": "2026-09-30",
+   "roll": 253,
+   "bill": "H.R. 7008",
+   "title": "Stop Insider Trading Act (cloture on motion to proceed)",
+   "category": "corporate",
+   "what": "Decisive vote to take up the House-passed congressional stock-trading restriction bill, which also carried a voter photo-ID requirement.",
+   "effect": null,
+   "outcome": "Cloture on the motion to proceed rejected 53–47 (3/5 required)",
+   "admin": {
+    "pos": "support",
+    "president": "Trump",
+    "c": [
+     "sap_hr7008"
+    ]
+   },
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00253.htm",
+   "c": [
+    "sen_menu_119_2",
+    "sen_119_2_253"
+   ],
+   "verify": false
+  }
+ ],
+ "verify_notes": [
+  "All 27 Senate key votes confirmed against official senate.gov roll-call pages on 2026-10-08; none remain verify=true.",
+  "s118_hr815_border_2024: official question is 'On Cloture on the Motion to Proceed to H.R. 815' (roll 39), not cloture on a motion to concur with an amendment as the title says. Suggest retitling '(cloture on motion to proceed)'.",
+  "s118_hr2882_2024: roll 114 was a motion to concur in the House amendment to the Senate amendment (3/5 threshold), which cleared the bill; title says '(passage)'. Vote time 1:51 AM, March 23, 2024.",
+  "s118_hr815_2024: roll 154 was a motion to concur in the House amendment to the Senate amendment (cleared the bill); title says '(final passage)'.",
+  "s118_hr7888_2024: senate.gov dates roll 150 April 19, 2024, 11:45 PM; date corrected from 2024-04-20.",
+  "s118_hr82_2024: senate.gov dates roll 338 December 21, 2024, 12:04 AM; date 2024-12-21 confirmed. The 'what' field's caveat about confirming the calendar date can be removed.",
+  "s119_aca_ext_2025: roll 644 was cloture on the motion to proceed to S. 3385 (bill number confirmed). The 'what' field's claim that a Republican HSA plan failed 51–48 the same day was not checked in this pass.",
+  "s119_hr7008_2026: the senate.gov page gives the title as restricting stock holdings for Members of Congress and their spouses and dependents; the 'what' field's claim that the bill also carried a voter photo-ID requirement was not checked against the bill text."
+ ]
+}
