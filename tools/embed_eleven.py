@@ -50,7 +50,12 @@ BLOCK = '''<!--ELEVEN-START-->
   }
   function fromHash(){ if(location.hash === '#11minutes'){ try{ if(typeof window.dismissWelcome === 'function' && document.getElementById('welcomeOverlay') && getComputedStyle(document.getElementById('welcomeOverlay')).display !== 'none') window.dismissWelcome(); }catch(e){} window.__eleven.open(); } }
   window.addEventListener('hashchange', fromHash);
-  window.addEventListener('load', function(){ setTimeout(fromHash, 500); });
+  /* Sophia's "Eleven Minutes" slide sets parent.__elevenRoute before opening the simulation. */
+  function fromParent(){ try{ if(window.parent !== window && window.parent.__elevenRoute){ window.parent.__elevenRoute = false;
+    var w = document.getElementById('welcomeOverlay');
+    if(typeof window.dismissWelcome === 'function' && w && getComputedStyle(w).display !== 'none') window.dismissWelcome();
+    window.__eleven.open(); } }catch(e){} }
+  window.addEventListener('load', function(){ setTimeout(fromHash, 500); setTimeout(fromParent, 600); });
 })();
 </script>
 <!--ELEVEN-END-->
