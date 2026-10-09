@@ -5,6 +5,8 @@
 | `index.html` | **The Israel Architecture Simulation**: the standalone file. This is the one to edit. |
 | `sophia.html` | Sophia, the hub of all modules. It carries an **embedded copy** of `index.html` (`<script id="il_sim_b64">`) so it works as a single file. |
 | `tools/embed_israel.py` | Re-embeds `index.html` into `sophia.html`. |
+| `11-minutes.html` | **Eleven Minutes**: the short intro (1872–1950 in eleven documents, plus four bonus cards). Standalone, and embedded in `index.html`, where it opens once after the landing modal and at `#11minutes`. |
+| `tools/embed_eleven.py` | Re-embeds `11-minutes.html` into `index.html` (run `embed_israel.py` after it). |
 | `elections-2026.html` | **2026 Elections** module (Collapse pillar), standalone. Also embedded in `sophia.html` (`<script id="el26_sim_b64">`). |
 | `elections/` | Source for the elections module: `app.html` template, `gen_data.py` → `merge_research.py` → `build.py`, research dossiers in `elections/research/`, and `sophia_patch.py` (re-embeds the module and the Israel simulation into Sophia). |
 
