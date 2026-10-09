@@ -135,6 +135,17 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-myth .mt p{font-style:italic}
 .bk-myth p{margin:0;text-indent:0 !important;text-align:left !important}
 @media (min-width:760px){.bk-myth .body{display:grid;grid-template-columns:1fr 1.25fr}.bk-myth .mt{border-bottom:0;border-right:1px dashed var(--rule)}}
+/* the lines you've heard */
+.bk-line{border-top:1px solid var(--rule);padding:1.3em 0 1.1em;margin-top:1.1em}
+.bk-line p{text-indent:0 !important}
+.bk-line p+p{margin-top:.6em}
+.bk-line .ln-q{font-size:1.18em;line-height:1.3;font-weight:600;margin:0 0 .45em;text-align:left !important}
+.bk-line .ln-q::before{content:'“'}.bk-line .ln-q::after{content:'”'}
+.ln-v{display:inline-block;font:700 12px/1 system-ui,-apple-system,sans-serif;letter-spacing:.03em;padding:6px 10px;border-radius:999px;color:#fff;margin:0 0 .8em;background:#6E6457}
+.ln-f,.ln-o{background:#8A2D1F}.ln-m{background:#B4531F}.ln-h{background:#9A6B14}.ln-t{background:#2F6B45}.ln-d{background:#2F4F86}.ln-u{background:#5C5C66}
+.bk-line .ln-more{font:500 13.5px/1.5 system-ui,-apple-system,sans-serif;margin-top:.8em !important;color:var(--muted);text-align:left !important}
+.bk-line .ln-more>span:first-child{font-weight:700;color:var(--ink);margin-right:4px}
+.ln-prep{font-style:italic}
 /* the library */
 .bk-lib{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;display:none;font-family:'Literata',Georgia,serif}
 #bookView.lib .bk-lib{display:block}

@@ -1,0 +1,647 @@
+{
+ "themes": [
+  {
+   "title": "The land and who lived there",
+   "intro": "Lines about whether Palestine was a real, populated place before 1948, and whose history it holds.",
+   "claims": [
+    {
+     "id": "palestine_never_existed",
+     "claim": "Palestine never existed. There was never a country called Palestine.",
+     "verdict": "False",
+     "scenes": [
+      "s00h",
+      "s07",
+      "ah_s01"
+     ]
+    },
+    {
+     "id": "invented_people",
+     "claim": "The Palestinian people were invented in the 1960s.",
+     "verdict": "False",
+     "scenes": [
+      "cmt_s06",
+      "fil_s01",
+      "pp_s01"
+     ]
+    },
+    {
+     "id": "land_without_people",
+     "claim": "It was a land without a people for a people without a land.",
+     "verdict": "False",
+     "scenes": [
+      "sq_s05",
+      "cen_s01",
+      "iaa_s03"
+     ]
+    },
+    {
+     "id": "indigenous_one_side",
+     "claim": "Jews are the indigenous people of the land, and Arabs are the colonizers.",
+     "verdict": "Half true",
+     "scenes": [
+      "s00i",
+      "ah_s01"
+     ]
+    },
+    {
+     "id": "jordan_is_palestine",
+     "claim": "Jordan is already the Palestinian state.",
+     "verdict": "False",
+     "scenes": [
+      "cmt_s04",
+      "s06a2"
+     ]
+    },
+    {
+     "id": "ancient_hatred",
+     "claim": "Jews and Muslims have been fighting over that land for thousands of years.",
+     "verdict": "False",
+     "scenes": [
+      "s00e",
+      "sq_s05",
+      "me_s10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "1948 and the refugees",
+   "intro": "Lines about how Israel was founded, how the war went, and why some 700,000 Palestinians became refugees.",
+   "claims": [
+    {
+     "id": "holocaust_origin",
+     "claim": "Israel was created because of the Holocaust.",
+     "verdict": "Misleading",
+     "scenes": [
+      "s07a",
+      "us_s08",
+      "s01"
+     ]
+    },
+    {
+     "id": "accepted_rejected",
+     "claim": "Israel accepted the UN partition plan; the Arabs rejected it and started the war.",
+     "verdict": "Half true",
+     "scenes": [
+      "s09b",
+      "s09"
+     ]
+    },
+    {
+     "id": "left_on_orders",
+     "claim": "Palestinians left in 1948 because Arab leaders told them to.",
+     "verdict": "False",
+     "scenes": [
+      "np_s01",
+      "s10",
+      "pd_s01"
+     ]
+    },
+    {
+     "id": "no_massacres",
+     "claim": "The Nakba is exaggerated; there were no massacres in 1948.",
+     "verdict": "False",
+     "scenes": [
+      "ma_s01",
+      "hd_s01",
+      "s10"
+     ]
+    },
+    {
+     "id": "tiny_israel",
+     "claim": "Tiny Israel won the 1948 war against impossible odds.",
+     "verdict": "Misleading",
+     "scenes": [
+      "s10b"
+     ]
+    },
+    {
+     "id": "arab_states_take_them",
+     "claim": "Why don't Arab countries just take the Palestinian refugees?",
+     "verdict": "Half true",
+     "scenes": [
+      "sq_s20",
+      "ilb_s03",
+      "cmt_s02"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "October 7 and the Gaza war",
+   "intro": "Lines about the attack itself, Israel's response, and how the dead and the hungry are counted.",
+   "claims": [
+    {
+     "id": "oct7_no_context",
+     "claim": "October 7 came out of nowhere; there was no context at all.",
+     "verdict": "Misleading",
+     "scenes": [
+      "iaa_s12",
+      "gzr_s06",
+      "s20"
+     ]
+    },
+    {
+     "id": "beheaded_babies",
+     "claim": "Hamas beheaded 40 babies on October 7.",
+     "verdict": "Unsupported",
+     "scenes": [
+      "o7_s06",
+      "o7_s08"
+     ]
+    },
+    {
+     "id": "right_to_defend",
+     "claim": "Hamas are terrorists and Israel has the right to defend itself.",
+     "verdict": "True, with limits",
+     "scenes": [
+      "sk_s03",
+      "s20",
+      "hma_src_s15"
+     ]
+    },
+    {
+     "id": "most_moral_army",
+     "claim": "The IDF is the most moral army in the world.",
+     "verdict": "Unsupported",
+     "scenes": [
+      "s19h",
+      "u82_s05"
+     ]
+    },
+    {
+     "id": "human_shields",
+     "claim": "Hamas uses human shields, so the civilian deaths in Gaza are on Hamas.",
+     "verdict": "Half true",
+     "scenes": [
+      "hs_s01",
+      "hma_src_s15"
+     ]
+    },
+    {
+     "id": "death_toll_fake",
+     "claim": "Gaza's death toll is made up by Hamas.",
+     "verdict": "False",
+     "scenes": [
+      "tl_s01",
+      "gzr_s03",
+      "s19j"
+     ]
+    },
+    {
+     "id": "no_famine",
+     "claim": "There is no famine in Gaza; the starvation stories are propaganda.",
+     "verdict": "False",
+     "scenes": [
+      "gzr_s01",
+      "s19k"
+     ]
+    },
+    {
+     "id": "genocide_ruled",
+     "claim": "The world court has already ruled that Israel committed genocide.",
+     "verdict": "False",
+     "scenes": [
+      "arm_s05",
+      "pr_s03"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Wars, occupation and peace",
+   "intro": "Lines about who starts the wars, what the occupation is in law, and who walked away from peace.",
+   "claims": [
+    {
+     "id": "never_initiates",
+     "claim": "Israel never starts wars; it only responds.",
+     "verdict": "False",
+     "scenes": [
+      "iaa_s04",
+      "iaa_s06",
+      "s12"
+     ]
+    },
+    {
+     "id": "left_gaza_got_rockets",
+     "claim": "Israel gave Gaza back in 2005 and got rockets in return.",
+     "verdict": "Half true",
+     "scenes": [
+      "dis_s01"
+     ]
+    },
+    {
+     "id": "no_occupation",
+     "claim": "There is no occupation; the West Bank is disputed territory.",
+     "verdict": "False",
+     "scenes": [
+      "icj_s01",
+      "pr_s03",
+      "un_s01"
+     ]
+    },
+    {
+     "id": "rejected_every_offer",
+     "claim": "The Palestinians rejected every peace offer they were given.",
+     "verdict": "Half true",
+     "scenes": [
+      "sq_s05",
+      "cd_s01",
+      "lau_s01"
+     ]
+    },
+    {
+     "id": "peace_up_to_palestinians",
+     "claim": "Israel wants coexistence; peace is up to the Palestinians.",
+     "verdict": "Misleading",
+     "scenes": [
+      "ts_s02",
+      "hma_s01",
+      "s17"
+     ]
+    },
+    {
+     "id": "greater_israel",
+     "claim": "Israel's real plan is a Greater Israel from the Nile to the Euphrates.",
+     "verdict": "Depends on what's said",
+     "scenes": [
+      "gia_src_s02",
+      "gia_s01",
+      "gia_src_s10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Democracy, rights and Palestinian politics",
+   "intro": "Lines about Israel's democracy, the rights of the people it governs, and the record of Palestinian leaderships.",
+   "claims": [
+    {
+     "id": "only_democracy",
+     "claim": "Israel is the only democracy in the Middle East.",
+     "verdict": "Half true",
+     "scenes": [
+      "sk_s02",
+      "s19d"
+     ]
+    },
+    {
+     "id": "arab_citizens_equal",
+     "claim": "Arab citizens of Israel have exactly the same rights as Jewish citizens.",
+     "verdict": "Half true",
+     "scenes": [
+      "mg_s01",
+      "nsl_s01",
+      "ap_s01"
+     ]
+    },
+    {
+     "id": "apartheid",
+     "claim": "Israel is an apartheid state.",
+     "verdict": "Depends on what's said",
+     "scenes": [
+      "pr_s03"
+     ]
+    },
+    {
+     "id": "schools_teach_hate",
+     "claim": "Palestinian schoolbooks teach children to hate Jews.",
+     "verdict": "Half true",
+     "scenes": [
+      "sk_s05"
+     ]
+    },
+    {
+     "id": "israel_created_hamas",
+     "claim": "Israel created Hamas.",
+     "verdict": "Half true",
+     "scenes": [
+      "sq_s02",
+      "hma_src_s13",
+      "s15"
+     ]
+    },
+    {
+     "id": "netanyahu_funded_hamas",
+     "claim": "Netanyahu kept Hamas afloat with Qatari money to block a Palestinian state.",
+     "verdict": "True, with limits",
+     "scenes": [
+      "o7_s03",
+      "hma_s01",
+      "qih_src_s03"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Iran and the neighbors",
+   "intro": "Lines about Iran, the armed groups it backs, and Israel's ties with Arab states.",
+   "claims": [
+    {
+     "id": "iran_real_enemy",
+     "claim": "Israel isn't the enemy of the Arab countries; Iran is.",
+     "verdict": "Half true",
+     "scenes": [
+      "isa_src_s07",
+      "oa_s08",
+      "egi_src_s01"
+     ]
+    },
+    {
+     "id": "iran_always_theocracy",
+     "claim": "Iran has always been a hostile theocracy.",
+     "verdict": "False",
+     "scenes": [
+      "sq_s01",
+      "me_s06",
+      "ira_s00"
+     ]
+    },
+    {
+     "id": "israel_iran_always_enemies",
+     "claim": "Israel and Iran have always been enemies.",
+     "verdict": "False",
+     "scenes": [
+      "ira_s01",
+      "ira_s02",
+      "ira_s00"
+     ]
+    },
+    {
+     "id": "iranian_proxies",
+     "claim": "Hamas, Hezbollah and the Houthis are just Iranian proxies with no causes of their own.",
+     "verdict": "Misleading",
+     "scenes": [
+      "ye_s07",
+      "sq_s03",
+      "hma_s04"
+     ]
+    },
+    {
+     "id": "abraham_accords_peace",
+     "claim": "The Abraham Accords brought peace to the Middle East.",
+     "verdict": "Half true",
+     "scenes": [
+      "ae_s09",
+      "oa_s08",
+      "s18"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "America: money, aid and the message",
+   "intro": "Lines about US aid, the pro-Israel lobby, and where the talking points themselves come from.",
+   "claims": [
+    {
+     "id": "aipac_ordinary",
+     "claim": "AIPAC is just an ordinary lobby like any other.",
+     "verdict": "Misleading",
+     "scenes": [
+      "s19b",
+      "s19",
+      "s11a"
+     ]
+    },
+    {
+     "id": "aipac_buys_congress",
+     "claim": "AIPAC money buys Congress.",
+     "verdict": "Depends on what's said",
+     "scenes": [
+      "mn_s02",
+      "cm_s00",
+      "s19b"
+     ]
+    },
+    {
+     "id": "aid_keeps_israel_alive",
+     "claim": "Without US aid, Israel couldn't defend itself.",
+     "verdict": "False",
+     "scenes": [
+      "usil_s09",
+      "s19f"
+     ]
+    },
+    {
+     "id": "aid_spent_in_us",
+     "claim": "Aid to Israel all gets spent in America anyway.",
+     "verdict": "True, with limits",
+     "scenes": [
+      "iaa_s02",
+      "wlg_s01",
+      "st_s01"
+     ]
+    },
+    {
+     "id": "posts_are_organic",
+     "claim": "Pro-Israel posts online are just ordinary people; nobody is paid.",
+     "verdict": "False",
+     "scenes": [
+      "ip_s01",
+      "sk_s01",
+      "s00a3"
+     ]
+    },
+    {
+     "id": "un_biased",
+     "claim": "The UN is biased against Israel.",
+     "verdict": "Half true",
+     "scenes": [
+      "sk_s04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Antisemitism and criticism of Israel",
+   "intro": "Lines about where criticism of a state ends and hatred of Jews begins.",
+   "claims": [
+    {
+     "id": "anti_zionism_antisemitism",
+     "claim": "Anti-Zionism is antisemitism.",
+     "verdict": "Depends on what's said",
+     "scenes": [
+      "az_s01",
+      "s00b1",
+      "ihra_s02"
+     ]
+    },
+    {
+     "id": "criticism_antisemitic",
+     "claim": "Any criticism of Israel is antisemitic.",
+     "verdict": "False",
+     "scenes": [
+      "s00b1",
+      "df_s07"
+     ]
+    },
+    {
+     "id": "zionism_is_judaism",
+     "claim": "Zionism is Judaism, so opposing Zionism means opposing Jews.",
+     "verdict": "False",
+     "scenes": [
+      "s00c",
+      "s00b3"
+     ]
+    },
+    {
+     "id": "free_palestine_code",
+     "claim": "Free Palestine is just code for antisemitism.",
+     "verdict": "Misleading",
+     "scenes": [
+      "cmt_s09"
+     ]
+    },
+    {
+     "id": "bds_antisemitic",
+     "claim": "BDS is an antisemitic movement.",
+     "verdict": "Depends on what's said",
+     "scenes": [
+      "gx_s03"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lines aimed the other way",
+   "intro": "Lines that target Jews or lean on old antisemitic tropes, held to the same standard as every other line here.",
+   "claims": [
+    {
+     "id": "khazars",
+     "claim": "Ashkenazi Jews are really Khazars with no tie to the land.",
+     "verdict": "False, aimed the other way",
+     "scenes": [
+      "kh_s01",
+      "s00b2"
+     ]
+    },
+    {
+     "id": "jews_absent",
+     "claim": "Jews were gone from the land for 2,000 years until Zionism.",
+     "verdict": "False, aimed the other way",
+     "scenes": [
+      "ah_s01"
+     ]
+    },
+    {
+     "id": "rothschild_project",
+     "claim": "The Rothschilds paid for Zionism; Herzl's movement was their project.",
+     "verdict": "Misleading",
+     "scenes": [
+      "bc_s04",
+      "s04c",
+      "gf_s01"
+     ]
+    },
+    {
+     "id": "six_million_made_up",
+     "claim": "Six million is a made-up round number nobody can verify.",
+     "verdict": "False, aimed the other way",
+     "scenes": [
+      "hol_s05",
+      "hol_s04"
+     ]
+    },
+    {
+     "id": "zionists_nazis",
+     "claim": "The Zionists collaborated with the Nazis.",
+     "verdict": "Misleading",
+     "scenes": [
+      "hv_s01",
+      "lh_s01"
+     ]
+    },
+    {
+     "id": "one_lobby_rules",
+     "claim": "One secret Israel lobby controls the governments of every Western country.",
+     "verdict": "False, aimed the other way",
+     "scenes": [
+      "arm_s07",
+      "s19g",
+      "gx_s01"
+     ]
+    },
+    {
+     "id": "epstein_mossad",
+     "claim": "Epstein was obviously running a Mossad operation.",
+     "verdict": "Unsupported",
+     "scenes": [
+      "epn_s05",
+      "epx_s07",
+      "cia_s14"
+     ]
+    }
+   ]
+  }
+ ],
+ "uncovered": [
+  {
+   "claim": "Jews control the media, Hollywood and the banks.",
+   "why_it_matters": "One of the most repeated antisemitic tropes online; no scene checks it directly. The nearest scenes cover named media owners (Maxwell, Axel Springer, Fox) and the Federal Reserve myth, not the generalized claim."
+  },
+  {
+   "claim": "The Jews killed Jesus.",
+   "why_it_matters": "The deicide charge is the oldest root of Christian antisemitism and resurfaces in Gaza-war comment sections; no scene addresses it."
+  },
+  {
+   "claim": "Israel or Mossad was behind 9/11.",
+   "why_it_matters": "Widely shared conspiracy; fis_s10b covers the pre-9/11 art-student affair but does not check the 9/11 foreknowledge or dancing-Israelis claims themselves."
+  },
+  {
+   "claim": "The Protocols of the Elders of Zion show the Jewish plan for world control.",
+   "why_it_matters": "A documented forgery that still circulates; the book has no scene on its origin or exposure."
+  },
+  {
+   "claim": "The IDF harvests Palestinians' organs.",
+   "why_it_matters": "A recurring blood-libel-style claim with a specific documented history (the 2009 Aftonbladet story, the Abu Kabir institute admissions) that needs careful separating; not covered."
+  },
+  {
+   "claim": "American Jews have dual loyalty to Israel.",
+   "why_it_matters": "A classic trope often blended with legitimate lobbying questions; cm_s07 covers the Omar controversy but not the trope itself as a claim about a people."
+  },
+  {
+   "claim": "The Holocaust didn't happen, or the gas chambers are a myth.",
+   "why_it_matters": "hol_s05 checks the six million figure, but outright denial of the camps and gas chambers has no dedicated scene."
+  },
+  {
+   "claim": "Israelis are the new Nazis.",
+   "why_it_matters": "Holocaust inversion is a widely repeated line on the other side; az_s01 mentions the IHRA example but no scene checks the comparison itself."
+  },
+  {
+   "claim": "Hamas committed mass rape on October 7, or the rape reports were invented.",
+   "why_it_matters": "Both versions are heavily repeated; no scene covers the UN (Patten) report, the Israeli and media investigations, or the disputes over specific accounts."
+  },
+  {
+   "claim": "UNRWA is Hamas, and its staff took part in October 7.",
+   "why_it_matters": "Drove funding cuts by the US and others; UNRWA appears in scenes but the staff-participation allegations and the Colonna review are not checked."
+  },
+  {
+   "claim": "From the river to the sea is a call for genocide.",
+   "why_it_matters": "One of the most argued-over slogans online, used both as a rallying cry and as evidence of intent; no scene traces its history or competing uses (including Likud's 1977 platform)."
+  },
+  {
+   "claim": "Hamas is ISIS.",
+   "why_it_matters": "A central Israeli government message after October 7; no scene compares the two organizations' ideology, aims, and documented rivalry."
+  },
+  {
+   "claim": "Israel is the only progressive state in the region; look at gay rights in Tel Aviv.",
+   "why_it_matters": "The progressive half of a framing-study message, and the pinkwashing counter-argument, are both uncovered; sk_s02 handles only the democracy half."
+  },
+  {
+   "claim": "Israel started the 1956 Suez war together with Britain and France.",
+   "why_it_matters": "Audit item #22 and a Myths and Facts chapter; Suez appears only in passing (egi_src_s02, me_s08), with no scene on the Sèvres protocol and who struck first."
+  },
+  {
+   "claim": "Smotrich showed a Greater Israel map that includes Jordan, Lebanon and Syria.",
+   "why_it_matters": "Audit item #35, researched but not built; it must be kept distinct from Netanyahu's 2023 UN map (gia_s01), which the book does cover."
+  },
+  {
+   "claim": "Never Again applies only to Jews.",
+   "why_it_matters": "Audit item #61, a live 2026 argument over the phrase's universal or particular meaning; not covered."
+  },
+  {
+   "claim": "Gaza's civilians are fair targets because they elected Hamas.",
+   "why_it_matters": "A common justification line; hma_src_s04 covers the 2006 election and hma_src_s15 the proportionality rule, but no scene checks the claim's demographic premise (no vote since 2006, about half of Gaza under 18) together with the law."
+  }
+ ]
+}

@@ -63,3 +63,8 @@ The book's writers and auditors were only allowed to use the simulation's own re
 - s07g: "over a decade" vs "seventeen years" after 1943 (1962 − 1943 = 19).
 - UJA 1948: "the largest" vs "described as the largest."
 - Citation keys that don't match their claims: oc_ch03 (three Palestine Arab Congress keys on Zionist-institution claims); us_s08 (gandhi_poland_solidarity on a Vatican section).
+
+## Found while writing The Lines You've Heard (Baseline, Chapter 7)
+- cia_s14: Maxwell described as a "confirmed" Mossad asset; other scenes treat it as reported/alleged.
+- s19: Bush campaign spending $14.5M vs. about $8.5M.
+- gia_s01 vs gia_src_s02: differing accounts of the Smotrich map.

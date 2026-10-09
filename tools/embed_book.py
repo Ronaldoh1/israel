@@ -52,6 +52,45 @@ base_chapters = []
 for i, (title, intro, ids) in enumerate(BASE):
     secs = [x for x in (section('ch01', sid) for sid in ids) if x]
     base_chapters.append({'id': 'base%d' % (i + 1), 'label': 'Chapter %d' % (i + 1), 'title': title, 'span': '', 'intro': '<p>' + intro + '</p>', 'outro': '', 'sections': secs})
+# ---- Baseline, last chapter: The Lines You've Heard (claims checked, with links to where the full record lives) ----
+CH_OF = {sid: c['id'] for c in CH for sid in c['scenes']}
+def roman(n):
+    out = ''
+    for v, r in ((50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
+        while n >= v: out += r; n -= v
+    return out
+def volume_label(sid):
+    cid = CH_OF.get(sid)
+    if cid == 'ch01': return 'Volume I, The Baseline', True
+    if cid and cid.startswith('rd'): return 'Volume II, The Road to 1948', True
+    n = 3
+    for c in CH:
+        if c['id'] in ('ch01',) or c['id'].startswith('rd') or not c['scenes']: continue
+        if c['id'] == cid: return 'Volume %s, %s' % (roman(n), split_name(c['name'])[0]), False
+        n += 1
+    return 'the simulation', False
+VCLS = {'False': 'f', 'Misleading': 'm', 'Half true': 'h', 'True, with limits': 't', "Depends on what's said": 'd', 'Unsupported': 'u', 'False, aimed the other way': 'o'}
+plan_p = os.path.join(ROOT, 'book', 'lines', 'plan.json')
+if os.path.exists(plan_p):
+    plan = json.load(open(plan_p, encoding='utf-8'))
+    secs = []
+    for ti, th in enumerate(plan['themes']):
+        h = '<p class="first">' + th.get('intro', '') + '</p>'
+        for c in th['claims']:
+            body = read(os.path.join(ROOT, 'book', 'lines', 'entries', c['id'] + '.html'))
+            if not body: continue
+            more = []; prep = False
+            for sid in c['scenes'][:2]:
+                if sid not in SC: continue
+                vl, ready = volume_label(sid); prep = prep or not ready
+                more.append('[scene:%s|%s: %s]' % (sid, vl, SC[sid]['t'].split(' — ')[0]))
+            if prep: more[-1] += ' <span class="ln-prep">(%s in preparation; opens in the simulation for now)</span>' % ('volume' if all(not volume_label(x)[1] for x in c['scenes'][:2] if x in SC) else 'one volume')
+            h += ('<div class="bk-line" id="ln-%s"><p class="ln-q">%s</p><span class="ln-v ln-%s">%s</span>%s<p class="ln-more"><span>Read more</span> %s</p></div>'
+                  % (c['id'], c['claim'], VCLS.get(c['verdict'], 'd'), c['verdict'], body, ' · '.join(more)))
+        secs.append({'s': 'lines_%d' % (ti + 1), 'h': th['title'], 'html': h})
+    base_chapters.append({'id': 'base_lines', 'label': 'Chapter %d' % (len(base_chapters) + 1), 'title': "The Lines You've Heard", 'span': 'A field guide to the claims repeated most online',
+        'intro': "<p>You now have the ground under the story. This chapter is a field guide to the lines you will meet in comment sections, posts and arguments. Each one is checked briefly against the record, with a verdict and a pointer to the volume that holds the full account. The same standard applies to every line, including the ones aimed at Jews.</p>",
+        'outro': '', 'sections': secs})
 base_chapters[-1]['outro'] = read(os.path.join(ROOT, 'book', 'part1', 'ch01', '_outro.html'))
 base_chapters[-1]['outroTitle'] = 'What the Baseline establishes'
 
