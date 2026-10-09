@@ -38,7 +38,7 @@ BLOCK = '''<!--ELEVEN-START-->
       if(sceneId){ try{ history.replaceState(null, '', location.pathname + location.search + '#scene=' + sceneId); }catch(e){} if(window.routeFromHash) window.routeFromHash(false); }
     }
   };
-  function deepLinked(){ return /^#(scene|dash|map)=/.test(location.hash || ''); }
+  function deepLinked(){ return /^#(scene=|dash=|map=|book)/.test(location.hash || '') || !!window.__bookOpening || !!(window.parent !== window && window.parent.__bookRoute); }
   function english(){ var l = (document.documentElement.lang || 'en').toLowerCase(); return l.indexOf('es') !== 0 && l.indexOf('ar') !== 0 && !/lang=(es|ar)/.test(location.hash || ''); }
   var prev = window.dismissWelcome;
   if(typeof prev === 'function'){

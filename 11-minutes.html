@@ -314,7 +314,9 @@ var SIM = 'index.html#scene=';
 var EMB = null; try{ if(window.parent && window.parent !== window && window.parent.__eleven) EMB = window.parent.__eleven; }catch(e){}
 document.addEventListener('click', function(e){
   var a = e.target.closest('a[href^="index.html"]'); if(!a || !EMB) return;
-  e.preventDefault(); var m = a.getAttribute('href').match(/#scene=([\w-]+)/); EMB.close(m ? m[1] : null);
+  e.preventDefault(); var hr = a.getAttribute('href');
+  if(/#book/.test(hr)){ EMB.close(null); try{ var P = window.parent; setTimeout(function(){ if(P.openBook) P.openBook(null); }, 480); }catch(er){} return; }
+  var m = hr.match(/#scene=([\w-]+)/); EMB.close(m ? m[1] : null);
 });
 var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches, TOUCH = window.matchMedia('(pointer: coarse)').matches;
 function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
@@ -515,6 +517,7 @@ var FIN = '<section class="fin" id="fin" hidden>' +
   '<div class="myth"><b>Who owned the presses</b><span>From 1988 Robert Maxwell owned Macmillan, whose school-textbook arm joined McGraw-Hill in 1989. Israel gave him a state-level burial on the Mount of Olives in 1991. McGraw Hill says he didn’t write its materials, and no review of what his companies published on this history has been documented.</span></div></div>' +
   '<p style="margin-top:10px"><a class="inl" href="' + SIM + 's16">Robert Maxwell and the press empire</a> · <a class="inl" href="' + SIM + 's00a">How the story is taught</a> · <a class="inl" href="' + SIM + 's00b1">The shield: when the word stops a question</a></p>' +
   '<div class="ctas"><a class="c1" href="' + SIM + 'us_s08">Walk the whole machine in the simulation<span>Fifty-one years, from a bank to a state</span></a>' +
+  '<a class="c2" href="index.html#book">Read the whole story as a book<span>Book One: the stages to 1948, with every source</span></a>' +
   '<a class="c2" href="' + SIM + 'pr_s01">Start the full simulation from the beginning<span>Nearly a thousand scenes, each with its sources</span></a>' +
   '<button class="c2" id="share" type="button">Share the eleven minutes<span>Send it to someone who learned it the way you did</span></button></div>' +
   '<p class="follow">Follow @chosen.ron13 on TikTok and Instagram.</p>' +

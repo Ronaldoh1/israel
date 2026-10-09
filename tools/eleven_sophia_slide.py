@@ -5,12 +5,18 @@ import re, sys
 P = sys.argv[1] if len(sys.argv) > 1 else 'sophia.html'
 s = open(P, encoding='utf-8').read()
 s = re.sub(r'\s*<!--ELEVEN-SLIDE-->.*?<!--/ELEVEN-SLIDE-->', '', s, flags=re.S)
+s = re.sub(r'\s*<!--BOOK-SLIDE-->.*?<!--/BOOK-SLIDE-->', '', s, flags=re.S)
 SLIDE = '''
   <!--ELEVEN-SLIDE--><div class="spot-slide" data-target="eleven" style="--spot-color:#FFE14D;--spot-glow:rgba(255,225,77,0.38)">
     <div class="spot-top"><span class="spot-flag">🕕</span><span class="spot-title">Eleven Minutes</span></div>
     <div class="spot-desc">A state at 6:00 p.m., U.S. recognition at 6:11. Eighteen documents show the machine behind it.</div>
     <div class="spot-record"><b>Start here</b> — a four-minute intro to the Israel simulation. Double-tap each document to reveal the record.</div>
-  </div><!--/ELEVEN-SLIDE-->'''
+  </div><!--/ELEVEN-SLIDE-->
+  <!--BOOK-SLIDE--><div class="spot-slide" data-target="book" style="--spot-color:#E9DABF;--spot-glow:rgba(233,218,191,0.35)">
+    <div class="spot-top"><span class="spot-flag">📖</span><span class="spot-title">Read It as a Book</span></div>
+    <div class="spot-desc">The Israel Architecture, Book One: the stages to 1948, written as a history you can read straight through.</div>
+    <div class="spot-record"><b>Every claim sourced</b>: tap a note for its source, a figure for who was connected. Bookmarks and notes included.</div>
+  </div><!--/BOOK-SLIDE-->'''
 anchor = '<div class="spot-slide" data-target="volumes"'
 i = s.index(anchor); i = s.rfind('\n', 0, i)
 s = s[:i] + SLIDE + s[i:]
@@ -25,5 +31,8 @@ a = "    if(target === 'volumes'){"
 b = "    if(target === 'eleven'){ window.__elevenRoute = true; if(typeof window.openSimOverlay === 'function') window.openSimOverlay('israel'); return; }\n"
 if b not in s:
     assert a in s; s = s.replace(a, b + a, 1)
+b2 = "    if(target === 'book'){ window.__bookRoute = true; if(typeof window.openSimOverlay === 'function') window.openSimOverlay('israel'); return; }\n"
+if b2 not in s:
+    s = s.replace(a, b2 + a, 1)
 open(P, 'w', encoding='utf-8').write(s)
 print('slides:', n)

@@ -1,0 +1,400 @@
+<!--BOOK-START-->
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+/* ===== Book mode: The Israel Architecture, read as a book ===== */
+#bookView{--paper:#F3EDE1;--ink:#26221C;--muted:#6E6457;--rule:#D8CDB9;--accent:#8A2D1F;--fig:#1B2A4A;--figline:#B8862B;--card:#FBF8F1;--fs:19px;
+  position:fixed;inset:0;z-index:2147482000;background:var(--paper);color:var(--ink);display:none;font-family:'Literata',Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}
+#bookView.on{display:block}
+#bookView[data-theme="sepia"]{--paper:#E9DABF;--ink:#33281A;--muted:#6E5A3E;--rule:#CDB893;--accent:#86321D;--card:#F2E6CF}
+#bookView[data-theme="night"]{--paper:#141519;--ink:#DDD6C8;--muted:#9B9384;--rule:#34322D;--accent:#E3A375;--fig:#A9BCE0;--figline:#C9A15A;--card:#1C1D22}
+body.book-open{overflow:hidden}
+body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{display:none !important}
+#bookView ::selection{background:rgba(184,134,43,.35)}
+.bk-scroll:focus{outline:none}
+.bk-scroll{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.bk-page{max-width:36em;margin:0 auto;padding:84px 26px 140px;font-size:var(--fs);line-height:1.64}
+.bk-page p{margin:0;text-indent:1.4em;hyphens:auto;-webkit-hyphens:auto}
+.bk-page h2+p,.bk-page .bk-fl+p,.bk-page .bk-open+p,.bk-page p.first,.bk-page blockquote+p{text-indent:0}
+.bk-page em{font-style:italic}
+.bk-page blockquote{margin:1em 0 1em 1.4em;padding-left:1em;border-left:2px solid var(--rule);font-size:.94em;line-height:1.55;color:var(--ink)}
+.bk-page blockquote p{text-indent:0}
+@media (min-width:720px){.bk-page p{text-align:justify}}
+.bk-page a{color:inherit}
+/* title page and chapter opener */
+.bk-title{min-height:calc(100vh - 160px);display:flex;flex-direction:column;justify-content:center;text-align:center}
+.bk-title .t1{font-size:.9em;font-variant:small-caps;letter-spacing:.12em;color:var(--muted);margin:0}
+.bk-title h1{font-size:2.6em;line-height:1.05;font-weight:700;margin:.3em 0 .25em;letter-spacing:-.01em}
+.bk-title .t2{font-style:italic;font-size:1.25em;margin:0 0 1.6em}
+.bk-title .t3{font-size:.9em;color:var(--muted);max-width:26em;margin:0 auto;line-height:1.55}
+.bk-open{text-align:center;padding:24px 0 30px}
+.bk-open .lab{font-variant:small-caps;letter-spacing:.14em;color:var(--accent);font-size:.95em}
+.bk-open h1{font-size:2.4em;line-height:1.08;font-weight:700;margin:.18em 0 .12em;letter-spacing:-.01em}
+.bk-open .span{font-style:italic;color:var(--muted)}
+.bk-open .orn{display:block;margin-top:18px;color:var(--figline);font-size:1.2em;letter-spacing:.6em}
+.bk-drop::first-letter{float:left;font-size:3.6em;line-height:.82;font-weight:700;padding:.06em .08em 0 0;color:var(--accent)}
+/* sections */
+.bk-sec{scroll-margin-top:70px}
+.bk-sec h2{font-size:1.32em;line-height:1.25;font-weight:600;margin:0 0 .7em;letter-spacing:-.005em}
+.bk-fl{text-align:center;color:var(--figline);margin:2.2em 0 1.8em;font-size:1.1em;letter-spacing:.5em}
+.bk-n{font-size:.62em;vertical-align:super;line-height:0;color:var(--accent);text-decoration:none;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:700;padding:0 .12em;cursor:pointer}
+.bk-x{color:var(--accent) !important;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer}
+/* figures */
+.bk-fig{margin:1.8em -10px 1.4em;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:14px 12px 12px}
+.bk-fig svg{display:block;width:100%;height:auto}
+.bk-fig .nd{cursor:pointer}
+.bk-fig .nd rect{fill:var(--paper);stroke:var(--fig);stroke-width:1.6}
+.bk-fig .nd text{fill:var(--fig);font:600 21px 'Literata',Georgia,serif}
+.bk-fig .nd:hover rect,.bk-fig .nd:focus rect{fill:var(--fig)}
+.bk-fig .nd:hover text,.bk-fig .nd:focus text{fill:var(--paper)}
+.bk-fig .ed{stroke:var(--figline);stroke-width:2;fill:none;opacity:.85}
+.bk-fig .ed.contested{stroke-dasharray:7 6}
+.bk-fig .ed.financial{stroke:var(--accent)}
+.bk-cap{font-size:.78em;line-height:1.45;color:var(--muted);margin:10px 4px 0;font-style:italic}
+.bk-cap b{font-style:normal;color:var(--ink)}
+.bk-two{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:1.6em -10px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.bk-two div{padding:14px 12px;font-size:.84em;line-height:1.5}
+.bk-two div+div{border-left:1px solid var(--rule)}
+.bk-two h4{margin:0 0 6px;font-size:.82em;font-variant:small-caps;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.bk-two .bk-told p{font-style:italic}
+.bk-two p{text-indent:0 !important;text-align:left !important}
+@media (max-width:560px){.bk-two{grid-template-columns:1fr}.bk-two div+div{border-left:0;border-top:1px solid var(--rule)}}
+.bk-acts{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.bk-acts button{font:600 13px/1 inherit;font-family:inherit;color:var(--ink);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:9px 13px;cursor:pointer}
+.bk-acts button:hover{border-color:var(--ink)}
+.bk-acts .sim{color:var(--accent)}
+/* end of chapter */
+.bk-out h3{font-size:1.15em;font-weight:600;margin:0 0 .6em;text-align:center;font-variant:small-caps;letter-spacing:.08em;color:var(--accent)}
+.bk-notes{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--rule);font-size:.8em;line-height:1.5}
+.bk-notes h3{font-size:1.1em;font-weight:600;margin:0 0 .8em}
+.bk-notes ol{margin:0;padding-left:1.6em}
+.bk-notes li{margin:0 0 .45em;word-break:break-word}
+.bk-notes li:target{background:rgba(184,134,43,.18)}
+.bk-next{display:block;width:100%;margin:2.6em 0 0;background:var(--ink);color:var(--paper);border:0;border-radius:6px;padding:18px;font:600 1em/1.3 'Literata',Georgia,serif;cursor:pointer;text-align:center}
+.bk-next small{display:block;font-size:.75em;opacity:.75;font-weight:400;margin-bottom:3px}
+/* chrome */
+.bk-head{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:center;height:52px;padding:env(safe-area-inset-top,0) 64px 0;background:linear-gradient(var(--paper) 70%,transparent);font-size:13px;font-variant:small-caps;letter-spacing:.1em;color:var(--muted);transition:transform .3s,opacity .3s;pointer-events:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bk-head span{overflow:hidden;text-overflow:ellipsis}
+.bk-prog{position:absolute;top:0;left:0;height:2px;background:var(--accent);z-index:4;width:0;transition:width .2s}
+.bk-fab{position:absolute;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:5;width:54px;height:54px;border-radius:50%;border:0;background:var(--ink);color:var(--paper);font:400 30px/1 system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .3s,opacity .3s}
+.bk-fab:focus-visible,.bk-sheet button:focus-visible,.bk-acts button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#bookView.immersive .bk-head{transform:translateY(-100%);opacity:0}
+#bookView.immersive .bk-fab{transform:translateY(120px);opacity:0}
+.bk-hint{position:absolute;left:50%;bottom:calc(86px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:5;background:var(--ink);color:var(--paper);font:500 13px/1.35 system-ui,sans-serif;padding:9px 14px;border-radius:999px;opacity:0;transition:opacity .4s;pointer-events:none;white-space:nowrap}
+.bk-hint.on{opacity:.92}
+/* sheets */
+.bk-shade{position:absolute;inset:0;z-index:8;background:rgba(10,8,5,.4);opacity:0;pointer-events:none;transition:opacity .25s}
+.bk-shade.on{opacity:1;pointer-events:auto}
+.bk-sheet{position:absolute;left:0;right:0;bottom:0;z-index:9;max-height:86vh;overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--paper);color:var(--ink);border-top:1px solid var(--rule);border-radius:18px 18px 0 0;padding:10px 20px calc(22px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 -12px 40px rgba(0,0,0,.25);font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.bk-sheet{visibility:hidden}
+.bk-sheet.on{transform:none;visibility:visible}
+@media (min-width:760px){.bk-sheet{left:auto;right:24px;bottom:90px;width:380px;border-radius:14px;border:1px solid var(--rule);max-height:76vh;transform:translateY(16px);opacity:0;transition:transform .25s,opacity .2s,visibility 0s .25s}.bk-sheet.on{opacity:1;transition:transform .25s,opacity .2s}}
+.bk-sheet .grip{width:42px;height:5px;border-radius:3px;background:var(--rule);margin:2px auto 12px}
+.bk-sheet h3{font:700 20px/1.2 'Literata',Georgia,serif;margin:4px 0 12px}
+.bk-sheet .row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--rule);color:var(--ink);padding:14px 2px;font:500 16px/1.25 inherit;cursor:pointer}
+.bk-sheet .row:last-child{border-bottom:0}
+.bk-sheet .row i{font-style:normal;width:24px;text-align:center;flex:none}
+.bk-sheet .row small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.bk-sheet .seg{display:flex;gap:8px;padding:12px 2px;border-bottom:1px solid var(--rule);align-items:center}
+.bk-sheet .seg span{flex:1;font-size:15px}
+.bk-sheet .seg button{min-width:46px;min-height:40px;border:1px solid var(--rule);border-radius:8px;background:transparent;color:var(--ink);font:600 14px/1 inherit;cursor:pointer;padding:0 10px}
+.bk-sheet .seg button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.bk-toc .ch{margin:0 0 6px}
+.bk-toc .ch>button{display:block;width:100%;text-align:left;background:transparent;border:0;color:var(--ink);padding:12px 2px 6px;font:700 17px/1.25 'Literata',Georgia,serif;cursor:pointer}
+.bk-toc .ch>button small{display:block;font:600 12px/1.3 system-ui,sans-serif;color:var(--accent);font-variant:small-caps;letter-spacing:.08em}
+.bk-toc ol{list-style:none;margin:0 0 8px;padding:0 0 0 2px}
+.bk-toc li button{display:block;width:100%;text-align:left;background:transparent;border:0;border-left:2px solid var(--rule);color:var(--ink);padding:7px 10px;font:400 14.5px/1.35 'Literata',Georgia,serif;cursor:pointer}
+.bk-toc li button.cur{border-left-color:var(--accent);color:var(--accent);font-weight:600}
+.bk-toc li button:hover{border-left-color:var(--ink)}
+.bk-note-ta{width:100%;min-height:150px;border:1px solid var(--rule);border-radius:8px;background:var(--card);color:var(--ink);padding:12px;font:400 16px/1.5 'Literata',Georgia,serif;resize:vertical}
+.bk-btns{display:flex;gap:10px;margin-top:12px}
+.bk-btns button{flex:1;min-height:46px;border-radius:10px;border:1px solid var(--rule);background:transparent;color:var(--ink);font:600 15px/1 inherit;cursor:pointer}
+.bk-btns .pri{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.bk-item{padding:12px 0;border-bottom:1px solid var(--rule)}
+.bk-item .h{font:600 15px/1.3 'Literata',Georgia,serif;cursor:pointer}
+.bk-item .t{font-size:14px;line-height:1.45;margin-top:4px;white-space:pre-wrap}
+.bk-item .m{display:flex;gap:12px;margin-top:6px;font-size:12.5px;color:var(--muted)}
+.bk-item .m button{background:transparent;border:0;color:var(--accent);font:600 12.5px/1 inherit;cursor:pointer;padding:4px 0}
+.bk-empty{color:var(--muted);font-size:15px;padding:10px 0}
+/* popovers */
+.bk-pop{position:absolute;z-index:7;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);width:min(560px,calc(100% - 28px));max-height:60vh;overflow-y:auto;background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.3);padding:16px 18px;opacity:0;pointer-events:none;transition:opacity .2s,transform .25s;font-size:15.5px;line-height:1.55}
+.bk-pop.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.bk-pop h5{margin:0 0 4px;font:700 17px/1.3 'Literata',Georgia,serif;padding-right:36px}
+.bk-pop .r{font-style:italic;color:var(--muted);margin:0 0 8px;font-size:14px}
+.bk-pop .x{position:absolute;top:8px;right:8px;width:36px;height:36px;border:0;background:transparent;color:var(--muted);font-size:18px;cursor:pointer}
+.bk-pop a.bk-src{display:inline-block;margin-top:8px;color:var(--accent);font:600 14px/1.3 system-ui,sans-serif}
+.bk-toast{position:absolute;left:50%;top:64px;transform:translateX(-50%);z-index:9;background:var(--ink);color:var(--paper);font:600 14px/1.3 system-ui,sans-serif;padding:10px 16px;border-radius:999px;opacity:0;transition:opacity .3s;pointer-events:none}
+.bk-toast.on{opacity:1}
+@media (max-width:600px){#bookView{--fs:18px}.bk-page{padding:72px 20px 130px}.bk-title h1{font-size:2.1em}.bk-open h1{font-size:2em}.bk-fig,.bk-two{margin-left:-6px;margin-right:-6px}}
+@media (prefers-reduced-motion:reduce){#bookView *{transition:none !important}}
+@media print{.bk-head,.bk-fab,.bk-acts,.bk-sheet,.bk-shade{display:none !important}}
+</style>
+<div id="bookView" role="dialog" aria-modal="true" aria-label="The Israel Architecture, read as a book">
+  <div class="bk-prog" id="bkProg"></div>
+  <div class="bk-head" id="bkHead"><span id="bkHeadT">The Israel Architecture</span></div>
+  <div class="bk-scroll" id="bkScroll" tabindex="-1"><article class="bk-page" id="bkPage"></article></div>
+  <button class="bk-fab" id="bkFab" type="button" aria-label="Reading menu">+</button>
+  <div class="bk-hint" id="bkHint">Double-tap the page to hide or show the menu</div>
+  <div class="bk-pop" id="bkPop" role="dialog"></div>
+  <div class="bk-shade" id="bkShade"></div>
+  <div class="bk-sheet" id="bkSheet" role="dialog" aria-modal="true"></div>
+  <div class="bk-toast" id="bkToast" role="status"></div>
+</div>
+<script type="application/json" id="book_data">__BOOK_JSON__</script>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var BOOK = JSON.parse($('book_data').textContent);
+  var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function ls(k, v){ try{ if(v === undefined){ var r = localStorage.getItem(k); return r ? JSON.parse(r) : null; } localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
+  var SC = function(){ return window.S || []; };
+  function sceneIdx(id){ var a = SC(); for(var i = 0; i < a.length; i++) if(a[i].id === id) return i; return -1; }
+  function scene(id){ return SC()[sceneIdx(id)]; }
+  var CIT = window.CITATIONS || {}, LBL = window.CITE_LABELS || {};
+  var where = {};  // scene id -> chapter index
+  BOOK.chapters.forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = k; }); });
+  var prefs = ls('ots_book_prefs') || {theme:'paper', fs:0};
+  function applyPrefs(){ view.setAttribute('data-theme', prefs.theme || 'paper'); var base = window.innerWidth <= 600 ? 18 : 19; view.style.setProperty('--fs', (base + (prefs.fs || 0)) + 'px'); ls('ots_book_prefs', prefs); }
+
+  /* ---------- rendering ---------- */
+  var curCh = -1, notesMap = {}, noteList = [];
+  function cite(key){
+    if(!notesMap[key]){ noteList.push(key); notesMap[key] = noteList.length; }
+    var n = notesMap[key]; return '<a class="bk-n" href="#bkn-' + n + '" data-k="' + esc(key) + '" aria-label="Note ' + n + '">' + n + '</a>';
+  }
+  function prose(html){
+    return String(html || '')
+      .replace(/\s*\[cite:([A-Za-z0-9_]+)\]/g, function(m, k){ return cite(k); })
+      .replace(/\[scene:([^|\]]+)\|([^\]]+)\]/g, function(m, id, label){ return '<a class="bk-x" data-s="' + esc(id) + '" href="#">' + esc(label) + '</a>'; });
+  }
+  function wrapLabel(t){
+    t = String(t || '').replace(/\s+/g, ' ').trim(); if(t.length <= 15) return [t];
+    var w = t.split(' '), a = '', b = '';
+    w.forEach(function(x){ if(!b && (a + ' ' + x).trim().length <= 15) a = (a + ' ' + x).trim(); else b = (b + ' ' + x).trim(); });
+    if(!a){ a = t.slice(0, 14); b = t.slice(14); }
+    if(b.length > 15) b = b.slice(0, 14) + '…';
+    return [a, b];
+  }
+  function network(sc, fig){
+    var E = sc.ents || []; if(E.length < 2) return '';
+    var narrow = window.innerWidth <= 600, W = narrow ? 430 : 640, H = narrow ? 520 : 420, w = narrow ? 178 : 184, h = 60, gx = 14, gy = 16, pos = {};
+    E.forEach(function(e){ var x = Math.max(4, Math.min(96, +e.x || 50)), y = Math.max(6, Math.min(94, +e.y || 50)); pos[e.id] = [x / 100 * (W - w) + w / 2, y / 100 * (H - h) + h / 2]; });
+    /* nudge overlapping boxes apart, then fit the height to what's left */
+    var ids = Object.keys(pos);
+    for(var it = 0; it < 120; it++){ var moved = false;
+      for(var i = 0; i < ids.length; i++) for(var j = i + 1; j < ids.length; j++){
+        var A = pos[ids[i]], B = pos[ids[j]], dx = B[0] - A[0], dy = B[1] - A[1], ox = (w + gx) - Math.abs(dx), oy = (h + gy) - Math.abs(dy);
+        if(ox > 0 && oy > 0){ moved = true;
+          if(ox < oy * 1.4 && W > w * 2){ var sx = (dx >= 0 ? 1 : -1) * ox / 2; A[0] -= sx; B[0] += sx; } else { var sy = (dy >= 0 ? 1 : -1) * oy / 2; A[1] -= sy; B[1] += sy; } } }
+      ids.forEach(function(k){ var P = pos[k]; P[0] = Math.max(w / 2 + 2, Math.min(W - w / 2 - 2, P[0])); P[1] = Math.max(h / 2 + 2, P[1]); });
+      if(!moved) break; }
+    var minY = Infinity, maxY = 0; ids.forEach(function(k){ minY = Math.min(minY, pos[k][1]); maxY = Math.max(maxY, pos[k][1]); });
+    ids.forEach(function(k){ pos[k][1] += (h / 2 + 4) - minY; }); H = maxY - minY + h + 8;
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Network of the people and institutions in this section">';
+    (sc.cs || []).forEach(function(c){ var a = pos[c.f], b = pos[c.t]; if(!a || !b) return; var mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2 - 24;
+      s += '<path class="ed ' + esc(c.ty || '') + '" d="M' + a[0] + ' ' + a[1] + ' Q' + mx + ' ' + my + ' ' + b[0] + ' ' + b[1] + '"/>'; });
+    E.forEach(function(e){ var p = pos[e.id], L = wrapLabel(e.nm);
+      s += '<g class="nd" tabindex="0" role="button" data-e="' + esc(e.id) + '" aria-label="' + esc(e.nm) + '"><rect x="' + (p[0] - w / 2) + '" y="' + (p[1] - h / 2) + '" width="' + w + '" height="' + h + '" rx="6"/>' +
+        (L.length === 1 ? '<text x="' + p[0] + '" y="' + (p[1] + 7) + '" text-anchor="middle">' + esc(L[0]) + '</text>'
+          : '<text x="' + p[0] + '" y="' + (p[1] - 5) + '" text-anchor="middle">' + esc(L[0]) + '</text><text x="' + p[0] + '" y="' + (p[1] + 20) + '" text-anchor="middle">' + esc(L[1]) + '</text>') + '</g>'; });
+    s += '</svg>';
+    return '<figure class="bk-fig" data-s="' + esc(sc.id) + '">' + s + '<figcaption class="bk-cap"><b>Figure ' + fig + '.</b> Who was connected: the people, institutions and documents in this section and the documented ties between them. Dashed lines are disputed. Tap a name for the detail and its sources.</figcaption></figure>';
+  }
+  function render(k, target){
+    var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
+    var h = '';
+    if(k === 0) h += '<div class="bk-title"><p class="t1">' + esc(BOOK.series) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="t3">' + esc(BOOK.note) + '</p></div>';
+    h += '<div class="bk-open" id="bk-top-' + c.id + '"><div class="lab">' + esc(c.label) + '</div><h1>' + esc(c.title) + '</h1><div class="span">' + esc(c.span) + '</div><span class="orn" aria-hidden="true">❦</span></div>';
+    if(c.intro) h += '<div class="bk-intro">' + prose(c.intro).replace('<p>', '<p class="first bk-drop">') + '</div>';
+    var chFig = []; var mp = (window.MAP_CHAPTERS || {})[c.id], db = (window.DASH_CHAPTERS || {})[c.id];
+    if(mp && window.MAPS && MAPS[mp]) chFig.push('<button type="button" data-map="' + mp + '">Diagram: ' + esc(MAPS[mp].title) + '</button>');
+    if(db && window.DASHBOARDS && DASHBOARDS[db]) chFig.push('<button type="button" data-dash="' + db + '">Money: ' + esc(DASHBOARDS[db].title) + '</button>');
+    if(chFig.length) h += '<div class="bk-acts" style="justify-content:center;margin-top:1.6em">' + chFig.join('') + '</div>';
+    c.sections.forEach(function(s, i){
+      var sc = scene(s.s) || {id:s.s};
+      h += '<div class="bk-fl" aria-hidden="true">· · ·</div><section class="bk-sec" id="bk-' + esc(s.s) + '" data-s="' + esc(s.s) + '"><h2>' + esc(s.h) + '</h2>' + prose(s.html);
+      h += network(sc, (k === 0 ? 'P' : k) + '.' + (i + 1));
+      if(sc.tld && sc.rec) h += '<div class="bk-two"><div class="bk-told"><h4>What is usually taught</h4><p>' + esc(sc.tld) + '</p></div><div class="bk-rec"><h4>What the record shows</h4><p>' + prose(sc.rec) + '</p></div></div>';
+      var acts = [], m2 = (window.MAP_SCENES || {})[s.s], d2 = (window.DASH_SCENES || {})[s.s];
+      if(m2 && m2 !== mp && window.MAPS && MAPS[m2]) acts.push('<button type="button" data-map="' + m2 + '">Diagram: ' + esc(MAPS[m2].title) + '</button>');
+      if(d2 && d2 !== db && window.DASHBOARDS && DASHBOARDS[d2]) acts.push('<button type="button" data-dash="' + d2 + '">Money: ' + esc(DASHBOARDS[d2].title) + '</button>');
+      if(sceneIdx(s.s) >= 0) acts.push('<button type="button" class="sim" data-sim="' + esc(s.s) + '">See this in the simulation</button>');
+      h += '<div class="bk-acts">' + acts.join('') + '</div></section>';
+    });
+    if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>What this stage built</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
+    h += '<section class="bk-notes" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = LBL[key] || key;
+      return '<li id="bkn-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
+    var nx = BOOK.chapters[k + 1];
+    if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>' + esc(nx.label) + '</small>' + esc(nx.title) + '</button>';
+    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">The chapters after 1948 are being written. The simulation carries the full record in the meantime.</p>' +
+      '<button class="bk-next" type="button" data-close="1"><small>Continue in</small>The simulation</button>';
+    page.innerHTML = h;
+    $('bkHeadT').textContent = c.label + ' · ' + c.title;
+    if(target){ var el = document.getElementById('bk-' + target); if(el){ scroller.scrollTop = el.offsetTop - 60; return; } }
+    scroller.scrollTop = 0;
+  }
+
+  /* ---------- where the reader is ---------- */
+  var curSec = null, saveT = null;
+  function onScroll(){
+    var st = scroller.scrollTop, max = scroller.scrollHeight - scroller.clientHeight;
+    $('bkProg').style.width = (max > 0 ? st / max * 100 : 0) + '%';
+    var secs = page.querySelectorAll('.bk-sec'), c = null;
+    for(var i = 0; i < secs.length; i++){ if(secs[i].offsetTop - 120 <= st) c = secs[i]; else break; }
+    curSec = c ? c.getAttribute('data-s') : null;
+    var head = c ? c.querySelector('h2').textContent : '';
+    var ch = BOOK.chapters[curCh]; $('bkHeadT').textContent = ch ? (ch.label + ' · ' + (head || ch.title)) : '';
+    if(st > lastY + 12 && st > 200) view.classList.add('scrolling-down'); else if(st < lastY - 12) view.classList.remove('scrolling-down');
+    lastY = st;
+    clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos', {ch:curCh, sec:curSec, y:st}); }, 500);
+  }
+  var lastY = 0; scroller.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---------- open / close ---------- */
+  function openBook(target){
+    try{ if(typeof closeFab === 'function') closeFab(); }catch(e){}
+    try{ if(window.closeChapters) window.closeChapters(); }catch(e){}
+    applyPrefs();
+    var k = 0, sec = null, y = null;
+    if(target && where[target] !== undefined){ k = where[target]; sec = target; }
+    else if(target !== 'start'){ var p = ls('ots_book_pos'); if(p && BOOK.chapters[p.ch]){ k = p.ch; y = p.y; } }
+    view.classList.add('on'); document.body.classList.add('book-open');
+    render(k, sec); if(y != null) scroller.scrollTop = y; onScroll();
+    if(!ls('ots_book_hint')){ ls('ots_book_hint', 1); var hn = $('bkHint'); hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
+    setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
+    if(location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
+  }
+  function closeBook(sceneId){
+    hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open');
+    try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+    if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
+  }
+  window.openBook = openBook; window.closeBook = closeBook;
+
+  /* ---------- immersive mode: double-tap the page ---------- */
+  var lastTap = 0, lastX = 0, lastY2 = 0, downX = 0, downY = 0;
+  scroller.addEventListener('pointerdown', function(e){ downX = e.clientX; downY = e.clientY; });
+  scroller.addEventListener('pointerup', function(e){
+    if(e.target.closest('a,button,.nd,figure,.bk-two')) return;
+    if(Math.abs(e.clientX - downX) > 10 || Math.abs(e.clientY - downY) > 10){ lastTap = 0; return; }
+    var now = Date.now();
+    if(now - lastTap < 380 && Math.abs(e.clientX - lastX) < 40 && Math.abs(e.clientY - lastY2) < 40){ view.classList.toggle('immersive'); lastTap = 0; try{ window.getSelection().removeAllRanges(); }catch(er){} }
+    else { lastTap = now; lastX = e.clientX; lastY2 = e.clientY; }
+  });
+
+  /* ---------- popovers: notes, cross-references, network nodes ---------- */
+  function showPop(html){ pop.innerHTML = '<button class="x" type="button" aria-label="Close">✕</button>' + html; pop.classList.add('on'); pop.querySelector('.x').addEventListener('click', hidePop); }
+  function hidePop(){ pop.classList.remove('on'); }
+  page.addEventListener('click', function(e){
+    var n = e.target.closest('.bk-n'); if(n){ e.preventDefault(); var k = n.getAttribute('data-k'), u = CIT[k];
+      showPop('<h5>Note ' + n.textContent + '</h5><p class="r">' + esc(LBL[k] || k) + '</p>' + (u ? '<a class="bk-src" href="' + esc(u) + '" target="_blank" rel="noopener">Open the source ↗</a>' : '')); return; }
+    var x = e.target.closest('.bk-x'); if(x){ e.preventDefault(); goTo(x.getAttribute('data-s')); return; }
+    var nd = e.target.closest('.nd'); if(nd){ nodePop(nd); return; }
+    var b = e.target.closest('button'); if(!b) return;
+    if(b.dataset.map){ try{ window.openMap(b.dataset.map); }catch(er){} }
+    else if(b.dataset.dash){ try{ window.openDashboard(b.dataset.dash); }catch(er){} }
+    else if(b.dataset.sim){ closeBook(b.dataset.sim); }
+    else if(b.dataset.ch){ render(+b.dataset.ch); onScroll(); }
+    else if(b.dataset.close){ closeBook(null); }
+  });
+  page.addEventListener('keydown', function(e){ var nd = e.target.closest && e.target.closest('.nd'); if(nd && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); nodePop(nd); } });
+  function nodePop(nd){
+    var sid = nd.closest('figure').getAttribute('data-s'), sc = scene(sid), e = (sc && sc.ents || []).filter(function(x){ return x.id === nd.getAttribute('data-e'); })[0]; if(!e) return;
+    var det = String(e.dt || '').replace(/\s*\[cite:([A-Za-z0-9_]+)\]/g, function(m, k){ var u = CIT[k]; return u ? ' <a class="bk-src" style="margin:0" href="' + esc(u) + '" target="_blank" rel="noopener">[' + esc(LBL[k] || 'source') + ']</a>' : ''; }).replace(/\[(\d+)\]/g, '');
+    showPop('<h5>' + esc(e.nm) + '</h5><p class="r">' + esc(e.rl || '') + '</p><div>' + det + '</div>');
+  }
+  function goTo(id){
+    if(where[id] !== undefined){ hidePop(); hideAll(); if(where[id] !== curCh) render(where[id], id); else { var el = document.getElementById('bk-' + id); if(el) scroller.scrollTo({top:el.offsetTop - 60, behavior:'smooth'}); } onScroll(); }
+    else closeBook(id);
+  }
+
+  /* ---------- the reading menu ---------- */
+  function hideAll(){ sheet.classList.remove('on'); shade.classList.remove('on'); hidePop(); }
+  shade.addEventListener('click', hideAll);
+  function toast(t){ var el = $('bkToast'); el.textContent = t; el.classList.add('on'); setTimeout(function(){ el.classList.remove('on'); }, 1800); }
+  function curHeading(){ var el = curSec && document.getElementById('bk-' + curSec); return el ? el.querySelector('h2').textContent : (BOOK.chapters[curCh] || {}).title; }
+  function openSheet(html){ sheet.innerHTML = '<div class="grip" aria-hidden="true"></div>' + html; sheet.classList.add('on'); shade.classList.add('on'); sheet.scrollTop = 0; var f = sheet.querySelector('button,textarea'); if(f) setTimeout(function(){ try{ f.focus({preventScroll:true}); }catch(e){} }, 60); }
+  function menu(){
+    var marks = (ls('ots_book_marks') || []).length, notes = (ls('ots_book_notes') || []).length;
+    openSheet('<h3>Reading</h3>' +
+      '<button class="row" data-a="toc"><i>☰</i><span>Contents<small>Prologue, Prelude and the six stages to 1948</small></span></button>' +
+      '<button class="row" data-a="sim"><i>◉</i><span>Switch to the simulation<small>Opens the scene you are reading</small></span></button>' +
+      '<button class="row" data-a="mark"><i>🔖</i><span>Bookmark this page</span></button>' +
+      '<button class="row" data-a="marks"><i>📑</i><span>Bookmarks<small>' + marks + ' saved</small></span></button>' +
+      '<button class="row" data-a="note"><i>✎</i><span>Add a note here</span></button>' +
+      '<button class="row" data-a="notes"><i>🗒</i><span>My notes<small>' + notes + ' saved · export as a text file</small></span></button>' +
+      '<div class="seg"><span>Text size</span><button data-a="fs-">A−</button><button data-a="fs+">A+</button></div>' +
+      '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="th-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
+      '<button class="row" data-a="share"><i>↗</i><span>Share this section</span></button>' +
+      '<button class="row" data-a="close"><i>✕</i><span>Close the book</span></button>');
+  }
+  function toc(){
+    var h = '<h3>Contents</h3><div class="bk-toc">';
+    BOOK.chapters.forEach(function(c, k){ h += '<div class="ch"><button data-go-ch="' + k + '"><small>' + esc(c.label) + ' · ' + esc(c.span) + '</small>' + esc(c.title) + '</button><ol>' +
+      c.sections.map(function(s){ return '<li><button data-go="' + esc(s.s) + '" class="' + (s.s === curSec ? 'cur' : '') + '">' + esc(s.h) + '</button></li>'; }).join('') + '</ol></div>'; });
+    openSheet(h + '</div>');
+    var cu = sheet.querySelector('button.cur'); if(cu) setTimeout(function(){ sheet.scrollTop = cu.offsetTop - 120; }, 30);
+  }
+  function listMarks(){
+    var a = ls('ots_book_marks') || [];
+    openSheet('<h3>Bookmarks</h3>' + (a.length ? a.map(function(m, i){ return '<div class="bk-item"><div class="h" data-go="' + esc(m.sec) + '">' + esc(m.h) + '</div><div class="m"><span>' + esc(m.ch) + '</span><button data-del-mark="' + i + '">Remove</button></div></div>'; }).join('') : '<p class="bk-empty">No bookmarks yet. Use “Bookmark this page” while reading.</p>'));
+  }
+  function addNote(){
+    openSheet('<h3>Note</h3><p class="bk-empty" style="padding-top:0">On: ' + esc(curHeading()) + '</p><textarea class="bk-note-ta" id="bkTa" placeholder="Write your note…"></textarea><div class="bk-btns"><button data-a="menu">Cancel</button><button class="pri" data-a="save-note">Save note</button></div><p class="bk-empty" style="font-size:13px">Notes stay in this browser on this device. Export them from “My notes.”</p>');
+  }
+  function listNotes(){
+    var a = ls('ots_book_notes') || [];
+    openSheet('<h3>My notes</h3>' + (a.length ? '<div class="bk-btns" style="margin:0 0 6px"><button class="pri" data-a="export">Export as a text file</button></div>' + a.map(function(n, i){ return '<div class="bk-item"><div class="h" data-go="' + esc(n.sec) + '">' + esc(n.h) + '</div><div class="t">' + esc(n.text) + '</div><div class="m"><span>' + new Date(n.at).toLocaleDateString() + '</span><button data-del-note="' + i + '">Delete</button></div></div>'; }).join('') : '<p class="bk-empty">No notes yet. Use “Add a note here” while reading.</p>'));
+  }
+  function exportNotes(){
+    var a = ls('ots_book_notes') || []; if(!a.length) return;
+    var txt = 'The Israel Architecture — Book One: The Stages to 1948\nMy notes, exported ' + new Date().toLocaleString() + '\n\n' + a.map(function(n){ return '— ' + n.ch + ' · ' + n.h + '\n' + n.text + '\n'; }).join('\n');
+    try{ var url = URL.createObjectURL(new Blob([txt], {type:'text/plain;charset=utf-8'})); var l = document.createElement('a'); l.href = url; l.download = 'israel-architecture-notes.txt'; document.body.appendChild(l); l.click(); setTimeout(function(){ URL.revokeObjectURL(url); l.remove(); }, 1500); toast('Notes exported'); }
+    catch(e){ try{ navigator.clipboard.writeText(txt); toast('Notes copied to clipboard'); }catch(er){} }
+  }
+  sheet.addEventListener('click', function(e){
+    var g = e.target.closest('[data-go]'); if(g){ goTo(g.getAttribute('data-go')); return; }
+    var gc = e.target.closest('[data-go-ch]'); if(gc){ hideAll(); render(+gc.getAttribute('data-go-ch')); onScroll(); return; }
+    var dm = e.target.closest('[data-del-mark]'); if(dm){ var a = ls('ots_book_marks') || []; a.splice(+dm.getAttribute('data-del-mark'), 1); ls('ots_book_marks', a); listMarks(); return; }
+    var dn = e.target.closest('[data-del-note]'); if(dn){ var b = ls('ots_book_notes') || []; b.splice(+dn.getAttribute('data-del-note'), 1); ls('ots_book_notes', b); listNotes(); return; }
+    var x = e.target.closest('[data-a]'); if(!x) return; var a2 = x.getAttribute('data-a'), ch = BOOK.chapters[curCh] || {};
+    if(a2 === 'toc') toc();
+    else if(a2 === 'menu') menu();
+    else if(a2 === 'sim') closeBook(curSec || (ch.sections && ch.sections[0] && ch.sections[0].s));
+    else if(a2 === 'mark'){ var m = ls('ots_book_marks') || []; m.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:ch.label + ' · ' + ch.title, at:Date.now()}); ls('ots_book_marks', m.slice(0, 200)); hideAll(); toast('Bookmarked'); }
+    else if(a2 === 'marks') listMarks();
+    else if(a2 === 'note') addNote();
+    else if(a2 === 'save-note'){ var t = ($('bkTa').value || '').trim(); if(!t){ hideAll(); return; } var nn = ls('ots_book_notes') || []; nn.unshift({sec:curSec || ch.sections[0].s, h:curHeading(), ch:ch.label + ' · ' + ch.title, text:t, at:Date.now()}); ls('ots_book_notes', nn); hideAll(); toast('Note saved'); }
+    else if(a2 === 'notes') listNotes();
+    else if(a2 === 'export') exportNotes();
+    else if(a2 === 'fs-' || a2 === 'fs+'){ var y0 = scroller.scrollTop / Math.max(1, scroller.scrollHeight); prefs.fs = Math.max(-3, Math.min(6, (prefs.fs || 0) + (a2 === 'fs+' ? 1 : -1))); applyPrefs(); scroller.scrollTop = y0 * scroller.scrollHeight; }
+    else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
+    else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:'The Israel Architecture', text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
+    else if(a2 === 'close') closeBook(null);
+  });
+  $('bkFab').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else menu(); });
+  document.addEventListener('keydown', function(e){
+    if(!view.classList.contains('on')) return;
+    if(e.target && (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT')) return;
+    var mpg = $('mapPage'), dpg = $('dashPage'); if((mpg && getComputedStyle(mpg).display !== 'none') || (dpg && getComputedStyle(dpg).display !== 'none')) return;
+    if(e.key === 'Escape'){ if(sheet.classList.contains('on') || pop.classList.contains('on')) hideAll(); else closeBook(null); e.stopImmediatePropagation(); e.preventDefault(); return; }
+    if(e.key === 't' || e.key === 'T'){ toc(); e.preventDefault(); }
+    else if(e.key === ']' && BOOK.chapters[curCh + 1]){ render(curCh + 1); onScroll(); }
+    else if(e.key === '[' && curCh > 0){ render(curCh - 1); onScroll(); }
+    e.stopImmediatePropagation();
+  }, true);
+  window.addEventListener('resize', function(){ if(view.classList.contains('on')) applyPrefs(); });
+
+  /* ---------- entry points: the + menu, the chapter switcher, links ---------- */
+  (function(){ var o = $('fabOptions'); if(!o) return; var b = document.createElement('button'); b.className = 'fab-option'; b.type = 'button'; b.textContent = '📖 Read as a book';
+    b.addEventListener('click', function(){ var i = (function(){ var m = (($('cnt') || {}).textContent || '').match(/(\d+)\s*\//); return m ? +m[1] - 1 : 0; })(), s = SC()[i]; openBook(s && where[s.id] !== undefined ? s.id : null); });
+    o.appendChild(b); })();
+  (function(){ var wp = document.querySelector('.welcome-paths'); if(!wp) return; var b = document.createElement('button'); b.className = 'path-btn'; b.type = 'button'; b.textContent = '📖 Read it as a book';
+    b.addEventListener('click', function(){ window.__bookOpening = true; try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 500); }); wp.appendChild(b); })();
+  function fromHash(){ var h = location.hash || ''; if(view.classList.contains('on') && h === '#book') return; if(h === '#book') openBook(null); else if(h.indexOf('#book=') === 0) openBook(decodeURIComponent(h.slice(6)) || null); }
+  window.addEventListener('hashchange', fromHash);
+  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#book/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){} fromHash(); } }, 700); });
+  try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
+})();
+</script>
+<!--BOOK-END-->
