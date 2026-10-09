@@ -191,8 +191,8 @@ s = once(s, 'id="elSpotlight"', '    <div class="pillars">', EL_SPOT + '    <div
 
 # 10. "Complete states" slide — rewritten every run from the current list
 DONE_SLIDE = ('<div class="el-slide" data-view="chamber" data-arg="house" data-slot="done">\n'
-  '    <div class="el-top"><span class="el-flag"></span><span class="el-title">Alabama &amp; Alaska</span><span class="el-tag ok"><i class="gd"></i>COMPLETE</span></div>\n'
-  '    <div class="el-desc">30 candidates across 12 races — Senate, governor and House: money, votes, claims checked, legal record, said vs. did.</div>\n'
+  '    <div class="el-top"><span class="el-flag"></span><span class="el-title">Alabama, Alaska &amp; Arizona</span><span class="el-tag ok"><i class="gd"></i>COMPLETE</span></div>\n'
+  '    <div class="el-desc">58 candidates across 22 races — Senate, governor and House: money, votes, claims checked, legal record, said vs. did.</div>\n'
   '    <div class="el-rec"><b>The template.</b> Every state gets this same depth — the rest are in progress.</div>\n'
   '  </div>')
 i = s.index('class="el-tag ok"'); st = s.rindex('<div class="el-slide"', 0, i); en = s.index('</div>\n  </div>', i) + len('</div>\n  </div>')

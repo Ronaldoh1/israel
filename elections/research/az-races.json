@@ -1,0 +1,1041 @@
+{
+ "map_note": {
+  "t": "Arizona has nine U.S. House districts, drawn by the voter-created Arizona Independent Redistricting Commission (two Democrats, two Republicans, an independent chair). Its post-2020 map, first used in 2022, is unchanged for 2026. Axios (Aug 2025) reported that the commission cannot redraw mid-decade without a court order, that no challenge was pending, and that the divided Legislature/governor could not put a new map in place for 2026. No 2026 Senate race. Governor and lieutenant governor run as a joint ticket for the first time under Proposition 131 (2022), and the new lieutenant governor office takes effect in January 2027. The partisan primary was July 21, 2026, and the official statewide canvass was Aug 6, 2026. All 15 county post-primary hand counts were within the acceptable margin. No automatic recount was reported for any governor or U.S. House primary, and no source checked mentions one. In the No Labels governor primary, Lytle conceded on July 22 after trailing Hourihan by about 1,200 votes. Early ballots mailed Oct 7. The general is Nov 3, with the statewide canvass Nov 23.",
+  "c": [
+   "axios_redistrict_0815",
+   "azfamily_giles_0811",
+   "azsos_2026info",
+   "azsos_dates",
+   "kjzz_nolabels_0724",
+   "wiki_house26_az",
+   "bp_house_az",
+   "gp_az"
+  ]
+ },
+ "election": {
+  "general": "2026-11-03",
+  "primary": "2026-07-21",
+  "filing_deadline": "2026-03-23",
+  "primary_canvass": "2026-08-06",
+  "early_ballots_mailed": "2026-10-07",
+  "general_canvass": "2026-11-23",
+  "running_mate_deadline": "2026-08-07 (the Friday after Aug 6 per the Arizona Capitol Times; the Arizona Mirror said Hobbs had until Sept 4 — sources differ)",
+  "system": "closed partisan primaries (independents may choose a party ballot); plurality general; governor and lieutenant governor elected jointly for the first time"
+ },
+ "districts": {
+  "AZ-GOV": {
+   "incumbent": {
+    "name": "Katie Hobbs",
+    "party": "D",
+    "status": "Running for a second term"
+   },
+   "rating": {
+    "t": "Lean D (Cook, Oct 1, 2026); Tossup (Inside Elections, Aug 28, 2025 — per Wikipedia, likely stale); Lean D (Sabato, Sep 4, 2025 — per Wikipedia, likely stale). Ballotpedia: as of Sep 25, 2026, major forecasters rate the race Lean or Tilt D.",
+    "c": [
+     "cook_gov",
+     "wiki_gov26_az",
+     "bp_gov_0925"
+    ]
+   },
+   "note": "First Arizona governor's race with joint tickets: Proposition 131 (2022) created a lieutenant governor, and each nominee had to name a running mate. Andy Biggs won the July 21 Republican primary with about 73% over fellow Rep. David Schweikert. Teri Ann Hourihan beat chair-backed Hugh Lytle for the No Labels nomination. The Arizona Green Party opposes its own nominee, Risa Lombardo, as a 'sham' candidate. The party's Aug 31 request to remove her was refused: the Secretary of State said removal needs a court order or her withdrawal. Two Republican write-ins (Gertritrude Gonzalez, Alice Novoa) are not on the printed ballot.",
+   "c": [
+    "kjzz_primary_0722",
+    "kjzz_nolabels_0724",
+    "kjzz_green_remove_0831",
+    "wiki_aip",
+    "kjzz_aip_0915",
+    "azfamily_giles_0811",
+    "wiki_gov26_az",
+    "gp_az",
+    "fox10_guide",
+    "fox10_govdebate_1006"
+   ],
+   "candidates": [
+    {
+     "name": "Katie Hobbs",
+     "party": "D",
+     "incumbent": true,
+     "site": "http://www.katiehobbs.org/",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic governor, first elected in 2022, renominated without opposition. Her running mate for the new lieutenant governor office is former Mesa Mayor John Giles (2014–2025). Giles was a Republican for decades and changed his registration to independent in May 2026. She declined the Oct 6 Clean Elections debate.",
+      "c": [
+       "gp_az",
+       "fox10_guide",
+       "azfamily_giles_0811",
+       "rtw_primary",
+       "fox10_govdebate_1006"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "running_mate": {
+      "name": "John Giles",
+      "party": "I"
+     }
+    },
+    {
+     "name": "Andy Biggs",
+     "party": "R",
+     "incumbent": false,
+     "site": "https://www.biggsforarizona.com/",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "U.S. representative for AZ-05 (not seeking re-election to the House), Trump-endorsed. He won the July 21 Republican primary with about 73% over Rep. David Schweikert. His running mate for lieutenant governor is Sine Kerr, a Buckeye dairy farmer and former state senator (2018–2025) whom the Trump administration named Arizona state executive director of the USDA Farm Service Agency in 2025.",
+      "c": [
+       "gp_az",
+       "fox10_guide",
+       "kjzz_primary_0722",
+       "azmirror_kerr_0731",
+       "wiki_house26_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "running_mate": {
+      "name": "Sine Kerr",
+      "party": "R"
+     }
+    },
+    {
+     "name": "Risa Lombardo",
+     "party": "G",
+     "incumbent": false,
+     "site": "https://www.risalombardo.com/",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Green Party nominee whom the Arizona Green Party 'actively opposes' as a sham candidate. The Arizona Mirror reported her ties to local Republicans: she was elected a GOP precinct committeewoman in 2024, and her campaign shares a newly formed vendor with the Green secretary-of-state nominee. She told the Mirror in April that she is a genuine Green. She survived two ballot challenges in April and remains on the ballot after the party's Aug 31 removal request. Running mate: Lisa Castillo.",
+      "c": [
+       "kjzz_green_sham_0730",
+       "kjzz_green_remove_0831",
+       "wmi_lombardo_challenges",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "running_mate": {
+      "name": "Lisa Castillo",
+      "party": "G"
+     },
+     "party_note": "Ballot label Green. The state Green Party lists her as 'actively opposed' and asked the Secretary of State on Aug 31, 2026 to replace her with write-in Carlos Melendez. The office said it cannot remove a nominee without a court order or withdrawal. The Clean Elections Commission is reviewing her campaign's $5 qualifying contributions, and her attorney denies wrongdoing."
+    },
+    {
+     "name": "Teri Ann Hourihan",
+     "party": "I",
+     "incumbent": false,
+     "site": "https://www.teriann4azgov.org/",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "No Labels Party nominee (coded 'I' here; ballot label No Labels). She is a Phoenix licensed professional counselor who founded a health practice in 2018. She beat Hugh Lytle, the chair-backed candidate, by about 1,200 votes while raising about $40,000 to his $2.1 million. Her running mate for lieutenant governor is Angela Harrolle Mohan, a registered independent and former CEO of The 100 Club, a nonprofit for families of fallen public-safety personnel.",
+      "c": [
+       "kjzz_nolabels_0724",
+       "azct_hourihan_0806",
+       "fox10_govdebate_1006",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "running_mate": {
+      "name": "Angela Harrolle Mohan",
+      "party": "I"
+     },
+     "party_note": "No Labels Party of Arizona. A court blocked its attempted renaming to 'Arizona Independent Party' (ruled invalid Mar 25, 2026), so the No Labels label stands for 2026."
+    }
+   ]
+  },
+  "AZ-01": {
+   "incumbent": {
+    "name": "David Schweikert",
+    "party": "R",
+    "status": "Open seat — ran for governor; lost the July 21 GOP primary to Andy Biggs"
+   },
+   "rating": {
+    "t": "Lean D (Cook, Sep 25, 2026; moved from Toss-up); Tossup (Inside Elections, Oct 1, 2025 — per Wikipedia, likely stale); Tossup (Sabato, Jul 10, 2025 — per Wikipedia, likely stale). 270toWin consensus: Leans D (Oct 2, 2026).",
+    "c": [
+     "cook_house",
+     "wiki_house26_az",
+     "rtw_consensus"
+    ]
+   },
+   "note": "Open Republican-held seat (Schweikert won 51.9% in 2024). In the GOP primary, Trump-endorsed Jay Feely took 49.8% to state Rep. Joseph Chaplik's 35.7%. In the Democratic primary, Amish Shah took 39.4% to Marlene Galán-Woods's 34.4%. Write-ins Dev Gupta and Gage Dylan Thunder are not on the printed ballot.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "fox10_guide",
+    "cook_house"
+   ],
+   "candidates": [
+    {
+     "name": "Amish Shah",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://amishforarizona.com/",
+     "fec_id": "H4AZ01194",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Emergency physician and former state representative (2019–Feb 2024) who lost this seat to Schweikert 52%–48% in 2024. He won the four-way 2026 Democratic primary with 39.4%.",
+      "c": [
+       "wiki_shah",
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "Jay Feely",
+     "party": "R",
+     "incumbent": false,
+     "site": "https://jayfeelyforcongress.com/",
+     "fec_id": "H6AZ05190",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Former NFL placekicker (1999–2014, including the Arizona Cardinals 2010–2013). He launched his campaign in AZ-05 in April 2025 and switched to AZ-01 in December 2025. Endorsed by Donald Trump, he won the GOP primary with 49.8%.",
+      "c": [
+       "wiki_feely",
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Thomas James \"Jay\" Feely, IV"
+    },
+    {
+     "name": "Monica Alponte",
+     "party": "L",
+     "incumbent": false,
+     "site": "https://monicaalponteaz.com/",
+     "fec_id": "H6AZ01488",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Libertarian nominee, unopposed in her party's primary; FEC reports show about $8,900 raised through July 1, 2026.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Monica Maria Alponte"
+    }
+   ]
+  },
+  "AZ-02": {
+   "incumbent": {
+    "name": "Eli Crane",
+    "party": "R",
+    "status": "Running for a third term"
+   },
+   "rating": {
+    "t": "Likely R (Cook, Sep 25, 2026); Likely R (Inside Elections, Jun 30, 2025 — per Wikipedia); Likely R (Sabato, Jul 10, 2025 — per Wikipedia). 270toWin consensus: Likely R (Oct 2, 2026).",
+    "c": [
+     "cook_house",
+     "wiki_house26_az",
+     "rtw_consensus"
+    ]
+   },
+   "note": "Rematch of 2024: Crane beat Jonathan Nez 54.5% to about 45%. Both were unopposed in their primaries.",
+   "c": [
+    "wiki_house26_az",
+    "wiki_nez",
+    "gp_az",
+    "fox10_guide"
+   ],
+   "candidates": [
+    {
+     "name": "Jonathan Nez",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://jonathannezforaz.com/",
+     "fec_id": "H4AZ02184",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Former Navajo Nation president (2019–2023) and vice president (2015–2019), who lost this seat to Crane in 2024. He was unopposed in the 2026 Democratic primary.",
+      "c": [
+       "wiki_nez",
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Jonathan Michael Nez"
+    },
+    {
+     "name": "Eli Crane",
+     "party": "R",
+     "incumbent": true,
+     "site": "https://eliforarizona.com/",
+     "fec_id": "H2AZ01354",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Republican incumbent since January 2023, re-elected in 2024 with 54.5%. He was unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "Curtis Goodwin",
+     "party": "L",
+     "incumbent": false,
+     "site": null,
+     "fec_id": null,
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Libertarian nominee who won his party's primary with 318 votes over a write-in.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "No campaign website listed; The Green Papers gives only a LinkedIn profile. No FEC id listed."
+    }
+   ]
+  },
+  "AZ-03": {
+   "incumbent": {
+    "name": "Yassamin Ansari",
+    "party": "D",
+    "status": "Running for a second term"
+   },
+   "rating": {
+    "t": "Solid D (Cook, Sep 25, 2026); Solid D (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe D (Sabato, Jul 10, 2025 — per Wikipedia)",
+    "c": [
+     "cook_house",
+     "wiki_house26_az"
+    ]
+   },
+   "note": "Safe Democratic seat with no Republican on the printed ballot. Nicholas Glenn won the GOP primary as a write-in (437 votes, per Wikipedia), but neither The Green Papers nor FOX 10 lists him for November; Jacob Parkman is a Republican write-in. The Green nominee, David Redkey, was arrested Sept 19 on threat charges, and the state Green Party opposes his candidacy.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "fox10_guide",
+    "azfamily_redkey_0921"
+   ],
+   "candidates": [
+    {
+     "name": "Yassamin Ansari",
+     "party": "D",
+     "incumbent": true,
+     "site": "https://yassaminforcongress.com/",
+     "fec_id": "H4AZ03109",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic incumbent since January 2025, elected in 2024 with 70.9%. She was unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "David Redkey",
+     "party": "G",
+     "incumbent": false,
+     "site": "https://davidredkey4congress.com/",
+     "fec_id": "H6AZ01322",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Green nominee who won his primary as a write-in with 5 votes; the Arizona Green Party lists him as 'actively opposed.' He was booked into jail around Sept 19, 2026 on charges of threatening or intimidating (sending gun-related threats to a judge and an attorney, prosecutors say) and computer tampering. These are charges, with no plea or conviction reported.",
+      "c": [
+       "wiki_house26_az",
+       "azfamily_redkey_0921",
+       "fox10_guide",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "David Wayne Redkey"
+    },
+    {
+     "name": "Alan Aversa",
+     "party": "I",
+     "incumbent": false,
+     "site": "https://aversa.vote/",
+     "fec_id": "H4AZ03174",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "No Labels Party nominee (coded 'I' here; ballot label No Labels), unopposed in his primary with 571 votes. FOX 10 notes he is not on the party's endorsed list.",
+      "c": [
+       "wiki_house26_az",
+       "fox10_guide",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    }
+   ]
+  },
+  "AZ-04": {
+   "incumbent": {
+    "name": "Greg Stanton",
+    "party": "D",
+    "status": "Running for a fifth term"
+   },
+   "rating": {
+    "t": "Solid D (Cook, Sep 25, 2026); Solid D (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe D (Sabato, Jul 10, 2025 — per Wikipedia)",
+    "c": [
+     "cook_house",
+     "wiki_house26_az"
+    ]
+   },
+   "note": "Stanton beat Kai Newkirk 62.3%–37.7% in the Democratic primary. Zuhdi Jasser was unopposed for the GOP after Jerone Davison was removed from the primary ballot. Stanton, Jasser and Benoit debated on Oct 5. Steven Sanders is a No Labels write-in, not on the printed ballot.",
+   "c": [
+    "wiki_house26_az",
+    "fox10_cong_primaries",
+    "fox10_cd4debate_1005",
+    "gp_az",
+    "fox10_guide",
+    "wiki_aip"
+   ],
+   "candidates": [
+    {
+     "name": "Greg Stanton",
+     "party": "D",
+     "incumbent": true,
+     "site": "https://stantonforarizona.com/",
+     "fec_id": "H8AZ09040",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Former Phoenix mayor, in Congress since 2019 (first elected in 2018 in the old AZ-09), re-elected here in 2024 with 52.7%. He won the 2026 primary with 62.3%.",
+      "c": [
+       "wiki_house26_az",
+       "fox10_cd4debate_1005",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "Zuhdi Jasser",
+     "party": "R",
+     "incumbent": false,
+     "site": "https://zforaz.com/",
+     "fec_id": "H4AZ04115",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Physician, Navy veteran and small-business owner; his campaign biography says his parents were Syrian refugees. He was unopposed on the GOP primary ballot after Jerone Davison's removal.",
+      "c": [
+       "fox10_cd4debate_1005",
+       "fox10_cong_primaries",
+       "wiki_house26_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "M. Zuhdi \"Zuhdi\" Jasser"
+    },
+    {
+     "name": "Tisha Benoit",
+     "party": "I",
+     "incumbent": false,
+     "site": "https://tishabenoit.com/",
+     "fec_id": null,
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "No Labels Party nominee (coded 'I' here), a traditional Chinese medicine practitioner and small-business owner. She won the party's primary 65.4%–34.6%. Her nomination paper names the 'Arizona Independent Party,' and the party did not endorse in this race.",
+      "c": [
+       "fox10_cd4debate_1005",
+       "wiki_house26_az",
+       "fox10_guide",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "party_note": "FOX 10's guide shows no party label for her. Her nomination paper says 'Arizona Independent Party,' a name the courts ruled invalid. Other sources call her the No Labels nominee. Ballot label needs a check against the official sample ballot.",
+     "fec_note": "No FEC id listed by The Green Papers or Wikipedia."
+    }
+   ]
+  },
+  "AZ-05": {
+   "incumbent": {
+    "name": "Andy Biggs",
+    "party": "R",
+    "status": "Open seat — running for governor (won GOP nomination Jul 21, 2026)"
+   },
+   "rating": {
+    "t": "Solid R (Cook, Sep 25, 2026); Solid R (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe R (Sabato, Jul 10, 2025 — per Wikipedia)",
+    "c": [
+     "cook_house",
+     "wiki_house26_az"
+    ]
+   },
+   "note": "Open seat after Biggs left to run for governor (he won 60.4% here in 2024). Trump-endorsed former Pinal County Sheriff Mark Lamb beat self-funding businessman Daniel Keenan 58.7%–41.3% in the GOP primary. Elizabeth Lee won the Democratic primary with 66.0%. Only two candidates are on the ballot.",
+   "c": [
+    "wiki_house26_az",
+    "wiki_lamb",
+    "kjzz_primary_0722",
+    "gp_az",
+    "fox10_guide"
+   ],
+   "candidates": [
+    {
+     "name": "Elizabeth Lee",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://nurselee4az.com/",
+     "fec_id": "H6AZ05240",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic nominee who won a three-way primary with 66.0%.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "Mark Lamb",
+     "party": "R",
+     "incumbent": false,
+     "site": "https://marklamb.us/",
+     "fec_id": "H6AZ05265",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Pinal County sheriff 2017–2024 and runner-up to Kari Lake in the 2024 GOP U.S. Senate primary (about 39.5%). Endorsed by Trump and Turning Point USA, he won the 2026 GOP primary with 58.7%.",
+      "c": [
+       "wiki_lamb",
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    }
+   ]
+  },
+  "AZ-06": {
+   "incumbent": {
+    "name": "Juan Ciscomani",
+    "party": "R",
+    "status": "Running for a third term"
+   },
+   "rating": {
+    "t": "Toss-up (Cook, Sep 25, 2026); Tossup (Inside Elections, Jun 30, 2025 — per Wikipedia, likely stale); Tossup (Sabato, Jul 10, 2025 — per Wikipedia, likely stale). 270toWin consensus: Leans D (Oct 2, 2026); Ballotpedia: forecasters rated it Toss-up or Lean D as of July 2026.",
+    "c": [
+     "cook_house",
+     "wiki_house26_az",
+     "rtw_consensus",
+     "bp_az06_0803"
+    ]
+   },
+   "note": "Arizona's most competitive House seat: Ciscomani won 50.0% in 2024. He and JoAnna Mendoza were both unopposed in their primaries; Mendoza had raised about $7.35 million to Ciscomani's $6.17 million through July 1. Libertarian Jereme Peters and Green Gary Swing are also on the ballot. Michael Dorland is a write-in, not on the printed ballot.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "fox10_guide",
+    "bp_az06_0803"
+   ],
+   "candidates": [
+    {
+     "name": "JoAnna Mendoza",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://joannamendoza.com/",
+     "fec_id": "H6AZ06099",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic nominee, unopposed in the primary (78,310 votes), and the race's top fundraiser through July 1, 2026 per FEC totals listed by The Green Papers.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "JoAnna \"Jo\" Mendoza"
+    },
+    {
+     "name": "Juan Ciscomani",
+     "party": "R",
+     "incumbent": true,
+     "site": "https://juanciscomani.com/",
+     "fec_id": "H2AZ02360",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Republican incumbent since January 2023, re-elected in 2024 with 50.0%; unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly"
+    },
+    {
+     "name": "Gary Swing",
+     "party": "G",
+     "incumbent": false,
+     "site": null,
+     "fec_id": null,
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Green nominee who won his primary as a write-in with 29 votes.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "The Green Papers lists a Wix page (theswingvote.wixsite.com/unity), not opened.",
+     "fec_note": "The Green Papers lists two possible FEC ids, 'H8AZ08224 or H6AZ06164'. Left null pending a check on fec.gov."
+    },
+    {
+     "name": "Jereme Peters",
+     "party": "L",
+     "incumbent": false,
+     "site": null,
+     "fec_id": "H6AZ06214",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Libertarian nominee, unopposed in his primary (277 votes); FEC reports show about $10,500 raised through Mar 31, 2026.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "ballot_name": "Jereme Lance Peters",
+     "site_note": "No campaign website; The Green Papers lists only a Facebook page."
+    }
+   ]
+  },
+  "AZ-07": {
+   "incumbent": {
+    "name": "Adelita Grijalva",
+    "party": "D",
+    "status": "Running for a first full term"
+   },
+   "rating": {
+    "t": "Solid D (Cook, Sep 25, 2026); Solid D (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe D (Sabato, Jul 10, 2025 — per Wikipedia)",
+    "c": [
+     "cook_house",
+     "wiki_house26_az"
+    ]
+   },
+   "note": "Rep. Raúl Grijalva (D) died in office on Mar 13, 2025. His daughter Adelita Grijalva won the Sept 23, 2025 special election with 68.9%, and her swearing-in was delayed until Nov 12, 2025. The seat is not vacant now. Both nominees were unopposed in their primaries.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "clerk_2025_285"
+   ],
+   "candidates": [
+    {
+     "name": "Adelita Grijalva",
+     "party": "D",
+     "incumbent": true,
+     "site": "https://adelitaforcongress.com/",
+     "fec_id": "H6AZ07121",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democrat who won the 2025 special election to succeed her late father, Raúl Grijalva, and was sworn in Nov 12, 2025. She was unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "fec_note": "The Green Papers also lists H2AZ07070 (an older id); H6AZ07121 carries her 2026 totals."
+    },
+    {
+     "name": "Daniel Butierez",
+     "party": "R",
+     "incumbent": false,
+     "site": "https://butierezforcongress.com/",
+     "fec_id": "H4AZ07134",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Republican nominee, unopposed in the primary (21,934 votes).",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Daniel Francis Butierez, Sr."
+    }
+   ]
+  },
+  "AZ-08": {
+   "incumbent": {
+    "name": "Abe Hamadeh",
+    "party": "R",
+    "status": "Running for a second term"
+   },
+   "rating": {
+    "t": "Solid R (Cook, Sep 25, 2026); Solid R (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe R (Sabato, Jul 10, 2025 — per Wikipedia). 270toWin consensus: Likely R (Oct 2, 2026).",
+    "c": [
+     "cook_house",
+     "wiki_house26_az",
+     "rtw_consensus"
+    ]
+   },
+   "note": "Hamadeh won 56.5% in 2024 and was unopposed in the 2026 primary. Bernadette Greene-Placentia won the Democratic primary 65.7%–34.3%.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "fox10_guide"
+   ],
+   "candidates": [
+    {
+     "name": "Bernadette Greene-Placentia",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://bgp4az.com/",
+     "fec_id": "H4AZ08082",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic nominee who beat Raymond Keeler 65.7%–34.3% in the primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Bernadette M. Greene-Placentia"
+    },
+    {
+     "name": "Abe Hamadeh",
+     "party": "R",
+     "incumbent": true,
+     "site": "https://abeforaz.com/",
+     "fec_id": "H4AZ08108",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Republican incumbent since January 2025, elected in 2024 with 56.5%; unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Abraham \"Abe\" Hamadeh"
+    }
+   ]
+  },
+  "AZ-09": {
+   "incumbent": {
+    "name": "Paul Gosar",
+    "party": "R",
+    "status": "Running for a ninth term"
+   },
+   "rating": {
+    "t": "Solid R (Cook, Sep 25, 2026); Solid R (Inside Elections, Jun 30, 2025 — per Wikipedia); Safe R (Sabato, Jul 10, 2025 — per Wikipedia)",
+    "c": [
+     "cook_house",
+     "wiki_house26_az"
+    ]
+   },
+   "note": "Gosar won 65.3% in 2024. Both nominees were unopposed in their primaries. Write-ins G. Seville Hatch and William Perry are not on the printed ballot.",
+   "c": [
+    "wiki_house26_az",
+    "gp_az",
+    "fox10_guide"
+   ],
+   "candidates": [
+    {
+     "name": "Danielle Sterbinsky",
+     "party": "D",
+     "incumbent": false,
+     "site": "https://sterbinskyforcongress.com/",
+     "fec_id": "H6AZ09085",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Democratic nominee, unopposed in the primary (35,700 votes).",
+      "c": [
+       "wiki_house26_az",
+       "gp_az",
+       "fox10_guide"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Danielle \"Dani\" Sterbinsky"
+    },
+    {
+     "name": "Paul Gosar",
+     "party": "R",
+     "incumbent": true,
+     "site": "https://drpaulgosar.com/",
+     "fec_id": "H0AZ01259",
+     "photo": {
+      "src": "",
+      "page": "",
+      "credit": ""
+     },
+     "oneliner": {
+      "t": "Republican in Congress since 2011 (first elected in 2010), re-elected here in 2024 with 65.3%; unopposed in the 2026 primary.",
+      "c": [
+       "wiki_house26_az",
+       "gp_az"
+      ]
+     },
+     "site_note": "site URL taken from The Green Papers candidate listing; not opened directly",
+     "ballot_name": "Paul Anthony Gosar"
+    }
+   ]
+  }
+ },
+ "research_notes": [
+  "FINAL BALLOT SOURCE: the Secretary of State's general-election candidate listing (apps.arizona.vote/electioninfo/Election/69), its write-in/withdrawn list (azsos.gov/media/718) and the Aug 6 statewide canvass PDF were identified on azsos.gov, but the fetch tool refused them on provenance grounds, and curl is blocked by the egress proxy. The ballot is therefore verified from two independent secondary listings that agree name for name: The Green Papers (accessed Oct 8) and FOX 10 Phoenix's general-election guide (updated Oct 6, 2026), cross-checked with Wikipedia for primary results.",
+  "LIEUTENANT GOVERNOR: the task brief said Arizona has no lieutenant governor. That is no longer true for this election. Proposition 131 (2022) created the office, and 2026 is the first election in which governor candidates run with a running mate (AZ Family Aug 11, 2026; Wikipedia; Ballotpedia). Running mates are therefore recorded: Hobbs–John Giles, Biggs–Sine Kerr, Lombardo–Lisa Castillo (from The Green Papers and FOX 10 only), Hourihan–Angela Harrolle Mohan.",
+  "GREEN PARTY DISPUTE: the Arizona Green Party calls governor nominee Risa Lombardo and secretary-of-state nominee Duwayne Collier 'sham' candidates. The Arizona Mirror (via KJZZ, Jul 30) documented Republican ties and a shared Nevada vendor. On Aug 31 the party asked the Secretary of State to replace them with write-ins Carlos Melendez and Jon Ralston, and the office said it cannot remove nominees without a court order or withdrawal. As of the Oct 6 FOX 10 report, Lombardo remains the ballot's Green nominee. Whether Clean Elections' review of qualifying contributions leads to any disqualification is unresolved, so a human should check status before publication. The party also lists CD3 nominee David Redkey as 'actively opposed.'",
+  "NO LABELS LABEL: the party's attempt to rename itself 'Arizona Independent Party' (approved by the Secretary of State effective Dec 1, 2025) was ruled invalid (Mar 25, 2026), and an appeal is pending after the midterms. Hourihan and Aversa are listed as No Labels. Tisha Benoit (CD4) filed under 'Arizona Independent Party,' and FOX 10 shows no party label for her, so her printed label needs a check against a sample ballot. All three are coded 'I' per the module convention.",
+  "CD1 DISCREPANCY: Wikipedia lists Christopher Ajluni (No Labels) among CD1 general-election candidates, with no primary result. Neither The Green Papers nor FOX 10 (Oct 6) lists him, so he is excluded. Needs an official-list check.",
+  "CD3 DISCREPANCY: Wikipedia shows write-in Nicholas Glenn winning the Republican primary with 437 votes. Neither The Green Papers nor FOX 10 lists him for November; they list Jacob Parkman as a Republican write-in. Glenn may not have met the write-in nomination threshold, but this was not confirmed, so he is excluded.",
+  "Gary Swing (CD6) and David Redkey (CD3) won Green nominations as primary write-ins (29 and 5 votes). Both appear as Green ballot nominees in The Green Papers and FOX 10.",
+  "David Redkey: the arrest and charges (threatening or intimidating; computer tampering) come from AZ Family (Sep 21) and FOX 10. Charges only, with no plea or conviction reported, and the arrest documents were sought sealed. Ballot status after the arrest is not separately confirmed; FOX 10 (Oct 6) still lists him.",
+  "Mark Lamb: Wikipedia reports sexual-misconduct and abuse-of-power accusations, which he denies, and a Pinal County Attorney's review that found no evidence of criminal conduct. This rests on one secondary source and was left out of his oneliner pending a second independent source.",
+  "Ratings: Cook was read directly (House Sep 25, 2026; governor Oct 1, 2026). The Inside Elections and Sabato ratings are from Wikipedia and mostly dated mid-2025, so they are likely stale for competitive seats (AZ-01, AZ-06, governor). The forecasters' own pages could not be fetched. 270toWin's Oct 2 consensus and Ballotpedia's summaries are added for context.",
+  "Campaign sites and FEC ids come from The Green Papers; neither the sites nor the FEC pages were opened in this pass. Goodwin (CD2) and Benoit (CD4) have no listed FEC id. Swing (CD6) has two candidate ids listed and is left null.",
+  "Running-mate deadline: the Arizona Capitol Times said the Secretary of State set a Friday deadline (Aug 7) to name running mates. The Arizona Mirror (Jul 31) said Hobbs had until Sept 4. Not reconciled.",
+  "Photos not researched in this pass; photo fields are blank, not guessed.",
+  "Write-ins (not on the printed ballot, so not in candidates): Governor — Gertritrude Gonzalez (R), Alice Novoa (R); CD1 — Dev Gupta (I), Gage Dylan Thunder; CD3 — Jacob Parkman (R); CD4 — Steven Sanders (No Labels); CD6 — Michael Dorland (I); CD9 — G. Seville Hatch (I), William Perry (I). Sources: The Green Papers and FOX 10."
+ ],
+ "cites": {
+  "gp_az": {
+   "t": "Arizona 2026 General Election — The Green Papers (accessed Oct 8, 2026)",
+   "u": "https://www.thegreenpapers.com/G26/AZ"
+  },
+  "fox10_guide": {
+   "t": "2026 Arizona General Election voter guide: what to know about when to vote, how to register, and the races — FOX 10 Phoenix (Sep 25, 2026; updated Oct 6, 2026)",
+   "u": "https://www.fox10phoenix.com/election/2026-arizona-general-election-voter-guide-what-know-about-when-vote-how-register-races"
+  },
+  "wiki_house26_az": {
+   "t": "2026 United States House of Representatives elections in Arizona — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Arizona"
+  },
+  "wiki_gov26_az": {
+   "t": "2026 Arizona gubernatorial election — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election"
+  },
+  "cook_house": {
+   "t": "2026 House Race Ratings — Cook Political Report (updated Sep 25, 2026)",
+   "u": "https://www.cookpolitical.com/ratings/house-race-ratings"
+  },
+  "cook_gov": {
+   "t": "2026 Governor Race Ratings — Cook Political Report (dated Oct 1, 2026)",
+   "u": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+  },
+  "rtw_consensus": {
+   "t": "2026 House Election: Consensus Forecast (table) — 270toWin (updated Oct 2, 2026)",
+   "u": "https://270towin.com/2026-house-election/table/consensus-2026-house-forecast"
+  },
+  "bp_gov_0925": {
+   "t": "Arizona governor race overview — Ballotpedia News (as of Sep 25, 2026)",
+   "u": "https://news.ballotpedia.org/?p=51437"
+  },
+  "bp_az06_0803": {
+   "t": "Forecasters rate AZ-06 a Toss-up or Lean Democratic as Ciscomani (R) seeks reelection — Ballotpedia News (Aug 3, 2026)",
+   "u": "https://news.ballotpedia.org/2026/08/03/forecasters-rate-az-06-a-toss-up-or-lean-democratic-as-ciscomani-r-seeks-reelection/"
+  },
+  "bp_house_az": {
+   "t": "United States House of Representatives elections in Arizona, 2026 — Ballotpedia (accessed Oct 8, 2026)",
+   "u": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Arizona,_2026"
+  },
+  "kjzz_primary_0722": {
+   "t": "Breaking down the results for Arizona's primary election — KJZZ The Show (Jul 22, 2026)",
+   "u": "https://www.kjzz.org/the-show/2026-07-22/breaking-down-the-results-for-arizonas-primary-election"
+  },
+  "kjzz_nolabels_0724": {
+   "t": "Underdog candidate bests well-funded opponent in Arizona's first No Labels gubernatorial primary — KJZZ (Jul 24, 2026)",
+   "u": "https://www.kjzz.org/politics/2026-07-24/underdog-candidate-bests-well-funded-opponent-in-arizonas-first-no-labels-gubernatorial-primary"
+  },
+  "azct_hourihan_0806": {
+   "t": "No Labels' Hourihan names running mate — Arizona Capitol Times (Aug 6, 2026)",
+   "u": "https://azcapitoltimes.com/news/2026/08/06/no-labels-hourihan-names-running-mate/"
+  },
+  "azfamily_giles_0811": {
+   "t": "Gov. Hobbs chooses former Republican Mesa Mayor John Giles as running mate — AZ Family (Aug 11, 2026)",
+   "u": "https://www.azfamily.com/2026/08/11/gov-hobbs-chooses-former-republican-mesa-mayor-john-giles-running-mate/"
+  },
+  "azmirror_kerr_0731": {
+   "t": "Andy Biggs chooses Sine Kerr for running mate, leaning into rural Arizona — Arizona Mirror (Jul 31, 2026)",
+   "u": "https://azmirror.com/2026/07/31/andy-biggs-chooses-sine-kerr-for-running-mate-leaning-into-rural-arizona/"
+  },
+  "kjzz_green_sham_0730": {
+   "t": "Reporter links 'sham' Arizona Green Party candidates to Republican operatives — KJZZ The Show (Jul 30, 2026)",
+   "u": "https://www.kjzz.org/text/the-show/2026-07-30/reporter-links-sham-arizona-green-party-candidates-to-republican-operatives"
+  },
+  "kjzz_green_remove_0831": {
+   "t": "Arizona Green Party asks Fontes to remove 'sham' candidates from November ballot — KJZZ (Aug 31, 2026)",
+   "u": "https://www.kjzz.org/politics/2026-08-31/arizona-green-party-asks-fontes-to-remove-sham-candidates-from-november-ballot"
+  },
+  "wmi_lombardo_challenges": {
+   "t": "Green Party governor candidate her own party called a sham survives two ballot challenges — White Mountain Independent (Apr 2026)",
+   "u": "https://www.wmicentral.com/news/green-party-governor-candidate-her-own-party-called-a-sham-survives-two-ballot-challenges/article_d22a6fdc-a51a-4d73-b1a5-769cf280dc0d.html"
+  },
+  "fox10_govdebate_1006": {
+   "t": "2026 Election debate: Arizona gubernatorial candidates face off — FOX 10 Phoenix (Oct 6, 2026)",
+   "u": "https://www.fox10phoenix.com/election/2026-election-debate-arizona-gubernatorial-candidates-face-off"
+  },
+  "fox10_cd4debate_1005": {
+   "t": "2026 Election: Arizona Congressional District 4 candidates face off in debate — FOX 10 Phoenix (Oct 5, 2026)",
+   "u": "https://fox10phoenix.com/news/2026-election-arizona-congressional-district-4-candidates-face-off-debate"
+  },
+  "fox10_cong_primaries": {
+   "t": "2026 Arizona election guide: learn more about the congressional primaries — FOX 10 Phoenix (Jul 7, 2026; updated Jul 13, 2026)",
+   "u": "https://fox10phoenix.com/news/2026-arizona-election-guide-learn-more-about-congressional-primaries"
+  },
+  "azfamily_redkey_0921": {
+   "t": "Arizona congressional candidate arrested for making threats, officials say — AZ Family (Sep 21, 2026)",
+   "u": "https://azfamily.com/2026/09/21/arizona-congressional-candidate-arrested-making-threats-officials-say"
+  },
+  "kjzz_aip_0915": {
+   "t": "Amish Shah is touting 'Arizona Independent Party' endorsement. But that party doesn't exist — KJZZ (Sep 15, 2026)",
+   "u": "https://www.kjzz.org/text/elections/2026-09-15/amish-shah-is-touting-arizona-independent-party-endorsement-but-that-party-doesnt-exist"
+  },
+  "wiki_aip": {
+   "t": "Arizona Independent Party — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/Arizona_Independent_Party"
+  },
+  "axios_redistrict_0815": {
+   "t": "Arizona won't follow Texas or California's lead in redistricting battle — Axios Phoenix (Aug 15, 2025)",
+   "u": "https://www.axios.com/local/phoenix/2025/08/15/arizona-mid-decade-redistricting-california-texas"
+  },
+  "azsos_2026info": {
+   "t": "2026 Election Information — Arizona Secretary of State (accessed Oct 8, 2026; lists the Aug 6, 2026 statewide primary canvass, county hand counts, and Nov 23 general canvass date)",
+   "u": "https://azsos.gov/node/876"
+  },
+  "rtw_primary": {
+   "t": "2026 Arizona Primary Live Results (candidate overview) — 270toWin (accessed Oct 8, 2026)",
+   "u": "https://www.270towin.com/2026-election-results-live/state/arizona/primary"
+  },
+  "azsos_dates": {
+   "t": "Elections page — Arizona Secretary of State (accessed Oct 8, 2026)",
+   "u": "https://azsos.gov/node/107"
+  },
+  "wiki_nez": {
+   "t": "Jonathan Nez — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/Jonathan_Nez"
+  },
+  "wiki_feely": {
+   "t": "Jay Feely — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/Jay_Feely"
+  },
+  "wiki_lamb": {
+   "t": "Mark Lamb (sheriff) — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/Mark_Lamb_(sheriff)"
+  },
+  "wiki_shah": {
+   "t": "Amish Shah — Wikipedia (accessed Oct 8, 2026)",
+   "u": "https://en.wikipedia.org/wiki/Amish_Shah"
+  },
+  "clerk_2025_285": {
+   "t": "Roll Call 285, H.R. 5371 (Nov 12, 2025) — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/Votes/2025285"
+  }
+ }
+}
