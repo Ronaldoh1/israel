@@ -72,7 +72,21 @@ grouped = [x for g in BASE for x in g[2]]
 missing = [x for x in ch01 if x not in grouped]
 assert not missing, 'Baseline scenes not placed in a chapter: %s' % missing
 base_chapters = []
-for i, (title, intro, ids) in enumerate(BASE):
+_bm = os.path.join(ROOT, 'book', 'part1', 'ch01', '_manifest.json')
+_bman = json.load(open(_bm, encoding='utf-8')) if os.path.exists(_bm) else None
+DEEP_BASE = bool(_bman and 'chapters' in _bman and any(os.path.exists(os.path.join(ROOT, 'book', 'part1', 'ch01', x['s'] + '.html')) and x['s'].startswith('ch01_') for c in _bman['chapters'] for x in c['sections']))
+if DEEP_BASE:  # the deep rebuild: chapters, order and drawn scenes come from the manifest
+    for i, bc in enumerate(_bman['chapters']):
+        secs = []
+        for m in bc['sections']:
+            x = section('ch01', m['s'])
+            if not x: continue
+            if m.get('scene') and m['scene'] != m['s']: x['scene'] = m['scene']
+            if m.get('draws'): x['draws'] = [d for d in m['draws'] if d in SC]
+            secs.append(x)
+        intro = read(os.path.join(ROOT, 'book', 'part1', 'ch01', '_intro_%s.html' % bc['id'])) or '<p>' + bc.get('intro', '') + '</p>'
+        base_chapters.append({'id': bc['id'], 'label': 'Chapter %d' % (i + 1), 'title': bc['title'], 'span': '', 'intro': intro, 'outro': '', 'sections': secs})
+for i, (title, intro, ids) in enumerate([] if DEEP_BASE else BASE):
     secs = [x for x in (section('ch01', sid) for sid in ids) if x]
     base_chapters.append({'id': 'base%d' % (i + 1), 'label': 'Chapter %d' % (i + 1), 'title': title, 'span': '', 'intro': '<p>' + intro + '</p>', 'outro': '', 'sections': secs})
 # ---- Baseline, last chapter: The Lines You've Heard (claims checked, with links to where the full record lives) ----
@@ -86,7 +100,8 @@ DRAWN = {}  # scenes from other chapters that a written volume now tells in full
 for _cid in ['ch01'] + ['rd%d' % i for i in range(7)]:
     _mp = os.path.join(ROOT, 'book', 'part1', _cid, '_manifest.json')
     if os.path.exists(_mp):
-        for _m in json.load(open(_mp, encoding='utf-8'))['sections']:
+        _mj = json.load(open(_mp, encoding='utf-8'))
+        for _m in _mj.get('sections') or [x for c in _mj.get('chapters', []) for x in c['sections']]:
             for _d in _m.get('draws', []): DRAWN.setdefault(_d, _cid)
 def volume_label(sid):
     cid = DRAWN.get(sid) if CH_OF.get(sid) not in ('ch01',) and not str(CH_OF.get(sid, '')).startswith('rd') and sid in DRAWN else CH_OF.get(sid)
@@ -153,7 +168,19 @@ lib = {'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library
        'note': 'The documented record, told in order, with every claim tied to its source. Tap a note number to see it, a name in a figure for its detail, or the + button for contents, bookmarks and notes.',
        'books': books}
 payload = json.dumps(lib, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-block = open(os.path.join(ROOT, 'tools', 'book_block.html'), encoding='utf-8').read().strip().replace('__BOOK_JSON__', payload) + '\n'
+# the same payload, byte for byte, for the future site (export/library.json; '<\\/' is a valid JSON escape)
+os.makedirs(os.path.join(ROOT, 'export'), exist_ok=True)
+open(os.path.join(ROOT, 'export', 'library.json'), 'w', encoding='utf-8').write(payload)
+
+def inline_asset(name):
+    t = open(os.path.join(ROOT, 'tools', name), encoding='utf-8').read().strip()
+    assert '</script' not in t.lower() and '</style' not in t.lower(), name + ' must not close its own tag'
+    return t
+block = open(os.path.join(ROOT, 'tools', 'book_block.html'), encoding='utf-8').read().strip()
+for ph, name in (('/*__CHARTS_CSS__*/', 'charts.css'), ('/*__CHARTS_JS__*/', 'charts.js')):
+    assert block.count(ph) == 1, 'placeholder %s missing from book_block.html' % ph
+    block = block.replace(ph, inline_asset(name))
+block = block.replace('__BOOK_JSON__', payload) + '\n'
 s = re.sub(r'<!--BOOK-START-->.*?<!--BOOK-END-->\n?', '', s, flags=re.S)
 i = s.find('<!--UX-START-->')
 if i < 0: i = s.find('<!--ELEVEN-START-->')

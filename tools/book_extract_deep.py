@@ -9,20 +9,27 @@ D = {x['id']: x for x in g(r'<script id="scenedata" type="application/json">(.*?
 CH = g(r'window\.CHAPTERS = (\[.*?\]);\n'); EX = g(r'<script id="expanded-en" type="application/json">(.*?)</script>')
 DD = g(r'<script id="deepdive-en" type="application/json">(.*?)</script>'); CL = g(r'window\.CITE_LABELS = (\{.*?\});\n')
 man = json.load(open('book/part1/%s/_manifest.json' % cid, encoding='utf-8'))
+if 'chapters' in man:  # Volume I: sections grouped into thematic chapters
+    for ch in man['chapters']:
+        for x in ch['sections']: x['in_chapter'] = ch['id'] + ': ' + ch['title']
+    man['sections'] = [x for ch in man['chapters'] for x in ch['sections']]
 own = next(c for c in CH if c['id'] == cid)['scenes']
-ids = []
+ids = []; link_only = []
 for m in man['sections']:
     for x in [m.get('scene')] + m.get('draws', []):
         if x and x not in ids: ids.append(x)
+for m in man['sections']:
+    for x in m.get('links', []):
+        if x not in ids and x not in link_only: link_only.append(x)
 missing = [x for x in own if x not in ids]
 assert not missing, 'own scenes not placed in the manifest: %s' % missing
 RS = {}
 for fn in os.listdir('book/research'):
     if fn.endswith('.json'):
         for e in json.load(open('book/research/' + fn, encoding='utf-8'))['entries']: RS[e['id']] = e
-out = {'chapter': cid, 'title': man.get('title'), 'sections': man['sections'], 'scenes': [], 'research': [], 'citation_labels': {}}
+out = {'chapter': cid, 'title': man.get('title'), 'chapters': [{k: v for k, v in c.items() if k != 'sections'} for c in man.get('chapters', [])], 'sections': man['sections'], 'scenes': [], 'research': [], 'citation_labels': {}}
 keys = set()
-for sid in ids:
+for sid in ids + link_only:
     x = D[sid]; sc = {k: x.get(k) for k in ('id', 'yr', 't', 'sub', 'n', 'tld', 'rec')}; sc['home_chapter'] = next((c['id'] for c in CH if sid in c['scenes']), None); sc['entities'] = []
     for e in x['ents']:
         ee = {'id': e['id'], 'name': e.get('nm'), 'role': e.get('rl'), 'detail': e.get('dt')}
@@ -30,6 +37,7 @@ for sid in ids:
         d = DD.get(sid, {}).get(e['id'])
         if d: ee['deep_dive'] = {'title': d.get('title'), 'subtitle': d.get('subtitle'), 'lead': d.get('lead'), 'sections': [{'heading': q.get('heading'), 'body': q.get('body')} for q in d.get('sections', [])]}
         sc['entities'].append(ee)
+    if sid in link_only: sc['link_only'] = True
     sc['links'] = [{'from': q['f'], 'to': q['t'], 'type': q.get('ty')} for q in x.get('cs', [])]
     out['scenes'].append(sc); keys |= set(re.findall(r'\[cite:([a-zA-Z0-9_]+)\]', json.dumps(sc)))
 for m in man['sections']:

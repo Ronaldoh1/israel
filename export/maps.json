@@ -1,0 +1,5906 @@
+{
+ "state_build": {
+  "kind": "flow",
+  "title": "Building a State, 1897–1948",
+  "sub": "How a political program became a state in 51 years — the institutions, the patrons, and the votes, in order.",
+  "H": 760,
+  "nodes": [
+   {
+    "id": "basel",
+    "l": "Basel Congress",
+    "s": "1897 · World Zionist Org.",
+    "x": 200,
+    "y": 50,
+    "sc": "s04",
+    "k": "origin"
+   },
+   {
+    "id": "bank",
+    "l": "Zionist bank",
+    "s": "1899–1902 · finance arm",
+    "x": 68,
+    "y": 160,
+    "sc": "s04e"
+   },
+   {
+    "id": "jnf",
+    "l": "Jewish National Fund",
+    "s": "1901 · land, never resold",
+    "x": 332,
+    "y": 160,
+    "sc": "s04d"
+   },
+   {
+    "id": "balfour",
+    "l": "Balfour Declaration",
+    "s": "1917 · British pledge",
+    "x": 200,
+    "y": 270,
+    "sc": "s06"
+   },
+   {
+    "id": "mandate",
+    "l": "British Mandate",
+    "s": "1922 · League of Nations",
+    "x": 200,
+    "y": 370,
+    "sc": "s07"
+   },
+   {
+    "id": "agency",
+    "l": "Jewish Agency",
+    "s": "Mandate-recognized; enlarged 1929",
+    "x": 68,
+    "y": 470,
+    "sc": "us_s03"
+   },
+   {
+    "id": "azec",
+    "l": "US political machine",
+    "s": "AZEC · 1940s lobbying",
+    "x": 332,
+    "y": 470,
+    "sc": "s07f"
+   },
+   {
+    "id": "unscop",
+    "l": "UNSCOP",
+    "s": "1947 · UN inquiry",
+    "x": 68,
+    "y": 580,
+    "sc": "s07i"
+   },
+   {
+    "id": "r181",
+    "l": "Resolution 181",
+    "s": "Nov 1947 · partition vote",
+    "x": 332,
+    "y": 580,
+    "sc": "s09"
+   },
+   {
+    "id": "state",
+    "l": "State of Israel",
+    "s": "May 1948 · independence and Nakba",
+    "x": 200,
+    "y": 690,
+    "sc": "s10",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "basel",
+    "t": "bank",
+    "l": "finance arm",
+    "k": "money"
+   },
+   {
+    "f": "basel",
+    "t": "jnf",
+    "l": "land arm",
+    "k": "money"
+   },
+   {
+    "f": "basel",
+    "t": "balfour",
+    "l": "diplomacy (Weizmann)",
+    "k": "authority"
+   },
+   {
+    "f": "balfour",
+    "t": "mandate",
+    "l": "written into the Mandate",
+    "k": "authority"
+   },
+   {
+    "f": "mandate",
+    "t": "agency",
+    "l": "Article 4: a recognized \"Jewish agency\"",
+    "k": "authority"
+   },
+   {
+    "f": "agency",
+    "t": "azec",
+    "l": "US campaign",
+    "k": "tie"
+   },
+   {
+    "f": "azec",
+    "t": "r181",
+    "l": "votes lobbied",
+    "k": "tie"
+   },
+   {
+    "f": "unscop",
+    "t": "r181",
+    "l": "recommends partition",
+    "k": "authority"
+   },
+   {
+    "f": "r181",
+    "t": "state",
+    "l": "legal basis claimed",
+    "k": "authority"
+   },
+   {
+    "f": "jnf",
+    "t": "state",
+    "l": "land base",
+    "k": "money"
+   },
+   {
+    "f": "bank",
+    "t": "state",
+    "l": "banking base",
+    "k": "money"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1897 · The program",
+    "x": "Herzl's First Zionist Congress in Basel founds the World Zionist Organization with a goal: a publicly secured home in Palestine.",
+    "show": [
+     "basel"
+    ],
+    "hl": [
+     "basel"
+    ],
+    "sc": "s04",
+    "ed": []
+   },
+   {
+    "t": "1899–1901 · Money and land",
+    "x": "The movement builds a bank and the Jewish National Fund, which buys land held permanently for Jews.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf"
+    ],
+    "hl": [
+     "bank",
+     "jnf"
+    ],
+    "sc": "s04d",
+    "ed": []
+   },
+   {
+    "t": "1917 · A great power signs on",
+    "x": "Britain's Balfour Declaration pledges support for a \"national home\" — while promising not to prejudice the rights of the Arab majority.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf",
+     "balfour"
+    ],
+    "hl": [
+     "balfour"
+    ],
+    "sc": "s06",
+    "ed": []
+   },
+   {
+    "t": "1922 · Pledge becomes law",
+    "x": "The League of Nations Mandate writes Balfour into international law and recognizes a \"Jewish agency\" to cooperate with the administration.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf",
+     "balfour",
+     "mandate",
+     "agency"
+    ],
+    "hl": [
+     "mandate",
+     "agency"
+    ],
+    "sc": "s07",
+    "ed": []
+   },
+   {
+    "t": "1940s · The American front",
+    "x": "The Jewish Agency's US allies build a domestic political machine aimed at Congress, the parties, and the White House.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf",
+     "balfour",
+     "mandate",
+     "agency",
+     "azec"
+    ],
+    "hl": [
+     "azec"
+    ],
+    "sc": "s07f",
+    "ed": []
+   },
+   {
+    "t": "1947 · The UN",
+    "x": "UNSCOP recommends partition; the US lobbies wavering states; Resolution 181 passes 33–13.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf",
+     "balfour",
+     "mandate",
+     "agency",
+     "azec",
+     "unscop",
+     "r181"
+    ],
+    "hl": [
+     "unscop",
+     "r181"
+    ],
+    "sc": "s09",
+    "ed": []
+   },
+   {
+    "t": "1948 · The state",
+    "x": "Israel declares independence; about 750,000 Palestinians are displaced. Land, banking, diplomacy, and votes all converge.",
+    "show": [
+     "basel",
+     "bank",
+     "jnf",
+     "balfour",
+     "mandate",
+     "agency",
+     "azec",
+     "unscop",
+     "r181",
+     "state"
+    ],
+    "hl": [
+     "state"
+    ],
+    "sc": "s10",
+    "ed": []
+   }
+  ]
+ },
+ "aipac_machine": {
+  "kind": "flow",
+  "title": "The AIPAC Machine",
+  "sub": "How money, trips, and primaries connect — and loop back.",
+  "H": 700,
+  "nodes": [
+   {
+    "id": "donors",
+    "l": "Donors",
+    "s": "individual givers",
+    "x": 200,
+    "y": 50,
+    "sc": "cm_s00",
+    "k": "origin"
+   },
+   {
+    "id": "aipac",
+    "l": "AIPAC",
+    "s": "lobby (1951/1963)",
+    "x": 200,
+    "y": 150,
+    "sc": "s19"
+   },
+   {
+    "id": "pac",
+    "l": "AIPAC PAC",
+    "s": "direct contributions",
+    "x": 68,
+    "y": 260,
+    "sc": "cm_s01"
+   },
+   {
+    "id": "udp",
+    "l": "United Democracy Project",
+    "s": "super PAC",
+    "x": 332,
+    "y": 260,
+    "sc": "cm_s05"
+   },
+   {
+    "id": "aief",
+    "l": "AIEF",
+    "s": "affiliated charity: trips",
+    "x": 68,
+    "y": 370,
+    "sc": "cm_s10"
+   },
+   {
+    "id": "congress",
+    "l": "Members of Congress",
+    "s": "federal + state",
+    "x": 200,
+    "y": 470,
+    "sc": "cm_s03"
+   },
+   {
+    "id": "primaries",
+    "l": "Primary spending",
+    "s": "against critics",
+    "x": 332,
+    "y": 370,
+    "sc": "cm_s05"
+   },
+   {
+    "id": "votes",
+    "l": "Votes & policy",
+    "s": "aid, resolutions",
+    "x": 200,
+    "y": 590,
+    "sc": "s19e",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "donors",
+    "t": "pac",
+    "l": "$",
+    "k": "money"
+   },
+   {
+    "f": "donors",
+    "t": "udp",
+    "l": "$",
+    "k": "money"
+   },
+   {
+    "f": "aipac",
+    "t": "pac",
+    "l": "launched 2021",
+    "k": "authority"
+   },
+   {
+    "f": "aipac",
+    "t": "udp",
+    "l": "launched 2021",
+    "k": "authority"
+   },
+   {
+    "f": "aipac",
+    "t": "aief",
+    "l": "affiliated",
+    "k": "tie"
+   },
+   {
+    "f": "pac",
+    "t": "congress",
+    "l": "contributions",
+    "k": "money"
+   },
+   {
+    "f": "aief",
+    "t": "congress",
+    "l": "paid Israel trips",
+    "k": "money"
+   },
+   {
+    "f": "udp",
+    "t": "primaries",
+    "l": "independent spending",
+    "k": "money"
+   },
+   {
+    "f": "primaries",
+    "t": "congress",
+    "l": "the deterrent",
+    "k": "loop"
+   },
+   {
+    "f": "congress",
+    "t": "votes",
+    "l": "votes",
+    "k": "authority"
+   },
+   {
+    "f": "votes",
+    "t": "aipac",
+    "l": "scored and rewarded",
+    "k": "loop"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The donors",
+    "x": "Individual donors fund two vehicles: a traditional PAC and a super PAC with no spending limit.",
+    "show": [
+     "donors",
+     "aipac",
+     "pac",
+     "udp"
+    ],
+    "hl": [
+     "pac",
+     "udp"
+    ],
+    "sc": "cm_s00",
+    "ed": []
+   },
+   {
+    "t": "Direct money",
+    "x": "AIPAC's PAC gives directly to members of both parties — the top-25 lists are in the Congress chapter.",
+    "show": [
+     "donors",
+     "aipac",
+     "pac",
+     "udp",
+     "congress"
+    ],
+    "hl": [
+     "pac",
+     "congress"
+    ],
+    "sc": "cm_s01",
+    "ed": []
+   },
+   {
+    "t": "The trips",
+    "x": "AIPAC's affiliated charity, AIEF, sends members of Congress to Israel — the Western Wall photo is part of the itinerary.",
+    "show": [
+     "donors",
+     "aipac",
+     "pac",
+     "udp",
+     "congress",
+     "aief"
+    ],
+    "hl": [
+     "aief"
+    ],
+    "sc": "cm_s10",
+    "ed": []
+   },
+   {
+    "t": "The primaries",
+    "x": "The super PAC spends to unseat critics — over $15 million against Bowman and Bush in 2024.",
+    "show": [
+     "donors",
+     "aipac",
+     "pac",
+     "udp",
+     "congress",
+     "aief",
+     "primaries"
+    ],
+    "hl": [
+     "udp",
+     "primaries"
+    ],
+    "sc": "cm_s05",
+    "ed": []
+   },
+   {
+    "t": "The loop",
+    "x": "Votes are scored; deviations draw primary money. The machine is contestable — see the 2026 vote — but its incentives are documented.",
+    "show": [
+     "donors",
+     "aipac",
+     "pac",
+     "udp",
+     "congress",
+     "aief",
+     "primaries",
+     "votes"
+    ],
+    "hl": [
+     "votes",
+     "aipac"
+    ],
+    "sc": "s19e",
+    "ed": []
+   }
+  ]
+ },
+ "aid_cycle": {
+  "kind": "flow",
+  "title": "The Aid Cycle",
+  "sub": "Where a US military-aid dollar goes — and why it keeps renewing.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "tax",
+    "l": "US taxpayers",
+    "s": "",
+    "x": 200,
+    "y": 50,
+    "sc": "iaa_s01",
+    "k": "origin"
+   },
+   {
+    "id": "cong",
+    "l": "Congress",
+    "s": "MOU: $3.8B/yr (2019–28)",
+    "x": 200,
+    "y": 150,
+    "sc": "s19f"
+   },
+   {
+    "id": "fmf",
+    "l": "Foreign Military Financing",
+    "s": "State + Pentagon",
+    "x": 200,
+    "y": 250,
+    "sc": "iaa_s02"
+   },
+   {
+    "id": "firms",
+    "l": "US weapons makers",
+    "s": "80%+ of post-Oct 7 aid to 5 firms",
+    "x": 200,
+    "y": 350,
+    "sc": "iaa_s13"
+   },
+   {
+    "id": "isr",
+    "l": "Israel's military",
+    "s": "weapons delivered",
+    "x": 200,
+    "y": 450,
+    "sc": "iaa_s13",
+    "k": "israel"
+   },
+   {
+    "id": "exp",
+    "l": "Israel's exports",
+    "s": "$14.8B in 2024",
+    "x": 68,
+    "y": 550,
+    "sc": "exp_s01"
+   },
+   {
+    "id": "mou",
+    "l": "Next MOU",
+    "s": "2028 talks",
+    "x": 332,
+    "y": 550,
+    "sc": "mou_s01"
+   }
+  ],
+  "edges": [
+   {
+    "f": "tax",
+    "t": "cong",
+    "l": "appropriations",
+    "k": "money"
+   },
+   {
+    "f": "cong",
+    "t": "fmf",
+    "l": "funds",
+    "k": "money"
+   },
+   {
+    "f": "fmf",
+    "t": "firms",
+    "l": "must buy American",
+    "k": "money"
+   },
+   {
+    "f": "firms",
+    "t": "isr",
+    "l": "delivered",
+    "k": "authority"
+   },
+   {
+    "f": "isr",
+    "t": "exp",
+    "l": "\"battle-proven\" exports",
+    "k": "money"
+   },
+   {
+    "f": "isr",
+    "t": "mou",
+    "l": "renewal sought",
+    "k": "loop"
+   },
+   {
+    "f": "mou",
+    "t": "cong",
+    "l": "next decade",
+    "k": "loop"
+   }
+  ],
+  "steps": [
+   {
+    "t": "Appropriation",
+    "x": "Congress funds the 10-year MOU — $3.8B a year, the largest US military-aid pledge in history.",
+    "show": [
+     "tax",
+     "cong"
+    ],
+    "hl": [
+     "cong"
+    ],
+    "sc": "s19f",
+    "ed": []
+   },
+   {
+    "t": "The channel",
+    "x": "Foreign Military Financing routes it through the State Department and Pentagon.",
+    "show": [
+     "tax",
+     "cong",
+     "fmf"
+    ],
+    "hl": [
+     "fmf"
+    ],
+    "sc": "iaa_s02",
+    "ed": []
+   },
+   {
+    "t": "Most of it stays home",
+    "x": "Under buy-American terms, the money pays US contractors — 80%+ of post-October 7 aid went to five firms.",
+    "show": [
+     "tax",
+     "cong",
+     "fmf",
+     "firms"
+    ],
+    "hl": [
+     "firms"
+    ],
+    "sc": "iaa_s13",
+    "ed": []
+   },
+   {
+    "t": "Delivered",
+    "x": "Weapons go to Israel's military; Israel's own exports hit a record $14.8B in 2024.",
+    "show": [
+     "tax",
+     "cong",
+     "fmf",
+     "firms",
+     "isr",
+     "exp"
+    ],
+    "hl": [
+     "isr",
+     "exp"
+    ],
+    "sc": "exp_s01",
+    "ed": []
+   },
+   {
+    "t": "Renewal",
+    "x": "Talks on the next MOU began in 2026. Since 1951 the aid has never been \"freed\" — it renews.",
+    "show": [
+     "tax",
+     "cong",
+     "fmf",
+     "firms",
+     "isr",
+     "exp",
+     "mou"
+    ],
+    "hl": [
+     "mou"
+    ],
+    "sc": "mou_s01",
+    "ed": []
+   }
+  ]
+ },
+ "phone_profile": {
+  "kind": "flow",
+  "title": "Phone to Profile",
+  "sub": "How data about anyone becomes an enforcement file — without a warrant.",
+  "H": 660,
+  "nodes": [
+   {
+    "id": "phone",
+    "l": "Your phone",
+    "s": "location, apps, contacts",
+    "x": 200,
+    "y": 50,
+    "sc": "sur_s01",
+    "k": "origin"
+   },
+   {
+    "id": "sdk",
+    "l": "Apps & ad code",
+    "s": "collect location",
+    "x": 68,
+    "y": 150,
+    "sc": "sur_s02"
+   },
+   {
+    "id": "tower",
+    "l": "Fake cell towers",
+    "s": "every phone in range",
+    "x": 332,
+    "y": 150,
+    "sc": "sr_s01"
+   },
+   {
+    "id": "brokers",
+    "l": "Data brokers",
+    "s": "Venntel, Babel Street",
+    "x": 68,
+    "y": 260,
+    "sc": "sur_s04"
+   },
+   {
+    "id": "celle",
+    "l": "Cellebrite",
+    "s": "unlocks seized phones (Israeli)",
+    "x": 332,
+    "y": 260,
+    "sc": "isr_s02"
+   },
+   {
+    "id": "agency",
+    "l": "Federal agencies",
+    "s": "buy data, no warrant",
+    "x": 200,
+    "y": 360,
+    "sc": "sur_s04"
+   },
+   {
+    "id": "tax",
+    "l": "Tax & Social Security data",
+    "s": "silos removed",
+    "x": 332,
+    "y": 450,
+    "sc": "doge_s02"
+   },
+   {
+    "id": "pal",
+    "l": "Palantir",
+    "s": "fuses it into a profile",
+    "x": 200,
+    "y": 470,
+    "sc": "pal_s01"
+   },
+   {
+    "id": "act",
+    "l": "Enforcement",
+    "s": "ICE action",
+    "x": 200,
+    "y": 580,
+    "sc": "imm_s02"
+   }
+  ],
+  "edges": [
+   {
+    "f": "phone",
+    "t": "sdk",
+    "l": "location pings",
+    "k": "tie"
+   },
+   {
+    "f": "phone",
+    "t": "tower",
+    "l": "intercepted",
+    "k": "tie"
+   },
+   {
+    "f": "sdk",
+    "t": "brokers",
+    "l": "sold",
+    "k": "money"
+   },
+   {
+    "f": "brokers",
+    "t": "agency",
+    "l": "purchased",
+    "k": "money"
+   },
+   {
+    "f": "tower",
+    "t": "agency",
+    "l": "operated by",
+    "k": "authority"
+   },
+   {
+    "f": "celle",
+    "t": "agency",
+    "l": "contracted",
+    "k": "money"
+   },
+   {
+    "f": "agency",
+    "t": "pal",
+    "l": "fed into",
+    "k": "tie"
+   },
+   {
+    "f": "tax",
+    "t": "pal",
+    "l": "shared with ICE",
+    "k": "tie"
+   },
+   {
+    "f": "pal",
+    "t": "act",
+    "l": "targets",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "Collection",
+    "x": "Apps and ad code log your location; fake cell towers capture every phone in range.",
+    "show": [
+     "phone",
+     "sdk",
+     "tower"
+    ],
+    "hl": [
+     "sdk",
+     "tower"
+    ],
+    "sc": "sur_s02",
+    "ed": []
+   },
+   {
+    "t": "The market",
+    "x": "Data brokers sell location histories; ICE's own legal memo says buying them requires no warrant.",
+    "show": [
+     "phone",
+     "sdk",
+     "tower",
+     "brokers",
+     "agency"
+    ],
+    "hl": [
+     "brokers",
+     "agency"
+    ],
+    "sc": "sur_s04",
+    "ed": []
+   },
+   {
+    "t": "Israeli tools",
+    "x": "Cellebrite, an Israeli firm, unlocks seized phones for US agencies.",
+    "show": [
+     "phone",
+     "sdk",
+     "tower",
+     "brokers",
+     "agency",
+     "celle"
+    ],
+    "hl": [
+     "celle"
+    ],
+    "sc": "isr_s02",
+    "ed": []
+   },
+   {
+    "t": "Fusion",
+    "x": "Palantir combines purchased data with government records — including tax data newly shared with ICE.",
+    "show": [
+     "phone",
+     "sdk",
+     "tower",
+     "brokers",
+     "agency",
+     "celle",
+     "tax",
+     "pal"
+    ],
+    "hl": [
+     "tax",
+     "pal"
+    ],
+    "sc": "pal_s01",
+    "ed": []
+   },
+   {
+    "t": "Action",
+    "x": "The profile drives enforcement. Built for immigrants; the same system scales to anyone.",
+    "show": [
+     "phone",
+     "sdk",
+     "tower",
+     "brokers",
+     "agency",
+     "celle",
+     "tax",
+     "pal",
+     "act"
+    ],
+    "hl": [
+     "act"
+    ],
+    "sc": "imm_s02",
+    "ed": []
+   }
+  ]
+ },
+ "ice_israel": {
+  "kind": "network",
+  "title": "The ICE–Israel Pipeline",
+  "sub": "Who supplies US immigration enforcement — and each supplier's distance from the State of Israel.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 70,
+    "k": "israel"
+   },
+   {
+    "id": "mod",
+    "l": "Israel Defense Ministry",
+    "s": "",
+    "x": 332,
+    "y": 160,
+    "sc": "df_s01"
+   },
+   {
+    "id": "pal",
+    "l": "Palantir",
+    "s": "ICE: $18.5M + $30M",
+    "x": 200,
+    "y": 250,
+    "sc": "df_s01"
+   },
+   {
+    "id": "paragon",
+    "l": "Paragon",
+    "s": "Graphite spyware · Israeli-founded",
+    "x": 68,
+    "y": 250,
+    "sc": "imx_s01"
+   },
+   {
+    "id": "celle",
+    "l": "Cellebrite",
+    "s": "phone extraction · Israeli",
+    "x": 68,
+    "y": 350,
+    "sc": "isr_s02"
+   },
+   {
+    "id": "elbit",
+    "l": "Elbit",
+    "s": "border towers · Israeli",
+    "x": 332,
+    "y": 350,
+    "sc": "isr_s03"
+   },
+   {
+    "id": "ice",
+    "l": "ICE / DHS",
+    "s": "",
+    "x": 200,
+    "y": 440,
+    "sc": "imx_s01"
+   },
+   {
+    "id": "miller",
+    "l": "Stephen Miller",
+    "s": "sets 3,000/day quota",
+    "x": 200,
+    "y": 560,
+    "sc": "sm_s03",
+    "k": "center"
+   },
+   {
+    "id": "geo",
+    "l": "GEO / CoreCivic",
+    "s": "detention",
+    "x": 68,
+    "y": 520,
+    "sc": "imx_s01"
+   }
+  ],
+  "edges": [
+   {
+    "f": "pal",
+    "t": "mod",
+    "l": "strategic partnership (2024)",
+    "k": "authority"
+   },
+   {
+    "f": "mod",
+    "t": "israel",
+    "l": "ministry",
+    "k": "authority"
+   },
+   {
+    "f": "elbit",
+    "t": "israel",
+    "l": "supplies Israel's military",
+    "k": "money"
+   },
+   {
+    "f": "celle",
+    "t": "israel",
+    "l": "Israeli company",
+    "k": "tie"
+   },
+   {
+    "f": "paragon",
+    "t": "israel",
+    "l": "Israeli-founded",
+    "k": "tie"
+   },
+   {
+    "f": "ice",
+    "t": "pal",
+    "l": "contracts",
+    "k": "money"
+   },
+   {
+    "f": "ice",
+    "t": "paragon",
+    "l": "$2M, revived 2025",
+    "k": "money"
+   },
+   {
+    "f": "ice",
+    "t": "celle",
+    "l": "~$11M",
+    "k": "money"
+   },
+   {
+    "f": "ice",
+    "t": "elbit",
+    "l": "border towers (CBP)",
+    "k": "money"
+   },
+   {
+    "f": "ice",
+    "t": "geo",
+    "l": "detention",
+    "k": "money"
+   },
+   {
+    "f": "miller",
+    "t": "ice",
+    "l": "quota",
+    "k": "authority"
+   },
+   {
+    "f": "miller",
+    "t": "pal",
+    "l": "$100K–$250K stock",
+    "k": "money"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The policy",
+    "x": "Stephen Miller sets the target: 3,000 arrests a day.",
+    "show": [
+     "miller",
+     "ice"
+    ],
+    "hl": [
+     "ice"
+    ],
+    "sc": "sm_s03",
+    "ed": []
+   },
+   {
+    "t": "The vendors",
+    "x": "ICE buys software, spyware, phone-cracking tools, towers, and detention beds.",
+    "show": [
+     "miller",
+     "ice",
+     "pal",
+     "paragon",
+     "celle",
+     "elbit",
+     "geo"
+    ],
+    "hl": [
+     "pal",
+     "paragon",
+     "celle",
+     "elbit",
+     "geo"
+    ],
+    "sc": "imx_s01",
+    "ed": []
+   },
+   {
+    "t": "The Israel links",
+    "x": "Elbit and Cellebrite are Israeli; Paragon is Israeli-founded; Palantir partners with Israel's Defense Ministry.",
+    "show": [
+     "miller",
+     "ice",
+     "pal",
+     "paragon",
+     "celle",
+     "elbit",
+     "geo",
+     "mod",
+     "israel"
+    ],
+    "hl": [
+     "israel",
+     "mod"
+    ],
+    "sc": "df_s01",
+    "ed": []
+   },
+   {
+    "t": "The stake",
+    "x": "Miller's own disclosure lists up to $250,000 in Palantir stock — the vendor that executes the policy.",
+    "show": [
+     "miller",
+     "ice",
+     "pal",
+     "paragon",
+     "celle",
+     "elbit",
+     "geo",
+     "mod",
+     "israel"
+    ],
+    "hl": [
+     "miller",
+     "pal"
+    ],
+    "sc": "sm_s04",
+    "ed": []
+   }
+  ]
+ },
+ "nypd_israel": {
+  "kind": "flow",
+  "title": "NYPD ↔ Israel",
+  "sub": "A city police force with a post inside Israel's national police — lawful, privately funded, outside the settlements.",
+  "H": 600,
+  "nodes": [
+   {
+    "id": "nypd",
+    "l": "NYPD",
+    "s": "",
+    "x": 200,
+    "y": 50,
+    "sc": "nypd_s00",
+    "k": "origin"
+   },
+   {
+    "id": "ilp",
+    "l": "International Liaison Program",
+    "s": "since 2002",
+    "x": 68,
+    "y": 160,
+    "sc": "df_s03"
+   },
+   {
+    "id": "fdn",
+    "l": "NYC Police Foundation",
+    "s": "private funding",
+    "x": 332,
+    "y": 160,
+    "sc": "nypd_s00"
+   },
+   {
+    "id": "ksaba",
+    "l": "Israel National Police HQ",
+    "s": "Kfar Saba",
+    "x": 68,
+    "y": 270,
+    "sc": "df_s03",
+    "k": "israel"
+   },
+   {
+    "id": "du",
+    "l": "Demographics Unit",
+    "s": "surveilled Muslim communities",
+    "x": 332,
+    "y": 270,
+    "sc": "df_s03"
+   },
+   {
+    "id": "leads",
+    "l": "\"Zero leads\"",
+    "s": "no terrorism case",
+    "x": 332,
+    "y": 380,
+    "sc": "nypd_s03"
+   },
+   {
+    "id": "trips",
+    "l": "Training trips",
+    "s": "ADL, JINSA",
+    "x": 68,
+    "y": 380,
+    "sc": "gx_s02"
+   },
+   {
+    "id": "gap",
+    "l": "Outside the settlements",
+    "s": "no standing to sue",
+    "x": 200,
+    "y": 500,
+    "sc": "nypd_s04"
+   }
+  ],
+  "edges": [
+   {
+    "f": "nypd",
+    "t": "ilp",
+    "l": "created",
+    "k": "authority"
+   },
+   {
+    "f": "fdn",
+    "t": "ilp",
+    "l": "pays",
+    "k": "money"
+   },
+   {
+    "f": "ilp",
+    "t": "ksaba",
+    "l": "detective posted",
+    "k": "tie"
+   },
+   {
+    "f": "nypd",
+    "t": "du",
+    "l": "created",
+    "k": "authority"
+   },
+   {
+    "f": "du",
+    "t": "leads",
+    "l": "result",
+    "k": "tie"
+   },
+   {
+    "f": "trips",
+    "t": "nypd",
+    "l": "officials trained",
+    "k": "tie"
+   },
+   {
+    "f": "ilp",
+    "t": "gap",
+    "l": "exempt",
+    "k": "loop"
+   },
+   {
+    "f": "du",
+    "t": "gap",
+    "l": "reforms test conduct",
+    "k": "loop"
+   }
+  ],
+  "steps": [
+   {
+    "t": "A foreign office",
+    "x": "In 2002 the NYPD created an International Liaison Program; a detective has been posted at Israel National Police HQ ever since.",
+    "show": [
+     "nypd",
+     "ilp",
+     "ksaba"
+    ],
+    "hl": [
+     "ilp",
+     "ksaba"
+    ],
+    "sc": "df_s03",
+    "ed": []
+   },
+   {
+    "t": "Private money",
+    "x": "A private foundation helps pay for it — so the City Council doesn't appropriate it.",
+    "show": [
+     "nypd",
+     "ilp",
+     "ksaba",
+     "fdn"
+    ],
+    "hl": [
+     "fdn"
+    ],
+    "sc": "nypd_s00",
+    "ed": []
+   },
+   {
+    "t": "At home",
+    "x": "The Demographics Unit mapped Muslim communities for years — and produced no terrorism leads, per the NYPD's own testimony.",
+    "show": [
+     "nypd",
+     "ilp",
+     "ksaba",
+     "fdn",
+     "du",
+     "leads"
+    ],
+    "hl": [
+     "du",
+     "leads"
+    ],
+    "sc": "nypd_s03",
+    "ed": []
+   },
+   {
+    "t": "Training",
+    "x": "US police officials travel to Israel on ADL- and JINSA-sponsored trips.",
+    "show": [
+     "nypd",
+     "ilp",
+     "ksaba",
+     "fdn",
+     "du",
+     "leads",
+     "trips"
+    ],
+    "hl": [
+     "trips"
+    ],
+    "sc": "gx_s02",
+    "ed": []
+   },
+   {
+    "t": "Structurally exempt",
+    "x": "Settlements test conduct, the foundation avoids the council, and no one has standing to sue.",
+    "show": [
+     "nypd",
+     "ilp",
+     "ksaba",
+     "fdn",
+     "du",
+     "leads",
+     "trips",
+     "gap"
+    ],
+    "hl": [
+     "gap"
+    ],
+    "sc": "nypd_s04",
+    "ed": []
+   }
+  ]
+ },
+ "fed_1913": {
+  "kind": "flow",
+  "title": "The Fed, 1913 — Structure vs. Myth",
+  "sub": "What the Federal Reserve actually is — and why the \"Zionist Fed\" claim fails the record.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "panic",
+    "l": "Banking panics",
+    "s": "1907: a private banker as backstop",
+    "x": 200,
+    "y": 50,
+    "sc": "s04gb",
+    "k": "origin"
+   },
+   {
+    "id": "act",
+    "l": "Federal Reserve Act",
+    "s": "1913 · Congress + Wilson",
+    "x": 200,
+    "y": 160,
+    "sc": "s04gb"
+   },
+   {
+    "id": "board",
+    "l": "Board of Governors",
+    "s": "public, Senate-confirmed",
+    "x": 68,
+    "y": 270,
+    "sc": "s04gb"
+   },
+   {
+    "id": "banks",
+    "l": "12 regional Reserve Banks",
+    "s": "owned by member banks",
+    "x": 332,
+    "y": 270,
+    "sc": "s04gb"
+   },
+   {
+    "id": "warburg",
+    "l": "Paul Warburg",
+    "s": "designer; documented",
+    "x": 200,
+    "y": 380,
+    "sc": "s04ga"
+   },
+   {
+    "id": "schiff",
+    "l": "Schiff & Felix Warburg",
+    "s": "non-/anti-Zionists",
+    "x": 68,
+    "y": 490,
+    "sc": "s04ga"
+   },
+   {
+    "id": "myth",
+    "l": "\"Zionist Fed\" claim",
+    "s": "traced to 1950s writer",
+    "x": 332,
+    "y": 490,
+    "sc": "s04ga"
+   }
+  ],
+  "edges": [
+   {
+    "f": "panic",
+    "t": "act",
+    "l": "prompted",
+    "k": "authority"
+   },
+   {
+    "f": "act",
+    "t": "board",
+    "l": "created",
+    "k": "authority"
+   },
+   {
+    "f": "act",
+    "t": "banks",
+    "l": "created",
+    "k": "authority"
+   },
+   {
+    "f": "warburg",
+    "t": "act",
+    "l": "helped design",
+    "k": "tie"
+   },
+   {
+    "f": "schiff",
+    "t": "warburg",
+    "l": "family",
+    "k": "tie"
+   },
+   {
+    "f": "myth",
+    "t": "warburg",
+    "l": "no primary source",
+    "k": "blocked"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The problem",
+    "x": "The US suffered a banking panic roughly every 15 years; in 1907 the backstop was one banker's fortune.",
+    "show": [
+     "panic"
+    ],
+    "hl": [
+     "panic"
+    ],
+    "sc": "s04gb",
+    "ed": []
+   },
+   {
+    "t": "The answer",
+    "x": "Congress passed the Federal Reserve Act in 1913: a public, Senate-confirmed Board and 12 regional banks owned by member banks.",
+    "show": [
+     "panic",
+     "act",
+     "board",
+     "banks"
+    ],
+    "hl": [
+     "act",
+     "board",
+     "banks"
+    ],
+    "sc": "s04gb",
+    "ed": []
+   },
+   {
+    "t": "The designer",
+    "x": "Paul Warburg helped design it — documented.",
+    "show": [
+     "panic",
+     "act",
+     "board",
+     "banks",
+     "warburg"
+    ],
+    "hl": [
+     "warburg"
+    ],
+    "sc": "s04ga",
+    "ed": []
+   },
+   {
+    "t": "The myth fails",
+    "x": "His brother Felix and father-in-law Jacob Schiff were prominent non- and anti-Zionists; the \"Zionist Fed\" link has no primary source and traces to a 1950s conspiracy writer.",
+    "show": [
+     "panic",
+     "act",
+     "board",
+     "banks",
+     "warburg",
+     "schiff",
+     "myth"
+    ],
+    "hl": [
+     "schiff",
+     "myth"
+    ],
+    "sc": "s04ga",
+    "ed": []
+   }
+  ]
+ },
+ "net_kushner": {
+  "kind": "network",
+  "title": "Jared Kushner — Network",
+  "sub": "Documented ties, and each node's distance from the State of Israel.",
+  "H": 660,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "bibi",
+    "l": "Netanyahu",
+    "s": "prime minister",
+    "x": 332,
+    "y": 150,
+    "sc": "tf_s03"
+   },
+   {
+    "id": "fidf",
+    "l": "Friends of the IDF",
+    "s": "IDF support charity",
+    "x": 68,
+    "y": 150,
+    "sc": "tf_s09"
+   },
+   {
+    "id": "sett",
+    "l": "Settlement groups",
+    "s": "Beit El, Yitzhar",
+    "x": 68,
+    "y": 260,
+    "sc": "tf_s09"
+   },
+   {
+    "id": "fdn",
+    "l": "Kushner family foundation",
+    "s": "Jared a director 2006–15",
+    "x": 68,
+    "y": 380,
+    "sc": "tf_s09"
+   },
+   {
+    "id": "accords",
+    "l": "Abraham Accords",
+    "s": "2020",
+    "x": 332,
+    "y": 260,
+    "sc": "tf_s03"
+   },
+   {
+    "id": "gaza",
+    "l": "Gaza masterplan",
+    "s": "\"New Gaza,\" 2026",
+    "x": 332,
+    "y": 380,
+    "sc": "tf_s05"
+   },
+   {
+    "id": "jared",
+    "l": "Jared Kushner",
+    "s": "",
+    "x": 200,
+    "y": 470,
+    "sc": "tf_s02",
+    "k": "center"
+   },
+   {
+    "id": "trump",
+    "l": "Donald Trump",
+    "s": "father-in-law",
+    "x": 332,
+    "y": 560,
+    "sc": "tf_s01"
+   },
+   {
+    "id": "aff",
+    "l": "Affinity Partners",
+    "s": "$2B from Saudi PIF",
+    "x": 68,
+    "y": 560,
+    "sc": "tf_s07"
+   },
+   {
+    "id": "harel",
+    "l": "Israeli insurers",
+    "s": "Harel, Menora",
+    "x": 200,
+    "y": 590,
+    "sc": "tf_s09"
+   }
+  ],
+  "edges": [
+   {
+    "f": "bibi",
+    "t": "israel",
+    "l": "prime minister",
+    "k": "authority"
+   },
+   {
+    "f": "fidf",
+    "t": "israel",
+    "l": "supports the IDF",
+    "k": "money"
+   },
+   {
+    "f": "sett",
+    "t": "israel",
+    "l": "in occupied West Bank",
+    "k": "tie"
+   },
+   {
+    "f": "accords",
+    "t": "israel",
+    "l": "normalization",
+    "k": "authority"
+   },
+   {
+    "f": "gaza",
+    "t": "israel",
+    "l": "Dermer in planning",
+    "k": "tie"
+   },
+   {
+    "f": "jared",
+    "t": "bibi",
+    "l": "long family friendship",
+    "k": "tie"
+   },
+   {
+    "f": "fdn",
+    "t": "fidf",
+    "l": "$315K; Jared on FIDF board",
+    "k": "money"
+   },
+   {
+    "f": "fdn",
+    "t": "sett",
+    "l": "$58.5K (2011–13)",
+    "k": "money"
+   },
+   {
+    "f": "jared",
+    "t": "fdn",
+    "l": "director",
+    "k": "authority"
+   },
+   {
+    "f": "jared",
+    "t": "accords",
+    "l": "brokered",
+    "k": "authority"
+   },
+   {
+    "f": "jared",
+    "t": "gaza",
+    "l": "presented at Davos",
+    "k": "authority"
+   },
+   {
+    "f": "trump",
+    "t": "jared",
+    "l": "adviser, envoy",
+    "k": "authority"
+   },
+   {
+    "f": "jared",
+    "t": "aff",
+    "l": "founder",
+    "k": "authority"
+   },
+   {
+    "f": "jared",
+    "t": "harel",
+    "l": "business partners",
+    "k": "money"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The center",
+    "x": "Jared Kushner: real-estate heir, adviser, envoy, investor.",
+    "show": [
+     "jared"
+    ],
+    "hl": [
+     "jared"
+    ],
+    "sc": "tf_s02",
+    "ed": []
+   },
+   {
+    "t": "Family money",
+    "x": "The family foundation, with Jared a director, gave to settlement groups and to Friends of the IDF, on whose board he sat.",
+    "show": [
+     "jared",
+     "fdn",
+     "sett",
+     "fidf",
+     "israel"
+    ],
+    "hl": [
+     "fdn",
+     "sett",
+     "fidf"
+    ],
+    "sc": "tf_s09",
+    "ed": []
+   },
+   {
+    "t": "Statecraft",
+    "x": "He brokered the Abraham Accords and presented the Gaza masterplan; Netanyahu is a longtime family friend.",
+    "show": [
+     "jared",
+     "fdn",
+     "sett",
+     "fidf",
+     "israel",
+     "accords",
+     "gaza",
+     "bibi"
+    ],
+    "hl": [
+     "accords",
+     "gaza",
+     "bibi"
+    ],
+    "sc": "tf_s03",
+    "ed": []
+   },
+   {
+    "t": "Business",
+    "x": "Affinity holds $2B from Saudi Arabia; Israeli insurers were partners in the family company.",
+    "show": [
+     "jared",
+     "fdn",
+     "sett",
+     "fidf",
+     "israel",
+     "accords",
+     "gaza",
+     "bibi",
+     "aff",
+     "harel",
+     "trump"
+    ],
+    "hl": [
+     "aff",
+     "harel",
+     "trump"
+    ],
+    "sc": "tf_s07",
+    "ed": []
+   }
+  ]
+ },
+ "net_miller": {
+  "kind": "network",
+  "title": "Stephen Miller — Network",
+  "sub": "Documented ties, and each node's distance from the State of Israel.",
+  "H": 600,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "mod",
+    "l": "Israel Defense Ministry",
+    "s": "",
+    "x": 200,
+    "y": 160,
+    "sc": "df_s01"
+   },
+   {
+    "id": "pal",
+    "l": "Palantir",
+    "s": "ICE + Israel MoD",
+    "x": 200,
+    "y": 270,
+    "sc": "sm_s04"
+   },
+   {
+    "id": "ice",
+    "l": "ICE",
+    "s": "",
+    "x": 332,
+    "y": 370,
+    "sc": "imx_s01"
+   },
+   {
+    "id": "miller",
+    "l": "Stephen Miller",
+    "s": "deputy chief of staff",
+    "x": 200,
+    "y": 470,
+    "sc": "sm_s01",
+    "k": "center"
+   },
+   {
+    "id": "trump",
+    "l": "Donald Trump",
+    "s": "",
+    "x": 332,
+    "y": 560,
+    "sc": "sm_s03"
+   },
+   {
+    "id": "sessions",
+    "l": "Jeff Sessions",
+    "s": "former boss",
+    "x": 68,
+    "y": 370,
+    "sc": "sm_s01"
+   },
+   {
+    "id": "breit",
+    "l": "Breitbart",
+    "s": "2015–16 emails",
+    "x": 68,
+    "y": 560,
+    "sc": "sm_s02"
+   },
+   {
+    "id": "afl",
+    "l": "America First Legal",
+    "s": "founded 2021",
+    "x": 200,
+    "y": 570,
+    "sc": "sm_s03"
+   }
+  ],
+  "edges": [
+   {
+    "f": "mod",
+    "t": "israel",
+    "l": "ministry",
+    "k": "authority"
+   },
+   {
+    "f": "pal",
+    "t": "mod",
+    "l": "strategic partnership",
+    "k": "authority"
+   },
+   {
+    "f": "ice",
+    "t": "pal",
+    "l": "contracts",
+    "k": "money"
+   },
+   {
+    "f": "miller",
+    "t": "pal",
+    "l": "$100K–$250K stock",
+    "k": "money"
+   },
+   {
+    "f": "miller",
+    "t": "ice",
+    "l": "3,000/day quota",
+    "k": "authority"
+   },
+   {
+    "f": "trump",
+    "t": "miller",
+    "l": "appointed",
+    "k": "authority"
+   },
+   {
+    "f": "sessions",
+    "t": "miller",
+    "l": "aide 2009–16",
+    "k": "tie"
+   },
+   {
+    "f": "miller",
+    "t": "breit",
+    "l": "900+ emails",
+    "k": "tie"
+   },
+   {
+    "f": "miller",
+    "t": "afl",
+    "l": "founder",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The career",
+    "x": "Sessions aide, Breitbart's source, then the White House.",
+    "show": [
+     "miller",
+     "sessions",
+     "breit",
+     "trump"
+    ],
+    "hl": [
+     "sessions",
+     "breit"
+    ],
+    "sc": "sm_s01",
+    "ed": []
+   },
+   {
+    "t": "The power",
+    "x": "He sets ICE's quota and founded America First Legal between terms.",
+    "show": [
+     "miller",
+     "sessions",
+     "breit",
+     "trump",
+     "ice",
+     "afl"
+    ],
+    "hl": [
+     "ice",
+     "afl"
+    ],
+    "sc": "sm_s03",
+    "ed": []
+   },
+   {
+    "t": "Two degrees from Israel",
+    "x": "His stock is in Palantir, which partners with Israel's Defense Ministry and runs ICE's systems.",
+    "show": [
+     "miller",
+     "sessions",
+     "breit",
+     "trump",
+     "ice",
+     "afl",
+     "pal",
+     "mod",
+     "israel"
+    ],
+    "hl": [
+     "pal",
+     "mod",
+     "israel"
+    ],
+    "sc": "sm_s04",
+    "ed": []
+   }
+  ]
+ },
+ "net_shillman": {
+  "kind": "network",
+  "title": "The Shillman / TPUSA Hub",
+  "sub": "One donor behind several pro-Israel voices for young conservatives — and the paths to Israel.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "fidf",
+    "l": "Friends of the IDF",
+    "s": "",
+    "x": 68,
+    "y": 160,
+    "sc": "kv_s02"
+   },
+   {
+    "id": "ifcj",
+    "l": "IFCJ",
+    "s": "$700K contract with TPUSA",
+    "x": 332,
+    "y": 160,
+    "sc": "kv_s03"
+   },
+   {
+    "id": "shill",
+    "l": "Robert Shillman",
+    "s": "tech billionaire",
+    "x": 200,
+    "y": 280,
+    "sc": "kv_s02",
+    "k": "center"
+   },
+   {
+    "id": "tpusa",
+    "l": "Turning Point USA",
+    "s": "",
+    "x": 332,
+    "y": 300,
+    "sc": "kv_s01"
+   },
+   {
+    "id": "horow",
+    "l": "Horowitz Center",
+    "s": "Shillman fellowships",
+    "x": 68,
+    "y": 300,
+    "sc": "kv_s02"
+   },
+   {
+    "id": "shapiro",
+    "l": "Ben Shapiro",
+    "s": "Shillman fellow",
+    "x": 68,
+    "y": 420,
+    "sc": "kv_s07"
+   },
+   {
+    "id": "prager",
+    "l": "PragerU",
+    "s": "sponsored",
+    "x": 200,
+    "y": 420,
+    "sc": "kv_s02"
+   },
+   {
+    "id": "kirk",
+    "l": "Charlie Kirk",
+    "s": "",
+    "x": 332,
+    "y": 430,
+    "sc": "kv_s03"
+   },
+   {
+    "id": "imt",
+    "l": "Im Tirtzu",
+    "s": "2019 Jerusalem event",
+    "x": 332,
+    "y": 560,
+    "sc": "kv_s03"
+   }
+  ],
+  "edges": [
+   {
+    "f": "fidf",
+    "t": "israel",
+    "l": "supports the IDF",
+    "k": "money"
+   },
+   {
+    "f": "ifcj",
+    "t": "israel",
+    "l": "Israeli government asks it to build projects",
+    "k": "tie"
+   },
+   {
+    "f": "shill",
+    "t": "fidf",
+    "l": "board member",
+    "k": "authority"
+   },
+   {
+    "f": "shill",
+    "t": "tpusa",
+    "l": "donor; $2M withdrawn",
+    "k": "money"
+   },
+   {
+    "f": "shill",
+    "t": "horow",
+    "l": "funds fellowships",
+    "k": "money"
+   },
+   {
+    "f": "horow",
+    "t": "shapiro",
+    "l": "fellow",
+    "k": "tie"
+   },
+   {
+    "f": "shill",
+    "t": "prager",
+    "l": "sponsor",
+    "k": "money"
+   },
+   {
+    "f": "ifcj",
+    "t": "tpusa",
+    "l": "$700K",
+    "k": "money"
+   },
+   {
+    "f": "kirk",
+    "t": "tpusa",
+    "l": "founder",
+    "k": "authority"
+   },
+   {
+    "f": "kirk",
+    "t": "imt",
+    "l": "spoke at its event",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The hub",
+    "x": "Robert Shillman funds TPUSA, the Horowitz fellowships that launched Ben Shapiro, and PragerU.",
+    "show": [
+     "shill",
+     "tpusa",
+     "horow",
+     "shapiro",
+     "prager"
+    ],
+    "hl": [
+     "tpusa",
+     "horow",
+     "prager"
+    ],
+    "sc": "kv_s02",
+    "ed": []
+   },
+   {
+    "t": "The Israel ties",
+    "x": "He sits on the board of Friends of the IDF; TPUSA also took $700,000 from the IFCJ.",
+    "show": [
+     "shill",
+     "tpusa",
+     "horow",
+     "shapiro",
+     "prager",
+     "fidf",
+     "ifcj",
+     "israel"
+    ],
+    "hl": [
+     "fidf",
+     "ifcj",
+     "israel"
+    ],
+    "sc": "kv_s03",
+    "ed": []
+   },
+   {
+    "t": "Kirk",
+    "x": "Charlie Kirk spoke at Im Tirtzu's 2019 Jerusalem event; in 2025 Shillman withdrew a $2M pledge as Kirk platformed Israel critics.",
+    "show": [
+     "shill",
+     "tpusa",
+     "horow",
+     "shapiro",
+     "prager",
+     "fidf",
+     "ifcj",
+     "israel",
+     "kirk",
+     "imt"
+    ],
+    "hl": [
+     "kirk",
+     "imt"
+    ],
+    "sc": "kv_s04",
+    "ed": []
+   }
+  ]
+ },
+ "net_ellison": {
+  "kind": "network",
+  "title": "Larry Ellison — Network",
+  "sub": "Platforms, media, and documented paths to the State of Israel.",
+  "H": 600,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "fidf",
+    "l": "Friends of the IDF",
+    "s": "$16.6M gift (2017)",
+    "x": 68,
+    "y": 170,
+    "sc": "ell_s02"
+   },
+   {
+    "id": "bibi",
+    "l": "Netanyahu",
+    "s": "prime minister",
+    "x": 332,
+    "y": 170,
+    "sc": "ell_s02"
+   },
+   {
+    "id": "ellison",
+    "l": "Larry Ellison",
+    "s": "Oracle co-founder",
+    "x": 200,
+    "y": 300,
+    "sc": "ell_s01",
+    "k": "center"
+   },
+   {
+    "id": "oracle",
+    "l": "Oracle",
+    "s": "",
+    "x": 332,
+    "y": 400,
+    "sc": "ell_tt01"
+   },
+   {
+    "id": "tiktok",
+    "l": "TikTok US",
+    "s": "Oracle ~15%; algorithm oversight",
+    "x": 332,
+    "y": 520,
+    "sc": "ell_tt01"
+   },
+   {
+    "id": "para",
+    "l": "Paramount / CBS",
+    "s": "son David's Skydance",
+    "x": 68,
+    "y": 420,
+    "sc": "ell_tt01"
+   }
+  ],
+  "edges": [
+   {
+    "f": "fidf",
+    "t": "israel",
+    "l": "supports the IDF",
+    "k": "money"
+   },
+   {
+    "f": "bibi",
+    "t": "israel",
+    "l": "prime minister",
+    "k": "authority"
+   },
+   {
+    "f": "ellison",
+    "t": "fidf",
+    "l": "largest gift in its history",
+    "k": "money"
+   },
+   {
+    "f": "ellison",
+    "t": "bibi",
+    "l": "hosted on Lanai, 2021",
+    "k": "tie"
+   },
+   {
+    "f": "ellison",
+    "t": "oracle",
+    "l": "co-founder",
+    "k": "authority"
+   },
+   {
+    "f": "oracle",
+    "t": "tiktok",
+    "l": "stake + algorithm",
+    "k": "authority"
+   },
+   {
+    "f": "ellison",
+    "t": "para",
+    "l": "family company",
+    "k": "tie"
+   },
+   {
+    "f": "bibi",
+    "t": "tiktok",
+    "l": "\"most important purchase\"",
+    "k": "loop"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The center",
+    "x": "Larry Ellison — Oracle co-founder.",
+    "show": [
+     "ellison",
+     "oracle"
+    ],
+    "hl": [
+     "oracle"
+    ],
+    "sc": "ell_s01",
+    "ed": []
+   },
+   {
+    "t": "Israel",
+    "x": "The largest gift in Friends of the IDF's history; Netanyahu hosted on his island.",
+    "show": [
+     "ellison",
+     "oracle",
+     "fidf",
+     "bibi",
+     "israel"
+    ],
+    "hl": [
+     "fidf",
+     "bibi"
+    ],
+    "sc": "ell_s02",
+    "ed": []
+   },
+   {
+    "t": "Platforms",
+    "x": "Oracle oversees TikTok's US algorithm; the family owns CBS. Netanyahu called TikTok \"the most important purchase.\" No evidence yet shows the algorithm tilted.",
+    "show": [
+     "ellison",
+     "oracle",
+     "fidf",
+     "bibi",
+     "israel",
+     "tiktok",
+     "para"
+    ],
+    "hl": [
+     "tiktok",
+     "para"
+    ],
+    "sc": "ell_tt01",
+    "ed": []
+   }
+  ]
+ },
+ "net_rubio": {
+  "kind": "network",
+  "title": "Marco Rubio — Network",
+  "sub": "Documented ties, and each node's distance from the State of Israel.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "arms",
+    "l": "~$4B arms, waived review",
+    "s": "Mar 2025 emergency",
+    "x": 332,
+    "y": 160,
+    "sc": "rb_s05"
+   },
+   {
+    "id": "icc",
+    "l": "ICC + UN rapporteur",
+    "s": "sanctioned 2025",
+    "x": 68,
+    "y": 160,
+    "sc": "rb_s05"
+   },
+   {
+    "id": "state",
+    "l": "State Department",
+    "s": "Secretary since Jan 2025",
+    "x": 200,
+    "y": 270,
+    "sc": "rb_s01"
+   },
+   {
+    "id": "rubio",
+    "l": "Marco Rubio",
+    "s": "4 titles",
+    "x": 200,
+    "y": 390,
+    "sc": "rb_s01",
+    "k": "center"
+   },
+   {
+    "id": "donors",
+    "l": "Pro-Israel PACs & donors",
+    "s": "~$1.01M career",
+    "x": 68,
+    "y": 390,
+    "sc": "rb_s03"
+   },
+   {
+    "id": "loomer",
+    "l": "Laura Loomer",
+    "s": "spoke to Rubio, Aug 2025",
+    "x": 332,
+    "y": 390,
+    "sc": "rb_s04"
+   },
+   {
+    "id": "visas",
+    "l": "Gaza medical visas",
+    "s": "halted Aug 16, 2025",
+    "x": 332,
+    "y": 510,
+    "sc": "rb_s04"
+   },
+   {
+    "id": "trump",
+    "l": "Donald Trump",
+    "s": "2016 rival → boss",
+    "x": 68,
+    "y": 520,
+    "sc": "rb_s02"
+   },
+   {
+    "id": "nsc",
+    "l": "National Security Council",
+    "s": "acting adviser",
+    "x": 200,
+    "y": 560,
+    "sc": "rb_s02"
+   }
+  ],
+  "edges": [
+   {
+    "f": "arms",
+    "t": "israel",
+    "l": "delivered to",
+    "k": "money"
+   },
+   {
+    "f": "icc",
+    "t": "israel",
+    "l": "investigated Israeli officials",
+    "k": "tie"
+   },
+   {
+    "f": "state",
+    "t": "arms",
+    "l": "emergency waiver",
+    "k": "authority"
+   },
+   {
+    "f": "state",
+    "t": "icc",
+    "l": "sanctions",
+    "k": "authority"
+   },
+   {
+    "f": "rubio",
+    "t": "state",
+    "l": "Secretary",
+    "k": "authority"
+   },
+   {
+    "f": "donors",
+    "t": "rubio",
+    "l": "~$1.01M",
+    "k": "money"
+   },
+   {
+    "f": "loomer",
+    "t": "rubio",
+    "l": "says she called him",
+    "k": "tie"
+   },
+   {
+    "f": "state",
+    "t": "visas",
+    "l": "halted",
+    "k": "authority"
+   },
+   {
+    "f": "trump",
+    "t": "rubio",
+    "l": "appointed",
+    "k": "authority"
+   },
+   {
+    "f": "rubio",
+    "t": "nsc",
+    "l": "acting adviser",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The man and his titles",
+    "x": "Rubio: Secretary of State, acting national security adviser, and more — appointed by the 2016 rival he called a \"con artist.\"",
+    "show": [
+     "rubio",
+     "state",
+     "trump",
+     "nsc"
+    ],
+    "hl": [
+     "trump",
+     "nsc"
+    ],
+    "sc": "rb_s02",
+    "ed": []
+   },
+   {
+    "t": "The money",
+    "x": "About $1.01 million from pro-Israel PACs and donors over his career.",
+    "show": [
+     "rubio",
+     "state",
+     "trump",
+     "nsc",
+     "donors"
+    ],
+    "hl": [
+     "donors"
+    ],
+    "sc": "rb_s03",
+    "ed": []
+   },
+   {
+    "t": "The Gaza visas",
+    "x": "Loomer says she called him; the next day State halted visas for injured Gazan children.",
+    "show": [
+     "rubio",
+     "state",
+     "trump",
+     "nsc",
+     "donors",
+     "loomer",
+     "visas"
+    ],
+    "hl": [
+     "loomer",
+     "visas"
+    ],
+    "sc": "rb_s04",
+    "ed": []
+   },
+   {
+    "t": "Two standards",
+    "x": "State sanctions those who investigate Israel and waives Congress's review to rush arms to it.",
+    "show": [
+     "rubio",
+     "state",
+     "trump",
+     "nsc",
+     "donors",
+     "loomer",
+     "visas",
+     "icc",
+     "arms",
+     "israel"
+    ],
+    "hl": [
+     "icc",
+     "arms",
+     "israel"
+    ],
+    "sc": "rb_s05",
+    "ed": []
+   }
+  ]
+ },
+ "net_epstein": {
+  "kind": "network",
+  "title": "Jeffrey Epstein — Network",
+  "sub": "The documented money and ties — and each node's distance from the State of Israel. Intelligence claims are marked where the record stops.",
+  "H": 700,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "barak",
+    "l": "Ehud Barak",
+    "s": "former PM & defense minister",
+    "x": 68,
+    "y": 170,
+    "sc": "epx_s08"
+   },
+   {
+    "id": "rmax",
+    "l": "Robert Maxwell",
+    "s": "Israeli state funeral, 1991",
+    "x": 332,
+    "y": 170,
+    "sc": "epx_s07"
+   },
+   {
+    "id": "carbyne",
+    "l": "Carbyne",
+    "s": "Israeli emergency-tech; Barak chair",
+    "x": 68,
+    "y": 300,
+    "sc": "epn_s03"
+   },
+   {
+    "id": "gmax",
+    "l": "Ghislaine Maxwell",
+    "s": "the one conviction",
+    "x": 332,
+    "y": 300,
+    "sc": "epf_s07b"
+   },
+   {
+    "id": "epstein",
+    "l": "Jeffrey Epstein",
+    "s": "",
+    "x": 200,
+    "y": 400,
+    "sc": "epf_s04",
+    "k": "center"
+   },
+   {
+    "id": "wexner",
+    "l": "Les Wexner",
+    "s": "power of attorney, 1991",
+    "x": 68,
+    "y": 500,
+    "sc": "epf_s04"
+   },
+   {
+    "id": "black",
+    "l": "Leon Black",
+    "s": "~$170M in fees",
+    "x": 200,
+    "y": 560,
+    "sc": "epx_s03"
+   },
+   {
+    "id": "valar",
+    "l": "Thiel / Valar",
+    "s": "$40M; estate's largest asset",
+    "x": 332,
+    "y": 500,
+    "sc": "epn_s03"
+   },
+   {
+    "id": "intel",
+    "l": "\"Belonged to intelligence\"",
+    "s": "second-hand, unconfirmed",
+    "x": 332,
+    "y": 620,
+    "sc": "epx_s08"
+   }
+  ],
+  "edges": [
+   {
+    "f": "barak",
+    "t": "israel",
+    "l": "former PM & defense minister",
+    "k": "authority"
+   },
+   {
+    "f": "rmax",
+    "t": "israel",
+    "l": "state funeral, Mount of Olives",
+    "k": "tie"
+   },
+   {
+    "f": "carbyne",
+    "t": "barak",
+    "l": "chaired by",
+    "k": "tie"
+   },
+   {
+    "f": "epstein",
+    "t": "carbyne",
+    "l": "invested via Barak's partnership",
+    "k": "money"
+   },
+   {
+    "f": "epstein",
+    "t": "barak",
+    "l": "business partners; visits after 2008",
+    "k": "tie"
+   },
+   {
+    "f": "gmax",
+    "t": "rmax",
+    "l": "daughter",
+    "k": "tie"
+   },
+   {
+    "f": "gmax",
+    "t": "epstein",
+    "l": "co-conspirator (convicted)",
+    "k": "authority"
+   },
+   {
+    "f": "wexner",
+    "t": "epstein",
+    "l": "$3.1B in stock sales overseen",
+    "k": "money"
+   },
+   {
+    "f": "black",
+    "t": "epstein",
+    "l": "$158M + $12M",
+    "k": "money"
+   },
+   {
+    "f": "epstein",
+    "t": "valar",
+    "l": "$40M invested",
+    "k": "money"
+   },
+   {
+    "f": "intel",
+    "t": "epstein",
+    "l": "no agency link documented",
+    "k": "blocked"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The money",
+    "x": "Epstein had no family fortune. Wexner gave him power of attorney; Leon Black paid him about $170 million; he put $40 million into Thiel's fund.",
+    "show": [
+     "epstein",
+     "wexner",
+     "black",
+     "valar"
+    ],
+    "hl": [
+     "wexner",
+     "black",
+     "valar"
+    ],
+    "sc": "epf_s04",
+    "ed": []
+   },
+   {
+    "t": "The Maxwells",
+    "x": "Ghislaine Maxwell — the one conviction — is the daughter of Robert Maxwell, given an Israeli state funeral in 1991.",
+    "show": [
+     "epstein",
+     "wexner",
+     "black",
+     "valar",
+     "gmax",
+     "rmax",
+     "israel"
+    ],
+    "hl": [
+     "gmax",
+     "rmax"
+    ],
+    "sc": "epx_s07",
+    "ed": []
+   },
+   {
+    "t": "Barak and Carbyne",
+    "x": "Former Israeli PM Ehud Barak did business with Epstein after his conviction; Epstein's money reached Carbyne, the company Barak chaired.",
+    "show": [
+     "epstein",
+     "wexner",
+     "black",
+     "valar",
+     "gmax",
+     "rmax",
+     "israel",
+     "barak",
+     "carbyne"
+    ],
+    "hl": [
+     "barak",
+     "carbyne"
+    ],
+    "sc": "epx_s08",
+    "ed": []
+   },
+   {
+    "t": "Where the record stops",
+    "x": "A claim that Epstein \"belonged to intelligence\" is second-hand and was never confirmed. No agency direction is documented.",
+    "show": [
+     "epstein",
+     "wexner",
+     "black",
+     "valar",
+     "gmax",
+     "rmax",
+     "israel",
+     "barak",
+     "carbyne",
+     "intel"
+    ],
+    "hl": [
+     "intel"
+    ],
+    "sc": "epx_s08",
+    "ed": []
+   }
+  ]
+ },
+ "net_thiel": {
+  "kind": "network",
+  "title": "Peter Thiel — Network",
+  "sub": "Palantir, the funds, the politicians — and each node's distance from the State of Israel.",
+  "H": 680,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "mod",
+    "l": "Israel Defense Ministry",
+    "s": "",
+    "x": 332,
+    "y": 160,
+    "sc": "df_s01"
+   },
+   {
+    "id": "barak",
+    "l": "Ehud Barak",
+    "s": "former PM",
+    "x": 68,
+    "y": 160,
+    "sc": "epx_s08"
+   },
+   {
+    "id": "pal",
+    "l": "Palantir",
+    "s": "co-founded; no Israeli investor found",
+    "x": 332,
+    "y": 280,
+    "sc": "df_s01"
+   },
+   {
+    "id": "carbyne",
+    "l": "Carbyne",
+    "s": "Barak chair",
+    "x": 68,
+    "y": 280,
+    "sc": "epn_s03"
+   },
+   {
+    "id": "thiel",
+    "l": "Peter Thiel",
+    "s": "",
+    "x": 200,
+    "y": 390,
+    "sc": "de_s02",
+    "k": "center"
+   },
+   {
+    "id": "ff",
+    "l": "Founders Fund",
+    "s": "led $15M round, 2018",
+    "x": 68,
+    "y": 400,
+    "sc": "epn_s03"
+   },
+   {
+    "id": "ice",
+    "l": "ICE",
+    "s": "$18.5M + $30M",
+    "x": 332,
+    "y": 400,
+    "sc": "imx_s01"
+   },
+   {
+    "id": "valar",
+    "l": "Valar Ventures",
+    "s": "Epstein: $40M LP",
+    "x": 68,
+    "y": 520,
+    "sc": "epn_s03"
+   },
+   {
+    "id": "vance",
+    "l": "J.D. Vance",
+    "s": "Thiel-backed, then VP",
+    "x": 200,
+    "y": 560,
+    "sc": "de_s02"
+   },
+   {
+    "id": "yarvin",
+    "l": "Curtis Yarvin",
+    "s": "Tlön investment, 2013",
+    "x": 332,
+    "y": 560,
+    "sc": "de_s02"
+   }
+  ],
+  "edges": [
+   {
+    "f": "mod",
+    "t": "israel",
+    "l": "ministry",
+    "k": "authority"
+   },
+   {
+    "f": "barak",
+    "t": "israel",
+    "l": "former PM",
+    "k": "authority"
+   },
+   {
+    "f": "pal",
+    "t": "mod",
+    "l": "strategic partnership, 2024",
+    "k": "authority"
+   },
+   {
+    "f": "thiel",
+    "t": "pal",
+    "l": "co-founder",
+    "k": "authority"
+   },
+   {
+    "f": "pal",
+    "t": "ice",
+    "l": "contracts",
+    "k": "money"
+   },
+   {
+    "f": "carbyne",
+    "t": "barak",
+    "l": "chaired by",
+    "k": "tie"
+   },
+   {
+    "f": "ff",
+    "t": "carbyne",
+    "l": "$15M round",
+    "k": "money"
+   },
+   {
+    "f": "thiel",
+    "t": "ff",
+    "l": "founder",
+    "k": "authority"
+   },
+   {
+    "f": "thiel",
+    "t": "valar",
+    "l": "co-founder",
+    "k": "authority"
+   },
+   {
+    "f": "thiel",
+    "t": "vance",
+    "l": "backed his rise",
+    "k": "money"
+   },
+   {
+    "f": "thiel",
+    "t": "yarvin",
+    "l": "invested in Tlön",
+    "k": "money"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The company",
+    "x": "Thiel co-founded Palantir, which partners with Israel's Defense Ministry and runs ICE's systems. No Israeli investor appears in its ownership — a checked finding.",
+    "show": [
+     "thiel",
+     "pal",
+     "mod",
+     "israel",
+     "ice"
+    ],
+    "hl": [
+     "pal",
+     "mod",
+     "ice"
+    ],
+    "sc": "df_s01",
+    "ed": []
+   },
+   {
+    "t": "The funds",
+    "x": "Valar took $40 million of Epstein's money; Founders Fund led a $15M round into Carbyne, chaired by Ehud Barak.",
+    "show": [
+     "thiel",
+     "pal",
+     "mod",
+     "israel",
+     "ice",
+     "valar",
+     "ff",
+     "carbyne",
+     "barak"
+    ],
+    "hl": [
+     "valar",
+     "ff",
+     "carbyne",
+     "barak"
+    ],
+    "sc": "epn_s03",
+    "ed": []
+   },
+   {
+    "t": "The politics",
+    "x": "Thiel invested in Curtis Yarvin's startup and backed J.D. Vance's rise to the Senate and vice presidency.",
+    "show": [
+     "thiel",
+     "pal",
+     "mod",
+     "israel",
+     "ice",
+     "valar",
+     "ff",
+     "carbyne",
+     "barak",
+     "vance",
+     "yarvin"
+    ],
+    "hl": [
+     "vance",
+     "yarvin"
+    ],
+    "sc": "de_s02",
+    "ed": []
+   }
+  ]
+ },
+ "net_adelson": {
+  "kind": "network",
+  "title": "The Adelsons — Network",
+  "sub": "Over $550 million in political giving, a newspaper in Israel, and the policies they pressed for.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & military",
+    "x": 200,
+    "y": 60,
+    "k": "israel"
+   },
+   {
+    "id": "embassy",
+    "l": "Embassy to Jerusalem",
+    "s": "2018",
+    "x": 68,
+    "y": 170,
+    "sc": "tf_s03"
+   },
+   {
+    "id": "golan",
+    "l": "Golan recognition",
+    "s": "2019",
+    "x": 332,
+    "y": 170,
+    "sc": "tf_s03"
+   },
+   {
+    "id": "hayom",
+    "l": "Israel Hayom",
+    "s": "Israel's most-read paper",
+    "x": 200,
+    "y": 250,
+    "sc": "kv_s09"
+   },
+   {
+    "id": "trump",
+    "l": "Donald Trump",
+    "s": "Medal of Freedom to Miriam, 2018",
+    "x": 68,
+    "y": 330,
+    "sc": "tf_s01"
+   },
+   {
+    "id": "adel",
+    "l": "Sheldon & Miriam Adelson",
+    "s": "~$557M lifetime",
+    "x": 200,
+    "y": 400,
+    "sc": "kv_s09",
+    "k": "center"
+   },
+   {
+    "id": "pac",
+    "l": "Preserve America PAC",
+    "s": "$90M of $105M (2020)",
+    "x": 332,
+    "y": 330,
+    "sc": "kv_s09"
+   },
+   {
+    "id": "rj",
+    "l": "Las Vegas Review-Journal",
+    "s": "family-owned",
+    "x": 332,
+    "y": 500,
+    "sc": "kv_s09"
+   },
+   {
+    "id": "annex",
+    "l": "Annexation condition",
+    "s": "reported; denied",
+    "x": 68,
+    "y": 520,
+    "sc": "kv_s09"
+   }
+  ],
+  "edges": [
+   {
+    "f": "embassy",
+    "t": "israel",
+    "l": "moved",
+    "k": "authority"
+   },
+   {
+    "f": "golan",
+    "t": "israel",
+    "l": "sovereignty recognized",
+    "k": "authority"
+   },
+   {
+    "f": "hayom",
+    "t": "israel",
+    "l": "published in Israel",
+    "k": "tie"
+   },
+   {
+    "f": "trump",
+    "t": "embassy",
+    "l": "ordered",
+    "k": "authority"
+   },
+   {
+    "f": "trump",
+    "t": "golan",
+    "l": "proclaimed",
+    "k": "authority"
+   },
+   {
+    "f": "adel",
+    "t": "pac",
+    "l": "$90M",
+    "k": "money"
+   },
+   {
+    "f": "pac",
+    "t": "trump",
+    "l": "super PAC support",
+    "k": "money"
+   },
+   {
+    "f": "adel",
+    "t": "trump",
+    "l": "$100M+ in 2024",
+    "k": "money"
+   },
+   {
+    "f": "adel",
+    "t": "hayom",
+    "l": "publisher",
+    "k": "authority"
+   },
+   {
+    "f": "adel",
+    "t": "rj",
+    "l": "owner",
+    "k": "authority"
+   },
+   {
+    "f": "annex",
+    "t": "adel",
+    "l": "spokesperson denies",
+    "k": "blocked"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The giving",
+    "x": "About $557 million in lifetime political giving — $90 million of one pro-Trump super PAC's $105 million in 2020, over $100 million in 2024.",
+    "show": [
+     "adel",
+     "pac",
+     "trump"
+    ],
+    "hl": [
+     "pac",
+     "trump"
+    ],
+    "sc": "kv_s09",
+    "ed": []
+   },
+   {
+    "t": "The policies",
+    "x": "They pressed for the embassy move and Golan recognition; both happened in Trump's first term. Miriam received the Medal of Freedom.",
+    "show": [
+     "adel",
+     "pac",
+     "trump",
+     "embassy",
+     "golan",
+     "israel"
+    ],
+    "hl": [
+     "embassy",
+     "golan"
+    ],
+    "sc": "tf_s03",
+    "ed": []
+   },
+   {
+    "t": "The media",
+    "x": "Miriam publishes Israel Hayom, Israel's most-read paper; the family owns the Las Vegas Review-Journal.",
+    "show": [
+     "adel",
+     "pac",
+     "trump",
+     "embassy",
+     "golan",
+     "israel",
+     "hayom",
+     "rj"
+    ],
+    "hl": [
+     "hayom",
+     "rj"
+    ],
+    "sc": "kv_s09",
+    "ed": []
+   },
+   {
+    "t": "The disputed claim",
+    "x": "Reports said support was conditioned on backing West Bank annexation; her spokesperson rejected them. Giving and outcomes are documented; purchase is not.",
+    "show": [
+     "adel",
+     "pac",
+     "trump",
+     "embassy",
+     "golan",
+     "israel",
+     "hayom",
+     "rj",
+     "annex"
+    ],
+    "hl": [
+     "annex"
+    ],
+    "sc": "kv_s09",
+    "ed": []
+   }
+  ]
+ },
+ "christian_zionism": {
+  "kind": "flow",
+  "title": "Christian Zionism — From a Footnote to a Foreign Policy",
+  "sub": "How an annotated Bible became a political constituency.",
+  "H": 660,
+  "nodes": [
+   {
+    "id": "scofield",
+    "l": "Scofield Reference Bible",
+    "s": "1909, Oxford University Press",
+    "x": 200,
+    "y": 50,
+    "sc": "s05",
+    "k": "origin"
+   },
+   {
+    "id": "pulpit",
+    "l": "Dispensationalist churches",
+    "s": "prophecy framing spreads",
+    "x": 200,
+    "y": 160,
+    "sc": "s05"
+   },
+   {
+    "id": "cufi",
+    "l": "CUFI",
+    "s": "founded 2006; 10M+ members",
+    "x": 68,
+    "y": 270,
+    "sc": "bwm_src_s15"
+   },
+   {
+    "id": "ifcj",
+    "l": "IFCJ",
+    "s": "evangelical giving to Israel",
+    "x": 332,
+    "y": 270,
+    "sc": "kv_s03"
+   },
+   {
+    "id": "bibi",
+    "l": "Netanyahu",
+    "s": "speaks at CUFI summits",
+    "x": 68,
+    "y": 390,
+    "sc": "bwm_src_s15"
+   },
+   {
+    "id": "tpusa",
+    "l": "Turning Point USA",
+    "s": "$700K IFCJ contract",
+    "x": 332,
+    "y": 390,
+    "sc": "kv_s03"
+   },
+   {
+    "id": "dc",
+    "l": "Congress & White House",
+    "s": "lobbied independently of AIPAC",
+    "x": 200,
+    "y": 490,
+    "sc": "bwm_src_s15"
+   },
+   {
+    "id": "embassy",
+    "l": "Embassy move, 2018",
+    "s": "",
+    "x": 200,
+    "y": 600,
+    "sc": "tf_s03",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "scofield",
+    "t": "pulpit",
+    "l": "notes read as prophecy",
+    "k": "authority"
+   },
+   {
+    "f": "pulpit",
+    "t": "cufi",
+    "l": "mobilized",
+    "k": "tie"
+   },
+   {
+    "f": "pulpit",
+    "t": "ifcj",
+    "l": "donations",
+    "k": "money"
+   },
+   {
+    "f": "bibi",
+    "t": "cufi",
+    "l": "keynotes",
+    "k": "tie"
+   },
+   {
+    "f": "ifcj",
+    "t": "tpusa",
+    "l": "$700K",
+    "k": "money"
+   },
+   {
+    "f": "cufi",
+    "t": "dc",
+    "l": "lobbying",
+    "k": "authority"
+   },
+   {
+    "f": "tpusa",
+    "t": "dc",
+    "l": "campus pipeline",
+    "k": "tie"
+   },
+   {
+    "f": "dc",
+    "t": "embassy",
+    "l": "delivered",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1909 · The footnote",
+    "x": "Cyrus Scofield's annotated Bible framed a Jewish state as prophecy — a view largely absent from Protestant tradition before it.",
+    "show": [
+     "scofield",
+     "pulpit"
+    ],
+    "hl": [
+     "scofield",
+     "pulpit"
+    ],
+    "sc": "s05",
+    "ed": []
+   },
+   {
+    "t": "The organizations",
+    "x": "CUFI (2006, 10M+ members) mobilizes voters; the IFCJ channels evangelical giving to Israel.",
+    "show": [
+     "scofield",
+     "pulpit",
+     "cufi",
+     "ifcj"
+    ],
+    "hl": [
+     "cufi",
+     "ifcj"
+    ],
+    "sc": "bwm_src_s15",
+    "ed": []
+   },
+   {
+    "t": "The reach",
+    "x": "Netanyahu speaks at CUFI summits; the IFCJ paid TPUSA $700,000 for campus Israel programming.",
+    "show": [
+     "scofield",
+     "pulpit",
+     "cufi",
+     "ifcj",
+     "bibi",
+     "tpusa"
+    ],
+    "hl": [
+     "bibi",
+     "tpusa"
+    ],
+    "sc": "kv_s03",
+    "ed": []
+   },
+   {
+    "t": "The result",
+    "x": "Evangelical pressure, documented in White House statements, helped drive the 2018 embassy move — a constituency that lobbies independently of AIPAC.",
+    "show": [
+     "scofield",
+     "pulpit",
+     "cufi",
+     "ifcj",
+     "bibi",
+     "tpusa",
+     "dc",
+     "embassy"
+    ],
+    "hl": [
+     "dc",
+     "embassy"
+    ],
+    "sc": "bwm_src_s15",
+    "ed": []
+   }
+  ]
+ },
+ "money_1948": {
+  "kind": "flow",
+  "title": "Follow the Money, 1897–1948",
+  "sub": "From blue-box coins to Czech fighters — every stream documented in the Road to 1948, in order.",
+  "H": 850,
+  "nodes": [
+   {
+    "id": "donors",
+    "l": "Small donors",
+    "s": "blue box · £1 shares",
+    "x": 200,
+    "y": 50,
+    "sc": "s04c",
+    "k": "origin"
+   },
+   {
+    "id": "jct",
+    "l": "Colonial Trust bank",
+    "s": "1899 · £2M authorized",
+    "x": 68,
+    "y": 150,
+    "sc": "s04c"
+   },
+   {
+    "id": "jnf",
+    "l": "Jewish National Fund",
+    "s": "1901 · land never resold",
+    "x": 332,
+    "y": 150,
+    "sc": "s04d"
+   },
+   {
+    "id": "apc",
+    "l": "Anglo-Palestine Co.",
+    "s": "1902 · loans in Jaffa",
+    "x": 68,
+    "y": 250,
+    "sc": "s04e"
+   },
+   {
+    "id": "land",
+    "l": "936,000 dunams",
+    "s": "held permanently by 1947",
+    "x": 332,
+    "y": 250,
+    "sc": "s04d"
+   },
+   {
+    "id": "kh",
+    "l": "Keren Hayesod",
+    "s": "1920 · £25M target",
+    "x": 68,
+    "y": 440,
+    "sc": "s04i"
+   },
+   {
+    "id": "usdon",
+    "l": "US donors",
+    "s": "1921 tours · 1929 Agency",
+    "x": 332,
+    "y": 440,
+    "sc": "us_s03"
+   },
+   {
+    "id": "haavara",
+    "l": "Haavara transfer",
+    "s": "1933–39 · ~105M RM",
+    "x": 200,
+    "y": 345,
+    "sc": "hv_s01"
+   },
+   {
+    "id": "sonn",
+    "l": "Sonneborn network",
+    "s": "1945 · arms & aircraft",
+    "x": 68,
+    "y": 560,
+    "sc": "s07d"
+   },
+   {
+    "id": "golda",
+    "l": "Golda's tour",
+    "s": "1948 · ~$50M",
+    "x": 332,
+    "y": 560,
+    "sc": "us_s07"
+   },
+   {
+    "id": "czech",
+    "l": "Czech arms",
+    "s": "1948 · ~$14.5M",
+    "x": 332,
+    "y": 670,
+    "sc": "cz_s01"
+   },
+   {
+    "id": "feinberg",
+    "l": "$100,000 to Truman",
+    "s": "1948 campaign",
+    "x": 58,
+    "y": 670,
+    "sc": "s07f2"
+   },
+   {
+    "id": "state",
+    "l": "State of Israel",
+    "s": "May 1948 · recognized in 11 min",
+    "x": 200,
+    "y": 780,
+    "sc": "s10",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "donors",
+    "t": "jct",
+    "l": "buy shares",
+    "k": "money"
+   },
+   {
+    "f": "donors",
+    "t": "jnf",
+    "l": "blue-box coins",
+    "k": "money"
+   },
+   {
+    "f": "jct",
+    "t": "apc",
+    "l": "Palestine branch",
+    "k": "money"
+   },
+   {
+    "f": "jnf",
+    "t": "land",
+    "l": "buys, never resells",
+    "k": "money"
+   },
+   {
+    "f": "apc",
+    "t": "land",
+    "l": "credit to settlers",
+    "k": "money"
+   },
+   {
+    "f": "kh",
+    "t": "usdon",
+    "l": "fundraising base",
+    "k": "tie"
+   },
+   {
+    "f": "usdon",
+    "t": "haavara",
+    "l": "—",
+    "k": "tie"
+   },
+   {
+    "f": "haavara",
+    "t": "land",
+    "l": "~60,000 people, capital",
+    "k": "money"
+   },
+   {
+    "f": "usdon",
+    "t": "sonn",
+    "l": "wealthy donors",
+    "k": "money"
+   },
+   {
+    "f": "usdon",
+    "t": "golda",
+    "l": "federations borrow & give",
+    "k": "money"
+   },
+   {
+    "f": "golda",
+    "t": "czech",
+    "l": "pays for arms",
+    "k": "money"
+   },
+   {
+    "f": "sonn",
+    "t": "state",
+    "l": "weapons",
+    "k": "money"
+   },
+   {
+    "f": "czech",
+    "t": "state",
+    "l": "fighters, rifles",
+    "k": "money"
+   },
+   {
+    "f": "feinberg",
+    "t": "state",
+    "l": "policy retreat (Judis)",
+    "k": "money"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1899–1901 · A bank and a land fund",
+    "x": "Small donors buy £1 shares in the movement's own bank and drop coins in the blue box for the land fund.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf"
+    ],
+    "hl": [
+     "jct",
+     "jnf"
+    ],
+    "sc": "s04c",
+    "ed": []
+   },
+   {
+    "t": "1902–1947 · Credit and land",
+    "x": "The Jaffa bank lends to settlers; the land fund buys and never resells — 936,000 dunams by 1947.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf",
+     "apc",
+     "land"
+    ],
+    "hl": [
+     "apc",
+     "land"
+    ],
+    "sc": "s04d",
+    "ed": []
+   },
+   {
+    "t": "1920–1929 · Fundraising becomes permanent",
+    "x": "Keren Hayesod and US tours build a donor base; in 1929 non-Zionist American money joins the Jewish Agency.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf",
+     "apc",
+     "land",
+     "kh",
+     "usdon"
+    ],
+    "hl": [
+     "kh",
+     "usdon"
+    ],
+    "sc": "us_s03",
+    "ed": []
+   },
+   {
+    "t": "1933 · Capital out of Germany",
+    "x": "The Haavara agreement turns German Jewish assets into exports to Palestine; ~60,000 people resettle.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf",
+     "apc",
+     "land",
+     "kh",
+     "usdon",
+     "haavara"
+    ],
+    "hl": [
+     "haavara"
+    ],
+    "sc": "hv_s01",
+    "ed": []
+   },
+   {
+    "t": "1945–1948 · War money",
+    "x": "A secret donor network buys arms; Golda's tour raises ~$50M, much of it spent on Czechoslovak weapons.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf",
+     "apc",
+     "land",
+     "kh",
+     "usdon",
+     "haavara",
+     "sonn",
+     "golda",
+     "czech"
+    ],
+    "hl": [
+     "sonn",
+     "golda",
+     "czech"
+    ],
+    "sc": "us_s07",
+    "ed": []
+   },
+   {
+    "t": "1948 · The state, and one policy purchase",
+    "x": "The state is declared and recognized. One documented money-for-policy moment: $100,000 for a broke campaign as Truman backs off pressure.",
+    "show": [
+     "donors",
+     "jct",
+     "jnf",
+     "apc",
+     "land",
+     "kh",
+     "usdon",
+     "haavara",
+     "sonn",
+     "golda",
+     "czech",
+     "feinberg",
+     "state"
+    ],
+    "hl": [
+     "feinberg",
+     "state"
+    ],
+    "sc": "s07f2",
+    "ed": []
+   }
+  ]
+ },
+ "info_war": {
+  "kind": "flow",
+  "title": "The Information War, 1941–1948",
+  "sub": "Two machines — one rival, one mainstream — moving American opinion and Congress.",
+  "H": 680,
+  "nodes": [
+   {
+    "id": "bergson",
+    "l": "Bergson committees",
+    "s": "Irgun delegation · 1941–48",
+    "x": 68,
+    "y": 50,
+    "sc": "bg_s01",
+    "k": "origin"
+   },
+   {
+    "id": "azec",
+    "l": "AZEC",
+    "s": "mainstream machine · 1943",
+    "x": 332,
+    "y": 50,
+    "sc": "s07f",
+    "k": "origin"
+   },
+   {
+    "id": "ads",
+    "l": "Full-page ads & pageant",
+    "s": "1943 · ~40,000 at MSG",
+    "x": 68,
+    "y": 170,
+    "sc": "bg_s01"
+   },
+   {
+    "id": "local",
+    "l": "Local committees",
+    "s": "form letters · telegrams",
+    "x": 345,
+    "y": 170,
+    "sc": "azc_s02"
+   },
+   {
+    "id": "xian",
+    "l": "Christian fronts",
+    "s": "APC · Christian Council",
+    "x": 200,
+    "y": 270,
+    "sc": "us_s04"
+   },
+   {
+    "id": "wrb",
+    "l": "War Refugee Board",
+    "s": "Jan 1944",
+    "x": 68,
+    "y": 380,
+    "sc": "bg_s01"
+   },
+   {
+    "id": "cong",
+    "l": "Congress & platforms",
+    "s": "1944 · both parties",
+    "x": 332,
+    "y": 380,
+    "sc": "us_s05"
+   },
+   {
+    "id": "wh",
+    "l": "White House channel",
+    "s": "Niles · Yom Kippur 1946",
+    "x": 200,
+    "y": 490,
+    "sc": "wh_s01"
+   },
+   {
+    "id": "r181",
+    "l": "Resolution 181",
+    "s": "Nov 1947",
+    "x": 200,
+    "y": 600,
+    "sc": "s09",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "bergson",
+    "t": "ads",
+    "l": "paid media",
+    "k": "tie"
+   },
+   {
+    "f": "azec",
+    "t": "local",
+    "l": "directs",
+    "k": "authority"
+   },
+   {
+    "f": "ads",
+    "t": "wrb",
+    "l": "rescue pressure",
+    "k": "tie"
+   },
+   {
+    "f": "local",
+    "t": "cong",
+    "l": "letters & votes",
+    "k": "tie"
+   },
+   {
+    "f": "xian",
+    "t": "cong",
+    "l": "\"independent\" voices",
+    "k": "tie"
+   },
+   {
+    "f": "cong",
+    "t": "wh",
+    "l": "platform pressure",
+    "k": "authority"
+   },
+   {
+    "f": "wh",
+    "t": "r181",
+    "l": "US lobbies votes",
+    "k": "authority"
+   },
+   {
+    "f": "azec",
+    "t": "xian",
+    "l": "organized by Neumann",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1941–43 · Two machines",
+    "x": "The Irgun's Bergson group runs aggressive public campaigns; the mainstream AZEC builds a disciplined lobby.",
+    "show": [
+     "bergson",
+     "azec"
+    ],
+    "hl": [
+     "bergson",
+     "azec"
+    ],
+    "sc": "bg_s01",
+    "ed": []
+   },
+   {
+    "t": "1943 · Persuasion at scale",
+    "x": "Full-page ads and \"We Will Never Die\" reach tens of thousands; AZEC's local committees flood Washington with letters.",
+    "show": [
+     "bergson",
+     "azec",
+     "ads",
+     "local"
+    ],
+    "hl": [
+     "ads",
+     "local"
+    ],
+    "sc": "azc_s02",
+    "ed": []
+   },
+   {
+    "t": "1932–46 · Christian voices",
+    "x": "Committees of prominent Christians — organized from the Zionist office — present support as independent.",
+    "show": [
+     "bergson",
+     "azec",
+     "ads",
+     "local",
+     "xian"
+    ],
+    "hl": [
+     "xian"
+    ],
+    "sc": "us_s04",
+    "ed": []
+   },
+   {
+    "t": "1944 · Results",
+    "x": "Rescue pressure precedes the War Refugee Board; Palestine enters both party platforms for the first time.",
+    "show": [
+     "bergson",
+     "azec",
+     "ads",
+     "local",
+     "xian",
+     "wrb",
+     "cong"
+    ],
+    "hl": [
+     "wrb",
+     "cong"
+    ],
+    "sc": "us_s05",
+    "ed": []
+   },
+   {
+    "t": "1946–47 · To the White House and the UN",
+    "x": "Access through aide David Niles; the 1946 Yom Kippur statement; US pressure for the partition vote.",
+    "show": [
+     "bergson",
+     "azec",
+     "ads",
+     "local",
+     "xian",
+     "wrb",
+     "cong",
+     "wh",
+     "r181"
+    ],
+    "hl": [
+     "wh",
+     "r181"
+    ],
+    "sc": "s09",
+    "ed": []
+   }
+  ]
+ },
+ "warnings_1947": {
+  "kind": "flow",
+  "title": "Warned, Then Overruled — 1946–1948",
+  "sub": "Every documented official warning against partition, and the political advice that prevailed.",
+  "H": 640,
+  "nodes": [
+   {
+    "id": "aac",
+    "l": "Anglo-American Cttee",
+    "s": "Apr 1946 · neither Jewish nor Arab state",
+    "x": 200,
+    "y": 60,
+    "sc": "aac_s01"
+   },
+   {
+    "id": "state",
+    "l": "State Dept (Henderson)",
+    "s": "Sept 1947 memo",
+    "x": 62,
+    "y": 60,
+    "sc": "s07j"
+   },
+   {
+    "id": "jcs",
+    "l": "Joint Chiefs",
+    "s": "Oct 1947",
+    "x": 58,
+    "y": 205,
+    "sc": "s07j"
+   },
+   {
+    "id": "forr",
+    "l": "Defense Sec. Forrestal",
+    "s": "oil \"lifeblood\"",
+    "x": 342,
+    "y": 205,
+    "sc": "s07j"
+   },
+   {
+    "id": "cia",
+    "l": "CIA ORE-55",
+    "s": "28 Nov 1947",
+    "x": 338,
+    "y": 60,
+    "sc": "ore_s01"
+   },
+   {
+    "id": "truman",
+    "l": "Truman",
+    "s": "the decision",
+    "x": 200,
+    "y": 330,
+    "sc": "tr_s01",
+    "k": "center"
+   },
+   {
+    "id": "clif",
+    "l": "Clifford & Niles",
+    "s": "domestic political case",
+    "x": 68,
+    "y": 450,
+    "sc": "wh_s01"
+   },
+   {
+    "id": "jac",
+    "l": "Eddie Jacobson",
+    "s": "personal channel",
+    "x": 332,
+    "y": 450,
+    "sc": "s08"
+   },
+   {
+    "id": "vote",
+    "l": "Res 181 & recognition",
+    "s": "Nov 1947 · May 1948",
+    "x": 200,
+    "y": 570,
+    "sc": "s09",
+    "k": "israel"
+   }
+  ],
+  "edges": [
+   {
+    "f": "aac",
+    "t": "truman",
+    "l": "one recommendation kept",
+    "k": "tie"
+   },
+   {
+    "f": "state",
+    "t": "truman",
+    "l": "warned — overruled",
+    "k": "loop"
+   },
+   {
+    "f": "jcs",
+    "t": "truman",
+    "l": "warned — overruled",
+    "k": "loop"
+   },
+   {
+    "f": "forr",
+    "t": "truman",
+    "l": "warned — overruled",
+    "k": "loop"
+   },
+   {
+    "f": "cia",
+    "t": "truman",
+    "l": "predicted war — overruled",
+    "k": "loop"
+   },
+   {
+    "f": "clif",
+    "t": "truman",
+    "l": "votes in 1948",
+    "k": "authority"
+   },
+   {
+    "f": "jac",
+    "t": "truman",
+    "l": "meets Weizmann",
+    "k": "tie"
+   },
+   {
+    "f": "truman",
+    "t": "vote",
+    "l": "backs partition; recognizes",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1946 · Both sides heard",
+    "x": "The Anglo-American Committee recommends a state that is neither Jewish nor Arab; Washington keeps only the 100,000 admissions.",
+    "show": [
+     "aac",
+     "truman"
+    ],
+    "hl": [
+     "aac"
+    ],
+    "sc": "aac_s01",
+    "ed": []
+   },
+   {
+    "t": "Sept–Oct 1947 · The government warns",
+    "x": "State's Near East chief, the Joint Chiefs, and the Defense Secretary warn in writing that partition will harm US interests.",
+    "show": [
+     "aac",
+     "state",
+     "jcs",
+     "forr",
+     "truman"
+    ],
+    "hl": [
+     "state",
+     "jcs",
+     "forr"
+    ],
+    "sc": "s07j",
+    "ed": []
+   },
+   {
+    "t": "28 Nov 1947 · The CIA's first big estimate",
+    "x": "ORE-55 predicts war if partition passes and warns US interests will be endangered.",
+    "show": [
+     "aac",
+     "state",
+     "jcs",
+     "forr",
+     "cia",
+     "truman"
+    ],
+    "hl": [
+     "cia"
+    ],
+    "sc": "ore_s01",
+    "ed": []
+   },
+   {
+    "t": "The other side of the scale",
+    "x": "Clifford and Niles argue the domestic political case; a personal channel through Eddie Jacobson reaches Weizmann.",
+    "show": [
+     "aac",
+     "state",
+     "jcs",
+     "forr",
+     "cia",
+     "truman",
+     "clif",
+     "jac"
+    ],
+    "hl": [
+     "clif",
+     "jac"
+    ],
+    "sc": "wh_s01",
+    "ed": []
+   },
+   {
+    "t": "Nov 1947 – May 1948 · The decision",
+    "x": "The US backs partition and recognizes Israel eleven minutes after independence.",
+    "show": [
+     "aac",
+     "state",
+     "jcs",
+     "forr",
+     "cia",
+     "truman",
+     "clif",
+     "jac",
+     "vote"
+    ],
+    "hl": [
+     "truman",
+     "vote"
+    ],
+    "sc": "s09",
+    "ed": []
+   }
+  ]
+ },
+ "net_bengvir": {
+  "kind": "network",
+  "title": "Itamar Ben-Gvir — Network",
+  "sub": "Documented ties, and each node's distance from the State of Israel.",
+  "H": 730,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "government & security",
+    "x": 200,
+    "y": 50,
+    "k": "israel"
+   },
+   {
+    "id": "bibi",
+    "l": "Netanyahu / Likud",
+    "s": "2021 joint-list deal",
+    "x": 62,
+    "y": 160,
+    "sc": "bgv_s02"
+   },
+   {
+    "id": "ministry",
+    "l": "National Security Ministry",
+    "s": "police & prisons, Dec 2022",
+    "x": 338,
+    "y": 160,
+    "sc": "bgv_s03"
+   },
+   {
+    "id": "bgv",
+    "l": "Itamar Ben-Gvir",
+    "s": "Otzma Yehudit leader",
+    "x": 200,
+    "y": 285,
+    "sc": "bgv_s01",
+    "k": "center"
+   },
+   {
+    "id": "kach",
+    "l": "Kach / Kahane movement",
+    "s": "banned; terror-listed 1994",
+    "x": 62,
+    "y": 410,
+    "sc": "bgv_s01"
+   },
+   {
+    "id": "otzma",
+    "l": "Otzma Yehudit",
+    "s": "founded 2012 · 6 seats 2022",
+    "x": 338,
+    "y": 410,
+    "sc": "bgv_s02"
+   },
+   {
+    "id": "lehava",
+    "l": "Lehava",
+    "s": "shared HQ; he defended members",
+    "x": 62,
+    "y": 530,
+    "sc": "bgv_s05"
+   },
+   {
+    "id": "chabad",
+    "l": "Chabad alliance",
+    "s": "2024–26, per Shomrim",
+    "x": 338,
+    "y": 530,
+    "sc": "bgv_s05"
+   },
+   {
+    "id": "sanctions",
+    "l": "5-country sanctions",
+    "s": "UK, Canada, Norway, Australia, NZ · 2025",
+    "x": 338,
+    "y": 285,
+    "sc": "bgv_s03"
+   },
+   {
+    "id": "bid",
+    "l": "2026 defense-minister bid",
+    "s": "election Oct 27, 2026",
+    "x": 200,
+    "y": 650,
+    "sc": "bgv_s10"
+   }
+  ],
+  "edges": [
+   {
+    "f": "bgv",
+    "t": "bibi",
+    "l": "deal that seated him (2021)",
+    "k": "authority"
+   },
+   {
+    "f": "bibi",
+    "t": "israel",
+    "l": "prime minister",
+    "k": "authority"
+   },
+   {
+    "f": "bgv",
+    "t": "ministry",
+    "l": "minister since Dec 2022",
+    "k": "authority"
+   },
+   {
+    "f": "ministry",
+    "t": "israel",
+    "l": "arm of government",
+    "k": "authority"
+   },
+   {
+    "f": "kach",
+    "t": "bgv",
+    "l": "youth coordinator as a teen",
+    "k": "tie"
+   },
+   {
+    "f": "bgv",
+    "t": "otzma",
+    "l": "co-founder & leader",
+    "k": "tie"
+   },
+   {
+    "f": "otzma",
+    "t": "lehava",
+    "l": "shared headquarters",
+    "k": "tie"
+   },
+   {
+    "f": "otzma",
+    "t": "chabad",
+    "l": "political alliance",
+    "k": "tie"
+   },
+   {
+    "f": "sanctions",
+    "t": "bgv",
+    "l": "travel bans & asset measures",
+    "k": "loop"
+   },
+   {
+    "f": "bgv",
+    "t": "bid",
+    "l": "campaign goal",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The roots",
+    "x": "Youth coordinator in Kach — the Kahanist movement banned in Israel and designated a terrorist group after 1994.",
+    "show": [
+     "bgv",
+     "kach"
+    ],
+    "hl": [
+     "kach"
+    ],
+    "sc": "bgv_s01",
+    "ed": []
+   },
+   {
+    "t": "The party and its allies",
+    "x": "Co-founds Otzma Yehudit (2012); shares its headquarters with Lehava; builds a 2024–26 alliance with Chabad networks.",
+    "show": [
+     "bgv",
+     "kach",
+     "otzma",
+     "lehava",
+     "chabad"
+    ],
+    "hl": [
+     "otzma",
+     "lehava",
+     "chabad"
+    ],
+    "sc": "bgv_s05",
+    "ed": []
+   },
+   {
+    "t": "Into power",
+    "x": "A 2021 joint-list deal brokered by Netanyahu seats him; in December 2022 he takes the National Security Ministry — police and prisons.",
+    "show": [
+     "bgv",
+     "kach",
+     "otzma",
+     "lehava",
+     "chabad",
+     "bibi",
+     "ministry",
+     "israel"
+    ],
+    "hl": [
+     "bibi",
+     "ministry"
+    ],
+    "sc": "bgv_s02",
+    "ed": []
+   },
+   {
+    "t": "Sanctioned abroad",
+    "x": "In June 2025 five US allies impose travel bans and sanctions; the US does not.",
+    "show": [
+     "bgv",
+     "kach",
+     "otzma",
+     "lehava",
+     "chabad",
+     "bibi",
+     "ministry",
+     "israel",
+     "sanctions"
+    ],
+    "hl": [
+     "sanctions"
+    ],
+    "sc": "bgv_s03",
+    "ed": []
+   },
+   {
+    "t": "2026 — reaching for Defense",
+    "x": "He campaigns to become defense minister ahead of the October 27 election.",
+    "show": [
+     "israel",
+     "bibi",
+     "ministry",
+     "bgv",
+     "kach",
+     "otzma",
+     "lehava",
+     "chabad",
+     "sanctions",
+     "bid"
+    ],
+    "hl": [
+     "bid"
+    ],
+    "sc": "bgv_s10",
+    "ed": []
+   }
+  ]
+ },
+ "me_layers": {
+  "kind": "flow",
+  "title": "How the Middle East Evolved, 1516–1979",
+  "sub": "The layers that stacked up — empire, democracy, oil, borders, kings, revolts, 1948, coups, revolution.",
+  "H": 760,
+  "nodes": [
+   {
+    "id": "ottoman",
+    "l": "Ottoman order",
+    "s": "1516–1917 · no borders",
+    "x": 200,
+    "y": 50,
+    "sc": "me_s01",
+    "k": "origin"
+   },
+   {
+    "id": "iran1906",
+    "l": "Iran's first democracy",
+    "s": "1906 · crushed by 1911",
+    "x": 62,
+    "y": 160,
+    "sc": "me_s02"
+   },
+   {
+    "id": "oil",
+    "l": "Oil",
+    "s": "1908 Iran · 1927 Iraq · 1938 Saudi",
+    "x": 338,
+    "y": 160,
+    "sc": "me_s03"
+   },
+   {
+    "id": "carve",
+    "l": "The carve-up",
+    "s": "1916–22 · Britain & France",
+    "x": 200,
+    "y": 265,
+    "sc": "me_s04"
+   },
+   {
+    "id": "kings",
+    "l": "Installed rulers",
+    "s": "1921 Cairo · Reza Khan coup",
+    "x": 62,
+    "y": 370,
+    "sc": "me_s05"
+   },
+   {
+    "id": "revolts",
+    "l": "Revolts",
+    "s": "Iraq 1920 · Syria 1925 · Palestine 1936",
+    "x": 338,
+    "y": 370,
+    "sc": "me_s04"
+   },
+   {
+    "id": "y1948",
+    "l": "1948",
+    "s": "refugees both ways · war",
+    "x": 200,
+    "y": 475,
+    "sc": "me_s07",
+    "k": "israel"
+   },
+   {
+    "id": "mosaddegh",
+    "l": "Iran's second democracy",
+    "s": "1951 oil vote → 1953 coup",
+    "x": 62,
+    "y": 580,
+    "sc": "me_s06"
+   },
+   {
+    "id": "coups",
+    "l": "Coup decade",
+    "s": "Syria 49 · Egypt 52 · Suez 56 · Iraq 58",
+    "x": 338,
+    "y": 580,
+    "sc": "me_s08"
+   },
+   {
+    "id": "y1979",
+    "l": "1967 → 1979",
+    "s": "occupation · oil weapon · revolution",
+    "x": 200,
+    "y": 690,
+    "sc": "me_s09",
+    "k": "center"
+   }
+  ],
+  "edges": [
+   {
+    "f": "ottoman",
+    "t": "carve",
+    "l": "empire falls",
+    "k": "authority"
+   },
+   {
+    "f": "iran1906",
+    "t": "oil",
+    "l": "foreign interest",
+    "k": "tie"
+   },
+   {
+    "f": "oil",
+    "t": "carve",
+    "l": "strategic prize",
+    "k": "money"
+   },
+   {
+    "f": "carve",
+    "t": "kings",
+    "l": "new states, chosen rulers",
+    "k": "authority"
+   },
+   {
+    "f": "carve",
+    "t": "revolts",
+    "l": "resistance",
+    "k": "loop"
+   },
+   {
+    "f": "revolts",
+    "t": "y1948",
+    "l": "unresolved Palestine",
+    "k": "tie"
+   },
+   {
+    "f": "y1948",
+    "t": "coups",
+    "l": "discredited regimes",
+    "k": "authority"
+   },
+   {
+    "f": "kings",
+    "t": "mosaddegh",
+    "l": "throne vs. parliament",
+    "k": "tie"
+   },
+   {
+    "f": "mosaddegh",
+    "t": "y1979",
+    "l": "the coup's long tail",
+    "k": "tie"
+   },
+   {
+    "f": "coups",
+    "t": "y1979",
+    "l": "military rule, Cold War sides",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1516–1917 · One empire",
+    "x": "Four centuries of Ottoman rule with no borders between today's states.",
+    "show": [
+     "ottoman"
+    ],
+    "hl": [
+     "ottoman"
+    ],
+    "sc": "me_s01",
+    "ed": []
+   },
+   {
+    "t": "1906–1938 · Democracy and oil",
+    "x": "Iran wins a parliament, loses it to Russian and British pressure; oil makes the region a prize.",
+    "show": [
+     "ottoman",
+     "iran1906",
+     "oil"
+    ],
+    "hl": [
+     "iran1906",
+     "oil"
+    ],
+    "sc": "me_s03",
+    "ed": []
+   },
+   {
+    "t": "1916–1922 · The carve-up",
+    "x": "Britain and France draw the borders and pick the kings; revolts follow.",
+    "show": [
+     "ottoman",
+     "iran1906",
+     "oil",
+     "carve",
+     "kings",
+     "revolts"
+    ],
+    "hl": [
+     "carve",
+     "kings",
+     "revolts"
+    ],
+    "sc": "me_s04",
+    "ed": []
+   },
+   {
+    "t": "1948 · A turning point",
+    "x": "Israel's founding, ~700,000 Palestinian refugees, the departure of Jewish communities from Arab lands, and discredited regimes.",
+    "show": [
+     "ottoman",
+     "iran1906",
+     "oil",
+     "carve",
+     "kings",
+     "revolts",
+     "y1948"
+    ],
+    "hl": [
+     "y1948"
+    ],
+    "sc": "me_s07",
+    "ed": []
+   },
+   {
+    "t": "1949–1958 · Coups, and Iran's second democracy ended",
+    "x": "Syria, Egypt, Suez, Iraq — and the CIA–MI6 coup against Mosaddegh.",
+    "show": [
+     "ottoman",
+     "iran1906",
+     "oil",
+     "carve",
+     "kings",
+     "revolts",
+     "y1948",
+     "mosaddegh",
+     "coups"
+    ],
+    "hl": [
+     "mosaddegh",
+     "coups"
+    ],
+    "sc": "me_s08",
+    "ed": []
+   },
+   {
+    "t": "1967–1979 · The modern region",
+    "x": "Occupation, the oil weapon, and Iran's revolution.",
+    "show": [
+     "ottoman",
+     "iran1906",
+     "oil",
+     "carve",
+     "kings",
+     "revolts",
+     "y1948",
+     "mosaddegh",
+     "coups",
+     "y1979"
+    ],
+    "hl": [
+     "y1979"
+    ],
+    "sc": "me_s09",
+    "ed": []
+   }
+  ]
+ },
+ "syria_line": {
+  "kind": "flow",
+  "title": "The Golan Line, 1949–2026",
+  "sub": "From a declined peace offer to a fortification line inside Syria.",
+  "H": 670,
+  "nodes": [
+   {
+    "id": "y49",
+    "l": "1949 — Za'im's offer",
+    "s": "peace + 300,000 refugees · declined",
+    "x": 200,
+    "y": 50,
+    "sc": "sy_s01",
+    "k": "origin"
+   },
+   {
+    "id": "dmz",
+    "l": "DMZ & water war",
+    "s": "1949–67 · both sides",
+    "x": 62,
+    "y": 160,
+    "sc": "sy_s02"
+   },
+   {
+    "id": "y67",
+    "l": "June 1967",
+    "s": "Golan taken · 80k–130k+ displaced",
+    "x": 338,
+    "y": 160,
+    "sc": "sy_s03"
+   },
+   {
+    "id": "y74",
+    "l": "1974 line",
+    "s": "disengagement · UNDOF",
+    "x": 200,
+    "y": 270,
+    "sc": "sy_s04"
+   },
+   {
+    "id": "y81",
+    "l": "1981 annexation",
+    "s": "Res 497: \"null and void\"",
+    "x": 62,
+    "y": 380,
+    "sc": "sy_s05"
+   },
+   {
+    "id": "y00",
+    "l": "1991–2000",
+    "s": "the near-deal",
+    "x": 340,
+    "y": 380,
+    "sc": "sy_s06"
+   },
+   {
+    "id": "rec",
+    "l": "Recognition",
+    "s": "US 2019 · Colombia 2026",
+    "x": 62,
+    "y": 490,
+    "sc": "sy_s09"
+   },
+   {
+    "id": "y24",
+    "l": "Dec 2024",
+    "s": "buffer zone + Hermon taken",
+    "x": 300,
+    "y": 490,
+    "sc": "sy_s10"
+   },
+   {
+    "id": "y26",
+    "l": "2026",
+    "s": "\"90%\" · 500 strikes · Sufa 53",
+    "x": 200,
+    "y": 600,
+    "sc": "sy_s12",
+    "k": "center"
+   }
+  ],
+  "edges": [
+   {
+    "f": "y49",
+    "t": "dmz",
+    "l": "armistice, DMZs",
+    "k": "authority"
+   },
+   {
+    "f": "dmz",
+    "t": "y67",
+    "l": "escalation",
+    "k": "tie"
+   },
+   {
+    "f": "y67",
+    "t": "y74",
+    "l": "war of 1973",
+    "k": "authority"
+   },
+   {
+    "f": "y74",
+    "t": "y81",
+    "l": "line holds; law extended",
+    "k": "tie"
+   },
+   {
+    "f": "y74",
+    "t": "y00",
+    "l": "talks",
+    "k": "tie"
+   },
+   {
+    "f": "y81",
+    "t": "rec",
+    "l": "proclamations",
+    "k": "authority"
+   },
+   {
+    "f": "y74",
+    "t": "y24",
+    "l": "line crossed",
+    "k": "loop"
+   },
+   {
+    "f": "y24",
+    "t": "y26",
+    "l": "\"temporary\" → fortified",
+    "k": "authority"
+   },
+   {
+    "f": "rec",
+    "t": "y26",
+    "l": "claim hardens",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1949 · An offer, declined",
+    "x": "Syria's new ruler offers peace and to resettle refugees; Ben-Gurion says no; an armistice with demilitarized zones follows.",
+    "show": [
+     "y49"
+    ],
+    "hl": [
+     "y49"
+    ],
+    "sc": "sy_s01",
+    "ed": []
+   },
+   {
+    "t": "1949–1967 · The fault line",
+    "x": "Disputed zones and water; shelling and provocations on both sides; then the Golan is taken and its people displaced.",
+    "show": [
+     "y49",
+     "dmz",
+     "y67"
+    ],
+    "hl": [
+     "dmz",
+     "y67"
+    ],
+    "sc": "sy_s03",
+    "ed": []
+   },
+   {
+    "t": "1974 · Kissinger's line",
+    "x": "A disengagement agreement and a UN force — quiet for fifty years.",
+    "show": [
+     "y49",
+     "dmz",
+     "y67",
+     "y74"
+    ],
+    "hl": [
+     "y74"
+    ],
+    "sc": "sy_s04",
+    "ed": []
+   },
+   {
+    "t": "1981–2000 · Annexation, then almost peace",
+    "x": "Israel extends its law; the Security Council rejects it; the 1990s talks come within a shoreline of a deal.",
+    "show": [
+     "y49",
+     "dmz",
+     "y67",
+     "y74",
+     "y81",
+     "y00"
+    ],
+    "hl": [
+     "y81",
+     "y00"
+    ],
+    "sc": "sy_s06",
+    "ed": []
+   },
+   {
+    "t": "2019–2024 · Recognition, then the line crossed",
+    "x": "The US recognizes the annexation; Assad falls and Israel crosses the 1974 line.",
+    "show": [
+     "y49",
+     "dmz",
+     "y67",
+     "y74",
+     "y81",
+     "y00",
+     "rec",
+     "y24"
+    ],
+    "hl": [
+     "rec",
+     "y24"
+    ],
+    "sc": "sy_s10",
+    "ed": []
+   },
+   {
+    "t": "2026 · Now",
+    "x": "Talks \"90%\" done by Syria's account; 500 strikes; the Sufa 53 line dug inside Syria.",
+    "show": [
+     "y49",
+     "dmz",
+     "y67",
+     "y74",
+     "y81",
+     "y00",
+     "rec",
+     "y24",
+     "y26"
+    ],
+    "hl": [
+     "y26"
+    ],
+    "sc": "sy_s12",
+    "ed": []
+   }
+  ]
+ },
+ "turkey_arc": {
+  "kind": "flow",
+  "title": "Turkey and Israel — From Ally to Rival",
+  "sub": "Four centuries of Ottoman rule, a quiet alliance, a raid, and a rivalry — with the oil that never stopped.",
+  "H": 670,
+  "nodes": [
+   {
+    "id": "otto",
+    "l": "Ottoman rule",
+    "s": "1516–1917 · the Sultan's \"no\"",
+    "x": 200,
+    "y": 50,
+    "sc": "tk_s02",
+    "k": "origin"
+   },
+   {
+    "id": "lausanne",
+    "l": "1923 Lausanne",
+    "s": "Turkey gives up Arab provinces",
+    "x": 62,
+    "y": 160,
+    "sc": "tk_s01"
+   },
+   {
+    "id": "allies",
+    "l": "Allies 1949–2009",
+    "s": "recognition · Trident · 1996 pacts",
+    "x": 338,
+    "y": 160,
+    "sc": "tk_s03"
+   },
+   {
+    "id": "marmara",
+    "l": "2010 Mavi Marmara",
+    "s": "9 killed (+1 later)",
+    "x": 200,
+    "y": 270,
+    "sc": "tk_s04"
+   },
+   {
+    "id": "cycle",
+    "l": "Repair & rupture",
+    "s": "2013 · 2016 · 2018 · 2022",
+    "x": 62,
+    "y": 380,
+    "sc": "tk_s05"
+   },
+   {
+    "id": "oct7",
+    "l": "After Oct 7",
+    "s": "Hamas hosted · \"severed\"",
+    "x": 338,
+    "y": 380,
+    "sc": "tk_s06"
+   },
+   {
+    "id": "courts",
+    "l": "Courts",
+    "s": "ICJ case · 37 warrants",
+    "x": 62,
+    "y": 490,
+    "sc": "tk_s08"
+   },
+   {
+    "id": "oil",
+    "l": "The oil kept flowing",
+    "s": "Azerbaijan → Ceyhan → Israel",
+    "x": 338,
+    "y": 490,
+    "sc": "tk_s07"
+   },
+   {
+    "id": "syria",
+    "l": "Rivals over Syria",
+    "s": "2025–26",
+    "x": 200,
+    "y": 600,
+    "sc": "tk_s09",
+    "k": "center"
+   }
+  ],
+  "edges": [
+   {
+    "f": "otto",
+    "t": "lausanne",
+    "l": "empire ends",
+    "k": "authority"
+   },
+   {
+    "f": "otto",
+    "t": "allies",
+    "l": "successor state recognizes Israel",
+    "k": "tie"
+   },
+   {
+    "f": "allies",
+    "t": "marmara",
+    "l": "alliance breaks",
+    "k": "loop"
+   },
+   {
+    "f": "marmara",
+    "t": "cycle",
+    "l": "apology, deal",
+    "k": "tie"
+   },
+   {
+    "f": "marmara",
+    "t": "oct7",
+    "l": "rupture deepens",
+    "k": "authority"
+   },
+   {
+    "f": "cycle",
+    "t": "courts",
+    "l": "lawfare",
+    "k": "tie"
+   },
+   {
+    "f": "oct7",
+    "t": "oil",
+    "l": "but…",
+    "k": "money"
+   },
+   {
+    "f": "courts",
+    "t": "syria",
+    "l": "rivalry",
+    "k": "tie"
+   },
+   {
+    "f": "oil",
+    "t": "syria",
+    "l": "interests collide",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "1516–1923 · Empire and successor",
+    "x": "Ottoman rule ends; the Sultan had refused Herzl; Turkey renounces the Arab provinces.",
+    "show": [
+     "otto",
+     "lausanne"
+    ],
+    "hl": [
+     "otto",
+     "lausanne"
+    ],
+    "sc": "tk_s01",
+    "ed": []
+   },
+   {
+    "t": "1949–2009 · Quiet allies",
+    "x": "First Muslim-majority recognition, the Trident pact, the 1996 military agreements.",
+    "show": [
+     "otto",
+     "lausanne",
+     "allies"
+    ],
+    "hl": [
+     "allies"
+    ],
+    "sc": "tk_s03",
+    "ed": []
+   },
+   {
+    "t": "2010 · The break",
+    "x": "The Mavi Marmara raid ends the alliance.",
+    "show": [
+     "otto",
+     "lausanne",
+     "allies",
+     "marmara"
+    ],
+    "hl": [
+     "marmara"
+    ],
+    "sc": "tk_s04",
+    "ed": []
+   },
+   {
+    "t": "2013–2024 · Repair, rupture, \"severed\"",
+    "x": "Apology and compensation, expulsions, a 2022 thaw — then October 7 and a declared break.",
+    "show": [
+     "otto",
+     "lausanne",
+     "allies",
+     "marmara",
+     "cycle",
+     "oct7"
+    ],
+    "hl": [
+     "cycle",
+     "oct7"
+    ],
+    "sc": "tk_s06",
+    "ed": []
+   },
+   {
+    "t": "2024–2026 · Courts, oil, and Syria",
+    "x": "Genocide warrants — while Azerbaijani oil keeps crossing Turkey — and a rivalry over Syria.",
+    "show": [
+     "otto",
+     "lausanne",
+     "allies",
+     "marmara",
+     "cycle",
+     "oct7",
+     "courts",
+     "oil",
+     "syria"
+    ],
+    "hl": [
+     "courts",
+     "oil",
+     "syria"
+    ],
+    "sc": "tk_s09",
+    "ed": []
+   }
+  ]
+ },
+ "proxy_frame": {
+  "kind": "network",
+  "title": "The 'Proxy' Frame — Same Protocol, Different Origins",
+  "sub": "Iran backs all three. Each was born somewhere else — and Israel's own actions sit at the root of two.",
+  "H": 500,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "",
+    "x": 62,
+    "y": 50,
+    "k": "israel"
+   },
+   {
+    "id": "o82",
+    "l": "1982 invasion of Lebanon",
+    "s": "and 18-year occupation",
+    "x": 62,
+    "y": 170,
+    "sc": "s14"
+   },
+   {
+    "id": "o87",
+    "l": "1987 — 20 years of occupation",
+    "s": "first intifada",
+    "x": 200,
+    "y": 170,
+    "sc": "s15"
+   },
+   {
+    "id": "o90",
+    "l": "1990s Zaydi revival",
+    "s": "Saada, northern Yemen",
+    "x": 338,
+    "y": 170,
+    "sc": "ye_s02"
+   },
+   {
+    "id": "hez",
+    "l": "Hezbollah",
+    "s": "formed 1982–85",
+    "x": 62,
+    "y": 300,
+    "sc": "s14"
+   },
+   {
+    "id": "hamas",
+    "l": "Hamas",
+    "s": "formed Dec 1987",
+    "x": 200,
+    "y": 300,
+    "sc": "s15"
+   },
+   {
+    "id": "houthi",
+    "l": "Houthis (Ansar Allah)",
+    "s": "took Sanaa 2014",
+    "x": 338,
+    "y": 300,
+    "sc": "ye_s02",
+    "k": "center"
+   },
+   {
+    "id": "iran",
+    "l": "Iran",
+    "s": "money · arms · training",
+    "x": 200,
+    "y": 430,
+    "sc": "ye_s07"
+   },
+   {
+    "id": "saudi",
+    "l": "Saudi-led war",
+    "s": "2015–22 · ~377,000 dead",
+    "x": 62,
+    "y": 430,
+    "sc": "ye_s03"
+   },
+   {
+    "id": "front",
+    "l": "2023–26 front with Israel",
+    "s": "Gaza pauses; joined Iran war",
+    "x": 338,
+    "y": 430,
+    "sc": "ye_s06"
+   }
+  ],
+  "edges": [
+   {
+    "f": "israel",
+    "t": "o82",
+    "l": "invasion & occupation",
+    "k": "authority"
+   },
+   {
+    "f": "israel",
+    "t": "o87",
+    "l": "occupation since 1967",
+    "k": "authority"
+   },
+   {
+    "f": "o82",
+    "t": "hez",
+    "l": "born from",
+    "k": "tie"
+   },
+   {
+    "f": "o87",
+    "t": "hamas",
+    "l": "born from",
+    "k": "tie"
+   },
+   {
+    "f": "o90",
+    "t": "houthi",
+    "l": "born from",
+    "k": "tie"
+   },
+   {
+    "f": "iran",
+    "t": "hez",
+    "l": "arms, funding",
+    "k": "money"
+   },
+   {
+    "f": "iran",
+    "t": "hamas",
+    "l": "arms, funding",
+    "k": "money"
+   },
+   {
+    "f": "iran",
+    "t": "houthi",
+    "l": "arms, support",
+    "k": "money"
+   },
+   {
+    "f": "saudi",
+    "t": "houthi",
+    "l": "their main war",
+    "k": "loop"
+   },
+   {
+    "f": "houthi",
+    "t": "front",
+    "l": "Oct 2023 →",
+    "k": "authority"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The frame",
+    "x": "Hamas, Hezbollah and the Houthis presented as one Iranian \"octopus.\"",
+    "show": [
+     "iran",
+     "hez",
+     "hamas",
+     "houthi"
+    ],
+    "hl": [
+     "iran"
+    ],
+    "sc": "ye_s07",
+    "ed": []
+   },
+   {
+    "t": "What supports it",
+    "x": "Iran's documented money, arms and training for all three.",
+    "show": [
+     "iran",
+     "hez",
+     "hamas",
+     "houthi"
+    ],
+    "hl": [
+     "hez",
+     "hamas",
+     "houthi"
+    ],
+    "sc": "ye_s07",
+    "ed": []
+   },
+   {
+    "t": "What it leaves out — Lebanon and Palestine",
+    "x": "Hezbollah grew from Israel's 1982 invasion; Hamas from two decades of occupation.",
+    "show": [
+     "israel",
+     "o82",
+     "o87",
+     "iran",
+     "hez",
+     "hamas",
+     "houthi"
+    ],
+    "hl": [
+     "o82",
+     "o87"
+    ],
+    "sc": "s14",
+    "ed": []
+   },
+   {
+    "t": "What it leaves out — Yemen",
+    "x": "The Houthis grew from a Yemeni revival, and their main war was with Saudi Arabia.",
+    "show": [
+     "israel",
+     "o82",
+     "o87",
+     "o90",
+     "iran",
+     "saudi",
+     "hez",
+     "hamas",
+     "houthi"
+    ],
+    "hl": [
+     "o90",
+     "saudi"
+    ],
+    "sc": "ye_s03",
+    "ed": []
+   },
+   {
+    "t": "The Houthi front, 2023–26",
+    "x": "Paused during Gaza ceasefires; joined Iran's war in 2026.",
+    "show": [
+     "israel",
+     "o82",
+     "o87",
+     "o90",
+     "hez",
+     "hamas",
+     "houthi",
+     "iran",
+     "saudi",
+     "front"
+    ],
+    "hl": [
+     "front"
+    ],
+    "sc": "ye_s06",
+    "ed": []
+   }
+  ]
+ },
+ "uae_ledger": {
+  "kind": "network",
+  "title": "The UAE Ledger — Strong Ties, a Weak Promise",
+  "sub": "What the Abraham Accords locked in, and what they only promised.",
+  "H": 650,
+  "nodes": [
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "",
+    "x": 62,
+    "y": 50,
+    "k": "israel"
+   },
+   {
+    "id": "iran",
+    "l": "Iran",
+    "s": "2026: ~550 missiles, 2,200+ drones",
+    "x": 200,
+    "y": 50,
+    "sc": "ae_s08"
+   },
+   {
+    "id": "us",
+    "l": "United States",
+    "s": "$23B arms package",
+    "x": 338,
+    "y": 50,
+    "sc": "ae_s03"
+   },
+   {
+    "id": "uae",
+    "l": "United Arab Emirates",
+    "s": "Abraham Accords, 2020",
+    "x": 200,
+    "y": 170,
+    "sc": "ae_s02",
+    "k": "center"
+   },
+   {
+    "id": "trade",
+    "l": "Trade & flights",
+    "s": "$3.2B+ goods · CEPA 2022",
+    "x": 52,
+    "y": 290,
+    "sc": "ae_s05"
+   },
+   {
+    "id": "arms",
+    "l": "Arms",
+    "s": "F-35 talks stalled · Israeli sales",
+    "x": 348,
+    "y": 290,
+    "sc": "ae_s03"
+   },
+   {
+    "id": "annex",
+    "l": "Annexation paused",
+    "s": "2020 condition · 2025 red line",
+    "x": 200,
+    "y": 480,
+    "sc": "ae_s07"
+   },
+   {
+    "id": "pegasus",
+    "l": "Pegasus",
+    "s": "Mansoor jailed · 2021 leak",
+    "x": 100,
+    "y": 400,
+    "sc": "ae_s04"
+   },
+   {
+    "id": "dome",
+    "l": "Iron Dome on UAE soil",
+    "s": "2026 · first abroad",
+    "x": 300,
+    "y": 400,
+    "sc": "ae_s08"
+   },
+   {
+    "id": "state",
+    "l": "A Palestinian state",
+    "s": "the stated aim — undelivered",
+    "x": 200,
+    "y": 590,
+    "sc": "ae_s09"
+   }
+  ],
+  "edges": [
+   {
+    "f": "israel",
+    "t": "uae",
+    "l": "accords, Sept 2020",
+    "k": "authority"
+   },
+   {
+    "f": "us",
+    "t": "uae",
+    "l": "arms package",
+    "k": "money"
+   },
+   {
+    "f": "iran",
+    "t": "uae",
+    "l": "2026 attacks",
+    "k": "loop"
+   },
+   {
+    "f": "uae",
+    "t": "trade",
+    "l": "strong",
+    "k": "money"
+   },
+   {
+    "f": "uae",
+    "t": "arms",
+    "l": "strong",
+    "k": "money"
+   },
+   {
+    "f": "uae",
+    "t": "pegasus",
+    "l": "licensed by Israel",
+    "k": "tie"
+   },
+   {
+    "f": "uae",
+    "t": "dome",
+    "l": "strong (2026)",
+    "k": "authority"
+   },
+   {
+    "f": "uae",
+    "t": "annex",
+    "l": "leverage",
+    "k": "tie"
+   },
+   {
+    "f": "annex",
+    "t": "state",
+    "l": "stated aim — not delivered",
+    "k": "loop"
+   }
+  ],
+  "steps": [
+   {
+    "t": "2020 · The deal",
+    "x": "Israel and the UAE normalize; the US attaches a $23B arms package.",
+    "show": [
+     "israel",
+     "us",
+     "uae"
+    ],
+    "hl": [
+     "uae"
+    ],
+    "sc": "ae_s02",
+    "ed": []
+   },
+   {
+    "t": "Locked in",
+    "x": "Trade and flights, arms in both directions, and Israeli spyware licensed by Israel's Defense Ministry.",
+    "show": [
+     "israel",
+     "us",
+     "uae",
+     "trade",
+     "arms",
+     "pegasus"
+    ],
+    "hl": [
+     "trade",
+     "arms",
+     "pegasus"
+    ],
+    "sc": "ae_s05",
+    "ed": []
+   },
+   {
+    "t": "Leverage used",
+    "x": "Annexation paused in 2020 and pulled from the agenda after the 2025 red line.",
+    "show": [
+     "israel",
+     "us",
+     "uae",
+     "trade",
+     "arms",
+     "pegasus",
+     "annex"
+    ],
+    "hl": [
+     "annex"
+    ],
+    "sc": "ae_s07",
+    "ed": []
+   },
+   {
+    "t": "2026 · Alliance by war",
+    "x": "Iran hits the UAE hardest; Israel puts an Iron Dome on Emirati soil.",
+    "show": [
+     "israel",
+     "us",
+     "uae",
+     "trade",
+     "arms",
+     "pegasus",
+     "annex",
+     "iran",
+     "dome"
+    ],
+    "hl": [
+     "iran",
+     "dome"
+    ],
+    "sc": "ae_s08",
+    "ed": []
+   },
+   {
+    "t": "The weak reference",
+    "x": "A Palestinian state — the stated aim — remains undelivered.",
+    "show": [
+     "israel",
+     "iran",
+     "us",
+     "uae",
+     "trade",
+     "arms",
+     "annex",
+     "pegasus",
+     "dome",
+     "state"
+    ],
+    "hl": [
+     "state"
+    ],
+    "sc": "ae_s09",
+    "ed": []
+   }
+  ]
+ },
+ "oil_for_arms": {
+  "kind": "network",
+  "title": "Oil for Arms — Azerbaijan, Israel, and the Pipeline Across Turkey",
+  "sub": "The documented swap, the route it travels, and who paid.",
+  "H": 500,
+  "nodes": [
+   {
+    "id": "iran",
+    "l": "Iran",
+    "s": "border · 2026 Nakhchivan drones",
+    "x": 62,
+    "y": 50,
+    "sc": "azb_s06"
+   },
+   {
+    "id": "us",
+    "l": "Washington",
+    "s": "Section 907 · AIPAC visit 2024",
+    "x": 338,
+    "y": 50,
+    "sc": "azb_s05"
+   },
+   {
+    "id": "azer",
+    "l": "Azerbaijan",
+    "s": "Aliyev",
+    "x": 62,
+    "y": 180,
+    "sc": "azb_s01",
+    "k": "center"
+   },
+   {
+    "id": "israel",
+    "l": "State of Israel",
+    "s": "",
+    "x": 338,
+    "y": 180,
+    "k": "israel"
+   },
+   {
+    "id": "ceyhan",
+    "l": "BTC pipeline → Ceyhan",
+    "s": "across Turkey",
+    "x": 200,
+    "y": 310,
+    "sc": "azb_s02"
+   },
+   {
+    "id": "karabakh",
+    "l": "Nagorno-Karabakh",
+    "s": "2020 · 2023 · 100,000+ fled",
+    "x": 62,
+    "y": 440,
+    "sc": "azb_s04"
+   },
+   {
+    "id": "turkey",
+    "l": "Turkey's \"severed\" ties",
+    "s": "the boycott's exception",
+    "x": 338,
+    "y": 440,
+    "sc": "tk_s07"
+   }
+  ],
+  "edges": [
+   {
+    "f": "azer",
+    "t": "ceyhan",
+    "l": "40–60% of Israel's crude",
+    "k": "money"
+   },
+   {
+    "f": "ceyhan",
+    "t": "israel",
+    "l": "by tanker",
+    "k": "money"
+   },
+   {
+    "f": "israel",
+    "t": "azer",
+    "l": "~69% of major arms",
+    "k": "authority"
+   },
+   {
+    "f": "azer",
+    "t": "karabakh",
+    "l": "Israeli-supplied drones",
+    "k": "authority"
+   },
+   {
+    "f": "us",
+    "t": "azer",
+    "l": "door via Israel's friends",
+    "k": "tie"
+   },
+   {
+    "f": "iran",
+    "t": "azer",
+    "l": "threats, drones",
+    "k": "loop"
+   },
+   {
+    "f": "ceyhan",
+    "t": "turkey",
+    "l": "passes through",
+    "k": "tie"
+   }
+  ],
+  "steps": [
+   {
+    "t": "The partners",
+    "x": "Iran's northern neighbor and Israel — allies since the 1990s.",
+    "show": [
+     "azer",
+     "israel",
+     "iran"
+    ],
+    "hl": [
+     "azer",
+     "israel"
+    ],
+    "sc": "azb_s01",
+    "ed": []
+   },
+   {
+    "t": "Oil one way",
+    "x": "40–60% of Israel's crude, through Georgia to Turkey's Ceyhan, then by tanker.",
+    "show": [
+     "azer",
+     "israel",
+     "iran",
+     "ceyhan"
+    ],
+    "hl": [
+     "ceyhan"
+    ],
+    "sc": "azb_s02",
+    "ed": []
+   },
+   {
+    "t": "Arms the other",
+    "x": "About two-thirds of Azerbaijan's major weapons from Israel.",
+    "show": [
+     "azer",
+     "israel",
+     "iran",
+     "ceyhan"
+    ],
+    "hl": [
+     "israel"
+    ],
+    "sc": "azb_s03",
+    "ed": []
+   },
+   {
+    "t": "Who paid",
+    "x": "Two Karabakh wars; 100,000+ Armenians fled in a week in 2023.",
+    "show": [
+     "azer",
+     "israel",
+     "iran",
+     "ceyhan",
+     "karabakh"
+    ],
+    "hl": [
+     "karabakh"
+    ],
+    "sc": "azb_s04",
+    "ed": []
+   },
+   {
+    "t": "Washington and Ankara",
+    "x": "A door to the US through Israel's friends — and a pipeline under Turkey's boycott.",
+    "show": [
+     "iran",
+     "us",
+     "azer",
+     "israel",
+     "ceyhan",
+     "karabakh",
+     "turkey"
+    ],
+    "hl": [
+     "us",
+     "turkey"
+    ],
+    "sc": "azb_s07",
+    "ed": []
+   }
+  ]
+ }
+}

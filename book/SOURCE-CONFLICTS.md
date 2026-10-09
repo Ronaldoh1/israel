@@ -82,3 +82,16 @@ The book's writers and auditors were only allowed to use the simulation's own re
 - Faisal's condition: failed under "Sykes–Picot" (pc_s01) vs. at San Remo/Maysalun (research).
 - Hussein–McMahon ambiguity: "not an accident" (expanded text) vs. intent disputed (deep dive).
 - Palin report casualty components add to 253, while the report's total is 251.
+
+## Stage Three planning (rd3), found October 2026
+- s07a3: "by 1934 the Revisionist movement claimed some 600,000 members" vs. Encyclopaedia Judaica: 600,000 signatures on a 1934 petition in 24 countries; ijr_src_s04: Betar 70,000+ by the mid-1930s.
+- pf_s01 immigration (~4,000 / ~30,000 / 60,000+) follows the State Department series (4,075 / 30,327 / 61,854); the JVL/Porath series gives 4,075 / 37,337 / 66,472 for 1931/1933/1935.
+- cia_s01: first Jewish intelligence organization "established in 1929 under the Haganah" (narration) vs. the Shai "established in 1940" (entity).
+- s00b3: Buber and Magnes "both founders of Brit Shalom" vs. Encyclopaedia Judaica: Magnes was never a member.
+- s07a4: 67 Jews killed in Hebron vs. EBSCO: 1 killed on 23 Aug + 64 at the Heichal residence on 24 Aug; HRW dates the 67 deaths to 23 Aug.
+- 1929 totals: 133 Jews and 116 Arabs killed (EBSCO, JVL) vs. 113 Jews (Jerusalem Story).
+- hv_s01: Haavara transfer ~$40M vs. "$100 million" (Center for Israel Education, Arlosoroff timeline).
+- Jaffa cement-barrel seizure: 16 Oct 1935 (Wikipedia) vs. 18 Nov 1935 (Encyclopaedia Judaica).
+- League approval of the Mandate: 24 July 1922 (UN) vs. 12 Aug 1922 (Abu Alia and Khalil).
+- Jewish share in 1922: 11% (census, cen_s01) vs. 13% (Horowitz, Jewish Agency, 1937).
+- Al-Qassam's last fight: Qassam and four men killed (Palquest; US consul: four of his men) vs. two companions (Al Majalla); following of 50–200 vs. a claimed 800.

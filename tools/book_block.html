@@ -267,6 +267,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-bt .t3{color:var(--muted);font-size:.88em;line-height:1.55;max-width:28em;margin:0 auto}
 @media (prefers-reduced-motion:reduce){#bookView *{transition:none !important}}
 @media print{.bk-head,.bk-fab,.bk-acts,.bk-sheet,.bk-shade{display:none !important}}
+/* charts, maps and dashboards (tools/charts.css, inlined by embed_book.py) */
+/*__CHARTS_CSS__*/
 </style>
 <div id="bookView" role="dialog" aria-modal="true" aria-label="The Israel Architecture, read as a book">
   <div class="bk-prog" id="bkProg"></div>
@@ -282,6 +284,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 </div>
 <script type="application/json" id="book_data">__BOOK_JSON__</script>
 <script>
+/* the chart engine (tools/charts.js, inlined by embed_book.py) */
+/*__CHARTS_JS__*/
 (function(){
   var $ = function(id){ return document.getElementById(id); };
   var LIB = JSON.parse($('book_data').textContent), BOOKS = LIB.books, curBook = 0, BOOK = BOOKS[0];
@@ -351,6 +355,31 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     s += '</svg>';
     return '<figure class="bk-fig" data-s="' + esc(sc.id) + '">' + s + '<figcaption class="bk-cap"><b class="fnum"></b> Who was connected: the people, institutions and documents in this section and the documented ties between them. Dashed lines are disputed. Tap a name for the detail and its sources.</figcaption></figure>';
   }
+  /* dashboard panels and maps placed by writers: <figure class="fig-dash" data-ref="ID:TAB:INDEX"> and <figure class="fig-map" data-map="ID"> */
+  function dashRef(ref){
+    var a = String(ref || '').split(':'); if(a.length < 3) return null;
+    var id = a[0].trim(), idx = +a[a.length - 1], tab = a.slice(1, -1).join(':').trim(), d = (window.DASHBOARDS || {})[id];
+    if(!d || !(idx >= 0) || Math.floor(idx) !== idx) return null;
+    var tabs = d.tabs || [{name:'Overview', sections:d.sections || []}], t = tabs.filter(function(x){ return x.name === tab; })[0] || tabs.filter(function(x){ return String(x.name).toLowerCase() === tab.toLowerCase(); })[0];
+    var sec = t && (t.sections || [])[idx]; return sec ? {id:id, d:d, tab:t.name, sec:sec} : null;
+  }
+  function fillCharts(root){
+    var C = window.OTSCharts; if(!C) return;
+    [].forEach.call(root.querySelectorAll('figure.fig-dash'), function(f){
+      var r = dashRef(f.getAttribute('data-ref'));
+      if(!r){ try{ console.warn('Library figure: unknown dashboard panel "' + f.getAttribute('data-ref') + '"'); }catch(e){} f.parentNode.removeChild(f); return; }
+      var t = C.panelTitle(r.sec) || (r.d.title + ': ' + r.tab);
+      f.innerHTML = '<figcaption>' + esc(t) + '</figcaption>' + C.panel(r.sec, {title:false, level:'h4'}) +
+        '<p class="fig-src">From the dashboard <i>' + esc(r.d.title) + '</i>, compiled from this book’s sources.<br><button type="button" class="otsc otsc-open" data-dash="' + esc(r.id) + '">Open the full dashboard</button></p>';
+    });
+    [].forEach.call(root.querySelectorAll('figure.fig-map'), function(f){
+      var id = f.getAttribute('data-map'), m = (window.MAPS || {})[id];
+      if(!m){ try{ console.warn('Library figure: unknown map "' + id + '"'); }catch(e){} f.parentNode.removeChild(f); return; }
+      f.innerHTML = '<figcaption>' + esc(m.title) + '</figcaption>' + C.map(m) +
+        '<p class="fig-src">From the map <i>' + esc(m.title) + '</i>.<br><button type="button" class="otsc otsc-open" data-map="' + esc(id) + '">Open the interactive map</button></p>';
+    });
+    C.wire(root);
+  }
   function render(k, target){
     var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
     var h = '';
@@ -382,6 +411,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
       '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
+    fillCharts(page);
     /* number every figure in reading order; wrap wide tables so they scroll instead of overflowing */
     [].forEach.call(page.querySelectorAll('figure'), function(f, i){
       var cap = f.querySelector('figcaption'); if(!cap) return; var lab = 'Figure ' + (k + 1) + '.' + (i + 1) + '.';

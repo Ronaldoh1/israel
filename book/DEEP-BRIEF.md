@@ -76,3 +76,15 @@ Then reply with:
 - for each file: its word count and number of figures
 - anything you left out, with the reason
 - any place where the sources contradict each other (give both versions)
+
+## Additions (October 2026)
+
+- **Dashboards and maps.** Where a section's brief names a dashboard panel (`DASHBOARD:TAB:INDEX`) or a map id, embed it as described in FIGURES.md:
+  - `<figure class="fig-dash" data-ref="..."></figure>` or `<figure class="fig-map" data-map="..."></figure>`
+  - Discuss its key numbers in the prose, with `[cite:]` keys from the scenes that hold them.
+  - Panel and map contents are listed in `/home/claude/israel/book/plan/visuals.json` and `/home/claude/israel/export/dashboards.json`.
+  - Add a panel the brief doesn't name only when its numbers are central to the section.
+- **Link-only scenes.** Scenes marked `"link_only": true` in the source file are told in full in another chapter of this library. Mention them in one or two sentences at most, with `[scene:ID|label]`.
+- **Scenes drawn from later periods.** Tell only the part that falls inside this chapter's period, and link forward.
+- **Volume I (`ch01`).** Each section carries `in_chapter`. Read the briefs of the other sections in the same thematic chapter, so you don't duplicate them.
+- **The reader's questions.** For every section, list in your reply the 3–5 questions a curious reader would ask, and confirm that the prose answers each one. If the record doesn't answer one, the prose says so.

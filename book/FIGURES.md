@@ -100,5 +100,23 @@ Use at most 4 levels and 8 boxes.
 ```
 (The values above only show the format. Use the source's own numbers.)
 
+## Dashboard panel: one chart, table or set of figures from a simulation dashboard
+```html
+<figure class="fig-dash" data-ref="aid_arms:The Money:1"></figure>
+```
+`data-ref` is `DASHBOARD_ID:TAB NAME:INDEX`. The tab name is spelled exactly as on the dashboard's tab bar, and INDEX counts the panels in that tab from 0 (a side-by-side pair counts as one panel). Leave the figure empty: the reader fills in the caption (the panel's title, or "Dashboard: Tab" for panels without one), the drawing, a "Show the numbers" table, and a source line with a button that opens the full dashboard. A ref that does not exist draws nothing and logs a warning in the browser console, so check the page after adding one.
+
+## Map: a whole flow or network map from the simulation
+```html
+<figure class="fig-map" data-map="state_build"></figure>
+```
+The reader draws every box and documented connection, adds a legend and a "List the connections" list, and a button that opens the interactive, step-by-step version. Network maps show each box's steps from the State of Israel.
+
+### When to use them
+- Use a **dashboard panel** when a section turns on numbers the simulation has already compiled and sourced: an aid total over time, money by recipient, a scorecard. Prefer it to retyping those numbers into `fig-stats`, so the book and the dashboard can never disagree.
+- Use a **map** once per chapter at most, where the reader needs to see the whole mechanism at once (how a state was built, who connects to whom). For a short chain inside one section, a `fig-flow` or `fig-money` written for that section reads better.
+- Do not use either to carry a claim the section's own prose and notes do not make. The figure supports the text; the `[cite:key]` notes in the paragraph around it still carry the sourcing. The dashboards list their own sources, which the button reaches.
+- Panel ids, tab names and map ids are listed in `export/dashboards.json` and `export/maps.json`, and the standalone pages in `modules/` show what each looks like.
+
 ## Network
 Drawn automatically from the section's people, institutions and documented ties. No markup is needed.
