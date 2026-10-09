@@ -68,3 +68,17 @@ The book's writers and auditors were only allowed to use the simulation's own re
 - cia_s14: Maxwell described as a "confirmed" Mossad asset; other scenes treat it as reported/alleged.
 - s19: Bush campaign spending $14.5M vs. about $8.5M.
 - gia_s01 vs gia_src_s02: differing accounts of the Smotrich map.
+
+## Stage Two deep rebuild (rd2), found October 2026
+- Walter Rothschild: a symbolic recipient as "most visible Rothschild" (s06 deep dive) vs. recipient as British Zionist Federation president (another s06 deep dive); s06 says he did not shape the text vs. blg_s01 says he sent the 18 July 1917 draft formula. The book now presents both.
+- Jewish population around 1922: ~60,000 (s07) vs ~80,000 (s06a) vs 83,794 (1922 census, research). Arab population ~600,000 (s07) vs ~700,000 in 1917 (s06).
+- Mandate in force: s07 and blg_s01 "ratified/binding" July 1922 vs. League record of conditional approval 24 July 1922, in force 29 Sept 1923 (disputed by Quigley).
+- Transjordan separation dated March 1921, 1921, June 1922 and 16 Sept 1922 across s06a, s06a2, me_s05 and ijr_src_s04.
+- us_s02 subtitle says both houses passed Lodge–Fish unanimously; the narration documents unanimous consent only in the Senate.
+- s07a2 subtitle "Five men … for 28 years" vs. seven commissioners listed; Mandate length 26 (s07) vs 28 years.
+- Wauchope: "six years in office" vs. 1931–38 dates.
+- Jabotinsky's first name: Ze'ev (s04i) vs. Vladimir (us_s01).
+- House of Lords vote of June 1922 (60–29): blg_s01 dates it 21 June; research disputes 20 vs 21 June.
+- Faisal's condition: failed under "Sykes–Picot" (pc_s01) vs. at San Remo/Maysalun (research).
+- Hussein–McMahon ambiguity: "not an accident" (expanded text) vs. intent disputed (deep dive).
+- Palin report casualty components add to 253, while the report's total is 251.

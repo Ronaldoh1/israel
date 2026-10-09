@@ -6,6 +6,31 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
 
 ---
 
+## 0. Deep rebuild of Volumes I and II (LIBRARY-PROTOCOL.md)
+
+- [x] Protocol locked (`book/LIBRARY-PROTOCOL.md`); figure markup (`book/FIGURES.md`); writer brief (`book/DEEP-BRIEF.md`); coverage check (`tools/book_coverage.py`).
+- [x] **Pilot: Volume II, Stage Two (rd2, 1917–1922)**:
+  - rebuilt from 7,929 to about 30,000 words
+  - 12 → 18 sections, with 6 scenes drawn from other chapters
+  - 10 blind spots researched live (78 sources)
+  - 55 figures
+  - coverage, audit and edit gates passed
+- [ ] **Ron reviews the pilot.** His sign-off sets the standard for everything after it.
+- [ ] Rebuild the rest of Volume II stage by stage: rd0, rd1, rd3, rd4, rd5, rd6. For each stage:
+  - cross-library pull
+  - blind-spot research
+  - write, coverage, audit, edit, render
+- [ ] Rebuild Volume I, *The Baseline* (six chapters), the same way. The Lines chapter stays a field guide.
+- [ ] **Verify every quotation taken from research addenda against the original page.** The research tool reads page summaries, so exact wording was not checked against the originals.
+- [ ] Stage Two gaps not yet researched:
+  - the Treaties of Sèvres (1920) and Lausanne (1923)
+  - the Vatican and the churches on the Mandate (1919–22)
+  - the Syrian General Congress (1919–20) and its claim to Palestine
+- [ ] Bring every research addendum into the simulation as scenes (`book/research/TO-SIMULATION.md`).
+- [ ] **Replace the Grokipedia citations** in the simulation with primary or neutral sources: 7 keys, including `grokipedia_betar`, which Stage Two uses.
+- [ ] The Gaza death tolls in Stage Two's s06 come from a scene with no date. Re-check them live and stamp them "as of".
+- [ ] Ask Ron for Books 0–9 (July–August 2026) and the deliberation file. Use them as leads for the deep rebuild, entering each fact as a sourced research addendum.
+
 ## 1. Write the remaining volumes (III–LXVII)
 
 - [ ] Write each volume with the same process as I and II:
@@ -44,6 +69,11 @@ Each of the 55 claims ends with "Read more" links to the volume that holds the f
 
 ## 4. The Lines You've Heard: content
 
+- [ ] **Ron: scrape and send the social-media talking points.** Ron is collecting the lines himself from Reddit, X, TikTok and Instagram comments and will drop them into this project. For each one, include the exact wording, where it was seen, and roughly how often. When they arrive, Claude will:
+  - match each to an existing Line or flag it as new
+  - check new ones against the simulation
+  - add a scene where one is missing
+  - write the entry and its links
 - [ ] **Social listening.** The chapter's list was built from four sources:
   - the platform's own talking-points audit
   - the simulation's "what you were told" lines

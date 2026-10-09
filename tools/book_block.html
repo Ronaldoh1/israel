@@ -49,6 +49,63 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-fig .ed{stroke:var(--figline);stroke-width:2;fill:none;opacity:.85}
 .bk-fig .ed.contested{stroke-dasharray:7 6}
 .bk-fig .ed.financial{stroke:var(--accent)}
+/* writer figures: flow, money, timeline, compare, tree, stats */
+.bk-page figure[class^="fig-"]{margin:1.9em -10px 1.6em;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:16px 16px 12px;font-size:.84em;line-height:1.45;text-align:left;font-family:'Literata',Georgia,serif}
+.bk-page figure[class^="fig-"] figcaption{font-weight:600;font-size:1.02em;color:var(--ink);margin:0 0 14px;line-height:1.35}
+.bk-page figure[class^="fig-"] figcaption .fnum{color:var(--accent);font-weight:700;margin-right:.35em}
+.bk-page figure[class^="fig-"] p{text-indent:0 !important;text-align:left !important}
+.bk-page figure[class^="fig-"] .fig-src{margin:12px 0 0;font-size:.86em;color:var(--muted);font-style:italic;border-top:1px solid var(--rule);padding-top:8px}
+.bk-page figure[class^="fig-"] b{color:var(--fig);font-weight:700}
+.bk-page figure[class^="fig-"] ol,.bk-page figure[class^="fig-"] ul{list-style:none}
+:where(.bk-page figure[class^="fig-"]) :where(ol,ul){margin:0;padding:0}
+.bk-page figure[class^="fig-"] li{background:none}
+:where(.bk-page figure[class^="fig-"]) li{margin:0;padding:0;border:0}
+.bk-page .fig-src .bk-n{margin-right:.3em}
+/* flow and money: boxes joined by arrows */
+.bk-page .fig-flow ol,.bk-page .fig-money ol{counter-reset:fs}
+.bk-page .fig-flow li,.bk-page .fig-money li{counter-increment:fs;position:relative;border:1.5px solid var(--fig);border-radius:6px;background:var(--paper);padding:10px 12px 10px 46px;margin:0 0 22px}
+.bk-page .fig-flow li:last-child,.bk-page .fig-money li:last-child{margin-bottom:0}
+.bk-page .fig-flow li::before{content:counter(fs);position:absolute;left:10px;top:9px;width:24px;height:24px;border-radius:50%;background:var(--fig);color:var(--paper);font:700 13px/24px system-ui,-apple-system,sans-serif;text-align:center}
+.bk-page .fig-flow li:not(:last-child)::after,.bk-page .fig-money li:not(:last-child)::after{content:'';position:absolute;left:50%;bottom:-19px;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:12px solid var(--figline);transform:translateX(-50%)}
+.bk-page .fig-flow li b,.bk-page .fig-money li b{display:block;margin-bottom:2px}
+.bk-page .fig-money li{padding-left:12px}
+.bk-page .fig-money li::before{display:block;font:600 11px/1.3 system-ui,-apple-system,sans-serif;letter-spacing:.04em;color:var(--accent);margin-bottom:4px}
+.bk-page .fig-money li:nth-child(1)::before{content:'Where it came from'}
+.bk-page .fig-money li:nth-child(2)::before{content:'How it moved'}
+.bk-page .fig-money li:nth-child(3)::before{content:'What multiplied it'}
+.bk-page .fig-money li:nth-child(4)::before{content:'Who gained'}
+.bk-page .fig-money li:nth-child(5)::before{content:'Who bore the cost'}
+.bk-page .fig-money li:nth-child(4){border-color:var(--figline);border-width:2px}
+.bk-page .fig-money li:nth-child(5){border-color:var(--accent);border-width:2px}
+/* timeline */
+.bk-page .fig-time ol{position:relative;padding-left:22px}
+.bk-page .fig-time ol::before{content:'';position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--figline)}
+.bk-page .fig-time li{position:relative;padding:0 0 14px}
+.bk-page .fig-time li:last-child{padding-bottom:0}
+.bk-page .fig-time li::before{content:'';position:absolute;left:-21px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2.5px solid var(--fig)}
+.bk-page .fig-time time{display:inline-block;font:700 12px/1.2 system-ui,-apple-system,sans-serif;color:var(--paper);background:var(--fig);border-radius:3px;padding:3px 7px;margin:0 8px 4px 0;vertical-align:1px}
+/* comparison table */
+.bk-page .fig-compare .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.bk-page .fig-compare table{width:100%;border-collapse:collapse;font-size:.98em;line-height:1.4}
+.bk-page .fig-compare th,.bk-page .fig-compare td{border:0;border-bottom:1px solid var(--rule);padding:8px 8px;vertical-align:top;text-align:left;background:none;color:var(--ink)}
+.bk-page .fig-compare thead th{border-bottom:2px solid var(--fig);color:var(--fig);font-weight:700}
+.bk-page .fig-compare tbody th{font-weight:600;color:var(--muted);width:24%}
+.bk-page .fig-compare td.yes{color:#2E6B3A;font-weight:600}
+.bk-page .fig-compare td.no{color:var(--accent);font-weight:600}
+#bookView[data-theme="night"] .fig-compare td.yes{color:#8FCB98}
+/* power structure tree */
+.bk-page .fig-tree ul ul{margin-left:14px;padding-left:16px;border-left:2px solid var(--figline)}
+.bk-page .fig-tree li{position:relative;margin:8px 0 0}
+.bk-page .fig-tree > ul > li{margin-top:0}
+.bk-page .fig-tree ul ul > li::before{content:'';position:absolute;left:-16px;top:18px;width:14px;height:2px;background:var(--figline)}
+.bk-page .fig-tree li > b{display:inline-block;border:1.5px solid var(--fig);border-radius:5px;background:var(--paper);padding:5px 9px;margin-right:6px}
+.bk-page .fig-tree > ul > li > b{background:var(--fig);color:var(--paper)}
+/* key figures */
+.bk-page .fig-stats dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:0}
+.bk-page .fig-stats dl > div{background:var(--paper);border:1px solid var(--rule);border-top:3px solid var(--fig);border-radius:4px;padding:10px 12px}
+.bk-page .fig-stats dt{font:700 1.7em/1.1 'Literata',Georgia,serif;color:var(--fig);margin:0 0 4px}
+.bk-page .fig-stats dd{margin:0;color:var(--ink)}
+@media (max-width:600px){.bk-page figure[class^="fig-"]{margin-left:-6px;margin-right:-6px;padding:14px 12px 10px}}
 .bk-cap{font-size:.78em;line-height:1.45;color:var(--muted);margin:10px 4px 0;font-style:italic}
 .bk-cap b{font-style:normal;color:var(--ink)}
 .bk-two{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:1.6em -10px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
@@ -241,8 +298,11 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   function sceneIdx(id){ var a = SC(); for(var i = 0; i < a.length; i++) if(a[i].id === id) return i; return -1; }
   function scene(id){ return SC()[sceneIdx(id)]; }
   var CIT = window.CITATIONS || {}, LBL = window.CITE_LABELS || {};
-  var where = {};  // scene id -> [book index, chapter index]
-  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; }); }); });
+  /* sources added by the library's own research (book/research/*.json) */
+  Object.keys(LIB.cites || {}).forEach(function(k){ if(!CIT[k]) CIT[k] = LIB.cites[k][0]; if(!LBL[k]) LBL[k] = LIB.cites[k][1]; });
+  var secOf = {}, where = {};  // scene id -> [book index, chapter index]; a section's own id and its main scene win over scenes it also draws on
+  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; secOf[s.s] = s.s; if(s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
+  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ (s.draws || []).forEach(function(d){ if(!where[d]){ where[d] = [bi, k]; secOf[d] = s.s; } }); }); }); });
   function useBook(bi){ curBook = bi; BOOK = BOOKS[bi]; }
   var prefs = ls('ots_book_prefs') || {theme:'paper', fs:0};
   function applyPrefs(){ view.setAttribute('data-theme', prefs.theme || 'paper'); var base = window.innerWidth <= 600 ? 18 : 19; view.style.setProperty('--fs', (base + (prefs.fs || 0)) + 'px'); ls('ots_book_prefs', prefs); }
@@ -289,7 +349,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
         (L.length === 1 ? '<text x="' + p[0] + '" y="' + (p[1] + 7) + '" text-anchor="middle">' + esc(L[0]) + '</text>'
           : '<text x="' + p[0] + '" y="' + (p[1] - 5) + '" text-anchor="middle">' + esc(L[0]) + '</text><text x="' + p[0] + '" y="' + (p[1] + 20) + '" text-anchor="middle">' + esc(L[1]) + '</text>') + '</g>'; });
     s += '</svg>';
-    return '<figure class="bk-fig" data-s="' + esc(sc.id) + '">' + s + '<figcaption class="bk-cap"><b>Figure ' + fig + '.</b> Who was connected: the people, institutions and documents in this section and the documented ties between them. Dashed lines are disputed. Tap a name for the detail and its sources.</figcaption></figure>';
+    return '<figure class="bk-fig" data-s="' + esc(sc.id) + '">' + s + '<figcaption class="bk-cap"><b class="fnum"></b> Who was connected: the people, institutions and documents in this section and the documented ties between them. Dashed lines are disputed. Tap a name for the detail and its sources.</figcaption></figure>';
   }
   function render(k, target){
     var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
@@ -303,14 +363,14 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     if(db && window.DASHBOARDS && DASHBOARDS[db]) chFig.push('<button type="button" data-dash="' + db + '">Money: ' + esc(DASHBOARDS[db].title) + '</button>');
     if(chFig.length) h += '<div class="bk-acts" style="justify-content:center;margin-top:1.6em">' + chFig.join('') + '</div>';
     c.sections.forEach(function(s, i){
-      var sc = scene(s.s) || {id:s.s};
+      var sc = scene(s.scene || s.s) || {id:s.s};
       var myth = (sc.tld && sc.rec && !/^\s*n\/a/i.test(sc.tld)) ? '<aside class="bk-myth" aria-label="What you were told, and what the record shows"><div class="mh">⚑ THE CLAIM AND THE RECORD</div><div class="body"><div class="mt"><span class="k">What you were told</span><p>' + esc(sc.tld) + '</p></div><div class="mr"><span class="k">What the record shows</span><p>' + prose(sc.rec) + '</p></div></div></aside>' : '';
       h += '<div class="bk-fl" aria-hidden="true">· · ·</div><section class="bk-sec" id="bk-' + esc(s.s) + '" data-s="' + esc(s.s) + '"><h2>' + esc(s.h) + '</h2>' + myth + prose(s.html);
       h += network(sc, (k + 1) + '.' + (i + 1));
-      var acts = [], m2 = (window.MAP_SCENES || {})[s.s], d2 = (window.DASH_SCENES || {})[s.s];
+      var acts = [], m2 = (window.MAP_SCENES || {})[s.scene || s.s], d2 = (window.DASH_SCENES || {})[s.scene || s.s];
       if(m2 && m2 !== mp && window.MAPS && MAPS[m2]) acts.push('<button type="button" data-map="' + m2 + '">Diagram: ' + esc(MAPS[m2].title) + '</button>');
       if(d2 && d2 !== db && window.DASHBOARDS && DASHBOARDS[d2]) acts.push('<button type="button" data-dash="' + d2 + '">Money: ' + esc(DASHBOARDS[d2].title) + '</button>');
-      if(sceneIdx(s.s) >= 0) acts.push('<button type="button" class="sim" data-sim="' + esc(s.s) + '">See this in the simulation</button>');
+      if(sceneIdx(s.scene || s.s) >= 0) acts.push('<button type="button" class="sim" data-sim="' + esc(s.scene || s.s) + '">See this in the simulation</button>');
       h += '<div class="bk-acts">' + acts.join('') + '</div></section>';
     });
     if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>' + esc(c.outroTitle || 'In sum') + '</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
@@ -322,6 +382,11 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
       '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
+    /* number every figure in reading order; wrap wide tables so they scroll instead of overflowing */
+    [].forEach.call(page.querySelectorAll('figure'), function(f, i){
+      var cap = f.querySelector('figcaption'); if(!cap) return; var lab = 'Figure ' + (k + 1) + '.' + (i + 1) + '.';
+      var fn = cap.querySelector('.fnum'); if(fn) fn.textContent = lab; else cap.insertAdjacentHTML('afterbegin', '<span class="fnum">' + lab + '</span>'); });
+    [].forEach.call(page.querySelectorAll('.fig-compare table'), function(t){ if(t.parentNode.className !== 'tw'){ var w = document.createElement('div'); w.className = 'tw'; t.parentNode.insertBefore(w, t); w.appendChild(t); } });
     $('bkHeadT').textContent = c.label + ' · ' + c.title;
     if(target){ var el = document.getElementById('bk-' + target); if(el){ scroller.scrollTop = el.offsetTop - 60; return; } }
     scroller.scrollTop = 0;
@@ -359,7 +424,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     try{ if(window.closeChapters) window.closeChapters(); }catch(e){}
     applyPrefs();
     view.classList.add('on'); document.body.classList.add('book-open');
-    if(target && where[target]){ openReader(where[target][0], where[target][1], target); }
+    if(target && where[target]){ openReader(where[target][0], where[target][1], secOf[target] || target); }
     else if(target && bookIndex(target) >= 0 && BOOKS[bookIndex(target)].status === 'ready'){ openReader(bookIndex(target), null, null, true); }
     else { showLibrary(); }
     if(!ls('ots_book_hint')){ ls('ots_book_hint', 1); var hn = $('bkHint'); hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
@@ -467,8 +532,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     showPop('<h5>' + esc(e.nm) + '</h5><p class="r">' + esc(e.rl || '') + '</p><div>' + det + '</div>');
   }
   function goTo(id){
-    var w = where[id];
-    if(w){ hidePop(); hideAll(); if(w[0] !== curBook || w[1] !== curCh || view.classList.contains('lib')){ openReader(w[0], w[1], id); } else { var el = document.getElementById('bk-' + id); if(el) scroller.scrollTo({top:el.offsetTop - 60, behavior:'smooth'}); } onScroll(); }
+    var w = where[id], sid = secOf[id] || id;
+    if(w){ hidePop(); hideAll(); if(w[0] !== curBook || w[1] !== curCh || view.classList.contains('lib')){ openReader(w[0], w[1], sid); } else { var el = document.getElementById('bk-' + sid); if(el) scroller.scrollTo({top:el.offsetTop - 60, behavior:'smooth'}); } onScroll(); }
     else closeBook(id);
   }
 

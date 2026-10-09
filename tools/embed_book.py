@@ -19,6 +19,29 @@ def section(cid, sid):
     m = re.match(r'\s*<h2>(.*?)</h2>\s*', t, re.S)
     return {'s': sid, 'h': re.sub(r'<[^>]+>', '', m.group(1)).strip() if m else sid, 'html': t[m.end():] if m else t}
 
+def sections_for(cid, order):
+    """A chapter's sections. If book/part1/<cid>/_manifest.json exists (the deep rebuild), it sets the order,
+    each section's main scene and the other scenes it draws on; otherwise one section per scene in simulation order."""
+    mp = os.path.join(ROOT, 'book', 'part1', cid, '_manifest.json')
+    if not os.path.exists(mp):
+        return [x for x in (section(cid, sid) for sid in order) if x]
+    out = []
+    for m in json.load(open(mp, encoding='utf-8'))['sections']:
+        x = section(cid, m['s'])
+        if not x: continue
+        if m.get('scene') and m['scene'] != m['s']: x['scene'] = m['scene']
+        if m.get('draws'): x['draws'] = [d for d in m['draws'] if d in SC]
+        out.append(x)
+    return out
+
+# sources found by the library's own research: book/research/*.json -> {key: [url, label]}
+CITES = {}
+for fn in sorted(os.listdir(os.path.join(ROOT, 'book', 'research'))) if os.path.isdir(os.path.join(ROOT, 'book', 'research')) else []:
+    if fn.endswith('.json'):
+        for e in json.load(open(os.path.join(ROOT, 'book', 'research', fn), encoding='utf-8')).get('entries', []):
+            for c in e.get('sources', []):
+                CITES[c['key']] = [c['url'], c['label']]
+
 def span(ids):
     lo = hi = None; bce = None
     for sid in ids:
@@ -59,8 +82,14 @@ def roman(n):
     for v, r in ((50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
         while n >= v: out += r; n -= v
     return out
+DRAWN = {}  # scenes from other chapters that a written volume now tells in full
+for _cid in ['ch01'] + ['rd%d' % i for i in range(7)]:
+    _mp = os.path.join(ROOT, 'book', 'part1', _cid, '_manifest.json')
+    if os.path.exists(_mp):
+        for _m in json.load(open(_mp, encoding='utf-8'))['sections']:
+            for _d in _m.get('draws', []): DRAWN.setdefault(_d, _cid)
 def volume_label(sid):
-    cid = CH_OF.get(sid)
+    cid = DRAWN.get(sid) if CH_OF.get(sid) not in ('ch01',) and not str(CH_OF.get(sid, '')).startswith('rd') and sid in DRAWN else CH_OF.get(sid)
     if cid == 'ch01': return 'Volume I, The Baseline', True
     if cid and cid.startswith('rd'): return 'Volume II, The Road to 1948', True
     n = 3
@@ -103,7 +132,7 @@ for cid, label, title, sp in STAGES:
     order = next(c for c in CH if c['id'] == cid)['scenes']
     road.append({'id': cid, 'label': label, 'title': title, 'span': sp, 'intro': read(os.path.join(ROOT, 'book', 'part1', cid, '_intro.html')),
                  'outro': read(os.path.join(ROOT, 'book', 'part1', cid, '_outro.html')), 'outroTitle': 'What this stage built',
-                 'sections': [x for x in (section(cid, sid) for sid in order) if x]})
+                 'sections': sections_for(cid, order)})
 
 books = [
   {'id': 'baseline', 'vol': 1, 'status': 'ready', 'title': 'The Baseline', 'subtitle': 'The Ground Before the Flag', 'span': 'Antiquity to today', 'eraKey': -3000, 'unit': 'chapters',
@@ -120,7 +149,7 @@ for c in CH:
                   'keywords': ' '.join(SC[x]['t'] for x in c['scenes'] if x in SC)})
     vol += 1
 
-lib = {'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
+lib = {'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
        'note': 'The documented record, told in order, with every claim tied to its source. Tap a note number to see it, a name in a figure for its detail, or the + button for contents, bookmarks and notes.',
        'books': books}
 payload = json.dumps(lib, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
