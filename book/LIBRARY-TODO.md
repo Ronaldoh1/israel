@@ -28,6 +28,15 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
 - [ ] Fill empty citation labels in the simulation's registry (e.g. `w_arafat`, `wiki_flag_of_israel`, `palquest_wzo`).
 - [ ] Ask Ron for Books 0–9 (July–August 2026) and the deliberation file, to use as leads (each fact entered as a sourced research addendum).
 
+## Translations (when the volumes are done)
+
+- [ ] **Translate the finished library into Spanish and Arabic**, volume by volume, once Ron signs off on each one:
+  - prose, figures, figure captions, callouts and the Lines chapter
+  - the library chrome: shelf, search, menus and labels (the simulation already has ES and AR interface strings to reuse)
+  - right-to-left layout for Arabic in the reader and on every figure type (flows, timelines, trees, tables, charts and maps)
+  - native-speaker review of each language before release, for register and for technical and religious terms
+  - keep citations, numbers, dates and names identical across all three languages, and check this automatically
+
 ## 1. Write the remaining volumes (III–LXVII)
 
 - [ ] Write each volume with the same process as I and II:

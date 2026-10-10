@@ -255,7 +255,11 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .cv .vol{flex:none}
 .cv .tt.lg{font-size:clamp(11px,2.7vw,17px)}
 .cv .vol{font:600 clamp(8px,1.8vw,11px)/1 'Literata',Georgia,serif;letter-spacing:.14em;font-variant:small-caps}
-.cv.prep{filter:saturate(.35) brightness(.92)}
+.cv.prep{filter:saturate(.25) brightness(.85)}
+.lb-book.soon{cursor:default;opacity:.55}
+.lb-book.soon:hover .cv{transform:none}
+.lb-metas .meta.soon{opacity:.7}
+.lb-metas .meta .chip{display:inline-block;margin-top:5px;font:600 10.5px/1 system-ui,sans-serif;letter-spacing:.04em;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:4px 8px}
 .cv .ribbon{position:absolute;right:-30px;top:14px;transform:rotate(38deg);background:rgba(243,237,225,.92);color:#3a2e1e;font:700 9px/1 system-ui,sans-serif;letter-spacing:.06em;padding:5px 34px}
 .lb-empty{text-align:center;color:var(--muted);font-style:italic;padding:30px 0}
 /* book title page */
@@ -293,7 +297,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   function roman(n){ var r = '', m = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; m.forEach(function(x){ while(n >= x[0]){ r += x[1]; n -= x[0]; } }); return r; }
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
-    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + CLOTH[(b.vol - 1) % CLOTH.length] + '" aria-hidden="true"><div class="in"><div class="ser">The Israel Architecture</div><div class="rule"></div><div class="tt' + (b.title.length > 26 ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">In preparation</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + CLOTH[(b.vol - 1) % CLOTH.length] + '" aria-hidden="true"><div class="in"><div class="ser">The Israel Architecture</div><div class="rule"></div><div class="tt' + (b.title.length > 26 ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
@@ -479,9 +483,11 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
       var row = list.slice(i, i + n);
       h += '<div class="lb-row" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b);
-        return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title + (b.status === 'ready' ? '' : ', in preparation')) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
+        if(b.status !== 'ready') return '<div class="lb-book soon" role="img" aria-label="' + esc(b.title + ', Volume ' + roman(b.vol) + ', in progress, coming soon') + '">' + cover(b) + '</div>';
+        return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? b.chapters.length + ' ' + (b.unit || 'chapters') : b.count + ' parts in the simulation';
+        if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
         return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }
     return h;
@@ -495,7 +501,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (prep.length ? '<section class="lb-sec"><h2>In preparation</h2><p class="sub">Being written now. Each opens in the simulation in the meantime.</p>' + shelf(prep) + '</section>' : '') +
+      (prep.length ? '<section class="lb-sec"><h2>Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(prep) + '</section>' : '') +
       (!ready.length && !prep.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (BOOKS.length + ' volumes · ' + BOOKS.filter(function(b){ return b.status === 'ready'; }).length + ' ready to read');
   }
