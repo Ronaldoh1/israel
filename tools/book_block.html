@@ -273,6 +273,22 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-bt .t3{color:var(--muted);font-size:.88em;line-height:1.55;max-width:28em;margin:0 auto}
 @media (prefers-reduced-motion:reduce){#bookView *{transition:none !important}}
 @media print{.bk-head,.bk-fab,.bk-acts,.bk-sheet,.bk-shade{display:none !important}}
+/* library walkthrough: shown once, on the first visit to the shelf */
+.lt-ov{position:absolute;inset:0;z-index:30;display:none}
+.lt-ov.on{display:block}
+.lt-hole{position:absolute;border-radius:10px;box-shadow:0 0 0 9999px rgba(20,16,10,.62);transition:top .35s,left .35s,width .35s,height .35s;pointer-events:none;outline:2px solid var(--figline);outline-offset:3px}
+.lt-hole.none{top:50%;left:50%;width:0;height:0;outline:0}
+.lt-card{position:absolute;width:min(360px,calc(100% - 32px));background:var(--card);color:var(--ink);border:1px solid var(--rule);border-top:4px solid var(--accent);border-radius:10px;padding:18px 18px 14px;box-shadow:0 24px 60px rgba(0,0,0,.45);transition:top .35s,left .35s;font-family:'Literata',Georgia,serif}
+.lt-card .lt-step{font:700 11px/1 system-ui,-apple-system,sans-serif;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
+.lt-card h3{margin:0 0 8px;font-size:19px;line-height:1.25}
+.lt-card p{margin:0 0 14px;font-size:15px;line-height:1.55;text-indent:0}
+.lt-btns{display:flex;align-items:center;gap:8px}
+.lt-btns span{flex:1}
+.lt-btns button{min-height:40px;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:999px;padding:0 14px;font:600 13.5px/1 system-ui,-apple-system,sans-serif;cursor:pointer}
+.lt-btns button.pri{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.lt-btns .lt-skip{border:0;padding:0 6px;color:var(--muted)}
+.lt-btns button:disabled{visibility:hidden}
+@media (prefers-reduced-motion:reduce){.lt-hole,.lt-card{transition:none}}
 /* charts, maps and dashboards (tools/charts.css, inlined by embed_book.py) */
 /*__CHARTS_CSS__*/
 </style>
@@ -287,6 +303,9 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   <div class="bk-shade" id="bkShade"></div>
   <div class="bk-sheet" id="bkSheet" role="dialog" aria-modal="true"></div>
   <div class="bk-toast" id="bkToast" role="status"></div>
+  <div class="lt-ov" id="ltOv" aria-hidden="true"><div class="lt-hole" id="ltHole"></div>
+    <div class="lt-card" id="ltCard" role="dialog" aria-modal="true" aria-labelledby="ltTitle"><div class="lt-step" id="ltStep"></div><h3 id="ltTitle"></h3><p id="ltBody"></p>
+      <div class="lt-btns"><button type="button" class="lt-skip" id="ltSkip">Skip</button><span></span><button type="button" id="ltBack">Back</button><button type="button" class="pri" id="ltNext">Next</button></div></div></div>
 </div>
 <script type="application/json" id="book_data">__BOOK_JSON__</script>
 <script>
@@ -453,6 +472,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     useBook(bi); var y = null;
     if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; y = p.y; } } }
     view.classList.remove('lib'); render(k, sec); if(y != null) scroller.scrollTop = y; onScroll();
+    if(!ls('ots_book_hint')){ ls('ots_book_hint', 1); var hn = $('bkHint'); hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
     setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
   }
   function openBook(target){
@@ -463,7 +483,6 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     if(target && where[target]){ openReader(where[target][0], where[target][1], secOf[target] || target); }
     else if(target && bookIndex(target) >= 0 && BOOKS[bookIndex(target)].status === 'ready'){ openReader(bookIndex(target), null, null, true); }
     else { showLibrary(); }
-    if(!ls('ots_book_hint')){ ls('ots_book_hint', 1); var hn = $('bkHint'); hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
     if(!view.classList.contains('lib') && location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
   }
   function closeBook(sceneId){
@@ -513,7 +532,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     view.classList.add('lib'); hideAll();
     var last = ls('ots_lib_last'), lb = last ? BOOKS[bookIndex(last.book)] : null, pos = lb ? ls('ots_book_pos_' + lb.id) : null, cont = '';
     if(lb && pos && lb.chapters[pos.ch]){ var c = lb.chapters[pos.ch]; cont = '<button class="lb-cont" type="button" data-cont="' + bookIndex(lb.id) + '"><span class="mini">' + cover(lb) + '</span><span><small>CONTINUE READING</small><b>' + esc(lb.title) + '</b><span style="font-size:14px;color:var(--muted)">' + esc(c.label + ' · ' + c.title) + '</span></span><span class="go">Resume →</span></button>'; }
-    lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
+    lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-tour="1">How it works</button><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
       '<div class="lb-hd"><div class="s">Observe The System</div><h1>' + esc(LIB.title) + '</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
       '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
       '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option></select></div>' +
@@ -522,9 +541,45 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
     renderLib(); lib.scrollTop = 0;
+    if(!ls('ots_library_tour_v1')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
     try{ history.replaceState(null, '', location.pathname + location.search + '#library'); }catch(e){}
     setTimeout(function(){ try{ lib.focus({preventScroll:true}); }catch(e){} }, 50);
   }
+  /* ---------- the library walkthrough (once, on the first visit; replay with "How it works") ---------- */
+  var LT = [
+    {t:'Welcome to the library', b:'Every chapter of the simulation becomes a book here, written as continuous history with every claim tied to its source. There is no set order: pick whichever book you want.'},
+    {sel:'.lb-sec .lb-book:not(.soon)', t:'Ready to read', b:'These volumes are finished. Tap a cover to open it. The Baseline lays the ground before the history; The Road to 1948 tells the founding stage by stage. Start with either one.'},
+    {sel:'.lb-sec + .lb-sec h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
+    {sel:'.lb-ctl', t:'Search and sort', b:'Search every volume by title, person, place or year, and sort the shelf by reading order, era or title.'},
+    {sel:'.lb-top', t:'Your reading room', b:'Change the page to paper, sepia or night, go back to the simulation at any time, or replay this tour with "How it works".'},
+    {t:'Inside a book', b:'Tap a note number to see its source, and a name in a diagram for its detail. Double-tap the page to hide the menus, and use the + button for contents, bookmarks and notes. Your place is saved, and "Continue reading" brings you back.', last:true}
+  ];
+  var ltI = 0, ltOn = false;
+  function ltPlace(){
+    var st = LT[ltI], ov = $('ltOv'), hole = $('ltHole'), card = $('ltCard'), el = st.sel ? lib.querySelector(st.sel) : null;
+    $('ltStep').textContent = (ltI + 1) + ' of ' + LT.length; $('ltTitle').textContent = st.t; $('ltBody').textContent = st.b;
+    $('ltBack').disabled = ltI === 0; $('ltNext').textContent = st.last ? 'Choose a book' : 'Next';
+    var W = ov.clientWidth, H = ov.clientHeight, cw = card.offsetWidth, ch = card.offsetHeight;
+    if(!el){ hole.className = 'lt-hole none'; hole.removeAttribute('style'); card.style.left = Math.max(16, (W - cw) / 2) + 'px'; card.style.top = Math.max(16, (H - ch) / 2) + 'px'; return; }
+    var r = el.getBoundingClientRect(), o = ov.getBoundingClientRect(), pad = 6;
+    if(r.top < o.top + 70 || r.bottom > o.bottom - 20){ el.scrollIntoView({block:'center'}); r = el.getBoundingClientRect(); }
+    var x = r.left - o.left - pad, y = r.top - o.top - pad, w = Math.min(r.width + pad * 2, W - 8), h = Math.min(r.height + pad * 2, H * 0.6);
+    hole.className = 'lt-hole'; hole.style.cssText = 'left:' + x + 'px;top:' + y + 'px;width:' + w + 'px;height:' + h + 'px';
+    var below = y + h + 14, above = y - ch - 14, top = below + ch < H - 12 ? below : (above > 12 ? above : Math.max(12, H - ch - 12));
+    card.style.top = top + 'px'; card.style.left = Math.min(Math.max(16, x + w / 2 - cw / 2), W - cw - 16) + 'px';
+  }
+  function libTour(force){
+    if(!force && ls('ots_library_tour_v1')) return;
+    ltI = 0; ltOn = true; lib.scrollTop = 0; $('ltOv').classList.add('on'); $('ltOv').setAttribute('aria-hidden', 'false'); ltPlace();
+    setTimeout(function(){ try{ $('ltNext').focus(); }catch(e){} }, 60);
+  }
+  function ltEnd(){ ltOn = false; ls('ots_library_tour_v1', 1); $('ltOv').classList.remove('on'); $('ltOv').setAttribute('aria-hidden', 'true'); lib.scrollTop = 0; try{ lib.focus({preventScroll:true}); }catch(e){} }
+  $('ltNext').addEventListener('click', function(){ if(ltI >= LT.length - 1) ltEnd(); else { ltI++; ltPlace(); } });
+  $('ltBack').addEventListener('click', function(){ if(ltI > 0){ ltI--; ltPlace(); } });
+  $('ltSkip').addEventListener('click', ltEnd);
+  window.addEventListener('keydown', function(e){ if(!ltOn) return; if(e.key === 'Escape'){ ltEnd(); } else if(e.key === 'ArrowRight' || e.key === 'Enter'){ $('ltNext').click(); } else if(e.key === 'ArrowLeft'){ $('ltBack').click(); } else return; e.preventDefault(); e.stopImmediatePropagation(); }, true);
+  window.addEventListener('resize', function(){ if(ltOn) ltPlace(); });
+  window.libraryTour = function(){ if(!view.classList.contains('on')) openBook(null); setTimeout(function(){ libTour(true); }, 400); };
   window.openLibrary = function(){ openBook(null); };
   lib.addEventListener('click', function(e){
     var b = e.target.closest('[data-b]'); if(b){ if(b.classList.contains('meta')) b = lib.querySelector('.lb-book[data-b="' + b.getAttribute('data-b') + '"]'); var bk = BOOKS[+b.getAttribute('data-b')];
@@ -532,6 +587,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
       else openSheet('<h3>' + esc(bk.title) + '</h3><p style="font-size:15px;line-height:1.5;margin:0 0 10px">Volume ' + roman(bk.vol) + ' is being written. Its ' + bk.count + ' parts are already in the simulation, each with its sources.</p><div class="bk-btns"><button data-a="dismiss">Back to the library</button><button class="pri" data-sim-open="' + esc(bk.first) + '">Open it in the simulation</button></div>');
       return; }
     var c = e.target.closest('[data-cont]'); if(c){ openReader(+c.getAttribute('data-cont'), null, null, true); return; }
+    if(e.target.closest('[data-lib-tour]')){ libTour(true); return; }
     if(e.target.closest('[data-lib-close]')){ closeBook(null); return; }
     if(e.target.closest('[data-lib-theme]')){ var t = ['paper','sepia','night']; prefs.theme = t[(t.indexOf(prefs.theme || 'paper') + 1) % 3]; applyPrefs(); showLibrary(); }
   });
@@ -662,7 +718,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 
   /* ---------- entry points: the + menu, the chapter switcher, links ---------- */
   (function(){ var o = $('fabOptions'); if(!o) return; var b = document.createElement('button'); b.className = 'fab-option'; b.type = 'button'; b.textContent = '📖 The library';
-    b.addEventListener('click', function(){ var i = (function(){ var m = (($('cnt') || {}).textContent || '').match(/(\d+)\s*\//); return m ? +m[1] - 1 : 0; })(), s = SC()[i]; openBook(s && where[s.id] ? s.id : null); });
+    b.addEventListener('click', function(){ openBook(null); });  /* land on the shelf; the reader picks the book */
     o.appendChild(b); })();
   (function(){ var wp = document.querySelector('.welcome-paths'); if(!wp) return; var b = document.createElement('button'); b.className = 'path-btn'; b.type = 'button'; b.textContent = '📖 Read it as books';
     b.addEventListener('click', function(){ window.__bookOpening = true; try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 500); }); wp.appendChild(b); })();
