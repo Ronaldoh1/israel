@@ -139,7 +139,8 @@ Add these to `book/SOURCE-CONFLICTS.md` and fix them in the simulation:
 ```
 python3 tools/embed_book.py
 python3 tools/embed_ux.py
-python3 tools/embed_israel.py
+python3 tools/build_dist.py        # compact build: dist/index.html (~10 MB; index.html stays the editable source)
+python3 tools/embed_israel.py      # embeds dist/index.html into sophia.html
 python3 tools/eleven_sophia_slide.py
 python3 tools/embed_israel.py --check
 ```

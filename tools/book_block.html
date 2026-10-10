@@ -261,6 +261,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-metas .meta.soon{opacity:.7}
 .lb-metas .meta .chip{display:inline-block;margin-top:5px;font:600 10.5px/1 system-ui,sans-serif;letter-spacing:.04em;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:4px 8px}
 .cv .ribbon{position:absolute;right:-30px;top:14px;transform:rotate(38deg);background:rgba(243,237,225,.92);color:#3a2e1e;font:700 9px/1 system-ui,sans-serif;letter-spacing:.06em;padding:5px 34px}
+.lb-more{text-align:center;margin:18px 0 6px;font-size:15px;color:var(--muted)}
+.lb-more b{color:var(--ink)}
 .lb-empty{text-align:center;color:var(--muted);font-style:italic;padding:30px 0}
 /* book title page */
 .bk-bt{text-align:center;padding:10px 0 34px}
@@ -492,6 +494,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     }
     return h;
   }
+  var SHOW_SOON = 10;  /* unwritten volumes shown on the shelf before "+N more"; search still finds all of them */
   function renderLib(){
     var q = libQ.trim().toLowerCase(), list = BOOKS.slice();
     if(q) list = list.filter(function(b){ return q.split(/\s+/).every(function(w){ return libText(b).indexOf(w) >= 0; }); });
@@ -501,7 +504,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (prep.length ? '<section class="lb-sec"><h2>Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(prep) + '</section>' : '') +
+      (prep.length ? '<section class="lb-sec"><h2>Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
+        (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
       (!ready.length && !prep.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (BOOKS.length + ' volumes · ' + BOOKS.filter(function(b){ return b.status === 'ready'; }).length + ' ready to read');
   }

@@ -16,7 +16,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SIM = ROOT / 'index.html'
+SIM = ROOT / 'dist' / 'index.html' if (ROOT / 'dist' / 'index.html').exists() else ROOT / 'index.html'
 HUB = ROOT / 'sophia.html'
 OPEN = '<script type="text/plain" id="il_sim_b64">'
 CLOSE = '</script>'
