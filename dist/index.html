@@ -5404,8 +5404,9 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 /* the library */
 .bk-lib{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;display:none;font-family:'Literata',Georgia,serif}
 #bookView.lib .bk-lib{display:block}
-#bookView.lib .bk-scroll,#bookView.lib .bk-head,#bookView.lib .bk-prog,#bookView.lib .bk-fab,#bookView.lib .bk-hint{display:none}
-.lb-wrap{max-width:1180px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top,0px)) 22px 80px}
+#bookView.lib .bk-scroll,#bookView.lib .bk-head,#bookView.lib .bk-prog,#bookView.lib .bk-hint{display:none}
+#bookView.lib .bk-fab{transform:none;opacity:1}
+.lb-wrap{max-width:1180px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top,0px)) 22px 110px}
 .lb-top{display:flex;justify-content:flex-end;gap:8px;margin-bottom:6px;font-family:system-ui,-apple-system,sans-serif}
 .lb-top button{min-height:40px;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:999px;padding:0 14px;font:600 13.5px/1 inherit;cursor:pointer}
 .lb-top button:hover{border-color:var(--ink)}
@@ -5471,6 +5472,18 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-bt .t3{color:var(--muted);font-size:.88em;line-height:1.55;max-width:28em;margin:0 auto}
 @media (prefers-reduced-motion:reduce){#bookView *{transition:none !important}}
 @media print{.bk-head,.bk-fab,.bk-acts,.bk-sheet,.bk-shade{display:none !important}}
+/* one-time banner in the simulation: the same architecture, as books (shown once; then the last-used view opens on arrival) */
+#libBanner{position:fixed;left:50%;top:calc(10px + env(safe-area-inset-top,0px));z-index:99990;width:min(640px,calc(100% - 24px));transform:translate(-50%,-140%);transition:transform .45s cubic-bezier(.2,.8,.2,1);background:#F3EDE1;color:#26221C;border-radius:4px 12px 12px 4px;border-left:7px solid #8A2D1F;box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 -1px 0 #D8CDB9;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;padding:14px 14px 12px 16px;font-family:'Literata',Georgia,serif}
+#libBanner.on{transform:translate(-50%,0)}
+#libBanner .lbb-ic{grid-row:1 / span 2;width:34px;height:42px;margin-top:2px;background:#1B2A4A;border-radius:2px 5px 5px 2px;box-shadow:inset 4px 0 0 #B8862B,2px 2px 0 #D8CDB9}
+#libBanner b{display:block;font-size:17px;line-height:1.25;font-weight:700}
+#libBanner p{margin:2px 0 0;font-size:14.5px;line-height:1.45;color:#4A4236}
+#libBanner .lbb-btns{grid-column:2;display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+#libBanner button{min-height:40px;border-radius:999px;padding:0 16px;font:600 14px/1 system-ui,-apple-system,sans-serif;cursor:pointer;border:1px solid #D8CDB9;background:transparent;color:#26221C}
+#libBanner button.pri{background:#8A2D1F;border-color:#8A2D1F;color:#F3EDE1}
+#libBanner button:focus-visible{outline:2px solid #1B2A4A;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){#libBanner{transition:none}}
+body.book-open #libBanner{display:none}
 /* library walkthrough: shown once, on the first visit to the shelf */
 .lt-ov{position:absolute;inset:0;z-index:30;display:none}
 .lt-ov.on{display:block}
@@ -6352,15 +6365,17 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     try{ if(typeof closeFab === 'function') closeFab(); }catch(e){}
     try{ if(window.closeChapters) window.closeChapters(); }catch(e){}
     applyPrefs();
-    view.classList.add('on'); document.body.classList.add('book-open');
+    view.classList.add('on'); document.body.classList.add('book-open'); ls('ots_view', 'library'); hideBanner(true);
     if(target && where[target]){ openReader(where[target][0], where[target][1], secOf[target] || target); }
     else if(target && bookIndex(target) >= 0 && BOOKS[bookIndex(target)].status === 'ready'){ openReader(bookIndex(target), null, null, true); }
     else { showLibrary(); }
     if(!view.classList.contains('lib') && location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
   }
   function closeBook(sceneId){
-    hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open');
+    hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open'); ls('ots_view', 'sim');
     try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+    /* the simulation's own first-visit tour was held back while the library was open; run it now */
+    setTimeout(function(){ try{ if(!localStorage.getItem('ots_onboarding_seen_v1_0_0') && window.startTour) window.startTour(false); }catch(e){} }, 500);
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
   }
   window.openBook = openBook; window.closeBook = closeBook; window.__bookTest = {openReader: openReader, books: function(){ return BOOKS; }};
@@ -6414,7 +6429,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
     renderLib(); lib.scrollTop = 0;
-    if(!ls('ots_library_tour_v1')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
+    if(!ls('ots_library_tour_v2')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
     try{ history.replaceState(null, '', location.pathname + location.search + '#library'); }catch(e){}
     setTimeout(function(){ try{ lib.focus({preventScroll:true}); }catch(e){} }, 50);
   }
@@ -6424,12 +6439,12 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     {sel:'.lb-sec .lb-book:not(.soon)', t:'Ready to read', b:'These volumes are finished. Tap a cover to open it. The Baseline lays the ground before the history; The Road to 1948 tells the founding stage by stage. Start with either one.'},
     {sel:'.lb-sec + .lb-sec h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
     {sel:'.lb-ctl', t:'Search and sort', b:'Search every volume by title, person, place or year, and sort the shelf by reading order, era or title.'},
-    {sel:'.lb-top', t:'Your reading room', b:'Change the page to paper, sepia or night, go back to the simulation at any time, or replay this tour with "How it works".'},
+    {sel:'#bkFab', t:'Back to the simulation, any time', b:'Tap + and choose "Simulation, scene by scene" to return to the scene-by-scene view. The same menu changes the page to paper, sepia or night and replays this tour. Next time you visit, we open whichever view you used last.'},
     {t:'Inside a book', b:'Tap a note number to see its source, and a name in a diagram for its detail. Double-tap the page to hide the menus, and use the + button for contents, bookmarks and notes. Your place is saved, and "Continue reading" brings you back.', last:true}
   ];
   var ltI = 0, ltOn = false;
   function ltPlace(){
-    var st = LT[ltI], ov = $('ltOv'), hole = $('ltHole'), card = $('ltCard'), el = st.sel ? lib.querySelector(st.sel) : null;
+    var st = LT[ltI], ov = $('ltOv'), hole = $('ltHole'), card = $('ltCard'), el = st.sel ? view.querySelector(st.sel) : null;
     $('ltStep').textContent = (ltI + 1) + ' of ' + LT.length; $('ltTitle').textContent = st.t; $('ltBody').textContent = st.b;
     $('ltBack').disabled = ltI === 0; $('ltNext').textContent = st.last ? 'Choose a book' : 'Next';
     var W = ov.clientWidth, H = ov.clientHeight, cw = card.offsetWidth, ch = card.offsetHeight;
@@ -6442,11 +6457,11 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     card.style.top = top + 'px'; card.style.left = Math.min(Math.max(16, x + w / 2 - cw / 2), W - cw - 16) + 'px';
   }
   function libTour(force){
-    if(!force && ls('ots_library_tour_v1')) return;
+    if(!force && ls('ots_library_tour_v2')) return;
     ltI = 0; ltOn = true; lib.scrollTop = 0; $('ltOv').classList.add('on'); $('ltOv').setAttribute('aria-hidden', 'false'); ltPlace();
     setTimeout(function(){ try{ $('ltNext').focus(); }catch(e){} }, 60);
   }
-  function ltEnd(){ ltOn = false; ls('ots_library_tour_v1', 1); $('ltOv').classList.remove('on'); $('ltOv').setAttribute('aria-hidden', 'true'); lib.scrollTop = 0; try{ lib.focus({preventScroll:true}); }catch(e){} }
+  function ltEnd(){ ltOn = false; ls('ots_library_tour_v2', 1); $('ltOv').classList.remove('on'); $('ltOv').setAttribute('aria-hidden', 'true'); lib.scrollTop = 0; try{ lib.focus({preventScroll:true}); }catch(e){} }
   $('ltNext').addEventListener('click', function(){ if(ltI >= LT.length - 1) ltEnd(); else { ltI++; ltPlace(); } });
   $('ltBack').addEventListener('click', function(){ if(ltI > 0){ ltI--; ltPlace(); } });
   $('ltSkip').addEventListener('click', ltEnd);
@@ -6570,11 +6585,21 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     else if(a2 === 'notes') listNotes();
     else if(a2 === 'export') exportNotes();
     else if(a2 === 'fs-' || a2 === 'fs+'){ var y0 = scroller.scrollTop / Math.max(1, scroller.scrollHeight); prefs.fs = Math.max(-3, Math.min(6, (prefs.fs || 0) + (a2 === 'fs+' ? 1 : -1))); applyPrefs(); scroller.scrollTop = y0 * scroller.scrollHeight; }
+    else if(a2 === 'lib-tour'){ hideAll(); libTour(true); }
+    else if(a2 === 'lib-search'){ hideAll(); var lq = $('lbQ'); if(lq){ lq.scrollIntoView({block:'center'}); lq.focus(); } }
+    else if(a2.indexOf('lth-') === 0){ prefs.theme = a2.slice(4); applyPrefs(); var tb = lib.querySelector('[data-lib-theme]'); if(tb) tb.textContent = 'Page: ' + prefs.theme.replace(/^./, function(x){ return x.toUpperCase(); }); libMenu(); }
     else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
     else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:'The Israel Architecture', text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
     else if(a2 === 'close') closeBook(null);
   });
-  $('bkFab').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else menu(); });
+  function libMenu(){
+    openSheet('<h3>Library</h3>' +
+      '<button class="row" data-a="close"><i>◉</i><span>Simulation, scene by scene<small>Back to the scene you were on</small></span></button>' +
+      '<button class="row" data-a="lib-search"><i>⌕</i><span>Search the library<small>Titles, people, places, years</small></span></button>' +
+      '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="lth-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
+      '<button class="row" data-a="lib-tour"><i>?</i><span>How the library works<small>Replay the short tour</small></span></button>');
+  }
+  $('bkFab').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else if(view.classList.contains('lib')) libMenu(); else menu(); });
   document.addEventListener('keydown', function(e){
     if(!view.classList.contains('on')) return;
     if(e.target && (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT')){ if(e.key === 'Escape') e.target.blur(); return; }
@@ -6599,6 +6624,48 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
   window.addEventListener('hashchange', fromHash);
   window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){} fromHash(); } }, 700); });
   try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
+
+  /* ---------- views: a one-time library banner in the simulation, and the last-used view on arrival ---------- */
+  var BKEY = 'ots_lib_banner_v1', banner = null, bannerT = null;
+  function hideBanner(now){ if(!banner) return; var b = banner; banner = null; clearTimeout(bannerT); b.classList.remove('on'); setTimeout(function(){ if(b.parentNode) b.parentNode.removeChild(b); }, now ? 0 : 500); }
+  function shown(el){ return el && getComputedStyle(el).display !== 'none' && !el.hidden; }
+  function simClear(){
+    var b = document.body.classList; if(b.contains('book-open') || b.contains('modal-open') || b.contains('overlay-open')) return false;
+    if(shown($('welcomeOverlay'))) return false;
+    var t = $('tourOverlay'); if(t && t.classList.contains('active')) return false;
+    var e = $('elevenOverlay'); if(e && !e.hidden) return false;
+    var u = $('uxToast'); if(u && u.classList.contains('on')) return false;   /* wait for any tip to clear */
+    return true;
+  }
+  function showBanner(){
+    if(banner || ls(BKEY)) return; ls(BKEY, 1);
+    banner = document.createElement('div'); banner.id = 'libBanner'; banner.setAttribute('role', 'region'); banner.setAttribute('aria-label', 'The library');
+    banner.innerHTML = '<span class="lbb-ic" aria-hidden="true"></span><div><b>Prefer to read it as a book?</b><p>The same architecture is written up in the library as continuous history, with every claim sourced. Pick any volume.</p></div>' +
+      '<div class="lbb-btns"><button type="button" class="pri" data-x="open">Open the library</button><button type="button" data-x="no">Not now</button></div>';
+    banner.addEventListener('click', function(e){ var x = e.target.closest('[data-x]'); if(!x) return; if(x.getAttribute('data-x') === 'open'){ hideBanner(true); openBook(null); } else hideBanner(); });
+    document.body.appendChild(banner); requestAnimationFrame(function(){ requestAnimationFrame(function(){ if(banner) banner.classList.add('on'); }); });
+    bannerT = setTimeout(hideBanner, 30000);
+  }
+  function english(){ var l = (document.documentElement.lang || 'en').toLowerCase(); return l.indexOf('es') !== 0 && l.indexOf('ar') !== 0; }
+  (function waitForSim(){ var n = 0, ok = 0;
+    if(ls(BKEY) || ls('ots_view')) return;   /* seen it, or already chose a view */
+    var iv = setInterval(function(){ n++;
+      if(ls(BKEY) || ls('ots_view') === 'library' || n > 400){ clearInterval(iv); return; }
+      ok = simClear() ? ok + 1 : 0;
+      if(ok >= 3 && english()){ clearInterval(iv); showBanner(); }
+    }, 1000); })();
+  /* the simulation's first-visit tour must not run underneath the library; it runs when the reader returns to the simulation */
+  (function(){ var t = $('tourOverlay'); if(!t || !window.MutationObserver) return;
+    new MutationObserver(function(){ if(t.classList.contains('active') && document.body.classList.contains('book-open')) t.classList.remove('active'); }).observe(t, {attributes:true, attributeFilter:['class']}); })();
+  /* arrive in the view the reader used last (a link to a scene, dashboard, map or Eleven Minutes still wins) */
+  window.addEventListener('load', function(){ setTimeout(function(){
+    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return;
+    if((location.hash || '').replace('#', '')) return;
+    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
+    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
+    window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
+    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
+  }, 650); });
 })();
 </script>
 <!--BOOK-END-->
