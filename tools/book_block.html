@@ -414,7 +414,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     fillCharts(page);
     /* number every figure in reading order; wrap wide tables so they scroll instead of overflowing */
     [].forEach.call(page.querySelectorAll('figure'), function(f, i){
-      var cap = f.querySelector('figcaption'); if(!cap) return; var lab = 'Figure ' + (k + 1) + '.' + (i + 1) + '.';
+      var cap = f.querySelector('figcaption'); if(!cap) return; var lab = 'Figure ' + (BOOK.unit === 'stages' ? k : k + 1) + '.' + (i + 1) + '.';
       var fn = cap.querySelector('.fnum'); if(fn) fn.textContent = lab; else cap.insertAdjacentHTML('afterbegin', '<span class="fnum">' + lab + '</span>'); });
     [].forEach.call(page.querySelectorAll('.fig-compare table'), function(t){ if(t.parentNode.className !== 'tw'){ var w = document.createElement('div'); w.className = 'tw'; t.parentNode.insertBefore(w, t); w.appendChild(t); } });
     $('bkHeadT').textContent = c.label + ' · ' + c.title;
@@ -465,7 +465,7 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
     try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
   }
-  window.openBook = openBook; window.closeBook = closeBook;
+  window.openBook = openBook; window.closeBook = closeBook; window.__bookTest = {openReader: openReader, books: function(){ return BOOKS; }};
 
   /* ---------- the library ---------- */
   var lib = $('bkLib'), libQ = '', libSort = ls('ots_lib_sort') || 'order';

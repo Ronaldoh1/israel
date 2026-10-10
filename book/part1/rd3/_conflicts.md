@@ -8,7 +8,7 @@
 - De Haan killing, 1924: Tehomi (1985) named Yitzhak Ben-Zvi as the source of the order vs some historians dispute Ben-Zvi's involvement; rests on Tehomi alone. Section: dh_s01. Scene: dh_s01.
 - Annual Jewish immigration 1923–1936: State Department series from British returns (e.g. 1933: 30,327; 1935: 61,854) vs Porath series printed by JVL (1933: 37,337; 1935: 66,472); agree 1928–1931; 1936 reversed (29,727 vs 29,595); unexplained. Sections: rd3_aliyot, pf_s01, hol_s02, rd3_council_1935, _outro. Research: aliyot_1924_1936.
 - Wave totals vs annual returns: JVL Fourth Aliyah 82,000 (1924–29) exceeds either annual series; JVL 174,000 settled 1933–36 falls between the two series. Section: rd3_aliyot. Research: aliyot_1924_1936.
-- 1935 immigrant categories: Alling's estimate of 44,000 in "other categories" vs 61,854 − 14,653 − 13,076 ≈ 34,000. Sections: rd3_aliyot, rd3_council_1935. Research: aliyot_1924_1936.
+- 1935 immigrant categories: Alling's estimate of 44,000 in "other categories" vs 61,854 − 14,653 − 13,076 ≈ 34,000. Section: rd3_aliyot. Research: aliyot_1924_1936.
 - Brit Shalom's founders: Buber and Magnes "both founders" with Scholem and Szold (s00b3) vs Encyclopaedia Judaica: initiative of Ruppin, different founding members, Magnes never a member. Section: rd3_brit_shalom. Scenes/research: s00b3, hebrew_university_brit_shalom_1925.
 - Louis Marshall's death: one summary places it in the month the riots began (September 1929) vs the violence began in August 1929. Section: us_s03. Scenes: us_s03, s07a4.
 - Jewish dead of August 1929: 133 (EBSCO, JVL) vs 113 (Jerusalem Story, IPS); both give 116 Arabs. Sections: s07a4, _intro, _outro. Scene/research: s07a4, western_wall_riots_1928_1930.
@@ -17,7 +17,7 @@
 - Hope Simpson (no margin without development; 100,000 dunams at most; landless class) vs Jewish Agency memorandum of 1931 challenging his statistical bases. Section: rd3_land. Research: hope_simpson_land_1930.
 - Jaffa cement-barrel seizure: 16 October 1935 (Palestine Post and Peel report, via the cement-barrels account) vs 18 November 1935 (Encyclopaedia Judaica). Sections: s07e2, rd3_qassam. Scene/research: s07e2, haganah_1929_1935.
 - Haganah intelligence: first Jewish intelligence organization founded under the Haganah in 1929 vs the Shai founded in 1940 (same compiled account); 1929 unconfirmed. Section: s07e2. Scene: cia_s01.
-- Haavara total: £8.1 million, about $40.4 million (JVL) vs $100 million (Center for Israel Education). Sections: hv_s01, rd3_arlosoroff. Scene/research: hv_s01, arlosoroff_london_agreements_1933_1935.
+- Haavara total: £8.1 million, about $40.4 million (JVL) vs $100 million (Center for Israel Education). Sections: hv_s01, rd3_arlosoroff. Scene/research: hv_s01, arlosoroff_london_agreements_1933_1935. Not printed after the fact audit, which removed the $100 million figure; the book gives the itemized JVL total only.
 - Al-Qassam's following: 50–200 fighters (Al Majalla, from British archives) vs a claim of 800, called "grossly exaggerated". Section: rd3_qassam. Research: qassam_1921_1935.
 - Al-Qassam's last fight: died with two colleagues (Al Majalla) vs four of his men killed (Palestine Question encyclopedia; US consul, who adds five captured). Section: rd3_qassam. Research: qassam_1921_1935.
 - Al-Qassam's arrival in Haifa: late 1920 vs December 1920. Section: rd3_qassam. Research: qassam_1921_1935.

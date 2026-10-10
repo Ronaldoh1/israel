@@ -6,30 +6,27 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
 
 ---
 
-## 0. Deep rebuild of Volumes I and II (LIBRARY-PROTOCOL.md)
+## 0. Deep rebuild of Volumes I and II (LIBRARY-PROTOCOL.md) — DONE 10 October 2026
 
-- [x] Protocol locked (`book/LIBRARY-PROTOCOL.md`); figure markup (`book/FIGURES.md`); writer brief (`book/DEEP-BRIEF.md`); coverage check (`tools/book_coverage.py`).
-- [x] **Pilot: Volume II, Stage Two (rd2, 1917–1922)**:
-  - rebuilt from 7,929 to about 30,000 words
-  - 12 → 18 sections, with 6 scenes drawn from other chapters
-  - 10 blind spots researched live (78 sources)
-  - 55 figures
-  - coverage, audit and edit gates passed
-- [ ] **Ron reviews the pilot.** His sign-off sets the standard for everything after it.
-- [ ] Rebuild the rest of Volume II stage by stage: rd0, rd1, rd3, rd4, rd5, rd6. For each stage:
-  - cross-library pull
-  - blind-spot research
-  - write, coverage, audit, edit, render
-- [ ] Rebuild Volume I, *The Baseline* (six chapters), the same way. The Lines chapter stays a field guide.
-- [ ] **Verify every quotation taken from research addenda against the original page.** The research tool reads page summaries, so exact wording was not checked against the originals.
-- [ ] Stage Two gaps not yet researched:
-  - the Treaties of Sèvres (1920) and Lausanne (1923)
-  - the Vatican and the churches on the Mandate (1919–22)
-  - the Syrian General Congress (1919–20) and its claim to Palestine
-- [ ] Bring every research addendum into the simulation as scenes (`book/research/TO-SIMULATION.md`).
-- [ ] **Replace the Grokipedia citations** in the simulation with primary or neutral sources: 7 keys, including `grokipedia_betar`, which Stage Two uses.
-- [ ] The Gaza death tolls in Stage Two's s06 come from a scene with no date. Re-check them live and stamp them "as of".
-- [ ] Ask Ron for Books 0–9 (July–August 2026) and the deliberation file. Use them as leads for the deep rebuild, entering each fact as a sourced research addendum.
+- [x] Protocol, figure markup, writer/planner/finisher/audit/edit briefs, coverage check (`tools/book_coverage.py`).
+- [x] Chart engine: dashboards and maps drawn inside the book (`tools/charts.js`), standalone modules (`modules/`), JSON data layer for Next.js (`export/`).
+- [x] All 14 chapters rebuilt (Baseline 6 + Lines, Road to 1948 Prelude + 6 stages): cross-library pull, blind-spot research (≈1,000 new sourced claims), writing, coverage PASS, independent fact audit, edit. About 320,000 words of prose, 585 figures, 210 sections; every note resolves; no figure overflows on phone or desktop.
+- [ ] **Ron reviews Volumes I and II.** His sign-off locks the standard.
+- [ ] **Research the gaps the web-search limit cut short** (listed per chapter in `book/part1/<chapter>/_blindspots.md`), among them:
+  - Baseline: holy places and the status quo; where "Nakba", "settler colonialism" and "Judea and Samaria" come from; Israeli textbooks and the 2011 Nakba Law; Christian positions beyond Christian Zionism; the Hebrew revival and Arabic; exodus figures for Tunisia, Syria and Lebanon.
+  - Prelude: Zahir al-Umar and Jazzar; the Damascus affair; the 1852 Status Quo; Montefiore; Ahad Ha'am's 1891 essay; Arab population by decade; the 1886 Petah Tikva clash.
+  - Stage One: the Hebrew revival and the 1913 "language war".
+  - Stage Two: Sèvres and Lausanne; the churches on the Mandate; the Syrian General Congress.
+  - Stage Three: the kibbutz movement; the Syrian revolt's effect; Haifa harbour; Arab immigration in the 1930s.
+  - Stage Four: the Yishuv's response to the Holocaust; the Jewish Brigade; British ministers before Bevin; the Arab League 1944–45; the American Council for Judaism; Tower and Stockade; Bludan.
+  - Stage Five: the Arab League's 1945–48 decisions; the date of the US embargo; Arab war dead; Operations Yoav, Hiram and Horev; Security Council Resolution 50.
+  - Stage Six: the Tripartite Declaration; refugee compensation in 1951; selective immigration rules; Bedouin and Galilee land.
+- [ ] **Verify every quotation from the new research against the original page** (the research tool reads page summaries).
+- [ ] **Fix the simulation** where the books found it wrong or self-contradictory (≈230 entries in `SOURCE-CONFLICTS.md`). Priority: the Arab Revolt toll in s07a5 (2,652 Jews / 618 British, attributed to USHMM, unverifiable, every other source gives ~400–415 / 100–200); s10's "750,000 undisputed"; citation keys attached to the wrong claims (oc_ch03, us_s08, iaa_s03).
+- [ ] **Replace the Grokipedia citations** in the simulation (7 keys) with primary or neutral sources.
+- [ ] **Bring the new research into the simulation** as scenes (`book/research/TO-SIMULATION.md` and the planners' notes in `book/research/*-notes.md`).
+- [ ] Fill empty citation labels in the simulation's registry (e.g. `w_arafat`, `wiki_flag_of_israel`, `palquest_wzo`).
+- [ ] Ask Ron for Books 0–9 (July–August 2026) and the deliberation file, to use as leads (each fact entered as a sourced research addendum).
 
 ## 1. Write the remaining volumes (III–LXVII)
 
