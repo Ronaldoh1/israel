@@ -30,7 +30,7 @@
 - Start of the land-sale ban: 1892 (Ocak, Porath) vs 1893, extended April 1894 (Barın) vs the note of 27 March 1894 (US dispatch); s01 rothP reading also uses 1892 (rd0_limits, bc_s04).
 - The 24 June 1891 protest: a petition from Jerusalem notables vs a telegram from Jerusalem and Jaffa (rd0_limits, rd0_arab_responses).
 - Whether early Arab opposition was political: doubtful (Jewish Agency overview) vs directed at the state from the start (Mandel, Beška) (rd0_limits).
-- Span of Barın's "more than 50,000" figure: given as 1882–1920 in bc_s07 vs stated as not given in the passage relied on in rd0_limits (internal inconsistency between sections; needs editorial check).
+- Span of Barın's "more than 50,000" figure: resolved in audit. The claim (rd0_ottoman_restrictions) gives no span; the thesis title covers 1882–1920. bc_s07 and rd0_limits now both say the study covers 1882–1920 but the passage does not say which years the figure counts.
 - Edmond's refusal of Herzl, July 1896: telegram only, per the diary (herzl_diaries_vol2_archive) vs refusal to receive him, then a meeting via an intermediary (s01 rothP) (bc_s04, s03).
 - Edmond's funding period: 1882–1895 vs 1883–1900 (bc_s04).
 - Edmond and the JCA: told to begin lending in 1896 vs administration transferred in 1899 (bc_s04, s04b).
