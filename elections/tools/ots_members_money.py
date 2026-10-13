@@ -303,38 +303,69 @@ def api_get(path, key, **q):
     time.sleep(3.7)   # stays under the API's 1,000 calls an hour
     return json.loads(b) if b else None
 
-def api_extras(people, key, info, since, used):
-    log('\nFEC API: top donor employers per cycle, and earmarks through foreign-policy conduits')
-    for i, p in enumerate(people, 1):
-        out = os.path.join(p.folder(), 'donor_employers_by_cycle.csv')
-        if os.path.exists(out) or not p.pcc: continue
-        rows = []
-        for y, cmte in sorted(p.pcc):
-            if y < max(since, 2008): continue
-            d = api_get('/schedules/schedule_a/by_employer/', key, committee_id=cmte, cycle=y, sort='-total', per_page=20)
-            for r in (d or {}).get('results', []): rows.append([y, cmte, r.get('employer'), money(r.get('total')), r.get('count')])
-        wcsv(out, ['cycle', 'committee', 'employer', 'total', 'donations'], rows)
-        if i % 20 == 0: log(f'  {i} of {len(people)}')
-    conduits = [cid for cid, c in info.items() if cid in used and c['foreign_policy'] and c['type'] in ('PAC', 'PAC (nonqualified)')]
+def api_extras(people, key, info, since, used, dl):
+    """1) individual donations forwarded through foreign-policy PACs acting as conduits (earmarks), for everyone;
+       2) top employers of each person's individual donors, cycle by cycle. Both resumable."""
+    start = max(since, 2008)
     cm_to_p = {}
     for p in people:
         for _, cmte in p.pcc: cm_to_p[cmte] = p
-    ear = {p.id: [] for p in people}
-    for cid in conduits:
-        last = {}
-        while True:
-            d = api_get('/schedules/schedule_b/', key, committee_id=cid, min_date=f'{max(since, 2008)}-01-01', per_page=100, sort='-disbursement_date', **last)
-            if not d or not d.get('results'): break
-            for r in d['results']:
-                p = cm_to_p.get(r.get('recipient_committee_id') or '')
-                if p: ear[p.id].append([r.get('disbursement_date', '')[:10], money(r.get('disbursement_amount')), cid, info[cid]['name'], info[cid]['foreign_policy'],
-                                        r.get('disbursement_description') or r.get('memo_text') or '', r.get('memo_code') or '', r.get('pdf_url') or ''])
-            li = (d.get('pagination') or {}).get('last_indexes')
-            if not li: break
-            last = li
+    conduits = sorted(cid for cid, c in info.items() if cid in used and c['foreign_policy'] and c['type'] in ('PAC', 'PAC (nonqualified)'))
+    log(f'\nFEC API 1/2: earmarked donations through {len(conduits)} flagged foreign-policy PACs (every recipient, since {start})')
+    ear = {p.id: [] for p in people}; allrows = []
+    for n, cid in enumerate(conduits, 1):
+        cache = os.path.join(dl, 'fec_api', f'conduit_{cid}_{start}.json')
+        if os.path.exists(cache):
+            rows = json.load(open(cache))
+        else:
+            rows, last, pages = [], {}, 0
+            while True:
+                d = api_get('/schedules/schedule_b/', key, committee_id=cid, min_date=f'{start}-01-01', per_page=100, sort='-disbursement_date', **last)
+                if not d or not d.get('results'): break
+                for r in d['results']:
+                    rows.append([r.get('disbursement_date', '')[:10], money(r.get('disbursement_amount')), r.get('recipient_committee_id') or '',
+                                 r.get('recipient_name') or '', r.get('disbursement_description') or r.get('memo_text') or '', r.get('memo_code') or '', r.get('pdf_url') or ''])
+                pages += 1
+                if pages % 25 == 0: log(f'    {info[cid]["name"]}: {len(rows)} rows so far')
+                li = (d.get('pagination') or {}).get('last_indexes')
+                if not li: break
+                last = li
+            os.makedirs(os.path.dirname(cache), exist_ok=True)
+            json.dump(rows, open(cache, 'w'))
+        log(f'  {n} of {len(conduits)}: {info[cid]["name"]} ({info[cid]["foreign_policy"]}): {len(rows)} disbursements')
+        for r in rows:
+            p = cm_to_p.get(r[2])
+            allrows.append([r[0], r[1], cid, info[cid]['name'], info[cid]['foreign_policy'], r[2], r[3], p.id if p else '', r[4], r[5], r[6]])
+            if p: ear[p.id].append([r[0], r[1], cid, info[cid]['name'], info[cid]['foreign_policy'], r[4], r[5], r[6]])
+    wcsv(os.path.join(ROOT, 'foreign_policy_pac_disbursements.csv'), ['date', 'amount', 'pac_id', 'pac', 'country', 'recipient_committee', 'recipient',
+         'official', 'description', 'memo_code', 'filing'], allrows)
+    totals = {}
     for p in people:
-        if ear[p.id]: wcsv(os.path.join(p.folder(), 'foreign_policy_conduit_transfers.csv'),
-                           ['date', 'amount', 'conduit_id', 'conduit', 'country', 'description', 'memo_code', 'filing'], ear[p.id])
+        if ear[p.id]:
+            wcsv(os.path.join(p.folder(), 'foreign_policy_conduit_transfers.csv'),
+                 ['date', 'amount', 'conduit_id', 'conduit', 'country', 'description', 'memo_code', 'filing'], ear[p.id])
+            totals[p.id] = round(sum(r[1] for r in ear[p.id] if 'EARMARK' in (r[5] or '').upper() or r[6] == 'X'), 2)
+    add_column('flagged_foreign_policy_earmarks_api', totals)
+    log(f'\nFEC API 2/2: top donor employers per cycle (about 4 seconds per lookup; safe to stop and re-run)')
+    todo = [p for p in people if p.pcc and not os.path.exists(os.path.join(p.folder(), 'donor_employers_by_cycle.csv'))]
+    for i, p in enumerate(todo, 1):
+        rows = []
+        for y, cmte in sorted(p.pcc):
+            if y < start: continue
+            d = api_get('/schedules/schedule_a/by_employer/', key, committee_id=cmte, cycle=y, sort='-total', per_page=20)
+            for r in (d or {}).get('results', []): rows.append([y, cmte, r.get('employer'), money(r.get('total')), r.get('count')])
+        wcsv(os.path.join(p.folder(), 'donor_employers_by_cycle.csv'), ['cycle', 'committee', 'employer', 'total', 'donations'], rows)
+        if i % 20 == 0: log(f'  {i} of {len(todo)}')
+
+def add_column(name, values):
+    path = os.path.join(ROOT, 'summary.csv')
+    rows = list(csv.reader(open(path, encoding='utf-8')))
+    if name in rows[0]: k = rows[0].index(name)
+    else: rows[0].append(name); k = len(rows[0]) - 1
+    for r in rows[1:]:
+        while len(r) <= k: r.append('')
+        r[k] = values.get(r[0], 0)
+    wcsv(path, rows[0], rows[1:])
 
 # ---------------------------------------------------------------- output
 def write(people, totals, tx, info):
@@ -393,7 +424,7 @@ def main():
         f'{sum(1 for c in info.values() if c["fara_registrant"])} connected to a registered foreign agent')
     log('\nCollecting money'); totals, tx = collect(people, dl, cycles, info)
     used = write(people, totals, tx, info)
-    if key: api_extras(people, key, info, since, used)
+    if key: api_extras(people, key, info, since, used, dl)
     else: log('\n(No FEC_API_KEY: skipped donor employers and conduit earmarks. Free key: https://api.data.gov/signup/)')
     log(f'\nFinished: {len(people)} people in {ROOT}\n  Start with summary.csv and foreign_policy_committees.csv.'
         f'\n\nTo share it:\n  cd "{ROOT}"\n  git init -b main; git add -A; git commit -m "Members money {NOW}"'
