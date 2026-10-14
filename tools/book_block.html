@@ -350,7 +350,9 @@ body.book-open #libBanner{display:none}
   /* sources added by the library's own research (book/research/*.json) */
   Object.keys(LIB.cites || {}).forEach(function(k){ if(!CIT[k]) CIT[k] = LIB.cites[k][0]; if(!LBL[k]) LBL[k] = LIB.cites[k][1]; });
   var secOf = {}, where = {};  // scene id -> [book index, chapter index]; a section's own id and its main scene win over scenes it also draws on
-  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; secOf[s.s] = s.s; if(s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
+  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; secOf[s.s] = s.s; }); }); });
+  /* a section's own id always wins; a section's main scene maps to it only if no section carries that id */
+  BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ if(s.scene && secOf[s.scene] !== s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ (s.draws || []).forEach(function(d){ if(!where[d]){ where[d] = [bi, k]; secOf[d] = s.s; } }); }); }); });
   function useBook(bi){ curBook = bi; BOOK = BOOKS[bi]; }
   var prefs = ls('ots_book_prefs') || {theme:'paper', fs:0};
