@@ -124,6 +124,14 @@ Before writing, each chapter runs three checks. The results are written down in 
 
 ## 5. Depth and structure
 
+**The depth standard (locked by Ron, 14 October 2026): every volume is built to the depth of Volume II, The Road to 1948.**
+That volume is the benchmark: 7 stages, 187 sections, about 278,000 words, and about 640 live-verified research claims across its stage research files, every one with a source. For each later volume this means:
+- The volume is split into **stages** (chapters), each one a period or a thread, each with its own research file (book/research/<stage>.json), manifest, opener and closing synthesis.
+- Every simulation scene in the volume's period is placed, and the **blind-spot research is done before writing**, not patched in after. A serious historian of the period should not find a major event, actor or dispute missing.
+- Research per stage aims at the Road-to-1948 range: roughly 8–16 research entries and 75–140 verified claims per stage, with disputes logged.
+- Sections run as long as the research supports (about 1,500–3,000 words each when the material is rich). A volume is not shortened to fit a session; it is built across as many sessions as it needs.
+- A volume that falls short of this depth is not locked. It stays in draft until the gap is closed.
+
 **Length follows the research, never padding.**
 - A section built on a rich scene with deep dives runs about 1,500–3,000 words. A thin one stays short.
 - A chapter (or stage) typically runs 12,000–25,000 words.
