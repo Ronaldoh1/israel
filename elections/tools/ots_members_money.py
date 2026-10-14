@@ -102,10 +102,16 @@ CTX = _ctx()
 CERT_HELP = ('\n  SSL certificate problem. On a Mac, open Applications > Python 3.x and double-click "Install Certificates.command"'
              '\n  (or run: pip3 install certifi), then run this again.\n')
 
-def fetch(url, dest=None, headers=None, tries=4, quiet=False):
+class NetworkDown(Exception):
+    """the connection stayed down; nothing partial gets saved, and running the same command again continues"""
+
+def fetch(url, dest=None, headers=None, tries=4, quiet=False, patience=1800):
+    """GET a URL to bytes, or stream it to a file (re-uses a finished file). Returns None only for a definite answer
+    such as 'not found'. If the connection drops it waits up to `patience` seconds for it to come back, then raises NetworkDown."""
     if dest and os.path.exists(dest) and os.path.getsize(dest) > 0: return dest
     h = {'User-Agent': UA, 'Accept': '*/*'}; h.update(headers or {})
-    for i in range(tries):
+    i = 0; down_since = None; k = 0
+    while i < tries:
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=h), context=CTX, timeout=180) as r:
                 if not dest: return r.read()
@@ -119,18 +125,20 @@ def fetch(url, dest=None, headers=None, tries=4, quiet=False):
                         if total > 20e6 and time.time() - last > 5: log(f'      {got / 1e6:.0f} of {total / 1e6:.0f} MB'); last = time.time()
             os.replace(dest + '.part', dest); return dest
         except urllib.error.HTTPError as e:
+            down_since = None
             if e.code == 429 or e.code >= 500:
-                wait = 30 * (i + 1); log(f'    busy ({e.code}); waiting {wait}s'); time.sleep(wait); continue
+                i += 1; wait = 30 * i; log(f'    busy ({e.code}); waiting {wait}s'); time.sleep(wait); continue
             if not quiet: log(f'    HTTP {e.code}: {url.split("api_key=")[0]}')
             return None
         except (ssl.SSLError, ssl.CertificateError):
             log(CERT_HELP); raise SystemExit(1)
-        except urllib.error.URLError as e:
-            if isinstance(getattr(e, 'reason', None), ssl.SSLError) or 'CERTIFICATE' in str(e).upper(): log(CERT_HELP); raise SystemExit(1)
-            log(f'    network error ({e.reason}); retrying'); time.sleep(5 * (i + 1))
         except Exception as e:
-            log(f'    error ({e}); retrying'); time.sleep(5 * (i + 1))
-    return None
+            if isinstance(getattr(e, 'reason', None), ssl.SSLError) or 'CERTIFICATE' in str(e).upper(): log(CERT_HELP); raise SystemExit(1)
+            down_since = down_since or time.time()
+            if time.time() - down_since > patience: raise NetworkDown(str(getattr(e, 'reason', e)))
+            wait = min(60, 5 * 2 ** k); k += 1
+            log(f'    connection problem ({getattr(e, "reason", e)}); waiting {wait}s for it to come back'); time.sleep(wait)
+    raise NetworkDown(f'the server kept answering "busy" for {url.split("?")[0]}')
 
 def norm(s):
     s = unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode().lower()
@@ -312,16 +320,18 @@ def api_extras(people, key, info, since, used, dl):
         for _, cmte in p.pcc: cm_to_p[cmte] = p
     conduits = sorted(cid for cid, c in info.items() if cid in used and c['foreign_policy'] and c['type'] in ('PAC', 'PAC (nonqualified)'))
     log(f'\nFEC API 1/2: earmarked donations through {len(conduits)} flagged foreign-policy PACs (every recipient, since {start})')
-    ear = {p.id: [] for p in people}; allrows = []
+    ear = {p.id: [] for p in people}; allrows = []; incomplete = []
     for n, cid in enumerate(conduits, 1):
-        cache = os.path.join(dl, 'fec_api', f'conduit_{cid}_{start}.json')
+        ok = True
+        cache = os.path.join(dl, 'fec_api', f'conduit2_{cid}_{start}.json')
         if os.path.exists(cache):
             rows = json.load(open(cache))
         else:
-            rows, last, pages = [], {}, 0
+            rows, last, pages, ok = [], {}, 0, True
             while True:
                 d = api_get('/schedules/schedule_b/', key, committee_id=cid, min_date=f'{start}-01-01', per_page=100, sort='-disbursement_date', **last)
-                if not d or not d.get('results'): break
+                if d is None: ok = False; break
+                if not d.get('results'): break
                 for r in d['results']:
                     rows.append([r.get('disbursement_date', '')[:10], money(r.get('disbursement_amount')), r.get('recipient_committee_id') or '',
                                  r.get('recipient_name') or '', r.get('disbursement_description') or r.get('memo_text') or '', r.get('memo_code') or '', r.get('pdf_url') or ''])
@@ -330,9 +340,11 @@ def api_extras(people, key, info, since, used, dl):
                 li = (d.get('pagination') or {}).get('last_indexes')
                 if not li: break
                 last = li
-            os.makedirs(os.path.dirname(cache), exist_ok=True)
-            json.dump(rows, open(cache, 'w'))
-        log(f'  {n} of {len(conduits)}: {info[cid]["name"]} ({info[cid]["foreign_policy"]}): {len(rows)} disbursements')
+            if ok:
+                os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(rows, open(cache, 'w'))
+            else:
+                incomplete.append(info[cid]['name'])
+        log(f'  {n} of {len(conduits)}: {info[cid]["name"]} ({info[cid]["foreign_policy"]}): {len(rows)} disbursements' + ('' if ok else ' (INCOMPLETE: not saved, retried next run)'))
         for r in rows:
             p = cm_to_p.get(r[2])
             allrows.append([r[0], r[1], cid, info[cid]['name'], info[cid]['foreign_policy'], r[2], r[3], p.id if p else '', r[4], r[5], r[6]])
@@ -346,15 +358,17 @@ def api_extras(people, key, info, since, used, dl):
                  ['date', 'amount', 'conduit_id', 'conduit', 'country', 'description', 'memo_code', 'filing'], ear[p.id])
             totals[p.id] = round(sum(r[1] for r in ear[p.id] if 'EARMARK' in (r[5] or '').upper() or r[6] == 'X'), 2)
     add_column('flagged_foreign_policy_earmarks_api', totals)
+    if incomplete: log(f'  {len(incomplete)} PAC list(s) incomplete and not saved; run again to finish them: ' + '; '.join(incomplete))
     log(f'\nFEC API 2/2: top donor employers per cycle (about 4 seconds per lookup; safe to stop and re-run)')
     todo = [p for p in people if p.pcc and not os.path.exists(os.path.join(p.folder(), 'donor_employers_by_cycle.csv'))]
     for i, p in enumerate(todo, 1):
-        rows = []
+        rows, ok = [], True
         for y, cmte in sorted(p.pcc):
             if y < start: continue
             d = api_get('/schedules/schedule_a/by_employer/', key, committee_id=cmte, cycle=y, sort='-total', per_page=20)
-            for r in (d or {}).get('results', []): rows.append([y, cmte, r.get('employer'), money(r.get('total')), r.get('count')])
-        wcsv(os.path.join(p.folder(), 'donor_employers_by_cycle.csv'), ['cycle', 'committee', 'employer', 'total', 'donations'], rows)
+            if d is None: ok = False; continue
+            for r in d.get('results', []): rows.append([y, cmte, r.get('employer'), money(r.get('total')), r.get('count')])
+        if ok: wcsv(os.path.join(p.folder(), 'donor_employers_by_cycle.csv'), ['cycle', 'committee', 'employer', 'total', 'donations'], rows)
         if i % 20 == 0: log(f'  {i} of {len(todo)}')
 
 def add_column(name, values):
@@ -431,4 +445,9 @@ def main():
         f'\n  git remote add origin git@github.com:Ronaldoh1/<repo>.git; git push -u origin main')
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except NetworkDown as e:
+        log(f'\nThe internet connection was down for 30 minutes ({e}).\nEverything finished so far is saved. When you are back online,'
+            ' run the same command again in the same folder: it skips what is already done and continues.')
+        raise SystemExit(2)

@@ -103,10 +103,12 @@ def find_committees(people, dl, cycles, cm, key):
             if os.path.exists(cache): res = json.load(open(cache))
             else:
                 res = []
+                ok = True
                 for cand in sorted(p.fec_ids):
                     d = M.api_get('/committees/', key, sponsor_candidate_id=cand, per_page=100)
-                    res += [[c.get('committee_id'), c.get('name'), c.get('designation')] for c in (d or {}).get('results', [])]
-                os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(res, open(cache, 'w'))
+                    if d is None: ok = False; continue
+                    res += [[c.get('committee_id'), c.get('name'), c.get('designation')] for c in d.get('results', [])]
+                if ok: os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(res, open(cache, 'w'))
             for cid, nm, ds in res:
                 if cid and cid not in p.pcc: (p.jfc if ds == 'J' else p.lead).setdefault(cid, 'FEC API (sponsor)')
             if i % 50 == 0: log(f'  sponsors checked: {i} of {len(people)}')
@@ -201,6 +203,7 @@ def superpac_donors(people, dl, key, info, ie_rows, threshold):
         if os.path.exists(cache): res = json.load(open(cache))
         else:
             d = M.api_get('/schedules/schedule_a/', key, committee_id=cid, two_year_transaction_period=y, sort='-contribution_receipt_amount', per_page=100)
+            if d is None: continue
             res = [[r.get('contributor_name'), r.get('contributor_employer'), r.get('contributor_occupation'), r.get('entity_type_desc') or r.get('entity_type'),
                     r.get('contributor_id') or '', money(r.get('contribution_receipt_amount')), (r.get('contribution_receipt_date') or '')[:10], r.get('pdf_url') or '']
                    for r in (d or {}).get('results', [])]
@@ -224,20 +227,23 @@ def earmarks(people, dl, key, info, start):
     log(f'  {len(flagged)} flagged PACs to check (results already fetched by the first pass are reused)')
     rows = {p.id: [] for p in people}; allrows = []
     for n, cid in enumerate(flagged, 1):
-        cache = os.path.join(dl, 'fec_api', f'conduit_{cid}_{start}.json')
+        cache = os.path.join(dl, 'fec_api', f'conduit2_{cid}_{start}.json')
         if os.path.exists(cache): res = json.load(open(cache))
         else:
             res, last = [], {}
+            ok = True
             while True:
                 d = M.api_get('/schedules/schedule_b/', key, committee_id=cid, min_date=f'{start}-01-01', per_page=100, sort='-disbursement_date', **last)
-                if not d or not d.get('results'): break
+                if d is None: ok = False; break
+                if not d.get('results'): break
                 for r in d['results']:
                     res.append([r.get('disbursement_date', '')[:10], money(r.get('disbursement_amount')), r.get('recipient_committee_id') or '',
                                 r.get('recipient_name') or '', r.get('disbursement_description') or r.get('memo_text') or '', r.get('memo_code') or '', r.get('pdf_url') or ''])
                 li = (d.get('pagination') or {}).get('last_indexes')
                 if not li: break
                 last = li
-            os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(res, open(cache, 'w'))
+            if ok: os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(res, open(cache, 'w'))
+            else: log(f'  {info[cid]["name"]}: incomplete, not saved (retried next run)')
         for r in res:
             p = owner.get(r[2])
             row = [r[0], r[1], cid, info[cid]['name'], info[cid]['foreign_policy'], info[cid]['foreign_policy_reason'], r[2], r[3], p.id if p else '', r[4], r[5], r[6]]
@@ -275,12 +281,12 @@ def lobbyists(people, dl):
         if os.path.exists(cache): items = json.load(open(cache))
         else:
             items, url = [], f'{base}/contributions/?' + urllib.parse.urlencode({'contribution_honoree': ' '.join(p.l), 'page_size': 25})
-            pages = 0; hits_before = 0
+            pages = 0; complete = True
             while url and pages < 400:
                 b = fetch(url, headers=H, quiet=True); time.sleep(pause); pages += 1
-                if not b: break
+                if not b: complete = False; break
                 try: d = json.loads(b)
-                except ValueError: break
+                except ValueError: complete = False; break
                 if pages == 4 and not items and (d.get('count') or 0) > 5000:
                     log(f'  the LD-203 search returned {d.get("count"):,} unrelated reports for {p.name}: its name filter did not apply.'
                         '\n  Stopping this step so it does not run for days; tell Claude and it will adjust the query.'); return out
@@ -293,7 +299,7 @@ def lobbyists(people, dl):
                                       (rep.get('lobbyist') or {}).get('first_name', '') + ' ' + (rep.get('lobbyist') or {}).get('last_name', '') if isinstance(rep.get('lobbyist'), dict) else '',
                                       it.get('payee_name') or '', hon, rep.get('filing_document_url') or rep.get('url') or ''])
                 url = d.get('next')
-            os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(items, open(cache, 'w'))
+            if complete: os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(items, open(cache, 'w'))
         if items:
             wcsv(os.path.join(p.folder, 'lobbyist_contributions_ld203.csv'), ['filing_year', 'date', 'amount', 'type', 'contributor', 'registrant_firm', 'lobbyist',
                  'payee', 'honoree', 'filing'], items)
@@ -423,4 +429,9 @@ def main():
         f'\nPush members-data to GitHub the same way as before when you are ready.')
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except M.NetworkDown as e:
+        log(f'\nThe internet connection was down for 30 minutes ({e}).\nEverything finished so far is saved. When you are back online,'
+            ' run the same command again in the same folder: it skips what is already done and continues.')
+        raise SystemExit(2)
