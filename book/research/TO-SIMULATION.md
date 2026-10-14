@@ -36,3 +36,12 @@ The library and the simulation are one record. Every research addendum written f
 | rd0_arab_responses | II, Prelude, rd0_limits | New scene in rd0: "The First Arab Responses, 1882–1896" |
 | rd0_yishuv_first_aliyah | II, Prelude, rd0_aliyah | New scene in rd0: "The Old Yishuv and the First Aliyah, in Numbers" |
 | rd0_suez_1875 | II, Prelude, bc_s02 | Deep dive on bc_s02's lionel_and_suez |
+
+
+## From the Baseline addendum (14 October 2026)
+
+New research in book/research/ch01.json that the simulation does not yet have as scenes:
+- holocaust_education_us: the GAO's July 2026 report on Holocaust education (43 of 51 states; 25 by law; 8 with neither; teacher training gap), the Never Again Education Act (29 May 2020), Echoes & Reflections and Yad Vashem's 1953 state status, the 2020 Claims Conference survey and its critic, the NEA's 2025 ADL vote and its reversal.
+- never_again_phrase: origin and the particular/universal meanings.
+- harrison_report_1945: the survivors in the camps, the 100,000 certificates, Truman and Attlee.
+Suggested scenes: "Never Again — What the Classroom Teaches" (Baseline, after s00a) and "The Harrison Report" (rd5).
