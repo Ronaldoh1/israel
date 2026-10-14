@@ -57,6 +57,16 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
   - AIPAC
 - [ ] Log every contradiction found inside the simulation in `book/SOURCE-CONFLICTS.md`. Don't resolve them silently.
 
+## 1b. Volume III and the reading order (Ron, 13 October 2026)
+
+- [ ] **Write Volume III, The Cold War Architecture (1949–1969), next.** Its core is already in the simulation: the 1953 founding of AIPAC's predecessor (s11), the Lavon affair (lv_s01), the 1962 FARA order to the American Zionist Council (s11a, fis_s06), Kennedy vs. Dimona (s11b), both threads ending with Kennedy's death (s11c), and what Johnson did instead (s11d).
+- [ ] **New research for Volume III, not yet in the simulation** (add as scenes first, then write):
+  - "One Nation Under God": the 1892 Pledge with no God; the 1942 Flag Code; the Knights of Columbus campaign from 1952; Rev. George Docherty's February 1954 sermon; Eisenhower signs on Flag Day, June 14, 1954; "In God We Trust" made the national motto in 1956. The documented motive is Cold War anti-communism. Any link to Israel or Christian Zionism is an interpretive reading and must be labeled as one.
+  - Eisenhower's 1956–57 pressure that forced Israel's withdrawal from Sinai, if it is not already covered.
+- [ ] **New research for Volume IX or V: the presidents and the Western Wall.** The Old City was under Jordanian control from 1948 to 1967, so no president could visit the Wall through Israel in that period. No sitting president visited Israel until Nixon in June 1974. Kennedy visited in 1939 (Mandatory Palestine) and 1951 (as a congressman), never as president. Trump was the first sitting president at the Wall, on May 22, 2017. Obama went as a candidate (2008), George W. Bush as governor (1998), Clinton after leaving office. Verify Nixon through Biden one by one before writing.
+- [ ] Merge the overlapping volumes: 13 and 52 (October 7); 14 and 25 (Netanyahu). Fold 23 The War Ledger (2 scenes) into Aid and Arms.
+- [ ] Renumber the shelf to the agreed reading order and add reading paths (Historian, Congress) to the library.
+
 ## 2. Covers (do last, all at once)
 
 - [ ] Once the writing is done, write one ChatGPT image prompt per volume (67), in a single batch with a consistent house style.
