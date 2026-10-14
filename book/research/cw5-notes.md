@@ -1,6 +1,6 @@
 # Stage Five (cw5, 1962–1963): research notes
 
-Verified live, 14 October 2026. 13 entries, 132 claims, 13 logged disputes, 28 source URLs. Every claim cites a page fetched in this session.
+Verified live, 14 October 2026. 17 entries, 179 claims, 15 logged disputes, 51 source URLs (including the gap-closing pass below). Every claim cites a page fetched in this session.
 
 **Conditions of this pass, stated plainly.** Web search ran out partway through: the turn's shared limit of 200 searches was used up after nine searches by this planner. Fetches were then possible only for URLs that had already appeared or had been approved earlier. Several key primary pages could not be fetched because their permission requests timed out:
 - the IRmep / Israel Lobby Archive document pages (israellobby.org/azcdoj, israellobby.org/fara, irmep.org/ILA/AZCDOJ, irmep.org/ILA/JA-AZC)
@@ -103,3 +103,40 @@ As a result:
   - the Council's membership figures for the 1960s
   - Elmer Berger's own role in the 1962–63 FARA question
   - the text of the State Department letter of 20 April 1964, known only through JTA's report
+
+## Gap-closing pass (14 October 2026, 18 searches used of the 25 allowed)
+
+### cw5_kennedy_nasser_1961_1962
+- **Primary:** FRUS 1961–63, vol. XVII, docs 64, 103, 148 and 249; vol. XVIII, doc. 70; the 11 May 1961 letter.
+- **Open:**
+  - the total value of the multi-year PL-480 agreement signed on 8 October 1962;
+  - the full text of Nasser's 22 August 1961 reply (Egyptian Streets excerpts only);
+  - the Johnson (PCC) refugee plan that Komer mentions.
+
+### cw5_yemen_war_1962_1963
+- **Agree:** the dates of the revolution, the US recognition (19 December 1962) and UNYOM.
+- **Discrepancy:** the dates of Soviet recognition (30 September in the UN account; 1 October in Riedel).
+- **Single source:** Israel's Operation Rotev (Riedel), undated in the source.
+
+### cw5_bathist_coups_1963
+- Mainly Wikipedia, which cites Seale, Mufti and Rabinovich, together with the Library of Congress country study and Gibson. These are reference sources, so their figures are attributed.
+- **Disputes:**
+  - the CIA's role in Iraq;
+  - death tolls;
+  - the date the NCRC was formed (9 or 24 March);
+  - the date Alwan was released (5 December in one page; about 18 July 1964 in another; not carried into the claims).
+
+### cw5_german_scientists_harel_1962_1963
+- **Sources:** the Israel State Archives release (via Israel Hayom), the contemporary JTA report, and compilations (JVL, Wikipedia, citing Bergman, Melman, Black and Morris).
+- **Open:**
+  - Harel's exact resignation day;
+  - the Basel trial's date and verdict;
+  - who killed Krug (contested).
+
+### Shukairy's appointment (added to cw5_shukairy_un_1963)
+- 1963 per PalQuest and Wikipedia. The day is not established.
+
+### FARA retry (still open)
+- No primary text of the 21 November 1962 order and no Justice Department correspondence for 1963–64 could be reached by search. The IRmep scans are not indexed, the JTA 1963 report is not in the results, and AJA hits were unrelated letters.
+- Smith's book *Foreign Agents* (2007) was confirmed to exist; its description gives no figure.
+- **The money:** $5,100,001.02 (the simulation and Volume II) against $1.5 million (Barda, unsourced). This is unreconciled, and both stay in, attributed.

@@ -1282,6 +1282,24 @@
      "url": "https://history.state.gov/historicaldocuments/frus1955-57v16/d557",
      "label": "FRUS 1955–1957, vol. XVI, doc. 557, Memorandum of a Conversation, Department of State, 8 November 1956, 10:45 a.m.",
      "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_jvl_bulganin1",
+     "url": "https://jewishvirtuallibrary.org/ben-gurion-exchange-with-soviet-premier-bulganin-regarding-threat-to-israel-november-1956",
+     "label": "Jewish Virtual Library, Bulganin to Ben-Gurion, 5 November 1956, and Ben-Gurion's reply, 8 November 1956 (texts)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_cvce_mollet",
+     "url": "https://webintra.cvce.eu/en/obj/letter_from_nikolai_bulganin_to_guy_mollet_on_the_suez_crisis_5_november_1956-en-55f243a1-de38-401d-9834-d279bf3874b3.html",
+     "label": "CVCE, Letter from Bulganin to Guy Mollet, 5 November 1956 (Documents diplomatiques français 1956, t. III, pp. 212–213)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_djn_23nov56",
+     "url": "https://digital.bentley.umich.edu/djnews/djn.1956.11.23.001/32",
+     "label": "Detroit Jewish News, 23 November 1956, JTA report on the Soviet notes",
+     "kind": "primary"
     }
    ],
    "claims": [
@@ -1338,6 +1356,34 @@
      "text": "On 8 November Assistant Secretary Rountree told Eban that Israel's withdrawal mattered for 'Western-Soviet relations and the relationship between the United States and Israel', and that failing to comply 'would endanger world peace'.",
      "sources": [
       "rs_cw3_frus16_d557"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Bulganin to Ben-Gurion, 5 November 1956: the Israeli government 'is playing with the fate of peace, with the fate of its own people, in a criminal and irresponsible manner', a policy that 'will place a question [mark] upon the very existence of Israel as a State'; the Soviet government had decided to advise its ambassador 'to leave Israel and immediately go to Moscow'.",
+     "sources": [
+      "rs_cw3_jvl_bulganin1"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Ben-Gurion's reply of 8 November expressed 'surprise and sorrow at the threat against Israel's existence and well-being contained in your Note' and said Israel's course 'is not and will not be decided by any foreign factor'.",
+     "sources": [
+      "rs_cw3_jvl_bulganin1"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Bulganin's letter to Mollet of the same day (Documents diplomatiques français) said, in CVCE's summary, that the USSR was prepared to employ 'all modern forms of destructive weaponry' to halt the intervention in Egypt.",
+     "sources": [
+      "rs_cw3_cvce_mollet"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "JTA (23 November 1956) reported that the letters to Eden, Mollet and Ben-Gurion demanded immediate withdrawal and reparations to Egypt and objected to stationing the UN force anywhere but on both sides of the armistice lines.",
+     "sources": [
+      "rs_cw3_djn_23nov56"
      ],
      "strength": "primary"
     }
@@ -2048,6 +2094,635 @@
        "sources": [
         "rs_cw3_origins_hahn",
         "rs_cw3_oren_hnn"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw3_un_resolutions_oct1956_feb1957",
+   "stage": "cw3",
+   "topic": "The UN record from the primary texts, 30 October 1956–2 February 1957: the vetoes, Resolution 119, the emergency-session resolutions and their votes",
+   "sources": [
+    {
+     "key": "rs_cw3_unu_ufp",
+     "url": "https://assemblyforpeace.unu.edu/?p=45",
+     "label": "United Nations University, \"Uniting for Peace: Cases of Practice\" (Suez 1956)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw3_unispal_sc119",
+     "url": "https://www.un.org/unispal/document/auto-insert-185786",
+     "label": "UNISPAL, Security Council Resolution 119 (1956), 31 October 1956 (S/3721), with vote",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_frus16_d467",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v16/d467",
+     "label": "FRUS 1955–1957, vol. XVI, doc. 467, Editorial Note on the first emergency special session and Resolution 997 (1–2 November 1956)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_palquest_997",
+     "url": "https://palquest.org/en/node/9928",
+     "label": "Text of General Assembly Resolution 997 (ES-I), 2 November 1956 (PalQuest documents)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_unproj_997",
+     "url": "https://un-project.org/votes/resolution/A-RES-997(ES-I)/",
+     "label": "UN Project roll-call record, A/RES/997(ES-I), 2 November 1956 (A/PV.562)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_unproj_998",
+     "url": "https://un-project.org/votes/resolution/A-RES-998(ES-I)/",
+     "label": "UN Project roll-call record, A/RES/998(ES-I), 4 November 1956 (A/PV.563)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_unproj_999",
+     "url": "https://un-project.org/votes/resolution/A-RES-999(ES-I)/",
+     "label": "UN Project roll-call record, A/RES/999(ES-I), 4 November 1956 (A/PV.563)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_unproj_1000",
+     "url": "https://un-project.org/votes/resolution/A-RES-1000(ES-I)/",
+     "label": "UN Project roll-call record, A/RES/1000(ES-I), 5 November 1956 (A/PV.565)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_undl_1001",
+     "url": "https://digitallibrary.un.org/record/208418?ln=ar",
+     "label": "UN Digital Library record, A/RES/1001(ES-I), 7 November 1956 (567th plenary; A/3354)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_undl_1002",
+     "url": "https://digitallibrary.un.org/record/208419?ln=fr",
+     "label": "UN Digital Library record, A/RES/1002(ES-I), 7 November 1956 (567th plenary; A/3354)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_unispal_1002",
+     "url": "https://www.un.org/unispal/document/auto-insert-177015",
+     "label": "UNISPAL, text of General Assembly Resolution 1002 (ES-I), 7 November 1956",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_jvl_1002",
+     "url": "https://jewishvirtuallibrary.org/un-general-assembly-resolution-1002-november-1956",
+     "label": "Jewish Virtual Library, UN General Assembly Resolution 1002 (with vote)",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw3_jvl_1124",
+     "url": "https://www.jewishvirtuallibrary.org/jsource/UN/unga1124.html",
+     "label": "Jewish Virtual Library, UN General Assembly Resolution 1124 (XI), 2 February 1957 (text and vote)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_milestones_suez",
+     "url": "https://history.state.gov/milestones/1953-1960/suez",
+     "label": "Office of the Historian, US Department of State, \"The Suez Crisis, 1956\" (Milestones)",
+     "kind": "scholarship"
+    }
+   ],
+   "claims": [
+    {
+     "text": "In the Security Council, Britain and France vetoed both the US draft (S/3710) and the Soviet draft (S/3713/Rev.1), each of which called for Israel to withdraw (UN University's Uniting for Peace case study; the Council's own Resolution 119 cites the 'lack of unanimity' at its 749th and 750th meetings of 30 October).",
+     "sources": [
+      "rs_cw3_unu_ufp",
+      "rs_cw3_unispal_sc119"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Resolution 119 (31 October 1956, S/3721), adopted at the 751st meeting by 7 votes to 2 (France and the United Kingdom against; Australia and Belgium abstaining), called an emergency special session of the General Assembly under the Uniting for Peace procedure, 'Considering that a grave situation has been created by action undertaken against Egypt'.",
+     "sources": [
+      "rs_cw3_unispal_sc119",
+      "rs_cw3_unu_ufp"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The first emergency special session convened at 5 p.m. on 1 November 1956 and adopted Resolution 997 (ES-I), from the US draft (A/3256), at about 4:20 a.m. on 2 November after some five hours of debate (FRUS editorial note).",
+     "sources": [
+      "rs_cw3_frus16_d467"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Resolution 997 urged an immediate cease-fire and a halt to moving forces and arms into the area; urged the armistice parties to withdraw behind the armistice lines, stop raids and observe the 1949 agreements; recommended that members not send military goods to the area; urged that the Suez Canal be reopened once the cease-fire took effect; asked the Secretary-General to report on compliance; and kept the Assembly in emergency session.",
+     "sources": [
+      "rs_cw3_palquest_997",
+      "rs_cw3_frus16_d467"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The vote on 997: 64 in favour, 5 against (Australia, France, Israel, New Zealand, United Kingdom), 6 abstentions (Belgium, Canada, Laos, Netherlands, Portugal, South Africa). Canada abstained because the text had no UN step toward a settlement; Pearson wanted the Secretary-General authorized to arrange a UN force, and Dulles said the US would welcome a Canadian proposal.",
+     "sources": [
+      "rs_cw3_unproj_997",
+      "rs_cw3_frus16_d467"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Resolution 998 (ES-I), 4 November 1956: 57 in favour, none against, 19 abstentions (including Britain, France, Israel, Egypt, the Soviet Union and its allies). Resolution 999, same day: 59–5–12 (the same five against). Resolution 1000, 5 November: 57–0–19. (Roll calls from the UN Project; the texts of 998, 999 and 1000, which created and organized UNEF, were not fetched.)",
+     "sources": [
+      "rs_cw3_unproj_998",
+      "rs_cw3_unproj_999",
+      "rs_cw3_unproj_1000"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Resolutions 1001 and 1002 (ES-I) were adopted at the 567th plenary on 7 November 1956 (A/3354). Resolution 1002 'Calls once again upon Israel immediately to withdraw all its forces behind the armistice lines' of the 24 February 1949 agreement and calls 'once again upon the United Kingdom and France immediately to withdraw all their forces from Egyptian territory'; the Jewish Virtual Library gives its vote as 65–1–10.",
+     "sources": [
+      "rs_cw3_undl_1001",
+      "rs_cw3_undl_1002",
+      "rs_cw3_unispal_1002",
+      "rs_cw3_jvl_1002"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Resolution 1124 (XI), 2 February 1957, adopted 74–2–2: it 'Deplores the non-compliance of Israel to complete its withdrawal behind the armistice demarcation line' and calls on Israel to complete it 'without further delay'; it follows Resolution 1123 of 19 January 1957.",
+     "sources": [
+      "rs_cw3_jvl_1124"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Was the UN's line against the invasion a US-led consensus or a broad one?",
+     "positions": [
+      {
+       "view": "US-led: 997 was the US draft and the US carried the Assembly against its own allies (FRUS; Office of the Historian).",
+       "sources": [
+        "rs_cw3_frus16_d467",
+        "rs_cw3_milestones_suez"
+       ]
+      },
+      {
+       "view": "Broad but not universal: only the three invaders plus Australia and New Zealand voted no; Canada and several Western states abstained on 997 for wanting a UN force rather than a bare cease-fire, and the Soviet bloc abstained on the UNEF resolutions.",
+       "sources": [
+        "rs_cw3_unproj_997",
+        "rs_cw3_unproj_998",
+        "rs_cw3_unproj_1000"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw3_feb1957_aidememoire_address_sanctions",
+   "stage": "cw3",
+   "topic": "February 1957 from the primary texts: the 11 February aide-mémoire, the sanctions debate, the 20 February address and the 1 March deal",
+   "sources": [
+    {
+     "key": "rs_cw3_jvl_aidememoire",
+     "url": "https://www.jewishvirtuallibrary.org/aide-memoire-from-secretary-of-state-dulles-to-ambassador-eban",
+     "label": "Jewish Virtual Library, text of the US aide-mémoire handed to Ambassador Eban, 11 February 1957 (released 17 February)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_israeled_ike",
+     "url": "https://israeled.org/eisenhower-resolutions",
+     "label": "Center for Israel Education, \"Eisenhower resolutions\" (chronology, February–March 1957)",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw3_frus17_d79",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v17/d79",
+     "label": "FRUS 1955–1957, vol. XVII, doc. 79, Memorandum of a Conversation (Eban, Shiloah, Murphy), 11 February 1957",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_frus17_d120",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v17/d120fn4",
+     "label": "FRUS 1955–1957, vol. XVII, doc. 120, Record of a Bipartisan Legislative Meeting, White House, 20 February 1957, 8:30–10:55 p.m.",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_frus17_d127",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v17/d127",
+     "label": "FRUS 1955–1957, vol. XVII, doc. 127, Letter from Dulles to Senator Lyndon B. Johnson (delivered 22 February 1957)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_app_20feb57",
+     "url": "https://www.presidency.ucsb.edu/node/234105",
+     "label": "American Presidency Project, Eisenhower, \"Radio and Television Address to the American People on the Situation in the Middle East\", 20 February 1957",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_frus17_d169",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v17/d169",
+     "label": "FRUS 1955–1957, vol. XVII, doc. 169, Memorandum of a Conversation, 28 February 1957, 5:36 p.m.",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "The US aide-mémoire handed to Eban on 11 February 1957 (released 17 February) said Israeli withdrawal from Gaza 'should be prompt and unconditional', that UNEF should 'move into this area and be on the boundary between Israel and the Gaza Strip', that 'the gulf comprehends international waters' where no nation may prevent 'free and innocent passage', and that the US 'is prepared to exercise the right of free and innocent passage and to join with others' to secure it.",
+     "sources": [
+      "rs_cw3_jvl_aidememoire",
+      "rs_cw3_israeled_ike"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Meeting Robert Murphy on 11 February, Eban said that if nothing else Israel had 'focused American thinking on the Gulf of Aqaba problem', and that 'a good deal of the momentum in favor of sanctions would evaporate' once the American position was known.",
+     "sources": [
+      "rs_cw3_frus17_d79"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "At the bipartisan meeting at the White House on 20 February (8:30–10:55 p.m.), Eisenhower said sanctions 'might take various forms'; Dulles listed 'German reparation payments to Israel, world-wide sale of Israeli government bonds, and US aid' as areas for consideration. Knowland proposed a resolution under which failure to comply in 30 days 'would properly subject the offender to economic, moral and diplomatic sanctions'; Lyndon Johnson 'asked if sanctions were the best move'; Fulbright wanted nothing that looked like 'a commitment to go to war'; Rayburn wanted no 'part of a Congressional resolution'.",
+     "sources": [
+      "rs_cw3_frus17_d120"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Dulles to Senator Johnson (delivered 22 February, replying to Johnson's letter of 11 February): 'There is strong sentiment among many members of the United Nations for economic sanctions'; the President would be 'reluctant' to see sanctions become the only remedy; Israel had received 'important assurances' but 'apparently has felt that those assurances were not sufficient'.",
+     "sources": [
+      "rs_cw3_frus17_d127"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Eisenhower's radio and television address of 20 February 1957 asked: 'Should a nation which attacks and occupies foreign territory in the face of United Nations disapproval be allowed to impose conditions on its own withdrawal?'; said Israel 'insists on firm guarantees as a condition to withdrawing its forces of invasion'; and warned that 'the United Nations has no choice but to exert pressure upon Israel to comply with the withdrawal resolutions'.",
+     "sources": [
+      "rs_cw3_app_20feb57"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The same address said UNEF 'should be placed on the Egyptian-Israeli Armistice lines', that the Gaza Strip should no longer be 'a source of armed infiltration and reprisals', that 'no nation has the right to prevent free and innocent passage in the Gulf', and that the US had given Israel 'on February 11 a statement of United States policy'. It does not mention US aid to Israel.",
+     "sources": [
+      "rs_cw3_app_20feb57"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 28 February Dulles told the British, Canadian and French envoys that Israel would announce, in effect, 'its unconditional withdrawal in the areas now occupied', getting nothing beyond prior UN resolutions, while stating 'assumptions' already in UN texts and its 'expectations'; the US position on Aqaba was unchanged from the 11 February aide-mémoire.",
+     "sources": [
+      "rs_cw3_frus17_d169"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Did the United States threaten Israel with sanctions?",
+     "positions": [
+      {
+       "view": "Yes in substance: the President publicly said the UN had 'no choice but to exert pressure', and Dulles named reparations, bonds and US aid as possible levers to congressional leaders.",
+       "sources": [
+        "rs_cw3_app_20feb57",
+        "rs_cw3_frus17_d120"
+       ]
+      },
+      {
+       "view": "Not formally: no US sanction was imposed; Dulles told Johnson the President was 'reluctant' to reach sanctions; congressional leaders of both parties resisted; the deal of 1 March came through assurances, not penalties.",
+       "sources": [
+        "rs_cw3_frus17_d127",
+        "rs_cw3_frus17_d120",
+        "rs_cw3_frus17_d169"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw3_eisenhower_doctrine_pl85_7",
+   "stage": "cw3",
+   "topic": "The Eisenhower Doctrine from its text: Public Law 85-7, 9 March 1957",
+   "sources": [
+    {
+     "key": "rs_cw3_lawfare_waxman",
+     "url": "https://lawfaremedia.org/article/remembering-eisenhowers-middle-east-force-resolution",
+     "label": "Matthew Waxman, \"Remembering Eisenhower's Middle East Force Resolution\", Lawfare (9 March 2019)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw3_voteview_h3",
+     "url": "https://voteview.com/rollcall/RH0850003",
+     "label": "Voteview, 85th Congress, House roll call 3 (H.J. Res. 117), 30 January 1957",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_voteview_s10",
+     "url": "https://voteview.com/rollcall/RS0850010",
+     "label": "Voteview, 85th Congress, Senate roll call 10 (H.J. Res. 117 as amended), 5 March 1957",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_pl85_7",
+     "url": "https://uscodeweb1.house.gov/statutes/pl/85/7.pdf",
+     "label": "Public Law 85-7 (H.J. Res. 117), 71 Stat. 5, approved 9 March 1957 (Office of the Law Revision Counsel)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_cornell_22usc1961",
+     "url": "https://www.law.cornell.edu/uscode/text/22/1961",
+     "label": "Cornell LII, 22 U.S.C. § 1961 and notes (Pub. L. 85-7)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_milestones_suez",
+     "url": "https://history.state.gov/milestones/1953-1960/suez",
+     "label": "Office of the Historian, US Department of State, \"The Suez Crisis, 1956\" (Milestones)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw3_origins_hahn",
+     "url": "https://origins.osu.edu/milestones/suez-crisis-1956",
+     "label": "Peter Hahn, \"The Suez Crisis (1956)\", Origins: Current Events in Historical Perspective, Ohio State University (October 2021)",
+     "kind": "scholarship"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Eisenhower asked Congress on 5 January 1957 for military and economic aid to Middle Eastern states and authority to use force to protect them, after a four-hour White House meeting with congressional leaders on 1 January (Waxman).",
+     "sources": [
+      "rs_cw3_lawfare_waxman"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "The House passed H.J. Res. 117 on 30 January 1957 by 355–61; the Senate passed it as amended on 5 March 1957 by 72–19 (Voteview roll calls).",
+     "sources": [
+      "rs_cw3_voteview_h3",
+      "rs_cw3_voteview_s10"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Public Law 85-7 (71 Stat. 5), approved 9 March 1957, section 1: the President is 'authorized to cooperate with and assist any nation or group of nations in the general area of the Middle East' in developing economic strength to maintain independence.",
+     "sources": [
+      "rs_cw3_pl85_7",
+      "rs_cw3_cornell_22usc1961"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Section 2: the United States 'is prepared to use armed forces' if the President deems it necessary to assist any requesting nation 'against armed aggression from any country controlled by international communism', 'consonant with the treaty obligations of the United States and with the Constitution'.",
+     "sources": [
+      "rs_cw3_pl85_7"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Section 3: up to $200,000,000 'from any appropriation now available' under the Mutual Security Act of 1954 for the rest of fiscal 1957, usable only 15 days after a report to the committees; the resolution itself authorized no new appropriation. Section 4 supported UNEF; section 5 required reports each January and July; section 6 let it expire on a presidential finding or a concurrent resolution.",
+     "sources": [
+      "rs_cw3_pl85_7",
+      "rs_cw3_cornell_22usc1961"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Senator Richard Russell warned against any appearance that only 'a small war' might follow; Eisenhower replied that 'should Russia move it could not possibly be a small war'; in 1958 Eisenhower sent about 14,000 troops to Lebanon without citing the resolution (Waxman).",
+     "sources": [
+      "rs_cw3_lawfare_waxman"
+     ],
+     "strength": "scholarship"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Was the Doctrine about communism or about replacing Britain and France?",
+     "positions": [
+      {
+       "view": "Communism, by its text: the force clause is limited to aggression 'from any country controlled by international communism'.",
+       "sources": [
+        "rs_cw3_pl85_7"
+       ]
+      },
+      {
+       "view": "Replacing the old powers: the Office of the Historian presents it as a response to US concern about European power in the region after Suez, and Hahn records the aid flowing at once to regional allies.",
+       "sources": [
+        "rs_cw3_milestones_suez",
+        "rs_cw3_origins_hahn"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw3_sterling_oil_pressure_nov_dec_1956",
+   "stage": "cw3",
+   "topic": "The money and oil levers, November–December 1956: sterling, the IMF and the withheld oil plan",
+   "sources": [
+    {
+     "key": "rs_cw3_boughton_fd",
+     "url": "https://www.imf.org/external/pubs/ft/fandd/2001/09/boughton.htm",
+     "label": "James M. Boughton, \"Was Suez in 1956 the First Financial Crisis of the Twenty-First Century?\", Finance & Development 38:3 (IMF, September 2001)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw3_boughton_wp",
+     "url": "https://ideas.repec.org/p/imf/imfwpa/2000-192.html",
+     "label": "James M. Boughton, \"Northwest of Suez: The 1956 Crisis and the IMF\", IMF Working Paper 00/192 (2000), abstract",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw3_frus10_d234",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v10/d234",
+     "label": "FRUS 1955–1957, vol. X, doc. 234, Editorial Note on the European oil emergency (November 1956)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_frus16_d612",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v16/d612",
+     "label": "FRUS 1955–1957, vol. XVI, doc. 612, Memorandum of a Conference with the President, 25 November 1956",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw3_origins_hahn",
+     "url": "https://origins.osu.edu/milestones/suez-crisis-1956",
+     "label": "Peter Hahn, \"The Suez Crisis (1956)\", Origins: Current Events in Historical Perspective, Ohio State University (October 2021)",
+     "kind": "scholarship"
+    }
+   ],
+   "claims": [
+    {
+     "text": "The Anglo-French offensive 'greatly accelerated the drain on U.K. reserves'; a 'massive loss of reserves' in November pushed them below the Bank of England's $2 billion floor for defending the $2.80 parity (Boughton, IMF).",
+     "sources": [
+      "rs_cw3_boughton_fd"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Treasury Secretary Humphrey's position was that the US would support Britain when it was 'conforming to rather than defying the United Nations'; Macmillan's attempt to meet him in late November failed (Boughton).",
+     "sources": [
+      "rs_cw3_boughton_fd"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "On 3 December Humphrey proposed an immediate drawing of $561 million plus a stand-by of about $739 million, $1.3 billion in all (100% of the UK quota); Macmillan announced the November losses and 'an immediate approach' to the IMF on 4 December; the Board approved with one abstention (Egypt), and the UK drew $561 million at once.",
+     "sources": [
+      "rs_cw3_boughton_fd"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "All four combatants obtained IMF financing, 'highly unusual for the time' (Boughton's working paper).",
+     "sources": [
+      "rs_cw3_boughton_wp"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "European oil supplies had fallen '25 to 30 percent below their normal needs' by mid-November (a British and French claim), and until the end of November the US refused to activate 'the plan of action prepared by the Middle East Emergency Committee', offering oil 'if those two countries complied with the United Nations resolutions' and withdrew (FRUS editorial note).",
+     "sources": [
+      "rs_cw3_frus10_d234"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 25 November Eisenhower explained the delay: 'we have held up this measure until the invading powers accepted immediate withdrawal of their troops'; Hoover urged starting the emergency committee 'very soon', and the President wanted it announced as preventing 'widespread suffering in Europe'.",
+     "sources": [
+      "rs_cw3_frus16_d612"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Was the money lever decisive?",
+     "positions": [
+      {
+       "view": "Yes: the reserve drain and Humphrey's condition tied British financing to compliance with the UN, and oil was held back until withdrawal was accepted (Boughton; FRUS).",
+       "sources": [
+        "rs_cw3_boughton_fd",
+        "rs_cw3_frus16_d612"
+       ]
+      },
+      {
+       "view": "Part of a wider pressure: the UN votes, the Soviet threats and Britain's own cabinet decision of 6 November came first; the IMF package followed the cease-fire and the withdrawal decision rather than preceding them.",
+       "sources": [
+        "rs_cw3_boughton_fd",
+        "rs_cw3_origins_hahn"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw3_egypt_jews_1956_1957",
+   "stage": "cw3",
+   "topic": "The Jews of Egypt, November 1956–1958: arrests, the nationality law, sequestration and departure",
+   "sources": [
+    {
+     "key": "rs_cw3_jta_2006_egypt",
+     "url": "https://www.jta.org/?p=414570",
+     "label": "Brenda Gazzar, JTA, 21 December 2006 (Ramat Gan, 18 December), on the 1956 expulsions from Egypt",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw3_fathom_julius",
+     "url": "https://fathomjournal.org/the-suez-crisis-and-the-jews-of-egypt/",
+     "label": "Lyn Julius, \"The Suez Crisis and the Jews of Egypt\", Fathom (Autumn 2017) (author directs the advocacy group Harif)",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw3_jjac_egypt",
+     "url": "https://justiceforjews.com/egypt-report/wp-content/uploads/2025/04/STATE-SANCTIONED-PERSECUTION-OF-JEWS-IN-EGYPT-EDITED.pdf",
+     "label": "Justice for Jews from Arab Countries (advocacy), \"State-Sanctioned Persecution of Jews in Egypt\" (undated report; credits the Historical Society of Jews from Egypt)",
+     "kind": "reported"
+    }
+   ],
+   "claims": [
+    {
+     "text": "About 1,000 Jews in Egypt, many of them Egyptian citizens, were detained or imprisoned during the Suez crisis; about 500 Jews without British or French passports were expelled alongside the many Jews among the expelled British and French nationals (JTA, 2006, citing historians).",
+     "sources": [
+      "rs_cw3_jta_2006_egypt"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Julius records a first wave of about 500 Jews given 24 hours to leave, about 900 more arrested by 7 November 1956, and detention at the Abbasiya school (500, half stateless) and Les Barrages prison (300).",
+     "sources": [
+      "rs_cw3_fathom_julius"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Nationality Law No. 391 of 1956 (22 November 1956) barred 'Zionists', a term it never defined, from Egyptian nationality and let the Interior Ministry declare nationality forfeited (Article 18) (JJAC report, advocacy, crediting the Historical Society of Jews from Egypt).",
+     "sources": [
+      "rs_cw3_jjac_egypt"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "On 23 November 1956 a proclamation by the Minister of Religious Affairs, read in mosques, declared that 'all Jews are Zionists and enemies of the state' and promised their expulsion (Julius; JJAC).",
+     "sources": [
+      "rs_cw3_fathom_julius",
+      "rs_cw3_jjac_egypt"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Sequestration under Military Proclamation No. 4: orders of 1–20 November 1956 placed hundreds of Jews' property under Egyptian administrators, with published lists of 486 persons and firms at least 95% Jewish (JJAC); about 500 Jewish companies were sequestered from November 1956 to March 1957 (JTA 2006; Julius), with about 800 more enterprises blacklisted and a 10% custodian fee (Julius).",
+     "sources": [
+      "rs_cw3_jjac_egypt",
+      "rs_cw3_jta_2006_egypt",
+      "rs_cw3_fathom_julius"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Departing Jews received exit visas stamped 'ONE WAY-NO RETURN', signed declarations 'donating' property to the state, and could take one suitcase and a small sum (Julius).",
+     "sources": [
+      "rs_cw3_fathom_julius"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Between 23,000 and 25,000 Jews left Egypt from November 1956 through 1957 (JTA) or 1958 (Julius), by expulsion or heavy pressure; more than 6,000 left by ship with the Red Cross by 1957; the community was about 15,000 by 1957 (JJAC); roughly half of Egypt's Jews eventually went to Israel (Julius).",
+     "sources": [
+      "rs_cw3_jta_2006_egypt",
+      "rs_cw3_fathom_julius",
+      "rs_cw3_jjac_egypt"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Julius also records the limits: Egyptian-national Jews were initially spared, some expulsion orders were rescinded, Greeks, Armenians and Italians were not targeted in 1956, and the wider nationalizations of the 1960s also hit non-Jewish families.",
+     "sources": [
+      "rs_cw3_fathom_julius"
+     ],
+     "strength": "reported"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Why were Egypt's Jews forced out in 1956–57?",
+     "positions": [
+      {
+       "view": "State persecution of Jews as Jews: the 23 November proclamation, the 'Zionist' nationality clause and sequestration lists over 95% Jewish (Julius; JJAC; Krämer, as Julius reports her, that Jews alone were targeted because of the conflict).",
+       "sources": [
+        "rs_cw3_fathom_julius",
+        "rs_cw3_jjac_egypt"
+       ]
+      },
+      {
+       "view": "Decolonization and war measures against enemy nationals, sharpened by Israel's war and Operation Susannah: Julius reports Joel Beinin's view blaming Zionism and notes that British and French nationals were expelled too; Mendes (rd6) finds many left for economic reasons.",
+       "sources": [
+        "rs_cw3_fathom_julius"
        ]
       }
      ]

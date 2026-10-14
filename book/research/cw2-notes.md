@@ -68,3 +68,12 @@ Verified 14 October 2026. 15 entries, 144 claims, 78 distinct source URLs, 11 di
 ## cw2_iran_consortium_1953_1954
 - **Agree:** Hoover's mission; Entezam's proposal; the 5 August 1954 agreement; shares (40/14/5 × 8); £25 million compensation; ratification on 28–29 October 1954.
 - **Note:** three of the five sources are primary statements reproduced on the Mossadegh Project site (an advocacy site); the documents themselves are official texts, and the FRUS documents corroborate the dates.
+
+## Gap-closing pass (14 October 2026)
+- **cw2_border_1954_maale_nahalin:** UN documents (S/3196, S/3251, S/3252). Agree on 11 killed at Scorpion Pass and on the MAC's 2–2–1 vote; responsibility left open by the UN chairman. Nahalin: Jordan's 9 killed vs the Commission's 5 + 1 + 3.
+- **cw2_bat_galim_1954:** FRUS, UNTSO (S/3323), JTA. Disputed: Egypt's charge that the crew killed two fishermen (MAC: not proved).
+- **cw2_khan_yunis_1955:** UN report A/3157 gives both counts (UNTSO 36 killed, 13 wounded; Egypt 35 killed, 19 injured). 72 (secondary) unverified.
+- **cw2_byroade_eden_1954_1955:** FRUS plus Medoff. Disputes: Dayton date (9 vs 19 April); speech venue name (Mansion House vs Guildhall).
+- **cw2_knesset_1955:** IDI results; coalition of 3 November 1955.
+- **cw2_motto_laws_1955_1956:** Statutes at Large settle it: P.L. 851 is the motto; No. 140 is the 1955 currency act.
+- **Still open:** Qalqilya's toll; whether Susannah killed anyone (two Israeli outlets say no, one Egyptian-sourced account says yes; no primary record).

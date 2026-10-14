@@ -1,6 +1,6 @@
 # Stage Two (1953–1956), Retaliate: blind-spot pass
 
-Status as of 14 October 2026. Run per LIBRARY-PROTOCOL.md section 4 and the volume plan (part1/cw_PLAN.md). The stage owns one scene (lv_s01), so it is research-led: 15 entries and 144 live-verified claims in `research/cw2.json` (78 distinct source URLs), with 11 disputes logged. Volume II's Stage Six (rd6) already tells the infiltration years to 1956 in outline (Qibya's toll, the activist–moderate split, Nasser's fedayeen announcement), the land regime including the 1953 Land Acquisition Law, and the military government; Stage One (cw1) tells the alignment to the Iran coup. This stage links to both and tells the years from Unit 101 to the nationalization of the Suez Canal Company: retaliation as policy, the Western attempts to manage the conflict, and the region's choice of sides.
+Status as of 14 October 2026. Run per LIBRARY-PROTOCOL.md section 4 and the volume plan (part1/cw_PLAN.md). The stage owns one scene (lv_s01), so it is research-led: 21 entries and 173 live-verified claims (after a gap-closing pass) in `research/cw2.json` (78 distinct source URLs), with 15 disputes logged. Volume II's Stage Six (rd6) already tells the infiltration years to 1956 in outline (Qibya's toll, the activist–moderate split, Nasser's fedayeen announcement), the land regime including the 1953 Land Acquisition Law, and the military government; Stage One (cw1) tells the alignment to the Iran coup. This stage links to both and tells the years from Unit 101 to the nationalization of the Suez Canal Company: retaliation as policy, the Western attempts to manage the conflict, and the region's choice of sides.
 
 **Decision on lv_s01's 1960–61 reopening:** told in Stage Four (cw4), with one forward sentence here. This stage tells Operation Susannah and the first round of "the Affair" (June 1954–February 1955) in full.
 
@@ -51,12 +51,13 @@ Status as of 14 October 2026. Run per LIBRARY-PROTOCOL.md section 4 and the volu
 | AZCPA founding (1953–54) and the lobby to 1956 | Covered | s07g (rd6), cw1_lobby; 1955–62 Jewish Agency funds in s11a (cw5) |
 | US aid series 1953–56 (amounts by year) | Covered in outline | rd6_financing (CRS table); aid_arms:Overview:2 |
 | Sèvres, Kadesh, Kafr Qasim, Suez war | Out of scope (later) | cw3 |
-| **Gap: Ma'ale Akrabim (Scorpion Pass) killings, 17 March 1954, and Israel's walk-out from the Jordanian MAC** | Not researched (only a Sharett diary mention fetched) | Queue for cw2 addendum |
-| **Gap: Nahalin raid (28–29 March 1954) and other 1954 reprisals** | Not researched | Queue |
-| **Gap: Khan Yunis raid (31 Aug 1955) toll; the fedayeen raids of April and August 1956 and Israeli casualties** | Only a blog figure (73) fetched; not used | Queue |
-| **Gap: the Bat Galim seizure (Sept 1954) and the Canal blockade after Resolution 95** | Not researched | Queue (links cw1_suez_blockade) |
-| **Gap: Byroade's April–May 1954 speeches on Israel's place in the region; Eden's Guildhall speech (9 Nov 1955)** | Not researched | Queue |
-| **Gap: Israel's Second Knesset politics and the 1955 Knesset election results** | Not researched | Queue |
+| Ma'ale Akrabim (Scorpion Pass) killings, 17 March 1954; MAC 2–2–1 vote; Israel's walk-out (23 March) | **Researched now** (gap pass) | cw2_border_1954 |
+| Nahalin raid (28–29 March 1954) and the MAC condemnation | **Researched now** (gap pass); other 1954 reprisals still open | cw2_border_1954 |
+| Khan Yunis raid (31 Aug–1 Sep 1955): 36 killed, 13 wounded (UNTSO) vs 35 killed, 19 injured (Egypt); August 1955 attacks inside Israel | **Researched now** (gap pass) | cw2_gaza_raid |
+| **Still open: the fedayeen raids of April 1956 and their Israeli toll; Qalqilya's toll (10–11 Oct 1956)** | Qalqilya: only secondary figures via Wikipedia (Morris: 70–90 Jordanian, 18 Israeli); not used | Queue |
+| Bat Galim seizure (28 Sept 1954), MAC finding, crew release (1 Jan 1955), Resolution 95 reaffirmed (Jan 1955) | **Researched now** (gap pass) | cw2_border_1954 |
+| Byroade's Dayton and Philadelphia speeches (April–May 1954); Eden's speech of 9 Nov 1955 and the reactions | **Researched now** (gap pass) | cw2_border_1954; cw2_alpha |
+| Third Knesset election (26 July 1955) and the 3 Nov 1955 coalition | **Researched now** (gap pass); Second Knesset politics 1951–55 still open | cw2_sharett_ben_gurion |
 | **Gap: Egypt's 1955–56 recognition of the People's Republic of China (date)** | Only mentioned in the ADST compilation | Queue |
 
 ## 2. Series blind-spot list (applied)
@@ -81,15 +82,18 @@ Was Qibya a settler reprisal or an army operation, and how do we know? Did the U
 
 - lv_s01's description of Susannah as "the earliest documented Israeli false-flag operation": a characterization; no fetched source establishes the superlative.
 - lv_s01 and s00e2 cite only Wikipedia for the operation; the research replaces that with the Defense Ministry archive, Ynet, Point of No Return and Raseef22.
-- Whether the July 1954 attacks killed anyone (Ynet: no casualties; Raseef22: deaths on 2 July). Logged as a dispute.
+- Whether the July 1954 attacks killed anyone (Ynet and the Jewish Press: none; Raseef22: deaths on 2 July). No primary record found; still open.
 - Max Bennett's exact date and manner of death in custody (Raseef22 is internally inconsistent).
 - Unit 101's strength ("about 40 men") and the Khan Yunis toll (73) and Qalqilya figures (70 Jordanians; 18 Israeli dead, 60 wounded): from a hobbyist blog only; not used.
-- The Ma'ale Akrabim killings (March 1954), the Nahalin raid and the Bat Galim seizure: not fetched (search budget exhausted).
+- Who carried out the Scorpion Pass killings: the UN chairman found the evidence inconclusive; still open.
+- Khan Yunis: a figure of 72 dead (secondary works via Wikipedia) not verified; the UN gives 36 and Egypt 35.
+- Qalqilya, October 1956: no UN or directly fetched scholarly toll; still open.
+- Byroade's Dayton date (9 vs 19 April 1954) and the name of Eden's venue (Mansion House vs Guildhall): both logged, unresolved.
 - The Arab League's decision on the Johnston plan: dated October 1955 by AquaPedia only; the State Department summary gives no date.
 - The Prime Minister's Office listing of the Sixth Government's start date (it shows 26.9.1955 against the Fifth's end of 29.6.1955).
 - "The cabinet voted 35 to 7" on Sharett's resignation (dealer's catalogue only); not used.
 - Iran's accession to the Baghdad Pact: 23 October 1955 per Avalon; not cross-checked.
-- The public-law number for the 1956 motto (P.L. 84-851 per govinfo vs HISTORY.com's 84-140). Logged as a dispute; the 1955 currency law's own number and date not fetched.
+- Settled in the gap pass: the motto is P.L. 851 (70 Stat. 732, 30 July 1956); No. 140 is the currency act of 11 July 1955 (H.R. 619).
 - Rabaut's and Ferguson's roles in 1954 (named in cw1's sources; not refetched here).
 - The Czech deal's value (">$83 million", Jewish Virtual Library only) and its quantities.
 - The 15 June 1954 Soviet record is a single document; whether Moscow answered in 1954 is not established here.

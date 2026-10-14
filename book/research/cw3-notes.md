@@ -1,6 +1,6 @@
 # Stage Three (cw3) research notes: what the sources agree on, where they split, what is open
 
-Verified 14 October 2026. 13 entries, 119 claims, 66 sources (24 primary, 12 scholarship, 30 reported). The web-search budget ran out mid-research; pages not surfaced by a search could not be fetched, so some primary texts named in the plan were not reached (listed in part1/cw3/_blindspots.md §4).
+Verified 14 October 2026. 18 entries, 158 claims, 101 sources after the gap-closing pass of 14 October. The web-search budget ran out mid-research; pages not surfaced by a search could not be fetched, so some primary texts named in the plan were not reached (listed in part1/cw3/_blindspots.md §4).
 
 ## cw3_road_to_war_jul_oct_1956
 - **Agree:** nationalization on 26 July 1956 after the US–UK aid refusal; SCUA proposed 9 September; Britain signalled force; Israel had faced fedayeen raids and the Tiran blockade.
@@ -66,3 +66,30 @@ Verified 14 October 2026. 13 entries, 119 claims, 66 sources (24 primary, 12 sch
 - **Agree:** Eden resigned January 1957; the Eisenhower Doctrine aided named regional states; Nasser's prestige rose.
 - **Disagree:** who won (Oren vs Shlaim/Fromkin, as Oren reports them; Hahn).
 - **Open:** Doctrine's joint-resolution text, appropriation and votes.
+
+## Gap-closing pass (14 October 2026)
+
+### cw3_un_resolutions_oct1956_feb1957
+- **Agree:** vetoes of the US and Soviet drafts; Res. 119 7–2; Res. 997 64–5–6 (noes: Australia, France, Israel, New Zealand, UK); 998 and 1000 57–0–19; 999 59–5–12; 1124 74–2–2.
+- **Disagree:** none on the numbers; 1002's 65–1–10 rests on JVL only. UNU's claim that Britain and France 'withdrew within a week' of 997 is wrong (Keightley: 22 December) and is not used.
+- **Open:** texts of 998–1001.
+
+### cw3_feb1957_aidememoire_address_sanctions
+- **Agree:** the aide-mémoire's terms; the address's wording; Dulles listed reparations, bonds and aid as levers; congressional leaders resisted sanctions.
+- **Disagree:** whether this amounted to a sanctions threat (public 'pressure' and named levers vs no sanction imposed, a 'reluctant' President).
+- **Open:** Eisenhower's 2 March letter.
+
+### cw3_eisenhower_doctrine_pl85_7
+- **Agree:** the text, the $200 million cap from existing funds, the votes 355–61 (30 January) and 72–19 (5 March), signature on 9 March.
+- **Disagree:** anti-communism (text) vs replacing Britain and France (Office of the Historian, Hahn).
+- **Open:** the Richards mission and the actual allocations.
+
+### cw3_sterling_oil_pressure_nov_dec_1956
+- **Agree:** the reserve drain, Humphrey's condition, the $561M drawing and the ~$739M stand-by (Boughton also gives $738M), the oil plan held until withdrawal.
+- **Disagree:** whether money was decisive or followed the cease-fire.
+- **Open:** exact November reserve loss; any French drawing amount.
+
+### cw3_egypt_jews_1956_1957
+- **Agree:** about 1,000 detained; 23,000–25,000 left by 1957–58; about 500 firms sequestered; the 23 November proclamation.
+- **Disagree:** causes (state antisemitism vs decolonization and war measures; Beinin vs Julius and Krämer; Mendes in rd6). Legal details come from advocacy sources (JJAC, Julius) and should be attributed as such.
+- **Open:** primary texts of Law 391 and Proclamation No. 4.

@@ -405,6 +405,12 @@
      "url": "https://cojs.org/january-2-1965/",
      "label": "\"January 2, 1965 Fatah Raid\", Center for Online Judaic Studies, citing Benny Morris, Righteous Victims, p. 364",
      "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_cie_carrier",
+     "url": "https://israeled.org/timeline/the-national-water-carrier/",
+     "label": "\"The National Water Carrier\" (10 June 1964), Center for Israel Education timeline",
+     "kind": "reported"
     }
    ],
    "claims": [
@@ -473,6 +479,13 @@
       "rs_cw6_wolf_unu"
      ],
      "strength": "scholarship"
+    },
+    {
+     "text": "The Center for Israel Education dates the Carrier's start to 10 June 1964 and gives its two trunk lines a capacity of 1.7 million cubic metres a day; no primary record of the opening was fetched.",
+     "sources": [
+      "rs_cw6_cie_carrier"
+     ],
+     "strength": "reported"
     }
    ],
    "disputes": [
@@ -656,6 +669,12 @@
      "url": "https://www.globalsecurity.org/military/world/jordan/history-23.htm",
      "label": "\"Jordan: Development and Disaster\", GlobalSecurity.org",
      "kind": "reported"
+    },
+    {
+     "key": "rs_cw6_jta_reparations_1965",
+     "url": "https://digital.bentley.umich.edu/djnews/djn.1965.03.26.001/40/download_text",
+     "label": "JTA dispatch from Bonn, The Detroit Jewish News, 26 March 1965",
+     "kind": "reported"
     }
    ],
    "claims": [
@@ -738,6 +757,13 @@
      "text": "The 1952 Luxembourg Agreement had committed 3 billion DM to Israel, 450 million DM to the Claims Conference and a 50 million DM special fund, paid partly in German goods such as ships, locomotives and factory machinery.",
      "sources": [
       "rs_cw6_bpb_lux"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "JTA reported from Bonn in March 1965 that 1965–66 was the last year of the 1952 agreement, with Israel to receive 300 million marks ($74 million) of goods that year, bringing goods received to 2.4 billion marks ($600 million); the report does not account for the rest of the 3 billion DM.",
+     "sources": [
+      "rs_cw6_jta_reparations_1965"
      ],
      "strength": "reported"
     }
@@ -2156,6 +2182,12 @@
      "url": "https://countrystudies.us/egypt/36.htm",
      "label": "Egypt: A Country Study, Library of Congress",
      "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_lozowick",
+     "url": "https://aijac.org.au/news/article/essay-inside-a-war-cabinet",
+     "label": "Yaakov Lozowick, \"Inside a war cabinet\", Australia/Israel Review, June 2017 (from Tablet; on the released 1967 Security Cabinet transcripts)",
+     "kind": "scholarship"
     }
    ],
    "claims": [
@@ -2262,6 +2294,13 @@
       "rs_cw6_laurens_t"
      ],
      "strength": "scholarship"
+    },
+    {
+     "text": "Lozowick, reading the released Security Cabinet transcripts (935 pages, 36 meetings, January–July 1967), writes that on 4 June the cabinet \"directed the IDF to break the Arab choke ring\" and left the details to Eshkol and Dayan; he records no formal dissent, the Mapam ministers Barzilai and Bentov still wanting a final message to the great powers, and gives no vote count.",
+     "sources": [
+      "rs_cw6_lozowick"
+     ],
+     "strength": "scholarship"
     }
    ],
    "disputes": [
@@ -2319,6 +2358,421 @@
        "view": "The Library of Congress Egypt study says he never carried out the threat.",
        "sources": [
         "rs_cw6_locegypt_t"
+       ]
+      }
+     ]
+    },
+    {
+     "question": "What was the 4 June vote?",
+     "positions": [
+      {
+       "view": "IDF archives: decided \"by a majority of 18\".",
+       "sources": [
+        "rs_cw6_mod_going_to_war"
+       ]
+      },
+      {
+       "view": "Lozowick, from the transcripts: no tally given and no formal dissent recorded. The count remains open.",
+       "sources": [
+        "rs_cw6_lozowick"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw6_israel_politics_recession_1965_1967",
+   "stage": "cw6",
+   "topic": "Israel at home: the Rafi split, the election of 2 November 1965, and the recession of 1966–67",
+   "sources": [
+    {
+     "key": "rs_cw6_idi_1965",
+     "url": "https://en.idi.org.il/israeli-elections-and-parties/elections/1965/",
+     "label": "Israel Democracy Institute, \"Elections to the Sixth Knesset, 1965\"",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_idi_rafi",
+     "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/rafi",
+     "label": "Israel Democracy Institute, party profile \"Rafi\"",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_boi_1966_ch2",
+     "url": "https://boi.org.il/boi_files/BankIsraelAnnualReport/Annual Report 1966/part one/pe_2.pdf",
+     "label": "Bank of Israel, Annual Report 1966, Part One, Chapter II (the economy in 1966)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw6_boi_1966_ch9",
+     "url": "https://boi.org.il/boi_files/BankIsraelAnnualReport/Annual Report 1966/part one/pe_9.pdf",
+     "label": "Bank of Israel, Annual Report 1966, Part One, Chapter IX, \"Population, Labor Force, and Employment\"",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Ben-Gurion and associates left Mapai and founded Rafi in 1965, over his push to reopen the Lavon affair, opposition to Mapai's joint list with Ahdut HaAvoda, and doubts about Eshkol's leadership; Moshe Dayan, Shimon Peres and Yitzhak Navon were among its members.",
+     "sources": [
+      "rs_cw6_idi_rafi"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "The Sixth Knesset was elected on 2 November 1965 with 83.0% turnout of 1,499,988 eligible voters; the Alignment (Mapai and Ahdut HaAvoda) won 45 seats (36.7%), Gahal (Herut and the Liberals) 26 (21.3%), the National Religious Party 11, Rafi 10, Mapam 8, the Independent Liberals 5, Agudat Yisrael 4 and Rakah 3.",
+     "sources": [
+      "rs_cw6_idi_1965"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Both new blocs lost ground against their components' previous totals (the Alignment five seats fewer, Gahal eight fewer), and Rafi's 10 seats disappointed Ben-Gurion (IDI).",
+     "sources": [
+      "rs_cw6_idi_1965"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Eshkol's coalition, formed after more than two months of talks, comprised the Alignment, the NRP, Mapam, the Independent Liberals and Poalei Agudat Yisrael with the affiliated Arab lists, 75 members in all; on the eve of the June 1967 war he brought Rafi and Gahal into a national unity government.",
+     "sources": [
+      "rs_cw6_idi_1965",
+      "rs_cw6_idi_rafi"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "The Bank of Israel recorded real GNP growth of 0.6% in 1966 against 8.2% in 1965, real GNP per head down 2.0%, gross investment down 18.4% and construction investment down about 20%.",
+     "sources": [
+      "rs_cw6_boi_1966_ch2"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The Bank attributed the turn mainly to falling demand after the 1961–64 boom, saying \"the recessionary forces operating in 1966 largely emanated from the construction sector,\" with overinvestment in housing, steep wage rises (wages per employee +19% in 1966), lower immigration and transfers, and government restraint as causes.",
+     "sources": [
+      "rs_cw6_boi_1966_ch2"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The government decided at the end of 1964 to moderate activity but raised demand in 1965; curbs came in 1966, when no new development projects were started; late in 1966 it reversed course with capital spending, deficit financing and easier credit, which the Bank says came too late.",
+     "sources": [
+      "rs_cw6_boi_1966_ch2"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Unemployment by the manpower surveys rose from an average of 3.6% (33,200 people) in 1965 to 7.4% (70,200) in 1966 and 10.3% (99,100) in the last quarter of 1966; registered job seekers rose from 5,463 in December 1965 to 19,376 in December 1966.",
+     "sources": [
+      "rs_cw6_boi_1966_ch9"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Net immigration fell from 49% of population growth in 1964 to 31% in 1965 and 12% in 1966, and preliminary 1966 emigration was higher than in 1964–65 though not much above 1963's 10,900 (Bank of Israel).",
+     "sources": [
+      "rs_cw6_boi_1966_ch9"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "How many votes did Rafi win?",
+     "positions": [
+      {
+       "view": "IDI party profile: 95,328 votes, 7.9%.",
+       "sources": [
+        "rs_cw6_idi_rafi"
+       ]
+      },
+      {
+       "view": "The IDI election table prints 42,654 votes beside the same 7.9% and 10 seats, which cannot be reconciled; use the party profile figure and flag the table.",
+       "sources": [
+        "rs_cw6_idi_1965"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw6_yemen_egypt_1962_1967",
+   "stage": "cw6",
+   "topic": "Egypt in Yemen, 1962–67, and its effect on Egypt's posture in May 1967",
+   "sources": [
+    {
+     "key": "rs_cw6_rogan_aclimandos",
+     "url": "https://www.cambridge.org/core/books/1967-arabisraeli-war/yemen-war-and-egypts-war-preparedness/8AC3A004CB7B8328A8B02DB74F585847",
+     "label": "Eugene Rogan and Tewfik Aclimandos, \"The Yemen War and Egypt's War Preparedness\", in Wm Roger Louis and Avi Shlaim (eds.), The 1967 Arab-Israeli War: Origins and Consequences (Cambridge University Press, 2012), ch. 6 (abstract)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_fp_yemen",
+     "url": "https://foreignpolicy.com/2015/04/03/egypts-vietnam-yemen-nasser-sisi/",
+     "label": "\"Egypt's Vietnam\", Foreign Policy, 3 April 2015",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw6_riedel_cia",
+     "url": "https://www.brookings.edu/articles/the-cias-overlooked-intelligence-victory-in-the-1967-war",
+     "label": "Bruce Riedel, \"The CIA's overlooked intelligence victory in the 1967 War\", Brookings Institution, 30 May 2017",
+     "kind": "scholarship"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Egypt entered Yemen's civil war in September 1962, after the coup that overthrew the monarchy; Rogan and Aclimandos write that Sadat was among the aides who assured Nasser a short, small-scale mission would suffice.",
+     "sources": [
+      "rs_cw6_rogan_aclimandos"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "The first deployment was a company of commandos; Nasser later said the force grew to \"70,000 troops,\" and Saudi Arabia supplied the royalists loyal to Imam al-Badr, while Egypt struck Saudi territory and the Aden Protectorate from the air (Foreign Policy).",
+     "sources": [
+      "rs_cw6_fp_yemen"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Riedel gives the expeditionary force's peak as 70,000 and Egypt's cost by 1967 as 25,000 casualties; Foreign Policy gives at least 10,000 Egyptian dead over five years.",
+     "sources": [
+      "rs_cw6_riedel_cia",
+      "rs_cw6_fp_yemen"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Nasser went to Jeddah in 1965 to make peace with King Faisal, but the deal did not hold because the Yemeni factions rejected an agreement made over their heads (Foreign Policy).",
+     "sources": [
+      "rs_cw6_fp_yemen"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Egyptian forces were still in Yemen when Nasser moved his army into Sinai in May 1967; the withdrawal was settled at the Khartoum summit in August 1967 against a Saudi aid pledge, and the last Egyptian soldier left in November 1967 (Foreign Policy).",
+     "sources": [
+      "rs_cw6_fp_yemen"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Rogan and Aclimandos call Yemen \"an unwinnable war, Nasser's Vietnam,\" and conclude that the campaign \"fatally impaired\" Egypt's performance in June 1967, while not claiming it alone caused the defeat.",
+     "sources": [
+      "rs_cw6_rogan_aclimandos"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "A CIA Office of Current Intelligence assessment of 23 May 1967, requested by Johnson the day after the Tiran announcement, judged Israel could defend itself against any combination of Arab enemies and launch a major offensive; a joint CIA–DIA paper at the end of May judged Israel would take Sinai in \"several days\" (Riedel).",
+     "sources": [
+      "rs_cw6_riedel_cia"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "The same CIA analysis called Arab unity \"fiction,\" with no serious military coordination among the Arab states (Riedel).",
+     "sources": [
+      "rs_cw6_riedel_cia"
+     ],
+     "strength": "scholarship"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "What did Yemen cost Egypt?",
+     "positions": [
+      {
+       "view": "Riedel: 25,000 casualties (killed and wounded) by 1967.",
+       "sources": [
+        "rs_cw6_riedel_cia"
+       ]
+      },
+      {
+       "view": "Foreign Policy: at least 10,000 dead over five years. The two figures measure different things; neither gives troop strength in Yemen in May 1967, which remains unverified.",
+       "sources": [
+        "rs_cw6_fp_yemen"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw6_jews_arab_world_1956_1967",
+   "stage": "cw6",
+   "topic": "The Jews of the Arab world between Suez and June 1967: Egypt after 1956 and Morocco's Operation Yachin (1961–64)",
+   "sources": [
+    {
+     "key": "rs_cw6_uw_egypt1956",
+     "url": "https://jewishstudies.washington.edu/global-judaism/how-we-remember-forced-migration-jews-egypt-1956/",
+     "label": "Pablo Jairo Tutillo Maldonado, \"How should we remember the forced migration of Jews from Egypt?\", Stroum Center for Jewish Studies, University of Washington, 27 March 2019 (drawing on Joel Beinin, The Dispersion of Egyptian Jewry, 1998)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw6_julius_fathom",
+     "url": "https://fathomjournal.org/the-suez-crisis-and-the-jews-of-egypt/",
+     "label": "Lyn Julius, \"The Suez Crisis and the Jews of Egypt\", Fathom, Autumn 2017",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw6_cie_yachin",
+     "url": "https://israeled.org/operation-yachin-begins-bringing-jews-from-morocco",
+     "label": "\"Operation Yachin begins bringing Jews from Morocco\" (28 November 1961), Center for Israel Education timeline",
+     "kind": "reported"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Israel's Foreign Ministry estimated 75,000–80,000 Jews in Egypt in 1948, about 40,000 of whom remained after Israel's independence; JIMENA figures cited by the Stroum Center give about 25,000 departures in 1956 and about 15,000 Jews left in 1957.",
+     "sources": [
+      "rs_cw6_uw_egypt1956"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Beinin reports that about 1,000 Jews were arrested in Cairo in 1956, roughly half Egyptian citizens; that about 13,000 British and French citizens, many of them Jews, were expelled after the Suez attack; that 500 Jews of neither nationality were also expelled; and that about 450 Jewish-owned businesses were confiscated.",
+     "sources": [
+      "rs_cw6_uw_egypt1956"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "An American Jewish Committee factsheet of March 1957 says Jews were told on 15 November 1956 to report to the Interior Ministry and leave within days, and that leavers signed a \"voluntary\" renunciation of claims, property and citizenship; by 10 February 1957, 8,500 had left by ship for Europe.",
+     "sources": [
+      "rs_cw6_uw_egypt1956"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Julius (Fathom, an advocacy publication) gives 23,000–25,000 departures between November 1956 and the end of 1958, at least 500 Jewish firms sequestered between November 1956 and March 1957, and exit visas stamped \"ONE WAY-NO RETURN,\" and says the community fell to a few thousand during the 1960s.",
+     "sources": [
+      "rs_cw6_julius_fathom"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Operation Yachin began on 28 November 1961 under an understanding between King Hassan II and Ben-Gurion; by 1964 more than 97,000 Jews had left Morocco via France or Italy, some settling in France, Canada or the United States (Center for Israel Education).",
+     "sources": [
+      "rs_cw6_cie_yachin"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "The same account says Israel agreed to pay $500,000 plus $100 per emigrant for the first 50,000 and $250 for each one after, and that HIAS contributed $50 million to the operation's costs.",
+     "sources": [
+      "rs_cw6_cie_yachin"
+     ],
+     "strength": "reported"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Were Egypt's Jews expelled after Suez?",
+     "positions": [
+      {
+       "view": "Beinin documents a \"systematic expulsion\" with arrests, expulsions and forced renunciations; Julius frames the exodus as antisemitic persecution.",
+       "sources": [
+        "rs_cw6_uw_egypt1956",
+        "rs_cw6_julius_fathom"
+       ]
+      },
+      {
+       "view": "Eyal Sagui Bizawe (Haaretz, 2017, as quoted by the Stroum Center) argues \"most of Egypt's Jews were not expelled\" and objects to the Israeli curriculum's framing; many already held European nationality and chose Europe.",
+       "sources": [
+        "rs_cw6_uw_egypt1956"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw6_numec_1957_1968",
+   "stage": "cw6",
+   "topic": "NUMEC: the 1965 shortage, the AEC and FBI response, and the 1968 turn (primary documents)",
+   "sources": [
+    {
+     "key": "rs_cw6_nsa_numec",
+     "url": "https://nsarchive.gwu.edu/node/3084",
+     "label": "Roger J. Mattson, Avner Cohen and William Burr (eds.), \"The NUMEC Affair: Did Highly Enriched Uranium from the U.S. Aid Israel's Nuclear Weapons Program?\", National Security Archive Briefing Book No. 565, 2 November 2016",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "NUMEC was formed in 1957, with Apollo Industries investors and Zalman Shapiro as a founder and later president; NRC records say highly enriched uranium processing at Apollo began in 1957, and fuel manufacture began in 1959.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "A routine AEC inventory in early 1965 found a significant shortage of government-owned HEU leased to NUMEC; on 10 August 1965 Shapiro told AEC commissioners that NUMEC had already paid the AEC \"up to $1 million for material losses\" in earlier years.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "AEC accounting experts ran a plant-wide inventory in November 1965; an AEC survey report of 6 April 1966 put the cumulative inventory difference at 178 kg of U-235, of which 93.8 kg was unexplained.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 14 February 1966 AEC chairman Glenn Seaborg told the Joint Committee on Atomic Energy that \"an inquiry by the FBI is not now warranted.\"",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 15 June 1966 the FBI's Pittsburgh office interviewed Shapiro about whether he should register under FARA; he described ISORAD, a joint venture of NUMEC and the Israeli Atomic Energy Commission, and was not asked about the missing material.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "A GAO report of 20 June 1967 said NUMEC's records showed cumulative U-235 losses through 31 December 1966 of about 260 kg, about 1.2% of receipts.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 2 April 1968 CIA Director Helms asked Attorney General Clark for a \"discreet intelligence investigation\" of Shapiro's relationship with the Israeli government, which Hoover approved on 6 May 1968; on 10 September 1968 four Israelis, including Avraham Hermoni and Rafi Eitan, visited the Apollo plant.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The editors call the evidence of diversion \"strong but not incontrovertible\": the AEC said it found no evidence of theft, there is no sign the AEC or FBI looked for such evidence when the loss was found, and many CIA records remain redacted.",
+     "sources": [
+      "rs_cw6_nsa_numec"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "How much was missing?",
+     "positions": [
+      {
+       "view": "AEC, April 1966: 178 kg of U-235, 93.8 kg unexplained; the editors' introduction speaks of about 200 kg.",
+       "sources": [
+        "rs_cw6_nsa_numec"
+       ]
+      },
+      {
+       "view": "GAO, June 1967: about 260 kg cumulative losses through 1966; the simulation scene gives 269 kg before 1968 and \"206 pounds\" (about 93 kg) in its headline. Keep units and dates attached to each figure.",
+       "sources": [
+        "rs_cw6_nsa_numec"
        ]
       }
      ]

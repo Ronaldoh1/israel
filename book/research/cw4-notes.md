@@ -1,6 +1,6 @@
 # Stage Four (cw4, 1957–1962): research notes
 
-Verified live, 14 October 2026. 10 entries, 119 claims, 16 logged disputes, 50 distinct source URLs. Every claim cites a page fetched in this session.
+Verified live, 14 October 2026. 18 entries, 188 claims, 32 logged disputes. The gap-closing pass (14 October 2026, 21 searches) added entries 11–18 below; the 'Limits of this pass' paragraph describes the first pass only. Every claim cites a page fetched in this session.
 
 **Limits of this pass.** The session's shared web-search budget ran out partway through, so research could continue only on pages already surfaced. Four history.state.gov pages that had not appeared in a search could not be fetched (permission timeouts): frus1961-63v17/d57, frus1958-60v13/d30, the Lebanon 1958 milestone page, and the FRUS volume index pages. The French diplomatic-documents PDF (diplomatie.gouv.fr/IMG/pdf/49_712-725.pdf) refused robots, and the i24news, JNS and Foreign Policy pages did not load. As a result, eight topics on the volume plan or the series blind-spot list have **no research entry yet** and are marked RESEARCH PENDING in the manifest: Wadi Salib (1959), the Eichmann capture and the Argentine dispute at the UN (1960), the Lavon reopening and Ben-Gurion's resignation (1960–61), the Foreign Assistance Act of 1961 and Section 620I, the Hawk decision (August 1962), Morocco and Operation Yachin (1961), the border clashes of 1960–62 (Rotem, Tawafiq, Nuqeib, Resolution 171), and Palestinian politics 1957–62 (Fatah, Al-Ard). They need a follow-up research session before their sections are written.
 
@@ -58,3 +58,14 @@ Verified live, 14 October 2026. 10 entries, 119 claims, 16 logged disputes, 50 d
 - **Agree:** the 14 March 1960 meeting; a large German loan from December 1961 under "Aktion Geschäftsfreund"; secret arms aid; relations only in May 1965.
 - **Disagree:** whether the loan financed Dimona (Bar-Joseph, Die Welt vs missing records and Peres's denial); 340 vs 500 million marks of military aid; Peres's two accounts of the $40 million.
 - **Not verified:** the commonly cited December 1957 Strauss–Peres meeting at Rosenheim (Bar-Joseph gives Bonn, 3 July 1957); the 1959 Israeli arms sales to Germany and the cabinet crisis they caused; Strauss's 1961 Paris claim beyond The National Interest's report.
+
+## Gap-closing pass (entries added 14 October 2026)
+
+- **cw4_eichmann_capture_un_1960_1962** (12 claims): resolution 138 text and vote from the UN record; the trial's politics from the Israel State Archives' special publication. Disputes: 'volunteers' vs state operation; whether the Council 'condemned' Israel. Open: Argentina's expulsion of Israel's ambassador; Arendt.
+- **cw4_wadi_salib_1959** (9): Naor (IJMES 2024, with ISA file numbers) is the backbone. The commission's no-deliberate-discrimination finding comes only from Hamichlol (a Wikipedia-derived Hebrew encyclopedia) citing the report; keep it attributed. Disputes: discrimination; the shooting.
+- **cw4_lavon_reopening_1960_1961** (8): contemporary JTA reports (Detroit Jewish News), IDI election data. Britannica dates Lavon's accusation to September 1961, against the 1960 record. Open: the date of Lavon's removal.
+- **cw4_foreign_assistance_act_1961** (7): Section 620I's source credit (Pub. L. 104–208, 30 September 1996) settles law_s01's dating. CRS aid table via JVL. Open: the date Kennedy signed.
+- **cw4_hawk_decision_1962** (9): FRUS vol. XVIII documents (Feldman 10 and 19 August, Rusk 21 August) and Kramer's compilation. Disputes: Nasser told or not; motive (Buchman's thesis vs the documents); 1959 vs 1962 start of military aid.
+- **cw4_morocco_yachin_1956_1962** (7): secondary and advocacy sources (Aish, Point of No Return, Wikipedia citing Laskier, Bialer, Abecassis, Szulc); all attributed. Egoz deaths 44 vs 46.
+- **cw4_borders_1960_1962** (9): UN Yearbook 1960, resolution 171, FRUS doc. 251; Rotem rests on Wikipedia's summary of Bar-Joseph and Gluska, marked reported.
+- **cw4_palestinian_politics_1957_1962** (8): PalQuest (Institute for Palestine Studies) vs the Encyclopedia of the Modern Middle East on Fatah's founding date; Al-Ard from Fida Jiryis's account and +972, with the state's and the court's positions quoted.

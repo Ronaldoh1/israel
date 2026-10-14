@@ -2,7 +2,7 @@
 
 Status as of 14 October 2026. This pass follows LIBRARY-PROTOCOL.md section 4 and the volume plan (part1/cw_PLAN.md).
 
-The stage owns three scenes: s11a, s11b and s11c. Research is in `research/cw5.json`: 13 entries, 132 live-verified claims and 13 logged disputes.
+The stage owns three scenes: s11a, s11b and s11c. Research is in `research/cw5.json`: 17 entries, 179 live-verified claims and 15 logged disputes (after the gap-closing pass of 14 October 2026).
 
 The stage tells two confrontations of Kennedy's last year, side by side:
 - the Justice Department's foreign-agent order against the American Zionist Council and the Senate inquiry that surrounded it;
@@ -36,14 +36,15 @@ Volume II (rd6/s07g) already tells the AZEC→AZC→AZCPA→AIPAC lineage and th
 | Ben-Gurion's resignation, 16 June 1963: causes and date discrepancy | **Researched now** | cw5_bengurion_resigns |
 | Eshkol's government formed (date) | **Gap** (not confirmed) | queued |
 | Kennedy–Eshkol, 4 July–16 Sept 1963; criticality; first visit 18 Jan 1964 | Covered + **researched now** | cw5_eshkol_agreement (1964 onward is cw6's; s11d linked) |
-| Kennedy and Nasser: letters, PL-480 wheat, the outreach policy | **Gap** | queued (cw6 has 1964–66 deterioration) |
-| Yemen civil war from 26 Sept 1962; US recognition of the YAR (Dec 1962); Egyptian intervention; Operation Hard Surface (1963) | **Gap** | queued |
-| Iraq (Feb 1963) and Syria (March 1963) Ba'athist coups; the unity talks behind the 17 April proclamation | **Gap** (only the proclamation is researched) | queued |
-| German scientists in Egypt; Harel's resignation (March 1963) | **Gap** | queued; relevant to the resignation dispute |
+| Kennedy and Nasser: letters (May/Aug 1961), PL-480 (FY1960–63; agreement signed 8 Oct 1962) | **Researched now** (agreement's total value still open) | cw5_nasser_outreach |
+| Yemen war from Sept 1962; US recognition 19 Dec 1962; Bunker; UNYOM; Hard Surface | **Researched now** | cw5_yemen |
+| Iraq (8 Feb 1963) and Syria (8 Mar 1963) coups; 17 April charter; July collapse | **Researched now** (CIA-role dispute logged) | cw5_bathist_coups |
+| German scientists in Egypt; Harel's resignation (March 1963) | **Researched now** (exact day of resignation and the Swiss trial verdict still open) | cw5_damocles |
 | Jordan waters 1962–63 (National Water Carrier construction) | Out of scope | Stage Six (cw6_jordan_waters) |
 | Military government: easing of October–November 1963 | Out of scope | Stage Six (cw6_military_government_end) |
 | Palestinian voice: Shukairy at the UN, 14 Nov 1963 | **Researched now** | cw5_shukairy_un |
-| Shukairy named Palestine's representative to the Arab League (1963); Fatah's early organization | **Gap** | queued (PLO founding is cw6's) |
+| Shukairy named Palestine's representative to the Arab League (1963) | **Researched now** (year only, date open) | cw5_shukairy_un |
+| Fatah's early organization (1959–63) | **Gap** | queued |
 | Operation Yachin (Moroccan Jewish emigration, 1961–64) | **Gap** | queued |
 | Jewish dissent: American Council for Judaism; the "peoplehood" letter (1964) | **Researched now** | cw5_dissent |
 | 22 Nov 1963: what changed after; the official inquiries; claims of a link | Covered + **researched now** | s11c |
@@ -112,5 +113,7 @@ Volume II (rd6/s07g) already tells the AZEC→AZC→AZCPA→AIPAC lineage and th
 - ACJ (1997) claims: White House intervention, the conditions witnesses asked for, the 1960 convention expenses, and the 1966 amendments link.
 - Eshkol's swearing-in date. The German-scientists and Lavon background to the resignation.
 - Kenen's interest rate and aid figures as exact numbers (OCR).
-- Kennedy–Nasser, Yemen, the 1963 coups, Shukairy's Arab League appointment, Operation Yachin (all Gaps above).
+- Operation Yachin; Fatah's early organization; the Johnson (PCC) refugee plan of 1962; the value of the October 1962 PL-480 agreement; Harel's exact resignation day and the Ben-Gal–Joklik verdict; the day of Shukairy's appointment.
+- The 21 November 1962 order's text and the Justice Department's later handling: still open after the gap-closing pass (no primary document reachable by search).
+- $5,100,001.02 against $1.5 million: still unreconciled; both stay in, attributed.
 - Warren Commission and HSCA details (scene only); named assassination claimants.

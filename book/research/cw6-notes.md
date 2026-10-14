@@ -72,3 +72,10 @@ Verified live, 14 October 2026. 14 entries, 146 claims, 24 logged disputes, 72 d
 - **Disagree:** existential threat (Israeli ministers and Yariv vs US intelligence and Rabin on 22 May); green vs amber light (record vs Amit's later account); whether Tiran was actually closed (Library of Congress: threat never carried out).
 - **Not verified:** the 4 June vote count; Begin 1982, Rabin 1968, Peled 1972 retrospective remarks.
 - **Caution:** Laurens writes that Israel "launched its attack" on 4 June; the documents give the decision on 4 June and the attack on 5 June. Use the documents.
+
+## Gap-closing pass (14 October 2026, 15 searches)
+- **cw6_israel_politics_recession_1965_1967:** IDI and Bank of Israel 1966 report agree on the election and the recession. Dispute: Rafi's vote (IDI profile 95,328 vs election table 42,654 at the same 7.9%; use 95,328). Open: the 1967 unemployment peak.
+- **cw6_yemen_egypt_1962_1967:** Rogan and Aclimandos (Cambridge, 2012; abstract only), Foreign Policy and Riedel agree on the 1962 entry, the 70,000 peak and the November 1967 withdrawal. They differ on the cost (25,000 casualties vs at least 10,000 dead; different measures). Open: troop strength in Yemen in May 1967.
+- **cw6_jews_arab_world_1956_1967:** Beinin (via the Stroum Center) and Julius (Fathom, advocacy) agree on the scale of the post-Suez departures. They disagree on "expelled" vs "emigrated" (Bizawe). Yachin figures rest on the CIE timeline only. Open: Iraq, Syria, Libya, Yemen.
+- **cw6_numec_1957_1968:** primary documents via NSA briefing book 565. Figures: 178 kg U-235 (AEC, April 1966; 93.8 kg unexplained), about 260 kg cumulative losses (GAO, June 1967), and the scene's 269 kg/"206 pounds". Diversion is not established ("strong but not incontrovertible").
+- **Reopened items:** Water Carrier 10 June 1964 (CIE, secondary); reparations' last year 1965–66 (JTA, does not reconcile with 3 billion DM); 4 June vote still open (IDF "majority of 18" vs no tally in Lozowick).

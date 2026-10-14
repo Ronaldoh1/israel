@@ -635,6 +635,12 @@
      "url": "https://digitalprojects.palestine-studies.org/jps/fulltext/38620",
      "label": "Livia Rokach, Israel's Sacred Terrorism (1980), excerpts of Sharett's diary, Institute for Palestine Studies",
      "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw2_jewishpress_susannah",
+     "url": "https://jewishpress.com/the-disturbing-legacy-of-operation-susannah-and-the-lavon-affair/",
+     "label": "Saul Jay Singer, \"The Disturbing Legacy of Operation Susannah and the Lavon Affair\", The Jewish Press, 30 March 2022",
+     "kind": "reported"
     }
    ],
    "claims": [
@@ -734,6 +740,15 @@
       "rs_cw2_raseef_lavon"
      ],
      "strength": "reported"
+    },
+    {
+     "text": "Saul Jay Singer (Jewish Press, 2022) also writes that the July 1954 operations \"caused no injuries or deaths\" and dates the bombings to 2 July (Alexandria post office) and 14 July (the USIA libraries in Alexandria and Cairo and a British-owned theatre). No primary record of casualties was found; the question remains open, with two Israeli outlets against one Egyptian-sourced account.",
+     "sources": [
+      "rs_cw2_jewishpress_susannah",
+      "rs_cw2_ynet_2005",
+      "rs_cw2_raseef_lavon"
+     ],
+     "strength": "disputed"
     }
    ],
    "disputes": [
@@ -759,9 +774,10 @@
      "question": "Did the July 1954 attacks kill anyone?",
      "positions": [
       {
-       "view": "No casualties (Ynet, 2005).",
+       "view": "No casualties (Ynet, 2005; Jewish Press, 2022).",
        "sources": [
-        "rs_cw2_ynet_2005"
+        "rs_cw2_ynet_2005",
+        "rs_cw2_jewishpress_susannah"
        ]
       },
       {
@@ -1938,6 +1954,598 @@
     }
    ],
    "disputes": []
+  },
+  {
+   "id": "cw2_border_1954_maale_nahalin",
+   "stage": "cw2",
+   "topic": "The Jordanian front in spring 1954: the Scorpion Pass (Ma'ale Akrabim) killings, the Nahalin raid, and Israel's walk-out from the Mixed Armistice Commission",
+   "sources": [
+    {
+     "key": "rs_cw2_un_s3196",
+     "url": "https://www.un.org/unispal/document/auto-insert-176331/",
+     "label": "Letter from Abba Eban to the President of the Security Council, 5 April 1954 (S/3196), UNISPAL",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_un_s3252",
+     "url": "https://digitallibrary.un.org/record/603141/files/S_3252-EN.pdf",
+     "label": "Report of the Chief of Staff of UNTSO to the Secretary-General, 25 June 1954 (S/3252), on the Scorpion Pass incident",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_un_s3251",
+     "url": "https://www.un.org/unispal/document/auto-insert-177451/",
+     "label": "Report of the Chief of Staff of UNTSO, June 1954 (S/3251), on the attack on Nahhalin, UNISPAL",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "On 17 March 1954 an Israeli bus on the Eilat–Beersheba road was attacked at the Scorpion Pass; Israel's letter to the Council described \"the murder of eleven Israeli citizens\". The UN observer counted four bodies outside the bus and seven inside; Israel's draft resolution named nine men and two women passengers killed and two passengers, a young woman and a nine-year-old boy, seriously wounded.",
+     "sources": [
+      "rs_cw2_un_s3196",
+      "rs_cw2_un_s3252"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "In the Jordan–Israel Mixed Armistice Commission Israel's draft condemning Jordan failed, 2 for (Israel), 2 against (Jordan), with the UN chairman abstaining; the chairman said \"the evidence brought out is far from being conclusive\" and that people from outside Jordan could also have been responsible.",
+     "sources": [
+      "rs_cw2_un_s3252"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "After the vote Israel's delegation said it was \"not in a position, under the present circumstances, to continue its participation\"; from 23 March 1954 Israel cut all connection with the Commission and stopped attending local commanders' meetings.",
+     "sources": [
+      "rs_cw2_un_s3252"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Israel then asked the Security Council on 5 April 1954 to take up its complaints against Jordan, including Jordan's refusal to attend a conference under Article XII of the Armistice Agreement.",
+     "sources": [
+      "rs_cw2_un_s3196"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On the night of 28–29 March 1954 Nahhalin, a Jordanian village, was attacked: Jordan's complaint gave 9 killed (8 men, 1 woman) and 14 injured; the Commission's resolution gave 5 National Guards and 1 woman killed in the village and 3 Arab Legion soldiers killed when their truck hit a mine on the way, with 14 villagers and 5 soldiers wounded.",
+     "sources": [
+      "rs_cw2_un_s3251"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "UN observers found footprints leading from the village to the demarcation line with similar tracks on the Israeli side, and unexploded devices, some marked with Hebrew letters; seven house doors and the mosque doors had been blown open.",
+     "sources": [
+      "rs_cw2_un_s3251"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "At an emergency meeting on 30 March 1954, which Israel did not attend, the Commission adopted Jordan's resolution (Jordan and the chairman in favour) condemning Israel \"in the strongest terms\" and calling on it to punish those responsible.",
+     "sources": [
+      "rs_cw2_un_s3251"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Who was responsible for the Scorpion Pass killings?",
+     "positions": [
+      {
+       "view": "Infiltrators from Jordan; Jordan bore responsibility (Israel's complaint and draft resolution).",
+       "sources": [
+        "rs_cw2_un_s3196",
+        "rs_cw2_un_s3252"
+       ]
+      },
+      {
+       "view": "Not established: the UN chairman found the evidence 'far from being conclusive' and did not exclude perpetrators from outside Jordan.",
+       "sources": [
+        "rs_cw2_un_s3252"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw2_bat_galim_1954",
+   "stage": "cw2",
+   "topic": "The Bat Galim: Egypt's seizure of an Israeli ship at Suez (28 September 1954) and the Council's reaffirmation of Resolution 95",
+   "sources": [
+    {
+     "key": "rs_cw2_frus_batgalim",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v14/d1",
+     "label": "Editorial note on the Bat Galim case (FRUS 1955–1957, vol. XIV, doc. 1)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_un_s3323",
+     "url": "https://www.un.org/unispal/document/auto-insert-183109",
+     "label": "Report of the Chief of Staff of UNTSO, 25 November 1954 (S/3323), on the Bat Galim, UNISPAL",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_jta_batgalim",
+     "url": "https://jta.org/archive/crew-of-bat-galim-home-after-94-days-imprisonm",
+     "label": "\"Crew of Bat Galim Home After 94 Days Imprisonment\", Jewish Telegraphic Agency, 3 January 1955",
+     "kind": "reported"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Egyptian authorities seized the Israeli-flagged Bat Galim at the southern end of the Suez Canal on 28 September 1954, bound for Haifa.",
+     "sources": [
+      "rs_cw2_frus_batgalim",
+      "rs_cw2_jta_batgalim"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Egypt complained on 6 October 1954 that the crew had attacked two Egyptian fishing boats with automatic fire in the Gulf of Suez, killing two fishermen.",
+     "sources": [
+      "rs_cw2_un_s3323"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "On 19 November 1954 the Egyptian–Israeli Mixed Armistice Commission rejected Egypt's draft and adopted Israel's, finding the complaint \"unfounded\"; the chairman said \"conclusive evidence has not been produced\" of an attack. On 25 November the Special Committee ruled that the word 'unfounded' should not be used and that its decision was \"not intended as a judgment on the facts\".",
+     "sources": [
+      "rs_cw2_un_s3323"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The ten crewmen (the captain and nine sailors) were held 94 days and released on 1 January 1955, sent across the Gaza Strip on foot; the captain said they had been beaten. Egypt offered to release the ship only if it sailed south, away from the Canal.",
+     "sources": [
+      "rs_cw2_jta_batgalim",
+      "rs_cw2_frus_batgalim"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "The Security Council discussed the case in January 1955; the United States, Britain, France and Brazil said Egypt's action violated the resolution of 1 September 1951, and on 13 January the Council's President said members agreed that resolution had \"continuing validity and effect\".",
+     "sources": [
+      "rs_cw2_frus_batgalim"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Did the Bat Galim's crew fire on Egyptian fishermen?",
+     "positions": [
+      {
+       "view": "Yes, killing two (Egypt's complaint of 6 October 1954).",
+       "sources": [
+        "rs_cw2_un_s3323"
+       ]
+      },
+      {
+       "view": "Not proved: the Mixed Armistice Commission found no conclusive evidence, though its 'unfounded' wording was withdrawn.",
+       "sources": [
+        "rs_cw2_un_s3323"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw2_khan_yunis_1955",
+   "stage": "cw2",
+   "topic": "The Gaza front in August–September 1955: the attacks inside Israel and the Khan Yunis raid (31 August–1 September 1955)",
+   "sources": [
+    {
+     "key": "rs_cw2_un_a3157",
+     "url": "https://digitallibrary.un.org/record/710683/files/A_3157-EN.pdf",
+     "label": "Report of the Security Council to the General Assembly, 16 July 1955–15 July 1956 (A/3157), GAOR 11th session, Supplement No. 2",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_io_1955",
+     "url": "https://cambridge.org/core/journals/international-organization/article/security-council/9B6509C869EC11952F9A011C52B77C09",
+     "label": "\"Security Council\" (summary of activities), International Organization 9:4 (November 1955), pp. 513–516",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw2_un_s3427",
+     "url": "https://digitallibrary.un.org/record/576524/files/S_3427-EN.pdf",
+     "label": "Letter from the Acting Permanent Representative of Israel to the President of the Security Council, 31 August 1955 (S/3427)",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "General Burns reported to the Council (700th meeting, 8 September 1955) that after Israeli forces occupied an Egyptian post on 22 August, killing an Egyptian officer and two soldiers, organized attacks by marauders inside Israel killed eleven military and civilian personnel and injured nine.",
+     "sources": [
+      "rs_cw2_io_1955"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Israel's letter of 31 August 1955 listed attacks of 30–31 August attributed to Egypt, including four civilians killed in a vehicle south of Kfar Menahem, a woman gravely wounded by grenades at Nahala, and three soldiers wounded.",
+     "sources": [
+      "rs_cw2_un_s3427"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "For the Israeli attack on Khan Yunis on 31 August–1 September 1955, the UNTSO Chief of Staff's account gives \"the killing of thirty-six Egyptians, and the wounding of thirteen\"; Egypt's letter of 6 September 1955 gives \"ten Egyptian soldiers and twenty-five refugees\" killed and nineteen injured.",
+     "sources": [
+      "rs_cw2_un_a3157"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "How many were killed at Khan Yunis?",
+     "positions": [
+      {
+       "view": "36 Egyptians killed, 13 wounded (UNTSO Chief of Staff).",
+       "sources": [
+        "rs_cw2_un_a3157"
+       ]
+      },
+      {
+       "view": "35 killed — 10 soldiers and 25 refugees — and 19 injured (Egypt).",
+       "sources": [
+        "rs_cw2_un_a3157"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw2_byroade_eden_1954_1955",
+   "stage": "cw2",
+   "topic": "Washington's and London's public line: Byroade's speeches (April–May 1954) and Eden's Mansion House/Guildhall speech (9 November 1955)",
+   "sources": [
+    {
+     "key": "rs_cw2_frus_byroade",
+     "url": "https://history.state.gov/historicaldocuments/frus1952-54v09p1/d823",
+     "label": "Memorandum of conversation by Parker T. Hart (Dulles, Eban, Shiloah), May 1954 (FRUS 1952–1954, vol. IX, part 1, doc. 823)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_medoff_byroade",
+     "url": "https://www.algemeiner.com/2014/03/20/the-state-department%e2%80%99s-campaign-against-the-%e2%80%98jewish-state%e2%80%99-idea%e2%80%94in-1954/",
+     "label": "Rafael Medoff, \"The State Department's Campaign Against the 'Jewish State' Idea—in 1954\", JNS.org via The Algemeiner, 20 March 2014",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw2_ecf_eden",
+     "url": "https://ecf.org.il/issues/issue/4",
+     "label": "\"British PM Eden's Speech at Guildhall (1955)\", ECF Interactive Database",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw2_frus_eden_uk",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v14/d398",
+     "label": "Telegram from the Embassy in the United Kingdom (Aldrich), c. 11 November 1955 (FRUS 1955–1957, vol. XIV, doc. 398)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_frus_eden_il",
+     "url": "https://history.state.gov/historicaldocuments/frus1955-57v14/d406",
+     "label": "Telegram from the Embassy in Israel, c. 14 November 1955 (FRUS 1955–1957, vol. XIV, doc. 406)",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Assistant Secretary Henry Byroade spoke to the Dayton World Affairs Council in April 1954 (FRUS dates it 9 April; Medoff 19 April) and to the American Council for Judaism in Philadelphia on 1 May 1954.",
+     "sources": [
+      "rs_cw2_frus_byroade",
+      "rs_cw2_medoff_byroade"
+     ],
+     "strength": "disputed"
+    },
+    {
+     "text": "Medoff quotes Byroade urging Israelis to \"look upon yourselves as a Middle Eastern state, rather than as a headquarters… of a world-wide grouping of people of a particular religious faith\", to \"drop the attitude of the conqueror\", and to halt \"retaliatory killings\"; in Philadelphia he named Israel's calls for \"greatly expanded immigration\" as feeding Arab fears of expansion.",
+     "sources": [
+      "rs_cw2_medoff_byroade"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "Eban told Dulles in May 1954 that the Dayton reference to Israel's ties with Jews elsewhere \"wounded the feelings of millions outside Israel and hundreds of thousands within that country\", that raising immigration was \"entirely unnecessary\", and that the Department's corrective Press Release 231 of 5 May had not undone the impression; Israeli papers ran headlines such as \"U.S. Threatens Israel\", which Eban called distortions.",
+     "sources": [
+      "rs_cw2_frus_byroade"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Israel's government protested \"unjustified interference in matters which are purely Israel's own concern\"; Zionist leader Emanuel Neumann denounced \"Byroadeism\"; the administration stood by Byroade (Medoff).",
+     "sources": [
+      "rs_cw2_medoff_byroade"
+     ],
+     "strength": "reported"
+    },
+    {
+     "text": "On 9 November 1955 Prime Minister Eden said Israel (which preferred the status quo) and the Arab states (which demanded the 1947 partition plan and other resolutions) \"must make some compromise between these two positions\"; he called the Soviet arming of Egypt \"a new element of danger\".",
+     "sources": [
+      "rs_cw2_frus_eden_uk",
+      "rs_cw2_ecf_eden"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Dulles replied from Geneva on 12 November that the \"US is in no sense committed\" to the speech.",
+     "sources": [
+      "rs_cw2_frus_eden_uk"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "Israel's Foreign Ministry Director-General Eytan objected that the speech \"focused entirely on territorial question\" and that the \"armistice lines had to be starting point\", while saying Israel was \"quite prepared to discuss it\"; Ben-Gurion told the Knesset on 15 November that the proposals would \"truncate Israel for benefit of neighbors\".",
+     "sources": [
+      "rs_cw2_frus_eden_il"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The State Department record calls the address Eden's \"Mansion House\" speech; ECF calls it the Guildhall speech. The venue name is unsettled in these sources; the date, 9 November 1955, is not.",
+     "sources": [
+      "rs_cw2_frus_eden_uk",
+      "rs_cw2_ecf_eden"
+     ],
+     "strength": "disputed"
+    }
+   ],
+   "disputes": [
+    {
+     "question": "When did Byroade speak at Dayton?",
+     "positions": [
+      {
+       "view": "9 April 1954 (Eban's account in the FRUS memorandum).",
+       "sources": [
+        "rs_cw2_frus_byroade"
+       ]
+      },
+      {
+       "view": "19 April 1954 (Medoff).",
+       "sources": [
+        "rs_cw2_medoff_byroade"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cw2_knesset_1955",
+   "stage": "cw2",
+   "topic": "The Third Knesset election (26 July 1955) and Ben-Gurion's November 1955 coalition",
+   "sources": [
+    {
+     "key": "rs_cw2_idi_1955",
+     "url": "https://en.idi.org.il/israeli-elections-and-parties/elections/1955/",
+     "label": "\"Elections 1955\", Israel Democracy Institute",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw2_pmo_govts_1955",
+     "url": "https://www.gov.il/apps/pmo/history/historyGovernmentsEn.html",
+     "label": "\"Past Governments\", Prime Minister's Office, State of Israel",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Israel elected its Third Knesset on 26 July 1955 with 1,057,795 eligible voters and 82.8% turnout.",
+     "sources": [
+      "rs_cw2_idi_1955"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "Seats: Mapai 40 (274,735 votes), Herut 15, General Zionists 13, National Religious Front 11, Ahdut HaAvoda 10, Mapam 9, Religious Torah Front 6, Maki 6, Progressives 5, Democratic List for Israeli Arabs 2, Progress and Work 2, Agriculture and Development 1.",
+     "sources": [
+      "rs_cw2_idi_1955"
+     ],
+     "strength": "scholarship"
+    },
+    {
+     "text": "After about three months of negotiation Ben-Gurion formed a government of Mapai, the National Religious Front (soon the National Religious Party), Ahdut HaAvoda, Mapam and the Progressives, with 75 seats (80 with the Mapai-affiliated Arab lists); the Prime Minister's Office dates the Seventh Government from 3 November 1955.",
+     "sources": [
+      "rs_cw2_idi_1955",
+      "rs_cw2_pmo_govts_1955"
+     ],
+     "strength": "scholarship"
+    }
+   ],
+   "disputes": []
+  },
+  {
+   "id": "cw2_motto_laws_1955_1956",
+   "stage": "cw2",
+   "topic": "The statute record of 'In God We Trust': the 1955 currency act and the 1956 motto resolution",
+   "sources": [
+    {
+     "key": "rs_cw2_stat70_732",
+     "url": "https://govinfo.gov/content/pkg/STATUTE-70/pdf/STATUTE-70-Pg732-2.pdf",
+     "label": "United States Statutes at Large, vol. 70, p. 732: Public Law 851, ch. 795 (H.J. Res. 396), govinfo",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_unt_pl140",
+     "url": "https://mocat.library.unt.edu/catalog/727-11411",
+     "label": "Catalog record: H.R. 619, an act to provide that all United States currency shall bear the inscription \"In God We Trust\", approved 11 July 1955 (Public Laws, 84th Congress, No. 140, ch. 303), UNT Monthly Catalog",
+     "kind": "primary"
+    }
+   ],
+   "claims": [
+    {
+     "text": "The Statutes at Large print the motto resolution as Public Law 851, chapter 795, H.J. Res. 396, approved 30 July 1956: \"the national motto of the United States is hereby declared to be 'In God we trust.'\"",
+     "sources": [
+      "rs_cw2_stat70_732"
+     ],
+     "strength": "primary"
+    },
+    {
+     "text": "The currency act was a different law: H.R. 619, approved 11 July 1955, numbered 140 in the 84th Congress's public laws (chapter 303), providing that all United States currency bear \"In God We Trust\". HISTORY.com's attribution of the 1956 motto to P.L. 84-140 conflates the two.",
+     "sources": [
+      "rs_cw2_unt_pl140",
+      "rs_cw2_stat70_732"
+     ],
+     "strength": "primary"
+    }
+   ],
+   "disputes": []
+  },
+  {
+   "id": "cw2_pledge_which_god",
+   "stage": "cw2",
+   "topic": "'Under God': which God? What the 1954 record says the word meant, and what it left unsaid",
+   "claims": [
+    {
+     "text": "The 1954 law added the single word 'God', unqualified. No Trinity, no Christ and no named faith appears in the Pledge, and none appeared in the 1952–53 Knights of Columbus resolutions or in the joint resolution Eisenhower signed on 14 June 1954.",
+     "strength": "primary",
+     "sources": [
+      "rs_cw2_kofc_pledge",
+      "rs_cw2_osg_newdow"
+     ]
+    },
+    {
+     "text": "The Knights of Columbus, a Catholic fraternal order, adopted 'under God' for their own meetings in 1951, urged a national change at the 1952 Supreme Council, and wrote to every member of Congress in 1953; seventeen resolutions followed in the House. The American Legion credited them with the amendment on 6 October 1954.",
+     "strength": "reported",
+     "sources": [
+      "rs_cw2_kofc_pledge"
+     ]
+    },
+    {
+     "text": "The House report (H.R. Rep. No. 1693, 1954) stated that the change 'is not an act establishing a religion', and grounded it in 'a fundamental belief in God' and the claim that 'the human person is important because he was created by God', set against Communism. The Senate report (S. Rep. No. 1287) called 'the spiritual bankruptcy of the Communists' one of 'our strongest weapons'. As quoted in the 2003 federal brief, neither report names a particular faith.",
+     "strength": "primary",
+     "sources": [
+      "rs_cw2_osg_newdow"
+     ]
+    },
+    {
+     "text": "As president-elect, on 22 December 1952, Eisenhower said 'our form of government has no sense unless it is founded in a deeply felt religious faith, and I don't care what it is', adding, in one report, 'Of course, it is the Judeo-Christian concept, but it must be a religion with all men being created equal.' Patrick Henry (1981) recorded slight variations across three reports and read the line as meant to include other faiths; Will Herberg and others read it as a generic, thinned religion.",
+     "strength": "scholarship",
+     "sources": [
+      "rs_cw2_wiki_dontcare",
+      "rs_cw2_silk_judeochristian"
+     ]
+    },
+    {
+     "text": "Docherty's sermon of 7 February 1954, as quoted in later reporting, framed the phrase in explicitly Christian and anti-atheist terms: 'An atheistic American is a contradiction in terms,' and 'If you deny the Christian ethic, you fall short of the American ideal of life.' One account quotes him on 'the words of Jesus of Nazareth, the living Word of God for the world' as shaping the nation.",
+     "strength": "reported",
+     "sources": [
+      "rs_cw2_ds_eisenhower_flagday",
+      "rs_cw2_bng_docherty70"
+     ]
+    },
+    {
+     "text": "The Daily Signal (2026) paraphrases Docherty as saying the phrase would encompass people of all faiths, naming Jews and Muslims; no verbatim quotation of that passage was found, and the sermon manuscript's archive link is dead. Treat the inclusion of Muslims as reported, not confirmed.",
+     "strength": "reported",
+     "sources": [
+      "rs_cw2_ds_eisenhower_flagday"
+     ]
+    },
+    {
+     "text": "Mark Silk dates 'Judeo-Christian' as a political term to 1930s interfaith anti-fascism (the National Conference of Christians and Jews), and to its spread as a Cold War watchword in the 1950s; he quotes Eisenhower's 1952 use. Its proponents meant it to bring Jews into a shared religious foundation; some Jewish writers objected (Trude Weiss-Rosmarin called it 'a totalitarian aberration'). After the Cold War, Silk writes, the term became 'an emblem of evangelical hostility to Muslims'.",
+     "strength": "scholarship",
+     "sources": [
+      "rs_cw2_silk_judeochristian"
+     ]
+    },
+    {
+     "text": "In Elk Grove v. Newdow (2004), Justice O'Connor described the Pledge as acknowledging religion 'in a general way: a simple reference to a generic \"God\"', noted it 'does not refer to a nation \"under Jesus\" or \"under Vishnu\"', and wrote that an acknowledgment could not count as ceremonial deism 'if it explicitly favored one particular religious belief system over another.' She also acknowledged that some 1954 legislators may have intended a religious message.",
+     "strength": "primary",
+     "sources": [
+      "rs_cw2_newdow_oconnor"
+     ]
+    },
+    {
+     "text": "'Allah' is the standard Arabic word for God. Arab Christians use it, Arabic translations of both the Hebrew Bible and the Gospels use it, and Arabic-speaking Jewish communities used it; it is related to the Hebrew El and Eloah and the Aramaic Alaha.",
+     "strength": "scholarship",
+     "sources": [
+      "rs_cw2_allah_word"
+     ]
+    }
+   ],
+   "disputes": [
+    {
+     "question": "Which God does 'under God' mean?",
+     "positions": [
+      {
+       "view": "Deliberately none in particular: a generic, non-denominational God, chosen so the phrase would not establish a religion (the House report) and could be said across faiths (Eisenhower 1952; Henry 1981; O'Connor 2004).",
+       "sources": [
+        "rs_cw2_osg_newdow",
+        "rs_cw2_wiki_dontcare",
+        "rs_cw2_newdow_oconnor"
+       ]
+      },
+      {
+       "view": "In practice the Christian God, or the 'Judeo-Christian' God of the Bible: the campaign was led by a Catholic order and a Presbyterian sermon that spoke of 'the Christian ethic' and Jesus (Docherty; Baptist News Global's Christian-nationalism reading; Silk on 'Judeo-Christian').",
+       "sources": [
+        "rs_cw2_kofc_pledge",
+        "rs_cw2_bng_docherty70",
+        "rs_cw2_silk_judeochristian",
+        "rs_cw2_ds_eisenhower_flagday"
+       ]
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "rs_cw2_ds_eisenhower_flagday",
+     "url": "https://www.dailysignal.com/2026/06/13/eisenhower-flag-day-god-cold-war/",
+     "label": "Fred Lucas, \"Why Eisenhower Believed 'Under God' Was Vital…\", The Daily Signal, 13 June 2026",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw2_bng_docherty70",
+     "url": "https://baptistnews.com/article/70-years-ago-today-under-god-was-added-to-the-pledge-of-allegiance/",
+     "label": "\"70 years ago today, 'under God' was added to the Pledge of Allegiance\", Baptist News Global, 14 June 2024",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw2_wiki_dontcare",
+     "url": "https://en.wikipedia.org/wiki/And_I_don%27t_care_what_it_is",
+     "label": "\"And I don't care what it is\" (Eisenhower, 22 December 1952), citing Patrick Henry, JAAR 49:1 (1981), 35–47",
+     "kind": "reference"
+    },
+    {
+     "key": "rs_cw2_silk_judeochristian",
+     "url": "https://www.ncronline.org/news/opinion/distinctly-catholic/mark-silk-history-term-judeo-christian",
+     "label": "Mark Silk, \"Judeo-Christian: From Anti-Fascist to Neo-Fascist\", National Catholic Reporter, 15 April 2019",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_cw2_kofc_pledge",
+     "url": "https://www.catholiccompany.com/magazine/knights-of-columbus-pledge-of-allegiance-5695",
+     "label": "\"One Nation, Under God\": the Knights of Columbus and the Pledge, The Catholic Company",
+     "kind": "reported"
+    },
+    {
+     "key": "rs_cw2_newdow_oconnor",
+     "url": "https://www.law.cornell.edu/supct/html/02-1624.ZC1.html",
+     "label": "Elk Grove Unified School Dist. v. Newdow, 542 U.S. 1 (2004), O'Connor, J., concurring in the judgment",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_osg_newdow",
+     "url": "https://www.justice.gov/sites/default/files/osg/briefs/2003/01/01/2003-0007.resp.pdf",
+     "label": "United States, brief in Newdow (2003), quoting H.R. Rep. No. 1693 and S. Rep. No. 1287, 83d Cong. (1954)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_cw2_allah_word",
+     "url": "https://dlab.epfl.ch/wikispeedia/wpcd/wp/a/Allah.htm",
+     "label": "\"Allah\" (Wikipedia for Schools snapshot)",
+     "kind": "reference"
+    }
+   ]
   }
  ]
 }

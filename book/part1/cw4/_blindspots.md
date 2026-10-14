@@ -1,6 +1,6 @@
 # Stage Four (1957–1962), Arm: blind-spot pass
 
-Status as of 14 October 2026. Run per LIBRARY-PROTOCOL.md section 4 and the volume plan (part1/cw_PLAN.md). The stage owns no scenes, so it is research-led: 10 entries and 119 live-verified claims in `research/cw4.json`, with 16 disputes logged. Eight checklist topics still have **no research entry**, because the session's search budget ran out; their sections are in the manifest marked RESEARCH PENDING and must not be written until research is added (see section 4 and `research/cw4-notes.md`).
+Status as of 14 October 2026. Run per LIBRARY-PROTOCOL.md section 4 and the volume plan (part1/cw_PLAN.md). The stage owns no scenes, so it is research-led: 18 entries and 188 live-verified claims in `research/cw4.json`, with 32 disputes logged. The eight topics first left pending were researched in a gap-closing pass on 14 October 2026; items still open are named at the end of each section's brief and in section 4.
 
 Scope: from the end of the Sinai withdrawal (March 1957, cw3) to the Hawk decision (August 1962). Kennedy's Dimona letters, the FARA order and the Fulbright hearings are cw5's; this stage stops Dimona at Kennedy's first months, plus one forward paragraph on the unannounced visit of September 1962.
 
@@ -29,14 +29,14 @@ Scope: from the end of the Sinai withdrawal (March 1957, cw3) to the Hawk decisi
 | Labour Friends of Israel (1957) | Covered (scene only) | cw4_europe (arm_s07, s19g drawn) |
 | AZCPA renamed AIPAC (1959) | Out of scope (told) | rd6, s07g |
 | German reparations, 1952–1965 | Out of scope (told) | rd6_financing; wr2_s01 (ch01) |
-| Eichmann's capture (May 1960), Argentina at the Security Council, the trial's politics and effect | **Gap: research pending** | cw4_eichmann (documents in rd4_documents) |
-| Wadi Salib (July 1959) and the Mizrahi protest; the commission of inquiry | **Gap: research pending** | cw4_wadi_salib |
-| The Lavon affair reopened (1960), the Committee of Seven, Ben-Gurion's resignation (Jan 1961), the 1961 election | **Gap: research pending** (one line from Aronson only) | cw4_lavon (lv_s01 drawn, 1960–61 only) |
-| Foreign Assistance Act (Sept 1961), USAID; US aid to Israel 1957–62; Section 620I's actual enactment date | **Gap: research pending** | cw4_aid_law_1961 (law_s01 drawn) |
-| The Hawk decision (August 1962), Feldman's mission, the Johnson refugee plan | **Gap: research pending** (Kennedy's 1961 Hawk words are researched) | cw4_hawk |
-| Morocco: the Egoz (Jan 1961), Hassan II's agreement and Operation Yachin (from Nov 1961) | **Gap: research pending** | cw4_morocco (oa_s03 drawn, 1961–62 only) |
-| Border clashes: Tawafiq and the Rotem crisis (1960), Nuqeib and Resolution 171 (1962) | **Gap: research pending** | cw4_borders |
-| Palestinian politics: Fatah's founding (c. 1959), the Arab Nationalist Movement, Al-Ard (1959) | **Gap: research pending** | cw4_palestinian_politics (hma_src_s02 drawn, Fatah's founding only) |
+| Eichmann's capture (May 1960), Argentina at the Security Council, the trial's politics and effect | **Researched now** | cw4_eichmann (documents in rd4_documents) |
+| Wadi Salib (July 1959) and the Mizrahi protest; the commission of inquiry | **Researched now** | cw4_wadi_salib |
+| The Lavon affair reopened (1960), the Committee of Seven, Ben-Gurion's resignation (Jan 1961), the 1961 election | **Researched now** | cw4_lavon (lv_s01 drawn, 1960–61 only) |
+| Foreign Assistance Act (Sept 1961), USAID; US aid to Israel 1957–62; Section 620I's actual enactment date | **Researched now** | cw4_aid_law_1961 (law_s01 drawn) |
+| The Hawk decision (August 1962), Feldman's mission, the Johnson refugee plan | **Researched now** | cw4_hawk |
+| Morocco: the Egoz (Jan 1961), Hassan II's agreement and Operation Yachin (from Nov 1961) | **Researched now** | cw4_morocco (oa_s03 drawn, 1961–62 only) |
+| Border clashes: Tawafiq and the Rotem crisis (1960), Nuqeib and Resolution 171 (1962) | **Researched now** | cw4_borders |
+| Palestinian politics: Fatah's founding (c. 1959), the Arab Nationalist Movement, Al-Ard (1959) | **Researched now** | cw4_palestinian_politics (hma_src_s02 drawn, Fatah's founding only) |
 | Israel's 1959 elections; the 1959 arms sales to Germany and the cabinet crisis | **Gap: not researched** | Queue (cw4) |
 | The break-up of the UAR (September 1961); the Yemen war (from Sept 1962) | Not researched; Yemen is cw5's | Queue / cw5 |
 | Israel in Africa (Ghana, the Foreign Ministry's aid program, from 1958) | **Gap: not researched** | Queue (cw4) |
@@ -77,4 +77,5 @@ How did Israel get a reactor that could make plutonium, and who in France agreed
 - s11d's description of the Hawk as the first "offensive" weapon sold to Israel (Kennedy called it "a defensive weapon").
 - lv_s01's line that the Lavon dispute "contributed to Ben-Gurion's resignation in 1963" (his 1961 resignation is the one in this period; both need dates from research).
 - law_s01's dating of Section 620I to 1961 (the humanitarian-aid clause's enactment date must be verified).
-- Everything in the eight RESEARCH PENDING sections.
+- Gap-closing pass, still open: the Etzioni report's own wording on discrimination (secondary summary only) and Ben-Harush's vote count; the date of Lavon's removal from the Histadrut; the date Kennedy signed the Foreign Assistance Act; the Hawk's final price and credit terms and documented Arab and Soviet reactions; a primary or scholarly text for the Moroccan payment terms; the Rotem crisis beyond Wikipedia's summary of Bar-Joseph; casualties of March 1962; the Arab Nationalist Movement 1957–62; whether Argentina expelled Israel's ambassador; Arendt and her critics.
+- Corrections confirmed by research: Section 620I was enacted on 30 September 1996 (Public Law 104–208), not in 1961; Ben-Gurion's resignation in this period is 31 January 1961.

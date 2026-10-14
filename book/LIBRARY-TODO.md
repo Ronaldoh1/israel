@@ -60,7 +60,7 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
 ## 1b. Volume III and the reading order (Ron, 13 October 2026)
 
 - [ ] **Write Volume III, The Cold War Architecture (1949–1969), next.** Its core is already in the simulation: the 1953 founding of AIPAC's predecessor (s11), the Lavon affair (lv_s01), the 1962 FARA order to the American Zionist Council (s11a, fis_s06), Kennedy vs. Dimona (s11b), both threads ending with Kennedy's death (s11c), and what Johnson did instead (s11d).
-- [ ] **Volume III status (14 October 2026): planning done for all six stages (cw1–cw6).** 91 sections, 80 research entries, 804 live-verified claims and 93 disputes. Plan: book/part1/cw_PLAN.md; stage definitions: book/plan/volumes.json. Next comes a gap-closing research pass, because the web-search budget ran out mid-plan for cw2–cw6. Then writers, finishers, coverage, audit, edit, render test and Ron's review.
+- [ ] **Volume III status (14 October 2026): research done for all six stages (cw1–cw6) after the gap-closing pass.** 99 sections, 108 research entries, 1,031 live-verified claims and 126 disputes. Remaining open items are listed in each stage's _blindspots.md and are minor. Next: writers. Plan: book/part1/cw_PLAN.md; stage definitions: book/plan/volumes.json. Next comes a gap-closing research pass, because the web-search budget ran out mid-plan for cw2–cw6. Then writers, finishers, coverage, audit, edit, render test and Ron's review.
   - **cw4:** 8 sections are marked RESEARCH PENDING: the Eichmann capture and the UN dispute, Wadi Salib, the Lavon reopening, the Foreign Assistance Act and Section 620I, the Hawk decision, Morocco, the 1960–62 border clashes, and Palestinian politics.
   - **cw3:** the UN emergency-session resolutions and their votes; Eisenhower's 20 Feb 1957 address and the 11 Feb aide-mémoire; the Eisenhower Doctrine resolution; Bulganin's letters; the pressure on sterling and oil; the Egyptian Jews of 1956.
   - **cw2:** Ma'ale Akrabim and Nahalin (1954); the Bat Galim; the death tolls at Khan Yunis and Qalqilya; Byroade's speeches and Eden's Guildhall speech.
@@ -70,7 +70,7 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
     - s11d calls the Hawk "offensive": it is an air-defence missile, and Kennedy called it defensive. Its "six visits" and "staged control rooms" are unsourced; Burr and Cohen give nine AEC teams, 1961–69, and document concealment, not staging.
     - cia_s16 says the arsenal was built with stolen NUMEC uranium: this is contested, not established.
     - lv_s01 ties Ben-Gurion's 1963 resignation to Lavon: his Lavon-era resignation was January 1961.
-    - law_s01's 1961 date for Section 620I is unverified.
+    - law_s01 dates Section 620I to 1961: the US Code shows it was enacted on 30 September 1996 (P.L. 104-208).
     - s11a and fis_s06 imply AIPAC was founded in 1963: it took the name in 1958 or 1959 (sources differ).
     - s11's "~$5M" coup cost: the FRUS TPAJAX memo gives $5,330,000 in total.
     - df_s04 dates the liaison under Angleton to 1951: the CIA historian dates Angleton's counterintelligence post to 1954.
