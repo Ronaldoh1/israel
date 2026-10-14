@@ -1,0 +1,95 @@
+{
+ "state": "VT",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_vt": {
+   "t": "2026 United States House of Representatives election in Vermont — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_in_Vermont"
+  },
+  "gp_vt": {
+   "t": "The Green Papers: VT 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/VT"
+  },
+  "vpr_vt": {
+   "t": "Vermont Public — Gerald Malloy wins GOP U.S. House primary (Aug 11, 2026)",
+   "u": "https://www.vermontpublic.org/local-news/2026-08-11/gerald-malloy-wins-gop-u-s-house-primary-will-face-becca-balint-in-the-fall"
+  },
+  "ivg_vt": {
+   "t": "iVoterGuide — Vermont General Election, Nov 3 2026",
+   "u": "https://ivoterguide.com/voter-guide/eleck/1500"
+  }
+ },
+ "races": [
+  {
+   "race": "VT-AL",
+   "incumbent": {
+    "name": "Becca Balint",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Becca Balint",
+     "party": "D",
+     "incumbent": true,
+     "rec": "vt-00-rebecca-balint",
+     "fec": [
+      "H2VT01076"
+     ]
+    },
+    {
+     "name": "Gerald Malloy",
+     "party": "R",
+     "incumbent": false,
+     "rec": "vt-00-gerald-malloy",
+     "fec": [
+      "H6VT01085",
+      "S2VT00292"
+     ]
+    },
+    {
+     "name": "Phoenix K. Altair",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Adam Ortiz",
+     "party": "I",
+     "incumbent": false,
+     "rec": "vt-00-adam-ortiz",
+     "fec": [
+      "H2VT00177"
+     ]
+    },
+    {
+     "name": "Suzanne Seymour",
+     "party": "I",
+     "incumbent": false,
+     "rec": "vt-00-suzanne-seymour",
+     "fec": [
+      "H6VT00269"
+     ]
+    },
+    {
+     "name": "Ryan Walton",
+     "party": "I",
+     "incumbent": false,
+     "rec": "vt-00-ryan-walton",
+     "fec": [
+      "H6VT01093"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 11 Republican primary: Malloy ~77% over Mark Coester (partial count). Balint was unopposed. The four independents are listed by both Green Papers and iVoterGuide; the Wikipedia page fetched predated the primary. Cris Ericson is write-in only.",
+   "c": [
+    "vpr_vt",
+    "gp_vt",
+    "ivg_vt",
+    "wiki_vt"
+   ]
+  }
+ ]
+}

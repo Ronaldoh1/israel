@@ -1,0 +1,245 @@
+{
+ "state": "UT",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ut": {
+   "t": "2026 United States House of Representatives elections in Utah — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Utah"
+  },
+  "p1_ut": {
+   "t": "Politics1 — UT 2026 candidates",
+   "u": "https://politics1.com/ut.htm"
+  }
+ },
+ "races": [
+  {
+   "race": "UT-01",
+   "incumbent": {
+    "name": "Blake Moore",
+    "party": "R",
+    "status": "Running in UT-02 (redistricting)"
+   },
+   "nominees": [
+    {
+     "name": "Ben McAdams",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ut-01-ben-mcadams",
+     "fec": [
+      "H8UT04053"
+     ]
+    },
+    {
+     "name": "Riley Owen",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ut-01-riley-owen",
+     "fec": [
+      "H6UT01244"
+     ]
+    },
+    {
+     "name": "Jesse West",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ut-01-jesse-west",
+     "fec": [
+      "H6UT01251"
+     ]
+    },
+    {
+     "name": "Elias Montgomery",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Court-ordered map (League of Women Voters v. Utah State Legislature; Judge Dianna Gibson adopted plaintiffs' map Nov 2025). New Salt Lake County seat, no incumbent running. McAdams won D primary June 23 with 51.9% (Blouin 27.5%). West (L) and Montgomery (I) listed by Politics1; Wikipedia lists neither on the ballot. Montgomery has no FEC row.",
+   "c": [
+    "wiki_ut",
+    "p1_ut"
+   ]
+  },
+  {
+   "race": "UT-02",
+   "incumbent": {
+    "name": "Celeste Maloy",
+    "party": "R",
+    "status": "Running in UT-03 (redistricting)"
+   },
+   "nominees": [
+    {
+     "name": "Blake Moore",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ut-02-blake-moore",
+     "fec": [
+      "H0UT01205"
+     ]
+    },
+    {
+     "name": "Peter Crosby",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ut-02-peter-crosby",
+     "fec": [
+      "H6UT01160"
+     ]
+    },
+    {
+     "name": "Carlton Bowen",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ut-02-carlton-bowen",
+     "fec": [
+      "H6UT02259",
+      "H6UT02549",
+      "S0UT00090",
+      "S4UT00324"
+     ]
+    },
+    {
+     "name": "Daniel Cottam",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ut-02-daniel-cottam",
+     "fec": [
+      "H4UT01165"
+     ]
+    },
+    {
+     "name": "Robert Moesinger",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ut-02-robert-moesinger",
+     "fec": [
+      "H6UT02531"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Court-ordered map (League of Women Voters v. Utah State Legislature; Judge Dianna Gibson adopted plaintiffs' map Nov 2025). Moore (current UT-01 member) beat Karianne Lisonbee 56.7%-43.3% in June 23 R primary. Bowen is Independent American Party. Minor candidates per Politics1 only.",
+   "c": [
+    "wiki_ut",
+    "p1_ut"
+   ]
+  },
+  {
+   "race": "UT-03",
+   "incumbent": {
+    "name": "Mike Kennedy",
+    "party": "R",
+    "status": "Running in UT-04 (redistricting)"
+   },
+   "nominees": [
+    {
+     "name": "Celeste Maloy",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ut-03-celeste-maloy",
+     "fec": [
+      "H4UT02296"
+     ]
+    },
+    {
+     "name": "Kent Udell",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ut-03-kent-udell",
+     "fec": [
+      "H6UT03182"
+     ]
+    },
+    {
+     "name": "Cassie Easley",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ut-03-cassie-easley",
+     "fec": [
+      "H2UT02506"
+     ]
+    },
+    {
+     "name": "Mike Stoddard",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ut-03-michael-stoddard",
+     "fec": [
+      "H2UT03355",
+      "H6UT03224"
+     ]
+    },
+    {
+     "name": "Adonis Hooslyn",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ut-03-adonis-hooslyn",
+     "fec": [
+      "H6UT03174"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Court-ordered map (League of Women Voters v. Utah State Legislature; Judge Dianna Gibson adopted plaintiffs' map Nov 2025). Maloy (current UT-02 member) beat Phil Lyman 65.7%-34.3% in R primary. Easley is Constitution Party. Minor candidates per Politics1 only.",
+   "c": [
+    "wiki_ut",
+    "p1_ut"
+   ]
+  },
+  {
+   "race": "UT-04",
+   "incumbent": {
+    "name": "Burgess Owens",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Mike Kennedy",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ut-04-mike-kennedy",
+     "fec": [
+      "H4UT03260",
+      "S8UT00242"
+     ]
+    },
+    {
+     "name": "Jonny Larsen",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ut-04-jonny-larsen",
+     "fec": [
+      "H6UT02424"
+     ]
+    },
+    {
+     "name": "Steven Burt",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ut-04-steven-burt",
+     "fec": [
+      "H6UT04024"
+     ]
+    },
+    {
+     "name": "Taylor Wright",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ut-04-taylor-wright",
+     "fec": [
+      "H6UT04057"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Court-ordered map (League of Women Voters v. Utah State Legislature; Judge Dianna Gibson adopted plaintiffs' map Nov 2025). Owens announced in March 2026 he would not seek re-election; Kennedy (current UT-03 member) runs here. Wright (L) listed by Politics1 only.",
+   "c": [
+    "wiki_ut",
+    "p1_ut"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,473 @@
+{
+ "state": "LA",
+ "checked": "2026-10-14",
+ "system": "Louisiana's closed party primaries for U.S. House (planned May 16, runoff June 27, 2026) were canceled by Gov. Landry after the Supreme Court's April 2026 Louisiana v. Callais ruling; a new map was signed May 29, 2026. All candidates of every party now run on one open ('jungle') ballot on November 3, 2026; a candidate with a majority wins outright, otherwise the top two meet in a December 12, 2026 runoff. Qualifying closed in August; 39 candidates qualified.",
+ "cites": {
+  "wiki_la": {
+   "t": "2026 United States House of Representatives elections in Louisiana — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Louisiana"
+  },
+  "gp_la": {
+   "t": "The Green Papers: Louisiana 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/LA"
+  },
+  "wwno_la": {
+   "t": "39 candidates qualify to run for Louisiana's 6 congressional districts — WWNO",
+   "u": "https://www.wwno.org/2026-08-12/39-candidates-qualify-to-run-for-louisianas-6-congressional-districts"
+  },
+  "illum_la": {
+   "t": "New districts scramble candidate qualifying for Louisiana's US House races — Louisiana Illuminator",
+   "u": "https://lailluminator.com/2026/08/05/louisiana-congress-candidates/"
+  }
+ },
+ "races": [
+  {
+   "race": "LA-01",
+   "incumbent": {
+    "name": "Steve Scalise",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Steve Scalise",
+     "party": "R",
+     "incumbent": true,
+     "rec": "la-01-steve-scalise",
+     "fec": [
+      "H0LA01087"
+     ]
+    },
+    {
+     "name": "Randall Arrington",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-01-randall-arrington",
+     "fec": [
+      "H4LA01162",
+      "S6LA00516"
+     ]
+    },
+    {
+     "name": "Lauren Jewett",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-01-lauren-jewett",
+     "fec": [
+      "H6LA01258"
+     ]
+    },
+    {
+     "name": "E. \"Liddy\" Glass",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. Glass is No Party.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  },
+  {
+   "race": "LA-02",
+   "incumbent": {
+    "name": "Troy Carter",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Troy Carter",
+     "party": "D",
+     "incumbent": true,
+     "rec": "la-02-troy-carter",
+     "fec": [
+      "H2LA02032",
+      "H2LA02149"
+     ]
+    },
+    {
+     "name": "Peter Williams",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-02-peter-williams",
+     "fec": [
+      "H4LA05171",
+      "S6LA00417"
+     ]
+    },
+    {
+     "name": "Lisa Ballay",
+     "party": "L",
+     "incumbent": false,
+     "rec": "la-02-lisa-ballay",
+     "fec": [
+      "H2LA02305"
+     ]
+    },
+    {
+     "name": "Walter \"Rocky\" Beach",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Renada \"Honey\" Collins",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. Collins qualified No Party (WWNO, Green Papers); Wikipedia also labels her Democratic. Wikipedia omits Williams and Beach.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  },
+  {
+   "race": "LA-03",
+   "incumbent": {
+    "name": "Clay Higgins",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Clay Higgins",
+     "party": "R",
+     "incumbent": true,
+     "rec": "la-03-clay-higgins",
+     "fec": [
+      "H6LA03148"
+     ]
+    },
+    {
+     "name": "Kate Cotten",
+     "party": "R",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "John Day",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-03-john-day",
+     "fec": [
+      "H6LA03205"
+     ]
+    },
+    {
+     "name": "Priscilla Gonzalez",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-03-priscilla-gonzalez",
+     "fec": [
+      "H4LA03135"
+     ]
+    },
+    {
+     "name": "Caleb Walker",
+     "party": "D",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Tia LeBrun",
+     "party": "I",
+     "incumbent": false,
+     "rec": "la-03-tia-lebrun",
+     "fec": [
+      "H2LA03105"
+     ]
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. LeBrun qualified No Party per WWNO/Green Papers; Wikipedia lists her as D.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  },
+  {
+   "race": "LA-04",
+   "incumbent": {
+    "name": "Mike Johnson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Johnson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "la-04-james-johnson",
+     "fec": [
+      "H6LA04138"
+     ]
+    },
+    {
+     "name": "Gordon Heslop",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-04-gordon-heslop",
+     "fec": [
+      "H6LA04229"
+     ]
+    },
+    {
+     "name": "Mike Nichols",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-04-michael-nichols",
+     "fec": [
+      "H6LA04203"
+     ]
+    },
+    {
+     "name": "Conrad Cable",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-04-conrad-cable",
+     "fec": [
+      "H6LA04187"
+     ]
+    },
+    {
+     "name": "Matt Gromlich",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-04-matthew-gromlich",
+     "fec": [
+      "H6LA04195"
+     ]
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. Wikipedia omits Heslop. A Gordon Heslop also ran in the MO-08 GOP primary (Aug 4); FEC ids differ.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  },
+  {
+   "race": "LA-05",
+   "incumbent": {
+    "name": "Julia Letlow",
+    "party": "R",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Stewart Cathey Jr.",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-stewart-cathey",
+     "fec": [
+      "H6LA05184"
+     ]
+    },
+    {
+     "name": "Misti Cordell",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-misti-cordell",
+     "fec": [
+      "H6LA05200"
+     ]
+    },
+    {
+     "name": "Oscar \"Omar\" Dantzler",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-oscar-dantzler",
+     "fec": [
+      "H2LA05282"
+     ]
+    },
+    {
+     "name": "Michael Echols",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-michael-echols",
+     "fec": [
+      "H6LA05242"
+     ]
+    },
+    {
+     "name": "Gabe Firment",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-michael-firment",
+     "fec": [
+      "H6LA05317"
+     ]
+    },
+    {
+     "name": "Austin Magee",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-05-austin-magee",
+     "fec": [
+      "H6LA05283"
+     ]
+    },
+    {
+     "name": "Dan McKay",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-05-dan-mckay",
+     "fec": [
+      "H6LA05291"
+     ]
+    },
+    {
+     "name": "Pat Moore",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-05-patricia-moore",
+     "fec": [
+      "H6LA05341"
+     ]
+    },
+    {
+     "name": "Antonio Wilson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-05-antonio-wilson",
+     "fec": [
+      "H6LA05325",
+      "H6LA05333"
+     ]
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. Open seat. Wikipedia's district list still includes non-qualifiers (e.g. Garret Graves, Sammy Wyatt); used WWNO's qualified list.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  },
+  {
+   "race": "LA-06",
+   "incumbent": {
+    "name": "Cleo Fields",
+    "party": "D",
+    "status": "Retiring (running for state Senate per Wikipedia)"
+   },
+   "nominees": [
+    {
+     "name": "Monique Appeaning",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-anjanita-appeaning",
+     "fec": [
+      "H6LA06158"
+     ]
+    },
+    {
+     "name": "Larry Davis III",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-larry-davis",
+     "fec": [
+      "H6LA05168"
+     ]
+    },
+    {
+     "name": "Rick Edmonds",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-rick-edmonds",
+     "fec": [
+      "H6LA05226"
+     ]
+    },
+    {
+     "name": "Michael Mebruer",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-michael-mebruer",
+     "fec": [
+      "H6LA05259"
+     ]
+    },
+    {
+     "name": "Blake Miguez",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-blake-miguez",
+     "fec": [
+      "H6LA05234"
+     ]
+    },
+    {
+     "name": "Stephen Wagley",
+     "party": "R",
+     "incumbent": false,
+     "rec": "la-06-stephen-wagley",
+     "fec": [
+      "H6LA06182"
+     ]
+    },
+    {
+     "name": "Chauna Banks",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-06-chauna-banks",
+     "fec": [
+      "H6LA06174"
+     ]
+    },
+    {
+     "name": "Pat Forbes",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-06-patrick-forbes",
+     "fec": [
+      "H6LA06190"
+     ]
+    },
+    {
+     "name": "Lindsay \"Rubia\" Garcia",
+     "party": "D",
+     "incumbent": false,
+     "rec": "la-06-lindsay-garcia",
+     "fec": [
+      "H6LA05309"
+     ]
+    },
+    {
+     "name": "Rufus Craig",
+     "party": "L",
+     "incumbent": false,
+     "rec": "la-06-rufus-craig",
+     "fec": [
+      "H2LA06058",
+      "H4LA06047"
+     ]
+    }
+   ],
+   "status": "pending",
+   "note": "Open (jungle) primary Nov 3, all candidates on one ballot; majority wins outright, else top-two runoff Dec 12. Open seat, redrawn by May 2026 map. Wikipedia lists Chris Johnson (R), who is not on WWNO's qualified list.",
+   "c": [
+    "wwno_la",
+    "gp_la",
+    "wiki_la"
+   ]
+  }
+ ]
+}

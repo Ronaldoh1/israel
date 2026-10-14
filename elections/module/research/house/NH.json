@@ -1,0 +1,103 @@
+{
+ "state": "NH",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_nh": {
+   "t": "2026 United States House of Representatives elections in New Hampshire — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_New_Hampshire"
+  },
+  "gp_nh": {
+   "t": "The Green Papers: NH 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/NH"
+  },
+  "nenc_nh1": {
+   "t": "WSHU/NENC — DiLorenzo wins GOP primary in 1st Congressional District (Sept 8, 2026)",
+   "u": "https://www.wshu.org/2026-09-08/nh-newhampshire-1st-congressional-district-2026-midterms-dilorenzo-sullivan-shaheen"
+  },
+  "nenc_nh2": {
+   "t": "NENC — Goodlander, Williams win in 2nd District Congressional primaries (Sept 8, 2026)",
+   "u": "https://www.capeandislands.org/2026-09-08/goodlander-williams-win-in-2nd-district-congressional-primaries-setting-up-rematch"
+  }
+ },
+ "races": [
+  {
+   "race": "NH-01",
+   "incumbent": {
+    "name": "Chris Pappas",
+    "party": "D",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Stefany Shaheen",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nh-01-stefany-shaheen",
+     "fec": [
+      "H6NH01321"
+     ]
+    },
+    {
+     "name": "Anthony DiLorenzo",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nh-01-anthony-dilorenzo",
+     "fec": [
+      "H6NH01420"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Sept 8 primary: Shaheen 37% over Maura Sullivan 35% (AP call 12:35 a.m.); DiLorenzo ~51% over Hollie Noveletsky 26%. The Wikipedia page fetched predated the primary.",
+   "c": [
+    "nenc_nh1",
+    "gp_nh",
+    "wiki_nh"
+   ]
+  },
+  {
+   "race": "NH-02",
+   "incumbent": {
+    "name": "Maggie Goodlander",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Maggie Goodlander",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nh-02-maggie-goodlander",
+     "fec": [
+      "H4NH02399"
+     ]
+    },
+    {
+     "name": "Lily Tang Williams",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nh-02-lily-williams",
+     "fec": [
+      "H2NH02260"
+     ]
+    },
+    {
+     "name": "Robbie Mahrou",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nh-02-robbie-mahrou",
+     "fec": [
+      "H6NH02303"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Sept 8 primary: Goodlander 80% over Paige Beauchemin; Williams 64% over Victor Orlando (early count). Mahrou (I) listed by Green Papers only.",
+   "c": [
+    "nenc_nh2",
+    "gp_nh",
+    "wiki_nh"
+   ]
+  }
+ ]
+}

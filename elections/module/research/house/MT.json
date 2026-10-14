@@ -1,0 +1,111 @@
+{
+ "state": "MT",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_mt": {
+   "t": "2026 United States House of Representatives elections in Montana — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Montana"
+  }
+ },
+ "races": [
+  {
+   "race": "MT-01",
+   "incumbent": {
+    "name": "Ryan Zinke",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Aaron Flint",
+     "party": "R",
+     "incumbent": false,
+     "rec": "mt-01-aaron-flint",
+     "fec": [
+      "H6MT01152"
+     ]
+    },
+    {
+     "name": "Sam Forstag",
+     "party": "D",
+     "incumbent": false,
+     "rec": "mt-01-samuel-forstag",
+     "fec": [
+      "H6MT01137"
+     ]
+    },
+    {
+     "name": "Nick Sheedy",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Kimberly Persico",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Open seat (Zinke announced retirement Mar 2, 2026). June 2 primaries: Flint 50.1%; Forstag 37.3% over Ryan Busse 33.1%. Sheedy and Persico have no FEC rows.",
+   "c": [
+    "wiki_mt"
+   ]
+  },
+  {
+   "race": "MT-02",
+   "incumbent": {
+    "name": "Troy Downing",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Troy Downing",
+     "party": "R",
+     "incumbent": true,
+     "rec": "mt-02-troy-downing",
+     "fec": [
+      "H4MT02098",
+      "S8MT00218"
+     ]
+    },
+    {
+     "name": "Brian Miller",
+     "party": "D",
+     "incumbent": false,
+     "rec": "mt-02-brian-miller",
+     "fec": [
+      "H6MT02150"
+     ]
+    },
+    {
+     "name": "Patrick McCracken",
+     "party": "L",
+     "incumbent": false,
+     "rec": "mt-02-patrick-mccracken",
+     "fec": [
+      "H6MT02176"
+     ]
+    },
+    {
+     "name": "Michael Eisenhauer",
+     "party": "I",
+     "incumbent": false,
+     "rec": "mt-02-michael-eisenhauer",
+     "fec": [
+      "H6MT02168"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Miller won D primary with 55.7%. A cited headline mentions independent Tracey Tackett, but she is not in Wikipedia's ballot listing.",
+   "c": [
+    "wiki_mt"
+   ]
+  }
+ ]
+}

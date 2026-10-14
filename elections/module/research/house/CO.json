@@ -1,0 +1,451 @@
+{
+ "state": "CO",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_co": {
+   "t": "2026 United States House of Representatives elections in Colorado — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Colorado"
+  },
+  "p1_co": {
+   "t": "Politics1 — CO 2026 candidates",
+   "u": "https://politics1.com/co.htm"
+  },
+  "bhfs_pri": {
+   "t": "Brownstein Hyatt Farber Schreck — Colorado Primary Election Results 2026 (July 2026)",
+   "u": "https://www.bhfs.com/wp-content/uploads/2026/07/Client-Alert-CO-Primary-Election-Results-2026.final_.formatted.pdf"
+  },
+  "bhfs_gen": {
+   "t": "Brownstein Hyatt Farber Schreck — Colorado 2026 Pre-Election Results and Analysis (Sept 2026)",
+   "u": "https://www.bhfs.com/wp-content/uploads/2026/09/Colorado-2026-PRE-ELECTION-Results-and-Analysis-FINAL.pdf"
+  },
+  "cawp_co": {
+   "t": "Results from the June 30th Primary in Colorado — CAWP, Rutgers",
+   "u": "https://cawp.rutgers.edu/blog/results-june-30th-primary-colorado"
+  }
+ },
+ "races": [
+  {
+   "race": "CO-01",
+   "incumbent": {
+    "name": "Diana DeGette",
+    "party": "D",
+    "status": "Lost renomination"
+   },
+   "nominees": [
+    {
+     "name": "Melat Kiros",
+     "party": "D",
+     "incumbent": false,
+     "rec": "co-01-melat-kiros",
+     "fec": [
+      "H6CO01273"
+     ]
+    },
+    {
+     "name": "Christy Peterson",
+     "party": "R",
+     "incumbent": false,
+     "rec": "co-01-christy-peterson",
+     "fec": [
+      "H6CO01331"
+     ]
+    },
+    {
+     "name": "Shimon Blau",
+     "party": "I",
+     "incumbent": false,
+     "rec": "co-01-shimon-blau",
+     "fec": [
+      "H6CO01356"
+     ]
+    },
+    {
+     "name": "Chad Humphrey",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Christopher \"Critter\" Milton",
+     "party": "I",
+     "incumbent": false,
+     "rec": "co-01-christopher-milton",
+     "fec": [
+      "H0CO03173",
+      "S0CO00591"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kiros (DSA-endorsed) defeated DeGette in June 30 D primary. Blau (unaffiliated) listed by Brownstein and Politics1; Humphrey (L) and Milton (Unity Party; FEC match by nickname) per Politics1 only; Humphrey has no FEC row.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co",
+    "cawp_co"
+   ]
+  },
+  {
+   "race": "CO-02",
+   "incumbent": {
+    "name": "Joe Neguse",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Joe Neguse",
+     "party": "D",
+     "incumbent": true,
+     "rec": "co-02-joseph-neguse",
+     "fec": [
+      "H8CO02160"
+     ]
+    },
+    {
+     "name": "Kelley Dennison",
+     "party": "R",
+     "incumbent": false,
+     "rec": "co-02-kelley-dennison",
+     "fec": [
+      "H6CO02206"
+     ]
+    },
+    {
+     "name": "Gaylon Kent",
+     "party": "L",
+     "incumbent": false,
+     "rec": "co-02-gaylon-kent",
+     "fec": [
+      "H2CO03153",
+      "S4CO00403"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Dennison beat Christina Blunt in R primary. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co"
+   ]
+  },
+  {
+   "race": "CO-03",
+   "incumbent": {
+    "name": "Jeff Hurd",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jeff Hurd",
+     "party": "R",
+     "incumbent": true,
+     "rec": "co-03-jeffrey-hurd",
+     "fec": [
+      "H4CO03357"
+     ]
+    },
+    {
+     "name": "Dwayne Romero",
+     "party": "D",
+     "incumbent": false,
+     "rec": "co-03-dwayne-romero",
+     "fec": [
+      "H6CO03253"
+     ]
+    },
+    {
+     "name": "Cory Robertson",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Clifton Brown",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Hurd beat Ron Hanks in R primary; Romero beat Alex Kelloff in D primary. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. Robertson and Brown have no FEC rows.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co"
+   ]
+  },
+  {
+   "race": "CO-04",
+   "incumbent": {
+    "name": "Lauren Boebert",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lauren Boebert",
+     "party": "R",
+     "incumbent": true,
+     "rec": "co-04-lauren-boebert",
+     "fec": [
+      "H0CO03165"
+     ]
+    },
+    {
+     "name": "Eileen Laubacher",
+     "party": "D",
+     "incumbent": false,
+     "rec": "co-04-eileen-laubacher",
+     "fec": [
+      "H6CO04202"
+     ]
+    },
+    {
+     "name": "Douglas Mangeris",
+     "party": "L",
+     "incumbent": false,
+     "rec": "co-04-douglas-mangeris",
+     "fec": [
+      "H4CO04215"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both primaries uncontested. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. Wikipedia lists Tim Veldhuizen (I) as a candidate; Politics1 does not.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co"
+   ]
+  },
+  {
+   "race": "CO-05",
+   "incumbent": {
+    "name": "Jeff Crank",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jeff Crank",
+     "party": "R",
+     "incumbent": true,
+     "rec": "co-05-jeff-crank",
+     "fec": [
+      "H6CO05142"
+     ]
+    },
+    {
+     "name": "Jessica Killin",
+     "party": "D",
+     "incumbent": false,
+     "rec": "co-05-jessica-killin",
+     "fec": [
+      "H6CO05324"
+     ]
+    },
+    {
+     "name": "Mark Elworth Jr.",
+     "party": "L",
+     "incumbent": false,
+     "rec": "co-05-mark-elworth",
+     "fec": [
+      "H4CO03340",
+      "H4CO03381",
+      "H4CO04322"
+     ]
+    },
+    {
+     "name": "Christopher Mitchell",
+     "party": "I",
+     "incumbent": false,
+     "rec": "co-05-christopher-mitchell",
+     "fec": [
+      "H2CO05182",
+      "H4CO05071"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Killin beat Joe Reagan in D primary. Mitchell is American Constitution Party. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. Wikipedia lists Roy Matthewson (I); Politics1 does not.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co"
+   ]
+  },
+  {
+   "race": "CO-06",
+   "incumbent": {
+    "name": "Jason Crow",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jason Crow",
+     "party": "D",
+     "incumbent": true,
+     "rec": "co-06-jason-crow",
+     "fec": [
+      "H8CO06229"
+     ]
+    },
+    {
+     "name": "Jason Clark",
+     "party": "R",
+     "incumbent": false,
+     "rec": "co-06-jason-clark",
+     "fec": [
+      "H6CO06165"
+     ]
+    },
+    {
+     "name": "Samir Witta",
+     "party": "I",
+     "incumbent": false,
+     "rec": "co-06-samir-witta",
+     "fec": [
+      "H6CO06116"
+     ]
+    },
+    {
+     "name": "Patty McMahan",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Meredith Ryan",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Both primaries uncontested per Brownstein. Witta is unaffiliated (Wikipedia, Politics1). Ryan is Unity Party. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. McMahan and Ryan have no FEC rows.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co",
+    "wiki_co"
+   ]
+  },
+  {
+   "race": "CO-07",
+   "incumbent": {
+    "name": "Brittany Pettersen",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brittany Pettersen",
+     "party": "D",
+     "incumbent": true,
+     "rec": "co-07-brittany-pettersen",
+     "fec": [
+      "H8CO07045"
+     ]
+    },
+    {
+     "name": "Timothy Bennett",
+     "party": "R",
+     "incumbent": false,
+     "rec": "co-07-timothy-bennett",
+     "fec": [
+      "H6CO07122"
+     ]
+    },
+    {
+     "name": "Joe Krzeczkowski",
+     "party": "I",
+     "incumbent": false,
+     "rec": "co-07-joe-krzeczkowski",
+     "fec": [
+      "H6CO07130"
+     ]
+    },
+    {
+     "name": "Dan \"Kilo\" Sallis",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Susan Hall",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Lawrence Clark",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Both primaries uncontested. Hall is Unity Party; Clark is American Constitution Party. Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. Sallis, Hall and Clark have no FEC rows.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co",
+    "wiki_co"
+   ]
+  },
+  {
+   "race": "CO-08",
+   "incumbent": {
+    "name": "Gabe Evans",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Gabe Evans",
+     "party": "R",
+     "incumbent": true,
+     "rec": "co-08-timothy-evans",
+     "fec": [
+      "H4CO08034"
+     ]
+    },
+    {
+     "name": "Manny Rutinel",
+     "party": "D",
+     "incumbent": false,
+     "rec": "co-08-manny-rutinel",
+     "fec": [
+      "H6CO08013"
+     ]
+    },
+    {
+     "name": "Dave Wood",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Rutinel beat Shannon Bird in D primary. Evans matched to FEC row 'Timothy Evans' (only CO-08 Republican incumbent filer, H4CO08034). Minor-party candidates per Politics1 only (Brownstein lists none); not checked against SOS certified list. Wikipedia page had no primary results at check time. Wood has no FEC row.",
+   "c": [
+    "bhfs_pri",
+    "bhfs_gen",
+    "p1_co"
+   ]
+  }
+ ]
+}

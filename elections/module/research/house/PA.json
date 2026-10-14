@@ -1,0 +1,636 @@
+{
+ "state": "PA",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_pa": {
+   "t": "2026 United States House of Representatives elections in Pennsylvania — Wikipedia (fetch truncated after PA-8)",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Pennsylvania"
+  },
+  "gp_pa": {
+   "t": "The Green Papers: Pennsylvania 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/PA"
+  },
+  "abc27_pa": {
+   "t": "Pennsylvania's congressional primaries largely set; Who is running? — ABC27 (Mar 11, 2026)",
+   "u": "https://www.abc27.com/pennsylvania-governor-election/pennsylvanias-congressional-primaries-largely-set-who-is-running/amp/"
+  },
+  "ppa_recap": {
+   "t": "Primary Election Night Recap — PoliticsPA (May 2026)",
+   "u": "https://politicspa.com/primary-election-night-recap/146401/"
+  },
+  "co_recap": {
+   "t": "Pennsylvania Perspective Special Edition: 2026 Primary Election Recap — Cozen O'Connor Public Strategies",
+   "u": "https://copublicstrategies.com/pennsylvania-perspective-special-edition-2026-primary-election-recap/"
+  },
+  "bp_pa_news": {
+   "t": "One incumbent in Pennsylvania is running in a contested U.S. House primary — Ballotpedia News (May 19, 2026)",
+   "u": "https://news.ballotpedia.org/2026/05/19/one-incumbent-in-pennsylvania-is-running-in-a-contested-u-s-house-primary-this-year-the-fewest-since-2014/"
+  }
+ },
+ "races": [
+  {
+   "race": "PA-01",
+   "incumbent": {
+    "name": "Brian Fitzpatrick",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brian Fitzpatrick",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-01-brian-fitzpatrick",
+     "fec": [
+      "H6PA08277"
+     ]
+    },
+    {
+     "name": "Bob Harvie",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-01-robert-harvie",
+     "fec": [
+      "H6PA01181"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "May 19 primary: Harvie won D primary over Lucia Simonelli 65.1-34.9.",
+   "c": [
+    "wiki_pa",
+    "gp_pa",
+    "ppa_recap"
+   ]
+  },
+  {
+   "race": "PA-02",
+   "incumbent": {
+    "name": "Brendan Boyle",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brendan Boyle",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-02-brendan-boyle",
+     "fec": [
+      "H4PA13199"
+     ]
+    },
+    {
+     "name": "Jessica Arriaga",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-02-jessica-arriaga",
+     "fec": [
+      "H6PA02205"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_pa",
+    "gp_pa"
+   ]
+  },
+  {
+   "race": "PA-03",
+   "incumbent": {
+    "name": "Dwight Evans",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Chris Rabb",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-03-christopher-rabb",
+     "fec": [
+      "H6PA03203"
+     ]
+    },
+    {
+     "name": "Dennis Mahoney",
+     "party": "I",
+     "incumbent": false,
+     "rec": "pa-03-dennis-mahoney",
+     "fec": [
+      "H6PA03369"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Rabb won 8-way D primary 44.6% to Sharif Street 29.3%. No Republican nominee (none filed per ABC27/Ballotpedia News; Wikipedia lists an unlabeled 'Alex Schnell', not in its GE table). Mahoney runs as The Independent Party; Green Papers marks him not yet confirmed.",
+   "c": [
+    "wiki_pa",
+    "gp_pa",
+    "abc27_pa",
+    "bp_pa_news"
+   ]
+  },
+  {
+   "race": "PA-04",
+   "incumbent": {
+    "name": "Madeleine Dean",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Madeleine Dean",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-04-madeleine-dean",
+     "fec": [
+      "H8PA04116"
+     ]
+    },
+    {
+     "name": "Aurora Stuski",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-04-aurora-stuski",
+     "fec": [
+      "H6PA04169"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_pa",
+    "gp_pa"
+   ]
+  },
+  {
+   "race": "PA-05",
+   "incumbent": {
+    "name": "Mary Gay Scanlon",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mary Gay Scanlon",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-05-mary-scanlon",
+     "fec": [
+      "H8PA07200"
+     ]
+    },
+    {
+     "name": "Nick Manganaro",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-05-nicholas-manganaro",
+     "fec": [
+      "H6PA05216"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_pa",
+    "gp_pa"
+   ]
+  },
+  {
+   "race": "PA-06",
+   "incumbent": {
+    "name": "Chrissy Houlahan",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Chrissy Houlahan",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-06-chrissy-houlahan",
+     "fec": [
+      "H8PA06087"
+     ]
+    },
+    {
+     "name": "Marty Young",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-06-martin-young",
+     "fec": [
+      "H6PA06156"
+     ]
+    },
+    {
+     "name": "Philip Cerroni",
+     "party": "G",
+     "incumbent": false,
+     "rec": "pa-06-philip-cerroni",
+     "fec": [
+      "H6PA06164"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Cerroni (Green) listed only by Green Papers, marked not yet confirmed as certified; Wikipedia GE table lists only Houlahan and Young.",
+   "c": [
+    "wiki_pa",
+    "gp_pa"
+   ]
+  },
+  {
+   "race": "PA-07",
+   "incumbent": {
+    "name": "Ryan Mackenzie",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ryan Mackenzie",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-07-ryan-mackenzie",
+     "fec": [
+      "H8PA15195"
+     ]
+    },
+    {
+     "name": "Bob Brooks",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-07-bob-brooks",
+     "fec": [
+      "H6PA07188"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Brooks won D primary 41.0% to Ryan Crosswell 21.3%. Green nominee Andrew Tupone ruled off the ballot by Commonwealth Court, upheld by PA Supreme Court; running as write-in.",
+   "c": [
+    "wiki_pa",
+    "gp_pa",
+    "co_recap"
+   ]
+  },
+  {
+   "race": "PA-08",
+   "incumbent": {
+    "name": "Rob Bresnahan",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rob Bresnahan",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-08-rob-bresnahan",
+     "fec": [
+      "H4PA08124"
+     ]
+    },
+    {
+     "name": "Paige Cognetti",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-08-paige-cognetti",
+     "fec": [
+      "H6PA08293"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both nominees unopposed in May 19 primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa",
+    "co_recap",
+    "wiki_pa"
+   ]
+  },
+  {
+   "race": "PA-09",
+   "incumbent": {
+    "name": "Dan Meuser",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Dan Meuser",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-09-daniel-meuser",
+     "fec": [
+      "H8PA10147"
+     ]
+    },
+    {
+     "name": "Rachel Wallace",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-09-rachel-wallace",
+     "fec": [
+      "H6PA09127"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-10",
+   "incumbent": {
+    "name": "Scott Perry",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Scott Perry",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-10-scott-perry",
+     "fec": [
+      "H2PA04135"
+     ]
+    },
+    {
+     "name": "Janelle Stelson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-10-janelle-stelson",
+     "fec": [
+      "H4PA10104"
+     ]
+    },
+    {
+     "name": "Fogel Shimp",
+     "party": "I",
+     "incumbent": false,
+     "rec": "pa-10-fogel-shimp",
+     "fec": [
+      "H6PA10232"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Stelson won D primary over Justin Douglas 67-33. Shimp (independent) listed only by Green Papers, marked not yet confirmed as certified.",
+   "c": [
+    "gp_pa",
+    "abc27_pa",
+    "ppa_recap",
+    "co_recap"
+   ]
+  },
+  {
+   "race": "PA-11",
+   "incumbent": {
+    "name": "Lloyd Smucker",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lloyd Smucker",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-11-lloyd-smucker",
+     "fec": [
+      "H6PA16320"
+     ]
+    },
+    {
+     "name": "Nancy Mannion",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-11-nancy-mannion",
+     "fec": [
+      "H6PA11099"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-12",
+   "incumbent": {
+    "name": "Summer Lee",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Summer Lee",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-12-summer-lee",
+     "fec": [
+      "H2PA18200"
+     ]
+    },
+    {
+     "name": "James Hayes",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-12-james-hayes",
+     "fec": [
+      "H4PA12068",
+      "S2PA00497"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Lee won D primary over Will Parker 81-19.",
+   "c": [
+    "gp_pa",
+    "abc27_pa",
+    "ppa_recap"
+   ]
+  },
+  {
+   "race": "PA-13",
+   "incumbent": {
+    "name": "John Joyce",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "John Joyce",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-13-john-joyce",
+     "fec": [
+      "H8PA13125"
+     ]
+    },
+    {
+     "name": "Beth Farnham",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-13-elizabeth-farnham",
+     "fec": [
+      "H4PA13298"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-14",
+   "incumbent": {
+    "name": "Guy Reschenthaler",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Guy Reschenthaler",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-14-guy-reschenthaler",
+     "fec": [
+      "H8PA18199"
+     ]
+    },
+    {
+     "name": "David Bradstock",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-14-david-bradstock",
+     "fec": [
+      "H6PA14200"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-15",
+   "incumbent": {
+    "name": "Glenn \"GT\" Thompson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Glenn \"GT\" Thompson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-15-glenn-thompson",
+     "fec": [
+      "H8PA05071"
+     ]
+    },
+    {
+     "name": "Ray Bilger",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-15-raymond-bilger",
+     "fec": [
+      "H6PA15181"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-16",
+   "incumbent": {
+    "name": "Mike Kelly",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Kelly",
+     "party": "R",
+     "incumbent": true,
+     "rec": "pa-16-george-kelly",
+     "fec": [
+      "H0PA03271"
+     ]
+    },
+    {
+     "name": "Justin Wagner",
+     "party": "D",
+     "incumbent": false,
+     "rec": "pa-16-justin-wagner",
+     "fec": [
+      "H6PA16379"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries.",
+   "c": [
+    "gp_pa",
+    "abc27_pa"
+   ]
+  },
+  {
+   "race": "PA-17",
+   "incumbent": {
+    "name": "Chris Deluzio",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Chris Deluzio",
+     "party": "D",
+     "incumbent": true,
+     "rec": "pa-17-christopher-deluzio",
+     "fec": [
+      "H2PA17103"
+     ]
+    },
+    {
+     "name": "Tony Guy",
+     "party": "R",
+     "incumbent": false,
+     "rec": "pa-17-tony-guy",
+     "fec": [
+      "H6PA17203"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Guy won R primary over Jesse Vodvarka 53-47.",
+   "c": [
+    "gp_pa",
+    "abc27_pa",
+    "ppa_recap"
+   ]
+  }
+ ]
+}
