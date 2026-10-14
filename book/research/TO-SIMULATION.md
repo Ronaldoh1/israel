@@ -45,3 +45,8 @@ New research in book/research/ch01.json that the simulation does not yet have as
 - never_again_phrase: origin and the particular/universal meanings.
 - harrison_report_1945: the survivors in the camps, the 100,000 certificates, Truman and Attlee.
 Suggested scenes: "Never Again — What the Classroom Teaches" (Baseline, after s00a) and "The Harrison Report" (rd5).
+
+## Holocaust: primary documents and teaching worldwide (14 October 2026)
+
+- rd4 holocaust_primary_documents (42 claims): Einsatzgruppen reports, Jäger Report, Wannsee Protocol copy 16, Höfle telegram, Korherr Report, Stroop Report, Posen speech, Nuremberg document series and film, Eisenhower at Ohrdruf, Höss's affidavits vs the Auschwitz Museum, Eichmann trial, Arolsen Archives. Suggested scene after hol_s05: "The Perpetrators' Own Paper".
+- ch01 holocaust_teaching_world (48 claims): UNESCO 2015 mapping, Germany, Israel, England, France, Poland, Russia, Iran, Palestinian territories, Saudi Arabia, UAE, Morocco, Latin America, Rwanda, China, South Africa, Netherlands, ADL Global 100, Claims Conference, IHRA, UN 60/7 and 76/250. Suggested scene in the Baseline after the "Never Again" scene.

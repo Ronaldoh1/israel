@@ -69,6 +69,7 @@ Status as of 9 October 2026: 2 of 67 volumes written (I, The Baseline; II, The R
   - Where the phrase "Never Again" comes from, and its two uses: universal (never again, for anyone) and particular (never again, for Jews), with who uses each and how.
   - How the Holocaust is tied to Israel in teaching and politics, set against the documented order of events: the plan predates it (1897 and earlier), and it also drove the 1945–48 refugee crisis and the support for partition. Both halves stay in.
 - [x] **DONE 14 October 2026 (Vol. I, ch. 6, "The Same History, Read Around the World").** Baseline addendum: the story around the world. Vol. I covers this in one section (s00a). Add a summary section drawing on the World Reads volumes (wr_, wr2_ scenes): what students and publics in Germany, Spain, Latin America, Africa, Asia and the Arab world are taught, each sourced.
+- [x] **DONE 14 October 2026:** the Holocaust held to the same standard as the story of Israel. Vol. II Stage Four, "The Perpetrators' Own Paper" (the primary documents, after "How the Number Is Known"); Vol. I ch. 6, "The Holocaust in the World's Classrooms" (teaching outside the US). Both audited; coverage PASS. Wide tables now stack into labelled cards on phones library-wide (593 figures checked, none overflow).
 - [ ] Merge the overlapping volumes: 13 and 52 (October 7); 14 and 25 (Netanyahu). Fold 23 The War Ledger (2 scenes) into Aid and Arms.
 - [ ] Renumber the shelf to the agreed reading order and add reading paths (Historian, Congress) to the library.
 
