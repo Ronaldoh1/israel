@@ -6,8 +6,8 @@ g = lambda p: json.loads(re.search(p, s, re.S).group(1))
 SC = {x['id']: x for x in g(r'<script id="scenedata" type="application/json">(.*?)</script>')}
 CH = g(r'window\.CHAPTERS = (\[.*?\]);\n'); EX = g(r'<script id="expanded-en" type="application/json">(.*?)</script>'); DD = g(r'<script id="deepdive-en" type="application/json">(.*?)</script>')
 cof = {sid: c['id'] for c in CH for sid in c['scenes']}
-PRE = ['ch01'] + ['rd%d' % i for i in range(7)]
-SPAN = {'rd0': (1694, 1896), 'rd1': (1896, 1917), 'rd2': (1917, 1922), 'rd3': (1922, 1936), 'rd4': (1936, 1945), 'rd5': (1945, 1948), 'rd6': (1948, 1958), 'ch01': None}
+PRE = ['ch01'] + ['rd%d' % i for i in range(7)] + ['cw%d' % i for i in range(1, 7)]
+SPAN = {'rd0': (1694, 1896), 'rd1': (1896, 1917), 'rd2': (1917, 1922), 'rd3': (1922, 1936), 'rd4': (1936, 1945), 'rd5': (1945, 1948), 'rd6': (1948, 1958), 'ch01': None, 'cw1': (1949, 1953), 'cw2': (1953, 1956), 'cw3': (1956, 1957), 'cw4': (1957, 1962), 'cw5': (1962, 1963), 'cw6': (1963, 1967)}
 claimed = {}
 for c in PRE:
     mp = 'book/part1/%s/_manifest.json' % c
@@ -23,8 +23,10 @@ def years(sid):
     ys = [int(y) for y in re.findall(r'\b(1[5-9]\d\d|20[0-2]\d)\b', str(SC[sid].get('yr', '')))]
     return (min(ys), max(ys)) if ys else None
 for cid in sys.argv[1:]:
-    own = next(c for c in CH if c['id'] == cid)['scenes']
-    N = set().union(*[names(x) for x in own])
+    own = next((c['scenes'] for c in CH if c['id'] == cid), None)
+    if own is None:
+        own = next(st['own'] for v in json.load(open('book/plan/volumes.json')).values() if isinstance(v, dict) for st in v.get('stages', []) if st['id'] == cid)
+    N = set().union(set(), *[names(x) for x in own])
     out = []
     for sid, x in SC.items():
         h = cof.get(sid)

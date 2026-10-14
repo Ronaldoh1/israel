@@ -8,12 +8,22 @@ g = lambda p: json.loads(re.search(p, s, re.S).group(1))
 D = {x['id']: x for x in g(r'<script id="scenedata" type="application/json">(.*?)</script>')}
 CH = g(r'window\.CHAPTERS = (\[.*?\]);\n'); EX = g(r'<script id="expanded-en" type="application/json">(.*?)</script>')
 DD = g(r'<script id="deepdive-en" type="application/json">(.*?)</script>'); CL = g(r'window\.CITE_LABELS = (\{.*?\});\n')
+def _stage_own(cid, CH):
+    """Own scenes: the simulation chapter's list, or for a volume stage, its 'own' list in book/plan/volumes.json."""
+    for c in CH:
+        if c['id'] == cid: return c['scenes']
+    import json as _j
+    for v in _j.load(open('book/plan/volumes.json', encoding='utf-8')).values():
+        if isinstance(v, dict):
+            for st in v.get('stages', []):
+                if st['id'] == cid: return st['own']
+    raise SystemExit('unknown chapter or stage: %s' % cid)
 man = json.load(open('book/part1/%s/_manifest.json' % cid, encoding='utf-8'))
 if 'chapters' in man:  # Volume I: sections grouped into thematic chapters
     for ch in man['chapters']:
         for x in ch['sections']: x['in_chapter'] = ch['id'] + ': ' + ch['title']
     man['sections'] = [x for ch in man['chapters'] for x in ch['sections']]
-own = next(c for c in CH if c['id'] == cid)['scenes']
+own = _stage_own(cid, CH)
 ids = []; link_only = []
 for m in man['sections']:
     for x in [m.get('scene')] + m.get('draws', []):

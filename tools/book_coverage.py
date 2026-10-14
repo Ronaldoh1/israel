@@ -12,15 +12,25 @@ SC = {x['id']: x for x in g(r'<script id="scenedata" type="application/json">(.*
 CH = g(r'window\.CHAPTERS = (\[.*?\]);\n')
 EX = g(r'<script id="expanded-en" type="application/json">(.*?)</script>')
 DD = g(r'<script id="deepdive-en" type="application/json">(.*?)</script>')
+def _stage_own(cid, CH):
+    """Own scenes: the simulation chapter's list, or for a volume stage, its 'own' list in book/plan/volumes.json."""
+    for c in CH:
+        if c['id'] == cid: return c['scenes']
+    import json as _j
+    for v in _j.load(open(os.path.join(ROOT, 'book', 'plan', 'volumes.json'), encoding='utf-8')).values():
+        if isinstance(v, dict):
+            for st in v.get('stages', []):
+                if st['id'] == cid: return st['own']
+    raise SystemExit('unknown chapter or stage: %s' % cid)
 d = os.path.join(ROOT, 'book', 'part1', cid)
 mp = os.path.join(d, '_manifest.json')
-own = next(c for c in CH if c['id'] == cid)['scenes']
+own = _stage_own(cid, CH)
 scope = list(own)
 def secs_of(path):
     m = json.load(open(path, encoding='utf-8'))
     return m.get('sections') or [x for ch in m.get('chapters', []) for x in ch['sections']]
 drawn_by = {}  # a scene drawn from elsewhere may be told across several chapters, each telling its own period
-for c2 in ['ch01'] + ['rd%d' % i for i in range(7)]:
+for c2 in ['ch01'] + ['rd%d' % i for i in range(7)] + ['cw%d' % i for i in range(1, 7)]:
     p2 = os.path.join(ROOT, 'book', 'part1', c2, '_manifest.json')
     if os.path.exists(p2):
         for m in secs_of(p2):

@@ -1,0 +1,14 @@
+{
+ "_note": "Stage definitions for volumes built in stages whose ids are not simulation chapters. 'own' = simulation scenes this stage must place (the volume's own chapter scenes, split by period). Tools fall back to this file when a stage id is not in window.CHAPTERS.",
+ "cold_war": {
+  "vol": 3, "chapter": "ch05", "title": "The Cold War Architecture", "subtitle": "Alliances, the Bomb and the Lobby, 1949–1967",
+  "stages": [
+   {"id": "cw1", "label": "Stage One", "title": "Align", "span": "1949–1953", "years": [1949, 1953], "own": ["s11"]},
+   {"id": "cw2", "label": "Stage Two", "title": "Retaliate", "span": "1953–1956", "years": [1953, 1956], "own": ["lv_s01"]},
+   {"id": "cw3", "label": "Stage Three", "title": "Strike and Withdraw", "span": "1956–1957", "years": [1956, 1957], "own": ["mg_s01"]},
+   {"id": "cw4", "label": "Stage Four", "title": "Arm", "span": "1957–1962", "years": [1957, 1962], "own": []},
+   {"id": "cw5", "label": "Stage Five", "title": "Confront", "span": "1962–1963", "years": [1962, 1963], "own": ["s11a", "s11b", "s11c"]},
+   {"id": "cw6", "label": "Stage Six", "title": "Escalate", "span": "1963–June 1967", "years": [1963, 1967], "own": ["s11d"]}
+  ]
+ }
+}
