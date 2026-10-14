@@ -180,4 +180,5 @@ python3 tools/build_dist.py        # compact build: dist/index.html (~10 MB; ind
 python3 tools/embed_israel.py      # embeds dist/index.html into sophia.html
 python3 tools/eleven_sophia_slide.py
 python3 tools/embed_israel.py --check
+python3 tools/build_sophia_dist.py  # compact hub: dist/sophia.html (~28 MB; sophia.html stays the editable source). Ship dist/sophia.html.
 ```
