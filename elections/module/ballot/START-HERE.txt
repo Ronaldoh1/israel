@@ -61,9 +61,38 @@ Needs:  a free CourtListener token (the Senate part needs nothing):
           2. Open your profile, go to API, and copy the token.
 Run:
     cd ~/Desktop/OTS-2026-Data/2-Ballot-records
-    COURTLISTENER_TOKEN=paste-token-here python3 ots_ballot_records.py
+    caffeinate -i env COURTLISTENER_TOKEN=paste-token-here python3 ots_ballot_records.py
 Time:   about 1-2 hours.
 Output: 2-Ballot-records/ballot-records  (about a few MB)
+
+---------------------------------------------------------------------
+STEP 4   4-Research-pack / ots_research_pack.py
+STATUS   NEW. Run it alongside step 2 (in a second Terminal window).
+         This replaces Claude's web research, to save your weekly limit.
+---------------------------------------------------------------------
+Pulls, for the 1,354 ballot candidates only:
+  - Wikipedia article: biography, career, controversies
+  - photo, with its license (official portraits for members of Congress)
+  - Ballotpedia page: background, positions, survey answers, campaign links
+  - campaign website: home page and its issues/priorities pages
+  - every floor vote since 2007, for anyone who served in Congress, plus a
+    short file of votes on major subjects (Israel and the Middle East,
+    Ukraine, China, defense, budget, taxes, health care, immigration,
+    elections and certification, guns, abortion...). The same subject list
+    is used for everyone.
+  - bills each member sponsored and co-sponsored, and their committee seats
+  - House and Senate Ethics Committee documents that name them (leads to check)
+Builds: the bio, "what they claim", voting record, bills and ethics sections
+        of every candidate page, so Claude reads files instead of searching.
+Needs:  your FEC API key (the same key works for congress.gov).
+Run:
+    cd ~/Desktop/OTS-2026-Data/4-Research-pack
+    caffeinate -i env FEC_API_KEY=yourkey python3 ots_research_pack.py
+Time:   several hours. It waits out internet drops by itself; if it stops,
+        run the same command again and it continues.
+Output: 4-Research-pack/research-pack
+Before zipping: drag the _downloads folder out of research-pack (it holds
+big shared source files Claude doesn't need).
 
 ---------------------------------------------------------------------
 STEP 3   3-Members-money / ots_members_money.py, then ots_members_money_pass2.py
@@ -101,6 +130,7 @@ Then, in Terminal, from the folder that holds the zip:
 
     gh release create aipac aipac-data.zip -R Ronaldoh1/2026electiondata -t "AIPAC data"
     gh release create ballot-records ballot-records.zip -R Ronaldoh1/2026electiondata -t "Ballot records"
+    gh release create research-pack research-pack.zip -R Ronaldoh1/2026electiondata -t "Research pack"
     gh release create members members-data.zip -R Ronaldoh1/2026electiondata -t "Members money"
 
 If a zip is over 2 GB, tell Claude and we'll split it like before.
@@ -125,13 +155,12 @@ BUILT
 LEFT TO BUILD                              WAITING ON
   - Final scores for 16 Senate candidates  Step 2 (ballot-records)
   - AIPAC dashboard and AIPAC line         Step 1 (aipac-data)
-  - Full research, 124 Senate and          Claude; next batch
-    governor candidates
-  - Full research, 1,156 House candidates  Claude; district by district
+  - Full pages for the other 1,280          Step 4 (research-pack), then
+    candidates (Senate, governor, House)   Claude builds from the files
   - Check of Texas 11-38, Colorado and     Claude
     minor candidates against official
     state lists
-  - Key votes for incumbents, photos       Claude
+  - Key votes for incumbents, photos       Step 4 (research-pack)
   - Members-money dashboard                Step 3 (members-data)
   - Louisiana's 6 races and New York's     After election day
     24th district
