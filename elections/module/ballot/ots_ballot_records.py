@@ -33,7 +33,7 @@ import csv, http.cookiejar, json, os, re, ssl, sys, time, urllib.error, urllib.p
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(HERE, 'ballot-records')
+ROOT = os.path.abspath(os.environ.get('OTS_RECORDS_DIR') or os.path.join(HERE, 'ballot-records'))
 BALLOT = os.path.join(HERE, 'ballot_2026.csv')
 NOW = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
@@ -227,7 +227,7 @@ def main():
             '\nEverything finished so far is saved. Run the same command again to continue where it left off.')
     except KeyboardInterrupt:
         log('\nStopped. Everything finished so far is saved. Run the same command again to continue.')
-    write_summary(cands)
+    write_summary([Cand(r) for r in csv.DictReader(open(BALLOT, encoding='utf-8'))] if states else cands)
     if not done: sys.exit(2)
     log(f'\nFinished. Results are in {ROOT}'
         '\nTo send them: zip the ballot-records folder (right-click > Compress), then upload it as a release, for example:'

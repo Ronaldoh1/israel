@@ -39,13 +39,13 @@ from html.parser import HTMLParser
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(HERE, 'research-pack')
+ROOT = os.path.abspath(os.environ.get('OTS_RESEARCH_DIR') or os.path.join(HERE, 'research-pack'))
 DL = os.path.join(ROOT, '_downloads')
 BALLOT = os.path.join(HERE, 'ballot_2026.csv')
 NOW = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 UA = 'OTS-ballot-research/1.0 (public-records research script; https://github.com/Ronaldoh1)'
 BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
-STEPS = ['ids', 'wiki', 'photos', 'ballotpedia', 'campaign', 'votes', 'bills', 'ethics']
+STEPS = ['ids', 'wiki', 'photos', 'ballotpedia', 'campaign', 'votes', 'bills', 'ethics', 'factcheck', 'fecrecord']
 CONGRESSES = range(110, 120)   # 2007-2026
 
 STATE_NAMES = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': 'Connecticut',
@@ -480,6 +480,81 @@ def run_ethics(cands):
         n += bool(strong)
     log(f'  {n} candidates are named in an ethics committee document title')
 
+# ---------------------------------------------------------------- 9. fact-checks (PolitiFact)
+RULING = re.compile(r'alt="(true|mostly-true|half-true|barely-true|false|pants-fire|full-flop|half-flip|no-flip)"', re.I)
+def run_factcheck(cands):
+    log('\n[factcheck] PolitiFact rulings on the candidate\'s statements')
+    todo = [c for c in cands if not os.path.exists(c.path('factchecks.json'))]
+    log(f'  {len(cands) - len(todo)} done, {len(todo)} to look up')
+    refused = 0
+    for i, c in enumerate(todo, 1):
+        got, st = None, []
+        for nm in (c.full, f'{c.first} {c.last}'):
+            base = 'https://www.politifact.com/personalities/' + slug(nm) + '/'
+            b = fetch(base, browser=True); st.append(LAST['status'])
+            if b is None: continue
+            txt = page_text(b)[0]
+            if c.statename() not in txt[:6000] and c.last not in txt[:600]: continue
+            items = []
+            for page in range(1, 6):
+                if page > 1:
+                    b = fetch(base + f'?page={page}', browser=True)
+                    if b is None: break
+                h = b.decode('utf-8', 'replace')
+                blocks = h.split('m-statement__quote')[1:]
+                if not blocks: break
+                for blk in blocks:
+                    q = re.search(r'<a href="([^"]+)"[^>]*>(.*?)</a>', blk, re.S)
+                    r = RULING.search(blk)
+                    if not q: continue
+                    items.append({'statement': html.unescape(re.sub('<[^>]+>', '', q.group(2))).strip()[:600],
+                                  'url': urllib.parse.urljoin('https://www.politifact.com', q.group(1)),
+                                  'ruling': r.group(1).lower() if r else ''})
+                time.sleep(1)
+            got = {'candidate': c.name, 'race': c.race, 'retrieved': NOW, 'url': base, 'profile_text': txt[:3000], 'rulings': items}
+            break
+        if not got and st and all(x in (403, 429, 'unreachable') for x in st):
+            refused += 1
+            if refused >= 8: log('  PolitiFact is refusing this script; run --only factcheck again later.'); return
+            continue
+        refused = 0
+        wjson(c.path('factchecks.json'), got or {'candidate': c.name, 'race': c.race, 'retrieved': NOW, 'url': None,
+                                                 'note': 'No PolitiFact page for this candidate.', 'rulings': []})
+        time.sleep(1)
+        if i % 50 == 0: log(f'  {i} of {len(todo)}')
+    log('  done')
+
+# ---------------------------------------------------------------- 10. FEC filing record (notices from the FEC's analysts)
+FECAPI = 'https://api.open.fec.gov/v1/'
+def run_fecrecord(cands, key):
+    log('\n[fecrecord] FEC filing record: requests for additional information (RFAI letters) to each campaign')
+    if not key: log('  skipped: no key. Run with FEC_API_KEY=yourkey.'); return
+    have = [c for c in cands if c.fec]
+    todo = [c for c in have if not os.path.exists(c.path('fec_filing_record.json'))]
+    log(f'  {len(have)} candidates with FEC IDs; {len(have) - len(todo)} done, {len(todo)} to do (about 3 seconds each, the FEC limit)')
+    for i, c in enumerate(todo, 1):
+        cmtes, ok = {}, True
+        for cid in sorted(c.fec):
+            d = get_json(FECAPI + f'candidate/{cid}/committees/?' + urllib.parse.urlencode({'api_key': key, 'per_page': 50}))
+            if d is None: ok = False; break
+            for x in d.get('results', []):
+                if x.get('designation') in ('P', 'A'): cmtes[x['committee_id']] = x.get('name')
+            time.sleep(3.6)
+        notices = []
+        for cm, nm in sorted(cmtes.items()) if ok else []:
+            d = get_json(FECAPI + 'filings/?' + urllib.parse.urlencode({'api_key': key, 'committee_id': cm, 'form_type': 'RFAI',
+                                                                          'per_page': 100, 'sort': '-receipt_date'}))
+            if d is None: ok = False; break
+            for x in d.get('results', []):
+                notices.append({'committee': nm, 'committee_id': cm, 'date': x.get('receipt_date'), 'report': x.get('document_description') or x.get('report_type_full'),
+                                'pdf': x.get('pdf_url') or x.get('html_url')})
+            time.sleep(3.6)
+        if not ok: log(f'  {c.name}: the FEC did not answer; it will be retried next run'); continue
+        wjson(c.path('fec_filing_record.json'), {'candidate': c.name, 'retrieved': NOW, 'committees': cmtes, 'rfai_notices': notices,
+              'note': 'RFAI letters are the FEC asking a campaign to fix or explain a report. Administrative fines are searched separately.'})
+        if i % 10 == 0: log(f'  {i} of {len(todo)}')
+    log('  done')
+
 # ---------------------------------------------------------------- summary
 def write_summary(cands):
     rows = []
@@ -515,14 +590,17 @@ def main():
         for s in only:
             if s == 'ids': continue
             {'wiki': run_wiki, 'photos': run_photos, 'ballotpedia': run_ballotpedia, 'campaign': run_campaign,
-             'votes': run_votes, 'ethics': run_ethics}.get(s, lambda cc: run_bills(cc, key))(cands)
+             'votes': run_votes, 'ethics': run_ethics, 'factcheck': run_factcheck,
+             'fecrecord': lambda cc: run_fecrecord(cc, key)}.get(s, lambda cc: run_bills(cc, key))(cands)
         done = True
     except NetworkDown:
         log('\nThe internet connection was down for over an hour, so the script stopped.'
             '\nEverything finished so far is saved. Run the same command again to continue where it left off.')
     except KeyboardInterrupt:
         log('\nStopped. Everything finished so far is saved. Run the same command again to continue.')
-    write_summary(cands)
+    allc = [Cand(r) for r in csv.DictReader(open(BALLOT, encoding='utf-8'))] if states else cands
+    if states: load_ids(allc)
+    write_summary(allc)
     if not done: sys.exit(2)
     log(f'\nFinished. Results are in {ROOT}'
         '\nTo send them: move the _downloads folder out of research-pack (it is big and not needed), right-click research-pack > Compress, then:'
