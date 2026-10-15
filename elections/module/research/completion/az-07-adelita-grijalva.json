@@ -1,0 +1,31 @@
+{
+ "id": "az-07-adelita-grijalva",
+ "cites": {
+  "osu_azvhouse": {
+   "t": "Arizona v. House of Representatives, No. 1:25-cv-03740 (D.D.C.) — Ohio State Election Law case tracker",
+   "u": "https://electioncases.osu.edu/case/arizona-v-house-of-representatives-of-the-congress-of-the-united-states-of-america/"
+  }
+ },
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "CourtListener and Justia could not be searched directly: the network proxy refuses both hosts and the fetch tool refuses unsearched URLs (Oct. 14, 2026). A site-restricted web search of courtlistener.com/justia.com was run instead, plus news searches. Site-restricted search and news searches found only the 2025 suit in which she was a plaintiff (below). No case against her.",
+  "foreign": "House candidate (May 2025) and new-filer (Aug. 2026) reports read directly: no foreign assets, gifts or travel. FARA: exact-name search of the FARA bulk files (registrants, short forms, foreign principals), Oct. 13, 2026: no match.",
+  "claims": "Campaign homepage refused by fetch tool. Mechanical sample = every checkable claim in the campaign's announcement release (her bio) plus her first-week House press release. 8 rated: 6 true, 2 unverifiable. No 2026 ads found in coverage.",
+  "democracy": "Not in Congress for any certification count (sworn in Nov. 2025). NOTE: the records profile's six 'Grijalva' certification votes (2005 Ohio objection Yea; 2021 Arizona/Pennsylvania Nay) are her father Raul Grijalva's votes and were deliberately NOT attributed to her."
+ },
+ "legal": [
+  {
+   "kind": "context",
+   "d": "2025-10-21",
+   "t": "Joined Arizona as co-plaintiff in a D.D.C. suit (No. 1:25-cv-03740) against the House, its Clerk and Sergeant-at-Arms seeking a declaration that she must be sworn in; she was the plaintiff, not a defendant.",
+   "short": "Plaintiff in swearing-in suit",
+   "status": "Voluntarily dismissed by all plaintiffs, Nov. 14, 2025",
+   "c": [
+    "osu_azvhouse"
+   ]
+  }
+ ],
+ "research_notes": "Records-profile 'cert' entries belong to Raul Grijalva (father), matched by surname only; fix the profile mapping. Courts news-only (CourtListener/Justia blocked)."
+}

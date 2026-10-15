@@ -1,0 +1,46 @@
+{
+ "state": "OK",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ok_gov": {
+   "t": "2026 Oklahoma gubernatorial election — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_Oklahoma_gubernatorial_election"
+  },
+  "okvoice_primary": {
+   "t": "Voters narrow Oklahoma GOP gubernatorial field — Oklahoma Voice",
+   "u": "https://oklahomavoice.com/2026/06/16/voters-narrow-oklahoma-gop-gubernatorial-field/"
+  }
+ },
+ "races": [
+  {
+   "race": "OK-GOV",
+   "incumbent": {
+    "name": "Kevin Stitt",
+    "party": "R",
+    "status": "Term-limited"
+   },
+   "nominees": [
+    {
+     "name": "Mike Mazzei",
+     "party": "R",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Cyndi Munson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Jun 16 primary: R Drummond 26.3%, Mazzei 26.0% to Aug 25 runoff, Mazzei won 50.3-49.7 (2,047 votes); D Munson 74.9% outright. Wikipedia lists no independent/Libertarian nominees (not independently verified). No governor rows in records list.",
+   "c": [
+    "wiki_ok_gov",
+    "okvoice_primary"
+   ]
+  }
+ ]
+}

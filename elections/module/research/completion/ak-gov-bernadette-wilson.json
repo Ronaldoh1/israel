@@ -1,0 +1,19 @@
+{
+ "id": "ak-gov-bernadette-wilson",
+ "cites": {
+  "apm_suits": {
+   "t": "Alaska governor hopeful Bernadette Wilson's court record shows lawsuits over unpaid bills — Alaska Public Media (2026-10-08)",
+   "u": "https://alaskapublic.org/news/politics/elections/2026-10-08/alaska-governor-hopeful-bernadette-wilsons-court-record-shows-lawsuits-over-unpaid-bills"
+  }
+ },
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "CourtListener was blocked. Alaska CourtView was not searched directly. Court record details come from The Alaska Landmine, which linked Anchorage Superior Court filings (case 3AN-22-08465CI). An ADN story of Oct. 3, 2026 headlined that she 'has been sued repeatedly over unpaid bills' could not be opened (robots-blocked), so other cases it may describe are NOT recorded here. Searched news for criminal charges: none found; the bounced checks reported in court documents were not reported as charged. Update (Oct. 14): Alaska Public Media (Oct. 8, 2026, citing ADN's records reporting) says several different companies have sued her or her company over unpaid bills, describing a 2019 suit she did not answer (plaintiff, court and outcome not given) and the 2022 fuel case already recorded. The 2019 case is not entered under legal because its parties and outcome are not documented in sources reached.",
+  "foreign": "No foreign ties in news or her pamphlet. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate (hits are other Wilsons and the firm Wilson & Wasserstein — none her).",
+  "claims": "Campaign site bernadetteforgovernor.com could not be fetched (tool provenance block). As a stand-in, used her candidate-authored Official Election Pamphlet statement (bio and issue claims) and her KTUU 'On the Record' interview. Ad scripts were not found except a description of her 'Chat JKT' ad, which attacks Kreiss-Tomkins over AI-industry money; that ad was not rated because its exact claims were not available. Seven claims: 3 rated (true, partly, true), 4 unverifiable.",
+  "democracy": "Never held office. Searched news for statements on the 2020 or 2024 presidential results; none found. Her documented election-related statements concern RCV and election administration."
+ },
+ "research_notes": "Open: identify the 2019 suit and the other unpaid-bill suits (ADN Oct. 3, 2026 still unreachable; Alaska CourtView unreachable) — cite apm_suits for their existence. CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly."
+}

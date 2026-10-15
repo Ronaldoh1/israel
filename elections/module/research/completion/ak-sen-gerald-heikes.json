@@ -1,0 +1,21 @@
+{
+ "id": "ak-sen-gerald-heikes",
+ "cites": {
+  "br": {
+   "t": "Gerald L. Heikes — BallotReady (accessed 2026-10-14)",
+   "u": "https://www.ballotready.org/people/gerald-l-heikes"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "democracy": "news"
+ },
+ "checks": {
+  "legal": "CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly. Name search of news (this pass) and BallotReady (prior runs: governor 2018, U.S. House 2020 and 2024) surfaced no legal matters.",
+  "foreign": "None found; no disclosure available. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate.",
+  "claims": "No campaign website, ads or questionnaire answers exist. Sample = his own statements in the 2024 ADN interview and Ballotpedia's summary of his 2024 Beacon interview: 4 bio claims (1 true, 3 unverifiable); his issue statements are positions, not checkable facts. Fewer than 5 checkable claims are available.",
+  "democracy": "Never held office (no certification votes). Name search found no public statement on the 2020 or 2024 results; the Alaska Beacon 2026 voter guide could not be loaded."
+ },
+ "research_notes": "Disclosures stay 'no': eFD unreachable; FEC shows no 2025–26 committee activity, so he may be below the $5,000 filing threshold (unconfirmed). DATA CHECK: records profile attributes $999,290 in 2026 'support' spending by Right for Alaska (and $700,145 historically) to his FEC IDs; that looks like a misattribution (Right for Alaska backs Sen. Sullivan) and needs a human check before use."
+}

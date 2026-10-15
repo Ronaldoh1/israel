@@ -94,14 +94,60 @@ def fara_exact(name, j):
                         'from': r.get('Short Form Date', ''), 'to': r.get('Short Form Termination Date', '')})
     return out
 
+# FEC's own registered names for every candidate id, every cycle: an FEC id is kept only if its registered
+# given names match the candidate (so a parent's or namesake's committee is never merged in)
+import zipfile, io
+FECNAME = {}; FECINC = set()   # (candidate id, election year) where the FEC lists them as the incumbent
+for zp in glob.glob(os.path.join(ROOT, '_downloads', 'fec', '*', 'cn*.zip')):
+    with zipfile.ZipFile(zp) as z:
+        for nm in z.namelist():
+            for line in io.TextIOWrapper(z.open(nm), encoding='latin-1'):
+                v = line.split('|')
+                if len(v) > 1: FECNAME.setdefault(v[0], set()).add(v[1].upper())
+                if len(v) > 7 and v[7] == 'I': FECINC.add((v[0], int(v[3] or 0)))
+NICK = {'abe': ['abraham'], 'bob': ['robert'], 'rob': ['robert'], 'bobby': ['robert'], 'bill': ['william'], 'will': ['william'], 'billy': ['william'],
+        'mike': ['michael'], 'jim': ['james'], 'jimmy': ['james'], 'tom': ['thomas'], 'tommy': ['thomas'], 'dan': ['daniel'], 'danny': ['daniel'],
+        'dave': ['david'], 'joe': ['joseph'], 'chris': ['christopher', 'christine', 'christina'], 'nick': ['nicholas'], 'pat': ['patrick', 'patricia'],
+        'liz': ['elizabeth'], 'beth': ['elizabeth'], 'kate': ['katherine', 'kathleen'], 'katie': ['katherine', 'kathleen'], 'ted': ['edward', 'theodore', 'rafael'],
+        'ed': ['edward'], 'tony': ['anthony'], 'andy': ['andrew'], 'steve': ['steven', 'stephen'], 'greg': ['gregory'], 'jon': ['jonathan'], 'jack': ['john'],
+        'chuck': ['charles'], 'charlie': ['charles'], 'rick': ['richard', 'eric'], 'dick': ['richard'], 'jerry': ['gerald', 'jerome'], 'larry': ['lawrence'],
+        'sam': ['samuel'], 'ben': ['benjamin'], 'matt': ['matthew'], 'zach': ['zachary'], 'josh': ['joshua'], 'jeff': ['jeffrey'], 'ron': ['ronald'],
+        'don': ['donald'], 'doug': ['douglas'], 'ken': ['kenneth'], 'al': ['albert', 'alan', 'allen'], 'vince': ['vincent'], 'jake': ['jacob'], 'gabe': ['gabriel'],
+        'sue': ['susan'], 'cindy': ['cynthia'], 'debbie': ['deborah'], 'deb': ['deborah'], 'peggy': ['margaret'], 'trey': [], 'buddy': []}
+SUFFIX = re.compile(r'\b(JR|SR|II|III|IV)\b\.?', re.I)
+def given(fecname):
+    parts = fecname.split(',', 1)
+    return set(re.sub(r'[^A-Z ]', ' ', SUFFIX.sub(' ', parts[1] if len(parts) > 1 else '')).lower().split())
+def name_ok(cand, fid):
+    names = FECNAME.get(fid)
+    if not names: return True                       # no registry row: keep (cannot test)
+    toks = [t for t in re.sub(r'[^a-z ]', ' ', SUFFIX.sub(' ', cand.lower())).split() if len(t) > 1]
+    if not toks: return True
+    first = toks[0]; csuf = bool(SUFFIX.search(cand))
+    for nm in names:
+        g = given(nm)
+        if csuf != bool(SUFFIX.search(nm.split(',', 1)[-1])) and csuf: continue      # 'Jr.' candidate never takes a non-Jr registry entry
+        if first in g or any(x in g for x in NICK.get(first, [])) or any(len(x) >= 3 and (x.startswith(first[:3]) or first.startswith(x[:3])) for x in g) \
+           or any(t in g for t in toks[1:-1]): return True
+    return False
+dropped = collections.Counter()
+# hand corrections where two people share a name and the registry cannot tell them apart (each checked against the FEC registry)
+FIX_DROP = {'mi-10-michael-bouchard': ('S6MI00335',),            # his father's 2006 Senate campaign (BOUCHARD, MICHAEL J)
+            'ak-sen-dan-sullivan-jr': ('S4AK00214',)}            # Senator Dan Sullivan's committee; this candidate is S6AK00326 (SULLIVAN, DANIEL J)
+
 rec = {}; summ = collections.Counter(); fpall = collections.Counter()
 for st in sorted(d for d in os.listdir(ROOT) if re.fullmatch(r'[A-Z]{2}', d)):
     for c in csv.DictReader(open(os.path.join(ROOT, st, 'candidates.csv'), encoding='utf-8')):
         d = os.path.join(ROOT, st, c['id']); p = {'st': st, 'name': c['name'], 'office': c['office'], 'dist': c['district'], 'party': c['party'],
-                                                   'ico': c['incumbent_challenger_open'], 'fec': [x for x in c['fec_ids'].split(';') if x], 'mod': c['in_module'] == 'yes'}
+                                                   'ico': c['incumbent_challenger_open'], 'fec': [x for x in re.split(r'[;,\s]+', c['fec_ids']) if x], 'mod': c['in_module'] == 'yes'}
         summ['candidates'] += 1
         try: t = json.load(open(os.path.join(d, 'fec_totals.json')))
         except Exception: t = {}
+        p['fec'] = [x for x in p['fec'] if x not in FIX_DROP.get(c['id'], ())]
+        keep = [x for x in p['fec'] if name_ok(c['name'], x)]
+        for x in p['fec']:
+            if x not in keep: dropped['fec_ids'] += 1; summ['dropped_fec_id'] += 1
+        p['fec'] = keep; t['cycles'] = [y for y in t.get('cycles', []) if y.get('fec_id') in keep or not y.get('fec_id')]
         p['cyc'] = [[y['cycle'], round(y['receipts']), round(y['individuals']), round(y['pacs_and_committees']), round(y['party']), round(y['self'] + y.get('candidate_loans', 0)),
                      round(y['spent']), round(y['cash_on_hand']), y.get('through', '')] for y in t.get('cycles', [])]
         if p['cyc']: summ['with_money'] += 1
@@ -111,6 +157,7 @@ for st in sorted(d for d in os.listdir(ROOT) if re.fullmatch(r'[A-Z]{2}', d)):
         path = os.path.join(d, 'fec_committee_contributions.csv')
         if os.path.exists(path):
             for r in csv.DictReader(open(path, encoding='utf-8')):
+                if r.get('to_fec_id') and r['to_fec_id'] not in keep: continue
                 amt = f(r['amount']); cyc = int(r['cycle'] or 0); tt = r['transaction_type']
                 nm, org = r['donor_committee'], r['connected_organization']
                 fc, why = foreign_policy(nm, org if org != 'NONE' else '', r['donor_committee_type'])
@@ -151,7 +198,22 @@ for st in sorted(d for d in os.listdir(ROOT) if re.fullmatch(r'[A-Z]{2}', d)):
         # certification votes
         try:
             cv = json.load(open(os.path.join(d, 'certification_votes.json')))
-            p['cert'] = [[v['date'], v['chamber'], v['objection'], v['vote']] for v in cv.get('votes', [])]
+            # a roll call lists senators by full name and House members by surname only: a Senate vote is kept when the first
+            # name matches; a House vote only when the candidate's own House committee filed in the election cycle before the vote
+            fn = norm(c['name'])[0] if norm(c['name']) else ''
+            hcy = {int(y['cycle']) for y in t.get('cycles', []) if str(y.get('fec_id', '')).startswith('H')}
+            def cert_ok(v):
+                if v['chamber'] == 'senate':
+                    ln = norm(v.get('listed_as', ''))
+                    y = int(v['date'][:4])
+                    return len(ln) > 1 and (ln[0] == fn or ln[0] in NICK.get(fn, []) or fn in NICK.get(ln[0], [])) \
+                        and (any((x, yy) in FECINC for x in keep if x.startswith('S') for yy in range(y - 5, y + 6))
+                             or (not keep and not SUFFIX.search(c['name']) and ' '.join(ln) == ' '.join(norm(c['name']))))
+                y = int(v['date'][:4])
+                return any((x, yy) in FECINC for x in keep if x.startswith('H') for yy in (y - 1, y + 1))
+            vs = cv.get('votes', [])
+            p['cert'] = [[v['date'], v['chamber'], v['objection'], v['vote']] for v in vs if cert_ok(v)]
+            if len(p['cert']) < len(vs): summ['dropped_cert_votes'] += len(vs) - len(p['cert'])
         except Exception: p['cert'] = []
         if p['cert']: summ['with_cert'] += 1
         # House financial disclosures (links to the Clerk's PDFs)

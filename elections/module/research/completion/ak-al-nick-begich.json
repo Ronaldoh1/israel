@@ -1,0 +1,57 @@
+{
+ "id": "ak-al-nick-begich",
+ "cites": {
+  "apm_qa22": {
+   "t": "Just answers: Alaska's US House candidates on the election of President Biden — Alaska Public Media (2022-07-07)",
+   "u": "https://alaskapublic.org/news/2022-07-07/just-answers-alaskas-us-house-candidates-on-the-election-of-president-biden"
+  },
+  "beacon_deb24": {
+   "t": "Peltola declines to endorse Harris, Begich questions 2020 election legitimacy — Alaska Beacon (2024-10-10)",
+   "u": "https://alaskabeacon.com/2024/10/10/peltola-declines-to-endorse-harris-begich-questions-2020-election-legitimacy/"
+  }
+ },
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "News searches (court cases, lawsuits, ethics complaints) found nothing against him; Wikipedia lists no legal matters. CourtListener and Justia not reachable from this environment. House Office of Congressional Conduct pages errored. No House Ethics finding found in sources reviewed.",
+  "foreign": "House annual report (FY2025) and new-filer report (FY2024) read directly: no foreign-located assets; small foreign-company ADRs (Shell, Sanofi) in retirement accounts. FarShore Partners, his software firm (69% stake), employs mostly India-based staff. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate.",
+  "claims": "Campaign site not opened. Mechanical sample = every checkable claim in his paid 2026 Official Election Pamphlet statement (bio + text), plus his spokesperson's on-record trading claim (Oct. 2026). 12 rated: 8 true, 1 partly, 3 unverifiable. Two highest-spending ads were not identified.",
+  "democracy": "Not in Congress for the Jan. 2017 or Jan. 2021 counts (records profile: no votes); no objection was voted on at the Jan. 6, 2025 count. Statements: Alaska Public Media Q&A (July 2022), ADN Q&A (Aug. 2022), Oct. 10, 2024 debate (Alaska Beacon). He skipped the 2026 Beacon survey's 2020 question."
+ },
+ "democracy": [
+  {
+   "kind": "statement",
+   "d": "2022-08-10",
+   "t": "Asked if Biden legitimately won 2020, said Biden is president and called for more transparency to address a 'crisis of confidence'; on Jan. 6 said no one is above the law and courts should decide Trump's responsibility.",
+   "c": [
+    "kakalnickbegich_apm_qa22"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2026-02-11",
+   "t": "Co-sponsored the SAVE America Act requiring documentary proof of citizenship to register and photo ID to vote; it passed the House.",
+   "c": [
+    "kakalnickbegich_wiki"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2022-07-07",
+   "t": "Asked if Biden won 2020 'fair and square', did not answer directly; said 'Unfortunately, Biden is the President' and cited a 'crisis of confidence' in elections.",
+   "c": [
+    "apm_qa22"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2024-10-10",
+   "t": "In a televised debate, asked whether Biden legitimately won: 'He was elected president. The techniques that were used in order to get him elected, I don't think they're legitimate,' citing pandemic-era rule changes and Google search results.",
+   "c": [
+    "beacon_deb24"
+   ]
+  }
+ ],
+ "research_notes": "Courts/ethics stay news-level. CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly."
+}

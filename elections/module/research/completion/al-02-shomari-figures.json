@@ -1,0 +1,44 @@
+{
+ "id": "al-02-shomari-figures",
+ "cites": {
+  "fig_fd25": {
+   "t": "Shomari C. Figures, Annual Report for 2025, filed Aug. 13, 2026 (Filing ID #10081374) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10081374.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "ethics": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener/Justia blocked, Alacourt paywalled, House Ethics/OCE not searched directly. Wikipedia lists no controversies or legal matters. A dedicated news search for lawsuits was not run because the search budget ran out. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('\"Shomari Figures\" lawsuit OR \"ethics complaint\" OR sued; Shomari Figures lawsuit court') turned up no reporting of any civil or criminal case naming Shomari Figures as a party, so courts is 'news' (searched, nothing found). Ethics: the same searches covered ethics complaints and found no reporting of any House Ethics or Office of Congressional Conduct matter; ethics.house.gov itself is not reachable, so ethics is 'news'.",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2025 House annual report lists no foreign assets, income or positions. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13) with pdftotext. Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": -5119996,
+   "max": -150004,
+   "year": 2025,
+   "c": [
+    "fig_fd25"
+   ]
+  },
+  "trades": {
+   "count": 0,
+   "period": "2025 (annual report, Schedule B: none disclosed)",
+   "overlap": [],
+   "c": [
+    "fig_fd25"
+   ]
+  },
+  "note": {
+   "t": "2025 annual report (filed Aug. 13, 2026 after a June extension). The negative range is mostly an artifact: his Mobile home is not a reportable asset, but its joint mortgage with Carter Bank & Trust ($1M–$5M, Nov. 2022) must be listed. Assets: his spouse's rental property in Greenbelt, Md. ($500K–$1M; rent $15K–$50K), her KDF Consulting LLC ($50K–$100K), two life-insurance policies, and SAK Investments LLC (wholly his), which owns 33% of CMB Holdings Group LLC, a Birmingham sports bar/restaurant venue — value listed 'undetermined', business revenue $100,001–$1M. Other liabilities: the spouse's Greenbelt mortgage ($250K–$500K) and two student loans ($50K–$100K each). No stock transactions, gifts, travel or outside positions; no foreign assets or income.",
+   "c": [
+    "fig_fd25"
+   ]
+  }
+ },
+ "research_notes": "Democracy stays 'no': he was not in Congress in Jan. 2021 and there was no recorded objection vote on Jan. 6, 2025; no search for his statements on the 2020/2024 results fit in the shared search budget. The two news searches returned nothing relevant at all, so the courts/ethics 'news' rating is weak."
+}

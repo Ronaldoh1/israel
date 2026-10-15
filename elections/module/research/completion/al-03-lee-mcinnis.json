@@ -1,0 +1,36 @@
+{
+ "id": "al-03-lee-mcinnis",
+ "cites": {
+  "mci_fd26": {
+   "t": "Victor Lee McInnis, Candidate Report (paper filing), received May 8, 2026 (Filing ID #9115848) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/9115848.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener blocked (known limit); Justia/Alacourt and news-archive legal searches not run (search budget exhausted). Profiles reviewed (Ballotpedia, Auburn Villager, WTVM) mention no legal matters. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Lee McInnis Auburn congressional candidate lawsuit court') turned up no reporting of any civil or criminal case naming Lee McInnis as a party, so courts is 'news' (searched, nothing found).",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2025 House candidate report (paper filing) lists no foreign assets or income. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13). Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": 1436040,
+   "max": 4314999,
+   "year": 2025,
+   "c": [
+    "mci_fd26"
+   ]
+  },
+  "trades": null,
+  "note": {
+   "t": "2025 candidate report, filed on paper (received May 8, 2026). This is a handwritten paper filing; values were read visually from the scanned checkboxes, so ranges are approximate. About 40 holdings worth roughly $1.9M–$4.6M, nearly all exchange-traded funds held in his, his spouse's and joint UBS accounts (Invesco QQQ, SPDR and iShares S&P funds, Vanguard Growth and Value, AB Active ETFs, Invesco BulletShares, iShares I Bonds, iShares Gold), plus UBS deposit accounts and joint accounts at Auburn University, Navy and Tower federal credit unions. One liability: a UBS mortgage (Jan. 2022) of $250K–$500K. Income: his U.S. government pension ($32,664 in 2025), VA disability pension ($7,410), UBS 401(k) withdrawals ($74,699) and his spouse's U.S. government pension ($68,804). No outside positions or agreements; no foreign assets or income.",
+   "c": [
+    "mci_fd26"
+   ]
+  }
+ },
+ "research_notes": "Net worth is approximate (handwritten checkbox form). Courts 'news' rests on one news search that returned nothing about him. Democracy stays 'news'."
+}

@@ -1,0 +1,36 @@
+{
+ "id": "al-04-amanda-pusczek",
+ "cites": {
+  "pus_fd26": {
+   "t": "Amanda Noelle Pusczek, Candidate Report (AL-04), filed Sept. 15, 2026 (Filing ID #10082865) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10082865.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener blocked (known limit); Justia/Alacourt and news-archive legal searches not run (search budget exhausted). Profiles reviewed mention no legal matters. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Amanda Pusczek Alabama candidate court lawsuit') turned up no reporting of any civil or criminal case naming Amanda Pusczek as a party, so courts is 'news' (searched, nothing found).",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2026 House candidate report lists no foreign assets or income. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13). Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": -250000,
+   "max": -95004,
+   "year": 2025,
+   "c": [
+    "pus_fd26"
+   ]
+  },
+  "trades": null,
+  "note": {
+   "t": "2026 candidate report (filed Sept. 15, 2026; covers Jan. 1, 2025–Apr. 15, 2026). No assets above the reporting threshold and no earned income are listed. Liabilities of $95K–$250K: a Shellpoint mortgage ($50K–$100K), a Redstone Federal Credit Union home-equity line, a Wyndham timeshare loan and a Chase credit card ($15K–$50K each). Position: founder of Maslow's Meals, a nonprofit with no current activity. Her home is not a reportable asset, so the negative range understates net worth. No foreign assets or income. In May 2025 she filed a notice that she had not yet crossed the $5,000 threshold; a separate 2025 candidate report (AL-05) was filed the same day as this one.",
+   "c": [
+    "pus_fd26"
+   ]
+  }
+ },
+ "research_notes": "Courts 'news' rests on one news search that surfaced nothing about her. Democracy stays 'news'."
+}

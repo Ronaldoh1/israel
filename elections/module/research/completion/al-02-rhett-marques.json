@@ -1,0 +1,59 @@
+{
+ "id": "al-02-rhett-marques",
+ "cites": {
+  "mar_fd26": {
+   "t": "Rhett Marques, Candidate Report, filed May 25, 2026 (Filing ID #10079819) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10079819.pdf"
+  },
+  "mar_drummond": {
+   "t": "FEC itemized receipt: Drummond Company PAC to Marques campaign, $5,000 (2026-03-30), image 202604019856931144 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202604019856931144"
+  },
+  "mar_koch": {
+   "t": "FEC itemized receipt: Koch, Inc. PAC to Marques campaign, $5,000 (2026-04-21), image 202605209867436793 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202605209867436793"
+  },
+  "mar_bcbs": {
+   "t": "FEC itemized receipt: Blue Cross Blue Shield of Alabama PAC to Marques campaign, $5,000 (2026-05-21), image 202607149875038106 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202607149875038106"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "ethics": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener/Justia blocked, Alacourt paywalled, Alabama Ethics Commission not searched. Wikipedia and Ballotpedia list no legal matters. A dedicated news search was not run because the search budget ran out. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('\"Rhett Marques\" lawsuit OR \"ethics commission\" OR sued OR court; Rhett Marques Alabama representative ethics complaint lawsuit') turned up no reporting of any civil or criminal case naming Rhett Marques as a party, so courts is 'news' (searched, nothing found). Ethics: the same searches found no reporting of an Alabama Ethics Commission complaint or finding involving him; the commission's own site was not reachable, so ethics is 'news'.",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2026 House candidate report: no foreign-government ties; holds stock in three foreign-domiciled companies (Enbridge, Toyota, Medtronic) through a joint brokerage account. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13) with pdftotext. Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": 473609,
+   "max": 2121582,
+   "year": 2025,
+   "c": [
+    "mar_fd26"
+   ]
+  },
+  "trades": null,
+  "note": {
+   "t": "2026 candidate report (filed May 25, 2026; covers Jan. 1, 2025–Apr. 15, 2026). Assets of $1.0M–$2.4M: his Enterprise home (joint, $250K–$500K), a one-third interest in Mount Vernon farm property held in the Marques Family Trust ($250K–$500K), his spouse's Orrville property, River Bank & Trust stock ($50K–$100K), and a joint Edward Jones brokerage with individual stocks — Amazon, Berkshire Hathaway, Exxon Mobil and Walmart ($50K–$100K each), plus Altria, Enbridge, Medtronic, Nvidia, Southern Co., Toyota and Verizon ($15K–$50K each) — and retirement accounts. Income: Alabama legislative salary ($62,212 in 2025), salary from Jim Whaley Tires/Telle Tire, and his spouse's Edward Jones salary. Liabilities: a PennyMac mortgage ($250K–$500K), an American Express balance ($15K–$50K) and two small vehicle loans. Foreign-company stocks only (Enbridge – Canada, Toyota – Japan, Medtronic – Ireland-domiciled), no foreign-government ties. Candidate reports have no transaction schedule.",
+   "c": [
+    "mar_fd26"
+   ]
+  }
+ },
+ "money_flags": {
+  "corp": {
+   "t": "Business and trade-association PACs gave $114,986 in the 2026 cycle per FEC itemized committee-contribution records, including Drummond Company PAC ($15,000), Blue Cross Blue Shield of Alabama PAC ($10,000), America's Credit Unions PAC ($10,000), Direct Supply PAC ($10,000) and Koch, Inc. PAC ($5,000).",
+   "c": [
+    "mar_drummond",
+    "mar_koch",
+    "mar_bcbs"
+   ]
+  }
+ },
+ "research_notes": "His Alabama Ethics Commission statement of economic interests (as a state legislator) was not reviewed. money_flags was empty; it now carries a corp flag from the FEC itemized committee-contribution records in the local records profile. money_history stays 'news' (fec.gov not fetchable here). Democracy stays 'no' (no search budget left)."
+}
