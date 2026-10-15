@@ -65,23 +65,9 @@ for cid, c in C.items():
     if 'rec' not in c and cid in REC: c['rec'] = cid; used_rec.add(cid)
 d['rec'] = {rid: slim(REC[rid]) for rid in sorted(used_rec)}
 
-# everyone else who filed for each race
-def race_of(p):
-    if p['office'] == 'house':
-        dd = p['dist'] or '00'
-        return '%s-%s' % (p['st'], 'AL' if dd in ('00', '0', '') else '%02d' % int(dd))
-    return '%s-%s' % (p['st'], 'SEN' if p['office'] == 'senate' else 'GOV')
+# ballot candidates only: people who filed with the FEC but are not on the November ballot are left out
+d['filers'] = {}
 fil = {}
-for rid, p in REC.items():
-    if rid in used_rec: continue
-    rc = race_of(p)
-    if rc not in R:
-        if p['office'] == 'house' and p['st'] + '-AL' in R: rc = p['st'] + '-AL'
-        else: continue
-    r26 = next((y[1] for y in p.get('cyc', []) if y[0] == 2026), 0)
-    fil.setdefault(rc, []).append([p['name'], party(p['party'])[0], r26, 1 if p.get('ico') == 'I' else 0])
-for rc in fil: fil[rc].sort(key=lambda x: -x[2])
-d['filers'] = fil
 d['meta']['records_asof'] = '2026-10-13'
 d['meta']['house_nominees_checked'] = '2026-10-14'
 json.dump(d, open(out, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))

@@ -838,7 +838,6 @@ VIEWS.race = function(id){
     if(r.candidates.length > 1) html += '<div style="margin-top:12px"><button class="btn" data-go="compare" data-arg="'+r.id+'">⇄ Compare the candidates</button></div>';
     html += raceMoney(r);
   }
-  html += filersBlock(r);
   return html;
 };
 function raceMoney(r){
