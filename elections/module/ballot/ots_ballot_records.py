@@ -228,7 +228,7 @@ def main():
     except KeyboardInterrupt:
         log('\nStopped. Everything finished so far is saved. Run the same command again to continue.')
     write_summary(cands)
-    if not done: return
+    if not done: sys.exit(2)
     log(f'\nFinished. Results are in {ROOT}'
         '\nTo send them: zip the ballot-records folder (right-click > Compress), then upload it as a release, for example:'
         '\n  gh release create ballot-records ballot-records.zip -R Ronaldoh1/2026electiondata -t "Ballot records" -n "Courts and Senate disclosures"')

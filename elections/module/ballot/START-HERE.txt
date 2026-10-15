@@ -21,6 +21,22 @@ WHAT'S ALREADY COLLECTED (DON'T RE-RUN)
        The first 198-candidate test pull. Replaced by the one above.
 
 =====================================================================
+EASIEST WAY: ONE STATE AT A TIME (runs steps 2 and 4 for you)
+=====================================================================
+    cd ~/Desktop/OTS-2026-Data
+    ./run_states.sh GA            one state
+    ./run_states.sh GA NC MI      several, one after another
+    ./run_states.sh ALL           every state, closest races first
+
+For each state it collects the court records, Senate disclosures and the
+research pack, makes uploads/state-GA.zip, and uploads it to GitHub
+(release "states"). Claude can build that state while the next one runs.
+The first time, it asks for your CourtListener token and FEC key and saves
+them in keys.txt in this folder. Never upload keys.txt.
+Already started steps 2 or 4 the long way? Press Ctrl-C and switch.
+Nothing is lost: it reuses everything already downloaded.
+
+=====================================================================
 WHAT TO RUN, IN THIS ORDER
 =====================================================================
 

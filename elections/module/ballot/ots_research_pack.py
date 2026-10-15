@@ -523,7 +523,7 @@ def main():
     except KeyboardInterrupt:
         log('\nStopped. Everything finished so far is saved. Run the same command again to continue.')
     write_summary(cands)
-    if not done: return
+    if not done: sys.exit(2)
     log(f'\nFinished. Results are in {ROOT}'
         '\nTo send them: move the _downloads folder out of research-pack (it is big and not needed), right-click research-pack > Compress, then:'
         '\n  gh release create research-pack research-pack.zip -R Ronaldoh1/2026electiondata -t "Research pack"')
