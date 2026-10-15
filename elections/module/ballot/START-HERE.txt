@@ -1,0 +1,137 @@
+OTS 2026 ELECTIONS: DATA SCRIPTS
+Updated October 15, 2026
+
+Put this folder on your Desktop. Every script runs on your Mac with plain Python 3
+(nothing to install). Each one is safe to stop and run again; it picks up where it left off.
+
+=====================================================================
+WHAT'S ALREADY COLLECTED (DON'T RE-RUN)
+=====================================================================
+
+[DONE] ots_2026_collect.py   (you ran this in ~/Desktop/2026races)
+       Uploaded as part 1 and part 2 on GitHub.
+       Pulled for everyone who filed with the FEC for 2026:
+         - campaign money by cycle, PAC money by type, outside spending
+         - House financial disclosures
+         - foreign-agent (FARA) name checks
+         - Jan 6 certification votes
+       Claude already uses it for the 1,268 ballot candidates who filed with the FEC.
+
+[DONE] ots_records_pull.py
+       The first 198-candidate test pull. Replaced by the one above.
+
+=====================================================================
+WHAT TO RUN, IN THIS ORDER
+=====================================================================
+
+Open Terminal (Applications > Utilities > Terminal) for each step.
+
+---------------------------------------------------------------------
+STEP 1   1-AIPAC-spending / ots_aipac_spending.py
+STATUS   You are running this now. Let it finish where it is.
+         The copy in this folder is a spare; you don't need to start it again.
+---------------------------------------------------------------------
+Pulls:  AIPAC PAC and United Democracy Project (its super PAC), 2016-2026:
+        - every dollar given to candidates, and every dollar spent
+          for or against a candidate
+        - big donors
+        - AIPAC's lobbying reports
+        - IRS tax filings for AIPAC and its trip foundation
+Builds: the AIPAC dashboard, plus the AIPAC line on every candidate page.
+Needs:  your FEC API key.
+Output: a folder called aipac-data, next to wherever you ran it.
+If you need to start it from here:
+    cd ~/Desktop/OTS-2026-Data/1-AIPAC-spending
+    FEC_API_KEY=yourkey python3 ots_aipac_spending.py
+
+---------------------------------------------------------------------
+STEP 2   2-Ballot-records / ots_ballot_records.py
+STATUS   NEW. Run this next. Ballot candidates only (the 1,354 in
+         ballot_2026.csv). Nobody who dropped out or lost a primary.
+---------------------------------------------------------------------
+Pulls:  - Court records: federal court cases and court opinions that name
+          each candidate (CourtListener).
+        - Senate financial disclosures: annual reports, stock-trade reports,
+          candidate reports, for every Senate candidate on the ballot.
+Builds: the "courts" and "disclosures" checks on every candidate page.
+        Without these, the 16 Senate candidates already researched can't
+        get a final score.
+Needs:  a free CourtListener token (the Senate part needs nothing):
+          1. Go to www.courtlistener.com and sign up.
+          2. Open your profile, go to API, and copy the token.
+Run:
+    cd ~/Desktop/OTS-2026-Data/2-Ballot-records
+    COURTLISTENER_TOKEN=paste-token-here python3 ots_ballot_records.py
+Time:   about 1-2 hours.
+Output: 2-Ballot-records/ballot-records  (about a few MB)
+
+---------------------------------------------------------------------
+STEP 3   3-Members-money / ots_members_money.py, then ots_members_money_pass2.py
+STATUS   Later. Not needed for the ballot pages.
+---------------------------------------------------------------------
+Pulls:  everyone in office now (all 535 members of Congress and all
+        50 governors), across every cycle they've run:
+        - corporate, trade, labor and lobbyist PAC money
+        - money from committees organized around another country's policy
+          (every country is checked the same way)
+        Pass 2 adds: leadership PACs, super PAC donors, earmarked
+        donations and lobbyists' own donations.
+Builds: the "who funds the people in office now" dashboard.
+Needs:  your FEC API key.
+Run:
+    cd ~/Desktop/OTS-2026-Data/3-Members-money
+    FEC_API_KEY=yourkey python3 ots_members_money.py
+    FEC_API_KEY=yourkey python3 ots_members_money_pass2.py
+Output: 3-Members-money/members-data
+
+---------------------------------------------------------------------
+OPTIONAL   Optional-shrink-your-data / filter_to_ballot.py
+---------------------------------------------------------------------
+Makes a smaller copy of your 2026 data with only the ballot candidates
+(2.9 GB down to 1.6 GB). Your original folder is never touched.
+You don't need it; the module already uses ballot candidates only.
+    cd ~/Desktop/OTS-2026-Data/Optional-shrink-your-data
+    python3 filter_to_ballot.py ballot_2026.csv ~/Desktop/2026races/2026elections-data ~/Desktop/2026elections-ballot
+
+=====================================================================
+HOW TO SEND RESULTS TO CLAUDE (same way as part 1 and part 2)
+=====================================================================
+Right-click the output folder and choose Compress. That makes a .zip.
+Then, in Terminal, from the folder that holds the zip:
+
+    gh release create aipac aipac-data.zip -R Ronaldoh1/2026electiondata -t "AIPAC data"
+    gh release create ballot-records ballot-records.zip -R Ronaldoh1/2026electiondata -t "Ballot records"
+    gh release create members members-data.zip -R Ronaldoh1/2026electiondata -t "Members money"
+
+If a zip is over 2 GB, tell Claude and we'll split it like before.
+
+=====================================================================
+WHERE THE MODULE STANDS
+=====================================================================
+
+BUILT
+  - All 50 states, 506 races, 1,354 candidates on the November 3 ballot.
+    Every name was checked against state election offices,
+    Wikipedia/Ballotpedia and AP. Nobody who dropped out is listed.
+  - Public money records loaded for the 1,268 who filed with the FEC.
+  - 74 candidates fully researched:
+      - 58 show a score marked provisional.
+      - 16 Senate candidates show "Pending" until step 2's courts and
+        disclosure data arrives.
+  - Corrections: 208 certification votes and 80 FEC IDs that belonged
+    to someone with the same or a similar name were removed.
+  - The Elections card is in Sophia.
+
+LEFT TO BUILD                              WAITING ON
+  - Final scores for 16 Senate candidates  Step 2 (ballot-records)
+  - AIPAC dashboard and AIPAC line         Step 1 (aipac-data)
+  - Full research, 124 Senate and          Claude; next batch
+    governor candidates
+  - Full research, 1,156 House candidates  Claude; district by district
+  - Check of Texas 11-38, Colorado and     Claude
+    minor candidates against official
+    state lists
+  - Key votes for incumbents, photos       Claude
+  - Members-money dashboard                Step 3 (members-data)
+  - Louisiana's 6 races and New York's     After election day
+    24th district
