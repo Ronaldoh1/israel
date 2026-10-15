@@ -25,7 +25,8 @@ Output: a folder called ballot-records, one folder per state, one per candidate:
     ballot-records/GA/ga-sen-jon-ossoff/senate_disclosures.json
 plus ballot-records/summary.csv (one row per candidate: how many court hits and disclosure reports).
 
-Safe to stop and re-run: finished candidates are skipped.
+Safe to stop and re-run: finished candidates are skipped. If the internet drops, it waits for the
+connection to come back (up to an hour) and carries on by itself.
 Takes about 1-2 hours for courts (CourtListener allows about one search a second) and 20 minutes for Senate.
 """
 import csv, http.cookiejar, json, os, re, ssl, sys, time, urllib.error, urllib.parse, urllib.request
@@ -50,26 +51,39 @@ CTX = ssl_ctx()
 CERT_HELP = ('\n  SSL certificate problem. On a Mac, open Applications > Python 3.x and double-click'
              '\n  "Install Certificates.command" (or run: pip3 install certifi), then run this again.\n')
 
-def request(opener, url, data=None, headers=None, tries=4):
+class NetworkDown(Exception):
+    """the connection stayed down too long; everything finished so far is saved"""
+
+PATIENCE = 3600   # seconds to keep waiting for the connection to come back
+
+def request(opener, url, data=None, headers=None, tries=6):
+    """Returns the response bytes, or None for a definite refusal (bad token, not found).
+    If the network drops it waits and keeps retrying for up to an hour, then raises NetworkDown."""
     h = {'User-Agent': UA}; h.update(headers or {})
     body = urllib.parse.urlencode(data).encode() if data is not None else None
-    for i in range(tries):
+    busy = 0; down_since = None
+    while True:
         try:
             with opener.open(urllib.request.Request(url, data=body, headers=h), timeout=90) as r:
+                if down_since: log('    connection is back; continuing')
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
-                wait = 30 * (i + 1); log(f'    busy ({e.code}); waiting {wait}s'); time.sleep(wait); continue
+                busy += 1
+                if busy > tries: log(f'    the site kept answering {e.code}; skipping for now'); return None
+                wait = 30 * busy; log(f'    site busy ({e.code}); waiting {wait}s'); time.sleep(wait); continue
             if e.code in (401, 403): log(f'    refused ({e.code}): {url}'); return None
             log(f'    HTTP {e.code}: {url}'); return None
         except (ssl.SSLError, ssl.CertificateError):
             log(CERT_HELP); raise SystemExit(1)
-        except urllib.error.URLError as e:
-            if 'CERTIFICATE' in str(e).upper(): log(CERT_HELP); raise SystemExit(1)
-            log(f'    network error ({e.reason}); retrying'); time.sleep(5 * (i + 1))
         except Exception as e:
-            log(f'    error ({e}); retrying'); time.sleep(5 * (i + 1))
-    return None
+            if 'CERTIFICATE' in str(e).upper(): log(CERT_HELP); raise SystemExit(1)
+            now = time.time()
+            if down_since is None:
+                down_since = now; log(f'    connection lost ({getattr(e, "reason", e)}); waiting for it to come back...')
+            elif now - down_since > PATIENCE:
+                raise NetworkDown()
+            time.sleep(30)
 
 def wjson(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -203,9 +217,18 @@ def main():
     states = {a[i + 1].upper() for i, x in enumerate(a) if x == '--state'}
     cands = [Cand(r) for r in csv.DictReader(open(BALLOT, encoding='utf-8')) if not states or r['state'] in states]
     log(f'OTS ballot records: {len(cands)} ballot candidates, saving to {ROOT}')
-    if 'courts' in only: run_courts(cands, os.environ.get('COURTLISTENER_TOKEN') or (a[a.index('--token') + 1] if '--token' in a else None))
-    if 'senate' in only: run_senate(cands)
+    done = False
+    try:
+        if 'courts' in only: run_courts(cands, os.environ.get('COURTLISTENER_TOKEN') or (a[a.index('--token') + 1] if '--token' in a else None))
+        if 'senate' in only: run_senate(cands)
+        done = True
+    except NetworkDown:
+        log('\nThe internet connection was down for over an hour, so the script stopped.'
+            '\nEverything finished so far is saved. Run the same command again to continue where it left off.')
+    except KeyboardInterrupt:
+        log('\nStopped. Everything finished so far is saved. Run the same command again to continue.')
     write_summary(cands)
+    if not done: return
     log(f'\nFinished. Results are in {ROOT}'
         '\nTo send them: zip the ballot-records folder (right-click > Compress), then upload it as a release, for example:'
         '\n  gh release create ballot-records ballot-records.zip -R Ronaldoh1/2026electiondata -t "Ballot records" -n "Courts and Senate disclosures"')
