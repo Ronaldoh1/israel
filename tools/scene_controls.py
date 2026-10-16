@@ -99,6 +99,16 @@ footer .walkbar.idle .wbtn,footer .walkbar.idle .wpos{display:none !important}
 footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(--cream) !important;border-color:rgba(240,192,64,.75) !important;box-shadow:none}
 @keyframes wpPulse{0%,100%{box-shadow:0 0 0 0 rgba(240,192,64,.55)}50%{box-shadow:0 0 0 10px rgba(240,192,64,0)}}
 @media (prefers-reduced-motion:reduce){footer .walkbar .wplay{animation:none}}
+/* last card reached: Next scene turns emerald and glows, so the reader knows the scene is done */
+#btnNext.go-on,.m-walk #mwNext.go-on{background:radial-gradient(circle at 30% 25%,#1F8A5B 0%,#11633F 55%,#0A4229 100%) !important;color:#F2C449 !important;border:2px solid #D4A53A !important;animation:goOn 2.2s ease-in-out infinite}
+@keyframes goOn{0%,100%{box-shadow:0 0 0 0 rgba(31,138,91,.55)}50%{box-shadow:0 0 0 9px rgba(31,138,91,0)}}
+/* a new scene's title arrives once: rises in, then a gold shine passes across it */
+.ttl-in{background:linear-gradient(100deg,#F0C040 0%,#F0C040 38%,#FFF5D2 50%,#F0C040 62%,#F0C040 100%);background-size:260% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent !important;-webkit-text-fill-color:transparent;
+  animation:ttlRise .55s cubic-bezier(.22,1,.36,1) both,ttlShine 1.5s ease-in-out .3s both}
+@keyframes ttlRise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes ttlShine{from{background-position:100% 0}to{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){ #btnNext.go-on,.m-walk #mwNext.go-on{animation:none} .ttl-in{animation:none;background:none;color:inherit !important;-webkit-text-fill-color:currentColor} }
 /* larger card numbers */
 .entity .badge{width:30px !important;height:30px !important;font-size:14px !important;top:-12px !important;left:-12px !important;border-width:2.5px !important;box-shadow:0 2px 8px rgba(0,0,0,.45)}
 .entity.focused .badge{background:#fff !important;transform:scale(1.08)}
@@ -176,6 +186,9 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
     var mp = $('mwPos'); if(mp) mp.textContent = i < 0 ? '' : (i + 1) + ' / ' + n;
     var pv = $('mwPrev'), nx = $('mwNext');
     if(pv) pv.disabled = i <= 0;
+    var done = i >= 0 && i >= n - 1 && cur < S.length - 1;
+    var bn = $('btnNext'); if(bn) bn.classList.toggle('go-on', done);
+    if(nx) nx.classList.toggle('go-on', done);
     if(nx){ var last = i >= n - 1; nx.textContent = last ? (cur < S.length - 1 ? tr('Next scene ▸') : tr('Next card ▸')) : tr('Next card ▸'); nx.disabled = last && cur >= S.length - 1; }
   };
   /* from an open card: next card, or the next scene after the last card */
@@ -184,6 +197,16 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
     if(walkIndex >= n - 1){ if(cur < S.length - 1){ closeModal(); go(1); } return; }
     walkStep(1);
   };
+
+  /* ---------- a scene's title arrives once ---------- */
+  function animateTitle(el){
+    if(!el) return;
+    el.classList.remove('ttl-in'); void el.offsetWidth; el.classList.add('ttl-in');
+    var done = function(e){ if(e.animationName === 'ttlShine'){ el.classList.remove('ttl-in'); el.removeEventListener('animationend', done); } };
+    el.addEventListener('animationend', done);
+    setTimeout(function(){ el.classList.remove('ttl-in'); }, 2600);   /* never leave it transparent */
+  }
+  var titledFor = null;
 
   /* ---------- told vs. record ---------- */
   var box = $('trModal'), back = $('trBack'), chk = $('trAuto');
@@ -227,7 +250,7 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
       if(busy()){ if(++tries < 120) timer = setTimeout(wait, 700); else window.__trPending = false; return; }
       window.__trPending = false;
       if(shownFor === S[at].id) return;
-      shownFor = S[at].id; otsTold(true);
+      shownFor = S[at].id; otsTold(true); animateTitle($('trTtl'));
     }, 550);
   }
   /* the library opening closes it; returning to the simulation opens it for the scene on screen */
@@ -239,7 +262,12 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
     wasBook = isBook;
   }).observe(document.body, {attributes:true, attributeFilter:['class']});
   var origRender = window.renderScene;
-  window.renderScene = function(){ var r = origRender.apply(this, arguments); try{ shownFor = null; sceneChanged(); }catch(e){} return r; };
+  window.renderScene = function(){
+    var r = origRender.apply(this, arguments);
+    try{ shownFor = null; sceneChanged(); }catch(e){}
+    try{ var id = S[cur].id; if(id !== titledFor){ titledFor = id; animateTitle($('title')); } }catch(e){}   /* once per scene arrival */
+    return r;
+  };
   try{ if(typeof S !== 'undefined' && S.length) sceneChanged(); }catch(e){}
   try{ updateWalkControls(); }catch(e){}
 })();
