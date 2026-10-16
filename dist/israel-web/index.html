@@ -7263,6 +7263,15 @@ body.book-open #libBanner{display:none}
 <style>
 /* ===== simplified controls: one + menu, one first-visit card (tools/simplify_ux.py) ===== */
 #helpReplayBtn,.hdr-tools,#fabOptions{display:none !important}
+/* library "Continue reading": a true miniature of the shelf cover (full cover with fixed type, scaled down whole) */
+.lb-cont .mini{width:46px !important;height:69px;flex:none;position:relative;overflow:visible}
+.lb-cont .mini .cv{position:absolute;top:0;left:0;width:160px;transform:scale(.2875);transform-origin:0 0;box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 22px 30px -12px rgba(0,0,0,.5),0 4px 8px rgba(0,0,0,.25)}
+.lb-cont .mini .cv .ser{font-size:10px}
+.lb-cont .mini .cv .tt{font-size:21px}
+.lb-cont .mini .cv .tt.lg{font-size:17px}
+.lb-cont .mini .cv .st{font-size:12.5px}
+.lb-cont .mini .cv .vol{font-size:11px}
+.lb-cont .mini .cv .ribbon{display:none}
 #otsMenuBack{position:fixed;inset:0;z-index:2147482990;background:rgba(5,10,24,.55);opacity:0;pointer-events:none;transition:opacity .2s}
 #otsMenuBack.on{opacity:1;pointer-events:auto}
 #otsMenu{position:fixed;z-index:2147482995;right:20px;bottom:96px;width:min(380px,calc(100vw - 24px));max-height:calc(100vh - 130px);overflow:auto;
