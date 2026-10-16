@@ -238,7 +238,6 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
     if(wasBook && !isBook){ shownFor = null; sceneChanged(); }
     wasBook = isBook;
   }).observe(document.body, {attributes:true, attributeFilter:['class']});
-  window.otsToldAuto = function(on){ if(on !== undefined){ try{ localStorage.setItem(AUTO, on ? '1' : '0'); }catch(e){} chk.checked = !!on; } return auto(); };
   var origRender = window.renderScene;
   window.renderScene = function(){ var r = origRender.apply(this, arguments); try{ shownFor = null; sceneChanged(); }catch(e){} return r; };
   try{ if(typeof S !== 'undefined' && S.length) sceneChanged(); }catch(e){}
