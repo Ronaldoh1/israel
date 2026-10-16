@@ -51,6 +51,12 @@ swap('<p class="xp-note">Opens with a short introduction and a guided tour.</p>'
 hint_old = re.search(r'<div class="hint">Tap numbered cards for deep detail\.[^<]*</div>', s).group(0)
 swap(hint_old, '<div class="hint">Tap a numbered card to read its detail and sources.</div>')
 
+# ---------------------------------------------------------------- welcome screen: official TikTok / Instagram glyphs (Simple Icons)
+swap('<span class="sb-ico" aria-hidden="true">♪</span>', '<span class="sb-ico" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/tiktok.svg" alt="" width="22" height="22"></span>')
+swap('<span class="sb-ico" aria-hidden="true">◎</span>', '<span class="sb-ico" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/instagram.svg" alt="" width="22" height="22"></span>')
+swap('.sbtn-tt .sb-ico{color:#fff;text-shadow:-2px -1px 0 #25F4EE,2px 1px 0 #FE2C55}',
+     '.sbtn-tt .sb-ico{background:#000 !important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}.sbtn-ig .sb-ico{background:radial-gradient(circle at 30% 107%,#FDF497 0%,#FDF497 5%,#FD5949 45%,#D6249F 60%,#285AEB 90%) !important}.sbtn .sb-ico img{width:22px;height:22px;filter:brightness(0) invert(1);display:block}')
+
 # ---------------------------------------------------------------- the + button opens the new menu
 swap('<button class="fab-main" id="fabMain" onclick="toggleFab()" title="Menu">+</button>',
      '<button class="fab-main" id="fabMain" onclick="otsMenu()" title="Menu" aria-haspopup="dialog" aria-controls="otsMenu">+</button>')
@@ -69,8 +75,9 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
 #otsMenu .om-soc span small{display:block;font:600 11.5px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.7);margin-bottom:2px}
 #otsMenu .om-soc{font-size:14px;word-break:break-word}
 #otsMenu .om-soc .ic{width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;color:#fff;flex:none}
-#otsMenu .om-tt{background:linear-gradient(135deg,#25F4EE,#000 45%,#FE2C55)}
-#otsMenu .om-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+#otsMenu .om-tt{background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+#otsMenu .om-soc .ic img{width:18px;height:18px;filter:brightness(0) invert(1);display:block}
+#otsMenu .om-ig{background:radial-gradient(circle at 30% 107%,#FDF497 0%,#FDF497 5%,#FD5949 45%,#D6249F 60%,#285AEB 90%)}
 #otsMenu .om-title{font:700 20px/1.2 'EB Garamond',Georgia,serif;color:#F0C040}
 #otsMenu .om-x{width:44px;height:44px;border-radius:50%;border:1px solid rgba(247,243,236,.25);background:transparent;color:#F7F3EC;font:400 22px/1 system-ui,sans-serif;cursor:pointer}
 #otsMenu h5{margin:12px 4px 6px;font:700 13px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.72);letter-spacing:.02em}
@@ -145,8 +152,8 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   </div>
   <h5>Follow</h5>
   <div class="om-grid">
-    <a class="om-it om-soc wide" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true">♪</span><span><small>TikTok</small>@awakenwithsophia</span></a>
-    <a class="om-it om-soc wide" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="ic om-ig" aria-hidden="true">◎</span><span><small>Instagram</small>@chosen.ron13</span></a>
+    <a class="om-it om-soc wide" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/tiktok.svg" alt="" width="18" height="18"></span><span><small>TikTok</small>@awakenwithsophia</span></a>
+    <a class="om-it om-soc wide" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="ic om-ig" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/instagram.svg" alt="" width="18" height="18"></span><span><small>Instagram</small>@chosen.ron13</span></a>
   </div>
   <h5>Help and more</h5>
   <div class="om-grid">
