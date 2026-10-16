@@ -58,7 +58,7 @@ swap('<button class="fab-main" id="fabMain" onclick="toggleFab()" title="Menu">+
 BLOCK = r'''<!--SIMPLE-UX-START-->
 <style>
 /* ===== simplified controls: one + menu, one first-visit card (tools/simplify_ux.py) ===== */
-#helpReplayBtn,.hdr-tools,.walkbar,#fabOptions{display:none !important}
+#helpReplayBtn,.hdr-tools,#fabOptions{display:none !important}
 #otsMenuBack{position:fixed;inset:0;z-index:2147482990;background:rgba(5,10,24,.55);opacity:0;pointer-events:none;transition:opacity .2s}
 #otsMenuBack.on{opacity:1;pointer-events:auto}
 #otsMenu{position:fixed;z-index:2147482995;right:20px;bottom:96px;width:min(380px,calc(100vw - 24px));max-height:calc(100vh - 130px);overflow:auto;
@@ -124,6 +124,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   </div>
   <h5>This scene</h5>
   <div class="om-grid">
+    <button class="om-it wide" type="button" data-a="told"><span class="ic">⚖️</span><span>What they told you vs. the record</span></button>
     <button class="om-it" type="button" data-a="sources"><span class="ic">📄</span><span>Sources</span></button>
     <button class="om-it" type="button" data-a="key"><span class="ic">🎨</span><span>What the colors mean</span></button>
   </div>
@@ -145,8 +146,8 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
 <div id="otsCoach" role="dialog" aria-label="How to read this" aria-hidden="true">
   <h4>How to read this</h4>
   <ol>
-    <li><span class="n">1</span><span>Tap a numbered card to read who or what it is, with sources.</span></li>
-    <li><span class="n">2</span><span><span class="only-d">Press NEXT to go to the next scene.</span><span class="only-m">Press NEXT, or swipe, to go to the next scene.</span></span></li>
+    <li><span class="n">1</span><span>Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.</span></li>
+    <li><span class="n">2</span><span><span class="only-d">Press Next scene to move on.</span><span class="only-m">Press Next scene, or swipe, to move on.</span></span></li>
     <li><span class="n">3</span><span>Everything else is under this button:<span class="plus" aria-hidden="true">+</span></span></li>
   </ol>
   <button class="ok" type="button" onclick="otsCoachDone()">Got it</button>
@@ -185,6 +186,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
     book:     function(){ if(window.openBook) openBook(null); },
     dash:     function(){ if(window.fabDashboard) fabDashboard(); },
     map:      function(){ if(window.fabMap) fabMap(); },
+    told:     function(){ if(window.otsTold) window.otsTold(true); },
     sources:  function(){ if(window.openSrc) openSrc(); },
     key:      function(){ if(window.openLegend) openLegend(); },
     how:      function(){ if(window.startTour) startTour(true); },
@@ -211,6 +213,8 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
     var x = $('xpChooser'); if(x && x.classList.contains('on')) return false;
     var e = $('elevenOverlay'); if(e && !e.hidden) return false;
     var t = $('tourOverlay'); if(t && t.classList.contains('active')) return false;
+    var tr = $('trModal'); if(tr && tr.classList.contains('on')) return false;   /* after the scene's told-vs-record window */
+    if(window.__trPending) return false;                                            /* … including while it is about to open */
     return true;
   }
   window.otsCoach = function(){
@@ -252,9 +256,10 @@ ES = {
  'How it works': 'Cómo funciona', 'Common questions': 'Preguntas frecuentes', 'The 11-Minute Story: how it happened': 'La historia en 11 minutos: cómo ocurrió',
  'Language': 'Idioma', 'Back to Sophia': 'Volver a Sophia', 'Close': 'Cerrar',
  'How to read this': 'Cómo leer esto',
- 'Tap a numbered card to read who or what it is, with sources.': 'Toca una tarjeta numerada para saber quién o qué es, con sus fuentes.',
- 'Press NEXT to go to the next scene.': 'Pulsa SIGUIENTE para pasar a la siguiente escena.',
- 'Press NEXT, or swipe, to go to the next scene.': 'Pulsa SIGUIENTE, o desliza, para pasar a la siguiente escena.',
+ 'Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.': 'Toca cualquier tarjeta numerada, o recórrelas en orden con las flechas ◂ ▸ de Tarjeta.',
+ 'What they told you vs. the record': 'Lo que te dijeron vs. el registro',
+ 'Press Next scene to move on.': 'Pulsa Escena siguiente para avanzar.',
+ 'Press Next scene, or swipe, to move on.': 'Pulsa Escena siguiente, o desliza, para avanzar.',
  'Everything else is under this button:': 'Todo lo demás está en este botón:',
  'Got it': 'Entendido',
 }
@@ -269,9 +274,10 @@ AR = {
  'How it works': 'كيف يعمل', 'Common questions': 'الأسئلة الشائعة', 'The 11-Minute Story: how it happened': 'القصة في 11 دقيقة: كيف حدث ذلك',
  'Language': 'اللغة', 'Back to Sophia': 'العودة إلى صوفيا', 'Close': 'إغلاق',
  'How to read this': 'كيف تقرأ هذا',
- 'Tap a numbered card to read who or what it is, with sources.': 'اضغط على بطاقة مرقّمة لتعرف من هو أو ما هو، مع المصادر.',
- 'Press NEXT to go to the next scene.': 'اضغط «التالي» للانتقال إلى المشهد التالي.',
- 'Press NEXT, or swipe, to go to the next scene.': 'اضغط «التالي» أو اسحب للانتقال إلى المشهد التالي.',
+ 'Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.': 'اضغط على أي بطاقة مرقّمة، أو تنقّل بينها بالترتيب بأسهم البطاقة ◂ ▸.',
+ 'What they told you vs. the record': 'ما قيل لك مقابل السجل',
+ 'Press Next scene to move on.': 'اضغط «المشهد التالي» للمتابعة.',
+ 'Press Next scene, or swipe, to move on.': 'اضغط «المشهد التالي» أو اسحب للمتابعة.',
  'Everything else is under this button:': 'كل ما عدا ذلك موجود في هذا الزر:',
  'Got it': 'فهمت',
 }
