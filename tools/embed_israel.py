@@ -1,57 +1,34 @@
 #!/usr/bin/env python3
-"""Keep the Israel simulation embedded in sophia.html identical to index.html.
+"""The Israel simulation is no longer embedded in sophia.html.
 
-index.html is the standalone simulation and the file we edit. sophia.html carries an
-exact copy of it, base64-encoded in <script type="text/plain" id="il_sim_b64">, which
-Sophia decodes into its overlay when the Israel card is opened.
+It is hosted on its own at https://israel.sophia13.workers.dev/ (deploy dist/index.html there), and
+Sophia opens it in a new tab through window.openIsraelSim(), passing #book, #book=<volume>, #11minutes
+or ?lang=es|ar as needed. This tool now only checks that sophia.html carries no stale embedded copy
+and still has the link.
 
 Usage (from the repository root):
-  python3 tools/embed_israel.py           # re-embed index.html into sophia.html
-  python3 tools/embed_israel.py --check   # exit 1 if the embedded copy is out of date
+  python3 tools/embed_israel.py           # remove an embedded copy if one is present
+  python3 tools/embed_israel.py --check   # exit 1 if a copy is embedded or the link is missing
 """
-import base64
-import hashlib
-import pathlib
-import re
-import sys
+import pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SIM = ROOT / 'dist' / 'index.html' if (ROOT / 'dist' / 'index.html').exists() else ROOT / 'index.html'
 HUB = ROOT / 'sophia.html'
-OPEN = '<script type="text/plain" id="il_sim_b64">'
-CLOSE = '</script>'
-INSERT_BEFORE = '<script type="text/plain" id="vt_sim_b64">'
-
+URL = 'https://israel.sophia13.workers.dev/'
 
 def main() -> int:
-    check = '--check' in sys.argv[1:]
-    sim = SIM.read_bytes()
     hub = HUB.read_text(encoding='utf-8')
-    encoded = base64.b64encode(sim).decode('ascii')
-
-    start = hub.find(OPEN)
-    if start >= 0:
-        end = hub.index(CLOSE, start + len(OPEN))
-        current = hub[start + len(OPEN):end]
-        if re.sub(r'\s+', '', current) == encoded:
-            print(f'sophia.html is up to date with index.html (sha256 {hashlib.sha256(sim).hexdigest()[:12]}).')
-            return 0
-        if check:
-            print('sophia.html embeds an OUTDATED copy of index.html — run: python3 tools/embed_israel.py')
-            return 1
-        hub = hub[:start + len(OPEN)] + encoded + hub[end:]
-    else:
-        if check:
-            print('sophia.html has no embedded Israel simulation — run: python3 tools/embed_israel.py')
-            return 1
-        at = hub.index(INSERT_BEFORE)
-        hub = hub[:at] + OPEN + encoded + CLOSE + '\n' + hub[at:]
-
-    HUB.write_text(hub, encoding='utf-8')
-    print(f'Embedded index.html ({len(sim):,} bytes, sha256 {hashlib.sha256(sim).hexdigest()[:12]}) '
-          f'into sophia.html (now {HUB.stat().st_size:,} bytes).')
+    embedded = re.search(r'<script type="text/plain" id="il_sim_b64">.*?</script>\n?', hub, re.S)
+    if URL not in hub:
+        print('sophia.html does not link to the hosted Israel simulation (' + URL + ').'); return 1
+    if embedded:
+        if '--check' in sys.argv[1:]:
+            print('sophia.html still embeds a copy of the Israel simulation — run: python3 tools/embed_israel.py'); return 1
+        HUB.write_text(hub[:embedded.start()] + hub[embedded.end():], encoding='utf-8')
+        print('removed the embedded copy; Sophia links to ' + URL)
+        return 0
+    print('sophia.html links to the hosted Israel simulation (' + URL + '); nothing embedded.')
     return 0
-
 
 if __name__ == '__main__':
     sys.exit(main())
