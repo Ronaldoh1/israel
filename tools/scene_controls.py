@@ -191,7 +191,7 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
   chk.addEventListener('change', function(){ try{ localStorage.setItem(AUTO, chk.checked ? '1' : '0'); }catch(e){} });
   function shown(el){ return el && el.isConnected && !el.hidden && getComputedStyle(el).display !== 'none' && !el.classList.contains('fade-out'); }
   function busy(){
-    var b = document.body.classList; if(b.contains('book-open')) return true;
+    var b = document.body.classList; if(b.contains('book-open') || window.__bookOpening) return true;   /* the library never gets it */
     if(shown($('welcomeOverlay'))) return true;
     var x = $('xpChooser'); if(x && x.classList.contains('on')) return true;
     var e = $('elevenOverlay'); if(e && !e.hidden) return true;
@@ -230,6 +230,15 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
       shownFor = S[at].id; otsTold(true);
     }, 550);
   }
+  /* the library opening closes it; returning to the simulation opens it for the scene on screen */
+  var wasBook = document.body.classList.contains('book-open');
+  if(window.MutationObserver) new MutationObserver(function(){
+    var isBook = document.body.classList.contains('book-open');
+    if(isBook && box.classList.contains('on')){ otsTold(false); shownFor = null; }
+    if(wasBook && !isBook){ shownFor = null; sceneChanged(); }
+    wasBook = isBook;
+  }).observe(document.body, {attributes:true, attributeFilter:['class']});
+  window.otsToldAuto = function(on){ if(on !== undefined){ try{ localStorage.setItem(AUTO, on ? '1' : '0'); }catch(e){} chk.checked = !!on; } return auto(); };
   var origRender = window.renderScene;
   window.renderScene = function(){ var r = origRender.apply(this, arguments); try{ shownFor = null; sceneChanged(); }catch(e){} return r; };
   try{ if(typeof S !== 'undefined' && S.length) sceneChanged(); }catch(e){}

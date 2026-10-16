@@ -7284,6 +7284,12 @@ body.book-open #libBanner{display:none}
 #otsMenu .om-it:hover,#otsMenu .om-it:focus-visible{background:rgba(240,192,64,.14);border-color:rgba(240,192,64,.7);outline:none}
 #otsMenu .om-it .ic{font-size:22px;line-height:1;flex:none}
 #otsMenu .om-it.wide{grid-column:1 / -1}
+#otsMenu .om-switch .sw{margin-inline-start:auto;flex:none;width:46px;height:28px;border-radius:14px;background:rgba(247,243,236,.22);position:relative;transition:background .2s}
+#otsMenu .om-switch .sw::after{content:'';position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#F7F3EC;transition:transform .2s}
+#otsMenu .om-switch[aria-checked="true"] .sw{background:#1E9E5A}
+#otsMenu .om-switch[aria-checked="true"] .sw::after{transform:translateX(18px)}
+html[dir="rtl"] #otsMenu .om-switch[aria-checked="true"] .sw::after{transform:translateX(-18px)}
+html[dir="rtl"] #otsMenu .om-switch .sw::after{left:auto;right:3px}
 #otsMenu .om-it[hidden]{display:none}
 #fabMain.om-open{transform:rotate(45deg)}
 @media (max-width:900px){
@@ -7329,6 +7335,7 @@ body.book-open #libBanner{display:none}
   <h5>This scene</h5>
   <div class="om-grid">
     <button class="om-it wide" type="button" data-a="told"><span class="ic">⚖️</span><span>What they told you vs. the record</span></button>
+    <button class="om-it wide om-switch" type="button" data-a="trauto" role="switch" aria-checked="true"><span class="ic">🔁</span><span>Open it at the start of every scene</span><span class="sw" aria-hidden="true"></span></button>
     <button class="om-it" type="button" data-a="sources"><span class="ic">📄</span><span>Sources</span></button>
     <button class="om-it" type="button" data-a="key"><span class="ic">🎨</span><span>What the colors mean</span></button>
   </div>
@@ -7374,7 +7381,8 @@ body.book-open #libBanner{display:none}
       try{ m = !!(window.mapForCurrent && window.mapForCurrent()); }catch(e){}
       menu.querySelector('[data-a="dash"]').hidden = !d;
       menu.querySelector('[data-a="map"]').hidden = !m;
-      menu.querySelector('[data-a="eleven"]').hidden = lang() !== 'en';   /* Eleven Minutes is written in English */
+      menu.querySelector('[data-a="eleven"]').hidden = lang() !== 'en';
+      try{ menu.querySelector('[data-a="trauto"]').setAttribute('aria-checked', window.otsToldAuto && window.otsToldAuto() ? 'true' : 'false'); }catch(e){}   /* Eleven Minutes is written in English */
       try{ if(window.localizeUI) window.localizeUI(menu); }catch(e){}
     }
     menu.classList.toggle('on', open); back.classList.toggle('on', open);
@@ -7401,6 +7409,10 @@ body.book-open #libBanner{display:none}
   };
   menu.addEventListener('click', function(e){
     var b = e.target.closest('[data-a]'); if(!b) return;
+    if(b.getAttribute('data-a') === 'trauto'){   /* a switch: flips in place, the menu stays open */
+      var on = !(window.otsToldAuto && window.otsToldAuto()); if(window.otsToldAuto) window.otsToldAuto(on);
+      b.setAttribute('aria-checked', on ? 'true' : 'false'); return;
+    }
     otsMenu(false); var f = ACT[b.getAttribute('data-a')]; if(f) setTimeout(f, 120);
   });
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && menu.classList.contains('on')) otsMenu(false); });
@@ -7567,7 +7579,7 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
   chk.addEventListener('change', function(){ try{ localStorage.setItem(AUTO, chk.checked ? '1' : '0'); }catch(e){} });
   function shown(el){ return el && el.isConnected && !el.hidden && getComputedStyle(el).display !== 'none' && !el.classList.contains('fade-out'); }
   function busy(){
-    var b = document.body.classList; if(b.contains('book-open')) return true;
+    var b = document.body.classList; if(b.contains('book-open') || window.__bookOpening) return true;   /* the library never gets it */
     if(shown($('welcomeOverlay'))) return true;
     var x = $('xpChooser'); if(x && x.classList.contains('on')) return true;
     var e = $('elevenOverlay'); if(e && !e.hidden) return true;
@@ -7606,6 +7618,15 @@ footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(-
       shownFor = S[at].id; otsTold(true);
     }, 550);
   }
+  /* the library opening closes it; returning to the simulation opens it for the scene on screen */
+  var wasBook = document.body.classList.contains('book-open');
+  if(window.MutationObserver) new MutationObserver(function(){
+    var isBook = document.body.classList.contains('book-open');
+    if(isBook && box.classList.contains('on')){ otsTold(false); shownFor = null; }
+    if(wasBook && !isBook){ shownFor = null; sceneChanged(); }
+    wasBook = isBook;
+  }).observe(document.body, {attributes:true, attributeFilter:['class']});
+  window.otsToldAuto = function(on){ if(on !== undefined){ try{ localStorage.setItem(AUTO, on ? '1' : '0'); }catch(e){} chk.checked = !!on; } return auto(); };
   var origRender = window.renderScene;
   window.renderScene = function(){ var r = origRender.apply(this, arguments); try{ shownFor = null; sceneChanged(); }catch(e){} return r; };
   try{ if(typeof S !== 'undefined' && S.length) sceneChanged(); }catch(e){}

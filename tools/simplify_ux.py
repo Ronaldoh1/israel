@@ -80,6 +80,12 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
 #otsMenu .om-it:hover,#otsMenu .om-it:focus-visible{background:rgba(240,192,64,.14);border-color:rgba(240,192,64,.7);outline:none}
 #otsMenu .om-it .ic{font-size:22px;line-height:1;flex:none}
 #otsMenu .om-it.wide{grid-column:1 / -1}
+#otsMenu .om-switch .sw{margin-inline-start:auto;flex:none;width:46px;height:28px;border-radius:14px;background:rgba(247,243,236,.22);position:relative;transition:background .2s}
+#otsMenu .om-switch .sw::after{content:'';position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#F7F3EC;transition:transform .2s}
+#otsMenu .om-switch[aria-checked="true"] .sw{background:#1E9E5A}
+#otsMenu .om-switch[aria-checked="true"] .sw::after{transform:translateX(18px)}
+html[dir="rtl"] #otsMenu .om-switch[aria-checked="true"] .sw::after{transform:translateX(-18px)}
+html[dir="rtl"] #otsMenu .om-switch .sw::after{left:auto;right:3px}
 #otsMenu .om-it[hidden]{display:none}
 #fabMain.om-open{transform:rotate(45deg)}
 @media (max-width:900px){
@@ -125,6 +131,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   <h5>This scene</h5>
   <div class="om-grid">
     <button class="om-it wide" type="button" data-a="told"><span class="ic">⚖️</span><span>What they told you vs. the record</span></button>
+    <button class="om-it wide om-switch" type="button" data-a="trauto" role="switch" aria-checked="true"><span class="ic">🔁</span><span>Open it at the start of every scene</span><span class="sw" aria-hidden="true"></span></button>
     <button class="om-it" type="button" data-a="sources"><span class="ic">📄</span><span>Sources</span></button>
     <button class="om-it" type="button" data-a="key"><span class="ic">🎨</span><span>What the colors mean</span></button>
   </div>
@@ -170,7 +177,8 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
       try{ m = !!(window.mapForCurrent && window.mapForCurrent()); }catch(e){}
       menu.querySelector('[data-a="dash"]').hidden = !d;
       menu.querySelector('[data-a="map"]').hidden = !m;
-      menu.querySelector('[data-a="eleven"]').hidden = lang() !== 'en';   /* Eleven Minutes is written in English */
+      menu.querySelector('[data-a="eleven"]').hidden = lang() !== 'en';
+      try{ menu.querySelector('[data-a="trauto"]').setAttribute('aria-checked', window.otsToldAuto && window.otsToldAuto() ? 'true' : 'false'); }catch(e){}   /* Eleven Minutes is written in English */
       try{ if(window.localizeUI) window.localizeUI(menu); }catch(e){}
     }
     menu.classList.toggle('on', open); back.classList.toggle('on', open);
@@ -197,6 +205,10 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   };
   menu.addEventListener('click', function(e){
     var b = e.target.closest('[data-a]'); if(!b) return;
+    if(b.getAttribute('data-a') === 'trauto'){   /* a switch: flips in place, the menu stays open */
+      var on = !(window.otsToldAuto && window.otsToldAuto()); if(window.otsToldAuto) window.otsToldAuto(on);
+      b.setAttribute('aria-checked', on ? 'true' : 'false'); return;
+    }
     otsMenu(false); var f = ACT[b.getAttribute('data-a')]; if(f) setTimeout(f, 120);
   });
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && menu.classList.contains('on')) otsMenu(false); });
@@ -246,7 +258,7 @@ s = s.replace('</body>', BLOCK + '</body>')
 
 # ---------------------------------------------------------------- translations
 ES = {
- 'Follow': 'Seguir', 'The welcome briefing: the key facts': 'La bienvenida: los datos clave',
+ 'Follow': 'Seguir', 'Open it at the start of every scene': 'Abrirlo al inicio de cada escena', 'The welcome briefing: the key facts': 'La bienvenida: los datos clave',
  'Scene by scene. Tap a card to read it, then press Next.': 'Escena por escena. Toca una tarjeta para leerla y luego pulsa Siguiente.',
  'Tap a numbered card to read its detail and sources.': 'Toca una tarjeta numerada para leer el detalle y las fuentes.',
  'Menu': 'Menú', 'Explore': 'Explorar', 'Chapters': 'Capítulos', 'Search': 'Buscar',
@@ -264,7 +276,7 @@ ES = {
  'Got it': 'Entendido',
 }
 AR = {
- 'Follow': 'تابِع', 'The welcome briefing: the key facts': 'شاشة الترحيب: الحقائق الأساسية',
+ 'Follow': 'تابِع', 'Open it at the start of every scene': 'افتحه في بداية كل مشهد', 'The welcome briefing: the key facts': 'شاشة الترحيب: الحقائق الأساسية',
  'Scene by scene. Tap a card to read it, then press Next.': 'مشهدًا بعد مشهد. اضغط على بطاقة لقراءتها، ثم اضغط «التالي».',
  'Tap a numbered card to read its detail and sources.': 'اضغط على بطاقة مرقّمة لقراءة تفاصيلها ومصادرها.',
  'Menu': 'القائمة', 'Explore': 'استكشف', 'Chapters': 'الفصول', 'Search': 'بحث',
