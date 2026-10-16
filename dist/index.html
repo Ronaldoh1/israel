@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!--LIBBOOT-START--><script>(function(){try{var v=JSON.parse(localStorage.getItem('ots_view')||'null');if(v!=='library'||(location.hash||'').replace('#','')||window.parent!==window)return;var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};var bg={sepia:'#E9DABF',night:'#141519'}[p.theme]||'#F3EDE1';var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);}catch(e){}})();</script><style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#F3EDE1) !important}html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#F3EDE1)}</style><!--LIBBOOT-END-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="An interactive, fully cited simulation of the Israel architecture, 1189–2026: 833 scenes, 59 chapters, 3,079 citations, 628 FAQs, 9 data dashboards, 16 architecture maps, and 46 code scenes — in English, Spanish, and Arabic. What you were taught, side by side with the record — and the talking points, checked. Free, no signup.">
@@ -6832,14 +6832,21 @@ body.book-open #libBanner{display:none}
   (function(){ var t = $('tourOverlay'); if(!t || !window.MutationObserver) return;
     new MutationObserver(function(){ if(t.classList.contains('active') && document.body.classList.contains('book-open')) t.classList.remove('active'); }).observe(t, {attributes:true, attributeFilter:['class']}); })();
   /* arrive in the view the reader used last (a link to a scene, dashboard, map or Eleven Minutes still wins) */
-  window.addEventListener('load', function(){ setTimeout(function(){
-    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return;
-    if((location.hash || '').replace('#', '')) return;
-    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
-    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
-    window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
-    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
-  }, 650); });
+  /* opens as soon as the page is parsed; the cover from <!--LIBBOOT--> hides everything until the library shows */
+  function libBootDone(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.documentElement.classList.remove('ots-lib-boot'); }); }); }
+  function libBoot(){
+    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return libBootDone();
+    if((location.hash || '').replace('#', '')) return libBootDone();
+    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return libBootDone();
+    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return libBootDone(); }catch(e){}
+    window.__bookOpening = true;
+    try{ var w = $('welcomeOverlay'); if(shown(w) && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
+    window.__bookOpening = false;
+    try{ openBook(null); }catch(e){}
+    libBootDone();
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(libBoot, 0); });
+  else setTimeout(libBoot, 0);
 })();
 </script>
 <!--BOOK-END-->
