@@ -32,6 +32,7 @@ swap('''      <div class="walkbar" title="Step through this scene's events one b
       </div>''',
 '''      <div class="walkbar" role="group" aria-label="Cards in this scene">
         <button class="wbtn" id="walkPrev" onclick="walkStep(-1)" disabled aria-label="Previous card">◂</button>
+        <button type="button" class="wplay" id="walkPlay" onclick="walkStep(1)"><span class="pi" aria-hidden="true">▶</span><span>Play scene</span></button>
         <span class="wpos"><span id="walkTxt">Cards</span><span class="wl-raw" hidden><span id="walkPos">—</span>/<span id="walkTotal">0</span></span></span>
         <button class="wbtn" id="walkNext" onclick="walkStep(1)" aria-label="Next card">▸</button>
       </div>''')
@@ -91,6 +92,13 @@ footer .walkbar .wbtn{width:42px !important;height:38px !important;border-radius
 footer .walkbar .wbtn:disabled{opacity:.35}
 footer .walkbar .wpos{min-width:104px !important;font:800 14px/1.1 Inter,system-ui,sans-serif !important;color:var(--cream) !important;text-align:center;white-space:nowrap}
 @media (min-width:901px){ .fab-wrap{bottom:calc(var(--uxFootH,72px) + 16px) !important;right:22px !important} #otsMenu{bottom:calc(var(--uxFootH,72px) + 78px) !important;max-height:calc(100vh - var(--uxFootH,72px) - 110px) !important} }
+footer .walkbar .wplay{display:none;align-items:center;justify-content:center;gap:10px;min-height:38px;padding:0 20px;border:0;border-radius:8px;background:var(--gold);color:#0B1530;font:800 15px/1 Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap;box-shadow:0 0 0 0 rgba(240,192,64,.6);animation:wpPulse 2.2s ease-in-out 3}
+footer .walkbar .wplay .pi{font-size:13px}
+footer .walkbar.idle .wplay{display:inline-flex}
+footer .walkbar.idle .wbtn,footer .walkbar.idle .wpos{display:none !important}
+footer:has(.walkbar.idle) #btnNext{background:transparent !important;color:var(--cream) !important;border-color:rgba(240,192,64,.75) !important;box-shadow:none}
+@keyframes wpPulse{0%,100%{box-shadow:0 0 0 0 rgba(240,192,64,.55)}50%{box-shadow:0 0 0 10px rgba(240,192,64,0)}}
+@media (prefers-reduced-motion:reduce){footer .walkbar .wplay{animation:none}}
 /* larger card numbers */
 .entity .badge{width:30px !important;height:30px !important;font-size:14px !important;top:-12px !important;left:-12px !important;border-width:2.5px !important;box-shadow:0 2px 8px rgba(0,0,0,.45)}
 .entity.focused .badge{background:#fff !important;transform:scale(1.08)}
@@ -104,6 +112,7 @@ footer .walkbar .wpos{min-width:104px !important;font:800 14px/1.1 Inter,system-
   footer{grid-template-columns:1fr 1fr !important;grid-template-areas:"scrub scrub" "walk walk" "prev next" !important;gap:8px !important}
   footer .brand{display:none !important}
   footer .walkbar{justify-content:space-between}
+  footer .walkbar .wplay{width:100%;min-height:42px;font-size:16px}
   footer .walkbar .wbtn{width:56px !important;height:42px !important}
   #btnPrev,#btnNext{width:100%;padding:0 10px !important;font-size:14.5px !important}
   .narration{padding-bottom:12px !important;padding-inline-end:84px !important}
@@ -161,6 +170,8 @@ footer .walkbar .wpos{min-width:104px !important;font:800 14px/1.1 Inter,system-
   window.updateWalkControls = function(){
     origUpdate.apply(this, arguments);
     var n = (S[cur] && S[cur].ents || []).length, i = walkIndex;
+    var wb = document.querySelector('footer .walkbar'); if(wb) wb.classList.toggle('idle', i < 0 && n > 0);
+    var pl = $('walkPlay'); if(pl) pl.setAttribute('aria-label', tr('Play scene') + ' · ' + tr('{t} cards').replace('{t}', n));
     $('walkTxt').textContent = i < 0 ? tr('{t} cards').replace('{t}', n) : tr('Card {n} of {t}').replace('{n}', i + 1).replace('{t}', n);
     var mp = $('mwPos'); if(mp) mp.textContent = i < 0 ? '' : (i + 1) + ' / ' + n;
     var pv = $('mwPrev'), nx = $('mwNext');
@@ -231,14 +242,14 @@ assert s.count('</body>') == 1
 s = s.replace('</body>', BLOCK + '</body>')
 
 ES = {
- '◂ Previous scene': '◂ Escena anterior', 'Next scene ▸': 'Escena siguiente ▸', 'Cards': 'Tarjetas',
+ 'Play scene': 'Reproducir escena', '◂ Previous scene': '◂ Escena anterior', 'Next scene ▸': 'Escena siguiente ▸', 'Cards': 'Tarjetas',
  '{t} cards': '{t} tarjetas', 'Card {n} of {t}': 'Tarjeta {n} de {t}', '◂ Previous card': '◂ Tarjeta anterior', 'Next card ▸': 'Tarjeta siguiente ▸',
  'Previous card': 'Tarjeta anterior', 'Next card': 'Tarjeta siguiente', 'Cards in this scene': 'Tarjetas de esta escena',
  'What they told you': 'Lo que te dijeron', 'What the record shows': 'Lo que muestra el registro',
  'Show this when each scene opens': 'Mostrar esto al abrir cada escena', 'Explore this scene': 'Explorar esta escena',
 }
 AR = {
- '◂ Previous scene': 'المشهد السابق ▸', 'Next scene ▸': '◂ المشهد التالي', 'Cards': 'البطاقات',
+ 'Play scene': 'شغّل المشهد', '◂ Previous scene': 'المشهد السابق ▸', 'Next scene ▸': '◂ المشهد التالي', 'Cards': 'البطاقات',
  '{t} cards': '{t} بطاقات', 'Card {n} of {t}': 'البطاقة {n} من {t}', '◂ Previous card': 'البطاقة السابقة ▸', 'Next card ▸': '◂ البطاقة التالية',
  'Previous card': 'البطاقة السابقة', 'Next card': 'البطاقة التالية', 'Cards in this scene': 'بطاقات هذا المشهد',
  'What they told you': 'ما قيل لك', 'What the record shows': 'ما يُظهره السجل',

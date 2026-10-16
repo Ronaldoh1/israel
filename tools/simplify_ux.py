@@ -146,7 +146,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
 <div id="otsCoach" role="dialog" aria-label="How to read this" aria-hidden="true">
   <h4>How to read this</h4>
   <ol>
-    <li><span class="n">1</span><span>Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.</span></li>
+    <li><span class="n">1</span><span>Press ▶ Play scene to go through the cards in order, or tap any card.</span></li>
     <li><span class="n">2</span><span><span class="only-d">Press Next scene to move on.</span><span class="only-m">Press Next scene, or swipe, to move on.</span></span></li>
     <li><span class="n">3</span><span>Everything else is under this button:<span class="plus" aria-hidden="true">+</span></span></li>
   </ol>
@@ -256,7 +256,7 @@ ES = {
  'How it works': 'Cómo funciona', 'Common questions': 'Preguntas frecuentes', 'The 11-Minute Story: how it happened': 'La historia en 11 minutos: cómo ocurrió',
  'Language': 'Idioma', 'Back to Sophia': 'Volver a Sophia', 'Close': 'Cerrar',
  'How to read this': 'Cómo leer esto',
- 'Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.': 'Toca cualquier tarjeta numerada, o recórrelas en orden con las flechas ◂ ▸ de Tarjeta.',
+ 'Press ▶ Play scene to go through the cards in order, or tap any card.': 'Pulsa ▶ Reproducir escena para recorrer las tarjetas en orden, o toca cualquier tarjeta.',
  'What they told you vs. the record': 'Lo que te dijeron vs. el registro',
  'Press Next scene to move on.': 'Pulsa Escena siguiente para avanzar.',
  'Press Next scene, or swipe, to move on.': 'Pulsa Escena siguiente, o desliza, para avanzar.',
@@ -274,7 +274,7 @@ AR = {
  'How it works': 'كيف يعمل', 'Common questions': 'الأسئلة الشائعة', 'The 11-Minute Story: how it happened': 'القصة في 11 دقيقة: كيف حدث ذلك',
  'Language': 'اللغة', 'Back to Sophia': 'العودة إلى صوفيا', 'Close': 'إغلاق',
  'How to read this': 'كيف تقرأ هذا',
- 'Tap any numbered card, or go through them in order with the Card ◂ ▸ arrows.': 'اضغط على أي بطاقة مرقّمة، أو تنقّل بينها بالترتيب بأسهم البطاقة ◂ ▸.',
+ 'Press ▶ Play scene to go through the cards in order, or tap any card.': 'اضغط ▶ شغّل المشهد لتتنقّل بين البطاقات بالترتيب، أو اضغط على أي بطاقة.',
  'What they told you vs. the record': 'ما قيل لك مقابل السجل',
  'Press Next scene to move on.': 'اضغط «المشهد التالي» للمتابعة.',
  'Press Next scene, or swipe, to move on.': 'اضغط «المشهد التالي» أو اسحب للمتابعة.',
