@@ -13,6 +13,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'sophia.html'); OUT = os.path.join(ROOT, 'dist', 'sophia.html')
 FFLATE = open(os.path.join(ROOT, 'tools', 'vendor', 'fflate-0.8.2.min.js'), encoding='utf-8').read()
 
+# refresh the real per-module scene/entity counts the card faces show (tools/count_entities.py)
+import subprocess
+subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'count_entities.py')], check=True)
+
 s = open(SRC, encoding='utf-8').read()
 OLD_DEC = """    const bin = atob(el.textContent.trim());
     const bytes = new Uint8Array(bin.length);
