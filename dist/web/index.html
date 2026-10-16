@@ -163,8 +163,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   gap:38px;position:relative;
 }
 .hero-logo{
-  width:min(920px,92vw);height:auto;display:block;
-  filter:drop-shadow(0 0 44px rgba(240,185,62,0.28));
+  width:min(920px,92vw);height:auto;display:block;overflow:visible;
   opacity:0;transform:translateY(14px);
   transition:all 0.9s var(--ease) 0.05s;
 }
@@ -1045,43 +1044,45 @@ button.pillar.reignite .pillar-go{color:var(--gold-hi)}
 <!-- ============ LANDING VIEW ============ -->
 <div class="view active" id="landingView">
   <section class="hero">
-    <svg class="hero-logo reveal" viewBox="0 0 1240 410" role="img" aria-label="Sophia — Observe. Collapse. Reignite." xmlns="http://www.w3.org/2000/svg">
+    <svg class="hero-logo reveal" viewBox="0 0 1240 410" role="img" aria-label="Sophia — Observe. Collapse. Reignite." xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
 <defs>
- <linearGradient id="sgV" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#FFF1BF"/><stop offset=".28" stop-color="#FFD25E"/><stop offset=".55" stop-color="#E9A72A"/>
-  <stop offset=".78" stop-color="#B9771A"/><stop offset="1" stop-color="#F6C35A"/></linearGradient>
- <linearGradient id="sgT" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#FFE9A0"/><stop offset=".2" stop-color="#F9C548"/><stop offset=".48" stop-color="#E39C25"/>
-  <stop offset=".5" stop-color="#BF7A16"/><stop offset=".78" stop-color="#D99325"/><stop offset="1" stop-color="#F7CE6A"/></linearGradient>
- <radialGradient id="sgR" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#FFF6D6"/><stop offset=".45" stop-color="#F2B640"/><stop offset="1" stop-color="#8E5A12"/></radialGradient>
- <linearGradient id="sgS" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9952A"/><stop offset="1" stop-color="#FFD873"/></linearGradient>
+ <linearGradient id="sgFace" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FFE7A1"/><stop offset=".18" stop-color="#FFD15A"/><stop offset=".45" stop-color="#F1AE30"/>
+  <stop offset=".5" stop-color="#D88E1E"/><stop offset=".78" stop-color="#E9A433"/><stop offset="1" stop-color="#FFD873"/></linearGradient>
+ <linearGradient id="sgSheen" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset=".32" stop-color="#FFFFFF" stop-opacity=".12"/><stop offset=".46" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+ <linearGradient id="sgRing" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FFF0BC"/><stop offset=".3" stop-color="#FFCF55"/><stop offset=".55" stop-color="#E29A24"/>
+  <stop offset=".8" stop-color="#B36F14"/><stop offset="1" stop-color="#F5C35A"/></linearGradient>
+ <linearGradient id="sgPetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE59A"/><stop offset=".5" stop-color="#E3A12E"/><stop offset="1" stop-color="#FFD873"/></linearGradient>
+ <radialGradient id="sgBall" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#FFF6D6"/><stop offset=".45" stop-color="#F2B640"/><stop offset="1" stop-color="#8E5A12"/></radialGradient>
+ <radialGradient id="sgGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F0B93E" stop-opacity=".22"/><stop offset=".6" stop-color="#F0B93E" stop-opacity=".07"/><stop offset="1" stop-color="#F0B93E" stop-opacity="0"/></radialGradient>
  <clipPath id="sgClip"><circle cx="200" cy="200" r="134"/></clipPath>
- <filter id="sgBevel" x="-5%" y="-5%" width="110%" height="115%">
-  <feGaussianBlur in="SourceAlpha" stdDeviation="1.6" result="b"/>
-  <feSpecularLighting in="b" surfaceScale="3" specularConstant=".85" specularExponent="22" lighting-color="#FFF6DA" result="s">
-   <feDistantLight azimuth="235" elevation="48"/></feSpecularLighting>
-  <feComposite in="s" in2="SourceAlpha" operator="in" result="s2"/>
-  <feComposite in="SourceGraphic" in2="s2" operator="arithmetic" k1="0" k2="1" k3=".38" k4="0"/>
- </filter>
- <filter id="sgDrop" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000" flood-opacity=".55"/></filter>
 </defs>
-<g filter="url(#sgDrop)">
- <g filter="url(#sgBevel)">
-  <line x1="352.0" y1="200.0" x2="378.0" y2="200.0" stroke="url(#sgV)" stroke-width="7" stroke-linecap="round"/><circle cx="364.0" cy="200.0" r="8.5" fill="url(#sgR)"/><circle cx="378.0" cy="200.0" r="11" fill="url(#sgR)"/><line x1="200.0" y1="352.0" x2="200.0" y2="378.0" stroke="url(#sgV)" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="364.0" r="8.5" fill="url(#sgR)"/><circle cx="200.0" cy="378.0" r="11" fill="url(#sgR)"/><line x1="48.0" y1="200.0" x2="22.0" y2="200.0" stroke="url(#sgV)" stroke-width="7" stroke-linecap="round"/><circle cx="36.0" cy="200.0" r="8.5" fill="url(#sgR)"/><circle cx="22.0" cy="200.0" r="11" fill="url(#sgR)"/><line x1="200.0" y1="48.0" x2="200.0" y2="22.0" stroke="url(#sgV)" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="36.0" r="8.5" fill="url(#sgR)"/><circle cx="200.0" cy="22.0" r="11" fill="url(#sgR)"/>
-  <circle cx="200" cy="200" r="148" fill="none" stroke="url(#sgV)" stroke-width="9"/>
-  <circle cx="200" cy="200" r="136" fill="none" stroke="url(#sgV)" stroke-width="3"/>
-  <g clip-path="url(#sgClip)" fill="none" stroke="url(#sgS)" stroke-width="3.6"><circle cx="68.0" cy="123.79" r="44"/><circle cx="68.0" cy="200.0" r="44"/><circle cx="68.0" cy="276.21" r="44"/><circle cx="90.0" cy="161.89" r="44"/><circle cx="90.0" cy="238.11" r="44"/><circle cx="112.0" cy="123.79" r="44"/><circle cx="112.0" cy="200.0" r="44"/><circle cx="112.0" cy="276.21" r="44"/><circle cx="134.0" cy="85.68" r="44"/><circle cx="134.0" cy="161.89" r="44"/><circle cx="134.0" cy="238.11" r="44"/><circle cx="134.0" cy="314.32" r="44"/><circle cx="156.0" cy="123.79" r="44"/><circle cx="156.0" cy="200.0" r="44"/><circle cx="156.0" cy="276.21" r="44"/><circle cx="178.0" cy="85.68" r="44"/><circle cx="178.0" cy="161.89" r="44"/><circle cx="178.0" cy="238.11" r="44"/><circle cx="178.0" cy="314.32" r="44"/><circle cx="200.0" cy="47.58" r="44"/><circle cx="200.0" cy="123.79" r="44"/><circle cx="200.0" cy="200.0" r="44"/><circle cx="200.0" cy="276.21" r="44"/><circle cx="200.0" cy="352.42" r="44"/><circle cx="222.0" cy="85.68" r="44"/><circle cx="222.0" cy="161.89" r="44"/><circle cx="222.0" cy="238.11" r="44"/><circle cx="222.0" cy="314.32" r="44"/><circle cx="244.0" cy="123.79" r="44"/><circle cx="244.0" cy="200.0" r="44"/><circle cx="244.0" cy="276.21" r="44"/><circle cx="266.0" cy="85.68" r="44"/><circle cx="266.0" cy="161.89" r="44"/><circle cx="266.0" cy="238.11" r="44"/><circle cx="266.0" cy="314.32" r="44"/><circle cx="288.0" cy="123.79" r="44"/><circle cx="288.0" cy="200.0" r="44"/><circle cx="288.0" cy="276.21" r="44"/><circle cx="310.0" cy="161.89" r="44"/><circle cx="310.0" cy="238.11" r="44"/><circle cx="332.0" cy="123.79" r="44"/><circle cx="332.0" cy="200.0" r="44"/><circle cx="332.0" cy="276.21" r="44"/></g>
-  <circle cx="200" cy="200" r="136" fill="none" stroke="url(#sgV)" stroke-width="3"/>
-  <text x="200" y="266" text-anchor="middle" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" fill="#4A2C06" transform="translate(0 5)">&#931;</text>
-  <text x="200" y="266" text-anchor="middle" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196"
-        fill="url(#sgT)" stroke="#6E430C" stroke-width="3" paint-order="stroke">&#931;</text>
-  <text x="400" y="262" transform="translate(0 6)" fill="#4A2C06" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2">Sophia</text>
-  <text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2"
-        fill="url(#sgT)" stroke="#6E430C" stroke-width="3" paint-order="stroke">Sophia</text>
+<ellipse cx="640" cy="205" rx="640" ry="230" fill="url(#sgGlow)"/>
+<g>
+ <line x1="352.0" y1="205.0" x2="378.0" y2="205.0" stroke="#3B2205" stroke-width="7" stroke-linecap="round"/><circle cx="364.0" cy="205.0" r="8.5" fill="#3B2205"/><circle cx="378.0" cy="205.0" r="11" fill="#3B2205"/><line x1="200.0" y1="357.0" x2="200.0" y2="383.0" stroke="#3B2205" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="369.0" r="8.5" fill="#3B2205"/><circle cx="200.0" cy="383.0" r="11" fill="#3B2205"/><line x1="48.0" y1="205.0" x2="22.0" y2="205.0" stroke="#3B2205" stroke-width="7" stroke-linecap="round"/><circle cx="36.0" cy="205.0" r="8.5" fill="#3B2205"/><circle cx="22.0" cy="205.0" r="11" fill="#3B2205"/><line x1="200.0" y1="53.0" x2="200.0" y2="27.0" stroke="#3B2205" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="41.0" r="8.5" fill="#3B2205"/><circle cx="200.0" cy="27.0" r="11" fill="#3B2205"/>
+ <circle cx="200" cy="205" r="148" fill="none" stroke="#3B2205" stroke-width="10"/>
+ <circle cx="200" cy="200" r="148" fill="#0C1633"/>
+ <line x1="352.0" y1="200.0" x2="378.0" y2="200.0" stroke="url(#sgRing)" stroke-width="7" stroke-linecap="round"/><circle cx="364.0" cy="200.0" r="8.5" fill="url(#sgBall)"/><circle cx="378.0" cy="200.0" r="11" fill="url(#sgBall)"/><line x1="200.0" y1="352.0" x2="200.0" y2="378.0" stroke="url(#sgRing)" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="364.0" r="8.5" fill="url(#sgBall)"/><circle cx="200.0" cy="378.0" r="11" fill="url(#sgBall)"/><line x1="48.0" y1="200.0" x2="22.0" y2="200.0" stroke="url(#sgRing)" stroke-width="7" stroke-linecap="round"/><circle cx="36.0" cy="200.0" r="8.5" fill="url(#sgBall)"/><circle cx="22.0" cy="200.0" r="11" fill="url(#sgBall)"/><line x1="200.0" y1="48.0" x2="200.0" y2="22.0" stroke="url(#sgRing)" stroke-width="7" stroke-linecap="round"/><circle cx="200.0" cy="36.0" r="8.5" fill="url(#sgBall)"/><circle cx="200.0" cy="22.0" r="11" fill="url(#sgBall)"/>
+ <circle cx="200" cy="200" r="148" fill="none" stroke="url(#sgRing)" stroke-width="9"/>
+ <circle cx="200" cy="200" r="144.5" fill="none" stroke="#FFF3C8" stroke-opacity=".55" stroke-width="1.2"/>
+ <g clip-path="url(#sgClip)" fill="none">
+  <g stroke="#3B2205" stroke-opacity=".55" stroke-width="3.6" transform="translate(0 2)"><circle cx="68.0" cy="123.79" r="44"/><circle cx="68.0" cy="200.0" r="44"/><circle cx="68.0" cy="276.21" r="44"/><circle cx="90.0" cy="161.89" r="44"/><circle cx="90.0" cy="238.11" r="44"/><circle cx="112.0" cy="123.79" r="44"/><circle cx="112.0" cy="200.0" r="44"/><circle cx="112.0" cy="276.21" r="44"/><circle cx="134.0" cy="85.68" r="44"/><circle cx="134.0" cy="161.89" r="44"/><circle cx="134.0" cy="238.11" r="44"/><circle cx="134.0" cy="314.32" r="44"/><circle cx="156.0" cy="123.79" r="44"/><circle cx="156.0" cy="200.0" r="44"/><circle cx="156.0" cy="276.21" r="44"/><circle cx="178.0" cy="85.68" r="44"/><circle cx="178.0" cy="161.89" r="44"/><circle cx="178.0" cy="238.11" r="44"/><circle cx="178.0" cy="314.32" r="44"/><circle cx="200.0" cy="47.58" r="44"/><circle cx="200.0" cy="123.79" r="44"/><circle cx="200.0" cy="200.0" r="44"/><circle cx="200.0" cy="276.21" r="44"/><circle cx="200.0" cy="352.42" r="44"/><circle cx="222.0" cy="85.68" r="44"/><circle cx="222.0" cy="161.89" r="44"/><circle cx="222.0" cy="238.11" r="44"/><circle cx="222.0" cy="314.32" r="44"/><circle cx="244.0" cy="123.79" r="44"/><circle cx="244.0" cy="200.0" r="44"/><circle cx="244.0" cy="276.21" r="44"/><circle cx="266.0" cy="85.68" r="44"/><circle cx="266.0" cy="161.89" r="44"/><circle cx="266.0" cy="238.11" r="44"/><circle cx="266.0" cy="314.32" r="44"/><circle cx="288.0" cy="123.79" r="44"/><circle cx="288.0" cy="200.0" r="44"/><circle cx="288.0" cy="276.21" r="44"/><circle cx="310.0" cy="161.89" r="44"/><circle cx="310.0" cy="238.11" r="44"/><circle cx="332.0" cy="123.79" r="44"/><circle cx="332.0" cy="200.0" r="44"/><circle cx="332.0" cy="276.21" r="44"/></g>
+  <g stroke="url(#sgPetal)" stroke-width="3.2"><circle cx="68.0" cy="123.79" r="44"/><circle cx="68.0" cy="200.0" r="44"/><circle cx="68.0" cy="276.21" r="44"/><circle cx="90.0" cy="161.89" r="44"/><circle cx="90.0" cy="238.11" r="44"/><circle cx="112.0" cy="123.79" r="44"/><circle cx="112.0" cy="200.0" r="44"/><circle cx="112.0" cy="276.21" r="44"/><circle cx="134.0" cy="85.68" r="44"/><circle cx="134.0" cy="161.89" r="44"/><circle cx="134.0" cy="238.11" r="44"/><circle cx="134.0" cy="314.32" r="44"/><circle cx="156.0" cy="123.79" r="44"/><circle cx="156.0" cy="200.0" r="44"/><circle cx="156.0" cy="276.21" r="44"/><circle cx="178.0" cy="85.68" r="44"/><circle cx="178.0" cy="161.89" r="44"/><circle cx="178.0" cy="238.11" r="44"/><circle cx="178.0" cy="314.32" r="44"/><circle cx="200.0" cy="47.58" r="44"/><circle cx="200.0" cy="123.79" r="44"/><circle cx="200.0" cy="200.0" r="44"/><circle cx="200.0" cy="276.21" r="44"/><circle cx="200.0" cy="352.42" r="44"/><circle cx="222.0" cy="85.68" r="44"/><circle cx="222.0" cy="161.89" r="44"/><circle cx="222.0" cy="238.11" r="44"/><circle cx="222.0" cy="314.32" r="44"/><circle cx="244.0" cy="123.79" r="44"/><circle cx="244.0" cy="200.0" r="44"/><circle cx="244.0" cy="276.21" r="44"/><circle cx="266.0" cy="85.68" r="44"/><circle cx="266.0" cy="161.89" r="44"/><circle cx="266.0" cy="238.11" r="44"/><circle cx="266.0" cy="314.32" r="44"/><circle cx="288.0" cy="123.79" r="44"/><circle cx="288.0" cy="200.0" r="44"/><circle cx="288.0" cy="276.21" r="44"/><circle cx="310.0" cy="161.89" r="44"/><circle cx="310.0" cy="238.11" r="44"/><circle cx="332.0" cy="123.79" r="44"/><circle cx="332.0" cy="200.0" r="44"/><circle cx="332.0" cy="276.21" r="44"/></g>
  </g>
- <g fill="url(#sgV)">
+ <circle cx="200" cy="200" r="136" fill="none" stroke="url(#sgRing)" stroke-width="3"/>
+ <text x="200" y="266" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" text-anchor="middle" fill="#000" fill-opacity=".35" transform="translate(0 12)">&#931;</text><text x="200" y="266" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" text-anchor="middle" fill="#3B2205" transform="translate(0 6)">&#931;</text><text x="200" y="266" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" text-anchor="middle" fill="#7A4A0E" transform="translate(0 3)">&#931;</text><text x="200" y="266" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" text-anchor="middle" fill="url(#sgFace)" stroke="#5A3608" stroke-width="2" paint-order="stroke">&#931;</text><text x="200" y="266" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="196" text-anchor="middle" fill="url(#sgSheen)">&#931;</text>
+ <text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2" fill="#000" fill-opacity=".35" transform="translate(0 12)">Sophia</text><text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2" fill="#3B2205" transform="translate(0 6)">Sophia</text><text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2" fill="#7A4A0E" transform="translate(0 3)">Sophia</text><text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2" fill="url(#sgFace)" stroke="#5A3608" stroke-width="2" paint-order="stroke">Sophia</text><text x="400" y="262" font-family="'Playfair Display','EB Garamond',Georgia,serif" font-weight="800" font-size="236" letter-spacing="-2" fill="url(#sgSheen)">Sophia</text>
+</g>
+<g font-family="'EB Garamond',Georgia,serif" font-weight="700" font-size="40">
+ <g fill="#3B2205" transform="translate(0 3)">
   <rect x="404" y="337" width="64" height="5" rx="2.5"/><rect x="1132" y="337" width="64" height="5" rx="2.5"/>
-  <text x="800" y="352" text-anchor="middle" textLength="640" lengthAdjust="spacingAndGlyphs" font-family="'EB Garamond',Georgia,serif" font-weight="700" font-size="40">OBSERVE  ·  COLLAPSE  ·  REIGNITE</text>
+  <text x="800" y="352" text-anchor="middle" textLength="640" lengthAdjust="spacingAndGlyphs">OBSERVE  ·  COLLAPSE  ·  REIGNITE</text>
+ </g>
+ <g fill="url(#sgRing)">
+  <rect x="404" y="337" width="64" height="5" rx="2.5"/><rect x="1132" y="337" width="64" height="5" rx="2.5"/>
+  <text x="800" y="352" text-anchor="middle" textLength="640" lengthAdjust="spacingAndGlyphs">OBSERVE  ·  COLLAPSE  ·  REIGNITE</text>
  </g>
 </g>
 </svg>
