@@ -80,6 +80,10 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
 #otsMenu .om-it:hover,#otsMenu .om-it:focus-visible{background:rgba(240,192,64,.14);border-color:rgba(240,192,64,.7);outline:none}
 #otsMenu .om-it .ic{font-size:22px;line-height:1;flex:none}
 #otsMenu .om-it.wide{grid-column:1 / -1}
+#otsMenu .om-lib{background:linear-gradient(135deg,#7A2418 0%,#5A1810 60%,#45120C 100%);border:1.5px solid #D4A53A;color:#F7E7C4;min-height:62px;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+#otsMenu .om-lib span small{display:block;font:600 12.5px/1.3 Inter,system-ui,sans-serif;color:#E9C98A;margin-top:3px}
+#otsMenu .om-lib .ic{font-size:26px}
+#otsMenu .om-lib:hover,#otsMenu .om-lib:focus-visible{background:linear-gradient(135deg,#8C2B1D 0%,#661C13 60%,#4E150E 100%);border-color:#F0C040}
 #otsMenu .om-it[hidden]{display:none}
 #fabMain.om-open{transform:rotate(45deg)}
 @media (max-width:900px){
@@ -126,10 +130,10 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   <div class="om-head"><div class="om-title">Menu</div><button class="om-x" type="button" onclick="otsMenu(false)" aria-label="Close">✕</button></div>
   <h5>Explore</h5>
   <div class="om-grid">
-    <button class="om-it" type="button" data-a="chapters"><span class="ic">📚</span><span>Chapters</span></button>
+    <button class="om-it wide om-lib" type="button" data-a="book"><span class="ic">📚</span><span>Library View<small>See the books that are ready</small></span></button>
+    <button class="om-it" type="button" data-a="chapters"><span class="ic">🗂️</span><span>Chapters</span></button>
     <button class="om-it" type="button" data-a="search"><span class="ic">🔍</span><span>Search</span></button>
-    <button class="om-it" type="button" data-a="guide"><span class="ic">🧭</span><span>Walk me through this scene</span></button>
-    <button class="om-it" type="button" data-a="book"><span class="ic">📖</span><span>Read it as a book</span></button>
+    <button class="om-it wide" type="button" data-a="guide"><span class="ic">🧭</span><span>Walk me through this scene</span></button>
     <button class="om-it" type="button" data-a="dash" hidden><span class="ic">📊</span><span>Dashboard</span></button>
     <button class="om-it" type="button" data-a="map" hidden><span class="ic">🗺️</span><span>Architecture map</span></button>
   </div>
@@ -261,7 +265,7 @@ ES = {
  'Scene by scene. Tap a card to read it, then press Next.': 'Escena por escena. Toca una tarjeta para leerla y luego pulsa Siguiente.',
  'Tap a numbered card to read its detail and sources.': 'Toca una tarjeta numerada para leer el detalle y las fuentes.',
  'Menu': 'Menú', 'Explore': 'Explorar', 'Chapters': 'Capítulos', 'Search': 'Buscar',
- 'Walk me through this scene': 'Recórreme esta escena', 'Read it as a book': 'Léelo como libro',
+ 'Walk me through this scene': 'Recórreme esta escena', 'Library View': 'Vista de biblioteca', 'See the books that are ready': 'Mira los libros disponibles',
  'Dashboard': 'Panel de datos', 'Architecture map': 'Mapa de la arquitectura', 'This scene': 'Esta escena',
  'Sources': 'Fuentes', 'What the colors mean': 'Qué significan los colores', 'Help and more': 'Ayuda y más',
  'How it works': 'Cómo funciona', 'Common questions': 'Preguntas frecuentes', 'The 11-Minute Story: how it happened': 'La historia en 11 minutos: cómo ocurrió',
@@ -279,7 +283,7 @@ AR = {
  'Scene by scene. Tap a card to read it, then press Next.': 'مشهدًا بعد مشهد. اضغط على بطاقة لقراءتها، ثم اضغط «التالي».',
  'Tap a numbered card to read its detail and sources.': 'اضغط على بطاقة مرقّمة لقراءة تفاصيلها ومصادرها.',
  'Menu': 'القائمة', 'Explore': 'استكشف', 'Chapters': 'الفصول', 'Search': 'بحث',
- 'Walk me through this scene': 'اشرح لي هذا المشهد خطوة بخطوة', 'Read it as a book': 'اقرأه ككتاب',
+ 'Walk me through this scene': 'اشرح لي هذا المشهد خطوة بخطوة', 'Library View': 'عرض المكتبة', 'See the books that are ready': 'شاهد الكتب الجاهزة',
  'Dashboard': 'لوحة البيانات', 'Architecture map': 'خريطة البنية', 'This scene': 'هذا المشهد',
  'Sources': 'المصادر', 'What the colors mean': 'معنى الألوان', 'Help and more': 'المساعدة والمزيد',
  'How it works': 'كيف يعمل', 'Common questions': 'الأسئلة الشائعة', 'The 11-Minute Story: how it happened': 'القصة في 11 دقيقة: كيف حدث ذلك',
