@@ -124,9 +124,9 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   </div>
   <h5>Help and more</h5>
   <div class="om-grid">
+    <button class="om-it wide" type="button" data-a="eleven"><span class="ic">⏱️</span><span>The 11-Minute Story: how it happened</span></button>
     <button class="om-it" type="button" data-a="how"><span class="ic">❓</span><span>How it works</span></button>
     <button class="om-it" type="button" data-a="faq"><span class="ic">💬</span><span>Common questions</span></button>
-    <button class="om-it" type="button" data-a="eleven"><span class="ic">⏱️</span><span>Eleven Minutes intro</span></button>
     <button class="om-it" type="button" data-a="lang"><span class="ic">🌐</span><span>Language</span></button>
     <a class="om-it wide" href="https://awakenwithsophia.sophia13.workers.dev/"><span class="ic">🔮</span><span>Back to Sophia</span></a>
   </div>
@@ -236,7 +236,7 @@ ES = {
  'Walk me through this scene': 'Recórreme esta escena', 'Read it as a book': 'Léelo como libro',
  'Dashboard': 'Panel de datos', 'Architecture map': 'Mapa de la arquitectura', 'This scene': 'Esta escena',
  'Sources': 'Fuentes', 'What the colors mean': 'Qué significan los colores', 'Help and more': 'Ayuda y más',
- 'How it works': 'Cómo funciona', 'Common questions': 'Preguntas frecuentes', 'Eleven Minutes intro': 'Introducción: Once minutos',
+ 'How it works': 'Cómo funciona', 'Common questions': 'Preguntas frecuentes', 'The 11-Minute Story: how it happened': 'La historia en 11 minutos: cómo ocurrió',
  'Language': 'Idioma', 'Back to Sophia': 'Volver a Sophia', 'Close': 'Cerrar',
  'How to read this': 'Cómo leer esto',
  'Tap a numbered card to read who or what it is, with sources.': 'Toca una tarjeta numerada para saber quién o qué es, con sus fuentes.',
@@ -252,7 +252,7 @@ AR = {
  'Walk me through this scene': 'اشرح لي هذا المشهد خطوة بخطوة', 'Read it as a book': 'اقرأه ككتاب',
  'Dashboard': 'لوحة البيانات', 'Architecture map': 'خريطة البنية', 'This scene': 'هذا المشهد',
  'Sources': 'المصادر', 'What the colors mean': 'معنى الألوان', 'Help and more': 'المساعدة والمزيد',
- 'How it works': 'كيف يعمل', 'Common questions': 'الأسئلة الشائعة', 'Eleven Minutes intro': 'مقدمة: إحدى عشرة دقيقة',
+ 'How it works': 'كيف يعمل', 'Common questions': 'الأسئلة الشائعة', 'The 11-Minute Story: how it happened': 'القصة في 11 دقيقة: كيف حدث ذلك',
  'Language': 'اللغة', 'Back to Sophia': 'العودة إلى صوفيا', 'Close': 'إغلاق',
  'How to read this': 'كيف تقرأ هذا',
  'Tap a numbered card to read who or what it is, with sources.': 'اضغط على بطاقة مرقّمة لتعرف من هو أو ما هو، مع المصادر.',
