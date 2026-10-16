@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!--LIBBOOT-START--><script>(function(){try{var v=JSON.parse(localStorage.getItem('ots_view')||'null');if(v!=='library'||(location.hash||'').replace('#','')||window.parent!==window)return;var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};var bg={sepia:'#E9DABF',night:'#141519'}[p.theme]||'#F3EDE1';var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);}catch(e){}})();</script><style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#F3EDE1) !important}html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#F3EDE1)}</style><!--LIBBOOT-END-->
+<head><!--RETURN-START--><script>try{if(localStorage.getItem("ots_welcome_seen")||localStorage.getItem("ots_xp_chosen"))document.documentElement.classList.add("ots-skip-welcome");}catch(e){}</script><style>html.ots-skip-welcome #welcomeOverlay{display:none !important}</style><!--RETURN-END--><!--LIBBOOT-START--><script>(function(){try{var v=JSON.parse(localStorage.getItem('ots_view')||'null');if(v!=='library'||(location.hash||'').replace('#','')||window.parent!==window)return;var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};var bg={sepia:'#E9DABF',night:'#141519'}[p.theme]||'#F3EDE1';var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);}catch(e){}})();</script><style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#F3EDE1) !important}html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#F3EDE1)}</style><!--LIBBOOT-END-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="An interactive, fully cited simulation of the Israel architecture, 1189–2026: 833 scenes, 59 chapters, 3,079 citations, 628 FAQs, 9 data dashboards, 16 architecture maps, and 46 code scenes — in English, Spanish, and Arabic. What you were taught, side by side with the record — and the talking points, checked. Free, no signup.">
@@ -2465,6 +2465,7 @@ Object.assign(window, {
   function dismiss(){
     if(dismissed) return;
     dismissed = true;
+    try{ localStorage.setItem('ots_welcome_seen', '1'); }catch(e){}
     clearInterval(countdownTimer);
     var overlay = document.getElementById('welcomeOverlay');
     overlay.classList.add('fade-out');
@@ -2474,6 +2475,23 @@ Object.assign(window, {
     }, 750);
   }
   window.dismissWelcome = dismiss;
+
+  /* returning visitors: the welcome screen is hidden from the first paint (<!--RETURN--> in <head>);
+     go past it as if the red pill had been pressed, once every script has wrapped dismissWelcome */
+  if(document.documentElement.classList.contains('ots-skip-welcome')){
+    document.addEventListener('DOMContentLoaded', function(){ try{ window.dismissWelcome(); }catch(e){} });
+  }
+  /* + > The welcome briefing: bring the screen back; its red pill closes it as before */
+  var welcomeNode = document.getElementById('welcomeOverlay'), welcomeHome = welcomeNode && welcomeNode.parentNode;
+  window.__welcomeReopen = function(){
+    if(!welcomeNode || (document.getElementById('welcomeOverlay') && !dismissed)) return;
+    document.documentElement.classList.remove('ots-skip-welcome');
+    welcomeNode.classList.remove('fade-out'); welcomeNode.style.display = '';
+    if(!welcomeNode.parentNode) (welcomeHome || document.body).appendChild(welcomeNode);
+    welcomeNode.scrollTop = 0; dismissed = false;
+    clearInterval(matrixTimer); matrixTimer = setInterval(drawMatrix, 45);
+    try{ var b = document.getElementById('enterSimBtn'); if(b) b.focus({preventScroll:true}); }catch(e){}
+  };
 })();
 
 // ── ONBOARDING TOUR — SPOTLIGHT COACH MARKS ────────────────────────
@@ -7248,7 +7266,12 @@ body.book-open #libBanner{display:none}
   background:#0F1D42;color:#F7F3EC;border:1.5px solid rgba(240,192,64,.55);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.55);
   padding:14px 14px 16px;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .2s,transform .2s;-webkit-overflow-scrolling:touch}
 #otsMenu.on{opacity:1;transform:none;pointer-events:auto}
-#otsMenu .om-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 8px}
+#otsMenu .om-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 8px;position:sticky;top:-14px;margin-top:-14px;padding-top:16px;background:#0F1D42;z-index:2}
+#otsMenu .om-soc span small{display:block;font:600 11.5px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.7);margin-bottom:2px}
+#otsMenu .om-soc{font-size:14px;word-break:break-word}
+#otsMenu .om-soc .ic{width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;color:#fff;flex:none}
+#otsMenu .om-tt{background:linear-gradient(135deg,#25F4EE,#000 45%,#FE2C55)}
+#otsMenu .om-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
 #otsMenu .om-title{font:700 20px/1.2 'EB Garamond',Georgia,serif;color:#F0C040}
 #otsMenu .om-x{width:44px;height:44px;border-radius:50%;border:1px solid rgba(247,243,236,.25);background:transparent;color:#F7F3EC;font:400 22px/1 system-ui,sans-serif;cursor:pointer}
 #otsMenu h5{margin:12px 4px 6px;font:700 13px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.72);letter-spacing:.02em}
@@ -7265,7 +7288,7 @@ body.book-open #libBanner{display:none}
     padding:10px 14px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(100%)}
   #otsMenu.on{transform:none}
   #otsMenu .om-head::before{content:'';position:absolute;left:50%;top:8px;width:44px;height:5px;margin-left:-22px;border-radius:3px;background:rgba(247,243,236,.3)}
-  #otsMenu .om-head{padding-top:12px;padding-bottom:2px}
+  #otsMenu .om-head{padding-top:20px;padding-bottom:4px;top:-10px;margin-top:-10px}
   #otsMenu h5{margin:8px 4px 5px}
   #otsMenu .om-it{min-height:50px;padding:8px 10px;font-size:14.5px}
   #otsMenu .om-it .ic{font-size:20px}
@@ -7305,9 +7328,15 @@ body.book-open #libBanner{display:none}
     <button class="om-it" type="button" data-a="sources"><span class="ic">📄</span><span>Sources</span></button>
     <button class="om-it" type="button" data-a="key"><span class="ic">🎨</span><span>What the colors mean</span></button>
   </div>
+  <h5>Follow</h5>
+  <div class="om-grid">
+    <a class="om-it om-soc wide" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true">♪</span><span><small>TikTok</small>@awakenwithsophia</span></a>
+    <a class="om-it om-soc wide" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="ic om-ig" aria-hidden="true">◎</span><span><small>Instagram</small>@chosen.ron13</span></a>
+  </div>
   <h5>Help and more</h5>
   <div class="om-grid">
     <button class="om-it wide" type="button" data-a="eleven"><span class="ic">⏱️</span><span>The 11-Minute Story: how it happened</span></button>
+    <button class="om-it wide" type="button" data-a="welcome"><span class="ic">💊</span><span>The welcome briefing: the key facts</span></button>
     <button class="om-it" type="button" data-a="how"><span class="ic">❓</span><span>How it works</span></button>
     <button class="om-it" type="button" data-a="faq"><span class="ic">💬</span><span>Common questions</span></button>
     <button class="om-it" type="button" data-a="lang"><span class="ic">🌐</span><span>Language</span></button>
@@ -7362,7 +7391,8 @@ body.book-open #libBanner{display:none}
     how:      function(){ if(window.startTour) startTour(true); },
     faq:      function(){ if(window.openRP) openRP(); setTimeout(function(){ if(window.rpSwitch) rpSwitch('faq'); }, 60); },
     eleven:   function(){ if(window.__eleven) window.__eleven.open(); },
-    lang:     function(){ if(window.openLangModal) openLangModal(); }
+    lang:     function(){ if(window.openLangModal) openLangModal(); },
+    welcome:  function(){ if(window.__welcomeReopen) window.__welcomeReopen(); }
   };
   menu.addEventListener('click', function(e){
     var b = e.target.closest('[data-a]'); if(!b) return;

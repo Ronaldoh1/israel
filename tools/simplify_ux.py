@@ -65,7 +65,12 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   background:#0F1D42;color:#F7F3EC;border:1.5px solid rgba(240,192,64,.55);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.55);
   padding:14px 14px 16px;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .2s,transform .2s;-webkit-overflow-scrolling:touch}
 #otsMenu.on{opacity:1;transform:none;pointer-events:auto}
-#otsMenu .om-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 8px}
+#otsMenu .om-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 8px;position:sticky;top:-14px;margin-top:-14px;padding-top:16px;background:#0F1D42;z-index:2}
+#otsMenu .om-soc span small{display:block;font:600 11.5px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.7);margin-bottom:2px}
+#otsMenu .om-soc{font-size:14px;word-break:break-word}
+#otsMenu .om-soc .ic{width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;color:#fff;flex:none}
+#otsMenu .om-tt{background:linear-gradient(135deg,#25F4EE,#000 45%,#FE2C55)}
+#otsMenu .om-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
 #otsMenu .om-title{font:700 20px/1.2 'EB Garamond',Georgia,serif;color:#F0C040}
 #otsMenu .om-x{width:44px;height:44px;border-radius:50%;border:1px solid rgba(247,243,236,.25);background:transparent;color:#F7F3EC;font:400 22px/1 system-ui,sans-serif;cursor:pointer}
 #otsMenu h5{margin:12px 4px 6px;font:700 13px/1.2 Inter,system-ui,sans-serif;color:rgba(247,243,236,.72);letter-spacing:.02em}
@@ -82,7 +87,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
     padding:10px 14px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(100%)}
   #otsMenu.on{transform:none}
   #otsMenu .om-head::before{content:'';position:absolute;left:50%;top:8px;width:44px;height:5px;margin-left:-22px;border-radius:3px;background:rgba(247,243,236,.3)}
-  #otsMenu .om-head{padding-top:12px;padding-bottom:2px}
+  #otsMenu .om-head{padding-top:20px;padding-bottom:4px;top:-10px;margin-top:-10px}
   #otsMenu h5{margin:8px 4px 5px}
   #otsMenu .om-it{min-height:50px;padding:8px 10px;font-size:14.5px}
   #otsMenu .om-it .ic{font-size:20px}
@@ -122,9 +127,15 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
     <button class="om-it" type="button" data-a="sources"><span class="ic">📄</span><span>Sources</span></button>
     <button class="om-it" type="button" data-a="key"><span class="ic">🎨</span><span>What the colors mean</span></button>
   </div>
+  <h5>Follow</h5>
+  <div class="om-grid">
+    <a class="om-it om-soc wide" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true">♪</span><span><small>TikTok</small>@awakenwithsophia</span></a>
+    <a class="om-it om-soc wide" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="ic om-ig" aria-hidden="true">◎</span><span><small>Instagram</small>@chosen.ron13</span></a>
+  </div>
   <h5>Help and more</h5>
   <div class="om-grid">
     <button class="om-it wide" type="button" data-a="eleven"><span class="ic">⏱️</span><span>The 11-Minute Story: how it happened</span></button>
+    <button class="om-it wide" type="button" data-a="welcome"><span class="ic">💊</span><span>The welcome briefing: the key facts</span></button>
     <button class="om-it" type="button" data-a="how"><span class="ic">❓</span><span>How it works</span></button>
     <button class="om-it" type="button" data-a="faq"><span class="ic">💬</span><span>Common questions</span></button>
     <button class="om-it" type="button" data-a="lang"><span class="ic">🌐</span><span>Language</span></button>
@@ -179,7 +190,8 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
     how:      function(){ if(window.startTour) startTour(true); },
     faq:      function(){ if(window.openRP) openRP(); setTimeout(function(){ if(window.rpSwitch) rpSwitch('faq'); }, 60); },
     eleven:   function(){ if(window.__eleven) window.__eleven.open(); },
-    lang:     function(){ if(window.openLangModal) openLangModal(); }
+    lang:     function(){ if(window.openLangModal) openLangModal(); },
+    welcome:  function(){ if(window.__welcomeReopen) window.__welcomeReopen(); }
   };
   menu.addEventListener('click', function(e){
     var b = e.target.closest('[data-a]'); if(!b) return;
@@ -230,6 +242,7 @@ s = s.replace('</body>', BLOCK + '</body>')
 
 # ---------------------------------------------------------------- translations
 ES = {
+ 'Follow': 'Seguir', 'The welcome briefing: the key facts': 'La bienvenida: los datos clave',
  'Scene by scene. Tap a card to read it, then press Next.': 'Escena por escena. Toca una tarjeta para leerla y luego pulsa Siguiente.',
  'Tap a numbered card to read its detail and sources.': 'Toca una tarjeta numerada para leer el detalle y las fuentes.',
  'Menu': 'Menú', 'Explore': 'Explorar', 'Chapters': 'Capítulos', 'Search': 'Buscar',
@@ -246,6 +259,7 @@ ES = {
  'Got it': 'Entendido',
 }
 AR = {
+ 'Follow': 'تابِع', 'The welcome briefing: the key facts': 'شاشة الترحيب: الحقائق الأساسية',
  'Scene by scene. Tap a card to read it, then press Next.': 'مشهدًا بعد مشهد. اضغط على بطاقة لقراءتها، ثم اضغط «التالي».',
  'Tap a numbered card to read its detail and sources.': 'اضغط على بطاقة مرقّمة لقراءة تفاصيلها ومصادرها.',
  'Menu': 'القائمة', 'Explore': 'استكشف', 'Chapters': 'الفصول', 'Search': 'بحث',
