@@ -120,3 +120,9 @@ The reader draws every box and documented connection, adds a legend and a "List 
 
 ## Network
 Drawn automatically from the section's people, institutions and documented ties. No markup is needed.
+
+## Figure tags
+Every figure gets a coloured tag from its type (Process, Money trail, Timeline, Comparison, Power structure, Key figures, Network, Data, Map). When the type's name would mislead, set your own: `<figure class="fig-tree" data-kind="Family tree">`.
+
+## Maps of places
+A dashboard panel of type `geomap` draws a map (tools/geo.js, basemap tools/geo_base.json): numbered communities or sites coloured by family, dotted arrows for documented movements, and a key. Place it with `fig-dash` like any panel, e.g. `<figure class="fig-dash" data-ref="jewish_lineages:The Map:1"></figure>`.

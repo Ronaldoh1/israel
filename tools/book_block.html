@@ -694,7 +694,7 @@ body.book-open #libBanner{display:none}
     /* number every figure in reading order; wrap wide tables so they scroll instead of overflowing */
     [].forEach.call(page.querySelectorAll('figure'), function(f, i){
       var cap = f.querySelector('figcaption'); if(!cap) return; var cn = chN(c.label), lab = 'Figure ' + (cn != null ? cn : (/prelude/i.test(c.label) ? 0 : k + 1)) + '.' + (i + 1) + '.';
-      var kc = Object.keys(KN).filter(function(x){ return f.classList.contains(x); })[0], chip = kc ? '<span class="fkind">' + KN[kc] + '</span>' : '';
+      var kc = Object.keys(KN).filter(function(x){ return f.classList.contains(x); })[0], chip = (f.getAttribute('data-kind') || kc) ? '<span class="fkind">' + esc(f.getAttribute('data-kind') || KN[kc]) + '</span>' : '';
       var fn = cap.querySelector('.fnum'); if(fn){ fn.textContent = lab; if(chip) fn.insertAdjacentHTML('afterend', ' ' + chip); } else cap.insertAdjacentHTML('afterbegin', '<span class="fnum">' + lab + '</span>' + chip); });
     [].forEach.call(page.querySelectorAll('.fig-compare table'), function(t){ if(t.parentNode.className !== 'tw'){ var w = document.createElement('div'); w.className = 'tw'; t.parentNode.insertBefore(w, t); w.appendChild(t); }
       /* tables with 4+ columns become labelled cards on phones: each cell carries its column heading */
