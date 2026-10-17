@@ -1,0 +1,991 @@
+{
+ "volume": "Baseline",
+ "verified": "2026-10-17",
+ "entries": [
+  {
+   "id": "sm_family",
+   "stage": "ch01",
+   "topic": "Semitic as a branch of Afroasiatic, and its standard subgroups",
+   "claims": [
+    {
+     "text": "Semitic is one of the branches of the Afroasiatic (formerly 'Hamito-Semitic') language family; the other branches are Egyptian, Berber, Cushitic, Chadic and Omotic.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_afroasiatic",
+      "sm_byu_afroasiatic"
+     ]
+    },
+    {
+     "text": "Five of the six Afroasiatic branches are universally agreed; most specialists count Omotic as the sixth, though its membership has been questioned.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_afroasiatic"
+     ]
+    },
+    {
+     "text": "Semitic is described as the only Afroasiatic branch with members originating outside Africa: its languages are spoken in West Asia, North Africa, the Horn of Africa and Malta.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_afroasiatic",
+      "sm_byu_afroasiatic"
+     ]
+    },
+    {
+     "text": "The standard modern classification (Hetzron 1976, as emended by Huehnergard and Rodgers) divides Semitic into East Semitic (Akkadian, Eblaite) and West Semitic; West Semitic splits into Central Semitic (Northwest Semitic: Ugaritic, Canaanite, Aramaic; plus Arabic) and South Semitic (Modern South Arabian and Ethiopian Semitic).",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_semitic",
+      "sm_kitchen2009"
+     ]
+    },
+    {
+     "text": "Placement of Old South Arabian is not settled: Britannica groups it with the South Arabian languages in a southern cluster, while Hackett (2006), as summarised by Wikipedia, reclassifies it as Central Semitic.",
+     "strength": "disputed",
+     "sources": [
+      "sm_eb_southarabian",
+      "sm_wp_semitic"
+     ]
+    },
+    {
+     "text": "Subgrouping is debated: some Semiticists still place Arabic in South Semitic; Alexander Militarev treats Modern South Arabian as a separate branch; and Kitchen et al. (2009) found Arabic's position statistically equivocal and placed it in Central Semitic by convention.",
+     "strength": "disputed",
+     "sources": [
+      "sm_wp_semitic",
+      "sm_wp_msal",
+      "sm_kitchen2009"
+     ]
+    },
+    {
+     "text": "An older geographic scheme still found in Britannica divides Semitic into Northern Peripheral (Akkadian), Northern Central (Canaanite, Ugaritic, Aramaic, Amorite), Southern Central (Arabic, Maltese) and Southern Peripheral (South Arabian, Ethiopian) groups.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ebk_semitic",
+      "sm_eb_southarabian"
+     ]
+    },
+    {
+     "text": "The name 'Semitic' was first used for this language group by August Ludwig von Schlözer in 1781, in an article on the Chaldaeans published in J. G. Eichhorn's Repertorium; it derives from Shem, a son of Noah in Genesis 10. Eichhorn later claimed the term himself and helped popularise it.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ej_semites",
+      "sm_etym_semite",
+      "sm_wp_semitic"
+     ]
+    },
+    {
+     "text": "Arabic is the largest Semitic language by speakers; the UN states it is used daily by more than 400 million people, and Amharic is reported as the second most widely spoken Semitic language.",
+     "strength": "reported",
+     "sources": [
+      "sm_un_arabic",
+      "sm_wp_amharic"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_eb_afroasiatic",
+     "url": "https://www.eb.com/summary/Afro-Asiatic-languages",
+     "label": "Encyclopaedia Britannica — Afro-Asiatic languages (summary)"
+    },
+    {
+     "key": "sm_byu_afroasiatic",
+     "url": "https://linguistics.byu.edu/classes/Ling450ch/reports/afro-asiatic.html",
+     "label": "Brigham Young University Linguistics — A Description of the Afro-Asiatic (Hamito-Semitic) Language Family (course report)"
+    },
+    {
+     "key": "sm_wp_afroasiatic",
+     "url": "https://en.wikipedia.org/wiki/Afroasiatic_languages",
+     "label": "Wikipedia — Afroasiatic languages"
+    },
+    {
+     "key": "sm_wp_semitic",
+     "url": "https://en.wikipedia.org/wiki/Semitic_languages",
+     "label": "Wikipedia — Semitic languages (classification cites Hetzron 1976/1997, Huehnergard & Rodgers; Schlözer cites Vermeulen 2015)"
+    },
+    {
+     "key": "sm_kitchen2009",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2839953/",
+     "label": "Kitchen, Ehret, Assefa & Mulligan, Proc. R. Soc. B 276 (2009) — Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East"
+    },
+    {
+     "key": "sm_eb_southarabian",
+     "url": "https://britannica.com/print/article/555999",
+     "label": "Encyclopaedia Britannica — South Arabian languages"
+    },
+    {
+     "key": "sm_wp_msal",
+     "url": "https://en.wikipedia.org/wiki/Modern_South_Arabian_languages",
+     "label": "Wikipedia — Modern South Arabian languages"
+    },
+    {
+     "key": "sm_ebk_semitic",
+     "url": "https://kids.britannica.com/students/article/Semitic-languages/276982",
+     "label": "Britannica (Students) — Semitic languages"
+    },
+    {
+     "key": "sm_ej_semites",
+     "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/semites",
+     "label": "Encyclopaedia Judaica (via Encyclopedia.com), Moshe Greenberg — Semites"
+    },
+    {
+     "key": "sm_etym_semite",
+     "url": "https://www.etymonline.com/word/Semite",
+     "label": "Online Etymology Dictionary — Semite / Semitic"
+    },
+    {
+     "key": "sm_un_arabic",
+     "url": "https://www.un.org/en/node/139271",
+     "label": "United Nations — Arabic Language Day"
+    },
+    {
+     "key": "sm_wp_amharic",
+     "url": "https://en.wikipedia.org/wiki/Amharic",
+     "label": "Wikipedia — Amharic (speaker figures cite Ethnologue 2025)"
+    }
+   ]
+  },
+  {
+   "id": "sm_homeland",
+   "stage": "ch01",
+   "topic": "Where Proto-Semitic was spoken; no Semitic language originated in Europe",
+   "claims": [
+    {
+     "text": "There is no scholarly consensus on the Proto-Semitic homeland; proposals include the Levant, northern Arabia and the Syro-Arabian desert, and (for the earlier split from Afroasiatic) Africa.",
+     "strength": "disputed",
+     "sources": [
+      "sm_wp_protosemitic"
+     ]
+    },
+    {
+     "text": "Kitchen, Ehret, Assefa and Mulligan (2009), using Bayesian analysis of 96-word lists from 25 languages, estimated that the common ancestor of the attested Semitic languages lived about 5,750 years ago (c. 3750 BCE; 95% range c. 5400–2400 BCE) in the Levant.",
+     "strength": "disputed",
+     "sources": [
+      "sm_kitchen2009"
+     ]
+    },
+    {
+     "text": "The 2009 authors themselves note that the lexical clock they rely on is debated, that their model could not date the split of Semitic from the rest of Afroasiatic, and that unrecorded early Semitic languages could change the estimates.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_kitchen2009"
+     ]
+    },
+    {
+     "text": "Most scholars place the wider Afroasiatic homeland in Africa (south-eastern Sahara or Horn of Africa), while a significant minority, led by Alexander Militarev, argues for the Levant.",
+     "strength": "disputed",
+     "sources": [
+      "sm_wp_afroasiatic"
+     ]
+    },
+    {
+     "text": "An older Arabian-homeland theory is described as largely abandoned, though a revised version placing an early dispersal in northern Arabia and the Syro-Arabian desert has scholarly supporters (Huehnergard, Kogan, Macdonald).",
+     "strength": "disputed",
+     "sources": [
+      "sm_wp_protosemitic"
+     ]
+    },
+    {
+     "text": "Mesopotamia is treated as a destination rather than a homeland of Semitic speakers: non-Semitic populations (Sumerians) are documented there earlier.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_protosemitic"
+     ]
+    },
+    {
+     "text": "No proposed Semitic homeland lies in Europe. The one Semitic language native to Europe, Maltese, descends from a medieval Arabic dialect brought from Sicily/North Africa after Arab raids on Malta in 870 and Arabic-speaking settlement in 1048.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_protosemitic",
+      "sm_brincat_maltese"
+     ]
+    },
+    {
+     "text": "Maltese is described as the only Semitic (and Afroasiatic) official language of the European Union; it became an EU official language with Malta's accession in 2004.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_maltese",
+      "sm_termcoord_maltese"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_wp_protosemitic",
+     "url": "https://en.wikipedia.org/wiki/Proto-Semitic_language",
+     "label": "Wikipedia — Proto-Semitic language (homeland section cites Kitchen 2009, Lipiński 2001, Huehnergard & Pat-El 2019)"
+    },
+    {
+     "key": "sm_kitchen2009",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2839953/",
+     "label": "Kitchen, Ehret, Assefa & Mulligan, Proc. R. Soc. B 276 (2009) — Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East"
+    },
+    {
+     "key": "sm_wp_afroasiatic",
+     "url": "https://en.wikipedia.org/wiki/Afroasiatic_languages",
+     "label": "Wikipedia — Afroasiatic languages"
+    },
+    {
+     "key": "sm_brincat_maltese",
+     "url": "https://um.edu.mt/library/oar/bitstream/123456789/111564/1/Maltese.pdf",
+     "label": "Joseph M. Brincat (University of Malta) — Maltese: blending Semitic, Romance and Germanic lexemes"
+    },
+    {
+     "key": "sm_wp_maltese",
+     "url": "https://en.wikipedia.org/wiki/Maltese_language",
+     "label": "Wikipedia — Maltese language"
+    },
+    {
+     "key": "sm_termcoord_maltese",
+     "url": "https://termcoord.eu/2016/09/eu-languages-maltese-and-irish/",
+     "label": "European Parliament TermCoord (2016) — EU languages: Maltese and Irish"
+    }
+   ]
+  },
+  {
+   "id": "sm_east",
+   "stage": "ch01",
+   "topic": "East Semitic: Akkadian and Eblaite",
+   "claims": [
+    {
+     "text": "Akkadian was spoken in Mesopotamia from the 3rd to the 1st millennium BCE and is regarded as the oldest attested Semitic language alongside Eblaite.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_akkadian",
+      "sm_wp_protosemitic"
+     ]
+    },
+    {
+     "text": "Akkadian was written in cuneiform adapted from Sumerian, with about 600 word and syllable signs; it split around 2000 BCE into Assyrian (north) and Babylonian (south).",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_akkadian"
+     ]
+    },
+    {
+     "text": "Aramaic gradually replaced Babylonian as the spoken and written language in the 7th–6th centuries BCE; Babylonian survived for learned (astronomical, mathematical) writing and had completely died out by the 1st century CE.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_akkadian"
+     ]
+    },
+    {
+     "text": "Eblaite is known from the state archives of Ebla (Tell Mardikh, near Aleppo, Syria), excavated in the mid-1970s; the tablets date from the third quarter of the 3rd millennium BCE and are written in Mesopotamian cuneiform with many Sumerian logograms.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_eblaite"
+     ]
+    },
+    {
+     "text": "Eblaite's place in the family is classified differently: Britannica puts it in the Northern Central group with Amorite, whereas the now-common scheme lists it with Akkadian as East Semitic.",
+     "strength": "disputed",
+     "sources": [
+      "sm_eb_eblaite",
+      "sm_wp_eastsemitic"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_eb_akkadian",
+     "url": "https://www.britannica.com/print/article/11690",
+     "label": "Encyclopaedia Britannica — Akkadian language"
+    },
+    {
+     "key": "sm_wp_protosemitic",
+     "url": "https://en.wikipedia.org/wiki/Proto-Semitic_language",
+     "label": "Wikipedia — Proto-Semitic language (homeland section cites Kitchen 2009, Lipiński 2001, Huehnergard & Pat-El 2019)"
+    },
+    {
+     "key": "sm_eb_eblaite",
+     "url": "https://www.britannica.com/print/article/177618",
+     "label": "Encyclopaedia Britannica — Eblaite language"
+    },
+    {
+     "key": "sm_wp_eastsemitic",
+     "url": "https://en.wikipedia.org/wiki/East_Semitic_languages",
+     "label": "Wikipedia — East Semitic languages"
+    }
+   ]
+  },
+  {
+   "id": "sm_nw",
+   "stage": "ch01",
+   "topic": "Northwest Semitic: Ugaritic, the Canaanite languages and Aramaic",
+   "claims": [
+    {
+     "text": "Ugaritic, a Northwest Semitic language closely related to Biblical Hebrew, is known from tablets at Ras Shamra (ancient Ugarit) on the Syrian coast, dated to the 14th–13th centuries BCE; the city was destroyed around 1200 BCE.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_cojs_ugarit_tablet",
+      "sm_cojs_ugarit"
+     ]
+    },
+    {
+     "text": "Ugaritic was written in an alphabetic cuneiform of fewer than 30 signs, deciphered from 1930.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_cojs_ugarit_tablet"
+     ]
+    },
+    {
+     "text": "The Canaanite languages, a Northwest Semitic group, include Phoenician, Punic, Hebrew, Moabite, Ammonite and Edomite; Hebrew is the only one still spoken.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_canaanite",
+      "sm_wilsonwright",
+      "sm_wp_canaanite"
+     ]
+    },
+    {
+     "text": "Phoenician was spoken on the Levantine coast (Tyre, Sidon, Byblos) from at least the 11th century BCE (Ahiram epitaph, Byblos) until it was displaced by Aramaic around the 1st century BCE.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_phoenician",
+      "sm_eb_phoen_alpha"
+     ]
+    },
+    {
+     "text": "The Phoenician alphabet of 22 consonant letters is the probable ancestor of the Greek alphabet and, through it, of Western alphabets.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_phoen_alpha",
+      "sm_eb_phoenician"
+     ]
+    },
+    {
+     "text": "Punic, the later form of Phoenician at Carthage (traditionally founded from Tyre in 814/813 BCE), was still used by North African peasants as late as the 6th century CE.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_phoenician",
+      "sm_livius_carthage"
+     ]
+    },
+    {
+     "text": "Moabite, closely related to Hebrew, is known mainly from the Mesha Stele, found at Dhiban (Jordan) in 1868 and held in the Louvre, in which King Mesha of Moab records campaigns against Israel and names Omri.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_moabite",
+      "sm_whe_mesha"
+     ]
+    },
+    {
+     "text": "Ammonite is attested in 9th–6th-century BCE inscriptions (including the Amman Citadel inscription); Edomite in very few texts, so its classification is less certain.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wilsonwright",
+      "sm_wp_canaanite"
+     ]
+    },
+    {
+     "text": "Aramaic was originally the language of the Aramaeans, emerging around the late 11th century BCE; by the 7th–6th centuries BCE it had largely replaced Akkadian as the Middle East's lingua franca, and it was an official language of the Achaemenid Persian empire (559–330 BCE).",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_aramaic"
+     ]
+    },
+    {
+     "text": "Parts of the biblical books of Daniel and Ezra are in Aramaic, as are the Babylonian and Jerusalem Talmuds.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_aramaic"
+     ]
+    },
+    {
+     "text": "Syriac, an Aramaic dialect whose name for itself means '(the language) of Edessa', became the main language of Syriac Christianity and its literature from the 2nd century CE.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_gedsh_syriac",
+      "sm_eb_aramaic"
+     ]
+    },
+    {
+     "text": "Neo-Aramaic varieties are still spoken by Assyrian and Chaldean Christians, Mandaeans, and some Jewish communities (many now emigrated, largely to Israel and the West).",
+     "strength": "scholarship",
+     "sources": [
+      "sm_iranica_aramaic",
+      "sm_wp_neoaramaic",
+      "sm_eb_aramaic"
+     ]
+    },
+    {
+     "text": "Western Neo-Aramaic survives in Maaloula and Jubb'adin in the Qalamoun/Anti-Lebanon mountains of Syria, and is reported as endangered after the war.",
+     "strength": "reported",
+     "sources": [
+      "sm_natgeo_maaloula",
+      "sm_wp_neoaramaic"
+     ]
+    },
+    {
+     "text": "Total Neo-Aramaic speakers are estimated at roughly 575,000 to 1 million; this figure is weakly sourced.",
+     "strength": "reported",
+     "sources": [
+      "sm_wp_neoaramaic"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_cojs_ugarit_tablet",
+     "url": "https://cojs.org/ugaritic_alphabet_tablet-_14th-13th_century_bce/",
+     "label": "Center for Online Judaic Studies — Ugaritic Alphabet Tablet, 14th–13th century BCE"
+    },
+    {
+     "key": "sm_cojs_ugarit",
+     "url": "https://cojs.org/ugarit-_6000-1200_bce/",
+     "label": "Center for Online Judaic Studies — Ugarit, 6000–1200 BCE"
+    },
+    {
+     "key": "sm_eb_canaanite",
+     "url": "https://www.britannica.com/print/article/91504",
+     "label": "Encyclopaedia Britannica — Canaanite languages"
+    },
+    {
+     "key": "sm_wilsonwright",
+     "url": "https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Canaanite-Languages.pdf&lang=en",
+     "label": "Aren M. Wilson-Wright (2019) — The Canaanite Languages, ch. 20 (University of Texas–hosted PDF)"
+    },
+    {
+     "key": "sm_wp_canaanite",
+     "url": "https://en.wikipedia.org/wiki/Canaanite_languages",
+     "label": "Wikipedia — Canaanite languages"
+    },
+    {
+     "key": "sm_eb_phoenician",
+     "url": "https://britannica.com/topic/Phoenician-language",
+     "label": "Encyclopaedia Britannica — Phoenician language"
+    },
+    {
+     "key": "sm_eb_phoen_alpha",
+     "url": "https://www.britannica.com/print/article/457154",
+     "label": "Encyclopaedia Britannica — Phoenician alphabet"
+    },
+    {
+     "key": "sm_livius_carthage",
+     "url": "https://www.livius.org/place/carthage/",
+     "label": "Livius.org (Jona Lendering) — Punic Carthage"
+    },
+    {
+     "key": "sm_eb_moabite",
+     "url": "https://www.britannica.com/topic/Moabite-language",
+     "label": "Encyclopaedia Britannica — Moabite language"
+    },
+    {
+     "key": "sm_whe_mesha",
+     "url": "https://www.worldhistory.org/Moabite_Stone_%5BMesha_Stele%5D/",
+     "label": "World History Encyclopedia (W. Brown, 2019) — Moabite Stone [Mesha Stele]"
+    },
+    {
+     "key": "sm_eb_aramaic",
+     "url": "https://www.britannica.com/print/article/32043",
+     "label": "Encyclopaedia Britannica — Aramaic language"
+    },
+    {
+     "key": "sm_gedsh_syriac",
+     "url": "https://gedsh.bethmardutho.org/Syriac-Language",
+     "label": "Gorgias Encyclopedic Dictionary of the Syriac Heritage (A. M. Butts) — Syriac Language"
+    },
+    {
+     "key": "sm_iranica_aramaic",
+     "url": "https://iranicaonline.org/articles/iran-vii10-aramaic",
+     "label": "Encyclopaedia Iranica (G. L. Windfuhr, 2006) — Iran vii(10): Neo-Aramaic"
+    },
+    {
+     "key": "sm_wp_neoaramaic",
+     "url": "https://en.wikipedia.org/wiki/Neo-Aramaic_languages",
+     "label": "Wikipedia — Neo-Aramaic languages (speaker totals weakly cited)"
+    },
+    {
+     "key": "sm_natgeo_maaloula",
+     "url": "https://www.nationalgeographic.com/history/article/aramaic-jesus-christ-syria",
+     "label": "National Geographic (R. Biller, Mar 2026) — This war-torn village is fighting to keep Christ's language alive"
+    }
+   ]
+  },
+  {
+   "id": "sm_hebrew_brief",
+   "stage": "ch01",
+   "topic": "Hebrew as a Canaanite language",
+   "claims": [
+    {
+     "text": "Hebrew is a Northwest Semitic language of the Canaanite group, and the only Canaanite language still spoken.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_canaanite",
+      "sm_wp_hebrew"
+     ]
+    },
+    {
+     "text": "Most scholars date the end of Hebrew as an everyday spoken language to about 200 CE (with estimates to c. 400 CE); it continued as a literary and liturgical language.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_hebrew",
+      "sm_ebsco_hebrew"
+     ]
+    },
+    {
+     "text": "Hebrew was revived as a spoken language from the late 19th century, associated with Eliezer Ben-Yehuda, and is the primary official language of Israel.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_hebrew",
+      "sm_ebsco_hebrew",
+      "sm_eb_canaanite"
+     ]
+    },
+    {
+     "text": "Modern Hebrew has about 9 million speakers, of whom about 5 million are native (2018 estimate).",
+     "strength": "reported",
+     "sources": [
+      "sm_wp_hebrew"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_eb_canaanite",
+     "url": "https://www.britannica.com/print/article/91504",
+     "label": "Encyclopaedia Britannica — Canaanite languages"
+    },
+    {
+     "key": "sm_wp_hebrew",
+     "url": "https://en.wikipedia.org/wiki/Hebrew_language",
+     "label": "Wikipedia — Hebrew language (speaker figures cite Ethnologue/surveys)"
+    },
+    {
+     "key": "sm_ebsco_hebrew",
+     "url": "https://www.ebsco.com/research-starters/language-and-linguistics/hebrew-language",
+     "label": "EBSCO Research Starters (C. Caputo) — Hebrew Language"
+    }
+   ]
+  },
+  {
+   "id": "sm_arabic",
+   "stage": "ch01",
+   "topic": "Arabic: Central Semitic, earliest inscriptions, spread, and dialects",
+   "claims": [
+    {
+     "text": "Arabic is usually classified as a Central Semitic language, though some scholars still argue for a South Semitic placement.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_arabic",
+      "sm_wp_semitic"
+     ]
+    },
+    {
+     "text": "Early Old Arabic is attested in Safaitic and Hismaic inscriptions and in a few lines of poetry at En Avdat (c. 125 CE).",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_arabic"
+     ]
+    },
+    {
+     "text": "The Namara inscription (southern Syria, dated 7 December 328 CE) is an Old Arabic epitaph of the Lakhmid king Imru' al-Qays written in late Nabataean script; it was found in 1901 and is in the Louvre.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_namara",
+      "sm_butts_twin"
+     ]
+    },
+    {
+     "text": "After the Muslim conquest of the Levant (634–640) Arabic spread through settlement and administration; Arabic replaced Greek in administration around 700, and the shift from Aramaic took several generations of multilingualism.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_levantine",
+      "sm_butts_twin"
+     ]
+    },
+    {
+     "text": "In Egypt, Coptic remained the main vernacular for over a century after the mid-7th-century conquest; Arabic became the main spoken language from the late 8th–9th centuries and Coptic died out as a spoken language by around the 10th–11th centuries.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_rubenson"
+     ]
+    },
+    {
+     "text": "Among Syriac Christians the shift was gradual and uneven: Arabic writing appears from the 8th century, and Syriac was never fully abandoned as a literary and liturgical language.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_butts_twin"
+     ]
+    },
+    {
+     "text": "Arabic is used daily by more than 400 million people according to the UN; it is an official language in over 20 states and became a UN official language in 1973.",
+     "strength": "reported",
+     "sources": [
+      "sm_un_arabic",
+      "sm_wp_arabic"
+     ]
+    },
+    {
+     "text": "Levantine Arabic is the everyday spoken language of Syria, Lebanon, Jordan and Palestine and a minority language in Israel and Turkey (about 60 million speakers), with an Aramaic substrate.",
+     "strength": "reported",
+     "sources": [
+      "sm_wp_levantine"
+     ]
+    },
+    {
+     "text": "Palestinian Arabic, the dialect of people living in or originating from historical Palestine, belongs to the South Levantine subgroup of Arabic dialects.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_jarrar2014",
+      "sm_wp_levantine"
+     ]
+    },
+    {
+     "text": "Maltese descends from Siculo-Arabic, a medieval Arabic dialect of Sicily, and has been heavily influenced by Italo-Romance and English; it is the only Semitic language officially written in the Latin script.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_brincat_maltese",
+      "sm_wp_maltese",
+      "sm_wp_arabic"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_wp_arabic",
+     "url": "https://en.wikipedia.org/wiki/Arabic",
+     "label": "Wikipedia — Arabic"
+    },
+    {
+     "key": "sm_wp_semitic",
+     "url": "https://en.wikipedia.org/wiki/Semitic_languages",
+     "label": "Wikipedia — Semitic languages (classification cites Hetzron 1976/1997, Huehnergard & Rodgers; Schlözer cites Vermeulen 2015)"
+    },
+    {
+     "key": "sm_wp_namara",
+     "url": "https://en.wikipedia.org/wiki/Namara_inscription",
+     "label": "Wikipedia — Namara inscription (cites Dussaud 1901, Bellamy 1985, Shahid)"
+    },
+    {
+     "key": "sm_butts_twin",
+     "url": "https://almuslih.org/wp-content/uploads/2024/11/Butts-A-Twin-histories.pdf",
+     "label": "Aaron M. Butts — Once Again, the Twin Histories of Arabic and Aramaic (forthcoming, Brepols; preprint PDF)"
+    },
+    {
+     "key": "sm_wp_levantine",
+     "url": "https://en.wikipedia.org/wiki/Levantine_Arabic",
+     "label": "Wikipedia — Levantine Arabic (speaker figures cite Ethnologue 2025)"
+    },
+    {
+     "key": "sm_rubenson",
+     "url": "https://www.medievalists.net/2009/09/the-transition-from-coptic-to-arabic/",
+     "label": "Samuel Rubenson, 'The Transition from Coptic to Arabic', Égypte/Monde arabe 27–28 (1996), via Medievalists.net"
+    },
+    {
+     "key": "sm_un_arabic",
+     "url": "https://www.un.org/en/node/139271",
+     "label": "United Nations — Arabic Language Day"
+    },
+    {
+     "key": "sm_jarrar2014",
+     "url": "https://www.jarrar.info/publications/JHAZ14.pdf",
+     "label": "Jarrar, Habash, Akra & Zalmout, 'Building a Corpus for Palestinian Arabic', EMNLP 2014 ANLP Workshop"
+    },
+    {
+     "key": "sm_brincat_maltese",
+     "url": "https://um.edu.mt/library/oar/bitstream/123456789/111564/1/Maltese.pdf",
+     "label": "Joseph M. Brincat (University of Malta) — Maltese: blending Semitic, Romance and Germanic lexemes"
+    },
+    {
+     "key": "sm_wp_maltese",
+     "url": "https://en.wikipedia.org/wiki/Maltese_language",
+     "label": "Wikipedia — Maltese language"
+    }
+   ]
+  },
+  {
+   "id": "sm_south",
+   "stage": "ch01",
+   "topic": "South Semitic: Old South Arabian, Modern South Arabian, Ethiopian Semitic",
+   "claims": [
+    {
+     "text": "Old South Arabian (Ṣayhadic) comprises the extinct Minaean, Sabaean, Qatabanian and Ḥaḍramawtian languages of what is now Yemen, attested from the 8th century BCE to the 6th century CE in a 29-letter consonantal script.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_southarabian"
+     ]
+    },
+    {
+     "text": "The Modern South Arabian languages (Mehri, Soqotri, Shehri/Jibbali, Harsusi, Hobyot, Bathari) are spoken in Yemen, Oman and on Socotra; they are not Arabic dialects and had no writing tradition.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_southarabian",
+      "sm_leeds_msal",
+      "sm_wp_msal"
+     ]
+    },
+    {
+     "text": "Approximate speaker numbers: Mehri about 100,000 (Leeds 2014; Wikipedia gives about 250,000 for 2024), Soqotri about 50,000–60,000, Jibbali 20,000–30,000, Harsusi and Hobyot under 1,000, and Bathari fewer than 10 fluent speakers; the group is described as endangered.",
+     "strength": "reported",
+     "sources": [
+      "sm_leeds_msal",
+      "sm_wp_msal"
+     ]
+    },
+    {
+     "text": "The Modern South Arabian languages are no longer thought to descend directly from Old South Arabian.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_wp_msal"
+     ]
+    },
+    {
+     "text": "Ge'ez, the classical language of Aksum, is attested from 3rd–4th-century inscriptions; it ceased to be spoken popularly between about 900 and 1200 and remains the liturgical language of the Ethiopian church.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_geez"
+     ]
+    },
+    {
+     "text": "Amharic, written in an adapted Ge'ez script, is the working language of Ethiopia's federal government under Article 5 of the 1995 Constitution.",
+     "strength": "primary",
+     "sources": [
+      "sm_eth_const",
+      "sm_eb_amharic"
+     ]
+    },
+    {
+     "text": "Amharic speaker estimates vary: Britannica gives about 18.7 million (early 21st century); Ethnologue (2025) via Wikipedia gives about 34 million first-language and 25 million second-language speakers.",
+     "strength": "reported",
+     "sources": [
+      "sm_eb_amharic",
+      "sm_wp_amharic"
+     ]
+    },
+    {
+     "text": "Tigrinya is spoken in northern Ethiopia (Tigray) and Eritrea by about 5.8 million people; Tigré is spoken in northwestern Eritrea by more than 1 million.",
+     "strength": "reported",
+     "sources": [
+      "sm_eb_tigrinya",
+      "sm_eb_tigre"
+     ]
+    },
+    {
+     "text": "Kitchen et al. (2009) estimate that Ethiopian Semitic derives from a single introduction from southern Arabia about 2,800 years ago; other scholars propose an earlier presence of Semitic in the Horn, so the direction and timing remain debated.",
+     "strength": "disputed",
+     "sources": [
+      "sm_kitchen2009",
+      "sm_wp_protosemitic"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_eb_southarabian",
+     "url": "https://britannica.com/print/article/555999",
+     "label": "Encyclopaedia Britannica — South Arabian languages"
+    },
+    {
+     "key": "sm_leeds_msal",
+     "url": "https://ahc.leeds.ac.uk/news/article/1222/language-and-culture-the-documentation-of-the-modern-south-arabian-languages",
+     "label": "University of Leeds (J. C. E. Watson & A. al-Mahri, 2014) — Language and culture: the documentation of the Modern South Arabian languages"
+    },
+    {
+     "key": "sm_wp_msal",
+     "url": "https://en.wikipedia.org/wiki/Modern_South_Arabian_languages",
+     "label": "Wikipedia — Modern South Arabian languages"
+    },
+    {
+     "key": "sm_eb_geez",
+     "url": "https://britannica.com/topic/Geez-language",
+     "label": "Encyclopaedia Britannica — Geʿez language"
+    },
+    {
+     "key": "sm_eth_const",
+     "url": "https://www.refworld.org/docid/3ae6b5a84.html",
+     "label": "Refworld (UNHCR) — Constitution of the Federal Democratic Republic of Ethiopia (1995), Art. 5"
+    },
+    {
+     "key": "sm_eb_amharic",
+     "url": "https://www.britannica.com/print/article/20500",
+     "label": "Encyclopaedia Britannica — Amharic language"
+    },
+    {
+     "key": "sm_wp_amharic",
+     "url": "https://en.wikipedia.org/wiki/Amharic",
+     "label": "Wikipedia — Amharic (speaker figures cite Ethnologue 2025)"
+    },
+    {
+     "key": "sm_eb_tigrinya",
+     "url": "https://www.britannica.com/print/article/595610",
+     "label": "Encyclopaedia Britannica — Tigrinya language"
+    },
+    {
+     "key": "sm_eb_tigre",
+     "url": "https://www.britannica.com/topic/Tigre-language",
+     "label": "Encyclopaedia Britannica — Tigré language"
+    },
+    {
+     "key": "sm_kitchen2009",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2839953/",
+     "label": "Kitchen, Ehret, Assefa & Mulligan, Proc. R. Soc. B 276 (2009) — Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East"
+    },
+    {
+     "key": "sm_wp_protosemitic",
+     "url": "https://en.wikipedia.org/wiki/Proto-Semitic_language",
+     "label": "Wikipedia — Proto-Semitic language (homeland section cites Kitchen 2009, Lipiński 2001, Huehnergard & Pat-El 2019)"
+    }
+   ]
+  },
+  {
+   "id": "sm_race",
+   "stage": "ch01",
+   "topic": "'Semitic' names languages, not a race",
+   "claims": [
+    {
+     "text": "Schlözer coined 'Semitic' in 1781 as a linguistic term; careful modern usage restricts 'Semite' and 'Semitic' to linguistic categories.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ej_semites",
+      "sm_etym_semite"
+     ]
+    },
+    {
+     "text": "In the 19th century the term was extended to a supposed race defined by physical traits; the Encyclopaedia Judaica describes these earlier racial theories as problematic, with 'evil results'.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ej_semites",
+      "sm_etym_semite"
+     ]
+    },
+    {
+     "text": "Ernest Renan's Histoire générale et système comparé des langues sémitiques (1855) read linguistic differences as differences between peoples and called the 'Semitic race' inferior to the Indo-European; the BnF notes this ethnic framing fed later scholarly antisemitism.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_bnf_renan"
+     ]
+    },
+    {
+     "text": "Historian Shmuel Almog notes that 'Semitic' and 'Aryan' were originally language-group names and that 'Semite' as a racial label is a misnomer.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_almog_hyphen"
+     ]
+    },
+    {
+     "text": "The USHMM states that genetic research has shown racial theories about Jews to be wrong, and that there is no scientific evidence for distinct biological races.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ushmm_antisem"
+     ]
+    },
+    {
+     "text": "Speakers of Semitic languages, past and present, include Akkadians, Phoenicians, Arameans, Jews, Arabs, Ethiopians, Maltese and Assyrians; they share language-family membership, not a single ethnicity.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_ej_semites",
+      "sm_wp_semitic"
+     ]
+    },
+    {
+     "text": "Wilhelm Marr (1819–1904) popularised the German 'Antisemitismus' to mean a racial hostility toward Jews specifically, and in 1879 founded the League of Antisemites; sources differ on whether 1879 or 1881 marks the term's popularisation.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_jvl_marr",
+      "sm_wp_marr",
+      "sm_almog_hyphen",
+      "sm_etym_semite"
+     ]
+    },
+    {
+     "text": "Although 'antisemitism' is not etymologically restricted to Jews, it has been used almost exclusively to mean hostility toward Jews.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_etym_semite",
+      "sm_ushmm_antisem"
+     ]
+    },
+    {
+     "text": "Yiddish, the historic language of Ashkenazi Jews, is a Germanic (Indo-European) language written in Hebrew letters, with Hebrew-Aramaic and Slavic components.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_yiddish",
+      "sm_wp_yiddish"
+     ]
+    },
+    {
+     "text": "Judeo-Spanish (Ladino) is a Romance language derived from old Castilian Spanish; not all Jewish languages are Semitic.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_eb_ladino"
+     ]
+    },
+    {
+     "text": "The everyday language of Palestinians is Arabic, specifically Palestinian Arabic, a South Levantine dialect of the Semitic Arabic language.",
+     "strength": "scholarship",
+     "sources": [
+      "sm_jarrar2014",
+      "sm_wp_levantine"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sm_ej_semites",
+     "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/semites",
+     "label": "Encyclopaedia Judaica (via Encyclopedia.com), Moshe Greenberg — Semites"
+    },
+    {
+     "key": "sm_etym_semite",
+     "url": "https://www.etymonline.com/word/Semite",
+     "label": "Online Etymology Dictionary — Semite / Semitic"
+    },
+    {
+     "key": "sm_bnf_renan",
+     "url": "https://heritage.bnf.fr/bibliothequesorient/en/general-history-and-comparative-system-semitic-languages-ernest-renan-1863",
+     "label": "Bibliothèque nationale de France, Bibliothèques d'Orient — The general history and comparative system of the Semitic languages, by Ernest Renan"
+    },
+    {
+     "key": "sm_almog_hyphen",
+     "url": "https://phdn.org/antisem/shmuel_almog-what_s_in_a_hyphen-1989.html",
+     "label": "Shmuel Almog, 'What's in a Hyphen?', SICSA Report (Hebrew University), Summer 1989"
+    },
+    {
+     "key": "sm_ushmm_antisem",
+     "url": "https://encyclopedia.ushmm.org/narrative/3225/en",
+     "label": "US Holocaust Memorial Museum, Holocaust Encyclopedia — Antisemitism: An Introduction"
+    },
+    {
+     "key": "sm_wp_semitic",
+     "url": "https://en.wikipedia.org/wiki/Semitic_languages",
+     "label": "Wikipedia — Semitic languages (classification cites Hetzron 1976/1997, Huehnergard & Rodgers; Schlözer cites Vermeulen 2015)"
+    },
+    {
+     "key": "sm_jvl_marr",
+     "url": "https://www.jewishvirtuallibrary.org/jsource/biography/WilhelmMarr.html",
+     "label": "Jewish Virtual Library — Wilhelm Marr"
+    },
+    {
+     "key": "sm_wp_marr",
+     "url": "https://en.wikipedia.org/wiki/Wilhelm_Marr",
+     "label": "Wikipedia — Wilhelm Marr"
+    },
+    {
+     "key": "sm_eb_yiddish",
+     "url": "https://britannica.com/topic/Yiddish-language",
+     "label": "Encyclopaedia Britannica — Yiddish language"
+    },
+    {
+     "key": "sm_wp_yiddish",
+     "url": "https://en.wikipedia.org/wiki/Yiddish",
+     "label": "Wikipedia — Yiddish"
+    },
+    {
+     "key": "sm_eb_ladino",
+     "url": "https://www.britannica.com/topic/Ladino-language",
+     "label": "Encyclopaedia Britannica — Ladino language"
+    },
+    {
+     "key": "sm_jarrar2014",
+     "url": "https://www.jarrar.info/publications/JHAZ14.pdf",
+     "label": "Jarrar, Habash, Akra & Zalmout, 'Building a Corpus for Palestinian Arabic', EMNLP 2014 ANLP Workshop"
+    },
+    {
+     "key": "sm_wp_levantine",
+     "url": "https://en.wikipedia.org/wiki/Levantine_Arabic",
+     "label": "Wikipedia — Levantine Arabic (speaker figures cite Ethnologue 2025)"
+    }
+   ]
+  }
+ ]
+}

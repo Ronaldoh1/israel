@@ -20,10 +20,13 @@ base = json.load(open(os.path.join(ROOT, 'tools', 'geo_base.json')))
 block = ('<!--GEO-START--><style>' + rd('geo.css') + '</style><script>window.OTS_GEO=' + json.dumps(base, separators=(',', ':')) + ';</script><script>' + rd('geo.js') + '</script><!--GEO-END-->\n')
 i = s.rfind('</body>'); s = s[:i] + block + s[i:]
 swap("pair:pair,venn:venn};", "pair:pair,venn:venn,geomap:function(s){ return window.OTSGeo?window.OTSGeo.render(s):''; }};")
-D = json.load(open(os.path.join(ROOT, 'book', 'src', 'lineages_dashboard.json'), encoding='utf-8'))
-scenes = D.pop('scenes', [])
-swap('window.DASHBOARDS = {', 'window.DASHBOARDS = {"jewish_lineages": ' + json.dumps(D, ensure_ascii=False).replace('</', '<\\/') + ', ')
-for sid in scenes: assert ('"id":"%s"' % sid) in s, 'unknown scene ' + sid
-swap('window.DASH_SCENES = {', 'window.DASH_SCENES = {' + ''.join('"%s": "jewish_lineages", ' % x for x in scenes))
+total = 0
+for did, fn in (('jewish_lineages', 'lineages_dashboard.json'), ('semitic_languages', 'semitic_dashboard.json')):
+    D = json.load(open(os.path.join(ROOT, 'book', 'src', fn), encoding='utf-8'))
+    scenes = D.pop('scenes', [])
+    swap('window.DASHBOARDS = {', 'window.DASHBOARDS = {"' + did + '": ' + json.dumps(D, ensure_ascii=False).replace('</', '<\\/') + ', ')
+    for sid in scenes: assert ('"id":"%s"' % sid) in s, 'unknown scene ' + sid
+    swap('window.DASH_SCENES = {', 'window.DASH_SCENES = {' + ''.join('"%s": "%s", ' % (x, did) for x in scenes))
+    total += len(scenes)
 open(P, 'w', encoding='utf-8').write(s)
-print('lineages map applied (linked from %d scenes)' % len(scenes))
+print('maps applied: lineages and Semitic languages (linked from %d scenes)' % total)
