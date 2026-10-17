@@ -330,3 +330,13 @@ One line each: the conflict, the versions, the scenes involved (section where th
 - Responsibility for DMZ clashes on the Syrian front: documented Syrian fire on farmers and fishermen vs Dayan's 1976 claim (published 1997) that at least 80 percent were provoked by Israel (rd6_syria_1949, sy_s02).
 - US role in Za'im's March 1949 coup: documented contacts vs debated direction (rd6_syria_1949, me_s08).
 - Israel's assurances at UN admission: Eban said to have pledged to honour Resolutions 181 and 194 (wiki_res_194) vs the UN committee record consulted, which documents only the 6 May 1949 agenda, and Resolution 273, which only "takes note" (rd6_un_admission, rr_s01; research un_admission_jerusalem_1949_1950).
+
+## Volume II Rothschild research (vol2_wealth_a/b), found October 2026
+- London house capital around 1875: s01 gives £8–10 million for the combined houses; Ferguson's partnership balance sheets (via reviews) give £34 million in 1874 and £41 million in 1899. rd0_fortune uses Ferguson and notes the gap; s01 should be corrected in the simulation (s01, rd0_fortune; research wa_capital).
+- Paris nationalization: 1981 in earlier working notes vs 1982 in the Rothschild Archive's dating (rd0_fortune; research wa_dispersion).
+- Papal exclusivity clause: rests on Balla (1913), a popular book, with no archival confirmation found (bc_s03, rd0_fortune; research wa_papal).
+- Walter Rothschild's Zionist office: president of the English Zionist Federation (Al Jazeera, Wineman) vs Weizmann president from 1917 (Wikipedia-derived); the Rothschild Archive names no Zionist office. s06 previously stated the presidency as fact; softened (s06, rd2_addressee; research wb_walter).
+- Times statement of May 1917: 24 May, signed Alexander and Montefiore (Wikipedia, Grobman) vs 25 May, Lucien Wolf and Alexander (Wineman; Dunner says Wolf wrote it) (rd2_addressee; research wb_board_1917).
+- Natty Rothschild's death: 31 March 1915 (Wikipedia) vs wording in the Rothschild Archive that may place it in early April (rd2_addressee; research wb_walter).
+- Sale of Walter's bird collection: 1931 (popular accounts) vs 1932 (Wikipedia); price $225,000 from popular sources only (rd2_addressee; research wb_walter).
+- Zvërnec land sale price: declared €122 million (AFP) vs about €110 million (Reuters) (rd0_fortune; research wb_albania).

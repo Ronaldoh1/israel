@@ -50,3 +50,8 @@ Suggested scenes: "Never Again — What the Classroom Teaches" (Baseline, after 
 
 - rd4 holocaust_primary_documents (42 claims): Einsatzgruppen reports, Jäger Report, Wannsee Protocol copy 16, Höfle telegram, Korherr Report, Stroop Report, Posen speech, Nuremberg document series and film, Eisenhower at Ohrdruf, Höss's affidavits vs the Auschwitz Museum, Eichmann trial, Arolsen Archives. Suggested scene after hol_s05: "The Perpetrators' Own Paper".
 - ch01 holocaust_teaching_world (48 claims): UNESCO 2015 mapping, Germany, Israel, England, France, Poland, Russia, Iran, Palestinian territories, Saudi Arabia, UAE, Morocco, Latin America, Rwanda, China, South Africa, Netherlands, ADL Global 100, Claims Conference, IHRA, UN 60/7 and 76/250. Suggested scene in the Baseline after the "Never Again" scene.
+
+## Volume II Rothschild research (17 October 2026)
+- Correct s01's £8–10 million capital figure for ~1875 against Ferguson's series (1874 £34m; 1899 £41m) in research wa_capital.
+- Correct s06's statement that Walter Rothschild was president of the Zionist Federation: disputed (research wb_walter).
+- New research for possible scenes: rd0 "A Fortune Kept Private" (wa_* entries: 1810 partnership, Judendeutsch letters, capital series, 1970 incorporation, assets, end of the five houses); rd2 "Why the Letter Went to Walter Rothschild" (wb_walter, wb_addressee, wb_board_1917, wb_montagu, wb_quidproquo). Suggested scene after s06: "The Address Line".
