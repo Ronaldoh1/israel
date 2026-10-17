@@ -315,7 +315,22 @@
       (s.rows || []).map(function(r, ri){ return '<tr' + (ri < hl ? ' class="hl"' : '') + '>' + r.map(function(c, i){ return i === 0 ? '<th scope="row">' + esc(c) + '</th>' : '<td' + (s.num ? ' class="n"' : '') + '>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') +
       '</tbody></table></div>' + (s.foot ? '<p class="otsc-foot">' + esc(s.foot) + '</p>' : '');
   }
-  var DRAW = {hbar:hbar, stacked:stacked, line:line, donut:donut, pair:pair, kpis:kpis, flow:flow, table:table};
+
+  /* ---------- who overlaps: three sets, numbered regions, a key underneath ---------- */
+  var VENN_C = [[148, 150], [252, 150], [200, 240]], VENN_P = {a:[100, 118], b:[300, 118], c:[200, 300], ab:[200, 104], ac:[146, 214], bc:[254, 214], abc:[200, 178]};
+  function venn(s){
+    var S = (s.sets || []).slice(0, 3), G = s.regions || [], r = 108;
+    var o = '<svg class="otsc-vsvg" viewBox="0 0 400 384" role="img" aria-label="' + esc(s.title || 'Venn diagram') + ': ' + esc(S.map(function(x){ return x[0]; }).join(', ')) + '">';
+    S.forEach(function(x, i){ o += '<circle cx="' + VENN_C[i][0] + '" cy="' + VENN_C[i][1] + '" r="' + r + '" style="fill:' + esc(x[1]) + ';fill-opacity:.15;stroke:' + esc(x[1]) + ';stroke-width:3"/>'; });
+    var LP = [[96, 28, 'middle'], [304, 28, 'middle'], [200, 376, 'middle']];
+    S.forEach(function(x, i){ o += '<text x="' + LP[i][0] + '" y="' + LP[i][1] + '" text-anchor="' + LP[i][2] + '" style="fill:' + esc(x[1]) + ';font:700 18px var(--oc-sans,system-ui)">' + esc(x[0]) + '</text>'; });
+    G.forEach(function(g, k){ var p = VENN_P[g.at]; if(!p) return;
+      o += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="15" style="fill:var(--oc-fig)"/><text x="' + p[0] + '" y="' + (p[1] + 6) + '" text-anchor="middle" style="fill:var(--oc-card);font:700 16px var(--oc-sans,system-ui)">' + (k + 1) + '</text>'; });
+    o += '</svg>';
+    return '<div class="otsc-venn">' + o + '<ol class="otsc-vkey">' + G.map(function(g, k){ return '<li><span class="otsc-vnum">' + (k + 1) + '</span><span><b>' + inline(g.who) + '</b>' + (g.ex ? '<br><span class="otsc-fn">' + inline(g.ex) + '</span>' : '') + '</span></li>'; }).join('') + '</ol></div>' +
+      (s.note ? '<p class="otsc-foot">' + inline(s.note) + '</p>' : '');
+  }
+  var DRAW = {hbar:hbar, stacked:stacked, line:line, donut:donut, pair:pair, kpis:kpis, flow:flow, table:table, venn:venn};
 
   /* ---------- one panel ---------- */
   function panel(sec, opts){
