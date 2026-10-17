@@ -52,14 +52,16 @@
         '<small>' + [p.lang, p.since, p.today ? 'Today: ' + p.today : ''].filter(Boolean).map(esc).join(' · ') + '</small></span></li>'; }).join('') + '</ol>';
     var rts = (s.routes || []).filter(function(rt){ return byId[rt.from] && byId[rt.to]; });
     var rl = rts.length ? '<ul class="geo-routes">' + rts.map(function(rt){ return '<li><i style="border-color:' + col(rt.family || byId[rt.from].family) + '"></i>' + esc(rt.label) + '</li>'; }).join('') + '</ul>' : '';
-    return '<div class="geo-wrap">' + o + leg + rl + key + (s.note ? '<p class="geo-note">' + esc(s.note) + '</p>' : '') + '</div>';
+    return '<div class="geo-wrap"><div class="geo-mapbox">' + o + '<div class="geo-tip" role="status" hidden></div></div>' + leg + rl + key + (s.note ? '<p class="geo-note">' + esc(s.note) + '</p>' : '') + '</div>';
   }
-  /* tap a badge: show its entry in the key */
+  /* tap a badge: show its entry over the map, and mark it in the key */
   document.addEventListener('click', function(e){
+    var x = e.target.closest && e.target.closest('.geo-tip-x'); if(x){ var t0 = x.closest('.geo-tip'); t0.hidden = true; return; }
     var b = e.target.closest && e.target.closest('.geo-b'); if(!b) return;
     var wrap = b.closest('.geo-wrap'), li = wrap && wrap.querySelector('[data-geo-k="' + b.getAttribute('data-geo-n') + '"]'); if(!li) return;
-    [].forEach.call(wrap.querySelectorAll('.geo-key li.hit'), function(x){ x.classList.remove('hit'); });
-    li.classList.add('hit'); try{ li.scrollIntoView({block:'nearest', behavior:'smooth'}); }catch(er){}
+    [].forEach.call(wrap.querySelectorAll('.geo-key li.hit'), function(z){ z.classList.remove('hit'); });
+    li.classList.add('hit');
+    var tip = wrap.querySelector('.geo-tip'); if(tip){ tip.innerHTML = '<button type="button" class="geo-tip-x" aria-label="Close">✕</button>' + li.innerHTML; tip.hidden = false; }
   });
   document.addEventListener('keydown', function(e){ if((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('geo-b')){ e.preventDefault(); e.target.dispatchEvent(new MouseEvent('click', {bubbles:true})); } });
   window.OTSGeo = {render:render};

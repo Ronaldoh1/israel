@@ -1,5 +1,10 @@
 .geo-wrap{margin:6px 0 0}
-.geo-svg{display:block;width:100%;height:auto;border-radius:6px}
+.geo-svg{display:block;width:100% !important;max-width:none !important;height:auto;border-radius:6px;overflow:hidden !important}
+.geo-mapbox{position:relative}
+.geo-tip{position:absolute;left:6px;right:6px;bottom:6px;display:flex;gap:9px;align-items:flex-start;background:var(--geo-tipbg,#fffdf7);color:var(--geo-ink,#26221C);border:1px solid rgba(0,0,0,.15);border-radius:8px;padding:9px 34px 9px 9px;font-size:13.5px;line-height:1.4;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.geo-tip[hidden]{display:none}
+.geo-tip small{display:block;font-size:12.5px;margin-top:1px}
+.geo-tip-x{position:absolute;top:4px;right:4px;width:28px;height:28px;border:0;background:transparent;color:inherit;font-size:15px;cursor:pointer}
 .geo-sea{fill:var(--geo-sea,#DCE7EF)}
 .geo-land{fill:var(--geo-land,#EFE6D2);stroke:var(--geo-coast,#A89C80)}
 .geo-bord{fill:none;stroke:var(--geo-bord,#C9BEA4)}
@@ -18,7 +23,7 @@
 .geo-n{flex:none;width:24px;height:24px;border-radius:50%;color:#fff;font:700 12px/24px system-ui,-apple-system,sans-serif;text-align:center}
 .geo-key small{display:block;font-size:12.5px;margin-top:1px}
 .geo-note{font-size:12.5px;margin:10px 0 0;text-indent:0}
-#bookView[data-theme="night"]{--geo-sea:#1B2733;--geo-land:#3A352B;--geo-coast:#6B6250;--geo-bord:#55503F;--geo-leadc:#cfc6b0}
+#bookView[data-theme="night"]{--geo-tipbg:#24221d;--geo-sea:#1B2733;--geo-land:#3A352B;--geo-coast:#6B6250;--geo-bord:#55503F;--geo-leadc:#cfc6b0}
 @media (min-width:760px){.geo-key{grid-template-columns:1fr 1fr}}
 .geo-dest{fill:var(--geo-ink,#26221C)}
 .geo-dlab{fill:var(--geo-ink,#26221C);stroke:var(--geo-land,#EFE6D2);paint-order:stroke}
