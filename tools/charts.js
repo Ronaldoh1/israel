@@ -330,7 +330,7 @@
     return '<div class="otsc-venn">' + o + '<ol class="otsc-vkey">' + G.map(function(g, k){ return '<li><span class="otsc-vnum">' + (k + 1) + '</span><span><b>' + inline(g.who) + '</b>' + (g.ex ? '<br><span class="otsc-fn">' + inline(g.ex) + '</span>' : '') + '</span></li>'; }).join('') + '</ol></div>' +
       (s.note ? '<p class="otsc-foot">' + inline(s.note) + '</p>' : '');
   }
-  var DRAW = {hbar:hbar, stacked:stacked, line:line, donut:donut, pair:pair, kpis:kpis, flow:flow, table:table, venn:venn, geomap:function(s){ return window.OTSGeo ? window.OTSGeo.render(s) : '<p class="otsc-cap">(Map not available here.)</p>'; }};
+  var DRAW = {hbar:hbar, stacked:stacked, line:line, donut:donut, pair:pair, kpis:kpis, flow:flow, table:table, venn:venn, geomap:function(s){ return window.OTSGeo ? window.OTSGeo.render(s) : '<p class="otsc-cap">(Map not available here.)</p>'; }, matrix:function(s){ return window.OTSMatrix ? window.OTSMatrix.render(s) : '<p class="otsc-cap">(Grid not available here.)</p>'; }};
 
   /* ---------- one panel ---------- */
   function panel(sec, opts){

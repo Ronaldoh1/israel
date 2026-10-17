@@ -2,7 +2,7 @@
 """Maps in dashboards and library figures, and the "Jewish Lineages" map dashboard (index.html).
 
 - Injects the shared basemap (tools/geo_base.json), the map renderer (tools/geo.js) and its styles (tools/geo.css).
-- Adds a "geomap" panel type to the simulation's dashboard renderer (the library's tools/charts.js has its own hook).
+- Adds the "geomap" and "matrix" panel types (tools/matrix.js, tools/matrix.css) to the simulation's dashboard renderer (the library's tools/charts.js has its own hook).
 - Adds the dashboard in book/src/lineages_dashboard.json and links it from the scenes it lists.
 Idempotent. Run after patch_four_words.py. Usage: python3 tools/patch_lineages_map.py [index.html]"""
 import json, os, sys
@@ -17,9 +17,9 @@ def swap(old, new, count=1):
     s = s.replace(old, new)
 rd = lambda n: open(os.path.join(ROOT, 'tools', n), encoding='utf-8').read()
 base = json.load(open(os.path.join(ROOT, 'tools', 'geo_base.json')))
-block = ('<!--GEO-START--><style>' + rd('geo.css') + '</style><script>window.OTS_GEO=' + json.dumps(base, separators=(',', ':')) + ';</script><script>' + rd('geo.js') + '</script><!--GEO-END-->\n')
+block = ('<!--GEO-START--><style>' + rd('geo.css') + rd('matrix.css') + '</style><script>' + rd('matrix.js') + '</script><script>window.OTS_GEO=' + json.dumps(base, separators=(',', ':')) + ';</script><script>' + rd('geo.js') + '</script><!--GEO-END-->\n')
 i = s.rfind('</body>'); s = s[:i] + block + s[i:]
-swap("pair:pair,venn:venn};", "pair:pair,venn:venn,geomap:function(s){ return window.OTSGeo?window.OTSGeo.render(s):''; }};")
+swap("pair:pair,venn:venn};", "pair:pair,venn:venn,geomap:function(s){ return window.OTSGeo?window.OTSGeo.render(s):''; },matrix:function(s){ return window.OTSMatrix?window.OTSMatrix.render(s):''; }};")
 total = 0
 for did, fn in (('jewish_lineages', 'lineages_dashboard.json'), ('semitic_languages', 'semitic_dashboard.json')):
     D = json.load(open(os.path.join(ROOT, 'book', 'src', fn), encoding='utf-8'))
