@@ -176,7 +176,8 @@ for c in CH:
                   'keywords': ' '.join(SC[x]['t'] for x in c['scenes'] if x in SC)})
     vol += 1
 
-lib = {'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
+import datetime
+lib = {'edition': datetime.date.today().strftime('%B %Y'), 'author': 'Ron Hernandez', 'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
        'note': 'The documented record, told in order, with every claim tied to its source. Tap a note number to see it, a name in a figure for its detail, or the + button for contents, bookmarks and notes.',
        'books': books}
 payload = json.dumps(lib, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
