@@ -107,6 +107,7 @@ def split_name(name):
 class Cand:
     def __init__(self, r):
         self.race, self.state, self.office, self.name = r['race'], r['state'], r['office'], r['name']
+        self.incumbent = (r.get('incumbent') or '').strip().lower() == 'yes'
         self.id = r['data_id'] or '%s-%s' % (r['race'].lower(), slug(r['name']))
         self.first, self.last = split_name(r['name'])
         self.full = SUFFIX.sub('', r['name'].replace('"', '').strip())
@@ -121,6 +122,8 @@ def run_courts(cands, token):
     op = urllib.request.build_opener(urllib.request.HTTPSHandler(context=CTX))
     H = {'Authorization': f'Token {token}', 'Accept': 'application/json'}
     todo = [c for c in cands if not os.path.exists(os.path.join(c.folder(), 'courts_courtlistener.json'))]
+    # highest-stakes first: Senate and governor races, then sitting members of Congress, then everyone else
+    todo.sort(key=lambda c: (0 if c.office in ('senate', 'governor') else 1 if c.incumbent else 2))
     log(f'  {len(cands) - len(todo)} already done, {len(todo)} to search')
     for i, c in enumerate(todo, 1):
         short = f'{c.first} {c.last}'

@@ -1126,12 +1126,34 @@ function filingBlock(c){
   }
   return h;
 }
+
+/* parts of the score the public records already settle, for candidates whose full research is still to come */
+function partialScore(c){
+  var ax = {};
+  if(c.fund_rec){ var F = c.fund_rec; ax.funding = scoreFunding({fec: {receipts: F.receipts, src: F.src, outside: F.outside}, money_flags: F.flags, checklist: {money_history: 'news'}, israel: {}}); }
+  if(c.votes_kv) ax.votes = scoreVotes(c);
+  var rc = scoreRecord(c); if(rc) ax.record = rc;
+  Object.keys(ax).forEach(function(k){ if(!ax[k] || ax[k].s == null) delete ax[k]; });
+  return ax;
+}
+function partialBox(c){
+  var ax = partialScore(c), have = Object.keys(ax);
+  if(!have.length) return '<div class="pendnote"><b>Not yet scored.</b> This candidate’s place on the November ballot is verified, and the public records below are loaded. None of the six parts of the score can be calculated from the records alone yet; the full research (background, claims checked, positions, said vs. did) comes next, district by district. Nothing here is graded or assumed.</div>';
+  var h = '<div class="scorebox"><div class="sb-ring">' + ring(null, 124) + '</div><div class="sb-axes">' +
+    RUBRIC.axes.map(function(a){ var v = ax[a.id]; return '<div class="sb-ax"><div class="sb-ax-h"><span>' + esc(a.name) + '</span><b>' + (v ? fmtS(v.s) : '—') + '</b></div>' + axisBar(v ? v.s : null) + '</div>'; }).join('') +
+    '<button class="linkbtn" data-go="method">How this score works →</button></div></div>';
+  h += '<div class="pendnote"><b>' + have.length + ' of 6 parts calculated from the public records, provisional.</b> The overall score waits for the full research (background, claims checked, court and ethics records), which comes next, district by district. A dash means that part has not been calculated yet; nothing is estimated or assumed clean.</div>';
+  h += RUBRIC.axes.filter(function(a){ return ax[a.id]; }).map(function(a){ var v = ax[a.id];
+    return '<details class="acc"><summary>' + esc(a.name) + ': ' + fmtS(v.s) + ' — how it was reached</summary><div class="b"><ul class="why">' + v.why.map(function(w){ return '<li><span class="wv ' + (w.length === 3 ? 'pt' : (w[0] < 0 ? 'neg' : w[0] > 0 ? 'pos' : 'zero')) + '">' + (w.length === 3 ? w[0] + '/' + w[1] : (w[0] < 0 ? '−' + Math.abs(w[0]) : w[0] > 0 ? '+' + w[0] : '0')) + '</span>' + esc(w[w.length - 1]) + '</li>'; }).join('') + '</ul>' +
+      (a.id === 'funding' ? '<p class="muted">From the 2026 FEC filings' + (c.fund_rec.thru ? ' through ' + esc(c.fund_rec.thru) : '') + '. Because the full career search is not finished, no credit is given for an absence of corporate or lobby money.</p>' : '') + '</div></details>'; }).join('');
+  return h;
+}
 function recordsPage(c, r, s, id){
   var others = r.candidates.filter(function(x){ return x !== id; });
   var h = '<section class="hero2" style="--pc:' + (PCOL[c.party] || '#c8d6ec') + '">' +
     '<div class="hero2-top">' + avatar(c, true) + '<div class="hero2-id"><div class="kicker">' + esc(raceLabel(r)) + '</div><h1>' + esc(c.name) + '</h1>' +
     '<div class="tagrow">' + partyChip(c.party) + '<span class="muted">' + esc(c.party_note || PARTY[c.party]) + '</span>' + (c.incumbent ? '<span class="inc">INCUMBENT</span>' : '') + '</div></div></div>' +
-    '<div class="pendnote"><b>Not yet scored.</b> This candidate’s place on the November ballot is verified, and the public records below are loaded: money, outside spending, votes and attendance where they served in Congress, and their FEC filing record. The full research (background, claims checked, positions, said vs. did) and the score come next, district by district. Nothing here is graded or assumed.</div>' +
+    partialBox(c) +
     '<div class="actions">' + (others.length ? '<button class="btn ghost" data-go="race" data-arg="' + r.id + '">← Back to the race</button>' : '') + '</div></section>';
   if(c.wiki) h += '<h2 id="c-bg">Who they are</h2>' + wikiBlock(c);
   if(c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + attendBlock(c) + votesBlock(c, s);

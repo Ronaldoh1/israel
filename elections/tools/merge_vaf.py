@@ -164,9 +164,52 @@ for cid, c in C.items():
                 'for': short_outside(out.get('support')), 'against': short_outside(out.get('oppose')),
                 'nondisc': fl.get('non_disclosing_outside_spending') or 0,
                 'q': [[r[0], r[2], r[3]] for r in qmain]}
+        if qmain:   # period totals for the principal committee, 2025-26 cycle: the consistent basis for the funding mix
+            deep['qsum'] = {'receipts': round(sum(r[3] or 0 for r in qmain)), 'indiv': round(sum(r[4] or 0 for r in qmain)),
+                            'small': round(sum(r[5] or 0 for r in qmain)), 'pacs': round(sum(r[6] or 0 for r in qmain)), 'thru': max(r[2] for r in qmain)}
         if any([deep['itemized'], deep['top'], deep['for'], deep['against'], deep['earmarks']]):
             c['deep'] = deep; stats['deep'] += 1
 
 D['meta']['vaf_merged'] = '2026-10-18'
 json.dump(D, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print(dict(stats))
+
+# ---------------------------------------------------------------- funding inputs from the records (for records-tier pages)
+# Builds the same inputs the Funding-independence formula uses for researched candidates, from the FEC records only.
+# Shown as a provisional part score; the career search counts as not complete, so no "clean record" bonus is given.
+D2 = json.load(open(OUT, encoding='utf-8'))
+REC = D2['rec']; n_fund = 0
+for cid, c in D2['cands'].items():
+    r = REC.get(c.get('rec')) if c.get('rec') else None
+    M = c.get('deep') or {}
+    if not r or c.get('research') != 'records': continue
+    Q = M.get('qsum') or {}
+    cy = [y for y in (r.get('cyc') or []) if y[0] == 2026]
+    if not Q.get('receipts') or not cy: continue      # needs the period reports, so receipts and small gifts cover the same dates
+    y = cy[0]; receipts, pacs, party, self_ = Q['receipts'], Q['pacs'], y[4], y[5]
+    p26 = r.get('pac26') or {}; pall = r.get('pac') or {}
+    biz0 = sum(p26.get(k, 0) for k in ('corporate', 'trade', 'labor', 'membership', 'coop'))
+    ideo0 = sum(p26.get(k, 0) for k in ('ideological', 'leadership', 'superpac', 'candidate'))
+    k_ = pacs / (biz0 + ideo0) if (biz0 + ideo0) else 0      # split the period PAC total by the itemized PAC mix
+    biz, ideo = round(biz0 * k_), round(ideo0 * k_)
+    earm = 0
+    for e in M.get('earmarks') or []:
+        m = re.match(r'\$([\d,]+)', e)
+        if m: earm += int(m.group(1).replace(',', ''))
+    small = Q['small']
+    out_sup = [[g[0], g[1], None, (len(g) > 5 and g[5] == 'Party') or bool(re.fullmatch(r'(DCCC|NRCC|DSCC|NRSC)', g[0].strip(), re.I))] for g in (M.get('for') or [])]
+    flags = {}
+    corp_all = sum(pall.get(k, 0) for k in ('corporate', 'trade', 'labor', 'membership', 'coop'))
+    if corp_all: flags['corp'] = {'t': 'Business, trade or union PAC money in their FEC record (%s across all cycles)' % '${:,.0f}'.format(corp_all), 'c': []}
+    named = [f for f in (r.get('fp') or []) if f[2] == 'named']
+    lob = []
+    if named: lob.append('%s (%s)' % (named[0][0].title(), '${:,.0f}'.format(sum(f[3] for f in named))))
+    if earm and any('ISRAEL' in e.upper() for e in M.get('earmarks') or []): lob.append('earmarked through AIPAC PAC (%s)' % '${:,.0f}'.format(earm))
+    if any(re.search(r'UNITED DEMOCRACY PROJECT', g[0], re.I) for g in (M.get('for') or [])): lob.append('United Democracy Project spent to help')
+    if lob: flags['lobby'] = {'t': 'Foreign-policy lobby money in the FEC record: ' + '; '.join(lob), 'c': []}
+    c['fund_rec'] = {'receipts': receipts, 'thru': Q['thru'],
+                     'src': {'small': small, 'large': max(0, Q['indiv'] - small), 'pac_biz': biz, 'pac_ideo': ideo, 'earmark': earm, 'party': party, 'self': self_},
+                     'outside': {'support': out_sup}, 'flags': flags}
+    n_fund += 1
+json.dump(D2, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+print('funding inputs:', n_fund)
