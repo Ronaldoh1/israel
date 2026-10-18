@@ -1,0 +1,211 @@
+{
+ "volume": "divine",
+ "verified": "2026-10-18",
+ "entries": [
+  {
+   "id": "pm1_law",
+   "stage": "pm1",
+   "topic": "The legal channels for political money",
+   "claims": [
+    {
+     "text": "For the 2025–2026 cycle a candidate committee may accept $3,500 per election from an individual and $5,000 per election from a multicandidate PAC; primary, general, runoff and special elections each carry a separate limit.",
+     "strength": "primary",
+     "sources": [
+      "pm_fec_limits"
+     ]
+    },
+    {
+     "text": "A super PAC is an independent-expenditure-only committee that may raise unlimited sums but may not contribute to or coordinate with candidates or parties; it grew out of Citizens United v. FEC (January 2010) and SpeechNow.org v. FEC (D.C. Circuit, March 2010), with FEC advisory opinions of 22 July 2010.",
+     "strength": "reported",
+     "sources": [
+      "pm_wiki_superpac"
+     ]
+    },
+    {
+     "text": "Super PACs report like other PACs, but monthly or quarterly filing can delay donor disclosure until after an election, and 'pop-up' super PACs formed within 20 days of an election can delay their first reports until after it.",
+     "strength": "reported",
+     "sources": [
+      "pm_wiki_superpac"
+     ]
+    },
+    {
+     "text": "AIPAC PAC runs a site where donors direct contributions to AIPAC-endorsed candidates; payments are processed by Democracy Engine and donors agree that they are earmarked contributions within the meaning of 11 C.F.R. § 110.6(b). Sludge reported the PAC had directed more than $1 million in earmarked donations to Hakeem Jeffries, who had said on air that AIPAC's PAC could give '$5,000 or $10,000 per cycle'.",
+     "strength": "reported",
+     "sources": [
+      "pm_sludge_jeffries",
+      "pm_ecfr_1106"
+     ]
+    },
+    {
+     "text": "Foreign nationals, including foreign governments, parties and corporations, may not make contributions or expenditures directly or indirectly in any federal, state or local election; lawful permanent residents are not covered by the ban.",
+     "strength": "primary",
+     "sources": [
+      "fec_foreign_nationals"
+     ]
+    },
+    {
+     "text": "Since 2007 registered lobbyists and entities that employ them are generally barred from sponsoring officially connected congressional travel beyond a one-day event; trips require Ethics Committee pre-approval, and House travel disclosures are due within 15 days of return (Senate within 30).",
+     "strength": "reported",
+     "sources": [
+      "pm_citizen_travel"
+     ]
+    },
+    {
+     "text": "The Intercept reported that the 2007 law left an exception for 501(c)(3) charitable and educational groups, which AIPAC's charitable affiliate AIEF uses; Public Citizen's Craig Holman, who helped draft the law, said 'These trips would be illegal otherwise,' and AIEF's donors are redacted from its public tax filings.",
+     "strength": "reported",
+     "sources": [
+      "intercept_aief_donors"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "pm_fec_limits",
+     "url": "https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/contribution-limits-candidates",
+     "label": "FEC — Contribution limits for candidates, 2025–2026"
+    },
+    {
+     "key": "pm_wiki_superpac",
+     "url": "https://en.wikipedia.org/wiki/Super_PAC",
+     "label": "Wikipedia — Super PAC"
+    },
+    {
+     "key": "pm_sludge_jeffries",
+     "url": "https://readsludge.com/2025/11/25/jeffries-misleads-on-aipac-pac-money/",
+     "label": "Sludge (David Moore, Donald Shaw) — 'Jeffries Misleads on AIPAC PAC Money', 25 Nov 2025"
+    },
+    {
+     "key": "pm_ecfr_1106",
+     "url": "https://www.ecfr.gov/current/title-11/chapter-I/subchapter-A/part-110/section-110.6",
+     "label": "11 C.F.R. § 110.6 — Earmarked contributions (eCFR)"
+    },
+    {
+     "key": "pm_citizen_travel",
+     "url": "https://www.citizen.org/article/congressional-travel-rules/",
+     "label": "Public Citizen — Congressional travel rules (summary, updated 2019)"
+    },
+    {
+     "key": "fec_foreign_nationals",
+     "url": "https://www.fec.gov/help-candidates-and-committees/foreign-nationals",
+     "label": "FEC — Foreign nationals"
+    },
+    {
+     "key": "intercept_aief_donors",
+     "url": "https://theintercept.com/2023/11/18/aipac-congress-israel-trips-donors/",
+     "label": "The Intercept — AIPAC's charity and congressional trips to Israel, 18 Nov 2023"
+    }
+   ]
+  },
+  {
+   "id": "pm1_counting",
+   "stage": "pm1",
+   "topic": "How pro-Israel money is counted",
+   "claims": [
+    {
+     "text": "The Center for Responsive Politics' pro-Israel category recorded $108.6 million in contributions from 1990 to 2012 — $71.5 million from individuals, $34.5 million from PACs and $2.5 million in soft money — split about two-thirds to Democrats and one-third to Republicans; cycle totals ranged from $5.6 million (1996) to $14.0 million (2008).",
+     "strength": "reported",
+     "sources": [
+      "pm_jvl_pacs"
+     ]
+    },
+    {
+     "text": "OpenSecrets reported in 2019 that AIPAC did not contribute to candidates; pro-Israel contributions then came from independent PACs and individuals.",
+     "strength": "reported",
+     "sources": [
+      "opensecrets_aipac_2019"
+     ]
+    },
+    {
+     "text": "Track AIPAC's career totals count all pro-Israel PACs, including the dovish J Street, plus their large donors, and add outside spending made on a member's behalf; its figures are a broad definition by design.",
+     "strength": "reported",
+     "sources": [
+      "trackaipac_congress"
+     ]
+    },
+    {
+     "text": "In 2018, per OpenSecrets via Tablet, AIPAC spent $3,518,028 on lobbying, ranking about 147th; all pro-Israel groups combined spent $5,022,028, against $94.8 million by the US Chamber of Commerce; pro-Israel donors ranked 34th among interest groups giving to members of Congress that year.",
+     "strength": "reported",
+     "sources": [
+      "pm_tablet_lobbying"
+     ]
+    },
+    {
+     "text": "A Guardian analysis found members who received more pro-Israel money were more likely to back military support for Israel, but party affiliation best predicted their statements on civilian casualties, and the data could not show that money changed positions.",
+     "strength": "reported",
+     "sources": [
+      "guardian_gaza_donors"
+     ]
+    },
+    {
+     "text": "J Street describes itself as a 'pro-Israel, pro-peace' group backing a two-state solution; in the 2018 cycle JStreetPAC said it distributed nearly $5 million to 163 congressional candidates and raised over 53 percent of all pro-Israel PAC money distributed that cycle, calling itself the largest pro-Israel PAC.",
+     "strength": "reported",
+     "sources": [
+      "pm_jstreet_2018"
+     ]
+    },
+    {
+     "text": "Sludge, from FEC data, reported AIPAC's PAC and super PAC had combined for $104.3 million in 2026-cycle spending by early August 2026; a third-party aggregator claimed $231.8 million in pro-Israel money across 527 congressional records, a difference largely of scope.",
+     "strength": "reported",
+     "sources": [
+      "pm_sludge_100m_2026",
+      "pm_genus_tracker"
+     ]
+    },
+    {
+     "text": "FactCheck.org reported (7 Aug 2026) that UDP spent over $3 million opposing Thomas Massie and nearly $500,000 supporting Ed Gallrein in the KY-4 primary of 19 May 2026.",
+     "strength": "reported",
+     "sources": [
+      "pm_factcheck_udp_2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "pm_jvl_pacs",
+     "url": "https://www.jewishvirtuallibrary.org/jsource/US-Israel/israelpacs.html",
+     "label": "Jewish Virtual Library — Pro-Israel PACs, individuals and soft money by cycle, 1990–2012 (from the Center for Responsive Politics)"
+    },
+    {
+     "key": "opensecrets_aipac_2019",
+     "url": "https://www.opensecrets.org/news/2019/02/aipac-dont-contribute-which-pro-israel-groups-do/",
+     "label": "OpenSecrets — 'AIPAC doesn't contribute. Which pro-Israel groups do?' (2019)"
+    },
+    {
+     "key": "trackaipac_congress",
+     "url": "https://www.trackaipac.com/congress",
+     "label": "Track AIPAC — Congress (FEC-based compilation)"
+    },
+    {
+     "key": "pm_tablet_lobbying",
+     "url": "https://www.tabletmag.com/sections/news/articles/how-influential-is-aipac",
+     "label": "Tablet (Armin Rosen) — 'How Much Does AIPAC Spend on Lobbying?', 6 Mar 2019"
+    },
+    {
+     "key": "guardian_gaza_donors",
+     "url": "https://www.aol.com/news/revealed-congress-backers-gaza-war-123032026.html",
+     "label": "The Guardian — Congress backers of Gaza war received most from pro-Israel donors"
+    },
+    {
+     "key": "pm_jstreet_2018",
+     "url": "https://jstreet.org/press-releases/jstreetpac-sets-records-helps-elect-congress-that-can-check-trumps-agenda/",
+     "label": "J Street — 'JStreetPAC Sets Records', press release, 7 Nov 2018"
+    },
+    {
+     "key": "pm_sludge_100m_2026",
+     "url": "https://readsludge.com/2026/08/03/aipac-tops-100-million-in-election-spending-for-second-straight-cycle/",
+     "label": "Sludge — 'AIPAC Tops $100 Million in Election Spending for Second Straight Cycle', 3 Aug 2026"
+    },
+    {
+     "key": "pm_genus_tracker",
+     "url": "https://gen-us.space/data/aipac-spending",
+     "label": "Gen Us — 'AIPAC Spending Tracker 2026' (third-party aggregator; cited only for its total and method)"
+    },
+    {
+     "key": "pm_factcheck_udp_2026",
+     "url": "https://www.factcheck.org/2026/08/united-democracy-project-3/",
+     "label": "FactCheck.org — 'United Democracy Project' (2026 update), 7 Aug 2026"
+    }
+   ]
+  }
+ ]
+}

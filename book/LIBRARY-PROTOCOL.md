@@ -230,3 +230,9 @@ Each chapter moves through these steps in order. It cannot move to the next step
 ---
 
 *Observe. Collapse. Reignite.*
+
+
+---
+
+## Standing default (added 18 October 2026, Ron)
+Every volume, including thematic volumes outside the chronological order, is written to the Road to 1948 standard: the gates, depth targets and audit in this protocol. Every claim carries a clickable inline citation, each chapter/stage/part ends with its sources, and every volume ends with a full bibliography of all sources cited in it.

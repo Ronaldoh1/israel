@@ -525,6 +525,7 @@ body.book-open #libBanner{display:none}
       c.sections.forEach(function(x){ var n = words(x.html) + 90 * ((x.html.match(/<figure/g) || []).length + 1); cites += (x.html.match(/\[cite:/g) || []).length; P.sec[x.s] = {start:p, len:npages(n)}; p += npages(n); });
       if(c.outro) p += npages(words(c.outro));
       p += Math.max(1, Math.ceil(cites / 45));  /* notes */
+      if(c === B.chapters[B.chapters.length - 1]){ var all = {}; B.chapters.forEach(function(cc){ cc.sections.forEach(function(x){ (x.html.match(/\[cite:[A-Za-z0-9_]+\]/g) || []).forEach(function(t){ all[t] = 1; }); }); }); p += Math.max(1, Math.ceil(Object.keys(all).length / 40)); }  /* bibliography */
       P.ch.push({start:st, end:p - 1});
     });
     P.total = p - 1; return (B._pg = P);
@@ -659,6 +660,26 @@ body.book-open #libBanner{display:none}
     });
     C.wire(root);
   }
+  /* a readable label for a source that has a link but no stored title: the site and the page's own words */
+  function srcLabel(key){
+    if(LBL[key]) return LBL[key];
+    var u = CIT[key]; if(!u) return key;
+    try { var x = new URL(u), host = x.hostname.replace(/^www\./, ''), tail = decodeURIComponent(x.pathname).split('/').filter(Boolean).pop() || '';
+      tail = tail.replace(/\.(html?|php|aspx?|pdf)$/i, '').replace(/[-_]+/g, ' ').replace(/\s+/g, ' ').trim();
+      if(/^\d+$/.test(tail) || tail.length < 4) tail = '';
+      return host + (tail ? ' — ' + tail.charAt(0).toUpperCase() + tail.slice(1) : ''); } catch(e){ return u; }
+  }
+  /* the volume's bibliography: every source cited anywhere in the book, once, in alphabetical order */
+  function bibliography(){
+    var seen = {}, keys = [], re = /\[cite:([A-Za-z0-9_]+)\]/g, m;
+    var txt = [BOOK.intro || ''];
+    BOOK.chapters.forEach(function(c){ txt.push(c.intro || '', c.outro || ''); c.sections.forEach(function(x){ txt.push(x.html || ''); }); });
+    txt.forEach(function(t){ re.lastIndex = 0; while((m = re.exec(t))){ if(!seen[m[1]] && (CIT[m[1]] || LBL[m[1]])){ seen[m[1]] = 1; keys.push(m[1]); } } });
+    if(!keys.length) return '';
+    keys.sort(function(a, b){ var x = String(srcLabel(a)).replace(/^[^A-Za-z0-9]+/, '').toLowerCase(), y = String(srcLabel(b)).replace(/^[^A-Za-z0-9]+/, '').toLowerCase(); return x < y ? -1 : x > y ? 1 : 0; });
+    return '<section class="bk-notes bk-bib bk-pgbreak" id="bk-bibliography" aria-label="Bibliography"><h3>Bibliography</h3><p class="sm" style="text-indent:0;margin:0 0 1em">Every source cited in Volume ' + roman(BOOK.vol) + ', ' + keys.length + ' in all, in alphabetical order.</p><ul style="list-style:none;padding-left:0">' +
+      keys.map(function(key){ var u = CIT[key], l = srcLabel(key); return '<li>' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ul></section>';
+  }
   function render(k, target){
     var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
     var h = '';
@@ -682,9 +703,10 @@ body.book-open #libBanner{display:none}
       h += '<div class="bk-acts">' + acts.join('') + '</div></section>';
     });
     if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>' + esc(c.outroTitle || 'In sum') + '</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
-    h += '<section class="bk-notes bk-pgbreak" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = LBL[key] || key;
+    h += '<section class="bk-notes bk-pgbreak" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = srcLabel(key);
       return '<li id="bkn-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
     var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1];
+    if(!nx) h += bibliography();
     if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>' + esc(nx.label) + '</small>' + esc(nx.title) + '</button>';
     else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: Volume ' + roman(nb.vol) + '</small>' + esc(nb.title) + '</button>';
     else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
@@ -958,7 +980,7 @@ body.book-open #libBanner{display:none}
   function hidePop(){ pop.classList.remove('on'); }
   page.addEventListener('click', function(e){
     var n = e.target.closest('.bk-n'); if(n){ e.preventDefault(); var k = n.getAttribute('data-k'), u = CIT[k];
-      showPop('<h5>Note ' + n.textContent + '</h5><p class="r">' + esc(LBL[k] || k) + '</p>' + (u ? '<a class="bk-src" href="' + esc(u) + '" target="_blank" rel="noopener">Open the source ↗</a>' : '')); return; }
+      showPop('<h5>Note ' + n.textContent + '</h5><p class="r">' + esc(srcLabel(k)) + '</p>' + (u ? '<a class="bk-src" href="' + esc(u) + '" target="_blank" rel="noopener">Open the source ↗</a>' : '')); return; }
     var x = e.target.closest('.bk-x'); if(x){ e.preventDefault(); goTo(x.getAttribute('data-s')); return; }
     var nd = e.target.closest('.nd'); if(nd){ nodePop(nd); return; }
     var gg = e.target.closest('[data-go]'); if(gg){ goTo(gg.getAttribute('data-go')); return; }
