@@ -1076,14 +1076,68 @@ function filersBlock(r){
   return '<details class="acc" style="margin-top:12px"><summary>Also filed with the FEC for this seat (' + F.length + ')</summary><div class="b"><p class="muted">Mostly candidates who lost the primary or withdrew. They are not on the November ballot unless listed above. Money raised in the 2026 cycle, as filed.</p><div class="tbwrap"><table class="tb"><thead><tr><th>Name</th><th>Party</th><th>Raised, 2026</th></tr></thead><tbody>' +
     F.map(function(f){ return recRow([esc(f[0]) + (f[3] ? ' <span class="inc">INC</span>' : ''), partyChip(f[1]), money(f[2])]); }).join('') + '</tbody></table></div></div></details>';
 }
+
+/* ===== v0.5 · Vote America First records (Oct 18, 2026): background, attendance, money detail, fact-checks, filing record ===== */
+function wikiBlock(c){
+  var W = c.wiki; if(!W) return '';
+  return '<div class="rec"><div class="rec-t">' + esc(W.t) + '</div><div class="src" style="margin-top:6px">Opening paragraph of <a href="' + esc(W.u) + '" target="_blank" rel="noopener">Wikipedia: ' + esc(W.title) + '</a> (CC BY-SA)' +
+    (/name search/.test(W.matched_by || '') ? ' · matched by name and state, not by an official ID' : '') + '</div></div>';
+}
+function attendBlock(c){
+  var V = c.vstats; if(!V || !V.n) return '';
+  return '<div class="kpis">' + kpi(V.pct + '%', 'Roll calls missed, ' + V.congress + 'th Congress') + kpi(V.missed + ' of ' + V.n, 'Roll calls missed (' + V.chamber + ')') + '</div>' +
+    '<div class="src">From the official roll-call record, ' + esc(V.first) + ' to ' + esc(V.last) + '.</div>';
+}
+function grpRows(rows){
+  return '<div class="tbwrap"><table class="tb"><thead><tr><th>Group</th><th>Spent</th><th>Who funds the group</th></tr></thead><tbody>' + rows.map(function(g){
+    var who = (g[3] || []).map(function(x){ return esc(x[0]) + ' (' + money(x[1]) + ')'; }).concat((g[4] || []).map(function(x){ return esc(x[0]) + (x[2] ? ', ' + esc(x[2]) : '') + ' (' + money(x[1]) + ')'; }));
+    return recRow(['<b>' + esc(g[0]) + '</b>' + (g[5] ? '<div class="muted" style="font-size:11px">' + esc(g[5]) + '</div>' : ''), money(g[1]),
+      g[2] ? (who.length ? who.slice(0, 5).join('; ') : '<span class="muted">No large donors itemized</span>') : '<span class="tone warn">Does not disclose its donors to the FEC</span>']);
+  }).join('') + '</tbody></table></div>';
+}
+function deepMoneyBlock(c){
+  var M = c.deep; if(!M) return '';
+  var h = '<h3>2026 money in detail</h3><p class="muted">From the FEC’s itemized records, pulled ' + esc(M.thru) + '. Itemized gifts are those over $200; the in-state share is by donor address.</p>';
+  var k = [];
+  if(M.itemized != null) k.push(kpi(money(M.itemized), 'From itemized individual donors'));
+  if(M.instate != null) k.push(kpi(Math.round(M.instate * 100) + '%', 'Of itemized money from in-state donors'));
+  if(M.nondisc) k.push(kpi(money(M.nondisc), 'Outside spending by groups that hide their donors'));
+  if(k.length) h += '<div class="kpis">' + k.join('') + '</div>';
+  if((M.earmarks || []).length) h += '<h3>Bundled through interest-group conduits</h3><div class="recs">' + M.earmarks.map(function(e){ return '<div class="rec"><div class="rec-t">' + esc(e) + '</div></div>'; }).join('') + '</div><p class="muted">Earmarked gifts are individual donations routed through a group’s PAC, which reports them as passed on to the candidate.</p>';
+  if((M.top || []).length) h += '<h3>Largest individual donors, 2026</h3><div class="tbwrap"><table class="tb"><thead><tr><th>Donor</th><th>Given</th><th>Occupation, employer</th></tr></thead><tbody>' + M.top.map(function(t){ return recRow([esc(t[0]), money(t[1]), esc(t[2] || '')]); }).join('') + '</tbody></table></div>';
+  if((M.for || []).length) h += '<h3>Outside groups spending to elect them</h3>' + grpRows(M.for);
+  if((M.against || []).length) h += '<h3>Outside groups spending to defeat them</h3>' + grpRows(M.against);
+  if((M['for'] || []).length || (M.against || []).length) h += '<p class="muted">“Who funds the group” lists the group’s largest donors on its own FEC reports, across everything it does, not only this race.</p>';
+  return h;
+}
+function filingBlock(c){
+  var h = '';
+  if(c.fec_notices_n != null){
+    h += '<h3>FEC filing record</h3>';
+    h += c.fec_notices_n ? '<p>The FEC sent their committees <b>' + c.fec_notices_n + '</b> request' + (c.fec_notices_n === 1 ? '' : 's') + ' for additional information, letters asking a campaign to fix or explain a report. They are common and are not penalties.</p><div class="recs">' +
+      (c.fec_notices || []).map(function(n){ return '<div class="rec"><a href="' + esc(n[2]) + '" target="_blank" rel="noopener">' + esc(n[1]) + '</a> <span class="muted">' + esc(n[0]) + '</span></div>'; }).join('') + '</div>' + (c.fec_notices_n > (c.fec_notices || []).length ? '<p class="muted">Most recent ' + (c.fec_notices || []).length + ' shown.</p>' : '')
+      : '<div class="clear">Checked: no FEC requests for additional information to their committees.</div>';
+  }
+  if((c.ethics_docs || []).length) h += '<h3>Ethics Committee documents naming them</h3><div class="recs">' + c.ethics_docs.map(function(e){ return '<div class="rec"><a href="' + esc(e[1]) + '" target="_blank" rel="noopener">' + esc(e[0]) + '</a></div>'; }).join('') + '</div><p class="muted">A document naming a member is not a finding against them; open it to read what the committee did.</p>';
+  if(c.politifact){
+    var P = c.politifact, L = {'true':'True','mostly true':'Mostly true','half true':'Half true','mostly false':'Mostly false','false':'False','pants on fire':'Pants on fire'}, n = sum(Object.keys(P.counts).map(function(k){ return P.counts[k]; }));
+    h += '<h3>PolitiFact rulings</h3><div class="tallies">' + Object.keys(L).filter(function(k){ return P.counts[k]; }).map(function(k){ return '<span class="tone neutral">' + L[k] + ': <b>' + P.counts[k] + '</b></span>'; }).join(' ') + '</div>' +
+      '<p class="muted">' + n + ' statements rated on <a href="' + esc(P.u) + '" target="_blank" rel="noopener">their PolitiFact page</a>, across their career. Shown for reference; the honesty score uses its own fixed sample of claims.</p>';
+  }
+  return h;
+}
 function recordsPage(c, r, s, id){
   var others = r.candidates.filter(function(x){ return x !== id; });
   var h = '<section class="hero2" style="--pc:' + (PCOL[c.party] || '#c8d6ec') + '">' +
     '<div class="hero2-top">' + avatar(c, true) + '<div class="hero2-id"><div class="kicker">' + esc(raceLabel(r)) + '</div><h1>' + esc(c.name) + '</h1>' +
     '<div class="tagrow">' + partyChip(c.party) + '<span class="muted">' + esc(c.party_note || PARTY[c.party]) + '</span>' + (c.incumbent ? '<span class="inc">INCUMBENT</span>' : '') + '</div></div></div>' +
-    '<div class="pendnote"><b>Not yet scored.</b> This candidate’s place on the November ballot is verified, and the public records below are loaded. The full research (background, claims checked, votes, positions, said vs. did) and the score come next, district by district. Nothing here is graded or assumed.</div>' +
+    '<div class="pendnote"><b>Not yet scored.</b> This candidate’s place on the November ballot is verified, and the public records below are loaded: money, outside spending, votes and attendance where they served in Congress, and their FEC filing record. The full research (background, claims checked, positions, said vs. did) and the score come next, district by district. Nothing here is graded or assumed.</div>' +
     '<div class="actions">' + (others.length ? '<button class="btn ghost" data-go="race" data-arg="' + r.id + '">← Back to the race</button>' : '') + '</div></section>';
-  h += '<h2 id="c-records">From the public records</h2>' + recordsBlock(c);
+  if(c.wiki) h += '<h2 id="c-bg">Who they are</h2>' + wikiBlock(c);
+  if(c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + attendBlock(c) + votesBlock(c, s);
+  else if(c.vstats) h += '<h2 id="c-votes">Attendance</h2>' + attendBlock(c);
+  if(c.effectiveness) h += '<h2 id="c-office">In office</h2>' + officeBlock(c, s);
+  h += '<h2 id="c-records">From the public records</h2>' + recordsBlock(c) + deepMoneyBlock(c) + filingBlock(c);
   return h;
 }
 VIEWS.cand = function(id){
@@ -1144,10 +1198,10 @@ VIEWS.cand = function(id){
   if(c.promises && c.promises.length) h += '<h3>Promises on the record</h3><ul class="rules">' + c.promises.map(function(p){ return '<li>' + txt(p) + '</li>'; }).join('') + '</ul>';
 
   h += '<h2 id="c-saydo">Said vs. did</h2>' + sayDoBlock(c, s);
-  if(r.chamber !== 'governor' || c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + votesBlock(c, s);
+  if(r.chamber !== 'governor' || c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + attendBlock(c) + votesBlock(c, s);
   h += '<h2 id="c-isr">Israel: the documented record</h2>' + israelBlock(c, s);
   h += '<h2 id="c-money">Who’s paying for this campaign?</h2>' + moneyBlock(c, s) + '' + money2Block(c) + '<div style="margin-top:10px"><button class="btn ghost" data-go="dash" data-arg="' + id + '">Open the full financial dashboard →</button></div>';
-  if(recFor(c)) h += '<h2 id="c-records">From the public records</h2>' + recordsBlock(c);
+  if(recFor(c) || c.deep || c.fec_notices_n != null) h += '<h2 id="c-records">From the public records</h2>' + (recFor(c) ? recordsBlock(c) : '') + deepMoneyBlock(c) + filingBlock(c);
   h += '<h2 id="c-fin">Personal finances & stock trades</h2>' + financesBlock(c, s);
   h += '<h2 id="c-office">In office: what they’ve done and who they work with</h2>' + officeBlock(c, s);
   h += '<h2 id="c-dem">Election results: certify and accept?</h2>' + democracyBlock(c, s);
