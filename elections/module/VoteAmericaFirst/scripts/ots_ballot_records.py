@@ -68,6 +68,13 @@ def request(opener, url, data=None, headers=None, tries=6):
                 if down_since: log('    connection is back; continuing')
                 return r.read()
         except urllib.error.HTTPError as e:
+            if e.code == 429:
+                try: ra = int(e.headers.get('Retry-After') or 0)
+                except ValueError: ra = 0
+                if ra > 300:   # CourtListener's search API allows 125 requests a day; wait for the window to reopen
+                    until = time.strftime('%a %H:%M', time.localtime(time.time() + ra + 60))
+                    log(f'    daily limit reached (125 searches a day); finished candidates are saved; resuming automatically at {until}')
+                    time.sleep(ra + 60); busy = 0; continue
             if e.code == 429 or e.code >= 500:
                 busy += 1
                 if busy > tries: log(f'    the site kept answering {e.code}; skipping for now'); return None
@@ -113,8 +120,6 @@ def run_courts(cands, token):
             '\n  COURTLISTENER_TOKEN=yourtoken python3 ots_ballot_records.py --only courts'); return
     op = urllib.request.build_opener(urllib.request.HTTPSHandler(context=CTX))
     H = {'Authorization': f'Token {token}', 'Accept': 'application/json'}
-    test = request(op, CL_SEARCH + '?' + urllib.parse.urlencode({'q': 'test', 'type': 'o'}), headers=H)
-    if test is None: log('  CourtListener refused the token. Check it on your CourtListener profile page and try again.'); return
     todo = [c for c in cands if not os.path.exists(os.path.join(c.folder(), 'courts_courtlistener.json'))]
     log(f'  {len(cands) - len(todo)} already done, {len(todo)} to search')
     for i, c in enumerate(todo, 1):
@@ -122,7 +127,9 @@ def run_courts(cands, token):
         q = f'"{short}"' if short == c.full else f'"{c.full}" OR "{short}"'
         out = {'candidate': c.name, 'race': c.race, 'searched_on': NOW, 'query': q,
                'note': 'Exact-name full-text search. Hits include namesakes and passing mentions; each needs a check before use.'}
-        for typ, label in (('r', 'federal_dockets'), ('o', 'opinions')):
+        # one search per candidate (federal dockets, which include the parties to every case) to fit the 125-a-day limit;
+        # set CL_TYPES=ro to also search opinions
+        for typ, label in [(t, {'r': 'federal_dockets', 'o': 'opinions'}[t]) for t in (os.environ.get('CL_TYPES') or 'r') if t in 'ro']:
             b = request(op, CL_SEARCH + '?' + urllib.parse.urlencode({'q': q, 'type': typ, 'order_by': 'dateFiled desc'}), headers=H)
             if b is None: out[label] = 'search failed'; continue
             d = json.loads(b)
