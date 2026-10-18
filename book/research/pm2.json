@@ -132,6 +132,41 @@
      "sources": [
       "pm_cns_2024"
      ]
+    },
+    {
+     "text": "The Howard Center's travel database lists 868 AIEF-sponsored trips for 463 congressional offices from 2012 to 2023.",
+     "strength": "reported",
+     "sources": [
+      "cnsmd_aief_explorer"
+     ]
+    },
+    {
+     "text": "AIEF shares AIPAC's offices, board members and part of its logo (The Intercept).",
+     "strength": "reported",
+     "sources": [
+      "intercept_aief_donors"
+     ]
+    },
+    {
+     "text": "In 2018 (OpenSecrets via Tablet) the National Association of Realtors reported $72.8M in lobbying, Boeing $15.1M, Amazon $14.4M and Exxon Mobil $11.2M.",
+     "strength": "reported",
+     "sources": [
+      "pm_tablet_lobbying"
+     ]
+    },
+    {
+     "text": "Israel's prime minister addressed AIPAC's 2019 Policy Conference by satellite.",
+     "strength": "reported",
+     "sources": [
+      "pm_aljaz_pc2019"
+     ]
+    },
+    {
+     "text": "AIPAC's fiscal year ends in September (Forms 990).",
+     "strength": "primary",
+     "sources": [
+      "pm_pp_aipac990"
+     ]
     }
    ],
    "sources": [
@@ -174,6 +209,16 @@
      "key": "pm_tablet_lobbying",
      "url": "https://www.tabletmag.com/sections/news/articles/how-influential-is-aipac",
      "label": "Tablet (Armin Rosen) — 'How Much Does AIPAC Spend on Lobbying?', 6 Mar 2019"
+    },
+    {
+     "key": "cnsmd_aief_explorer",
+     "url": "https://cnsmaryland.org/interactives/fall-2024/congressional_travel_explorer/sponsor/18.html",
+     "label": "Howard Center / Capital News Service — Congressional travel explorer: AIEF"
+    },
+    {
+     "key": "intercept_aief_donors",
+     "url": "https://theintercept.com/2023/11/18/aipac-congress-israel-trips-donors/",
+     "label": "The Intercept — AIPAC's charity and congressional trips to Israel, 18 Nov 2023"
     }
    ]
   },
@@ -192,7 +237,7 @@
      ]
     },
     {
-     "text": "In the 2022 cycle UDP raised almost $27.6M by 30 June and spent nearly $24.3M on independent expenditures by 2 August, all in Democratic contests; its top donors were AIPAC ($8.5M), Jan Koum ($2M), and Jonathon Jacobson, Paul Singer, Bernard Marcus and Haim Saban ($1M each).",
+     "text": "In the 2022 cycle UDP raised almost $27.6M by 30 June and spent nearly $24.3M on independent expenditures by 2 August, all in Democratic contests; its top donors were AIPAC ($8.5M), Jan Koum ($2M), and Jonathon Jacobson, Paul Singer, Bernard Marcus and Haim Saban ($1M each). FactCheck.org found UDP the highest outside spender in the 2022 Democratic primaries; UDP's website said it works to help elect candidates who support the US–Israel relationship.",
      "strength": "reported",
      "sources": [
       "pm_factcheck_udp_2022"
@@ -206,7 +251,7 @@
      ]
     },
     {
-     "text": "In March 2022 AIPAC PAC's endorsements included members who had voted against certifying the 2020 presidential election (109 per J Street); asked whether any pro-Israel candidate could be ruled out, CEO Howard Kohr said 'I'd have to think about that'; J Street called for 'moral red lines'.",
+     "text": "AIPAC PAC's 2022 endorsements included members who had voted against certifying the 2020 presidential election: by one account 37 of 130 endorsements announced in March 2022 (Wikipedia), and by J Street's count in August 2022, 109; asked whether any pro-Israel candidate could be ruled out, CEO Howard Kohr said 'I'd have to think about that'; J Street called for 'moral red lines'.",
      "strength": "reported",
      "sources": [
       "pm_jstreet_sedition",
@@ -214,7 +259,7 @@
      ]
     },
     {
-     "text": "AIPAC's own memo of 7 November 2024 says its PAC endorsed 361 candidates in the 2024 cycle, that 326 won general elections (120 Democrats, 206 Republicans), that more than 10,000 members contributed over $53M to candidates, and that UDP helped decide nine races including the defeats of Bowman and Bush.",
+     "text": "AIPAC's own memo of 7 November 2024 says its PAC endorsed 361 candidates in the 2024 cycle, that 326 won general elections (120 Democrats, 206 Republicans), that more than 10,000 members contributed over $53M to candidates, and that UDP helped decide nine races including the defeats of Bowman and Bush. It describes the PAC's giving as more than any other PAC's and AIPAC's aim as to 'encourage and persuade the U.S. government to enact specific policies'.",
      "strength": "primary",
      "sources": [
       "pm_aipac_memo_2024"

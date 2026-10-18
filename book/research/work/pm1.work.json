@@ -183,5 +183,50 @@
     "label": "FactCheck.org — 'United Democracy Project' (2026 update), 7 Aug 2026"
    }
   }
+ },
+ "pm1_examples": {
+  "topic": "Worked examples for reading figures",
+  "claims": [
+   {
+    "text": "Track AIPAC's compilation (as of 5 July 2026, read via the simulation's ch54 scenes) gives Susan Collins the highest career total of any senator, $4,131,569 ($3,566,569 direct, $565,000 outside), and Haley Stevens $36,280,260 ($1,366,314 direct, $34,913,946 outside spending on her behalf).",
+    "strength": "reported",
+    "sources": [
+     "trackaipac_congress"
+    ]
+   },
+   {
+    "text": "UDP's 2024 spending against Cori Bush has been reported at about $5.2M (FactCheck.org, earlier filings, opposition only) and $8.6M (Roll Call and Sludge, later and including spending for Wesley Bell); its spending against Jamaal Bowman about $14.5M in total.",
+    "strength": "reported",
+    "sources": [
+     "factcheck_udp_2024",
+     "rollcall_bush_primary_2024"
+    ]
+   },
+   {
+    "text": "Louisville Public Media's tally of all filings put UDP's spending against Massie at $4.1M and the RJC Victory Fund's at $3.9M, in a primary costing about $37M in all.",
+    "strength": "reported",
+    "sources": [
+     "lpm_massie_gallrein_funding"
+    ]
+   }
+  ],
+  "sources": {
+   "trackaipac_congress": {
+    "url": "https://www.trackaipac.com/congress",
+    "label": "Track AIPAC — Congress (FEC-based compilation)"
+   },
+   "factcheck_udp_2024": {
+    "url": "https://www.factcheck.org/2024/09/united-democracy-project-2/",
+    "label": "FactCheck.org — 'United Democracy Project' (2024 update)"
+   },
+   "rollcall_bush_primary_2024": {
+    "url": "https://rollcall.com/2024/08/06/bush-beaten-in-primary-after-onslaught-of-pro-israel-spending/",
+    "label": "Roll Call — 'Bush beaten in primary after onslaught of pro-Israel spending', 6 Aug 2024"
+   },
+   "lpm_massie_gallrein_funding": {
+    "url": "https://www.lpm.org/news/2026-07-17/a-record-shattering-37m-was-spent-on-kentuckys-massie-gallrein-race-heres-who-funded-it",
+    "label": "Louisville Public Media — who funded the $37M Massie–Gallrein race, 17 Jul 2026"
+   }
+  }
  }
 }
