@@ -5653,6 +5653,10 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .cv .tt{font:700 clamp(13px,3.4vw,21px)/1.15 'Literata',Georgia,serif;margin:auto 0 0;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .cv .st{font:italic 400 clamp(9px,2.1vw,12.5px)/1.3 'Literata',Georgia,serif;margin:6% 0 auto;padding-bottom:6%;opacity:.92;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .cv .vol{flex:none}
+.cv .in.long{padding-top:7%}
+.cv .in.long .rule{margin:5% 0 0}
+.cv .in.long .tt{margin:auto 0 0}
+.cv .in.long .st{font-size:clamp(8px,1.85vw,11.5px);line-height:1.25;margin:4% 0 auto;padding-bottom:3%;-webkit-line-clamp:6}
 .cv .tt.lg{font-size:clamp(11px,2.7vw,17px)}
 .cv .vol{font:600 clamp(8px,1.8vw,11px)/1 'Literata',Georgia,serif;letter-spacing:.14em;font-variant:small-caps}
 .cv.prep{filter:saturate(.25) brightness(.85)}
@@ -6579,7 +6583,7 @@ body.book-open #libBanner{display:none}
   function roman(n){ var r = '', m = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; m.forEach(function(x){ while(n >= x[0]){ r += x[1]; n -= x[0]; } }); return r; }
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
-    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + CLOTH[(b.vol - 1) % CLOTH.length] + '" aria-hidden="true"><div class="in"><div class="ser">The Israel Architecture</div><div class="rule"></div><div class="tt' + (b.title.length > 26 ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + CLOTH[(b.vol - 1) % CLOTH.length] + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">The Israel Architecture</div><div class="rule"></div><div class="tt' + (b.title.length > 26 ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function plain(t){ return String(t == null ? '' : t).replace(/&(amp|lt|gt|quot|#39|nbsp);/g, function(m, x){ return {amp:'&',lt:'<',gt:'>',quot:'"','#39':"'",nbsp:' '}[x]; }); }
@@ -6937,7 +6941,7 @@ body.book-open #libBanner{display:none}
     setTimeout(function(){ try{ if(window.otsCoach) window.otsCoach(); }catch(e){} }, 500);
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
   }
-  window.openBook = openBook; window.closeBook = closeBook; window.__bookTest = {openReader: openReader, books: function(){ return BOOKS; }};
+  window.openBook = openBook; window.closeBook = closeBook; window.__bookTest = {openReader: openReader, showLibrary: showLibrary, books: function(){ return BOOKS; }};
 
   /* ---------- the library ---------- */
   var lib = $('bkLib'), libQ = '', libSort = ls('ots_lib_sort') || 'order';
