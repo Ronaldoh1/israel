@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>2026 Elections</title>
+<title>Vote America First · 2026 Elections</title>
+<meta name="description" content="Every candidate on the November 3, 2026 ballot: who funds them, how they voted, and what the public records show. From Sophia, by Observe The System.">
+<meta property="og:title" content="Vote America First · 2026 Elections">
+<meta property="og:description" content="All 1,354 candidates on the November 3 ballot: who funds them, how they voted, and what the public records show.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2026elections.sophia13.workers.dev/">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -257,6 +263,8 @@ details.acc .b{padding:0 14px 14px;font-size:14px;color:var(--ink-dim)}
   <button class="back" id="back">&#9666; BACK</button>
   <div class="crumb" id="crumb"></div>
   <button class="home-btn" id="homeBtn" aria-label="Home">HOME</button>
+  <a class="home-btn" id="sophiaLink" href="https://awakenwithsophia.sophia13.workers.dev/" target="_blank" rel="noopener" style="display:none;text-decoration:none" aria-label="Open Sophia">SOPHIA &#8599;</a>
+  <script>try{ if(window.parent === window) document.getElementById("sophiaLink").style.display = ""; }catch(e){}</script>
 </div>
 <div class="pendbar" id="pendbar"><details><summary><span class="pdot"></span><b>Overall scores: pending.</b> <span class="pb-sub">Findings are live; final scores release state by state.</span> <span class="pb-why">Why?</span></summary><div class="pb-body">Every overall score depends on public records we are still pulling: federal court dockets, the Justice Department’s foreign-agent (FARA) database and some state campaign-finance filings. We don’t estimate, assume or fill gaps. A missing record is never counted as clean, so a candidate’s overall score publishes only once every record behind it has actually been searched. Until then you can see everything found so far: the money, votes, claims checked against the record, legal history and each part score. Final scores will be released as each state’s searches finish. <a href="#" data-go="method" data-arg="pending">How the scoring works →</a></div></details></div>
 <main id="view"></main>
@@ -740,7 +748,7 @@ function mech(t, d){ return '<div class="card mech"><div class="t">'+esc(t)+'</d
 
 function bindGlobalSearch(){
   var inp = document.getElementById('gsearch'), out = document.getElementById('gres');
-  function openParent(k){ try{ if(window.parent && window.parent !== window && window.parent.openSimOverlay){ window.parent.openSimOverlay(k); return true; } }catch(e){} return false; }
+  function openParent(k){ try{ if(window.parent && window.parent !== window && window.parent.openSimOverlay){ window.parent.openSimOverlay(k); return true; } }catch(e){} try{ var w = window.open('https://awakenwithsophia.sophia13.workers.dev/#sim/' + k, '_blank'); if(w){ w.opener = null; return true; } }catch(e){} return false; }
   var a = document.getElementById('lnkAudit'), b = document.getElementById('lnkCU');
   if(a) a.addEventListener('click', function(e){ e.preventDefault(); if(!openParent('aipac2026')) alert('Open the 2026 AIPAC Audit from Sophia’s Observe pillar.'); });
   if(b) b.addEventListener('click', function(e){ e.preventDefault(); if(!openParent('citizensunited')) alert('Open Citizens United from Sophia.'); });

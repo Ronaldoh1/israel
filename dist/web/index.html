@@ -4476,8 +4476,19 @@ document.getElementById('backBtnVatican').addEventListener('click', ()=>{
     if(!w) location.href = url;          /* popup blocked: open it here instead */
     return url;
   };
+  /* 2026 Elections is hosted on its own (like the Israel simulation): open it in a new tab, keeping any deep route */
+  window.ELECTIONS_URL = 'https://2026elections.sophia13.workers.dev/';
+  window.openElectionsSite = function(){
+    var r = window.__el26Route; window.__el26Route = null;
+    var h = (r && r[0] && r[0] !== 'home') ? '#' + r[0] + (r[1] ? '/' + encodeURIComponent(r[1]) : '') : '';
+    var url = window.ELECTIONS_URL + h, w = null;
+    try{ w = window.open(url, '_blank'); if(w) w.opener = null; }catch(e){}
+    if(!w) location.href = url;
+    return url;
+  };
   window.openSimOverlay = function(which){
     if(which === 'israel') return window.openIsraelSim();
+    if(which === 'elections2026') return window.openElectionsSite();
     const map = window.__overlayMap || (window.__overlayMap = {
       israel:  {b64:'il_sim_b64', label:'INSTITUTIONS / ISRAEL / <b>Simulation</b>'},   /* not embedded: opens ISRAEL_SIM_URL (see openIsraelSim) */
       vatican: {b64:'vt_sim_b64', label:'INSTITUTIONS / VATICAN / <b>Simulation</b>'},
