@@ -1121,12 +1121,51 @@ button.pillar.reignite .pillar-go{color:var(--gold-hi)}
 .dl-chip-usa .dl-dot{background:#fff!important;box-shadow:0 0 9px #fff!important}
 .dl-chip-usa .dl-new{background:#B22234!important;color:#fff!important}
 </style>
+<!--VAF-BANNER-->
+<style>
+.ilb.vaf{background:radial-gradient(120% 140% at 85% 10%,#1B2F6B 0%,#0B1E46 52%,#070F26 100%)}
+.ilb.vaf .band{background:repeating-linear-gradient(90deg,#B22234 0 18px,#F4F1EA 18px 36px)}
+.ilb.vaf .band.t,.ilb.vaf .band.b{height:7px;opacity:.9}
+.ilb.vaf .stars{position:absolute;right:-6px;top:30px;width:150px;height:150px;z-index:1;opacity:.13;
+  background:radial-gradient(circle,#fff 1.6px,transparent 2.2px) 0 0/18px 18px}
+.ilb.vaf .tag{color:#0B1E46}
+.ilb.vaf .tag i{background:#B22234}
+.ilb.vaf h3 em{color:#FF9AA6}
+.ilb.vaf .go{background:#B22234}
+</style>
+<div class="ilb vaf reveal" id="vafBanner" role="button" tabindex="0" aria-label="Open Vote America First: the 2026 Elections">
+  <div class="white"></div><div class="band t"></div><div class="band b"></div><div class="stars"></div>
+  <div class="top"><span class="tag"><i></i>VOTE AMERICA FIRST</span><span class="count" id="vafDays">ELECTION DAY · NOV 3</span></div>
+  <div class="slide on"><h3>The 2026 ballot, <em>on the record.</em></h3><p>All 1,354 candidates on the November 3 ballot, in all 50 states: who funds them, how they voted, and what the public records show.</p></div>
+  <div class="slide"><h3>Who is paying <em>for your vote?</em></h3><p>Donors, bundled gifts and the outside groups spending for and against each candidate, and who funds those groups, from the FEC’s own filings.</p></div>
+  <div class="slide"><h3>Votes and attendance, <em>from the roll calls.</em></h3><p>How 364 current and former members of Congress voted on the key bills, and how often they missed a vote.</p></div>
+  <div class="dots"><b class="on"></b><b></b><b></b></div>
+  <span class="go">See your ballot &#9656;</span>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('vafBanner'); if(!box) return;
+  var d=Math.ceil((new Date('2026-11-03T06:00:00-05:00')-new Date())/864e5), c=document.getElementById('vafDays');
+  if(c) c.textContent = d > 1 ? d + ' DAYS TO NOV 3' : d === 1 ? '1 DAY TO NOV 3' : d === 0 ? 'ELECTION DAY' : 'NOV 3 RESULTS';
+  var sl=[].slice.call(box.querySelectorAll('.slide')), dt=[].slice.call(box.querySelectorAll('.dots b')), k=0, t=null;
+  function show(i){ sl[k].classList.remove('on'); dt[k].classList.remove('on'); k=(i+sl.length)%sl.length; sl[k].classList.add('on'); dt[k].classList.add('on'); }
+  function start(){ if(!t) t=setInterval(function(){ show(k+1); },5600); } function stop(){ if(t){ clearInterval(t); t=null; } }
+  function open(){ if(typeof window.openSimOverlay==='function') window.openSimOverlay('elections2026'); else location.hash='elections2026'; }
+  box.addEventListener('click',open);
+  box.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+  dt.forEach(function(x,i){ x.addEventListener('click',function(e){ e.stopPropagation(); show(i); stop(); start(); }); });
+  box.addEventListener('mouseenter',stop); box.addEventListener('mouseleave',start);
+  document.addEventListener('visibilitychange',function(){ if(document.hidden) stop(); else start(); });
+  start();
+})();
+</script>
+<!--/VAF-BANNER-->
 <!--FEATURE-BANNER-->
 <div class="ilb reveal" id="ilBanner" role="button" tabindex="0" aria-label="Open the Israel Architecture">
   <div class="white"></div><div class="band t"></div><div class="band b"></div><div class="lines"></div>
-  <div class="top"><span class="tag"><i></i>THE ISRAEL ARCHITECTURE</span><span class="count">3 VOLUMES OPEN</span></div>
+  <div class="top"><span class="tag"><i></i>THE ISRAEL ARCHITECTURE</span><span class="count">5 VOLUMES OPEN</span></div>
   <div class="slide on" data-to="sim" data-go="Open the simulation"><h3>The Israel Architecture, <em>documented.</em></h3><p>960 scenes, 73 chapters and 4,645 named people, institutions and documents, each tied to its source: what you were told, and what the record shows.</p></div>
-  <div class="slide" data-to="book" data-go="Open the Library"><h3>The Library <em>is open.</em></h3><p>The simulation, written as history: 313 sections across three volumes, every claim tied to its source. Search, bookmarks and notes included.</p></div>
+  <div class="slide" data-to="book" data-go="Open the Library"><h3>The Library <em>is open.</em></h3><p>The simulation, written as history: 360 sections across five volumes, every claim tied to its source. Search, bookmarks and notes included.</p></div>
   <div class="slide" data-to="coldwar" data-go="Read Volume III"><h3>New: The Cold War <em>Architecture.</em></h3><p>1949 to the eve of June 1967: Suez, Dimona, the order to register as a foreign agent, Kennedy’s letters. 99 sections, 4,090 citations.</p></div>
   <div class="slide" data-to="eleven" data-go="Start here"><h3>Eleven <em>minutes.</em></h3><p>A state at 6:00 p.m., U.S. recognition at 6:11. Eighteen documents show the machine behind it.</p></div>
   <div class="slide" data-to="archive" data-go="Browse the modules"><h3>New in the <em>Israel archive.</em></h3><p>Israel–Iran, Hamas, the ICC, Unit 8200, Gaza: the full documented record, and 35 Israel modules in all.</p></div>
