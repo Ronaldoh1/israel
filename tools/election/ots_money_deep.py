@@ -351,7 +351,8 @@ def step_lobbyists(cands, state):
     base = None
     for b in LDA_BASES:   # LDA.gov first, then the Senate's old address; a busy or retired address must not stop the run
         try:
-            if fetch(f'{b}/contributions/?page_size=1', headers=H, tries=3, quiet=True): base = b; break
+            # probe with a small filtered query: the unfiltered list counts every filing and can time out (503)
+            if fetch(f'{b}/contributions/?' + urllib.parse.urlencode({'contribution_honoree': 'Smith', 'filing_year': 2025, 'page_size': 1}), headers=H, tries=3, quiet=True): base = b; break
         except NetworkDown: log(f'  {b} is not answering; trying the next address')
     if not base: log('  the LD-203 database did not answer; skipped. Run again later with --only lobbyists.'); return
     log(f'  using {base}')
