@@ -1121,6 +1121,17 @@ button.pillar.reignite .pillar-go{color:var(--gold-hi)}
 .dl-chip-usa .dl-dot{background:#fff!important;box-shadow:0 0 9px #fff!important}
 .dl-chip-usa .dl-new{background:#B22234!important;color:#fff!important}
 </style>
+<style>
+/* desktop: feature cards side by side, social buttons side by side, "Who's behind this" below them; phones keep the stacked layout */
+.feat-row{display:flex;flex-direction:column;align-items:center;width:100%}
+@media (min-width:1024px){
+  .feat-row{flex-direction:row;align-items:stretch;justify-content:center;gap:20px;max-width:920px;margin:16px auto 8px}
+  .feat-row .ilb{flex:1 1 0;min-width:0;max-width:520px;margin:0!important}
+  .cta-row{display:grid!important;grid-template-columns:1fr 1fr;column-gap:20px;row-gap:16px;max-width:640px!important;align-items:start;justify-items:center}
+  .cta-row>.btn-stack{grid-column:1/-1;width:100%;max-width:520px;justify-self:center}
+}
+</style>
+<div class="feat-row">
 <!--VAF-BANNER-->
 <style>
 .ilb.vaf{background:radial-gradient(120% 140% at 85% 10%,#1B2F6B 0%,#0B1E46 52%,#070F26 100%)}
@@ -1193,6 +1204,7 @@ button.pillar.reignite .pillar-go{color:var(--gold-hi)}
 })();
 </script>
 <!--/FEATURE-BANNER-->
+</div><!--/feat-row-->
 <style>
 .showcase-spotlight{
   position:relative;width:100%;max-width:480px;margin:18px auto 8px;
