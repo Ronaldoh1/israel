@@ -556,7 +556,7 @@ body.book-open #libBanner{display:none}
       '<p class="rl">Published by</p><p>Observe The System, with Sophia</p>' +
       '<p class="rl">Follow</p><p>TikTok @awakenwithsophia<br>Instagram @chosen.ron13</p>' +
       '<p class="rl">This edition</p><p class="sm">' + esc(LIB.edition || '') + '. It reflects the documented record as researched to that date, and is updated as new documents and corrections come in.</p>' +
-      '<p class="rl">Research assistance</p><p class="sm">Research and drafting were assisted by Claude, an AI model made by Anthropic. Every claim is tied to a cited source, and the sources are listed at the end of each ' + (BOOK.unit === 'stages' ? 'stage' : 'chapter') + '.</p>' +
+      '<p class="rl">Research assistance</p><p class="sm">Research and drafting were assisted by Claude, an AI model made by Anthropic. Every claim is tied to a cited source, and the sources are listed at the end of each ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + '.</p>' +
       '<p class="rl">Corrections</p><p class="sm">If you find an error, send it with your source to @chosen.ron13. Each correction is checked against the documents; if it holds, the text is changed.</p></section>';
     h += '<section class="bk-fm bk-leaf" id="bk-contents" aria-label="Contents"><h2>Contents</h2><ol class="bk-cn">' +
       (BOOK.intro ? '<li><button class="r" type="button" data-go-id="intro"><span class="t">Introduction</span><span class="ld"></span><span class="pg">1</span></button></li>' : '') +
@@ -752,7 +752,7 @@ body.book-open #libBanner{display:none}
   function barInfo(frac, at){
     var P = paginate(BOOK), ch = BOOK.chapters[curCh]; if(!ch) return;
     var bp = (curSec && P.sec[curSec]) ? P.sec[curSec].start + Math.min(P.sec[curSec].len - 1, Math.floor(frac * P.sec[curSec].len)) : P.ch[curCh].start;
-    var unit = BOOK.unit === 'stages' ? 'stage' : 'chapter', left = paged() ? Math.max(0, pg.total - 1 - at) : null;
+    var unit = BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter', left = paged() ? Math.max(0, pg.total - 1 - at) : null;
     $('bkMidT').textContent = ch.label + ' · ' + ch.title;
     $('bkMidS').textContent = left == null ? 'Page ' + bp + ' of ' + P.total : 'p. ' + bp + ' · ' + (left ? left + ' left in ' + unit : 'end of ' + unit);
     $('bkMidS').title = 'Page ' + bp + ' of ' + P.total + (left == null ? '' : ', ' + left + ' screen pages left in this ' + unit);
@@ -1000,7 +1000,7 @@ body.book-open #libBanner{display:none}
       '<button class="row" data-a="marks"><i>📑</i><span>Bookmarks<small>' + marks + ' saved</small></span></button>' +
       '<button class="row" data-a="note"><i>✎</i><span>Add a note here</span></button>' +
       '<button class="row" data-a="notes"><i>🗒</i><span>My notes<small>' + notes + ' saved · export as a text file</small></span></button>' +
-      '<button class="row" data-a="chs"><i>⇆</i><span>Jump to a ' + (BOOK.unit === 'stages' ? 'stage' : 'chapter') + '<small>Every ' + (BOOK.unit === 'stages' ? 'stage' : 'chapter') + ' with its page number</small></span></button>' +
+      '<button class="row" data-a="chs"><i>⇆</i><span>Jump to a ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + '<small>Every ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + ' with its page number</small></span></button>' +
       '<div class="seg"><span>Reading</span><button data-a="md-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="md-pages" class="' + (paged() ? 'on' : '') + '">Pages</button></div>' +
       '<div class="seg"><span>Text size</span><button data-a="fs-">A−</button><button data-a="fs+">A+</button></div>' +
       '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="th-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +

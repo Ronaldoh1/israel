@@ -1,14 +1,133 @@
 {
  "_note": "Stage definitions for volumes built in stages whose ids are not simulation chapters. 'own' = simulation scenes this stage must place (the volume's own chapter scenes, split by period). Tools fall back to this file when a stage id is not in window.CHAPTERS.",
  "cold_war": {
-  "vol": 3, "chapter": "ch05", "title": "The Cold War Architecture", "subtitle": "Alliances, the Bomb and the Lobby, 1949–1967",
+  "vol": 3,
+  "chapter": "ch05",
+  "title": "The Cold War Architecture",
+  "subtitle": "Alliances, the Bomb and the Lobby, 1949–1967",
   "stages": [
-   {"id": "cw1", "label": "Stage One", "title": "Align", "span": "1949–1953", "years": [1949, 1953], "own": ["s11"]},
-   {"id": "cw2", "label": "Stage Two", "title": "Retaliate", "span": "1953–1956", "years": [1953, 1956], "own": ["lv_s01"]},
-   {"id": "cw3", "label": "Stage Three", "title": "Strike and Withdraw", "span": "1956–1957", "years": [1956, 1957], "own": ["mg_s01"]},
-   {"id": "cw4", "label": "Stage Four", "title": "Arm", "span": "1957–1962", "years": [1957, 1962], "own": []},
-   {"id": "cw5", "label": "Stage Five", "title": "Confront", "span": "1962–1963", "years": [1962, 1963], "own": ["s11a", "s11b", "s11c"]},
-   {"id": "cw6", "label": "Stage Six", "title": "Escalate", "span": "1963–June 1967", "years": [1963, 1967], "own": ["s11d"]}
+   {
+    "id": "cw1",
+    "label": "Stage One",
+    "title": "Align",
+    "span": "1949–1953",
+    "years": [
+     1949,
+     1953
+    ],
+    "own": [
+     "s11"
+    ]
+   },
+   {
+    "id": "cw2",
+    "label": "Stage Two",
+    "title": "Retaliate",
+    "span": "1953–1956",
+    "years": [
+     1953,
+     1956
+    ],
+    "own": [
+     "lv_s01"
+    ]
+   },
+   {
+    "id": "cw3",
+    "label": "Stage Three",
+    "title": "Strike and Withdraw",
+    "span": "1956–1957",
+    "years": [
+     1956,
+     1957
+    ],
+    "own": [
+     "mg_s01"
+    ]
+   },
+   {
+    "id": "cw4",
+    "label": "Stage Four",
+    "title": "Arm",
+    "span": "1957–1962",
+    "years": [
+     1957,
+     1962
+    ],
+    "own": []
+   },
+   {
+    "id": "cw5",
+    "label": "Stage Five",
+    "title": "Confront",
+    "span": "1962–1963",
+    "years": [
+     1962,
+     1963
+    ],
+    "own": [
+     "s11a",
+     "s11b",
+     "s11c"
+    ]
+   },
+   {
+    "id": "cw6",
+    "label": "Stage Six",
+    "title": "Escalate",
+    "span": "1963–June 1967",
+    "years": [
+     1963,
+     1967
+    ],
+    "own": [
+     "s11d"
+    ]
+   }
+  ]
+ },
+ "divine": {
+  "vol": 4,
+  "title": "The Divine 3+1",
+  "subtitle": "The 3 Parents of Israel",
+  "span": "1067–2026",
+  "stages": [
+   {
+    "id": "dv1",
+    "label": "Part One",
+    "title": "Not Ordinary Cities",
+    "span": "Sovereignty, status and what a parent is"
+   },
+   {
+    "id": "dv2",
+    "label": "Part Two",
+    "title": "London: The Financial Parent",
+    "span": "1067–2026"
+   },
+   {
+    "id": "dv3",
+    "label": "Part Three",
+    "title": "Rome: The Theological Parent",
+    "span": "1831–2026"
+   },
+   {
+    "id": "dv4",
+    "label": "Part Four",
+    "title": "Washington: The Military Parent",
+    "span": "1790–2026"
+   },
+   {
+    "id": "dv5",
+    "label": "Part Five",
+    "title": "The Child: Israel's Government",
+    "span": "1948–2026"
+   },
+   {
+    "id": "dv6",
+    "label": "Part Six",
+    "title": "The Composite",
+    "span": "Three parents, one child"
+   }
   ]
  }
 }

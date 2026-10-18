@@ -159,6 +159,18 @@ for st in cw['stages']:
                  'outroTitle': 'What this stage built' if st['id'] != 'cw6' else 'What the Cold War built',
                  'sections': sections_for(st['id'], [])})
 
+# ---- Volume IV: The Divine 3+1, in parts (book/plan/volumes.json); only parts with written sections appear ----
+dv = VOLS.get('divine')
+divine = []
+if dv:
+    for st in dv['stages']:
+        secs = sections_for(st['id'], [])
+        if not secs: continue
+        divine.append({'id': st['id'], 'label': st['label'], 'title': st['title'], 'span': st['span'],
+                       'intro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_intro.html')),
+                       'outro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_outro.html')),
+                       'outroTitle': 'What this part established', 'sections': secs})
+
 books = [
   {'id': 'baseline', 'vol': 1, 'status': 'ready', 'title': 'The Baseline', 'subtitle': 'The Ground Before the Flag', 'span': 'Antiquity to today', 'eraKey': -3000, 'unit': 'chapters',
    'intro': read(os.path.join(ROOT, 'book', 'part1', 'ch01', '_intro.html')), 'chapters': base_chapters, 'first': ch01[0]},
@@ -167,8 +179,11 @@ books = [
   {'id': 'coldwar', 'vol': 3, 'status': 'ready', 'title': cw['title'], 'subtitle': cw['subtitle'], 'span': '1949–1967', 'unit': 'stages',
    'intro': '', 'chapters': cold, 'first': cold[0]['sections'][0]['s'] if cold[0]['sections'] else 'cw1'},
 ]
+if divine:
+    books.append({'id': 'divine', 'vol': 4, 'status': 'ready', 'title': dv['title'], 'subtitle': dv['subtitle'], 'span': dv['span'], 'unit': 'parts',
+                  'intro': read(os.path.join(ROOT, 'book', 'part1', 'dv_intro.html')), 'chapters': divine, 'first': divine[0]['sections'][0]['s']})
 done = {'ch01', 'rd0', 'rd1', 'rd2', 'rd3', 'rd4', 'rd5', 'rd6', 'ch05'}
-vol = 4
+vol = 5 if divine else 4
 for c in CH:
     if c['id'] in done or not c['scenes']: continue
     t, sub = split_name(c['name'])

@@ -340,3 +340,11 @@ One line each: the conflict, the versions, the scenes involved (section where th
 - Natty Rothschild's death: 31 March 1915 (Wikipedia) vs wording in the Rothschild Archive that may place it in early April (rd2_addressee; research wb_walter).
 - Sale of Walter's bird collection: 1931 (popular accounts) vs 1932 (Wikipedia); price $225,000 from popular sources only (rd2_addressee; research wb_walter).
 - Zvërnec land sale price: declared €122 million (AFP) vs about €110 million (Reuters) (rd0_fortune; research wb_albania).
+
+## The Divine 3+1, Parts One and Two (dv1, dv2), found October 2026
+- Vatican City's area: 49 ha vs 44 ha (dv1_three_cities, bc_s06; research dv1_three_cities_status).
+- Vatican Gendarmerie size: 122 (2022) vs 130 (2017) vs 138 (undated) (dv1_three_cities; research dv1_police_and_force).
+- First oil at Haifa: 14 vs 16 October 1934 (dv2_mandate_plumbing; research dv2_mandate_finance).
+- Mayor of London in 1215: Hardell vs Serlo le Mercer (dv2_square_mile; research dv2_charters).
+- The Remembrancer on the Commons floor: claimed in bc_s01/bc_s06, contradicted by the Remembrancer sources; corrected (dv2_remembrancer, bc_s01, bc_s06; research dv2_remembrancer).
+- City business vote: ~24,000 (2009) vs ~32,000 business / ~9,000 resident (2013, Green Party) (dv2_how_it_governs).
