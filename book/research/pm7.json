@@ -1,0 +1,97 @@
+{
+ "volume": "money",
+ "verified": "2026-10-18",
+ "entries": [
+  {
+   "id": "pm7_congress",
+   "stage": "pm7",
+   "topic": "Congressional trips",
+   "claims": [
+    {
+     "text": "House members and staff reported about 4,100 privately sponsored foreign trips from 2012; more than a quarter went to Israel, more than to the Western Hemisphere and Africa combined; AIEF sponsored about 75 percent of the Israel trips; J Street was the second-largest sponsor, AIEF's volume nearly seven times J Street's; roughly half of House members serving in 2024 had traveled with AIPAC since 2012; the Senate's 2,600+ trip reports could not readily be analyzed by sponsor.",
+     "strength": "reported",
+     "sources": [
+      "cnsmd_trips_study"
+     ]
+    },
+    {
+     "text": "AIPAC-related travel cost at least $10M from 2012 to 2023 per LegiStorm; AIEF spent $68,000 on Rep. Glenn Ivey's two trips; after a pause of about five months following 7 October 2023, eight AIPAC trips took 71 House members and staff between March and early September 2024; a June 2024 trip spent four days in Israel at Tel Aviv's Kempinski hotel, met Netanyahu, Gallant and Gantz, visited the Nova festival site and met hostage families, with no visits to Gaza or the West Bank.",
+     "strength": "reported",
+     "sources": [
+      "cnsmd_trips_study"
+     ]
+    },
+    {
+     "text": "Hakeem Jeffries took four AIPAC trips, most recently in August 2023, when he led a delegation of about two dozen Democrats; the Howard Center's database lists 868 AIEF trips for 463 offices, the most-traveled being Steny Hoyer's (22), Kevin McCarthy's (19) and Jeffries's (10).",
+     "strength": "reported",
+     "sources": [
+      "cnsmd_trips_study",
+      "cnsmd_aief_explorer",
+      "intercept_aief_donors"
+     ]
+    },
+    {
+     "text": "The Intercept reported that after the 2007 law AIPAC campaigned for the 501(c)(3) exception; that each trip can cost upward of $10,000 per person and members may bring senior staff, spouses or children; that donors financed 129 AIEF trips in 2019 costing $2.32M, for 64 Democrats and 65 Republicans on 14 departure dates; that since 2019 AIEF spent $6.1M on 309 trips (144 for Republicans, 165 for Democrats) per LegiStorm; and that an unredacted 2019 AIEF filing named eight donors including the Koret Foundation, the Schusterman Family Foundation and the Paul E. Singer Foundation.",
+     "strength": "reported",
+     "sources": [
+      "intercept_aief_donors"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "cnsmd_trips_study",
+     "url": "https://cnsmaryland.org/2024/11/01/members-of-congress-have-taken-hundreds-of-aipac-funded-trips-to-israel-in-the-past-decade",
+     "label": "Capital News Service / Howard Center (Aidan Hughes, Cait Kelley, Daryl Perry) — 'Members of Congress have taken hundreds of AIPAC-funded trips to Israel in the past decade', 1 Nov 2024"
+    },
+    {
+     "key": "intercept_aief_donors",
+     "url": "https://theintercept.com/2023/11/18/aipac-congress-israel-trips-donors/",
+     "label": "The Intercept (Murtaza Hussain) — AIPAC's charity and congressional trips to Israel, 18 Nov 2023"
+    },
+    {
+     "key": "cnsmd_aief_explorer",
+     "url": "https://cnsmaryland.org/interactives/fall-2024/congressional_travel_explorer/sponsor/18.html",
+     "label": "Howard Center / Capital News Service — Congressional travel explorer: AIEF"
+    }
+   ]
+  },
+  {
+   "id": "pm7_below",
+   "stage": "pm7",
+   "topic": "Below and beyond Congress",
+   "claims": [
+    {
+     "text": "About 250 US state legislators attended the '50 States, One Israel' conference in Israel in September 2025, financed by Israel's Ministry of Foreign Affairs through its consulates; Idaho Rep. Bruce Skaug said the consulate in San Francisco invited him and paid all his expenses and that he believed he was invited because he supports Israel and co-sponsored Idaho's 2021 anti-boycott law (S.B. 1086); Idaho House minority leader Ilana Rubel raised civilian casualties in Gaza with President Herzog at a state dinner.",
+     "strength": "reported",
+     "sources": [
+      "pm_idcap_50states",
+      "lincolnchron_gomberg"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "pm_idcap_50states",
+     "url": "https://idahocapitalsun.com/2025/09/20/idaho-legislators-participate-in-50-states-one-israel-conference-paid-for-by-israeli-government/",
+     "label": "Idaho Capital Sun (Clark Corbin) — Idaho legislators at '50 States, One Israel', paid for by the Israeli government, 20 Sep 2025"
+    },
+    {
+     "key": "lincolnchron_gomberg",
+     "url": "https://lincolnchronicle.org/gomberg-visits-israel-on-state-sponsored-trip",
+     "label": "Lincoln Chronicle — Gomberg among 250 legislators on an Israeli-government-sponsored trip, Sep 2025"
+    },
+    {
+     "key": "pm_globe_mass",
+     "url": "https://www.bostonglobe.com/2025/09/26/metro/massachusetts-legislature-israel-trip",
+     "label": "Boston Globe — 'Israel covers Mass. lawmakers on trip to the country', 26 Sep 2025"
+    },
+    {
+     "key": "pm_delpub_50states",
+     "url": "https://www.delawarepublic.org/politics-government/2025-09-24/five-del-lawmakers-attend-israeli-sponsored-50-states-one-israel-event",
+     "label": "Delaware Public Media — five Delaware lawmakers attend Israeli-sponsored '50 States, One Israel', 24 Sep 2025"
+    }
+   ]
+  }
+ ]
+}
