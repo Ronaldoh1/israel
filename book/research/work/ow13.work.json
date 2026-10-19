@@ -145,6 +145,28 @@
      "ow10_npr_lyons",
      "ow10_axios_jury"
     ]
+   },
+   {
+    "text": "WSJ Mar 2015: Israel spied on US-Iran talks and shared with Congress; Netanyahu's office denied; Israeli officials said details came from French officials; US officials objected to the sharing with Congress rather than the spying.",
+    "strength": "reported",
+    "sources": [
+     "ow13_npr_wsj2015"
+    ]
+   },
+   {
+    "text": "Israel apologised over Pollard in Dec 1985 (Peres) and publicly again in March 1987.",
+    "strength": "reported",
+    "sources": [
+     "ow13_csm_1985",
+     "ow13_upi_1987"
+    ]
+   },
+   {
+    "text": "NBC News (June 2026, unnamed officials): DIA raised counterintelligence threat from Israel to 'critical'.",
+    "strength": "reported",
+    "sources": [
+     "ow13_nbc_dia"
+    ]
    }
   ],
   "sources": {
@@ -255,6 +277,22 @@
    "ow10_axios_jury": {
     "url": "https://www.axios.com/2025/05/06/nso-group-whatsapp-jury-damages",
     "label": "Axios, 'Spyware firm NSO ordered to pay $167M in WhatsApp hacking suit', 6 May 2025"
+   },
+   "ow13_npr_wsj2015": {
+    "url": "https://www.npr.org/sections/thetwo-way/2015/03/24/395010145/report-israel-spied-on-u-s-nuclear-talks-with-iran",
+    "label": "NPR, 'Report: Israel spied on U.S. nuclear talks with Iran' (on The Wall Street Journal), 24 Mar 2015"
+   },
+   "ow13_csm_1985": {
+    "url": "https://csmonitor.com/1985/1202/opoll.html",
+    "label": "Christian Science Monitor, on Israel's apology over the Pollard affair, 2 Dec 1985"
+   },
+   "ow13_upi_1987": {
+    "url": "https://www.upi.com/Archives/1987/03/05/Israeli-leaders-publicly-apologized-to-the-United-States-Thursday/3129541918800/",
+    "label": "UPI, 'Israeli leaders publicly apologized to the United States', 5 Mar 1987"
+   },
+   "ow13_nbc_dia": {
+    "url": "https://arynews.tv/pentagon-raises-threat-israeli-spying-critical-us-media",
+    "label": "AFP via ARY News, on NBC News report that the Pentagon raised the threat of Israeli spying to 'critical', June 2026"
    }
   }
  }

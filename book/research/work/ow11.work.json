@@ -319,5 +319,34 @@
     "label": "Military.com, 'Is US Aid to Israel Legal Under American Nonproliferation Law?', 29 Jan 2026"
    }
   }
+ },
+ "ow11_audit": {
+  "topic": "Audit additions",
+  "claims": [
+   {
+    "text": "S.1 incl. Combating BDS Act passed the Senate 77–23 on 5 Feb 2019.",
+    "strength": "primary",
+    "sources": [
+     "ow11_sfrc_s1"
+    ]
+   },
+   {
+    "text": "Texas anti-BDS law preliminarily enjoined (Amawi, 25 Apr 2019); Fifth Circuit vacated as moot in 2020 after the May 2019 amendment narrowed the law.",
+    "strength": "primary",
+    "sources": [
+     "ow11_ca5_amawi"
+    ]
+   }
+  ],
+  "sources": {
+   "ow11_sfrc_s1": {
+    "url": "https://www.foreign.senate.gov/press/rep/release/chairman-risch-rubio-gardner-mcconnell-welcome-senate-passage-of-strengthening-americas-security-in-the-middle-east-act",
+    "label": "Senate Foreign Relations Committee, 'Senate passage of Strengthening America's Security in the Middle East Act' (S.1), 5 Feb 2019"
+   },
+   "ow11_ca5_amawi": {
+    "url": "https://www.ca5.uscourts.gov/Opinions/pub/19/19-50384-CV0.pdf",
+    "label": "US Court of Appeals for the Fifth Circuit, Amawi v. Paxton, opinion vacating the preliminary injunction as moot, April 2020"
+   }
+  }
  }
 }
