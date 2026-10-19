@@ -1,0 +1,219 @@
+{
+ "volume": "hezbollah",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "hz9_power",
+   "stage": "hz9",
+   "topic": "The power ledger: Hezbollah vs Israel, Lebanon vs Israel",
+   "claims": [
+    {
+     "text": "Nasrallah said in a speech on 18 Oct 2021, after the Tayouneh clashes, that Hezbollah had 100,000 trained fighters; AP: most estimates 25,000–50,000 including ~10,000 Radwan; experts called it exaggeration; Sarit Zehavi said greatly exaggerated.",
+     "strength": "reported",
+     "sources": [
+      "hz9_ap_100k"
+     ]
+    },
+    {
+     "text": "Iran International: figure hard to verify; Lebanese armed forces estimated at about 85,000.",
+     "strength": "reported",
+     "sources": [
+      "hz9_iranintl_100k"
+     ]
+    },
+    {
+     "text": "CSIS (2018): ~15,000 rockets before 2006, nearly 4,000 fired in 2006; arsenal estimated at 130,000 in 2018, mostly unguided.",
+     "strength": "reported",
+     "sources": [
+      "hz9_csis_2018"
+     ]
+    },
+    {
+     "text": "USIP (Sep 2024): estimates up to 200,000 (some experts); Alma 75,000; mostly unguided; Hezbollah launched more than 8,800 rockets, missiles and drones at Israel in first year; Israel more than 8,000 strikes.",
+     "strength": "reported",
+     "sources": [
+      "hz9_usip_arsenal"
+     ]
+    },
+    {
+     "text": "NYT (1 Oct 2024): pre-war stockpile estimated 120,000–200,000; senior Israeli and US officials said about half destroyed; tens of thousands remain.",
+     "strength": "reported",
+     "sources": [
+      "hz9_nyt_half"
+     ]
+    },
+    {
+     "text": "JPost (10 Nov 2024) citing IDF: 80% of rockets up to 40 km destroyed; ~5,000 medium-range down to under 1,000; short-range 44,000+ to ~10,000; precision missiles from hundreds to under 100.",
+     "strength": "reported",
+     "sources": [
+      "hz9_jpost_depleted"
+     ]
+    },
+    {
+     "text": "Alma (Nov 2024): pre-war ~75,000 rockets and missiles and ~2,500 drones; IDF destroyed at least 70–80%; 2,500–3,000 operatives killed.",
+     "strength": "reported",
+     "sources": [
+      "hz9_alma_ceasefire"
+     ]
+    },
+    {
+     "text": "ToI 12 Mar 2026: pre-war ~150,000; IDF said 70–80% of rocket capability destroyed in 2024 and later; Alma estimated ~25,000 before renewed fighting; several hundred medium/long-range missiles believed left.",
+     "strength": "reported",
+     "sources": [
+      "hz9_toi_barrages"
+     ]
+    },
+    {
+     "text": "IDF (March 2026): 85–90% of pre-2023 arsenal destroyed; ~30,000 remained in 2025; now 10,000–23,000; ~1,000 long-range precision rockets.",
+     "strength": "reported",
+     "sources": [
+      "hz9_yahoo_8590"
+     ]
+    },
+    {
+     "text": "5 Apr 2026: Northern Command chief Rafi Milo acknowledged a 'gap' between how Northern Arrows was concluded and Hezbollah still standing; Channel 12: tens of thousands of rockets and hundreds of launchers; ~200 launches a day for about five more months; IDF says ~1,000 operatives killed since 2 Mar.",
+     "strength": "reported",
+     "sources": [
+      "hz9_toi_milo",
+      "hz9_newarab_milo"
+     ]
+    },
+    {
+     "text": "Nathan Sales (State Dept counterterrorism coordinator), Nov 2018: Iran gives Hezbollah some $700 million a year; Iran's proxy support near $1bn a year.",
+     "strength": "reported",
+     "sources": [
+      "hz9_usip_sales"
+     ]
+    },
+    {
+     "text": "Funding estimates: $100–200m a year (earlier US estimates); $700m–$1bn (Wilson Center); Nasrallah acknowledged in Feb 2012 Iranian support since 1982 without a figure.",
+     "strength": "reported",
+     "sources": [
+      "hz9_wiki_irfund"
+     ]
+    },
+    {
+     "text": "SIPRI: Israel 2025 military expenditure $48.3bn, down 4.9% real, 7.8% of GDP, 11th in world.",
+     "strength": "primary",
+     "sources": [
+      "hz9_sipri_2025"
+     ]
+    },
+    {
+     "text": "World Bank RDNA (8 Oct 2023–20 Dec 2024): $11bn needs; $14bn cost = $6.8bn damage + $7.2bn losses; housing damage $4.6bn; real GDP -7.1% in 2024; cumulative fall since 2019 near 40%.",
+     "strength": "primary",
+     "sources": [
+      "hz9_wb_rdna",
+      "hz9_lol_rdna"
+     ]
+    },
+    {
+     "text": "RDNA summary: nominal GDP fell from about $55bn in 2018 to just over $20bn in 2023; 2024 fiscal surplus.",
+     "strength": "primary",
+     "sources": [
+      "hz9_ifl_rdna"
+     ]
+    },
+    {
+     "text": "FDD (Kilcullen 2022): State Dept says more than $2.5bn in US security assistance to Lebanon since 2006 (21 May 2021 fact sheet); average ~$200m/yr; 2021 packages $105m + $15m + $67m; FY2022 request $160m; junior soldiers' pay fell to ~$100/month, one-eighth of pre-crisis.",
+     "strength": "reported",
+     "sources": [
+      "hz9_fdd_laf"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hz9_ap_100k",
+     "url": "https://www.news4jax.com/news/world/2021/10/19/hezbollah-brag-of-100000-strong-force-aimed-at-foes-at-home/",
+     "label": "Zeina Karam and Bassem Mroue, AP, 'Hezbollah brag of 100,000-strong force aimed at foes at home', 19 Oct 2021"
+    },
+    {
+     "key": "hz9_iranintl_100k",
+     "url": "https://www.iranintl.com/en/20211019207442",
+     "label": "Iran International, 'Nasrallah says Hezbollah has 100,000 trained fighters', 19 Oct 2021"
+    },
+    {
+     "key": "hz9_csis_2018",
+     "url": "https://www.csis.org/analysis/hezbollahs-missiles-and-rockets",
+     "label": "Shaan Shaikh and Ian Williams, 'Hezbollah's Missiles and Rockets', CSIS, 5 Jul 2018"
+    },
+    {
+     "key": "hz9_usip_arsenal",
+     "url": "https://iranprimer.usip.org/blog/2024/sep/20/graphics-hezbollah-israel-attacks-arsenals",
+     "label": "USIP Iran Primer, 'Graphics: Hezbollah-Israel Attacks & Arsenals', 20 Sep 2024"
+    },
+    {
+     "key": "hz9_nyt_half",
+     "url": "https://www.bostonglobe.com/2024/10/01/world/israel-has-destroyed-half-hezbollahs-arsenal-us-israeli-officials-say",
+     "label": "New York Times via Boston Globe, 'Israel has destroyed half of Hezbollah's arsenal, US and Israeli officials say', 1 Oct 2024"
+    },
+    {
+     "key": "hz9_jpost_depleted",
+     "url": "https://jpost.com/middle-east/article-828349",
+     "label": "Amir Bohbot, 'IDF reveals Hezbollah missile arsenal severely depleted since beginning of operations', Jerusalem Post, 10 Nov 2024"
+    },
+    {
+     "key": "hz9_alma_ceasefire",
+     "url": "https://israel-alma.org/the-ceasefire-between-israel-and-lebanon-does-not-guarantee-peace-and-does-not-guarantee-security/",
+     "label": "Alma Research and Education Center, 'The ceasefire between Israel and Lebanon does not guarantee peace and does not guarantee security', Nov 2024"
+    },
+    {
+     "key": "hz9_toi_barrages",
+     "url": "https://www.timesofisrael.com/rocket-barrages-underscore-remaining-potency-of-hezbollahs-gutted-arsenal/",
+     "label": "Stav Levaton and Emanuel Fabian, 'Rocket barrages underscore remaining potency of Hezbollah's gutted arsenal', Times of Israel, 12 Mar 2026"
+    },
+    {
+     "key": "hz9_yahoo_8590",
+     "url": "https://www.yahoo.com/news/articles/idf-destroyed-85-90-hezbollah-180027045.html",
+     "label": "Yahoo News, 'IDF has destroyed 85-90% of Hezbollah pre-2023 rocket arsenal', March 2026"
+    },
+    {
+     "key": "hz9_toi_milo",
+     "url": "https://www.timesofisrael.com/idf-northern-",
+     "label": "Charlie Summers and ToI Staff, 'IDF admits Israel overestimated damage to Hezbollah, believes Iran can keep firing missiles as long as war continues', Times of Israel, 5 Apr 2026"
+    },
+    {
+     "key": "hz9_newarab_milo",
+     "url": "https://www.newarab.com/news/israel-army-says-it-underestimated-hezbollah-iran-capabilities?amp=1",
+     "label": "The New Arab, 'Israel army says it underestimated Hezbollah, Iran capabilities', 5 Apr 2026"
+    },
+    {
+     "key": "hz9_usip_sales",
+     "url": "https://iranprimer.usip.org/node/5551",
+     "label": "USIP Iran Primer, 'U.S. Says Iran Spends $1 Billion Annually on Supporting Terrorism' (Nathan Sales remarks, Washington Institute, 13 Nov 2018)"
+    },
+    {
+     "key": "hz9_wiki_irfund",
+     "url": "https://en.wikipedia.org/wiki/Hezbollah%E2%80%93Iran_relations",
+     "label": "Wikipedia, 'Hezbollah–Iran relations' (funding estimates, citing Wilson Center, US Treasury, Reuters 2012)"
+    },
+    {
+     "key": "hz9_sipri_2025",
+     "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+     "label": "SIPRI, 'Trends in World Military Expenditure, 2025', fact sheet, April 2026"
+    },
+    {
+     "key": "hz9_wb_rdna",
+     "url": "https://www.worldbank.org/en/news/press-release/2025/03/07/lebanon-s-recovery-and-reconstruction-needs-estimated-at-us-11-billion",
+     "label": "World Bank, 'Lebanon's recovery and reconstruction needs estimated at US$11 billion', press release, 7 Mar 2025"
+    },
+    {
+     "key": "hz9_lol_rdna",
+     "url": "https://today.lorientlejour.com/article/1450782/it-will-take-11-billion-to-rebuild-lebanon-after-the-war-says-world-bank.html",
+     "label": "Philippe Hage Boutros, 'It will take $11 billion to rebuild Lebanon after the war, says World Bank', L'Orient Today, 7 Mar 2025"
+    },
+    {
+     "key": "hz9_ifl_rdna",
+     "url": "https://institutdesfinances.gov.lb/sites/default/files/2025-04/PPT-WW%20Cost%20of%20reconstruction.pdf",
+     "label": "Institut des Finances Basil Fuleihan (Lebanese Ministry of Finance), 'Lebanon Rapid Damage and Needs Assessment & Macroeconomic Outlook 2025: Summary of Findings', 16 Apr 2025"
+    },
+    {
+     "key": "hz9_fdd_laf",
+     "url": "https://www.fdd.org/analysis/2022/07/26/missing-the-mark/",
+     "label": "David Kilcullen, 'Missing the Mark: Reassessing U.S. Military Aid to the Lebanese Armed Forces', Foundation for Defense of Democracies, 26 Jul 2022"
+    }
+   ]
+  }
+ ]
+}
