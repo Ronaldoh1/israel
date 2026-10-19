@@ -2,8 +2,44 @@
  "chapter": "hz10",
  "title": "Part Ten: The Rest of the Axis",
  "sections": [
-  {"s": "hz10_houthis", "draws": [], "research": ["hz10_houthis"], "writer": "R", "brief": "Ansar Allah from the Saada revival to Sanaa; the Saudi-led war and US support; Iran's documented arms supply against the proxy frame. Figures: time; compare"},
-  {"s": "hz10_redsea", "draws": [], "research": ["hz10_redsea","hz10_houthis"], "writer": "R", "brief": "The Red Sea campaign from November 2023, US/UK and Israeli strikes, Rough Rider and the Oman truce, the 2026 Iran and Saudi fronts; status as of October 2026. Figures: stats; time"},
-  {"s": "hz10_iraq", "draws": [], "research": ["hz10_iraq","hz10_houthis","hz10_redsea"], "writer": "R", "brief": "Iraqi militias: PMF, Kata'ib Hezbollah, the 2019-20 chain to Soleimani's killing, Tower 22, Iran's denials, 2026 status. Figures: flow; compare"}
+  {
+   "s": "hz10_houthis",
+   "draws": [],
+   "research": [
+    "hz10_houthis"
+   ],
+   "writer": "R",
+   "brief": "Ansar Allah from the Saada revival to Sanaa; the Saudi-led war and US support; Iran's documented arms supply against the proxy frame. Figures: time; compare"
+  },
+  {
+   "s": "hz10_redsea",
+   "draws": [],
+   "research": [
+    "hz10_redsea",
+    "hz10_houthis"
+   ],
+   "writer": "R",
+   "brief": "The Red Sea campaign from November 2023, US/UK and Israeli strikes, Rough Rider and the Oman truce, the 2026 Iran and Saudi fronts; status as of October 2026. Figures: stats; time"
+  },
+  {
+   "s": "hz10_iraq",
+   "draws": [],
+   "research": [
+    "hz10_iraq",
+    "hz10_houthis",
+    "hz10_redsea"
+   ],
+   "writer": "R",
+   "brief": "Iraqi militias: PMF, Kata'ib Hezbollah, the 2019-20 chain to Soleimani's killing, Tower 22, Iran's denials, 2026 status. Figures: flow; compare"
+  },
+  {
+   "s": "hz10_syria",
+   "draws": [],
+   "research": [
+    "hz10_syria"
+   ],
+   "writer": "R",
+   "brief": "Syria: Iran's corridor, Israel's campaign between the wars (Eisenkot 2019), Israel's 2013-18 aid and arms to Golan rebels (acknowledged vs reported), post-Assad buffer zone, Sweida, US-mediated talks and Sufa 53 as of October 2026; PIJ. Figures: compare; time"
+  }
  ]
 }
