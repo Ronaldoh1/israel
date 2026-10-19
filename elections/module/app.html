@@ -38,6 +38,7 @@ main{max-width:980px;margin:0 auto;padding:18px 16px 80px}
 h1{font-family:var(--serif);font-weight:700;font-size:34px;line-height:1.08;letter-spacing:-.01em}
 h2{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.15;margin:26px 0 10px}
 h3{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:22px 0 10px}
+h4{font-size:15px;font-weight:700;color:var(--ink);margin:18px 0 8px}
 p{color:var(--ink-dim)}
 .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
 .lede{font-size:16px;color:var(--ink-dim);margin-top:10px;max-width:680px}
@@ -1118,6 +1119,22 @@ function deepMoneyBlock(c){
   if((M['for'] || []).length || (M.against || []).length) h += '<p class="muted">“Who funds the group” lists the group’s largest donors on its own FEC reports, across everything it does, not only this race.</p>';
   return h;
 }
+function careerMoneyBlock(c){
+  var M = c.cmoney; if(!M) return '';
+  var h = '', isrT = sum((M.isr || []).map(function(x){ return x[1]; }));
+  if((M.isr || []).length || (M.isr_opp || []).length || (M.oth || []).length){
+    h += '<h3>Including money these committees passed on</h3><p class="muted">The table above counts each committee’s own gifts. Several of these PACs also collect donations from individuals and forward them to the campaign (“earmarked”), which can be far larger. Below is everything each PAC reported paying to their campaigns, ' + esc(M.span) + ', own gifts and forwarded donations together, net of refunds. Forwarded donations are counted from 2008.</p>';
+    if(isrT) h += '<div class="kpis">' + kpi(money(isrT), 'Through PACs focused on Israel policy, all cycles') + '</div>';
+    var rows = (M.isr || []).map(function(x){ return [x[0], 'Israel policy', x[1], x[2]]; })
+      .concat((M.isr_opp || []).map(function(x){ return [x[0], 'Opposes AIPAC or Zionism', x[1], x[2]]; }))
+      .concat((M.oth || []).map(function(x){ return [x[0], x[1], x[2], '']; }));
+    h += '<div class="tbwrap"><table class="tb"><thead><tr><th>PAC</th><th>Focus</th><th>Paid to their campaigns</th><th>Payments</th></tr></thead><tbody>' +
+      rows.map(function(x){ return recRow([esc(x[0]), esc(x[1]), money(x[2]), x[3] === '' ? '—' : String(x[3])]); }).join('') + '</tbody></table></div>' +
+      '<p class="muted">As each PAC reported it to the FEC. PACs with opposite positions on Israel policy, such as AIPAC’s PAC and J Street’s, are both listed; the name says which.</p>';
+  }
+  if(M.out && (M.out['for'] || M.out.against)) h += '<h3>Outside spending in their races, ' + esc(M.span) + '</h3><div class="kpis">' + kpi(money(M.out['for']), 'Spent to elect them, all cycles') + kpi(money(M.out.against), 'Spent to defeat them, all cycles') + '</div>';
+  return h ? h + '<p class="muted">From the FEC’s bulk files and API, collected 18 October 2026' + (M.note ? '. ' + esc(M.note) : '') + '. Leads to check against fec.gov, not findings about anyone’s motives.</p>' : '';
+}
 function filingBlock(c){
   var h = '';
   if(c.fec_notices_n != null){
@@ -1167,7 +1184,7 @@ function recordsPage(c, r, s, id){
   if(c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + attendBlock(c) + votesBlock(c, s);
   else if(c.vstats) h += '<h2 id="c-votes">Attendance</h2>' + attendBlock(c);
   if(c.effectiveness) h += '<h2 id="c-office">In office</h2>' + officeBlock(c, s);
-  h += '<h2 id="c-records">From the public records</h2>' + recordsBlock(c) + deepMoneyBlock(c) + filingBlock(c);
+  h += '<h2 id="c-records">From the public records</h2>' + recordsBlock(c) + deepMoneyBlock(c) + careerMoneyBlock(c) + filingBlock(c);
   return h;
 }
 VIEWS.cand = function(id){
@@ -1231,7 +1248,7 @@ VIEWS.cand = function(id){
   if(r.chamber !== 'governor' || c.votes_kv) h += '<h2 id="c-votes">How they voted</h2>' + attendBlock(c) + votesBlock(c, s);
   h += '<h2 id="c-isr">Israel: the documented record</h2>' + israelBlock(c, s);
   h += '<h2 id="c-money">Who’s paying for this campaign?</h2>' + moneyBlock(c, s) + '' + money2Block(c) + '<div style="margin-top:10px"><button class="btn ghost" data-go="dash" data-arg="' + id + '">Open the full financial dashboard →</button></div>';
-  if(recFor(c) || c.deep || c.fec_notices_n != null) h += '<h2 id="c-records">From the public records</h2>' + (recFor(c) ? recordsBlock(c) : '') + deepMoneyBlock(c) + filingBlock(c);
+  if(recFor(c) || c.deep || c.cmoney || c.fec_notices_n != null) h += '<h2 id="c-records">From the public records</h2>' + (recFor(c) ? recordsBlock(c) : '') + deepMoneyBlock(c) + careerMoneyBlock(c) + filingBlock(c);
   h += '<h2 id="c-fin">Personal finances & stock trades</h2>' + financesBlock(c, s);
   h += '<h2 id="c-office">In office: what they’ve done and who they work with</h2>' + officeBlock(c, s);
   h += '<h2 id="c-dem">Election results: certify and accept?</h2>' + democracyBlock(c, s);
