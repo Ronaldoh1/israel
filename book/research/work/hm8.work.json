@@ -1,0 +1,108 @@
+{
+ "hm8_power": {
+  "topic": "The power ledger",
+  "claims": [
+   {
+    "text": "Israel GDP (current US$): $525.2bn 2022, $513.4bn 2023, $542.3bn 2024, $610.8bn 2025.",
+    "strength": "confirmed",
+    "sources": [
+     "hm_fred_ilgdp"
+    ]
+   },
+   {
+    "text": "Gaza value added averaged ~$670m a quarter in the three years before the war (UNCTAD) — about $2.7bn a year; Q1 2024 activity 86% below pre-war; Palestine per-capita GDP ~$3,800.",
+    "strength": "reported",
+    "sources": [
+     "hm_aspi_gazagdp"
+    ]
+   },
+   {
+    "text": "PCBS: Gaza real GDP 2025 down 84% vs 2023; Gaza unemployment 78% in 2025.",
+    "strength": "confirmed",
+    "sources": [
+     "hm_pcbs_2025"
+    ]
+   },
+   {
+    "text": "SIPRI: Israel military expenditure $46.5bn in 2024, up 65%, 8.8% of GDP, 12th in world.",
+    "strength": "reported",
+    "sources": [
+     "hm_globes_sipri"
+    ]
+   },
+   {
+    "text": "IISS: IDF 169,500 active, 465,000 reservists; 316 combat aircraft; 5 submarines; SIPRI: ~90 nuclear warheads.",
+    "strength": "reported",
+    "sources": [
+     "hm_almon_idf"
+    ]
+   },
+   {
+    "text": "Costs of War/Quincy: at least $21.7bn US military aid to Israel 7 Oct 2023–Sep 2025 ($17.9bn first year, $3.8bn second); plus $9.65–12bn US regional operations.",
+    "strength": "reported",
+    "sources": [
+     "hm_an_costsofwar"
+    ]
+   },
+   {
+    "text": "SIPRI: US 69% and Germany 30% of Israel's arms imports (2023).",
+    "strength": "reported",
+    "sources": [
+     "hm_dp_sipri_imports"
+    ]
+   },
+   {
+    "text": "INSS: at war's start Hamas had ~18,000–30,000 rockets and inaccurate missiles; ~20,000–25,000 combatants; tunnels ~500–700 km; Kornet anti-tank missiles; drones.",
+    "strength": "reported",
+    "sources": [
+     "hm_inss_arsenal"
+    ]
+   },
+   {
+    "text": "Hamas finances: military budget $100–350m a year (Israeli and Palestinian sources); taxes and fees up to $300–450m (Levitt); Iran ~$100m a year (State Dept); Qatar $1.49bn civilian aid 2012–21; $500m investment portfolio (US Treasury); crypto small; Hamas says civil and military funds separate.",
+    "strength": "reported",
+    "sources": [
+     "hm_nbc_money"
+    ]
+   }
+  ],
+  "sources": {
+   "hm_fred_ilgdp": {
+    "url": "https://fred.stlouisfed.org/series/MKTGDPILA646NWDB",
+    "label": "World Bank via FRED, 'Gross Domestic Product for Israel' (current US$)"
+   },
+   "hm_aspi_gazagdp": {
+    "url": "https://www.aspistrategist.org.au/gazas-economy-gdp-down-86-percent-most-businesses-destroyed/",
+    "label": "David Uren, 'Gaza's economy: GDP down 86 percent, most businesses destroyed', ASPI Strategist, 16 Oct 2024 (World Bank and UNCTAD data)"
+   },
+   "hm_pcbs_2025": {
+    "url": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_EconomicForecast2026E.pdf",
+    "label": "Palestinian Central Bureau of Statistics and Palestine Monetary Authority, economic performance 2025 and forecast 2026, 21 Dec 2025"
+   },
+   "hm_globes_sipri": {
+    "url": "https://en.globes.co.il/en/article-israel-military-expenditure-up-65-in-2024-1001508986",
+    "label": "Globes, 'Israel military expenditure up 65% in 2024' (SIPRI), 28 Apr 2025"
+   },
+   "hm_almon_idf": {
+    "url": "https://www.al-monitor.com/originals/2025/05/israel-plans-gaza-conquest-how-strong-its-army",
+    "label": "AFP via Al-Monitor, 'As Israel plans Gaza conquest, how strong is its army?' (IISS, SIPRI), 6 May 2025"
+   },
+   "hm_an_costsofwar": {
+    "url": "https://www.arabnews.com/node/2618003/middle-east",
+    "label": "AP via Arab News, 'US has given at least $21.7 billion in military aid to Israel since war in Gaza began, report says', 7 Oct 2025"
+   },
+   "hm_dp_sipri_imports": {
+    "url": "https://thedefensepost.com/2024/03/26/us-germany-israel-weapons/",
+    "label": "The Defense Post, 'US, Germany supplied 99% of Israel weapons imports', 26 Mar 2024 (SIPRI)"
+   },
+   "hm_inss_arsenal": {
+    "url": "https://www.inss.org.il/social_media/hamass-weapons-arsenal-what-did-we-start-with-and-what-is-left/",
+    "label": "Yehoshua Kalisky, 'Hamas's weapons arsenal: what did we start with and what is left?', INSS, 12 Feb 2024"
+   },
+   "hm_nbc_money": {
+    "url": "https://www.nbcnews.com/news/world/gaza-plagued-poverty-hamas-no-shortage-cash-come-rcna121099",
+    "label": "NBC News, 'Gaza is plagued by poverty, but Hamas has no shortage of cash', Oct 2023"
+   }
+  }
+ }
+}
