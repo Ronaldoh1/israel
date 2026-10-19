@@ -868,7 +868,7 @@ body.book-open #libBanner{display:none}
         if(b.status !== 'ready') return '<div class="lb-book soon" role="img" aria-label="' + esc(b.title + ', Volume ' + roman(b.vol) + ', in progress, coming soon') + '">' + cover(b) + '</div>';
         return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
-        var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? b.chapters.length + ' ' + (b.unit || 'chapters') : b.count + ' parts in the simulation';
+        var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
         return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }

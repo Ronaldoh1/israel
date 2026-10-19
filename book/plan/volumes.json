@@ -128,7 +128,8 @@
     "title": "The Composite",
     "span": "Three parents, one child"
    }
-  ]
+  ],
+  "parts_total": 6
  },
  "money": {
   "slot": "ch54",
@@ -195,6 +196,80 @@
     "id": "pm10",
     "label": "Part Ten",
     "title": "The Whole Architecture, and What It Costs",
+    "span": "Synthesis"
+   }
+  ]
+ },
+ "gaza": {
+  "slot": "ch11",
+  "absorbs": [
+   "ch09",
+   "ch45",
+   "ch39"
+  ],
+  "title": "Gaza, Documented",
+  "subtitle": "Palestine Under the Architecture, 1917–2026",
+  "span": "1917–2026",
+  "intro": "gz_intro.html",
+  "stages": [
+   {
+    "id": "gz1",
+    "label": "Part One",
+    "title": "Gaza Before the State, and the Refugees",
+    "span": "1917–1949"
+   },
+   {
+    "id": "gz2",
+    "label": "Part Two",
+    "title": "Egyptian Rule and the Occupation",
+    "span": "1949–1987"
+   },
+   {
+    "id": "gz3",
+    "label": "Part Three",
+    "title": "Uprising, Oslo, Settlements and Withdrawal",
+    "span": "1987–2005"
+   },
+   {
+    "id": "gz4",
+    "label": "Part Four",
+    "title": "The Blockade, and How It Works",
+    "span": "2006–2023"
+   },
+   {
+    "id": "gz5",
+    "label": "Part Five",
+    "title": "The Wars, 2008–2021",
+    "span": "2008–2021"
+   },
+   {
+    "id": "gz6",
+    "label": "Part Six",
+    "title": "October 7, 2023",
+    "span": "2023"
+   },
+   {
+    "id": "gz7",
+    "label": "Part Seven",
+    "title": "The War Since: Deaths, Famine and the Courts",
+    "span": "2023–2026"
+   },
+   {
+    "id": "gz8",
+    "label": "Part Eight",
+    "title": "The Money: Occupation, Aid and Reconstruction",
+    "span": "1967–2026"
+   },
+   {
+    "id": "gz9",
+    "label": "Part Nine",
+    "title": "Who Decides",
+    "span": "1948–2026"
+   },
+   {
+    "id": "gz10",
+    "label": "Part Ten",
+    "title": "Settled, Contested and Open",
     "span": "Synthesis"
    }
   ]

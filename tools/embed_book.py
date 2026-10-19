@@ -180,10 +180,11 @@ books = [
    'intro': '', 'chapters': cold, 'first': cold[0]['sections'][0]['s'] if cold[0]['sections'] else 'cw1'},
 ]
 if divine:
-    books.append({'id': 'divine', 'vol': 4, 'status': 'ready', 'title': dv['title'], 'subtitle': dv['subtitle'], 'span': dv['span'], 'unit': 'parts',
+    books.append({'id': 'divine', 'vol': 4, 'status': 'ready', 'title': dv['title'], 'subtitle': dv['subtitle'], 'span': dv['span'], 'unit': 'parts', 'total': dv.get('parts_total'),
                   'intro': read(os.path.join(ROOT, 'book', 'part1', 'dv_intro.html')), 'chapters': divine, 'first': divine[0]['sections'][0]['s']})
 # ---- Thematic volumes that take a simulation chapter's place on the shelf (volumes.json: 'slot': '<chapter id>') ----
 SLOTTED = {}
+ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) and v.get('slot') for c in v.get('absorbs', [])}   # chapters merged into a thematic volume leave the shelf
 for key, v in VOLS.items():
     if not isinstance(v, dict) or not v.get('slot'): continue
     parts = []
@@ -195,12 +196,12 @@ for key, v in VOLS.items():
                       'outro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_outro.html')),
                       'outroTitle': 'What this part established', 'sections': secs})
     if parts:
-        SLOTTED[v['slot']] = {'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts',
+        SLOTTED[v['slot']] = {'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts', 'total': v.get('parts_total') or len(v['stages']),
                               'intro': read(os.path.join(ROOT, 'book', 'part1', v.get('intro', key + '_intro.html'))), 'chapters': parts, 'first': parts[0]['sections'][0]['s']}
 done = {'ch01', 'rd0', 'rd1', 'rd2', 'rd3', 'rd4', 'rd5', 'rd6', 'ch05'}
 vol = 5 if divine else 4
 for c in CH:
-    if c['id'] in done or not c['scenes']: continue
+    if c['id'] in done or c['id'] in ABSORBED or not c['scenes']: continue
     if c['id'] in SLOTTED:
         b = dict(SLOTTED[c['id']]); b['vol'] = vol; books.append(b); vol += 1; continue
     t, sub = split_name(c['name'])
