@@ -1,0 +1,218 @@
+{
+ "volume": "gaza",
+ "verified": "2026-10-18",
+ "entries": [
+  {
+   "id": "gz7_war",
+   "stage": "gz7",
+   "topic": "The course of the war, ceasefires and hostages",
+   "claims": [
+    {
+     "text": "A ceasefire took effect on 19 January 2025 in three 42-day stages; Hamas released 33 hostages in stage one; Israel agreed to release up to 1,904 Palestinian prisoners; after Hamas refused to extend stage one Israel stopped aid entry on 2 March 2025; on 18 March Israel resumed strikes, citing Hamas's 'refusal to release hostages and its rejection of proposals to extend the cease-fire'; Hamas said the second phase should proceed as planned.",
+     "strength": "documented",
+     "sources": [
+      "gz_wiki_ceasefire2025"
+     ]
+    },
+    {
+     "text": "On 13 October 2025 Hamas released all 20 remaining living hostages under the US-proposed deal; Israel freed more than 1,900 prisoners, about 250 serving life sentences and 1,700 detained from Gaza without charge; 28 dead hostages remained; the plan provides for an international body governing Gaza with Palestinian technocrats and an Arab-led security force.",
+     "strength": "reported",
+     "sources": [
+      "gz_kt_hostages"
+     ]
+    },
+    {
+     "text": "The remains of deceased hostages were returned in stages and the IDF later announced recovery of the last hostage's body; the UN Security Council authorized the Board of Peace and an International Stabilization Force; Israel holds territory behind a 'yellow line'.",
+     "strength": "documented",
+     "sources": [
+      "gz_wiki_timeline2025"
+     ]
+    },
+    {
+     "text": "As of 12 October 2026 the Gaza health ministry counted 74,382 killed since October 2023, 1,493 of them since the ceasefire of 10 October 2025; aid trucks entered at about a third of the agreed rate; no international stabilisation force had deployed; Israel controlled nearly two-thirds of the strip, against about half it was to retain.",
+     "strength": "reported",
+     "sources": [
+      "gz_aj_year2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gz_aj_siege",
+     "url": "https://aljazeera.com/news/2023/10/9/israel-announces-total-blockade-on-gaza",
+     "label": "Al Jazeera, 'Israel announces total blockade on Gaza', 9 Oct 2023"
+    },
+    {
+     "key": "gz_wiki_ceasefire2025",
+     "url": "https://en.wikipedia.org/wiki/January_2025_Gaza_war_ceasefire",
+     "label": "Wikipedia, 'January 2025 Gaza war ceasefire'"
+    },
+    {
+     "key": "gz_kt_hostages",
+     "url": "https://www.koreatimes.co.kr/amp/world/20251013/hamas-releases-all-20-remaining-living-hostages-as-part-of-gaza-ceasefire",
+     "label": "AP via Korea Times, 'Hamas releases all 20 remaining living hostages as part of Gaza ceasefire', 13 Oct 2025"
+    },
+    {
+     "key": "gz_wiki_timeline2025",
+     "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Gaza_war_(3_October_2025_%E2%80%93_present)",
+     "label": "Wikipedia, 'Timeline of the Gaza war (3 October 2025 – present)'"
+    },
+    {
+     "key": "gz_aj_year2026",
+     "url": "https://www.aljazeera.com/amp/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing",
+     "label": "Al Jazeera, 'Palestine weekly: Gaza marks year of ceasefire with more Israeli killing', 13 Oct 2026"
+    }
+   ]
+  },
+  {
+   "id": "gz7_toll",
+   "stage": "gz7",
+   "topic": "Deaths, destruction, famine and aid",
+   "claims": [
+    {
+     "text": "A Lancet capture-recapture study estimated 64,260 traumatic-injury deaths (range 55,298–78,525) from October 2023 to end June 2024, against the ministry's 37,877, an undercount of 41%; 59.1% of the dead were women, children and people over 65; it excluded deaths from lack of care or food and gave no estimate of fighters.",
+     "strength": "reported",
+     "sources": [
+      "gz_aj_lancet"
+     ]
+    },
+    {
+     "text": "Haaretz reported that the IDF has accepted the Gaza health ministry's estimate of roughly 71,000 killed, after more than two years of Israel casting doubt on the figures; the ministry count does not distinguish civilians from combatants and excludes starvation and disease deaths and the missing; leaked IDF intelligence published by the Guardian and +972 in August 2025 indicated at least 83% of those killed were civilians.",
+     "strength": "reported",
+     "sources": [
+      "gz_yahoo_idf71k"
+     ]
+    },
+    {
+     "text": "UNOSAT imagery of 11 October 2025 identified 123,464 destroyed, 17,116 severely damaged, 33,857 moderately damaged and 23,836 possibly damaged structures, 198,273 in all, about 81% of structures in the strip.",
+     "strength": "documented",
+     "sources": [
+      "gz_unosat2025"
+     ]
+    },
+    {
+     "text": "On 22 August 2025 the IPC found that 'famine is now occurring in Gaza City and its surrounding area', more than 500,000 people faced catastrophic conditions, projected famine in Deir el-Balah and Khan Younis by end September, and named 'conflict, displacement, restricted access, and food system collapse' as causes; Israel's foreign ministry said 'there was no famine in Gaza'.",
+     "strength": "reported",
+     "sources": [
+      "gz_aj_ipc"
+     ]
+    },
+    {
+     "text": "Israel blocked aid from March 2025, saying Hamas was stealing aid; the Israel- and US-backed Gaza Humanitarian Foundation began distributing on 27 May 2025 and ended on 24 November 2025; OHCHR recorded more than 2,146 deaths near GHF sites and along aid convoy routes as of 4 September 2025; GHF said it was the only operation that reliably and safely provided food and distributed over 3 million boxes.",
+     "strength": "reported",
+     "sources": [
+      "gz_aj_ghf"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gz_aj_lancet",
+     "url": "https://www.aljazeera.com/news/2025/1/10/deaths-from-israeli-attacks-in-gaza-undercounted-by-41-percent-study-finds",
+     "label": "Al Jazeera, on the Lancet study (LSHTM/Yale), 10 Jan 2025"
+    },
+    {
+     "key": "gz_yahoo_idf71k",
+     "url": "https://www.yahoo.com/news/articles/idf-accepts-gaza-health-ministry-015338372.html",
+     "label": "'IDF Accepts Gaza Health Ministry's Death Toll of 71,000' (reporting Haaretz), 2026"
+    },
+    {
+     "key": "gz_unosat2025",
+     "url": "https://www.un.org/unispal/document/unosat-gaza-strip-damage-assessment-31oct25/",
+     "label": "UNOSAT, Gaza Strip comprehensive damage assessment (imagery 11 Oct 2025)"
+    },
+    {
+     "key": "gz_aj_ipc",
+     "url": "https://aljazeera.com/news/2025/8/22/what-has-led-to-a-famine-being-confirmed-in-gaza",
+     "label": "Al Jazeera, 'What has led to a famine being confirmed in Gaza?', 22 Aug 2025"
+    },
+    {
+     "key": "gz_aj_ghf",
+     "url": "https://www.aljazeera.com/news/2025/11/25/us-backed-ghf-aid-mission-in-gaza-ends-a-timeline-of-violence",
+     "label": "Al Jazeera, 'US-backed GHF aid mission in Gaza ends – a timeline of violence', 25 Nov 2025"
+    }
+   ]
+  },
+  {
+   "id": "gz7_courts",
+   "stage": "gz7",
+   "topic": "The courts and the inquiries",
+   "claims": [
+    {
+     "text": "On 26 January 2024 the ICJ found 'at least some of the rights claimed by South Africa ... are plausible', ordered Israel to 'take all measures within its power to prevent the commission of all acts' within the Genocide Convention, to prevent and punish direct and public incitement, and to enable humanitarian assistance; Judge Sebutinde dissented on all measures; it did not order a ceasefire and did not rule whether genocide occurred.",
+     "strength": "reported",
+     "sources": [
+      "gz_oj_icj2024"
+     ]
+    },
+    {
+     "text": "South Africa alleged genocidal acts with genocidal intent; Israel argued it is entitled to defend itself, that cited statements were not policy and that it has no genocidal intent; the merits will take years.",
+     "strength": "reported",
+     "sources": [
+      "gz_ch_icj"
+     ]
+    },
+    {
+     "text": "On 24 May 2024 the ICJ, 13 votes to two, ordered Israel to 'halt its military offensive and any other action in the Rafah Governorate, which may inflict on the Palestinian group in Gaza conditions of life that could bring about its physical destruction in whole or in part', keep Rafah crossing open and give access to UN investigators.",
+     "strength": "reported",
+     "sources": [
+      "gz_lawfare_rafah"
+     ]
+    },
+    {
+     "text": "On 21 November 2024 the ICC issued warrants for Netanyahu and Gallant for the war crime of starvation as a method of warfare, the war crime of intentionally directing an attack against civilians, and crimes against humanity of murder, persecution and other inhumane acts, from at least 8 October 2023 to at least 20 May 2024; and for Mohammed Deif for murder, extermination, torture, rape, hostage-taking and other crimes; Netanyahu called the warrants 'anti-Semitic' and 'absurd and false'; Hamas welcomed them; Biden called them 'outrageous'.",
+     "strength": "reported",
+     "sources": [
+      "gz_almon_icc",
+      "gz_un_icc"
+     ]
+    },
+    {
+     "text": "On 16 September 2025 the UN Commission of Inquiry chaired by Navi Pillay concluded 'Israel has committed genocide against Palestinians in the Gaza Strip', finding four of the five acts in the 1948 Convention and that Herzog, Netanyahu and Gallant 'have incited the commission of genocide'; Israel's foreign ministry said it 'categorically rejects this distorted and false report', called for the commission's abolition and said it 'relies entirely on Hamas falsehoods'.",
+     "strength": "reported",
+     "sources": [
+      "gz_un_coi2025",
+      "gz_ctv_coi2025"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gz_oj_icj2024",
+     "url": "https://opiniojuris.org/2024/01/27/the-icjs-provisional-measures-order-in-the-south-africa-v-israel-case-unsurprising-politically-and-legally-significant/",
+     "label": "Milena Sterio, 'The ICJ's Provisional Measures Order in the South Africa v. Israel Case', Opinio Juris, 27 Jan 2024"
+    },
+    {
+     "key": "gz_ch_icj",
+     "url": "https://www.chathamhouse.org/2024/01/south-africas-genocide-case-against-israel-international-court-justice-explained",
+     "label": "Rashmin Sagoo and Nomi Bar-Yaacov, 'South Africa's genocide case against Israel', Chatham House, 26 Jan 2024"
+    },
+    {
+     "key": "gz_lawfare_rafah",
+     "url": "https://www.lawfaremedia.org/article/icj-issues-order-in-south-africa-v.-israel-focused-on-israel-s-military-offensive-in-rafah",
+     "label": "Lawfare, 'ICJ issues order in South Africa v. Israel focused on Israel's military offensive in Rafah', May 2024"
+    },
+    {
+     "key": "gz_almon_icc",
+     "url": "https://www.al-monitor.com/originals/2024/11/icc-issues-arrest-warrants-netanyahu-gallant-deif",
+     "label": "Al-Monitor/AFP, 'ICC issues arrest warrants for Netanyahu, Gallant, Deif', 21 Nov 2024"
+    },
+    {
+     "key": "gz_un_icc",
+     "url": "https://www.globalsecurity.org/military/library/news/2024/11/mil-241121-unnews01.htm",
+     "label": "UN News, ICC warrants, 21 Nov 2024 (GlobalSecurity copy)"
+    },
+    {
+     "key": "gz_un_coi2025",
+     "url": "https://www.un.org/unispal/?p=311186",
+     "label": "UN OHCHR, Commission of Inquiry finds Israel has committed genocide, 16 Sep 2025"
+    },
+    {
+     "key": "gz_ctv_coi2025",
+     "url": "https://www.channelstv.com/2025/09/16/distorted-and-false-israel-rejects-un-probe-accusing-it-of-genocide/",
+     "label": "AFP via Channels TV, 'Distorted and false: Israel rejects UN probe accusing it of genocide', 16 Sep 2025"
+    }
+   ]
+  }
+ ]
+}

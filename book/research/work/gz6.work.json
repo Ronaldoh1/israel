@@ -36,6 +36,20 @@
     "sources": [
      "gz_pbs_idfprobe"
     ]
+   },
+   {
+    "text": "Hagari (11 Jul 2024): 'The IDF failed in its mission to protect the residents of Kibbutz Be'eri'; the inquiry found 'no civilians inside the building were hit by tank fire', 'most of the hostages inside the house were murdered by the terrorists', hostages outside were hit by tank shrapnel and it is 'highly likely that one of them was killed as a result'; tank fire came after negotiations were exhausted; 'a developing inquiry'.",
+    "strength": "documented",
+    "sources": [
+     "gz_idf_beeri_probe"
+    ]
+   },
+   {
+    "text": "The probe judged Hiram's order 'reasonable in view of the conditions'; kibbutz members said it 'failed to answer critical questions' and called for a state-level panel.",
+    "strength": "reported",
+    "sources": [
+     "gz_jc_beeri"
+    ]
    }
   ],
   "sources": {
@@ -54,6 +68,14 @@
    "gz_pbs_idfprobe": {
     "url": "https://www.pbs.org/newshour/world/israels-army-admits-failures-on-oct-7-and-says-it-underestimated-hamas-capabilities",
     "label": "AP/PBS NewsHour, 'Israel's army admits failures on Oct. 7', 27 Feb 2025"
+   },
+   "gz_idf_beeri_probe": {
+    "url": "https://www.globalsecurity.org/military/library/news/2024/07/mil-240711-idf01.htm",
+    "label": "IDF Spokesperson RAdm. Daniel Hagari, press briefing on the Be'eri inquiry, 11 Jul 2024 (GlobalSecurity copy)"
+   },
+   "gz_jc_beeri": {
+    "url": "https://thejc.com/news/israel/idf-probe-leaves-critical-questions-unanswered-say-kibbutz-beeri-survivors-jw6ui0pv",
+    "label": "Jewish Chronicle, 'IDF probe leaves critical questions unanswered, say Kibbutz Be'eri survivors', 12 Jul 2024"
    }
   }
  },
@@ -127,6 +149,27 @@
     "sources": [
      "gz_aj_siege"
     ]
+   },
+   {
+    "text": "An Israeli Air Force probe found Efrat Katz of Nir Oz was likely killed by helicopter fire.",
+    "strength": "reported",
+    "sources": [
+     "gz_toi_hannibal"
+    ]
+   },
+   {
+    "text": "An army official said friendly-fire incidents occurred but 'there were not many', without a figure.",
+    "strength": "reported",
+    "sources": [
+     "gz_pbs_idfprobe"
+    ]
+   },
+   {
+    "text": "Hamas's 'Our Narrative' said many Israelis 'were killed by the Israeli army and police due to their confusion'.",
+    "strength": "reported",
+    "sources": [
+     "gz_aj_narrative"
+    ]
    }
   ],
   "sources": {
@@ -145,6 +188,14 @@
    "gz_aj_siege": {
     "url": "https://aljazeera.com/news/2023/10/9/israel-announces-total-blockade-on-gaza",
     "label": "Al Jazeera, 'Israel announces total blockade on Gaza', 9 Oct 2023"
+   },
+   "gz_pbs_idfprobe": {
+    "url": "https://www.pbs.org/newshour/world/israels-army-admits-failures-on-oct-7-and-says-it-underestimated-hamas-capabilities",
+    "label": "AP/PBS NewsHour, 'Israel's army admits failures on Oct. 7', 27 Feb 2025"
+   },
+   "gz_idf_beeri_probe": {
+    "url": "https://www.globalsecurity.org/military/library/news/2024/07/mil-240711-idf01.htm",
+    "label": "IDF Spokesperson RAdm. Daniel Hagari, press briefing on the Be'eri inquiry, 11 Jul 2024 (GlobalSecurity copy)"
    }
   }
  }
