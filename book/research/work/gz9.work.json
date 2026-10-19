@@ -22,6 +22,27 @@
     "sources": [
      "gz_almon_hamasleaders"
     ]
+   },
+   {
+    "text": "Ben-Gvir resigned on 21 January 2025; Otzma Yehudit rejoined the government on 18 March 2025, hours after the truce collapsed.",
+    "strength": "reported",
+    "sources": [
+     "gz_jc_bengvir_return"
+    ]
+   },
+   {
+    "text": "On 17 February 2025 Netanyahu said he was 'committed to US President Trump's plan for the creation of a different Gaza'; Defence Minister Israel Katz announced a body to oversee 'voluntary departure' from Gaza.",
+    "strength": "reported",
+    "sources": [
+     "gz_aj_netanyahu_feb25"
+    ]
+   },
+   {
+    "text": "On 21 May 2025 Netanyahu called the Trump plan 'so revolutionary', summarized 'Residents of Gaza who want to leave can leave', and listed its implementation among five conditions for ending the war, with the hostages' release, Hamas's surrender, its leaders' expulsion and demilitarization.",
+    "strength": "reported",
+    "sources": [
+     "gz_jweekly_may25"
+    ]
    }
   ],
   "sources": {
@@ -36,6 +57,22 @@
    "gz_almon_hamasleaders": {
     "url": "https://www.al-monitor.com/originals/2025/09/factbox-hamas-leaders-killed-israel-and-those-who-remain-0",
     "label": "Reuters factbox via Al-Monitor, 'Hamas leaders killed by Israel and those who remain', 29 Sep 2025"
+   },
+   "gz_jc_bengvir_return": {
+    "url": "https://thejc.com/news/israel/ben-gvirs-otzma-yehudit-rejoins-israeli-government-rnvidfoh",
+    "label": "Jewish Chronicle, 'Ben-Gvir's Otzma Yehudit rejoins Israeli government', 18 Mar 2025"
+   },
+   "gz_aj_netanyahu_feb25": {
+    "url": "https://www.aljazeera.com/news/2025/2/17/netanyahu-says-israel-committed-to-trumps-gaza-plan",
+    "label": "Al Jazeera, 'Netanyahu says Israel committed to Trump's Gaza plan', 17 Feb 2025"
+   },
+   "gz_jweekly_may25": {
+    "url": "https://jweekly.com/2025/05/21/an-embattled-netanyahu-says-trump-plan-for-gaza-emigration-is-a-condition-for-ending-war/",
+    "label": "JTA via J. Weekly, 'Netanyahu says Trump plan for Gaza emigration is a condition for ending war', 21 May 2025"
+   },
+   "gz_wiki_ceasefire2025": {
+    "url": "https://en.wikipedia.org/wiki/January_2025_Gaza_war_ceasefire",
+    "label": "Wikipedia, 'January 2025 Gaza war ceasefire'"
    }
   }
  },
@@ -76,6 +113,20 @@
     "sources": [
      "gz_wiki_timeline2025"
     ]
+   },
+   {
+    "text": "On 4 June 2025 the US was the only vote against a Gaza ceasefire draft (14 in favour); acting ambassador Dorothy Shea said it did not condemn Hamas or urge it to disarm and 'draws false equivalence' between Israel and Hamas.",
+    "strength": "reported",
+    "sources": [
+     "gz_axios_veto2025"
+    ]
+   },
+   {
+    "text": "On 3 October 2025 Hamas announced 'approval of releasing all occupation prisoners — both living and remains' and readiness 'to hand over the administration of the Gaza Strip to a Palestinian body of independents (technocrats)', and to negotiate details through mediators; it did not say whether it would disarm.",
+    "strength": "reported",
+    "sources": [
+     "gz_almon_hamas_plan"
+    ]
    }
   ],
   "sources": {
@@ -102,6 +153,14 @@
    "gz_wiki_timeline2025": {
     "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Gaza_war_(3_October_2025_%E2%80%93_present)",
     "label": "Wikipedia, 'Timeline of the Gaza war (3 October 2025 – present)'"
+   },
+   "gz_axios_veto2025": {
+    "url": "https://www.axios.com/2025/06/04/us-vetoes-un-security-council-resolution-demanding-immediate-ceasefire-in-gaza",
+    "label": "Axios, 'US vetoes UN Security Council resolution demanding immediate ceasefire in Gaza', 4 Jun 2025"
+   },
+   "gz_almon_hamas_plan": {
+    "url": "https://www.al-monitor.com/originals/2025/10/hamas-agrees-some-trumps-plan-seeks-negotiations",
+    "label": "Reuters via Al-Monitor, 'Hamas agrees to some of Trump's plan, seeks negotiations', 3 Oct 2025"
    }
   }
  }
