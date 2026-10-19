@@ -364,5 +364,67 @@
     "label": "Dawn (Reuters/AFP), 'Houthis claim Saudi strikes on Yemen's Taiz leave dozens of casualties', 27 September 2026"
    }
   }
+ },
+ "hz10_iraq": {
+  "topic": "Iraqi militias: PMF, Kataib Hezbollah, the 2019-20 escalation and Soleimani, Tower 22, 2026",
+  "claims": [
+   {
+    "text": "Late Dec 2019 rocket attack on an Iraqi base killed a US contractor (27 Dec per Esper); US blamed Kataib Hezbollah; US strikes (29 Dec) killed 25 KH fighters; Iran-backed militias attacked US embassy in Baghdad, ending 1 Jan; Trump ordered ~750 troops deployed; Pentagon: Soleimani 'was actively developing plans to attack American diplomats and service members'; strike 'aimed at deterring future Iranian attack plans'",
+    "strength": "reported",
+    "sources": [
+     "hz10_fox_pentagon2020"
+    ]
+   },
+   {
+    "text": "Soleimani headed the Quds Force from 1998; drone strike on PMF convoy at Baghdad airport killed Soleimani and PMF deputy Abu Mahdi al-Muhandis; Pentagon called it 'decisive defensive action'; Khamenei warned of 'harsh retaliation'; NYT: no congressional approval, unclear if Iraq consulted",
+    "strength": "reported",
+    "sources": [
+     "hz10_rudaw_soleimani"
+    ]
+   },
+   {
+    "text": "Airwars CI879: 3 Jan 2020, 11-13 military actors and 0-1 civilians reported killed",
+    "strength": "reported",
+    "sources": [
+     "hz10_airwars_soleimani"
+    ]
+   },
+   {
+    "text": "Tower 22, northeastern Jordan, 28 Jan 2024: Sgt William Jerome Rivers, Spc Kennedy Ladon Sanders (24), Spc Breonna Alexsondria Moffett killed; Biden blamed Iran-backed militia groups",
+    "strength": "reported",
+    "sources": [
+     "hz10_abc_tower22"
+    ]
+   },
+   {
+    "text": "Farida: Iraqi militias emerged after 2003; PMF established 2014 against ISIS; 'more than 160' attacks on US forces since 7 Oct 2023; Islamic Resistance in Iraq is umbrella incl. KH; US blamed KH for Jordan attack; KH said it was 'halting' operations under pressure from Iran and Iraq; Iran denies ordering attacks and says factions act independently",
+    "strength": "reported",
+    "sources": [
+     "hz10_at_farida"
+    ]
+   }
+  ],
+  "sources": {
+   "hz10_fox_pentagon2020": {
+    "url": "https://foxbaltimore.com/news/nation-world/pentagon-says-us-airstrike-killed-powerful-iranian-general",
+    "label": "AP via Fox Baltimore, 'Pentagon says US airstrike killed powerful Iranian general', 2-3 January 2020"
+   },
+   "hz10_rudaw_soleimani": {
+    "url": "https://www.rudaw.net/english/middleeast/iran/030120201",
+    "label": "Rudaw, 'US drone strike kills Iranian General Soleimani, PMF official in Baghdad', 3 January 2020"
+   },
+   "hz10_airwars_soleimani": {
+    "url": "https://airwars.org/incidents/ci879-january-3-2020",
+    "label": "Airwars, incident CI879, 3 January 2020"
+   },
+   "hz10_abc_tower22": {
+    "url": "https://abcnews4.com/news/nation-world/gallery/3-soldiers-killed-in-jordan-drone-attack-identified-william-jerome-rivers-kennedy-ladon-sanders-breonna-alexsondria-moffett-middle-east-amid-the-israel-hamas-war-tower-22?photo=1",
+    "label": "ABC News 4 (Sinclair), '3 soldiers killed in Jordan drone attack identified', January 2024"
+   },
+   "hz10_at_farida": {
+    "url": "https://asiatimes.com/2024/02/furious-ties-bind-irans-axis-of-resistance/",
+    "label": "Mariam Farida (The Conversation), Asia Times, 'Furious ties bind Iran's axis of resistance', 3 February 2024"
+   }
+  }
  }
 }
