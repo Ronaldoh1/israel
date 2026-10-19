@@ -1,0 +1,42 @@
+{
+ "pr4_hunger": {
+  "topic": "Hunger",
+  "claims": [
+   {
+    "text": "Ministry (16 Oct 2026): 466 deaths from starvation and malnutrition since 2024, 157 of them children; 158,000+ cases of acute malnutrition in under-5s from 2024 to Aug 2026, ~18% severe; 74,200 children projected to need treatment through April 2027.",
+    "strength": "reported",
+    "sources": [
+     "pr_memo_starv2026"
+    ]
+   },
+   {
+    "text": "IPC (19 Dec 2025): no area of Gaza classified in famine after the ceasefire; Gaza Governorate downgraded; at least 1.6m (77%) in high acute food insecurity; four governorates in Emergency through April 2026; 100,000+ children and 37,000 pregnant and breastfeeding women projected acutely malnourished; UNICEF's Elmi: children 'no longer facing deadly famine, but they remain in grave danger'.",
+    "strength": "reported",
+    "sources": [
+     "pr_un_ipc_dec2025"
+    ]
+   },
+   {
+    "text": "COGAT: 600–800 aid trucks a day after the ceasefire, nearly 30,000 food trucks, 500,000+ tons; called the IPC's December report 'distorted, biased, and unfounded'; FDD argued conditions never met the IPC famine definition and the mortality threshold rested on inference.",
+    "strength": "reported",
+    "sources": [
+     "pr_fdd_ipc_dec2025"
+    ]
+   }
+  ],
+  "sources": {
+   "pr_un_ipc_dec2025": {
+    "url": "https://www.un.org/unispal/document/un-agencies-press-release-19dec25/",
+    "label": "FAO, UNICEF, WFP and WHO joint press release on the IPC analysis, 19 Dec 2025"
+   },
+   "pr_fdd_ipc_dec2025": {
+    "url": "https://www.fdd.org/analysis/2025/12/19/global-hunger-monitor-confirms-no-famine-in-gaza-as-israel-touts-increase-in-delivered-aid/",
+    "label": "Foundation for Defense of Democracies, 'Global hunger monitor confirms no famine in Gaza as Israel touts increase in delivered aid', 19 Dec 2025"
+   },
+   "pr_memo_starv2026": {
+    "url": "https://www.middleeastmonitor.com/20261016-starvation-killed-466-palestinians-since-2024-says-gaza-health-ministry/",
+    "label": "Middle East Monitor, 'Starvation killed 466 Palestinians since 2024, says Gaza health ministry', 16 Oct 2026"
+   }
+  }
+ }
+}
