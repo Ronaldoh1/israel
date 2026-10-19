@@ -2,9 +2,53 @@
  "chapter": "hz8",
  "title": "Part Eight: The Broken Ceasefire and the 2026 War",
  "sections": [
-  {"s": "hz8_terms", "draws": [], "research": ["hz8_terms"], "writer": "R", "brief": "The 27 November 2024 text, the reported side letter, the 60-day deadline and its extension, the five positions kept after 18 February 2025, each side's stated reasons. Figures: timeline, compare"},
-  {"s": "hz8_violations", "draws": [], "research": ["hz8_violations"], "writer": "R", "brief": "UNIFIL, Lebanese, OHCHR and IDF counts of violations and deaths during the truce; Hezbollah's limited fire; how the Mechanism worked. Figures: stats"},
-  {"s": "hz8_disarm", "draws": [], "research": ["hz8_disarm","hz8_violations"], "writer": "R", "brief": "Aoun and Salam, the August 2025 decisions and the Barrack paper, the army plan and its first phase, Hezbollah's refusal, reconstruction money. Figures: timeline, compare (promised vs done)"},
-  {"s": "hz8_war2026", "draws": [], "research": ["hz8_war2026"], "writer": "R", "brief": "The war from 2 March 2026 inside the US-Israel war on Iran: start, Lebanon's ban, Israel's campaign and ground operation, tolls by date, truces, status as far as verifiable. Figures: timeline, stats"}
+  {
+   "s": "hz8_terms",
+   "draws": [],
+   "research": [
+    "hz8_terms"
+   ],
+   "writer": "R",
+   "brief": "The 27 November 2024 text, the reported side letter, the 60-day deadline and its extension, the five positions kept after 18 February 2025, each side's stated reasons. Figures: timeline, compare"
+  },
+  {
+   "s": "hz8_violations",
+   "draws": [],
+   "research": [
+    "hz8_violations"
+   ],
+   "writer": "R",
+   "brief": "UNIFIL, Lebanese, OHCHR and IDF counts of violations and deaths during the truce; Hezbollah's limited fire; how the Mechanism worked. Figures: stats"
+  },
+  {
+   "s": "hz8_disarm",
+   "draws": [],
+   "research": [
+    "hz8_disarm",
+    "hz8_violations"
+   ],
+   "writer": "R",
+   "brief": "Aoun and Salam, the August 2025 decisions and the Barrack paper, the army plan and its first phase, Hezbollah's refusal, reconstruction money. Figures: timeline, compare (promised vs done)"
+  },
+  {
+   "s": "hz8_war2026",
+   "draws": [],
+   "research": [
+    "hz8_war2026",
+    "hz8_fill"
+   ],
+   "writer": "R",
+   "brief": "The war from 2 March 2026 inside the US-Israel war on Iran: start, Lebanon's ban, Israel's campaign and ground operation, tolls by date, truces, status as far as verifiable. Figures: timeline, stats"
+  },
+  {
+   "s": "hz8_now",
+   "draws": [],
+   "research": [
+    "hz8_fill",
+    "hz8_war2026"
+   ],
+   "writer": "R",
+   "brief": "Status as of October 2026: the truce, Israel's zone, the June framework, talks, disarmament, returns, UNIFIL's end. Figures: timeline"
+  }
  ]
 }
