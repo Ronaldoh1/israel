@@ -236,3 +236,10 @@ Each chapter moves through these steps in order. It cannot move to the next step
 
 ## Standing default (added 18 October 2026, Ron)
 Every volume, including thematic volumes outside the chronological order, is written to the Road to 1948 standard: the gates, depth targets and audit in this protocol. Every claim carries a clickable inline citation, each chapter/stage/part ends with its sources, and every volume ends with a full bibliography of all sources cited in it.
+
+## Standing standard: the three-source check (added 19 October 2026, Ron)
+Every volume from the Hamas volume onward is checked against all three bodies of Ron's earlier research before writing, in addition to the Road to 1948 depth standard:
+1. **The Israel Architecture simulation**: every scene in the volume's own chapter and every related scene across the 960 (the cross-library pull in section 2).
+2. **Sophia**: the Project research docs and dashboards (deliberation files, architecture docs, module data).
+3. **The original books (github.com/Ronaldoh1/israelbooks)**: Books 0–9, all versions, searched for every chapter that touches the volume's subject.
+Each lead found is traced to a citable source before use (section 2.3). The volume's plan file records which scenes, Sophia docs and book chapters were checked, so nothing is skipped by accident.
