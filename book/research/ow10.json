@@ -1,0 +1,400 @@
+{
+ "volume": "mirror",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "ow10_firms",
+   "stage": "ow10",
+   "topic": "Israeli spyware and security firms in the US: NSO, Paragon, Cellebrite, Elbit/Twenty-Six Defense, Cognyte, Black Cube, Carbyne",
+   "claims": [
+    {
+     "text": "FBI bought Pegasus (NYT Magazine: 2019; NYT FOIA documents: first purchase 2018), paid NSO about $5m, tested it two years at a New Jersey facility, also tested Phantom for US numbers; pushed to use it late 2020–mid 2021; on 22 Jul 2021 decided to 'cease all efforts'; FBI: 'no operational use'",
+     "strength": "reported",
+     "sources": [
+      "ow10_globe_fbi",
+      "ow10_ai_nytmag"
+     ]
+    },
+    {
+     "text": "NYT 2023: US contractor Riva Networks used NSO's Landmark geolocation tool for the FBI after the Nov 2021 ban; FBI says it was misled; Wray terminated the contract; White House said it was unaware",
+     "strength": "reported",
+     "sources": [
+      "ow10_9to5_riva"
+     ]
+    },
+    {
+     "text": "Commerce added NSO and Candiru to Entity List 3 Nov 2021 for supplying spyware used to 'maliciously target government officials, journalists, businesspeople, activists, academics, and embassy workers'",
+     "strength": "primary",
+     "sources": [
+      "ow10_doc_entity"
+     ]
+    },
+    {
+     "text": "At least nine State Department employees' iPhones (based in or focused on Uganda) hacked with NSO tools (Reuters, Dec 2021); NSO cancelled customer access; Israeli embassy: spyware licensed only for counter-terror and serious crime",
+     "strength": "reported",
+     "sources": [
+      "ow10_reu_state"
+     ]
+    },
+    {
+     "text": "Israel's MOD approves countries to which cyber firms may sell; in Nov 2021 cut the list from 102 to 37; NSO said it sold only to MOD-approved countries",
+     "strength": "reported",
+     "sources": [
+      "ow10_ctech_37"
+     ]
+    },
+    {
+     "text": "WhatsApp v NSO: jury 6 May 2025 awarded $444,719 compensatory and $167.25m punitive for hacking about 1,400 users",
+     "strength": "reported",
+     "sources": [
+      "ow10_axios_jury"
+     ]
+    },
+    {
+     "text": "Judge Phyllis Hamilton (Oct 2025) cut punitive damages to $4m and issued permanent injunction barring NSO from targeting WhatsApp users",
+     "strength": "reported",
+     "sources": [
+      "ow10_cs_inj"
+     ]
+    },
+    {
+     "text": "June 2026 WhatsApp alleged NSO violated the injunction and filed for contempt; NSO appeal pending at Ninth Circuit",
+     "strength": "reported",
+     "sources": [
+      "ow10_sw_contempt"
+     ]
+    },
+    {
+     "text": "Apple moved to drop its NSO suit 13 Sep 2024, citing threat-intelligence exposure and a Guardian report that Israeli officials seized NSO files",
+     "strength": "reported",
+     "sources": [
+      "ow10_stripes_apple"
+     ]
+    },
+    {
+     "text": "NSO reportedly owned by investors led by Robert Simonds; David Friedman named executive chairman Nov 2025; founders no longer hold stake; Friedman focused on US government business",
+     "strength": "reported",
+     "sources": [
+      "ow10_rec_friedman",
+      "ow10_ts_owner"
+     ]
+    },
+    {
+     "text": "EO 14093 (27 Mar 2023) bars operational use of commercial spyware posing counterintelligence risks or risks of improper use by foreign governments; waiver up to one year",
+     "strength": "primary",
+     "sources": [
+      "ow10_eo14093"
+     ]
+    },
+    {
+     "text": "AE Industrial Partners agreed to buy Paragon (Dec 2024) for an estimated $900m, merging it into REDLattice; founders include Ehud Schneorson; Ehud Barak reportedly holds several percent (~$10–15m)",
+     "strength": "reported",
+     "sources": [
+      "ow10_globes_ae"
+     ]
+    },
+    {
+     "text": "Israeli MOD said (19 Dec 2024) the Paragon sale had not yet received the required approval; transfers to foreign hands require a special licence",
+     "strength": "reported",
+     "sources": [
+      "ow10_globes_mod"
+     ]
+    },
+    {
+     "text": "ICE contract 70CTD024P00000012 with Paragon, $2m, summary signed 27 Sep 2024; hold placed in Oct 2024; modification lifting it reported 1 Sep 2025",
+     "strength": "reported",
+     "sources": [
+      "ow10_poulson_ice",
+      "ow10_reg_paragon"
+     ]
+    },
+    {
+     "text": "Acting ICE Director Todd Lyons, letter of 1 Apr 2026, said HSI uses the tool against groups 'particularly those involved in the trafficking of fentanyl', certified no significant counterintelligence risk under EO 14093",
+     "strength": "reported",
+     "sources": [
+      "ow10_tc_lyons",
+      "ow10_npr_lyons"
+     ]
+    },
+    {
+     "text": "WhatsApp said about 90 journalists and civil society members targeted by Graphite (early 2025); Citizen Lab confirmed infections incl. Ciro Pellegrino; COPASIR confirmed Italian government use; Paragon ended Italian contract (disputed by DIS)",
+     "strength": "reported",
+     "sources": [
+      "ow10_is_italy",
+      "ow10_npr_lyons"
+     ]
+    },
+    {
+     "text": "Cellebrite: founded 1999 Petah Tikva; Sun Corporation (Japan) largest shareholder ~44%; Nasdaq via SPAC Aug 2021; ICE contracts ~$2.2m 2017, $30–35m 2019, $11m 2025",
+     "strength": "reported",
+     "sources": [
+      "ow10_wiki_cellebrite"
+     ]
+    },
+    {
+     "text": "ICE $11m Cellebrite contract Sept 2025 with justification fully redacted; CBP, NCIS and Marine CID also use Cellebrite",
+     "strength": "reported",
+     "sources": [
+      "ow10_reason_cb"
+     ]
+    },
+    {
+     "text": "ICE C3 procurement: 'no other mobile forensic product suites that offer equivalent capabilities'",
+     "strength": "reported",
+     "sources": [
+      "ow10_fs_cb"
+     ]
+    },
+    {
+     "text": "Citizen Lab (Jan 2026): Jordan used Cellebrite UFED on phones of activists seized at Gaza war protests; Cellebrite does 'not comment on specifics'",
+     "strength": "reported",
+     "sources": [
+      "ow10_occrp_jordan"
+     ]
+    },
+    {
+     "text": "Cellebrite halted sales to Russian and Belarusian state bodies in March 2021",
+     "strength": "reported",
+     "sources": [
+      "ow10_gv_cb"
+     ]
+    },
+    {
+     "text": "Elbit US subsidiary won $145m DHS/CBP Integrated Fixed Tower contract, 2014, Arizona",
+     "strength": "reported",
+     "sources": [
+      "ow10_globes_ift"
+     ]
+    },
+    {
+     "text": "Elbit America rebranded Twenty-Six Defense 8 Sep 2026; Fort Worth; ~3,300 employees; July 2026 CBP contracts worth more than $370m through May 2029",
+     "strength": "reported",
+     "sources": [
+      "ow10_dn_26"
+     ]
+    },
+    {
+     "text": "Cognyte, spun off from Verint Feb 2021, won Myanmar MPT intercept tender before 2021 coup (Reuters); Meta banned Cognyte in 2021; Israel says defence exports to Myanmar banned since 2017; MOD declined comment",
+     "strength": "reported",
+     "sources": [
+      "ow10_aj_cognyte"
+     ]
+    },
+    {
+     "text": "Black Cube hired for Weinstein; agents posing as wealth advisers approached Rose McGowan (New Yorker, Nov 2017)",
+     "strength": "reported",
+     "sources": [
+      "ow10_npr_bc"
+     ]
+    },
+    {
+     "text": "New Yorker 2018: Black Cube directed in May 2017 to dig into Ben Rhodes and Colin Kahl; Black Cube denied relation to Trump administration; describes itself as veterans of Israeli elite intelligence units; Boies retained it in 2016",
+     "strength": "reported",
+     "sources": [
+      "ow10_cnbc_bc"
+     ]
+    },
+    {
+     "text": "Barak formed Sum (E.B.) 2015 LP to invest in Reporty/Carbyne; Haaretz: much of the money from Epstein; Barak called Epstein-linked firm a passive investor and asked lawyers to remove it",
+     "strength": "reported",
+     "sources": [
+      "ow10_toi_barak"
+     ]
+    },
+    {
+     "text": "Kan: Epstein put $1m into Sum in 2016 via Southern Trust; Barak invested $1m 2015 and chaired Carbyne; Founders Fund among backers",
+     "strength": "reported",
+     "sources": [
+      "ow10_ctech_barak"
+     ]
+    },
+    {
+     "text": "Carbyne HQ moved to New York 2019; used in 23 US states; Barak left board 2020; Axon acquisition closed 18 Feb 2026",
+     "strength": "reported",
+     "sources": [
+      "ow10_wiki_carbyne"
+     ]
+    },
+    {
+     "text": "Axon agreed 6 Nov 2025 to acquire Carbyne for $625m",
+     "strength": "reported",
+     "sources": [
+      "ow10_p2_axon"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow10_globe_fbi",
+     "url": "https://www.bostonglobe.com/2022/11/12/nation/internal-documents-show-how-close-fbi-came-deploying-spyware",
+     "label": "New York Times via Boston Globe, 'Internal documents show how close the FBI came to deploying spyware', 12 Nov 2022"
+    },
+    {
+     "key": "ow10_ai_nytmag",
+     "url": "https://appleinsider.com/articles/22/01/28/fbi-considered-using-pegasus-spyware-for-us-domestic-surveillance/amp/",
+     "label": "AppleInsider (on NYT Magazine, 'The Battle for the World's Most Powerful Cyberweapon'), 28 Jan 2022"
+    },
+    {
+     "key": "ow10_9to5_riva",
+     "url": "https://9to5mac.com/2023/08/01/fbi-used-nso-spyware/",
+     "label": "9to5Mac (on New York Times reporting, 31 Jul 2023), 'FBI used NSO spyware', 1 Aug 2023"
+    },
+    {
+     "key": "ow10_doc_entity",
+     "url": "https://www.commerce.gov/news/press-releases/2021/11/commerce-adds-nso-group-and-other-foreign-companies-entity-list",
+     "label": "US Department of Commerce, 'Commerce Adds NSO Group and Other Foreign Companies to Entity List for Malicious Cyber Activities', 3 Nov 2021"
+    },
+    {
+     "key": "ow10_reu_state",
+     "url": "https://www.timeslive.co.za/news/world/2021-12-05-us-state-department-phones-hacked-with-israeli-company-spyware-sources/",
+     "label": "Reuters via TimesLIVE, 'US State Department phones hacked with Israeli company spyware: sources', 3–5 Dec 2021"
+    },
+    {
+     "key": "ow10_ctech_37",
+     "url": "https://www.calcalistech.com/ctech/articles/0,7340,L-3923361,00.html",
+     "label": "Calcalist, 'Israel defense ministry slashes cyber export list, drops Saudi Arabia, UAE', 25 Nov 2021"
+    },
+    {
+     "key": "ow10_axios_jury",
+     "url": "https://www.axios.com/2025/05/06/nso-group-whatsapp-jury-damages",
+     "label": "Axios, 'Spyware firm NSO ordered to pay $167M in WhatsApp hacking suit', 6 May 2025"
+    },
+    {
+     "key": "ow10_cs_inj",
+     "url": "https://cyberscoop.com/whatsapp-wins-injunction-against-nso-group-spyware-damages-reduced/",
+     "label": "CyberScoop, 'WhatsApp wins injunction against NSO Group; damages reduced', 20 Oct 2025"
+    },
+    {
+     "key": "ow10_sw_contempt",
+     "url": "https://www.securityweek.com/whatsapp-catches-spyware-firm-nso-defying-no-hacking-court-order/",
+     "label": "SecurityWeek, 'WhatsApp Catches Spyware Firm NSO Defying No-Hacking Court Order', Jun 2026"
+    },
+    {
+     "key": "ow10_stripes_apple",
+     "url": "https://stripes.com/theaters/us/2024-09-13/apple-drops-lawsuit-against-nso-group-spyware-15164408.html",
+     "label": "Washington Post via Stars and Stripes, 'Apple drops lawsuit against NSO Group', 13 Sep 2024"
+    },
+    {
+     "key": "ow10_rec_friedman",
+     "url": "https://therecord.media/former-trump-official-named-nso-group-chairman",
+     "label": "The Record, 'Former Trump official named NSO Group executive chairman', 10 Nov 2025"
+    },
+    {
+     "key": "ow10_ts_owner",
+     "url": "https://www.techspot.com/news/110209-pegasus-creator-nso-group-reboots-under-new-ownership.html",
+     "label": "TechSpot, 'Pegasus creator NSO Group reboots under new ownership, eyes US market', 11 Nov 2025"
+    },
+    {
+     "key": "ow10_eo14093",
+     "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2023/03/27/executive-order-on-prohibition-on-use-by-the-united-states-government-of-commercial-spyware-that-poses-risks-to-national-security",
+     "label": "The White House, Executive Order 14093, 'Prohibition on Use by the United States Government of Commercial Spyware that Poses Risks to National Security', 27 Mar 2023"
+    },
+    {
+     "key": "ow10_globes_ae",
+     "url": "https://en.globes.co.il/en/article-1001496861",
+     "label": "Globes, 'US private equity firm AE to buy cyberattack co Paragon', 16 Dec 2024"
+    },
+    {
+     "key": "ow10_globes_mod",
+     "url": "https://en.globes.co.il/en/article-1001497253",
+     "label": "Globes, 'Ministry of Defense yet to approve Paragon sale', 19 Dec 2024"
+    },
+    {
+     "key": "ow10_poulson_ice",
+     "url": "https://jackpoulson.substack.com/p/exclusive-ice-has-reactivated-its",
+     "label": "Jack Poulson, All-Source Intelligence, 'Exclusive: ICE has reactivated its contract with Paragon' (FPDS 70CTD024P00000012), 1 Sep 2025"
+    },
+    {
+     "key": "ow10_reg_paragon",
+     "url": "https://www.theregister.com/2025/09/02/biden_stopped_ice_from_buying/",
+     "label": "The Register, 'Biden stopped ICE from buying Israeli spyware, but Trump admin allows it to proceed', 2 Sep 2025"
+    },
+    {
+     "key": "ow10_tc_lyons",
+     "url": "https://techcrunch.com/2026/04/02/ice-says-it-bought-paragons-spyware-to-use-in-drug-trafficking-cases/",
+     "label": "TechCrunch, 'ICE says it bought Paragon's spyware to use in drug trafficking cases', 2 Apr 2026"
+    },
+    {
+     "key": "ow10_npr_lyons",
+     "url": "https://www.wlrn.org/npr-breaking-news/2026-04-07/ice-acknowledges-it-is-using-powerful-spyware",
+     "label": "Jude Joffe-Block, NPR via WLRN, 'ICE acknowledges it is using powerful spyware', 7 Apr 2026"
+    },
+    {
+     "key": "ow10_is_italy",
+     "url": "https://www.infosecurity-magazine.com/news/european-journalists-paragon/",
+     "label": "Infosecurity Magazine, 'European Journalists Targeted by Paragon Spyware, Citizen Lab Confirms', Jun 2025"
+    },
+    {
+     "key": "ow10_wiki_cellebrite",
+     "url": "https://en.wikipedia.org/wiki/Cellebrite",
+     "label": "Wikipedia, 'Cellebrite'"
+    },
+    {
+     "key": "ow10_reason_cb",
+     "url": "https://reason.com/2025/10/16/how-the-military-exposed-the-tools-that-let-authorities-break-into-phones/?nab=1",
+     "label": "Matthew Petti, Reason, 'How the military exposed the tools that let authorities break into phones', 16 Oct 2025"
+    },
+    {
+     "key": "ow10_fs_cb",
+     "url": "https://fedscoop.com/immigration-and-customs-enforcement-continues-its-work-with-cellebrite/",
+     "label": "FedScoop, 'Immigration and Customs Enforcement continues its work with Cellebrite', 19 Sep 2025"
+    },
+    {
+     "key": "ow10_occrp_jordan",
+     "url": "https://www.occrp.org/en/news/jordan-used-israeli-tech-to-crack-phones-of-gaza-war-protestors-report",
+     "label": "OCCRP, 'Jordan Used Israeli Tech to Crack Phones of Gaza War Protesters: Report', 22 Jan 2026"
+    },
+    {
+     "key": "ow10_gv_cb",
+     "url": "https://globalvoices.org/2021/04/05/israeli-phone-hacking-firm-stops-sales-to-belarus-and-russia/",
+     "label": "Global Voices, 'Israeli phone hacking firm stops sales to Belarus and Russia', 5 Apr 2021"
+    },
+    {
+     "key": "ow10_globes_ift",
+     "url": "https://en.globes.co.il/en/article-elbit-systems-wins-145m-us-contract-1000920987",
+     "label": "Globes, 'Elbit Systems wins $145m US contract', 2 Mar 2014"
+    },
+    {
+     "key": "ow10_dn_26",
+     "url": "https://www.defensenews.com/industry/techwatch/2026/09/09/israeli-based-defense-company-rebrands-american-subsidiary-to-twenty-six-defense/",
+     "label": "Defense News, 'Israeli-based defense company rebrands American subsidiary to Twenty-Six Defense', 9 Sep 2026"
+    },
+    {
+     "key": "ow10_aj_cognyte",
+     "url": "https://www.aljazeera.com/news/2023/1/15/israels-cognyte-won-myanmar-spyware-tender-before-coup",
+     "label": "Reuters via Al Jazeera, 'Israel's Cognyte won Myanmar spyware tender before coup', 15 Jan 2023"
+    },
+    {
+     "key": "ow10_npr_bc",
+     "url": "https://www.npr.org/transcripts/562486257",
+     "label": "NPR, 'Ronan Farrow On Harvey Weinstein's Army Of Spies', 7 Nov 2017"
+    },
+    {
+     "key": "ow10_cnbc_bc",
+     "url": "https://www.cnbc.com/2018/05/07/firm-that-aided-harvey-weinstein-targeted-obama-officials-over-iran.html",
+     "label": "CNBC, 'Firm that aided Harvey Weinstein targeted Obama officials over Iran', 7 May 2018"
+    },
+    {
+     "key": "ow10_toi_barak",
+     "url": "https://www.timesofisrael.com/barak-says-he-is-looking-to-remove-epstein-from-business-partnership/amp/",
+     "label": "Times of Israel, 'Barak says he is looking to remove Epstein from business partnership', Jul 2019"
+    },
+    {
+     "key": "ow10_ctech_barak",
+     "url": "https://www.calcalistech.com/ctech/articles/0,7340,L-3766639,00.html",
+     "label": "Calcalist, 'The Ties That Bind: Ehud Barak's Business Network', 18 Jul 2019"
+    },
+    {
+     "key": "ow10_wiki_carbyne",
+     "url": "https://en.wikipedia.org/wiki/Carbyne_(company)",
+     "label": "Wikipedia, 'Carbyne (company)'"
+    },
+    {
+     "key": "ow10_p2_axon",
+     "url": "https://pulse2.com/axon-to-acquire-carbyne-in-625-million-deal-to-transform-911-communications",
+     "label": "Pulse 2.0, 'Axon To Acquire Carbyne In $625 Million Deal', 6 Nov 2025"
+    }
+   ]
+  }
+ ]
+}

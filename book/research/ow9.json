@@ -1,0 +1,297 @@
+{
+ "volume": "mirror",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "ow9_palantir",
+   "stage": "ow9",
+   "topic": "Palantir: origins, US federal footprint, Israel partnership, denials, data purchases",
+   "claims": [
+    {
+     "text": "Palantir was founded in 2003 by investors including Peter Thiel and took early seed money from In-Q-Tel, the CIA's venture arm; 2019 revenue $746m, nearly half from government; the Army had paid it $135m since a Sept 2018 court ruling",
+     "strength": "reported",
+     "sources": [
+      "ow9_ap_s1"
+     ]
+    },
+    {
+     "text": "In-Q-Tel's early investment was about $2m; Palantir software deeply embedded at the CIA; relationship with NSA had ended by summer 2015 (Karp: the two sides 'walked away'); pilot work never became a full contract",
+     "strength": "reported",
+     "sources": [
+      "ow9_bf_karp2015"
+     ]
+    },
+    {
+     "text": "Snowden documents show Palantir built an 'XKEYSCORE Helper' to move NSA XKEYSCORE data into Palantir; by about 2010 at least three Five Eyes countries used Palantir; Palantir denied link to PRISM",
+     "strength": "reported",
+     "sources": [
+      "ow9_int_xks"
+     ]
+    },
+    {
+     "text": "Army enterprise agreement Aug 2025: up to $10bn over 10 years, consolidating 75 contracts (prime on 15, sub on 60)",
+     "strength": "reported",
+     "sources": [
+      "ow9_bd_army"
+     ]
+    },
+    {
+     "text": "Maven Smart System: $480m five-year IDIQ May 2024; ceiling raised by $795m to nearly $1.3bn through 2029 (May 2025); more than 20,000 users",
+     "strength": "reported",
+     "sources": [
+      "ow9_ds_maven"
+     ]
+    },
+    {
+     "text": "FALCON is a customized Gotham for ICE HSI; ICM lets ICE agents access CIA information; 2013 funding doc: Palantir enables real-time info sharing; prior ICM contract worth $41m",
+     "strength": "reported",
+     "sources": [
+      "ow9_int_falcon"
+     ]
+    },
+    {
+     "text": "ICE's prior Palantir contract was $41m since 2014; 2019 ICM contract about $49m over three years, revealed by a redaction error",
+     "strength": "reported",
+     "sources": [
+      "ow9_mj_icm2019"
+     ]
+    },
+    {
+     "text": "2022 ICE award to Palantir of $139.3m for investigative case management operations, maintenance and enhancements",
+     "strength": "reported",
+     "sources": [
+      "ow9_vv_icm2022"
+     ]
+    },
+    {
+     "text": "April 2025: ICE to pay Palantir $29.9m for ImmigrationOS; justification: 'Palantir is the only source that can provide the required capabilities'; prototype due 25 Sept 2025; functions: targeting/prioritization, self-deportation tracking, lifecycle tracking",
+     "strength": "reported",
+     "sources": [
+      "ow9_reg_immos"
+     ]
+    },
+    {
+     "text": "June 2025: ICE preparing a Limiting Sources Justification concluding only Palantir could meet requirements for ICM replacement; replacement deadline Sept 2026",
+     "strength": "reported",
+     "sources": [
+      "ow9_bu_immos"
+     ]
+    },
+    {
+     "text": "ELITE (reported by 404 Media, Jan 2026) draws on Medicaid and other data, gives a 'confidence score' to addresses; CMS–ICE data-sharing agreement covering nearly 80m Medicaid patients; Palantir/DHS did not comment",
+     "strength": "reported",
+     "sources": [
+      "ow9_fortune_elite"
+     ]
+    },
+    {
+     "text": "19 Feb 2026: DHS blanket purchase agreement with Palantir up to $1bn over five years; CBP, ICE, FEMA, CISA can access",
+     "strength": "reported",
+     "sources": [
+      "ow9_sa_dhsbpa"
+     ]
+    },
+    {
+     "text": "Jan 2024: Palantir held first board meeting of 2024 in Tel Aviv and announced strategic partnership with Israel's MOD to 'supply Palantir technology to help the country's war effort'",
+     "strength": "reported",
+     "sources": [
+      "ow9_calcalist_partner"
+     ]
+    },
+    {
+     "text": "Globes 29 Jan 2024: Karp signed upgraded agreement with MOD, photographed with DDR&D head Danny Gold; Palantir understood to work on logistics and manpower, not military intelligence; Unit 8200 and Shin Bet examined it and 'decided not to hire its services'; none of the parties would elaborate",
+     "strength": "reported",
+     "sources": [
+      "ow9_globes_palantir"
+     ]
+    },
+    {
+     "text": "Karp (Mar 2024): 'Israel has historically bought our product, it's not a commercially relevant part of our business'; 'We've lost employees, I'm sure we'll lose employees.'",
+     "strength": "reported",
+     "sources": [
+      "ow9_fortune_karp"
+     ]
+    },
+    {
+     "text": "Palantir to UN Special Rapporteur 22 May 2025: it 'did not provide the technology for, nor is it involved with, Gospel or Lavender'; MOD work 'only began in the wake of the attacks of 7 October 2023'; 'we do not conduct surveillance'",
+     "strength": "primary",
+     "sources": [
+      "ow9_pal_unletter"
+     ]
+    },
+    {
+     "text": "Oct 2024 Storebrand Asset Management sold Palantir holding (~$24m / NOK 262m) citing sales to Israel for use in the occupied territories and predictive-policing systems",
+     "strength": "reported",
+     "sources": [
+      "ow9_globes_storebrand",
+      "ow9_silicon_storebrand"
+     ]
+    },
+    {
+     "text": "Microsoft (25 Sep 2025) disabled an Israeli military unit's use of parts of Azure storage and AI after reviewing Guardian reporting (6 Aug 2025) that Unit 8200 stored recordings of Palestinians' calls; Brad Smith: 'We do not provide technology to facilitate mass surveillance of civilians'",
+     "strength": "reported",
+     "sources": [
+      "ow9_nbc_msft"
+     ]
+    },
+    {
+     "text": "Third-party doctrine: Miller (1976), Smith v. Maryland (1979); Carpenter (2018) refused to extend to historical cell-site data",
+     "strength": "primary",
+     "sources": [
+      "ow9_cornell_tpd"
+     ]
+    },
+    {
+     "text": "Chatrie v. United States decided 29 Jun 2026, 6–3: obtaining two hours of Google location records is a search; does not address purchases from brokers",
+     "strength": "reported",
+     "sources": [
+      "ow9_pw_chatrie"
+     ]
+    },
+    {
+     "text": "ICE draft memo argued AdID-linked purchased location data differs from Carpenter; CBP–Venntel contracts over $2m 2019–20; ICE 2026 Penlink contract",
+     "strength": "primary",
+     "sources": [
+      "ow9_aclu_adid"
+     ]
+    },
+    {
+     "text": "NSA director Nakasone confirmed to Wyden (published Jan 2024) that NSA buys commercially available netflow data including domestic communications",
+     "strength": "primary",
+     "sources": [
+      "ow9_tc_nsanetflow"
+     ]
+    },
+    {
+     "text": "Fourth Amendment Is Not For Sale Act passed House 17 Apr 2024, 219–199; White House opposed",
+     "strength": "reported",
+     "sources": [
+      "ow9_cs_4thact"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow9_ap_s1",
+     "url": "https://foxbaltimore.com/news/nation-world/secretive-palantir-lifts-veil-before-wall-street-stock-sale",
+     "label": "AP, 'Secretive Palantir lifts veil before Wall Street stock sale', 25 Aug 2020"
+    },
+    {
+     "key": "ow9_bf_karp2015",
+     "url": "https://www.buzzfeednews.com/article/williamalden/palantirs-relationship-with-americas-spies",
+     "label": "William Alden, BuzzFeed News, 'Palantir's Relationship With The Intelligence Community Has Been Worse Than You'd Think', 2016"
+    },
+    {
+     "key": "ow9_int_xks",
+     "url": "https://theintercept.com/2017/02/22/how-peter-thiels-palantir-helped-the-nsa-spy-on-the-whole-world/",
+     "label": "Sam Biddle, The Intercept, 'How Peter Thiel's Palantir Helped the NSA Spy on the Whole World', 22 Feb 2017"
+    },
+    {
+     "key": "ow9_bd_army",
+     "url": "https://breakingdefense.com/2025/08/army-consolidates-dozens-of-palantir-software-contracts-into-one-deal-worth-up-to-10-billion/",
+     "label": "Breaking Defense, 'Army consolidates dozens of Palantir software contracts into one deal worth up to $10 billion', Aug 2025"
+    },
+    {
+     "key": "ow9_ds_maven",
+     "url": "https://defensescoop.com/2025/05/23/dod-palantir-maven-smart-system-contract-increase/",
+     "label": "DefenseScoop, 'Pentagon surges Palantir Maven Smart System contract', 23 May 2025"
+    },
+    {
+     "key": "ow9_int_falcon",
+     "url": "https://theintercept.com/2017/03/17/palantir-enables-immigration-agents-to-access-information-from-the-cia/",
+     "label": "Spencer Woodman, The Intercept, 'Palantir Enables Immigration Agents to Access Information From the CIA', 17 Mar 2017"
+    },
+    {
+     "key": "ow9_mj_icm2019",
+     "url": "https://fullsite.motherjones.com/politics/2019/08/ice-palantir-contract-amount-revealed/",
+     "label": "Mother Jones, 'ICE accidentally just revealed how much its new contract with Peter Thiel's Palantir is worth', Aug 2019"
+    },
+    {
+     "key": "ow9_vv_icm2022",
+     "url": "https://www.visaverge.com/news/palantir-att-deloitte-face-scrutiny-over-biggest-ice-contracts/",
+     "label": "VisaVerge, 'Palantir, AT&T, Deloitte Face Scrutiny Over Biggest ICE Contracts', Jan 2026"
+    },
+    {
+     "key": "ow9_reg_immos",
+     "url": "https://www.theregister.com/2025/04/21/ice_enlists_palantir_to_develop/",
+     "label": "The Register, 'ICE enlists Palantir to develop all-seeing ImmigrationOS', 21 Apr 2025"
+    },
+    {
+     "key": "ow9_bu_immos",
+     "url": "https://biometricupdate.com/202506/ice-Advances-Sole-Source-Deal-With-Palantir-For-New-Surveillance-Backbone",
+     "label": "Anthony Kimery, Biometric Update, 'ICE advances sole source deal with Palantir for new surveillance backbone', 10 Jun 2025"
+    },
+    {
+     "key": "ow9_fortune_elite",
+     "url": "https://www.fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data",
+     "label": "Fortune, 'ICE allegedly uses Palantir tool tracking Medicaid data', 26 Jan 2026"
+    },
+    {
+     "key": "ow9_sa_dhsbpa",
+     "url": "https://siliconangle.com/2026/02/19/dhs-awards-palantir-1b-deploy-ai-data-analytics-platforms/",
+     "label": "SiliconANGLE, 'DHS awards Palantir up to $1B to deploy AI and data analytics platforms', 19 Feb 2026"
+    },
+    {
+     "key": "ow9_calcalist_partner",
+     "url": "https://calcalistech.com/ctechnews/article/rymy7ret6",
+     "label": "CTech (Calcalist), 'Palantir supplying Israel with technology to help in war effort', 13 Jan 2024"
+    },
+    {
+     "key": "ow9_globes_palantir",
+     "url": "https://en.globes.co.il/en/article-What-is-Palantir-doing-in-Israel-1001468876",
+     "label": "Assaf Gilead, Globes, 'What is Palantir doing in Israel?', 29 Jan 2024"
+    },
+    {
+     "key": "ow9_fortune_karp",
+     "url": "https://fortune.com/2024/03/14/palantir-alex-karp-lose-staff-israel-stance",
+     "label": "Fortune, 'Palantir CEO Alex Karp says he has lost staff over Israel stance', 14 Mar 2024"
+    },
+    {
+     "key": "ow9_pal_unletter",
+     "url": "https://www.palantir.com/assets/xrfr7uokpv1b/1aXqmYRvd1KY5SErhxQQyo/59efaf38eb9c2494752f0131dce714a0/Palantir_Response_to_UN_SRHRP_Letter_-_22_May_2025.pdf",
+     "label": "Palantir Technologies, 'Response to UN Special Rapporteur letter', 22 May 2025"
+    },
+    {
+     "key": "ow9_globes_storebrand",
+     "url": "https://en.globes.co.il/en/article-1001492418",
+     "label": "Assaf Gilead, Globes, 'Norwegian firm disinvests from Palantir over Israel ties', 27 Oct 2024"
+    },
+    {
+     "key": "ow9_silicon_storebrand",
+     "url": "https://silicon.co.uk/ai/palantir-ai-surveillance-585999",
+     "label": "Matthew Broersma, Silicon UK, 'Norwegian Investor Dumps Palantir Over AI Surveillance', 28 Oct 2024"
+    },
+    {
+     "key": "ow9_nbc_msft",
+     "url": "https://www.nbcnews.com/tech/tech-news/microsoft-ends-israel-military-units-access-cloud-service-rcna233723",
+     "label": "NBC News, 'Microsoft cuts off Israeli military unit's access to cloud service after investigating claims of mass surveillance', 25 Sep 2025"
+    },
+    {
+     "key": "ow9_cornell_tpd",
+     "url": "https://www.law.cornell.edu/wex/third_party_doctrine",
+     "label": "Legal Information Institute, Cornell Law School, 'Third party doctrine'"
+    },
+    {
+     "key": "ow9_pw_chatrie",
+     "url": "https://www.paulweiss.com/insights/client-memos/supreme-court-geofence-ruling-expands-constitutional-privacy-protection-for-electronic-records",
+     "label": "Paul, Weiss, 'Supreme Court Geofence Ruling Expands Constitutional Privacy Protection for Electronic Records', Jul 2026"
+    },
+    {
+     "key": "ow9_aclu_adid",
+     "url": "https://aclu.org/news/privacy-technology/dhs-is-circumventing-constitution-by-buying-data-it-would-normally-need-a-warrant-to-access",
+     "label": "ACLU, 'DHS Is Circumventing the Constitution by Buying Data It Would Normally Need a Warrant to Access', 12 Jan 2026"
+    },
+    {
+     "key": "ow9_tc_nsanetflow",
+     "url": "https://techcrunch.com/2024/01/26/national-security-agency-americans-internet-browsing-records-warrantless",
+     "label": "TechCrunch, 'NSA is buying Americans' internet browsing records without a warrant', 26 Jan 2024"
+    },
+    {
+     "key": "ow9_cs_4thact",
+     "url": "https://cyberscoop.com/house-passes-4th-amendment-is-not-for-sale-act/",
+     "label": "CyberScoop, 'House passes Fourth Amendment Is Not For Sale Act', 17 Apr 2024"
+    }
+   ]
+  }
+ ]
+}

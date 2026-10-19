@@ -1,0 +1,150 @@
+{
+ "volume": "mirror",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "ow2_votes",
+   "stage": "ow2",
+   "topic": "Congressional votes on Israel-related measures",
+   "claims": [
+    {
+     "text": "House adopted H.Con.Res. 194 disapproving the AWACS sale 301–111 on 14 Oct 1981; the Senate rejected it 48–52 on 28 Oct 1981, so the sale proceeded.",
+     "strength": "primary",
+     "sources": [
+      "ow2_vv_awacs_house",
+      "ow2_vv_awacs_senate"
+     ]
+    },
+    {
+     "text": "House passed H.Res. 771 standing with Israel 412–10 (25 Oct 2023).",
+     "strength": "reported",
+     "sources": [
+      "ow2_jns_hres771"
+     ]
+    },
+    {
+     "text": "Senate rejected Sanders's resolution on about $8.8bn of sales 82–15 on 3 Apr 2025; 19 Democrats backed similar resolutions in Nov 2024; Jan 2024 Sanders measure failed 72–11; Schumer voted no.",
+     "strength": "reported",
+     "sources": [
+      "ow2_jta_sanders2025"
+     ]
+    },
+    {
+     "text": "30 Jul 2025: S.J.Res. 34 ($676m sale of 5,000 bombs and guidance kits) failed 27–70; 12 new supporters since April incl. King, Shaheen, Reed, Murray; Risch called resolutions 'misguided'.",
+     "strength": "reported",
+     "sources": [
+      "ow2_duckworth_jul2025"
+     ]
+    },
+    {
+     "text": "House passed Antisemitism Awareness Act (H.R. 6090) 320–91 on 1 May 2024; would apply IHRA definition in Title VI enforcement; ACLU calls definition 'overbroad'.",
+     "strength": "reported",
+     "sources": [
+      "ow2_wiki_aaa"
+     ]
+    },
+    {
+     "text": "Senate HELP markup of S.558 (29–30 Apr 2025): amendments incl. Sanders's on criticizing Israeli government; Cassidy: 'Supporting these amendments is an effort to kill this bill'; no vote; bill stalled in committee.",
+     "strength": "reported",
+     "sources": [
+      "ow2_jlink_aaa"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow2_vv_awacs_house",
+     "url": "https://voteview.com/rollcall/RH0970243",
+     "label": "Voteview, 97th Congress House vote 243, H.Con.Res. 194 (AWACS disapproval), 14 Oct 1981"
+    },
+    {
+     "key": "ow2_vv_awacs_senate",
+     "url": "https://voteview.com/rollcall/RS0970338",
+     "label": "Voteview, 97th Congress Senate vote 338, H.Con.Res. 194 (AWACS disapproval), 28 Oct 1981"
+    },
+    {
+     "key": "ow2_jns_hres771",
+     "url": "https://www.jns.org/house-votes-412-10-to-support-israel-condemn-hamas-iran/",
+     "label": "JNS, 'House votes 412-10 to support Israel, condemn Hamas, Iran', 26 Oct 2023"
+    },
+    {
+     "key": "ow2_jta_sanders2025",
+     "url": "https://www.jta.org/2025/04/03/politics/senate-rejects-bernie-sanders-proposal-to-block-some-weapons-sales-to-israel",
+     "label": "JTA, 'Senate rejects Bernie Sanders' proposal to block some weapons sales to Israel', 3 Apr 2025"
+    },
+    {
+     "key": "ow2_duckworth_jul2025",
+     "url": "https://www.duckworth.senate.gov/news/in-the-news/senate-votes-down-israel-arms-sales-ban-despite-growing-democrat-support",
+     "label": "Office of Sen. Duckworth (in the news), 'Senate votes down Israel arms sales ban despite growing Democrat support', 30 Jul 2025"
+    },
+    {
+     "key": "ow2_wiki_aaa",
+     "url": "https://en.wikipedia.org/wiki/Antisemitism_Awareness_Act",
+     "label": "Wikipedia, 'Antisemitism Awareness Act'"
+    },
+    {
+     "key": "ow2_jlink_aaa",
+     "url": "https://jewishlink.news/antisemitism-awareness-act-remains-in-limbo-after-senate-markup/",
+     "label": "Kayla Kramer, 'Antisemitism Awareness Act remains in limbo after Senate markup', The Jewish Link, 3 Jul 2025"
+    }
+   ]
+  },
+  {
+   "id": "ow2_fara",
+   "stage": "ow2",
+   "topic": "FARA, the lobby and the money question",
+   "claims": [
+    {
+     "text": "FARA defines an agent as one acting 'at the order, request, or under the direction or control' of a foreign principal; an agent properly registered under the LDA is exempt, but the exemption does not apply where a foreign government or party is the principal beneficiary.",
+     "strength": "primary",
+     "sources": [
+      "ow2_doj_faq"
+     ]
+    },
+    {
+     "text": "DOJ OIG (Sep 2016): 62% of new registrants filed late; 50% of supplemental statements late; need for 'a comprehensive Department enforcement strategy on FARA'; compliance rates 'unacceptable'; no injunctive remedy used since 1991.",
+     "strength": "reported",
+     "sources": [
+      "ow2_pogo_oig2016"
+     ]
+    },
+    {
+     "text": "Fulbright's Senate Foreign Relations inquiry into the Jewish Agency's funding began 2 Aug 1963 (Barda); Hamlin testimony; $38,000 for Near East Report subscriptions; Kenen affidavit (purchases never above 23%); Barda gives $1.5m 1955–62 and calls separation 'absolute' (his interpretation).",
+     "strength": "reported",
+     "sources": [
+      "ow2_barda_2026"
+     ]
+    },
+    {
+     "text": "Forward opinion analysis (Bahar) of 788 AIPAC PAC-backed candidates 2022–24: ~86% incumbents; non-incumbents won ~91% of primaries; ~79% in tight races vs NRA 84%, Planned Parenthood 83%, Sierra Club 88%; argues AIPAC not more effective than other lobbies.",
+     "strength": "reported",
+     "sources": [
+      "ow2_bahar_forward"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow2_doj_faq",
+     "url": "https://www.justice.gov/nsd-fara/frequently-asked-questions?",
+     "label": "US Department of Justice, FARA Unit, 'Frequently Asked Questions'"
+    },
+    {
+     "key": "ow2_pogo_oig2016",
+     "url": "https://www.pogo.org/blog/2016/09/justice-dept-watchdog-fara-unacceptable.html",
+     "label": "Project On Government Oversight, 'Justice Dept. Watchdog Confirms \"Unacceptable\" FARA Compliance' (on DOJ OIG audit of 7 Sep 2016), Sep 2016"
+    },
+    {
+     "key": "ow2_barda_2026",
+     "url": "https://academic.oup.com/mj/article/46/2/103/8707527",
+     "label": "Kobby Barda, 'Senator Fulbright's 1963 AIPAC Hearing in the Shadow of the JFK Assassination Conspiracy', Modern Judaism 46:2 (2026), 103–117"
+    },
+    {
+     "key": "ow2_bahar_forward",
+     "url": "https://www.thejewishnews.com/opinion/is-aipac-a-monster-that-decides-congressional-races-the-data-shows-otherwise/article_adb06199-a2d5-49a1-9469-5efef2559354.html",
+     "label": "Dany Bahar, 'AIPAC is the most demonized lobby in the US — despite being far from the most effective one', The Forward (opinion; reprinted Detroit Jewish News), 24 Jun 2026"
+    }
+   ]
+  }
+ ]
+}

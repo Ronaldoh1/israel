@@ -1,0 +1,322 @@
+{
+ "volume": "mirror",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "ow4_nsa",
+   "stage": "ow4",
+   "topic": "NSA and Unit 8200",
+   "claims": [
+    {
+     "text": "Guardian (11 Sep 2013), memorandum agreed in principle March 2009: NSA shares raw unfiltered phone/internet data with Israel including US citizens' communications; NSA not required to remove US persons' data; no limits on Israel's use reported; Israel must 'destroy upon recognition' communications of US government officials (executive, Congress, federal courts); NSA: handled under procedures 'designed to protect privacy rights'.",
+     "strength": "reported",
+     "sources": [
+      "ow_aj_nsamou"
+     ]
+    },
+    {
+     "text": "NSA 2013 document: 'far-reaching technical and analytic relationship' with ISNU (Unit 8200), 'a dedicated communications line between NSA and ISNU [that] supports the exchange of raw material'; Israel 'enjoys the benefits of expanded geographic access' and 'gains controlled access to advanced U.S. technology and equipment'; Israeli priorities include 'Palestinian terrorism'. 2003–04 'Gladiator' receipts for $500,000 cash payments to Israeli officials, deal apparently never consummated.",
+     "strength": "primary",
+     "sources": [
+      "ow_int_cash2014",
+      "ow_york_nsadoc"
+     ]
+    },
+    {
+     "text": "NSA 2008 document (Intercept 2015): Israel 'also targets us'; a National Intelligence Estimate ranked Israel third most aggressive intelligence service against the US; 2013 budget document lists Israel among hostile intelligence services/cyber threats; Netanyahu's office (24 Mar 2015): 'The state of Israel does not conduct espionage against the United States or Israel's other allies.'",
+     "strength": "reported",
+     "sources": [
+      "ow_td_spying2015"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow_aj_nsamou",
+     "url": "https://www.aljazeera.com/news/2013/9/12/report-nsa-shares-data-with-israel",
+     "label": "Al Jazeera, 'Report: NSA shares data with Israel' (on The Guardian's publication of the NSA–Israel memorandum), 12 Sep 2013"
+    },
+    {
+     "key": "ow_int_cash2014",
+     "url": "https://theintercept.com/2014/08/04/cash-weapons-surveillance/",
+     "label": "Glenn Greenwald, 'Cash, Weapons and Surveillance: The U.S. Is a Key Party to Every Israeli Attack', The Intercept, 4 Aug 2014 (with NSA document of 13 Apr 2013)"
+    },
+    {
+     "key": "ow_york_nsadoc",
+     "url": "https://snowden.glendon.yorku.ca/items/show/332",
+     "label": "Snowden Archive (York University), 'NSA Intelligence Relationship with Israel', NSA document created 19 Mar 2013, published 3 Aug 2014"
+    },
+    {
+     "key": "ow_td_spying2015",
+     "url": "https://www.truthdig.com/articles/glenn-greenwald-secret-nsa-documents-contradict-netanyahus-spying-denials/",
+     "label": "Truthdig, 'Glenn Greenwald: Secret NSA documents contradict Netanyahu's spying denials' (on The Intercept, 25 Mar 2015), 26 Mar 2015"
+    }
+   ]
+  },
+  {
+   "id": "ow4_memorandum",
+   "stage": "ow4",
+   "topic": "The 2009 raw-SIGINT memorandum and the balance of exchange",
+   "claims": [
+    {
+     "text": "Memorandum (as published by the Guardian): 'NSA routinely sends ISNU minimised and unminimised raw collection'; raw includes 'unevaluated and unminimized transcripts'; Israel may keep 'any files containing the identities of US persons' for up to a year, consulting an NSA liaison; must 'destroy upon recognition' communications to or from US government officials (executive, Congress, federal courts); NSA will 'regularly review a sample of files transferred to ISNU'; 'This agreement is not intended to create any legally enforceable rights' and is not a legally binding instrument; access limited to a 'strict need to know'.",
+     "strength": "primary",
+     "sources": [
+      "ow4_dawn_guardian",
+      "ow4_alternet_guardian",
+      "ow_aj_nsamou"
+     ]
+    },
+    {
+     "text": "Techdirt summary: NSA performs only 'a minimal pre-screen of random samples'; Israel may share with 'outside parties' with NSA written permission after stripping identifiers; 'The agreement places no legally binding limits on the use of the data by the Israelis.'",
+     "strength": "reported",
+     "sources": [
+      "ow4_techdirt"
+     ]
+    },
+    {
+     "text": "NSA statement (2013): US-person information 'is handled under procedures that are designed to protect privacy rights'; 'NSA cannot, however, use these relationships to circumvent US legal restrictions'; NSA declined to say whether the FISA court approved the agreement.",
+     "strength": "primary",
+     "sources": [
+      "ow4_dawn_guardian",
+      "ow4_alternet_guardian"
+     ]
+    },
+    {
+     "text": "2007 NSA history 'History of the US – Israel Sigint Relationship, Post-1992': 'Balancing the Sigint exchange equally between US and Israeli needs has been a constant challenge'; 'In the last decade, it arguably tilted heavily in favor of Israeli security concerns.' A 2008 document quotes a senior NSA official: 'One of NSA's biggest threats is actually from friendly intelligence services, like Israel.' 2013 budget request lists Israel alongside Iran and China as a target for US cyber operations (via Washington Post).",
+     "strength": "primary",
+     "sources": [
+      "ow4_alternet_guardian",
+      "ow4_dawn_guardian"
+     ]
+    },
+    {
+     "text": "Intercept 2019: during the 2006 Lebanon war ISNU relied heavily on NSA for tasking, warning, tactical ELINT and geolocation on Hezbollah; the NSA liaison called geolocation requests 'particularly problematic' because of NSA's prohibition on providing information usable in targeted killings; ISNU commander sought an exemption; ODNI brokered a framework; a 2007 NSA slide put ISNU at about 5,500 conscripts and 1,200 career officers.",
+     "strength": "primary",
+     "sources": [
+      "ow4_int2019"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow_aj_nsamou",
+     "url": "https://www.aljazeera.com/news/2013/9/12/report-nsa-shares-data-with-israel",
+     "label": "Al Jazeera, 'Report: NSA shares data with Israel' (on The Guardian's publication of the NSA–Israel memorandum), 12 Sep 2013"
+    },
+    {
+     "key": "ow4_dawn_guardian",
+     "url": "https://www.dawn.com/news/amp/1042251",
+     "label": "Glenn Greenwald, Laura Poitras and Ewen MacAskill, 'NSA shares raw intelligence including Americans' data with Israel', The Guardian (republished by Dawn by arrangement), 11–12 Sep 2013"
+    },
+    {
+     "key": "ow4_alternet_guardian",
+     "url": "https://www.alternet.org/2013/09/secret-deal-allows-nsa-share-americans-data-israel",
+     "label": "Greenwald, Poitras and MacAskill (The Guardian), 'Secret deal allows NSA to share Americans' data with Israel', republished by AlterNet, 12 Sep 2013"
+    },
+    {
+     "key": "ow4_techdirt",
+     "url": "https://archive.techdirt.com/articles/20130911/08530124484/new-leak-shows-nsa-shares-raw-domestic-communications-data-with-israeli-intelligence.shtml",
+     "label": "Techdirt, 'New Leak Shows NSA Shares Raw Domestic Communications Data With Israeli Intelligence', 11 Sep 2013"
+    },
+    {
+     "key": "ow4_int2019",
+     "url": "https://theintercept.com/2019/05/29/israel-drone-strikes-intelligence-nsa",
+     "label": "Murtaza Hussain, The Intercept, on NSA SIDtoday 'The Israel-Hizballah Crisis' and a 2007 NSA–ISNU presentation, 29 May 2019"
+    }
+   ]
+  },
+  {
+   "id": "ow4_both_ways",
+   "stage": "ow4",
+   "topic": "What each side gets; Israel as counterintelligence threat; US collection on Israel",
+   "claims": [
+    {
+     "text": "NSA document (13 Apr 2013): 'NSA maintains a far-reaching technical and analytic relationship with the Israeli SIGINT National Unit', 'sharing information on access, intercept, targeting, language, analysis and reporting'; 'a dedicated communications line between NSA and ISNU [that] supports the exchange of raw material'; Israel gains 'expanded geographic access to world-class NSA cryptanalytic and SIGINT engineering expertise' and 'controlled access to advanced U.S. technology and equipment via accommodation buys and foreign military sales'; targets include North Africa, the Middle East, the Persian Gulf; Israeli priorities include 'Palestinian terrorism'. NSA spokesperson: cooperation 'mutually strengthens the security of both nations'.",
+     "strength": "primary",
+     "sources": [
+      "ow_int_cash2014"
+     ]
+    },
+    {
+     "text": "NSA 2008 document: 'Israel also targets us'; 'A NIE ranked [Israel] as the third most aggressive intelligence service against the US'; the 2013 budget lists Israel among 'most threatening cyber-adversaries' and as a 'hostile' service; Netanyahu's office: 'The state of Israel does not conduct espionage against the United States or Israel's other allies.'",
+     "strength": "primary",
+     "sources": [
+      "ow_td_spying2015"
+     ]
+    },
+    {
+     "text": "The Netanyahu denial followed a Wall Street Journal report (March 2015) that Israel spied on the US–Iran negotiations and passed material to members of Congress.",
+     "strength": "reported",
+     "sources": [
+      "ow4_statewatch2015"
+     ]
+    },
+    {
+     "text": "WSJ (29 Dec 2015): NSA kept intercepting Netanyahu's communications after Obama's January 2014 curbs on monitoring allied leaders, Netanyahu being kept off the protected list for a 'compelling national security purpose'; intercepts showed Israeli efforts to turn Congress against the Iran deal; a 2011 NSA directive requires destruction of intercepted communications between foreign targets and members of Congress unless the NSA director waives it for 'significant foreign intelligence'; NSC: no surveillance 'unless there is a specific and validated national security purpose'; Israeli embassy declined comment.",
+     "strength": "reported",
+     "sources": [
+      "ow4_aj_wsj2015"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow_int_cash2014",
+     "url": "https://theintercept.com/2014/08/04/cash-weapons-surveillance/",
+     "label": "Glenn Greenwald, 'Cash, Weapons and Surveillance: The U.S. Is a Key Party to Every Israeli Attack', The Intercept, 4 Aug 2014 (with NSA document of 13 Apr 2013)"
+    },
+    {
+     "key": "ow_td_spying2015",
+     "url": "https://www.truthdig.com/articles/glenn-greenwald-secret-nsa-documents-contradict-netanyahus-spying-denials/",
+     "label": "Truthdig, 'Glenn Greenwald: Secret NSA documents contradict Netanyahu's spying denials' (on The Intercept, 25 Mar 2015), 26 Mar 2015"
+    },
+    {
+     "key": "ow4_statewatch2015",
+     "url": "https://statewatch.org/news/2015/january/netanyahus-spying-denials-contradicted-by-secret-nsa-documents/",
+     "label": "Statewatch, 'Netanyahu's spying denials contradicted by secret NSA documents' (on The Intercept), 2015"
+    },
+    {
+     "key": "ow4_aj_wsj2015",
+     "url": "https://www.aljazeera.com/news/2015/12/30/us-is-still-spying-on-netanyahu-communications-report",
+     "label": "Al Jazeera, 'US is still spying on Netanyahu communications: report' (on the Wall Street Journal, 29 Dec 2015), 30 Dec 2015"
+    }
+   ]
+  },
+  {
+   "id": "ow4_gaza",
+   "stage": "ow4",
+   "topic": "Unit 8200, the 2014 letter, alumni in US tech, Azure, and what US oversight can see",
+   "claims": [
+    {
+     "text": "43 Unit 8200 reservists (10 officers) wrote to Netanyahu, Gantz and Kochavi (reported 12 Sep 2014): 'The intelligence gathered harms innocents and is used for political persecution'; 'Our conscience no longer permits us to serve this system'; a cosignatory said the task was 'not defense but ruling another people'.",
+     "strength": "reported",
+     "sources": [
+      "ow4_jta_letter"
+     ]
+    },
+    {
+     "text": "Check Point founded 1993 by Gil Shwed, Shlomo Kramer and Marius Nacht; Shwed and Kramer served in Unit 8200; Nir Zuk, an 8200 alumnus and early Check Point employee, founded Palo Alto Networks; CyberArk CEO Udi Mokady and Cybereason's founders are described as 8200 alumni.",
+     "strength": "reported",
+     "sources": [
+      "ow4_sw_alumni"
+     ]
+    },
+    {
+     "text": "Wiz: Rappaport joined Unit 8200 after university; the founders met in the Talpiot programme; Microsoft bought their earlier company Adallom in 2015 for $320m and they led Microsoft's Cloud Security Group until 2020; Google completed its $32bn cash acquisition of Wiz on 11 Mar 2026.",
+     "strength": "reported",
+     "sources": [
+      "ow4_sequoia_wiz",
+      "ow4_globes_wiz"
+     ]
+    },
+    {
+     "text": "Guardian/+972/Local Call (6 Aug 2025): Unit 8200 stored millions of intercepted Palestinian calls from Gaza and the West Bank on Azure in the Netherlands and Ireland ('a million calls an hour'); at least 11,500 terabytes by July 2025; sources said used to identify airstrike targets and justify arrests; Sariel met Nadella in 2021; Microsoft said it had 'no information' about surveillance of civilians; IDF: 'legally supervised agreements'.",
+     "strength": "reported",
+     "sources": [
+      "ow4_newarab_azure"
+     ]
+    },
+    {
+     "text": "Microsoft (Brad Smith, 25 Sep 2025): found 'evidence that supports elements of The Guardian's reporting', including IMOD consumption of Azure storage in the Netherlands and use of AI services; decided to 'cease and disable specified IMOD subscriptions'; 'We do not provide technology to facilitate mass surveillance of civilians'; Microsoft did not access customer content; an Israeli security official told AP there would be 'no damage to the operational capabilities'; Israel Hayom reported a shift reportedly to Amazon Web Services.",
+     "strength": "reported",
+     "sources": [
+      "ow4_tc_msft",
+      "ow4_eweek_msft",
+      "ow4_cbc_msft",
+      "ow4_ih_msft"
+     ]
+    },
+    {
+     "text": "NSM-20 report (10 May 2024): 'Israel has not shared complete information to verify whether U.S. defense articles were specifically used'; 'difficult to assess or reach conclusive findings on individual incidents' given lack of US personnel on the ground; 'reasonable to assess' US weapons were used in instances inconsistent with IHL obligations.",
+     "strength": "primary",
+     "sources": [
+      "ow4_axios_nsm20"
+     ]
+    },
+    {
+     "text": "Pentagon (Brig. Gen. Pat Ryder, Nov 2023): 'In support of hostage recovery efforts, the U.S. is conducting unarmed [UAV] flights over Gaza'; MQ-9s per flight-tracking data.",
+     "strength": "primary",
+     "sources": [
+      "ow4_d1_drones"
+     ]
+    },
+    {
+     "text": "The terms of US intelligence-sharing agreements and safeguards are not public; ACLU lists unilateral data-sharing agreements with Israel, Germany and Saudi Arabia; FBI rules for sharing s.702 data are fully redacted; the most recent public UKUSA text dates from 1955 and FOIA requests for current terms had not produced records.",
+     "strength": "reported",
+     "sources": [
+      "ow4_aclu",
+      "ow4_js_ukusa"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ow4_jta_letter",
+     "url": "https://www.jta.org/2014/09/12/israel/43-israeli-intelligence-reservists-vow-to-stop-spying-on-palestinians",
+     "label": "JTA, '43 Israeli intelligence reservists vow to stop spying on Palestinians', 12 Sep 2014"
+    },
+    {
+     "key": "ow4_sw_alumni",
+     "url": "https://www.securityweek.com/idf-inc-israeli-cybersecurity-startup-conveyor-belt/",
+     "label": "Kevin Townsend, 'From IDF to Inc: The Israeli Cybersecurity Startup Conveyor Belt', SecurityWeek, 28 Feb 2018"
+    },
+    {
+     "key": "ow4_sequoia_wiz",
+     "url": "https://sequoiacap.com/article/wiz-spotlight-with-a-little-help-from-their-friends",
+     "label": "Sequoia Capital, 'Wiz Spotlight: With a Little Help From Their Friends'"
+    },
+    {
+     "key": "ow4_globes_wiz",
+     "url": "https://en.globes.co.il/en/article-1001537249",
+     "label": "Globes, 'Biggest-ever exit: Google completes Wiz acquisition', 11 Mar 2026"
+    },
+    {
+     "key": "ow4_newarab_azure",
+     "url": "https://www.newarab.com/news/israel-stored-mass-intel-palestinians-microsoft-cloud",
+     "label": "The New Arab, on the Guardian/+972 Magazine/Local Call investigation into Unit 8200 and Microsoft Azure, 6 Aug 2025"
+    },
+    {
+     "key": "ow4_tc_msft",
+     "url": "https://techcrunch.com/2025/09/25/microsoft-cuts-cloud-services-to-israeli-military-unit-over-palestinian-surveillance",
+     "label": "TechCrunch, 'Microsoft cuts cloud services to Israeli military unit over Palestinian surveillance', 25 Sep 2025"
+    },
+    {
+     "key": "ow4_eweek_msft",
+     "url": "https://www.eweek.com/news/microsoft-restricts-azure-access-israel-military-surveillance/",
+     "label": "eWeek, 'Microsoft Restricts Israel Defense Ministry's Azure Access After Surveillance Report', 26 Sep 2025 (quoting Brad Smith's update of 25 Sep 2025)"
+    },
+    {
+     "key": "ow4_cbc_msft",
+     "url": "https://www.cbc.ca/lite/story/1.7644413",
+     "label": "AP via CBC, 'Microsoft cuts Israeli military access to some services over reports of mass surveillance in Gaza', 26 Sep 2025"
+    },
+    {
+     "key": "ow4_ih_msft",
+     "url": "https://www.israelhayom.com/2025/09/25/microsoft-cuts-unit-8200-off-its-cloud-and-ai-services/",
+     "label": "Israel Hayom, 'Microsoft cuts Unit 8200 off its cloud and AI services', 26 Sep 2025"
+    },
+    {
+     "key": "ow4_axios_nsm20",
+     "url": "https://www.axios.com/2024/05/10/israel-gaza-weapons-broke-law-blinken",
+     "label": "Axios, 'Blinken report says it's impossible to verify Israel broke weapons law in Gaza', 10 May 2024"
+    },
+    {
+     "key": "ow4_d1_drones",
+     "url": "https://defenseone.com/threats/2023/11/pentagon-flying-unarmed-drones-over-gaza-help-recover-hostages-officials-say/391765",
+     "label": "Defense One, 'Pentagon flying unarmed drones over Gaza to help recover hostages, officials say', 3 Nov 2023"
+    },
+    {
+     "key": "ow4_aclu",
+     "url": "https://wp.api.aclu.org/?p=4956",
+     "label": "ACLU, 'The U.S. Intelligence Community Can Share Your Personal Information With Other Governments, and We're Demanding Answers' (2017)"
+    },
+    {
+     "key": "ow4_js_ukusa",
+     "url": "https://www.justsecurity.org/47282/backdoor-search-loophole-isnt-problem-dangers-global-information-sharing/",
+     "label": "Scarlet Kim, Paulina Perlin and Diana Lee, 'The “Backdoor Search Loophole” Isn’t Our Only Problem', Just Security, 28 Nov 2017"
+    }
+   ]
+  }
+ ]
+}
