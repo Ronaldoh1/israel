@@ -1,0 +1,51 @@
+{
+ "volume": "hamas",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "hm6_actor",
+   "stage": "hm6",
+   "topic": "Hamas as its own actor",
+   "claims": [
+    {
+     "text": "HRW 2009: more than 4,000 rockets fired 2001–2008; 'None of these rockets can be reliably aimed'; inherently indiscriminate toward populated areas; war crimes; fired from populated areas; Abu Obeida: 'We will double the number of Israelis under fire'; Mashaal: 'Firing these rockets is a method and not the goal'; Hamas did not prosecute.",
+     "strength": "reported",
+     "sources": [
+      "hm_hrw_rockets2009"
+     ]
+    },
+    {
+     "text": "HRW Aug 2021: May 2021 rockets killed 12 Israeli civilians; misfire killed seven Palestinians in Jabaliya; indiscriminate firing a war crime; Hamas: aims to develop capability to 'accurately target Israeli military headquarters'.",
+     "strength": "reported",
+     "sources": [
+      "hm_almon_hrw2021"
+     ]
+    },
+    {
+     "text": "HRW 2012: arbitrary detention, torture and executions based on confessions under torture in Hamas-run Gaza; impunity.",
+     "strength": "reported",
+     "sources": [
+      "hm_972_hrw2012"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hm_hrw_rockets2009",
+     "url": "https://www.hrw.org/node/84868",
+     "label": "Human Rights Watch, 'Rockets from Gaza: Harm to Civilians from Palestinian Armed Groups' Rocket Attacks', 6 Aug 2009"
+    },
+    {
+     "key": "hm_almon_hrw2021",
+     "url": "https://al-monitor.com/originals/2021/08/hamas-islamic-jihad-reject-human-rights-watch-report-conduct-war",
+     "label": "Al-Monitor, 'Hamas, Islamic Jihad reject Human Rights Watch report on conduct of war', 23 Aug 2021"
+    },
+    {
+     "key": "hm_972_hrw2012",
+     "url": "https://www.972mag.com/human-rights-watch-execution-and-torture-under-hamas/",
+     "label": "+972 Magazine on Human Rights Watch, 'Abusive System: Failures of Criminal Justice in Gaza', 6 Oct 2012"
+    }
+   ]
+  }
+ ]
+}
