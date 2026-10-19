@@ -10,7 +10,7 @@
     ]
    },
    {
-    "text": "Marine barracks bombing 23 October 1983 killed 241 US servicemen (plus 58 French troops at a second site); Peterson v. Iran (Lamberth, 30 May 2003) found Hezbollah carried it out with 'massive material and technical support' from Iran and that Iran and MOIS 'played crucial and necessary roles in planning and ordering' it; Anderson (2010) restated these findings",
+    "text": "Marine barracks bombing 23 October 1983 killed 241 US servicemen (plus 58 French troops at a second site); Peterson v. Iran (Lamberth, 30 May 2003) found Hezbollah carried it out with 'massive material and technical support' from Iran and that Iran and MOIS 'played crucial and necessary roles in planning and ordering' it; Anderson (2010) restated these findings [audit: the \"crucial and necessary roles\" sentence is the Anderson (2010) court's own finding, not a quotation from Peterson; \"formed under the auspices of the government of Iran\" is from Peterson, quoted in Anderson n.4]",
     "strength": "primary",
     "sources": [
      "hz12_dcd_anderson",
@@ -158,7 +158,7 @@
     ]
    },
    {
-    "text": "15 July 2026: House rejected Massie amendment to bar Israel funding in the FY2027 State/national-security appropriations bill, eliminating about $3.3bn FMF, 103 yes–314 no–10 present; Massie the only Republican yes; Jeffries called it 'overly broad'; Clark and Pelosi voted yes",
+    "text": "15 July 2026: House rejected Massie amendment to bar Israel funding in the FY2027 State/national-security appropriations bill, eliminating about $3.3bn FMF, 104 yes–314 no–10 present per CBS/FMEP (The New Arab gives 103, which omits Massie); Massie the only Republican yes; Jeffries called it 'overly broad'; Clark and Pelosi voted yes",
     "strength": "reported",
     "sources": [
      "hz12_na_massie"
@@ -400,6 +400,40 @@
    "hz12b_mediaite_bibi": {
     "url": "https://www.mediaite.com/media/news/come-on-netanyahu-shuts-down-claims-he-somehow-dragged-trump-into-war-with-iran/",
     "label": "Mediaite, 'Come On! Netanyahu shuts down claims he somehow dragged Trump into war with Iran', 19 March 2026"
+   }
+  }
+ },
+ "hz12_audit": {
+  "topic": "Audit re-verification: Massie amendment tally; Iran war status mid-October 2026",
+  "claims": [
+   {
+    "text": "Massie amendment (Amendment 8 to H.R. 8595, FY2027 State/national security appropriations), 15 July 2026: failed 104 yes, 314 no, 10 present; 103 Democrats and one Republican (Massie) voted yes; would have eliminated $3.3bn in assistance to Israel. The New Arab's total of 103 omits Massie's vote.",
+    "strength": "primary",
+    "sources": [
+     "hz12a_cbs_massie",
+     "hz12a_fmep_massie"
+    ]
+   },
+   {
+    "text": "CBS (updated 13 Oct 2026): Iran's ports under US blockade since the ceasefire collapsed in July; CENTCOM: 4 vessels disabled and 135 turned around since the blockade took effect 14 July; Iran attacking ships in Hormuz; late September Iranian ceasefire proposal (lift shipping restrictions) publicly rejected by Trump while talks continue via mediators; Trump's previously announced decision not to strike Iran until after the midterms; asked about the Houthi Riyadh airport strike, 'Well, we're gonna take a look'; no direct US-Iran combat reported in the period",
+    "strength": "reported",
+    "sources": [
+     "hz12a_cbs_oct"
+    ]
+   }
+  ],
+  "sources": {
+   "hz12a_cbs_massie": {
+    "url": "https://www.cbsnews.com/news/us-israel-aid-house-democrats-massie-amendment/",
+    "label": "CBS News, 'House rejects Massie amendment to end Israel aid', 15 July 2026"
+   },
+   "hz12a_fmep_massie": {
+    "url": "https://fmep.org/?p=32051",
+    "label": "FMEP, 'Members on the Record re: Ending Aid to Israel (7/15/26 House vote on Massie Amendment)', July 2026"
+   },
+   "hz12a_cbs_oct": {
+    "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/",
+    "label": "CBS News live updates, Iran war / Houthi strikes on Saudi Arabia, updated 13 October 2026"
    }
   }
  }
