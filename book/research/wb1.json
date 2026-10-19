@@ -1,0 +1,51 @@
+{
+ "volume": "westbank",
+ "verified": "2026-10-19",
+ "entries": [
+  {
+   "id": "wb1_partition",
+   "stage": "wb1",
+   "topic": "The partition plan and the hill country",
+   "claims": [
+    {
+     "text": "Under the UNSCOP majority plan the Arab state was to comprise western Galilee, the hill country of Samaria and Judea (excluding Jerusalem) and the coastal plain from Isdud to the Sinai frontier; the Jewish state eastern Galilee, the Jezreel Valley, most of the coastal plain and the Negev; each state in three sections linked at two crossing points; Jerusalem under UN trusteeship.",
+     "strength": "documented",
+     "sources": [
+      "wb_ej_partition"
+     ]
+    },
+    {
+     "text": "Jewish buyers legally owned about 5.67% of the Mandate's land on 1 April 1945 and 6.6% by the end of 1947; state domain was 46%; by 1948 Jewish farmers cultivated 425,450 dunams and Arab farmers 5,484,700.",
+     "strength": "reported",
+     "sources": [
+      "wb_wiki_landpurchase"
+     ]
+    },
+    {
+     "text": "The West Bank covers about 5,655 km² (other figures 5,628–5,640); the 1947 plan assigned it to the proposed Arab state; Transjordan captured it in 1948 and annexed it in 1950; Israel captured it with East Jerusalem in June 1967; about 2.75 million Palestinians and over 670,000 settlers (about 220,000 in East Jerusalem), reportedly around 750,000 settlers by 2026; Area C is about 61% of the land and holds about 4% of Palestinians.",
+     "strength": "reported",
+     "sources": [
+      "wb_wiki_westbank"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "wb_ej_partition",
+     "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/palestine-partition-and-partition-plans",
+     "label": "Daniel Efron, 'Palestine, Partition and Partition Plans', Encyclopaedia Judaica (Encyclopedia.com)"
+    },
+    {
+     "key": "wb_wiki_landpurchase",
+     "url": "https://en.wikipedia.org/wiki/Jewish_land_purchase_in_Palestine",
+     "label": "Wikipedia, 'Jewish land purchase in Palestine'"
+    },
+    {
+     "key": "wb_wiki_westbank",
+     "url": "https://en.wikipedia.org/wiki/West_Bank",
+     "label": "Wikipedia, 'West Bank'"
+    }
+   ]
+  }
+ ]
+}

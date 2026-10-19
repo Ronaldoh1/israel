@@ -185,8 +185,9 @@ if divine:
 # ---- Thematic volumes that take a simulation chapter's place on the shelf (volumes.json: 'slot': '<chapter id>') ----
 SLOTTED = {}
 ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) and v.get('slot') for c in v.get('absorbs', [])}   # chapters merged into a thematic volume leave the shelf
+AFTER = {}   # volumes.json 'after': '<chapter id>' places a volume right after that chapter (or the volume slotted into it), without replacing anything
 for key, v in VOLS.items():
-    if not isinstance(v, dict) or not v.get('slot'): continue
+    if not isinstance(v, dict) or not (v.get('slot') or v.get('after')): continue
     parts = []
     for st in v['stages']:
         secs = sections_for(st['id'], [])
@@ -196,18 +197,21 @@ for key, v in VOLS.items():
                       'outro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_outro.html')),
                       'outroTitle': 'What this part established', 'sections': secs})
     if parts:
-        SLOTTED[v['slot']] = {'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts', 'total': v.get('parts_total') or len(v['stages']),
-                              'intro': read(os.path.join(ROOT, 'book', 'part1', v.get('intro', key + '_intro.html'))), 'chapters': parts, 'first': parts[0]['sections'][0]['s']}
+        (AFTER.setdefault(v['after'], []).append if v.get('after') else (lambda x, k=v.get('slot'): SLOTTED.__setitem__(k, x)))({'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts', 'total': v.get('parts_total') or len(v['stages']),
+                              'intro': read(os.path.join(ROOT, 'book', 'part1', v.get('intro', key + '_intro.html'))), 'chapters': parts, 'first': parts[0]['sections'][0]['s']})
 done = {'ch01', 'rd0', 'rd1', 'rd2', 'rd3', 'rd4', 'rd5', 'rd6', 'ch05'}
 vol = 5 if divine else 4
 for c in CH:
     if c['id'] in done or c['id'] in ABSORBED or not c['scenes']: continue
     if c['id'] in SLOTTED:
-        b = dict(SLOTTED[c['id']]); b['vol'] = vol; books.append(b); vol += 1; continue
+        b = dict(SLOTTED[c['id']]); b['vol'] = vol; books.append(b); vol += 1
+        for x in AFTER.get(c['id'], []): b = dict(x); b['vol'] = vol; books.append(b); vol += 1
+        continue
     t, sub = split_name(c['name'])
     books.append({'id': c['id'], 'vol': vol, 'status': 'preparing', 'title': t, 'subtitle': sub, 'span': span(c['scenes']), 'count': len(c['scenes']), 'first': c['scenes'][0],
                   'keywords': ' '.join(SC[x]['t'] for x in c['scenes'] if x in SC)})
     vol += 1
+    for x in AFTER.get(c['id'], []): b = dict(x); b['vol'] = vol; books.append(b); vol += 1
 
 import datetime
 lib = {'edition': datetime.date.today().strftime('%B %Y'), 'author': 'Ron Hernandez', 'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
