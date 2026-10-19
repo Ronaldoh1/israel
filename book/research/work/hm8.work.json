@@ -45,7 +45,7 @@
     ]
    },
    {
-    "text": "SIPRI: US 69% and Germany 30% of Israel's arms imports (2023).",
+    "text": "SIPRI: US 69% and Germany 30% of Israel's arms imports (2019–2023 (SIPRI period; source misdated it as 2023)).",
     "strength": "reported",
     "sources": [
      "hm_dp_sipri_imports"
@@ -84,6 +84,13 @@
     "strength": "reported",
     "sources": [
      "hm_globes_exports"
+    ]
+   },
+   {
+    "text": "SIPRI: 2019–2023 US 69% of Israel's arms imports, Germany ~30%.",
+    "strength": "reported",
+    "sources": [
+     "hm_stripes_sipri"
     ]
    }
   ],
@@ -135,6 +142,10 @@
    "hm_globes_exports": {
     "url": "https://en.globes.co.il/en/article-israels-defense-exports-hit-new-record-in-2024-1001512004",
     "label": "Globes, 'Israel's defense exports hit new record in 2024', 4 Jun 2025"
+   },
+   "hm_stripes_sipri": {
+    "url": "https://www.stripes.com/theaters/middle_east/2024-04-12/analysis-israel-military-biggest-suppliers-13540067.html",
+    "label": "Washington Post analysis via Stars and Stripes, 'Israel's biggest military suppliers' (SIPRI data), 12 Apr 2024"
    }
   }
  }
