@@ -191,5 +191,122 @@
     "label": "David Kilcullen, 'Missing the Mark: Reassessing U.S. Military Aid to the Lebanese Armed Forces', Foundation for Defense of Democracies, 26 Jul 2022"
    }
   }
+ },
+ "hz9_audit": {
+  "topic": "Audit re-verification (hz9)",
+  "claims": [
+   {
+    "text": "IDF reported on Sunday 15 Mar 2026 that it had destroyed 85-90% of Hezbollah's pre-2023 rocket arsenal; about 30,000 rockets remained in 2025; about 1,000 long-range precision-guided rockets; the Post inferred from the update that 10,000-23,000 rockets remained.",
+    "strength": "reported",
+    "sources": [
+     "hz9a_jpost_8590"
+    ]
+   },
+   {
+    "text": "IFL RDNA summary: 'Nabatiyeh has the most damage (47%)', then South 23%, Mount Lebanon 16%.",
+    "strength": "primary",
+    "sources": [
+     "hz9_ifl_rdna"
+    ]
+   },
+   {
+    "text": "L'Orient Today: World Bank broke down needs as $8.4bn in 'immediate' needs for 2025-2027.",
+    "strength": "reported",
+    "sources": [
+     "hz9_lol_rdna"
+    ]
+   },
+   {
+    "text": "World Bank: commerce, industry and tourism losses $3.4bn; no-conflict 2024 growth estimate 0.9%; public financing needed $3-5bn, private $6-8bn.",
+    "strength": "primary",
+    "sources": [
+     "hz9_wb_rdna"
+    ]
+   },
+   {
+    "text": "FDD: the Lebanese army stopped serving meat to troops in 2020 amid food shortages.",
+    "strength": "reported",
+    "sources": [
+     "hz9_fdd_laf"
+    ]
+   },
+   {
+    "text": "ToI 12 Mar 2026: 'estimates in 2023' put the arsenal at around 150,000 (no attribution); Alma ~25,000 as of 26 Feb 2026; IDF had earlier estimated 70-80% of rocket fire capabilities destroyed.",
+    "strength": "reported",
+    "sources": [
+     "hz9_toi_barrages"
+    ]
+   },
+   {
+    "text": "USIP: US officials assessed in June 2024 that some Iron Dome batteries could be overwhelmed in a full-scale war with Hezbollah.",
+    "strength": "reported",
+    "sources": [
+     "hz9_usip_arsenal"
+    ]
+   },
+   {
+    "text": "Iran International: Nasrallah declared 'for the first time' on 18 Oct 2021 that Hezbollah had 100,000 trained fighters.",
+    "strength": "reported",
+    "sources": [
+     "hz9_iranintl_100k"
+    ]
+   },
+   {
+    "text": "New Arab citing Channel 12: Milo said 'There is a gap between how we concluded Operation Northern Arrows' and 'the reality in which we are discovering that Hezbollah is still standing'; ~200 operations a day sustainable ~five more months; hundreds of launch platforms mostly north of the Litani.",
+    "strength": "reported",
+    "sources": [
+     "hz9_newarab_milo"
+    ]
+   },
+   {
+    "text": "ToI 5 Apr 2026: Milo acknowledged a gap between IDF damage assessment after 2024 and recent rocket fire; Channel 12: IDF now estimates hundreds of launchers and tens of thousands of rockets; Iran >1,000 ballistic missiles left.",
+    "strength": "reported",
+    "sources": [
+     "hz9_toi_milo"
+    ]
+   }
+  ],
+  "sources": {
+   "hz9a_jpost_8590": {
+    "url": "https://www.jpost.com/israel-news/defense-news/article-890003",
+    "label": "Yonah Jeremy Bob, 'IDF has destroyed 85-90% of Hezbollah's pre-2023 rocket arsenal', Jerusalem Post, 15 Mar 2026"
+   },
+   "hz9_ifl_rdna": {
+    "url": "https://institutdesfinances.gov.lb/sites/default/files/2025-04/PPT-WW%20Cost%20of%20reconstruction.pdf",
+    "label": "Institut des Finances Basil Fuleihan (Lebanese Ministry of Finance), 'Lebanon Rapid Damage and Needs Assessment & Macroeconomic Outlook 2025: Summary of Findings', 16 Apr 2025"
+   },
+   "hz9_lol_rdna": {
+    "url": "https://today.lorientlejour.com/article/1450782/it-will-take-11-billion-to-rebuild-lebanon-after-the-war-says-world-bank.html",
+    "label": "Philippe Hage Boutros, 'It will take $11 billion to rebuild Lebanon after the war, says World Bank', L'Orient Today, 7 Mar 2025"
+   },
+   "hz9_wb_rdna": {
+    "url": "https://www.worldbank.org/en/news/press-release/2025/03/07/lebanon-s-recovery-and-reconstruction-needs-estimated-at-us-11-billion",
+    "label": "World Bank, 'Lebanon's recovery and reconstruction needs estimated at US$11 billion', press release, 7 Mar 2025"
+   },
+   "hz9_fdd_laf": {
+    "url": "https://www.fdd.org/analysis/2022/07/26/missing-the-mark/",
+    "label": "David Kilcullen, 'Missing the Mark: Reassessing U.S. Military Aid to the Lebanese Armed Forces', Foundation for Defense of Democracies, 26 Jul 2022"
+   },
+   "hz9_toi_barrages": {
+    "url": "https://www.timesofisrael.com/rocket-barrages-underscore-remaining-potency-of-hezbollahs-gutted-arsenal/",
+    "label": "Stav Levaton and Emanuel Fabian, 'Rocket barrages underscore remaining potency of Hezbollah's gutted arsenal', Times of Israel, 12 Mar 2026"
+   },
+   "hz9_usip_arsenal": {
+    "url": "https://iranprimer.usip.org/blog/2024/sep/20/graphics-hezbollah-israel-attacks-arsenals",
+    "label": "USIP Iran Primer, 'Graphics: Hezbollah-Israel Attacks & Arsenals', 20 Sep 2024"
+   },
+   "hz9_iranintl_100k": {
+    "url": "https://www.iranintl.com/en/20211019207442",
+    "label": "Iran International, 'Nasrallah says Hezbollah has 100,000 trained fighters', 19 Oct 2021"
+   },
+   "hz9_newarab_milo": {
+    "url": "https://www.newarab.com/news/israel-army-says-it-underestimated-hezbollah-iran-capabilities?amp=1",
+    "label": "The New Arab, 'Israel army says it underestimated Hezbollah, Iran capabilities', 5 Apr 2026"
+   },
+   "hz9_toi_milo": {
+    "url": "https://www.timesofisrael.com/idf-northern-command-chief-admits-israel-overestimated-damage-to-hezbollah-after-2024-war/",
+    "label": "Charlie Summers and ToI Staff, 'IDF admits Israel overestimated damage to Hezbollah, believes Iran can keep firing missiles as long as war continues', Times of Israel, 5 Apr 2026"
+   }
+  }
  }
 }

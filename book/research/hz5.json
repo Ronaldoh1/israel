@@ -553,6 +553,51 @@
      "label": "Radio Free Europe/Radio Liberty, report on John Bolton's BBC and AP interviews, 23 March 2007"
     }
    ]
+  },
+  {
+   "id": "hz5_audit",
+   "stage": "hz5",
+   "topic": "Audit re-verification: Winograd on cluster munitions; Goldstone report on the Dahiya doctrine",
+   "claims": [
+    {
+     "text": "IRIN 3 Feb 2008: the Winograd Committee's final report said Israel's use of cluster bombs in the 2006 war violated international law on protecting civilians; firing them at built-up areas 'does not comply with the rationale on which the restrictions' on their use are based, even where Hezbollah used those areas; called for the army's rules to be reviewed. Israeli defence official Shlomo Dror: 'Let them ask Hezbollah where their launch sites were.'",
+     "strength": "reported",
+     "sources": [
+      "hz5a_irin_winograd"
+     ]
+    },
+    {
+     "text": "Goldstone report para 62: Israeli tactics in Gaza consistent with previous practice, most recently Lebanon 2006; 'A concept known as the Dahiya doctrine emerged then, involving the application of disproportionate force' and great damage to civilian property and infrastructure; 'what was prescribed as the best strategy appears to have been precisely what was put into practice.'",
+     "strength": "primary",
+     "sources": [
+      "hz5a_un_goldstone"
+     ]
+    },
+    {
+     "text": "Goldstone report (para 1893, quoted by CSM) described the Gaza operation as 'a deliberately disproportionate attack designed to punish, humiliate and terrorize a civilian population'; Goldstone's 1 April 2011 Washington Post column withdrew the finding of deliberate targeting of civilians as policy.",
+     "strength": "reported",
+     "sources": [
+      "hz5a_csm_goldstone"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hz5a_irin_winograd",
+     "url": "https://www.globalsecurity.org/military/library/news/2008/02/mil-080203-irin01.htm",
+     "label": "IRIN, 'ISRAEL-LEBANON: Israel must reexamine use of cluster bombs, committee says', 3 February 2008 (via GlobalSecurity.org)"
+    },
+    {
+     "key": "hz5a_un_goldstone",
+     "url": "https://unispal.un.org/pdfs/AHRC1248.pdf",
+     "label": "UN Human Rights Council, Report of the United Nations Fact-Finding Mission on the Gaza Conflict, A/HRC/12/48, 25 September 2009"
+    },
+    {
+     "key": "hz5a_csm_goldstone",
+     "url": "https://www.csmonitor.com/World/Middle-East/2011/0404/Goldstone-Report-Reexamining-5-key-findings",
+     "label": "Ariel Zirulnick, 'Goldstone Report: Reexamining 5 key findings', Christian Science Monitor, 4 April 2011"
+    }
+   ]
   }
  ]
 }

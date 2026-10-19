@@ -654,5 +654,164 @@
     "label": "Parliament of Australia, PJCIS, Statement of Reasons: Palestinian Islamic Jihad"
    }
   }
+ },
+ "hz10_audit": {
+  "topic": "Audit re-verification (hz10)",
+  "claims": [
+   {
+    "text": "CRS R45046: October 2016 Saudi strike on a Sanaa funeral hall killed 140; Obama administration held a precision-guided munitions sale and limited intelligence sharing but kept refuelling; Senate passed S.J.Res.7 54-46 in March 2019; 24 May 2019 emergency sales >$8bn; Senate adopted all 22 resolutions of disapproval; three (S.J.Res. 36-38) passed both chambers and were vetoed.",
+    "strength": "primary",
+    "sources": [
+     "hz10_crs_yemencongress"
+    ]
+   },
+   {
+    "text": "Airwars: during Rough Rider it documented more incidents with higher casualties per strike than in any other US campaign; the two deadliest civilian-harm incidents in US operations in Yemen; Ras Isa at least 84 killed, 150 injured.",
+    "strength": "reported",
+    "sources": [
+     "hz10_airwars_rr"
+    ]
+   },
+   {
+    "text": "NBC (May 2025): two US officials, >$1bn; ~2,000 munitions worth >$775m; at least 75 Tomahawks; seven drones shot down; two fighter jets lost; a DoD official said munitions cost closer to $400m.",
+    "strength": "reported",
+    "sources": [
+     "hz10_nbc_rrcost"
+    ]
+   },
+   {
+    "text": "Amnesty 29 Oct 2025: Houthi authorities said 117 migrants detained, 61 killed, 56 injured; Amnesty found no evidence of a military objective; CENTCOM 'assessing all reports of civilian harm'.",
+    "strength": "reported",
+    "sources": [
+     "hz10_ai_saada"
+    ]
+   },
+   {
+    "text": "Reuters factbox: Rubymar struck Feb 2024, sank 2 Mar 2024; True Confidence March 2024 three killed; Tutor sank June 2024, one crew never found; Magic Seas sank 6 Jul 2025; Eternity C sank 9 Jul 2025, four killed, 11 missing.",
+    "strength": "reported",
+    "sources": [
+     "hz10_olj_factbox"
+    ]
+   },
+   {
+    "text": "CRS July 2026: Houthis attributed strikes on Sanaa airport (after flights from Iran) to Saudi Arabia, then announced targeting of Saudi-linked ships; Oman-brokered deal: Houthis cease targeting US vessels, US halts strikes.",
+    "strength": "primary",
+    "sources": [
+     "hz10_usni_crs2026"
+    ]
+   },
+   {
+    "text": "AFP 3 Oct 2026: 80 combatants killed over a day around Taiz per both sides (Houthi: 55+ opponents; government: 26 troops); civil war dormant after 2022 truce 'roared back to life in July'; Houthis: 94 Saudi strikes in 24h, 1,350 total.",
+    "strength": "reported",
+    "sources": [
+     "hz10_ahram_taiz"
+    ]
+   },
+   {
+    "text": "UN Panel S/2024/731: Abdulmalik al-Houthi confirmed in June 2024 coordinating military activities with the 'so-called Islamic Resistance in Iraq' (para 12); joint operational centres in Iraq and Lebanon; 134+ attacks 15 Nov 2023-31 Jul 2024 (para 54); Hazam al-Assad: Galaxy Leader decision 'made by the Houthi leaders' (para 56); 53 items (para 70); Gen. Abdulreza Shahlai advisory role (para 72).",
+    "strength": "primary",
+    "sources": [
+     "hz10_un_poe2024"
+    ]
+   },
+   {
+    "text": "CFR: some experts date Iranian military support to 2009, during the Houthis' first war with the government; most agree weapons flowing by 2014.",
+    "strength": "reported",
+    "sources": [
+     "hz10_cfr_iranhouthis"
+    ]
+   },
+   {
+    "text": "Farida: after ISIS's military defeat in 2019 the PMF 'shifted their attention back to US targets in Iraq'.",
+    "strength": "reported",
+    "sources": [
+     "hz10_at_farida"
+    ]
+   },
+   {
+    "text": "USIP: Iran mobilized tens of thousands of foreign Shiite fighters 'from as far away as Afghanistan and Pakistan'; Pezeshkian 8 Dec 2024 statement; Khamenei 11 Dec 2024 'joint American-Zionist plot'.",
+    "strength": "reported",
+    "sources": [
+     "hz10s_usip_iran"
+    ]
+   },
+   {
+    "text": "Enab Baladi: Sufa 53 features an eight-metre military road, five-metre earthen berms, trenches and observation posts; Syria's foreign ministry: 'flagrant breach'; Jordan and Qatar condemned. Anadolu: Israel says it is 'designed to prevent possible attacks by Iran-backed armed groups'; begun mid-2022 near Hadr.",
+    "strength": "reported",
+    "sources": [
+     "hz10s_eb_sufa",
+     "hz10s_aa_sufa"
+    ]
+   },
+   {
+    "text": "Rudaw: KH members and supporters stormed the US embassy, 'breaching the reception area and setting parts of the compound on fire'.",
+    "strength": "reported",
+    "sources": [
+     "hz10_rudaw_soleimani"
+    ]
+   }
+  ],
+  "sources": {
+   "hz10_crs_yemencongress": {
+    "url": "https://www.everycrsreport.com/reports/R45046.html",
+    "label": "CRS R45046, 'Congress and the War in Yemen: Oversight and Legislation 2015-2021', updated 10 February 2022"
+   },
+   "hz10_airwars_rr": {
+    "url": "https://trump-yemen.airwars.org/operation-rough-rider",
+    "label": "Airwars, 'Operation Rough Rider', 18 June 2025"
+   },
+   "hz10_nbc_rrcost": {
+    "url": "https://www.nbcnews.com/politics/national-security/trump-operation-houthis-cost-1-billion-rcna205333",
+    "label": "NBC News, 'Trump operation against Houthis cost more than $1 billion', May 2025"
+   },
+   "hz10_ai_saada": {
+    "url": "https://www.amnestyusa.org/press-releases/yemen-us-air-strike-on-migrant-detention-center-must-be-investigated-as-a-war-crime/",
+    "label": "Amnesty International, 'Yemen: US air strike on migrant detention center must be investigated as a war crime', 29 October 2025"
+   },
+   "hz10_olj_factbox": {
+    "url": "https://today.lorientlejour.com/article/1468697/factbox-houthi-attacks-on-merchant-ships-in-the-red-sea.html",
+    "label": "Reuters via L'Orient Today, 'Factbox: Houthi attacks on merchant ships in the Red Sea', 10 July 2025"
+   },
+   "hz10_usni_crs2026": {
+    "url": "https://news.usni.org/?p=124202",
+    "label": "CRS, 'Yemen: Conflict, Red Sea Security, and U.S. Policy', 21 July 2026 (USNI News repost, 30 July 2026)"
+   },
+   "hz10_ahram_taiz": {
+    "url": "https://english.ahram.org.eg/News/578059.aspx",
+    "label": "AFP via Ahram Online, 'Battle in Yemen's Taiz kills scores of combatants', 3 October 2026"
+   },
+   "hz10_un_poe2024": {
+    "url": "https://documents.un.org/doc/undoc/gen/n24/259/53/pdf/n2425953.pdf",
+    "label": "UN Panel of Experts on Yemen, final report S/2024/731, 11 October 2024"
+   },
+   "hz10_cfr_iranhouthis": {
+    "url": "https://www.cfr.org/in-brief/irans-support-houthis-what-know",
+    "label": "Mariel Ferragamo and Kali Robinson, CFR, 'Iran's Support of the Houthis: What to Know', updated 10 April 2026"
+   },
+   "hz10_at_farida": {
+    "url": "https://asiatimes.com/2024/02/furious-ties-bind-irans-axis-of-resistance/",
+    "label": "Mariam Farida (The Conversation), Asia Times, 'Furious ties bind Iran's axis of resistance', 3 February 2024"
+   },
+   "hz10s_usip_iran": {
+    "url": "https://iranprimer.usip.org/node/13281",
+    "label": "USIP Iran Primer, 'Iran is the Biggest Regional Loser of Assad's Fall', December 2024"
+   },
+   "hz10s_eb_sufa": {
+    "url": "https://english.enabbaladi.net/archives/2026/10/syrian-arab-condemnations-as-israel-resumes-work-on-sufa-53-line/",
+    "label": "Enab Baladi, 'Syrian, Arab Condemnations as Israel Resumes Work on Sufa 53 Line', 5 October 2026"
+   },
+   "hz10s_aa_sufa": {
+    "url": "https://www.aa.com.tr/en/middle-east/explainer-what-is-israel-s-sufa-53-military-project-in-southern-syria/4078041",
+    "label": "Anadolu Agency, 'Explainer: What is Israel's Sufa 53 military project in southern Syria', 5 October 2026"
+   },
+   "hz10_rudaw_soleimani": {
+    "url": "https://www.rudaw.net/english/middleeast/iran/030120201",
+    "label": "Rudaw, 'US drone strike kills Iranian General Soleimani, PMF official in Baghdad', 3 January 2020"
+   },
+   "hz10_fox_pentagon2020": {
+    "url": "https://foxbaltimore.com/news/nation-world/pentagon-says-us-airstrike-killed-powerful-iranian-general",
+    "label": "AP via Fox Baltimore, 'Pentagon says US airstrike killed powerful Iranian general', 2-3 January 2020"
+   }
+  }
  }
 }
