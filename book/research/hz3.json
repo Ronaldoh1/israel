@@ -225,6 +225,75 @@
      "label": "Wikipedia, 'Hezbollah' (accessed 19 October 2026)"
     }
    ]
+  },
+  {
+   "id": "hz3_audit",
+   "stage": "hz3",
+   "topic": "Audit re-checks, Part Three",
+   "claims": [
+    {
+     "text": "AP (17 July 2026): Barak said in an interview that in 1985 he had warned 'Our very presence will become the only goal'; 'we were not serving Israeli security, we were not serving the state'; 'There was no logic to this in 1985, and there was no logic in 2000, when we pulled out'; 'In order to destroy, totally destroy Hezbollah, you'd have to conquer the whole of Lebanon'; AP paraphrases him warning that Israel's presence and destruction of villages could boost Lebanese backing for Hezbollah",
+     "strength": "reported",
+     "sources": [
+      "hz3a_ap_barak"
+     ]
+    },
+    {
+     "text": "Norton on NPR (about 19-20 July 2006, eighth day of the war) said Ehud Barak had 'noted that the Israeli presence in Lebanon basically created Hezbollah' (Norton's paraphrase of Barak, not Norton's own claim)",
+     "strength": "reported",
+     "sources": [
+      "hz3a_npr_norton"
+     ]
+    },
+    {
+     "text": "CSM 21 June 1985: Israeli government said it 'always intended to return the Shiites to south Lebanon' (re the >1,000 detainees moved from Ansar)",
+     "strength": "reported",
+     "sources": [
+      "hz3a_csm_jun85"
+     ]
+    },
+    {
+     "text": "CSM 11 March 1985: 'sworn to drive the Israelis out of Lebanon' is the correspondent's narration; Rabin paraphrased as dreading Shiite animosity more than the Palestinian guerrilla attacks that preceded the 1982 invasion (not a direct quote)",
+     "strength": "reported",
+     "sources": [
+      "hz3a_csm_mar85"
+     ]
+    },
+    {
+     "text": "JTA Feb 1985 reports an interview Rabin gave to Time magazine; OCR text: 'If there is a problem we will bomb them' (the 'we'll shell them' continuation not confirmed in the re-check)",
+     "strength": "reported",
+     "sources": [
+      "hz3a_djn_rabin85"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hz3a_ap_barak",
+     "url": "https://www.clickondetroit.com/news/world/2026/07/17/a-former-prime-minister-who-led-israel-out-of-lebanon-fears-mistakes-are-being-repeated/",
+     "label": "Melanie Lidman, Associated Press, 'A former prime minister who led Israel out of Lebanon fears mistakes are being repeated', 17 July 2026"
+    },
+    {
+     "key": "hz3a_npr_norton",
+     "url": "https://www.npr.org/transcripts/5568093",
+     "label": "NPR Talk of the Nation, interview with Augustus Richard Norton, July 2006 (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz3a_csm_jun85",
+     "url": "https://www.csmonitor.com/1985/0621/orabin.html",
+     "label": "Mary Curtius, Christian Science Monitor, 21 June 1985 (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz3a_csm_mar85",
+     "url": "https://www.csmonitor.com/layout/set/amphtml/1985/0311/omeric.html",
+     "label": "Mary Curtius, Christian Science Monitor, 11 March 1985 (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz3a_djn_rabin85",
+     "url": "https://digital.bentley.umich.edu/djnews/djn.1985.02.08.001/22",
+     "label": "JTA, Detroit Jewish News, 8 February 1985 (re-checked 19 October 2026)"
+    }
+   ]
   }
  ]
 }

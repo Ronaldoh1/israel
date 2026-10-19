@@ -764,6 +764,63 @@
      "label": "Mary Curtius, Christian Science Monitor, 'Israel plans Lebanon pullout by June 1', 22 April 1985"
     }
    ]
+  },
+  {
+   "id": "hz2_audit",
+   "stage": "hz2",
+   "topic": "Audit re-checks, Part Two",
+   "claims": [
+    {
+     "text": "Arab News gives the embassy toll as 63 including 17 Americans; its text says 35 Lebanese, its photo caption 46 Lebanese; it does not note the discrepancy",
+     "strength": "reported",
+     "sources": [
+      "hz2a_an_1983"
+     ]
+    },
+    {
+     "text": "The 2007 Peterson damages opinion describes Hezbollah as 'the terrorist organization that orchestrated and carried out the bombing' in summarising the plaintiffs' allegations (background section), not as a separate finding",
+     "strength": "primary",
+     "sources": [
+      "hz2a_peterson07"
+     ]
+    },
+    {
+     "text": "Lamb: CNN attributed 'American terrorism is the source of every terrorism in the world' to Nasrallah in a televised speech; Lamb describes the new manifesto as 32 pages (Belfer gives 52)",
+     "strength": "reported",
+     "sources": [
+      "hz2a_cp_lamb"
+     ]
+    },
+    {
+     "text": "CSM Dec 1982: the police totals (19,085 killed, 30,302 wounded, 4 June-31 Aug 1982) are not explicitly broken down by status; regional breakdowns (Beirut 84% civilians; south 20% civilians, rest Palestinian, Syrian or Lebanese fighters) indicate they include fighters",
+     "strength": "reported",
+     "sources": [
+      "hz2a_csm_dec82"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hz2a_an_1983",
+     "url": "https://www.arabnews.com/node/2597013/amp",
+     "label": "Najia Houssari, Arab News, '1983 - US Marines bombed in Beirut', 14 April 2025 (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz2a_peterson07",
+     "url": "https://syfert.com/caselaw/case.php?id=1962822",
+     "label": "Peterson v. Islamic Republic of Iran, 515 F. Supp. 2d 25 (D.D.C. 2007) (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz2a_cp_lamb",
+     "url": "https://www.counterpunch.org/2009/12/03/hezbollah-s-new-manifesto/print/",
+     "label": "Franklin Lamb, CounterPunch, 3 December 2009 (re-checked 19 October 2026)"
+    },
+    {
+     "key": "hz2a_csm_dec82",
+     "url": "https://www.csmonitor.com/1982/1221/122162.html",
+     "label": "John Yemma, Christian Science Monitor, 21 December 1982 (re-checked 19 October 2026)"
+    }
+   ]
   }
  ]
 }
