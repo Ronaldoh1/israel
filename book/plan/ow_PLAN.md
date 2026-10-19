@@ -35,4 +35,11 @@
 - Epstein: only court records and named-outlet reporting; contested intelligence claims labelled as such.
 
 ## Three-source check log
-*(Filled in as the research pull completes.)*
+Checked 19 Oct 2026. Leads file: scratchpad `agencies_leads.md` (~13,400 words; 21 contradictions, 13 overstated claims, error list, gaps).
+
+| Source | What was checked | Notes |
+|---|---|---|
+| Simulation | Agency chapters ch42 (CIA), ch29 (FBI), ch43 (NSA–Palantir), ch26 (Unit 8200), ch13 (Domestic Footprint), ch35 (NYPD), ch30 (ICE/Palantir), ch32 (Surveillance), ch52 (Capability Stack), ch33 (Arms Supply), ch20 (Aid), ch58 (Department of War), ch34 (Epstein intelligence scenes); root and dist builds compared (identical 960 scenes) | Errors not to carry over: NUMEC "Israel stole it" (officially unresolved); Kadish dating; Palantir as "IDF AI targeting partner" (8200/Shin Bet reportedly declined); Maxwell–Mossad marked CONFIRMED (contested); cash-via-Rafah |
+| Sophia | Agency modules (CIA, FBI, NSA same as sim); Snowden/Palantir/Pegasus/Paragon/Elbit/service modules are placeholders. Project docs 05 (IDF/Mossad), 06 (Unit 8200), Palantir deliberation log, Trump–Epstein–Clinton triangle | Leads appended to the leads file; each traced before use |
+| israelbooks | Book 2 Ch31, Book 3 Chs 1–6 and 23, Book 4 Chs 28 and 32, Book 6 Ch19, Book 7 Ch3, Book 8 Chs 5, 6, 9, Book 0 Maxwell notes | Thin on agencies; used for FBI 1945–48 and FARA |
+
