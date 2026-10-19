@@ -1,0 +1,102 @@
+{
+ "pr1_count": {
+  "topic": "How the dead of Gaza are counted",
+  "claims": [
+   {
+    "text": "Spagat et al., Lancet Global Health (Feb 2026): face-to-face survey of 2,000 households by PCPSR from 30 Dec 2024; ~75,200 violent deaths in first 15 months vs ~49,000 reported; ~16,300 non-violent excess deaths; 56.2% of violent deaths women, children, elderly; 3–4% of population killed violently by 5 Jan 2025; first independent mortality survey.",
+    "strength": "reported",
+    "sources": [
+     "pr_almon_survey2026",
+     "pr_ctv_survey2026"
+    ]
+   },
+   {
+    "text": "Airwars matched 2,236 of 2,993 named civilians (75%) killed 7–24 Oct 2023 to the ministry's first list; found it broadly reliable for that period; later recording weakened as hospitals stopped reporting.",
+    "strength": "reported",
+    "sources": [
+     "pr_airwars_lists"
+    ]
+   },
+   {
+    "text": "The ministry published names after Biden said he had 'no confidence' in the figures; health workers record deaths in facilities; ministry does not separate combatants; Spagat: ID matching weakened after 26 Oct 2023.",
+    "strength": "reported",
+    "sources": [
+     "pr_walrus_counters"
+    ]
+   },
+   {
+    "text": "Jan 2026: a senior Israeli military official said the IDF believes ~70,000 were killed (ministry 71,667); ministry records include names and IDs for over 90% of bodies; IDF said before ceasefire it killed at least 22,000 combatants; earlier IDF officials cited 2–3 civilians per combatant; official rejected the ministry's malnutrition deaths; Hamas estimates ~10,000 under rubble.",
+    "strength": "reported",
+    "sources": [
+     "pr_toi_idf70k"
+    ]
+   },
+   {
+    "text": "IDF spokesman Nadav Shoshani said reports the army had accepted the toll 'do not reflect official data'.",
+    "strength": "reported",
+    "sources": [
+     "pr_newarab_iddeny"
+    ]
+   },
+   {
+    "text": "Guardian/+972/Local Call (21 Aug 2025): a classified IDF database listed 8,900 Hamas and PIJ fighters as dead or probably dead by May 2025, against at least 53,000 deaths — implying ~83% civilians; IDF said the figures were 'incorrect'.",
+    "strength": "reported",
+    "sources": [
+     "pr_aj_83pct"
+    ]
+   },
+   {
+    "text": "Critique (HonestReporting): the database covers only named, confirmed operatives; unidentified fighters counted as civilians; using 22,000 operatives and 62,000 deaths gives about 2 civilians per combatant.",
+    "strength": "reported",
+    "sources": [
+     "pr_alg_83critique"
+    ]
+   },
+   {
+    "text": "April 2026: about 10,000 missing believed under rubble; 759 bodies recovered; heavy machinery not admitted; over 61 million tonnes of rubble (UN).",
+    "strength": "reported",
+    "sources": [
+     "pr_aj_rubble2026"
+    ]
+   }
+  ],
+  "sources": {
+   "pr_almon_survey2026": {
+    "url": "https://www.al-monitor.com/originals/2026/02/gaza-deaths-wars-first-15-months-higher-reported-study-says",
+    "label": "Al-Monitor, 'Gaza deaths in war's first 15 months higher than reported, study says', 19 Feb 2026 (on Spagat et al., The Lancet Global Health)"
+   },
+   "pr_ctv_survey2026": {
+    "url": "https://www.ctvnews.ca/world/israel-hamas-war/article/gaza-deaths-in-wars-first-15-months-higher-than-reported-study-says/",
+    "label": "Reuters via CTV News, 'Gaza deaths in war's first 15 months higher than reported, study says', 19 Feb 2026"
+   },
+   "pr_airwars_lists": {
+    "url": "https://gaza-civilians.airwars.org/",
+    "label": "Airwars, 'One Name, Two Lists', 24 Jul 2024"
+   },
+   "pr_walrus_counters": {
+    "url": "https://thewalrus.ca/?p=177677",
+    "label": "Nora Loreto, 'How casualty counters measure deaths in Gaza', The Walrus, 25 Mar 2025"
+   },
+   "pr_toi_idf70k": {
+    "url": "https://www.timesofisrael.com/idf-believes-70000-gazans-killed-in-war-as-claimed-",
+    "label": "Times of Israel, 'IDF believes 70,000 Gazans killed in war, as claimed by Hamas; civilian-combatant ratio unclear', 29 Jan 2026"
+   },
+   "pr_newarab_iddeny": {
+    "url": "https://www.newarab.com/news/israel-denies-accepting-gaza-health-ministry-death-toll",
+    "label": "The New Arab, 'Israel denies accepting Gaza health ministry death toll', 30 Jan 2026"
+   },
+   "pr_aj_83pct": {
+    "url": "https://www.aljazeera.com/news/2025/8/21/israeli-data-shows-83-percent-of-gaza-war-dead-are-civilians-report",
+    "label": "Al Jazeera, 'Israeli data shows 83 percent of Gaza war dead are civilians: report' (on the Guardian/+972/Local Call investigation), 21 Aug 2025"
+   },
+   "pr_alg_83critique": {
+    "url": "https://www.algemeiner.com/2025/08/28/the-medias-latest-blood-libel-how-distorted-data-turns-terrorists-into-civilians/",
+    "label": "Sharon Levy, 'The media's latest blood libel', The Algemeiner (HonestReporting), 28 Aug 2025"
+   },
+   "pr_aj_rubble2026": {
+    "url": "https://aljazeera.com/news/2026/4/10/gaza-families-still-unable-to-bury-dead-six-months-into-ceasefire",
+    "label": "Al Jazeera, 'Gaza families still unable to bury dead six months into ceasefire', 10 Apr 2026"
+   }
+  }
+ }
+}
