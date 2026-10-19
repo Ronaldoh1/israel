@@ -406,6 +406,153 @@
      "label": "Wikipedia, '2006 Lebanon War' (accessed 19 Oct 2026)"
     }
    ]
+  },
+  {
+   "id": "hz5_fill",
+   "stage": "hz5",
+   "topic": "Gap fill: US role (Rice, bomb shipment, ceasefire), cluster munitions (UN/HRW/State Dept), Egeland, Hezbollah rockets (HRW), Nasrallah 27 Aug 2006, July 2008 exchange, Bolton",
+   "claims": [
+    {
+     "text": "Rice, 21 July 2006: the aim of the Rome talks was a framework for lasting peace, not a temporary ceasefire, which she called 'a guarantee of future violence'; 'We do seek an end to the current violence, and we seek it urgently.' Assistant Secretary David Welch said the US would back a ceasefire when conditions allowed.",
+     "strength": "primary",
+     "sources": [
+      "hz5b_wf_rice"
+     ]
+    },
+    {
+     "text": "Rice: 'What we're seeing here in a sense is the birth pangs of a new Middle East'; a ceasefire would be a 'false promise if it simply returns us to the status quo'; would let 'terrorists ... launch attacks at the time and terms of their choosing'. At least 305 Lebanese civilians had been killed by 22 July per Al Jazeera.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_aj_birthpangs",
+      "hz5b_npr_birthpangs"
+     ]
+    },
+    {
+     "text": "NYT 22 July 2006 (Cloud, Cooper): the Bush administration was rushing precision-guided bombs to Israel at Israel's request the week before, from a 2005-approved sale package that included the GBU-28 bunker-buster; decision taken with relatively little debate; some officers called the expedited request unusual; officials declined to detail size/contents.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_nyt_bombs",
+      "hz5b_otb_bombs",
+      "hz5b_aj_bombs"
+     ]
+    },
+    {
+     "text": "29 January 2007: the State Department sent Congress a preliminary report, prepared by Under Secretary Robert Joseph, finding Israel likely violated classified agreements on use of US-supplied cluster munitions; McCormack: 'It's a set of preliminary findings'; Israeli embassy: used in self-defence against Hezbollah rocket attacks.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_voa_cluster"
+     ]
+    },
+    {
+     "text": "UN Mine Action Coordination Centre South Lebanon: Israel fired cluster munitions containing as many as 4 million submunitions in 962 strikes (as of Jan 2008; range 2.6-4m); Israeli soldiers' information to HRW suggests up to 4.6 million; UN: 90% of strikes in the final 72 hours, mostly after 1701 was adopted; average failure ~25%, up to 70% in places; hundreds of thousands, possibly up to one million unexploded; at least 192 civilian (20 killed, 172 wounded) and 29 deminer casualties by 15 January 2008. Israel: use accorded with principles of armed conflict, mostly at open areas.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_hrw_flooding"
+     ]
+    },
+    {
+     "text": "Jan Egeland, 30 August 2006: 'What's shocking and I would say completely immoral is that 90 per cent of the cluster bomb strikes' came in the last 72 hours; UN had identified 359 strike sites with up to 100,000 unexploded bomblets at that point.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_aj_egeland"
+     ]
+    },
+    {
+     "text": "HRW 28 Aug 2007: Hezbollah fired thousands of rockets 'indiscriminately and at times deliberately' at civilian areas; at least 39 Israeli civilians killed, 101 seriously/moderately injured; cluster rockets in 118 strikes examined by Israel Police; Hezbollah said its attacks were retaliation for Israeli fire.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_hrw_civassault"
+     ]
+    },
+    {
+     "text": "Nasrallah, New TV, 27 August 2006: asked whether he would have ordered the capture had he known it would lead to such a war, 'I say no, absolutely not'; 'We did not think, even one per cent' that it would lead to war of this magnitude.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_aj_nasrallah"
+     ]
+    },
+    {
+     "text": "16 July 2008: Samir Kuntar and four other prisoners prepared for release in Red Cross-run exchange; Goldwasser and Regev believed dead; Kuntar convicted in 1979 of killing an Israeli man and his four-year-old daughter.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_aj_swap"
+     ]
+    },
+    {
+     "text": "Bolton (BBC interview, reported by RFE/RL 23 March 2007): the US joined efforts to end the conflict only once Israel's campaign appeared to be failing; to AP he said 'many' Arab governments privately wanted Israel to destroy Hezbollah.",
+     "strength": "reported",
+     "sources": [
+      "hz5b_rferl_bolton"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "hz5b_aj_birthpangs",
+     "url": "https://www.aljazeera.com/archive/2006/07/200849132037797119.html",
+     "label": "Al Jazeera, 'Rice sees bombs as birth pangs', 22 July 2006"
+    },
+    {
+     "key": "hz5b_npr_birthpangs",
+     "url": "https://www.npr.org/transcripts/5573980",
+     "label": "NPR, All Things Considered, transcript, July 2006 (Rice: ceasefire a 'false promise')"
+    },
+    {
+     "key": "hz5b_wf_rice",
+     "url": "https://www.globalsecurity.org/military/library/news/2006/07/mil-060721-usia01.htm",
+     "label": "US Department of State, Washington File, 'Rice To Visit Israel, Rome for Talks on Mideast Crisis', 21 July 2006 (via GlobalSecurity.org)"
+    },
+    {
+     "key": "hz5b_nyt_bombs",
+     "url": "https://dailyalert.org/archive/index.php?id=1246",
+     "label": "David S. Cloud and Helene Cooper, 'U.S. Speeds Up Bomb Delivery for the Israelis', New York Times, 22 July 2006 (excerpt via Daily Alert, 24 July 2006)"
+    },
+    {
+     "key": "hz5b_otb_bombs",
+     "url": "https://outsidethebeltway.com/?p=15861",
+     "label": "Outside the Beltway, 'U.S. Speeds Up Bomb Delivery for the Israelis', 22 July 2006 (extended excerpt of the New York Times report)"
+    },
+    {
+     "key": "hz5b_aj_bombs",
+     "url": "https://www.aljazeera.com/news/2006/7/23/bush-rushes-bombs-to-israel",
+     "label": "Al Jazeera (Reuters), 'Bush rushes bombs to Israel', 23 July 2006"
+    },
+    {
+     "key": "hz5b_voa_cluster",
+     "url": "https://voanews.com/a/a-13-2007-01-29-voa33-66764382/563885.html",
+     "label": "Voice of America, 'US: Israel likely violated cluster bomb agreement during Hezbollah war', 29 January 2007"
+    },
+    {
+     "key": "hz5b_hrw_flooding",
+     "url": "https://www.hrw.org/reports/2008/lebanon0208/lebanon0208.htm",
+     "label": "Human Rights Watch, 'Flooding South Lebanon: Israel's Use of Cluster Munitions in Lebanon in July and August 2006', February 2008"
+    },
+    {
+     "key": "hz5b_aj_egeland",
+     "url": "https://www.aljazeera.com/news/2006/8/31/un-israeli-cluster-bombs-immoral",
+     "label": "Al Jazeera, 'UN: Israeli cluster bombs immoral', 31 August 2006"
+    },
+    {
+     "key": "hz5b_hrw_civassault",
+     "url": "https://www.hrw.org/news/2007/08/28/lebanon/israel-hezbollah-rockets-targeted-civilians-2006-war",
+     "label": "Human Rights Watch, 'Lebanon/Israel: Hezbollah Rockets Targeted Civilians in 2006 War' (release of 'Civilians under Assault'), 28 August 2007"
+    },
+    {
+     "key": "hz5b_aj_nasrallah",
+     "url": "https://www.aljazeera.com/news/2006/8/27/nasrallah-says-he-did-not-want-war",
+     "label": "Al Jazeera, 'Nasrallah says he did not want war', 27 August 2006"
+    },
+    {
+     "key": "hz5b_aj_swap",
+     "url": "https://www.aljazeera.com/news/2008/7/16/israel-prepares-for-prisoner-swap",
+     "label": "Al Jazeera, 'Israel prepares for prisoner swap', 16 July 2008"
+    },
+    {
+     "key": "hz5b_rferl_bolton",
+     "url": "https://www.rferl.org/a/1075450.html",
+     "label": "Radio Free Europe/Radio Liberty, report on John Bolton's BBC and AP interviews, 23 March 2007"
+    }
+   ]
   }
  ]
 }
