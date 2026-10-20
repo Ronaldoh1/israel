@@ -380,6 +380,63 @@
      "label": "CNN via KVIA, 'A majority of Americans disapproves of Trump's Iran airstrikes, CNN poll finds', 24 June 2025 (SSRS, 22–23 June 2025)"
     }
    ]
+  },
+  {
+   "id": "ir14_audit",
+   "stage": "ir14",
+   "topic": "Audit re-verification of Part Fourteen quotes and figures (October 2026)",
+   "claims": [
+    {
+     "text": "Rubio, 2 March 2026: if the US did not 'pre-emptively go after them before they launched those attacks, we would suffer higher casualties'; 'There absolutely was an imminent threat'",
+     "strength": "reported",
+     "sources": [
+      "ir14a_aje_rubio"
+     ]
+    },
+    {
+     "text": "Trump, 3 March 2026: 'So if anything, I might have forced Israel's hand, but Israel was ready, and we were ready'",
+     "strength": "reported",
+     "sources": [
+      "ir14a_sn_forced"
+     ]
+    },
+    {
+     "text": "Pentagon raised the Ain al-Asad TBI total to 110 on 21 February 2020, one more than the 109 announced on 10 February; all mild",
+     "strength": "reported",
+     "sources": [
+      "ir14a_rferl_tbi"
+     ]
+    },
+    {
+     "text": "EIA 6 Oct 2026: gasoline $3.10 (2025) and $3.91 forecast (2026): the 81-cent difference (about 26%) is this book's arithmetic from those figures, not an EIA statement",
+     "strength": "primary",
+     "sources": [
+      "ir14a_eia_steo"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ir14a_aje_rubio",
+     "url": "https://www.aljazeera.com/news/2026/3/2/rubio-suggests-timing-of-us-strikes-on-iran-was-influenced-by-israeli-plans",
+     "label": "Al Jazeera, 'Rubio suggests timing of US strikes on Iran was influenced by Israeli plans', 2 March 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir14a_sn_forced",
+     "url": "https://virginiamercury.com/2026/03/03/repub/trump-i-might-have-forced-israels-hand-in-launching-iran-war/",
+     "label": "States Newsroom (Virginia Mercury), 'Trump: I might have forced Israel's hand', 3 March 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir14a_rferl_tbi",
+     "url": "https://rferl.org/a/u-s-military-raises-injury-toll-in-iran-missile-attack-in-iraq/30448623.html",
+     "label": "RFE/RL, 'U.S. Military Raises Injury Toll In Iran Missile Attack In Iraq', 21-22 February 2020"
+    },
+    {
+     "key": "ir14a_eia_steo",
+     "url": "https://www.eia.gov/outlooks/steo/report",
+     "label": "US EIA, Short-Term Energy Outlook, 6 October 2026 (audit re-fetch)"
+    }
+   ]
   }
  ]
 }

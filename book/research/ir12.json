@@ -319,6 +319,75 @@
      "label": "Al Jazeera, 'Khamenei's Death to America aimed at US leaders, not people', 8 February 2019"
     }
    ]
+  },
+  {
+   "id": "ir12_audit",
+   "stage": "ir12",
+   "topic": "Audit re-verification of high-risk Part Twelve claims (October 2026)",
+   "claims": [
+    {
+     "text": "IPS: the 2003 proposal was drafted by Iran's ambassador in Paris, Sadeq Kharrazi, in consultation with Guldimann; per Kharrazi's account the leaders agreed '85%-90%', the president and foreign minister raised no objection, while Khamenei had 'some reservations as for some points'",
+     "strength": "reported",
+     "sources": [
+      "ir12a_ips_bargain"
+     ]
+    },
+    {
+     "text": "UN panel did not name Iran and was not tasked with attribution; Guterres said the UN was 'unable to independently corroborate' that the missiles and drones were of Iranian origin; Iran denied involvement",
+     "strength": "reported",
+     "sources": [
+      "ir12a_aj_abqaiq"
+     ]
+    },
+    {
+     "text": "US count of the 8 Jan 2020 attack: 15 missiles at two bases, 10 at Al Asad; 109 TBI as of 10 Feb 2020 (raised to 110 on 21 Feb per RFE/RL)",
+     "strength": "reported",
+     "sources": [
+      "ir12a_fn_tbi"
+     ]
+    },
+    {
+     "text": "Araghchi told state TV the Geneva talks 'made very good progress and entered into the elements of an agreement very seriously'; next round 'perhaps less than a week'; technical talks in Vienna from Monday",
+     "strength": "reported",
+     "sources": [
+      "ir12a_euronews_feb26"
+     ]
+    },
+    {
+     "text": "Rubin: Iranian U.N. Ambassador Mohammad Javad Zarif denied the document was Iranian 'in one of his emails to Trita Parsi'; Armitage 'concluded the document was perhaps more the product of Guldimann'",
+     "strength": "reported",
+     "sources": [
+      "ir12a_nr_rubin"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ir12a_ips_bargain",
+     "url": "https://www.ipsnews.net/?p=22832",
+     "label": "Gareth Porter, IPS, 'Rove Said to Have Received Iranian Proposal in 2003', February 2007 (audit re-fetch)"
+    },
+    {
+     "key": "ir12a_aj_abqaiq",
+     "url": "https://www.aljazeera.com/news/2020/1/9/un-monitors-say-houthis-not-behind-saudi-aramco-attacks-report",
+     "label": "Al Jazeera / Reuters, 'UN monitors say Houthis not behind Saudi Aramco attacks', 9 January 2020 (audit re-fetch)"
+    },
+    {
+     "key": "ir12a_fn_tbi",
+     "url": "https://www.forcesnews.com/news/us-confirms-109-brain-injury-cases-after-military-base-attack",
+     "label": "Forces News, 'US confirms 109 brain injury cases after military base attack', 11 February 2020"
+    },
+    {
+     "key": "ir12a_euronews_feb26",
+     "url": "https://euronews.com/2026/02/27/iran-says-good-progress-made-as-latest-talks-with-us-wrap-up",
+     "label": "Euronews, 'Iran says good progress made as latest talks with US wrap up', 27 February 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir12a_nr_rubin",
+     "url": "https://www.nationalreview.com/corner/about-2003-iran-grand-bargain-michael-rubin/amp/",
+     "label": "Michael Rubin, National Review (The Corner), 'About That 2003 Iran Grand Bargain' (audit re-fetch)"
+    }
+   ]
   }
  ]
 }

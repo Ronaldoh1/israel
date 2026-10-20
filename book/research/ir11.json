@@ -493,6 +493,106 @@
      "label": "Washington Post via Philadelphia Inquirer, Pentagon raises official Iran war troop death toll to 21, 11 Oct 2026"
     }
    ]
+  },
+  {
+   "id": "ir11_audit",
+   "stage": "ir11",
+   "topic": "Audit re-verification of high-risk Part Eleven claims (October 2026)",
+   "claims": [
+    {
+     "text": "28 Feb 2026: Magen David Adom said a woman was killed and at least 21 injured in the Tel Aviv area; AFP heard blasts in Dubai, Doha, Manama and Riyadh; the EU called developments 'perilous'; Iran's UN envoy accused the US and Israel of a possible 'war crime' by attacking civilians; Iran's judiciary confirmed Pakpour and Shamkhani killed; Iranian media reported Khamenei's daughter, son-in-law and granddaughter killed",
+     "strength": "reported",
+     "sources": [
+      "ir11a_almon_feb28"
+     ]
+    },
+    {
+     "text": "Reuters: intelligence indicated Khamenei and key lieutenants would meet at his compound in Tehran, meeting moved up to Saturday morning; reporting 'does not suggest that Netanyahu forced Trump to go to war'; WH spokeswoman Anna Kelly did not address the call",
+     "strength": "reported",
+     "sources": [
+      "ir11a_reu_call"
+     ]
+    },
+    {
+     "text": "Shamkhani wrote on X before 26 Feb 2026 that Araghchi had 'sufficient support and authority' to reach a final agreement",
+     "strength": "reported",
+     "sources": [
+      "ir11a_fox_shamkhani"
+     ]
+    },
+    {
+     "text": "Minab: as of 13 July 2026 the Pentagon said the investigation was ongoing, no findings released; Reuters reported 5 March that an initial internal investigation found US forces likely responsible, with targeters apparently using out-of-date intelligence; Adm. Cooper testified in May the school sat on an active Iranian cruise missile base; Trump 24 June: 'I don't think it was us'; Iranian officials say more than 175 children and teachers killed; more than two dozen Democratic senators led by Gillibrand demanded findings",
+     "strength": "reported",
+     "sources": [
+      "ir11a_almon_minab"
+     ]
+    },
+    {
+     "text": "7 Jul 2026 three tankers hit near Oman's coast, CENTCOM blamed Iran; Treasury reimposed oil sanctions; 8 Jul CENTCOM hit over 80 targets incl. more than 60 IRGC small boats; IRGC said it hit US targets in Bahrain and Kuwait; Trump said MoU over at NATO summit in Ankara; Ghalibaf listed 'Violating Iranian adjustments in the Strait' among US violations",
+     "strength": "reported",
+     "sources": [
+      "ir11a_aj_jul8"
+     ]
+    },
+    {
+     "text": "Trump announced the blockade on Sunday 12 April 2026; effective 13 April 10:00 ET; CENTCOM narrowed it to vessels to and from Iran; 17 vessels crossed on Saturday 11 April (Windward) vs ~130 a day pre-war",
+     "strength": "reported",
+     "sources": [
+      "ir11a_aj_blockade"
+     ]
+    },
+    {
+     "text": "UNSCR 2817: 13-0 with Russia and China abstaining; Bahrain for GCC with Jordan; Waltz: 'This is exactly what the United Nations should be about'; Russian draft 4 in favour (Russia, China, Pakistan, Somalia), US and Latvia against, 9 abstentions",
+     "strength": "reported",
+     "sources": [
+      "ir11a_week_2817"
+     ]
+    },
+    {
+     "text": "Al Jazeera 8 Jul 2026: 'Local television reported that the ships had ignored warnings to change direction from Iranian forces'; Iran's 'safe route' map marked part of Omani territorial waters as a 'restricted zone'",
+     "strength": "reported",
+     "sources": [
+      "ir11a_aj_jul8"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ir11a_almon_feb28",
+     "url": "https://www.al-monitor.com/originals/2026/02/latest-developments-iran-us-and-israeli-strikes-death-khamenei",
+     "label": "Al-Monitor (AFP), 'Latest developments: Iran, US and Israeli strikes, death of Khamenei', 28 February 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir11a_reu_call",
+     "url": "https://www.thestar.com.my/news/world/2026/03/24/trump-approved-iran-operation-after-netanyahu-argued-for-joint-killing-of-khamenei-say-sources",
+     "label": "Reuters (via The Star), 'Trump approved Iran operation after Netanyahu argued for joint killing of Khamenei, say sources', 24 March 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir11a_fox_shamkhani",
+     "url": "https://www.foxnews.com/world/us-iran-nuclear-talks-wrap-geneva-high-stakes-vienna-round-looms.print",
+     "label": "Fox News, 'US-Iran nuclear talks wrap in Geneva as high-stakes Vienna round looms', 26 February 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir11a_almon_minab",
+     "url": "https://www.al-monitor.com/originals/2026/07/lawmakers-demand-pentagon-release-findings-probe-iran-school-strike",
+     "label": "Reuters via Al-Monitor, 'Lawmakers demand Pentagon release findings from probe of Iran school strike', 13 July 2026"
+    },
+    {
+     "key": "ir11a_aj_jul8",
+     "url": "https://www.aljazeera.com/amp/news/2026/7/8/why-have-us-iran-strikes-resumed-and-what-does-it-mean-for-peace-talks",
+     "label": "Al Jazeera, 'Why have US-Iran strikes resumed and what does it mean for peace talks?', 8 July 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir11a_aj_blockade",
+     "url": "https://www.aljazeera.com/economy/2026/4/13/oil-prices-surge-past-103-a-barrel-after-us-announces-blockade-of-iran",
+     "label": "Al Jazeera, 'Oil prices surge past $103 a barrel after US announces blockade of Iran', 13 April 2026 (audit re-fetch)"
+    },
+    {
+     "key": "ir11a_week_2817",
+     "url": "https://www.theweek.in/news/middle-east/2026/03/12/amid-widening-conflict-un-security-council-orders-iran-to-stop-attacks-on-gulf-states-immediately.amp.html",
+     "label": "The Week (India), UN Security Council Resolution 2817, 12 March 2026 (audit re-fetch)"
+    }
+   ]
   }
  ]
 }
