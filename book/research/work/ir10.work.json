@@ -342,5 +342,144 @@
     "label": "Institute for Science and International Security, 'Analysis of IAEA Iran Verification and Monitoring and NPT Safeguards Reports - June 2026', 9 June 2026"
    }
   }
+ },
+ "ir10_audit": {
+  "topic": "Audit re-verification of Part Ten claims",
+  "claims": [
+   {
+    "text": "Audit re-fetch: B-2s left Whiteman 'around midnight on Friday' with 'minimal communications', ~18 hours; 14 MOPs on Fordo and Natanz; more than two dozen Tomahawks from a submarine at Isfahan; more than 125 aircraft; Caine: 'all three sites sustained extremely severe damage and destruction'",
+    "strength": "reported",
+    "sources": [
+     "ir10_bd_hammer"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: 14 Iranian missiles intercepted by Qatari air defences; SNSC statement read by Axios as 'signaling a desire to de-escalate'; Qatar 'strongly condemned the Iranian attack and called for a return to the negotiating table'",
+    "strength": "reported",
+    "sources": [
+     "ir10_ax_udeid"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: five killed in Beersheba and nine in Iran before the ceasefire, per local authorities; Qatar 'played an important role'; article does not mention Oman",
+    "strength": "reported",
+    "sources": [
+     "ir10_en_ceasefire"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: New Arab named six nuclear scientists killed 13 June 2025 (Abbasi-Davani, Tehranchi, Minouchehr, Zolfaghari, Faghihi, Motalibizadeh); Faghihi 'deputy head of the AEOI and head of the Institute of Nuclear Sciences'",
+    "strength": "reported",
+    "sources": [
+     "ir10_na_killed"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Araghchi said Iran could 'consider some limits on its dimensions, amount and level for trust building'",
+    "strength": "reported",
+    "sources": [
+     "ir10_ap_round4"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Ohadi spoke on state television late Monday (7 July 2025); HRANA described as Washington-based",
+    "strength": "reported",
+    "sources": [
+     "ir10_ap_toll"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: after the Cairo deal Iran let the IAEA inspect undamaged facilities incl. Bushehr and the Tehran Research Reactor; damaged sites closed; Grossi: stockpile could allow as many as 10 bombs, which did not mean Iran had one",
+    "strength": "reported",
+    "sources": [
+     "ir10_ap_nov25"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: 440.9 kg as of 13 June 2025 is an IAEA estimate (earlier figures verified); IAEA reported regular vehicular activity around the Isfahan tunnel complex entrance in February 2026 and asked for access; 'no identifiable route' is ISIS's own assessment",
+    "strength": "reported",
+    "sources": [
+     "ir10_isis_jun26"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Parnell did not explain how the two-year assessment was reached",
+    "strength": "reported",
+    "sources": [
+     "ir10_ss_parnell"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Netanyahu on X: Iran's 'terrorist tyrants' fired at Soroka; Israel would 'exact the full price from the tyrants in Tehran'",
+    "strength": "reported",
+    "sources": [
+     "ir10_en_soroka"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Al Jazeera reported 2 July 2025, citing state TV, that Pezeshkian had signed the law; State Dept spokesperson Tammy Bruce called it 'unacceptable'",
+    "strength": "reported",
+    "sources": [
+     "ir10_aj_iaealaw"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Majlis vote Wednesday 25 June 2025: 221 in favour, one abstention, none against; required Guardian Council approval",
+    "strength": "reported",
+    "sources": [
+     "ir10_dp_majlis"
+    ]
+   }
+  ],
+  "sources": {
+   "ir10_bd_hammer": {
+    "url": "https://breakingdefense.com/2025/06/operation-midnight-hammer-how-the-us-conducted-surprise-strikes-on-iran/",
+    "label": "Breaking Defense, 'Operation Midnight Hammer: How the US conducted surprise strikes on Iran', 22 June 2025"
+   },
+   "ir10_ax_udeid": {
+    "url": "https://www.axios.com/2025/06/23/iran-retaliation-trump-israel-war",
+    "label": "Axios, 'No casualties reported after Iran missile attack on U.S. base in Qatar', 23 June 2025"
+   },
+   "ir10_en_ceasefire": {
+    "url": "https://www.euronews.com/2025/06/24/trump-announces-complete-and-total-ceasefire-between-israel-and-iran",
+    "label": "Euronews, \"Trump announces 'complete and total' ceasefire between Israel and Iran\", 24 June 2025"
+   },
+   "ir10_na_killed": {
+    "url": "https://www.newarab.com/news/who-are-iranian-military-chiefs-killed-israels-strikes",
+    "label": "The New Arab, 'Who are the Iranian officials, scientists killed in Israel's strikes on Iran?', 13 June 2025"
+   },
+   "ir10_ap_round4": {
+    "url": "https://www.aol.com/iran-us-begin-4th-round-094046088.html",
+    "label": "Jon Gambrell (AP), 'Iran and US conclude a fourth round of negotiations over Tehran's nuclear program in Oman', 11 May 2025 (via AOL)"
+   },
+   "ir10_ap_toll": {
+    "url": "https://www.bostonglobe.com/2025/07/08/world/iran-israel-war-toll/",
+    "label": "AP via The Boston Globe, \"Iran's government says at least 1,060 people were killed in the war with Israel\", 8 July 2025"
+   },
+   "ir10_ap_nov25": {
+    "url": "https://www.news4jax.com/news/world/2025/11/12/un-watchdog-hasnt-been-able-to-verify-irans-stockpile-of-near-weapons-grade-uranium-in-months/",
+    "label": "AP, \"UN watchdog hasn't been able to verify Iran's stockpile of near weapons-grade uranium in months\", 12 November 2025"
+   },
+   "ir10_isis_jun26": {
+    "url": "https://isis-online.org/isis-reports/analysis-of-iaea-iran-verification-and-monitoring-and-npt-safeguards-reports-june-2026",
+    "label": "Institute for Science and International Security, 'Analysis of IAEA Iran Verification and Monitoring and NPT Safeguards Reports - June 2026', 9 June 2026"
+   },
+   "ir10_ss_parnell": {
+    "url": "https://www.stripes.com/theaters/us/2025-07-02/pentagon-iran-nuclear-strikes-18318111.html",
+    "label": "Matthew Adams, Stars and Stripes, 'Pentagon says Iran nuclear program set back up to two years', 2 July 2025"
+   },
+   "ir10_en_soroka": {
+    "url": "https://euronews.com/2025/06/19/iranian-missiles-hit-southern-israels-largest-hospital-injuring-dozens",
+    "label": "Euronews, \"Iranian missiles hit southern Israel's largest hospital\", 19 June 2025"
+   },
+   "ir10_aj_iaealaw": {
+    "url": "https://www.aljazeera.com/news/2025/7/2/iran-president-signs-law-suspending-cooperation-with-iaea",
+    "label": "Al Jazeera, 'Iran president signs law suspending cooperation with IAEA', 2 July 2025"
+   },
+   "ir10_dp_majlis": {
+    "url": "https://thedefensepost.com/2025/06/25/iran-suspending-un-nuclear-watchdog/amp/",
+    "label": "AFP via The Defense Post, 'Iran parliament votes to suspend cooperation with UN nuclear watchdog', 25 June 2025"
+   }
+  }
  }
 }

@@ -360,5 +360,45 @@
     "label": "Helene Cooper, New York Times News Service, 'There are now more than 50,000 US troops in the Mideast', 30 March 2026"
    }
   }
+ },
+ "ir13_audit": {
+  "topic": "Audit re-verification of Part Thirteen document and figure claims (October 2026)",
+  "claims": [
+   {
+    "text": "A Clean Break mentions Iran in four sentences: 'engaging Hizballah, Syria, and Iran, as the principal agents of aggression in Lebanon'; Syria 'and Iran might prefer a weak, but barely surviving Saddam'; south Lebanese Shia tied to 'the Shia leadership in Najf, Iraq rather than Iran'; Hashemites could help 'wean the south Lebanese Shia away from Hizballah, Iran, and Syria'",
+    "strength": "primary",
+    "sources": [
+     "ir13a_km_cleanbreak"
+    ]
+   },
+   {
+    "text": "The monabaker.org copy of Yinon's essay is incomplete (ends with the Arabian peninsula paragraph; lacks Jordan section and notes); in that text Iran appears in two sentences, both on the Iran-Iraq war; translator's note says Shahak's translation was disseminated on 13 June 1982, a week after Israel invaded Lebanon",
+    "strength": "primary",
+    "sources": [
+     "ir13a_mb_yinon"
+    ]
+   },
+   {
+    "text": "SIPRI research assistant Zubaida Karim estimated Iran's off-budget military spending at about 40% of the total",
+    "strength": "reported",
+    "sources": [
+     "ir13a_na_karim"
+    ]
+   }
+  ],
+  "sources": {
+   "ir13a_km_cleanbreak": {
+    "url": "https://www.knutmellenthin.de/artikel/archiv/usa-neocons/dokumentation-a-clean-break-a-new-strategy-for-securing-the-realm-1996.html",
+    "label": "IASPS, 'A Clean Break' (1996), text reproduced by Knut Mellenthin (audit re-fetch)"
+   },
+   "ir13a_mb_yinon": {
+    "url": "https://www.monabaker.org/?p=4211",
+    "label": "Yinon, 'A Strategy for Israel in the Nineteen Eighties', tr. Shahak, partial text at monabaker.org (audit re-fetch)"
+   },
+   "ir13a_na_karim": {
+    "url": "https://www.newarab.com/news/mideast-defence-budgets-plateau-218bn-record-global-spend",
+    "label": "The New Arab, 'Middle East defence budgets plateau at $218bn', 28 April 2026 (audit re-fetch)"
+   }
+  }
  }
 }

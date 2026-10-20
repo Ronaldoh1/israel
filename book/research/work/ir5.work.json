@@ -255,5 +255,56 @@
     "label": "The White House, 'Press Briefing by National Security Advisor Stephen Hadley' on the Iran NIE, 3 December 2007"
    }
   }
+ },
+ "ir5_audit": {
+  "topic": "Audit re-verification of Netanyahu timeline statements",
+  "claims": [
+   {
+    "text": "The Intercept: Feb 2009 cable (WikiLeaks), Netanyahu to a congressional delegation: Iran 'probably one or two years away' from developing weapons capability (the cable is quoted only in this phrase); Dec 2009 cable, to a separate delegation in Jerusalem: 'Iran has the capability now to make one bomb', alternatively 'they could wait and make several bombs in a year or two'; 2012, closed talks reported by Ynet: Iran 'a few months away' from attaining nuclear capabilities",
+    "strength": "reported",
+    "sources": [
+     "ir5a_intercept"
+    ]
+   },
+   {
+    "text": "Al Jazeera (18 June 2025) paraphrases the 2009 cable as Iran 'just one or two years away from nuclear capability' and quotes the 1992 remark as 'Within three to five years, we can assume that Iran will become autonomous...'",
+    "strength": "reported",
+    "sources": [
+     "ir5a_aje_gallery"
+    ]
+   },
+   {
+    "text": "AP: Netanyahu made the 'Had we not acted in Operation Rising Lion and then in Operation Roaring Lion' remark at the JNS International Policy Summit on Sunday 21 June 2026; AP: no public evidence of an active Iranian weapons programme since 2003; Iranian diplomats cite a fatwa by Ali Khamenei against nuclear weapons, while other Iranian officials have suggested seeking them if Iran's existence is threatened",
+    "strength": "reported",
+    "sources": [
+     "ir5a_ap_jns"
+    ]
+   },
+   {
+    "text": "Washington Times: Obama reviewed the text of Netanyahu's 3 March 2015 speech afterwards and found it contained nothing new (reporter's summary); Obama: 'I'm not focused on the theater of it'",
+    "strength": "reported",
+    "sources": [
+     "ir5a_wt_obama"
+    ]
+   }
+  ],
+  "sources": {
+   "ir5a_intercept": {
+    "url": "https://theintercept.com/2015/03/02/brief-history-netanyahu-crying-wolf-iranian-nuclear-bomb",
+    "label": "Murtaza Hussain, 'Benjamin Netanyahu's Long History of Crying Wolf About Iran's Nuclear Weapons', The Intercept, 2 March 2015 (audit re-fetch 19 October 2026)"
+   },
+   "ir5a_aje_gallery": {
+    "url": "https://www.aljazeera.com/gallery/2025/6/18/the-history-of-netanyahus-rhetoric-on-irans-nuclear-ambitions",
+    "label": "Al Jazeera English, 'The history of Netanyahu's rhetoric on Iran's nuclear ambitions', 18 June 2025 (audit re-fetch)"
+   },
+   "ir5a_ap_jns": {
+    "url": "https://english.ahram.org.eg/News/571373.aspx",
+    "label": "AP via Ahram Online, 'Netanyahu's claims about Iran's nuclear program run counter to public evidence', 22 June 2026 (audit re-fetch)"
+   },
+   "ir5a_wt_obama": {
+    "url": "https://www.washingtontimes.com/news/2015/mar/3/netanyahu-us-israeli-fates-tied-fight-against-iran/",
+    "label": "Stephen Dinan, The Washington Times, 3 March 2015 (audit re-fetch)"
+   }
+  }
  }
 }

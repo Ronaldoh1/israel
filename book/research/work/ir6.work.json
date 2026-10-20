@@ -381,5 +381,67 @@
     "label": "ABC News via ABC7, 'Gabbard questioned on whether Iran posed \"imminent nuclear threat\"', 18 March 2026"
    }
   }
+ },
+ "ir6_audit": {
+  "topic": "Audit re-verification of other Israeli officials' statements",
+  "claims": [
+   {
+    "text": "WikiLeaks cables (per CSM/AFP): in June 2009 Barak gave 'a window between 6 and 18 months from now in which stopping Iran from acquiring nuclear weapons might still be viable'; the Mossad estimated 'that by 2010-2011, Iran will have the technological capability to build a nuclear weapon'",
+    "strength": "reported",
+    "sources": [
+     "ir6a_csm_barak"
+    ]
+   },
+   {
+    "text": "Dagan on 60 Minutes (March 2012): 'If I prefer that someone will do it, I always prefer that Americans will do it'; cited Obama that 'the military option is on the table'",
+    "strength": "reported",
+    "sources": [
+     "ir6a_cbs_dagan"
+    ]
+   },
+   {
+    "text": "Pardo (Uvda, 31 May 2018) said he checked with legal advisers so as not to have 'carried out an illegal operation'; the AP report does not say he refused the order or threatened to resign",
+    "strength": "reported",
+    "sources": [
+     "ir6a_bg_pardo"
+    ]
+   },
+   {
+    "text": "Gantz's 4 August 2021 '10 weeks' estimate was stated unconditionally, at a Foreign Ministry briefing for UNSC ambassadors in Jerusalem",
+    "strength": "reported",
+    "sources": [
+     "ir6a_toi_gantz"
+    ]
+   },
+   {
+    "text": "After Gantz's April 2012 Haaretz interview, an aide said his words were 'taken out of context' and 'They both view Iran in the same way'",
+    "strength": "reported",
+    "sources": [
+     "ir6a_csm_gantz"
+    ]
+   }
+  ],
+  "sources": {
+   "ir6a_csm_barak": {
+    "url": "https://www.csmonitor.com/World/terrorism-security/2010/1230/Iran-nuclear-program-delayed-says-Israeli-minister",
+    "label": "The Christian Science Monitor (AFP), 'Iran nuclear program delayed, says Israeli minister', 30 December 2010 (audit re-fetch)"
+   },
+   "ir6a_cbs_dagan": {
+    "url": "https://cbsnews.com/news/ex-mossad-chief-iran-rational-dont-attack-now",
+    "label": "CBS News, 'Ex-Mossad chief: Iran rational, don't attack now', 9 March 2012 (audit re-fetch)"
+   },
+   "ir6a_bg_pardo": {
+    "url": "https://www.bostonglobe.com/news/world/2018/05/31/israeli-spy-chief-netanyahu-planned-iran-strike/dFpD5aN45iXiCpK4cfgFAK/story.html",
+    "label": "AP via The Boston Globe, 'Ex-Israeli spy chief: Netanyahu planned Iran strike in 2011', 31 May 2018 (audit re-fetch)"
+   },
+   "ir6a_toi_gantz": {
+    "url": "https://www.timesofisrael.com/gantz-iran-10-weeks-away-from-amassing-enough-material-for-nuke/",
+    "label": "Times of Israel, 'Gantz: Iran 10 weeks away from amassing enough weapons-grade material for nuke', 4 August 2021 (audit re-fetch)"
+   },
+   "ir6a_csm_gantz": {
+    "url": "https://www.csmonitor.com/World/terrorism-security/2012/0427/Israeli-leadership-denies-divisions-on-Iran-after-army-chief-made-a-stir",
+    "label": "The Christian Science Monitor, 27 April 2012 (audit re-fetch)"
+   }
+  }
  }
 }
