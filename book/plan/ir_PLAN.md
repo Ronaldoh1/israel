@@ -38,4 +38,12 @@
 - Currency: anything ongoing phrased "as of October 2026".
 
 ## Three-source check log
-(to be filled from scratchpad `ir_leads.md`)
+Checked 19 Oct 2026. Leads file: scratchpad `ir_leads.md` (140 leads; a 30-row prediction table; 31 contradictions; 24 errors not to carry over; gaps).
+
+| Source | What was checked | Notes |
+|---|---|---|
+| Simulation | ch16 (21 scenes) in full, ch58 (14), cross-library hits | Errors not to carry: Shah "joined the 1973 embargo" (Iran kept supplying Israel); Vietnam as Netanyahu's "template" (the sim's own deep dive says he never said so); 2026 figures mostly on Wikipedia; 15 July 2026 vote misreported |
+| Sophia | Older Iran module (extra scenes incl. predictions), gas-price module | Stale: "Iran left the NPT in Jan 2026", "three US troops died in Jordan 28 Feb", memorandum "8 June" (it was 17 June) |
+| israelbooks | Book 7 chs 3–7, 18–20; Books 0, 2, 4, 9 | Errors: "Aryeh" Ghahremani (Arvin); DIA assessment misstated; post-Khamenei succession and "longest-serving" claim false; Book 2's 1948 recognition date vs the sim's 1950 |
+
+Findings that change the plan: no source shows Netanyahu warning about Iran before 1992 (his US years are covered for what he did say, on terrorism); no source supports "over 20,000" Iranian Jews; Clean Break's Iran content is overstated in earlier material.
