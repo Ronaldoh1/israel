@@ -139,13 +139,16 @@ def leadership_money(people, dl, cycles, info):
         R = rows[p.id]
         wcsv(os.path.join(p.folder, 'money_into_leadership_pac_and_jfc.csv'), ['cycle', 'date', 'amount', 'into_committee', 'committee_role', 'what',
              'from_committee_id', 'from', 'from_kind', 'connected_org', 'foreign_policy_country', 'fara_registrant', 'memo', 'amended', 'sub_id', 'filing'], R)
-        real = [r for r in R if r[12] != 'X' and r[4] == 'leadership PAC']
+        # only gifts the member's committees reported RECEIVING; the same oth file also lists what those committees gave
+        # to others (24K, 24Z...) and transfers between them, which are not money coming in
+        IN = ('Contribution received from a committee', 'In-kind contribution received', 'Contribution from an unregistered committee')
+        real = [r for r in R if r[12] != 'X' and r[4] == 'leadership PAC' and r[5] in IN]
         k = lambda kind: round(sum(r[2] for r in real if r[8] == kind), 2)
         out[p.id] = {'leadership_pacs': ' '.join(sorted(p.lead)), 'joint_fundraisers': ' '.join(sorted(p.jfc)),
                      'into_leadership_pac_from_committees': round(sum(r[2] for r in real if r[6]), 2), 'into_leadership_pac_corporate': k('Corporate PAC'),
                      'into_leadership_pac_trade': k('Trade association PAC'), 'into_leadership_pac_lobbyist_pacs': k('Lobbyist/registrant PAC'),
                      'into_leadership_pac_labor': k('Labor PAC'), 'into_leadership_pac_flagged_foreign_policy': round(sum(r[2] for r in real if r[10]), 2),
-                     'into_joint_fundraisers_from_committees': round(sum(r[2] for r in R if r[12] != 'X' and r[4] == 'joint fundraiser' and r[6]), 2)}
+                     'into_joint_fundraisers_from_committees': round(sum(r[2] for r in R if r[12] != 'X' and r[4] == 'joint fundraiser' and r[6] and r[5] in IN), 2)}
     return out
 
 # ---------------------------------------------------------------- 2. outside spending by non-PAC groups
@@ -303,9 +306,17 @@ def lobbyists(people, dl):
         if items:
             wcsv(os.path.join(p.folder, 'lobbyist_contributions_ld203.csv'), ['filing_year', 'date', 'amount', 'type', 'contributor', 'registrant_firm', 'lobbyist',
                  'payee', 'honoree', 'filing'], items)
-            t = lambda w: round(sum(r[2] for r in items if w in r[3].lower()), 2)
+            # the same contribution is repeated in each amended report, and the honoree search also matches namesakes:
+            # count each (date, amount, contributor, payee, type) once, and only payments whose payee names the person
+            sur = (p.l[-1] if p.l else '').upper()
+            seen = {}
+            for r in items:
+                if r[3].lower().startswith('feca') and sur and sur not in (r[7] or '').upper(): continue
+                seen[(r[1], r[2], r[4], r[7], r[3])] = r
+            items_c = list(seen.values())
+            t = lambda w: round(sum(r[2] for r in items_c if w in r[3].lower()), 2)
             out[p.id] = {'lobbyist_feca_contributions': t('feca'), 'lobbyist_honorary_payments': t('honorary'), 'lobbyist_meeting_expenses': t('meeting'),
-                         'lobbyist_all_reported_payments': round(sum(r[2] for r in items), 2)}
+                         'lobbyist_all_reported_payments': round(sum(r[2] for r in items_c), 2)}
         if i % 25 == 0: log(f'  {i} of {len(people)}')
     return out
 

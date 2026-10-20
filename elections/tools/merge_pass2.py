@@ -6,8 +6,8 @@ Usage: python3 merge_pass2.py <members-data dir> <data_states.json in> <data_sta
 
 Adds c.cmoney.lpac = {n_lp, n_jfc, lp, jfc, kinds:[[label, amount]], fp:[[committee, country, amount]], top:[[committee, kind, amount]]}
 for candidates that already carry c.cmoney (matched by merge_members.py).
-Rules: only receipts reported by the member's leadership PAC and joint fundraisers count (the giving committees' own
-reports of the same gifts, and transfers from affiliated committees, are left out to avoid counting money twice); memo entries are dropped; an amended row ('A') that repeats an original row (same date, amount, giver and
+Rules: only receipts reported by the member's leadership PAC and joint fundraisers count (the file also lists what those
+committees gave to others, and transfers between them; those are not money coming in); memo entries are dropped; an amended row ('A') that repeats an original row (same date, amount, giver and
 recipient committee) is dropped as a duplicate. Lobbyists' LD-203 reports are NOT merged here: the pull is incomplete
 and the raw reports repeat each contribution across amendments and match namesakes, so they need cleaning first."""
 import csv, json, os, sys, collections
@@ -31,8 +31,8 @@ for mid, m in summ.items():
     if not os.path.exists(f): continue
     cid = by_mid.get(mid)
     if not cid: stats['no matching candidate'] += 1; continue
-    # receipts as the member's committees reported them; the givers' own reports of the same gifts (24K, 24Z...) and
-    # transfers from affiliated committees would count the same money twice
+    # receipts the member's committees reported; the same file also lists what those committees gave to others
+    # (24K, 24Z..., where the 'from' column holds the recipient) and transfers between them
     RECEIPTS = ('Contribution received from a committee', 'In-kind contribution received', 'Contribution from an unregistered committee')
     rows = [r for r in csv.DictReader(open(f, encoding='utf-8')) if r.get('memo') != 'X' and r.get('what') in RECEIPTS]
     orig = {(r['date'], r['amount'], r['from_committee_id'], r['into_committee']) for r in rows if r.get('amended') != 'A'}
