@@ -2,11 +2,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
 <style>
 /* ===== Book mode: The Israel Architecture, read as a book ===== */
-#bookView{--paper:#F3EDE1;--ink:#26221C;--muted:#6E6457;--rule:#D8CDB9;--accent:#8A2D1F;--fig:#1B2A4A;--figline:#B8862B;--card:#FBF8F1;--fs:19px;
+#bookView{color-scheme:light;--paper:#FBF9F4;--ink:#1C1B19;--muted:#5F5A52;--rule:#E3DED3;--accent:#8A2D1F;--fig:#1B2A4A;--figline:#B8862B;--card:#FFFFFF;--fs:19px;
   position:fixed;inset:0;z-index:2147482000;background:var(--paper);color:var(--ink);display:none;font-family:'Literata',Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}
 #bookView.on{display:block}
-#bookView[data-theme="sepia"]{--paper:#E9DABF;--ink:#33281A;--muted:#6E5A3E;--rule:#CDB893;--accent:#86321D;--card:#F2E6CF}
-#bookView[data-theme="night"]{--paper:#141519;--ink:#DDD6C8;--muted:#9B9384;--rule:#34322D;--accent:#E3A375;--fig:#A9BCE0;--figline:#C9A15A;--card:#1C1D22}
+#bookView[data-theme="sepia"]{--paper:#F5EBD7;--ink:#4A3524;--muted:#7A644C;--rule:#E2D2B2;--accent:#8A3A1E;--card:#FAF3E4}
+#bookView[data-theme="night"]{color-scheme:dark;--paper:#121212;--ink:#E6E2DA;--muted:#A39E94;--rule:#2F2F2F;--accent:#E3A375;--fig:#A9BCE0;--figline:#C9A15A;--card:#1C1C1C}
 body.book-open{overflow:hidden}
 body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{display:none !important}
 #bookView ::selection{background:rgba(184,134,43,.35)}
@@ -314,14 +314,14 @@ body.book-open #libBanner{display:none}
 .lt-btns button:disabled{visibility:hidden}
 @media (prefers-reduced-motion:reduce){.lt-hole,.lt-card{transition:none}}
 /* ===== Reader v2: paper, pages, chapter bar, front matter, chapter covers, colour-coded figures ===== */
-#bookView{--paper:#F4EBD6;--ink:#2A2318;--muted:#6A5B45;--rule:#DCCAA6;--card:#FAF3E2;
+#bookView{--paper:#FBF9F4;--ink:#1C1B19;--muted:#5F5A52;--rule:#E3DED3;--card:#FFFFFF;
   --c-navy:#1F3A68;--c-teal:#1E6A6A;--c-gold:#9C6A14;--c-green:#2F6B45;--c-red:#8A2D1F;--c-plum:#5E3B73;--c-rust:#B04E1C;--c-slate:#5A6170}
 #bookView[data-theme="sepia"]{--c-gold:#8E5F12}
 #bookView[data-theme="night"]{--c-navy:#9DB8EA;--c-teal:#73C6C3;--c-gold:#E2B562;--c-green:#93CF9C;--c-red:#EE9A86;--c-plum:#CDABE6;--c-rust:#F0A06A;--c-slate:#B0B6C2}
 /* paper: a faint fibre texture and a soft edge, like a printed page */
-#bookView:not([data-theme="night"]) .bk-scroll,#bookView:not([data-theme="night"]) .bk-lib{background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .36 0 0 0 0 .27 0 0 0 0 .14 0 0 0 .075 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#bookView .bk-scroll,#bookView .bk-lib{background-color:var(--paper);background-image:none}
 .bk-edges{position:absolute;inset:0;z-index:2;pointer-events:none;display:none}
-#bookView:not(.lib) .bk-edges{display:block;background:radial-gradient(ellipse at center,transparent 62%,rgba(90,60,20,.07) 100%)}
+#bookView:not(.lib) .bk-edges{display:block;background:radial-gradient(ellipse at center,transparent 70%,rgba(90,60,20,.035) 100%)}
 #bookView[data-theme="night"]:not(.lib) .bk-edges{background:radial-gradient(ellipse at center,transparent 62%,rgba(0,0,0,.25) 100%)}
 #bookView.paged:not(.lib) .bk-edges{background:linear-gradient(90deg,rgba(80,55,20,.10),transparent 16px) left/40px 100% no-repeat,repeating-linear-gradient(90deg,transparent 0 2px,rgba(80,55,20,.10) 2px 3px) right/7px 100% no-repeat,radial-gradient(ellipse at center,transparent 62%,rgba(90,60,20,.07) 100%)}
 #bookView.paged.spread:not(.lib) .bk-edges::after{content:'';position:absolute;top:0;bottom:0;left:50%;width:60px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(80,55,20,.10) 45%,rgba(80,55,20,.16) 50%,rgba(80,55,20,.10) 55%,transparent)}
@@ -887,7 +887,7 @@ body.book-open #libBanner{display:none}
       (prep.length ? '<section class="lb-sec"><h2>Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
         (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
       (!ready.length && !prep.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
-    $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (BOOKS.length + ' volumes · ' + BOOKS.filter(function(b){ return b.status === 'ready'; }).length + ' ready to read');
+    $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
   function showLibrary(){
     view.classList.add('lib'); hideAll();

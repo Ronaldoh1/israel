@@ -185,6 +185,7 @@ if divine:
 # ---- Thematic volumes that take a simulation chapter's place on the shelf (volumes.json: 'slot': '<chapter id>') ----
 SLOTTED = {}
 ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) and v.get('slot') for c in v.get('absorbs', [])}   # chapters merged into a thematic volume leave the shelf
+ABSORBED |= {c for lst in (VOLS.get('_merge') or {}).values() for c in lst}   # unwritten chapters merged into another unwritten volume ('_merge': {host: [merged...]})
 AFTER = {}   # volumes.json 'after': '<chapter id>' places a volume right after that chapter (or the volume slotted into it), without replacing anything
 for key, v in VOLS.items():
     if not isinstance(v, dict) or not (v.get('slot') or v.get('after')): continue

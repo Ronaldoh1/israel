@@ -24,12 +24,12 @@ HEAD = ('<!--LIBBOOT-START--><script>(function(){try{'
         "var v=JSON.parse(localStorage.getItem('ots_view')||'null');"
         "if(v!=='library'||(location.hash||'').replace('#','')||window.parent!==window)return;"
         "var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};"
-        "var bg={sepia:'#E9DABF',night:'#141519'}[p.theme]||'#F3EDE1';"
+        "var bg={sepia:'#F5EBD7',night:'#121212'}[p.theme]||'#FBF9F4';"
         "var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);"
         "setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);"   # never leave a reader stuck behind the cover
         '}catch(e){}})();</script>'
-        '<style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#F3EDE1) !important}'
-        "html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#F3EDE1)}</style>"
+        '<style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#FBF9F4) !important}'
+        "html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#FBF9F4)}</style>"
         '<!--LIBBOOT-END-->')
 m = re.search(r'<head[^>]*>', s)
 s = s[:m.end()] + HEAD + s[m.end():]
