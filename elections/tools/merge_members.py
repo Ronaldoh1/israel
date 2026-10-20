@@ -157,6 +157,7 @@ for m in summary:
     if dropped: CM['note'] = 'Committees of a namesake on the ballot (' + ', '.join(sorted(dropped)) + ') are not counted.'
     for k in ('cyc', 'tot', 'kinds', 'top', 'isr_ie', 'isr_opp_ie', 'since'): CM.pop(k, None)   # the records section already shows these
     if CM.get('out'): CM['out'] = {'for': CM['out']['for'], 'against': CM['out']['against']}
+    CM['mid'] = m['id']
     c['cmoney'] = CM; stats['merged'] += 1
     if isr: stats['with Israel-policy PAC money'] += 1
     if dropped: stats['namesake ids dropped'] += 1
