@@ -433,6 +433,51 @@
      "label": "Iran International, 'Biden commentary attacks Trump's Iran policy, promises change course', 14 September 2020 (on Biden's CNN op-ed of 13 September 2020)"
     }
    ]
+  },
+  {
+   "id": "ir7_audit",
+   "stage": "ir7",
+   "topic": "Audit re-verification of JCPOA terms, vote, lobbying and snapback",
+   "claims": [
+    {
+     "text": "Clifton: AIPAC 'committed to spending $20-40 million in television commercials' (figure linked to Vox, 4 Sept 2015, not to filings); at least $14.5m in TV ads per a LobeLog review of FCC filings at the end of September 2015; AIPAC did not respond to a request for comment",
+     "strength": "reported",
+     "sources": [
+      "ir7a_972"
+     ]
+    },
+    {
+     "text": "JPOA sanctions relief: US and EU suspended sanctions on petrochemicals and gold/precious metals; the US alone on autos; US allowed spare parts and repair services for civilian aircraft; Kerry at the 24 Nov 2014 extension said Iran had 'complied with all of its obligations' (ACA paraphrase)",
+     "strength": "primary",
+     "sources": [
+      "ir7a_aca_jpoa"
+     ]
+    },
+    {
+     "text": "CRS: E3 invoked snapback in an 28 August 2025 letter; UN sanctions reimposed 27 September 2025; Russia-China resolution of 26 September 2025 not adopted; China, Iran, Russia letter of 18 October 2025 called the step invalid",
+     "strength": "primary",
+     "sources": [
+      "ir7a_crs"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ir7a_972",
+     "url": "https://www.972mag.com/did-aipac-make-a-profit-off-its-fight-against-the-iran-deal/",
+     "label": "Eli Clifton, +972 Magazine (from LobeLog), 28 September 2016 (audit re-fetch)"
+    },
+    {
+     "key": "ir7a_aca_jpoa",
+     "url": "https://www.armscontrol.org/2015-08/section-2-november-2013-interim-agreement",
+     "label": "Arms Control Association, Section 2: The November 2013 Interim Agreement, August 2015 (audit re-fetch)"
+    },
+    {
+     "key": "ir7a_crs",
+     "url": "https://www.everycrsreport.com/files/2026-07-07_IF11583_3aabdf663cd42bb4afad2af8f00f52addd6b13d5.html",
+     "label": "CRS IF11583, updated 7 July 2026 (audit re-fetch)"
+    }
+   ]
   }
  ]
 }
