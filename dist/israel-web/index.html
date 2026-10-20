@@ -6971,6 +6971,7 @@ body.book-open #libBanner{display:none}
     var last = ls('ots_lib_last') || {};
     if(libSort === 'title') list.sort(function(a, b){ return a.title.localeCompare(b.title); });
     else if(libSort === 'era') list.sort(function(a, b){ return eraStart(a) - eraStart(b); });
+    else if(libSort === 'priority') list.sort(function(a, b){ var pa = a.status === 'ready' ? 0 : (a.priority || 99), pb = b.status === 'ready' ? 0 : (b.priority || 99); return pa - pb || a.vol - b.vol; });
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
@@ -6986,7 +6987,7 @@ body.book-open #libBanner{display:none}
     lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-tour="1">How it works</button><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
       '<div class="lb-hd"><div class="s">Observe The System</div><h1>' + esc(LIB.title) + '</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
       '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
-      '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option></select></div>' +
+      '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option><option value="priority">Writing priority</option></select></div>' +
       '<div class="lb-count" id="lbCount" aria-live="polite"></div><div id="lbShelves"></div></div>';
     $('lbSort').value = libSort;
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });

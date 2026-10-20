@@ -129,7 +129,10 @@
     "span": "Three parents, one child"
    }
   ],
-  "parts_total": 6
+  "parts_total": 6,
+  "absorbs": [
+   "ch12"
+  ]
  },
  "money": {
   "slot": "ch54",
@@ -208,7 +211,8 @@
   "absorbs": [
    "ch09",
    "ch45",
-   "ch39"
+   "ch39",
+   "ch31"
   ],
   "title": "Gaza, Documented",
   "subtitle": "Palestine Under the Architecture, 1917–2026",
@@ -553,7 +557,8 @@
    "ch32",
    "ch35",
    "ch33",
-   "ch26"
+   "ch26",
+   "ch13"
   ],
   "title": "The One-Way Mirror",
   "subtitle": "Israel Inside the American State: The Laws, Agencies and Contracts, from the CIA to the Pentagon",
@@ -838,12 +843,118 @@
    }
   ]
  },
- "_merge": {
-  "ch19": [
-   "ch10"
-  ],
-  "ch20": [
-   "ch17"
-  ]
- }
+ "_planned": [
+  {
+   "host": "ch06",
+   "title": "From 1967 to Oslo",
+   "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
+   "merge": [
+    "ch07",
+    "ch08"
+   ],
+   "priority": 7
+  },
+  {
+   "host": "ch57",
+   "title": "Washington",
+   "subtitle": "The Trump and Kushner Families, the Department of War and the State Department",
+   "merge": [
+    "ch58",
+    "ch59"
+   ],
+   "priority": 4
+  },
+  {
+   "host": "ch18",
+   "title": "The Information War",
+   "subtitle": "Media, Platforms, Campuses, the IHRA Definition, Project Esther and the Capability Stack",
+   "merge": [
+    "ch56",
+    "ch28",
+    "ch36",
+    "ch37",
+    "ch44",
+    "ch52"
+   ],
+   "priority": 5
+  },
+  {
+   "host": "ch19",
+   "title": "The Netanyahu Architecture",
+   "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
+   "merge": [
+    "ch10",
+    "ch61",
+    "ch14",
+    "ch41",
+    "ch40"
+   ],
+   "priority": 2
+  },
+  {
+   "host": "ch20",
+   "title": "Aid and Arms",
+   "subtitle": "What America Pays, What It Buys, and What About America",
+   "merge": [
+    "ch17",
+    "ch60"
+   ],
+   "priority": 3
+  },
+  {
+   "host": "ch21",
+   "title": "The Greater Israel Architecture",
+   "subtitle": "The Maps, the Movements and the Fronts: Egypt, Jordan, Syria and Iraq",
+   "merge": [
+    "ch22",
+    "ch25",
+    "ch63",
+    "ch47"
+   ],
+   "priority": 1
+  },
+  {
+   "host": "ch23",
+   "title": "The Wider Region",
+   "subtitle": "The Lay of the Land, the Gulf, the Accords and the Periphery",
+   "merge": [
+    "ch62",
+    "ch27",
+    "ch64",
+    "ch66",
+    "ch67",
+    "ch68",
+    "ch69"
+   ],
+   "priority": 8
+  },
+  {
+   "host": "ch34",
+   "title": "The Epstein Architecture",
+   "subtitle": "The Network, the Files and Power Protects Power",
+   "merge": [
+    "ch50"
+   ],
+   "priority": 6
+  },
+  {
+   "host": "ch53",
+   "title": "The World Reads This Story",
+   "subtitle": "Latin America, Spain, Africa, Europe, the Americas, Asia and Oceania",
+   "merge": [
+    "ch55"
+   ],
+   "priority": 9
+  },
+  {
+   "host": "ch51",
+   "title": "Street Questions",
+   "subtitle": "Viral Claims, the Comment Section and the Ledger of the Machine",
+   "merge": [
+    "ch70",
+    "ch49"
+   ],
+   "priority": 10
+  }
+ ]
 }

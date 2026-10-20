@@ -184,8 +184,9 @@ if divine:
                   'intro': read(os.path.join(ROOT, 'book', 'part1', 'dv_intro.html')), 'chapters': divine, 'first': divine[0]['sections'][0]['s']})
 # ---- Thematic volumes that take a simulation chapter's place on the shelf (volumes.json: 'slot': '<chapter id>') ----
 SLOTTED = {}
-ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) and v.get('slot') for c in v.get('absorbs', [])}   # chapters merged into a thematic volume leave the shelf
-ABSORBED |= {c for lst in (VOLS.get('_merge') or {}).values() for c in lst}   # unwritten chapters merged into another unwritten volume ('_merge': {host: [merged...]})
+ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) for c in v.get('absorbs', [])}   # chapters merged into a written volume leave the shelf
+PLANNED = {p['host']: p for p in VOLS.get('_planned', [])}   # planned (unwritten) volumes that merge several simulation chapters under one title
+ABSORBED |= {c for p in PLANNED.values() for c in p.get('merge', [])}
 AFTER = {}   # volumes.json 'after': '<chapter id>' places a volume right after that chapter (or the volume slotted into it), without replacing anything
 for key, v in VOLS.items():
     if not isinstance(v, dict) or not (v.get('slot') or v.get('after')): continue
@@ -209,8 +210,15 @@ for c in CH:
         for x in AFTER.get(c['id'], []): b = dict(x); b['vol'] = vol; books.append(b); vol += 1
         continue
     t, sub = split_name(c['name'])
-    books.append({'id': c['id'], 'vol': vol, 'status': 'preparing', 'title': t, 'subtitle': sub, 'span': span(c['scenes']), 'count': len(c['scenes']), 'first': c['scenes'][0],
-                  'keywords': ' '.join(SC[x]['t'] for x in c['scenes'] if x in SC)})
+    scs = list(c['scenes'])
+    pl = PLANNED.get(c['id'])
+    if pl:
+        t, sub = pl['title'], pl['subtitle']
+        for m in pl.get('merge', []):
+            mc = next((x for x in CH if x['id'] == m), None)
+            if mc: scs += mc['scenes']
+    books.append({'id': c['id'], 'vol': vol, 'status': 'preparing', 'title': t, 'subtitle': sub, 'span': span(scs), 'count': len(scs), 'first': c['scenes'][0],
+                  'priority': (pl or {}).get('priority'), 'keywords': ' '.join(SC[x]['t'] for x in scs if x in SC)})
     vol += 1
     for x in AFTER.get(c['id'], []): b = dict(x); b['vol'] = vol; books.append(b); vol += 1
 
