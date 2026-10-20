@@ -135,5 +135,230 @@
     "label": "Amos Yadlin, 'The Begin Doctrine: The Lessons of Osirak and Deir ez-Zor', INSS Insight No. 1037, 21 March 2018"
    }
   }
+ },
+ "ir13_aims": {
+  "topic": "Israel's stated aims toward Iran, 2025-2026, incl. regime change",
+  "claims": [
+   {
+    "text": "June 2025: Israel's stated war aims were eliminating Iran's nuclear and ballistic-missile capabilities; Israeli officials told Axios regime change was not among security-cabinet objectives. Netanyahu, Fox News 15 June, suggested the war could lead to a change of government; ABC 16 June on killing Khamenei: 'It's not going to escalate the conflict, it's going to end the conflict'; 16 June to Israeli reporters: 'we could see many changes in Iran.'",
+    "strength": "reported",
+    "sources": [
+     "ir13_axios_regime2025"
+    ]
+   },
+   {
+    "text": "Netanyahu statement, 28 Feb 2026: 'The aim of the operation is to put an end to the threat from the Ayatollah regime in Iran'; 'if we do not act, we will face a nuclear Iran, an Iran with tens of thousands of ballistic missiles'; of 2025 regime change 'I replied that this was not the goal, but it could certainly be the outcome'; now to 'create conditions that will allow the brave Iranian people to cast off the yoke of this murderous regime'; 'You are not our enemies and we are not your enemies'; 'For 47 years, the evil regime in Iran has called for death to Israel, death to America.'",
+    "strength": "primary",
+    "sources": [
+     "ir13_pbs_bibi2026"
+    ]
+   }
+  ],
+  "sources": {
+   "ir13_axios_regime2025": {
+    "url": "https://www.axios.com/2025/06/17/iran-regime-change-israel-war-trump",
+    "label": "Axios, 'Regime change emerges as unstated goal of Israel's war in Iran', 17 June 2025"
+   },
+   "ir13_pbs_bibi2026": {
+    "url": "https://www.pbs.org/newshour/world/read-netanyahus-full-statement-on-iran-attacks",
+    "label": "PBS NewsHour, 'Read Netanyahu's full statement on Iran attacks', 28 February 2026"
+   }
+  }
+ },
+ "ir13_explanations": {
+  "topic": "Analysts' explanations for the Israel-Iran rivalry (arguments)",
+  "claims": [
+   {
+    "text": "Parsi (Treacherous Alliance, 2007) argues the Israel-Iran rivalry is 'neither about ideology nor religion' but geopolitics; after Iraq's defeat in the early 1990s 'Israeli politicians began describing Iran as the primary threat'; Scowcroft is quoted that 'The pro-Israeli community turned strongly against Iran'.",
+    "strength": "reported",
+    "sources": [
+     "ir13_ips_parsi"
+    ]
+   },
+   {
+    "text": "Sadjadpour (2018): opposition to Israel is 'the most enduring pillar of Iranian revolutionary ideology', a 'visceral and seemingly inextinguishable hatred', not driven by national interests; quotes Khamenei: 'The Zionist regime is a true cancer tumor on this region that should be cut off' (2012) and that Israel 'will not be in existence in 25 years'.",
+    "strength": "reported",
+    "sources": [
+     "ir13_ceip_sadjadpour"
+    ]
+   },
+   {
+    "text": "June 2025: the war gave Netanyahu political breathing room after a coalition crisis and failed dissolution push, amid his corruption trial; analyst Nimrod Flaschenberg: 'The idea that Iran is the source of all evil has become embedded across Israeli society'; Dov Waxman called it a 'big gamble'; opposition leader Lapid backed the strikes and Bennett said 'There is no right, no left, no opposition and no coalition'.",
+    "strength": "reported",
+    "sources": [
+     "ir13_aje_breathing"
+    ]
+   },
+   {
+    "text": "As of November 2023, 30 of 193 UN member states did not recognise Israel; in the Middle East these included Iran (which withdrew relations) and Iraq, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, Syria and Yemen (never recognised).",
+    "strength": "reported",
+    "sources": [
+     "ir13_vc_recog"
+    ]
+   },
+   {
+    "text": "SIPRI: Israel supplied 27% of Azerbaijan's major arms imports in 2011-20, rising to 69% in 2016-20; Russia about 60% over 2011-20.",
+    "strength": "primary",
+    "sources": [
+     "ir13_sipri_azer"
+    ]
+   }
+  ],
+  "sources": {
+   "ir13_ips_parsi": {
+    "url": "https://www.ipsnews.net/?p=25178",
+    "label": "Khody Akhavi, IPS, 'BOOKS-MIDEAST: Beneath Superheated Rhetoric, Pragmatism Rules' (review of Trita Parsi, Treacherous Alliance), 8 August 2007"
+   },
+   "ir13_ceip_sadjadpour": {
+    "url": "https://carnegieendowment.org/posts/2018/04/irans-real-enemy-in-syria?lang=en",
+    "label": "Karim Sadjadpour, 'Iran's Real Enemy in Syria', Carnegie Endowment (from The Atlantic), 16 April 2018"
+   },
+   "ir13_aje_breathing": {
+    "url": "https://www.aljazeera.com/news/2025/6/18/iran-war-gives-netanyahu-political-breathing-room-in-israel",
+    "label": "Simon Speakman Cordall, Al Jazeera, 'Iran war gives Netanyahu political breathing room in Israel', 18 June 2025"
+   },
+   "ir13_vc_recog": {
+    "url": "https://visualcapitalist.com/recognition-of-israel-map",
+    "label": "Visual Capitalist, 'Mapped: Which Countries Recognize Israel?', November 2023"
+   },
+   "ir13_sipri_azer": {
+    "url": "https://sipri.org/commentary/topical-backgrounder/2021/arms-transfers-conflict-zones-case-nagorno-karabakh",
+    "label": "Pieter D. Wezeman, Alexandra Kuimova and Jordan Smith, SIPRI, 'Arms transfers to conflict zones: The case of Nagorno-Karabakh', 30 April 2021"
+   }
+  }
+ },
+ "ir13_ledger": {
+  "topic": "Power ledger: economies, budgets, oil",
+  "claims": [
+   {
+    "text": "World Bank (via FRED): Iran GDP current US$ $475.25bn (2024), $362.68bn (2025); GDP per capita $3,924 (2025), implying population about 92 million. Israel GDP per capita $54,217 (2024), $60,337 (2025); with GDP $610.8bn (2025) implies about 10.1 million people.",
+    "strength": "primary",
+    "sources": [
+     "ir13_fred_irgdp",
+     "ir13_fred_irpc",
+     "ir13_fred_ilpc"
+    ]
+   },
+   {
+    "text": "World Bank: Iran's GDP contracted an estimated 2.7% in 2025/26 (year to 20 March 2026).",
+    "strength": "primary",
+    "sources": [
+     "ir13_wb_iran"
+    ]
+   },
+   {
+    "text": "SIPRI: 2025 military expenditure Iran $7.4bn (38th); Israel $48.3bn (11th, 7.8% of GDP); Saudi Arabia $83.2bn; Turkey $30.0bn; US $954bn.",
+    "strength": "primary",
+    "sources": [
+     "ir13_sipri_2025"
+    ]
+   },
+   {
+    "text": "SIPRI via New Arab: Iran's 2025 spending fell 5.6% in real terms, second annual decline, mostly due to 42% inflation; allocations to HESA (aircraft/drones) rose 50% and AIO (ballistic missiles) 44%; budgeted figures 'probably represent only a relatively small proportion of Iran's procurement spending'; Israel down 4.9% but 120% above 2016; Israel received $3.8bn US military aid in 2025; Middle East total $218bn.",
+    "strength": "reported",
+    "sources": [
+     "ir13_na_sipri"
+    ]
+   },
+   {
+    "text": "EIA: about 20 million b/d of oil, about 20% of global petroleum liquids consumption, passed through Hormuz in 2024, plus about one-fifth of global LNG trade; 84% of the crude and 83% of the LNG went to Asia; Saudi and UAE pipelines could offer about 2.6 million b/d of bypass.",
+    "strength": "primary",
+    "sources": [
+     "ir13_eia_hormuz"
+    ]
+   }
+  ],
+  "sources": {
+   "ir13_fred_irgdp": {
+    "url": "https://fred.stlouisfed.org/data/MKTGDPIRA646NWDB.txt",
+    "label": "World Bank WDI via FRED, 'Gross Domestic Product for Islamic Republic of Iran' (MKTGDPIRA646NWDB), updated 7 July 2026"
+   },
+   "ir13_fred_irpc": {
+    "url": "https://fred.stlouisfed.org/series/PCAGDPIRA646NWDB",
+    "label": "World Bank WDI via FRED, 'GDP Per Capita for Islamic Republic of Iran' (PCAGDPIRA646NWDB)"
+   },
+   "ir13_fred_ilpc": {
+    "url": "https://fred.stlouisfed.org/data/PCAGDPILA646NWDB",
+    "label": "World Bank WDI via FRED, 'GDP Per Capita for Israel' (PCAGDPILA646NWDB)"
+   },
+   "ir13_wb_iran": {
+    "url": "https://www.worldbank.org/ir",
+    "label": "World Bank, 'Islamic Republic of Iran' overview"
+   },
+   "ir13_sipri_2025": {
+    "url": "https://www.sipri.org/sites/default/files/Military%20Expenditure%202025.pdf",
+    "label": "SIPRI, 'World Military Expenditure 2025' (data April 2026)"
+   },
+   "ir13_na_sipri": {
+    "url": "https://www.newarab.com/news/mideast-defence-budgets-plateau-218bn-record-global-spend",
+    "label": "Agnese Boffano, The New Arab, 'Middle East defence budgets plateau at $218bn', 28 April 2026"
+   },
+   "ir13_eia_hormuz": {
+    "url": "https://eia.gov/todayinenergy/detail.php?id=65504",
+    "label": "US EIA, 'Amid regional conflict, the Strait of Hormuz remains critical oil chokepoint', 16 June 2025"
+   }
+  }
+ },
+ "ir13_forces": {
+  "topic": "Power ledger: forces, missiles, US presence",
+  "claims": [
+   {
+    "text": "IISS Military Balance 2025 (via NST): Iran about 610,000 active personnel, IRGC about 190,000; about 250 combat-capable aircraft, many predating 1979 incl. F-4, F-5 and a small number of F-14s; pre-June-2025 missile estimates 2,500-3,000 (unattributed).",
+    "strength": "reported",
+    "sources": [
+     "ir13_nst_irmil"
+    ]
+   },
+   {
+    "text": "Alma (Israeli research centre): 13-24 June 2025 Iran launched 525 ballistic missiles at Israel; about 86% intercepted; 50-60 struck the home front; over 1,000 drones, ~99% intercepted; 28 civilians killed, 1,472 injured.",
+    "strength": "reported",
+    "sources": [
+     "ir13_alma_rl"
+    ]
+   },
+   {
+    "text": "FDD (May 2026): IDF estimated about 2,500 missiles able to reach Israel at the start of the 2026 war; Iran launched roughly 2,200-2,400 missiles in four waves 2024-2026; Israeli Air Force official (5 April 2026): just over 1,000 remain; Israel Hayom (3 Apr): about half of launchers intact; NYT (12 May, classified US assessment): Iran retained roughly 70% of prewar missile stockpile (apparently incl. cruise missiles); CENTCOM's Cooper: over 85% of the missile, drone and naval defence industrial base damaged or destroyed, called NYT/WaPo reports 'not accurate'.",
+    "strength": "reported",
+    "sources": [
+     "ir13_fdd_missiles"
+    ]
+   },
+   {
+    "text": "Al Jazeera: about 40,000-50,000 US troops in the Middle East as of mid-2025 at at least 19 sites (CFR), eight permanent; Al Udeid about 10,000; NSA Bahrain about 9,000 (Fifth Fleet).",
+    "strength": "reported",
+    "sources": [
+     "ir13_aje_usbases"
+    ]
+   },
+   {
+    "text": "NYT (30 Mar 2026): more than 50,000 US troops in the region, up from a usual level of around 40,000, per a US military official.",
+    "strength": "reported",
+    "sources": [
+     "ir13_nyt_50k"
+    ]
+   }
+  ],
+  "sources": {
+   "ir13_nst_irmil": {
+    "url": "https://www.nst.com.my/amp/world/world/2026/03/1388623/what-we-know-about-irans-military-strength",
+    "label": "New Straits Times, 'What we know about Iran's military strength', 2 March 2026 (citing IISS Military Balance 2025)"
+   },
+   "ir13_alma_rl": {
+    "url": "https://israel-alma.org/summary-of-iran-israel-war-on-the-israeli-front-operation-rising-lion-june-2025/",
+    "label": "Alma Research and Education Center, 'Summary of Iran-Israel War on the Israeli Front – Operation Rising Lion (June 2025)', 30 June 2025"
+   },
+   "ir13_fdd_missiles": {
+    "url": "https://www.fdd.org/analysis/2026/05/26/evaluating-the-damage-to-irans-ballistic-missile-arsenal/",
+    "label": "Mark Dubowitz and Behnam Ben Taleblu, FDD, 'Evaluating the damage to Iran's ballistic missile arsenal', 26 May 2026"
+   },
+   "ir13_aje_usbases": {
+    "url": "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east",
+    "label": "Al Jazeera, 'Mapping US troops and military bases in the Middle East', 12 June 2025 (updated 28 Feb 2026)"
+   },
+   "ir13_nyt_50k": {
+    "url": "https://www.hawaiitribune-herald.com/?p=359397",
+    "label": "Helene Cooper, New York Times News Service, 'There are now more than 50,000 US troops in the Mideast', 30 March 2026"
+   }
+  }
  }
 }
