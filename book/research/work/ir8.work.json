@@ -270,5 +270,78 @@
     "label": "IranWire, 'Iran's death toll rises to four after Israeli strikes', 26 Oct 2024"
    }
   }
+ },
+ "ir8_audit": {
+  "topic": "Audit re-verification of Part Eight claims (April 2024 figures, Haniyeh, scientists, Fakhrizadeh, Bangkok, Mercer Street)",
+  "claims": [
+   {
+    "text": "AP 13-14 Apr 2024: Israeli military spokesman said launches numbered more than 300: 170 drones, more than 30 cruise missiles and more than 120 ballistic missiles; 99% intercepted; several ballistic missiles reached Israeli territory causing minor damage to an air base",
+    "strength": "reported",
+    "sources": [
+     "ir8a_ap_apr14"
+    ]
+   },
+   {
+    "text": "Hagari 14 Apr 2024: '99% of the threats that were launched were intercepted'; none of the 170 drones and none of the 30 cruise missiles entered Israeli territory, some 25 cruise missiles intercepted by fighter jets outside the borders; missiles caused 'minor damage only' to a base that remained operational",
+    "strength": "primary",
+    "sources": [
+     "ir8a_ynet_hagari"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (MEE): Mordechai wrote 'I don't know who took revenge on the Iranian scientist ... But I am definitely not shedding a tear'; Ahmadinejad blamed the Zionist regime and Western governments for the Shahriari killing",
+    "strength": "reported",
+    "sources": [
+     "ir8_mee_scientists"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (New Arab on NYT): NYT based on interviews with US, Israeli and Iranian officials; preparation late 2019 and early 2020; 'In Mr. Netanyahu's best-case scenario, the assassination would derail any chance of resurrecting the nuclear agreement even if Mr. Biden won'",
+    "strength": "reported",
+    "sources": [
+     "ir8_newarab_fakh"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (ToI on NYT): three Iranian officials called the killing a 'tremendous embarrassment' for the IRGC; five Middle Eastern officials said the bomb was planted roughly two months earlier and detonated from afar; Israel neither confirmed nor denied",
+    "strength": "reported",
+    "sources": [
+     "ir8_toi_haniyeh"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (AFP Bangkok): two other suspects believed to have returned to Iran; Israeli ambassador Simon Roded: sentence 'proves once again that Iran is engaged and in proliferation of terror all around the world'; intended target not stated",
+    "strength": "reported",
+    "sources": [
+     "ir8_afp_bangkok"
+    ]
+   }
+  ],
+  "sources": {
+   "ir8a_ap_apr14": {
+    "url": "https://kioncentralcoast.com/?p=1028685",
+    "label": "AP, 'The Latest | Israel says 99% of drones and missiles launched by Iran were intercepted', 13-14 April 2024 (KION)"
+   },
+   "ir8a_ynet_hagari": {
+    "url": "https://www.ynetnews.com/article/bj0sw1kgr",
+    "label": "Ynet, ''Iran failed' after overnight assault on Israel, IDF spokesperson says', 14 April 2024"
+   },
+   "ir8_mee_scientists": {
+    "url": "https://acquiaprod.middleeasteye.net/node/193006",
+    "label": "Middle East Eye, 'Five scientists in 10 years: Iran's nuclear physicists are top targets for assassins', Nov 2020"
+   },
+   "ir8_newarab_fakh": {
+    "url": "https://newarab.com/news/mossad-assassinated-top-iran-scientist-remote-gun-nyt",
+    "label": "The New Arab, 'Mossad assassinated Iran's top nuclear scientist with remote-operated machine gun: report' (on Bergman and Fassihi, New York Times, 18 Sep 2021), 19 Sep 2021"
+   },
+   "ir8_toi_haniyeh": {
+    "url": "https://www.timesofisrael.com/nyt-haniyeh-was-killed-by-explosive-smuggled-into-tehran-guesthouse-two-months-ago/",
+    "label": "Times of Israel, 'NYT: Haniyeh was killed by explosive smuggled into Tehran guesthouse two months ago', 1 Aug 2024"
+   },
+   "ir8_afp_bangkok": {
+    "url": "https://www.arabnews.com/news/462170",
+    "label": "AFP via Arab News, 'Thai court jails Iran pair over botched Bangkok bomb plot', 23 Aug 2013"
+   }
+  }
  }
 }
