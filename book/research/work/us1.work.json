@@ -1,0 +1,61 @@
+{
+ "us1_aid": {
+  "topic": "What US aid to Israel is, its weight in Israel's economy and defence spending 1985-2025, and what it frees up",
+  "claims": [
+   {
+    "text": "CRS data (JVL table, $m, current): total US aid to Israel 1985 3,676.7 (military 1,700, economic 1,950); 1990 3,486.9 (military 1,792.3, economic 1,194.8); 1995 3,149.8; 2000 4,007.8 (military 2,841.3, economic 1,022.1); 2005 2,921.74 (economic 482.1); 2008 2,624.97 (economic 44.3); 2010 3,068.83 (economic 36.3); 2019 3,852.5 (economic 8.5); 2020 3,805; 2023 3,808.3; 2024 12,511.26 (military 6,800); 2025 3,804.13; economic column blank from 2020",
+    "strength": "reported",
+    "sources": [
+     "us1_jvl_aidtable"
+    ]
+   },
+   {
+    "text": "World Bank WDI (via FRED), Israel GDP current US$: 1985 $28.89bn; 1990 $61.98bn; 2000 $136.41bn; 2010 $239.37bn; 2019 $399.21bn; 2024 $542.28bn; 2025 $610.78bn",
+    "strength": "primary",
+    "sources": [
+     "us1_fred_ilgdp"
+    ]
+   },
+   {
+    "text": "Book's arithmetic (US fiscal-year aid over Israeli calendar-year GDP, both current $): 12.7% (1985), 5.6% (1990), 2.9% (2000), 1.3% (2010), 1.0% (2019), 2.3% (2024, incl. supplemental), 0.6% (2025)",
+    "strength": "primary",
+    "sources": [
+     "us1_jvl_aidtable",
+     "us1_fred_ilgdp"
+    ]
+   },
+   {
+    "text": "Melnick and Mealem (2009): defence expenditure fell 'from more than 20% of GDP in the mid-1980s' to 'less than 10% recently'; inflation 'of over 400%' before the 1985 plan; plan's success 'was supported by the U.S. grant in the amount of $1.5 billion (over a two-year period)'; US loans for defence acquisitions converted into grants",
+    "strength": "reported",
+    "sources": [
+     "us1_jvl_melnick"
+    ]
+   },
+   {
+    "text": "Even (INSS, 2010): total defence cost incl. additional costs 10% of GDP in 1993, 8.2% in 2000, 7.8% in 2005; 7.0% in 2009 (CBS model); 2010 defence budget 6.7% of GDP; under the 2007 MOU 74% of aid for procurement in the US, 26% convertible to shekels; 2010 aid about $2.775bn",
+    "strength": "reported",
+    "sources": [
+     "us1_inss_even2010"
+    ]
+   }
+  ],
+  "sources": {
+   "us1_jvl_aidtable": {
+    "url": "https://www.jewishvirtuallibrary.org/total-u-s-foreign-aid-to-israel-1949-present",
+    "label": "Jewish Virtual Library, 'Total U.S. Foreign Aid to Israel (1949-Present)' (table compiled from CRS, Jeremy M. Sharp, 'U.S. Foreign Aid to Israel', 28 May 2025; $ millions)"
+   },
+   "us1_fred_ilgdp": {
+    "url": "https://fred.stlouisfed.org/data/MKTGDPILA646NWDB",
+    "label": "World Bank, World Development Indicators via FRED, 'Gross Domestic Product for Israel' (MKTGDPILA646NWDB), current US$"
+   },
+   "us1_jvl_melnick": {
+    "url": "https://jewishvirtuallibrary.org/israel-studies-an-anthology-israel-s-economy",
+    "label": "Rafi Melnick and Yosef Mealem, 'Israel's Economy: 1986-2008', Israel Studies: An Anthology (Jewish Virtual Library), September 2009"
+   },
+   "us1_inss_even2010": {
+    "url": "https://www.inss.org.il/wp-content/uploads/2022/12/fe-3648613404.pdf",
+    "label": "Shmuel Even, 'Israel's Defense Expenditure', INSS Strategic Assessment, February 2010"
+   }
+  }
+ }
+}
