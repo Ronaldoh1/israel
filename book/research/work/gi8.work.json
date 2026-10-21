@@ -250,5 +250,52 @@
     "label": "Ynetnews, 'Israel says \"recognizes territorial integrity\" of Jordan after Smotrich\\'s \"Greater Israel\" stunt', 20 March 2023"
    }
   }
+ },
+ "gi8_lebanon": {
+  "topic": "Lebanon 1978-2000 and the 1919 Litani/Hermon wording",
+  "claims": [
+   {
+    "text": "ZO statement, 3 Feb 1919: northern boundary 'Starting on the North at a point on the Mediterranean Sea in the vicinity south of Sidon', following watersheds of the Lebanon foothills and the Hermon slopes; 'Some international arrangement must be made whereby the riparian rights of the people dwelling south of the Litani River' are protected; 'The Hermon is Palestine's real \"Father of Waters,\" and cannot be severed from it'.",
+    "strength": "primary",
+    "sources": [
+     "gi8_bu_zo1919"
+    ]
+   }
+  ],
+  "sources": {
+   "gi8_bu_zo1919": {
+    "url": "https://www.bu.edu/mzank/Jerusalem/tx/ZionistStatement1919.htm",
+    "label": "Zionist Organization, 'Statement of the Zionist Organization regarding Palestine', Paris Peace Conference, 3 February 1919 (Boston University text)"
+   }
+  }
+ },
+ "gi8_claims": {
+  "topic": "Iraq, Iran, Saudi Arabia: Greater Israel claims tested; Saudi normalization 2023-24",
+  "claims": [
+   {
+    "text": "In a Fox News interview aired Wednesday 20 September 2023, Mohammed bin Salman said of normalization 'Every day we get closer'; 'For us, the Palestinian issue is very important, we need to solve that part'; hoped it would 'ease the life of the Palestinians'; no explicit statehood condition reported.",
+    "strength": "reported",
+    "sources": [
+     "gi8_cnbc_mbs"
+    ]
+   },
+   {
+    "text": "Saudi foreign ministry, 7 February 2024: it told the US 'there will be no diplomatic relations with Israel' 'unless an independent Palestinian state is recognised on the 1967 borders with East Jerusalem as its capital'.",
+    "strength": "reported",
+    "sources": [
+     "gi8_reu_saudi2024"
+    ]
+   }
+  ],
+  "sources": {
+   "gi8_cnbc_mbs": {
+    "url": "https://www.cnbc.com/2023/09/21/saudi-crown-prince-says-israel-diplomatic-normalization-closer-every-day.html",
+    "label": "CNBC, 'Saudi crown prince says Israel diplomatic normalization closer \"every day\"', 21 September 2023"
+   },
+   "gi8_reu_saudi2024": {
+    "url": "https://www.dawn.com/news/amp/1812086",
+    "label": "Reuters (via Dawn), 'Saudi says no Israel ties without independent Palestinian state', 8 February 2024"
+   }
+  }
  }
 }
