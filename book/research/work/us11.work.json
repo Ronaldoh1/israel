@@ -229,6 +229,21 @@
     "sources": [
      "us11_wb_cgdebt"
     ]
+   },
+   {
+    "text": "Israel's VAT rose from 17% to 18% on 1 January 2025, as part of an effort to rein in the deficit; estimated cost to families NIS 1,000-2,000 a year",
+    "strength": "reported",
+    "sources": [
+     "us11_herzog_vat",
+     "us11_jns_vat"
+    ]
+   },
+   {
+    "text": "World Bank WDI central government debt, US: 55.8% of GDP (2007), 76.0% (2009), 100.2% (2019), 124.5% (2020), 115.8% (2024) (series break around 2000-01)",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_cgdebt"
+    ]
    }
   ],
   "sources": {
@@ -267,6 +282,14 @@
    "us11_wb_cgdebt": {
     "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/GC.DOD.TOTL.GD.ZS?format=json&date=1980:2025&per_page=200",
     "label": "World Bank, World Development Indicators, 'Central government debt, total (% of GDP)' (GC.DOD.TOTL.GD.ZS), updated 8 October 2026"
+   },
+   "us11_herzog_vat": {
+    "url": "https://herzoglaw.co.il/en/news-and-insights/vat-updates-for-2025-vat-rate-increase-israel-invoices-reform-and-the-economic-plan-bill/",
+    "label": "Herzog Fox & Neeman, 'VAT Updates for 2025 – VAT rate increase, Israel Invoices Reform, and the Economic Plan Bill', 15 December 2024"
+   },
+   "us11_jns_vat": {
+    "url": "https://www.jns.org/israel-raises-vat-to-18-as-part-of-effort-to-rein-in-deficit/",
+    "label": "JNS, 'Israel raises VAT to 18% as part of effort to rein in deficit', 11 December 2024"
    }
   }
  },
