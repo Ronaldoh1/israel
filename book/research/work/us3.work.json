@@ -1,0 +1,301 @@
+{
+ "us3_elections": {
+  "topic": "Elections and access: electoral rules, turnout over time, disqualifications (Israel, US)",
+  "claims": [
+   {
+    "text": "Israel's electoral threshold: 1.0% (1951–1992), 1.5% (1992–2003), 2.0% (2004–2013), 3.25% from 2014 (applied from the 2015 election); in November 2022 almost 420,000 votes (8.8% of valid votes, about 10 seats' worth) went to lists below the threshold; the 2022 threshold was 154,854 votes; registered voters 6.789m (Nov 2022), projected 7.561m by 30 Sep 2026; turnout above 80% until the late 1960s, high 70s 1970s–1990s, mid-60s to low 70s since the second intifada",
+    "strength": "primary",
+    "sources": [
+     "us3_taub_threshold"
+    ]
+   },
+   {
+    "text": "The Governance Law passed the Knesset on 18 March 2014 raised the threshold from 2% to 3.25%; INSS put Arab turnout at about 50% and 2013 overall turnout at some 56% of eligible voters [the latter conflicts with Knesset-based 63.9%]",
+    "strength": "reported",
+    "sources": [
+     "us3_inss_threshold2014"
+    ]
+   },
+   {
+    "text": "Knesset turnout (Knesset data): 1949 86.9%, 1961 83.0%, 1981 78.5%, 1992 77.4%, 1999 78.7%, 2003 68.9%, 2006 63.5%, 2009 64.7%, 2013 63.9%, 2015 72.3%",
+    "strength": "primary",
+    "sources": [
+     "us3_jvl_turnout"
+    ]
+   },
+   {
+    "text": "Turnout (all / Arab and Druze voters): Apr 2019 68.5%/49.2%; Sep 2019 69.4%/59.2%; 2020 71.3%/64.8%; 2021 67.4%/44.6%; 2022 70.6%/53.2%; eligible voters 6,788,804 in 2022",
+    "strength": "primary",
+    "sources": [
+     "us3_jvl_cec"
+    ]
+   },
+   {
+    "text": "March 2021 turnout of 67.4% was the third-lowest in Israel's history; nearly 6.78m eligible for 2022",
+    "strength": "reported",
+    "sources": [
+     "us3_i21c_2022"
+    ]
+   },
+   {
+    "text": "INSS: Arab turnout 53.2% in 2022, 44.6% in March 2021, 64.8% in 2020",
+    "strength": "reported",
+    "sources": [
+     "us3_inss_arab2022"
+    ]
+   },
+   {
+    "text": "Census Bureau: 65.3% of voting-age citizens voted in 2024, 1.5 points below 2020 (≈66.8%) and 13.1 points above the 2022 midterm",
+    "strength": "primary",
+    "sources": [
+     "us3_usafacts_turnout"
+    ]
+   },
+   {
+    "text": "Census Bureau (2 May 2023): 52.2% of adult citizens voted in the 2022 midterms, second-highest midterm since 2000; 2018 slightly higher",
+    "strength": "primary",
+    "sources": [
+     "us3_npr_2022"
+    ]
+   },
+   {
+    "text": "In September 2026 Israel's Central Elections Committee voted to disqualify the Joint List (Hadash, Ta'al, Balad) and Ra'am and candidates Ofer Cassif and Sami Abu Shehadeh; on 2 October 2026 the Supreme Court unanimously overturned the party bans and reinstated Cassif 7–2; Abu Shehadeh withdrew, calling it 'a historical catastrophe for democracy'; push against him attributed to Ben-Gvir; vote on 27 Oct 2026",
+    "strength": "reported",
+    "sources": [
+     "us3_aje_cec2026"
+    ]
+   }
+  ],
+  "sources": {
+   "us3_taub_threshold": {
+    "url": "https://www.taubcenter.org.il/wp-content/uploads/2026/08/אחוז-החסימה-אנגלית-להפצה-5.7-2.pdf",
+    "label": "Taub Center (Alex Weinreb), 'How many votes will a political party need to pass the electoral threshold in the coming election?', 2026"
+   },
+   "us3_inss_threshold2014": {
+    "url": "https://www.inss.org.il/publication/israels-electoral-threshold-implications-for-israeli-arab-political-representation/",
+    "label": "INSS (Nadia Hilou), 'Israel's Electoral Threshold: Implications for Israeli-Arab Political Representation', INSS Insight 539, 23 Apr 2014"
+   },
+   "us3_jvl_turnout": {
+    "url": "https://www.jewishvirtuallibrary.org/jsource/Politics/voting.html",
+    "label": "Jewish Virtual Library, 'Voter Turnout' in Knesset elections 1949–2015 (from Knesset data)"
+   },
+   "us3_jvl_cec": {
+    "url": "https://www.jewishvirtuallibrary.org/israeli-central-elections-committee",
+    "label": "Jewish Virtual Library, 'Israeli Central Elections Committee' (turnout table 2019–2022)"
+   },
+   "us3_i21c_2022": {
+    "url": "https://archive.israel21c.org/israels-25th-election-in-numbers/",
+    "label": "Israel21c, '11 unexpected numbers about Israel's 25th election', 27 Oct 2022"
+   },
+   "us3_inss_arab2022": {
+    "url": "https://www.inss.org.il/publication/elections-2022-arab-society/",
+    "label": "INSS (Ephraim Lavie, Mohammed S. Wattad et al.), 'Arab Society in Israel and the Elections to the 25th Knesset', INSS Insight 1661, 20 Nov 2022"
+   },
+   "us3_usafacts_turnout": {
+    "url": "https://usafacts.org/topics/83",
+    "label": "USAFacts, 'How many Americans voted in 2024?' (Census Bureau data)"
+   },
+   "us3_npr_2022": {
+    "url": "https://wnyc.org/story/voter-turnout-for-the-2022-midterm-elections-was-the-2nd-highest-since-2000/",
+    "label": "NPR via WNYC (Hansi Lo Wang), 'Voter turnout for the 2022 elections was the 2nd highest for midterms since 2000', 2 May 2023"
+   },
+   "us3_aje_cec2026": {
+    "url": "https://aljazeera.com/news/2026/10/2/israels-supreme-court-overturns-election-panel-ban-on-arab-parties",
+    "label": "Al Jazeera, 'Israel's Supreme Court overturns election panel ban on Arab parties', 2 Oct 2026"
+   }
+  }
+ },
+ "us3_indices": {
+  "topic": "Democracy indices over time: Freedom House, V-Dem, RSF, IDI Democracy Index",
+  "claims": [
+   {
+    "text": "Freedom House 2026 (covering 2025): US 81/100 (PR 32/40, CL 49/60), Free, down from 84; 2024 cycle most expensive at about $16bn; FEC left with two members; proof-of-citizenship EO of March 2025 permanently blocked in October; Texas, Missouri, North Carolina and California redrew maps; AP excluded over Gulf of Mexico naming; CPB defunded and closed; 188 assaults on journalists; FCC chair threatened licences; hundreds of visas revoked, some over speech on the Israel-Hamas war; September federal ruling found noncitizens unfairly targeted for speech; 'No Kings' protests ~5m in June; DOJ public integrity unit cut from 36 to two lawyers; 18 inspectors general removed; C2 anticorruption down 3→2",
+    "strength": "primary",
+    "sources": [
+     "us3_fh_us2026"
+    ]
+   },
+   {
+    "text": "AFP: the US score of 81 is its lowest since the series began; down three points; cited 'legislative dysfunction and executive dominance' and pressure on free expression; equal to South Africa",
+    "strength": "reported",
+    "sources": [
+     "us3_afp_fh2026"
+    ]
+   },
+   {
+    "text": "Freedom House 2021: US aggregate score declined 11 points from 94 in 2010 to 83 in 2020, among the 25 largest declines",
+    "strength": "primary",
+    "sources": [
+     "us3_fh_fiw2021"
+    ]
+   },
+   {
+    "text": "Freedom House 2026: Israel 73/100 (PR 34/40, CL 39/60), Free; scores do not reflect actions in Gaza or the West Bank, rated separately: West Bank 22, Gaza 2 (Not Free); elections A1–A3 4/4; free media 3/4; NGO freedom 2/4; assembly 3/4; B4 minority political rights 2/4; journalist Israel Frey arrested over a post; lecturer arrested over posts",
+    "strength": "primary",
+    "sources": [
+     "us3_fh_il2026"
+    ]
+   },
+   {
+    "text": "Freedom House 2025 (Israel 73): 2012 law requires quarterly reporting of foreign-government support to NGOs; 2016 law requires NGOs mostly funded by foreign governments to disclose it publicly, mainly affecting left-leaning groups; 2017 law bars entry to foreigners who publicly back boycotts of Israel or settlements; 2011 Boycott Law exposes boycott advocates to civil suits; April 2024 temporary law allows withdrawing foreign outlets' licences for renewable 45-day periods, Al Jazeera shut in May 2024; Nov 2024 government halted state advertising with Haaretz; protests widely permitted, some Arab cease-fire demonstrations disallowed, police sometimes used excessive force; parties rely mostly on public funding allocated by electoral performance, private donations strictly limited; threshold 3.25% since 2015; parties denying Israel's Jewish character, opposing democracy, inciting racism or supporting terrorism can be barred, applied to far-right Jewish and Arab parties, Supreme Court overturned several disqualifications",
+    "strength": "primary",
+    "sources": [
+     "us3_fh_il2025"
+    ]
+   },
+   {
+    "text": "V-Dem 2026: the US lost liberal-democracy status in 2025 for the first time in over 50 years, now electoral democracy (ED+); a new autocratizer, episode from 2023, LDI decline −0.218; legislative constraints lost about a third of their value, lowest in over 100 years; freedom of expression and media at lowest in 60 years. Israel: electoral democracy (ED+), lost liberal-democracy status in 2023, the only electoral democracy in MENA; not listed among autocratizers",
+    "strength": "primary",
+    "sources": [
+     "us3_vdem2026"
+    ]
+   },
+   {
+    "text": "RSF 2026: Israel 116th of 180 (score 46.46), from 112th (51.055) in 2025; most media owned by large corporations or magnates; far-right Channel 14 second most watched in 2023; politicians have significant influence over regulator appointments; communications minister proposed privatising or closing public radio and called for boycott of Haaretz in 2024; prior military censorship of security reporting",
+    "strength": "primary",
+    "sources": [
+     "us3_rsf_il"
+    ]
+   },
+   {
+    "text": "RSF 2026: US 64th, score 62.61, down seven places; 'US media continue to face rising political polarization'",
+    "strength": "primary",
+    "sources": [
+     "us3_wboc_rsf"
+    ]
+   },
+   {
+    "text": "RSF 2026 (30 Apr 2026): more than 220 Palestinian journalists killed by the Israeli army since 7 Oct 2023, at least 70 because of their work; US 64th 'slipping due to growing political pressure'",
+    "strength": "primary",
+    "sources": [
+     "us3_rsf_regions"
+    ]
+   },
+   {
+    "text": "IDI Democracy Index 2025 (22 Dec 2025): 24% (May) / 27% (Nov) of Jewish and 12% of Arab respondents rate Israeli democracy good or excellent; 53% of Jews and 70% of Arabs prefer to keep political opinions quiet among strangers, rising since 2016–17; 65.5% expect the next elections to be free and fair; 46.5% agree it would be best to dismantle all political institutions and start over; trust in nearly all institutions below multi-year average",
+    "strength": "primary",
+    "sources": [
+     "us3_idi_2025"
+    ]
+   }
+  ],
+  "sources": {
+   "us3_fh_us2026": {
+    "url": "https://freedomhouse.org/country/united-states/freedom-world/2026",
+    "label": "Freedom House, 'United States: Freedom in the World 2026'"
+   },
+   "us3_afp_fh2026": {
+    "url": "https://www.freemalaysiatoday.com/category/world/2026/03/19/us-earns-its-lowest-ever-score-on-freedom-index",
+    "label": "AFP via Free Malaysia Today, 'US earns its lowest-ever score on freedom index', 19 Mar 2026"
+   },
+   "us3_fh_fiw2021": {
+    "url": "https://freedomhouse.org/sites/default/files/2021-03/FIW2021_Abridged_03112021_FINAL.pdf",
+    "label": "Freedom House, 'Freedom in the World 2021: Democracy under Siege' (abridged), Mar 2021"
+   },
+   "us3_fh_il2026": {
+    "url": "https://freedomhouse.org/country/israel/freedom-world/2026",
+    "label": "Freedom House, 'Israel: Freedom in the World 2026'"
+   },
+   "us3_fh_il2025": {
+    "url": "https://freedomhouse.org/country/israel/freedom-world/2025",
+    "label": "Freedom House, 'Israel: Freedom in the World 2025'"
+   },
+   "us3_vdem2026": {
+    "url": "https://www.uexternado.edu.co/wp-content/uploads/2026/09/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+    "label": "V-Dem Institute, 'Democracy Report 2026' (mirror copy of the official PDF), Mar 2026"
+   },
+   "us3_rsf_il": {
+    "url": "https://rsf.org/en/country/israel",
+    "label": "Reporters Without Borders, 'Israel' country page, 2026 Index"
+   },
+   "us3_wboc_rsf": {
+    "url": "https://www.wboc.com/online_features/press_releases/reporters-without-borders-global-press-freedom-index-falls-to-its-lowest-level-in-25-years/article_19ec78c4-5afb-5217-82f2-665155aebd72.html",
+    "label": "RSF press release via WBOC, 'Global press freedom index falls to its lowest level in 25 years', Apr 2026"
+   },
+   "us3_rsf_regions": {
+    "url": "https://rsf.org/en/classement-mondial-2026-par-régions-une-dégradation-de-la-liberté-de-la-presse-dans-100-pays-sur",
+    "label": "RSF, '2026 RSF Index by region: press freedom in decline in 100 out of 180 countries', 30 Apr 2026"
+   },
+   "us3_idi_2025": {
+    "url": "https://en.idi.org.il/articles/62722",
+    "label": "Israel Democracy Institute, press release on the Israeli Democracy Index 2025, 22 Dec 2025"
+   }
+  }
+ },
+ "us3_money": {
+  "topic": "Campaign finance and lobbying: US totals; Israel party finance",
+  "claims": [
+   {
+    "text": "OpenSecrets: federal lobbying spending reached a record of about $5bn in 2025 (nominal), up 14% from 2024, the largest year-over-year rise since 2008",
+    "strength": "reported",
+    "sources": [
+     "us3_os_lobby2025"
+    ]
+   }
+  ],
+  "sources": {
+   "us3_os_lobby2025": {
+    "url": "https://datawrapper.dwcdn.net/hkW9e/8/",
+    "label": "OpenSecrets analysis of federal disclosure reports (Datawrapper chart), 'Lobbying spending reached a record $5 billion in 2025'"
+   }
+  }
+ },
+ "us3_speech": {
+  "topic": "Speech, boycott and NGO laws; press and media ownership",
+  "claims": [
+   {
+    "text": "Avneri v. Knesset (15 Apr 2015), nine-justice panel: Boycott Law s.1 covers calls for economic, cultural or academic boycott of Israel, its institutions or 'an area in its control'; s.2 civil tort upheld 5–4; s.2(c) damages without proof of harm struck down unanimously; ss.3–4 denial of tenders and state benefits upheld; Melcer: such boycott calls 'do not fall under the classic purposes of free speech'",
+    "strength": "primary",
+    "sources": [
+     "us3_versa_avneri"
+    ]
+   },
+   {
+    "text": "On 16 Feb 2025 the Ministerial Committee for Legislation backed Ariel Kallner's bill to tax foreign-government donations to NGOs at 80% and let courts disregard petitions by groups 'primarily financed by a foreign political entity'; exempts NGOs with Israeli state funding; finance minister may exempt; ACRI's Noa Sattath: 'a direct assault on Israel's democracy'; a 2023 version (65% tax) was shelved in May 2023 after pushback incl. the Biden administration",
+    "strength": "reported",
+    "sources": [
+     "us3_toi_ngotax"
+    ]
+   },
+   {
+    "text": "Media Line (5 May 2025): the bill was at committee stage and needed three readings; exempts groups under ₪100,000 revenue; Kallner: it 'will block improper foreign interference'",
+    "strength": "reported",
+    "sources": [
+     "us3_tml_ngotax"
+    ]
+   },
+   {
+    "text": "JPost (27 May 2025): the bill was still a proposal before the Constitution, Law and Justice Committee; no readings reported",
+    "strength": "reported",
+    "sources": [
+     "us3_jpost_ngotax"
+    ]
+   },
+   {
+    "text": "Times of Israel (16 Feb 2025) mentions the 2017 'V15 law', aimed at stopping wealthy donors from using political organisations to bypass election-funding laws",
+    "strength": "reported",
+    "sources": [
+     "us3_toi_ngotax"
+    ]
+   }
+  ],
+  "sources": {
+   "us3_versa_avneri": {
+    "url": "https://versa.cardozo.yu.edu/opinions/avneri-v-knesset-summary",
+    "label": "Versa (Cardozo Law), 'Avneri v. The Knesset (summary)', HCJ 5239/11, 15 Apr 2015"
+   },
+   "us3_toi_ngotax": {
+    "url": "https://www.timesofisrael.com/ministers-vote-to-back-bill-levying-80-tax-on-foreign-state-funding-of-israeli-ngos/",
+    "label": "Times of Israel, 'Ministers advance bill levying 80% tax on foreign state funding of Israeli NGOs', 16 Feb 2025"
+   },
+   "us3_tml_ngotax": {
+    "url": "https://themedialine.org/headlines/israel-debates-80-tax-on-foreign-funded-ngos-in-move-to-curb-external-influence/",
+    "label": "The Media Line, 'Israel Debates 80% Tax on Foreign-Funded NGOs', 5 May 2025"
+   },
+   "us3_jpost_ngotax": {
+    "url": "https://jpost.com/israel-news/article-855611",
+    "label": "Jerusalem Post, 'Proposed tax on foreign donations alarms NGOs aiding Holocaust survivors', 27 May 2025"
+   }
+  }
+ }
+}
