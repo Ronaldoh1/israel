@@ -352,5 +352,45 @@
     "label": "Wikipedia, 'Greater Israel' (citing J. Greenberg, NYT 1998; N. Shelef; Pappé; Ynet), accessed 21 Oct 2026"
    }
   }
+ },
+ "gi2_audit": {
+  "topic": "Audit re-checks for Part Two (21 Oct 2026)",
+  "claims": [
+   {
+    "text": "On the JVL page the only mention of Transjordan is in 'The Ethics of the Iron Wall' (opposition 'not only adjacent Transjordan, and Syria, but even in Morocco'), not in 'The Iron Wall' itself; the oath wording is 'we shall never try to eject anyone'.",
+    "strength": "primary",
+    "sources": [
+     "gi2a_jvl_ironwall"
+    ]
+   },
+   {
+    "text": "Wikipedia quotes Haddad (1974) that 'Herzl's idea of the geographical extent of the Jewish state was derived from the biblical romance of the Davidic Kingdom'; Hechler 'unfolded his maps of Palestine and instructed me for hours on end' (Complete Diaries I, p. 342).",
+    "strength": "reported",
+    "sources": [
+     "gi2a_wiki_gi"
+    ]
+   },
+   {
+    "text": "Herut was founded by Menachem Begin on 15 June 1948 (Wikipedia); the EJ 'Revisionists' article gives October 1948; JVL/EJ 'Herut Movement' gives June 1948.",
+    "strength": "reported",
+    "sources": [
+     "gi2a_wiki_herut"
+    ]
+   }
+  ],
+  "sources": {
+   "gi2a_jvl_ironwall": {
+    "url": "https://www.jewishvirtuallibrary.org/quot-the-iron-wall-quot",
+    "label": "Ze'ev Jabotinsky, 'The Iron Wall' (4 Nov 1923) and 'The Ethics of the Iron Wall' (Rassviet, 11 Nov 1923), Jewish Virtual Library; re-checked 21 Oct 2026"
+   },
+   "gi2a_wiki_gi": {
+    "url": "https://en.wikipedia.org/wiki/Greater_Israel",
+    "label": "Wikipedia, 'Greater Israel'; re-checked 21 Oct 2026"
+   },
+   "gi2a_wiki_herut": {
+    "url": "https://en.wikipedia.org/wiki/Herut",
+    "label": "Wikipedia, 'Herut'; re-checked 21 Oct 2026"
+   }
+  }
  }
 }

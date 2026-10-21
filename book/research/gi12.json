@@ -312,6 +312,75 @@
      "label": "Times of Israel, 'Residents gone, dismantling of Amona outpost begins', 6 February 2017"
     }
    ]
+  },
+  {
+   "id": "gi12_audit",
+   "stage": "gi12",
+   "topic": "Audit re-fetches, Part Twelve",
+   "claims": [
+    {
+     "text": "TAU Peace Index July 2026 summary: 33% of Jewish respondents support 'Annexation of the territories with limited rights to Palestinians' (38% previously); 24% of Jewish respondents support a two-state solution.",
+     "strength": "primary",
+     "sources": [
+      "gi12a_tau2026"
+     ]
+    },
+    {
+     "text": "AP (7 Oct 2004): the Weisglass interview was 'published Wednesday' (6 Oct 2004); Sharon's office said the 'prime minister remains committed to the road map'; Weisglass told Israel Radio Haaretz had cut part of a remark and that 'there is not and will not be peace negotiations' under current conditions.",
+     "strength": "reported",
+     "sources": [
+      "gi12a_ap_weisglass"
+     ]
+    },
+    {
+     "text": "Amona: Yesh Din showed the proposed relocation plot was also privately owned by Palestinians; landowners included residents of Silwad; 42 families evacuated 1-2 Feb 2017; dismantling began 6 Feb 2017.",
+     "strength": "reported",
+     "sources": [
+      "gi12a_toi_amona"
+     ]
+    },
+    {
+     "text": "The 25 former officials' letter (sent 27 Aug 2019) went to the four House co-sponsors of a resolution: Brad Schneider, Lee Zeldin, Jerry Nadler and Ann Wagner.",
+     "strength": "reported",
+     "sources": [
+      "gi12a_jn_25chiefs"
+     ]
+    },
+    {
+     "text": "Al Jazeera 17 Oct 2026: neither Bennett nor Lapid has prioritised the conflict or supported a Palestinian state; Eisenkot 'notoriously ambiguous on many of Israel's foreign policy positions'; only the Democrats acknowledge a state as 'a distant, unspecified goal'; Bennett 'a longtime supporter of illegal settlements'.",
+     "strength": "reported",
+     "sources": [
+      "gi12a_aje_contenders"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gi12a_tau2026",
+     "url": "https://en-social-sciences.tau.ac.il/peaceindex/archive/2026-07",
+     "label": "Tel Aviv University, 'Peace Index - July 2026' (summary page, accessed 21 Oct 2026)"
+    },
+    {
+     "key": "gi12a_ap_weisglass",
+     "url": "https://idsnews.com/article/2004/10/adviser-calls-plan-to-withdraw-from-gaza-a-ploy",
+     "label": "AP via Indiana Daily Student, 'Adviser calls plan to withdraw from Gaza a ploy', 7 October 2004 (audit re-fetch)"
+    },
+    {
+     "key": "gi12a_toi_amona",
+     "url": "https://www.timesofisrael.com/residents-gone-dismantling-of-amona-outpost-begins/",
+     "label": "Times of Israel, 'Residents gone, dismantling of Amona outpost begins', 6 February 2017 (audit re-fetch)"
+    },
+    {
+     "key": "gi12a_jn_25chiefs",
+     "url": "https://www.jewishnews.co.uk/25-ex-israeli-security-and-defence-chiefs-warn-against-annexing-west-bank/",
+     "label": "Jewish News, '25 ex-Israeli security and defence chiefs warn against annexing West Bank', 28 August 2019 (audit re-fetch)"
+    },
+    {
+     "key": "gi12a_aje_contenders",
+     "url": "https://www.aljazeera.com/amp/news/2026/10/17/the-israeli-politicians-seeking-to-replace-netanyahu",
+     "label": "Al Jazeera, 'The Israeli politicians seeking to replace Netanyahu', 17 October 2026 (audit re-fetch)"
+    }
+   ]
   }
  ]
 }

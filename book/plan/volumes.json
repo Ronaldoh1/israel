@@ -843,25 +843,13 @@
  },
  "_planned": [
   {
-   "host": "ch21",
-   "title": "The Greater Israel Architecture",
-   "subtitle": "The Maps, the Movements and the Fronts: Egypt, Jordan, Syria and Iraq",
-   "merge": [
-    "ch22",
-    "ch25",
-    "ch63",
-    "ch47"
-   ],
-   "priority": 1
-  },
-  {
    "host": "ch40",
    "title": "US System vs Israel System",
    "subtitle": "Government, Rights, Money and the Cost of Living, Compared Over Time",
    "merge": [
     "ch60"
    ],
-   "priority": 2
+   "priority": 1
   },
   {
    "host": null,
@@ -875,14 +863,14 @@
    ],
    "title": "The Theology Shield",
    "subtitle": "Christian Zionism from Darby and Scofield to CUFI",
-   "priority": 3
+   "priority": 2
   },
   {
    "host": "ch12",
    "title": "The Vatican Architecture",
    "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
    "merge": [],
-   "priority": 4
+   "priority": 3
   },
   {
    "host": "ch19",
@@ -894,7 +882,7 @@
     "ch14",
     "ch41"
    ],
-   "priority": 5
+   "priority": 4
   },
   {
    "host": "ch20",
@@ -903,7 +891,7 @@
    "merge": [
     "ch17"
    ],
-   "priority": 6
+   "priority": 5
   },
   {
    "host": "ch57",
@@ -913,7 +901,7 @@
     "ch58",
     "ch59"
    ],
-   "priority": 7
+   "priority": 6
   },
   {
    "host": "ch18",
@@ -927,7 +915,7 @@
     "ch44",
     "ch52"
    ],
-   "priority": 8
+   "priority": 7
   },
   {
    "host": "ch34",
@@ -936,7 +924,7 @@
    "merge": [
     "ch50"
    ],
-   "priority": 9
+   "priority": 8
   },
   {
    "host": "ch06",
@@ -946,7 +934,7 @@
     "ch07",
     "ch08"
    ],
-   "priority": 10
+   "priority": 9
   },
   {
    "host": "ch23",
@@ -961,7 +949,7 @@
     "ch68",
     "ch69"
    ],
-   "priority": 11
+   "priority": 10
   },
   {
    "host": "ch53",
@@ -970,7 +958,7 @@
    "merge": [
     "ch55"
    ],
-   "priority": 12
+   "priority": 11
   },
   {
    "host": "ch51",
@@ -980,7 +968,101 @@
     "ch70",
     "ch49"
    ],
-   "priority": 13
+   "priority": 12
   }
- ]
+ ],
+ "greater": {
+  "slot": "ch21",
+  "absorbs": [
+   "ch22",
+   "ch25",
+   "ch63",
+   "ch47"
+  ],
+  "title": "The Greater Israel Architecture",
+  "subtitle": "Maps, Movements and the Land Beyond the Lines, 1896–2026",
+  "span": "1896–2026",
+  "intro": "gi_intro.html",
+  "parts_total": 13,
+  "stages": [
+   {
+    "id": "gi1",
+    "label": "Part One",
+    "title": "The Phrase and Its Meanings",
+    "span": "Genesis–2026"
+   },
+   {
+    "id": "gi2",
+    "label": "Part Two",
+    "title": "Founders' Maps",
+    "span": "1896–1937"
+   },
+   {
+    "id": "gi3",
+    "label": "Part Three",
+    "title": "Armistice Lines and the Sinai Test",
+    "span": "1948–1967"
+   },
+   {
+    "id": "gi4",
+    "label": "Part Four",
+    "title": "1967 and the Land of Israel Movement",
+    "span": "1967–1977"
+   },
+   {
+    "id": "gi5",
+    "label": "Part Five",
+    "title": "The Ideology in Government",
+    "span": "1977–2022"
+   },
+   {
+    "id": "gi6",
+    "label": "Part Six",
+    "title": "The Annexation Track",
+    "span": "2019–2026"
+   },
+   {
+    "id": "gi7",
+    "label": "Part Seven",
+    "title": "The Maps at the UN and the \"Very Much\" Interview",
+    "span": "2023–2025"
+   },
+   {
+    "id": "gi8",
+    "label": "Part Eight",
+    "title": "The Fronts",
+    "span": "1967–2023"
+   },
+   {
+    "id": "gi9",
+    "label": "Part Nine",
+    "title": "The Buffer Belt",
+    "span": "2024–2026"
+   },
+   {
+    "id": "gi10",
+    "label": "Part Ten",
+    "title": "The Documents and the Myths",
+    "span": "1898–2026"
+   },
+   {
+    "id": "gi11",
+    "label": "Part Eleven",
+    "title": "The Religious Engine",
+    "span": "1920s–2026"
+   },
+   {
+    "id": "gi12",
+    "label": "Part Twelve",
+    "title": "The Counter-Record",
+    "span": "1957–2026"
+   },
+   {
+    "id": "gi13",
+    "label": "Part Thirteen",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ }
 }

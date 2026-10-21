@@ -256,6 +256,39 @@
      "label": "Wikipedia, 'Yellow Line (Gaza)' (accessed 21 October 2026)"
     }
    ]
+  },
+  {
+   "id": "gi9_audit",
+   "stage": "gi9",
+   "topic": "Audit re-checks of Part Nine claims (21 Oct 2026)",
+   "claims": [
+    {
+     "text": "Re-fetch: Syria said completion of Sufa 53 'constituted a breach of the 1974 Disengagement Agreement'; Jordan (spokesman Fuad Al-Majali): measures 'violated the UN Charter and Israel's obligations under the 1974 agreement'; Kuwait: 'a dangerous escalation', urging enforcement 'particularly the 1974 Disengagement Agreement'; Qatar: 'a flagrant breach of international principles' (no 1974 reference).",
+     "strength": "reported",
+     "sources": [
+      "gi9a_an_sufa"
+     ]
+    },
+    {
+     "text": "Re-fetch: NPR: zone about 6% of Lebanon, 'a strip of land five miles wide in some places'; UNIFIL 'due to U.S. and Israeli opposition, will not be renewed'; Israel says the zone exists to 'prevent Hezbollah from firing rockets into northern Israel'.",
+     "strength": "reported",
+     "sources": [
+      "gi9a_npr"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gi9a_an_sufa",
+     "url": "https://www.arabnews.pk/middle-east/arab-states-condemn-israeli-expansion-of-sufa-53-line-in-syria-3003204",
+     "label": "Arab News, 'Arab states condemn Israeli expansion of Sufa 53 line in Syria', 5 October 2026 (re-fetched 21 Oct 2026)"
+    },
+    {
+     "key": "gi9a_npr",
+     "url": "https://www.stlpr.org/npr/2026-09-19/the-new-lines-of-southern-lebanon",
+     "label": "NPR, 'The new lines of southern Lebanon', 19 September 2026 (re-fetched 21 Oct 2026)"
+    }
+   ]
   }
  ]
 }
