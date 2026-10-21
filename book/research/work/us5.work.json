@@ -243,5 +243,34 @@
     "label": "Al Jazeera English, 'Shooting in occupied East Jerusalem kills six, Israeli authorities say', 8 September 2025"
    }
   }
+ },
+ "us5_audit": {
+  "topic": "Audit re-checks for Part Five (licensing history, Ben-Gvir office statements)",
+  "claims": [
+   {
+    "text": "Duke: formerly only combat officers met the service requirement; since 2018 regular service in significant combat positions sufficed; in 2023 any combat service qualifies; 2015 marked the start of measures to increase private gun ownership; thresholds 21 with two years' service (one year for women), 27 without service for citizens, 45 for permanent residents",
+    "strength": "reported",
+    "sources": [
+     "us5a_duke_reznik"
+    ]
+   },
+   {
+    "text": "Ben-Gvir's office: 'no woman has been killed by a weapon provided under the reform'; 'The murders of women occurred with illegal weapons or kitchen knives'; 'in all recent attacks, it was proven that armed citizens are the first to neutralize terrorists'",
+    "strength": "reported",
+    "sources": [
+     "us5a_jpost_gunreform"
+    ]
+   }
+  ],
+  "sources": {
+   "us5a_duke_reznik": {
+    "url": "https://firearmslaw.duke.edu/2023/12/firearms-law-in-the-shadow-of-war",
+    "label": "Duke Center for Firearms Law, 'Firearms Law in the Shadow of War', Dec 2023"
+   },
+   "us5a_jpost_gunreform": {
+    "url": "https://stgmobile.jpost.com/israel-news/politics-and-diplomacy/article-832321",
+    "label": "Jerusalem Post, on the first year of Israel's gun-licensing reform, 2024"
+   }
+  }
  }
 }

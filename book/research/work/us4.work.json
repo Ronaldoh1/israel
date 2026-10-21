@@ -294,5 +294,45 @@
     "label": "TRAC Immigration (Syracuse University), update of 10 Apr 2026"
    }
   }
+ },
+ "us4_audit": {
+  "topic": "Audit re-checks for Part Four (prison series points, Israel's death penalty)",
+  "claims": [
+   {
+    "text": "WPB US trend: 1940 264,834 (201 per 100k); 1970 328,020 (161); 2018 2,102,400 (642); juveniles 0.1% of prison population (2023)",
+    "strength": "primary",
+    "sources": [
+     "us4a_wpb_us"
+    ]
+   },
+   {
+    "text": "WPB Israel trend: 1986 7,924 (190); 1995 7,909 (146); juveniles 2.3% of prison population (19 Oct 2017)",
+    "strength": "primary",
+    "sources": [
+     "us4a_wpb_il"
+    ]
+   },
+   {
+    "text": "AP: Israel's existing death penalty applies to genocide, wartime espionage and certain terror offences; Israel has not executed anyone since Adolf Eichmann in 1962; Amichai Cohen: 'Jews will not be indicted under this law'",
+    "strength": "reported",
+    "sources": [
+     "us4a_ap_deathlaw"
+    ]
+   }
+  ],
+  "sources": {
+   "us4a_wpb_us": {
+    "url": "https://prisonstudies.org/country/united-states-america",
+    "label": "World Prison Brief, 'United States of America', checked 21 Oct 2026"
+   },
+   "us4a_wpb_il": {
+    "url": "https://prisonstudies.org/country/israel",
+    "label": "World Prison Brief, 'Israel', checked 21 Oct 2026"
+   },
+   "us4a_ap_deathlaw": {
+    "url": "https://www.adn.com/nation-world/2026/03/30/israels-parliament-approves-death-penalty-by-hanging-for-palestinians-convicted-of-deadly-attacks/",
+    "label": "AP via Anchorage Daily News, 'Israel's parliament approves death penalty by hanging for Palestinians convicted of deadly attacks', 30 Mar 2026"
+   }
+  }
  }
 }

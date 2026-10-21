@@ -398,5 +398,45 @@
     "label": "Gregory Korte, Bloomberg (via Transport Topics), 'Federal workforce down 317,000', 10 December 2025"
    }
   }
+ },
+ "us2_audit": {
+  "topic": "Audit re-checks for Part Two (entrenched Basic Law clauses, AG ruling, IDI corruption survey)",
+  "claims": [
+   {
+    "text": "Basic Law: The Knesset s.4 (electoral system) can only be changed with 61 of 120 MKs; Basic Law: Referendum (2014) requires a treaty approved by 80 MKs or an absolute majority in a referendum before territory under Israeli law is ceded; Freedom of Occupation passed 23-0 and Human Dignity and Liberty 32-21 in 1992",
+    "strength": "reported",
+    "sources": [
+     "us2a_wiki_basiclaws"
+    ]
+   },
+   {
+    "text": "The AG ruling was backed by the six other justices on the panel 'including four conservatives'; the court said the change to the dismissal process was approved 'hastily' and 'without an appropriate factual or legal basis'; critics of the government 'argued that Baharav-Miara was fired simply for repeatedly pointing out' that the government was violating the law",
+    "strength": "reported",
+    "sources": [
+     "us2a_toi_agfiring"
+    ]
+   },
+   {
+    "text": "IDI survey: roughly 80% agree or somewhat agree that police are not doing enough to investigate suspected corruption; about 74% of respondents say corruption is more widespread than in the past; the authors call the CPI decline 'moderate as of now' but 'a concerning trend'",
+    "strength": "reported",
+    "sources": [
+     "us2a_idi_cpi"
+    ]
+   }
+  ],
+  "sources": {
+   "us2a_wiki_basiclaws": {
+    "url": "https://en.wikipedia.org/wiki/Basic_Laws_of_Israel",
+    "label": "Wikipedia, 'Basic Laws of Israel', checked 21 Oct 2026"
+   },
+   "us2a_toi_agfiring": {
+    "url": "https://timesofisrael.com/high-court-annuls-firing-of-attorney-general-cabinet-ministers-urge-defiance-of-ruling/",
+    "label": "Times of Israel, 'High Court annuls firing of attorney general; cabinet ministers urge defiance of ruling', 14 Dec 2025"
+   },
+   "us2a_idi_cpi": {
+    "url": "https://en.idi.org.il/articles/63480",
+    "label": "Israel Democracy Institute, on Israel's 2025 Corruption Perceptions Index result, 18 Feb 2026"
+   }
+  }
  }
 }
