@@ -314,5 +314,158 @@
     "label": "Ynet News, 'Israel's homeless population growing but response anemic, report says', 10 July 2022"
    }
   }
+ },
+ "us15_infra": {
+  "topic": "Water, energy, transit, climate policy and disaster response in Israel and the US",
+  "claims": [
+   {
+    "text": "Israel's large seawater desalination plants: Ashkelon (August 2005, 120m m3/yr), Palmachim (May 2007), Hadera (December 2009, 145m), Soreq (August 2013, 150m), Ashdod (2015, 100m, Mekorot), Soreq 2 (March 2025, 200m).",
+    "strength": "reported",
+    "sources": [
+     "us15_wiki_water"
+    ]
+   },
+   {
+    "text": "About 35% of Israel's drinking water came from desalination in 2014 and 86% of drinkable water in 2022; almost 90% of effluent is treated for reuse, mainly in agriculture.",
+    "strength": "reported",
+    "sources": [
+     "us15_wiki_water"
+    ]
+   },
+   {
+    "text": "Mekorot, the state-owned bulk supplier, supplies about 70% of total water and 80% of drinking water; the Water Authority was created by the 2006 amendment to the 1959 Water Law; under the 1995 Interim Agreement Israel supplied 52m m3 to Palestinians in 2011, and the agreement bars Palestinians from drilling new wells in the Mountain Aquifer.",
+    "strength": "reported",
+    "sources": [
+     "us15_wiki_water"
+    ]
+   },
+   {
+    "text": "Renewables generated 14% of Israel's electricity in 2024 (12% in 2023), against a 20% target for 2025; natural gas 71% and coal 14% in 2024; the 2025 coal phase-out date set in 2019 slipped to no earlier than 2027 (BDO).",
+    "strength": "reported",
+    "sources": [
+     "us15_calcalist_renew"
+    ]
+   },
+   {
+    "text": "Coal supplied 17% of Israel's power in 2023, down from 52% in 2013; Tamar gas field discovered 2009, Leviathan producing from late 2019; October 2020 government decision targets 30% renewable electricity by 2030; IEC produced 56% of electricity in 2023 after the June 2018 reform.",
+    "strength": "reported",
+    "sources": [
+     "us15_ita_israelenergy"
+    ]
+   },
+   {
+    "text": "US utility-scale generation 2025: natural gas about 41%, nuclear 18%, coal 17%, renewables 24% (wind 11%, solar 7%, hydro 6%); renewables were about 12% in 1990.",
+    "strength": "primary",
+    "sources": [
+     "us15_eia_mix2025"
+    ]
+   },
+   {
+    "text": "US Paris Agreement: first withdrawal announced 1 June 2017, effective 4 November 2020; executive order 20 January 2025; second withdrawal effective 27 January 2026; withdrawal from UNFCCC announced 7 January 2026; the IRA was signed 16 August 2022.",
+    "strength": "reported",
+    "sources": [
+     "us15_harvard_paris"
+    ]
+   },
+   {
+    "text": "OECD Environmental Performance Review of Israel (released 31 May 2023): Israel not on track to reach its GHG targets; emissions rose 2014-2020 and declined after as coal was replaced by gas; renewables 5% of total energy supply vs 12% OECD average; urged adoption of the government-approved draft Climate Law; aims for carbon neutrality by 2050.",
+    "strength": "reported",
+    "sources": [
+     "us15_jpost_oecd_env"
+    ]
+   },
+   {
+    "text": "US fossil CO2 per capita (EDGAR): 1980 20.8 t; 1990 19.73; 2000 21.03; 2010 17.89; 2020 13.48; 2024 13.59.",
+    "strength": "reported",
+    "sources": [
+     "us15_wm_co2_us"
+    ]
+   },
+   {
+    "text": "The EDGAR compilation reports Israel combined with the State of Palestine, so its per-capita series is not Israel's alone (combined series 1990 5.34 t, 2000 6.42, 2024 3.82).",
+    "strength": "reported",
+    "sources": [
+     "us15_wm_co2_il"
+    ]
+   },
+   {
+    "text": "FEMA Review Council, set up by EO 14180 (January 2025), approved its final report on 7 May 2026: raise Public Assistance thresholds, replace site-by-site reimbursement with up-front lump-sum grants to states, sliding-scale cost shares, consolidated individual assistance payment; backed off a 50% staffing cut in drafts; GAO said recent staff cuts worsened workforce challenges.",
+    "strength": "primary",
+    "sources": [
+     "us15_crs_fema"
+    ]
+   },
+   {
+    "text": "State Comptroller (December 2025): Gush Dan congestion cost about NIS 10bn in lost time in 2018, NIS 25bn projected 2040 (summary: NIS 25-50bn a year); public transport share of trips fell from 24% to 20% against a 40% target; Metro Law 2021; budget NIS 150bn (NIS 177bn in 2025 prices); phase 1 due 2034, full system 2037.",
+    "strength": "primary",
+    "sources": [
+     "us15_comptroller_metro"
+    ]
+   },
+   {
+    "text": "Tel Aviv Light Rail Red Line opened 18 August 2023, 24 km with 34 stations, about 100,000 daily riders; Purple Line expected 2027, Green Line 2028-2030; the 2006 BOT concession was revoked in 2010 and the project nationalised.",
+    "strength": "reported",
+    "sources": [
+     "us15_wiki_tlvlr"
+    ]
+   },
+   {
+    "text": "ASCE 2025 Report Card: overall C (up from C- in 2021, highest since 1998); transit D, roads D+, bridges C, drinking water C-, energy D+, wastewater D+; investment gap $3.7 trillion, up from $2.59 trillion; credits IIJA (2021).",
+    "strength": "reported",
+    "sources": [
+     "us15_asce_2025"
+    ]
+   }
+  ],
+  "sources": {
+   "us15_wiki_water": {
+    "url": "https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_Israel",
+    "label": "Wikipedia, 'Water supply and sanitation in Israel' (accessed 21 October 2026)"
+   },
+   "us15_calcalist_renew": {
+    "url": "https://calcalistech.com/ctechnews/article/2572qjusa",
+    "label": "Calcalist (CTech), 'Power failure: Only 14% of Israel's electricity generated from renewable energy', 26 January 2025"
+   },
+   "us15_ita_israelenergy": {
+    "url": "https://www.trade.gov/knowledge-product/israel-energy",
+    "label": "US International Trade Administration, Israel Country Commercial Guide: Energy, 17 March 2026"
+   },
+   "us15_eia_mix2025": {
+    "url": "https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php",
+    "label": "US Energy Information Administration, 'Electricity in the United States' (2025 data), accessed 21 October 2026"
+   },
+   "us15_harvard_paris": {
+    "url": "https://eelp.law.harvard.edu/tracker/paris-climate-agreement",
+    "label": "Harvard Law School Environmental & Energy Law Program, 'Paris Climate Agreement' tracker, accessed 21 October 2026"
+   },
+   "us15_jpost_oecd_env": {
+    "url": "https://www.jpost.com/environment-and-climate-change/article-744686",
+    "label": "Jerusalem Post, 'Israel not on track to meet its climate ambitions, OECD warns', 31 May 2023"
+   },
+   "us15_wm_co2_us": {
+    "url": "https://www.worldometers.info/co2-emissions/us-co2-emissions/",
+    "label": "Worldometers compilation of EDGAR (JRC/IEA 2025) fossil CO2 per capita, United States, accessed 21 October 2026"
+   },
+   "us15_wm_co2_il": {
+    "url": "https://www.worldometers.info/co2-emissions/israel-co2-emissions/",
+    "label": "Worldometers compilation of EDGAR (JRC/IEA 2025) fossil CO2 per capita, Israel (combined with State of Palestine), accessed 21 October 2026"
+   },
+   "us15_crs_fema": {
+    "url": "https://www.everycrsreport.com/files/2026-05-15_IN12693_939ed3d39b0fd43b5ef1eb0adad1634145045994.html",
+    "label": "Congressional Research Service, IN12693, on the FEMA Review Council final report, 15 May 2026"
+   },
+   "us15_comptroller_metro": {
+    "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2025/Metro/2025-Metro-Taktzir-EN.pdf",
+    "label": "State Comptroller of Israel, special report on the Gush Dan Metro, English summary, December 2025"
+   },
+   "us15_wiki_tlvlr": {
+    "url": "https://en.wikipedia.org/wiki/Tel_Aviv_Light_Rail",
+    "label": "Wikipedia, 'Tel Aviv Light Rail' (accessed 21 October 2026)"
+   },
+   "us15_asce_2025": {
+    "url": "https://www.asce.org/publications-and-news/civil-engineering-source/society-news/article/2025/03/25/asce-report-card-gives-us-infrastructure-highest-ever-c-grade",
+    "label": "ASCE, 'ASCE report card gives US infrastructure highest-ever C grade', 25 March 2025"
+   }
+  }
  }
 }
