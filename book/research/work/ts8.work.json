@@ -272,5 +272,122 @@
     "label": "ProPublica Nonprofit Explorer, Christians United For Israel Action Fund (EIN 46-1868892), Form 990 data 2013-2024 (accessed 21 October 2026)"
    }
   }
+ },
+ "ts8_audit": {
+  "topic": "Audit re-fetches for Part Eight",
+  "claims": [
+   {
+    "text": "Netanyahu addressed CUFI's Washington summit of 8 July 2019 remotely, 'from Jerusalem'.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_inn_netanyahu2019"
+    ]
+   },
+   {
+    "text": "Liberty Champion: Falwell visited Israel around 15 times; in January 1999 he and Duke Westover took 1,500 people (900 Liberty students), 'the largest group to visit Israel at once'.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_lib_falwell"
+    ]
+   },
+   {
+    "text": "JTA 1985: Falwell told Peres Israel is 'the most important democracy in the area' and preserves American influence in the face of 'Soviet threats'; Falwell phoned Begin for about 15 minutes; other American Jews favour the friendship for its 'consistent support for Israel'.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_jta_peres1985"
+    ]
+   },
+   {
+    "text": "JTA 2019: Eckstein died at home in Jerusalem aged 67; in a 2002 article he wrote that 'the majority of evangelicals are passionately pro-Israel because it is part of their theology' and 'I could not accept the conditional love of those who expect a payback on behalf of my people'; Jewish Agency funding stopped in 2014 'amid a fight over recognition', and Eckstein had long-held reservations about the agency's efficiency; IFCJ offered each new immigrant 'a $1,000 grant' on top of Jewish Agency benefits.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_jta_eckstein"
+    ]
+   },
+   {
+    "text": "Charisma 2013: eighth annual summit; Netanyahu via satellite; 'We took Capitol Hill by storm today!' said Victor Styrsky, CUFI eastern regional director.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_charisma_2013"
+    ]
+   },
+   {
+    "text": "Jewish Press 2014: 'some 4,800' delegates; Netanyahu 'via taped message'; Lindsey Graham told Israel to 'go as far as you need to go, and do what you've got to do'; next day members lobbied to 'stop funding the Palestinian Authority'.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_jp_summit2014"
+    ]
+   },
+   {
+    "text": "Jewish Insider 2026: CUFI Action Fund spending 'six figures'; billboards show Trump atop the American flag and Massie atop the Iranian flag ('Kentucky = Trump Country', 'Tell Massie: Support Peace Through Strength', 'No Support for Iranian Regime'); Ari Morgenstern, senior director of CUFI Action Fund: 'securing every available billboard in the district'.",
+    "strength": "reported",
+    "sources": [
+     "ts8a_ji_massie"
+    ]
+   },
+   {
+    "text": "IFCJ Form 990: revenue 2012 $113.5m, 2013 $110.4m, 2014 $129.4m, 2016 $131.1m, 2017 $121.3m, 2018 $120.0m; 2023 contributions $271.6m; 2024 expenses $272.0m and total assets $233.0m.",
+    "strength": "primary",
+    "sources": [
+     "ts8a_pp_ifcj"
+    ]
+   },
+   {
+    "text": "CUFI Action Fund Form 990: expenses $445,837 (2015), $818,410 (2017), $1,318,005 (2018), $673,056 (2021), $567,791 (2023); revenue $57,441 (2019), $204,821 (2022).",
+    "strength": "primary",
+    "sources": [
+     "ts8a_pp_cufiaf"
+    ]
+   },
+   {
+    "text": "ICEJ: a 'group of Evangelicals' founded a 'Christian Embassy' as 'an act of solidarity with the Jewish people's deep spiritual longing and attachment to this city'.",
+    "strength": "primary",
+    "sources": [
+     "ts8a_icej_about"
+    ]
+   }
+  ],
+  "sources": {
+   "ts8a_inn_netanyahu2019": {
+    "url": "https://www.israelnationalnews.com/News/News.aspx/265676",
+    "label": "Arutz Sheva / Israel National News, 'PM Netanyahu addresses CUFI 2019 Summit in Washington', 8 July 2019"
+   },
+   "ts8a_lib_falwell": {
+    "url": "https://www.liberty.edu/champion/2022/02/28/in-pursuit-of-peace-dr-falwell-sr-prayed-for-and-befriended-israel",
+    "label": "Liberty Champion, 'In Pursuit of Peace', 28 February 2022 (audit re-fetch)"
+   },
+   "ts8a_jta_peres1985": {
+    "url": "https://jta.org/archive/reluctant-peres-meets-falwell",
+    "label": "JTA, 'Reluctant Peres Meets Falwell', 7 March 1985 (audit re-fetch)"
+   },
+   "ts8a_jta_eckstein": {
+    "url": "https://jta.org/?p=1631566",
+    "label": "JTA, Eckstein obituary, 6 February 2019 (audit re-fetch)"
+   },
+   "ts8a_charisma_2013": {
+    "url": "https://mycharisma.com/news/christians-jews-affirm-alliance-at-cufi-summit/",
+    "label": "Charisma News, CUFI summit, 30 July 2013 (audit re-fetch)"
+   },
+   "ts8a_jp_summit2014": {
+    "url": "https://jewishpress.com/christian-group-offers-passionate-support-for-israel-at-critical-moment/",
+    "label": "Edwin Black, Jewish Press, 30 July 2014 (audit re-fetch)"
+   },
+   "ts8a_ji_massie": {
+    "url": "https://jewishinsider.com/2026/04/christians-united-for-israel-thomas-massie-billboard-campaign/",
+    "label": "Jewish Insider, CUFI Massie billboards, April 2026 (audit re-fetch)"
+   },
+   "ts8a_pp_ifcj": {
+    "url": "https://projects.propublica.org/nonprofits/organizations/363256096",
+    "label": "ProPublica Nonprofit Explorer, IFCJ (audit re-fetch, 21 October 2026)"
+   },
+   "ts8a_pp_cufiaf": {
+    "url": "https://projects.propublica.org/nonprofits/organizations/461868892",
+    "label": "ProPublica Nonprofit Explorer, CUFI Action Fund (audit re-fetch, 21 October 2026)"
+   },
+   "ts8a_icej_about": {
+    "url": "https://icej.org/about",
+    "label": "ICEJ, About (audit re-fetch, 21 October 2026)"
+   }
+  }
  }
 }

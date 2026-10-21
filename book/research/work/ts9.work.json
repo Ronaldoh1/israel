@@ -240,5 +240,67 @@
     "label": "Alex Kane, +972 Magazine, 'Sheldon Adelson's far right alliance will serve Israel long after his death', 13 January 2021"
    }
   }
+ },
+ "ts9_audit": {
+  "topic": "Audit re-fetches for Part Nine",
+  "claims": [
+   {
+    "text": "Netanyahu addressed the 8 July 2019 CUFI summit remotely from Jerusalem.",
+    "strength": "reported",
+    "sources": [
+     "ts9a_inn_netanyahu2019"
+    ]
+   },
+   {
+    "text": "Democracy Now: the line 'At the heart of Christian Zionism is not a love for Israel but rather Christian nationalism' is from Posner's writing, read by Juan Gonzalez; Posner said Hagee 'has basically hoodwinked many Jews into believing that he actually supports Israel'.",
+    "strength": "reported",
+    "sources": [
+     "ts9a_dn_posner"
+    ]
+   },
+   {
+    "text": "Brog (7 Sep 2017, Congregation Emanu-El): evangelicals reject replacement theology; CUFI members know Jews better than other Christians and so are more sensitive to Jewish aversion to proselytising.",
+    "strength": "reported",
+    "sources": [
+     "ts9a_j_brog2017"
+    ]
+   },
+   {
+    "text": "MinistryWatch: IFCJ paid nearly $8 million in 2018 to The Bigham Agency, a direct-response firm; the International Center for Christian Outreach was cancelled after Eckstein's death and falling revenue.",
+    "strength": "reported",
+    "sources": [
+     "ts9a_mw_ifcj"
+    ]
+   },
+   {
+    "text": "Tanenbaum 1981 counted 'an estimated 30 million \"mainline\" Evangelicals', 50 million Roman Catholics and 'some 45 million liberal Protestants'; the news item on the same page says Begin 'agreed to meet with the Rev. Jerry Falwell'.",
+    "strength": "reported",
+    "sources": [
+     "ts9a_djn_tanenbaum"
+    ]
+   }
+  ],
+  "sources": {
+   "ts9a_inn_netanyahu2019": {
+    "url": "https://www.israelnationalnews.com/News/News.aspx/265676",
+    "label": "Israel National News, 'PM Netanyahu addresses CUFI 2019 Summit in Washington', 8 July 2019"
+   },
+   "ts9a_dn_posner": {
+    "url": "https://www.democracynow.org/2023/11/15/washington_march_for_israel",
+    "label": "Democracy Now!, Sarah Posner interview, 15 November 2023 (audit re-fetch)"
+   },
+   "ts9a_j_brog2017": {
+    "url": "https://jweekly.com/2017/09/08/christian-zionist-group-noble-motives-leader-tells-s-f-crowd/",
+    "label": "J., Brog at Congregation Emanu-El, 8 September 2017 (audit re-fetch)"
+   },
+   "ts9a_mw_ifcj": {
+    "url": "https://ministrywatch.com/?p=4264",
+    "label": "MinistryWatch, IFCJ, 11 September 2020 (audit re-fetch)"
+   },
+   "ts9a_djn_tanenbaum": {
+    "url": "https://digital.bentley.umich.edu/djnews/djn.1981.09.18.001/20/download_text",
+    "label": "Detroit Jewish News, 18 September 1981 (audit re-fetch)"
+   }
+  }
  }
 }

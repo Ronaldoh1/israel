@@ -152,5 +152,45 @@
     "label": "Al Jazeera, 'Turning Point USA held its AmericaFest conference. Here's what happened', 22 December 2025"
    }
   }
+ },
+ "ts10_audit": {
+  "topic": "Audit re-fetches for Part Ten",
+  "claims": [
+   {
+    "text": "Jeffress made the 'wrong side of God' and 'God will judge any nation that divides the land' remarks as a guest on The Sean Hannity Show (radio), as reported by CBN News on 1 January 2017.",
+    "strength": "reported",
+    "sources": [
+     "ts10a_cbn_jeffress2017"
+    ]
+   },
+   {
+    "text": "Netanyahu said Bolsonaro had told him moving the embassy was a matter of 'when, not if'; Mourao: 'a bad idea', about $5 billion in halal food exports.",
+    "strength": "reported",
+    "sources": [
+     "ts10a_ynet_brazil"
+    ]
+   },
+   {
+    "text": "Richard Mouw cited Genesis 17:20 (blessing of Ishmael): 'We have an obligation today to honor that promise of blessing as well'; Joel Hunter sits on the boards of the National Association of Evangelicals and the World Evangelical Alliance.",
+    "strength": "reported",
+    "sources": [
+     "ts10a_cp_hagee2011"
+    ]
+   }
+  ],
+  "sources": {
+   "ts10a_cbn_jeffress2017": {
+    "url": "https://cbn.com/news/us/why-one-pastor-says-obama-and-kerry-wrong-side-god",
+    "label": "CBN News, Jeffress on Obama and Kerry, 1 January 2017 (audit re-fetch)"
+   },
+   "ts10a_ynet_brazil": {
+    "url": "https://www.ynetnews.com/article/5487431",
+    "label": "Ynetnews / AP, 'Brazil opens Israel trade mission in Jerusalem', 31 March 2019 (audit re-fetch)"
+   },
+   "ts10a_cp_hagee2011": {
+    "url": "https://www.christianpost.com/news/hagee-says-dividing-israel-is-not-gods-will-evangelicals-disagree-48384",
+    "label": "Christian Post, Hagee webcast and dissent, 7 January 2011 (audit re-fetch)"
+   }
+  }
  }
 }
