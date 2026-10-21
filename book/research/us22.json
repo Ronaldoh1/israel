@@ -1,0 +1,133 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us22_happiness",
+   "stage": "us22",
+   "topic": "World Happiness Report ranks/scores, Israel vs US",
+   "claims": [
+    {
+     "text": "World Happiness Report 2026 (published 19 Mar 2026): Israel ranked 8th with a life-evaluation (Cantril ladder, 0-10) score of 7.187, three-year average of 2023-2025 Gallup World Poll responses.",
+     "strength": "strong",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_jvl_whr"
+     ]
+    },
+    {
+     "text": "World Happiness Report 2026: United States ranked 23rd with a life-evaluation (Cantril ladder) score of 6.816 (2023-2025 average); up from 24th in WHR 2025.",
+     "strength": "strong",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_fox5_whr26"
+     ]
+    },
+    {
+     "text": "WHR 2026 top 10 for context: Finland 7.764, Iceland 7.540, Denmark 7.539, Costa Rica 7.439, Sweden 7.255, Norway 7.242, Netherlands 7.223, Israel 7.187, Luxembourg 7.063, Switzerland 7.018. Primary data file is WHR26_Data_Figure_2.1.xlsx (not directly read; proxy/fetch blocked).",
+     "strength": "moderate",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_whr26_ed"
+     ]
+    },
+    {
+     "text": "World Happiness Report 2020 (2017-2019 average): Israel ranked 14th (score 7.129); United States ranked 18th (score 6.940).",
+     "strength": "moderate",
+     "sources": [
+      "us22_whr_wiki",
+      "us22_jvl_whr"
+     ]
+    },
+    {
+     "text": "Israel's WHR rank trend per Jewish Virtual Library compilation: 2012 report 14th? -- NOT VERIFIED; JVL lists 11th for 2010-12 (WHR 2013), 11th in WHR 2015/2016-era editions, 14th for 2017-19 (WHR 2020), 11th in 2021, 9th 2022, 4th 2023, 5th 2024, 8th 2025, 8th 2026. Scores not given by JVL.",
+     "strength": "moderate",
+     "sources": [
+      "us22_jvl_whr"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_whr26_hli",
+     "url": "https://www.happierlivesinstitute.org/2026/03/19/world-happiness-report-2026-full-country-rankings-our-favourite-finding/",
+     "label": "Happier Lives Institute, World Happiness Report 2026: Full Rankings & Key Findings, 19 Mar 2026 (reproduces WHR 2026 Figure 2.1)"
+    },
+    {
+     "key": "us22_whr26_ed",
+     "url": "https://worldhappiness.report/ed/2026/",
+     "label": "World Happiness Report 2026 edition page (Figure 2.1 data: https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx)"
+    },
+    {
+     "key": "us22_whr_wiki",
+     "url": "https://en.wikipedia.org/wiki/World_Happiness_Report",
+     "label": "Wikipedia, World Happiness Report (2020 ranking table), accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_jvl_whr",
+     "url": "https://www.jewishvirtuallibrary.org/israel-s-rank-on-world-happiness-index",
+     "label": "Jewish Virtual Library, Israel's Rank on World Happiness Index (ranks only, citing WHR/SDSN and Times of Israel 19 Mar 2026)"
+    },
+    {
+     "key": "us22_fox5_whr26",
+     "url": "https://www.fox5atlanta.com/news/worlds-happiest-countries-2026-revealed-where-us-ranks",
+     "label": "FOX 5 Atlanta, World's happiest countries 2026 revealed; here's where US ranks, Mar 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_debtclaims",
+   "stage": "us22",
+   "topic": "Medical bankruptcy: two estimates",
+   "claims": [
+    {
+     "text": "Himmelstein et al. (AJPH, 2019), surveying 910 bankruptcy filers in 2013-16, reported that 66.5% cited medical issues (bills or illness-related income loss) as contributing to their bankruptcy; the figure counts contribution as reported by filers, not causation.",
+     "strength": "moderate",
+     "sources": [
+      "us22_himmelstein2019"
+     ]
+    },
+    {
+     "text": "Dobkin, Finkelstein, Kluender and Notowidigdo (NEJM, 2018), linking hospital records to credit and bankruptcy records, estimated that hospitalisations cause about 4% of bankruptcies among non-elderly adults, and argued that survey shares overstate causation because they count bills that would not by themselves have led to bankruptcy.",
+     "strength": "moderate",
+     "sources": [
+      "us22_dobkin2018"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_himmelstein2019",
+     "url": "https://doi.org/10.2105/AJPH.2018.304901",
+     "label": "Himmelstein, Lawless, Thorne, Foohey and Woolhandler, 'Medical Bankruptcy: Still Common Despite the Affordable Care Act', American Journal of Public Health, March 2019"
+    },
+    {
+     "key": "us22_dobkin2018",
+     "url": "https://doi.org/10.1056/NEJMp1716604",
+     "label": "Dobkin, Finkelstein, Kluender and Notowidigdo, 'Myth and Measurement — The Case of Medical Bankruptcies', New England Journal of Medicine, 22 March 2018"
+    }
+   ]
+  },
+  {
+   "id": "us22_poverty",
+   "stage": "us22",
+   "topic": "OECD relative poverty, US",
+   "claims": [
+    {
+     "text": "OECD relative poverty rate (share below half the median disposable income), United States: 18% in 2023 or the latest available year, among the highest in the OECD.",
+     "strength": "moderate",
+     "sources": [
+      "us22_statista_oecdpov"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_statista_oecdpov",
+     "url": "https://www.statista.com/statistics/233910/poverty-rates-in-oecd-countries",
+     "label": "Statista, 'Poverty rates in OECD countries 2023' (OECD Income Distribution Database, 2023 or latest available)"
+    }
+   ]
+  }
+ ]
+}
