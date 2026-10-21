@@ -130,9 +130,7 @@
    }
   ],
   "parts_total": 6,
-  "absorbs": [
-   "ch12"
-  ]
+  "absorbs": []
  },
  "money": {
   "slot": "ch54",
@@ -845,14 +843,67 @@
  },
  "_planned": [
   {
-   "host": "ch06",
-   "title": "From 1967 to Oslo",
-   "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
+   "host": "ch21",
+   "title": "The Greater Israel Architecture",
+   "subtitle": "The Maps, the Movements and the Fronts: Egypt, Jordan, Syria and Iraq",
    "merge": [
-    "ch07",
-    "ch08"
+    "ch22",
+    "ch25",
+    "ch63",
+    "ch47"
    ],
-   "priority": 7
+   "priority": 1
+  },
+  {
+   "host": "ch40",
+   "title": "US System vs Israel System",
+   "subtitle": "Government, Rights, Money and the Cost of Living, Compared Over Time",
+   "merge": [
+    "ch60"
+   ],
+   "priority": 2
+  },
+  {
+   "host": null,
+   "key": "theology",
+   "after": "ch12",
+   "scenes": [
+    "s05",
+    "bc_s05",
+    "gx_s05",
+    "bwm_src_s15"
+   ],
+   "title": "The Theology Shield",
+   "subtitle": "Christian Zionism from Darby and Scofield to CUFI",
+   "priority": 3
+  },
+  {
+   "host": "ch12",
+   "title": "The Vatican Architecture",
+   "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
+   "merge": [],
+   "priority": 4
+  },
+  {
+   "host": "ch19",
+   "title": "The Netanyahu Architecture",
+   "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
+   "merge": [
+    "ch10",
+    "ch61",
+    "ch14",
+    "ch41"
+   ],
+   "priority": 5
+  },
+  {
+   "host": "ch20",
+   "title": "Aid and Arms",
+   "subtitle": "What America Pays, What It Buys, and What About America",
+   "merge": [
+    "ch17"
+   ],
+   "priority": 6
   },
   {
    "host": "ch57",
@@ -862,7 +913,7 @@
     "ch58",
     "ch59"
    ],
-   "priority": 4
+   "priority": 7
   },
   {
    "host": "ch18",
@@ -876,42 +927,26 @@
     "ch44",
     "ch52"
    ],
-   "priority": 5
+   "priority": 8
   },
   {
-   "host": "ch19",
-   "title": "The Netanyahu Architecture",
-   "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
+   "host": "ch34",
+   "title": "The Epstein Architecture",
+   "subtitle": "The Network, the Files and Power Protects Power",
    "merge": [
-    "ch10",
-    "ch61",
-    "ch14",
-    "ch41",
-    "ch40"
+    "ch50"
    ],
-   "priority": 2
+   "priority": 9
   },
   {
-   "host": "ch20",
-   "title": "Aid and Arms",
-   "subtitle": "What America Pays, What It Buys, and What About America",
+   "host": "ch06",
+   "title": "From 1967 to Oslo",
+   "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
    "merge": [
-    "ch17",
-    "ch60"
+    "ch07",
+    "ch08"
    ],
-   "priority": 3
-  },
-  {
-   "host": "ch21",
-   "title": "The Greater Israel Architecture",
-   "subtitle": "The Maps, the Movements and the Fronts: Egypt, Jordan, Syria and Iraq",
-   "merge": [
-    "ch22",
-    "ch25",
-    "ch63",
-    "ch47"
-   ],
-   "priority": 1
+   "priority": 10
   },
   {
    "host": "ch23",
@@ -926,16 +961,7 @@
     "ch68",
     "ch69"
    ],
-   "priority": 8
-  },
-  {
-   "host": "ch34",
-   "title": "The Epstein Architecture",
-   "subtitle": "The Network, the Files and Power Protects Power",
-   "merge": [
-    "ch50"
-   ],
-   "priority": 6
+   "priority": 11
   },
   {
    "host": "ch53",
@@ -944,7 +970,7 @@
    "merge": [
     "ch55"
    ],
-   "priority": 9
+   "priority": 12
   },
   {
    "host": "ch51",
@@ -954,7 +980,7 @@
     "ch70",
     "ch49"
    ],
-   "priority": 10
+   "priority": 13
   }
  ]
 }

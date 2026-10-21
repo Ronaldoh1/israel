@@ -185,7 +185,8 @@ if divine:
 # ---- Thematic volumes that take a simulation chapter's place on the shelf (volumes.json: 'slot': '<chapter id>') ----
 SLOTTED = {}
 ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) for c in v.get('absorbs', [])}   # chapters merged into a written volume leave the shelf
-PLANNED = {p['host']: p for p in VOLS.get('_planned', [])}   # planned (unwritten) volumes that merge several simulation chapters under one title
+PLANNED = {p['host']: p for p in VOLS.get('_planned', []) if p.get('host')}   # planned (unwritten) volumes that merge several simulation chapters under one title
+HOSTLESS = [p for p in VOLS.get('_planned', []) if not p.get('host')]   # planned volumes with no chapter of their own: shown after p['after'], drawing on the scenes listed in p['scenes']
 ABSORBED |= {c for p in PLANNED.values() for c in p.get('merge', [])}
 AFTER = {}   # volumes.json 'after': '<chapter id>' places a volume right after that chapter (or the volume slotted into it), without replacing anything
 for key, v in VOLS.items():
@@ -221,6 +222,11 @@ for c in CH:
                   'priority': (pl or {}).get('priority'), 'keywords': ' '.join(SC[x]['t'] for x in scs if x in SC)})
     vol += 1
     for x in AFTER.get(c['id'], []): b = dict(x); b['vol'] = vol; books.append(b); vol += 1
+    for pl in [h for h in HOSTLESS if h.get('after') == c['id']]:
+        scs = [x for x in pl['scenes'] if x in SC]
+        books.append({'id': pl['key'], 'vol': vol, 'status': 'preparing', 'title': pl['title'], 'subtitle': pl['subtitle'], 'span': span(scs), 'count': len(scs), 'first': scs[0],
+                      'priority': pl.get('priority'), 'keywords': ' '.join(SC[x]['t'] for x in scs)})
+        vol += 1
 
 import datetime
 lib = {'edition': datetime.date.today().strftime('%B %Y'), 'author': 'Ron Hernandez', 'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
