@@ -155,5 +155,156 @@
     "label": "Eve Young, Jerusalem Post, 'Israel's gender-wage gap worse than developed world and growing, Shoresh Institution says', 4 Mar 2025"
    }
   }
+ },
+ "us13_unions": {
+  "topic": "Histadrut vs US unions; density and bargaining coverage; laws; strikes",
+  "claims": [
+   {
+    "text": "BLS: US union membership rate 10.0% in 2025 (14.7m) vs 9.9% in 2024 (14.3m) and 20.1% (17.7m) in 1983; public sector 32.9%, private 5.9% (2025); 11.2% (16.5m) represented by unions; median weekly earnings $1,404 union vs $1,174 nonunion (full-time); October 2025 excluded owing to the shutdown.",
+    "strength": "primary",
+    "sources": [
+     "us13_bls_union2025"
+    ]
+   },
+   {
+    "text": "Histadrut founded December 1920 in Haifa for Jewish workers; Arabs admitted from 1953 (Wikipedia; other accounts say 1959); owned Bank Hapoalim (lost after the 1983 bank-share crisis), ZIM and Clalit; employed about 280,000 in 1989; Clalit covered ~70% of Israelis in mid-1980s.",
+    "strength": "reported",
+    "sources": [
+     "us13_wiki_histadrut"
+    ]
+   },
+   {
+    "text": "Histadrut density: 68% of the Jewish workforce (1927), ~75% (1939), ~85% of wage earners (1983), 27% of the workforce (2016); membership fell from 1.8m (~80% of the workforce) to about 200,000 in 1994–95 after the health law cut the Clalit link; ~650,000 (2005), 570,000 (2017); 800,000 per infobox; general strikes Feb 2012 and March 2023 (called off same day after Netanyahu paused the judicial legislation).",
+    "strength": "reported",
+    "sources": [
+     "us13_wiki_histadrut"
+    ]
+   },
+   {
+    "text": "Shalev (1996): the Histadrut negotiated for 85% of wage earners until the early 1990s and spoke for about two-thirds of Israeli adults; it agreed to the 1985 stabilization plan; Labor lost control of it in May 1994; the National Health Insurance Law (early 1995) ended entitlement to Sick Fund care through membership.",
+    "strength": "reported",
+    "sources": [
+     "us13_shalev_labor"
+    ]
+   },
+   {
+    "text": "OECD (Sept 2017, situation Dec 2015): Israel's private-sector union density 10–20%; collective bargaining coverage 20–30% of employees; bargaining predominantly company/sectoral, decentralised; extension of sectoral agreements by the ministry exists but is uncommon.",
+    "strength": "primary",
+    "sources": [
+     "us13_oecd_cb_israel"
+    ]
+   },
+   {
+    "text": "NPR, 2 Sept 2024: the Histadrut called a general strike after six hostages' bodies were recovered in Gaza; Ben Gurion airport paused flights for hours; Israel's Labor Court ordered it to end by 2:30 pm and the Histadrut complied.",
+    "strength": "reported",
+    "sources": [
+     "us13_npr_strike2024"
+    ]
+   },
+   {
+    "text": "Equitable Growth (2017): US bargaining is enterprise-level; the US ranked last of 21 OECD countries in collective bargaining coverage; nearly one in three US workers was a union member in 1960, just over one in ten in 2016.",
+    "strength": "reported",
+    "sources": [
+     "us13_eg_bargaining"
+    ]
+   },
+   {
+    "text": "Littler: Michigan's repeal of right-to-work took effect 30 Mar 2024 (first state in 58 years to repeal); 26 states have such laws under NLRA Section 14(b), which bar enforcement of union-security clauses.",
+    "strength": "reported",
+    "sources": [
+     "us13_littler_rtw"
+    ]
+   }
+  ],
+  "sources": {
+   "us13_bls_union2025": {
+    "url": "https://www.bls.gov/news.release/archives/union2_02182026.htm",
+    "label": "US Bureau of Labor Statistics, 'Union Members — 2025', news release, 18 Feb 2026"
+   },
+   "us13_wiki_histadrut": {
+    "url": "https://en.wikipedia.org/wiki/Histadrut",
+    "label": "Wikipedia, 'Histadrut'"
+   },
+   "us13_shalev_labor": {
+    "url": "https://pluto.huji.ac.il/%7Emshalev/Papers/LaborMovement.pdf",
+    "label": "Michael Shalev, 'The Labor Movement in Israel: Ideology and Political Economy', in E. J. Goldberg (ed.), The Social History of Labor in the Middle East (Westview, 1996)"
+   },
+   "us13_oecd_cb_israel": {
+    "url": "https://t4.oecd.org/employment/emp/collective-bargaining-Israel.pdf",
+    "label": "OECD, 'Collective bargaining systems: Israel' country profile, Sept 2017"
+   },
+   "us13_npr_strike2024": {
+    "url": "https://www.kpbs.org/news/international/2024/09/02/israels-labor-strike-over-hostages-is-called-off-after-court-order",
+    "label": "Willem Marx and Kat Lonsdorf, NPR (via KPBS), 'Israel's labor strike over hostages is called off after court order', 2 Sept 2024"
+   },
+   "us13_eg_bargaining": {
+    "url": "https://equitablegrowth.org/why-is-collective-bargaining-so-difficult-in-the-united-states-compared-to-its-international-peers/",
+    "label": "Bridget Ansel, Washington Center for Equitable Growth, 'Why is collective bargaining so difficult in the United States compared to its international peers?', 22 Feb 2017"
+   },
+   "us13_littler_rtw": {
+    "url": "https://www.littler.com/publication-press/publication/michigan-repeals-right-work-law",
+    "label": "Littler Mendelson (Tuzzo, Perez, Thorn), 'Michigan Repeals Right-to-Work Law', 29 Mar 2023"
+   }
+  }
+ },
+ "us13_migrants": {
+  "topic": "Palestinian and migrant workers in Israel; unauthorized workers in the US",
+  "claims": [
+   {
+    "text": "PCBS: West Bank workers in Israel and settlements about 172,000 before the war (about 127,000 with permits), about 25,000 in Q4 2023, about 51,000 in Q4 2025 (about 14,000 permit holders); West Bank unemployment about 13% (Q3 2023) to about 28% (Q4 2025); Gaza unemployment about 45% before to about 68% (Q4 2024).",
+    "strength": "primary",
+    "sources": [
+     "us13_pcbs_workers2026"
+    ]
+   },
+   {
+    "text": "+972 (6 May 2026): over 200,000 Palestinians barred after 7 Oct 2023 (150,000 West Bank permit holders, ~50,000 without permits, 18,500 from Gaza); 8,000 permits in 2025; >10,000 work in settlements; residential construction fell 95%; Kav LaOved counts about 270,000 migrant workers; plans for ~65,000 from India, Sri Lanka and Uzbekistan; quotas ~30,000 each in agriculture and construction, caregiving uncapped; visas tied to the employer; agricultural migrants paid ~70% of wages owed (Kav LaOved 2014); Thai workers the group most affected on 7 Oct.",
+    "strength": "reported",
+    "sources": [
+     "us13_972_workers"
+    ]
+   },
+   {
+    "text": "The Media Line citing PIBA: almost 61,000 new foreign-worker permits in 2025, total 227,044; a May 2024 government decision raised the quota to 3.3% of the population; PIBA's Moshe Nakash cited a shortfall of 100,000.",
+    "strength": "reported",
+    "sources": [
+     "us13_tml_piba"
+    ]
+   },
+   {
+    "text": "EPI citing Pew: 8.3 million unauthorized immigrants in the US labour force in 2022 (just under 5% of the workforce), up from 3.6 million in 1995; employers can use fear of retaliation and deportation to underpay them.",
+    "strength": "reported",
+    "sources": [
+     "us13_epi_unauth"
+    ]
+   },
+   {
+    "text": "Contradiction: pre-war count of Palestinian workers in Israel differs: PCBS ~172,000 West Bank incl. ~127,000 permits; +972 150,000 permit holders + ~50,000 without; Media Line/Kav LaOved ~100,000.",
+    "strength": "disputed",
+    "sources": [
+     "us13_pcbs_workers2026",
+     "us13_972_workers",
+     "us13_tml_piba"
+    ]
+   }
+  ],
+  "sources": {
+   "us13_pcbs_workers2026": {
+    "url": "https://pcbs.gov.ps/media/ruapsnvd/internationalworkersday2026e.pdf",
+    "label": "Palestinian Central Bureau of Statistics, 'A Sharp Deterioration in Palestinian Labor Conditions Following the Israeli Aggression against Gaza Strip', 30 Apr 2026"
+   },
+   "us13_972_workers": {
+    "url": "https://www.972mag.com/palestinians-migrant-workers-labor-force-changes/",
+    "label": "Charlotte Ritz-Jack and Dana Mills, +972 Magazine, 'Palestinians out, foreign workers in: How Israel is remaking its labor force', 6 May 2026"
+   },
+   "us13_tml_piba": {
+    "url": "https://www.yahoo.com/news/articles/foreign-workers-replace-palestinian-labor-140708524.html",
+    "label": "The Media Line (via Yahoo News), 'Foreign workers replace Palestinian labor in Israel, face hurdles', c. March 2026"
+   },
+   "us13_epi_unauth": {
+    "url": "https://files.epi.org/uploads/FAQ-Unauthorized-Immigrants-v5.pdf",
+    "label": "Daniel Costa, Josh Bivens and Monique Morrissey, EPI, 'Unauthorized immigrants and the economy' (FAQ), 15 Apr 2025"
+   }
+  }
  }
 }
