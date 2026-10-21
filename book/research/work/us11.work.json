@@ -1,0 +1,384 @@
+{
+ "us11_growth": {
+  "topic": "GDP per person, growth, population, inflation and trade, Israel and US, 1980-2025 (World Bank WDI)",
+  "claims": [
+   {
+    "text": "World Bank GDP per capita, constant 2015 US$: Israel 18,597 (1980), 19,885 (1985), 22,396 (1990), 29,412 (2000), 33,307 (2010), 39,322 (2019), 42,539 (2022), 42,132 (2023), 41,882 (2024), 42,596 (2025); US 31,082 (1980), 34,918 (1985), 39,200 (1990), 48,616 (2000), 52,813 (2010), 61,048 (2019), 64,322 (2022), 65,667 (2023), 66,857 (2024), 67,946 (2025)",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_gdppc_const"
+    ]
+   },
+   {
+    "text": "Book's arithmetic from the constant-dollar series: Israel's GDP per person as a share of the US level was 59.8% (1980), 56.9% (1985), 57.1% (1990), 60.5% (2000), 63.1% (2010), 64.4% (2019), 66.1% (2022), 62.6% (2024), 62.7% (2025). Average annual real growth per person 1980-2025: Israel 1.86%, US 1.75%; 1980-90 IL 1.88/US 2.35; 1990-2000 IL 2.76/US 2.18; 2000-10 IL 1.25/US 0.83; 2010-19 IL 1.86/US 1.62; 2019-25 IL 1.34/US 1.80. Israel's 2025 level was 0.1% above 2022.",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_gdppc_const"
+    ]
+   },
+   {
+    "text": "World Bank GDP per capita PPP (current international $): Israel 15,712 (1990), 25,747 (2000), 29,418 (2010), 41,177 (2019), 59,717 (2025); US 23,889 (1990), 36,330 (2000), 48,643 (2010), 65,228 (2019), 90,027 (2025); book's arithmetic: Israel at 65.8%, 70.9%, 60.5%, 63.1%, 66.3% of the US level",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_gdppc_ppp"
+    ]
+   },
+   {
+    "text": "World Bank population: Israel 3.878m (1980), 4.660m (1990), 6.289m (2000), 7.624m (2010), 9.215m (2020), 10.002m (2024), 10.123m (2025); US 227.2m (1980), 249.6m (1990), 282.2m (2000), 309.4m (2010), 331.6m (2020), 340.0m (2024), 341.8m (2025). Book's arithmetic: population growth averaged 2.2% a year in Israel and 0.9% in the US 1980-2025; real total GDP grew about 6.0 times in Israel and 3.3 times in the US",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_pop",
+     "us11_wb_gdppc_const"
+    ]
+   },
+   {
+    "text": "World Bank CPI inflation (annual average): Israel 131.0% (1980), 116.8% (1981), 120.4% (1982), 146.0% (1983), 373.2% (1984), 307.2% (1985), 47.6% (1986), 19.1% (1987), 17.3% (1990), 12.1% (1992), 1.0% (2000), 2.7% (2010), 4.4% (2022), 3.0% (2025); US 13.5% (1980), 10.3% (1981), 6.1% (1982), 3.2% (1983), 1.9% (1986), 5.4% (1990), 3.4% (2000), 1.6% (2010), 8.0% (2022), 2.9% (2024)",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_cpi"
+    ]
+   },
+   {
+    "text": "World Bank trade (exports+imports) % of GDP: Israel 80.0 (1980), 75.7 (1985), 60.9 (1990), 68.4 (2000), 65.7 (2010), 51.1 (2020), 54.4 (2024), 53.0 (2025); US 20.1 (1980), 16.6 (1985), 19.8 (1990), 25.1 (2000), 28.2 (2010), 23.1 (2020), 25.0 (2024)",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_trade"
+    ]
+   }
+  ],
+  "sources": {
+   "us11_wb_gdppc_const": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/NY.GDP.PCAP.KD?format=json&date=1980:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'GDP per capita (constant 2015 US$)' (NY.GDP.PCAP.KD), Israel and United States, updated 8 October 2026"
+   },
+   "us11_wb_gdppc_ppp": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1990:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'GDP per capita, PPP (current international $)' (NY.GDP.PCAP.PP.CD), updated 8 October 2026"
+   },
+   "us11_wb_pop": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/SP.POP.TOTL?format=json&date=1980:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'Population, total' (SP.POP.TOTL), updated 8 October 2026"
+   },
+   "us11_wb_cpi": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/FP.CPI.TOTL.ZG?format=json&date=1980:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'Inflation, consumer prices (annual %)' (FP.CPI.TOTL.ZG), updated 8 October 2026"
+   },
+   "us11_wb_trade": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/NE.TRD.GNFS.ZS?format=json&date=1980:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'Trade (% of GDP)' (NE.TRD.GNFS.ZS), updated 8 October 2026"
+   }
+  }
+ },
+ "us11_turn": {
+  "topic": "Israel's 1985 Economic Stabilization Plan and the US 1979-86 turn (Volcker, tax law); central banks",
+  "claims": [
+   {
+    "text": "Brookings (Bahar): in 1984 annualized inflation was about 400% (about 1,000% in the second half of 1984), the budget deficit about 17% of GDP; Peres formed a national unity government after the July 1984 election; the plan, led by Michael Bruno, cut the deficit by about 7.5% of GDP mainly by cutting food subsidies, devalued the shekel 20%, froze wages, prices and the exchange rate with pre-set adjustments, raised interest rates; Peres reached a wage agreement with the Histadrut; an American advisory group included Stanley Fischer; emergency US aid of about $750m a year (about 3.5% of GDP) for two years, conditional on reforms; monthly inflation fell from 11% (Q3 1985) to about 1% a year later; unemployment rose only about 2 points",
+    "strength": "reported",
+    "sources": [
+     "us11_brookings_peres"
+    ]
+   },
+   {
+    "text": "Melnick and Mealem: the plan began in July 1985 with spending cuts, tax increases, abolished subsidies, a 'Non-Printing' law barring deficit finance by money creation, tight money, a government-Histadrut-employers wage package, temporary price controls and a fixed exchange rate after devaluation; US one-time grant of $1.5bn over two years; inflation about 20% by mid-1986; public debt about 163% of GDP in the mid-1980s and about 78% in 2008; public spending about 60% of GDP mid-1980s, about 43% end-2008; defence over 20% of GDP mid-1980s; public deficit about 14% of GDP in 1984 then surpluses; October 1983 banking crisis brought the economy close to financial collapse; 'the Stabilization Plan succeeded in achieving its two objectives'",
+    "strength": "reported",
+    "sources": [
+     "us11_jvl_melnick"
+    ]
+   },
+   {
+    "text": "Wikipedia: plan implemented 1 July 1985 under Peres; devised by Yitzhak Moda'i and Michael Bruno among others; measures included curbs on the Bank of Israel's ability to print money to cover deficits; inflation brought under 20% in less than two years; later reforms included 'the privatization of many government-owned businesses'",
+    "strength": "reported",
+    "sources": [
+     "us11_wiki_esp"
+    ]
+   },
+   {
+    "text": "Federal Reserve History: on 6 October 1979 Volcker announced after an unscheduled FOMC meeting a shift from targeting the federal funds rate to the volume of bank reserves; the funds rate reached a record 20% in late 1980; severe recession; unemployment peaked at 10.8% in late 1982; inflation fell to 3.7% in 1983",
+    "strength": "primary",
+    "sources": [
+     "us11_frh_volcker"
+    ]
+   },
+   {
+    "text": "Tax Policy Center: US top marginal income tax rate 70% (1978, 1980), 69.13% (1981), 50% (1982), 38.5% (1987), 28% (1988), 31% (1991), 39.6% (1993), 35% (2003), 39.6% (2013), 37% (2018-2026)",
+    "strength": "primary",
+    "sources": [
+     "us11_tpc_toprate"
+    ]
+   },
+   {
+    "text": "Bank of Israel: under the Bank of Israel Law 2010 the primary goal is price stability; supporting economic activity and financial stability are secondary, pursued only if the Monetary Committee judges price stability will not be harmed; inflation target 1-3% set by government in 2000, in force since 2003; the 2024 review kept the range",
+    "strength": "primary",
+    "sources": [
+     "us11_boi_target"
+    ]
+   },
+   {
+    "text": "Globes, 1 September 2026: Bank of Israel cut its rate 0.25 point to 3.25%, the fifth cut since November 2025, after cuts in late May and early July",
+    "strength": "reported",
+    "sources": [
+     "us11_globes_boi_sep2026"
+    ]
+   },
+   {
+    "text": "Federal Reserve, 16 September 2026: FOMC raised the federal funds target range 1/4 point to 3-3/4 to 4 percent, 12-0; 'Inflation remains elevated'; action 'will support a timelier return to the Committee's 2 percent goal'; refers to the 'dual mandate'",
+    "strength": "primary",
+    "sources": [
+     "us11_fed_sep2026"
+    ]
+   }
+  ],
+  "sources": {
+   "us11_brookings_peres": {
+    "url": "https://www.brookings.edu/articles/how-shimon-peres-saved-the-israeli-economy/",
+    "label": "Dany Bahar, Brookings, 'How Shimon Peres saved the Israeli economy', 30 September 2016"
+   },
+   "us11_jvl_melnick": {
+    "url": "https://jewishvirtuallibrary.org/israel-studies-an-anthology-israel-s-economy",
+    "label": "Rafi Melnick and Yosef Mealem, 'Israel Studies An Anthology: Israel's Economy: 1986-2008', Jewish Virtual Library, September 2009"
+   },
+   "us11_wiki_esp": {
+    "url": "https://en.wikipedia.org/wiki/1985_Israel_Economic_Stabilization_Plan",
+    "label": "Wikipedia, '1985 Israel Economic Stabilization Plan'"
+   },
+   "us11_frh_volcker": {
+    "url": "https://www.federalreservehistory.org/essays/anti-inflation-measures",
+    "label": "Bill Medley, Federal Reserve History, 'Volcker's Announcement of Anti-Inflation Measures'"
+   },
+   "us11_tpc_toprate": {
+    "url": "https://taxpolicycenter.org/sites/default/files/2026-09/toprate_historical.pdf",
+    "label": "Tax Policy Center, 'Historical Highest Marginal Income Tax Rates', table dated 29 September 2026"
+   },
+   "us11_boi_target": {
+    "url": "https://boi.org.il/media/e2pdfttt/revisiting-the-inflation-target.pdf",
+    "label": "Bank of Israel, 'Revisiting the Inflation Target' (inflation target review), 6 November 2024"
+   },
+   "us11_globes_boi_sep2026": {
+    "url": "https://en.globes.co.il/en/article-1001554055",
+    "label": "Globes, 'Bank of Israel makes third successive rate cut', 1 September 2026"
+   },
+   "us11_fed_sep2026": {
+    "url": "https://federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+    "label": "Federal Reserve, FOMC statement, 16 September 2026"
+   }
+  }
+ },
+ "us11_fiscal": {
+  "topic": "Taxes, who pays, deficits and debt: Israel and US over time",
+  "claims": [
+   {
+    "text": "OECD Revenue Statistics 2024 (Israel note): Israel tax-to-GDP 34.0% (2000, period high), 29.1% (2009, low), 32.8% (2022), 29.8% (2023); OECD average 32.9% (2000), 34.0% (2022), 33.9% (2023); Israel 2022 structure: personal income tax 22% of revenue (OECD 24%), corporate 13% (12%), social security 15% (25%), property 12% (5%), VAT 23% (21%)",
+    "strength": "primary",
+    "sources": [
+     "us11_oecd_rev_il"
+    ]
+   },
+   {
+    "text": "OECD Revenue Statistics via DBnomics: US total tax revenue 23.6% of GDP (1965), 27.7% (2022, latest in the series); 1965-2022 range 22.9-28.3%, average 25.5%",
+    "strength": "primary",
+    "sources": [
+     "us11_dbn_rev_us"
+    ]
+   },
+   {
+    "text": "Globes on Finance Ministry chief economist report (March 2022): Israel's tax burden 29.7% of GDP in 2020, 12 points of GDP below the 1986 peak; about half of those with income theoretically liable to income tax were below the threshold in 2021; direct tax rate on gross income about 40% for the top decile and 10% for the lowest; state tax revenue shares VAT 32%, income tax 30%, companies tax 12%; US burden cited as 25.5%",
+    "strength": "reported",
+    "sources": [
+     "us11_globes_taxburden"
+    ]
+   },
+   {
+    "text": "PwC (reviewed 29 June 2026): Israel 2026 top income tax bracket 47% above ILS 560,280; 3% surtax above ILS 721,560 brings the maximum to 50%; from 2025 an additional 2% surtax on capital income above that threshold",
+    "strength": "reported",
+    "sources": [
+     "us11_pwc_il_pit"
+    ]
+   },
+   {
+    "text": "CBO (Jan 2026): 2022 average federal tax rate for all households 20.6% (1979-2022 average 20.9%); top quintile paid 70% of federal taxes (55% in 1979), top 1% paid 27% (14% in 1979); top 1% share of pre-tax-and-transfer income 9% (1979) to 18% (2022), after taxes and transfers 7% to 14%; average federal tax rate fell for every group 1979-2022, most for the lowest quintile; individual income tax rates about -10% (lowest quintile) to 17% (highest)",
+    "strength": "primary",
+    "sources": [
+     "us11_cbo_dist2022"
+    ]
+   },
+   {
+    "text": "CBO (Feb 2026): FY2026 deficit $1.9tn (5.8% of GDP); debt held by the public 99% of GDP at end of 2025, 120% in 2036; passes the 1946 record of 106% in 2030; net interest $1.0tn (3.3% of GDP) in 2026, $2.1tn (4.6%) in 2036",
+    "strength": "primary",
+    "sources": [
+     "us11_cbo_outlook2026"
+    ]
+   },
+   {
+    "text": "OMB FY2009 Analytical Perspectives Table 16-1: US federal debt held by the public 26.1% of GDP (1980), 36.4% (1985), 42.0% (1990), 49.2% (1995), 35.1% (2000), 33.0% (2001), 36.8% (2007)",
+    "strength": "primary",
+    "sources": [
+     "us11_omb_debt"
+    ]
+   },
+   {
+    "text": "IMF WEO: Israel general government gross debt 77.5% of GDP (2000), 85.7% (2005), 69.4% (2010), 63.2% (2015), 71.4% (2020), 61.9% (2023), 67.7% (2024), 67.9% (2025), 68.8% (2026 projection), 71.9% (2030 projection)",
+    "strength": "primary",
+    "sources": [
+     "us11_imf_debt"
+    ]
+   },
+   {
+    "text": "World Bank WDI central government debt: Israel 132.2% of GDP (1990), 117.8% (1991), 99.3% (1995), 88.3% (1999)",
+    "strength": "primary",
+    "sources": [
+     "us11_wb_cgdebt"
+    ]
+   }
+  ],
+  "sources": {
+   "us11_oecd_rev_il": {
+    "url": "https://www.oecd.org/israel/revenue-statistics-israel.pdf",
+    "label": "OECD, Revenue Statistics 2024, country note: Israel"
+   },
+   "us11_dbn_rev_us": {
+    "url": "https://db.nomics.world/OECD/REV/NES.TOTALTAX.TAXGDP.USA",
+    "label": "OECD Revenue Statistics via DBnomics, 'Total tax revenue as % of GDP, United States' (OECD/REV/NES.TOTALTAX.TAXGDP.USA)"
+   },
+   "us11_globes_taxburden": {
+    "url": "https://en.globes.co.il/en/article-treasury-chief-economist-israels-tax-burden-below-oecd-average-1001404799",
+    "label": "Guy Ben Simon, Globes, 'Treasury chief economist: Israel's tax burden below OECD average', 8 March 2022"
+   },
+   "us11_pwc_il_pit": {
+    "url": "https://taxsummaries.pwc.com/israel/individual/taxes-on-personal-income",
+    "label": "PwC Worldwide Tax Summaries, 'Israel: Individual - Taxes on personal income', last reviewed 29 June 2026"
+   },
+   "us11_cbo_dist2022": {
+    "url": "https://www.cbo.gov/publication/62300",
+    "label": "Congressional Budget Office, 'The Distribution of Household Income, 2022', 21 January 2026"
+   },
+   "us11_cbo_outlook2026": {
+    "url": "https://www.cbo.gov/publication/62050",
+    "label": "Congressional Budget Office, Director's Statement on 'The Budget and Economic Outlook: 2026 to 2036', 11 February 2026"
+   },
+   "us11_omb_debt": {
+    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2009-PER/html/BUDGET-2009-PER-7-1.htm",
+    "label": "Office of Management and Budget, Budget of the US Government FY2009, Analytical Perspectives, Table 16-1 'Trends in Federal Debt Held by the Public'"
+   },
+   "us11_imf_debt": {
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP/ISR/USA",
+    "label": "IMF World Economic Outlook DataMapper, 'General government gross debt (% of GDP)' (GGXWDG_NGDP), Israel"
+   },
+   "us11_wb_cgdebt": {
+    "url": "https://api.worldbank.org/v2/country/ISR;USA/indicator/GC.DOD.TOTL.GD.ZS?format=json&date=1980:2025&per_page=200",
+    "label": "World Bank, World Development Indicators, 'Central government debt, total (% of GDP)' (GC.DOD.TOTL.GD.ZS), updated 8 October 2026"
+   }
+  }
+ },
+ "us11_concentration": {
+  "topic": "Israel's business groups and the 2013 Concentration Law; US industry concentration and antitrust; trade policy",
+  "claims": [
+   {
+    "text": "Times of Israel (10 Dec 2013): Knesset passed the concentration law with 72 votes for and one abstention; a 2010 Bank of Israel study found 30% of businesses part of pyramids and ten business groups controlling 41% of the market value of all public companies, Israel the most concentrated economy in the Western world per the study; holding companies limited to two levels, four to six years to spin off; names Tshuva (Delek owns Phoenix), Dankner (IDB: Cellcom, Supersol), Arison (Bank Hapoalim); Smoliansky: 'From now on, we will see pyramids only when we go to Egypt.'",
+    "strength": "reported",
+    "sources": [
+     "us11_toi_concentration"
+    ]
+   },
+   {
+    "text": "Wikipedia: committee created 24 October 2010, interim report 11 October 2011, final recommendations February 2012; law passed December 2013 with 42 coalition and 30 opposition votes and no objections; new pyramids max two layers, existing reduced to three within four years and two within six; a controlling shareholder of a major real entity (turnover or credit above NIS 6bn) may not hold a major financial entity (assets above NIS 40bn); Finance Ministry list of 1,786 real-sector entities, 232 linked to IDB; IDB argued in 2011 there was no link between concentration and competitiveness",
+    "strength": "reported",
+    "sources": [
+     "us11_wiki_concentration"
+    ]
+   },
+   {
+    "text": "Delek Group sold 4.9% stakes in Phoenix to Mizrahi Tefahot and Bank Hapoalim (Aug-Sep 2018, NIS 509m total) to comply with the concentration law, holding 36.4%; completed divestment of a 32.5% stake to Centerbridge and Gallatin Point for NIS 1.57bn ($446m) in 2019 to comply",
+    "strength": "reported",
+    "sources": [
+     "us11_globes_delek2018",
+     "us11_lii_delek2019"
+    ]
+   },
+   {
+    "text": "Grullon, Larkin and Michaely (2019): 'Since the late 1990s, over 75% of US industries have experienced an increase in concentration levels'; firms in industries with the largest increases show higher profit margins and more profitable M&A",
+    "strength": "reported",
+    "sources": [
+     "us11_gl_concentration"
+    ]
+   },
+   {
+    "text": "ITIF (Kennedy, 2020) disputes the scale: in Census data 2002-2012 the top-four share fell or held in 319 of 792 six-digit industries (40%); studies find local concentration steady or falling (Rinz: about 25% fall 1976-2015); Grullon et al.'s results depend on the 1997 start (median HHI increase about 25% from 1972 instead of over 70%)",
+    "strength": "disputed",
+    "sources": [
+     "us11_itif_kennedy"
+    ]
+   },
+   {
+    "text": "Kimmelman (HKS, June 2026): Judge Amit Mehta held Google illegally maintained a monopoly in general search through multi-billion-dollar default payments to Apple, Samsung, Mozilla and others; in the September 2025 remedies ruling he let Google keep paying for default placement with minimal restrictions",
+    "strength": "reported",
+    "sources": [
+     "us11_hks_google"
+    ]
+   },
+   {
+    "text": "USTR: the US-Israel FTA, the first US free trade agreement, entered into force 1 September 1985; 2025 goods trade $34.4bn (US exports $13.7bn, imports $20.7bn, deficit $7bn); services trade $19.7bn; total $54.2bn",
+    "strength": "primary",
+    "sources": [
+     "us11_ustr_israel"
+    ]
+   },
+   {
+    "text": "Globes (1 Aug 2025): US set a 15% tariff on Israeli goods, down from 17% announced 2 April 2025; Israel had expected 10%; Netanyahu's promise to cancel all tariffs on US imports not fully kept",
+    "strength": "reported",
+    "sources": [
+     "us11_globes_tariff15"
+    ]
+   },
+   {
+    "text": "Supreme Court, 20 February 2026, Learning Resources v. Trump (6-3, Roberts): IEEPA does not authorize tariffs; reciprocal tariffs voided; administration announced a 10% global tariff under Section 122 (capped at 15% and 150 days) and Section 301 investigations",
+    "strength": "reported",
+    "sources": [
+     "us11_ks_ieepa"
+    ]
+   }
+  ],
+  "sources": {
+   "us11_toi_concentration": {
+    "url": "https://www.timesofisrael.com/new-law-makes-business-pyramids-history/",
+    "label": "Times of Israel, 'New law makes business pyramids history', 10 December 2013"
+   },
+   "us11_wiki_concentration": {
+    "url": "https://en.wikipedia.org/wiki/Israel%27s_Anti-Concentration_Law",
+    "label": "Wikipedia, 'Israel's Anti-Concentration Law'"
+   },
+   "us11_globes_delek2018": {
+    "url": "https://en.globes.co.il/en/article-1001252251",
+    "label": "Globes, 'Delek sells further 4.9% Phoenix stake in swap deal', 2 September 2018"
+   },
+   "us11_lii_delek2019": {
+    "url": "https://lifeinsuranceinternational.com/?p=19911",
+    "label": "Life Insurance International, Delek completes divestment of Phoenix stake, 6 November 2019"
+   },
+   "us11_gl_concentration": {
+    "url": "https://ideas.repec.org/a/oup/revfin/v23y2019i4p697-743..html",
+    "label": "Gustavo Grullon, Yelena Larkin and Roni Michaely, 'Are US Industries Becoming More Concentrated?', Review of Finance 23(4), 2019, pp. 697-743"
+   },
+   "us11_itif_kennedy": {
+    "url": "https://www2.itif.org/2020-monopoly-myths-markets-more-concentrated.pdf",
+    "label": "Joe Kennedy, ITIF, 'Monopoly Myths: Are Markets Becoming More Concentrated?', June 2020"
+   },
+   "us11_hks_google": {
+    "url": "https://www.hks.harvard.edu/centers/mrcbg/publications/pay-half-better-remedy-google-search",
+    "label": "Eugene Kimmelman, Harvard Kennedy School M-RCBG, 'Pay for Half: A Better Remedy for Google Search', 25 June 2026"
+   },
+   "us11_ustr_israel": {
+    "url": "https://ustr.gov/countries-regions/europe-middle-east/middle-eastnorth-africa/israel",
+    "label": "Office of the US Trade Representative, 'Israel' country page (2025 trade data)"
+   },
+   "us11_globes_tariff15": {
+    "url": "https://en.globes.co.il/en/article-1001517870",
+    "label": "Globes, 'US imposes 15% tariff on imports from Israel', 1 August 2025"
+   },
+   "us11_ks_ieepa": {
+    "url": "https://www.kslaw.com/news-and-insights/u-s-supreme-court-invalidates-the-president-s-ieepa-tariffs-in-learning-resources-inc-v-trump",
+    "label": "King & Spalding, 'U.S. Supreme Court Invalidates the President's IEEPA Tariffs in Learning Resources, Inc. v. Trump', 20 February 2026"
+   }
+  }
+ }
+}
