@@ -33,6 +33,12 @@ add('Family and safety net', 'childpov', 'Child poverty, % below half the median
 add('Public safety', 'homicide', 'Homicide victims per 100,000 (US 2025; Israel 2023)', 4.1, 3.04, S, 10, 0.5, 'us5_homicide', ['us5_fox_fbi2025', 'us5_taub_homicide'])
 add('Public safety', 'gundeaths', 'Firearm deaths per 100,000, all intents (US 2024)', 12.8, None, S, 15, 0, 'us5_guns', ['us5_pew_gundeaths'])
 add('Wellbeing', 'happy', 'World Happiness Report life evaluation, 0–10 (2026)', 6.816, 7.187, S, 4, 8, 'us22_method', ['us22_whr26_hli', 'us22_fox5_whr26'])
+add('Family budget and security', 'oop', 'Out-of-pocket health spending per person, USD PPP (2023; book arithmetic: out-of-pocket share × spending per person)', 1469, 827, S, 2000, 0, 'us16_cost', ['us16_wb_oop', 'us16_wb_chepc'])
+add('Family budget and security', 'food', 'Food as a share of household spending, % (US 2024; Israel 2023); lower leaves more', 12.9, 17.9, S, 25, 5, 'us14_basket', ['us22_bls_ce24_food', 'us22_cbs_hes23_food'])
+add('Family budget and security', 'housingshare', 'Housing as a share of household spending, % (OECD, latest)', 16.5, 21.1, S, 30, 10, 'us14_housing', ['us22_oecd_hpt_usa', 'us22_oecd_hpt_isr'])
+add('Family budget and security', 'rentburden', 'Low-income renters spending over 40% of income on rent, % (OECD, latest)', 48.3, 54.1, S, 70, 10, 'us14_housing', ['us22_oecd_hpt_usa', 'us22_oecd_hpt_isr', 'us22_oecd_hc12'], 'US measured on gross income')
+add('Family budget and security', 'sick', 'Paid sick days a year guaranteed by national law', 0, 18, S, 0, 20, 'us13_wages', ['us22_dol_sick', 'us22_kolzchut_sick'], 'US: 81% of private workers get paid sick leave from employers (2026)')
+add('Family budget and security', 'pension', 'Retirement contribution required by law, % of wages (employer + employee, including severance)', 0, 18.5, S, 0, 20, 'us18_safetynet', ['us22_bls_ebs26', 'us22_boi_dp202508'], 'US: 52% of private workers participate in an employer plan (2026)')
 # --- Liberty and coercion ---
 add('Liberty and coercion', 'fh', 'Freedom House total score, 0–100 (2026)', 81, 73, 53.1, 0, 100, 'us3_elections', ['us3_fh_us2026', 'us3_fh_il2026'] + ['us1_fh_israel2026', 'us9_pcbs_2025'], 'Everyone-governed Israel: population-weighted with the West Bank and Gaza scores')
 add('Liberty and coercion', 'rsf', 'Press-freedom rank of 180 (RSF 2026)', 64, 116, S, 180, 1, 'us3_speech', ['us3_wboc_rsf', 'us3_rsf_il'])
@@ -50,7 +56,7 @@ add('Economy and public finances', 'pubdebt', 'Public debt, % of GDP (2025; US f
 add('Equity inside each system', 'gender', 'WEF Global Gender Gap Index, 0–1 (2025)', 0.756, 0.709, S, 0.6, 0.9, 'us8_gender', ['us8_wiki_ggg'])
 add('Equity inside each system', 'infratio', 'Infant-mortality ratio, most-affected group to majority (US Black:white 2023; Israel Arab:Jewish 2022)', 2.44, 2.43, S, 3, 1, 'us16_outcomes', ['us16_cdc_imr2023', 'us16_toi_moh_gaps'])
 
-SERV = ['Health', 'Work and wages', 'Household debt and prices', 'Housing', 'Education', 'Family and safety net', 'Public safety', 'Wellbeing']
+SERV = ['Health', 'Work and wages', 'Household debt and prices', 'Housing', 'Education', 'Family and safety net', 'Public safety', 'Wellbeing', 'Family budget and security']
 DOMS = SERV + ['Liberty and coercion', 'Economy and public finances', 'Equity inside each system']
 
 def sc(v, f, gl):

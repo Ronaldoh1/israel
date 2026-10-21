@@ -111,5 +111,544 @@
     "label": "Statista, 'Poverty rates in OECD countries 2023' (OECD Income Distribution Database, 2023 or latest available)"
    }
   }
+ },
+ "us22_childcare": {
+  "topic": "Childcare costs and Israel daycare subsidy",
+  "claims": [
+   {
+    "text": "OECD definition: net childcare cost = out-of-pocket cost of full-time centre-based care for two children aged 2 and 3, after childcare benefits, tax reliefs and benefit changes; the standard couple earns 100% + 67% of average earnings. The OECD PF3.4 text places the US among countries where net cost for this couple is at least 18% of average earnings (2021); no exact Israel figure is legible in the document (Israel data year 2020).",
+    "strength": "moderate",
+    "sources": [
+     "us22_oecd_pf34"
+    ]
+   },
+   {
+    "text": "United States, 2022 (OECD data, reported by Statista): a couple with two young children, both working full-time at the average wage, spends 20% of disposable household income on childcare; a single parent on the average wage spends 37%.",
+    "strength": "moderate",
+    "sources": [
+     "us22_statista_ncc"
+    ]
+   },
+   {
+    "text": "Israel: no OECD net-childcare-cost value (as % of average wage or household net income) could be retrieved from an accessible source; the OECD Data Explorer requires JavaScript and the direct SDMX query was not reachable. Not estimated.",
+    "strength": "weak",
+    "sources": [
+     "us22_oecd_pf34"
+    ]
+   },
+   {
+    "text": "Israel daycare subsidy (age 0-3, state-supervised daycare centres): both parents must work or study; eligibility and subsidy level are set by per-capita household income and household size. Average monthly subsidy about NIS 2,300 (Haredi families), NIS 1,600 (Arab), NIS 1,500 (non-Haredi Jewish). In 2022, 89,250 households (103,981 children) used supervised centres; about 226,000 households with children 0-3 met the work/study test and about 140,000 also met the income test. Annual cost about NIS 1.2 billion. Most children in daycare are in private daycare not covered by the scheme.",
+    "strength": "strong",
+    "sources": [
+     "us22_idi_daycare"
+    ]
+   },
+   {
+    "text": "Israel daycare subsidy is run through certified centres supervised by the Ministry of Labor's daycare division; the work test is 24 hours a week for both parents; only about half of eligible mothers received the subsidy in 2018.",
+    "strength": "moderate",
+    "sources": [
+     "us22_kohelet_daycare"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_statista_ncc": {
+    "url": "https://statista.com/chart/33438/share-of-disposable-household-income-spent-on-childcare",
+    "label": "Statista (citing OECD Data Explorer, net childcare costs), Share of disposable household income spent on childcare, 2024 chart, 2022 data"
+   },
+   "us22_oecd_pf34": {
+    "url": "https://t4.oecd.org/els/soc/PF3-4-Childcare-support.pdf",
+    "label": "OECD Family Database, PF3.4 Childcare support (indicator definitions; 2021 data, Israel 2020)"
+   },
+   "us22_idi_daycare": {
+    "url": "https://en.idi.org.il/articles/56417",
+    "label": "Israel Democracy Institute (Gabriel Gordon), Early Childhood Daycare Subsidies in Israel in Different Sectors, 31 Oct 2024"
+   },
+   "us22_kohelet_daycare": {
+    "url": "https://www.kohelet.org.il/wp-content/uploads/2024/05/Subsidizing-Early-Education-1.pdf",
+    "label": "Kohelet Policy Forum, Subsidizing Early Education, May 2024"
+   }
+  }
+ },
+ "us22_saving": {
+  "topic": "Household saving rate",
+  "claims": [
+   {
+    "text": "OECD household net saving rate = household net disposable income plus the adjustment for change in pension entitlements, minus household final consumption expenditure, as % of household net disposable income (households incl. NPISHs).",
+    "strength": "strong",
+    "sources": [
+     "us22_oecd_hhsav"
+    ]
+   },
+   {
+    "text": "United States: OECD household net saving rate 4.9% of household net disposable income, 2024 (as reported from OECD data).",
+    "strength": "moderate",
+    "sources": [
+     "us22_vc_hhsav"
+    ]
+   },
+   {
+    "text": "United States: BEA personal saving rate (personal saving as % of disposable personal income), annual: 5.6% (2023), 5.4% (2024), 4.6% (2025), as published March 2026; subject to BEA annual revision of 30 Sep 2026.",
+    "strength": "strong",
+    "sources": [
+     "us22_fred_psave"
+    ]
+   },
+   {
+    "text": "Israel: no OECD household net saving rate (% of household net disposable income) for a recent year could be found in an accessible source; Israel was absent from the OECD-based rankings checked. Not estimated.",
+    "strength": "weak",
+    "sources": [
+     "us22_vc_hhsav"
+    ]
+   },
+   {
+    "text": "Israel context: Bank of Israel estimates the mandatory pension reforms raised the household saving rate by at least 0.7% of GDP (2006-2019); national saving rose from an average 24.6% of GDP (1995-2004) to 27.2% (2015-2019).",
+    "strength": "strong",
+    "sources": [
+     "us22_boi_pensav"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_oecd_hhsav": {
+    "url": "https://www.oecd.org/en/data/indicators/household-savings.html",
+    "label": "OECD, Household savings indicator (definition page)"
+   },
+   "us22_vc_hhsav": {
+    "url": "https://www.visualcapitalist.com/household-savings-rates-by-country-ranked/",
+    "label": "Visual Capitalist, Ranked: How Much People Save Around the World (OECD household net saving data, 2024 or latest)"
+   },
+   "us22_fred_psave": {
+    "url": "https://fred.stlouisfed.org/series/A072RC1A156NBEA",
+    "label": "BEA via FRED, Personal saving as a percentage of disposable personal income (A072RC1A156NBEA), updated 13 Mar 2026"
+   },
+   "us22_boi_pensav": {
+    "url": "https://www.boi.org.il/media/ogqjvbml/dp202508e.pdf",
+    "label": "Bank of Israel (Braude and Friedmann), The Effect of Israel's Pension System Reforms on the Savings Rate 2006-2019, Discussion Paper 2025.08, June 2025"
+   }
+  }
+ },
+ "us22_childsupport": {
+  "topic": "Child support enforcement and guaranteed maintenance",
+  "claims": [
+   {
+    "text": "Israel: under the Maintenance (Assurance of Payment) Law (in force since 1972), a resident woman holding an unpaid court maintenance judgment is paid monthly by the National Insurance Institute, which then collects from the debtor. The payment is the lower of the court award or the regulation amount (equal to the income-support rate for single-parent families); if NII collects more than it paid, the difference goes to the woman.",
+    "strength": "strong",
+    "sources": [
+     "us22_nii_mezonot23",
+     "us22_nii_alimony"
+    ]
+   },
+   {
+    "text": "Israel 2023: monthly average 11,564 women received NII maintenance payments (12,436 in 2022, -7.0%); NII paid NIS 318.1 million in 2023 and collected NIS 309.1 million from debtors (collections include debts relating to past as well as current recipients, so the two are not a like-for-like recovery rate); average monthly payment NIS 2,204 in Dec 2023 (about 18.6% of the average wage).",
+    "strength": "strong",
+    "sources": [
+     "us22_nii_mezonot23"
+    ]
+   },
+   {
+    "text": "United States FY2024 (preliminary): the IV-D child support program collected 65% of current support due; total distributed collections $29.5 billion (IV-D and non-IV-D); 12.2 million children served; 87% of cases had orders; 63% of cases with arrears had a collection.",
+    "strength": "strong",
+    "sources": [
+     "us22_ocss_fy24"
+    ]
+   },
+   {
+    "text": "United States FY2024: about $26.7 billion distributed ($25.8 billion paid to families); 65.3% of current support collected; more than 11.6 million cases; $115.7 billion of the $146.7 billion owed was past-due, of which $7.5 billion was paid.",
+    "strength": "strong",
+    "sources": [
+     "us22_crs_csbasics"
+    ]
+   },
+   {
+    "text": "United States, Census CPS Child Support Supplement, 2017 data: of 5.4 million custodial parents due support, 45.9% received the full amount, 24.0% partial, 30.2% none; $30.0 billion due, $18.6 billion (62.2%) received. The Census published a 2022-data report (P60-285, Aug 2025), but its full-receipt percentage could not be extracted.",
+    "strength": "strong",
+    "sources": [
+     "us22_census_p60269",
+     "us22_census_p60285"
+    ]
+   },
+   {
+    "text": "No US public guarantor exists equivalent to Israel's NII advance: US agencies enforce and collect but do not pay the custodial parent when the payer defaults (inference from program structure, not a single-source statement).",
+    "strength": "weak",
+    "sources": [
+     "us22_crs_csbasics"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_nii_mezonot23": {
+    "url": "https://www.btl.gov.il/Publications/Skira_shnatit/2023/Documents/chap-3-02-mezonot.pdf",
+    "label": "National Insurance Institute of Israel, Annual Report 2023, ch. 3 Maintenance payments (Hebrew)"
+   },
+   "us22_nii_alimony": {
+    "url": "https://www.btl.gov.il/English%20Homepage/Benefits/Alimony/Pages/default.aspx",
+    "label": "National Insurance Institute of Israel, Maintenance (Alimony) benefit page"
+   },
+   "us22_ocss_fy24": {
+    "url": "https://acf.gov/css/policy-guidance/fy-2024-preliminary-data-report-and-tables",
+    "label": "HHS ACF Office of Child Support Services, FY 2024 Preliminary Data Report and Tables, 17 Jul 2025"
+   },
+   "us22_crs_csbasics": {
+    "url": "https://www.everycrsreport.com/files/2026-01-12_RS22380_d2dffdd562747695fcb9d54aa4540c195edf95ed.html",
+    "label": "Congressional Research Service RS22380, Child Support Enforcement: Program Basics, 12 Jan 2026"
+   },
+   "us22_census_p60269": {
+    "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p60-269.pdf",
+    "label": "US Census Bureau, Custodial Mothers and Fathers and Their Child Support: 2017 (P60-269), 2020"
+   },
+   "us22_census_p60285": {
+    "url": "https://www.census.gov/library/publications/2025/demo/p60-285.html",
+    "label": "US Census Bureau, Custodial Parents and Their Child Support: 2022 (P60-285), Aug 2025"
+   }
+  }
+ },
+ "us22_transport": {
+  "topic": "Transport spending and car ownership",
+  "claims": [
+   {
+    "text": "United States 2024 (BLS CE): transportation $13,318 = 17.0% of average annual expenditures per consumer unit ($78,535). Note: CE 'total expenditures' includes personal insurance and pensions (12.5%).",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ce24"
+    ]
+   },
+   {
+    "text": "Israel 2023 (CBS HES): 'transport and communications' combined = 18.6% of average monthly consumption expenditure (NIS 18,088 incl. imputed housing services); the press release does not report transport separately.",
+    "strength": "strong",
+    "sources": [
+     "us22_cbs_hes23"
+    ]
+   },
+   {
+    "text": "Israel 2023: 71.9% of households own at least one car, 25.2% two or more (top decile 92.5%, bottom decile 41.1%).",
+    "strength": "strong",
+    "sources": [
+     "us22_cbs_hes23"
+    ]
+   },
+   {
+    "text": "Israel end-2024: 421 motor vehicles and 366 private cars per 1,000 residents (CBS).",
+    "strength": "strong",
+    "sources": [
+     "us22_cbs_mv24"
+    ]
+   },
+   {
+    "text": "United States 2022: 282.2 million registered motor vehicles (99.7 million automobiles, 172.4 million trucks incl. light trucks/SUVs) per FHWA MV-1. US registrations do not separate 'passenger cars' comparably to Israel's 'private cars', because most US household vehicles are classed as light trucks.",
+    "strength": "strong",
+    "sources": [
+     "us22_fhwa_mv1_22"
+    ]
+   },
+   {
+    "text": "Same-table comparison (motor vehicles per 1,000 people): United States 779 (2023), Israel 439 (2022).",
+    "strength": "moderate",
+    "sources": [
+     "us22_wiki_mvpc"
+    ]
+   },
+   {
+    "text": "OECD comparative price level for cars (purchase of vehicles) for Israel vs US: not found in an accessible source. Not estimated.",
+    "strength": "weak",
+    "sources": [
+     "us22_wiki_mvpc"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_bls_ce24": {
+    "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+    "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+   },
+   "us22_cbs_hes23": {
+    "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+    "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+   },
+   "us22_cbs_mv24": {
+    "url": "https://www.cbs.gov.il/he/publications/DocLib/2025/1978/e_print.pdf",
+    "label": "Israel CBS, Motor Vehicles in Israel 2024 (Publication 1978), Nov 2025"
+   },
+   "us22_fhwa_mv1_22": {
+    "url": "https://www.fhwa.dot.gov/policyinformation/statistics/2022/mv1.cfm",
+    "label": "US FHWA, Highway Statistics 2022, Table MV-1 State Motor-Vehicle Registrations"
+   },
+   "us22_wiki_mvpc": {
+    "url": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_motor_vehicles_per_capita",
+    "label": "Wikipedia, List of countries and territories by motor vehicles per capita (accessed Oct 2026)"
+   }
+  }
+ },
+ "us22_foodshare": {
+  "topic": "Food share of household spending",
+  "claims": [
+   {
+    "text": "United States 2024 (BLS CE): food $10,169 = 12.9% of average annual expenditures (food at home $6,224, food away from home $3,945). Alcoholic beverages are separate (0.8%).",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ce24_food"
+    ]
+   },
+   {
+    "text": "Israel 2023 (CBS HES): food including fruit and vegetables = 17.9% of average monthly consumption expenditure. Definitions differ: Israel's denominator is consumption incl. imputed housing services; the US denominator includes personal insurance and pensions.",
+    "strength": "strong",
+    "sources": [
+     "us22_cbs_hes23_food"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_bls_ce24_food": {
+    "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+    "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+   },
+   "us22_cbs_hes23_food": {
+    "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+    "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+   }
+  }
+ },
+ "us22_studentdebt": {
+  "topic": "Student debt and tuition",
+  "claims": [
+   {
+    "text": "United States, as of 31 Mar 2026: outstanding federal student loan portfolio about $1.7 trillion held by 42.6 million recipients (federally managed portion over $1.64 trillion, 40.9 million).",
+    "strength": "strong",
+    "sources": [
+     "us22_fsa_q2fy26"
+    ]
+   },
+   {
+    "text": "United States 2026: average federal student loan debt $40,467 per borrower (42.6 million borrowers, $1.724 trillion federal); total incl. private loans $1.863 trillion; average incl. private up to $43,521.",
+    "strength": "moderate",
+    "sources": [
+     "us22_edi_sld"
+    ]
+   },
+   {
+    "text": "Israel 2025/26: full annual bachelor's tuition at the Hebrew University NIS 12,017 for Israeli citizens (set by the Council for Higher Education, CPI-linked); non-citizens NIS 15,021.",
+    "strength": "strong",
+    "sources": [
+     "us22_huji_tuition"
+    ]
+   },
+   {
+    "text": "Israel: no national government student-loan program was found; proposals (Shochat Committee, 'Free to Learn' income-contingent scheme) were shelved as of 2008. Students borrow through banks, university/institutional funds and free-loan societies.",
+    "strength": "moderate",
+    "sources": [
+     "us22_neaman_loans",
+     "us22_nbn_loans"
+    ]
+   },
+   {
+    "text": "Israel: no national student-debt total was found in any official source. Not estimated.",
+    "strength": "weak",
+    "sources": [
+     "us22_neaman_loans"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_fsa_q2fy26": {
+    "url": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-23/federal-student-aid-posts-updated-reports-fsa-data-center",
+    "label": "US Dept of Education FSA, GENERAL-26-38: FSA Posts Updated Reports to FSA Data Center (data through 31 Mar 2026), 23 Jun 2026"
+   },
+   "us22_edi_sld": {
+    "url": "https://educationdata.org/student-loan-debt-statistics",
+    "label": "Education Data Initiative, Student Loan Debt Statistics, updated 16 Jul 2026"
+   },
+   "us22_huji_tuition": {
+    "url": "https://en.studentsadmin.huji.ac.il/tuition-structure",
+    "label": "Hebrew University of Jerusalem, Student Administration, Tuition rates 2025/26"
+   },
+   "us22_neaman_loans": {
+    "url": "https://neaman.org.il/en/student-loans-israel-learning-international-practice/",
+    "label": "Samuel Neaman Institute (A. Ziderman), Student Loans for Israel: Learning from International Practice, Apr 2008"
+   },
+   "us22_nbn_loans": {
+    "url": "https://www.nbn.org.il/life-in-israel/education/higher-education/scholarships-and-loans-for-university-and-college-students/",
+    "label": "Nefesh B'Nefesh, Scholarships and Loans for University and College Students"
+   }
+  }
+ },
+ "us22_pension": {
+  "topic": "Workplace pension coverage",
+  "claims": [
+   {
+    "text": "United States, March 2025 (BLS NCS), private industry workers: 72% had access to employer retirement plans, 53% participated, take-up 73%; defined-contribution access 70%, defined-benefit access 14%; part-time workers 47% access / 23% participation; lowest wage decile 38% access / 15% participation.",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ebs25"
+    ]
+   },
+   {
+    "text": "United States, March 2026 (BLS NCS): private industry retirement access 72%, participation 52%.",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ebs26"
+    ]
+   },
+   {
+    "text": "Israel: mandatory pension contributions for all employees since 2008 under extension orders of the 2007 Histadrut-employers framework agreement; minimum rate phased up from about 1.66% (2008) to 12.5% of wages from 2017 (6% employee + 6.5% employer), applied up to the national average wage; young workers and first months of employment exempt.",
+    "strength": "strong",
+    "sources": [
+     "us22_boi_dp202508"
+    ]
+   },
+   {
+    "text": "Israel: on top of the 12.5% pension contribution, employers deposit a 6% severance component, giving 18.5% of wages in total (employee 6%, employer 12.5%).",
+    "strength": "moderate",
+    "sources": [
+     "us22_olam_pension",
+     "us22_boi_dp202508"
+    ]
+   },
+   {
+    "text": "Israel coverage: share of private-sector wage payments with no pension/provident contribution fell from 32% (2006) to 19% (2009) and 13% (2019); public sector 6% (2006) to 1% (2019). A headcount 'share of employees covered' figure was not found.",
+    "strength": "strong",
+    "sources": [
+     "us22_boi_dp202508"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_bls_ebs25": {
+    "url": "https://www.bls.gov/news.release/archives/ebs2_09252025.htm",
+    "label": "US BLS, Employee Benefits in the United States, March 2025, released 25 Sep 2025"
+   },
+   "us22_bls_ebs26": {
+    "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+    "label": "US BLS, Employee Benefits in the United States, March 2026, released 25 Sep 2026"
+   },
+   "us22_boi_dp202508": {
+    "url": "https://www.boi.org.il/media/ogqjvbml/dp202508e.pdf",
+    "label": "Bank of Israel (Braude and Friedmann), Discussion Paper 2025.08, June 2025"
+   },
+   "us22_olam_pension": {
+    "url": "https://olam-haavoda.co.il/topics/pension",
+    "label": "Olam HaAvoda labor-law portal, Mandatory pension contributions (Hebrew)"
+   }
+  }
+ },
+ "us22_sickpay": {
+  "topic": "Paid sick leave",
+  "claims": [
+   {
+    "text": "Israel: under the Sick Pay Law (1976) every employee accrues 1.5 paid sick days per full month worked (18 a year), up to a cap of 90 days; accrual is automatic and days cannot normally be cashed out.",
+    "strength": "strong",
+    "sources": [
+     "us22_kolzchut_sick"
+    ]
+   },
+   {
+    "text": "Israel pay scale: day 1 of illness unpaid, days 2-3 at 50% of wages, day 4 onward 100%; full pay from day 1 for certain serious conditions (e.g. cancer treatment, dialysis).",
+    "strength": "moderate",
+    "sources": [
+     "us22_cxc_ilsick"
+    ]
+   },
+   {
+    "text": "United States: 'Federal law does not require sick leave' (DOL); FMLA provides up to 12 weeks of unpaid job-protected leave for eligible workers.",
+    "strength": "strong",
+    "sources": [
+     "us22_dol_sick"
+    ]
+   },
+   {
+    "text": "United States, March 2026 (BLS NCS): 81% of private industry workers had access to paid sick leave; full-time 88%, part-time 59%. A March 2025 all-private figure was not extracted.",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ebs26_sick",
+     "us22_bls_worksick"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_kolzchut_sick": {
+    "url": "https://www.kolzchut.org.il/he/פישוט:צבירת_ימי_מחלה",
+    "label": "Kol Zchut, Accrual of sick days (Hebrew), citing the Sick Pay Law and 1976 regulations"
+   },
+   "us22_cxc_ilsick": {
+    "url": "https://www.cxcglobal.com/global-hiring-guide/israel/leave-time-off-in-israel/",
+    "label": "CXC Global, Leave and time off in Israel (hiring guide)"
+   },
+   "us22_dol_sick": {
+    "url": "https://www.dol.gov/general/topic/benefits-leave/sickleave",
+    "label": "US Department of Labor, Sick Leave topic page"
+   },
+   "us22_bls_ebs26_sick": {
+    "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+    "label": "US BLS, Employee Benefits in the United States, March 2026, released 25 Sep 2026"
+   },
+   "us22_bls_worksick": {
+    "url": "https://www.bls.gov/charts/employee-benefits/percent-access-benefits-by-work-status.htm",
+    "label": "US BLS chart, Private industry workers with access to employer-provided benefits by work status, March 2026"
+   }
+  }
+ },
+ "us22_housingcost": {
+  "topic": "Housing cost burden",
+  "claims": [
+   {
+    "text": "United States 2024 (BLS CE): housing $26,266 = 33.4% of average annual expenditures (CE housing includes shelter, utilities, household operations, furnishings; owners' shelter is actual outlays, not imputed rent).",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_ce24_h"
+    ]
+   },
+   {
+    "text": "Israel 2023 (CBS HES): housing = 25.3% of average monthly consumption expenditure (housing services incl. imputed rent for owner-occupiers); dwelling maintenance and household a further 9.1%.",
+    "strength": "strong",
+    "sources": [
+     "us22_cbs_hes23_h"
+    ]
+   },
+   {
+    "text": "Same-source comparison (OECD national accounts, housing consumption as share of total household expenditure, 2019 or latest): Israel 21.1%, United States 16.5%, OECD average 17.8%. Values read from chart labels in the snapshots.",
+    "strength": "moderate",
+    "sources": [
+     "us22_oecd_hpt_isr",
+     "us22_oecd_hpt_usa"
+    ]
+   },
+   {
+    "text": "Same-source comparison (OECD, share of bottom-quintile tenants in private rent spending more than 40% of disposable income on rent, 2018 or latest): Israel 54.1%, United States 48.3%, OECD average 35.2%. OECD notes US data use gross rather than disposable income.",
+    "strength": "moderate",
+    "sources": [
+     "us22_oecd_hpt_isr",
+     "us22_oecd_hpt_usa",
+     "us22_oecd_hc12"
+    ]
+   },
+   {
+    "text": "Israel (2017 data, Bank of Israel calculations in OECD HC1.2): 54% of bottom-quintile private-market tenants are overburdened (>40% of disposable income on housing) vs 2% of tenants in subsidised rental housing. An overall-population overburden rate for either country was not found; the OECD total housing cost overburden indicator (HC1.2.4) covers only European countries and New Zealand.",
+    "strength": "strong",
+    "sources": [
+     "us22_oecd_hc12"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_bls_ce24_h": {
+    "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+    "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+   },
+   "us22_cbs_hes23_h": {
+    "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+    "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+   },
+   "us22_oecd_hpt_isr": {
+    "url": "https://housingpolicytoolkit.oecd.org/www/CountryFiches/housing-policy-Israel.pdf",
+    "label": "OECD Housing Policy Toolkit, Country snapshot: Israel, 10 Jun 2021"
+   },
+   "us22_oecd_hpt_usa": {
+    "url": "https://housingpolicytoolkit.oecd.org/www/CountryFiches/housing-policy-United%20States.pdf",
+    "label": "OECD Housing Policy Toolkit, Country snapshot: United States, 10 Jun 2021"
+   },
+   "us22_oecd_hc12": {
+    "url": "https://oecd.org/els/family/hc1-2-housing-costs-over-income.pdf",
+    "label": "OECD Affordable Housing Database, HC1.2 Housing costs over income, updated 15 Apr 2024"
+   }
+  }
  }
 }
