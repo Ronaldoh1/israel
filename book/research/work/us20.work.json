@@ -93,5 +93,83 @@
     "label": "Times of Israel, 'Netanyahu hails US purchase of Israeli Iron Dome batteries', 6 February 2019"
    }
   }
+ },
+ "us20_flows": {
+  "topic": "Private and commercial money flows between the US and Israel in both directions: tax-deductible donations, settlements, Israel Bonds, investment, arms trade",
+  "claims": [
+   {
+    "text": "Haaretz investigation (Uri Blau, Pulitzer Center-funded), reported 7 Dec 2015: some 50 American organizations raised $281m in 2009–2013 in tax-deductible donations from private individuals, of which $224m was transferred to settlements via Israeli nonprofits; named Honenu (2013 grant to the family of Ami Popper, who murdered seven Palestinian labourers in 1990), Central Fund of Israel, Hebron Fund; White House official: the administration 'never defended or supported any activity associated with the settlements'",
+    "strength": "reported",
+    "sources": [
+     "us20_toi_settlements"
+    ]
+   },
+   {
+    "text": "Fleisch and Sasson (Brandeis, 2012), from IRS documents: American giving to Israeli organizations $283m (1975), $461m (1985), $774m (1994) in current dollars; total raised $2.059bn in 2007 ($1.646bn donated after fundraising costs and endowment activity); 774 organizations, 667 'American Friends' groups (86%), up from 265 at end of 1980s and 436 by 2000; settlements raised about $40m in 2007, religious education $167m, progressive groups $46m",
+    "strength": "primary",
+    "sources": [
+     "us20_brandeis_philanthropy"
+    ]
+   },
+   {
+    "text": "Fleisch and Sasson: since 1938 gifts to foreign NGOs are deductible only if routed through a US-incorporated not-for-profit with a mostly American board, the foreign NGO is equivalent to a US tax-exempt body, and the US nonprofit oversees its foreign grants; 'American Friends' organizations are US nonprofits set up to support one Israeli organization",
+    "strength": "primary",
+    "sources": [
+     "us20_brandeis_philanthropy"
+    ]
+   },
+   {
+    "text": "NYU–Tel Aviv University study (reported 31 Mar 2025): over $2.65bn from American donors to Israel's nonprofit sector in 2021; about 1,200 US NGOs; 161 (7%) gave over 80%; 'Friends of' organizations gave $824m in 2015 (43%) and over $1.2bn in 2021 (45%); Jewish communal institutions 37% (2015) to 29% (2021), $772m; excludes post-7 Oct 2023 giving",
+    "strength": "reported",
+    "sources": [
+     "us20_ejp_giving2021"
+    ]
+   },
+   {
+    "text": "JFNA data (Birmingham Jewish Federation, 11 Nov 2025): $683m raised for the Israel Emergency Campaign in calendar 2024",
+    "strength": "reported",
+    "sources": [
+     "us20_bjf_iec2024"
+    ]
+   },
+   {
+    "text": "SelectUSA (Aug 2026): Israeli FDI position in the US (by ultimate beneficial owner) $22.2bn in 2025 ($24.5bn 2021, $22.5bn 2022, $21.9bn 2023, $23.6bn 2024); US FDI position in Israel $59.7bn in 2025, 2025 flow $16.6bn; software and IT services the top sector for Israeli FDI projects in the US",
+    "strength": "primary",
+    "sources": [
+     "us20_selectusa_israel"
+    ]
+   },
+   {
+    "text": "Book's arithmetic (CPI-U): US giving to Israeli organizations ~$1.44bn (1985), ~$1.76bn (1994), ~$3.35bn raised (2007), ~$3.30bn (2021) in Sept 2026 dollars; settlement transfers $224m 2009–13 ≈ $320m at 2013 prices; Israel Bonds $1.7bn Oct 2023–Jul 2024 ≈ $1.8bn; IMOD 13% of $19.2bn 2025 exports to North America ≈ $2.5bn",
+    "strength": "primary",
+    "sources": [
+     "us20_brandeis_philanthropy",
+     "us20_ejp_giving2021",
+     "us20_toi_settlements"
+    ]
+   }
+  ],
+  "sources": {
+   "us20_toi_settlements": {
+    "url": "https://www.timesofisrael.com/us-nonprofits-gave-220m-to-settlements-over-five-years-report/",
+    "label": "AP and Raoul Wootliff, 'US nonprofits gave $220m to settlements over five years — report', Times of Israel, 7 December 2015 (on Uri Blau's Haaretz investigation)"
+   },
+   "us20_brandeis_philanthropy": {
+    "url": "https://bjpa.org/content/upload/bjpa/c__c/TheNewPhilanthropy.pdf",
+    "label": "Eric Fleisch and Theodore Sasson, 'The New Philanthropy: American Jewish Giving to Israeli Organizations', Cohen Center for Modern Jewish Studies, Brandeis University, April 2012"
+   },
+   "us20_ejp_giving2021": {
+    "url": "https://ejewishphilanthropy.com/your-daily-phil-giving-to-israel-increasingly-decentralized-study/",
+    "label": "eJewishPhilanthropy, 'Your Daily Phil: Giving to Israel increasingly decentralized — study' (NYU–Tel Aviv University study), 31 March 2025"
+   },
+   "us20_bjf_iec2024": {
+    "url": "https://www.bjf.org/fedbeat/amid-war-jewish-federation-giving-rose-1-billion-in-2024",
+    "label": "Birmingham Jewish Federation, 'Amid War, Jewish Federation giving rose $1 Billion in 2024' (JFNA data), 11 November 2025"
+   },
+   "us20_selectusa_israel": {
+    "url": "https://www.trade.gov/sites/default/files/2026-08/Israel_508.pdf",
+    "label": "SelectUSA, US Department of Commerce, 'Israel' FDI fact sheet, August 2026"
+   }
+  }
  }
 }
