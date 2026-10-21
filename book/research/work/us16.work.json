@@ -143,6 +143,20 @@
      "us16_mit_bankruptcy",
      "us16_pnhp_reply"
     ]
+   },
+   {
+    "text": "Commonwealth Fund: Israel's Ministry of Health negotiates drug prices; maximum prices set from the three lowest of seven reference countries; 2024 maximum prices of 1,500 prescription drugs cut 3.6%; pharmaceuticals 12.9% of health spending in 2022, USD 405 per capita",
+    "strength": "reported",
+    "sources": [
+     "us16_cwf_israel"
+    ]
+   },
+   {
+    "text": "Commonwealth Fund: mental health practitioners 104 per 100,000 (2021) vs OECD 123; psychiatric beds 36 per 100,000 (2024); post-7 October reforms funded by a health tax increase, hiring public therapists and multidisciplinary clinics; Rehabilitation Law (2000)",
+    "strength": "reported",
+    "sources": [
+     "us16_cwf_israel"
+    ]
    }
   ],
   "sources": {
@@ -209,6 +223,141 @@
    "us16_pnhp_reply": {
     "url": "https://pnhp.org/news/again-medical-bankruptcy-is-not-a-myth/",
     "label": "David U. Himmelstein, Steffie Woolhandler and Elizabeth Warren, NEJM correspondence 7 Jun 2018, reposted by PNHP, 'Again, medical bankruptcy is not a myth'"
+   }
+  }
+ },
+ "us16_outcomes": {
+  "topic": "Health outcomes over time, drug prices and mental health in Israel and the US",
+  "claims": [
+   {
+    "text": "World Bank (UN model) life expectancy at birth: US 73.6 (1980), 75.2 (1990), 76.6 (2000), 78.5 (2010), 78.8 (2019), 76.3 (2021), 78.9 (2024); Israel 73.9 (1980), 76.6 (1990), 79.0 (2000), 81.6 (2010), 82.8 (2019), 82.5 (2021), 83.2 (2024)",
+    "strength": "primary",
+    "sources": [
+     "us16_wb_le"
+    ]
+   },
+   {
+    "text": "World Bank infant mortality per 1,000: US 12.6 (1980), 9.4 (1990), 7.1 (2000), 6.2 (2010), 5.5 (2024); Israel 15.5 (1980), 9.6 (1990), 5.6 (2000), 3.7 (2010), 2.7 (2024)",
+    "strength": "primary",
+    "sources": [
+     "us16_wb_imr"
+    ]
+   },
+   {
+    "text": "World Bank modelled maternal mortality per 100,000: US 12 (2000), 15 (2010), 22 (2020), 17 (2023); Israel 9 (2000), 3 (2010), 3 (2020), 2 (2023)",
+    "strength": "primary",
+    "sources": [
+     "us16_wb_mmr"
+    ]
+   },
+   {
+    "text": "CDC: US life expectancy 79.0 in 2024 (78.4 in 2023); men 76.5, women 81.4; infant mortality 552.5 per 100,000 births in 2024 vs 560.2 in 2023 (not significant); suicide 10th leading cause, 48,824 deaths, 13.7 per 100,000 age-adjusted; unintentional injury rate fell 14.4%",
+    "strength": "primary",
+    "sources": [
+     "us16_cdc_db548"
+    ]
+   },
+   {
+    "text": "CDC 2023 provisional: US IMR 5.61; Black non-Hispanic 10.93, White non-Hispanic 4.48, Hispanic 5.03, AIAN 9.20, Asian 3.44",
+    "strength": "primary",
+    "sources": [
+     "us16_cdc_imr2023"
+    ]
+   },
+   {
+    "text": "Taub (2010): in 1980 life expectancy of Israeli Jews, the US and other OECD countries was about 74; Israeli Arabs over two years lower; since then rose over seven years for Israeli Jews and Arabs vs about four in the US; Israeli Arab infant mortality reached US rates by mid-2000s",
+    "strength": "reported",
+    "sources": [
+     "us16_taub_healthy"
+    ]
+   },
+   {
+    "text": "Israel Health Ministry inequality report (2022 data): national life expectancy 82.7; highest for Jews/non-Arabs 84.3 (Tel Aviv), highest for Arabs 80.1 (north); infant mortality Arabs 5.1 vs Jews 2.1 per 1,000; doctors and beds unevenly distributed; north and south 81.3",
+    "strength": "reported",
+    "sources": [
+     "us16_toi_moh_gaps"
+    ]
+   },
+   {
+    "text": "RAND (2022 data): US drug prices 278% of prices in 33 other high-income countries; brand-name 422% gross, over three times after estimated rebates; unbranded generics lower in the US than in most comparison countries",
+    "strength": "reported",
+    "sources": [
+     "us16_rand_drugs"
+    ]
+   },
+   {
+    "text": "KFF: under the Inflation Reduction Act of 2022 the first 10 negotiated Medicare prices took effect 1 Jan 2026 (CMS: $6bn, 22% net savings had they applied in 2023); 15 more from 1 Jan 2027 (44%, incl. Ozempic/Wegovy); 15 Part B/D drugs selected Jan 2026 for 2028; 2025 reconciliation law widened orphan-drug exclusion, CBO cost $8.8bn",
+    "strength": "reported",
+    "sources": [
+     "us16_kff_negotiation"
+    ]
+   },
+   {
+    "text": "Bank of Israel: 2015 reform moved mental health insurance to the health funds (July 2015), NIS 2bn added 2015–16, then only a one-off NIS 100m to 2024; State Comptroller (2018 data) average ~150-day wait for psychotherapy",
+    "strength": "primary",
+    "sources": [
+     "us16_boi_mental"
+    ]
+   },
+   {
+    "text": "Bank of Israel: after 7 Oct 2023 CBS share reporting depression rose from 23–25% to 34% in 2024; treatment 14% (Jan 2024) to 18% (Oct 2024); public wait ~6.5 months in Mar–Apr 2024; 42% of treatment-seekers went private vs 38% health funds; National Mental Health Program Jan 2024 NIS 1.4bn a year; 2025 health tax increase ~NIS 1bn a year; psychiatrists ~0.17 per 1,000 vs OECD ~0.21 (2023); therapists scarce in periphery and Arab community",
+    "strength": "primary",
+    "sources": [
+     "us16_boi_mental"
+    ]
+   },
+   {
+    "text": "SAMHSA NSDUH 2024: 52.1% of adults with any mental illness received mental health treatment in the past year; not comparable with 2022–23 due to questionnaire change",
+    "strength": "primary",
+    "sources": [
+     "us16_samhsa_tx"
+    ]
+   }
+  ],
+  "sources": {
+   "us16_wb_le": {
+    "url": "https://api.worldbank.org/v2/country/USA;ISR/indicator/SP.DYN.LE00.IN?format=json&date=1980:2024&per_page=200",
+    "label": "World Bank, WDI, 'Life expectancy at birth, total (years)' SP.DYN.LE00.IN, accessed 21 Oct 2026"
+   },
+   "us16_wb_imr": {
+    "url": "https://api.worldbank.org/v2/country/USA;ISR/indicator/SP.DYN.IMRT.IN?format=json&date=1980:2024&per_page=200",
+    "label": "World Bank, WDI, 'Mortality rate, infant (per 1,000 live births)' SP.DYN.IMRT.IN (UN IGME), updated 8 Oct 2026"
+   },
+   "us16_wb_mmr": {
+    "url": "https://api.worldbank.org/v2/country/USA;ISR/indicator/SH.STA.MMRT?format=json&date=2000:2024&per_page=200",
+    "label": "World Bank, WDI, 'Maternal mortality ratio (modeled estimate, per 100,000 live births)' SH.STA.MMRT, accessed 21 Oct 2026"
+   },
+   "us16_cdc_db548": {
+    "url": "https://cdc.gov/nchs/products/databriefs/db548.htm",
+    "label": "CDC NCHS, 'Mortality in the United States, 2024', Data Brief No. 548, 29 Jan 2026"
+   },
+   "us16_cdc_imr2023": {
+    "url": "https://cdc.gov/nchs/data/vsrr/vsrr037.pdf",
+    "label": "CDC NCHS, 'Infant Mortality in the United States: Provisional Data From the 2023 Period Linked Birth/Infant Death File', VSRR No. 37, Nov 2024"
+   },
+   "us16_taub_healthy": {
+    "url": "https://www.taubcenter.org.il/en/research/how-healthy/",
+    "label": "Taub Center, 'How Healthy?', Sep 2010"
+   },
+   "us16_toi_moh_gaps": {
+    "url": "https://www.timesofisrael.com/liveblog_entry/health-ministry-report-highlights-gaps-in-healthcare-delivery-in-arab-sector/",
+    "label": "Times of Israel liveblog, 'Health Ministry report highlights gaps in healthcare delivery in Arab sector', 4 Apr 2024"
+   },
+   "us16_rand_drugs": {
+    "url": "https://www.rand.org/pubs/research_reports/RRA788-3.html",
+    "label": "Andrew W. Mulcahy, Daniel Schwam and Susan L. Lovejoy, 'International Prescription Drug Price Comparisons', RAND RR-A788-3, 1 Feb 2024"
+   },
+   "us16_kff_negotiation": {
+    "url": "https://www.kff.org/medicare/key-facts-about-medicare-drug-price-negotiation/",
+    "label": "KFF, 'Key Facts About Medicare Drug Price Negotiation', 11 Mar 2026"
+   },
+   "us16_boi_mental": {
+    "url": "https://www.boi.org.il/media/c2nnm0r4/2025-chap-7e.pdf",
+    "label": "Bank of Israel, Annual Report 2025, Chapter 7, 'Welfare Issues' (mental health care), 2026"
+   },
+   "us16_samhsa_tx": {
+    "url": "https://www.samhsa.gov/data/sites/default/files/reports/rpt56771/2024-nsduh-psr7-mhtx-adult-adol.pdf",
+    "label": "SAMHSA, 'Mental Health Treatment among People Who Had a Mental Health Condition in the Past Year', NSDUH Population Statistics Report Vol. 1 No. 7, Sep 2025"
    }
   }
  }
