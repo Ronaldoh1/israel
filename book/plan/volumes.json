@@ -843,20 +843,11 @@
  },
  "_planned": [
   {
-   "host": "ch40",
-   "title": "US System vs Israel System",
-   "subtitle": "Government, Rights, Money and the Cost of Living, Compared Over Time",
-   "merge": [
-    "ch60"
-   ],
-   "priority": 1
-  },
-  {
    "host": "ch12",
    "title": "The Vatican Architecture",
    "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
    "merge": [],
-   "priority": 2
+   "priority": 1
   },
   {
    "host": "ch19",
@@ -868,7 +859,7 @@
     "ch14",
     "ch41"
    ],
-   "priority": 3
+   "priority": 2
   },
   {
    "host": "ch20",
@@ -877,7 +868,7 @@
    "merge": [
     "ch17"
    ],
-   "priority": 4
+   "priority": 3
   },
   {
    "host": "ch57",
@@ -887,7 +878,7 @@
     "ch58",
     "ch59"
    ],
-   "priority": 5
+   "priority": 4
   },
   {
    "host": "ch18",
@@ -901,7 +892,7 @@
     "ch44",
     "ch52"
    ],
-   "priority": 6
+   "priority": 5
   },
   {
    "host": "ch34",
@@ -910,7 +901,7 @@
    "merge": [
     "ch50"
    ],
-   "priority": 7
+   "priority": 6
   },
   {
    "host": "ch06",
@@ -920,7 +911,7 @@
     "ch07",
     "ch08"
    ],
-   "priority": 8
+   "priority": 7
   },
   {
    "host": "ch23",
@@ -935,7 +926,7 @@
     "ch68",
     "ch69"
    ],
-   "priority": 9
+   "priority": 8
   },
   {
    "host": "ch53",
@@ -944,7 +935,7 @@
    "merge": [
     "ch55"
    ],
-   "priority": 10
+   "priority": 9
   },
   {
    "host": "ch51",
@@ -954,7 +945,7 @@
     "ch70",
     "ch49"
    ],
-   "priority": 11
+   "priority": 10
   }
  ],
  "greater": {
@@ -1171,6 +1162,145 @@
     "id": "ts14",
     "label": "Part Fourteen",
     "title": "Myths, Contested Claims and What Is Settled",
+    "span": ""
+   }
+  ]
+ },
+ "usisrael": {
+  "slot": "ch40",
+  "absorbs": [
+   "ch60"
+  ],
+  "title": "US System vs Israel System",
+  "subtitle": "Government, Rights, Money and the Cost of Living, Compared Over Time",
+  "span": "1980–2026",
+  "intro": "us_intro.html",
+  "parts_total": 21,
+  "stages": [
+   {
+    "id": "us1",
+    "label": "Part One",
+    "title": "The Question",
+    "span": ""
+   },
+   {
+    "id": "us2",
+    "label": "Part Two",
+    "title": "How the State Is Built",
+    "span": ""
+   },
+   {
+    "id": "us3",
+    "label": "Part Three",
+    "title": "Democracy",
+    "span": ""
+   },
+   {
+    "id": "us4",
+    "label": "Part Four",
+    "title": "Criminal Justice",
+    "span": ""
+   },
+   {
+    "id": "us5",
+    "label": "Part Five",
+    "title": "Public Safety and Guns",
+    "span": ""
+   },
+   {
+    "id": "us6",
+    "label": "Part Six",
+    "title": "Citizenship and Immigration",
+    "span": ""
+   },
+   {
+    "id": "us7",
+    "label": "Part Seven",
+    "title": "Religion and State",
+    "span": ""
+   },
+   {
+    "id": "us8",
+    "label": "Part Eight",
+    "title": "Equality Among Citizens",
+    "span": ""
+   },
+   {
+    "id": "us9",
+    "label": "Part Nine",
+    "title": "People Under Control Without Citizenship",
+    "span": ""
+   },
+   {
+    "id": "us10",
+    "label": "Part Ten",
+    "title": "Surveillance and Privacy",
+    "span": ""
+   },
+   {
+    "id": "us11",
+    "label": "Part Eleven",
+    "title": "The Economy",
+    "span": ""
+   },
+   {
+    "id": "us12",
+    "label": "Part Twelve",
+    "title": "Industries",
+    "span": ""
+   },
+   {
+    "id": "us13",
+    "label": "Part Thirteen",
+    "title": "Labour",
+    "span": ""
+   },
+   {
+    "id": "us14",
+    "label": "Part Fourteen",
+    "title": "Cost of Living Over Time",
+    "span": ""
+   },
+   {
+    "id": "us15",
+    "label": "Part Fifteen",
+    "title": "Housing, Land and Infrastructure",
+    "span": ""
+   },
+   {
+    "id": "us16",
+    "label": "Part Sixteen",
+    "title": "Health",
+    "span": ""
+   },
+   {
+    "id": "us17",
+    "label": "Part Seventeen",
+    "title": "Education",
+    "span": ""
+   },
+   {
+    "id": "us18",
+    "label": "Part Eighteen",
+    "title": "Family Policy and the Safety Net",
+    "span": ""
+   },
+   {
+    "id": "us19",
+    "label": "Part Nineteen",
+    "title": "Military and Security",
+    "span": ""
+   },
+   {
+    "id": "us20",
+    "label": "Part Twenty",
+    "title": "Foreign Policy and the Money Flow",
+    "span": ""
+   },
+   {
+    "id": "us21",
+    "label": "Part Twenty-One",
+    "title": "What About America?",
     "span": ""
    }
   ]

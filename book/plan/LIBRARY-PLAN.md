@@ -1,8 +1,8 @@
 # The Israel Architecture Library: the shelf and the writing priority
 
-Reset 20 October 2026; updated 21 October 2026 (three new volumes from Ron's plan for 21 October). The library is 25 volumes: 14 written and 11 planned (The Greater Israel Architecture and The Theology Shield written 21 October 2026). Planned volumes merge the simulation chapters listed under them (book/plan/volumes.json, `_planned`); chapters already covered by a written volume were folded into it (`absorbs`).
+Reset 20 October 2026; updated 21 October 2026 (three new volumes from Ron's plan for 21 October). The library is 25 volumes: 15 written and 10 planned (The Greater Israel Architecture, The Theology Shield and US System vs Israel System written 21 October 2026). Planned volumes merge the simulation chapters listed under them (book/plan/volumes.json, `_planned`); chapters already covered by a written volume were folded into it (`absorbs`).
 
-## Written (14)
+## Written (15)
 1. The Baseline
 2. The Road to 1948
 3. The Cold War Architecture
@@ -17,18 +17,18 @@ Reset 20 October 2026; updated 21 October 2026 (three new volumes from Ron's pla
 12. The Iran Architecture
 13. The Greater Israel Architecture (absorbs Egypt ch22, Jordan ch25, Syria ch63, Iraq ch47)
 14. The Theology Shield (14 parts; shown after The Vatican Architecture)
+15. US System vs Israel System (21 parts; absorbs What About America? ch60)
 
 ## Planned, in writing priority
-1. US System vs Israel System: US ⇄ Israel ch40 + What About America? ch60. A 360-degree comparison measured over time (government, rights, economy, cost of living, health, education, safety net, security), every figure re-checked from primary data. Chapter list in Ron's "Plan for Wednesday, Oct 21" doc.
-2. The Vatican Architecture: ch12 Rome's Other Empire. Central question: was the Vatican's public refusal of Zionism a facade? Ron's 25 questions mapped to seven parts.
-3. The Netanyahu Architecture: ch19 + Netanyahu's Israel ch10, Ben-Gvir ch61, Architecture of Command ch14, Government of Israel ch41
-4. Aid and Arms: ch20 + War Ledger ch17
-5. Washington: Trump & Kushner Families ch57 + Department of War ch58, State Department & Rubio ch59
-6. The Information War: Media Control ch18 + Pro-Israel Voices ch56, Ellison ch28, Academia & Title VI ch36, IHRA ch37, Project Esther ch44, Capability Stack ch52
-7. The Epstein Architecture: ch34 + Power Protects Power ch50
-8. From 1967 to Oslo: Six Days ch06 + Oslo ch07, The Machine, Named ch08
-9. The Wider Region: Saudi ch23 + Lay of the Land ch62, Pakistan ch27, Turkey ch64, UAE ch66, Other Accords ch67, Azerbaijan ch68, Ethiopia ch69
-10. The World Reads This Story: ch53 + Part II ch55
-11. Street Questions: ch51 + The Comment Section ch70, Products of the Machine ch49 (waits on Ron's scraped talking points)
+1. The Vatican Architecture: ch12 Rome's Other Empire. Central question: was the Vatican's public refusal of Zionism a facade? Ron's 25 questions mapped to seven parts.
+2. The Netanyahu Architecture: ch19 + Netanyahu's Israel ch10, Ben-Gvir ch61, Architecture of Command ch14, Government of Israel ch41
+3. Aid and Arms: ch20 + War Ledger ch17
+4. Washington: Trump & Kushner Families ch57 + Department of War ch58, State Department & Rubio ch59
+5. The Information War: Media Control ch18 + Pro-Israel Voices ch56, Ellison ch28, Academia & Title VI ch36, IHRA ch37, Project Esther ch44, Capability Stack ch52
+6. The Epstein Architecture: ch34 + Power Protects Power ch50
+7. From 1967 to Oslo: Six Days ch06 + Oslo ch07, The Machine, Named ch08
+8. The Wider Region: Saudi ch23 + Lay of the Land ch62, Pakistan ch27, Turkey ch64, UAE ch66, Other Accords ch67, Azerbaijan ch68, Ethiopia ch69
+9. The World Reads This Story: ch53 + Part II ch55
+10. Street Questions: ch51 + The Comment Section ch70, Products of the Machine ch49 (waits on Ron's scraped talking points)
 
 The shelf shows reading order by default; "Writing priority" in the sort menu shows this order.

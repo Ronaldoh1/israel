@@ -1,0 +1,652 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us18_family",
+   "stage": "us18",
+   "topic": "Parental leave, childcare and child benefits in Israel and the US",
+   "claims": [
+    {
+     "text": "NII: maternity allowance daily amount = higher of 3-month income/90 or 6-month income/180, capped at NIS 1,752.33 per day (as of 1 Jan 2026)",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_matrates"
+     ]
+    },
+    {
+     "text": "NII Annual Survey 2018: maternity insurance in effect from 1 April 1954; allowance 6 or 12 weeks until May 2007, 7 or 14 weeks until end-2016, 8 or 15 weeks from January 2017; paternity entitlement from 1998 when the mother returns to work; 1,266 fathers received it in 2018 (9.5 per 1,000 women); average daily allowance NIS 285 (2018); birth grants 183,877 (2018)",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_maternity2018"
+     ]
+    },
+    {
+     "text": "Nefesh B'Nefesh guide: 26 weeks of maternity leave after 12 months with the employer, 15 paid by Bituach Leumi; 8 paid weeks with shorter qualifying work; dismissal protection during pregnancy and 60 days after return, needs a ministerial permit; fertility-treatment absences protected",
+     "strength": "reported",
+     "sources": [
+      "us18_nbn_women"
+     ]
+    },
+    {
+     "text": "CRS (26 Mar 2025): FMLA (1993, P.L. 103-3) gives up to 12 weeks of job-protected unpaid leave to eligible workers; 27% of private-industry workers had employer paid family leave in March 2023, about 17 points more than in 2010; 13% in the bottom wage quartile vs 44% in the top; 10 jurisdictions (incl. DC) had active state paid-leave programmes, 4 more enacted (DE, MN Jan 2026; ME May 2026; MD July 2026); California first, 1 July 2004; federal civil-service paid parental leave created by the FY2020 NDAA (Dec 2019)",
+     "strength": "primary",
+     "sources": [
+      "us18_crs_leave"
+     ]
+    },
+    {
+     "text": "BLS: 27% of civilian workers had paid family leave and 90% unpaid family leave (March 2023); paid family leave estimates unavailable for 2024 and 2025 due to a change in scope",
+     "strength": "primary",
+     "sources": [
+      "us18_bls_leave"
+     ]
+    },
+    {
+     "text": "DOL National Database of Childcare Prices (2022 data, 2,512 counties): full-day care for one child cost $6,552 to $15,600 a year, 8.9% to 16% of county median family income",
+     "strength": "primary",
+     "sources": [
+      "us18_dol_childcare"
+     ]
+    },
+    {
+     "text": "NII child allowance rates from 1 Jan 2026: NIS 173 for the 1st child, NIS 219 for the 2nd-4th, NIS 173 for the 5th and later",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_childrates"
+     ]
+    },
+    {
+     "text": "NII 2018: Children Insurance Law from 1959, initially for large families only; allowances cut 2003-04 with children born from June 2003 paid the same rate as the first two until June 2009; Streamlining Law cut allowances in August 2013 (new-child rate NIS 140); raised May 2015 with a savings plan from January 2017 (state NIS 50 a month, parents may add NIS 50); about 1.186m families and 2.88m children received allowances in 2018",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_children2018"
+     ]
+    },
+    {
+     "text": "Scripps News (Census): the 2021 expanded CTC raised the credit from $2,000 to $3,000 per child ($3,600 under 6); after it returned to normal levels in 2022, SPM child poverty rose from 5.2% (2021) to 12.4% (2022)",
+     "strength": "reported",
+     "sources": [
+      "us18_scripps_ctc"
+     ]
+    },
+    {
+     "text": "OECD PF1.1 (Feb 2025): OECD average public spending on family benefits 2.35% of GDP in 2021; US below 1% of GDP, more than half on services",
+     "strength": "primary",
+     "sources": [
+      "us18_oecd_pf11"
+     ]
+    },
+    {
+     "text": "OECD SOCX public family expenditure (cash and in-kind, excludes tax breaks): Israel 1.886% of GDP in 2023 (series range 1.735-2.493); US 0.767% in 1980 and 0.604% in 2023 (range 0.408-0.846)",
+     "strength": "primary",
+     "sources": [
+      "us18_socx_isr",
+      "us18_socx_usa"
+     ]
+    },
+    {
+     "text": "NII Annual Survey 2018 (audit re-check): recipients' average wage 83.8% of the economy-wide average; minimum paternity period cut from 21 days to 7 from April 2017; fathers paid 545 (2016), 848 (2017), 1,266 (2018)",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_maternity2018"
+     ]
+    },
+    {
+     "text": "NII Children 2018 (audit re-check): 2018 monthly rates NIS 150/189/189/189/150 for children born from June 2003; NIS 150/189/189/336/354 (1st-5th+) for children born before June 2003; NIS 140 rate 8/2013-5/2015",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_children2018"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us18_nii_matrates",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Maternity Insurance/Maternity Allowance/Pages/Benefitrates.aspx",
+     "label": "National Insurance Institute, 'Maternity allowance: benefit rates', as of 1 January 2026"
+    },
+    {
+     "key": "us18_nii_maternity2018",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/AnnualSurvey/2018/Documents/maternity.pdf",
+     "label": "National Insurance Institute, Annual Survey 2018, 'Maternity insurance'"
+    },
+    {
+     "key": "us18_nbn_women",
+     "url": "https://www.nbn.org.il/life-in-israel/employment/employee-rights-and-benefits/womens-rights-in-the-workplace/",
+     "label": "Nefesh B'Nefesh, 'Women's Rights in the Workplace' (guide to Israeli labour law)"
+    },
+    {
+     "key": "us18_crs_leave",
+     "url": "https://www.congress.gov/crs_external_products/R/PDF/R44835/R44835.30.pdf",
+     "label": "Congressional Research Service (Sarah A. Donovan), 'Paid Family Leave in the United States', R44835, 26 March 2025"
+    },
+    {
+     "key": "us18_bls_leave",
+     "url": "https://www.bls.gov/ebs/factsheets/family-leave-benefits-fact-sheet.htm",
+     "label": "US Bureau of Labor Statistics, 'Family leave benefits fact sheet' (National Compensation Survey)"
+    },
+    {
+     "key": "us18_dol_childcare",
+     "url": "https://www.dol.gov/newsroom/releases/wb/wb20241119",
+     "label": "US Department of Labor, Women's Bureau, news release on the National Database of Childcare Prices, 19 November 2024"
+    },
+    {
+     "key": "us18_nii_childrates",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Children/Pages/Rates of child allowance.aspx",
+     "label": "National Insurance Institute, 'Rates of child allowance', effective 1 January 2026"
+    },
+    {
+     "key": "us18_nii_children2018",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/AnnualSurvey/2018/Documents/Children.pdf",
+     "label": "National Insurance Institute, Annual Survey 2018, 'Children' (child allowances)"
+    },
+    {
+     "key": "us18_scripps_ctc",
+     "url": "https://www.scrippsnews.com/politics/economy/could-new-poverty-data-renew-push-for-expanding-the-child-tax-credit",
+     "label": "Justin Boggs, Scripps News, 'Could new poverty data renew push for expanding the child tax credit?', 14 September 2023"
+    },
+    {
+     "key": "us18_oecd_pf11",
+     "url": "https://webfs.oecd.org/els-com/Family_Database/PF1_1_Public_spending_on_family_benefits.pdf",
+     "label": "OECD Family Database, 'PF1.1 Public spending on family benefits', updated February 2025"
+    },
+    {
+     "key": "us18_socx_isr",
+     "url": "https://db.nomics.world/OECD/DSD_SOCX_AGG@DF_PUB_FAM/ISR.A.SOCX.PT_B1GQ.ES10._T.TP51._Z",
+     "label": "OECD SOCX via DBnomics, Israel: public expenditure on family, % of GDP"
+    },
+    {
+     "key": "us18_socx_usa",
+     "url": "https://db.nomics.world/OECD/DSD_SOCX_AGG@DF_PUB_FAM/USA.A.SOCX.PT_B1GQ.ES10._T.TP51._Z",
+     "label": "OECD SOCX via DBnomics, United States: public expenditure on family, % of GDP"
+    }
+   ]
+  },
+  {
+   "id": "us18_reproduction",
+   "stage": "us18",
+   "topic": "Abortion, IVF and fertility in Israel and the US",
+   "claims": [
+    {
+     "text": "1977 law (Penal Code ss.312-321): termination committees (two physicians and a social worker, at least one woman; 38 committees) may approve where the woman is under 18 (later under 20) or over 40, pregnancy from rape, incest or outside marriage, fetal defect, or risk to life or health; about 98% approved; 19,500 legal abortions in 2003; 9 per 1,000 women of childbearing age in 2016 vs US 13.2; 2014 change put elective abortion in the state-funded basket (sources inconsistent on an age-33 limit); free for soldiers; a 2012 report found about half of abortions in private clinics without committee approval",
+     "strength": "reported",
+     "sources": [
+      "us18_wiki_abortion_il"
+     ]
+    },
+    {
+     "text": "ToI 27 Jun 2022: Health Minister Nitzan Horowitz eased rules: drug abortions at HMO clinics, no in-person committee appearance, contraception questions dropped, social-worker meeting optional; 'The rights to a woman's body are those of the woman alone'; CBS recorded 16,492 requests in 2020, 99.6% approved; 17,548 requests in 2021 (Ynet); abolishing committees requires legislation",
+     "strength": "reported",
+     "sources": [
+      "us18_toi_abortion2022"
+     ]
+    },
+    {
+     "text": "#WeCount (10 Jun 2026): about 1.13 million abortions in the formal health system in 2025; telehealth 29% of abortions by Dec 2025 (25% Dec 2024; 5% Apr 2022); in total-ban states telehealth was 97-100% of abortions in 2025",
+     "strength": "primary",
+     "sources": [
+      "us18_sfp_wecount"
+     ]
+    },
+    {
+     "text": "KFF (24 Jul 2026): Hyde Amendment since 1977 bars federal funds for abortion except life endangerment, rape or incest; 13 states require state-funded Medicaid abortion coverage; 13 states had total bans as of 6 January 2026 (AL, AR, ID, IN, KY, LA, ND, MS, OK, SD, TN, TX, WV)",
+     "strength": "primary",
+     "sources": [
+      "us18_kff_abortioncov"
+     ]
+    },
+    {
+     "text": "IJHPR 2016: Israel's national health basket provides practically unlimited IVF to patients under 45 with no more than two children, single mothers included; Israel performs the most IVF cycles per capita in the world; US performed 163,212 IVF cycles in 2013",
+     "strength": "reported",
+     "sources": [
+      "us18_ijhpr_ivf"
+     ]
+    },
+    {
+     "text": "CBS via JVL: Israel TFR 2.93 (1990-99 average), 2.92 (2000-04), 3.04 (2010-14), 3.08 (2015-19), 2.89 (2022); 2024 by group: Jewish 3.06, Muslim 2.75, all-Arab 2.58 (Muslim 4.67 in 1990-99)",
+     "strength": "reported",
+     "sources": [
+      "us18_jvl_tfr"
+     ]
+    },
+    {
+     "text": "NCHS: general fertility rate 53.1 per 1,000 women 15-44 in 2025 (provisional), 53.8 in 2024; down 23% since 2007; 3,606,400 births in 2025",
+     "strength": "primary",
+     "sources": [
+      "us18_cdc_births2025"
+     ]
+    },
+    {
+     "text": "AP (24 Jul 2025): US TFR 1.599 in 2024 (record low), 1.621 in 2023; about 2.1 in 2007; Trump administration issued an executive order to expand access to and lower the cost of IVF",
+     "strength": "reported",
+     "sources": [
+      "us18_ap_tfr2024"
+     ]
+    },
+    {
+     "text": "IJHPR 2016 (audit re-check): the 'highest in the world' IVF-per-capita statement is the authors' citing a 2006 paper; study data are Maccabi registry 2011-2014",
+     "strength": "reported",
+     "sources": [
+      "us18_ijhpr_ivf"
+     ]
+    },
+    {
+     "text": "Wikipedia (audit re-check): committees approve 98% of requests; 200 requests denied in 2003",
+     "strength": "reported",
+     "sources": [
+      "us18_wiki_abortion_il"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us18_wiki_abortion_il",
+     "url": "https://en.wikipedia.org/wiki/Abortion_in_Israel",
+     "label": "Wikipedia, 'Abortion in Israel'"
+    },
+    {
+     "key": "us18_toi_abortion2022",
+     "url": "https://timesofisrael.com/israel-eases-access-to-abortion-canceling-key-decades-old-mandatory-formalities/",
+     "label": "Times of Israel, 'Israel eases access to abortion, canceling key decades-old mandatory formalities', 27 June 2022"
+    },
+    {
+     "key": "us18_sfp_wecount",
+     "url": "https://societyfp.org/wecount-report-11-dec-2025-data-press-release/",
+     "label": "Society of Family Planning, #WeCount Report 11 press release (data to December 2025), 10 June 2026"
+    },
+    {
+     "key": "us18_kff_abortioncov",
+     "url": "https://www.kff.org/womens-health-policy/state-policies-on-abortion-coverage-in-medicaid-private-insurance-and-aca-exchange-plans/",
+     "label": "KFF, 'How State Policies Shape Access to Abortion Coverage', 24 July 2026"
+    },
+    {
+     "key": "us18_ijhpr_ivf",
+     "url": "https://ijhpr.biomedcentral.com/track/pdf/10.1186/s13584-016-0072-9",
+     "label": "Kol, Bergovoy Yellin, Segal, Porath, 'In Vitro fertilization (IVF) treatments in Maccabi Healthcare Services 2007-2014', Israel Journal of Health Policy Research 5:14 (2016)"
+    },
+    {
+     "key": "us18_jvl_tfr",
+     "url": "https://www.jewishvirtuallibrary.org/statistics-on-fertility-rates-in-israel",
+     "label": "Jewish Virtual Library, 'Fertility Rates for Women in Israel' (CBS data)"
+    },
+    {
+     "key": "us18_cdc_births2025",
+     "url": "https://www.cdc.gov/nchs/data/vsrr/vsrr043.pdf",
+     "label": "NCHS, 'Births: Provisional Data for 2025', VSRR No. 43, April 2026"
+    },
+    {
+     "key": "us18_ap_tfr2024",
+     "url": "https://news.wttw.com/node/51524",
+     "label": "AP via WTTW, 'US Fertility Rate Reached a New Low in 2024, CDC Data Shows', 24 July 2025"
+    }
+   ]
+  },
+  {
+   "id": "us18_safetynet",
+   "stage": "us18",
+   "topic": "Pensions, disability, long-term care and social insurance",
+   "claims": [
+    {
+     "text": "CRS on the 2026 Trustees Report: OASI fund depleted Q4 2032, combined OASDI Q3 2034, after which revenue covers about 83% of scheduled benefits (65% by 2100); over 71 million beneficiaries; 2025 total cost $1,609.5bn; 75-year deficit 4.42% of taxable payroll (3.82% in 2025 report)",
+     "strength": "primary",
+     "sources": [
+      "us18_crs_ss2026"
+     ]
+    },
+    {
+     "text": "Census P60-290: official poverty 10.2% in 2025, 34.5m people; child official poverty a historic low 13.4%; SPM 13.1%, not statistically different from 2024; Social Security moved 28.8 million people out of SPM poverty, the largest anti-poverty programme",
+     "strength": "primary",
+     "sources": [
+      "us18_census_p60290"
+     ]
+    },
+    {
+     "text": "Gronau and Spivak: Israel closed the old pension funds to new members in 1995, moved from defined-benefit to defined-contribution pensions, and passed the Mandatory Pension Law of 2008",
+     "strength": "reported",
+     "sources": [
+      "us18_cup_pension"
+     ]
+    },
+    {
+     "text": "Taub (Jan 2014): one in five elderly Israelis was poor in the mid-2000s (20.7% on disposable income vs 5.9% across 21 OECD countries, Ben-David and Bleikh 2013); a 2008 order mandated pensions for all salaried employees, at least 17.5% of salary up to the average wage from January 2014, about two-thirds paid by employers; only 24% of the elderly receive the means-tested income supplement; public pensions replace about 22% of an average wage; retirement ages 67 men, 62 women",
+     "strength": "reported",
+     "sources": [
+      "us18_taub_elderly"
+     ]
+    },
+    {
+     "text": "NII: long-term care reform in force November 2018, levels raised from 3 to 6, choice of cash, hybrid or in-kind care (about 14.5%/57%/28.5%); 309,435 elderly receive the benefit, about 55,000 in serious nursing condition; about 131,400 more people in four years",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_ltc"
+     ]
+    },
+    {
+     "text": "ToI 13 Feb 2018: Knesset passed 84-0 a NIS 4.3bn ($1.23bn) four-year plan raising disability benefits by NIS 470-770 a month to nearly NIS 4,000; activists sought parity with the minimum wage; Welfare Minister Haim Katz: 'This is the first step to bringing it up to minimum wage.'",
+     "strength": "reported",
+     "sources": [
+      "us18_toi_disability"
+     ]
+    },
+    {
+     "text": "Taub 2014 (audit re-check): Israel's elderly poverty 20.7% highest of the 21 OECD countries in the comparison (US next, 19.8%); 22% public-pension replacement is for an average-wage man entering the labour market at the time; about 78% with private pension; 24% receiving income supplement includes most older immigrants",
+     "strength": "reported",
+     "sources": [
+      "us18_taub_elderly"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us18_crs_ss2026",
+     "url": "https://www.everycrsreport.com/reports/IF13256.html",
+     "label": "Congressional Research Service, 'Social Security: Selected Findings of the 2026 Annual Report', IF13256, 25 June 2026"
+    },
+    {
+     "key": "us18_census_p60290",
+     "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html",
+     "label": "US Census Bureau, 'Poverty in the United States: 2025', P60-290, September 2026"
+    },
+    {
+     "key": "us18_cup_pension",
+     "url": "https://www.cambridge.org/core/books/israeli-economy-19952017/reforms-in-the-israeli-pension-system-19952015/E332E0DC784608089BAFE222F574E0FF",
+     "label": "Reuben Gronau and Avia Spivak, 'The Reforms in the Israeli Pension System 1995-2015', in The Israeli Economy 1995-2017 (Cambridge UP, 2021)"
+    },
+    {
+     "key": "us18_taub_elderly",
+     "url": "https://www.taubcenter.org.il/wp-content/uploads/2020/12/taubcenter.org_.il_tauborgilwp_wpcontent_uploads_e2014elderlypovertypolicybriefweb.pdf",
+     "label": "Liora Bowers, Taub Center, 'Elderly poverty in Israel' policy brief, January 2014"
+    },
+    {
+     "key": "us18_nii_ltc",
+     "url": "https://www.btl.gov.il/English Homepage/About/PressReleases/Pages/Sieod.aspx",
+     "label": "National Insurance Institute, press release on the long-term care reform"
+    },
+    {
+     "key": "us18_toi_disability",
+     "url": "https://www.timesofisrael.com/knesset-raises-disability-benefits-as-protesters-push-for-bigger-boost/",
+     "label": "Times of Israel, 'Knesset raises disability benefits as protesters push for bigger boost', 13 February 2018"
+    }
+   ]
+  },
+  {
+   "id": "us18_poverty",
+   "stage": "us18",
+   "topic": "Poverty over time: NII and Census",
+   "claims": [
+    {
+     "text": "NII 2024: persons 20.7% (20.6% 2023), families 20.0% (20.2%), children 28% (~880,000), about 2 million poor; Arab families 37.6% (38.1%), Haredi families 32.8% (33.0%); 158,700 poor elderly, above the OECD average; poverty line NIS 3,547 per standard person; without NII transfers persons 31.5% and families 34.5%; Israel second in OECD child poverty after Costa Rica; 28.1% food insecure",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_pov2024"
+     ]
+    },
+    {
+     "text": "NII 2023 report: persons 21.9% (2010), 22.3% (2015), 20.1% (2020), 20.8% (2022), 20.7% (2023) (2010-2020 read from chart); elderly 12.8% 2022 and 2023; transfers and taxes cut person poverty by 36.0% (2010), 30.1% (2019), 41.1% (2020), 33.5% (2023); OECD-scale comparison: Israel 19.5% vs OECD average 11.6% (persons), children 23.4% vs 12.4%, 66+ 17.8% vs 15.1%",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_pov2023"
+     ]
+    },
+    {
+     "text": "NII 2018 report: poverty line is 50% of median disposable income per standard person; 2018 persons 21.2%, families 18.0%, children 30.0%, elderly 18.8%; before transfers and taxes persons 28.0%, families 27.8%; series break 2011/2012 (move from income to expenditure surveys)",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_pov2018"
+     ]
+    },
+    {
+     "text": "NII Annual Survey 2007: net-income poverty 2004 families 20.3%, persons 23.6%, children 33.2%, elderly 25.1%; 2006 families 20.0%, persons 24.5%, children 35.8%, elderly 21.5%; child allowance cutback from 2002 raised child poverty by 5 points 2002-2005; income support plus child allowances for a couple with two children fell from about 71% of the poverty line in 2002 to 48.9% in 2006",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_survey2007"
+     ]
+    },
+    {
+     "text": "CRS (16 Sep 2026): official poverty 10.2% in 2025, down from 10.7% the previous year; 34.5m people; child 13.4% (14.4%); SPM 13.1%; thresholds $16,749 (single under 65), $32,649 (two adults, two children)",
+     "strength": "primary",
+     "sources": [
+      "us18_crs_pov2025"
+     ]
+    },
+    {
+     "text": "EPI from Census historical tables: official poverty 22.4% (1959), 11.1% (1973), 13.0% (1980), 15.2% (1983), 13.5% (1990), 15.1% (1993), 11.3% (2000), 15.1% (2010), 10.5% (2019), 10.6% (2024)",
+     "strength": "reported",
+     "sources": [
+      "us18_epi_povtrend"
+     ]
+    },
+    {
+     "text": "Stateline (16 Sep 2026): 10.2% is a historic low; median household income $87,460; experts expect worse figures once the 2025 tax and spending law's cuts to Medicaid and food assistance take effect; children receiving SNAP fell 1.2 million July 2025-July 2026 (CBPP)",
+     "strength": "reported",
+     "sources": [
+      "us18_njm_poverty"
+     ]
+    },
+    {
+     "text": "Contradiction: the US official poverty rate for 2024 appears as 10.6% in the historical table (EPI) and as 10.7% in CRS's comparison with 2025",
+     "strength": "disputed",
+     "sources": [
+      "us18_epi_povtrend",
+      "us18_crs_pov2025"
+     ]
+    },
+    {
+     "text": "NII 2024 press release (audit re-check): Jerusalem district family poverty 36.5%; 28.1% food insecure including one million children",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_pov2024"
+     ]
+    },
+    {
+     "text": "NII 2023 report (audit re-check): OECD scale: Israel 2nd after Costa Rica for persons (19.5% vs 11.6%) and children (23.4% vs 12.4%); 66+ 17.8% vs 15.1%, 12th of 36; income support cut family poverty 1.3% (2023), disability pension 13.3% (12.3% 2022), old-age and survivors' pensions 24.2% (largest); persons 20.8% (2022), 20.7% (2023)",
+     "strength": "primary",
+     "sources": [
+      "us18_nii_pov2023"
+     ]
+    },
+    {
+     "text": "CRS IN12737 (audit re-check): full-time year-round workers poverty 1.6% in 2025 (1.8% in 2024)",
+     "strength": "primary",
+     "sources": [
+      "us18_crs_pov2025"
+     ]
+    },
+    {
+     "text": "Census P60-290 (audit re-check): official rate fell 0.5 points to 10.2% (so 10.7% in 2024 on the report's basis); the report calls child and Hispanic poverty historic lows, not the overall rate; Stateline calls 10.2% the lowest on record",
+     "strength": "primary",
+     "sources": [
+      "us18_census_p60290",
+      "us18_njm_poverty"
+     ]
+    },
+    {
+     "text": "Stateline (audit re-check): 'grimmer statistics' attributed to unnamed 'some experts'; CBPP described as left-leaning",
+     "strength": "reported",
+     "sources": [
+      "us18_njm_poverty"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us18_nii_pov2024",
+     "url": "https://www.btl.gov.il/English%20Homepage/About/PressReleases/Pages/dohoni2024.aspx",
+     "label": "National Insurance Institute, press release on the 2024 Poverty and Income Inequality Report"
+    },
+    {
+     "key": "us18_nii_pov2023",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/Poverty_Report/Documents/dohahoni23.pdf",
+     "label": "National Insurance Institute, 'Report on the Dimensions of Poverty and Income Inequality 2023', December 2024"
+    },
+    {
+     "key": "us18_nii_pov2018",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/Poverty_Report/Documents/oni2018-e.pdf",
+     "label": "National Insurance Institute, 'Poverty and Social Gaps 2018' report"
+    },
+    {
+     "key": "us18_nii_survey2007",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/AnnualSurvey/2007/Documents/chap-2-ENG.pdf",
+     "label": "National Insurance Institute, Annual Survey 2007, chapter 2 (poverty and inequality)"
+    },
+    {
+     "key": "us18_crs_pov2025",
+     "url": "https://www.everycrsreport.com/reports/IN12737.html",
+     "label": "Congressional Research Service, 'Poverty in 2025', IN12737, 16 September 2026"
+    },
+    {
+     "key": "us18_epi_povtrend",
+     "url": "https://www.epi.org/chart/elise-american-dream-2026-trends-in-the-poverty-rate-1959-2024/",
+     "label": "Economic Policy Institute chart, 'Trends in the Poverty Rate, 1959-2024' (Census historical poverty tables)"
+    },
+    {
+     "key": "us18_njm_poverty",
+     "url": "https://newjerseymonitor.com/2026/09/16/repub/census-data-poverty-rate/",
+     "label": "Shalina Chatlani, Stateline via New Jersey Monitor, 'Census data shows US poverty rate drops to lowest on record', 16 September 2026"
+    }
+   ]
+  },
+  {
+   "id": "us18_audit",
+   "stage": "us18",
+   "topic": "Audit additions for Part 18: Dobbs, pensions, maternity law, unemployment, fertility, IVF order, Maryland paid leave",
+   "claims": [
+    {
+     "text": "Dobbs v. Jackson Women's Health Organization decided 24 June 2022, 6-3, overruling Roe and Casey",
+     "strength": "primary",
+     "sources": [
+      "us18a_scotus_dobbs"
+     ]
+    },
+    {
+     "text": "DOL: 'ERISA does not require any employer to establish a retirement plan.'",
+     "strength": "primary",
+     "sources": [
+      "us18a_dol_erisa"
+     ]
+    },
+    {
+     "text": "BLS March 2025: 72% of private industry workers had access to retirement benefits, 53% participated (take-up 73%); access 38% in lowest wage decile, 49% lowest quartile, 91% highest quartile, 93% highest decile",
+     "strength": "primary",
+     "sources": [
+      "us18a_bls_ret2025"
+     ]
+    },
+    {
+     "text": "FBC law firm (Feb 2020), Employment of Women Law: 26 weeks of partly paid maternity leave after at least 12 months with the employer (15 weeks with less service); first 15 weeks paid by NII; no dismissal during leave or within 60 days after; earlier dismissal needs Ministry of Labour approval",
+     "strength": "reported",
+     "sources": [
+      "us18a_fbc_maternity"
+     ]
+    },
+    {
+     "text": "NII: maximum unemployment benefit days: under 25: 50 (138 with 3+ dependants); 25-28: 67 (138); 28-35: 100 (138); 35-45: 138 (175); 45+: 175",
+     "strength": "primary",
+     "sources": [
+      "us18a_nii_uiperiod"
+     ]
+    },
+    {
+     "text": "NII Annual Survey 2015: benefit progressive by prior wage, capped at the average wage for the first five months and two-thirds of it thereafter; replacement 33%-80% of last salary; average benefit about 49.2% of average wage in 2015; 50-175 days; 2002-03 cuts raised qualifying period from 6 months in the last 12 to 12 of the last 18 and cut under-25 maximum from 100 to 50 days; about 35% of unemployed received benefits in 2015 (about 70,000 of 202,000)",
+     "strength": "primary",
+     "sources": [
+      "us18a_nii_ui2015"
+     ]
+    },
+    {
+     "text": "CBPP (updated 28 Sep 2026): most states provide up to 26 weeks of regular state UI; 16 states provide fewer, as few as 12 weeks (FL, LA, NC, TN); Massachusetts 30",
+     "strength": "reported",
+     "sources": [
+      "us18a_cbpp_uiweeks"
+     ]
+    },
+    {
+     "text": "CBPP (2014): average UI benefit replaced 46.6% of prior earnings in 2013 (33.9% Alaska to 54.3% Hawaii); fewer than half of unemployed received UI outside recessions since the late 1950s; about 40% end-2013, below 30% in first half 2014",
+     "strength": "reported",
+     "sources": [
+      "us18a_cbpp_uiintro"
+     ]
+    },
+    {
+     "text": "OECD SF2.1 (April 2026): 'In 2024, at 2.87 children per woman, Israel had the highest TFR in the OECD.'",
+     "strength": "primary",
+     "sources": [
+      "us18a_oecd_sf21"
+     ]
+    },
+    {
+     "text": "Executive order 'Expanding Access to In Vitro Fertilization' signed 18 February 2025; asks the Domestic Policy adviser for recommendations within 90 days on protecting IVF access and reducing costs",
+     "strength": "primary",
+     "sources": [
+      "us18a_wh_ivf"
+     ]
+    },
+    {
+     "text": "Maryland HB 102, signed 6 May 2025, delayed FAMLI: contributions from 1 January 2027, benefits between 1 January 2027 and 3 January 2028 at the latest",
+     "strength": "reported",
+     "sources": [
+      "us18a_bd_maryland"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us18a_scotus_dobbs",
+     "url": "https://www.scotusblog.com/cases/dobbs-v-jackson-womens-health-organization/",
+     "label": "SCOTUSblog, 'Dobbs v. Jackson Women's Health Organization' case page"
+    },
+    {
+     "key": "us18a_dol_erisa",
+     "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/retirement-plans-and-ERISA",
+     "label": "US Department of Labor, EBSA, 'FAQs about Retirement Plans and ERISA'"
+    },
+    {
+     "key": "us18a_bls_ret2025",
+     "url": "https://www.bls.gov/news.release/archives/ebs2_09252025.htm",
+     "label": "BLS, 'Employee Benefits in the United States, March 2025', 25 September 2025"
+    },
+    {
+     "key": "us18a_fbc_maternity",
+     "url": "https://www.fbclawyers.com/wp-content/uploads/2020/02/Bits-Briefs-update-February-2020.pdf",
+     "label": "FBC & Co. law firm, 'Bits & Briefs' labour update, February 2020"
+    },
+    {
+     "key": "us18a_nii_uiperiod",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Unemployment Insurance/Pages/PeriodEntitlement.aspx",
+     "label": "National Insurance Institute, 'How long unemployment benefits may be received?'"
+    },
+    {
+     "key": "us18a_nii_ui2015",
+     "url": "https://www.btl.gov.il/English%20Homepage/Publications/AnnualSurvey/2015/Documents/Chapter%203_Unemployment.pdf",
+     "label": "National Insurance Institute, Annual Survey 2015, ch. 3: Unemployment"
+    },
+    {
+     "key": "us18a_cbpp_uiweeks",
+     "url": "https://www.cbpp.org/research/economy/how-many-weeks-of-unemployment-compensation-are-available",
+     "label": "CBPP, 'How Many Weeks of Unemployment Compensation Are Available?', updated 28 September 2026"
+    },
+    {
+     "key": "us18a_cbpp_uiintro",
+     "url": "https://www.cbpp.org/es/research/introduction-to-unemployment-insurance",
+     "label": "CBPP, 'Introduction to Unemployment Insurance', updated 30 July 2014"
+    },
+    {
+     "key": "us18a_oecd_sf21",
+     "url": "https://webfs.oecd.org/Els-com/Family_Database/SF_2_1_Fertility_rates.pdf",
+     "label": "OECD Family Database, SF2.1 Fertility rates, updated April 2026"
+    },
+    {
+     "key": "us18a_wh_ivf",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/02/expanding-access-to-in-vitro-fertilization",
+     "label": "White House, Executive Order 'Expanding Access to In Vitro Fertilization', 18 February 2025"
+    },
+    {
+     "key": "us18a_bd_maryland",
+     "url": "https://www.bakerdonelson.com/maryland-paid-famli-program-current-status-and-key-updates",
+     "label": "Baker Donelson, 'Maryland Paid FAMLI Program: Current Status and Key Updates', 13 March 2026"
+    }
+   ]
+  }
+ ]
+}

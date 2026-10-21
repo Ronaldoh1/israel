@@ -1,0 +1,372 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us13_wages",
+   "stage": "us13",
+   "topic": "Minimum wage over time, hours, leave and pay gaps, Israel and US",
+   "claims": [
+    {
+     "text": "US federal minimum (nonfarm) rose from $1.00 (Feb 1967) to $1.60 (Feb 1968), $3.10 (Jan 1980), $3.35 (Jan 1981), $3.80 (Apr 1990), $4.25 (Apr 1991), $4.75 (Oct 1996), $5.15 (Sep 1997), $5.85 (24 Jul 2007), $6.55 (24 Jul 2008), $7.25 (24 Jul 2009); no change since 2009 in the chart.",
+     "strength": "primary",
+     "sources": [
+      "us13_dol_minwage"
+     ]
+    },
+    {
+     "text": "EPI: the 1968 federal minimum ($1.60) was worth $12.50 in 2023 dollars; $7.25 was worth $10.33 in 2023 dollars; in 2023 the real value was at a 66-year low, 42% below the 1968 peak and about 30% below its value when last raised; 30 states and DC set higher minimums.",
+     "strength": "reported",
+     "sources": [
+      "us13_epi_history"
+     ]
+    },
+    {
+     "text": "Ballotpedia (12 Dec 2025): 22 states and DC raise minimums in 2026 (19 on 1 Jan); average state minimum $11.18 (2025) to $11.51 (2026); 20 states use the federal $7.25; 30 above it; highest DC $17.95 (July 2025).",
+     "strength": "reported",
+     "sources": [
+      "us13_bp_states2026"
+     ]
+    },
+    {
+     "text": "NII table: Israel's monthly minimum wage NIS 2,348.88 (1 Apr 1997), 2,964.95 (Apr 2000), 3,850.18 (Jul 2008), 4,300 (Oct 2012), 5,000 (Jan 2017), 5,300 (Dec 2017; unchanged at 1 Apr 2018 to 1 Apr 2023), 5,571.75 (Apr 2023), 5,880.02 (Apr 2024), 6,247.67 (Apr 2025), 6,443.85 (1 Apr 2026; hourly NIS 34.64 on 186 hours).",
+     "strength": "primary",
+     "sources": [
+      "us13_nii_minwage"
+     ]
+    },
+    {
+     "text": "Contradiction resolved: WageIndicator's NIS 6,247.67 'from 1 April 2026' is the 1 April 2025 rate per NII; the 2026 rate is NIS 6,443.85 (+3.1%).",
+     "strength": "primary",
+     "sources": [
+      "us13_nii_minwage"
+     ]
+    },
+    {
+     "text": "Kol-Zchut: Israel's Minimum Wage Law was passed in 1987; the monthly minimum is 47.5% of the average wage, updated each 1 April; hourly = 1/186 of monthly; covers all workers including foreign and undocumented workers; reduced youth rates; employer who fails to pay faces up to a year in prison or a fine.",
+     "strength": "reported",
+     "sources": [
+      "us13_kz_minwagelaw"
+     ]
+    },
+    {
+     "text": "Taub Center (July 2010): Israel's minimum (NIS 3,850 since 2008) was 58% of the median wage, vs OECD average 46% and US 34% (23 countries); Israel 'not a strict enforcer'.",
+     "strength": "reported",
+     "sources": [
+      "us13_taub_minwage2010"
+     ]
+    },
+    {
+     "text": "OECD average annual hours actually worked per worker (Wikipedia table): Israel 1,904 (1990), 2,033 (2000), 1,957 (2010), 1,783 (2020), 1,870 (2025); US 1,816 (1980), 1,833 (1990), 1,832 (2000), 1,772 (2010), 1,767 (2020), 1,800 (2025); OECD average 1,736 (2025); 11 countries above the US in 2025, incl. Mexico 2,205, Chile 1,912, Greece 1,874, Israel 1,870, South Korea 1,833.",
+     "strength": "reported",
+     "sources": [
+      "us13_wiki_hours"
+     ]
+    },
+    {
+     "text": "JILPT (OECD as of Aug 2025) US hours 1,880 (2000), 1,810 (2010), 1,800 (2020), 1,796 (2024); OECD warns the series is for comparing one country over time, not levels across countries; includes part-time workers.",
+     "strength": "primary",
+     "sources": [
+      "us13_jil_hours"
+     ]
+    },
+    {
+     "text": "US DOL: the FLSA 'does not require payment for time not worked, such as vacations'; vacation is a matter of agreement between employer and employee.",
+     "strength": "primary",
+     "sources": [
+      "us13_dol_vacation"
+     ]
+    },
+    {
+     "text": "Israel's statutory minimum annual leave rose from 10 to 12 days from 1 Jan 2017, the first increase since 1951 (Annual Leave Law), rising with seniority from the fifth year; most OECD countries give 20 or more days.",
+     "strength": "reported",
+     "sources": [
+      "us13_toi_vacation"
+     ]
+    },
+    {
+     "text": "OECD gender wage gap, US (median full-time weekly earnings): 19.0% (2005), 18.8% (2010), 18.9% (2015), 17.7% (2020), 16.4% (2023), 17.3% (2024).",
+     "strength": "primary",
+     "sources": [
+      "us13_jil_gendergap"
+     ]
+    },
+    {
+     "text": "OECD Family Database (Sept 2026): OECD average gap 10.1% in 2024, down 8.4 points since 2000; Israel among countries with gaps of 20% or more; Israel's data are monthly earnings, US weekly; US gap fell from the mid-1970s to early 2010s and little changed since 2014.",
+     "strength": "primary",
+     "sources": [
+      "us13_oecd_lmf15"
+     ]
+    },
+    {
+     "text": "Shoresh (Ben-David and Kimhi), reported by JPost 4 Mar 2025: women's median monthly income in Israel was 76.9% of men's (2021–2023), a wider gap than in 35 of 38 OECD countries, and wider than 15 years earlier.",
+     "strength": "reported",
+     "sources": [
+      "us13_jpost_shoresh"
+     ]
+    },
+    {
+     "text": "Audit re-fetch (21 Oct 2026): the gap widens after women have children while men's earnings rise after fatherhood (Ben-David and Kimhi)",
+     "strength": "reported",
+     "sources": [
+      "us13_jpost_shoresh"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us13_dol_minwage",
+     "url": "https://www.dol.gov/agencies/whd/minimum-wage/history/chart",
+     "label": "US Department of Labor, Wage and Hour Division, 'Changes in Basic Minimum Wages in Non-Farm Employment Under Federal Law, 1938–2009'"
+    },
+    {
+     "key": "us13_epi_history",
+     "url": "https://www.epi.org/?p=272837",
+     "label": "Jasmine Payne-Patterson and Adewale A. Maye, EPI, 'A history of the federal minimum wage: 85 years later, the minimum wage is far from equitable', 31 Aug 2023"
+    },
+    {
+     "key": "us13_bp_states2026",
+     "url": "https://news.ballotpedia.org/2025/12/12/minimum-wage-set-to-increase-in-22-states-and-d-c-raising-the-nationwide-average-to-11-51/",
+     "label": "Ballotpedia News, 'Minimum wage set to increase in 22 states and D.C., raising the nationwide average to $11.51', 12 Dec 2025"
+    },
+    {
+     "key": "us13_nii_minwage",
+     "url": "https://www.btl.gov.il/MEDINIYUT/GENERALDATA/Pages/%D7%A9%D7%9B%D7%A8%20%D7%9E%D7%99%D7%A0%D7%99%D7%9E%D7%95%D7%9D.aspx",
+     "label": "National Insurance Institute of Israel (Bituach Leumi), 'Minimum wage' table, 1997–2026 (Hebrew)"
+    },
+    {
+     "key": "us13_kz_minwagelaw",
+     "url": "https://www.kolzchut.org.il/ar/قانون_الحد_الأدنى_من_الأجور",
+     "label": "Kol-Zchut, 'Minimum Wage Law' (Arabic edition)"
+    },
+    {
+     "key": "us13_taub_minwage2010",
+     "url": "https://www.taubcenter.org.il/en/research/how-minimum-the-wage-how-negative-the-tax/",
+     "label": "Taub Center, 'How Minimum the Wage? How Negative the Tax?', July 2010"
+    },
+    {
+     "key": "us13_wiki_hours",
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_labor_hours",
+     "label": "Wikipedia, 'List of countries by average annual labor hours' (OECD series, average annual hours actually worked per worker)"
+    },
+    {
+     "key": "us13_jil_hours",
+     "url": "https://www.jil.go.jp/kokunai/statistics/databook/2026/06/d2026_6T-01.pdf",
+     "label": "JILPT, Databook of International Labour Statistics 2026, Table 6-1 (OECD average annual hours actually worked, as of Aug 2025)"
+    },
+    {
+     "key": "us13_dol_vacation",
+     "url": "https://www.dol.gov/general/topic/benefits-leave/vacation_leave",
+     "label": "US Department of Labor, 'Vacation Leave'"
+    },
+    {
+     "key": "us13_toi_vacation",
+     "url": "https://www.timesofisrael.com/minimum-number-of-vacation-days-rises-to-12-in-2017/",
+     "label": "Times of Israel staff, 'Minimum number of vacation days rises to 12 in 2017', 1 Jan 2017"
+    },
+    {
+     "key": "us13_jil_gendergap",
+     "url": "https://www.jil.go.jp/kokunai/statistics/databook/2026/05/d2026_5T-10.pdf",
+     "label": "JILPT, Databook of International Labour Statistics 2026, Table 5-10 (OECD gender wage gap, full-time median earnings, as of Sept 2025)"
+    },
+    {
+     "key": "us13_oecd_lmf15",
+     "url": "https://webfs.oecd.org/els-com/Family_Database/LMF_1_5_Gender_pay_gaps_for_full_time_workers.pdf",
+     "label": "OECD Family Database, LMF1.5 'Gender pay gaps for full-time workers', updated Sept 2026"
+    },
+    {
+     "key": "us13_jpost_shoresh",
+     "url": "https://www.jpost.com/business-and-innovation/banking-and-finance/article-844655",
+     "label": "Eve Young, Jerusalem Post, 'Israel's gender-wage gap worse than developed world and growing, Shoresh Institution says', 4 Mar 2025"
+    }
+   ]
+  },
+  {
+   "id": "us13_unions",
+   "stage": "us13",
+   "topic": "Histadrut vs US unions; density and bargaining coverage; laws; strikes",
+   "claims": [
+    {
+     "text": "BLS: US union membership rate 10.0% in 2025 (14.7m) vs 9.9% in 2024 (14.3m) and 20.1% (17.7m) in 1983; public sector 32.9%, private 5.9% (2025); 11.2% (16.5m) represented by unions; median weekly earnings $1,404 union vs $1,174 nonunion (full-time); October 2025 excluded owing to the shutdown.",
+     "strength": "primary",
+     "sources": [
+      "us13_bls_union2025"
+     ]
+    },
+    {
+     "text": "Histadrut founded December 1920 in Haifa for Jewish workers; Arabs admitted from 1953 (Wikipedia; other accounts say 1959); owned Bank Hapoalim (lost after the 1983 bank-share crisis), ZIM and Clalit; employed about 280,000 in 1989; Clalit covered ~70% of Israelis in mid-1980s.",
+     "strength": "reported",
+     "sources": [
+      "us13_wiki_histadrut"
+     ]
+    },
+    {
+     "text": "Histadrut density: 68% of the Jewish workforce (1927), ~75% (1939), ~85% of wage earners (1983), 27% of the workforce (2016); membership fell from 1.8m (~80% of the workforce) to about 200,000 in 1994–95 after the health law cut the Clalit link; ~650,000 (2005), 570,000 (2017); 800,000 per infobox; general strikes Feb 2012 and March 2023 (called off same day after Netanyahu paused the judicial legislation).",
+     "strength": "reported",
+     "sources": [
+      "us13_wiki_histadrut"
+     ]
+    },
+    {
+     "text": "Shalev (1996): the Histadrut negotiated for 85% of wage earners until the early 1990s and spoke for about two-thirds of Israeli adults; it agreed to the 1985 stabilization plan; Labor lost control of it in May 1994; the National Health Insurance Law (early 1995) ended entitlement to Sick Fund care through membership.",
+     "strength": "reported",
+     "sources": [
+      "us13_shalev_labor"
+     ]
+    },
+    {
+     "text": "OECD (Sept 2017, situation Dec 2015): Israel's private-sector union density 10–20%; collective bargaining coverage 20–30% of employees; bargaining predominantly company/sectoral, decentralised; extension of sectoral agreements by the ministry exists but is uncommon.",
+     "strength": "primary",
+     "sources": [
+      "us13_oecd_cb_israel"
+     ]
+    },
+    {
+     "text": "NPR, 2 Sept 2024: the Histadrut called a general strike after six hostages' bodies were recovered in Gaza; Ben Gurion airport paused flights for hours; Israel's Labor Court ordered it to end by 2:30 pm and the Histadrut complied.",
+     "strength": "reported",
+     "sources": [
+      "us13_npr_strike2024"
+     ]
+    },
+    {
+     "text": "Equitable Growth (2017): US bargaining is enterprise-level; the US ranked last of 21 OECD countries in collective bargaining coverage; nearly one in three US workers was a union member in 1960, just over one in ten in 2016.",
+     "strength": "reported",
+     "sources": [
+      "us13_eg_bargaining"
+     ]
+    },
+    {
+     "text": "Littler: Michigan's repeal of right-to-work took effect 30 Mar 2024 (first state in 58 years to repeal); 26 states have such laws under NLRA Section 14(b), which bar enforcement of union-security clauses.",
+     "strength": "reported",
+     "sources": [
+      "us13_littler_rtw"
+     ]
+    },
+    {
+     "text": "Audit re-fetch (21 Oct 2026): Netanyahu: 'Whoever murders hostages — does not want a deal'",
+     "strength": "reported",
+     "sources": [
+      "us13_npr_strike2024"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us13_bls_union2025",
+     "url": "https://www.bls.gov/news.release/archives/union2_02182026.htm",
+     "label": "US Bureau of Labor Statistics, 'Union Members — 2025', news release, 18 Feb 2026"
+    },
+    {
+     "key": "us13_wiki_histadrut",
+     "url": "https://en.wikipedia.org/wiki/Histadrut",
+     "label": "Wikipedia, 'Histadrut'"
+    },
+    {
+     "key": "us13_shalev_labor",
+     "url": "https://pluto.huji.ac.il/%7Emshalev/Papers/LaborMovement.pdf",
+     "label": "Michael Shalev, 'The Labor Movement in Israel: Ideology and Political Economy', in E. J. Goldberg (ed.), The Social History of Labor in the Middle East (Westview, 1996)"
+    },
+    {
+     "key": "us13_oecd_cb_israel",
+     "url": "https://t4.oecd.org/employment/emp/collective-bargaining-Israel.pdf",
+     "label": "OECD, 'Collective bargaining systems: Israel' country profile, Sept 2017"
+    },
+    {
+     "key": "us13_npr_strike2024",
+     "url": "https://www.kpbs.org/news/international/2024/09/02/israels-labor-strike-over-hostages-is-called-off-after-court-order",
+     "label": "Willem Marx and Kat Lonsdorf, NPR (via KPBS), 'Israel's labor strike over hostages is called off after court order', 2 Sept 2024"
+    },
+    {
+     "key": "us13_eg_bargaining",
+     "url": "https://equitablegrowth.org/why-is-collective-bargaining-so-difficult-in-the-united-states-compared-to-its-international-peers/",
+     "label": "Bridget Ansel, Washington Center for Equitable Growth, 'Why is collective bargaining so difficult in the United States compared to its international peers?', 22 Feb 2017"
+    },
+    {
+     "key": "us13_littler_rtw",
+     "url": "https://www.littler.com/publication-press/publication/michigan-repeals-right-work-law",
+     "label": "Littler Mendelson (Tuzzo, Perez, Thorn), 'Michigan Repeals Right-to-Work Law', 29 Mar 2023"
+    }
+   ]
+  },
+  {
+   "id": "us13_migrants",
+   "stage": "us13",
+   "topic": "Palestinian and migrant workers in Israel; unauthorized workers in the US",
+   "claims": [
+    {
+     "text": "PCBS: West Bank workers in Israel and settlements about 172,000 before the war (about 127,000 with permits), about 25,000 in Q4 2023, about 51,000 in Q4 2025 (about 14,000 permit holders); West Bank unemployment about 13% (Q3 2023) to about 28% (Q4 2025); Gaza unemployment about 45% before to about 68% (Q4 2024).",
+     "strength": "primary",
+     "sources": [
+      "us13_pcbs_workers2026"
+     ]
+    },
+    {
+     "text": "+972 (6 May 2026): over 200,000 Palestinians barred after 7 Oct 2023 (150,000 West Bank permit holders, ~50,000 without permits, 18,500 from Gaza); 8,000 permits in 2025; >10,000 work in settlements; residential construction fell 95%; Kav LaOved counts about 270,000 migrant workers; plans for ~65,000 from India, Sri Lanka and Uzbekistan; quotas ~30,000 each in agriculture and construction, caregiving uncapped; visas tied to the employer; agricultural migrants paid ~70% of wages owed (Kav LaOved 2014); Thai workers the group most affected on 7 Oct.",
+     "strength": "reported",
+     "sources": [
+      "us13_972_workers"
+     ]
+    },
+    {
+     "text": "The Media Line citing PIBA: almost 61,000 new foreign-worker permits in 2025, total 227,044; a May 2024 government decision raised the quota to 3.3% of the population; PIBA's Moshe Nakash cited a shortfall of 100,000.",
+     "strength": "reported",
+     "sources": [
+      "us13_tml_piba"
+     ]
+    },
+    {
+     "text": "EPI citing Pew: 8.3 million unauthorized immigrants in the US labour force in 2022 (just under 5% of the workforce), up from 3.6 million in 1995; employers can use fear of retaliation and deportation to underpay them.",
+     "strength": "reported",
+     "sources": [
+      "us13_epi_unauth"
+     ]
+    },
+    {
+     "text": "Contradiction: pre-war count of Palestinian workers in Israel differs: PCBS ~172,000 West Bank incl. ~127,000 permits; +972 150,000 permit holders + ~50,000 without; Media Line/Kav LaOved ~100,000.",
+     "strength": "disputed",
+     "sources": [
+      "us13_pcbs_workers2026",
+      "us13_972_workers",
+      "us13_tml_piba"
+     ]
+    },
+    {
+     "text": "Audit re-fetch (21 Oct 2026): about 240,000 migrant workers (about 10% of the labour force) by 2000; at least three migrant workers killed by Iranian missiles in the 2026 war; 32 Thai workers killed and 22 taken hostage on 7 October 2023",
+     "strength": "reported",
+     "sources": [
+      "us13_972_workers"
+     ]
+    },
+    {
+     "text": "Audit re-fetch (21 Oct 2026): the 8.3 million figure equals earlier peaks in 2008 and 2011",
+     "strength": "reported",
+     "sources": [
+      "us13_epi_unauth"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us13_pcbs_workers2026",
+     "url": "https://pcbs.gov.ps/media/ruapsnvd/internationalworkersday2026e.pdf",
+     "label": "Palestinian Central Bureau of Statistics, 'A Sharp Deterioration in Palestinian Labor Conditions Following the Israeli Aggression against Gaza Strip', 30 Apr 2026"
+    },
+    {
+     "key": "us13_972_workers",
+     "url": "https://www.972mag.com/palestinians-migrant-workers-labor-force-changes/",
+     "label": "Charlotte Ritz-Jack and Dana Mills, +972 Magazine, 'Palestinians out, foreign workers in: How Israel is remaking its labor force', 6 May 2026"
+    },
+    {
+     "key": "us13_tml_piba",
+     "url": "https://www.yahoo.com/news/articles/foreign-workers-replace-palestinian-labor-140708524.html",
+     "label": "The Media Line (via Yahoo News), 'Foreign workers replace Palestinian labor in Israel, face hurdles', c. March 2026"
+    },
+    {
+     "key": "us13_epi_unauth",
+     "url": "https://files.epi.org/uploads/FAQ-Unauthorized-Immigrants-v5.pdf",
+     "label": "Daniel Costa, Josh Bivens and Monique Morrissey, EPI, 'Unauthorized immigrants and the economy' (FAQ), 15 Apr 2025"
+    }
+   ]
+  }
+ ]
+}

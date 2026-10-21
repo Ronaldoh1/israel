@@ -2,6 +2,7 @@
 
 **Subtitle:** Government, Rights, Money and the Cost of Living, Compared Over Time
 **Placement:** shelf slot of ch40 (US ⇄ Israel — Two Systems Compared), absorbing ch60 (What About America?).
+**Status:** written, audited and on the shelf 21 Oct 2026 (21 parts). Re-check status lines after 27 Oct (Israel) and 3 Nov (US).
 **Standard:** Greater Israel / Theology Shield volumes; three-source check; every figure re-checked from primary data, measured over time (1980–2026 where series exist); independent audit.
 **Source map:** scratchpad us_leads.md (169 leads, 188 data-series rows).
 
