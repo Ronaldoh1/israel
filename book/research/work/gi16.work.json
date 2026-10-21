@@ -296,5 +296,89 @@
     "label": "Mark Binskin, Special Adviser to the Australian Government, public report on Israel's response to the WCK strikes, 2 Aug 2024"
    }
   }
+ },
+ "gi16_audit": {
+  "topic": "Audit re-verification of US service deaths, Oct 2023 to Oct 2026",
+  "claims": [
+   {
+    "text": "Army: Sgt Michael Emmanuel Swinton, 30, D Battery 2-55 ADA, 108th ADA Brigade, Fort Bragg, 'was killed in action during a controlled detonation of a downed One-Way Unmanned Aerial System' at Erbil Air Base, Iraq, 19 July 2026; under investigation",
+    "strength": "primary",
+    "sources": [
+     "gi16a_army_swinton"
+    ]
+   },
+   {
+    "text": "Army Times (21 Jul 2026): three soldiers died in the Iranian missile and drone attack on Muwaffaq Salti Air Base, Jordan: Sgt Angel S. Rampersad, 28 (believed died 17 July; status changed from missing), Pvt Isabella Gonzales, 19 (17 July), 1st Lt Tyler James Feehan, 25 (18 July)",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_at_jordan"
+    ]
+   },
+   {
+    "text": "Task & Purpose: six Army Reserve soldiers of the 103rd Sustainment Command killed when an Iranian drone struck a tactical operations center at Port Shuaiba, Kuwait, on 1 March 2026 (CW3 Robert M. Marzan, Maj Jeffrey R. O'Brien, Capt Cody A. Khork, MSgt Nicole M. Amor, SFC Noah L. Tietjens, Sgt Declan J. Coady); Sgt Benjamin N. Pennington, 1st Space Battalion, wounded in the 1 March Iranian attack on Prince Sultan Air Base, died 8 March",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_tp_kuwait"
+    ]
+   },
+   {
+    "text": "Task & Purpose: KC-135 crash in western Iraq, 12 March 2026, six airmen of the 6th ARW (MacDill) and Ohio ANG 121st ARW killed; CENTCOM: 'not due to hostile fire or friendly fire'; second KC-135 involved landed safely",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_tp_kc135"
+    ]
+   },
+   {
+    "text": "USNI News: Cmdr Gabriel Edwards, commanding officer of HSC-5 (USS George H.W. Bush strike group), died after an MH-60S ditched in the Arabian Sea on 1 July 2026; initial findings do not suggest hostile action",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_usni_edwards"
+    ]
+   },
+   {
+    "text": "Task & Purpose: AD2 Oriola Michael Aregbesola, HSM-74 aboard USS Mason (Eisenhower strike group, responding to Houthi attacks), died 20 March 2024 in the Red Sea region; DoD called it a non-combat incident, under investigation",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_tp_aregbesola"
+    ]
+   },
+   {
+    "text": "AP via NBC: five Army special operations aviation soldiers (CW3 Dwyer, CW2 Barnes, SSgt Grone, Sgt Southard, Sgt Wolfe) killed 10 Nov 2023 when a UH-60 crashed in the eastern Mediterranean 'during an air refueling mission as part of military training' (EUCOM); article set it in the US build-up after 7 October but did not tie the crash to the war",
+    "strength": "secondary",
+    "sources": [
+     "gi16a_nbc_med"
+    ]
+   }
+  ],
+  "sources": {
+   "gi16a_army_swinton": {
+    "url": "https://www.army.mil/article/294025",
+    "label": "US Army, 'DoW announces death of USASMDC Soldier in Iraq', 21 July 2026"
+   },
+   "gi16a_at_jordan": {
+    "url": "https://www.armytimes.com/news/your-military/2026/07/21/pentagon-identifies-third-american-soldier-killed-in-iranian-attack-in-jordan/",
+    "label": "Army Times, 'Pentagon identifies third American soldier killed in Iranian attack in Jordan', 21 July 2026"
+   },
+   "gi16a_tp_kuwait": {
+    "url": "https://taskandpurpose.com/news/military-troops-identified-iran.md",
+    "label": "Task & Purpose, US troops killed in the Iran war identified (Kuwait and Prince Sultan Air Base), March 2026"
+   },
+   "gi16a_tp_kc135": {
+    "url": "https://taskandpurpose.com/news/pentagon-identifies-airmen-iraq-kc-135.md",
+    "label": "Task & Purpose, 'Pentagon identifies airmen killed in KC-135 crash in Iraq', March 2026"
+   },
+   "gi16a_usni_edwards": {
+    "url": "https://news.usni.org/2026/07/08/navy-identifies-helicopter-squadron-commander-as-missing-sailor-in-arabian-sea",
+    "label": "USNI News, 'Navy Identifies Helicopter Squadron Commander As Missing Sailor in Arabian Sea', 8 July 2026"
+   },
+   "gi16a_tp_aregbesola": {
+    "url": "https://taskandpurpose.com/news/us-navy-oriola-michael-aregbesola-non-combat-death.md",
+    "label": "Task & Purpose, on the non-combat death of AD2 Oriola Michael Aregbesola, March 2024"
+   },
+   "gi16a_nbc_med": {
+    "url": "https://www.nbcbayarea.com/news/national-international/5-us-troops-killed-in-a-military-helicopter-crash-over-the-mediterranean-identified/3369515/",
+    "label": "AP via NBC Bay Area, '5 US troops killed in a military helicopter crash over the Mediterranean identified', 13 Nov 2023"
+   }
+  }
  }
 }
