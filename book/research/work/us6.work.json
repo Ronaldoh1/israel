@@ -259,5 +259,45 @@
     "label": "RAICES (plaintiff), 'D.C. Circuit agrees that Trump lacks the authority to override asylum', 24 Apr 2026"
    }
   }
+ },
+ "us6_audit": {
+  "topic": "Audit re-verification (us6)",
+  "claims": [
+   {
+    "text": "Trump v. Barbara (30 June 2026): Roberts for the Court, joined by Sotomayor, Kagan, Barrett and Jackson; Jackson concurring; Kavanaugh concurring in the judgment in part and dissenting in part; Thomas dissenting, joined by Gorsuch; Alito dissenting; Gorsuch dissenting separately.",
+    "strength": "primary",
+    "sources": [
+     "us6a_fd_barbara"
+    ]
+   },
+   {
+    "text": "HRW 2014: the Israeli government called Sudanese and Eritreans 'work infiltrators' and argued not deporting them gave adequate protection; described Holot as an 'open residency center'; Interior Minister Gideon Sa'ar said he could not accept the verdict, warning borders would be overrun by illegal infiltrators.",
+    "strength": "reported",
+    "sources": [
+     "us6a_hrw_govt"
+    ]
+   },
+   {
+    "text": "CRS: EO 14163 stated that entry of refugees under USRAP 'would be detrimental to the interests of the United States'; more than 98% of FY2025 admissions arrived in the first four months; FY2026 ceiling of 17,500 'the lowest in the history of the USRAP'.",
+    "strength": "primary",
+    "sources": [
+     "us6a_crs_rationale"
+    ]
+   }
+  ],
+  "sources": {
+   "us6a_fd_barbara": {
+    "url": "https://www.faegredrinker.com/zh/insights/publications/2026/6/supreme-court-decides-trump-v-barbara",
+    "label": "Faegre Drinker, 'Supreme Court Decides Trump v. Barbara', June 2026"
+   },
+   "us6a_hrw_govt": {
+    "url": "https://www.hrw.org/news/2014/09/24/israel-high-court-voids-migrant-holding-law",
+    "label": "Human Rights Watch, 'Israel: High Court Voids Migrant Holding Law', 24 September 2014"
+   },
+   "us6a_crs_rationale": {
+    "url": "https://www.everycrsreport.com/reports/IF13277.html",
+    "label": "Congressional Research Service, IF13277, US refugee admissions (2026)"
+   }
+  }
  }
 }

@@ -179,5 +179,23 @@
     "label": "SelectUSA, US Department of Commerce, 'Israel' FDI fact sheet, August 2026"
    }
   }
+ },
+ "us20_audit": {
+  "topic": "Audit re-checks: loan guarantee reduction years",
+  "claims": [
+   {
+    "text": "Audit re-fetch: JVL table for the 1992 guarantees (FY1993-97) shows no reduction in 1993; settlement reductions were made in 1994-97 (total $1,358.8m, $585m reinstated, net $773.8m, $9,226.2m available). Corrects the earlier '1993-97' note. Israel paid annual fees 'amounting to several hundred million dollars'; it has never defaulted",
+    "strength": "reported",
+    "sources": [
+     "us20_jvl_loans"
+    ]
+   }
+  ],
+  "sources": {
+   "us20_jvl_loans": {
+    "url": "https://www.jewishvirtuallibrary.org/loan-guarantees-for-israel",
+    "label": "Jewish Virtual Library (CRS data), 'Loan Guarantees for Israel'"
+   }
+  }
  }
 }

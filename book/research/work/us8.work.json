@@ -450,5 +450,56 @@
     "label": "Wikipedia, 'Americans with Disabilities Act of 1990'"
    }
   }
+ },
+ "us8_audit": {
+  "topic": "Audit re-verification (us8)",
+  "claims": [
+   {
+    "text": "Taub (8 Mar 2023): gender wage gap for non-Haredi Jewish women 37% in gross wages, 25% hourly, ~10% after accounting for hours, industry and other factors; Arab women's gap virtually non-existent in 2014, rising to 15% (comparison 2014 to ~2018).",
+    "strength": "reported",
+    "sources": [
+     "us8a_taub_women"
+    ]
+   },
+   {
+    "text": "TOI 13 Feb 2018: Welfare Minister Haim Katz: 'This is the first step to bringing it up to minimum wage, but you need to have patience'; about 30 protesters barricaded the Knesset entrance saying the rise was too small; in 2017 activists held near-daily demonstrations blocking main highways, beginning March 2017.",
+    "strength": "reported",
+    "sources": [
+     "us8a_toi_dis"
+    ]
+   },
+   {
+    "text": "JBHE: Black SPM poverty 11.3% in 2021 and 20.1% in 2025; Black child SPM 8.1% (2021), 22% (2025).",
+    "strength": "reported",
+    "sources": [
+     "us8a_jbhe"
+    ]
+   },
+   {
+    "text": "Opportunity Insights: parental marital status, education and wealth 'explain very little' of the Black-white gap conditional on parent income; 'Differences in ability also do not explain' the patterns.",
+    "strength": "primary",
+    "sources": [
+     "us8a_oi"
+    ]
+   }
+  ],
+  "sources": {
+   "us8a_taub_women": {
+    "url": "https://www.taubcenter.org.il/en/international-womens-day-is-a-good-opportunity-to-reflect-on-efforts-to-promote-equality-in-the-labor-market-and-the-latest-developments-in-this-area/",
+    "label": "Liora Bowers, Taub Center, 'International Women's Day...', 8 March 2023"
+   },
+   "us8a_toi_dis": {
+    "url": "https://www.timesofisrael.com/knesset-raises-disability-benefits-as-protesters-push-for-bigger-boost/",
+    "label": "Times of Israel, 'Knesset raises disability benefits as protesters push for bigger boost', 13 February 2018"
+   },
+   "us8a_jbhe": {
+    "url": "https://jbhe.com/?p=231664",
+    "label": "Journal of Blacks in Higher Education, Black poverty 2025 (Census data), 2026"
+   },
+   "us8a_oi": {
+    "url": "https://opportunityinsights.org/paper/race/",
+    "label": "Chetty, Hendren, Jones, Porter, 'Race and Economic Opportunity in the United States', Opportunity Insights"
+   }
+  }
  }
 }

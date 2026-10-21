@@ -305,5 +305,45 @@
     "label": "Yahoo News (republication), 'IRS Formally Backs Down: Churches Can Endorse Candidates Under Consent Decree', July 2025"
    }
   }
+ },
+ "us7_audit": {
+  "topic": "Audit re-verification (us7)",
+  "claims": [
+   {
+    "text": "2024 draft case: the government argued the military had discretion over which groups to conscript; the court (Vogelman, 9-0) rejected this as illegitimate selective enforcement.",
+    "strength": "reported",
+    "sources": [
+     "us7a_globes_govt"
+    ]
+   },
+   {
+    "text": "Coalition funds 2026: Hebrew media reported Finance Ministry opposition; Naftali Bennett said the government was 'secretly transferring billions of shekels of political money to evaders'; Yair Golan and Yesh Atid's Vladimir Beliak also criticised; no official government justification reported.",
+    "strength": "reported",
+    "sources": [
+     "us7a_toi_funds"
+    ]
+   },
+   {
+    "text": "28 July 2026 hearing (panel of nine under Deputy President Sohlberg): AG representative Aner Helman said the arrest-ban law creates unconstitutional discriminatory enforcement; Knesset legal adviser Yitzhak Bart urged striking it on procedural grounds; government boycotted; about 72,000 Haredi men aged 18-24 eligible had ignored orders.",
+    "strength": "reported",
+    "sources": [
+     "us7a_toi_arrest"
+    ]
+   }
+  ],
+  "sources": {
+   "us7a_globes_govt": {
+    "url": "https://en.globes.co.il/en/article-court-rules-state-must-conscript-yeshiva-students-to-idf-1001482575",
+    "label": "Globes, 'Court rules state must conscript yeshiva students to IDF', 25 June 2024"
+   },
+   "us7a_toi_funds": {
+    "url": "https://www.timesofisrael.com/cabinet-okays-1-6-billion-in-coalition-funds-including-715-million-for-ultra-orthodox/amp",
+    "label": "Times of Israel, 'Cabinet okays $1.6 billion in coalition funds, including $715 million for ultra-Orthodox', March 2026"
+   },
+   "us7a_toi_arrest": {
+    "url": "https://timesofisrael.com/high-court-poised-to-strike-down-law-banning-haredi-draft-dodger-arrest-after-hearing/",
+    "label": "Times of Israel, 'High Court poised to strike down law banning Haredi draft-dodger arrest', 28 July 2026"
+   }
+  }
  }
 }

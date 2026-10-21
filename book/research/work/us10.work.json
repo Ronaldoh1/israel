@@ -322,5 +322,100 @@
     "label": "The Record, 'Judge rules Trump's firing of intel oversight board members illegal', 21 May 2025"
    }
   }
+ },
+ "us10_audit": {
+  "topic": "Audit re-verification (us10)",
+  "claims": [
+   {
+    "text": "ISA Law s.11: classified reports quarterly to the attorney general and prime minister and annually to the Knesset Intelligence and Secret Services Subcommittee; 'the Tool' is the ISA communications metadata database; ACRI petition pending as of 21 March 2024.",
+    "strength": "reported",
+    "sources": [
+     "us10a_lawfare"
+    ]
+   },
+   {
+    "text": "Wiretap Law expanded in 1995 to mobile phones, computer communications and email; Israel has no statutory mandatory retention period for ISPs/telecoms; 'Shin Bet's \"The Tool\" effectively operates as a state-run retention system'.",
+    "strength": "reported",
+    "sources": [
+     "us10a_coda"
+    ]
+   },
+   {
+    "text": "Marari team included two former Shin Bet officials; former police commissioner Roni Alsheich had denied police access to Pegasus; Sa'ar: report 'incorrect and certainly not accurate', no need for state commission; interim report published 21 Feb 2022.",
+    "strength": "reported",
+    "sources": [
+     "us10a_toi_saar"
+    ]
+   },
+   {
+    "text": "Government approved 15 July 2026 Shin Bet role vs crime in Arab communities; Netanyahu: 'We won't accept a situation of violence, extortion and murder on the streets'; ACRI: exceeds Shin Bet authority, organised crime in the Jewish community handled by police with regular tools; Abraham Initiatives: 'Crime is not terror'; Mossawa: diverts development funds.",
+    "strength": "reported",
+    "sources": [
+     "us10a_toi_shinbet"
+    ]
+   },
+   {
+    "text": "Barlev (Jan 2022): 'there is no practice of wiretapping or hacking into devices by the Israel Police without the approval of a judge'.",
+    "strength": "reported",
+    "sources": [
+     "us10a_jurist"
+    ]
+   },
+   {
+    "text": "EFF: 702 expired at midnight 12 June 2026; EFF credits Trump's nomination of Bill Pulte (FHFA director) as DNI, replacing Tulsi Gabbard who had announced her resignation the previous month, as the trigger; Senate Democrats then refused to move their reauthorisation bill and the House refused a short-term renewal.",
+    "strength": "reported",
+    "sources": [
+     "us10a_eff"
+    ]
+   },
+   {
+    "text": "AP Feb 2026: the administration argued the IRS-ICE agreement 'helps carry out President Donald Trump's agenda to secure U.S. borders'; AG Pam Bondi called the D.C. Circuit ruling (Edwards, 24 Feb 2026) a 'crucial victory'.",
+    "strength": "reported",
+    "sources": [
+     "us10a_abc"
+    ]
+   },
+   {
+    "text": "NPR 17 Apr 2026: Section 702 set to expire Monday 20 April 2026; House votes on five-year and the 18-month renewal Trump demanded failed; 10-day extension to 30 April.",
+    "strength": "reported",
+    "sources": [
+     "us10a_wamc"
+    ]
+   }
+  ],
+  "sources": {
+   "us10a_lawfare": {
+    "url": "https://www.lawfaremedia.org/article/expanding-surveillance-powers-israel-s-draft-bill-to-revise-shin-bet-law",
+    "label": "Lawfare, 'Expanding Surveillance Powers: Israel's Draft Bill to Revise Shin Bet Law', 21 March 2024"
+   },
+   "us10a_coda": {
+    "url": "https://codamail.com/articles/privacy-law-directory/international/israel.html",
+    "label": "Codamail, Privacy law directory: Israel"
+   },
+   "us10a_toi_saar": {
+    "url": "https://www.timesofisrael.com/saar-report-on-illegal-nso-spyware-use-was-incorrect-no-need-for-state-inquiry/",
+    "label": "Times of Israel, Sa'ar: report on illegal NSO spyware use was incorrect, 22 February 2022"
+   },
+   "us10a_toi_shinbet": {
+    "url": "https://www.timesofisrael.com/government-okays-shin-bet-to-fight-crime-in-arab-society-sparking-rights-concerns/",
+    "label": "Times of Israel, Government okays Shin Bet to fight crime in Arab society, 16 July 2026"
+   },
+   "us10a_jurist": {
+    "url": "https://www.jurist.org/news/2022/01/israel-police-accused-of-using-pegasus-spyware-to-illegally-spy-on-citizens",
+    "label": "Jurist, Israel police accused of using Pegasus spyware, January 2022"
+   },
+   "us10a_eff": {
+    "url": "https://www.eff.org/deeplinks/2026/06/victory-702-has-expired",
+    "label": "EFF, 'Victory: 702 Has Expired', June 2026"
+   },
+   "us10a_abc": {
+    "url": "https://abc7news.com/post/court-says-irs-can-continue-share-immigrants-taxpayer-data-ice/18646151/",
+    "label": "AP via ABC7, 'Court says IRS can continue to share immigrants' taxpayer data with ICE', 24 February 2026"
+   },
+   "us10a_wamc": {
+    "url": "https://www.wamc.org/2026-04-17/house-extends-surveillance-powers-for-10-days",
+    "label": "NPR via WAMC, 'House extends surveillance powers for 10 days', 17 April 2026"
+   }
+  }
  }
 }

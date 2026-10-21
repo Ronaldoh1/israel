@@ -213,5 +213,45 @@
     "label": "Jeremy M. Sharp, 'U.S. Foreign Aid to Israel', CRS RL33222, 28 May 2025 (missile-defence tables)"
    }
   }
+ },
+ "us19_audit": {
+  "topic": "Audit re-checks: Haredi arrests law outcome; missile-defence details",
+  "claims": [
+   {
+    "text": "28 July 2026: nine-justice High Court panel (Deputy President Noam Sohlberg presiding) extended the interim freeze on the law barring arrests of Haredi draft evaders; the government boycotted the hearing and was not represented; the Knesset legal adviser and the attorney general urged annulment; AG's representative Aner Helman: 'A law that creates discrimination in criminal enforcement cannot stand, even if it is temporary.'",
+    "strength": "reported",
+    "sources": [
+     "us19a_toi_hearing"
+    ]
+   },
+   {
+    "text": "3 September 2026: the High Court unanimously struck down the law shielding Haredi yeshiva students from arrest, finding a fundamentally defective legislative process; eight of nine justices also held it unconstitutional in substance (Justice David Mintz joined on procedure only); 'This law never took effect'; the ruling does not direct the IDF to make particular arrests",
+    "strength": "reported",
+    "sources": [
+     "us19a_jpost_struck"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: CRS says 'Because Iron Dome was developed by Israel alone, Israel initially retained proprietary technology rights to it'; US has funded 'just under half' of annual Arrow development costs; Iron Dome US workshare 30% per 2023 MDA director testimony; Table 5 total FY2006-25 $14,816.853m",
+    "strength": "primary",
+    "sources": [
+     "us19_crs_md"
+    ]
+   }
+  ],
+  "sources": {
+   "us19a_toi_hearing": {
+    "url": "https://timesofisrael.com/high-court-poised-to-strike-down-law-banning-haredi-draft-dodger-arrest-after-hearing/",
+    "label": "Times of Israel, 'High Court extends freeze on law banning arrest of Haredi draft dodgers', 28 July 2026"
+   },
+   "us19a_jpost_struck": {
+    "url": "https://jpost.com/israel-news/politics-and-diplomacy/article-907553",
+    "label": "Jerusalem Post, High Court strikes down law shielding Haredi yeshiva students from arrest, 3 September 2026"
+   },
+   "us19_crs_md": {
+    "url": "https://www.everycrsreport.com/files/2025-05-28_RL33222_5306b5d4e077538d2db80d05cd10ca8c08501669.html",
+    "label": "CRS RL33222, U.S. Foreign Aid to Israel, 28 May 2025"
+   }
+  }
  }
 }

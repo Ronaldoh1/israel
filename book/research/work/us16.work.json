@@ -360,5 +360,45 @@
     "label": "SAMHSA, 'Mental Health Treatment among People Who Had a Mental Health Condition in the Past Year', NSDUH Population Statistics Report Vol. 1 No. 7, Sep 2025"
    }
   }
+ },
+ "us16_audit": {
+  "topic": "Audit re-checks",
+  "claims": [
+   {
+    "text": "Health Ministry report (2022 data) links the Arab–Jewish infant mortality gap (5.1 vs 2.1) partly to differing attitudes toward prenatal genetic testing and unequal access to women's and children's health services",
+    "strength": "reported",
+    "sources": [
+     "us16_toi_moh_gaps"
+    ]
+   },
+   {
+    "text": "Dobkin, Finkelstein et al. used California hospitalisation records (2003–2007, adults over 25)",
+    "strength": "reported",
+    "sources": [
+     "us16_mit_bankruptcy"
+    ]
+   },
+   {
+    "text": "World Bank life expectancy: Israel 82.70 (2022), US 77.43 (2022)",
+    "strength": "primary",
+    "sources": [
+     "us16_wb_le"
+    ]
+   }
+  ],
+  "sources": {
+   "us16_toi_moh_gaps": {
+    "url": "https://www.timesofisrael.com/liveblog_entry/health-ministry-report-highlights-gaps-in-healthcare-delivery-in-arab-sector/",
+    "label": "Times of Israel liveblog, Health Ministry inequality report"
+   },
+   "us16_mit_bankruptcy": {
+    "url": "https://news.mit.edu/2018/how-often-do-medical-problems-lead-bankruptcy-0321",
+    "label": "MIT News, 'How often do medical problems lead to bankruptcy?', 21 March 2018"
+   },
+   "us16_wb_le": {
+    "url": "https://api.worldbank.org/v2/country/USA;ISR/indicator/SP.DYN.LE00.IN?format=json&date=1980:2024&per_page=200",
+    "label": "World Bank WDI, life expectancy at birth"
+   }
+  }
  }
 }

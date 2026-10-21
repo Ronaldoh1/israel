@@ -204,5 +204,34 @@
     "label": "Wikipedia, 'United Nations Security Council Resolution 1483'"
    }
   }
+ },
+ "us9_audit": {
+  "topic": "Audit re-verification (us9)",
+  "claims": [
+   {
+    "text": "JTA: Netanyahu instructed Likud and right-wing backers to vote against the regulations' extension, aiming to 'force a crisis in which he would replace Bennett'; two left-wing coalition members opposed it because they 'oppose the dual system'; most MKs back the law.",
+    "strength": "reported",
+    "sources": [
+     "us9a_jta"
+    ]
+   },
+   {
+    "text": "Reuters 2017: fewer than 6,000 of ~15,000 applications since 2003 'reportedly' approved; 2014–Sept 2016 figures (84 approved, 161 rejected, rest pending) first published by Times of Israel; Interior Ministry attributed slowdown to workload; applying 'still carries the stigma of implied acceptance of Israeli control'.",
+    "strength": "reported",
+    "sources": [
+     "us9a_reuters"
+    ]
+   }
+  ],
+  "sources": {
+   "us9a_jta": {
+    "url": "https://jta.org/?p=1811846",
+    "label": "JTA, Knesset fails to renew West Bank regulations, 7 June 2022"
+   },
+   "us9a_reuters": {
+    "url": "https://www.ynetnews.com/articles/0,7340,L-4939026,00.html",
+    "label": "Reuters via Ynet, East Jerusalem Palestinians seek Israeli citizenship, 22 March 2017"
+   }
+  }
  }
 }
