@@ -40,3 +40,12 @@ Changes from the draft: Part 7 split into The Fronts (1967–2023) and The Buffe
 - Ideology attributed to named movements, parties, documents and officials, never to Jews or Israelis collectively.
 - Every map and quote sourced to its original; disputed attributions (e.g. "from the Nile to the Euphrates" claims, Knesset-inscription myths) checked and labelled.
 - The counter-record given equal care.
+
+## Extension (Ron, 21 Oct 2026): five more parts, verdict moves to Part Eighteen
+13. **The Ledger: Gaza, the West Bank and Lebanon** (gi14). Operations, tolls by source and method (women and children where counted), displacement, destabilisation; Israel's stated reasons beside them.
+14. **The Ledger: Syria, Iran, Iraq, Yemen and the Neighbours** (gi15). Same, with a summary table for every country.
+15. **The Bill and America's Role** (gi16). The $3.8bn MOU and emergency aid; the fungibility argument tested both ways; war costs to Israel and the US; every US service death in these theatres; the "dragged in" argument with both sides.
+16. **The World's Response** (gi17). UN, ICJ, ICC, national courts, recognitions, arms suspensions, sanctions; why support persists (documented drivers, motives labelled).
+17. **Without 1948: The Uganda Test and the Question of Legitimacy** (gi18). Ron's dependency argument (a state programme presupposes 1948) tested; Argentina, Uganda and other documented alternatives; legitimacy arguments side by side, separating the state within its lines from land beyond them.
+18. **Settled, Contested and Open** (gi13, revised to cover Parts 13–17).
+Rule: operations outside the West Bank and Golan are not described as "progress toward Greater Israel"; that link is an argument, labelled.
