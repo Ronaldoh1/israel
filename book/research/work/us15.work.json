@@ -223,5 +223,96 @@
     "label": "Wikipedia, 'Single-family zoning' (accessed 21 October 2026)"
    }
   }
+ },
+ "us15_housing": {
+  "topic": "Homeownership, public housing and homelessness in Israel and the US",
+  "claims": [
+   {
+    "text": "HUD's January 2025 point-in-time count found 745,652 people homeless, 266,320 unsheltered, a 3% decrease from 2024; HUD said homelessness rose 27% and unsheltered homelessness 36% since 2013, and chronic homelessness 81%.",
+    "strength": "primary",
+    "sources": [
+     "us15_hud_pit2025"
+    ]
+   },
+   {
+    "text": "HUD Secretary Scott Turner's release said the 'housing first' status quo 'has failed to meaningfully reduce homelessness' and attributed the 2025 decrease to decreases in 'Sanctuary Cities' (HUD's stated position).",
+    "strength": "primary",
+    "sources": [
+     "us15_hud_pit2025"
+    ]
+   },
+   {
+    "text": "PIT totals: 2007 647,258; 2016 549,928; 2023 653,104; 2024 771,480 (497,256 sheltered; 274,224 unsheltered).",
+    "strength": "primary",
+    "sources": [
+     "us15_crs_homeless"
+    ]
+   },
+   {
+    "text": "US homeownership rate Q2 2026 65.0% (unchanged from Q2 2025); non-Hispanic white 74.5%, Black 45.4%, Asian/NHPI 58.6%; under-35 35.2% (36.4% a year earlier); rental vacancy 7.3%.",
+    "strength": "primary",
+    "sources": [
+     "us15_census_hvs_q226"
+    ]
+   },
+   {
+    "text": "US homeownership peaked at 69.2% in 2004; the Q2 2026 rate is below the 25-year average of 66.3%.",
+    "strength": "reported",
+    "sources": [
+     "us15_nahb_q226"
+    ]
+   },
+   {
+    "text": "Israel's public housing stock fell from about 60,000 apartments in 2014 to about 53,000 in 2019; about 10,000 were sold to tenants 2014-2019 (discounts worth NIS 3.2bn) and about 2,600 bought (NIS 3.4bn); 3,700 eligible people were waiting in 2019 with an average wait of 31 months; about 200 apartments were expected to be added.",
+    "strength": "primary",
+    "sources": [
+     "us15_comptroller_ph2020"
+    ]
+   },
+   {
+    "text": "Mehir Lamishtaken (Buyer's Price, from 2015) was replaced by Mehir Matara (Target Price), offering first-time buyers 20% off or up to NIS 300,000; its April 2022 lottery offered about 10,000 units in 31 localities and drew 119,207 registered households.",
+    "strength": "reported",
+    "sources": [
+     "us15_toi_mehirmatara"
+    ]
+   },
+   {
+    "text": "A 2022 Knesset report: Welfare Ministry aided about 2,000 homeless people in 2019 and 2,250 in 2020; local authorities treated about 3,470 in 2020 and reported about 800 more street dwellers not in treatment; shelters can house about a third.",
+    "strength": "reported",
+    "sources": [
+     "us15_ynet_homeless2022"
+    ]
+   }
+  ],
+  "sources": {
+   "us15_hud_pit2025": {
+    "url": "https://www.hud.gov/news/hud-no-26-037",
+    "label": "HUD, news release HUD No. 26-037, 2025 AHAR Part 1 Point-in-Time Estimates, 29 May 2026"
+   },
+   "us15_crs_homeless": {
+    "url": "https://www.everycrsreport.com/files/2025-05-05_IF12985_a9825f0e785607819e621ba56d18b75af5c979a3.html",
+    "label": "Congressional Research Service, IF12985, homelessness data (PIT counts), 5 May 2025"
+   },
+   "us15_census_hvs_q226": {
+    "url": "https://www.census.gov/housing/hvs/files/qtr226/Q226press.pdf",
+    "label": "US Census Bureau, 'Quarterly Residential Vacancies and Homeownership, Second Quarter 2026', CB26-116, 28 July 2026"
+   },
+   "us15_nahb_q226": {
+    "url": "https://eyeonhousing.org/2026/08/homeownership-rate-edges-down-to-65/",
+    "label": "NAHB Eye on Housing, 'Homeownership rate edges down to 65%', August 2026"
+   },
+   "us15_comptroller_ph2020": {
+    "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2020/70b/EN/2020-70b-205-DiyurTziburi-Taktzir-EN.pdf",
+    "label": "State Comptroller of Israel, Annual Report 70B (2020), 'Public Housing', English summary"
+   },
+   "us15_toi_mehirmatara": {
+    "url": "https://www.timesofisrael.com/housing-lottery-in-israel-sees-huge-demand-for-discounted-apartments/",
+    "label": "Times of Israel, 'Housing lottery in Israel sees huge demand for discounted apartments', 13 April 2022"
+   },
+   "us15_ynet_homeless2022": {
+    "url": "https://www.ynetnews.com/article/bj4n1xuoc",
+    "label": "Ynet News, 'Israel's homeless population growing but response anemic, report says', 10 July 2022"
+   }
+  }
  }
 }

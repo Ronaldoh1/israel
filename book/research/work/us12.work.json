@@ -1,0 +1,308 @@
+{
+ "us12_tech": {
+  "topic": "Tech and venture capital in Israel and the US; R&D intensity; US tech firms in Israel",
+  "claims": [
+   {
+    "text": "IIA: high-tech about 17% of Israel's GDP (~$317bn GDP context) in 2024; about 57% of exports in H1 2025; exports $78bn in 2024; about 403,000 employees (11.5% of workforce) in H1 2025; employment growth below 2% a year since 2023 vs mostly above 5% the prior decade; R&D employees down 6.5% y/y H1 2025; output 'virtually unchanged in 2024 for a second consecutive year'; fundraising 'returned to 2019-2020 levels'; fifth-largest startup-fundraising hub in 2024",
+    "strength": "primary",
+    "sources": [
+     "us12_iia_2025"
+    ]
+   },
+   {
+    "text": "IVC/LeumiTech: Israeli tech private funding $11.1bn in 418 rounds in 2025, up 15% on 2024, deal count down 9%; 180 M&A/IPOs worth $17.7bn; 13 pending deals expected to add $63bn incl. Google's $32bn Wiz",
+    "strength": "reported",
+    "sources": [
+     "us12_jn_ivc2025"
+    ]
+   },
+   {
+    "text": "Times of Israel/IVC: Israeli tech companies raised $25.6bn in 2021, of which $18.64bn from foreign investors; Q2 2023 about $1.78bn, down 65% from ~$5bn in Q2 2022",
+    "strength": "reported",
+    "sources": [
+     "us12_toi_ivc2021"
+    ]
+   },
+   {
+    "text": "World Bank R&D expenditure % GDP: Israel 2.59 (1996), 3.93 (2000), 3.94 (2010), 4.94 (2018); US 2.45 (1996), 2.63 (2000), 2.74 (2010), 2.83 (2018)",
+    "strength": "primary",
+    "sources": [
+     "us12_im_rd_isr",
+     "us12_im_rd_usa"
+    ]
+   },
+   {
+    "text": "Latest R&D intensity: Israel 6.35% (World Bank 2023), 6.76% (OECD 2024); US 3.45% (World Bank 2023; OECD 2024)",
+    "strength": "reported",
+    "sources": [
+     "us12_wiki_rd"
+    ]
+   },
+   {
+    "text": "PitchBook-NVCA: US VC deal value $156.1bn (2019), $175.6bn (2020), $358.2bn (2021), $236.2bn (2022), $168.8bn (2023), $213.2bn (2024), $339.4bn (2025); AI/ML 65.4% of 2025 deal value; half of 2025 deal value went to 0.05% of deals; Anthropic $15bn round largest of Q4 2025",
+    "strength": "primary",
+    "sources": [
+     "us12_nvca_q4_2025"
+    ]
+   },
+   {
+    "text": "Intel in Israel since 1974; 9,335 employees (undated page); exports about $86bn 1974–2023, consistently 3.5–5.5% of Israel's total exports; about $27bn invested 1974–2021",
+    "strength": "primary",
+    "sources": [
+     "us12_intel_israel"
+    ]
+   },
+   {
+    "text": "Netanyahu announced 18 June 2023 Intel's $25bn Kiryat Gat investment ('the largest investment by an international company ever in Israel'), with a government grant of 12.8% and a 7.5% tax rate (up from 5%); Globes (26 Dec 2023): grant $3.2bn, the largest the government has given a private company; Intel ~12,000 employees, largest private-sector employer",
+    "strength": "reported",
+    "sources": [
+     "us12_reg_intel2023",
+     "us12_globes_intel_grant"
+    ]
+   },
+   {
+    "text": "Calcalist (14 July 2025): Intel Israel ~9,350 employees mid-2025, down from 10,800 in 2023 and peak 12,000 in 2021; ~1,500 left in 2024; doubts over Fab38's future",
+    "strength": "reported",
+    "sources": [
+     "us12_calcalist_intel2025"
+    ]
+   },
+   {
+    "text": "Nvidia bought Mellanox in 2020 for a reported $6.9bn; planned Kiryat Tivon campus for up to 10,000 employees, biggest outside the US, initial occupancy 2031",
+    "strength": "reported",
+    "sources": [
+     "us12_jn_nvidia"
+    ]
+   }
+  ],
+  "sources": {
+   "us12_iia_2025": {
+    "url": "https://innovationisrael.org.il/en/report/the-state-of-high-tech-2025/",
+    "label": "Israel Innovation Authority, 'The State of High-Tech 2025: Introduction and Main Points', December 2025"
+   },
+   "us12_jn_ivc2025": {
+    "url": "https://www.jewishnews.co.uk/remarkable-year-for-israeli-tech-as-2025-draws-to-a-close/",
+    "label": "Candice Krieger, Jewish News, 'Remarkable year for Israeli tech as 2025 draws to a close' (IVC/LeumiTech data), 22 December 2025"
+   },
+   "us12_toi_ivc2021": {
+    "url": "https://www.timesofisrael.com/topic/ivc-research-center/",
+    "label": "Times of Israel, 'Israeli tech companies raised $25.6 billion in extraordinary 2021 — report' and related IVC reports, 3 January 2022 – 29 June 2023"
+   },
+   "us12_im_rd_isr": {
+    "url": "https://www.indexmundi.com/facts/israel/indicator/GB.XPD.RSDV.GD.ZS",
+    "label": "World Bank WDI (UNESCO UIS) via IndexMundi, 'Israel – Research and development expenditure (% of GDP)', 1996–2018"
+   },
+   "us12_im_rd_usa": {
+    "url": "https://www.indexmundi.com/facts/united-states/indicator/GB.XPD.RSDV.GD.ZS",
+    "label": "World Bank WDI (UNESCO UIS) via IndexMundi, 'United States – Research and development expenditure (% of GDP)', 1996–2018"
+   },
+   "us12_wiki_rd": {
+    "url": "https://en.wikipedia.org/wiki/List_of_sovereign_states_by_research_and_development_spending",
+    "label": "Wikipedia, 'List of sovereign states by research and development spending' (World Bank 2023; OECD 2024), accessed 21 October 2026"
+   },
+   "us12_nvca_q4_2025": {
+    "url": "https://nvca.org/wp-content/uploads/2026/01/q4-2025-pitchbook-nvca-venture-monitor.pdf",
+    "label": "PitchBook-NVCA, 'Q4 2025 Venture Monitor', January 2026"
+   },
+   "us12_intel_israel": {
+    "url": "https://www.intel.com/content/www/us/en/corporate-responsibility/intel-in-israel.html",
+    "label": "Intel, 'About Intel Israel', accessed 21 October 2026"
+   },
+   "us12_reg_intel2023": {
+    "url": "https://www.theregister.com/2023/06/19/intel_israel_expansion/",
+    "label": "The Register, 'Intel to invest $25bn in Israel factory', 19 June 2023"
+   },
+   "us12_globes_intel_grant": {
+    "url": "https://en.globes.co.il/en/article-1001466126",
+    "label": "Globes, 'Intel confirms further $15b Kiryat Gat fab investment', 26 December 2023"
+   },
+   "us12_calcalist_intel2025": {
+    "url": "https://www.calcalistech.com/ctechnews/article/35ztcxa95",
+    "label": "Calcalist (CTech), 'Intel's Israeli workforce set to fall below 9,000, its lowest in over a decade', 14 July 2025"
+   },
+   "us12_jn_nvidia": {
+    "url": "https://www.jewishnews.co.uk/nvidia-set-to-become-israels-largest-tech-employer/",
+    "label": "Jewish News, 'Nvidia set to become Israel's largest tech employer', 27 February 2026"
+   }
+  }
+ },
+ "us12_defence": {
+  "topic": "Defence industry and arms exports, Israel and US",
+  "claims": [
+   {
+    "text": "IMOD: 2025 defence export deals $19.2bn, up nearly 30% on 2024, fifth straight record; more than doubled in five years and quadrupled in a decade; G2G about $10bn; Europe 36%, Asia-Pacific 32%, MENA 15%, North America 13%, Latin America 2%, Africa 2%; air defence 29%, observation/optronics 22%; Baram: force buildup budget 'relies heavily on these partnerships'",
+    "strength": "primary",
+    "sources": [
+     "us12_mod_exports2025"
+    ]
+   },
+   {
+    "text": "Globes: Abraham Accords countries 15% of 2025 deals (12% in 2024); Europe 54% in 2024 inflated by Arrow 3 sale to Germany (~$3.5bn); air defence 48% in 2024, 36% in 2023; SIBAT's Kulas: Israel no longer the only country with a 'combat-proven' label",
+    "strength": "reported",
+    "sources": [
+     "us12_globes_exports2025"
+    ]
+   },
+   {
+    "text": "Israel defence exports $12.5bn in 2022 and record $13.1bn in 2023 (MoD report 17 June 2024); doubled over five years; missile/rocket/air defence 36% in 2023",
+    "strength": "reported",
+    "sources": [
+     "us12_na_exports2023"
+    ]
+   },
+   {
+    "text": "SIPRI 2021–25: US 42% of global arms exports (36% in 2016–20), volume +27%; top US recipients Saudi Arabia 12%, Ukraine 9.4%, Japan 8.9%; Israel 7th supplier, 4.4% (3.1% in 2016–20), exports +56%; recipients India 29%, Germany 21%, US 7.8%; Israel 14th importer (1.9%), imports +12%, US 68% and Germany 31% of supply",
+    "strength": "primary",
+    "sources": [
+     "us12_sipri_at2025"
+    ]
+   },
+   {
+    "text": "State Department figures (via Defense Archives): FY2025 US arms transfers $331.18bn (DCS $226.8bn, FMS $104.4bn); FY2024 $318.7bn; FMS down 11.47% in FY2025",
+    "strength": "reported",
+    "sources": [
+     "us12_da_fy2025"
+    ]
+   },
+   {
+    "text": "State Department FY2023 summary: FMS $51.9bn (FY2022), $80.9bn (FY2023); DCS $153.6bn (FY2022), $157.5bn (FY2023)",
+    "strength": "primary",
+    "sources": [
+     "us12_usni_fy2023"
+    ]
+   }
+  ],
+  "sources": {
+   "us12_mod_exports2025": {
+    "url": "https://mod.gov.il/en/press-releases/press-room/all-time-defense-export-record-israel-crosses-the-19-billion-threshold",
+    "label": "Israel Ministry of Defense, 'All-Time Defense Export Record: Israel Crosses the $19 Billion Threshold', 2 June 2026"
+   },
+   "us12_globes_exports2025": {
+    "url": "https://en.globes.co.il/en/article-1001544689",
+    "label": "Dean Shmuel Elmas, Globes, 'Israel's defense exports hit new record', 2 June 2026"
+   },
+   "us12_na_exports2023": {
+    "url": "https://newarab.com/news/israel-defence-exports-hit-record-131-billion-2023",
+    "label": "The New Arab, 'Israel defence exports hit record $13.1 billion in 2023', 18 June 2024"
+   },
+   "us12_sipri_at2025": {
+    "url": "https://www.sipri.org/sites/default/files/2026-03/fs_2603_at_2025.pdf",
+    "label": "SIPRI, 'Trends in International Arms Transfers, 2025' (fact sheet), March 2026"
+   },
+   "us12_da_fy2025": {
+    "url": "https://defensearchives.com/news/united-states-arms-sales-experience-continued-growth-in-fiscal-year-2025/",
+    "label": "Defense Archives, 'United States arms sales experience continued growth in Fiscal Year 2025' (State Department figures), 23 March 2026"
+   },
+   "us12_usni_fy2023": {
+    "url": "https://news.usni.org/2024/01/30/u-s-state-dept-summary-of-fy2023-foreign-arms-transfers-and-defense-trade",
+    "label": "USNI News, 'U.S. State Dept. Summary of FY2023 Foreign Arms Transfers and Defense Trade', 30 January 2024"
+   }
+  }
+ },
+ "us12_other": {
+  "topic": "Energy, food and agriculture, pharma, finance in Israel and the US",
+  "claims": [
+   {
+    "text": "Israel gas production 27.38 bcm in 2024 (25.28 bcm 2023): Leviathan 11.33, Tamar 10.09, Karish 5.96; exports to Egypt and Jordan 13.11 bcm (11.56 in 2023); domestic 14.27 bcm (52%)",
+    "strength": "reported",
+    "sources": [
+     "us12_enerdata_gas2024"
+    ]
+   },
+   {
+    "text": "Gas framework (Aug 2015): Delek to sell Tamar, Karish and Tanin holdings within six years; US-based Noble Energy to cut Tamar stake to max 25%; regulated prices for six years; government bound 10 years; antitrust commissioner David Gilo resigned in May 2015 over Noble and Delek's dominance; Tamar producing since 2013; Leviathan to be developed by 2019",
+    "strength": "reported",
+    "sources": [
+     "us12_toi_gasframework"
+    ]
+   },
+   {
+    "text": "Leviathan consortium signed $35bn deal to sell about 130 bcm to Egypt through 2040 (Aug 2025); triples previous export volumes; ~13% of Israel's reserves; NewMed (formerly Delek Drilling, Tshuva's Delek Group) 45.3%",
+    "strength": "reported",
+    "sources": [
+     "us12_tml_leviathan"
+    ]
+   },
+   {
+    "text": "EIA (via Reuters): US dry gas production 103.2 Bcf/d in 2024, forecast 107.1 (2025) and 107.4 (2026)",
+    "strength": "reported",
+    "sources": [
+     "us12_boe_eia"
+    ]
+   },
+   {
+    "text": "State Comptroller (Jan 2024): Israel's price level 27% above OECD average (PPP); food prices 37% above OECD and 51% above EU; ten largest food suppliers held more than 50% of the food and consumer products market; abnormal profit among food and pharmaceutical importers; 46 food products under price supervision; imported butter up ~60% after removal from tight supervision in Nov 2021",
+    "strength": "primary",
+    "sources": [
+     "us12_comptroller_food"
+    ]
+   },
+   {
+    "text": "USDA ERS: four largest beef packers' share of steer and heifer purchases 36% (1980), 81% (1995), 85% (latest); farm-to-wholesale spread no persistent rise 1980–2015, widened sharply after 2015",
+    "strength": "primary",
+    "sources": [
+     "us12_ers_meatpacking"
+    ]
+   },
+   {
+    "text": "Teva (14 Dec 2017): ~14,000 job cuts (over 25% of workforce) over two years, ~1,700 in Israel, Jerusalem plant to close; ~$10bn debt due within 12 months; bought Actavis Generics for about $40bn; dividend suspended; Histadrut called a general strike; ~6,800 employees in Israel",
+    "strength": "reported",
+    "sources": [
+     "us12_toi_teva2017"
+    ]
+   },
+   {
+    "text": "Competition Authority (26 Mar 2024) planned to declare Leumi, Hapoalim, Discount, Mizrahi Tefahot and First International a concentration group; the five held 98% of banking assets at end-2022, Leumi and Hapoalim 57%",
+    "strength": "reported",
+    "sources": [
+     "us12_globes_banks"
+    ]
+   },
+   {
+    "text": "FDIC-insured US commercial banks 14,483 (1984), 7,061 (2008), 4,027 (2023), down 72%; branches 41,311 (1984), 81,809 (2008), 69,684 (2023)",
+    "strength": "reported",
+    "sources": [
+     "us12_farmdoc_banks"
+    ]
+   }
+  ],
+  "sources": {
+   "us12_enerdata_gas2024": {
+    "url": "https://www.enerdata.net/publications/daily-energy-news/israels-gas-exports-egypt-and-jordan-increased-over-13-2024.html",
+    "label": "Enerdata (Israel Ministry of Energy data), 'Israel's gas exports to Egypt and Jordan increased by over 13% in 2024', 7 March 2025"
+   },
+   "us12_toi_gasframework": {
+    "url": "https://www.timesofisrael.com/cabinet-expected-to-okay-natural-gas-deal-sunday/amp/",
+    "label": "Times of Israel, 'Cabinet expected to okay natural gas deal Sunday', 16 August 2015"
+   },
+   "us12_tml_leviathan": {
+    "url": "https://themedialine.org/headlines/israel-signs-record-35-billion-natural-gas-deal-with-egypt-through-2040",
+    "label": "The Media Line, 'Israel Signs Record $35 Billion Natural Gas Deal with Egypt Through 2040', 7 August 2025"
+   },
+   "us12_boe_eia": {
+    "url": "https://boereport.com/2025/11/07/us-set-to-produce-record-amounts-of-natural-gas-to-meet-surging-export-demand/amp/",
+    "label": "Scott DiSavino, Reuters via BOE Report, 'US set to produce record amounts of natural gas to meet surging export demand' (EIA STEO), 7 November 2025"
+   },
+   "us12_comptroller_food": {
+    "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/The-cost-of-living/EN/2024-The-cost-of-living-102-Prices-Taktzir-EN.pdf",
+    "label": "State Comptroller of Israel, 'Price Control in the Food Industry' (Aspects of Dealing with the Cost of Living), January 2024"
+   },
+   "us12_ers_meatpacking": {
+    "url": "https://www.ers.usda.gov/amber-waves/2024/january/concentration-in-u-s-meatpacking-industry-and-how-it-affects-competition-and-cattle-prices",
+    "label": "James M. MacDonald, USDA ERS Amber Waves, 'Concentration in U.S. Meatpacking Industry and How It Affects Competition and Cattle Prices', 25 January 2024"
+   },
+   "us12_toi_teva2017": {
+    "url": "https://www.timesofisrael.com/ailing-drug-maker-teva-to-cut-14000-jobs-globally-in-effort-to-recover/",
+    "label": "Times of Israel, 'Israel's ailing Teva to cut 25% of global workforce in recovery effort', 14 December 2017"
+   },
+   "us12_globes_banks": {
+    "url": "https://en.globes.co.il/en/article-1001474772",
+    "label": "Globes, 'Regulator to declare big banks as concentration group', 26 March 2024"
+   },
+   "us12_farmdoc_banks": {
+    "url": "https://farmdocdaily.illinois.edu/2024/09/an-explanation-of-the-changes-in-the-number-of-commercial-banks-and-branches-across-the-us.html",
+    "label": "Gerald Mashange, farmdoc daily (University of Illinois), 'An Explanation of the Changes in the Number of Commercial Banks and Branches across the US', 19 September 2024"
+   }
+  }
+ }
+}
