@@ -275,5 +275,56 @@
     "label": "JTA, 'Death of Reverend William Hechler, Herzl's Friend and Colleague', 3 February 1931"
    }
   }
+ },
+ "ts2_audit": {
+  "topic": "Audit re-checks for Part Two (21 October 2026)",
+  "claims": [
+   {
+    "text": "Audit: Muir names the recipient of Shaftesbury's July 1853 letter as 'Foreign Minister George Hamilton Gordon, Lord Palmerston' (George Hamilton Gordon was Aberdeen's name); she dates Hodder's biography 1887; Keith returned to Palestine five years after 1839 with his son George Skene Keith. Muir does not mention Himmelfarb (the Himmelfarb reading is from the Wikipedia article).",
+    "strength": "reported",
+    "sources": [
+     "ts2a_muir_meq"
+    ]
+   },
+   {
+    "text": "Audit: Wikipedia quotes Adam Garfinkle from Jewcentricity (2009): early Zionists who validated the phrase 'did not do so easily or for long'; Neumann cites a book by Ben-Gurion and Ben-Zvi and finds pioneer writings 'full of expressions of Palestine as an empty and desolate land'; Zangwill 1917: 'The country holds 600,000 Arabs'; Said, 'cancel and transcend an actual reality'; Masalha, 'no people worth considering'.",
+    "strength": "reported",
+    "sources": [
+     "ts2a_wiki_landwithout"
+    ]
+   },
+   {
+    "text": "Audit: Hechler was tutor to the children of Frederick I, Grand Duke of Baden, from about 1873; used Philipp zu Eulenburg to approach the Kaiser; wrote 'It is the duty of every Christian to love the Jews'.",
+    "strength": "reported",
+    "sources": [
+     "ts2a_wiki_hechler"
+    ]
+   },
+   {
+    "text": "Audit: Crome confirms Brightman 'favoured Presbyterian church government'; Cromwell's July 1653 hope that the Barebones Parliament might help 'bring the Jews home'; Menasseh's 'ends of the earth' argument; Mather on the Jews overcoming the Roman Church and Ottoman Empire; Brothers a former naval officer promising restoration by 1798; the London Society 'denied any particular focus upon prophecy'.",
+    "strength": "reported",
+    "sources": [
+     "ts2a_crome_cdamm"
+    ]
+   }
+  ],
+  "sources": {
+   "ts2a_muir_meq": {
+    "url": "https://www.meforum.org/middle-east-quarterly/a-land-without-a-people-for-a-people-without-1877",
+    "label": "Diana Muir, Middle East Quarterly, Spring 2008 (re-checked)"
+   },
+   "ts2a_wiki_landwithout": {
+    "url": "https://en.wikipedia.org/wiki/A_land_without_a_people_for_a_people_without_a_land",
+    "label": "Wikipedia, 'A land without a people for a people without a land' (re-checked 21 October 2026)"
+   },
+   "ts2a_wiki_hechler": {
+    "url": "https://en.wikipedia.org/wiki/William_Hechler",
+    "label": "Wikipedia, 'William Hechler' (re-checked)"
+   },
+   "ts2a_crome_cdamm": {
+    "url": "https://www.cdamm.org/articles/christian-restorationism-prior-to-1900",
+    "label": "Andrew Crome, CDAMM, 2022 (re-checked)"
+   }
+  }
  }
 }

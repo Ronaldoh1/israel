@@ -283,5 +283,111 @@
     "label": "Pew Research Center, 'The Promised Land and the Second Coming', 11 January 2007 (survey July 2003)"
    }
   }
+ },
+ "ts7_audit": {
+  "topic": "Independent audit re-fetches, 21 October 2026",
+  "claims": [
+   {
+    "text": "Audit re-fetch: Pew 2014 Latin America report: Protestants 'more likely than Catholics ... to believe that Jesus will return during their lifetime'; no question on Israel.",
+    "strength": "primary",
+    "sources": [
+     "ts7_pew_latam2014"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: CBS/AP: Rami Levi of the tourism ministry said the government remains 'outraged'; Robertson: 'for any prime minister of Israel who decides he is going to carve it up and give it away, God says, No, this is mine.'",
+    "strength": "reported",
+    "sources": [
+     "ts7_cbs_robertson"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Ynet/AP: Netanyahu said Bolsonaro told him the embassy move was a matter of 'when, not if'.",
+    "strength": "reported",
+    "sources": [
+     "ts7_ynet_brazil"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: AP: Pena: 'Israel is going to win, and the countries (that) are standing next to Israel, we are going to win.'",
+    "strength": "reported",
+    "sources": [
+     "ts7_abc_paraguay"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Wikipedia (DTS): 'premillennial, dispensational interpretation of the Scriptures' is cited to a DTS Library page; a 2009 study found 'Three DTS alumni were among the top ten' most influential preachers named by Protestant pastors; Swindoll '63, Jeremiah '67, Stanley '85.",
+    "strength": "reported",
+    "sources": [
+     "ts7_wiki_dts"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Olsen was Executive Vice President of Northeastern Bible Institute, Essex Fells, NJ.",
+    "strength": "primary",
+    "sources": [
+     "ts7_ct_bibleinst"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: CT 2012: 'the governmental Nigerian Christian Pilgrim Commission'; 30,000 visited Israel, Rome, Greece and Egypt Oct-Dec; pastors Kehinde and Inyang doubted spiritual value, Atilade and Douglas-West defended it.",
+    "strength": "reported",
+    "sources": [
+     "ts7_ct_nigeria"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Williams: 'Robertson played a crucial role in the rise of the Religious Right to national prominence in the 1980s'; the 1994 CBN Conferences event featured Davidic worship and Jewish-style ceremonies with ICEJ speakers.",
+    "strength": "reported",
+    "sources": [
+     "ts7_williams_pent"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Hendricks Center: Blaising is Senior Professor of Theology at Southwestern Baptist Theological Seminary and earlier taught at Dallas; Kreider teaches at Dallas.",
+    "strength": "primary",
+    "sources": [
+     "ts7_dts_hendricks"
+    ]
+   }
+  ],
+  "sources": {
+   "ts7_dts_hendricks": {
+    "url": "https://hendrickscenter.dts.edu/?p=10504",
+    "label": "Hendricks Center, Dallas Theological Seminary, 'Understanding Dispensationalism' (The Table podcast, Craig Blaising and Glenn Kreider), 8 October 2024"
+   },
+   "ts7_pew_latam2014": {
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/7/2014/11/Religion-in-Latin-America-11-12-PM-full-PDF.pdf",
+    "label": "Pew Research Center, 'Religion in Latin America: Widespread Change in a Historically Catholic Region', 13 November 2014 (fieldwork Oct 2013-Feb 2014)"
+   },
+   "ts7_ct_nigeria": {
+    "url": "https://christianitytoday.com/ct/2012/december/do-pilgrims-progress.html",
+    "label": "Christianity Today, 'Do Pilgrims Progress?', December 2012"
+   },
+   "ts7_ynet_brazil": {
+    "url": "https://www.ynetnews.com/article/5487431",
+    "label": "Ynetnews / AP, 'Brazil opens Israel trade mission in Jerusalem', 31 March 2019"
+   },
+   "ts7_abc_paraguay": {
+    "url": "https://abcnews.go.com/International/wireStory/paraguay-reopens-embassy-jerusalem-handing-israel-rare-diplomatic-116728772",
+    "label": "AP via ABC News, 'Paraguay reopens its embassy in Jerusalem, handing Israel a rare diplomatic victory', 12 December 2024"
+   },
+   "ts7_wiki_dts": {
+    "url": "https://en.wikipedia.org/wiki/Dallas_Theological_Seminary",
+    "label": "Wikipedia, 'Dallas Theological Seminary' (accessed 21 October 2026)"
+   },
+   "ts7_ct_bibleinst": {
+    "url": "https://christianitytoday.com/ct/1961/february-27/assets-and-liabilities-bible-institute-comes-of-age.html",
+    "label": "Wesley A. Olsen, 'Assets and Liabilities: The Bible Institute Comes of Age', Christianity Today, 27 February 1961"
+   },
+   "ts7_cbs_robertson": {
+    "url": "https://www.cbsnews.com/news/pat-robertson-apologizes-to-israel/2/",
+    "label": "CBS News / AP, 'Pat Robertson Apologizes To Israel', 12 January 2006"
+   },
+   "ts7_williams_pent": {
+    "url": "https://israelresources.brandeis.edu/wp-content/uploads/2018/06/The-Pentecostalization-of-Christian-Zionism.pdf",
+    "label": "Joseph Williams, 'The Pentecostalization of Christian Zionism', Church History 84:1 (March 2015), pp. 159-194"
+   }
+  }
  }
 }

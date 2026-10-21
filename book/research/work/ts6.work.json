@@ -312,5 +312,100 @@
     "label": "Wikipedia, 'Christian Zionism' (APC, CCP, ACPC; J. Frank Norris), accessed 21 October 2026"
    }
   }
+ },
+ "ts6_audit": {
+  "topic": "Independent audit re-fetches, 21 October 2026",
+  "claims": [
+   {
+    "text": "Audit re-fetch: Wheaton archive quotes the 1891 memorial: 'Let us restore them to the land of which they were so cruelly despoiled by our Roman ancestors'; says the May 1916 unofficial presentation to Wilson may have influenced Wilson's favourable response to the Balfour Declaration.",
+    "strength": "reported",
+    "sources": [
+     "ts6_wheaton_intro"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Wikipedia (Blackstone Memorial): 431 signers; Straus 16 May 1916 'perfectly infatuated'; Brandeis asked for a second memorial for Wilson; endorsements from the Presbyterian Church and 'most of the mainstream American Protestant movement'; presented privately May 1917 and strongly influenced Wilson.",
+    "strength": "reported",
+    "sources": [
+     "ts6_wiki_memorial"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Wikipedia (Blackstone): 4 November 1887 meeting at Benjamin Douglass's offices, Blackstone first superintendent; Nov 1890 conference attended by Orthodox Jewish and Protestant leaders, not Reform; called on the powers to 'give Palestine to the Zionists' and passed resolutions of sympathy for Russian Jews; refugees not admitted by Europe or the US.",
+    "strength": "reported",
+    "sources": [
+     "ts6_wiki_blackstone"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Wikipedia (Balfour Declaration) does not list Suez/India among motives and does not call the 'world Jewry' belief antisemitic; Schneer describes stereotypical thinking about Jews.",
+    "strength": "reported",
+    "sources": [
+     "ts6_wiki_balfourdecl"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Wikipedia (Wingate): he often returned to Ein Harod 'because of its association with the biblical judge Gideon'; after speaking publicly for a Jewish state on leave in Britain, superiors removed him, judging he was 'promoting his own agenda rather than that of the army or the government'.",
+    "strength": "reported",
+    "sources": [
+     "ts6_wiki_wingate"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: CCP minutes: W. Russell Bowie opened with prayer; Bishops McConnell, Cannon and Herbert Welch present; Carl H. Voss of Pittsburgh; Albright's telegram cited sudden illness; policy point I relates the commonwealth to 'an over-all settlement in the post-war era'.",
+    "strength": "primary",
+    "sources": [
+     "ts6_aja_ccp_minutes"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Voss and Rausch date the APC to 1931 and note Niebuhr's membership 'from the early 1930s'.",
+    "strength": "reported",
+    "sources": [
+     "ts6_voss_rausch"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Merkley: Truman 'maintained membership in a Baptist church throughout his life'; 'we must assume that personal commitment tipped the balance'; recognised Israel 'within hours', 'defying the uniform advice of his State and War Departments'; no source for the 1953 exchange.",
+    "strength": "reported",
+    "sources": [
+     "ts6_merkley_cyrus"
+    ]
+   }
+  ],
+  "sources": {
+   "ts6_voss_rausch": {
+    "url": "https://sites.americanjewisharchives.org/publications/journal/PDF/1988_40_01_00_hermann_rausch.pdf",
+    "label": "Carl Hermann Voss and David A. Rausch, 'American Christians and Israel, 1948–1988', American Jewish Archives 40/1 (1988)"
+   },
+   "ts6_wiki_memorial": {
+    "url": "https://en.wikipedia.org/wiki/Blackstone_Memorial",
+    "label": "Wikipedia, 'Blackstone Memorial' (cites Merkley 1998; Blackstone papers, Wheaton; Sanders 1983), accessed 21 October 2026"
+   },
+   "ts6_wheaton_intro": {
+    "url": "https://www2.wheaton.edu/bgc/archives/docs/BlackstoneMemorial/intro.htm",
+    "label": "Billy Graham Center Archives, Wheaton College, 'The Blackstone Memorial' (archive introduction to Collection 540)"
+   },
+   "ts6_aja_ccp_minutes": {
+    "url": "https://collections.americanjewisharchives.org/ms/ms4928/ms4928.001.002.pdf",
+    "label": "American Jewish Archives, MS-4928: Minutes of the meeting of 14 December 1942 founding the Christian Council on Palestine (with Atkinson's covering letter of 12 January 1943)"
+   },
+   "ts6_wiki_wingate": {
+    "url": "https://en.wikipedia.org/wiki/Orde_Wingate",
+    "label": "Wikipedia, 'Orde Wingate', accessed 21 October 2026"
+   },
+   "ts6_wiki_balfourdecl": {
+    "url": "https://en.wikipedia.org/wiki/Balfour_Declaration",
+    "label": "Wikipedia, 'Balfour Declaration' (War Cabinet minutes; Schneer; Renton), accessed 21 October 2026"
+   },
+   "ts6_wiki_blackstone": {
+    "url": "https://en.wikipedia.org/wiki/William_E._Blackstone",
+    "label": "Wikipedia, 'William E. Blackstone', accessed 21 October 2026"
+   },
+   "ts6_merkley_cyrus": {
+    "url": "https://christianhistoryinstitute.org/magazine/article/i-am-cyrus",
+    "label": "Paul Charles Merkley, '\"I am Cyrus\"', Christian History 99 (2008)"
+   }
+  }
  }
 }

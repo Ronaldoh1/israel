@@ -324,5 +324,78 @@
     "label": "The Scofield Reference Bible (New York: Oxford University Press, American Branch; London: H. Milford, 1917), Library of Congress copy, Internet Archive scan"
    }
   }
+ },
+ "ts5_audit": {
+  "topic": "Independent audit re-fetches, 21 October 2026",
+  "claims": [
+   {
+    "text": "Audit re-fetch: Wikipedia states 'Sales of the Reference Bible exceeded two million copies by the end of World War II', footnoted to Gaebelein (1943) p. 11; Sandeen: 'Just what role these consulting editors played in the project has been the subject of some debate'; recent KJV Scofield Study Bible editions 'moved the textual changes made in 1967 to the margin' (no edition name or date given).",
+    "strength": "reported",
+    "sources": [
+     "ts5_wiki_srb"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: CT 14 Apr 1967: 'hundreds of words' changed, 'marked by vertical lines'; Ussher abandoned and 'no dates are supplied for events prior to 2000 B.C.'; book introductions 'completely redone'; 2 Kings 17:23 note denies 'ten lost tribes'.",
+    "strength": "primary",
+    "sources": [
+     "ts5_ct_1967"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Dunlap says Frowde was appointed Publisher to OUP in 1880 and 'fellowshiped all his adult life' with the Brethren; Pirie and Ball 'financially supported him'; Fitch's firm printed New York Stock Exchange lists; Scofield began work in 1903, first edition January 1909; Buss is not named by Dunlap.",
+    "strength": "reported",
+    "sources": [
+     "ts5_dunlap"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Scofield-Files quotes the 1999 CTRL-list document as saying Scofield 'was taken under the wing of Samuel Untermeier' and the 2002 Carlson article titled 'The Zionist-created Scofield bible'; it gives no source for Untermyer's 1921 Keren Hayesod presidency. Wikipedia's Untermyer entry says he 'served as president of the Keren Hayesod' without a year.",
+    "strength": "reported",
+    "sources": [
+     "ts4_sfiles"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Mike Rothschild paraphrases John Rich as saying Darby 'was connected to the Rothschilds'; no direct quote of Rich.",
+    "strength": "reported",
+    "sources": [
+     "ts4_mrothschild"
+    ]
+   },
+   {
+    "text": "Audit re-fetch: Rom 11:1 note: Israel as a nation 'is yet to have its greatest exaltation as the earthly people of God'; Rom 11:5: remnant 'will become His witnesses after the removal of the church'.",
+    "strength": "primary",
+    "sources": [
+     "ts5_sac_rom11"
+    ]
+   }
+  ],
+  "sources": {
+   "ts4_sfiles": {
+    "url": "https://scofield-files.com/",
+    "label": "Scofield-Files.com, 'The Scofield Files' (anonymous documentary research project citing Rushing 2011, Gaebelein 1943, Lotos Club membership book), 2026"
+   },
+   "ts5_sac_rom11": {
+    "url": "https://bible.armeniancathedral.org/comments/cyrus_scofield/Rom_11.htm",
+    "label": "C. I. Scofield, Scofield Reference Bible notes (1917 edition, public domain), notes on Romans 11"
+   },
+   "ts5_ct_1967": {
+    "url": "https://christianitytoday.com/ct/1967/april-14/changes-in-scofield-reference-bible.html",
+    "label": "Christianity Today, 'Changes in the Scofield Reference Bible', 14 April 1967"
+   },
+   "ts5_wiki_srb": {
+    "url": "https://en.wikipedia.org/wiki/Scofield_Reference_Bible",
+    "label": "Wikipedia, 'Scofield Reference Bible' (citing Sandeen 1970 p. 224; Gaebelein 1943 p. 11; Mangum & Sweetnam 2009 p. 97; Campbell 2010 pp. 246-47), accessed 21 October 2026"
+   },
+   "ts4_mrothschild": {
+    "url": "https://themikerothschild.com/2024/07/17/rothschilds-scofield-bible/",
+    "label": "Mike Rothschild, 'Did the Rothschilds fund the Scofield Bible?', 17 July 2024"
+   },
+   "ts5_dunlap": {
+    "url": "https://plymouthbrethren.org/node/426",
+    "label": "David Dunlap, 'The Origins of the Scofield Reference Bible', plymouthbrethren.org (citing Gaebelein 1943/1991, Trumbull 1920, Crutchfield 1992), updated 26 March 2020"
+   }
+  }
  }
 }
