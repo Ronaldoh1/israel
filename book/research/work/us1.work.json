@@ -57,5 +57,158 @@
     "label": "Shmuel Even, 'Israel's Defense Expenditure', INSS Strategic Assessment, February 2010"
    }
   }
+ },
+ "us1_compare": {
+  "topic": "Why people compare the US and Israeli systems; scale of the aid in the US budget; the healthcare claim; the two systems at a glance and how the book measures",
+  "claims": [
+   {
+    "text": "CBO via CRFB: FY2025 federal outlays $7.0 trillion (up 4%), revenues $5.2 trillion, deficit $1.8 trillion (5.9% of GDP); net interest passed $1 trillion for the first time",
+    "strength": "primary",
+    "sources": [
+     "us1_crfb_fy2025",
+     "us1_cbo_fy2025"
+    ]
+   },
+   {
+    "text": "Census Vintage 2025: US population 341.8 million on 1 July 2025, up about 1.8 million (0.5%) from 2024",
+    "strength": "reported",
+    "sources": [
+     "us1_wa_uspop",
+     "us1_iowa_uspop"
+    ]
+   },
+   {
+    "text": "Book's arithmetic: $3.8bn a year is about 0.05% of FY2025 federal outlays of $7.0tn and about $11 per US resident",
+    "strength": "primary",
+    "sources": [
+     "us1_crfb_fy2025",
+     "us1_wa_uspop"
+    ]
+   },
+   {
+    "text": "CBS 'Israel in Numbers' (Sept 2026, provisional): population about 10.305 million: Jews and others 7.828m (78.3%), Arabs 2.173m (21.7%), plus about 304,000 foreign nationals counted separately",
+    "strength": "reported",
+    "sources": [
+     "us1_jpost_ilpop"
+    ]
+   },
+   {
+    "text": "Freedom House 2026: Israel 73/100, Free (political rights 34/40, civil liberties 39/60); scores 'do not reflect the actions of the Israeli military or Jewish Israeli settlers in the Gaza Strip or the West Bank, as conditions there are examined in separate reports'; West Bank 22/100 and Gaza Strip 2/100, Not Free",
+    "strength": "primary",
+    "sources": [
+     "us1_fh_israel2026"
+    ]
+   },
+   {
+    "text": "Freedom House 2026: United States 81/100, Free (political rights 32/40, civil liberties 49/60), down 3 points from 84",
+    "strength": "primary",
+    "sources": [
+     "us1_fh_us2026"
+    ]
+   },
+   {
+    "text": "US general election Tuesday 3 November 2026: all 435 House seats and 35 Senate seats",
+    "strength": "reported",
+    "sources": [
+     "us1_wjla_midterms"
+    ]
+   },
+   {
+    "text": "House rejected Greene's amendment to remove about $500m in annual missile-defence funding for Israel from the FY2026 defence funding bill 422-6 (July 2025); yes: Greene, Omar, Al Green, Summer Lee, Massie, Tlaib; Greene called it 'money we don't have'",
+    "strength": "reported",
+    "sources": [
+     "us1_ji_greene"
+    ]
+   },
+   {
+    "text": "Opinion column (Jewish News, 22 Jan 2026) documents that a claim that America pays for Israel's healthcare circulates among US commentators of left and right; the author states US aid to Israel is military only",
+    "strength": "reported",
+    "sources": [
+     "us1_jn_claim"
+    ]
+   },
+   {
+    "text": "Commonwealth Fund: Israel's National Health Insurance Law of 1995 'introduced universal health care for all citizens and permanent residents'; four nonprofit plans (Clalit, Maccabi, Meuhedet, Leumit); funded by a health tax (3.2% of income up to 60% of the average wage, 5.2% above) plus government funding; collected by the NII; government spending 65% of health expenditure in 2024, out-of-pocket 19.9%; asylum seekers, undocumented migrants and foreign workers excluded",
+    "strength": "reported",
+    "sources": [
+     "us1_cmwf_israel"
+    ]
+   },
+   {
+    "text": "Census P60-291: 26.7 million people (7.9%) uninsured for all of 2025, not statistically different from 2024",
+    "strength": "primary",
+    "sources": [
+     "us1_census_uninsured"
+    ]
+   },
+   {
+    "text": "World Bank WDI (via FRED), US GDP per capita current US$: 1985 $18,237; 1990 $23,889; 2000 $36,330; 2010 $48,643; 2019 $65,228; 2024 $86,170; 2025 $90,027",
+    "strength": "primary",
+    "sources": [
+     "us1_fred_uspc"
+    ]
+   },
+   {
+    "text": "Book's arithmetic with ir13_fred_ilpc (Israel GDP per capita 1985 $6,824; 1990 $13,300; 2000 $21,690; 2010 $31,399; 2019 $44,092; 2025 $60,337): Israel's GDP per person at market exchange rates was 37% of the US level in 1985, 56% in 1990, 60% in 2000, 65% in 2010, 68% in 2019 and 67% in 2025",
+    "strength": "primary",
+    "sources": [
+     "us1_fred_uspc"
+    ]
+   }
+  ],
+  "sources": {
+   "us1_crfb_fy2025": {
+    "url": "https://www.crfb.org/blogs/cbo-estimates-2025-deficit-totaled-18-trillion",
+    "label": "Committee for a Responsible Federal Budget, 'CBO Estimates 2025 Deficit Totaled $1.8 Trillion', 9 Oct 2025"
+   },
+   "us1_cbo_fy2025": {
+    "url": "https://cbo.gov/publication/61307",
+    "label": "Congressional Budget Office, 'Monthly Budget Review: Summary for Fiscal Year 2025', 10 Nov 2025"
+   },
+   "us1_wa_uspop": {
+    "url": "https://www.worldatlas.com/articles/how-many-people-are-in-the-us.html",
+    "label": "WorldAtlas, 'How many people are in the US', citing Census Bureau Vintage 2025 estimates"
+   },
+   "us1_iowa_uspop": {
+    "url": "https://www.iowadatacenter.org/index.php/blog/2025-population-estimates-us-and-states",
+    "label": "Iowa State Data Center, '2025 Population estimates for the U.S. and States' (Census Vintage 2025), 27 Jan 2026"
+   },
+   "us1_jpost_ilpop": {
+    "url": "https://www.jpost.com/israel-news/article-908103",
+    "label": "Jerusalem Post, on CBS 'Israel in Numbers' ahead of Rosh Hashanah, 9 Sep 2026"
+   },
+   "us1_fh_israel2026": {
+    "url": "https://freedomhouse.org/country/israel/freedom-world/2026",
+    "label": "Freedom House, 'Freedom in the World 2026: Israel'"
+   },
+   "us1_fh_us2026": {
+    "url": "https://freedomhouse.org/country/united-states/freedom-world/2026",
+    "label": "Freedom House, 'Freedom in the World 2026: United States'"
+   },
+   "us1_wjla_midterms": {
+    "url": "https://wjla.com/news/nation-world/fact-check-team-435-house-seats-and-35-senate-races-hit-the-ballot-in-november-election-day-congress-candidates-voters",
+    "label": "WJLA/The National Desk, 'Fact Check Team: 435 House seats and 35 Senate races hit the ballot in November', 18 Sep 2026"
+   },
+   "us1_ji_greene": {
+    "url": "https://jewishinsider.com/2025/07/marjorie-taylor-greene-amendment-missile-defense-aid-israel/",
+    "label": "Jewish Insider, 'House votes 422-6 to reject MTG bid to cut missile defense aid for Israel', July 2025"
+   },
+   "us1_jn_claim": {
+    "url": "https://www.jewishnews.co.uk/why-extremists-are-pushing-a-america-is-paying-for-israels-free-healthcare-lie/",
+    "label": "Gary Cohen, 'Why extremists are pushing a \"America is paying for Israel's free healthcare\" lie', Jewish News (opinion), 22 Jan 2026"
+   },
+   "us1_cmwf_israel": {
+    "url": "https://www.commonwealthfund.org/international-health-policy-center/countries/israel",
+    "label": "Commonwealth Fund, International Health Care System Profiles: Israel (online 1 May 2026)"
+   },
+   "us1_census_uninsured": {
+    "url": "https://www.census.gov/library/publications/2026/demo/p60-291.html",
+    "label": "Lisa N. Bunch and Halelujha Ketema, 'Health Insurance Coverage in the United States: 2025', US Census Bureau P60-291, 15 Sep 2026"
+   },
+   "us1_fred_uspc": {
+    "url": "https://fred.stlouisfed.org/data/PCAGDPUSA646NWDB",
+    "label": "World Bank, World Development Indicators via FRED, 'GDP Per Capita for the United States' (PCAGDPUSA646NWDB), current US$"
+   }
+  }
  }
 }
