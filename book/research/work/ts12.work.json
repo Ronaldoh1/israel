@@ -205,5 +205,34 @@
     "label": "Wikipedia, '2026 state visit by Javier Milei to Israel' (accessed 21 October 2026)"
    }
   }
+ },
+ "ts12_audit2": {
+  "topic": "Audit re-fetch of existing sources",
+  "claims": [
+   {
+    "text": "Audit re-fetch (Times of Israel, 4 Aug 2025): 'an integral part of our faith' is from the Ariel municipality statement; 'the mountains of Judea and Samaria were promised to the Jewish people' and 'belong to them by right' were reported remarks, corroborated by Marc Zell (head of the GOP's Israel branch) and Mayor Yair Chetboun; trip organised by Heather Johnston's US Israel Education Association, designated private.",
+    "strength": "reported",
+    "sources": [
+     "ts12_toi_johnson"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (CNN 2018): Hagee: 'to assert that I in any way condone the Holocaust or that monster Adolf Hitler is the biggest and ugliest of lies'; CUFI spokesman Ari Morgenstern cited Rabbi Yissachar Shlomo Teichtal.",
+    "strength": "reported",
+    "sources": [
+     "ts12_cnn_pastors"
+    ]
+   }
+  ],
+  "sources": {
+   "ts12_toi_johnson": {
+    "url": "https://www.timesofisrael.com/us-speaker-johnson-makes-landmark-visit-to-west-bank-settlement-of-ariel/",
+    "label": "Times of Israel, 'US Speaker Johnson makes landmark visit to West Bank settlement of Ariel', 4 August 2025"
+   },
+   "ts12_cnn_pastors": {
+    "url": "https://edition.cnn.com/2018/05/13/politics/hagee-jeffress-us-embassy-jerusalem",
+    "label": "CNN, report on Hagee and Jeffress at the Jerusalem embassy opening, 13 May 2018"
+   }
+  }
  }
 }

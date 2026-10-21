@@ -315,5 +315,89 @@
     "label": "Michael Foust, Crosswalk, 'Evangelicals' Views of Israel Decline but Still Outpace Other Religious Groups, Pew Finds', 23 July 2026"
    }
   }
+ },
+ "ts11_audit": {
+  "topic": "Audit re-fetch of existing sources",
+  "claims": [
+   {
+    "text": "Audit re-fetch (JTA 19 Feb 2014): Joel Hunter, NAE and WEA board member, spoke at the 2012 conference and said he 'did not hear one word about Israel as an enemy' and that 'the point of the conference is to identify and hear from Arab Christians'; Geoff Tunnicliffe (WEA secretary-general) was in the announced 2014 lineup; Brog: 'I'm worried that what we're seeing could translate, in a generation, to a real shift'.",
+    "strength": "reported",
+    "sources": [
+     "ts11_jta_catc2014"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (OSV): Huckabee on X, 20 Jan 2026, said he 'respected' the 'traditional, liturgical churches'; Washington Post reported 3 Jan 2026 that 1,000 evangelical pastors travelled to Israel; Netanyahu met 70 evangelical leaders in Palm Beach on 31 Dec 2025.",
+    "strength": "reported",
+    "sources": [
+     "ts11_osv_heads2026"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (MEF, 20 Jan 2026): D'Costa (Angelicum): 'The unconditional gift of the election of the Jewish people is the theological foundation of Catholic Zionism'; Nolte (Regent): 'Arab Christians are basically expected to actively promote and support the Arab cause, or else.'",
+    "strength": "reported",
+    "sources": [
+     "ts11_mef_theologians"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (Lowe, JCR, dated 30 June 2010, first in New English Review April 2010; Lowe 'a biblical scholar living in Jerusalem'): Younan's name removed because 'he asked to have it removed'; quotes section 7's call for 'economic sanctions and boycott to be applied against Israel'; lists among the authors' aims 'To neutralize the support of Christian Zionists and any other Christians for Israel'.",
+    "strength": "reported",
+    "sources": [
+     "ts11_jcr_kairos"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (Christian Post 2011): Mouw cited God's promise to bless Ishmael (Gen 17:20): 'We have an obligation today to honor that promise of blessing as well'; Hunter sits on the boards of the NAE and the WEA.",
+    "strength": "reported",
+    "sources": [
+     "gi11_cp_hagee2011"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (Wikipedia, Ateek): Beisan 'destroyed by Israeli forces'; Justice, and Only Justice 'based on his dissertation'; 2006 paper 'A Call for Morally Responsible Investment'; Dexter Van Zile, 'Updating the Ancient Infrastructure of Christian Contempt: Sabeel', Jewish Political Studies Review, spring 2011 (listed, not summarised).",
+    "strength": "reported",
+    "sources": [
+     "ts11_wiki_ateek"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (Wikipedia, Isaac): April 2024 Carlson interview, 'Isaac accused Israel of committing genocide in Gaza'; one reviewer of The Other Side of the Wall said he 'accurately describes Palestinian suffering but disregards Israeli security concerns'; permit to travel cancelled by the Israeli government.",
+    "strength": "reported",
+    "sources": [
+     "ts11_wiki_isaac"
+    ]
+   }
+  ],
+  "sources": {
+   "ts11_wiki_ateek": {
+    "url": "https://en.wikipedia.org/wiki/Naim_Ateek",
+    "label": "Wikipedia, 'Naim Ateek' (accessed 21 October 2026)"
+   },
+   "ts11_jcr_kairos": {
+    "url": "https://www.jcrelations.net/article/the-palestinian-kairos-document.html",
+    "label": "Malcolm Lowe, 'The Palestinian Kairos Document', Jewish-Christian Relations (analysis with excerpts)"
+   },
+   "ts11_jta_catc2014": {
+    "url": "https://www.jta.org/2014/02/19/ny/evangelicals-at-the-crossroads",
+    "label": "JTA, 'Evangelicals at the Crossroads', 19 February 2014"
+   },
+   "ts11_mef_theologians": {
+    "url": "https://www.meforum.org/mef-observer/theologians-refute-jerusalem-patriarchs-statement-criticizing-christian-zionism",
+    "label": "Middle East Forum (MEF Observer), 'Theologians Refute Jerusalem Patriarchs' Statement Criticizing Christian Zionism', 20 January 2026"
+   },
+   "ts11_osv_heads2026": {
+    "url": "https://www.osvnews.com/heads-of-churches-of-the-holy-land-call-christian-zionism-a-damaging-ideology/",
+    "label": "OSV News, 'Heads of churches of the Holy Land call Christian Zionism a damaging ideology', 21 January 2026"
+   },
+   "gi11_cp_hagee2011": {
+    "url": "https://www.christianpost.com/news/hagee-says-dividing-israel-is-not-gods-will-evangelicals-disagree-48384",
+    "label": "Christian Post (Michelle A. Vu), 'Hagee Says Dividing Israel Is Not God's Will; Evangelicals Disagree', 7 January 2011 (corrected 10 January 2011)"
+   },
+   "ts11_wiki_isaac": {
+    "url": "https://en.wikipedia.org/wiki/Munther_Isaac",
+    "label": "Wikipedia, 'Munther Isaac' (accessed 21 October 2026)"
+   }
+  }
  }
 }

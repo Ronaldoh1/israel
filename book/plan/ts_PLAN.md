@@ -3,6 +3,7 @@
 **Subtitle:** Christian Zionism from the Puritans to CUFI, 1600s–2026
 **Placement:** planned volume after The Vatican Architecture (no simulation chapter of its own; draws on rd1 s05, bc_s05, gx_s05, bwm_src_s15).
 **Baseline:** Ron's Book 1, The Theology Layer (thin on this subject; errors listed in scratchpad ts_leads.md BASELINE MAP).
+**Status:** written, audited and on the shelf 21 Oct 2026 (14 parts).
 **Standard:** Hamas / Hezbollah / Iran / Greater Israel volumes, three-source check, independent audit.
 
 ## What Ron asked for (21 Oct 2026)

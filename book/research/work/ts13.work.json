@@ -473,5 +473,45 @@
     "label": "International Christian Embassy Jerusalem, 'Behind the Christ at the Checkpoint Conference' (background briefing), 4 March 2012"
    }
   }
+ },
+ "ts13_audit": {
+  "topic": "Audit re-fetch of existing sources",
+  "claims": [
+   {
+    "text": "Audit re-fetch (Wikipedia, Merneptah Stele): minority readings 'Jezreel' (Othniel Margalith) and 'wearers of the sidelock' referring to Libyans (Alessandra Nibbi); John A. Wilson cited 'the notorious carelessness of Late-Egyptian scribes and several blunders of writing in this stela'.",
+    "strength": "reported",
+    "sources": [
+     "ts13_wiki_merneptah"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (Heiser): roots sarah 'to struggle, fight' ('God fights' or 'he fights with God'), sarar 'to rule, be strong', yasar 'just, right'; Maxwell's claim attributed to his website, no title or date given.",
+    "strength": "reported",
+    "sources": [
+     "ts13_heiser_maxwell"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (SourceWatch): Maxwell Religion Editor of Truth Seeker for three and a half years; guested on more than 600 radio shows.",
+    "strength": "reported",
+    "sources": [
+     "ts13_sw_maxwell"
+    ]
+   }
+  ],
+  "sources": {
+   "ts13_heiser_maxwell": {
+    "url": "https://drmsh.com/?p=9366",
+    "label": "Michael S. Heiser, 'Syllabic Silliness with Jordan Maxwell', PaleoBabble (drmsh.com), 30 July 2008"
+   },
+   "ts13_wiki_merneptah": {
+    "url": "https://en.wikipedia.org/wiki/Merneptah_Stele",
+    "label": "Wikipedia, 'Merneptah Stele'"
+   },
+   "ts13_sw_maxwell": {
+    "url": "https://sourcewatch.org/index.php/Jordan_Maxwell",
+    "label": "SourceWatch, 'Jordan Maxwell'"
+   }
+  }
  }
 }

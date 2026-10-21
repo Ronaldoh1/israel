@@ -852,25 +852,11 @@
    "priority": 1
   },
   {
-   "host": null,
-   "key": "theology",
-   "after": "ch12",
-   "scenes": [
-    "s05",
-    "bc_s05",
-    "gx_s05",
-    "bwm_src_s15"
-   ],
-   "title": "The Theology Shield",
-   "subtitle": "Christian Zionism from Darby and Scofield to CUFI",
-   "priority": 2
-  },
-  {
    "host": "ch12",
    "title": "The Vatican Architecture",
    "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
    "merge": [],
-   "priority": 3
+   "priority": 2
   },
   {
    "host": "ch19",
@@ -882,7 +868,7 @@
     "ch14",
     "ch41"
    ],
-   "priority": 4
+   "priority": 3
   },
   {
    "host": "ch20",
@@ -891,7 +877,7 @@
    "merge": [
     "ch17"
    ],
-   "priority": 5
+   "priority": 4
   },
   {
    "host": "ch57",
@@ -901,7 +887,7 @@
     "ch58",
     "ch59"
    ],
-   "priority": 6
+   "priority": 5
   },
   {
    "host": "ch18",
@@ -915,7 +901,7 @@
     "ch44",
     "ch52"
    ],
-   "priority": 7
+   "priority": 6
   },
   {
    "host": "ch34",
@@ -924,7 +910,7 @@
    "merge": [
     "ch50"
    ],
-   "priority": 8
+   "priority": 7
   },
   {
    "host": "ch06",
@@ -934,7 +920,7 @@
     "ch07",
     "ch08"
    ],
-   "priority": 9
+   "priority": 8
   },
   {
    "host": "ch23",
@@ -949,7 +935,7 @@
     "ch68",
     "ch69"
    ],
-   "priority": 10
+   "priority": 9
   },
   {
    "host": "ch53",
@@ -958,7 +944,7 @@
    "merge": [
     "ch55"
    ],
-   "priority": 11
+   "priority": 10
   },
   {
    "host": "ch51",
@@ -968,7 +954,7 @@
     "ch70",
     "ch49"
    ],
-   "priority": 12
+   "priority": 11
   }
  ],
  "greater": {
@@ -1092,6 +1078,100 @@
     "title": "Settled, Contested and Open",
     "span": "",
     "label": "Part Eighteen"
+   }
+  ]
+ },
+ "theology": {
+  "after": "ch12",
+  "title": "The Theology Shield",
+  "subtitle": "Christian Zionism from the Puritans to CUFI, 1600s–2026",
+  "span": "1600s–2026",
+  "intro": "ts_intro.html",
+  "parts_total": 14,
+  "stages": [
+   {
+    "id": "ts1",
+    "label": "Part One",
+    "title": "The Shield Defined",
+    "span": ""
+   },
+   {
+    "id": "ts2",
+    "label": "Part Two",
+    "title": "Before Darby: British Restorationism",
+    "span": "1600s–1891"
+   },
+   {
+    "id": "ts3",
+    "label": "Part Three",
+    "title": "Darby and the System Crossing the Atlantic",
+    "span": "1827–1909"
+   },
+   {
+    "id": "ts4",
+    "label": "Part Four",
+    "title": "Scofield the Man",
+    "span": "1843–1921"
+   },
+   {
+    "id": "ts5",
+    "label": "Part Five",
+    "title": "The Scofield Reference Bible",
+    "span": "1909–1967"
+   },
+   {
+    "id": "ts6",
+    "label": "Part Six",
+    "title": "Blackstone, Balfour and the 1940s Committees",
+    "span": "1891–1953"
+   },
+   {
+    "id": "ts7",
+    "label": "Part Seven",
+    "title": "Spreading the System",
+    "span": "1924–2026"
+   },
+   {
+    "id": "ts8",
+    "label": "Part Eight",
+    "title": "From Falwell to CUFI: the Political Machine",
+    "span": "1979–2026"
+   },
+   {
+    "id": "ts9",
+    "label": "Part Nine",
+    "title": "What Was in It for Them",
+    "span": "1977–2026"
+   },
+   {
+    "id": "ts10",
+    "label": "Part Ten",
+    "title": "How the Shield Works",
+    "span": "2006–2026"
+   },
+   {
+    "id": "ts11",
+    "label": "Part Eleven",
+    "title": "The Christian Counter-Record",
+    "span": "1904–2026"
+   },
+   {
+    "id": "ts12",
+    "label": "Part Twelve",
+    "title": "The Shield in Office",
+    "span": "2017–2026"
+   },
+   {
+    "id": "ts13",
+    "label": "Part Thirteen",
+    "title": "The Inner Reading",
+    "span": ""
+   },
+   {
+    "id": "ts14",
+    "label": "Part Fourteen",
+    "title": "Myths, Contested Claims and What Is Settled",
+    "span": ""
    }
   ]
  }
