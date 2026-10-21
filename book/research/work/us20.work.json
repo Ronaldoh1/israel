@@ -1,0 +1,97 @@
+{
+ "us20_aid": {
+  "topic": "US government channels to Israel: MOU, FMF, OSP, loan guarantees, missile defence, intelligence sharing, in today's dollars",
+  "claims": [
+   {
+    "text": "CRS RL33222 (28 May 2025): US has provided 'over $6 billion' for Iron Dome batteries, interceptors, co-production and maintenance; Table 5 lists Iron Dome $6,075.281m, Iron Beam $1,200m (FY2024 supplemental), and US missile-defence funding for Israel FY2006–FY2025 totalling $14,816.853m",
+    "strength": "primary",
+    "sources": [
+     "gi16_crs_aid2025"
+    ]
+   },
+   {
+    "text": "CRS RL33222: under a Special Billing Arrangement Israel may use national cash reserves for FMS costs beyond the MOU's funding amounts or duration; if no new MOU is reached and Congress does not appropriate FMF, Israel would have to pay for existing contracts with national funds, find other financing or terminate contracts; Israel's MOD reportedly spends about one-third of annual FMF on direct commercial contracts; Israel cannot use accrued interest for procurement inside Israel; P.L. 119-4 s.11208(c) reauthorizes loan guarantees through 2030",
+    "strength": "primary",
+    "sources": [
+     "gi16_crs_aid2025"
+    ]
+   },
+   {
+    "text": "1992 loan guarantees: Congress authorized $10bn for loans tied to Israel's effort 'to resettle and absorb immigrants', in annual increments of $2bn over five years; 1993–97 settlement reductions $1,358.8m less $585m security offset = net $773.8m, $9,226.2m available",
+    "strength": "reported",
+    "sources": [
+     "us20_jvl_loans"
+    ]
+   },
+   {
+    "text": "2003 loan guarantees: $9bn over three years; reductions of $289.5m and $795.8m (total $1,085.3m); as of 2025 Israel had issued $4.1bn in US-backed bonds and might still be authorized to issue up to $3.814bn; authorized through end of FY2030; JVL says Israel has never defaulted and paid the US fees, so the cost to US government was zero unless default",
+    "strength": "reported",
+    "sources": [
+     "us20_jvl_loans"
+    ]
+   },
+   {
+    "text": "BLS: CPI-U index level 336.940 (1982-84=100) in September 2026; 334.980 in August 2026",
+    "strength": "primary",
+    "sources": [
+     "us20_bls_cpi_sep26"
+    ]
+   },
+   {
+    "text": "CPI-U annual averages (BLS): 1985 107.6; 1992 140.3; 1994 148.2; 2003 184.0; 2007 207.342; 2013 232.954; 2015 237.017; 2016 240.007; 2021 270.970; 2024 313.689; 2025 321.943",
+    "strength": "primary",
+    "sources": [
+     "us20_bls_cpi_annual"
+    ]
+   },
+   {
+    "text": "Book's arithmetic (CPI-U, Sept 2026 = 336.940): 1985 aid $3.68bn = ~$11.5bn today; 1992 guarantees $10bn = ~$24.0bn; 2003 guarantees $9bn = ~$16.5bn; CRS $298bn (2024$) = ~$320bn; $3.8bn fixed in 2016 is worth ~$2.7bn in 2016 prices by Sept 2026 (~29% erosion); Costs of War $21.7bn ≈ $23.3bn",
+    "strength": "primary",
+    "sources": [
+     "us20_bls_cpi_annual",
+     "us20_bls_cpi_sep26"
+    ]
+   },
+   {
+    "text": "Guardian (Snowden documents), via Al Jazeera 12 Sept 2013: NSA agreed a secret deal with Israel for routine sharing of raw intelligence, including unfiltered telephone and internet data on US citizens; the undated memorandum does not require NSA to remove US-person information and reportedly places no limits on Israel's use; Israel must 'destroy upon recognition' communications to or from US government officials; reached in principle March 2009; NSA said US-person information is handled under procedures designed to protect privacy",
+    "strength": "reported",
+    "sources": [
+     "us20_aje_nsa"
+    ]
+   },
+   {
+    "text": "6 Feb 2019: Israel's MOD and the US DoD confirmed US Army purchase of two Iron Dome batteries (12 launchers, two radars, two battle management centres, 240 interceptors) for $373m ($289m redirected 2019 funds + $83.9m FY2020) as interim cruise-missile defence; Rafael developed it, Raytheon US marketing rights (2011) and 2014 co-production",
+    "strength": "reported",
+    "sources": [
+     "us20_toi_armyirondome"
+    ]
+   }
+  ],
+  "sources": {
+   "gi16_crs_aid2025": {
+    "url": "https://www.everycrsreport.com/files/2025-05-28_RL33222_5306b5d4e077538d2db80d05cd10ca8c08501669.html",
+    "label": "Jeremy M. Sharp, 'U.S. Foreign Aid to Israel: Overview and Developments since October 7, 2023', Congressional Research Service RL33222, 28 May 2025"
+   },
+   "us20_jvl_loans": {
+    "url": "https://www.jewishvirtuallibrary.org/loan-guarantees-for-israel",
+    "label": "Jewish Virtual Library, 'U.S. Foreign Aid to Israel: Loan Guarantees for Israel' (CRS RL33222 data), accessed 21 October 2026"
+   },
+   "us20_bls_cpi_sep26": {
+    "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+    "label": "US Bureau of Labor Statistics, 'Consumer Price Index – September 2026', 14 October 2026"
+   },
+   "us20_bls_cpi_annual": {
+    "url": "https://lmi.idaho.gov/wp-content/uploads/2026/03/2026-CPI.pdf",
+    "label": "Idaho Department of Labor, 'Consumer Price Index' table, CPI-U US city average annual averages 1980–2025 (source: Bureau of Labor Statistics), 2026"
+   },
+   "us20_aje_nsa": {
+    "url": "https://www.aljazeera.com/news/2013/9/12/report-nsa-shares-data-with-israel",
+    "label": "Al Jazeera, 'Report: NSA shares data with Israel' (on The Guardian's Snowden-document report), 12 September 2013"
+   },
+   "us20_toi_armyirondome": {
+    "url": "https://www.timesofisrael.com/netanyahu-hails-us-purchase-of-israeli-iron-dome-batteries/",
+    "label": "Times of Israel, 'Netanyahu hails US purchase of Israeli Iron Dome batteries', 6 February 2019"
+   }
+  }
+ }
+}
