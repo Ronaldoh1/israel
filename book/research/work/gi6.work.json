@@ -234,5 +234,45 @@
     "label": "Al Jazeera, 'Knesset dissolves: How will Israel vote in October's general election?', 17 Jul 2026"
    }
   }
+ },
+ "gi6_audit": {
+  "topic": "Audit re-checks for Part Six (21 Oct 2026)",
+  "claims": [
+   {
+    "text": "FMEP: decisions of the appointed official can be appealed, but once claims are resolved no further appeal is possible; heavy weight given to whoever currently controls the land (per Haaretz); criticized by the UN and Arab states, some with normalized ties.",
+    "strength": "reported",
+    "sources": [
+     "gi6a_fmep"
+    ]
+   },
+   {
+    "text": "Judge Flax: a temporary freeze prevents irreversible harm; no such danger 'because construction is still far away'; court likely to rule before physical change.",
+    "strength": "reported",
+    "sources": [
+     "gi6a_jpost"
+    ]
+   },
+   {
+    "text": "Volume wording for the 1 Dec 2022 clause (fuller rendering, with the timing qualifier): 'the prime minister will lead the formulation and advancement of policies within the framework of applying sovereignty in Judea and Samaria, while choosing the timing and weighing all of the State of Israel's national and international interests'; Wikipedia's shorter rendering (from ToI) omits the timing clause.",
+    "strength": "reported",
+    "sources": [
+     "gi6a_cgtn"
+    ]
+   }
+  ],
+  "sources": {
+   "gi6a_fmep": {
+    "url": "https://fmep.org/?p=31698",
+    "label": "FMEP, 'Settlement & Annexation Report: February 20, 2026' (re-checked 21 Oct 2026)"
+   },
+   "gi6a_jpost": {
+    "url": "https://jpost.com/israel-news/article-907990",
+    "label": "Jerusalem Post, E1 tender ruling, 8 Sep 2026 (re-checked)"
+   },
+   "gi6a_cgtn": {
+    "url": "https://news.cgtn.com/news/2022-12-23/Incoming-Israeli-PM-Netanyahu-to-advance-West-Bank-annexation-1fZG7C9fW8g/share_amp.html",
+    "label": "CGTN (Reuters/Xinhua input), 23 Dec 2022 (re-checked)"
+   }
+  }
  }
 }

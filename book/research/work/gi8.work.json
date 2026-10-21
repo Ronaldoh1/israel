@@ -297,5 +297,34 @@
     "label": "Reuters (via Dawn), 'Saudi says no Israel ties without independent Palestinian state', 8 February 2024"
    }
   }
+ },
+ "gi8_audit": {
+  "topic": "Audit re-checks of Part Eight claims (21 Oct 2026)",
+  "claims": [
+   {
+    "text": "The Knesset approved the Israel-Jordan peace treaty, the day before the 26 October 1994 signing, 'by a majority of 105, with three MKs voting against and six abstaining'; Wikipedia's treaty article gives 92 to 3 without abstentions.",
+    "strength": "primary",
+    "sources": [
+     "gi8a_jvl_k13"
+    ]
+   },
+   {
+    "text": "Re-fetch: Shamir 1982 quoted: 'That homeland is Trans-Jordan, or Eastern Palestine'; the authors write that the argument, 'closely associated with Ariel Sharon', 'has long underlain the policy of the Likud bloc as a whole'; no direct Sharon quotation.",
+    "strength": "reported",
+    "sources": [
+     "gi8a_pipes"
+    ]
+   }
+  ],
+  "sources": {
+   "gi8a_jvl_k13": {
+    "url": "https://jewishvirtuallibrary.org/highlights-of-the-thirteenth-knesset-1992-1996",
+    "label": "Jewish Virtual Library (Knesset), 'Knesset Highlights: Thirteenth Knesset, 1992-1996'"
+   },
+   "gi8a_pipes": {
+    "url": "https://www.danielpipes.org/298/is-jordan-palestine",
+    "label": "Pipes and Garfinkle, 'Is Jordan Palestine?', Commentary, October 1988 (re-fetched 21 Oct 2026)"
+   }
+  }
  }
 }
