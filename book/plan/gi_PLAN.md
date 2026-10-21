@@ -1,6 +1,6 @@
 # Volume plan (queued): The Greater Israel Architecture
 
-**Status:** written, audited and on the shelf 21 Oct 2026 (13 parts, 38 sections). Subtitle: Maps, Movements and the Land Beyond the Lines, 1896–2026.
+**Status:** written, audited and on the shelf 21 Oct 2026 (extended to 18 parts on 21 Oct 2026 at Ron's request). Subtitle: Maps, Movements and the Land Beyond the Lines, 1896–2026.
 **Placement:** shelf slot of ch21 (Greater Israel Architecture, 11 scenes).
 **Standard:** Hamas / Hezbollah / Iran volumes, with the three-source check.
 
