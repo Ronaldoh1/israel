@@ -725,6 +725,559 @@
      "label": "OECD Affordable Housing Database, HC1.2 Housing costs over income, updated 15 Apr 2024"
     }
    ]
+  },
+  {
+   "id": "us22_taxwedge",
+   "stage": "us22",
+   "topic": "Labour tax wedge, net personal tax rates, VAT and sales tax: Israel vs US (OECD Taxing Wages)",
+   "claims": [
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data), tax wedge = income tax + employee and employer social security contributions less cash benefits, % of labour costs, single worker no children: at 67% of the average wage (AW) Israel 17.2%, US 27.6%; at 100% AW Israel 23.9%, US 30.1% (OECD average 34.9%); at 167% AW Israel 34.0%, US 34.4%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3",
+      "us22_oecd_tw25_ov"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data): tax wedge for a one-earner married couple with two children at 100% AW: Israel 18.9%, US 20.1% (OECD average 25.7%). Family-vs-single gap: Israel 5.0 points, US 10.0 points. Two-earner couple with two children (100%+67% AW): Israel 15.6%, US 24.8%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3",
+      "us22_oecd_tw25_ov"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data), average net personal tax rate (income tax + employee contributions less cash benefits, % of gross wage), single no children: at 67% AW Israel 13.2%, US 21.6%; at 100% AW Israel 19.6%, US 24.4%; one-earner married couple with two children at 100% AW Israel 14.3%, US 13.6%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3"
+     ]
+    },
+    {
+     "text": "Revision note: Taxing Wages 2026 revised the 2024 figures (Table 5.1): Israel single 67% AW 18.1%, single 100% AW 25.0%, one-earner couple with two children 20.2%; US 27.6%, 30.1%, 20.1% (unchanged). Revised 2024 net personal rate single 67% AW: Israel 14.0%, US 21.6%. Cite edition explicitly when quoting.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw26_ch5"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2026 (2025 data), tax wedge % of labour costs: single 67% AW Israel 19.4%, US 27.5%; single 100% AW Israel 26.1%, US 30.0%; one-earner married couple two children 100% AW Israel 21.4%, US 19.6%. Net personal average tax rate single 67% AW (Table 3.3): Israel 14.9%, US 21.4%. Reason for Israel's 2025 rise not stated on the page fetched.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw26_ch3"
+     ]
+    },
+    {
+     "text": "Israel's standard VAT rate is 18% (PwC: 'The 2025 current rate of VAT is 18%'); it rose from 17% on 1 January 2025.",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_vat",
+      "us22_herzog_vat25"
+     ]
+    },
+    {
+     "text": "US has no federal VAT or sales tax. Tax Foundation: population-weighted average combined state and local sales tax rate 7.53% (rates as of 1 July 2026); highest Louisiana 10.13%, Tennessee 9.61%, Washington 9.57%; five states (AK, DE, MT, NH, OR) have no statewide sales tax.",
+     "strength": "strong",
+     "sources": [
+      "us22_tf_sales26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_tw25_ch3",
+     "url": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/effective-tax-rates-on-labour-income-in-2024_878e20ff.html",
+     "label": "OECD, Taxing Wages 2025, ch. 3 'Effective tax rates on labour income in 2024', Tables 3.1 and 3.3, 30 Apr 2025"
+    },
+    {
+     "key": "us22_oecd_tw25_ov",
+     "url": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/overview_715add19.html",
+     "label": "OECD, Taxing Wages 2025, ch. 1 Overview, Tables 1.1 and 1.4, 30 Apr 2025"
+    },
+    {
+     "key": "us22_oecd_tw26_ch5",
+     "url": "https://www.oecd.org/en/publications/2026/04/taxing-wages-2026_d1f39986/full-report/effective-tax-rates-on-labour-income-in-2024_c3449b14.html",
+     "label": "OECD, Taxing Wages 2026, ch. 5 'Effective tax rates on labour income in 2024' (revised), Tables 5.1 and 5.3, Apr 2026"
+    },
+    {
+     "key": "us22_oecd_tw26_ch3",
+     "url": "https://www.oecd.org/en/publications/2026/04/taxing-wages-2026_d1f39986/full-report/effective-tax-rates-on-labour-income-in-2025_b7bb1854.html",
+     "label": "OECD, Taxing Wages 2026, ch. 3 'Effective tax rates on labour income in 2025', Tables 3.1 and 3.3, Apr 2026"
+    },
+    {
+     "key": "us22_pwc_il_vat",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/other-taxes",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Other taxes, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_herzog_vat25",
+     "url": "https://herzoglaw.co.il/en/news-and-insights/vat-updates-for-2025-vat-rate-increase-israel-invoices-reform-and-the-economic-plan-bill/",
+     "label": "Herzog Fox & Neeman, 'VAT updates for 2025: VAT rate increase...', 2025"
+    },
+    {
+     "key": "us22_tf_sales26",
+     "url": "https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/",
+     "label": "Tax Foundation (Abir Mandal), 'State and Local Sales Tax Rates, Midyear 2026', 6 July 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_unemployment",
+   "stage": "us22",
+   "topic": "Unemployment insurance: replacement rates, duration, Israel benefit formula",
+   "claims": [
+    {
+     "text": "OECD net replacement rate (net household income in unemployment as % of disposable income before job loss), initial phase (2nd month), single person no children, no social assistance or housing benefit, 2025: previously earning 67% of the average wage, Israel 65%, US 55%; previously earning 100% AW, Israel 59%, US 38%. OECD tax-benefit models; US results are modelled on a reference state (not stated on the DBnomics pages).",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_nrr_isr67",
+      "us22_oecd_nrr_isr100",
+      "us22_oecd_nrr_usa67",
+      "us22_oecd_nrr_usa100"
+     ]
+    },
+    {
+     "text": "Range of the same OECD series: Israel 67% AW 2008-2025 min 65, max 78; Israel 100% AW min 59, max 69 (2025 is the series low for both); US 67% AW 2001-2025 min 47, max 63 (62 in 2001); US 100% AW min 33, max 60 (54 in 2001).",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_nrr_isr67",
+      "us22_oecd_nrr_isr100",
+      "us22_oecd_nrr_usa67",
+      "us22_oecd_nrr_usa100"
+     ]
+    },
+    {
+     "text": "US maximum regular state unemployment benefit duration (CBPP, Sept 2026): 26 weeks in 33 states plus DC; fewer than 26 weeks in 16 states (Florida, Louisiana, North Carolina, Tennessee 12; Alabama, Georgia 14; Arkansas, Iowa, Kansas, Kentucky, Oklahoma 16; Idaho, Missouri, South Carolina 20; Arizona, Montana 24); Massachusetts 30 weeks is the only state above 26.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbpp_uiweeks"
+     ]
+    },
+    {
+     "text": "Israel maximum unemployment benefit days (NII), by age and dependants (up to 2 / 3 or more): under 25: 50/138; 25-28: 67/138; 28-35: 100/138; 35-45: 138/175; 45+: 175/175; used within 12 months from first reporting to the Employment Service; vocational-training participants may be paid up to 138 days.",
+     "strength": "strong",
+     "sources": [
+      "us22_nii_uiperiod"
+     ]
+    },
+    {
+     "text": "Israel benefit formula (NII, from 1 Jan 2026): daily rate based on wages in the last 6 full months; tiered replacement on portions of the daily wage relative to the reference daily amount: up to half 80% (age 28+)/60% (under 28); half to three-quarters 50%/40%; three-quarters to full 45%/35%; above full 30%/25%. Maximum daily benefit NIS 550.76 for the first 125 payment days (equal to the average daily wage) and NIS 367.17 from day 126 (two-thirds). Hebrew page names a basic daily amount of NIS 415 for the tiers; translation checked by machine only.",
+     "strength": "moderate",
+     "sources": [
+      "us22_nii_hisuv",
+      "us22_nii_uiamount"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_nrr_isr67",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/ISR.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW67._Z.M2.NO.NO.A",
+     "label": "OECD Net replacement rates in unemployment (DSD_TAXBEN_NRR@DF_NRR) via DBnomics, Israel, single no children, 67% AW, month 2, no SA/HB"
+    },
+    {
+     "key": "us22_oecd_nrr_isr100",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/ISR.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW100._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, Israel, single no children, 100% AW, month 2"
+    },
+    {
+     "key": "us22_oecd_nrr_usa67",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/USA.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW67._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, United States, single no children, 67% AW, month 2"
+    },
+    {
+     "key": "us22_oecd_nrr_usa100",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/USA.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW100._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, United States, single no children, 100% AW, month 2"
+    },
+    {
+     "key": "us22_nii_uiperiod",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Unemployment Insurance/Pages/PeriodEntitlement.aspx",
+     "label": "National Insurance Institute (Bituach Leumi), 'How long unemployment benefits may be received?', accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_nii_uiamount",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Unemployment Insurance/Pages/BenefitAmount.aspx",
+     "label": "National Insurance Institute, 'Benefit's calculation method', accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_nii_hisuv",
+     "url": "https://www.btl.gov.il/benefits/Unemployment/Pages/hisuv.aspx",
+     "label": "National Insurance Institute (Hebrew), 'How unemployment benefit is calculated', amounts from 1 Jan 2026"
+    },
+    {
+     "key": "us22_cbpp_uiweeks",
+     "url": "https://www.cbpp.org/research/economy/how-many-weeks-of-unemployment-compensation-are-available",
+     "label": "CBPP, 'Policy Basics: How Many Weeks of Unemployment Compensation Are Available?', updated 28 Sep 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_oldage",
+   "stage": "us22",
+   "topic": "Old-age income poverty, Israel vs US (OECD IDD; NII)",
+   "claims": [
+    {
+     "text": "OECD Income Distribution Database, relative income poverty rate (share with equivalised disposable income below 50% of the national median) among people over 65 (the 66+ group used in Pensions at a Glance): Israel 15.3% (2022, latest; 23.8% in 2011, series max 24.1%); United States 22.9% (2023, latest; 20.6% in 2013, series max 23.1%).",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_idd_isr66",
+      "us22_oecd_idd_usa66"
+     ]
+    },
+    {
+     "text": "Context: OECD IDD total-population poverty rate (50% median) Israel 16.8% (2022), so on the OECD measure Israel's elderly poverty (15.3%) is now slightly below its overall rate, while US elderly poverty (22.9%, 2023) exceeds the US overall rate (about 18%, see us22_poverty).",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_idd_isrtot",
+      "us22_oecd_idd_isr66",
+      "us22_oecd_idd_usa66"
+     ]
+    },
+    {
+     "text": "Pensions at a Glance 2023/2025 'Old-age income poverty' tables could not be read directly (OECD pages render without data for the fetch tool); the IDD figures above are the underlying source for that indicator.",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_idd_isr66"
+     ]
+    },
+    {
+     "text": "NII Poverty Report for 2024 (published around 30 Jan 2026): poverty 20.7% of persons, 20.0% of families, about 28% of children; about 158,700 elderly people poor, described as above the OECD average. No 2024 elderly poverty percentage found in the press coverage or NII English release.",
+     "strength": "moderate",
+     "sources": [
+      "us22_inn_oni24"
+     ]
+    },
+    {
+     "text": "NII Poverty Report for 2023 (18 Dec 2024): about 158.5 thousand elderly poor; elderly poverty below the national average; 19.8% for elderly living alone vs 8.4% living with family. Mako reports elderly poverty incidence of 12.8% (persons, 2023) - not confirmed on the NII page.",
+     "strength": "moderate",
+     "sources": [
+      "us22_nii_oni23",
+      "us22_mako_oni23"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_idd_isr66",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/ISR.A.PR_INC_DISP._Z.PT_POP.Y_GT65.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database (DSD_WISE_IDD@DF_IDD) via DBnomics, Israel, poverty rate 50% median, over 65 (66+), income definition since 2012"
+    },
+    {
+     "key": "us22_oecd_idd_usa66",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/USA.A.PR_INC_DISP._Z.PT_POP.Y_GT65.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database via DBnomics, United States, poverty rate 50% median, over 65 (66+), income definition since 2012"
+    },
+    {
+     "key": "us22_oecd_idd_isrtot",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/ISR.A.PR_INC_DISP._Z.PT_POP._T.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database via DBnomics, Israel, poverty rate 50% median, total population"
+    },
+    {
+     "key": "us22_inn_oni24",
+     "url": "https://www.inn.co.il/news/688867",
+     "label": "Arutz Sheva (inn.co.il), NII Poverty Report for 2024, 30 Jan 2026"
+    },
+    {
+     "key": "us22_nii_oni23",
+     "url": "https://www.btl.gov.il/About/newspapers/Pages/ArchiveFolder/2025/DochOnI2024.aspx",
+     "label": "National Insurance Institute press release, Poverty and Inequality Report 2023, 18 Dec 2024"
+    },
+    {
+     "key": "us22_mako_oni23",
+     "url": "https://www.mako.co.il/finances-news/Article-e6516cbb769d391027.htm",
+     "label": "Mako (N12), coverage of NII Poverty Report 2023, 18 Dec 2024"
+    }
+   ]
+  },
+  {
+   "id": "us22_hale",
+   "stage": "us22",
+   "topic": "Healthy life expectancy (HALE) and life expectancy at birth, WHO 2021",
+   "claims": [
+    {
+     "text": "WHO healthy life expectancy (HALE) at birth, 2021 (latest WHO estimate): Israel 70.9 years (men 70.4, women 71.4); United States 63.2 years (men 62.2, women 64.3). Gap 7.7 years.",
+     "strength": "strong",
+     "sources": [
+      "us22_who_hale21"
+     ]
+    },
+    {
+     "text": "WHO life expectancy at birth, 2021: Israel 82.3 years (men 80.3, women 84.2); United States 76.4 (men 73.9, women 79.0). Book's arithmetic: years lived in less than full health (LE minus HALE) Israel 11.4, US 13.2. 2021 includes COVID-19 mortality, which hit the US harder.",
+     "strength": "strong",
+     "sources": [
+      "us22_who_le21",
+      "us22_who_hale21"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_who_hale21",
+     "url": "https://ghoapi.azureedge.net/api/WHOSIS_000002?$filter=SpatialDim%20in%20('ISR','USA')%20and%20TimeDim%20eq%202021",
+     "label": "WHO Global Health Observatory, indicator WHOSIS_000002 'Healthy life expectancy (HALE) at birth (years)', 2021 (GHE 2021 release)"
+    },
+    {
+     "key": "us22_who_le21",
+     "url": "https://ghoapi.azureedge.net/api/WHOSIS_000001?$filter=SpatialDim%20in%20('ISR','USA')%20and%20TimeDim%20eq%202021",
+     "label": "WHO Global Health Observatory, indicator WHOSIS_000001 'Life expectancy at birth (years)', 2021"
+    }
+   ]
+  },
+  {
+   "id": "us22_toptax",
+   "stage": "us22",
+   "topic": "Corporate and top personal tax rates, incentives and effective rates: Israel vs US",
+   "claims": [
+    {
+     "text": "Statutory corporate income tax: Israel 23% (2025 and 2026, PwC); US 21% federal, combined federal and average state statutory rate 25.57% (Tax Foundation 2025; OECD unweighted average 24.20%, worldwide average 23.58% across 181 jurisdictions).",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_cit",
+      "us22_tf_cit25"
+     ]
+    },
+    {
+     "text": "Israel's incentive regimes under the Law for the Encouragement of Capital Investments (PwC, June 2026): Preferred Enterprise 7.5% in Development Area A / 16% elsewhere; Special Preferred Enterprise 5% / 8% (for ten years); Preferred Technology Enterprise 7.5% / 12% on qualifying income; Special Preferred Technology Enterprise 6%. Dividends from PTE/SPTE to foreign parent companies (90%+ foreign-held) withheld at 4%, otherwise 20%.",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_incent"
+     ]
+    },
+    {
+     "text": "Intel Kiryat Gat deal (announced 26 Dec 2023): Israeli government grant $3.2bn, 12.8% of a planned $25bn investment in Fab 38; Intel committed to buy NIS 60bn (about $16.6bn) from Israeli suppliers over a decade; Finance Ministry official said Intel's corporate tax rate rose from 5% to 7.5% under the deal. Intel reportedly paused the Kiryat Gat project in June 2024; current status not verified here.",
+     "strength": "strong",
+     "sources": [
+      "us22_aj_intel",
+      "us22_ctech_intel",
+      "us22_jp_intelpause"
+     ]
+    },
+    {
+     "text": "Top personal income tax rates: US federal 37% for 2026 on taxable income above $640,600 (single) / $768,700 (married joint) (state income taxes extra); Israel 47% above ILS 560,280 plus 3% surtax above ILS 721,560 = 50% on labour income, and from 2025 an additional 2% surtax on capital income above that threshold (up to 52% marginal on capital income taxed at ordinary rates).",
+     "strength": "strong",
+     "sources": [
+      "us22_irs_ty26",
+      "us22_pwc_il_pit"
+     ]
+    },
+    {
+     "text": "ITEP (Feb 2024): 342 consistently profitable large US corporations paid an average effective federal income tax rate of 14.1% over 2018-2022 (statutory 21%); 109 paid zero federal income tax in at least one year; total tax breaks $275bn.",
+     "strength": "moderate",
+     "sources": [
+      "us22_itep_corp24"
+     ]
+    },
+    {
+     "text": "Israel State Comptroller (Nov 2022): estimated tax benefits (tax expenditures) NIS 67bn in 2019, up 34% from 2015. A more recent Tax Authority total (2023-2025) was not found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_mevaker_taxexp"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_pwc_il_cit",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/taxes-on-corporate-income",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Taxes on corporate income, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_pwc_il_incent",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/tax-credits-and-incentives",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Tax credits and incentives, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_pwc_il_pit",
+     "url": "https://taxsummaries.pwc.com/israel/individual/taxes-on-personal-income",
+     "label": "PwC Worldwide Tax Summaries, Israel - Individual - Taxes on personal income, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_tf_cit25",
+     "url": "https://taxfoundation.org/publications/corporate-tax-rates-around-the-world/",
+     "label": "Tax Foundation (Cristina Enache), 'Corporate Tax Rates Around the World, 2025', 17 Dec 2025"
+    },
+    {
+     "key": "us22_irs_ty26",
+     "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+     "label": "IRS, IR-2025-103, 'IRS releases tax inflation adjustments for tax year 2026...', 9 Oct 2025"
+    },
+    {
+     "key": "us22_itep_corp24",
+     "url": "https://itep.org/corporate-tax-avoidance-trump-tax-law/",
+     "label": "ITEP, 'Corporate Tax Avoidance in the First Five Years of the Trump Tax Law', 29 Feb 2024"
+    },
+    {
+     "key": "us22_ctech_intel",
+     "url": "https://www.calcalistech.com/ctechnews/article/skutpi9ta",
+     "label": "Calcalist CTech, interview with Finance Ministry deputy budget director Kfir Battat on Intel deal, 21 Jan 2024"
+    },
+    {
+     "key": "us22_aj_intel",
+     "url": "https://aljazeera.com/news/2023/12/26/israel-grants-intel-3-2bn-for-largest-ever-25bn-chip-plant-investment",
+     "label": "Al Jazeera, 'Israel grants Intel $3.2bn for largest-ever $25bn chip plant investment', 26 Dec 2023"
+    },
+    {
+     "key": "us22_jp_intelpause",
+     "url": "https://jewishpress.com/news/business-economy/intel-postpones-construction-of-new-25b-plant-in-kiryat-gat/2024/06/13",
+     "label": "Jewish Press, 'Intel postpones construction of new $25B plant in Kiryat Gat', 13 June 2024"
+    },
+    {
+     "key": "us22_mevaker_taxexp",
+     "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2022/2022.11/EN/2022.11-203-Tax-Taktzir-EN.pdf",
+     "label": "State Comptroller of Israel, audit report on tax benefits (English summary), Nov 2022"
+    }
+   ]
+  },
+  {
+   "id": "us22_otheraid",
+   "stage": "us22",
+   "topic": "Non-US official aid to Israel (German naval subsidies) and private philanthropic inflows",
+   "claims": [
+    {
+     "text": "German subsidies for Israel's Dolphin submarines (AFP/UPI 2012): the first two Dolphins were donated by Germany (the UPI account ties this to the 1953 reparations agreement; other accounts link it to the 1991 Gulf War - not resolved here); Germany paid half of the roughly $700m cost of the third; it agreed to pay one-third of the $1.27bn cost of the fourth and fifth (ordered 2006); for the sixth (signed March 2012, about $659m) Germany covered up to EUR 135m, described as about a third.",
+     "strength": "moderate",
+     "sources": [
+      "us22_solar_dolphin6",
+      "us22_ynet_dolphin11"
+     ]
+    },
+    {
+     "text": "AP (30 Nov 2011): Germany set aside EUR 135m ($180m) in its budget to pay about a third of another Dolphin submarine; of Israel's three Dolphins at the time, two were entirely funded and one half-funded by Berlin.",
+     "strength": "strong",
+     "sources": [
+      "us22_ynet_dolphin11"
+     ]
+    },
+    {
+     "text": "Sa'ar 6 corvettes (ordered May 2015): four ships from ThyssenKrupp for about NIS 1.8bn (about EUR 430m / $480m); German government contribution EUR 115m per AFP; Ynet reported Germany would subsidise one third.",
+     "strength": "moderate",
+     "sources": [
+      "us22_gulf_saar6",
+      "us22_wiki_saar6"
+     ]
+    },
+    {
+     "text": "Dakar-class submarines (agreement Jan 2022): three submarines from ThyssenKrupp for about EUR 3bn ($3.4bn); German government contribution EUR 540m under a 2017 bilateral agreement (about 18%, book's arithmetic).",
+     "strength": "moderate",
+     "sources": [
+      "us22_almon_dakar"
+     ]
+    },
+    {
+     "text": "No authoritative total of non-US official (state) aid to Israel was found; no other state military grant programme comparable to US FMF was found in this pass. Israel is not an OECD DAC ODA recipient in current data (not separately verified here).",
+     "strength": "weak",
+     "sources": [
+      "us22_almon_dakar"
+     ]
+    },
+    {
+     "text": "Private philanthropy: donations to Israeli nonprofits totalled $4.4bn in 2015 (all sources, per CBS), of which $2.8bn (about two-thirds) came from abroad (Tel Aviv University Institute for Law and Philanthropy); US funders: 1,179 organisations gave $1.8bn in 2015 (centralised bodies $707m, 'friends of' groups $752m, family foundations $87m); evangelical Christian groups under 3% of foreign donations. 2015 is the latest comprehensive year cited; no newer authoritative annual total found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_chron_giving"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_solar_dolphin6",
+     "url": "https://www.solardaily.com/reports/Israel_to_sign_deal_for_sixth_German_sub_999.html",
+     "label": "SpaceDaily/AFP-UPI, 'Israel to sign deal for sixth German sub', 20 Mar 2012"
+    },
+    {
+     "key": "us22_ynet_dolphin11",
+     "url": "https://www.ynetnews.com/article/4155447",
+     "label": "Ynetnews (AP), 'Germany OKs subsidized submarine sale to Israel', 30 Nov 2011"
+    },
+    {
+     "key": "us22_almon_dakar",
+     "url": "https://www.al-monitor.com/index%2Ephp/originals/2022/01/israel-signs-agreement-buy-three-more-german-submarines",
+     "label": "Al-Monitor, 'Israel signs agreement to buy three more German submarines', Jan 2022"
+    },
+    {
+     "key": "us22_gulf_saar6",
+     "url": "https://gulfnews.com/world/mena/germany-subsidises-sale-of-4-warships-to-israel-1.1508755",
+     "label": "Gulf News (AFP), 'Germany subsidises sale of 4 warships to Israel', May 2015 (page updated 2018)"
+    },
+    {
+     "key": "us22_wiki_saar6",
+     "url": "https://en.wikipedia.org/wiki/Sa%27ar_6-class_corvette",
+     "label": "Wikipedia, 'Sa'ar 6-class corvette' (citing Ynet 11 May 2015, i24news 13 Dec 2015)"
+    },
+    {
+     "key": "us22_chron_giving",
+     "url": "https://www.philanthropy.com/news/u-s-jews-and-christians-give-billions-to-israel/",
+     "label": "Chronicle of Philanthropy (Jamie Levine Daniel, from The Conversation), 'U.S. Jews and Christians give billions to Israel', 21 Apr 2023"
+    }
+   ]
+  },
+  {
+   "id": "us22_usforeignaid",
+   "stage": "us22",
+   "topic": "US foreign assistance totals and military share; host-nation support received by the US",
+   "claims": [
+    {
+     "text": "US foreign assistance disbursements (ForeignAssistance.gov, per Pew, constant 2025 dollars): FY2023 $85.1bn; FY2024 $73.5bn (category table gives $71.6bn); FY2025 $47.3bn; FY2026 through 1 July 2026 $7.0bn. Aid was 0.67% of federal spending in FY2025 (about 1% for most of FY2008-FY2021).",
+     "strength": "strong",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    },
+    {
+     "text": "Military/security share: the 'peace and security' category was $18.2bn in FY2024 (about 25% of the $71.6bn total, book's arithmetic) and $7.3bn in FY2025, 15.5% of FY2025 aid, the smallest share since FY2001. Pew's figures are disbursements; an obligations total for FY2024/FY2025 was not retrieved (ForeignAssistance.gov home page not reachable in this session).",
+     "strength": "moderate",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    },
+    {
+     "text": "Israel in FY2025: $3.31bn disbursed (Pew), 99.8% military; USAFacts gives about $3.3bn obligated in FY2025, all military, ranking first among 43 high-income recipients; Pew says Israel's FY2025 figure was down 51.4% from FY2024. Ukraine FY2025 $6.70bn (84.9% non-military).",
+     "strength": "strong",
+     "sources": [
+      "us22_pew_aid26",
+      "us22_usafacts_isr"
+     ]
+    },
+    {
+     "text": "Host-nation support is a different category from foreign aid: Japan pays for part of the cost of stationing US forces in Japan under a Special Measures Agreement - JPY 1,055.1bn (about $8.6bn at 2022 rates) over five years to March 2027 (about JPY 210bn a year, book's arithmetic); talks on the next agreement began in mid-2026.",
+     "strength": "strong",
+     "sources": [
+      "us22_ap_japanhns",
+      "us22_jiji_hns26"
+     ]
+    },
+    {
+     "text": "No source found that states in terms that the US receives foreign military aid; the US is a donor, and no foreign grant programme to the US comparable to FMF was found. The 'receives none' point rests on absence of evidence, not a direct citation.",
+     "strength": "weak",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_pew_aid26",
+     "url": "https://www.pewresearch.org/short-reads/2026/07/21/us-foreign-aid-is-plunging-in-second-trump-administration/",
+     "label": "Pew Research Center (Drew DeSilver), 'US foreign aid is plunging in second Trump administration', 21 July 2026 (ForeignAssistance.gov data updated 1 July 2026)"
+    },
+    {
+     "key": "us22_usafacts_isr",
+     "url": "https://usafacts.org/answers/how-much-foreign-aid-does-the-us-provide/countries/israel/",
+     "label": "USAFacts, 'How much foreign aid does the US provide to Israel?', updated 29 Sep 2026 (ForeignAssistance.gov)"
+    },
+    {
+     "key": "us22_ap_japanhns",
+     "url": "https://www.clickondetroit.com/news/world/2022/03/25/japan-oks-bigger-budget-to-host-us-forces-step-up-alliance/",
+     "label": "AP via ClickOnDetroit, 'Japan OKs bigger budget to host US forces, step up alliance', 25 Mar 2022"
+    },
+    {
+     "key": "us22_jiji_hns26",
+     "url": "https://english.adnkronos.com/2026/08/05/exclusive-japan-u-s-begin-working-level-talks-on-host-nation-support/",
+     "label": "Jiji Press via Adnkronos, 'Japan, U.S. begin working-level talks on host nation support', 5 Aug 2026"
+    }
+   ]
   }
  ]
 }
