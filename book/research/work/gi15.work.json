@@ -246,5 +246,78 @@
     "label": "UNRWA Situation Report #64 (reproduced by GlobalSecurity.org), 15 January 2024"
    }
   }
+ },
+ "gi15_audit": {
+  "topic": "Audit re-fetches for Part Fourteen (gi15)",
+  "claims": [
+   {
+    "text": "Houthi-run health ministry's later update on the 20 July 2024 Israeli strike on Hodeidah: 'at least three people were killed and 87 injured'; an earlier statement gave 80 wounded and no deaths.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_aj_hodeidah"
+    ]
+   },
+   {
+    "text": "IBTimes UK, 16 Oct 2026: the Pentagon's Minab report remained unpublished; a Pentagon spokesperson said the investigation was ongoing; anonymous sources (via The Straits Times) said officials intended to delay release until after the midterms; a Bloomberg investigation gave more than 150 killed incl. at least 123 children; a UN fact-finding mission report of 17 Sept 2026 found reasonable grounds to believe the US was responsible and that the strike was an indiscriminate attack amounting to a war crime.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_ibt_minab"
+    ]
+   },
+   {
+    "text": "27 May 2024: one Egyptian member of the security personnel near the Rafah border was killed in an exchange of fire with Israeli personnel; both Egypt's military and Israel's military said they were investigating.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_aj_egysoldier"
+    ]
+   },
+   {
+    "text": "AP via Al Jazeera, 23 Aug 2019: two US officials said the 19 July 2019 Amerli raid, on a base a militia official said housed Iranian and Lebanese advisers and a weapons depot, was Israeli and killed two Iranian military commanders.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_aje_iraq2019"
+    ]
+   },
+   {
+    "text": "CPJ: 31 journalists and media support workers killed on 10 Sept 2025 (at least nine confirmed as journalists, others under investigation), plus a child; CPJ classifies the deaths as murders; the IDF said it struck military targets including the 'Houthi Public Relations Department', which it said disseminates propaganda.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_cpj_31"
+    ]
+   },
+   {
+    "text": "Airwars tracker: 60-108 civilians alleged killed in Syria by Israeli strikes; 6 alleged incidents with 12-16 locally reported deaths; IDF estimate 0 civilian deaths from 1 incident.",
+    "strength": "reported",
+    "sources": [
+     "gi15a_airwars"
+    ]
+   }
+  ],
+  "sources": {
+   "gi15a_aj_hodeidah": {
+    "url": "https://www.aljazeera.com/amp/news/liveblog/2024/7/20/israels-war-on-gaza-live-calls-grow-on-israel-to-end-palestine-occupation",
+    "label": "Al Jazeera live blog, 20 July 2024"
+   },
+   "gi15a_ibt_minab": {
+    "url": "https://www.ibtimes.co.uk/pentagon-delay-iran-school-strike-report-1826044",
+    "label": "IBTimes UK, 'Hegseth advisers plan to withhold report on US strike ... until after midterms', 16 October 2026"
+   },
+   "gi15a_aj_egysoldier": {
+    "url": "https://www.aljazeera.com/news/2024/5/27/shooting-between-egyptian-israeli-personnel-near-rafah-kills-one-egyptian",
+    "label": "Al Jazeera, 'Shooting between Egyptian, Israeli personnel near Rafah kills one Egyptian', 27 May 2024"
+   },
+   "gi15a_aje_iraq2019": {
+    "url": "https://www.aljazeera.com/news/2019/8/23/us-officials-confirm-israel-air-raid-in-iraq",
+    "label": "Al Jazeera (AP), 'US officials confirm Israel air raid in Iraq', 23 August 2019 (audit re-fetch)"
+   },
+   "gi15a_cpj_31": {
+    "url": "https://cpj.org/2025/09/israels-killing-of-31-yemeni-journalists-marks-deadliest-global-attack-in-16-years/",
+    "label": "CPJ, September 2025 (audit re-fetch)"
+   },
+   "gi15a_airwars": {
+    "url": "https://airwars.org/?p=76647",
+    "label": "Airwars, Israeli military in Syria tracker (audit re-fetch, October 2026)"
+   }
+  }
  }
 }

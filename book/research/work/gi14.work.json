@@ -167,5 +167,45 @@
     "label": "Al-Monitor/Reuters, 'Lebanon's Hezbollah warns residents of Israel's north to evacuate', 7 March 2026"
    }
   }
+ },
+ "gi14_audit": {
+  "topic": "Audit re-fetches for Part Thirteen (gi14)",
+  "claims": [
+   {
+    "text": "Haaretz reported (late January 2026) that the Israeli military had accepted the Gaza health ministry's estimate of about 71,000 killed and was analysing the data to separate combatants and civilians; on 30 January 2026 military spokesperson Nadav Shoshani said the reports did not reflect official data: 'Any publication or report on this matter will be released through official and orderly channels.'",
+    "strength": "reported",
+    "sources": [
+     "gi14a_na_idfdeny"
+    ]
+   },
+   {
+    "text": "Audit re-fetch, OCHA Gaza snapshot 30 Sep 2026: of 670 health facilities, 42 fully functioning, 273 partially functioning, 355 not functioning; Israeli soldiers since the ground operation (Israeli military website) 474 killed; journalists and media workers 262 killed to 30 June 2026 (PJS); aid workers 597.",
+    "strength": "reported",
+    "sources": [
+     "gi14a_ocha_gazasnap"
+    ]
+   },
+   {
+    "text": "Audit re-fetch, OCHA West Bank snapshot (to 31 Aug 2026): UNRWA counted 12,557 displaced from Jenin camp 'during operations by Israeli or Palestinian forces', and 12,412 from Tulkarm camp and 9,207 from Nur Shams attributed to Israeli forces' operations.",
+    "strength": "reported",
+    "sources": [
+     "gi14a_ocha_wbsnap"
+    ]
+   }
+  ],
+  "sources": {
+   "gi14a_na_idfdeny": {
+    "url": "https://www.newarab.com/news/israel-denies-accepting-gaza-health-ministry-death-toll",
+    "label": "The New Arab, 'Israel denies accepting Gaza health ministry death toll', 29-30 January 2026"
+   },
+   "gi14a_ocha_gazasnap": {
+    "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_30_September_2026.pdf",
+    "label": "UN OCHA, 'Gaza Reported Impact Snapshot', 30 September 2026 (audit re-fetch)"
+   },
+   "gi14a_ocha_wbsnap": {
+    "url": "https://www.ochaopt.org/sites/default/files/West%20Bank_info-graphic_14_September_2026.pdf",
+    "label": "UN OCHA, West Bank monthly snapshot (data to 31 August 2026), 14 September 2026 (audit re-fetch)"
+   }
+  }
  }
 }

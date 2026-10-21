@@ -224,5 +224,56 @@
     "label": "AP via Boston Globe, 'Senate rejects bid to halt sale of bombs and rifles to Israel', 30 Jul 2025"
    }
   }
+ },
+ "gi17_audit": {
+  "topic": "Audit re-verification of Part Sixteen claims (21 Oct 2026)",
+  "claims": [
+   {
+    "text": "Al Jazeera's table lists a Russian draft of 25 Oct 2023 as 'Vetoed by: US, UK' and, the same day, a US draft vetoed by Russia and China; it lists 13 entries though its text says 14 votes; US vetoes on 18 Oct 2023, 8 Dec 2023, 20 Feb 2024, 18 Apr 2024, 20 Nov 2024.",
+    "strength": "reported",
+    "sources": [
+     "gi17a_aj_unsc"
+    ]
+   },
+   {
+    "text": "The Netherlands hosts 'one of three regional warehouses for US-owned F-35 parts'; the Supreme Court said an export suspension remains in place while the licence is reassessed within six weeks.",
+    "strength": "reported",
+    "sources": [
+     "gi17a_es_dutch"
+    ]
+   },
+   {
+    "text": "Turkey 'said it has closed its airspace' to Israeli aircraft but the 'scope and timing' were 'not immediately clear'; flight trackers showed Israeli airliners still crossing to Georgia and Russia.",
+    "strength": "reported",
+    "sources": [
+     "gi17a_tn_turkey"
+    ]
+   },
+   {
+    "text": "Oxfam International joined Al-Haq's challenge; Healey said in May 2025 suspension would affect the 'whole F-35 programme' and have a 'profound impact on international peace and security'; the court: 'a matter for the executive, which is democratically accountable to Parliament'.",
+    "strength": "reported",
+    "sources": [
+     "gi17a_aje_f35uk"
+    ]
+   }
+  ],
+  "sources": {
+   "gi17a_aj_unsc": {
+    "url": "https://www.aljazeera.com/news/2024/11/21/how-has-the-unsc-voted-since-the-beginning-of-israels-war-on-gaza",
+    "label": "Al Jazeera, 'How has the UNSC voted since the beginning of Israel's war on Gaza?', 21 Nov 2024 (re-fetched 21 Oct 2026)"
+   },
+   "gi17a_es_dutch": {
+    "url": "https://www.expressandstar.com/world-news/dutch-government-ordered-to-re-evaluate-licence-to-export-f-35-parts-to-israel-5664692",
+    "label": "AP via Express & Star, Dutch Supreme Court F-35 ruling, 3 Oct 2025 (re-fetched 21 Oct 2026)"
+   },
+   "gi17a_tn_turkey": {
+    "url": "https://www.thenationalnews.com/news/mena/2025/08/29/turkey-severs-economic-ties-with-israel/",
+    "label": "The National, Turkey severs economic ties with Israel, 29 Aug 2025 (re-fetched 21 Oct 2026)"
+   },
+   "gi17a_aje_f35uk": {
+    "url": "https://www.aljazeera.com/news/2025/6/30/high-court-allows-uk-to-keep-exporting-f-35-jet-parts-to-israel",
+    "label": "Al Jazeera, UK High Court F-35 ruling, 30 Jun 2025 (re-fetched 21 Oct 2026)"
+   }
+  }
  }
 }
