@@ -1,0 +1,208 @@
+{
+ "us14_wages": {
+  "topic": "Wages vs prices over time, Israel and US (CPI, average wages, household income, inflation history)",
+  "claims": [
+   {
+    "text": "Israel's annual inflation peaked at 445% in 1984 (prices rose about 5.5 times in a year); the 1985 stabilisation plan froze the exchange rate, prices and wages and drew on a US grant; three zeros were removed (1 new shekel = 1,000 old shekels); inflation stayed around 20% until the mid-1990s; a long-term 1–3% target was set in the early 2000s",
+    "strength": "primary",
+    "sources": [
+     "us14_boi_hyper"
+    ]
+   },
+   {
+    "text": "Bank of Israel (Nov 2014): gross real wage per employee job rose 0.8% a year from 1996, fell 0.2% a year from 2001 and rose 0.7% a year from 2003; output per employee grew about 1.0% a year from 1990; wage-to-productivity ratio stable since 2003; Israel's wage growth similar to the average of 19 OECD members over 20 years; 2012 hourly wage about 74.7% of the OECD average (PPP)",
+    "strength": "primary",
+    "sources": [
+     "us14_boi_wages2014"
+    ]
+   },
+   {
+    "text": "Taub Center (reported by Globes, May 2016): no rise in Israeli real wages for at least fifteen years to end-2014; CPI rose 32% over 2000–2014 and nominal wages rose in line",
+    "strength": "reported",
+    "sources": [
+     "us14_globes_taubwages"
+    ]
+   },
+   {
+    "text": "OECD average annual wages, USD PPP 2024 prices: Israel 49,340 (2000), 46,050 (2010), 51,659 (2020), 54,736 (2024); United States 64,928 (2000), 71,439 (2010), 82,783 (2020), 82,933 (2024). Israel +10.9% 2000–2024, US +27.7%; Israel's average fell from 76% to 66% of the US level",
+    "strength": "reported",
+    "sources": [
+     "us14_oecd_avwage"
+    ]
+   },
+   {
+    "text": "Israel's average monthly wage per employee post was NIS 14,672 in March 2025 and NIS 13,907 in April 2025 (initial, CBS); April 2025 nominal +3.6% year on year, equal to inflation, so about 0% real; March +4.9% nominal, +1.5% real; about 4.1 million employee posts; tech average NIS 36,731",
+    "strength": "reported",
+    "sources": [
+     "us14_globes_wage2025"
+    ]
+   },
+   {
+    "text": "US real median household income was $87,460 in 2025, up 2.6% from $85,210 in 2024, the highest since the series began in 1967; post-tax median $76,060; from 1967 to 2025 pre-tax income rose about 56% at the 10th and 50th percentiles and about 121% at the 90th; 90/10 ratio 9.23 (1967) to 13.06 (2025)",
+    "strength": "primary",
+    "sources": [
+     "us14_census_story2025",
+     "us14_census_p60"
+    ]
+   },
+   {
+    "text": "Israel CPI: annual inflation 1.6% in June 2026, a five-year low, within the Bank of Israel's 1–3% target",
+    "strength": "reported",
+    "sources": [
+     "us14_globes_cpi_june26"
+    ]
+   },
+   {
+    "text": "Israel CPI: annual inflation 1.6% in September 2026 (1.5% in August); housing component 3.8%",
+    "strength": "reported",
+    "sources": [
+     "us14_te_cpi_sep26"
+    ]
+   },
+   {
+    "text": "US CPI-U rose 3.7% in the 12 months to September 2026 (0.6% in the month, seasonally adjusted); energy +20.4%, gasoline +34.2%, food +2.5%, food at home +1.8%, shelter +3.2%, core +2.6%, medical care services +2.5%, used cars -1.5%",
+    "strength": "primary",
+    "sources": [
+     "us14_bls_cpi_sep26"
+    ]
+   }
+  ],
+  "sources": {
+   "us14_boi_hyper": {
+    "url": "https://boi.org.il/information/bankipedia/moneyandeconomy/hyperinflation/",
+    "label": "Bank of Israel, Bankipedia, 'Numbers that show there was hyperinflation here' (Hebrew)"
+   },
+   "us14_boi_wages2014": {
+    "url": "https://boi.org.il/en/communication-and-publications/press-releases/an-excerpt-from-the-upcoming-recent-economic-developments-that-will-soon-be-published-the-development-of-wages-in-israel-over-the-past-two-decades/",
+    "label": "Bank of Israel, 'The development of wages in Israel over the past two decades', Recent Economic Developments 138, press release, 26 November 2014"
+   },
+   "us14_globes_taubwages": {
+    "url": "https://en.globes.co.il/en/article-israeli-wages-static-for-fifteen-years-report-1001124427",
+    "label": "Amiram Barkat, Globes, 'Israeli wages static for fifteen years - report' (Taub Center), 16 May 2016"
+   },
+   "us14_oecd_avwage": {
+    "url": "https://en.wikipedia.org/wiki/List_of_countries_by_average_wage",
+    "label": "Wikipedia, 'List of countries by average wage', table 'Development of average annual wages 2000–2024 (USD PPP 2024)', from OECD.Stat Average annual wages"
+   },
+   "us14_globes_wage2025": {
+    "url": "https://en.globes.co.il/en/article-1001511988",
+    "label": "Globes, 'Average wage in Israel slips below NIS 14,000', 4 June 2025 (CBS data)"
+   },
+   "us14_census_story2025": {
+    "url": "https://www.census.gov/library/stories/2026/09/median-household-income.html",
+    "label": "Zach Scherer, US Census Bureau, 'Median Household Income in 2025 Surpassed Previous Highs Before and After the COVID-19 Pandemic', 15 September 2026"
+   },
+   "us14_census_p60": {
+    "url": "https://www.census.gov/library/publications/2026/demo/p60-289.html",
+    "label": "Melissa Kollar and Zach Scherer, US Census Bureau, 'Income in the United States: 2025', P60-289, 15 September 2026"
+   },
+   "us14_globes_cpi_june26": {
+    "url": "https://en.globes.co.il/en/article-1001549519",
+    "label": "Globes, 'Inflation in Israel falls to five-year low', 15 July 2026 (CBS CPI June 2026)"
+   },
+   "us14_te_cpi_sep26": {
+    "url": "https://tradingeconomics.com/israel/inflation-cpi/news/592482",
+    "label": "Trading Economics, 'Israel Inflation Rate Edges Up', 15 October 2026 (CBS CPI September 2026; aggregator)"
+   },
+   "us14_bls_cpi_sep26": {
+    "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+    "label": "US Bureau of Labor Statistics, 'Consumer Price Index – September 2026', 14 October 2026"
+   }
+  }
+ },
+ "us14_housing": {
+  "topic": "Housing price- and rent-to-income over time, Israel and US",
+  "claims": [
+   {
+    "text": "Buying an average Israeli home took 155 average monthly salaries (12.9 years) in 2022 (average home NIS 1.87m; average monthly salary NIS 12,100), by CBS data; the Ministry of Construction and Housing's estimate for 2014 was 146 salaries; Jerusalem 26.9 years, Tel Aviv 22.2, Beersheba 10",
+    "strength": "reported",
+    "sources": [
+     "us14_globes_salaries2023"
+    ]
+   },
+   {
+    "text": "In 2010 an average-priced Israeli apartment cost 129 average monthly salaries (survey published by the Housing and Construction Minister); rents rose 34% on average 2005–2011 and 49% in Gush Dan (CBS); the tent protest began 14 July 2011 when Daphni Leef pitched a tent in Tel Aviv; the 3 September 2011 march drew an estimated 460,000 nationwide",
+    "strength": "reported",
+    "sources": [
+     "us14_wiki_j14"
+    ]
+   },
+   {
+    "text": "Israel's dwelling price index (CBS) rose about 225.6% nominal and 135.8% real from 2008 to 2025 (Global Property Guide compilation); year-on-year real changes included +15.4% (2009), +10.0% (2021), -3.8% (2023), -3.6% (2025)",
+    "strength": "reported",
+    "sources": [
+     "us14_gpg_israel"
+    ]
+   },
+   {
+    "text": "Israeli home prices rose 0.5% year on year by the autumn 2025 reading, after a 7.8% peak earlier in 2025; Q3 2025 average prices: Tel Aviv NIS 3.025m, Jerusalem NIS 2.899m, South NIS 1.567m; Bank of Israel rate cut to 4.25%",
+    "strength": "reported",
+    "sources": [
+     "us14_toi_housing_nov25"
+    ]
+   },
+   {
+    "text": "The Alrov Institute's Housing Affordability Index measures the ability to buy a four-room flat in 12 cities each quarter from Tax Authority transactions, CBS after-tax household income and Bank of Israel mortgage rates",
+    "strength": "primary",
+    "sources": [
+     "us14_alrov_hai"
+    ]
+   },
+   {
+    "text": "US national single-family price-to-income ratio (JCHS): 3.2 in the 1990s, 4.1 in 2019, 5.0 in 2024, nearly matching record highs; median prices rose 48% 2019–2024 vs median income 22%; San Jose over 12",
+    "strength": "primary",
+    "sources": [
+     "us14_jchs_pti"
+    ]
+   },
+   {
+    "text": "JCHS 2026: 22.7 million US renter households (49%) were cost-burdened in 2024, a record; units renting under $1,000 fell from 8.3m (2014) to 5.8m (2024)",
+    "strength": "reported",
+    "sources": [
+     "us14_nlihc_jchs2026"
+    ]
+   },
+   {
+    "text": "JCHS 2026: about 24% of US owner households (20.7m) were cost-burdened in 2024, up 4m since 2019; in March 2026, 23% of listed homes were affordable to households earning $75,000 or less, down from 49% in March 2019",
+    "strength": "reported",
+    "sources": [
+     "us14_novoco_jchs2026"
+    ]
+   }
+  ],
+  "sources": {
+   "us14_globes_salaries2023": {
+    "url": "https://en.globes.co.il/en/article-1001445541",
+    "label": "Yaser Wakid, Globes, 'How many salaries needed to buy a home in Israel?', 4 May 2023 (CBS data presented by Dr Larisa Fleishman)"
+   },
+   "us14_wiki_j14": {
+    "url": "https://en.wikipedia.org/wiki/2011_Israeli_social_justice_protests",
+    "label": "Wikipedia, '2011 Israeli social justice protests'"
+   },
+   "us14_gpg_israel": {
+    "url": "https://www.globalpropertyguide.com/Middle-East/Israel/Price-History",
+    "label": "Global Property Guide, 'Israel Residential Real Estate Market Analysis 2025' (compiled from CBS Index of Prices of Dwellings; aggregator)"
+   },
+   "us14_toi_housing_nov25": {
+    "url": "https://www.timesofisrael.com/housing-snapshot-home-sales-and-rentals-across-israel-in-november-2025/",
+    "label": "Times of Israel, 'Housing snapshot: Home sales and rentals across Israel in November 2025', 28 November 2025"
+   },
+   "us14_alrov_hai": {
+    "url": "https://www.alrov.sites.tau.ac.il/housing-affordability-index-eng",
+    "label": "Alrov Institute, Tel Aviv University, 'Housing Affordability Index' (method page; latest Q1 2026)"
+   },
+   "us14_jchs_pti": {
+    "url": "https://jchs.harvard.edu/blog/home-prices-surge-five-times-median-income-nearing-historic-highs",
+    "label": "Peyton Whitney, Harvard Joint Center for Housing Studies, 'Home Prices Surge to Five Times Median Income, Nearing Historic Highs', 6 October 2025"
+   },
+   "us14_nlihc_jchs2026": {
+    "url": "https://nlihc.org/resource/jchss-2026-state-nations-housing-report-finds-cost-burdens-renters-continue-rise-amid",
+    "label": "NLIHC, 'JCHS's 2026 State of the Nation's Housing Report Finds Cost Burdens for Renters Continue to Rise', 13 July 2026"
+   },
+   "us14_novoco_jchs2026": {
+    "url": "https://novoco.com/notes-from-novogradac/harvard-jchs-state-of-the-nations-2026-housing-report-highlights-ongoing-housing-affordability-pressures",
+    "label": "Novogradac, 'Harvard JCHS State of the Nation's 2026 Housing Report Highlights Ongoing Housing Affordability Pressures', 30 June 2026"
+   }
+  }
+ }
+}
