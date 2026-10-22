@@ -843,13 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch12",
-   "title": "The Vatican Architecture",
-   "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
-   "merge": [],
-   "priority": 1
-  },
-  {
    "host": "ch19",
    "title": "The Netanyahu Architecture",
    "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
@@ -1069,6 +1062,131 @@
     "title": "Settled, Contested and Open",
     "span": "",
     "label": "Part Eighteen"
+   }
+  ]
+ },
+ "vatican": {
+  "slot": "ch12",
+  "absorbs": [],
+  "title": "The Vatican Architecture",
+  "subtitle": "Sovereignty, Money and the Question of Zionism, 1904–2026",
+  "span": "754–2026",
+  "intro": "vt_intro.html",
+  "parts_total": 19,
+  "stages": [
+   {
+    "id": "vt1",
+    "label": "Part One",
+    "title": "The Question: Refusal or Front?",
+    "span": "1904–2026"
+   },
+   {
+    "id": "vt2",
+    "label": "Part Two",
+    "title": "Why There Is a Vatican: 754 to 1929",
+    "span": "754–1929"
+   },
+   {
+    "id": "vt3",
+    "label": "Part Three",
+    "title": "The 1929 Deal, Then and Now",
+    "span": "1929–2026"
+   },
+   {
+    "id": "vt4",
+    "label": "Part Four",
+    "title": "How It Actually Runs",
+    "span": "2026"
+   },
+   {
+    "id": "vt5",
+    "label": "Part Five",
+    "title": "Sovereignty and Who Checks It",
+    "span": "1929–2026"
+   },
+   {
+    "id": "vt6",
+    "label": "Part Six",
+    "title": "Popes, Curia and the Myth of Hidden Popes",
+    "span": "2022–2026"
+   },
+   {
+    "id": "vt7",
+    "label": "Part Seven",
+    "title": "The Black Nobility and the Orsini",
+    "span": "1870–1968"
+   },
+   {
+    "id": "vt8",
+    "label": "Part Eight",
+    "title": "Orders and a Second Sovereign: Jesuits, Opus Dei, Malta",
+    "span": "1534–2026"
+   },
+   {
+    "id": "vt9",
+    "label": "Part Nine",
+    "title": "The Money: IOR, APSA, Peter's Pence",
+    "span": "1942–2026"
+   },
+   {
+    "id": "vt10",
+    "label": "Part Ten",
+    "title": "Scandal and Reform: Ambrosiano to the Becciu Retrial",
+    "span": "1974–2026"
+   },
+   {
+    "id": "vt11",
+    "label": "Part Eleven",
+    "title": "Rome and the Rothschilds: What the Documents Show",
+    "span": "1831–2026"
+   },
+   {
+    "id": "vt12",
+    "label": "Part Twelve",
+    "title": "Abuse and Cover-up",
+    "span": "1922–2026"
+   },
+   {
+    "id": "vt13",
+    "label": "Part Thirteen",
+    "title": "Reach: Schools, Universities, Bishops",
+    "span": "1789–2026"
+   },
+   {
+    "id": "vt14",
+    "label": "Part Fourteen",
+    "title": "Texts and Archives",
+    "span": "367–2026"
+   },
+   {
+    "id": "vt15",
+    "label": "Part Fifteen",
+    "title": "Emanuela Orlandi and Mirella Gregori",
+    "span": "1983–2026"
+   },
+   {
+    "id": "vt16",
+    "label": "Part Sixteen",
+    "title": "Rome and Zionism I: Herzl to the War, 1904–1945",
+    "span": "1904–1945"
+   },
+   {
+    "id": "vt17",
+    "label": "Part Seventeen",
+    "title": "Rome and Zionism II: Non-Recognition to Recognition, 1945–1993",
+    "span": "1945–1993"
+   },
+   {
+    "id": "vt18",
+    "label": "Part Eighteen",
+    "title": "Israel, Palestine and Gaza, 1994–2026",
+    "span": "1994–2026"
+   },
+   {
+    "id": "vt19",
+    "label": "Part Nineteen",
+    "title": "The Verdict on the Front Hypothesis",
+    "span": "Settled, probable, open"
    }
   ]
  },
