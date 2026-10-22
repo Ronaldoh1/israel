@@ -1,0 +1,359 @@
+{
+ "ad3_absolute_mobility": {
+  "topic": "Absolute income mobility by birth cohort, 1940-1984: Chetty et al. 2017, robustness, counterfactuals, critics",
+  "claims": [
+   {
+    "text": "Absolute mobility (share of children with higher inflation-adjusted pre-tax family income at about age 30 than their parents at the same age) fell from 92% for the 1940 birth cohort to 50% for the 1984 cohort; 50% for the 1980 cohort; slides label the 1940 mean 91.5% and 1980 50.0%",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_paper",
+     "ad3_fading_slides",
+     "ad3_oi_fading"
+    ]
+   },
+   {
+    "text": "Method: children's incomes from March CPS 1970-2014 (US-born), parents' from decennial Census/IPUMS 1940-2000; joint distribution (copula) from tax records for 1980-82 cohorts, assumed constant in baseline; 2014 dollars, CPI-U-RS deflator (CPI-U rescaled before 1977); copula bounds 84-98% (1940) and 14-88% (1984); uniform copula still gives 50% for 1980",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_paper"
+    ]
+   },
+   {
+    "text": "By parent income percentile, 1940 vs 1980 cohort: 10th percentile 94% vs 70%; 50th 93% vs 45%; 90th 88% vs 33%; decline steepest in the middle class; decline especially sharp 1940-1964 cohorts, paused for late 1960s/early 1970s births",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_paper"
+    ]
+   },
+   {
+    "text": "Robustness: deflator 0.8 points lower -> 93% to 59%; 2 points lower still a 26-point decline; post-tax/transfer raises levels about 3 points in all cohorts, trend unchanged; household-size adjusted 93% to 60%; at age 40, 86% (1940) to 56% (1970); sons vs fathers 95% to 41%; daughters vs fathers 43% (1940), 22% (1960), 26% (1984); adding $10,000 to 1984 incomes gives 61%",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_paper",
+     "ad3_fading_science"
+    ]
+   },
+   {
+    "text": "Counterfactuals for the 1980 cohort: 1940-era growth (2.5%/yr) with 1980 distribution raises absolute mobility to 62% (closing 29% of the gap); 1980 GDP with 1940 income shares raises it to 80% (closing 71%); restoring 1940 rates under today's distribution would need real GDP growth above 6% a year",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_paper",
+     "ad3_oi_fading"
+    ]
+   },
+   {
+    "text": "State declines: Michigan about 48 points; Indiana, Illinois, Ohio about 45; Massachusetts, New York, Montana about 35; fell in all 50 states",
+    "strength": "primary",
+    "sources": [
+     "ad3_fading_science",
+     "ad3_oi_fading"
+    ]
+   },
+   {
+    "text": "Reeves and Guyot (Brookings 2018): largest drop between decadal cohorts was 1940 to 1950, concentrated at the top; since 1950 the greatest losses are in the middle; a child born at the 5th percentile in 1980 needs only reach about the 12th percentile to out-earn parents",
+    "strength": "reported",
+    "sources": [
+     "ad3_brookings_middle"
+    ]
+   },
+   {
+    "text": "Winship re-estimates summarised by Reeves and Halikias: family-size adjustment raises early-1980s cohort from 50% to 60%; PSID with PCE deflator 67%; including cash transfers 68%; Winship accepts the decline but says about two-thirds are better off",
+    "strength": "disputed",
+    "sources": [
+     "ad3_brookings_winship"
+    ]
+   },
+   {
+    "text": "Winship (Archbridge, March 2017): roughly three in four adults, and the overwhelming majority of poor children, live better off than their parents; nearly half of bottom-fifth children stay in the bottom fifth",
+    "strength": "disputed",
+    "sources": [
+     "ad3_winship_archbridge"
+    ]
+   },
+   {
+    "text": "Strain, The American Dream Is Not Dead (2020), as reviewed: nearly three-quarters of children out-earn parents in absolute terms (household-size adjusted); 64% of children of bottom-fifth parents leave the bottom fifth and 7% reach the top fifth; reviewer VerBruggen questions household-size adjustment",
+    "strength": "disputed",
+    "sources": [
+     "ad3_nr_strain"
+    ]
+   }
+  ],
+  "sources": {
+   "ad3_oi_fading": {
+    "url": "https://opportunityinsights.org/paper/the-fading-american-dream/",
+    "label": "Chetty, Grusky, Hell, Hendren, Manduca and Narang, 'The Fading American Dream: Trends in Absolute Income Mobility Since 1940', Science 356(6336): 398-406, 2017 (Opportunity Insights paper page)"
+   },
+   "ad3_fading_paper": {
+    "url": "https://opportunityinsights.org/wp-content/uploads/2018/03/abs_mobility_paper.pdf",
+    "label": "Chetty et al., 'The Fading American Dream', full paper with appendix (Opportunity Insights PDF)"
+   },
+   "ad3_fading_slides": {
+    "url": "https://opportunityinsights.org/wp-content/uploads/2018/03/abs_mobility_slides.pdf",
+    "label": "Chetty et al., 'The Fading American Dream', slide deck (Opportunity Insights PDF)"
+   },
+   "ad3_fading_science": {
+    "url": "https://economics.mit.edu/sites/default/files/2023-07/science.aal4617.pdf",
+    "label": "Chetty et al., 'The Fading American Dream', Science 2017, published version (PDF)"
+   },
+   "ad3_brookings_middle": {
+    "url": "https://brookings.edu/articles/fewer-americans-are-making-more-than-their-parents-did-especially-if-they-grew-up-in-the-middle-class",
+    "label": "Richard V. Reeves and Katherine Guyot, Brookings, 'Fewer Americans are making more than their parents did, especially if they grew up in the middle class', 25 July 2018"
+   },
+   "ad3_brookings_winship": {
+    "url": "https://www.brookings.edu/articles/how-to-lift-the-u-s-mobility-rate-from-50-to-68-in-three-simple-steps/",
+    "label": "Richard V. Reeves and Dimitrios Halikias, Brookings, 'How to lift the U.S. mobility rate from 50% to 68% in three simple steps', 13 April 2017"
+   },
+   "ad3_winship_archbridge": {
+    "url": "https://www.archbridgeinstitute.org/wp-content/uploads/2017/04/Contemporary-levels-of-mobility-Executive-summary_Winship.pdf",
+    "label": "Scott Winship, Archbridge Institute, 'Economic Mobility: A State-of-the-Art Primer. Contemporary Levels of Mobility', executive summary, March 2017"
+   },
+   "ad3_nr_strain": {
+    "url": "https://www.nationalreview.com/2020/02/american-economy-long-term-trends-positive/amp/",
+    "label": "Robert VerBruggen, National Review, 'How Much Does It Suck to Live in Modern America?' (review of Michael R. Strain, The American Dream Is Not Dead), 27 February 2020"
+   }
+  }
+ },
+ "ad3_relative_and_place": {
+  "topic": "Relative mobility trends, geography of mobility, neighbourhood effects, MTO, social capital, race gaps, Opportunity Atlas",
+  "claims": [
+   {
+    "text": "Rank-rank slope (relative mobility) about 0.30 for 1971-74 (0.299), 1975-78 (0.291) and 1979-82 (0.313) cohorts; trend -0.0006 a year 1971-1993; children entering the labor market today have the same chances of moving up relative to parents as children born in the 1970s",
+    "strength": "primary",
+    "sources": [
+     "ad3_trends_aerpp",
+     "ad3_uchicago_e350"
+    ]
+   },
+   {
+    "text": "Chetty et al. 2014: because inequality rose, 'the consequences of the birth lottery' are larger today; the gap in expected incomes between children of bottom- and top-quintile families magnified",
+    "strength": "primary",
+    "sources": [
+     "ad3_trends_aerpp"
+    ]
+   },
+   {
+    "text": "Bottom-to-top-quintile probability 8.4% (1971 cohort) vs 9.0% (1986); college attendance gap between highest- and lowest-income children 74.5 points (1984 cohort) and 69.2 (1993)",
+    "strength": "primary",
+    "sources": [
+     "ad3_nber_digest_trends"
+    ]
+   },
+   {
+    "text": "Land of Opportunity (QJE 2014): >40 million children, 1980-82 cohorts, child income 2011-12 vs parents' 1996-2000; national rank-rank slope 0.341; bottom-to-top-quintile probability 7.5% nationally, 4.4% Charlotte, 10.8% Salt Lake City, 12.9% San Jose; absolute upward mobility 35.8 (Charlotte) to 46.2 (Salt Lake City) among 50 largest commuting zones; correlates: less segregation, less inequality, better primary schools, more social capital, more family stability; descriptive, not causal",
+    "strength": "primary",
+    "sources": [
+     "ad3_land_opp",
+     "ad3_land_opp_pub"
+    ]
+   },
+   {
+    "text": "Chetty and Hendren (QJE 2018): more than seven million families who moved; children's outcomes converge to those of the destination at about 4% per year of childhood exposure",
+    "strength": "primary",
+    "sources": [
+     "ad3_exposure_qje"
+    ]
+   },
+   {
+    "text": "MTO (AER 2016): children whose families used the experimental voucher to move to lower-poverty areas before age 13 earned $3,477 (31%) more a year in their mid-twenties (control mean $11,270) and attended college more; moves after 13 had, if anything, negative effects; J-PAL: 32% more likely to attend college; about 15% of voucher holders lived in neighbourhoods under 10% poverty (2017)",
+    "strength": "primary",
+    "sources": [
+     "ad3_mto_aer",
+     "ad3_jpal_mto"
+    ]
+   },
+   {
+    "text": "Nature 2022: 21 billion Facebook friendships, 72.2 million users aged 25-44; economic connectedness (share of high-SES friends among low-SES people) among strongest predictors of upward mobility; counterfactual: low-SES children in counties with EC of high-SES children would earn about 20% (19.5%) more; correlational with quasi-experimental support",
+    "strength": "primary",
+    "sources": [
+     "ad3_nature_ec"
+    ]
+   },
+   {
+    "text": "Opportunity Atlas released by Census Bureau with Chetty, Hendren, Friedman 1 October 2018: over 20 million children born 1978-1983, tract-level adult earnings and incarceration; affordable 'opportunity bargains'; white men had better upward mobility than Black men almost everywhere",
+    "strength": "reported",
+    "sources": [
+     "ad3_nlihc_atlas"
+    ]
+   },
+   {
+    "text": "Atlas paper: for children of 25th-percentile parents the standard deviation of mean household income at 35 across tracts within counties is $5,000; tracts one mile away add little predictive power; observational estimates predict causal effects (MTO validation); upward mobility weakly correlated with job growth; published AER 116(1) 2026; dataset for 1984-1989 cohorts uploaded 2024",
+    "strength": "primary",
+    "sources": [
+     "ad3_atlas"
+    ]
+   },
+   {
+    "text": "Changing Opportunity (1978-1992 cohorts): class gaps among white children widened 30%; Black children's earnings rose at all parental income levels, cutting the low-income white-Black gap 30%; explained by changes in parental employment rates within communities, mediated by social interaction",
+    "strength": "primary",
+    "sources": [
+     "ad3_changing_opp"
+    ]
+   }
+  ],
+  "sources": {
+   "ad3_trends_aerpp": {
+    "url": "https://eml.berkeley.edu/~saez/chettyetalAERPP2014.pdf",
+    "label": "Chetty, Hendren, Kline, Saez and Turner, 'Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility', American Economic Review Papers & Proceedings 104(5), 2014"
+   },
+   "ad3_nber_digest_trends": {
+    "url": "https://www.nber.org/digest/jul14/recent-trends-intergenerational-mobility",
+    "label": "NBER Digest, 'Recent Trends in Intergenerational Mobility', July 2014 (summary of NBER WP 19844)"
+   },
+   "ad3_land_opp": {
+    "url": "https://www.nber.org/papers/w19843",
+    "label": "Chetty, Hendren, Kline and Saez, 'Where is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States', NBER WP 19843 (2014); QJE 129(4): 1553-1623, 2014"
+   },
+   "ad3_land_opp_pub": {
+    "url": "https://economics.mit.edu/sites/default/files/2023-07/land%20of%20opp%20pub%20vers.pdf",
+    "label": "Chetty, Hendren, Kline and Saez, 'Where is the Land of Opportunity?', QJE 2014, published version (PDF)"
+   },
+   "ad3_exposure_qje": {
+    "url": "https://www.nber.org/papers/w23001",
+    "label": "Chetty and Hendren, 'The Impacts of Neighborhoods on Intergenerational Mobility I: Childhood Exposure Effects', NBER WP 23001; QJE 133(3): 1107-1162, 2018"
+   },
+   "ad3_mto_aer": {
+    "url": "https://lkatz.scholars.harvard.edu/publications/effects-exposure-better-neighborhoods-children-new-evidence-moving-opportunity",
+    "label": "Chetty, Hendren and Katz, 'The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment', American Economic Review 106: 855-902, 2016"
+   },
+   "ad3_jpal_mto": {
+    "url": "https://www.povertyactionlab.org/print/pdf/node/2415?lang=en",
+    "label": "J-PAL policy insight on housing mobility and Moving to Opportunity (print PDF)"
+   },
+   "ad3_nature_ec": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352590",
+    "label": "Chetty, Jackson, Kuchler, Stroebel, Hendren, Fluegge et al., 'Social capital I: measurement and associations with economic mobility', Nature 608: 108-121, 2022"
+   },
+   "ad3_atlas": {
+    "url": "https://opportunityinsights.org/paper/the-opportunity-atlas/",
+    "label": "Chetty, Friedman, Hendren, Jones and Porter, 'The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility', Opportunity Insights (Oct 2018); American Economic Review 116(1): 1-51, 2026"
+   },
+   "ad3_nlihc_atlas": {
+    "url": "https://nlihc.org/resource/census-bureau-unveils-opportunity-atlas",
+    "label": "National Low Income Housing Coalition, 'Census Bureau Unveils \"Opportunity Atlas\"', 9 October 2018"
+   },
+   "ad3_changing_opp": {
+    "url": "https://www.nber.org/papers/w32697",
+    "label": "Chetty, Dobbie, Goldman, Porter and Yang, 'Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility', NBER WP 32697, July 2024 (rev. Dec 2025; QJE 2026)"
+   },
+   "ad3_uchicago_e350": {
+    "url": "https://cehd.uchicago.edu/wp-content/uploads/2020/12/Econ350_W2021_Lecture1-4-HO-SLIDES_2021-01-11a_jbb.pdf",
+    "label": "James J. Heckman, Econ 350 lecture slides on social mobility, University of Chicago, January 2021 (reproducing Chetty et al. 2014 and Winship 2017 tables)"
+   }
+  }
+ },
+ "ad3_abroad": {
+  "topic": "International comparison: Great Gatsby curve, IGE, OECD 2018, absolute mobility abroad, Denmark and Canada, critics",
+  "claims": [
+   {
+    "text": "Corak: IGE = percentage difference in child earnings per percentage difference in parental earnings; Great Gatsby curve label first used by Alan Krueger (CEA chair) 12 January 2012; Gini for disposable income about 1985 vs sons born early-mid 1960s; Finland, Norway, Denmark pass on less than a fifth; Italy, UK, US about half; US twice Canada; 'not a causal relationship' but 'too glib to dismiss'",
+    "strength": "primary",
+    "sources": [
+     "ad3_corak_iza"
+    ]
+   },
+   {
+    "text": "Corak: Canada-US differences mainly at the extremes: about half of American sons of bottom-decile fathers rise no further than the third decile; more than half of sons of top-decile fathers fall no further than the 8th decile; middle similar",
+    "strength": "primary",
+    "sources": [
+     "ad3_corak_iza"
+    ]
+   },
+   {
+    "text": "IGE (Corak 2012 via EPI): US 0.47, UK 0.50, Italy 0.50, France 0.41, Germany 0.32, Sweden 0.27, Australia 0.26, Canada 0.19, Finland 0.18, Norway 0.17, Denmark 0.15",
+    "strength": "reported",
+    "sources": [
+     "ad3_epi_corak"
+    ]
+   },
+   {
+    "text": "OECD 2018: about four to five generations on average for a child of a bottom-10% family to reach mean income (earnings elasticity about 0.38, bottom-decile-to-mean about 1:3.5); sticky floors and sticky ceilings; in the US and Germany almost half of sons of high-earning fathers are themselves in the top quartile; report gives Nordic figures as 'about two' (executive summary) and 'at least four' (p.27)",
+    "strength": "primary",
+    "sources": [
+     "ad3_oecd_elevator",
+     "ad3_oecd_elevator_pdf"
+    ]
+   },
+   {
+    "text": "OECD 2018 as reported: US five generations, Denmark two (PIIE); UK, Italy, Switzerland five, Denmark two, average 4.5 across 30 countries (Statista)",
+    "strength": "reported",
+    "sources": [
+     "ad3_piie_denmark",
+     "ad3_statista_oecd"
+    ]
+   },
+   {
+    "text": "Kirkegaard (PIIE): Denmark's low inequality rests on high taxes and redistribution - 'no free lunch'; billionaire density similar (about 1.74 Denmark vs 1.79 US per million)",
+    "strength": "reported",
+    "sources": [
+     "ad3_piie_denmark"
+    ]
+   },
+   {
+    "text": "Manduca et al. 2020: absolute mobility 1960-1987 cohorts in eight countries; US and Canada near 50% for recent cohorts; Norway about 75% steady; Netherlands 0.778 (1980) to 0.686 (1984); Denmark pre-tax about 50% for 1982 (lowest) but above 65% on post-tax disposable income; differences driven mostly by marginal income distributions: US sample income grew 71% as fast as GDP vs 95% in Norway; US GDP per capita growth 1.80%/yr vs Norway 1.86%; swapping Norway's copula barely changes US absolute mobility",
+    "strength": "primary",
+    "sources": [
+     "ad3_manduca_iza"
+    ]
+   },
+   {
+    "text": "Manduca et al. Table A1.1.3, Canada absolute mobility on disposable income (main sample): 1977 0.575, 1978 0.580, 1979 0.579, 1980 0.575, 1982 0.565, 1983 0.568, 1984 0.571",
+    "strength": "primary",
+    "sources": [
+     "ad3_manduca_iza"
+    ]
+   },
+   {
+    "text": "Berman (2018): absolute mobility fell in all countries studied; decline since 1940 in percentage points: US 39.2 (growth 14.5, inequality 24.6), France 35.5, Germany 25.7, Sweden 24.9, Canada 24.1, UK 20.0, Norway 17.7, Denmark 17.2; Denmark average 78.5% vs US 62.2% for 1950-1980 cohorts",
+    "strength": "primary",
+    "sources": [
+     "ad3_berman"
+    ]
+   },
+   {
+    "text": "Landerso and Heckman: Denmark more mobile by income but not by education; Danish income-mobility advantage largely from redistributive taxes, transfers and wage compression; Danish child policies raise test scores without better educational outcomes",
+    "strength": "primary",
+    "sources": [
+     "ad3_landerso_heckman"
+    ]
+   }
+  ],
+  "sources": {
+   "ad3_corak_iza": {
+    "url": "https://docs.iza.org/dp7520.pdf",
+    "label": "Miles Corak, 'Income Inequality, Equality of Opportunity, and Intergenerational Mobility', IZA DP 7520, July 2013 (Journal of Economic Perspectives 2013)"
+   },
+   "ad3_epi_corak": {
+    "url": "https://www.epi.org/chart/rap-figure-intergenerational-mobility-income/",
+    "label": "Economic Policy Institute chart, 'Intergenerational mobility and income inequality in 22 countries', adapted from Corak (2012, Figure 2)"
+   },
+   "ad3_oecd_elevator": {
+    "url": "https://search.oecd.org/els/broken-elevator-how-to-promote-social-mobility-9789264301085-en.htm",
+    "label": "OECD, 'A Broken Social Elevator? How to Promote Social Mobility', 15 June 2018 (summary page)"
+   },
+   "ad3_oecd_elevator_pdf": {
+    "url": "https://stonecenter.gc.cuny.edu/files/2022/09/Forster-2.pdf",
+    "label": "OECD, 'A Broken Social Elevator? How to Promote Social Mobility' (2018), full report PDF (project led by Michael Forster)"
+   },
+   "ad3_piie_denmark": {
+    "url": "https://www.piie.com/blogs/realtime-economic-issues-watch/denmark-new-american-dream",
+    "label": "Jacob Funk Kirkegaard, Peterson Institute for International Economics, 'Denmark the New American Dream?', 21 February 2020"
+   },
+   "ad3_statista_oecd": {
+    "url": "https://statista.com/chart/amp/30387/social-elevator-oecd",
+    "label": "Anna Fleck, Statista, 'A Broken Social Elevator?' chart of OECD (2018) generations-to-mean-income estimates, 12 July 2023"
+   },
+   "ad3_manduca_iza": {
+    "url": "https://docs.iza.org/dp13456.pdf",
+    "label": "Manduca, Hell, Adermon, Blanden, Bratberg, Gielen, van Kippersluis, Lee, Machin, Munk, Nybom, Ostrovsky, Rahman and Sirnio, 'Trends in Absolute Income Mobility in North America and Europe', IZA DP 13456, July 2020"
+   },
+   "ad3_berman": {
+    "url": "https://topcat.aeaweb.org/conference/2019/preliminary/paper/NsrsFa5S",
+    "label": "Yonatan Berman, 'The Long Run Evolution of Absolute Intergenerational Mobility', working paper, 11 December 2018 (AEA 2019 meetings)"
+   },
+   "ad3_landerso_heckman": {
+    "url": "https://www.iza.org/publications/dp/10000",
+    "label": "Rasmus Landerso and James J. Heckman, 'The Scandinavian Fantasy: The Sources of Intergenerational Mobility in Denmark and the U.S.', IZA DP 10000 (2016); Scandinavian Journal of Economics 119(1): 178-230, 2017"
+   }
+  }
+ }
+}

@@ -315,5 +315,203 @@
     "label": "Mayer Brown, 'Housing Legislation Imposing Limitations on Large Institutional Investors from Purchasing Single Family Homes Becomes Law', 15 July 2026"
    }
   }
+ },
+ "ad6_eviction": {
+  "topic": "Eviction prevalence, record accuracy, tenant screening, contract-for-deed, RealPage, homelessness",
+  "claims": [
+   {
+    "text": "Gromis et al. (PNAS 2022): about 3.6m eviction cases filed a year on average 2000-2018, about 2.7m households (repeat filings); households threatened peaked about 7.5% 2005-2008, about 6% recently",
+    "strength": "reported",
+    "sources": [
+     "ad6_nlihc_pnas"
+    ]
+   },
+   {
+    "text": "Eviction Lab tracking system (48 sites, about one-third of renter households, not nationally representative): 1.23m filings in 2025 vs 1.26m in 2024, 3.2% below the post-pandemic (2023-24) average; average filing rate 8.0%, about one in 13 renter households; Travis County TX +27%",
+    "strength": "primary",
+    "sources": [
+     "ad6_el_2025"
+    ]
+   },
+   {
+    "text": "Porton, Gromis and Desmond (2021): about 22% of eviction records on average in 3.6m records from 12 states contain ambiguous outcome information or misstate the tenant's history",
+    "strength": "reported",
+    "sources": [
+     "ad6_porton"
+    ]
+   },
+   {
+    "text": "CFPB Nov 2022: 'no definitive analysis of the frequency of matching errors'; describes wildcard matching on partial names, over-inclusion, sealed records, one case appearing as two; court-record pulls rarely cost over $1 vs about $7 for manual checks; only 5 of 17 firms advertised manual verification; cites Porton et al. for 22% 'ambiguous or false' and Gromis et al. for 3.6m records; serial filings over 20% of cases in at least four states; corporate landlords file at 'substantially higher' rates (Fed study); about $1.3bn industry revenue estimate",
+    "strength": "primary",
+    "sources": [
+     "ad6_cfpb_tbc"
+    ]
+   },
+   {
+    "text": "FTC/CFPB v. TransUnion Rental Screening Solutions (12 Oct 2023): alleged reporting one eviction case as several, omitting dismissals, labelling landlord claims 'Judgment Amount', including sealed records; $15m total ($11m redress, $4m penalty), largest FTC tenant-screening recovery",
+    "strength": "primary",
+    "sources": [
+     "ad6_ftc_turss"
+    ]
+   },
+   {
+    "text": "Evicted (Desmond, Crown, March 2016; Milwaukee fieldwork 2008-09, eight families) won the 2017 Pulitzer Prize in General Nonfiction; board: evictions 'less a consequence than a cause of poverty'; critics (e.g. Christian Schneider, Milwaukee Journal Sentinel) argued eviction exacerbates existing problems rather than causing poverty",
+    "strength": "reported",
+    "sources": [
+     "ad6_pulitzer",
+     "ad6_wiki_evicted"
+    ]
+   },
+   {
+    "text": "Shelterforce 2018 critique (Aiello et al.): Eviction Lab undercounts evictions by not working with housing-justice groups",
+    "strength": "reported",
+    "sources": [
+     "ad6_shelterforce"
+    ]
+   },
+   {
+    "text": "Duke Cook Center (2019): 75-95% of homes sold to Black families in Chicago in the 1950s-60s sold on contract; 84% markup over sellers' purchase price; $587/month (2019 $) more than a fair FHA/conventional loan; average real markup $71,727 per home; total $3.2-4.0bn (2019 $; also given as $3.1-3.9bn); buyer accrues no equity, missed payment can mean eviction and forfeiture",
+    "strength": "reported",
+    "sources": [
+     "ad6_duke_plunder",
+     "ad6_wbez_plunder"
+    ]
+   },
+   {
+    "text": "Pew (2022 survey): about 36m Americans have used alternative home financing (land contracts etc.), about 7m at the time; deals usually unrecorded, not regulated like mortgages; Pennsylvania AG case: 285 homes ordered deeded to Vision Property Management customers",
+    "strength": "reported",
+    "sources": [
+     "ad6_npr_pew"
+    ]
+   },
+   {
+    "text": "Harbour Portfolio bought foreclosed homes in bulk mostly from Fannie Mae and Freddie Mac and resold them on contracts for deed 2012-2016 to buyers unable to get conventional financing; CFPB June 2020 penalties $25,000 (Harbour) and $10,000 (NAA/NAM) for credit-reporting deception; Atlanta resales $40,000-50,000 at about 10% over 30 years; sales concentrated in tracts 86.25% African American; Atlanta Legal Aid suit settled",
+    "strength": "reported",
+    "sources": [
+     "ad6_cfpb_harbour",
+     "ad6_atlegal_harbour"
+    ]
+   },
+   {
+    "text": "DOJ and 8 states (NC, CA, CO, CT, MN, OR, TN, WA) sued RealPage 23 Aug 2024 in M.D.N.C. under Sherman Act ss.1-2, alleging landlords share nonpublic rent data, auto-accept and advisors enforce adherence; alleged about 80% share of commercial revenue-management software for multifamily",
+    "strength": "primary",
+    "sources": [
+     "ad6_doj_realpage24"
+    ]
+   },
+   {
+    "text": "Proposed DOJ-RealPage settlement 24 Nov 2025: no competitors' nonpublic data in real-time pricing; training only on nonpublic data at least 12 months old; no models narrower than state level; remove features limiting rent decreases; court-appointed monitor; cooperation",
+    "strength": "primary",
+    "sources": [
+     "ad6_doj_realpage25"
+    ]
+   },
+   {
+    "text": "NC federal judge approved DOJ-RealPage final judgment (reported 20 May 2026); no admission of wrongdoing; North Carolina's state case still active",
+    "strength": "reported",
+    "sources": [
+     "ad6_wsoc_realpage"
+    ]
+   },
+   {
+    "text": "Class action (M.D. Tenn., Judge Waverly Crenshaw): final approval of $359,925,000 settlements with 41 landlord defendants, reported 16 Oct 2026",
+    "strength": "reported",
+    "sources": [
+     "ad6_mlex_class"
+    ]
+   },
+   {
+    "text": "New York S.7882 (signed Oct 2025, effective Dec 2025) bans algorithmic rent-setting coordination; SDNY granted RealPage a preliminary injunction on First Amendment grounds (late Sept 2026); case continues",
+    "strength": "reported",
+    "sources": [
+     "ad6_dive_ny"
+    ]
+   },
+   {
+    "text": "HUD Jan 2025 PIT: 745,652 homeless (479,332 sheltered, 266,320 unsheltered), down from 771,480 in 2024; chronically homeless individuals 155,750 a record; veterans 32,495 lowest since 2009; 2016 low 549,928; one-night snapshot; 29 of almost 400 CoCs did no unsheltered count in 2025",
+    "strength": "primary",
+    "sources": [
+     "ad6_crs_homeless26"
+    ]
+   }
+  ],
+  "sources": {
+   "ad6_nlihc_pnas": {
+    "url": "https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually",
+    "label": "NLIHC, 'New Research Finds 2.7 Million Households Receive Eviction Filings Annually' (on Gromis et al., PNAS 2022), 23 May 2022"
+   },
+   "ad6_el_2025": {
+    "url": "https://evictionlab.org/ets-report-2025/",
+    "label": "Eviction Lab, 'Preliminary Analysis: Eviction Filing Patterns in 2025', 16 April 2026"
+   },
+   "ad6_porton": {
+    "url": "https://collaborate.princeton.edu/en/publications/inaccuracies-in-eviction-records-implications-for-renters-and-res/",
+    "label": "Adam Porton, Ashley Gromis and Matthew Desmond, 'Inaccuracies in Eviction Records: Implications for Renters and Researchers', Housing Policy Debate 31(3-5), 2021"
+   },
+   "ad6_cfpb_tbc": {
+    "url": "https://files.consumerfinance.gov/f/documents/cfpb_tenant-background-checks-market_report_2022-11.pdf",
+    "label": "Consumer Financial Protection Bureau, 'Tenant Background Checks Market', November 2022"
+   },
+   "ad6_ftc_turss": {
+    "url": "https://ftc.gov/node/81787",
+    "label": "Federal Trade Commission, press release on FTC and CFPB action against TransUnion Rental Screening Solutions, 12 October 2023"
+   },
+   "ad6_pulitzer": {
+    "url": "https://gobigread.wisc.edu/2017/04/evicted-wins-pulitzer-prize",
+    "label": "University of Wisconsin-Madison Go Big Read, 'Evicted Wins Pulitzer Prize in General Nonfiction', 12 April 2017"
+   },
+   "ad6_wiki_evicted": {
+    "url": "https://en.wikipedia.org/wiki/Evicted:_Poverty_and_Profit_in_the_American_City",
+    "label": "Wikipedia, 'Evicted: Poverty and Profit in the American City' (accessed 22 October 2026)"
+   },
+   "ad6_shelterforce": {
+    "url": "https://www.maxwell.syr.edu/research/article/purser-article-on-problems-with-eviction-lab-published-in-shelterforce",
+    "label": "Maxwell School, Syracuse University, on Aiello, Bates, Graziani, Herring, Maharawal, McElroy, Phan and Purser, 'Eviction Lab Misses the Mark', Shelterforce, August 2018"
+   },
+   "ad6_duke_plunder": {
+    "url": "https://samuelduboiscookcenter.org/wp-content/uploads/2023/08/Plunder-of-Black-Wealth-in-Chicago.pdf",
+    "label": "Samuel DuBois Cook Center on Social Equity, Duke University, with UIC, Roosevelt and Loyola, 'The Plunder of Black Wealth in Chicago', May 2019"
+   },
+   "ad6_wbez_plunder": {
+    "url": "https://wbez.org/money/2019/05/30/contract-buying-robbed-black-families-in-chicago-of-billions",
+    "label": "WBEZ Chicago, 'Contract Buying Robbed Black Families in Chicago of Billions', 30 May 2019"
+   },
+   "ad6_npr_pew": {
+    "url": "https://www.kut.org/2022-04-14/millions-of-americans-are-resorting-to-risky-ways-to-buy-an-affordable-home",
+    "label": "NPR (via KUT), 'Millions of Americans are resorting to risky ways to buy an affordable home', 14 April 2022 (Pew Charitable Trusts survey)"
+   },
+   "ad6_cfpb_harbour": {
+    "url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-settles-companies-engaging-deceptive-acts-practices-violating-credit-reporting-rules/",
+    "label": "CFPB, settlement with Harbour Portfolio Advisors, National Asset Advisors and National Asset Mortgage, 23 June 2020"
+   },
+   "ad6_atlegal_harbour": {
+    "url": "https://atlantalegalaid.org/2018-harbour-portfolio/",
+    "label": "Atlanta Legal Aid Society, 'Harbour Portfolio' case summary (2018)"
+   },
+   "ad6_doj_realpage24": {
+    "url": "https://www.justice.gov/usao-mdnc/pr/justice-department-sues-realpage-algorithmic-pricing-scheme-harms-millions-american",
+    "label": "US Department of Justice, 'Justice Department Sues RealPage for Algorithmic Pricing Scheme that Harms Millions of American Renters', 23 August 2024"
+   },
+   "ad6_doj_realpage25": {
+    "url": "https://www.justice.gov/opa/pr/justice-department-requires-realpage-end-sharing-competitively-sensitive-information-and",
+    "label": "US Department of Justice, press release on proposed RealPage settlement, 24 November 2025"
+   },
+   "ad6_wsoc_realpage": {
+    "url": "https://www.wsoctv.com/news/local/realpage-settles-with-doj-over-rent-pricing-scheme-nc-case-still-active/AKJI2ZH7R5GOHIK3JGVIPKM4HM/",
+    "label": "WSOC-TV Channel 9, 'RealPage settles with DOJ over rent pricing scheme; NC case still active', 20 May 2026"
+   },
+   "ad6_mlex_class": {
+    "url": "https://www.mlex.com/mlex/articles/2539080",
+    "label": "MLex, 'Landlords, US RealPage plaintiffs get final approval for $359m settlement package', 16 October 2026"
+   },
+   "ad6_dive_ny": {
+    "url": "https://www.multifamilydive.com/news/realpage-injunction-new-york-algorithmic-rent-setting-ban/832045/",
+    "label": "Multifamily Dive, 'RealPage gets preliminary injunction against New York rent-setting ban', 2 October 2026"
+   },
+   "ad6_crs_homeless26": {
+    "url": "https://www.everycrsreport.com/files/2026-07-16_IF12985_72d0a36116392bd1d0a8436319884dc54412a17c.html",
+    "label": "Congressional Research Service, IF12985, homelessness PIT data, updated 16 July 2026"
+   }
+  }
  }
 }
