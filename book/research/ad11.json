@@ -1,0 +1,440 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad11_who_pays",
+   "stage": "ad11",
+   "topic": "Who pays: federal, state and local tax distribution; payroll cap; capital gains; Saez-Zucman dispute; 2025 law distribution",
+   "claims": [
+    {
+     "text": "CBO (Sept 2026, 2023 data): average federal tax rates fell for every income group 1979-2023, most for the lowest quintile; individual income tax rates 2023 ranged from -11% (lowest quintile) to 16% (highest); top quintile paid 70% of federal taxes (55% in 1979), top 1% paid 26% (14% in 1979); top 1% share of income after transfers and taxes 7% (1979) to 13% (2023).",
+     "strength": "primary",
+     "sources": [
+      "ad11_cbo_dist2023"
+     ]
+    },
+    {
+     "text": "Tax Foundation reading of CBO 2022 data: average federal tax rate (all federal taxes) lowest quintile 1.4%, highest quintile 23.2%, top 1% 31.5%; payroll tax rate bottom 20% 9.5% vs top 20% 6.1%; individual income tax bottom -10.1%, top 16.6%; lowest quintile federal rate -16.5% (2020), -22.5% (2021); top 1% share of federal taxes 14.1% (1979) to 27.3% (2022); bottom 80% share of federal taxes 44.8% (1979) to 29.6% (2022) while its income share fell 54.6% to 45.1%.",
+     "strength": "reported",
+     "sources": [
+      "ad11_tf_cbo2022"
+     ]
+    },
+    {
+     "text": "CBO total effective federal tax rates by quintile (older CBO method, comprehensive household income): 1979 lowest 8.0, second 14.3, middle 18.6, fourth 21.2, highest 27.5, top 1% 37.0; 2000 lowest 6.4, middle 16.6, highest 28.0, top1 33.0; 2007 lowest 4.0, middle 14.3, highest 25.1, top1 29.5.",
+     "strength": "primary",
+     "sources": [
+      "ad11_tpc_cbo7907"
+     ]
+    },
+    {
+     "text": "ITEP Who Pays 7th ed. (2024 law, 2023 incomes): US average state and local taxes as share of family income: lowest 20% 11.3%, second 10.4%, middle 10.5%, fourth 10.3%, next 15% 9.5%, next 4% 8.3%, top 1% 7.2%; lowest 20% pay 7% in sales/excise, 4.4% property, -0.2% income; top 1% 1%, 1.9%, 4.1%.",
+     "strength": "reported",
+     "sources": [
+      "ad11_itep_wp7"
+     ]
+    },
+    {
+     "text": "ITEP 2024 (all federal, state and local taxes): total effective rates lowest 20% 17.1%, second 22.2%, middle 26.4%, fourth 27.2%, next 15% 28.8%, next 4% 30.1%, top 1% 34.8%, all 29.2%; top 1% receives 20.1% of income and pays 23.9% of all taxes; lowest 20% receives 2.6% and pays 1.5%. ITEP calls the system 'just barely progressive'.",
+     "strength": "reported",
+     "sources": [
+      "ad11_itep_wp2024"
+     ]
+    },
+    {
+     "text": "Saez and Zucman estimated the richest 400 families paid 23% of income in all taxes in 2018 vs 24.2% for the bottom half; TPC (Gleckman) criticised exclusion of refundable credits, extrapolation from older data, small sample; TPC estimated federal rates 2.9% bottom 20%, 30.6% top 0.1%.",
+     "strength": "disputed",
+     "sources": [
+      "ad11_tpc_sz2019"
+     ]
+    },
+    {
+     "text": "Balkir, Saez, Yagan, Zucman (2025): wealthiest ~400 paid about 24% of economic income 2018-2020 vs ~30% for the population; Splinter's adjustments give 38% for the top group and 25% for the population; Cato's Michel cites ranges 38-73% including giving.",
+     "strength": "disputed",
+     "sources": [
+      "ad11_cato_forbes400"
+     ]
+    },
+    {
+     "text": "Social Security tax: 6.2% employee + 6.2% employer on earnings up to $184,500 in 2026 ($176,100 in 2025); Medicare 1.45% each on all earnings; self-employed 15.3%.",
+     "strength": "primary",
+     "sources": [
+      "ad11_ssa_2026"
+     ]
+    },
+    {
+     "text": "2025 long-term capital gains rates: 0%, 15% from $48,350 (single), 20% above $533,400 single / $600,050 married joint; 3.8% net investment income tax can bring top rate to 23.8%.",
+     "strength": "reported",
+     "sources": [
+      "ad11_bti_cg2025"
+     ]
+    },
+    {
+     "text": "CBO on Public Law 119-21 (2025 reconciliation law), 2026-2034: resources decrease for households toward the bottom and increase for the middle and top; excludes debt service and macro effects; in-kind transfers down $900bn mainly Medicaid and SNAP.",
+     "strength": "primary",
+     "sources": [
+      "ad11_cbo_pl11921"
+     ]
+    },
+    {
+     "text": "Reported CBO decile figures (Aug 2025): lowest decile loses about $1,200 a year on average (3.1% of income); fifth and sixth deciles gain $800-$1,200; top decile gains about $13,600 a year.",
+     "strength": "reported",
+     "sources": [
+      "ad11_tr_pl11921"
+     ]
+    },
+    {
+     "text": "2026 EITC two children: earned income amount $18,290, maximum $7,316, phase-out begins $23,890 ($31,160 MFJ), ends $58,629 ($65,899 MFJ); CTC $2,200 per child, $1,700 refundable; standard deduction HoH $24,150.",
+     "strength": "primary",
+     "sources": [
+      "ad11_cftd_rp2532"
+     ]
+    },
+    {
+     "text": "Kenan Tax Center: 2014 IRS top-400 returns reported about $5.68bn salaries and wages, $5.39bn interest, $13.84bn dividends and $76.84bn capital asset sales; results depend on whether EITC, state, payroll and corporate taxes are counted; credits Splinter, with Gerald Auten, for testing all reasonable design choices.",
+     "strength": "reported",
+     "sources": [
+      "ad11_kenan_davids"
+     ]
+    },
+    {
+     "text": "CBO (Sept 2026): transfers and federal taxes reduced income inequality in every year 1979-2023, and the reduction was larger in 2023 than in most years since 1979.",
+     "strength": "primary",
+     "sources": [
+      "ad11_cbo_dist2023"
+     ]
+    },
+    {
+     "text": "ITEP 2024 table (federal / state and local / total, % of income): lowest 20% 3.6/13.5/17.1; second 10.0/12.2/22.2; middle 15.0/11.5/26.4; fourth 16.1/11.1/27.2; next 15% 19.0/9.9/28.8; next 4% 21.5/8.6/30.1; top 1% 25.5/9.2/34.8; all 19.0/10.3/29.2.",
+     "strength": "primary",
+     "sources": [
+      "ad11_itep_wp2024"
+     ]
+    },
+    {
+     "text": "TPC table of CBO total effective federal tax rates (older method), lowest/middle/highest/top 1%: 1982 8.2/17.9/24.4/27.7; 1986 9.6/18.0/23.8/25.5; 1990 8.9/17.9/25.1/28.8; 1993 8.0/17.3/26.8/34.5; 1996 5.6/17.3/28.0/36.0; 2003 4.6/13.8/25.0/31.7.",
+     "strength": "primary",
+     "sources": [
+      "ad11_tpc_cbo7907"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad11_cbo_dist2023",
+     "url": "https://www.cbo.gov/publication/62792",
+     "label": "Congressional Budget Office, 'The Distribution of Household Income, 2023', 24 September 2026"
+    },
+    {
+     "key": "ad11_tf_cbo2022",
+     "url": "https://taxfoundation.org/data/all/federal/us-income-growth-progressive-tax-code-2022/",
+     "label": "Garrett Watson and Emily Kraschel, Tax Foundation, 'After Pandemic Relief Ended, CBO Shows Federal Taxes Remained Progressive in 2022', 16 April 2026"
+    },
+    {
+     "key": "ad11_tpc_cbo7907",
+     "url": "https://www.taxpolicycenter.org/sites/default/files/legacy/taxfacts/content/PDF/effective_rate_historical_all.pdf",
+     "label": "Tax Policy Center (from CBO data), 'Total Effective Federal Tax Rates for All Households, by Comprehensive Household Income Quintile, 1979-2007', table dated 4 April 2011"
+    },
+    {
+     "key": "ad11_itep_wp7",
+     "url": "https://itep.org/u-s-average-who-pays-7th-edition/",
+     "label": "ITEP, 'Who Pays? 7th Edition: U.S. Average' (2024 state and local law at 2023 income levels)"
+    },
+    {
+     "key": "ad11_itep_wp2024",
+     "url": "https://itep.org/who-pays-taxes-in-america-in-2024/",
+     "label": "Steve Wamhoff, ITEP, 'Who Pays Taxes in America in 2024', 9 April 2024"
+    },
+    {
+     "key": "ad11_tpc_sz2019",
+     "url": "https://taxpolicycenter.org/taxvox/are-us-billionaires-really-paying-lower-tax-rate-working-people-probably-not",
+     "label": "Howard Gleckman, Tax Policy Center TaxVox, 'Are US Billionaires Really Paying A Lower Tax Rate Than Working People? Probably Not', 11 October 2019"
+    },
+    {
+     "key": "ad11_cato_forbes400",
+     "url": "https://www.cato.org/blog/whats-tax-rate-forbes-400",
+     "label": "Adam N. Michel, Cato Institute, 'What's the Tax Rate for the Forbes 400?', 9 September 2025"
+    },
+    {
+     "key": "ad11_ssa_2026",
+     "url": "https://www.ssa.gov/cola/factsheets/2026.html",
+     "label": "Social Security Administration, '2026 Social Security Changes' (COLA fact sheet), October 2025"
+    },
+    {
+     "key": "ad11_bti_cg2025",
+     "url": "https://bradfordtaxinstitute.com/Free_Resources/2025-Capital-Gains-Rates.aspx",
+     "label": "Bradford Tax Institute, '2025 Capital Gains Rates'"
+    },
+    {
+     "key": "ad11_cbo_pl11921",
+     "url": "https://www.cbo.gov/publication/61367",
+     "label": "Congressional Budget Office, 'Distributional Effects of Public Law 119-21', letter of 11 August 2025"
+    },
+    {
+     "key": "ad11_tr_pl11921",
+     "url": "https://tax.thomsonreuters.com/news/cbo-analyzes-distributional-effects-of-budget-act/",
+     "label": "Thomson Reuters Checkpoint, 'CBO analyzes distributional effects of budget act', 13 August 2025"
+    },
+    {
+     "key": "ad11_cftd_rp2532",
+     "url": "https://www.currentfederaltaxdevelopments.com/blog/2025/10/9/2026-inflation-adjustments-for-tax-professionals-revenue-procedure-2025-32-analysis",
+     "label": "Current Federal Tax Developments, '2026 Inflation Adjustments for Tax Professionals: Revenue Procedure 2025-32 Analysis', 9 October 2025"
+    },
+    {
+     "key": "ad11_kenan_davids",
+     "url": "https://tax.kenaninstitute.unc.edu/news-media/do-you-pay-less-in-tax-than-the-rich-evidence-from-two-davids",
+     "label": "UNC Kenan Institute Tax Center, 'Do You Pay Less in Tax than the Rich? Evidence from Two Davids' (2019)"
+    }
+   ]
+  },
+  {
+   "id": "ad11_fees",
+   "stage": "ad11",
+   "topic": "Fees everywhere: FTC junk-fee rule, utility shutoffs, fines and fees as local revenue (Ferguson), licence suspensions",
+   "claims": [
+    {
+     "text": "FTC rule on unfair or deceptive fees: announced 17 Dec 2024 (vote 4-1, Commissioner Andrew Ferguson dissenting), effective 12 May 2025; covers live-event tickets (incl. resale) and short-term lodging; requires total price up front; does not ban any type or amount of fee; FTC projected up to 53 million hours a year of consumer time saved, valued at over $11bn over ten years.",
+     "strength": "primary",
+     "sources": [
+      "ad11_ftc_fees2025",
+      "ad11_upi_fees"
+     ]
+    },
+    {
+     "text": "Taxes, shipping and optional add-ons may be excluded from the advertised total but must be disclosed before payment; civil penalties up to $51,744 per violation.",
+     "strength": "reported",
+     "sources": [
+      "ad11_btlaw_fees"
+     ]
+    },
+    {
+     "text": "EIA 2024 Residential Utility Disconnections Report (Apr 2026): 15.1m residential shutoffs in 2024 (13.4m electric, 1.7m gas); 122m final disconnection notices; 12.6m reconnections; survey covers 93.5% of electric and 96.1% of gas customers; first comprehensive federal collection.",
+     "strength": "reported",
+     "sources": [
+      "ad11_iej_shutoffs"
+     ]
+    },
+    {
+     "text": "DOJ Ferguson report (4 Mar 2015): fines and fees $1.38m of $11.07m general fund revenue FY2010; $2.46m collected FY2013; $3.09m budgeted of $13.26m FY2015; over 9,000 warrants issued in 2013; 'focus on revenue rather than by public safety needs'; officials' emails on raising ticket revenue.",
+     "strength": "primary",
+     "sources": [
+      "ad11_doj_ferguson"
+     ]
+    },
+    {
+     "text": "Governing (2019): nearly 600 jurisdictions drew more than 10% of general fund revenue from fines and forfeitures, at least 284 over 20%; Georgetown, La. 92%; median among 50 largest cities 2%; most local governments under 5%; figures are low estimates.",
+     "strength": "reported",
+     "sources": [
+      "ad11_governing_fines"
+     ]
+    },
+    {
+     "text": "NCSL (2024): since 2017 at least 25 states and DC curbed or ended debt-based licence suspensions; nearly 11 million people have faced such suspensions (Michigan law review estimate); NJ study: nearly 45% of suspended drivers lost jobs; Brennan Center 2019: more than 42 cents spent per dollar collected; California on-time collection rose 8.9% after ending suspensions.",
+     "strength": "reported",
+     "sources": [
+      "ad11_ncsl_dl"
+     ]
+    },
+    {
+     "text": "FTC announced 9 April 2026 a $10m settlement (consumer redress) with the largest US ticket-resale platform (filings reference StubHub) under the FTC Act and the Fees Rule, alleging failure to show all-in prices at all stages and deliberate delay in compliance; no admission.",
+     "strength": "reported",
+     "sources": [
+      "ad11_hc_stubhub"
+     ]
+    },
+    {
+     "text": "DOJ Ferguson report: March 2010 finance director email, 'unless ticket writing ramps up significantly before the end of the year'; March 2013, 'I did ask the Chief if he thought the PD could deliver 10% increase'; FY2013 budget projected $2.11m in court revenue and the court collected $2.46m; the court recently eliminated added charges for missed appearances, and the City repealed some fees during the pendency of the investigation.",
+     "strength": "primary",
+     "sources": [
+      "ad11_doj_ferguson"
+     ]
+    },
+    {
+     "text": "NCSL: California, Colorado, Idaho, New Mexico and Virginia are among states that no longer suspend licences for unpaid fines and fees; since 2017 at least 25 states and DC passed largely bipartisan legislation to curb or eliminate such suspensions; California on-time collection improved 8.9% in the year after ending suspensions for failure to pay.",
+     "strength": "primary",
+     "sources": [
+      "ad11_ncsl_dl"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad11_ftc_fees2025",
+     "url": "https://www.ftc.gov/node/88198",
+     "label": "Federal Trade Commission, 'FTC Rule on Unfair or Deceptive Fees to Take Effect on May 12, 2025', 5 May 2025"
+    },
+    {
+     "key": "ad11_upi_fees",
+     "url": "https://www.upi.com/Top_News/US/2024/12/17/Federal-Trade-Commission-junk-fees-Joe-Biden-Lina-Khan/7441734456646/",
+     "label": "UPI, 'FTC finalizes rule banning hidden junk fees for hotels, live events', 17 December 2024"
+    },
+    {
+     "key": "ad11_btlaw_fees",
+     "url": "https://btlaw.com/en/insights/alerts/2025/ftc-finalizes-junk-fees-rule-new-pricing-disclosure-requirements-take-effect-may-12-2025",
+     "label": "Barnes & Thornburg, 'FTC Finalizes Junk Fees Rule; New Pricing Disclosure Requirements Take Effect May 12, 2025', 2025"
+    },
+    {
+     "key": "ad11_iej_shutoffs",
+     "url": "https://iejusa.org/new-data-shows-utilities-carried-out-15-1-million-shutoffs-in-2024/",
+     "label": "Initiative for Energy Justice, 'New Data Shows Utilities Carried Out 15.1 Million Shutoffs in 2024' (on EIA's 2024 Residential Utility Disconnections Report), 3 June 2026"
+    },
+    {
+     "key": "ad11_doj_ferguson",
+     "url": "https://www.justice.gov/usao/moe/news/2015/march/Ferguson%20Police%20Department%20Report.pdf",
+     "label": "US Department of Justice, Civil Rights Division, 'Investigation of the Ferguson Police Department', 4 March 2015"
+    },
+    {
+     "key": "ad11_governing_fines",
+     "url": "https://www.governing.com/archive/gov-addicted-to-fines.html",
+     "label": "Mike Maciag, Governing, 'Addicted to Fines', 19 August 2019"
+    },
+    {
+     "key": "ad11_ncsl_dl",
+     "url": "https://ncsl.org/civil-and-criminal-justice/road-to-reform-state-approaches-to-addressing-debt-based-drivers-license-suspensions",
+     "label": "National Conference of State Legislatures, 'Road to Reform: State Approaches to Addressing Debt-Based Driver's License Suspensions', updated 21 March 2024"
+    },
+    {
+     "key": "ad11_hc_stubhub",
+     "url": "https://hudsoncook.com/article/enforcement-alert-from-hudson-cook-ftc-announces-10-million-settlement-with-ticket-sale-website-for-failing-to-provide-all-in-price-disclosures/",
+     "label": "Hudson Cook, 'FTC Announces $10 Million Settlement with Ticket Sale Website for Failing to Provide All-In Price Disclosures', 10 April 2026"
+    }
+   ]
+  },
+  {
+   "id": "ad11_cliff",
+   "stage": "ad11",
+   "topic": "Benefits cliff: Atlanta Fed CLIFF, ASPE EMTRs, CBO EMTR, SNAP, Medicaid, ACA subsidy cliff, CCDF, EITC counter-evidence",
+   "claims": [
+    {
+     "text": "Atlanta Fed defines a benefits cliff as career advancement leaving a family financially worse off through partial or complete loss of benefits; loss of benefits as income rises acts like an effective marginal tax. Worked example 'Leia', single mother of two in Clarke County, Georgia: concessions worker to CNA path shows a decline of more than $11,000 in net resources over the first three years; CNA to LPN a loss exceeding $35,000 over the first three years; both positive over a lifetime.",
+     "strength": "primary",
+     "sources": [
+      "ad11_atl_what"
+     ]
+    },
+    {
+     "text": "Atlanta Fed (Aug 2026): CCDF childcare eligibility ends at 85% of state median income, a steep cliff in many states; state responses include Florida School Readiness Plus phase-out to 100% SMI, Indiana disregard of up to $15,000 of increased earnings for TANF, Maine 100% earned-income disregard for three months, Colorado and Massachusetts eliminating TANF asset limits, Ohio Benefits Bridge up to $8,000, Tennessee Our Chance TN.",
+     "strength": "primary",
+     "sources": [
+      "ad11_atl_bridge"
+     ]
+    },
+    {
+     "text": "Atlanta Fed cites a 2021 Florida Chamber Foundation survey: about one in three businesses reported employees or candidates declining jobs, hours or advancement for fear of losing benefits.",
+     "strength": "reported",
+     "sources": [
+      "ad11_atl_action"
+     ]
+    },
+    {
+     "text": "ASPE 2019 (TRIM3, 2014 data): CCDF households at 100-149% of poverty face median MTR 67% on a $2,000 raise, 73% on $5,000 (net gain $1,350), 79% on $10,000 (net $2,100); after a $2,000 raise 10% of CCDF households face a cliff (MTR >= 100%), 15% negative MTR; at 100-199% of poverty a $10,000 raise causes 37% to lose the entire subsidy (median loss $4,400).",
+     "strength": "primary",
+     "sources": [
+      "ad11_aspe_ccdf"
+     ]
+    },
+    {
+     "text": "CBO: workers below 450% of poverty guidelines face an average effective marginal tax rate of 31% in 2016 (income and payroll taxes, SNAP phase-out, ACA subsidies); rates vary greatly, especially at low earnings.",
+     "strength": "primary",
+     "sources": [
+      "ad11_cbo_emtr"
+     ]
+    },
+    {
+     "text": "Kleven (2024): 'a strong consensus posits' sizable EITC employment effects; apart from the 1993 federal reform, EITC expansions show no clear robust employment effects; ~500 event-study estimates centred on zero.",
+     "strength": "disputed",
+     "sources": [
+      "ad11_kleven_eitc"
+     ]
+    },
+    {
+     "text": "ACA subsidy cliff returned in 2026 after enhanced credits expired: cutoff $84,600 for a household of two (400% of 2025 FPL); Charleston WV 63-year-old couple at $85,000: lowest-cost Bronze from $0 (2025) to $3,648/month (2026); at $84,500 benchmark silver capped a little under 10% of income (~$700/month).",
+     "strength": "reported",
+     "sources": [
+      "ad11_hi_cliff"
+     ]
+    },
+    {
+     "text": "H.R. 1 SNAP: work requirement extended to ages 18-64 and parent exemption limited to children under 14 (on enactment, 4 July 2025); state share of administrative costs to 75% from 1 Oct 2026; states pay 0-15% of benefits by error rate from FY2028; Thrifty Food Plan re-evaluations cost-neutral.",
+     "strength": "primary",
+     "sources": [
+      "ad11_mn_snap",
+      "ad11_ncsl_snap"
+     ]
+    },
+    {
+     "text": "SNAP FY2027 (48 states and DC): gross monthly limit (130% of poverty) $1,729 for one, $2,960 for three; net limit $1,330 / $2,277; maximum allotment $306 / $808.",
+     "strength": "primary",
+     "sources": [
+      "ad11_fns_fy27"
+     ]
+    },
+    {
+     "text": "SNAP benefit formula assumes households spend 30% of net income on food; gross income generally below 130% FPL, net below 100%.",
+     "strength": "reported",
+     "sources": [
+      "ad11_irp_snap"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad11_atl_what",
+     "url": "https://www.atlantafed.org/what-we-study/workforce-development/advancing-careers-for-low-income-families/what-are-benefits-cliffs",
+     "label": "Federal Reserve Bank of Atlanta, 'What Are Benefits Cliffs?' (Advancing Careers for Low-Income Families)"
+    },
+    {
+     "key": "ad11_atl_bridge",
+     "url": "https://www.atlantafed.org/research-and-data/publications/workforce-currents/2026/08/04/from-barrier-to-bridge-approaches-to-address-benefits-cliffs",
+     "label": "Federal Reserve Bank of Atlanta, Workforce Currents, 'From Barrier to Bridge: Approaches to Address Benefits Cliffs', 4 August 2026"
+    },
+    {
+     "key": "ad11_atl_action",
+     "url": "https://www.atlantafed.org/what-we-study/workforce-development/advancing-careers-for-low-income-families/cliff-in-action",
+     "label": "Federal Reserve Bank of Atlanta, 'CLIFF in Action'"
+    },
+    {
+     "key": "ad11_aspe_ccdf",
+     "url": "https://aspe.hhs.gov/sites/default/files/migrated_legacy_files//187581/brief3-ccdfmtrbrief.pdf",
+     "label": "Nina Chien and Suzanne Macartney, ASPE (HHS), 'Effective Marginal Tax Rates for Households with Child Care Subsidies', Marginal Tax Rate Series Brief 3, March 2019"
+    },
+    {
+     "key": "ad11_cbo_emtr",
+     "url": "https://www.cbo.gov/publication/50923",
+     "label": "Congressional Budget Office, 'Effective Marginal Tax Rates for Low- and Moderate-Income Workers in 2016', 19 November 2015"
+    },
+    {
+     "key": "ad11_kleven_eitc",
+     "url": "https://collaborate.princeton.edu/en/publications/the-eitc-and-the-extensive-margin-a-reappraisal/",
+     "label": "Henrik Kleven, 'The EITC and the Extensive Margin: A Reappraisal', Journal of Public Economics 236 (2024), 105135"
+    },
+    {
+     "key": "ad11_hi_cliff",
+     "url": "https://www.healthinsurance.org/blog/marketplace-enrollees-face-return-of-the-subsidy-cliff/",
+     "label": "Louise Norris, healthinsurance.org, 'Marketplace enrollees face return of the subsidy cliff', 11 February 2026"
+    },
+    {
+     "key": "ad11_mn_snap",
+     "url": "https://dcyf.mn.gov/sites/default/files/2025-08/federal-snap-provisions-mn-impacts-factsheet-20252208.pdf",
+     "label": "Minnesota Department of Children, Youth, and Families, 'Federal SNAP provisions (H.R. 1) and Minnesota impacts' fact sheet, August 2025"
+    },
+    {
+     "key": "ad11_ncsl_snap",
+     "url": "https://www.ncsl.org/snap",
+     "label": "National Conference of State Legislatures, 'Supplemental Nutrition Assistance Program (SNAP)' resource page, 2026"
+    },
+    {
+     "key": "ad11_fns_fy27",
+     "url": "https://www.fna.usda.gov/snap/allotment/cola",
+     "label": "USDA Food and Nutrition Service, 'SNAP Eligibility, Cost-of-Living Adjustment (COLA) Information' (FY2027 standards, effective 1 October 2026)"
+    },
+    {
+     "key": "ad11_irp_snap",
+     "url": "https://www.irp.wisc.edu/publications/policybriefs/pdfs/PB6-SNAP-Basics.pdf",
+     "label": "Institute for Research on Poverty (UW-Madison), Focus on Policy No. 6, 'SNAP Basics', November 2015"
+    }
+   ]
+  }
+ ]
+}

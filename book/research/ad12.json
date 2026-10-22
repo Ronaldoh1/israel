@@ -1,0 +1,349 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad12_wealth",
+   "stage": "ad12",
+   "topic": "Income vs wealth: concentration (DFA), SCF 2025 medians, race ratios, compounding assets",
+   "claims": [
+    {
+     "text": "SCF 2025 Table 2 (thousands of 2025 $), median net worth 2022 to 2025: all 211.1 to 215.9 (SE 8.2, 6.4); under 35 42.7 to 33.0; 35-44 148.4 to 155.6; 45-54 270.6 to 253.7; 55-64 398.9 to 411.9; 65-74 448.6 to 431.3; 75+ 367.3 to 504.9; no HS diploma 41.6 to 18.6; HS 116.9 to 106.7; some college 149.3 to 181.0; college degree 508.5 to 505.4. Race medians White 311.9 to 332.1, Black 49.1 to 36.8, Hispanic 67.4 to 79.6, Asian 586.6 to 677.6; means White 1,694.7, Black 242.4 (2025)",
+     "strength": "primary",
+     "sources": [
+      "ad12_scf25_t2"
+     ]
+    },
+    {
+     "text": "SCF 2025: report says statistical significance 'generally is not addressed'; subgroup standard errors not in the bulletin; stock ownership direct or indirect 58% (2022) to 56% (2025), decline driven by families outside top 10% of income; direct 21% to 19%; homeownership 66.1% to 65.6%; top-decile median net worth $4,935.2k (2025); report finds 'little change in wealth inequality between surveys'",
+     "strength": "primary",
+     "sources": [
+      "ad12_scf25_t2"
+     ]
+    },
+    {
+     "text": "DFA covers 1989Q3 to most recent quarter; groups top 0.1%, next 0.9%, next 9%, next 40%, bottom half; page last updated 18 Sept 2026",
+     "strength": "primary",
+     "sources": [
+      "ad12_dfa_overview"
+     ]
+    },
+    {
+     "text": "DFA via FRED: bottom 50% net worth (millions $, nominal): 1989Q3 717,863; 1990Q3 744,277; 1995Q3 1,024,037; 2000Q3 1,377,520; 2005Q3 1,453,043; 2007Q3 1,327,466; 2009Q1 419,384; 2010Q3 331,082; 2015Q3 923,020; 2019Q3 1,806,135; 2020Q3 2,412,331; 2022Q3 3,619,323; 2024Q3 3,840,483; 2025Q3 4,079,083; 2026Q2 4,278,038",
+     "strength": "primary",
+     "sources": [
+      "ad12_fred_b50nw"
+     ]
+    },
+    {
+     "text": "DFA via FRED: bottom 50% share of total assets: 1989Q3 7.2%; 1992 7.8; 1995 8.6; 1998 7.7; 2001 7.5; 2004 7.0; 2007Q3 7.7; 2009Q1 7.9; 2010Q3 7.3; 2013 6.1; 2016 5.5; 2019 5.7; 2020 5.7; 2022 6.0; 2024 5.4; 2025Q3 5.2; 2026Q2 5.0",
+     "strength": "primary",
+     "sources": [
+      "ad12_fred_b50assets"
+     ]
+    },
+    {
+     "text": "DFA via FRED: top 1% share of financial assets: 1989Q3 25.8%; 1992 25.3; 1995 30.7; 1998 29.9; 2001 27.7; 2004 29.2; 2007Q3 31.2; 2009Q1 28.4; 2010Q3 29.6; 2013 30.2; 2016 32.2; 2019 32.1; 2020 32.2; 2022 33.1; 2024 34.7; 2025Q3 35.5; 2026Q2 36.5",
+     "strength": "primary",
+     "sources": [
+      "ad12_fred_t1fin"
+     ]
+    },
+    {
+     "text": "Top 1% share of household net worth 32.5% in 2026Q2 (DFA release 18 Sept 2026), record; 31.7% in 2026Q1; series low 22.4% in 1990Q3; Fed restates history each release",
+     "strength": "reported",
+     "sources": [
+      "ad12_ttt_top1"
+     ]
+    },
+    {
+     "text": "Bottom 50% share of net worth 2.3% in 2026Q2 (2.4% a year earlier); 3.5% in 1989Q3; high 4.1% 1992Q3; low 0.4% 2010Q4-2012Q1 (DFA via FRED WFRBSB50215)",
+     "strength": "reported",
+     "sources": [
+      "ad12_ad_bottom50"
+     ]
+    },
+    {
+     "text": "TheStreet (Apr 2026) citing Fed data: top 10% hold more than 87% of corporate equity and mutual fund shares; top 1% share 31.7% in 2025Q3 (earlier vintage)",
+     "strength": "reported",
+     "sources": [
+      "ad12_thestreet_eq"
+     ]
+    },
+    {
+     "text": "Fed 2019 SCF note: 2019 medians White $188.2k, Black $24.1k (bounds 19.8-28.4), Hispanic $36.1k; median change 2007-10 White -27.3%, Black -27.7%, Hispanic -26.5%; 2010-13 White +1.4%, Black -23.0%, Hispanic -20.9%; 2013-16 W +16.7 B +25.7 H +45.2; 2016-19 W +3.5 B +32.6 H +64.9; homeownership under 35: White 46%, Black 17%, Hispanic 28%",
+     "strength": "primary",
+     "sources": [
+      "ad12_fed_2019race"
+     ]
+    },
+    {
+     "text": "EPI from SCF, median net worth White/Black: 1989 143,563/8,552; 1992 124,603/17,698; 1995 128,203/18,229; 1998 150,957/24,378; 2001 177,496/27,874; 2004 191,111/27,656; 2007 211,726/25,923; 2010 152,878/18,734; 2013 155,830/14,364; 2016 181,871/18,240; 2019 189,100/24,100",
+     "strength": "primary",
+     "sources": [
+      "ad12_epi_race"
+     ]
+    },
+    {
+     "text": "Pew (SIPP): median household net worth 2005 to 2009 (2009 $): White 134,992 to 113,149 (-16%); Black 12,124 to 5,677 (-53%); Hispanic 18,359 to 6,325 (-66%); Asian 168,103 to 78,066 (-54%); 2005 home equity share of net worth Hispanic ~two-thirds, Black 59%, White 44%; zero/negative net worth 2009 Black 35%, Hispanic 31%, White 15%; main driver falling house values; Hispanics concentrated in CA, FL, NV, AZ",
+     "strength": "primary",
+     "sources": [
+      "ad12_pew2011"
+     ]
+    },
+    {
+     "text": "DFA via FRED (WFRBST01134): top 1% share of household net worth 1989Q3 22.8%; 1990Q3 22.4% (series minimum); 1995 27.3; 2000 27.3; 2005 27.2; 2007 29.0; 2010 28.4; 2013 29.4; 2016 30.7; 2019 30.1; 2020 29.8; 2022 29.3; 2024 30.7; 2025Q3 31.5; 2026Q2 32.5 (record).",
+     "strength": "primary",
+     "sources": [
+      "ad12_audit_fred_t1nw"
+     ]
+    },
+    {
+     "text": "DFA via FRED (WFRBSB50215): bottom 50% share of household net worth 1989Q3 3.5%; 1990 3.5; 1995 3.7; 2000 3.2; 2005 2.5; 2007 2.0; 2010Q3 0.5; minimum 0.4% 2010Q4-2012Q1; 2013 0.9; 2016 1.3; 2019 1.7; 2020 2.1; 2022 2.7; 2024 2.4; 2025Q3 2.4; 2026Q2 2.3.",
+     "strength": "primary",
+     "sources": [
+      "ad12_audit_fred_b50nw"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad12_scf25_t2",
+     "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+     "label": "Federal Reserve Board, 'Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer Finances', Oct 2026, Tables 2-3 and text"
+    },
+    {
+     "key": "ad12_dfa_overview",
+     "url": "https://www.federalreserve.gov/releases/z1/dataviz/dfa",
+     "label": "Federal Reserve Board, Distributional Financial Accounts overview (last update 18 Sept 2026)"
+    },
+    {
+     "key": "ad12_fred_b50nw",
+     "url": "https://fred.stlouisfed.org/data/WFRBLB50107",
+     "label": "Federal Reserve Board DFA via FRED, 'Net Worth Held by the Bottom 50% (1st to 50th Wealth Percentiles)' (WFRBLB50107), millions of dollars, data to 2026Q2"
+    },
+    {
+     "key": "ad12_fred_b50assets",
+     "url": "https://fred.stlouisfed.org/data/WFRBSB50189",
+     "label": "Federal Reserve Board DFA via FRED, 'Share of Total Assets Held by the Bottom 50%' (WFRBSB50189), data to 2026Q2"
+    },
+    {
+     "key": "ad12_fred_t1fin",
+     "url": "https://fred.stlouisfed.org/data/WFRBST01112",
+     "label": "Federal Reserve Board DFA via FRED, 'Share of Financial Assets Held by the Top 1%' (WFRBST01112), data to 2026Q2"
+    },
+    {
+     "key": "ad12_ttt_top1",
+     "url": "https://www.thetrading.tools/chart-of-the-day/2026-09-20-top-1-percent-wealth-share-record",
+     "label": "The Trading Tools, 'Top 1 percent wealth share record', 20 Sept 2026 (compiled from Fed DFA, FRED WFRBST01134, release of 18 Sept 2026)"
+    },
+    {
+     "key": "ad12_ad_bottom50",
+     "url": "https://americandefault.org/indicators/the-bottom-half/",
+     "label": "American Default, 'The bottom half' indicator (compiled from Fed DFA, FRED WFRBSB50215, data to 2026Q2)"
+    },
+    {
+     "key": "ad12_thestreet_eq",
+     "url": "https://finance.yahoo.com/economy/articles/federal-reveals-troubling-reality-wealthy-090300016.html",
+     "label": "Hillary Remy, TheStreet (via Yahoo Finance), 'Federal Reserve reveals troubling reality about wealthy Americans', 11 Apr 2026"
+    },
+    {
+     "key": "ad12_fed_2019race",
+     "url": "https://www.federalreserve.gov/econres/notes/feds-notes/disparities-in-wealth-by-race-and-ethnicity-in-the-2019-survey-of-consumer-finances-accessible-20200928.htm",
+     "label": "Federal Reserve Board, FEDS Notes, 'Disparities in Wealth by Race and Ethnicity in the 2019 Survey of Consumer Finances' (accessible version), 28 Sept 2020"
+    },
+    {
+     "key": "ad12_epi_race",
+     "url": "https://www.epi.org/chart/pree-policy-report-chartbook-median-family-net-worth-by-race-and-ethnicity-selected-years-from-1989-to-2019/",
+     "label": "Economic Policy Institute, median family net worth by race 1989-2019 (from Fed SCF 'Net Worth by Race or Ethnicity'), updated 4 Nov 2021"
+    },
+    {
+     "key": "ad12_pew2011",
+     "url": "https://www.pewresearch.org/social-trends/2011/07/26/wealth-gaps-rise-to-record-highs-between-whites-blacks-hispanics/markdown",
+     "label": "Rakesh Kochhar et al., Pew Research Center, 'Wealth Gaps Rise to Record Highs Between Whites, Blacks, Hispanics', 26 July 2011"
+    },
+    {
+     "key": "ad12_audit_fred_t1nw",
+     "url": "https://fred.stlouisfed.org/data/WFRBST01134",
+     "label": "Federal Reserve Board DFA via FRED, 'Share of Net Worth Held by the Top 1% (99th to 100th Wealth Percentiles)' (WFRBST01134), data to 2026Q2"
+    },
+    {
+     "key": "ad12_audit_fred_b50nw",
+     "url": "https://fred.stlouisfed.org/data/WFRBSB50215",
+     "label": "Federal Reserve Board DFA via FRED, 'Share of Net Worth Held by the Bottom 50% (1st to 50th Wealth Percentiles)' (WFRBSB50215), data to 2026Q2"
+    }
+   ]
+  },
+  {
+   "id": "ad12_inherit",
+   "stage": "ad12",
+   "topic": "Inheritance, estate tax, step-up in basis, buy-borrow-die",
+   "claims": [
+    {
+     "text": "Richmond Fed (SCF 2019, born 1949-72): received any transfer White 34.8%, Black 13.2%; mean if positive $303,100 vs $154,260; median $100,830 vs $74,460; nearly one-third of white recipients got multiple transfers vs 7%; ~5% of white recipients $1m+, virtually no Black; at least half of recipients get first transfer after age 40; 2019 medians $180,400 vs $20,700 (nearly 9x); prior estimates: inheritances 10-20% of gap (1997), transfers 26% (2020 simulation)",
+     "strength": "primary",
+     "sources": [
+      "ad12_richmond_inherit"
+     ]
+    },
+    {
+     "text": "Boston Fed (Thompson and Sabelhaus 2023): transfers explain 14% of white-Black gap without controls; lifetime earnings, pension assets and human capital explain 80%; about one-third of white and 1 in 10 Black families receive any inheritance; more than half of inheritances/gifts under $50,000",
+     "strength": "primary",
+     "sources": [
+      "ad12_bostonfed_inherit"
+     ]
+    },
+    {
+     "text": "CRS: estate tax exemption $675,000 and top rate 55% in 2001; $3.5m and 45% by 2009; 2010 repeal year with carryover-basis option, then $5m/35% (P.L. 111-312); ATRA 2013 permanent, 40%, $5m indexed; TCJA doubled 2018-2025 ($13.99m in 2025); P.L. 119-21 sets $15m from 2026 indexed, rate 40%",
+     "strength": "primary",
+     "sources": [
+      "ad12_crs_estate"
+     ]
+    },
+    {
+     "text": "CRS: taxable estates 5,467 (0.21% of deaths) in 2016, 2,129 (0.07%) in 2019; share of decedents paying fell from 2.1% in 2001; FY2023 revenue $32bn (0.7% of federal revenue); top 10% by income pay 90%, top 1% 65%, top 0.1% 29%; 60% of returns over filing threshold paid no tax in 2019, mainly marital deduction; about 300 business/farm estates taxed",
+     "strength": "primary",
+     "sources": [
+      "ad12_crs_estate"
+     ]
+    },
+    {
+     "text": "CRS step-up: stock bought $100,000, worth $200,000 at death, sold $250,000: heir taxed on $50,000; the $100,000 accrued in life 'never taxed'; under carryover basis gain would be $150,000; CBO: carryover basis would raise $7.2bn FY2024 rising to $26.6bn FY2032; in 2010 carryover elections, 43.6% of estate value was unrealized gain; arguments for and against summarised",
+     "strength": "primary",
+     "sources": [
+      "ad12_crs_estate"
+     ]
+    },
+    {
+     "text": "Yale Budget Lab: buy-borrow-die 'a tax planning technique which allows wealthy Americans to pay low tax rates on consumed income'; loan proceeds work like sale proceeds without tax; Liscow and Fox: borrowing 1% of income of top 0.1% by net worth; borrowing 'a relatively minor source of cash income' in aggregate; reform options raise $102bn-$147bn over ten years",
+     "strength": "primary",
+     "sources": [
+      "ad12_yale_bbd"
+     ]
+    },
+    {
+     "text": "NTU Foundation (Wilford 2021): concedes 'a tax avoidance strategy that some wealthy individuals use', 'not foolproof', borrowing costs interest; argues US taxes income not paper wealth and rejects wealth tax / taxing loans",
+     "strength": "primary",
+     "sources": [
+      "ad12_ntu_bbd"
+     ]
+    },
+    {
+     "text": "ProPublica: 25 richest Americans' wealth grew $401bn 2014-18 (Forbes), they paid $13.6bn federal income tax, 'true tax rate' 3.4% (taxes / wealth growth, ProPublica's own measure); phrase 'buy, borrow, die' attributed to USC law professor Edward McCaffery; Ellison credit line secured by ~$10bn of shares (2014 Oracle disclosure); typical household paid ~14% of income",
+     "strength": "reported",
+     "sources": [
+      "ad12_propublica"
+     ]
+    },
+    {
+     "text": "Richmond Fed EB 22-49 Table 5 (SCF 2019): share receiving any transfer by parental education, White/Black: HS dropout 29.8%/11.8%; HS graduate 31.7%/14.3%; some college 34.7%/8.3%; bachelor's 41.2%/15.5%; authors: 'It is unclear why this effect is so small'; education 'a weak proxy for wealth accumulation among Black families'.",
+     "strength": "primary",
+     "sources": [
+      "ad12_richmond_inherit"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad12_richmond_inherit",
+     "url": "https://www.richmondfed.org/publications/research/economic_brief/2022/eb_22-49",
+     "label": "John Bailey Jones and Urvi Neelakantan, Federal Reserve Bank of Richmond, 'How Big Is the Inheritance Gap Between Black and White Families?', Economic Brief 22-49, 16 Dec 2022"
+    },
+    {
+     "key": "ad12_bostonfed_inherit",
+     "url": "https://www.bostonfed.org/news-and-events/news/2023/03/boston-fed-study-inheritances-contribute-modestly-wealth-gap-white-and-black-families.aspx",
+     "label": "Federal Reserve Bank of Boston, 'New study: Inheritances contribute only modestly to the wealth gap between white and Black families' (Thompson and Sabelhaus), 27 Mar 2023"
+    },
+    {
+     "key": "ad12_crs_estate",
+     "url": "https://www.everycrsreport.com/files/2025-07-14_R48183_605a130ac188191965e7b03e177674168719a0cb.html",
+     "label": "Congressional Research Service, 'The Estate and Gift Tax: An Overview', R48183, updated 14 July 2025"
+    },
+    {
+     "key": "ad12_yale_bbd",
+     "url": "https://budgetlab.yale.edu/research/buy-borrow-die-options-reforming-tax-treatment-borrowing-against-appreciated-assets",
+     "label": "The Budget Lab at Yale, '\"Buy-Borrow-Die\": Options for Reforming the Tax Treatment of Borrowing Against Appreciated Assets', 17 Mar 2025"
+    },
+    {
+     "key": "ad12_ntu_bbd",
+     "url": "https://www.ntu.org/foundation/detail/on-buy-borrow-die",
+     "label": "Andrew Wilford, National Taxpayers Union Foundation, 'On Buy, Borrow, Die', 11 June 2021"
+    },
+    {
+     "key": "ad12_propublica",
+     "url": "https://www.propublica.org/article/the-secret-irs-files-trove-of-never-before-seen-records-reveal-how-the-wealthiest-avoid-income-tax",
+     "label": "Jesse Eisinger, Jeff Ernsthausen and Paul Kiel, ProPublica, 'The Secret IRS Files', 8 June 2021"
+    }
+   ]
+  },
+  {
+   "id": "ad12_2008",
+   "stage": "ad12",
+   "topic": "2008: subprime pricing, DOJ settlements, foreclosures, wealth loss, TARP",
+   "claims": [
+    {
+     "text": "DOJ: Wells Fargo settlement 12 July 2012, more than $175m in relief including $50m direct down-payment assistance; alleged ~4,000 African-American and Hispanic wholesale borrowers steered into subprime 2004-08 while similar white borrowers got prime, and ~30,000 charged higher fees and rates 2004-09; 'second largest fair lending settlement in the department's history'; allegations, release records no admission",
+     "strength": "primary",
+     "sources": [
+      "ad12_doj_wells"
+     ]
+    },
+    {
+     "text": "DOJ: Countrywide (Bank of America subsidiary) $335m, 21 Dec 2011, largest residential fair lending settlement; alleged more than 200,000 African-American and Hispanic borrowers paid higher fees and rates 2004-08 than similar white borrowers; 'thousands' steered to subprime 2004-07; Holder: judgments should rest on 'creditworthiness, not on the color of their skin'",
+     "strength": "primary",
+     "sources": [
+      "ad12_doj_countrywide"
+     ]
+    },
+    {
+     "text": "Bayer-Ferreira-Ross: seven metros 2004-07, credit-repository data; with credit score and risk controls, Black and Hispanic buyers 105% and 78% more likely to have high-cost purchase mortgages; 60-65% from sorting across lenders, 35-40% from differential treatment within lenders; concentrated at high-risk lenders",
+     "strength": "primary",
+     "sources": [
+      "ad12_bfr2018"
+     ]
+    },
+    {
+     "text": "CRL Lost Ground 2011: of loans made 2004-08, 2.7m households had lost homes to foreclosure; ~1 in 4 Black and Hispanic borrowers foreclosed or seriously delinquent vs ~12% white; higher-income borrowers lost homes: Black 10%, Hispanic 15%, white 4.6%; 3.6m more at serious risk",
+     "strength": "reported",
+     "sources": [
+      "ad12_crl_lostground"
+     ]
+    },
+    {
+     "text": "CBO final TARP report (19 Apr 2024): $700bn authorised, $444bn disbursed (about $410bn by Mar 2011), estimated subsidy cost $31bn, driven largely by foreclosure-prevention grant programs, AIG and auto aid; transactions with other financial institutions yielded a net gain; last investment repaid Sept 2023",
+     "strength": "primary",
+     "sources": [
+      "ad12_cbo_tarp"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad12_doj_wells",
+     "url": "https://www.justice.gov/opa/pr/2012/July/12-dag-869.html",
+     "label": "US Department of Justice, press release on Wells Fargo fair lending settlement, 12 July 2012"
+    },
+    {
+     "key": "ad12_doj_countrywide",
+     "url": "https://www.justice.gov/archives/opa/pr/justice-department-reaches-335-million-settlement-resolve-allegations-lending-discrimination",
+     "label": "US Department of Justice, 'Justice Department Reaches $335 Million Settlement to Resolve Allegations of Lending Discrimination by Countrywide Financial Corporation', 21 Dec 2011"
+    },
+    {
+     "key": "ad12_bfr2018",
+     "url": "https://www.nber.org/papers/w22004",
+     "label": "Patrick Bayer, Fernando Ferreira and Stephen L. Ross, 'What Drives Racial and Ethnic Differences in High-Cost Mortgages? The Role of High-Risk Lenders', NBER w22004 (2016); Review of Financial Studies 31(1), 2018"
+    },
+    {
+     "key": "ad12_crl_lostground",
+     "url": "https://archive.publicintegrity.org/inequality-poverty-opportunity/worst-may-be-yet-to-come-in-foreclosure-crisis-study-says",
+     "label": "Center for Public Integrity, 'Worst may be yet to come in foreclosure crisis, study says' (on CRL, Lost Ground, 2011), 16 Nov 2011"
+    },
+    {
+     "key": "ad12_cbo_tarp",
+     "url": "https://www.cbo.gov/publication/59919",
+     "label": "Congressional Budget Office, 'Final Report on the Troubled Asset Relief Program', 19 Apr 2024"
+    }
+   ]
+  }
+ ]
+}

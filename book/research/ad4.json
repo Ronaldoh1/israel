@@ -1,0 +1,434 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad4_wage_split",
+   "stage": "ad4",
+   "topic": "Productivity–pay split since 1973/1979 and the measurement dispute",
+   "claims": [
+    {
+     "text": "EPI (updated 14 Sep 2026): from 1979 Q4 to 2026 Q2 total-economy net productivity rose 93.7% and the hourly compensation of production and nonsupervisory private-sector workers rose 32.7%; productivity 'has grown 2.9x as much as pay'.",
+     "strength": "reported",
+     "sources": [
+      "ad4_epi_gap2026"
+     ]
+    },
+    {
+     "text": "EPI definitions: productivity = output less depreciation per hour, total economy; pay = average hourly compensation (wages plus benefits) of production/nonsupervisory private workers (~80% of private workforce); both deflated by the same spliced CPI series (CPI-U-RS 1978–99, chained CPI-U from 2000).",
+     "strength": "primary",
+     "sources": [
+      "ad4_epi_gap2026"
+     ]
+    },
+    {
+     "text": "EPI index (1948 Q1=100): 1973 Q1 productivity 214.8, pay 193.8; 1979 Q1 221.7/195.1; 1979 Q4 216.8/190.7; 2000 Q1 273.2/196.9; 2020 Q1 373.2/241.0; 2026 Q2 419.9/253.0.",
+     "strength": "primary",
+     "sources": [
+      "ad4_epi_gap2026"
+     ]
+    },
+    {
+     "text": "EPI attributes the gap to policy choices: tolerated excess unemployment, smaller and rarer minimum-wage increases, labor law that 'failed to keep pace', lower top tax rates, deregulation and weaker antitrust.",
+     "strength": "reported",
+     "sources": [
+      "ad4_epi_gap2026"
+     ]
+    },
+    {
+     "text": "Feldstein (NBER w13953, 2008): 1970–2006 nonfarm business productivity rose 1.9%/yr and real compensation per hour 1.7%/yr when both are deflated by the same nonfarm business output price index; employee compensation was 66% of national income in 1970 and 64% in 2006; the two errors he identifies are using wages rather than total compensation and using different deflators.",
+     "strength": "reported",
+     "sources": [
+      "ad4_nber_feldstein"
+     ]
+    },
+    {
+     "text": "BLS Beyond the Numbers (June 2017), 183 industries 1987–2015: productivity outpaced compensation in 83% of industries; in the median industry the output deflator grew about 0.6 point a year slower than the CPI and labor share fell about 0.6% a year — 'the median effect of the change in labor share was the same as that of the difference in deflators.'",
+     "strength": "primary",
+     "sources": [
+      "ad4_bls_btn2017"
+     ]
+    },
+    {
+     "text": "Sherk (Heritage, 17 Jul 2013), 1973–2012: productivity +100%, hourly compensation +77% when measured consistently; attributes 35% of the apparent gap to using wages of a subset of workers instead of total compensation of all, 44% to different inflation measures, 21% to other factors (depreciation, import prices); calls most of the gap 'a statistical illusion'; acknowledges median pay grew more slowly than average productivity.",
+     "strength": "reported",
+     "sources": [
+      "ad4_heritage_sherk"
+     ]
+    },
+    {
+     "text": "Strain (Aspen ESG 2019), citing Stansbury and Summers (2017), 1975–2015: a one-point rise in productivity growth is associated with 0.73 point higher compensation growth for the median worker, 0.74 for average compensation, 0.53 for production/nonsupervisory workers; non-wage compensation rose from about 14% to about 19% of pay; concedes real wage growth of ~0.5%/yr is not strong and gains are unequally distributed.",
+     "strength": "reported",
+     "sources": [
+      "ad4_aspen_strain"
+     ]
+    },
+    {
+     "text": "Strain summarises Lawrence (2016): using total economy and net output reduces the 2013 gap by 20%, using compensation by 8.2%, including managers/professionals explains 30%, deflating by an output price index explains 35%.",
+     "strength": "reported",
+     "sources": [
+      "ad4_aspen_strain"
+     ]
+    },
+    {
+     "text": "Real average hourly earnings peaked in January 1973 at $4.03, equal to $23.68 in 2018 dollars; wages and salaries are about 70% of compensation; since 2000 real usual weekly wages rose 3% for the lowest tenth and 15.7% for the top tenth.",
+     "strength": "reported",
+     "sources": [
+      "ad4_pew_wages2018"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad4_epi_gap2026",
+     "url": "https://www.epi.org/productivity-pay-gap/",
+     "label": "Economic Policy Institute, 'The Productivity–Pay Gap', updated 14 September 2026 (data to 2026 Q2)"
+    },
+    {
+     "key": "ad4_nber_feldstein",
+     "url": "https://www.nber.org/digest/oct08/total-compensation-reflects-growth-productivity",
+     "label": "NBER Digest (Lester Picker), 'Total Compensation Reflects Growth in Productivity', 1 October 2008, summarising Martin Feldstein, NBER Working Paper 13953, 'Did Wages Reflect Growth in Productivity?'"
+    },
+    {
+     "key": "ad4_bls_btn2017",
+     "url": "https://www.bls.gov/opub/btn/volume-6/understanding-the-labor-productivity-and-compensation-gap.htm",
+     "label": "Brill, Holman, Morris, Raichoudhary and Yosif, US Bureau of Labor Statistics, 'Understanding the labor productivity and compensation gap', Beyond the Numbers 6(6), June 2017"
+    },
+    {
+     "key": "ad4_heritage_sherk",
+     "url": "https://www.heritage.org/jobs-and-labor/report/productivity-and-compensation-growing-together",
+     "label": "James Sherk, The Heritage Foundation, 'Productivity and Compensation: Growing Together', 17 July 2013"
+    },
+    {
+     "key": "ad4_aspen_strain",
+     "url": "https://www.economicstrategygroup.org/wp-content/uploads/2019/12/Expanding-Economic-Opportunity-for-More-Americans-The-Link-Between-Wages-and-Productivity-Is-Strong.pdf",
+     "label": "Michael R. Strain (AEI), 'The Link Between Wages and Productivity Is Strong', Aspen Economic Strategy Group, 2019"
+    },
+    {
+     "key": "ad4_pew_wages2018",
+     "url": "https://www.pewresearch.org/short-reads/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/",
+     "label": "Drew DeSilver, Pew Research Center, 'For most U.S. workers, real wages have barely budged for decades', 7 August 2018"
+    }
+   ]
+  },
+  {
+   "id": "ad4_labor_power",
+   "stage": "ad4",
+   "topic": "Union density, PATCO, strikes, labor-law enforcement 1981–2026",
+   "claims": [
+    {
+     "text": "BLS union membership rates (wage and salary workers): all 20.1% (1983), 16.0% (1990), 13.4% (2000), 11.9% (2010), 11.1% (2015); private sector 16.8%, 12.0%, 9.0%, 6.9%, 6.7%; public sector 36.7%, 36.4%, 36.9%, 36.2%, 35.2%. Private-sector members fell from 11.93m (1983) to 7.55m (2015) while wage and salary employment rose from 88.3m to 133.7m.",
+     "strength": "primary",
+     "sources": [
+      "ad4_bls_spotlight2016"
+     ]
+    },
+    {
+     "text": "PATCO members struck at 7 a.m. on 3 August 1981; Reagan gave them 48 hours to return; on 5 August more than 11,000 were fired; federal law (1978) prohibited federal employees from striking; the union was decertified in late 1981.",
+     "strength": "primary",
+     "sources": [
+      "ad4_reagan_patco"
+     ]
+    },
+    {
+     "text": "About 13,000 PATCO members walked out on 3 Aug 1981; Reagan fired the 11,345 who stayed out; PATCO decertified 22 Oct 1981; demands were higher pay, fewer hours, better retirement; a June 1981 tentative deal (up to 11% pay) was rejected by members; PATCO had endorsed Reagan over Carter in 1980.",
+     "strength": "reported",
+     "sources": [
+      "ad4_aba_patco"
+     ]
+    },
+    {
+     "text": "BLS major work stoppages (1,000+ workers): 424 in 1974, 317 in 1973, 235 in 1979, 187 in 1980, 145 in 1981, 54 in 1985, 44 in 1990, 39 in 2000, 5 in 2009 (low), 33 in 2023, 31 in 2024, 30 in 2025.",
+     "strength": "primary",
+     "sources": [
+      "ad4_bls_stoppages"
+     ]
+    },
+    {
+     "text": "NLRB v. Mackay Radio (16 May 1938): an employer 'is not bound to discharge those hired to fill the places of strikers' — permanent replacement of economic strikers lawful since 1938.",
+     "strength": "primary",
+     "sources": [
+      "ad4_mackay_1938"
+     ]
+    },
+    {
+     "text": "EPI (Dec 2019): at least one unfair-labor-practice charge was filed in 41.5% of NLRB-supervised elections in 2016–17 (a charge is an allegation, not a finding); illegal-firing charges in 19.9% (narrow) to 29.6% (broad); 54.4% in units over 60 workers; the NLRA has no civil penalties — fired workers get back pay minus interim earnings; employers spend an estimated nearly $340m a year on union-avoidance consultants.",
+     "strength": "reported",
+     "sources": [
+      "ad4_epi_unlawful"
+     ]
+    },
+    {
+     "text": "Trump v. Slaughter (No. 25-332), decided 29 June 2026, 6–3, opinion by Roberts: for-cause removal protection for FTC commissioners unconstitutional, overruling Humphrey's Executor; Proskauer judges it 'highly likely' the NLRA's removal protection for Board members falls too; Wilcox's challenge to her early-2025 removal appears resolved by it.",
+     "strength": "reported",
+     "sources": [
+      "ad4_proskauer_slaughter"
+     ]
+    },
+    {
+     "text": "NLRB quorum restored 7 Jan 2026 when James Murphy and Scott Mayer were sworn in; Crystal Carey sworn in as General Counsel the same day.",
+     "strength": "reported",
+     "sources": [
+      "ad4_butlersnow_nlrb"
+     ]
+    },
+    {
+     "text": "Senate confirmed James Macy (R, term to Aug 2030) and David Prouty (D, renominated, to Aug 2031) on 7 Aug 2026 in a 74-nominee en bloc package passed 51–47; Board has four members, 3–1 Republican majority, one vacancy.",
+     "strength": "reported",
+     "sources": [
+      "ad4_ogletree_nlrb"
+     ]
+    },
+    {
+     "text": "Farber et al. (QJE 2021), using Gallup and other survey microdata from 1936: US income inequality has varied inversely with union density over 100 years; the household union premium held between 10 and 20 log points despite large changes in density; at the mid-century peak union households were less educated and more nonwhite than others; an instrumental-variable strategy finds 'unions reduce inequality'.",
+     "strength": "reported",
+     "sources": [
+      "ad4_qje_farber"
+     ]
+    },
+    {
+     "text": "Michigan's right-to-work repeal took effect on 13 February 2024, not the earlier expected 30 March 2024, because the legislature adjourned on 14 November 2023 and laws without immediate effect take effect 91 days after adjournment; Indiana's 1965 repeal was the previous one.",
+     "strength": "CONFIRMED",
+     "sources": [
+      "ad4_audit_bt_michigan"
+     ]
+    },
+    {
+     "text": "National Right to Work Committee list (updated May 2026) shows 26 right-to-work states plus Guam; New Hampshire's 2025 right-to-work bill again stalled in the House (no change as of October 2026 found).",
+     "strength": "REPORTED",
+     "sources": [
+      "ad4_audit_nrtw_states"
+     ]
+    },
+    {
+     "text": "BLS major work stoppages (1,000+ workers): 381 in 1970; 7 in 2017; 20 in 2018; 25 in 2019.",
+     "strength": "CONFIRMED",
+     "sources": [
+      "ad4_bls_stoppages"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad4_bls_spotlight2016",
+     "url": "https://www.bls.gov/spotlight/2016/union-membership-in-the-united-states/home.htm",
+     "label": "Megan Dunn and James Walker, US Bureau of Labor Statistics, 'Union Membership in the United States', Spotlight on Statistics, September 2016"
+    },
+    {
+     "key": "ad4_reagan_patco",
+     "url": "https://reagan.blogs.archives.gov/2016/08/03/on-this-day-reagan-and-the-air-traffic-controllers",
+     "label": "Brett Robert, Ronald Reagan Presidential Library (National Archives), 'On This Day: Reagan and the Air Traffic Controllers', 3 August 2016"
+    },
+    {
+     "key": "ad4_aba_patco",
+     "url": "https://www.abajournal.com/magazine/article/august_5_1981_reagan_fires_air_traffic_controllers",
+     "label": "Allen Pusey, ABA Journal, 'August 5, 1981: Reagan fires air traffic controllers', 1 August 2015"
+    },
+    {
+     "key": "ad4_bls_stoppages",
+     "url": "https://www.bls.gov/wsp/factsheets/summary-of-work-stoppages-in-the-united-states.htm",
+     "label": "US Bureau of Labor Statistics, 'Summary of work stoppages in the United States' (major stoppages of 1,000+ workers), fact sheet, accessed October 2026"
+    },
+    {
+     "key": "ad4_mackay_1938",
+     "url": "https://openjurist.org/304/us/333",
+     "label": "NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (16 May 1938), text via OpenJurist"
+    },
+    {
+     "key": "ad4_epi_unlawful",
+     "url": "https://www.epi.org/publication/unlawful-employer-opposition-to-union-election-campaigns/",
+     "label": "Celine McNicholas, Margaret Poydock, Julia Wolfe, Ben Zipperer, Gordon Lafer and Lola Loustaunau, EPI, 'Unlawful: U.S. employers are charged with violating federal law in 41.5% of all union election campaigns', 11 December 2019"
+    },
+    {
+     "key": "ad4_proskauer_slaughter",
+     "url": "https://www.proskauer.com/blog/what-the-supreme-courts-slaughter-decision-means-for-the-nlrb",
+     "label": "Proskauer Rose, 'What the Supreme Court's Slaughter Decision Means for the NLRB', 2 July 2026"
+    },
+    {
+     "key": "ad4_butlersnow_nlrb",
+     "url": "https://www.butlersnow.com/news-and-events/the-nlrb-in-april-2026-operating-again-but-still-in-flux",
+     "label": "Butler Snow, 'The NLRB in April 2026: Operating Again but Still in Flux', 17 April 2026"
+    },
+    {
+     "key": "ad4_ogletree_nlrb",
+     "url": "https://ogletree.com/insights-resources/blog-posts/senate-confirms-2-nlrb-members-creating-3-1-majority/",
+     "label": "Ogletree Deakins, 'Senate Confirms 2 New NLRB Members, Creating 3–1 Majority', August 2026"
+    },
+    {
+     "key": "ad4_qje_farber",
+     "url": "https://academicnewsletter.sufe.edu.cn/info/344922",
+     "label": "Henry S. Farber, Daniel Herbst, Ilyana Kuziemko and Suresh Naidu, 'Unions and Inequality over the Twentieth Century: New Evidence from Survey Data', Quarterly Journal of Economics, 2021, pp. 1325–1385 (abstract)"
+    },
+    {
+     "key": "ad4_audit_bt_michigan",
+     "url": "https://laborandemployment.btlaw.com/post/102ised/michigans-right-to-work-repeal-now-effective-mid-february",
+     "label": "Barnes & Thornburg, 'Michigan's Right-to-Work Repeal Now Effective Mid-February', 13 November 2023"
+    },
+    {
+     "key": "ad4_audit_nrtw_states",
+     "url": "https://nrtw.org/right-to-work-states/",
+     "label": "National Right to Work Committee, 'Right to Work States' (page last modified 11 May 2026)"
+    }
+   ]
+  },
+  {
+   "id": "ad4_shareholder_turn",
+   "stage": "ad4",
+   "topic": "Shareholder primacy, Rule 10b-18, buybacks, CEO pay, 1981/1986 tax laws, Volcker",
+   "claims": [
+    {
+     "text": "Friedman's essay ran in the New York Times Magazine on 13 Sep 1970; it states there is 'one and only one social responsibility of business' — to increase profits 'so long as it stays within the rules of the game' — and that 'a corporate executive is an employee of the owners of the business.'",
+     "strength": "primary",
+     "sources": [
+      "ad4_friedman1970",
+      "ad4_hoover_friedman"
+     ]
+    },
+    {
+     "text": "Jensen and Meckling (Journal of Financial Economics 3(4), 1976) define agency costs arising from the separation of ownership and control and the costs generated by debt and outside equity.",
+     "strength": "primary",
+     "sources": [
+      "ad4_jensen_meckling"
+     ]
+    },
+    {
+     "text": "SEC Rule 10b-18 was adopted in Exchange Act Release No. 19244 (17 Nov 1982), 47 FR 53333 (26 Nov 1982); it provides a safe harbor so that an issuer is not deemed to violate Sections 9(a)(2), 10(b) or Rule 10b-5 solely because of the manner, timing, price or volume of its repurchases if it meets four conditions: one broker per day, no purchases at the open or near the close, price no higher than the highest independent bid or last independent trade, and daily volume generally no more than 25% of average daily trading volume. Compliance is voluntary and there is no presumption that purchases outside it are manipulative; 2003 amendments updated it.",
+     "strength": "primary",
+     "sources": [
+      "ad4_sec_10b18_2003"
+     ]
+    },
+    {
+     "text": "The SEC's 2023 Share Repurchase Disclosure Modernization rules (daily repurchase data, narrative on objectives) were vacated by the Fifth Circuit on 19 Dec 2023 after the SEC failed to cure defects identified on 31 Oct 2023.",
+     "strength": "reported",
+     "sources": [
+      "ad4_debevoise_sec2023"
+     ]
+    },
+    {
+     "text": "S&P 500 buybacks (S&P DJI): 2018 $806.41bn; 2019 $728.74bn; 2020 $519.76bn; 2021 $881.72bn; 2022 $922.68bn; 2023 $795.16bn; 2024 $942.55bn (record); 12 months to Sep 2025 $1.020tn (record); Q3 2025 $249.0bn; top 20 companies 49.5% of Q3 2025 buybacks (historical average 47.8%); 17.1% of companies cut share count used for EPS by at least 4% year on year; dividends 12 months to Sep 2025 $664.9bn; 1% excise tax Q3 2025 $2.25bn (0.36% of operating earnings), 2023 $7.47bn; Silverblatt: 'The 1% tax continues to be a manageable expense and has not impacted overall buybacks.'",
+     "strength": "reported",
+     "sources": [
+      "ad4_spdji_q3_2025"
+     ]
+    },
+    {
+     "text": "EPI realized CEO-to-worker compensation ratio (top 350 firms by sales; 2025 dollars): 20.6 (1965), 30.7 (1978), 379.6 (2000), 290.2 (2024), 324.7 (2025, projected from data through Aug 2025); realized CEO pay +1,316% vs production/nonsupervisory worker pay +28%, 1978–2025; realized pay includes exercised options and vested stock awards; ratio is an average of firm-level ratios.",
+     "strength": "reported",
+     "sources": [
+      "ad4_epi_ceo2025"
+     ]
+    },
+    {
+     "text": "Lazonick (HBR, Sept 2014): 449 S&P 500 companies listed throughout 2003–2012 used 54% of earnings, $2.4 trillion, to buy back their own stock, and a further 37% on dividends.",
+     "strength": "REPORTED",
+     "sources": [
+      "ad4_audit_lazonick"
+     ]
+    },
+    {
+     "text": "Fried and Wang (HBR, Mar–Apr 2018): the commonly cited figure that S&P 500 firms pay out 96% of net income overstates the drain; net of offsetting equity issuance and adding back R&D, shareholder payouts were about 41% of income potentially available for investment; they argue investment is near peak levels and excessive payouts are not the governance problem.",
+     "strength": "REPORTED",
+     "sources": [
+      "ad4_audit_friedwang"
+     ]
+    },
+    {
+     "text": "Kaplan and Rauh (JEP 2013): the rise in top incomes is broad-based across occupations and best explained by scale and skill-biased technological change; the evidence is 'less consistent' with explanations rooted in greater managerial power or changed social norms on executive pay.",
+     "strength": "REPORTED",
+     "sources": [
+      "ad4_audit_kaplanrauh"
+     ]
+    },
+    {
+     "text": "Business Roundtable statement of 19 August 2019, signed by 181 chief executives, committed signers to lead their companies 'for the benefit of all stakeholders', moving away from the Roundtable's earlier shareholder-primacy principles.",
+     "strength": "CONFIRMED",
+     "sources": [
+      "ad4_audit_brt2019"
+     ]
+    },
+    {
+     "text": "Fed Distributional Financial Accounts (FRED, accessed Oct 2026): share of corporate equities and mutual fund shares held by the top 1% by wealth 50.9% in 2026 Q2 (42.8% in 1989 Q3); 90th–99th percentiles 37.2% (38.8% in 1989 Q3); bottom 50% 0.6% (1.1% in 1989 Q3). Top 10% total 88.1% in 2026 Q2 vs 81.6% in 1989 Q3 (book arithmetic).",
+     "strength": "CONFIRMED",
+     "sources": [
+      "ad4_audit_dfa_top1eq",
+      "ad4_audit_dfa_90to99eq",
+      "ad4_audit_dfa_bot50eq"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad4_friedman1970",
+     "url": "https://fermatslibrary.com/s/the-social-responsibility-of-business-is-to-increase-its-profits",
+     "label": "Milton Friedman, 'The Social Responsibility of Business Is to Increase Its Profits', New York Times Magazine, 13 September 1970 (text via Fermat's Library)"
+    },
+    {
+     "key": "ad4_hoover_friedman",
+     "url": "https://www.hoover.org/node/80875",
+     "label": "Hoover Institution, note on Friedman's 13 September 1970 New York Times Magazine essay"
+    },
+    {
+     "key": "ad4_jensen_meckling",
+     "url": "https://papers.ssrn.com/abstract=94043",
+     "label": "Michael C. Jensen and William H. Meckling, 'Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure', Journal of Financial Economics 3(4), 1976 (SSRN 94043)"
+    },
+    {
+     "key": "ad4_sec_10b18_2003",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2003-11-17/pdf/03-28593.pdf",
+     "label": "US Securities and Exchange Commission, 'Purchases of Certain Equity Securities by the Issuer and Others', final rule amending Rule 10b-18, Federal Register, 17 November 2003 (cites the 1982 Adopting Release No. 19244, 17 Nov 1982, 47 FR 53333)"
+    },
+    {
+     "key": "ad4_debevoise_sec2023",
+     "url": "https://www.debevoise.com/insights/publications/2023/12/fifth-circuit-vacates-sec-share-repurchase-rules",
+     "label": "Debevoise & Plimpton, 'Fifth Circuit Vacates SEC Share Repurchase Rules', December 2023"
+    },
+    {
+     "key": "ad4_spdji_q3_2025",
+     "url": "https://press.spglobal.com/2025-12-18-S-P-500-Q3-2025-Buybacks-Post-Modest-6-2-Gain-to-249-0-Billion-After-Declining-20-1-Amidst-Uncertainty-in-Q2-Q4-2025-Expenditures-Expected-to-Post-Similar-Growth,-As-2025-Anticipates-a-Record-1-Trillion",
+     "label": "S&P Dow Jones Indices (Howard Silverblatt), 'S&P 500 Q3 2025 Buybacks Post Modest 6.2% Gain to $249.0 Billion…', press release, 18 December 2025"
+    },
+    {
+     "key": "ad4_epi_ceo2025",
+     "url": "https://www.epi.org/?p=306618",
+     "label": "Economic Policy Institute, 'CEO compensation, CEO-to-worker compensation ratio, and stock prices (2025$), selected years, 1965–2025', 2026"
+    },
+    {
+     "key": "ad4_audit_lazonick",
+     "url": "https://hbr.org/2014/09/profits-without-prosperity",
+     "label": "William Lazonick, 'Profits Without Prosperity', Harvard Business Review, September 2014"
+    },
+    {
+     "key": "ad4_audit_friedwang",
+     "url": "https://hbr.org/2018/03/are-buybacks-really-shortchanging-investment",
+     "label": "Jesse M. Fried and Charles C.Y. Wang, 'Are Buybacks Really Shortchanging Investment?', Harvard Business Review, March–April 2018"
+    },
+    {
+     "key": "ad4_audit_kaplanrauh",
+     "url": "https://ideas.repec.org/a/aea/jecper/v27y2013i3p35-56.html",
+     "label": "Steven N. Kaplan and Joshua Rauh, 'It's the Market: The Broad-Based Rise in the Return to Top Talent', Journal of Economic Perspectives 27(3): 35–56, 2013 (abstract)"
+    },
+    {
+     "key": "ad4_audit_brt2019",
+     "url": "https://www.businessroundtable.org/business-roundtable-redefines-the-purpose-of-a-corporation-to-promote-an-economy-that-serves-all-americans",
+     "label": "Business Roundtable, 'Business Roundtable Redefines the Purpose of a Corporation to Promote ‘An Economy That Serves All Americans’', press release, 19 August 2019"
+    },
+    {
+     "key": "ad4_audit_dfa_top1eq",
+     "url": "https://fred.stlouisfed.org/data/WFRBST01122",
+     "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the Top 1%' (WFRBST01122)"
+    },
+    {
+     "key": "ad4_audit_dfa_90to99eq",
+     "url": "https://fred.stlouisfed.org/data/WFRBSN09149",
+     "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the 90th to 99th Wealth Percentiles' (WFRBSN09149)"
+    },
+    {
+     "key": "ad4_audit_dfa_bot50eq",
+     "url": "https://fred.stlouisfed.org/data/WFRBSB50203",
+     "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the Bottom 50%' (WFRBSB50203)"
+    }
+   ]
+  }
+ ]
+}
