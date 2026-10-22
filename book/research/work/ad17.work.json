@@ -181,5 +181,28 @@
     "label": "HealthCare.gov (CMS), 'Out-of-pocket maximum/limit' glossary, accessed 22 Oct 2026"
    }
   }
+ },
+ "ad17_audit": {
+  "topic": "Audit re-checks for Part Seventeen",
+  "claims": [
+   {
+    "text": "Freddie Mac PMMS (re-checked 22 Oct 2026): 30-year fixed average 7.40% for the week of 15 October 2026, unchanged from the prior week (8 October), against 6.27% a year earlier; 15-year 6.71%. Earlier: 7.28% on 1 October 2026 (7.03% the week before; 6.34% a year earlier). Book arithmetic at 7.40%, 360 months: $369,630 loan (90% of $410,700) = $2,559.24/month, $30,711/yr = 35.1% of $87,460; $309,420 (90% of $343,800) = $2,142.36/month.",
+    "strength": "primary",
+    "sources": [
+     "ad17_audit_pmms",
+     "ad17_audit_te_pmms"
+    ]
+   }
+  ],
+  "sources": {
+   "ad17_audit_pmms": {
+    "url": "https://www.freddiemac.com/pmms",
+    "label": "Freddie Mac, Primary Mortgage Market Survey, release of 15 October 2026 (re-checked 22 October 2026)"
+   },
+   "ad17_audit_te_pmms": {
+    "url": "https://tradingeconomics.com/united-states/30-year-mortgage-rate/news/588887",
+    "label": "Trading Economics, 'US Mortgage Rates Climb Further in October' (Freddie Mac PMMS, week of 1 October 2026)"
+   }
+  }
  }
 }
