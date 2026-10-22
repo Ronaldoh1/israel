@@ -426,5 +426,67 @@
     "label": "KFF Health News, 'Diagnosis: Debt' investigation with NPR and CBS News, landing page (2022-2023)"
    }
   }
+ },
+ "ad8_audit": {
+  "topic": "Audit corrections and status checks, Part Eight",
+  "claims": [
+   {
+    "text": "KFF EHBS 2026: average single deductible $1,955 is for covered workers in plans with a general annual deductible; firms where at least 35% of workers earn $38,000 or less have a family contribution rate of 31% vs 27% at other firms; workers contribute an average $7,471, about 27% of the family premium",
+    "strength": "strong",
+    "sources": [
+     "ad8_kff_ehbs2026"
+    ]
+   },
+   {
+    "text": "Commonwealth Fund 2024 survey: people in employer plans and in the individual market and marketplaces reported significantly higher rates of medical debt than people with Medicaid",
+    "strength": "strong",
+    "sources": [
+     "ad8_cmwf_underins24"
+    ]
+   },
+   {
+    "text": "As of its 21 October 2026 update: the enhanced ACA premium tax credits expired at the end of 2025 and Congress had not passed an extension for 2027; without action the original eligibility rules apply in 2027",
+    "strength": "medium",
+    "sources": [
+     "ad8_audit_hci2027"
+    ]
+   },
+   {
+    "text": "As of 5 October 2026 the Medicaid work requirement start of 1 January 2027 had not been delayed; five governors asked HHS to use enforcement discretion to delay compliance until states can demonstrate readiness, without proposing a replacement date; no HHS decision reported",
+    "strength": "strong",
+    "sources": [
+     "ad8_audit_hfn_gov"
+    ]
+   },
+   {
+    "text": "FTC announced a proposed settlement with Optum Rx on 12 June 2026; as of 20 July 2026 the specific terms had not been publicly released",
+    "strength": "medium",
+    "sources": [
+     "ad8_audit_truveris"
+    ]
+   }
+  ],
+  "sources": {
+   "ad8_kff_ehbs2026": {
+    "url": "https://www.kff.org/health-costs/2026-employer-health-benefits-survey/",
+    "label": "KFF, '2026 Employer Health Benefits Survey', 22 October 2026"
+   },
+   "ad8_cmwf_underins24": {
+    "url": "https://www.commonwealthfund.org/publications/surveys/2024/nov/state-health-insurance-coverage-us-2024-biennial-survey",
+    "label": "Sara R. Collins and Avni Gupta, 'The State of Health Insurance Coverage in the U.S.: Findings from the Commonwealth Fund 2024 Biennial Health Insurance Survey', 21 November 2024"
+   },
+   "ad8_audit_hci2027": {
+    "url": "https://healthcareinsider.com/losing-aca-subsidies-2027",
+    "label": "HealthCare Insider, 'Losing ACA Subsidies in 2027? How to Stay Covered Without Breaking the Bank', updated 21 October 2026"
+   },
+   "ad8_audit_hfn_gov": {
+    "url": "https://www.healthcarefinancenews.com/news/governors-warn-medicaid-deadline-puts-coverage-risk",
+    "label": "Healthcare Finance News, 'Governors warn Medicaid deadline puts coverage at risk', 5 October 2026"
+   },
+   "ad8_audit_truveris": {
+    "url": "https://truveris.com/ftc-settlements-with-esi-cvs-and-optum-rx/",
+    "label": "Truveris, 'FTC Settlements with ESI, CVS, and Optum Rx', 20 July 2026"
+   }
+  }
  }
 }
