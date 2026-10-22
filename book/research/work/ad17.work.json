@@ -52,6 +52,20 @@
     "sources": [
      "ad17_scf25_inc"
     ]
+   },
+   {
+    "text": "Book arithmetic from BLS CE (income before taxes minus total expenditures, % of income), 2020-2024: lowest fifth -117.4, -134.5, -129.8, -116.6, -110.4; second -15.5, -26.3, -27.3, -20.1, -16.6; middle 13.2, 8.7, 5.6, 7.8, 10.2; fourth 26.0, 25.1, 24.6, 24.7, 26.0. 2024 after-tax estimate (2023 income-tax ratios 6.26%/10.42% plus 7.65%/15.3% payroll): middle fifth taxes $9,412 (12.6%), spending excl. personal insurance and pensions $60,652, left $4,410 (5.9%), of which ~$1,500 private pensions/life insurance; fourth fifth taxes $21,222 (17.5%), spending $78,038, left $22,288 (18.3%).",
+    "strength": "primary",
+    "sources": [
+     "ad17_fred_q1inc",
+     "ad17_fred_q1exp",
+     "ad17_fred_q2inc",
+     "ad17_fred_q2exp",
+     "ad17_fred_q3inc",
+     "ad17_fred_q3exp",
+     "ad17_fred_q4inc",
+     "ad17_fred_q4exp"
+    ]
    }
   ],
   "sources": {
