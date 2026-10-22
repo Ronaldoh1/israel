@@ -133,5 +133,154 @@
     "label": "Rakesh Kochhar et al., Pew Research Center, 'Wealth Gaps Rise to Record Highs Between Whites, Blacks, Hispanics', 26 July 2011"
    }
   }
+ },
+ "ad12_inherit": {
+  "topic": "Inheritance, estate tax, step-up in basis, buy-borrow-die",
+  "claims": [
+   {
+    "text": "Richmond Fed (SCF 2019, born 1949-72): received any transfer White 34.8%, Black 13.2%; mean if positive $303,100 vs $154,260; median $100,830 vs $74,460; nearly one-third of white recipients got multiple transfers vs 7%; ~5% of white recipients $1m+, virtually no Black; at least half of recipients get first transfer after age 40; 2019 medians $180,400 vs $20,700 (nearly 9x); prior estimates: inheritances 10-20% of gap (1997), transfers 26% (2020 simulation)",
+    "strength": "primary",
+    "sources": [
+     "ad12_richmond_inherit"
+    ]
+   },
+   {
+    "text": "Boston Fed (Thompson and Sabelhaus 2023): transfers explain 14% of white-Black gap without controls; lifetime earnings, pension assets and human capital explain 80%; about one-third of white and 1 in 10 Black families receive any inheritance; more than half of inheritances/gifts under $50,000",
+    "strength": "primary",
+    "sources": [
+     "ad12_bostonfed_inherit"
+    ]
+   },
+   {
+    "text": "CRS: estate tax exemption $675,000 and top rate 55% in 2001; $3.5m and 45% by 2009; 2010 repeal year with carryover-basis option, then $5m/35% (P.L. 111-312); ATRA 2013 permanent, 40%, $5m indexed; TCJA doubled 2018-2025 ($13.99m in 2025); P.L. 119-21 sets $15m from 2026 indexed, rate 40%",
+    "strength": "primary",
+    "sources": [
+     "ad12_crs_estate"
+    ]
+   },
+   {
+    "text": "CRS: taxable estates 5,467 (0.21% of deaths) in 2016, 2,129 (0.07%) in 2019; share of decedents paying fell from 2.1% in 2001; FY2023 revenue $32bn (0.7% of federal revenue); top 10% by income pay 90%, top 1% 65%, top 0.1% 29%; 60% of returns over filing threshold paid no tax in 2019, mainly marital deduction; about 300 business/farm estates taxed",
+    "strength": "primary",
+    "sources": [
+     "ad12_crs_estate"
+    ]
+   },
+   {
+    "text": "CRS step-up: stock bought $100,000, worth $200,000 at death, sold $250,000: heir taxed on $50,000; the $100,000 accrued in life 'never taxed'; under carryover basis gain would be $150,000; CBO: carryover basis would raise $7.2bn FY2024 rising to $26.6bn FY2032; in 2010 carryover elections, 43.6% of estate value was unrealized gain; arguments for and against summarised",
+    "strength": "primary",
+    "sources": [
+     "ad12_crs_estate"
+    ]
+   },
+   {
+    "text": "Yale Budget Lab: buy-borrow-die 'a tax planning technique which allows wealthy Americans to pay low tax rates on consumed income'; loan proceeds work like sale proceeds without tax; Liscow and Fox: borrowing 1% of income of top 0.1% by net worth; borrowing 'a relatively minor source of cash income' in aggregate; reform options raise $102bn-$147bn over ten years",
+    "strength": "primary",
+    "sources": [
+     "ad12_yale_bbd"
+    ]
+   },
+   {
+    "text": "NTU Foundation (Wilford 2021): concedes 'a tax avoidance strategy that some wealthy individuals use', 'not foolproof', borrowing costs interest; argues US taxes income not paper wealth and rejects wealth tax / taxing loans",
+    "strength": "primary",
+    "sources": [
+     "ad12_ntu_bbd"
+    ]
+   },
+   {
+    "text": "ProPublica: 25 richest Americans' wealth grew $401bn 2014-18 (Forbes), they paid $13.6bn federal income tax, 'true tax rate' 3.4% (taxes / wealth growth, ProPublica's own measure); phrase 'buy, borrow, die' attributed to USC law professor Edward McCaffery; Ellison credit line secured by ~$10bn of shares (2014 Oracle disclosure); typical household paid ~14% of income",
+    "strength": "reported",
+    "sources": [
+     "ad12_propublica"
+    ]
+   }
+  ],
+  "sources": {
+   "ad12_richmond_inherit": {
+    "url": "https://www.richmondfed.org/publications/research/economic_brief/2022/eb_22-49",
+    "label": "John Bailey Jones and Urvi Neelakantan, Federal Reserve Bank of Richmond, 'How Big Is the Inheritance Gap Between Black and White Families?', Economic Brief 22-49, 16 Dec 2022"
+   },
+   "ad12_bostonfed_inherit": {
+    "url": "https://www.bostonfed.org/news-and-events/news/2023/03/boston-fed-study-inheritances-contribute-modestly-wealth-gap-white-and-black-families.aspx",
+    "label": "Federal Reserve Bank of Boston, 'New study: Inheritances contribute only modestly to the wealth gap between white and Black families' (Thompson and Sabelhaus), 27 Mar 2023"
+   },
+   "ad12_crs_estate": {
+    "url": "https://www.everycrsreport.com/files/2025-07-14_R48183_605a130ac188191965e7b03e177674168719a0cb.html",
+    "label": "Congressional Research Service, 'The Estate and Gift Tax: An Overview', R48183, updated 14 July 2025"
+   },
+   "ad12_yale_bbd": {
+    "url": "https://budgetlab.yale.edu/research/buy-borrow-die-options-reforming-tax-treatment-borrowing-against-appreciated-assets",
+    "label": "The Budget Lab at Yale, '\"Buy-Borrow-Die\": Options for Reforming the Tax Treatment of Borrowing Against Appreciated Assets', 17 Mar 2025"
+   },
+   "ad12_ntu_bbd": {
+    "url": "https://www.ntu.org/foundation/detail/on-buy-borrow-die",
+    "label": "Andrew Wilford, National Taxpayers Union Foundation, 'On Buy, Borrow, Die', 11 June 2021"
+   },
+   "ad12_propublica": {
+    "url": "https://www.propublica.org/article/the-secret-irs-files-trove-of-never-before-seen-records-reveal-how-the-wealthiest-avoid-income-tax",
+    "label": "Jesse Eisinger, Jeff Ernsthausen and Paul Kiel, ProPublica, 'The Secret IRS Files', 8 June 2021"
+   }
+  }
+ },
+ "ad12_2008": {
+  "topic": "2008: subprime pricing, DOJ settlements, foreclosures, wealth loss, TARP",
+  "claims": [
+   {
+    "text": "DOJ: Wells Fargo settlement 12 July 2012, more than $175m in relief including $50m direct down-payment assistance; alleged ~4,000 African-American and Hispanic wholesale borrowers steered into subprime 2004-08 while similar white borrowers got prime, and ~30,000 charged higher fees and rates 2004-09; 'second largest fair lending settlement in the department's history'; allegations, release records no admission",
+    "strength": "primary",
+    "sources": [
+     "ad12_doj_wells"
+    ]
+   },
+   {
+    "text": "DOJ: Countrywide (Bank of America subsidiary) $335m, 21 Dec 2011, largest residential fair lending settlement; alleged more than 200,000 African-American and Hispanic borrowers paid higher fees and rates 2004-08 than similar white borrowers; 'thousands' steered to subprime 2004-07; Holder: judgments should rest on 'creditworthiness, not on the color of their skin'",
+    "strength": "primary",
+    "sources": [
+     "ad12_doj_countrywide"
+    ]
+   },
+   {
+    "text": "Bayer-Ferreira-Ross: seven metros 2004-07, credit-repository data; with credit score and risk controls, Black and Hispanic buyers 105% and 78% more likely to have high-cost purchase mortgages; 60-65% from sorting across lenders, 35-40% from differential treatment within lenders; concentrated at high-risk lenders",
+    "strength": "primary",
+    "sources": [
+     "ad12_bfr2018"
+    ]
+   },
+   {
+    "text": "CRL Lost Ground 2011: of loans made 2004-08, 2.7m households had lost homes to foreclosure; ~1 in 4 Black and Hispanic borrowers foreclosed or seriously delinquent vs ~12% white; higher-income borrowers lost homes: Black 10%, Hispanic 15%, white 4.6%; 3.6m more at serious risk",
+    "strength": "reported",
+    "sources": [
+     "ad12_crl_lostground"
+    ]
+   },
+   {
+    "text": "CBO final TARP report (19 Apr 2024): $700bn authorised, $444bn disbursed (about $410bn by Mar 2011), estimated subsidy cost $31bn, driven largely by foreclosure-prevention grant programs, AIG and auto aid; transactions with other financial institutions yielded a net gain; last investment repaid Sept 2023",
+    "strength": "primary",
+    "sources": [
+     "ad12_cbo_tarp"
+    ]
+   }
+  ],
+  "sources": {
+   "ad12_doj_wells": {
+    "url": "https://www.justice.gov/opa/pr/2012/July/12-dag-869.html",
+    "label": "US Department of Justice, press release on Wells Fargo fair lending settlement, 12 July 2012"
+   },
+   "ad12_doj_countrywide": {
+    "url": "https://www.justice.gov/archives/opa/pr/justice-department-reaches-335-million-settlement-resolve-allegations-lending-discrimination",
+    "label": "US Department of Justice, 'Justice Department Reaches $335 Million Settlement to Resolve Allegations of Lending Discrimination by Countrywide Financial Corporation', 21 Dec 2011"
+   },
+   "ad12_bfr2018": {
+    "url": "https://www.nber.org/papers/w22004",
+    "label": "Patrick Bayer, Fernando Ferreira and Stephen L. Ross, 'What Drives Racial and Ethnic Differences in High-Cost Mortgages? The Role of High-Risk Lenders', NBER w22004 (2016); Review of Financial Studies 31(1), 2018"
+   },
+   "ad12_crl_lostground": {
+    "url": "https://archive.publicintegrity.org/inequality-poverty-opportunity/worst-may-be-yet-to-come-in-foreclosure-crisis-study-says",
+    "label": "Center for Public Integrity, 'Worst may be yet to come in foreclosure crisis, study says' (on CRL, Lost Ground, 2011), 16 Nov 2011"
+   },
+   "ad12_cbo_tarp": {
+    "url": "https://www.cbo.gov/publication/59919",
+    "label": "Congressional Budget Office, 'Final Report on the Troubled Asset Relief Program', 19 Apr 2024"
+   }
+  }
  }
 }

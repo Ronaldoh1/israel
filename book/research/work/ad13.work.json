@@ -1,0 +1,341 @@
+{
+ "ad13_black": {
+  "topic": "Black Americans: mobility, wealth, Social Security exclusions, homeownership, education, health",
+  "claims": [
+   {
+    "text": "Chetty et al. (20 million children): Black and American Indian children have substantially lower upward mobility than other groups; Black children of bottom-quintile parents have a 2.5% chance of reaching the top quintile vs 10.6% for whites",
+    "strength": "primary",
+    "sources": [
+     "ad13_oi_race_sum"
+    ]
+   },
+   {
+    "text": "Chetty et al.: Black children raised in top-quintile families are almost as likely to fall to the bottom quintile as to stay at the top; white children are nearly five times as likely to stay as to fall",
+    "strength": "primary",
+    "sources": [
+     "ad13_oi_race_sum"
+    ]
+   },
+   {
+    "text": "Chetty et al.: Black women earn slightly more than white women with the same parent income while Black men earn substantially less; 21% of Black men born to the lowest-income families are incarcerated on a given day; fewer than 5% of Black children grow up in areas with poverty below 10% and more than half of Black fathers present, vs 63% of white children; parental marriage, education, wealth and ability explain very little of the gap; gaps persist on the same block",
+    "strength": "primary",
+    "sources": [
+     "ad13_oi_race_sum"
+    ]
+   },
+   {
+    "text": "Chetty et al.: Hispanic upward mobility slightly below whites and Hispanics on a path to move up substantially; Asian immigrants' children have much higher upward mobility than all other groups; Asian children of US-born parents similar to whites; without change Black and American Indian positions unlikely to change",
+    "strength": "primary",
+    "sources": [
+     "ad13_oi_race_sum"
+    ]
+   },
+   {
+    "text": "DeWitt (SSA, 2010): 1930 Census - about 65% of gainfully employed Black workers (3,564,044 of 5,503,535) were in agriculture or domestic service; the two sectors held 15.5m of 48.8m workers (about 32%); of excluded workers 74% white, 23% Black; 27% of white workers excluded",
+    "strength": "primary",
+    "sources": [
+     "ad13_dewitt"
+    ]
+   },
+   {
+    "text": "DeWitt: exclusion proposed by Treasury Secretary Morgenthau in testimony to House Ways and Means, 5 February 1935, on grounds the Bureau of Internal Revenue doubted it could collect the taxes; CES staff had also recommended it; 1950 amendments covered regularly employed farm and domestic workers, 1954 amendments the rest; DeWitt concludes racial-bias allegations 'do not hold up under detailed scrutiny'",
+    "strength": "primary",
+    "sources": [
+     "ad13_dewitt"
+    ]
+   },
+   {
+    "text": "DeWitt names the racial-motive thesis's proponents: Robert Lieberman (OAI 'founded on racial exclusion'), Linda Gordon ('deliberate and mainly racially motivated'), and Alston and Ferrie (class- and race-based paternalism)",
+    "strength": "primary",
+    "sources": [
+     "ad13_dewitt"
+    ]
+   },
+   {
+    "text": "NYRB 2023: David Kaiser cited DeWitt against the claim that Southern chairmen forced the exclusions; Adam Hochschild replied that he found DeWitt convincing",
+    "strength": "reported",
+    "sources": [
+     "ad13_nyrb_kaiser"
+    ]
+   },
+   {
+    "text": "Derenoncourt, Kim, Kuhn, Schularick (QJE 2024): white-to-Black per capita wealth ratio about 6 to 1; even with equal wealth-building conditions since Emancipation convergence would be distant; convergence stalled after 1950 and the gap has widened since the 1980s as capital gains mainly benefited white households and income convergence stopped",
+    "strength": "primary",
+    "sources": [
+     "ad13_dkks"
+    ]
+   },
+   {
+    "text": "Barsky, Bound, Charles, Lupton (2001/2002): differences in earnings account for roughly two-thirds of the overall Black-white wealth gap using a nonparametric reweighting method; standard Blinder-Oaxaca gives substantially different estimates",
+    "strength": "primary",
+    "sources": [
+     "ad13_barsky"
+    ]
+   },
+   {
+    "text": "Darity, Hamilton et al. (2018) via Fortune: Black households headed by a college graduate hold less wealth than white households headed by someone without a high school diploma; white households with an employed head have more than 10 times the wealth of similar Black households; authors propose baby bonds",
+    "strength": "reported",
+    "sources": [
+     "ad13_fortune_darity"
+    ]
+   },
+   {
+    "text": "Census CPS 2024: 29.6% of Black adults 25+ held a bachelor's degree (8.675m) vs 38.6% of white adults",
+    "strength": "reported",
+    "sources": [
+     "ad13_jbhe_ba"
+    ]
+   },
+   {
+    "text": "NCHS life tables 2024: life expectancy at birth total 79.0; Hispanic 81.8; non-Hispanic AIAN 71.1; non-Hispanic Asian 85.8; non-Hispanic Black 74.8; non-Hispanic white 78.9",
+    "strength": "primary",
+    "sources": [
+     "ad13_nchs_lt2024"
+    ]
+   },
+   {
+    "text": "Census HVS Table 20 (annual): homeownership non-Hispanic white / Black / Hispanic: 1994 70.0/42.3/41.2; 2000 73.8/47.2/46.3; 2004 76.0/49.1/48.1; 2005 75.8/48.2/49.5; US total 64.0 (1994), 69.0 (2004)",
+    "strength": "primary",
+    "sources": [
+     "ad13_census_hvs05"
+    ]
+   },
+   {
+    "text": "EPI from CPS/HVS (rounded): white/Black/Hispanic homeownership 2006 76/48/50; 2010 74/45/48; 2015 72/42/46; 2019 73/42/47; 2020 75/45/50; 2021 74/45/48; AAPI 55 (2016) to 60 (2021)",
+    "strength": "reported",
+    "sources": [
+     "ad13_epi_hvs_race"
+    ]
+   }
+  ],
+  "sources": {
+   "ad13_oi_race_sum": {
+    "url": "https://economics.mit.edu/sites/default/files/2023-07/race_summary.pdf",
+    "label": "Chetty, Hendren, Jones and Porter, 'Race and Economic Opportunity in the United States: An Intergenerational Perspective', executive summary (2018; QJE 2020)"
+   },
+   "ad13_dewitt": {
+    "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html",
+    "label": "Larry DeWitt, 'The Decision to Exclude Agricultural and Domestic Workers from the 1935 Social Security Act', Social Security Bulletin 70(4), 2010"
+   },
+   "ad13_nyrb_kaiser": {
+    "url": "https://www.nybooks.com/articles/2023/06/08/dont-blame-the-southerners/",
+    "label": "David Kaiser, letter, and Adam Hochschild, reply, 'Don't Blame the Southerners', New York Review of Books, 8 June 2023"
+   },
+   "ad13_dkks": {
+    "url": "https://minneapolisfed.org/research/institute-working-papers/wealth-of-two-nations-the-us-racial-wealth-gap-18602020",
+    "label": "Ellora Derenoncourt, Chi Hyun Kim, Moritz Kuhn and Moritz Schularick, 'Wealth of Two Nations: The US Racial Wealth Gap, 1860-2020', Minneapolis Fed Institute WP 59 (June 2022); QJE 139(2), May 2024"
+   },
+   "ad13_barsky": {
+    "url": "https://www.nber.org/papers/w8466",
+    "label": "Robert Barsky, John Bound, Kerwin Charles and Joseph Lupton, 'Accounting for the Black-White Wealth Gap: A Nonparametric Approach', NBER WP 8466 (2001); JASA 2002"
+   },
+   "ad13_fortune_darity": {
+    "url": "https://fortune.com/2018/04/16/racial-inequality-wealth-gap-black-african-americans",
+    "label": "Antonio Moore, Fortune, commentary on Darity, Hamilton et al., 'What We Get Wrong About Closing the Racial Wealth Gap' (Duke Cook Center/Insight, 2018), 16 April 2018"
+   },
+   "ad13_jbhe_ba": {
+    "url": "https://jbhe.com/2025/09/three-in-ten-black-americans-over-age-25-hold-a-bachelors-degree/",
+    "label": "Journal of Blacks in Higher Education, 'Three in Ten Black Americans Over Age 25 Hold a Bachelor's Degree', September 2025 (Census CPS 2024 tables)"
+   },
+   "ad13_nchs_lt2024": {
+    "url": "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-05.pdf",
+    "label": "NCHS, 'United States Life Tables, 2024', National Vital Statistics Reports 75(5), 25 August 2026"
+   },
+   "ad13_census_hvs05": {
+    "url": "https://census.gov/housing/hvs/files/annual05/ann05t20.txt",
+    "label": "US Census Bureau, Housing Vacancies and Homeownership, Annual Statistics 2005, Table 20: homeownership rates by race and ethnicity of householder, 1994-2005"
+   },
+   "ad13_epi_hvs_race": {
+    "url": "https://www.epi.org/chart/figure-a-black-homeownership-rate-still-lags-nearly-30-percentage-points-behind-white-homeownership-rate-homeownership-rates-by-race-and-ethnicity-1994-2021/",
+    "label": "Economic Policy Institute, 'Black homeownership rate still lags nearly 30 percentage points behind white homeownership rate', chart of CPS/HVS homeownership by race and ethnicity, 1994-2021"
+   }
+  }
+ },
+ "ad13_immig": {
+  "topic": "Immigrants and Latino Americans: taxes paid, benefit exclusions, fiscal effects, 2025-26 law",
+  "claims": [
+   {
+    "text": "ITEP: undocumented immigrants paid $96.7bn in federal, state and local taxes in 2022: $59.4bn federal, $37.3bn state and local (nearly 39%)",
+    "strength": "reported",
+    "sources": [
+     "ad13_itep_state",
+     "ad13_itep_sub"
+    ]
+   },
+   {
+    "text": "ITEP: of the federal total, $25.7bn Social Security, $6.4bn Medicare and $1.8bn unemployment insurance taxes, funding programmes these workers are barred from",
+    "strength": "reported",
+    "sources": [
+     "ad13_itep_sub"
+    ]
+   },
+   {
+    "text": "ITEP: in 40 states undocumented immigrants pay higher state and local tax rates than the top 1% there; more than a third of their taxes are payroll taxes for Social Security and Medicare they cannot access; they often cannot claim the CTC and EITC; work authorisation would raise payments by $40.2bn to $136.9bn",
+    "strength": "reported",
+    "sources": [
+     "ad13_itep_pr"
+    ]
+   },
+   {
+    "text": "NASEM 2016: first-generation immigrants are more costly to governments, mainly at state and local level, than the native-born; the second generation are among the strongest fiscal contributors, contributing the most of any generation to state balance sheets; wage effects, where found, fall on native-born high-school dropouts and prior immigrants",
+    "strength": "primary",
+    "sources": [
+     "ad13_nasem"
+    ]
+   },
+   {
+    "text": "OBBBA (signed 4 July 2025) per USCCB summary: 1% excise tax on cash/money-order remittances from 1 January 2026 (bank account and card transfers exempt); CTC requires the filer or one spouse to have an SSN; SNAP eligibility ended for refugees, asylees and others; Medicaid/CHIP limited to green-card holders, Cuban/Haitian entrants and COFA migrants from 1 October 2026; ACA premium credits limited from 1 January 2027; Medicare limited similarly",
+    "strength": "reported",
+    "sources": [
+     "ad13_usccb_obbba"
+    ]
+   },
+   {
+    "text": "PNPI: Latino adults 25+ with a bachelor's degree 20.8% in 2023, up from 14.0% in 2013 (national 36.2%); 32.8% of Latinos 18-24 enrolled in college in 2022 vs 39.0% overall; Latino enrolment 2.98m (fall 2012) to 3.78m",
+    "strength": "reported",
+    "sources": [
+     "ad13_pnpi_latino"
+    ]
+   }
+  ],
+  "sources": {
+   "ad13_itep_state": {
+    "url": "https://itep.org/undocumented-immigrants-taxes-by-state/",
+    "label": "ITEP Staff, 'Tax Payments by Undocumented Immigrants' (state data page), 30 July/1 August 2024"
+   },
+   "ad13_itep_sub": {
+    "url": "https://itep.substack.com/p/tax-payments-by-undocumented-immigrants",
+    "label": "ITEP, 'Tax Payments by Undocumented Immigrants', Just Taxes (Substack), 3 April 2025, summarising the 2024 report"
+   },
+   "ad13_itep_pr": {
+    "url": "https://itep.org/study-undocumented-immigrants-contribute-nearly-100-billion-in-taxes-a-year/",
+    "label": "ITEP, 'Study: Undocumented Immigrants Contribute Nearly $100 Billion in Taxes a Year', press release, 30 July 2024"
+   },
+   "ad13_nasem": {
+    "url": "https://www.nationalacademies.org/news/2016/09/new-report-assesses-the-economic-and-fiscal-consequences-of-immigration",
+    "label": "National Academies of Sciences, Engineering, and Medicine, 'New Report Assesses the Economic and Fiscal Consequences of Immigration', 21 September 2016"
+   },
+   "ad13_usccb_obbba": {
+    "url": "https://www.usccb.org/resources/Reconciliation Migration Summary.pdf",
+    "label": "US Conference of Catholic Bishops, Migration and Refugee Services, 'Reconciliation Migration Summary' (provisions of Public Law 119-21 signed 4 July 2025)"
+   },
+   "ad13_pnpi_latino": {
+    "url": "https://pnpi.org/wp-content/uploads/2025/05/LatinoStudents_FactSheet_Apr25.pdf",
+    "label": "Postsecondary National Policy Institute, 'Latino Students' fact sheet, April 2025 (Census ACS/CPS; NCES Digest)"
+   }
+  }
+ },
+ "ad13_asian_native": {
+  "topic": "Asian Americans (inequality, subgroups, model minority) and Native Americans (Dawes, Cobell, trust-land lending, poverty, health)",
+  "claims": [
+   {
+    "text": "Pew 2018: 90/10 income ratio among Asians 10.7 in 2016, up 77% since 1970 (implying about 6.0); Blacks 9.8, whites 7.8, Hispanics 7.8; Asians at 90th percentile earned 13% more than whites, at the 10th percentile 17% less (8% more in 1970); median annual income 2016 Asians $51,288, whites $47,958, Blacks $31,082, Hispanics $30,400",
+    "strength": "primary",
+    "sources": [
+     "ad13_pew_ineq"
+    ]
+   },
+   {
+    "text": "Pew 2018: immigrants accounted for 81% of Asian adult population growth 1970-2016 after the 1965 Immigration and Nationality Act; bachelor's attainment ranged from 9% (Bhutanese) to 72% (Indians); median household income from $36,000 (Burmese) to $100,000 (Indians)",
+    "strength": "primary",
+    "sources": [
+     "ad13_pew_ineq"
+    ]
+   },
+   {
+    "text": "Pew (2022 ACS) via NPR: about 1 in 10 Asian Americans in poverty; Burmese 19%, Hmong about 17%, Mongolian about 16%; Indian about 6%; Filipino, Japanese, Nepalese, Sri Lankan 6-9%",
+    "strength": "reported",
+    "sources": [
+     "ad13_npr_pew_pov"
+    ]
+   },
+   {
+    "text": "William Petersen, 'Success Story, Japanese-American Style', NYT Magazine 9 January 1966, among articles that introduced the 'model minority' concept; credited cultural values and contrasted Japanese Americans with African Americans; scholars argue the concept was used to criticise social programmes",
+    "strength": "reported",
+    "sources": [
+     "ad13_densho_petersen"
+    ]
+   },
+   {
+    "text": "Dawes Act (1887): heads of families allotted 160 acres, others up to 80, title held in trust 25 years; 'surplus' land sold to non-Indians; Indian-held land fell from 138 million to 48 million acres by 1934 when allotment stopped; almost half of the remainder arid or semiarid",
+    "strength": "reported",
+    "sources": [
+     "ad13_gp_dawes"
+    ]
+   },
+   {
+    "text": "Cobell settlement $3.4bn: $1.5bn for accounting and trust mismanagement claims, $1.9bn land consolidation fund buying fractionated interests (up to $60m scholarships); nearly 500,000 class members; Claims Resolution Act passed 30 Nov 2010, signed 8 Dec 2010; court approval 4 Aug 2011; final 24 Nov 2012; over 2.9m fractional interests owned by about 220,000 individuals",
+    "strength": "primary",
+    "sources": [
+     "ad13_doi_cobell"
+    ]
+   },
+   {
+    "text": "HAC: reservation trust land cannot be sold or used as mortgage collateral; borrowers hold leaseholds; BIA review; reservation poverty 29.2% vs 15.5% nationally; 2015 HMDA loans 22.3 per 1,000 US residents vs 1.9 per 1,000 reservation residents; on-reservation Native denial rate 46% vs 29%; manufactured homes 39% of on-reservation applications vs 7%; Section 184 (1992) guarantees, >90% of loans off-reservation, fewer than 200 reservation loans a year 2005-2016",
+    "strength": "reported",
+    "sources": [
+     "ad13_hac_trust"
+    ]
+   },
+   {
+    "text": "Minneapolis Fed 2018: AIAN manufactured-home loan denial rate about 75% in mostly on-reservation tracts (2015-16) vs about 25% for site-built; manufactured-home share of AIAN applications about 30% off-reservation vs over 75% on-reservation; chattel loan APR about 1.5 points above mortgages (CFPB); trust status may partly explain, not concluded",
+    "strength": "primary",
+    "sources": [
+     "ad13_mplsfed_mh"
+    ]
+   },
+   {
+    "text": "USAFacts (Census, 2024): poverty rate American Indian and Alaska Native 19.3%, highest of groups listed; Asian 7.5%",
+    "strength": "reported",
+    "sources": [
+     "ad13_usafacts_pov"
+    ]
+   },
+   {
+    "text": "Census 2025: 7.7m AIAN alone or in combination (2024); 574 federally recognised tribes; 325 federally recognised reservations",
+    "strength": "primary",
+    "sources": [
+     "ad13_census_aian25"
+    ]
+   }
+  ],
+  "sources": {
+   "ad13_pew_ineq": {
+    "url": "https://www.pewresearch.org/short-reads/2018/07/12/key-findings-on-the-rise-in-income-inequality-within-americas-racial-and-ethnic-groups/markdown",
+    "label": "Rakesh Kochhar and Anthony Cilluffo, Pew Research Center, 'Key findings on the rise in income inequality within America's racial and ethnic groups', 12 July 2018"
+   },
+   "ad13_npr_pew_pov": {
+    "url": "https://npr.org/2024/03/27/1240606860/asian-americans-poverty-pew-research",
+    "label": "NPR, '1 in 10 Asian Americans live in poverty. Their experiences vary widely, research says', 27 March 2024 (Pew Research Center analysis of 2022 ACS)"
+   },
+   "ad13_densho_petersen": {
+    "url": "https://encyclopedia.densho.org/Success%20Story,%20Japanese%20American%20Style%20(article)/",
+    "label": "Brian Niiya, Densho Encyclopedia, 'Success Story, Japanese American Style (article)' (William Petersen, New York Times Magazine, 9 January 1966)"
+   },
+   "ad13_gp_dawes": {
+    "url": "https://plainshumanities.unl.edu/encyclopedia/doc/egp.law.015.html",
+    "label": "Mark R. Scherer, Encyclopedia of the Great Plains (University of Nebraska-Lincoln), 'Dawes Act (General Allotment Act)'"
+   },
+   "ad13_doi_cobell": {
+    "url": "https://www.doi.gov/news/pressreleases/salazar-announces-final-steps-on-cobell-litigation-and-implementation-of-settlement",
+    "label": "US Department of the Interior, 'Salazar Announces Final Steps on Cobell Litigation and Implementation of Settlement', 26 November 2012"
+   },
+   "ad13_hac_trust": {
+    "url": "https://ruralhome.org/wp-content/uploads/storage/documents/publications/rrreports/rrr-native-american-mortgage-whitepaper-ES.pdf",
+    "label": "Housing Assistance Council, 'Mortgage Lending on Tribal Land' executive summary (c. 2017; HMDA 2015 and ACS data)"
+   },
+   "ad13_mplsfed_mh": {
+    "url": "https://www.minneapolisfed.org/article/2018/race-location-and-manufactured-home-loans-on-american-indian-reservations",
+    "label": "Richard M. Todd and Kevin Johnson, Federal Reserve Bank of Minneapolis (Center for Indian Country Development), 'Race, location, and manufactured home loans on American Indian reservations', 4 December 2018"
+   },
+   "ad13_usafacts_pov": {
+    "url": "https://usafacts.org/answers/what-is-the-us-poverty-rate/country/united-states/",
+    "label": "USAFacts, 'What is the poverty rate?' (US Census Bureau data, 2024)"
+   },
+   "ad13_census_aian25": {
+    "url": "https://www.census.gov/newsroom/facts-for-features/2025/aian-month.html",
+    "label": "US Census Bureau, Facts for Features, 'National Native American Heritage Month: November 2025'"
+   }
+  }
+ }
+}
