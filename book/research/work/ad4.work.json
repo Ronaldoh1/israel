@@ -1,0 +1,103 @@
+{
+ "ad4_wage_split": {
+  "topic": "Productivity–pay split since 1973/1979 and the measurement dispute",
+  "claims": [
+   {
+    "text": "EPI (updated 14 Sep 2026): from 1979 Q4 to 2026 Q2 total-economy net productivity rose 93.7% and the hourly compensation of production and nonsupervisory private-sector workers rose 32.7%; productivity 'has grown 2.9x as much as pay'.",
+    "strength": "reported",
+    "sources": [
+     "ad4_epi_gap2026"
+    ]
+   },
+   {
+    "text": "EPI definitions: productivity = output less depreciation per hour, total economy; pay = average hourly compensation (wages plus benefits) of production/nonsupervisory private workers (~80% of private workforce); both deflated by the same spliced CPI series (CPI-U-RS 1978–99, chained CPI-U from 2000).",
+    "strength": "primary",
+    "sources": [
+     "ad4_epi_gap2026"
+    ]
+   },
+   {
+    "text": "EPI index (1948 Q1=100): 1973 Q1 productivity 214.8, pay 193.8; 1979 Q1 221.7/195.1; 1979 Q4 216.8/190.7; 2000 Q1 273.2/196.9; 2020 Q1 373.2/241.0; 2026 Q2 419.9/253.0.",
+    "strength": "primary",
+    "sources": [
+     "ad4_epi_gap2026"
+    ]
+   },
+   {
+    "text": "EPI attributes the gap to policy choices: tolerated excess unemployment, smaller and rarer minimum-wage increases, labor law that 'failed to keep pace', lower top tax rates, deregulation and weaker antitrust.",
+    "strength": "reported",
+    "sources": [
+     "ad4_epi_gap2026"
+    ]
+   },
+   {
+    "text": "Feldstein (NBER w13953, 2008): 1970–2006 nonfarm business productivity rose 1.9%/yr and real compensation per hour 1.7%/yr when both are deflated by the same nonfarm business output price index; employee compensation was 66% of national income in 1970 and 64% in 2006; the two errors he identifies are using wages rather than total compensation and using different deflators.",
+    "strength": "reported",
+    "sources": [
+     "ad4_nber_feldstein"
+    ]
+   },
+   {
+    "text": "BLS Beyond the Numbers (June 2017), 183 industries 1987–2015: productivity outpaced compensation in 83% of industries; in the median industry the output deflator grew about 0.6 point a year slower than the CPI and labor share fell about 0.6% a year — 'the median effect of the change in labor share was the same as that of the difference in deflators.'",
+    "strength": "primary",
+    "sources": [
+     "ad4_bls_btn2017"
+    ]
+   },
+   {
+    "text": "Sherk (Heritage, 17 Jul 2013), 1973–2012: productivity +100%, hourly compensation +77% when measured consistently; attributes 35% of the apparent gap to using wages of a subset of workers instead of total compensation of all, 44% to different inflation measures, 21% to other factors (depreciation, import prices); calls most of the gap 'a statistical illusion'; acknowledges median pay grew more slowly than average productivity.",
+    "strength": "reported",
+    "sources": [
+     "ad4_heritage_sherk"
+    ]
+   },
+   {
+    "text": "Strain (Aspen ESG 2019), citing Stansbury and Summers (2017), 1975–2015: a one-point rise in productivity growth is associated with 0.73 point higher compensation growth for the median worker, 0.74 for average compensation, 0.53 for production/nonsupervisory workers; non-wage compensation rose from about 14% to about 19% of pay; concedes real wage growth of ~0.5%/yr is not strong and gains are unequally distributed.",
+    "strength": "reported",
+    "sources": [
+     "ad4_aspen_strain"
+    ]
+   },
+   {
+    "text": "Strain summarises Lawrence (2016): using total economy and net output reduces the 2013 gap by 20%, using compensation by 8.2%, including managers/professionals explains 30%, deflating by an output price index explains 35%.",
+    "strength": "reported",
+    "sources": [
+     "ad4_aspen_strain"
+    ]
+   },
+   {
+    "text": "Real average hourly earnings peaked in January 1973 at $4.03, equal to $23.68 in 2018 dollars; wages and salaries are about 70% of compensation; since 2000 real usual weekly wages rose 3% for the lowest tenth and 15.7% for the top tenth.",
+    "strength": "reported",
+    "sources": [
+     "ad4_pew_wages2018"
+    ]
+   }
+  ],
+  "sources": {
+   "ad4_epi_gap2026": {
+    "url": "https://www.epi.org/productivity-pay-gap/",
+    "label": "Economic Policy Institute, 'The Productivity–Pay Gap', updated 14 September 2026 (data to 2026 Q2)"
+   },
+   "ad4_nber_feldstein": {
+    "url": "https://www.nber.org/digest/oct08/total-compensation-reflects-growth-productivity",
+    "label": "NBER Digest (Lester Picker), 'Total Compensation Reflects Growth in Productivity', 1 October 2008, summarising Martin Feldstein, NBER Working Paper 13953, 'Did Wages Reflect Growth in Productivity?'"
+   },
+   "ad4_bls_btn2017": {
+    "url": "https://www.bls.gov/opub/btn/volume-6/understanding-the-labor-productivity-and-compensation-gap.htm",
+    "label": "Brill, Holman, Morris, Raichoudhary and Yosif, US Bureau of Labor Statistics, 'Understanding the labor productivity and compensation gap', Beyond the Numbers 6(6), June 2017"
+   },
+   "ad4_heritage_sherk": {
+    "url": "https://www.heritage.org/jobs-and-labor/report/productivity-and-compensation-growing-together",
+    "label": "James Sherk, The Heritage Foundation, 'Productivity and Compensation: Growing Together', 17 July 2013"
+   },
+   "ad4_aspen_strain": {
+    "url": "https://www.economicstrategygroup.org/wp-content/uploads/2019/12/Expanding-Economic-Opportunity-for-More-Americans-The-Link-Between-Wages-and-Productivity-Is-Strong.pdf",
+    "label": "Michael R. Strain (AEI), 'The Link Between Wages and Productivity Is Strong', Aspen Economic Strategy Group, 2019"
+   },
+   "ad4_pew_wages2018": {
+    "url": "https://www.pewresearch.org/short-reads/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/",
+    "label": "Drew DeSilver, Pew Research Center, 'For most U.S. workers, real wages have barely budged for decades', 7 August 2018"
+   }
+  }
+ }
+}
