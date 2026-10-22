@@ -6641,7 +6641,7 @@ body.book-open #libBanner{display:none}
     return '<div class="bk-key" aria-label="Key">' + a.concat(b).join('') + '</div>';
   }
 
-  /* ---------- front matter: title page, credits, contents, method, how to read the figures ---------- */
+  /* ---------- front matter: title page, credits, contents, how to read the figures ---------- */
   function frontMatter(){
     var au = LIB.author || 'Ron Hernandez', P = paginate(BOOK), h = '';
     h += '<div class="bk-bt bk-full bk-leaf" id="bk-title">' + cover(BOOK) + '<p class="t1">The Israel Architecture · Volume ' + roman(BOOK.vol) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="by">by <b>' + esc(au) + '</b></p><p class="pub">Observe The System</p></div>';
@@ -6651,7 +6651,6 @@ body.book-open #libBanner{display:none}
       '<p class="rl">Published by</p><p>Observe The System, with Sophia</p>' +
       '<p class="rl">Follow</p><p>TikTok @awakenwithsophia<br>Instagram @chosen.ron13</p>' +
       '<p class="rl">This edition</p><p class="sm">' + esc(LIB.edition || '') + '. It reflects the documented record as researched to that date, and is updated as new documents and corrections come in.</p>' +
-      '<p class="rl">Research assistance</p><p class="sm">Research and drafting were assisted by Claude, an AI model made by Anthropic. Every claim is tied to a cited source, and the sources are listed at the end of each ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + '.</p>' +
       '<p class="rl">Corrections</p><p class="sm">If you find an error, send it with your source to @chosen.ron13. Each correction is checked against the documents; if it holds, the text is changed.</p></section>';
     h += '<section class="bk-fm bk-leaf" id="bk-contents" aria-label="Contents"><h2>Contents</h2><ol class="bk-cn">' +
       (BOOK.intro ? '<li><button class="r" type="button" data-go-id="intro"><span class="t">Introduction</span><span class="ld"></span><span class="pg">1</span></button></li>' : '') +
@@ -6659,16 +6658,7 @@ body.book-open #libBanner{display:none}
         return '<li><small class="cl">' + esc(c.label) + ' · ' + esc(c.span) + '</small><button class="r" type="button" data-ch="' + k + '"><span class="t">' + esc(c.title) + '</span><span class="ld"></span><span class="pg">' + P.ch[k].start + '</span></button>' + (d ? '<p class="d">' + esc(d) + '</p>' : '') +
           '<ol>' + c.sections.map(function(x){ return '<li><button class="r" type="button" data-go="' + esc(x.s) + '"><span class="t">' + esc(plain(x.h)) + '</span><span class="ld"></span><span class="pg">' + P.sec[x.s].start + '</span></button></li>'; }).join('') + '</ol></li>'; }).join('') +
       '</ol><p class="d" style="margin-top:1em">Page numbers count a printed page of about 300 words, so they are the same on every screen.</p></section>';
-    h += '<section class="bk-fm bk-meth bk-leaf" id="bk-method" aria-label="How this book was researched"><h2>How this book was researched</h2><p>This book follows one rule: the research comes before the judgment. No subject is ruled in or out before its documents have been read. Each claim is checked on its own, and the text tells you how firm it is.</p><dl>' + [
-      ['Documents first', 'Wherever possible the book rests on the primary record: letters, treaties, cabinet papers, laws, court rulings and official statistics. Historians and named reporters come next, always credited. Every claim carries a note number that opens its source.'],
-      ['How sure, in plain words', 'When a document shows something, the book says so plainly. When a claim rests on reporting, it names who reported it. When credible sources disagree, it sets out both sides. When the record is silent, it says that too, and does not fill the gap.'],
-      ['Reading the structure', 'Beyond what happened, each chapter asks how an arrangement was built: who founded it, under what charter or law, who paid for it, and whether what it said it would do matches what it did.'],
-      ['Following the money', 'Where money moved, the book traces it in five steps: where it came from, how it moved, what multiplied it, who gained, and who bore the cost.'],
-      ['Mapping who was connected', 'A tie between two people or institutions counts only when a record shows what kind of tie it was: a contract, an appointment, a payment, an office, a shared board. Being in the same room is not a tie.'],
-      ['Recognizing patterns', 'A pattern is named only when the same mechanism appears in at least two documented cases, and the book notes where the pattern failed or met resistance.'],
-      ['Institutions, not peoples', 'The book examines states, governments, movements, companies and institutions. It never assigns motives or guilt to an ethnic or religious group, and it says so when the record contradicts an old prejudice.'],
-      ['Interpretation, marked as such', 'Where a passage offers a reading of the record rather than a finding from it, the text says so.']
-    ].map(function(x){ return '<dt>' + x[0] + '</dt><dd>' + x[1] + '</dd>'; }).join('') + '</dl></section>';
+    
     var FK = [['fk-flow','Process','How a decision or mechanism moved, step by step.'],['fk-money','Money trail','Five steps, one colour each: where the money came from, how it moved, what multiplied it, who gained, and who bore the cost.'],['fk-time','Timeline','Dated events in order.'],['fk-compare','Comparison','Two or more accounts, documents or periods side by side.'],['fk-tree','Power structure','Who sat above whom.'],['fk-stats','Key figures','The numbers a section turns on.'],['fk-net','Network','Who was connected, and how. Box colours show the kind of party, line colours the kind of tie; dashed means disputed.']];
     h += '<section class="bk-fm bk-leaf" id="bk-figkey" aria-label="How to read this book"><h2>How to read this book</h2><p>' + esc(LIB.note || '') + '</p><p>Every figure carries a coloured tag that says what kind of figure it is, and a line of sources underneath. Each network diagram also has a plain-words reading under it: open “Read this diagram in words.”</p><ul class="bk-fkey">' +
       FK.map(function(x){ return '<li class="' + x[0] + '"><span class="fkind">' + x[1] + '</span><span>' + x[2] + '</span></li>'; }).join('') + '</ul>' + legend(null, null) + '</section>';
