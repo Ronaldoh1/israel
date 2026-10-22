@@ -409,5 +409,34 @@
     "label": "Christopher J. Ruhm, 'Deaths of Despair or Drug Problems?', NBER Working Paper 24188, January 2018"
    }
   }
+ },
+ "ad16_audit": {
+  "topic": "Audit additions: DACA status Oct 2026; child tax credit record",
+  "claims": [
+   {
+    "text": "National Immigration Forum (updated 2 Oct 2026): 'As of July 1 2026, Judge Hanen has not issued a modified order' and has not taken steps to wind down DACA in Texas; the Fifth Circuit ruling of 17 Jan 2025 remains unimplemented; DOJ proposal of 29 Sept 2025 would end Texas recipients' work authorization; USCIS accepts but does not process initial requests and processes renewals only, slowly (125,282 renewals pending, a record)",
+    "strength": "reported",
+    "sources": [
+     "ad16_audit_daca_forum"
+    ]
+   },
+   {
+    "text": "CRS R41873 (Nov 2025): TCJA (P.L. 115-97) temporarily doubled the maximum child tax credit and raised the refundable amount from $1,000 to $1,400; P.L. 119-21 permanently raised the maximum from $2,000 to $2,200 per child, indexed; refundable portion 15% of earnings above $2,500, capped at $1,700 (2025); only about half of taxpayers with children and income under $10,000 received the credit in 2022 (TPC estimate)",
+    "strength": "primary",
+    "sources": [
+     "ad16_audit_crs_ctc"
+    ]
+   }
+  ],
+  "sources": {
+   "ad16_audit_daca_forum": {
+    "url": "https://forumtogether.org/article/current-status-of-daca-explainer/",
+    "label": "National Immigration Forum, 'Current Status of DACA: Explainer', 1 October 2026 (updated 2 October 2026)"
+   },
+   "ad16_audit_crs_ctc": {
+    "url": "https://www.everycrsreport.com/files/2025-11-13_R41873_d1fe31ee50b2906f14508dee9cc3d4838c93f5a6.html",
+    "label": "Congressional Research Service, 'The Child Tax Credit: How It Works and Who Receives It', R41873, 13 November 2025"
+   }
+  }
  }
 }

@@ -85,6 +85,20 @@
     "sources": [
      "ad12_pew2011"
     ]
+   },
+   {
+    "text": "DFA via FRED (WFRBST01134): top 1% share of household net worth 1989Q3 22.8%; 1990Q3 22.4% (series minimum); 1995 27.3; 2000 27.3; 2005 27.2; 2007 29.0; 2010 28.4; 2013 29.4; 2016 30.7; 2019 30.1; 2020 29.8; 2022 29.3; 2024 30.7; 2025Q3 31.5; 2026Q2 32.5 (record).",
+    "strength": "primary",
+    "sources": [
+     "ad12_audit_fred_t1nw"
+    ]
+   },
+   {
+    "text": "DFA via FRED (WFRBSB50215): bottom 50% share of household net worth 1989Q3 3.5%; 1990 3.5; 1995 3.7; 2000 3.2; 2005 2.5; 2007 2.0; 2010Q3 0.5; minimum 0.4% 2010Q4-2012Q1; 2013 0.9; 2016 1.3; 2019 1.7; 2020 2.1; 2022 2.7; 2024 2.4; 2025Q3 2.4; 2026Q2 2.3.",
+    "strength": "primary",
+    "sources": [
+     "ad12_audit_fred_b50nw"
+    ]
    }
   ],
   "sources": {
@@ -131,6 +145,14 @@
    "ad12_pew2011": {
     "url": "https://www.pewresearch.org/social-trends/2011/07/26/wealth-gaps-rise-to-record-highs-between-whites-blacks-hispanics/markdown",
     "label": "Rakesh Kochhar et al., Pew Research Center, 'Wealth Gaps Rise to Record Highs Between Whites, Blacks, Hispanics', 26 July 2011"
+   },
+   "ad12_audit_fred_t1nw": {
+    "url": "https://fred.stlouisfed.org/data/WFRBST01134",
+    "label": "Federal Reserve Board DFA via FRED, 'Share of Net Worth Held by the Top 1% (99th to 100th Wealth Percentiles)' (WFRBST01134), data to 2026Q2"
+   },
+   "ad12_audit_fred_b50nw": {
+    "url": "https://fred.stlouisfed.org/data/WFRBSB50215",
+    "label": "Federal Reserve Board DFA via FRED, 'Share of Net Worth Held by the Bottom 50% (1st to 50th Wealth Percentiles)' (WFRBSB50215), data to 2026Q2"
    }
   }
  },
@@ -191,6 +213,13 @@
     "strength": "reported",
     "sources": [
      "ad12_propublica"
+    ]
+   },
+   {
+    "text": "Richmond Fed EB 22-49 Table 5 (SCF 2019): share receiving any transfer by parental education, White/Black: HS dropout 29.8%/11.8%; HS graduate 31.7%/14.3%; some college 34.7%/8.3%; bachelor's 41.2%/15.5%; authors: 'It is unclear why this effect is so small'; education 'a weak proxy for wealth accumulation among Black families'.",
+    "strength": "primary",
+    "sources": [
+     "ad12_richmond_inherit"
     ]
    }
   ],

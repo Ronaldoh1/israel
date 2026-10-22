@@ -110,6 +110,27 @@
     "sources": [
      "ad5_dwt_ot2024"
     ]
+   },
+   {
+    "text": "Audit re-fetch (22 Oct 2026) of EPI data table (2025$): 1954 $0.75 = $7.36 (ratio 9.81); 1961 $10.07; 1975 $2.10 = $10.69 (ratio 5.09); 1996 $9.09; 2004 $5.15 = $8.32 (ratio 1.616); 2015 $9.56; 2016 $9.48; 2023 $7.62. Book arithmetic with these ratios: $600 (1954) ≈ $5,900; $155 (1975) ≈ $790; $455 (2004) ≈ $735; $2.13 (1991, ratio 2.16) ≈ $4.60. On this series the 2023 value was 37% below 1968; EPI's Aug 2023 article (different vintage/price index) gave 42%.",
+    "strength": "primary",
+    "sources": [
+     "ad5_epi_real2025"
+    ]
+   },
+   {
+    "text": "Book arithmetic from the DOL chart: the gaps between increases were 1981–1990 (nine years) and 1997–2007 (ten years); the freeze since 24 July 2009 (over 17 years by Oct 2026) is the longest since 1938.",
+    "strength": "primary",
+    "sources": [
+     "us13_dol_minwage"
+    ]
+   },
+   {
+    "text": "CBPP (Romig, Dec 2021): Congress has never raised the amount of income SSA disregards in calculating SSI benefits since creating SSI in 1972; indexed, the $65 earned-income exclusion would have been $416/month in 2021.",
+    "strength": "reported",
+    "sources": [
+     "ad5_audit_cbpp_ssiincome"
+    ]
    }
   ],
   "sources": {
@@ -188,6 +209,14 @@
    "ad5_dwt_ot2024": {
     "url": "https://www.dwt.com/blogs/employment-labor-and-benefits/2024/11/texas-court-overturns-2024-dol-overtime-rule",
     "label": "Davis Wright Tremaine, 'Texas Federal Court Overturns 2024 DOL Overtime Rule Nationwide', 19 Nov 2024"
+   },
+   "us13_dol_minwage": {
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/history/chart",
+    "label": "US Department of Labor, Wage and Hour Division, 'Changes in Basic Minimum Wages in Non-Farm Employment Under Federal Law, 1938–2009'"
+   },
+   "ad5_audit_cbpp_ssiincome": {
+    "url": "https://www.cbpp.org/blog/theres-still-time-to-improve-ssi-in-build-back-better",
+    "label": "Kathleen Romig, CBPP, 'There's Still Time to Improve SSI in Build Back Better', 14 Dec 2021"
    }
   }
  },
@@ -236,6 +265,34 @@
      "ad5_acf_ccdf2024",
      "ad5_acf_ccdf2026"
     ]
+   },
+   {
+    "text": "MLR Fig. 2c: multiple-jobholding rate Jan 1994 vs Dec 2013 by education: less than high school 3.03% → 2.58%; high school 5.21% → 3.83%; some college 7.35% → 5.58%; college+ 7.83% → 6.00%; 'moonlighting has been trending downward within all educational groups'.",
+    "strength": "primary",
+    "sources": [
+     "ad5_mlr_mj2015"
+    ]
+   },
+   {
+    "text": "Warren and Tyagi, The Two-Income Trap (2003): two-income families earn about 75% more (inflation-adjusted) than one-earner families a generation earlier yet have less discretionary income; the main driver is a bidding war for homes in good school districts, plus health insurance, a second car, preschool; families with children nearly three times as likely to go bankrupt.",
+    "strength": "reported",
+    "sources": [
+     "ad5_audit_wharton_twoincome"
+    ]
+   },
+   {
+    "text": "BLS Employment Situation, Sept 2026 (released 2 Oct 2026): 4.5 million employed part time for economic reasons (hours cut or unable to find full-time work), little changed. Book arithmetic: about 2.8% of roughly 163 million employed.",
+    "strength": "primary",
+    "sources": [
+     "ad5_audit_bls_empsit_sep26"
+    ]
+   },
+   {
+    "text": "Delaware and Minnesota paid family and medical leave benefits scheduled from 1 Jan 2026; Maine from 1 May 2026; Maryland FAMLI postponed, contributions from 1 Jan 2027 and benefits expected from 3 Jan 2028.",
+    "strength": "reported",
+    "sources": [
+     "ad5_audit_ebg_leave"
+    ]
    }
   ],
   "sources": {
@@ -266,6 +323,18 @@
    "ad5_acf_ccdf2026": {
     "url": "https://content.govdelivery.com/accounts/USACFOCC/bulletins/41719df",
     "label": "ACF Office of Child Care bulletin, 'New CCDF Final Rule: Restoring Flexibility in the Child Care and Development Fund', May 2026"
+   },
+   "ad5_audit_wharton_twoincome": {
+    "url": "https://magazine.wharton.upenn.edu/fall-2003/the-two-income-trap",
+    "label": "Wharton Magazine, 'The Two-Income Trap' (on Elizabeth Warren and Amelia Warren Tyagi's book), Fall 2003"
+   },
+   "ad5_audit_bls_empsit_sep26": {
+    "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+    "label": "US BLS, 'The Employment Situation — September 2026', 2 Oct 2026"
+   },
+   "ad5_audit_ebg_leave": {
+    "url": "https://www.ebglaw.com/insights/publications/2026-family-and-medical-leave-law-updates-what-employers-in-seven-states-need-to-know",
+    "label": "Epstein Becker Green, '2026 Family and Medical Leave Law Updates: What Employers in Seven States Need to Know', 30 Oct 2025"
    }
   }
  },
@@ -379,6 +448,13 @@
     "strength": "primary",
     "sources": [
      "ad5_dol_erg2014"
+    ]
+   },
+   {
+    "text": "Starr, Prescott and Bishara (abstract): noncompetes more likely in high-skill, high-paying jobs but also common in low-wage jobs and in states where unenforceable; wages tend to be lower where noncompetes are easier to enforce; early-notice noncompetes associated with better outcomes than those presented after acceptance.",
+    "strength": "primary",
+    "sources": [
+     "ad5_spb2021"
     ]
    }
   ],

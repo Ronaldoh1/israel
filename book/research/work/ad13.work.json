@@ -337,5 +337,45 @@
     "label": "US Census Bureau, Facts for Features, 'National Native American Heritage Month: November 2025'"
    }
   }
+ },
+ "ad13_audit": {
+  "topic": "Audit additions for Part Thirteen (Oct 2026)",
+  "claims": [
+   {
+    "text": "Census HVS Table 7: homeownership Q2 2026 (Q2 2025): non-Hispanic white 74.5% (74.0%); Black 45.4% (43.9%); Asian/NHPI 58.6% (62.1%); Hispanic of any race 48.1% (48.8%), change not statistically significant",
+    "strength": "primary",
+    "sources": [
+     "ad13_audit_hvs_q226"
+    ]
+   },
+   {
+    "text": "DC Circuit (Pillard, unanimous panel), Tuesday 8 September 2026, upheld Judge Colleen Kollar-Kotelly's November 2025 stay of the IRS-ICE data-sharing procedure/agreement and injunction on further disclosures; procedure 'failed to ensure that ICE's requests complied with statutory requirements' (s.6103(i)(2) name and address); ICE requested 1.28m records in summer 2025; IRS turned over more than 47,000 before the stay; Kollar-Kotelly found in February 2026 about 42,695 unlawful disclosures of addresses",
+    "strength": "reported",
+    "sources": [
+     "ad13_audit_irs_dcir"
+    ]
+   },
+   {
+    "text": "Hoodline (9 Sept 2026): plaintiffs Center for Taxpayer Rights and Main Street Alliance; panel Pillard, Millett, Wilkins; 47,289 disclosures; in February 2026 Judge Indira Talwani (D. Mass.) preliminarily barred DHS and ICE from using IRS taxpayer information obtained under the April 2025 agreement; parallel First Circuit appeal active",
+    "strength": "reported",
+    "sources": [
+     "ad13_audit_irs_hoodline"
+    ]
+   }
+  ],
+  "sources": {
+   "ad13_audit_hvs_q226": {
+    "url": "https://www.census.gov/housing/hvs/files/qtr226/Q226press.pdf",
+    "label": "US Census Bureau, 'Quarterly Residential Vacancies and Homeownership, Second Quarter 2026', CB26-116, 28 July 2026, Table 7"
+   },
+   "ad13_audit_irs_dcir": {
+    "url": "https://www.cpapracticeadvisor.com/2026/09/09/appeals-court-upholds-block-on-irs-ice-taxpayer-data-sharing-deal/189889/",
+    "label": "CPA Practice Advisor, 'Appeals Court Upholds Block on IRS-ICE Taxpayer Data Sharing Agreement', 9 September 2026"
+   },
+   "ad13_audit_irs_hoodline": {
+    "url": "https://hoodline.com/2026/09/appeals-court-says-irs-illegally-fed-taxpayer-addresses-to-ice/",
+    "label": "Hoodline, 'Appeals court says IRS illegally fed taxpayer addresses to ICE', 9 September 2026"
+   }
+  }
  }
 }

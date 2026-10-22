@@ -382,5 +382,34 @@
     "label": "Gregg Colburn and Clayton Page Aldern, 'Homelessness Is a Housing Problem' (University of California Press, March 2022), publisher's description"
    }
   }
+ },
+ "ad14_audit": {
+  "topic": "Audit additions for Part Fourteen (Oct 2026)",
+  "claims": [
+   {
+    "text": "Loyola first-year review (21 counties): failure to appear for non-detainable felonies rose from 28.1% to 31%; overall fell 25.1% to 22.8%; authors called FTA changes 'minimal'; violent crime -7%, property -14% (H1 2024 vs H1 2023); share still held three days after arrest fell from 33% to 9%",
+    "strength": "reported",
+    "sources": [
+     "ad14_audit_dh_fta"
+    ]
+   },
+   {
+    "text": "WPB trend (audit re-fetch 22 Oct 2026): 2002 2,033,022 (703 per 100k); 2004 2,135,335 (725); 2006 2,258,792 (752); 2012 2,228,424 (707); 2016 2,157,800 (666)",
+    "strength": "primary",
+    "sources": [
+     "ad14_wpb_trend"
+    ]
+   }
+  ],
+  "sources": {
+   "ad14_audit_dh_fta": {
+    "url": "https://www.dailyherald.com/20240926/news/whats-happened-to-crime-rates-court-skipping-since-cash-bail-went-away/",
+    "label": "Daily Herald, 'What's happened to crime rates, court-skipping since cash bail went away', 26 September 2024 (Loyola University Chicago Center for Criminal Justice report)"
+   },
+   "ad14_wpb_trend": {
+    "url": "https://prisonstudies.org/country/united-states-america",
+    "label": "World Prison Brief (ICPR, Birkbeck), 'United States of America', prison population trend 1980-2023 (BJS data, incl. local jails)"
+   }
+  }
  }
 }

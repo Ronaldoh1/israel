@@ -172,6 +172,27 @@
     "sources": [
      "ad4_qje_farber"
     ]
+   },
+   {
+    "text": "Michigan's right-to-work repeal took effect on 13 February 2024, not the earlier expected 30 March 2024, because the legislature adjourned on 14 November 2023 and laws without immediate effect take effect 91 days after adjournment; Indiana's 1965 repeal was the previous one.",
+    "strength": "CONFIRMED",
+    "sources": [
+     "ad4_audit_bt_michigan"
+    ]
+   },
+   {
+    "text": "National Right to Work Committee list (updated May 2026) shows 26 right-to-work states plus Guam; New Hampshire's 2025 right-to-work bill again stalled in the House (no change as of October 2026 found).",
+    "strength": "REPORTED",
+    "sources": [
+     "ad4_audit_nrtw_states"
+    ]
+   },
+   {
+    "text": "BLS major work stoppages (1,000+ workers): 381 in 1970; 7 in 2017; 20 in 2018; 25 in 2019.",
+    "strength": "CONFIRMED",
+    "sources": [
+     "ad4_bls_stoppages"
+    ]
    }
   ],
   "sources": {
@@ -214,6 +235,14 @@
    "ad4_qje_farber": {
     "url": "https://academicnewsletter.sufe.edu.cn/info/344922",
     "label": "Henry S. Farber, Daniel Herbst, Ilyana Kuziemko and Suresh Naidu, 'Unions and Inequality over the Twentieth Century: New Evidence from Survey Data', Quarterly Journal of Economics, 2021, pp. 1325–1385 (abstract)"
+   },
+   "ad4_audit_bt_michigan": {
+    "url": "https://laborandemployment.btlaw.com/post/102ised/michigans-right-to-work-repeal-now-effective-mid-february",
+    "label": "Barnes & Thornburg, 'Michigan's Right-to-Work Repeal Now Effective Mid-February', 13 November 2023"
+   },
+   "ad4_audit_nrtw_states": {
+    "url": "https://nrtw.org/right-to-work-states/",
+    "label": "National Right to Work Committee, 'Right to Work States' (page last modified 11 May 2026)"
    }
   }
  },
@@ -262,6 +291,43 @@
     "sources": [
      "ad4_epi_ceo2025"
     ]
+   },
+   {
+    "text": "Lazonick (HBR, Sept 2014): 449 S&P 500 companies listed throughout 2003–2012 used 54% of earnings, $2.4 trillion, to buy back their own stock, and a further 37% on dividends.",
+    "strength": "REPORTED",
+    "sources": [
+     "ad4_audit_lazonick"
+    ]
+   },
+   {
+    "text": "Fried and Wang (HBR, Mar–Apr 2018): the commonly cited figure that S&P 500 firms pay out 96% of net income overstates the drain; net of offsetting equity issuance and adding back R&D, shareholder payouts were about 41% of income potentially available for investment; they argue investment is near peak levels and excessive payouts are not the governance problem.",
+    "strength": "REPORTED",
+    "sources": [
+     "ad4_audit_friedwang"
+    ]
+   },
+   {
+    "text": "Kaplan and Rauh (JEP 2013): the rise in top incomes is broad-based across occupations and best explained by scale and skill-biased technological change; the evidence is 'less consistent' with explanations rooted in greater managerial power or changed social norms on executive pay.",
+    "strength": "REPORTED",
+    "sources": [
+     "ad4_audit_kaplanrauh"
+    ]
+   },
+   {
+    "text": "Business Roundtable statement of 19 August 2019, signed by 181 chief executives, committed signers to lead their companies 'for the benefit of all stakeholders', moving away from the Roundtable's earlier shareholder-primacy principles.",
+    "strength": "CONFIRMED",
+    "sources": [
+     "ad4_audit_brt2019"
+    ]
+   },
+   {
+    "text": "Fed Distributional Financial Accounts (FRED, accessed Oct 2026): share of corporate equities and mutual fund shares held by the top 1% by wealth 50.9% in 2026 Q2 (42.8% in 1989 Q3); 90th–99th percentiles 37.2% (38.8% in 1989 Q3); bottom 50% 0.6% (1.1% in 1989 Q3). Top 10% total 88.1% in 2026 Q2 vs 81.6% in 1989 Q3 (book arithmetic).",
+    "strength": "CONFIRMED",
+    "sources": [
+     "ad4_audit_dfa_top1eq",
+     "ad4_audit_dfa_90to99eq",
+     "ad4_audit_dfa_bot50eq"
+    ]
    }
   ],
   "sources": {
@@ -292,6 +358,34 @@
    "ad4_epi_ceo2025": {
     "url": "https://www.epi.org/?p=306618",
     "label": "Economic Policy Institute, 'CEO compensation, CEO-to-worker compensation ratio, and stock prices (2025$), selected years, 1965–2025', 2026"
+   },
+   "ad4_audit_lazonick": {
+    "url": "https://hbr.org/2014/09/profits-without-prosperity",
+    "label": "William Lazonick, 'Profits Without Prosperity', Harvard Business Review, September 2014"
+   },
+   "ad4_audit_friedwang": {
+    "url": "https://hbr.org/2018/03/are-buybacks-really-shortchanging-investment",
+    "label": "Jesse M. Fried and Charles C.Y. Wang, 'Are Buybacks Really Shortchanging Investment?', Harvard Business Review, March–April 2018"
+   },
+   "ad4_audit_kaplanrauh": {
+    "url": "https://ideas.repec.org/a/aea/jecper/v27y2013i3p35-56.html",
+    "label": "Steven N. Kaplan and Joshua Rauh, 'It's the Market: The Broad-Based Rise in the Return to Top Talent', Journal of Economic Perspectives 27(3): 35–56, 2013 (abstract)"
+   },
+   "ad4_audit_brt2019": {
+    "url": "https://www.businessroundtable.org/business-roundtable-redefines-the-purpose-of-a-corporation-to-promote-an-economy-that-serves-all-americans",
+    "label": "Business Roundtable, 'Business Roundtable Redefines the Purpose of a Corporation to Promote ‘An Economy That Serves All Americans’', press release, 19 August 2019"
+   },
+   "ad4_audit_dfa_top1eq": {
+    "url": "https://fred.stlouisfed.org/data/WFRBST01122",
+    "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the Top 1%' (WFRBST01122)"
+   },
+   "ad4_audit_dfa_90to99eq": {
+    "url": "https://fred.stlouisfed.org/data/WFRBSN09149",
+    "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the 90th to 99th Wealth Percentiles' (WFRBSN09149)"
+   },
+   "ad4_audit_dfa_bot50eq": {
+    "url": "https://fred.stlouisfed.org/data/WFRBSB50203",
+    "label": "Federal Reserve Board, Distributional Financial Accounts, via FRED: 'Share of Corporate Equities and Mutual Fund Shares Held by the Bottom 50%' (WFRBSB50203)"
    }
   }
  }

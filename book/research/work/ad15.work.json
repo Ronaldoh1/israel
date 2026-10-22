@@ -408,5 +408,45 @@
     "label": "9to5Mac, 'Apple to pay up to $500 million in battery throttling settlement', 16 May 2020"
    }
   }
+ },
+ "ad15_audit": {
+  "topic": "Audit additions: arbitration dissents and statutory bars",
+  "claims": [
+   {
+    "text": "Breyer dissent in Concepcion: 'What rational lawyer would have signed on to represent the Concepcions in litigation for the possibility of fees stemming from a $30.22 claim?'",
+    "strength": "primary",
+    "sources": [
+     "ad15_audit_concepcion_dissent"
+    ]
+   },
+   {
+    "text": "Italian Colors, 20 June 2013, 5-3 (Scalia; Kagan dissent joined by Ginsburg and Breyer; Sotomayor not participating): class-arbitration waiver enforced although expert proof would cost 'at least several hundred thousand dollars, and might exceed $1 million' against a maximum individual recovery of $12,850 ($38,549 trebled); Kagan: 'Too darn bad'",
+    "strength": "primary",
+    "sources": [
+     "ad15_audit_italiancolors"
+    ]
+   },
+   {
+    "text": "CFPB (10 July 2017): Congress already prohibits arbitration agreements in the residential mortgage market and has prohibited them in many forms of credit extended to servicemembers (Military Lending Act)",
+    "strength": "primary",
+    "sources": [
+     "ad15_audit_cfpb_bars"
+    ]
+   }
+  ],
+  "sources": {
+   "ad15_audit_concepcion_dissent": {
+    "url": "https://www.law.cornell.edu/supct/html/09-893.ZD.html",
+    "label": "AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011), Breyer, J., dissenting (LII)"
+   },
+   "ad15_audit_italiancolors": {
+    "url": "https://www.law.cornell.edu/supremecourt/text/12-133",
+    "label": "American Express Co. v. Italian Colors Restaurant, 570 U.S. 228 (2013), decided 20 June 2013 (LII)"
+   },
+   "ad15_audit_cfpb_bars": {
+    "url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-issues-rule-ban-companies-using-arbitration-clauses-deny-groups-people-their-day-court/",
+    "label": "CFPB, press release on the arbitration rule, 10 July 2017 (archived)"
+   }
+  }
  }
 }
