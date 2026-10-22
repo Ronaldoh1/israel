@@ -170,5 +170,243 @@
     "label": "Intuit Inc., Form 8-K Ex. 99.01, fourth-quarter and full-year fiscal 2025 results, 21 August 2025"
    }
   }
+ },
+ "ad15_financialization": {
+  "topic": "Finance share of profits; Krippner; forced arbitration and class-action waivers",
+  "claims": [
+   {
+    "text": "FRED/BEA financial domestic corporate profits ($bn): 2000 196.3; 2002 294.9; 2005 401.1; 2008 110.1; 2010 405.6; 2015 463.2; 2019 538.7; 2020 468.9; 2021 591.7; 2022 604.2; 2023 569.5; 2024 666.6; 2025 840.2 (NAICS basis from 1998)",
+    "strength": "primary",
+    "sources": [
+     "ad15_fred_finprof"
+    ]
+   },
+   {
+    "text": "FRED/BEA domestic corporate profits ($bn): 2000 680.7; 2002 773.6; 2005 1304.3; 2008 955.4; 2010 1388.7; 2015 1777.9; 2019 1938.3; 2020 1966.3 (data table); 2021 2697.8; 2022 2913.1; 2023 3144.3; 2024 3344.2; 2025 3550.9 (series page, latest vintage). Book arithmetic: finance share 28.8% (2000), 38.1% (2002), 11.5% (2008), 29.2% (2010), 18.1% (2023), 19.9% (2024), 23.7% (2025)",
+    "strength": "primary",
+    "sources": [
+     "ad15_fred_domprof",
+     "ad15_fred_domprof_data"
+    ]
+   },
+   {
+    "text": "Krippner: financialization 'a pattern of accumulation in which profits accrue primarily through financial channels'; ratio of financial to non-financial profits at end of period roughly three to five times 1950s-60s level; nonfinancial firms' portfolio income ratio peaked late 1980s about five times earlier levels",
+    "strength": "reported",
+    "sources": [
+     "ad15_krippner"
+    ]
+   },
+   {
+    "text": "Concepcion, 27 April 2011, 5-4 (Scalia; Breyer dissent): FAA preempts California's Discover Bank rule that held class-arbitration waivers unconscionable; dispute over sales tax on phones advertised as free",
+    "strength": "primary",
+    "sources": [
+     "ad15_lii_concepcion"
+    ]
+   },
+   {
+    "text": "Epic Systems, 21 May 2018, 5-4 (Gorsuch; Ginsburg dissent): 'arbitration agreements providing for individualized proceedings must be enforced'; NLRA does not override",
+    "strength": "primary",
+    "sources": [
+     "ad15_lii_epic"
+    ]
+   },
+   {
+    "text": "CFPB (10 July 2017): study found issuers with over half of card debt and banks with 44% of insured deposits used arbitration clauses; 3 in 4 consumers did not know; about 2% would consider legal action over small dispute; group lawsuits paid 34m+ consumers $1bn over five years; in about 1,000 arbitrations over two years arbitrators awarded about $360,000 to 78 consumers; Congress disapproved under the CRA, signed 1 Nov 2017; removed from CFR 22 Nov 2017",
+    "strength": "primary",
+    "sources": [
+     "ad15_cfpb_arb2017"
+    ]
+   },
+   {
+    "text": "House voted 231-190 (July 2017); Senate 51-50 on 24 Oct 2017 with Vice President Pence breaking the tie; Chamber of Commerce sued 29 Sept 2017",
+    "strength": "reported",
+    "sources": [
+     "ad15_troutman_cra"
+    ]
+   },
+   {
+    "text": "Treasury (23 Oct 2017) critique: by the Bureau's own projections four in five class actions yield no recovery for class members; on average 4% of class members claim; typical payment $32.35; about $330m more to plaintiffs' counsel over five years",
+    "strength": "reported",
+    "sources": [
+     "ad15_treasury_arb"
+    ]
+   },
+   {
+    "text": "Colvin/EPI (2018): employer survey 2017; 56.2% of nonunion private-sector employees (about 60.1 million) under mandatory arbitration vs about 2% in 1992; 41.1% of covered employees (23.1% of all, 24.7m) face class-action waivers; 64.5% of establishments with average wage under $13/hour",
+    "strength": "reported",
+    "sources": [
+     "ad15_epi_colvin"
+    ]
+   },
+   {
+    "text": "Ending Forced Arbitration of Sexual Assault and Sexual Harassment Act: sponsors Gillibrand (D) and Graham (R); Senate voice vote; signed 3 March 2022; claimant chooses court or arbitration",
+    "strength": "reported",
+    "sources": [
+     "ad15_npr_efaa",
+     "ad15_wh_hr4445"
+    ]
+   }
+  ],
+  "sources": {
+   "ad15_fred_finprof": {
+    "url": "https://fred.stlouisfed.org/data/A587RC1A027NBEA",
+    "label": "BEA via FRED, 'Corporate profits with IVA and CCAdj: Domestic industries: Financial' (A587RC1A027NBEA), updated 30 September 2026"
+   },
+   "ad15_fred_domprof": {
+    "url": "https://fred.stlouisfed.org/series/A445RC1A027NBEA",
+    "label": "BEA via FRED, 'Corporate profits with IVA and CCAdj: Domestic industries' (A445RC1A027NBEA)"
+   },
+   "ad15_fred_domprof_data": {
+    "url": "https://fred.stlouisfed.org/data/A445RC1A027NBEA",
+    "label": "BEA via FRED, A445RC1A027NBEA data table"
+   },
+   "ad15_krippner": {
+    "url": "https://economicsociology.org/wp-content/uploads/2015/01/the-financialization-of-the-american-economy.pdf",
+    "label": "Greta R. Krippner, 'The financialization of the American economy', Socio-Economic Review 3(2), May 2005, pp. 173-208"
+   },
+   "ad15_lii_concepcion": {
+    "url": "https://www.law.cornell.edu/supct/html/09-893.ZS.html",
+    "label": "AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011), syllabus, decided 27 April 2011 (LII)"
+   },
+   "ad15_lii_epic": {
+    "url": "https://www.law.cornell.edu/supremecourt/text/16-285",
+    "label": "Epic Systems Corp. v. Lewis, No. 16-285, decided 21 May 2018 (LII)"
+   },
+   "ad15_cfpb_arb2017": {
+    "url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-issues-rule-ban-companies-using-arbitration-clauses-deny-groups-people-their-day-court/",
+    "label": "CFPB, 'CFPB issues rule to ban companies from using arbitration clauses to deny groups of people their day in court', 10 July 2017 (archived, with CRA note)"
+   },
+   "ad15_troutman_cra": {
+    "url": "https://www.troutman.com/insights/senate-strikes-down-cfpb-arbitration-rule.html",
+    "label": "Troutman Sanders, 'Senate Strikes Down CFPB Arbitration Rule', October 2017"
+   },
+   "ad15_treasury_arb": {
+    "url": "https://www.consumerfinancialserviceslawmonitor.com/2017/10/u-s-treasury-criticizes-arbitration-rule/",
+    "label": "Consumer Financial Services Law Monitor, 'U.S. Treasury Criticizes Arbitration Rule', 23 October 2017"
+   },
+   "ad15_epi_colvin": {
+    "url": "https://www.epi.org/publication/the-growing-use-of-mandatory-arbitration-access-to-the-courts-is-now-barred-for-more-than-60-million-american-workers",
+    "label": "Alexander J.S. Colvin, Economic Policy Institute, 'The growing use of mandatory arbitration', 6 April 2018"
+   },
+   "ad15_npr_efaa": {
+    "url": "https://www.npr.org/2022/02/10/1079843645/congress-approves-bill-to-end-forced-arbitration-in-sexual-assault-cases",
+    "label": "NPR, 'Congress approves bill to end forced arbitration in sexual assault cases', 10 February 2022"
+   },
+   "ad15_wh_hr4445": {
+    "url": "https://bidenwhitehouse.archives.gov/briefing-room/legislation/2022/03/03/bills-signed-h-r-4445/",
+    "label": "The White House, 'Bills Signed: H.R. 4445', 3 March 2022"
+   }
+  }
+ },
+ "ad15_pricing": {
+  "topic": "Markups, concentration critics, surveillance pricing, junk fees, right to repair",
+  "claims": [
+   {
+    "text": "De Loecker, Eeckhout and Unger (QJE 2020): average markups rose from 21% above marginal cost in 1980 to 61% 'now'; profit rate 1% to 8%; driven by upper tail, median unchanged; mostly within industries",
+    "strength": "primary",
+    "sources": [
+     "ad15_qje_markups"
+    ]
+   },
+   {
+    "text": "Basu (2019): 'Existing methods cannot determine whether markups have been stable or whether they have risen modestly'; methods rest on cost minimisation; some steep-rise results hard to reconcile with aggregate data",
+    "strength": "primary",
+    "sources": [
+     "ad15_basu"
+    ]
+   },
+   {
+    "text": "FTC staff 17 Jan 2025: initial findings of the July 2024 6(b) study of eight intermediaries (unanimous orders): demographics, location, browsing and inferred data can be used to set individual prices; RFI docket FTC-2025-0007; Ferguson and Holyoak dissented from releasing preliminary findings and said a final fact-based report would follow",
+    "strength": "reported",
+    "sources": [
+     "ad15_bclp_surv",
+     "ad15_ftc_surv"
+    ]
+   },
+   {
+    "text": "Instacart ended retailer price experiments 22 Dec 2025 after a CR/Groundwork/More Perfect Union investigation found different prices for the same items at the same time; Instacart said software did not meaningfully raise prices; FTC reportedly opened an investigation (Reuters 17 Dec); separate $60m Instacart+ refund settlement 18 Dec 2025",
+    "strength": "reported",
+    "sources": [
+     "ad15_cr_instacart"
+    ]
+   },
+   {
+    "text": "New York Algorithmic Pricing Disclosure Act (signed May 2025, effective 8 July 2025) requires a conspicuous disclosure next to prices set by algorithm using personal data, fines up to $1,000; Judge Rakoff dismissed NRF First Amendment suit (Oct 2025)",
+    "strength": "reported",
+    "sources": [
+     "ad15_rin_nylaw"
+    ]
+   },
+   {
+    "text": "FTC Rule on Unfair or Deceptive Fees finalised Dec 2024, effective 12 May 2025, covers live-event tickets and short-term lodging",
+    "strength": "reported",
+    "sources": [
+     "ad15_tc_junkfee"
+    ]
+   },
+   {
+    "text": "Consumer electronics right-to-repair laws: New York (effective 28 Dec 2023), California and Minnesota (1 July 2024), Colorado (1 Jan 2026), Oregon; parts, tools and documentation on fair and reasonable terms; Oregon and Colorado restrict parts pairing",
+    "strength": "reported",
+    "sources": [
+     "ad15_wiley_r2r"
+    ]
+   },
+   {
+    "text": "FTC 'Nixing the Fix' (May 2021, unanimous, mandated by Congress) found 'scant evidence to support manufacturers' justifications for repair restrictions'",
+    "strength": "primary",
+    "sources": [
+     "ad15_ftc_nixing"
+    ]
+   },
+   {
+    "text": "Apple battery throttling settlement: up to $500m, at least $25 per iPhone (SE, 6, 6s, 7 models on iOS 10.2.1 and later); throttling undisclosed until Dec 2017; preliminary approval May 2020; no admission of wrongdoing",
+    "strength": "reported",
+    "sources": [
+     "ad15_9to5_apple"
+    ]
+   }
+  ],
+  "sources": {
+   "ad15_qje_markups": {
+    "url": "https://bse.eu/research/publications/rise-market-power-and-macroeconomic-implications",
+    "label": "Jan De Loecker, Jan Eeckhout and Gabriel Unger, 'The Rise of Market Power and the Macroeconomic Implications', Quarterly Journal of Economics 135(2), 2020, pp. 561-644"
+   },
+   "ad15_basu": {
+    "url": "https://www.nber.org/papers/w26057",
+    "label": "Susanto Basu, 'Are Price-Cost Markups Rising in the United States? A Discussion of the Evidence', NBER w26057 / Journal of Economic Perspectives 33(3), 2019"
+   },
+   "ad15_bclp_surv": {
+    "url": "https://www.bclplaw.com/en-US/events-insights-news/will-this-be-on-the-exam-ftc-staff-issues-two-initial-reports-on-surveillance-pricing.html",
+    "label": "Bryan Cave Leighton Paisner, 'Will This Be on the Exam? FTC Staff Issues Two Initial Reports on Surveillance Pricing', 27 January 2025"
+   },
+   "ad15_ftc_surv": {
+    "url": "https://ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/surveillance-pricing-update-work-ahead",
+    "label": "FTC Office of Technology, 'Surveillance Pricing Update and the Work Ahead', 17 January 2025"
+   },
+   "ad15_cr_instacart": {
+    "url": "https://pressroom.consumerreports.org/money/questionable-business-practices/instacart-stops-ai-pricing-experiments-a1176475852/",
+    "label": "Consumer Reports, 'Instacart stops AI pricing experiments', 22 December 2025, updated 7 April 2026"
+   },
+   "ad15_rin_nylaw": {
+    "url": "https://www.retail-insight-network.com/newsletters/court-rejects-retailers-bid-to-block-new-york-surveillance-pricing-law/",
+    "label": "Retail Insight Network, 'Court rejects retailers' bid to block New York surveillance pricing law', 10 October 2025"
+   },
+   "ad15_tc_junkfee": {
+    "url": "https://techcrunch.com/2025/05/05/ftc-bans-hidden-fees-for-live-events-and-short-term-rentals-effective-may-12/",
+    "label": "TechCrunch, 'FTC bans hidden fees for live events and short-term rentals, effective May 12', 5 May 2025"
+   },
+   "ad15_wiley_r2r": {
+    "url": "https://wiley.law/alert-State-Right-to-Repair-Patchwork-Grows-as-Electronic-Device-Manufacturers-Face-New-Compliance-Deadlines",
+    "label": "Wiley Rein, 'State Right to Repair Patchwork Grows as Electronic Device Manufacturers Face New Compliance Deadlines', 30 May 2024"
+   },
+   "ad15_ftc_nixing": {
+    "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/p194400nixingthefixcoloradotestimony.pdf",
+    "label": "FTC staff testimony to the Colorado General Assembly on right to repair, 29 February 2024"
+   },
+   "ad15_9to5_apple": {
+    "url": "https://9to5mac.com/2020/05/16/apple-500-million-settlement/",
+    "label": "9to5Mac, 'Apple to pay up to $500 million in battery throttling settlement', 16 May 2020"
+   }
+  }
  }
 }
