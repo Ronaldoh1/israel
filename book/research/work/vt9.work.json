@@ -393,5 +393,56 @@
     "label": "Longreads, on David Owen's New Yorker profile of Molly Burhans, 9 February 2021"
    }
   }
+ },
+ "vt9_audit": {
+  "topic": "Audit verification of Peter's Pence and APSA 2025 details",
+  "claims": [
+   {
+    "text": "Peter's Pence 2023: offerings EUR 48.4m, of which dioceses EUR 31.2m (64.4%), foundations EUR 13.9m, private donors EUR 2.1m, religious orders EUR 1.2m; by country United States EUR 13.6m (28.1%), Italy EUR 3.1m (6.4%), Brazil EUR 1.9m (3.9%); disbursements EUR 103m (EUR 90m mission, EUR 13m direct aid). Percentages are shares of offerings.",
+    "strength": "primary",
+    "sources": [
+     "vt9_vn_pp2023"
+    ]
+   },
+   {
+    "text": "Peter's Pence 2025 report published 30 June 2026: donations EUR 54.5m (dioceses EUR 34.7m, 63.6%; foundations EUR 13m; private donors EUR 5.4m; religious institutes EUR 1.4m); United States EUR 14.2m; Africa EUR 5.2m for 73 projects; income EUR 57.6m, expenses EUR 59.8m, deficit EUR 2.2m attributed to foreign-exchange fluctuations.",
+    "strength": "primary",
+    "sources": [
+     "vt9_vn_pp2025"
+    ]
+   },
+   {
+    "text": "APSA 2025: Piccinotti called 2024 'un esercizio straordinario e non ripetibile' and 2025 'il ritorno a condizioni operative ordinarie'; about EUR 16m of realised portfolio gains were booked to net equity under the Vatican Financial Management Policy rather than the income statement.",
+    "strength": "primary",
+    "sources": [
+     "vt9_vn_apsa2025"
+    ]
+   },
+   {
+    "text": "IOR account review: about 4,600 accounts closed by end-2014 (AP, ANSA) and about 4,800 in all by the review's completion in October 2015 (AIF 2015 report).",
+    "strength": "reported",
+    "sources": [
+     "vt10_ansa_aif2016"
+    ]
+   }
+  ],
+  "sources": {
+   "vt9_vn_pp2023": {
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2024-06/peter-s-pence-donations-to-pope-s-charity-on-the-rise.html",
+    "label": "Vatican News, 'Peter's Pence: donations to Pope's charity on the rise', June 2024"
+   },
+   "vt9_vn_pp2025": {
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2026-06/peter-s-pence-2025-54-5-million-to-support-pope-s-mission.html",
+    "label": "Vatican News, 'Peter's Pence 2025', 30 June 2026"
+   },
+   "vt9_vn_apsa2025": {
+    "url": "https://www.vaticannews.va/it/vaticano/news/2026-07/bilancio-apsa-2025-piccinotti.html",
+    "label": "Vatican News, 'Bilancio APSA 2025', July 2026"
+   },
+   "vt10_ansa_aif2016": {
+    "url": "https://www.ansa.it/english/news/vatican/2016/04/28/ior-closes-4800-accounts_c9cede0f-e2f2-4c31-8cb6-a374e16a4bdf.html",
+    "label": "ANSA, 'IOR closes 4,800 accounts', 28 April 2016"
+   }
+  }
  }
 }

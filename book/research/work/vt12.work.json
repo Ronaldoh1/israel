@@ -488,5 +488,23 @@
     "label": "Al Jazeera, 'Pope Francis accepts resignation of three Chilean bishops', 11 June 2018"
    }
   }
+ },
+ "vt12_audit": {
+  "topic": "Audit: status check of US diocesan bankruptcy tracker",
+  "claims": [
+   {
+    "text": "Checked 22 October 2026: the tracker's latest statement remains 'As of March 2026, forty-four US Catholic religious organizations have sought bankruptcy protection in chapter 11' (29 concluded, 15 pending); no later update shown.",
+    "strength": "primary",
+    "sources": [
+     "vt12_dick_bankruptcy2026"
+    ]
+   }
+  ],
+  "sources": {
+   "vt12_dick_bankruptcy2026": {
+    "url": "https://insight.dickinsonlaw.psu.edu/bankruptcy/index.html",
+    "label": "Penn State Dickinson Law, Catholic diocesan bankruptcy tracker"
+   }
+  }
  }
 }
