@@ -99,6 +99,13 @@
     "sources": [
      "ad10_block_alts"
     ]
+   },
+   {
+    "text": "DOL EBSA Table E7 (audit re-check), active participants DB/DC, thousands: 1978 29,036/15,628; 1987 28,427/34,853; 1993 24,986/39,408; 1996 23,133/44,337; 2004 20,586/52,158; 2004r 20,797/61,320; 2007 19,407/66,873; 2013 15,245/76,710; 2016 13,866/79,985; 2019 12,602/85,504; 2021 11,642/87,901 (DB share 65.0, 44.9, 38.8, 34.3, 28.3, 25.3, 22.5, 16.6, 14.8, 12.8, 11.7% by book arithmetic).",
+    "strength": "primary",
+    "sources": [
+     "ad10_dol_hist"
+    ]
    }
   ],
   "sources": {
@@ -233,6 +240,34 @@
     "sources": [
      "ad10_pew_older"
     ]
+   },
+   {
+    "text": "SSA history: from 1937 until 1940 Social Security paid benefits as single lump-sum payments; the 1939 Amendments added benefits for the spouse and minor children of a retired worker and survivors benefits; first monthly retirement check to Ida May Fuller, 31 Jan 1940, $22.54.",
+    "strength": "primary",
+    "sources": [
+     "ad10_audit_ssa_hist"
+    ]
+   },
+   {
+    "text": "SSA 1983 amendments summary (audit re-check): covered all Members of Congress, the President and Vice-President, federal judges and other executive-level political appointees, effective 1 Jan 1984 (later modified by P.L. 98-118 and 98-369).",
+    "strength": "primary",
+    "sources": [
+     "ad10_ssa_1983"
+    ]
+   },
+   {
+    "text": "Census Table A-3 (audit re-check): 65+ official poverty 2019 8.9%, 2020 8.9%, 2021 10.3%, 2022 10.2%, 2023 9.7%, 2024 9.9%.",
+    "strength": "primary",
+    "sources": [
+     "ad10_census_a3"
+    ]
+   },
+   {
+    "text": "Pew 2023 (audit re-check): the 65+ workforce has 'nearly quadrupled' since the mid-1980s to about 11 million; factors cited: more education, better health, shift from pensions to 401(k)-style plans, full retirement age rising to 67, more age-friendly jobs.",
+    "strength": "reported",
+    "sources": [
+     "ad10_pew_older"
+    ]
    }
   ],
   "sources": {
@@ -279,6 +314,10 @@
    "ad10_pew_older": {
     "url": "https://www.pewresearch.org/social-trends/2023/12/14/the-growth-of-the-older-workforce/",
     "label": "Pew Research Center, 'The Growth of the Older Workforce', 14 December 2023"
+   },
+   "ad10_audit_ssa_hist": {
+    "url": "https://www.ssa.gov/history/briefhistory3.html",
+    "label": "Social Security Administration, Historical Background and Development of Social Security"
    }
   }
  }

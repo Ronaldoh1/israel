@@ -158,6 +158,13 @@
     "sources": [
      "ad9_checkbook_med"
     ]
+   },
+   {
+    "text": "FRED TERMCBCCALLNS (audit re-check), November values: 1998 15.67%, 2005 12.58%, 2010 13.44%, 2015 12.22%, 2018 14.73%; Nov 2023 and Nov 2024 both 21.47%.",
+    "strength": "primary",
+    "sources": [
+     "ad9_fred_ccall"
+    ]
    }
   ],
   "sources": {
@@ -355,6 +362,20 @@
     "strength": "primary",
     "sources": [
      "us22_cfpb_od23"
+    ]
+   },
+   {
+    "text": "FDIC 2023 survey (audit re-check): responses from almost 30,000 households; White unbanked rate 1.9% (Figures ES.2/ES.6); Black-White and Hispanic-White gaps 'were present at every income level'; 10.0% of unbanked households had a traditional credit card vs 79.3% of banked; higher unbanked rates among lower-income, less-educated, Black, Hispanic, AIAN, working-age disabled, highly variable income and single-parent households; about two-thirds of the 2011-2023 decline associated with changes in household circumstances, mainly income and education.",
+    "strength": "primary",
+    "sources": [
+     "ad9_fdic2023"
+    ]
+   },
+   {
+    "text": "Goodwin (Oct 2026) on State of New York v. Vought, No. 6:25-cv-02384-AA (D. Or., 25 Sep 2026): partial summary judgment for 22 states and DC; acting director unlawfully declined to request FY2026 funding from the Fed (said '$0'); court vacated the decisions but did not enjoin FY2026 funding; NTEU v. Vought on appeal to D.C. Cir., Rise Economy v. Vought to 9th Cir.; House Financial Services advanced the CFPA Accountability and Reform Act of 2026 (appropriations).",
+    "strength": "reported",
+    "sources": [
+     "ad9_goodwin_cfpb"
     ]
    }
   ],
@@ -555,6 +576,34 @@
     "sources": [
      "ad9_orrick_bnpl"
     ]
+   },
+   {
+    "text": "CFPB Jan 2025 BNPL report (audit re-check): consumers averaged just over 100,000 daily applications in 2019 and well over 1 million loans a day by 2022 (six lenders); scaled 277.3m originated loans and $33.8bn GMV in 2022; deep subprime 45.0% and subprime 16.0% of 2021-22 originations.",
+    "strength": "primary",
+    "sources": [
+     "ad9_cfpb_bnpl2025"
+    ]
+   },
+   {
+    "text": "Pew 2012 (audit re-check): in states with no payday stores, 5 of every 100 would-be borrowers borrow online and 95 do not; 'borrowers are not driven to seek payday loans online or from other sources'; 12m borrowers figure is for 2010; spending 'more than $7 billion' a year.",
+    "strength": "primary",
+    "sources": [
+     "ad9_pew2012"
+    ]
+   },
+   {
+    "text": "Sheppard (audit re-check): CFPB announced on 28 Mar 2025, two days before the 30 Mar 2025 compliance date, that it would not prioritise enforcement of the payday payment provisions; Jul 2026 agenda planned an NPRM; no issued NPRM reported on the page.",
+    "strength": "reported",
+    "sources": [
+     "ad9_sheppard_payday"
+    ]
+   },
+   {
+    "text": "As of Dave's Q2 2026 report (summarised 5 Aug 2026), the FTC/DOJ suit seeking injunctions and monetary relief was ongoing, with no trial date, settlement or ruling reported; contingency accruals about $10m at 30 Jun 2026, not attributed to this case.",
+    "strength": "reported",
+    "sources": [
+     "ad9_audit_dave_q2"
+    ]
    }
   ],
   "sources": {
@@ -637,6 +686,10 @@
    "ad9_orrick_bnpl": {
     "url": "https://infobytes.orrick.com/2025-05-09/cfpb-states-it-will-not-enforce-rule-targeting-buy-now-pay-later-loans/",
     "label": "Orrick InfoBytes, 'CFPB states it will not enforce rule targeting buy now, pay later loans', 9 May 2025"
+   },
+   "ad9_audit_dave_q2": {
+    "url": "https://www.panabee.com/news/dave-earnings-q2-2026-report",
+    "label": "Panabee, 'Dave Earnings: 37% Revenue Growth Amidst Litigation and Refinancing Hurdles', 5 Aug 2026 (summary of Dave Q2 2026 10-Q)"
    }
   }
  }
