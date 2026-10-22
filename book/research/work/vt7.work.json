@@ -433,5 +433,34 @@
     "label": "BlueRating, 'Addio al presidente di Banca del Fucino', 2 January 2018"
    }
   }
+ },
+ "vt7_audit": {
+  "topic": "Audit corrections: Bracciano transfers; Martin V election date",
+  "claims": [
+   {
+    "text": "Flavio Orsini sold Bracciano and the ducal title to the Odescalchi in 1696; in 1803 the Torlonia family bought the ducal title and the castle; later the Odescalchi bought them back (no year given). The Torlonia family article instead says Pius VI created Giovanni Torlonia duke of Bracciano in 1794.",
+    "strength": "reported",
+    "sources": [
+     "vt7_audit_wiki_duchy"
+    ]
+   },
+   {
+    "text": "Martin V was elected pope on 11 November 1417 and died in Rome on 20 February 1431.",
+    "strength": "reported",
+    "sources": [
+     "vt7_audit_brit_martin5"
+    ]
+   }
+  ],
+  "sources": {
+   "vt7_audit_wiki_duchy": {
+    "url": "https://en.wikipedia.org/wiki/Duchy_of_Bracciano",
+    "label": "Wikipedia, 'Duchy of Bracciano', accessed 22 October 2026"
+   },
+   "vt7_audit_brit_martin5": {
+    "url": "https://www.britannica.com/biography/Martin-V",
+    "label": "Encyclopaedia Britannica, 'Martin V'"
+   }
+  }
  }
 }
