@@ -133,5 +133,23 @@
     "label": "Vatican News, 'Pope Leo XIV receives Israeli President Herzog', 4 September 2025"
    }
   }
+ },
+ "vt1_audit": {
+  "topic": "Audit additions for Part One",
+  "claims": [
+   {
+    "text": "Holy Family church, Gaza City, 17 July 2025: Pizzaballa told Vatican News he believed a shell from an Israeli tank hit the church ('they hit the church directly'), adding 'we are not sure about this'; Netanyahu described the cause as 'stray ammunition'; IDF said the strike was under investigation; three killed, ten injured.",
+    "strength": "reported",
+    "sources": [
+     "vt1_audit_ncr_holyfamily"
+    ]
+   }
+  ],
+  "sources": {
+   "vt1_audit_ncr_holyfamily": {
+    "url": "https://www.ncronline.org/vatican/vatican-news/netanyahu-calls-pope-expresses-regret-over-gaza-church-strike-killed-3",
+    "label": "National Catholic Reporter, 'Netanyahu calls pope, expresses regret over Gaza church strike that killed 3', 18 July 2025"
+   }
+  }
  }
 }
