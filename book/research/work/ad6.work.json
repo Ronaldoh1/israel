@@ -114,6 +114,69 @@
     "sources": [
      "ad6_glaeser_gyourko"
     ]
+   },
+   {
+    "text": "FEDS Note Table 2: FHA mortgages held by 13.4% of all owners in the bottom income tercile vs 20.5% in the top tercile (recent buyers 12.9% vs 22.4%); VA mortgages raised the aggregate homeownership rate 'by about 7 percent' (Fetter 2013).",
+    "strength": "primary",
+    "sources": [
+     "ad6_fed_frydman"
+    ]
+   },
+   {
+    "text": "Turner and Bound: WWII service plus GI benefits raised white men's attainment about 0.3 years of college; Black men born outside the South about 0.4 years; few gains for Southern-born Black men.",
+    "strength": "reported",
+    "sources": [
+     "ad6_turnerbound"
+    ]
+   },
+   {
+    "text": "Euclid v. Ambler (decided 22 Nov 1926, Sutherland J.): upheld a zoning ordinance excluding apartment houses from residential districts; 'very often the apartment house is a mere parasite'.",
+    "strength": "primary",
+    "sources": [
+     "ad6_audit_euclid"
+    ]
+   },
+   {
+    "text": "NYT Upshot (Badger and Bui, 18 June 2019): it is illegal on 75 percent of the residential land in many American cities to build anything other than a detached single-family home (UrbanFootprint data).",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_uf_nyt2019"
+    ]
+   },
+   {
+    "text": "Reason (Mar 2023): Minneapolis first jurisdiction to eliminate single-family-only zoning, late 2018 (in force 2020), 104 new duplex/triplex units in first two years; Oregon, California and Maine passed statewide laws allowing at least duplexes on almost all residential land; California SB 9 effective Jan 2022, Terner Center found construction limited or non-existent in 13 cities (LA 38 approvals, SF 4); Portland 127 units Aug 2021–Feb 2022.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_reason_zoning"
+    ]
+   },
+   {
+    "text": "Oregon Legislature passed HB 2001 (June/July 2019), requiring cities to allow duplexes and in larger cities other middle housing in single-family zones.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_wgcu_or"
+    ]
+   },
+   {
+    "text": "Washington HB 1110 signed 8 May 2023: cities of 25,000–75,000 must allow duplexes in all residential zones (fourplexes near transit or with affordability); over 75,000 fourplexes everywhere, sixplexes near transit or with two affordable units.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_fox13_wa"
+    ]
+   },
+   {
+    "text": "Levittown NY: Levitt began spring 1947 and by November 1951 had built 17,447 houses; homes sold for under $8,000 with 5% down, 0% for veterans; clause 25 barred occupancy by non-Caucasians.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_lipress_levitt"
+    ]
+   },
+   {
+    "text": "Levittown NY census: 57 Black residents of 65,276 in 1960 (Lizabeth Cohen); 45 of 57,045 in 1980; 387 of 53,067 in 2000.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_sundown_levitt"
+    ]
    }
   ],
   "sources": {
@@ -172,6 +235,34 @@
    "ad6_glaeser_gyourko": {
     "url": "https://www.hks.harvard.edu/publications/economic-implications-housing-supply",
     "label": "Edward Glaeser and Joseph Gyourko, 'The Economic Implications of Housing Supply', Journal of Economic Perspectives 32(1), 2018 (abstract)"
+   },
+   "ad6_audit_euclid": {
+    "url": "https://supreme.justia.com/cases/federal/us/272/365/",
+    "label": "Village of Euclid v. Ambler Realty Co., 272 U.S. 365 (decided 22 Nov 1926), opinion of Justice Sutherland (Justia)"
+   },
+   "ad6_audit_uf_nyt2019": {
+    "url": "https://urbanfootprint.com/news/new-york-times-features-urbanfootprint-zoning-data-and-analysis/",
+    "label": "UrbanFootprint, on Emily Badger and Quoctrung Bui, 'Cities Start to Question an American Ideal: A House With a Yard on Every Lot', New York Times Upshot, 18 June 2019"
+   },
+   "ad6_audit_reason_zoning": {
+    "url": "https://reason.com/2023/03/14/despite-multiple-states-abolishing-single-family-only-zoning-very-few-duplexes-and-triplexes-are-being-built/printer/",
+    "label": "Christian Britschgi, Reason, 'Despite Multiple States Abolishing Single-Family-Only Zoning, Very Few Duplexes and Triplexes Are Being Built', 14 Mar 2023"
+   },
+   "ad6_audit_wgcu_or": {
+    "url": "https://www.wgcu.org/2019-07-01/oregon-legislature-votes-to-essentially-ban-single-family-zoning",
+    "label": "NPR via WGCU, 'Oregon Legislature Votes To Essentially Ban Single-Family Zoning', 1 July 2019"
+   },
+   "ad6_audit_fox13_wa": {
+    "url": "https://www.fox13seattle.com/news/inslee-signs-law-allowing-duplexes-fourplexes",
+    "label": "FOX 13 Seattle, 'Inslee signs law allowing duplexes, fourplexes', 8 May 2023"
+   },
+   "ad6_audit_lipress_levitt": {
+    "url": "https://longislandpress.com/2022/02/09/levittown-americas-first-suburb-historically-shunned-black-families",
+    "label": "Long Island Press, 'Levittown, America's First Suburb, Historically Shunned Black Families', 9 Feb 2022"
+   },
+   "ad6_audit_sundown_levitt": {
+    "url": "https://justice.tougaloo.edu/sundowntown/levittown-ny/",
+    "label": "History and Social Justice (Tougaloo College; James Loewen sundown-towns database), 'Levittown, NY'"
    }
   }
  },
@@ -269,6 +360,20 @@
     "strength": "primary",
     "sources": [
      "ad6_jchs_2025"
+    ]
+   },
+   {
+    "text": "Audit re-fetch (22 Oct 2026) of FRED RHORUSQ156N first-quarter values used in the series file: 1965 62.9; 1975 64.4; 2004 Q1 68.6 (Q2 69.2); 2016 Q1 63.5 (Q2 62.9); 2026 Q1 65.3, Q2 65.0.",
+    "strength": "primary",
+    "sources": [
+     "ad6_fred_hor"
+    ]
+   },
+   {
+    "text": "Book arithmetic (standard amortisation, 360 payments, per $100,000): 3.00% $421.6; 6.27% $617.0; 7.40% $692.4 a month; 692.4/421.6 = 1.64.",
+    "strength": "primary",
+    "sources": [
+     "ad6_pmms"
     ]
    }
   ],
@@ -444,6 +549,27 @@
     "sources": [
      "ad6_crs_homeless26"
     ]
+   },
+   {
+    "text": "Atlanta Legal Aid: Harbour bought hundreds of homes in Atlanta and thousands nationwide, mostly from Fannie Mae and Freddie Mac, sometimes for as little as $10,000; complaint filed for seventeen African-American consumers; settlement gave actual damages and restructured mortgages.",
+    "strength": "reported",
+    "sources": [
+     "ad6_atlegal_harbour"
+    ]
+   },
+   {
+    "text": "Humphries et al. (Cook County court records linked to credit data, judge-leniency design): financial strain is high and rises sharply before a filing for evicted and non-evicted tenants alike; eviction reduces credit access and durable consumption for several years, but the effects are small relative to that prior strain.",
+    "strength": "primary",
+    "sources": [
+     "ad6_audit_nber_humphries"
+    ]
+   },
+   {
+    "text": "Evicted 'takes us into the poorest neighborhoods of Milwaukee to tell the story of eight families on the edge'.",
+    "strength": "reported",
+    "sources": [
+     "ad6_audit_prh_evicted"
+    ]
    }
   ],
   "sources": {
@@ -522,6 +648,14 @@
    "ad6_crs_homeless26": {
     "url": "https://www.everycrsreport.com/files/2026-07-16_IF12985_72d0a36116392bd1d0a8436319884dc54412a17c.html",
     "label": "Congressional Research Service, IF12985, homelessness PIT data, updated 16 July 2026"
+   },
+   "ad6_audit_nber_humphries": {
+    "url": "https://www.nber.org/papers/w26139",
+    "label": "John Eric Humphries, Nicholas S. Mader, Daniel I. Tannenbaum and Winnie L. van Dijk, 'Does Eviction Cause Poverty? Quasi-Experimental Evidence from Cook County, IL', NBER WP 26139, Aug 2019"
+   },
+   "ad6_audit_prh_evicted": {
+    "url": "https://www.penguinrandomhouse.com/books/247816/evicted-by-matthew-desmond/readers-guide/",
+    "label": "Penguin Random House, Evicted by Matthew Desmond, reader's guide"
    }
   }
  }
