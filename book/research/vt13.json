@@ -1,0 +1,610 @@
+{
+ "volume": "vatican",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "vt13_schools",
+   "stage": "vt13",
+   "topic": "Catholic schools, universities, health and charity institutions worldwide and by continent; US Catholic schools; canon law definition of a Catholic school",
+   "claims": [
+    {
+     "text": "Fides (17 October 2025), from the Church's Book of Statistics: Catholics 1,405,454,000 at 30 June 2023 (17.8% of world population); other data to 31 December 2023.",
+     "strength": "primary",
+     "sources": [
+      "vt13_fides2025",
+      "vt13_pv_dossier"
+     ]
+    },
+    {
+     "text": "Catholic educational institutions worldwide at 31 Dec 2023: 74,550 kindergartens with 7,639,051 pupils; 102,455 primary schools with 36,199,844 pupils; 52,085 secondary schools with 20,724,361 pupils; 2,688,625 students in higher institutes; 4,468,875 university students.",
+     "strength": "primary",
+     "sources": [
+      "vt13_pv_dossier",
+      "vt13_cna_stats",
+      "vt13_fides2025"
+     ]
+    },
+    {
+     "text": "By continent (31 Dec 2023): primary schools Africa 45,206 (21,125,043 pupils), America 21,213 (5,676,520), Asia 16,273 (5,687,465), Europe 15,671 (2,925,220), Oceania 4,092 (785,596); secondary schools Africa 18,392, America 11,765, Asia 11,629, Europe 9,539, Oceania 760; kindergartens Africa 21,091, America 15,474, Asia 14,060, Europe 22,445, Oceania 1,480; university students America 2,543,486, Europe 1,032,715, Asia 542,898, Africa 315,276, Oceania 34,500.",
+     "strength": "primary",
+     "sources": [
+      "vt13_fides_pdf"
+     ]
+    },
+    {
+     "text": "Catholic charity and health institutions at 31 Dec 2023: 103,951 in total, including 5,377 hospitals (Africa 1,634; America 1,391; Asia 1,166; Europe 960; Oceania 226), 13,895 dispensaries, 504 leprosaria, 15,566 homes for the elderly, chronically ill and disabled (Europe 8,515), 8,593 orphanages, 10,858 creches, 10,827 marriage counselling centres, 3,147 social re-education centres, 35,184 other institutions.",
+     "strength": "primary",
+     "sources": [
+      "vt13_fides_pdf",
+      "vt13_fides2025"
+     ]
+    },
+    {
+     "text": "The press-office summary lists categories summing to 95,358 without orphanages; the Fides continental dossier lists 8,593 orphanages, which closes the gap to 103,951. CNA gave 'other' as 5,184; Fides and the press office give 35,184.",
+     "strength": "reported",
+     "sources": [
+      "vt13_pv_dossier",
+      "vt13_fides_pdf",
+      "vt13_cna_stats"
+     ]
+    },
+    {
+     "text": "Catholics by continent (30 June 2023): Africa 280,732,000 (19.8%); America 671,877,000 (64.2%); Asia 155,198,000 (3.3%); Europe 286,329,000 (39.6%); Oceania 11,318,000 (25.9%).",
+     "strength": "primary",
+     "sources": [
+      "vt13_fides_pdf"
+     ]
+    },
+    {
+     "text": "NCEA, 24 March 2026: 5,829 US Catholic schools in 2025-26 (4,644 elementary/middle, 1,185 secondary); enrollment 1,674,907; 22.2% (372,244) non-Catholic; data from 176 (arch)diocesan offices.",
+     "strength": "primary",
+     "sources": [
+      "vt13_ncea2026"
+     ]
+    },
+    {
+     "text": "Canon 803 §1: a Catholic school is one which a competent ecclesiastical authority or a public ecclesiastical juridic person directs, or which ecclesiastical authority recognizes as such in writing; §3 no school may bear the name Catholic without consent of competent ecclesiastical authority. Canon 806 §1: the diocesan bishop may watch over and visit Catholic schools in his territory, even those founded or directed by religious institutes. Canon 808: no university may bear the name Catholic without consent. Canon 812: teachers of theological disciplines need a mandate from competent ecclesiastical authority. Canon 816: ecclesiastical universities and faculties are erected or approved by the Apostolic See, which holds their higher direction.",
+     "strength": "primary",
+     "sources": [
+      "vt13_cic_803"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "vt13_fides2025",
+     "url": "https://www.fides.org/en/news/76919-VATICAN_Catholic_Church_Statistics_2025",
+     "label": "Agenzia Fides, 'VATICAN - Catholic Church Statistics 2025', 17 October 2025"
+    },
+    {
+     "key": "vt13_fides_pdf",
+     "url": "https://www.fides.org/de/attachments/view/file/Catholic_Church_Statistics_2025.pdf",
+     "label": "Agenzia Fides, 'Catholic Church Statistics 2025' (dossier with continental tables, from the Annuarium Statisticum Ecclesiae; data to 31 December 2023)"
+    },
+    {
+     "key": "vt13_pv_dossier",
+     "url": "https://press.vatican.va/content/dam/salastampa/it/fuori-bollettino/pdf/Lancio%20Sintesi%20Dossier%20Statistiche%202025.pdf",
+     "label": "Holy See Press Office / Fides, 'Sintesi Dossier Statistiche 2025' (PDF), October 2025"
+    },
+    {
+     "key": "vt13_cna_stats",
+     "url": "https://www.ncregister.com/cna/worldwide-catholic-population-up-vocations-down",
+     "label": "Almudena Martínez-Bordiú, ACI Prensa/CNA, 'Worldwide Catholic population up, vocations down', National Catholic Register, 18 October 2025"
+    },
+    {
+     "key": "vt13_ncea2026",
+     "url": "https://ncea.org/NCEA/How_We_Serve/News/Press_Releases/National-Data-Highlights-Strong-Demand-and-Growing-Diversity-and-Inclusion-in-Catholic-Schools.aspx",
+     "label": "National Catholic Educational Association, press release on 2025-2026 national data, 24 March 2026"
+    },
+    {
+     "key": "vt13_cic_803",
+     "url": "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib3-cann793-821_en.html",
+     "label": "Code of Canon Law (1983), Book III, canons 793-821 (vatican.va)"
+    }
+   ]
+  },
+  {
+   "id": "vt13_jesuit_universities",
+   "stage": "vt13",
+   "topic": "Jesuit higher education: IAJU/AJCU counts, the '228' claim, Georgetown, Gregorian, governance after 1967, Ex corde Ecclesiae",
+   "claims": [
+    {
+     "text": "The 2024 'Jesuit World of Universities and Schools' map (IAJU, JGNS, Educate Magis; published 30 October 2024) counts 177 IAJU universities and 3,452 schools (937 JGNS, 2,127 Fe y Alegria, 388 JRS), 3,629 institutions in all; it calls the figures a snapshot as institutions join or leave.",
+     "strength": "primary",
+     "sources": [
+      "vt13_em_map2024"
+     ]
+    },
+    {
+     "text": "IAJU was founded in 2018 with the approval of Superior General Arturo Sosa; it has six regional associations: AJCU-AP, AJCU (North America), AJCU-AM, Kircher Network, JHEASA and AUSJAL.",
+     "strength": "primary",
+     "sources": [
+      "vt13_javeriana_iaju"
+     ]
+    },
+    {
+     "text": "AJCU states it has 28 member institutions in 17 states, DC and Belize (27 in the US), plus three associate members in Canada; Wheeling Jesuit University disaffiliated in 2019 and St. John's College, Belize, became the 28th member in July 2020; AJCU became its own national organization in 1970.",
+     "strength": "primary",
+     "sources": [
+      "vt13_ajcu_home",
+      "vt13_ajcu_about",
+      "vt13_jesuits_stjohns"
+     ]
+    },
+    {
+     "text": "Wikipedia's list of Jesuit educational institutions gave 189 colleges and universities (no date); no source found for a count of 228 Jesuit universities; Grendler: over 700 Jesuit colleges in Europe by 1749 and about a hundred elsewhere (before the suppression).",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_jesuitlist",
+      "vt13_em_map2024"
+     ]
+    },
+    {
+     "text": "Georgetown: established 1789 by John Carroll; 'the oldest Catholic and Jesuit institution of higher learning in the United States'; John J. DeGioia (2001) was its 48th and first lay president.",
+     "strength": "primary",
+     "sources": [
+      "vt13_gu_history"
+     ]
+    },
+    {
+     "text": "Gregorian University: Ignatius of Loyola established a school in Rome in 1551; Gregory XIII built a new seat inaugurated 1584 and is called 'founder and protector'; Pius IX gave it the name Pontifical Gregorian University in 1873; Benedict XVI in 2006 confirmed its entrustment to the Society of Jesus.",
+     "strength": "primary",
+     "sources": [
+      "vt13_unigre_history"
+     ]
+    },
+    {
+     "text": "Notre Dame: in January 1967 the Congregation of Holy Cross approved, and the Vatican permitted, transfer of governance to a two-tier board of lay and religious trustees and fellows; Holy Cross had governed it since 1842. Land O'Lakes (1967), drafted by Neil McCluskey at Hesburgh's request, said a Catholic university needs true autonomy and academic freedom in the face of authority external to the academic community.",
+     "strength": "primary",
+     "sources": [
+      "vt13_nd_hesburgh",
+      "vt13_wiki_landolakes"
+     ]
+    },
+    {
+     "text": "Boston College: chartered 1863, opened 5 September 1864; Jesuits ran it as presidents, teachers and administrators; in 1972 a new board of Jesuit and lay trustees took legal responsibility.",
+     "strength": "primary",
+     "sources": [
+      "vt13_bc_jesuithist"
+     ]
+    },
+    {
+     "text": "Ex corde Ecclesiae issued 15 August 1990 by John Paul II; US bishops approved the Application 17 November 1999; recognitio from the Congregation for Bishops 3 May 2000; in force 3 May 2001; Catholic theology teachers need a mandatum from the diocesan bishop (an acknowledgement, not an appointment; the professor's responsibility); boards should 'to the extent possible' have a Catholic majority; the president should be Catholic.",
+     "strength": "primary",
+     "sources": [
+      "vt13_usccb_excorde",
+      "vt13_wiki_landolakes"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "vt13_em_map2024",
+     "url": "https://www.educatemagis.org/global-stories/the-new-edition-of-the-jesuit-world-of-universities-and-schools-2024-printable-map-is-available/",
+     "label": "Educate Magis, 'The new edition of the Jesuit World of Universities and Schools (2024) printable map is available', 30 October 2024"
+    },
+    {
+     "key": "vt13_javeriana_iaju",
+     "url": "https://www.javeriana.edu.co/assembly-iaju-2025/about/iaju",
+     "label": "Pontificia Universidad Javeriana, IAJU Assembly 2025, 'About IAJU'"
+    },
+    {
+     "key": "vt13_ajcu_home",
+     "url": "https://ajcunet.edu/",
+     "label": "Association of Jesuit Colleges and Universities, home page (accessed 22 October 2026)"
+    },
+    {
+     "key": "vt13_ajcu_about",
+     "url": "https://iaju.org/node/41",
+     "label": "AJCU, 'Mission & Purpose' (history page on iaju.org)"
+    },
+    {
+     "key": "vt13_jesuits_stjohns",
+     "url": "https://www.jesuits.org/press-release/st-johns-college-joins-association-of-jesuit-colleges-and-universities/",
+     "label": "Jesuit Conference, 'St. John's College Joins Association of Jesuit Colleges and Universities', 20 July 2020"
+    },
+    {
+     "key": "vt13_wiki_jesuitlist",
+     "url": "https://en.wikipedia.org/wiki/List_of_Jesuit_educational_institutions",
+     "label": "Wikipedia, 'List of Jesuit educational institutions' (accessed 22 October 2026)"
+    },
+    {
+     "key": "vt13_gu_history",
+     "url": "https://www.georgetown.edu/about/history",
+     "label": "Georgetown University, 'The Founding of Georgetown' / history page"
+    },
+    {
+     "key": "vt13_unigre_history",
+     "url": "https://www.unigre.it/en/university/about-us/our-history/",
+     "label": "Pontifical Gregorian University, 'Our History'"
+    },
+    {
+     "key": "vt13_nd_hesburgh",
+     "url": "https://hesburgh.nd.edu/fr-teds-life/a-leader-in-higher-education/creating-a-catholic-university-for-the-21st-century-world/",
+     "label": "University of Notre Dame, Hesburgh portal, 'Creating a Catholic university for the 21st century world'"
+    },
+    {
+     "key": "vt13_wiki_landolakes",
+     "url": "https://en.wikipedia.org/wiki/Land_O%27Lakes_Statement",
+     "label": "Wikipedia, 'Land O'Lakes Statement'"
+    },
+    {
+     "key": "vt13_usccb_excorde",
+     "url": "https://www.usccb.org/about/doctrine/publications/ex-corde-ecclesiae.cfm",
+     "label": "USCCB, 'The Application of Ex corde Ecclesiae for the United States' (with decree of promulgation)"
+    },
+    {
+     "key": "vt13_bc_jesuithist",
+     "url": "https://bc.edu/bc-web/sites/historian/Jesuit-History.html",
+     "label": "Boston College, University Historian, 'Jesuit History at BC'"
+    }
+   ]
+  },
+  {
+   "id": "vt13_ledger_uva",
+   "stage": "vt13",
+   "topic": "33-university ledger (US News 2027 ranks 1-31) by founding tradition; UVA as contrast",
+   "claims": [
+    {
+     "text": "U.S. News 2027 Best National Universities (released 22-23 September 2026): 1 MIT; 2 Princeton; 3 Harvard; 4 Yale; 5= Caltech, Stanford; 7 Penn; 8 Duke; 9= Johns Hopkins, Northwestern, Chicago; 12= Columbia, Dartmouth; 14= Carnegie Mellon, Cornell; 16= Brown, Rice, Vanderbilt, WashU; 20= UC Berkeley, UCLA, Notre Dame; 23= Emory, Georgetown; 25 Michigan; 26 Virginia; 27= UNC Chapel Hill, USC; 29= Georgia Tech, UC San Diego; 31= Boston College, NYU, Tufts. These 33 institutions occupy ranks 1-31; the next rank is 34.",
+     "strength": "reported",
+     "sources": [
+      "vt13_pq_usnews2027a",
+      "vt13_pq_usnews2027b",
+      "vt13_boston_usnews"
+     ]
+    },
+    {
+     "text": "Colonial colleges: Harvard 1636 Congregationalist; Yale 1701 (Collegiate School) Congregationalist; Princeton 1746 (College of New Jersey) Presbyterian but 'officially nonsectarian'; Columbia 1754 (King's College) Church of England with a commitment to religious liberty; Penn 1740 (date adopted 1899; charter 1755) Church of England but 'officially nonsectarian'; Brown 1764 (College of Rhode Island) Baptist, no religious test for admission; Dartmouth 1769 Congregationalist.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_colonial"
+     ]
+    },
+    {
+     "text": "MIT chartered 10 April 1861 (William Barton Rogers), land-grant; Caltech founded 23 September 1891 as Throop University by Amos G. Throop; Stanford founded 1885 by Leland and Jane Stanford, opened 1 October 1891, intended to be nonsectarian; Johns Hopkins incorporated 1867, opened 1876, founded by the bequest of Johns Hopkins, a Quaker; Carnegie Mellon from Carnegie Technical Schools (1900) and Mellon Institute (1913), merged 1967; Cornell founded 27 April 1865 by Ezra Cornell and Andrew Dickson White, nonsectarian since founding, private land-grant; Rice chartered 1891 under William Marsh Rice's plan, opened 23 September 1912; NYU chartered 21 April 1831, Albert Gallatin, created without denominational ties.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_mit",
+      "vt13_wiki_caltech",
+      "vt13_stanford_hist",
+      "vt13_wiki_jhu",
+      "vt13_wiki_cmu",
+      "vt13_wiki_cornell",
+      "vt13_wiki_rice",
+      "vt13_wiki_nyu"
+     ]
+    },
+    {
+     "text": "WashU chartered 22 February 1853 (drafted by Wayman Crow as 'Eliot Seminary'); William Greenleaf Eliot, a Unitarian minister, changed the name and insisted it remain 'forever nonsectarian and politically nonpartisan'.",
+     "strength": "primary",
+     "sources": [
+      "vt13_washu_hist"
+     ]
+    },
+    {
+     "text": "Duke: 1838 Brown's Schoolhouse organised by Methodists and Quakers; Trinity College 1859; renamed Duke 1924 after the $40m Duke Endowment; infobox lists United Methodist Church, article calls it nonsectarian with ongoing church ties. Northwestern: chartered 28 January 1851 by nine Methodist founders, affiliated with the Methodist Episcopal Church, later non-sectarian. Chicago: 1890, incorporated by the American Baptist Education Society with Rockefeller's $600,000. USC: 6 October 1880, Robert Widney, Methodist ties, severed formal church ties 1952. Tufts: 1852, Universalists, now nonsectarian.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_duke",
+      "vt13_wiki_nu",
+      "vt13_wiki_uchicago",
+      "vt13_wiki_usc",
+      "vt13_wiki_tufts"
+     ]
+    },
+    {
+     "text": "Vanderbilt founded 1873 with Cornelius Vanderbilt's gift, under Bishop Holland McTyeire of the Methodist Episcopal Church, South; Board of Trust severed ties with the church in June 1914. Emory founded 1836 as Emory College by the Georgia Conference of the Methodist Episcopal Church; keeps a 'historical affiliation' with the United Methodist Church (Candler School of Theology).",
+     "strength": "primary",
+     "sources": [
+      "vt13_vu_manual",
+      "vt13_emory_methodist"
+     ]
+    },
+    {
+     "text": "Notre Dame founded 26 November 1842 by Edward Sorin of the Congregation of Holy Cross; governed by the Congregation until 1967, then by Board of Fellows (12, half Holy Cross) and Board of Trustees; Roman Catholic.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_nd"
+     ]
+    },
+    {
+     "text": "University of California chartered 23 March 1868 (Organic Act); UCLA campus 1919; UC San Diego 1960; public land-grant. Michigan founded 26 August 1817 in Detroit as the Catholepistemiad by the territorial legislature, with Judge Augustus Woodward, Rev. John Monteith and Fr Gabriel Richard; moved to Ann Arbor 1837. UNC chartered 11 December 1789, opened 1795. Georgia Tech created 13 October 1885 as Georgia School of Technology, public.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_uc",
+      "vt13_um_founding",
+      "vt13_ncdncr_unc",
+      "vt13_wiki_gt"
+     ]
+    },
+    {
+     "text": "Rockfish Gap Report, 4 August 1818: 'In conformity with the principles of our constitution, which places all sects of religion on an equal footing ... we have proposed no professor of Divinity'; 'the proofs of the being of a god ... will be within the province of the professor of ethics'.",
+     "strength": "primary",
+     "sources": [
+      "vt13_fo_rockfish"
+     ]
+    },
+    {
+     "text": "UVA: Rockfish Gap commissioners met 1 August 1818; General Assembly act of 25 January 1819 established the charter; first Board of Visitors with Jefferson as Rector 1819; opened 7 March 1825; Jefferson died 4 July 1826, called 'Father of the University of Virginia'.",
+     "strength": "primary",
+     "sources": [
+      "vt13_uva_charter",
+      "vt13_monticello_timeline"
+     ]
+    },
+    {
+     "text": "Founders Online holds Thomas Jefferson's draft of the Rockfish Gap Report (ca. 28 June 1818); the final report is dated 4 August 1818.",
+     "strength": "primary",
+     "sources": [
+      "vt13_fo_rockfish_draft"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "vt13_pq_usnews2027a",
+     "url": "https://poetsandquantsforundergrads.com/news/u-s-news-best-colleges-ranking-2027-mit-ends-princetons-long-run-at-the-top/",
+     "label": "Kristy Bleizeffer, Poets&Quants for Undergrads, 'U.S. News Best Colleges Ranking 2027: MIT Ends Princeton's Long Run At The Top', 23 September 2026 (top 10)"
+    },
+    {
+     "key": "vt13_pq_usnews2027b",
+     "url": "https://poetsandquantsforundergrads.com/news/u-s-news-best-colleges-ranking-2027-mit-ends-princetons-long-run-at-the-top/2/",
+     "label": "Poets&Quants for Undergrads, same article, page 2 (ranks 12-50), 23 September 2026"
+    },
+    {
+     "key": "vt13_boston_usnews",
+     "url": "https://boston.com/news/education/2026/09/22/the-best-colleges-in-the-country-in-2027-according-to-u-s-news",
+     "label": "Elizabeth Mehler, Boston.com, 'The best colleges in the country in 2027, according to U.S. News', 22 September 2026"
+    },
+    {
+     "key": "vt13_wiki_colonial",
+     "url": "https://en.wikipedia.org/wiki/Colonial_colleges",
+     "label": "Wikipedia, 'Colonial colleges' (table of founding dates and affiliations)"
+    },
+    {
+     "key": "vt13_wiki_mit",
+     "url": "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+     "label": "Wikipedia, 'Massachusetts Institute of Technology'"
+    },
+    {
+     "key": "vt13_wiki_caltech",
+     "url": "https://en.wikipedia.org/wiki/California_Institute_of_Technology",
+     "label": "Wikipedia, 'California Institute of Technology'"
+    },
+    {
+     "key": "vt13_stanford_hist",
+     "url": "https://stanford.edu/about/history",
+     "label": "Stanford University, 'History'"
+    },
+    {
+     "key": "vt13_wiki_duke",
+     "url": "https://en.wikipedia.org/wiki/Duke_University",
+     "label": "Wikipedia, 'Duke University'"
+    },
+    {
+     "key": "vt13_wiki_jhu",
+     "url": "https://en.wikipedia.org/wiki/Johns_Hopkins_University",
+     "label": "Wikipedia, 'Johns Hopkins University'"
+    },
+    {
+     "key": "vt13_wiki_nu",
+     "url": "https://en.wikipedia.org/wiki/Northwestern_University",
+     "label": "Wikipedia, 'Northwestern University'"
+    },
+    {
+     "key": "vt13_wiki_uchicago",
+     "url": "https://en.wikipedia.org/wiki/University_of_Chicago",
+     "label": "Wikipedia, 'University of Chicago'"
+    },
+    {
+     "key": "vt13_wiki_cmu",
+     "url": "https://en.wikipedia.org/wiki/Carnegie_Mellon_University",
+     "label": "Wikipedia, 'Carnegie Mellon University'"
+    },
+    {
+     "key": "vt13_wiki_cornell",
+     "url": "https://en.wikipedia.org/wiki/Cornell_University",
+     "label": "Wikipedia, 'Cornell University'"
+    },
+    {
+     "key": "vt13_wiki_rice",
+     "url": "https://en.wikipedia.org/wiki/Rice_University",
+     "label": "Wikipedia, 'Rice University'"
+    },
+    {
+     "key": "vt13_vu_manual",
+     "url": "https://www.vanderbilt.edu/faculty-manual/part1-the-university-and-its-governance/ch-1-about-vanderbilt-university/",
+     "label": "Vanderbilt University Faculty Manual, ch. 1, 'About Vanderbilt University'"
+    },
+    {
+     "key": "vt13_washu_hist",
+     "url": "https://washu.edu/about-washu/history-and-traditions/",
+     "label": "Washington University in St. Louis, 'History and Traditions'"
+    },
+    {
+     "key": "vt13_wiki_uc",
+     "url": "https://en.wikipedia.org/wiki/University_of_California",
+     "label": "Wikipedia, 'University of California'"
+    },
+    {
+     "key": "vt13_wiki_nd",
+     "url": "https://en.wikipedia.org/wiki/University_of_Notre_Dame",
+     "label": "Wikipedia, 'University of Notre Dame'"
+    },
+    {
+     "key": "vt13_emory_methodist",
+     "url": "https://religiouslife.emory.edu/about_us/emory-methodist-heritage.html",
+     "label": "Emory University, Office of Spiritual and Religious Life, 'Emory's Methodist Heritage'"
+    },
+    {
+     "key": "vt13_wiki_usc",
+     "url": "https://en.wikipedia.org/wiki/University_of_Southern_California",
+     "label": "Wikipedia, 'University of Southern California'"
+    },
+    {
+     "key": "vt13_wiki_tufts",
+     "url": "https://en.wikipedia.org/wiki/Tufts_University",
+     "label": "Wikipedia, 'Tufts University'"
+    },
+    {
+     "key": "vt13_wiki_nyu",
+     "url": "https://en.wikipedia.org/wiki/New_York_University",
+     "label": "Wikipedia, 'New York University'"
+    },
+    {
+     "key": "vt13_um_founding",
+     "url": "https://apps.lib.umich.edu/online-exhibits/exhibits/show/creating-a-campus/creating-a-campus/founding",
+     "label": "University of Michigan Library, online exhibit 'The Founding (1817-1837)'"
+    },
+    {
+     "key": "vt13_ncdncr_unc",
+     "url": "https://www.dncr.nc.gov/blog/2016/12/11/general-assembly-chartered-unc",
+     "label": "North Carolina Department of Natural and Cultural Resources, 'General Assembly Chartered UNC', 11 December 2016"
+    },
+    {
+     "key": "vt13_wiki_gt",
+     "url": "https://en.wikipedia.org/wiki/Georgia_Tech",
+     "label": "Wikipedia, 'Georgia Tech'"
+    },
+    {
+     "key": "vt13_fo_rockfish",
+     "url": "https://founders.archives.gov/documents/Jefferson/03-13-02-0197-0006",
+     "label": "Report of the Commissioners for the University of Virginia (Rockfish Gap Report), 4 August 1818, Founders Online (National Archives)"
+    },
+    {
+     "key": "vt13_monticello_timeline",
+     "url": "https://www.monticello.org/encyclopedia/timeline-founding-university-virginia",
+     "label": "Thomas Jefferson Foundation (Monticello), 'Timeline of the Founding of the University of Virginia'"
+    },
+    {
+     "key": "vt13_uva_charter",
+     "url": "https://news.virginia.edu/node/265931",
+     "label": "UVA Today, 'Legislature Issues Special Resolution Honoring Bicentennial of UVA's Charter', 25 January 2019"
+    },
+    {
+     "key": "vt13_fo_rockfish_draft",
+     "url": "https://founders.archives.gov/documents/Jefferson/03-13-02-0197-0004",
+     "label": "Founders Online, 'Thomas Jefferson's Draft of the Rockfish Gap Report of the University of Virginia Commissioners, [ca. 28 June 1818]'"
+    }
+   ]
+  },
+  {
+   "id": "vt13_appointments_nuncios",
+   "stage": "vt13",
+   "topic": "How bishops are appointed (canon 377, nuncio, Dicastery for Bishops), China agreement and practice 2023-2026, nunciature count, ecumenical links (JDDJ, Orthodox, Anglican)",
+   "claims": [
+    {
+     "text": "Canon 377 §1: 'The Supreme Pontiff freely appoints bishops or confirms those legitimately elected.' §2: bishops of a province or conference compile, at least every three years, in secret, a list of suitable presbyters for the Apostolic See. §3: for a diocesan or coadjutor bishop the pontifical legate gathers suggestions (metropolitan, suffragans, conference president, some consultors and chapter, and if expedient clergy and laity) and sends a terna to the Apostolic See with his own opinion. §5: 'In the future, no rights and privileges of election, nomination, presentation, or designation of bishops are granted to civil authorities.'",
+     "strength": "primary",
+     "sources": [
+      "vt13_cic_377"
+     ]
+    },
+    {
+     "text": "I.Media (10 January 2026): the Holy See has 128 nunciatures; 184 states plus the EU and Order of Malta have relations; 93 diplomatic missions in Rome; 12 countries have no formal ties.",
+     "strength": "reported",
+     "sources": [
+      "vt13_aleteia_dipl2026"
+     ]
+    },
+    {
+     "text": "Shen Bin was installed bishop of Shanghai in April 2023 without Holy See approval, breaching the provisional deal; Francis confirmed him on 15 July 2023; Parolin said the Pope wished to 'remedy the canonical irregularity'.",
+     "strength": "reported",
+     "sources": [
+      "vt13_tablet_shenbin"
+     ]
+    },
+    {
+     "text": "Leo XIV appointed Paul Liu Honggang bishop of Datong on 10 August 2026 (ordained, announced 31 August 2026), the 19th bishop appointed under the 2018 agreement and the seventh Chinese bishop approved by Leo XIV; the Patriotic Association said he was 'elected' on 28 April 2026; the agreement's terms remain secret.",
+     "strength": "reported",
+     "sources": [
+      "vt13_aleteia_datong"
+     ]
+    },
+    {
+     "text": "Leo XIV appointed Andrea Ding Yang Archbishop of Chongqing on 28 July 2026 'within the Provisional Agreement'; he was ordained on 8 September 2026.",
+     "strength": "primary",
+     "sources": [
+      "vt13_vn_chongqing"
+     ]
+    },
+    {
+     "text": "JDDJ signed October 1999 in Augsburg by the Lutheran World Federation and the Pontifical Council for Promoting Christian Unity (Ishmael Noko, Walter Kasper); World Methodist Council joined July 2006 (Seoul); Anglican Consultative Council welcomed and affirmed its substance April 2016 (Lusaka), presented October 2017; World Communion of Reformed Churches July 2017 (Wittenberg).",
+     "strength": "primary",
+     "sources": [
+      "vt13_lwf_jddj"
+     ]
+    },
+    {
+     "text": "23 October 2025: Leo XIV and King Charles III prayed together in the Sistine Chapel, with Archbishop Stephen Cottrell of York; Buckingham Palace called it the first time since the Reformation a pope and British monarch prayed together; Charles made a royal confrater of St Paul Outside the Walls; Leo a papal confrater of St George's Chapel, Windsor.",
+     "strength": "reported",
+     "sources": [
+      "vt13_ncr_charles"
+     ]
+    },
+    {
+     "text": "Joint Declaration, the Phanar, 29 November 2025 (Leo XIV and Bartholomew I): marks 1700 years since Nicaea and 60 years since the 1965 Paul VI-Athenagoras declaration; continue exploring a common Easter date; 'we reject any use of religion and the name of God to justify violence'; support for the Joint International Commission for Theological Dialogue.",
+     "strength": "primary",
+     "sources": [
+      "vt13_va_phanar2025"
+     ]
+    },
+    {
+     "text": "Apostolicae curae (Leo XIII, 13 September 1896) declared Anglican ordinations 'absolutely null and utterly void'; a 1998 CDF commentary cited it as a truth to be held definitively.",
+     "strength": "reported",
+     "sources": [
+      "vt13_wiki_apcurae"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "vt13_cic_377",
+     "url": "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann368-430_en.html",
+     "label": "Code of Canon Law (1983), Book II, canons 368-430 (vatican.va)"
+    },
+    {
+     "key": "vt13_aleteia_dipl2026",
+     "url": "https://aleteia.org/2026/01/10/the-holy-sees-widespread-diplomatic-relations-in-2026/",
+     "label": "I.Media for Aleteia, 'The Holy See's widespread diplomatic relations in 2026', 10 January 2026"
+    },
+    {
+     "key": "vt13_vn_chongqing",
+     "url": "https://www.vaticannews.va/en/vatican-city/news/2026-09/consecration-bishop-andrea-ding-yang-chongquig-china.html",
+     "label": "Vatican News, consecration of Archbishop Andrea Ding Yang of Chongqing, 8 September 2026"
+    },
+    {
+     "key": "vt13_aleteia_datong",
+     "url": "https://aleteia.org/2026/09/01/leo-xiv-appoints-bishop-to-chinese-diocese-vacant-80-years/",
+     "label": "Aleteia, 'Leo XIV appoints bishop to Chinese diocese vacant 80 years', 1 September 2026"
+    },
+    {
+     "key": "vt13_tablet_shenbin",
+     "url": "https://www.thetablet.co.uk/news/17362/pope-confirms-shanghai-bishop-installed-without-vatican-approval",
+     "label": "The Tablet, 'Pope confirms Shanghai bishop installed without Vatican approval', 16 July 2023"
+    },
+    {
+     "key": "vt13_lwf_jddj",
+     "url": "https://lutheranworld.org/what-we-do/unity-church/joint-declaration-doctrine-justification-jddj",
+     "label": "Lutheran World Federation, 'Joint Declaration on the Doctrine of Justification (JDDJ)'"
+    },
+    {
+     "key": "vt13_ncr_charles",
+     "url": "https://www.ncronline.org/vatican/pope-british-king-share-historic-prayer-sistine-chapel",
+     "label": "National Catholic Reporter, 'Pope, British king share historic prayer in Sistine Chapel', 23 October 2025"
+    },
+    {
+     "key": "vt13_va_phanar2025",
+     "url": "https://www.vatican.va/content/leo-xiv/en/travels/2025/documents/20251129-dichiarazione-congiunta.html",
+     "label": "Leo XIV and Ecumenical Patriarch Bartholomew, Joint Declaration, the Phanar, 29 November 2025 (vatican.va)"
+    },
+    {
+     "key": "vt13_wiki_apcurae",
+     "url": "https://en.wikipedia.org/wiki/Apostolicae_curae",
+     "label": "Wikipedia, 'Apostolicae curae'"
+    }
+   ]
+  }
+ ]
+}
