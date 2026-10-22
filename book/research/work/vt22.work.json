@@ -57,6 +57,13 @@
     "sources": [
      "vt22_wiki_arius"
     ]
+   },
+   {
+    "text": "Socrates I.8, quoting Eusebius's Life of Constantine Book III, gives 'the number of bishops exceeded three hundred' (VC III.8 as transmitted reads 'exceeding two hundred and fifty'); Socrates himself says 318 'recognized and acquiesced' in the creed",
+    "strength": "primary",
+    "sources": [
+     "vt22_socrates1"
+    ]
    }
   ],
   "sources": {
@@ -187,6 +194,13 @@
     "sources": [
      "vt22_wiki_homoousion"
     ]
+   },
+   {
+    "text": "Theognis of Nicaea eventually signed the Nicene creed with the other Arian supporters, was excommunicated after the council for not denouncing Arius, and was exiled",
+    "strength": "reported",
+    "sources": [
+     "vt22_audit_wiki_theognis"
+    ]
    }
   ],
   "sources": {
@@ -225,6 +239,10 @@
    "vt22_wiki_homoousion": {
     "url": "https://en.wikipedia.org/wiki/Homoousion",
     "label": "Wikipedia, 'Homoousion'"
+   },
+   "vt22_audit_wiki_theognis": {
+    "url": "https://en.wikipedia.org/wiki/Theognis_of_Nicaea",
+    "label": "Wikipedia, 'Theognis of Nicaea' (accessed 22 October 2026)"
    }
   }
  },
@@ -302,6 +320,13 @@
      "vt22_vc3_64",
      "vt22_vc3_65"
     ]
+   },
+   {
+    "text": "VC III.66: after the edict, searches were made for the heretics' forbidden books; some feigned conversion, sincere returners were tested and readmitted; Eusebius does not say what was done with the books",
+    "strength": "primary",
+    "sources": [
+     "vt22_audit_vc3_66"
+    ]
    }
   ],
   "sources": {
@@ -364,6 +389,10 @@
    "vt22_vc3_65": {
     "url": "https://bkv.unifr.ch/en/works/cpg-3496-1/versions/the-life-of-the-blessed-emperor-constantine/divisions/201",
     "label": "Eusebius, Life of Constantine III.65 (heretics deprived of meeting places), NPNF2 tr., BKV Fribourg"
+   },
+   "vt22_audit_vc3_66": {
+    "url": "https://bkv.unifr.ch/works/cpg-3496-1/versions/the-life-of-the-blessed-emperor-constantine/divisions/202",
+    "label": "Eusebius, Life of Constantine III.66 (searches for heretics' books), NPNF2 tr., BKV Fribourg"
    }
   }
  }

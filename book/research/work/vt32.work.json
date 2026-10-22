@@ -27,5 +27,34 @@
     "label": "Wikipedia, 'Al-Hallaj'"
    }
   }
+ },
+ "vt32_obligation": {
+  "topic": "Tithe made compulsory by the Frankish state (Herstal 779) and the Sunday obligation today (CCC 2180-2181, canon 1247)",
+  "claims": [
+   {
+    "text": "Capitulary of Herstal, drawn up March 779 (Mordek; Boretius favoured 780, Ganshof 792-793): tithe payment 'is made obligatory throughout the Frankish kingdom', with part set aside for the poor, after the crises of 778.",
+    "strength": "reported",
+    "sources": [
+     "vt32_wiki_herstal"
+    ]
+   },
+   {
+    "text": "CCC 2180 quotes canon 1247: 'On Sundays and other holy days of obligation the faithful are bound to participate in the Mass'; CCC 2181: the Sunday Eucharist is 'the foundation and confirmation of all Christian practice'; excused for serious reason (illness, care of infants) or dispensation; 'Those who deliberately fail in this obligation commit a grave sin.'",
+    "strength": "primary",
+    "sources": [
+     "vt32_va_ccc2181"
+    ]
+   }
+  ],
+  "sources": {
+   "vt32_wiki_herstal": {
+    "url": "https://en.wikipedia.org/wiki/Capitulary_of_Herstal",
+    "label": "Wikipedia, 'Capitulary of Herstal'"
+   },
+   "vt32_va_ccc2181": {
+    "url": "https://www.vatican.va/archive/ENG0015/__P7O.HTM",
+    "label": "Catechism of the Catholic Church, paras 2180-2181 (vatican.va)"
+   }
+  }
  }
 }
