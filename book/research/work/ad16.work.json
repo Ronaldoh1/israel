@@ -1,0 +1,402 @@
+{
+ "ad16_belief": {
+  "topic": "Belief vs data: perceptions of mobility, polls on the Dream, system justification, meritocracy belief, survivorship",
+  "claims": [
+   {
+    "text": "Alesina, Stantcheva and Teso (AER 2018), surveys Feb-Oct 2016 (US n=4,705; UK 2,148; France 2,148; Italy 2,143; Sweden 1,494): US respondents put the chance that a bottom-quintile child reaches the top quintile at 11.7% vs 7.8% actual; staying in the bottom 32.2% perceived vs 33.1% actual; Europeans underestimated upward mobility (about 11% actual) and overestimated staying at the bottom.",
+    "strength": "primary",
+    "sources": [
+     "ad16_ast_aer"
+    ]
+   },
+   {
+    "text": "Alesina et al.: shown pessimistic information, both left- and right-leaning respondents became more pessimistic; only left-leaning respondents increased support for equality-of-opportunity policies; right-leaning respondents changed no policy support.",
+    "strength": "reported",
+    "sources": [
+     "ad16_richmond_ast"
+    ]
+   },
+   {
+    "text": "Kraus (2015) pre-registered replication, 763 MTurk adults: large overestimation of mobility (d=2.63; original Kraus & Tan JESP 2015 d=3.05); overestimates larger for 'people like me'; higher subjective social class, conservatism and youth predicted larger overestimates; income not significant. Kraus & Tan proposed limited knowledge and a motive to see society as fair.",
+    "strength": "primary",
+    "sources": [
+     "ad16_kraus_frontiers"
+    ]
+   },
+   {
+    "text": "Davidai and Gilovich (2015), 3,034 adults via Harris Poll plus 290 MTurk: Americans overestimate upward and underestimate downward mobility; poorer respondents and conservatives believed in more mobility.",
+    "strength": "reported",
+    "sources": [
+     "ad16_cornell_dg"
+    ]
+   },
+   {
+    "text": "Chambers, Swan and Heesacker (Psychological Science 2015), 410 adults: participants underestimated mobility and 56% wrongly believed it had declined; only 15% correctly said it was stable; liberals underestimated more.",
+    "strength": "reported",
+    "sources": [
+     "ad16_jr_chambers"
+    ]
+   },
+   {
+    "text": "WSJ/NORC 2023: 36% American dream still holds true, 45% once held true but not anymore, 18% never; PRRI 2012 53% and 2016 48% (different methodology).",
+    "strength": "reported",
+    "sources": [
+     "ad16_axios_wsj23"
+    ]
+   },
+   {
+    "text": "AP-NORC 16-20 April 2026, n=2,596, MOE 2.6: 34% still holds; PRRI 2012 53%, 2014 42%; WSJ/NORC 2023 36%, 2025 31%; men 39%, women 29%.",
+    "strength": "reported",
+    "sources": [
+     "ad16_colpol_apnorc"
+    ]
+   },
+   {
+    "text": "Pew ATP, same question 'have achieved / on your way / out of reach for you': Dec 5-11 2022 30/37/31; Apr 8-14 2024 31/36/30; general question April 2024: still possible 53%, once possible but not anymore 41%, never 6%.",
+    "strength": "primary",
+    "sources": [
+     "ad16_pew_top24"
+    ]
+   },
+   {
+    "text": "Pew April 2024 (n=8,709): still possible by income: upper 64%, middle 56%, lower 39%; by age 65+ 68%, under 50 42%; achieved personally: White 39%, Asian 34%, Hispanic 19%, Black 15%; on the way Black 48%, Hispanic 47%.",
+    "strength": "reported",
+    "sources": [
+     "ad16_pew_2024"
+    ]
+   },
+   {
+    "text": "Pew August 2017: 36% achieved, 46% on the way, 17% out of reach.",
+    "strength": "reported",
+    "sources": [
+     "ad16_pew_2017"
+    ]
+   },
+   {
+    "text": "Gallup January trend, satisfied with 'the opportunity for a person in this nation to get ahead by working hard': 2001 76, 2002 77, 2003 69, 2004 69, 2005 66, 2006 66, 2007 70, 2008 68, 2011 55, 2012 53, 2013 57, 2014 54, 2015 60, 2016 62, 2017 66, 2018 63, 2019 65, 2020 72, 2021 58, 2022 60, 2023 61, 2024 56.",
+    "strength": "primary",
+    "sources": [
+     "ad16_gallup_opp24"
+    ]
+   },
+   {
+    "text": "Brookings (9 July 2026) on Gallup: satisfaction with opportunity to get ahead 52% in 2026; Republicans 85%, Democrats 24%, a record 61-point gap (previous largest 40 in 2019).",
+    "strength": "reported",
+    "sources": [
+     "ad16_brookings_opp26"
+    ]
+   },
+   {
+    "text": "Jost et al. (2003): lower-income respondents more likely to say large income differences are needed to motivate effort; 'those who suffer the most also have the most to explain, justify, and rationalize'. Brandt (2013) large-scale test found no support for the status-legitimacy hypothesis; advantaged people as or more supportive of the system.",
+    "strength": "reported",
+    "sources": [
+     "ad16_caricati",
+     "ad16_forrt_brandt"
+    ]
+   },
+   {
+    "text": "Mijs (2019), ~25 years of ISSP data: 'the more unequal a society, the more likely its citizens are to explain success in meritocratic terms'.",
+    "strength": "primary",
+    "sources": [
+     "ad16_mijs"
+    ]
+   },
+   {
+    "text": "Bénabou and Tirole (QJE 2006): people are motivated to believe effort is rewarded; this belief affects labour supply as well as politics; 'American' equilibrium of just-world beliefs and laissez-faire vs 'European' equilibrium with more pessimism and larger welfare state.",
+    "strength": "primary",
+    "sources": [
+     "ad16_bt_nber"
+    ]
+   },
+   {
+    "text": "BLS BED: private establishments born March 2013: 79.6% survived 1 year, 50.6% 5 years, 34.7% 10 years.",
+    "strength": "primary",
+    "sources": [
+     "ad16_bls_survival"
+    ]
+   },
+   {
+    "text": "Sandel: meritocracy 'leads to hubris among the winners and humiliation for those who lose out'; politicians of both parties promised a degree would secure success; at top-100 selective colleges about 70% of students from wealthy families vs about 3% from the bottom quintile.",
+    "strength": "reported",
+    "sources": [
+     "ad16_duke_sandel"
+    ]
+   }
+  ],
+  "sources": {
+   "ad16_ast_aer": {
+    "url": "https://stantcheva.scholars.harvard.edu/resource/alesinastantchevatesomobilitypdf",
+    "label": "Alberto Alesina, Stefanie Stantcheva and Edoardo Teso, 'Intergenerational Mobility and Preferences for Redistribution', American Economic Review 108(2), February 2018, pp. 521-554"
+   },
+   "ad16_richmond_ast": {
+    "url": "https://www.richmondfed.org/publications/research/econ_focus/2018/q2/research_spotlight",
+    "label": "Federal Reserve Bank of Richmond, Econ Focus, Research Spotlight on Alesina, Stantcheva and Teso (2018), Q2 2018"
+   },
+   "ad16_kraus_frontiers": {
+    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.01709/full",
+    "label": "Michael W. Kraus, 'Americans Still Overestimate Social Class Mobility: A Pre-Registered Self-Replication', Frontiers in Psychology 6:1709, November 2015"
+   },
+   "ad16_cornell_dg": {
+    "url": "https://news.cornell.edu/node/283990",
+    "label": "H. Roger Segelken, Cornell Chronicle, 'Economic mobility: the (illusory) American dream' (on Davidai and Gilovich, Perspectives on Psychological Science 2015), 3 February 2015"
+   },
+   "ad16_jr_chambers": {
+    "url": "https://journalistsresource.org/economics/ideology-americans-perceptions-social-mobility/",
+    "label": "Journalist's Resource (Harvard Shorenstein Center), on Chambers, Swan and Heesacker, 'Perceptions of U.S. Social Mobility Are Divided (and Distorted) Along Ideological Lines', Psychological Science 2015"
+   },
+   "ad16_axios_wsj23": {
+    "url": "https://www.axios.com/2023/11/25/american-dream-poll-wealth-inequality",
+    "label": "Axios, 'Americans think the American dream is dying', 25 November 2023 (WSJ/NORC 2023; PRRI 2012, 2016)"
+   },
+   "ad16_colpol_apnorc": {
+    "url": "https://www.coloradopolitics.com/2026/06/08/america-250-poll-finds-hope-in-american-dream-has-dramatically-declined-in-recent-years/",
+    "label": "Colorado Politics (AP), 'America 250 poll finds hope in American dream has dramatically declined in recent years', 8 June 2026"
+   },
+   "ad16_pew_2024": {
+    "url": "https://www.pewresearch.org/short-reads/2024/07/02/americans-are-split-over-the-state-of-the-american-dream/",
+    "label": "Pew Research Center, 'Americans are split over the state of the American dream', 2 July 2024"
+   },
+   "ad16_pew_top24": {
+    "url": "https://pewresearch.org/wp-content/uploads/sites/20/2024/07/SR_24.07.02_american-dream_topline.pdf",
+    "label": "Pew Research Center, American Trends Panel Wave 145 topline, American dream questions (April 2024, trend December 2022)"
+   },
+   "ad16_pew_2017": {
+    "url": "https://www.pewresearch.org/short-reads/2017/10/31/most-think-the-american-dream-is",
+    "label": "Pew Research Center, 'Most think the American dream is within reach for them', 31 October 2017"
+   },
+   "ad16_gallup_opp24": {
+    "url": "https://news.gallup.com/file/poll/610982/20240222_IssueSatisfactions.pdf",
+    "label": "Gallup, Satisfaction with aspects of the US trend tables (Mood of the Nation), released 22 February 2024"
+   },
+   "ad16_brookings_opp26": {
+    "url": "https://www.brookings.edu/articles/historic-polarization-and-historic-lows-in-satisfaction-with-government-quality-of-life-and-opportunity-to-get-ahead/",
+    "label": "Carol Graham, Emily Dobson, Isabel Shaheen O'Malley and Kasey Vangelov, Brookings, 'Historic polarization and historic lows in satisfaction with government, quality of life, and opportunity to get ahead', 9 July 2026"
+   },
+   "ad16_caricati": {
+    "url": "https://air.unipr.it/bitstream/11381/2818089/4/Testing%20the%20status%20legitimacy.pdf",
+    "label": "Luca Caricati, 'Testing the status-legitimacy hypothesis: a multilevel modeling approach to the perception of legitimacy in income distribution in 36 nations', Journal of Social Psychology 157(5), 2017, pp. 532-540"
+   },
+   "ad16_forrt_brandt": {
+    "url": "https://forrt.org/flora-replication-atlas/doi/10.1037/a0031751/",
+    "label": "FORRT Replication Atlas: Brandt (2013), 'Do the disadvantaged legitimize the social system? A large-scale test of the status-legitimacy hypothesis', JPSP 104(5), 765-785, as replication of Jost et al."
+   },
+   "ad16_mijs": {
+    "url": "https://researchonline.lse.ac.uk/id/eprint/100794",
+    "label": "Jonathan J. B. Mijs, 'The paradox of inequality: income inequality and belief in meritocracy go hand in hand', Socio-Economic Review (2019), doi:10.1093/ser/mwy051"
+   },
+   "ad16_bt_nber": {
+    "url": "https://www.nber.org/papers/w11208",
+    "label": "Roland Bénabou and Jean Tirole, 'Belief in a Just World and Redistributive Politics', NBER Working Paper 11208 (2005); Quarterly Journal of Economics 121(2), 2006, pp. 699-746"
+   },
+   "ad16_bls_survival": {
+    "url": "https://www.bls.gov/opub/ted/2024/34-7-percent-of-business-establishments-born-in-2013-were-still-operating-in-2023.htm",
+    "label": "US Bureau of Labor Statistics, The Economics Daily, '34.7 percent of business establishments born in 2013 were still operating in 2023', 12 January 2024"
+   },
+   "ad16_duke_sandel": {
+    "url": "https://sanford.duke.edu/story/what-has-become-common-good/",
+    "label": "Duke Sanford School, 'What Has Become of the Common Good?' (Michael J. Sandel on The Tyranny of Merit), 9 February 2022"
+   }
+  }
+ },
+ "ad16_rhetoric": {
+  "topic": "Both parties' rhetoric of the Dream and enacted policy records",
+  "claims": [
+   {
+    "text": "Earliest cited 'bootstraps' uses (1834 Workingman's Advocate; 1843; 1863) mocked absurd or impossible feats; the OED's first example of the self-reliance sense is Joyce's Ulysses (1922).",
+    "strength": "reported",
+    "sources": [
+     "ad16_curzan_boot"
+    ]
+   },
+   {
+    "text": "Reagan, 17 July 1980, Detroit: 'a great national crusade to make America great again!'",
+    "strength": "primary",
+    "sources": [
+     "ad16_reagan_1980"
+    ]
+   },
+   {
+    "text": "Bush, 2 September 2004: 'build an ownership society, because ownership brings security, and dignity, and independence'; 'In an ownership society, more people will own their health care plans'; homeownership 'at an all-time high'.",
+    "strength": "primary",
+    "sources": [
+     "ad16_bush_2004"
+    ]
+   },
+   {
+    "text": "Obama, 13 July 2012, Roanoke: 'If you were successful, somebody along the line gave you some help'; 'Somebody invested in roads and bridges. If you've got a business, you didn't build that. Somebody else made that happen.'",
+    "strength": "primary",
+    "sources": [
+     "ad16_obama_roanoke"
+    ]
+   },
+   {
+    "text": "Boehner, 15-16 September 2011: 'Job creators in America are essentially on strike.'",
+    "strength": "reported",
+    "sources": [
+     "ad16_abc_boehner"
+    ]
+   },
+   {
+    "text": "DREAM Act: House passed 216-198 in December 2010; Senate cloture failed 55-41 on 18 December 2010, five votes short of 60 (36 Republicans and 5 Democrats against).",
+    "strength": "reported",
+    "sources": [
+     "ad16_mpi_dream"
+    ]
+   },
+   {
+    "text": "Fifth Circuit, 17 January 2025: DACA unlawful, injunction narrowed to Texas, program 'remains largely intact'; about half a million recipients.",
+    "strength": "reported",
+    "sources": [
+     "ad16_abc17_daca"
+    ]
+   },
+   {
+    "text": "As of late April 2026: renewals accepted; new initial requests accepted but not processed; Texas recipients keep deportation protection but Judge Hanen had not issued the order ending their work authorization.",
+    "strength": "reported",
+    "sources": [
+     "ad16_fwd_daca"
+    ]
+   },
+   {
+    "text": "Clinton, 22 August 1996: 'Today we are ending welfare as we know it'; welfare to be 'a second chance, not a way of life'; said nutrition cuts 'too deep' and cuts for legal immigrants 'far too deep'.",
+    "strength": "primary",
+    "sources": [
+     "ad16_clinton_1996"
+    ]
+   },
+   {
+    "text": "CBPP: for every 100 families in poverty, 68 received AFDC/TANF cash in 1996 and 21 in 2023.",
+    "strength": "reported",
+    "sources": [
+     "ad16_cbpp_tanf"
+    ]
+   },
+   {
+    "text": "AEI (Weidinger, 24 July 2026): adult recipients fell from 4.38m (FY1995) to 1.30m (FY2002) and 570,000 (FY2024), caseload down 85%; Haskins: work among the most disadvantaged mothers rose almost 40% in four years from 1996; never-married mothers' real earnings roughly doubled; only 8% of TANF families in FY2024 met the work requirement.",
+    "strength": "disputed",
+    "sources": [
+     "ad16_aei_welfare"
+    ]
+   }
+  ],
+  "sources": {
+   "ad16_curzan_boot": {
+    "url": "https://www.chronicle.com/blogs/linguafranca/2017/03/07/just-try-that-with-your-bootstraps/",
+    "label": "Anne Curzan, Chronicle of Higher Education (Lingua Franca), 'Just Try That With Your Bootstraps', 7 March 2017"
+   },
+   "ad16_reagan_1980": {
+    "url": "https://www.presidency.ucsb.edu/documents/address-accepting-the-presidential-nomination-the-republican-national-convention-detroit",
+    "label": "American Presidency Project, Ronald Reagan, Address Accepting the Presidential Nomination at the Republican National Convention in Detroit, 17 July 1980"
+   },
+   "ad16_bush_2004": {
+    "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2004/09/20040902-2.html",
+    "label": "White House (archived), President's Remarks at the 2004 Republican National Convention, Madison Square Garden, 2 September 2004"
+   },
+   "ad16_obama_roanoke": {
+    "url": "https://www.presidency.ucsb.edu/documents/remarks-campaign-rally-roanoke-virginia",
+    "label": "American Presidency Project, Barack Obama, Remarks at a Campaign Rally in Roanoke, Virginia, 13 July 2012"
+   },
+   "ad16_abc_boehner": {
+    "url": "https://abcnews.com/blogs/politics/2011/09/house-speaker-john-boehner-adds-his-jobs-pitch-to-obamas-and-everyone-elses",
+    "label": "ABC News, 'House Speaker John Boehner Adds His Jobs Pitch to Obama's and Everyone Else's', 16 September 2011"
+   },
+   "ad16_mpi_dream": {
+    "url": "https://www.migrationpolicy.org/article/senate-blocks-passage-dream-act-five-votes",
+    "label": "Migration Policy Institute, Migration Information Source, 'Senate Blocks Passage of DREAM Act by Five Votes', December 2010"
+   },
+   "ad16_abc17_daca": {
+    "url": "https://abc17news.com/?p=1418489",
+    "label": "AP via ABC17 News, 'DACA dealt a legal setback by federal appeals court', 17 January 2025"
+   },
+   "ad16_fwd_daca": {
+    "url": "https://www.fwd.us/wp-content/uploads/2026/04/260429_FWD_DACAEmployerResource.pdf",
+    "label": "FWD.us, 'DACA: Employer Resource' (file dated 29 April 2026)"
+   },
+   "ad16_clinton_1996": {
+    "url": "https://www.govinfo.gov/content/pkg/PPP-1996-book2/html/PPP-1996-book2-doc-pg1325.htm",
+    "label": "Public Papers of the Presidents, William J. Clinton, Remarks on Signing the Personal Responsibility and Work Opportunity Reconciliation Act of 1996, 22 August 1996"
+   },
+   "ad16_cbpp_tanf": {
+    "url": "https://www.cbpp.org/research/income-security/trends-in-state-tanf-to-poverty-ratios",
+    "label": "Center on Budget and Policy Priorities, 'Trends in State TANF-to-Poverty Ratios', updated 1 October 2025"
+   },
+   "ad16_aei_welfare": {
+    "url": "https://cosm.aei.org/lessons-from-the-1996-welfare-reform-law-approaching-its-30th-anniversary/",
+    "label": "Matt Weidinger, AEI Center on Opportunity and Social Mobility, 'Lessons from the 1996 Welfare Reform Law Approaching Its 30th Anniversary', 24 July 2026"
+   }
+  }
+ },
+ "ad16_despair": {
+  "topic": "Deaths of despair, overdoses, life expectancy by income, and the critics",
+  "claims": [
+   {
+    "text": "Case and Deaton (PNAS 2015): mortality of white non-Hispanics 45-54 fell about 2% a year 1978-98 then rose about 0.5% a year to 2013; 96,000 deaths 1998-2013 had the 1998 rate held; 488,500 had the prior decline continued; poisonings, suicide, liver disease; high school or less all-cause +22%; other rich countries and US Black and Hispanic midlife mortality kept falling.",
+    "strength": "reported",
+    "sources": [
+     "ad16_princeton_cd"
+    ]
+   },
+   {
+    "text": "Case and Deaton (2020 book): about 600,000 midlife deaths would have been avoided had the pre-1999 decline continued; blame job market, health insurance costs, patent monopolies. Henderson (Cato): with PCE deflator non-college white men's wages rose 4.5% 1979-2017 rather than falling 13%; disputes causal story.",
+    "strength": "disputed",
+    "sources": [
+     "ad16_cato_cd2020"
+    ]
+   },
+   {
+    "text": "NCHS (13 May 2026): provisional overdose deaths 69,973 in 2025 vs 81,313 in 2024, almost 14% decline, third consecutive annual decline; opioid-involved 55,296 to 44,564.",
+    "strength": "primary",
+    "sources": [
+     "ad16_nchs_2025"
+    ]
+   },
+   {
+    "text": "NCHS Data Brief 522: overdose deaths 2003 25,785; 2005 29,813; 2007 36,010; 2009 37,004; 2011 41,340; 2013 43,982; 2015 52,404; 2016 63,632; 2017 70,237; 2018 67,367; 2019 70,630; 2020 91,799; 2021 106,699; 2022 107,941; 2023 105,007; age-adjusted rate 8.9 (2003), 32.6 (2022), 31.3 (2023).",
+    "strength": "primary",
+    "sources": [
+     "ad16_db522"
+    ]
+   },
+   {
+    "text": "Chetty et al. (JAMA 2016): life expectancy at 40 gap between richest and poorest 1%: 14.6 years men, 10.1 women; 2001-2014 top 5% gained 2.34 (men) and 2.91 (women) years, bottom 5% 0.32 and 0.04; bottom-quartile life expectancy varied about 4.5 years by area; correlated with smoking, not with access to care or income inequality.",
+    "strength": "primary",
+    "sources": [
+     "ad16_jama_chetty"
+    ]
+   },
+   {
+    "text": "Ruhm (2018), county data 1999-2015: economic conditions explain 'less than one-tenth of the rise in drug and opioid-involved mortality rates'; the drug environment plays the main role.",
+    "strength": "primary",
+    "sources": [
+     "ad16_ruhm"
+    ]
+   }
+  ],
+  "sources": {
+   "ad16_princeton_cd": {
+    "url": "https://www.princeton.edu/main/news/archive/S44/60/75E78/",
+    "label": "Princeton University, 'Quiet epidemic of drugs, alcohol and suicide has killed half a million middle-aged white Americans' (on Case and Deaton, PNAS 2015), 2 November 2015"
+   },
+   "ad16_cato_cd2020": {
+    "url": "https://www.cato.org/regulation/fall-2020/deaths-despair",
+    "label": "David R. Henderson, 'Deaths of Despair' (review of Case and Deaton, Deaths of Despair and the Future of Capitalism, 2020), Regulation (Cato), Fall 2020"
+   },
+   "ad16_nchs_2025": {
+    "url": "https://cdc.gov/nchs/pressroom/releases/20260513.html",
+    "label": "CDC National Center for Health Statistics, 'U.S. Overdose Deaths Decrease for Third Consecutive Year in 2025', 13 May 2026"
+   },
+   "ad16_db522": {
+    "url": "https://cdc.gov/nchs/products/databriefs/db522.htm",
+    "label": "CDC NCHS, Data Brief No. 522, 'Drug Overdose Deaths in the United States, 2003-2023', 19 December 2024"
+   },
+   "ad16_jama_chetty": {
+    "url": "https://jamanetwork.com/journals/jama/fullarticle/2513561",
+    "label": "Raj Chetty, Michael Stepner, Sarah Abraham et al., 'The Association Between Income and Life Expectancy in the United States, 2001-2014', JAMA 315(16), 26 April 2016, pp. 1750-1766"
+   },
+   "ad16_ruhm": {
+    "url": "https://www.nber.org/papers/w24188",
+    "label": "Christopher J. Ruhm, 'Deaths of Despair or Drug Problems?', NBER Working Paper 24188, January 2018"
+   }
+  }
+ }
+}
