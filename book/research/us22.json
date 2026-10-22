@@ -1278,6 +1278,511 @@
      "label": "Jiji Press via Adnkronos, 'Japan, U.S. begin working-level talks on host nation support', 5 Aug 2026"
     }
    ]
+  },
+  {
+   "id": "us22_q_us",
+   "stage": "us22",
+   "topic": "Three Families: US BLS CE 2024 by income quintile (1, 3, 4)",
+   "claims": [
+    {
+     "text": "BLS CE 2024 is the latest calendar-year release (published 19 Dec 2025, delayed from the usual September; no 2025 calendar-year tables were listed on bls.gov/cex/tables.htm as of 21 Oct 2026). Quintiles are of consumer units ranked by income before taxes; 135,760 thousand consumer units in all. Quintile lower bounds: 2nd $29,932, 3rd $57,452, 4th $94,511, top $155,925.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_bls_cextables"
+     ]
+    },
+    {
+     "text": "BLS CE 2024: INCOME AFTER TAXES WAS NOT PUBLISHED for 2024 (BLS: the tax model provider did not update its model). Latest published after-tax incomes are 2023: all consumer units $87,869; third quintile $66,606; fourth quintile $104,559 (FRED shows no 2024 observation).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_fred_incafttxlb0101m",
+      "us22_fred_incafttxlb0104m",
+      "us22_fred_incafttxlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 income before taxes (mean, USD/year per consumer unit): all $104,207; lowest quintile $16,658 (2023: $15,596); third quintile $74,474 (2023: $71,057); fourth quintile $121,548 (2023: $116,717). Changes agree with BLS Report Table 5 (+$1,062, +$3,417, +$4,831).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_bls_cerep24",
+      "us22_fred_incbeftxlb0102m",
+      "us22_fred_incbeftxlb0104m",
+      "us22_fred_incbeftxlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 average annual expenditures (USD per consumer unit): all $78,535; lowest quintile $35,046; second $50,054; third $66,900; fourth $89,972; highest $150,342 (Table C).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_pdf",
+      "us22_bls_cesan24_nr",
+      "us22_fred_totalexplb0102m",
+      "us22_fred_totalexplb0104m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 housing (USD/yr): all $26,266; lowest quintile $14,563; third $24,093; fourth $29,374. Shelter: all $16,317; lowest $9,178; third $15,257; fourth $17,851. Definitions (BLS CE glossary, not re-read for this entry): CE housing = shelter + utilities + household operations + housekeeping supplies + furnishings; owners' shelter is actual outlays (mortgage interest, property tax, maintenance, insurance), NOT imputed rent; mortgage principal is excluded (counted as asset change).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_housinglb0102m",
+      "us22_fred_housinglb0104m",
+      "us22_fred_housinglb0105m",
+      "us22_fred_shelterlb0102m",
+      "us22_fred_shelterlb0104m",
+      "us22_fred_shelterlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 food (USD/yr, food at home + away; alcohol separate): all $10,169; lowest quintile $5,498; third $9,097; fourth: NOT RETRIEVED (FRED CXUFOODTOTLLB0105M under maintenance; BLS xlsx not reachable).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_foodtotllb0102m",
+      "us22_fred_foodtotllb0104m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 transportation (USD/yr): all $13,318; third quintile $11,657; fourth $15,952; lowest quintile: NOT RETRIEVED (BLS Report Table 5 gives only its 2023-24 change, +$188, +3.8%).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_translb0104m",
+      "us22_fred_translb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 healthcare (USD/yr; out-of-pocket incl. health insurance premiums paid by the household, excl. employer-paid): all $6,197; lowest quintile $3,445; third $5,676; fourth $7,247.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_healthlb0102m",
+      "us22_fred_healthlb0104m",
+      "us22_fred_healthlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 education (USD/yr): all $1,569; lowest quintile $828; third $749; fourth $1,353. Caveat: FRED's 2023 values (727, 1,079, 1,176) do not match the 2023-24 changes in BLS Report Table 5 (+$113, -$232, +$250), though the 2024 levels are consistent with Table 5 within ~$2.",
+     "strength": "moderate",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_educatnlb0102m",
+      "us22_fred_educatnlb0104m",
+      "us22_fred_educatnlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 personal insurance and pensions (life insurance + Social Security and pension contributions; included in CE 'average annual expenditures'): all $9,797; lowest quintile $711; third $6,248; fourth $11,934.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_inspensnlb0102m",
+      "us22_fred_inspensnlb0104m",
+      "us22_fred_inspensnlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 average number of persons per consumer unit: all 2.4. By quintile: NOT RETRIEVED (published in the BLS quintile xlsx, which could not be read; no FRED series located). Number of consumer units in lowest quintile: 27,139 thousand.",
+     "strength": "moderate",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_consunitlb0102m"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_fred_incbeftxlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0102M: Income before taxes, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incbeftxlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0104M: Income before taxes, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incbeftxlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0105M: Income before taxes, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0104M: Income after taxes, third 20% (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0105M: Income after taxes, fourth 20% (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0101m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0101M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0101M: Income after taxes, all consumer units (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_totalexplb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTOTALEXPLB0102M: Total average annual expenditures, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_totalexplb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTOTALEXPLB0104M: Total average annual expenditures, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_foodtotllb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUFOODTOTLLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUFOODTOTLLB0102M: Food, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_foodtotllb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUFOODTOTLLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUFOODTOTLLB0104M: Food, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0102M: Housing, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0104M: Housing, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0105M: Housing, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0102M: Shelter, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0104M: Shelter, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0105M: Shelter, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_translb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUTRANSLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTRANSLB0104M: Transportation, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_translb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUTRANSLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTRANSLB0105M: Transportation, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0102M: Healthcare, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0104M: Healthcare, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0105M: Healthcare, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0102M: Education, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0104M: Education, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0105M: Education, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0102M: Personal insurance and pensions, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0104M: Personal insurance and pensions, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0105M: Personal insurance and pensions, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_consunitlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUCONSUNITLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUCONSUNITLB0102M: Number of consumer units, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_bls_cesan24_nr",
+     "url": "https://www.bls.gov/news.release/cesan.nr0.htm",
+     "label": "US BLS, Consumer Expenditures - 2024 (USDL-25-1586), news release text incl. Table C, 19 Dec 2025"
+    },
+    {
+     "key": "us22_bls_cesan24_pdf",
+     "url": "https://www.bls.gov/news.release/pdf/cesan.pdf",
+     "label": "US BLS, Consumer Expenditures - 2024, news release PDF (Table C: average annual expenditures by income quintile), 19 Dec 2025"
+    },
+    {
+     "key": "us22_bls_cerep24",
+     "url": "https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm",
+     "label": "US BLS Reports, Consumer Expenditures in 2024 (Tables 2, 4, 5)"
+    },
+    {
+     "key": "us22_bls_cextables",
+     "url": "https://www.bls.gov/cex/tables.htm",
+     "label": "US BLS, Consumer Expenditure Surveys tables page (links calendar-year quintile table cu-income-quintiles-before-taxes-2024.xlsx; no 2025 calendar-year release listed), accessed 21 Oct 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_q_il",
+   "stage": "us22",
+   "topic": "Three Families: Israel CBS HES 2024/2023 by income decile/quintile",
+   "claims": [
+    {
+     "text": "Israel CBS Household Expenditure Survey 2024 (released ~13 Oct 2026) is the latest. National averages per household per month: gross money income NIS 27,173 (2023: 26,330); net money income NIS 22,555 (2023: 21,606); total consumption expenditure incl. imputed housing services NIS 18,695; money expenditure excl. imputed housing NIS 15,370; median gross income NIS 20,540; Gini 0.333 (2023: 0.349). Housing 25%, transport and communications 18.4%, food 17.9% of consumption.",
+     "strength": "strong",
+     "sources": [
+      "us22_bizp_hes24",
+      "us22_maariv_hes24",
+      "us22_calc_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2024 by decile of households ranked by net money income per standard person (NIS/household/month, as tabulated by Davar): net money income D1 7,276; D2 10,598; D3 13,513; D4 16,160; D5 18,565; D6 21,241; D7 25,310; D8 29,046; D9 34,286; D10 49,496. Expenditure D1 11,902; D2 11,174; D3 12,317; D4 13,647; D5 15,094; D6 15,477; D7 15,992; D8 17,173; D9 19,106; D10 21,800. Check: the decile means average to 22,549 (≈ net income 22,555) and 15,368 (≈ money expenditure 15,370), so the expenditure column is MONEY expenditure excluding imputed housing services, not total consumption (18,695).",
+     "strength": "moderate",
+     "sources": [
+      "us22_davar_hes24",
+      "us22_bizp_hes24",
+      "us22_calc_hes24"
+     ]
+    },
+    {
+     "text": "CBS quintile tables for HES 2024 (or 2023) were NOT reached; published quintile values not found in any accessible source. Derived from the decile table (CBS deciles each hold 10% of households, so a quintile mean = simple mean of its two deciles, rounding aside): net money income Q1 ≈ NIS 8,937, Q3 ≈ 19,903, Q4 ≈ 27,178; money expenditure (excl. imputed rent) Q1 ≈ 11,538, Q3 ≈ 15,286, Q4 ≈ 16,583 per household per month, 2024. These are book arithmetic, not CBS-published figures.",
+     "strength": "weak",
+     "sources": [
+      "us22_davar_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2024 bottom vs top decile: household size bottom decile 4.1 persons (Calcalist) or 3.9 (Bizportal; sources disagree), top decile 2.6 (Calcalist) or 2.7 (Bizportal); earners 0.9/0.8 vs 1.8/1.9; work share of income 60.9% vs 81%; home ownership 35.5% vs 79.5% (national 62.5%); renting 56.5% vs 18.3% (national 32.7%); average rent NIS 3,924. Gross money income, household size and category spending by quintile/decile for 2024 were not found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_hes24",
+      "us22_bizp_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2023 (press release 1 Jan 2026), Table A, by decile of net money income per standard person: persons per household all 3.2, bottom decile 4.2, 4th decile 3.1, 7th decile 3.0, top decile 2.4; earners 1.5 / 0.9 / 1.4 / 1.6 / 1.7. National: gross money income NIS 26,330, net 21,606, consumption incl. imputed housing 18,088, money expenditure 14,823. Definitions: consumption includes imputed housing services for owner-occupied/rent-free/key-money dwellings valued at the rent of similar dwellings in the same locality; 'food' in the headline share (17.9%) INCLUDES fruit and vegetables; 2023 income is not comparable with earlier years (methodology change).",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23_pr"
+     ]
+    },
+    {
+     "text": "Category spending by quintile (closest published proxy, NOT the HES table): CBS's Feb 2025 CPI-weights update (HES 2022-2023 data in 2024 prices) gives total monthly consumption per household: average NIS 19,319.89, bottom quintile 13,765.34, top quintile 25,848.33. Shares of consumption, bottom / middle (Q3) / top quintile: food EXCL. fruit and veg 19.8% / 16.0% / 13.2%; transport and communications 15.4% / 19.2% / ~20%; housing (incl. imputed owner-occupied housing services) 21.6% / 24.9% / ~28%. Bottom vs top only: education services 7.1% vs 4.5%; private medical services 2% vs 4%; rent 10% vs 5%. Fourth-quintile values and Q3 NIS total not given.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_cpiq",
+      "us22_calc_cpiw"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_davar_hes24",
+     "url": "https://www.davar1.co.il/701666/",
+     "label": "Davar, 'Top decile earns ~49k NIS a month, 7x the bottom' (CBS Household Expenditure Survey 2024 decile table), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_bizp_hes24",
+     "url": "https://www.bizportal.co.il/financialconsumerism/news/article/20044646",
+     "label": "Bizportal, 'How much does an Israeli family bring in? 22.6k NIS net a month' (CBS HES 2024), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_hes24",
+     "url": "https://www.calcalist.co.il/local_news/article/rkgpaknizl",
+     "label": "Calcalist, CBS report: inequality fell in 2024 (CBS HES 2024), 14 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_maariv_hes24",
+     "url": "https://www.maariv.co.il/economy/israel/article-1376692",
+     "label": "Maariv, 'How much does it really cost to live in Israel?' (CBS HES 2024), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_cbs_hes23_pr",
+     "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+     "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_cpiq",
+     "url": "https://www.calcalist.co.il/local_news/article/bjmqatpfke",
+     "label": "Calcalist (A. Pilot), consumption basket by income quintile from CBS CPI-weights update (HES 2022-2023 data, 2024 prices), 11 Feb 2025 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_cpiw",
+     "url": "https://www.calcalist.co.il/local_news/article/hyvbrwwk1e",
+     "label": "Calcalist, CBS updates CPI basket weights from HES 2022-2023, 10 Feb 2025 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_ppp",
+   "stage": "us22",
+   "topic": "PPP conversion factors Israel vs US",
+   "claims": [
+    {
+     "text": "World Bank PPP conversion factor, private (household) consumption, LCU per international $ (US = 1.00 by construction): Israel 4.35 (2019), 4.28 (2020). PPP conversion factor, GDP: Israel 3.92 (2019), 3.85 (2020), 3.79 (2021). The 2023 and 2024 values (survey years) were NOT retrieved: the World Bank page did not render values and the WB/OECD/OWID data endpoints were blocked or unanswered.",
+     "strength": "moderate",
+     "sources": [
+      "us22_imx_ppp_il",
+      "us22_imx_ppp_rank",
+      "us22_wb_prvtpp"
+     ]
+    },
+    {
+     "text": "OECD price level of actual individual consumption for Israel (OECD = 100): 138 (2021), 139 (2022), 140 (2023); third most expensive in the West on this measure. Not a conversion factor; no NIS-per-dollar PPP given.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_oecdpl"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_imx_ppp_il",
+     "url": "https://www.indexmundi.com/facts/israel/ppp-conversion-factor",
+     "label": "IndexMundi, Israel - PPP conversion factor (World Bank WDI/ICP), accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_imx_ppp_rank",
+     "url": "https://www.indexmundi.com/facts/indicators/PA.NUS.PRVT.PP/rankings",
+     "label": "IndexMundi, PPP conversion factor, private consumption (LCU per international $) - country ranking (WDI)"
+    },
+    {
+     "key": "us22_wb_prvtpp",
+     "url": "https://data.worldbank.org/indicator/PA.NUS.PRVT.PP?year=2023",
+     "label": "World Bank WDI, PA.NUS.PRVT.PP PPP conversion factor, households and NPISHs final consumption expenditure (LCU per international $) - indicator page (values not rendered)"
+    },
+    {
+     "key": "us22_calc_oecdpl",
+     "url": "https://www.calcalist.co.il/local_news/article/hj87iz11fye",
+     "label": "Calcalist, OECD price-level comparison for Israel, 13 Nov 2024 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_q_happy",
+   "stage": "us22",
+   "topic": "Life satisfaction by income, US and Israel",
+   "claims": [
+    {
+     "text": "United States, Gallup Mood of the Nation (phone, 2-15 Jan 2025, n=1,005): share 'very satisfied' with the way things are going in their personal life, by annual household income: under $40,000 38%; $40,000-$99,999 42%; $100,000+ 55% (2020: 54%, 66%, 76%). Total satisfied (very + somewhat), all adults: 81%. Income-group totals for very+somewhat not published. Verbatim question in the topline, not reproduced in the article.",
+     "strength": "strong",
+     "sources": [
+      "us22_gallup_pl25"
+     ]
+    },
+    {
+     "text": "Gallup's US life-evaluation measure (Cantril ladder, 0-10): 'On which step of the ladder would you say you personally feel you stand at this time?' and 'about five years from now'; thriving = current 7+ and future 8+. Gallup states life evaluation rises with income across the full distribution, but no recent thriving-by-income percentages were found in accessible releases.",
+     "strength": "moderate",
+     "sources": [
+      "us22_gallup_rip26"
+     ]
+    },
+    {
+     "text": "Israel CBS (Social Survey, released for Rosh Hashanah, Sep 2026): 92.2% of Israelis aged 20+ satisfied with their lives (Jews 92.6%, Arabs 90.6%); 70.2% satisfied with their financial situation. CBS Social Survey 2023: 91.1% satisfied. Question wording not given in these sources; the CBS Social Survey item is believed to be 'In general, are you satisfied with your life?' on a 4-point scale, with 'satisfied' = very satisfied + satisfied (NOT VERIFIED against a CBS questionnaire).",
+     "strength": "moderate",
+     "sources": [
+      "us22_ynet_cbs5787",
+      "us22_mako_ss23"
+     ]
+    },
+    {
+     "text": "Israel life satisfaction by income quintile from the CBS Social Survey: NOT FOUND in any accessible CBS release or press coverage (CBS tables not reachable). Not estimated. No cross-country survey giving both countries by income group was found (Gallup International 2024 reports income breakdowns only as a 37-country aggregate).",
+     "strength": "moderate",
+     "sources": [
+      "us22_ynet_cbs5787"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_gallup_pl25",
+     "url": "https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx",
+     "label": "Gallup, 'New Low Satisfied With Personal Life' (Mood of the Nation, Jan 2-15 2025), 23 Jan 2025"
+    },
+    {
+     "key": "us22_gallup_rip26",
+     "url": "https://www.gallup.com/file/analytics/715049/Gallup_Rippel_Report_2026.pdf",
+     "label": "Gallup, Rippel Report 2026 (US life evaluation; ladder question wording)"
+    },
+    {
+     "key": "us22_ynet_cbs5787",
+     "url": "https://www.ynetnews.com/article/rymfsha00ge",
+     "label": "Ynetnews, Israel's population surpasses 10 million as new Hebrew year begins (CBS Rosh Hashanah data), 9 Sep 2026"
+    },
+    {
+     "key": "us22_mako_ss23",
+     "url": "https://www.mako.co.il/news-money/2025_q4/Article-e3784a807a1ca91026.htm",
+     "label": "Mako/N12, CBS Social Survey 2023 life satisfaction in 20 largest cities, 27 Nov 2025 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_families",
+   "stage": "us22",
+   "topic": "Three families: household budgets by income quintile",
+   "claims": [
+    {
+     "text": "BLS CE 2024, quintiles of income before taxes (per consumer unit, per year): third quintile income before taxes $74,474, 2.5 people, 1.4 earners, wages and salaries $55,348, self-employment $3,349, average annual expenditures $66,900 of which personal insurance and pensions $6,248, food $9,097, housing $24,093, transportation $11,657, healthcare $5,676 (health insurance $3,842), education $749; fourth quintile income $121,548, 2.9 people, 1.8 earners, wages $100,178, self-employment $5,867, expenditures $89,972 of which personal insurance and pensions $11,934, food $11,845, housing $29,374, transportation $15,952, healthcare $7,247 (health insurance $4,913), education $1,353; lowest quintile income $16,658, 1.6 people, 0.5 earners, expenditures $35,046, personal insurance and pensions $711, food $5,498, transportation $5,105, healthcare $3,445; income after taxes not published for 2024.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ce24_q"
+     ]
+    },
+    {
+     "text": "CBS HES 2021 Table 2, deciles of households by net money income per standard person (NIS per household per month): deciles 5 and 6 gross money income 14,908 and 18,046, compulsory payments 1,310 and 1,992, net money income 13,599 and 16,054, money expenditure 10,564 and 12,024, mortgage payments (principal and interest, a savings item) 774 and 1,005, persons 3.25 and 3.21, food excl. fruit and vegetables 2,151 and 2,266, vegetables and fruit 570 and 588, health 784 and 948, education services 687 and 941, transport and communications 1,708 and 2,104; deciles 7 and 8 gross 21,618 and 26,740, compulsory 2,813 and 4,394, net 18,805 and 22,347, money expenditure 13,229 and 14,816, mortgage 1,180 and 1,256, persons 3.18 and 3.20, food 2,378 and 2,405, fruit and vegetables 591 and 635, health 954 and 1,246, education services 928 and 1,045, transport and communications 2,881 and 3,150; deciles 1 and 2 gross 4,320 and 7,070, compulsory 223 and 350, net 4,097 and 6,720, money expenditure 8,108 and 8,049, persons 3.79 and 3.26.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes21_t2"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ce24_q",
+     "url": "https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2024.xlsx",
+     "label": "US Bureau of Labor Statistics, Consumer Expenditure Survey, Table 1101: Quintiles of income before taxes, 2024"
+    },
+    {
+     "key": "us22_cbs_hes21_t2",
+     "url": "https://www.cbs.gov.il/he/publications/DocLib/2023/1924_household_income_expenditure_2021/t02.pdf",
+     "label": "Israel Central Bureau of Statistics, Household Income and Expenditure: Data from the 2021 Household Expenditure Survey, General Summary, Table 2: Monthly income and consumption expenditure in deciles of households"
+    }
+   ]
   }
  ]
 }
