@@ -1,0 +1,174 @@
+{
+ "ad15_lobbying": {
+  "topic": "Federal lobbying by industry, campaign finance, influence evidence, revolving door, Direct File case",
+  "claims": [
+   {
+    "text": "OpenSecrets totals (nominal): 2008 $3.303bn (14,125 lobbyists); 2009 $3.496bn; 2010 $3.503bn; 2011 $3.315bn; 2012 $3.297bn; 2013 $3.236bn; 2014 $3.255bn; 2015 $3.224bn; 2016 $3.155bn (11,200); 2017 $3.376bn; 2018 $3.460bn; 2019 $3.510bn; 2020 $3.528bn; 2021 $3.732bn (12,136)",
+    "strength": "reported",
+    "sources": [
+     "ad15_247_lobby"
+    ]
+   },
+   {
+    "text": "Statista: total lobbying spending $4.27bn in 2023 and $4.44bn in 2024",
+    "strength": "reported",
+    "sources": [
+     "ad15_statista_lobby"
+    ]
+   },
+   {
+    "text": "LegiStorm: $5.24bn in 2025, up $768m from 2024 (about 17%); outside firms $2.76bn (+25.3%), in-house $2.46bn (+8.5%); 15,592 clients vs 13,910",
+    "strength": "reported",
+    "sources": [
+     "ad15_legistorm_2025"
+    ]
+   },
+   {
+    "text": "NBC/OpenSecrets: federal lobbying a record $4.2bn in 2023; health sector over $739m, the most of any sector; Chamber of Commerce $69m and NAR $52m in 2023; NAR $82m and Chamber $81m in 2022; state lobbying $1.4bn in 2023",
+    "strength": "reported",
+    "sources": [
+     "ad15_nbc_2023"
+    ]
+   },
+   {
+    "text": "OpenSecrets Q2 2025: pharmaceuticals and health products $105.4m in Q2, $226.8m in first half 2025; pharma outspent every industry in all but one quarter since 2010; real estate $34.1m; Chamber $19.8m, NAR $16.2m; AHIP $4.1m; the OBBBA was the most-lobbied bill (2,145 clients)",
+    "strength": "reported",
+    "sources": [
+     "ad15_os_q2_2025"
+    ]
+   },
+   {
+    "text": "Citizens United, decided 21 January 2010: limits on corporate independent expenditures (2 U.S.C. 441b) invalid; Austin overruled and part of McConnell; disclaimer and disclosure upheld; independent expenditures 'do not give rise to corruption or the appearance of corruption'",
+    "strength": "primary",
+    "sources": [
+     "ad15_lii_cu"
+    ]
+   },
+   {
+    "text": "Brennan Center (2025): 5-4 ruling; in 2024 more than $1bn from anonymous sources to committees supporting candidates of both parties; roughly 44% ($481m) of money raised to support Trump came from 10 donors; top 10 Harris donors nearly 8% ($126m); Musk at least $277m; Adelson over $100m",
+    "strength": "reported",
+    "sources": [
+     "ad15_brennan_cu15"
+    ]
+   },
+   {
+    "text": "Gilens and Page (2014): 1,779 policy issues 1981-2002; average citizens have little or no independent influence; low elite support passes ~18%, high ~45%; business groups about twice the influence of mass-based groups",
+    "strength": "reported",
+    "sources": [
+     "ad15_jr_gilens"
+    ]
+   },
+   {
+    "text": "Bashir (2015): elite coefficient 0.76 vs median 0.03; income-group preferences correlated (r 0.78 corrected); R-squared 0.074; when median-income Americans favour change at 80%+ it happens 47% vs 52% for elites; in 185 disagreement cases median-income side wins 47%",
+    "strength": "reported",
+    "sources": [
+     "ad15_bashir"
+    ]
+   },
+   {
+    "text": "Enns (2015): 50th and 90th percentile relative support correlated r=0.94 across 1,836 questions; 'Coincidental representation appears to be the norm'; strong partisans show larger gaps",
+    "strength": "reported",
+    "sources": [
+     "ad15_enns"
+    ]
+   },
+   {
+    "text": "Blanes i Vidal et al. (2012): ex-Senate staffer lobbyists see a 24% drop in generated revenue when their senator leaves office",
+    "strength": "primary",
+    "sources": [
+     "ad15_aer_revolving"
+    ]
+   },
+   {
+    "text": "HLOGA signed 14 Sept 2007 by George W. Bush (Senate 96-2, House 411-8): senators' cooling-off 1 to 2 years; quarterly LDA filings; bundling disclosure over $15,000",
+    "strength": "reported",
+    "sources": [
+     "ad15_wiki_hloga"
+    ]
+   },
+   {
+    "text": "Bloomberg Tax: Intuit about $3m federal lobbying in first three quarters 2025 ($2.9m same period 2024); H&R Block $2.4m; ACTR (representing both) $270,000; July 2025 tax law gave IRS $15m to study a public-private alternative; provision to end Direct File removed; Intuit: 'regularly engages with policymakers'",
+    "strength": "reported",
+    "sources": [
+     "ad15_bt_directfile"
+    ]
+   },
+   {
+    "text": "AP: IRS email: 'IRS Direct File will not be available in Filing Season 2026'; accepted returns 140,803 (2024) and 296,531 (2025); Bessent: 'better alternatives', 'wasn't used very much'; average American spends about $140 a year preparing returns",
+    "strength": "reported",
+    "sources": [
+     "ad15_ap_directfile"
+    ]
+   },
+   {
+    "text": "Intuit FY2025 (to 31 July 2025): revenue $18.8bn; Consumer Group $4.9bn (+10%); TurboTax Live $2.0bn",
+    "strength": "primary",
+    "sources": [
+     "ad15_intuit_fy25"
+    ]
+   }
+  ],
+  "sources": {
+   "ad15_247_lobby": {
+    "url": "https://247wallst.com/special-report/2022/07/11/the-year-lobbyists-influenced-government-policy-the-most-since-2008/2/",
+    "label": "24/7 Wall St., 'The Year Lobbyists Influenced Government Policy the Most Since 2008' (OpenSecrets data), 11 July 2022"
+   },
+   "ad15_statista_lobby": {
+    "url": "https://statista.com/statistics/257337/total-lobbying-spending-in-the-us",
+    "label": "Statista Research Department, 'Total lobbying spending in the United States 1998-2025', updated 22 May 2025"
+   },
+   "ad15_legistorm_2025": {
+    "url": "https://legistorm.com/pro_news/4371/lobbying-spending-tops-5-billion-in-2025.html",
+    "label": "Caleb Mynatt, LegiStorm, 'Lobbying spending tops $5 billion in 2025', 2 February 2026"
+   },
+   "ad15_nbc_2023": {
+    "url": "https://www.nbcnews.com/investigations/lobbyists-spent-record-42-billion-2023-federal-lawmakers-rcna135943",
+    "label": "NBC News, 'Lobbyists spent a record $4.2 billion in 2023 lobbying federal lawmakers' (OpenSecrets data), 2024"
+   },
+   "ad15_os_q2_2025": {
+    "url": "https://stacker.com/stories/government-politics/pharma-industry-and-ballard-partners-dominate-lobbying-space-second",
+    "label": "Natalie Jonas, OpenSecrets (via Stacker), 'Pharma industry and Ballard Partners dominate the lobbying space in second quarter of 2025', 11 August 2025"
+   },
+   "ad15_lii_cu": {
+    "url": "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+    "label": "Citizens United v. Federal Election Commission, 558 U.S. 310 (2010), syllabus, decided 21 January 2010 (LII)"
+   },
+   "ad15_brennan_cu15": {
+    "url": "https://www.brennancenter.org/our-work/research-reports/fifteen-years-later-citizens-united-defined-2024-election",
+    "label": "Marina Pino and Julia Fishman, Brennan Center for Justice, 'Fifteen Years Later, Citizens United Defined the 2024 Election', 14 January 2025"
+   },
+   "ad15_jr_gilens": {
+    "url": "https://journalistsresource.org/politics-and-government/the-influence-of-elites-interest-groups-and-average-voters-on-american-politics/",
+    "label": "Journalist's Resource summary of Gilens and Page, 'Testing Theories of American Politics', Perspectives on Politics (2014), 14 November 2014"
+   },
+   "ad15_bashir": {
+    "url": "https://journals.sagepub.com/doi/reader/10.1177/2053168015608896",
+    "label": "Omar S. Bashir, 'Testing inferences about American politics: A review of the oligarchy result', Research & Politics 2(4), October 2015"
+   },
+   "ad15_enns": {
+    "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BBBD524FFD16C482DCC1E86AD8A58C5B/S1537592715002315a.pdf/relative-policy-support-and-coincidental-representation.pdf",
+    "label": "Peter K. Enns, 'Relative Policy Support and Coincidental Representation', Perspectives on Politics 13(4), December 2015, pp. 1053-1064"
+   },
+   "ad15_aer_revolving": {
+    "url": "https://researchonline.lse.ac.uk/id/eprint/44388",
+    "label": "Jordi Blanes i Vidal, Mirko Draca and Christian Fons-Rosen, 'Revolving Door Lobbyists', American Economic Review 102(7), 2012, pp. 3731-3748"
+   },
+   "ad15_wiki_hloga": {
+    "url": "https://en.wikipedia.org/wiki/Honest_Leadership_and_Open_Government_Act",
+    "label": "Wikipedia, 'Honest Leadership and Open Government Act' (Pub. L. 110-81)"
+   },
+   "ad15_bt_directfile": {
+    "url": "https://news.bloombergtax.com/daily-tax-report/tax-prep-gop-aligned-groups-lobby-to-end-irs-direct-file",
+    "label": "Chris Cioffi, Bloomberg Tax, 'Tax Prep, GOP-Aligned Groups Lobby to End IRS Direct File', 23 October 2025"
+   },
+   "ad15_ap_directfile": {
+    "url": "https://www.live5news.com/2025/11/06/irs-direct-file-wont-be-available-next-year-heres-what-that-means-taxpayers",
+    "label": "Fatima Hussein, Associated Press, 'IRS Direct File won't be available next year', 5 November 2025"
+   },
+   "ad15_intuit_fy25": {
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000031/fy25q4earningspressrelease.htm",
+    "label": "Intuit Inc., Form 8-K Ex. 99.01, fourth-quarter and full-year fiscal 2025 results, 21 August 2025"
+   }
+  }
+ }
+}
