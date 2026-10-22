@@ -422,5 +422,89 @@
     "label": "Brookings, '5 facts about student debt in the U.S.', 13 October 2015"
    }
   }
+ },
+ "ad7_audit": {
+  "topic": "Audit corrections and additions, Part Seven",
+  "claims": [
+   {
+    "text": "Correction to the circulating figure (and to us14_ncan_cb): in College Board Table CP-2 (2025 dollars) public four-year in-state published tuition and fees were $12,810 in 2015-16 but kept rising to $13,110 (2017-18) and peaked at $13,150 in 2019-20 and 2020-21 before falling to $11,950 in 2025-26; $12,810 is not the peak",
+    "strength": "strong",
+    "sources": [
+     "ad7_cb_trends25"
+    ]
+   },
+   {
+    "text": "ACE fact sheet: maximum Pell award (current dollars) FY79 $1,800 (77% of public four-year cost), FY86 $2,100 (51%), FY91 $2,400 (42%), FY96 $2,470 (33%), FY01 $3,750 (42%), FY03-FY06 $4,050 in each of four years (share 38% to 32%)",
+    "strength": "strong",
+    "sources": [
+     "ad7_ace_pell"
+    ]
+   },
+   {
+    "text": "NASFAA (July 2026, footnote 6): the 1978 maximum Pell of $1,400 equals $7,095 in 2026 dollars; today's maximum remains at a level similar to FY1978 adjusted for inflation",
+    "strength": "strong",
+    "sources": [
+     "ad7_nasfaa_pell"
+    ]
+   },
+   {
+    "text": "CRS RS22699 (fn 32): opposing restoration of dischargeability, Rep. Allen Ertel warned (statement in H.Rept. 95-595 at 536) that it would be 'almost specifically designed to encourage fraud'; H.Rept. 95-595 at 132 said s.439A targeted 'a perceived problem rather than a real one'",
+    "strength": "strong",
+    "sources": [
+     "ad7_crs_rs22699"
+    ]
+   },
+   {
+    "text": "NY Fed: student loan balances $1.26tn in 2016 Q2 (summary table)",
+    "strength": "strong",
+    "sources": [
+     "ad7_audit_nyfed2016"
+    ]
+   },
+   {
+    "text": "NY Fed: outstanding student loan debt $1.48tn in 2019 Q2, down $8bn from Q1",
+    "strength": "strong",
+    "sources": [
+     "ad7_audit_nyfed2019"
+    ]
+   },
+   {
+    "text": "NY Fed Q2 2022 (as quoted): student loan balances roughly unchanged from Q1 at $1.59tn",
+    "strength": "medium",
+    "sources": [
+     "ad7_audit_cr2022"
+    ]
+   }
+  ],
+  "sources": {
+   "ad7_cb_trends25": {
+    "url": "https://research.collegeboard.org/media/pdf/Trends-in-College-Pricing-and-Student-Aid-2025-final_0.pdf",
+    "label": "College Board, 'Trends in College Pricing and Student Aid 2025' (full report)"
+   },
+   "ad7_ace_pell": {
+    "url": "https://www.acenet.edu/Documents/FactSheet-Pell-Grant-Funding-History-1976-2010.pdf",
+    "label": "American Council on Education, 'Pell Grant Funding History (1976 to 2010)' fact sheet (US Dept of Education OPE; College Board)"
+   },
+   "ad7_nasfaa_pell": {
+    "url": "https://www.nasfaa.org/uploads/documents/Issue_Brief_Double_Pell.pdf",
+    "label": "NASFAA, 'Double Pell' issue brief, July 2026"
+   },
+   "ad7_crs_rs22699": {
+    "url": "https://www.everycrsreport.com/reports/RS22699.html",
+    "label": "Congressional Research Service (Duke Chen), 'Student Loans in Bankruptcy', RS22699, 26 July 2007"
+   },
+   "ad7_audit_nyfed2016": {
+    "url": "https://www.newyorkfed.org/newsevents/news/research/2016/rp160809",
+    "label": "Federal Reserve Bank of New York, Household Debt and Credit, Q2 2016 press release, 9 August 2016"
+   },
+   "ad7_audit_nyfed2019": {
+    "url": "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/pdf/hhdc_2019q2.pdf",
+    "label": "Federal Reserve Bank of New York, Quarterly Report on Household Debt and Credit, 2019 Q2"
+   },
+   "ad7_audit_cr2022": {
+    "url": "https://www.calculatedriskblog.com/2022/08/ny-fed-q2-report-total-household-debt.html",
+    "label": "Calculated Risk, 'NY Fed Q2 Report: Total Household Debt Increased', 2 August 2022 (quoting the NY Fed Q2 2022 report)"
+   }
+  }
  }
 }
