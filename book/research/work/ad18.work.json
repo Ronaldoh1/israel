@@ -177,5 +177,23 @@
     "label": "CDC/NCHS, 'U.S. Uninsured Rate Unchanged in 2025' (NHIS early release), 28 May 2026"
    }
   }
+ },
+ "ad18_audit": {
+  "topic": "ad18 audit additions (22 Oct 2026)",
+  "claims": [
+   {
+    "text": "IRS (IR-2026-42, 31 Mar 2026): Trump Accounts created by the 2025 budget law (P.L. 119-21); $1,000 federal pilot contribution for US-citizen children with a valid SSN born 1 Jan 2025 to 31 Dec 2028; contributions begin 4 July 2026; more than 4 million children signed up, more than 1 million covered by pilot elections.",
+    "strength": "strong",
+    "sources": [
+     "ad18_audit_irs_trumpacct"
+    ]
+   }
+  ],
+  "sources": {
+   "ad18_audit_irs_trumpacct": {
+    "url": "https://www.irs.gov/node/158231",
+    "label": "Internal Revenue Service, '4 million children have been signed up for Trump Accounts with 1 million claiming the $1,000 pilot program contribution', IR-2026-42, 31 March 2026"
+   }
+  }
  }
 }
