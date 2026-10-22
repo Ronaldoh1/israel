@@ -1592,5 +1592,294 @@
     "label": "Israel Central Bureau of Statistics, Household Income and Expenditure: Data from the 2021 Household Expenditure Survey, General Summary, Table 2: Monthly income and consumption expenditure in deciles of households"
    }
   }
+ },
+ "us22_multijobs": {
+  "topic": "Multiple jobholding US vs Israel",
+  "claims": [
+   {
+    "text": "US 2025 annual average (CPS): 8.800 million multiple jobholders = 5.4% of all employed (men 4.9%, women 5.9%). Definition: multiple jobholders as a percent of all employed people. BLS caveat: 2025 annual estimates are 11-month averages excluding October (no October 2025 survey) and are not strictly comparable with other years' annual averages.",
+    "strength": "strong",
+    "sources": [
+     "us22_bls_cpsaat36_25"
+    ]
+   },
+   {
+    "text": "US latest month: September 2026, 8.986 million multiple jobholders (seasonally adjusted), 5.5% of employed (SA); Aug 2026 5.4% / 8.805m; May 2026 5.2% / 8.428m.",
+    "strength": "strong",
+    "sources": [
+     "us22_fred_mjrate",
+     "us22_fred_mjlevel"
+    ]
+   },
+   {
+    "text": "Israel: no published CBS figure for the share or number of employed persons holding more than one job was found. CBS states its Labour Force Survey questionnaire (updated Jan 2018) asks the number of jobs each employed person has, and that weekly hours include hours at other workplaces, but employed persons are classified by their main job; no tabulated multiple-jobholding rate was located. No OECD/ILO dataset comparing multiple jobholding for both countries was found. NOT FOUND - do not estimate.",
+    "strength": "moderate",
+    "sources": [
+     "us22_cbs_shnaton_lab"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_bls_cpsaat36_25": {
+    "url": "https://www.bls.gov/cps/cpsaat36.pdf",
+    "label": "BLS, CPS annual averages Table 36: Multiple jobholders by selected characteristics, 2025"
+   },
+   "us22_fred_mjrate": {
+    "url": "https://fred.stlouisfed.org/series/LNS12026620",
+    "label": "BLS via FRED, Multiple Jobholders as a Percent of Employed (LNS12026620), SA, monthly, accessed 21 Oct 2026"
+   },
+   "us22_fred_mjlevel": {
+    "url": "https://fred.stlouisfed.org/series/LNS12026619",
+    "label": "BLS via FRED, Multiple Jobholders (LNS12026619), thousands, SA, monthly, accessed 21 Oct 2026"
+   },
+   "us22_cbs_shnaton_lab": {
+    "url": "https://www.cbs.gov.il/he/publications/doclib/2019/9.shnatonlabourmarket/st09_00.pdf",
+    "label": "Israel CBS, Statistical Abstract of Israel 2019, ch. 9 Labour Market, introduction/definitions"
+   }
+  }
+ },
+ "us22_hours": {
+  "topic": "Usual weekly hours, long hours, involuntary part-time (OECD)",
+  "claims": [
+   {
+    "text": "OECD average usual weekly hours on the main job, 2025, both sexes, all ages: Israel employees 40.2 hours (all workers incl. self-employed 40.2; full-time employees 43.3; full-time all workers 43.4; part-time employees 18.8). United States employees 38.2 hours (full-time employees 41.0; part-time employees 17.9). OECD publishes US only for employees, so the like-for-like comparison is employees: Israel 40.2 vs US 38.2 (all), 43.3 vs 41.0 (full-time). 2024: Israel employees 40.1 / full-time 43.4; US employees 38.4 / full-time 41.2. Full-time/part-time split uses OECD's common 30-usual-hours threshold.",
+    "strength": "strong",
+    "sources": [
+     "us22_oecd_avgusl"
+    ]
+   },
+   {
+    "text": "OECD share of employees usually working 50+ hours/week in main job, 2025: Israel 10.4%, United States 8.9%. 2024: Israel 11.2%, US 9.2%; 2023: Israel 13.5%, US 9.5%. 60+ hours, 2025: Israel 2.5%, US 2.7%. (Israel all workers incl. self-employed 50+: 11.7% in 2025.) This is the indicator underlying the Better Life Index 'employees working very long hours'; OECD flags the dataflow as non-production.",
+    "strength": "strong",
+    "sources": [
+     "us22_oecd_lnghrs"
+    ]
+   },
+   {
+    "text": "OECD Better Life Index country pages (edition year not stated) give older text: Israel 'almost 19% of employees work very long hours' vs OECD average 9%; US 'around 11%' vs OECD 9%. These differ from the 2023-2025 OECD dataset values and should not be used as current figures.",
+    "strength": "weak",
+    "sources": [
+     "us22_bli_isr",
+     "us22_bli_usa"
+    ]
+   },
+   {
+    "text": "OECD involuntary part-time employment (national part-time definitions), 2025: Israel 0.72% of total employment (3.3% of part-time employment); United States 0.81% of total employment (4.6% of part-time employment). 2023: Israel 1.0% / 4.3% of part-time; US 0.58% / 3.5% of part-time. OECD average 2025: 2.5% of employment, 12.7% of part-time employment. Caution: the OECD US series is far below BLS 'part-time for economic reasons' (which includes slack work/business conditions), so definitions are narrow and national; treat cross-country comparison as indicative only.",
+    "strength": "moderate",
+    "sources": [
+     "us22_oecd_invpt"
+    ]
+   },
+   {
+    "text": "OECD caution on annual hours: its average-annual-hours data 'are intended for comparisons of trends over time; they are unsuitable for comparisons of the level of average annual hours of work for a given year, because of differences in their sources.' Concept: total hours actually worked over the year divided by average number of people in employment.",
+    "strength": "strong",
+    "sources": [
+     "us22_oecd_annhrs_note"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_oecd_avgusl": {
+    "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_HW@DF_AVG_USL_WK_WKD,1.0/ISR+USA..._T.........?startPeriod=2025&endPeriod=2025&format=jsondata",
+    "label": "OECD Data Explorer (SDMX), Average usual weekly hours worked on the main job (DSD_HW@DF_AVG_USL_WK_WKD), 2025, accessed 21 Oct 2026"
+   },
+   "us22_oecd_lnghrs": {
+    "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_HW@DF_EMP_LNG_USL_WK_HRS,1.0/ISR+USA..._T.........?startPeriod=2023&format=jsondata",
+    "label": "OECD Data Explorer (SDMX), Incidence of employment by long usual weekly hours worked (DSD_HW@DF_EMP_LNG_USL_WK_HRS), 2023-2025, accessed 21 Oct 2026"
+   },
+   "us22_oecd_invpt": {
+    "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_INVPT_EMP@DF_INVPT_I,1.1/ISR+USA+OECD...._T..?startPeriod=2023&format=jsondata",
+    "label": "OECD Data Explorer (SDMX), Incidence of involuntary part time employment (DSD_INVPT_EMP@DF_INVPT_I v1.1), 2023-2025, accessed 21 Oct 2026"
+   },
+   "us22_oecd_annhrs_note": {
+    "url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.SAE/DSD_HW@DF_AVG_ANN_HRS_WKD/latest",
+    "label": "OECD, dataflow description: Average annual hours actually worked per worker (DSD_HW@DF_AVG_ANN_HRS_WKD)"
+   },
+   "us22_bli_isr": {
+    "url": "https://www.oecdbetterlifeindex.org/countries/israel/",
+    "label": "OECD Better Life Index, Israel country page (accessed 21 Oct 2026; edition year not stated)"
+   },
+   "us22_bli_usa": {
+    "url": "https://www.oecdbetterlifeindex.org/countries/united-states/",
+    "label": "OECD Better Life Index, United States country page (accessed 21 Oct 2026; edition year not stated)"
+   }
+  }
+ },
+ "us22_debtservice": {
+  "topic": "Household debt service burden US vs Israel",
+  "claims": [
+   {
+    "text": "US household debt service ratio (required principal+interest on mortgage and consumer debt / disposable personal income), Q2 2026: 11.11% (Q1 2026 11.16%; Q4 2025 11.32%). Consumer (non-mortgage) DSR Q2 2026: 5.28%; mortgage DSR Q2 2026: 5.83%. Federal Reserve Board estimates, seasonally adjusted.",
+    "strength": "strong",
+    "sources": [
+     "us22_fred_tdsp",
+     "us22_fred_cdsp",
+     "us22_fred_mdsp"
+    ]
+   },
+   {
+    "text": "Israel: no aggregate household debt-service-to-disposable-income ratio was found in Bank of Israel Financial Stability Reports (H2 2024 report checked) or elsewhere; BIS DSR series do not cover Israel households. No like-for-like comparison with the US DSR exists. NOT FOUND.",
+    "strength": "moderate",
+    "sources": [
+     "us22_boi_fsr24h2"
+    ]
+   },
+   {
+    "text": "Israel, closest BoI measure (new mortgages only, not all debt): close to 42% of new mortgage borrowers pay more than 30% of income in mortgage repayments (payment-to-income, PTI), late 2024, 'over 40 percent' for the past two years. Bank of Israel caps PTI at 50%.",
+    "strength": "strong",
+    "sources": [
+     "us22_boi_fsr24h2"
+    ]
+   },
+   {
+    "text": "Israel, BoI data analyzed by State Comptroller (June 2026): share of new mortgages with PTI 30-40% rose from ~39% (Jan 2022) to ~56% (Jul 2025); high-risk new mortgages (LTV 60-75% and PTI 30-40%) ~30.8% in Jul 2025; average first monthly mortgage payment ~NIS 5,776 in mid-2025 vs ~NIS 4,200 for 2019 loans; outstanding household mortgage debt ~NIS 630bn (Jun 2025). These are new-loan flow measures, not comparable to the US stock-based DSR.",
+    "strength": "moderate",
+    "sources": [
+     "us22_mevaker_mortg26"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_fred_tdsp": {
+    "url": "https://fred.stlouisfed.org/series/TDSP",
+    "label": "Federal Reserve Board via FRED, Household Debt Service Payments as a Percent of Disposable Personal Income (TDSP), quarterly SA, accessed 21 Oct 2026"
+   },
+   "us22_fred_cdsp": {
+    "url": "https://fred.stlouisfed.org/series/CDSP",
+    "label": "Federal Reserve Board via FRED, Consumer Debt Service Payments as a Percent of Disposable Personal Income (CDSP), quarterly SA, accessed 21 Oct 2026"
+   },
+   "us22_fred_mdsp": {
+    "url": "https://fred.stlouisfed.org/series/MDSP",
+    "label": "Federal Reserve Board via FRED, Mortgage Debt Service Payments as a Percent of Disposable Personal Income (MDSP), updated 22 Sep 2026"
+   },
+   "us22_boi_fsr24h2": {
+    "url": "https://www.boi.org.il/media/slthngxe/fsr2024she.pdf",
+    "label": "Bank of Israel, Financial Stability Report, Second Half of 2024 (Feb 2025)"
+   },
+   "us22_mevaker_mortg26": {
+    "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2026/Economic-Report/2026-Economic-Report-201-Taktzir.pdf",
+    "label": "Israel State Comptroller, Economic Report 2026 - The Mortgage Market (summary), June 2026 (Bank of Israel data)"
+   }
+  }
+ },
+ "us22_carecost": {
+  "topic": "Forgoing medical care because of cost US vs Israel",
+  "claims": [
+   {
+    "text": "US: 28% of adults say that in the past 12 months they skipped or postponed health care they needed because of the cost (KFF Survey of Health Access and Caregiving, fielded May 4-26, 2026).",
+    "strength": "strong",
+    "sources": [
+     "us22_kff_costs26"
+    ]
+   },
+   {
+    "text": "US prescription cost coping, past 12 months (KFF Health Tracking Poll, Feb 24-Mar 2, 2026): 31% took an OTC drug instead of filling a prescription because of cost; 27% did not fill a prescription; 19% cut pills in half or skipped doses due to cost; 43% did at least one of these (up from 33% in 2025 and 31% in July 2023). All adults.",
+    "strength": "strong",
+    "sources": [
+     "us22_kff_costs26"
+    ]
+   },
+   {
+    "text": "Commonwealth Fund 2023 International Health Policy Survey covered 10 countries (Australia, Canada, France, Germany, Netherlands, New Zealand, Sweden, Switzerland, UK, US) - Israel NOT included, so no same-survey comparison exists. In the US, nearly half of lower/average-income adults and nearly one in three higher-income adults reported at least one cost-related access problem (skipped visit, test/treatment/follow-up, unfilled prescription or skipped doses); exact overall US figure not stated in the brief text.",
+    "strength": "moderate",
+    "sources": [
+     "us22_cmwf_ihp23"
+    ]
+   },
+   {
+    "text": "Israel: 12% of adults (22+) reported forgoing medical treatment, a consultation, or medication due to the required copayment (Myers-JDC-Brookdale 2024 population survey; telephone, Jun-Dec 2024, n=2,558, response rate 36%). Recall period not stated on the summary page (full Hebrew report S-241-25 not accessed). Not comparable in wording with KFF (copayment-specific vs. any cost; skip vs. postpone).",
+    "strength": "strong",
+    "sources": [
+     "us22_brookdale_hs24"
+    ]
+   },
+   {
+    "text": "Israel, advocacy survey (secondary report): Physicians for Human Rights Israel / GeoCartography 2026 (n=800): 42% said they gave up a needed health service or medication in the past year for any reason; cost and waiting times each cited by ~10%; low-income 55.7% vs high-income 29.8% gave up care for any reason; cost-related forgoing ~24.1% among Arab men, 12% Arab women, ~8% Jewish men and women. Reported by Israel Hayom 15 Sep 2026; primary report not checked.",
+    "strength": "weak",
+    "sources": [
+     "us22_ih_phri26"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_kff_costs26": {
+    "url": "https://www.kff.org/health-costs/americans-challenges-with-health-care-costs/",
+    "label": "KFF, Americans' Challenges with Health Care Costs (updated 29 Sep 2026)"
+   },
+   "us22_cmwf_ihp23": {
+    "url": "https://www.commonwealthfund.org/publications/surveys/2023/nov/cost-not-getting-care-income-disparities-affordability-health",
+    "label": "Commonwealth Fund, 2023 International Health Policy Survey brief on cost-related access problems, Nov 2023"
+   },
+   "us22_brookdale_hs24": {
+    "url": "https://brookdale.jdc.org.il/en/publication/population_survey_on_the_level_of-service_and-health_care_system_performance_in_2024/",
+    "label": "Myers-JDC-Brookdale Institute (Laron, Fialco, Gorelik), Population Survey on the Level of Service and Health Care System Performance in 2024, publ. 2025"
+   },
+   "us22_ih_phri26": {
+    "url": "https://www.israelhayom.co.il/health/article/21423744",
+    "label": "Israel Hayom, 15 Sep 2026, reporting Physicians for Human Rights Israel / GeoCartography survey (n=800)"
+   }
+  }
+ },
+ "us22_fees": {
+  "topic": "Consumer interest and fee extraction: credit cards, overdraft, bank fees",
+  "claims": [
+   {
+    "text": "US credit cards, 2024: consumers were assessed $160 billion in interest charges (up from $105bn in 2022) and paid $31.3 billion in fees (up 23% from 2022). CFPB figures draw largely on Y-14+ large-issuer data, which CFPB says are a large portion of the market but not necessarily representative; nominal dollars.",
+    "strength": "strong",
+    "sources": [
+     "us22_cfpb_ccmr25"
+    ]
+   },
+   {
+    "text": "US bank overdraft/NSF fee revenue, latest CFPB figure: $5.83 billion in 2023 (banks with assets over $1 billion only; excludes smaller banks and credit unions), down 24% from 2022 and 51% from $11.96bn in 2019. No later CFPB total was found.",
+    "strength": "strong",
+    "sources": [
+     "us22_cfpb_od23"
+    ]
+   },
+   {
+    "text": "US overdraft, non-CFPB update: per NCLC (Jun 2026) the top 20 consumer banks earned $4 billion in overdraft fee revenue in 2025 (call reports); NCLC estimates all banks and credit unions collected ~$12.4bn in overdraft/NSF fees in 2025 (estimate extrapolated from top-20 growth; 2024 estimate $12.1bn from Financial Health Network). Different coverage from the CFPB $1bn+ bank series - do not splice.",
+    "strength": "moderate",
+    "sources": [
+     "us22_nclc_od26"
+    ]
+   },
+   {
+    "text": "Israel, 2025: fee income banks collected from households and small businesses totaled NIS 5.7 billion (NIS 5.4bn in 2024; households not separated from small businesses); average current-account management plus debit-card cost NIS 31.6 per account per month (NIS 29.1 in 2024). Credit card companies collected ~NIS 1.94 billion in fees from households and small businesses in Q1-Q3 2025 (breakdown new from Q2 2025, no 2024 comparison).",
+    "strength": "strong",
+    "sources": [
+     "us22_boi_fees25"
+    ]
+   },
+   {
+    "text": "Israel, whole banking system 2025 (all customers, not households only): interest income ~NIS 138bn (+4.2%) and fee income ~NIS 14.6bn (+10.6%), per Supervisor of Banks annual review as reported by Ynet. No Bank of Israel total for household credit card interest paid was found.",
+    "strength": "moderate",
+    "sources": [
+     "us22_ynet_sob25"
+    ]
+   }
+  ],
+  "sources": {
+   "us22_cfpb_ccmr25": {
+    "url": "https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2025.pdf",
+    "label": "CFPB, The Consumer Credit Card Market report, December 2025"
+   },
+   "us22_cfpb_od23": {
+    "url": "https://files.consumerfinance.gov/f/documents/cfpb_overdraft-nsf_data-spotlight_2024-04.pdf",
+    "label": "CFPB, Data Spotlight: Overdraft/NSF revenue in 2023 down more than 50% versus pre-pandemic levels, 24 Apr 2024"
+   },
+   "us22_nclc_od26": {
+    "url": "https://www.nclc.org/resources/overdraft-fees-rising-in-absence-of-cfpb-rule/",
+    "label": "National Consumer Law Center, Overdraft Fees Rising in Absence of CFPB Rule, issue brief, 3 Jun 2026"
+   },
+   "us22_boi_fees25": {
+    "url": "https://www.boi.org.il/publications/pressreleases/28-07-2026/",
+    "label": "Bank of Israel, Periodic report on prices of common banking services for households, 2025 (press release 28 Jul 2026)"
+   },
+   "us22_ynet_sob25": {
+    "url": "https://www.ynet.co.il/economy/article/b1rqqwdkfe",
+    "label": "Ynet (Gad Lior), May 2026, reporting Bank of Israel Supervisor of Banks annual review 2025"
+   }
+  }
  }
 }
