@@ -110,6 +110,20 @@
     "sources": [
      "vt28_wiki_catharism"
     ]
+   },
+   {
+    "text": "Audit: the 'exacted no tithes' statement in vt28_ency_cathars is from Beverly Mayne Kienzle's entry 'Cathars' (Encyclopedia of Genocide and Crimes Against Humanity), the only entry on that page to mention tithes; Gui's manual excerpt does not mention tithes. Single secondary source: attribute by name.",
+    "strength": "secondary",
+    "sources": [
+     "vt28_ency_cathars"
+    ]
+   },
+   {
+    "text": "Gui (Robinson trans.): they say they are 'good Christians, who do not swear, or lie, or speak evil of others' and 'that they do not kill any man or animal'; accuse churchmen of selling baptismal water 'out of avarice'.",
+    "strength": "primary",
+    "sources": [
+     "vt28_gui_fordham"
+    ]
    }
   ],
   "sources": {
@@ -324,6 +338,41 @@
     "sources": [
      "vt28_wiki_catharism"
     ]
+   },
+   {
+    "text": "Castelnau met Raymond VI on 13 January 1208 and was killed the following morning; Carcassonne surrendered 15 August 1209, inhabitants expelled (PVC: naked; Puylaurens: in shifts and breeches); Minerve surrendered 22 July 1210, 140 refusers burned; Muret 12 September 1213, Peter II killed; Montfort killed at Toulouse 25 or 29 June 1218 (sources differ); Louis VIII took the cross January 1226, campaign 1226, died November 1226; Treaty of Paris signed at Meaux 12 April 1229. No overall death toll given.",
+    "strength": "secondary",
+    "sources": [
+     "vt28_audit_wiki_crusade"
+    ]
+   },
+   {
+    "text": "Siege of Minerve early June to 22 July 1210; 'The 140 people who refused were burned at the stake', footnoted to Peter of les Vaux-de-Cernay (Sibly trans. 1998) p.156; non-perfect Cathars, Catholics and soldiers allowed to leave; few perfect recanted.",
+    "strength": "secondary",
+    "sources": [
+     "vt28_audit_wiki_minerve"
+    ]
+   },
+   {
+    "text": "Lavaur fell 3 May 1211 after a siege from late March/early April; Montfort ordered Aimery of Montréal and about 80 knights hanged; when the gallows collapsed the rest were put to the sword; Giralda of Laurac thrown into a well and stoned; up to 400 Cathars burned, not offered conversion (Marvin 2008 p.103; Sumption 1999 p.132; Strayer).",
+    "strength": "secondary",
+    "sources": [
+     "vt28_audit_wiki_lavaur"
+    ]
+   },
+   {
+    "text": "Catholic Encyclopedia: Peter of Castelnau assassinated 1208; Béziers and Carcassonne taken 1209; Lavaur fell 1211 'amid dreadful carnage'; Peter of Aragon defeated and killed at Muret 1213; 'Slay all; God will know His own' was 'never pronounced'.",
+    "strength": "tertiary",
+    "sources": [
+     "vt28_audit_cathen_albigenses"
+    ]
+   },
+   {
+    "text": "Catholic Encyclopedia: after the conference of Meaux, on 12 April 1229 Raymond VII did public penance in Notre-Dame, Paris, and was absolved; he pledged to demolish the walls of Toulouse and to give his daughter Jeanne in marriage to Alphonse, brother of Louis IX; later accepted the Inquisition at Toulouse.",
+    "strength": "tertiary",
+    "sources": [
+     "vt28_audit_cathen_raymond7"
+    ]
    }
   ],
   "sources": {
@@ -346,6 +395,26 @@
    "vt28_fordham_lat4c3": {
     "url": "https://sourcebooks.web.fordham.edu/source/lat4-c3.asp",
     "label": "Fourth Lateran Council (1215), canon 3, trans. H. J. Schroeder (1937), Internet Medieval Sourcebook, Fordham"
+   },
+   "vt28_audit_wiki_crusade": {
+    "url": "https://en.wikipedia.org/wiki/Albigensian_Crusade",
+    "label": "Wikipedia, 'Albigensian Crusade' (accessed 22 October 2026; citing Peter of les Vaux-de-Cernay, William of Tudela, Strayer, Sumption)"
+   },
+   "vt28_audit_wiki_minerve": {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Minerve",
+    "label": "Wikipedia, 'Siege of Minerve' (accessed 22 October 2026; 140 burned footnoted to Peter of les Vaux-de-Cernay, History of the Albigensian Crusade, trans. Sibly and Sibly 1998, p. 156)"
+   },
+   "vt28_audit_wiki_lavaur": {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Lavaur",
+    "label": "Wikipedia, 'Siege of Lavaur' (accessed 22 October 2026; citing Marvin 2008, Sumption 1999, Strayer, Evans)"
+   },
+   "vt28_audit_cathen_albigenses": {
+    "url": "https://www.newadvent.org/cathen/01267e.htm",
+    "label": "Catholic Encyclopedia (1907), 'Albigenses'"
+   },
+   "vt28_audit_cathen_raymond7": {
+    "url": "https://www.newadvent.org/cathen/12670b.htm",
+    "label": "Catholic Encyclopedia (1911), 'Raymond VII'"
    }
   }
  }
