@@ -276,5 +276,111 @@
     "label": "HHS ASPE (Aharpour, Ochoa, Stein, Zukiewicz), 'Child Support and Criminal Justice' issue brief, July 2020"
    }
   }
+ },
+ "ad14_homeless": {
+  "topic": "Homelessness: HUD 2025 count, Grants Pass, 2025 executive order, CoC litigation, Housing First evidence",
+  "claims": [
+   {
+    "text": "HUD (29 May 2026): Jan 2025 PIT 745,652 homeless, 266,320 unsheltered, down 3% from 2024, up 27% since 2013; unsheltered up 36% and chronic up 81% since 2013; release attributes decline to 'decreases in Sanctuary Cities'; Turner: 'the status quo of housing first has failed to meaningfully reduce homelessness'; 2013-2025 taxpayer-funded beds up 151%, CoC spending up 111%; 1,456,923 homeless or in homeless-funded housing",
+    "strength": "primary",
+    "sources": [
+     "ad14_hud_pit2025"
+    ]
+   },
+   {
+    "text": "Grants Pass v. Johnson (28 June 2024, 6-3, Gorsuch): Eighth Amendment does not bar enforcement of general public-camping laws; Grants Pass ordinance: civil fines, then bans and short jail terms for repeat violations; Gorsuch: 'Homelessness is complex. Its causes are many.'; Sotomayor dissent (Kagan, Jackson): 'unconscionable and unconstitutional'",
+    "strength": "reported",
+    "sources": [
+     "ad14_ncc_grantspass"
+    ]
+   },
+   {
+    "text": "EO 'Ending Crime and Disorder on America's Streets' (24 July 2025): ends federal support for Housing First, prioritises treatment, HUD to condition participation on treatment; promotes civil commitment; SAMHSA not to fund harm reduction or safe consumption; grants to favour jurisdictions that enforce bans on open drug use, urban camping, loitering, squatting",
+    "strength": "reported",
+    "sources": [
+     "ad14_hma_eo"
+    ]
+   },
+   {
+    "text": "FY2025 CoC NOFO (13 Nov 2025) capped permanent supportive housing at 30% (PSH about 87% of CoC spending) and tier 1 at 30% (from about 90%); sued by 21 state AGs and local governments; HUD withdrew it 8 Dec 2025; under injunction restored prior-year competition; Consolidated Appropriations Act 2026 (3 Feb 2026, sec. 244) directed renewals of expiring projects",
+    "strength": "reported",
+    "sources": [
+     "ad14_naco_coc"
+    ]
+   },
+   {
+    "text": "CRS 18 Sept 2026: FY2026 CoC NOFO released 1 June 2026, modified 24 July 2026; tier 1 60% of annual renewal demand; $1.3bn of $4.04bn set aside for new transitional housing and supportive-services-only projects; points for treatment and recovery and for requiring participation in services; court vacated NOFO 7 Aug 2026 under APA; HUD appealed 13 Aug; First Circuit panel stayed vacatur 16 Sept 2026",
+    "strength": "primary",
+    "sources": [
+     "ad14_crs_coc2026"
+    ]
+   },
+   {
+    "text": "NACo: case National Alliance to End Homelessness v. HUD; court found the $1.3bn set-aside and criteria requiring adherence to executive orders unlawful; after the 16 Sept stay HUD reinstated the NOFO with a 30 Sept 2026 deadline",
+    "strength": "reported",
+    "sources": [
+     "ad14_naco_vacate"
+    ]
+   },
+   {
+    "text": "J-PAL review: At Home/Chez Soi Housing First participants stably housed 73% of two years vs 32%; HUD-VASH housed in 35 vs 223 days; health effects unclear; substance-use outcomes similar to treatment-first; cost largely offset by savings, evidence limited",
+    "strength": "reported",
+    "sources": [
+     "ad14_jpal_hf"
+    ]
+   },
+   {
+    "text": "NASEM 2018: 'the committee found no substantial evidence that PSH contributes to improved health outcomes' (limited data for HIV/AIDS); 'PSH increases an individual's ability to remain housed'; more cost-effectiveness research needed",
+    "strength": "primary",
+    "sources": [
+     "ad14_nasem_psh"
+    ]
+   },
+   {
+    "text": "Colburn and Aldern (2022): mental illness, drug use, poverty, weather, generosity of assistance do not explain regional variation in homelessness; housing market conditions, such as the cost and availability of rental housing, offer a far more convincing account",
+    "strength": "reported",
+    "sources": [
+     "ad14_ucp_colburn"
+    ]
+   }
+  ],
+  "sources": {
+   "ad14_hud_pit2025": {
+    "url": "https://www.hud.gov/news/hud-no-26-037",
+    "label": "HUD, news release HUD No. 26-037, 2025 AHAR Part 1 Point-in-Time Estimates, 29 May 2026"
+   },
+   "ad14_ncc_grantspass": {
+    "url": "https://constitutioncenter.org/blog/supreme-court-upholds-ordinances-regulating-public-homeless-encampments",
+    "label": "National Constitution Center, 'Supreme Court upholds ordinances regulating public homeless encampments', 28 June 2024"
+   },
+   "ad14_hma_eo": {
+    "url": "https://www.healthmanagement.com/blog/executive-order-addressing-homelessness-the-federal-shift-toward-institutionalization/",
+    "label": "Health Management Associates, 'Executive Order Addressing Homelessness: The Federal Shift Toward Institutionalization' (summary of EO 'Ending Crime and Disorder on America's Streets', 24 July 2025)"
+   },
+   "ad14_naco_coc": {
+    "url": "https://www.naco.org/news/litigation-delays-new-funding-congress-directs-hud-renew-expired-continuum-care-projects",
+    "label": "National Association of Counties, 'As Litigation Delays New Funding, Congress Directs HUD to Renew Expired Continuum of Care Projects', 4 February 2026"
+   },
+   "ad14_crs_coc2026": {
+    "url": "https://www.everycrsreport.com/files/2026-09-18_IN12709_0955e2327c158a22f774a854854a58c5620c2c96.html",
+    "label": "Congressional Research Service, 'HUD's FY2026 Continuum of Care Program Competition', IN12709, 18 September 2026"
+   },
+   "ad14_naco_vacate": {
+    "url": "https://www.naco.org/news/court-vacates-fy-2026-continuum-care-grant-changes",
+    "label": "National Association of Counties, 'Court vacates FY 2026 Continuum of Care grant changes', August 2026 (with later updates)"
+   },
+   "ad14_jpal_hf": {
+    "url": "https://www.povertyactionlab.org/sites/default/files/publication/Housing%20First_Final.pdf",
+    "label": "J-PAL North America (Kate Christie), 'Housing First' evidence review"
+   },
+   "ad14_nasem_psh": {
+    "url": "https://www.nationalacademies.org/read/25133/chapter/11",
+    "label": "National Academies of Sciences, Engineering, and Medicine, 'Permanent Supportive Housing: Evaluating the Evidence for Improving Health Outcomes Among People Experiencing Chronic Homelessness' (2018), ch. 8"
+   },
+   "ad14_ucp_colburn": {
+    "url": "https://www.ucpress.edu/books/homelessness-is-a-housing-problem/epub-pdf",
+    "label": "Gregg Colburn and Clayton Page Aldern, 'Homelessness Is a Housing Problem' (University of California Press, March 2022), publisher's description"
+   }
+  }
  }
 }
