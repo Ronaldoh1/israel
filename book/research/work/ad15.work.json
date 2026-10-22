@@ -432,6 +432,13 @@
     "sources": [
      "ad15_audit_cfpb_bars"
     ]
+   },
+   {
+    "text": "FRED/BEA ($bn, financial / all domestic): 1998 170.4/732.4; 1999 194.3/745.0; 2001 232.8/618.4; 2003 323.9/918.1; 2004 361.7/1125.4. Book arithmetic: finance share 23.3% (1998), 26.1% (1999), 37.6% (2001), 35.3% (2003), 32.1% (2004); 2002 (38.1%) is the highest year of 1998-2025 in the series",
+    "strength": "primary",
+    "sources": [
+     "ad15_audit_fred_early"
+    ]
    }
   ],
   "sources": {
@@ -446,6 +453,10 @@
    "ad15_audit_cfpb_bars": {
     "url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-issues-rule-ban-companies-using-arbitration-clauses-deny-groups-people-their-day-court/",
     "label": "CFPB, press release on the arbitration rule, 10 July 2017 (archived)"
+   },
+   "ad15_audit_fred_early": {
+    "url": "https://fred.stlouisfed.org/data/A587RC1A027NBEA",
+    "label": "BEA via FRED, financial (A587RC1A027NBEA) and all domestic (A445RC1A027NBEA) corporate profits with IVA and CCAdj, data tables, accessed 22 October 2026"
    }
   }
  }
