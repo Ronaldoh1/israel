@@ -72,6 +72,29 @@
     "sources": [
      "de40_bu_hart"
     ]
+   },
+   {
+    "text": "U.S. DOGE Service v. U.S. District Court for the District of Columbia, No. 25-1103: Supreme Court granted review (reported 13-15 Oct 2026) on whether USDS is subject to FOIA and whether CREW may take discovery incl. deposing administrator Amy Gleason; argument expected early 2027, decision by late June 2027",
+    "strength": "reported",
+    "sources": [
+     "de40_ncc_doge"
+    ]
+   },
+   {
+    "text": "ImmigrationOS was a $29,898,236 sole-source modification (P00012) to ICE order 70CTD022FR000170 under GSA schedule GS-35F-0086U; that ICM operations-and-maintenance order began 26 Sep 2022, current end date 4 May 2026, potential end date 26 Sep 2027, $150.7M obligated of $176.5M potential, latest modification 2 Apr 2026",
+    "strength": "primary",
+    "sources": [
+     "de40_hg_icm",
+     "de40_os_immos"
+    ]
+   },
+   {
+    "text": "California v. HHS, N.D. Cal. No. 3:25-cv-05536 (Chhabria J.): PI of 29 Dec 2025 limits HHS sharing with ICE to status, address, phone, DOB and Medicaid ID of people not lawfully residing; at a September 2026 hearing the judge said valid visa holders' data should not be shared and lawfully but temporarily present people should be grouped with citizens and LPRs, stopped short of a formal ruling and told the parties to agree category by category; no further ruling found as of 28 Oct 2026",
+    "strength": "reported",
+    "sources": [
+     "de40_bl_medicaid",
+     "de40_chn_medicaid"
+    ]
    }
   ],
   "sources": {
@@ -118,6 +141,26 @@
    "de40_bu_hart": {
     "url": "https://www.biometricupdate.com/202608/doge-technologist-takes-over-dhs-biometric-identity-office-overseeing-ident-hart",
     "label": "Biometric Update, 'DOGE technologist takes over DHS biometric identity office overseeing IDENT, HART', 31 August 2026"
+   },
+   "de40_ncc_doge": {
+    "url": "https://constitutioncenter.org/blog/supreme-court-takes-open-records-case-involving-doge",
+    "label": "National Constitution Center, 'Supreme Court takes open records case involving DOGE', 15 October 2026"
+   },
+   "de40_hg_icm": {
+    "url": "https://www.highergov.com/contract/GS35F0086U-70CTD022FR0000170",
+    "label": "HigherGov, ICE order 70CTD022FR0000170 to Palantir Technologies (ICM operations and maintenance) (checked 28 October 2026)"
+   },
+   "de40_os_immos": {
+    "url": "https://orangeslices.ai/dhs-ice-awards-30m-immigration-lifecycle-operating-system-immigrationos-sole-source-support-task-to-palantir/",
+    "label": "Orange Slices AI, 'DHS ICE awards $30M Immigration Lifecycle Operating System (ImmigrationOS) sole source support task to Palantir', 2025"
+   },
+   "de40_chn_medicaid": {
+    "url": "https://courthousenews.com/judge-limits-ice-reach-for-immigrant-data/",
+    "label": "Courthouse News Service, 'Judge limits ICE reach for immigrant data', September 2026"
+   },
+   "de40_bl_medicaid": {
+    "url": "https://news.bloomberglaw.com/health-law-and-business/ice-hhs-still-limited-in-medicaid-info-exchange-via-court-order",
+    "label": "Bloomberg Law, 'ICE, HHS Still Limited in Medicaid Info Exchange via Court Order', 30 December 2025"
    }
   }
  }
