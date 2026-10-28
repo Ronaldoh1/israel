@@ -42,7 +42,8 @@ Do not port: dark-enlightenment-decoded.html, the Truman-parallel doc, palantir_
 - de15 The Eye at Home: ICE and the Data Stack — de15_ice_contracts, de15_brokers_and_doctrine
 - de16 The Switch: RAGE, DOGE and the Legal Architecture — de16_rage_to_doge, de16_schedule_and_silos, de16_nspm7_and_detachment
 - de17 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de17_two_tests
-- de18 If It Were Enforced (prescribed / existing / implied) — de18_three_layers, de18_the_unproductive
+- de17b The Readiness Audit (Ron's questions, 28 Oct 2026) — de17b_what_is_built (layer-by-layer status, Oct 2026), de17b_the_repurposing_test (could existing tools identify a critic of the state, of Israel's government or of military aid? documented cases vs capability vs legal limits), de17b_missing_pieces_and_triggers
+- de18 If It Were Enforced (prescribed / existing / implied) — de18_three_layers, de18_what_you_would_give_up (democracy vs CEO-sovereign, rights lost, consequences), de18_the_unproductive
 - de19 Israel: Documented Ties Only — de19_palantir_and_israel, de19_what_is_not_supported
 - de20 What Doesn't Fit — de20_disagreements, de20_claims_that_fail, de20_the_honest_nulls
 - de21 The Reading Beneath the Record (labelled interpretation) — de21_seeing_stones, de21_the_runtime
@@ -60,3 +61,6 @@ Demote overclaims in simulation scenes cia_s06, cia_s08, s19s (Palantir–Lavend
 - Fink-Hafner, Politics and Governance 2025 (peer-reviewed venue; DE claims secondhand/adjacency) — literature review only. Wilson, "Compound Security Unlocked" (Substack, Oct 2025; misattributes "the Cathedral" to Land) — C. Sarmast 2025 (ISSLP) — C, causal claims X.
 - observed-systems framework doc — not a source.
 - Trust rules: #N31 loop is a candidate loop (Sacks→Palantir benefit inferred); #N57 "confirmed alignment" → use #N147; Israel wording per library ow9; ICE awards listed not summed; seasteading funding $1.25M or $1.7M (report both).
+
+## Ron's four questions (28 Oct 2026) — answered in chat; sources to carry in
+AAUP v. Rubio (D. Mass., Young J., liability 30 Sept 2025; deportations halted Jan 2026); USCIS/DHS "antisemitic activity" social-media screening (Apr 2025); ICE–Zignal Labs $5.7M via Carahsoft (Sept 2025) and planned 24/7 social-media team (Wired); DHS administrative subpoenas to unmask critics (Google Apr 2025 Cornell student; Meta Sept 2025 ICE-watch accounts, withdrawn; Google Oct 2025 retiree; EFF letter 10 Feb 2026; ACLU-PA FOIA); Trump v. Slaughter (29 Jun 2026, 6–3, Humphrey's overruled, Fed excepted via Trump v. Cook); NSPM-7 + Dec 2025 AG memo (DLA Piper); Oracle–Palantir partnership (Apr 2024, Gotham/Foundry on Oracle government and air-gapped clouds); library: us6_asylum (ICE $75bn), us10_us (Paragon, Pegasus, Chatrie, PCLOB), us3_speech (Guard deployments), ad13 (IRS–ICE block).
