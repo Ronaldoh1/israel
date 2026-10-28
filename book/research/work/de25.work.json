@@ -1,0 +1,177 @@
+{
+ "de25_location": {
+  "topic": "Location data: bidstream, brokers sold to government, carriers, Hemisphere/DAS, court limits",
+  "claims": [
+   {
+    "text": "FTC proposed order 9 Jan 2024 against X-Mode/Outlogic: sold precise location tied to mobile advertising IDs, not anonymised; clients included private government contractors; no sensitive-location filtering until May 2023; vote 3-0",
+    "strength": "primary",
+    "sources": [
+     "de25_ftc_xmode"
+    ]
+   },
+   {
+    "text": "FTC technology blog 3 Dec 2024: ad auctions broadcast consumer data, sometimes including location, to dozens of bidders in milliseconds; Mobilewalla allegedly kept data from auctions it lost; 'location data is sensitive data, full stop'",
+    "strength": "primary",
+    "sources": [
+     "de25_ftc_rtb",
+     "de25_wh_mobilewalla"
+    ]
+   },
+   {
+    "text": "FTC final order vs Gravy Analytics and Venntel, 14 Jan 2025, 5-0: bans sale/use of sensitive location data except in limited national security or law enforcement circumstances; complaint alleged collection without consent for commercial and government uses",
+    "strength": "primary",
+    "sources": [
+     "de25_ftc_gravy"
+    ]
+   },
+   {
+    "text": "CBP paid just under $476,000 for Venntel software on 5 Aug 2020; Venntel sells app-derived phone movements searchable by area or device ID; WSJ Feb 2020 reported agencies used it for border crossings and arrests; IRS-CI used Venntel for a year and located no targets (Wyden's office)",
+    "strength": "reported",
+    "sources": [
+     "de25_vice_venntel"
+    ]
+   },
+   {
+    "text": "DHS OIG-23-61 (Sept 2023): CBP, ICE and Secret Service did not follow DHS privacy policy or obtain Privacy Impact Assessments required by the E-Government Act before buying commercial telemetry data; shared passwords, no supervisory review; a CBP employee used the data to track coworkers (reported 20 Aug 2020); recommended ICE stop using it until PIAs approved",
+    "strength": "primary",
+    "sources": [
+     "de25_oig_ctd",
+     "de25_hst_ctd"
+    ]
+   },
+   {
+    "text": "404 Media 8 Jan 2026: ICE's Penlink Webloc can watch a neighbourhood for phones and follow devices over time, from data on hundreds of millions of phones; an internal ICE legal analysis said it can be queried without a warrant",
+    "strength": "reported",
+    "sources": [
+     "de25_404_webloc",
+     "de25_db_webloc"
+    ]
+   },
+   {
+    "text": "70 members of Congress wrote to DHS IG Cuffari on 3 Mar 2026 asking for a probe of ICE location purchases incl. the no-bid Penlink contract with a Webloc licence; ICE cancelled a hearing appearance in Feb 2026",
+    "strength": "reported",
+    "sources": [
+     "de25_keyt_letter"
+    ]
+   },
+   {
+    "text": "EFF/AP 1 Sep 2022: Fog Data Science sold police app-derived location histories, claiming billions of points on 250m+ devices, for under $10,000 a year; at least 18 agency clients; searches often without warrants",
+    "strength": "reported",
+    "sources": [
+     "de25_eff_fog"
+    ]
+   },
+   {
+    "text": "FBI Director Patel told the Senate on 18 Mar 2026 'We do purchase commercially available information that is consistent with the Constitution and the laws'; Wray had said in 2023 the FBI previously bought location data but was not currently doing so",
+    "strength": "reported",
+    "sources": [
+     "de25_tc_patel"
+    ]
+   },
+   {
+    "text": "FCC fined carriers in Apr 2024 for selling customer location to aggregators without consent: AT&T ~$57m, Verizon ~$46.9m, T-Mobile $80m, Sprint ~$12m (~$200m total); the Supreme Court upheld the AT&T and Verizon fines 8-1 on 4 Jun 2026 (Roberts; Thomas dissenting), rejecting the jury-trial challenge; Fifth Circuit had sided with AT&T, Second Circuit with FCC",
+    "strength": "reported",
+    "sources": [
+     "de25_rec_fcc",
+     "de25_wcc_fcc",
+     "de25_aa_fcc"
+    ]
+   },
+   {
+    "text": "Wyden letter 20 Nov 2023: Hemisphere (2009-13 name) / Data Analytical Services pays AT&T to search domestic call records back to 1987, ~4bn records added daily, 'trillions' of records; searches often by subpoena; ONDCP funding paused 2013, resumed 2017, paused 2021, $270k in 2022",
+    "strength": "primary",
+    "sources": [
+     "de25_wyden_hemisphere"
+    ]
+   },
+   {
+    "text": "Chatrie v. United States, 29 Jun 2026: Kagan for five, Gorsuch concurring in judgment, Alito, Thomas, Barrett dissenting; accessing Google Location History via geofence is a search; warrant's probable cause and particularity remanded; 150 m radius, one hour around a bank robbery; Google moved Location History on-device in 2023",
+    "strength": "reported",
+    "sources": [
+     "de25_crs_chatrie"
+    ]
+   },
+   {
+    "text": "Judge Carlton Reeves (S.D. Miss.), Aug 2026: tower-dump warrants are general warrants and per se unconstitutional; upheld magistrate's denials of requests for towers near nine crime scenes; 'The government cannot have access to an entire haystack because it may contain a needle'",
+    "strength": "reported",
+    "sources": [
+     "de25_wlox_tower"
+    ]
+   }
+  ],
+  "sources": {
+   "de25_ftc_xmode": {
+    "url": "https://ftc.gov/news-events/news/press-releases/2024/01/ftc-order-prohibits-data-broker-x-mode-social-outlogic-selling-sensitive-location-data",
+    "label": "Federal Trade Commission, 'FTC Order Prohibits Data Broker X-Mode Social and Outlogic from Selling Sensitive Location Data', 9 January 2024"
+   },
+   "de25_ftc_rtb": {
+    "url": "https://data.aclum.org/storage/2025/01/FTC_www_ftc_gov_policy_advocacy-research_tech-at-ftc_2024_12_unpacking-real-time-bidding-through-ftcs-case-mobilewalla.pdf",
+    "label": "FTC Office of Technology, 'Unpacking Real Time Bidding through FTC's case on Mobilewalla', 3 December 2024 (archived copy)"
+   },
+   "de25_ftc_gravy": {
+    "url": "https://www.ftc.gov/node/87189",
+    "label": "Federal Trade Commission, 'FTC Finalizes Order with Gravy Analytics and Venntel', 14 January 2025"
+   },
+   "de25_wh_mobilewalla": {
+    "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20241216-ftc-continues-to-bring-enforcement-actions-against-data-brokers",
+    "label": "WilmerHale, 'FTC Continues to Bring Enforcement Actions Against Data Brokers', 16 December 2024"
+   },
+   "de25_vice_venntel": {
+    "url": "https://www.vice.com/en/article/customs-border-protection-venntel-location-data-dhs",
+    "label": "Joseph Cox, Vice/Motherboard, 'CBP Bought Location Data from Venntel', 25 August 2020"
+   },
+   "de25_oig_ctd": {
+    "url": "https://www.oversight.gov/reports/audit/cbp-ice-and-secret-service-did-not-adhere-privacy-policies-or-develop-sufficient",
+    "label": "DHS Office of Inspector General, OIG-23-61, 'CBP, ICE, and Secret Service Did Not Adhere to Privacy Policies or Develop Sufficient Policies Before Procuring and Using Commercial Telemetry Data', September 2023"
+   },
+   "de25_hst_ctd": {
+    "url": "https://www.hstoday.us/?p=176302",
+    "label": "Homeland Security Today, summary of DHS OIG report OIG-23-61 on commercial telemetry data, September 2023"
+   },
+   "de25_404_webloc": {
+    "url": "https://404media.co/inside-ices-tool-to-monitor-phones-in-entire-neighborhoods/",
+    "label": "404 Media, 'Inside ICE's Tool to Monitor Phones in Entire Neighborhoods', 8 January 2026"
+   },
+   "de25_db_webloc": {
+    "url": "https://www.thedailybeast.com/ice-buys-sinister-tool-built-to-map-your-everyday-movements/",
+    "label": "Daily Beast (on 404 Media procurement reporting), ICE and HSI buy Penlink location tool, 1 October 2025"
+   },
+   "de25_keyt_letter": {
+    "url": "https://keyt.com/news/california/2026/03/04/congressional-members-demand-investigation-into-purchase-of-americans-cellular-location-data/",
+    "label": "KEYT, 'Congressional members demand investigation into purchase of Americans' cellular location data', 4 March 2026"
+   },
+   "de25_eff_fog": {
+    "url": "https://www.eff.org/press/releases/data-broker-helps-police-see-everywhere-youve-been-click-mouse-eff-investigation",
+    "label": "Electronic Frontier Foundation, 'Data Broker Helps Police See Everywhere You've Been with the Click of a Mouse', 1 September 2022"
+   },
+   "de25_tc_patel": {
+    "url": "https://techcrunch.com/?p=3103731",
+    "label": "TechCrunch, FBI Director Patel tells Senate the FBI buys commercially available information, 18 March 2026"
+   },
+   "de25_rec_fcc": {
+    "url": "https://therecord.media/supreme-court-rules-fcc-fines-telecom-location-data-legal",
+    "label": "The Record, 'Supreme Court rules FCC fines over telecom location data legal', 4 June 2026"
+   },
+   "de25_wcc_fcc": {
+    "url": "https://wccftech.com/att-and-verizon-tried-to-use-the-u-s-supreme-court-to-dodge-a-104-million-fcc-fine-for-selling-user-location-data-but-utterly-lost-the-gambit/amp/",
+    "label": "Wccftech, AT&T and Verizon lose Supreme Court challenge to FCC location-data fines, 5 June 2026"
+   },
+   "de25_aa_fcc": {
+    "url": "https://www.androidauthority.com/supreme-court-verizon-att-3631934",
+    "label": "Android Authority, Supreme Court to hear AT&T and Verizon challenges to FCC location fines, 12 January 2026"
+   },
+   "de25_wyden_hemisphere": {
+    "url": "https://www.wyden.senate.gov/imo/media/doc/wyden_hemisphere_surveillance_letter_112023.pdf",
+    "label": "Sen. Ron Wyden, letter to Attorney General Merrick Garland on Hemisphere/Data Analytical Services, 20 November 2023"
+   },
+   "de25_crs_chatrie": {
+    "url": "https://www.everycrsreport.com/files/2026-06-30_LSB11274_da2739d321d1d12ff92e47949779ceceda5af3a7.html",
+    "label": "Congressional Research Service, LSB11274, on Chatrie v. United States, 30 June 2026"
+   },
+   "de25_wlox_tower": {
+    "url": "https://www.wlox.com/2026/08/06/your-phone-your-privacy-mississippi-federal-judge-rules-mass-cell-tower-data-searches-violate-constitution/",
+    "label": "WLOX, 'Mississippi federal judge rules mass cell tower data searches violate Constitution', 6 August 2026"
+   }
+  }
+ }
+}

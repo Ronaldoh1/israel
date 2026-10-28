@@ -123,5 +123,166 @@
     "label": "AP via WABE, 'Court finds FBI improperly used surveillance tool on Jan. 6 suspects, racial justice protests', 19 May 2023"
    }
   }
+ },
+ "de29_catalogue": {
+  "topic": "NSA/GCHQ/CIA/FBI programmes exposed 2013-2017 and their status in 2026",
+  "claims": [
+   {
+    "text": "Washington Post reported PRISM 6 June 2013; named Google, Apple, Facebook, Dropbox, Microsoft, Paltalk, AOL, Yahoo; Facebook: 'We do not provide any government organization with direct access to Facebook servers'; Apple 'never heard of PRISM'.",
+    "strength": "reported",
+    "sources": [
+     "de29_tc_prism"
+    ]
+   },
+   {
+    "text": "NSA announced 28 April 2017 it stopped 'about' collection under 702 upstream after compliance lapses self-reported to Congress and FISC, and would delete most upstream internet data.",
+    "strength": "primary",
+    "sources": [
+     "de29_nsa_about"
+    ]
+   },
+   {
+    "text": "NSA said in June 2018 it was deleting more than 685 million call records obtained since 2015 under the post-2015 system because of 'technical irregularities' in data from telecom providers.",
+    "strength": "reported",
+    "sources": [
+     "de29_voa_685m"
+    ]
+   },
+   {
+    "text": "Section 215, with the lone-wolf and roving-wiretap provisions, expired 15 March 2020, with a carve-out for investigations already under way.",
+    "strength": "reported",
+    "sources": [
+     "de29_eff_215"
+    ]
+   },
+   {
+    "text": "MUSCULAR (WaPo, 30 Oct 2013): NSA and GCHQ copied data flows on the links between Google and Yahoo data centres; over 30 days more than 180 million new records; Google 'not aware of this activity'; Yahoo said it had given no agency access.",
+    "strength": "reported",
+    "sources": [
+     "de29_ap_muscular"
+    ]
+   },
+   {
+    "text": "Big Brother Watch v UK (ECtHR Grand Chamber, 25 May 2021): bulk interception not in itself a violation, but the UK regime lacked end-to-end safeguards and violated Articles 8 and 10; complaints followed Snowden's disclosures.",
+    "strength": "reported",
+    "sources": [
+     "de29_asil_bbw"
+    ]
+   },
+   {
+    "text": "The ANT catalogue (Der Spiegel, 29 December 2013) was never attributed to Snowden; Schneier and Greenwald said it came from a second source.",
+    "strength": "reported",
+    "sources": [
+     "de29_es_ant"
+    ]
+   },
+   {
+    "text": "Joshua Schulte sent CIA CCI tool archives to WikiLeaks in May 2016; published as Vault 7 in 2017; convicted 2022 (espionage) and in a separate CSAM trial; sentenced to 40 years (announced 1 Feb 2024); DOJ: he 'directly risked the lives of CIA personnel'.",
+    "strength": "reported",
+    "sources": [
+     "de29_ng_schulte"
+    ]
+   },
+   {
+    "text": "Vault 7 released 7 March 2017, 8,761 documents; Weeping Angel reportedly built by CIA with MI5 put Samsung TVs in fake-off mode and recorded audio; phone exploits for iOS and Android.",
+    "strength": "reported",
+    "sources": [
+     "de29_sg_vault7"
+    ]
+   },
+   {
+    "text": "CIA WikiLeaks Task Force report (October 2017, released by Wyden 16 June 2020): security 'woefully lax'; culture 'too often prioritized creativity and collaboration at the expense of security'; if stolen and unpublished 'we might still be unaware of the loss'.",
+    "strength": "reported",
+    "sources": [
+     "de29_aje_lax"
+    ]
+   },
+   {
+    "text": "Wyden and Heinrich, declassified 10 Feb 2022: CIA program under EO 12333 operating 'outside the statutory framework that Congress and the public believe govern this collection'; analysts not required to record justification for US-person queries; financial-data programme against ISIS incidentally captured Americans' records; CIA: may 'incidentally acquire information about Americans'.",
+    "strength": "reported",
+    "sources": [
+     "de29_ap_ciabulk"
+    ]
+   },
+   {
+    "text": "Patel, 18 March 2026: 'We do purchase commercially available information that is consistent with the Constitution and the laws'; declined to commit to stop; FBI says no warrant needed (untested); Wray in 2023 said FBI had bought location data previously but was not then.",
+    "strength": "reported",
+    "sources": [
+     "de29_tc_patel"
+    ]
+   },
+   {
+    "text": "XKEYSCORE: NSA query software over its repository including 12333 bulk collection abroad; PCLOB completed study Dec 2020, released heavily redacted 12 Feb 2024; member LeBlanc dissented.",
+    "strength": "reported",
+    "sources": [
+     "de29_savage_xks"
+    ]
+   },
+   {
+    "text": "ODNI CAI report (Jan 2022, declassified June 2023): such data 'historically could have been obtained, if at all, only through targeted (and predicated) collection' and 'could be used to cause harm to an individual's reputation, emotional well-being, or physical safety'.",
+    "strength": "reported",
+    "sources": [
+     "de29_fortune_cai"
+    ]
+   }
+  ],
+  "sources": {
+   "de29_tc_prism": {
+    "url": "https://techcrunch.com/2013/06/06/google-facebook-apple-deny-participation-in-nsa-prism-program/",
+    "label": "Frederic Lardinois, TechCrunch, 'Google, Facebook, Dropbox, Yahoo, Microsoft, Paltalk, AOL And Apple Deny Participation In NSA PRISM Surveillance Program', 6 June 2013"
+   },
+   "de29_nsa_about": {
+    "url": "https://www.nsa.gov/news-features/press-room/Article/1618777/nsa-stops-certain-foreign-intelligence-collection-activities-under-section-702/",
+    "label": "NSA, 'NSA Stops Certain Foreign Intelligence Collection Activities Under Section 702', press release, 28 April 2017"
+   },
+   "de29_voa_685m": {
+    "url": "https://www.voanews.com/a/nsa-deleting-more-than-685-million-call-records/4461256.html",
+    "label": "AP via VOA, 'NSA Deleting More Than 685 Million Call Records', 30 June 2018"
+   },
+   "de29_eff_215": {
+    "url": "https://www.eff.org/deeplinks/2020/04/yes-section-215-expired-now-what",
+    "label": "EFF, 'Yes, Section 215 Expired. Now What?', 16 April 2020"
+   },
+   "de29_ap_muscular": {
+    "url": "https://www.mprnews.org/story/2013/10/30/nsa-yahoo-google",
+    "label": "AP via MPR News, 'Report: NSA broke into Yahoo, Google data centers', 30 October 2013"
+   },
+   "de29_asil_bbw": {
+    "url": "https://asil.org/ilib/european-human-rights-court-issues-long-awaited-judgment-big-brother-watch-v-uk/",
+    "label": "ASIL International Law in Brief, 'European Human Rights Court Issues Long-Awaited Judgment: Big Brother Watch v. UK' (Grand Chamber, 25 May 2021)"
+   },
+   "de29_es_ant": {
+    "url": "https://www.electrospaces.net/2015/12/leaked-documents-that-were-not.html",
+    "label": "Electrospaces.net, 'Leaked documents that were not attributed to Snowden', 23 December 2015"
+   },
+   "de29_ng_schulte": {
+    "url": "https://www.nextgov.com/cybersecurity/2024/02/ex-cia-officer-and-wikileaks-source-sentenced-40-years-largest-breach-agency-history/393875",
+    "label": "Nextgov, 'Ex-CIA officer and WikiLeaks source sentenced to 40 years for largest breach in agency history', 2 February 2024"
+   },
+   "de29_sg_vault7": {
+    "url": "https://www.slashgear.com/wikileaks-releases-trove-of-cia-documents-codenamed-vault7-07477782",
+    "label": "SlashGear, 'Wikileaks Releases Trove Of CIA Documents Codenamed Vault7', 7 March 2017"
+   },
+   "de29_aje_lax": {
+    "url": "https://www.aljazeera.com/news/2020/6/16/cia-blasted-for-woefully-lax-cybersecurity-report",
+    "label": "Al Jazeera, 'CIA blasted for woefully lax cybersecurity: Report', 16 June 2020"
+   },
+   "de29_ap_ciabulk": {
+    "url": "https://www.wbtv.com/2022/02/11/senators-cia-has-secret-program-that-collects-american-data",
+    "label": "AP via WBTV, 'Senators: CIA has secret program that collects American data', 10-11 February 2022"
+   },
+   "de29_tc_patel": {
+    "url": "https://techcrunch.com/2026/03/18/fbi-is-buying-location-data-to-track-us-citizens-kash-patel-wyden/",
+    "label": "TechCrunch, 'FBI is buying location data to track US citizens, director confirms', 18 March 2026"
+   },
+   "de29_savage_xks": {
+    "url": "https://charliesavage.com/2024/02/pclob-releases-its-very-redacted-xkeyscore-study/",
+    "label": "Charlie Savage, 'PCLOB Releases Its (Very Redacted) XKEYSCORE Study', 12 February 2024"
+   },
+   "de29_fortune_cai": {
+    "url": "https://fortune.com/2023/06/13/u-s-intelligence-agencies-commercially-available-information-spy-on-americans/",
+    "label": "Fortune, on the ODNI report on commercially available information (January 2022, declassified June 2023), 13 June 2023"
+   }
+  }
  }
 }

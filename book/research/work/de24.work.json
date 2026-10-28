@@ -1,0 +1,130 @@
+{
+ "de24_reid": {
+  "topic": "Re-identification of 'anonymous' data: studies and documented cases",
+  "claims": [
+   {
+    "text": "Sweeney (2000) estimated 87% (216m of 248m) of the US population likely unique on 5-digit ZIP, gender and date of birth, using 1990 Census data; county+gender+DOB 18%; she bought the Cambridge, Mass. voter list for $20",
+    "strength": "primary",
+    "sources": [
+     "de24_sweeney_2000"
+    ]
+   },
+   {
+    "text": "Golle recomputed on 2000 Census: 63% uniquely identified by gender, ZIP, full DOB; 'generally agree' with Sweeney but fewer",
+    "strength": "primary",
+    "sources": [
+     "de24_golle_2006"
+    ]
+   },
+   {
+    "text": "Sweeney in 1997 identified Massachusetts Governor Bill Weld's medical records using publicly accessible records",
+    "strength": "reported",
+    "sources": [
+     "de24_wiki_sweeney"
+    ]
+   },
+   {
+    "text": "de Montjoye et al. 2013: 15 months of mobility data for 1.5 million people; four spatio-temporal points uniquely identify 95%; uniqueness decays only as ~1/10 power of resolution",
+    "strength": "primary",
+    "sources": [
+     "de24_demontjoye_2013"
+    ]
+   },
+   {
+    "text": "de Montjoye et al. 2015 (Science): 3 months of credit-card records for 1.1 million people; four spatiotemporal points reidentify 90%; price raises risk 22% on average; women more reidentifiable",
+    "strength": "primary",
+    "sources": [
+     "de24_demontjoye_2015"
+    ]
+   },
+   {
+    "text": "Rocher, Hendrickx, de Montjoye 2019: 99.98% of Americans would be correctly re-identified in any dataset using 15 demographic attributes",
+    "strength": "primary",
+    "sources": [
+     "de24_rocher_2019"
+    ]
+   },
+   {
+    "text": "Narayanan and Shmatikov: Netflix Prize data on ~500,000 subscribers; with 8 ratings (2 may be wrong) and dates within 14 days, 99% of records uniquely identified; 2 ratings with dates within 3 days suffice for 68%; IMDb cross-match revealed apparent political preferences",
+    "strength": "primary",
+    "sources": [
+     "de24_netflix_2006"
+    ]
+   },
+   {
+    "text": "NYT Dec 2018: at least 75 companies receive anonymous, precise location data from apps; several claim up to 200 million US devices; locations as often as every two seconds; teacher Lisa Magrin identified; industry says data tied to unique ID not name",
+    "strength": "reported",
+    "sources": [
+     "de24_nyt_2018"
+    ]
+   },
+   {
+    "text": "NYT Opinion 19 Dec 2019: one file of more than 50 billion pings from 12 million+ phones, 2016-17, Washington/NY/SF/LA; traced a senior DoD official and others; 'child's play to connect real names to the dots'; Paul Ohm: precise longitudinal geolocation 'absolutely impossible to anonymize'",
+    "strength": "reported",
+    "sources": [
+     "de24_nyt_2019"
+    ]
+   },
+   {
+    "text": "The Pillar bought 'commercially available' location data from an unnamed vendor (2018-2020) and matched it to Msgr Jeffrey Burrill's phone and Grindr use; he resigned July 2021; Grindr called it a 'witch hunt' and said it did not believe it was the source",
+    "strength": "reported",
+    "sources": [
+     "de24_ap_pillar"
+    ]
+   },
+   {
+    "text": "FTC Office of Technology (July 2024): 'hashes aren't anonymous'; a hash 'still creates a unique signature that can track a person or device over time'; data is anonymous only when it 'can never be associated back to a person'; cases Nomi 2015, BetterHelp, Premom 2023, InMarket 2024",
+    "strength": "primary",
+    "sources": [
+     "de24_ftc_hashing"
+    ]
+   }
+  ],
+  "sources": {
+   "de24_sweeney_2000": {
+    "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+    "label": "Latanya Sweeney, 'Simple Demographics Often Identify People Uniquely', Carnegie Mellon University, Data Privacy Working Paper 3, 2000"
+   },
+   "de24_golle_2006": {
+    "url": "https://crypto.stanford.edu/~pgolle/papers/census.html",
+    "label": "Philippe Golle, 'Revisiting the Uniqueness of Simple Demographics in the US Population' (2006), abstract"
+   },
+   "de24_wiki_sweeney": {
+    "url": "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+    "label": "Wikipedia, 'Latanya Sweeney' (1997 Weld re-identification)"
+   },
+   "de24_demontjoye_2013": {
+    "url": "https://dspace.mit.edu/handle/1721.1/88233?show=full",
+    "label": "Y.-A. de Montjoye, C. A. Hidalgo, M. Verleysen, V. D. Blondel, 'Unique in the Crowd: The privacy bounds of human mobility', Scientific Reports, March 2013 (MIT DSpace record)"
+   },
+   "de24_demontjoye_2015": {
+    "url": "https://dspace.mit.edu/handle/1721.1/96321",
+    "label": "Y.-A. de Montjoye, L. Radaelli, V. K. Singh, A. Pentland, 'Unique in the shopping mall: On the reidentifiability of credit card metadata', Science 347 (6221), January 2015 (MIT DSpace record)"
+   },
+   "de24_rocher_2019": {
+    "url": "https://spiral.imperial.ac.uk/entities/publication/c2c69dc9-aa21-45e6-a107-42b20300a205",
+    "label": "L. Rocher, J. Hendrickx, Y.-A. de Montjoye, 'Estimating the success of re-identifications in incomplete datasets using generative models', Nature Communications 10, 23 July 2019 (Imperial Spiral record)"
+   },
+   "de24_netflix_2006": {
+    "url": "https://arxiv.org/pdf/cs/0610105",
+    "label": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' / 'Robust De-anonymization of Large Sparse Datasets', arXiv cs/0610105 (2006; IEEE S&P 2008)"
+   },
+   "de24_nyt_2018": {
+    "url": "https://www.pressdemocrat.com/article/news/your-apps-know-where-you-were-last-night-and-theyre-not-keeping-it-secret/",
+    "label": "Jennifer Valentino-DeVries, Natasha Singer, Michael H. Keller, Aaron Krolik, The New York Times, 'Your Apps Know Where You Were Last Night, and They're Not Keeping It Secret', 10 December 2018 (syndicated text)"
+   },
+   "de24_nyt_2019": {
+    "url": "https://socialethical.cs.unm.edu/readings/one_nation_tracked.pdf",
+    "label": "Stuart A. Thompson and Charlie Warzel, The New York Times Opinion (Privacy Project), 'Twelve Million Phones, One Dataset, Zero Privacy', 19 December 2019 (PDF copy)"
+   },
+   "de24_ap_pillar": {
+    "url": "https://www.clickondetroit.com/business/2021/07/22/priest-outed-via-grindr-app-highlights-rampant-data-tracking/",
+    "label": "Matt O'Brien and Frank Bajak, AP, 'Priest outed via Grindr app highlights rampant data tracking', 22 July 2021"
+   },
+   "de24_ftc_hashing": {
+    "url": "https://ftc.gov/policy/advocacy-research/tech-at-ftc/2024/07/no-hashing-still-doesnt-make-your-data-anonymous",
+    "label": "FTC Office of Technology, 'No, hashing still doesn't make your data anonymous', 24 July 2024"
+   }
+  }
+ }
+}
