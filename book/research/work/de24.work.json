@@ -320,5 +320,276 @@
     "label": "AP via Phys.org, 'Gov't cancels plan to collect license plate data', February 2014"
    }
   }
+ },
+ "de24_apps": {
+  "topic": "What apps and AI companies collect; cases judged by what changed; commerce data",
+  "claims": [
+   {
+    "text": "OpenAI H2 2025: 224 non-content requests (data in 146, 307 accounts); 75 content requests (data in 62, 84 accounts); 10 emergency (1); US national security 0-249",
+    "strength": "primary",
+    "sources": [
+     "de24_openai_tr"
+    ]
+   },
+   {
+    "text": "OpenAI policy: subpoena, court order or warrant for non-content; warrant for content; notice to user unless prohibited; emergency disclosure; preservation 90+90 days under 18 USC 2703(f)",
+    "strength": "primary",
+    "sources": [
+     "de24_openai_lep"
+    ]
+   },
+   {
+    "text": "Anthropic H2 2025: 2 content requests (8 accounts, data in 2); 20 non-content (55 accounts, data in 7); 0 emergency; 7 preservation; national security 0-99 (2024)",
+    "strength": "primary",
+    "sources": [
+     "de24_anthropic_tr"
+    ]
+   },
+   {
+    "text": "Anthropic (28 Aug 2025): Free, Pro and Max users to choose by 28 Sept 2025 whether chats train models; opted-in data kept five years vs 30 days; commercial plans excluded",
+    "strength": "reported",
+    "sources": [
+     "de24_macrumors_anth"
+    ]
+   },
+   {
+    "text": "ChatGPT trains on Free/Plus/Pro prompts and uploads by default; opt-out 'Improve the model for everyone'; Temporary Chat copies kept up to 30 days; Enterprise/Business/API off by default",
+    "strength": "reported",
+    "sources": [
+     "de24_kaspersky_openai"
+    ]
+   },
+   {
+    "text": "Gemini: human-reviewed chats kept up to three years and not deleted with activity; with Keep Activity off chats kept 72 hours; default auto-delete 18 months; general location always collected from IP or saved addresses",
+    "strength": "primary",
+    "sources": [
+     "de24_gemini_hub"
+    ]
+   },
+   {
+    "text": "Meta (announced 1 Oct 2025, effective 16 Dec 2025) uses Meta AI interactions to personalise ads and content; no opt-out other than not using; sensitive topics excluded",
+    "strength": "reported",
+    "sources": [
+     "de24_9to5_metaai"
+    ]
+   },
+   {
+    "text": "Perplexity policy (31 Oct 2025): collects prompts, device IDs, approximate location, IP; may use to improve AI models (opt-out); receives data from 'consumer marketing databases or other data enrichment companies' for ads; partners giving free access may send data and receive disclosures; says it does not sell or share under CCPA",
+    "strength": "primary",
+    "sources": [
+     "de24_pplx_policy"
+    ]
+   },
+   {
+    "text": "PayPal release 3 Sep 2025: free 12-month Perplexity Pro 'valued at $200', first-time users, valid through 31 Dec 2025, accounts created by 1 Sep 2025; says nothing about data sharing",
+    "strength": "primary",
+    "sources": [
+     "de24_paypal_pplx"
+    ]
+   },
+   {
+    "text": "Srinivas (TBPN, April 2025): 'We want to get data even outside the app to better understand you'; 'we plan to use all the context to build a better user profile'",
+    "strength": "reported",
+    "sources": [
+     "de24_mb_srinivas"
+    ]
+   },
+   {
+    "text": "NYT v. OpenAI: 13 May 2025 order to preserve 'all output log data that would otherwise be deleted'; obligations ended 26 Sep 2025 (stipulation 9 Oct); Apr-Sep 2025 data held; 2 Dec 2025 reconsideration denied on producing de-identified 20m-log sample (Dec 2022-Nov 2024)",
+    "strength": "reported",
+    "sources": [
+     "de24_itg_nyt"
+    ]
+   },
+   {
+    "text": "Brown v. Google settled 1 Apr 2024: update disclosures, delete past private-browsing records, limit collection five years; no class damages",
+    "strength": "reported",
+    "sources": [
+     "de24_winston_brown"
+    ]
+   },
+   {
+    "text": "Rodriguez v. Google: jury ~$425m (Sept 2025); Seeborg denied $2.36bn disgorgement and permanent injunction (no 'prospective, irreparable harm'); 98m users; Google to appeal",
+    "strength": "reported",
+    "sources": [
+     "de24_mlm_rodriguez"
+    ]
+   },
+   {
+    "text": "Texas-Google $1.375bn agreement in principle 9 May 2025 (location, Incognito, biometrics); no admission; Google: 'product policies we have long since changed'; no injunctive terms described",
+    "strength": "reported",
+    "sources": [
+     "de24_hunton_txgoogle"
+    ]
+   },
+   {
+    "text": "Texas-Meta $1.4bn 30 Jul 2024 under CUBI over Tag Suggestions (Dec 2010-Nov 2021), ended after $650m BIPA settlement",
+    "strength": "reported",
+    "sources": [
+     "de24_bbl_txmeta"
+    ]
+   },
+   {
+    "text": "DOJ-TikTok COPPA $400m (21 Aug 2026): $300m plus $100m when 2019 decree vacated; no injunctive relief; no determination of violation",
+    "strength": "reported",
+    "sources": [
+     "de24_hunton_tiktok"
+    ]
+   },
+   {
+    "text": "TikTok US joint venture closed (22 Jan 2026): Oracle, Silver Lake, MGX 45%; ByteDance nearly 20%; algorithm licensed and retrained on US data; Oracle security partner",
+    "strength": "reported",
+    "sources": [
+     "de24_axios_tiktok"
+    ]
+   },
+   {
+    "text": "Muslim Pro (96m+ downloads) sold location data to X-Mode, which sold to military contractors; SOCOM bought access to commercial phone-location products; Apple and Google banned X-Mode Dec 2020",
+    "strength": "reported",
+    "sources": [
+     "de24_vice_xmode"
+    ]
+   },
+   {
+    "text": "Sensor Tower: top-10 US iPhone apps averaged ~2.2GB in May 2021 vs ~550MB in early 2016; TikTok and Instagram ~6x; Gmail ~19x; attributed to new iOS technologies",
+    "strength": "reported",
+    "sources": [
+     "de24_imore_size"
+    ]
+   },
+   {
+    "text": "Meta runs on-device models across Instagram (Cutouts), WhatsApp (bandwidth), Messenger (language ID, under end-to-end encryption), Facebook (SceneX); says this keeps data on devices",
+    "strength": "primary",
+    "sources": [
+     "de24_meta_executorch"
+    ]
+   },
+   {
+    "text": "Meta localhost tracking (from Sept 2024): Facebook/Instagram Android apps listened on local ports; Meta Pixel passed _fbp cookie to the app, linking web visits to the account, bypassing incognito and cookie clearing; researchers at IMDEA, Radboud, KU Leuven; Meta paused 3 June 2025 citing 'miscommunication'",
+    "strength": "reported",
+    "sources": [
+     "de24_reg_localhost"
+    ]
+   },
+   {
+    "text": "Kroger's 84.51 builds loyalty profiles enriched with broker data incl. estimated race/ethnicity, finances, employment; sells insights to brands; policy says shared data 'anonymized and aggregated'",
+    "strength": "reported",
+    "sources": [
+     "de24_npr_kroger"
+    ]
+   },
+   {
+    "text": "FTC staff findings 17 Jan 2025: 6(b) orders to 8 firms (Mastercard, Revionics, Bloomreach, JPMorgan Chase, Task Software, PROS, Accenture, McKinsey) with ~250 clients using location, timing, behaviour to vary prices; Ferguson dissented then as chair closed RFI",
+    "strength": "reported",
+    "sources": [
+     "de24_rb_ftcpricing"
+    ]
+   },
+   {
+    "text": "Target statistician Andrew Pole presented a pregnancy-prediction project at Predictive Analytics World 2010; NYT (Duhigg) Feb 2012; Siegel: link of the father-daughter anecdote to the model unsubstantiated",
+    "strength": "reported",
+    "sources": [
+     "de24_kdn_target"
+    ]
+   }
+  ],
+  "sources": {
+   "de24_openai_tr": {
+    "url": "https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf",
+    "label": "OpenAI, 'Government Requests for User Data', July-December 2025"
+   },
+   "de24_openai_lep": {
+    "url": "https://cdn.openai.com/pdf/openai-law-enforcement-policy-v.2025-12.pdf",
+    "label": "OpenAI, Law Enforcement Policy, version December 2025"
+   },
+   "de24_anthropic_tr": {
+    "url": "https://www-cdn.anthropic.com/5d453bc3285b8e0c101b7193b5765419920cee24.pdf",
+    "label": "Anthropic, Government Requests Report, July-December 2025"
+   },
+   "de24_macrumors_anth": {
+    "url": "https://www.macrumors.com/2025/08/28/anthropic-claude-chat-training",
+    "label": "MacRumors, 'Anthropic Will Now Train Claude on Your Chats, Here's How to Opt Out', 28 August 2025"
+   },
+   "de24_kaspersky_openai": {
+    "url": "https://kaspersky.com/blog/chatgpt-privacy-and-security/",
+    "label": "Kaspersky Daily, on ChatGPT privacy settings, 20 October 2025"
+   },
+   "de24_gemini_hub": {
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+    "label": "Google, Gemini Apps Privacy Hub, updated 23 October 2026"
+   },
+   "de24_9to5_metaai": {
+    "url": "https://9to5mac.com/2025/10/01/meta-will-use-your-chats-with-ai-to-sell-hyper-targeted-ads/",
+    "label": "9to5Mac, 'Meta will use your chats with AI to sell hyper-targeted ads', 1 October 2025"
+   },
+   "de24_pplx_policy": {
+    "url": "https://hub-prod.perplexity.ai/hub/legal/privacy-policy",
+    "label": "Perplexity AI, Privacy Policy, last updated 31 October 2025"
+   },
+   "de24_paypal_pplx": {
+    "url": "https://newsroom.paypal-corp.com/2025-09-03-Skip-the-Waitlist-PayPal-and-Venmo-Users-Offered-Early-Access-to-Perplexitys-New-Comet-Browser-with-Free-Perplexity-Pro-Subscription",
+    "label": "PayPal newsroom, 'Skip the Waitlist: PayPal and Venmo Users Offered Early Access to Perplexity's New Comet Browser with Free Perplexity Pro Subscription', 3 September 2025"
+   },
+   "de24_mb_srinivas": {
+    "url": "https://www.malwarebytes.com/blog/news/2025/04/what-privacy-perplexity-wants-your-data-builds-browser-to-track-you-and-serve-ads",
+    "label": "Malwarebytes Labs, 'What privacy? Perplexity wants your data, builds browser to track you and serve ads', 29 April 2025 (quoting Srinivas on TBPN)"
+   },
+   "de24_itg_nyt": {
+    "url": "https://www.itechguides.com/openais-order-to-preserve-deleted-chatgpt-logs-ended-in-2025/",
+    "label": "iTechGuides, 'OpenAI's order to preserve deleted ChatGPT logs ended in 2025' (court record summary)"
+   },
+   "de24_winston_brown": {
+    "url": "https://winston.com/en/blogs-and-podcasts/class-action-insider/google-agrees-to-scrub-users-incognito-browsing-data-but-is-left-with-more-litigation",
+    "label": "Winston & Strawn, Class Action Insider, on Brown v. Google settlement, April 2024"
+   },
+   "de24_mlm_rodriguez": {
+    "url": "https://molawyersmedia.com/2026/02/03/google-blocks-2-billion-privacy-penalty/",
+    "label": "Missouri Lawyers Media, 'Google blocks $2 billion privacy penalty' (Rodriguez v. Google), 3 February 2026"
+   },
+   "de24_hunton_txgoogle": {
+    "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/texas-ag-announces-1-375-billion-settlement-with-google-for-privacy-violations",
+    "label": "Hunton Andrews Kurth, 'Texas AG Announces $1.375 Billion Settlement with Google for Privacy Violations', 12 May 2025"
+   },
+   "de24_bbl_txmeta": {
+    "url": "https://www.bytebacklaw.com/2024/07/texas-attorney-general-announces-first-cubi-settlement/",
+    "label": "Byte Back (Husch Blackwell), 'Texas Attorney General Announces First CUBI Settlement', July 2024"
+   },
+   "de24_hunton_tiktok": {
+    "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/doj-reaches-400-million-settlement-with-tiktok-over-childrens-privacy-litigation",
+    "label": "Hunton Andrews Kurth, 'DOJ Reaches $400 Million Settlement with TikTok over Children's Privacy Litigation', 24 August 2026"
+   },
+   "de24_axios_tiktok": {
+    "url": "https://axios.com/2026/01/23/tiktok-deal-trump-app-ban",
+    "label": "Axios, on the closing of the TikTok US joint venture, 23 January 2026"
+   },
+   "de24_vice_xmode": {
+    "url": "https://vice.com/en/article/muslim-apps-location-data-military-xmode",
+    "label": "Joseph Cox, Motherboard/VICE, on Muslim prayer apps, X-Mode and military location data, 28 January 2021"
+   },
+   "de24_imore_size": {
+    "url": "https://www.imore.com/top-iphone-apps-use-4x-more-space-they-did-five-years-ago",
+    "label": "iMore (Sensor Tower data), 'Top iPhone apps use 4x more space than they did five years ago', 11 June 2021"
+   },
+   "de24_meta_executorch": {
+    "url": "https://engineering.fb.com/2025/07/28/android/executorch-on-device-ml-meta-family-of-apps/",
+    "label": "Meta Engineering, 'ExecuTorch on-device ML across Meta's family of apps', 28 July 2025"
+   },
+   "de24_reg_localhost": {
+    "url": "https://www.theregister.com/2025/06/03/meta_pauses_android_tracking_tech/",
+    "label": "The Register, 'Meta pauses Android tracking tech' (localhost tracking), 3 June 2025"
+   },
+   "de24_npr_kroger": {
+    "url": "https://www.cfpublic.org/2023-02-22/what-kroger-is-doing-with-data-about-customers-in-its-loyalty-program",
+    "label": "NPR (via Central Florida Public Media), 'What Kroger is doing with data about customers in its loyalty program', 22 February 2023"
+   },
+   "de24_rb_ftcpricing": {
+    "url": "https://www.retailbrew.com/stories/2025/01/24/new-ftc-chair-shuts-down-public-comment-on-retailers-surveillance-pricing",
+    "label": "Retail Brew, 'New FTC chair shuts down public comment on retailers' surveillance pricing', 24 January 2025"
+   },
+   "de24_kdn_target": {
+    "url": "https://www.kdnuggets.com/2014/05/target-predict-teen-pregnancy-inside-story.html",
+    "label": "Eric Siegel, KDnuggets, 'How Target predicted a teen's pregnancy: the inside story', May 2014"
+   }
+  }
  }
 }

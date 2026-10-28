@@ -115,5 +115,144 @@
     "label": "Biometric Update, 'ICE awards Clearview AI $9.2M facial recognition contract', 8 September 2025"
    }
   }
+ },
+ "de28_doctrine": {
+  "topic": "Purchased data, ODNI CAI report, data-broker bill, DHS subpoenas, AAUP v. Rubio, vetting rules",
+  "claims": [
+   {
+    "text": "ODNI senior advisory group report (Jan 2022), declassified 12 June 2023: IC collects 'significant amount of CAI'; CAI 'can reveal sensitive and intimate information'; recommends cataloguing, standards and more precise sensitivity guidance",
+    "strength": "reported",
+    "sources": [
+     "de28_lawfare_cai"
+    ]
+   },
+   {
+    "text": "ODNI report: CAI could be used to 'cause harm to an individual's reputation, emotional well-being, or physical safety'; once required targeted investigation",
+    "strength": "reported",
+    "sources": [
+     "de28_fortune_cai"
+    ]
+   },
+   {
+    "text": "House passed Fourth Amendment Is Not For Sale Act 219-199 (April 2024) to close the 'data broker loophole'; sent to Senate",
+    "strength": "reported",
+    "sources": [
+     "de28_pogo_4th"
+    ]
+   },
+   {
+    "text": "Davidson (14 Apr 2026) introduced FISA-reauthorization amendment to 'prohibit the federal government from purchasing Americans' private information and data from third-party brokers'; no vote reported",
+    "strength": "primary",
+    "sources": [
+     "de28_davidson_2026"
+    ]
+   },
+   {
+    "text": "HSI administrative subpoena to Google (31 Mar 2025) for Amandla Thomas-Johnson's account under 8 USC 1225; Google complied without prior notice, produced basic subscriber information; Momodou Taal subpoenas to Meta and Google withdrawn after he left and dismissed suit",
+    "strength": "reported",
+    "sources": [
+     "de28_int_thomasjohnson"
+    ]
+   },
+   {
+    "text": "Early Sept 2025 DHS subpoena to Meta sought 'names, email addresses, and phone numbers' for six Instagram accounts that named a Border Patrol agent; Magistrate Judge Alex Tse ordered Meta not to produce (24 Sept 2025)",
+    "strength": "reported",
+    "sources": [
+     "de28_int_meta"
+    ]
+   },
+   {
+    "text": "EFF/ACLU NorCal letter 10 Feb 2026 to ten companies: require court order, notify users, resist gag orders; DHS withdrew Instagram subpoenas before ruling; administrative subpoenas not approved by a judge; Google 28,622 and Meta 14,520 subpoenas of all types H1 2025, DHS share unknown",
+    "strength": "reported",
+    "sources": [
+     "de28_eff_letter"
+    ]
+   },
+   {
+    "text": "Philadelphia-area 'Jon Doe' emailed a DHS attorney urging 'common sense and decency'; administrative subpoena to Google issued four hours later; two DHS agents and local officer visited his home; Google had not fulfilled it; motion to quash 2 Feb 2026; ACLU release titled DHS withdraws subpoena, 10 Feb 2026",
+    "strength": "reported",
+    "sources": [
+     "de28_aclu_doe"
+    ]
+   },
+   {
+    "text": "AAUP v. Rubio (D. Mass., Young J.): filed 25 Mar 2025; bench trial 7-21 July 2025; 30 Sept 2025 policy unconstitutional, 'chilled the speech of non-citizen academics'; Jan 2026 judgment vacated policy, presumption of retaliation and automatic stay of removal for members; appeal No. 26-01141 to First Circuit filed 9 Feb 2026, cross-appeal; stay denied 11 Mar 2026 except monetary sanctions; appeal pending as of Oct 2026",
+    "strength": "reported",
+    "sources": [
+     "de28_ch_aaup"
+    ]
+   },
+   {
+    "text": "Hatch (DHS Office of Intelligence/HSI) testified reports drew on a 5,000-name Canary Mission list, 'Tiger Team'; more than 100 reports; never before asked to produce reports on foreign students",
+    "strength": "reported",
+    "sources": [
+     "de28_crimson_hatch"
+    ]
+   },
+   {
+    "text": "State Dept cable 18 June 2025: F, M, J applicants to set social media 'public'; vet for 'hostile attitudes toward our citizens, culture, government, institutions, or founding principles'; private accounts may signal evasiveness",
+    "strength": "reported",
+    "sources": [
+     "de28_reuters_visa"
+    ]
+   },
+   {
+    "text": "USCIS 9 Apr 2025: screen social media for antisemitic activity, support for Hamas, PIJ, Hezbollah, Houthis as grounds to deny benefits; applies to green-card applicants and students; CAIR and J Street criticised",
+    "strength": "reported",
+    "sources": [
+     "de28_npr_uscis"
+    ]
+   }
+  ],
+  "sources": {
+   "de28_lawfare_cai": {
+    "url": "https://www.lawfaremedia.org/article/odni-report-reveals-significant-privacy-concerns-for-u.s.-citizens",
+    "label": "Lawfare, 'ODNI Report Reveals Significant Privacy Concerns for U.S. Citizens', 13 June 2023"
+   },
+   "de28_fortune_cai": {
+    "url": "https://fortune.com/2023/06/13/u-s-intelligence-agencies-commercially-available-information-spy-on-americans/",
+    "label": "David Meyer, Fortune, on the declassified ODNI report on commercially available information, 13 June 2023"
+   },
+   "de28_pogo_4th": {
+    "url": "https://www.pogo.org/newsletters/weekly-spotlight/weekly-spotlight-a-bipartisan-privacy-win-in-the-house",
+    "label": "Project On Government Oversight, 'Weekly Spotlight: A Bipartisan Privacy Win in the House', April 2024"
+   },
+   "de28_davidson_2026": {
+    "url": "https://davidson.house.gov/2026/4/davidson-introduces-amendment-to-fisa-reauthorization-to-protect-americans-data",
+    "label": "Rep. Warren Davidson, press release, 'Davidson introduces amendment to FISA reauthorization to protect Americans' data', 14 April 2026"
+   },
+   "de28_int_thomasjohnson": {
+    "url": "https://theintercept.com/2025/09/16/google-facebook-subpoena-ice-students-gaza/",
+    "label": "The Intercept, on ICE subpoenas to Google and Meta for students' data, 16 September 2025"
+   },
+   "de28_int_meta": {
+    "url": "https://theintercept.com/2025/09/24/court-block-instagram-subpoena-ice-border-patrol",
+    "label": "The Intercept, 'Court blocks Instagram subpoena', 24 September 2025"
+   },
+   "de28_eff_letter": {
+    "url": "https://www.eff.org/deeplinks/2026/02/open-letter-tech-companies-protect-your-users-lawless-dhs-subpoenas",
+    "label": "Mario Trujillo, EFF, 'Open letter to tech companies: protect your users from lawless DHS subpoenas', 10 February 2026"
+   },
+   "de28_aclu_doe": {
+    "url": "https://www.aclu.org/press-releases/aclu-moves-to-quash-abusive-subpoena-aimed-at-tracking-down-man-who-criticized-department-of-homeland-security",
+    "label": "ACLU, press release, 'ACLU moves to quash abusive subpoena aimed at tracking down man who criticized Department of Homeland Security', 3 February 2026"
+   },
+   "de28_ch_aaup": {
+    "url": "https://clearinghouse.net/case/46288/",
+    "label": "Civil Rights Litigation Clearinghouse, AAUP v. Rubio, No. 1:25-cv-10685 (D. Mass.), docket summary (updated 28 October 2026)"
+   },
+   "de28_crimson_hatch": {
+    "url": "https://www.thecrimson.com/article/2025/7/10/aaup-trial-dhs-canary-mission/",
+    "label": "The Harvard Crimson, on Peter Hatch's testimony in AAUP v. Rubio, 10 July 2025"
+   },
+   "de28_reuters_visa": {
+    "url": "https://www.rnz.co.nz/news/world/564607/trump-administration-tightens-social-media-vetting-for-foreign-students",
+    "label": "Humeyra Pamuk, Reuters via RNZ, 'Trump administration tightens social media vetting for foreign students', 19 June 2025"
+   },
+   "de28_npr_uscis": {
+    "url": "https://www.kpbs.org/news/national/2025/04/09/u-s-says-it-is-now-monitoring-immigrants-social-media-for-antisemitism",
+    "label": "Jasmine Garsd, NPR via KPBS, 'U.S. says it is now monitoring immigrants' social media for antisemitism', 9 April 2025"
+   }
+  }
  }
 }
