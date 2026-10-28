@@ -240,6 +240,13 @@
     "sources": [
      "de24b_gma_lawfirms"
     ]
+   },
+   {
+    "text": "E-Verify mismatch: Form I-9 data does not match DHS and/or SSA records; 'does not necessarily mean that you are not authorized to work'; employee must tell employer by the 10th federal working day whether to take action; if no response the employer may close the case",
+    "strength": "primary",
+    "sources": [
+     "de24b_ev_tnc"
+    ]
    }
   ],
   "sources": {
@@ -274,6 +281,10 @@
    "de24b_gma_lawfirms": {
     "url": "https://www.goodmorningamerica.com/news/story/appeals-court-hear-arguments-trumps-orders-sought-punish-132934892",
     "label": "ABC News via Good Morning America, 'Appeals court to hear arguments on Trump's orders that sought to punish law firms', 14 May 2026"
+   },
+   "de24b_ev_tnc": {
+    "url": "https://e-verify.gov/employees/tentative-nonconfirmation-tnc-overview",
+    "label": "USCIS, E-Verify, 'Tentative Nonconfirmation (Mismatch) Overview' (employees)"
    }
   }
  },
