@@ -1,0 +1,328 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de23_design",
+   "stage": "de23",
+   "topic": "Urbit's address space: design, Yarvin's own descriptions, distribution and concentration",
+   "claims": [
+    {
+     "text": "Yarvin, 13 Jan 2010: any good namespace allocation must solve 'Zooko's triangle'; Urbit's quasi-solution is 'a design I call digital feudalism - of which more later'",
+     "strength": "primary",
+     "sources": [
+      "de23_moronlab_2010"
+     ]
+    },
+    {
+     "text": "2016 address-space post (Wolfe-Pauly and Yarvin): 256 galaxies allocated as of 1 June 2016: Tlon 95, urbit.org 50 (future foundation), Tlon employees and family 40 (24 to Yarvin, 16 to others), outside investors 34, 37 to 33 other individuals; 'If Bitcoin is money, Urbit is land'; 'digital land, not digital money'; ownership scattered so the system is 'unlikely to collapse back into a single landlord'; conventions: blocks split never merge, galaxies and stars owned by different parties, galaxies by individuals not corporations; admits Urbit 'does not live up to these ideals at present'; planets 32-bit, 'only 4 billion'",
+     "strength": "primary",
+     "sources": [
+      "de23_addrspace_2016"
+     ]
+    },
+    {
+     "text": "Interim Constitution (Tlon, 15 May 2016): consulate, galactic senate (galaxy holders, per galaxy, convenes to replace consuls, private), stellar congress, planetary assembly; 'For the interim, full authority is held by the (Roman style) consulate'; consulate effectively Tlon; Tlon's stated intent to eventually 'surrender governance of Urbit to its users'; document 'may be updated arbitrarily'",
+     "strength": "primary",
+     "sources": [
+      "de23_constitution_2016"
+     ]
+    },
+    {
+     "text": "'Common Objections to Urbit' (2016): 'Curtis invented Urbit. So by the homestead principle, he started out owning all of it'; distribution 'looks a lot like land ownership in the real world'; 'Urbit is designed to govern itself collectively by address space ownership', effectively 'proof of stake'; 'When it's impossible to eliminate centralized power, it becomes necessary to tame, stabilize, and limit it'; long run every galaxy should have a separate human owner; gives Yarvin 20 galaxies (about 8%)",
+     "strength": "primary",
+     "sources": [
+      "de23_objections_2016"
+     ]
+    },
+    {
+     "text": "Urbit 2020: 'If Bitcoin is money and smart contracts are law, Urbit ID is land'; 'a self-authenticating property title'; 'Urbit IDs are scarce in order to discourage spam and abuse'; all address space was once owned by Curtis; 'Tlon bought half the address space from Curtis'",
+     "strength": "primary",
+     "sources": [
+      "de23_value_2020"
+     ]
+    },
+    {
+     "text": "Yarvin, 'A Founder's Farewell', 13 Jan 2019: 'From the very start, I knew Urbit could not succeed until it ceased to be mine and became the world's'; resigned as CTO, board member and voting shareholder of Tlon; reassigned his personal galaxies to urbit.org (in Tlon's custody); kept a few thousand stars in long timelocks and a nonvoting minority stake; said these confer no power",
+     "strength": "primary",
+     "sources": [
+      "de23_farewell_2019"
+     ]
+    },
+    {
+     "text": "Galactic Senate: voting is a power of galaxies; two proposal types, upgrade and document; quorum 64 galaxies (a quarter); absolute majority 129; vote ends at 30 days or on absolute majority",
+     "strength": "primary",
+     "sources": [
+      "de23_voting_docs",
+      "de23_governance_page"
+     ]
+    },
+    {
+     "text": "Smith and Burrows (2021): about 4 billion planets, 65,280 stars and 256 galaxies; per Tseng (2019) Tlon ~37%, urbit.org 19%, Tlon employees 15%, outside investors 13%, donors/contributors 14%; earlier versions used 'Lords', 'Dukes' and 'Earls' derived from Lockean homesteading (Lecher, Verge 2017); Urbit 'necessarily governed by a technocratic elite of stars and galaxies'; 'the only liberty is exit'",
+     "strength": "reported",
+     "sources": [
+      "de23_smith_burrows"
+     ]
+    },
+    {
+     "text": "The Point (9 Sept 2022): Urbit's 2010 whitepaper titled a section on address-space allocation 'digital feudalism'; 'a bare-bones messaging server, with, at most, a few thousand active users'; a star about $6,000 on the open market; galaxy = 1/256 of address space; backed by Thiel and a16z",
+     "strength": "reported",
+     "sources": [
+      "de23_point_2022"
+     ]
+    },
+    {
+     "text": "Astra (13 Oct 2022): Lehman on whether the hierarchy is 'digital feudalism': 'No. Facebook is digital feudalism. When you don't have explicit hierarchies, it's way worse.'; galaxies traded privately at values 'reaching over one million U.S. dollars'",
+     "strength": "reported",
+     "sources": [
+      "de23_astra_2022"
+     ]
+    },
+    {
+     "text": "Compact (18 June 2025): per Tseng, as of 2019 185 of 256 galaxies owned by Tlon, Tlon employees and Urbit Foundation employees, and almost 38,000 of 65,500 stars; 'address space ownership is highly concentrated'; Yarvin designed decision-making power proportional to address-space ownership and 'has called Urbit a \"transparent plutocracy\"'; he holds 'in his own words' the position of 'the prince'",
+     "strength": "reported",
+     "sources": [
+      "de23_compact_2025"
+     ]
+    },
+    {
+     "text": "CoinDesk (10 May 2023): about 90 monthly active developers; ships 'roughly doubled this year'; Urbit Foundation split off from Tlon in 2021",
+     "strength": "reported",
+     "sources": [
+      "de23_coindesk_2023"
+     ]
+    },
+    {
+     "text": "Tlon FAQ: Tlon builds Tlon Messenger on the Urbit stack and offers hosting; on sign-up Tlon generates the identity and 'We custody the wallet for you, but it is yours'; identity is a cryptographic proof on Ethereum; Tlon created 2013, created the Urbit Foundation in 2021",
+     "strength": "primary",
+     "sources": [
+      "de23_tlon_faq"
+     ]
+    },
+    {
+     "text": "Compact (2025): Yarvin described the 2024 crisis as 'controlled flight into terrain'; the Foundation 'admitted that it had run out of capital'; developers were paid in address space",
+     "strength": "reported",
+     "sources": [
+      "de23_compact_2025"
+     ]
+    },
+    {
+     "text": "~sorreg-namtyv is Curtis Yarvin's Urbit identity (byline of 'A Founder's Farewell' and co-author of 'The Urbit Address Space')",
+     "strength": "primary",
+     "sources": [
+      "de23_farewell_2019",
+      "de23_addrspace_2016"
+     ]
+    },
+    {
+     "text": "Urbit blog posts Nov 2025-May 2026 by the Foundation and contributors: vere64 runtime preview, LLM tooling, 'Sovereign Intelligence' by ~sicdev-pilnup (13 Jan 2026), 'This Month in Urbit: April 2026' (1 May 2026); none report user counts",
+     "strength": "primary",
+     "sources": [
+      "de23_bloglist"
+     ]
+    },
+    {
+     "text": "'A Founder's Farewell' (13 Jan 2019): Yarvin said he would no longer contribute code or write or speak publicly about Urbit; 'The soil in which these flowers grow must be level and neutral'; Urbit 'a decentralized network of social networks'",
+     "strength": "primary",
+     "sources": [
+      "de23_farewell_2019"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de23_moronlab_2010",
+     "url": "https://moronlab.blogspot.com",
+     "label": "Mencius Moldbug (Curtis Yarvin), Moron Lab, 'Urbit: functional programming from scratch', 13 January 2010"
+    },
+    {
+     "key": "de23_addrspace_2016",
+     "url": "https://urbit-bvlb59k1c-urbit.vercel.app/blog/the-urbit-address-space",
+     "label": "Galen Wolfe-Pauly and Curtis Yarvin (~ravmel-ropdyl, ~sorreg-namtyv), 'The Urbit Address Space', Urbit blog, June 2016 (allocation as of 1 June 2016)"
+    },
+    {
+     "key": "de23_constitution_2016",
+     "url": "https://urbit-q81mefvht-urbit.vercel.app/blog/interim-constitution",
+     "label": "Tlon, 'Interim Constitution', Urbit blog, 15 May 2016"
+    },
+    {
+     "key": "de23_objections_2016",
+     "url": "https://urbit-bvlb59k1c-urbit.vercel.app/blog/common-objections-to-urbit",
+     "label": "'Common Objections to Urbit', Urbit blog, 13 July 2016 (listed under ~sorreg-namtyv)"
+    },
+    {
+     "key": "de23_bloglist",
+     "url": "https://urbitorg-2025-nb565yi6q-urbit.vercel.app/blog",
+     "label": "Urbit blog index (urbit.org), posts 2016-2026, checked 28 October 2026"
+    },
+    {
+     "key": "de23_value_2020",
+     "url": "https://urbit-q81mefvht-urbit.vercel.app/blog/value-of-address-space-pt1",
+     "label": "Erik Newton and Galen Wolfe-Pauly, 'The Value of Urbit Address Space (1 of 3)', Urbit blog, April 2020"
+    },
+    {
+     "key": "de23_farewell_2019",
+     "url": "https://urbitorg-2025-8nqv5s20y-urbit.vercel.app/blog/a-founders-farewell",
+     "label": "Curtis Yarvin (~sorreg-namtyv), 'A Founder's Farewell', Urbit blog, 13 January 2019"
+    },
+    {
+     "key": "de23_voting_docs",
+     "url": "https://docs-urbit-6on0wgf4d-urbit.vercel.app/glossary/voting",
+     "label": "Urbit documentation, glossary, 'Voting' (Galactic Senate)"
+    },
+    {
+     "key": "de23_governance_page",
+     "url": "https://urbit-qp5qoxu57-urbit.vercel.app/community/governance",
+     "label": "urbit.org, 'Governance' community page"
+    },
+    {
+     "key": "de23_smith_burrows",
+     "url": "https://eprints.whiterose.ac.uk/173748/7/smith-burrows-2021-software-sovereignty-and-the-post-neoliberal-politics-of-exit.pdf",
+     "label": "Harrison Smith and Roger Burrows, 'Software, Sovereignty and the Post-Neoliberal Politics of Exit', Theory, Culture & Society 38(6), 2021, pp. 143-166"
+    },
+    {
+     "key": "de23_point_2022",
+     "url": "https://thepointmag.com/?p=179794",
+     "label": "James Duesterberg, 'Among the Reality Entrepreneurs', The Point, issue 29, 9 September 2022"
+    },
+    {
+     "key": "de23_astra_2022",
+     "url": "https://astra-mag.com/articles/my-weekend-with-the-martians/",
+     "label": "Ruby Sutton, 'My Weekend With the Martians', Astra Magazine, 13 October 2022"
+    },
+    {
+     "key": "de23_compact_2025",
+     "url": "https://www.compactmag.com/article/the-rise-and-fall-of-urbit/",
+     "label": "Adina Glickstein, 'The Rise and Fall of Urbit', Compact, 18 June 2025"
+    },
+    {
+     "key": "de23_coindesk_2023",
+     "url": "https://ca.finance.yahoo.com/news/urbit-network-older-weirder-bitcoin-155432304.html",
+     "label": "Bradley Keoun, 'Urbit, a Network Older and Weirder Than Bitcoin, Finally Turns Toward Growth', CoinDesk, 10 May 2023 (Yahoo Finance reprint)"
+    },
+    {
+     "key": "de23_tlon_faq",
+     "url": "https://tlon.io/posts/faq",
+     "label": "Tlon, 'Frequently Asked Questions', 20 November 2024, modified 30 September 2025"
+    }
+   ]
+  },
+  {
+   "id": "de23_return",
+   "stage": "de23",
+   "topic": "Yarvin's 2024 return, the 2025 board fight, the Galactic Senate's board, funding, status October 2026; Book IV close",
+   "claims": [
+    {
+     "text": "CoinDesk 21 Aug 2024: the Urbit Foundation board sacked Josh Lehman, executive director since 2021, and named Christopher Colby interim; CTO Ted Blackman and engineer Liam Fitzgerald left; Yarvin: 'Josh is an excellent peacetime CEO'; 'For that, you need a wartime CEO'; 'We're here to fix this'; he holds no formal position but will lead strategy; runway 'measurable in months'; foundation to retain 50% of staff; Lehman's Ethereum layer-2 plan scrapped; utility token possibly on Base considered; star price fell from about $27,000 (late 2021) to a little over $1,000",
+     "strength": "reported",
+     "sources": [
+      "de23_coindesk_2024"
+     ]
+    },
+    {
+     "text": "Marbl (6 July 2025): four executive directors in a year; Kneer at the helm eight months; Kneer and Yarvin joined forces November 2024; Kneer fired Yarvin from the board the previous week; Yarvin lobbied the other two board members to fire Kneer; Kneer called a no-confidence vote and asked galaxy holders to replace the board; at writing 19 votes, 18 for and 1 against; author knows Kneer for a decade and urged a yes vote",
+     "strength": "reported",
+     "sources": [
+      "de23_marbl"
+     ]
+    },
+    {
+     "text": "Rettig (27 July 2025): Yarvin 'Executive Director-by-fiat'; 'real Roman times'; Foundation ran out of money the year before; most staff quit; a16z invested $4M for more address space (terms unknown); galactic vote expected, outcome not reported; author owns some address space",
+     "strength": "reported",
+     "sources": [
+      "de23_rettig"
+     ]
+    },
+    {
+     "text": "Urbit Foundation, 9 Oct 2025: 'The Galactic Senate has elected to replace the board of the Urbit Foundation' after 'multiple votes'; new three-seat board ~lavlyn-litmeg, ~palfun-foslup, ~hocfur-modlex; board appoints ~sicdev-pilnup executive director, succeeding ~sorreg-namtyv, 'who is leaving to found a new application development company'; Foundation 'struggled during periods of uncertainty around both funding and leadership'; outside capital from venture capitalists and Bitcoin philanthropists",
+     "strength": "primary",
+     "sources": [
+      "de23_epoch_2025"
+     ]
+    },
+    {
+     "text": "Kofman (New Yorker, June 2025): after decades and an estimated $30 million, Urbit resembles Usenet more than a feudal society; in the initial design Yarvin named himself 'prince'; returned last year as 'wartime CEO' after several key employees resigned; sought a16z money again in February; unpublished Substack draft: plan to promote Urbit as an elite private club whose members would be stars of 'a new Usenet, a new digital Athens'",
+     "strength": "reported",
+     "sources": [
+      "de23_kofman"
+     ]
+    },
+    {
+     "text": "Empire podcast description (24 Sept 2024): Yarvin presents Urbit as a fix for centralised 'social databases', discussing digital sovereignty and 'accountable monarchies' in digital governance",
+     "strength": "reported",
+     "sources": [
+      "de23_blockworks"
+     ]
+    },
+    {
+     "text": "Rio Times (17 Aug 2026): Honduras Prospera Inc. v. Honduras, ICSID ARB/23/2, initially US$10.775bn, reported trimmed to ~US$1.63bn in 2025, undecided; Congress repealed the ZEDE law April 2022; Supreme Court ruled ZEDE decrees unconstitutional 20 Sept 2024; Honduras rejoined ICSID 16 Aug 2026 under Asfura",
+     "strength": "reported",
+     "sources": [
+      "de23_riotimes_icsid"
+     ]
+    },
+    {
+     "text": "PolitiFact (Feb 2026, modified July 2026): Trump's 2023 pledge of 10 freedom cities on federal land rated Stalled; no bill on Congress.gov, no executive order or federal land action found",
+     "strength": "reported",
+     "sources": [
+      "de23_politifact_fc"
+     ]
+    },
+    {
+     "text": "Horowitz (a16z co-founder), 14 Apr 2011: 'Peacetime CEO knows that proper protocol leads to winning. Wartime CEO violates protocol in order to win'; 'Wartime CEO neither indulges consensus-building nor tolerates disagreements'",
+     "strength": "primary",
+     "sources": [
+      "de23_horowitz_2011"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de23_coindesk_2024",
+     "url": "https://hotfix.coindesk.com/tech/2024/08/21/wartime-ceo-urbits-founder-returns-in-shakeup-at-moonshot-software-project",
+     "label": "Marc Hochstein, ''Wartime CEO': Urbit's Founder Returns in Shakeup at Moonshot Software Project', CoinDesk, 21 August 2024"
+    },
+    {
+     "key": "de23_epoch_2025",
+     "url": "https://urbitorg-2025-44jqz6aaf-urbit.vercel.app/blog/2025-a-new-epoch-for-the-forever-computer",
+     "label": "The Urbit Foundation, 'A New Epoch for The Forever Computer', Urbit blog, 9 October 2025"
+    },
+    {
+     "key": "de23_marbl",
+     "url": "https://marbl.substack.com/p/the-fight-for-the-new-internet",
+     "label": "Cordelia (marbl newsletter), 'The Fight for the New Internet', 6 July 2025"
+    },
+    {
+     "key": "de23_rettig",
+     "url": "https://rettig.substack.com/p/urbit-isnt-alright",
+     "label": "Lane Rettig, 'Urbit Isn't Alright', Three Things #180, 27 July 2025"
+    },
+    {
+     "key": "de23_kofman",
+     "url": "https://static.nuso.org/media/articles/downloads/4.TC_Kofman_318.pdf",
+     "label": "Ava Kofman, 'Curtis Yarvin's Plot Against America', The New Yorker, 2 June 2025 (Spanish translation, Nueva Sociedad 318)"
+    },
+    {
+     "key": "de23_blockworks",
+     "url": "https://blockworks.com/podcast/empire/c5efe21e-7a1f-11ef-80c9-af8a743e2c1e",
+     "label": "Blockworks, Empire podcast, 'The Case for a New Internet', Curtis Yarvin and Jake Brukhman, 24 September 2024 (episode description)"
+    },
+    {
+     "key": "de23_riotimes_icsid",
+     "url": "https://www.riotimesonline.com/honduras-returns-icsid-2026/",
+     "label": "Rafael Silva Santos, 'Honduras returns to ICSID', Rio Times, 17 August 2026"
+    },
+    {
+     "key": "de23_politifact_fc",
+     "url": "https://politifact.com/truth-o-meter/promises/maga-meter-tracking-donald-trumps-2024-promises/promise/387472/create-deregulated-freedom-cities-on-federal-land/article/387475/",
+     "label": "PolitiFact, MAGA-Meter, 'Create deregulated freedom cities on federal land', 10 February 2026 (modified 12 July 2026), rated Stalled"
+    },
+    {
+     "key": "de23_horowitz_2011",
+     "url": "https://a16z.com/2011/04/14/peacetime-ceo-wartime-ceo/",
+     "label": "Ben Horowitz, 'Peacetime CEO/Wartime CEO', a16z.com, 14 April 2011"
+    }
+   ]
+  }
+ ]
+}
