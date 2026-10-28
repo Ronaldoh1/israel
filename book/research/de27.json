@@ -1,0 +1,469 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de27_origins",
+   "stage": "de27",
+   "topic": "Palantir founding, control structure, products, Karp",
+   "claims": [
+    {
+     "text": "Palantir founded 2003 by Peter Thiel with Stephen Cohen, Joe Lonsdale, Alex Karp and Nathan Gettings; Karp hired as CEO 2004; In-Q-Tel invested about $2 million when Palantir launched in 2004 (other accounts give 2005)",
+     "strength": "reported",
+     "sources": [
+      "de27_wiki_pltr"
+     ]
+    },
+    {
+     "text": "Gotham released 2008; AIP launched April 2023; HQ moved to Denver August 2020; direct public offering on NYSE 30 September 2020; added to S&P 500 (announced 6 Sept 2024); listing moved to Nasdaq effective 26 Nov 2024; Feb 2026 announced move to Miami",
+     "strength": "reported",
+     "sources": [
+      "de27_wiki_pltr"
+     ]
+    },
+    {
+     "text": "10-Q Q2 2026: Class A 1 vote/share (2,300,517 thousand outstanding), Class B 10 votes/share (101,375 thousand), Class F 1,005 thousand shares held in a voting trust 'established by Stephen Cohen, Alexander Karp, and Peter Thiel'; gives Founders ability to control 'up to 49.999999% of the total voting power', conditional on holding at least 100 million equity securities as of 30 June 2026",
+     "strength": "primary",
+     "sources": [
+      "de27_10q_q2_2026"
+     ]
+    },
+    {
+     "text": "10-Q Q2 2026: no customer exceeded 10% of total revenue; Q2 2026 revenue $1,935,464 thousand vs $1,003,697 thousand Q2 2025",
+     "strength": "primary",
+     "sources": [
+      "de27_10q_q2_2026"
+     ]
+    },
+    {
+     "text": "Karp's Frankfurt doctorate (Aggression in der Lebenswelt, on Parsons) was supervised by Karola Brede, not Habermas; Habermas asked Brede to meet him; Karp drew on Habermas's Lebenswelt concept",
+     "strength": "reported",
+     "sources": [
+      "de27_lgc_brede"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de27_wiki_pltr",
+     "url": "https://en.wikipedia.org/wiki/Palantir_Technologies",
+     "label": "Wikipedia, 'Palantir Technologies' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de27_10q_q2_2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000041/pltr-20260630.htm",
+     "label": "Palantir Technologies, Form 10-Q for the quarter ended 30 June 2026 (SEC EDGAR)"
+    },
+    {
+     "key": "de27_lgc_brede",
+     "url": "https://legrandcontinent.eu/es/2026/03/18/fue-realmente-alexander-karp-fundador-de-palantir-alumno-de-habermas-entrevista-exclusiva-con-su-directora-de-tesis/",
+     "label": "Le Grand Continent, interview with Karola Brede, 'Was Alexander Karp really a student of Habermas?', 18 March 2026"
+    }
+   ]
+  },
+  {
+   "id": "de27_capability",
+   "stage": "de27",
+   "topic": "What Palantir software does; company's own account; Karp quotes; LAPD study",
+   "claims": [
+    {
+     "text": "Palantir: 'We do not collect, store, or sell personal data'; 'we act as a data processor, not a data controller'; customers 'define what can and cannot be done with their data'; 'We do not and cannot reuse or transfer our clients' data for our own purposes'",
+     "strength": "primary",
+     "sources": [
+      "de27_pal_notdata"
+     ]
+    },
+    {
+     "text": "Palantir: default configuration makes user actions traceable (audit logging); fine-grained access controls; 'technical controls alone cannot avert negative societal outcomes'",
+     "strength": "primary",
+     "sources": [
+      "de27_pal_pcl"
+     ]
+    },
+    {
+     "text": "Karp to Axios on HBO (May 2020): product used 'on occasion' to target and kill; 'you're probably doing the operation that actually takes out the person with another product we built'; on ICE contract regrets: 'No, no, no'; 'I've had some of my favorite employees leave ... over ICE'",
+     "strength": "reported",
+     "sources": [
+      "de27_inverse_karp2020"
+     ]
+    },
+    {
+     "text": "Karp on investor call (clip posted 3 Feb 2025): Palantir is here to disrupt institutions and, when necessary, 'to scare enemies and on occasion kill them'",
+     "strength": "reported",
+     "sources": [
+      "de27_giz_karp2025"
+     ]
+    },
+    {
+     "text": "Brayne (ASR Oct 2017; 75 LAPD officers/staff interviewed): LAPD Palantir system includes people never in direct contact with police, linked to persons of interest (e.g., in a car accident with a gang member; a 'lover' relation category); ALPR reads feed system; risk point system feedback loop; Palantir worked with LAPD since 2011; Palantir and LAPD declined comment",
+     "strength": "reported",
+     "sources": [
+      "de27_cnn_brayne",
+      "de27_asa_brayne"
+     ]
+    },
+    {
+     "text": "The Technological Republic by Alexander C. Karp and Nicholas W. Zamiska (Palantir's head of corporate affairs), Crown Currency, 18 February 2025; offers a critique of 'Silicon Valley's failure to come to the defense of the nation that made its rise possible'",
+     "strength": "primary",
+     "sources": [
+      "de27_prh_techrep"
+     ]
+    },
+    {
+     "text": "Palantir posted 22-point summary of the book on X, 18 April 2026: 'National service should be a universal duty'; 'Silicon Valley owes a moral debt to the country that made its rise possible'; question is who builds AI weapons, not whether",
+     "strength": "reported",
+     "sources": [
+      "de27_reason_manifesto"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de27_pal_notdata",
+     "url": "https://blog.palantir.com/palantir-is-not-a-data-company-palantir-explained-1-a6fcf8b3e4cb",
+     "label": "Palantir blog, 'Palantir is Not a Data Company (Palantir Explained, #1)', undated"
+    },
+    {
+     "key": "de27_pal_pcl",
+     "url": "https://blog.palantir.com/privacy-civil-liberties-engineering-palantir-explained-5-4f027b207923",
+     "label": "Palantir blog, 'Privacy & Civil Liberties Engineering (Palantir Explained, #5)', undated"
+    },
+    {
+     "key": "de27_inverse_karp2020",
+     "url": "https://www.inverse.com/input/tech/palantir-ceo-alex-karp-says-yes-their-tech-is-used-to-kill-people",
+     "label": "Inverse, 'Palantir CEO Alex Karp says yes, their tech is used to kill people' (on Axios on HBO interview), 26 May 2020"
+    },
+    {
+     "key": "de27_giz_karp2025",
+     "url": "https://gizmodo.com/palantirs-billionaire-ceo-just-cant-stop-talkiabout-killipeople-2000560597",
+     "label": "Gizmodo, 'Palantir's billionaire CEO just can't stop talking about killing people', 7 February 2025"
+    },
+    {
+     "key": "de27_cnn_brayne",
+     "url": "https://money.cnn.com/2017/09/11/technology/future/lapd-big-data-palantir/index.html",
+     "label": "CNN Money, 'The LAPD's use of big data and Palantir' (on Sarah Brayne, American Sociological Review, Oct 2017), 11 September 2017"
+    },
+    {
+     "key": "de27_asa_brayne",
+     "url": "https://www.newswise.com/articles/big-data-may-amplify-existing-police-surveillance-practices",
+     "label": "American Sociological Association via Newswise, 'Big data may amplify existing police surveillance practices', 6 December 2017"
+    },
+    {
+     "key": "de27_prh_techrep",
+     "url": "https://sites.prh.com/technologicalrepublicpressrelease",
+     "label": "Crown Currency/Penguin Random House, press release for Karp and Zamiska, The Technological Republic (18 February 2025)"
+    },
+    {
+     "key": "de27_reason_manifesto",
+     "url": "https://reason.com/2026/04/20/this-big-tech-firm-wants-to-reinstate-the-draft%20",
+     "label": "Reason, 'This big tech firm wants to reinstate the draft', 20 April 2026"
+    }
+   ]
+  },
+  {
+   "id": "de27_europe",
+   "stage": "de27",
+   "topic": "Swiss, German, UK NHS, Danish decisions on Palantir",
+   "claims": [
+    {
+     "text": "Zurich Commercial Court, ruling of 4 June 2026 (public 12 June): Republik prevailed on 22 of 23 counter-statements Palantir demanded; one minor correction on a product's development history",
+     "strength": "reported",
+     "sources": [
+      "de27_np_republik",
+      "de27_srf_accepts"
+     ]
+    },
+    {
+     "text": "Palantir accepted the ruling and will not appeal (SRF, 29 June 2026); Republik's Fichter: Palantir tried for seven years to win Swiss authorities and was rebuffed",
+     "strength": "reported",
+     "sources": [
+      "de27_srf_accepts"
+     ]
+    },
+    {
+     "text": "Republik/WAV (Dec 2025): 59 requests to 41 federal offices; at least nine approaches by Palantir over seven years; ~20-page Swiss army report advised against, citing risk that data could flow to US government agencies, dependence, sovereignty; Palantir: 'not a surveillance company', no data passed to US authorities, would resist such orders",
+     "strength": "reported",
+     "sources": [
+      "de27_site36_swiss",
+      "de27_np_republik"
+     ]
+    },
+    {
+     "text": "BVerfG 16 Feb 2023: Hesse §25a(1) HSOG and Hamburg §49(1) HmbPolDVG unconstitutional; automated data analysis needs a 'sufficiently identifiable danger' threshold; Hesse provision continues with restrictions until 30 Sept 2023; Hamburg void; hessenDATA named, Palantir not",
+     "strength": "primary",
+     "sources": [
+      "de27_bverfg_2023"
+     ]
+    },
+    {
+     "text": "Reuters: Hesse used the system since 2017; Palantir's Jan Hiesserich: company 'merely provides the software for processing data, not the data itself'",
+     "strength": "reported",
+     "sources": [
+      "de27_reuters_bverfg"
+     ]
+    },
+    {
+     "text": "Baden-Württemberg parliament voted 113-22 (Nov 2025) to let police use Palantir Gotham from Q2 2026, with resolution for a European alternative by 2030; Bavaria (VeRA), NRW, Hesse use Palantir; GFF suits pending",
+     "strength": "reported",
+     "sources": [
+      "de27_posteo_bw"
+     ]
+    },
+    {
+     "text": "Germany ruled out Palantir's Maven Smart System for the Bundeswehr in April 2026; Bundeswehr evaluating 30 AI tools, mostly German; prototype Q2 2027, deployment 2028 (Vice Adm. Thomas Daum, Reuters)",
+     "strength": "reported",
+     "sources": [
+      "de27_tnw_bundeswehr"
+     ]
+    },
+    {
+     "text": "UK: Liz Kendall said (June 2026) government reviewing £330m NHS FDP contract (awarded 2023), initial term ends early 2027; cited patient confidentiality, public trust, reliance on US supplier; Sadiq Khan blocked £50m Met police contract in May 2026",
+     "strength": "reported",
+     "sources": [
+      "de27_reuters_nhs"
+     ]
+    },
+    {
+     "text": "NISTA raised FDP whole-life cost to £1.1bn, benefits cut to £808m; still green rating; two Commons committees urged break clause; NHS England apologised in August for DPIA error",
+     "strength": "reported",
+     "sources": [
+      "de27_computing_nista"
+     ]
+    },
+    {
+     "text": "Louis Mosley: review clause 'good and normal practice'; warned of 'ideologically motivated campaigners'",
+     "strength": "reported",
+     "sources": [
+      "de27_guardian_mosley"
+     ]
+    },
+    {
+     "text": "Danish Justice Ministry answer (10 May 2021) describes POL-INTEL as integrating internal and external data sources but names no vendor",
+     "strength": "primary",
+     "sources": [
+      "de27_ftdk_polintel"
+     ]
+    },
+    {
+     "text": "Wikipedia: Danish POL-INTEL operational since 2017, based on Gotham; NHS FDP £330m seven years, Nov 2023",
+     "strength": "reported",
+     "sources": [
+      "de27_wiki_pltr"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de27_wiki_pltr",
+     "url": "https://en.wikipedia.org/wiki/Palantir_Technologies",
+     "label": "Wikipedia, 'Palantir Technologies' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de27_np_republik",
+     "url": "https://netzpolitik.org/2026/schweiz-die-republik-setzt-sich-gegen-palantir-durch/",
+     "label": "Constanze Kurz, netzpolitik.org, 'Schweiz: Die Republik setzt sich gegen Palantir durch', 16 June 2026"
+    },
+    {
+     "key": "de27_srf_accepts",
+     "url": "https://www.srf.ch/news/schweiz/justiz-und-medienrecht-palantir-akzeptiert-urteil-im-streit-mit-der-republik",
+     "label": "Salvador Atasoy, SRF News, 'Palantir akzeptiert Urteil im Streit mit der Republik', 29 June 2026"
+    },
+    {
+     "key": "de27_site36_swiss",
+     "url": "https://digit.site36.net/?p=8919",
+     "label": "Matthias Monroy, digit.site36.net, on Republik/WAV reporting of the Swiss army's Palantir assessment (early 2026)"
+    },
+    {
+     "key": "de27_bverfg_2023",
+     "url": "https://bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/EN/2023/bvg23-018.html",
+     "label": "Federal Constitutional Court of Germany, press release 18/2023, judgment of 16 February 2023, 1 BvR 1547/19, 1 BvR 2634/20"
+    },
+    {
+     "key": "de27_reuters_bverfg",
+     "url": "https://www.malaymail.com/news/world/2023/02/16/german-police-use-of-software-to-fight-crime-unlawful-court-says/55307",
+     "label": "Reuters via Malay Mail, 'German police use of software to fight crime unlawful, court says', 16 February 2023"
+    },
+    {
+     "key": "de27_posteo_bw",
+     "url": "https://posteo.de/en/news/germany-baden-württemberg-approves-use-of-palantir",
+     "label": "Posteo news (dpa), 'Germany: Baden-Württemberg approves use of Palantir', 17 November 2025"
+    },
+    {
+     "key": "de27_tnw_bundeswehr",
+     "url": "https://thenextweb.com/news/bundeswehr-30-ai-tools-prototype-2027-palantir-alternative",
+     "label": "The Next Web (citing Reuters), 'Bundeswehr evaluating 30 AI tools, prototype 2027', 10 September 2026"
+    },
+    {
+     "key": "de27_reuters_nhs",
+     "url": "https://www.bnnbloomberg.ca/business/2026/06/09/uk-reviewing-palantirs-nhs-contract-amid-pressure-to-use-break-clause/",
+     "label": "Sam Tabahriti, Reuters via BNN Bloomberg, 'UK reviewing Palantir's NHS contract amid pressure to use break clause', 9 June 2026"
+    },
+    {
+     "key": "de27_computing_nista",
+     "url": "https://www.computing.co.uk/news/2026/government/nhs-palantir-platform-s-business-case-under-scrutiny-as-costs-rise-and-benefits-fall",
+     "label": "Computing, 'NHS Palantir platform's business case under pressure as costs rise and benefits fall', 2026 (after August)"
+    },
+    {
+     "key": "de27_guardian_mosley",
+     "url": "https://www.inkl.com/news/palantir-s-uk-boss-criticises-ideological-groups-as-ministers-move-to-scrap-nhs-contract",
+     "label": "Dan Milmo and Ben Quinn, The Guardian (via inkl), 'Palantir's UK boss criticises ideological groups as ministers move to scrap NHS contract', 2026"
+    },
+    {
+     "key": "de27_ftdk_polintel",
+     "url": "https://www.ft.dk/samling/20201/almdel/reu/spm/947/svar/1780434/2390651.pdf",
+     "label": "Danish Ministry of Justice (Nick Hækkerup), answer to Folketing Justice Committee question 947, 10 May 2021"
+    }
+   ]
+  },
+  {
+   "id": "de27_money",
+   "stage": "de27",
+   "topic": "Palantir revenue, defence and civil contracts, Ukraine",
+   "claims": [
+    {
+     "text": "Q2 2026 (released 3 Aug 2026): revenue $1.935bn, up 93% y/y; US revenue $1.573bn up 115%; US commercial $764m up 149%; US government $809m up 90% y/y and 18% q/q; GAAP net income attributable $1.062bn; Q3 guidance $2.160-2.164bn; FY2026 guidance raised to $8.150-8.158bn",
+     "strength": "primary",
+     "sources": [
+      "de27_8k_q2_2026"
+     ]
+    },
+    {
+     "text": "Deputy Defense Secretary Feinberg memo (reported 12 Aug 2026): up to $243.9m for Palantir software through 31 Mar 2027; options for more from 1 Apr 2027 to 28 Dec 2028; cites munitions production delays; GovTribe: $3.2bn obligations since 2024, roughly half no-compete; DOD said similar memos issued for other companies",
+     "strength": "reported",
+     "sources": [
+      "de27_wt_feinberg"
+     ]
+    },
+    {
+     "text": "NATO (NCIA with SHAPE) finalised acquisition of Maven Smart System NATO on 25 March 2025, announced 16 April 2025; value not disclosed; for intelligence fusion, targeting, situational awareness",
+     "strength": "reported",
+     "sources": [
+      "de27_dp_nato"
+     ]
+    },
+    {
+     "text": "TIME (8 Feb 2024): Karp says Palantir 'responsible for most of the targeting in Ukraine'; Karp met Zelensky 2 June 2022; software used by prosecutor general for war-crimes evidence, Economy Ministry for demining; provided free of charge, Ukraine has not paid; partner countries contributed tens of millions",
+     "strength": "reported",
+     "sources": [
+      "de27_time_ukraine"
+     ]
+    },
+    {
+     "text": "Golden Dome space-based interceptor prototype agreements (24 Apr 2026) went to 12 companies (Anduril, Booz Allen, GDMS, GITAI, Lockheed, Northrop, Quindar, RTX, Sci-Tec, SpaceX, True Anomaly, Turion); Palantir not among them",
+     "strength": "reported",
+     "sources": [
+      "de27_bd_sbi"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de27_8k_q2_2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm",
+     "label": "Palantir Technologies, Q2 2026 earnings release (Form 8-K Ex. 99.1), 3 August 2026"
+    },
+    {
+     "key": "de27_wt_feinberg",
+     "url": "https://www.washingtontechnology.com/contracts/2026/08/palantirs-no-bid-pipeline-just-got-bigger/415377/",
+     "label": "Washington Technology, 'Palantir's no-bid pipeline just got bigger', 12 August 2026"
+    },
+    {
+     "key": "de27_dp_nato",
+     "url": "https://www.thedefensepost.com/2025/04/16/nato-palantir-ai-warfighting-platform",
+     "label": "The Defense Post, 'NATO Finalizes Rapid Procurement of AI Warfighting Platform', 16 April 2025"
+    },
+    {
+     "key": "de27_time_ukraine",
+     "url": "https://www.time.com/6691662/ai-ukraine-war-palantir/",
+     "label": "Vera Bergengruen, TIME, 'How Tech Giants Turned Ukraine Into an AI War Lab', 8 February 2024"
+    },
+    {
+     "key": "de27_bd_sbi",
+     "url": "https://breakingdefense.com/2026/04/space-force-tasks-a-dozen-companies-for-golden-dome-space-based-interceptors/",
+     "label": "Breaking Defense, 'Space Force tasks a dozen companies for Golden Dome space-based interceptors', 24 April 2026"
+    }
+   ]
+  },
+  {
+   "id": "de27_newcontracts",
+   "stage": "de27",
+   "topic": "Palantir 2025-26 federal awards beyond ICE; Medicaid incident; connectors",
+   "claims": [
+    {
+     "text": "CMS sent ICE a dataset on 7 Jan 2026 covering millions incl. lawfully present people; per court filings in California v. HHS (Chhabria J.) ICE shared it with Palantir over a Microsoft Teams chat, then deleted; Palantir: 'the dataset in question was purged pursuant to government instruction'; CMS inadvertently re-sent it; about six ICE users still had copies; ICE's Briseno: 'will continue to make good faith efforts to delete any copies'; judge allowed limited sharing Dec 2025, paused late May 2026, set August hearing",
+     "strength": "reported",
+     "sources": [
+      "de27_npr_medicaid"
+     ]
+    },
+    {
+     "text": "ICE delivery order 70CTD026FC0000012 to Palantir, 5 May 2026, $86,271,599 fully obligated, to 4 May 2027, 'modernization of enforcement removal operations and operational capability', under DHS BPA 70RTAC26A00000001",
+     "strength": "reported",
+     "sources": [
+      "de27_hg_ero"
+     ]
+    },
+    {
+     "text": "Army order W519TC26F0058, 16 Mar 2026, $3,676,521.71, under Army enterprise agreement W519TC25D0039, to 'maintain and sustain the PDE system', 16 Mar-15 Nov 2026",
+     "strength": "reported",
+     "sources": [
+      "de27_govly_pde"
+     ]
+    },
+    {
+     "text": "Treasury 22 Sep 2025: Palantir to build a 'common API layer' for developer platforms, workflow automation and analytics within IRS modernization; no value stated",
+     "strength": "primary",
+     "sources": [
+      "de27_treasury_api"
+     ]
+    },
+    {
+     "text": "Foundry Data Connection lists connectors for databases, cloud stores, ERP, SaaS, social/ad platforms (Facebook, Instagram, LinkedIn etc.), messaging (Slack, Teams); purpose 'connectivity between Foundry and your systems'",
+     "strength": "primary",
+     "sources": [
+      "de27_pal_connectors"
+     ]
+    },
+    {
+     "text": "Brennan (29 Jul 2026): DHS commitments to Palantir $20.4m (2024) to $162.2m (2026 to date); DHS >$2.9bn on surveillance/data tools since Jan 2021 (minimum); RAVEn built with Booz Allen, Acuity, Alethix ('tens of millions' each), lets investigators 'search and combine information from multiple databases'; ELITE is Palantir's; Babel Street and Penlink named; DHS accessed local LPR incl. Flock via other agencies",
+     "strength": "reported",
+     "sources": [
+      "de27_brennan_tools"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de27_npr_medicaid",
+     "url": "https://www.tpr.org/2026-07-17/ice-shared-medicaid-data-it-wasnt-supposed-to-have-with-palantir",
+     "label": "Jude Joffe-Block, NPR via Texas Public Radio, 'ICE shared Medicaid data it wasn't supposed to have with Palantir', 17 July 2026 (updated 18 July)"
+    },
+    {
+     "key": "de27_hg_ero",
+     "url": "https://www.highergov.com/contract/70RTAC26A00000001-70CTD026FC0000012/",
+     "label": "HigherGov (FPDS mirror), ICE delivery order 70CTD026FC0000012 to Palantir under BPA 70RTAC26A00000001, awarded 5 May 2026"
+    },
+    {
+     "key": "de27_govly_pde",
+     "url": "https://app.govly.com/public/awards/CONT_AWD_W519TC26F0058_9700_W519TC25D0039_9700",
+     "label": "Govly (FPDS mirror), Army delivery order W519TC26F0058 to Palantir USG (Personnel Data Environment), awarded 16 March 2026"
+    },
+    {
+     "key": "de27_treasury_api",
+     "url": "https://pubt.io/view/3B6257D4C84376350083265A7196BB183E45D90F",
+     "label": "US Department of the Treasury, press release on Palantir 'common API layer' (mirror), 22 September 2025"
+    },
+    {
+     "key": "de27_pal_connectors",
+     "url": "https://palantir.com/docs/foundry/data-integration/source-type-overview/",
+     "label": "Palantir Foundry documentation, 'Source type overview' (Data Connection), accessed 28 October 2026"
+    },
+    {
+     "key": "de27_brennan_tools",
+     "url": "https://www.brennancenter.org/our-work/research-reports/dhss-domestic-surveillance-data-collection-and-analytics-tools",
+     "label": "Brennan Center for Justice, 'DHS's Domestic Surveillance, Data Collection and Analytics Tools', 29 July 2026 (data as of 26 July)"
+    }
+   ]
+  }
+ ]
+}

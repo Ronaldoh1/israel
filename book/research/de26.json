@@ -1,0 +1,699 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de26_faces",
+   "stage": "de26",
+   "topic": "Faces, drones and satellites: Clearview, Mobile Fortify, CBP biometrics, NIST, wrongful arrests, Anduril towers, CBP drones, Starshield, SBI awards, Rekognition moratorium",
+   "claims": [
+    {
+     "text": "Mobile Fortify (404 Media, 17 Jul 2025): ICE app lets an officer point a phone at a face and compare it against ~200 million images, returning name, DOB, nationality, alien number and removal-order status; draws on DHS, State, CBP, FBI and state records",
+     "strength": "reported",
+     "sources": [
+      "de26_404_fortify"
+     ]
+    },
+    {
+     "text": "DHS Privacy Threshold Analysis (Feb 2025, via 404 Media FOIA; Reason 3 Nov 2025): 'ICE does not provide the opportunity for individuals to decline or consent'; photos retained 15 years incl. US citizens; checks against CBP Traveler Verification Service; Rep. Thompson said ICE indicated it would prioritise a match over a birth certificate",
+     "strength": "reported",
+     "sources": [
+      "de26_reason_fortify"
+     ]
+    },
+    {
+     "text": "CBP final rule (published Nov 2025, effective 26 Dec 2025) lets CBP photograph all noncitizens at entry and exit at air, land and sea; noncitizen photos may be kept up to 75 years; US citizens' verification photos deleted within 12 hours and citizens may opt out",
+     "strength": "reported",
+     "sources": [
+      "de26_bu_entryexit"
+     ]
+    },
+    {
+     "text": "7th Cir. (No. 25-1673, 13 Jul 2026) vacated approval of Clearview BIPA class settlement (23% equity stake) because the nationwide class lacked separate representation; remanded; Clearview scrapes public web photos and builds 'facial vectors'",
+     "strength": "reported",
+     "sources": [
+      "de26_duane_clearview"
+     ]
+    },
+    {
+     "text": "ICE finalised a Clearview contract on 5 Sep 2025: $9.2m ceiling, $3.75m obligated, sole-source citing 'unique proprietary capabilities', for child exploitation and assault-on-officer investigations",
+     "strength": "reported",
+     "sources": [
+      "de26_bu_clearviewice"
+     ]
+    },
+    {
+     "text": "NIST (19 Dec 2019): 189 algorithms from 99 developers; majority show demographic differentials; 1:1 false positives for Asian and African American faces often 10 to 100 times higher; most equitable also among most accurate",
+     "strength": "primary",
+     "sources": [
+      "de26_nist_frvt"
+     ]
+    },
+    {
+     "text": "Washington Post (Jan 2025, via Fortune): at least 8 people wrongfully arrested after facial recognition, 7 Black; 15 departments in 12 states; alibis not checked in 6",
+     "strength": "reported",
+     "sources": [
+      "de26_fortune_wapo"
+     ]
+    },
+    {
+     "text": "Anduril announced (Jun 2026) a $363m CBP award for more than 200 Extended Range Sentry Towers, detecting and tracking objects beyond 5 miles, integrated with its Lattice software",
+     "strength": "reported",
+     "sources": [
+      "de26_eb_anduril"
+     ]
+    },
+    {
+     "text": "Reuters (Mar 2024): SpaceX's Starshield building hundreds of spy satellites for the NRO under a $1.8bn contract signed 2021; ~a dozen prototypes since 2020; near-continuous imagery; network separate from Starlink; NRO declined to detail SpaceX role",
+     "strength": "reported",
+     "sources": [
+      "de26_toi_starshield"
+     ]
+    },
+    {
+     "text": "404 Media (23 Sep 2025) from FOIA flight logs: CBP flew drones at least 50 times in support of ICE, Mar 2024-Mar 2025; CBP said Predator flights over LA protests were 'officer safety surveillance'",
+     "strength": "reported",
+     "sources": [
+      "de26_404_drones"
+     ]
+    },
+    {
+     "text": "Space Force space-based interceptor OTAs: 12 firms incl. SpaceX and Anduril, $3.2bn combined ceiling, demo 2028; Palantir not listed",
+     "strength": "reported",
+     "sources": [
+      "de26_st_sbi"
+     ]
+    },
+    {
+     "text": "Amazon announced a one-year moratorium on police use of Rekognition on 10-11 Jun 2020; IBM ended its facial recognition program",
+     "strength": "reported",
+     "sources": [
+      "de26_idt_rekognition"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_404_fortify",
+     "url": "https://www.404media.co/inside-ices-supercharged-facial-recognition-app-of-200-million-images/",
+     "label": "404 Media, 'Inside ICE's Supercharged Facial Recognition App of 200 Million Images', 17 July 2025"
+    },
+    {
+     "key": "de26_reason_fortify",
+     "url": "https://reason.com/2025/11/03/dont-want-ice-to-scan-your-face-too-bad-you-might-not-have-a-choice",
+     "label": "Reason, 'Don't Want ICE To Scan Your Face? Too Bad', 3 November 2025 (on DHS Privacy Threshold Analysis obtained by 404 Media)"
+    },
+    {
+     "key": "de26_bu_entryexit",
+     "url": "https://www.biometricupdate.com/202511/dhs-finalizes-rule-expanding-biometric-entry-exit-to-foreign-visitors",
+     "label": "Biometric Update, 'DHS finalizes rule expanding biometric entry-exit to foreign visitors', 21 November 2025"
+    },
+    {
+     "key": "de26_duane_clearview",
+     "url": "https://blogs.duanemorris.com/classactiondefense/2026/07/14/seventh-circuit-undoes-novel-privacy-class-settlement-due-to-lack-of-separate-representatives-for-nationwide-class-and-state-sub-classes/",
+     "label": "Duane Morris Class Action Defense Blog, on In re Clearview AI Consumer Privacy Litigation, No. 25-1673 (7th Cir. 13 July 2026), 14 July 2026"
+    },
+    {
+     "key": "de26_bu_clearviewice",
+     "url": "https://www.biometricupdate.com/202509/ice-awards-clearview-ai-9-2m-facial-recognition-contract",
+     "label": "Biometric Update, 'ICE awards Clearview AI $9.2M facial recognition contract', 8 September 2025"
+    },
+    {
+     "key": "de26_nist_frvt",
+     "url": "https://www.nist.gov/node/1603646",
+     "label": "NIST, 'NIST Study Evaluates Effects of Race, Age, Sex on Face Recognition Software', 19 December 2019"
+    },
+    {
+     "key": "de26_fortune_wapo",
+     "url": "https://www.fortune.com/2025/01/16/police-continue-to-use-facial-recognition-software-despite-evidence-of-racial-bias-and-false-arrests",
+     "label": "Fortune, on the Washington Post investigation of facial-recognition arrests, 16 January 2025"
+    },
+    {
+     "key": "de26_eb_anduril",
+     "url": "https://www.executivebiz.com/articles/cbp-anduril-extended-range-sentry-towers-363m",
+     "label": "ExecutiveBiz, 'CBP to buy Anduril Extended Range Sentry Towers ($363M)', 15 June 2026"
+    },
+    {
+     "key": "de26_toi_starshield",
+     "url": "https://www.timesofisrael.com/elon-musks-spacex-building-spy-satellite-network-for-us-intel-agency-sources-say/",
+     "label": "Reuters via Times of Israel, 'Elon Musk's SpaceX building spy satellite network for US intel agency, sources say', 17 March 2024"
+    },
+    {
+     "key": "de26_404_drones",
+     "url": "https://www.404media.co/cbp-flew-drones-to-help-ice-50-times-in-last-year/",
+     "label": "404 Media, 'CBP Flew Drones to Help ICE 50 Times in Last Year', 23 September 2025"
+    },
+    {
+     "key": "de26_st_sbi",
+     "url": "https://satellitetoday.com/government-military/2026/04/26/space-force-awards-3-2-billion-to-12-companies-for-space-based-interceptor-work",
+     "label": "Via Satellite, 'Space Force awards $3.2 billion to 12 companies for space-based interceptor work', 26 April 2026"
+    },
+    {
+     "key": "de26_idt_rekognition",
+     "url": "https://idtechwire.com/amazon-places-one-year-moratorium-sale-facial-recognition-police-061101",
+     "label": "ID Tech Wire, 'Amazon places one-year moratorium on sale of facial recognition to police', 11 June 2020"
+    }
+   ]
+  },
+  {
+   "id": "de26_code",
+   "stage": "de26",
+   "topic": "Code and cloud: GitHub-ICE, takedowns, ICEBlock and court ruling, JWCC, C2E, Oracle-Palantir, FedRAMP 20x",
+   "claims": [
+    {
+     "text": "GitHub renewed a ~$200,000 ICE licence (Nov 2019) despite staff protest; CEO Nat Friedman said the company 'can't be held responsible' for customer use; $500,000 donated to immigration nonprofits; at least five employees quit",
+     "strength": "reported",
+     "sources": [
+      "de26_bhr_github"
+     ]
+    },
+    {
+     "text": "GitHub transparency (29 Sep 2026): 98 government takedown requests in 2025, 708 in H1 2026, mostly a counting change (duplicates and all request types), not more removals",
+     "strength": "primary",
+     "sources": [
+      "de26_gh_transparency"
+     ]
+    },
+    {
+     "text": "Apple removed ICEBlock and similar apps on 2-3 Oct 2025 after DOJ request; Bondi: 'ICEBlock is designed to put ICE agents at risk just for doing their jobs'; Apple cited law-enforcement information on safety risks",
+     "strength": "reported",
+     "sources": [
+      "de26_audacy_iceblock"
+     ]
+    },
+    {
+     "text": "Joshua Aaron sued Bondi, Noem, Lyons and Homan in D.C. federal court on 8 Dec 2025 alleging First Amendment violations; >1 million users at removal",
+     "strength": "reported",
+     "sources": [
+      "de26_abc_iceblock_suit"
+     ]
+    },
+    {
+     "text": "Judge Jorge Alonso (N.D. Ill., ~17 Apr 2026, Rosado case brought by FIRE for an 'ICE Sightings - Chicagoland' Facebook group and the 'Eyes Up' app) found injuries 'likely traceable to government-coerced enforcement' and preliminarily enjoined DOJ/DHS from pressuring Apple and Facebook",
+     "strength": "reported",
+     "sources": [
+      "de26_reason_rosado"
+     ]
+    },
+    {
+     "text": "JWCC: $9bn ceiling, AWS, Google, Microsoft, Oracle, 7 Dec 2022, all classification levels; JEDI single-vendor $10bn cancelled",
+     "strength": "reported",
+     "sources": [
+      "de26_ng_jwcc"
+     ]
+    },
+    {
+     "text": "CIA C2E (Nov 2020): AWS, Microsoft, Google, Oracle, IBM; 'tens of billions'; ~15 years; CIA plus 16 IC agencies; AWS had served CIA since 2013",
+     "strength": "reported",
+     "sources": [
+      "de26_dcd_c2e"
+     ]
+    },
+    {
+     "text": "Oracle-Palantir (Apr 2024): Foundry workloads to OCI and Gotham/AIP deployable across Oracle's distributed cloud incl. air-gapped regions for defence and intelligence; 'up to the customer which cloud to deploy on'",
+     "strength": "reported",
+     "sources": [
+      "de26_reg_oracle"
+     ]
+    },
+    {
+     "text": "FedRAMP 20x announced Mar 2025: automated Key Security Indicators; Phase 1 authorisations without agency sponsor; Phase 3 active; High pilot FY27",
+     "strength": "primary",
+     "sources": [
+      "de26_fedramp_20x"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_bhr_github",
+     "url": "https://www.business-humanrights.org/en/at-least-five-employees-quit-github-over-its-contract-with-ice",
+     "label": "Business & Human Rights Resource Centre, 'At least five employees quit GitHub over its contract with ICE', 13 November 2019"
+    },
+    {
+     "key": "de26_gh_transparency",
+     "url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/",
+     "label": "GitHub Blog (Margaret Tucker), 'Developer policy update: transparency, state policy and what's ahead', 29 September 2026"
+    },
+    {
+     "key": "de26_audacy_iceblock",
+     "url": "https://www.audacy.com/1010wins/news/local/apple-pulls-ice-tracking-apps-on-justice-departments-urging",
+     "label": "Bloomberg via 1010 WINS, 'Apple pulls ICE-tracking apps on Justice Department's urging', 3 October 2025"
+    },
+    {
+     "key": "de26_abc_iceblock_suit",
+     "url": "https://abc7news.com/post/iceblock-creator-sues-trump-administration-alleges-pressured-apple-remove-app-store/18268414/",
+     "label": "AP via ABC7, 'ICEBlock creator sues Trump administration', 9 December 2025"
+    },
+    {
+     "key": "de26_reason_rosado",
+     "url": "https://reason.com/2026/04/20/judge-says-doj-and-dhs-likely-coerced-tech-firms-to-censor-ice-tracking-platforms/",
+     "label": "Reason, 'Judge Says DOJ and DHS Likely Coerced Tech Firms To Censor ICE-Tracking Platforms', 20 April 2026"
+    },
+    {
+     "key": "de26_ng_jwcc",
+     "url": "https://www.nextgov.com/cxo-briefing/2022/12/amazon-google-microsoft-oracle-awarded-9b-pentagon-cloud-contract/380596/",
+     "label": "Nextgov, 'Amazon, Google, Microsoft, Oracle awarded $9B Pentagon cloud contract', 7 December 2022"
+    },
+    {
+     "key": "de26_dcd_c2e",
+     "url": "https://www.datacenterdynamics.com/en/news/cia-awards-multibillion-c2e-cloud-contract-aws-microsoft-google-oracle-and-ibm",
+     "label": "DatacenterDynamics, 'CIA awards multibillion C2E cloud contract to AWS, Microsoft, Google, Oracle and IBM', November 2020"
+    },
+    {
+     "key": "de26_reg_oracle",
+     "url": "https://www.theregister.com/2024/04/09/palantir_and_oracle_buddy_up/",
+     "label": "The Register, 'Palantir and Oracle buddy up', 9 April 2024"
+    },
+    {
+     "key": "de26_fedramp_20x",
+     "url": "https://www.fedramp.gov/20x",
+     "label": "FedRAMP (GSA), 'FedRAMP 20x' programme page, accessed 28 October 2026"
+    }
+   ]
+  },
+  {
+   "id": "de26_ai",
+   "stage": "de26",
+   "topic": "AI layer: EO 14148, July 2025 orders, CDAO awards, Grok for Government, OneGov, GenAI.mil, Palantir-Anthropic-AWS, Anthropic supply-chain-risk case, OpenAI classified deal",
+   "claims": [
+    {
+     "text": "EO 14148 (20 Jan 2025) §2(ggg) revoked EO 14110 of 30 Oct 2023 (the Biden AI order); §2(q) revoked EO 14006",
+     "strength": "primary",
+     "sources": [
+      "de26_ucsb_14148"
+     ]
+    },
+    {
+     "text": "23 Jul 2025: three orders signed incl. 'Preventing Woke AI in the Federal Government' (procure 'truth-seeking', ideologically neutral models), a deregulation order and an AI exports order, alongside the AI Action Plan",
+     "strength": "reported",
+     "sources": [
+      "de26_nbc_woke"
+     ]
+    },
+    {
+     "text": "CDAO (14 Jul 2025): awards up to $200M each to Anthropic, Google, OpenAI and xAI for 'agentic AI workflows'",
+     "strength": "primary",
+     "sources": [
+      "de26_cdao"
+     ]
+    },
+    {
+     "text": "xAI launched 'Grok for Government' on 14 Jul 2025, days after apologising for Grok's antisemitic posts",
+     "strength": "reported",
+     "sources": [
+      "de26_eng_grokgov"
+     ]
+    },
+    {
+     "text": "GSA OneGov (25 Sep 2025): Grok 4 for 42 cents per agency, to Mar 2027; OpenAI and Anthropic $1 per agency per year; earlier xAI deal fell through after antisemitic output (Wired); 30+ groups objected; GSA said Grok 4 met its guidelines",
+     "strength": "reported",
+     "sources": [
+      "de26_fs_onegov"
+     ]
+    },
+    {
+     "text": "GenAI.mil: Gemini for Government first (Dec 2025 rollout plan, >3m personnel); ChatGPT and Grok (via Starshield AI) added 31 Aug 2026 at IL5; Claude not on it after the dispute",
+     "strength": "reported",
+     "sources": [
+      "de26_ds_genaimil"
+     ]
+    },
+    {
+     "text": "7 Nov 2024: Claude on Palantir AIP hosted on AWS at IL6 (Secret); Anthropic said AUP exceptions are 'carefully calibrated' for 'carefully selected government agencies'",
+     "strength": "reported",
+     "sources": [
+      "de26_reg_claudepal"
+     ]
+    },
+    {
+     "text": "26 Feb 2026: Amodei said Anthropic 'cannot in good conscience accede' and named mass domestic surveillance and fully autonomous weapons; Pentagon (Parnell) said it has no interest in illegal mass surveillance and asked use 'for all lawful purposes', 'We will not let ANY company dictate the terms'",
+     "strength": "reported",
+     "sources": [
+      "de26_wt_anthropic"
+     ]
+    },
+    {
+     "text": "Ultimatum 24 Feb 2026; Hegseth announced supply-chain-risk direction 27 Feb; formal 3 Mar; Emil Michael: 'no private company will insert their opinions in the chain of command'; D.C. Cir. 25 Sep 2026 (Katsas, Rao; Henderson dissenting) ruled for the Pentagon; Anthropic 'respectfully disagree[s]'",
+     "strength": "reported",
+     "sources": [
+      "de26_d1_anthropic"
+     ]
+    },
+    {
+     "text": "D.C. Cir. upheld the 41 USC 4713 (FASCSA) designation, 'bad motive' not required; N.D. Cal. on 27 Aug 2026 set aside the 10 USC 3252 designation (adversary requirement) under a permanent injunction",
+     "strength": "reported",
+     "sources": [
+      "de26_taft_dccir"
+     ]
+    },
+    {
+     "text": "As of 21 Oct 2026: en banc rehearing sought; 17 former national-security officials filed a brief supporting rehearing; no ruling yet",
+     "strength": "reported",
+     "sources": [
+      "de26_ds_enbanc"
+     ]
+    },
+    {
+     "text": "27-28 Feb 2026: Trump ordered agencies to stop using Anthropic; OpenAI agreed to deploy models on a classified network, cloud-only; Altman said the agreement includes 'prohibitions on domestic mass surveillance' and 'human responsibility for the use of force'",
+     "strength": "reported",
+     "sources": [
+      "de26_eng_openai"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_ucsb_14148",
+     "url": "https://www.presidency.ucsb.edu/documents/executive-order-14148-initial-rescissions-harmful-executive-orders-and-actions",
+     "label": "American Presidency Project, Executive Order 14148, 'Initial Rescissions of Harmful Executive Orders and Actions', 20 January 2025"
+    },
+    {
+     "key": "de26_nbc_woke",
+     "url": "https://www.nbcnewyork.com/news/business/money-report/no-woke-ai-in-washington-trump-says-as-he-launches-american-ai-action-plan/6346414/?amp=1",
+     "label": "CNBC via NBC New York, 'No woke AI in Washington, Trump says as he launches American AI Action Plan', 24 July 2025"
+    },
+    {
+     "key": "de26_cdao",
+     "url": "https://www.ai.mil/Latest/News-Press/PR-View/Article/4242822/cdao-announces-partnerships-with-frontier-ai-companies-to-address-national-secu/",
+     "label": "Department of Defense CDAO, 'CDAO announces partnerships with frontier AI companies', 14 July 2025"
+    },
+    {
+     "key": "de26_eng_grokgov",
+     "url": "https://www.engadget.com/ai/xai-starts-offering-grok-to-us-government-agencies-162952893.html?src=rss",
+     "label": "Engadget, 'xAI starts offering Grok to US government agencies', 14 July 2025"
+    },
+    {
+     "key": "de26_fs_onegov",
+     "url": "https://fedscoop.com/grok-government-gsa-onegov-artificial-intelligence-elon-musk-contract-agency/",
+     "label": "FedScoop, on GSA's OneGov agreement with xAI, 25 September 2025"
+    },
+    {
+     "key": "de26_ds_genaimil",
+     "url": "https://defensescoop.com/2026/08/31/grok-chatgpt-added-to-genai-mil/",
+     "label": "DefenseScoop, 'Grok, ChatGPT added to GenAI.mil', 31 August 2026"
+    },
+    {
+     "key": "de26_reg_claudepal",
+     "url": "https://www.theregister.com/2024/11/07/anthropic_palantir_aws_claude/",
+     "label": "The Register, on the Anthropic-Palantir-AWS partnership, 7 November 2024"
+    },
+    {
+     "key": "de26_wt_anthropic",
+     "url": "https://m.washingtontimes.com/news/2026/feb/26/anthropic-rejects-pentagons-ultimatum-unlimited-claude-ai-use/",
+     "label": "Washington Times, 'Anthropic rejects Pentagon's ultimatum', 26 February 2026"
+    },
+    {
+     "key": "de26_d1_anthropic",
+     "url": "https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/",
+     "label": "Defense One, on the D.C. Circuit ruling in the Anthropic supply-chain-risk case, 25 September 2026"
+    },
+    {
+     "key": "de26_taft_dccir",
+     "url": "https://www.taftlaw.com/news-events/law-bulletins/d-c-circuit-rules-pentagon-can-exclude-anthropic-from-supply-chain/",
+     "label": "Taft Law bulletin, 'D.C. Circuit rules Pentagon can exclude Anthropic from supply chain', September 2026"
+    },
+    {
+     "key": "de26_ds_enbanc",
+     "url": "https://defensescoop.com/2026/10/21/dc-circuit-decision-anthropic-pentagon-fight/",
+     "label": "DefenseScoop, on the en banc petition in the Anthropic-Pentagon case, 21 October 2026"
+    },
+    {
+     "key": "de26_eng_openai",
+     "url": "https://www.engadget.com/ai/openai-strikes-a-deal-with-the-defense-department-to-deploy-its-ai-models-054441785.html",
+     "label": "Engadget, 'OpenAI strikes a deal with the Defense Department to deploy its AI models', 28 February 2026"
+    }
+   ]
+  },
+  {
+   "id": "de26_money",
+   "stage": "de26",
+   "topic": "Money rails: BSA filings, Choke Point, EO 14331, OCC findings, EO 14178, GENIUS Act text, stablecoin freezes",
+   "claims": [
+    {
+     "text": "FinCEN FY2024: 4.7 million SARs (~12,870 a day) and 20.5 million CTRs; DHS personnel ran about 290,000 BSA-related queries",
+     "strength": "reported",
+     "sources": [
+      "de26_aba_fincen"
+     ]
+    },
+    {
+     "text": "Operation Choke Point began 2013; FDIC high-risk list incl. payday lenders and firearms/ammunition sellers, rescinded 2015; DOJ letter 16 Aug 2017: 'no longer in effect, and it will not be undertaken again'",
+     "strength": "reported",
+     "sources": [
+      "de26_cfslm_chokepoint"
+     ]
+    },
+    {
+     "text": "EO 14331 (7 Aug 2025): defines politicized or unlawful debanking (political or religious beliefs, or lawful business disfavoured for political reasons); regulators to remove reputation risk within 180 days; SBA 60 days, reinstatement 120; AG referral only for religion-based debanking (§5(c))",
+     "strength": "primary",
+     "sources": [
+      "de26_fr_14331"
+     ]
+    },
+    {
+     "text": "OCC Dec 2025 preliminary findings, nine largest banks: 2020-23 restrictions on sectors incl. firearms, private prisons, coal, Arctic oil, payday lending, tobacco, adult entertainment, PACs and political parties, digital assets, often reputational; ~100,000 complaints under review; no political/religious finding yet",
+     "strength": "primary",
+     "sources": [
+      "de26_occ_debank"
+     ]
+    },
+    {
+     "text": "EO 14178 (23 Jan 2025) §5(a): agencies 'prohibited from undertaking any action to establish, issue, or promote CBDCs' unless required by law; revoked EO 14067",
+     "strength": "primary",
+     "sources": [
+      "de26_fr_14178"
+     ]
+    },
+    {
+     "text": "GENIUS Act text: issuer 'shall be treated as a financial institution for purposes of the Bank Secrecy Act' (§4(a)(5)(A)); must have capabilities 'to block, freeze, and reject specific or impermissible transactions'; must have 'the technological capability to comply, and will comply, with the terms of any lawful order' (§4(a)(6)(B)); 'lawful order' defined to include orders to 'seize, freeze, burn, or prevent the transfer of payment stablecoins' (§2(16)(A))",
+     "strength": "primary",
+     "sources": [
+      "de26_crec_genius"
+     ]
+    },
+    {
+     "text": "GENIUS Act is P.L. 119-27, signed 18 Jul 2025; regulators and FinCEN to write implementing rules",
+     "strength": "primary",
+     "sources": [
+      "de26_crs_genius"
+     ]
+    },
+    {
+     "text": "Tether (Feb 2026) said it had frozen about $4.2bn linked to illicit activity and worked with 310+ agencies in 64 countries incl. DOJ and Secret Service",
+     "strength": "reported",
+     "sources": [
+      "de26_forklog_tether"
+     ]
+    },
+    {
+     "text": "23 Apr 2026: Tether froze >$344m USDT on two Tron addresses working with OFAC and US law enforcement; Ardoino: 'USDT is not a safe haven for illicit activity'",
+     "strength": "reported",
+     "sources": [
+      "de26_decrypt_tether"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_aba_fincen",
+     "url": "http://bankingjournal.aba.com/2025/06/fincen-releases-figures-on-bsa-filings/",
+     "label": "ABA Banking Journal, 'FinCEN releases figures on BSA filings', 20 June 2025"
+    },
+    {
+     "key": "de26_cfslm_chokepoint",
+     "url": "https://www.consumerfinancialserviceslawmonitor.com/2017/08/operation-choke-point-terminated/",
+     "label": "Consumer Financial Services Law Monitor, 'Operation Choke Point Terminated', August 2017"
+    },
+    {
+     "key": "de26_fr_14331",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-08-12/html/2025-15341.htm",
+     "label": "Executive Order 14331, 'Guaranteeing Fair Banking for All Americans', 7 August 2025, 90 FR 38925"
+    },
+    {
+     "key": "de26_occ_debank",
+     "url": "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-123a.pdf",
+     "label": "OCC, preliminary findings of review of large banks' debanking activities, December 2025"
+    },
+    {
+     "key": "de26_fr_14178",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-31/html/2025-02123.htm",
+     "label": "Executive Order 14178, 'Strengthening American Leadership in Digital Financial Technology', 23 January 2025, 90 FR 8647"
+    },
+    {
+     "key": "de26_crec_genius",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2025-07-17/html/CREC-2025-07-17-pt1-PgH3405.htm",
+     "label": "Congressional Record, 17 July 2025, House consideration of S. 1582, the GENIUS Act (bill text)"
+    },
+    {
+     "key": "de26_crs_genius",
+     "url": "https://www.everycrsreport.com/files/2026-08-20_IN12553_0b329134f6be0cc12f78017358552f4053d52c5e.html",
+     "label": "Congressional Research Service, Insight IN12553 on the GENIUS Act, 20 August 2026"
+    },
+    {
+     "key": "de26_forklog_tether",
+     "url": "https://forklog.com/en/news/tether-freezes-4-2-billion-in-illicit-funds-to-date",
+     "label": "ForkLog, 'Tether freezes $4.2 billion in illicit funds to date' (relaying Tether), 28 February 2026"
+    },
+    {
+     "key": "de26_decrypt_tether",
+     "url": "https://decrypt.co/365278/tether-freezes-344-million-usdt-stablecoins-flagged-illicit-activity",
+     "label": "Decrypt, 'Tether freezes $344 million in USDT', 23 April 2026"
+    }
+   ]
+  },
+  {
+   "id": "de26_counter",
+   "stage": "de26",
+   "topic": "Counterweights: Signal, Carpenter, Chatrie, BIPA, Clearview 2022, MHMDA, DROP, Montana SB 282, Maven, Flock pause, UK-Apple",
+   "claims": [
+    {
+     "text": "In response to a C.D. Cal. grand jury subpoena seeking extensive data, Signal produced only account-creation and last-connection timestamps; 'Signal still knows nothing about you'",
+     "strength": "reported",
+     "sources": [
+      "de26_sw_signal"
+     ]
+    },
+    {
+     "text": "Carpenter (2018), 5-4, Roberts: acquiring historical cell-site location records is a search, warrant generally required; 'We decline to grant the state unrestricted access to a wireless carrier's database of physical location information'",
+     "strength": "reported",
+     "sources": [
+      "de26_jurist_carpenter"
+     ]
+    },
+    {
+     "text": "Chatrie (29 Jun 2026): Kagan for five, Gorsuch concurring in judgment, Alito/Thomas/Barrett dissenting; accessing Location History is a search; third-party doctrine rejected; warrant validity remanded to 4th Cir.; exclusionary rule not decided",
+     "strength": "reported",
+     "sources": [
+      "de26_crs_chatrie"
+     ]
+    },
+    {
+     "text": "BIPA requires a written release before a private entity collects biometrics; liquidated damages $1,000 negligent / $5,000 intentional or reckless; 'A private entity does not include a State or local government agency'; Act does not apply to contractors of a State agency",
+     "strength": "primary",
+     "sources": [
+      "de26_justia_bipa"
+     ]
+    },
+    {
+     "text": "Rosenbach (Ill. 2019) triggered a surge of BIPA suits; Facebook settled the Patel 'tag suggestions' case for $650 million after a $550m deal was rejected",
+     "strength": "reported",
+     "sources": [
+      "de26_br_bipa"
+     ]
+    },
+    {
+     "text": "ACLU v. Clearview consent order (11 May 2022): Clearview permanently barred from making its faceprint database available to most private entities nationwide; five-year bar on any Illinois entity incl. state and local police",
+     "strength": "primary",
+     "sources": [
+      "de26_aclu_clearview"
+     ]
+    },
+    {
+     "text": "Washington My Health My Data Act passed Apr 2023, effective Mar 2024, private right of action; first suit 10 Feb 2025 against Amazon over an ad SDK collecting location and ad IDs",
+     "strength": "reported",
+     "sources": [
+      "de26_wh_mhmda"
+     ]
+    },
+    {
+     "text": "California DROP: one deletion request to 500+ registered brokers from 1 Jan 2026; brokers process from 1 Aug 2026 every 45 days",
+     "strength": "primary",
+     "sources": [
+      "de26_cppa_drop"
+     ]
+    },
+    {
+     "text": "Montana SB 282 (signed May 2025): governmental entities may not purchase communications, precise geolocation or sensitive data without a warrant or investigative subpoena; first state to do so",
+     "strength": "reported",
+     "sources": [
+      "de26_reason_mt282"
+     ]
+    },
+    {
+     "text": "Google (Diane Greene, 1 Jun 2018) said Project Maven contract would not be renewed in 2019 after thousands of employees petitioned and dozens quit",
+     "strength": "reported",
+     "sources": [
+      "de26_eng_maven"
+     ]
+    },
+    {
+     "text": "Flock paused CBP and HSI pilots on 25 Aug 2025 after Illinois Secretary of State's audit found CBP accessed Illinois plate data in 'a clear violation of the state law'; CEO: 'We clearly communicated poorly'",
+     "strength": "reported",
+     "sources": [
+      "de26_ap_flock"
+     ]
+    },
+    {
+     "text": "DNI Gabbard said on 19 Aug 2025 that the UK agreed to drop its demand for a backdoor into Apple's encrypted iCloud data; Apple had stopped offering Advanced Data Protection to new UK users",
+     "strength": "reported",
+     "sources": [
+      "de26_ai_appleuk"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_sw_signal",
+     "url": "https://www.securityweek.com/signal-provides-only-two-timestamps-response-grand-jury-subpoena",
+     "label": "SecurityWeek, 'Signal provides only two timestamps in response to grand jury subpoena'"
+    },
+    {
+     "key": "de26_jurist_carpenter",
+     "url": "https://www.jurist.org/news/2018/06/supreme-court-rules-warrant-generally-needed-to-track-cell-phone-location/",
+     "label": "JURIST, 'Supreme Court rules warrant generally needed to track cell phone location', June 2018 (Carpenter v. United States, 22 June 2018)"
+    },
+    {
+     "key": "de26_crs_chatrie",
+     "url": "https://www.everycrsreport.com/files/2026-06-30_LSB11274_da2739d321d1d12ff92e47949779ceceda5af3a7.html",
+     "label": "Congressional Research Service, Legal Sidebar LSB11274 on Chatrie v. United States, 30 June 2026"
+    },
+    {
+     "key": "de26_justia_bipa",
+     "url": "https://law.justia.com/codes/illinois/2022/chapter-740/act-740-ilcs-14/?current=1",
+     "label": "Illinois Biometric Information Privacy Act, 740 ILCS 14 (text via Justia)"
+    },
+    {
+     "key": "de26_br_bipa",
+     "url": "https://www.blankrome.com/publications/impact-facebook-650-million-patel-bipa-settlement",
+     "label": "Blank Rome, 'Impact of Facebook's $650 Million Patel BIPA Settlement'"
+    },
+    {
+     "key": "de26_aclu_clearview",
+     "url": "https://aclu.org/cases/aclu-v-clearview-ai",
+     "label": "ACLU, case page 'ACLU v. Clearview AI' (consent order 11 May 2022)"
+    },
+    {
+     "key": "de26_wh_mhmda",
+     "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250220-first-lawsuit-filed-under-washingtons-my-health-my-data-act",
+     "label": "WilmerHale, 'First Lawsuit Filed Under Washington's My Health My Data Act', 20 February 2025"
+    },
+    {
+     "key": "de26_cppa_drop",
+     "url": "https://privacy.ca.gov/2025/12/january-2026-drop-is-coming/",
+     "label": "California Privacy Protection Agency, 'January 2026: DROP is coming', December 2025"
+    },
+    {
+     "key": "de26_reason_mt282",
+     "url": "https://reason.com/2025/05/16/new-montana-law-blocks-the-state-from-buying-private-data-to-skirt-the-fourth-amendment",
+     "label": "Reason, 'New Montana Law Blocks the State From Buying Private Data To Skirt the Fourth Amendment', 16 May 2025"
+    },
+    {
+     "key": "de26_eng_maven",
+     "url": "https://engadget.com/2018/06/01/google-will-not-renew-military-ai-contract-project-maven",
+     "label": "Engadget, 'Google will not renew military AI contract', 1 June 2018"
+    },
+    {
+     "key": "de26_ap_flock",
+     "url": "https://abc7.com/post/flock-safety-license-plate-camera-company-halts-cooperation-federal-agencies-among-investigation-concerns-including-il/17653876/",
+     "label": "AP via ABC7, 'Flock Safety halts cooperation with federal agencies', 26 August 2025"
+    },
+    {
+     "key": "de26_ai_appleuk",
+     "url": "https://appleinsider.com/articles/25/08/19/uk-blinks-backs-down-from-its-apple-backdoor-encryption-demand",
+     "label": "AppleInsider, 'UK blinks, backs down from its Apple backdoor encryption demand', 19 August 2025"
+    }
+   ]
+  }
+ ]
+}

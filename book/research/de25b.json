@@ -1,0 +1,541 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de25b_travel",
+   "stage": "de25b",
+   "topic": "Who knows you travel: Secure Flight, Quiet Skies, APIS, PNR, ATS, CBP and TSA face capture, REAL ID, CLEAR, TSA-ICE sharing",
+   "claims": [
+    {
+     "text": "Secure Flight final rule (28 Oct 2008, effective 29 Dec 2008): TSA takes over watch-list matching from airlines; airlines must request full name, date of birth, gender, and redress or Known Traveler number if available; 'watch list' defined as the No Fly and Selectee components of the Terrorist Screening Database; TSA may use larger lists when security conditions warrant",
+     "strength": "primary",
+     "sources": [
+      "de25b_fr_secureflight"
+     ]
+    },
+    {
+     "text": "Secure Flight PIA (9 Aug 2007): non-matches kept 7 days after travel; potential matches 7 years; confirmed matches 99 years; passport and itinerary data transmitted if available; program 'does not use algorithms to assign risk scores to individuals' and uses no commercial data",
+     "strength": "primary",
+     "sources": [
+      "de25b_pia_secureflight"
+     ]
+    },
+    {
+     "text": "Quiet Skies ended 5 June 2025 by Secretary Noem, who called it 'a political rolodex of the Biden Administration'; it used an algorithm on travel patterns and other government data to send air marshals to watch travellers who were not on the FBI watchlist; cost about $200m a year (Washington Times); Gabbard said she was listed for criticising Harris; the reason for her listing remains unclear (CNN)",
+     "strength": "reported",
+     "sources": [
+      "de25b_cnn_quietskies",
+      "de25b_wt_quietskies"
+     ]
+    },
+    {
+     "text": "APIS pre-departure rule (23 Aug 2007, effective 19 Feb 2008): carriers transmit manifests (biographic page data) 30 minutes before doors close (batch) or up to door closing (interactive), for flights to and from the US; passengers who receive a 'not-cleared' response cannot be issued boarding passes",
+     "strength": "primary",
+     "sources": [
+      "de25b_fr_apis"
+     ]
+    },
+    {
+     "text": "EU-US PNR Agreement (Council Decision 2012/472/EU): PNR includes name, travel dates and itinerary, ticket information, addresses and phone numbers, payment method and card number, travel agent, seat, baggage; kept up to 5 years in an active database (depersonalised after 6 months) then up to 10 years dormant; sensitive data deleted within 30 days. EDPS called a 15-year maximum 'clearly disproportionate' (Dec 2011, draft)",
+     "strength": "primary",
+     "sources": [
+      "de25b_ep_pnr",
+      "de25b_pm_pnr"
+     ]
+    },
+    {
+     "text": "ATS PIA update (2017): ATS compares traveller data with law-enforcement and intelligence records using risk-based rules; ingests APIS, ESTA, visa, TECS, I-94, SEVIS and Secure Flight data for some flights; PNR is an ATS record; 'ATS is retaining ingested information consistent with its own 15-year retention period'; photo galleries of US citizens purged after processing, others kept 14 days",
+     "strength": "primary",
+     "sources": [
+      "de25b_pia_ats"
+     ]
+    },
+    {
+     "text": "CBP biometric entry-exit final rule published 27 Oct 2025, effective 26 Dec 2025: CBP may photograph non-citizens on entry and exit at airports, land ports and seaports; US citizens are not covered and may take part voluntarily",
+     "strength": "reported",
+     "sources": [
+      "de25b_mit_entryexit"
+     ]
+    },
+    {
+     "text": "TSA facial comparison at 84 airports (May 2025), plan for about 400; travellers may decline 'without recourse'; TSA says images deleted after verification, except PreCheck Touchless ID (24 h after departure) and testing",
+     "strength": "reported",
+     "sources": [
+      "de25b_siw_tsaface"
+     ]
+    },
+    {
+     "text": "Algorithmic Justice League survey (via The Register, 31 Jul 2025): 74% said they were not warned facial recognition was used; Traveler Privacy Protection Act reintroduced May 2025 by a bipartisan group led by Sen. Merkley",
+     "strength": "reported",
+     "sources": [
+      "de25b_reg_tsaface"
+     ]
+    },
+    {
+     "text": "REAL ID enforcement began 7 May 2025 under TSA final rule of 13 Jan 2025; the REAL ID Act 2005 followed a 9/11 Commission recommendation",
+     "strength": "primary",
+     "sources": [
+      "de25b_tsa_realid"
+     ]
+    },
+    {
+     "text": "From 1 Feb 2026 travellers without REAL ID or passport pay $45 for TSA ConfirmID, valid 10 days, using knowledge-based questions",
+     "strength": "reported",
+     "sources": [
+      "de25b_az_confirmid"
+     ]
+    },
+    {
+     "text": "CLEAR (Clear Secure, Inc.): founded 2003 as Verified Identity Pass; shut after bankruptcy 2009; bought 2010 by Caryn Seidman Becker and Ken Cornick; relaunched 2012; NYSE IPO 2021, ticker YOU",
+     "strength": "reported",
+     "sources": [
+      "de25b_wiki_clear"
+     ]
+    },
+    {
+     "text": "CLEAR FY2023 10-K: TSA selected CLEAR in Jan 2020 for PreCheck enrollment; operates under TSA Registered Traveler program; DHS SAFETY Act certification; links identity to 'eyes, face and fingerprints'; says it does 'never sell member data'",
+     "strength": "primary",
+     "sources": [
+      "de25b_10k_2023"
+     ]
+    },
+    {
+     "text": "CLEAR FY2025 10-K: company says 'we are controlled by the Founder Post-IPO Members'; 'we do not sell our Members' data'",
+     "strength": "primary",
+     "sources": [
+      "de25b_10k_2025"
+     ]
+    },
+    {
+     "text": "CLEAR FY2025 results (25 Feb 2026): 38.0m total members; 7.6m active CLEAR+ members; revenue $900.8m; 60 CLEAR+ airports; 340 retail locations with TSA PreCheck enrollment",
+     "strength": "primary",
+     "sources": [
+      "de25b_pr_clearfy25"
+     ]
+    },
+    {
+     "text": "CLEAR privacy notice (updated 26 Jun 2026): collects 'faceprints, fingerprints, iris scans'; shares data 'if required by law or legal process, including to governmental or regulatory bodies'; for CLEAR+ shares data 'with the Transportation Security Administration'; may share with third parties for advertising and marketing; 'does not sell your biometrics or sensitive Personal Data'; may retain data after account termination for fraud prevention",
+     "strength": "primary",
+     "sources": [
+      "de25b_clear_privacy"
+     ]
+    },
+    {
+     "text": "July 2022: CLEAR let through a passenger carrying ammunition who was travelling under a false identity; CLEAR called it 'a single human error'; TSA probed and required CLEAR members' IDs be checked by TSA officers (2023)",
+     "strength": "reported",
+     "sources": [
+      "de25b_cbs_clear"
+     ]
+    },
+    {
+     "text": "CLEAR contract with CMS (9 Dec 2025): CLEAR1 to be used for Medicare.gov account creation and recovery from early 2026; amount not disclosed",
+     "strength": "primary",
+     "sources": [
+      "de25b_clear_cms"
+     ]
+    },
+    {
+     "text": "Reuters (7 Apr 2026): TSA gave ICE records on more than 31,000 travellers from Jan 2025 to Feb 2026; more than 800 arrests per internal ICE data; Secure Flight regulation says it was not intended to track immigration offenders",
+     "strength": "reported",
+     "sources": [
+      "de25b_reuters_tsaice"
+     ]
+    },
+    {
+     "text": "NYT first reported 12 Dec 2025 that TSA sends ICE passenger names multiple times a week, matched against final removal orders; partnership reportedly began March 2025; MOA signed May 2025; ICE stores TSA data in its own repository; MOA released in American Oversight v. TSA (D.D.C. 1:26-cv-00193); acting TSA administrator testified TSA does not 'send the information to ICE'",
+     "strength": "reported",
+     "sources": [
+      "de25b_ipt_tsaice",
+      "de25b_ao_moa"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25b_fr_secureflight",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2008-10-28/html/E8-25432.htm",
+     "label": "TSA, 'Secure Flight Program' final rule, 73 Fed. Reg. (28 October 2008), effective 29 December 2008"
+    },
+    {
+     "key": "de25b_pia_secureflight",
+     "url": "https://dhs.gov/sites/default/files/publications/privacy_pia_tsa_secureflight.pdf",
+     "label": "DHS/TSA, Privacy Impact Assessment for the Secure Flight Program, 9 August 2007"
+    },
+    {
+     "key": "de25b_cnn_quietskies",
+     "url": "https://cnn.com/2025/06/05/politics/dhs-halts-quiet-skies-program",
+     "label": "CNN, 'DHS halts Quiet Skies program', 5 June 2025"
+    },
+    {
+     "key": "de25b_wt_quietskies",
+     "url": "https://m.washingtontimes.com/news/2025/jun/5/dhs-shuts-tsas-quiet-skies-program-abuses/",
+     "label": "Washington Times, 'DHS shuts TSA's Quiet Skies program over abuses', 5 June 2025"
+    },
+    {
+     "key": "de25b_fr_apis",
+     "url": "https://www.federalregister.gov/documents/2007/08/23/E7-15985/advance-electronic-transmission-of-passenger-and-crew-member-manifests-for-commercial-aircraft-and",
+     "label": "CBP, APIS pre-departure final rule, 72 Fed. Reg. 48320 (23 August 2007), effective 19 February 2008"
+    },
+    {
+     "key": "de25b_ep_pnr",
+     "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1219389",
+     "label": "European Parliament Legislative Observatory, summary of Council Decision 2012/472/EU concluding the EU-US PNR Agreement (procedure 2011/0382(NLE))"
+    },
+    {
+     "key": "de25b_pm_pnr",
+     "url": "https://www.pinsentmasons.com/out-law/news/proposed-data-retention-period-under-eu-us-pnr-agreement-is-excessive-data-protection-watchdog-says",
+     "label": "Pinsent Masons Out-Law, 'Proposed data retention period under EU-US PNR agreement is excessive, data protection watchdog says', 14 December 2011"
+    },
+    {
+     "key": "de25b_pia_ats",
+     "url": "https://www.dhs.gov/sites/default/files/2022-05/privacy-pia-cbp006%28e%29-ats-may2022.pdf",
+     "label": "DHS/CBP, Privacy Impact Assessment Update for the Automated Targeting System, DHS/CBP/PIA-006(e), 13 January 2017 (addendum 2019)"
+    },
+    {
+     "key": "de25b_mit_entryexit",
+     "url": "https://iso.mit.edu/news/dhs-announces-final-rule-to-implement-biometric-entry-exit-program",
+     "label": "MIT International Students Office, 'DHS Announces Final Rule to Implement Biometric Entry/Exit Program, effective December 26, 2025'"
+    },
+    {
+     "key": "de25b_siw_tsaface",
+     "url": "https://www.securityinfowatch.com/access-identity/biometrics/facial-recognition-solutions/news/55292279/tsa-rolls-out-facial-recognition-at-84-airports-raising-privacy-concerns",
+     "label": "SecurityInfoWatch, 'TSA Rolls Out Facial Recognition at 84 Airports, Raising Privacy Concerns', 22 May 2025"
+    },
+    {
+     "key": "de25b_reg_tsaface",
+     "url": "https://www.theregister.com/2025/07/31/tsa_facial_recognition/",
+     "label": "The Register, 'The TSA likes facial recognition at airports. Passengers and politicians, not so much', 31 July 2025"
+    },
+    {
+     "key": "de25b_tsa_realid",
+     "url": "https://tsa.gov/news/press/releases/2025/01/13/tsa-publishes-final-rule-real-id-enforcement-beginning-may-7-2025",
+     "label": "TSA press release, 'TSA publishes final rule for REAL ID enforcement beginning May 7, 2025', 13 January 2025"
+    },
+    {
+     "key": "de25b_az_confirmid",
+     "url": "https://www.azfamily.com/2026/01/23/tsa-charge-45-fee-travelers-without-real-id-starting-feb-1/",
+     "label": "azfamily (KTVK/KPHO), 'TSA to charge $45 fee for travelers without REAL ID starting Feb. 1', 23 January 2026"
+    },
+    {
+     "key": "de25b_wiki_clear",
+     "url": "https://en.wikipedia.org/wiki/Clear_Secure",
+     "label": "Wikipedia, 'Clear Secure' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de25b_10k_2023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1856314/000185631424000023/you-20231231.htm",
+     "label": "Clear Secure, Inc., Form 10-K for fiscal year 2023 (SEC EDGAR)"
+    },
+    {
+     "key": "de25b_10k_2025",
+     "url": "https://www.sec.gov/Archives/edgar/data/1856314/000185631426000006/you-20251231.htm",
+     "label": "Clear Secure, Inc., Form 10-K for fiscal year 2025 (SEC EDGAR)"
+    },
+    {
+     "key": "de25b_pr_clearfy25",
+     "url": "https://www.itiger.com/news/2614769083",
+     "label": "CLEAR press release, 'CLEAR Announces Fourth Quarter and Full Year 2025 Financial Results', 25 February 2026"
+    },
+    {
+     "key": "de25b_clear_privacy",
+     "url": "https://www.clearme.com/privacy",
+     "label": "CLEAR, Privacy Notice, last updated 26 June 2026"
+    },
+    {
+     "key": "de25b_cbs_clear",
+     "url": "https://www.cbsnews.com/amp/news/tsa-clear-secure-screening-passenger-ammo",
+     "label": "CBS News, 'TSA probes Clear after it let through a passenger carrying ammo', updated 1 August 2023"
+    },
+    {
+     "key": "de25b_clear_cms",
+     "url": "https://ir.clearme.com/news-events/press-releases/detail/172/clear-announces-contract-with-cms-to-power-secure-seamless",
+     "label": "CLEAR press release, 'CLEAR Announces Contract with CMS to Power Secure, Seamless Digital Identity for Medicare.gov', 9 December 2025"
+    },
+    {
+     "key": "de25b_reuters_tsaice",
+     "url": "https://www.khaleejtimes.com/world/ice-arrested-more-than-800-people-after-tips-from-us-airport-security-agency",
+     "label": "Reuters (via Khaleej Times), 'ICE arrested more than 800 people after tips from US airport security agency', 7 April 2026"
+    },
+    {
+     "key": "de25b_ipt_tsaice",
+     "url": "https://immpolicytracking.org/policies/reported-trump-administration-provides-air-passenger-data-to-immigration-agents/",
+     "label": "Immigration Policy Tracking Project, 'Reported: Trump administration provides air passenger data to immigration agents' (entries Dec 2025-Jul 2026)"
+    },
+    {
+     "key": "de25b_ao_moa",
+     "url": "https://americanoversight.org/ice-tsa-data-sharing-agreement",
+     "label": "American Oversight, 'ICE-TSA data sharing agreement' (MOA released in American Oversight v. TSA, D.D.C. 1:26-cv-00193), July 2026"
+    }
+   ]
+  },
+  {
+   "id": "de25b_stop",
+   "stage": "de25b",
+   "topic": "Who can stop you: passport law, no-fly litigation, debt passport denial, trusted-traveller revocation, exit-control comparators",
+   "claims": [
+    {
+     "text": "8 U.S.C. 1185(b): unlawful 'for any citizen of the United States to depart from or enter' the country 'unless he bears a valid United States passport'; 1185(a) lets the President set rules for aliens' departure",
+     "strength": "primary",
+     "sources": [
+      "de25b_usc_1185"
+     ]
+    },
+    {
+     "text": "Kent v. Dulles (16 Jun 1958): Secretary of State lacked authority to deny passports over alleged Communist beliefs and refusal to file affidavits; 'The right to travel is a part of the liberty' protected by the Fifth Amendment",
+     "strength": "primary",
+     "sources": [
+      "de25b_kent"
+     ]
+    },
+    {
+     "text": "Aptheker (1964): Section 6 of the Subversive Activities Control Act, denying passports to Communist Party members, unconstitutional on its face; 'too broadly and indiscriminately restricts the right to travel'",
+     "strength": "primary",
+     "sources": [
+      "de25b_aptheker"
+     ]
+    },
+    {
+     "text": "Haig v. Agee (1981, 7-2, Burger): upheld revocation (1979) of former CIA officer Philip Agee's passport for harm to national security; courts defer to executive",
+     "strength": "reported",
+     "sources": [
+      "de25b_mtsu_agee"
+     ]
+    },
+    {
+     "text": "Terrorist Screening Dataset about 2m at end 2023 (1.16m in 2017; 120,000 in Dec 2003); vast majority not US citizens or LPRs; 'thousands of Americans'; no-fly count not given",
+     "strength": "reported",
+     "sources": [
+      "de25b_cbs_watchlist"
+     ]
+    },
+    {
+     "text": "Latif v. Holder (D. Or., June 2014, Judge Anna Brown): DHS TRIP 'wholly ineffective', violated due process; found 'a constitutionally protected, private interest in international travel by air'; government must give notice of status and reasons",
+     "strength": "reported",
+     "sources": [
+      "de25b_lf_latif"
+     ]
+    },
+    {
+     "text": "Kashem v. Barr (9th Cir. 2019): No Fly criteria not vague as applied; revised (2015) procedures adequate under Mathews; TSA Administrator issues final orders, reviewable in courts of appeals under 49 U.S.C. 46110",
+     "strength": "primary",
+     "sources": [
+      "de25b_kashem"
+     ]
+    },
+    {
+     "text": "FBI v. Fikre (19 Mar 2024, unanimous, Gorsuch): removal from the no-fly list with a pledge not to relist 'based on the currently available information' did not moot the suit; merits not decided; Fikre learned of listing in Sudan 2010, later detained and tortured in UAE",
+     "strength": "reported",
+     "sources": [
+      "de25b_scb_fikre"
+     ]
+    },
+    {
+     "text": "IRC 7345 passport denial: 'seriously delinquent tax debt' over $66,000 for 2026 (indexed; $51,000 in 2018, $64,000 in 2025); requires a filed lien with remedies exhausted or a levy; exclusions (installment agreement, CDP hearing, innocent spouse, bankruptcy, disaster area, hardship); CP508C notice; State may deny or revoke; 90 days to resolve; Tax Court or district court review; reversal within 30 days of resolution",
+     "strength": "primary",
+     "sources": [
+      "de25b_irs_passport"
+     ]
+    },
+    {
+     "text": "Child-support passport denial (42 U.S.C. 652(k)): created by PRWORA 1996 at $5,000, lowered to $2,500 by the Deficit Reduction Act of 2005; states certify via OCSE to State's CLASS lookout system; nearly $621m collected since inception, $30m in 2024; existing passports revoked only when State holds them; H.R. 6903 would make revocation mandatory, passed House by voice vote 27 Apr 2026",
+     "strength": "primary",
+     "sources": [
+      "de25b_crs_childsupport"
+     ]
+    },
+    {
+     "text": "H.R. 6903 received in the Senate and referred to the Finance Committee 28 Apr 2026; no further Senate action shown",
+     "strength": "reported",
+     "sources": [
+      "de25b_fd_hr6903"
+     ]
+    },
+    {
+     "text": "22 U.S.C. 2714: no passport for a person convicted of a federal or state felony drug offense who used a passport or crossed a border in committing it, while imprisoned or on parole/supervised release; existing passports revoked; emergency or humanitarian exceptions",
+     "strength": "primary",
+     "sources": [
+      "de25b_usc_2714"
+     ]
+    },
+    {
+     "text": "Sept 2025: House State Department authorization bill included a provision letting the Secretary deny or revoke passports of people he deems to have 'materially supported terrorists'; ACLU's Hamadanchy: 'a huge risk of abuse'; Chairman Mast filed a manager's amendment striking it (Intercept 15 Sep 2025; Guardian)",
+     "strength": "reported",
+     "sources": [
+      "de25b_int_mast",
+      "de25b_gu_mast"
+     ]
+    },
+    {
+     "text": "Feb 2020 DHS barred New York residents from trusted-traveller programmes over the Green Light Law; lifted 23 Jul 2020; government admitted in court that DHS statements were 'inaccurate and misleading'; NY AG James: 'political retribution, plain and simple'",
+     "strength": "reported",
+     "sources": [
+      "de25b_abc_ny"
+     ]
+    },
+    {
+     "text": "Nicole Cleland (Minnesota): on 10 Jan 2026 a Border Patrol agent addressed her by name, said he had facial recognition; three days later her Global Entry/PreCheck was revoked; in a July 2026 suit (EPIC and three citizens, S.D. Cal.) claims under APA, Privacy Act, First Amendment; Ivey (revoked 10 days after observing in Charlotte Nov 2025, later reinstated) and Walker (restored after reporter's query); CBP denies retaliation; allegations untested",
+     "strength": "reported",
+     "sources": [
+      "de25b_bu_cleland",
+      "de25b_kstp_cleland"
+     ]
+    },
+    {
+     "text": "DHS (14 Feb 2026) said claims that Mobile Fortify violates the Fourth Amendment are 'false' and that it uses a 'deliberately high matching threshold'",
+     "strength": "reported",
+     "sources": [
+      "de25b_kstp_cleland"
+     ]
+    },
+    {
+     "text": "Jackson-Vanik (Sec. 402, Trade Act of 1974): trade benefits conditioned on freedom to emigrate; bars a 'more than nominal tax on emigration'; Soviet 'education reimbursement fees' from Aug 1972, up to tens of thousands of dollars, affected mainly Soviet Jews emigrating to Israel or the US; stopped late 1972",
+     "strength": "primary",
+     "sources": [
+      "de25b_crs_jv"
+     ]
+    },
+    {
+     "text": "Soviet citizens needed exit visas; refuseniks were 'denied exit visas for months, years, and even decades'; often fired, harassed; activists jailed; about 50,000 Jews left in peak year 1979; Gorbachev let most refuseniks leave from 1987",
+     "strength": "reported",
+     "sources": [
+      "de25b_enc_refuseniks"
+     ]
+    },
+    {
+     "text": "Safeguard Defenders 'Trapped' (2 May 2023): SPC database mentions of exit bans rose from under 5,000 (2016) to 39,000 (2020); with ethnicity-based bans total 'in the millions', others 'tens of thousands if not more'; at least 15 laws; Supervision Law allows bans on people connected to investigations; targets include rights defenders' families, foreign journalists, civil-dispute parties (O'Halloran nearly 3 years)",
+     "strength": "reported",
+     "sources": [
+      "de25b_aj_china"
+     ]
+    },
+    {
+     "text": "Russia law signed 14 Apr 2023: electronic summonses via Gosuslugi, deemed received 7 days after upload to the registry; recipients barred from leaving; after 20 days without reporting, barred from loans, property and vehicle registration, self-employment",
+     "strength": "reported",
+     "sources": [
+      "de25b_ng_russia"
+     ]
+    },
+    {
+     "text": "July 2025: FSB border guards given direct access to draft data; a summons in the system bars a man from leaving; after 20 days, may be denied a foreign passport",
+     "strength": "reported",
+     "sources": [
+      "de25b_mt_russia"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25b_usc_1185",
+     "url": "https://www.govinfo.gov/link/uscode/8/1185",
+     "label": "8 U.S.C. 1185, Travel control of citizens and aliens (govinfo)"
+    },
+    {
+     "key": "de25b_kent",
+     "url": "https://www.chanrobles.com/usa/us_supremecourt/357/116/",
+     "label": "Kent v. Dulles, 357 U.S. 116 (16 June 1958)"
+    },
+    {
+     "key": "de25b_aptheker",
+     "url": "https://law.justia.com/cases/federal/us/378/500/",
+     "label": "Aptheker v. Secretary of State, 378 U.S. 500 (1964), Justia"
+    },
+    {
+     "key": "de25b_mtsu_agee",
+     "url": "https://firstamendment.mtsu.edu/article/haig-v-agee1981/",
+     "label": "Richard Parker, Free Speech Center (MTSU), 'Haig v. Agee (1981)', updated 24 January 2025"
+    },
+    {
+     "key": "de25b_cbs_watchlist",
+     "url": "https://www.cbsnews.com/news/us-terrorist-watchlist-grows",
+     "label": "CBS News, 'U.S. terrorist watchlist grows', 14 December 2023"
+    },
+    {
+     "key": "de25b_lf_latif",
+     "url": "https://www.lawfaremedia.org/article/court-demands-new-procedures-challenging-no-fly-list-determinations",
+     "label": "Lawfare, 'Court Demands New Procedures for Challenging No-Fly List Determinations', June 2014 (Latif v. Holder, D. Or.)"
+    },
+    {
+     "key": "de25b_kashem",
+     "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/17-35634/17-35634-2019-10-21.html",
+     "label": "Kashem v. Barr, No. 17-35634 (9th Cir. 21 October 2019), Justia"
+    },
+    {
+     "key": "de25b_scb_fikre",
+     "url": "https://www.scotusblog.com/2024/03/supreme-court-rules-no-fly-list-dispute-can-go-forward",
+     "label": "SCOTUSblog, 'Supreme Court rules no-fly list dispute can go forward', 19 March 2024 (FBI v. Fikre)"
+    },
+    {
+     "key": "de25b_irs_passport",
+     "url": "https://www.irs.gov/passports",
+     "label": "IRS, 'Revocation or denial of passport in cases of certain unpaid taxes' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de25b_crs_childsupport",
+     "url": "https://www.everycrsreport.com/files/2026-05-05_IN12660_28527037098642dbfb3e36ce2f74ecc078b4fd56.html",
+     "label": "Congressional Research Service, 'The Child Support Enforcement Passport Denial Program', IN12660, updated 5 May 2026"
+    },
+    {
+     "key": "de25b_fd_hr6903",
+     "url": "https://fastdemocracy.com/bill-search/us/119/bills/USB00101668",
+     "label": "FastDemocracy, H.R. 6903 (119th), Ensuring Children Receive Support Act, actions to 28 April 2026"
+    },
+    {
+     "key": "de25b_usc_2714",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title22/html/USCODE-2024-title22-chap38-sec2714.htm",
+     "label": "22 U.S.C. 2714, Denial of passports to certain convicted drug traffickers (US Code 2024, govinfo)"
+    },
+    {
+     "key": "de25b_int_mast",
+     "url": "https://theintercept.com/2025/09/15/marco-rubio-revoke-passports-brian-mast",
+     "label": "The Intercept, on the House State Department bill's passport-revocation provision and its removal, 15 September 2025"
+    },
+    {
+     "key": "de25b_gu_mast",
+     "url": "https://www.inkl.com/news/gop-lawmaker-cuts-bill-measure-that-allowed-rubio-to-revoke-us-passports",
+     "label": "Joseph Gedeon, The Guardian (via inkl), 'GOP lawmaker cuts bill measure that allowed Rubio to revoke US passports', September 2025"
+    },
+    {
+     "key": "de25b_abc_ny",
+     "url": "https://abc7ny.com/post/dhs-lifts-ban-on-trusted-traveler-program-after-false-statements/6331428/",
+     "label": "ABC7 New York, 'DHS lifts ban on Trusted Traveler program for New York residents after false statements', 23 July 2020"
+    },
+    {
+     "key": "de25b_bu_cleland",
+     "url": "https://www.biometricupdate.com/202607/dhs-accused-of-tracking-immigration-observers-and-retaliating-through-global-entry",
+     "label": "Biometric Update, 'DHS accused of tracking immigration observers and retaliating through Global Entry', July 2026"
+    },
+    {
+     "key": "de25b_kstp_cleland",
+     "url": "https://kstp.com/kstp-news/top-news/watching-the-watchers-ice-uses-facial-recognition-to-track-citizen-observers-in-minnesota-federal-court-filing-says/",
+     "label": "KSTP, 'Watching the watchers: ICE uses facial recognition to track citizen observers in Minnesota, federal court filing says', 9 February 2026 (updated 14-15 February)"
+    },
+    {
+     "key": "de25b_crs_jv",
+     "url": "https://www.everycrsreport.com/files/20000922_98-545_c5b101cc2592f1959fcb03d7f390ebca112d4c6c.html",
+     "label": "Vladimir N. Pregelj, CRS Report 98-545 E, 'The Jackson-Vanik Amendment: A Survey', updated 22 September 2000"
+    },
+    {
+     "key": "de25b_enc_refuseniks",
+     "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/refuseniks",
+     "label": "Jonathan D. Wallace, 'Refuseniks', Encyclopedia of Russian History (Encyclopedia.com)"
+    },
+    {
+     "key": "de25b_aj_china",
+     "url": "https://www.aljazeera.com/news/2023/5/2/china-steps-up-use-of-exit-bans-against-government-critics",
+     "label": "Al Jazeera, 'China steps up use of exit bans against government critics', 2 May 2023 (Safeguard Defenders, 'Trapped')"
+    },
+    {
+     "key": "de25b_ng_russia",
+     "url": "https://novayagazeta.eu/en/articles/2023/04/14/putin-signs-law-on-digital-draft-notices-en-news",
+     "label": "Novaya Gazeta Europe, 'Putin signs law on digital draft notices', 14 April 2023"
+    },
+    {
+     "key": "de25b_mt_russia",
+     "url": "https://www.themoscowtimes.com/2025/07/23/russia-tightens-border-controls-on-draft-age-men-with-expanded-fsb-powers-a89931",
+     "label": "The Moscow Times, 'Russia tightens border controls on draft-age men with expanded FSB powers', 23 July 2025"
+    }
+   ]
+  }
+ ]
+}

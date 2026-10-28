@@ -1,0 +1,414 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de24b_benefits",
+   "stage": "de24b",
+   "topic": "Benefit records: eligibility matching, SNAP/Medicaid/TANF data to enforcement, The Work Number",
+   "claims": [
+    {
+     "text": "GAO-21-183 (25 Feb 2021) reviewed six programs (Housing Choice Vouchers, Medicaid, SNAP, EITC, LIHEAP, SSI) and identified 34 electronic data sources used to verify income or assets: 13 federal, 14 state, 7 commercial; all six used state unemployment data; beneficiaries may face delays when data discrepancies must be resolved",
+     "strength": "primary",
+     "sources": [
+      "de24b_gao_21183"
+     ]
+    },
+    {
+     "text": "USDA demanded SNAP data back to 2020 (names, dates of birth, addresses, SSNs, benefit amounts) from May 2025; at least 27 states complied (~15.7m enrollees); USDA official Shiela Corley's filings say SNAP data run through DHS SAVE; June 2025 notice allows disclosure where a record indicates a potential violation of law to federal, foreign, state, local or tribal agencies; Judge Chesney: uses 'well beyond those permitted'; TRO Sept 2025, PI 15 Oct 2025 blocking withholding of admin funds",
+     "strength": "reported",
+     "sources": [
+      "de24b_npr_snap27"
+     ]
+    },
+    {
+     "text": "Feb 2026: Judge Maxine Chesney (N.D. Cal.) said the administration still cannot force 22 suing states to hand over SNAP data; USDA had threatened in December to stop paying administrative costs; expanded PI 26 Feb 2026 blocks funding cut-off as likely contrary to the SNAP Act",
+     "strength": "reported",
+     "sources": [
+      "de24b_wcax_snap",
+      "de24b_bl_snapfeb"
+     ]
+    },
+    {
+     "text": "NPR 17 Jul 2026: Chhabria warned 30 Apr 2026 'If the federal government cannot be sufficiently careful then it can't use the information'; late May paused CMS-to-ICE sharing after January oversharing (incl. a Minnesota refugee dataset with citizens and the 7 Jan dataset on millions); ICE shared with Palantir (ELITE) via Teams chat per DAG Anna Rich declaration; Palantir: dataset 'purged pursuant to government instruction'; CMS re-shared the January file by mistake; half a dozen users still held copies; Briseno: 'technological difficulties'; DOJ sought to widen shareable class",
+     "strength": "reported",
+     "sources": [
+      "de24b_npr_medicaid"
+     ]
+    },
+    {
+     "text": "Courthouse News 3 Sep 2026: at a hearing Chhabria narrowed whose Medicaid data may go to ICE without formal ruling: valid visa holders' data should not be shared; skeptical on DACA/TPS; 'I think we need to go category by category'; ICE policy allows use for 'any and all law enforcement activities'",
+     "strength": "reported",
+     "sources": [
+      "de24b_chn_medicaid"
+     ]
+    },
+    {
+     "text": "TANF: Chief Judge Boasberg (D.D.C.) denied PI 28 Sep 2026 to two dozen states plus DC; HHS notice (effective 30 Sep) allows disclosure of TANF recipient information to federal, state or private entities including DHS, to verify immigration status; 'vague, unsubstantiated predictions'; DHS has not said it plans enforcement use",
+     "strength": "reported",
+     "sources": [
+      "de24b_bl_tanf"
+     ]
+    },
+    {
+     "text": "The Work Number (Equifax Workforce Solutions) collects data from employers and payroll processors; government agencies use it for public-assistance eligibility and child-support enforcement",
+     "strength": "primary",
+     "sources": [
+      "de24b_cfpb_twn"
+     ]
+    },
+    {
+     "text": "Warren, Wyden, Sanders (letter 2 Feb, release 3 Feb 2026): about half of states use The Work Number; per-query price increases (Colorado 126%, Kansas 120%, North Carolina 95%); Equifax called the OBBBA work requirements 'a big positive' (via NYT); government segment as large as $5bn; Arkansas 2018 work requirement: ~18,000 lost coverage in under a year; CFPB fined Equifax $15m Jan 2025 over credit-report errors",
+     "strength": "primary",
+     "sources": [
+      "de24b_warren_equifax",
+      "de24b_warren_letter"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24b_gao_21183",
+     "url": "https://www.gao.gov/products/GAO-21-183",
+     "label": "GAO, GAO-21-183, 'Federal Low-Income Programs: Use of Data to Verify Eligibility Varies Among Selected Programs and Opportunities Exist to Promote Additional Use', 25 February 2021"
+    },
+    {
+     "key": "de24b_npr_snap27",
+     "url": "https://www.kjzz.org/npr-top-stories/2025-10-16/at-least-27-states-turned-over-sensitive-data-about-food-stamp-recipients-to-usda",
+     "label": "NPR via KJZZ, 'At least 27 states turned over sensitive data about food stamp recipients to USDA', 16 October 2025"
+    },
+    {
+     "key": "de24b_wcax_snap",
+     "url": "https://www.wcax.com/2026/02/14/judge-says-shell-rule-us-still-cannot-force-states-provide-data-snap-recipients/",
+     "label": "AP via WCAX, 'Judge says she'll rule US still cannot force states to provide data on SNAP recipients', 14 February 2026"
+    },
+    {
+     "key": "de24b_bl_snapfeb",
+     "url": "https://news.bloomberglaw.com/litigation/states-win-expanded-order-blocking-usda-demand-for-snap-data",
+     "label": "Bloomberg Law, 'States Win Expanded Order Blocking USDA Demand for SNAP Data', 26 February 2026"
+    },
+    {
+     "key": "de24b_npr_medicaid",
+     "url": "https://www.michiganpublic.org/2026-07-17/ice-shared-medicaid-data-it-wasnt-supposed-to-have-with-palantir",
+     "label": "Jude Joffe-Block, NPR via Michigan Public, 'ICE shared Medicaid data it wasn't supposed to have with Palantir', 17 July 2026 (updated 18 July)"
+    },
+    {
+     "key": "de24b_chn_medicaid",
+     "url": "https://courthousenews.com/judge-limits-ice-reach-for-immigrant-data/",
+     "label": "Courthouse News Service, 'Judge limits ICE reach for immigrant data', 3 September 2026"
+    },
+    {
+     "key": "de24b_bl_tanf",
+     "url": "https://news.bloomberglaw.com/us-law-week/states-lose-bid-to-block-information-sharing-on-aid-recipients",
+     "label": "Bloomberg Law, 'States Lose Bid to Block Information Sharing on Aid Recipients', 28 September 2026"
+    },
+    {
+     "key": "de24b_cfpb_twn",
+     "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/work-number/",
+     "label": "Consumer Financial Protection Bureau, consumer reporting companies list: 'The Work Number' (Equifax Workforce Solutions)"
+    },
+    {
+     "key": "de24b_warren_equifax",
+     "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-wyden-sanders-announce-new-investigation-into-equifaxs-plan-to-profit-from-trumps-so-called-work-requirements-in-medicaid-snap",
+     "label": "Sen. Elizabeth Warren, press release, 'Warren, Wyden, Sanders announce new investigation into Equifax's plan to profit from ... work requirements in Medicaid, SNAP', 3 February 2026"
+    },
+    {
+     "key": "de24b_warren_letter",
+     "url": "https://www.warren.senate.gov/imo/media/doc/final_-_warren_wyden_letter_to_equifax_on_plan_to_profit_from_big_beautiful_bill.pdf",
+     "label": "Sens. Warren, Wyden and Sanders, letter to Equifax CEO Mark Begor, 2 February 2026"
+    }
+   ]
+  },
+  {
+   "id": "de24b_schools",
+   "stage": "de24b",
+   "topic": "School and student records: FERPA, ed-tech monitoring, SLDS, FAFSA, SEVIS",
+   "claims": [
+    {
+     "text": "Law enforcement unit records (created and maintained by a school's law-enforcement unit for law-enforcement purposes) are excluded from FERPA's definition of education records; release governed by school policy and state law; schools advised to keep them separate",
+     "strength": "primary",
+     "sources": [
+      "de24b_ed_leu"
+     ]
+    },
+    {
+     "text": "Surveillance video created and maintained by a law-enforcement unit for a law-enforcement purpose is not an education record; a copy shared with another school component may become one",
+     "strength": "primary",
+     "sources": [
+      "de24b_ed_video"
+     ]
+    },
+    {
+     "text": "AP/Seattle Times (Mar 2025): ~1,500 districts use Gaggle (others: GoGuardian, Securly); records request returned nearly 3,500 unredacted student documents with no password; at least six students potentially outed; RAND 2023 'scant evidence' of benefits or risks; Gaggle now requires login after 72 hours",
+     "strength": "reported",
+     "sources": [
+      "de24b_ap_gaggle"
+     ]
+    },
+    {
+     "text": "Lawrence, Kansas: nine current and former students sued in federal court (Aug 2025) alleging First Amendment and search violations from Gaggle; AP analysis: >1,200 incidents in 10 months, nearly two-thirds non-issues, >200 homework false alarms",
+     "strength": "reported",
+     "sources": [
+      "de24b_ljw_lawrence"
+     ]
+    },
+    {
+     "text": "SLDS grant program authorized by the Educational Technical Assistance Act of 2002; first awards Nov 2005; grants up to $20m each; systems span early learning through workforce (P-20W) and hold individual student records",
+     "strength": "primary",
+     "sources": [
+      "de24b_nces_slds"
+     ]
+    },
+    {
+     "text": "Over 1,800 international students had SEVIS records terminated or visas revoked by 25 Apr 2025, many after NCIC criminal-history checks; at a court hearing that day DOJ said records would be reactivated pending a new ICE framework; NAFSA: rationale 'ranged from wholly absent, to conflicting, to downright baseless'",
+     "strength": "reported",
+     "sources": [
+      "de24b_pie_sevis"
+     ]
+    },
+    {
+     "text": "NASFAA (May 2025): no documented FAFSA data sharing with DHS; experts note FSA accounts hold identity and address data; NASFAA advised telling families filing adds risk",
+     "strength": "reported",
+     "sources": [
+      "de24b_nasfaa_fafsa"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24b_ed_leu",
+     "url": "https://studentprivacy.ed.gov/faq/what-law-enforcement-unit-record",
+     "label": "US Department of Education, Student Privacy Policy Office, FAQ 'What is a law enforcement unit record?'"
+    },
+    {
+     "key": "de24b_ed_video",
+     "url": "https://studentprivacy.ed.gov/faq/when-photo-or-video-student-education-record-under-ferpa",
+     "label": "US Department of Education, Student Privacy Policy Office, FAQ 'When is a photo or video of a student an education record under FERPA?'"
+    },
+    {
+     "key": "de24b_ap_gaggle",
+     "url": "https://www.inkl.com/news/takeaways-from-our-investigation-on-ai-powered-school-surveillance",
+     "label": "AP (with The Seattle Times) via inkl, 'Takeaways from our investigation on AI-powered school surveillance', March 2025"
+    },
+    {
+     "key": "de24b_ljw_lawrence",
+     "url": "https://www2.ljworld.com/news/schools/2025/aug/07/lawrence-school-district-sued-in-federal-court-for-use-of-ai-powered-surveillance-system-students-claim-gaggle-results-in-illegal-searches/",
+     "label": "Lawrence Journal-World, 'Lawrence school district sued in federal court for use of AI-powered surveillance system', 7 August 2025"
+    },
+    {
+     "key": "de24b_nces_slds",
+     "url": "https://nces.ed.gov/programs/slds/about_slds.asp",
+     "label": "National Center for Education Statistics, 'About the SLDS Grant Program'"
+    },
+    {
+     "key": "de24b_pie_sevis",
+     "url": "https://thepienews.com/trump-administration-reverses-termination-of-student-visas/",
+     "label": "The PIE News, 'Trump administration reverses termination of student visas', 25 April 2025"
+    },
+    {
+     "key": "de24b_nasfaa_fafsa",
+     "url": "https://www.nasfaa.org/news-item/36216/Can_the_Trump_Admin_Use_FAFSA_Data_for_Immigration_Enforcement",
+     "label": "NASFAA (reprinting Inside Higher Ed reporting), 'Can the Trump Admin Use FAFSA Data for Immigration Enforcement?', 5 May 2025"
+    }
+   ]
+  },
+  {
+   "id": "de24b_work",
+   "stage": "de24b",
+   "topic": "Work and vetting: E-Verify, NBIS continuous vetting, Army PDE, FCRA screening, clearance revocations",
+   "claims": [
+    {
+     "text": "E-Verify (USCIS) checks Form I-9 information against SSA and/or DHS records; created by IIRIRA 1996 as the Basic Pilot; generally voluntary but required for covered federal contractors and by some state laws",
+     "strength": "primary",
+     "sources": [
+      "de24b_ev_manual"
+     ]
+    },
+    {
+     "text": "GAO-26-108838 (24 Feb 2026): NBIS for most agencies and >13,000 industry organisations; DCSA ~2m investigations a year; $2.4bn spent FY2017-FY2024 on NBIS and legacy systems, $2.2bn projected FY2025-2031; continuous vetting alerts needing review rose from ~30,000 a quarter (FY2023) to >100,000 (Q3 FY2025); Trusted Workforce 2.0 completion moved to end FY2028",
+     "strength": "primary",
+     "sources": [
+      "de24b_gao_nbis"
+     ]
+    },
+    {
+     "text": "DCSA enrolled all clearance holders in continuous vetting Oct 2021 ('over 3.8 million'); automated checks of criminal, terrorism and financial databases and public records; rollout to non-sensitive public-trust workforce from 2024 (criminal records first; financial later; social media not currently)",
+     "strength": "reported",
+     "sources": [
+      "de24b_bu_cv"
+     ]
+    },
+    {
+     "text": "Army order W519TC26F0058 to Palantir USG, 16 Mar 2026, $3,676,521.71, to support the Personnel Data Environment, period 16 Mar-15 Nov 2026, under the Army Consolidated Enterprise Agreement",
+     "strength": "primary",
+     "sources": [
+      "de24b_govly_pde"
+     ]
+    },
+    {
+     "text": "CFPB Circular 2024-06 (24 Oct 2024): third-party background dossiers and algorithmic worker scores (incl. keystroke monitoring, predicted union activity) used for employment decisions are often FCRA consumer reports; withdrawn among 67 guidance documents by FR notice 12 May 2025 as non-binding; FCRA itself unchanged",
+     "strength": "primary",
+     "sources": [
+      "de24b_cfpb_circ",
+      "de24b_cs_withdraw"
+     ]
+    },
+    {
+     "text": "DNI Gabbard revoked clearances of at least 37 current and former officials (memo 18 Aug, announced 19 Aug 2025), citing 'politicization or weaponization of intelligence'; memo reportedly cited no specific evidence; 'a privilege, not a right'",
+     "strength": "reported",
+     "sources": [
+      "de24b_kvia_gabbard"
+     ]
+    },
+    {
+     "text": "Law-firm EOs (Perkins Coie, Susman Godfrey, WilmerHale, Jenner & Block) restricted clearances and building access; four district judges found them unconstitutional; DOJ moved to drop then revived appeal; D.C. Circuit argument 14 May 2026; at least nine other firms settled with pro bono pledges",
+     "strength": "reported",
+     "sources": [
+      "de24b_gma_lawfirms"
+     ]
+    },
+    {
+     "text": "E-Verify mismatch: Form I-9 data does not match DHS and/or SSA records; 'does not necessarily mean that you are not authorized to work'; employee must tell employer by the 10th federal working day whether to take action; if no response the employer may close the case",
+     "strength": "primary",
+     "sources": [
+      "de24b_ev_tnc"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24b_ev_manual",
+     "url": "https://e-verify.gov/e-verify-user-manual-for-corporate-administrators-10-introduction/11-background-and-overview",
+     "label": "USCIS, E-Verify User Manual for Corporate Administrators, 1.1 'Background and Overview'"
+    },
+    {
+     "key": "de24b_gao_nbis",
+     "url": "https://files.gao.gov/reports/GAO-26-108838/index.html",
+     "label": "GAO, GAO-26-108838, 'Personnel Vetting: Leadership Attention Needed to Prioritize System Development and Achieve Reforms', testimony, 24 February 2026"
+    },
+    {
+     "key": "de24b_bu_cv",
+     "url": "https://www.biometricupdate.com/202409/dcsa-rolls-out-continuous-vetting-for-non-sensitive-federal-workforce",
+     "label": "Anthony Kimery, Biometric Update, 'DCSA rolls out continuous vetting for non-sensitive federal workforce', 6 September 2024"
+    },
+    {
+     "key": "de24b_govly_pde",
+     "url": "https://app.govly.com/public/awards/CONT_AWD_W519TC26F0058_9700_W519TC25D0039_9700",
+     "label": "Govly (FPDS mirror), award W519TC26F0058 to Palantir USG Inc., Personnel Data Environment, 16 March 2026"
+    },
+    {
+     "key": "de24b_cfpb_circ",
+     "url": "https://www.consumerfinance.gov/compliance/circulars/consumer-financial-protection-circular-2024-06-background-dossiers-and-algorithmic-scores-for-hiring-promotion-and-other-employment-decisions/",
+     "label": "CFPB, Consumer Financial Protection Circular 2024-06, 'Background Dossiers and Algorithmic Scores for Hiring, Promotion, and Other Employment Decisions', 24 October 2024"
+    },
+    {
+     "key": "de24b_cs_withdraw",
+     "url": "https://www.clearstar.net/?p=6259",
+     "label": "ClearStar, 'CFPB Withdraws Several Guidance Documents for FCRA and Consumer Reporting Agencies', May 2025 (on the Federal Register notice of 12 May 2025)"
+    },
+    {
+     "key": "de24b_kvia_gabbard",
+     "url": "https://kvia.com/news/2025/08/19/tulsi-gabbard-revokes-security-clearances-of-37-current-and-former-national-security-officials/",
+     "label": "CNN via KVIA, 'Tulsi Gabbard revokes security clearances of 37 current and former national security officials', 19 August 2025"
+    },
+    {
+     "key": "de24b_gma_lawfirms",
+     "url": "https://www.goodmorningamerica.com/news/story/appeals-court-hear-arguments-trumps-orders-sought-punish-132934892",
+     "label": "ABC News via Good Morning America, 'Appeals court to hear arguments on Trump's orders that sought to punish law firms', 14 May 2026"
+    },
+    {
+     "key": "de24b_ev_tnc",
+     "url": "https://e-verify.gov/employees/tentative-nonconfirmation-tnc-overview",
+     "label": "USCIS, E-Verify, 'Tentative Nonconfirmation (Mismatch) Overview' (employees)"
+    }
+   ]
+  },
+  {
+   "id": "de24b_money",
+   "stage": "de24b",
+   "topic": "Credit and money records: FCRA government access, Treasury Offset, Do Not Pay/EO 14249, FinCEN border GTO",
+   "claims": [
+    {
+     "text": "FCRA 15 U.S.C. 1681f: notwithstanding 1681b, a consumer reporting agency may furnish to a governmental agency identifying information (name, current and former addresses, current and former places of employment)",
+     "strength": "primary",
+     "sources": [
+      "de24b_justia_1681f"
+     ]
+    },
+    {
+     "text": "TOP (Bureau of the Fiscal Service) offsets federal payments for delinquent federal nontax debt (generally >120 days), child support and some state debts: tax refunds up to 100%, Social Security up to 15% (not SSI/disability), federal salaries up to 15%, vendor payments up to 100%; FPLP+TOP collected $7.3bn (FY2017) to $10.4bn (FY2020); debtor notified at least 60 days before referral with rights to pay, agree or dispute; payee notified after offset",
+     "strength": "primary",
+     "sources": [
+      "de24b_crs_top",
+      "de24b_fs_top"
+     ]
+    },
+    {
+     "text": "EO 14249 (25 Mar 2025): Treasury pre-certification verification of payments, Do Not Pay (31 U.S.C. 3351), 'minimize administrative barriers to accessing and using data', possible waiver of Privacy Act matching requirements, agencies to update SORNs to disclose to Treasury; excludes data 'such as health records'",
+     "strength": "primary",
+     "sources": [
+      "de24b_eo14249"
+     ]
+    },
+    {
+     "text": "OMB M-25-32 (20 Aug 2025): Do Not Pay 'has had limited impact'; agencies to add routine uses for disclosure to Treasury and may use a four-year matching-agreement waiver; safeguards: written agreements, FR notice with 30-day comment, independent verification, notice and right to contest",
+     "strength": "primary",
+     "sources": [
+      "de24b_omb_m2532"
+     ]
+    },
+    {
+     "text": "FinCEN GTO of 11 Mar 2025 required MSBs in 30 ZIP codes in Texas and California to file CTRs for cash transactions of $200-$10,000; Ninth Circuit (No. 25-4238, 13 Jul 2026) affirmed a PI in S.D. Cal. on APA grounds (likely a rule needing notice and comment; costs not considered); businesses lost 50-60% of customers in the week it applied",
+     "strength": "reported",
+     "sources": [
+      "de24b_orrick_gto"
+     ]
+    },
+    {
+     "text": "FinCEN reissued the GTO 2 Sep 2026: $1,000-$10,000 threshold, ZIP codes in New Mexico (Bernalillo, Doña Ana, San Juan) and Texas (Cameron, El Paso, Hidalgo, Maverick, Webb); Arizona and California removed; through 1 Mar 2027; ID verification required; Texas injunction limited to association members",
+     "strength": "reported",
+     "sources": [
+      "de24b_mofo_gto"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24b_justia_1681f",
+     "url": "https://law.justia.com/codes/us/2020/title-15/chapter-41/subchapter-iii/sec-1681f/",
+     "label": "15 U.S.C. 1681f, 'Disclosures to governmental agencies' (Fair Credit Reporting Act), via Justia"
+    },
+    {
+     "key": "de24b_crs_top",
+     "url": "https://www.everycrsreport.com/reports/IF11671.html",
+     "label": "Congressional Research Service, IF11671, 'Overview of the Treasury Department's Federal Payment Levy and Treasury Offset Programs', updated 7 April 2023"
+    },
+    {
+     "key": "de24b_fs_top",
+     "url": "https://fiscal.treasury.gov/debt-management/treasury-offset-program-top/how-top-works",
+     "label": "Bureau of the Fiscal Service, 'How TOP Works'"
+    },
+    {
+     "key": "de24b_eo14249",
+     "url": "https://www.govinfo.gov/content/pkg/DCPD-202500398/html/DCPD-202500398.htm",
+     "label": "Executive Order 14249, 'Protecting America's Bank Account Against Fraud, Waste, and Abuse', 25 March 2025 (DCPD-202500398)"
+    },
+    {
+     "key": "de24b_omb_m2532",
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2025/08/M-25-32-Preventing-Improper-Payments-and-Protecting-Privacy-Through-Do-Not-Pay.pdf",
+     "label": "OMB Memorandum M-25-32, 'Preventing Improper Payments and Protecting Privacy Through Do Not Pay', 20 August 2025"
+    },
+    {
+     "key": "de24b_orrick_gto",
+     "url": "https://infobytes.orrick.com/2026-07-17/ninth-circuit-affirms-preliminary-injunction-of-fincens-reporting-order-for-businesses-along-the-southern-border/",
+     "label": "Orrick InfoBytes, 'Ninth Circuit affirms preliminary injunction of FinCEN's reporting order for businesses along the southern border', 17 July 2026"
+    },
+    {
+     "key": "de24b_mofo_gto",
+     "url": "https://www.mofo.com/resources/insights/260911-fincen-reissues-geographic-targeting-order",
+     "label": "Morrison Foerster, 'FinCEN Reissues Geographic Targeting Order for Money Services Businesses Along the Southwest Border', 11 September 2026"
+    }
+   ]
+  }
+ ]
+}

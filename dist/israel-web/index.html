@@ -7172,7 +7172,7 @@ body.book-open #libBanner{display:none}
   function goTo(id){
     var w = where[id], sid = secOf[id] || id;
     if(w){ hidePop(); hideAll(); if(w[0] !== curBook || w[1] !== curCh || view.classList.contains('lib')){ openReader(w[0], w[1], sid); } else { jumpTo(sid, true); } onScroll(); }
-    else if(/^[a-z]{2}\d+_/.test(id)) toast('That part is still being written');
+    else if(/^[a-z]{2}\d+[a-z]?_/.test(id)) toast('That part is still being written');
     else closeBook(id);
   }
 

@@ -1,0 +1,726 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de24_reid",
+   "stage": "de24",
+   "topic": "Re-identification of 'anonymous' data: studies and documented cases",
+   "claims": [
+    {
+     "text": "Sweeney (2000) estimated 87% (216m of 248m) of the US population likely unique on 5-digit ZIP, gender and date of birth, using 1990 Census data; county+gender+DOB 18%; she bought the Cambridge, Mass. voter list for $20",
+     "strength": "primary",
+     "sources": [
+      "de24_sweeney_2000"
+     ]
+    },
+    {
+     "text": "Golle recomputed on 2000 Census: 63% uniquely identified by gender, ZIP, full DOB; 'generally agree' with Sweeney but fewer",
+     "strength": "primary",
+     "sources": [
+      "de24_golle_2006"
+     ]
+    },
+    {
+     "text": "Sweeney in 1997 identified Massachusetts Governor Bill Weld's medical records using publicly accessible records",
+     "strength": "reported",
+     "sources": [
+      "de24_wiki_sweeney"
+     ]
+    },
+    {
+     "text": "de Montjoye et al. 2013: 15 months of mobility data for 1.5 million people; four spatio-temporal points uniquely identify 95%; uniqueness decays only as ~1/10 power of resolution",
+     "strength": "primary",
+     "sources": [
+      "de24_demontjoye_2013"
+     ]
+    },
+    {
+     "text": "de Montjoye et al. 2015 (Science): 3 months of credit-card records for 1.1 million people; four spatiotemporal points reidentify 90%; price raises risk 22% on average; women more reidentifiable",
+     "strength": "primary",
+     "sources": [
+      "de24_demontjoye_2015"
+     ]
+    },
+    {
+     "text": "Rocher, Hendrickx, de Montjoye 2019: 99.98% of Americans would be correctly re-identified in any dataset using 15 demographic attributes",
+     "strength": "primary",
+     "sources": [
+      "de24_rocher_2019"
+     ]
+    },
+    {
+     "text": "Narayanan and Shmatikov: Netflix Prize data on ~500,000 subscribers; with 8 ratings (2 may be wrong) and dates within 14 days, 99% of records uniquely identified; 2 ratings with dates within 3 days suffice for 68%; IMDb cross-match revealed apparent political preferences",
+     "strength": "primary",
+     "sources": [
+      "de24_netflix_2006"
+     ]
+    },
+    {
+     "text": "NYT Dec 2018: at least 75 companies receive anonymous, precise location data from apps; several claim up to 200 million US devices; locations as often as every two seconds; teacher Lisa Magrin identified; industry says data tied to unique ID not name",
+     "strength": "reported",
+     "sources": [
+      "de24_nyt_2018"
+     ]
+    },
+    {
+     "text": "NYT Opinion 19 Dec 2019: one file of more than 50 billion pings from 12 million+ phones, 2016-17, Washington/NY/SF/LA; traced a senior DoD official and others; 'child's play to connect real names to the dots'; Paul Ohm: precise longitudinal geolocation 'absolutely impossible to anonymize'",
+     "strength": "reported",
+     "sources": [
+      "de24_nyt_2019"
+     ]
+    },
+    {
+     "text": "The Pillar bought 'commercially available' location data from an unnamed vendor (2018-2020) and matched it to Msgr Jeffrey Burrill's phone and Grindr use; he resigned July 2021; Grindr called it a 'witch hunt' and said it did not believe it was the source",
+     "strength": "reported",
+     "sources": [
+      "de24_ap_pillar"
+     ]
+    },
+    {
+     "text": "FTC Office of Technology (July 2024): 'hashes aren't anonymous'; a hash 'still creates a unique signature that can track a person or device over time'; data is anonymous only when it 'can never be associated back to a person'; cases Nomi 2015, BetterHelp, Premom 2023, InMarket 2024",
+     "strength": "primary",
+     "sources": [
+      "de24_ftc_hashing"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24_sweeney_2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "label": "Latanya Sweeney, 'Simple Demographics Often Identify People Uniquely', Carnegie Mellon University, Data Privacy Working Paper 3, 2000"
+    },
+    {
+     "key": "de24_golle_2006",
+     "url": "https://crypto.stanford.edu/~pgolle/papers/census.html",
+     "label": "Philippe Golle, 'Revisiting the Uniqueness of Simple Demographics in the US Population' (2006), abstract"
+    },
+    {
+     "key": "de24_wiki_sweeney",
+     "url": "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+     "label": "Wikipedia, 'Latanya Sweeney' (1997 Weld re-identification)"
+    },
+    {
+     "key": "de24_demontjoye_2013",
+     "url": "https://dspace.mit.edu/handle/1721.1/88233?show=full",
+     "label": "Y.-A. de Montjoye, C. A. Hidalgo, M. Verleysen, V. D. Blondel, 'Unique in the Crowd: The privacy bounds of human mobility', Scientific Reports, March 2013 (MIT DSpace record)"
+    },
+    {
+     "key": "de24_demontjoye_2015",
+     "url": "https://dspace.mit.edu/handle/1721.1/96321",
+     "label": "Y.-A. de Montjoye, L. Radaelli, V. K. Singh, A. Pentland, 'Unique in the shopping mall: On the reidentifiability of credit card metadata', Science 347 (6221), January 2015 (MIT DSpace record)"
+    },
+    {
+     "key": "de24_rocher_2019",
+     "url": "https://spiral.imperial.ac.uk/entities/publication/c2c69dc9-aa21-45e6-a107-42b20300a205",
+     "label": "L. Rocher, J. Hendrickx, Y.-A. de Montjoye, 'Estimating the success of re-identifications in incomplete datasets using generative models', Nature Communications 10, 23 July 2019 (Imperial Spiral record)"
+    },
+    {
+     "key": "de24_netflix_2006",
+     "url": "https://arxiv.org/pdf/cs/0610105",
+     "label": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' / 'Robust De-anonymization of Large Sparse Datasets', arXiv cs/0610105 (2006; IEEE S&P 2008)"
+    },
+    {
+     "key": "de24_nyt_2018",
+     "url": "https://www.pressdemocrat.com/article/news/your-apps-know-where-you-were-last-night-and-theyre-not-keeping-it-secret/",
+     "label": "Jennifer Valentino-DeVries, Natasha Singer, Michael H. Keller, Aaron Krolik, The New York Times, 'Your Apps Know Where You Were Last Night, and They're Not Keeping It Secret', 10 December 2018 (syndicated text)"
+    },
+    {
+     "key": "de24_nyt_2019",
+     "url": "https://socialethical.cs.unm.edu/readings/one_nation_tracked.pdf",
+     "label": "Stuart A. Thompson and Charlie Warzel, The New York Times Opinion (Privacy Project), 'Twelve Million Phones, One Dataset, Zero Privacy', 19 December 2019 (PDF copy)"
+    },
+    {
+     "key": "de24_ap_pillar",
+     "url": "https://www.clickondetroit.com/business/2021/07/22/priest-outed-via-grindr-app-highlights-rampant-data-tracking/",
+     "label": "Matt O'Brien and Frank Bajak, AP, 'Priest outed via Grindr app highlights rampant data tracking', 22 July 2021"
+    },
+    {
+     "key": "de24_ftc_hashing",
+     "url": "https://ftc.gov/policy/advocacy-research/tech-at-ftc/2024/07/no-hashing-still-doesnt-make-your-data-anonymous",
+     "label": "FTC Office of Technology, 'No, hashing still doesn't make your data anonymous', 24 July 2024"
+    }
+   ]
+  },
+  {
+   "id": "de24_fusion",
+   "stage": "de24",
+   "topic": "Brokers, fusion centres, ALPR, government data reuse, HART",
+   "claims": [
+    {
+     "text": "Flock paused pilots with CBP and HSI on 25 Aug 2025 after Illinois SoS audit found CBP accessed Illinois plate data in violation of state law; cameras in 4,000+ communities; Langley: 'We clearly communicated poorly'; federal searches now labelled and limited to one-to-one",
+     "strength": "reported",
+     "sources": [
+      "de24_ap_flock"
+     ]
+    },
+    {
+     "text": "Woodburn, Oregon audit: DHS and Border Patrol ran 6,089 searches Jan-Nov 2025 via a Flock trial allowing broad multi-network searches; city ended contract end of April 2026; cameras removed by 13 May; police policy bars immigration use",
+     "strength": "reported",
+     "sources": [
+      "de24_katu_woodburn"
+     ]
+    },
+    {
+     "text": "ALPR errors: Brittney Gilliam family held at gunpoint, Aurora CO, Aug 2020, $1.9m settlement; Denise Green SF 2009 '3' read as '7', $495,000; one study: state misread on 1 in 10 plates",
+     "strength": "reported",
+     "sources": [
+      "de24_eff_alpr"
+     ]
+    },
+    {
+     "text": "LexisNexis contract 70CMSD21C00000001 (Feb 2021, ~$24.51m) gave ICE Accurint/LexID; jail-booking data added 2021; ends 31 Aug 2026; 10 Aug 2026 notice of $6.7m sole-source bridge; work statement requires APIs to 'the Palantir platform', PenLink, ICE Data Analytics; >1.2m Accurint person searches Mar-Sep 2021 (Just Futures Law)",
+     "strength": "reported",
+     "sources": [
+      "de24_bu_lexis"
+     ]
+    },
+    {
+     "text": "Thomson Reuters CLEAR renewed sole-source for DHS from 31 Mar 2026 ('only CLEAR provides the range of law enforcement data'); data listed include utility data, credit bureaus, LPR; LEIDS-5 $22.8m May 2021-May 2026; TR: 'Palantir is not a customer of CLEAR'; 'We do not comment on specific customer contracts'",
+     "strength": "reported",
+     "sources": [
+      "de24_lawnext_tr"
+     ]
+    },
+    {
+     "text": "NCTUE utility header data (names, addresses, SSNs of 170m+ people) licensed to Equifax and sold into CLEAR, used by ICE; revealed Feb 2021; NCTUE told Equifax to stop Oct 2021; Equifax stopped law-enforcement provision 23 Oct 2021 after Wyden pressure",
+     "strength": "reported",
+     "sources": [
+      "de24_globe_utility"
+     ]
+    },
+    {
+     "text": "Senate PSI bipartisan report (2 Oct 2012): DHS fusion-centre intelligence 'oftentimes shoddy, rarely timely'; no unique contribution to disrupting a terror plot shown; DHS spending estimates $289m-$1.4bn since 2003; >70 fusion centres; spending on SUVs, TVs, cell-phone tracking devices",
+     "strength": "primary",
+     "sources": [
+      "de24_psi_fusion"
+     ]
+    },
+    {
+     "text": "Report said fusion centre intelligence was 'sometimes endangering citizens' civil liberties and Privacy Act protections'; 72 centres",
+     "strength": "reported",
+     "sources": [
+      "de24_govexec_fusion"
+     ]
+    },
+    {
+     "text": "SAVE: in May 2025 USCIS linked SSA data; 15 Aug 2025 last-four SSN lookups; free and bulk; 33m+ voters run by Sept 2025; under 1% needed manual review; queries kept 10 years; agreements allow DHS use 'for any purpose permitted by law'; USCIS has not published accuracy testing",
+     "strength": "reported",
+     "sources": [
+      "de24_npr_save"
+     ]
+    },
+    {
+     "text": "GAO-23-105959 (12 Sep 2023): HART meant to replace legacy biometric system holding 290m+ identities; IOC slipped from 31 Dec 2020 to 30 Sep 2023 and further rebaseline needed; costs +$354m; 5 of 12 OMB privacy requirements met; 9 recommendations all open",
+     "strength": "primary",
+     "sources": [
+      "de24_gao_hart"
+     ]
+    },
+    {
+     "text": "Northrop Grumman won $95m contract (announced 27 Feb 2018) for first two increments of HART, using face, fingerprint and iris",
+     "strength": "reported",
+     "sources": [
+      "de24_wt_hart2018"
+     ]
+    },
+    {
+     "text": "Biometric Update 31 Aug 2026: Kyle Schutt, who moved through agencies with DOGE, became acting DHS CIO and OBIM director; HART 'scheduled to reach initial operational capability no later than September 2026'",
+     "strength": "reported",
+     "sources": [
+      "de24_bu_schutt"
+     ]
+    },
+    {
+     "text": "ODNI report on commercially available information (dated Jan 2022, declassified 12 Jun 2023): CAI 'can reveal sensitive and intimate information about individuals'; IC acquires 'significant amount'",
+     "strength": "reported",
+     "sources": [
+      "de24_lawfare_odni"
+     ]
+    },
+    {
+     "text": "California DROP: one deletion request to all registered brokers from 1 Jan 2026; brokers process from 1 Aug 2026 every 45 days; more than 500 registered brokers; broker defined as business selling data a consumer didn't give it directly",
+     "strength": "primary",
+     "sources": [
+      "de24_ca_drop"
+     ]
+    },
+    {
+     "text": "Judge Chhabria (29 Dec 2025, effective 6 Jan 2026): for 20 plaintiff states, HHS may share with ICE only Medicaid data on people unlawfully present and only status, address, phone, DOB, Medicaid ID; health records barred",
+     "strength": "reported",
+     "sources": [
+      "de24_wt_medicaid"
+     ]
+    },
+    {
+     "text": "ICE contract (reported 27 Jan 2018) with West Publishing (Thomson Reuters) in partnership with Vigilant Solutions for access to billions of plate records; ICE: data is 'one tool in support of its investigations'; ICE had cancelled a similar 2014 request over privacy concerns and did a privacy impact assessment",
+     "strength": "reported",
+     "sources": [
+      "de24_upi_vigilant"
+     ]
+    },
+    {
+     "text": "In February 2014 DHS Secretary Jeh Johnson ordered cancellation of an ICE solicitation for access to a nationwide licence-plate tracking database, saying it was posted without ICE leadership's awareness, and ordered a review",
+     "strength": "reported",
+     "sources": [
+      "de24_physorg_2014"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24_ap_flock",
+     "url": "https://abc7.com/post/flock-safety-license-plate-camera-company-halts-cooperation-federal-agencies-among-investigation-concerns-including-il/17653876/",
+     "label": "AP via ABC7, 'Flock Safety license plate camera company halts cooperation with federal agencies', 26 August 2025"
+    },
+    {
+     "key": "de24_katu_woodburn",
+     "url": "https://katu.com/news/local/story/audit-confirmed-federal-agencies-accessed-woodburn-flock-safety-camera-network-portland-oregon-immigration-enforcement-department-of-homeland-security",
+     "label": "KATU, 'Audit confirmed federal agencies accessed Woodburn Flock Safety camera network', 26 June 2026"
+    },
+    {
+     "key": "de24_eff_alpr",
+     "url": "https://eff.org/deeplinks/2024/11/human-toll-alpr-errors",
+     "label": "EFF (Gowri Nayar, Adam Schwartz), 'The Human Toll of ALPR Errors', 1 November 2024"
+    },
+    {
+     "key": "de24_bu_lexis",
+     "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+     "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+    },
+    {
+     "key": "de24_lawnext_tr",
+     "url": "https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-1-how-thomson-reuters-and-lexisnexis-helped-support-americas-immigration-surveillance-machine.html",
+     "label": "Bob Ambrogi, LawSites, 'The legal tech giants powering ICE, part 1: Thomson Reuters and LexisNexis', 27 April 2026"
+    },
+    {
+     "key": "de24_globe_utility",
+     "url": "https://www.bostonglobe.com/2021/12/08/nation/utility-giants-agree-no-longer-share-sensitive-records-ice-used-track-public",
+     "label": "The Washington Post via The Boston Globe, 'Utility giants agree to no longer share sensitive records ICE used to track the public', 8 December 2021"
+    },
+    {
+     "key": "de24_psi_fusion",
+     "url": "https://www.hsgac.senate.gov/subcommittees/investigations/rep/investigative-report-criticizes-counterterrorism-reporting-waste-at-state-local-intelligence-fusion-centers/",
+     "label": "US Senate Permanent Subcommittee on Investigations, 'Investigative Report Criticizes Counterterrorism Reporting, Waste at State & Local Intelligence Fusion Centers', press release, 2 October 2012"
+    },
+    {
+     "key": "de24_govexec_fusion",
+     "url": "https://www.govexec.com/defense/2012/10/homeland-securitys-fusion-centers-lambasted-senate-report/58535",
+     "label": "Government Executive, 'Homeland Security's fusion centers lambasted in Senate report', October 2012"
+    },
+    {
+     "key": "de24_npr_save",
+     "url": "https://www.wfae.org/politics/2025-09-10/33-million-voters-have-been-run-through-a-trump-administration-citizenship-check",
+     "label": "Jude Joffe-Block and Miles Parks, NPR (via WFAE), '33 million voters have been run through a Trump administration citizenship check', 10 September 2025"
+    },
+    {
+     "key": "de24_gao_hart",
+     "url": "https://www.gao.gov/products/gao-23-105959",
+     "label": "GAO-23-105959, 'Biometric Identity System: DHS Needs to Address Significant Shortcomings in Program Management and Privacy', 12 September 2023"
+    },
+    {
+     "key": "de24_wt_hart2018",
+     "url": "https://washingtontechnology.com/Articles/2018/02/27/Northrop-DHS-Biometrics.aspx",
+     "label": "Washington Technology, 'Northrop wins DHS biometrics contract', 27 February 2018"
+    },
+    {
+     "key": "de24_bu_schutt",
+     "url": "https://www.biometricupdate.com/202608/doge-technologist-takes-over-dhs-biometric-identity-office-overseeing-ident-hart",
+     "label": "Biometric Update, 'DOGE technologist takes over DHS biometric identity office overseeing IDENT, HART', 31 August 2026"
+    },
+    {
+     "key": "de24_lawfare_odni",
+     "url": "https://www.lawfaremedia.org/article/odni-report-reveals-significant-privacy-concerns-for-u.s.-citizens",
+     "label": "Lawfare, 'ODNI Report Reveals Significant Privacy Concerns for U.S. Citizens', 13 June 2023"
+    },
+    {
+     "key": "de24_ca_drop",
+     "url": "https://privacy.ca.gov/2025/12/january-2026-drop-is-coming/",
+     "label": "California Privacy Protection Agency, 'January 2026: DROP is coming', December 2025"
+    },
+    {
+     "key": "de24_wt_medicaid",
+     "url": "https://m.washingtontimes.com/news/2025/dec/30/judge-rules-ice-obtain-medicaid-data/",
+     "label": "The Washington Times, 'Judge rules ICE can obtain some Medicaid data', 30 December 2025"
+    },
+    {
+     "key": "de24_upi_vigilant",
+     "url": "https://www.upi.com/Top_News/US/2018/01/27/New-contract-lets-ICE-track-license-plates-across-US/5871517078605/",
+     "label": "UPI, 'New contract lets ICE track license plates across U.S.', 27 January 2018"
+    },
+    {
+     "key": "de24_physorg_2014",
+     "url": "https://phys.org/news/2014-02-govt-cancels-plate.html",
+     "label": "AP via Phys.org, 'Gov't cancels plan to collect license plate data', February 2014"
+    }
+   ]
+  },
+  {
+   "id": "de24_apps",
+   "stage": "de24",
+   "topic": "What apps and AI companies collect; cases judged by what changed; commerce data",
+   "claims": [
+    {
+     "text": "OpenAI H2 2025: 224 non-content requests (data in 146, 307 accounts); 75 content requests (data in 62, 84 accounts); 10 emergency (1); US national security 0-249",
+     "strength": "primary",
+     "sources": [
+      "de24_openai_tr"
+     ]
+    },
+    {
+     "text": "OpenAI policy: subpoena, court order or warrant for non-content; warrant for content; notice to user unless prohibited; emergency disclosure; preservation 90+90 days under 18 USC 2703(f)",
+     "strength": "primary",
+     "sources": [
+      "de24_openai_lep"
+     ]
+    },
+    {
+     "text": "Anthropic H2 2025: 2 content requests (8 accounts, data in 2); 20 non-content (55 accounts, data in 7); 0 emergency; 7 preservation; national security 0-99 (2024)",
+     "strength": "primary",
+     "sources": [
+      "de24_anthropic_tr"
+     ]
+    },
+    {
+     "text": "Anthropic (28 Aug 2025): Free, Pro and Max users to choose by 28 Sept 2025 whether chats train models; opted-in data kept five years vs 30 days; commercial plans excluded",
+     "strength": "reported",
+     "sources": [
+      "de24_macrumors_anth"
+     ]
+    },
+    {
+     "text": "ChatGPT trains on Free/Plus/Pro prompts and uploads by default; opt-out 'Improve the model for everyone'; Temporary Chat copies kept up to 30 days; Enterprise/Business/API off by default",
+     "strength": "reported",
+     "sources": [
+      "de24_kaspersky_openai"
+     ]
+    },
+    {
+     "text": "Gemini: human-reviewed chats kept up to three years and not deleted with activity; with Keep Activity off chats kept 72 hours; default auto-delete 18 months; general location always collected from IP or saved addresses",
+     "strength": "primary",
+     "sources": [
+      "de24_gemini_hub"
+     ]
+    },
+    {
+     "text": "Meta (announced 1 Oct 2025, effective 16 Dec 2025) uses Meta AI interactions to personalise ads and content; no opt-out other than not using; sensitive topics excluded",
+     "strength": "reported",
+     "sources": [
+      "de24_9to5_metaai"
+     ]
+    },
+    {
+     "text": "Perplexity policy (31 Oct 2025): collects prompts, device IDs, approximate location, IP; may use to improve AI models (opt-out); receives data from 'consumer marketing databases or other data enrichment companies' for ads; partners giving free access may send data and receive disclosures; says it does not sell or share under CCPA",
+     "strength": "primary",
+     "sources": [
+      "de24_pplx_policy"
+     ]
+    },
+    {
+     "text": "PayPal release 3 Sep 2025: free 12-month Perplexity Pro 'valued at $200', first-time users, valid through 31 Dec 2025, accounts created by 1 Sep 2025; says nothing about data sharing",
+     "strength": "primary",
+     "sources": [
+      "de24_paypal_pplx"
+     ]
+    },
+    {
+     "text": "Srinivas (TBPN, April 2025): 'We want to get data even outside the app to better understand you'; 'we plan to use all the context to build a better user profile'",
+     "strength": "reported",
+     "sources": [
+      "de24_mb_srinivas"
+     ]
+    },
+    {
+     "text": "NYT v. OpenAI: 13 May 2025 order to preserve 'all output log data that would otherwise be deleted'; obligations ended 26 Sep 2025 (stipulation 9 Oct); Apr-Sep 2025 data held; 2 Dec 2025 reconsideration denied on producing de-identified 20m-log sample (Dec 2022-Nov 2024)",
+     "strength": "reported",
+     "sources": [
+      "de24_itg_nyt"
+     ]
+    },
+    {
+     "text": "Brown v. Google settled 1 Apr 2024: update disclosures, delete past private-browsing records, limit collection five years; no class damages",
+     "strength": "reported",
+     "sources": [
+      "de24_winston_brown"
+     ]
+    },
+    {
+     "text": "Rodriguez v. Google: jury ~$425m (Sept 2025); Seeborg denied $2.36bn disgorgement and permanent injunction (no 'prospective, irreparable harm'); 98m users; Google to appeal",
+     "strength": "reported",
+     "sources": [
+      "de24_mlm_rodriguez"
+     ]
+    },
+    {
+     "text": "Texas-Google $1.375bn agreement in principle 9 May 2025 (location, Incognito, biometrics); no admission; Google: 'product policies we have long since changed'; no injunctive terms described",
+     "strength": "reported",
+     "sources": [
+      "de24_hunton_txgoogle"
+     ]
+    },
+    {
+     "text": "Texas-Meta $1.4bn 30 Jul 2024 under CUBI over Tag Suggestions (Dec 2010-Nov 2021), ended after $650m BIPA settlement",
+     "strength": "reported",
+     "sources": [
+      "de24_bbl_txmeta"
+     ]
+    },
+    {
+     "text": "DOJ-TikTok COPPA $400m (21 Aug 2026): $300m plus $100m when 2019 decree vacated; no injunctive relief; no determination of violation",
+     "strength": "reported",
+     "sources": [
+      "de24_hunton_tiktok"
+     ]
+    },
+    {
+     "text": "TikTok US joint venture closed (22 Jan 2026): Oracle, Silver Lake, MGX 45%; ByteDance nearly 20%; algorithm licensed and retrained on US data; Oracle security partner",
+     "strength": "reported",
+     "sources": [
+      "de24_axios_tiktok"
+     ]
+    },
+    {
+     "text": "Muslim Pro (96m+ downloads) sold location data to X-Mode, which sold to military contractors; SOCOM bought access to commercial phone-location products; Apple and Google banned X-Mode Dec 2020",
+     "strength": "reported",
+     "sources": [
+      "de24_vice_xmode"
+     ]
+    },
+    {
+     "text": "Sensor Tower: top-10 US iPhone apps averaged ~2.2GB in May 2021 vs ~550MB in early 2016; TikTok and Instagram ~6x; Gmail ~19x; attributed to new iOS technologies",
+     "strength": "reported",
+     "sources": [
+      "de24_imore_size"
+     ]
+    },
+    {
+     "text": "Meta runs on-device models across Instagram (Cutouts), WhatsApp (bandwidth), Messenger (language ID, under end-to-end encryption), Facebook (SceneX); says this keeps data on devices",
+     "strength": "primary",
+     "sources": [
+      "de24_meta_executorch"
+     ]
+    },
+    {
+     "text": "Meta localhost tracking (from Sept 2024): Facebook/Instagram Android apps listened on local ports; Meta Pixel passed _fbp cookie to the app, linking web visits to the account, bypassing incognito and cookie clearing; researchers at IMDEA, Radboud, KU Leuven; Meta paused 3 June 2025 citing 'miscommunication'",
+     "strength": "reported",
+     "sources": [
+      "de24_reg_localhost"
+     ]
+    },
+    {
+     "text": "Kroger's 84.51 builds loyalty profiles enriched with broker data incl. estimated race/ethnicity, finances, employment; sells insights to brands; policy says shared data 'anonymized and aggregated'",
+     "strength": "reported",
+     "sources": [
+      "de24_npr_kroger"
+     ]
+    },
+    {
+     "text": "FTC staff findings 17 Jan 2025: 6(b) orders to 8 firms (Mastercard, Revionics, Bloomreach, JPMorgan Chase, Task Software, PROS, Accenture, McKinsey) with ~250 clients using location, timing, behaviour to vary prices; Ferguson dissented then as chair closed RFI",
+     "strength": "reported",
+     "sources": [
+      "de24_rb_ftcpricing"
+     ]
+    },
+    {
+     "text": "Target statistician Andrew Pole presented a pregnancy-prediction project at Predictive Analytics World 2010; NYT (Duhigg) Feb 2012; Siegel: link of the father-daughter anecdote to the model unsubstantiated",
+     "strength": "reported",
+     "sources": [
+      "de24_kdn_target"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24_openai_tr",
+     "url": "https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf",
+     "label": "OpenAI, 'Government Requests for User Data', July-December 2025"
+    },
+    {
+     "key": "de24_openai_lep",
+     "url": "https://cdn.openai.com/pdf/openai-law-enforcement-policy-v.2025-12.pdf",
+     "label": "OpenAI, Law Enforcement Policy, version December 2025"
+    },
+    {
+     "key": "de24_anthropic_tr",
+     "url": "https://www-cdn.anthropic.com/5d453bc3285b8e0c101b7193b5765419920cee24.pdf",
+     "label": "Anthropic, Government Requests Report, July-December 2025"
+    },
+    {
+     "key": "de24_macrumors_anth",
+     "url": "https://www.macrumors.com/2025/08/28/anthropic-claude-chat-training",
+     "label": "MacRumors, 'Anthropic Will Now Train Claude on Your Chats, Here's How to Opt Out', 28 August 2025"
+    },
+    {
+     "key": "de24_kaspersky_openai",
+     "url": "https://kaspersky.com/blog/chatgpt-privacy-and-security/",
+     "label": "Kaspersky Daily, on ChatGPT privacy settings, 20 October 2025"
+    },
+    {
+     "key": "de24_gemini_hub",
+     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+     "label": "Google, Gemini Apps Privacy Hub, updated 23 October 2026"
+    },
+    {
+     "key": "de24_9to5_metaai",
+     "url": "https://9to5mac.com/2025/10/01/meta-will-use-your-chats-with-ai-to-sell-hyper-targeted-ads/",
+     "label": "9to5Mac, 'Meta will use your chats with AI to sell hyper-targeted ads', 1 October 2025"
+    },
+    {
+     "key": "de24_pplx_policy",
+     "url": "https://hub-prod.perplexity.ai/hub/legal/privacy-policy",
+     "label": "Perplexity AI, Privacy Policy, last updated 31 October 2025"
+    },
+    {
+     "key": "de24_paypal_pplx",
+     "url": "https://newsroom.paypal-corp.com/2025-09-03-Skip-the-Waitlist-PayPal-and-Venmo-Users-Offered-Early-Access-to-Perplexitys-New-Comet-Browser-with-Free-Perplexity-Pro-Subscription",
+     "label": "PayPal newsroom, 'Skip the Waitlist: PayPal and Venmo Users Offered Early Access to Perplexity's New Comet Browser with Free Perplexity Pro Subscription', 3 September 2025"
+    },
+    {
+     "key": "de24_mb_srinivas",
+     "url": "https://www.malwarebytes.com/blog/news/2025/04/what-privacy-perplexity-wants-your-data-builds-browser-to-track-you-and-serve-ads",
+     "label": "Malwarebytes Labs, 'What privacy? Perplexity wants your data, builds browser to track you and serve ads', 29 April 2025 (quoting Srinivas on TBPN)"
+    },
+    {
+     "key": "de24_itg_nyt",
+     "url": "https://www.itechguides.com/openais-order-to-preserve-deleted-chatgpt-logs-ended-in-2025/",
+     "label": "iTechGuides, 'OpenAI's order to preserve deleted ChatGPT logs ended in 2025' (court record summary)"
+    },
+    {
+     "key": "de24_winston_brown",
+     "url": "https://winston.com/en/blogs-and-podcasts/class-action-insider/google-agrees-to-scrub-users-incognito-browsing-data-but-is-left-with-more-litigation",
+     "label": "Winston & Strawn, Class Action Insider, on Brown v. Google settlement, April 2024"
+    },
+    {
+     "key": "de24_mlm_rodriguez",
+     "url": "https://molawyersmedia.com/2026/02/03/google-blocks-2-billion-privacy-penalty/",
+     "label": "Missouri Lawyers Media, 'Google blocks $2 billion privacy penalty' (Rodriguez v. Google), 3 February 2026"
+    },
+    {
+     "key": "de24_hunton_txgoogle",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/texas-ag-announces-1-375-billion-settlement-with-google-for-privacy-violations",
+     "label": "Hunton Andrews Kurth, 'Texas AG Announces $1.375 Billion Settlement with Google for Privacy Violations', 12 May 2025"
+    },
+    {
+     "key": "de24_bbl_txmeta",
+     "url": "https://www.bytebacklaw.com/2024/07/texas-attorney-general-announces-first-cubi-settlement/",
+     "label": "Byte Back (Husch Blackwell), 'Texas Attorney General Announces First CUBI Settlement', July 2024"
+    },
+    {
+     "key": "de24_hunton_tiktok",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/doj-reaches-400-million-settlement-with-tiktok-over-childrens-privacy-litigation",
+     "label": "Hunton Andrews Kurth, 'DOJ Reaches $400 Million Settlement with TikTok over Children's Privacy Litigation', 24 August 2026"
+    },
+    {
+     "key": "de24_axios_tiktok",
+     "url": "https://axios.com/2026/01/23/tiktok-deal-trump-app-ban",
+     "label": "Axios, on the closing of the TikTok US joint venture, 23 January 2026"
+    },
+    {
+     "key": "de24_vice_xmode",
+     "url": "https://vice.com/en/article/muslim-apps-location-data-military-xmode",
+     "label": "Joseph Cox, Motherboard/VICE, on Muslim prayer apps, X-Mode and military location data, 28 January 2021"
+    },
+    {
+     "key": "de24_imore_size",
+     "url": "https://www.imore.com/top-iphone-apps-use-4x-more-space-they-did-five-years-ago",
+     "label": "iMore (Sensor Tower data), 'Top iPhone apps use 4x more space than they did five years ago', 11 June 2021"
+    },
+    {
+     "key": "de24_meta_executorch",
+     "url": "https://engineering.fb.com/2025/07/28/android/executorch-on-device-ml-meta-family-of-apps/",
+     "label": "Meta Engineering, 'ExecuTorch on-device ML across Meta's family of apps', 28 July 2025"
+    },
+    {
+     "key": "de24_reg_localhost",
+     "url": "https://www.theregister.com/2025/06/03/meta_pauses_android_tracking_tech/",
+     "label": "The Register, 'Meta pauses Android tracking tech' (localhost tracking), 3 June 2025"
+    },
+    {
+     "key": "de24_npr_kroger",
+     "url": "https://www.cfpublic.org/2023-02-22/what-kroger-is-doing-with-data-about-customers-in-its-loyalty-program",
+     "label": "NPR (via Central Florida Public Media), 'What Kroger is doing with data about customers in its loyalty program', 22 February 2023"
+    },
+    {
+     "key": "de24_rb_ftcpricing",
+     "url": "https://www.retailbrew.com/stories/2025/01/24/new-ftc-chair-shuts-down-public-comment-on-retailers-surveillance-pricing",
+     "label": "Retail Brew, 'New FTC chair shuts down public comment on retailers' surveillance pricing', 24 January 2025"
+    },
+    {
+     "key": "de24_kdn_target",
+     "url": "https://www.kdnuggets.com/2014/05/target-predict-teen-pregnancy-inside-story.html",
+     "label": "Eric Siegel, KDnuggets, 'How Target predicted a teen's pregnancy: the inside story', May 2014"
+    }
+   ]
+  },
+  {
+   "id": "de24_joins",
+   "stage": "de24",
+   "topic": "Documented and possible joins between data systems (ecosystem lens)",
+   "claims": [
+    {
+     "text": "CMS sent ICE a 7 Jan 2026 Medicaid dataset covering millions incl. some lawful residents; ICE shared it with Palantir (ELITE) over a Microsoft Teams chat per a California DAG declaration; Palantir: purged 'pursuant to government instruction', customers control data; later six users still held copies; Chhabria paused CMS-ICE sharing late May 2026, August hearing set",
+     "strength": "reported",
+     "sources": [
+      "de24_npr_medicaid_pal"
+     ]
+    },
+    {
+     "text": "Guardian (JFL FOIA documents 2014-2022, mostly HSI): Falcon and ICM gave access to 'a network of federally and privately owned databases'; March 2020 training on searching SEVIS (4.9m records); June 2020 plan to search APIS; Cellebrite phone extractions could be imported; agents encouraged to import from databases not connected to Palantir, incl. CLEAR; Palantir calls itself a 'data processor'",
+     "strength": "reported",
+     "sources": [
+      "de24_guardian_icm"
+     ]
+    },
+    {
+     "text": "Brennan (9 Jul 2026): Palantir's ICE case management system 'structures and links data collected from these vendors and other commercial entities'; being made HSI's 'authoritative data source' with DOJ, CBP and OBIM integrations; ImmigrationOS gathers ICE data into a 'central hub'",
+     "strength": "reported",
+     "sources": [
+      "de24_brennan_consol"
+     ]
+    },
+    {
+     "text": "Palantir Foundry Data Connection provides 'connectivity between Foundry and your systems' with connectors for databases, Facebook, Instagram, Twitter Ads, Microsoft Teams, Slack etc.",
+     "strength": "primary",
+     "sources": [
+      "de24_pal_connectors"
+     ]
+    },
+    {
+     "text": "404 Media (8 Jan 2026): ICE bought access via Penlink to Tangles/Webloc, which can monitor phones in a block and follow devices home; internal ICE legal analysis says the data 'can be queried without a warrant'",
+     "strength": "reported",
+     "sources": [
+      "de24_404_webloc"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24_npr_medicaid_pal",
+     "url": "https://www.tpr.org/2026-07-17/ice-shared-medicaid-data-it-wasnt-supposed-to-have-with-palantir",
+     "label": "NPR (via Texas Public Radio), 'ICE shared Medicaid data it wasn't supposed to have with Palantir', 17 July 2026"
+    },
+    {
+     "key": "de24_guardian_icm",
+     "url": "https://www.inkl.com/news/documents-offer-rare-insight-on-ice-s-close-relationship-with-palantir",
+     "label": "Johana Bhuiyan, The Guardian (syndicated), 'Documents offer rare insight on ICE's close relationship with Palantir', 22 September 2025"
+    },
+    {
+     "key": "de24_brennan_consol",
+     "url": "https://www.brennancenter.org/our-work/research-reports/dangers-trump-administrations-data-consolidation-efforts",
+     "label": "Emile Ayoub, Brennan Center for Justice, 'Dangers of Trump Administration's Data Consolidation Efforts', 9 July 2026"
+    },
+    {
+     "key": "de24_pal_connectors",
+     "url": "https://palantir.com/docs/foundry/data-integration/source-type-overview/",
+     "label": "Palantir, Foundry documentation, 'Data Connection: source type overview' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de24_404_webloc",
+     "url": "https://404media.co/inside-ices-tool-to-monitor-phones-in-entire-neighborhoods/",
+     "label": "Joseph Cox, 404 Media, 'Inside ICE's Tool to Monitor Phones in Entire Neighborhoods', 8 January 2026"
+    }
+   ]
+  }
+ ]
+}
