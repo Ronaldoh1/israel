@@ -126,5 +126,199 @@
     "label": "FTC Office of Technology, 'No, hashing still doesn't make your data anonymous', 24 July 2024"
    }
   }
+ },
+ "de24_fusion": {
+  "topic": "Brokers, fusion centres, ALPR, government data reuse, HART",
+  "claims": [
+   {
+    "text": "Flock paused pilots with CBP and HSI on 25 Aug 2025 after Illinois SoS audit found CBP accessed Illinois plate data in violation of state law; cameras in 4,000+ communities; Langley: 'We clearly communicated poorly'; federal searches now labelled and limited to one-to-one",
+    "strength": "reported",
+    "sources": [
+     "de24_ap_flock"
+    ]
+   },
+   {
+    "text": "Woodburn, Oregon audit: DHS and Border Patrol ran 6,089 searches Jan-Nov 2025 via a Flock trial allowing broad multi-network searches; city ended contract end of April 2026; cameras removed by 13 May; police policy bars immigration use",
+    "strength": "reported",
+    "sources": [
+     "de24_katu_woodburn"
+    ]
+   },
+   {
+    "text": "ALPR errors: Brittney Gilliam family held at gunpoint, Aurora CO, Aug 2020, $1.9m settlement; Denise Green SF 2009 '3' read as '7', $495,000; one study: state misread on 1 in 10 plates",
+    "strength": "reported",
+    "sources": [
+     "de24_eff_alpr"
+    ]
+   },
+   {
+    "text": "LexisNexis contract 70CMSD21C00000001 (Feb 2021, ~$24.51m) gave ICE Accurint/LexID; jail-booking data added 2021; ends 31 Aug 2026; 10 Aug 2026 notice of $6.7m sole-source bridge; work statement requires APIs to 'the Palantir platform', PenLink, ICE Data Analytics; >1.2m Accurint person searches Mar-Sep 2021 (Just Futures Law)",
+    "strength": "reported",
+    "sources": [
+     "de24_bu_lexis"
+    ]
+   },
+   {
+    "text": "Thomson Reuters CLEAR renewed sole-source for DHS from 31 Mar 2026 ('only CLEAR provides the range of law enforcement data'); data listed include utility data, credit bureaus, LPR; LEIDS-5 $22.8m May 2021-May 2026; TR: 'Palantir is not a customer of CLEAR'; 'We do not comment on specific customer contracts'",
+    "strength": "reported",
+    "sources": [
+     "de24_lawnext_tr"
+    ]
+   },
+   {
+    "text": "NCTUE utility header data (names, addresses, SSNs of 170m+ people) licensed to Equifax and sold into CLEAR, used by ICE; revealed Feb 2021; NCTUE told Equifax to stop Oct 2021; Equifax stopped law-enforcement provision 23 Oct 2021 after Wyden pressure",
+    "strength": "reported",
+    "sources": [
+     "de24_globe_utility"
+    ]
+   },
+   {
+    "text": "Senate PSI bipartisan report (2 Oct 2012): DHS fusion-centre intelligence 'oftentimes shoddy, rarely timely'; no unique contribution to disrupting a terror plot shown; DHS spending estimates $289m-$1.4bn since 2003; >70 fusion centres; spending on SUVs, TVs, cell-phone tracking devices",
+    "strength": "primary",
+    "sources": [
+     "de24_psi_fusion"
+    ]
+   },
+   {
+    "text": "Report said fusion centre intelligence was 'sometimes endangering citizens' civil liberties and Privacy Act protections'; 72 centres",
+    "strength": "reported",
+    "sources": [
+     "de24_govexec_fusion"
+    ]
+   },
+   {
+    "text": "SAVE: in May 2025 USCIS linked SSA data; 15 Aug 2025 last-four SSN lookups; free and bulk; 33m+ voters run by Sept 2025; under 1% needed manual review; queries kept 10 years; agreements allow DHS use 'for any purpose permitted by law'; USCIS has not published accuracy testing",
+    "strength": "reported",
+    "sources": [
+     "de24_npr_save"
+    ]
+   },
+   {
+    "text": "GAO-23-105959 (12 Sep 2023): HART meant to replace legacy biometric system holding 290m+ identities; IOC slipped from 31 Dec 2020 to 30 Sep 2023 and further rebaseline needed; costs +$354m; 5 of 12 OMB privacy requirements met; 9 recommendations all open",
+    "strength": "primary",
+    "sources": [
+     "de24_gao_hart"
+    ]
+   },
+   {
+    "text": "Northrop Grumman won $95m contract (announced 27 Feb 2018) for first two increments of HART, using face, fingerprint and iris",
+    "strength": "reported",
+    "sources": [
+     "de24_wt_hart2018"
+    ]
+   },
+   {
+    "text": "Biometric Update 31 Aug 2026: Kyle Schutt, who moved through agencies with DOGE, became acting DHS CIO and OBIM director; HART 'scheduled to reach initial operational capability no later than September 2026'",
+    "strength": "reported",
+    "sources": [
+     "de24_bu_schutt"
+    ]
+   },
+   {
+    "text": "ODNI report on commercially available information (dated Jan 2022, declassified 12 Jun 2023): CAI 'can reveal sensitive and intimate information about individuals'; IC acquires 'significant amount'",
+    "strength": "reported",
+    "sources": [
+     "de24_lawfare_odni"
+    ]
+   },
+   {
+    "text": "California DROP: one deletion request to all registered brokers from 1 Jan 2026; brokers process from 1 Aug 2026 every 45 days; more than 500 registered brokers; broker defined as business selling data a consumer didn't give it directly",
+    "strength": "primary",
+    "sources": [
+     "de24_ca_drop"
+    ]
+   },
+   {
+    "text": "Judge Chhabria (29 Dec 2025, effective 6 Jan 2026): for 20 plaintiff states, HHS may share with ICE only Medicaid data on people unlawfully present and only status, address, phone, DOB, Medicaid ID; health records barred",
+    "strength": "reported",
+    "sources": [
+     "de24_wt_medicaid"
+    ]
+   },
+   {
+    "text": "ICE contract (reported 27 Jan 2018) with West Publishing (Thomson Reuters) in partnership with Vigilant Solutions for access to billions of plate records; ICE: data is 'one tool in support of its investigations'; ICE had cancelled a similar 2014 request over privacy concerns and did a privacy impact assessment",
+    "strength": "reported",
+    "sources": [
+     "de24_upi_vigilant"
+    ]
+   },
+   {
+    "text": "In February 2014 DHS Secretary Jeh Johnson ordered cancellation of an ICE solicitation for access to a nationwide licence-plate tracking database, saying it was posted without ICE leadership's awareness, and ordered a review",
+    "strength": "reported",
+    "sources": [
+     "de24_physorg_2014"
+    ]
+   }
+  ],
+  "sources": {
+   "de24_ap_flock": {
+    "url": "https://abc7.com/post/flock-safety-license-plate-camera-company-halts-cooperation-federal-agencies-among-investigation-concerns-including-il/17653876/",
+    "label": "AP via ABC7, 'Flock Safety license plate camera company halts cooperation with federal agencies', 26 August 2025"
+   },
+   "de24_katu_woodburn": {
+    "url": "https://katu.com/news/local/story/audit-confirmed-federal-agencies-accessed-woodburn-flock-safety-camera-network-portland-oregon-immigration-enforcement-department-of-homeland-security",
+    "label": "KATU, 'Audit confirmed federal agencies accessed Woodburn Flock Safety camera network', 26 June 2026"
+   },
+   "de24_eff_alpr": {
+    "url": "https://eff.org/deeplinks/2024/11/human-toll-alpr-errors",
+    "label": "EFF (Gowri Nayar, Adam Schwartz), 'The Human Toll of ALPR Errors', 1 November 2024"
+   },
+   "de24_bu_lexis": {
+    "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+    "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+   },
+   "de24_lawnext_tr": {
+    "url": "https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-1-how-thomson-reuters-and-lexisnexis-helped-support-americas-immigration-surveillance-machine.html",
+    "label": "Bob Ambrogi, LawSites, 'The legal tech giants powering ICE, part 1: Thomson Reuters and LexisNexis', 27 April 2026"
+   },
+   "de24_globe_utility": {
+    "url": "https://www.bostonglobe.com/2021/12/08/nation/utility-giants-agree-no-longer-share-sensitive-records-ice-used-track-public",
+    "label": "The Washington Post via The Boston Globe, 'Utility giants agree to no longer share sensitive records ICE used to track the public', 8 December 2021"
+   },
+   "de24_psi_fusion": {
+    "url": "https://www.hsgac.senate.gov/subcommittees/investigations/rep/investigative-report-criticizes-counterterrorism-reporting-waste-at-state-local-intelligence-fusion-centers/",
+    "label": "US Senate Permanent Subcommittee on Investigations, 'Investigative Report Criticizes Counterterrorism Reporting, Waste at State & Local Intelligence Fusion Centers', press release, 2 October 2012"
+   },
+   "de24_govexec_fusion": {
+    "url": "https://www.govexec.com/defense/2012/10/homeland-securitys-fusion-centers-lambasted-senate-report/58535",
+    "label": "Government Executive, 'Homeland Security's fusion centers lambasted in Senate report', October 2012"
+   },
+   "de24_npr_save": {
+    "url": "https://www.wfae.org/politics/2025-09-10/33-million-voters-have-been-run-through-a-trump-administration-citizenship-check",
+    "label": "Jude Joffe-Block and Miles Parks, NPR (via WFAE), '33 million voters have been run through a Trump administration citizenship check', 10 September 2025"
+   },
+   "de24_gao_hart": {
+    "url": "https://www.gao.gov/products/gao-23-105959",
+    "label": "GAO-23-105959, 'Biometric Identity System: DHS Needs to Address Significant Shortcomings in Program Management and Privacy', 12 September 2023"
+   },
+   "de24_wt_hart2018": {
+    "url": "https://washingtontechnology.com/Articles/2018/02/27/Northrop-DHS-Biometrics.aspx",
+    "label": "Washington Technology, 'Northrop wins DHS biometrics contract', 27 February 2018"
+   },
+   "de24_bu_schutt": {
+    "url": "https://www.biometricupdate.com/202608/doge-technologist-takes-over-dhs-biometric-identity-office-overseeing-ident-hart",
+    "label": "Biometric Update, 'DOGE technologist takes over DHS biometric identity office overseeing IDENT, HART', 31 August 2026"
+   },
+   "de24_lawfare_odni": {
+    "url": "https://www.lawfaremedia.org/article/odni-report-reveals-significant-privacy-concerns-for-u.s.-citizens",
+    "label": "Lawfare, 'ODNI Report Reveals Significant Privacy Concerns for U.S. Citizens', 13 June 2023"
+   },
+   "de24_ca_drop": {
+    "url": "https://privacy.ca.gov/2025/12/january-2026-drop-is-coming/",
+    "label": "California Privacy Protection Agency, 'January 2026: DROP is coming', December 2025"
+   },
+   "de24_wt_medicaid": {
+    "url": "https://m.washingtontimes.com/news/2025/dec/30/judge-rules-ice-obtain-medicaid-data/",
+    "label": "The Washington Times, 'Judge rules ICE can obtain some Medicaid data', 30 December 2025"
+   },
+   "de24_upi_vigilant": {
+    "url": "https://www.upi.com/Top_News/US/2018/01/27/New-contract-lets-ICE-track-license-plates-across-US/5871517078605/",
+    "label": "UPI, 'New contract lets ICE track license plates across U.S.', 27 January 2018"
+   },
+   "de24_physorg_2014": {
+    "url": "https://phys.org/news/2014-02-govt-cancels-plate.html",
+    "label": "AP via Phys.org, 'Gov't cancels plan to collect license plate data', February 2014"
+   }
+  }
  }
 }

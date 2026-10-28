@@ -1,0 +1,119 @@
+{
+ "de28_contracts": {
+  "topic": "ICE data and surveillance contracts beyond Palantir",
+  "claims": [
+   {
+    "text": "LexisNexis Risk Solutions contract 70CMSD21C00000001 (Feb 2021, ~$24.51m obligations/ceiling) ends 31 Aug 2026; ICE notice of intent 10 Aug 2026 for sole-source bridge est. $6.7m (seven-month base plus five one-month options); requirements call for APIs to ICE applications 'such as but not limited to' the Palantir platform, PenLink and ICE Data Analytics; 1.2m+ Accurint person searches Mar-Sep 2021 (Just Futures Law records)",
+    "strength": "reported",
+    "sources": [
+     "de28_bu_lexis"
+    ]
+   },
+   {
+    "text": "Thomson Reuters CLEAR: DHS contract renewed sole-source as of 31 Mar 2026; data include licences, vehicle registrations, credit data, real estate, court records, utility data; TR says CLEAR excludes immigration status, call logs, bank data; LEIDS-5 $22.8m (May 2021-May 2026) LPR data, does not include CLEAR; Jail Alert Service $6.7m 2018-23; TR says Palantir is not a CLEAR customer; LexisNexis LEIDS $22.1m 2021-26",
+    "strength": "reported",
+    "sources": [
+     "de28_lawsites_tr"
+    ]
+   },
+   {
+    "text": "Zignal Labs: ICE/HSI $5.7m five-year licences via Carahsoft, public Sept 2025, 'real-time data analysis for criminal investigations'; Zignal says it analyses 8bn+ posts a day; 2025 pamphlet claims 'tactical intelligence' to operators in Gaza; Zignal did not respond",
+    "strength": "reported",
+    "sources": [
+     "de28_lever_zignal"
+    ]
+   },
+   {
+    "text": "ShadowDragon SocialNet: ICE delivery orders via resellers $289,500 (start 16 July 2020) and $602,056 (start 31 Aug 2021)",
+    "strength": "reported",
+    "sources": [
+     "de28_epic_shadowdragon"
+    ]
+   },
+   {
+    "text": "Babel Street: ICE $1.1m delivery order via Thundercat (start 19 Sept 2018) and $1.5m BPA call to Babel Street (start 12 Sept 2019); Babel Street sells Locate X location software; contract descriptions say 'Babel Street software'",
+    "strength": "reported",
+    "sources": [
+     "de28_epic_babel"
+    ]
+   },
+   {
+    "text": "70 lawmakers (3 Mar 2026) asked DHS IG to investigate warrantless location-data purchases; DHS signed $2.3m contract with PenLink in Sept 2025 for Webloc; Webloc developed by Cobwebs, combined with PenLink in 2023 PE deal; ICE spokesperson: 'ICE does not purchase illegal information'",
+    "strength": "reported",
+    "sources": [
+     "de28_reg_wyden70"
+    ]
+   },
+   {
+    "text": "ICE $2.3m Penlink contract fall 2025 covers Tangles (OSINT) and Webloc (phone location database); Penlink bought Cobwebs in 2023; Penlink: tools 'exclusively use publicly or commercially available data'",
+    "strength": "reported",
+    "sources": [
+     "de28_ffp_penlink"
+    ]
+   },
+   {
+    "text": "OIG-23-61: CBP, ICE, USSS did not adhere to privacy policies or complete required Privacy Impact Assessments before procuring and using commercial telemetry data; recommended ICE discontinue CTD use until PIAs approved",
+    "strength": "primary",
+    "sources": [
+     "de28_oig_23_61"
+    ]
+   },
+   {
+    "text": "DHS forecast (May 2026): five-year ICE/HSI IDIQ, $100m ceiling, Cellebrite phone and drone forensics; 'the most widely utilized and deployed computer forensic tool' in HSI",
+    "strength": "reported",
+    "sources": [
+     "de28_fs_cellebrite"
+    ]
+   },
+   {
+    "text": "ICE/HSI Clearview AI deal finalised 5 Sept 2025: $3.75m obligated, ~$9.2m total with options; child sexual exploitation and assaults on officers",
+    "strength": "reported",
+    "sources": [
+     "de28_bu_clearview"
+    ]
+   }
+  ],
+  "sources": {
+   "de28_bu_lexis": {
+    "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+    "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+   },
+   "de28_lawsites_tr": {
+    "url": "https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-1-how-thomson-reuters-and-lexisnexis-helped-support-americas-immigration-surveillance-machine.html",
+    "label": "Bob Ambrogi, LawSites, 'The legal tech giants powering ICE, Part 1', 27 April 2026 (updated 29 April 2026)"
+   },
+   "de28_lever_zignal": {
+    "url": "https://www.levernews.com/ice-just-bought-a-social-media-surveillance-botice-just-bought-a-social-media-surveillance-bot/",
+    "label": "The Lever, 'ICE just bought a social media surveillance bot', 23 October 2025"
+   },
+   "de28_epic_shadowdragon": {
+    "url": "https://epic.org/wp-content/uploads/2021/12/21-12-03-ICE-FOIA-ShadowDragon.pdf",
+    "label": "EPIC, FOIA request to ICE on ShadowDragon SocialNet (citing USAspending delivery orders), 3 December 2021"
+   },
+   "de28_epic_babel": {
+    "url": "https://epic.org/wp-content/uploads/2021/12/21-12-03-ICE-FOIA-Babel-Street.pdf",
+    "label": "EPIC, FOIA request to ICE on Babel Street (citing USAspending PIIDs), 3 December 2021"
+   },
+   "de28_reg_wyden70": {
+    "url": "https://www.theregister.com/2026/03/03/us_lawmakers_ice_data_purchases/",
+    "label": "The Register, 'Lawmakers take pick to ICE's warrantless location tracking purchases', 3 March 2026 (updated 6 March)"
+   },
+   "de28_ffp_penlink": {
+    "url": "https://flatwaterfreepress.org/this-nebraska-company-is-supplying-ice-with-surveillance-tech/",
+    "label": "Natalia Alamdari, Flatwater Free Press, 'This Nebraska company is supplying ICE with surveillance tech', 20 February 2026"
+   },
+   "de28_oig_23_61": {
+    "url": "https://www.oversight.gov/reports/audit/cbp-ice-and-secret-service-did-not-adhere-privacy-policies-or-develop-sufficient",
+    "label": "DHS Office of Inspector General, OIG-23-61, 'CBP, ICE, and Secret Service Did Not Adhere to Privacy Policies or Develop Sufficient Policies Before Procuring and Using Commercial Telemetry Data', September 2023"
+   },
+   "de28_fs_cellebrite": {
+    "url": "https://fedscoop.com/dhs-cellebrite-privacy-drones-data-mobile-devices-ice/",
+    "label": "FedScoop, on DHS forecast of ICE/HSI Cellebrite IDIQ, 11 May 2026"
+   },
+   "de28_bu_clearview": {
+    "url": "https://www.biometricupdate.com/202509/ice-awards-clearview-ai-9-2m-facial-recognition-contract",
+    "label": "Biometric Update, 'ICE awards Clearview AI $9.2M facial recognition contract', 8 September 2025"
+   }
+  }
+ }
+}
