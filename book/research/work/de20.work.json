@@ -1,0 +1,137 @@
+{
+ "de20_cuts": {
+  "topic": "DOGE-era cuts: USAID, probationary firings, RIFs, Education, workforce",
+  "claims": [
+   {
+    "text": "Rubio 10 Mar 2025 on X: 'After a 6 week review we are officially cancelling 83% of the programs at USAID'; 5,200 contracts cancelled; about 1,000 remaining programs to be run by State; thanked DOGE",
+    "strength": "reported",
+    "sources": [
+     "de20_ewn_rubio83"
+    ]
+   },
+   {
+    "text": "Rubio: 'As of July 1st, USAID will officially cease to implement foreign assistance'; unnamed State official: studies rest on 'incorrect assumptions'",
+    "strength": "reported",
+    "sources": [
+     "de20_ap_usaidjuly"
+    ]
+   },
+   {
+    "text": "SCOTUS 8 Jul 2025 (Trump v. AFGE) lifted Illston's order blocking RIF/reorganization plans under the February EO and OMB/OPM memo; 'we express no view on the legality of any' plan; Jackson dissent 'hubristic and senseless'; Sotomayor concurred: 'The plans themselves are not before this Court'",
+    "strength": "reported",
+    "sources": [
+     "de20_npr_trumpvafge"
+    ]
+   },
+   {
+    "text": "OPM 14 Feb 2025 email asked agencies to separate probationary employees not mission-critical; Alsup PI 13 Mar found directive ultra vires; SCOTUS stayed 8 Apr 2025 on nonprofit standing only, not legality, Sotomayor and Jackson dissenting; Maryland v. USDA PI (19 states + DC, 18 agencies) stayed by 4th Cir 9 Apr 2025",
+    "strength": "primary",
+    "sources": [
+     "de20_crs_probation"
+    ]
+   },
+   {
+    "text": "Alsup 12 Sep 2025: OPM unlawfully ordered agencies to fire probationary employees; about 25,000 targeted; no reinstatement ordered, citing SCOTUS emergency rulings and new jobs; 19 agencies to correct files by 14 Nov; April SCOTUS stay had paused reinstatement of 17,000 at six agencies",
+    "strength": "reported",
+    "sources": [
+     "de20_reuters_alsup"
+    ]
+   },
+   {
+    "text": "SCOTUS 14 Jul 2025 (McMahon v. New York) lifted Joun injunction against layoff of more than 1,000 Education employees; Sotomayor (with Kagan, Jackson) dissent: 'hands the Executive the power to repeal statutes by firing all those necessary to carry them out'; McMahon: Trump 'the ultimate authority to make decisions about staffing levels'",
+    "strength": "reported",
+    "sources": [
+     "de20_rollcall_mcmahon"
+    ]
+   }
+  ],
+  "sources": {
+   "de20_ewn_rubio83": {
+    "url": "https://www.ewn.co.za/2025/03/10/83-of-usaid-programs-to-be-scrapped-rubio",
+    "label": "Reuters via EWN, '83% of USAID programs to be scrapped: Rubio', 10 March 2025"
+   },
+   "de20_ap_usaidjuly": {
+    "url": "https://news.wttw.com/node/51320",
+    "label": "AP via WTTW, USAID to cease implementing foreign assistance on 1 July as State takes over, July 2025"
+   },
+   "de20_npr_trumpvafge": {
+    "url": "https://www.npr.org/2025/07/08/nx-s1-5429615/supreme-court-federal-rifs",
+    "label": "NPR, 'Supreme Court allows Trump to resume mass federal layoffs for now', 8 July 2025"
+   },
+   "de20_crs_probation": {
+    "url": "https://www.everycrsreport.com/reports/LSB11307.html",
+    "label": "Congressional Research Service, LSB11307, 'OPM v. AFGE and Related Litigation: Supreme Court Stays Order Reinstating Federal Probationary Employees', May 2025"
+   },
+   "de20_reuters_alsup": {
+    "url": "https://www.arabnews.pk/node/2615221",
+    "label": "Reuters via Arab News, 'Trump administration unlawfully directed mass US worker terminations, judge rules', 13 September 2025"
+   },
+   "de20_rollcall_mcmahon": {
+    "url": "https://rollcall.com/2025/07/14/justices-allow-mass-layoffs-at-education-department/",
+    "label": "Roll Call, 'Justices allow mass layoffs at Education Department', 14 July 2025"
+   }
+  }
+ },
+ "de20_paid": {
+  "topic": "Who paid: USAID mortality estimates and disputes",
+  "claims": [
+   {
+    "text": "Cavalcanti, Rasella, Macinko et al., Lancet 1 Jul 2025: panel of 133 countries 2001-2021, microsimulation to 2030; about 91 million deaths averted (about 30 million children); USAID support associated with 15% lower all-cause and 32% lower under-5 mortality; 83% cut projected to cause more than 14 million additional deaths by 2030 incl. more than 4.5 million under-5s (about 700,000 child deaths a year)",
+    "strength": "primary",
+    "sources": [
+     "de20_ucla_lancet"
+    ]
+   },
+   {
+    "text": "CGD (Kenny, Sandefur) 16 Dec 2025: lives-saved-per-dollar ($3,457 health, $17,837 humanitarian) times dollars cut: roughly 500,000-1,000,000 lives lost on FY2025 outlays, 670,000-1,600,000 on obligations; gross estimates; 'any estimates of lives lost remain guesswork'; may be pessimistic",
+    "strength": "primary",
+    "sources": [
+     "de20_cgd_update"
+    ]
+   },
+   {
+    "text": "Lancet study 3 Feb 2026 (Rasella part of team; all aid falling 10.6% a year): 9.4 million extra deaths by 2030 baseline, 22.6 million severe; CGD's Ian Mitchell: 'somewhere between the two'; State Department: 'some recent \"studies\" are rooted in outdated thinking'",
+    "strength": "reported",
+    "sources": [
+     "de20_st_lancet26"
+    ]
+   },
+   {
+    "text": "Brown (Reason, Aug 2026): Lancet's ~92M averted exceeds his ~79M estimate of total mortality decline; two Lancet papers conflict; BU Nichols tracker 781,343 one-year projected deaths as of 30 Jul 2026; Egypt May 2025 UN 46,365 deaths vs ~58,000 modelled, with caveats; Lancet published critiques, no correction",
+    "strength": "disputed",
+    "sources": [
+     "de20_reason_brown"
+    ]
+   },
+   {
+    "text": "Brown (NYU) Aug 2025 called the 14M claim 'patently absurd'; design would credit any rising factor; Nichols: retrospective 'quite robust', projections 'carry greater uncertainty'",
+    "strength": "disputed",
+    "sources": [
+     "de20_fix_brown"
+    ]
+   }
+  ],
+  "sources": {
+   "de20_ucla_lancet": {
+    "url": "https://ph.ucla.edu/news-events/news/research-finds-more-14-million-preventable-deaths-2030-if-usaid-defunding",
+    "label": "UCLA Fielding School of Public Health, on Cavalcanti et al., The Lancet, 'Evaluating the comprehensive impact of two decades of USAID interventions...', 1 July 2025"
+   },
+   "de20_cgd_update": {
+    "url": "https://www.cgdev.org/node/3135606",
+    "label": "Charles Kenny and Justin Sandefur, Center for Global Development, 'Update on Lives Lost from USAID Cuts', 16 December 2025"
+   },
+   "de20_st_lancet26": {
+    "url": "https://sundaytribune.co.za/world/2026-02-03-global-aid-cuts-could-lead-to-94-million-deaths-by-2030-study-projects/",
+    "label": "AFP via Sunday Tribune, 'Global aid cuts could lead to 9.4 million deaths by 2030, study projects', 3 February 2026"
+   },
+   "de20_reason_brown": {
+    "url": "https://reason.com/video/2026/08/03/did-elon-musk-sentence-millions-to-death-by-dismantling-usaid/",
+    "label": "Aaron Brown, Reason, 'Did Elon Musk sentence millions to death by dismantling USAID?', 3 August 2026"
+   },
+   "de20_fix_brown": {
+    "url": "https://www.thecollegefix.com/nyu-professor-challenges-patently-absurd-claim-usaid-cuts-will-kill-14-million/",
+    "label": "The College Fix, 'NYU professor challenges patently absurd claim USAID cuts will kill 14 million', 20 August 2025"
+   }
+  }
+ }
+}
