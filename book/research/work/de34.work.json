@@ -128,5 +128,28 @@
     "label": "The Intercept, 'Pam Bondi acknowledges secret domestic terror list under NSPM-7', 12 Feb 2026"
    }
   }
+ },
+ "de34_audit": {
+  "topic": "Audit 7 corrections for de34/de35 (Albanese injunction date)",
+  "claims": [
+   {
+    "text": "Judge Richard Leon (D.D.C.) issued the order blocking the US sanctions on UN Special Rapporteur Francesca Albanese 'on Wednesday', i.e. 13 May 2026 (Democracy Now! headline dated 14 May; AFP/Dawn dated 15 May), finding the designation likely violated free speech; Albanese thanked 'my daughter and my husband for stepping up to defend me'; Leon: 'Protecting the freedom of speech is \"always\" in the public interest'",
+    "strength": "reported",
+    "sources": [
+     "de34_audit_albanese_dn",
+     "de34_audit_albanese_dawn"
+    ]
+   }
+  ],
+  "sources": {
+   "de34_audit_albanese_dn": {
+    "url": "https://www.democracynow.org/2026/5/14/headlines/judge_temporarily_blocks_us_sanctions_against_un_expert_on_occupied_palestinian_territories",
+    "label": "Democracy Now!, 'Judge temporarily blocks US sanctions against UN expert on occupied Palestinian territories', 14 May 2026"
+   },
+   "de34_audit_albanese_dawn": {
+    "url": "https://www.dawn.com/news/2000330",
+    "label": "AFP via Dawn, 'US court suspends sanctions on UN Palestine expert', 15 May 2026"
+   }
+  }
  }
 }
