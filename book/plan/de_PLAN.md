@@ -1,6 +1,6 @@
 # Volume plan (OUTLINE v1.0, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
-Status: writing. Preface + Books I–II (de1–de16) written and audited 28 Oct 2026; Book III (DOGE) next.
+Status: writing paused at Book V pending Ron's approval of OUTLINE v2.0 (book/plan/de_OUTLINE_v2.md, 28 Oct 2026: 43 parts; new parts de24b Records the State Holds, de25b Travel/Border/Exit, de35b Who Picks the CEO; new sections de28_the_ecosystem_map, de34_the_end_to_end_map, de35_the_consequence_engine; China social credit in de36). Earlier status: Preface + Books I–II (de1–de16) written and audited 28 Oct 2026; Book III (DOGE) next.
 
 Working title: The Dark Enlightenment Architecture
 Working subtitle: Philosophy, Money, Technology and the Executive Without a Veto
