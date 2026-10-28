@@ -466,5 +466,74 @@
     "label": "Ava Kofman, Spanish translation of 'Curtis Yarvin's Plot Against America' (The New Yorker, 2 June 2025), Nueva Sociedad no. 318"
    }
   }
+ },
+ "de5_audit": {
+  "topic": "Audit re-verification of de5 (28 Oct 2026)",
+  "claims": [
+   {
+    "text": "John Burnham (category 'Space') was among the first twenty Thiel Fellows named in May 2011; each fellow was to receive $100,000 from the Thiel Foundation over the two-year term",
+    "strength": "primary",
+    "sources": [
+     "de5_audit_tc2011"
+    ]
+   },
+   {
+    "text": "Rettig (27 July 2025): about a year earlier the Urbit Foundation board fired the executive director; the Foundation 'ran out of money last year, which is why the Executive Director at the time was fired'; 'most of the staff quit in protest'; Yarvin is 'Executive Director-by-fiat'; 'real Roman times'; a16z invested $4M for more address space",
+    "strength": "reported",
+    "sources": [
+     "de5_audit_rettig"
+    ]
+   },
+   {
+    "text": "Marbl (6 July 2025): 'the last year has seen four different Executive Directors'; Kneer and Yarvin 'joined forces last November' (Nov 2024); '2024 saw funding challenges serious enough to prompt Yarvin's return'; Kneer fired Yarvin from the board the previous week; galaxy holders asked to vote on the board",
+    "strength": "reported",
+    "sources": [
+     "de5_audit_marbl"
+    ]
+   },
+   {
+    "text": "Wikipedia (Urbit): Tlon named after Borges's 'Tlön, Uqbar, Orbis Tertius'; 256 galaxies and 65,280 stars; Azimuth on Ethereum; Lehman told Astra (2022) the 'hardest part' of his work had been to distance Urbit from Yarvin; The Point (Sept 2022) 'a few thousand' users and a 'bare-bones' message board; board fired Lehman April 2024 [citation needed]",
+    "strength": "reported",
+    "sources": [
+     "de5_audit_wiki_urbit"
+    ]
+   },
+   {
+    "text": "Tablet: mother 'eventually also joined the civil service, as did Yarvin's stepfather'; Usenet formative 'in late adolescence', including talk.bizarre; prefers 'programmer', sees himself 'as a builder of things that work'",
+    "strength": "reported",
+    "sources": [
+     "de5_audit_tablet"
+    ]
+   },
+   {
+    "text": "Tablet, quoting Yarvin: after the dot-com crash he was left with 'a few hundred thousand dollars' from a buyout at his mobile software job, 'considerably less than \"fuck you\" money', and 'a newly acquired girlfriend (who would become my wife)'",
+    "strength": "primary",
+    "sources": [
+     "de5_audit_tablet"
+    ]
+   }
+  ],
+  "sources": {
+   "de5_audit_tc2011": {
+    "url": "https://techcrunch.com/2011/05/25/young-entrepreneurs-rule-meet-peter-thiels-first-20-under-20-thiel-fellows",
+    "label": "TechCrunch, 'Meet Peter Thiel's First \"20 Under 20\" Thiel Fellows', 25 May 2011"
+   },
+   "de5_audit_rettig": {
+    "url": "https://rettig.substack.com/p/urbit-isnt-alright",
+    "label": "Rettig, 'Three Things #180', 27 July 2025"
+   },
+   "de5_audit_marbl": {
+    "url": "https://marbl.substack.com/p/the-fight-for-the-new-internet",
+    "label": "Marbl, 'The fight for the new internet', 6 July 2025"
+   },
+   "de5_audit_wiki_urbit": {
+    "url": "https://en.wikipedia.org/wiki/Urbit",
+    "label": "Wikipedia, 'Urbit' (accessed 28 Oct 2026)"
+   },
+   "de5_audit_tablet": {
+    "url": "https://www.tabletmag.com/sections/news/articles/red-pill-prince-curtis-yarvin",
+    "label": "Jacob Siegel, 'The Red-Pill Prince', Tablet, 2022"
+   }
+  }
  }
 }
