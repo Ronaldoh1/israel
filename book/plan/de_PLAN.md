@@ -1,4 +1,4 @@
-# Volume plan (DRAFT v0.2, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
+# Volume plan (DRAFT v0.3, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
 Status: outline only. Ron is still supplying research; do not start writing until he says so.
 
@@ -24,30 +24,53 @@ Subject type (project protocol 2B.4): IDEOLOGY primary, with PERSON sub-discipli
 6. Library: ow9_origins/ow9_ice/ow9_israel, ow12_ties, us2_integrity (Schedule P/C), us10_us (FISA 702) — link, don't repeat.
 Do not port: dark-enlightenment-decoded.html, the Truman-parallel doc, palantir_crisis_architecture.md, Sophia thiel module claims marked X.
 
-## Parts and sections (proposed)
-- de1 The Question: what the Dark Enlightenment is and is not — de1_what_it_is, de1_spine_and_overlay, de1_how_the_label_inflates (a documented support scale: wrote it / cited it / funded it / met him / named by others)
+## Reading frame: the worst case, tested (Ron, 28 Oct 2026)
+The preface (de_intro) states the book's working hypothesis plainly: read every mechanism in its worst case — immigration enforcement as the occasion, government cuts (DOGE) as the occasion, and a sovereign executive without a veto (the Dark Enlightenment's stated end state) as the destination — and then test that reading against the record. The hypothesis is the Sophia platform's; it is never stated as a finding. Every part carries a closing passage "The worst-case reading, tested" that grades it in three registers: documented / probable / not supported (and, where the record runs against it, says so). Named people get the PERSON ceiling: intent only from their own words; motive claims stay contested unless independently documented.
+
+## Parts and sections (proposed v0.3)
+Front: de_intro (preface with the worst-case frame and how it is tested).
+
+I. THE IDEAS
+- de1 The Question — de1_what_it_is, de1_spine_and_overlay, de1_how_the_label_inflates (support scale: wrote / cited / funded / met / named by others)
 - de2 The Name and the Texts (2007–2014) — de2_the_name, de2_core_texts
-- de3 The Inheritance (Plato to Hoppe) — de3_lineage, de3_technocracy, de3_other_lineages (Evola; Claremont and national conservatism, kept separate)
-- de4 Nick Land: the Engine — de4_ccru_acceleration, de4_the_2012_text (the serial, part by part), de4_the_hard_passages (same treatment as Yarvin's)
-- de5 Curtis Yarvin: the Architect — de5_life, de5_the_program, de5_the_hard_posts
-- de6 The Diagnosis, Steelmanned — de6_what_it_gets_right, de6_the_other_diagnosis
-- de7 Where the Argument Breaks — de7_tests_it_fails, de7_who_enforces_the_charter
-- de8 Peter Thiel: the Bridge — de8_education_of_a_libertarian, de8_girard_and_the_katechon, de8_philosophy_vs_practice
-- de9 The Money — de9_network_map, de9_loops, de9_foundations_and_opacity (Thiel Foundation, DonorsTrust pass-through), de9_epstein_valar
-- de10 The Same Playbook, Twice (Vance and Masters, 2011–2024) — de10_vance, de10_masters
-- de11 The Adoption Layer (Andreessen, Sacks, Musk, Anton, Bannon; amplification) — de11_the_valley, de11_elite_pipeline
-- de12 Exit — de12_seas_and_zones, de12_prospera_v_honduras (ICSID ARB/23/2), de12_argentina_and_freedom_cities
-- de13 Urbit: the Digital Exit — de13_address_space, de13_wartime_ceo
-- de14 The Eye: Palantir — de14_origins_and_control, de14_capability_not_intent, de14_money_and_war, de14_europe_says_no
-- de15 The Eye at Home: ICE and the Data Stack — de15_ice_contracts, de15_brokers_and_doctrine
-- de16 The Switch: RAGE, DOGE and the Legal Architecture — de16_rage_to_doge, de16_schedule_and_silos, de16_nspm7_and_detachment
-- de17 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de17_two_tests
-- de17b The Readiness Audit (Ron's questions, 28 Oct 2026) — de17b_what_is_built (layer-by-layer status, Oct 2026), de17b_the_repurposing_test (could existing tools identify a critic of the state, of Israel's government or of military aid? documented cases vs capability vs legal limits), de17b_missing_pieces_and_triggers
-- de18 If It Were Enforced (prescribed / existing / implied) — de18_three_layers, de18_what_you_would_give_up (democracy vs CEO-sovereign, rights lost, consequences), de18_the_unproductive
-- de19 Israel: Documented Ties Only — de19_palantir_and_israel, de19_what_is_not_supported
-- de20 What Doesn't Fit — de20_disagreements, de20_claims_that_fail, de20_the_honest_nulls
-- de21 The Reading Beneath the Record (labelled interpretation) — de21_seeing_stones, de21_the_runtime
-- de22 The Verdict and What to Watch — de22_verdict, de22_watch_list, de22_the_garden
+- de3 The Inheritance — de3_lineage, de3_technocracy (incl. Musk's grandfather J.N. Haldeman in Technocracy Inc., documented), de3_other_lineages
+- de4 Nick Land: the Engine — de4_ccru_acceleration, de4_the_2012_text, de4_the_hard_passages
+- de5 Curtis Yarvin: the Life (1973–2026, full documented biography) — de5_childhood_and_schooling, de5_programmer_to_moldbug, de5_tlon_exit_and_return, de5_the_public_years
+- de6 Curtis Yarvin: the Program and the Hard Posts — de6_the_program, de6_the_hard_posts
+- de7 The Diagnosis, Steelmanned — de7_what_it_gets_right, de7_the_other_diagnosis
+- de8 Where the Argument Breaks — de8_tests_it_fails, de8_who_enforces_the_charter
+
+II. THE MONEY AND THE MEN
+- de9 Peter Thiel: the Life (1967–2026, full documented biography) — de9_frankfurt_to_stanford, de9_paypal_palantir_facebook, de9_gawker_citizenship_and_tax, de9_politics_and_argentina
+- de10 Peter Thiel: the Mind — de10_education_of_a_libertarian, de10_girard_and_the_katechon, de10_philosophy_vs_practice
+- de11 Elon Musk: the Life (1971–2026, full documented biography) — de11_pretoria_and_haldeman, de11_zip2_xcom_paypal (the merger with Thiel's Confinity, the 2000 ouster), de11_tesla_spacex_and_the_state ($38bn in public money), de11_twitter_x_and_2024 (campaign spending)
+- de12 The PayPal Network — de12_who_they_are (Thiel, Musk, Sacks, Hoffman, Lonsdale, Rabois…, ties typed and dated), de12_where_they_sit_now (government roles, contracts)
+- de13 The Money — de13_network_map, de13_loops, de13_foundations_and_opacity, de13_epstein_valar
+- de14 The Same Playbook, Twice (Vance and Masters) — de14_vance, de14_masters
+- de15 The Adoption Layer — de15_the_valley, de15_elite_pipeline
+
+III. DOGE: THE ARCHITECTURE (worst case: cuts as the occasion)
+- de16 The Deal: Campaign Money to an Office (America PAC spending; appointment; DOGE's legal form — USDS renamed, temporary organization, special government employee status) — de16_money_to_office, de16_what_doge_was_legally
+- de17 The Operators (who was hired, ages and qualifications as documented, clearances, the chain of command dispute) — de17_the_team
+- de18 Inside the Systems (Treasury payments, OPM, SSA NUMIDENT, IRS "mega-API" with Palantir, NLRB whistleblower; the lawsuits and rulings; the Supreme Court stays) — de18_the_access, de18_the_courts
+- de19 The Cuts and Who They Hit (USAID, CFPB, HHS, SSA, VA, NEH…; who used those services; the savings claim vs GAO; rehiring) — de19_the_cuts, de19_who_paid
+- de20 Promises and Conflicts (the $5,000 "DOGE dividend" that never came; Musk companies' regulators and contracts; deregulation; the Musk–Trump break; DOGE's end, 4 July 2026) — de20_the_dividend, de20_conflicts_and_contracts, de20_the_ending
+
+IV. EXIT AND THE EYE
+- de21 Exit — de21_seas_and_zones, de21_prospera_v_honduras, de21_argentina_and_freedom_cities
+- de22 Urbit: the Digital Exit — de22_address_space, de22_wartime_ceo
+- de23 The Eye: Palantir — de23_origins_and_control, de23_capability_not_intent, de23_money_and_war, de23_europe_says_no
+- de24 The Eye at Home: ICE and the Data Stack (worst case: immigration as the occasion) — de24_ice_contracts, de24_brokers_and_doctrine
+- de25 The Switch: The Legal Architecture — de25_rage_to_schedule, de25_silos_and_subpoenas, de25_nspm7_and_detachment
+
+V. THE TEST
+- de26 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de26_two_tests
+- de27 The Readiness Audit — de27_what_is_built, de27_the_repurposing_test, de27_missing_pieces_and_triggers
+- de28 If It Were Enforced — de28_three_layers, de28_what_you_would_give_up, de28_the_unproductive
+- de29 Israel: Documented Ties Only — de29_palantir_and_israel, de29_what_is_not_supported
+- de30 What Doesn't Fit — de30_disagreements, de30_claims_that_fail, de30_the_honest_nulls
+- de31 The Reading Beneath the Record (labelled interpretation) — de31_seeing_stones, de31_the_runtime
+- de32 The Verdict and What to Watch — de32_worst_case_scorecard, de32_watch_list, de32_the_garden
 
 ## Research still needed before writing (verification debt)
 NSPM-7 and follow-ons; Detachment 201; Próspera/ICSID/Pronomos/Praxis/network state; Antichrist lectures and Karp's Technological Republic; Land primary texts; Anduril products/contracts; vendor roster (CLEAR, Gravy, ShotSpotter, Ring, Dataminr, Zignal, Fusus, Flock); Yarvin archived posts (biodiesel, slavery line, Breivik, RAGE) and the "Fris Corp" quote; Harvard/Yale debates, Mission Party, Gorbachev doctrine; Thiel's 2023 Atlantic quote, 2016 privacy op-ed, Burnham $100K, Clearview stake, 1789 Capital; Singapore test; FDR 1933 analogy; AIPAC vs comparable lobbies benchmark; Gilens & Page dispute; techno-feudalism; measured chilling effects; Palantir figures after Q2 2026; UK NHS, Germany, NATO Maven, Denmark.
