@@ -1,0 +1,332 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de17_deal",
+   "stage": "de17",
+   "topic": "From campaign to office: endorsement, the efficiency commission idea, the DOGE announcement and op-ed, Ramaswamy's exit",
+   "claims": [
+    {
+     "text": "Musk posted on X on the evening of 13 July 2024, after the Butler shooting: 'I fully endorse President Trump and hope for his rapid recovery'",
+     "strength": "reported",
+     "sources": [
+      "de17_reuters_endorse"
+     ]
+    },
+    {
+     "text": "5 Sept 2024 Economic Club of New York: Trump said he would create a government efficiency commission 'tasked with conducting a complete financial and performance audit of the entire federal government' and 'making recommendations for drastic reforms'; first time he said Musk had agreed to lead it; plan to eliminate 'fraud and improper payments' within six months; Musk had said on an 19 August podcast he would be interested; Musk on X 5 Sept: 'I look forward to serving America if the opportunity arises'",
+     "strength": "reported",
+     "sources": [
+      "de17_reuters_econclub"
+     ]
+    },
+    {
+     "text": "Trump's statement (12 Nov 2024, reported 13 Nov): Musk and Ramaswamy 'will pave the way for my Administration to dismantle Government Bureaucracy, slash excess regulations, cut wasteful expenditures, and restructure Federal Agencies'; could be 'The Manhattan Project' of our time; they would provide advice and guidance from outside of Government; deadline 4 July 2026; Musk: 'This will send shockwaves through the system, and anyone involved in Government waste, which is a lot of people!'",
+     "strength": "reported",
+     "sources": [
+      "de17_aj_announce"
+     ]
+    },
+    {
+     "text": "Musk–Ramaswamy WSJ op-ed, 20 Nov 2024: 'We will serve as outside volunteers, not federal officials or employees'; 'Instead of new laws, existing legislation will lead DOGE to make the changes'; president 'can, by executive action, immediately pause the enforcement of those regulations'; cites Loper Bright (2024) and West Virginia v. EPA; DOGE would 'identify the minimum number of employees required at an agency'; '$500 billion plus in annual federal expenditures that are unauthorized by Congress'",
+     "strength": "primary",
+     "sources": [
+      "de17_li_oped",
+      "de17_jurist_oped"
+     ]
+    },
+    {
+     "text": "Op-ed pledged to identify 'thousands' of regulations by 'unelected bureaucrats' for elimination and 'a significant reduction in the federal workforce'; Constitution as 'North Star for reform' (Jurist wording)",
+     "strength": "reported",
+     "sources": [
+      "de17_jurist_oped"
+     ]
+    },
+    {
+     "text": "20 Jan 2025: Ramaswamy's departure confirmed hours after inauguration; spokeswoman Anna Kelly: he 'played a critical role in helping us create DOGE', 'intends to run for elected office soon', and 'the structure that we announced today' requires him to remain outside DOGE",
+     "strength": "reported",
+     "sources": [
+      "de17_wt_ramaswamy"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de17_reuters_endorse",
+     "url": "https://www.rnz.co.nz/news/world/522114/elon-musk-endorses-trump-in-presidential-race-calls-him-tough",
+     "label": "Reuters via RNZ, 'Elon Musk endorses Trump in presidential race, calls him tough', 14 July 2024 (NZ time; 13 July in the US)"
+    },
+    {
+     "key": "de17_reuters_econclub",
+     "url": "https://www.businessday.co.za/bd/world/americas/2024-09-05-trump-says-musk-has-agreed-to-lead-proposed-government-efficiency-commission/",
+     "label": "Helen Coster, Reuters via BusinessDay, 'Trump says Musk has agreed to lead proposed government efficiency commission', 5 September 2024"
+    },
+    {
+     "key": "de17_aj_announce",
+     "url": "https://www.aljazeera.com/news/2024/11/13/trump-names-musk-and-ramaswamy-to-head-new-government-efficiency-department",
+     "label": "Al Jazeera, 'Trump names Musk and Ramaswamy to head new government efficiency department', 13 November 2024"
+    },
+    {
+     "key": "de17_li_oped",
+     "url": "https://legalinsurrection.com/2024/11/musk-ramaswamy-explain-how-doge-will-clean-up-the-government",
+     "label": "Legal Insurrection, 'Musk, Ramaswamy Explain How DOGE Will Clean Up the Government', 20 November 2024 (quoting their Wall Street Journal op-ed 'The DOGE Plan to Reform Government', 20 November 2024)"
+    },
+    {
+     "key": "de17_jurist_oped",
+     "url": "https://www.jurist.org/news/2024/11/musk-led-doge-pledges-to-remove-regulations-made-by-unelected-bureaucrats",
+     "label": "JURIST, 'Musk-led DOGE pledges to remove regulations made by unelected bureaucrats', November 2024"
+    },
+    {
+     "key": "de17_wt_ramaswamy",
+     "url": "https://www.washingtontimes.com/news/2025/jan/20/vivek-ramaswamy-mulls-run-ohio-governor-leaves-dog/",
+     "label": "AP via Washington Times, 'Vivek Ramaswamy mulls run for Ohio governor, leaves DOGE', 20 January 2025"
+    }
+   ]
+  },
+  {
+   "id": "de17_legal",
+   "stage": "de17",
+   "topic": "DOGE's legal form: EO 14158, 5 USC 3161, SGEs, the administrator question, FACA and FOIA, GAO personnel report, the end of the temporary organization",
+   "claims": [
+    {
+     "text": "EO 14158 §3: U.S. Digital Service 'publicly renamed as the United States DOGE Service (USDS)', 'established in the Executive Office of the President'; a USDS Administrator in the EOP 'who shall report to the White House Chief of Staff'; a U.S. DOGE Service Temporary Organization under 5 U.S.C. 3161 'dedicated to advancing the President's 18-month DOGE agenda' that 'shall terminate on July 4, 2026'; agency heads to set up a DOGE Team 'of at least four employees', typically 'one DOGE Team Lead, one engineer, one human resources specialist, and one attorney', may include SGEs, within thirty days",
+     "strength": "primary",
+     "sources": [
+      "de17_eo_text"
+     ]
+    },
+    {
+     "text": "EO 14158 §4: Software Modernization Initiative; agency heads 'to ensure USDS has full and prompt access to all unclassified agency records, software systems, and IT systems'; 'USDS shall adhere to rigorous data protection standards' (undefined); §2 agency definition excludes the EOP; §5 'subject to the availability of appropriations'; no enforceable rights",
+     "strength": "primary",
+     "sources": [
+      "de17_eo_text"
+     ]
+    },
+    {
+     "text": "5 U.S.C. 3161(a): a temporary organization is one 'established by law or Executive order for a specific period not in excess of three years' and 'terminated upon the completion of the study or project'; (b) head may appoint staff outside chapter 51 rules; appointments may not exceed three years, extendable up to two more",
+     "strength": "primary",
+     "sources": [
+      "de17_vlex_3161"
+     ]
+    },
+    {
+     "text": "The EO made DOGE an official but temporary part of the EOP instead of the outside task force announced in November; USDS launched under Obama after the troubled HealthCare.gov rollout; a FACA suit (AFGE, Public Citizen, State Democracy Defenders Fund) argued DOGE lacked 'a fair balance of viewpoints', closed meetings, non-public records",
+     "strength": "reported",
+     "sources": [
+      "de17_fnn_structure"
+     ]
+    },
+    {
+     "text": "3 Feb 2025: White House official said Musk is a 'special government employee', unpaid, with a government email and White House office space; unlikely to need to file a public financial disclosure; SGEs usually appointed for up to 130 days; Trump: 'I think Elon is doing a good job. He's a big cost-cutter'",
+     "strength": "reported",
+     "sources": [
+      "de17_ap_sge"
+     ]
+    },
+    {
+     "text": "25 Feb 2025: earlier that day Leavitt declined to name DOGE's leader ('There are career officials and there are political appointees who are helping run DOGE on a day-to-day basis'); the previous day a government lawyer told a judge he did not know who the administrator was; that afternoon the White House named Amy Gleason acting administrator; she worked at USDS 2018–2021 on the federal COVID response and returned in January 2025; previously chief product officer at Russell Street Ventures and Main Street Health; White House said Musk oversees the effort as senior adviser, not a DOGE employee",
+     "strength": "reported",
+     "sources": [
+      "de17_ap_gleason"
+     ]
+    },
+    {
+     "text": "Gleason declaration in CREW v. USDS (filed c. 14 March 2025): 'Elon Musk does not work at USDS'; 'I do not report to him, and he does not report to me'; 'To my knowledge, he is a Senior Advisor to the White House'; she reports to Chief of Staff Susie Wiles",
+     "strength": "reported",
+     "sources": [
+      "de17_bi_gleason"
+     ]
+    },
+    {
+     "text": "4 Mar 2025 joint address: Trump: 'I have created the brand new Department of Government Efficiency, DOGE', 'which is headed by Elon Musk, who is in the gallery tonight'; plaintiffs in the FACA suit cited it the next day",
+     "strength": "primary",
+     "sources": [
+      "de17_abc_address"
+     ]
+    },
+    {
+     "text": "18 Mar 2025: Judge Chuang found Musk likely violated the Appointments Clause; denying the claim because Musk lacks formal authority 'would open the door to an end-run around the Appointments Clause'; Musk may be 'exercising significant authority on governmental matters'; preliminary injunction on USAID shutdown steps",
+     "strength": "reported",
+     "sources": [
+      "de17_upi_chuang"
+     ]
+    },
+    {
+     "text": "28 Mar 2025: Fourth Circuit (Quattlebaum, Niemeyer; Gregory concurring in result) stayed Chuang's order; Quattlebaum: 'unconventional does not necessarily equal unconstitutional'; evidence shows 'a strong likelihood that he functioned as an advisor to the President'; Gregory concurred only because the wrong defendants were sued",
+     "strength": "reported",
+     "sources": [
+      "de17_hill_ca4"
+     ]
+    },
+    {
+     "text": "20 Jan 2025: four suits filed within minutes of the inauguration — three under FACA (APHA/VoteVets/CREW; National Security Counselors; Public Citizen) in D.D.C., and a FOIA suit by Center for Biological Diversity v. OMB",
+     "strength": "reported",
+     "sources": [
+      "de17_lawfare_faca"
+     ]
+    },
+    {
+     "text": "New York Sun, 22 Jan 2025: rebranding an existing White House office as DOGE 'may nullify' the advisory-committee challenges",
+     "strength": "reported",
+     "sources": [
+      "de17_nysun_faca"
+     ]
+    },
+    {
+     "text": "Public Citizen v. Trump (D.D.C., 25-cv-164, Judge Cobb): consolidated with APHA v. OMB and Lentini v. DOGE; Public Citizen plaintiffs dismissed 3 Mar 2025 and APHA 12 May 2025 (both without prejudice); defendants' 11 Apr 2025 motion to dismiss (no private right of action under FACA; Article II) pending; defendants argued Musk as presidential adviser falls within FACA's all-employee exclusion; docket active into June 2026, no relief granted",
+     "strength": "reported",
+     "sources": [
+      "de17_ch_pubcit"
+     ]
+    },
+    {
+     "text": "10 Mar 2025: Judge Christopher Cooper (D.D.C.) found DOGE likely subject to FOIA, citing its 'unusual secrecy' and 'substantial authority over vast swathes of the federal government'; ordered expedited processing of three CREW requests and preservation",
+     "strength": "reported",
+     "sources": [
+      "de17_reason_cooper"
+     ]
+    },
+    {
+     "text": "6 June 2025 Supreme Court order: stay granted, application treated as cert petition and granted; D.C. Circuit mandamus denial vacated and remanded; parts of the April 15 discovery order requiring disclosure of the content of USDS recommendations 'are not appropriately tailored'; 'separation of powers concerns counsel judicial deference and restraint'; did not decide whether USDS is a FOIA agency — that inquiry 'cannot turn on the entity's ability to persuade'; Sotomayor, Kagan, Jackson would have denied",
+     "strength": "primary",
+     "sources": [
+      "de17_scotus_order"
+     ]
+    },
+    {
+     "text": "15 Oct 2026: Supreme Court granted cert in U.S. DOGE Service v. U.S. District Court for D.C., No. 25-1103 — whether CREW may get discovery to show USDS is subject to FOIA; core issue whether USDS 'wields independent authority or is merely a board that exists to advise the president'; argument early 2027; D.C. Circuit had approved CREW's narrowed requests",
+     "strength": "reported",
+     "sources": [
+      "de17_ncc_cert"
+     ]
+    },
+    {
+     "text": "GAO-26-108403 (5 Aug 2026): 206 DOGE personnel held EOP positions 20 Jan 2025–31 Jan 2026 (4 described as leaders); 27 were SGEs; at least 128 had separated; EOP did not provide training records or financial disclosures; nine agencies reported on 64 personnel (49 ethics training, 18 records training, 38 financial disclosures); ten agencies did not provide information; temporary organization terminated 4 July 2026; OGE has not reviewed an EOP ethics program since 2023 and has no plans to review USDS's",
+     "strength": "primary",
+     "sources": [
+      "de17_gao_108403"
+     ]
+    },
+    {
+     "text": "Nextgov 6 Aug 2026: the 27 SGEs include Musk; 127 of 206 were USDS employees with expert/consultant titles; GAO: 'Since the EO does not call for the termination of the broader USDS entity', USDS and agency staff could keep advancing DOGE initiatives; White House did not respond",
+     "strength": "reported",
+     "sources": [
+      "de17_nextgov_108403"
+     ]
+    },
+    {
+     "text": "Reuters 23 Nov 2025: OPM Director Scott Kupor said DOGE 'doesn't exist' and is no longer a 'centralized entity'; no workforce-reduction target; OPM took over many functions; Gebbia heads National Design Studio (August EO); Gleason became an adviser to HHS Secretary Kennedy in March per a court filing; Terrell HHS CTO; Rachel Riley Office of Naval Research; Jeremy Lewin oversees foreign assistance at State; hiring freeze over; White House spokeswoman Liz Huston: Trump 'continues to actively deliver on that commitment'",
+     "strength": "reported",
+     "sources": [
+      "de17_reuters_noexist"
+     ]
+    },
+    {
+     "text": "E&E 2 Jul 2026: temporary organization terminates 4 July 2026; USDS appears to remain; April FY2027 budget sought $35 million for USDS; House appropriators directed 'the Administrator of DOGE' to submit quarterly reports on hires, detailees and transfers; Gleason listed as acting administrator and reported to lead a CMS health-technology office; Terrell and Coristine moved to National Design Studio; Kupor later said DOGE principles 'remain alive and well'; Musk in December 2025 on the Katie Miller Podcast called DOGE 'a little bit successful' and said he would not do it again; savings page not updated since 1 January",
+     "strength": "reported",
+     "sources": [
+      "de17_ee_end"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de17_eo_text",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-29/html/2025-02005.htm",
+     "label": "Executive Order 14158, 'Establishing and Implementing the President's \"Department of Government Efficiency\"', 20 January 2025, 90 Fed. Reg. (29 January 2025)"
+    },
+    {
+     "key": "de17_vlex_3161",
+     "url": "https://us.vlex.com/vid/employment-and-compensation-of-641701133",
+     "label": "5 U.S.C. § 3161, 'Employment and compensation of employees' (temporary organizations), statutory text via vLex"
+    },
+    {
+     "key": "de17_fnn_structure",
+     "url": "https://federalnewsnetwork.com/?p=5305837",
+     "label": "Federal News Network, 'Trump installs DOGE within White House, scrapping plan for an outsider task force', 20–21 January 2025"
+    },
+    {
+     "key": "de17_ap_sge",
+     "url": "https://www.wcax.com/2025/02/03/musk-is-special-government-employee-white-house-confirms",
+     "label": "AP via WCAX, 'Musk is a special government employee, the White House confirms', 3 February 2025"
+    },
+    {
+     "key": "de17_ap_gleason",
+     "url": "https://www.news4jax.com/news/politics/2025/02/25/who-is-amy-gleason-the-person-named-doges-acting-leader-by-the-white-house/",
+     "label": "Ryan J. Foley, AP via News4JAX, 'Who is Amy Gleason, the person named DOGE's acting leader by the White House?', 25 February 2025"
+    },
+    {
+     "key": "de17_bi_gleason",
+     "url": "https://www.yahoo.com/news/amy-gleason-says-she-does-024606121.html",
+     "label": "Katherine Tangalakis-Lippert, Business Insider via Yahoo, on Amy Gleason's declaration in CREW v. U.S. DOGE Service, 15 March 2025"
+    },
+    {
+     "key": "de17_abc_address",
+     "url": "https://www.goodmorningamerica.com/news/story/lawyers-trumps-speech-congress-suit-doge-119477540",
+     "label": "ABC News (Good Morning America), 'Lawyers cite Trump's speech to Congress in suit over DOGE', 5 March 2025"
+    },
+    {
+     "key": "de17_upi_chuang",
+     "url": "https://www.upi.com/Top_News/US/2025/03/18/judge-ruling-Elon-Musk-doge-usaid-unconstitutional/2801742330598/",
+     "label": "UPI, on Judge Theodore Chuang's ruling in the USAID employees' suit (Does 1–26 v. Musk, D. Md.), 18 March 2025"
+    },
+    {
+     "key": "de17_hill_ca4",
+     "url": "https://www.yahoo.com/news/appeals-court-enables-musk-resume-213623642.html",
+     "label": "The Hill via Yahoo, 'Appeals court enables Musk to resume cuts at USAID', 28 March 2025"
+    },
+    {
+     "key": "de17_lawfare_faca",
+     "url": "https://www.lawfaremedia.org/article/advocacy-groups-file-four-lawsuits-against-musk-led-doge",
+     "label": "Lawfare, 'Advocacy groups file four lawsuits against Musk-led DOGE', January 2025"
+    },
+    {
+     "key": "de17_nysun_faca",
+     "url": "https://nysun.com/article/challenges-against-doge-undercut-trumps-make-executive-agency",
+     "label": "Bradley Cortright, New York Sun, 'Early legal challenges against DOGE could be undercut by Trump's move to make it an executive agency', 22 January 2025"
+    },
+    {
+     "key": "de17_ch_pubcit",
+     "url": "https://clearinghouse.net/case/45971/",
+     "label": "Civil Rights Litigation Clearinghouse, 'Public Citizen, Inc. v. Trump', No. 1:25-cv-00164 (D.D.C.), docket summary (accessed 28 October 2026)"
+    },
+    {
+     "key": "de17_reason_cooper",
+     "url": "https://reason.com/2025/03/11/doge-isnt-exempt-from-foia-requests-judge-rules/",
+     "label": "Reason, 'DOGE isn't exempt from FOIA requests, judge rules', 11 March 2025"
+    },
+    {
+     "key": "de17_scotus_order",
+     "url": "https://www.supremecourt.gov/orders/courtorders/060625zr_5426.pdf",
+     "label": "Supreme Court of the United States, order in U.S. DOGE Service v. CREW (No. 24A1122 / 24-1246), 6 June 2025"
+    },
+    {
+     "key": "de17_ncc_cert",
+     "url": "https://constitutioncenter.org/blog/supreme-court-takes-open-records-case-involving-doge",
+     "label": "Mark Sherman, National Constitution Center, 'Supreme Court takes open records case involving DOGE', 15 October 2026"
+    },
+    {
+     "key": "de17_gao_108403",
+     "url": "https://www.gao.gov/products/gao-26-108403",
+     "label": "U.S. Government Accountability Office, GAO-26-108403, 'DOGE: Information on Personnel and Ethics Activities', 5 August 2026"
+    },
+    {
+     "key": "de17_nextgov_108403",
+     "url": "https://www.nextgov.com/people/2026/08/watchdog-numbers-size-doge-many-details-remain-unknown/415242/",
+     "label": "Sean Michael Newhouse, Nextgov/FCW, 'Watchdog puts new numbers on the size of DOGE, but many details remain unknown', 6 August 2026"
+    },
+    {
+     "key": "de17_reuters_noexist",
+     "url": "https://www.thestar.com.my/news/world/2025/11/23/exclusive-doge-039doesn039t-exist039-with-eight-months-left-on-its-charter",
+     "label": "Courtney Rozen, Reuters via The Star, 'Exclusive: DOGE \"doesn't exist\" with eight months left on its charter', 23 November 2025"
+    },
+    {
+     "key": "de17_ee_end",
+     "url": "https://eenews.net/articles/doge-self-deletes-on-july-4th-the-grand-experiment-fell-apart-long-before-that/",
+     "label": "Kevin Bogardus and Scott Waldman, E&E News by Politico, 'DOGE self-deletes on July 4th', 2 July 2026"
+    }
+   ]
+  }
+ ]
+}
