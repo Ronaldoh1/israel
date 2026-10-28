@@ -1,4 +1,4 @@
-# Volume plan (DRAFT v0.3, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
+# Volume plan (DRAFT v0.4, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
 Status: outline only. Ron is still supplying research; do not start writing until he says so.
 
@@ -40,14 +40,24 @@ I. THE IDEAS
 - de7 The Diagnosis, Steelmanned — de7_what_it_gets_right, de7_the_other_diagnosis
 - de8 Where the Argument Breaks — de8_tests_it_fails, de8_who_enforces_the_charter
 
-II. THE MONEY AND THE MEN
-- de9 Peter Thiel: the Life (1967–2026, full documented biography) — de9_frankfurt_to_stanford, de9_paypal_palantir_facebook, de9_gawker_citizenship_and_tax, de9_politics_and_argentina
+II. THE MONEY AND THE MEN (each biography part ends with two standard sections: "Money and political influence" — a donations-and-access ledger by cycle, FEC/OpenSecrets-sourced — and "Claims against the record" — the red-flag ledger, see rubric below)
+- de9 Peter Thiel: the Life (1967–2026) — de9_formation, de9_paypal_palantir_facebook, de9_gawker_citizenship_and_tax, de9_politics_and_argentina, de9_money_and_influence, de9_claims_vs_record
 - de10 Peter Thiel: the Mind — de10_education_of_a_libertarian, de10_girard_and_the_katechon, de10_philosophy_vs_practice
-- de11 Elon Musk: the Life (1971–2026, full documented biography) — de11_pretoria_and_haldeman, de11_zip2_xcom_paypal (the merger with Thiel's Confinity, the 2000 ouster), de11_tesla_spacex_and_the_state ($38bn in public money), de11_twitter_x_and_2024 (campaign spending)
-- de12 The PayPal Network — de12_who_they_are (Thiel, Musk, Sacks, Hoffman, Lonsdale, Rabois…, ties typed and dated), de12_where_they_sit_now (government roles, contracts)
-- de13 The Money — de13_network_map, de13_loops, de13_foundations_and_opacity, de13_epstein_valar
-- de14 The Same Playbook, Twice (Vance and Masters) — de14_vance, de14_masters
-- de15 The Adoption Layer — de15_the_valley, de15_elite_pipeline
+- de11 Elon Musk: the Life (1971–2026) — de11_pretoria_and_haldeman, de11_zip2_xcom_paypal, de11_tesla_spacex_and_the_state, de11_twitter_x_xai, de11_money_and_influence, de11_claims_vs_record
+- de12 J.D. Vance: the Life (1984–2026) — de12_middletown_to_yale, de12_the_thiel_years (2011 talk, Mithril 2016 in San Francisco, Narya 2019), de12_senate_and_the_ticket (Protect Ohio Values $15M, the 2024 selection and who pushed it), de12_one_heartbeat_away (the 25th Amendment line of succession; the worst-case reading for the Thiel network, tested), de12_money_and_influence, de12_claims_vs_record
+- de13 The PayPal Network — de13_who_they_are, de13_where_they_sit_now
+- de14 The Money — de14_network_map, de14_loops (incl. "Vance as an investment": candidate → office → policy → portfolio, a candidate loop, graded), de14_foundations_and_opacity, de14_epstein_valar
+- de15 The Same Playbook, Twice (Vance and Masters) — de15_vance_and_masters
+- de15b The Adoption Layer — de15b_the_valley, de15b_elite_pipeline
+(Yarvin keeps his two parts, de5–de6, with the same two closing sections.)
+
+## Red-flag rubric: public claims against the documented record (Ron, 28 Oct 2026)
+Flag major dishonesty or misleading self-presentation that shapes public perception. Each flag: the claim (dated, own words, sourced) → the record (sourced) → the grade. Grades, strongest first:
+- RED — contradicted by the person's own documents or sworn record (e.g. a statement the person's own earlier email or filing shows to be untrue).
+- ORANGE — promise or claim not delivered / not verifiable by the official auditor (e.g. DOGE savings vs GAO; the dividend).
+- YELLOW — reversal or concealment (a stated position later abandoned, or a fact kept hidden while claiming the opposite), shown with the person's own explanation.
+- GREY — disputed: credible accounts conflict; both shown.
+"Lie" is used only where the record shows the person knew the claim was untrue when making it; otherwise the flag names the contradiction and lets the reader judge. Same standard for every person, every party.
 
 III. DOGE: THE ARCHITECTURE (worst case: cuts as the occasion)
 - de16 The Deal: Campaign Money to an Office (America PAC spending; appointment; DOGE's legal form — USDS renamed, temporary organization, special government employee status) — de16_money_to_office, de16_what_doge_was_legally
