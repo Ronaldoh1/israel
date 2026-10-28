@@ -44,6 +44,13 @@
      "de31_crs_in12363",
      "de31_npr_igs"
     ]
+   },
+   {
+    "text": "CIGIE FY2024 data: all federal IGs reported about $71bn in monetary impact against a $3.9bn budget (about 18:1); Sen. Peters's May 2025 report said the 19 fired IGs had identified $175bn in potential savings on open recommendations; the comparison with DOGE depends on which DOGE figure is used",
+    "strength": "reported",
+    "sources": [
+     "de31_lawfare_igs"
+    ]
    }
   ],
   "sources": {
@@ -70,6 +77,10 @@
    "de31_crs_in12363": {
     "url": "https://www.everycrsreport.com/reports/IN12363.html",
     "label": "Congressional Research Service, IN12363, 'Removal of Inspectors General: The First Tests of New Statutory Requirements', 20 May 2024"
+   },
+   "de31_lawfare_igs": {
+    "url": "https://www.lawfaremedia.org/article/report-outlines-contributions-of-inspectors-general-fired-by-trump",
+    "label": "Lawfare, 'Report Outlines Contributions of Inspectors General Fired by Trump', May 2025 (on Sen. Peters's HSGAC report and CIGIE FY2024 data)"
    }
   }
  },
@@ -132,6 +143,155 @@
    "de31_rc_scotus_aid": {
     "url": "https://rollcall.com/2025/09/26/supreme-court-allows-us-to-cancel-4-billion-in-foreign-aid-funds/",
     "label": "Roll Call, 'Supreme Court allows US to cancel $4 billion in foreign aid funds', 26 September 2025"
+   }
+  }
+ },
+ "de31_emergency": {
+  "topic": "Emergency powers: IEEPA tariffs, Section 122 and 301 replacement, congressional votes; Biden v. Nebraska precedent",
+  "claims": [
+   {
+    "text": "Court of International Trade, 7 May 2026, 2-1: the Section 122 10% global tariff proclamation exceeded presidential authority; relief limited to plaintiff importers and Washington State; DOJ appealed 8 May and the Federal Circuit granted a temporary stay 12 May; about $166bn of IEEPA duties being refunded through CBP's CAPE system, phase 1 from late April 2026",
+    "strength": "reported",
+    "sources": [
+     "de31_gt_s122"
+    ]
+   },
+   {
+    "text": "The Section 122 tariff expired 24 July 2026 and was replaced the same day by 'Forced Labor Tariffs' of 10-12.5% on goods from 60 economies under Section 301, said to cover 99% of US imports with exemptions",
+    "strength": "reported",
+    "sources": [
+     "de31_cg_301"
+    ]
+   },
+   {
+    "text": "Senate, 29 Oct 2025, 50-46, passed a resolution to terminate the national emergency behind the Canada tariffs; Republicans Murkowski, Collins, McConnell and Paul joined Democrats; a Brazil resolution passed 28 Oct; House Republican rules let leaders block such votes",
+    "strength": "reported",
+    "sources": [
+     "de31_bnn_senate"
+    ]
+   },
+   {
+    "text": "House, 11 Feb 2026, 219-211 with six Republicans, voted to end the Canada tariff emergency; Bacon: 'We should defend our authorities'; Hassett: 'The president will make sure they don't repeal his tariffs'",
+    "strength": "reported",
+    "sources": [
+     "de31_ap_house"
+    ]
+   },
+   {
+    "text": "Biden v. Nebraska, 30 June 2023, 6-3: the HEROES Act, invoked on the COVID-19 national emergency, did not authorise the student-loan plan (more than $430bn principal, 40 million borrowers); the Secretary cannot 'rewrite the statute from the ground up'",
+    "strength": "reported",
+    "sources": [
+     "de31_ag_nebraska"
+    ]
+   }
+  ],
+  "sources": {
+   "de31_gt_s122": {
+    "url": "https://www.gtlaw.com/en/insights/2026/5/us-tariff-update-section-122-duties-found-unauthorized-by-law-ieepa-refunds-under-way",
+    "label": "Greenberg Traurig, 'U.S. Tariff Update: Section 122 Duties Found Unauthorized by Law; IEEPA Refunds Under Way', 11 May 2026"
+   },
+   "de31_cg_301": {
+    "url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/trump-administration-imposes-new-section-301-tariffs-on-60-trading-partners",
+    "label": "Cleary Gottlieb, 'Trump Administration Imposes New Section 301 Tariffs on 60 Trading Partners', 3 August 2026"
+   },
+   "de31_bnn_senate": {
+    "url": "https://www.bnnbloomberg.ca/tariffs/2025/10/30/us-senate-votes-50-46-to-nullify-trump-tariffs-on-canada-with-four-republicans-crossing-aisle/",
+    "label": "Bloomberg via BNN Bloomberg, 'US Senate votes 50-46 to nullify Trump tariffs on Canada', 30 October 2025"
+   },
+   "de31_ap_house": {
+    "url": "https://abc13.com/post/house-votes-slap-back-trumps-tariffs-canada-rare-bipartisan-rebuke-white-agenda/18587816/",
+    "label": "AP via ABC13, 'House votes to slap back Trump's tariffs on Canada in rare bipartisan rebuke', 12 February 2026"
+   },
+   "de31_ag_nebraska": {
+    "url": "https://www.akingump.com/en/insights/blogs/ag-study-guide/supreme-court-rules-against-biden-harris-administrations-student-loan-forgiveness-plan",
+    "label": "Akin Gump, 'Supreme Court Rules Against Biden Administration's Student Loan Forgiveness Plan' (Biden v. Nebraska), 30 June 2023"
+   }
+  }
+ },
+ "de31_removal": {
+  "topic": "Removal power: bipartisan precedent (Biden's removal of SSA commissioner Saul, 2021)",
+  "claims": [
+   {
+    "text": "On 9 July 2021 President Biden removed Social Security Commissioner Andrew Saul, whose statute allowed removal only for cause; an OLC opinion the same day, relying on Collins v. Yellen and Seila Law, said 'the statutory restriction on removing the commissioner is unconstitutional'; Saul: 'I consider myself the term-protected Commissioner of Social Security'",
+    "strength": "reported",
+    "sources": [
+     "de31_govexec_saul"
+    ]
+   },
+   {
+    "text": "EO 14215 (18 Feb 2025): independent agencies' significant rules go to OIRA before publication (FEC included); OMB sets performance standards and may adjust apportionments; White House liaisons; Sec. 7: the President's and AG's legal opinions 'are controlling on all employees' and no employee may advance a contrary legal position without written authorisation; the Fed's monetary policy excepted, the Board covered only for supervision and regulation",
+    "strength": "primary",
+    "sources": [
+     "de31_fr_14215"
+    ]
+   }
+  ],
+  "sources": {
+   "de31_govexec_saul": {
+    "url": "https://www.govexec.com/management/2021/07/biden-ousts-trump-holdovers-social-security-administration/183655",
+    "label": "Government Executive, 'Biden Ousts Trump Holdovers from Social Security Administration', 9 July 2021"
+   },
+   "de31_fr_14215": {
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-02-24/html/2025-03063.htm",
+    "label": "Executive Order 14215, 'Ensuring Accountability for All Agencies', 18 February 2025, 90 FR 10447"
+   }
+  }
+ },
+ "de31_data": {
+  "topic": "Data-sharing brakes loosened: CFPB data-broker rule withdrawal; industry response",
+  "claims": [
+   {
+    "text": "The CFPB withdrew its proposed rule 'Protecting Americans From Harmful Data Broker Practices (Regulation V)' (published 13 December 2024) effective 15 May 2025, citing 'updates to Bureau policies', 'its changed policy objectives', commenters' concerns and 'questions as to the Bureau's statutory authority'",
+    "strength": "primary",
+    "sources": [
+     "de31_fr_broker"
+    ]
+   },
+   {
+    "text": "CDIA president Dan Smith (14 May 2025): 'We appreciate CFPB Acting Director Russel Vought's leadership in recognizing the concerns we flagged'; said the rule 'did not align with the plain text of the Fair Credit Reporting Act'",
+    "strength": "primary",
+    "sources": [
+     "de31_cdia"
+    ]
+   }
+  ],
+  "sources": {
+   "de31_fr_broker": {
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-05-15/html/2025-08644.htm",
+    "label": "Consumer Financial Protection Bureau, 'Protecting Americans From Harmful Data Broker Practices (Regulation V); Withdrawal of Proposed Rule', 90 FR (15 May 2025)"
+   },
+   "de31_cdia": {
+    "url": "https://www.cdiaonline.org/?p=31173",
+    "label": "Consumer Data Industry Association, press release on the CFPB's withdrawal of the proposed data broker rule, 14 May 2025"
+   }
+  }
+ },
+ "de31_blocked": {
+  "topic": "What was blocked: CASA narrowing, AI moratorium stripped 99-1",
+  "claims": [
+   {
+    "text": "Trump v. CASA, 27 June 2025, 6-3 (Barrett): universal injunctions 'likely exceed the equitable authority that Congress has granted to federal courts'; class actions, APA vacatur and state relief left open; a New Hampshire court certified a class and enjoined the birthright-citizenship order class-wide on 10 July 2025; CRS counted 34 nationwide injunctions against the second administration from 20 Jan to 27 June 2025; Harvard Law Review counts 6 Bush, 12 Obama, 64 Trump-1, 14 in Biden's first three years",
+    "strength": "primary",
+    "sources": [
+     "de31_crs_casa"
+    ]
+   },
+   {
+    "text": "Senate on 1 July 2025 voted 99-1 to strip a 10-year state AI-law moratorium from the reconciliation bill; amendment by Markey (D), Cantwell (D) and Blackburn (R); it would have tied states' AI enforcement to BEAD broadband money",
+    "strength": "primary",
+    "sources": [
+     "de31_markey_ai"
+    ]
+   }
+  ],
+  "sources": {
+   "de31_crs_casa": {
+    "url": "https://www.everycrsreport.com/files/2025-07-16_R48600_b92a99688703a84ad4da3a4c5a35af95b966b39a.html",
+    "label": "Congressional Research Service, R48600, on Trump v. CASA, Inc. and nationwide injunctions, 16 July 2025"
+   },
+   "de31_markey_ai": {
+    "url": "https://www.markey.senate.gov/news/press-releases/after-weeks-of-markey-raising-the-alarm-senate-strikes-ai-moratorium-from-budget-reconciliation-bill-overnight-in-overwhelming-99-1-vote",
+    "label": "Sen. Edward Markey, press release on the Senate's 99-1 vote to strike the AI moratorium, 1 July 2025"
    }
   }
  }
