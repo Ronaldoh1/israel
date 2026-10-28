@@ -79,7 +79,7 @@ BOOK VI · THE PATHWAY AND THE FORCE
 
 BOOK VII · THE TEST
 - de34 The Readiness Audit — de34_what_is_built, de34_the_repurposing_test, de34_missing_pieces_and_triggers
-- de35 If It Were Enforced — de35_three_layers, de35_the_consequence_ladder (watched → denied → fined → prosecuted → removed → confined; each rung: what the theorists prescribe / what exists now / the worst-case extension), de35_the_rights_ledger (every right in a democratic republic against its fate under a CEO-sovereign), de35_the_unproductive
+- de35 If It Were Enforced — de35_three_layers, de35_the_consequence_ladder (watched → denied → fined → prosecuted → removed → confined → compelled labour, the 13th Amendment's punishment exception; theorists' own words on slavery (Yarvin's Carlyle posts) and surplus residents; documented now: prison labour at 15–52 cents an hour, ICE detention's $1-a-day work programme and the GEO minimum-wage verdicts, CECOT; precedent: post-Reconstruction convict leasing; states that removed the exception; each rung: what the theorists prescribe / what exists now / the worst-case extension), de35_the_rights_ledger (every right in a democratic republic against its fate under a CEO-sovereign), de35_the_unproductive
 - de36 Beyond America — de36_who_reads_it_abroad, de36_would_publics_want_it, de36_foreign_money
 - de37 Israel: Documented Ties Only — de37_palantir_and_israel, de37_what_is_not_supported
 - de38 What Doesn't Fit — de38_disagreements, de38_claims_that_fail, de38_the_honest_nulls
