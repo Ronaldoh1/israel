@@ -1,5 +1,38 @@
-{"chapter":"de25","title":"Part Twenty-Five: The Toolkit II: Where You Are","sections":[
-{"s": "de25_location_and_mobile", "draws": [], "research": ["de25_location", "de25_joins"], "writer": "R", "brief": "Three routes to a phone's location (carrier CSLI, OS/Google Location History, app SDKs and the RTB bidstream, defined); FTC X-Mode (9 Jan 2024), Mobilewalla lost bids (Dec 2024), Gravy/Venntel order with national-security/law-enforcement exception (14 Jan 2025); buyers under both parties: CBP Venntel $476k (5 Aug 2020), IRS-CI no targets, Fog Data Science (18+ agencies), DHS OIG-23-61 (PIA breaches, employee tracked coworkers), ICE Penlink Webloc (2025; warrantless per internal analysis), 70-member letter 3 Mar 2026, FBI Wray 2023 vs Patel 18 Mar 2026; carriers: FCC fines Apr 2024 (~$57m/$47m/$80m/$12m) upheld 8-1 by SCOTUS 4 Jun 2026; Hemisphere/DAS (NYT 2013; Wyden 20 Nov 2023: trillions of records, subpoenas, funding pauses across administrations); courts: Carpenter, Chatrie (5-1-3, remand), Reeves tower dumps per se unconstitutional (S.D. Miss.); purchase gap -> de28; worst-case extension as capability; Penlink $2.3m Tangles+Webloc licences (not the company); 'If it were connected': LexisNexis->Palantir API documented, Penlink->Palantir probable, benefits/travel joins possible, Goldman-Wyden letter unanswered. Figures: flow, time, compare"},
-{"s": "de25_spyware_and_phones", "draws": [], "research": ["de25_spyware", "de25_joins"], "writer": "R", "brief": "Remote spyware vs extraction vs cell-site simulators; end-to-end encryption and metadata defined; FORCEDENTRY mechanism (Project Zero); Pegasus: FBI bought/tested, ceased 22 Jul 2021, Riva/Landmark, Entity List 3 Nov 2021, WhatsApp verdict and injunction, contempt motion, new owners, delisting not reported; Graphite: ICE $2m 27 Sep 2024, EO 14093 hold, AE sale, hold lifted 30 Aug 2025, Lyons 1 Apr 2026, legal authority unanswered (Lee); Italy: COPASIR June 2025, prosecutors confirm Cancellato March 2026, Paragon silent; Cellebrite (2017 $2.2m, 2019 up to $30-35m, 2025 C3, May 2026 $100m forecast), GrayKey ($5m 2024, $3m 2025), Serbia misuse and suspension; CBP 55,318 device searches FY2025; simulators: DOJ 2015 policy, OIG-23-17, ICE TOSV $818k (2024) and $825k (2025), use counts; worst-case extension; Paragon status: closed out 20 Jan 2026, DHS 'no relationship' (May 2026), capability neither confirmed nor denied; 'If it were connected': Cellebrite->Palantir import documented (2014-22), spyware joins undocumented, location+simulator+extraction sequence possible. Figures: compare, time"},
-{"s": "de25_cars_wearables_and_the_home", "draws": [], "research": ["de25_cars_home", "de25_location", "de25_spyware", "de25_joins"], "writer": "R", "brief": "Could collect vs does collect; three routes (legal demand, device seizure, purchase). Cars: GM/OnStar to LexisNexis (NYT Mar 2024), Texas suit, FTC 20-year order with 5-year ban (Jan 2026, 2-0); Wyden-Markey automaker table (warrant vs subpoena, retention, Tesla only notifies); Berla iVe (CBP kits; DHS 'no longer partners' 2023 vs HSI 2025-26 renewal) and Ensurity trackers. Tesla: privacy notice and LER guidelines; Reuters 2023 employee sharing; Oakland Sentry warrants; Las Vegas data sent by Musk; Blumenthal DOGE questions, no transfer documented. Wearables: HIPAA gap, Kennedy 24 Jun 2025, Dabate Fitbit, Flo/Meta CIPA verdict, Apple Health E2E, Washington MHMDA. Home: ACR defined, Vizio 2017, Texas TV suits and Samsung settlement, Alexa cloud-only, Bates, FTC Alexa/Ring, Ring 11 no-consent releases, Axon requests, no ICE partnership, Nest residual data. Part's worst-case test: documented / probable / not supported, with record running against; 'If it were connected': GM->LexisNexis documented, broker->ICE Palantir documented as requirement, telematics->ICE possible, Ring->ICE and wearables/TV->government not supported. Figures: compare, compare"}
-]}
+{
+ "chapter": "de25",
+ "title": "Part Twenty-Six: The Toolkit II: Where You Are",
+ "sections": [
+  {
+   "s": "de25_location_and_mobile",
+   "draws": [],
+   "research": [
+    "de25_location",
+    "de25_joins"
+   ],
+   "writer": "R",
+   "brief": "Three routes to a phone's location (carrier CSLI, OS/Google Location History, app SDKs and the RTB bidstream, defined); FTC X-Mode (9 Jan 2024), Mobilewalla lost bids (Dec 2024), Gravy/Venntel order with national-security/law-enforcement exception (14 Jan 2025); buyers under both parties: CBP Venntel $476k (5 Aug 2020), IRS-CI no targets, Fog Data Science (18+ agencies), DHS OIG-23-61 (PIA breaches, employee tracked coworkers), ICE Penlink Webloc (2025; warrantless per internal analysis), 70-member letter 3 Mar 2026, FBI Wray 2023 vs Patel 18 Mar 2026; carriers: FCC fines Apr 2024 (~$57m/$47m/$80m/$12m) upheld 8-1 by SCOTUS 4 Jun 2026; Hemisphere/DAS (NYT 2013; Wyden 20 Nov 2023: trillions of records, subpoenas, funding pauses across administrations); courts: Carpenter, Chatrie (5-1-3, remand), Reeves tower dumps per se unconstitutional (S.D. Miss.); purchase gap -> de28; worst-case extension as capability; Penlink $2.3m Tangles+Webloc licences (not the company); 'If it were connected': LexisNexis->Palantir API documented, Penlink->Palantir probable, benefits/travel joins possible, Goldman-Wyden letter unanswered. Figures: flow, time, compare"
+  },
+  {
+   "s": "de25_spyware_and_phones",
+   "draws": [],
+   "research": [
+    "de25_spyware",
+    "de25_joins"
+   ],
+   "writer": "R",
+   "brief": "Remote spyware vs extraction vs cell-site simulators; end-to-end encryption and metadata defined; FORCEDENTRY mechanism (Project Zero); Pegasus: FBI bought/tested, ceased 22 Jul 2021, Riva/Landmark, Entity List 3 Nov 2021, WhatsApp verdict and injunction, contempt motion, new owners, delisting not reported; Graphite: ICE $2m 27 Sep 2024, EO 14093 hold, AE sale, hold lifted 30 Aug 2025, Lyons 1 Apr 2026, legal authority unanswered (Lee); Italy: COPASIR June 2025, prosecutors confirm Cancellato March 2026, Paragon silent; Cellebrite (2017 $2.2m, 2019 up to $30-35m, 2025 C3, May 2026 $100m forecast), GrayKey ($5m 2024, $3m 2025), Serbia misuse and suspension; CBP 55,318 device searches FY2025; simulators: DOJ 2015 policy, OIG-23-17, ICE TOSV $818k (2024) and $825k (2025), use counts; worst-case extension; Paragon status: closed out 20 Jan 2026, DHS 'no relationship' (May 2026), capability neither confirmed nor denied; 'If it were connected': Cellebrite->Palantir import documented (2014-22), spyware joins undocumented, location+simulator+extraction sequence possible. Figures: compare, time"
+  },
+  {
+   "s": "de25_cars_wearables_and_the_home",
+   "draws": [],
+   "research": [
+    "de25_cars_home",
+    "de25_location",
+    "de25_spyware",
+    "de25_joins"
+   ],
+   "writer": "R",
+   "brief": "Could collect vs does collect; three routes (legal demand, device seizure, purchase). Cars: GM/OnStar to LexisNexis (NYT Mar 2024), Texas suit, FTC 20-year order with 5-year ban (Jan 2026, 2-0); Wyden-Markey automaker table (warrant vs subpoena, retention, Tesla only notifies); Berla iVe (CBP kits; DHS 'no longer partners' 2023 vs HSI 2025-26 renewal) and Ensurity trackers. Tesla: privacy notice and LER guidelines; Reuters 2023 employee sharing; Oakland Sentry warrants; Las Vegas data sent by Musk; Blumenthal DOGE questions, no transfer documented. Wearables: HIPAA gap, Kennedy 24 Jun 2025, Dabate Fitbit, Flo/Meta CIPA verdict, Apple Health E2E, Washington MHMDA. Home: ACR defined, Vizio 2017, Texas TV suits and Samsung settlement, Alexa cloud-only, Bates, FTC Alexa/Ring, Ring 11 no-consent releases, Axon requests, no ICE partnership, Nest residual data. Part's worst-case test: documented / probable / not supported, with record running against; 'If it were connected': GM->LexisNexis documented, broker->ICE Palantir documented as requirement, telematics->ICE possible, Ring->ICE and wearables/TV->government not supported. Figures: compare, compare"
+  }
+ ]
+}
