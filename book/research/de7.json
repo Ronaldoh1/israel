@@ -242,6 +242,51 @@
      "label": "American Dialect Society, '2023 Word of the Year Is \"Enshittification\"', 5 January 2024"
     }
    ]
+  },
+  {
+   "id": "de7_audit",
+   "stage": "de7",
+   "topic": "Audit re-verification of de7 (28 Oct 2026)",
+   "claims": [
+    {
+     "text": "Yarvin (NYT Jan 2025): 'I do a speech sometimes where I'll just read the last 10 paragraphs of FDR's first inaugural address'; 'This is just a picture of FDR acting like a CEO'; 'FDR ran the new deal like a startup'; asked whether FDR took that power: 'Yeah, he did'",
+     "strength": "primary",
+     "sources": [
+      "de7_audit_nyt"
+     ]
+    },
+    {
+     "text": "Land (p. 3), summarising Lind and the neo-reactionaries: democracy is 'indistinguishable from the expansion of the state'; 'winning elections is overwhelmingly a matter of vote buying'",
+     "strength": "primary",
+     "sources": [
+      "de7_audit_land"
+     ]
+    },
+    {
+     "text": "CNN (30 May 2025), asked how to stop a leader becoming 'the next Hitler or Stalin', Yarvin: 'You need to concentrate that power in a single individual' and 'hope somehow that this is the right individual, or close to the right individual'; monarch accountable to 'some sort of corporate board' 'but not by the average citizen'; CNN reported the 2022 'ninjas' who would 'drop into all the agencies in the executive branch'",
+     "strength": "reported",
+     "sources": [
+      "de7_audit_cnn"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de7_audit_nyt",
+     "url": "https://podscripts.co/podcasts/the-daily/the-interview-curtis-yarvin-says-democracy-is-done-powerful-conservatives-are-listening",
+     "label": "The Interview (NYT), Marchese with Yarvin, 18 Jan 2025, transcript"
+    },
+    {
+     "key": "de7_audit_land",
+     "url": "https://www.gwern.net/docs/www/www.thedarkenlightenment.com/8fb594d142764625b62157ff0c8f51bae346da3b.html",
+     "label": "Nick Land, The Dark Enlightenment, Part 1 (2012), e-book p. 3"
+    },
+    {
+     "key": "de7_audit_cnn",
+     "url": "https://edition.cnn.com/2025/05/30/politics/curtis-yarvin-wants-to-replace-american-democracy-with-a-form-of-monarchy-led-by-a-ceo",
+     "label": "CNN, 30 May 2025"
+    }
+   ]
   }
  ]
 }

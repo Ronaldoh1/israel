@@ -1,6 +1,6 @@
 # Volume plan (OUTLINE v1.0, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
-Status: outline only. Ron is still supplying research; do not start writing until he says so.
+Status: writing. Preface + Book I (de1–de8) written and audited 28 Oct 2026; Book II next.
 
 Working title: The Dark Enlightenment Architecture
 Working subtitle: Philosophy, Money, Technology and the Executive Without a Veto
