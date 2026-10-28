@@ -1,0 +1,39 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de0_frame",
+   "stage": "de0",
+   "topic": "Preface: the executive order that created DOGE and the 2026 removal-power ruling",
+   "claims": [
+    {
+     "text": "EO 14158, signed 20 January 2025, established the Department of Government Efficiency to implement 'the President's DOGE Agenda' by modernizing federal technology and software; it renamed the US Digital Service the US DOGE Service and set the DOGE temporary organization to terminate on 4 July 2026.",
+     "strength": "primary",
+     "sources": [
+      "de0_eo14158"
+     ]
+    },
+    {
+     "text": "Trump v. Slaughter, 29 June 2026, 6-3 (Roberts, C.J.; Sotomayor, Kagan, Jackson dissenting): Humphrey's Executor overruled; the FTC Act's for-cause removal protection is unconstitutional and the President may remove FTC commissioners at will. The Court left open offices traditionally outside the executive branch, naming the Federal Reserve; in Trump v. Cook the same day it denied the government's stay application.",
+     "strength": "reported",
+     "sources": [
+      "de0_slaughter"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de0_eo14158",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-29/html/2025-02005.htm",
+     "label": "Executive Order 14158, 'Establishing and Implementing the President's \"Department of Government Efficiency\"', 90 FR (29 January 2025)"
+    },
+    {
+     "key": "de0_slaughter",
+     "url": "https://www.venable.com/insights/publications/2026/06/supreme-court-overrules-humphreys-executor",
+     "label": "Venable LLP, 'Supreme Court Overrules Humphrey's Executor and Permits At-Will Removal of FTC Commissioners', June 2026"
+    }
+   ]
+  }
+ ]
+}
