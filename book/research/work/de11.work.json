@@ -665,5 +665,67 @@
     "label": "CBS News, on Musk at the World Governments Summit, Dubai, 13 February 2025"
    }
   }
+ },
+ "de11_audit": {
+  "topic": "Audit additions: giveaway litigation, GAO on DOGE savings, Musk's June 2025 retraction",
+  "claims": [
+   {
+    "text": "McAferty v. Musk et al. (W.D. Tex., No. 24-01346): Judge Robert Pitman on 20 Aug 2025 denied Musk's motion to dismiss a proposed class action alleging the $1M giveaway induced voters to give personal data by promising a random chance; Musk argued recipients were 'selected to earn' the money as America PAC spokespeople, so it was not a prize; Pitman pointed to statements describing the money as 'awarded' and something that could be 'won'",
+    "strength": "reported",
+    "sources": [
+     "de11_audit_mcaferty"
+    ]
+   },
+   {
+    "text": "AP 4 Nov 2024 (ClickOnDetroit): Musk's lawyer Chris Gober: 'We know exactly who will be announced as the $1 million recipient today and tomorrow'; America PAC director and treasurer Chris Young conceded 'randomly' was not 'the word I would have selected'",
+    "strength": "reported",
+    "sources": [
+     "de11_ap_sweeps"
+    ]
+   },
+   {
+    "text": "GAO-26-108615 (Aug 2026): reviewed $110bn of DOGE-claimed contract, grant and lease savings as of 7 July 2026; DOGE did not use its stated methodology for the majority of savings tied to contracts reported as terminated; GAO could not verify the method behind 96 percent of reported grant savings because DOGE did not provide sufficient information; a $1.7bn Defense Health Agency contract claim produced no savings since no termination action was taken; 108 of 264 leases (about $15.3M of $53.5M) were already being terminated before DOGE existed",
+    "strength": "primary",
+    "sources": [
+     "de11_audit_gao_savings"
+    ]
+   },
+   {
+    "text": "Musk on X, 11 June 2025: 'I regret some of my posts about President @realDonaldTrump last week. They went too far.' He had earlier deleted the post alleging Trump was in the Epstein files",
+    "strength": "reported",
+    "sources": [
+     "de11_audit_pbs_regret"
+    ]
+   },
+   {
+    "text": "TIME 31 Jan 2026: Musk on X after the release: 'I had very little correspondence with Epstein and declined repeated invitations to go to his island' and was 'well aware that some email correspondence with him could be misinterpreted'",
+    "strength": "reported",
+    "sources": [
+     "de11_time_epstein"
+    ]
+   }
+  ],
+  "sources": {
+   "de11_audit_mcaferty": {
+    "url": "https://www.thestandard.com.hk/world/article/309527/Elon-Musk-must-face-lawsuit-claiming-he-ran-illegal-1-million-election-lottery",
+    "label": "Reuters via The Standard (Hong Kong), 'Elon Musk must face lawsuit claiming he ran illegal $1 million election lottery', 21 August 2025"
+   },
+   "de11_audit_gao_savings": {
+    "url": "https://www.gao.gov/assets/gao-26-108615-highlights.pdf",
+    "label": "U.S. Government Accountability Office, GAO-26-108615 (Highlights), 'DOGE Wall of Receipts: More Transparency Needed on How Savings Are Derived from Contract, Grant, and Lease Terminations', August 2026"
+   },
+   "de11_audit_pbs_regret": {
+    "url": "https://www.pbs.org/newshour/economy/elon-musk-backs-off-from-feud-with-trump-saying-he-regrets-social-media-posts-that-went-too-far",
+    "label": "AP via PBS NewsHour, 'Elon Musk backs off from feud with Trump, saying he regrets social media posts that went too far', 11 June 2025"
+   },
+   "de11_ap_sweeps": {
+    "url": "https://www.clickondetroit.com/news/politics/2024/11/04/musk-pac-tells-philadelphia-judge-the-1-million-sweepstakes-winners-are-not-chosen-by-chance/",
+    "label": "AP via ClickOnDetroit, 'Musk PAC tells Philadelphia judge the $1 million sweepstakes winners are not chosen by chance', 4 November 2024"
+   },
+   "de11_time_epstein": {
+    "url": "https://time.com/7362868/elon-musk-epstein-emails/",
+    "label": "Rebecca Schneid, TIME, on the Musk-Epstein emails in the DOJ release, 31 January 2026"
+   }
+  }
  }
 }

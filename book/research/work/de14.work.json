@@ -239,5 +239,56 @@
     "label": "US Department of Justice, 'Report Under Public Law 119-38', notice dated 21 August 2026, FR Doc. 2026-17533 (publication 27 August 2026)"
    }
   }
+ },
+ "de14_audit": {
+  "topic": "Audit re-verification, de14 (28 Oct 2026)",
+  "claims": [
+   {
+    "text": "ProPublica Nonprofit Explorer lists the Thiel Foundation's location as Miami, FL; 2024 total assets $45,244,823, disbursements $3,420,251",
+    "strength": "primary",
+    "sources": [
+     "de14_audit_pp_miami"
+    ]
+   },
+   {
+    "text": "WaPo: the 2019 Rockbridge meeting 'included hedge fund heiress Rebekah Mercer, then-Fox News host Tucker Carlson and economist Oren Cass'; American Greatness 'received funding from Thiel'; Executive Branch 'a $500,000-a-head membership club'; 'many Rockbridge members hope Vance will be the nominee'",
+    "strength": "reported",
+    "sources": [
+     "de14_audit_wapo_rockbridge"
+    ]
+   },
+   {
+    "text": "DonorsTrust CEO and president Lawson Bader: purpose is 'to preserve donor intent for certain types of givers, and to ensure that certain kinds of public charities are being funded'; article by Washington Examiner (Kaminsky, Schmad); does not mention Thiel",
+    "strength": "reported",
+    "sources": [
+     "de14_audit_dg_bader"
+    ]
+   },
+   {
+    "text": "Deputy Attorney General Todd Blanche said the late-January 2026 release marked the end of a 'very comprehensive' review; more than 3 million pages, 2,000+ videos, about 180,000 images; about 3.5 million pages in total under the law",
+    "strength": "reported",
+    "sources": [
+     "de14_audit_sn_blanche"
+    ]
+   }
+  ],
+  "sources": {
+   "de14_audit_pp_miami": {
+    "url": "https://projects.propublica.org/nonprofits/organizations/203846597",
+    "label": "ProPublica Nonprofit Explorer, The Thiel Foundation (EIN 20-3846597), 990-PF summary"
+   },
+   "de14_audit_wapo_rockbridge": {
+    "url": "https://www.adn.com/nation-world/2025/11/04/inside-the-billionaire-network-shaping-magas-post-trump-future/",
+    "label": "Washington Post (via ADN), 'Inside the billionaire network shaping MAGA's post-Trump future', 4 November 2025"
+   },
+   "de14_audit_dg_bader": {
+    "url": "https://www.denvergazette.com/2024/11/19/conservative-dark-money-atm-granted-record-351-million-last-year-97a8f211-f19e-559b-b9db-a55eda48a949/",
+    "label": "Washington Examiner via Denver Gazette, DonorsTrust granted record $351 million, 19 November 2024"
+   },
+   "de14_audit_sn_blanche": {
+    "url": "https://wisconsinexaminer.com/2026/01/30/repub/doj-releases-3-million-pages-of-epstein-files-taking-in-180000-images-and-2000-videos/",
+    "label": "States Newsroom via Wisconsin Examiner, DOJ releases 3 million pages of Epstein files, 30 January 2026"
+   }
+  }
  }
 }
