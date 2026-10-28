@@ -1,4 +1,4 @@
-# Volume plan (DRAFT v0.4, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
+# Volume plan (DRAFT v0.5, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
 Status: outline only. Ron is still supplying research; do not start writing until he says so.
 
@@ -69,6 +69,7 @@ III. DOGE: THE ARCHITECTURE (worst case: cuts as the occasion)
 IV. EXIT AND THE EYE
 - de21 Exit — de21_seas_and_zones, de21_prospera_v_honduras, de21_argentina_and_freedom_cities
 - de22 Urbit: the Digital Exit — de22_address_space, de22_wartime_ceo
+- de22b The Toolkit, Explained (how each technology works, what it can do alone and combined, documented US uses, legal limits) — de22b_data_and_fusion (big data, brokers, ad-tech bidstream, analytics, Palantir-class fusion), de22b_location_and_mobile (phones, mobile ad IDs, cell-site, geofences, plate readers, car telematics), de22b_faces_drones_and_sensors (computer vision, facial recognition, drones, towers, satellites/Starshield), de22b_spyware_and_phones (Pegasus, Graphite, Cellebrite: zero-click, extraction; who may legally use them), de22b_ai_layer (LLM triage of speech, risk scores like ELITE confidence scores, predictive policing, sentiment tools), de22b_money_rails (bank surveillance and debanking, crypto KYC and public ledgers, stablecoins/GENIUS Act, the US anti-CBDC stance, digital ID: REAL ID, mobile licences, biometric IDs), de22b_counterweights (encryption, courts, state privacy laws, employee refusals)
 - de23 The Eye: Palantir — de23_origins_and_control, de23_capability_not_intent, de23_money_and_war, de23_europe_says_no
 - de24 The Eye at Home: ICE and the Data Stack (worst case: immigration as the occasion) — de24_ice_contracts, de24_brokers_and_doctrine
 - de25 The Switch: The Legal Architecture — de25_rage_to_schedule, de25_silos_and_subpoenas, de25_nspm7_and_detachment
@@ -77,6 +78,7 @@ V. THE TEST
 - de26 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de26_two_tests
 - de27 The Readiness Audit — de27_what_is_built, de27_the_repurposing_test, de27_missing_pieces_and_triggers
 - de28 If It Were Enforced — de28_three_layers, de28_what_you_would_give_up, de28_the_unproductive
+- de28b Beyond America: International Support and Foreign Money — de28b_who_reads_it_abroad (documented uptake: Land in Shanghai, Brazil's Mission Party, European readers/publishers; adjacent models praised by the theorists — Singapore, Dubai/Gulf monarchies, China, Bukele's El Salvador, Milei's Argentina, Orbán's Hungary — and how they differ), de28b_would_publics_want_it (cross-national survey data on support for "strong leader" / "experts decide" rule), de28b_foreign_money (documented foreign capital in the network's companies — e.g. Gulf and other sovereign or private investors in X/xAI, Anduril, Palantir, Founders Fund LPs where disclosed — versus no documented foreign funding of the theorists themselves; exit zones' foreign investors)
 - de29 Israel: Documented Ties Only — de29_palantir_and_israel, de29_what_is_not_supported
 - de30 What Doesn't Fit — de30_disagreements, de30_claims_that_fail, de30_the_honest_nulls
 - de31 The Reading Beneath the Record (labelled interpretation) — de31_seeing_stones, de31_the_runtime
@@ -97,3 +99,6 @@ Demote overclaims in simulation scenes cia_s06, cia_s08, s19s (Palantir–Lavend
 
 ## Ron's four questions (28 Oct 2026) — answered in chat; sources to carry in
 AAUP v. Rubio (D. Mass., Young J., liability 30 Sept 2025; deportations halted Jan 2026); USCIS/DHS "antisemitic activity" social-media screening (Apr 2025); ICE–Zignal Labs $5.7M via Carahsoft (Sept 2025) and planned 24/7 social-media team (Wired); DHS administrative subpoenas to unmask critics (Google Apr 2025 Cornell student; Meta Sept 2025 ICE-watch accounts, withdrawn; Google Oct 2025 retiree; EFF letter 10 Feb 2026; ACLU-PA FOIA); Trump v. Slaughter (29 Jun 2026, 6–3, Humphrey's overruled, Fed excepted via Trump v. Cook); NSPM-7 + Dec 2025 AG memo (DLA Piper); Oracle–Palantir partnership (Apr 2024, Gotham/Foundry on Oracle government and air-gapped clouds); library: us6_asylum (ICE $75bn), us10_us (Paragon, Pegasus, Chatrie, PCLOB), us3_speech (Guard deployments), ad13 (IRS–ICE block).
+
+## Blind spots to cover (Ron's question, 28 Oct 2026)
+Commercial data as the main pipe (ad-tech bidstream, car telematics, smart TVs, health apps); financial surveillance and debanking; stablecoins and public ledgers; digital ID and biometrics; satellites (Starlink/Starshield) and dependence on one provider's infrastructure; platform ownership (X/Grok) as a narrative layer; AI companies' own positions; China and the Gulf as reference models; the bipartisan history of each tool; the counterweights (encryption, courts, states, employees, juries, journalists); succession and internal rivalry (the network is not one bloc); the costs and failures of the tools themselves (false matches, wrong addresses, lock-in).
