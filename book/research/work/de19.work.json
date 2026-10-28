@@ -93,6 +93,20 @@
     "sources": [
      "de19_palantir_record"
     ]
+   },
+   {
+    "text": "EO 14158 sec. 4(b): agency heads to 'ensure USDS has full and prompt access to all unclassified agency records, software systems, and IT systems'; sec. 3(b) temporary organization 'shall terminate on July 4, 2026'; sec. 3(c) DOGE Team of at least four employees in each agency; purpose 'modernizing Federal technology and software to maximize governmental efficiency and productivity'",
+    "strength": "primary",
+    "sources": [
+     "de19_eo14158"
+    ]
+   },
+   {
+    "text": "2 Feb 2025: two USAID security chiefs (John Vorhees, Brian McGill) placed on leave after refusing DOGE access to classified material in restricted areas; DOGE reportedly lacked sufficient clearance; Musk on X: 'USAID is a criminal organization. Time for it to die.'",
+    "strength": "reported",
+    "sources": [
+     "de19_pbs_usaid"
+    ]
    }
   ],
   "sources": {
@@ -147,6 +161,14 @@
    "de19_palantir_record": {
     "url": "https://blog.palantir.com/correcting-the-record-responses-to-the-may-30-2025-new-york-times-article-on-palantir-55b60ae107da",
     "label": "Palantir, 'Correcting the Record: Responses to the May 30, 2025 New York Times Article on Palantir' (company blog, June 2025)"
+   },
+   "de19_eo14158": {
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-29/html/2025-02005.htm",
+    "label": "Executive Order 14158, 'Establishing and Implementing the President's \"Department of Government Efficiency\"', 20 January 2025, 90 FR 8441"
+   },
+   "de19_pbs_usaid": {
+    "url": "https://www.pbs.org/newshour/politics/usaid-security-chiefs-put-on-leave-after-trying-to-stop-musks-team-from-accessing-classified-info-officials-say",
+    "label": "AP via PBS NewsHour, USAID security chiefs put on leave after trying to stop Musk's team from accessing classified information, 2 February 2025"
    }
   }
  },
@@ -230,6 +252,20 @@
     "sources": [
      "de19_reuters_grok"
     ]
+   },
+   {
+    "text": "DHS 22 Apr 2025: DHS, USCIS and DOGE announced 'comprehensive optimization' of SAVE: free searches, streamlined bulk checks, integration of criminal records, immigration timelines, addresses",
+    "strength": "primary",
+    "sources": [
+     "de19_dhs_save"
+    ]
+   },
+   {
+    "text": "SAVE linked for first time to SSA records; DHS encouraged states to upload entire voter rolls; government says more than 65 million voters across 26 states verified since May 2025, 28,635 flagged; in Texas 18M run, 2,724 flagged, about 20% later found citizens; Judge Sooknanan (June 2026) found violations of Social Security Act, Privacy Act and APA ('knowingly trampled on the privacy rights'); SCOTUS 25 Sep 2026 stayed her order, relying on 1996 IIRIRA provision; Jackson, Sotomayor, Kagan dissented",
+    "strength": "reported",
+    "sources": [
+     "de19_npr_save"
+    ]
    }
   ],
   "sources": {
@@ -280,6 +316,14 @@
    "de19_reuters_grok": {
     "url": "https://www.cp24.com/news/money/2025/05/23/musks-doge-expanding-his-grok-ai-in-us-government-raising-conflict-concerns-reuters-exclusive/",
     "label": "Reuters via CP24, 'Musk's DOGE expanding his Grok AI in U.S. government, raising conflict concerns', 23 May 2025"
+   },
+   "de19_dhs_save": {
+    "url": "https://www.globalsecurity.org/security/library/news/2025/04/sec-250422-dhs01.htm",
+    "label": "DHS press release (via GlobalSecurity.org), 'DHS, USCIS, DOGE Overhaul Systematic Alien Verification for Entitlements Database', 22 April 2025"
+   },
+   "de19_npr_save": {
+    "url": "https://www.kaxe.org/news/2026-09-25/the-supreme-court-revives-a-controversial-data-system-for-citizenship-checks",
+    "label": "NPR via KAXE, 'The Supreme Court revives a controversial data system for citizenship checks', 25 September 2026"
    }
   }
  }

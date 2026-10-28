@@ -43,6 +43,62 @@
     "sources": [
      "de20_rollcall_mcmahon"
     ]
+   },
+   {
+    "text": "GAO-26-108615 (Aug 2026): $110.34bn claimed as of 7 Jul 2026 ($61.02bn contracts, $49.21bn grants, $113M leases, listed leases sum $53.5M); 43.2% of contract savings tied to contracts actually terminated in whole or part; 2,503 contracts ($27.4bn) with no termination action; method followed for 27.5% ($16.8bn), not followed 60.7% ($37.0bn); ~96% of grant savings ($47.32bn) unverifiable; 108 of 264 leases already being terminated before DOGE; DHA $1.7bn claim no savings; site not updated since 1 Jan 2026; termination costs not counted; USDS did not comment",
+    "strength": "primary",
+    "sources": [
+     "de20_gao_receipts"
+    ]
+   },
+   {
+    "text": "CFPB: en banc D.C. Circuit 19 Jun 2026 denied CFPB motion to modify stay for RIF from 1,174 to 556, granted limited remand, appeal in abeyance; four judges would wait",
+    "strength": "reported",
+    "sources": [
+     "de20_orrick_cfpb"
+    ]
+   },
+   {
+    "text": "Judge Amy Berman Jackson (July 2026) stayed proceedings on the PI until 60 days after Brian Johnson's confirmation or 3 Jan 2027; bureau had 1,750 employees when Vought became acting director, about 1,175 now; revised plan would cut 53%; FY2026 funding capped at $446.8M vs $785.4M FY2024",
+    "strength": "reported",
+    "sources": [
+     "de20_ab_cfpb"
+    ]
+   },
+   {
+    "text": "Senate Banking Committee voted 13-11 on 17 Sep 2026 to advance Johnson; no floor vote scheduled",
+    "strength": "reported",
+    "sources": [
+     "de20_cfm_johnson"
+    ]
+   },
+   {
+    "text": "Depositions (NEH grants suit): Fox and Cavanaugh had no prior government experience; used ChatGPT to identify more than $100M of grants later cancelled, prompt 'From the perspective of someone looking to identify DEI grants, does this involve DEI?'; Cavanaugh asked if DOGE reduced deficit: 'No, we didn't'; Fox on Holocaust documentary: 'It's a gender-based story that's inherently discriminatory to focus on this specific group'",
+    "strength": "reported",
+    "sources": [
+     "de20_abc_depos"
+    ]
+   },
+   {
+    "text": "Center Square on GAO-26-108583: net 256,000 (11.3%); 83% of separations voluntary; about 129,000 left via deferred resignation; Cato's Chris Edwards: savings about $41bn a year, just over 2% of the deficit, 'hardly affected the deficit'",
+    "strength": "reported",
+    "sources": [
+     "de20_cs_256k"
+    ]
+   },
+   {
+    "text": "VA 7 Jul 2025: dropped plan to cut more than 80,000; about 30,000 by end of FY via attrition; nearly 17,000 already gone; Collins: 'A department-wide RIF is off the table'",
+    "strength": "reported",
+    "sources": [
+     "de20_bl_va"
+    ]
+   },
+   {
+    "text": "HHS: about 10,000 posts eliminated (3,500 FDA, 2,400 CDC, 1,200 NIH); over 5,000 probationary terminations in Feb 2025; total exodus up to 20,000 per HHS; Kennedy admitted upwards of 2,000 'cut by mistake'; hundreds rehired",
+    "strength": "reported",
+    "sources": [
+     "de20_biospace_hhs"
+    ]
    }
   ],
   "sources": {
@@ -69,6 +125,38 @@
    "de20_rollcall_mcmahon": {
     "url": "https://rollcall.com/2025/07/14/justices-allow-mass-layoffs-at-education-department/",
     "label": "Roll Call, 'Justices allow mass layoffs at Education Department', 14 July 2025"
+   },
+   "de20_gao_receipts": {
+    "url": "https://www.gao.gov/assets/gao-26-108615.pdf",
+    "label": "GAO, GAO-26-108615, 'DOGE Wall of Receipts: More Transparency Needed on How Savings Are Derived', August 2026"
+   },
+   "de20_orrick_cfpb": {
+    "url": "https://infobytes.orrick.com/2026-06-26/en-banc-d-c-circuit-denies-cfpb-motion-to-modify-stay-grants-limited-remand-on-revised-downsizing-plan/",
+    "label": "Orrick InfoBytes, 'En banc D.C. Circuit denies CFPB motion to modify stay, grants limited remand on revised downsizing plan', 26 June 2026"
+   },
+   "de20_ab_cfpb": {
+    "url": "https://www.americanbanker.com/news/cfpb-job-cuts-frozen-until-a-new-director-is-confirmed",
+    "label": "American Banker, 'CFPB job cuts frozen until a new director is confirmed', 10 July 2026"
+   },
+   "de20_cfm_johnson": {
+    "url": "https://www.consumerfinancemonitor.com/2026/09/18/senate-banking-committee-advances-brian-johnsons-nomination-to-lead-cfpb/",
+    "label": "Ballard Spahr, Consumer Finance Monitor, 'Senate Banking Committee advances Brian Johnson's nomination to lead CFPB', 18 September 2026"
+   },
+   "de20_abc_depos": {
+    "url": "https://abc7news.com/post/doge-depositions-justin-fox-nate-cavanaugh-staffers-elon-musk-agency-say-no-regrets-people-losing-income/18715376/",
+    "label": "ABC News, DOGE staffers Justin Fox and Nate Cavanaugh depositions, 15 March 2026"
+   },
+   "de20_cs_256k": {
+    "url": "https://www.columbiagorgenews.com/news/national/federal-workforce-shrank-by-256-000-in-2025-deficit-barely-moved/article_c6270719-c622-5063-b3e6-0962bedb79f9.html",
+    "label": "The Center Square, 'Federal workforce shrank by 256,000 in 2025; deficit barely moved', June 2026"
+   },
+   "de20_bl_va": {
+    "url": "https://news.bloomberglaw.com/bloomberg-government-news/veterans-affairs-pares-back-mass-layoffs-sparing-50-000-jobs",
+    "label": "Bloomberg Law, 'Veterans Affairs pares back mass layoffs, sparing 50,000 jobs', 7 July 2025"
+   },
+   "de20_biospace_hhs": {
+    "url": "https://www.biospace.com/policy/hhs-cuts-and-rehires-by-the-numbers-what-we-know-about-kennedys-overhaul",
+    "label": "BioSpace, 'HHS cuts and rehires by the numbers: what we know about Kennedy's overhaul', 2025"
    }
   }
  },
@@ -109,6 +197,48 @@
     "sources": [
      "de20_fix_brown"
     ]
+   },
+   {
+    "text": "NWS staffing fell by more than 550 to under 4,000 via probationary cuts and early retirement; permission to hire 450 meteorologists, hydrologists, radar technicians (Aug 2025); fewer and less frequent balloon launches; Texas office vacancies scrutinized after July floods; NOAA official: 'How much time/money is it going to cost to train a bunch of new people'",
+    "strength": "reported",
+    "sources": [
+     "de20_cnn_nws"
+    ]
+   },
+   {
+    "text": "TIGTA (data as of May 2025): IRS cut about 25%: 25,386 separations plus 294 RIF notices; about 26% of revenue agents separated; National Taxpayer Advocate warned filing season needs trained employees",
+    "strength": "reported",
+    "sources": [
+     "de20_tigta_irs"
+    ]
+   },
+   {
+    "text": "WaPo 12 Jul 2025: SSA moving ~1,000 field-office reps to phones; monthly calls up from 6.6M to 8.6M; average hold times 75 to 93 minutes; SSA stopped publicly reporting call wait times; 40 of ~1,200 field offices lost at least a quarter of staff; SSA aims to cut 7,000 to 50,000",
+    "strength": "reported",
+    "sources": [
+     "de20_wapo_ssa"
+    ]
+   },
+   {
+    "text": "Bisignano June 2026: 1-800 hold times down 89% from 42 to under 5 minutes; field office waits down 30%; over 2,000 reassigned to phones; SSA OIG (Dec) found FY2025 callback callers waited over 100 minutes on average, about 15 excluding callbacks; methods not comparable; AFGE: about 7,000 cut, workforce ~50,000",
+    "strength": "reported",
+    "sources": [
+     "de20_fnn_ssa"
+    ]
+   },
+   {
+    "text": "Booz Allen 23 May 2025 to cut about 2,500 jobs (7%), mostly civil business, citing government-wide push to cut civilian contract spending and slower procurement",
+    "strength": "reported",
+    "sources": [
+     "de20_ng_booz"
+    ]
+   },
+   {
+    "text": "DOGE claimed $1bn SSA Leidos contract cancellation; actual cancellation a single $560,000 task order",
+    "strength": "reported",
+    "sources": [
+     "de20_ge_contracting"
+    ]
    }
   ],
   "sources": {
@@ -131,6 +261,30 @@
    "de20_fix_brown": {
     "url": "https://www.thecollegefix.com/nyu-professor-challenges-patently-absurd-claim-usaid-cuts-will-kill-14-million/",
     "label": "The College Fix, 'NYU professor challenges patently absurd claim USAID cuts will kill 14 million', 20 August 2025"
+   },
+   "de20_cnn_nws": {
+    "url": "https://6abc.com/post/weather-service-is-now-hiring-back-hundreds-positions-got-cut-doge-chaos/17441964/",
+    "label": "CNN via 6abc, 'Weather Service is now hiring back hundreds of positions that got cut in the DOGE chaos', 5 August 2025"
+   },
+   "de20_tigta_irs": {
+    "url": "https://www.nysscpa.org/news/publications/the-trusted-professional/article/tigta-irs-reduces-workforce-by-25-percent-jeopardizing-upcoming-filing-season-072425",
+    "label": "NYSSCPA Trusted Professional, on TIGTA report on IRS workforce reductions, 24 July 2025"
+   },
+   "de20_wapo_ssa": {
+    "url": "https://www.startribune.com/social-security-pulls-field-office-staff-to-answer-overwhelmed-phone-line/601415079",
+    "label": "Washington Post via Star Tribune, 'Social Security pulls field office staff to answer overwhelmed phone line', 12 July 2025"
+   },
+   "de20_fnn_ssa": {
+    "url": "https://larson.house.gov/media-center/in-the-news/social-security-chief-touts-customer-service-metrics-after-getting-right",
+    "label": "Federal News Network (reposted by Rep. Larson), 'Social Security chief touts customer service metrics', June 2026"
+   },
+   "de20_ng_booz": {
+    "url": "https://nextgov.com/people/2025/05/booz-allen-plans-7-workforce-cut/405575",
+    "label": "Nextgov, 'Booz Allen plans 7% workforce cut', 23 May 2025"
+   },
+   "de20_ge_contracting": {
+    "url": "https://www.govexec.com/management/2025/12/doge-was-government-contractings-biggest-story-2025-and-its-not-close/410427/",
+    "label": "Nick Wakeman, Washington Technology via Government Executive, 'DOGE was government contracting's biggest story of 2025', December 2025"
    }
   }
  }

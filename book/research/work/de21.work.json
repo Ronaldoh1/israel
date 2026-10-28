@@ -466,5 +466,56 @@
     "label": "New York Times (via Boston.com), 'DOGE quietly deletes the 5 biggest spending cuts it celebrated last week', 26 February 2025"
    }
   }
+ },
+ "de21_book3": {
+  "topic": "Audit record used in Book III's closing test",
+  "claims": [
+   {
+    "text": "Four agencies (CFPB, Education, NOAA, SEC) reported DOGE teams had access to more than 23 systems (19 at CFPB); SBA and VA did not identify their systems; the 'extent and level of access' could not be determined; CFPB, Education, SEC, NOAA and VA declined or limited cooperation, some questioning GAO's authority; Congress and the public 'lack information needed to confirm if DOGE team members followed the IT rules'.",
+    "strength": "primary",
+    "sources": [
+     "de21_gao_systems"
+    ]
+   },
+   {
+    "text": "The workforce of 22 agencies 'declined by nearly 256,000 employees—or more than 11 percent' from December 2024 to January 2026; nearly 378,000 separated in 2025 and about 127,000 were hired; about 65% of separations came in the second half of the year.",
+    "strength": "primary",
+    "sources": [
+     "de21_gao_workforce"
+    ]
+   },
+   {
+    "text": "Cavalcanti, Rasella et al. (The Lancet, 2025) combined a 2001–2021 retrospective analysis of 133 countries (USAID support associated with a 15% reduction in all-cause mortality) with microsimulation forecasts, projecting that 'more than 14 million additional deaths could occur by 2030, including over 4.5 million among children under five' if the cuts continue: a model projection, not a count.",
+    "strength": "reported",
+    "sources": [
+     "de21_ucla_lancet"
+    ]
+   },
+   {
+    "text": "The Supreme Court agreed to hear U.S. DOGE Service v. U.S. District Court for D.C. (No. 25-1103), CREW's FOIA case, with argument expected early 2027; Judge Cooper had found USDS 'likely an agency subject to FOIA'; on its emergency docket the Court had earlier held the discovery order too broad without deciding FOIA status; the administration argues USDS 'does not exercise independent authority' and that agency DOGE teams 'operate under each agency's authority, not USDS'.",
+    "strength": "reported",
+    "sources": [
+     "de21_ncc_cert"
+    ]
+   }
+  ],
+  "sources": {
+   "de21_gao_systems": {
+    "url": "https://www.gao.gov/assets/gao-26-108192.pdf",
+    "label": "U.S. Government Accountability Office, GAO-26-108192, 'DOGE: Congress and the Public Lack Assurance That Systems and Data Were Protected at Multiple Agencies', 29 September 2026"
+   },
+   "de21_gao_workforce": {
+    "url": "https://www.gao.gov/products/gao-26-108583",
+    "label": "U.S. Government Accountability Office, GAO-26-108583, 'Federal Agency Workforce Changes: Update for July 2025 to January 2026', 17 June 2026"
+   },
+   "de21_ucla_lancet": {
+    "url": "https://ph.ucla.edu/news-events/news/research-finds-more-14-million-preventable-deaths-2030-if-usaid-defunding",
+    "label": "UCLA Fielding School of Public Health, on Cavalcanti, Rasella et al., The Lancet (June/July 2025), USAID funding and mortality, 1 July 2025"
+   },
+   "de21_ncc_cert": {
+    "url": "https://constitutioncenter.org/blog/supreme-court-takes-open-records-case-involving-doge",
+    "label": "National Constitution Center, 'Supreme Court takes open records case involving DOGE', 15 October 2026"
+   }
+  }
  }
 }
