@@ -1,0 +1,273 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de14_map",
+   "stage": "de14",
+   "topic": "The money map: documented funding, employment, investment and appointment edges",
+   "claims": [
+    {
+     "text": "CNBC (FEC): Thiel gave $15M to the pro-Vance super PAC in the Ohio primary and $15M to the pro-Masters super PAC in the Arizona primary plus $2.5M in October 2022; Vance won, Masters lost to Kelly",
+     "strength": "reported",
+     "sources": [
+      "de14_cnbc_2022"
+     ]
+    },
+    {
+     "text": "Axios 12 Oct 2022: the pro-Masters super PAC is Saving Arizona PAC; Thiel spent $15M in the primary; proposed to cover half of a joint $10M+ commitment with Senate Leadership Fund",
+     "strength": "reported",
+     "sources": [
+      "de14_axios_masters"
+     ]
+    },
+    {
+     "text": "CBS (OpenSecrets): Thiel gave $15M to Protect Ohio Values; Per Aspera Policy, a dark-money nonprofit Thiel controlled that does not disclose donors, steered at least $200,000 to it (Kansas City Star, OpenSecrets); Mercer, Uihlein, Lindner families gave hundreds of thousands; Sacks $1M (FEC); Thiel brought Vance to Mar-a-Lago Feb 2021 (NYT); Vance's 2019 Ohio venture firm heavily backed by Thiel",
+     "strength": "reported",
+     "sources": [
+      "de14_cbs_klaidman"
+     ]
+    },
+    {
+     "text": "Forbes: Narya Capital (2019) reportedly backed by Thiel, Andreessen and Eric Schmidt (Axios); Vance joined Mithril 2015 per Politico, left 2017; Thiel helped recruit about 10 major donors, Sacks $1M (Politico); Thiel at Aspen 2024 would not donate to Trump",
+     "strength": "reported",
+     "sources": [
+      "de14_forbesau"
+     ]
+    },
+    {
+     "text": "CNN (FEC year-end): Musk spent more than $290M in 2024; about a quarter-billion to America PAC; $11.2M on 31 Dec for 'petition incentives'; $1M giveaways cost more than $50M; $10,000 checks to dozens of state GOP committees",
+     "strength": "reported",
+     "sources": [
+      "de14_cnn_musk290"
+     ]
+    },
+    {
+     "text": "WaPo Nov 2025: Rockbridge Network grew out of a 2019 summit convened by Thiel and Vance near Rockbridge, Ohio; no website or public-facing entity; led by Chris Buskirk; Sacks and Andreessen described as members; Rebekah Mercer attended 2019; affiliated super PAC Turnout for America spent $34.5M in 2024 (FEC); Thiel's earlier funding supported Buskirk's American Greatness; Thiel declined comment",
+     "strength": "reported",
+     "sources": [
+      "de14_wapo_rockbridge"
+     ]
+    },
+    {
+     "text": "Masters co-wrote Zero to One (Sept 2014) with Thiel from notes on Thiel's 2012 Stanford class; COO of Thiel Capital and president of the Thiel Foundation; resigned both in March 2022 to run; won primary Aug 2022 (~40%), lost to Kelly by 4.9%; lost 2024 House primary to Hamadeh",
+     "strength": "reported",
+     "sources": [
+      "de14_wiki_masters"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de14_cnbc_2022",
+     "url": "https://www.cnbc.com/2022/11/12/midterm-results-peter-thiel-picks-masters-vance-see-mixed-results-in-arizona-ohio.html",
+     "label": "CNBC, 'Peter Thiel picks Masters, Vance see mixed results in Arizona, Ohio', 12 November 2022"
+    },
+    {
+     "key": "de14_axios_masters",
+     "url": "https://www.axios.com/2022/10/12/peter-thiel-arizona-blake-masters-mcconnell",
+     "label": "Jonathan Swan and Josh Kraushaar, Axios, 'Peter Thiel offers to double down on Arizona Senate race', 12 October 2022"
+    },
+    {
+     "key": "de14_cbs_klaidman",
+     "url": "https://www.cbsnews.com/news/jd-vance-trump-vp-peter-thiel-billionaire/",
+     "label": "Daniel Klaidman, CBS News, 'The billionaire who fueled JD Vance's rapid rise to the Trump VP spot', 16 July 2024"
+    },
+    {
+     "key": "de14_forbesau",
+     "url": "https://www.forbes.com.au/news/billionaires/jd-vance-and-peter-thiel-what-to-know/",
+     "label": "Antonio Pequeño IV, Forbes, 'JD Vance and Peter Thiel: Inside the relationship', 16 July 2024"
+    },
+    {
+     "key": "de14_cnn_musk290",
+     "url": "https://ktvz.com/politics/cnn-us-politics/2025/02/01/elon-musk-spent-more-than-290-million-on-the-2024-election-year-end-fec-filings-show/",
+     "label": "David Wright and Alex Leeds-Matthews, CNN (via KTVZ), 'Elon Musk spent more than $290 million on the 2024 election', 1 February 2025"
+    },
+    {
+     "key": "de14_wapo_rockbridge",
+     "url": "https://www.adn.com/nation-world/2025/11/04/inside-the-billionaire-network-shaping-magas-post-trump-future/",
+     "label": "Washington Post (via Anchorage Daily News), 'Inside the billionaire network shaping MAGA's post-Trump future', 4 November 2025"
+    },
+    {
+     "key": "de14_wiki_masters",
+     "url": "https://en.wikipedia.org/wiki/Blake_Masters",
+     "label": "Wikipedia, 'Blake Masters' (accessed 28 Oct 2026)"
+    }
+   ]
+  },
+  {
+   "id": "de14_foundations",
+   "stage": "de14",
+   "topic": "Thiel Foundation, DonorsTrust, Seasteading and opacity",
+   "claims": [
+    {
+     "text": "Thiel Foundation 990-PF data: total assets $45,244,823 and charitable disbursements $3,420,251 (2024); $44,447,969 / $4,949,888 (2023); $28,591,177 / $5,056,776 (2022); $28,757,625 / $10,963,171 (2021); recipient lists not shown on the summary page",
+     "strength": "primary",
+     "sources": [
+      "de14_pp_thielfdn"
+     ]
+    },
+    {
+     "text": "Aggregator listings of Thiel Foundation grants: DonorsTrust $1,276,111 (2024) and $426,775 (2025); Leo Strauss Foundation $100,000 (2024); Imitatio grants to Girard scholars and groups (Lumen Christi, Cornerstone Forum, Colloquium on Violence and Religion)",
+     "strength": "reported",
+     "sources": [
+      "de14_kindora_thiel"
+     ]
+    },
+    {
+     "text": "Aggregator listing: Thiel Foundation $1.4M donor-advised-fund grant to DonorsTrust in 2022; listing partial",
+     "strength": "reported",
+     "sources": [
+      "de14_granted_thiel"
+     ]
+    },
+    {
+     "text": "DonorsTrust (Alexandria VA, founded 1999) runs donor-advised funds; grants appear as coming from DonorsTrust rather than the individual donors; granted $351M in 2023, $242M in 2022; recipients include State Policy Network, Federalist Society, Cato, Reason, Heritage, America First Legal",
+     "strength": "reported",
+     "sources": [
+      "de14_dg_donorstrust"
+     ]
+    },
+    {
+     "text": "BI 2018: 'Thiel invested $1.7 million in The Seasteading Institute, but resigned from its board in 2011'",
+     "strength": "reported",
+     "sources": [
+      "de14_bi_seastead"
+     ]
+    },
+    {
+     "text": "Yahoo/Details 2011: Thiel's donation to the Seasteading Institute $1.25 million; Friedman: Thiel 'is our most generous funder, but this doesn't mean that he dictates our plans'",
+     "strength": "reported",
+     "sources": [
+      "de14_yahoo_seastead"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de14_pp_thielfdn",
+     "url": "https://projects.propublica.org/nonprofits/organizations/203846597",
+     "label": "ProPublica Nonprofit Explorer, 'The Thiel Foundation' (EIN 20-3846597), Form 990-PF data (accessed 28 Oct 2026)"
+    },
+    {
+     "key": "de14_kindora_thiel",
+     "url": "https://www.kindora.co/en/funders/the-thiel-foundation",
+     "label": "Kindora, 'The Thiel Foundation' grant data from 990-PF filings (accessed 28 Oct 2026)"
+    },
+    {
+     "key": "de14_granted_thiel",
+     "url": "https://grantedai.com/foundations/the-thiel-foundation-6597",
+     "label": "GrantedAI, 'The Thiel Foundation' grant data (accessed 28 Oct 2026)"
+    },
+    {
+     "key": "de14_dg_donorstrust",
+     "url": "https://www.denvergazette.com/2024/11/19/conservative-dark-money-atm-granted-record-351-million-last-year-97a8f211-f19e-559b-b9db-a55eda48a949/",
+     "label": "Gabe Kaminsky and Robert Schmad, Washington Examiner (via Denver Gazette), 'Conservative dark money ATM granted record $351 million last year', 19 November 2024"
+    },
+    {
+     "key": "de14_bi_seastead",
+     "url": "https://businessinsider.nl/libertarian-peter-thiel-utopia-seasteading-institute-2018-3",
+     "label": "Business Insider, Thiel and the Seasteading Institute (2018)"
+    },
+    {
+     "key": "de14_yahoo_seastead",
+     "url": "https://news.yahoo.com/blogs/lookout/seasteading-institute-billionaire-backer-doesn-t-dictate-island-200758264.html",
+     "label": "Yahoo News The Lookout, 'Seasteading Institute: billionaire backer doesn't dictate island' (2011, summarising Details)"
+    }
+   ]
+  },
+  {
+   "id": "de14_epstein",
+   "stage": "de14",
+   "topic": "Epstein, Valar Ventures and Thiel: what the records show and do not show; Epstein files status",
+   "claims": [
+    {
+     "text": "NYT: in 2015 and 2016 Epstein put $40M into two funds managed by Valar Ventures, a New York firm co-founded by Thiel, led by Andrew McCormack and James Fitzgerald; worth nearly $170M per a confidential estate analysis and a Valar spokesperson; largest asset still held by the estate; locked up; Valar spokesperson Aaron Curtis: a firm representative met Epstein in 2014 when he was a 'well-known adviser to world leaders, top universities and philanthropic organizations'; hopes distribution can help victims; Thiel spokesperson Jeremiah Hall declined comment",
+     "strength": "reported",
+     "sources": [
+      "de14_nyt_valar"
+     ]
+    },
+    {
+     "text": "Byline Times from DOJ-released files (no document IDs): 15 Nov 2014 email soliciting $10–20M for Valar; by June 2015 Epstein committed $15M through Southern Trust Company as LP; Valar Global Fund III statements; Feb 2016 Barak email: 'a new Investment Fund owned by Peter Thiel and JE'; Thiel spokesman denied co-ownership and confirmed LP status; June 2017 'super confidential' opportunities; Nov 2018 further solicitation",
+     "strength": "reported",
+     "sources": [
+      "de14_byline_valar"
+     ]
+    },
+    {
+     "text": "Jacobin citing EFTA00832976 (DOJ Data Set 9): Epstein in late Feb 2016 proposed meeting Thiel in Europe, on his island or in Saudi Arabia; Thiel: 'Certainly not in Saudi — just think I will avoid the Middle East for the next decade or so'; Epstein emails show efforts to connect Thiel and Barak on at least six occasions",
+     "strength": "reported",
+     "sources": [
+      "de14_jacobin"
+     ]
+    },
+    {
+     "text": "Stanford Daily from DOJ files: meetings 2014 to early 2019 at Epstein's New York home, Thiel's SF office and home (EFTA01027688); Aug 2015 Palo Alto dinner with several CEOs (EFTA00666028); Epstein offered tax advice June 2014 (EFTA02104079); Epstein $40M in Valar (EFTA00591691); considered buying Palantir shares (EFTA00814818); repeated island invitations, Thiel replied 'When are you there?' (EFTA00995535); Epstein called Thiel a 'great friend' to associates (EFTA01618783); Thiel spokesperson told NYT Thiel 'never went to Epstein's Island'",
+     "strength": "reported",
+     "sources": [
+      "de14_sd_files"
+     ]
+    },
+    {
+     "text": "Epstein Files Transparency Act signed 19 Nov 2025 with a 19 Dec deadline; on 21 Jan 2026 Judge Engelmayer declined to appoint a special master, citing lack of jurisdiction while acknowledging 'legitimate concerns'",
+     "strength": "reported",
+     "sources": [
+      "de14_gma_engelmayer"
+     ]
+    },
+    {
+     "text": "DOJ released more than 3 million pages, 2,000+ videos and 180,000 images (late January 2026), about 3.5 million pages in total under the law; Blanche: obligations complete once final report submitted and redaction justifications published",
+     "strength": "reported",
+     "sources": [
+      "de14_sn_3m"
+     ]
+    },
+    {
+     "text": "DOJ 'Report Under Public Law 119-38' notice dated 21 Aug 2026, Federal Register publication 27 Aug 2026: categories released and withheld, summary of redactions and legal basis, list of government officials and politically exposed persons named",
+     "strength": "primary",
+     "sources": [
+      "de14_fr_report"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de14_nyt_valar",
+     "url": "https://www.boston.com/news/national-news/2025/06/04/jeffrey-epstein-invested-with-peter-thiel-and-his-estate-is-reaping-millions",
+     "label": "Matthew Goldstein, New York Times (via Boston.com), 'Jeffrey Epstein Invested With Peter Thiel, and His Estate Is Reaping Millions', 4 June 2025"
+    },
+    {
+     "key": "de14_byline_valar",
+     "url": "https://bylinetimes.com/2026/02/04/jeffrey-epstein-and-peter-thiel-co-owned-venture-fund-as-thiels-palantir-entered-uk-government/",
+     "label": "Nafeez Ahmed, Byline Times, 4 February 2026 (amended 5 February 2026)"
+    },
+    {
+     "key": "de14_jacobin",
+     "url": "https://jacobin.com/2026/03/thiel-epstein-barak-ai-israel",
+     "label": "Branko Marcetic, Jacobin, 'Peter Thiel and Jeffrey Epstein Had a Yearslong Relationship', 9 March 2026"
+    },
+    {
+     "key": "de14_sd_files",
+     "url": "https://stanforddaily.com/2026/02/05/epstein-peter-thiel-a-great-friend/",
+     "label": "Sofia Williams and Sterling Davies, Stanford Daily, 'Epstein called Peter Thiel '89 a great friend, offered financial advice', 5 February 2026"
+    },
+    {
+     "key": "de14_gma_engelmayer",
+     "url": "https://www.goodmorningamerica.com/news/story/judge-declines-appoint-special-master-oversee-dojs-release-129419478",
+     "label": "ABC News (GMA), 'Judge declines to appoint special master to oversee DOJ's release', 21 January 2026"
+    },
+    {
+     "key": "de14_sn_3m",
+     "url": "https://wisconsinexaminer.com/2026/01/30/repub/doj-releases-3-million-pages-of-epstein-files-taking-in-180000-images-and-2000-videos/",
+     "label": "States Newsroom (via Wisconsin Examiner), 'DOJ releases 3 million pages of Epstein files', 30 January 2026"
+    },
+    {
+     "key": "de14_fr_report",
+     "url": "https://public-inspection.federalregister.gov/2026-17533.pdf",
+     "label": "US Department of Justice, 'Report Under Public Law 119-38', notice dated 21 August 2026, FR Doc. 2026-17533 (publication 27 August 2026)"
+    }
+   ]
+  }
+ ]
+}
