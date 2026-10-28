@@ -344,5 +344,78 @@
     "label": "Breaking Defense, 'Space Force tasks a dozen companies for Golden Dome space-based interceptors', 24 April 2026"
    }
   }
+ },
+ "de27_newcontracts": {
+  "topic": "Palantir 2025-26 federal awards beyond ICE; Medicaid incident; connectors",
+  "claims": [
+   {
+    "text": "CMS sent ICE a dataset on 7 Jan 2026 covering millions incl. lawfully present people; per court filings in California v. HHS (Chhabria J.) ICE shared it with Palantir over a Microsoft Teams chat, then deleted; Palantir: 'the dataset in question was purged pursuant to government instruction'; CMS inadvertently re-sent it; about six ICE users still had copies; ICE's Briseno: 'will continue to make good faith efforts to delete any copies'; judge allowed limited sharing Dec 2025, paused late May 2026, set August hearing",
+    "strength": "reported",
+    "sources": [
+     "de27_npr_medicaid"
+    ]
+   },
+   {
+    "text": "ICE delivery order 70CTD026FC0000012 to Palantir, 5 May 2026, $86,271,599 fully obligated, to 4 May 2027, 'modernization of enforcement removal operations and operational capability', under DHS BPA 70RTAC26A00000001",
+    "strength": "reported",
+    "sources": [
+     "de27_hg_ero"
+    ]
+   },
+   {
+    "text": "Army order W519TC26F0058, 16 Mar 2026, $3,676,521.71, under Army enterprise agreement W519TC25D0039, to 'maintain and sustain the PDE system', 16 Mar-15 Nov 2026",
+    "strength": "reported",
+    "sources": [
+     "de27_govly_pde"
+    ]
+   },
+   {
+    "text": "Treasury 22 Sep 2025: Palantir to build a 'common API layer' for developer platforms, workflow automation and analytics within IRS modernization; no value stated",
+    "strength": "primary",
+    "sources": [
+     "de27_treasury_api"
+    ]
+   },
+   {
+    "text": "Foundry Data Connection lists connectors for databases, cloud stores, ERP, SaaS, social/ad platforms (Facebook, Instagram, LinkedIn etc.), messaging (Slack, Teams); purpose 'connectivity between Foundry and your systems'",
+    "strength": "primary",
+    "sources": [
+     "de27_pal_connectors"
+    ]
+   },
+   {
+    "text": "Brennan (29 Jul 2026): DHS commitments to Palantir $20.4m (2024) to $162.2m (2026 to date); DHS >$2.9bn on surveillance/data tools since Jan 2021 (minimum); RAVEn built with Booz Allen, Acuity, Alethix ('tens of millions' each), lets investigators 'search and combine information from multiple databases'; ELITE is Palantir's; Babel Street and Penlink named; DHS accessed local LPR incl. Flock via other agencies",
+    "strength": "reported",
+    "sources": [
+     "de27_brennan_tools"
+    ]
+   }
+  ],
+  "sources": {
+   "de27_npr_medicaid": {
+    "url": "https://www.tpr.org/2026-07-17/ice-shared-medicaid-data-it-wasnt-supposed-to-have-with-palantir",
+    "label": "Jude Joffe-Block, NPR via Texas Public Radio, 'ICE shared Medicaid data it wasn't supposed to have with Palantir', 17 July 2026 (updated 18 July)"
+   },
+   "de27_hg_ero": {
+    "url": "https://www.highergov.com/contract/70RTAC26A00000001-70CTD026FC0000012/",
+    "label": "HigherGov (FPDS mirror), ICE delivery order 70CTD026FC0000012 to Palantir under BPA 70RTAC26A00000001, awarded 5 May 2026"
+   },
+   "de27_govly_pde": {
+    "url": "https://app.govly.com/public/awards/CONT_AWD_W519TC26F0058_9700_W519TC25D0039_9700",
+    "label": "Govly (FPDS mirror), Army delivery order W519TC26F0058 to Palantir USG (Personnel Data Environment), awarded 16 March 2026"
+   },
+   "de27_treasury_api": {
+    "url": "https://pubt.io/view/3B6257D4C84376350083265A7196BB183E45D90F",
+    "label": "US Department of the Treasury, press release on Palantir 'common API layer' (mirror), 22 September 2025"
+   },
+   "de27_pal_connectors": {
+    "url": "https://palantir.com/docs/foundry/data-integration/source-type-overview/",
+    "label": "Palantir Foundry documentation, 'Source type overview' (Data Connection), accessed 28 October 2026"
+   },
+   "de27_brennan_tools": {
+    "url": "https://www.brennancenter.org/our-work/research-reports/dhss-domestic-surveillance-data-collection-and-analytics-tools",
+    "label": "Brennan Center for Justice, 'DHS's Domestic Surveillance, Data Collection and Analytics Tools', 29 July 2026 (data as of 26 July)"
+   }
+  }
  }
 }

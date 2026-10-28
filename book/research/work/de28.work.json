@@ -254,5 +254,138 @@
     "label": "Jasmine Garsd, NPR via KPBS, 'U.S. says it is now monitoring immigrants' social media for antisemitism', 9 April 2025"
    }
   }
+ },
+ "de28_ecosystem": {
+  "topic": "Ecosystem map: layers, records, oversight letters",
+  "claims": [
+   {
+    "text": "Brennan (29 Jul 2026): DHS >$2.9bn on surveillance/data tools since Jan 2021; biometrics >$1bn; General Atomics drones >$675m; Palantir commitments $20.4m (2024) to $162.2m (2026 to date); RAVEn (Booz Allen, Acuity, Alethix) combines multiple databases into profiles; DHS accessed local LPR incl. Flock via other agencies; vehicle/driver data via sharing contracts ~$2m since 2021",
+    "strength": "reported",
+    "sources": [
+     "de28_brennan_tools"
+    ]
+   },
+   {
+    "text": "Brennan (9 Jul 2026): ICM 'structures and links data collected from these vendors and other commercial entities'; being made HSI's 'authoritative data source'; ImmigrationOS 'assembles ICE's data streams into a central hub'",
+    "strength": "reported",
+    "sources": [
+     "de28_brennan_consol"
+    ]
+   },
+   {
+    "text": "Guardian (22 Sep 2025, Just Futures Law FOIA records 2014-2022): ICM/FALCON gave access to 'a network of federally and privately owned databases'; March 2020 training on searching SEVIS; 2020 emails planned APIS and CBP border-crossing searches; NCIC among sources; Cellebrite extractions could be imported; CLEAR 'is not connected to Palantir tools'",
+    "strength": "reported",
+    "sources": [
+     "de28_guardian_icm"
+    ]
+   },
+   {
+    "text": "HART PIA 14 Aug 2024: not yet operational; fingerprint, latent, iris, face (no DNA); users all DHS, DOS, DOJ, DOD, OPM, IC, state/local police, foreign partners; interoperable with DOJ NGI and DOD ABIS",
+    "strength": "primary",
+    "sources": [
+     "de28_hart_pia"
+    ]
+   },
+   {
+    "text": "Warner-Kaine letter 29 Jan 2026 to DHS IG on ICE/CBP biometric and surveillance tools; DHS OIG opened audit 'DHS' Security of Biometric Data and Personally Identifiable Information' (Feb 2026); no report located by 28 Oct 2026",
+    "strength": "reported",
+    "sources": [
+     "de28_warner_audit",
+     "de28_bu_warner"
+    ]
+   },
+   {
+    "text": "Letter of 14 Apr 2026 (33 signers, Goldman, Velázquez, Wyden first) to Sec. Mullin and Acting Director Lyons asked for all DHS-Palantir contracts since 2020, datasets in Palantir systems, US-citizen data, facial recognition errors, observers and protesters; names ELITE, Clearview, PenLink, Stingray, Paragon; deadline 24 Apr 2026; no DHS reply found",
+    "strength": "primary",
+    "sources": [
+     "de28_goldman_letter"
+    ]
+   },
+   {
+    "text": "DHS to NPR 22 May 2026: 'ICE has no relationship with Paragon Solutions, Inc. or with the company that acquired them'; would not confirm or deny continued capability; contract closed out 20 Jan 2026",
+    "strength": "reported",
+    "sources": [
+     "de28_npr_paragon"
+    ]
+   },
+   {
+    "text": "The 74 (10 Feb 2026): Flock logs at Alvin ISD's 8 cameras, one month Dec 2025-Jan 2026: >3,100 agencies ran >733,000 searches; 620 cited immigration reasons from 30 agencies; districts showed no immigration use themselves; Flock says customers control sharing",
+    "strength": "reported",
+    "sources": [
+     "de28_74_flock"
+    ]
+   },
+   {
+    "text": "The Work Number (Equifax Workforce Solutions) holds 'data collected from employers and payroll processors' and supplies agencies for public-assistance eligibility and child-support enforcement",
+    "strength": "primary",
+    "sources": [
+     "de28_cfpb_twn"
+    ]
+   },
+   {
+    "text": "New York v. ACF (D.D.C. 1:26-cv-02726, Boasberg): PI denied 28 Sep 2026 against HHS sharing TANF recipient data with DHS; 'vague, unsubstantiated predictions'; notice effective 30 Sep 2026",
+    "strength": "reported",
+    "sources": [
+     "de28_bl_tanf"
+    ]
+   },
+   {
+    "text": "LexisNexis bridge PWS (22 Jul 2026) requires APIs to the Palantir platform, PenLink and ICE Data Analytics; 2020 LEIDS solicitation required interface with 'FALCON/Raven Palantir systems'",
+    "strength": "reported",
+    "sources": [
+     "de28_bu_lexis"
+    ]
+   }
+  ],
+  "sources": {
+   "de28_brennan_tools": {
+    "url": "https://www.brennancenter.org/our-work/research-reports/dhss-domestic-surveillance-data-collection-and-analytics-tools",
+    "label": "Brennan Center for Justice, 'DHS's Domestic Surveillance, Data Collection and Analytics Tools', 29 July 2026"
+   },
+   "de28_brennan_consol": {
+    "url": "https://www.brennancenter.org/our-work/research-reports/dangers-trump-administrations-data-consolidation-efforts",
+    "label": "Emile Ayoub, Brennan Center, 'Dangers of the Trump Administration's Data Consolidation Efforts', 9 July 2026"
+   },
+   "de28_guardian_icm": {
+    "url": "https://www.inkl.com/news/documents-offer-rare-insight-on-ice-s-close-relationship-with-palantir",
+    "label": "Johana Bhuiyan, The Guardian (via inkl), 'Documents offer rare insight on ICE's close relationship with Palantir', 22 September 2025"
+   },
+   "de28_hart_pia": {
+    "url": "https://dhs.gov/sites/default/files/2024-08/24_0826_priv_pia-obim-004a-HART-update.pdf",
+    "label": "DHS, Privacy Impact Assessment DHS/OBIM/PIA-004(a), Homeland Advanced Recognition Technology (HART) update, 14 August 2024"
+   },
+   "de28_warner_audit": {
+    "url": "https://www.warner.senate.gov/public/index.cfm/2026/2/following-warner-kaine-pressure-dhs-inspector-general-launches-audit-of-dhs-data-privacy-abuses",
+    "label": "Sen. Mark Warner, press release, 'Following Warner-Kaine pressure, DHS Inspector General launches audit of DHS data privacy abuses', February 2026"
+   },
+   "de28_bu_warner": {
+    "url": "https://www.biometricupdate.com/202601/senators-urge-dhs-watchdog-to-probe-expanding-use-of-biometric-and-surveillance-data-by-ice-cbp",
+    "label": "Biometric Update, 'Senators urge DHS watchdog to probe expanding use of biometric and surveillance data by ICE, CBP', January 2026"
+   },
+   "de28_goldman_letter": {
+    "url": "https://goldman.house.gov/sites/evo-subsites/goldman.house.gov/files/evo-media-document/final-april-2026-letter-to-dhs-ice-re-oversight-of-palantir-data-surveillance-contracts.pdf",
+    "label": "Reps. Goldman, Velázquez, Sen. Wyden and 30 others, letter to DHS Secretary Mullin and Acting ICE Director Lyons on Palantir data contracts, 14 April 2026"
+   },
+   "de28_npr_paragon": {
+    "url": "https://www.npr.org/2026/05/22/nx-s1-5831577/dhs-ice-spyware-paragon",
+    "label": "NPR, on DHS, ICE and Paragon spyware, 22 May 2026"
+   },
+   "de28_74_flock": {
+    "url": "https://www.the74million.org/article/ice-taps-into-school-security-cameras-to-aid-trumps-immigration-crackdown-74-investigation-shows/",
+    "label": "The 74 (with The Guardian), 'ICE taps into school security cameras to aid Trump's immigration crackdown', 10 February 2026"
+   },
+   "de28_cfpb_twn": {
+    "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/work-number/",
+    "label": "CFPB, consumer reporting companies list: The Work Number (Equifax Workforce Solutions)"
+   },
+   "de28_bl_tanf": {
+    "url": "https://news.bloomberglaw.com/us-law-week/states-lose-bid-to-block-information-sharing-on-aid-recipients",
+    "label": "Bloomberg Law, 'States lose bid to block information sharing on aid recipients', 28 September 2026"
+   },
+   "de28_bu_lexis": {
+    "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+    "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+   }
+  }
  }
 }

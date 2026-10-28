@@ -591,5 +591,67 @@
     "label": "Eric Siegel, KDnuggets, 'How Target predicted a teen's pregnancy: the inside story', May 2014"
    }
   }
+ },
+ "de24_joins": {
+  "topic": "Documented and possible joins between data systems (ecosystem lens)",
+  "claims": [
+   {
+    "text": "CMS sent ICE a 7 Jan 2026 Medicaid dataset covering millions incl. some lawful residents; ICE shared it with Palantir (ELITE) over a Microsoft Teams chat per a California DAG declaration; Palantir: purged 'pursuant to government instruction', customers control data; later six users still held copies; Chhabria paused CMS-ICE sharing late May 2026, August hearing set",
+    "strength": "reported",
+    "sources": [
+     "de24_npr_medicaid_pal"
+    ]
+   },
+   {
+    "text": "Guardian (JFL FOIA documents 2014-2022, mostly HSI): Falcon and ICM gave access to 'a network of federally and privately owned databases'; March 2020 training on searching SEVIS (4.9m records); June 2020 plan to search APIS; Cellebrite phone extractions could be imported; agents encouraged to import from databases not connected to Palantir, incl. CLEAR; Palantir calls itself a 'data processor'",
+    "strength": "reported",
+    "sources": [
+     "de24_guardian_icm"
+    ]
+   },
+   {
+    "text": "Brennan (9 Jul 2026): Palantir's ICE case management system 'structures and links data collected from these vendors and other commercial entities'; being made HSI's 'authoritative data source' with DOJ, CBP and OBIM integrations; ImmigrationOS gathers ICE data into a 'central hub'",
+    "strength": "reported",
+    "sources": [
+     "de24_brennan_consol"
+    ]
+   },
+   {
+    "text": "Palantir Foundry Data Connection provides 'connectivity between Foundry and your systems' with connectors for databases, Facebook, Instagram, Twitter Ads, Microsoft Teams, Slack etc.",
+    "strength": "primary",
+    "sources": [
+     "de24_pal_connectors"
+    ]
+   },
+   {
+    "text": "404 Media (8 Jan 2026): ICE bought access via Penlink to Tangles/Webloc, which can monitor phones in a block and follow devices home; internal ICE legal analysis says the data 'can be queried without a warrant'",
+    "strength": "reported",
+    "sources": [
+     "de24_404_webloc"
+    ]
+   }
+  ],
+  "sources": {
+   "de24_npr_medicaid_pal": {
+    "url": "https://www.tpr.org/2026-07-17/ice-shared-medicaid-data-it-wasnt-supposed-to-have-with-palantir",
+    "label": "NPR (via Texas Public Radio), 'ICE shared Medicaid data it wasn't supposed to have with Palantir', 17 July 2026"
+   },
+   "de24_guardian_icm": {
+    "url": "https://www.inkl.com/news/documents-offer-rare-insight-on-ice-s-close-relationship-with-palantir",
+    "label": "Johana Bhuiyan, The Guardian (syndicated), 'Documents offer rare insight on ICE's close relationship with Palantir', 22 September 2025"
+   },
+   "de24_brennan_consol": {
+    "url": "https://www.brennancenter.org/our-work/research-reports/dangers-trump-administrations-data-consolidation-efforts",
+    "label": "Emile Ayoub, Brennan Center for Justice, 'Dangers of Trump Administration's Data Consolidation Efforts', 9 July 2026"
+   },
+   "de24_pal_connectors": {
+    "url": "https://palantir.com/docs/foundry/data-integration/source-type-overview/",
+    "label": "Palantir, Foundry documentation, 'Data Connection: source type overview' (accessed 28 October 2026)"
+   },
+   "de24_404_webloc": {
+    "url": "https://404media.co/inside-ices-tool-to-monitor-phones-in-entire-neighborhoods/",
+    "label": "Joseph Cox, 404 Media, 'Inside ICE's Tool to Monitor Phones in Entire Neighborhoods', 8 January 2026"
+   }
+  }
  }
 }

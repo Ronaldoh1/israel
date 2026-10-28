@@ -592,5 +592,67 @@
     "label": "NBC News, Guthrie case: Nest video recovered from 'residual data located in backend systems', 10 February 2026"
    }
   }
+ },
+ "de25_joins": {
+  "topic": "If it were connected: documented and reported joins between location/phone tools and integration platforms",
+  "claims": [
+   {
+    "text": "DHS told NPR (May 2026) 'ICE has no relationship with Paragon Solutions, Inc. or with the company that acquired them' and had not entered another contract; a procurement notice shows the contract closed out 20 Jan 2026; DHS would 'not … confirm or deny' capabilities; Lyons (1 Apr 2026) said he approved HSI's procurement and operational use",
+    "strength": "reported",
+    "sources": [
+     "de25_npr_paragon"
+    ]
+   },
+   {
+    "text": "ICE agreed in fall 2025 to pay Penlink $2.3m covering Tangles (AI open-source intelligence incl. face detection) and Webloc (search an area and time for phone movements, trace a phone); ICE bought licences, not the company; Spire Capital controlling investor since 2022; Penlink acquired Cobwebs in 2023; Penlink: tools 'exclusively use publicly or commercially available data'",
+    "strength": "reported",
+    "sources": [
+     "de25_ffp_penlink"
+    ]
+   },
+   {
+    "text": "Guardian (Just Futures Law FOIA, 2014-2022 ICE/HSI documents): agents could import Cellebrite phone extractions into Palantir tools and search SEVIS (4.9m records) and APIS; NCIC listed as import source; CLEAR not natively connected; Palantir calls itself a 'data processor'",
+    "strength": "reported",
+    "sources": [
+     "de25_gdn_palantir"
+    ]
+   },
+   {
+    "text": "Letter of 14 Apr 2026 (33 signatories incl. Goldman, Velázquez, Wyden) to DHS and ICE asks which government and commercial datasets are in Palantir-developed systems; names ELITE, Clearview, PenLink, L3Harris Stingray and Paragon; deadline 24 Apr 2026",
+    "strength": "primary",
+    "sources": [
+     "de25_goldman_letter"
+    ]
+   },
+   {
+    "text": "ICE notice of intent 10 Aug 2026: ~$6.7m sole-source LexisNexis bridge; work statement requires APIs to ICE applications 'such as but not limited to' the Palantir platform, PenLink and ICE Data Analytics; Accurint Virtual Crime Center includes device-geolocation analysis",
+    "strength": "reported",
+    "sources": [
+     "de25_bu_lexis"
+    ]
+   }
+  ],
+  "sources": {
+   "de25_npr_paragon": {
+    "url": "https://www.npr.org/2026/05/22/nx-s1-5831577/dhs-ice-spyware-paragon",
+    "label": "NPR, DHS says ICE has 'no relationship' with Paragon, May 2026"
+   },
+   "de25_ffp_penlink": {
+    "url": "https://flatwaterfreepress.org/this-nebraska-company-is-supplying-ice-with-surveillance-tech/",
+    "label": "Flatwater Free Press, 'This Nebraska company is supplying ICE with surveillance tech', 20 February 2026"
+   },
+   "de25_gdn_palantir": {
+    "url": "https://www.inkl.com/news/documents-offer-rare-insight-on-ice-s-close-relationship-with-palantir",
+    "label": "Johana Bhuiyan, The Guardian (via inkl), 'Documents offer rare insight on ICE's close relationship with Palantir', September 2025"
+   },
+   "de25_goldman_letter": {
+    "url": "https://goldman.house.gov/sites/evo-subsites/goldman.house.gov/files/evo-media-document/final-april-2026-letter-to-dhs-ice-re-oversight-of-palantir-data-surveillance-contracts.pdf",
+    "label": "Rep. Dan Goldman, Rep. Nydia Velázquez, Sen. Ron Wyden and 30 others, letter to DHS Secretary Mullin and Acting ICE Director Lyons on Palantir and surveillance contracts, 14 April 2026"
+   },
+   "de25_bu_lexis": {
+    "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+    "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+   }
+  }
  }
 }
