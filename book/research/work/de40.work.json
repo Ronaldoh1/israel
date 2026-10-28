@@ -163,5 +163,45 @@
     "label": "Bloomberg Law, 'ICE, HHS Still Limited in Medicaid Info Exchange via Court Order', 30 December 2025"
    }
   }
+ },
+ "de40_garden": {
+  "topic": "What ordinary people can do that the record shows works",
+  "claims": [
+   {
+    "text": "FOIA.gov: 'Generally any person - United States citizen or not - can make a FOIA request'; 'There is no initial fee required to submit a FOIA request'; first two hours of search and 100 pages free for typical requesters; fee waivers for public-interest disclosure; requests for one's own records need identity verification",
+    "strength": "primary",
+    "sources": [
+     "de40_foia_faq"
+    ]
+   },
+   {
+    "text": "IAPP's state comparison (updated 4 Nov 2024) lists 19 states with enacted consumer privacy laws: California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, Virginia",
+    "strength": "primary",
+    "sources": [
+     "de40_iapp_states"
+    ]
+   },
+   {
+    "text": "AP (22 Jan 2026): an ICE memo, disclosed in a whistleblower complaint filed by Whistleblower Aid, reportedly lets officers forcibly enter homes on an administrative warrant (Form I-205) for people with a final removal order, 6 a.m.-10 p.m., after knock and announce; administrative warrants generally do not authorise forced entry into homes, and people may generally refuse entry on one; DHS (McLaughlin): those served have 'full due process and a final order of removal'",
+    "strength": "reported",
+    "sources": [
+     "de40_ap_memo"
+    ]
+   }
+  ],
+  "sources": {
+   "de40_foia_faq": {
+    "url": "https://www.foia.gov/faq.html",
+    "label": "U.S. Department of Justice, FOIA.gov, 'Frequently Asked Questions' (checked 28 October 2026)"
+   },
+   "de40_iapp_states": {
+    "url": "https://iapp.org/resources/article/state-comparison-table",
+    "label": "IAPP, 'US State Privacy Legislation Tracker: state comparison table' (updated 4 November 2024)"
+   },
+   "de40_ap_memo": {
+    "url": "https://www.fox9.com/news/memo-tells-ice-officers-enter-homes-without-judges-warrant",
+    "label": "Associated Press via FOX 9, 'Memo tells ICE officers to enter homes without judge's warrant', 22 January 2026"
+   }
+  }
  }
 }
