@@ -74,7 +74,7 @@ BOOK V · THE EYE (immigration as the occasion)
 
 BOOK VI · THE PATHWAY AND THE FORCE
 - de31 The Pathway: Removing the Brakes — de31_five_patterns, de31_who_benefits, de31_what_was_blocked
-- de32 The Force: Who Would Enforce It — de32_ice_as_template, de32_local_police, de32_the_military_at_home, de32_what_stops_it
+- de32 The Force: Who Would Enforce It — de32_ice_as_template, de32_local_police, de32_the_military_at_home, de32_the_detention_business (private prison companies — GEO Group, CoreCivic — share of ICE detention, contracts and revenue since 2025, stock moves, political donations and lobbying, the 2021 order that exempted ICE and its 2025 revocation, GEO's electronic-monitoring arm (BI Inc., ankle monitors and the SmartLINK face-check app) as a surveillance link, detainee labour and the minimum-wage verdicts, state-run sites such as Florida's Everglades camp; money trail input → mechanism → who gains → who pays), de32_what_stops_it
 - de33 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de33_two_tests
 
 BOOK VII · THE TEST
