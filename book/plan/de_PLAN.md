@@ -1,4 +1,4 @@
-# Volume plan (DRAFT v0.5, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
+# Volume plan (OUTLINE v1.0, 28 Oct 2026; batch-2 sources mapped in scratchpad/de/batch2_map.md): The Dark Enlightenment Architecture
 
 Status: outline only. Ron is still supplying research; do not start writing until he says so.
 
@@ -27,29 +27,66 @@ Do not port: dark-enlightenment-decoded.html, the Truman-parallel doc, palantir_
 ## Reading frame: the worst case, tested (Ron, 28 Oct 2026)
 The preface (de_intro) states the book's working hypothesis plainly: read every mechanism in its worst case — immigration enforcement as the occasion, government cuts (DOGE) as the occasion, and a sovereign executive without a veto (the Dark Enlightenment's stated end state) as the destination — and then test that reading against the record. The hypothesis is the Sophia platform's; it is never stated as a finding. Every part carries a closing passage "The worst-case reading, tested" that grades it in three registers: documented / probable / not supported (and, where the record runs against it, says so). Named people get the PERSON ceiling: intent only from their own words; motive claims stay contested unless independently documented.
 
-## Parts and sections (proposed v0.3)
-Front: de_intro (preface with the worst-case frame and how it is tested).
+## Outline v1.0 (28 Oct 2026) — 40 parts in seven books, plus preface
+Every part closes with "The worst-case reading, tested" (documented / probable / not supported). Biography parts close with "Money and political influence" and "Claims against the record".
 
-I. THE IDEAS
-- de1 The Question — de1_what_it_is, de1_spine_and_overlay, de1_how_the_label_inflates (support scale: wrote / cited / funded / met / named by others)
+Preface — de_intro: the question, the worst-case reading frame stated plainly as the platform's hypothesis, how the book tests it, how to read the grades.
+
+BOOK I · THE IDEAS
+- de1 The Question — de1_what_it_is, de1_spine_and_overlay, de1_how_the_label_inflates
 - de2 The Name and the Texts (2007–2014) — de2_the_name, de2_core_texts
-- de3 The Inheritance — de3_lineage, de3_technocracy (incl. Musk's grandfather J.N. Haldeman in Technocracy Inc., documented), de3_other_lineages
+- de3 The Inheritance — de3_lineage, de3_technocracy, de3_other_lineages
 - de4 Nick Land: the Engine — de4_ccru_acceleration, de4_the_2012_text, de4_the_hard_passages
-- de5 Curtis Yarvin: the Life (1973–2026, full documented biography) — de5_childhood_and_schooling, de5_programmer_to_moldbug, de5_tlon_exit_and_return, de5_the_public_years
-- de6 Curtis Yarvin: the Program and the Hard Posts — de6_the_program, de6_the_hard_posts
+- de5 Curtis Yarvin: the Life — de5_childhood_and_schooling, de5_programmer_to_moldbug, de5_tlon_exit_and_return, de5_the_public_years
+- de6 Curtis Yarvin: the Program and the Hard Posts — de6_the_program, de6_the_hard_posts, de6_claims_vs_record
 - de7 The Diagnosis, Steelmanned — de7_what_it_gets_right, de7_the_other_diagnosis
 - de8 Where the Argument Breaks — de8_tests_it_fails, de8_who_enforces_the_charter
 
-II. THE MONEY AND THE MEN (each biography part ends with two standard sections: "Money and political influence" — a donations-and-access ledger by cycle, FEC/OpenSecrets-sourced — and "Claims against the record" — the red-flag ledger, see rubric below)
-- de9 Peter Thiel: the Life (1967–2026) — de9_formation, de9_paypal_palantir_facebook, de9_gawker_citizenship_and_tax, de9_politics_and_argentina, de9_money_and_influence, de9_claims_vs_record
+BOOK II · THE MEN AND THE MONEY
+- de9 Peter Thiel: the Life — de9_formation, de9_paypal_palantir_facebook, de9_gawker_citizenship_and_tax, de9_politics_and_argentina, de9_money_and_influence, de9_claims_vs_record
 - de10 Peter Thiel: the Mind — de10_education_of_a_libertarian, de10_girard_and_the_katechon, de10_philosophy_vs_practice
-- de11 Elon Musk: the Life (1971–2026) — de11_pretoria_and_haldeman, de11_zip2_xcom_paypal, de11_tesla_spacex_and_the_state, de11_twitter_x_xai, de11_money_and_influence, de11_claims_vs_record
-- de12 J.D. Vance: the Life (1984–2026) — de12_middletown_to_yale, de12_the_thiel_years (2011 talk, Mithril 2016 in San Francisco, Narya 2019), de12_senate_and_the_ticket (Protect Ohio Values $15M, the 2024 selection and who pushed it), de12_one_heartbeat_away (the 25th Amendment line of succession; the worst-case reading for the Thiel network, tested), de12_money_and_influence, de12_claims_vs_record
+- de11 Elon Musk: the Life — de11_pretoria_and_haldeman, de11_zip2_xcom_paypal, de11_tesla_spacex_and_the_state, de11_twitter_x_xai, de11_money_and_influence, de11_claims_vs_record
+- de12 J.D. Vance: the Life — de12_middletown_to_yale, de12_the_thiel_years, de12_senate_and_the_ticket, de12_one_heartbeat_away, de12_money_and_influence, de12_claims_vs_record
 - de13 The PayPal Network — de13_who_they_are, de13_where_they_sit_now
-- de14 The Money — de14_network_map, de14_loops (incl. "Vance as an investment": candidate → office → policy → portfolio, a candidate loop, graded), de14_foundations_and_opacity, de14_epstein_valar
+- de14 The Money — de14_network_map, de14_loops, de14_foundations_and_opacity, de14_epstein_valar
 - de15 The Same Playbook, Twice (Vance and Masters) — de15_vance_and_masters
-- de15b The Adoption Layer — de15b_the_valley, de15b_elite_pipeline
-(Yarvin keeps his two parts, de5–de6, with the same two closing sections.)
+- de16 The Adoption Layer — de16_the_valley, de16_elite_pipeline, de16_neighbours_not_the_same (integralism, Christian nationalism, NatCon, pronatalism, rationalists, e/acc; violent accelerationism kept distinct)
+
+BOOK III · DOGE: THE ARCHITECTURE (cuts as the occasion)
+- de17 The Deal: Campaign Money to an Office — de17_money_to_office, de17_what_doge_was_legally
+- de18 The Operators — de18_the_team
+- de19 Inside the Systems — de19_the_access, de19_the_courts
+- de20 The Cuts and Who Paid — de20_the_cuts, de20_who_paid
+- de21 Promises, Conflicts and the Ending — de21_the_dividend, de21_conflicts_and_contracts, de21_the_ending
+
+BOOK IV · EXIT
+- de22 Exit Zones — de22_seas_and_zones, de22_prospera_v_honduras, de22_argentina_and_freedom_cities
+- de23 Urbit: the Digital Exit — de23_address_space, de23_wartime_ceo
+
+BOOK V · THE EYE (immigration as the occasion)
+- de24 The Toolkit I: Data — de24_data_and_fusion, de24_apps_and_ai_companies, de24_the_myth_of_anonymous_data
+- de25 The Toolkit II: Where You Are — de25_location_and_mobile, de25_spyware_and_phones, de25_cars_wearables_and_the_home
+- de26 The Toolkit III: Seeing, Paying, Building — de26_faces_drones_satellites, de26_code_and_cloud, de26_ai_layer, de26_money_rails, de26_counterweights
+- de27 Palantir — de27_origins_and_control, de27_capability_not_intent, de27_money_and_war, de27_europe_says_no
+- de28 ICE and the Data Stack — de28_ice_contracts, de28_brokers_and_doctrine
+- de29 When It Was Used at Home — de29_the_precedent (SHAMROCK, MINARET, COINTELPRO, CHAOS, Church Committee), de29_the_catalogue (NSA/GCHQ/CIA/FBI programmes, status 2026), de29_the_messengers (Snowden, Manning, Assange vs officials never charged)
+- de30 The Legal Architecture — de30_rage_to_schedule, de30_silos_and_subpoenas, de30_nspm7_and_detachment
+
+BOOK VI · THE PATHWAY AND THE FORCE
+- de31 The Pathway: Removing the Brakes — de31_five_patterns, de31_who_benefits, de31_what_was_blocked
+- de32 The Force: Who Would Enforce It — de32_ice_as_template, de32_local_police, de32_the_military_at_home, de32_what_stops_it
+- de33 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de33_two_tests
+
+BOOK VII · THE TEST
+- de34 The Readiness Audit — de34_what_is_built, de34_the_repurposing_test, de34_missing_pieces_and_triggers
+- de35 If It Were Enforced — de35_three_layers, de35_the_consequence_ladder (watched → denied → fined → prosecuted → removed → confined; each rung: what the theorists prescribe / what exists now / the worst-case extension), de35_the_rights_ledger (every right in a democratic republic against its fate under a CEO-sovereign), de35_the_unproductive
+- de36 Beyond America — de36_who_reads_it_abroad, de36_would_publics_want_it, de36_foreign_money
+- de37 Israel: Documented Ties Only — de37_palantir_and_israel, de37_what_is_not_supported
+- de38 What Doesn't Fit — de38_disagreements, de38_claims_that_fail, de38_the_honest_nulls
+- de39 The Reading Beneath the Record (labelled interpretation) — de39_seeing_stones, de39_the_runtime
+- de40 The Verdict and What to Watch — de40_worst_case_scorecard, de40_watch_list, de40_the_garden
+
+Research base per part: scratchpad/de/ dossier_bios, dossier_doge, dossier_vance_influence_flags, research_A–O, inventory, batch2_map; open items in OPEN_ITEMS.md.
 
 ## Red-flag rubric: public claims against the documented record (Ron, 28 Oct 2026)
 Flag major dishonesty or misleading self-presentation that shapes public perception. Each flag: the claim (dated, own words, sourced) → the record (sourced) → the grade. Grades, strongest first:
@@ -59,32 +96,6 @@ Flag major dishonesty or misleading self-presentation that shapes public percept
 - GREY — disputed: credible accounts conflict; both shown.
 "Lie" is used only where the record shows the person knew the claim was untrue when making it; otherwise the flag names the contradiction and lets the reader judge. Same standard for every person, every party.
 
-III. DOGE: THE ARCHITECTURE (worst case: cuts as the occasion)
-- de16 The Deal: Campaign Money to an Office (America PAC spending; appointment; DOGE's legal form — USDS renamed, temporary organization, special government employee status) — de16_money_to_office, de16_what_doge_was_legally
-- de17 The Operators (who was hired, ages and qualifications as documented, clearances, the chain of command dispute) — de17_the_team
-- de18 Inside the Systems (Treasury payments, OPM, SSA NUMIDENT, IRS "mega-API" with Palantir, NLRB whistleblower; the lawsuits and rulings; the Supreme Court stays) — de18_the_access, de18_the_courts
-- de19 The Cuts and Who They Hit (USAID, CFPB, HHS, SSA, VA, NEH…; who used those services; the savings claim vs GAO; rehiring) — de19_the_cuts, de19_who_paid
-- de20 Promises and Conflicts (the $5,000 "DOGE dividend" that never came; Musk companies' regulators and contracts; deregulation; the Musk–Trump break; DOGE's end, 4 July 2026) — de20_the_dividend, de20_conflicts_and_contracts, de20_the_ending
-
-IV. EXIT AND THE EYE
-- de21 Exit — de21_seas_and_zones, de21_prospera_v_honduras, de21_argentina_and_freedom_cities
-- de22 Urbit: the Digital Exit — de22_address_space, de22_wartime_ceo
-- de22b The Toolkit, Explained (how each technology works, what it can do alone and combined, documented US uses, legal limits) — de22b_data_and_fusion (big data, brokers, ad-tech bidstream, analytics, Palantir-class fusion), de22b_location_and_mobile (phones, mobile ad IDs, cell-site, geofences, plate readers, car telematics), de22b_faces_drones_and_sensors (computer vision, facial recognition, drones, towers, satellites/Starshield), de22b_spyware_and_phones (Pegasus, Graphite, Cellebrite: zero-click, extraction; who may legally use them), de22b_cars_wearables_and_the_home (connected cars incl. Tesla's cameras and telemetry; wearables and health apps; smart speakers, doorbells, TVs, meters, robot vacuums; what is collected now, what could be, who can obtain it and how; the Musk stack: Tesla + X + xAI + Starlink + Neuralink under one owner, documented vs capability), de22b_apps_ai_and_the_myth_of_anonymous_data (what apps and AI assistants collect; on-device machine learning and tracking SDKs; lawsuits and enforcement against AI and big-tech firms judged by what changed — policy changes and new laws, not settlements; why 'anonymized' analytics re-identify; partnerships such as PayPal–Perplexity shown as documented commercial links, not data transfers), de22b_code_and_cloud (coding platforms — GitHub/Microsoft, Copilot training, GitHub's ICE contract dispute, government takedown and sanctions blocks; AI coding agents with codebase access; the cloud substrate — AWS, Microsoft, Google, Oracle under JWCC/CIA contracts; AI firms' government deals — CDAO $200M awards July 2025, GSA OneGov $1 offers, Grok for Government), de22b_ai_layer (LLM triage of speech, risk scores like ELITE confidence scores, predictive policing, sentiment tools), de22b_money_rails (bank surveillance and debanking, crypto KYC and public ledgers, stablecoins/GENIUS Act, the US anti-CBDC stance, digital ID: REAL ID, mobile licences, biometric IDs), de22b_counterweights (encryption, courts, state privacy laws, employee refusals)
-- de23 The Eye: Palantir — de23_origins_and_control, de23_capability_not_intent, de23_money_and_war, de23_europe_says_no
-- de24 The Eye at Home: ICE and the Data Stack (worst case: immigration as the occasion) — de24_ice_contracts, de24_brokers_and_doctrine
-- de25 The Switch: The Legal Architecture — de25_when_it_was_used_at_home (the documented precedent: NSA SHAMROCK and MINARET, FBI COINTELPRO, CIA Operation CHAOS, the watch lists of Martin Luther King, Muhammad Ali and anti-war critics, the Church Committee findings and the FISA reforms that followed), de25_the_archive_and_the_messengers (full programme catalogue: PRISM, Upstream/FAIRVIEW/STORMBREW/BLARNEY, Section 215, Stellar Wind, XKEYSCORE, MUSCULAR, BULLRUN, DISHFIRE, CO-TRAVELER, MYSTIC, TURBINE/QUANTUM and the TAO catalogue, ICREACH, Optic Nerve and Tempora (GCHQ), CIA Vault 7 tools, the CIA bulk programme disclosed in 2022, stingrays and FBI face databases; what Snowden's documents and WikiLeaks' Vault 7 exposed — PRISM, Upstream, Section 215 phone records, XKEYSCORE, MUSCULAR, carrier cooperation, CIA hacking tools; which programmes ended, which were legalised or renewed, and which were replaced by data purchases; how the messengers were treated — Espionage Act charges, exile, the 2024 Assange plea — against officials who misled Congress and were never charged; both sides of the harm debate), de25_rage_to_schedule, de25_silos_and_subpoenas, de25_nspm7_and_detachment
-
-V. THE TEST
-- de25b The Pathway: Deregulation and the Removal of Brakes (pattern analysis of bills, executive orders, rules and rulings 2024–26, each dated and sourced, sorted into five patterns: (1) internal checks removed — Schedule P/C, inspectors general fired, independent agencies under the President (EO 14215; Trump v. Slaughter); (2) judicial brakes narrowed — Loper Bright (Chevron overruled), Trump v. CASA (nationwide injunctions); (3) states pre-empted — the AI-law moratorium attempt (stripped 99–1) and later federal pre-emption moves, federal privacy pre-emption bills; (4) sector carve-outs that match the network's portfolio — AI (EO 14179, the AI Action Plan), crypto (GENIUS, market-structure bill, SEC case withdrawals), drones, commercial space and launch licensing, defence procurement reform favouring "non-traditional" vendors, charter-zone ideas; (5) disclosure narrowed — FOIA, data, ethics records. Each item shows who benefits as documented, the stated rationale, and the counter-evidence: what Congress or courts blocked, and bipartisan precedents) — de25b_five_patterns, de25b_who_benefits, de25b_what_was_blocked
-- de26 Two Tests, One Result (Urbit 2024, DOGE 2025–26) — de26_two_tests
-- de27 The Readiness Audit — de27_what_is_built, de27_the_repurposing_test, de27_missing_pieces_and_triggers
-- de27b The Force: Who Would Enforce It (worst-case lens: a sovereign needs people with badges and guns; it would repurpose existing forces, not build new ones) — de27b_ice_as_template (ICE/CBP growth: funding, hiring, tactics in cities, other federal agents reassigned to immigration work, detention capacity incl. military bases), de27b_local_police (287(g) agreements and task forces, fusion centres, cooperation vs sanctuary limits, NYPD and big-city policies), de27b_the_military_at_home (Guard federalisations 2025–26 and the court rulings, Posse Comitatus findings, Insurrection Act status, border "National Defense Areas", quick-reaction forces, leadership and JAG firings, the September 2025 Quantico remarks), de27b_what_stops_it (oaths and refusals, courts, governors, juries, the historical record — Little Rock 1957, Kent State 1970, Los Angeles 1992 — and documented cases of officers or units declining orders)
-- de28 If It Were Enforced — de28_three_layers, de28_what_you_would_give_up, de28_the_unproductive
-- de28b Beyond America: International Support and Foreign Money — de28b_who_reads_it_abroad (documented uptake: Land in Shanghai, Brazil's Mission Party, European readers/publishers; adjacent models praised by the theorists — Singapore, Dubai/Gulf monarchies, China, Bukele's El Salvador, Milei's Argentina, Orbán's Hungary — and how they differ), de28b_would_publics_want_it (cross-national survey data on support for "strong leader" / "experts decide" rule), de28b_foreign_money (documented foreign capital in the network's companies — e.g. Gulf and other sovereign or private investors in X/xAI, Anduril, Palantir, Founders Fund LPs where disclosed — versus no documented foreign funding of the theorists themselves; exit zones' foreign investors)
-- de29 Israel: Documented Ties Only — de29_palantir_and_israel, de29_what_is_not_supported
-- de30 What Doesn't Fit — de30_disagreements, de30_claims_that_fail, de30_the_honest_nulls
-- de31 The Reading Beneath the Record (labelled interpretation) — de31_seeing_stones, de31_the_runtime
-- de32 The Verdict and What to Watch — de32_worst_case_scorecard, de32_watch_list, de32_the_garden
 
 ## Research still needed before writing (verification debt)
 NSPM-7 and follow-ons; Detachment 201; Próspera/ICSID/Pronomos/Praxis/network state; Antichrist lectures and Karp's Technological Republic; Land primary texts; Anduril products/contracts; vendor roster (CLEAR, Gravy, ShotSpotter, Ring, Dataminr, Zignal, Fusus, Flock); Yarvin archived posts (biodiesel, slavery line, Breivik, RAGE) and the "Fris Corp" quote; Harvard/Yale debates, Mission Party, Gorbachev doctrine; Thiel's 2023 Atlantic quote, 2016 privacy op-ed, Burnham $100K, Clearview stake, 1789 Capital; Singapore test; FDR 1933 analogy; AIPAC vs comparable lobbies benchmark; Gilens & Page dispute; techno-feudalism; measured chilling effects; Palantir figures after Q2 2026; UK NHS, Germany, NATO Maven, Denmark.
