@@ -214,5 +214,23 @@
     "label": "U.S. Government Accountability Office, GAO-26-108192, 'DOGE: Congress and the Public Lack Assurance That Systems and Data Were Protected at Multiple Agencies', 29 September 2026"
    }
   }
+ },
+ "de18_audit": {
+  "topic": "Audit additions, Book III",
+  "claims": [
+   {
+    "text": "Bloomberg: after Elez resigned, Treasury's forensic analysis found that he had emailed a spreadsheet to two GSA officials; Bloomberg's correction states an earlier (AI-generated) summary 'incorrectly said Elez had sent the spreadsheet after he resigned' — the discovery, not the sending, came after his resignation",
+    "strength": "reported",
+    "sources": [
+     "de18_audit_elez_timing"
+    ]
+   }
+  ],
+  "sources": {
+   "de18_audit_elez_timing": {
+    "url": "https://news.bloombergtax.com/daily-tax-report/doge-staffer-broke-treasury-rules-in-transmitting-personal-data",
+    "label": "Bloomberg News (Bloomberg Tax), 'DOGE Staffer Broke Treasury Rules Transmitting Personal Data (1)', 15 March 2025, with correction note"
+   }
+  }
  }
 }
