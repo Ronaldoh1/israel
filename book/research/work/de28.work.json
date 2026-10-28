@@ -398,5 +398,23 @@
     "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
    }
   }
+ },
+ "de28_audit": {
+  "topic": "Audit additions, Book V round 5 (de28)",
+  "claims": [
+   {
+    "text": "ICE purchase order 70CMSD25P00000111 to Clearview AI, sole source, 5 Sep 2025, total value $9,225,000 (one-year base plus three option years; $3.75m at award per Biometric Update)",
+    "strength": "reported",
+    "sources": [
+     "de28_audit_clearview_piid"
+    ]
+   }
+  ],
+  "sources": {
+   "de28_audit_clearview_piid": {
+    "url": "https://govcontractfinder.com/contracts/investigative-software-70CMSD25P00000111",
+    "label": "GovContractFinder (FPDS mirror), ICE purchase order 70CMSD25P00000111 to Clearview AI, 5 September 2025"
+   }
+  }
  }
 }

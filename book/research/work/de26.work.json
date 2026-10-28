@@ -627,5 +627,28 @@
     "label": "AppleInsider, 'UK blinks, backs down from its Apple backdoor encryption demand', 19 August 2025"
    }
   }
+ },
+ "de26_audit": {
+  "topic": "Audit additions, Book V round 5 (de26)",
+  "claims": [
+   {
+    "text": "Axios (6 Mar 2025), citing senior State Department officials: a 'Catch and Revoke' effort, with DOJ and DHS, to include AI-assisted reviews of tens of thousands of student-visa holders' social-media accounts; State did not comment directly; FIRE criticised reliance on AI for political speech",
+    "strength": "reported",
+    "sources": [
+     "de26_audit_catchrevoke",
+     "de26_audit_axios_catchrevoke"
+    ]
+   }
+  ],
+  "sources": {
+   "de26_audit_catchrevoke": {
+    "url": "https://www.timesofisrael.com/us-reportedly-will-use-ai-to-revoke-visas-from-students-perceived-to-be-pro-hamas/",
+    "label": "Times of Israel (relaying Axios, 6 March 2025), 'US reportedly will use AI to revoke visas from students perceived to be pro-Hamas', 7 March 2025"
+   },
+   "de26_audit_axios_catchrevoke": {
+    "url": "https://www.axios.com/2025/03/06/state-department-ai-revoke-foreign-student-visas-hamas",
+    "label": "Axios, 'Scoop: State Dept. to use AI to revoke visas of foreign students who appear \"pro-Hamas\"', 6 March 2025"
+   }
+  }
  }
 }
