@@ -1,0 +1,224 @@
+{
+ "volume": "democracy",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "dt3_primaries_and_the_two_party_trap",
+   "stage": "dt3",
+   "topic": "Primaries, turnout, safe seats and the two-party system",
+   "claims": [
+    {
+     "text": "Ballotpedia (Aug 2026): Republican Party primaries are closed in 23 states, open in 14, semi-closed in 10; Democratic primaries closed in 17, open in 18, semi-closed in 12; top-two or top-four variants in 5 states. Closed: voter must be affiliated with the party; semi-closed: unaffiliated voters may choose a party primary",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_primarytypes"
+     ]
+    },
+    {
+     "text": "BPC: turnout of all eligible voters in 2022 primaries was 21.3%, up on the previous four cycles; states with more open systems averaged 24.5%, semi-open 21.5%, closed 20.7%; top-two/top-four about 3 points higher",
+     "strength": "reported",
+     "sources": [
+      "dt3_bpc_turnout2022"
+     ]
+    },
+    {
+     "text": "Unite America (advocacy, 8 Oct 2024): 87% of House races (380 seats) 'effectively decided' by 7% of eligible voters (18.1M) in 2024 primaries; 169 members ran unopposed in the primary for a safe seat; method and definition of 'decided' not given on the page",
+     "strength": "reported",
+     "sources": [
+      "dt3_ua_87pct"
+     ]
+    },
+    {
+     "text": "Cook 2025 PVI: 87 districts between D+5 and R+5, 56 (about 64%) held by Democrats; median seat Republican-tilted",
+     "strength": "reported",
+     "sources": [
+      "dt3_cook_pvi2025"
+     ]
+    },
+    {
+     "text": "Cook (2023): 82 of 435 districts between R+5 and D+5, down 50% from 164 in 1999; 58% of the decline since 1997 from areas trending redder or bluer (realignment/sorting) rather than redistricting",
+     "strength": "reported",
+     "sources": [
+      "dt3_cook_decimated"
+     ]
+    },
+    {
+     "text": "Cook 2026 PVI: ten states redrew for 2026; median House seat R+3, two points redder than before; map 'more skewed towards Republicans and less elastic'",
+     "strength": "reported",
+     "sources": [
+      "dt3_cook_pvi2026"
+     ]
+    },
+    {
+     "text": "Bloomberg Government/Political Wire 3 May 2026: Cook listed 16 toss-up House seats (before Florida's new map), 16 more leaning; outcome all but predetermined in more than 400 seats; possibly the fewest competitive seats since 1984",
+     "strength": "reported",
+     "sources": [
+      "dt3_pw_tossups"
+     ]
+    },
+    {
+     "text": "Duverger's law: single-member plurality districts tend to produce two dominant parties via a mechanical effect (thinly spread small parties win few seats) and a psychological effect (voters avoid 'wasting' votes); Perot won 19% in 1992 and no electoral votes; Duverger saw it as a tendency, not absolute",
+     "strength": "reported",
+     "sources": [
+      "dt3_wiki_duverger"
+     ]
+    },
+    {
+     "text": "Ballotpedia (July 2026): 48 states have some form of sore loser law barring a candidate who lost a party primary from running as independent or another party's nominee for the same office; Connecticut and New York have none",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_soreloser"
+     ]
+    },
+    {
+     "text": "Pew (survey 17-30 Nov 2025, n=10,357; published 15 Jan 2026): 37% say 'I often wish there were more political parties to choose from' describes them extremely/very well; Democrats/leaners 46%, Republicans/leaners 29%; ages 18-49 44%, 65+ 25%",
+     "strength": "primary",
+     "sources": [
+      "dt3_pew_moreparties"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "dt3_bp_primarytypes",
+     "url": "https://www.ballotpedia.org/State_primary_election_types",
+     "label": "Ballotpedia, 'State primary election types', as of August 2026"
+    },
+    {
+     "key": "dt3_bpc_turnout2022",
+     "url": "https://bipartisanpolicy.org/press-release/voters-dont-participate-primaries",
+     "label": "Bipartisan Policy Center, 'Nearly 80% of Eligible Voters Don't Participate in Primaries' (on its report '2022 Primary Turnout: Trends and Lessons for Boosting Participation'), 2023"
+    },
+    {
+     "key": "dt3_ua_87pct",
+     "url": "https://uniteamerica.org/articles/analysis-87-of-u-s-house-elections-already-determined-in-primaries-by-just-7-of-americans",
+     "label": "Ross Sherman, Unite America, 'Analysis: 87% of U.S. House elections already determined in primaries by just 7% of Americans', 8 October 2024"
+    },
+    {
+     "key": "dt3_cook_pvi2025",
+     "url": "https://www.cookpolitical.com/cook-pvi/cook-pvi-underscores-democrats-complex-2026-math-problem",
+     "label": "Cook Political Report, 'Cook PVI underscores Democrats' complex 2026 math problem', 2025"
+    },
+    {
+     "key": "dt3_cook_decimated",
+     "url": "https://www.cookpolitical.com/cook-pvi/realignment-more-redistricting-has-decimated-swing-house-seats",
+     "label": "Cook Political Report, 'Realignment, more than redistricting, has decimated swing House seats', 2023"
+    },
+    {
+     "key": "dt3_cook_pvi2026",
+     "url": "https://www.cookpolitical.com/cook-pvi/introducing-2026-cook-pvi-re-redistricting-yields-more-republican-less-elastic-house-map",
+     "label": "Cook Political Report, 'Introducing the 2026 Cook PVI: Re-redistricting yields a more Republican, less elastic House map', 2026"
+    },
+    {
+     "key": "dt3_pw_tossups",
+     "url": "https://politicalwire.com/2026/05/03/just-16-house-seats-are-toss-ups/",
+     "label": "Political Wire (reporting Bloomberg Government on Cook ratings), 'Just 16 House seats are toss-ups', 3 May 2026"
+    },
+    {
+     "key": "dt3_wiki_duverger",
+     "url": "https://en.wikipedia.org/wiki/Duverger%27s_law",
+     "label": "Wikipedia, 'Duverger's law'"
+    },
+    {
+     "key": "dt3_bp_soreloser",
+     "url": "https://ballotpedia.org/Sore_loser_laws_by_state",
+     "label": "Ballotpedia, 'Sore loser laws by state', as of July 2026"
+    },
+    {
+     "key": "dt3_pew_moreparties",
+     "url": "https://www.pewresearch.org/short-reads/2026/01/15/nearly-4-in-10-americans-wish-they-had-options-beyond-the-republican-and-democratic-parties/",
+     "label": "Pew Research Center, 'Nearly 4 in 10 Americans wish they had options beyond the Republican and Democratic parties', 15 January 2026"
+    }
+   ]
+  },
+  {
+   "id": "dt3_the_map_makers",
+   "stage": "dt3",
+   "topic": "Gerrymandering: Rucho, Moore v. Harper and the 2025-26 mid-decade redistricting war",
+   "claims": [
+    {
+     "text": "1812: Massachusetts Governor Elbridge Gerry signed a redistricting bill creating a contorted state senate district favouring his Democratic-Republicans over the Federalists; a Boston Gazette cartoon of 26 March 1812 drew it as a winged monster and the label blended Gerry with 'salamander'",
+     "strength": "reported",
+     "sources": [
+      "dt3_npr_gerry"
+     ]
+    },
+    {
+     "text": "Rucho v. Common Cause, 27 June 2019, 5-4 (Roberts; Kagan dissenting with Ginsburg, Breyer, Sotomayor): partisan gerrymandering claims are political questions beyond federal courts, which are 'not equipped to apportion political power as a matter of fairness'; districting assigned to legislatures 'expressly checked and balanced by the Federal Congress'; Kagan: gerrymanders 'debased and dishonored our democracy'; North Carolina's 2016 map drawn by Republicans to subordinate non-Republican voters (district court)",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_rucho"
+     ]
+    },
+    {
+     "text": "Companion case Lamone v. Benisek (27 June 2019): Maryland's 2011 map drawn by Democratic-led state government; 6th district redrawn, registered Republicans fell by about 70,000; Republican Roscoe Bartlett lost in 2012 to John Delaney by more than 20 points; Court vacated and remanded",
+     "strength": "reported",
+     "sources": [
+      "dt3_wiki_benisek"
+     ]
+    },
+    {
+     "text": "Moore v. Harper, 27 June 2023, 6-3: Court rejected the independent state legislature theory; state legislatures remain bound by state constitutions including state-court judicial review of federal election rules; arose from North Carolina Republicans' map struck by the state supreme court",
+     "strength": "reported",
+     "sources": [
+      "dt3_ts_moore",
+      "dt3_brit_moore"
+     ]
+    },
+    {
+     "text": "Ballotpedia (28 Sept 2026): new 2026 maps in effect: Texas +5R (legislature, 29 Aug 2025; SCOTUS allowed 4 Dec 2025), California Prop 50 +5D (voters 4 Nov 2025), North Carolina +1R (22 Oct 2025), Ohio +2R (commission, 31 Oct 2025), Utah +1D (court-chosen map, 10 Nov 2025), Florida +4R (4 May 2026), Tennessee +1R (7 May 2026), Louisiana +1R (29 May 2026), Alabama +1R (2 June 2026); projected net +9R across nine maps",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_redistrict2026"
+     ]
+    },
+    {
+     "text": "Ballotpedia (28 Sept 2026): Missouri's map (28 Sept 2025, +1R) blocked for 2026 pending a veto referendum, 2022 map in use; Virginia's map (signed 21 Feb 2026, aiming at 10D-1R after voters approved an amendment 21 Apr 2026) blocked by the state supreme court 8 May 2026, SCOTUS denied stay 15 May; Indiana's Senate rejected a map on 11 Dec 2025",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_redistrict2026"
+     ]
+    },
+    {
+     "text": "Louisiana v. Callais, 29 April 2026: Supreme Court held Louisiana's map with a second majority-Black district an unconstitutional racial gerrymander; Louisiana redrew and other states including Tennessee followed",
+     "strength": "reported",
+     "sources": [
+      "dt3_bp_redistrict2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "dt3_npr_gerry",
+     "url": "https://www.michiganpublic.org/2026-08-19/elbridge-who-how-the-name-of-a-forgotten-founder-lives-on-in-the-word-gerrymander",
+     "label": "NPR via Michigan Public, 'Elbridge who? How the name of a forgotten founder lives on in the word gerrymander', 19 August 2026"
+    },
+    {
+     "key": "dt3_bp_rucho",
+     "url": "https://ballotpedia.org/Rucho_v._Common_Cause",
+     "label": "Ballotpedia, 'Rucho v. Common Cause'"
+    },
+    {
+     "key": "dt3_wiki_benisek",
+     "url": "https://en.wikipedia.org/wiki/Benisek_v._Lamone",
+     "label": "Wikipedia, 'Benisek v. Lamone'"
+    },
+    {
+     "key": "dt3_ts_moore",
+     "url": "https://texasstandard.org/stories/supreme-court-rejects-independent-state-legislature-theory/",
+     "label": "Texas Standard, 'Understanding the Supreme Court ruling that rejected the independent state legislature theory', June 2023"
+    },
+    {
+     "key": "dt3_brit_moore",
+     "url": "https://www.britannica.com/topic/Moore-v-Harper",
+     "label": "Britannica, 'Moore v. Harper'"
+    },
+    {
+     "key": "dt3_bp_redistrict2026",
+     "url": "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections?hl=en-GB",
+     "label": "Ballotpedia, 'Redistricting ahead of the 2026 elections', updated 28 September 2026"
+    }
+   ]
+  }
+ ]
+}

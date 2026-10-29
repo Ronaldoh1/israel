@@ -1,0 +1,324 @@
+{
+ "volume": "democracy",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "dt7_money_fixes",
+   "stage": "dt7",
+   "topic": "Money fixes: public financing, disclosure, lobbying limits, amendment; NRSC v. FEC",
+   "claims": [
+    {
+     "text": "NYC matches contributions up to $250 at $8 to $1; 94% of candidates in the 2021 primary took part",
+     "strength": "primary",
+     "sources": [
+      "dt7_nyc_match"
+     ]
+    },
+    {
+     "text": "Malbin and Parrott (2017): NYC council races small donors per 100,000 constituents rose from 176 (1:1 match, 1997) to 218 (6:1, 2009-13); small donors' share of funds rose from 45% to 63%; LA's program showed no meaningful gain (174 to 161); difference-in-differences vs state assembly districts significant for NYC; 73% of NYC census block groups had $100-250 donors vs 43%/57% in LA; mayoral races drew smaller, less diverse small-donor shares",
+     "strength": "reported",
+     "sources": [
+      "dt7_malbin_parrott"
+     ]
+    },
+    {
+     "text": "Seattle: four $25 vouchers per resident each cycle, property-levy funded ($3M/yr; Prop 1 raises $4.5M/yr for 10 years); users 38,000 (6.76% of voting-age residents) 2019, 48,000 (7.59%) 2021, 30,649 (4.72%) 2023; Georgetown/Stony Brook study: users skew higher-income, white, older but 'more representative of all Seattle voters than cash donors'; critic Ari Hoffman: 'inefficient, underutilized, and fails to curb big money's influence'; PACs spent over $2M on the 2021 mayoral race",
+     "strength": "reported",
+     "sources": [
+      "dt7_cascade_seattle"
+     ]
+    },
+    {
+     "text": "Seattle Proposition 1 (renewal of the Democracy Voucher levy) passed 59.12% to 40.88% on 5 August 2025",
+     "strength": "reported",
+     "sources": [
+      "dt7_bp_seattle"
+     ]
+    },
+    {
+     "text": "Presidential public funding began with the 1976 cycle; Obama in 2008 was the first major-party nominee to decline public funds entirely; in 2012 neither Obama nor Romney accepted; checkoff participation peaked at 28.7% (1980), about 6% in 2012; spending limits regarded as 'too low to permit effective campaigning'",
+     "strength": "primary",
+     "sources": [
+      "dt7_crs_presfund"
+     ]
+    },
+    {
+     "text": "DISCLOSE Act of 2026 introduced 4 March 2026 by Whitehouse, Pappas, Raskin and Morelle with 186 Democrats (all 47 senators caucusing with Democrats, 139 House Democrats); groups spending over $10,000 on elections must disclose donors over $10,000; bars transfers to hide donors; extends disclaimers online",
+     "strength": "primary",
+     "sources": [
+      "dt7_whitehouse_disclose2026"
+     ]
+    },
+    {
+     "text": "DISCLOSE Act (S.4822) cloture on the motion to proceed failed 49-49 on 22 September 2022",
+     "strength": "primary",
+     "sources": [
+      "dt7_senate_disclose2022"
+     ]
+    },
+    {
+     "text": "Blanes i Vidal, Draca and Fons-Rosen (AER 2012): lobbyists who had worked for a US senator 'suffer a 24 percent drop' in revenue when that senator leaves office; drop immediate, lasting, larger for senior/powerful senators; read as evidence lobbyists sell access",
+     "strength": "reported",
+     "sources": [
+      "dt7_aer_revolving"
+     ]
+    },
+    {
+     "text": "NRSC v. FEC, decided 30 June 2026: FECA limits on political parties' coordinated expenditures violate the First Amendment; Colorado II (2001) overruled; parties may now coordinate unlimited spending with candidates; rules for super PACs and 501(c)(4)s unchanged; parties still cannot accept corporate contributions",
+     "strength": "reported",
+     "sources": [
+      "dt7_skadden_nrsc"
+     ]
+    },
+    {
+     "text": "NRSC v. FEC: 6-3, Kavanaugh for the Court; Kagan dissenting, joined by Sotomayor and Jackson",
+     "strength": "reported",
+     "sources": [
+      "dt7_pac_nrsc"
+     ]
+    },
+    {
+     "text": "Americans for Prosperity Foundation v. Bonta, 1 July 2021, 6-3 (Roberts): California's requirement that charities file their major donors with the state burdened donors' First Amendment rights and was not narrowly tailored; Roberts: California 'casts a dragnet for sensitive donor information'; the ACLU, NAACP Legal Defense Fund and Human Rights Campaign backed the challengers; Sotomayor (with Breyer, Kagan) dissented, warning of a 'significant risk that it will topple disclosure regimes that should be constitutional'",
+     "strength": "reported",
+     "sources": [
+      "dt7_wiki_afpbonta"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "dt7_nyc_match",
+     "url": "https://www.nycvotes.org/news-and-press/articles/nyc-matching-funds-program/",
+     "label": "NYC Campaign Finance Board (NYC Votes), 'NYC's Matching Funds Program', 20 March 2025"
+    },
+    {
+     "key": "dt7_malbin_parrott",
+     "url": "https://www.degruyterbrill.com/document/doi/10.1515/for-2017-0015/html",
+     "label": "Michael J. Malbin and Michael Parrott, 'Small Donor Empowerment Depends on the Details: Comparing Matching Fund Programs in New York and Los Angeles', The Forum (De Gruyter), 2017"
+    },
+    {
+     "key": "dt7_cascade_seattle",
+     "url": "https://www.cascadepbs.org/all/2025/07/seattle-democracy-voucher-program-up-for-renewal-on-august-ballot",
+     "label": "Cascade PBS, 'Seattle Democracy Voucher program up for renewal on August ballot', 21 July 2025"
+    },
+    {
+     "key": "dt7_bp_seattle",
+     "url": "https://ballotpedia.org/Seattle,_Washington,_Proposition_1,_Increase_Property_Tax_Limit_Measure_(August_2025)",
+     "label": "Ballotpedia, 'Seattle, Washington, Proposition 1, Increase Property Tax Limit Measure (August 2025)'"
+    },
+    {
+     "key": "dt7_crs_presfund",
+     "url": "https://www.everycrsreport.com/reports/RL34534.html",
+     "label": "Congressional Research Service, 'Public Financing of Presidential Campaigns: Overview and Analysis', RL34534, revised 29 January 2014"
+    },
+    {
+     "key": "dt7_whitehouse_disclose2026",
+     "url": "https://www.whitehouse.senate.gov/?p=16219",
+     "label": "Sen. Sheldon Whitehouse, press release on the DISCLOSE Act of 2026, 4 March 2026"
+    },
+    {
+     "key": "dt7_senate_disclose2022",
+     "url": "https://www.democrats.senate.gov/2022/09/22/roll-call-vote",
+     "label": "Senate Democrats, roll call vote on cloture on the motion to proceed to S.4822 (DISCLOSE Act), 22 September 2022"
+    },
+    {
+     "key": "dt7_aer_revolving",
+     "url": "https://econpapers.repec.org/RePEc:aea:aecrev:v:102:y:2012:i:7:p:3731-48",
+     "label": "Jordi Blanes i Vidal, Mirko Draca and Christian Fons-Rosen, 'Revolving Door Lobbyists', American Economic Review 102(7), 2012, pp. 3731-48"
+    },
+    {
+     "key": "dt7_skadden_nrsc",
+     "url": "https://www.skadden.com/insights/publications/2026/07/nrsc-v-fec",
+     "label": "Skadden, 'NRSC v. FEC: Supreme Court Invalidates Limits on Political Parties' Coordinated Spending', July 2026"
+    },
+    {
+     "key": "dt7_pac_nrsc",
+     "url": "https://pac.org/wp-content/uploads/2026/07/Public-Affairs-Council-NRSC-v.-FEC-Decision-July-8-2026.v2.pdf",
+     "label": "Public Affairs Council, 'NRSC v. FEC Decision', 8 July 2026"
+    },
+    {
+     "key": "dt7_wiki_afpbonta",
+     "url": "https://en.wikipedia.org/wiki/Americans_for_Prosperity_Foundation_v._Bonta",
+     "label": "Wikipedia, 'Americans for Prosperity Foundation v. Bonta' (accessed 28 October 2026)"
+    }
+   ]
+  },
+  {
+   "id": "dt7_structure_fixes",
+   "stage": "dt7",
+   "topic": "Structure fixes: NPV compact law, commissions, top-two, term limits, AVR, votes at 16",
+   "claims": [
+    {
+     "text": "NPVIC debate: critics argue it needs congressional consent under the Compact Clause, that it would remove House contingent elections, that its six-month withdrawal blackout may conflict with the Presidential Electors Clause (von Spakovsky), that replacing the EC requires an Article V amendment (Drake and others), and that it raises equal-protection (Williams) and VRA (Gringer) problems; supporters (Akhil and Vikram Amar, Raskin) cite states' plenary power to appoint electors; Akhil Amar argues it creates no new interstate apparatus",
+     "strength": "reported",
+     "sources": [
+      "dt7_wiki_npvlaw"
+     ]
+    },
+    {
+     "text": "Arizona State Legislature v. AIRC, 29 June 2015, 5-4 (Ginsburg; Roberts dissent with Scalia, Thomas, Alito): the Elections Clause permits voters to create a redistricting commission by initiative; Arizona's commission created by Proposition 106 (2000); five members, four chosen by legislative leaders, who pick a fifth; Ballotpedia lists eight states with independent commissions (AK, AZ, CA, ID, MT, WA, CO, MI)",
+     "strength": "reported",
+     "sources": [
+      "dt7_bp_airc"
+     ]
+    },
+    {
+     "text": "Nelson (PS 2023), US House elections 1982-2018: relative to legislative redistricting, independent commissions associated with lower odds of incumbent-party wins (odds ratio 0.48) and higher odds of competitive (45-55%) elections (2.25); political commissions not significant; association not causation; incumbent party has won 94% of congressional elections since the 2010 cycle; California competitive districts 5.2% before commission to 14.6% after",
+     "strength": "reported",
+     "sources": [
+      "dt7_nelson_ps"
+     ]
+    },
+    {
+     "text": "FairVote (2013): California's commission produced more legitimate but not more competitive lines; competitive districts 5 in both 2008 and 2012; turnover in 2012 inflated by one-time incumbent pairings; partisan sorting cited",
+     "strength": "reported",
+     "sources": [
+      "dt7_fv_ccrc"
+     ]
+    },
+    {
+     "text": "California Proposition 50, approved 65%-35% on 4 November 2025, allowed a legislature-adopted replacement congressional map through 2030, aimed at five more Democratic-leaning seats",
+     "strength": "reported",
+     "sources": [
+      "dt7_bp_prop50"
+     ]
+    },
+    {
+     "text": "McGhee and Shor (2017): 'We find an inconsistent effect' of the top-two primary in California and Washington; some moderation in California among Democrats, partly coinciding with new commission lines and term limits; 'virtually no effect of the Top Two in Washington'",
+     "strength": "reported",
+     "sources": [
+      "dt7_mcghee_shor"
+     ]
+    },
+    {
+     "text": "Massachusetts Question 3 (3 Nov 2026 ballot, certified 17 July 2026): single top-two primary for most state and congressional offices (presidential primary excluded), effective 1 Jan 2028; Yes on 3 (Coalition for Healthy Democracy) about $7.16M raised to 20 Oct 2026, opposition about $195,000; supporters include Reps. Auchincloss and Moulton, Auditor DiZoglio, ex-Govs Baker (R) and Patrick (D); opponents include the state Democratic and Republican parties, Working Families Party, Sen. Markey, Rep. Pressley, Mayor Wu; suit Jackson v. Coalition for Healthy Democracy filed",
+     "strength": "reported",
+     "sources": [
+      "dt7_bp_maq3"
+     ]
+    },
+    {
+     "text": "NCSL/CSG/SLLF joint project (reported Aug 2006): term limits weakened legislatures relative to governors, increased reliance on lobbyists and staff, reduced cross-party civility; female representation fell in most term-limited legislatures; Kurtz: term limits 'have done more to limit rather than enhance the effectiveness of the legislative branch'; 'The public doesn't have much of an appetite for repeal'",
+     "strength": "reported",
+     "sources": [
+      "dt7_stateline_tl"
+     ]
+    },
+    {
+     "text": "U.S. Term Limits v. Thornton (1995), 5-4 (Stevens): states may not add to the Constitution's qualifications for Congress, so state-imposed congressional term limits are unconstitutional; nearly half the states had sought such limits",
+     "strength": "reported",
+     "sources": [
+      "dt7_fed_thornton"
+     ]
+    },
+    {
+     "text": "Gronke et al. for the Center for American Progress (2017): Oregon's automatic registration added about 116,000 people unlikely to register otherwise, of whom about 40,000 voted in Nov 2016 (projections); new registrants younger, more diverse, lower-income and rural; OPB called it 'a relatively modest' increase",
+     "strength": "reported",
+     "sources": [
+      "dt7_opb_avr"
+     ]
+    },
+    {
+     "text": "Seljan, Lochner and Webb (Electoral Studies 2023): Oregon back-end AVR registrants had a 66% lower rate of party registration; 'very little partisan mobilization occurs following registration'",
+     "strength": "reported",
+     "sources": [
+      "dt7_eurek_avr"
+     ]
+    },
+    {
+     "text": "California DMV motor-voter system: about 23,000 registration errors disclosed Sept 2018 and about 1,500 more wrongful registrations including non-citizens (Oct 2018); Secretary of State Padilla 'deeply frustrated and disappointed', sought an independent audit; registrations cancelled; no report that any wrongly registered person voted",
+     "strength": "reported",
+     "sources": [
+      "dt7_gov_dmv"
+     ]
+    },
+    {
+     "text": "Takoma Park lowered its voting age to 16 for city elections in 2013, the first US jurisdiction to do so; turnout of 16-17-year-olds vs all voters: 44% vs 10% (2013), about 45% vs 21% (2015), about 48% vs 22% (2017), 69% vs 54% (2020; 132 of 191 registered)",
+     "strength": "reported",
+     "sources": [
+      "dt7_wm_vote16"
+     ]
+    },
+    {
+     "text": "Nov 2020: Oakland Measure QQ (16-year-olds vote for school board) passed; San Francisco Prop G narrowly failed, a similar 2016 measure lost by 4 points; California Prop 18 (17-year-olds in primaries) lost by 10 points; the San Francisco Chronicle opposed Prop G as inconsistent with higher ages for smoking and military service",
+     "strength": "reported",
+     "sources": [
+      "dt7_74_vote16"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "dt7_wiki_npvlaw",
+     "url": "https://en.wikipedia.org/wiki/Constitutionality_of_the_National_Popular_Vote_Interstate_Compact",
+     "label": "Wikipedia, 'Constitutionality of the National Popular Vote Interstate Compact' (accessed 28 October 2026)"
+    },
+    {
+     "key": "dt7_bp_airc",
+     "url": "https://news.ballotpedia.org/2021/12/02/in-2015-u-s-supreme-court-ruled-independent-redistricting-commissions-created-by-voter-initiative-were-constitutional/",
+     "label": "Ballotpedia News, 'In 2015, U.S. Supreme Court ruled independent redistricting commissions created by voter initiative were constitutional', 2 December 2021"
+    },
+    {
+     "key": "dt7_nelson_ps",
+     "url": "https://core-prod.cambridgecore.org/core/services/aop-cambridge-core/content/view/00F260DCEB81B3BAC07D2A4ADBDA9CE0/S104909652200124Xa.pdf/independent-redistricting-commissions-are-associated-with-more-competitive-elections.pdf",
+     "label": "Matthew Nelson, 'Independent Redistricting Commissions Are Associated with More Competitive Elections', PS: Political Science & Politics 56, April 2023, pp. 207-212"
+    },
+    {
+     "key": "dt7_fv_ccrc",
+     "url": "https://www.fairvote.org/did-the-california-citizens-redistricting-commission-really-create-more-competitive-districts",
+     "label": "FairVote (advocacy organization), 'Did the California Citizens Redistricting Commission Really Create More Competitive Districts?', 26 November 2013"
+    },
+    {
+     "key": "dt7_bp_prop50",
+     "url": "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections?hl=en-GB",
+     "label": "Ballotpedia, 'Redistricting ahead of the 2026 elections', updated 28 September 2026"
+    },
+    {
+     "key": "dt7_mcghee_shor",
+     "url": "https://core-cms.cambridgecore.org/core/services/aop-cambridge-core/content/view/1F65856812342373F4A51B233E9BD593/S1537592717002158a.pdf/has-the-top-two-primary-elected-more-moderates.pdf",
+     "label": "Eric McGhee and Boris Shor, 'Has the Top Two Primary Elected More Moderates?', Perspectives on Politics 15(4), December 2017, pp. 1053-1066"
+    },
+    {
+     "key": "dt7_bp_maq3",
+     "url": "https://ballotpedia.org/Massachusetts_Top-Two_Primary_Elections_Initiative_(2026)",
+     "label": "Ballotpedia, 'Massachusetts Question 3, Top-Two Primary Elections Initiative (2026)' (accessed 28 October 2026)"
+    },
+    {
+     "key": "dt7_stateline_tl",
+     "url": "https://stateline.org/2006/08/16/report-chronicles-downside-of-term-limits/",
+     "label": "Stateline, 'Report Chronicles Downside of Term Limits', 16 August 2006 (on the NCSL, Council of State Governments and State Legislative Leaders Foundation joint project)"
+    },
+    {
+     "key": "dt7_fed_thornton",
+     "url": "https://federalism.org/encyclopedia/no-topic/united-states-term-limits-v-thornton-1995/",
+     "label": "Center for the Study of Federalism, 'U.S. Term Limits v. Thornton (1995)'"
+    },
+    {
+     "key": "dt7_opb_avr",
+     "url": "https://opb.org/news/article/oregon-motor-voter-turnout-diversity-increase-study",
+     "label": "Jeff Mapes, OPB, 'Study: Oregon Motor Voter boosted turnout and diversity', 7 June 2017"
+    },
+    {
+     "key": "dt7_eurek_avr",
+     "url": "https://www.eurekalert.org/news-releases/988065",
+     "label": "Lewis & Clark College news release on Seljan, Lochner and Webb, 'The partisan costs of automatic voter registration', Electoral Studies (2023), 3 May 2023"
+    },
+    {
+     "key": "dt7_gov_dmv",
+     "url": "https://www.governing.com/topics/politics/tns-1500-incorrectly-registered-to-vote-California-DMV.html",
+     "label": "John Myers, Los Angeles Times (via Governing), 'California DMV finds 1,500 more people wrongly registered to vote', 9 October 2018"
+    },
+    {
+     "key": "dt7_wm_vote16",
+     "url": "https://washingtonmonthly.com/2022/08/25/the-case-for-the-16-year-old-vote/",
+     "label": "Joshua A. Douglas, 'The Case for the 16-Year-Old Vote', Washington Monthly, 25 August 2022"
+    },
+    {
+     "key": "dt7_74_vote16",
+     "url": "https://www.the74million.org/oakland-votes-to-let-teens-cast-ballots-in-school-board-races-sf-defeats-similar-measure-to-lower-voting-age/",
+     "label": "The 74, 'Oakland votes to let teens cast ballots in school board races; SF defeats similar measure', 4 November 2020"
+    }
+   ]
+  }
+ ]
+}
