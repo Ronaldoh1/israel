@@ -188,6 +188,7 @@ ABSORBED = {c for v in VOLS.values() if isinstance(v, dict) for c in v.get('abso
 PLANNED = {p['host']: p for p in VOLS.get('_planned', []) if p.get('host')}   # planned (unwritten) volumes that merge several simulation chapters under one title
 HOSTLESS = [p for p in VOLS.get('_planned', []) if not p.get('host')]   # planned volumes with no chapter of their own: shown after p['after'], drawing on the scenes listed in p['scenes']
 ABSORBED |= {c for p in PLANNED.values() for c in p.get('merge', [])}
+SERIES = []   # volumes.json 'series': separate series shelved after The Israel Architecture, numbered by 'book'
 AFTER = {}   # volumes.json 'after': '<chapter id>' places a volume right after that chapter (or the volume slotted into it), without replacing anything
 for key, v in VOLS.items():
     if not isinstance(v, dict) or not (v.get('slot') or v.get('after')): continue
@@ -199,7 +200,10 @@ for key, v in VOLS.items():
                       'intro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_intro.html')),
                       'outro': read(os.path.join(ROOT, 'book', 'part1', st['id'], '_outro.html')),
                       'outroTitle': 'What this part established', 'sections': secs})
-    if parts:
+    if parts and v.get('series'):
+        SERIES.append({'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts', 'total': v.get('parts_total') or len(v['stages']), 'ser': v['series'], 'vol': v['book'],
+                       'intro': read(os.path.join(ROOT, 'book', 'part1', v.get('intro', key + '_intro.html'))), 'chapters': parts, 'first': parts[0]['sections'][0]['s']})
+    elif parts:
         (AFTER.setdefault(v['after'], []).append if v.get('after') else (lambda x, k=v.get('slot'): SLOTTED.__setitem__(k, x)))({'id': key, 'status': 'ready', 'title': v['title'], 'subtitle': v['subtitle'], 'span': v['span'], 'unit': 'parts', 'total': v.get('parts_total') or len(v['stages']),
                               'intro': read(os.path.join(ROOT, 'book', 'part1', v.get('intro', key + '_intro.html'))), 'chapters': parts, 'first': parts[0]['sections'][0]['s']})
 done = {'ch01', 'rd0', 'rd1', 'rd2', 'rd3', 'rd4', 'rd5', 'rd6', 'ch05'}
@@ -228,6 +232,7 @@ for c in CH:
                       'priority': pl.get('priority'), 'keywords': ' '.join(SC[x]['t'] for x in scs)})
         vol += 1
 
+books += sorted(SERIES, key=lambda b: b['vol'])
 import datetime
 lib = {'edition': datetime.date.today().strftime('%B %Y'), 'author': 'Ron Hernandez', 'cites': CITES, 'title': 'The Israel Architecture', 'tagline': 'A library of the documented record, in reading order. Every volume ties each claim to its source.',
        'note': 'The documented record, told in order, with every claim tied to its source. Tap a note number to see it, a name in a figure for its detail, or the + button for contents, bookmarks and notes.',

@@ -510,6 +510,9 @@ body.book-open #libBanner{display:none}
   var $ = function(id){ return document.getElementById(id); };
   var LIB = JSON.parse($('book_data').textContent), BOOKS = LIB.books, curBook = 0, BOOK = BOOKS[0];
   var CLOTH = ['#5B1F1A','#1E2D4F','#23402F','#6B4A1B','#3A2F4A','#2F3E46','#4A2328','#1F3A3D','#4B3B1E','#2B2F4A'];
+  function SERN(b){ return (b && b.ser) || 'The Israel Architecture'; }
+  function VL(b){ return (b && b.ser ? 'Book ' : 'Volume ') + roman(b.vol); }
+  function VLs(b){ return (b && b.ser ? 'Book ' : 'Vol. ') + roman(b.vol); }
   function roman(n){ var r = '', m = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; m.forEach(function(x){ while(n >= x[0]){ r += x[1]; n -= x[0]; } }); return r; }
   /* ---------- cover emblems: one sacred-geometry figure per volume, drawn as inline SVG ---------- */
   var SIG = (function(){
@@ -573,11 +576,11 @@ body.book-open #libBanner{display:none}
     return function(b){ var k = BY[b.id] || KEYS[(b.vol || 1) % KEYS.length]; return '<svg class="sg" viewBox="-38 -38 76 76" aria-hidden="true" focusable="false"><title>' + NAME[k] + '</title>' + G[k]() + '</svg>'; };
   })();
   /* cloth colours: one per volume, spaced around the colour wheel at the same depth so no two neighbours look alike */
-  var VCLOTH = {baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23'};
+  var VCLOTH = {baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23', darkenlight:'#1A1C24', de_money:'#1F2230', de_doge:'#22202A', de_exit:'#1B2428', de_eye:'#161E2A', de_force:'#24201C', de_test:'#1D1A26', democracy:'#14283A'};
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
     var col = VCLOTH[b.id] || CLOTH[(b.vol - 1) % CLOTH.length];
-    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">The Israel Architecture</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">Volume ' + roman(b.vol) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function plain(t){ return String(t == null ? '' : t).replace(/&(amp|lt|gt|quot|#39|nbsp);/g, function(m, x){ return {amp:'&',lt:'<',gt:'>',quot:'"','#39':"'",nbsp:' '}[x]; }); }
@@ -638,9 +641,9 @@ body.book-open #libBanner{display:none}
   /* ---------- front matter: title page, credits, contents, how to read the figures ---------- */
   function frontMatter(){
     var au = LIB.author || 'Ron Hernandez', P = paginate(BOOK), h = '';
-    h += '<div class="bk-bt bk-full bk-leaf" id="bk-title">' + cover(BOOK) + '<p class="t1">The Israel Architecture · Volume ' + roman(BOOK.vol) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="by">by <b>' + esc(au) + '</b></p><p class="pub">Observe The System</p></div>';
+    h += '<div class="bk-bt bk-full bk-leaf" id="bk-title">' + cover(BOOK) + '<p class="t1">' + esc(SERN(BOOK)) + ' · ' + VL(BOOK) + '</p><h1>' + esc(BOOK.title) + '</h1><p class="t2">' + esc(BOOK.subtitle) + '</p><p class="by">by <b>' + esc(au) + '</b></p><p class="pub">Observe The System</p></div>';
     h += '<section class="bk-fm bk-cred bk-leaf" id="bk-credits" aria-label="Credits">' +
-      '<p class="rl">The Israel Architecture</p><p class="nm">' + esc(BOOK.title) + '</p><p>Volume ' + roman(BOOK.vol) + (BOOK.span ? ' · ' + esc(BOOK.span) : '') + '</p>' +
+      '<p class="rl">' + esc(SERN(BOOK)) + '</p><p class="nm">' + esc(BOOK.title) + '</p><p>' + VL(BOOK) + (BOOK.span ? ' · ' + esc(BOOK.span) : '') + '</p>' +
       '<p class="rl">Written and researched by</p><p class="nm">' + esc(au) + '</p>' +
       '<p class="rl">Published by</p><p>Observe The System, with Sophia</p>' +
       '<p class="rl">Follow</p><p>TikTok @awakenwithsophia<br>Instagram @chosen.ron13</p>' +
@@ -755,7 +758,7 @@ body.book-open #libBanner{display:none}
     txt.forEach(function(t){ re.lastIndex = 0; while((m = re.exec(t))){ if(!seen[m[1]] && (CIT[m[1]] || LBL[m[1]])){ seen[m[1]] = 1; keys.push(m[1]); } } });
     if(!keys.length) return '';
     keys.sort(function(a, b){ var x = String(srcLabel(a)).replace(/^[^A-Za-z0-9]+/, '').toLowerCase(), y = String(srcLabel(b)).replace(/^[^A-Za-z0-9]+/, '').toLowerCase(); return x < y ? -1 : x > y ? 1 : 0; });
-    return '<section class="bk-notes bk-bib bk-pgbreak" id="bk-bibliography" aria-label="Bibliography"><h3>Bibliography</h3><p class="sm" style="text-indent:0;margin:0 0 1em">Every source cited in Volume ' + roman(BOOK.vol) + ', ' + keys.length + ' in all, in alphabetical order.</p><ul style="list-style:none;padding-left:0">' +
+    return '<section class="bk-notes bk-bib bk-pgbreak" id="bk-bibliography" aria-label="Bibliography"><h3>Bibliography</h3><p class="sm" style="text-indent:0;margin:0 0 1em">Every source cited in ' + VL(BOOK) + ', ' + keys.length + ' in all, in alphabetical order.</p><ul style="list-style:none;padding-left:0">' +
       keys.map(function(key){ var u = CIT[key], l = srcLabel(key); return '<li>' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ul></section>';
   }
   function render(k, target){
@@ -786,8 +789,8 @@ body.book-open #libBanner{display:none}
     var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1];
     if(!nx) h += bibliography();
     if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>' + esc(nx.label) + '</small>' + esc(nx.title) + '</button>';
-    else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: Volume ' + roman(nb.vol) + '</small>' + esc(nb.title) + '</button>';
-    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of Volume ' + roman(BOOK.vol) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
+    else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: ' + (nb.ser && !BOOK.ser ? esc(nb.ser) + ', ' : '') + VL(nb) + '</small>' + esc(nb.title) + '</button>';
+    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
       '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
     fillCharts(page);
@@ -944,7 +947,7 @@ body.book-open #libBanner{display:none}
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
-        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
+        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }
     return h;
   }
@@ -957,11 +960,13 @@ body.book-open #libBanner{display:none}
     else if(libSort === 'era') list.sort(function(a, b){ return eraStart(a) - eraStart(b); });
     else if(libSort === 'priority') list.sort(function(a, b){ var pa = a.status === 'ready' ? 0 : (a.priority || 99), pb = b.status === 'ready' ? 0 : (b.priority || 99); return pa - pb || a.vol - b.vol; });
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
+    var series = list.filter(function(b){ return b.ser; }); list = list.filter(function(b){ return !b.ser; });
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
-    $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (prep.length ? '<section class="lb-sec"><h2>Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
+    $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
+      (prep.length ? '<section class="lb-sec"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
         (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
-      (!ready.length && !prep.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
+      (series.length ? '<section class="lb-sec lb-series"><h2>The Dark Enlightenment Series</h2><p class="sub">A separate series on a story still unfolding: a body of ideas that calls democracy a failure, the money and people around it, and the machinery of 2025\u20132026, each tested against the record. Not part of The Israel Architecture, which covers events that have already happened.</p>' + shelf(series) + '</section>' : '') +
+      (!ready.length && !prep.length && !series.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
   function showLibrary(){
