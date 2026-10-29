@@ -220,5 +220,39 @@
     "label": "NPR via New England Public Media, 'The Wisconsin Supreme Court race turned into a test for Trump. Democrats say he lost', 2 April 2025"
    }
   }
+ },
+ "dt4_audit": {
+  "topic": "Audit re-checks and additions (October 2026)",
+  "claims": [
+   {
+    "text": "OpenSecrets: House Majority Forward routed $43 million to House Majority PAC in the third quarter of 2024; HMP spending over $196.1M",
+    "strength": "reported",
+    "sources": [
+     "dt4_os_2024record"
+    ]
+   },
+   {
+    "text": "NRSC v. FEC, decided 30 June 2026, 6-3 (Kavanaugh; Kagan dissenting with Sotomayor and Jackson): struck FECA limits on national party committees' expenditures coordinated with their nominees (e.g. $65,300 for most House nominees), overruling FEC v. Colorado Republican Federal Campaign Committee (Colorado II, 2001); limits can burden 'the ability of the party to do what it exists to do'; individual contribution limits ($3,500 per election to a candidate; $44,300 a year to a national party), the ban on corporate contributions to national parties, coordination limits on super PACs and 501(c)(4)s, and disclosure rules unchanged",
+    "strength": "primary",
+    "sources": [
+     "dt7_skadden_nrsc",
+     "dt7_pac_nrsc"
+    ]
+   }
+  ],
+  "sources": {
+   "dt4_os_2024record": {
+    "url": "https://wausaupilotandreview.com/2025/05/31/outside-spending-on-2024-elections-shatters-records-fueled-by-billion-dollar-dark-money-infusion/",
+    "label": "Anna Massoglia, OpenSecrets (republished by Wausau Pilot & Review), 'Outside spending on 2024 elections shatters records, fueled by billion-dollar dark money infusion', 31 May 2025 (figures to mid-October 2024)"
+   },
+   "dt7_skadden_nrsc": {
+    "url": "https://www.skadden.com/insights/publications/2026/07/nrsc-v-fec",
+    "label": "Skadden, 'NRSC v. FEC: Supreme Court Invalidates Limits on Political Parties' Coordinated Spending', July 2026"
+   },
+   "dt7_pac_nrsc": {
+    "url": "https://pac.org/wp-content/uploads/2026/07/Public-Affairs-Council-NRSC-v.-FEC-Decision-July-8-2026.v2.pdf",
+    "label": "Public Affairs Council, 'NRSC v. FEC Decision', 8 July 2026"
+   }
+  }
  }
 }

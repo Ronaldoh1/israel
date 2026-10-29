@@ -242,5 +242,45 @@
     "label": "KTVU (reporting Gallup), 'Americans prefer popular vote over Electoral College', October 2024"
    }
   }
+ },
+ "dt2_audit": {
+  "topic": "Audit re-checks (October 2026)",
+  "claims": [
+   {
+    "text": "Pew (25 Sep 2024): in 2020 Biden won the popular vote by more than 7 million votes, but his Electoral College victory was decided by fewer than 50,000 votes in a few close states",
+    "strength": "primary",
+    "sources": [
+     "dt2_pew_ec2024"
+    ]
+   },
+   {
+    "text": "CRS R48936 (5 May 2026): 'On four occasions, the electoral college has produced a presidential winner inconsistent with the national popular vote': 1876, 1888, 2000 and 2016; electors meet on the first Tuesday after the second Wednesday in December (17 December 2024; 19 December 2028)",
+    "strength": "primary",
+    "sources": [
+     "dt2_crs_faq2026"
+    ]
+   },
+   {
+    "text": "KNKX 30 Nov 2016: 'Four Democratic electors from Washington and Colorado are leading the effort'; Levi Guerra, 19, of Warden, Wash.: 'it is not an easy thing for me to pledge my vote to a qualified Republican alternative'; target 37 Republican electors before the 19 December vote",
+    "strength": "reported",
+    "sources": [
+     "dt2_knkx_hamilton"
+    ]
+   }
+  ],
+  "sources": {
+   "dt2_pew_ec2024": {
+    "url": "https://www.pewresearch.org/short-reads/2024/09/25/majority-of-americans-continue-to-favor-moving-away-from-electoral-college/",
+    "label": "Pew Research Center, 'Majority of Americans continue to favor moving away from Electoral College', 25 September 2024"
+   },
+   "dt2_crs_faq2026": {
+    "url": "https://www.everycrsreport.com/files/2026-05-05_R48936_e8825a9709e8840dfc9cc1cdd8b5010595e987a3.html",
+    "label": "Congressional Research Service, 'The Electoral College: Frequently Asked Questions', R48936, 5 May 2026"
+   },
+   "dt2_knkx_hamilton": {
+    "url": "https://www.knkx.org/politics/2016-11-30/wash-electors-call-for-republican-electors-to-vote-for-trump-alternative",
+    "label": "KNKX Public Radio, 'Wash. electors call for Republican electors to vote for Trump alternative', 30 November 2016"
+   }
+  }
  }
 }
