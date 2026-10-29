@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Returning library readers land straight in the library, with no flash of anything else (index.html).
+"""First-time visitors, and returning library readers, land straight in the library, with no flash of anything else (index.html).
 
 Before: a reader whose last view was the library saw the welcome screen animate in, then fade out
 over the simulation, and only then the library (the library opened on window load + 1.1 s).
@@ -22,14 +22,14 @@ def swap(old, new, count=1):
 
 HEAD = ('<!--LIBBOOT-START--><script>(function(){try{'
         "var v=JSON.parse(localStorage.getItem('ots_view')||'null');"
-        "if(v!=='library'||(location.hash||'').replace('#','')||window.parent!==window)return;"
+        "var h=location.hash||'',deep=/^#(book|library)/.test(h);if(window.parent!==window||(!deep&&((v!=='library'&&v!==null)||h.replace('#',''))))return;"
         "var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};"
         "var bg={sepia:'#F5EBD7',night:'#121212'}[p.theme]||'#FBF9F4';"
         "var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);"
         "setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);"   # never leave a reader stuck behind the cover
         '}catch(e){}})();</script>'
         '<style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#FBF9F4) !important}'
-        "html.ots-lib-boot body::before{content:'';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#FBF9F4)}</style>"
+        "html.ots-lib-boot body::before{content:'Opening the library\\2026';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#FBF9F4);display:flex;align-items:center;justify-content:center;font:italic 17px/1.4 Georgia,serif;color:#8A8274;letter-spacing:.02em}</style>"
         '<!--LIBBOOT-END-->')
 m = re.search(r'<head[^>]*>', s)
 s = s[:m.end()] + HEAD + s[m.end():]
@@ -45,14 +45,15 @@ swap('''  window.addEventListener('load', function(){ setTimeout(function(){
 '''  /* opens as soon as the page is parsed; the cover from <!--LIBBOOT--> hides everything until the library shows */
   function libBootDone(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.documentElement.classList.remove('ots-lib-boot'); }); }); }
   function libBoot(){
-    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return libBootDone();
+    if(/^#(book|library)/.test(location.hash || '')){ try{ deepEntry(); }catch(e){} return libBootDone(); }   /* a link into the library or a book opens it under the cover */
+    var v0 = ls('ots_view'); if((v0 !== 'library' && v0 != null) || view.classList.contains('on')) return libBootDone();   /* first visit (no view yet) lands in the library too */
     if((location.hash || '').replace('#', '')) return libBootDone();
     var ev = $('elevenOverlay'); if(ev && !ev.hidden) return libBootDone();
     try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return libBootDone(); }catch(e){}
     window.__bookOpening = true;
     try{ var w = $('welcomeOverlay'); if(shown(w) && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
     window.__bookOpening = false;
-    try{ openBook(null); }catch(e){}
+    bootOpen = true; try{ openBook(null); }catch(e){} bootOpen = false;
     libBootDone();
   }
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(libBoot, 0); });

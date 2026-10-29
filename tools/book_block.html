@@ -1262,10 +1262,12 @@ body.book-open #libBanner{display:none}
   }
   window.addEventListener('popstate', fromHash);
   window.addEventListener('hashchange', fromHash);
-  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
+  function deepEntry(){ if(!/^#(book|library)/.test(location.hash || '')) return false;
+    try{ var w = $('welcomeOverlay'); if(w && getComputedStyle(w).display !== 'none' && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
     /* a shared link straight into a book: put the library underneath it, so Back lands on the shelf instead of leaving the site */
     var h0 = location.hash; if(h0.indexOf('#book=') === 0 && !(history.state && history.state.ots)){ try{ history.replaceState({ots:1}, '', base() + '#library'); history.pushState({ots:1, fromLib:true}, '', base() + h0); }catch(e){} }
-    fromHash(); } }, 700); });
+    fromHash(); return true; }
+  window.addEventListener('load', function(){ setTimeout(deepEntry, 700); });
   try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
 
   /* ---------- views: a one-time library banner in the simulation, and the last-used view on arrival ---------- */
@@ -1307,7 +1309,7 @@ body.book-open #libBanner{display:none}
     var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
     try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
     window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
-    setTimeout(function(){ window.__bookOpening = false; bootOpen = true; openBook(null); bootOpen = false; }, 450);
+    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
   }, 650); });
 })();
 </script>

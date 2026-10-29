@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="color-scheme" content="dark light"><!--RETURN-START--><script>try{if(localStorage.getItem("ots_welcome_seen")||localStorage.getItem("ots_xp_chosen"))document.documentElement.classList.add("ots-skip-welcome");}catch(e){}</script><style>html.ots-skip-welcome #welcomeOverlay{display:none !important}</style><!--RETURN-END-->
+<head><meta name="color-scheme" content="dark light"><!--RETURN-START--><script>try{if(localStorage.getItem("ots_welcome_seen")||localStorage.getItem("ots_xp_chosen"))document.documentElement.classList.add("ots-skip-welcome");}catch(e){}</script><style>html.ots-skip-welcome #welcomeOverlay{display:none !important}</style><!--RETURN-END--><!--LIBBOOT-START--><script>(function(){try{var v=JSON.parse(localStorage.getItem('ots_view')||'null');var h=location.hash||'',deep=/^#(book|library)/.test(h);if(window.parent!==window||(!deep&&((v!=='library'&&v!==null)||h.replace('#',''))))return;var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};var bg={sepia:'#F5EBD7',night:'#121212'}[p.theme]||'#FBF9F4';var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);setTimeout(function(){d.classList.remove('ots-lib-boot');},8000);}catch(e){}})();</script><style>html.ots-lib-boot,html.ots-lib-boot body{background:var(--ots-boot-bg,#FBF9F4) !important}html.ots-lib-boot body::before{content:'Opening the library\2026';position:fixed;inset:0;z-index:2147483647;background:var(--ots-boot-bg,#FBF9F4);display:flex;align-items:center;justify-content:center;font:italic 17px/1.4 Georgia,serif;color:#8A8274;letter-spacing:.02em}</style><!--LIBBOOT-END-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="An interactive, fully cited simulation of the Israel architecture, 1189–2026: 833 scenes, 59 chapters, 3,079 citations, 628 FAQs, 9 data dashboards, 16 architecture maps, and 46 code scenes — in English, Spanish, and Arabic. What you were taught, side by side with the record — and the talking points, checked. Free, no signup.">
@@ -7349,10 +7349,12 @@ body.book-open #libBanner{display:none}
   }
   window.addEventListener('popstate', fromHash);
   window.addEventListener('hashchange', fromHash);
-  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
+  function deepEntry(){ if(!/^#(book|library)/.test(location.hash || '')) return false;
+    try{ var w = $('welcomeOverlay'); if(w && getComputedStyle(w).display !== 'none' && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
     /* a shared link straight into a book: put the library underneath it, so Back lands on the shelf instead of leaving the site */
     var h0 = location.hash; if(h0.indexOf('#book=') === 0 && !(history.state && history.state.ots)){ try{ history.replaceState({ots:1}, '', base() + '#library'); history.pushState({ots:1, fromLib:true}, '', base() + h0); }catch(e){} }
-    fromHash(); } }, 700); });
+    fromHash(); return true; }
+  window.addEventListener('load', function(){ setTimeout(deepEntry, 700); });
   try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
 
   /* ---------- views: a one-time library banner in the simulation, and the last-used view on arrival ---------- */
@@ -7388,14 +7390,22 @@ body.book-open #libBanner{display:none}
   (function(){ var t = $('tourOverlay'); if(!t || !window.MutationObserver) return;
     new MutationObserver(function(){ if(t.classList.contains('active') && document.body.classList.contains('book-open')) t.classList.remove('active'); }).observe(t, {attributes:true, attributeFilter:['class']}); })();
   /* arrive in the view the reader used last (a link to a scene, dashboard, map or Eleven Minutes still wins) */
-  window.addEventListener('load', function(){ setTimeout(function(){
-    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return;
-    if((location.hash || '').replace('#', '')) return;
-    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
-    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
-    window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
-    setTimeout(function(){ window.__bookOpening = false; bootOpen = true; openBook(null); bootOpen = false; }, 450);
-  }, 650); });
+  /* opens as soon as the page is parsed; the cover from <!--LIBBOOT--> hides everything until the library shows */
+  function libBootDone(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.documentElement.classList.remove('ots-lib-boot'); }); }); }
+  function libBoot(){
+    if(/^#(book|library)/.test(location.hash || '')){ try{ deepEntry(); }catch(e){} return libBootDone(); }   /* a link into the library or a book opens it under the cover */
+    var v0 = ls('ots_view'); if((v0 !== 'library' && v0 != null) || view.classList.contains('on')) return libBootDone();   /* first visit (no view yet) lands in the library too */
+    if((location.hash || '').replace('#', '')) return libBootDone();
+    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return libBootDone();
+    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return libBootDone(); }catch(e){}
+    window.__bookOpening = true;
+    try{ var w = $('welcomeOverlay'); if(shown(w) && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
+    window.__bookOpening = false;
+    bootOpen = true; try{ openBook(null); }catch(e){} bootOpen = false;
+    libBootDone();
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(libBoot, 0); });
+  else setTimeout(libBoot, 0);
 })();
 </script>
 <!--BOOK-END-->
