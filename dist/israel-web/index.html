@@ -5712,6 +5712,13 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .cv .st,.cv .in.long .st{font-size:5.4cqw;line-height:1.28;margin:4% 0 auto;padding-bottom:0;flex:none;-webkit-line-clamp:3}
 .cv .in .st.s2{-webkit-line-clamp:2}
 .cv .vol{font-size:4.8cqw;flex:none}
+.cv.sr{color:#F5D88E}
+.cv.sr .in{border-color:rgba(245,216,142,.7)}
+.cv.sr .ser,.cv.sr .st,.cv.sr .vol{color:#FBF4E4;opacity:1;text-shadow:0 1px 2px rgba(0,0,0,.45)}
+.cv.sr .st,.cv.sr .in.long .st{font-style:normal;font-weight:500;font-size:5.8cqw;line-height:1.3}
+.cv.sr .tt{color:#F7DA90;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.cv.sr .rule{background:rgba(245,216,142,.75)}
+.cv.sr .in .st.s2,.cv.sr .in .st{-webkit-line-clamp:4}
 .cv .in.long .tt{margin:0}
 .cv .in.long .rule{margin:5% 0 0}
 .cv .in.long .sg{margin-bottom:5%}
@@ -6699,11 +6706,11 @@ body.book-open #libBanner{display:none}
     return function(b){ var k = BY[b.id] || KEYS[(b.vol || 1) % KEYS.length]; return '<svg class="sg" viewBox="-38 -38 76 76" aria-hidden="true" focusable="false"><title>' + NAME[k] + '</title>' + G[k]() + '</svg>'; };
   })();
   /* cloth colours: one per volume, spaced around the colour wheel at the same depth so no two neighbours look alike */
-  var VCLOTH = {baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23', darkenlight:'#1A1C24', de_money:'#1F2230', de_doge:'#22202A', de_exit:'#1B2428', de_eye:'#161E2A', de_force:'#24201C', de_test:'#1D1A26', democracy:'#14283A'};
+  var VCLOTH = {baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23', darkenlight:'#6B1E2B', de_money:'#145A45', de_doge:'#1F3F8A', de_exit:'#0E5E66', de_eye:'#3D2B7E', de_force:'#7A3517', de_test:'#5E1F5A', democracy:'#1C4F75'};
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
     var col = VCLOTH[b.id] || CLOTH[(b.vol - 1) % CLOTH.length];
-    return '<div class="cv ' + (cls || '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.ser ? ' sr' : '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function plain(t){ return String(t == null ? '' : t).replace(/&(amp|lt|gt|quot|#39|nbsp);/g, function(m, x){ return {amp:'&',lt:'<',gt:'>',quot:'"','#39':"'",nbsp:' '}[x]; }); }
@@ -7099,9 +7106,9 @@ body.book-open #libBanner{display:none}
     var series = list.filter(function(b){ return b.ser; }); list = list.filter(function(b){ return !b.ser; });
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (prep.length ? '<section class="lb-sec"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
-        (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
       (series.length ? '<section class="lb-sec lb-series"><h2>The Dark Enlightenment Series</h2><p class="sub">A separate series on a story still unfolding: a body of ideas that calls democracy a failure, the money and people around it, and the machinery of 2025\u20132026, each tested against the record. Not part of The Israel Architecture, which covers events that have already happened.</p>' + shelf(series) + '</section>' : '') +
+      (prep.length ? '<section class="lb-sec lb-soon"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
+        (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
       (!ready.length && !prep.length && !series.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
@@ -7127,7 +7134,8 @@ body.book-open #libBanner{display:none}
   var LT = [
     {t:'Welcome to the library', b:'Every chapter of the simulation becomes a book here, written as continuous history with every claim tied to its source. There is no set order: pick whichever book you want.'},
     {sel:'.lb-sec .lb-book:not(.soon)', t:'Ready to read', b:'These volumes are finished. Tap a cover to open it. The Baseline lays the ground before the history; The Road to 1948 tells the founding stage by stage. Start with either one.'},
-    {sel:'.lb-sec + .lb-sec h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
+    {sel:'.lb-series h2', t:'A separate series', b:'Below the Israel volumes sits The Dark Enlightenment Series: eight books on a story still unfolding, numbered Book I to VIII so they are never confused with the volumes above.'},
+    {sel:'.lb-soon h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
     {sel:'.lb-ctl', t:'Search and sort', b:'Search every volume by title, person, place or year, and sort the shelf by reading order, era or title.'},
     {sel:'#bkFab', t:'Back to the simulation, any time', b:'Tap + and choose "Simulation, scene by scene" to return to the scene-by-scene view. The same menu changes the page to paper, sepia or night and replays this tour. Next time you visit, we open whichever view you used last.'},
     {t:'Inside a book', b:'Tap a note number to see its source, and a name in a diagram for its detail. Double-tap the page to hide the menus, and use the + button for contents, bookmarks and notes. Your place is saved, and "Continue reading" brings you back.', last:true}
