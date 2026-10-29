@@ -161,7 +161,7 @@ BLOCK = r'''<!--SIMPLE-UX-START-->
   </div>
   <h5>Follow</h5>
   <div class="om-grid">
-    <a class="om-it om-soc wide" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/tiktok.svg" alt="" width="18" height="18"></span><span><small>TikTok</small>@awakenwithsophia</span></a>
+    <a class="om-it om-soc wide" href="https://www.tiktok.com/@chosenron13" target="_blank" rel="noopener noreferrer"><span class="ic om-tt" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/tiktok.svg" alt="" width="18" height="18"></span><span><small>TikTok</small>@chosenron13</span></a>
     <a class="om-it om-soc wide" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="ic om-ig" aria-hidden="true"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/instagram.svg" alt="" width="18" height="18"></span><span><small>Instagram</small>@chosen.ron13</span></a>
   </div>
   <h5>Help and more</h5>

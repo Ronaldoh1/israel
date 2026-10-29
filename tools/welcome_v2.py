@@ -3,7 +3,7 @@
 
 - The welcome summary stays until the visitor chooses (no more 15-second auto-continue).
 - A short "what the record shows" brief, larger type on a darker backing for legibility over the rain.
-- A bigger red pill; bolder social buttons (TikTok @awakenwithsophia, Instagram @chosen.ron13).
+- A bigger red pill; bolder social buttons (TikTok @chosenron13, Instagram @chosen.ron13).
 - First visit: after the red pill, a chooser (Simulation or Library) in the Israel flag's blue and white.
   Full screen on phones, a modal on larger screens. Returning visitors go straight in.
 - Every new string has Spanish and Arabic entries in the simulation's UI dictionaries.
@@ -50,14 +50,14 @@ assert n == 1, 'highlights'
 swap('''    <div class="welcome-follow">
       <div class="welcome-follow-label">Follow Me @chosen.ron13</div>
       <div class="welcome-follow-row">
-        <a class="follow-btn" href="https://www.tiktok.com/@chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="follow-icon">♫</span> TikTok</a>
+        <a class="follow-btn" href="https://www.tiktok.com/@chosenron13" target="_blank" rel="noopener noreferrer"><span class="follow-icon">♫</span> TikTok</a>
         <a class="follow-btn" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="follow-icon">📷</span> Instagram</a>
       </div>
     </div>''',
 '''    <div class="welcome-follow">
       <div class="welcome-follow-label">Follow the work</div>
       <div class="welcome-follow-row">
-        <a class="sbtn sbtn-tt" href="https://www.tiktok.com/@awakenwithsophia" target="_blank" rel="noopener noreferrer"><span class="sb-ico" aria-hidden="true">♪</span><span class="sb-txt"><small>TikTok</small><b>@awakenwithsophia</b></span></a>
+        <a class="sbtn sbtn-tt" href="https://www.tiktok.com/@chosenron13" target="_blank" rel="noopener noreferrer"><span class="sb-ico" aria-hidden="true">♪</span><span class="sb-txt"><small>TikTok</small><b>@chosenron13</b></span></a>
         <a class="sbtn sbtn-ig" href="https://www.instagram.com/chosen.ron13" target="_blank" rel="noopener noreferrer"><span class="sb-ico" aria-hidden="true">◎</span><span class="sb-txt"><small>Instagram</small><b>@chosen.ron13</b></span></a>
       </div>
     </div>''')
