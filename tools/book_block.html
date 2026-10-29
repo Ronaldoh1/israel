@@ -631,6 +631,15 @@ body.book-open #libBanner{display:none}
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ if(s.scene && secOf[s.scene] !== s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ (s.draws || []).forEach(function(d){ if(!where[d]){ where[d] = [bi, k]; secOf[d] = s.s; } }); }); }); });
   function useBook(bi){ curBook = bi; BOOK = BOOKS[bi]; }
+  /* ---------- browser history: library, book and section are real URLs, so Back and shared links work ---------- */
+  var routing = false, bootOpen = false;
+  function base(){ return location.pathname + location.search; }
+  function nav(hash, push, st){
+    if(routing) return;
+    var u = base() + hash; if((location.hash || '') === hash && !push) return;
+    if((location.hash || '') === hash) return;
+    try{ if(push) history.pushState(st || {ots:1}, '', u); else history.replaceState(st || history.state || {ots:1}, '', u); }catch(e){}
+  }
   var prefs = ls('ots_book_prefs') || {theme:'paper', fs:0};
   function paged(){ return prefs.mode === 'pages'; }
   function applyPrefs(){ view.setAttribute('data-theme', prefs.theme || 'paper'); view.classList.toggle('paged', paged()); var base = window.innerWidth <= 600 ? 18 : 19; view.style.setProperty('--fs', (base + (prefs.fs || 0)) + 'px'); ls('ots_book_prefs', prefs); }
@@ -907,7 +916,7 @@ body.book-open #libBanner{display:none}
   $('bkMid').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else chapters(); });
 
   /* ---------- where the reader is ---------- */
-  var curSec = null, saveT = null;
+  var curSec = null, saveT = null, urlT = null;
   function onScroll(){
     var ch = BOOK.chapters[curCh]; if(!ch) return;
     var P = paged(), st, frac = 0, prog, at = null, i;
@@ -928,6 +937,7 @@ body.book-open #libBanner{display:none}
     var hs = curSec && document.getElementById('bk-' + curSec), head = hs ? hs.querySelector('h2').textContent : '';
     $('bkHeadT').textContent = ch.label + ' · ' + (head || ch.title);
     barInfo(frac, st);
+    if(curSec && view.classList.contains('on') && !view.classList.contains('lib')){ clearTimeout(urlT); urlT = setTimeout(function(){ if(curSec && !view.classList.contains('lib')) nav('#book=' + encodeURIComponent(curSec), false); }, 350); }
     clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos_' + BOOK.id, {ch:curCh, sec:curSec, y:P ? null : st, pg:P ? st : null, mode:prefs.mode || 'scroll', at:Date.now()});
       var pr = ls('ots_book_progress') || {}, idx = 0, tot = 0; BOOK.chapters.forEach(function(c, k){ if(k < curCh) idx += c.sections.length; tot += c.sections.length; });
       var inCh = BOOK.chapters[curCh].sections.map(function(x){ return x.s; }).indexOf(curSec); idx += Math.max(0, inCh) + (curSec ? 1 : 0);
@@ -940,7 +950,10 @@ body.book-open #libBanner{display:none}
   function openReader(bi, k, sec, resume){
     useBook(bi); var y = null;
     if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; if((p.mode || 'scroll') === (prefs.mode || 'scroll')) y = paged() ? p.pg : p.y; else sec = p.sec; } } }
+    var wasLib = view.classList.contains('lib') && view.classList.contains('on'), prevBook = (location.hash || '').indexOf('#book=') === 0 ? where[decodeURIComponent(location.hash.slice(6))] || null : null;
     view.classList.remove('lib'); render(k, sec); if(y != null){ if(paged()) showPage(y, true); else scroller.scrollTop = y; } onScroll();
+    var same = prevBook && prevBook[0] === bi;   /* moving within one book replaces the entry; a new book (from the shelf or a link) adds one, so Back returns */
+    nav('#book=' + encodeURIComponent(curSec || BOOK.chapters[k].sections[0].s), !same, {ots:1, fromLib:wasLib});
     var hk = 'ots_book_hint_' + (paged() ? 'pages' : 'scroll');
     if(!ls(hk)){ ls(hk, 1); var hn = $('bkHint'); hn.textContent = paged() ? 'Tap the right side to turn the page, the middle for the menu' : 'Double-tap the page to hide or show the menu'; hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
     setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
@@ -953,11 +966,10 @@ body.book-open #libBanner{display:none}
     if(target && where[target]){ openReader(where[target][0], where[target][1], secOf[target] || target); }
     else if(target && bookIndex(target) >= 0 && BOOKS[bookIndex(target)].status === 'ready'){ openReader(bookIndex(target), null, null, true); }
     else { showLibrary(); }
-    if(!view.classList.contains('lib') && location.hash.indexOf('#book') !== 0){ try{ history.replaceState(null, '', location.pathname + location.search + '#book'); }catch(e){} }
   }
   function closeBook(sceneId){
     hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open'); ls('ots_view', 'sim');
-    try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+    if(!routing && /^#(book|library)/.test(location.hash || '')){ try{ history.pushState({ots:1}, '', base()); }catch(e){} }
     /* the simulation's own first-visit tour was held back while the library was open; run it now */
     setTimeout(function(){ try{ if(!localStorage.getItem('ots_onboarding_seen_v1_0_0') && window.startTour) window.startTour(false); }catch(e){} }, 500);
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
@@ -1003,6 +1015,7 @@ body.book-open #libBanner{display:none}
       (!ready.length && !prep.length && !series.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
+  function toLibrary(){ if(history.state && history.state.fromLib && !view.classList.contains('lib')) history.back(); else showLibrary(); }
   function showLibrary(){
     view.classList.add('lib'); hideAll();
     var last = ls('ots_lib_last'), lb = last ? BOOKS[bookIndex(last.book)] : null, pos = lb ? ls('ots_book_pos_' + lb.id) : null, cont = '';
@@ -1017,7 +1030,7 @@ body.book-open #libBanner{display:none}
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
     renderLib(); lib.scrollTop = 0;
     if(!ls('ots_library_tour_v2')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
-    try{ history.replaceState(null, '', location.pathname + location.search + '#library'); }catch(e){}
+    nav('#library', !bootOpen);
     setTimeout(function(){ try{ lib.focus({preventScroll:true}); }catch(e){} }, 50);
   }
   /* ---------- the library walkthrough (once, on the first visit; replay with "How it works") ---------- */
@@ -1109,7 +1122,7 @@ body.book-open #libBanner{display:none}
     else if(b.dataset.sim){ closeBook(b.dataset.sim); }
     else if(b.dataset.ch){ render(+b.dataset.ch); onScroll(); }
     else if(b.dataset.book){ openReader(+b.dataset.book, 0); }
-    else if(b.dataset.lib){ showLibrary(); }
+    else if(b.dataset.lib){ toLibrary(); }
     else if(b.dataset.close){ closeBook(null); }
   });
   page.addEventListener('keydown', function(e){ var nd = e.target.closest && e.target.closest('.nd'); if(nd && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); nodePop(nd); } });
@@ -1181,7 +1194,7 @@ body.book-open #libBanner{display:none}
     var dn = e.target.closest('[data-del-note]'); if(dn){ var b = ls('ots_book_notes') || []; b.splice(+dn.getAttribute('data-del-note'), 1); ls('ots_book_notes', b); listNotes(); return; }
     var x = e.target.closest('[data-a]'); if(!x) return; var a2 = x.getAttribute('data-a'), ch = BOOK.chapters[curCh] || {};
     if(a2 === 'toc') toc();
-    else if(a2 === 'lib') showLibrary();
+    else if(a2 === 'lib') toLibrary();
     else if(a2 === 'dismiss') hideAll();
     else if(a2 === 'menu') menu();
     else if(a2 === 'sim') closeBook(curSec || (ch.sections && ch.sections[0] && ch.sections[0].s));
@@ -1199,7 +1212,7 @@ body.book-open #libBanner{display:none}
     else if(a2 === 'lib-search'){ hideAll(); var lq = $('lbQ'); if(lq){ lq.scrollIntoView({block:'center'}); lq.focus(); } }
     else if(a2.indexOf('lth-') === 0){ prefs.theme = a2.slice(4); applyPrefs(); var tb = lib.querySelector('[data-lib-theme]'); if(tb) tb.textContent = 'Page: ' + prefs.theme.replace(/^./, function(x){ return x.toUpperCase(); }); libMenu(); }
     else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
-    else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:'The Israel Architecture', text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
+    else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:BOOK.title + ' · ' + SERN(BOOK), text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
     else if(a2 === 'close') closeBook(null);
   });
   function libMenu(){
@@ -1221,7 +1234,7 @@ body.book-open #libBanner{display:none}
       if(e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' '){ turn(1); e.preventDefault(); e.stopImmediatePropagation(); return; }
       if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ turn(-1); e.preventDefault(); e.stopImmediatePropagation(); return; } }
     if(e.key === 't' || e.key === 'T'){ toc(); e.preventDefault(); }
-    else if(e.key === 'l' || e.key === 'L'){ showLibrary(); e.preventDefault(); }
+    else if(e.key === 'l' || e.key === 'L'){ toLibrary(); e.preventDefault(); }
     else if(e.key === ']' && BOOK.chapters[curCh + 1]){ render(curCh + 1); onScroll(); }
     else if(e.key === '[' && curCh > 0){ render(curCh - 1); onScroll(); }
     e.stopImmediatePropagation();
@@ -1234,9 +1247,25 @@ body.book-open #libBanner{display:none}
     o.appendChild(b); })();
   (function(){ var wp = document.querySelector('.welcome-paths'); if(!wp) return; var b = document.createElement('button'); b.className = 'path-btn'; b.type = 'button'; b.textContent = '📖 Read it as books';
     b.addEventListener('click', function(){ window.__bookOpening = true; try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 500); }); wp.appendChild(b); })();
-  function fromHash(){ var h = location.hash || ''; if(view.classList.contains('on') && (h === '#book' || h === '#library')) return; if(h === '#book' || h === '#library') openBook(null); else if(h.indexOf('#book=') === 0) openBook(decodeURIComponent(h.slice(6)) || null); }
+  function fromHash(){
+    var h = location.hash || '', on = view.classList.contains('on'), isLib = on && view.classList.contains('lib');
+    routing = true;
+    try{
+      if(h === '#book' || h === '#library'){ if(!isLib) openBook(null); }
+      else if(h.indexOf('#book=') === 0){
+        var t = decodeURIComponent(h.slice(6)), w = where[t];
+        if(w && on && !isLib && w[0] === curBook){ if(t !== curSec){ if(w[1] !== curCh) { render(w[1], secOf[t] || t); onScroll(); } else jumpTo(secOf[t] || t, false); } }
+        else if(!(on && !isLib && bookIndex(t) === curBook)) openBook(t || null);
+      }
+      else if(on) closeBook(null);
+    } finally { routing = false; }
+  }
+  window.addEventListener('popstate', fromHash);
   window.addEventListener('hashchange', fromHash);
-  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){} fromHash(); } }, 700); });
+  window.addEventListener('load', function(){ setTimeout(function(){ if(/^#(book|library)/.test(location.hash || '')){ try{ var w = $('welcomeOverlay'); if(w && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
+    /* a shared link straight into a book: put the library underneath it, so Back lands on the shelf instead of leaving the site */
+    var h0 = location.hash; if(h0.indexOf('#book=') === 0 && !(history.state && history.state.ots)){ try{ history.replaceState({ots:1}, '', base() + '#library'); history.pushState({ots:1, fromLib:true}, '', base() + h0); }catch(e){} }
+    fromHash(); } }, 700); });
   try{ if(window.parent !== window && window.parent.__bookRoute){ var r = window.parent.__bookRoute; setTimeout(function(){ try{ if(window.dismissWelcome) window.dismissWelcome(); }catch(e){} try{ window.parent.__bookRoute = null; }catch(e){} openBook(r === true ? null : r); }, 900); } }catch(e){}
 
   /* ---------- views: a one-time library banner in the simulation, and the last-used view on arrival ---------- */
@@ -1278,7 +1307,7 @@ body.book-open #libBanner{display:none}
     var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
     try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
     window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
-    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
+    setTimeout(function(){ window.__bookOpening = false; bootOpen = true; openBook(null); bootOpen = false; }, 450);
   }, 650); });
 })();
 </script>
