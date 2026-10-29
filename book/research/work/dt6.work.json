@@ -1,0 +1,243 @@
+{
+ "dt6_how_it_counts": {
+  "topic": "How instant-runoff ranked-choice voting counts, with NYC and Maine worked cases",
+  "claims": [
+   {
+    "text": "NYC 2021 Democratic mayoral primary round 1: Adams 289,403 (30.7%), Wiley 201,127 (21.4%), Garcia 184,463 (19.6%), Yang 115,130 (12.2%); 8 rounds; final Adams 404,513 (50.4%) vs Garcia 397,316 (49.6%), margin 7,197; 140,202 inactive ballots in the final round",
+    "strength": "primary",
+    "sources": [
+     "dt6_nyc_2021"
+    ]
+   },
+   {
+    "text": "NYC 2025 Democratic mayoral primary round 1: Mamdani 469,642 (43.8%), Cuomo 387,137 (36.1%), Lander 120,634 (11.3%); 3 rounds; final Mamdani 573,169 (56.4%) vs Cuomo 443,229 (43.6%); 55,332 inactive in final round",
+    "strength": "primary",
+    "sources": [
+     "dt6_nyc_2025"
+    ]
+   },
+   {
+    "text": "Maine 2nd District 2018 round 1: Poliquin 134,184 (46.3%), Golden 132,013 (45.6%), Bond 16,552 (5.7%), Hoar 6,875 (2.4%); final Golden 142,440 (50.6%) vs Poliquin 138,931; 8,253 exhausted of 289,624; Poliquin sued 13 Nov 2018 and asked to end the recount 14 Dec 2018",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_me2_2018"
+    ]
+   },
+   {
+    "text": "Fair Representation Act text sets ranked-choice counting rules for single-seat and multi-seat races, ties resolved by lot, and $4-$8 per registered voter federal payments for implementation",
+    "strength": "primary",
+    "sources": [
+     "dt6_fra_text"
+    ]
+   }
+  ],
+  "sources": {
+   "dt6_nyc_2021": {
+    "url": "https://vote.nyc/sites/default/files/pdf/election_results/2021/20210622Primary%20Election/rcv/024306_1.html",
+    "label": "NYC Board of Elections, official RCV round table, Democratic primary for Mayor, 22 June 2021"
+   },
+   "dt6_nyc_2025": {
+    "url": "https://vote.nyc/sites/default/files/pdf/election_results/2025/20250624Primary%20Election/rcv/DEM_Mayor_Citywide.pdf",
+    "label": "NYC Board of Elections, official RCV round table, Democratic primary for Mayor, 24 June 2025"
+   },
+   "dt6_bp_me2_2018": {
+    "url": "https://ballotpedia.org/Maine's_2nd_Congressional_District_election,_2018",
+    "label": "Ballotpedia, 'Maine's 2nd Congressional District election, 2018'"
+   },
+   "dt6_fra_text": {
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4632ih/html/BILLS-119hr4632ih.htm",
+    "label": "H.R. 4632 (119th Congress), Fair Representation Act, introduced 23 July 2025 (GovInfo text)"
+   }
+  }
+ },
+ "dt6_where_it_runs": {
+  "topic": "Where RCV runs and where it is banned: NYC, Maine, Alaska, bans, 2024 ballot record, 2026 measures",
+  "claims": [
+   {
+    "text": "NYC charter amendment 5 Nov 2019: yes 510,153 (73.61%), no 182,900; RCV for primaries and specials for mayor, public advocate, comptroller, borough president, council from 2021; up to five ranks",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_nyc2019"
+    ]
+   },
+   {
+    "text": "NYC 2025 (FairVote report): SurveyUSA found 96% said ballot simple, 81% understand RCV extremely or very well, 76% want to keep or expand; ballot data show 78% ranked at least two in the Democratic mayoral primary; 5.6% of votes inactive in RCV-tabulated contests; mayoral primary turnout 34.6%",
+    "strength": "reported",
+    "sources": [
+     "dt6_fv_nyc2025"
+    ]
+   },
+   {
+    "text": "Maine Question 5 passed 52.12-47.88 on 8 Nov 2016; 23 May 2017 the Supreme Judicial Court unanimously advised RCV conflicts with the constitution's plurality rule for governor and legislature general elections; 12 June 2018 voters approved a people's veto overturning LD 1646 (the delay law)",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_me_advisory"
+    ]
+   },
+   {
+    "text": "Baber v. Dunlap, 13 Dec 2018 (Walker, J.): Maine's RCV Act as applied to the 2018 2nd District race violated neither the Constitution nor federal law; Article I 'perfectly silent' on how states elect representatives; 'The Constitution does not require an easy ballot'",
+    "strength": "primary",
+    "sources": [
+     "dt6_baber"
+    ]
+   },
+   {
+    "text": "Alaska 2020 Measure 2 passed 174,032 (50.55%) to 170,251 (top-four primary, RCV general, 'true source' disclosure), upheld by state supreme court 19 Jan 2022; 2024 repeal failed 160,230 (49.88%) to 160,973, narrowest in state history; 2026 Measure 2 on 3 Nov 2026 ballot, 42,837 signatures verified 31 Dec 2025, supreme court ordered added language 27 Aug 2026; backers include Trump, Rep. Begich, Gov. Dunleavy, Alaska GOP, Musk; opponents include AFL-CIO, Libertarian Party, Unite America; through 2 Oct 2026 support raised $2.52M, opposition $8.55M (Unite America PAC $4.87M)",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_ak2026"
+    ]
+   },
+   {
+    "text": "Alaska Aug 2022 special: round 1 Peltola 75,799 (40.19%), Palin 58,973 (31.27%), Begich 53,810 (28.53%); Begich ballots 27,053 to Palin, 15,467 to Peltola, 11,290 exhausted; Peltola 91,266 (51.48%) to 86,026; 48.40% of round-1 ballots; head-to-head Begich beat Palin ~61.41% and Peltola ~52.51% (Condorcet winner eliminated first); monotonicity and no-show paradoxes also present",
+    "strength": "reported",
+    "sources": [
+     "dt6_clelland_ak"
+    ]
+   },
+   {
+    "text": "RCV bans by July 2024: 2022 Florida, Tennessee; 2023 Idaho, Montana, South Dakota; 2024 Alabama, Kentucky, Louisiana, Mississippi, Oklahoma; Missouri vote pending",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_bans2024"
+    ]
+   },
+   {
+    "text": "2025 bans: Arkansas, Iowa (signed 2 June 2025), Kansas, North Dakota, West Virginia, Wyoming; 17 total; all but two under Republican trifectas, Kansas and Kentucky under divided government (Republican legislature, Democratic governor)",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_bans2025"
+    ]
+   },
+   {
+    "text": "Indiana's ban signed 24 Feb 2026 by Gov. Braun; 18 states ban RCV (count corrected from 19 after Utah's pilot expired 1 Jan 2026)",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_bans2026"
+    ]
+   },
+   {
+    "text": "2024: DC Initiative 83 (establish RCV) 73% yes, Missouri Amendment 7 (ban) 68% yes, both approved; defeated: Montana CI-126 49%, Alaska repeal 49.9%, Nevada Q3 47%, Colorado 131 46%, Oregon 117 42%, Arizona 140 41%, Montana CI-127 40%, South Dakota H 34%, Idaho Prop 1 30%",
+    "strength": "reported",
+    "sources": [
+     "dt6_bp_2024results"
+    ]
+   },
+   {
+    "text": "RCV in Nov 2026: Alaska and Maine, DC, 11 cities (Albany, Berkeley, Oakland, San Francisco, San Leandro, Boulder, Arden, Portland ME, Takoma Park, Corvallis, Portland OR) and 2 counties (Multnomah, Arlington); Honolulu, Irvine and Longmont vote on adoption 3 Nov 2026",
+    "strength": "reported",
+    "sources": [
+     "dt6_fv_2026use"
+    ]
+   }
+  ],
+  "sources": {
+   "dt6_bp_nyc2019": {
+    "url": "https://ballotpedia.org/New_York,_New_York,_Ranked-Choice_Voting_Charter_Amendment_(November_2019)",
+    "label": "Ballotpedia, 'New York, New York, Ranked-Choice Voting Charter Amendment (November 2019)'"
+   },
+   "dt6_fv_nyc2025": {
+    "url": "https://fairvote.org/report/nyc-report-2025/",
+    "label": "FairVote (advocacy organization), 'NYC Report 2025', with SurveyUSA post-election survey"
+   },
+   "dt6_bp_me_advisory": {
+    "url": "https://ballotpedia.org/Maine_Supreme_Judicial_Court_advisory_opinion_on_ranked-choice_voting",
+    "label": "Ballotpedia, 'Maine Supreme Judicial Court advisory opinion on ranked-choice voting'"
+   },
+   "dt6_baber": {
+    "url": "https://law.justia.com/cases/federal/district-courts/maine/medce/1:2018cv00465/55219/64/",
+    "label": "Baber v. Dunlap, No. 1:18-cv-465-LEW (D. Me. 13 December 2018), Judge Lance E. Walker (Justia)"
+   },
+   "dt6_bp_ak2026": {
+    "url": "https://ballotpedia.org/Alaska_Repeal_Top-Four_Ranked-Choice_Voting_Initiative_(2026)",
+    "label": "Ballotpedia, 'Alaska Repeal Top-Four Ranked-Choice Voting Initiative (2026)' (accessed 28 October 2026)"
+   },
+   "dt6_clelland_ak": {
+    "url": "https://arxiv.org/html/2303.00108v2",
+    "label": "Jeanne N. Clelland, 'Ranked Choice Voting and Condorcet Failure in the Alaska 2022 Special Election', arXiv:2303.00108v2"
+   },
+   "dt6_bp_bans2024": {
+    "url": "https://news.ballotpedia.org/2024/07/16/more-states-banned-ranked-choice-voting-in-2024-than-any-other-year/",
+    "label": "Ballotpedia News, 'More states banned ranked-choice voting in 2024 than any other year', 16 July 2024"
+   },
+   "dt6_bp_bans2025": {
+    "url": "https://news.ballotpedia.org/2025/06/05/iowa-becomes-the-sixth-state-to-ban-ranked-choice-voting-this-year/",
+    "label": "Ballotpedia News, 'Iowa becomes the sixth state to ban ranked-choice voting this year', 5 June 2025"
+   },
+   "dt6_bp_bans2026": {
+    "url": "https://news.ballotpedia.org/2026/03/02/indiana-becomes-the-19th-state-to-ban-ranked-choice-voting-2/",
+    "label": "Ballotpedia News, 'Indiana bans ranked-choice voting' (corrected to 18th state), 2 March 2026"
+   },
+   "dt6_bp_2024results": {
+    "url": "https://ballotpedia.org/Results_for_ranked-choice_voting_(RCV)_and_electoral_system_ballot_measures,_2024",
+    "label": "Ballotpedia, 'Results for ranked-choice voting (RCV) and electoral system ballot measures, 2024'"
+   },
+   "dt6_fv_2026use": {
+    "url": "https://fairvote.org/where-will-ranked-choice-voting-be-used-in-the-2026-elections/",
+    "label": "FairVote (advocacy organization), 'Where will ranked-choice voting be used in the 2026 elections?', 29 September 2026"
+   }
+  }
+ },
+ "dt6_the_critics": {
+  "topic": "The research and critiques of RCV: exhaustion, majorities, confusion, turnout, Condorcet failure; proportional representation",
+  "claims": [
+   {
+    "text": "New America review of 15 studies: initial confusion largely faded after a second RCV round; voters penalized candidates of color at similar rates under plurality and RCV; 'none found that replacing FPTP with RCV disadvantages minority voters or candidates'; among 65+ just 6.5% prefer RCV to single vote; among Republicans under 7% vs 28% of Democrats; 'RCV alone likely cannot deliver the representational diversity that many advocates promise'; multi-seat districts produce more diverse representation; 'adopting RCV will not hurt as much as you might fear, but it may not help as much as you might hope'",
+    "strength": "reported",
+    "sources": [
+     "dt6_na_review"
+    ]
+   },
+   {
+    "text": "Burnett and Kogan: more than 600,000 ballots in four local IRV elections; 'a substantial number of votes being discarded in each election'; 'the winner in all four of our cases receives less than a majority of the total votes cast'",
+    "strength": "reported",
+    "sources": [
+     "dt6_burnett_kogan"
+    ]
+   },
+   {
+    "text": "Dowling et al. 2025: voter-file and Catalist data on local odd-year elections; RCV places not associated with lower turnout among people of color; several groups had higher turnout in RCV cities; largest proportional gains among White voters",
+    "strength": "reported",
+    "sources": [
+     "dt6_dowling_ssq"
+    ]
+   },
+   {
+    "text": "McDaniel (SF State), San Francisco: RCV reduced turnout among infrequent voters; increased spoiled ballots concentrated in areas with more Black, Latino, elderly, foreign-born and less affluent residents, not fading over time; 'The ranking process is cognitively more difficult than just choosing one candidate'",
+    "strength": "reported",
+    "sources": [
+     "dt6_mcdaniel_sf"
+    ]
+   },
+   {
+    "text": "Fair Representation Act (H.R. 4632, Beyer; cosponsors Raskin, Peters, McGovern, Khanna), introduced 23 July 2025: RCV for House and Senate; states with 6+ seats elect from 3-5 member districts, 5 or fewer at large; bars plans that materially favor a party and mid-decade redistricting except by court order; federal three-judge court draws maps if a state misses its deadline; House provisions after the 2030 census",
+    "strength": "primary",
+    "sources": [
+     "dt6_fra_text"
+    ]
+   }
+  ],
+  "sources": {
+   "dt6_na_review": {
+    "url": "https://www.newamerica.org/?p=36245",
+    "label": "Lee Drutman and Maresa Strano, New America, introduction to the Electoral Reform Research Group's RCV studies, 30 March 2022"
+   },
+   "dt6_burnett_kogan": {
+    "url": "https://electionlawblog.org/?p=68198",
+    "label": "Election Law Blog, on Craig Burnett and Vladimir Kogan, 'Ballot (and Voter) \"Exhaustion\" Under Instant Runoff Voting', forthcoming in Electoral Studies (2014 post)"
+   },
+   "dt6_dowling_ssq": {
+    "url": "https://iro.uiowa.edu/esploro/outputs/journalArticle/Is-RankedChoice-Voting-Associated-With-Turnout/9984808280302771",
+    "label": "Dowling, Tolbert, Micatka and Donovan, 'Is Ranked-Choice Voting Associated With Turnout?', Social Science Quarterly 106(3), May 2025"
+   },
+   "dt6_mcdaniel_sf": {
+    "url": "https://lca.sfsu.edu/archive/node/817762.html",
+    "label": "San Francisco State University, on POLITICO's report of Jason McDaniel's research on RCV in San Francisco, 28 March 2018"
+   },
+   "dt6_fra_text": {
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4632ih/html/BILLS-119hr4632ih.htm",
+    "label": "H.R. 4632 (119th Congress), Fair Representation Act, introduced 23 July 2025 (GovInfo text)"
+   }
+  }
+ }
+}
