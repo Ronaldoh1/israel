@@ -5499,6 +5499,39 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .bk-page .fig-tree ul ul > li::before{content:'';position:absolute;left:-16px;top:18px;width:14px;height:2px;background:var(--figline)}
 .bk-page .fig-tree li > b{display:inline-block;border:1.5px solid var(--fig);border-radius:5px;background:var(--paper);padding:5px 9px;margin-right:6px}
 .bk-page .fig-tree > ul > li > b{background:var(--fig);color:var(--paper)}
+/* system architecture: stacked layers of components, joined by graded links */
+.bk-page .fig-arch .arch{display:flex;flex-direction:column;gap:0}
+.bk-page .fig-arch .ly{border:1.5px dashed var(--rule);border-radius:6px;padding:26px 10px 10px;position:relative;background:var(--paper)}
+.bk-page .fig-arch .ly > h4{position:absolute;top:-1px;left:10px;transform:translateY(-50%);margin:0;padding:2px 8px;background:var(--fig);color:var(--paper);border-radius:3px;font:700 11px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.02em}
+.bk-page .fig-arch .ly > p{margin:0 0 8px;font-size:.92em;color:var(--muted)}
+.bk-page .fig-arch .nodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.bk-page .fig-arch .nd{border:1.5px solid var(--fig);border-radius:5px;background:var(--card);padding:7px 9px;min-width:0}
+.bk-page .fig-arch .nd b{display:block;margin:0 0 2px;line-height:1.25}
+.bk-page .fig-arch .nd span{display:block;font-size:.93em;line-height:1.35}
+.bk-page .fig-arch .nd code,.bk-page .fig-arch .lk code{display:block;margin-top:5px;font:500 11px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--c-teal);overflow-wrap:anywhere}
+.bk-page .fig-arch .nd.pos{border-style:dotted;border-color:var(--muted)}
+.bk-page .fig-arch .nd.hub{border-width:2.5px;border-color:var(--figline)}
+.bk-page .fig-arch .lk{position:relative;margin:0;padding:14px 0 14px 50%;min-height:20px}
+.bk-page .fig-arch .lk::before{content:'';position:absolute;left:calc(50% - 1.5px);top:0;bottom:8px;border-left:3px solid var(--fig)}
+.bk-page .fig-arch .lk::after{content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);border-left:7px solid transparent;border-right:7px solid transparent;border-top:10px solid var(--fig)}
+.bk-page .fig-arch .lk.rep::before{border-left-style:dashed}
+.bk-page .fig-arch .lk.pos::before{border-left-style:dotted;border-color:var(--muted)}
+.bk-page .fig-arch .lk.pos::after{border-top-color:var(--muted)}
+.bk-page .fig-arch .lk.none::before{border-color:var(--accent);bottom:0;top:0;border-left-style:dashed}
+.bk-page .fig-arch .lk.none::after{content:'✕';border:0;bottom:auto;top:50%;transform:translate(-50%,-50%);color:var(--accent);background:var(--card);font:700 15px/1 system-ui,sans-serif;padding:1px 2px}
+.bk-page .fig-arch .lk > span{display:block;margin-left:14px;font-size:.92em;line-height:1.35}
+.bk-page .fig-arch .lk > span i{font-style:normal;font:700 10px/1 system-ui,-apple-system,sans-serif;letter-spacing:.03em;padding:2px 6px;border-radius:999px;margin-right:6px;vertical-align:1px;background:var(--fig);color:var(--paper)}
+.bk-page .fig-arch .lk.rep > span i{background:var(--c-teal)}
+.bk-page .fig-arch .lk.pos > span i{background:var(--muted)}
+.bk-page .fig-arch .lk.none > span i{background:var(--accent)}
+.bk-page .fig-arch .arch-key{display:flex;flex-wrap:wrap;gap:6px 14px;margin:12px 0 0;font:500 11.5px/1.3 system-ui,-apple-system,sans-serif;color:var(--muted)}
+.bk-page .fig-arch .arch-key em{font-style:normal;display:inline-flex;align-items:center;gap:6px}
+.bk-page .fig-arch .arch-key em::before{content:'';width:22px;border-top:3px solid var(--fig)}
+.bk-page .fig-arch .arch-key em.rep::before{border-top-style:dashed}
+.bk-page .fig-arch .arch-key em.pos::before{border-top-style:dotted;border-color:var(--muted)}
+.bk-page .fig-arch .arch-key em.none::before{border-top-style:dashed;border-color:var(--accent)}
+.bk-page .fig-arch .arch-key em.hub::before{width:14px;height:10px;border:2.5px solid var(--figline);border-radius:3px}
+@media (max-width:600px){.bk-page .fig-arch .lk{padding-left:22px}.bk-page .fig-arch .lk::before{left:6px}.bk-page .fig-arch .lk::after{left:7.5px}.bk-page .fig-arch .lk > span{margin-left:8px}}
 /* key figures */
 .bk-page .fig-stats dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:0}
 .bk-page .fig-stats dl > div{background:var(--paper);border:1px solid var(--rule);border-top:3px solid var(--fig);border-radius:4px;padding:10px 12px}
@@ -5813,7 +5846,7 @@ body.book-open #libBanner{display:none}
 .bk-chs .row .sw{width:10px;height:34px;border-radius:2px;flex:none}
 /* colour-coded figures: a type tag in each caption and a coloured top rule */
 .bk-page figure[class^="fig-"],.bk-fig{border-top:3px solid var(--fk,var(--c-navy))}
-.fig-flow{--fk:var(--c-navy)}.fig-money{--fk:var(--c-gold)}.fig-time{--fk:var(--c-teal)}.fig-compare{--fk:var(--c-red)}.fig-tree{--fk:var(--c-green)}.fig-stats{--fk:var(--c-plum)}.fig-dash,.fig-map{--fk:var(--c-slate)}.bk-fig{--fk:var(--c-rust)}
+.fig-flow{--fk:var(--c-navy)}.fig-money{--fk:var(--c-gold)}.fig-time{--fk:var(--c-teal)}.fig-compare{--fk:var(--c-red)}.fig-tree{--fk:var(--c-green)}.fig-stats{--fk:var(--c-plum)}.fig-dash,.fig-map{--fk:var(--c-slate)}.fig-arch{--fk:var(--c-teal)}.bk-fig{--fk:var(--c-rust)}
 .fkind{display:inline-block;vertical-align:2px;margin-right:.5em;padding:3px 8px;border-radius:999px;background:var(--fk,var(--c-navy));color:var(--paper);font:700 10.5px/1 system-ui,-apple-system,sans-serif;letter-spacing:.03em}
 .bk-page figure[class^="fig-"] figcaption,.bk-page figure[class^="fig-"] li,.bk-page figure[class^="fig-"] td,.bk-page figure[class^="fig-"] th,.bk-page figure[class^="fig-"] dd,.bk-page figure[class^="fig-"] dt{overflow-wrap:break-word;min-width:0}
 /* flow: numbered steps in navy; money: one colour per step */
@@ -5870,7 +5903,7 @@ body.book-open #libBanner{display:none}
 .bk-fkey{list-style:none;padding:0;margin:1em 0 0}
 .bk-fkey li{display:flex;gap:10px;align-items:flex-start;margin:0 0 .8em;font-size:.92em;line-height:1.5}
 .bk-fkey li .fkind{flex:none;margin-top:3px}
-.fk-flow{--fk:var(--c-navy)}.fk-money{--fk:var(--c-gold)}.fk-time{--fk:var(--c-teal)}.fk-compare{--fk:var(--c-red)}.fk-tree{--fk:var(--c-green)}.fk-stats{--fk:var(--c-plum)}.fk-net{--fk:var(--c-rust)}
+.fk-flow{--fk:var(--c-navy)}.fk-money{--fk:var(--c-gold)}.fk-time{--fk:var(--c-teal)}.fk-compare{--fk:var(--c-red)}.fk-tree{--fk:var(--c-green)}.fk-stats{--fk:var(--c-plum)}.fk-net{--fk:var(--c-rust)}.fk-arch{--fk:var(--c-teal)}
 .bk-pgbreak{break-before:column}
 #bookView.paged .bk-notes{break-before:column}
 
@@ -6714,7 +6747,7 @@ body.book-open #libBanner{display:none}
   function chDesc(c){ var t = String(c.intro || '').replace(/\[cite:[^\]]+\]/g, '').replace(/\[scene:[^|\]]+\|([^\]]+)\]/g, '$1').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(); if(!t) return ''; var m = t.match(/^(.{60,240}?[.!?])(\s|$)/); return m ? m[1] : t.slice(0, 220).replace(/\s+\S*$/, '') + '…'; }
   function chN(l){ var W = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12}, m = String(l || '').match(/(?:chapter|stage|part)\s+(\w+)/i); if(!m) return null; var n = +m[1] || W[m[1].toLowerCase()]; return n || null; }
   function cloth(k){ return CLOTH[(k + BOOK.vol * 3) % CLOTH.length]; }
-  var KN = {'fig-flow':'Process','fig-money':'Money trail','fig-time':'Timeline','fig-compare':'Comparison','fig-tree':'Power structure','fig-stats':'Key figures','fig-dash':'Data','fig-map':'Map','bk-fig':'Network'};
+  var KN = {'fig-flow':'Process','fig-money':'Money trail','fig-time':'Timeline','fig-compare':'Comparison','fig-tree':'Power structure','fig-stats':'Key figures','fig-dash':'Data','fig-map':'Map','fig-arch':'System architecture','bk-fig':'Network'};
   /* network colours: kinds of party, kinds of tie */
   var NG = {state:'state',political:'state',supranational:'state',financial:'money',corporate:'money',military:'force',violent:'force',intel:'force',religious:'civil',academic:'civil',media:'civil',ngo:'civil',contested:'disp'};
   var NGL = {state:['k-navy','States and politics'],money:['k-red','Money and companies'],force:['k-rust','Armed force and intelligence'],civil:['k-teal','Faith, scholarship, press, civic groups'],event:['k-gold','Events and documents'],disp:['k-slate','Disputed']};
@@ -6746,7 +6779,7 @@ body.book-open #libBanner{display:none}
           '<ol>' + c.sections.map(function(x){ return '<li><button class="r" type="button" data-go="' + esc(x.s) + '"><span class="t">' + esc(plain(x.h)) + '</span><span class="ld"></span><span class="pg">' + P.sec[x.s].start + '</span></button></li>'; }).join('') + '</ol></li>'; }).join('') +
       '</ol><p class="d" style="margin-top:1em">Page numbers count a printed page of about 300 words, so they are the same on every screen.</p></section>';
     
-    var FK = [['fk-flow','Process','How a decision or mechanism moved, step by step.'],['fk-money','Money trail','Five steps, one colour each: where the money came from, how it moved, what multiplied it, who gained, and who bore the cost.'],['fk-time','Timeline','Dated events in order.'],['fk-compare','Comparison','Two or more accounts, documents or periods side by side.'],['fk-tree','Power structure','Who sat above whom.'],['fk-stats','Key figures','The numbers a section turns on.'],['fk-net','Network','Who was connected, and how. Box colours show the kind of party, line colours the kind of tie; dashed means disputed.']];
+    var FK = [['fk-flow','Process','How a decision or mechanism moved, step by step.'],['fk-money','Money trail','Five steps, one colour each: where the money came from, how it moved, what multiplied it, who gained, and who bore the cost.'],['fk-time','Timeline','Dated events in order.'],['fk-compare','Comparison','Two or more accounts, documents or periods side by side.'],['fk-tree','Power structure','Who sat above whom.'],['fk-stats','Key figures','The numbers a section turns on.'],['fk-arch','System architecture','How the technical systems are built and wired: layers of components, with each link marked documented (solid), reported (dashed), possible but not shown connected (dotted), or blocked by law or a court (red, crossed).'],['fk-net','Network','Who was connected, and how. Box colours show the kind of party, line colours the kind of tie; dashed means disputed.']];
     h += '<section class="bk-fm bk-leaf" id="bk-figkey" aria-label="How to read this book"><h2>How to read this book</h2><p>' + esc(LIB.note || '') + '</p><p>Every figure carries a coloured tag that says what kind of figure it is, and a line of sources underneath. Each network diagram also has a plain-words reading under it: open “Read this diagram in words.”</p><ul class="bk-fkey">' +
       FK.map(function(x){ return '<li class="' + x[0] + '"><span class="fkind">' + x[1] + '</span><span>' + x[2] + '</span></li>'; }).join('') + '</ul>' + legend(null, null) + '</section>';
     return h;
@@ -6889,6 +6922,7 @@ body.book-open #libBanner{display:none}
       var cap = f.querySelector('figcaption'); if(!cap) return; var cn = chN(c.label), lab = 'Figure ' + (cn != null ? cn : (/prelude/i.test(c.label) ? 0 : k + 1)) + '.' + (i + 1) + '.';
       var kc = Object.keys(KN).filter(function(x){ return f.classList.contains(x); })[0], chip = (f.getAttribute('data-kind') || kc) ? '<span class="fkind">' + esc(f.getAttribute('data-kind') || KN[kc]) + '</span>' : '';
       var fn = cap.querySelector('.fnum'); if(fn){ fn.textContent = lab; if(chip) fn.insertAdjacentHTML('afterend', ' ' + chip); } else cap.insertAdjacentHTML('afterbegin', '<span class="fnum">' + lab + '</span>' + chip); });
+    [].forEach.call(page.querySelectorAll('figure.fig-arch'), function(f){ if(f.querySelector('.arch-key')) return; var has = function(s){ return !!f.querySelector(s); }, k = '<em>Documented link</em>' + (has('.lk.rep') ? '<em class="rep">Reported link</em>' : '') + (has('.lk.pos,.nd.pos') ? '<em class="pos">Possible join, not shown connected</em>' : '') + (has('.lk.none') ? '<em class="none">Blocked by law or a court</em>' : '') + (has('.nd.hub') ? '<em class="hub">Hub that other systems feed</em>' : ''); var src = f.querySelector('.fig-src'), d = document.createElement('p'); d.className = 'arch-key'; d.innerHTML = k; if(src) f.insertBefore(d, src); else f.appendChild(d); });
     [].forEach.call(page.querySelectorAll('.fig-compare table'), function(t){ if(t.parentNode.className !== 'tw'){ var w = document.createElement('div'); w.className = 'tw'; t.parentNode.insertBefore(w, t); w.appendChild(t); }
       /* tables with 4+ columns become labelled cards on phones: each cell carries its column heading */
       var hs = [].map.call(t.querySelectorAll('thead th'), function(th){ return th.textContent.trim(); });
