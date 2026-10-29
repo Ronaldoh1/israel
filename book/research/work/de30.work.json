@@ -362,5 +362,34 @@
     "label": "AAUP (plaintiff), 'Landmark ruling blocks ideological deportation policy targeting pro-Palestine scholars', on the judgment of 22 January 2026 in AAUP v. Rubio (D. Mass.)"
    }
   }
+ },
+ "de30_arch": {
+  "topic": "Technical detail for the silo architecture diagrams: SAVE query keys and SSA link; Privacy Act computer-matching agreements",
+  "claims": [
+   {
+    "text": "SAVE matches people by full Social Security number or its last four digits; from May 2025 agencies could open cases with SSNs, enabling batch uploads of voter rolls and driver's-licence data; the October 2025 PIA describes integration with SSA databases including citizenship fields and the Death Master File",
+    "strength": "reported",
+    "sources": [
+     "de30_arch_bu_save"
+    ]
+   },
+   {
+    "text": "Under 5 U.S.C. 552a(o), records in a system of records may be disclosed for a computer matching program only under a written agreement between source and recipient agencies; SSA's agreements are approved by its Data Integrity Board and announced in the Federal Register",
+    "strength": "primary",
+    "sources": [
+     "de30_arch_ssa_cma"
+    ]
+   }
+  ],
+  "sources": {
+   "de30_arch_bu_save": {
+    "url": "https://www.biometricupdate.com/202511/rapid-expansion-of-dhss-citizenship-database-raises-new-election-concerns",
+    "label": "Biometric Update, Rapid expansion of DHS's citizenship database raises new election concerns (Nov 2025)"
+   },
+   "de30_arch_ssa_cma": {
+    "url": "https://www.ssa.gov/privacy/computer_matching_programs.html",
+    "label": "Social Security Administration, Computer Matching Programs"
+   }
+  }
  }
 }

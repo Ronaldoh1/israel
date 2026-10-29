@@ -417,5 +417,45 @@
     "label": "Brennan Center for Justice, 'DHS's Domestic Surveillance, Data Collection and Analytics Tools', 29 July 2026 (data as of 26 July)"
    }
   }
+ },
+ "de27_arch": {
+  "topic": "Architecture diagrams: Palantir Foundry Ontology and security controls as documented by the company",
+  "claims": [
+   {
+    "text": "Palantir Foundry Ontology is built by 'mapping datasets and models to object types, properties, link types, and action types'; an object type is like a dataset, an object like a row, a property like a column, a link type like a join between datasets; action types define sets of edits to objects, properties and links",
+    "strength": "primary",
+    "sources": [
+     "de27_arch_ontology"
+    ]
+   },
+   {
+    "text": "Foundry markings are 'a mandatory control, while roles are a discretionary control'; 'a user must be a member of all markings applied to a resource to access it'; markings propagate through transform and analysis logic to derived data",
+    "strength": "primary",
+    "sources": [
+     "de27_arch_markings"
+    ]
+   },
+   {
+    "text": "Foundry security overview: security audit logging for detecting and investigating potential abuse; mandatory encryption of data in transit and at rest; mandatory controls travel with data through derivation, while discretionary row and column filters do not extend to downstream outputs or exports; resource roles Owner, Editor, Viewer, Discoverer",
+    "strength": "primary",
+    "sources": [
+     "de27_arch_security"
+    ]
+   }
+  ],
+  "sources": {
+   "de27_arch_ontology": {
+    "url": "https://www.palantir.com/docs/foundry/ontology/core-concepts",
+    "label": "Palantir documentation, Foundry Ontology: core concepts"
+   },
+   "de27_arch_markings": {
+    "url": "https://palantir.com/docs/foundry/security/markings/",
+    "label": "Palantir documentation, Foundry security: markings"
+   },
+   "de27_arch_security": {
+    "url": "https://www.palantir.com/docs/foundry/security/overview",
+    "label": "Palantir documentation, Foundry security overview"
+   }
+  }
  }
 }

@@ -32,3 +32,49 @@
 <p>Two corrections to common accounts follow from the list. A widely repeated line says ICE bought the Israeli company Cobwebs; it did not. Penlink bought Cobwebs, and ICE bought licences from Penlink. [cite:de28_ffp_penlink] And the stack is not the creation of one administration. Babel Street and ShadowDragon were first bought under Trump's first term, LexisNexis, the plate-reader data, a second ShadowDragon order and Paragon under Biden, and Palantir under Obama; what changed after 2025 was the volume, the new tools and the money. [cite:de28_epic_babel] [cite:de28_bu_lexis] [cite:ow9_mj_icm2019]</p>
 <h3>If it were connected</h3>
 <p>Each vendor sells one thing; the worst case is what they do joined. Documented: Palantir's case system has drawn on SEVIS, passenger and border-crossing data and phone extractions (2014–22 records), and Medicaid records reached Palantir in January 2026. [cite:de28_guardian_icm] [cite:de27_npr_medicaid] Probable: LexisNexis people-search data flowing into the Palantir platform, because the 2026 work statement requires the connection. [cite:de28_bu_lexis] Possible, with no document: Penlink's phone-location trails, Zignal's social-media alerts and Clearview's face matches feeding Palantir, so that a face in a protest photograph could be matched to a name, the name to an address with a confidence score and the address to a phone's movements on one screen; the join would need only an API and a work order, since all are ICE's own licences, and what stands in the way is agency policy, the privacy assessments the inspector general found missing in 2023, and the courts. [cite:de28_oig_23_61] Not supported: CLEAR feeding Palantir, which both 2014–22 records and Thomson Reuters say does not happen. [cite:de28_guardian_icm] [cite:de28_lawsites_tr] The law that governs these purchases is the subject of [scene:de28_brokers_and_doctrine|the next section].</p>
+<p>Drawn as one system, the contracts sit in layers above a single integration platform, and each join to it carries the grade just given.</p>
+<figure class="fig-arch">
+<figcaption>ICE's contracted data stack as a system: vendors by layer, contract figures as reported, each join to the Palantir platform graded (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · government records</h4>
+<div class="nodes">
+<div class="nd"><b>SEVIS · APIS · CBP crossings · NCIC</b><span>Students, air passengers, border crossings, criminal records</span><code>searched through ICM/FALCON (2014–22 records)</code></div>
+<div class="nd"><b>Medicaid (CMS)</b><span>Enrolees' addresses and status</span><code>7 Jan 2026 file → Palantir by Teams chat; purged on instruction</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>into Palantir's case systems</span></p>
+<section class="ly"><h4>L2 · capture at the person</h4>
+<div class="nodes">
+<div class="nd"><b>Cellebrite</b><span>Phone extraction</span><code>bought since Mar 2017 · May 2026 forecast: 5-yr IDIQ, $100m ceiling, phones and drones</code></div>
+<div class="nd"><b>Clearview AI</b><span>Face search (HSI)</span><code>PO 70CMSD25P00000111 · $3.75m at award, $9.225m with options</code></div>
+<div class="nd pos"><b>Paragon Graphite</b><span>Spyware; capability neither confirmed nor denied</span><code>$2m Sep 2024 · contract closed 20 Jan 2026</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>Cellebrite extractions importable into the case system (2014–22 records)</span></p>
+<p class="lk pos"><span><i>Possible</i>Clearview face matches into Palantir; no document</span></p>
+<section class="ly"><h4>L3 · people search</h4>
+<div class="nodes">
+<div class="nd"><b>LexisNexis Accurint</b><span>Names, addresses, phones, vehicles, property, court records</span><code>70CMSD21C00000001 · ~$24.5m (Feb 2021) · 1.2m+ searches in 7 months · bridge ~$6.7m (Aug 2026)</code></div>
+<div class="nd"><b>Thomson Reuters CLEAR</b><span>Licences, vehicles, credit, property, courts, utility data</span><code>renewed sole source 31 Mar 2026 · "not connected to Palantir tools"</code></div>
+<div class="nd"><b>TR LEIDS-5</b><span>Licence-plate-reader data</span><code>$22.8m · May 2021–May 2026</code></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>Probable: LexisNexis by API, required by the 2026 work statement (Palantir platform, PenLink, ICE Data Analytics); CLEAR: not supported</span></p>
+<section class="ly"><h4>L4 · location and social media</h4>
+<div class="nodes">
+<div class="nd pos"><b>Penlink Webloc · Tangles</b><span>Phone movements; open web and social media</span><code>$2.3m, autumn 2025 · ICE analysis: Webloc "can be queried without a warrant"</code></div>
+<div class="nd pos"><b>Babel Street</b><span>Location software (Locate X)</span><code>$1.1m Sep 2018 · $1.5m Sep 2019</code></div>
+<div class="nd pos"><b>ShadowDragon SocialNet</b><span>Social-media compilation</span><code>$289,500 Jul 2020 · $602,056 Aug 2021</code></div>
+<div class="nd pos"><b>Zignal Labs</b><span>Social-media analysis</span><code>$5.7m / 5 yrs via Carahsoft · 8bn+ posts a day (company figure)</code></div>
+</div></section>
+<p class="lk pos"><span><i>Possible</i>location trails and social alerts into Palantir: all ICE's own licences, the join needs an API and a work order; no document. Privacy assessments missing in 2023 (OIG-23-61)</span></p>
+<section class="ly"><h4>L5 · integration: the hub</h4>
+<div class="nodes">
+<div class="nd hub"><b>Palantir ICM / FALCON (HSI)</b><span>Case management since 2014</span><code>first contract reported at $41m · renewed 2019, 2022</code></div>
+<div class="nd hub"><b>ImmigrationOS · ELITE (ERO)</b><span>Arrest prioritisation, departure tracking, address lookup</span><code>$29.9m Apr 2025 · $86.3m order 5 May 2026 under DHS BPA, ceiling $1bn (Feb 2026)</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>ELITE returns a target's address with a "confidence score"</span></p>
+<section class="ly"><h4>Output · decision and action</h4>
+<div class="nodes">
+<div class="nd"><b>Lead → arrest → removal</b><span>Immigration enforcement</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de28_guardian_icm] [cite:de27_npr_medicaid] [cite:ow6_ipt_cellebrite] [cite:de28_fs_cellebrite] [cite:de28_bu_clearview] [cite:de28_audit_clearview_piid] [cite:ow10_poulson_ice] [cite:de28_npr_paragon] [cite:de28_bu_lexis] [cite:de28_lawsites_tr] [cite:de28_ffp_penlink] [cite:de25_404_webloc] [cite:de28_epic_babel] [cite:de28_epic_shadowdragon] [cite:de28_lever_zignal] [cite:de28_oig_23_61] [cite:ow9_mj_icm2019] [cite:ow9_eb_icm2022] [cite:ow9_reg_immos] [cite:de27_hg_ero] [cite:ow9_sa_dhsbpa] [cite:ow9_fortune_elite]</p>
+</figure>

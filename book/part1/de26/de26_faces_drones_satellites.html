@@ -17,6 +17,50 @@
 <p>ICE's own face-recognition tool is a phone app. Mobile Fortify, first reported by 404 Media on 17 July 2025, lets an officer point a phone at a person's face and compare it against about 200 million images drawn from Homeland Security, State Department, Customs and Border Protection (CBP), FBI and state records; it returns a name, date of birth, nationality, an "alien number" and whether an immigration judge has ordered the person removed. [cite:de26_404_fortify] A Homeland Security privacy assessment dated February 2025, obtained by 404 Media under the Freedom of Information Act and reported in November, said plainly that "ICE does not provide the opportunity for individuals to decline or consent" to the scan. Photographs taken are kept for 15 years, including those of United States citizens, since an officer cannot know a person's status before running the check. Representative Bennie Thompson said ICE officials had indicated they would treat a Mobile Fortify hit as outweighing documentary proof of citizenship such as a birth certificate, and called the practice "frightening, repugnant, and unconstitutional." [cite:de26_reason_fortify]</p>
 <h3>The border as a camera</h3>
 <p>At ports of entry the face check has become a rule rather than an option for non-citizens. A CBP final rule published in November 2025 and effective on 26 December 2025 lets the agency photograph all non-citizens on entry and exit, by air, land and sea, removing earlier exemptions for diplomats and most Canadian visitors. Under the governing records notice, non-citizens' photographs may be kept for up to 75 years; citizens may opt out by asking for manual inspection, and their verification photographs are deleted within 12 hours. CBP's operations chief called the rule "a major milestone" toward the biometric entry-exit system Congress first required after 2001. [cite:de26_bu_entryexit]</p>
+<p>The three systems share one pipeline, from a camera to a template to a gallery to a ranked list to a person who decides. They differ in whose photographs fill the gallery and in how long a scan is kept.</p>
+<figure class="fig-arch">
+<figcaption>Three face-recognition systems in federal use, from camera to decision (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · capture</h4>
+<div class="nodes">
+<div class="nd"><b>Mobile Fortify</b><span>An ICE officer's phone camera, in the street</span><code>no way to decline or consent (DHS assessment, Feb 2025)</code></div>
+<div class="nd"><b>CBP entry-exit cameras</b><span>Every non-citizen entering or leaving by air, land or sea</span><code>final rule in force 26 Dec 2025; citizens may opt out</code></div>
+<div class="nd"><b>Clearview AI</b><span>A photograph an investigator uploads</span><code>ICE sole-source award 5 Sep 2025: $9.225m ceiling, $3.75m obligated</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>image of a face, to the matching software</span></p>
+<section class="ly"><h4>L2 · template</h4>
+<div class="nodes">
+<div class="nd"><b>Face template</b><span>A numeric "facial vector" for the face's geometry; the photograph is not compared directly</span><code>CBP: "a digital representation of a biometric trait"</code></div>
+<div class="nd"><b>1:1 or 1:N</b><span>Verify against one photograph (a gate) or identify against a whole gallery (a search)</span><code>NIST FRVT, Dec 2019: 189 algorithms, 99 developers; most show demographic differentials</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>template compared with every template in the gallery</span></p>
+<section class="ly"><h4>L3 · gallery</h4>
+<div class="nodes">
+<div class="nd"><b>Fortify gallery</b><span>About 200 million images from DHS, State Department, CBP, FBI and state records</span><code>also checks CBP's Traveler Verification Service</code></div>
+<div class="nd"><b>CBP Traveler Verification Service</b><span>A gallery built for each manifest from earlier entry photographs, passports and visas</span><code>key: carrier's APIS passenger manifest → per-trip gallery</code></div>
+<div class="nd"><b>Clearview gallery</b><span>Photographs scraped from public websites, each with a facial vector and its source page</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>ranked candidates; a threshold set by the operator decides what counts as a "match"</span></p>
+<section class="ly"><h4>L4 · result and retention</h4>
+<div class="nodes">
+<div class="nd"><b>Fortify result</b><span>Identity and immigration history; scans kept 15 years, citizens' included</span><code>fields: name · DOB · nationality · A-number · removal order</code></div>
+<div class="nd"><b>CBP retention</b><span>Non-citizens' images kept; citizens' verification photographs deleted</span><code>ATS ≤14 days (2023 notice) · IDENT ≤75 years · citizens ≤12 hours</code></div>
+<div class="nd"><b>Clearview result</b><span>Other pictures of the same person, with links to where they appeared</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>top candidate to a human reviewer</span></p>
+<section class="ly"><h4>L5 · human decision</h4>
+<div class="nodes">
+<div class="nd"><b>Officer acts on the result</b><span>At least eight wrongful arrests after local police face searches; alibi unchecked in six</span><code>Washington Post count, Jan 2025; no public count for Fortify</code></div>
+</div></section>
+<p class="lk pos"><span><i>Possible</i>matches, Clearview results or drone video into ICE's integration platforms; same customer, no feed shown</span></p>
+<section class="ly"><h4>L6 · integration (not shown connected)</h4>
+<div class="nodes">
+<div class="nd pos"><b>ICE's Palantir systems</b><span>Where a name resolves to an address with a "confidence score"</span><code>no document shows a face-match feed</code></div>
+<div class="nd pos"><b>HART</b><span>DHS's planned shared biometric system</span><code>not operational when last assessed (Aug 2024)</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de26_404_fortify] [cite:de26_reason_fortify] [cite:de26_bu_entryexit] [cite:de26_arch_tvs] [cite:de26_bu_clearviewice] [cite:de26_duane_clearview] [cite:de26_nist_frvt] [cite:de26_fortune_wapo] [cite:ow9_fortune_elite] [cite:de28_hart_pia]</p>
+</figure>
 <h3>What goes wrong</h3>
 <p>The documented failures are of two kinds. The first is in the algorithms. In December 2019 the National Institute of Standards and Technology, the federal standards laboratory, tested 189 algorithms from 99 developers and found that "the majority" showed demographic differentials: in one-to-one matching, false positives for Asian and African American faces were often 10 to 100 times higher than for white faces, depending on the algorithm, though the most equitable algorithms were also among the most accurate. [cite:de26_nist_frvt] The second is in the people using them. A Washington Post investigation in January 2025 found at least eight Americans wrongfully arrested after face-recognition searches, seven of them Black, across 15 police departments in 12 states; in six of the eight cases police did not check the person's alibi. [cite:de26_fortune_wapo] No comparable public count exists for Mobile Fortify.</p>
 <h3>Drones and towers</h3>

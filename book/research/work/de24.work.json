@@ -653,5 +653,23 @@
     "label": "Joseph Cox, 404 Media, 'Inside ICE's Tool to Monitor Phones in Entire Neighborhoods', 8 January 2026"
    }
   }
+ },
+ "de24_arch": {
+  "topic": "Technical detail for architecture diagrams: ad-exchange location data",
+  "claims": [
+   {
+    "text": "FTC (Dec 2024): Mobilewalla collected and retained from real-time bidding exchanges the device's mobile advertising identifier (MAID), a timestamp and precise location where location sharing was on; it also bought location data and hashed and unhashed phone numbers from third-party brokers; grouped MAIDs into audience segments (incl. custom segments such as Hispanic churchgoers, LGBTQ+); order Provision II bars collecting or retaining RTB data 'for any other purpose than participating in the auctions'",
+    "strength": "documented",
+    "sources": [
+     "de24_arch_mobilewalla"
+    ]
+   }
+  ],
+  "sources": {
+   "de24_arch_mobilewalla": {
+    "url": "https://www.federalregister.gov/documents/2024/12/06/2024-28745/mobilewalla-inc-analysis-of-proposed-consent-order-to-aid-public-comment",
+    "label": "Federal Register, Mobilewalla, Inc.; Analysis of Proposed Consent Order to Aid Public Comment (FTC, 6 Dec 2024)"
+   }
+  }
  }
 }

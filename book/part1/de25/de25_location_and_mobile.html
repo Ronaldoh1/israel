@@ -61,3 +61,52 @@
 <h3>If it were connected</h3>
 <p>A location trail on its own names a device, not a person. Its power depends on what it is joined to, and the joins are graded here as documented (it exists, with a source), probable (a contract, interface or authority already points to it), possible (technically feasible, no document) or not supported (the record runs against it). The full map of these systems is drawn in [scene:de28_the_ecosystem_map|Part Thirty].</p>
 <p>Joined to identity records: documented. LexisNexis's Accurint service, which ICE uses, includes device-geolocation analysis alongside names, addresses, Social Security numbers and plates, and an ICE notice of 10 August 2026 required LexisNexis to connect by programming interfaces, the standard plugs by which one system queries another, to ICE applications "such as but not limited to" the Palantir platform and PenLink. [cite:de25_bu_lexis] Joined to the case-management and targeting systems that Palantir runs for ICE: possible for Penlink's location data. The same notice names PenLink and the Palantir platform as separate destinations for LexisNexis's identity data, which is not a feed from one to the other, and no document shows Webloc's output flowing into Palantir. [cite:de25_bu_lexis] [cite:de25_404_webloc] Joined to the government's own records of benefits, schooling and work, set out in [scene:de24b_benefits|Part Twenty-Five], so that a phone seen at a protest resolves to a name, an address and an eligibility file: possible; each piece exists, and the join would need only a query across systems an agency already licenses, but no record shows it. Joined to travel and border records ([scene:de25b_who_knows_you_travel|Part Twenty-Seven]), so that a location trail ends at a flagged boarding pass: possible, with no document. What stands in the way is thin: the FTC's orders bind sellers, the courts have not ruled on purchase, and the brake that remains is the agencies' own privacy rules, which their inspector general found they did not follow. [cite:de25_ftc_gravy] [cite:de25_oig_ctd] In April 2026 thirty-three members of Congress asked the Homeland Security department which commercial datasets sit inside its Palantir-built systems; no reply had been reported as of October 2026. [cite:de25_goldman_letter]</p>
+<p>Drawn as a system, the trade has three collection routes that converge on the same buyers, with a different legal gate on each and the joins beyond them still mostly ungraded by any court.</p>
+<figure class="fig-arch">
+<figcaption>Phone location as a system: three collection routes, the legal gate on each, and the joins downstream (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · collection on the phone</h4>
+<div class="nodes">
+<div class="nd"><b>Cell radio → carrier</b><span>Which tower and which side of it the phone used</span><code>cell-site location information (CSLI); a block or two in cities, kilometres in the countryside</code></div>
+<div class="nd"><b>Operating system</b><span>Satellite and Wi-Fi fixes, often to a few metres</span><code>Google Location History: held on Google's servers until 2023, now kept on the device</code></div>
+<div class="nd"><b>App SDKs</b><span>Supplier code inside free apps reports the position back</span><code>key: advertising ID, IDFA (Apple) or AAID (Android)</code></div>
+<div class="nd"><b>Ad exchange auction</b><span>Bid request sent to dozens of bidders in milliseconds; one wins</span><code>bidstream: ad ID plus details "like location or personal characteristics"</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>carriers gave aggregators access to customer locations without consent (FCC fines of nearly $200m, upheld 8–1 on 4 June 2026)</span></p>
+<p class="lk"><span><i>Documented</i>app and auction feeds sold to brokers (FTC orders: X-Mode, 2024; Gravy Analytics and Venntel, 2025)</span></p>
+<p class="lk rep"><span><i>Reported</i>losing bidders keeping auction data against exchange rules (FTC allegation against Mobilewalla, Dec 2024)</span></p>
+<section class="ly"><h4>L2 · holders and aggregators</h4>
+<div class="nodes">
+<div class="nd"><b>Carrier call records</b><span>AT&amp;T records back to 1987, about four billion added a day</span><code>Hemisphere, later Data Analytical Services: an AT&amp;T analyst runs each request</code></div>
+<div class="nd"><b>Google account history</b><span>Every account inside a drawn area and time</span><code>geofence in Chatrie: 150 m radius, one hour</code></div>
+<div class="nd"><b>Location brokers</b><span>X-Mode/Outlogic, Gravy Analytics, Mobilewalla merge feeds into per-device histories</span><code>joined on the advertising ID; X-Mode had no sensitive-place filter until May 2023</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>warrant for one phone's historical tower records (Carpenter, 2018); a geofence request is a search (Chatrie, 29 June 2026)</span></p>
+<p class="lk none"><span><i>Blocked</i>tower dumps, every phone on a tower: no warrant suffices in the Southern District of Mississippi (Reeves, Aug 2026; that district only)</span></p>
+<p class="lk"><span><i>Documented</i>AT&amp;T call-record searches often on an administrative subpoena (funded to 2022; status since unreported)</span></p>
+<p class="lk"><span><i>Documented</i>broker data sold onward to resellers; FTC orders bind sellers and carve out "national security or law enforcement"</span></p>
+<section class="ly"><h4>L3 · products sold to the state</h4>
+<div class="nodes">
+<div class="nd"><b>Venntel</b><span>App-derived movements searched by area or device ID</span><code>CBP, 5 Aug 2020: just under $476,000</code></div>
+<div class="nd"><b>Fog Data Science</b><span>Billions of points from 250m+ devices</span><code>under $10,000 a year; at least 18 agency clients</code></div>
+<div class="nd"><b>Penlink: Webloc, Tangles</b><span>Watch a neighbourhood for phones and follow them over time; open-web and social material</span><code>ICE licences, autumn 2025: $2.3m, no competition</code></div>
+<div class="nd"><b>LexisNexis Accurint</b><span>Names, addresses, SSNs, plates and device-geolocation analysis</span><code>ICE notice, 10 Aug 2026: about $6.7m, sole source</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>agencies query by place or by device, usually without a warrant, on the view that bought data is not a search; no court has ruled</span></p>
+<section class="ly"><h4>L4 · buyers</h4>
+<div class="nodes">
+<div class="nd"><b>CBP · ICE · Secret Service</b><span>Bought telemetry without the required privacy assessments</span><code>DHS OIG, Sep 2023: shared logins, no supervisory review; a CBP employee tracked coworkers</code></div>
+<div class="nd"><b>FBI</b><span>"We do purchase commercially available information" (18 Mar 2026)</span><code>no broker or volume named</code></div>
+<div class="nd"><b>IRS criminal investigators</b><span>A year of Venntel data; no target located</span></div>
+<div class="nd"><b>Local police</b><span>Fog clients, often searching without a warrant</span></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>Probable flow, documented as a requirement: LexisNexis to connect by API to ICE applications "such as but not limited to" the Palantir platform and PenLink</span></p>
+<p class="lk pos"><span><i>Possible</i>Webloc output into Palantir: no document; the notice names PenLink and Palantir as separate destinations, not a feed between them</span></p>
+<section class="ly"><h4>L5 · integration</h4>
+<div class="nodes">
+<div class="nd hub"><b>ICE's Palantir platform</b><span>Case management and targeting</span><code>33 members asked which commercial datasets sit inside, 14 Apr 2026; no reply reported</code></div>
+<div class="nd pos"><b>Benefit, schooling, work and travel records</b><span>A phone at a place resolved to an eligibility file or a boarding pass</span><code>possible; no document shows the join</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de25_crs_chatrie] [cite:de25_wlox_tower] [cite:de25_ftc_rtb] [cite:de25_wh_mobilewalla] [cite:de25_ftc_xmode] [cite:de25_ftc_gravy] [cite:de25_rec_fcc] [cite:de25_wyden_hemisphere] [cite:ow9_cornell_tpd] [cite:de25_vice_venntel] [cite:de25_eff_fog] [cite:de25_ffp_penlink] [cite:de25_404_webloc] [cite:de25_bu_lexis] [cite:de25_oig_ctd] [cite:de25_tc_patel] [cite:de25_goldman_letter]</p>
+</figure>

@@ -34,6 +34,48 @@
 <p>The platform does not collect; it joins what its customer loads, and Palantir describes itself as a "data processor" whose customers control their own data. [cite:de24_guardian_icm] [cite:de24_npr_medicaid_pal] Whether that is a limit or only a description is argued in [scene:de27_capability_not_intent|the Palantir part]. The anonymity the commercial trade relies on does not survive a well-stocked identity database, and agencies hold such databases already.</p>
 <h3>If it were connected</h3>
 <p>The joins this section turns on, graded as in [scene:de24_data_and_fusion|the first section]. Phone-location trails to ICE: documented. ICE bought licences through Penlink for Tangles and Webloc, tools that can watch a city block for phones and follow a device home, and its own legal analysis says the data "can be queried without a warrant." [cite:de24_404_webloc] Those trails to the identity databases: probable, since the LexisNexis work statement names Penlink as one of the systems its data must reach. Those trails to the Palantir platform: possible; the same statement lists Penlink and "the Palantir platform" as separate destinations, and no document shows a Penlink-to-Palantir feed. [cite:de24_bu_lexis] Seized-phone contents, student-visa records and airline passenger data to ICE's Palantir case system: documented in Homeland Security Investigations records from 2014 to 2022, which describe agents importing Cellebrite phone extractions and searching the student-visa database SEVIS and the airline-manifest system APIS. [cite:de24_guardian_icm] What travel records hold, and who can stop a person travelling, is in [scene:de25b_who_knows_you_travel|the section on travel records]. Together, these joins would let an agency start from an unnamed dot on a map and end with a name, a home, a car and a file, which is what the flow above describes. The steps in the way are a warrant rule for bought data, which does not exist, and the court orders and contract terms that limit particular sources, which do. The whole system, layer by layer, is drawn in [scene:de28_the_ecosystem_map|the ecosystem map].</p>
+<p>App code is not the only route into the brokers' files. The Federal Trade Commission found in December 2024 that the broker Mobilewalla had kept the advertising number, time and precise location carried in the requests that advertising exchanges send out when an ad is auctioned, and ordered it to use such data only for the auction. [cite:de24_arch_mobilewalla]</p>
+<figure class="fig-arch">
+<figcaption>From advertising number to case file: the joins in this section, each graded (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · phone and ad exchange</h4>
+<div class="nodes">
+<div class="nd"><b>App with an SDK</b><span>Third-party code inherits the app's location permission</span><code>e.g. X-Mode code in Muslim Pro (96m+ downloads)</code></div>
+<div class="nd"><b>Ad-auction (RTB) bid request</b><span>Sent to bidders whenever an ad slot is auctioned</span><code>MAID (mobile advertising ID) · timestamp · precise location if sharing is on</code></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>an app's precise locations sent through its SDK to the broker X-Mode (Motherboard, 2020–21)</span></p>
+<p class="lk"><span><i>Documented</i>bid-request data kept and sold by Mobilewalla, which also bought hashed and unhashed phone numbers (FTC, 2024)</span></p>
+<p class="lk none"><span><i>Blocked</i>Apple and Google banned X-Mode's code, Dec 2020; FTC order limits Mobilewalla's bid data to the auction, Dec 2024</span></p>
+<section class="ly"><h4>L2 · location brokers and tools</h4>
+<div class="nodes">
+<div class="nd"><b>X-Mode</b><span>Sold location data to defence contractors</span></div>
+<div class="nd"><b>Mobilewalla</b><span>Grouped advertising IDs into "audience segments"</span></div>
+<div class="nd"><b>Penlink: Tangles · Webloc</b><span>Watch a city block for phones; follow a device home</span><code>ICE legal analysis: "can be queried without a warrant"</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>ICE licenses Tangles and Webloc through Penlink</span></p>
+<p class="lk rep"><span><i>Reported</i>US Special Operations Command bought access to products built on commercial phone-location data</span></p>
+<section class="ly"><h4>L3 · identity resolution</h4>
+<p>A trail's night-time resting point gives an address; the address is a search key.</p>
+<div class="nodes">
+<div class="nd"><b>Accurint · CLEAR</b><span>Return names, SSNs and vehicles for an address</span><code>Accurint keys: name · address · SSN · plate</code></div>
+<div class="nd"><b>SEVIS · APIS · Cellebrite</b><span>Student-visa records (4.9m), airline manifests, seized-phone extractions</span></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>Probable: Penlink trails to the identity databases (Penlink is named in the LexisNexis work statement as a system its data must reach)</span></p>
+<p class="lk rep"><span><i>Reported</i>Probable: Accurint to "the Palantir platform" by API, required by the 2026 work statement</span></p>
+<p class="lk"><span><i>Documented</i>SEVIS and APIS searched, Cellebrite extractions imported, through ICE's Palantir case system (2014–22 records)</span></p>
+<p class="lk pos"><span><i>Possible</i>Penlink trails to the Palantir platform: listed as a separate destination; no feed shown</span></p>
+<section class="ly"><h4>L4 · integration</h4>
+<div class="nodes">
+<div class="nd hub"><b>Palantir ICM · ELITE</b><span>Joins what the customer loads; Palantir calls itself a "data processor"</span><code>ELITE: address with a "confidence score" (reported Jan 2026)</code></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>Probable: the whole chain run for one target; each step documented as a capability, no case documented end to end</span></p>
+<section class="ly"><h4>Output · a named person</h4>
+<div class="nodes">
+<div class="nd pos"><b>Name, home, car and file from an unnamed dot</b><span>No case published</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de24_vice_xmode] [cite:de24_arch_mobilewalla] [cite:de24_404_webloc] [cite:de24_bu_lexis] [cite:de24_lawnext_tr] [cite:de24_guardian_icm] [cite:ow9_fortune_elite]</p>
+</figure>
 <h3>The worst-case reading, tested</h3>
 <p>Documented: that records on most American adults can be bought or borrowed, and that immigration enforcement buys them. ICE paid for Accurint from 2021 and ran more than 1.2 million searches in seven months; it bought CLEAR, which carried utility records on more than 170 million people until October 2021 and was renewed without competition in 2026; and in 2026 it required its LexisNexis bridge to connect directly to "the Palantir platform." [cite:de24_bu_lexis] [cite:de24_globe_utility] [cite:de24_lawnext_tr] Documented, too, that the government's own files were opened to enforcement from 2025: Social Security data inside SAVE, tax addresses and Medicaid contact data. [cite:de24_npr_save] [cite:us10_cpa_irs_sep] [cite:de24_wt_medicaid] And documented that "anonymous" commercial data can be named by anyone with money and a second database. [cite:de24_nyt_2019] [cite:de24_ap_pillar]</p>
 <p>Probable: that the pieces described in the flow above can be joined for an individual target, since each is in place and the software is built to join. What would settle it is a record of one case run that way. None has been published. [cite:ow9_fortune_elite] Probable, also, that reuse of civil records will continue to widen while the courts are divided: one appeals panel declined to stop the IRS sharing in February 2026 and another upheld a block in September. [cite:us10_abc_irs_feb] [cite:us10_cpa_irs_sep]</p>

@@ -721,6 +721,39 @@
      "label": "Axios, 'Scoop: State Dept. to use AI to revoke visas of foreign students who appear \"pro-Hamas\"', 6 March 2025"
     }
    ]
+  },
+  {
+   "id": "de26_arch",
+   "stage": "de26",
+   "topic": "Architecture diagrams: CBP Traveler Verification Service gallery and templates; bank SAR rule",
+   "claims": [
+    {
+     "text": "CBP notice (Feb 2023): on receiving a carrier's manifest CBP 'will build a gallery of photographs for the individuals identified on the manifest' from photos captured at previous entry inspections and from US passports and visas; a 'biometric template is a digital representation of a biometric trait'; photos of noncitizens and no-matches kept up to 14 days in the Automated Targeting System (ATS); DHS may keep in-scope noncitizens' facial images up to 75 years in IDENT; US citizens' photos deleted on confirmation of citizenship",
+     "strength": "primary",
+     "sources": [
+      "de26_arch_tvs"
+     ]
+    },
+    {
+     "text": "31 CFR 1020.320: banks report suspicious transactions involving or aggregating at least $5,000; SAR due no later than 30 calendar days after initial detection (extendable to 60 if no suspect identified); a bank may not disclose a SAR or information revealing its existence, with exceptions incl. FinCEN and law enforcement",
+     "strength": "primary",
+     "sources": [
+      "de26_arch_sar"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de26_arch_tvs",
+     "url": "https://public-inspection.federalregister.gov/2023-03285.pdf",
+     "label": "CBP, Federal Register notice 2023-03285, Facial Comparison for APIS Compliance Test (16 Feb 2023)"
+    },
+    {
+     "key": "de26_arch_sar",
+     "url": "https://www.law.cornell.edu/cfr/text/31/1020.320",
+     "label": "31 CFR 1020.320, Reports by banks of suspicious transactions (Cornell LII)"
+    }
+   ]
   }
  ]
 }

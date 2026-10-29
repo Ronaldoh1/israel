@@ -34,3 +34,40 @@
 <p>Documented: the federal rules on how AI is built were withdrawn and replaced with a procurement test on content; frontier models from four companies sit inside defence and civilian agencies at prices of a dollar or less; and the one vendor that held out for written limits on domestic surveillance was excluded, an exclusion one court has set aside and another has upheld. Reported, from officials speaking to Axios in March 2025 and not confirmed by a published document: a State Department effort called "Catch and Revoke" that would use AI-assisted reviews of tens of thousands of student-visa holders' social-media accounts; the department did not comment directly. [cite:de26_audit_axios_catchrevoke] [cite:de26_audit_catchrevoke] The published social-media vetting rules are in [scene:de28_brokers_and_doctrine|Part Thirty], and ICE's address-scoring tool in [scene:de28_ice_contracts|its first section]. Not documented: any of these models being used for mass surveillance of Americans. The Pentagon has said it does not seek that and that it is illegal; the record cannot show a negative, and the contract terms that would settle the question are not public. The capability a frontier model adds, reading everything at once, is real; its use against domestic critics would need its own document, and none has surfaced. [cite:de26_wt_anthropic] [cite:de26_eng_openai]</p>
 <h3>If it were connected</h3>
 <p>A model placed inside an integration platform is the clearest join in this layer. Documented: since November 2024 Anthropic's models have been offered inside Palantir's AI platform at the Secret level, so a language model can sit on top of whatever data a Palantir customer has loaded; and frontier models from four companies are installed across defence and civilian agencies. [cite:de26_reg_claudepal] [cite:de26_ds_genaimil] Reported: AI-assisted reading of visa holders' posts. [cite:de26_audit_axios_catchrevoke] Possible, with no document: a model running over ICE's joined records, the people-search profiles, Medicaid addresses and phone extractions that [scene:de28_the_ecosystem_map|the ecosystem map] shows reaching its platforms, to rank people for arrest or to read everything a flagged person has posted. That would need only a deployment inside the agency's own system, not a new law or a new contract type; what stands in the way is contract terms that are not public and, for the one vendor that wrote limits down, an exclusion still in court. Not supported: any model in use for mass surveillance of Americans; the Pentagon says it seeks no such use, and no record shows one. [cite:de26_wt_anthropic]</p>
+<figure class="fig-arch">
+<figcaption>Where frontier models sit in federal systems, with each join graded (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · data the customer loads</h4>
+<div class="nodes">
+<div class="nd"><b>Defence and intelligence data</b><span>Classified up to Secret</span><code>IL6</code></div>
+<div class="nd"><b>Sensitive unclassified work</b><span>Pentagon personnel's work on GenAI.mil</span><code>IL5</code></div>
+<div class="nd"><b>Visa holders' social-media posts</b><span>"Catch and Revoke" review</span><code>reported by officials to Axios, Mar 2025; no published document</code></div>
+<div class="nd pos"><b>ICE's joined records</b><span>People-search profiles, Medicaid addresses, phone extractions</span><code>on ICE's Palantir platforms; no model shown over them</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>data inside an accredited platform is open to the model the customer deploys there</span></p>
+<p class="lk rep"><span><i>Reported</i>AI-assisted review of tens of thousands of student-visa holders' accounts</span></p>
+<p class="lk pos"><span><i>Possible</i>a model run over ICE's joined records to rank people for arrest or read a flagged person's posts</span></p>
+<section class="ly"><h4>L2 · platform and accreditation</h4>
+<div class="nodes">
+<div class="nd hub"><b>Palantir AIP on AWS</b><span>Claude inside Palantir's AI platform, over whatever the customer has loaded</span><code>IL6; announced 7 Nov 2024</code></div>
+<div class="nd"><b>GenAI.mil</b><span>Pentagon chat platform, planned for 3m+ personnel</span><code>Gemini from Dec 2025; ChatGPT and Grok (via "Starshield AI") at IL5 from 31 Aug 2026</code></div>
+<div class="nd"><b>OpenAI classified deployment</b><span>Models on a classified Pentagon network</span><code>cloud-only; announced 27–28 Feb 2026; terms unpublished</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>prompts and records in, generated text and actions out</span></p>
+<section class="ly"><h4>L3 · models and contract terms</h4>
+<p>Procurement condition since 23 Jul 2025: "truth-seeking", ideologically neutral models</p>
+<div class="nodes">
+<div class="nd"><b>Anthropic Claude</b><span>Designated a supply-chain risk, 3 Mar 2026</span><code>§3252 designation set aside (N.D. Cal., 27 Aug) · §4713 upheld (D.C. Cir., 25 Sep) · en banc sought</code></div>
+<div class="nd"><b>OpenAI</b><span>Stated bans on domestic mass surveillance</span><code>CDAO ≤$200m · OneGov $1 per agency</code></div>
+<div class="nd"><b>Google Gemini</b><span>First model on GenAI.mil</span><code>CDAO ≤$200m</code></div>
+<div class="nd"><b>xAI Grok</b><span>Grok for Government, 14 Jul 2025</span><code>CDAO ≤$200m · OneGov 42 cents per agency</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>summaries, translations, sorted messages and "agentic AI workflows"</span></p>
+<section class="ly"><h4>Output · use</h4>
+<div class="nodes">
+<div class="nd"><b>Analysts and staff</b><span>Reading, drafting and triage inside defence and civilian agencies</span></div>
+<div class="nd pos"><b>Mass surveillance of Americans</b><span>No record; the Pentagon says it seeks no such use and that it is illegal</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de26_reg_claudepal] [cite:de26_ds_genaimil] [cite:de26_audit_axios_catchrevoke] [cite:de26_audit_catchrevoke] [cite:de28_brennan_consol] [cite:de26_eng_openai] [cite:de26_nbc_woke] [cite:de26_d1_anthropic] [cite:de26_taft_dccir] [cite:de26_ds_enbanc] [cite:de26_cdao] [cite:de26_fs_onegov] [cite:de26_eng_grokgov] [cite:de26_wt_anthropic]</p>
+</figure>

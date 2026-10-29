@@ -6,6 +6,42 @@
 <p>The concentration cuts both ways. In September 2025 Microsoft announced that it would "cease and disable specified" subscriptions of Israel's Ministry of Defence after reporting that intercepted Palestinian phone calls were stored on its Azure cloud, stating that it does not provide technology to facilitate mass surveillance of civilians; the episode is set out in [scene:ow9_israel|The One-Way Mirror]. [cite:ow4_tc_msft] One provider's decision changed what a government's intelligence service could do. The same lever, held by a different company or pressed by a different government, could work the other way.</p>
 <h3>Oracle and Palantir: hosting, not access</h3>
 <p>In April 2024 Oracle and Palantir announced a partnership under which Palantir would move workloads for its Foundry platform to Oracle's cloud and make its Gotham and AI platforms deployable across Oracle's infrastructure, including "air-gapped regions for defense and intelligence customers," meaning data centres physically cut off from the public internet. Even so, the reporting noted, it was "up to the customer which cloud to deploy on," and some Palantir systems, such as its contract with England's health service, run on Amazon and Microsoft. [cite:de26_reg_oracle] The partnership puts Palantir's software on Oracle's machines. It does not give Oracle the data its government customers load into Palantir, and no document shows that it does; Palantir's own architecture and its claim that customers control their data are tested in [scene:de27_capability_not_intent|Part Twenty-Nine].</p>
+<p>Drawn as a stack, the layers show where each kind of power sits: the agency decides what goes in, the platform organises it, an authorisation gate decides which services may hold it, and the host owns the machines.</p>
+<figure class="fig-arch">
+<figcaption>The government cloud stack: who holds what, layer by layer (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · customer agency</h4>
+<p>The data controller: decides what goes in and who may look</p>
+<div class="nodes">
+<div class="nd"><b>CIA and 16 other agencies</b><span>Intelligence data</span><code>C2E customer since Nov 2020</code></div>
+<div class="nd"><b>Defense Department</b><span>Data at every classification level</span><code>JWCC customer since Dec 2022</code></div>
+<div class="nd"><b>ICE</b><span>Enforcement records and purchased data</span><code>Palantir customer since 2014</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>agency loads its own and bought records into a licensed platform and chooses the cloud it runs on</span></p>
+<section class="ly"><h4>L2 · software platform</h4>
+<p>The data processor: joins, searches and shows the customer's data</p>
+<div class="nodes">
+<div class="nd hub"><b>Palantir Foundry, Gotham, AIP</b><span>Foundry workloads moved to Oracle; Gotham and AIP deployable across Oracle's cloud</span><code>Oracle–Palantir, Apr 2024; incl. air-gapped regions</code></div>
+<div class="nd"><b>Same software, other hosts</b><span>England's health-service platform runs on Amazon and Microsoft</span><code>"up to the customer which cloud to deploy on"</code></div>
+<div class="nd"><b>Side channel: Teams chat</b><span>Carried a Medicaid file from ICE to Palantir, 7 Jan 2026, outside a court's limits</span><code>not a designed interface; Palantir purged its copy on instruction, ICE copies found later</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>workloads may run only on services authorised for the data's sensitivity</span></p>
+<section class="ly"><h4>L3 · authorisation gate</h4>
+<div class="nodes">
+<div class="nd"><b>FedRAMP (GSA)</b><span>Security review before any agency uses a commercial cloud service</span><code>20x since Mar 2025: automated Key Security Indicators; phase 1 without agency sponsor; phase 3 as of Oct 2026; High pilot 2027</code></div>
+<div class="nd"><b>Pentagon Impact Levels</b><span>Grades of data a cloud may hold</span><code>IL5: sensitive unclassified · IL6: classified up to Secret</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>authorised workloads run on contracted machines and storage</span></p>
+<section class="ly"><h4>L4 · cloud host</h4>
+<p>Owns the machines and the off switch; hosting is not access, and no record shows a host reading a government customer's data</p>
+<div class="nodes">
+<div class="nd"><b>C2E (CIA, Nov 2020)</b><span>AWS, Microsoft, Google, Oracle, IBM</span><code>"tens of billions" over ~15 years; AWS at the CIA since 2013</code></div>
+<div class="nd"><b>JWCC (Pentagon, 7 Dec 2022)</b><span>AWS, Google, Microsoft, Oracle</span><code>$9bn ceiling; replaced single-vendor JEDI (up to $10bn, cancelled 2021)</code></div>
+<div class="nd"><b>Microsoft Azure</b><span>Specified Israeli defence subscriptions ceased and disabled, Sep 2025</span><code>Microsoft: its review did not access customer content</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de26_dcd_c2e] [cite:de26_ng_jwcc] [cite:ow9_mj_icm2019] [cite:de26_reg_oracle] [cite:de27_pal_notdata] [cite:de27_npr_medicaid] [cite:de26_fedramp_20x] [cite:de26_ds_genaimil] [cite:de26_reg_claudepal] [cite:ow4_tc_msft]</p>
+</figure>
 <figure class="fig-compare">
 <figcaption>Four layers, four different powers</figcaption>
 <table><thead><tr><th></th><th>What it controls</th><th>Documented example</th></tr></thead><tbody>

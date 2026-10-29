@@ -57,3 +57,40 @@
 
 <h3>If it were connected</h3>
 <p>A phone tool yields contents: contacts, messages, photographs, the names and numbers of everyone a person deals with. Joined to a platform that links records, those contents become a map of a person's associates. Joined to extraction: documented. Internal ICE documents from 2014 to 2022, obtained by Just Futures Law and reported by the Guardian, show that agents could import phone extractions made with Cellebrite into Palantir's investigative tools and search the names and numbers found on them against the student-visa database SEVIS and airline passenger data. [cite:de25_gdn_palantir] Joined to spyware: possible, with no document showing a feed from Paragon's tool to Palantir's systems; members of Congress asked in April 2026 which datasets sit in DHS's Palantir-built systems and named Paragon and cell-site simulators among the tools of concern, and the department gave no public answer. [cite:de25_goldman_letter] [cite:de25_npr_paragon] Joined to the location purchases of [scene:de25_location_and_mobile|the previous section], so that a device seen in a neighbourhood is tracked, located with a simulator and then searched: possible, since ICE holds all three kinds of tool, but no document shows them used in sequence against one person. Joined to the government's records on work and security vetting in [scene:de24b_work_and_vetting|Part Twenty-Five], so that a seized phone's contents feed a clearance or employment decision: possible, with no document. What stands in the way of a wider join is mostly procedure: a warrant or border authority for each search, the spyware order's certifications, and the inspector general's findings that ICE did not always follow the simulator rules it already had. [cite:de25_doj_css] [cite:ow10_eo14093] [cite:de25_oig_css] The full set of joins is mapped in [scene:de28_the_ecosystem_map|Part Thirty].</p>
+<p>The phone tools differ in how they reach a handset and in the rules on what they may take, but their output meets at the same point: the investigative platform into which extractions can be loaded and searched.</p>
+<figure class="fig-arch">
+<figcaption>Federal phone tools as a system: access method, what each yields, and where the output is documented to go (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · access to the handset</h4>
+<div class="nodes">
+<div class="nd"><b>Paragon Graphite</b><span>Remote, zero-click; reads encrypted apps on the phone itself</span><code>ICE contract 27 Sep 2024, $2m; closed out 20 Jan 2026; certified under EO 14093</code></div>
+<div class="nd"><b>Cellebrite</b><span>Unlocks and copies a phone agents hold</span><code>logical, file system, physical and password extraction; forecast up to $100m over 5 years (May 2026)</code></div>
+<div class="nd"><b>GrayKey (Magnet Forensics)</b><span>Gets past the lock screen of a seized phone</span><code>HSI licences $3m, Sep 2025 (most likely GrayKey); $5m, 2024</code></div>
+<div class="nd"><b>CBP border search</b><span>55,318 devices in FY2025, 50,922 of them "basic" manual searches</span><code>13,590 belonged to US citizens; no suspicion needed for a basic search</code></div>
+<div class="nd"><b>Cell-site simulator</b><span>Fake tower; nearby phones connect and give up identifiers and location</span><code>TOSV vehicles: $818,000 (Sep 2024), $825,000 (May 2025)</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>spyware, extraction and border search read contents after decryption; end-to-end encryption protects the message in transit, not on the handset</span></p>
+<p class="lk none"><span><i>Blocked</i>content by simulator in criminal cases; DOJ policy (2015) also requires a warrant, with exigent and exceptional exceptions, and deletion once the device is located, at least daily. ICE did not always adhere (DHS inspector general, 2023)</span></p>
+<section class="ly"><h4>L2 · what comes out</h4>
+<div class="nodes">
+<div class="nd"><b>Contents</b><span>Messages, contacts, photographs, notes, passwords</span><code>from Graphite, Cellebrite, GrayKey, border search</code></div>
+<div class="nd"><b>Identity and position</b><span>Which phone is where</span><code>from the simulator</code></div>
+<div class="nd"><b>Carrier or app metadata</b><span>Who talked to whom and when</span><code>all a warrant on an end-to-end service yields</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>Cellebrite extractions imported into Palantir tools; names and numbers on them searched against SEVIS and APIS (ICE and HSI records, 2014–22)</span></p>
+<p class="lk pos"><span><i>Possible</i>Graphite output into Palantir: no document; members of Congress asked in April 2026 and got no public answer</span></p>
+<p class="lk pos"><span><i>Possible</i>bought location, then a simulator, then seizure and extraction, used in sequence on one person: ICE holds all three, no document shows it</span></p>
+<section class="ly"><h4>L3 · integration</h4>
+<div class="nodes">
+<div class="nd hub"><b>Palantir investigative tools (ICE/HSI)</b><span>Extractions loaded and searched across agency records</span><code>sources named in the records include SEVIS (4.9m records), APIS, NCIC</code></div>
+<div class="nd pos"><b>Work and security-vetting records</b><span>Seized-phone contents feeding a clearance or job decision</span><code>possible; no document</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>stated use: Graphite against foreign terrorist organisations, "particularly" fentanyl traffickers (acting director, 1 Apr 2026)</span></p>
+<section class="ly"><h4>Output · investigations</h4>
+<div class="nodes">
+<div class="nd"><b>Criminal and immigration cases</b><span>HSI investigations; ICE declined to say whether extraction is used on arrested migrants' phones</span></div>
+<div class="nd pos"><b>US journalists, activists, critics</b><span>No document of use in the United States</span><code>documented abuse abroad: Italy (Graphite), Serbia (Cellebrite-linked)</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:ow10_poulson_ice] [cite:de25_npr_paragon] [cite:ow10_eo14093] [cite:ow10_tc_lyons] [cite:ow10_fs_cb] [cite:de25_fs_forecast] [cite:de25_tc_graykey] [cite:de25_dn_cbp] [cite:de25_iptp_cbp] [cite:de25_tc_tosv] [cite:de25_doj_css] [cite:de25_oig_css] [cite:ow6_guardian_paragon] [cite:de25_gdn_palantir] [cite:de25_goldman_letter] [cite:de25_tc_italy] [cite:de25_ci_serbia]</p>
+</figure>

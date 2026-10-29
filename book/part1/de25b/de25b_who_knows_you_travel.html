@@ -43,6 +43,66 @@
 <p class="fig-src">Sources: [cite:de25b_ep_pnr] [cite:de25b_fr_secureflight] [cite:de25b_ipt_tsaice] [cite:de25b_siw_tsaface] [cite:de25b_fr_apis] [cite:de25b_mit_entryexit] [cite:de25b_pia_ats]</p>
 </figure>
 
+<p>Behind the passenger's sequence sits a stack of systems: airline feeds into two matching engines, an archive, and the decisions at the airport, with the 2025 branch to ICE running out of the TSA side.</p>
+<figure class="fig-arch">
+<figcaption>The air-travel data stack: feeds, matching, retention and decisions, every link graded (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · collection</h4>
+<div class="nodes">
+<div class="nd"><b>Booking record (PNR)</b><span>Itinerary, contacts, payment card, seat, bags, travel agent</span><code>record locator; EU terms: 5 years active (masked after 6 months), then up to 10 dormant</code></div>
+<div class="nd"><b>Secure Flight data (SFPD)</b><span>Full name, date of birth, gender; redress or Known Traveler number; passport if available</span><code>sent by the airline through one DHS portal, about 72 hours before departure</code></div>
+<div class="nd"><b>APIS manifest</b><span>Passport page, every international flight in or out</span><code>batch 30 minutes before doors close, or passenger by passenger up to closing</code></div>
+<div class="nd"><b>Visa, ESTA, SEVIS, arrival records</b><span>Government's own applications and entries</span></div>
+<div class="nd"><b>CBP and TSA cameras</b><span>Exit and entry photos (non-citizens required from 26 Dec 2025); checkpoint match to ID (declinable)</span><code>TSA deletes after the match, except Touchless ID (24 h) and testing</code></div>
+<div class="nd"><b>CLEAR (Clear Secure, private)</b><span>Faces, irises, fingerprints, ID photo</span><code>CLEAR+ data shared "with the Transportation Security Administration"</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>SFPD to TSA; APIS and PNR to CBP; SFPD copied in real time into CBP's targeting system for overflights and US carriers' point-to-point international flights</span></p>
+<section class="ly"><h4>L2 · matching</h4>
+<div class="nodes">
+<div class="nd"><b>TSA Secure Flight</b><span>Matches the No Fly and Selectee lists; larger lists "when security conditions warrant"</span><code>no risk scores, no commercial data (2007 PIA)</code></div>
+<div class="nd"><b>Terrorist Screening Dataset</b><span>About 2m identities at end 2023; No Fly and Selectee are subsets</span><code>No Fly count not public</code></div>
+<div class="nd hub"><b>CBP Automated Targeting System (ATS-P / UPAX)</b><span>"Risk-based rules" against law-enforcement and intelligence records</span><code>official record for PNR; ingests APIS, ESTA, visa, TECS, I-94, SEVIS, some SFPD</code></div>
+<div class="nd"><b>TSA Quiet Skies</b><span>Algorithm on travel patterns; air marshals sent to watch unlisted travellers</span><code>about $200m a year; ended 5 June 2025</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>every record kept on a clock set by its system's rule</span></p>
+<section class="ly"><h4>L3 · retention</h4>
+<div class="nodes">
+<div class="nd"><b>Secure Flight records</b><span>Kept by match status</span><code>no match 7 days; possible match 7 years; confirmed match 99 years</code></div>
+<div class="nd"><b>ATS archive</b><span>Keeps what it ingests on its own clock, even where the source would delete sooner</span><code>15 years</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>boarding-pass result and APIS response decide whether a pass can be printed</span></p>
+<p class="lk"><span><i>Documented</i>TSA → ICE: passenger names several times a week, matched to final removal orders; MOA of May 2025 cites the Secure Flight rule; shared fields redacted</span></p>
+<section class="ly"><h4>L4 · decision at the airport and after</h4>
+<div class="nodes">
+<div class="nd"><b>Boarding-pass printing result</b><span>Unrestricted; marked for extra screening (Selectee); or inhibited, no pass until resolved</span></div>
+<div class="nd"><b>APIS "not-cleared"</b><span>No boarding pass</span></div>
+<div class="nd"><b>ICE repository → arrest</b><span>31,000+ travellers' records, Jan 2025–Feb 2026; 800+ arrests</span><code>stored in ICE's own repository</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>APIS and SEVIS searched through ICE's Palantir case system (HSI records, 2014–22), not shown as a standing feed</span></p>
+<p class="lk pos"><span><i>Possible</i>ICE's Secure Flight holdings onward into Palantir; checkpoint and gate faces into HART; CLEAR biometrics to ICE, only by the legal process its notice allows</span></p>
+<section class="ly"><h4>L5 · enforcement integration</h4>
+<div class="nodes">
+<div class="nd hub"><b>ICE's Palantir case system</b><span>Investigative searching across agency records</span></div>
+<div class="nd pos"><b>HART (DHS biometrics)</b><span>Built to share across agencies and foreign partners</span><code>not operational, Aug 2024</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de25b_ep_pnr] [cite:de25b_fr_secureflight] [cite:de25b_pia_secureflight] [cite:de25b_fr_apis] [cite:de25b_pia_ats] [cite:de25b_mit_entryexit] [cite:de25b_siw_tsaface] [cite:de25b_clear_privacy] [cite:de25b_cbs_watchlist] [cite:de25b_cnn_quietskies] [cite:de25b_wt_quietskies] [cite:de25b_ipt_tsaice] [cite:de25b_ao_moa] [cite:de25b_reuters_tsaice] [cite:de24_guardian_icm] [cite:de28_hart_pia]</p>
+</figure>
+
 <h3>If it were connected</h3>
 <p>Graded on the scale used across Book Five, for joins only. Secure Flight names to ICE: documented, by the May 2025 agreement and the Reuters count; onward into Palantir's systems: possible, since no record shows that path. [cite:de25b_ao_moa] [cite:de25b_reuters_tsaice] Student-visa and airline-manifest records searched through ICE's Palantir case system: documented in Homeland Security Investigations records from 2014 to 2022. [cite:de24_guardian_icm] The faces gathered at checkpoints and gates joined to DHS's next biometric system, HART, which is designed to be shared across agencies and foreign partners: possible, since HART was not yet operational in August 2024. [cite:de28_hart_pia] The airport company CLEAR's irises and faces to immigration enforcement: possible only through the legal process its notice allows, with no document showing it; it is a different company from Thomson Reuters' CLEAR people-search database, which ICE does buy. [cite:de25b_clear_privacy] Together these would let an agency know, from a name, when and where a person has flown; what stands in the way is mostly the purpose language of each system's rule, and the 2025 agreement put Secure Flight to a use its own rule said it was not meant for. The full set of joins is drawn in [scene:de28_the_ecosystem_map|the ecosystem map].</p>
+<p>Any such join runs on a shared identifier. The travel systems hold these, by their own rules and notices:</p>
+<figure class="fig-compare" data-kind="Join keys">
+<figcaption>Join keys: which identifiers each travel system documents holding (as of October 2026)</figcaption>
+<table><thead><tr><th></th><th>Name and date of birth</th><th>Passport data</th><th>Redress or Known Traveler number</th><th>Contacts and payment card</th><th>Face image</th><th>Iris or fingerprints</th></tr></thead><tbody>
+<tr><th>Secure Flight (TSA)</th><td class="yes">Yes</td><td class="yes">If available</td><td class="yes">Yes</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><th>APIS manifest (CBP)</th><td class="yes">Passport page</td><td class="yes">Yes</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><th>Booking record (PNR)</th><td class="yes">Yes</td><td>—</td><td>—</td><td class="yes">Yes</td><td>—</td><td>—</td></tr>
+<tr><th>Automated Targeting System (CBP)</th><td class="yes">Yes</td><td class="yes">Via APIS</td><td class="yes">Via SFPD, some flights</td><td class="yes">Via PNR</td><td class="yes">Photo galleries</td><td>—</td></tr>
+<tr><th>TSA checkpoint camera</th><td>—</td><td>—</td><td>—</td><td>—</td><td class="yes">Live photo vs ID photo</td><td>—</td></tr>
+<tr><th>CLEAR (private)</th><td class="yes">ID document</td><td>—</td><td>—</td><td>—</td><td class="yes">Yes</td><td class="yes">Both</td></tr>
+<tr><th>ICE repository (from TSA)</th><td class="yes">Names</td><td colspan="5">Other fields redacted in the released agreement</td></tr>
+</tbody></table>
+<p class="fig-src">Sources: [cite:de25b_fr_secureflight] [cite:de25b_pia_secureflight] [cite:de25b_fr_apis] [cite:de25b_ep_pnr] [cite:de25b_pia_ats] [cite:de25b_siw_tsaface] [cite:de25b_clear_privacy] [cite:de25b_ao_moa] [cite:de25b_ipt_tsaice]</p>
+</figure>
 <p>Knowing that someone travels is one power; stopping them is another. [scene:de25b_who_can_stop_you|The next section] sets out who in the United States can already keep a person on the ground or inside the country, how other states have done it, and what would have to change for these records to be used that way.</p>

@@ -10,6 +10,35 @@
 <h3>Debts collected from payments</h3>
 <p>The Treasury Offset Program (TOP) works in the other direction: it takes money owed to the government out of money the government pays. An agency owed a federal debt more than 120 days overdue must refer it; before referral it must send the debtor a letter at least 60 days in advance offering a chance to pay, agree a plan or dispute the debt. When a federal payment is about to go out, the payee's name and taxpayer number are compared with the debtor list, and the payment is cut. [cite:de24b_fs_top] A tax refund can be taken in full; Social Security retirement benefits and federal salaries up to 15 per cent, though disability and Supplemental Security Income payments are excluded. Unpaid child support and some state debts are collected the same way. In the year to September 2020 TOP and the IRS's parallel levy programme collected $10.4 billion. [cite:de24b_crs_top] The largest group exposed in 2026 was student borrowers: 9.3 million were in default on federal loans by 30 June 2026, owing $234 billion. [cite:us17_ci_defaults] The Education Department paused offsets and wage garnishment on 16 January 2026, and as of 19 October 2026 planned to resume garnishment that autumn, with no date set. [cite:ad7_natp_pause] [cite:ad7_ci_garnish] The debts at issue were real and the process had notice; what the machinery shows is how one flag in one database reaches every federal payment to a person.</p>
 
+<figure class="fig-arch">
+<figcaption>Treasury's payment checks: Do Not Pay and the Offset Program (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · agency records and debts</h4>
+<div class="nodes">
+<div class="nd"><b>Agency records notices</b><span>Each agency's published Privacy Act notice</span><code>EO 14249: add disclosure to Treasury within 90 days; health records excluded</code></div>
+<div class="nd"><b>Creditor agencies</b><span>Federal debts more than 120 days overdue</span><code>letter to the debtor at least 60 days before referral</code></div>
+<div class="nd"><b>Child support · some state debts</b><span>Collected the same way</span></div>
+<div class="nd"><b>Education Department</b><span>Defaulted student loans</span><code>9.3m borrowers, $234bn (30 Jun 2026); offsets paused 16 Jan 2026</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>agency data disclosed to Treasury under the order and OMB memo M-25-32<code>four-year waiver of matching agreements; written agreement, 30-day public notice, independent check, notice and right to contest</code></span></p>
+<p class="lk"><span><i>Documented</i>debts referred to the offset debtor list</span></p>
+<section class="ly"><h4>L2 · Bureau of the Fiscal Service</h4>
+<div class="nodes">
+<div class="nd"><b>Do Not Pay</b><span>Pre-certification check before payment, including whether the payee is dead</span><code>31 USC 3351</code></div>
+<div class="nd"><b>Treasury Offset Program</b><span>Debtor list</span><code>match key: payee name + taxpayer ID number</code></div>
+<div class="nd hub"><b>Payment disbursement</b><span>Tax refunds, Social Security, salaries, contractor payments</span></div>
+<div class="nd pos"><b>IRS "common API layer" (Palantir)</b><span>Announced 22 Sep 2025</span><code>value and data scope unpublished; no link to ICE shown</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>payment cut: refunds up to 100%; Social Security and federal salaries up to 15%; SSI and disability excluded<code>FY2020: $10.4bn collected with the IRS levy programme</code></span></p>
+<p class="lk none"><span><i>Blocked</i>an offset needs a legally enforceable debt and prior notice; a flag for a non-financial reason (such as a protest fine) is not supported</span></p>
+<section class="ly"><h4>Output · the payee</h4>
+<div class="nodes">
+<div class="nd"><b>Payment reduced or stopped</b><span>Wrongly matched payees must contest</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de24b_eo14249] [cite:de24b_omb_m2532] [cite:de24b_fs_top] [cite:de24b_crs_top] [cite:us17_ci_defaults] [cite:ad7_natp_pause] [cite:de27_treasury_api]</p>
+</figure>
+
 <figure class="fig-money">
 <figcaption>Four financial channels: input, mechanism, who gains, who pays</figcaption>
 <table><thead><tr><th></th><th>Input and mechanism</th><th>Who gains</th><th>Who pays or bears the risk</th></tr></thead><tbody>
@@ -26,6 +55,21 @@
 
 <h3>If it were connected</h3>
 <p>Graded as in [scene:de24b_benefits|the first section of this part]. Credit-bureau identifying data to immigration enforcement: documented, through the statute's government carve-out and through resellers whose products ICE buys. [cite:de24b_justia_1681f] [cite:de24_lawnext_tr] Agency records into Treasury's payment checks: documented as policy, through the order and the August 2025 memo. [cite:de24b_eo14249] [cite:de24b_omb_m2532] Palantir's Treasury API layer joined to its immigration systems at ICE: possible, with no document; the Treasury work's data scope is unpublished, and nothing shows a link. [cite:de27_treasury_api] Debt flags used to stop payments for non-financial reasons, such as a fine for protest conduct: not supported; the offset rules require a legally enforceable debt and prior notice. [cite:de24b_fs_top] Border cash reports into immigration investigations: probable, since DHS personnel already run hundreds of thousands of searches of FinCEN reports a year and the order targeted the border, but no use against a named person is documented. [cite:de26_aba_fincen] What stands in the way is mostly procedural law: the Privacy Act notices the memo still requires, the notice-and-comment rule that sank the first border order, and the offset statute's debt and notice requirements.</p>
+<p>What makes any of these joins possible is a shared identifier. Across the four sections of this part, the same few keys recur.</p>
+<figure class="fig-compare" data-kind="Join keys">
+<figcaption>Join keys: the identifiers each system holds or matches on, where a cited source documents it (a dash means no cited source lists it, not that the field is absent)</figcaption>
+<table><thead><tr><th>System</th><th>Name</th><th>SSN or taxpayer no.</th><th>Date of birth</th><th>Address</th><th>Employer</th><th>Immigration no. (A-Number, I-94, SEVIS ID)</th><th>Programme no.</th></tr></thead><tbody>
+<tr><th>SNAP files demanded by USDA</th><td class="yes">yes</td><td class="yes">full</td><td class="yes">yes</td><td class="yes">yes</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><th>Medicaid fields allowed to ICE</th><td>—</td><td>—</td><td class="yes">yes</td><td class="yes">yes</td><td>—</td><td>—</td><td class="yes">Medicaid no.</td></tr>
+<tr><th>SAVE (USCIS)</th><td class="yes">yes</td><td class="yes">full or last four</td><td class="yes">yes</td><td>—</td><td>—</td><td class="yes">yes</td><td>—</td></tr>
+<tr><th>E-Verify (USCIS)</th><td class="yes">yes</td><td class="yes">full</td><td class="yes">yes</td><td>—</td><td>—</td><td class="yes">yes</td><td>—</td></tr>
+<tr><th>The Work Number (Equifax)</th><td>—</td><td>—</td><td>—</td><td>—</td><td class="yes">yes</td><td>—</td><td>—</td></tr>
+<tr><th>Treasury Offset Program</th><td class="yes">yes</td><td class="yes">taxpayer no.</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><th>Credit header to agencies (FCRA)</th><td class="yes">yes</td><td>—</td><td>—</td><td class="yes">current and former</td><td class="yes">current and former</td><td>—</td><td>—</td></tr>
+<tr><th>LexisNexis Accurint</th><td class="yes">search key</td><td class="yes">search key</td><td>—</td><td class="yes">search key</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody></table>
+<p class="fig-src">Sources: [cite:de24b_npr_snap27] [cite:de30_bl_medicaid] [cite:de24b_arch_save_sorn] [cite:de24_npr_save] [cite:de24b_arch_ev_sorn] [cite:de24b_cfpb_twn] [cite:de24b_fs_top] [cite:de24b_justia_1681f] [cite:de24_bu_lexis]</p>
+</figure>
 
 <h3>The worst-case reading, tested</h3>
 <p>The hypothesis for this part is that records collected to give people help, schooling, work and credit can be turned into a single instrument of enforcement. Documented: civil records crossed to immigration enforcement in 2025 and 2026, from SNAP files run through SAVE in at least 27 states to a Medicaid file that reached Palantir's software by mistake; school-adjacent cameras answered 620 immigration searches in a month; continuous vetting checks the criminal and financial records of more than 3.8 million people; and clearances were revoked from officials the government accused of politicising intelligence. [cite:de24b_npr_snap27] [cite:de24b_npr_medicaid] [cite:de28_74_flock] [cite:de24b_bu_cv] [cite:de24b_kvia_gabbard] Probable: SNAP records moving on to ICE under a notice already in force, and border cash reports feeding investigations; the TANF route to DHS has been open since 30 September 2026, and no enforcement use of it is yet shown. Not supported: a single score or file joining benefits, schooling, work and credit for any person, or any of these records used against a critic outside the clearance cases. [cite:de24b_bl_tanf]</p>

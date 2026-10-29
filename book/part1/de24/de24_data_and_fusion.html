@@ -6,6 +6,35 @@
 <h3>The two investigative databases</h3>
 <p>Two companies, better known for legal research, supply most of the commercial records ICE searches. LexisNexis Risk Solutions holds a contract signed in February 2021, under President Biden, worth about $24.5 million, that gives ICE its Accurint and LexID people-search tools; a 2021 change added jail-booking data. ICE users ran more than 1.2 million Accurint person searches between March and September 2021. The contract was due to end on 31 August 2026, and on 10 August 2026 ICE gave notice of a $6.7 million sole-source bridge whose work statement says the system "must connect through application programming interfaces" to ICE applications including "the Palantir platform". [cite:de24_bu_lexis] An application programming interface, or API, is a standard doorway through which one program asks another for data automatically, without a person typing each search.</p>
 <p>Thomson Reuters' CLEAR was renewed for the Department of Homeland Security without competition from 31 March 2026, on the justification that "only CLEAR provides the range of law enforcement data the agency requires"; the data types listed include utility data, credit reporting bureaus and licence-plate records. The company told the legal-technology writer Bob Ambrogi that it does "not comment on specific customer contracts" and that "Palantir is not a customer of CLEAR." [cite:de24_lawnext_tr] Which ICE contracts these are, set beside the Palantir awards, is listed in [scene:de28_ice_contracts|the ICE contracts section].</p>
+<p>Taken together, the two databases sit in the middle of a supply chain: ordinary records go in at one end, and ICE's analysts and software query them at the other.</p>
+<figure class="fig-arch">
+<figcaption>The commercial records supply chain into ICE: sources, investigative databases and the systems that query them (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · raw records</h4>
+<div class="nodes">
+<div class="nd"><b>Utility header</b><span>Utility and phone accounts of 170m+ people, held by the NCTUE exchange</span><code>name · home address · SSN; licensed to Equifax</code></div>
+<div class="nd"><b>Credit header</b><span>Identifying block of a credit file</span><code>name · current and former addresses and employers (15 USC 1681f)</code></div>
+<div class="nd"><b>Jail bookings</b><span>Added to ICE's Accurint access in 2021</span></div>
+<div class="nd"><b>Plate reads</b><span>Listed among CLEAR's data types</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>resold as "utility header" and credit-bureau data into the investigative databases</span></p>
+<p class="lk none"><span><i>Blocked</i>utility data to law enforcement stopped 23 Oct 2021 after press reports and Senate pressure; data sold before then stayed in use</span></p>
+<section class="ly"><h4>L2 · investigative databases: record to person</h4>
+<div class="nodes">
+<div class="nd"><b>LexisNexis Accurint / LexID</b><span>People search</span><code>keys: name · address · SSN · plate; contract 70CMSD21C00000001, ~$24.5m (Feb 2021); $6.7m bridge (Aug 2026)</code></div>
+<div class="nd"><b>Thomson Reuters CLEAR</b><span>People search with utility, credit and plate data</span><code>LEIDS-5 $22.8m (May 2021–May 2026); sole-source renewal from 31 Mar 2026</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>searched by ICE users, one person at a time: 1.2m+ Accurint person searches, Mar–Sep 2021</span></p>
+<p class="lk rep"><span><i>Reported</i>Probable as a working flow: Accurint to "the Palantir platform", PenLink and ICE Data Analytics by API, a requirement of the 2026 bridge work statement<code>CLEAR: "not connected to Palantir tools" in 2014–22 records; "Palantir is not a customer of CLEAR"</code></span></p>
+<section class="ly"><h4>L3 · ICE users and applications</h4>
+<div class="nodes">
+<div class="nd"><b>ICE analysts</b><span>Manual searches through each vendor's own interface</span></div>
+<div class="nd hub"><b>Palantir platform</b><span>ICE's case and targeting systems</span></div>
+<div class="nd"><b>PenLink · ICE Data Analytics</b><span>Other named API destinations</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de24_globe_utility] [cite:de24b_justia_1681f] [cite:de24_bu_lexis] [cite:de24_lawnext_tr] [cite:de24_guardian_icm]</p>
+</figure>
 <figure class="fig-compare">
 <figcaption>The data layer: what each part holds, who uses it, and what has limited it (as of October 2026)</figcaption>
 <table>
@@ -25,6 +54,34 @@
 <h3>Licence-plate readers</h3>
 <p>An automated licence-plate reader (ALPR) is a camera that photographs every passing number plate, reads it by software and stores it with a time and a place. Millions of readings, searched together, show where a car has been. In February 2014 Homeland Security Secretary Jeh Johnson cancelled an ICE request for a nationwide plate-tracking database, saying ICE's leaders had not known of it. [cite:de24_physorg_2014] In January 2018 ICE gained that access through a contract with West Publishing, part of Thomson Reuters, working with Vigilant Solutions; ICE called it "one tool in support of its investigations." [cite:de24_upi_vigilant]</p>
 <p>The largest network today belongs to Flock Safety, whose cameras were in more than 4,000 communities by August 2025. On 25 August 2025 Flock paused pilot programmes with Customs and Border Protection and its investigative arm after Illinois' Secretary of State, Alexi Giannoulias, said an audit had found CBP searching Illinois plate data in breach of state law. "We clearly communicated poorly," said Flock's chief executive, Garrett Langley; federal searches would be labelled as such and limited to one police agency at a time. [cite:de24_ap_flock] In Woodburn, Oregon, a city audit found that the Department of Homeland Security and the Border Patrol ran 6,089 searches through a Flock trial between January and November 2025, although the police department's own policy barred immigration use; the city ended its contract at the end of April 2026. [cite:de24_katu_woodburn] The cameras also misread. In August 2020 police in Aurora, Colorado, held Brittney Gilliam's family at gunpoint after a misread, and the city paid $1.9 million. [cite:de24_eff_alpr]</p>
+<figure class="fig-arch">
+<figcaption>Licence-plate data: from roadside camera to federal search (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · collection</h4>
+<div class="nodes">
+<div class="nd"><b>Flock cameras</b><span>Every passing plate photographed, read by software, stored with time and place</span><code>4,000+ communities (Aug 2025)</code></div>
+<div class="nd"><b>School-district Flock cameras</b><span>Alvin, Texas: eight cameras</span><code>733,000+ searches by 3,100+ agencies in one month</code></div>
+<div class="nd"><b>Vigilant Solutions</b><span>National store of plate records</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>reads pooled in the vendor's network; Flock customers set whether other agencies may search their cameras</span></p>
+<section class="ly"><h4>L2 · vendor networks and resellers</h4>
+<div class="nodes">
+<div class="nd"><b>Flock sharing network</b><span>Searches across many agencies' cameras</span><code>since Aug 2025: federal searches labelled, one agency at a time</code></div>
+<div class="nd"><b>West Publishing (Thomson Reuters)</b><span>Resold Vigilant data to ICE</span><code>contract reported Jan 2018</code></div>
+<div class="nd"><b>CLEAR</b><span>Lists licence-plate records among its data</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>ICE access to Vigilant data from 2018; CBP searches of Illinois data; 6,089 DHS and Border Patrol searches in Woodburn, Oregon, Jan–Nov 2025; 620 searches citing immigration, by 30 agencies, on Alvin's cameras in a month</span></p>
+<p class="lk none"><span><i>Blocked</i>Illinois law (the CBP searches breached it); Flock paused CBP and HSI pilots on 25 Aug 2025; Woodburn ended its contract in April 2026; a 2014 ICE solicitation was cancelled</span></p>
+<p class="lk pos"><span><i>Possible</i>a standing feed from a city network into a federal platform; no document; would need a new contract or a reversal of the 2025 limits and state law</span></p>
+<section class="ly"><h4>L3 · federal users</h4>
+<div class="nodes">
+<div class="nd"><b>CBP · Border Patrol</b><span>Pilot and trial searches</span></div>
+<div class="nd"><b>ICE</b><span>"One tool in support of its investigations"</span></div>
+<div class="nd pos"><b>Federal integration platform</b><span>No plate feed documented</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de24_ap_flock] [cite:de28_74_flock] [cite:de24_upi_vigilant] [cite:de24_lawnext_tr] [cite:de24_katu_woodburn] [cite:de24_physorg_2014]</p>
+</figure>
 <h3>The government's own files, reused</h3>
 <p>The newest change since 2025 is not a purchase but a reuse: records people gave the government for one purpose opened to another. The Systematic Alien Verification for Entitlements (SAVE) system, long used to check benefit applicants' immigration status, was linked to Social Security data in May 2025 and from 15 August 2025 could check voters in bulk with only the last four digits of a Social Security number; election officials had run more than 33 million voters through it by September 2025. The state agreements let DHS use the data "for any purpose permitted by law," and no accuracy testing had been published. [cite:de24_npr_save] In April 2025 the Internal Revenue Service agreed to check names and addresses for ICE; a federal judge later found the IRS had broken the law "approximately 42,695 times," and an appeals panel upheld her block on 8 September 2026, while another panel had declined to block the sharing in February. [cite:us10_abc_irs_feb] [cite:us10_cpa_irs_sep] For Medicaid, Judge Vince Chhabria ruled on 29 December 2025 that, for the twenty states that sued, health officials could pass ICE only five fields about people not lawfully present (status, address, phone, date of birth and Medicaid number), and no health records. [cite:de24_wt_medicaid] How each of these walls was built and breached is the subject of [scene:de30_silos_and_subpoenas|the section on the data walls], and the wider set of records the state already holds, on benefits, schooling, work and credit, is mapped in [scene:de24b_benefits|the benefits section], [scene:de24b_schools|the section on schools], [scene:de24b_work_and_vetting|on work and vetting] and [scene:de24b_credit_and_money|on credit and money]; the ICE tool reported to draw on Medicaid data is described in [scene:ow9_ice|the One-Way Mirror]. [cite:ow9_fortune_elite]</p>
 <p>The Homeland Advanced Recognition Technology system (HART), meant to replace a 1990s database of faces, fingerprints and irises, was contracted to Northrop Grumman for $95 million in February 2018, under President Trump's first term. [cite:de24_wt_hart2018] In September 2023 the Government Accountability Office found it years late, $354 million over its earlier estimate and meeting 5 of 12 federal privacy requirements; the old system held over 290 million identities. [cite:de24_gao_hart] In August 2026 Kyle Schutt, who had worked with the Department of Government Efficiency, took over the biometrics office, with HART due to reach initial operation "no later than September 2026." [cite:de24_bu_schutt] Whether that deadline was met could not be confirmed as of October 2026.</p>

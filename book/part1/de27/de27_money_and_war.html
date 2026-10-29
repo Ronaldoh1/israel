@@ -35,6 +35,44 @@
 </table>
 <p class="fig-src">Sources: [cite:ow9_ds_maven] [cite:de27_dp_nato] [cite:ow9_bd_army] [cite:de27_govly_pde] [cite:de27_treasury_api] [cite:de27_hg_ero] [cite:de27_wt_feinberg]</p>
 </figure>
+<p>Each award buys a separate deployment for a separate customer, holding that customer's data. Mapped from contract to system, the joins between them are where the record is thinnest.</p>
+<figure class="fig-arch">
+<figcaption>Palantir's federal deployments: contract vehicle to system to data, and the joins between customers (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · customer and contract vehicle</h4>
+<div class="nodes">
+<div class="nd"><b>Army</b><span>Enterprise agreement, 75 contracts merged (Aug 2025)</span><code>W519TC25D0039 · up to $10bn over ten years</code></div>
+<div class="nd"><b>Pentagon</b><span>Maven Smart System</span><code>$480m IDIQ (May 2024) → ~$1.3bn ceiling to 2029</code></div>
+<div class="nd"><b>DHS</b><span>Blanket purchase agreement; CBP, ICE, FEMA, CISA may order</span><code>70RTAC26A00000001 · up to $1bn over five years (Feb 2026)</code></div>
+<div class="nd"><b>Treasury</b><span>IRS modernisation</span><code>announced 22 Sep 2025 · value not stated</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>orders under each vehicle fund a named system</span></p>
+<section class="ly"><h4>L2 · order and system</h4>
+<div class="nodes">
+<div class="nd"><b>Personnel Data Environment</b><span>"Maintain and sustain" an existing system</span><code>W519TC26F0058 · $3.68m · 16 Mar–15 Nov 2026</code></div>
+<div class="nd"><b>Maven Smart System</b><span>Sensor and intelligence fusion; 20,000+ users</span></div>
+<div class="nd hub"><b>ICE: ICM, ImmigrationOS, ELITE</b><span>Case management, targeting and prioritisation, address scores</span><code>ImmigrationOS $29.9m (Apr 2025) · ERO order 70CTD026FC0000012, $86.3m to 4 May 2027, scope not public</code></div>
+<div class="nd"><b>IRS "common API layer"</b><span>Developer platforms, workflow automation, analytics</span></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>each system holds its own customer's data</span></p>
+<section class="ly"><h4>L3 · data held</h4>
+<div class="nodes">
+<div class="nd"><b>Soldiers' personnel data</b><span>Army PDE</span></div>
+<div class="nd"><b>Sensor and intelligence data</b><span>Maven, combatant commands</span></div>
+<div class="nd"><b>ICE records</b><span>SEVIS and APIS searched; Medicaid once, outside a court's limits; LexisNexis API required (probable feed)</span></div>
+<div class="nd"><b>Taxpayer records</b><span>IRS</span></div>
+</div></section>
+<p class="lk pos"><span><i>Possible</i>IRS records checked against an enforcement list through the common API layer; needs an agreement between agencies and a connection the customer builds</span></p>
+<p class="lk none"><span><i>Blocked</i>tax confidentiality: the IRS–ICE address agreement was stayed in Nov 2025 and the block affirmed by the D.C. Circuit, 8 Sep 2026</span></p>
+<section class="ly"><h4>L4 · joins across customers</h4>
+<div class="nodes">
+<div class="nd pos"><b>IRS ↔ enforcement list</b><span>Possible; no document</span></div>
+<div class="nd pos"><b>ICE ↔ Army PDE</b><span>Not supported: separate orders and customers; nothing shows data moving between them</span></div>
+<div class="nd pos"><b>A Palantir-held cross-government dataset</b><span>Not supported: the company says it is "not a vendor on any master database project"</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:ow9_bd_army] [cite:de27_govly_pde] [cite:ow9_ds_maven] [cite:ow9_sa_dhsbpa] [cite:ow9_reg_immos] [cite:de27_hg_ero] [cite:ow9_fortune_elite] [cite:de28_guardian_icm] [cite:de27_npr_medicaid] [cite:de28_bu_lexis] [cite:de27_treasury_api] [cite:us10_cpa_irs_sep] [cite:de19_palantir_record]</p>
+</figure>
 <h3>Ukraine</h3>
 <p>Palantir's largest documented war use outside American command is in Ukraine. On 1 June 2022 Karp crossed into Ukraine with five colleagues and met President Volodymyr Zelensky in Kyiv the next day, offering to open an office and deploy the company's software. By early 2024, TIME reported, more than half a dozen Ukrainian agencies used it: the military to analyse satellite imagery, drone footage, open-source data and ground reports, and the prosecutor general to link alleged war crimes to evidence such as satellite images and social-media posts, while the economy ministry used its models to decide where clearing landmines would return the most farmland to use. Karp said the software was "responsible for most of the targeting in Ukraine." Palantir provided the tools free of charge; partner countries contributed tens of millions of dollars to offset the cost. [cite:de27_time_ukraine] Palantir's work for Israel's Ministry of Defense since January 2024 is set out in [scene:ow9_israel|The One-Way Mirror] and in [scene:de37_palantir_and_israel|Part Forty]; the documented record there is a contract whose contents are not public, and the company denies building Israel's AI targeting systems.</p>
 <p>What the figures do not show is a causal line from politics to contracts. Thiel chairs the company, J.D. Vance once worked for and was funded by Thiel, and Palantir's federal business has grown fast since 2025; those facts form a sequence, examined as a candidate loop in [scene:de14_loops|Part Fourteen] and [scene:de21_conflicts_and_contracts|Part Twenty-One]. No document shows the Vice President or any political appointee directing an award to Palantir, and the ICE business, the Army lawsuit and the Maven award all began before the 2025 administration. [cite:ow9_reg_immos] [cite:de10_defnews] [cite:ow9_ds_maven] The more ordinary explanation, a decade of incumbency, sole-source justifications and a habit of buying without competition that the Pentagon says it applies to other companies too, is itself documented. [cite:ow9_reg_immos] [cite:de27_wt_feinberg]</p>

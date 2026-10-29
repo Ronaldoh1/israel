@@ -409,6 +409,39 @@
      "label": "Morrison Foerster, 'FinCEN Reissues Geographic Targeting Order for Money Services Businesses Along the Southwest Border', 11 September 2026"
     }
    ]
+  },
+  {
+   "id": "de24b_arch",
+   "stage": "de24b",
+   "topic": "Technical detail for architecture diagrams: SAVE and E-Verify systems of records",
+   "claims": [
+    {
+     "text": "SAVE SORN (DHS/USCIS-004, 31 Oct 2025): records include name, DOB, A-Number/USCIS number, I-94, visa, SEVIS ID, passport, full and truncated SSN, driver's licence number; SSA returns SSN/name/DOB match results, death indicator and citizenship indicator codes; sources include SSA Master Files of SSN Holders (SSA-60-0058), ADIS, SEVIS (DHS/ICE-001), NLETS; access by web browser, web services (system-to-system) and list-processor file upload; records kept ten years from completion of verification; routine use G allows disclosure to law enforcement where a record indicates a potential violation of law",
+     "strength": "documented",
+     "sources": [
+      "de24b_arch_save_sorn"
+     ]
+    },
+    {
+     "text": "E-Verify SORN (DHS/USCIS-011, 11 Aug 2014): employee fields include name, DOB, SSN, date of hire, claimed citizenship status, I-9 document data, A-Number, I-94, passport and driver's licence number (RIDE states); sources include SSA Numident, USCIS Central Index System, CBP ADIS, ICE SEVIS, CLAIMS 3/4, State Department Consular Consolidated Database, state motor vehicle agencies in RIDE; records kept ten years from the last transaction",
+     "strength": "documented",
+     "sources": [
+      "de24b_arch_ev_sorn"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de24b_arch_save_sorn",
+     "url": "https://public-inspection.federalregister.gov/2025-19735.pdf",
+     "label": "DHS/USCIS-004 SAVE System of Records Notice, Federal Register doc. 2025-19735 (31 Oct 2025)"
+    },
+    {
+     "key": "de24b_arch_ev_sorn",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2014-08-11/html/2014-18701.htm",
+     "label": "DHS/USCIS-011 E-Verify Program System of Records Notice, 79 FR (11 Aug 2014)"
+    }
+   ]
   }
  ]
 }

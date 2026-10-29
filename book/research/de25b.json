@@ -149,6 +149,20 @@
       "de25b_ipt_tsaice",
       "de25b_ao_moa"
      ]
+    },
+    {
+     "text": "Secure Flight final rule: TSA calls the passenger data 'Secure Flight Passenger Data (SFPD)': full name, gender, date of birth and Redress Number, plus passport information if available and non-personal itinerary information and record locator numbers; aircraft operators send it through 'one DHS portal', approximately 72 hours before departure; TSA's boarding pass printing result lets the airline issue an unrestricted boarding pass, a boarding pass marked for enhanced screening (Selectee), or no boarding pass (inhibited) until resolved at the airport",
+     "strength": "primary",
+     "sources": [
+      "de25b_fr_secureflight"
+     ]
+    },
+    {
+     "text": "ATS PIA update (DHS/CBP/PIA-006(e), 13 Jan 2017): ATS-P is 'a web-based enforcement and decision support tool'; UPAX is a technology refresh replacing the legacy ATS-P interface; 'ATS maintains the official record for Passenger Name Records (PNR)'; CBP ingests TSA Secure Flight Passenger Data in real time into ATS-P for overflights and US carrier point-to-point international flights; non-matching SFPD kept 7 days to create, modify and run rules",
+     "strength": "primary",
+     "sources": [
+      "de25b_pia_ats"
+     ]
     }
    ],
    "sources": [
