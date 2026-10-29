@@ -6,6 +6,50 @@
 <p>The third layer is state and local systems that federal agents can reach. The clearest example is licence-plate cameras. In one month at a Texas school district's eight Flock cameras, more than 3,100 agencies ran more than 733,000 searches, and 620 of them cited immigration reasons, from 30 agencies; the district itself showed no immigration use, and Flock says its customers control sharing. [cite:de28_74_flock] DHS has also queried driver and vehicle records nationwide through information-sharing contracts. [cite:de28_brennan_tools] What school cameras and records mean for students is examined in [scene:de24b_schools|Part Twenty-Five].</p>
 <p>The fourth layer is commercial surveillance vendors selling to ICE directly: Clearview's faces, Penlink's Tangles and Webloc, Zignal's and ShadowDragon's social-media tools, Babel Street's location software, all listed in [scene:de28_ice_contracts|the first section]. The fifth is data brokers whose products are people: LexisNexis's Accurint, Thomson Reuters's CLEAR and plate reads, Venntel's app-location data, and the employment and utility files held by credit bureaus. An Equifax-held utility file once reached ICE through CLEAR, until the utilities' exchange told Equifax to stop in 2021; Equifax's Work Number, built from employers' payroll data, supplies government agencies for welfare eligibility and child-support enforcement, and no record shows it reaching ICE. [cite:de24_globe_utility] [cite:de28_cfpb_twn]</p>
 <p>The sixth layer is integration: the platforms that join the rest. At ICE that means Palantir's case-management system, ImmigrationOS, ELITE and the May 2026 enforcement-operations order, and a parallel system, RAVEn, which the Brennan Center describes as letting investigators "search and combine information from multiple databases to create detailed profiles," built with Booz Allen Hamilton, Acuity and Alethix, each paid tens of millions of dollars. [cite:de27_hg_ero] [cite:de28_brennan_tools] A 2020 solicitation described "FALCON/Raven Palantir systems," so RAVEn and Palantir may have been intertwined in an earlier period; the record does not settle it, and RAVEn should not be called a Palantir system without that caveat. [cite:de28_bu_lexis] The Brennan Center counted at least $2.9 billion committed by DHS to surveillance, data-collection and analytics tools since January 2021, a minimum. [cite:de28_brennan_tools]</p>
+<figure class="fig-arch">
+<figcaption>Reference architecture: the six layers wired as one system, every link graded (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · records the government holds</h4>
+<div class="nodes">
+<div class="nd"><b>IRS</b><span>Taxpayer addresses</span><code>ICE submits names → address check (Apr 2025 agreement)</code></div>
+<div class="nd"><b>SSA → SAVE</b><span>Citizenship status checks</span><code>SSA data linked to SAVE, May 2025</code></div>
+<div class="nd"><b>Medicaid (CMS)</b><span>Enrolees' addresses and status</span><code>court limit: five fields, people not lawfully present</code></div>
+<div class="nd"><b>TANF (HHS)</b><span>Welfare recipients</span><code>disclosure notice live 30 Sep 2026</code></div>
+<div class="nd"><b>SEVIS · APIS · Secure Flight</b><span>Students, air passengers</span></div>
+<div class="nd pos"><b>HART</b><span>Faces, prints, irises; built to share with DOJ, DoD, intelligence, police, foreign partners</span><code>not operational, Aug 2024</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>to ICE or DHS by agreement, court order or notice; SEVIS, APIS and Medicaid shown inside Palantir systems</span></p>
+<section class="ly"><h4>L2–L3 · sensors: federal, state and local</h4>
+<div class="nodes">
+<div class="nd"><b>Mobile Fortify</b><span>Face match in the field from an officer's phone</span></div>
+<div class="nd"><b>Cellebrite</b><span>Phone extraction</span><code>extractions importable into Palantir (2014–22 records)</code></div>
+<div class="nd"><b>Drones · Paragon</b><span>Video; spyware (contract closed Jan 2026, capability neither confirmed nor denied)</span></div>
+<div class="nd"><b>Flock plate cameras</b><span>Vehicle movements; 733,000+ searches by 3,100+ agencies at one district in a month</span><code>620 searches cited immigration</code></div>
+<div class="nd"><b>DMV records</b><span>Driver and vehicle data, queried nationwide by contract</span></div>
+</div></section>
+<p class="lk rep"><span><i>Reported</i>federal agents search local plate cameras; only Cellebrite is documented feeding the hub</span></p>
+<section class="ly"><h4>L4–L5 · bought: vendors and brokers</h4>
+<div class="nodes">
+<div class="nd"><b>LexisNexis Accurint</b><span>People-search profiles</span><code>2026 work statement: API to "the Palantir platform"</code></div>
+<div class="nd pos"><b>Penlink · Clearview · Zignal · ShadowDragon · Babel Street</b><span>Location trails, faces, social posts</span><code>same customer; no feed shown</code></div>
+<div class="nd"><b>Thomson Reuters CLEAR</b><span>Profiles with utility and credit data</span><code>"not connected to Palantir tools"</code></div>
+<div class="nd pos"><b>Equifax Work Number</b><span>Employer payroll data; serves welfare and child-support agencies</span><code>no ICE link found</code></div>
+</div></section>
+<p class="lk pos"><span><i>Possible</i>vendor and broker data into the hub (LexisNexis is the exception: required by design, so probable)</span></p>
+<section class="ly"><h4>L6 · integration: the hub</h4>
+<div class="nodes">
+<div class="nd hub"><b>Palantir: ICM, ImmigrationOS, ELITE</b><span>"Structures and links" vendor data; being made HSI's "authoritative data source"; ImmigrationOS assembles ICE's streams "into a central hub"</span></div>
+<div class="nd"><b>RAVEn</b><span>Parallel ICE analytics, built with Booz Allen, Acuity, Alethix</span><code>2020 text: "FALCON/Raven Palantir systems" (reported tie)</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>ELITE returns an address and a "confidence score"</span></p>
+<section class="ly"><h4>Output · decision and action</h4>
+<div class="nodes">
+<div class="nd"><b>Lead → arrest → removal</b><span>Immigration enforcement</span></div>
+<div class="nd pos"><b>Same chain applied to citizens for speech</b><span>No record found</span></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de30_ap_krause] [cite:de24_npr_save] [cite:de30_hipaa_chhabria] [cite:de28_bl_tanf] [cite:de28_hart_pia] [cite:de28_guardian_icm] [cite:de26_404_fortify] [cite:de28_fs_cellebrite] [cite:de28_npr_paragon] [cite:de28_74_flock] [cite:de28_brennan_tools] [cite:de28_bu_lexis] [cite:de28_lawsites_tr] [cite:de28_cfpb_twn] [cite:de28_brennan_consol] [cite:ow9_fortune_elite] [cite:de27_npr_medicaid]</p>
+</figure>
 <figure class="fig-compare">
 <figcaption>The ecosystem map: each node and its link to the integration layer, graded (as of October 2026)</figcaption>
 <table>
