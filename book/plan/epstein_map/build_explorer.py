@@ -8,10 +8,10 @@ HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.pat
 d = json.load(open(os.path.join(HERE, 'network.json')))
 idx = open(os.path.join(REPO, 'index.html')).read()
 scenes = set(re.findall(r'"id":"([a-z0-9_]+)","(?:ch|era)"', idx))
-K = {}
+K = {}; KL = {}
 for f in glob.glob(os.path.join(REPO, 'book/research/*.json')):
     for e in json.load(open(f)).get('entries', []):
-        for s in e.get('sources', []): K[s['key']] = s['url']
+        for s in e.get('sources', []): K[s['key']] = s['url']; KL[s['key']] = s['label']
 LABEL = {  # outlet label (prefix) -> research key
  'NYT 2019': 'ep1_nyt_wexner2019', 'Vanity Fair 2003': 'ep1_vf_ward2003', 'Snopes': 'ep7_snopes_barr', 'BI 2025': 'ep1_bi_birthday2025',
  'BI via Yahoo': 'ep7_bi_dalton', 'Rolling Stone (Ward)': 'ep7_rs_ward2021', 'NYT via WYSU': 'ep7_wysu_nyt2025',
@@ -36,6 +36,8 @@ def resolve(src, base):
     for part in [p.strip() for p in src.split(';') if p.strip()]:
         if part in scenes:
             out.append({'t': 'library scene', 'u': (base + 'index.html#scene=' + part) if base is not None else None}); continue
+        if part in K:
+            out.append({'t': KL[part], 'u': K[part]}); continue
         u = None
         for lab, k in LABEL.items():
             if part.startswith(lab): u = K.get(k); break
