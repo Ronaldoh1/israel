@@ -6,7 +6,7 @@
 /* Layout: a working case board. Controls on a strip, graph on the left, the selected node's record on the right; stacks on phones. */
 :root{
   --bg:#eef0f2; --panel:#f8f9fa; --ink:#1c2430; --muted:#4f5b6b; --line:#c9cfd6;
-  --accent:#b5641b; --ver:#2f6f9f; --tov:#8a6d1a; --nest:#b23a3a; --hi:#d98b2b;
+  --accent:#b5641b; --ver:#2f6f9f; --tov:#8a6d1a; --nest:#b23a3a; --hi:#d98b2b; --wh:#7b3fa0;
   --k-person:#2f6f9f; --k-company:#6b5ca5; --k-institution:#2e7d6b; --k-government:#7a4f2a; --k-place:#5f7182; --k-document:#a0476b;
   --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -14,12 +14,12 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#141a21; --panel:#1b232c; --ink:#e3e8ee; --muted:#a3afbd; --line:#334150;
-  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650;
+  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650; --wh:#c79be6;
   --k-person:#6fb0e0; --k-company:#a99ae0; --k-institution:#62c2a8; --k-government:#d19a63; --k-place:#9fb1c3; --k-document:#e083ab;
   color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#141a21; --panel:#1b232c; --ink:#e3e8ee; --muted:#a3afbd; --line:#334150;
-  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650;
+  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650; --wh:#c79be6;
   --k-person:#6fb0e0; --k-company:#a99ae0; --k-institution:#62c2a8; --k-government:#d19a63; --k-place:#9fb1c3; --k-document:#e083ab;
   color-scheme:dark}
 html,body{height:100%}
@@ -47,8 +47,10 @@ svg{width:100%;height:100%;display:block;touch-action:none}
 .edge:hover .who{color:var(--accent)}
 .edge .who{font-weight:500}
 .edge .src{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.edge .src a{color:var(--accent)}
+.paths li{margin:4px 0;font-size:13px}
 .pill{font-family:var(--f-mono);font-size:10.5px;padding:0 5px;border-radius:3px;border:1px solid currentColor;margin-left:4px;white-space:nowrap}
-.s-verified{color:var(--ver)} .s-to-verify{color:var(--tov)} .s-not-established{color:var(--nest)} .s-probable{color:var(--tov)}
+.s-withheld{color:var(--wh)} .s-verified{color:var(--ver)} .s-to-verify{color:var(--tov)} .s-not-established{color:var(--nest)} .s-probable{color:var(--tov)}
 .legend{position:absolute;left:10px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11px;color:var(--muted);background:color-mix(in srgb,var(--panel) 85%,transparent);padding:4px 6px;border-radius:4px;max-width:calc(100% - 20px)}
 .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 .stat{position:absolute;right:10px;top:8px;font-family:var(--f-mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -61,7 +63,7 @@ text{font-family:var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--p
 
 <div class="top">
   <h1>Epstein Network Graph</h1>
-  <p>Every documented tie as an edge. Expand breadth-first from any node, walk the inbound edges upward, find loops, or trace the shortest path between two people.</p>
+  <p>Every documented tie as an edge, each with its source. Expand breadth-first from any node, walk the inbound edges upward, find loops, trace a path, or remove a node to see what still connects.</p>
 </div>
 
 <div class="bar" role="toolbar" aria-label="Graph controls">
@@ -70,7 +72,9 @@ text{font-family:var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--p
   <button id="mExpand" class="on" type="button">Expand</button>
   <button id="mUp" type="button">Walk upward</button>
   <button id="mPath" type="button">Path between two</button>
+  <button id="mDel" type="button">Remove a node</button>
   <label for="tv"><input id="tv" type="checkbox" checked> To verify</label>
+  <label for="wh"><input id="wh" type="checkbox" checked> Withheld</label>
   <label for="ne"><input id="ne" type="checkbox"> Not established</label>
   <button id="reset" type="button">Reset</button>
 </div>
@@ -95,16 +99,17 @@ const KINDS = ['person','company','institution','government','place','document']
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const $ = id => document.getElementById(id);
 
-let mode = 'expand', expanded = new Set(), sel = null, pathA = null, hiNodes = new Set(), hiEdges = new Set();
+let removed = new Set(), mode = 'expand', expanded = new Set(), sel = null, pathA = null, hiNodes = new Set(), hiEdges = new Set();
 
-function walkable(e){ if(e.status==='not-established') return false; if(e.status!=='verified' && !$('tv').checked) return false; return true; }
-function adjOf(){ const a=new Map(); E.forEach((e,i)=>{ if(!walkable(e)) return; [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!a.has(u)) a.set(u,[]); a.get(u).push([v,i]); }); }); return a; }
+function walkable(e,show){ if(e.status==='not-established') return false; if(!show&&(removed.has(e.f)||removed.has(e.t))) return false; if(e.status==='withheld' && !$('wh').checked) return false; if(e.status==='withheld') return true; if(e.status!=='verified' && !$('tv').checked) return false; return true; }
+function adjOf(show){ const a=new Map(); E.forEach((e,i)=>{ if(!walkable(e,show)) return; [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!a.has(u)) a.set(u,[]); a.get(u).push([v,i]); }); }); return a; }
 
 function visibleSet(){
-  const adj = adjOf(), depth = new Map([[ $('root').value, 0 ]]), q=[$('root').value], D=+$('depth').value;
+  const adj = adjOf(true), depth = new Map([[ $('root').value, 0 ]]), q=[$('root').value], D=+$('depth').value;
   while(q.length){ const u=q.shift(); if(depth.get(u)>=D) continue; for(const [v] of adj.get(u)||[]) if(!depth.has(v)){ depth.set(v,depth.get(u)+1); q.push(v); } }
   for(const x of expanded){ if(!depth.has(x)) continue; for(const [v] of adj.get(x)||[]) if(!depth.has(v)) depth.set(v, depth.get(x)+1); }
   hiNodes.forEach(x=>{ if(!depth.has(x)) depth.set(x,9); });
+  removed.forEach(x=>{ if(!depth.has(x)) depth.set(x,0); });
   return depth;
 }
 
@@ -133,6 +138,40 @@ function findLoops(){
     .filter(l=>![...l.edges].every(i=>['kinship','office','ownership'].includes(E[i].type))).sort((a,b)=>a.c.length-b.c.length);
 }
 
+
+// Removing a node: like deleting from a tree, its children may still reach the nodes above it by another route.
+const SUPPORT=new Set(['funding','employment','investment','contract','banking','ownership','government grant','office','legal representation','appointment','philanthropy','business','board seat','association']);
+function reconnect(){
+  const adj=new Map(); E.forEach((e,i)=>{ if(!walkable(e)||PROBE.has(e.type)||e.type==='custody') return; [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!adj.has(u)) adj.set(u,[]); adj.get(u).push([v,i]); }); });
+  const nodes=new Set(), edges=new Set(), rows=[], orphans=[];
+  for(const R of removed){
+    const ups=new Set(), kids=new Set();
+    E.forEach(e=>{ if(e.status==='not-established') return;
+      const o2=e.f===R?e.t:e.t===R?e.f:null; if(o2 && !removed.has(o2) && N.get(o2).sponsor) ups.add(o2);
+      if(e.f===R || e.t===R){ const o=e.f===R?e.t:e.f; if(!removed.has(o)) kids.add(o); } });
+    for(const u of ups) kids.delete(u);
+    for(const c of kids){
+      const prev=new Map([[c,null]]), q=[c]; let hit=null;
+      while(q.length){ const x=q.shift(); if(ups.has(x)&&x!==c){ hit=x; break; } for(const [v,i] of adj.get(x)||[]) if(!prev.has(v)){ prev.set(v,[x,i]); q.push(v); } }
+      if(!(adj.get(c)||[]).length) orphans.push(c);
+      if(hit){ const path=[hit]; let y=hit; while(prev.get(y)){ const [p,i]=prev.get(y); edges.add(i); path.push(p); y=p; } path.forEach(z=>nodes.add(z)); rows.push({R,c,hit,path:path.reverse()}); }
+    }
+    rows.sort((a,b)=>a.path.length-b.path.length);
+  }
+  return {nodes,edges,rows,orphans,ups:[...new Set([...removed].flatMap(R=>E.filter(e=>(e.f===R||e.t===R)).map(e=>e.f===R?e.t:e.f).filter(x=>N.get(x)&&N.get(x).sponsor&&!removed.has(x))))]};
+}
+function delPanel(r){
+  if(!removed.size){ $('side').innerHTML=`<div class="kind">Remove a node</div><h2>Take a node out and see what still connects</h2><p class="note">Click a node to remove it (click again to restore). Its edges are cut. For every node it was connected to, the graph looks for another documented route back up to its sponsors: the people and institutions documented as sending it money, work, property, office, banking or legal protection. Investigations, testimony, lawsuits and custody are not counted as routes.</p><div class="rule">A remaining route shows that the structure still connects. It is not evidence that anyone took the removed person's place.</div>`; return; }
+  const name=x=>esc(N.get(x).name);
+  let h=`<div class="kind">Removed</div><h2>${[...removed].map(name).join(', ')}</h2>
+  <p class="note">${r.rows.length} former connections still reach the nodes above by another documented route${r.orphans.length?`; ${r.orphans.length} are left with no connections at all`:''}.</p>
+  <div class="rule">A remaining route shows that the structure still connects. It is not evidence that anyone took the removed person's place.</div><div class="kind">The nodes above (documented sponsors)</div><p class="note">${r.ups.map(name).join(', ')||'none'}</p><div class="kind">Routes still connecting to them</div><ol class="paths">`;
+  r.rows.slice(0,40).forEach(x=>{ h+=`<li>${x.path.map(name).join(' → ')}</li>`; });
+  h+='</ol>';
+  if(r.orphans.length) h+=`<div class="kind">Cut off</div><p class="note">${r.orphans.map(name).join(', ')}</p>`;
+  $('side').innerHTML=h;
+}
+
 const svg=d3.select('#g'), gz=svg.append('g'), gl=gz.append('g'), gn=gz.append('g');
 svg.call(d3.zoom().scaleExtent([.3,4]).on('zoom',ev=>gz.attr('transform',ev.transform)));
 let sim=null, posCache=new Map();
@@ -141,22 +180,22 @@ function draw(){
   const depth=visibleSet(), ids=[...depth.keys()];
   const nodes=ids.map(id=>Object.assign({id, d:depth.get(id)}, posCache.get(id)||{}));
   const links=[]; E.forEach((e,i)=>{ if(!depth.has(e.f)||!depth.has(e.t)) return;
-    if(e.status==='not-established' && !$('ne').checked) return; if(e.status!=='verified'&&e.status!=='not-established'&&!$('tv').checked) return;
+    if(e.status==='not-established' && !$('ne').checked) return; if(e.status==='withheld'&&!$('wh').checked) return; if(['to-verify','probable'].includes(e.status)&&!$('tv').checked) return;
     links.push({source:e.f,target:e.t,i}); });
   const W=svg.node().clientWidth, H=svg.node().clientHeight;
   $('stat').textContent = `${nodes.length} nodes · ${links.length} edges`;
   const ls=gl.selectAll('line').data(links,d=>d.i).join('line')
-    .attr('stroke',d=>{ const s=E[d.i].status; return hiEdges.has(d.i)?css('--hi'): s==='verified'?css('--line'): s==='not-established'?css('--nest'):css('--tov'); })
-    .attr('stroke-width',d=>hiEdges.has(d.i)?2.6:1.1)
-    .attr('stroke-dasharray',d=>{ const s=E[d.i].status; return s==='verified'?null: s==='not-established'?'2 4':'6 4'; })
-    .attr('stroke-opacity',d=>hiEdges.size&&!hiEdges.has(d.i)?.35:.95);
+    .attr('stroke',d=>{ const s=E[d.i].status; return hiEdges.has(d.i)?css('--hi'): (removed.has(E[d.i].f)||removed.has(E[d.i].t))?css('--nest'): s==='verified'?css('--line'): s==='withheld'?css('--wh'): s==='not-established'?css('--nest'):css('--tov'); })
+    .attr('stroke-width',d=>hiEdges.has(d.i)?2.6:E[d.i].status==='withheld'?2.2:1.1)
+    .attr('stroke-dasharray',d=>{ const s=E[d.i].status; return (removed.has(E[d.i].f)||removed.has(E[d.i].t))?'1 5': s==='verified'?null: s==='withheld'?'8 3': s==='not-established'?'2 4':'6 4'; })
+    .attr('stroke-opacity',d=>(removed.has(E[d.i].f)||removed.has(E[d.i].t))?.3:hiEdges.size&&!hiEdges.has(d.i)?.35:.95);
   const ng=gn.selectAll('g.n').data(nodes,d=>d.id).join(enter=>{ const g=enter.append('g').attr('class','n').style('cursor','pointer').attr('tabindex',0).attr('role','button');
       g.append('circle'); g.append('title'); g.append('text').attr('dy',-11).attr('text-anchor','middle').attr('font-size',11); return g; });
   ng.attr('aria-label',d=>N.get(d.id).name); ng.select('title').text(d=>N.get(d.id).name);
   ng.select('circle').attr('r',d=>d.id===$('root').value?11:d.d===0?10:7)
     .attr('fill',d=>css('--k-'+(KINDS.includes(N.get(d.id).kind)?N.get(d.id).kind:'place')))
     .attr('stroke',d=>(d.id===sel||hiNodes.has(d.id))?css('--hi'):css('--panel')).attr('stroke-width',d=>(d.id===sel||hiNodes.has(d.id))?3:1.5)
-    .attr('opacity',d=>hiNodes.size&&!hiNodes.has(d.id)?.35:1);
+    .attr('opacity',d=>removed.has(d.id)?.25:hiNodes.size&&!hiNodes.has(d.id)?.35:1);
   ng.select('text').text(d=>{ const s=N.get(d.id).name; return s.length>26?s.slice(0,24)+'…':s; })
     .attr('opacity',d=>(nodes.length<40||d.id===sel||hiNodes.has(d.id)||d.id===$('root').value||(DEG.get(d.id)||0)>=7)?1:0);
   ng.on('click',(ev,d)=>pick(d.id)).on('keydown',(ev,d)=>{ if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();pick(d.id);} });
@@ -173,6 +212,7 @@ function draw(){
 
 function pick(id){
   if(mode==='expand'){ sel=id; expanded.add(id); hiNodes=new Set(); hiEdges=new Set(); }
+  else if(mode==='del'){ if(removed.has(id)) removed.delete(id); else removed.add(id); sel=id; const r=reconnect(); hiNodes=r.nodes; hiEdges=r.edges; delPanel(r); draw(); return; }
   else if(mode==='up'){ sel=id; const r=upwardFrom(id); hiNodes=r.nodes; hiEdges=r.edges; }
   else if(mode==='path'){ if(!pathA||pathA===id){ pathA=id; sel=id; hiNodes=new Set([id]); hiEdges=new Set(); }
     else { const r=shortestPath(pathA,id); sel=id; hiNodes=r?r.nodes:new Set([pathA,id]); hiEdges=r?r.edges:new Set(); side(id, r?null:'No documented path between these two.'); pathA=null; draw(); return; } }
@@ -189,15 +229,15 @@ function side(id,msg){
   if(mode==='path' && pathA===id) h+=`<div class="rule">Now pick a second node.</div>`;
   h+=`<p class="note">${esc(n.note||'')}</p><div class="kind">${rows.length} edges</div>`;
   for(const [e,i] of rows){ const other=e.f===id?e.t:e.f, dir=e.f===id?'→':'←';
-    h+=`<div class="edge" data-go="${esc(other)}" tabindex="0"><span class="who">${dir} ${esc(N.get(other).name)}</span><span class="pill s-${esc(e.status)}">${esc(e.status)}</span><br>${esc(e.label)} <span class="src">· ${esc(e.type)} · ${esc(e.src)}</span></div>`; }
+    h+=`<div class="edge" data-go="${esc(other)}" tabindex="0"><span class="who">${dir} ${esc(N.get(other).name)}</span><span class="pill s-${esc(e.status)}">${esc(e.status)}</span><br>${esc(e.label)} <span class="src">· ${esc(e.type)} · ${(e.refs||[]).map(r=>r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a>`:esc(r.t)).join('; ')}</span></div>`; }
   $('side').innerHTML=h;
   $('side').querySelectorAll('[data-go]').forEach(el=>{ const go=()=>pick(el.dataset.go); el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
 }
 function intro(){
   const L=findLoops();
   let h=`<div class="kind">How to use</div><h2>Start at a node, expand outward</h2>
-  <p class="note"><b>Expand</b>: click a node to add its neighbours. <b>Walk upward</b>: click a node to light every documented line that sent it something, back to where the record stops. <b>Path between two</b>: click two nodes for the shortest documented chain.</p>
-  <div class="rule">An edge is a document: a payment, contract, email, flight, appointment or filing. Solid = verified; dashed = lead to verify; dotted red = not established, shown only when switched on and never used to walk.</div>
+  <p class="note"><b>Expand</b>: click a node to add its neighbours. <b>Walk upward</b>: click a node to light every documented line that sent it something, back to where the record stops. <b>Path between two</b>: click two nodes for the shortest documented chain. <b>Remove a node</b>: take someone out and see which of their connections still reach the people above by another route.</p>
+  <div class="rule">An edge is a document: a payment, contract, email, flight, appointment or filing. Solid = verified; dashed = lead to verify; thick purple = withheld (a document known to exist and not released); dotted red = not established, shown only when switched on and never used to walk.</div>
   <div class="kind">${L.length} loops in verified ties (start node left out)</div><ol class="loops">`;
   L.forEach((l,j)=>{ h+=`<li data-l="${j}" tabindex="0">${l.c.map(x=>esc(N.get(x).name)).join(' → ')}</li>`; });
   h+='</ol><div class="rule">A loop is a lead to examine, not a finding.</div>';
@@ -208,12 +248,13 @@ function intro(){
 const roots=[...N.values()].sort((a,b)=>a.name.localeCompare(b.name));
 $('root').innerHTML=roots.map(n=>`<option value="${esc(n.id)}"${n.id==='epstein'?' selected':''}>${esc(n.name)}</option>`).join('');
 $('legend').innerHTML=KINDS.map(k=>`<span><i style="background:var(--k-${k})"></i>${k}</span>`).join('');
-function setMode(m){ mode=m; pathA=null; ['mExpand','mUp','mPath'].forEach(b=>$(b).classList.toggle('on', b==={expand:'mExpand',up:'mUp',path:'mPath'}[m])); hiNodes=new Set(); hiEdges=new Set(); draw(); if(sel) side(sel); else intro(); }
+function setMode(m){ mode=m; pathA=null; ['mExpand','mUp','mPath','mDel'].forEach(b=>$(b).classList.toggle('on', b==={expand:'mExpand',up:'mUp',path:'mPath',del:'mDel'}[m])); hiNodes=new Set(); hiEdges=new Set(); draw(); if(sel) side(sel); else intro(); }
 $('mExpand').onclick=()=>setMode('expand'); $('mUp').onclick=()=>setMode('up'); $('mPath').onclick=()=>setMode('path');
 $('depth').oninput=()=>{ $('dval').textContent=$('depth').value; draw(); };
 $('root').onchange=()=>{ expanded.clear(); sel=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); draw(); intro(); };
-$('tv').onchange=draw; $('ne').onchange=draw;
-$('reset').onclick=()=>{ expanded.clear(); sel=null; pathA=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); $('depth').value=1; $('dval').textContent='1'; setMode('expand'); };
+$('tv').onchange=draw; $('ne').onchange=draw; $('wh').onchange=draw;
+$('mDel').onclick=()=>{ setMode('del'); delPanel(reconnect()); };
+$('reset').onclick=()=>{ removed.clear(); expanded.clear(); sel=null; pathA=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); $('depth').value=1; $('dval').textContent='1'; setMode('expand'); };
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
 new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 addEventListener('resize',()=>draw());

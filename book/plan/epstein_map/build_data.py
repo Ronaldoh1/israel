@@ -445,6 +445,29 @@ e('kushner','trump','son-in-law','kinship',V,'public record')
 e('black','usvi','paid $62M settlement, 2023','litigation',V,'PBS, Jul 2026')
 e('mcc','bop','federal facility run by BOP','office',V,'public record')
 
+# --- withheld: documents known to exist and not released (where power protects power)
+W='withheld'
+n('black_ndas','Black\'s NDAs with women','document','withheld','Non-disclosure agreements Leon Black signed with women. He walked out of a House interview rather than discuss them (June 2026) and sued the committee instead of appearing.','',[])
+n('unreleased','Unreleased Epstein files','document','withheld','About half of the roughly 6 million pages the Justice Department reviewed were not published under the Transparency Act; the Act\'s co-author says they are withheld unlawfully.','',[])
+n('wexner_poa','Wexner power of attorney (terms and accounts)','document','withheld','The 1991 power of attorney and the accounts run under it; the fees and flows have never been made public.','',[])
+n('edc_files','USVI tax board deliberations','document','withheld','How and why the Economic Development Commission approved Epstein\'s benefits; not public.','',[])
+n('dalton_record','Dalton hiring record (1974)','document','withheld','Who recommended Epstein for his first job; Dalton has not answered.','',[])
+n('npa_deliberations','2007–08 deal deliberations above the US Attorney','document','withheld','Who above Acosta was consulted on the non-prosecution agreement; not established in the public record.','',[])
+n('jpm_records','Bank wire records (vendors and recipients)','document','withheld','The full wire records showing who Epstein paid; produced in litigation, largely sealed or unreleased.','',[])
+e('black','black_ndas','signed; refused to produce to Congress','official act',W,'PBS NewsHour, Jul 2026')
+e('doj','unreleased','holds; not published','official act',W,'Roll Call, Jan 2026; Massie')
+e('wexner','wexner_poa','granted 1991; terms not public','official act',W,'NYT 2019')
+e('wexner_poa','epstein','authority over Wexner\'s affairs','office',V,'NYT 2019')
+e('usvi_edc','edc_files','holds; not public','official act',W,'JPMorgan filing, Jun 2023')
+e('dalton','dalton_record','holds; has not answered','official act',W,'Snopes')
+e('npa','npa_deliberations','deliberations not public','official act',W,'Part Eight')
+e('jpm','jpm_records','produced in litigation; largely sealed','official act',W,'USVI v. JPMorgan')
+e('deutsche','jpm_records','account records; partly in the NYDFS order','official act',W,'NYDFS consent order, Jul 2020')
+
+# sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
+SP={'wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
+for x in N: x['sponsor']= x['id'] in SP
+
 json.dump({'built':'2026-10-31','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
 ids={x['id'] for x in N}
 bad=[x for x in E if x['f'] not in ids or x['t'] not in ids]
