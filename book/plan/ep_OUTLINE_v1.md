@@ -79,7 +79,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
 - **The pipeline:**
   - Maxwell's role as convicted.
   - The Palm Beach recruit-a-friend structure (2005 police file).
-  - The modelling-agency route. Brunel and MC2 were charged in France. Scouts such as Daniel Siad face allegations only; no charge has been brought.
+  - The modelling-agency route. Brunel and MC2 were charged in France. Scouts such as Daniel Siad faced allegations only; he was never charged or questioned and died in July 2026 (natural causes; Part 10).
 - **The locations chapter.** Each property: acquisition, use as documented, and what happened to it.
   - 9 East 71st Street.
   - El Brillo Way, Palm Beach.
@@ -264,13 +264,24 @@ New research comes from the January 2026 file release, five documentaries Ron su
 - **The test:** is the network dead? Graded three ways: the network as people, the network as a mechanism, and the network as protection.
 
 ### Part 10 · The Deaths: What the Record Shows
-*Each death with its official finding first, then any documented dissent. No pattern is claimed without evidence for the pattern.*
-- **Robert Maxwell, 1991.** Ruled accidental; the autopsies were inconsistent; buried with a state funeral.
-- **Al Seckel, 2015.** A fall in France; confirmation was delayed.
-- **Jeffrey Epstein, 2019.** Ruled suicide; Dr Baden's dissent; the IG cascade.
-- **Steven Hoffenberg, 2022.** Verified at build.
-- **Jean-Luc Brunel, 2022.** Ruled suicide in a Paris cell before trial.
-- **Virginia Giuffre, April 2025.** Suicide, per her family and police; her posthumous memoir.
+*Full case file: `ep_DEATHS_LEDGER_v1.md`. Each death with its official finding first, then documented anomalies, then the institution's documented failures. No pattern is claimed without evidence for the pattern.*
+- **In custody before trial:**
+  - Epstein (2019): ruled suicide. The IG found significant misconduct. The FBI destroyed the master video in June 2024. Guard Noel's search and deposits. An inmate account (unsubstantiated). Baden's and Freeman's dissent; Freeman lectures at UCL on 16 Nov 2026. The NYT's June 2026 case for suicide.
+  - Brunel (2022): ruled suicide; an expert report said he should have been treated as a high suicide risk.
+- **Witnesses and subjects outside custody:**
+  - Giuffre (2025): suicide. WA police are reviewing their handling; the coroner's file is open; the family wants an inquest.
+  - Andriesz (Sept 2026): the BGC whistleblower on Lutnick. No official cause yet; the FCA is reviewing its own handling.
+  - Siad (July 2026): natural (cardiac), closed 22 Oct 2026. He was never questioned.
+  - Hoffenberg (2022): natural.
+  - Rodriguez (2014/15): cancer.
+  - Reyes (2020): COVID.
+- **Wider circle:**
+  - Shapiro (1985): an unsolved homicide; the police report was destroyed by order of the chief.
+  - Middleton (2022): ruled suicide; the sheriff's reports were inconsistent.
+  - Robert Maxwell (1991).
+  - Seckel (2015).
+  - Bing (2020).
+- **The chapter's finding:** no documented killing pattern; a documented *testimony-loss* pattern. Evidence decays faster than institutions act. Seven cases meet the two-precedent bar. The code panel is a weak reference, so a message to the witness returns nil.
 - **The viral list, checked:** "Bourdain and his film crew".
   - What actually circulates is a different claim: that Anthony Bourdain, Chris Cornell, Chester Bennington and Avicii "all died while working on" a trafficking documentary, *The Silent Children*.
   - The project's spokesperson said none of them was connected to it. It was shelved in 2017, before any of them died. PolitiFact rated the claim Pants on Fire; Lead Stories also rated it false.

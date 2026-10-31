@@ -915,6 +915,100 @@
    "note": "Two Epstein-linked probes opened 18 Feb 2026 (trafficking; laundering, corruption and tax fraud). About 20 suspected victims heard by May 2026.",
    "scenes": [],
    "apex": false
+  },
+  {
+   "id": "andriesz",
+   "name": "Simon Andriesz",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Former BGC managing director; CFTC whistleblower (about $420k). Took claims about Lutnick and Epstein to the FBI (2020–21) and to House Oversight (2026). Died in Thailand, late Sept 2026, aged 57. No official cause published; family says suicide, no foul play. The FCA is reviewing its own handling.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "siad",
+   "name": "Daniel Siad",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "association",
+   "note": "Model scout. Brunel forwarded his terms to Epstein in 2010 (per the files; to pull). Rape complaint filed Feb 2026 (denied). Never questioned. Died 20 Jul 2026; natural cardiac death; case closed 22 Oct 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "noel",
+   "name": "Tova Noel",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "MCC guard on duty on 9–10 Aug 2019. Charged with falsifying records (dropped); fired. Searched for Epstein news about 40 minutes before he was found; $5,000 cash deposit ten days before. Told House Oversight (18 May 2026) the money was her savings and that she believes it was suicide.",
+   "scenes": [
+    "epf_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "reyes",
+   "name": "Efrain Reyes",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Epstein's last cellmate; moved out the morning before and not replaced. Told the NYT he warned guards. Died Nov 2020 (COVID, per police).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "shapiro",
+   "name": "Arthur Shapiro",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Columbus lawyer whose firm worked for The Limited. Shot dead 6 Mar 1985, the day before a grand-jury appearance; unsolved. A 1991 police report was ordered destroyed by the chief. Link to Epstein runs through Wexner only.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "middleton",
+   "name": "Mark Middleton",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "association",
+   "note": "Clinton White House aide; reported as signing Epstein in on White House visits (to verify). Died 7 May 2022, Arkansas; ruled suicide; the sheriff's reports were inconsistent about the weapon.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mcc",
+   "name": "MCC New York (BOP)",
+   "kind": "government",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Where Epstein died. IG (2023): significant misconduct (suicide watch lifted, no cellmate, rounds not done, records falsified, cameras broken). No evidence of criminality found.",
+   "scenes": [
+    "epf_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "freeman",
+   "name": "Michael Freeman",
+   "kind": "person",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Forensic medicine professor; editor of the Journal of Forensic and Legal Medicine. Reviewed the medical examiner's file (given by Mark Epstein). UCL lecture 16 Nov 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "fca",
+   "name": "UK Financial Conduct Authority",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Appointed Lea Paterson to review its handling of Andriesz's whistleblowing (Oct 2026).",
+   "scenes": [],
+   "apex": false
   }
  ],
  "edges": [
@@ -1754,6 +1848,142 @@
    "f": "giuffre",
    "t": "gmax",
    "label": "defamation suit (2015)",
+   "type": "litigation",
+   "status": "verified",
+   "src": "epf_s12a"
+  },
+  {
+   "f": "andriesz",
+   "t": "lutnick",
+   "label": "whistleblower: claims about Lutnick and Epstein (BGC disputes)",
+   "type": "complaint",
+   "status": "verified",
+   "src": "Newsweek, 6 Oct 2026"
+  },
+  {
+   "f": "andriesz",
+   "t": "fbi",
+   "label": "tips 2020–21; \"no interest\" (his account); forms in the files to pull",
+   "type": "complaint",
+   "status": "to-verify",
+   "src": "IBTimes, 5 Oct 2026"
+  },
+  {
+   "f": "fca",
+   "t": "andriesz",
+   "label": "review of its own handling (Oct 2026)",
+   "type": "investigation",
+   "status": "verified",
+   "src": "Newsweek, 6 Oct 2026"
+  },
+  {
+   "f": "siad",
+   "t": "brunel",
+   "label": "scout; terms forwarded to Epstein, 2010 (files)",
+   "type": "employment",
+   "status": "to-verify",
+   "src": "release reporting; to pull"
+  },
+  {
+   "f": "siad",
+   "t": "epstein",
+   "label": "paid directly for scouting (files, reported)",
+   "type": "funding",
+   "status": "to-verify",
+   "src": "release reporting; to pull"
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "siad",
+   "label": "under trafficking investigation; never questioned",
+   "type": "investigation",
+   "status": "verified",
+   "src": "Irish Times, 22 Jul 2026"
+  },
+  {
+   "f": "noel",
+   "t": "mcc",
+   "label": "correctional officer on duty",
+   "type": "employment",
+   "status": "verified",
+   "src": "Washington Times, 18 May 2026"
+  },
+  {
+   "f": "mcc",
+   "t": "epstein",
+   "label": "custody; died 10 Aug 2019",
+   "type": "custody",
+   "status": "verified",
+   "src": "epf_s08"
+  },
+  {
+   "f": "reyes",
+   "t": "epstein",
+   "label": "last cellmate; moved out 9 Aug 2019",
+   "type": "custody",
+   "status": "verified",
+   "src": "NYT via NBC, Jun 2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "noel",
+   "label": "transcribed interview, 18 May 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "Washington Times, 18 May 2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "lutnick",
+   "label": "interview 6 May 2026; Democrats call for resignation",
+   "type": "testimony",
+   "status": "verified",
+   "src": "CBS, May 2026"
+  },
+  {
+   "f": "fbi",
+   "t": "mcc",
+   "label": "destroyed master video (item 1B60), June 2024",
+   "type": "official act",
+   "status": "verified",
+   "src": "CBS, 11 Feb 2026"
+  },
+  {
+   "f": "freeman",
+   "t": "epstein",
+   "label": "independent review of the autopsy file",
+   "type": "forensic review",
+   "status": "verified",
+   "src": "Political.org, 2 Oct 2026"
+  },
+  {
+   "f": "shapiro",
+   "t": "wexner",
+   "label": "his firm did legal work for The Limited",
+   "type": "legal representation",
+   "status": "to-verify",
+   "src": "Daily Beast 2019; FBI file to pull"
+  },
+  {
+   "f": "middleton",
+   "t": "bclinton",
+   "label": "White House special assistant",
+   "type": "employment",
+   "status": "verified",
+   "src": "PolitiFact, Feb 2023"
+  },
+  {
+   "f": "middleton",
+   "t": "epstein",
+   "label": "reported signing him in at the White House",
+   "type": "association",
+   "status": "to-verify",
+   "src": "Daily Mail; to verify"
+  },
+  {
+   "f": "giuffre",
+   "t": "epstein",
+   "label": "accuser; 2009 settlement",
    "type": "litigation",
    "status": "verified",
    "src": "epf_s12a"

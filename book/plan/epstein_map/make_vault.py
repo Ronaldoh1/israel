@@ -9,13 +9,14 @@ FOLD={'person':'People','institution':'Institutions','company':'Institutions','g
 EMO={'person':'👤','company':'💼','institution':'🎓','government':'🏛️','document':'📜','place':'📍'}
 ST={'verified':'✅ verified','to-verify':'🔎 to verify','not-established':'⛔ not established'}
 TIER={'adjudicated':'Adjudicated (verdict, ruling or settlement)','sworn-allegation':'Sworn allegation','association':'Documented association (no conduct alleged)','charged':'Charged (died before trial)','withdrawn-allegation':'Allegation withdrawn','':'—'}
-CL={'centre':'The centre','finance':'Finance','money':'Money vehicles','tech':'Tech','politics':'Politics','state':'State','royals':'Royals','culture':'Culture and science','justice':'Justice system','release':'The files fight','intelligence':'Intelligence','reporters':'Those who reported it','places':'Places','abroad':'Accountability abroad'}
+CL={'centre':'The centre','finance':'Finance','money':'Money vehicles','tech':'Tech','politics':'Politics','state':'State','royals':'Royals','culture':'Culture and science','justice':'Justice system','release':'The files fight','intelligence':'Intelligence','reporters':'Those who reported it','places':'Places','abroad':'Accountability abroad','witnesses':'Deaths and lost testimony'}
 safe=lambda s: re.sub(r'[\\/:*?"<>|#^\[\]]','',s)
 fn=lambda i: safe(N[i]['name'])
 # degree from Epstein over verified edges
+NOTIE={'investigation','testimony','litigation','oversight','complaint','court ruling','reporting','document','forensic review'}
 adj=defaultdict(set)
 for x in E:
-    if x['status']=='verified': adj[x['f']].add(x['t']); adj[x['t']].add(x['f'])
+    if x['status']=='verified' and x['type'] not in NOTIE: adj[x['f']].add(x['t']); adj[x['t']].add(x['f'])
 deg={'epstein':0}; q=deque(['epstein'])
 while q:
     u=q.popleft()
@@ -37,7 +38,7 @@ for i,x in N.items():
         b.append(f"- {arrow} [[{fn(o)}]] — {ed['label']} · *{ed['type']}* · {ST[ed['status']]} · source: {ed['src']}")
     open(os.path.join(d,fn(i)+'.md'),'w').write('\n'.join(fm+b)+'\n')
 # loops: short cycles (3–4) over verified edges, excluding pure kinship/office triangles
-SKIP={'investigation','testimony','litigation','oversight','complaint','court ruling','reporting','document'}
+SKIP=NOTIE
 und=defaultdict(dict)
 for x in E:
     if x['status']=='verified' and x['type'] not in SKIP: und[x['f']][x['t']]=x; und[x['t']][x['f']]=x
@@ -89,7 +90,7 @@ This vault is generated from `book/plan/epstein_map/network.json`. Edit the data
 
 ## How to read it
 - **Open the graph view** (Ctrl/Cmd+G). Colours: centre = gold, finance = green, tech = blue, politics/state = purple, royals = magenta, justice/release = slate, intelligence = grey, places = brown, reporters = teal.
-- **Open `Network.canvas`** for the ring layout: Epstein at the centre, then 1° direct, 2° operational and 3° strategic connections.
+- **Open `Network.canvas`** for the ring layout: Epstein at the centre, then 1° direct, 2° operational and 3° strategic connections. Distance counts only real ties (money, employment, office, kinship, correspondence), never an investigator or committee looking at two people.
 - **Every connection line** in a note carries: direction · label · *type* · status · source.
 
 ## Status
@@ -124,7 +125,7 @@ for r,ids in ring.items():
         a=2*math.pi*k/max(len(ids),1)-math.pi/2
         x,y=(0,0) if r==0 else (R[r]*math.cos(a),R[r]*math.sin(a))
         pos[i]=(x,y)
-COL={'centre':'3','finance':'4','money':'4','tech':'5','politics':'6','state':'6','royals':'6','culture':'2','justice':'1','release':'1','intelligence':'0','reporters':'5','places':'2','abroad':'1'}
+COL={'centre':'3','finance':'4','money':'4','tech':'5','politics':'6','state':'6','royals':'6','culture':'2','justice':'1','release':'1','intelligence':'0','reporters':'5','places':'2','abroad':'1','witnesses':'1'}
 for i,(x,y) in pos.items():
     item={'id':i,'type':'file','file':f"{FOLD[N[i]['kind']]}/{fn(i)}.md",'x':int(x-170),'y':int(y-90),'width':340,'height':180}
     if COL.get(N[i]['cluster'],'0')!='0': item['color']=COL[N[i]['cluster']]
@@ -139,6 +140,6 @@ json.dump({'nodes':cn,'edges':ce},open(os.path.join(V,'Network.canvas'),'w'),ind
 # graph colours
 os.makedirs(os.path.join(V,'.obsidian'),exist_ok=True)
 rgb=lambda h:int(h.lstrip('#'),16)
-groups=[('tag:#centre','#D4A62A'),('tag:#finance OR tag:#money','#2E8B57'),('tag:#tech','#3A6FD8'),('tag:#politics OR tag:#state','#7B4FB8'),('tag:#royals','#B0408A'),('tag:#justice OR tag:#release','#5B6B7F'),('tag:#intelligence','#8A8A8A'),('tag:#places','#8B5A2B'),('tag:#reporters','#2A9D9D'),('tag:#abroad','#5B6B7F'),('tag:#culture','#C07A2C')]
+groups=[('tag:#centre','#D4A62A'),('tag:#finance OR tag:#money','#2E8B57'),('tag:#tech','#3A6FD8'),('tag:#politics OR tag:#state','#7B4FB8'),('tag:#royals','#B0408A'),('tag:#justice OR tag:#release','#5B6B7F'),('tag:#intelligence','#8A8A8A'),('tag:#places','#8B5A2B'),('tag:#reporters','#2A9D9D'),('tag:#abroad','#5B6B7F'),('tag:#culture','#C07A2C'),('tag:#witnesses','#A33A3A')]
 json.dump({'colorGroups':[{'query':q,'color':{'a':1,'rgb':rgb(c)}} for q,c in groups],'showTags':False,'showAttachments':False,'hideUnresolved':True},open(os.path.join(V,'.obsidian','graph.json'),'w'),indent=1)
 print('vault',V,'| notes',len(N),'| loops',len(loops),'| degrees',dict(sorted(((v,sum(1 for d in deg.values() if d==v)) for v in set(deg.values())))),'| unreached',[N[i]['name'] for i in N if i not in deg])
