@@ -73,7 +73,7 @@ The motive column is shown as **who alleges it, and on what basis**. Same standa
 
 | Date | Decision (track 1) | Stated reason (track 2) | Alleged motive and basis (track 3) |
 |---|---|---|---|
-| Sep 2007 | Acosta signs the NPA; co-conspirators immunised; victims not told (Bush) | Victims reluctant; case risk | Second-hand "belonged to intelligence" remark; never confirmed. Court found the CVRA violated (2019). |
+| Sep 2007 | Acosta signs the NPA; co-conspirators immunised; victims not told (Bush) | Victims reluctant; case risk | Second-hand "belonged to intelligence" remark (Daily Beast, 2019). Acosta reportedly denied saying it in a transcribed interview with House Oversight (Sept 2025; transcript released 17 Oct 2025); **pull his exact words from the transcript and whether he was sworn**. Court found the CVRA violated (2019); the Eleventh Circuit en banc reversed on the pre-charge question (2021). |
 | 2009–2018 | No federal reinvestigation (Bush → Obama → Trump) | — | Documented **inaction** across three administrations |
 | May 2015 → ? | **DEA-led OCDETF case "Operation Chain Reaction"** (NY-NYS-0829): memo of 18 May 2015 names Epstein **plus 14 redacted targets** for wire transfers tied to drugs and/or prostitution in the USVI and NYC. Reported drugs: ecstasy, ketamine, methamphetamine (Bloomberg, Mar 2026). **No one charged; how it ended is not on the record.** (Obama era → Trump era) | None given | Sen. Wyden (D) is concerned it was ended in the first Trump term "to protect pedophiles". He says Blanche **blocked release of the unredacted memo** (Mar 2026), based on a confidential tip. DEA referred questions to Blanche's office. Unconfirmed. |
 | Jul 2019 | SDNY indicts; Barr declines to recuse from the new case (Trump) | His former firm's 2007 Epstein work was a separate matter (verify his exact statement) | Barr's father hired Epstein at Dalton (documented). No recusal conflict established. |
@@ -87,7 +87,7 @@ The motive column is shown as **who alleges it, and on what basis**. Same standa
 | Nov 2025 | **Trump directs an investigation of Clinton and Democrats** after the memo said nothing to investigate | Pursue the ties | Critics: selective. The sequence is documented. |
 | Dec 2025 | Statutory deadline missed; files posted, then removed | Volume; victim protection | Khanna and Massie: non-compliance |
 | Jan 2026 | DOJ opposes an independent monitor; Engelmayer agrees no jurisdiction | No court authority | Structural: no enforcement mechanism |
-| 30 Jan 2026 | ~3.5M of ~6M pages released. **Victims' names and nude photos exposed while co-conspirators were redacted.** | Errors on 0.001% | Survivors' emergency motion: "most egregious violation of victim privacy" |
+| 30 Jan 2026 | Over 3M pages released that day; almost 3.5M in total under the Act, of ~6M reviewed. **Victims' names and nude photos exposed while co-conspirators were redacted.** | Errors on 0.001% | Survivors' emergency motion: "most egregious violation of victim privacy" |
 | Feb–May 2026 | Bondi hearing; subpoena (5 Republicans join); fired April; unsworn interview May | — | — |
 | 19 May 2026 | **Blanche commits not to recommend a Maxwell pardon** | — | A commitment *against* the "protect" reading; recorded as such |
 | Jun–Oct 2026 | DOJ fights Phang (injunction on foreign-language review); D.C. Circuit refuses a stay (28 Oct) | Complied already; burden | Phang: improper redactions; no redaction log |
@@ -157,7 +157,8 @@ The protocol's own rule (born from the Clinton case, its section on live test ru
 | Bill Clinton: flights early 2000s; photo with Epstein and Maxwell; deposed 27 Feb 2026 | **Documented, *his* record** | Flight manifests; House Oversight photo release (Dec 2025) |
 | Hillary: deposed under subpoena, 26 Feb 2026, about 7 hours | **Documented** | Did not know Epstein; never visited his properties; no knowledge of his crimes; says Bill did not know of the crimes |
 | A photo of Hillary *with Epstein* | **Not found** | The Dec 2025 photo is Bill with Epstein and Maxwell. Send any specific image to be verified. |
-| Maxwell at Chelsea Clinton's 2010 wedding | **Reported; to verify** | Pull the primary source |
+| Maxwell at Chelsea Clinton's 2010 wedding | **Documented (her own account)** | Hillary Clinton to reporters after her deposition, 26 Feb 2026: Maxwell "came as the plus-one, the guest of someone who was invited". She did not say whose. She calls Maxwell a casual acquaintance from Clinton Foundation events. |
+| Epstein money to her own campaign | **Documented (FEC)** | $20,000 in 1999 to her joint fundraising committee with the Democratic Party, while she was a Senate hopeful (FEC filings, per ABC, 2019). A donation record, not evidence of contact or of knowledge. Bill Clinton's 1992 campaign took $1,000. |
 
 ### The spouse classification: knowledge of the husband's *connection* (not his crimes)
 Ron's question, restated exactly: *not "did she know about crimes", but "did she probably know about her husband's connection to Epstein".* That is a fair, checkable question. It is scored separately per spouse and per period, on each woman's own documents.
@@ -166,8 +167,9 @@ Ron's question, restated exactly: *not "did she know about crimes", but "did she
 |---|---|---|---|
 | **Melania Trump** | 2000–2004 | **Documented** (beyond probable) | She is *in* the Feb 2000 photo with her future husband, Epstein and Maxwell. A 2002 email from her to Maxwell (released by DOJ). |
 | Melania Trump | after 2019 | Documented | Public knowledge; her April 2026 statement |
+| Hillary Clinton | 1999 | Documented donation, not contact | Epstein's $20,000 to her joint fundraising committee (FEC). Shows his money reached her campaign; does not show she knew him. |
 | **Hillary Clinton** | 2001–2003 (Bill's flights) | **Probable (inference)** | Shared household; the flights were foundation trips with Secret Service present. No document shows her own contact. |
-| Hillary Clinton | 2010 | **Probable → documented if verified** | Maxwell reported as a guest at their daughter's wedding |
+| Hillary Clinton | 2010 | **Documented (Maxwell's presence); probable (knowledge of the connection)** | Maxwell attended their daughter's wedding as another guest's plus-one, by Hillary Clinton's own account (26 Feb 2026) |
 | Hillary Clinton | after 2019 | Documented | Public knowledge; her deposition |
 
 **Who has been investigated, and how hard.** This is a documented asymmetry that supports Ron's point for one spouse:

@@ -304,7 +304,7 @@
    "kind": "person",
    "cluster": "politics",
    "tier": "",
-   "note": "Deposed by House Oversight on 26 Feb 2026. Spouse of Bill Clinton. Her record is kept separate from his (family guardrail).",
+   "note": "Deposed by House Oversight on 26 Feb 2026: says she never met Epstein, never flew on his plane or visited his properties, and knew nothing of the crimes. Knew Maxwell casually. Her joint fundraising committee took $20,000 from Epstein in 1999. Spouse of Bill Clinton; her record is kept separate from his.",
    "scenes": [],
    "apex": false
   },
@@ -2583,10 +2583,18 @@
   {
    "f": "hclinton",
    "t": "gmax",
-   "label": "Maxwell reported as a guest at Chelsea Clinton's 2010 wedding",
+   "label": "Maxwell at Chelsea Clinton's 2010 wedding as another guest's plus-one; casual acquaintance from foundation events (her account)",
    "type": "association",
-   "status": "to-verify",
-   "src": "to verify"
+   "status": "verified",
+   "src": "her statement, 26 Feb 2026 (AOL/AP)"
+  },
+  {
+   "f": "epstein",
+   "t": "hclinton",
+   "label": "$20,000 to her joint fundraising committee, 1999 (donation, not contact)",
+   "type": "funding",
+   "status": "verified",
+   "src": "FEC filings, per ABC News 2019"
   },
   {
    "f": "house_oversight",

@@ -29,7 +29,7 @@ Status key: **Closed** = an official process finished. **Open** = a process is p
 - The jail preserved video from the **wrong tier** for that first incident.
 - The psychology department emailed more than 70 staff that he needed a cellmate. Reyes was moved out on the morning of 9 August and **no one replaced him**.
 - The recorder had been broken since late July; the working camera could not see his door.
-- The two guards did not do their rounds and **falsified records**. They were charged; the charges were dropped; they were fired.
+- The two guards did not do their rounds and **falsified records**. They were charged in 2019, entered **deferred prosecution agreements**, and the charges were dismissed in 2021 once they met the conditions (community service, cooperation with the Inspector General). The dismissal had a stated mechanism; it was not unexplained.
 - **The FBI authorised destruction of the master video (evidence item 1B60) in June 2024** as "no longer pertinent" (CBS, Feb 2026). The 2025 release was a re-recording with a missing 62 seconds. Bondi attributed the gap to a nightly reset, which the FBI's own section chief called an untested theory. The full footage was later released by Congress and shows nothing unusual in that minute.
 - **Guard Tova Noel:**
   - searched "latest on Epstein in jail" about 40 minutes before he was found;

@@ -157,7 +157,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - **Royals:** Andrew, Mette-Marit, Sarah Ferguson.
   - **Spouses, each on their own record** (the family guardrail):
     - **Melania Trump:** the 2000 photo; the Maxwell emails; the contested claim that Epstein introduced her to Trump; her April 2026 denial; her account vs. his, lined up by date.
-    - **Hillary Clinton:** her February 2026 deposition under subpoena; no photo with Epstein found; Maxwell reported at Chelsea's 2010 wedding (to verify).
+    - **Hillary Clinton:** her February 2026 deposition under subpoena; no photo with Epstein found; Maxwell at Chelsea's 2010 wedding as another guest's plus-one (her own account, 26 Feb 2026); Epstein's $20,000 to her joint fundraising committee in 1999 (FEC).
     - **The spouse classification** (`ep_OPERATIONS_v1.md`, Part E): knowledge of the husband's *connection*, not his crimes, scored per spouse and per period. Melania 2000–04: documented (in the photo; her 2002 email to Maxwell). Hillary 2001–10: probable (inference). Both documented after 2019.
     - **The process asymmetry:** Hillary was subpoenaed and deposed for 7 hours; Melania was asked but not subpoenaed.
 - **The loops chapter:** documented circles where A → B → C → A. Each one is tested.
@@ -180,7 +180,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
 ### Part 6 · The Agency Architectures: CIA, FBI, NSA, Palantir and Israel
 *Four chapters built the same way: what is documented, what is contested, what is not established, and where each argument breaks.*
 1. **CIA, Mossad and the intelligence question** (epn_s01, cia_s14, epx_s08):
-   - The second-hand Acosta "belonged to intelligence" remark, never confirmed.
+   - The second-hand Acosta "belonged to intelligence" remark (2019), which Acosta reportedly denied to House Oversight in Sept 2025 (verify wording and whether sworn).
    - The October 2020 FBI confidential-source report (EFTA00090314). Its claims are about Barak, Dershowitz, Mossad and Kushner, and they are raw, unverified source reporting, quoted as such.
    - Ben-Menashe as a single, excluded source.
    - Robert Maxwell's state funeral: documented, and not transitive.
@@ -346,7 +346,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
 - **The six recurring mechanisms:** access, reputation over victims, early reports ignored, settlement and silence, shielding the helpers, time as a weapon.
 - **The Church** (Boston 2002; Pennsylvania 2018; France 2021; Ireland; Australia; the McCarrick report), cross-linked to *The Vatican Architecture* and *The Theology Shield*.
 - **Savile.**
-- **Nassar:** the FBI's own failure, confirmed by DOJ's Inspector General in 2021.
+- **Nassar:** the FBI's own failure, confirmed by DOJ's Inspector General in July 2021.
 - **Enterprises charged vs. the enterprise immunised.** R. Kelly was convicted under RICO with his staff's roles charged; Combs was tried on the same theory. Epstein's staff were immunised.
 - **Rotherham. Dutroux. Weinstein's private intelligence firm.**
 - **The false positives:** Midland, Franklin, Pizzagate, Kincora.

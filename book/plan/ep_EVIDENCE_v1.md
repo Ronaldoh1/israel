@@ -33,7 +33,7 @@ That is the right question, and much of it can be answered from the record. This
 | 12 | **Bank records** | Civil discovery (USVI, the victims' class) | Courts; banks | Suspicious-activity reports released for the first time in 2026; JPMorgan internal warnings | Partly public |
 | 13 | **The estate's own files** | Kept by executors Indyke and Kahn | Estate | Photos (about 95,000) and documents given to House Oversight (2025) | Partly released by Congress |
 | 14 | **Grand-jury materials** (Florida, SDNY) | Sealed | Courts | Three judges refused DOJ requests to unseal before the Act (2025) | Sealed |
-| 15 | **The released set** | ~6M pages identified | DOJ | ~3.5M released (30 Jan 2026). Foreign-language documents under a court-ordered review (D.C. Circuit refused a pause, 28 Oct 2026). Victim interviews withheld. | **About half withheld** |
+| 15 | **The released set** | ~6M pages identified | DOJ | Almost 3.5M released in total by 30 Jan 2026 (over 3M that day). Foreign-language documents under a court-ordered review (D.C. Circuit refused a pause, 28 Oct 2026). Victim interviews withheld. | **About half withheld** |
 | 16 | **France** | Brunel case (closed 2022–23); new probes 2026 | Paris prosecutors | Re-examining Epstein's computers, phone records and address books; requests for international assistance planned | Open |
 
 ---

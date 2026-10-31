@@ -37,7 +37,7 @@ n('ellison','Larry Ellison','person','tech','In the contact book with three numb
 # --- politics & state
 n('trump','Donald Trump','person','politics','Social friendship from about 1987 to 2004 (photos, 2002 quote); says he banned Epstein from Mar-a-Lago. Named over 1,000 times in the files. No accuser has alleged conduct in a proceeding that produced a finding.','association',['epf_s15','epf_s10d'],apex=True)
 n('bclinton','Bill Clinton','person','politics','Flights in the early 2000s (manifests). Denies knowledge of the crimes. Deposed by House Oversight on 27 Feb 2026.','association',['epf_s16'])
-n('hclinton','Hillary Clinton','person','politics','Deposed by House Oversight on 26 Feb 2026. Spouse of Bill Clinton. Her record is kept separate from his (family guardrail).','',[])
+n('hclinton','Hillary Clinton','person','politics','Deposed by House Oversight on 26 Feb 2026: says she never met Epstein, never flew on his plane or visited his properties, and knew nothing of the crimes. Knew Maxwell casually. Her joint fundraising committee took $20,000 from Epstein in 1999. Spouse of Bill Clinton; her record is kept separate from his.','',[])
 n('mandelson','Peter Mandelson','person','politics','Former UK cabinet minister and US ambassador. Friendship 2002–2011; the files show him passing government information. Arrested 24 Feb 2026 (misconduct in public office); bailed.','association',['epn_s04'])
 n('global_counsel','Global Counsel','company','politics','Lobbying firm co-founded by Mandelson (2010). He kept a stake of about 21%. Palantir\'s UK lobbyist from 2018.','',['epn_s04'])
 n('barak','Ehud Barak','person','state','Former Israeli PM and defence minister. Post-2008 visits and business with Epstein; Côte d\'Ivoire surveillance brokering 2012–14. A separate published allegation, which he denies, is kept apart from the business record.','association',['epn_s02','epx_s08'])
@@ -278,7 +278,8 @@ e('dea','epstein','Operation Chain Reaction target (memo 18 May 2015); never cha
 e('blanche','dea','reported to have blocked release of the unredacted memo (Wyden, tip-based)','official act',T,'Senate Finance, 18 Mar 2026')
 e('melania','trump','knew of his Epstein connection, 2000–04: present in the Feb 2000 photo','knowledge of spouse\'s connection',V,'Getty/Davidoff photo; 2002 email')
 e('hclinton','bclinton','probably knew of his Epstein connection, 2001–10 (shared household; public flights); no document of her own contact','knowledge of spouse\'s connection',P,'inference; see ep_OPERATIONS Part E')
-e('hclinton','gmax','Maxwell reported as a guest at Chelsea Clinton\'s 2010 wedding','association',T,'to verify')
+e('hclinton','gmax','Maxwell at Chelsea Clinton\'s 2010 wedding as another guest\'s plus-one; casual acquaintance from foundation events (her account)','association',V,'her statement, 26 Feb 2026 (AOL/AP)')
+e('epstein','hclinton','$20,000 to her joint fundraising committee, 1999 (donation, not contact)','funding',V,'FEC filings, per ABC News 2019')
 e('house_oversight','melania','testimony requested by the minority (Apr 2026); no subpoena','oversight',V,'Washington Times, 10 Apr 2026')
 
 # --- evidence chain of custody (see ep_EVIDENCE_v1.md)
