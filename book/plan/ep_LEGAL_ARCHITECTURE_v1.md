@@ -100,6 +100,62 @@ if ([doj respondsToSelector:@selector(prosecute:)]) { /* the branch that was nev
 ```
 In plain language: each rule makes accountability a method the executive *may* call, not one it *must* call. For people at the bottom, the call is automatic. For people at the top, someone has to choose to make it, and the record shows no one did.
 
+## D2. The tools built for exactly this, and whether they were used
+
+Ron's point: *the laws you'd expect to go after a network like this exist, so why didn't they?* Congress has built these tools over a century. The ledger shows which were used, and against whom.
+
+| Tool (year) | What it does | Used here? | Used elsewhere? |
+|---|---|---|---|
+| **Mann Act** (1910; 18 U.S.C. §§2421–2423) | Transporting people, including minors, for sex | **Yes, against Maxwell** (convicted on transport counts) | Routinely |
+| **RICO** (1970) | Charges an *enterprise*: the recruiters, schedulers, pilots and payers together. Under DOJ's own manual, every RICO case needs **sign-off from Main Justice** (the Organized Crime and Gang Section) | **Never charged** | R. Kelly, convicted 2021; NXIVM's Raniere, 2019 |
+| **Trafficking Victims Protection Act** (2000; 18 U.S.C. §1591) | Sex trafficking of minors | **Yes, against Epstein (2019) and Maxwell** | — |
+| **TVPA "benefits from participation in a venture"** (2003/2008 amendments; civil claim, §1595) | Makes liable those who *profit* from trafficking | **Only civilly.** A federal judge let the Virgin Islands and survivors proceed against JPMorgan (2023), which led to $365M in settlements. **No criminal case against any bank or executive** | — |
+| **The buyer clause** (Justice for Victims of Trafficking Act, 2015, which added "patronizes or solicits" to §1591) | Makes the **men who pay** for a minor traffickers under federal law | **Never used against any client.** Note the date limit: it was made explicit in 2015, and most alleged client conduct came earlier, when courts were split on whether buyers were covered | Used against buyers in sting cases nationwide |
+| **No time limit for child sex trafficking** (2006; 18 U.S.C. §3299) | Removes the statute-of-limitations defence | **Available, unused.** Time is not what stopped these prosecutions | — |
+| **Bank Secrecy Act / anti-money-laundering rules** (1970; strengthened 2001) | Criminal liability for banks that fail to report or stop suspicious money | **Civil settlements only** | **TD Bank pleaded guilty** to Bank Secrecy Act crimes and paid about $3B (2024) |
+| **Obstruction of records** (18 U.S.C. §1519, Sarbanes-Oxley, 2002) | Destroying or concealing evidence | **Never tested.** The Palm Beach computers were removed days before the police search (2005) | Common |
+| **Witness tampering** (18 U.S.C. §1512) | Intimidating witnesses | **Never charged in the U.S.** Giuffre alleged a harassment campaign; London police said they were "actively looking into" a report that Prince Andrew sought to dig up dirt on her | Common |
+| **Conspiracy** (18 U.S.C. §371; §1594(c)) | Charges people who agreed to the crime, even if they didn't commit it themselves | **Maxwell only.** The Dec 2019 SDNY memo, "Investigation into Potential Co-Conspirators of Jeffrey Epstein", weighed others and charged none | — |
+
+**What the tools show.** Congress did build the instruments for an enterprise case:
+- RICO for the enterprise;
+- the 2008 "venture" clause for those who profit;
+- the 2015 buyer clause for the men who pay;
+- the 2006 removal of time limits.
+
+Each was either **never used** or **used only in civil cases, where money changes hands and no one is convicted**. The tools exist. Using them is discretionary (row 1), and in the case of RICO, discretionary at Main Justice.
+
+## D3. The structure of DOJ, and the gap built into it
+
+How the department is wired:
+- The **Attorney General** and **Deputy AG** are appointed by the President and can be removed by him. So are all **93 U.S. Attorneys**, who decide what gets charged in their districts.
+- **RICO**, and certain other charges, need sign-off from **Main Justice**.
+- The **FBI** investigates. Its director serves a 10-year term but can be fired.
+- **Oversight is internal:**
+  - The Office of Professional Responsibility reports to the AG.
+  - The Inspector General can investigate but **cannot prosecute**.
+  - The Office of Legal Counsel's opinions bind the executive branch.
+
+**The gap.** Most conflicts of interest can be handled inside the structure: a prosecutor recuses, someone else takes the case. The hard case is when **the people with a possible conflict sit at the top of the structure itself**. For example, the President is named in the files, and his former personal lawyer is the Deputy AG, later acting AG.
+- Congress built an answer to that in 1978: the **independent counsel** law (Ethics in Government Act), under which judges appointed the prosecutor.
+- **Both parties let it expire in 1999.**
+- Its replacement, the special-counsel regulations (28 C.F.R. Part 600), leaves it **to the Attorney General** to decide whether to appoint one.
+
+**The record on Epstein:**
+- **July 2025:** the White House said the President would not recommend a special prosecutor.
+- **26 October 2026:** House Democrats, releasing a 50-page report, asked for a special counsel on the President's Epstein ties.
+- **No special counsel has been appointed** (status as of 31 Oct 2026).
+
+**Why this is the keystone.** Every other gate in the ledger leads back to discretion. The one mechanism designed to take discretion away from a conflicted executive no longer exists. Whoever is in power, it is the gap that keeps the whole structure in place. The same gap would protect any administration's friends.
+
+## D4. One more rule: why survivors keep their own list private
+
+- **Defamation exposure.** An allegation made in a **court filing** has litigation privilege and can't be the basis of a defamation suit. The same allegation said **publicly** can.
+- That is why nearly every named allegation in this case lives in depositions and lawsuits rather than press conferences.
+- It is also why the survivors who announced, in September 2025, that they would compile their own list of names said it would be done **confidentially**. A survivor who published names would face lawsuits from some of the richest men in the world. The people she named would face nothing.
+
+This rule protects people from false accusations, and the Dershowitz case (see `ep_ALLEGATIONS_REGISTER`) shows why it matters. Its cost falls on the people with the least money.
+
 ## E. What reform would change, and who has proposed it
 - **Make victims' rights attach before charges:** the CVRA reform bills (introduced in the 116th and 117th Congresses; not enacted).
 - **Require court review of NPAs that immunise unnamed third parties:** no bill found. *Check current proposals.*
