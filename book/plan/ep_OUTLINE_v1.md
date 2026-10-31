@@ -223,6 +223,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - the defence campaign to remove her;
   - Acosta's agreement, the co-conspirator immunity clause, and victims kept in the dark;
   - Judge Marra's 2019 ruling that the government broke the law (epf_s06, epf_s07);
+  - the Eleventh Circuit en banc reversal (15 Apr 2021): victims' rights attach only after charges;
   - the 2020 OPR finding of "poor judgment".
 - **2019, the death:**
   - 36 days from arrest to death.
@@ -230,6 +231,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - The medical examiner's ruling and the pathologist who disputed it.
   - The 16 August 2019 FBI memo on moving the body. To be verified before use.
   - What the death foreclosed (epf_s08).
+- **The Legal Architecture (new chapter, `ep_LEGAL_ARCHITECTURE_v1.md`):** the 18 rules that protect the top, each classed as design or departure, each with who holds the key. The mechanism is "discretion stacking": about 12 of the 18 gates are executive discretion, with courts and victims kept out by doctrine. Three precedents (Nassar's FBI settlement, the Pennsylvania grand jury, Weinstein's NDAs). The "illusion of action" test with both columns, and the reform list.
 - **Two-tier justice, with names:** Hastert prosecuted for how he structured payments; the Belgian Dutroux case and the reform it forced (epf_s10). Comparison, not equivalence.
 - Maxwell after conviction:
   - the Blanche interviews and the transfer to a minimum-security camp (epf_s07c);
