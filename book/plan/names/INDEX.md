@@ -23,7 +23,7 @@
 | A | Reid Hoffman | 9 | 1 | 8 | [reid-hoffman.md](reid-hoffman.md) |
 | A | Andrew Mountbatten-Windsor | 1 | 1 | 8 | [andrew-mountbatten-windsor.md](andrew-mountbatten-windsor.md) |
 | A | Peter Mandelson | 9 | 0 | 13 | [peter-mandelson.md](peter-mandelson.md) |
-| A | Ehud Barak | 35 | 45 | 27 | [ehud-barak.md](ehud-barak.md) |
+| A | Ehud Barak | 31 | 40 | 27 | [ehud-barak.md](ehud-barak.md) |
 | A | Thorbjorn Jagland | 0 | 0 | 3 | [thorbjorn-jagland.md](thorbjorn-jagland.md) |
 | A | Alexander Acosta | 11 | 13 | 23 | [alexander-acosta.md](alexander-acosta.md) |
 | A | Alan Dershowitz | 1 | 1 | 10 | [alan-dershowitz.md](alan-dershowitz.md) |

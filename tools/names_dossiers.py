@@ -19,7 +19,7 @@ PEOPLE = {
  'Hillary Clinton': [r'Hillary'], 'Howard Lutnick': [r'Lutnick'], 'Larry Summers': [r'Summers\b'], 'Steve Bannon': [r'Bannon'],
  'Bill Gates': [r'\bGates\b(?! Foundation)', r'Bill Gates'], 'Elon Musk': [r'Elon Musk', r'\bMusk\b(?!, Kimbal)'], 'Peter Thiel': [r'Thiel'],
  'Reid Hoffman': [r'Hoffman\b'], 'Andrew Mountbatten-Windsor': [r'Prince Andrew', r'Mountbatten-Windsor', r'Duke of York'],
- 'Peter Mandelson': [r'Mandelson'], 'Ehud Barak': [r'\bBarak\b'], 'Thorbjorn Jagland': [r'Jagland'],
+ 'Peter Mandelson': [r'Mandelson'], 'Ehud Barak': [r'(?<!Aharon )\bBarak\b(?! Hiram)(?! Obama)'], 'Thorbjorn Jagland': [r'Jagland'],
  'Alexander Acosta': [r'Acosta'], 'Alan Dershowitz': [r'Dershowitz'], 'Jean-Luc Brunel': [r'Brunel'],
  # B
  'Steven Hoffenberg': [r'Hoffenberg'], 'Fabrice Aidan': [r'Aidan\b'], 'Tom Pritzker': [r'Pritzker'], 'Glenn Dubin': [r'Dubin'],
