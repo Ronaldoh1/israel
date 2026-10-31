@@ -1,0 +1,221 @@
+<title>Epstein Network Graph</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working case board. Controls on a strip, graph on the left, the selected node's record on the right; stacks on phones. */
+:root{
+  --bg:#eef0f2; --panel:#f8f9fa; --ink:#1c2430; --muted:#4f5b6b; --line:#c9cfd6;
+  --accent:#b5641b; --ver:#2f6f9f; --tov:#8a6d1a; --nest:#b23a3a; --hi:#d98b2b;
+  --k-person:#2f6f9f; --k-company:#6b5ca5; --k-institution:#2e7d6b; --k-government:#7a4f2a; --k-place:#5f7182; --k-document:#a0476b;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141a21; --panel:#1b232c; --ink:#e3e8ee; --muted:#a3afbd; --line:#334150;
+  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650;
+  --k-person:#6fb0e0; --k-company:#a99ae0; --k-institution:#62c2a8; --k-government:#d19a63; --k-place:#9fb1c3; --k-document:#e083ab;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141a21; --panel:#1b232c; --ink:#e3e8ee; --muted:#a3afbd; --line:#334150;
+  --accent:#e0913f; --ver:#6fb0e0; --tov:#d7b44e; --nest:#ec7373; --hi:#f0a650;
+  --k-person:#6fb0e0; --k-company:#a99ae0; --k-institution:#62c2a8; --k-government:#d19a63; --k-place:#9fb1c3; --k-document:#e083ab;
+  color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}
+h1{font-family:var(--f-display);font-weight:700;font-size:1.45rem;margin:0;letter-spacing:.01em;text-wrap:balance}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.top p{margin:0;color:var(--muted);max-width:70ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px}
+.bar label{display:flex;gap:6px;align-items:center;color:var(--muted)}
+select,input[type=range],button{font:inherit}
+select,button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:4px 8px}
+button{cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.on{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px;min-height:520px}
+.board{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;min-height:460px}
+svg{width:100%;height:100%;display:block;touch-action:none}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow:auto;min-width:0;max-height:78vh}
+.side h2{font-family:var(--f-display);font-size:1.15rem;margin:0 0 2px}
+.kind{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.note{margin:8px 0 12px}
+.edge{border-top:1px solid var(--line);padding:6px 0;font-size:13px;cursor:pointer}
+.edge:hover .who{color:var(--accent)}
+.edge .who{font-weight:500}
+.edge .src{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.pill{font-family:var(--f-mono);font-size:10.5px;padding:0 5px;border-radius:3px;border:1px solid currentColor;margin-left:4px;white-space:nowrap}
+.s-verified{color:var(--ver)} .s-to-verify{color:var(--tov)} .s-not-established{color:var(--nest)} .s-probable{color:var(--tov)}
+.legend{position:absolute;left:10px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11px;color:var(--muted);background:color-mix(in srgb,var(--panel) 85%,transparent);padding:4px 6px;border-radius:4px;max-width:calc(100% - 20px)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.stat{position:absolute;right:10px;top:8px;font-family:var(--f-mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.loops li{cursor:pointer;margin:3px 0} .loops li:hover{color:var(--accent)}
+.rule{font-size:12px;color:var(--muted);border-left:2px solid var(--accent);padding-left:8px;margin:10px 0}
+text{font-family:var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:3px;pointer-events:none}
+@media (max-width:820px){.main{grid-template-columns:1fr}.board{min-height:420px}.side{max-height:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="top">
+  <h1>Epstein Network Graph</h1>
+  <p>Every documented tie as an edge. Expand breadth-first from any node, walk the inbound edges upward, find loops, or trace the shortest path between two people.</p>
+</div>
+
+<div class="bar" role="toolbar" aria-label="Graph controls">
+  <label for="root">Start from <select id="root"></select></label>
+  <label for="depth">Depth <input id="depth" type="range" min="1" max="4" value="1"> <span id="dval">1</span></label>
+  <button id="mExpand" class="on" type="button">Expand</button>
+  <button id="mUp" type="button">Walk upward</button>
+  <button id="mPath" type="button">Path between two</button>
+  <label for="tv"><input id="tv" type="checkbox" checked> To verify</label>
+  <label for="ne"><input id="ne" type="checkbox"> Not established</label>
+  <button id="reset" type="button">Reset</button>
+</div>
+
+<div class="main">
+  <div class="board">
+    <svg id="g" aria-label="Network graph"></svg>
+    <div class="stat" id="stat"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+  <aside class="side" id="side" aria-live="polite"></aside>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const DATA = __DATA__;
+const N = new Map(DATA.nodes.map(n => [n.id, n]));
+const E = DATA.edges;
+const PROBE = new Set(['investigation','testimony','litigation','reporting','claim','complaint','oversight','allegation to Congress','forensic review','court ruling']);
+const DEG=new Map(); E.forEach(e=>{ if(e.status==='not-established') return; DEG.set(e.f,(DEG.get(e.f)||0)+1); DEG.set(e.t,(DEG.get(e.t)||0)+1); });
+const KINDS = ['person','company','institution','government','place','document'];
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const $ = id => document.getElementById(id);
+
+let mode = 'expand', expanded = new Set(), sel = null, pathA = null, hiNodes = new Set(), hiEdges = new Set();
+
+function walkable(e){ if(e.status==='not-established') return false; if(e.status!=='verified' && !$('tv').checked) return false; return true; }
+function adjOf(){ const a=new Map(); E.forEach((e,i)=>{ if(!walkable(e)) return; [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!a.has(u)) a.set(u,[]); a.get(u).push([v,i]); }); }); return a; }
+
+function visibleSet(){
+  const adj = adjOf(), depth = new Map([[ $('root').value, 0 ]]), q=[$('root').value], D=+$('depth').value;
+  while(q.length){ const u=q.shift(); if(depth.get(u)>=D) continue; for(const [v] of adj.get(u)||[]) if(!depth.has(v)){ depth.set(v,depth.get(u)+1); q.push(v); } }
+  for(const x of expanded){ if(!depth.has(x)) continue; for(const [v] of adj.get(x)||[]) if(!depth.has(v)) depth.set(v, depth.get(x)+1); }
+  hiNodes.forEach(x=>{ if(!depth.has(x)) depth.set(x,9); });
+  return depth;
+}
+
+function upwardFrom(id){
+  const seen=new Set([id]), q=[id], es=new Set();
+  while(q.length){ const u=q.shift(); E.forEach((e,i)=>{ if(e.t!==u||!walkable(e)||PROBE.has(e.type)) return; es.add(i); if(!seen.has(e.f)){ seen.add(e.f); q.push(e.f); } }); }
+  return {nodes:seen, edges:es};
+}
+function shortestPath(a,b){
+  const adj=adjOf(), prev=new Map([[a,null]]), q=[a];
+  while(q.length){ const u=q.shift(); if(u===b) break; for(const [v,i] of adj.get(u)||[]) if(!prev.has(v)){ prev.set(v,[u,i]); q.push(v); } }
+  if(!prev.has(b)) return null;
+  const nodes=new Set([b]), edges=new Set(); let c=b; while(prev.get(c)){ const [p,i]=prev.get(c); edges.add(i); nodes.add(p); c=p; }
+  return {nodes,edges};
+}
+function findLoops(){
+  const root=$('root').value, tie=new Map(), key=new Map();
+  E.forEach((e,i)=>{ if(e.status!=='verified'||PROBE.has(e.type)||e.f===root||e.t===root) return;
+    [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!tie.has(u)) tie.set(u,new Set()); tie.get(u).add(v); key.set(u+'|'+v,i); }); });
+  const out=new Map();
+  function dfs(s,cur,path){ for(const v of tie.get(cur)||[]){
+    if(v===s && path.length>=3){ let c=[...path]; const k=[...c].sort().join(','); if(!out.has(k)) out.set(k,c); }
+    else if(!path.includes(v) && path.length<5 && v>s) dfs(s,v,[...path,v]); } }
+  for(const s of tie.keys()) dfs(s,s,[s]);
+  return [...out.values()].map(c=>({c, edges:new Set(c.map((u,j)=>key.get(u+'|'+c[(j+1)%c.length])))}))
+    .filter(l=>![...l.edges].every(i=>['kinship','office','ownership'].includes(E[i].type))).sort((a,b)=>a.c.length-b.c.length);
+}
+
+const svg=d3.select('#g'), gz=svg.append('g'), gl=gz.append('g'), gn=gz.append('g');
+svg.call(d3.zoom().scaleExtent([.3,4]).on('zoom',ev=>gz.attr('transform',ev.transform)));
+let sim=null, posCache=new Map();
+
+function draw(){
+  const depth=visibleSet(), ids=[...depth.keys()];
+  const nodes=ids.map(id=>Object.assign({id, d:depth.get(id)}, posCache.get(id)||{}));
+  const links=[]; E.forEach((e,i)=>{ if(!depth.has(e.f)||!depth.has(e.t)) return;
+    if(e.status==='not-established' && !$('ne').checked) return; if(e.status!=='verified'&&e.status!=='not-established'&&!$('tv').checked) return;
+    links.push({source:e.f,target:e.t,i}); });
+  const W=svg.node().clientWidth, H=svg.node().clientHeight;
+  $('stat').textContent = `${nodes.length} nodes · ${links.length} edges`;
+  const ls=gl.selectAll('line').data(links,d=>d.i).join('line')
+    .attr('stroke',d=>{ const s=E[d.i].status; return hiEdges.has(d.i)?css('--hi'): s==='verified'?css('--line'): s==='not-established'?css('--nest'):css('--tov'); })
+    .attr('stroke-width',d=>hiEdges.has(d.i)?2.6:1.1)
+    .attr('stroke-dasharray',d=>{ const s=E[d.i].status; return s==='verified'?null: s==='not-established'?'2 4':'6 4'; })
+    .attr('stroke-opacity',d=>hiEdges.size&&!hiEdges.has(d.i)?.35:.95);
+  const ng=gn.selectAll('g.n').data(nodes,d=>d.id).join(enter=>{ const g=enter.append('g').attr('class','n').style('cursor','pointer').attr('tabindex',0).attr('role','button');
+      g.append('circle'); g.append('title'); g.append('text').attr('dy',-11).attr('text-anchor','middle').attr('font-size',11); return g; });
+  ng.attr('aria-label',d=>N.get(d.id).name); ng.select('title').text(d=>N.get(d.id).name);
+  ng.select('circle').attr('r',d=>d.id===$('root').value?11:d.d===0?10:7)
+    .attr('fill',d=>css('--k-'+(KINDS.includes(N.get(d.id).kind)?N.get(d.id).kind:'place')))
+    .attr('stroke',d=>(d.id===sel||hiNodes.has(d.id))?css('--hi'):css('--panel')).attr('stroke-width',d=>(d.id===sel||hiNodes.has(d.id))?3:1.5)
+    .attr('opacity',d=>hiNodes.size&&!hiNodes.has(d.id)?.35:1);
+  ng.select('text').text(d=>{ const s=N.get(d.id).name; return s.length>26?s.slice(0,24)+'…':s; })
+    .attr('opacity',d=>(nodes.length<40||d.id===sel||hiNodes.has(d.id)||d.id===$('root').value||(DEG.get(d.id)||0)>=7)?1:0);
+  ng.on('click',(ev,d)=>pick(d.id)).on('keydown',(ev,d)=>{ if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();pick(d.id);} });
+  ng.call(d3.drag().on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
+    .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on('end',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+  if(sim) sim.stop();
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(d=>d.id).distance(70).strength(.5))
+    .force('charge',d3.forceManyBody().strength(-170)).force('center',d3.forceCenter(W/2,H/2)).force('collide',d3.forceCollide(16))
+    .on('tick',()=>{ ls.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+      ng.attr('transform',d=>`translate(${d.x},${d.y})`); nodes.forEach(n=>posCache.set(n.id,{x:n.x,y:n.y})); });
+  if(reduce){ sim.stop(); for(let k=0;k<250;k++) sim.tick(); sim.on('tick')(); }
+}
+
+function pick(id){
+  if(mode==='expand'){ sel=id; expanded.add(id); hiNodes=new Set(); hiEdges=new Set(); }
+  else if(mode==='up'){ sel=id; const r=upwardFrom(id); hiNodes=r.nodes; hiEdges=r.edges; }
+  else if(mode==='path'){ if(!pathA||pathA===id){ pathA=id; sel=id; hiNodes=new Set([id]); hiEdges=new Set(); }
+    else { const r=shortestPath(pathA,id); sel=id; hiNodes=r?r.nodes:new Set([pathA,id]); hiEdges=r?r.edges:new Set(); side(id, r?null:'No documented path between these two.'); pathA=null; draw(); return; } }
+  side(id); draw();
+}
+
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function side(id,msg){
+  const n=N.get(id), rows=E.map((e,i)=>[e,i]).filter(([e])=>e.f===id||e.t===id)
+    .sort((a,b)=>(a[0].status>b[0].status)-(a[0].status<b[0].status));
+  let h=`<div class="kind">${esc(n.kind)} · ${esc(n.cluster)}</div><h2>${esc(n.name)}</h2>`;
+  if(msg) h+=`<div class="rule">${esc(msg)}</div>`;
+  if(mode==='up') h+=`<div class="rule">Highlighted: every documented edge that sends something to ${esc(n.name)}, followed upward until nothing sends further. Probes (investigations, testimony, lawsuits) are not ties and are skipped.</div>`;
+  if(mode==='path' && pathA===id) h+=`<div class="rule">Now pick a second node.</div>`;
+  h+=`<p class="note">${esc(n.note||'')}</p><div class="kind">${rows.length} edges</div>`;
+  for(const [e,i] of rows){ const other=e.f===id?e.t:e.f, dir=e.f===id?'→':'←';
+    h+=`<div class="edge" data-go="${esc(other)}" tabindex="0"><span class="who">${dir} ${esc(N.get(other).name)}</span><span class="pill s-${esc(e.status)}">${esc(e.status)}</span><br>${esc(e.label)} <span class="src">· ${esc(e.type)} · ${esc(e.src)}</span></div>`; }
+  $('side').innerHTML=h;
+  $('side').querySelectorAll('[data-go]').forEach(el=>{ const go=()=>pick(el.dataset.go); el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
+}
+function intro(){
+  const L=findLoops();
+  let h=`<div class="kind">How to use</div><h2>Start at a node, expand outward</h2>
+  <p class="note"><b>Expand</b>: click a node to add its neighbours. <b>Walk upward</b>: click a node to light every documented line that sent it something, back to where the record stops. <b>Path between two</b>: click two nodes for the shortest documented chain.</p>
+  <div class="rule">An edge is a document: a payment, contract, email, flight, appointment or filing. Solid = verified; dashed = lead to verify; dotted red = not established, shown only when switched on and never used to walk.</div>
+  <div class="kind">${L.length} loops in verified ties (start node left out)</div><ol class="loops">`;
+  L.forEach((l,j)=>{ h+=`<li data-l="${j}" tabindex="0">${l.c.map(x=>esc(N.get(x).name)).join(' → ')}</li>`; });
+  h+='</ol><div class="rule">A loop is a lead to examine, not a finding.</div>';
+  $('side').innerHTML=h;
+  $('side').querySelectorAll('[data-l]').forEach(el=>{ const go=()=>{ const l=L[+el.dataset.l]; hiNodes=new Set(l.c); hiEdges=l.edges; sel=null; draw(); }; el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
+}
+
+const roots=[...N.values()].sort((a,b)=>a.name.localeCompare(b.name));
+$('root').innerHTML=roots.map(n=>`<option value="${esc(n.id)}"${n.id==='epstein'?' selected':''}>${esc(n.name)}</option>`).join('');
+$('legend').innerHTML=KINDS.map(k=>`<span><i style="background:var(--k-${k})"></i>${k}</span>`).join('');
+function setMode(m){ mode=m; pathA=null; ['mExpand','mUp','mPath'].forEach(b=>$(b).classList.toggle('on', b==={expand:'mExpand',up:'mUp',path:'mPath'}[m])); hiNodes=new Set(); hiEdges=new Set(); draw(); if(sel) side(sel); else intro(); }
+$('mExpand').onclick=()=>setMode('expand'); $('mUp').onclick=()=>setMode('up'); $('mPath').onclick=()=>setMode('path');
+$('depth').oninput=()=>{ $('dval').textContent=$('depth').value; draw(); };
+$('root').onchange=()=>{ expanded.clear(); sel=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); draw(); intro(); };
+$('tv').onchange=draw; $('ne').onchange=draw;
+$('reset').onclick=()=>{ expanded.clear(); sel=null; pathA=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); $('depth').value=1; $('dval').textContent='1'; setMode('expand'); };
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+addEventListener('resize',()=>draw());
+draw(); intro();
+</script>

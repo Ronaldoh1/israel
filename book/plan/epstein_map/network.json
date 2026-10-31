@@ -1,5 +1,5 @@
 {
- "built": "2026-10-30",
+ "built": "2026-10-31",
  "nodes": [
   {
    "id": "epstein",
@@ -1377,6 +1377,336 @@
    "cluster": "vendors",
    "tier": "",
    "note": "Brunel's agency; funded by Epstein (Guardian). The modelling recruitment route.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "dalton",
+   "name": "Dalton School",
+   "kind": "institution",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Hired Epstein to teach maths and physics, Sept 1974, without a degree. Who recommended him is not established.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "dbarr",
+   "name": "Donald Barr",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Dalton headmaster; announced his resignation Feb 1974, before Epstein started. Whether he had any role in the hiring is not established (Snopes).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "greenberg",
+   "name": "Alan \"Ace\" Greenberg",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Bear Stearns; hired Epstein in 1976 after a Dalton parent called; Epstein had tutored his son.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "bear",
+   "name": "Bear Stearns",
+   "kind": "company",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Epstein 1976–81; limited partner 1980; left March 1981.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "leese",
+   "name": "Douglas Leese",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "British defence contractor (d. 2011), in the UK parliamentary record re Al Yamamah. Mentor of sorts to Epstein per his son; introductions to Khashoggi and Robert Maxwell per Hoffenberg only. Epstein denied knowing him (2002).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "khashoggi",
+   "name": "Adnan Khashoggi",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Arms dealer. Introduction to Epstein is Hoffenberg's claim only.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "meister",
+   "name": "Robert Meister",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Insurance executive, friend of Wexner; sat next to Epstein on a flight to Palm Beach, which launched the Wexner tie (NYT 2025).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "levin",
+   "name": "Harold Levin",
+   "kind": "person",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Wexner's financial adviser; warned \"I smell a rat\"; later removed at Epstein's urging (NYT 2025).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "usvi_edc",
+   "name": "USVI Economic Development Commission",
+   "kind": "government",
+   "cluster": "money",
+   "tier": "",
+   "note": "Granted tax benefits: $219.8M (1999–2012) and $80.6M (2013–18) to Financial Trust/Southern Trust, per JPMorgan's filing.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "cdejongh",
+   "name": "Cecile de Jongh",
+   "kind": "person",
+   "cluster": "money",
+   "tier": "",
+   "note": "Wife of Governor John de Jongh. Managed Epstein's USVI companies for eight years (salary, bonuses, tuition); certified him a bona fide resident in 2009 while he served his sentence (JPMorgan filing).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "jdejongh",
+   "name": "John de Jongh",
+   "kind": "person",
+   "cluster": "money",
+   "tier": "",
+   "note": "USVI governor 2007–15. Spouse of Cecile de Jongh; his record kept separate.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "seckel",
+   "name": "Al Seckel",
+   "kind": "person",
+   "cluster": "reputation",
+   "tier": "",
+   "note": "Managed search-result clean-up 2010–11; wife is Maxwell's sister; died 2015.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ph_seo",
+   "name": "Philippines SEO team",
+   "kind": "company",
+   "cluster": "reputation",
+   "tier": "",
+   "note": "Built links and \"pseudo sites\" to bury negative results (DOJ emails, 2010).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "osborne",
+   "name": "Osborne & Partners",
+   "kind": "company",
+   "cluster": "reputation",
+   "tier": "",
+   "note": "\"Issues of Reputation\" memo, June 2011: rebuild as science philanthropist; clean search results; avoid Andrew and Ferguson.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "siegal",
+   "name": "Peggy Siegal",
+   "kind": "person",
+   "cluster": "reputation",
+   "tier": "",
+   "note": "Publicist. Asked in July 2011 to get HuffPost to investigate Giuffre; says she never forwarded it.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "couri_hay",
+   "name": "R. Couri Hay",
+   "kind": "person",
+   "cluster": "reputation",
+   "tier": "",
+   "note": "Publicist; offered in March 2011 to influence a Newsweek story; says he declined to work for Epstein.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "vf",
+   "name": "Vanity Fair (2003)",
+   "kind": "institution",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Profile ran without the Farmer sisters' accounts; cause disputed (Ward vs Carter).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "miami_herald",
+   "name": "Miami Herald",
+   "kind": "institution",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Julie K. Brown's Nov 2018 series: 80 accusers; led to the 2019 charges and Acosta's resignation.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "abc_news",
+   "name": "ABC News",
+   "kind": "institution",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Interviewed Giuffre in 2015; never aired; Dershowitz called the network.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "edge",
+   "name": "Edge Foundation",
+   "kind": "institution",
+   "cluster": "culture",
+   "tier": "",
+   "note": "Epstein-linked foundations gave ~$638k of ~$857k (2001–17); billionaires' dinners.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "coinbase",
+   "name": "Coinbase",
+   "kind": "company",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "Epstein put ~$3M into a funding round (2014–15); a trust tied to him sold $15M of stock to Blockchain Capital in 2018.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "blockchain_cap",
+   "name": "Blockchain Capital",
+   "kind": "company",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "Pierce's firm; bought the Epstein-linked Coinbase stake in 2018; says Epstein was never an investor in its funds.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "blockstream",
+   "name": "Blockstream",
+   "kind": "company",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "Epstein invested 2014 via Joi Ito's fund, which later divested (Adam Back).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ito",
+   "name": "Joi Ito",
+   "kind": "person",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "MIT Media Lab director 2011–19; took Epstein money; resigned 2019.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mit_dci",
+   "name": "MIT Digital Currency Initiative",
+   "kind": "institution",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "Took in three Bitcoin Core developers in 2015 after the Bitcoin Foundation collapsed; Epstein gifts earmarked to it (DL News).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "radyca",
+   "name": "Radyca (Ramon Alonso)",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Island redesign: Dec 2017 agreement, ≥$150k paid, \"ladies' residence\"; fired June 2018.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "couturier",
+   "name": "Robert Couturier",
+   "kind": "person",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Designer; left the island job; told CNN Epstein wanted bunk beds \"for the girls\" and that he alerted the FBI.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "dpnr",
+   "name": "USVI DPNR",
+   "kind": "government",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Permits 2010–11; coastal director warned of major development via minor permits; \"music pavilion\" built differently from plans.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "estate_manual",
+   "name": "LSJ Estate Manual (EFTA00584804)",
+   "kind": "document",
+   "cluster": "evidence",
+   "tier": "",
+   "note": "69-page operating manual: staff, vendors, schedules, security.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mark_epstein",
+   "name": "Mark Epstein",
+   "kind": "person",
+   "cluster": "family",
+   "tier": "",
+   "note": "Brother. Says Bannon recorded ~15 hours of interviews. Real-estate business; apt66 company link.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "kushner",
+   "name": "Jared Kushner",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Observer invitation to Epstein, March 2013; named by an unverified 2020 informant report. No flight, payment or correspondence found.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "observer",
+   "name": "New York Observer",
+   "kind": "company",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Kushner-owned; 2013 anniversary-party invitation emailed to Epstein.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nyt_thomas",
+   "name": "Landon Thomas Jr.",
+   "kind": "person",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Wrote about Epstein (2002, 2008); solicited a $30,000 donation from him; NYT called it a violation.",
    "scenes": [],
    "apex": false
   }
@@ -2909,6 +3239,518 @@
    "type": "ownership",
    "status": "verified",
    "src": "Forbes, Jul 2025"
+  },
+  {
+   "f": "dalton",
+   "t": "epstein",
+   "label": "teacher, from Sept 1974",
+   "type": "employment",
+   "status": "verified",
+   "src": "NYT 2019; Snopes"
+  },
+  {
+   "f": "dbarr",
+   "t": "dalton",
+   "label": "headmaster until 1974",
+   "type": "office",
+   "status": "verified",
+   "src": "Snopes"
+  },
+  {
+   "f": "dbarr",
+   "t": "epstein",
+   "label": "hired him (reported by BI; disputed by dates)",
+   "type": "employment",
+   "status": "to-verify",
+   "src": "BI via Yahoo; Snopes"
+  },
+  {
+   "f": "greenberg",
+   "t": "epstein",
+   "label": "hired him, 1976",
+   "type": "employment",
+   "status": "verified",
+   "src": "BI 2025; Vanity Fair 2003"
+  },
+  {
+   "f": "greenberg",
+   "t": "bear",
+   "label": "senior partner, later CEO",
+   "type": "office",
+   "status": "verified",
+   "src": "BI 2025"
+  },
+  {
+   "f": "bear",
+   "t": "epstein",
+   "label": "employer 1976–81",
+   "type": "employment",
+   "status": "verified",
+   "src": "Vanity Fair 2003"
+  },
+  {
+   "f": "leese",
+   "t": "epstein",
+   "label": "mentor of sorts (son's account)",
+   "type": "association",
+   "status": "to-verify",
+   "src": "Rolling Stone (Ward), 2021"
+  },
+  {
+   "f": "leese",
+   "t": "hoffenberg",
+   "label": "introduction (Hoffenberg's claim)",
+   "type": "association",
+   "status": "to-verify",
+   "src": "Rolling Stone (Ward), 2021"
+  },
+  {
+   "f": "leese",
+   "t": "khashoggi",
+   "label": "introduction of Epstein (Hoffenberg's claim)",
+   "type": "association",
+   "status": "not-established",
+   "src": "Rolling Stone (Ward), 2021"
+  },
+  {
+   "f": "leese",
+   "t": "rmax",
+   "label": "introduction of Epstein (Hoffenberg's claim)",
+   "type": "association",
+   "status": "not-established",
+   "src": "Rolling Stone (Ward), 2021"
+  },
+  {
+   "f": "meister",
+   "t": "wexner",
+   "label": "friend",
+   "type": "association",
+   "status": "verified",
+   "src": "NYT via WYSU, Dec 2025"
+  },
+  {
+   "f": "meister",
+   "t": "epstein",
+   "label": "met on a flight to Palm Beach",
+   "type": "association",
+   "status": "verified",
+   "src": "NYT via WYSU, Dec 2025"
+  },
+  {
+   "f": "levin",
+   "t": "wexner",
+   "label": "financial adviser",
+   "type": "employment",
+   "status": "verified",
+   "src": "NYT via WYSU, Dec 2025"
+  },
+  {
+   "f": "epstein",
+   "t": "levin",
+   "label": "had him removed",
+   "type": "official act",
+   "status": "verified",
+   "src": "NYT via WYSU, Dec 2025"
+  },
+  {
+   "f": "usvi_edc",
+   "t": "financial_trust",
+   "label": "tax benefits $219.8M (1999–2012)",
+   "type": "government grant",
+   "status": "verified",
+   "src": "JPMorgan filing via Reuters, Jun 2023"
+  },
+  {
+   "f": "usvi_edc",
+   "t": "southern_trust",
+   "label": "tax benefits $80.6M (2013–18)",
+   "type": "government grant",
+   "status": "verified",
+   "src": "JPMorgan filing via Reuters, Jun 2023"
+  },
+  {
+   "f": "cdejongh",
+   "t": "financial_trust",
+   "label": "office manager, eight years",
+   "type": "employment",
+   "status": "verified",
+   "src": "JPMorgan filing via Reuters, Jun 2023"
+  },
+  {
+   "f": "cdejongh",
+   "t": "epstein",
+   "label": "certified bona fide resident, 2009",
+   "type": "official act",
+   "status": "to-verify",
+   "src": "JPMorgan filing (allegation)"
+  },
+  {
+   "f": "jdejongh",
+   "t": "cdejongh",
+   "label": "spouse",
+   "type": "kinship",
+   "status": "verified",
+   "src": "Reuters, Jun 2023"
+  },
+  {
+   "f": "jdejongh",
+   "t": "usvi",
+   "label": "governor 2007–15",
+   "type": "office",
+   "status": "verified",
+   "src": "Reuters, Jun 2023"
+  },
+  {
+   "f": "seckel",
+   "t": "epstein",
+   "label": "search-result clean-up, 2010–11 (paid)",
+   "type": "contract",
+   "status": "verified",
+   "src": "Guardian, Nov 2025"
+  },
+  {
+   "f": "seckel",
+   "t": "ph_seo",
+   "label": "directed the team",
+   "type": "contract",
+   "status": "verified",
+   "src": "GMA News, Feb 2026"
+  },
+  {
+   "f": "seckel",
+   "t": "gmax",
+   "label": "brother-in-law (wife is Maxwell's sister)",
+   "type": "kinship",
+   "status": "verified",
+   "src": "GMA News, Feb 2026"
+  },
+  {
+   "f": "osborne",
+   "t": "epstein",
+   "label": "reputation memo, June 2011",
+   "type": "contract",
+   "status": "verified",
+   "src": "Guardian, Nov 2025"
+  },
+  {
+   "f": "siegal",
+   "t": "epstein",
+   "label": "publicist; asked to target Giuffre, 2011",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Guardian, Nov 2025"
+  },
+  {
+   "f": "couri_hay",
+   "t": "epstein",
+   "label": "offered to steer Newsweek, 2011",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Guardian, Nov 2025"
+  },
+  {
+   "f": "epstein",
+   "t": "vf",
+   "label": "visited editor before the 2003 profile",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "ward",
+   "t": "vf",
+   "label": "author of the 2003 profile",
+   "type": "employment",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "farmer",
+   "t": "vf",
+   "label": "accounts cut from the 2003 profile",
+   "type": "reporting",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "dershowitz",
+   "t": "abc_news",
+   "label": "called the network re Giuffre interview, 2015",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "giuffre",
+   "t": "abc_news",
+   "label": "interview recorded 2015, never aired",
+   "type": "reporting",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "miami_herald",
+   "t": "epstein",
+   "label": "exposed the deal, Nov 2018",
+   "type": "reporting",
+   "status": "verified",
+   "src": "NPR, Dec 2018"
+  },
+  {
+   "f": "nyt_thomas",
+   "t": "epstein",
+   "label": "solicited $30,000 donation (paid 2017)",
+   "type": "philanthropy",
+   "status": "verified",
+   "src": "NPR, Aug 2019"
+  },
+  {
+   "f": "epstein",
+   "t": "edge",
+   "label": "~$638k, 2001–15",
+   "type": "funding",
+   "status": "verified",
+   "src": "BuzzFeed News, 2019"
+  },
+  {
+   "f": "epstein",
+   "t": "coinbase",
+   "label": "~$3M stake (2014–15)",
+   "type": "investment",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "pierce",
+   "t": "coinbase",
+   "label": "arranged Epstein's stake",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "pierce",
+   "t": "blockchain_cap",
+   "label": "managing partner until 2017",
+   "type": "office",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "blockchain_cap",
+   "t": "coinbase",
+   "label": "bought Epstein-linked stake for $15M, 2018",
+   "type": "investment",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "epstein",
+   "t": "blockstream",
+   "label": "investment via Ito's fund, 2014",
+   "type": "investment",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "ito",
+   "t": "blockstream",
+   "label": "fund LP route; later divested",
+   "type": "investment",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "ito",
+   "t": "mit",
+   "label": "Media Lab director 2011–19",
+   "type": "office",
+   "status": "verified",
+   "src": "DL News, 2026"
+  },
+  {
+   "f": "ito",
+   "t": "epstein",
+   "label": "solicited and took his money",
+   "type": "funding",
+   "status": "verified",
+   "src": "DL News; MIT review"
+  },
+  {
+   "f": "mit_dci",
+   "t": "mit",
+   "label": "Media Lab programme",
+   "type": "office",
+   "status": "verified",
+   "src": "DL News, 2026"
+  },
+  {
+   "f": "epstein",
+   "t": "mit_dci",
+   "label": "gifts earmarked (part of $525k)",
+   "type": "funding",
+   "status": "verified",
+   "src": "DL News, 2026"
+  },
+  {
+   "f": "hoffman",
+   "t": "pierce",
+   "label": "Epstein asked him about the Coinbase round",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Fortune, Feb 2026"
+  },
+  {
+   "f": "epstein",
+   "t": "radyca",
+   "label": "island redesign, Dec 2017; fired Jun 2018",
+   "type": "contract",
+   "status": "verified",
+   "src": "Business Insider, 2026"
+  },
+  {
+   "f": "radyca",
+   "t": "lsj",
+   "label": "design work",
+   "type": "contract",
+   "status": "verified",
+   "src": "Business Insider, 2026"
+  },
+  {
+   "f": "couturier",
+   "t": "lsj",
+   "label": "design work; left",
+   "type": "contract",
+   "status": "verified",
+   "src": "CNN via AlterNet, Mar 2026"
+  },
+  {
+   "f": "couturier",
+   "t": "fbi",
+   "label": "says he alerted the FBI",
+   "type": "complaint",
+   "status": "to-verify",
+   "src": "CNN via AlterNet (his account)"
+  },
+  {
+   "f": "dpnr",
+   "t": "lsj",
+   "label": "permits 2010–11",
+   "type": "official act",
+   "status": "verified",
+   "src": "NBC via AOL, Aug 2019"
+  },
+  {
+   "f": "dpnr",
+   "t": "usvi",
+   "label": "territorial agency",
+   "type": "office",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "estate_manual",
+   "t": "lsj",
+   "label": "operating manual",
+   "type": "document",
+   "status": "verified",
+   "src": "EFTA00584804"
+  },
+  {
+   "f": "mark_epstein",
+   "t": "epstein",
+   "label": "brother",
+   "type": "kinship",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "mark_epstein",
+   "t": "bannon",
+   "label": "says Bannon recorded ~15 hours",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "NBC News, 2026"
+  },
+  {
+   "f": "bannon",
+   "t": "epstein",
+   "label": "image-rebuild plan, documentary, media training, 2019",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "NBC News, 2026"
+  },
+  {
+   "f": "ruemmler",
+   "t": "epstein",
+   "label": "\"Uncle Jeffrey\"; gifts after 2014",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "AP via WAMC, Feb 2026"
+  },
+  {
+   "f": "chomsky",
+   "t": "epstein",
+   "label": "letter calling him \"a highly valued friend\"",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "WBUR, Nov 2025"
+  },
+  {
+   "f": "chomsky",
+   "t": "barak",
+   "label": "meeting arranged by Epstein (per letter)",
+   "type": "association",
+   "status": "verified",
+   "src": "WBUR, Nov 2025"
+  },
+  {
+   "f": "fd1023",
+   "t": "kushner",
+   "label": "names him (unverified)",
+   "type": "claim",
+   "status": "not-established",
+   "src": "EFTA00090314"
+  },
+  {
+   "f": "observer",
+   "t": "epstein",
+   "label": "invitation, March 2013",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Mediaite, Nov 2025"
+  },
+  {
+   "f": "kushner",
+   "t": "observer",
+   "label": "owner/publisher",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Mediaite, Nov 2025"
+  },
+  {
+   "f": "kushner",
+   "t": "trump",
+   "label": "son-in-law",
+   "type": "kinship",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "black",
+   "t": "usvi",
+   "label": "paid $62M settlement, 2023",
+   "type": "litigation",
+   "status": "verified",
+   "src": "PBS, Jul 2026"
+  },
+  {
+   "f": "mcc",
+   "t": "bop",
+   "label": "federal facility run by BOP",
+   "type": "office",
+   "status": "verified",
+   "src": "public record"
   }
  ]
 }
