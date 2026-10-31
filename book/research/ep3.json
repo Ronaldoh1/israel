@@ -1,0 +1,84 @@
+{
+ "volume": "The Epstein Architecture",
+ "verified": "2026-10-31",
+ "entries": [
+  {
+   "id": "ep3_usvi",
+   "stage": "ep3",
+   "topic": "The Virgin Islands' cases",
+   "claims": [
+    {
+     "text": "JPMorgan paid USVI $75m (Sept 2023): $30m charities, $25m anti-trafficking law enforcement, $20m legal fees; no admission; USVI had sought at least $190m incl. a $150m civil penalty; alleged JPM kept him as a 'valued client' after 2006 arrest and 2008 plea; JPM 'deeply regrets any association'; Staley settled with JPM confidentially.",
+     "strength": "reported",
+     "sources": [
+      "ep3_aj_usvi_jpm2023"
+     ]
+    },
+    {
+     "text": "Estate paid USVI more than $105m (Dec 2022) plus half the proceeds of selling both islands; executors deny wrongdoing.",
+     "strength": "reported",
+     "sources": [
+      "ep3_fox_usvi_estate2022"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_aj_usvi_jpm2023",
+     "label": "Al Jazeera, 'JPMorgan to pay US Virgin Islands $75m to settle Epstein lawsuit', 26 Sept 2023",
+     "url": "https://www.aljazeera.com/economy/2023/9/26/jpmorgan-to-pay-us-virgin-islands-75m-to-settle-epstein-lawsuit"
+    },
+    {
+     "key": "ep3_fox_usvi_estate2022",
+     "label": "Fox Business / AP, 'Epstein estate reaches $105M settlement with US Virgin Islands', 1 Dec 2022",
+     "url": "https://foxbusiness.com/politics/epstein-estate-reaches-105m-settlement-us-virgin-islands-denies-liability-fault"
+    }
+   ]
+  },
+  {
+   "id": "ep3_banks",
+   "stage": "ep3",
+   "topic": "Bank findings",
+   "claims": [
+    {
+     "text": "NYDFS consent order, $150m (July 2020): Deutsche Bank onboarded Epstein 2013; failed to monitor despite public criminal record; hundreds of transactions totalling millions; payments to Russian models, women's tuition, hotel and rent, women with Eastern European surnames, alleged co-conspirators; over $7m settlements and over $6m to law firms; more than $800,000 suspicious cash withdrawals over about four years; Sewing: onboarding 'a critical mistake'.",
+     "strength": "primary (regulatory order, as reported)",
+     "sources": [
+      "ep3_cnbc_dfs_db2020"
+     ]
+    },
+    {
+     "text": "JPMorgan filed suspicious activity reports on over $1bn of Epstein-linked transactions weeks after his death in 2019 (NYT).",
+     "strength": "reported",
+     "sources": [
+      "ep3_sa_jpm_sars"
+     ]
+    },
+    {
+     "text": "UK tribunal (26 June 2025) upheld the FCA's 2023 ban on Jes Staley; fine cut from £1.8m to about £1.1m; FCA found Barclays' 2019 letter misleading and Staley reckless; contact via his daughter until at least Feb 2017; Barclays withheld £17.8m in awards.",
+     "strength": "reported",
+     "sources": [
+      "ep3_staley_tribunal2025"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_cnbc_dfs_db2020",
+     "label": "CNBC, 'Deutsche Bank fined $150 million penalty for relationship with Jeffrey Epstein', 7 July 2020",
+     "url": "https://www.cnbc.com/2020/07/07/jeffrey-epstein-case-deutsche-bank-fined-150-million-penalty-for-relationship.html"
+    },
+    {
+     "key": "ep3_sa_jpm_sars",
+     "label": "Seeking Alpha, citing the New York Times: JPMorgan reported over $1 billion in suspicious Epstein transactions weeks after his death",
+     "url": "https://seekingalpha.com/news/4512102-jpmorgan-filed-suspicious-activity-reports-related-to-epstein"
+    },
+    {
+     "key": "ep3_staley_tribunal2025",
+     "label": "AP/PTI, 'Ex-Barclays boss Staley loses bid to overturn UK ban over Epstein ties', 26 June 2025",
+     "url": "https://www.theweek.in/wire-updates/business/2025/06/26/fes25-uk-barclays-staley-epstein.html"
+    }
+   ]
+  }
+ ]
+}
