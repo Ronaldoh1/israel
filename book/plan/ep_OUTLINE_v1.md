@@ -426,6 +426,12 @@ New research comes from the January 2026 file release, five documentaries Ron su
 | Kimbal Musk introduction emails | Involves a private woman; association only | Part 4 at most; no private names |
 | "Israeli IP over-representation on /pol/" | No source | **Not carried** |
 
+### What the files show (`ep_FILES_REGISTER_v1.md`, 31 Oct 2026)
+- Every past thread searched: no dedicated Epstein thread exists outside this session. The scattered earlier material (the Aidan/Rothschild raid, the Maxwell entities) is carried over with its earlier verdicts.
+- The releases, Sept 2025 to Oct 2026. The redactions: 550+ pages fully blacked out; the 119-page grand jury document; the Friedman ranges; the Trump photo pulled and restored; the six names read on the House floor (four were FBI lineup fillers); victims exposed.
+- Three tables of people in power (U.S. government, U.S. business and academia, abroad), each with what the documents show, the person's response, and the outcome. The asymmetry: arrests and charges abroad, none in the U.S.
+- Many rows in the verification register above are now resolved there.
+
 ### Network map and vault
 - **For research (Ron):** an Obsidian vault generated from one data file (`book/plan/epstein_map/network.json`). It has one note per person or institution and one link per documented connection. Each link carries a connection type (contract, funding, employment, appointment, flight, correspondence, kinship), a degree (1°, 2°, 3°, apex), an evidence tier, a status (verified / to verify) and a source. Obsidian's graph view and the starter canvas show the shape. Family members get their own notes and are never merged with the subject.
 - **For readers:** Obsidian needs an app or a paid Publish plan, so readers get the same data as an interactive map inside the library. This expands the simulation's existing 10-node "Jeffrey Epstein — Network" map. Tap a node to open its profile and sources; loops are highlighted.
