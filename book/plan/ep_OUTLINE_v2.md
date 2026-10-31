@@ -287,7 +287,8 @@ What kept that system running? Each part asks this of one layer: the man, the op
 
 ---
 
-## Part 9 · Is the Network Dead?
+## Part 9 · The Network Did Not Shut Down *(Ron, 31 Oct: retitled from "Is the Network Dead?"; book Part Ten)*
+*Thesis framing: the documented structure (unprosecuted people, the 2008 immunity, the money, the institutions and legal shields) survived Epstein's death and Maxwell's conviction. The chapter states plainly that no released record shows an abuse operation running today, and that no authority has looked for a successor.*
 1. **Accountability abroad vs. at home:**
    - UK: two arrests, no charges, and Andrew's challenge to the warrants;
    - Norway: three charged;
@@ -341,6 +342,15 @@ What kept that system running? Each part asks this of one layer: the man, the op
 - **[counter]** Sean Combs: acquitted on racketeering. It shows the enterprise theory can fail in court, and the book should say so.
 
 ---
+
+## NEW · The Worst Case: The Epstein Network Under the Dark Enlightenment *(Ron, 31 Oct; book Part Thirteen)*
+*Labeled scenario, same framing as the Dark Enlightenment book's preface. Built only from documented mechanisms, each shown as it works today, then run forward.*
+1. The protections that exist now (this book, Parts Eight–Nine): prosecutorial discretion, NPA immunity, redaction, sealed grand jury, FOIA exemptions, the DOGE FOIA carve-out (DOGE Service v. CREW), official-capacity subpoenas.
+2. The Dark Enlightenment program in its authors' own words (DE Books 1–2): the CEO-sovereign, exit over voice, the end of the "Cathedral" (press, universities, civil service).
+3. What would remain to catch a network like this: no inspectors general, no congressional subpoena, no independent press, no victims' rights act, no FOIA, no civil litigation, which is where most of the files came from.
+4. The surveillance stack (DE "The Eye"; One-Way Mirror) pointed down, not up: capability exists; its direction is a choice.
+5. The test: which accountability tools actually caught anything in this case (civil suits, the Miami Herald, a judge, the USVI, Congress's 427–1 vote), and whether each would survive.
+6. Discipline: no claim that any named person intends this. It is a structural scenario, labeled as such, with the counter-case stated (the Dark Enlightenment's own authors claim accountability to owners would be stronger).
 
 ## Part 12 · The Architecture, Stated Plainly
 - What holds, what doesn't, and why the slide matters.
