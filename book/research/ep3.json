@@ -79,6 +79,39 @@
      "url": "https://www.theweek.in/wire-updates/business/2025/06/26/fes25-uk-barclays-staley-epstein.html"
     }
    ]
+  },
+  {
+   "id": "ep3_currency",
+   "stage": "ep3",
+   "topic": "The currency-trading claim",
+   "claims": [
+    {
+     "text": "Epstein said he invested clients' fortunes in currency markets (Vanity Fair, per BI).",
+     "strength": "reported",
+     "sources": [
+      "ep3_bi_fortune2019"
+     ]
+    },
+    {
+     "text": "Claimed solo investing with ~150 back-office staff (New York mag figure) vs ~20 in a 2002 court filing; claimed to work only with billionaires; hedge-fund managers sceptical: 'It's hard to make a billion dollars quietly'; one guessed index fund or Treasuries.",
+     "strength": "reported",
+     "sources": [
+      "ep3_nymag_hedgefund2019"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_bi_fortune2019",
+     "label": "Business Insider, 'How financier Jeffrey Epstein made his fortune', July 2019 (citing Vanity Fair)",
+     "url": "https://businessinsider.nl/how-financier-jeffrey-epstein-made-his-fortune-2019-7/"
+    },
+    {
+     "key": "ep3_nymag_hedgefund2019",
+     "label": "Michelle Celarier, 'Real Hedge-Fund Managers Have Some Thoughts on What Epstein Was Actually Doing', New York magazine, 10 July 2019 (via Portside)",
+     "url": "https://portside.org/node/20483/printable/print"
+    }
+   ]
   }
  ]
 }
