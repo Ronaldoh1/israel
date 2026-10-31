@@ -1,6 +1,6 @@
 # The Epstein Architecture
 ## The Network, the Files and Power Protects Power
-### Working draft · introduction and Parts One–Three · 31 October 2026
+### Working draft · introduction and Parts One–Four · 31 October 2026
 
 ## Introduction
 In June 2008 a Florida court accepted Jeffrey Epstein's guilty plea to procuring a minor for prostitution. The federal prosecutors who had investigated him had already signed an agreement that ended their case, granted immunity to "any potential co-conspirators" they did not name, and kept the girls he had abused from learning about it until it was done. A federal judge later ruled that keeping the victims in the dark broke the law. [cite:marra] [cite:cbs_marra] [cite:politico_acosta] For the next eleven years the most powerful people in the world kept him close. Banks kept his accounts. Universities kept his money. When he was arrested again in July 2019 and found dead in his cell a month later, the one proceeding that might have put the people around him under oath ended with him.
@@ -697,4 +697,210 @@ That should not be romanticised. The same territory had given Epstein's company 
 Part Three asked whether there is a documented source for Epstein's fortune. There is a documented list of sources, and it is short: a client who gave him a power of attorney and says he stole from him; a client who paid him $170 million, $100 million of it without a contract; an offshore company with a territorial tax break; and the returns on what all that bought. There is no documented business of the kind that would explain half a billion dollars, and there are still no records of the clients who would have had to exist if he managed money as he claimed.
 
 What the money record does show, in more detail than any other part of this story, is the pattern this book is about. Every institution that held his money had the information and the systems to act. JPMorgan's employees warned; Deutsche Bank's regulator later found the payments to young women in its own records; a bank reported Black's $170 million only after the arrest. Each kept the client because the client was valuable, and each settled without admitting anything once victims and a small territory forced the matter. Part Four turns from the money to the people: who stayed close to him after 2008, when everyone knew.
+
+## Part Four · Who Stayed
+After June 2008 there was no longer any doubt about who Jeffrey Epstein was. He had pleaded guilty to a sex crime involving a minor and registered as a sex offender, and anyone could read why. Part Four is about the people who stayed close to him anyway, and about how to read their names.
+
+It begins with the method, because without it this part would be a list, and lists are how this case has been misread for years. Every person here is placed at one of the four levels of evidence set out in the introduction, and the kind of contact the record shows is stated each time. The part then moves cluster by cluster: the president and his predecessor's family, a British prince, the men around Peter Thiel's fund and Palantir, a cabinet secretary and the executives who resigned, and finally the countries where the release of the files produced arrests. The full biographies of the people named here are in Part Five. The question Part Four asks is narrower: after everyone knew, who stayed, and what happened to them?
+
+### Reading a Name
+
+Put every name that circulates in connection with Epstein into a single list and it looks like one kind of thing. It is not. Read across the record and the list contains, in order of strength: one criminal conviction; one foreign criminal charge that ended in a death in custody; a handful of civil settlements without admission; a small number of sworn allegations; at least one sworn allegation that the accuser herself later withdrew; and several hundred names for which the record establishes contact and nothing else. [cite:marra] [cite:ep2_voa_maxwell2021] [cite:ep2_aj_brunel2022] These are not the same object, and treating them as one is how the strong cases get discredited by the weak ones.
+
+### The four levels
+
+**Decided by a court.** The only criminal verdict against anyone other than Epstein is Ghislaine Maxwell's conviction on five counts in 2021. [cite:ep2_voa_maxwell2021] A civil settlement is a weaker kind of legal event: a case resolved by agreement, usually without admission, which is a documented fact and not a finding of liability. That this level is so small after two decades is itself one of the findings of this book.
+
+**Sworn.** A named accuser has alleged specific conduct by a specific person, in a proceeding where lying carries criminal exposure. This is stronger than any claim in the press and weaker than a verdict. Most sworn allegations in this case were never tested at trial, because no trial took place, and both facts belong in any honest account of them.
+
+**Documented contact.** Flight manifests, emails, photographs, calendar entries, payments and quotations establish that two people knew each other, and sometimes how well. They establish nothing about conduct. Most names sit here and nowhere else. That is still a real finding: it describes the shape of the network that surrounded a convicted sex offender, and who chose to stay in it.
+
+**Not carried.** A claim that a named person took part in a crime, with no court record, sworn testimony or case-file document behind it, is not written up as "disputed". It is left out, because "disputed" implies two credibly documented sides. This is the strictest rule in the book, and it applies however widely a name circulates.
+
+### Why the caution is earned
+
+One episode shows why the rule matters. In litigation, Virginia Giuffre named the lawyer Alan Dershowitz. He denied it and countersued. On 8 November 2022 the two settled, both withdrawing their claims; their joint statement said no money changed hands, and Giuffre said: "I now recognize I may have made a mistake in identifying Mr. Dershowitz." [cite:ep4_cbs_dershowitz2022] A sworn allegation from the most credible accuser in the case was withdrawn by the accuser herself, in a subject where dozens of names circulate on far less. This book reports allegations as allegations, never as findings, and it carries nothing against anyone on the strength of the withdrawn one.
+
+The rule protects the survivors as much as the people named. Every careless accusation that collapses gives a hostile reader a reason to discard the sworn testimony beside it, and the sworn testimony is what convicted Maxwell.
+
+### The people who are not named
+
+One group is missing from almost every list, and it is the most consequential. The 2008 federal agreement promised not to prosecute "any potential co-conspirators" of Epstein; it named four women, and left the rest of the category open. [cite:ep2_cbs_coconspirators2019] A federal judge later found that Epstein worked in concert with others and directed others to obtain girls. [cite:marra] Those others exist as a judicial finding and as a category in a signed federal document. Almost none of them exist as names. In August 2019, five days after Epstein's death, FBI agents in New York circulated an internal list of eight alleged co-conspirators; the reporting on it has made three of those names public: Maxwell, the modelling agent Jean-Luc Brunel and Les Wexner. [cite:ep4_npr_wexner_fbi2026] The largest gap in this network map is the group the government agreed in writing not to charge.
+
+### Donald Trump
+
+The record on Donald Trump and Jeffrey Epstein has two parts that are almost always run together. One is a social relationship in the 1990s and early 2000s. The other is what Trump has done with the files since he returned to office. They need different evidence, and this section keeps them apart.
+
+### The relationship
+
+The two men moved in the same Palm Beach and Manhattan circles for about fifteen years, and the association is documented in photographs, footage and Trump's own words. In a 2002 profile in *New York* magazine he called Epstein "a terrific guy" who was "a lot of fun to be with", and said Epstein liked beautiful women as much as he did, "many of them on the younger side". [cite:ep4_nymag2002] The quotation is genuine. It establishes a friendship and a characterisation. It is documented contact, not conduct.
+
+The files add specific dates. In an email of 7 January 2020, released by the Justice Department in December 2025, a federal prosecutor in New York wrote that flight records showed Trump had flown on Epstein's jet eight times in the 1990s, at least four times with Ghislaine Maxwell aboard, and once with only Epstein, Trump and a twenty-year-old woman whose name was redacted. The email alleges no crime. [cite:ep4_sbs_trump_flights] The Justice Department said some of the documents released contained "untrue and sensationalist claims" against Trump that had been sent to the FBI before the 2020 election; it released tip-line calls mentioning him without saying who made them or whether anyone found them credible. [cite:ep4_sbs_trump_flights]
+
+In November 2025 House Oversight Democrats released emails from among 23,000 documents provided by Epstein's estate. In one, dated 2 April 2011, Epstein told Maxwell that "the dog that hasn't barked is Trump" and that Trump had "spent hours" at his house with a person whose name was redacted, whom the Democrats described as a victim. In another, in 2019, Epstein told the writer Michael Wolff that Trump "knew about the girls as he asked Ghislaine to stop." [cite:ep4_csm_emails2025] These are Epstein's words, written by a man with his own reasons, and they are evidence of what Epstein wrote, not of what Trump knew. The White House called the release a selective leak meant to "create a fake narrative", said the redacted person in the 2011 email was Virginia Giuffre, and said Trump had "kicked Jeffrey Epstein out of his club decades ago" for mistreating female employees. Trump denies any knowledge of Epstein's crimes. [cite:ep4_csm_emails2025]
+
+Giuffre herself was recruited at Mar-a-Lago, Trump's club, in 2000. In a 2016 deposition, unsealed in 2024, she said: "I don't think Donald Trump participated in anything." She said she had never seen him take part, though she had heard he had been at Epstein's house. [cite:ep2_bi_giuffre_trump2024] No sworn allegation against Trump appears in the court record this book has examined, and none is carried here. The relationship broke down in the early-to-mid 2000s, before Epstein's 2006 arrest, though accounts of why it ended differ. [cite:legalclarity]
+
+**Figure: Trump: what the documents show, and what each side says**
+
+| Document | What it shows | Response | 
+
+| Prosecutor's email, 7 Jan 2020 | 8 flights on Epstein's jet in the 1990s; no crime alleged | DOJ: some tips "untrue and sensationalist" | 
+
+| Epstein to Maxwell, 2 Apr 2011 | "The dog that hasn't barked is Trump" | White House: the redacted person is Giuffre | 
+
+| Epstein to Wolff, 2019 | Trump "knew about the girls" | Trump denies any knowledge | 
+
+| Giuffre deposition, 2016 | "I don't think Donald Trump participated in anything" | — | 
+
+Sources: [cite:ep4_sbs_trump_flights] [cite:ep4_csm_emails2025] [cite:ep2_bi_giuffre_trump2024]
+
+### The office
+
+The second part of the record concerns not the 1990s but 2025 and 2026, and it is about power rather than friendship. On 19 November 2025 Trump signed the Epstein Files Transparency Act, which had passed the House 427 to 1 and the Senate by unanimous consent. [cite:efta_wiki] His Justice Department missed the deadline the Act set and, by its own count, published almost 3.5 million of the 6 million pages it reviewed. [cite:ep1_rollcall_release2026] By mid-2026 the Act's Republican co-author, Representative Thomas Massie, was saying the department was unlawfully withholding more than three million files. [cite:khanna2] A president signed a disclosure law, and the executive branch he heads is accused by the law's own author of defying it. That finding needs nothing from the 1990s, and it is examined in full in Part Nine.
+
+Both halves are held to the same standard as every other name in this book. Applying that standard more harshly to Trump than to anyone else would invalidate it everywhere; applying it more gently would do the same.
+
+### Bill Clinton and Hillary Clinton
+
+The Clintons are a test of the rule that one person's record does not pass to another by marriage. They are treated here as two people, with two records.
+
+### Bill Clinton
+
+When Epstein was arrested in July 2019, Bill Clinton's spokesman issued an account of the relationship. It said Clinton took four trips on Epstein's plane in 2002 and 2003, one to Europe, one to Asia and two to Africa, some connected with his foundation's work, with staff, foundation supporters and his Secret Service detail on every leg. It said Clinton met Epstein once at his Harlem office in 2002 and made one brief visit to Epstein's New York apartment with a staff member and his security detail present; that he had never been to Little St. James, the New Mexico ranch or the Florida house; and that he had not spoken to Epstein "in well over a decade". [cite:ep4_ap_clinton_statement2019]
+
+The documents do not settle the count. Flight logs published by Gawker in 2015 suggested more than a dozen flights; Fox News reported in 2016 that they showed at least twenty-six. The *New York Times* noted that it was unclear how many individual flights made up each of the four trips, so the figures may describe the same travel counted differently. [cite:ep4_politifact_clinton2020] Photographs released in December 2025 show him with Epstein, Maxwell and others; many are undated and partly redacted, with no context for where or when they were taken. [cite:ep4_rnz_clinton]
+
+One account does conflict with his. In court papers later unsealed, Virginia Giuffre said she once saw Clinton on Epstein's island with two young girls from New York. She did not accuse him of any wrongdoing. His statement says he never visited the island. [cite:ep4_politifact_clinton2020] The book records both, side by side, and resolves neither. A woman who was on one of the flights, Chauntae Davies, who accuses Epstein of raping her, has described Clinton as "a complete gentleman". [cite:ep4_politifact_clinton2020]
+
+No accuser has alleged misconduct by Bill Clinton in any proceeding this book has examined, and no charging document names him. President Trump claimed Clinton had visited the island "28 times"; Trump's chief of staff, Susie Wiles, later said there was "no evidence" the island visits happened. [cite:ep4_rnz_clinton] Clinton was deposed by the House Oversight Committee on 27 February 2026, and was reported as saying, "I did nothing wrong." [cite:ep4_ap_hillary2026] The documented travel, whatever its count, is a real finding about who surrounded Epstein in those years, and the book carries it as documented contact.
+
+The timing of the December 2025 release raised a separate question. The first tranche of photographs featured Clinton prominently, and White House accounts posted them with captions such as "Oh My". Critics asked whether the release had been curated for political effect rather than, as the administration said, to protect the privacy of more than 1,200 victims. [cite:ep4_rnz_clinton] That question belongs to Part Nine.
+
+### Hillary Clinton
+
+Hillary Clinton was deposed by the House Oversight Committee, behind closed doors, in Chappaqua on 26 February 2026. Afterwards she told reporters that she did not know Epstein and had never flown on his plane, called the subpoena a "fishing expedition", and said the questions should go to the Justice Department officials who had failed to prosecute him: "What is being held back? Who is being protected? And why the cover-up?" [cite:ep4_ap_hillary2026]
+
+The record contains one other item. Ghislaine Maxwell attended Chelsea Clinton's wedding on 31 July 2010; Hillary Clinton said Maxwell "came as the plus-one, the guest of someone who was invited", without saying whose. [cite:ep4_ap_hillary2026] It is evidence of a guest list and nothing more. A campaign donation from Epstein, and its filing, are set out in her full entry in Part Five.
+
+### Andrew Mountbatten-Windsor
+
+The case against the man formerly known as Prince Andrew, Duke of York, is the clearest example in this book of the difference between legal consequence and every other kind. In his case legal consequence for the allegation never came; the consequences that did come arrived by other routes, and late.
+
+### The allegation
+
+Virginia Giuffre alleged, in sworn litigation, that she was trafficked to Andrew and had sexual encounters with him on three occasions, the first when she was seventeen. She sued him in federal court in New York in 2021. He has consistently denied the allegations, said he had no recollection of meeting her, and questioned the authenticity of the 2001 photograph that shows him with his arm around her at Ghislaine Maxwell's house in London, with Maxwell behind them. [cite:ep2_ap_giuffre2025] [cite:nbc_andrew] It is a sworn allegation that was never tested at trial, and both facts belong in any honest account of it.
+
+In February 2022 he settled her suit for a sum reported at $16 million, without admitting liability, and expressed regret for his association with Epstein. [cite:ep2_ap_giuffre2025] It was the same structure as the bank settlements in Part Three: money moved, no finding was entered, and the question stayed formally open.
+
+### What finally moved
+
+On 17 October 2025, as Giuffre's posthumous memoir was about to be published, Andrew announced that he would stop using his titles. On 30 October King Charles stripped him of the style of prince and moved to evict him from Royal Lodge; he became Andrew Mountbatten-Windsor. Giuffre's family called it a vindication. [cite:npr_andrew] [cite:time_andrew] [cite:wapo_andrew] What produced it was not a court or a prosecution but a book published six months after her death, and the pressure that followed. Twenty-four years after the photograph, the mechanism that worked was publication.
+
+The criminal investigation, when it came, was not about the allegation at all. In February 2026, on his sixty-sixth birthday, Thames Valley Police arrested him at his home in Norfolk on suspicion of misconduct in public office: leaking confidential government material to Epstein while he served as Britain's special representative for trade, a role he held from 2001 to 2011. Emails in the released files appear to show him forwarding sensitive material to Epstein in 2010. He was questioned for almost twelve hours and released under investigation. He has not been charged. As of October 2026 he was challenging in court the search warrants that preceded his arrest, and the police said their investigation was continuing. [cite:ep4_abc_andrew2026] [cite:ep4_aj_arrests2026]
+
+**Figure: Andrew: allegation, settlement and the consequences that followed**
+
+- 2001**The London photograph** Andrew, Giuffre (17) and Maxwell
+
+- 2010**Emails to Epstein** Appear to show him forwarding sensitive material as trade envoy
+
+- 2021**Giuffre sues** Sworn allegation of three encounters; he denies it
+
+- Feb 2022**Settlement** Reported $16 million; no admission
+
+- Oct 2025**Titles removed** After Giuffre's memoir, published after her death
+
+- Feb 2026**Arrested** Misconduct in public office; released under investigation; not charged
+
+Sources: [cite:nbc_andrew] [cite:ep2_ap_giuffre2025] [cite:npr_andrew] [cite:ep4_abc_andrew2026]
+
+The shape of his case recurs abroad. Where the released files led to arrests, the offences under investigation were about state secrets and official conduct, offences in which the documents themselves can be the evidence, rather than about the abuse. That pattern is set out at the end of this part.
+
+### Thiel, Mandelson, Barak: A Triangle With Documents on Every Side
+
+Three of the relationships Epstein kept after his conviction connect to one another, and to the data company Palantir, through separate and independently documented channels. They are summarised here because the connection between them is itself the finding; each man's full record, with his own statements beside it, is in his entry in Part Five.
+
+**Peter Thiel.** Epstein committed about $40 million to Valar Ventures, a fund Thiel co-founded, in the mid-2010s; by 2025 the stake was worth about $170 million and was the largest single asset in his estate. Thiel's spokesman confirmed Epstein was a limited partner and denied that he was a co-owner. [cite:nyt_epstein_thiel_valar_boston] [cite:bylinetimes_thiel_epstein_valar] The emails show the two men corresponding from early 2014, with Epstein offering tax advice and Thiel welcoming it, and an invitation to the island that Thiel answered with a question; his spokesman says he never went. [cite:ep4_stanforddaily_thiel2026]
+
+**Peter Mandelson.** A friendship documented from 2002 to 2011, through his years as a British cabinet minister and after the conviction. A 2019 JPMorgan report filed in a New York court said Epstein appeared to maintain "a particularly close relationship" with him. In 2018 Palantir hired Global Counsel, the lobbying firm Mandelson co-founded. He was sacked as ambassador to Washington in September 2025 and arrested in February 2026 on suspicion of misconduct in public office over government information he passed to Epstein in 2009 and 2010. [cite:bylinetimes_mandelson_russia_palantir] [cite:ep4_aj_arrests2026]
+
+**Ehud Barak.** After leaving the Israeli government in 2013, the former prime minister and defence minister worked with Epstein to broker Israeli surveillance technology to the government of Côte d'Ivoire; Epstein's money went into Carbyne, an emergency-call company Barak chaired; and in 2018 Thiel's Founders Fund led Carbyne's $15 million funding round. [cite:dropsite_epstein_cote_divoire] [cite:bylinetimes_thiel_epstein_valar] Barak has said he regrets knowing Epstein. A separate allegation in Giuffre's memoir, which outlets have linked to him, is denied and is kept apart from the business record. [cite:aljazeera_barak_nigeria_spytech_2026]
+
+**Figure: Three documented edges that close into a loop**
+
+- **Epstein → Valar (Thiel)** About $40 million as a limited partner, now about $170 million
+
+- **Epstein → Barak → Carbyne** Surveillance brokering; Epstein money into a Barak-chaired company
+
+- **Thiel → Founders Fund → Carbyne** Led its $15 million round, 2018
+
+- **Epstein → Mandelson** Friendship 2002–2011; government information passed in 2009–10
+
+- **Mandelson → Global Counsel → Palantir (Thiel)** Palantir hires his firm, 2018
+
+Sources: [cite:nyt_epstein_thiel_valar_boston] [cite:dropsite_epstein_cote_divoire] [cite:bylinetimes_thiel_epstein_valar] [cite:bylinetimes_mandelson_russia_palantir]
+
+The limit of the finding has to be stated as clearly as the finding. Every documented tie here runs through an individual: Thiel, Mandelson, Barak. No document shows any investment by Epstein in Palantir itself, any contract with it, or any seat at it; Palantir has said it "was not aware that Epstein ever invested in or was a shareholder". [cite:startmag_epstein_palantir_thiel] And nothing shows that the loop was coordinated. Three men with documented ties to a convicted sex offender also had documented ties to one another. That is a real finding about the composition of power around him. It is not evidence of a plan, and the book does not present it as one.
+
+### The Cabinet, the Boardrooms and the Campuses
+
+The January 2026 release put dozens of prominent Americans into the record. Most appear as documented contact, and what follows describes, for the most significant of them, what kind of contact each record shows, what the person has said, and what happened next.
+
+### A cabinet secretary's changing account
+
+Howard Lutnick, the Commerce Secretary, said on a podcast in 2025 that after visiting Epstein's townhouse around 2005 he had vowed never to "be in a room" with him again. The January 2026 release included emails indicating that he and his family had lunch with Epstein on the island in 2012, and other emails showing that he invited Epstein to a fundraiser for Hillary Clinton at his firm in November 2015. At a hearing on 10 February 2026 he said the two had exchanged about ten emails and met three times over fourteen years, and that the island lunch happened because his family was on a boat nearby: "I barely had anything to do with that person." On 6 May, in voluntary private testimony to the House Oversight Committee, he said he could not recall why his family had lunched there. The committee's Republican chairman, James Comer, said Lutnick had corrected his account in his opening statement, that he "wasn't 100% truthful" about the island visit, and that lying to Congress is a felony for which he would be held accountable if any misstatement were found. [cite:ep4_ap_lutnick2026] He remains in office. Whether any of his statements was made under oath has not been established in the reporting this book has checked.
+
+### A billionaire the FBI listed
+
+Les Wexner's relationship with Epstein is set out in Part One. The files added one document. On 15 August 2019, five days after Epstein's death, FBI officials in the New York office's crimes-against-children and human-trafficking unit circulated an email listing eight alleged co-conspirators. It named Wexner as a "secondary co-conspirator", noted "limited evidence" of his involvement and recorded that he had been served with a subpoena. [cite:ep4_npr_wexner_fbi2026] Wexner's spokesperson said he had cooperated fully and was never contacted again. In a closed-door deposition to the House Oversight Committee on 18 February 2026 he said he had been "duped by a world-class con man" and had been "naïve, foolish, and gullible"; Democrats on the committee called his claim of ignorance "just not credible". [cite:ep4_npr_wexner_fbi2026] [cite:ep4_cbs_wexner_house] He has never been charged. An internal FBI list is a record of what agents were considering, not a finding; it is reported here as exactly that, and its existence, with no further action recorded, is one of the questions Part Eight takes up.
+
+### Two tech founders
+
+For Elon Musk, the emails show him asking, on 25 November 2012, about a helicopter trip to the island ("Probably just Talulah and me") and what night would be "the wildest party"; answering "Yes" to a Christmas invitation in November 2013; and a 2014 schedule note saying he was "to go to the island on Dec. 6th", followed by a message asking whether that was still happening. Whether he went is not established. Musk says he "declined repeated invitations" and that the emails could be "misinterpreted". [cite:ep4_cbs_gates_musk]
+
+For Bill Gates, the documents show meetings earlier reported, and two emails that Epstein sent to himself on 18 July 2013 containing unverified allegations about Gates's private life, one drafted as a resignation letter from a former Gates employee. Gates's spokesperson called them "absolutely absurd and completely false", and said they showed only Epstein's frustration at not having a relationship with him. [cite:ep4_cbs_gates_musk] They are evidence of what Epstein wrote. They are not evidence about Gates, and the book does not use them as such.
+
+### Those who left their posts
+
+The release cost a number of Americans their positions, though none faced criminal process. Tom Pritzker stepped down as executive chairman of Hyatt; Kathy Ruemmler, a former White House counsel, left her post as Goldman Sachs's chief legal officer after scrutiny of her friendly exchanges with Epstein; Brad Karp stepped down as chairman of the law firm Paul, Weiss after emails exposed his ties; at universities, an art-school programme chair resigned and Columbia cut ties with or reduced the duties of staff whose emails suggested they helped Epstein's girlfriend gain admission to a programme mid-course. [cite:ep4_aj_arrests2026] [cite:ep4_newsweek_list] Larry Summers, the former Treasury Secretary, whose emails with Epstein appeared in the November 2025 estate release, stepped back from roles including OpenAI's board. [cite:ep4_npr_summers2025] [cite:ep4_newsweek_list]
+
+Leon Black and Jes Staley, whose records are in Part Three, left their posts years earlier. Each person named here has an entry in Part Five, with the full record and their own words.
+
+### Where the Consequences Landed
+
+When the Justice Department released its files in January 2026, the consequences that followed were real, and they were not evenly distributed. Abroad, the release produced arrests and criminal charges. At home, it produced resignations.
+
+### Abroad
+
+In Britain, Andrew Mountbatten-Windsor was arrested on 19 February 2026 and Peter Mandelson on 23 February, both on suspicion of misconduct in public office, over government information allegedly passed to Epstein; both were released, and neither has been charged. In Norway, the former prime minister Thorbjørn Jagland was charged with aggravated corruption and his properties were searched; the diplomat Mona Juul was charged with aggravated corruption, in an inquiry into reports that Epstein left millions in his will to her and her husband, and resigned as ambassador; her husband, Terje Rød-Larsen, was charged with contributing to it. In France, Jack Lang stepped down as head of the Arab World Institute and prosecutors opened a money-laundering investigation into him and his daughter; he has not been charged. Slovakia's national security adviser, Miroslav Lajčák, resigned; Sultan Ahmed bin Sulayem stepped down as chairman and chief executive of the Dubai ports group DP World on 13 February; Joanna Rubinstein stepped down from UNHCR Sweden; Norway's Crown Princess Mette-Marit apologised. [cite:ep4_aj_arrests2026] [cite:ep4_abc_andrew2026] Each of these people denies wrongdoing where they have spoken, and none has been convicted.
+
+### At home
+
+In the United States, the same release produced resignations from corporate, legal and academic posts, set out in the previous section, and congressional testimony. It produced no arrest and no criminal charge of any American named in it, and the Justice Department has not said publicly that it opened an investigation of anyone. [cite:ep4_aj_arrests2026] [cite:ep4_newsweek_list]
+
+**Figure: After the January 2026 release: consequences by country**
+
+|  | Arrests or charges | Resignations | 
+
+| United Kingdom | 2 arrests (Andrew, Mandelson); no charges | Several | 
+
+| Norway | 3 charged with corruption (Jagland, Juul, Rød-Larsen) | Juul as ambassador | 
+
+| France | Money-laundering investigation (Lang) | Lang | 
+
+| United States | None | Pritzker, Ruemmler, Karp, Summers and others | 
+
+Sources: [cite:ep4_aj_arrests2026] [cite:ep4_newsweek_list] [cite:ep4_abc_andrew2026]
+
+### Reading the difference fairly
+
+The asymmetry is striking, and it has a partial explanation that the book must state before drawing any conclusion. The foreign cases are almost all about state secrets and corruption: officials accused of passing government information to Epstein or of taking money from him. Those are offences in which the documents themselves can be the evidence, and in which the released emails go straight to the elements of the crime. The American names, for the most part, appear in the files as social and business contacts, and contact is not a crime.
+
+That explains part of the gap. It does not explain all of it. It does not explain why the FBI's own 2019 list of alleged co-conspirators produced no public account of what was done with it. It does not explain why a federal agreement immunised every "potential co-conspirator" without naming most of them. And it does not explain why no American agency has said publicly that it looked at the January 2026 release as evidence at all. Those are the questions of Parts Eight and Nine.
+
+### What this part established
+Part Four asked who stayed close to Epstein after 2008, and what happened to them. The answer from the record is that a great many powerful people stayed, at every level of contact from a single email to a $170 million relationship, and that what happened to them depended less on what they did than on where they lived and what kind of offence the documents could prove. A British prince and a British peer were arrested over state secrets. Three Norwegians were charged with corruption. In the United States, people resigned.
+
+The part also showed why the names have to be read one at a time. The list that circulates contains a conviction, a death in custody, settlements without admission, sworn allegations, a withdrawn allegation and hundreds of contacts, and only the method of this book keeps them from collapsing into one another. The most consequential names are still missing: the co-conspirators a federal agreement immunised without naming, and the people on an FBI list of eight whose names this book has not found in any published record. Part Five gives every person named so far a full biography, rebuilt from the record, so the reader can see who they were before Epstein, how they came to him, and what the documents actually show.
 
