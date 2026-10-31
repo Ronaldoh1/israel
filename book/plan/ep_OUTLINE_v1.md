@@ -65,6 +65,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
 | Melania and Hillary: knowledge of the husband's connection | Part 4 + `ep_OPERATIONS_v1.md`, Part E |
 | Similar networks; the Church; history | Part 12 + `ep_PATTERNS_v1.md` |
 | What happened to the evidence; the cameras; who holds it | Part 8 + `ep_EVIDENCE_v1.md` |
+| Prior research; biography; how he got the properties; every company and vendor | Parts 1–3 + `ep_SOURCES_COMPANIES_v1.md` |
 
 ---
 
@@ -85,7 +86,8 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - Maxwell's role as convicted.
   - The Palm Beach recruit-a-friend structure (2005 police file).
   - The modelling-agency route. Brunel and MC2 were charged in France. Scouts such as Daniel Siad faced allegations only; he was never charged or questioned and died in July 2026 (natural causes; Part 10).
-- **The locations chapter.** Each property: acquisition, use as documented, and what happened to it.
+- **The locations chapter.** Each property: acquisition (`ep_SOURCES_COMPANIES_v1.md`, Part C), holding shell, use as documented, and what happened to it. The flagship townhouse traces to Wexner. Every property sat in a separate shell, mostly in the Virgin Islands.
+- **The vendor layer** (Part D): recording equipment documented at three properties (the 2008 NYC contractor; the 2014 Spy Store; Ubiquiti on the island, 2017–19); Israel's UN-mission security at the 66th Street apartment (2016–17, Barak's stays). Vendors are named with their documented service only.
   - 9 East 71st Street.
   - El Brillo Way, Palm Beach.
   - Little St. James (1998) and Great St. James (2016).

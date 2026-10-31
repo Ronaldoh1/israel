@@ -1239,6 +1239,136 @@
    "note": "Brought the 2019 case and Maxwell's prosecution. Asked New Mexico to close its 2019 case. Refused or did not respond to the NM commission's subpoena (2026).",
    "scenes": [],
    "apex": false
+  },
+  {
+   "id": "maple",
+   "name": "Maple Inc.",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "USVI shell holding the Manhattan townhouse (recorded transfer from Wexner 2011).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nautilus",
+   "name": "Nautilus Inc.",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Shell holding Little St. James.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "greatstjim",
+   "name": "Great St. Jim LLC",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Shell holding Great St. James (bought 2016, $22.5M).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "cypress",
+   "name": "Cypress Inc.",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "USVI shell holding Zorro Ranch.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "lsje",
+   "name": "LSJE LLC",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Shell that paid island employees.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "financial_trust",
+   "name": "Financial Trust Co.",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein's money-management firm (NY 1981, later USVI).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "apt66",
+   "name": "301 East 66th Street apartments",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Owned via a company linked to Mark Epstein; effectively controlled by Epstein (Drop Site). Barak's stays 2016–17.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nj_contractor",
+   "name": "NJ security contractor (2008)",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Proposed and installed a camera-system upgrade at the townhouse, Nov 2008 – Mar 2009 (~$43k approved; $53,190 invoiced). Records show no blackmail or recording purpose (fact-check).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "spystore",
+   "name": "The Spy Store, Fort Lauderdale",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Feb 2014: motion-sensor hidden cameras bought by pilot Visoski at Epstein's request for Palm Beach.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ubiquiti",
+   "name": "Ubiquiti (equipment)",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "UniFi Wi-Fi, a G3 camera and a video recorder on Little St. James (2017–19), via an Amazon order and a UPS shipment; recorder seized by the FBI. No evidence the company knew of the use.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "liston",
+   "name": "Liston Thomas",
+   "kind": "person",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Tech contractor who scheduled the island equipment installation (Mar 2019).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "isr_un",
+   "name": "Israel's Permanent Mission to the UN",
+   "kind": "government",
+   "cluster": "state",
+   "tier": "",
+   "note": "Protective services (Rafi Shlomo) installed and maintained alarms and sensors at the 66th Street apartment for Barak's stays, 2016–17; background checks on Epstein staff. Protective security; not evidence that Epstein worked for Israel.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mc2",
+   "name": "MC2 Model Management",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Brunel's agency; funded by Epstein (Guardian). The modelling recruitment route.",
+   "scenes": [],
+   "apex": false
   }
  ],
  "edges": [
@@ -2577,6 +2707,166 @@
    "type": "investigation",
    "status": "verified",
    "src": "KOB, 5 Aug 2026"
+  },
+  {
+   "f": "maple",
+   "t": "nyc_house",
+   "label": "holding entity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Forbes, Jul 2025; Bloomberg 2019"
+  },
+  {
+   "f": "nautilus",
+   "t": "lsj",
+   "label": "holding entity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Bloomberg 2019"
+  },
+  {
+   "f": "greatstjim",
+   "t": "gsj",
+   "label": "holding entity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Bloomberg 2019"
+  },
+  {
+   "f": "cypress",
+   "t": "zorro",
+   "label": "holding entity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Forbes, Jul 2025"
+  },
+  {
+   "f": "lsje",
+   "t": "lsj",
+   "label": "island payroll",
+   "type": "employment",
+   "status": "verified",
+   "src": "Bloomberg 2019"
+  },
+  {
+   "f": "epstein",
+   "t": "financial_trust",
+   "label": "owner",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Bloomberg 2019"
+  },
+  {
+   "f": "epstein",
+   "t": "maple",
+   "label": "controlled",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Bloomberg 2019"
+  },
+  {
+   "f": "epstein",
+   "t": "apt66",
+   "label": "effective control (via a Mark Epstein-linked company)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Drop Site via Al Jazeera, 19 Feb 2026"
+  },
+  {
+   "f": "nj_contractor",
+   "t": "nyc_house",
+   "label": "camera-system upgrade, 2008–09",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00595013–20; GSR, 28 Oct 2026"
+  },
+  {
+   "f": "visoski",
+   "t": "spystore",
+   "label": "bought hidden cameras, Feb 2014",
+   "type": "contract",
+   "status": "verified",
+   "src": "Telegraph via Yahoo, 2026"
+  },
+  {
+   "f": "spystore",
+   "t": "palm_beach",
+   "label": "hidden cameras for the house",
+   "type": "contract",
+   "status": "verified",
+   "src": "Telegraph via Yahoo, 2026"
+  },
+  {
+   "f": "ubiquiti",
+   "t": "lsj",
+   "label": "Wi-Fi and camera equipment, 2017–19",
+   "type": "contract",
+   "status": "verified",
+   "src": "Hunterbrook, 4 Feb 2026"
+  },
+  {
+   "f": "liston",
+   "t": "lsj",
+   "label": "installed and configured equipment, Mar 2019",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA01035652 via Hunterbrook"
+  },
+  {
+   "f": "isr_un",
+   "t": "apt66",
+   "label": "alarms, sensors, remote access; access control 2016–17",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00331291, EFTA02062130 via Drop Site"
+  },
+  {
+   "f": "isr_un",
+   "t": "israel",
+   "label": "state mission",
+   "type": "office",
+   "status": "verified",
+   "src": "Drop Site via Al Jazeera"
+  },
+  {
+   "f": "barak",
+   "t": "apt66",
+   "label": "stays, 2016–17",
+   "type": "residence",
+   "status": "verified",
+   "src": "Drop Site via Al Jazeera"
+  },
+  {
+   "f": "groff",
+   "t": "apt66",
+   "label": "relayed Epstein's approval of alterations",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "Drop Site via Al Jazeera"
+  },
+  {
+   "f": "brunel",
+   "t": "mc2",
+   "label": "founder/head",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Guardian"
+  },
+  {
+   "f": "epstein",
+   "t": "mc2",
+   "label": "funded the agency (reported)",
+   "type": "funding",
+   "status": "to-verify",
+   "src": "Guardian; verify the primary source"
+  },
+  {
+   "f": "wexner",
+   "t": "maple",
+   "label": "townhouse transferred to (recorded 2011)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "Forbes, Jul 2025"
   }
  ]
 }
