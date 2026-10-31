@@ -1139,6 +1139,16 @@
    "note": "Hairstylist. Named by Kellen to House Oversight (May 2026) in an assault allegation; denies abusing anyone. Unadjudicated; referred to DOJ (Jun 2026).",
    "scenes": [],
    "apex": false
+  },
+  {
+   "id": "dea",
+   "name": "DEA / OCDETF",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Operation \"Chain Reaction\" (NY-NYS-0829): a May 2015 memo names Epstein plus 14 redacted targets for wire transfers tied to drugs and/or prostitution in the USVI and NYC. No one charged; how it ended is not on the record. Sen. Wyden asked six questions (Feb 2026).",
+   "scenes": [],
+   "apex": false
   }
  ],
  "edges": [
@@ -2305,10 +2315,10 @@
   {
    "f": "melania",
    "t": "gmax",
-   "label": "email correspondence in the files (\"casual\")",
+   "label": "2002 email to Maxwell, released by DOJ (\"casual\", she says)",
    "type": "correspondence",
-   "status": "to-verify",
-   "src": "her Apr 2026 statement; files to pull"
+   "status": "verified",
+   "src": "Washington Times, 10 Apr 2026"
   },
   {
    "f": "epstein",
@@ -2317,6 +2327,54 @@
    "type": "claim",
    "status": "not-established",
    "src": "Fox Oct 2025; Spectrum Oct 2026"
+  },
+  {
+   "f": "dea",
+   "t": "epstein",
+   "label": "Operation Chain Reaction target (memo 18 May 2015); never charged",
+   "type": "investigation",
+   "status": "verified",
+   "src": "Senate Finance (Wyden), Feb–Mar 2026"
+  },
+  {
+   "f": "blanche",
+   "t": "dea",
+   "label": "reported to have blocked release of the unredacted memo (Wyden, tip-based)",
+   "type": "official act",
+   "status": "to-verify",
+   "src": "Senate Finance, 18 Mar 2026"
+  },
+  {
+   "f": "melania",
+   "t": "trump",
+   "label": "knew of his Epstein connection, 2000–04: present in the Feb 2000 photo",
+   "type": "knowledge of spouse's connection",
+   "status": "verified",
+   "src": "Getty/Davidoff photo; 2002 email"
+  },
+  {
+   "f": "hclinton",
+   "t": "bclinton",
+   "label": "probably knew of his Epstein connection, 2001–10 (shared household; public flights); no document of her own contact",
+   "type": "knowledge of spouse's connection",
+   "status": "probable",
+   "src": "inference; see ep_OPERATIONS Part E"
+  },
+  {
+   "f": "hclinton",
+   "t": "gmax",
+   "label": "Maxwell reported as a guest at Chelsea Clinton's 2010 wedding",
+   "type": "association",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "house_oversight",
+   "t": "melania",
+   "label": "testimony requested by the minority (Apr 2026); no subpoena",
+   "type": "oversight",
+   "status": "verified",
+   "src": "Washington Times, 10 Apr 2026"
   }
  ]
 }

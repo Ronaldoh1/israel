@@ -75,6 +75,7 @@ The motive column is shown as **who alleges it, and on what basis**. Same standa
 |---|---|---|---|
 | Sep 2007 | Acosta signs the NPA; co-conspirators immunised; victims not told (Bush) | Victims reluctant; case risk | Second-hand "belonged to intelligence" remark; never confirmed. Court found the CVRA violated (2019). |
 | 2009–2018 | No federal reinvestigation (Bush → Obama → Trump) | — | Documented **inaction** across three administrations |
+| May 2015 → ? | **DEA-led OCDETF case "Operation Chain Reaction"** (NY-NYS-0829): memo of 18 May 2015 names Epstein **plus 14 redacted targets** for wire transfers tied to drugs and/or prostitution in the USVI and NYC. Reported drugs: ecstasy, ketamine, methamphetamine (Bloomberg, Mar 2026). **No one charged; how it ended is not on the record.** (Obama era → Trump era) | None given | Sen. Wyden (D) is concerned it was ended in the first Trump term "to protect pedophiles". He says Blanche **blocked release of the unredacted memo** (Mar 2026), based on a confidential tip. DEA referred questions to Blanche's office. Unconfirmed. |
 | Jul 2019 | SDNY indicts; Barr declines to recuse from the new case (Trump) | His former firm's 2007 Epstein work was a separate matter (verify his exact statement) | Barr's father hired Epstein at Dalton (documented). No recusal conflict established. |
 | Aug 2019 | MCC failures: watch, cellmate, rounds, cameras (BOP) | Staffing and misconduct (IG) | IG found no criminality |
 | Jun 2024 | **FBI authorises destruction of the master jail video** (Biden-era DOJ) | "No longer pertinent"; case closed | Cited by critics as evidence loss. Happened under the *previous* administration. |
@@ -129,6 +130,12 @@ Low-level enforcement is automated (cameras, fines) and needs no investigator to
 
 ---
 
+**The subpoena asymmetry, answered precisely.**
+- **What Congress did:** it can and did compel testimony. Bill and Hillary Clinton were deposed (Feb 2026); Gates, Lutnick, Kellen, Groff and Noel gave transcribed interviews.
+- **What no one did:** no record shows a **phone-records or grand-jury subpoena** for any named associate. That takes a predicated criminal investigation, which DOJ declined in July 2025.
+- **The record on the drug case:** a predicated investigation *did* exist. The DEA's 2015 Chain Reaction case named 15 targets, and none was charged.
+- **What it means:** an ordinary suspect's phone is subpoenaed because a case is opened, and here the case was opened, then dropped without explanation. The book asks the DEA's own six unanswered questions (Wyden, 25 Feb 2026).
+
 ## Part E · The family files: Melania Trump and Hillary Clinton (the family guardrail)
 
 The protocol's own rule (born from the Clinton case, its section on live test runs): **each spouse gets a separate entity and an independently scored record. Marriage transfers nothing.** It cuts both ways, so it is applied identically to both spouses below.
@@ -148,10 +155,25 @@ The protocol's own rule (born from the Clinton case, its section on live test ru
 | Claim | Status | Basis |
 |---|---|---|
 | Bill Clinton: flights early 2000s; photo with Epstein and Maxwell; deposed 27 Feb 2026 | **Documented, *his* record** | Flight manifests; House Oversight photo release (Dec 2025) |
-| Hillary: deposed 26 Feb 2026, about 7 hours | **Documented** | Said she did not know Epstein, never visited his island, homes or offices, and has no knowledge of his crimes. Said Bill did not know of the crimes. |
-| A photo of Hillary *with Epstein* | **Not found** | Our earlier triangle file searched for one. The Dec 2025 photo is Bill with Epstein and Maxwell. If Ron has a specific image, send it and it gets verified. |
-| Maxwell at Chelsea Clinton's 2010 wedding | **Reported; to verify** | Widely reported; pull the primary source |
-| "She lives with him, so she knew" | **Inference; not carried** | Living with Bill makes it likely she knew *of* Epstein socially. Knowing about the *crimes* is a different claim. No document supports it, and her deposition denies it. **Chairman Comer (R) said no one is accusing the Clintons of wrongdoing.** That is cross-adversarial, and it cuts against the inference. |
+| Hillary: deposed under subpoena, 26 Feb 2026, about 7 hours | **Documented** | Did not know Epstein; never visited his properties; no knowledge of his crimes; says Bill did not know of the crimes |
+| A photo of Hillary *with Epstein* | **Not found** | The Dec 2025 photo is Bill with Epstein and Maxwell. Send any specific image to be verified. |
+| Maxwell at Chelsea Clinton's 2010 wedding | **Reported; to verify** | Pull the primary source |
+
+### The spouse classification: knowledge of the husband's *connection* (not his crimes)
+Ron's question, restated exactly: *not "did she know about crimes", but "did she probably know about her husband's connection to Epstein".* That is a fair, checkable question. It is scored separately per spouse and per period, on each woman's own documents.
+
+| Spouse | Period | Classification | Basis |
+|---|---|---|---|
+| **Melania Trump** | 2000–2004 | **Documented** (beyond probable) | She is *in* the Feb 2000 photo with her future husband, Epstein and Maxwell. A 2002 email from her to Maxwell (released by DOJ). |
+| Melania Trump | after 2019 | Documented | Public knowledge; her April 2026 statement |
+| **Hillary Clinton** | 2001–2003 (Bill's flights) | **Probable (inference)** | Shared household; the flights were foundation trips with Secret Service present. No document shows her own contact. |
+| Hillary Clinton | 2010 | **Probable → documented if verified** | Maxwell reported as a guest at their daughter's wedding |
+| Hillary Clinton | after 2019 | Documented | Public knowledge; her deposition |
+
+**Who has been investigated, and how hard.** This is a documented asymmetry that supports Ron's point for one spouse:
+- **Hillary Clinton** was **subpoenaed**, threatened with contempt (Jan 2026), and deposed for about 7 hours.
+- **Melania Trump** has been **asked** to testify by Oversight Democrats (Garcia, Crockett and Subramanyam, Apr 2026), citing her 2002 email to Maxwell. **No subpoena has issued.** The committee's Republican majority controls subpoenas.
+- So the spouse with *more* documented direct contact (in the photo; her own email to Maxwell) has faced *less* compulsory process. Stated as a documented fact about the process, not a finding about either woman.
 
 **Why this matters for the book's credibility.** Ron's own protocol added the family guardrail *because* of this exact case. If the book inferred Hillary's knowledge from her marriage, it would have to infer Melania's from hers, and both inferences would hand every critic an easy dismissal. Each woman's record stands on its own documents. That is how the book stays immune to "partisan hit job" in both directions.
 

@@ -7,13 +7,13 @@ shutil.rmtree(V,ignore_errors=True)
 N={x['id']:x for x in D['nodes']}; E=D['edges']
 FOLD={'person':'People','institution':'Institutions','company':'Institutions','government':'Institutions','document':'Documents','place':'Places'}
 EMO={'person':'👤','company':'💼','institution':'🎓','government':'🏛️','document':'📜','place':'📍'}
-ST={'verified':'✅ verified','to-verify':'🔎 to verify','not-established':'⛔ not established'}
+ST={'probable':'🟡 probable (inference, labelled)','verified':'✅ verified','to-verify':'🔎 to verify','not-established':'⛔ not established'}
 TIER={'adjudicated':'Adjudicated (verdict, ruling or settlement)','sworn-allegation':'Sworn allegation','association':'Documented association (no conduct alleged)','charged':'Charged (died before trial)','withdrawn-allegation':'Allegation withdrawn','allegation-to-congress':'Allegation made to Congress (unadjudicated; denied)','':'—'}
 CL={'centre':'The centre','finance':'Finance','money':'Money vehicles','tech':'Tech','politics':'Politics','state':'State','royals':'Royals','culture':'Culture and science','justice':'Justice system','release':'The files fight','intelligence':'Intelligence','reporters':'Those who reported it','places':'Places','abroad':'Accountability abroad','witnesses':'Deaths and lost testimony','operations':'Running the operation'}
 safe=lambda s: re.sub(r'[\\/:*?"<>|#^\[\]]','',s)
 fn=lambda i: safe(N[i]['name'])
 # degree from Epstein over verified edges
-NOTIE={'allegation to Congress','claim','investigation','testimony','litigation','oversight','complaint','court ruling','reporting','document','forensic review'}
+NOTIE={'knowledge of spouse\'s connection','allegation to Congress','claim','investigation','testimony','litigation','oversight','complaint','court ruling','reporting','document','forensic review'}
 adj=defaultdict(set)
 for x in E:
     if x['status']=='verified' and x['type'] not in NOTIE: adj[x['f']].add(x['t']); adj[x['t']].add(x['f'])
@@ -84,7 +84,7 @@ cnt=defaultdict(int)
 for x in E: cnt[x['status']]+=1
 sh=f"""# Start here
 
-**The Epstein Network Map** · data as of {D['built']} · {len(N)} nodes · {len(E)} connections ({cnt['verified']} verified, {cnt['to-verify']} to verify, {cnt['not-established']} not established)
+**The Epstein Network Map** · data as of {D['built']} · {len(N)} nodes · {len(E)} connections ({cnt['verified']} verified, {cnt['to-verify']} to verify, {cnt['not-established']} not established, {cnt['probable']} probable)
 
 This vault is generated from `book/plan/epstein_map/network.json`. Edit the data and rebuild; don't edit notes by hand, or the next build overwrites them. The same data will drive the clickable map in the library.
 
@@ -96,6 +96,7 @@ This vault is generated from `book/plan/epstein_map/network.json`. Edit the data
 ## Status
 - ✅ **verified**: in a sourced simulation scene or checked live on the build date.
 - 🔎 **to verify**: a lead (mostly from the documentaries). Not usable in the book until sourced. See [[To Verify]].
+- 🟡 **probable**: a labelled inference from documented facts, never a finding (used for spouse knowledge-of-connection).
 - ⛔ **not established**: kept on purpose, so the map shows where the record stops (the intelligence claims).
 
 ## Tiers (for people)

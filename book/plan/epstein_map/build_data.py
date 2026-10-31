@@ -268,8 +268,18 @@ e('kellen','fekkai','alleged assault, early 2000s (denied)','allegation to Congr
 e('kellen','gmax','alleged abuse on the island','allegation to Congress',V,'ABC, 4 Jun 2026')
 e('melania','trump','spouse','kinship',V,'public record')
 e('melania','epstein','photographed together, Mar-a-Lago, Feb 2000','association',V,'Getty/Davidoff; Project doc triangle')
-e('melania','gmax','email correspondence in the files ("casual")','correspondence',T,'her Apr 2026 statement; files to pull')
+e('melania','gmax','2002 email to Maxwell, released by DOJ ("casual", she says)','correspondence',V,'Washington Times, 10 Apr 2026')
 e('epstein','melania','"introduced her to Trump": Wolff; House Judiciary Democrats\' report; denied','claim',X,'Fox Oct 2025; Spectrum Oct 2026')
+
+# --- DEA case; spouse knowledge-of-connection (see ep_OPERATIONS_v1.md, Parts C and E)
+n('dea','DEA / OCDETF','government','justice','Operation "Chain Reaction" (NY-NYS-0829): a May 2015 memo names Epstein plus 14 redacted targets for wire transfers tied to drugs and/or prostitution in the USVI and NYC. No one charged; how it ended is not on the record. Sen. Wyden asked six questions (Feb 2026).','',[])
+P='probable'
+e('dea','epstein','Operation Chain Reaction target (memo 18 May 2015); never charged','investigation',V,'Senate Finance (Wyden), Feb–Mar 2026')
+e('blanche','dea','reported to have blocked release of the unredacted memo (Wyden, tip-based)','official act',T,'Senate Finance, 18 Mar 2026')
+e('melania','trump','knew of his Epstein connection, 2000–04: present in the Feb 2000 photo','knowledge of spouse\'s connection',V,'Getty/Davidoff photo; 2002 email')
+e('hclinton','bclinton','probably knew of his Epstein connection, 2001–10 (shared household; public flights); no document of her own contact','knowledge of spouse\'s connection',P,'inference; see ep_OPERATIONS Part E')
+e('hclinton','gmax','Maxwell reported as a guest at Chelsea Clinton\'s 2010 wedding','association',T,'to verify')
+e('house_oversight','melania','testimony requested by the minority (Apr 2026); no subpoena','oversight',V,'Washington Times, 10 Apr 2026')
 
 json.dump({'built':'2026-10-30','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
 ids={x['id'] for x in N}
