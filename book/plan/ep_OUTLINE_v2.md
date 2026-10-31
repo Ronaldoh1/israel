@@ -143,6 +143,31 @@ What kept that system running? Each part asks this of one layer: the man, the op
 
 ---
 
+## Part 5 · The Names: Biographies Rebuilt from the Record *(new; later parts renumber +1 at build)*
+*Full plan, roster and three sample entries: `ep_THE_NAMES_v1.md`.*
+- A biographical dictionary of **98 people**:
+  - 25 full entries;
+  - 45 standard entries;
+  - 19 short entries;
+  - "The people who told": survivors and reporters, from their own public words, placed first.
+- One template:
+  - before and apart from Epstein;
+  - the record, dated, with document numbers;
+  - what they said vs. what the files show (sworn or not);
+  - allegations at their tier;
+  - consequences;
+  - **what the news got wrong, in both directions**;
+  - what is not established;
+  - the response request.
+- Every name in the book links to its entry.
+
+**Blind spots**
+- **[verify]** Every row needs its EFTA number or court citation before drafting.
+- **[risk]** Private people are named only in the role the record already shows. The four lineup men and private women in emails are excluded.
+- **[risk]** Response requests go to every living person (Appendix G). A media lawyer reviews the part before publication.
+- **[counter]** "What the news got wrong" must correct overstatements as readily as omissions. The samples do both (Wexner was "charged": no; Lutnick "lied under oath": not established).
+- **[gap]** Reports say Giuffre's court papers named Wexner. Check the primary filing; if confirmed, add it to the Allegations Register with his denial.
+
 ## Part 5 · The Reputation Machine
 *How a convicted sex offender was made respectable again, in his helpers' own emails.*
 1. Bannon's interview footage and the 2017–19 texts.
