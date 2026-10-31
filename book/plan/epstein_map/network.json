@@ -917,6 +917,16 @@
    "apex": false
   },
   {
+   "id": "bop",
+   "name": "Federal Bureau of Prisons",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Moved Maxwell from FCI Tallahassee (low) to FPC Bryan (minimum-security camp) on 1 Aug 2025, days after the Blanche interviews. Its rules keep sex offenders at low security or above unless the factor is waived; a waiver is reported, not confirmed. Gives no reason; says it prohibits preferential treatment.",
+   "scenes": [],
+   "apex": false
+  },
+  {
    "id": "andriesz",
    "name": "Simon Andriesz",
    "kind": "person",
@@ -2035,6 +2045,30 @@
    "type": "official act",
    "status": "verified",
    "src": "epf_s07c"
+  },
+  {
+   "f": "bop",
+   "t": "gmax",
+   "label": "moved to minimum-security camp FPC Bryan, 1 Aug 2025; no reason given",
+   "type": "custody",
+   "status": "verified",
+   "src": "ABC/AP, Aug 2025"
+  },
+  {
+   "f": "bop",
+   "t": "gmax",
+   "label": "sex-offender public safety factor reportedly waived (approver unknown)",
+   "type": "official act",
+   "status": "to-verify",
+   "src": "Snopes via Yahoo, Aug 2025 (BOP would not vouch)"
+  },
+  {
+   "f": "bop",
+   "t": "doj",
+   "label": "component of DOJ",
+   "type": "office",
+   "status": "verified",
+   "src": "public record"
   },
   {
    "f": "patel",

@@ -208,6 +208,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
    - **The DEA case no one talks about:** Operation Chain Reaction (OCDETF memo, 18 May 2015). Epstein and 14 redacted targets; wire transfers tied to drugs and prostitution in the USVI and NYC. No charges; how it ended is unknown. Sen. Wyden's six questions; his report that Blanche blocked the unredacted memo (tip-based).
    - **The subpoena asymmetry:** Congress compelled testimony, but no phone-records or grand-jury subpoena appears for any associate, because DOJ declined to open a case.
    - The enforcement asymmetry: white-collar prosecutions fell from nearly 11,000 in 1995 to under 4,000 in 2025. Low-level enforcement runs automatically; cases at the top need someone to open a file.
+   - **The custody asymmetry:** Maxwell moved from low security (Tallahassee) to a minimum-security camp (Bryan) on 1 Aug 2025, days after nine hours with the Deputy AG. Bureau rules bar sex offenders from camps unless the factor is waived; the waiver is reported, not confirmed, and no one has said who approved it. Then the alleged perks (Raskin/Garcia letter, Jan 2026; Turnage, May 2026), the reported transfer of prisoners who spoke out, and the clemency thread. Three tracks kept apart; no deal claimed (`ep_OPERATIONS_v1.md`, Part D).
 - **Closing chapter:** "Real contact points, no proven command link." The slide test is run out loud.
 
 ### Part 7 · Power Protects Power: The DOJ Architecture

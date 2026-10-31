@@ -136,6 +136,68 @@ Low-level enforcement is automated (cameras, fines) and needs no investigator to
 - **The record on the drug case:** a predicated investigation *did* exist. The DEA's 2015 Chain Reaction case named 15 targets, and none was charged.
 - **What it means:** an ordinary suspect's phone is subpoenaed because a case is opened, and here the case was opened, then dropped without explanation. The book asks the DEA's own six unanswered questions (Wyden, 25 Feb 2026).
 
+---
+
+**The custody asymmetry: Maxwell at FPC Bryan.** Ron's question: *why was the one person convicted in this case moved to an easier prison, when people with far smaller offences serve in harder ones?*
+
+*What happened (documented):*
+- Maxwell was convicted in December 2021 on five counts, including **sex trafficking of a minor**, and sentenced to 20 years. She was held at **FCI Tallahassee, a low-security prison**.
+- In late July 2025 she sat for about nine hours of interviews over two days with **Deputy Attorney General Todd Blanche**, in Tallahassee. Her lawyer said they discussed "about 100 names".
+- On **1 August 2025**, days later, the Bureau of Prisons moved her to **FPC Bryan, Texas, a minimum-security camp**. The BOP gave no reason.
+
+*Why it's unusual (the rule):*
+- The Bureau's classification rules give anyone convicted of a sex offence a **"sex offender" public safety factor**, which requires housing in **at least a low-security institution**. That puts minimum-security camps out of reach by default.
+- The factor can be **waived** only by the Bureau's central designation office (the "PSF waived" variable).
+- Screenshots published in August 2025 reportedly show Maxwell received that waiver. The BOP said it **"cannot vouch for the authenticity of the documents"**, and Snopes could not verify them. **The waiver is reported, not officially confirmed. Who approved it is unknown.**
+- Minimum-security status ("out" custody) can also make a prisoner eligible for work outside the fence. A viral claim that she had been cleared for work release was **not substantiated**; Snopes found no evidence that she has left the camp.
+
+*What has been alleged about her treatment since (allegations, with who made them):*
+- **Nov 2025:** Rep. Jamie Raskin said a whistleblower reported special treatment at Bryan, and that a commutation request was being prepared.
+- **22 Jan 2026:** Raskin and Rep. Robert Garcia wrote to AG Bondi alleging:
+  - an unsupervised laptop;
+  - more property than other prisoners, carried for her by staff;
+  - access to a staff-only area to watch television alone;
+  - bottled water with meals;
+  - mail routed under the warden's name;
+  - perks described as "room service, private exercise time, concierge document service, or a puppy to play with".
+
+  They wrote that White House Chief of Staff Susie Wiles **could not say who ordered the transfer**. They asked for an oversight visit to the camp with the Inspector General and a transcribed interview of **Warden Tanisha Hall**.
+- **May 2026:** a former nurse and mailroom worker at the camp, **Noella Turnage**, spoke to CNN. Leaked emails attributed to Maxwell describe her perks; one compares the camp to falling through the looking glass.
+- **June 2026 (Prison Legal News, citing CNN):** other prisoners who spoke to the press about the camp, including **Julie Howell**, were reportedly questioned by the warden and **transferred to higher-security prisons**.
+- **The Bureau's position:** it prohibits preferential treatment and does not discuss any prisoner's conditions, citing privacy and security.
+
+*The three tracks, kept apart:*
+1. **What was done (documented):** an interview with the Deputy AG, followed within days by a move to a camp that the default rules exclude her from.
+2. **The stated reason:** **none given officially.** One reported explanation is that she needed protection because she was seen as cooperating (Daily Beast, citing sources). It is unconfirmed. Protection is normally handled through protective custody or witness units, not a lower security level.
+3. **Inferred motive (contested):** critics read the move as a reward for cooperation, or a step toward clemency. Some facts fit that reading:
+   - On 9 Feb 2026 her lawyer tied any testimony to clemency, and she took the Fifth.
+   - The Senate passed a unanimous resolution against clemency (29 Jul 2026).
+   - The President has not ruled clemency out (as reported).
+
+   Against that: Blanche told Congress on 19 May 2026 that he would not recommend a pardon. **No document shows who decided the move or why.** The book states the sequence and the rule, and does not claim a deal.
+
+*The fair comparison (honest about Ron's example):* a speeding ticket does not land anyone in federal prison; traffic offences are state matters, usually fines. The fair comparison is this:
+- Under the Bureau's own default rule, **a person convicted of a child-sex-trafficking offence does not go to a camp at all.**
+- Thousands of federal prisoners with lesser convictions, such as drug possession or a supervised-release violation, serve in low- or medium-security prisons.
+- The one person convicted in the Epstein case was moved below that floor, days after a private session with the Department's number-two official, and nobody will say who signed off.
+
+**That is the custody asymmetry, and every part of it is checkable.**
+
+*Code panel:*
+```objc
+// Every other inmate: security level computed from the score + public safety factors
+// One inmate: the factor is switched off, by an office that will not say who flipped it
+inmate.publicSafetyFactors = @[];   // "PSF waived" (reported; approver unknown)
+```
+In plain language: the rule is applied by default to everyone. In one case it was switched off, and the record of who switched it off has not been produced.
+
+*Still to verify:*
+- Whether the waiver exists, and who approved it.
+- Whether the oversight visit happened, and what the Inspector General found.
+- Whether Warden Hall gave the transcribed interview.
+- The exact dates of the Blanche interviews.
+- Maxwell's clemency status as of the build date.
+
 ## Part E · The family files: Melania Trump and Hillary Clinton (the family guardrail)
 
 The protocol's own rule (born from the Clinton case, its section on live test runs): **each spouse gets a separate entity and an independently scored record. Marriage transfers nothing.** It cuts both ways, so it is applied identically to both spouses below.
@@ -190,6 +252,14 @@ Ron's question, restated exactly: *not "did she know about crimes", but "did she
 - Chelsea Clinton wedding guest-list source.
 
 ## Sources (checked 30 Oct 2026)
+- ABC7, Maxwell moved to FPC Bryan (Aug 2025): https://abc7.com/post/bureau-prisons-moves-ghislaine-maxwell-prison-camp-texas/17391720/
+- Snopes via Yahoo, the work-release claim, the BOP rules and the reported waiver (Aug 2025): https://www.yahoo.com/news/articles/know-report-ghislaine-maxwell-cleared-233300440.html
+- Common Dreams, the sex-offender public safety factor (Aug 2025): https://www.commondreams.org/opinion/why-was-ghislaine-maxwell-transferred
+- Raskin and Garcia letter to AG Bondi (22 Jan 2026): https://oversightdemocrats.house.gov/download/02/20/2026/letter-to-pam-bondi?download=1
+- CNN, Raskin whistleblower (10 Nov 2025): https://www.cnn.com/2025/11/10/politics/ghislaine-maxwell-special-treatment-commutation-raskin-whistleblower
+- CNN, Noella Turnage interview (May 2026): https://www.cnn.com/2026/05/13/us/video/ebof-ghislaine-maxwell-whistleblower-noella-turnage
+- Prison Legal News, preferential treatment and transferred prisoners (1 Jun 2026): https://www.prisonlegalnews.org/news/2026/jun/1/ghislaine-maxwell-reportedly-receiving-preferential-treatment-at-texas-prison-camp/
+- Daily Beast, the reported protection explanation: https://www.thedailybeast.com/snitch-ghislaines-prison-move-was-due-to-death-threats
 - Forbes on Kellen (21 May 2026): https://www.forbes.com/sites/alisondurkee/2026/05/21/epsteins-longtime-assistant-sarah-kellen-testifies-to-congress-today-arguing-shes-also-a-victim/
 - House Oversight, Comer letter to DOJ (4 Jun 2026): https://oversight.house.gov/release/chairman-comer-and-republican-lawmakers-seek-doj-investigation-into-sexual-assault-allegations-made-during-epstein-investigation/
 - ABC on the Kellen allegations and denials (4 Jun 2026): https://abc7ny.com/post/lawmakers-ask-doj-probe-additional-alleged-abusers-named-ex-epstein-assistant/19234492/
