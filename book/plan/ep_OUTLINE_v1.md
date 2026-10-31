@@ -87,6 +87,8 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - Zorro Ranch.
   - The Paris apartment.
   - The aircraft.
+- **Running it: the org chart** (`ep_OPERATIONS_v1.md`, Part A). One function at a time: operations chief, scheduling, executive assistant, house managers, household staff, pilots, overseas scouts, money and legal plumbing, banks, reputation, and the island, ranch and townhouse staff. Each comes with its known holder, the record, **whether they were ever questioned**, and the outcome.
+  - **Finding:** the core staff were immunised in 2008 and not interviewed by law enforcement until 2019–21. No public interview record exists for the island and ranch staff. Chairman Comer's own June 2026 letter asks why. Kellen's 2026 testimony named two men, both of whom deny it; carried at the tier of unadjudicated allegations made to Congress.
 - The people who reported it:
   - Maria Farmer to the FBI, 29 August 1996.
   - Annie Farmer.
@@ -146,6 +148,9 @@ New research comes from the January 2026 file release, five documentaries Ron su
     - Ellison (contact book only).
   - **Science and culture:** Woody Allen, Chomsky, Attia, Nowak and Harvard, Ito and MIT, Branson, Tisch, Siegal.
   - **Royals:** Andrew, Mette-Marit, Sarah Ferguson.
+  - **Spouses, each on their own record** (the family guardrail):
+    - **Melania Trump:** the 2000 photo; the Maxwell emails; the contested claim that Epstein introduced her to Trump; her April 2026 denial; her account vs. his, lined up by date.
+    - **Hillary Clinton:** her February 2026 deposition; no photo with Epstein found; the knowledge-by-marriage inference not carried. Comer said no one accuses the Clintons of wrongdoing.
 - **The loops chapter:** documented circles where A → B → C → A. Each one is tested.
   - Thiel → Valar ← Epstein → Barak → Carbyne ← Founders Fund.
   - Epstein → Mandelson → Global Counsel → Palantir ← Thiel (epn_s04).
@@ -187,6 +192,11 @@ New research comes from the January 2026 file release, five documentaries Ron su
    - Carbyne and Reporty.
    - The Côte d'Ivoire surveillance brokering with Barak ("isn't this perfect for you").
    - Mandelson's firm lobbying for Palantir in the UK.
+5. **The surveillance question: "they could watch them, so why haven't they?"** (`ep_OPERATIONS_v1.md`, Part D).
+   - What Snowden documented, and what the law requires (a predicated case and a warrant).
+   - The evidence already seized.
+   - The July 2025 memo's "no predicate" as the real gate.
+   - The enforcement asymmetry: white-collar prosecutions fell from nearly 11,000 in 1995 to under 4,000 in 2025. Low-level enforcement runs automatically; cases at the top need someone to open a file.
 - **Closing chapter:** "Real contact points, no proven command link." The slide test is run out loud.
 
 ### Part 7 · Power Protects Power: The DOJ Architecture
@@ -231,6 +241,20 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - Engelmayer's January 2026 ruling that no court could supervise compliance.
 
   Earlier administrations are documented on the same footing: 2019–2024 sealing and court-ordered unsealing, and the absence of any DOJ release. The President's name appears more than 1,000 times while his appointee controls the release. That structural conflict is stated plainly (epf_s10d).
+- **The DOJ decision ledger, 2007–2026** (`ep_OPERATIONS_v1.md`, Part C). Every decision on three tracks: what happened, the stated reason, and the alleged motive with who alleges it. The decisions:
+  - Acosta's agreement.
+  - Ten years of inaction across three administrations.
+  - The FBI's 2024 destruction of the master video (Biden era).
+  - The May 2025 briefing to Trump that his name is in the files.
+  - The July 2025 memo.
+  - The Blanche–Maxwell interviews and her transfer to a minimum-security camp.
+  - The directive to investigate Democrats.
+  - The release that exposed victims while redacting co-conspirators.
+  - The Phang litigation.
+  - The Blanche no-pardon pledge.
+  - The House Judiciary Democrats' October 2026 report.
+
+  **Verdict, in three registers.** Documented: a structural conflict, plus decisions that narrowed disclosure and investigation. Contested: that they were made to protect Trump. Not supported: that only one party failed the victims.
 - **The redactions chapter:**
   - Whole pages blacked out.
   - The same document redacted differently in different copies.
@@ -260,6 +284,11 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - What was searched: property records, the estate inventory, court filings and the 2026 release.
   - What was found: no documented additional island.
   - What the absence can and cannot mean while half the files are withheld.
+- **The cartel test** (`ep_OPERATIONS_v1.md`, Part B): a delegated operation behind an immunity shield, tested on three layers.
+  - **People:** never dismantled (documented).
+  - **Money:** continued under the same hands as an estate.
+  - **Mechanism:** not established either way; open in France and New Mexico.
+  - **What would prove it is still running:** a post-2019 transaction, an active recruiter, a property in use, or a sworn account of post-2019 abuse. These are the leads to chase.
 - **The mechanism outlives the man:** the modelling-agency and visa pipeline as a *mechanism*, with documented precedents (Brunel and MC2, Gérald Marie). Named people appear only at their own tier.
 - **The test:** is the network dead? Graded three ways: the network as people, the network as a mechanism, and the network as protection.
 

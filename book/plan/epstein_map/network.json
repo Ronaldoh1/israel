@@ -1009,6 +1009,136 @@
    "note": "Appointed Lea Paterson to review its handling of Andriesz's whistleblowing (Oct 2026).",
    "scenes": [],
    "apex": false
+  },
+  {
+   "id": "kellen",
+   "name": "Sarah Kellen",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Assistant about 2001–13: scheduling; \"given a directory of names and told whom to call\" (DOJ memo, Dec 2019). Named in the 2008 NPA; never charged; DOJ did not dispute she was also a victim. Not interviewed by law enforcement until after the July 2019 arrest. House Oversight interview 21 May 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "groff",
+   "name": "Lesley Groff",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Executive assistant 2001–Jul 2019; managed the schedule. Named in the 2008 NPA; never charged; civil suits dismissed. Interviewed by prosecutors 2021; House Oversight 9 Jun 2026 (says she was unaware). Survivors dispute her account.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ross",
+   "name": "Adriana Ross",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Assistant; named in the 2008 NPA; on flight logs. Never charged. No public interview record found.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "marcinko",
+   "name": "Nadia Marcinko",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Named in the 2008 NPA; on flight logs. Never charged. No public interview record found.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "alessi",
+   "name": "Juan Alessi",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Palm Beach house manager (1990s–2002). Deposed 2009; witness at the Maxwell trial (2021). Not charged.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "rodriguez",
+   "name": "Alfredo Rodriguez",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Palm Beach butler (2004–05). Kept the contact book \"as insurance\". Convicted 2010 for trying to sell it to an undercover FBI agent. Died about 2015.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "visoski",
+   "name": "Larry Visoski",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Chief pilot. Witness at the Maxwell trial (2021). Not charged.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "rodgers",
+   "name": "David Rodgers",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Pilot; kept flight logs. Deposed; in DOJ trial prep (2021). Not charged.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "indyke",
+   "name": "Darren Indyke",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Epstein's lawyer; estate co-executor. A 2024 class action alleged he helped structure cash access and sham marriages (denied). Estate settled for $25–35M (Feb 2026), no admission.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "kahn",
+   "name": "Richard Kahn",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Epstein's accountant; estate co-executor. Same 2024 class action (denied); same settlement.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "melania",
+   "name": "Melania Trump",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Photographed with Trump, Epstein and Maxwell at Mar-a-Lago (Feb 2000). Maxwell emails in the files (\"casual\", she says). Denied any friendship and denied that Epstein introduced her to Trump (Apr 2026, unsworn). Her record is kept separate from her husband's.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "levine",
+   "name": "Philip Levine",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "allegation-to-congress",
+   "note": "Former Miami Beach mayor. Named by Kellen to House Oversight (May 2026) in an assault allegation; his spokesperson says it was a consensual encounter. Unadjudicated; referred to DOJ by Comer (Jun 2026).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "fekkai",
+   "name": "Frédéric Fekkai",
+   "kind": "person",
+   "cluster": "culture",
+   "tier": "allegation-to-congress",
+   "note": "Hairstylist. Named by Kellen to House Oversight (May 2026) in an assault allegation; denies abusing anyone. Unadjudicated; referred to DOJ (Jun 2026).",
+   "scenes": [],
+   "apex": false
   }
  ],
  "edges": [
@@ -1987,6 +2117,206 @@
    "type": "litigation",
    "status": "verified",
    "src": "epf_s12a"
+  },
+  {
+   "f": "kellen",
+   "t": "epstein",
+   "label": "assistant: scheduling and calls",
+   "type": "employment",
+   "status": "verified",
+   "src": "DOJ memo Dec 2019 via ABC, Jun 2026"
+  },
+  {
+   "f": "kellen",
+   "t": "npa",
+   "label": "named; immunised",
+   "type": "contract",
+   "status": "verified",
+   "src": "Forbes, May 2026"
+  },
+  {
+   "f": "groff",
+   "t": "epstein",
+   "label": "executive assistant 2001–19",
+   "type": "employment",
+   "status": "verified",
+   "src": "PBS, Jun 2026"
+  },
+  {
+   "f": "groff",
+   "t": "npa",
+   "label": "named; immunised",
+   "type": "contract",
+   "status": "verified",
+   "src": "PBS, Jun 2026"
+  },
+  {
+   "f": "ross",
+   "t": "npa",
+   "label": "named; immunised",
+   "type": "contract",
+   "status": "verified",
+   "src": "Forbes, May 2026"
+  },
+  {
+   "f": "marcinko",
+   "t": "npa",
+   "label": "named; immunised",
+   "type": "contract",
+   "status": "verified",
+   "src": "Forbes, May 2026"
+  },
+  {
+   "f": "ross",
+   "t": "epstein",
+   "label": "assistant; flight logs",
+   "type": "employment",
+   "status": "to-verify",
+   "src": "flight logs; to pull"
+  },
+  {
+   "f": "marcinko",
+   "t": "epstein",
+   "label": "flight logs; companion",
+   "type": "association",
+   "status": "to-verify",
+   "src": "flight logs; to pull"
+  },
+  {
+   "f": "alessi",
+   "t": "palm_beach",
+   "label": "house manager",
+   "type": "employment",
+   "status": "verified",
+   "src": "Maxwell trial record, 2021"
+  },
+  {
+   "f": "rodriguez",
+   "t": "palm_beach",
+   "label": "butler",
+   "type": "employment",
+   "status": "verified",
+   "src": "2010 conviction record"
+  },
+  {
+   "f": "visoski",
+   "t": "epstein",
+   "label": "chief pilot",
+   "type": "employment",
+   "status": "verified",
+   "src": "Maxwell trial record, 2021"
+  },
+  {
+   "f": "rodgers",
+   "t": "epstein",
+   "label": "pilot; kept logs",
+   "type": "employment",
+   "status": "verified",
+   "src": "deposition; DOJ trial prep 2021"
+  },
+  {
+   "f": "indyke",
+   "t": "epstein",
+   "label": "lawyer; co-executor",
+   "type": "employment",
+   "status": "verified",
+   "src": "ABC, Feb 2026"
+  },
+  {
+   "f": "kahn",
+   "t": "epstein",
+   "label": "accountant; co-executor",
+   "type": "employment",
+   "status": "verified",
+   "src": "ABC, Feb 2026"
+  },
+  {
+   "f": "indyke",
+   "t": "southern_trust",
+   "label": "estate co-executor",
+   "type": "office",
+   "status": "verified",
+   "src": "ABC, Feb 2026"
+  },
+  {
+   "f": "kahn",
+   "t": "southern_trust",
+   "label": "estate co-executor",
+   "type": "office",
+   "status": "verified",
+   "src": "ABC, Feb 2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "kellen",
+   "label": "interview 21 May 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "Forbes, May 2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "groff",
+   "label": "interview 9 Jun 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "PBS, Jun 2026"
+  },
+  {
+   "f": "kellen",
+   "t": "levine",
+   "label": "alleged assault, c.2003 (denied: \"consensual\")",
+   "type": "allegation to Congress",
+   "status": "verified",
+   "src": "ABC, 4 Jun 2026"
+  },
+  {
+   "f": "kellen",
+   "t": "fekkai",
+   "label": "alleged assault, early 2000s (denied)",
+   "type": "allegation to Congress",
+   "status": "verified",
+   "src": "ABC, 4 Jun 2026"
+  },
+  {
+   "f": "kellen",
+   "t": "gmax",
+   "label": "alleged abuse on the island",
+   "type": "allegation to Congress",
+   "status": "verified",
+   "src": "ABC, 4 Jun 2026"
+  },
+  {
+   "f": "melania",
+   "t": "trump",
+   "label": "spouse",
+   "type": "kinship",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "melania",
+   "t": "epstein",
+   "label": "photographed together, Mar-a-Lago, Feb 2000",
+   "type": "association",
+   "status": "verified",
+   "src": "Getty/Davidoff; Project doc triangle"
+  },
+  {
+   "f": "melania",
+   "t": "gmax",
+   "label": "email correspondence in the files (\"casual\")",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "her Apr 2026 statement; files to pull"
+  },
+  {
+   "f": "epstein",
+   "t": "melania",
+   "label": "\"introduced her to Trump\": Wolff; House Judiciary Democrats' report; denied",
+   "type": "claim",
+   "status": "not-established",
+   "src": "Fox Oct 2025; Spectrum Oct 2026"
   }
  ]
 }
