@@ -888,15 +888,6 @@
    "priority": 5
   },
   {
-   "host": "ch34",
-   "title": "The Epstein Architecture",
-   "subtitle": "The Network, the Files and Power Protects Power",
-   "merge": [
-    "ch50"
-   ],
-   "priority": 6
-  },
-  {
    "host": "ch06",
    "title": "From 1967 to Oslo",
    "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
@@ -2056,5 +2047,178 @@
   ],
   "series": "The Dark Enlightenment Series",
   "book": 8
+ },
+ "epstein": {
+  "slot": "ch34",
+  "absorbs": [
+   "ch50"
+  ],
+  "title": "The Epstein Architecture",
+  "subtitle": "The Network, the Files and Power Protects Power",
+  "span": "1953–2026",
+  "intro": "ep_intro.html",
+  "parts_total": 13,
+  "stages": [
+   {
+    "id": "ep1",
+    "label": "Part One",
+    "title": "Before the Money",
+    "span": "1953–1991",
+    "own": [
+     "epf_y01",
+     "epf_y02",
+     "epf_y03",
+     "epf_y04",
+     "epf_y05",
+     "epf_y06",
+     "epx_s09",
+     "epf_y07",
+     "epf_s03",
+     "epf_y08",
+     "epf_s04",
+     "epx_s07"
+    ]
+   },
+   {
+    "id": "ep2",
+    "label": "Part Two",
+    "title": "How It Operated",
+    "span": "1990s–2019",
+    "own": [
+     "epx_s02",
+     "epf_s04a",
+     "epf_y09",
+     "epf_s05",
+     "epf_s12a",
+     "epf_y10",
+     "epf_s09a"
+    ]
+   },
+   {
+    "id": "ep3",
+    "label": "Part Three",
+    "title": "Follow the Money",
+    "span": "1976–2026",
+    "own": [
+     "epf_s09",
+     "epf_s09b",
+     "epx_s10",
+     "epx_s03"
+    ]
+   },
+   {
+    "id": "ep4",
+    "label": "Part Four",
+    "title": "Who Stayed",
+    "span": "1987–2026",
+    "own": [
+     "epf_s13",
+     "epf_s16",
+     "epf_s15",
+     "epf_s14",
+     "epn_s03",
+     "epn_s04"
+    ]
+   },
+   {
+    "id": "ep5",
+    "label": "Part Five",
+    "title": "The Names",
+    "span": "Biographies rebuilt from the record",
+    "own": []
+   },
+   {
+    "id": "ep6",
+    "label": "Part Six",
+    "title": "The Reputation Machine",
+    "span": "1998–2020",
+    "own": [
+     "epx_s04"
+    ]
+   },
+   {
+    "id": "ep7",
+    "label": "Part Seven",
+    "title": "The Agency Architectures",
+    "span": "1923–2026",
+    "own": [
+     "epn_s01",
+     "epn_s02",
+     "epx_s06",
+     "epx_s08",
+     "epn_s05"
+    ]
+   },
+   {
+    "id": "ep8",
+    "label": "Part Eight",
+    "title": "Power Protects Power",
+    "span": "1973–2026",
+    "own": [
+     "epf_y11",
+     "epf_s06",
+     "epf_y12",
+     "epf_s07",
+     "epf_s10",
+     "doj_s01",
+     "doj_s02",
+     "doj_s03",
+     "doj_s04",
+     "doj_s10",
+     "doj_s11",
+     "doj_s12",
+     "epf_s07c"
+    ]
+   },
+   {
+    "id": "ep9",
+    "label": "Part Nine",
+    "title": "The Files",
+    "span": "2008–2026",
+    "own": [
+     "epf_y13",
+     "epf_y14",
+     "epf_s08",
+     "epx_s05",
+     "epf_s07b",
+     "epf_s10b",
+     "epf_s10c",
+     "epf_s10d",
+     "doj_s08",
+     "doj_s09"
+    ]
+   },
+   {
+    "id": "ep10",
+    "label": "Part Ten",
+    "title": "Is the Network Dead?",
+    "span": "2019–2026",
+    "own": []
+   },
+   {
+    "id": "ep11",
+    "label": "Part Eleven",
+    "title": "The Deaths",
+    "span": "1991–2026",
+    "own": []
+   },
+   {
+    "id": "ep12",
+    "label": "Part Twelve",
+    "title": "Not the Only One",
+    "span": "Precedents and the pattern",
+    "own": []
+   },
+   {
+    "id": "ep13",
+    "label": "Part Thirteen",
+    "title": "The Architecture, Stated Plainly",
+    "span": "Synthesis",
+    "own": [
+     "epf_s12",
+     "oc_ch34"
+    ]
+   }
+  ]
  }
 }

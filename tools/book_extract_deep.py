@@ -36,7 +36,7 @@ assert not missing, 'own scenes not placed in the manifest: %s' % missing
 RS = {}
 for fn in os.listdir('book/research'):
     if fn.endswith('.json'):
-        for e in json.load(open('book/research/' + fn, encoding='utf-8'))['entries']: RS[e['id']] = e
+        for e in json.load(open('book/research/' + fn, encoding='utf-8')).get('entries', []): RS[e['id']] = e
 out = {'chapter': cid, 'title': man.get('title'), 'chapters': [{k: v for k, v in c.items() if k != 'sections'} for c in man.get('chapters', [])], 'sections': man['sections'], 'scenes': [], 'research': [], 'citation_labels': {}}
 keys = set()
 for sid in ids + link_only:

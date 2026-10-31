@@ -7068,7 +7068,7 @@ body.book-open #libBanner{display:none}
     hideAll(); view.classList.remove('on'); document.body.classList.remove('book-open'); ls('ots_view', 'sim');
     if(!routing && /^#(book|library)/.test(location.hash || '')){ try{ history.pushState({ots:1}, '', base()); }catch(e){} }
     /* the simulation's own first-visit tour was held back while the library was open; run it now */
-    setTimeout(function(){ try{ if(window.otsCoach) window.otsCoach(); }catch(e){} }, 500);
+    setTimeout(function(){ try{ if(!localStorage.getItem('ots_onboarding_seen_v1_0_0') && window.startTour) window.startTour(false); }catch(e){} }, 500);
     if(sceneId){ var i = sceneIdx(sceneId); if(i >= 0) try{ window.renderScene(i); }catch(e){} }
   }
   window.openBook = openBook; window.closeBook = closeBook; window.__bookTest = {openReader: openReader, showLibrary: showLibrary, books: function(){ return BOOKS; }};
@@ -7126,7 +7126,7 @@ body.book-open #libBanner{display:none}
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
     renderLib(); lib.scrollTop = 0;
-    /* simplified first visit: the library tour runs only when asked for (+ > How it works) */
+    if(!ls('ots_library_tour_v2')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
     nav('#library', !bootOpen);
     setTimeout(function(){ try{ lib.focus({preventScroll:true}); }catch(e){} }, 50);
   }
@@ -7390,7 +7390,7 @@ body.book-open #libBanner{display:none}
     bannerT = setTimeout(hideBanner, 30000);
   }
   function english(){ var l = (document.documentElement.lang || 'en').toLowerCase(); return l.indexOf('es') !== 0 && l.indexOf('ar') !== 0; }
-  (function waitForSim(){ var n = 0, ok = 0; return;   /* simplified first visit: no banner */
+  (function waitForSim(){ var n = 0, ok = 0;
     if(ls(BKEY) || ls('ots_view')) return;   /* seen it, or already chose a view */
     var iv = setInterval(function(){ n++;
       if(ls(BKEY) || ls('ots_view') === 'library' || n > 400){ clearInterval(iv); return; }
@@ -7401,22 +7401,14 @@ body.book-open #libBanner{display:none}
   (function(){ var t = $('tourOverlay'); if(!t || !window.MutationObserver) return;
     new MutationObserver(function(){ if(t.classList.contains('active') && document.body.classList.contains('book-open')) t.classList.remove('active'); }).observe(t, {attributes:true, attributeFilter:['class']}); })();
   /* arrive in the view the reader used last (a link to a scene, dashboard, map or Eleven Minutes still wins) */
-  /* opens as soon as the page is parsed; the cover from <!--LIBBOOT--> hides everything until the library shows */
-  function libBootDone(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){ if(window.__otsBootOff) window.__otsBootOff(); else document.documentElement.classList.remove('ots-lib-boot'); }); }); }
-  function libBoot(){
-    if(/^#(book|library)/.test(location.hash || '')){ try{ deepEntry(); }catch(e){} return libBootDone(); }   /* a link into the library or a book opens it under the cover */
-    var v0 = ls('ots_view'); if((v0 !== 'library' && v0 != null) || view.classList.contains('on')) return libBootDone();   /* first visit (no view yet) lands in the library too */
-    if((location.hash || '').replace('#', '')) return libBootDone();
-    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return libBootDone();
-    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return libBootDone(); }catch(e){}
-    window.__bookOpening = true;
-    try{ var w = $('welcomeOverlay'); if(shown(w) && window.dismissWelcome){ window.dismissWelcome(); w.style.display = 'none'; } }catch(e){}
-    window.__bookOpening = false;
-    bootOpen = true; try{ openBook(null); }catch(e){} bootOpen = false;
-    libBootDone();
-  }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(libBoot, 0); });
-  else setTimeout(libBoot, 0);
+  window.addEventListener('load', function(){ setTimeout(function(){
+    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return;
+    if((location.hash || '').replace('#', '')) return;
+    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
+    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
+    window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
+    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
+  }, 650); });
 })();
 </script>
 <!--BOOK-END-->
