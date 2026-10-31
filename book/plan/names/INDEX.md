@@ -1,0 +1,103 @@
+# The Names: dossier index
+*Passages found per person, by source. Low counts mark people who need new research before their entry can be written.*
+
+| Depth | Person | Library | Sophia | Files | Dossier |
+|---|---|---|---|---|---|
+| A | Jeffrey Epstein | 169 | 196 | 129 | [jeffrey-epstein.md](jeffrey-epstein.md) |
+| A | Ghislaine Maxwell | 19 | 20 | 15 | [ghislaine-maxwell.md](ghislaine-maxwell.md) |
+| A | Robert Maxwell | 26 | 17 | 9 | [robert-maxwell.md](robert-maxwell.md) |
+| A | Les Wexner | 16 | 17 | 26 | [les-wexner.md](les-wexner.md) |
+| A | Leon Black | 3 | 0 | 9 | [leon-black.md](leon-black.md) |
+| A | Jes Staley | 4 | 5 | 12 | [jes-staley.md](jes-staley.md) |
+| A | Sultan bin Sulayem | 0 | 0 | 7 | [sultan-bin-sulayem.md](sultan-bin-sulayem.md) |
+| A | Donald Trump | 214 | 960 | 41 | [donald-trump.md](donald-trump.md) |
+| A | Melania Trump | 2 | 36 | 15 | [melania-trump.md](melania-trump.md) |
+| A | Bill Clinton | 20 | 60 | 22 | [bill-clinton.md](bill-clinton.md) |
+| A | Hillary Clinton | 5 | 75 | 37 | [hillary-clinton.md](hillary-clinton.md) |
+| A | Howard Lutnick | 0 | 1 | 17 | [howard-lutnick.md](howard-lutnick.md) |
+| A | Larry Summers | 0 | 8 | 6 | [larry-summers.md](larry-summers.md) |
+| A | Steve Bannon | 1 | 24 | 8 | [steve-bannon.md](steve-bannon.md) |
+| A | Bill Gates | 0 | 3 | 10 | [bill-gates.md](bill-gates.md) |
+| A | Elon Musk | 16 | 302 | 5 | [elon-musk.md](elon-musk.md) |
+| A | Peter Thiel | 34 | 166 | 11 | [peter-thiel.md](peter-thiel.md) |
+| A | Reid Hoffman | 9 | 1 | 8 | [reid-hoffman.md](reid-hoffman.md) |
+| A | Andrew Mountbatten-Windsor | 1 | 1 | 8 | [andrew-mountbatten-windsor.md](andrew-mountbatten-windsor.md) |
+| A | Peter Mandelson | 9 | 0 | 13 | [peter-mandelson.md](peter-mandelson.md) |
+| A | Ehud Barak | 35 | 45 | 27 | [ehud-barak.md](ehud-barak.md) |
+| A | Thorbjorn Jagland | 0 | 0 | 3 | [thorbjorn-jagland.md](thorbjorn-jagland.md) |
+| A | Alexander Acosta | 11 | 13 | 23 | [alexander-acosta.md](alexander-acosta.md) |
+| A | Alan Dershowitz | 1 | 1 | 10 | [alan-dershowitz.md](alan-dershowitz.md) |
+| A | Jean-Luc Brunel | 1 | 0 | 22 | [jean-luc-brunel.md](jean-luc-brunel.md) |
+| B | Steven Hoffenberg | 15 | 10 | 9 | [steven-hoffenberg.md](steven-hoffenberg.md) |
+| B | Fabrice Aidan | 1 | 4 | 4 | [fabrice-aidan.md](fabrice-aidan.md) |
+| B | Tom Pritzker | 4 | 3 | 2 | [tom-pritzker.md](tom-pritzker.md) |
+| B | Glenn Dubin | 0 | 0 | 2 | [glenn-dubin.md](glenn-dubin.md) |
+| B | Brock Pierce | 0 | 0 | 3 | [brock-pierce.md](brock-pierce.md) |
+| B | Boris Nikolic | 0 | 0 | 3 | [boris-nikolic.md](boris-nikolic.md) |
+| B | Larry Ellison | 13 | 6 | 1 | [larry-ellison.md](larry-ellison.md) |
+| B | Kimbal Musk | 0 | 20 | 2 | [kimbal-musk.md](kimbal-musk.md) |
+| B | Steve Tisch | 2 | 1 | 4 | [steve-tisch.md](steve-tisch.md) |
+| B | Casey Wasserman | 3 | 1 | 4 | [casey-wasserman.md](casey-wasserman.md) |
+| B | Brad Karp | 0 | 0 | 1 | [brad-karp.md](brad-karp.md) |
+| B | Kathy Ruemmler | 0 | 0 | 5 | [kathy-ruemmler.md](kathy-ruemmler.md) |
+| B | Bill Richardson | 4 | 7 | 5 | [bill-richardson.md](bill-richardson.md) |
+| B | George Mitchell | 0 | 2 | 1 | [george-mitchell.md](george-mitchell.md) |
+| B | Stacey Plaskett | 0 | 0 | 4 | [stacey-plaskett.md](stacey-plaskett.md) |
+| B | Mehmet Oz | 0 | 1 | 1 | [mehmet-oz.md](mehmet-oz.md) |
+| B | Mona Juul | 0 | 0 | 3 | [mona-juul.md](mona-juul.md) |
+| B | Terje Rod-Larsen | 0 | 0 | 2 | [terje-rod-larsen.md](terje-rod-larsen.md) |
+| B | Miroslav Lajcak | 0 | 0 | 1 | [miroslav-lajcak.md](miroslav-lajcak.md) |
+| B | Jack Lang | 0 | 0 | 1 | [jack-lang.md](jack-lang.md) |
+| B | Borge Brende | 0 | 0 | 1 | [borge-brende.md](borge-brende.md) |
+| B | Morgan McSweeney | 0 | 0 | 1 | [morgan-mcsweeney.md](morgan-mcsweeney.md) |
+| B | Joanna Rubinstein | 0 | 0 | 1 | [joanna-rubinstein.md](joanna-rubinstein.md) |
+| B | Sarah Ferguson | 0 | 0 | 2 | [sarah-ferguson.md](sarah-ferguson.md) |
+| B | Mette-Marit | 0 | 0 | 4 | [mette-marit.md](mette-marit.md) |
+| B | Noam Chomsky | 0 | 0 | 5 | [noam-chomsky.md](noam-chomsky.md) |
+| B | Woody Allen | 0 | 3 | 4 | [woody-allen.md](woody-allen.md) |
+| B | Richard Branson | 0 | 0 | 4 | [richard-branson.md](richard-branson.md) |
+| B | Marvin Minsky | 0 | 0 | 3 | [marvin-minsky.md](marvin-minsky.md) |
+| B | Joi Ito | 2 | 0 | 2 | [joi-ito.md](joi-ito.md) |
+| B | Martin Nowak | 0 | 0 | 1 | [martin-nowak.md](martin-nowak.md) |
+| B | Lee Smolin | 0 | 0 | 1 | [lee-smolin.md](lee-smolin.md) |
+| B | David Gelernter | 0 | 0 | 1 | [david-gelernter.md](david-gelernter.md) |
+| B | Peter Attia | 0 | 0 | 3 | [peter-attia.md](peter-attia.md) |
+| B | Al Seckel | 0 | 0 | 7 | [al-seckel.md](al-seckel.md) |
+| B | Darren Indyke | 0 | 0 | 4 | [darren-indyke.md](darren-indyke.md) |
+| B | Richard Kahn | 1 | 0 | 5 | [richard-kahn.md](richard-kahn.md) |
+| B | Marie Villafana | 0 | 0 | 5 | [marie-villafana.md](marie-villafana.md) |
+| B | Kenneth Marra | 11 | 16 | 6 | [kenneth-marra.md](kenneth-marra.md) |
+| B | Roy Black | 0 | 0 | 2 | [roy-black.md](roy-black.md) |
+| B | Barry Krischer | 0 | 0 | 2 | [barry-krischer.md](barry-krischer.md) |
+| B | Michael Reiter | 0 | 0 | 2 | [michael-reiter.md](michael-reiter.md) |
+| B | Pam Bondi | 15 | 24 | 12 | [pam-bondi.md](pam-bondi.md) |
+| B | Todd Blanche | 5 | 8 | 21 | [todd-blanche.md](todd-blanche.md) |
+| B | Kash Patel | 1 | 2 | 1 | [kash-patel.md](kash-patel.md) |
+| C | Sarah Kellen | 0 | 0 | 10 | [sarah-kellen.md](sarah-kellen.md) |
+| C | Lesley Groff | 0 | 1 | 9 | [lesley-groff.md](lesley-groff.md) |
+| C | Adriana Ross | 0 | 0 | 1 | [adriana-ross.md](adriana-ross.md) |
+| C | Nadia Marcinko | 0 | 0 | 4 | [nadia-marcinko.md](nadia-marcinko.md) |
+| C | Juan Alessi | 0 | 0 | 1 | [juan-alessi.md](juan-alessi.md) |
+| C | Alfredo Rodriguez | 0 | 0 | 2 | [alfredo-rodriguez.md](alfredo-rodriguez.md) |
+| C | Larry Visoski | 0 | 0 | 3 | [larry-visoski.md](larry-visoski.md) |
+| C | David Rodgers | 0 | 0 | 1 | [david-rodgers.md](david-rodgers.md) |
+| C | Merwin Dela Cruz | 0 | 0 | 2 | [merwin-dela-cruz.md](merwin-dela-cruz.md) |
+| C | William Riley | 0 | 0 | 2 | [william-riley.md](william-riley.md) |
+| C | Paul Lavery | 0 | 0 | 3 | [paul-lavery.md](paul-lavery.md) |
+| C | Thomas Massie | 31 | 43 | 4 | [thomas-massie.md](thomas-massie.md) |
+| C | Ro Khanna | 3 | 4 | 5 | [ro-khanna.md](ro-khanna.md) |
+| C | Mike Johnson | 4 | 5 | 2 | [mike-johnson.md](mike-johnson.md) |
+| C | Tova Noel | 0 | 1 | 6 | [tova-noel.md](tova-noel.md) |
+| C | Efrain Reyes | 0 | 0 | 1 | [efrain-reyes.md](efrain-reyes.md) |
+| C | Mark Middleton | 0 | 0 | 4 | [mark-middleton.md](mark-middleton.md) |
+| C | Michael Freeman | 0 | 0 | 8 | [michael-freeman.md](michael-freeman.md) |
+| C | Daniel Siad | 0 | 0 | 9 | [daniel-siad.md](daniel-siad.md) |
+| told | Maria Farmer | 4 | 2 | 5 | [maria-farmer.md](maria-farmer.md) |
+| told | Annie Farmer | 1 | 1 | 2 | [annie-farmer.md](annie-farmer.md) |
+| told | Virginia Giuffre | 17 | 16 | 19 | [virginia-giuffre.md](virginia-giuffre.md) |
+| told | Johanna Sjoberg | 0 | 0 | 1 | [johanna-sjoberg.md](johanna-sjoberg.md) |
+| told | Courtney Wild | 0 | 0 | 0 | [courtney-wild.md](courtney-wild.md) |
+| told | Cheri Pierson | 0 | 0 | 1 | [cheri-pierson.md](cheri-pierson.md) |
+| told | Lisa Phillips | 0 | 0 | 1 | [lisa-phillips.md](lisa-phillips.md) |
+| told | Vicky Ward | 3 | 0 | 5 | [vicky-ward.md](vicky-ward.md) |
+| told | Julie K. Brown | 1 | 1 | 4 | [julie-k-brown.md](julie-k-brown.md) |
