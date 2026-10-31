@@ -64,6 +64,7 @@ New research comes from the January 2026 file release, five documentaries Ron su
 | DOJ decisions; the DEA case; subpoena asymmetry; why no surveillance | Parts 6 and 8 + `ep_OPERATIONS_v1.md` |
 | Melania and Hillary: knowledge of the husband's connection | Part 4 + `ep_OPERATIONS_v1.md`, Part E |
 | Similar networks; the Church; history | Part 12 + `ep_PATTERNS_v1.md` |
+| What happened to the evidence; the cameras; who holds it | Part 8 + `ep_EVIDENCE_v1.md` |
 
 ---
 
@@ -263,6 +264,16 @@ New research comes from the January 2026 file release, five documentaries Ron su
   - The House Judiciary Democrats' October 2026 report.
 
   **Verdict, in three registers.** Documented: a structural conflict, plus decisions that narrowed disclosure and investigation. Contested: that they were made to protect Trump. Not supported: that only one party failed the victims.
+- **Where the evidence went** (`ep_EVIDENCE_v1.md`). A chain-of-custody ledger for 16 bodies of evidence: what each is, who seized it, who holds it now, and what was lost, moved, destroyed or withheld.
+  - **The five dated losses:**
+    - The Palm Beach computers, removed by the defence's investigators days before the 2005 search and never recovered.
+    - The safe's five-day custody gap with the accountant (2019).
+    - The wrong jail tier preserved.
+    - The FBI's 2024 destruction of the master jail video.
+    - A ranch nobody searched until March 2026.
+  - **The evidence index:** 40 devices, 26 drives, over 70 CDs, 6 recording devices, a "document with names", and Maxwell wiretap discs.
+  - **Federal agencies refusing to share:** SDNY refused or ignored New Mexico's subpoena.
+  - **The question:** who has reviewed it? (Never "release the tapes": abuse imagery is never published.)
 - **The redactions chapter:**
   - Whole pages blacked out.
   - The same document redacted differently in different copies.

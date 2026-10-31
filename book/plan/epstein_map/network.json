@@ -1149,6 +1149,96 @@
    "note": "Operation \"Chain Reaction\" (NY-NYS-0829): a May 2015 memo names Epstein plus 14 redacted targets for wire transfers tied to drugs and/or prostitution in the USVI and NYC. No one charged; how it ended is not on the record. Sen. Wyden asked six questions (Feb 2026).",
    "scenes": [],
    "apex": false
+  },
+  {
+   "id": "roy_black",
+   "name": "Roy Black",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Epstein's criminal defence lawyer (2005–08). Per an Oct 2005 memo in the files, items were removed from the Palm Beach house \"pursuant to the instructions\" of Black.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "riley",
+   "name": "William Riley",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Private investigator for Epstein; received the removed Palm Beach items \"for inventory and safekeeping\"; managed storage units (paid until at least 2010). Contested a 2007 subpoena. Rep. Garcia demanded the drives (Mar 2026).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "lavery",
+   "name": "Paul Lavery",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Private investigator who removed about 100 items, including 3 computers, from the Palm Beach house in Oct 2005, less than two weeks before the police search (Oct 2005 memo).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "delacruz",
+   "name": "Merwin Dela Cruz",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "NYC house manager. Packed the unseized safe contents into suitcases after the July 2019 search and left them with Kahn's doorman; returned about 5 days later.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "pb_items",
+   "name": "Palm Beach computers and items (2005)",
+   "kind": "document",
+   "cluster": "evidence",
+   "tier": "",
+   "note": "3 computers, 29 phone directories, a masseuse list, nude photos, over 40 VHS tapes, cash. Removed before the police search; in storage until at least 2010; location now unknown. Prosecutors appear never to have accessed them.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "evidence_index",
+   "name": "FBI evidence index (2007/2019 searches)",
+   "kind": "document",
+   "cluster": "evidence",
+   "tier": "",
+   "note": "40 computers and devices, 26 drives, over 70 CDs, 6 recording devices, the island logbook, a \"document with names\", employee lists, and 3 discs of Maxwell phone intercepts. Over 300 GB (DOJ). In FBI custody.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "video_1b60",
+   "name": "MCC master video (FBI item 1B60)",
+   "kind": "document",
+   "cluster": "evidence",
+   "tier": "",
+   "note": "Master recording of the jail video archives. Destruction authorised June 2024 as \"no longer pertinent\". Re-recorded May 2025 with a 62-second gap.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nm_commission",
+   "name": "NM Survivors' Truth Commission",
+   "kind": "government",
+   "cluster": "places",
+   "tier": "",
+   "note": "Created by House Resolution 1 (62–0, Feb 2026). Initial report 5 Aug 2026: at least 5 victims at the ranch (1996–2012), 227 flights; no search until Mar 2026. 20 subpoenas; SDNY, the FAA and JPMorgan refused or did not respond. Final report due 31 Dec 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "sdny",
+   "name": "US Attorney, SDNY",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Brought the 2019 case and Maxwell's prosecution. Asked New Mexico to close its 2019 case. Refused or did not respond to the NM commission's subpoena (2026).",
+   "scenes": [],
+   "apex": false
   }
  ],
  "edges": [
@@ -2375,6 +2465,118 @@
    "type": "oversight",
    "status": "verified",
    "src": "Washington Times, 10 Apr 2026"
+  },
+  {
+   "f": "lavery",
+   "t": "pb_items",
+   "label": "removed from the house, Oct 2005",
+   "type": "custody",
+   "status": "verified",
+   "src": "ABC, 25 Feb 2026"
+  },
+  {
+   "f": "roy_black",
+   "t": "lavery",
+   "label": "instructed the removal (per the 2005 memo)",
+   "type": "instruction",
+   "status": "verified",
+   "src": "NY1, 27 Mar 2026"
+  },
+  {
+   "f": "lavery",
+   "t": "riley",
+   "label": "handed the items over \"for safekeeping\"",
+   "type": "custody",
+   "status": "verified",
+   "src": "NY1, 27 Mar 2026"
+  },
+  {
+   "f": "riley",
+   "t": "pb_items",
+   "label": "storage until at least 2010; location now unknown",
+   "type": "custody",
+   "status": "verified",
+   "src": "ABC, 25 Feb 2026"
+  },
+  {
+   "f": "roy_black",
+   "t": "epstein",
+   "label": "defence lawyer, 2005–08",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "NY1, 27 Mar 2026"
+  },
+  {
+   "f": "riley",
+   "t": "epstein",
+   "label": "private investigator",
+   "type": "employment",
+   "status": "verified",
+   "src": "ABC, 25 Feb 2026"
+  },
+  {
+   "f": "delacruz",
+   "t": "epstein",
+   "label": "NYC house manager",
+   "type": "employment",
+   "status": "verified",
+   "src": "Kahn testimony via AOL, 2026"
+  },
+  {
+   "f": "delacruz",
+   "t": "kahn",
+   "label": "left the safe contents with his doorman, Jul 2019",
+   "type": "custody",
+   "status": "verified",
+   "src": "Kahn testimony via AOL, 2026"
+  },
+  {
+   "f": "kahn",
+   "t": "fbi",
+   "label": "returned the safe contents about 5 days later",
+   "type": "custody",
+   "status": "verified",
+   "src": "Kahn testimony via AOL, 2026"
+  },
+  {
+   "f": "fbi",
+   "t": "evidence_index",
+   "label": "custodian of the seized evidence",
+   "type": "custody",
+   "status": "verified",
+   "src": "Yahoo/ABC, 2026"
+  },
+  {
+   "f": "fbi",
+   "t": "video_1b60",
+   "label": "authorised destruction, June 2024",
+   "type": "official act",
+   "status": "verified",
+   "src": "CBS, 11 Feb 2026"
+  },
+  {
+   "f": "sdny",
+   "t": "zorro",
+   "label": "asked New Mexico to close the 2019 state case",
+   "type": "official act",
+   "status": "verified",
+   "src": "AP, Mar 2026"
+  },
+  {
+   "f": "nm_commission",
+   "t": "sdny",
+   "label": "subpoena refused or ignored (2026)",
+   "type": "oversight",
+   "status": "verified",
+   "src": "KOB, 5 Aug 2026"
+  },
+  {
+   "f": "nm_commission",
+   "t": "zorro",
+   "label": "investigation; initial report 5 Aug 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "KOB, 5 Aug 2026"
   }
  ]
 }
