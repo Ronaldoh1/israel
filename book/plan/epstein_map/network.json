@@ -1,0 +1,1762 @@
+{
+ "built": "2026-10-30",
+ "nodes": [
+  {
+   "id": "epstein",
+   "name": "Jeffrey Epstein",
+   "kind": "person",
+   "cluster": "centre",
+   "tier": "adjudicated",
+   "note": "Financier. Pleaded guilty in Florida state court in 2008 (solicitation, including of a minor). Federal sex-trafficking charges July 2019; died in federal custody 10 Aug 2019, ruled suicide.",
+   "scenes": [
+    "epf_s06",
+    "epf_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "gmax",
+   "name": "Ghislaine Maxwell",
+   "kind": "person",
+   "cluster": "centre",
+   "tier": "adjudicated",
+   "note": "Convicted Dec 2021 on five counts including sex trafficking of a minor; 20-year sentence. Moved to FPC Bryan (minimum security) 1 Aug 2025 after two days of interviews with the Deputy AG.",
+   "scenes": [
+    "epf_s07b",
+    "epf_s07c"
+   ],
+   "apex": false
+  },
+  {
+   "id": "rmax",
+   "name": "Robert Maxwell",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Publisher; Ghislaine Maxwell's father. Died at sea 1991 (ruled accidental; autopsies inconsistent). State funeral on the Mount of Olives. Documented ties are not transitive to the Epstein enterprise.",
+   "scenes": [
+    "epx_s07",
+    "s16"
+   ],
+   "apex": false
+  },
+  {
+   "id": "wexner",
+   "name": "Les Wexner",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "L Brands founder. Gave Epstein full power of attorney (1991); $3.1B in stock sales overseen through 2006; later said Epstein misappropriated vast sums. No proceeding.",
+   "scenes": [
+    "epf_s04",
+    "epf_y08"
+   ],
+   "apex": true
+  },
+  {
+   "id": "black",
+   "name": "Leon Black",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "Apollo co-founder. Paid Epstein $158M (Apollo board review) plus $12M; about $170M by the Senate Finance count, for \"tax advice\". Denies misconduct.",
+   "scenes": [
+    "epx_s03"
+   ],
+   "apex": true
+  },
+  {
+   "id": "hoffenberg",
+   "name": "Steven Hoffenberg",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Towers Financial, a half-billion-dollar Ponzi scheme; served 20 years. Paid Epstein a $25,000-a-month consultancy and a $2M loan never repaid. Death 2022: verify record.",
+   "scenes": [
+    "epf_y07",
+    "epf_s03"
+   ],
+   "apex": false
+  },
+  {
+   "id": "southern_trust",
+   "name": "Southern Trust Company",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein's Virgin Islands firm. Ten-year EDC tax break; $391M in assets by 2018. The USVI AG later alleged it was a shell.",
+   "scenes": [
+    "epx_s10"
+   ],
+   "apex": false
+  },
+  {
+   "id": "jpm",
+   "name": "JPMorgan Chase",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Epstein's bank 1998–2013, kept through his 2006 arrest and 2008 plea. $290M class settlement (June 2023) and $75M to the USVI. No admission.",
+   "scenes": [
+    "epf_s09",
+    "epf_s09b"
+   ],
+   "apex": false
+  },
+  {
+   "id": "deutsche",
+   "name": "Deutsche Bank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Took Epstein as a client in 2013 and kept him until 2018. $75M victims' settlement (2023); $150M NYDFS penalty (2020).",
+   "scenes": [
+    "epf_s09"
+   ],
+   "apex": false
+  },
+  {
+   "id": "bofa",
+   "name": "Bank of America",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "$72.5M settlement, approved by Judge Rakoff on 27 Aug 2026. No admission.",
+   "scenes": [
+    "epf_s09"
+   ],
+   "apex": false
+  },
+  {
+   "id": "staley",
+   "name": "Jes Staley",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "Ran the JPMorgan relationship with Epstein. Banned by the UK FCA (2023, upheld on appeal). A civil allegation against him is unadjudicated.",
+   "scenes": [
+    "epf_s09"
+   ],
+   "apex": false
+  },
+  {
+   "id": "rothschild_group",
+   "name": "Edmond de Rothschild group",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Paris offices raided 20 Mar 2026 in a bribery probe into former employee Fabrice Aidan. CEO Ariane de Rothschild had documented contacts with Epstein. A reported $25M consulting fee is not yet verified.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "aidan",
+   "name": "Fabrice Aidan",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "French diplomat; worked at Edmond de Rothschild 2014–16. Alleged to have passed UN documents to Epstein; denies it. Under Paris probe.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "valar",
+   "name": "Valar Ventures",
+   "kind": "company",
+   "cluster": "tech",
+   "tier": "",
+   "note": "Fintech fund co-founded by Peter Thiel. Epstein put in about $40M (2015–16), now worth about $170M and the estate's largest asset.",
+   "scenes": [
+    "epn_s03"
+   ],
+   "apex": false
+  },
+  {
+   "id": "carbyne",
+   "name": "Carbyne (Reporty)",
+   "kind": "company",
+   "cluster": "tech",
+   "tier": "",
+   "note": "Israeli emergency-communications firm, chaired by Ehud Barak. Epstein invested through Barak's partnership.",
+   "scenes": [
+    "epx_s08",
+    "epn_s03"
+   ],
+   "apex": false
+  },
+  {
+   "id": "thiel",
+   "name": "Peter Thiel",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "PayPal, Palantir and Founders Fund co-founder. Solicited Epstein's investment on 15 Nov 2014. His spokesman confirms Epstein was a limited partner and denies co-ownership and any island visit.",
+   "scenes": [
+    "epn_s03",
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "palantir",
+   "name": "Palantir",
+   "kind": "company",
+   "cluster": "tech",
+   "tier": "",
+   "note": "Data and defence contractor co-founded by Thiel. Hired Mandelson's firm Global Counsel as its UK lobbyist in 2018.",
+   "scenes": [
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "musk",
+   "name": "Elon Musk",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "2012–13 emails about visiting the island (reported from the 2026 release), against his 2025 statement that he refused. Says he never went.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "gates",
+   "name": "Bill Gates",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "Acknowledges meetings with Epstein (2011–14) and calls them a mistake. Epstein's 2013 self-sent drafts about him are Epstein's claims only; Gates denies them.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "hoffman",
+   "name": "Reid Hoffman",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "LinkedIn co-founder. Epstein called him \"a very close friend\" (2014–15 emails). MIT fundraising link. The island visit is to be verified.",
+   "scenes": [
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "pierce",
+   "name": "Brock Pierce",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "Tether co-founder. Correspondence with Epstein; reported route for Epstein's Coinbase stake. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nikolic",
+   "name": "Boris Nikolic",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "Former science adviser to Bill Gates. Introduced Epstein to people by email (2011). To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ellison",
+   "name": "Larry Ellison",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "association",
+   "note": "In the contact book with three numbers and in 23 case documents. No flight logs, no emails, no allegations: the thinnest edge on the map.",
+   "scenes": [
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "trump",
+   "name": "Donald Trump",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Social friendship from about 1987 to 2004 (photos, 2002 quote); says he banned Epstein from Mar-a-Lago. Named over 1,000 times in the files. No accuser has alleged conduct in a proceeding that produced a finding.",
+   "scenes": [
+    "epf_s15",
+    "epf_s10d"
+   ],
+   "apex": true
+  },
+  {
+   "id": "bclinton",
+   "name": "Bill Clinton",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Flights in the early 2000s (manifests). Denies knowledge of the crimes. Deposed by House Oversight on 27 Feb 2026.",
+   "scenes": [
+    "epf_s16"
+   ],
+   "apex": false
+  },
+  {
+   "id": "hclinton",
+   "name": "Hillary Clinton",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Deposed by House Oversight on 26 Feb 2026. Spouse of Bill Clinton. Her record is kept separate from his (family guardrail).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mandelson",
+   "name": "Peter Mandelson",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Former UK cabinet minister and US ambassador. Friendship 2002–2011; the files show him passing government information. Arrested 24 Feb 2026 (misconduct in public office); bailed.",
+   "scenes": [
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "global_counsel",
+   "name": "Global Counsel",
+   "kind": "company",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Lobbying firm co-founded by Mandelson (2010). He kept a stake of about 21%. Palantir's UK lobbyist from 2018.",
+   "scenes": [
+    "epn_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "barak",
+   "name": "Ehud Barak",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "association",
+   "note": "Former Israeli PM and defence minister. Post-2008 visits and business with Epstein; Côte d'Ivoire surveillance brokering 2012–14. A separate published allegation, which he denies, is kept apart from the business record.",
+   "scenes": [
+    "epn_s02",
+    "epx_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "israel",
+   "name": "State of Israel (government)",
+   "kind": "government",
+   "cluster": "state",
+   "tier": "",
+   "note": "A node for documented state acts only: offices held, a state funeral, a government agency. Never a stand-in for a people or a faith.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "andrew",
+   "name": "Andrew Mountbatten-Windsor",
+   "kind": "person",
+   "cluster": "royals",
+   "tier": "sworn-allegation",
+   "note": "Friendship with Epstein; Giuffre's sworn allegation; civil suit settled 2022 without admission. Titles removed Oct 2025. Arrested 19 Feb 2026 on suspicion of misconduct in public office.",
+   "scenes": [
+    "epf_s14"
+   ],
+   "apex": false
+  },
+  {
+   "id": "ferguson",
+   "name": "Sarah Ferguson",
+   "kind": "person",
+   "cluster": "royals",
+   "tier": "association",
+   "note": "Andrew's former wife. 2011 correspondence with Epstein reported from the release. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "summers",
+   "name": "Larry Summers",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Former Treasury Secretary and Harvard president. Correspondence with Epstein after 2008. Stepped back from roles in 2025 (to verify).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "ruemmler",
+   "name": "Kathryn Ruemmler",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Former Obama White House counsel; later Goldman Sachs chief legal officer. Correspondence and gifts reported from the release. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "lutnick",
+   "name": "Howard Lutnick",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "US Commerce Secretary. Former neighbour. Has acknowledged a 2012 family lunch on the island. AdFin co-investment and later emails reported; his 2005 cut-off account conflicts with the files. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "bannon",
+   "name": "Steve Bannon",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Recorded a long on-camera interview with Epstein; strategy texts 2017–19 reported. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "richardson",
+   "name": "Bill Richardson",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "sworn-allegation",
+   "note": "Former New Mexico governor (d. 2023). Named in Giuffre's sworn deposition; denied it.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "mettemarit",
+   "name": "Crown Princess Mette-Marit",
+   "kind": "person",
+   "cluster": "royals",
+   "tier": "association",
+   "note": "Norway. Emails 2011–14 and a 2013 stay reported from the release; has apologised. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "jagland",
+   "name": "Thorbjørn Jagland",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Former Norwegian PM. Reported corruption probe over gifts/loans. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "binsulayem",
+   "name": "Sultan bin Sulayem",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "DP World chairman. Correspondence reported from the release, and a reported role in a Great St. James purchase vehicle. To verify; get DP World's response.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "allen",
+   "name": "Woody Allen",
+   "kind": "person",
+   "cluster": "culture",
+   "tier": "association",
+   "note": "Frequent social contact in the 2010s reported from the release; reported offer to edit the Bannon footage. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "chomsky",
+   "name": "Noam Chomsky",
+   "kind": "person",
+   "cluster": "culture",
+   "tier": "association",
+   "note": "Met Epstein after 2008 (acknowledged). A 2019 advice email is reported. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "branson",
+   "name": "Richard Branson",
+   "kind": "person",
+   "cluster": "culture",
+   "tier": "association",
+   "note": "2013 email and PR suggestions reported; Virgin says the meeting was business and the women were adults. To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "brunel",
+   "name": "Jean-Luc Brunel",
+   "kind": "person",
+   "cluster": "culture",
+   "tier": "charged",
+   "note": "Model agent (MC2). Charged in France (rape of minors); found dead in his Paris cell in 2022 before trial.",
+   "scenes": [
+    "epf_s16"
+   ],
+   "apex": false
+  },
+  {
+   "id": "harvard",
+   "name": "Harvard University",
+   "kind": "institution",
+   "cluster": "culture",
+   "tier": "",
+   "note": "Took Epstein money before the conviction.",
+   "scenes": [
+    "epx_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "mit",
+   "name": "MIT Media Lab",
+   "kind": "institution",
+   "cluster": "culture",
+   "tier": "",
+   "note": "MIT's own review: nine of ten gifts came after the 2008 conviction.",
+   "scenes": [
+    "epx_s04"
+   ],
+   "apex": false
+  },
+  {
+   "id": "doj",
+   "name": "US Department of Justice",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Controls charging and release. The 2008 agreement, the July 2025 \"no client list\" memo, the 2026 release and redactions.",
+   "scenes": [
+    "epf_s10c",
+    "doj_s12"
+   ],
+   "apex": true
+  },
+  {
+   "id": "fbi",
+   "name": "FBI",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Logged Maria Farmer's 1996 complaint and opened no case until 2006. Searched the safe in 2019. Ran the 2025 file review.",
+   "scenes": [
+    "epf_s05",
+    "epx_s05",
+    "epf_s10d"
+   ],
+   "apex": false
+  },
+  {
+   "id": "npa",
+   "name": "2008 Non-Prosecution Agreement",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Signed 24 Sept 2007. Immunised Epstein, four named people and unnamed \"potential co-conspirators\". Concealed from victims; ruled to violate the CVRA in 2019.",
+   "scenes": [
+    "epf_s06",
+    "epf_s07"
+   ],
+   "apex": false
+  },
+  {
+   "id": "acosta",
+   "name": "Alexander Acosta",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "US Attorney (SD Fla.) who approved the 2008 agreement. Later Labor Secretary; resigned July 2019. OPR (2020): \"poor judgment\".",
+   "scenes": [
+    "epf_s06"
+   ],
+   "apex": false
+  },
+  {
+   "id": "villafana",
+   "name": "Marie Villafaña",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Lead federal prosecutor. Prepared the prosecution memo and the draft indictment (2007); the defence pushed for her removal. To verify the page counts.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "marra",
+   "name": "Judge Kenneth Marra",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Ruled in Feb 2019 that the government broke the law (CVRA) by concealing the agreement from victims.",
+   "scenes": [
+    "epf_s07"
+   ],
+   "apex": false
+  },
+  {
+   "id": "dershowitz",
+   "name": "Alan Dershowitz",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "withdrawn-allegation",
+   "note": "Epstein's defence lawyer in 2007–08. Giuffre's allegation against him was withdrawn in the 2022 settlement: the book's case for caution.",
+   "scenes": [
+    "epf_s13"
+   ],
+   "apex": false
+  },
+  {
+   "id": "bondi",
+   "name": "Pam Bondi",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Attorney General 2025–Apr 2026: \"client list on my desk\" (Feb 2025); July 2025 memo; Feb 2026 hearing; subpoenaed Mar 2026; fired Apr 2026.",
+   "scenes": [
+    "epf_s10c"
+   ],
+   "apex": false
+  },
+  {
+   "id": "blanche",
+   "name": "Todd Blanche",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Trump's former defence lawyer; Deputy AG, later acting AG. Interviewed Maxwell for two days in July 2025. Committed to Congress on 19 May 2026 not to recommend her pardon. Defendant in Phang v. Blanche.",
+   "scenes": [
+    "epf_s07c"
+   ],
+   "apex": false
+  },
+  {
+   "id": "patel",
+   "name": "Kash Patel",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "FBI Director during the 2025 review and the July 2025 memo.",
+   "scenes": [
+    "epf_s10c"
+   ],
+   "apex": false
+  },
+  {
+   "id": "efta",
+   "name": "Epstein Files Transparency Act",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "H.R. 4405: introduced 15 July 2025, passed 427–1, signed 19 Nov 2025. ~3.5M pages released 30 Jan 2026 of ~6M identified. EFTA II (H.R. 9694) introduced July 2026.",
+   "scenes": [
+    "epf_s10b"
+   ],
+   "apex": true
+  },
+  {
+   "id": "massie",
+   "name": "Thomas Massie",
+   "kind": "person",
+   "cluster": "release",
+   "tier": "",
+   "note": "Filed the discharge petition (Sept 2025) that forced the vote.",
+   "scenes": [
+    "epf_s10b"
+   ],
+   "apex": false
+  },
+  {
+   "id": "khanna",
+   "name": "Ro Khanna",
+   "kind": "person",
+   "cluster": "release",
+   "tier": "",
+   "note": "Introduced the Act on 15 July 2025.",
+   "scenes": [
+    "epf_s10b"
+   ],
+   "apex": false
+  },
+  {
+   "id": "johnson",
+   "name": "Speaker Mike Johnson",
+   "kind": "person",
+   "cluster": "release",
+   "tier": "",
+   "note": "Sent the House home early in July 2025 ahead of Epstein votes (reported). To verify.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "house_oversight",
+   "name": "House Oversight Committee",
+   "kind": "government",
+   "cluster": "release",
+   "tier": "",
+   "note": "Estate photo releases (Dec 2025); Clinton depositions (Feb 2026); Bondi subpoena (Mar 2026).",
+   "scenes": [
+    "epf_s10c"
+   ],
+   "apex": false
+  },
+  {
+   "id": "phang_case",
+   "name": "Phang v. Blanche",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "Journalist Katie Phang's suit under the Act. Judge Sullivan's June 2026 injunction ordered a foreign-language review; the D.C. Circuit refused to pause it on 28 Oct 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "fd1023",
+   "name": "FBI source report EFTA00090314",
+   "kind": "document",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Oct 2020 confidential-source report in the release. Claims Epstein was \"trained\" under Barak and tied to Mossad. Raw, unverified source reporting; quoted as such and never as a finding.",
+   "scenes": [
+    "epn_s01"
+   ],
+   "apex": false
+  },
+  {
+   "id": "cia",
+   "name": "CIA",
+   "kind": "government",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "The second-hand report that Acosta said Epstein \"belonged to intelligence\" names no agency and was never confirmed.",
+   "scenes": [
+    "epn_s01",
+    "cia_s14"
+   ],
+   "apex": false
+  },
+  {
+   "id": "nsa",
+   "name": "NSA",
+   "kind": "government",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Bulk domestic call-record collection through Epstein's active years; raw SIGINT shared with Unit 8200 under a memorandum (Snowden, 2013).",
+   "scenes": [
+    "epx_s06",
+    "epx_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "unit8200",
+   "name": "Unit 8200",
+   "kind": "government",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Israeli SIGINT unit; received raw NSA data under the memorandum.",
+   "scenes": [
+    "epx_s08"
+   ],
+   "apex": false
+  },
+  {
+   "id": "farmer",
+   "name": "Maria Farmer",
+   "kind": "person",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Reported Epstein and Maxwell to the FBI on 29 Aug 1996.",
+   "scenes": [
+    "epf_s05",
+    "epf_s12a"
+   ],
+   "apex": false
+  },
+  {
+   "id": "giuffre",
+   "name": "Virginia Giuffre",
+   "kind": "person",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Survivor and plaintiff. Sued Maxwell (2015) and Andrew (settled 2022). Died April 2025; ruled suicide per family and police reports.",
+   "scenes": [
+    "epf_s12a",
+    "epf_s14"
+   ],
+   "apex": false
+  },
+  {
+   "id": "ward",
+   "name": "Vicky Ward",
+   "kind": "person",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Vanity Fair 2002–03 profile; the Farmer sisters' allegations were cut after Epstein visited the editor.",
+   "scenes": [
+    "epf_y10"
+   ],
+   "apex": false
+  },
+  {
+   "id": "nyc_house",
+   "name": "9 East 71st Street",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Townhouse, about 21,000 sq ft. Bought by Wexner in 1989 and transferred to an Epstein entity. Sold 2021.",
+   "scenes": [
+    "epf_s04a"
+   ],
+   "apex": false
+  },
+  {
+   "id": "palm_beach",
+   "name": "El Brillo Way, Palm Beach",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Site of the 2005 police investigation (more than 30 underage victims identified).",
+   "scenes": [
+    "epf_s04a",
+    "epf_s06"
+   ],
+   "apex": false
+  },
+  {
+   "id": "lsj",
+   "name": "Little St. James",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Bought 1998. Sold in 2023 with Great St. James for $60M to Stephen Deckoff for a resort.",
+   "scenes": [
+    "epf_s04a"
+   ],
+   "apex": false
+  },
+  {
+   "id": "gsj",
+   "name": "Great St. James",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Bought about 2016 (reportedly via a holding company). Sold in 2023 with Little St. James.",
+   "scenes": [
+    "epf_s04a"
+   ],
+   "apex": false
+  },
+  {
+   "id": "zorro",
+   "name": "Zorro Ranch, New Mexico",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "About 7,500 acres, bought 1993. State case closed 2019 at federal request; reopened Feb 2026; searched Mar 2026; legislature formed a truth commission. Sold 2023 to the Huffines family.",
+   "scenes": [
+    "epf_s04a"
+   ],
+   "apex": false
+  },
+  {
+   "id": "paris_apt",
+   "name": "Paris apartment",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Avenue Foch. Listed in the estate at $8.7M.",
+   "scenes": [
+    "epx_s10"
+   ],
+   "apex": false
+  },
+  {
+   "id": "nm_ag",
+   "name": "New Mexico Attorney General",
+   "kind": "government",
+   "cluster": "places",
+   "tier": "",
+   "note": "Raúl Torrez reopened the Zorro Ranch investigation (Feb 2026).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "usvi",
+   "name": "US Virgin Islands government",
+   "kind": "government",
+   "cluster": "places",
+   "tier": "",
+   "note": "Granted the Southern Trust tax break; later sued JPMorgan ($75M).",
+   "scenes": [
+    "epf_s09b"
+   ],
+   "apex": false
+  },
+  {
+   "id": "uk_police",
+   "name": "UK police",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Arrested Andrew (19 Feb 2026) and Mandelson (24 Feb 2026) on suspicion of misconduct in public office.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "paris_prosecutor",
+   "name": "Paris prosecutor",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Two Epstein-linked probes opened 18 Feb 2026 (trafficking; laundering, corruption and tax fraud). About 20 suspected victims heard by May 2026.",
+   "scenes": [],
+   "apex": false
+  }
+ ],
+ "edges": [
+  {
+   "f": "gmax",
+   "t": "epstein",
+   "label": "co-conspirator, convicted 2021",
+   "type": "criminal case",
+   "status": "verified",
+   "src": "epf_s07b"
+  },
+  {
+   "f": "rmax",
+   "t": "gmax",
+   "label": "father",
+   "type": "kinship",
+   "status": "verified",
+   "src": "epx_s07"
+  },
+  {
+   "f": "rmax",
+   "t": "israel",
+   "label": "state funeral, Mount of Olives, 1991",
+   "type": "state honour",
+   "status": "verified",
+   "src": "epx_s07"
+  },
+  {
+   "f": "wexner",
+   "t": "epstein",
+   "label": "power of attorney 1991; $3.1B stock sales overseen",
+   "type": "contract",
+   "status": "verified",
+   "src": "epf_s04"
+  },
+  {
+   "f": "wexner",
+   "t": "nyc_house",
+   "label": "bought 1989; transferred to an Epstein entity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "black",
+   "t": "epstein",
+   "label": "$158M + $12M fees, 2012–17 (~$170M by Senate count)",
+   "type": "funding",
+   "status": "verified",
+   "src": "epx_s03"
+  },
+  {
+   "f": "hoffenberg",
+   "t": "epstein",
+   "label": "$25k/month consultancy; $2M loan never repaid (1987–93)",
+   "type": "employment",
+   "status": "verified",
+   "src": "epf_y07"
+  },
+  {
+   "f": "epstein",
+   "t": "southern_trust",
+   "label": "owner; USVI tax-break vehicle",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epx_s10"
+  },
+  {
+   "f": "usvi",
+   "t": "southern_trust",
+   "label": "ten-year EDC tax break",
+   "type": "government grant",
+   "status": "verified",
+   "src": "epx_s10"
+  },
+  {
+   "f": "jpm",
+   "t": "epstein",
+   "label": "client 1998–2013; $290M settlement (2023)",
+   "type": "banking",
+   "status": "verified",
+   "src": "epf_s09"
+  },
+  {
+   "f": "usvi",
+   "t": "jpm",
+   "label": "sued; $75M settlement",
+   "type": "litigation",
+   "status": "verified",
+   "src": "epf_s09b"
+  },
+  {
+   "f": "staley",
+   "t": "jpm",
+   "label": "senior executive; managed the Epstein relationship",
+   "type": "employment",
+   "status": "verified",
+   "src": "epf_s09"
+  },
+  {
+   "f": "staley",
+   "t": "epstein",
+   "label": "banker and friend; correspondence",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting; to pull primary"
+  },
+  {
+   "f": "deutsche",
+   "t": "epstein",
+   "label": "client 2013–18; $75M settlement",
+   "type": "banking",
+   "status": "verified",
+   "src": "epf_s09"
+  },
+  {
+   "f": "bofa",
+   "t": "epstein",
+   "label": "$72.5M settlement approved 27 Aug 2026",
+   "type": "banking",
+   "status": "verified",
+   "src": "epf_s09"
+  },
+  {
+   "f": "aidan",
+   "t": "rothschild_group",
+   "label": "employee 2014–16",
+   "type": "employment",
+   "status": "verified",
+   "src": "Reuters, Mar 2026"
+  },
+  {
+   "f": "aidan",
+   "t": "epstein",
+   "label": "alleged passing of UN documents (denied)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "Paris prosecutor statement, Feb 2026"
+  },
+  {
+   "f": "rothschild_group",
+   "t": "epstein",
+   "label": "reported $25M consulting fee",
+   "type": "funding",
+   "status": "to-verify",
+   "src": "earlier pass rated unverified; find the primary report"
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "rothschild_group",
+   "label": "office raid, 20 Mar 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "Bloomberg/Reuters, Mar 2026"
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "aidan",
+   "label": "under examination",
+   "type": "investigation",
+   "status": "verified",
+   "src": "The Star/AFP, 18 Feb 2026"
+  },
+  {
+   "f": "thiel",
+   "t": "valar",
+   "label": "co-founder",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epn_s03"
+  },
+  {
+   "f": "thiel",
+   "t": "epstein",
+   "label": "solicited investment, 15 Nov 2014",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "epn_s03"
+  },
+  {
+   "f": "epstein",
+   "t": "valar",
+   "label": "~$40M as limited partner (2015–16)",
+   "type": "investment",
+   "status": "verified",
+   "src": "epn_s03"
+  },
+  {
+   "f": "thiel",
+   "t": "palantir",
+   "label": "co-founder, chairman",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "barak",
+   "t": "israel",
+   "label": "former PM and defence minister",
+   "type": "office",
+   "status": "verified",
+   "src": "epx_s08"
+  },
+  {
+   "f": "barak",
+   "t": "carbyne",
+   "label": "chairman",
+   "type": "board seat",
+   "status": "verified",
+   "src": "epx_s08"
+  },
+  {
+   "f": "epstein",
+   "t": "carbyne",
+   "label": "invested via Barak's partnership",
+   "type": "investment",
+   "status": "verified",
+   "src": "epx_s08"
+  },
+  {
+   "f": "barak",
+   "t": "epstein",
+   "label": "business partners; post-2008 visits; African surveillance brokering 2012–14",
+   "type": "business",
+   "status": "verified",
+   "src": "epn_s02"
+  },
+  {
+   "f": "thiel",
+   "t": "carbyne",
+   "label": "Founders Fund investment (reported)",
+   "type": "investment",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "mandelson",
+   "t": "epstein",
+   "label": "friendship 2002–11; passed government information (files)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "mandelson",
+   "t": "global_counsel",
+   "label": "co-founder; ~21% stake",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "global_counsel",
+   "t": "palantir",
+   "label": "UK lobbyist from 2018",
+   "type": "contract",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "uk_police",
+   "t": "mandelson",
+   "label": "arrested 24 Feb 2026; bailed",
+   "type": "investigation",
+   "status": "verified",
+   "src": "PBS/AP, Feb 2026"
+  },
+  {
+   "f": "andrew",
+   "t": "epstein",
+   "label": "friendship; Giuffre civil suit settled 2022",
+   "type": "association",
+   "status": "verified",
+   "src": "epf_s14"
+  },
+  {
+   "f": "giuffre",
+   "t": "andrew",
+   "label": "sworn allegation; settled without admission",
+   "type": "litigation",
+   "status": "verified",
+   "src": "epf_s14"
+  },
+  {
+   "f": "uk_police",
+   "t": "andrew",
+   "label": "arrested 19 Feb 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "Washington Times/AP, 19 Feb 2026"
+  },
+  {
+   "f": "ferguson",
+   "t": "andrew",
+   "label": "former wife",
+   "type": "kinship",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "ferguson",
+   "t": "epstein",
+   "label": "2011 correspondence (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "trump",
+   "t": "epstein",
+   "label": "social friendship c.1987–2004; photos; 2002 quote",
+   "type": "association",
+   "status": "verified",
+   "src": "epf_s15; Project doc triangle"
+  },
+  {
+   "f": "trump",
+   "t": "bondi",
+   "label": "appointed AG; fired Apr 2026",
+   "type": "appointment",
+   "status": "verified",
+   "src": "epf_s10c"
+  },
+  {
+   "f": "trump",
+   "t": "blanche",
+   "label": "former personal defence lawyer; appointed Deputy AG",
+   "type": "appointment",
+   "status": "verified",
+   "src": "epf_s07c"
+  },
+  {
+   "f": "trump",
+   "t": "patel",
+   "label": "appointed FBI Director",
+   "type": "appointment",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "bclinton",
+   "t": "epstein",
+   "label": "flights early 2000s (manifests)",
+   "type": "flight",
+   "status": "verified",
+   "src": "epf_s16"
+  },
+  {
+   "f": "hclinton",
+   "t": "bclinton",
+   "label": "spouse",
+   "type": "kinship",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "house_oversight",
+   "t": "bclinton",
+   "label": "deposed 27 Feb 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "Fox/ABC, Feb 2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "hclinton",
+   "label": "deposed 26 Feb 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "CBS, Feb 2026"
+  },
+  {
+   "f": "summers",
+   "t": "epstein",
+   "label": "correspondence after 2008",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "ruemmler",
+   "t": "epstein",
+   "label": "correspondence; gifts (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "lutnick",
+   "t": "epstein",
+   "label": "neighbour; 2012 island lunch (his own account); AdFin co-investment (reported)",
+   "type": "association",
+   "status": "to-verify",
+   "src": "his public statement; files to pull"
+  },
+  {
+   "f": "bannon",
+   "t": "epstein",
+   "label": "on-camera interview; strategy texts 2017–19",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "richardson",
+   "t": "epstein",
+   "label": "named in Giuffre deposition; denied",
+   "type": "sworn allegation",
+   "status": "verified",
+   "src": "2019 unsealing"
+  },
+  {
+   "f": "mettemarit",
+   "t": "epstein",
+   "label": "emails 2011–14; 2013 stay (reported); apologised",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "jagland",
+   "t": "epstein",
+   "label": "reported corruption probe over gifts/loans",
+   "type": "investigation",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "binsulayem",
+   "t": "epstein",
+   "label": "correspondence; Great St. James vehicle (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "binsulayem",
+   "t": "gsj",
+   "label": "reported purchase vehicle",
+   "type": "ownership",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "musk",
+   "t": "epstein",
+   "label": "2012–13 emails about an island visit (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "gates",
+   "t": "epstein",
+   "label": "meetings 2011–14 (acknowledged)",
+   "type": "association",
+   "status": "verified",
+   "src": "Gates statements"
+  },
+  {
+   "f": "nikolic",
+   "t": "gates",
+   "label": "former science adviser",
+   "type": "employment",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "nikolic",
+   "t": "epstein",
+   "label": "introductions by email (2011)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "hoffman",
+   "t": "epstein",
+   "label": "\"very close friend\" (Epstein, 2014–15); MIT fundraising",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "hoffman",
+   "t": "mit",
+   "label": "fundraising link",
+   "type": "philanthropy",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "pierce",
+   "t": "epstein",
+   "label": "correspondence; reported Coinbase-stake route",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "ellison",
+   "t": "epstein",
+   "label": "contact book only",
+   "type": "contact book",
+   "status": "verified",
+   "src": "epn_s04"
+  },
+  {
+   "f": "allen",
+   "t": "epstein",
+   "label": "frequent social contact, 2010s (reported)",
+   "type": "association",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "allen",
+   "t": "bannon",
+   "label": "reported offer to help edit the footage",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "chomsky",
+   "t": "epstein",
+   "label": "met after 2008 (acknowledged); 2019 advice email (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "branson",
+   "t": "epstein",
+   "label": "2013 email; PR advice (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "release reporting"
+  },
+  {
+   "f": "brunel",
+   "t": "epstein",
+   "label": "model agent; charged in France; died 2022",
+   "type": "criminal case",
+   "status": "verified",
+   "src": "epf_s16"
+  },
+  {
+   "f": "harvard",
+   "t": "epstein",
+   "label": "gifts before the conviction",
+   "type": "philanthropy",
+   "status": "verified",
+   "src": "epx_s04"
+  },
+  {
+   "f": "mit",
+   "t": "epstein",
+   "label": "nine of ten gifts after the conviction",
+   "type": "philanthropy",
+   "status": "verified",
+   "src": "epx_s04"
+  },
+  {
+   "f": "acosta",
+   "t": "npa",
+   "label": "approved the agreement",
+   "type": "official act",
+   "status": "verified",
+   "src": "epf_s06"
+  },
+  {
+   "f": "epstein",
+   "t": "npa",
+   "label": "party; immunity",
+   "type": "contract",
+   "status": "verified",
+   "src": "epf_s06"
+  },
+  {
+   "f": "villafana",
+   "t": "npa",
+   "label": "prosecution memo and draft indictment overridden",
+   "type": "official act",
+   "status": "to-verify",
+   "src": "Bloomberg; primary documents to pull"
+  },
+  {
+   "f": "marra",
+   "t": "npa",
+   "label": "ruled CVRA violation, Feb 2019",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "epf_s07"
+  },
+  {
+   "f": "dershowitz",
+   "t": "npa",
+   "label": "defence counsel",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "epf_s06"
+  },
+  {
+   "f": "dershowitz",
+   "t": "epstein",
+   "label": "defence lawyer; allegation against him withdrawn 2022",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "epf_s13"
+  },
+  {
+   "f": "doj",
+   "t": "npa",
+   "label": "entered the agreement",
+   "type": "official act",
+   "status": "verified",
+   "src": "epf_s06"
+  },
+  {
+   "f": "farmer",
+   "t": "fbi",
+   "label": "reported Epstein and Maxwell, 29 Aug 1996",
+   "type": "complaint",
+   "status": "verified",
+   "src": "epf_s05"
+  },
+  {
+   "f": "fbi",
+   "t": "epstein",
+   "label": "no case opened until 2006; 2019 safe search",
+   "type": "investigation",
+   "status": "verified",
+   "src": "epf_s05; epx_s05"
+  },
+  {
+   "f": "ward",
+   "t": "epstein",
+   "label": "2003 profile; allegations cut",
+   "type": "reporting",
+   "status": "verified",
+   "src": "epf_y10"
+  },
+  {
+   "f": "bondi",
+   "t": "doj",
+   "label": "Attorney General 2025–26",
+   "type": "office",
+   "status": "verified",
+   "src": "epf_s10c"
+  },
+  {
+   "f": "blanche",
+   "t": "doj",
+   "label": "Deputy AG, later acting AG",
+   "type": "office",
+   "status": "verified",
+   "src": "epf_s07c"
+  },
+  {
+   "f": "blanche",
+   "t": "gmax",
+   "label": "two-day interview, July 2025; limited immunity",
+   "type": "official act",
+   "status": "verified",
+   "src": "epf_s07c"
+  },
+  {
+   "f": "patel",
+   "t": "fbi",
+   "label": "Director",
+   "type": "office",
+   "status": "verified",
+   "src": "public record"
+  },
+  {
+   "f": "bondi",
+   "t": "efta",
+   "label": "\"client list on my desk\"; July 2025 memo; Feb 2026 hearing",
+   "type": "official act",
+   "status": "verified",
+   "src": "epf_s10c"
+  },
+  {
+   "f": "doj",
+   "t": "efta",
+   "label": "missed deadline; ~3.5M of ~6M pages released",
+   "type": "official act",
+   "status": "verified",
+   "src": "epf_s10b"
+  },
+  {
+   "f": "khanna",
+   "t": "efta",
+   "label": "introduced 15 July 2025",
+   "type": "legislation",
+   "status": "verified",
+   "src": "epf_s10b"
+  },
+  {
+   "f": "massie",
+   "t": "efta",
+   "label": "discharge petition, Sept 2025",
+   "type": "legislation",
+   "status": "verified",
+   "src": "epf_s10b"
+  },
+  {
+   "f": "johnson",
+   "t": "efta",
+   "label": "House sent home early, July 2025 (reported)",
+   "type": "legislation",
+   "status": "to-verify",
+   "src": "to verify"
+  },
+  {
+   "f": "house_oversight",
+   "t": "bondi",
+   "label": "subpoena, Mar 2026",
+   "type": "oversight",
+   "status": "verified",
+   "src": "epf_s10c"
+  },
+  {
+   "f": "phang_case",
+   "t": "blanche",
+   "label": "defendant (as AG)",
+   "type": "litigation",
+   "status": "verified",
+   "src": "IBTimes, 29 Oct 2026"
+  },
+  {
+   "f": "phang_case",
+   "t": "efta",
+   "label": "enforcement suit under the Act",
+   "type": "litigation",
+   "status": "verified",
+   "src": "IBTimes, 29 Oct 2026"
+  },
+  {
+   "f": "fd1023",
+   "t": "fbi",
+   "label": "FBI confidential-source report (Oct 2020)",
+   "type": "document",
+   "status": "verified",
+   "src": "Middle East Eye, Feb 2026"
+  },
+  {
+   "f": "fd1023",
+   "t": "epstein",
+   "label": "raw claims about intelligence ties: not carried as findings",
+   "type": "document",
+   "status": "not-established",
+   "src": "epn_s01"
+  },
+  {
+   "f": "cia",
+   "t": "epstein",
+   "label": "\"belonged to intelligence\": second-hand; no agency link documented",
+   "type": "claim",
+   "status": "not-established",
+   "src": "epn_s01"
+  },
+  {
+   "f": "nsa",
+   "t": "unit8200",
+   "label": "raw SIGINT memorandum",
+   "type": "agreement",
+   "status": "verified",
+   "src": "epx_s08"
+  },
+  {
+   "f": "unit8200",
+   "t": "israel",
+   "label": "state SIGINT unit",
+   "type": "office",
+   "status": "verified",
+   "src": "epx_s08"
+  },
+  {
+   "f": "epstein",
+   "t": "nyc_house",
+   "label": "residence",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "epstein",
+   "t": "palm_beach",
+   "label": "residence; 2005 case",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "epstein",
+   "t": "lsj",
+   "label": "owned 1998–2019",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "epstein",
+   "t": "gsj",
+   "label": "owned c.2016–19",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "epstein",
+   "t": "zorro",
+   "label": "owned 1993–2019",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epf_s04a"
+  },
+  {
+   "f": "epstein",
+   "t": "paris_apt",
+   "label": "owned",
+   "type": "ownership",
+   "status": "verified",
+   "src": "epx_s10"
+  },
+  {
+   "f": "nm_ag",
+   "t": "zorro",
+   "label": "reopened Feb 2026; searched Mar 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "AP, 10 Mar 2026"
+  },
+  {
+   "f": "giuffre",
+   "t": "gmax",
+   "label": "defamation suit (2015)",
+   "type": "litigation",
+   "status": "verified",
+   "src": "epf_s12a"
+  }
+ ]
+}
