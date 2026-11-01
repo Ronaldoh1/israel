@@ -47,7 +47,7 @@ n('ferguson','Sarah Ferguson','person','royals','Andrew\'s former wife. 2011 cor
 n('summers','Larry Summers','person','politics','Former Treasury Secretary and Harvard president. Correspondence with Epstein after 2008. Stepped back from roles in 2025 (to verify).','association',[])
 n('ruemmler','Kathryn Ruemmler','person','politics','Former Obama White House counsel; later Goldman Sachs chief legal officer. Correspondence and gifts reported from the release. To verify.','association',[])
 n('lutnick','Howard Lutnick','person','politics','US Commerce Secretary. Former neighbour. Has acknowledged a 2012 family lunch on the island. AdFin co-investment and later emails reported; his 2005 cut-off account conflicts with the files. To verify.','association',[])
-n('bannon','Steve Bannon','person','politics','Recorded a long on-camera interview with Epstein; strategy texts 2017–19 reported. To verify.','association',[])
+n('bannon','Steve Bannon','person','politics','Former Trump chief strategist. Emails and texts with Epstein Jan 2018–Jun 2019; offered to help "rebuild your image" (Apr 2019); recorded long interviews with him.','association',[])
 n('richardson','Bill Richardson','person','politics','Former New Mexico governor (d. 2023). Named in Giuffre\'s sworn deposition; denied it.','sworn-allegation',[])
 n('mettemarit','Crown Princess Mette-Marit','person','royals','Norway. Extensive correspondence in the release; has apologised.','association',[])
 n('jagland','Thorbjørn Jagland','person','politics','Former Norwegian PM; Council of Europe secretary-general. Charged with aggravated corruption (2026); properties searched.','association',[])
@@ -668,6 +668,29 @@ e('sdny_memo2019','groff','weighed; not charged','investigation',V,'ep8_abc_coco
 e('blanche','gmax','told senators he would not recommend a pardon, 19 May 2026','testimony',V,'ep8_rollcall_blanche2026')
 n('senate_res','Senate resolution against Maxwell clemency (Jul 2026)','document','justice','Non-binding; passed unanimously; sponsored by Sen. Rosen.','',[])
 e('senate_res','gmax','opposes any clemency','oversight',V,'ep8_lavoce_senate2026')
+
+# --- administration officials in the files, 31 Oct 2026 (NBC, Feb 2026); appearing in the files is not evidence of wrongdoing
+n('rfk','Robert F. Kennedy Jr.','person','politics','HHS Secretary. In flight logs; a 2012 Epstein–Maxwell email about a fossil hunt (Maxwell dates it c.1993–94). Says he flew in the 1990s, "knew nothing", "no relationship".','',[])
+e('rfk','epstein','flights in the 1990s (his account); fossil-hunt trip','flight',V,'ep9_nbc_officials2026')
+n('oz','Mehmet Oz','person','politics','CMS Administrator. A Feb 2016 Valentine\'s party invitation email to Epstein; unclear if he attended.','',[])
+e('oz','epstein','party invitation email, Feb 2016','correspondence',V,'ep9_nbc_officials2026')
+n('phelan','John Phelan','person','politics','Navy Secretary. Named on a March 2006 Epstein flight manifest (CNN review), when at MSD Capital.','',[])
+e('phelan','epstein','flight manifest, Mar 2006 (CNN review)','flight',V,'ep9_nbc_officials2026')
+n('warsh','Kevin Warsh','person','finance','Trump\'s Fed chair nominee (2026). Listed for "St. Barth\'s Christmas 2010" in an Epstein email; unknown if he went.','',[])
+e('warsh','epstein','on a 2010 St. Barths holiday list (email)','correspondence',T,'ep9_nbc_officials2026')
+n('barrack','Tom Barrack','person','politics','US ambassador; Trump\'s 2016 fundraiser. Friendly emails 2009–16; planned meals Aug–Sep 2016.','',[])
+e('barrack','epstein','friendship emails 2009–16','correspondence',V,'ep9_nbc_officials2026')
+e('barrack','trump','2016 campaign fundraiser; ambassador','appointment',V,'ep9_nbc_officials2026')
+n('feinberg','Stephen Feinberg','person','politics','Deputy Defense Secretary. Business documents of his firm Cerberus (2009–18) appear in the files; why is unclear.','',[])
+e('feinberg','epstein','his firm\'s documents in the files (reason unclear)','document',T,'ep9_nbc_officials2026')
+for x in ['rfk','oz','phelan','feinberg']: e('trump',x,'appointed','appointment',V,'ep9_nbc_officials2026')
+e('trump','warsh','nominated Fed chair','appointment',V,'ep9_nbc_officials2026')
+e('trump','lutnick','appointed Commerce Secretary','appointment',V,'ep9_nbc_officials2026')
+n('jud_hearing','House Judiciary hearing, 11 Feb 2026','document','release','Survivors seated behind Bondi; asked to apologise, she did not turn around ("theatrics"); Massie on the Wexner redaction.','',['epf_s10c'])
+e('bondi','jud_hearing','testified; declined to turn and apologise to survivors','testimony',V,'ep9_aj_bondi2026; ep9_abc11_bondi2026')
+e('massie','jud_hearing','"40 minutes of me catching you red-handed"; said she was "afraid to" look at survivors','oversight',V,'ep9_aj_bondi2026; ep9_hill_massie2026')
+e('bondi','house_oversight','transcribed interview, 29 May 2026: not under oath, not videotaped','testimony',V,'ep9_nhpr_bondi2026')
+e('bondi','blanche','says she delegated the release to him','official act',V,'ep9_nhpr_bondi2026')
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}

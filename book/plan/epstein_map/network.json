@@ -448,7 +448,7 @@
    "kind": "person",
    "cluster": "politics",
    "tier": "association",
-   "note": "Recorded a long on-camera interview with Epstein; strategy texts 2017–19 reported. To verify.",
+   "note": "Former Trump chief strategist. Emails and texts with Epstein Jan 2018–Jun 2019; offered to help \"rebuild your image\" (Apr 2019); recorded long interviews with him.",
    "scenes": [],
    "apex": false,
    "sponsor": false
@@ -2755,6 +2755,85 @@
    "tier": "",
    "note": "Non-binding; passed unanimously; sponsored by Sen. Rosen.",
    "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "rfk",
+   "name": "Robert F. Kennedy Jr.",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "HHS Secretary. In flight logs; a 2012 Epstein–Maxwell email about a fossil hunt (Maxwell dates it c.1993–94). Says he flew in the 1990s, \"knew nothing\", \"no relationship\".",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "oz",
+   "name": "Mehmet Oz",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "CMS Administrator. A Feb 2016 Valentine's party invitation email to Epstein; unclear if he attended.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "phelan",
+   "name": "John Phelan",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Navy Secretary. Named on a March 2006 Epstein flight manifest (CNN review), when at MSD Capital.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "warsh",
+   "name": "Kevin Warsh",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Trump's Fed chair nominee (2026). Listed for \"St. Barth's Christmas 2010\" in an Epstein email; unknown if he went.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "barrack",
+   "name": "Tom Barrack",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "US ambassador; Trump's 2016 fundraiser. Friendly emails 2009–16; planned meals Aug–Sep 2016.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "feinberg",
+   "name": "Stephen Feinberg",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Deputy Defense Secretary. Business documents of his firm Cerberus (2009–18) appear in the files; why is unclear.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "jud_hearing",
+   "name": "House Judiciary hearing, 11 Feb 2026",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "Survivors seated behind Bondi; asked to apologise, she did not turn around (\"theatrics\"); Massie on the Wexner redaction.",
+   "scenes": [
+    "epf_s10c"
+   ],
    "apex": false,
    "sponsor": false
   }
@@ -5831,6 +5910,142 @@
    "type": "oversight",
    "status": "verified",
    "src": "ep8_lavoce_senate2026"
+  },
+  {
+   "f": "rfk",
+   "t": "epstein",
+   "label": "flights in the 1990s (his account); fossil-hunt trip",
+   "type": "flight",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "oz",
+   "t": "epstein",
+   "label": "party invitation email, Feb 2016",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "phelan",
+   "t": "epstein",
+   "label": "flight manifest, Mar 2006 (CNN review)",
+   "type": "flight",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "warsh",
+   "t": "epstein",
+   "label": "on a 2010 St. Barths holiday list (email)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "barrack",
+   "t": "epstein",
+   "label": "friendship emails 2009–16",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "barrack",
+   "t": "trump",
+   "label": "2016 campaign fundraiser; ambassador",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "feinberg",
+   "t": "epstein",
+   "label": "his firm's documents in the files (reason unclear)",
+   "type": "document",
+   "status": "to-verify",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "rfk",
+   "label": "appointed",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "oz",
+   "label": "appointed",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "phelan",
+   "label": "appointed",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "feinberg",
+   "label": "appointed",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "warsh",
+   "label": "nominated Fed chair",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "trump",
+   "t": "lutnick",
+   "label": "appointed Commerce Secretary",
+   "type": "appointment",
+   "status": "verified",
+   "src": "ep9_nbc_officials2026"
+  },
+  {
+   "f": "bondi",
+   "t": "jud_hearing",
+   "label": "testified; declined to turn and apologise to survivors",
+   "type": "testimony",
+   "status": "verified",
+   "src": "ep9_aj_bondi2026; ep9_abc11_bondi2026"
+  },
+  {
+   "f": "massie",
+   "t": "jud_hearing",
+   "label": "\"40 minutes of me catching you red-handed\"; said she was \"afraid to\" look at survivors",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep9_aj_bondi2026; ep9_hill_massie2026"
+  },
+  {
+   "f": "bondi",
+   "t": "house_oversight",
+   "label": "transcribed interview, 29 May 2026: not under oath, not videotaped",
+   "type": "testimony",
+   "status": "verified",
+   "src": "ep9_nhpr_bondi2026"
+  },
+  {
+   "f": "bondi",
+   "t": "blanche",
+   "label": "says she delegated the release to him",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep9_nhpr_bondi2026"
   }
  ]
 }
