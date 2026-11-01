@@ -49,8 +49,8 @@ n('ruemmler','Kathryn Ruemmler','person','politics','Former Obama White House co
 n('lutnick','Howard Lutnick','person','politics','US Commerce Secretary. Former neighbour. Has acknowledged a 2012 family lunch on the island. AdFin co-investment and later emails reported; his 2005 cut-off account conflicts with the files. To verify.','association',[])
 n('bannon','Steve Bannon','person','politics','Recorded a long on-camera interview with Epstein; strategy texts 2017–19 reported. To verify.','association',[])
 n('richardson','Bill Richardson','person','politics','Former New Mexico governor (d. 2023). Named in Giuffre\'s sworn deposition; denied it.','sworn-allegation',[])
-n('mettemarit','Crown Princess Mette-Marit','person','royals','Norway. Emails 2011–14 and a 2013 stay reported from the release; has apologised. To verify.','association',[])
-n('jagland','Thorbjørn Jagland','person','politics','Former Norwegian PM. Reported corruption probe over gifts/loans. To verify.','association',[])
+n('mettemarit','Crown Princess Mette-Marit','person','royals','Norway. Extensive correspondence in the release; has apologised.','association',[])
+n('jagland','Thorbjørn Jagland','person','politics','Former Norwegian PM; Council of Europe secretary-general. Charged with aggravated corruption (2026); properties searched.','association',[])
 n('binsulayem','Sultan bin Sulayem','person','finance','DP World chairman. Correspondence reported from the release, and a reported role in a Great St. James purchase vehicle. To verify; get DP World\'s response.','association',[])
 # --- culture & science
 n('allen','Woody Allen','person','culture','Frequent social contact in the 2010s reported from the release; reported offer to edit the Bannon footage. To verify.','association',[])
@@ -148,8 +148,8 @@ e('ruemmler','epstein','correspondence; gifts (reported)','correspondence',T,'re
 e('lutnick','epstein','neighbour; 2012 island lunch (his own account); AdFin co-investment (reported)','association',T,'his public statement; files to pull')
 e('bannon','epstein','on-camera interview; strategy texts 2017–19','correspondence',T,'release reporting')
 e('richardson','epstein','named in Giuffre deposition; denied','sworn allegation',V,'2019 unsealing')
-e('mettemarit','epstein','emails 2011–14; 2013 stay (reported); apologised','correspondence',T,'release reporting')
-e('jagland','epstein','reported corruption probe over gifts/loans','investigation',T,'to verify')
+e('mettemarit','epstein','extensive correspondence; apologised','correspondence',V,'ep4_aj_arrests2026; ep7_aj_global2026')
+e('jagland','epstein','charged with aggravated corruption, 2026','investigation',V,'ep4_aj_arrests2026')
 e('binsulayem','epstein','correspondence; Great St. James vehicle (reported)','correspondence',T,'release reporting')
 e('binsulayem','gsj','reported purchase vehicle','ownership',T,'release reporting')
 e('musk','epstein','2012–13 emails about an island visit (reported)','correspondence',T,'release reporting')
@@ -622,6 +622,21 @@ n('puri','Hardeep Singh Puri','person','politics','Indian politician, former dip
 e('puri','epstein','three townhouse meetings, 2015–17','visit',V,'ep7_aj_global2026')
 n('rudd','Kevin Rudd','person','politics','Former Australian PM. On Epstein\'s June 2014 schedule; denies visiting or any friendship.','',[])
 e('rudd','epstein','on his schedule, June 2014 (denies visiting)','claim',X,'ep7_aj_global2026')
+
+# --- the map by continent, 31 Oct 2026
+n('wade','Karim Wade','person','state','Son of Senegal\'s former president. Cultivated by Epstein from 2010; convicted of illicit enrichment 2015; pardoned 2016.','',[])
+e('epstein','wade','advice; $500,000 lawyer invoice to Southern Trust (2014); release efforts 2015–16','favour',V,'ep7_occrp_wade2026')
+e('wade','southern_trust','legal-fee invoice addressed to it, May 2014','payment',V,'ep7_occrp_wade2026')
+e('epstein','jagland','asked about a European court challenge for Wade, 2015','correspondence',V,'ep7_occrp_wade2026')
+n('ouattara','Alassane Ouattara','person','state','President of Côte d\'Ivoire. Epstein was connected to him through his niece; Epstein and Barak brokered surveillance proposals to his government.','',[])
+e('epstein','ouattara','introduced via his niece; security brokering with Barak','introduction',V,'ep7_occrp_wade2026')
+n('pastrana','Andrés Pastrana','person','state','Former president of Colombia. Travelled to Cuba with Epstein and Maxwell, March 2003.','',[])
+e('pastrana','epstein','Cuba trip with Epstein and Maxwell, Mar 2003','travel',V,'ep7_herald_latam2026')
+n('dagostino','Francisco D\'Agostino','person','finance','Venezuelan businessman (US-sanctioned 2021–25). Discussed oil ventures with Epstein in 2012; says nothing came of it.','',[])
+e('dagostino','epstein','oil-venture talks, 2012','business',V,'ep7_herald_latam2026')
+n('toshiba','Toshiba','company','design','Reported (Shukan Bunshun) to have installed renewable-energy equipment on Little St. James, 2012–13. Company verifying.','',[])
+e('toshiba','lsj','renewable-energy installation (reported), 2012–13','contract',T,'ep7_tw_toshiba2026')
+e('epstein','binsulayem','advised DP World on its seized Venezuelan port, 2009/2011','business',V,'ep7_herald_latam2026')
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}

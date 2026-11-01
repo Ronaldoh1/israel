@@ -470,7 +470,7 @@
    "kind": "person",
    "cluster": "royals",
    "tier": "association",
-   "note": "Norway. Emails 2011–14 and a 2013 stay reported from the release; has apologised. To verify.",
+   "note": "Norway. Extensive correspondence in the release; has apologised.",
    "scenes": [],
    "apex": false,
    "sponsor": false
@@ -481,7 +481,7 @@
    "kind": "person",
    "cluster": "politics",
    "tier": "association",
-   "note": "Former Norwegian PM. Reported corruption probe over gifts/loans. To verify.",
+   "note": "Former Norwegian PM; Council of Europe secretary-general. Charged with aggravated corruption (2026); properties searched.",
    "scenes": [],
    "apex": false,
    "sponsor": false
@@ -2586,6 +2586,61 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "wade",
+   "name": "Karim Wade",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Son of Senegal's former president. Cultivated by Epstein from 2010; convicted of illicit enrichment 2015; pardoned 2016.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ouattara",
+   "name": "Alassane Ouattara",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "President of Côte d'Ivoire. Epstein was connected to him through his niece; Epstein and Barak brokered surveillance proposals to his government.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "pastrana",
+   "name": "Andrés Pastrana",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Former president of Colombia. Travelled to Cuba with Epstein and Maxwell, March 2003.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "dagostino",
+   "name": "Francisco D'Agostino",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Venezuelan businessman (US-sanctioned 2021–25). Discussed oil ventures with Epstein in 2012; says nothing came of it.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "toshiba",
+   "name": "Toshiba",
+   "kind": "company",
+   "cluster": "design",
+   "tier": "",
+   "note": "Reported (Shukan Bunshun) to have installed renewable-energy equipment on Little St. James, 2012–13. Company verifying.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -3000,18 +3055,18 @@
   {
    "f": "mettemarit",
    "t": "epstein",
-   "label": "emails 2011–14; 2013 stay (reported); apologised",
+   "label": "extensive correspondence; apologised",
    "type": "correspondence",
-   "status": "to-verify",
-   "src": "release reporting"
+   "status": "verified",
+   "src": "ep4_aj_arrests2026; ep7_aj_global2026"
   },
   {
    "f": "jagland",
    "t": "epstein",
-   "label": "reported corruption probe over gifts/loans",
+   "label": "charged with aggravated corruption, 2026",
    "type": "investigation",
-   "status": "to-verify",
-   "src": "to verify"
+   "status": "verified",
+   "src": "ep4_aj_arrests2026"
   },
   {
    "f": "binsulayem",
@@ -5444,6 +5499,70 @@
    "type": "claim",
    "status": "not-established",
    "src": "ep7_aj_global2026"
+  },
+  {
+   "f": "epstein",
+   "t": "wade",
+   "label": "advice; $500,000 lawyer invoice to Southern Trust (2014); release efforts 2015–16",
+   "type": "favour",
+   "status": "verified",
+   "src": "ep7_occrp_wade2026"
+  },
+  {
+   "f": "wade",
+   "t": "southern_trust",
+   "label": "legal-fee invoice addressed to it, May 2014",
+   "type": "payment",
+   "status": "verified",
+   "src": "ep7_occrp_wade2026"
+  },
+  {
+   "f": "epstein",
+   "t": "jagland",
+   "label": "asked about a European court challenge for Wade, 2015",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_occrp_wade2026"
+  },
+  {
+   "f": "epstein",
+   "t": "ouattara",
+   "label": "introduced via his niece; security brokering with Barak",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_occrp_wade2026"
+  },
+  {
+   "f": "pastrana",
+   "t": "epstein",
+   "label": "Cuba trip with Epstein and Maxwell, Mar 2003",
+   "type": "travel",
+   "status": "verified",
+   "src": "ep7_herald_latam2026"
+  },
+  {
+   "f": "dagostino",
+   "t": "epstein",
+   "label": "oil-venture talks, 2012",
+   "type": "business",
+   "status": "verified",
+   "src": "ep7_herald_latam2026"
+  },
+  {
+   "f": "toshiba",
+   "t": "lsj",
+   "label": "renewable-energy installation (reported), 2012–13",
+   "type": "contract",
+   "status": "to-verify",
+   "src": "ep7_tw_toshiba2026"
+  },
+  {
+   "f": "epstein",
+   "t": "binsulayem",
+   "label": "advised DP World on its seized Venezuelan port, 2009/2011",
+   "type": "business",
+   "status": "verified",
+   "src": "ep7_herald_latam2026"
   }
  ]
 }
