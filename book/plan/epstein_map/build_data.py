@@ -726,6 +726,11 @@ n('marie','Gérald Marie','person','operations','Former Elite Europe head. 1980s
 e('marie','brunel','modelling-industry links (alleged by 15 women; to be examined)','claim',T,'ep10_local_marie2026')
 e('paris_prosecutor','epstein','~20 suspected victims heard, ~10 new; no one charged (May 2026)','investigation',V,'ep10_aj_france2026')
 
+# --- Part Eleven, 31 Oct 2026: deaths (official findings first)
+e('freeman','mcc','to present on the medical examiner file, 16 Nov 2026','forensic review',V,'ep11_political_freeman2026')
+e('noel','house_oversight','interview 18 May 2026: believes suicide','testimony',V,'ep11_wt_noel2026')
+e('fbi','video_1b60','authorised destruction, June 2024','official act',V,'ep11_cbs_minute2026')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
