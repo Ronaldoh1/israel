@@ -692,6 +692,20 @@ e('massie','jud_hearing','"40 minutes of me catching you red-handed"; said she w
 e('bondi','house_oversight','transcribed interview, 29 May 2026: not under oath, not videotaped','testimony',V,'ep9_nhpr_bondi2026')
 e('bondi','blanche','says she delegated the release to him','official act',V,'ep9_nhpr_bondi2026')
 
+# --- Part Nine, 31 Oct 2026: the files
+n('herald_series','Miami Herald, "Perversion of Justice" (Nov 2018)','document','reporters','Julie K. Brown identified 80 survivors; the 2019 federal case followed.','',['epf_y13'])
+e('herald_series','npa','reconstructed the agreement and its concealment','reporting',V,'ep9_npr_brown2021')
+e('herald_series','epstein','2019 rearrest largely the result of the series','reporting',V,'ep9_npr_brown2021')
+n('ig_mcc_2023','DOJ Inspector General report on the MCC (Jun 2023)','document','justice','Negligence and misconduct; >75 checks missed; found nothing contradicting the FBI\'s finding of no criminality.','',['epf_s08'])
+e('ig_mcc_2023','mcc','negligence, misconduct, failed cameras','forensic review',V,'ep9_nhpr_ig2023')
+n('ig_review_2026','DOJ Inspector General review of the release (Apr 2026)','document','release','Announced 23 Apr 2026: processes for identifying, redacting and releasing records under the Act. No report yet.','',[])
+e('ig_review_2026','efta','reviewing compliance','oversight',V,'ep9_aj_ig2026')
+e('phang_case','efta','injunction (25 Jun 2026), motion to compel (16 Sep); appeals court refused stay (28 Oct)','court ruling',V,'ep9_clearinghouse_phang; ep9_yahoo_phang_dc')
+n('victims_exposed','Victims\' names exposed (Jan 2026 release)','document','release','WSJ: 43 of 47 victims\' full names left visible, more than two dozen minors; 47,635 files later taken offline.','',['epf_s10b'])
+e('doj','victims_exposed','released unredacted','official act',V,'ep9_wsj_43; ep9_salon_47k')
+e('massie','efta','discharge petition; co-author','oversight',V,'efta_wiki')
+e('khanna','efta','introduced; sought a monitor (denied Jan 2026)','oversight',V,'ep9_fox_monitor')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP

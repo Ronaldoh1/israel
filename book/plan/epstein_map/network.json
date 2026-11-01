@@ -2836,6 +2836,56 @@
    ],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "herald_series",
+   "name": "Miami Herald, \"Perversion of Justice\" (Nov 2018)",
+   "kind": "document",
+   "cluster": "reporters",
+   "tier": "",
+   "note": "Julie K. Brown identified 80 survivors; the 2019 federal case followed.",
+   "scenes": [
+    "epf_y13"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ig_mcc_2023",
+   "name": "DOJ Inspector General report on the MCC (Jun 2023)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Negligence and misconduct; >75 checks missed; found nothing contradicting the FBI's finding of no criminality.",
+   "scenes": [
+    "epf_s08"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ig_review_2026",
+   "name": "DOJ Inspector General review of the release (Apr 2026)",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "Announced 23 Apr 2026: processes for identifying, redacting and releasing records under the Act. No report yet.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "victims_exposed",
+   "name": "Victims' names exposed (Jan 2026 release)",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "WSJ: 43 of 47 victims' full names left visible, more than two dozen minors; 47,635 files later taken offline.",
+   "scenes": [
+    "epf_s10b"
+   ],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -6046,6 +6096,70 @@
    "type": "official act",
    "status": "verified",
    "src": "ep9_nhpr_bondi2026"
+  },
+  {
+   "f": "herald_series",
+   "t": "npa",
+   "label": "reconstructed the agreement and its concealment",
+   "type": "reporting",
+   "status": "verified",
+   "src": "ep9_npr_brown2021"
+  },
+  {
+   "f": "herald_series",
+   "t": "epstein",
+   "label": "2019 rearrest largely the result of the series",
+   "type": "reporting",
+   "status": "verified",
+   "src": "ep9_npr_brown2021"
+  },
+  {
+   "f": "ig_mcc_2023",
+   "t": "mcc",
+   "label": "negligence, misconduct, failed cameras",
+   "type": "forensic review",
+   "status": "verified",
+   "src": "ep9_nhpr_ig2023"
+  },
+  {
+   "f": "ig_review_2026",
+   "t": "efta",
+   "label": "reviewing compliance",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep9_aj_ig2026"
+  },
+  {
+   "f": "phang_case",
+   "t": "efta",
+   "label": "injunction (25 Jun 2026), motion to compel (16 Sep); appeals court refused stay (28 Oct)",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "ep9_clearinghouse_phang; ep9_yahoo_phang_dc"
+  },
+  {
+   "f": "doj",
+   "t": "victims_exposed",
+   "label": "released unredacted",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep9_wsj_43; ep9_salon_47k"
+  },
+  {
+   "f": "massie",
+   "t": "efta",
+   "label": "discharge petition; co-author",
+   "type": "oversight",
+   "status": "verified",
+   "src": "efta_wiki"
+  },
+  {
+   "f": "khanna",
+   "t": "efta",
+   "label": "introduced; sought a monitor (denied Jan 2026)",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep9_fox_monitor"
   }
  ]
 }
