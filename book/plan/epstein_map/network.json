@@ -2897,6 +2897,50 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "deckoff",
+   "name": "Stephen Deckoff (SD Investments)",
+   "kind": "company",
+   "cluster": "places",
+   "tier": "",
+   "note": "Bought both islands, May 2023, $60M, for a resort; half the Little St. James proceeds go to a USVI victims' trust.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "san_rafael_llc",
+   "name": "San Rafael Ranch LLC (Huffines family)",
+   "kind": "company",
+   "cluster": "places",
+   "tier": "",
+   "note": "Bought Zorro Ranch at auction in 2023; price undisclosed; cooperated with the March 2026 search.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "estate_settlement",
+   "name": "Estate class-action settlement (Feb 2026)",
+   "kind": "document",
+   "cluster": "money",
+   "tier": "",
+   "note": "Indyke and Kahn agreed to pay up to $35M; the suit alleged they helped finance the network by structuring accounts and cash; they deny wrongdoing.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "marie",
+   "name": "Gérald Marie",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Former Elite Europe head. 1980s–90s allegations shelved in 2023 as time-barred (under appeal); 15 women asked Paris (Mar 2026) to examine links to Brunel and Epstein. His lawyer says he is confident about any investigation.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -6187,6 +6231,86 @@
    "type": "official act",
    "status": "verified",
    "src": "ep8_govinfo_act; ep9_emptywheel_jm2024"
+  },
+  {
+   "f": "deckoff",
+   "t": "lsj",
+   "label": "bought, 2023",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep10_nhpr_islands2023"
+  },
+  {
+   "f": "deckoff",
+   "t": "gsj",
+   "label": "bought, 2023",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep10_nhpr_islands2023"
+  },
+  {
+   "f": "san_rafael_llc",
+   "t": "zorro",
+   "label": "bought at auction, 2023",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep10_trd_ranch2026; ep10_pbs_search2026"
+  },
+  {
+   "f": "nm_ag",
+   "t": "zorro",
+   "label": "reopened case 19 Feb 2026; search 9 Mar 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep10_cbs_nm2026; ep10_pbs_search2026"
+  },
+  {
+   "f": "nm_commission",
+   "t": "zorro",
+   "label": "interim report: 5 Jane Does 1996–2012; 227 flights; likely preferential treatment",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep10_kob_interim2026; ep10_abqj_interim2026"
+  },
+  {
+   "f": "nm_commission",
+   "t": "jpm",
+   "label": "subpoena refused or unanswered",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep10_kob_interim2026"
+  },
+  {
+   "f": "indyke",
+   "t": "estate_settlement",
+   "label": "co-executor; settled, no admission",
+   "type": "litigation",
+   "status": "verified",
+   "src": "ep10_findlaw_estate2026"
+  },
+  {
+   "f": "kahn",
+   "t": "estate_settlement",
+   "label": "co-executor; settled, no admission",
+   "type": "litigation",
+   "status": "verified",
+   "src": "ep10_findlaw_estate2026"
+  },
+  {
+   "f": "marie",
+   "t": "brunel",
+   "label": "modelling-industry links (alleged by 15 women; to be examined)",
+   "type": "claim",
+   "status": "to-verify",
+   "src": "ep10_local_marie2026"
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "epstein",
+   "label": "~20 suspected victims heard, ~10 new; no one charged (May 2026)",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep10_aj_france2026"
   }
  ]
 }

@@ -710,6 +710,22 @@ n('jm_policy','Justice Manual 9-27.760 (updated Feb 2024)','document','release',
 e('doj','jm_policy','its own policy','authorship',V,'ep9_emptywheel_jm2024')
 e('jm_policy','efta','in tension: the Act bars redaction for reputational harm','official act',V,'ep8_govinfo_act; ep9_emptywheel_jm2024')
 
+# --- Part Ten, 31 Oct 2026: what survived
+n('deckoff','Stephen Deckoff (SD Investments)','company','places','Bought both islands, May 2023, $60M, for a resort; half the Little St. James proceeds go to a USVI victims\' trust.','',[])
+e('deckoff','lsj','bought, 2023','ownership',V,'ep10_nhpr_islands2023')
+e('deckoff','gsj','bought, 2023','ownership',V,'ep10_nhpr_islands2023')
+n('san_rafael_llc','San Rafael Ranch LLC (Huffines family)','company','places','Bought Zorro Ranch at auction in 2023; price undisclosed; cooperated with the March 2026 search.','',[])
+e('san_rafael_llc','zorro','bought at auction, 2023','ownership',V,'ep10_trd_ranch2026; ep10_pbs_search2026')
+e('nm_ag','zorro','reopened case 19 Feb 2026; search 9 Mar 2026','investigation',V,'ep10_cbs_nm2026; ep10_pbs_search2026')
+e('nm_commission','zorro','interim report: 5 Jane Does 1996–2012; 227 flights; likely preferential treatment','oversight',V,'ep10_kob_interim2026; ep10_abqj_interim2026')
+e('nm_commission','jpm','subpoena refused or unanswered','oversight',V,'ep10_kob_interim2026')
+n('estate_settlement','Estate class-action settlement (Feb 2026)','document','money','Indyke and Kahn agreed to pay up to $35M; the suit alleged they helped finance the network by structuring accounts and cash; they deny wrongdoing.','',[])
+e('indyke','estate_settlement','co-executor; settled, no admission','litigation',V,'ep10_findlaw_estate2026')
+e('kahn','estate_settlement','co-executor; settled, no admission','litigation',V,'ep10_findlaw_estate2026')
+n('marie','Gérald Marie','person','operations','Former Elite Europe head. 1980s–90s allegations shelved in 2023 as time-barred (under appeal); 15 women asked Paris (Mar 2026) to examine links to Brunel and Epstein. His lawyer says he is confident about any investigation.','',[])
+e('marie','brunel','modelling-industry links (alleged by 15 women; to be examined)','claim',T,'ep10_local_marie2026')
+e('paris_prosecutor','epstein','~20 suspected victims heard, ~10 new; no one charged (May 2026)','investigation',V,'ep10_aj_france2026')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
