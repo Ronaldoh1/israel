@@ -398,4 +398,18 @@ Excluded on purpose: shared institutional shareholders (index funds own stakes i
 
 **Sources (§17):** DOJ, 18 Dec 2015 (justice.gov/opa/pr/justice-department-announces-joint-resolution-two-banks-under-swiss-bank-program); Private Banking Magazin (private-banking-magazin.de/ariane-de-rothschild-jeffrey-epstein-files/); CBS News, 14 Jul 2026; IBTimes UK, Feb 2026; Reuters via Aaj English, 5 Feb 2026; Le Monde, 5 Feb 2026 (leads); American Banker (Dimon testimony); Paul, Weiss (derivative suit); Radical Compliance (NYDFS order); Fox Business citing NYT, Jul 2020; ThinkAdvisor, 28 May 2026; Claims Journal, 30 Mar 2026; PBS NewsHour, Jul 2026; finews.asia (EdR ownership); Wikipedia, Lynn Forester de Rothschild (citing New Yorker 2019, Vanity Fair 2019, Telegraph 2025, Guardian 2026); PA via AOL, Feb 2026 (Neilson).
 
+### 17.5 Update, 1 Nov 2026 (later): banks, funds and the jail's camera contracts (Ron's v4 audit, checked live)
+| Item | Finding | Mark |
+|---|---|---|
+| JPMorgan post-death SAR (unsealed, USVI case) | Listed 1 Goldman Sachs account and 3 HSBC Swiss private-bank accounts; no amounts. Goldman: ended 2010. | 📰 Reuters |
+| Wells Fargo · TD Bank · FirstBank Puerto Rico | Later-years accounts; TD closed the lawyer's and accountant's accounts in 2019; FirstBank inherited him with Chase's USVI operations (2002). Ron's "Bank of Puerto Rico" lead most likely = FirstBank PR; the post-2019 transfer itself still to verify. | 📰 WSJ |
+| Money out | Honeycomb ≥$60M (2016–19, $20M in Mar 2019) · Boothbay ~$38M · Tudor fund 2001–14 ($13.5M back) · Valar >$20M · Blockchain Capital $15M shares. All firms deny relationships. | 📰 WSJ |
+| Black, Oct 2015 | $10M to Southern Trust + $10M to Gratitude America (reportedly via BV70 LLC); ~$20M to a dozen women; Epstein helped route Ganieva's $18M NDA payments | 📰 NYT |
+| MCC cameras | Warden sought $800K (6 Sep 2018); Company 1 $698,108.99 (21 Sep 2018), Company 2 $34,089.28 (24 Sep 2018); TDY technicians pulled to guard posts; DVR 2 failed 29 Jul, found 8 Aug 2019 | ✅ OIG |
+| SigNet / Anixter as Companies 1 and 2 | Apr 2018 MCC email confirms SigNet camera-project talks; contract identities not independently opened here | ❓ to verify |
+| GEO Group | Only a footnote about a different facility; correctly excluded | ⊘ as a tie |
+| HBRK Associates | Payments "c/o HBRK" reported; originals not pulled | ❓ |
+
+**Re-asked with Epstein's own vehicles removed (Southern Trust, Gratitude America, Butterfly Trust, shells):** the main piece is 101 nodes; Black, Goldman, HSBC, Wells Fargo and every fund remain separate spokes; JPMorgan, Deutsche, BofA, FirstBank and the Swiss bank connect only through staff (Groff, Morris), the 2008 deal and the DOJ. New loop: Indyke – TD Bank – Kahn – Southern Trust. Strongest connector: Lesley Groff (0.123).
+
 *observe.the.system · Observe. Collapse. Reignite.*

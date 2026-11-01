@@ -193,6 +193,39 @@
      "url": "https://www.ilfattoquotidiano.it/2026/04/16/epstein-wexner-omicidio-shapiro-notizie/8356903/"
     }
    ]
+  },
+  {
+   "id": "ep11_cameras",
+   "stage": "ep11",
+   "topic": "The camera contracts",
+   "claims": [
+    {
+     "text": "OIG report (DOJ-OGR-00023449 page): Warden's 6 Sep 2018 memo sought $800,000 to replace the camera system; Company 1 contract $698,108.99 on 21 Sep 2018 for equipment and labor; Company 2 $34,089.28 on 24 Sep 2018 for networking equipment and wiring; from week of 17 Mar 2019 TDY technicians from other BOP institutions, sometimes reassigned to custody posts or lacking skills; DVR 2 disk failures 29 Jul 2019, discovered 8 Aug 2019.",
+     "strength": "documented",
+     "sources": [
+      "ep11_oig_cameras"
+     ]
+    },
+    {
+     "text": "EFTA00126261 (4 Apr 2018): an MCC New York engineering technician wrote that he had spoken with Signet about a potential camera project and asked a reference for its statement of work.",
+     "strength": "documented",
+     "sources": [
+      "ep11_signet_email2018"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep11_oig_cameras",
+     "label": "DOJ Inspector General report 23-085, camera-system section (released page DOJ-OGR-00023449)",
+     "url": "https://epstein-docs.github.io/document/doj-ogr-00023449"
+    },
+    {
+     "key": "ep11_signet_email2018",
+     "label": "MCC New York email about a camera project with Signet, 4 Apr 2018 (EFTA00126261)",
+     "url": "https://epsteinexposed.com/documents/efta-efta00126261"
+    }
+   ]
   }
  ]
 }

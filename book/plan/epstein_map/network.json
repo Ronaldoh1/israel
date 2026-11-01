@@ -3227,6 +3227,171 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "goldman",
+   "name": "Goldman Sachs",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "One Epstein account listed in JPMorgan's post-death SAR (unsealed, USVI case). Says it ended the relationship and moved his assets out in 2010.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "hsbc",
+   "name": "HSBC private bank (Switzerland)",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Three Epstein accounts listed in the same JPMorgan SAR; declined to comment.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "wells",
+   "name": "Wells Fargo",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Held Epstein or Epstein-related accounts in his later years (WSJ); declined to comment.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "tdbank",
+   "name": "TD Bank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Says it closed accounts held by Epstein's lawyer and accountant in 2019 (WSJ). Not documented as an Epstein-held account.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "firstbank",
+   "name": "FirstBank Puerto Rico",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Called Epstein a \"legacy relationship\" inherited when it bought Chase's USVI operations in 2002 (WSJ). A DOJ summary describes funds moving to a Puerto Rico bank after Deutsche closed his accounts (to verify).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "fincen",
+   "name": "FinCEN (Treasury)",
+   "kind": "government",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Receives suspicious-activity reports. A SAR is a bank's alert, not a finding.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "nysdfs",
+   "name": "New York DFS",
+   "kind": "government",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Regulator: $150M consent order against Deutsche Bank over Epstein, July 2020.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "butterfly",
+   "name": "The Butterfly Trust",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Trust opened at Deutsche Bank in January 2014; beneficiaries included alleged co-conspirators; 120 wires totalling $2.65M flagged (NYDFS).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "honeycomb",
+   "name": "Honeycomb Partners",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Received at least $60M from Epstein 2016–19, incl. $20M in March 2019 (WSJ). Says no relationship.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "boothbay",
+   "name": "Boothbay",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "About $38M in from Epstein 2014–17; forced redemption after the 2019 arrest (WSJ).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "tudor",
+   "name": "Tudor Futures Fund",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Epstein entity invested 2001, redeemed 2014; $13.5M received (WSJ). Says its founder did not know him personally.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "gratitude",
+   "name": "Gratitude America",
+   "kind": "institution",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein's charity. Received a $10M donation in Black's Oct 2015 arrangement, reportedly via his yacht company BV70 LLC (NYT).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "hbrk",
+   "name": "HBRK Associates",
+   "kind": "company",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Named in reporting on payments to women marked \"c/o HBRK Associates\"; ownership and role to verify from the original records.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "signet",
+   "name": "SigNet Technologies",
+   "kind": "company",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Discussed \"a potential camera project\" with an MCC technician, Apr 2018 (EFTA00126261). Read in DOJ-released records as the $698,108.99 camera contractor (Company 1); identity in the contract not independently checked here. No finding of fault.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "anixter",
+   "name": "Anixter",
+   "kind": "company",
+   "cluster": "witnesses",
+   "tier": "",
+   "note": "Read in a DOJ-released purchase order as the $34,089.28 wiring supplier (Company 2). Not independently checked; no finding of fault.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -7085,6 +7250,182 @@
    "type": "official act",
    "status": "withheld",
    "src": "ep15_cbs_missing2026"
+  },
+  {
+   "f": "jpm",
+   "t": "fincen",
+   "label": "post-death SAR listing Goldman and HSBC accounts (unsealed 2025)",
+   "type": "reporting",
+   "status": "verified",
+   "src": "ep3_reuters_goldman2025"
+  },
+  {
+   "f": "epstein",
+   "t": "goldman",
+   "label": "one account; relationship ended 2010 (Goldman)",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_reuters_goldman2025"
+  },
+  {
+   "f": "epstein",
+   "t": "hsbc",
+   "label": "three Swiss private-bank accounts",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_reuters_goldman2025"
+  },
+  {
+   "f": "epstein",
+   "t": "wells",
+   "label": "accounts in his later years (WSJ)",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "tdbank",
+   "t": "indyke",
+   "label": "accounts closed 2019 (lawyer)",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "tdbank",
+   "t": "kahn",
+   "label": "accounts closed 2019 (accountant)",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "firstbank",
+   "t": "jpm",
+   "label": "bought Chase's USVI operations, 2002",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "epstein",
+   "t": "firstbank",
+   "label": "\"legacy relationship\" from 2002",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "deutsche",
+   "t": "firstbank",
+   "label": "funds reportedly moved to a Puerto Rico bank after closure (DOJ summary; to verify)",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "Ron v4 audit; DOJ disclosures"
+  },
+  {
+   "f": "nysdfs",
+   "t": "deutsche",
+   "label": "$150M consent order, July 2020",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep3_rc_dbfailures2020"
+  },
+  {
+   "f": "deutsche",
+   "t": "butterfly",
+   "label": "accounts opened Jan 2014; 120 wires, $2.65M flagged",
+   "type": "banking",
+   "status": "verified",
+   "src": "ep3_rc_dbfailures2020"
+  },
+  {
+   "f": "epstein",
+   "t": "butterfly",
+   "label": "settlor (trust opened Jan 2014)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep3_rc_dbfailures2020"
+  },
+  {
+   "f": "epstein",
+   "t": "honeycomb",
+   "label": "≥$60M in, 2016–19",
+   "type": "investment",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "epstein",
+   "t": "boothbay",
+   "label": "~$38M in, 2014–17",
+   "type": "investment",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "epstein",
+   "t": "tudor",
+   "label": "fund investment 2001–14; $13.5M received",
+   "type": "investment",
+   "status": "verified",
+   "src": "ep3_wsj_firms"
+  },
+  {
+   "f": "black",
+   "t": "gratitude",
+   "label": "$10M donation (Oct 2015 arrangement), reportedly via BV70 LLC",
+   "type": "funding",
+   "status": "verified",
+   "src": "ep3_globe_black2026"
+  },
+  {
+   "f": "black",
+   "t": "southern_trust",
+   "label": "$10M (Oct 2015 arrangement)",
+   "type": "funding",
+   "status": "verified",
+   "src": "ep3_globe_black2026"
+  },
+  {
+   "f": "epstein",
+   "t": "gratitude",
+   "label": "his charity",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep3_globe_black2026"
+  },
+  {
+   "f": "hbrk",
+   "t": "epstein",
+   "label": "payments to women marked \"c/o HBRK Associates\" (reported)",
+   "type": "payment",
+   "status": "to-verify",
+   "src": "Pulitzer/WSJ summary; originals to pull"
+  },
+  {
+   "f": "bop",
+   "t": "signet",
+   "label": "camera project talks, Apr 2018; read as $698,108.99 contractor, Sep 2018",
+   "type": "contract",
+   "status": "to-verify",
+   "src": "ep11_signet_email2018; ep11_oig_cameras"
+  },
+  {
+   "f": "bop",
+   "t": "anixter",
+   "label": "read as $34,089.28 wiring supplier, Sep 2018",
+   "type": "contract",
+   "status": "to-verify",
+   "src": "ep11_oig_cameras; EFTA00128262 (not checked)"
+  },
+  {
+   "f": "signet",
+   "t": "mcc",
+   "label": "camera replacement (as Company 1), unfinished by Aug 2019",
+   "type": "contract",
+   "status": "to-verify",
+   "src": "ep11_oig_cameras"
   }
  ]
 }
