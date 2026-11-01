@@ -761,7 +761,7 @@ e('colom','epstein','correspondence (reported)','correspondence',T,'ep7_lemonde_
 e('epstein','barak','arranged meetings with Ariane de Rothschild (reported)','introduction',T,'ep7_lemonde_ariane2026')
 e('black','apollo','co-founder; then chief executive','office',V,'epx_s03')
 e('apollo','rothschild_group','offer for asset-management arm discussed, 2016 (reported; not completed)','acquisition',T,'ep7_lemonde_ariane2026')
-e('epstein','thiel','told him "I represent the Rothschilds", Feb 2016 (statement only; reported)','statement',T,'ep7_lemonde_ariane2026')
+e('epstein','thiel','email, 28 Feb 2016: "As you may know, I represent the Rothschilds" (his claim; ten weeks after the EdR fee)','statement',V,'ep15_bblv_rothschild2026; ep7_lemonde_ariane2026')
 e('southern_trust','schwab','named in a 2019 FinCEN SAR (not a finding)','reporting',T,'EFTA01656452 (Roll Call copy)')
 e('kahn','schwab','named in the same 2019 SAR (not a finding)','reporting',T,'EFTA01656452 (Roll Call copy)')
 
@@ -807,6 +807,21 @@ e('mandelson','lfdr','met Epstein at a de Rothschild house, Martha\'s Vineyard (
 e('epstein','lfdr','claimed financial help in her divorce; she says false','claim',X,'ep7_wiki_lfdr')
 e('epstein','neilson','emails 2010–11: arranging women (ages not stated)','correspondence',V,'ep7_aol_neilson2026')
 e('gmax','neilson','Epstein: "I will have Ghislaine reach out", Sept 2010','introduction',V,'ep7_aol_neilson2026')
+
+# --- Part Fourteen: the blind spots
+n('ice','ICE (Homeland Security)','government','justice','Three Epstein investigations in the released record: West Palm Beach 2006–08, Las Vegas 2009–10, Paris "Operation Angel Watch" 2013. Outside the Transparency Act, which covers DOJ only.','',[])
+n('hyperion','Hyperion Air','company','money','Epstein-linked aviation company formed and controlled by Darren Indyke (CBS).','',[])
+n('slk','SLK Designs LLC','company','money','Epstein-linked company formed and controlled by Darren Indyke (CBS).','',[])
+n('kyara','Kyara Investments III','company','crypto','Owned 50/50 by Epstein and Joi Ito; ~$500k into Blockstream\'s 2014 seed round; stake sold within months (Adam Back).','',[])
+n('jeeproject','jeeproject@yahoo.com inbox','document','withheld','About 20,000 messages archived by an independent group after a hack; not in the DOJ release. Nearly all released email is from jeevacation (c. 2008 on).','',[])
+e('ice','epstein','investigations: West Palm Beach 2006–08; Las Vegas 2009–10; Paris "Angel Watch" 2013','investigation',V,'ep15_cbs_dea_ice2026')
+e('sdny','dea','no documented coordination: 2018 prosecutors reportedly unaware of the DEA case','oversight',T,'ep15_cbs_dea_ice2026')
+e('indyke','hyperion','formed and controlled','ownership',V,'ep15_cbs_dea_ice2026')
+e('indyke','slk','formed and controlled','ownership',V,'ep15_cbs_dea_ice2026')
+e('epstein','kyara','50% owner','ownership',V,'ep15_logic_blockstream2026')
+e('ito','kyara','50% owner','ownership',V,'ep15_logic_blockstream2026')
+e('kyara','blockstream','~$500k, 2014 seed round; sold within months','investment',V,'ep15_logic_blockstream2026')
+e('doj','jeeproject','not in the release; unclear whether obtained','official act',W,'ep15_cbs_missing2026')
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}

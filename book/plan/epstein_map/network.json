@@ -3172,6 +3172,61 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "ice",
+   "name": "ICE (Homeland Security)",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Three Epstein investigations in the released record: West Palm Beach 2006–08, Las Vegas 2009–10, Paris \"Operation Angel Watch\" 2013. Outside the Transparency Act, which covers DOJ only.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "hyperion",
+   "name": "Hyperion Air",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein-linked aviation company formed and controlled by Darren Indyke (CBS).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "slk",
+   "name": "SLK Designs LLC",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein-linked company formed and controlled by Darren Indyke (CBS).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "kyara",
+   "name": "Kyara Investments III",
+   "kind": "company",
+   "cluster": "crypto",
+   "tier": "",
+   "note": "Owned 50/50 by Epstein and Joi Ito; ~$500k into Blockstream's 2014 seed round; stake sold within months (Adam Back).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "jeeproject",
+   "name": "jeeproject@yahoo.com inbox",
+   "kind": "document",
+   "cluster": "withheld",
+   "tier": "",
+   "note": "About 20,000 messages archived by an independent group after a hack; not in the DOJ release. Nearly all released email is from jeevacation (c. 2008 on).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -6730,10 +6785,10 @@
   {
    "f": "epstein",
    "t": "thiel",
-   "label": "told him \"I represent the Rothschilds\", Feb 2016 (statement only; reported)",
+   "label": "email, 28 Feb 2016: \"As you may know, I represent the Rothschilds\" (his claim; ten weeks after the EdR fee)",
    "type": "statement",
-   "status": "to-verify",
-   "src": "ep7_lemonde_ariane2026"
+   "status": "verified",
+   "src": "ep15_bblv_rothschild2026; ep7_lemonde_ariane2026"
   },
   {
    "f": "southern_trust",
@@ -6966,6 +7021,70 @@
    "type": "introduction",
    "status": "verified",
    "src": "ep7_aol_neilson2026"
+  },
+  {
+   "f": "ice",
+   "t": "epstein",
+   "label": "investigations: West Palm Beach 2006–08; Las Vegas 2009–10; Paris \"Angel Watch\" 2013",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep15_cbs_dea_ice2026"
+  },
+  {
+   "f": "sdny",
+   "t": "dea",
+   "label": "no documented coordination: 2018 prosecutors reportedly unaware of the DEA case",
+   "type": "oversight",
+   "status": "to-verify",
+   "src": "ep15_cbs_dea_ice2026"
+  },
+  {
+   "f": "indyke",
+   "t": "hyperion",
+   "label": "formed and controlled",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_cbs_dea_ice2026"
+  },
+  {
+   "f": "indyke",
+   "t": "slk",
+   "label": "formed and controlled",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_cbs_dea_ice2026"
+  },
+  {
+   "f": "epstein",
+   "t": "kyara",
+   "label": "50% owner",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_logic_blockstream2026"
+  },
+  {
+   "f": "ito",
+   "t": "kyara",
+   "label": "50% owner",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_logic_blockstream2026"
+  },
+  {
+   "f": "kyara",
+   "t": "blockstream",
+   "label": "~$500k, 2014 seed round; sold within months",
+   "type": "investment",
+   "status": "verified",
+   "src": "ep15_logic_blockstream2026"
+  },
+  {
+   "f": "doj",
+   "t": "jeeproject",
+   "label": "not in the release; unclear whether obtained",
+   "type": "official act",
+   "status": "withheld",
+   "src": "ep15_cbs_missing2026"
   }
  ]
 }

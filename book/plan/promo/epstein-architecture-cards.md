@@ -1,6 +1,6 @@
 # The Epstein Architecture — promo card prompts (Vol. XX)
 
-16 cards: 1 cover, 14 parts, 1 network map. Each prompt goes into ChatGPT image generation as-is, one per card.
+17 cards: 1 cover, 15 parts, 1 network map. Each prompt goes into ChatGPT image generation as-is, one per card.
 
 **Palette (new for this book):** petrol ink #08191D → #0F2E33, oxblood brick #B8432F, champagne brass foil #D8B26A, white. Calm and premium, deliberately not neon.
 
@@ -15,7 +15,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 Top half hero visual: a closed, cloth-bound book standing upright on a dark desk, deep petrol cloth cover with brass foil lettering "THE EPSTEIN ARCHITECTURE" and a small brass foil emblem of a node-and-line network; behind and around it, glowing brass threads spread out from the book across the darkness into a vast network map of tiny points and lines, like a constellation drawn in light. A single red bookmark ribbon hangs from the top of the book. Dramatic side light, brass rim light, soft haze. No people.
 
-Label tag: dark petrol pill with brass foil edge, white small caps: "NEW · VOL. XX · 14 PARTS · FREE TO READ".
+Label tag: dark petrol pill with brass foil edge, white small caps: "NEW · VOL. XX · 15 PARTS · FREE TO READ".
 Headline, enormous heavy condensed sans (Montserrat Black), white with a thin brass foil edge and drop shadow, two lines: "THE EPSTEIN" / "ARCHITECTURE".
 Subhead, brass foil italic serif: "The Network, the Files and Power Protects Power".
 Catch line on an oxblood #B8432F bar, white heavy caps: "HE DIDN'T BUILD IT ALONE. IT DIDN'T DIE WITH HIM."
@@ -392,14 +392,42 @@ CTA block in the bottom quarter, in this order: (1) a full-width oxblood #B8432F
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no silhouettes of real people, no real logos.
 ```
 
-## Card 15 — Part Fourteen
+## Card 15 — Part Fourteen: The Blind Spots
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, investigative-dossier style. Palette, exactly 4 colors: deep petrol ink background #08191D blending to dark teal #0F2E33 (background); oxblood brick red #B8432F (accent bars and callouts); brilliant white #FFFFFF (type); champagne brass foil #D8B26A with real foil sheen and highlights (premium touches). Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage, NOT neon. Calm, expensive, easy on the eyes. High contrast, glossy depth, subtle film grain, soft cinematic vignette, faint engraved paper-grain texture in the background.
+
+Top third hero visual: a brass magnifying glass held over a dark network map, its lens revealing glowing hidden lines and a stack of unopened archive boxes in the shadows behind it, one box lid lifted with light spilling out. Faint brass light rays behind it, fading into the background.
+
+Label tag: a small dark petrol pill with a brass foil edge and white small caps: "PART FOURTEEN · THE BLIND SPOTS".
+Headline: huge heavy condensed sans (Montserrat Black), white with a thin brass foil edge and soft drop shadow: "THE BLIND SPOTS".
+Subhead (the catch phrase), brass foil italic serif: "What's in the record that almost no one has looked at.".
+
+Anchor stat: one giant brass foil number "6" with a small white caps label beneath: "FEDERAL INVESTIGATIONS THAT NEVER MET".
+
+Panel 1, translucent dark petrol glass with a thin brass border, header in brass small caps "THE RECORD", bullets with small brass diamond icons:
+• "I represent the Rothschilds": written 10 weeks after a Swiss bank paid him $25M
+• FBI, 3 ICE probes, DEA ($50M in flagged wires): no shared case
+• 3 computers left the house 12 days before the 2005 police search
+Panel 2, same glass style, header in brass small caps "WHAT THE HEADLINES MISSED", bullets with small oxblood diamond icons:
+• ~20,000 emails from an older inbox are not in the release
+• ~$300M in Virgin Islands tax breaks no one has traced
+Accent callout: a full-width oxblood #B8432F bar with white heavy caps: "A BLIND SPOT IS WHERE NO ONE HAS LOOKED YET".
+Anti-cram: if the card gets crowded, cut the last bullet of Panel 1 first; never shrink the URL.
+
+CTA block in the bottom quarter, in this order: (1) a full-width oxblood #B8432F bar with the action line "SEE WHAT WAS MISSED" in white heavy condensed caps; (2) the hero URL "www.tinyurl.com/1948scam" as the second-largest text on the card, in thick champagne-brass foil lettering with metallic shine, on a dark petrol pill with a softly glowing brass outline; (3) below it in smaller white text: "Read free in the library · The Epstein Architecture, Vol. XX"; (4) two social pills side by side, dark petrol glass with thin brass borders and white text: TikTok icon "@chosenron13" and Instagram icon "@chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no silhouettes of real people, no real logos.
+```
+
+## Card 16 — Part Fifteen
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, investigative-dossier style. Palette, exactly 4 colors: deep petrol ink background #08191D blending to dark teal #0F2E33 (background); oxblood brick red #B8432F (accent bars and callouts); brilliant white #FFFFFF (type); champagne brass foil #D8B26A with real foil sheen and highlights (premium touches). Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage, NOT neon. Calm, expensive, easy on the eyes. High contrast, glossy depth, subtle film grain, soft cinematic vignette, faint engraved paper-grain texture in the background.
 
 Top third hero visual: a single brass architect's blueprint unrolled on a dark table, the full network drawn in brass and red, with a magnifying glass resting on one blacked-out corner. Faint brass light rays behind it, fading into the background.
 
-Label tag: a small dark petrol pill with a brass foil edge and white small caps: "PART FOURTEEN · STATED PLAINLY".
+Label tag: a small dark petrol pill with a brass foil edge and white small caps: "PART FIFTEEN · STATED PLAINLY".
 Headline: huge heavy condensed sans (Montserrat Black), white with a thin brass foil edge and soft drop shadow: "STATED PLAINLY".
 Subhead (the catch phrase), brass foil italic serif: "No secret controller. Something more durable.".
 
@@ -420,7 +448,7 @@ CTA block in the bottom quarter, in this order: (1) a full-width oxblood #B8432F
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no silhouettes of real people, no real logos.
 ```
 
-## Card 16 — Network map
+## Card 17 — Network map
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, investigative-dossier style. Palette, exactly 4 colors: deep petrol ink background #08191D blending to dark teal #0F2E33 (background); oxblood brick red #B8432F (accent bars and callouts); brilliant white #FFFFFF (type); champagne brass foil #D8B26A with real foil sheen and highlights (premium touches). Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage, NOT neon. Calm, expensive, easy on the eyes. High contrast, glossy depth, subtle film grain, soft cinematic vignette, faint engraved paper-grain texture in the background.
