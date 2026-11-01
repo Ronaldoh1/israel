@@ -3150,6 +3150,28 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "lfdr",
+   "name": "Lynn Forester de Rothschild",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Businesswoman married into the British branch. Accounts of introductions only: Dershowitz (his account), Andrew (Maxwell's claim), Mandelson (at a de Rothschild house, Martha's Vineyard). Denies Epstein's claim he helped her financially. No payment or business documented.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "neilson",
+   "name": "Annabelle Neilson",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "British socialite (d. 2018). 2010–11 emails: offered to put \"a little group of girls together\" for Epstein; ages not stated. Not a Rothschild link.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -6896,6 +6918,54 @@
    "type": "kinship",
    "status": "verified",
    "src": "ep3_finews_edr2021"
+  },
+  {
+   "f": "lfdr",
+   "t": "dershowitz",
+   "label": "introduced him to Epstein (Dershowitz's account)",
+   "type": "introduction",
+   "status": "to-verify",
+   "src": "ep7_wiki_lfdr"
+  },
+  {
+   "f": "lfdr",
+   "t": "andrew",
+   "label": "introduced him to Epstein (Maxwell's claim, 2025)",
+   "type": "introduction",
+   "status": "to-verify",
+   "src": "ep7_wiki_lfdr"
+  },
+  {
+   "f": "mandelson",
+   "t": "lfdr",
+   "label": "met Epstein at a de Rothschild house, Martha's Vineyard (emails, 2026)",
+   "type": "introduction",
+   "status": "to-verify",
+   "src": "ep7_wiki_lfdr"
+  },
+  {
+   "f": "epstein",
+   "t": "lfdr",
+   "label": "claimed financial help in her divorce; she says false",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_wiki_lfdr"
+  },
+  {
+   "f": "epstein",
+   "t": "neilson",
+   "label": "emails 2010–11: arranging women (ages not stated)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_aol_neilson2026"
+  },
+  {
+   "f": "gmax",
+   "t": "neilson",
+   "label": "Epstein: \"I will have Ghislaine reach out\", Sept 2010",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_aol_neilson2026"
   }
  ]
 }

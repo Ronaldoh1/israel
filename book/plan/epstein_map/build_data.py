@@ -798,6 +798,16 @@ e('gmax','bofa','alleged account use (suit settled; no admission)','banking',T,'
 e('edr_owner','rothschild_group','owner until Jan 2021','ownership',V,'ep3_finews_edr2021')
 e('edr_owner','ariane','spouse','kinship',V,'ep3_finews_edr2021')
 
+# --- other Rothschild names (introductions only; claims kept as claims)
+n('lfdr','Lynn Forester de Rothschild','person','finance','Businesswoman married into the British branch. Accounts of introductions only: Dershowitz (his account), Andrew (Maxwell\'s claim), Mandelson (at a de Rothschild house, Martha\'s Vineyard). Denies Epstein\'s claim he helped her financially. No payment or business documented.','',[])
+n('neilson','Annabelle Neilson','person','operations','British socialite (d. 2018). 2010–11 emails: offered to put "a little group of girls together" for Epstein; ages not stated. Not a Rothschild link.','',[])
+e('lfdr','dershowitz','introduced him to Epstein (Dershowitz\'s account)','introduction',T,'ep7_wiki_lfdr')
+e('lfdr','andrew','introduced him to Epstein (Maxwell\'s claim, 2025)','introduction',T,'ep7_wiki_lfdr')
+e('mandelson','lfdr','met Epstein at a de Rothschild house, Martha\'s Vineyard (emails, 2026)','introduction',T,'ep7_wiki_lfdr')
+e('epstein','lfdr','claimed financial help in her divorce; she says false','claim',X,'ep7_wiki_lfdr')
+e('epstein','neilson','emails 2010–11: arranging women (ages not stated)','correspondence',V,'ep7_aol_neilson2026')
+e('gmax','neilson','Epstein: "I will have Ghislaine reach out", Sept 2010','introduction',V,'ep7_aol_neilson2026')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
