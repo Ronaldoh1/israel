@@ -2509,6 +2509,83 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "dubin",
+   "name": "Glenn Dubin",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Hedge-fund manager. Named by estate executor Kahn (via Comer, Mar 2026) as one of five paying financial clients.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": true
+  },
+  {
+   "id": "sinofsky",
+   "name": "Steven Sinofsky",
+   "kind": "person",
+   "cluster": "tech",
+   "tier": "",
+   "note": "Former Microsoft executive. Named by Kahn (via Comer, Mar 2026) as one of five paying clients.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": true
+  },
+  {
+   "id": "mbs",
+   "name": "Mohammed bin Salman",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Saudi crown prince. Undated photo with Epstein in the release; Epstein invoked \"bin salman\" as a reference (2017). No documented payment or business.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "saudi",
+   "name": "Kingdom of Saudi Arabia (government)",
+   "kind": "government",
+   "cluster": "state",
+   "tier": "",
+   "note": "A node for documented state acts and offices only.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ambani",
+   "name": "Anil Ambani",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Reliance Group chairman. Corresponded 2017–19; asked for help reaching Trump's circle; met Epstein 23 May 2019.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "puri",
+   "name": "Hardeep Singh Puri",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Indian politician, former diplomat. Met Epstein at the townhouse 2015, 2016, 2017; says business only.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "rudd",
+   "name": "Kevin Rudd",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Former Australian PM. On Epstein's June 2014 schedule; denies visiting or any friendship.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -5287,6 +5364,86 @@
    "type": "claim",
    "status": "not-established",
    "src": "ep7_jta_maxwell_israel2020; ep7_nhpr_maxwell_arrest2020"
+  },
+  {
+   "f": "kahn",
+   "t": "house_oversight",
+   "label": "testified, 11 Mar 2026: five paying clients",
+   "type": "testimony",
+   "status": "verified",
+   "src": "ep7_aol_kahn2026"
+  },
+  {
+   "f": "dubin",
+   "t": "epstein",
+   "label": "paying client (Kahn, via Comer)",
+   "type": "client",
+   "status": "verified",
+   "src": "ep7_aol_kahn2026"
+  },
+  {
+   "f": "sinofsky",
+   "t": "epstein",
+   "label": "paying client (Kahn, via Comer)",
+   "type": "client",
+   "status": "verified",
+   "src": "ep7_aol_kahn2026"
+  },
+  {
+   "f": "rothschild_group",
+   "t": "epstein",
+   "label": "paying client (Kahn, via Comer)",
+   "type": "client",
+   "status": "verified",
+   "src": "ep7_aol_kahn2026"
+  },
+  {
+   "f": "mbs",
+   "t": "saudi",
+   "label": "crown prince",
+   "type": "office",
+   "status": "verified",
+   "src": "ep7_mee_saudi2026"
+  },
+  {
+   "f": "mbs",
+   "t": "epstein",
+   "label": "photographed together (undated); named by him as a reference",
+   "type": "association",
+   "status": "verified",
+   "src": "ep7_mee_saudi2026"
+  },
+  {
+   "f": "epstein",
+   "t": "saudi",
+   "label": "planned travel (passport files); Austrian passport with Saudi address",
+   "type": "travel",
+   "status": "verified",
+   "src": "ep7_abc_passports2024"
+  },
+  {
+   "f": "ambani",
+   "t": "epstein",
+   "label": "correspondence 2017–19; met 23 May 2019",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_aj_global2026"
+  },
+  {
+   "f": "puri",
+   "t": "epstein",
+   "label": "three townhouse meetings, 2015–17",
+   "type": "visit",
+   "status": "verified",
+   "src": "ep7_aj_global2026"
+  },
+  {
+   "f": "rudd",
+   "t": "epstein",
+   "label": "on his schedule, June 2014 (denies visiting)",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_aj_global2026"
   }
  ]
 }

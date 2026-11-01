@@ -604,8 +604,27 @@ e('rodgers','flight_logs','kept the logs','authorship',V,'Maxwell trial record, 
 e('visoski','flight_logs','chief pilot','authorship',V,'Maxwell trial record, 2021')
 e('gmax','israel','reported "protected" there (anonymous, Jan 2020); arrested in New Hampshire, Jul 2020','claim',X,'ep7_jta_maxwell_israel2020; ep7_nhpr_maxwell_arrest2020')
 
+# --- paying clients vs foreign contacts, 31 Oct 2026
+n('dubin','Glenn Dubin','person','finance','Hedge-fund manager. Named by estate executor Kahn (via Comer, Mar 2026) as one of five paying financial clients.','',[])
+n('sinofsky','Steven Sinofsky','person','tech','Former Microsoft executive. Named by Kahn (via Comer, Mar 2026) as one of five paying clients.','',[])
+e('kahn','house_oversight','testified, 11 Mar 2026: five paying clients','testimony',V,'ep7_aol_kahn2026')
+e('dubin','epstein','paying client (Kahn, via Comer)','client',V,'ep7_aol_kahn2026')
+e('sinofsky','epstein','paying client (Kahn, via Comer)','client',V,'ep7_aol_kahn2026')
+e('rothschild_group','epstein','paying client (Kahn, via Comer)','client',V,'ep7_aol_kahn2026')
+n('mbs','Mohammed bin Salman','person','state','Saudi crown prince. Undated photo with Epstein in the release; Epstein invoked "bin salman" as a reference (2017). No documented payment or business.','',[])
+n('saudi','Kingdom of Saudi Arabia (government)','government','state','A node for documented state acts and offices only.','',[])
+e('mbs','saudi','crown prince','office',V,'ep7_mee_saudi2026')
+e('mbs','epstein','photographed together (undated); named by him as a reference','association',V,'ep7_mee_saudi2026')
+e('epstein','saudi','planned travel (passport files); Austrian passport with Saudi address','travel',V,'ep7_abc_passports2024')
+n('ambani','Anil Ambani','person','finance','Reliance Group chairman. Corresponded 2017–19; asked for help reaching Trump\'s circle; met Epstein 23 May 2019.','',[])
+e('ambani','epstein','correspondence 2017–19; met 23 May 2019','correspondence',V,'ep7_aj_global2026')
+n('puri','Hardeep Singh Puri','person','politics','Indian politician, former diplomat. Met Epstein at the townhouse 2015, 2016, 2017; says business only.','',[])
+e('puri','epstein','three townhouse meetings, 2015–17','visit',V,'ep7_aj_global2026')
+n('rudd','Kevin Rudd','person','politics','Former Australian PM. On Epstein\'s June 2014 schedule; denies visiting or any friendship.','',[])
+e('rudd','epstein','on his schedule, June 2014 (denies visiting)','claim',X,'ep7_aj_global2026')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
-SP={'wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
+SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
 
 json.dump({'built':'2026-10-31','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
