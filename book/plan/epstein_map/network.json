@@ -2340,6 +2340,131 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "belonged_remark",
+   "name": "\"Belonged to intelligence\" remark",
+   "kind": "document",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Daily Beast (Ward), July 2019, citing an unnamed source: Acosta told Trump transition interviewers Epstein \"belonged to intelligence\". Second-hand at best; names no agency. Acosta denies it.",
+   "scenes": [
+    "epn_s01"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "opr",
+   "name": "DOJ Office of Professional Responsibility",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Reviewed the 2008 agreement (Nov 2020): Acosta showed \"poor judgment\", no professional misconduct; reported no intelligence instruction.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ben_menashe",
+   "name": "Ari Ben-Menashe",
+   "kind": "person",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Former Israeli military-intelligence officer. Claims Epstein and Ghislaine Maxwell worked with Israeli intelligence through Robert Maxwell. Single witness; credibility long disputed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "netanyahu",
+   "name": "Benjamin Netanyahu",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Israeli PM. Says Barak's ties prove Epstein did not work for Israel. Barak's rival.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "belyakov",
+   "name": "Sergei Belyakov",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "FSB Academy graduate; former Russian deputy economy minister; chaired the St Petersburg economic forum. Epstein asked him for information on a woman in 2015 and introduced him to Thiel and Pritzker.",
+   "scenes": [
+    "epx_s08"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "russia",
+   "name": "Russian Federation (government)",
+   "kind": "government",
+   "cluster": "state",
+   "tier": "",
+   "note": "A node for documented state acts and offices only.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "churkin",
+   "name": "Vitaly Churkin",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Russia's UN ambassador (died 2017). Met Epstein; Epstein arranged an internship for his son.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "putin",
+   "name": "Vladimir Putin",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Named 1,000+ times in the files. Epstein sought a meeting through intermediaries; no meeting in the record. Kremlin dismissed the claims.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "hbj",
+   "name": "Hamad bin Jassim",
+   "kind": "person",
+   "cluster": "state",
+   "tier": "",
+   "note": "Former Qatari PM. Epstein arranged his December 2018 London meeting with Barak.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "dea_memo",
+   "name": "Unredacted DEA \"Chain Reaction\" memo",
+   "kind": "document",
+   "cluster": "withheld",
+   "tier": "",
+   "note": "69-page memo (18 May 2015) naming 14 alleged co-conspirators, redacted in the release. Wyden says Deputy AG Blanche stopped its production (Mar 2026); no DOJ response.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "wyden",
+   "name": "Ron Wyden",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "US Senator (Finance Committee ranking member). Sought the unredacted DEA memo.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -4838,6 +4963,206 @@
    "type": "office",
    "status": "verified",
    "src": "ep4_ap_lutnick2026"
+  },
+  {
+   "f": "ward",
+   "t": "belonged_remark",
+   "label": "reported, citing an unnamed source (July 2019)",
+   "type": "reporting",
+   "status": "verified",
+   "src": "ep7_tpm_ward2019"
+  },
+  {
+   "f": "acosta",
+   "t": "belonged_remark",
+   "label": "denied: \"I have not\"; \"I never made that assertion\" (House Oversight, 19 Sep 2025)",
+   "type": "testimony",
+   "status": "verified",
+   "src": "ep7_aol_acosta2025"
+  },
+  {
+   "f": "belonged_remark",
+   "t": "epstein",
+   "label": "claim that he was an intelligence asset",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_tpm_ward2019"
+  },
+  {
+   "f": "house_oversight",
+   "t": "acosta",
+   "label": "transcribed interview, 19 Sep 2025",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep7_aol_acosta2025"
+  },
+  {
+   "f": "opr",
+   "t": "acosta",
+   "label": "\"poor judgment\", not misconduct (Nov 2020)",
+   "type": "forensic review",
+   "status": "verified",
+   "src": "abcnews_opr_report"
+  },
+  {
+   "f": "opr",
+   "t": "doj",
+   "label": "office within",
+   "type": "office",
+   "status": "verified",
+   "src": "abcnews_opr_report"
+  },
+  {
+   "f": "ben_menashe",
+   "t": "epstein",
+   "label": "claims intelligence ties",
+   "type": "claim",
+   "status": "not-established",
+   "src": "wiki_ari_ben_menashe"
+  },
+  {
+   "f": "fd1023",
+   "t": "epstein",
+   "label": "source \"convinced\" he was a co-opted Mossad agent; uncorroborated",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_toi_mossad2026"
+  },
+  {
+   "f": "epstein",
+   "t": "barak",
+   "label": "2018: \"make clear that I don't work for Mossad\" (with a smiley)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_toi_mossad2026"
+  },
+  {
+   "f": "netanyahu",
+   "t": "israel",
+   "label": "prime minister",
+   "type": "office",
+   "status": "verified",
+   "src": "ep5_toi_netanyahu_barak"
+  },
+  {
+   "f": "belyakov",
+   "t": "russia",
+   "label": "former deputy economy minister",
+   "type": "office",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "belyakov",
+   "label": "2015 information request; \"some friends in the FSB\" (draft)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "thiel",
+   "label": "introduced Belyakov to him",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "pritzker",
+   "label": "introduced Belyakov to him",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "churkin",
+   "t": "russia",
+   "label": "UN ambassador",
+   "type": "office",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "churkin",
+   "label": "met; arranged an internship for his son",
+   "type": "favour",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "putin",
+   "t": "russia",
+   "label": "president",
+   "type": "office",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "jagland",
+   "label": "asked to help reach Putin",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "putin",
+   "label": "sought a meeting; none in the record",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_euronews_intel2026"
+  },
+  {
+   "f": "epstein",
+   "t": "hbj",
+   "label": "arranged London meeting with Barak, Dec 2018",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_reason_qatar2026"
+  },
+  {
+   "f": "hbj",
+   "t": "barak",
+   "label": "meeting, London, Dec 2018 (arranged by Epstein)",
+   "type": "association",
+   "status": "verified",
+   "src": "ep7_reason_qatar2026"
+  },
+  {
+   "f": "epstein",
+   "t": "binsulayem",
+   "label": "encouraged him to accept an inauguration invitation, 2017",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_reason_mideast2025"
+  },
+  {
+   "f": "dea",
+   "t": "dea_memo",
+   "label": "author",
+   "type": "authorship",
+   "status": "verified",
+   "src": "ep7_cbs_dea2026"
+  },
+  {
+   "f": "dea_memo",
+   "t": "epstein",
+   "label": "names him and 14 redacted others",
+   "type": "investigation",
+   "status": "withheld",
+   "src": "ep7_cbs_dea2026"
+  },
+  {
+   "f": "wyden",
+   "t": "dea_memo",
+   "label": "requested it; says Blanche intervened",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep7_wyden_blanche2026"
   }
  ]
 }

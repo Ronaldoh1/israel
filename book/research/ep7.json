@@ -122,6 +122,151 @@
      "url": "https://www.aljazeera.com/news/2026/2/19/israel-installed-security-at-epsteins-manhattan-apartment-for-ex-pm-barak"
     }
    ]
+  },
+  {
+   "id": "ep7_acosta",
+   "stage": "ep7",
+   "topic": "The remark",
+   "claims": [
+    {
+     "text": "Vicky Ward, Daily Beast (July 2019), citing an unnamed source: Acosta told Trump transition interviewers 'I was told Epstein \"belonged to intelligence\" and to leave it alone'; TPM noted the claim is second- or third-hand.",
+     "strength": "reported",
+     "sources": [
+      "ep7_tpm_ward2019"
+     ]
+    },
+    {
+     "text": "Acosta, House Oversight transcribed interview 19 Sept 2025 (released 17 Oct 2025): asked if he said it, 'I have not'; 'I never made that assertion'; no one from CIA, NSA, State or FBI intelligence contacted him; 'No one approached me and said that'; procedures 'would have been triggered that were never triggered'; consistently denied it, including to OPR; whether under oath not stated.",
+     "strength": "documented",
+     "sources": [
+      "ep7_aol_acosta2025"
+     ]
+    },
+    {
+     "text": "DOJ OPR (Nov 2020): Acosta exercised 'poor judgment' but did not commit professional misconduct.",
+     "strength": "documented",
+     "sources": [
+      "abcnews_opr_report"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep7_tpm_ward2019",
+     "label": "Talking Points Memo, 'I was told Epstein belonged to intelligence' (10 Jul 2019, quoting the Daily Beast)",
+     "url": "https://talkingpointsmemo.com/edblog/i-was-told-epstein-belonged-to-intelligence-and-to-leave-it-alone"
+    },
+    {
+     "key": "ep7_aol_acosta2025",
+     "label": "AOL, Architect of sweetheart plea deal Alex Acosta denies alleged Epstein intelligence ties (Oct 2025)",
+     "url": "https://www.aol.com/articles/architect-sweetheart-plea-deal-alex-215612010.html"
+    }
+   ]
+  },
+  {
+   "id": "ep7_israel",
+   "stage": "ep7",
+   "topic": "Israel in the files",
+   "claims": [
+    {
+     "text": "Times of Israel (6 Feb 2026): Epstein wrote 'I do not like Israel. AT ALL.' (EFTA02400102); 2018 to Barak: 'You should make clear that I don't work for Mossad' with a smiley (EFTA02612254); 2017 Barak asked whether an acquaintance 'got to the Mossad guys through you?' (EFTA00964912); a three-hour Barak–Epstein recording does not mention Mossad; the FBI tipster item (EFTA00090314) says a source was 'convinced that Epstein was a co-opted Mossad agent'; Israel appears fewer times than Russia, China, Canada, France; most agency mentions are news clippings.",
+     "strength": "documented",
+     "sources": [
+      "ep7_toi_mossad2026"
+     ]
+    },
+    {
+     "text": "Guardian (Sept 2013, Snowden): NSA memorandum with Israel's SIGINT unit permits sharing raw, unminimized SIGINT that may include US persons' data; Israel agreed not to deliberately target Americans; not legally binding.",
+     "strength": "documented",
+     "sources": [
+      "ep7_irishtimes_nsa2013"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep7_toi_mossad2026",
+     "label": "Times of Israel, No, the Epstein files don't show that he worked for Mossad (6 Feb 2026)",
+     "url": "https://www.timesofisrael.com/no-the-epstein-files-dont-show-that-he-worked-for-mossad"
+    },
+    {
+     "key": "ep7_irishtimes_nsa2013",
+     "label": "Irish Times / Guardian, Top-secret document reveals NSA gives raw spy data to Israel (12 Sept 2013)",
+     "url": "https://www.irishtimes.com/news/world/middle-east/top-secret-document-reveals-nsa-gives-raw-spy-data-to-israel-1.1524077"
+    }
+   ]
+  },
+  {
+   "id": "ep7_russia",
+   "stage": "ep7",
+   "topic": "Russia, the Gulf and others",
+   "claims": [
+    {
+     "text": "Euronews (3 Mar 2026): Epstein sought ties with Sergei Belyakov (FSB Academy graduate, ex-deputy economy minister, chaired the St Petersburg forum); 2015 asked him for information on a woman he said was blackmailing a US businessman; draft referred to 'some friends in the FSB'; introduced Belyakov to Thiel and Pritzker; met Vitaly Churkin and arranged an internship for his son; Putin mentioned 1,000+ times; tried to reach Putin via Jagland; no evidence he met Putin; Peskov dismissed it; no direct evidence he worked for any foreign government; Unger: 'an asset, not a spy'.",
+     "strength": "documented",
+     "sources": [
+      "ep7_euronews_intel2026"
+     ]
+    },
+    {
+     "text": "Reason (Feb 2026): Epstein arranged a Dec 2018 London meeting between former Qatari PM Hamad bin Jassim and Barak; Nov 2016 apologised to a Qatari contact for cancelling an audience; Kuwait-linked figure sought his advice before Trump's 2017 trip; suggested bin Sulayem accept an inauguration invitation.",
+     "strength": "reported",
+     "sources": [
+      "ep7_reason_qatar2026",
+      "ep7_reason_mideast2025"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep7_euronews_intel2026",
+     "label": "Euronews, Do the Epstein files show he was working for Russia or another intelligence agency? (3 Mar 2026)",
+     "url": "https://www.euronews.com/2026/03/03/do-the-epstein-files-show-he-was-working-for-russia-or-another-intelligence-agency"
+    },
+    {
+     "key": "ep7_reason_qatar2026",
+     "label": "Reason, Jeffrey Epstein brokered secret meeting between Qatari and Israeli leaders (3 Feb 2026)",
+     "url": "https://reason.com/2026/02/03/jeffrey-epstein-brokered-secret-meeting-between-qatari-and-israeli-leaders"
+    },
+    {
+     "key": "ep7_reason_mideast2025",
+     "label": "Reason, Jeffrey Epstein's secret role in Washington's Middle East diplomacy (13 Nov 2025)",
+     "url": "https://reason.com/2025/11/13/jeffrey-epsteins-secret-role-in-washingtons-middle-east-diplomacy"
+    }
+   ]
+  },
+  {
+   "id": "ep7_us",
+   "stage": "ep7",
+   "topic": "The American agencies",
+   "claims": [
+    {
+     "text": "CBS (Feb 2026): DEA OCDETF probe 'Chain Reaction' opened 2010 in New York; Epstein and 14 alleged co-conspirators; possible drug trafficking and 'illegitimate wire transfers' tied to drug and/or prostitution activity in the USVI and NYC; 2015 memo (69 pp) calls it 'judicial pending'; no charges filed; 14 names redacted; Wyden sought the unredacted memo.",
+     "strength": "documented",
+     "sources": [
+      "ep7_cbs_dea2026"
+     ]
+    },
+    {
+     "text": "Wyden (18 Mar 2026): Deputy AG Blanche intervened to keep the unredacted DEA memo from release.",
+     "strength": "reported",
+     "sources": [
+      "ep7_wyden_blanche2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep7_cbs_dea2026",
+     "label": "CBS News, DEA drug-trafficking investigation of Epstein, Wyden letter (Feb 2026)",
+     "url": "https://www.cbsnews.com/news/jeffrey-epstein-dea-drug-trafficking-investigation-senator-wyden"
+    },
+    {
+     "key": "ep7_wyden_blanche2026",
+     "label": "Senate Finance Committee, Wyden sounds alarm as DAG Blanche intervenes to conceal details of Epstein investigation (18 Mar 2026)",
+     "url": "https://www.finance.senate.gov/ranking-members-news/wyden-sounds-alarm-as-dag-blanche-intervenes-to-conceal-details-of-mystery-epstein-investigation"
+    }
+   ]
   }
  ]
 }

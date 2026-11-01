@@ -5,11 +5,7 @@
   {
    "s": "ep7_backward",
    "draws": [
-    "epn_s01",
-    "epn_s02",
-    "epx_s06",
-    "epx_s08",
-    "epn_s05"
+    "epn_s02"
    ],
    "research": [
     "ep7_backward",
@@ -17,6 +13,54 @@
    ],
    "writer": "R",
    "brief": "Reverse traversal of every inbound line, with where the record stops"
+  },
+  {
+   "s": "ep7_remark",
+   "draws": [
+    "epn_s01"
+   ],
+   "research": [
+    "ep7_acosta"
+   ],
+   "writer": "R",
+   "brief": "The \"belonged to intelligence\" remark and Acosta's denial"
+  },
+  {
+   "s": "ep7_israel",
+   "draws": [
+    "epx_s06"
+   ],
+   "research": [
+    "ep7_israel"
+   ],
+   "writer": "R",
+   "brief": "Israel in the record: documented vs claimed"
+  },
+  {
+   "s": "ep7_others",
+   "draws": [
+    "epx_s08"
+   ],
+   "research": [
+    "ep7_russia",
+    "ep7_us"
+   ],
+   "writer": "R",
+   "brief": "Russia, the Gulf and the American agencies, same standard"
+  },
+  {
+   "s": "ep7_verdict",
+   "draws": [
+    "epn_s05"
+   ],
+   "research": [
+    "ep7_acosta",
+    "ep7_israel",
+    "ep7_russia",
+    "ep7_us"
+   ],
+   "writer": "R",
+   "brief": "Agent, asset or broker: claims table and what would change it"
   }
  ]
 }
