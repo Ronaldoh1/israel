@@ -156,7 +156,7 @@
    "kind": "company",
    "cluster": "finance",
    "tier": "",
-   "note": "Paris offices raided 20 Mar 2026 in a bribery probe into former employee Fabrice Aidan. CEO Ariane de Rothschild had documented contacts with Epstein. A reported $25M consulting fee is not yet verified.",
+   "note": "Swiss private bank (separate from Rothschild & Co). Paid a $45.245M DOJ penalty, 18 Dec 2015. Its holding company contracted Epstein's Southern Trust on 5 Oct 2015: $25M if the penalty was under $75M, $10M if $75–150M. Paris offices raided 20 Mar 2026 in a bribery probe into former employee Fabrice Aidan.",
    "scenes": [],
    "apex": false,
    "sponsor": true
@@ -2941,6 +2941,105 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "ariane",
+   "name": "Ariane de Rothschild",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "association",
+   "note": "CEO of the Edmond de Rothschild group. Signed the 2015 contract with Southern Trust. Correspondence with Epstein 2013–19; Reuters found no apparent evidence of criminal wrongdoing; the bank says she did not know of his crimes.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "edr_holding",
+   "name": "Edmond de Rothschild Holding S.A.",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Group holding company; the named counterparty in the 5 Oct 2015 contract.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "edr_contract",
+   "name": "Southern Trust–EdR contract, 5 Oct 2015",
+   "kind": "document",
+   "cluster": "money",
+   "tier": "",
+   "note": "\"Risk analysis and application of certain algorithms.\" Fee $25M if the DOJ penalty fell under $75M, $10M if $75–150M; due within three days of settlement.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "edr_npa",
+   "name": "EdR Switzerland non-prosecution agreement",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "18 Dec 2015, Swiss Bank Program. EdR (Suisse) and EdR (Lugano); penalty $45.245M — inside the band that paid Epstein the larger fee.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "latham",
+   "name": "Latham & Watkins",
+   "kind": "company",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Law firm; Ruemmler was a partner when her team represented the Edmond de Rothschild bank before the DOJ.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "edr_invoice",
+   "name": "Southern Trust invoice, 15 Dec 2015",
+   "kind": "document",
+   "cluster": "money",
+   "tier": "",
+   "note": "$15M invoice citing the agreement, with payment instructions at Deutsche Bank Trust Company Americas (EFTA00586695). An invoice is a request, not a cleared transfer.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "colom",
+   "name": "Olivier Colom",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Former Sarkozy adviser; secretary general of the EdR group 2013–16. Le Monde places him in the introduction chain.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo Global Management",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Leon Black's firm. Le Monde reports an offer for EdR's asset-management arm discussed internally in 2016; not completed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "schwab",
+   "name": "Charles Schwab & Co.",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Named with Southern Trust, Epstein and Kahn in a July 2019 FinCEN suspicious-activity report (EFTA01656452). A SAR is not a finding.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -3083,10 +3182,10 @@
   {
    "f": "rothschild_group",
    "t": "epstein",
-   "label": "reported $25M consulting fee",
+   "label": "$25M fee tied to the size of its DOJ penalty, 2015",
    "type": "funding",
-   "status": "to-verify",
-   "src": "earlier pass rated unverified; find the primary report"
+   "status": "verified",
+   "src": "ep7_pbm_edr2026; ep7_cbs_ruemmler2026"
   },
   {
    "f": "paris_prosecutor",
@@ -6335,6 +6434,190 @@
    "type": "official act",
    "status": "verified",
    "src": "ep11_cbs_minute2026"
+  },
+  {
+   "f": "ariane",
+   "t": "rothschild_group",
+   "label": "chief executive",
+   "type": "office",
+   "status": "verified",
+   "src": "ep7_reuters_ariane2026"
+  },
+  {
+   "f": "edr_holding",
+   "t": "rothschild_group",
+   "label": "group holding company",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep7_ibt_rothschild2026"
+  },
+  {
+   "f": "ariane",
+   "t": "edr_contract",
+   "label": "signed for the holding company",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep7_ibt_rothschild2026; ep7_pbm_edr2026"
+  },
+  {
+   "f": "edr_holding",
+   "t": "edr_contract",
+   "label": "counterparty (client)",
+   "type": "contract",
+   "status": "verified",
+   "src": "ep7_ibt_rothschild2026"
+  },
+  {
+   "f": "southern_trust",
+   "t": "edr_contract",
+   "label": "counterparty (contractor)",
+   "type": "contract",
+   "status": "verified",
+   "src": "ep7_pbm_edr2026"
+  },
+  {
+   "f": "epstein",
+   "t": "ariane",
+   "label": "correspondence and meetings, 2013–19",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep7_reuters_ariane2026"
+  },
+  {
+   "f": "doj",
+   "t": "edr_npa",
+   "label": "entered the agreement; $45.245M penalty",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep7_doj_edr2015"
+  },
+  {
+   "f": "rothschild_group",
+   "t": "edr_npa",
+   "label": "Swiss units signed; paid the penalty",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep7_doj_edr2015"
+  },
+  {
+   "f": "edr_contract",
+   "t": "edr_npa",
+   "label": "fee contingent on the penalty band",
+   "type": "contract",
+   "status": "verified",
+   "src": "ep7_pbm_edr2026"
+  },
+  {
+   "f": "epstein",
+   "t": "ruemmler",
+   "label": "introduced her to Ariane de Rothschild, Sept 2014",
+   "type": "introduction",
+   "status": "verified",
+   "src": "ep7_cbs_ruemmler2026"
+  },
+  {
+   "f": "ruemmler",
+   "t": "latham",
+   "label": "partner",
+   "type": "employment",
+   "status": "verified",
+   "src": "ep7_cbs_ruemmler2026"
+  },
+  {
+   "f": "latham",
+   "t": "rothschild_group",
+   "label": "represented the bank before the DOJ",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep7_cbs_ruemmler2026; ep7_pbm_edr2026"
+  },
+  {
+   "f": "southern_trust",
+   "t": "edr_invoice",
+   "label": "issued, $15M (document as published; not independently checked)",
+   "type": "payment",
+   "status": "to-verify",
+   "src": "EFTA00586695 (yirah.fi copy)"
+  },
+  {
+   "f": "edr_invoice",
+   "t": "deutsche",
+   "label": "payment instructions at Deutsche Bank Trust Co. Americas",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "EFTA00586695 (yirah.fi copy)"
+  },
+  {
+   "f": "rodlarsen",
+   "t": "colom",
+   "label": "introduction chain to Ariane de Rothschild, 2013 (reported)",
+   "type": "introduction",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "colom",
+   "t": "rothschild_group",
+   "label": "secretary general 2013–16",
+   "type": "employment",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "colom",
+   "t": "epstein",
+   "label": "correspondence (reported)",
+   "type": "correspondence",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "epstein",
+   "t": "barak",
+   "label": "arranged meetings with Ariane de Rothschild (reported)",
+   "type": "introduction",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "black",
+   "t": "apollo",
+   "label": "co-founder; then chief executive",
+   "type": "office",
+   "status": "verified",
+   "src": "epx_s03"
+  },
+  {
+   "f": "apollo",
+   "t": "rothschild_group",
+   "label": "offer for asset-management arm discussed, 2016 (reported; not completed)",
+   "type": "acquisition",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "epstein",
+   "t": "thiel",
+   "label": "told him \"I represent the Rothschilds\", Feb 2016 (statement only; reported)",
+   "type": "statement",
+   "status": "to-verify",
+   "src": "ep7_lemonde_ariane2026"
+  },
+  {
+   "f": "southern_trust",
+   "t": "schwab",
+   "label": "named in a 2019 FinCEN SAR (not a finding)",
+   "type": "reporting",
+   "status": "to-verify",
+   "src": "EFTA01656452 (Roll Call copy)"
+  },
+  {
+   "f": "kahn",
+   "t": "schwab",
+   "label": "named in the same 2019 SAR (not a finding)",
+   "type": "reporting",
+   "status": "to-verify",
+   "src": "EFTA01656452 (Roll Call copy)"
   }
  ]
 }
