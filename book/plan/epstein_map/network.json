@@ -631,7 +631,7 @@
    "kind": "person",
    "cluster": "justice",
    "tier": "",
-   "note": "Lead federal prosecutor. Prepared the prosecution memo and the draft indictment (2007); the defence pushed for her removal. To verify the page counts.",
+   "note": "Line federal prosecutor (SD Fla.). 82-page prosecution memo and 60-count draft indictment, May 2007; asked to file and was overruled; in Nov 2008 asked \"Can I indict him now?\"",
    "scenes": [],
    "apex": false,
    "sponsor": false
@@ -2641,6 +2641,122 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "krischer",
+   "name": "Barry Krischer",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Palm Beach County State Attorney. Took the case to a 2006 grand jury that returned a lesser charge; transcripts released 2024.",
+   "scenes": [
+    "epf_s06"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "lefkowitz",
+   "name": "Jay Lefkowitz",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Kirkland & Ellis; Epstein defence lawyer. Breakfast with Acosta, 12 Oct 2007; thanked him for \"genuine finality\".",
+   "scenes": [
+    "epf_s06"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "starr",
+   "name": "Kenneth Starr",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Former independent counsel; on Epstein's 2007 defence team. Died 2022.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "goldberger",
+   "name": "Jack Goldberger",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Epstein defence lawyer; his office was the nominal site of the foundation used for work release.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "sanchez",
+   "name": "Lilly Ann Sanchez",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Former member of the SD Fla. US Attorney's office; negotiated for Epstein with Villafaña's supervisor.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "menchel",
+   "name": "Matthew Menchel",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Criminal chief, SD Fla. US Attorney's office. Urged caution on Villafaña's request to file (May 2007).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "dag_2008",
+   "name": "Office of the Deputy Attorney General (2008)",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Declined the defence's request to intervene, 23 Jun 2008; Epstein pleaded a week later.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "wild_ruling",
+   "name": "In re Wild (11th Cir. en banc, 2021)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Held victims' rights attach only once charges are filed; Supreme Court declined review 22 Feb 2022.",
+   "scenes": [
+    "epf_s07"
+   ],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "sdny_memo2019",
+   "name": "SDNY co-conspirator memo (Dec 2019)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "86-page prosecution memo weighing associates' liability; only Maxwell charged.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "senate_res",
+   "name": "Senate resolution against Maxwell clemency (Jul 2026)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Non-binding; passed unanimously; sponsored by Sen. Rosen.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -3223,10 +3339,10 @@
   {
    "f": "villafana",
    "t": "npa",
-   "label": "prosecution memo and draft indictment overridden",
+   "label": "60-count draft indictment overridden by the agreement",
    "type": "official act",
-   "status": "to-verify",
-   "src": "Bloomberg; primary documents to pull"
+   "status": "verified",
+   "src": "ep8_doj_opr2020; ep8_herald_villafana"
   },
   {
    "f": "marra",
@@ -5563,6 +5679,158 @@
    "type": "business",
    "status": "verified",
    "src": "ep7_herald_latam2026"
+  },
+  {
+   "f": "krischer",
+   "t": "epstein",
+   "label": "2006 state grand jury: lesser charge",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep8_doj_opr2020; ep8_wusf_grandjury2024"
+  },
+  {
+   "f": "reiter",
+   "t": "krischer",
+   "label": "police chief objected to the state attorney's handling",
+   "type": "complaint",
+   "status": "verified",
+   "src": "ep2_nbc_reiter2019"
+  },
+  {
+   "f": "lefkowitz",
+   "t": "epstein",
+   "label": "defence lawyer",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "lefkowitz",
+   "t": "acosta",
+   "label": "breakfast 12 Oct 2007 (addendum discussed); \"genuine finality\" note",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep8_herald_villafana; ep8_doj_opr2020"
+  },
+  {
+   "f": "starr",
+   "t": "epstein",
+   "label": "defence lawyer, 2007",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "dershowitz",
+   "t": "epstein",
+   "label": "defence lawyer, 2007",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "roy_black",
+   "t": "epstein",
+   "label": "defence lawyer; answered the work-release complaint",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "goldberger",
+   "t": "epstein",
+   "label": "defence lawyer; work-release office address",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "sanchez",
+   "t": "epstein",
+   "label": "defence lawyer; negotiated the state-plea route",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "menchel",
+   "t": "villafana",
+   "label": "supervisor; did not act on her arrest requests",
+   "type": "office",
+   "status": "verified",
+   "src": "ep8_bloomberg_villafana2026"
+  },
+  {
+   "f": "menchel",
+   "t": "npa",
+   "label": "negotiated the plea route",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep8_herald_villafana"
+  },
+  {
+   "f": "dag_2008",
+   "t": "npa",
+   "label": "declined to intervene, 23 Jun 2008",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep8_doj_opr2020"
+  },
+  {
+   "f": "dag_2008",
+   "t": "doj",
+   "label": "office within",
+   "type": "office",
+   "status": "verified",
+   "src": "ep8_doj_opr2020"
+  },
+  {
+   "f": "wild_ruling",
+   "t": "npa",
+   "label": "reversed the remedy: CVRA did not reach a pre-charge deal",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "ep8_justia_wild2021; ep8_scotus_wild2022"
+  },
+  {
+   "f": "opr",
+   "t": "npa",
+   "label": "\"several unusual and problematic terms\"",
+   "type": "forensic review",
+   "status": "verified",
+   "src": "ep8_doj_opr2020"
+  },
+  {
+   "f": "sdny_memo2019",
+   "t": "gmax",
+   "label": "charged (2020)",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep8_abc_cocon_memo"
+  },
+  {
+   "f": "sdny_memo2019",
+   "t": "groff",
+   "label": "weighed; not charged",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep8_abc_cocon_memo"
+  },
+  {
+   "f": "blanche",
+   "t": "gmax",
+   "label": "told senators he would not recommend a pardon, 19 May 2026",
+   "type": "testimony",
+   "status": "verified",
+   "src": "ep8_rollcall_blanche2026"
+  },
+  {
+   "f": "senate_res",
+   "t": "gmax",
+   "label": "opposes any clemency",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep8_lavoce_senate2026"
   }
  ]
 }
