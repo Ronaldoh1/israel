@@ -1158,6 +1158,7 @@ body.book-open #libBanner{display:none}
       '<button class="row" data-a="lib"><i>▥</i><span>The library<small>All volumes, search and sort</small></span></button>' +
       '<button class="row" data-a="toc"><i>☰</i><span>Contents<small>' + esc(BOOK.title) + ' · ' + BOOK.chapters.length + ' ' + esc(BOOK.unit || 'chapters') + '</small></span></button>' +
       '<button class="row" data-a="sim"><i>◉</i><span>Switch to the simulation<small>Opens the scene you are reading</small></span></button>' +
+      (/Epstein/.test(BOOK.title || '') ? '<button class="row" data-a="epmap"><i>🕸</i><span>Epstein network map<small>Every person, company and document, with sources</small></span></button>' : '') +
       '<button class="row" data-a="mark"><i>🔖</i><span>Bookmark this page</span></button>' +
       '<button class="row" data-a="marks"><i>📑</i><span>Bookmarks<small>' + marks + ' saved</small></span></button>' +
       '<button class="row" data-a="note"><i>✎</i><span>Add a note here</span></button>' +
@@ -1221,12 +1222,14 @@ body.book-open #libBanner{display:none}
     else if(a2.indexOf('lth-') === 0){ prefs.theme = a2.slice(4); applyPrefs(); var tb = lib.querySelector('[data-lib-theme]'); if(tb) tb.textContent = 'Page: ' + prefs.theme.replace(/^./, function(x){ return x.toUpperCase(); }); libMenu(); }
     else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
     else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:BOOK.title + ' · ' + SERN(BOOK), text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
+    else if(a2 === 'epmap'){ hideAll(); try{ window.open('epstein-network.html', '_blank', 'noopener'); }catch(er){ location.href = 'epstein-network.html'; } }
     else if(a2 === 'close') closeBook(null);
   });
   function libMenu(){
     openSheet('<h3>Library</h3>' +
       '<button class="row" data-a="close"><i>◉</i><span>Simulation, scene by scene<small>Back to the scene you were on</small></span></button>' +
       '<button class="row" data-a="lib-search"><i>⌕</i><span>Search the library<small>Titles, people, places, years</small></span></button>' +
+      '<button class="row" data-a="epmap"><i>🕸</i><span>Epstein network map<small>The interactive map behind The Epstein Architecture</small></span></button>' +
       '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="lth-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
       '<div class="seg"><span>Reading</span><button data-a="lmd-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="lmd-pages" class="' + (paged() ? 'on' : '') + '">Pages</button></div>' +
       '<button class="row" data-a="lib-tour"><i>?</i><span>How the library works<small>Replay the short tour</small></span></button>');

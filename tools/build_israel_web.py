@@ -53,3 +53,10 @@ open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(s)
 big = max(os.path.getsize(os.path.join(OUT, 'd', f)) for f in os.listdir(os.path.join(OUT, 'd')))
 print('dist/israel-web/index.html: %.2f MB; %d data blocks in %d files (largest %.2f MB)'
       % (os.path.getsize(os.path.join(OUT, 'index.html')) / 1e6, n, files, big / 1e6))
+
+# companion pages linked from the book (the Epstein network map) must sit next to the page
+for extra in ['epstein-network.html']:
+    src = os.path.join(ROOT, extra)
+    if os.path.exists(src):
+        shutil.copy(src, os.path.join(ROOT, 'dist', extra)); shutil.copy(src, os.path.join(OUT, extra))
+        print('copied', extra, 'into dist/ and dist/israel-web/')

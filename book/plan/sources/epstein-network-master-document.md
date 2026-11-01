@@ -1,6 +1,6 @@
 # THE EPSTEIN NETWORK — MASTER RESEARCH DOCUMENT
 ### Full record with citations, verdicts, corrections, and open nodes
-**Observe The System · Status as of October 31, 2026 · Compiled from this thread + live verification**
+**Observe The System · Status as of November 1, 2026 · Compiled from this thread + live verification** (§17 added 1 Nov 2026: the Swiss bank contract, the bank layer, the Rothschild question)
 
 ---
 
@@ -41,6 +41,9 @@ Compiling this against live sources exposed errors in my earlier articles. These
 | Brunel died in "the same prison" as Epstein | Different institutions (Paris, La Santé). Pattern comparison only. |
 | Barak: $2M+ from Epstein entities | Reporting commonly cites about **$1M** into Reporty/Carbyne via Epstein's Southern Trust. Higher figures appear only in secondary compilations. |
 | Recordings are "the live node," unlocated | Evidence is thinner than I framed it. See §8. |
+| Rothschild $25M fee "unverified" | Now **✅/📰**: a 5 Oct 2015 contract between Epstein's Southern Trust and Edmond de Rothschild Holding, fee scaled to the bank's DOJ penalty. See §17. |
+| "The Rothschild family" was a paying client (Kahn via Comer) | Narrowed to **one company**, the Swiss bank Edmond de Rothschild. No other Rothschild bank or family member paid him. See §17. |
+| His money sources never connect except through him | **Barely.** One banker, Paul Morris, carried the account from JPMorgan to Deutsche Bank and later joined Bank of America. See §17. |
 
 ---
 
@@ -343,5 +346,56 @@ Read through a **Solve et Coagula** lens, a network of mutual exposure turns aut
 - Write as "reported" or "alleged": Giuffre-related allegations against named individuals; the Acosta remark; informant claims; anything from secondary compilations.
 - Hold back: intelligence-agency attribution, blackmail-archive claims, and homicide claims, unless new primary evidence appears.
 - Re-check before publishing: status of the D.C. Circuit records case, Maxwell clemency, any new DOJ release, and IG compliance findings.
+
+---
+
+## 17. UPDATE, 1 NOVEMBER 2026: THE SWISS BANK, THE BANK LAYER, THE ROTHSCHILD QUESTION
+
+### 17.1 The Swiss bank contract
+| Item | Finding | Mark | Source |
+|---|---|---|---|
+| DOJ resolution | 18 Dec 2015: Edmond de Rothschild (Suisse) and (Lugano) sign a non-prosecution agreement under the Swiss Bank Program; penalty **$45.245M** | ✅ | DOJ press release, 18 Dec 2015 |
+| The contract | 5 Oct 2015, Southern Trust Co. (Epstein, president) ↔ Edmond de Rothschild Holding S.A.; signed by Ariane de Rothschild; "risk analysis and application of certain algorithms" | 📰 (document reported by several outlets) | Private Banking Magazin; IBTimes; CBS |
+| Fee terms | **$25M if the penalty fell under $75M; $10M if $75–150M**; due within 3 days of settlement | 📰 | Private Banking Magazin |
+| Outcome | Penalty landed in the band that paid the larger fee; transfers reported 17 and 21 Dec 2015 | ✅ penalty / 📰 transfers | DOJ; CBS; PBM |
+| The lawyer | Epstein introduced Kathryn Ruemmler to Ariane de Rothschild (Sept 2014); Ruemmler's Latham & Watkins team represented the bank before DOJ | 📰 | CBS, 14 Jul 2026 |
+| Contact | Correspondence and meetings 2013–19; Reuters found no apparent evidence of criminal wrongdoing by her | 📰 | Reuters, 5 Feb 2026 |
+| Influence on the penalty | Nothing released shows Epstein contacting prosecutors | ❓ | — |
+| Leads only (Le Monde, not independently confirmed) | Rød-Larsen/Colom introduction chain; Barak meetings; Apollo offer for the asset-management arm (2016, not completed); Epstein to Thiel: "I represent the Rothschilds" (statement only) | 📰 lead | Le Monde, 5 Feb 2026 |
+| $15M invoice (EFTA00586695), Deutsche Bank Trust Co. Americas | Invoice is a request, not proof of payment; not independently checked | ❓ | document copy |
+| 2019 FinCEN SAR naming Schwab, Southern Trust, Kahn | A SAR is not a finding | ❓ | document copy |
+
+### 17.2 The bank layer: who decided
+| Bank | Decision-makers in the record | Mark | Source |
+|---|---|---|---|
+| JPMorgan | Dimon (sworn, May 2023): Erdoes and Staley could drop Epstein; GC Stephen Cutler the "ultimate decider"; Cutler 2011: "should not be a client"; kept to 2013 | ✅ testimony | American Banker |
+| JPMorgan board | Derivative suit dismissed by Rakoff (Aug 2023) on demand futility; no board decision on Epstein in the record | ✅ | Paul, Weiss |
+| Deutsche Bank | 2013 approval by email, skipping the reputational-risk committee; RM Paul Morris; approved by Charles Packard; Feb 2015 committee: "business as usual" | ✅ NYDFS / 📰 names (NYT) | NYDFS consent order; Fox Business citing NYT |
+| Bank of America | Suit alleged Black's $170M went through BofA accounts; settled $72.5M, no admission; Black denies | 📰 allegation | Claims Journal |
+| Barclays | Staley CEO 2015–21; FCA lifetime ban upheld | ✅ | PBS; FCA |
+| Parents | Deutsche Bank AG → Deutsche Bank Trust Co. Americas; Bank of America → Merrill Lynch; JPMorgan absorbed Bear Stearns (2008) | ✅ | public record |
+| **Paul Morris** | On Epstein's JPMorgan account c. 2009–12 → Deutsche (late 2012; account followed Sept 2013) → Merrill (2016); contact to Jul 2019; gifts to Epstein and Groff; not accused, not a defendant | 📰 | ThinkAdvisor, May 2026 |
+
+Excluded on purpose: shared institutional shareholders (index funds own stakes in every bank; that link exists regardless of Epstein).
+
+### 17.3 The Rothschild question
+| Person / entity | What the record shows | Mark |
+|---|---|---|
+| Edmond de Rothschild bank / Ariane de Rothschild | §17.1 | ✅/📰 |
+| Benjamin de Rothschild (d. 2021) | Owner of the bank; no document ties him to the contract | ✅ ownership only |
+| Maxwell | No document showing contact with Ariane or the bank. Her own 2025 claim: Lynn Forester de Rothschild introduced Prince Andrew | 📰 claim |
+| Lynn Forester de Rothschild | Accounts of introductions: Dershowitz (his account), Andrew (Maxwell's claim), Mandelson (met Epstein at a de Rothschild house, Martha's Vineyard, per 2026 emails). Epstein's claim of divorce-era financial help: denied ("one hundred percent false"). No payment or business | 📰 / ⚠️ |
+| Annabelle Neilson (d. 2018) | 2010–11 emails offering to arrange women for Epstein; ages not stated. **Not a Rothschild link** | 📰 |
+| Rothschild & Co, David, Jacob, Evelyn | No documented business with Epstein; Jacob appears only in a forwarded family-name message (Le Monde) | ❓ / ⊘ as a network tie |
+
+**Net:** of Kahn's five paying clients, "the Rothschild family" is one Swiss bank. Many sources circulating on this topic are openly antisemitic; none are used.
+
+### 17.4 What the graph now shows (275 nodes, 474 edges)
+- With Epstein and Maxwell removed, the largest connected piece grows from 85 to **106** nodes: the three US banks join through Morris; the Swiss bank joins through the Justice Department (its 2015 NPA beside Epstein's 2008 NPA).
+- Strongest connectors: 2008 NPA (0.109), Lesley Groff (0.108), DOJ (0.103), East 66th Street (0.082), Barak, Little St. James, Paul Morris.
+- Leon Black's money remains a separate island; only the BofA allegation would join it.
+- Remove Morris and the three US banks separate again: one banker's career carries the finding. Re-check him first before print.
+
+**Sources (§17):** DOJ, 18 Dec 2015 (justice.gov/opa/pr/justice-department-announces-joint-resolution-two-banks-under-swiss-bank-program); Private Banking Magazin (private-banking-magazin.de/ariane-de-rothschild-jeffrey-epstein-files/); CBS News, 14 Jul 2026; IBTimes UK, Feb 2026; Reuters via Aaj English, 5 Feb 2026; Le Monde, 5 Feb 2026 (leads); American Banker (Dimon testimony); Paul, Weiss (derivative suit); Radical Compliance (NYDFS order); Fox Business citing NYT, Jul 2020; ThinkAdvisor, 28 May 2026; Claims Journal, 30 Mar 2026; PBS NewsHour, Jul 2026; finews.asia (EdR ownership); Wikipedia, Lynn Forester de Rothschild (citing New Yorker 2019, Vanity Fair 2019, Telegraph 2025, Guardian 2026); PA via AOL, Feb 2026 (Neilson).
 
 *observe.the.system · Observe. Collapse. Reignite.*
