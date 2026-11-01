@@ -2465,6 +2465,50 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "seymour",
+   "name": "Seymour Epstein",
+   "kind": "person",
+   "cluster": "family",
+   "tier": "",
+   "note": "Father. Worked for his father's house-wrecking business, then the NYC Parks Department.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "paula",
+   "name": "Paula Epstein (née Stolofsky)",
+   "kind": "person",
+   "cluster": "family",
+   "tier": "",
+   "note": "Mother. Worked outside the home. Children of European immigrants on both sides.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "passport_files",
+   "name": "Epstein passport files (State Dept)",
+   "kind": "document",
+   "cluster": "intelligence",
+   "tier": "",
+   "note": "Released to ABC News (Jan 2024). Extra passports sought to avoid conflicting Israel/Arab-state visa stamps; 2005 itinerary with a London–Tel Aviv flight booked for 29 March; passports revoked 2016; Austrian passport (other name, Saudi address) found 2019.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "flight_logs",
+   "name": "Pilot flight logs",
+   "kind": "document",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Handwritten logs kept by Epstein's pilots (Maxwell trial exhibit; earlier civil-case exhibit 2002–05; estate records). No released log shows a flight from Israel to the island.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -5163,6 +5207,86 @@
    "type": "oversight",
    "status": "verified",
    "src": "ep7_wyden_blanche2026"
+  },
+  {
+   "f": "seymour",
+   "t": "epstein",
+   "label": "father",
+   "type": "kinship",
+   "status": "verified",
+   "src": "ep1_forward_childhood"
+  },
+  {
+   "f": "paula",
+   "t": "epstein",
+   "label": "mother",
+   "type": "kinship",
+   "status": "verified",
+   "src": "ep1_forward_childhood"
+  },
+  {
+   "f": "seymour",
+   "t": "mark_epstein",
+   "label": "father",
+   "type": "kinship",
+   "status": "verified",
+   "src": "ep1_forward_childhood"
+  },
+  {
+   "f": "paula",
+   "t": "mark_epstein",
+   "label": "mother",
+   "type": "kinship",
+   "status": "verified",
+   "src": "ep1_forward_childhood"
+  },
+  {
+   "f": "passport_files",
+   "t": "epstein",
+   "label": "his passport applications, 1983–2019",
+   "type": "authorship",
+   "status": "verified",
+   "src": "ep7_abc_passports2024"
+  },
+  {
+   "f": "epstein",
+   "t": "israel",
+   "label": "planned travel: 2005 London–Tel Aviv booking; extra passports for Israel/Arab-state stamps",
+   "type": "travel",
+   "status": "verified",
+   "src": "ep7_abc_passports2024"
+  },
+  {
+   "f": "barak",
+   "t": "lsj",
+   "label": "visited the island (his account, 2019)",
+   "type": "visit",
+   "status": "verified",
+   "src": "ep7_bi_barak_island2019"
+  },
+  {
+   "f": "rodgers",
+   "t": "flight_logs",
+   "label": "kept the logs",
+   "type": "authorship",
+   "status": "verified",
+   "src": "Maxwell trial record, 2021"
+  },
+  {
+   "f": "visoski",
+   "t": "flight_logs",
+   "label": "chief pilot",
+   "type": "authorship",
+   "status": "verified",
+   "src": "Maxwell trial record, 2021"
+  },
+  {
+   "f": "gmax",
+   "t": "israel",
+   "label": "reported \"protected\" there (anonymous, Jan 2020); arrested in New Hampshire, Jul 2020",
+   "type": "claim",
+   "status": "not-established",
+   "src": "ep7_jta_maxwell_israel2020; ep7_nhpr_maxwell_arrest2020"
   }
  ]
 }

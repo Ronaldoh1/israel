@@ -267,6 +267,62 @@
      "url": "https://www.finance.senate.gov/ranking-members-news/wyden-sounds-alarm-as-dag-blanche-intervenes-to-conceal-details-of-mystery-epstein-investigation"
     }
    ]
+  },
+  {
+   "id": "ep7_travel",
+   "stage": "ep7",
+   "topic": "Travel to Israel, flight records, family",
+   "claims": [
+    {
+     "text": "State Department passport files (ABC News FOIA, 15 Jan 2024): Epstein sought additional passports to avoid conflicting visa stamps when travelling to Israel and certain Arab states (Jordan, Saudi Arabia); a 2005 itinerary submitted with an application included a London–Tel Aviv flight booked for 29 March; passports revoked 2016 under International Megan's Law; an Austrian passport with his photo, another name and a Saudi address found in 2019.",
+     "strength": "documented",
+     "sources": [
+      "ep7_abc_passports2024"
+     ]
+    },
+    {
+     "text": "Barak told the Daily Beast (July 2019) he visited Epstein's island and Manhattan house, met him 'more than 10 times and much less than a hundred times', and 'never met Epstein in the company of women or young girls'.",
+     "strength": "documented",
+     "sources": [
+      "ep7_bi_barak_island2019"
+     ]
+    },
+    {
+     "text": "Jan 2020: an anonymous source told the New York Post Maxwell was 'protected' in several countries including Israel (JTA). She was arrested by the FBI in Bradford, New Hampshire, on 2 July 2020.",
+     "strength": "reported",
+     "sources": [
+      "ep7_jta_maxwell_israel2020",
+      "ep7_nhpr_maxwell_arrest2020"
+     ]
+    },
+    {
+     "text": "Third-party flight compilation (tommycarstensen.com) lists 15 TLV legs 2008–2018, flagged by the compiler as pseudo-code legs carried from a spreadsheet; not a primary record. Lead only.",
+     "strength": "lead",
+     "sources": []
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep7_abc_passports2024",
+     "label": "ABC News, Records show Jeffrey Epstein's requests for multiple passports, travels to Africa and Middle East (15 Jan 2024)",
+     "url": "https://abcnews.com/US/records-show-jeffrey-epsteins-requests-multiple-passports-travels/story?id=106327253"
+    },
+    {
+     "key": "ep7_bi_barak_island2019",
+     "label": "Business Insider, Israel's former prime minister says he visited Epstein's island but never partied with him (July 2019, citing the Daily Beast)",
+     "url": "https://www.businessinsider.in/israels-former-prime-minister-says-he-visited-convicted-sex-offender-jeffrey-epsteins-private-caribbean-island-but-never-partied-with-him-or-met-younger-girls/articleshow/70243720.cms"
+    },
+    {
+     "key": "ep7_jta_maxwell_israel2020",
+     "label": "JTA, Ghislaine Maxwell reportedly hides in Israel (6 Jan 2020, citing the New York Post)",
+     "url": "https://jta.org/quick-reads/ghislaine-maxwell-british-socialite-accused-of-helping-jeffrey-epstein-reportedly-hides-in-israel"
+    },
+    {
+     "key": "ep7_nhpr_maxwell_arrest2020",
+     "label": "NHPR, Ghislaine Maxwell arrested in N.H. (2 Jul 2020)",
+     "url": "https://www.nhpr.org/nh-news/2020-07-02/ghislaine-maxwell-accused-of-grooming-victims-for-jeffrey-epstein-arrested-in-n-h"
+    }
+   ]
   }
  ]
 }

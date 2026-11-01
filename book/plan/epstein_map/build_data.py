@@ -588,6 +588,22 @@ e('dea_memo','epstein','names him and 14 redacted others','investigation',W,'ep7
 n('wyden','Ron Wyden','person','politics','US Senator (Finance Committee ranking member). Sought the unredacted DEA memo.','',[])
 e('wyden','dea_memo','requested it; says Blanche intervened','oversight',V,'ep7_wyden_blanche2026')
 
+# --- family and travel, 31 Oct 2026
+n('seymour','Seymour Epstein','person','family','Father. Worked for his father\'s house-wrecking business, then the NYC Parks Department.','',[])
+n('paula','Paula Epstein (née Stolofsky)','person','family','Mother. Worked outside the home. Children of European immigrants on both sides.','',[])
+e('seymour','epstein','father','kinship',V,'ep1_forward_childhood')
+e('paula','epstein','mother','kinship',V,'ep1_forward_childhood')
+e('seymour','mark_epstein','father','kinship',V,'ep1_forward_childhood')
+e('paula','mark_epstein','mother','kinship',V,'ep1_forward_childhood')
+n('passport_files','Epstein passport files (State Dept)','document','intelligence','Released to ABC News (Jan 2024). Extra passports sought to avoid conflicting Israel/Arab-state visa stamps; 2005 itinerary with a London–Tel Aviv flight booked for 29 March; passports revoked 2016; Austrian passport (other name, Saudi address) found 2019.','',[])
+e('passport_files','epstein','his passport applications, 1983–2019','authorship',V,'ep7_abc_passports2024')
+e('epstein','israel','planned travel: 2005 London–Tel Aviv booking; extra passports for Israel/Arab-state stamps','travel',V,'ep7_abc_passports2024')
+e('barak','lsj','visited the island (his account, 2019)','visit',V,'ep7_bi_barak_island2019')
+n('flight_logs','Pilot flight logs','document','operations','Handwritten logs kept by Epstein\'s pilots (Maxwell trial exhibit; earlier civil-case exhibit 2002–05; estate records). No released log shows a flight from Israel to the island.','',[])
+e('rodgers','flight_logs','kept the logs','authorship',V,'Maxwell trial record, 2021')
+e('visoski','flight_logs','chief pilot','authorship',V,'Maxwell trial record, 2021')
+e('gmax','israel','reported "protected" there (anonymous, Jan 2020); arrested in New Hampshire, Jul 2020','claim',X,'ep7_jta_maxwell_israel2020; ep7_nhpr_maxwell_arrest2020')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
