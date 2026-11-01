@@ -5772,6 +5772,25 @@ body.book-open #libBanner{display:none}
 #bookView[data-theme="night"]{--c-navy:#9DB8EA;--c-teal:#73C6C3;--c-gold:#E2B562;--c-green:#93CF9C;--c-red:#EE9A86;--c-plum:#CDABE6;--c-rust:#F0A06A;--c-slate:#B0B6C2}
 /* paper: a faint fibre texture and a soft edge, like a printed page */
 #bookView .bk-scroll,#bookView .bk-lib{background-color:var(--paper);background-image:none}
+/* the Epstein volume: a network-map tag on the cover and a call-to-action under it */
+.cv .maptag{position:absolute;top:0;right:9%;z-index:3;width:24%;min-width:30px;padding:9% 0 13%;background:#B8432F;color:#FBEEDC;font:700 clamp(6px,1.5vw,8.5px)/1.15 system-ui,sans-serif;letter-spacing:.06em;text-align:center;clip-path:polygon(0 0,100% 0,100% 100%,50% 86%,0 100%);box-shadow:0 2px 6px rgba(0,0,0,.35);overflow:hidden}
+.cv .maptag b{display:block;font-size:1.7em;line-height:1;margin-bottom:3px}
+.cv .maptag::after{content:'';position:absolute;inset:-20% -60%;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);transform:translateY(-120%);animation:mtShine 3.6s ease-in-out 1.2s 3}
+@keyframes mtShine{0%{transform:translateY(-120%)}45%,100%{transform:translateY(120%)}}
+.lb-metas .lb-map{display:inline-flex;align-items:center;gap:6px;margin-top:7px;padding:6px 11px 6px 9px;border:1px solid #B8432F;border-radius:999px;background:color-mix(in srgb,#B8432F 10%,transparent);color:#B8432F;font:650 12px/1.2 system-ui,sans-serif;cursor:pointer;text-align:left;animation:mapCall 2.4s ease-in-out .8s 4}
+#bookView[data-theme="night"] .lb-metas .lb-map{color:#F0A28F;border-color:#F0A28F}
+.lb-metas .lb-map:hover{background:color-mix(in srgb,#B8432F 18%,transparent)}
+.lb-metas .lb-map:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@keyframes mapCall{0%,100%{box-shadow:0 0 0 0 rgba(184,67,47,.45)}50%{box-shadow:0 0 0 7px rgba(184,67,47,0)}}
+/* turning pages like a book: the page follows the finger, a fold shadow rides the turning edge */
+.bk-curl{position:absolute;top:0;bottom:0;z-index:3;width:46px;pointer-events:none;opacity:0;transition:opacity .18s}
+.bk-curl.on{opacity:1}
+#bookView.dragging .bk-page{user-select:none;-webkit-user-select:none;cursor:grabbing}
+.bk-curl.fwd{background:linear-gradient(90deg,rgba(60,40,15,0) 0,rgba(60,40,15,.16) 55%,rgba(255,250,240,.55) 80%,rgba(60,40,15,.28) 100%)}
+.bk-curl.back{background:linear-gradient(270deg,rgba(60,40,15,0) 0,rgba(60,40,15,.16) 55%,rgba(255,250,240,.55) 80%,rgba(60,40,15,.28) 100%)}
+#bookView[data-theme="night"] .bk-curl.fwd{background:linear-gradient(90deg,transparent,rgba(0,0,0,.35) 60%,rgba(255,255,255,.12) 85%,rgba(0,0,0,.45))}
+#bookView[data-theme="night"] .bk-curl.back{background:linear-gradient(270deg,transparent,rgba(0,0,0,.35) 60%,rgba(255,255,255,.12) 85%,rgba(0,0,0,.45))}
+@media (prefers-reduced-motion:reduce){.cv .maptag::after,.lb-metas .lb-map{animation:none}.bk-curl{display:none}}
 .bk-edges{position:absolute;inset:0;z-index:2;pointer-events:none;display:none}
 #bookView:not(.lib) .bk-edges{display:block;background:radial-gradient(ellipse at center,transparent 70%,rgba(90,60,20,.035) 100%)}
 #bookView[data-theme="night"]:not(.lib) .bk-edges{background:radial-gradient(ellipse at center,transparent 62%,rgba(0,0,0,.25) 100%)}
@@ -6710,7 +6729,7 @@ body.book-open #libBanner{display:none}
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
     var col = VCLOTH[b.id] || CLOTH[(b.vol - 1) % CLOTH.length];
-    return '<div class="cv ' + (cls || '') + (b.ser ? ' sr' : '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true"><div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.ser ? ' sr' : '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true">' + (b.id === 'epstein' && b.status === 'ready' ? '<span class="maptag"><b>🕸</b>NETWORK MAP</span>' : '') + '<div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function plain(t){ return String(t == null ? '' : t).replace(/&(amp|lt|gt|quot|#39|nbsp);/g, function(m, x){ return {amp:'&',lt:'<',gt:'>',quot:'"','#39':"'",nbsp:' '}[x]; }); }
@@ -6967,7 +6986,9 @@ body.book-open #libBanner{display:none}
   }
   function showPage(n, instant){
     n = Math.max(0, Math.min(pg.total - 1, n)); pg.cur = n; scroller.scrollLeft = 0;
-    page.style.transition = (instant || RM) ? 'none' : 'transform .32s cubic-bezier(.2,.7,.2,1)';
+    var from = pg.cur0 == null ? n : pg.cur0; pg.cur0 = n;
+    page.style.transition = (instant || RM) ? 'none' : 'transform .46s cubic-bezier(.3,.6,.2,1)';
+    if(!instant && !RM && from !== n){ var dir = n > from ? -1 : 1, r = scroller.getBoundingClientRect(); curlAt(dir * (r.width * .5)); curl.style.transition = 'left .46s cubic-bezier(.3,.6,.2,1), opacity .46s'; requestAnimationFrame(function(){ curl.style.left = (dir < 0 ? r.left - 46 : r.right) + 'px'; curl.style.opacity = '0'; }); setTimeout(function(){ curl.style.transition = ''; curl.style.opacity = ''; curl.classList.remove('on'); }, 480); }
     page.style.transform = 'translateX(' + (-n * pg.w) + 'px)';
     onScroll();
   }
@@ -7051,8 +7072,8 @@ body.book-open #libBanner{display:none}
     view.classList.remove('lib'); render(k, sec); if(y != null){ if(paged()) showPage(y, true); else scroller.scrollTop = y; } onScroll();
     var same = prevBook && prevBook[0] === bi;   /* moving within one book replaces the entry; a new book (from the shelf or a link) adds one, so Back returns */
     nav('#book=' + encodeURIComponent(curSec || BOOK.chapters[k].sections[0].s), !same, {ots:1, fromLib:wasLib});
-    var hk = 'ots_book_hint_' + (paged() ? 'pages' : 'scroll');
-    if(!ls(hk)){ ls(hk, 1); var hn = $('bkHint'); hn.textContent = paged() ? 'Tap the right side to turn the page, the middle for the menu' : 'Double-tap the page to hide or show the menu'; hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
+    var hk = 'ots_book_hint_' + (paged() ? 'pages2' : 'scroll');
+    if(!ls(hk)){ ls(hk, 1); var hn = $('bkHint'); hn.textContent = paged() ? 'Drag the page, or tap its right edge, to turn it like a book' : 'Double-tap the page to hide or show the menu'; hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
     setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
   }
   function openBook(target){
@@ -7090,7 +7111,7 @@ body.book-open #libBanner{display:none}
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
-        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
+        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (b.id === 'epstein' ? '<button class="lb-map" type="button" data-epmap="1" aria-label="Explore the Epstein network map">🏷️ 🕸 Network map</button>' : '') + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }
     return h;
   }
@@ -7168,6 +7189,7 @@ body.book-open #libBanner{display:none}
   window.libraryTour = function(){ if(!view.classList.contains('on')) openBook(null); setTimeout(function(){ libTour(true); }, 400); };
   window.openLibrary = function(){ openBook(null); };
   lib.addEventListener('click', function(e){
+    if(e.target.closest('[data-epmap]')){ openEpMap(); return; }
     var b = e.target.closest('[data-b]'); if(b){ if(b.classList.contains('meta')) b = lib.querySelector('.lb-book[data-b="' + b.getAttribute('data-b') + '"]'); var bk = BOOKS[+b.getAttribute('data-b')];
       if(bk.status === 'ready') openReader(+b.getAttribute('data-b'), null, null, true);
       else openSheet('<h3>' + esc(bk.title) + '</h3><p style="font-size:15px;line-height:1.5;margin:0 0 10px">Volume ' + roman(bk.vol) + ' is being written. Its ' + bk.count + ' parts are already in the simulation, each with its sources.</p><div class="bk-btns"><button data-a="dismiss">Back to the library</button><button class="pri" data-sim-open="' + esc(bk.first) + '">Open it in the simulation</button></div>');
@@ -7181,7 +7203,26 @@ body.book-open #libBanner{display:none}
 
   /* ---------- immersive mode: double-tap the page ---------- */
   var lastTap = 0, lastX = 0, lastY2 = 0, downX = 0, downY = 0;
-  scroller.addEventListener('pointerdown', function(e){ downX = e.clientX; downY = e.clientY; });
+  scroller.addEventListener('pointerdown', function(e){ downX = e.clientX; downY = e.clientY; dragT = Date.now(); drag = 0; });
+  /* page by page: the page follows the finger, with a fold shadow on the turning edge, like a printed page */
+  var drag = 0, dragT = 0, curl = document.createElement('div'); curl.className = 'bk-curl'; curl.setAttribute('aria-hidden', 'true'); view.appendChild(curl);
+  function curlAt(dx){
+    if(RM || !dx){ curl.classList.remove('on'); return; }
+    var r = scroller.getBoundingClientRect(), fwd = dx < 0;
+    curl.className = 'bk-curl on ' + (fwd ? 'fwd' : 'back');
+    curl.style.top = r.top + 'px'; curl.style.bottom = (window.innerHeight - r.bottom) + 'px';
+    curl.style.left = (fwd ? r.right + dx - 46 : r.left + dx) + 'px';
+  }
+  scroller.addEventListener('pointermove', function(e){
+    if(!paged() || !e.buttons && e.pointerType === 'mouse' || sheet.classList.contains('on') || e.target.closest('textarea,input')) return;
+    var dx = e.clientX - downX, dy = e.clientY - downY;
+    if(!drag){ if(Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.2) return; drag = 1; view.classList.add('dragging'); try{ window.getSelection().removeAllRanges(); }catch(er){} try{ scroller.setPointerCapture(e.pointerId); }catch(er){} }
+    var edge = (pg.cur === 0 && dx > 0 && curCh === 0) || (pg.cur >= pg.total - 1 && dx < 0 && !BOOK.chapters[curCh + 1]);
+    var off = edge ? dx * .25 : dx;
+    page.style.transition = 'none'; page.style.transform = 'translateX(' + (-pg.cur * pg.w + off) + 'px)';
+    curlAt(off);
+  });
+  scroller.addEventListener('pointercancel', function(){ if(drag){ drag = 0; view.classList.remove('dragging'); curlAt(0); showPage(pg.cur); } });
   scroller.addEventListener('pointerup', function(e){
     if(paged()) return pagedTap(e);
     if(e.target.closest('a,button,.nd,figure,.bk-two')) return;
@@ -7193,7 +7234,8 @@ body.book-open #libBanner{display:none}
 
   function pagedTap(e){
     if(e.target.closest('.tw,textarea,input')) return;
-    var dx = e.clientX - downX, dy = e.clientY - downY;
+    var dx = e.clientX - downX, dy = e.clientY - downY, v = Math.abs(dx) / Math.max(1, Date.now() - dragT);
+    if(drag){ drag = 0; view.classList.remove('dragging'); curlAt(0); try{ window.getSelection().removeAllRanges(); }catch(er){} if(Math.abs(dx) > pg.w * .18 || (v > .45 && Math.abs(dx) > 30)) turn(dx < 0 ? 1 : -1); else showPage(pg.cur); return; }
     if(Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.2){ turn(dx < 0 ? 1 : -1); return; }
     if(Math.abs(dx) > 10 || Math.abs(dy) > 10) return;
     if(e.target.closest('a,button,.nd,summary,details,.bk-n,.bk-x')) return;
@@ -7254,7 +7296,7 @@ body.book-open #libBanner{display:none}
       '<button class="row" data-a="note"><i>✎</i><span>Add a note here</span></button>' +
       '<button class="row" data-a="notes"><i>🗒</i><span>My notes<small>' + notes + ' saved · export as a text file</small></span></button>' +
       '<button class="row" data-a="chs"><i>⇆</i><span>Jump to a ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + '<small>Every ' + (BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter') + ' with its page number</small></span></button>' +
-      '<div class="seg"><span>Reading</span><button data-a="md-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="md-pages" class="' + (paged() ? 'on' : '') + '">Pages</button></div>' +
+      '<div class="seg"><span>Reading</span><button data-a="md-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="md-pages" class="' + (paged() ? 'on' : '') + '">Turn pages</button></div>' +
       '<div class="seg"><span>Text size</span><button data-a="fs-">A−</button><button data-a="fs+">A+</button></div>' +
       '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="th-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
       '<button class="row" data-a="share"><i>↗</i><span>Share this section</span></button>' +
@@ -7312,16 +7354,17 @@ body.book-open #libBanner{display:none}
     else if(a2.indexOf('lth-') === 0){ prefs.theme = a2.slice(4); applyPrefs(); var tb = lib.querySelector('[data-lib-theme]'); if(tb) tb.textContent = 'Page: ' + prefs.theme.replace(/^./, function(x){ return x.toUpperCase(); }); libMenu(); }
     else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
     else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:BOOK.title + ' · ' + SERN(BOOK), text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
-    else if(a2 === 'epmap'){ hideAll(); try{ window.open('epstein-network.html', '_blank', 'noopener'); }catch(er){ location.href = 'epstein-network.html'; } }
+    else if(a2 === 'epmap'){ hideAll(); openEpMap(); }
     else if(a2 === 'close') closeBook(null);
   });
+  function openEpMap(){ var w = null; try{ w = window.open('epstein-network.html', '_blank'); if(w) w.opener = null; }catch(er){} if(!w) location.href = 'epstein-network.html'; }
   function libMenu(){
     openSheet('<h3>Library</h3>' +
       '<button class="row" data-a="close"><i>◉</i><span>Simulation, scene by scene<small>Back to the scene you were on</small></span></button>' +
       '<button class="row" data-a="lib-search"><i>⌕</i><span>Search the library<small>Titles, people, places, years</small></span></button>' +
       '<button class="row" data-a="epmap"><i>🕸</i><span>Epstein network map<small>The interactive map behind The Epstein Architecture</small></span></button>' +
       '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="lth-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
-      '<div class="seg"><span>Reading</span><button data-a="lmd-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="lmd-pages" class="' + (paged() ? 'on' : '') + '">Pages</button></div>' +
+      '<div class="seg"><span>Reading</span><button data-a="lmd-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="lmd-pages" class="' + (paged() ? 'on' : '') + '">Turn pages</button></div>' +
       '<button class="row" data-a="lib-tour"><i>?</i><span>How the library works<small>Replay the short tour</small></span></button>');
   }
   $('bkFab').addEventListener('click', function(){ if(sheet.classList.contains('on')) hideAll(); else if(view.classList.contains('lib')) libMenu(); else menu(); });
