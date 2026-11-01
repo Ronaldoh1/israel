@@ -706,6 +706,10 @@ e('doj','victims_exposed','released unredacted','official act',V,'ep9_wsj_43; ep
 e('massie','efta','discharge petition; co-author','oversight',V,'efta_wiki')
 e('khanna','efta','introduced; sought a monitor (denied Jan 2026)','oversight',V,'ep9_fox_monitor')
 
+n('jm_policy','Justice Manual 9-27.760 (updated Feb 2024)','document','release','DOJ policy against publicly identifying uncharged people absent senior approval; weighs their privacy and reputation against the public\'s need to know. Applied to records the Act ordered released.','',[])
+e('doj','jm_policy','its own policy','authorship',V,'ep9_emptywheel_jm2024')
+e('jm_policy','efta','in tension: the Act bars redaction for reputational harm','official act',V,'ep8_govinfo_act; ep9_emptywheel_jm2024')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP

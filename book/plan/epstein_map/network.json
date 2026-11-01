@@ -2886,6 +2886,17 @@
    ],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "jm_policy",
+   "name": "Justice Manual 9-27.760 (updated Feb 2024)",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "DOJ policy against publicly identifying uncharged people absent senior approval; weighs their privacy and reputation against the public's need to know. Applied to records the Act ordered released.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -6160,6 +6171,22 @@
    "type": "oversight",
    "status": "verified",
    "src": "ep9_fox_monitor"
+  },
+  {
+   "f": "doj",
+   "t": "jm_policy",
+   "label": "its own policy",
+   "type": "authorship",
+   "status": "verified",
+   "src": "ep9_emptywheel_jm2024"
+  },
+  {
+   "f": "jm_policy",
+   "t": "efta",
+   "label": "in tension: the Act bars redaction for reputational harm",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep8_govinfo_act; ep9_emptywheel_jm2024"
   }
  ]
 }
