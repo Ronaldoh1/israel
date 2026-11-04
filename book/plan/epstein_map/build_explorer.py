@@ -50,7 +50,10 @@ def build(base):
     D = {'built': d['built'], 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
     t = open(os.path.join(HERE, 'graph_explorer_template.html')).read()
     return t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
-open(os.path.join(REPO, 'epstein-network.html'), 'w').write('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + build('').replace('<title>', '<title>', 1) + '\n</html>\n')
+_page = build('')
+if not _page.lstrip().lower().startswith('<!doctype'):   # the v1 template was a fragment; the Library of Truth template is a full page
+    _page = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + _page + '\n</html>\n'
+open(os.path.join(REPO, 'epstein-network.html'), 'w').write(_page)
 if '--artifact' in sys.argv:
     open(sys.argv[sys.argv.index('--artifact') + 1], 'w').write(build(None))
 linked = sum(1 for e in d['edges'] for r in resolve(e['src'], '') if r['u'])
