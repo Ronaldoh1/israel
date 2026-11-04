@@ -165,6 +165,27 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
 .paths li{margin:5px 0;font-size:13px}
 .side ol{padding-left:20px}
 
+
+/* ---------- desktop: the graph gets the height; tools live at the top of the side column ---------- */
+.lede{display:none}
+.about p{margin:0 0 10px;color:color-mix(in srgb,var(--ink) 88%,var(--muted));line-height:1.55}
+@media (min-width:821px){
+  .hd{display:flex;align-items:center;gap:18px;padding:10px 16px}
+  .brand{flex:0 1 auto}
+  .modes{margin-top:0;flex:1;justify-content:flex-end}
+  .toolsBtn{display:none}
+  .stage{grid-template-columns:minmax(0,1fr) 420px;padding:12px 16px 14px}
+  .sheet .toolsWrap{flex:none;grid-template-rows:1fr;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--panel-2) 55%,transparent)}
+  .sheet .toolsIn{overflow:visible}
+  .sheet .tools{padding:12px 16px 14px;gap:10px 12px}
+  .sheet .tools .field{flex:1 1 100%!important}
+  .sheet .tools .field[for="root"]{flex:1 1 58%!important}
+  .sheet .tools .field[for="depth"]{flex:1 1 30%!important}
+  .callout{display:none}
+  .sheet .sel{padding-top:8px;padding-bottom:8px}
+  .sheet .chip span,.sheet .ghost{padding:6px 11px;font-size:12.5px}
+}
+
 /* ---------- phone ---------- */
 @media (max-width:820px){
   .hd{padding:10px 14px 8px}
@@ -172,7 +193,7 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
   .stage{display:block;padding:0}
   .board{position:absolute;inset:0;border:0;border-radius:0}
   .tools{flex-direction:column;align-items:stretch}
-  .field{width:100%}
+  .field{width:100%;flex:none!important}
   .zoom{top:70px}
   .sheet{position:absolute;left:0;right:0;bottom:0;z-index:5;border-radius:22px 22px 0 0;border-width:1px 0 0;height:84px;
     transition:height .38s cubic-bezier(.2,.85,.25,1);box-shadow:0 -20px 50px rgba(0,0,0,.45);background:var(--panel)}
@@ -503,9 +524,10 @@ function side(id,msg){
   $('side').innerHTML=h;
   $('side').querySelectorAll('[data-go]').forEach(el=>{ const go=ev=>{ if(ev&&ev.target.closest('a')) return; pick(el.dataset.go); }; el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
 }
+const ABOUT=[...document.querySelectorAll('.lede')].map(p=>`<p>${p.innerHTML}</p>`).join('');
 function intro(){
   const L=findLoops();
-  let h=`<div class="kind">How to use</div><h2>Start at a node, expand outward</h2>
+  let h=`<div class="kind">About this map</div><div class="about">${ABOUT}</div><div class="sec">How to use</div><h2>Start at a node, expand outward</h2>
   <p class="note"><b>Expand</b>: tap a node to add its neighbours. <b>Walk upward</b>: tap a node to light every documented line that sent it something, back to where the record stops. <b>Path between two</b>: tap two nodes for the shortest documented chain. <b>Remove a node</b>: take someone out and see which of their connections still reach the people above by another route.</p>
   <div class="rule">An edge is a document: a payment, contract, email, flight, appointment or filing. Solid = verified; dashed = lead to verify; thick purple = withheld (a document known to exist and not released); dotted red = not established, shown only when switched on and never used to walk.</div>
   <div class="sec">${L.length} loops in verified ties (start node left out)</div><ol class="loops">`;
@@ -593,6 +615,9 @@ const tb=$('toolsBtn'), tw=$('toolsWrap');
 function toggleTools(open){ tw.classList.toggle('open',open); tb.setAttribute('aria-expanded',open); setTimeout(()=>{ placeCallout(); },320); }
 tb.onclick=()=>toggleTools(!tw.classList.contains('open'));
 toggleTools(false);
+const hdEl=document.querySelector('.hd'), toolsHome=$('sheet');
+function placeTools(){ if(isMobile()){ if(tw.parentNode!==hdEl){ hdEl.appendChild(tw); toggleTools(false); } } else if(tw.parentNode!==toolsHome){ toolsHome.insertBefore(tw, toolsHome.firstChild); tw.classList.add('open'); } }
+placeTools(); matchMedia('(max-width:820px)').addEventListener('change',()=>{ placeTools(); fit(false); });
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
 new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 const T0=Date.now(); let rt=null; new ResizeObserver(()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(Date.now()-T0<2500) fit(false); if(sim){ sim.force('center',d3.forceCenter(svg.node().clientWidth/2,svg.node().clientHeight/2)); } placeCallout(); },120); }).observe($('board'));
