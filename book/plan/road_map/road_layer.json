@@ -1,0 +1,15 @@
+{
+ "_note": "Curated edges and corrections for the 1948 network. Every edge carries the book sentence and its library citation keys.",
+ "remove_edges": [["balfour", "walter_r", "correspondence"]],
+ "edges": [
+  {"f": "balfour", "t": "walter_r", "type": "correspondence", "status": "verified", "src": "wb_bl_addms41178", "label": "On 2 November 1917 Arthur Balfour sent his declaration to \"Lord Rothschild\" at 148 Piccadilly, and asked him to pass it to the Zionist Federation."},
+  {"f": "weizmann", "t": "balfour_decl", "type": "drafting", "status": "verified", "src": "schama_two_rothschilds", "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."},
+  {"f": "sokolow", "t": "balfour_decl", "type": "drafting", "status": "verified", "src": "schama_two_rothschilds", "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."},
+  {"f": "sykes", "t": "balfour_decl", "type": "drafting", "status": "verified", "src": "schama_two_rothschilds", "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."},
+  {"f": "balfour", "t": "balfour_decl", "type": "official act", "status": "verified", "src": "schama_two_rothschilds; w_sinai_palestine", "label": "Signed by Arthur Balfour, Foreign Secretary, on 2 November 1917."},
+  {"f": "arab_congress", "t": "arab_exec", "type": "founding", "status": "verified", "src": "rs_mca_palquest_musakazim", "label": "The Third Congress, at Haifa in December 1920, declared the Balfour Declaration null and void and created a nine-member Arab Executive Committee, with Musa Kazim al-Husseini as its chairman."},
+  {"f": "doj", "t": "azc", "type": "official act", "status": "verified", "src": "azc_fara_doj", "label": "The Internal Security Section of the Justice Department, under Attorney General Robert Kennedy, ordered the American Zionist Council to register as an agent of a foreign principal under the Foreign Agents Registration Act."},
+  {"f": "bengurion", "t": "provisional", "type": "leadership", "status": "verified", "src": "wiki_altalena_affair", "label": "Twelve days after the declaration of independence, the provisional government headed by David Ben-Gurion issued an order establishing the Israel Defense Forces."},
+  {"f": "bengurion", "t": "decl_indep", "type": "official act", "status": "verified", "src": "trumanlibrary_recognition", "label": "Eleven minutes after David Ben-Gurion declared the State of Israel in Tel Aviv, the United States extended de facto recognition."}
+ ]
+}

@@ -55,7 +55,7 @@ print('dist/israel-web/index.html: %.2f MB; %d data blocks in %d files (largest 
       % (os.path.getsize(os.path.join(OUT, 'index.html')) / 1e6, n, files, big / 1e6))
 
 # companion pages linked from the book (the Epstein network map) must sit next to the page
-for extra in ['epstein-network.html']:
+for extra in ['epstein-network.html', 'road-network.html']:
     src = os.path.join(ROOT, extra)
     if os.path.exists(src):
         shutil.copy(src, os.path.join(ROOT, 'dist', extra)); shutil.copy(src, os.path.join(OUT, extra))
