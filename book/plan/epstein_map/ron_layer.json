@@ -1,0 +1,2491 @@
+{
+ "_note": "Ron's hand-built additions (Library of Truth graph, 4 Nov 2026). Applied by build_data.py after its own nodes/edges. Re-extract with merge_ron.py when Ron sends a new graph.",
+ "nodes": [
+  {
+   "id": "network_functions",
+   "name": "Organized-network operating functions (comparison framework)",
+   "kind": "document",
+   "cluster": "comparative",
+   "tier": "methodology",
+   "note": "Analytical checklist derived from documented cartel investigations: command/delegation; communications; finance; logistics; recruitment/exploitation; protection/influence; and post-capture evidence. This is a research framework, not a claim that every function is established in the Epstein record.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_index",
+   "name": "The Epstein Index (independent archive)",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "Independent open-source reading room that collects DOJ, House Oversight, and court releases; OCRs and indexes records; links people/events to original PDFs. OCR and automated summaries can err; original document is authoritative. Not a finding of wrongdoing.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_transparency",
+   "name": "Epstein Transparency Project",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "Independent project parsing DOJ Datasets 9 and 11 into person searches, timelines, and email-network visualizations. Inclusion/contact is not evidence of wrongdoing; verify parsed headers and every edge against source PDFs.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "yirah_archive",
+   "name": "Yirah Epstein Search",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "Search interface for a large Epstein document corpus and email archive. OCR/search results are discovery aids; verify claims against original records and distinguish mentions from direct contact.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_project_archive",
+   "name": "The Epstein Project (archive/search)",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "Independent archive with semantic search, document discovery, and investigative reports. Treat summaries and AI retrieval as leads; cite underlying documents for graph edges.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_document_archive",
+   "name": "Epstein Document Archive",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "This archive was retired in May 2026; its former indexed records may still be useful as leads, but do not treat the service as currently active.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_docs_archive",
+   "name": "Epstein Archive (OCR reading room)",
+   "kind": "institution",
+   "cluster": "research",
+   "tier": "research-resource",
+   "note": "Independent searchable OCR archive of public records with links to source scans. Use for discovery and return to original scans for verification.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_2018_trust",
+   "name": "Jeffrey E. Epstein 2018 Trust",
+   "kind": "trust",
+   "cluster": "finance",
+   "tier": "documented-entity",
+   "note": "Trust agreement dated 8 May 2018. The agreement names Jeffrey Epstein as grantor and Darren Indyke, Richard Kahn, and Kathryn Ruemmler as trustees. A trustee role is a fiduciary/legal role; this record alone does not establish knowledge of or participation in abuse.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_2019_trust",
+   "name": "Jeffrey E. Epstein 2019 Trust",
+   "kind": "trust",
+   "cluster": "finance",
+   "tier": "documented-entity",
+   "note": "Trust agreement dated 18 January 2019. It names Jeffrey Epstein as grantor and Darren Indyke and Richard Kahn as trustees, and expressly revokes the 2018 trust. The trust instrument records intended fiduciary roles and provisions, not proof that every bequest or payment was ultimately made.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "karyna_shuliak",
+   "name": "Karyna Shuliak",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "association",
+   "note": "Named in reporting on Deutsche Bank KYC records as added to the Butterfly Trust beneficiary roster on 9 December 2014, replacing Ghislaine Maxwell. This is a trust/financial relationship; it does not by itself establish knowledge of or participation in crimes.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "pent_holdings",
+   "name": "Pent Holdings, Inc.",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Named in the 2015 all-family-entities schedule: Leon D. Black is listed as director, shareholder and president; Debra R. Black as secretary. The schedule explicitly says incorporation documents were not available and does not establish shareholder powers. The 2017 art inventory lists Pent Holdings as owner of J.M.W. Turner’s Seascape: Folkestone.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ap_narrows_lp",
+   "name": "AP Narrows LP",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Delaware limited partnership documented in its 2016 partnership agreement. Partners include Leon D. Black, the APO-01 Trust, the APO-B Trust and Narrows Holdings LLC; Narrows Holdings LLC is identified as Class A general partner. The agreement records contributed art by all partners except APO-B Trust.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "narrows_holdings",
+   "name": "Narrows Holdings LLC",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Leon D. Black is identified as sole member and authorized person in the 2016 AP Narrows partnership agreement. It is also listed as a partner and Class A general partner of AP Narrows LP.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "apo1_trust",
+   "name": "APO-01 Trust",
+   "kind": "institution",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Trust created under the APO-01 Declaration. Listed as a partner and art contributor to AP Narrows LP in the 2016 partnership agreement; a separate 2016 art inventory is headed APO-01 Declaration.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "apo2_trust",
+   "name": "APO-02 Trust",
+   "kind": "institution",
+   "cluster": "finance",
+   "tier": "",
+   "note": "APO2 Declaration / trust appears in the September 2014 proposed Narrows restructuring as a potential member and Class B manager; distinguish proposal from executed agreement.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "apo_b_trust",
+   "name": "APO-B Trust",
+   "kind": "institution",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Trust created under a 20 May 2015 trust agreement; named as a partner in the 2016 AP Narrows partnership agreement. That agreement expressly excludes APO-B Trust from the partners who contributed art.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "haze_trust",
+   "name": "The Haze Trust",
+   "kind": "institution",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Named in a November 2016 transaction memorandum and email chain concerning artwork purchases. The record includes wire instructions and an email approving a $30 million wire; instructions alone do not establish that funds cleared or identify the ultimate buyer.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ap_narrows_account",
+   "name": "AP Narrows Holding LP / BMO Trustee account",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Trust-account name shown as the destination for $25 million wire instructions in the November 2016 Haze Trust record. Do not assume this account label is identical to AP Narrows LP.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "elysium",
+   "name": "Elysium Management LLC",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Management company whose January 2016 email describes administrative-service agreements for family trusts and entities. The email lists Pent Holdings among the proposed principals and was sent to Jeffrey Epstein for review; this does not establish that every proposed agreement was executed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ada_clapp",
+   "name": "Ada Clapp",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Identified as Chief Legal Officer of Elysium Management LLC and sender of the 28 January 2016 administrative-services email to Jeffrey Epstein.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ldb_2011_llc",
+   "name": "LDB 2011 LLC",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Entity named in the November 2016 artwork email chain as the reference for a separate $5 million wire relating to a Braque work. The cited excerpt does not establish completion of the transfer.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "art_turner_folkestone",
+   "name": "J.M.W. Turner — Seascape: Folkestone",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Artwork entry in the 19 March 2017 art inventory: Pent Holdings is the named owner; basis $15 million and Christie’s 11 May 2016 appraised value / purchase-price field $80 million.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "art_apo1_inventory",
+   "name": "APO-01 art inventory",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Four-page inventory headed APO-01 Declaration, with artwork, basis and Christie’s 11 May 2016 appraised-value columns. It is an inventory, not proof of who funded every purchase.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "art_giacometti",
+   "name": "Alberto Giacometti — Figure moyenne II",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Artwork discussed in the November 2016 Haze Trust email chain. The record includes a $25 million wire instruction referencing AP Narrows and a bill of sale excerpt with a $27 million purchase price and buyer redacted; reconcile these differing figures before treating either as a settled amount.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "art_braque",
+   "name": "Georges Braque — Le Guéridon",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Artwork discussed in the November 2016 Haze Trust email chain. Email describes a separate $5 million wire with reference to LDB 2011 LLC; cited material does not independently confirm cleared funds.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta01203778",
+   "name": "EFTA01203778 — All Family Entities schedule (2015)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "DOJ Dataset 9 entity schedule dated 10 April 2015. Lists Leon D. Black as Pent Holdings, Inc. director, shareholder and president; explicitly notes the incorporation documents were unavailable and powers were not established.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02473864",
+   "name": "EFTA02473864 — Elysium administrative-services email (2016)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Email from Ada Clapp to Jeffrey Epstein, 28 January 2016, describing administrative-services agreements ready for implementation and asking whether Epstein wished to review before execution. Pent Holdings is listed as a principal under the Leon D. Black agreement.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00583700",
+   "name": "EFTA00583700 — AP Narrows LP partnership agreement (2016)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Partnership agreement names Leon D. Black, APO-01 Trust, APO-B Trust and Narrows Holdings LLC as partners; records art contributions except by APO-B Trust; identifies Narrows Holdings LLC as Class A general partner.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00595394",
+   "name": "EFTA00595394 — Narrows restructuring proposal (2014)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Proposal dated 10 September 2014 for Narrows Holdings LLC as an art-investment vehicle. Describes proposed membership and management roles, proposed Bank of America debt restructuring and proposed Elysium office / administrative services. Treat as a proposal, not proof of execution.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00592228",
+   "name": "EFTA00592228 — ALL ART inventory (2017)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "51-page art inventory titled ALL ART — 3/19/17. Its owner column identifies Pent Holdings for Turner’s Seascape: Folkestone; values include $15 million basis and $80 million appraisal / purchase-price field.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00592899",
+   "name": "EFTA00592899 — APO-01 Declaration art inventory (2016)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Four-page APO-01 Declaration art inventory listing works, basis and Christie’s 11 May 2016 appraised values; the APO-01 owner column includes, among other entries, Malevich’s Plane in Rotation (Black Circle).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00592208",
+   "name": "EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "November 23, 2016 record containing a $25 million wire instruction to an AP Narrows Holding LP / BMO Trustee account, email describing $25 million for a Giacometti and $5 million for a Braque, and Epstein’s email approval to wire $30 million. The excerpt does not independently prove cleared transfers or the final buyer.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "epstein_research_github",
+   "name": "Epstein-research corpus analysis (rhowardstone)",
+   "kind": "institution",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Independent research repository that surfaced art-entity records and inventory references. Treat its synthesis as a discovery aid; each graph edge here is checked against the cited DOJ records, and the repository’s claim that Pent Holdings was Epstein-controlled is not adopted because DOJ entity schedules identify Leon D. Black as its director and shareholder.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00159180",
+   "name": "EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)",
+   "kind": "document",
+   "cluster": "travel",
+   "tier": "",
+   "note": "FBI FD-302 interview recording Rodgers’s account of his employment, passenger-log practices and selected flights. Some passenger names are redacted; only clearly named people and details are included.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "flight_844_1996",
+   "name": "Flight 844 — 22 May 1996 (PBI → Santa Fe)",
+   "kind": "document",
+   "cluster": "travel",
+   "tier": "",
+   "note": "FBI interview summary: passengers listed as Jeffrey Epstein and Ghislaine Maxwell; destination identified as Epstein’s New Mexico ranch.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "flight_934_1997",
+   "name": "Flight 934 — 5 Jan 1997",
+   "kind": "document",
+   "cluster": "travel",
+   "tier": "",
+   "note": "FBI interview summary lists Jeffrey Epstein, Ghislaine Maxwell, Donald Trump, Mark Epstein and a chef identified as Didier as passengers. Route not reproduced in excerpt.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "flight_935_1997",
+   "name": "Flight 935 — 11 Jan 1997",
+   "kind": "document",
+   "cluster": "travel",
+   "tier": "",
+   "note": "FBI interview summary says flight went to Florida to watch the space shuttle and lists Epstein, Nathan, Alan and Adam Dershowitz among passengers. Abbreviated names preserved as in source.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "adam_perry",
+   "name": "Adam Perry",
+   "kind": "person",
+   "cluster": "travel",
+   "tier": "",
+   "note": "Named in the 2020 FBI interview as the person represented by initials “AP” in Rodgers’s flight logs. Rodgers said Perry and Prince Andrew were on the same flight; date and Perry’s role are not identified in the excerpt.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "nes_llc",
+   "name": "NES LLC",
+   "kind": "company",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Named in the 2020 FBI interview as the company name that replaced “J Epstein S Company” in Rodgers’s employment description. Ownership and corporate structure are not set out.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_jpm_ex175",
+   "name": "JPMorgan email review — Exhibit 175 (2008–2013)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "11-page JPMorgan-produced email-review summary filed as Exhibit 175 in USVI v. JPMorgan Chase, No. 1:22-cv-10904, Doc. 285-41 (15 Aug 2023). It summarizes selected direct email exchanges and threads involving Jeffrey Epstein, Jes Staley, Mary Erdoes and others. This is a bank review summary, not the complete original mailbox; dates and descriptions are limited to what the exhibit states.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "jim_condren",
+   "name": "Jim Condren",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "JPMorgan executive identified in the 2011 email-review exhibit as handling settlement discussions with Epstein concerning Bear / High Grade investment claims. The graph records the documented email exchanges and role in that thread, not any implication of criminal conduct.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "john_duffy",
+   "name": "John Duffy",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "JPMorgan Private Bank executive identified in a March 2013 introduction email and September 2013 scheduling correspondence with Epstein, as summarized in JPMorgan Exhibit 175.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "paul_barrett",
+   "name": "Paul Barrett",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Identified in JPMorgan Exhibit 175 as the sender of a 28 March 2013 email to Epstein proposing an introduction to John Duffy, then Private Bank CEO.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "project_molecule",
+   "name": "Project Molecule — proposed donor-advised fund",
+   "kind": "project",
+   "cluster": "finance",
+   "tier": "",
+   "note": "JPMorgan internal project name used in 2011 email summaries concerning a proposed donor-advised fund (DAF) within the confines of the Gates Foundation. The exhibit records a proposal and negotiations, not proof that the project was implemented or that the Foundation approved it.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "gates_foundation",
+   "name": "Bill & Melinda Gates Foundation",
+   "kind": "institution",
+   "cluster": "tech",
+   "tier": "",
+   "note": "Foundation referenced in the 2011 Project Molecule email chain as the intended setting for a proposed donor-advised fund. The cited exhibit does not establish direct email correspondence between Bill Gates and Epstein, nor does it establish Foundation approval or implementation.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00332335",
+   "name": "EFTA00332335 — Groff invitation to Hardeep Puri (5 Jan 2016)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 email from Lesley Groff to Hardeep Singh Puri asking whether he could come see Jeffrey Epstein while in New York. This establishes an invitation / proposed meeting, not attendance.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00332336",
+   "name": "EFTA00332336 — Hardeep Puri reply to Lesley Groff (5 Jan 2016)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 reply from Hardeep Singh Puri to Lesley Groff in the scheduling thread concerning a proposed visit to Epstein. Read with the adjacent message; it is evidence of scheduling correspondence, not evidence of any wrongdoing.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00451379",
+   "name": "EFTA00451379 — Groff follow-up to Hardeep Puri (15 May 2017)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 email from Lesley Groff to Hardeep Singh Puri asking about a proposed appointment with Epstein for Friday 19 May 2017.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00451385",
+   "name": "EFTA00451385 — Hardeep Puri reply (15 May 2017)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 reply from Hardeep Singh Puri to Lesley Groff: 'Will be there at 11am.' This confirms a scheduled time in the email thread; it does not independently prove attendance.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00695353",
+   "name": "EFTA00695353 — Hardeep Puri email to Jeffrey Epstein (23 Jun 2014)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 record indexed as an email from Hardeep Singh Puri to Jeffrey Epstein, dated 23 June 2014. The available extracted listing establishes direct correspondence; no broader inference is made from the subject/body without reviewing the complete original PDF.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "valeria_chomsky",
+   "name": "Valéria Chomsky",
+   "kind": "person",
+   "cluster": "academia",
+   "tier": "",
+   "note": "Noam Chomsky's spouse. The graph records correspondence with Epstein and her February 2026 public explanation of the couple's interactions; it does not infer complicity or criminal conduct.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta00915064",
+   "name": "EFTA00915064 — Valéria Chomsky email to Epstein (9 Jan 2018)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 email from Valéria Chomsky to Jeffrey Epstein, copied to Noam Chomsky, asking for his advice on an attached marital-trust / estate-history matter and requesting a phone call.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta01019662",
+   "name": "EFTA01019662 — Noam Chomsky email to Epstein and Valéria (14 Oct 2018)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 9 email from Noam Chomsky to Jeffrey Epstein and Valéria Chomsky concerning Chomsky's experience with a former lawyer and trust / estate issues.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_chomsky_statement_2026",
+   "name": "Valéria Chomsky public statement (7 Feb 2026)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Public statement by Valéria Chomsky explaining the couple's interactions with Epstein. She says Epstein paid Noam $20,000 for a linguistic challenge and helped recover approximately $270,000 of Noam's own funds; she explicitly says these were not investments with Epstein and that Epstein did not have access to their bank or investment accounts.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ted_kaptchuk",
+   "name": "Ted J. Kaptchuk",
+   "kind": "person",
+   "cluster": "academia",
+   "tier": "",
+   "note": "Associate Professor of Medicine, Harvard Medical School, and director of the Program in Placebo Studies & Therapeutic Encounter, as identified in the signature of DOJ email record EFTA01843924.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "placebo_program",
+   "name": "Program in Placebo Studies & Therapeutic Encounter",
+   "kind": "program",
+   "cluster": "academia",
+   "tier": "",
+   "note": "Research program named in Ted Kaptchuk's email signature. The 2011–2012 correspondence with Epstein discusses a possible partnership, feedback on a budget and strategic support; the cited emails do not establish that a partnership or funding was finalized.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "bidmc",
+   "name": "Beth Israel Deaconess Medical Center",
+   "kind": "institution",
+   "cluster": "academia",
+   "tier": "",
+   "note": "Institution named in Ted Kaptchuk's signature in DOJ email record EFTA01843924.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta01843924",
+   "name": "EFTA01843924 — Epstein / Ted Kaptchuk email chain (Dec 2011–Feb 2012)",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Six-page Dataset 10 email chain. Kaptchuk discusses a possible partnership around placebo studies, asks Epstein for feedback on a budget and research strategy, and proposes a Cambridge meeting for 12 April 2012. The chain shows discussions and a proposed meeting, not proof the meeting occurred or funding was provided.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "igy_ayh",
+   "name": "IGY-AYH St. Thomas Holdings LLC",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Entity discussed in Dataset 11 correspondence about partner capital accounts, financial statements, a $15.3 million loan facility and a 2011 partnership distribution. The correspondence does not establish that every requested wire was completed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "igy_ltd",
+   "name": "IGY Ltd",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Named as a partner in IGY-AYH St. Thomas Holdings LLC financial correspondence; 2011 K-1 capital account figure is discussed in the email chain.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "jennifer_greene",
+   "name": "Jennifer Greene",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Recipient of financial-review questions concerning IGY-AYH St. Thomas Holdings LLC, including capital accounts, a loan facility and a proposed distribution wire.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "harry_beller",
+   "name": "Harry Beller",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Correspondent who requested financial records and clarification concerning IGY-AYH St. Thomas Holdings LLC.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "shmitka_air",
+   "name": "Shmitka Air Inc.",
+   "kind": "company",
+   "cluster": "aviation",
+   "tier": "",
+   "note": "Named customer in a March 31, 2010 Sikorsky helicopter deposit agreement. The agreement states that it would not become effective until the deposit was received.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "sikorsky",
+   "name": "Sikorsky Aircraft Corporation",
+   "kind": "company",
+   "cluster": "aviation",
+   "tier": "",
+   "note": "Seller named in the Shmitka Air Inc. S-76 helicopter deposit agreement.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "jege",
+   "name": "JEGE LLC",
+   "kind": "company",
+   "cluster": "aviation",
+   "tier": "",
+   "note": "Named customer in a 2013 International Jet Interiors proposal for Gulfstream IV refurbishment work. Proposal terms describe staged payments; the record is a proposal, not proof of payment.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "iji",
+   "name": "International Jet Interiors Inc.",
+   "kind": "company",
+   "cluster": "aviation",
+   "tier": "",
+   "note": "Aircraft interior refurbishment provider named in a June 2013 proposal to JEGE LLC; proposal includes staged payment terms and wire remittance instructions.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "kue_lp",
+   "name": "Knowledge Universe Education L.P.",
+   "kind": "company",
+   "cluster": "investment",
+   "tier": "",
+   "note": "Investment partnership discussed in Dataset 11 correspondence about financial statements, an approximately 1.43% interest, monetization options, and potential unit purchases. Estimates and proposed transactions are not treated as completed outcomes.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "lbf_holdings",
+   "name": "LBF Holdings LLC",
+   "kind": "company",
+   "cluster": "investment",
+   "tier": "",
+   "note": "Entity identified in Dataset 11 correspondence as holding KUE LP units and as a party expected to submit an election schedule for a potential purchase of those units.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "richard_joslin",
+   "name": "Richard Joslin",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Financial correspondent who sent Jeffrey Epstein Knowledge Universe 2013 financial information and later correspondence concerning KUE LP restructuring.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "eileen_alexanderson",
+   "name": "Eileen Alexanderson",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Elysium Management correspondent who sent Jeffrey Epstein a summary of possible KUE LP, Propco and Opco monetization outcomes.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "opencog_hk",
+   "name": "OpenCog Hong Kong project",
+   "kind": "project",
+   "cluster": "technology",
+   "tier": "",
+   "note": "Project identified in a January 2015 email as the proposed purpose for a requested $25,000 corporate contribution. No completed transfer is established by that email.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "novamente",
+   "name": "Novamente LLC",
+   "kind": "company",
+   "cluster": "technology",
+   "tier": "",
+   "note": "Business entity suggested in a January 2015 email as one possible recipient for a proposed contribution to the OpenCog Hong Kong project. No transfer is established.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "humanity_plus",
+   "name": "Humanity+",
+   "kind": "institution",
+   "cluster": "nonprofit",
+   "tier": "",
+   "note": "Nonprofit identified in a January 2015 email as an alternative proposed recipient for a contribution to the OpenCog Hong Kong project. No transfer is established.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ben_goertzel",
+   "name": "Ben Goertzel",
+   "kind": "person",
+   "cluster": "technology",
+   "tier": "",
+   "note": "Correspondent who asked whether Jeffrey Epstein might still provide a $25,000 corporate contribution for the OpenCog Hong Kong project.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ari_glass",
+   "name": "Ari Glass",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Correspondent in Dataset 11 investment-related email chains discussing a $25 million call-down schedule and Boothbay Capital follow-up.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02406979",
+   "name": "DOC_EFTA02406979 — Shmitka Air / Sikorsky S-76 deposit agreement",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 31 Mar 2010. Agreement identifies Shmitka Air Inc. as customer, Sikorsky as seller and a $10 million deposit. It says effectiveness depends on receipt of the deposit; payment is therefore not assumed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02707308",
+   "name": "DOC_EFTA02707308 — JEGE LLC aircraft-interior refurbishment proposal",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 26 Jun 2013. International Jet Interiors proposal to JEGE LLC for Gulfstream IV work. The proposal includes itemized options, staged payment terms and wire remittance instructions; it does not prove acceptance or payment.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02708024",
+   "name": "DOC_EFTA02708024 — IGY-AYH financial review and distribution correspondence",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · Feb 2013; Oct 2011 correspondence reproduced. Email chain discusses IGY-AYH partner capital accounts, a $15.3 million loan facility, and a 2011 $500,000 partnership distribution. It includes a request for wire payment to an account in Jeffrey Epstein’s name, but does not prove that the requested wire was sent or received.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02717445",
+   "name": "DOC_EFTA02717445 — Knowledge Universe 2013 financials email",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 5 Nov 2014. Richard Joslin emailed Jeffrey Epstein that his interest was approximately 1.43%, with an estimated book value of approximately $28 million based on a stated $2 billion book value for the company. This is a reported figure in an email, not independent confirmation.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02502604",
+   "name": "DOC_EFTA02502604 — Knowledge Universe LP confidential memorandum / election",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 22 Apr 2015. Email chain says LBF Holdings’ KUE LP units would be purchased net of reserves and contingent tax liability if an election schedule was not received; wire instructions were to be used to process payment. It documents a contemplated process, not a completed transfer.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02719667",
+   "name": "DOC_EFTA02719667 — Knowledge Universe LP confidential memorandum correspondence",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 6 Apr 2015. Email chain discusses potential capital losses in KUE LP and capital gains in Opco/Propco as units are unwound, and gives an enterprise valuation range of $34–45 million. These are contemporaneous estimates and restructuring discussion.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02719670",
+   "name": "DOC_EFTA02719670 — KUE LP / Propco / Opco monetization summary",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 27 Apr 2015. Eileen Alexanderson summarized estimated KUE LP monetization losses of $16–18 million and estimated Propco and Opco gains; amounts depend on options and actual proceeds and are not recorded as realized transactions.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02715006",
+   "name": "DOC_EFTA02715006 — OpenCog Hong Kong contribution request",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 6 Jan 2015. Ben Goertzel asked whether Jeffrey Epstein might still provide a $25,000 corporate contribution for OpenCog Hong Kong and described alternative possible recipient entities. The email does not establish that funds were sent.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02468795",
+   "name": "DOC_EFTA02468795 — Boothbay Capital follow-up",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 21 Mar 2016. Email chain discusses whether a previously described capital drawdown schedule remained intact or whether a meeting should occur first. No amount or completed drawdown is established in the extracted text.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "doc_efta02495122",
+   "name": "DOC_EFTA02495122 — $25 million call-down schedule correspondence",
+   "kind": "document",
+   "cluster": "records",
+   "tier": "",
+   "note": "Dataset 11 · 29 Jun 2015. Email from Ari Glass to Jeffrey Epstein proposes a staged $25 million call-down schedule ($2m, $7m, $7.5m and $8.5m). The underlying investment vehicle is not identified in the extracted text and no drawdown is confirmed.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "bella_klein",
+   "name": "Bella Klein",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "to-verify",
+   "note": "Research lead only. rhowardstone/Epstein-research-data lists Bella Klein in its persons registry as staff, describing her as a long-time accountant and administrative employee (source attribution in that registry: la-rana-chicana). Its extracted-name index reports 285 document hits and provides a sample of EFTA identifiers. Its separate communications_db export aggregates 11 counterpart relationships (312 emails in total); those counts have not been checked against the underlying messages in this pass. A separate research narrative alleges: EUR 1,000 via Western Union (EFTA00716763, 28 Apr 2011); reimbursement of EUR 2,700 (EFTA00642502, Jul 2014); relocation funding for a Barcelona apartment (EFTA00679056, Apr 2017); and a wire route to a Dubai account involving Bella Klein/Richard Kahn (EFTA00711038, Jun 2017). These are unverified secondary-source claims here: the DOJ PDFs were not readable through the current browser session, and no financial-transaction edge is asserted. Do not infer wrongdoing from staff status, document mentions, or communications.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  }
+ ],
+ "node_notes": {
+  "boothbay": "About $38M in from Epstein 2014–17; forced redemption after the 2019 arrest (WSJ). Dataset 11: Named in a March 2016 email chain about a capital drawdown schedule and allocations. The extracted email does not establish the underlying fund or a completed drawdown."
+ },
+ "edges": [
+  {
+   "f": "staley",
+   "t": "epstein",
+   "label": "direct email correspondence summarized in JPMorgan review, 2008–2011; exchanges include advice, calls, meetings and bank-business matters",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "network_functions",
+   "t": "epstein",
+   "label": "comparison framework applied as research questions; not a factual tie",
+   "type": "comparative methodology",
+   "status": "to-verify",
+   "src": "Research framework; Epstein-specific proof required"
+  },
+  {
+   "f": "network_functions",
+   "t": "dea",
+   "label": "use DEA investigation as Epstein-specific starting point for finance/operations research",
+   "type": "research lead",
+   "status": "verified",
+   "src": "CBS News reporting on DEA memo, 2026"
+  },
+  {
+   "f": "dea_memo",
+   "t": "network_functions",
+   "label": "Epstein-specific investigation record; underlying detail partly redacted",
+   "type": "research lead",
+   "status": "withheld",
+   "src": "CBS News reporting on DEA memo, 2026"
+  },
+  {
+   "f": "epstein_index",
+   "t": "doj",
+   "label": "indexes and links public DOJ, House, and court records",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "The Epstein Index methodology"
+  },
+  {
+   "f": "epstein_transparency",
+   "t": "doj",
+   "label": "parses DOJ Datasets 9 and 11; links graph evidence to source PDFs",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "Epstein Transparency Project methodology"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doj",
+   "label": "searches and indexes public Epstein records and email text",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "Yirah archive description"
+  },
+  {
+   "f": "epstein_project_archive",
+   "t": "doj",
+   "label": "indexes public releases and provides cited document search",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "The Epstein Project description"
+  },
+  {
+   "f": "epstein_document_archive",
+   "t": "doj",
+   "label": "archives public government records with provenance and OCR",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "Epstein Document Archive sources"
+  },
+  {
+   "f": "epstein_docs_archive",
+   "t": "doj",
+   "label": "provides searchable OCR copies of public records",
+   "type": "research archive / source corpus",
+   "status": "verified",
+   "src": "Epstein Archive description"
+  },
+  {
+   "f": "epstein",
+   "t": "epstein_2018_trust",
+   "label": "grantor of trust agreement, 8 May 2018",
+   "type": "trust grantor",
+   "status": "verified",
+   "src": "DOJ EFTA00099449"
+  },
+  {
+   "f": "indyke",
+   "t": "epstein_2018_trust",
+   "label": "named trustee in 8 May 2018 trust agreement",
+   "type": "trustee",
+   "status": "verified",
+   "src": "DOJ EFTA00099449"
+  },
+  {
+   "f": "kahn",
+   "t": "epstein_2018_trust",
+   "label": "named trustee in 8 May 2018 trust agreement",
+   "type": "trustee",
+   "status": "verified",
+   "src": "DOJ EFTA00099449"
+  },
+  {
+   "f": "ruemmler",
+   "t": "epstein_2018_trust",
+   "label": "named trustee in 8 May 2018 trust agreement",
+   "type": "trustee",
+   "status": "verified",
+   "src": "DOJ EFTA00099449"
+  },
+  {
+   "f": "epstein",
+   "t": "epstein_2019_trust",
+   "label": "grantor of trust agreement, 18 Jan 2019",
+   "type": "trust grantor",
+   "status": "verified",
+   "src": "DOJ EFTA00128887"
+  },
+  {
+   "f": "indyke",
+   "t": "epstein_2019_trust",
+   "label": "named trustee in 18 Jan 2019 trust agreement",
+   "type": "trustee",
+   "status": "verified",
+   "src": "DOJ EFTA00128887"
+  },
+  {
+   "f": "kahn",
+   "t": "epstein_2019_trust",
+   "label": "named trustee in 18 Jan 2019 trust agreement",
+   "type": "trustee",
+   "status": "verified",
+   "src": "DOJ EFTA00128887"
+  },
+  {
+   "f": "epstein_2019_trust",
+   "t": "epstein_2018_trust",
+   "label": "expressly revokes the 2018 trust, 18 Jan 2019",
+   "type": "trust supersession",
+   "status": "verified",
+   "src": "DOJ EFTA00128887"
+  },
+  {
+   "f": "deutsche",
+   "t": "butterfly_trust",
+   "label": "opened checking and money-market accounts, 24 Jan 2014",
+   "type": "bank accounts",
+   "status": "verified",
+   "src": "NYDFS Deutsche Bank consent order, paras. 28–30"
+  },
+  {
+   "f": "epstein",
+   "t": "butterfly_trust",
+   "label": "Epstein-related trust; bank records describe its accounts and beneficiaries",
+   "type": "trust relationship",
+   "status": "verified",
+   "src": "NYDFS Deutsche Bank consent order, paras. 28–30"
+  },
+  {
+   "f": "butterfly_trust",
+   "t": "gmax",
+   "label": "removed from beneficiary roster, 9 Dec 2014",
+   "type": "trust beneficiary change",
+   "status": "verified",
+   "src": "Fortune review of Deutsche Bank trust timeline and KYC records"
+  },
+  {
+   "f": "butterfly_trust",
+   "t": "karyna_shuliak",
+   "label": "added to beneficiary roster, 9 Dec 2014",
+   "type": "trust beneficiary change",
+   "status": "verified",
+   "src": "Fortune review of Deutsche Bank trust timeline and KYC records"
+  },
+  {
+   "f": "butterfly_trust",
+   "t": "indyke",
+   "label": "added to beneficiary roster, 9 Dec 2014",
+   "type": "trust beneficiary change",
+   "status": "verified",
+   "src": "Fortune review of Deutsche Bank trust timeline and KYC records"
+  },
+  {
+   "f": "butterfly_trust",
+   "t": "kahn",
+   "label": "added to beneficiary roster, 9 Dec 2014",
+   "type": "trust beneficiary change",
+   "status": "verified",
+   "src": "Fortune review of Deutsche Bank trust timeline and KYC records"
+  },
+  {
+   "f": "black",
+   "t": "pent_holdings",
+   "label": "director, shareholder and president listed in 2015 entity schedule; schedule notes incorporation documents unavailable",
+   "type": "corporate role",
+   "status": "verified",
+   "src": "EFTA01203778"
+  },
+  {
+   "f": "pent_holdings",
+   "t": "art_turner_folkestone",
+   "label": "named owner in 2017 inventory; basis $15M, appraisal / purchase-price field $80M",
+   "type": "asset ownership",
+   "status": "verified",
+   "src": "EFTA00592228"
+  },
+  {
+   "f": "doc_efta00592228",
+   "t": "pent_holdings",
+   "label": "inventory lists Pent Holdings as owner of Seascape: Folkestone",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00592228"
+  },
+  {
+   "f": "doc_efta00592228",
+   "t": "art_turner_folkestone",
+   "label": "records inventory entry and stated values",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00592228"
+  },
+  {
+   "f": "doc_efta01203778",
+   "t": "pent_holdings",
+   "label": "entity schedule lists director, shareholder and president; qualification noted in document",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA01203778"
+  },
+  {
+   "f": "black",
+   "t": "doc_efta01203778",
+   "label": "listed as Pent Holdings director, shareholder and president",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA01203778"
+  },
+  {
+   "f": "elysium",
+   "t": "pent_holdings",
+   "label": "named principal in proposed Leon D. Black administrative-services agreement; execution not confirmed",
+   "type": "proposed administrative services",
+   "status": "planned",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "ada_clapp",
+   "t": "elysium",
+   "label": "Chief Legal Officer; sender of 28 Jan 2016 email",
+   "type": "employment / office",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "ada_clapp",
+   "t": "doc_efta02473864",
+   "label": "author / sender",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "doc_efta02473864",
+   "t": "epstein",
+   "label": "email addressed to Jeffrey Epstein for review",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "doc_efta02473864",
+   "t": "elysium",
+   "label": "email describes Elysium administrative-services agreements",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "doc_efta02473864",
+   "t": "pent_holdings",
+   "label": "lists Pent Holdings as a principal under Leon D. Black agreement",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "black",
+   "t": "ap_narrows_lp",
+   "label": "named partner in 2016 partnership agreement; contributed art",
+   "type": "partnership / contribution",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "apo1_trust",
+   "t": "ap_narrows_lp",
+   "label": "named partner; contributed art",
+   "type": "partnership / contribution",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "apo_b_trust",
+   "t": "ap_narrows_lp",
+   "label": "named partner; agreement expressly excludes it from partners contributing art",
+   "type": "partnership",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "narrows_holdings",
+   "t": "ap_narrows_lp",
+   "label": "named partner and Class A general partner",
+   "type": "partnership / governance",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "black",
+   "t": "narrows_holdings",
+   "label": "identified as sole member and authorized person",
+   "type": "corporate role",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00583700",
+   "t": "ap_narrows_lp",
+   "label": "partnership agreement identifies partners, general partner and art contributions",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00583700",
+   "t": "black",
+   "label": "names Leon D. Black as partner and signatory",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00583700",
+   "t": "apo1_trust",
+   "label": "names APO-01 Trust as partner and art contributor",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00583700",
+   "t": "apo_b_trust",
+   "label": "names APO-B Trust as partner; no art contribution stated",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00583700",
+   "t": "narrows_holdings",
+   "label": "names Narrows Holdings LLC as partner and Class A general partner",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00583700"
+  },
+  {
+   "f": "doc_efta00595394",
+   "t": "narrows_holdings",
+   "label": "proposal identifies Narrows Holdings LLC as family art-investment vehicle",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "black",
+   "t": "narrows_holdings",
+   "label": "proposal identifies Leon Black as manager / member",
+   "type": "proposed governance",
+   "status": "planned",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "apo1_trust",
+   "t": "narrows_holdings",
+   "label": "proposal identifies APO-01 as proposed member / Class B manager option",
+   "type": "proposed governance",
+   "status": "planned",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "apo2_trust",
+   "t": "narrows_holdings",
+   "label": "proposal identifies APO-02 as proposed member / Class B manager option",
+   "type": "proposed governance",
+   "status": "planned",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "elysium",
+   "t": "narrows_holdings",
+   "label": "proposal describes office, accounting, legal and administrative services to be provided by Elysium",
+   "type": "proposed administrative services",
+   "status": "planned",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "bofa",
+   "t": "narrows_holdings",
+   "label": "proposal to restructure existing art-secured Bank of America loan so Narrows would become borrower; not proof completed",
+   "type": "proposed financing",
+   "status": "planned",
+   "src": "EFTA00595394"
+  },
+  {
+   "f": "apo1_trust",
+   "t": "art_apo1_inventory",
+   "label": "inventory headed APO-01 Declaration lists art under APO-01 owner column",
+   "type": "asset inventory",
+   "status": "verified",
+   "src": "EFTA00592899"
+  },
+  {
+   "f": "doc_efta00592899",
+   "t": "apo1_trust",
+   "label": "inventory headed APO-01 Declaration",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00592899"
+  },
+  {
+   "f": "doc_efta00592899",
+   "t": "art_apo1_inventory",
+   "label": "records APO-01 artworks and appraisal columns",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00592899"
+  },
+  {
+   "f": "epstein",
+   "t": "doc_efta00592208",
+   "label": "email in record approves wiring $30M to Darren Indyke’s directions",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "indyke",
+   "t": "doc_efta00592208",
+   "label": "email chain includes Indyke’s forwarded transaction instructions",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "kahn",
+   "t": "doc_efta00592208",
+   "label": "email recipient in the artwork transaction chain",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "haze_trust",
+   "t": "doc_efta00592208",
+   "label": "named trust in transaction memorandum and wire instructions",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "doc_efta00592208",
+   "t": "ap_narrows_account",
+   "label": "$25M wire instructions name AP Narrows Holding LP / BMO Trustee account; clearing not established",
+   "type": "payment instruction",
+   "status": "to-verify",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "doc_efta00592208",
+   "t": "art_giacometti",
+   "label": "email describes $25M Giacometti purchase; bill of sale excerpt states $27M and redacts buyer",
+   "type": "transaction record",
+   "status": "to-verify",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "doc_efta00592208",
+   "t": "ldb_2011_llc",
+   "label": "email describes separate $5M wire reference to LDB 2011 LLC for Braque; clearing not established",
+   "type": "payment instruction",
+   "status": "to-verify",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "doc_efta00592208",
+   "t": "art_braque",
+   "label": "email describes a separate $5M Braque purchase",
+   "type": "transaction record",
+   "status": "to-verify",
+   "src": "EFTA00592208"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00583700",
+   "label": "indexes and exposes text of the DOJ partnership agreement",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah document index"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00595394",
+   "label": "indexes and exposes text of the DOJ restructuring proposal",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah document index"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00592228",
+   "label": "indexes and exposes text of the DOJ art inventory",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah document index"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00592899",
+   "label": "indexes and exposes text of the APO-01 art inventory",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah document index"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00592208",
+   "label": "indexes and exposes text of the Haze Trust transaction record",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah document index"
+  },
+  {
+   "f": "epstein_research_github",
+   "t": "doc_efta00592228",
+   "label": "research analysis flags this art inventory; relationship checked against the record",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Epstein-research repository"
+  },
+  {
+   "f": "epstein_research_github",
+   "t": "doc_efta00583700",
+   "label": "research analysis flags AP Narrows partnership agreement; checked against the record",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Epstein-research repository"
+  },
+  {
+   "f": "epstein_research_github",
+   "t": "doc_efta00595394",
+   "label": "research analysis flags Narrows restructuring proposal; checked against the record",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Epstein-research repository"
+  },
+  {
+   "f": "rodgers",
+   "t": "doc_efta00159180",
+   "label": "interviewed by FBI on 7 Feb 2020; described work and flight records",
+   "type": "testimony / interview",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "epstein",
+   "label": "Rodgers says he met Epstein in June 1991 and first flew with him on 26 July 1991",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "wexner",
+   "label": "Rodgers says Wexner had a friend who needed a pilot shortly before Rodgers met Epstein; interview does not expressly say Wexner introduced them",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "rodgers",
+   "t": "epstein",
+   "label": "pilot for Epstein and Epstein-affiliated entities from 1991; employed for 28 years through July 2019",
+   "type": "employment",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "rodgers",
+   "t": "nes_llc",
+   "label": "interview describes employment under “J Epstein S Company” before name changed to NES LLC",
+   "type": "employment / corporate name",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "flight_logs",
+   "label": "Rodgers says he kept passenger logs with dates, passengers and places flown; logs from roughly 1991–2005",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "gmax",
+   "t": "rodgers",
+   "label": "Rodgers says Maxwell gave him verbal travel schedules and called about changes, particularly 1994–98",
+   "type": "travel coordination",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "rodgers",
+   "t": "dershowitz",
+   "label": "Rodgers says he flew to Bedford to pick up Alan Dershowitz; date not specified",
+   "type": "passenger transport",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_844_1996",
+   "t": "epstein",
+   "label": "passenger listed by Rodgers",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_844_1996",
+   "t": "gmax",
+   "label": "passenger listed by Rodgers",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "flight_844_1996",
+   "label": "summarizes 22 May 1996 flight 844, PBI to Santa Fe",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_934_1997",
+   "t": "epstein",
+   "label": "passenger named in Rodgers’s FBI interview for 5 Jan 1997 flight 934",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_934_1997",
+   "t": "gmax",
+   "label": "passenger named in Rodgers’s FBI interview for 5 Jan 1997 flight 934",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_934_1997",
+   "t": "trump",
+   "label": "passenger named in Rodgers’s FBI interview for 5 Jan 1997 flight 934",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_934_1997",
+   "t": "mark_epstein",
+   "label": "passenger named in Rodgers’s FBI interview for 5 Jan 1997 flight 934",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_934_1997",
+   "t": "doc_efta00159180",
+   "label": "passenger list summarized from pilot’s flight-log review",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_935_1997",
+   "t": "epstein",
+   "label": "named among passengers in Rodgers’s FBI interview for 11 Jan 1997 flight 935",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_935_1997",
+   "t": "dershowitz",
+   "label": "named among passengers in Rodgers’s FBI interview for 11 Jan 1997 flight 935",
+   "type": "flight passenger",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "flight_935_1997",
+   "t": "doc_efta00159180",
+   "label": "passenger list and purpose summarized in FBI interview",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "andrew",
+   "label": "Rodgers says Prince Andrew was named in flight logs and shared a flight with Adam Perry; date not specified",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "doc_efta00159180",
+   "t": "adam_perry",
+   "label": "Rodgers identifies initials “AP” as Adam Perry and says Perry and Prince Andrew were on same flight",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "adam_perry",
+   "t": "andrew",
+   "label": "Rodgers says both were on same flight; date and context not identified in excerpt",
+   "type": "shared flight",
+   "status": "verified",
+   "src": "EFTA00159180"
+  },
+  {
+   "f": "yirah_archive",
+   "t": "doc_efta00159180",
+   "label": "indexes FBI interview record EFTA00159180",
+   "type": "research provenance",
+   "status": "verified",
+   "src": "Yirah / DOJ document index"
+  },
+  {
+   "f": "jpm",
+   "t": "doc_jpm_ex175",
+   "label": "produced email-review summary filed in USVI litigation",
+   "type": "document provenance",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "staley",
+   "label": "summarizes direct email exchanges with Epstein, including dated examples from 2008–2011",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "erdoes",
+   "label": "summarizes direct email exchanges with Epstein, including 2011–2013 threads",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "jim_condren",
+   "label": "summarizes Condren's participation in 2011 settlement email threads",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "john_duffy",
+   "label": "summarizes Duffy's 20 Sep 2013 email to Epstein and call scheduling",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "paul_barrett",
+   "label": "summarizes Barrett's 28 Mar 2013 email to Epstein proposing an introduction",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "erdoes",
+   "t": "epstein",
+   "label": "direct email exchanges documented in 2011–2013, including philanthropy proposal discussions and banking / settlement matters",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "jim_condren",
+   "t": "epstein",
+   "label": "direct email participation in July 2011 settlement discussions; Condren sent Epstein and counsel a $9.2M final-offer email",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "john_duffy",
+   "t": "epstein",
+   "label": "Duffy emailed Epstein on 20 Sep 2013 offering to discuss answers and coordinated a phone call",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "paul_barrett",
+   "t": "epstein",
+   "label": "Barrett emailed Epstein on 28 Mar 2013 proposing an introduction to John Duffy",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "paul_barrett",
+   "t": "john_duffy",
+   "label": "Barrett proposed an introduction to Duffy in an email to Epstein, 28 Mar 2013",
+   "type": "proposed introduction",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "epstein",
+   "t": "project_molecule",
+   "label": "participated in 2011 email discussions and proposed fee / structure terms for a donor-advised-fund initiative; proposal only",
+   "type": "proposal",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "staley",
+   "t": "project_molecule",
+   "label": "exchanged proposal materials with Epstein and Erdoes; Staley sent an updated presentation on 30 Aug 2011",
+   "type": "proposal",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "erdoes",
+   "t": "project_molecule",
+   "label": "sent a formal presentation on the proposed donor-advised fund to Epstein and Staley, 28 Aug 2011",
+   "type": "proposal",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "jpm",
+   "t": "project_molecule",
+   "label": "internal project name used in 2011 correspondence about a proposed donor-advised fund",
+   "type": "internal project",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "project_molecule",
+   "t": "gates_foundation",
+   "label": "proposed donor-advised fund described as being within the confines of the Gates Foundation; approval / implementation not established",
+   "type": "proposed institutional arrangement",
+   "status": "not-established",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_jpm_ex175",
+   "t": "project_molecule",
+   "label": "records the 2011 Project Molecule proposal and email exchanges",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "JPMorgan Exhibit 175; Doc. 285-41"
+  },
+  {
+   "f": "doc_efta00332335",
+   "t": "groff",
+   "label": "email sent by Groff to Puri",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00332335"
+  },
+  {
+   "f": "doc_efta00332336",
+   "t": "puri",
+   "label": "Puri is sender / participant in reply thread",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00332336"
+  },
+  {
+   "f": "groff",
+   "t": "puri",
+   "label": "direct scheduling correspondence about a proposed visit in New York, 5 Jan 2016",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00332335 and EFTA00332336"
+  },
+  {
+   "f": "groff",
+   "t": "epstein",
+   "label": "Groff coordinated a proposed appointment for Puri to see Epstein; invitation / scheduling, not independent proof of attendance",
+   "type": "scheduling",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00332335 and EFTA00332336"
+  },
+  {
+   "f": "doc_efta00451379",
+   "t": "groff",
+   "label": "email sent by Groff to Puri",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00451379"
+  },
+  {
+   "f": "doc_efta00451385",
+   "t": "puri",
+   "label": "Puri replied that he would be there at 11am",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00451385"
+  },
+  {
+   "f": "groff",
+   "t": "puri",
+   "label": "direct email exchange confirming a proposed 11am appointment for 19 May 2017",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00451379 and EFTA00451385"
+  },
+  {
+   "f": "groff",
+   "t": "epstein",
+   "label": "coordinated the proposed 19 May 2017 appointment with Puri",
+   "type": "scheduling",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00451379 and EFTA00451385"
+  },
+  {
+   "f": "puri",
+   "t": "epstein",
+   "label": "appointment scheduled through Groff for 19 May 2017; Puri confirmed a time, but attendance is not independently established by this email thread",
+   "type": "scheduled visit",
+   "status": "scheduled",
+   "src": "DOJ Dataset 9 — EFTA00451379 and EFTA00451385"
+  },
+  {
+   "f": "doc_efta00695353",
+   "t": "puri",
+   "label": "email sender identified as Hardeep Singh Puri",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00695353"
+  },
+  {
+   "f": "doc_efta00695353",
+   "t": "epstein",
+   "label": "email recipient identified as Jeffrey Epstein",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00695353"
+  },
+  {
+   "f": "puri",
+   "t": "epstein",
+   "label": "direct email correspondence recorded on 23 June 2014",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00695353"
+  },
+  {
+   "f": "doc_efta00915064",
+   "t": "valeria_chomsky",
+   "label": "Valéria is sender",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00915064"
+  },
+  {
+   "f": "doc_efta00915064",
+   "t": "epstein",
+   "label": "Epstein is recipient; Valéria asks for advice on a marital-trust / estate matter",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00915064"
+  },
+  {
+   "f": "valeria_chomsky",
+   "t": "epstein",
+   "label": "direct email requesting advice and a phone call about a marital-trust / estate issue, 9 Jan 2018",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA00915064"
+  },
+  {
+   "f": "doc_efta01019662",
+   "t": "chomsky",
+   "label": "Noam Chomsky is sender",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA01019662"
+  },
+  {
+   "f": "doc_efta01019662",
+   "t": "epstein",
+   "label": "Epstein is a direct recipient",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA01019662"
+  },
+  {
+   "f": "chomsky",
+   "t": "epstein",
+   "label": "direct email correspondence about trust / estate concerns, 14 Oct 2018",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 9 — EFTA01019662"
+  },
+  {
+   "f": "doc_chomsky_statement_2026",
+   "t": "valeria_chomsky",
+   "label": "public statement authored by Valéria Chomsky, 7 Feb 2026",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "Valéria Chomsky public statement, 7 Feb 2026"
+  },
+  {
+   "f": "epstein",
+   "t": "chomsky",
+   "label": "Valéria Chomsky's public statement says Epstein paid Noam $20,000 for a linguistic challenge; this is her account, not a bank record",
+   "type": "payment reported by participant",
+   "status": "reported",
+   "src": "Valéria Chomsky public statement, 7 Feb 2026"
+  },
+  {
+   "f": "epstein",
+   "t": "chomsky",
+   "label": "Valéria Chomsky says Epstein helped recover approximately $270,000 of Noam's own funds; she says these were not investments with Epstein",
+   "type": "financial assistance reported by participant",
+   "status": "reported",
+   "src": "Valéria Chomsky public statement, 7 Feb 2026"
+  },
+  {
+   "f": "doc_efta01843924",
+   "t": "ted_kaptchuk",
+   "label": "Kaptchuk is correspondent and author of multiple messages in the chain",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "doc_efta01843924",
+   "t": "epstein",
+   "label": "Epstein is correspondent; chain includes his replies",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "ted_kaptchuk",
+   "t": "epstein",
+   "label": "direct email correspondence, Dec 2011–Feb 2012, discussing placebo research, a proposed partnership and budget feedback",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "epstein",
+   "t": "placebo_program",
+   "label": "discussed potential partnership, budget feedback and strategic support; no completed funding or partnership is established in this chain",
+   "type": "proposed research support",
+   "status": "not-established",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "ted_kaptchuk",
+   "t": "placebo_program",
+   "label": "identified as program director in email signature",
+   "type": "professional role stated in signature",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "ted_kaptchuk",
+   "t": "harvard",
+   "label": "identified as Associate Professor of Medicine, Harvard Medical School, in email signature",
+   "type": "professional affiliation stated in signature",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "ted_kaptchuk",
+   "t": "bidmc",
+   "label": "identified as affiliated with Beth Israel Deaconess Medical Center in email signature",
+   "type": "professional affiliation stated in signature",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "doc_efta01843924",
+   "t": "placebo_program",
+   "label": "email chain discusses a possible research partnership with the program",
+   "type": "document evidence",
+   "status": "verified",
+   "src": "DOJ Dataset 10 — EFTA01843924"
+  },
+  {
+   "f": "doc_efta02406979",
+   "t": "shmitka_air",
+   "label": "names Shmitka Air Inc. as the helicopter customer",
+   "type": "contract party",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02406979"
+  },
+  {
+   "f": "doc_efta02406979",
+   "t": "sikorsky",
+   "label": "names Sikorsky as seller under the S-76 deposit agreement",
+   "type": "contract party",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02406979"
+  },
+  {
+   "f": "shmitka_air",
+   "t": "sikorsky",
+   "label": "entered a deposit agreement for two S-76 helicopters; effectiveness was conditional on receipt of the deposit",
+   "type": "proposed purchase",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02406979"
+  },
+  {
+   "f": "doc_efta02406979",
+   "t": "indyke",
+   "label": "identifies Darren K. Indyke as Shmitka Air vice-president and customer contact",
+   "type": "corporate office",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02406979"
+  },
+  {
+   "f": "indyke",
+   "t": "shmitka_air",
+   "label": "listed as vice-president and customer contact",
+   "type": "corporate office",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02406979"
+  },
+  {
+   "f": "doc_efta02707308",
+   "t": "jege",
+   "label": "proposal addressed to JEGE LLC for Gulfstream IV refurbishment work",
+   "type": "proposal recipient",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02707308"
+  },
+  {
+   "f": "doc_efta02707308",
+   "t": "iji",
+   "label": "identifies International Jet Interiors as the proposal author/provider",
+   "type": "proposal author",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02707308"
+  },
+  {
+   "f": "jege",
+   "t": "iji",
+   "label": "proposal for aircraft refurbishment with staged payment terms; acceptance and payment not established",
+   "type": "proposed services",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02707308"
+  },
+  {
+   "f": "doc_efta02707308",
+   "t": "epstein",
+   "label": "proposal states prior conversations and correspondence included Jeffrey; no customer or payment role is established by this reference alone",
+   "type": "mentioned in proposal",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02707308"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "igy_ayh",
+   "label": "financial review correspondence identifies the LLC and discusses its accounts, loan facility and distributions",
+   "type": "financial records",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "jennifer_greene",
+   "label": "recipient of financial questions and wire/distribution correspondence",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "harry_beller",
+   "label": "author of financial questions and distribution-wire request",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "epstein",
+   "label": "email describes a partner capital account and a pro-rata distribution notice; no completed wire is shown",
+   "type": "financial correspondence",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "igy_ayh",
+   "t": "epstein",
+   "label": "email describes Epstein as a partner with a capital account and refers to a pro-rata share of a 2011 distribution",
+   "type": "reported partnership interest",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "igy_ayh",
+   "t": "igy_ltd",
+   "label": "email asks about the difference between partner capital accounts and refers to a 50/50 profit-and-loss split shown on K-1s",
+   "type": "reported partnership structure",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "igy_ayh",
+   "label": "reproduces notice of a $500,000 partnership distribution and request for payment preference",
+   "type": "distribution notice",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02708024",
+   "t": "epstein",
+   "label": "records a request to send Epstein his pro-rata distribution by wire or check; completion is not shown",
+   "type": "proposed distribution payment",
+   "status": "to-verify",
+   "src": "DOJ Dataset 11 — EFTA02708024"
+  },
+  {
+   "f": "doc_efta02717445",
+   "t": "richard_joslin",
+   "label": "sender of the Knowledge Universe financials email",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02717445"
+  },
+  {
+   "f": "doc_efta02717445",
+   "t": "epstein",
+   "label": "recipient of the Knowledge Universe 2013 financials email",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02717445"
+  },
+  {
+   "f": "doc_efta02717445",
+   "t": "kue_lp",
+   "label": "reports an approximately 1.43% interest and estimated $28 million book value at 31 Dec 2013",
+   "type": "financial statement summary",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02717445"
+  },
+  {
+   "f": "epstein",
+   "t": "kue_lp",
+   "label": "email reports an approximately 1.43% interest; this is not independently confirmed here",
+   "type": "reported investment interest",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02717445"
+  },
+  {
+   "f": "doc_efta02502604",
+   "t": "lbf_holdings",
+   "label": "identifies LBF Holdings as the holder expected to submit an election schedule",
+   "type": "entity in proposed transaction",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02502604"
+  },
+  {
+   "f": "doc_efta02502604",
+   "t": "kue_lp",
+   "label": "describes a potential purchase of LBF Holdings’ KUE LP units net of reserves and contingent tax liability",
+   "type": "proposed unit purchase",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02502604"
+  },
+  {
+   "f": "lbf_holdings",
+   "t": "kue_lp",
+   "label": "held units subject to a contemplated purchase/election process",
+   "type": "reported investment holding",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02502604"
+  },
+  {
+   "f": "doc_efta02502604",
+   "t": "epstein",
+   "label": "email chain addressed to Jeffrey Epstein about the proposed KUE LP unit election",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02502604"
+  },
+  {
+   "f": "doc_efta02502604",
+   "t": "kue_lp",
+   "label": "wire instructions were expected to be used to process payment if the election schedule was not received; no completed wire is shown",
+   "type": "potential payment processing",
+   "status": "to-verify",
+   "src": "DOJ Dataset 11 — EFTA02502604"
+  },
+  {
+   "f": "doc_efta02719667",
+   "t": "kue_lp",
+   "label": "discusses potential KUE LP capital losses during a proposed restructuring/unwind",
+   "type": "financial analysis",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02719667"
+  },
+  {
+   "f": "doc_efta02719667",
+   "t": "lbf_holdings",
+   "label": "references LBF Holdings’ KUE LP units in the election process",
+   "type": "entity in restructuring",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02719667"
+  },
+  {
+   "f": "doc_efta02719667",
+   "t": "epstein",
+   "label": "email chain forwarded to Jeffrey Epstein for review",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02719667"
+  },
+  {
+   "f": "doc_efta02719670",
+   "t": "eileen_alexanderson",
+   "label": "sender of KUE/Propco/Opco monetization summary",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02719670"
+  },
+  {
+   "f": "doc_efta02719670",
+   "t": "epstein",
+   "label": "recipient of KUE/Propco/Opco monetization summary",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02719670"
+  },
+  {
+   "f": "doc_efta02719670",
+   "t": "kue_lp",
+   "label": "reports estimated $16–18 million monetization loss depending on option",
+   "type": "estimated financial outcome",
+   "status": "reported",
+   "src": "DOJ Dataset 11 — EFTA02719670"
+  },
+  {
+   "f": "doc_efta02715006",
+   "t": "ben_goertzel",
+   "label": "sender of request for a proposed $25,000 corporate contribution",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "doc_efta02715006",
+   "t": "kahn",
+   "label": "recipient of the email requesting assistance and discussing possible payment routes",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "doc_efta02715006",
+   "t": "epstein",
+   "label": "copied on request asking whether he might provide a $25,000 corporate contribution",
+   "type": "contribution request",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "ben_goertzel",
+   "t": "opencog_hk",
+   "label": "requested a $25,000 corporate contribution for the project",
+   "type": "requested contribution",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "doc_efta02715006",
+   "t": "novamente",
+   "label": "named as one possible commercial recipient for a contribution",
+   "type": "proposed recipient",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "doc_efta02715006",
+   "t": "humanity_plus",
+   "label": "named as an alternative nonprofit recipient for a contribution",
+   "type": "proposed recipient",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "novamente",
+   "t": "opencog_hk",
+   "label": "named as a possible route for the proposed corporate contribution",
+   "type": "proposed funding route",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "humanity_plus",
+   "t": "opencog_hk",
+   "label": "named as an alternative possible recipient for the proposed contribution",
+   "type": "proposed funding route",
+   "status": "planned",
+   "src": "DOJ Dataset 11 — EFTA02715006"
+  },
+  {
+   "f": "doc_efta02468795",
+   "t": "boothbay",
+   "label": "identifies Boothbay Capital in follow-up about a capital drawdown schedule",
+   "type": "investment correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02468795"
+  },
+  {
+   "f": "doc_efta02468795",
+   "t": "ari_glass",
+   "label": "sender of follow-up about capital drawdown schedule and allocations",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02468795"
+  },
+  {
+   "f": "doc_efta02468795",
+   "t": "epstein",
+   "label": "recipient of follow-up asking whether the prior schedule remained intact",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02468795"
+  },
+  {
+   "f": "doc_efta02495122",
+   "t": "ari_glass",
+   "label": "sender of proposed $25 million staged call-down schedule",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02495122"
+  },
+  {
+   "f": "doc_efta02495122",
+   "t": "epstein",
+   "label": "recipient of proposed $25 million call-down schedule",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "DOJ Dataset 11 — EFTA02495122"
+  },
+  {
+   "f": "bella_klein",
+   "t": "kahn",
+   "label": "156 emails in repository aggregate (98 Bella → Richard Kahn; 58 reverse); 2014-05-16 to 2019-02-14",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  },
+  {
+   "f": "bella_klein",
+   "t": "indyke",
+   "label": "31 emails in repository aggregate (28 Bella → Darren Indyke; 3 reverse); 2014-06-23 to 2016-03-21",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  },
+  {
+   "f": "bella_klein",
+   "t": "groff",
+   "label": "29 emails in repository aggregate (6 Bella → Lesley Groff; 23 reverse); 2016-02-05 to 2019-05-16",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  },
+  {
+   "f": "bella_klein",
+   "t": "epstein",
+   "label": "29 emails in repository aggregate (25 Bella → Jeffrey Epstein; 4 reverse); 2015-07-23",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  },
+  {
+   "f": "bella_klein",
+   "t": "karyna_shuliak",
+   "label": "18 emails in repository aggregate (9 Bella → Karyna Shuliak; 9 reverse); 2016-03-09 to 2017-06-23",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  },
+  {
+   "f": "bella_klein",
+   "t": "pmorris",
+   "label": "8 emails in repository aggregate (8 Bella → Paul Morris; 0 reverse); 2014-05-13 to 2014-09-29",
+   "type": "communications aggregate",
+   "status": "to-verify",
+   "src": "rhowardstone communications_db aggregate (secondary export)"
+  }
+ ],
+ "remove_edges": [
+  [
+   "staley",
+   "epstein",
+   "banker and friend; correspondence"
+  ]
+ ]
+}

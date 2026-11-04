@@ -831,7 +831,7 @@ n('tdbank','TD Bank','company','finance','Says it closed accounts held by Epstei
 n('firstbank','FirstBank Puerto Rico','company','finance','Called Epstein a "legacy relationship" inherited when it bought Chase\'s USVI operations in 2002 (WSJ). A DOJ summary describes funds moving to a Puerto Rico bank after Deutsche closed his accounts (to verify).','',[])
 n('fincen','FinCEN (Treasury)','government','finance','Receives suspicious-activity reports. A SAR is a bank\'s alert, not a finding.','',[])
 n('nysdfs','New York DFS','government','finance','Regulator: $150M consent order against Deutsche Bank over Epstein, July 2020.','',[])
-n('butterfly','The Butterfly Trust','company','money','Trust opened at Deutsche Bank in January 2014; beneficiaries included alleged co-conspirators; 120 wires totalling $2.65M flagged (NYDFS).','',[])
+n('butterfly_trust','The Butterfly Trust','company','money','Trust opened at Deutsche Bank in January 2014; beneficiaries included alleged co-conspirators; 120 wires totalling $2.65M flagged (NYDFS).','',[])
 n('honeycomb','Honeycomb Partners','company','finance','Received at least $60M from Epstein 2016–19, incl. $20M in March 2019 (WSJ). Says no relationship.','',[])
 n('boothbay','Boothbay','company','finance','About $38M in from Epstein 2014–17; forced redemption after the 2019 arrest (WSJ).','',[])
 n('tudor','Tudor Futures Fund','company','finance','Epstein entity invested 2001, redeemed 2014; $13.5M received (WSJ). Says its founder did not know him personally.','',[])
@@ -849,8 +849,8 @@ e('firstbank','jpm','bought Chase\'s USVI operations, 2002','ownership',V,'ep3_w
 e('epstein','firstbank','"legacy relationship" from 2002','banking',V,'ep3_wsj_firms')
 e('deutsche','firstbank','funds reportedly moved to a Puerto Rico bank after closure (DOJ summary; to verify)','banking',T,'Ron v4 audit; DOJ disclosures')
 e('nysdfs','deutsche','$150M consent order, July 2020','official act',V,'ep3_rc_dbfailures2020')
-e('deutsche','butterfly','accounts opened Jan 2014; 120 wires, $2.65M flagged','banking',V,'ep3_rc_dbfailures2020')
-e('epstein','butterfly','settlor (trust opened Jan 2014)','ownership',V,'ep3_rc_dbfailures2020')
+e('deutsche','butterfly_trust','accounts opened Jan 2014; 120 wires, $2.65M flagged','banking',V,'ep3_rc_dbfailures2020')
+e('epstein','butterfly_trust','settlor (trust opened Jan 2014)','ownership',V,'ep3_rc_dbfailures2020')
 e('epstein','honeycomb','≥$60M in, 2016–19','investment',V,'ep3_wsj_firms')
 e('epstein','boothbay','~$38M in, 2014–17','investment',V,'ep3_wsj_firms')
 e('epstein','tudor','fund investment 2001–14; $13.5M received','investment',V,'ep3_wsj_firms')
@@ -862,11 +862,40 @@ e('bop','signet','camera project talks, Apr 2018; read as $698,108.99 contractor
 e('bop','anixter','read as $34,089.28 wiring supplier, Sep 2018','contract',T,'ep11_oig_cameras; EFTA00128262 (not checked)')
 e('signet','mcc','camera replacement (as Company 1), unfinished by Aug 2019','contract',T,'ep11_oig_cameras')
 
+# --- Ron's hand-built layer (ron_layer.json), then the verification pass (verify_layer.json)
+import os as _os
+def _apply(path):
+    if not _os.path.exists(path): return
+    L=json.load(open(path))
+    ids={x['id'] for x in N}
+    for x in L.get('nodes',[]):
+        if x['id'] not in ids:
+            N.append(dict(id=x['id'],name=x['name'],kind=x.get('kind','document'),cluster=x.get('cluster','research'),tier=x.get('tier',''),note=x.get('note',''),scenes=list(x.get('scenes',[])),apex=bool(x.get('apex',False)))); ids.add(x['id'])
+    for k,v in L.get('node_notes',{}).items():
+        for x in N:
+            if x['id']==k: x['note']=v
+    hold=set(L.get('hold_nodes',[]))   # kept out of the published map (private individuals with no documented role); see held_research.json
+    if hold and not _os.path.exists('held_research.json'):
+        json.dump({'nodes':[x for x in N if x['id'] in hold],'edges':[x for x in E if x['f'] in hold or x['t'] in hold]},open('held_research.json','w'),ensure_ascii=False,indent=1)
+    if hold:
+        N[:]=[x for x in N if x['id'] not in hold]; E[:]=[x for x in E if x['f'] not in hold and x['t'] not in hold]
+    rm={tuple(r) for r in L.get('remove_edges',[])}
+    E[:]=[x for x in E if (x['f'],x['t'],x['label']) not in rm]
+    for x in L.get('edges',[]):
+        E.append(dict(f=x['f'],t=x['t'],label=x['label'],type=x.get('type',''),status=x['status'],src=x.get('src','')))
+    for s in L.get('status',[]):   # [f, t, label-prefix, new status, new src, note]
+        for x in E:
+            if x['f']==s[0] and x['t']==s[1] and x['label'].startswith(s[2]):
+                x['status']=s[3]
+                if s[4]: x['src']=(x['src']+'; '+s[4]).strip('; ')
+                if len(s)>5 and s[5]: x['label']=s[5][1:] if s[5].startswith('=') else x['label']+' — '+s[5]
+_apply('ron_layer.json'); _apply('verify_layer.json')
+
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
 
-json.dump({'built':'2026-10-31','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
+json.dump({'built':'2026-11-04','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
 ids={x['id'] for x in N}
 bad=[x for x in E if x['f'] not in ids or x['t'] not in ids]
 print(len(N),'nodes',len(E),'edges','bad',bad)

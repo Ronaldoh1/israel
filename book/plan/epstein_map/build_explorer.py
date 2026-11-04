@@ -31,6 +31,15 @@ URL = {
  'ABC, Feb 2026': 'https://www.goodmorningamerica.com/news/story/victims-settle-case-epsteins-longtime-attorney-accountant-documents-130325546',
  'EFTA00584804': 'https://epsteinexposed.com/documents/efta-efta00584804',
 }
+import csv as _csv
+DS = [(int(r['efta_start'][4:]), int(r['efta_end'][4:]), r['dataset']) for r in _csv.DictReader(open(os.path.join(HERE, 'efta_datasets.csv')))]
+def efta_url(part):
+    m = re.search(r'EFTA(\d{8})', part)
+    if not m: return None
+    n = int(m.group(1))
+    for a, b, ds in DS:
+        if a <= n <= b: return 'https://www.justice.gov/epstein/files/DataSet%%20%s/EFTA%s.pdf' % (ds, m.group(1))
+    return None
 def resolve(src, base):
     out = []
     for part in [p.strip() for p in src.split(';') if p.strip()]:
@@ -44,6 +53,7 @@ def resolve(src, base):
         if not u:
             for lab, v in URL.items():
                 if part.startswith(lab): u = v; break
+        if not u: u = efta_url(part)
         out.append({'t': part, 'u': u})
     return out
 def build(base):

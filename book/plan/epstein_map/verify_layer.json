@@ -1,0 +1,68 @@
+{
+ "_about": "Verification pass, 4 Nov 2026. Documents read in the DOJ release text (EFTA numbers link to justice.gov) and checked against news reports. Status upgrades, new documented ties, and five private individuals held back from the published map.",
+ "hold_nodes": ["daphne_wallace","carluz_toylo","valdson_cotrin","janusz_banasiak","brice_gordon"],
+ "nodes": [
+  {"id":"plan_d","name":"Plan D, LLC","kind":"company","cluster":"aviation","note":"US Virgin Islands company; Epstein signed as its sole member. Listed as the holder of the Gulfstream G550 N212JE, and the borrower of $30.5M from Leon Black's BV70 LLC in 2017."},
+  {"id":"bv70","name":"BV70 LLC","kind":"company","cluster":"finance","note":"New York company owned by Leon Black, addressed care of Elysium Management. Lent Epstein's Plan D $30.5M in 2017 (Dechert review for Apollo, 2021); reported as the route for Black's $10M to Gratitude America."},
+  {"id":"n212je","name":"Gulfstream G550 N212JE","kind":"place","cluster":"aviation","note":"Aircraft listed against Plan D, LLC in Epstein's own aircraft list in the release."},
+  {"id":"n908je","name":"Boeing 727 N908JE","kind":"place","cluster":"aviation","note":"Owned by JEGE, Inc., per a 2006 FBI interview with one of Epstein's pilots; seats up to 26."},
+  {"id":"n909je","name":"Gulfstream N909JE","kind":"place","cluster":"aviation","note":"Owned and operated by Hyperion Air, Inc., per the same 2006 FBI interview; seats up to 12. The pilot said Epstein kept a separate company for each plane for liability reasons."},
+  {"id":"plaskett","name":"Stacey Plaskett","kind":"person","cluster":"politics","tier":"association","note":"Delegate to Congress for the US Virgin Islands. Texted with Epstein during a February 2019 House hearing; a House censure resolution over it failed in November 2025. Received campaign donations from Epstein's accountants (reported). Not accused of a crime."},
+  {"id":"wbarr","name":"William Barr","kind":"person","cluster":"justice","note":"US Attorney General 2019–2020; in August 2019 said there were 'serious irregularities' at the jail where Epstein died. Son of Donald Barr, the Dalton headmaster. Nothing in the record ties him to the Dalton hire; the family tie is shown only so the two are not confused."},
+  {"id":"obama_wh","name":"White House tour, 27 Dec 2015","kind":"project","cluster":"politics","note":"Woody Allen, Soon-Yi Previn and Kathryn Ruemmler visited on 27 Dec 2015 after Epstein asked Ruemmler in May 2015 to show them the White House (NBC, from released emails and White House visitor records)."}
+ ],
+ "node_notes": {
+  "bella_klein": "Assistant Controller at HBRK Associates, Richard Kahn's accounting firm, and an accountant there since November 1999, per a 2019 TD Bank suspicious-activity report in the release (a bank report, not a finding). Listed as a contact for HBRK's accounts. Not accused of a crime. Email counts come from a secondary research export and are not checked.",
+  "hbrk": "HBRK Associates Inc., 575 Lexington Avenue, New York: Richard Kahn's accounting firm. Wires from Epstein, Southern Trust, Southern Financial and Darren K. Indyke PLLC accounts were addressed 'c/o HBRK Associates' (TD Bank SAR, 2019). It described itself to the bank as serving ultra-high-net-worth clients other than Epstein."
+ },
+ "remove_edges": [
+  ["southern_trust","edr_invoice","issued, $15M (document as published; not independently checked)"],
+  ["edr_invoice","deutsche_us","payment instructions at Deutsche Bank Trust Co. Americas"],
+  ["bop","signet","camera project talks, Apr 2018; read as $698,108.99 contractor, Sep 20"],
+  ["bop","anixter","read as $34,089.28 wiring supplier, Sep 2018"],
+  ["signet","mcc","camera replacement (as Company 1), unfinished by Aug 2019"],
+  ["southern_trust","schwab","named in a 2019 FinCEN SAR (not a finding)"],
+  ["kahn","schwab","named in the same 2019 SAR (not a finding)"]
+ ],
+ "edges": [
+  {"f":"southern_trust","t":"edr_invoice","label":"issued, 15 Dec 2015: $15M 'pursuant to Agreement dated 3 November 2015' (other reporting dates the contract 5 Oct)","type":"payment","status":"verified","src":"EFTA00586695"},
+  {"f":"edr_invoice","t":"deutsche_us","label":"payment instructions: Deutsche Bank Trust Company Americas","type":"banking","status":"verified","src":"EFTA00586695"},
+  {"f":"bop","t":"signet","label":"contract $698,108 for 152 cameras, recorder and installation, 21 Sep 2018","type":"contract","status":"verified","src":"EFTA00128262; ep11_oig_cameras"},
+  {"f":"bop","t":"anixter","label":"contract $34,089.28 for wiring, 24 Sep 2018; final award $24,918.28, Oct 2019","type":"contract","status":"verified","src":"EFTA00128262"},
+  {"f":"signet","t":"mcc","label":"camera replacement, staff installing from Mar 2019; unfinished on 10 Aug 2019","type":"contract","status":"verified","src":"EFTA00128262; ep11_oig_cameras"},
+  {"f":"bop","t":"signet","label":"new contracts after the death: $160,508 licences and recorders (12 Sep 2019), $42,334.76 switches (14 Sep 2019)","type":"contract","status":"verified","src":"EFTA00128262"},
+  {"f":"southern_trust","t":"schwab","label":"account named in Schwab's 2019 suspicious-activity report (a bank report, not a finding)","type":"reporting","status":"verified","src":"EFTA01656452"},
+  {"f":"kahn","t":"schwab","label":"named in the same 2019 report as an HBRK senior executive (not a finding)","type":"reporting","status":"verified","src":"EFTA01656452"},
+  {"f":"kahn","t":"hbrk","label":"his accounting firm; sole authorised signer on its 2019 TD Bank accounts","type":"ownership","status":"verified","src":"EFTA01656524"},
+  {"f":"bella_klein","t":"hbrk","label":"Assistant Controller; accountant there since Nov 1999 (per bank report)","type":"employment","status":"verified","src":"EFTA01656524"},
+  {"f":"southern_trust","t":"hbrk","label":"Deutsche Bank account addressed c/o HBRK; $500,000 wire, 26 Mar 2019","type":"banking","status":"verified","src":"EFTA01656524"},
+  {"f":"indyke","t":"hbrk","label":"Darren K. Indyke PLLC account addressed c/o HBRK; three wires, $114,741","type":"banking","status":"verified","src":"EFTA01656524"},
+  {"f":"kahn","t":"plaskett","label":"campaign donations: $2,600 (2014), $5,400 (2016), $2,700 (2018) (reported)","type":"funding","status":"reported","src":"EFTA00163119"},
+  {"f":"bella_klein","t":"plaskett","label":"campaign donation $2,600 (2014) (reported)","type":"funding","status":"reported","src":"EFTA00163119"},
+  {"f":"epstein","t":"plaskett","label":"texted her during the Feb 2019 Cohen hearing; censure over it failed, Nov 2025","type":"correspondence","status":"verified","src":"ep15_axios_plaskett2025"},
+  {"f":"epstein","t":"plan_d","label":"sole member; signed its $30.5M note, 17 Apr 2017","type":"ownership","status":"verified","src":"EFTA00808900"},
+  {"f":"plan_d","t":"n212je","label":"listed holder of the G550","type":"ownership","status":"verified","src":"EFTA00492133"},
+  {"f":"jege","t":"n908je","label":"owner of the 727 (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
+  {"f":"hyperion","t":"n909je","label":"owner and operator of the Gulfstream (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
+  {"f":"epstein","t":"jege","label":"his company (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
+  {"f":"black","t":"bv70","label":"owner","type":"ownership","status":"verified","src":"ep15_dechert_apollo2021"},
+  {"f":"bv70","t":"plan_d","label":"loans of $22.5M and $8M, early 2017, for an art deal; $10M repaid 2018; rest unpaid at his death","type":"loan","status":"verified","src":"ep15_dechert_apollo2021; EFTA00808900"},
+  {"f":"elysium","t":"bv70","label":"administrative-services agreement covering BV70 (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
+  {"f":"elysium","t":"lbf_holdings","label":"administrative-services agreement covering LBF Holdings (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
+  {"f":"elysium","t":"ldb_2011_llc","label":"administrative-services agreement covering LDB 2011 (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
+  {"f":"wbarr","t":"dbarr","label":"son","type":"kinship","status":"verified","src":"ep7_snopes_barr"},
+  {"f":"wbarr","t":"mcc","label":"as Attorney General: 'serious irregularities' at the jail, Aug 2019","type":"official act","status":"verified","src":"ep15_abc_barr2019"},
+  {"f":"epstein","t":"obama_wh","label":"asked Ruemmler, May 2015, to show Allen and Previn the White House","type":"correspondence","status":"verified","src":"ep15_nbc_allen2026"},
+  {"f":"ruemmler","t":"obama_wh","label":"took the visitors, 27 Dec 2015","type":"association","status":"verified","src":"ep15_nbc_allen2026"},
+  {"f":"allen","t":"obama_wh","label":"visited with Soon-Yi Previn, 27 Dec 2015","type":"association","status":"verified","src":"ep15_nbc_allen2026"}
+ ],
+ "status": [
+  ["summers","epstein","correspondence after 2008","verified","ep15_ap_summers2025","=correspondence after 2008; stepped back from public roles, Nov 2025"],
+  ["musk","epstein","2012–13 emails about an island visit","verified","ep15_time_musk2026","=2012–13 emails discussing an island visit; he says he declined"],
+  ["lutnick","epstein","neighbour; 2012 island lunch","verified","ep15_cbs_lutnick2026",""],
+  ["ferguson","epstein","2011 correspondence","verified","ep15_stv_ferguson2025","=2011 email calling him a 'supreme friend', after his conviction"],
+  ["bannon","epstein","on-camera interview; strategy texts","verified","ep6_nbc_bannon2026",""],
+  ["binsulayem","epstein","correspondence; Great St. James","verified","ep15_wtop_dpworld2026","=correspondence; replaced as DP World chairman, Feb 2026"],
+  ["branson","epstein","2013 email; PR advice","verified","ep15_pa_branson2026","=2013 emails, including PR advice"]
+ ]
+}

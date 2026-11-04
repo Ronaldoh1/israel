@@ -157,7 +157,7 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
 .edge .src{display:block;margin-top:5px;font:400 11px/1.5 var(--f-mono);color:var(--muted)}
 .edge .src a{color:var(--gold);text-underline-offset:2px}
 .pill{flex:none;font:500 10px/1 var(--f-mono);letter-spacing:.04em;padding:4px 7px;border-radius:999px;border:1px solid currentColor;white-space:nowrap;text-transform:uppercase}
-.s-withheld{color:var(--wh)} .s-verified{color:var(--ver)} .s-to-verify{color:var(--tov)} .s-not-established{color:var(--nest)} .s-probable{color:var(--tov)}
+.s-withheld{color:var(--wh)} .s-verified{color:var(--ver)} .s-to-verify{color:var(--tov)} .s-not-established{color:var(--nest)} .s-probable{color:var(--tov)} .s-planned,.s-reported,.s-scheduled{color:var(--tov);font-style:italic}
 .rule{font-size:12.5px;color:var(--muted);border-left:2px solid var(--gold-2);padding:2px 0 2px 10px;margin:12px 0}
 .loops{padding-left:20px;margin:6px 0}
 .loops li{cursor:pointer;margin:6px 0;line-height:1.45;color:var(--ink)}
@@ -214,7 +214,8 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
       <button class="toolsBtn" id="toolsBtn" type="button" aria-expanded="false" aria-controls="toolsWrap">Tools
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
     </div>
-    <p class="lede">Every documented tie is an edge, each with its source. Expand outward from any node, walk the inbound edges upward, find loops, trace a path, or remove a node to see what still connects.</p>
+    <p class="lede">Every documented tie is an edge, each with its source. Trust structures, art-finance arrangements, selected flight-log evidence and correspondence networks are mapped from DOJ trust agreements, entity schedules, partnership agreements, inventories, transaction emails, FBI interview records, court-filed JPMorgan email-review exhibits and DOJ Datasets 9–11 email and financial records. Email-derived links distinguish direct correspondence, scheduling, proposed arrangements and participant-reported financial assistance. Proposed arrangements and payment instructions are explicitly distinguished from completed transactions; roles do not imply criminal conduct. Expand outward from any node, walk inbound edges, find loops, trace a path, or remove a node to see what still connects.</p>
+    <p class="lede">Dataset 11 additions include financial correspondence, proposed unit purchases, a conditional helicopter deposit agreement, aircraft-service proposals and investment/contribution requests. “Reported”, “planned” and “to verify” are deliberately distinct from completed payments.</p>
     <div class="modes" role="toolbar" aria-label="Graph mode">
       <button id="mExpand" class="on" type="button">Expand</button>
       <button id="mUp" type="button">Walk upward</button>
@@ -358,7 +359,7 @@ function draw(){
   const nodes=ids.map(id=>{ let p=posCache.get(id); if(!p){ const q=nbrPos(id); p=q?{x:q.x+(Math.random()-.5)*24,y:q.y+(Math.random()-.5)*24}:{x:W/2+(Math.random()-.5)*60,y:H/2+(Math.random()-.5)*60}; } return Object.assign({id,d:depth.get(id)},p); });
   live=new Map(nodes.map(n=>[n.id,n]));
   const links=[]; E.forEach((e,i)=>{ if(!depth.has(e.f)||!depth.has(e.t)) return;
-    if(e.status==='not-established' && !$('ne').checked) return; if(e.status==='withheld'&&!$('wh').checked) return; if(['to-verify','probable'].includes(e.status)&&!$('tv').checked) return;
+    if(e.status==='not-established' && !$('ne').checked) return; if(e.status==='withheld'&&!$('wh').checked) return; if(!['verified','withheld','not-established'].includes(e.status)&&!$('tv').checked) return;
     links.push({source:e.f,target:e.t,i}); });
   $('stat').textContent = `${nodes.length} nodes · ${links.length} edges`;
   const rem=d=>removed.has(E[d.i].f)||removed.has(E[d.i].t);
