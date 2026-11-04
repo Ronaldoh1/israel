@@ -200,6 +200,10 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
   .modes{-webkit-mask-image:linear-gradient(90deg,#000 86%,transparent);mask-image:linear-gradient(90deg,#000 86%,transparent);padding-right:28px}
 }
 @media (max-width:380px){.tiles b{font-size:15px}.c-meta b{font-size:13px}.modes button{padding:8px 11px}}
+.prof{display:grid;grid-template-columns:minmax(96px,34%) 1fr;gap:6px 12px;margin:6px 0 10px;font-size:13.5px;line-height:1.45}
+.prof dt{font-weight:700;opacity:1}.prof dd{margin:0;overflow-wrap:anywhere}.prof small{font-size:12px}
+.pl{margin:0;padding-left:16px}.pl li{margin:0 0 2px}.pn{font-style:italic}
+#q{width:100%}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head>
 <body>
@@ -225,6 +229,7 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
     <div class="toolsWrap" id="toolsWrap"><div class="toolsIn"><div class="tools">
       <label class="field" for="root" style="flex:1 1 240px"><span>Start from</span><select id="root" class="sel"></select></label>
       <label class="field" for="depth" style="flex:1 1 200px"><span>Depth</span><div class="depthRow"><input id="depth" type="range" min="1" max="4" value="1"><b id="dval">1</b></div></label>
+      <label class="field" for="q" style="flex:1 1 100%"><span>Ask the nodes</span><input id="q" class="sel" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder='e.g. tier:1 role:finance ties>5   or   flights>20 island>0   or   volume:"Iran"'></label>
       <div class="field" style="flex:1 1 100%"><span>Show</span><div class="chips">
         <label class="chip"><input id="tv" type="checkbox" checked><span>To verify</span></label>
         <label class="chip"><input id="wh" type="checkbox" checked><span>Withheld</span></label>
@@ -491,6 +496,7 @@ function side(id,msg){
   if(tags.length) h+=`<div class="c-tags" style="margin-top:6px">${tags.join('')}</div>`;
   h+=`<p class="note">${esc(n.note||'')}</p>
   <div class="tiles"><div><b>${st.total}</b><small>ties</small></div><div><b>${st.ver}</b><small>verified</small></div><div><b>${st.tov}</b><small>to verify</small></div><div><b>${st.wh}</b><small>withheld</small></div></div>
+  ${profile(n)}
   <div class="sec">${rows.length} edges</div>`;
   for(const [e,i] of rows){ const other=e.f===id?e.t:e.f, dir=e.f===id?'→':'←';
     h+=`<div class="edge" data-go="${esc(other)}" tabindex="0" role="button"><span class="who"><span class="dir">${dir}</span><em>${esc(N.get(other).name)}</em><span class="pill s-${esc(e.status)}">${esc(e.status)}</span></span><span class="lab">${esc(e.label)}</span><span class="src">${esc(e.type)} · ${(e.refs||[]).map(r=>r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a>`:esc(r.t)).join('; ')}</span></div>`; }
@@ -508,6 +514,65 @@ function intro(){
   $('side').innerHTML=h;
   $('side').querySelectorAll('[data-l]').forEach(el=>{ const go=()=>{ const l=L[+el.dataset.l]; hiNodes=new Set(l.c); hiEdges=l.edges; sel=null; hideCallout(); draw(); if(isMobile()) setSheet('peek'); fit(true); }; el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
 }
+
+
+/* ---------- stored node profile + query ---------- */
+const li=a=>a&&a.length?'<ul class="pl">'+a.map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>':'<span class="pn">none on the record</span>';
+const pct=x=>x==null?'—':Math.round(x*100)+'%';
+function profile(n){
+  const q=n.qop; if(!q) return '';
+  const deg=x=>x==null?'no documented route':x===0?'—':x+(x===1?' step':' steps');
+  let h=`<div class="sec">Node profile</div><dl class="prof">
+  <dt>Position</dt><dd>${esc(q.tier)} · ${esc(q.role)}</dd>
+  <dt>From Epstein</dt><dd>${deg(q.kb_epstein)}${q.path_epstein.length>2?'<br><small>'+q.path_epstein.map(esc).join(' → ')+'</small>':''}</dd>
+  <dt>From Maxwell</dt><dd>${deg(q.kb_maxwell)}</dd>
+  <dt>Documented ties</dt><dd>${q.ties.documented} (of ${q.ties.total} edges: ${q.ties.verified} verified, ${q.ties.reported} reported or planned, ${q.ties.to_verify} to verify)</dd>
+  <dt>Bridging</dt><dd>${q.centrality.rank?'#'+q.centrality.rank+' of '+DATA.qop_meta.nodes:'—'}${q.centrality.rank_without_hubs?' · #'+q.centrality.rank_without_hubs+' with Epstein and Maxwell removed':''}</dd>`;
+  if(q.succession) h+=`<dt>If Epstein were removed</dt><dd>reaches ${pct(q.succession.broker_cover)} of his ties, ${pct(q.succession.broker_money_cover)} of his money ties, ${pct(q.succession.operations_cover)} of the operations ties, within two steps</dd>`;
+  if(q.flight) h+=`<dt>Pilot's log</dt><dd>${q.flight.n} legs, ${q.flight.y0}–${q.flight.y1}; ${q.flight.stt} to or from St Thomas</dd>`;
+  h+=`<dt>Receives (money, banking, contracts)</dt><dd>${li(q.money_in)}</dd><dt>Provides (money, banking, contracts)</dt><dd>${li(q.money_out)}</dd>`;
+  if(q.loops.length) h+=`<dt>Loops</dt><dd>${li(q.loops)}</dd>`;
+  const v=Object.entries(q.volumes||{}); if(v.length) h+=`<dt>Elsewhere in the library</dt><dd>${v.map(([k,c])=>esc(k)+' ('+c+')').join(', ')}</dd>`;
+  if(q.functions.length) h+=`<dt>Network function</dt><dd>${q.functions.map(esc).join(', ')}</dd>`;
+  h+=`<dt>Sources</dt><dd>${q.sources.distinct} distinct, ${q.sources.doj_efta} DOJ release documents</dd>`;
+  if(q.open_leads.length) h+=`<dt>Open leads</dt><dd>${li(q.open_leads)}</dd>`;
+  return h+'</dl><div class="rule">Stored with the node when the map was built. Position and distance count documented ties only; a short distance is not evidence of knowledge or wrongdoing.</div>';
+}
+const QF={
+  tier:q=>({hub:0,'Direct 1°':1,'Operational 2°':2,'Strategic 3°':3,'4°+':4})[q.tier] ?? q.tier,
+  epstein:q=>q.kb_epstein, maxwell:q=>q.kb_maxwell, role:q=>q.role,
+  ties:q=>q.ties.documented, edges:q=>q.ties.total, verified:q=>q.ties.verified, leads:q=>q.ties.to_verify, withheld:q=>q.ties.withheld,
+  rank:q=>q.centrality.rank, bridge:q=>q.centrality.rank_without_hubs,
+  flights:q=>q.flight?q.flight.n:0, island:q=>q.flight?q.flight.stt:0,
+  money:q=>q.money_in.length+q.money_out.length, loops:q=>q.loops.length,
+  volume:q=>Object.keys(q.volumes||{}).join(' | '), volumes:q=>Object.keys(q.volumes||{}).length,
+  function:q=>q.functions.join(' | '), sources:q=>q.sources.distinct, efta:q=>q.sources.doj_efta,
+  cover:q=>q.succession?Math.round(q.succession.broker_cover*100):0, ops:q=>q.succession?Math.round(q.succession.operations_cover*100):0,
+};
+const QHELP='Keys: tier epstein maxwell role kind cluster ties edges verified leads withheld rank bridge flights island money loops volume volumes function sources efta cover ops sponsor. Use key:value, key>n, key<n, key=n; plain words match names.';
+function runQuery(src){
+  const toks=(src.match(/[a-z]+(?:[:<>=]|>=|<=)(?:"[^"]*"|\S+)|"[^"]*"|\S+/gi)||[]);
+  const tests=toks.map(t=>{ const m=t.match(/^([a-z]+)(>=|<=|[:<>=])(.+)$/i);
+    if(!m){ const w=t.replace(/"/g,'').toLowerCase(); return n=>n.name.toLowerCase().includes(w); }
+    let [,k,op,v]=m; k=k.toLowerCase(); v=v.replace(/"/g,'');
+    const get=n=>k==='kind'?n.kind:k==='cluster'?n.cluster:k==='sponsor'?(n.sponsor?'yes':'no'):(QF[k]?QF[k](n.qop):undefined);
+    if(!(k in QF)&&!['kind','cluster','sponsor'].includes(k)) return ()=>false;
+    return n=>{ const x=get(n); if(x==null) return false; const num=+v;
+      if(op===':') return isNaN(num)||typeof x==='string'?String(x).toLowerCase().includes(v.toLowerCase()):x===num;
+      if(op==='=') return x==num; if(op==='>') return x>num; if(op==='<') return x<num; if(op==='>=') return x>=num; return x<=num; }; });
+  return [...N.values()].filter(n=>n.qop&&tests.every(t=>t(n)));
+}
+function queryPanel(src){
+  const r=runQuery(src).sort((a,b)=>(b.qop.ties.documented-a.qop.ties.documented)||a.name.localeCompare(b.name));
+  let h=`<div class="kind">Ask the nodes</div><h2>${r.length} match${r.length===1?'':'es'}</h2><div class="rule">${esc(QHELP)}</div>`;
+  for(const n of r.slice(0,200)) h+=`<div class="edge" data-go="${esc(n.id)}" tabindex="0" role="button"><span class="who"><em>${esc(n.name)}</em><span class="pill">${esc(n.qop.tier)}</span></span><span class="lab">${esc(n.qop.role)} · ${n.qop.ties.documented} documented ties${n.qop.flight?' · '+n.qop.flight.n+' flight legs':''}</span></div>`;
+  $('side').innerHTML=h;
+  $('side').querySelectorAll('[data-go]').forEach(el=>{ const go=()=>{ $('root').value=el.dataset.go; $('root').onchange(); pick(el.dataset.go); }; el.onclick=go; el.onkeydown=ev=>{ if(ev.key==='Enter') go(); }; });
+  if(isMobile()) setSheet('mid');
+}
+let qt=null; const qrun=()=>{ const v=$('q').value.trim(); if(v) queryPanel(v); else if(sel) side(sel); else intro(); };
+$('q').oninput=()=>{ clearTimeout(qt); if(!isMobile()) qt=setTimeout(qrun,250); };
+$('q').onkeydown=ev=>{ if(ev.key==='Enter'){ ev.preventDefault(); qrun(); if(isMobile()){ $('q').blur(); toggleTools(false); } } };
 
 /* ---------- controls ---------- */
 const roots=[...N.values()].sort((a,b)=>a.name.localeCompare(b.name));

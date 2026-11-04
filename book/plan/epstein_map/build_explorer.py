@@ -57,7 +57,7 @@ def resolve(src, base):
         out.append({'t': part, 'u': u})
     return out
 def build(base):
-    D = {'built': d['built'], 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
+    D = {'built': d['built'], 'qop_meta': d.get('qop_meta', {}), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
     t = open(os.path.join(HERE, 'graph_explorer_template.html')).read()
     return t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
 _page = build('')

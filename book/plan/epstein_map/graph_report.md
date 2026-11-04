@@ -1,6 +1,6 @@
 # Network walk from Jeffrey Epstein
 
-419 nodes, 816 edges; walked 800 (not-established edges excluded).
+419 nodes, 825 edges; walked 809 (not-established edges excluded).
 
 ## 1. Breadth-first expansion
 
@@ -227,6 +227,7 @@
 | 2 | Edmond de Rothschild Holding S.A. | Edmond de Rothschild group | group holding company | verified | ep7_ibt_rothschild2026 |
 | 2 | Benjamin de Rothschild (d. 2021) | Edmond de Rothschild group | owner until Jan 2021 | verified | ep3_finews_edr2021 |
 | 2 | Benjamin de Rothschild (d. 2021) | Ariane de Rothschild | spouse | verified | ep3_finews_edr2021 |
+| 2 | Jeffrey Epstein | Ghislaine Maxwell | transfers of more than $30M, 1999–2007 (JPMorgan executive's trial testimony) | verified | ep15_jtn_mchugh2021 |
 | 2 | Jeffrey Epstein | Peter Thiel | introduced Belyakov to him | verified | ep7_euronews_intel2026 |
 | 2 | Jeffrey Epstein | Peter Thiel | email, 28 Feb 2016: "As you may know, I represent the Rothschilds" (his claim; ten weeks after the EdR fee) | verified | ep15_bblv_rothschild2026; ep7_lemonde_ariane2026 |
 | 2 | Jeffrey Epstein | Ehud Barak | 2018: "make clear that I don't work for Mossad" (with a smiley) | verified | ep7_toi_mossad2026 |
@@ -253,6 +254,7 @@
 | 2 | Flight 935 — 11 Jan 1997 | Alan Dershowitz | named among passengers in Rodgers’s FBI interview for 11 Jan 1997 flight 935 | verified | EFTA00159180 |
 | 2 | Flight 935 — 11 Jan 1997 | EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) | passenger list and purpose summarized in FBI interview | verified | EFTA00159180 |
 | 2 | Ghislaine Maxwell | Bank of America | alleged account use (suit settled; no admission) | to-verify | ep3_cj_boa2026 |
+| 2 | Ghislaine Maxwell | Andrew Mountbatten-Windsor | 2001 photograph at her London house with Andrew and Virginia Giuffre | verified | nbc_andrew |
 | 2 | Ghislaine Maxwell | David Rodgers | Rodgers says Maxwell gave him verbal travel schedules and called about changes, particularly 1994–98 | verified | EFTA00159180 |
 | 2 | Alan "Ace" Greenberg | Bear Stearns | senior partner, later CEO | verified | BI 2025 |
 | 2 | Lesley Groff | Hardeep Singh Puri | direct scheduling correspondence about a proposed visit in New York, 5 Jan 2016 | verified | DOJ Dataset 9 — EFTA00332335 and EFTA00332336 |
@@ -397,159 +399,171 @@
 
 ## 3. Loops (verified ties, root excluded, 3–5 steps)
 
-- Blockstream → Joi Ito → Kyara Investments III → Blockstream
-- AP Narrows LP → Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
-- Federal Bureau of Prisons → MCC New York (BOP) → SigNet Technologies → Federal Bureau of Prisons
-- Matthew Menchel → 2008 Non-Prosecution Agreement → Marie Villafaña → Matthew Menchel
-- EFTA01843924 — Epstein / Ted Kaptchuk email chain (Dec 2011–Feb 2012) → Program in Placebo Studies & Therapeutic Encounter → Ted J. Kaptchuk → EFTA01843924 — Epstein / Ted Kaptchuk email chain (Dec 2011–Feb 2012)
-- AP Narrows LP → Leon Black → Narrows Holdings LLC → AP Narrows LP
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black
-- Blockchain Capital → Coinbase → Brock Pierce → Blockchain Capital
-- HBRK Associates → Darren Indyke → Southern Trust Company → HBRK Associates
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust
 - AP Narrows LP → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
-- JPMorgan email review — Exhibit 175 (2008–2013) → John Duffy → Paul Barrett → JPMorgan email review — Exhibit 175 (2008–2013)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
 - Adam Perry → Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Adam Perry
-- Ada Clapp → EFTA02473864 — Elysium administrative-services email (2016) → Elysium Management LLC → Ada Clapp
-- Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Mary Erdoes
-- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
-- Office of the Deputy Attorney General (2008) → US Department of Justice → 2008 Non-Prosecution Agreement → Office of the Deputy Attorney General (2008)
-- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- Pam Bondi → US Department of Justice → Epstein Files Transparency Act → Pam Bondi
-- Leon Black → EFTA01203778 — All Family Entities schedule (2015) → Pent Holdings, Inc. → Leon Black
-- Ehud Barak → Carbyne (Reporty) → Ergo Ltd. → Ehud Barak
-- J.M.W. Turner — Seascape: Folkestone → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → J.M.W. Turner — Seascape: Folkestone
-- JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan Chase
+- EFTA01843924 — Epstein / Ted Kaptchuk email chain (Dec 2011–Feb 2012) → Program in Placebo Studies & Therapeutic Encounter → Ted J. Kaptchuk → EFTA01843924 — Epstein / Ted Kaptchuk email chain (Dec 2011–Feb 2012)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- Matthew Menchel → 2008 Non-Prosecution Agreement → Marie Villafaña → Matthew Menchel
 - HBRK Associates → Richard Kahn → Southern Trust Company → HBRK Associates
-- DOC_EFTA02406979 — Shmitka Air / Sikorsky S-76 deposit agreement → Darren Indyke → Shmitka Air Inc. → DOC_EFTA02406979 — Shmitka Air / Sikorsky S-76 deposit agreement
-- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Pilot flight logs → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- APO-01 Trust → APO-01 art inventory → EFTA00592899 — APO-01 Declaration art inventory (2016) → APO-01 Trust
-- Paul Lavery → Palm Beach computers and items (2005) → William Riley → Paul Lavery
-- US Department of Justice → Epstein Files Transparency Act → Justice Manual 9-27.760 (updated Feb 2024) → US Department of Justice
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- Todd Blanche → Pam Bondi → US Department of Justice → Todd Blanche
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
+- Pam Bondi → US Department of Justice → Epstein Files Transparency Act → Pam Bondi
+- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
 - JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- JPMorgan email review — Exhibit 175 (2008–2013) → John Duffy → Paul Barrett → JPMorgan email review — Exhibit 175 (2008–2013)
+- Todd Blanche → Pam Bondi → US Department of Justice → Todd Blanche
 - Todd Blanche → Pam Bondi → Donald Trump → Todd Blanche
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Pilot flight logs → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- US Department of Justice → Epstein Files Transparency Act → Justice Manual 9-27.760 (updated Feb 2024) → US Department of Justice
+- AP Narrows LP → Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust
+- Federal Bureau of Prisons → MCC New York (BOP) → SigNet Technologies → Federal Bureau of Prisons
+- J.M.W. Turner — Seascape: Folkestone → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → J.M.W. Turner — Seascape: Folkestone
+- AP Narrows LP → Leon Black → Narrows Holdings LLC → AP Narrows LP
+- Blockchain Capital → Coinbase → Brock Pierce → Blockchain Capital
+- Office of the Deputy Attorney General (2008) → US Department of Justice → 2008 Non-Prosecution Agreement → Office of the Deputy Attorney General (2008)
+- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
+- DOC_EFTA02406979 — Shmitka Air / Sikorsky S-76 deposit agreement → Darren Indyke → Shmitka Air Inc. → DOC_EFTA02406979 — Shmitka Air / Sikorsky S-76 deposit agreement
+- Ehud Barak → Carbyne (Reporty) → Ergo Ltd. → Ehud Barak
+- Leon Black → EFTA01203778 — All Family Entities schedule (2015) → Pent Holdings, Inc. → Leon Black
 - AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
-- 301 East 66th Street apartments → Ehud Barak → State of Israel (government) → Israel's Permanent Mission to the UN → 301 East 66th Street apartments
-- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- Jeffrey E. Epstein 2019 Trust → Darren Indyke → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2019 Trust
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → TD Bank → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- Southern Trust–Rothschild letter of agreement (draft, Sept 2015) → EdR Switzerland non-prosecution agreement → Southern Trust–EdR contract, 5 Oct 2015 → Southern Trust Company → Southern Trust–Rothschild letter of agreement (draft, Sept 2015)
-- Todd Blanche → US Department of Justice → Federal Bureau of Prisons → Ghislaine Maxwell → Todd Blanche
-- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → Ariane de Rothschild
-- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- HBRK Associates → Darren Indyke → TD Bank → Richard Kahn → HBRK Associates
-- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- Mary Erdoes → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → Mary Erdoes
-- EFTA00592228 — ALL ART inventory (2017) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00592228 — ALL ART inventory (2017)
-- The Butterfly Trust → Darren Indyke → TD Bank → Richard Kahn → The Butterfly Trust
-- Todd Blanche → Pam Bondi → Epstein Files Transparency Act → US Department of Justice → Todd Blanche
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- AP Narrows LP → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
-- Todd Blanche → Ghislaine Maxwell → Flight 934 — 5 Jan 1997 → Donald Trump → Todd Blanche
-- The Butterfly Trust → Darren Indyke → HBRK Associates → Richard Kahn → The Butterfly Trust
-- DOC_EFTA02502604 — Knowledge Universe LP confidential memorandum / election → Knowledge Universe Education L.P. → DOC_EFTA02719667 — Knowledge Universe LP confidential memorandum correspondence → LBF Holdings LLC → DOC_EFTA02502604 — Knowledge Universe LP confidential memorandum / election
-- Todd Blanche → US Department of Justice → Pam Bondi → Donald Trump → Todd Blanche
-- APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00592899 — APO-01 Declaration art inventory (2016) → APO-01 Trust
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → Flight 934 — 5 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → EdR Switzerland non-prosecution agreement → Edmond de Rothschild group → Ariane de Rothschild
-- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → The Butterfly Trust
-- The Butterfly Trust → Darren Indyke → Southern Trust Company → Richard Kahn → The Butterfly Trust
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → AP Narrows LP
-- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00592228 — ALL ART inventory (2017) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
+- JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan Chase
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- Paul Lavery → Palm Beach computers and items (2005) → William Riley → Paul Lavery
+- APO-01 Trust → APO-01 art inventory → EFTA00592899 — APO-01 Declaration art inventory (2016) → APO-01 Trust
+- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black
+- HBRK Associates → Darren Indyke → Southern Trust Company → HBRK Associates
+- Juan Alessi → Ghislaine Maxwell → El Brillo Way, Palm Beach → Juan Alessi
+- Ada Clapp → EFTA02473864 — Elysium administrative-services email (2016) → Elysium Management LLC → Ada Clapp
+- Blockstream → Joi Ito → Kyara Investments III → Blockstream
+- Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Mary Erdoes
 - AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → AP Narrows LP
-- Ariane de Rothschild → Leon Black → Southern Trust Company → Southern Trust–EdR contract, 5 Oct 2015 → Ariane de Rothschild
-- Darren Indyke → Southern Trust Company → Richard Kahn → TD Bank → Darren Indyke
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- Jeffrey E. Epstein 2018 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Southern Trust Company → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Richard Kahn → The Butterfly Trust
-- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
-- HBRK Associates → Darren Indyke → Southern Trust Company → Richard Kahn → HBRK Associates
-- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → HBRK Associates → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → Latham & Watkins → Kathryn Ruemmler → Edmond de Rothschild Holding S.A.
-- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → EFTA00583700 — AP Narrows LP partnership agreement (2016)
-- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- The Butterfly Trust → Darren Indyke → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Richard Kahn → The Butterfly Trust
 - AP Narrows LP → Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
-- Southern Trust–EdR contract, 5 Oct 2015 → Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → EdR Switzerland non-prosecution agreement → Southern Trust–EdR contract, 5 Oct 2015
+- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00592228 — ALL ART inventory (2017) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
+- AP Narrows LP → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
+- The Butterfly Trust → Darren Indyke → Southern Trust Company → Richard Kahn → The Butterfly Trust
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → APO-B Trust → AP Narrows LP
+- Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → Andrew Mountbatten-Windsor
+- Mary Erdoes → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → Mary Erdoes
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- The Butterfly Trust → Darren Indyke → TD Bank → Richard Kahn → The Butterfly Trust
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Southern Trust Company → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
+- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → Ariane de Rothschild
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Richard Kahn → The Butterfly Trust
+- APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00592899 — APO-01 Declaration art inventory (2016) → APO-01 Trust
+- EFTA00592228 — ALL ART inventory (2017) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00592228 — ALL ART inventory (2017)
+- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- 301 East 66th Street apartments → Ehud Barak → State of Israel (government) → Israel's Permanent Mission to the UN → 301 East 66th Street apartments
+- Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → Latham & Watkins → Kathryn Ruemmler → Edmond de Rothschild Holding S.A.
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
+- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → EdR Switzerland non-prosecution agreement → Edmond de Rothschild group → Ariane de Rothschild
+- Todd Blanche → US Department of Justice → Pam Bondi → Donald Trump → Todd Blanche
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → HBRK Associates → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- Jeffrey E. Epstein 2018 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2018 Trust
 - Pam Bondi → US Department of Justice → Justice Manual 9-27.760 (updated Feb 2024) → Epstein Files Transparency Act → Pam Bondi
-- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
-- Carbyne (Reporty) → Ergo Ltd. → Southern Trust Company → Darren Indyke → Carbyne (Reporty)
+- Darren Indyke → Southern Trust Company → Richard Kahn → TD Bank → Darren Indyke
+- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → The Butterfly Trust
 - JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- DOC_EFTA02502604 — Knowledge Universe LP confidential memorandum / election → Knowledge Universe Education L.P. → DOC_EFTA02719667 — Knowledge Universe LP confidential memorandum correspondence → LBF Holdings LLC → DOC_EFTA02502604 — Knowledge Universe LP confidential memorandum / election
+- Todd Blanche → Ghislaine Maxwell → Melania Trump → Donald Trump → Todd Blanche
+- Todd Blanche → Ghislaine Maxwell → Flight 934 — 5 Jan 1997 → Donald Trump → Todd Blanche
+- Todd Blanche → US Department of Justice → Federal Bureau of Prisons → Ghislaine Maxwell → Todd Blanche
+- HBRK Associates → Darren Indyke → Southern Trust Company → Richard Kahn → HBRK Associates
+- Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2019 Trust
+- The Butterfly Trust → Darren Indyke → HBRK Associates → Richard Kahn → The Butterfly Trust
+- Alan Dershowitz → Flight 935 — 11 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → David Rodgers → Alan Dershowitz
+- Ariane de Rothschild → Leon Black → Southern Trust Company → Southern Trust–EdR contract, 5 Oct 2015 → Ariane de Rothschild
+- Southern Trust–Rothschild letter of agreement (draft, Sept 2015) → EdR Switzerland non-prosecution agreement → Southern Trust–EdR contract, 5 Oct 2015 → Southern Trust Company → Southern Trust–Rothschild letter of agreement (draft, Sept 2015)
+- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → EFTA00583700 — AP Narrows LP partnership agreement (2016)
+- HBRK Associates → Darren Indyke → TD Bank → Richard Kahn → HBRK Associates
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → Flight 934 — 5 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
+- Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → Andrew Mountbatten-Windsor
 - Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → Melania Trump → Donald Trump → Flight 934 — 5 Jan 1997
 - AP Narrows LP → Leon Black → Narrows Holdings LLC → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
-- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → EFTA00595394 — Narrows restructuring proposal (2014) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016)
-- Todd Blanche → Ghislaine Maxwell → Melania Trump → Donald Trump → Todd Blanche
-- Jeffrey E. Epstein 2019 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2019 Trust
-- Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2019 Trust
-- Alan Dershowitz → Flight 935 — 11 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → David Rodgers → Alan Dershowitz
-- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → APO-B Trust → AP Narrows LP
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
+- Jeffrey E. Epstein 2019 Trust → Darren Indyke → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2019 Trust
 - Jeffrey E. Epstein 2018 Trust → Darren Indyke → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- The Butterfly Trust → Darren Indyke → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Richard Kahn → The Butterfly Trust
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → TD Bank → Darren Indyke → Jeffrey E. Epstein 2018 Trust
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Southern Trust Company → Darren Indyke → Jeffrey E. Epstein 2018 Trust
-- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → Leon Black
-- Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2019 Trust
+- Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → David Rodgers → Ghislaine Maxwell → Andrew Mountbatten-Windsor
+- Todd Blanche → Pam Bondi → Epstein Files Transparency Act → US Department of Justice → Todd Blanche
+- JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
+- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- Southern Trust–EdR contract, 5 Oct 2015 → Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → EdR Switzerland non-prosecution agreement → Southern Trust–EdR contract, 5 Oct 2015
+- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
+- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → AP Narrows LP
+- Jeffrey E. Epstein 2019 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2019 Trust
+- Carbyne (Reporty) → Ergo Ltd. → Southern Trust Company → Darren Indyke → Carbyne (Reporty)
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → TD Bank → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → AP Narrows LP
+- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
 - Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → HBRK Associates → Darren Indyke → Jeffrey E. Epstein 2018 Trust
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Jeffrey E. Epstein 2018 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → Leon Black
-- Todd Blanche → Pam Bondi → US Department of Justice → Federal Bureau of Prisons → Ghislaine Maxwell → Todd Blanche
-- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black → AP Narrows LP
-- Todd Blanche → Pam Bondi → Epstein Files Transparency Act → Justice Manual 9-27.760 (updated Feb 2024) → US Department of Justice → Todd Blanche
-- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → The Butterfly Trust
-- APO-01 Trust → APO-01 art inventory → EFTA00592899 — APO-01 Declaration art inventory (2016) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016) → APO-01 Trust
+- Jeffrey E. Epstein 2019 Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2019 Trust
 - EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → David Rodgers → Pilot flight logs → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- AP Narrows LP → APO-01 Trust → EFTA00592899 — APO-01 Declaration art inventory (2016) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
-- Todd Blanche → US Department of Justice → Epstein Files Transparency Act → Pam Bondi → Donald Trump → Todd Blanche
-- Jeffrey E. Epstein 2018 Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- Ehud Barak → Carbyne (Reporty) → Darren Indyke → Southern Trust Company → Ergo Ltd. → Ehud Barak
-- HBRK Associates → Richard Kahn → TD Bank → Darren Indyke → Southern Trust Company → HBRK Associates
+- Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Pilot flight logs → David Rodgers → Ghislaine Maxwell → Andrew Mountbatten-Windsor
 - AP Narrows LP → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → AP Narrows LP
 - The Butterfly Trust → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → The Butterfly Trust
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- Todd Blanche → Pam Bondi → Donald Trump → Melania Trump → Ghislaine Maxwell → Todd Blanche
-- Jeffrey E. Epstein 2019 Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2019 Trust
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
-- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black → AP Narrows LP
-- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → Leon Black
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Jeffrey E. Epstein 2018 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
 - Alan Dershowitz → Flight 935 — 11 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Pilot flight logs → David Rodgers → Alan Dershowitz
-- Todd Blanche → Pam Bondi → Donald Trump → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → Todd Blanche
-- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → Leon Black
-- HBRK Associates → Darren Indyke → TD Bank → Richard Kahn → Southern Trust Company → HBRK Associates
-- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → EdR Switzerland non-prosecution agreement → Edmond de Rothschild group → Benjamin de Rothschild (d. 2021) → Ariane de Rothschild
 - JPMorgan email review — Exhibit 175 (2008–2013) → JPMorgan Chase → Mary Erdoes → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
-- The Butterfly Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → The Butterfly Trust
-- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
-- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → David Rodgers → Pilot flight logs → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → Leon Black
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → Southern Trust Company → Darren Indyke → Jeffrey E. Epstein 2018 Trust
+- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → Leon Black
+- Jeffrey E. Epstein 2018 Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → EdR Switzerland non-prosecution agreement → Edmond de Rothschild group → Benjamin de Rothschild (d. 2021) → Ariane de Rothschild
 - Carbyne (Reporty) → Ergo Ltd. → Southern Trust Company → HBRK Associates → Darren Indyke → Carbyne (Reporty)
-- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
-- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → Mary Erdoes → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
-- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Jes Staley → Project Molecule — proposed donor-advised fund → JPMorgan email review — Exhibit 175 (2008–2013)
+- Andrew Mountbatten-Windsor → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Les Wexner → 9 East 71st Street → Ghislaine Maxwell → Andrew Mountbatten-Windsor
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- APO-01 Trust → APO-01 art inventory → EFTA00592899 — APO-01 Declaration art inventory (2016) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016) → APO-01 Trust
+- AP Narrows LP → APO-01 Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black → AP Narrows LP
 - AP Narrows LP → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → AP Narrows LP
-- Leon Black → BV70 LLC → Elysium Management LLC → EFTA02473864 — Elysium administrative-services email (2016) → Pent Holdings, Inc. → Leon Black
-- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2018 Trust
-- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Jeffrey E. Epstein 2018 Trust → Richard Kahn → The Butterfly Trust
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → TD Bank → Darren Indyke → Jeffrey E. Epstein 2018 Trust
+- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Yirah Epstein Search → EFTA00595394 — Narrows restructuring proposal (2014) → Narrows Holdings LLC → Leon Black
+- AP Narrows LP → APO-01 Trust → EFTA00592899 — APO-01 Declaration art inventory (2016) → Yirah Epstein Search → EFTA00583700 — AP Narrows LP partnership agreement (2016) → AP Narrows LP
 - Achrayut Leumit Ltd. → Bank Leumi le-Israel → Ergo Ltd. → Southern Trust Company → HBRK Associates → Achrayut Leumit Ltd.
+- Leon Black → BV70 LLC → Elysium Management LLC → EFTA02473864 — Elysium administrative-services email (2016) → Pent Holdings, Inc. → Leon Black
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → 9 East 71st Street → Les Wexner → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → HBRK Associates → Darren Indyke → Jeffrey E. Epstein 2018 Trust
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → David Rodgers → Ghislaine Maxwell → 9 East 71st Street → Les Wexner → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- Adam Perry → Andrew Mountbatten-Windsor → Ghislaine Maxwell → David Rodgers → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Adam Perry
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → JPMorgan Chase → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → David Rodgers → Pilot flight logs → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → Jes Staley → JPMorgan Chase → JPMorgan email review — Exhibit 175 (2008–2013)
+- Ehud Barak → Carbyne (Reporty) → Darren Indyke → Southern Trust Company → Ergo Ltd. → Ehud Barak
+- HBRK Associates → Darren Indyke → TD Bank → Richard Kahn → Southern Trust Company → HBRK Associates
+- Todd Blanche → Pam Bondi → Donald Trump → Melania Trump → Ghislaine Maxwell → Todd Blanche
+- Adam Perry → Andrew Mountbatten-Windsor → Ghislaine Maxwell → Flight 934 — 5 Jan 1997 → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Adam Perry
+- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Narrows Holdings LLC → Leon Black → AP Narrows LP
+- AP Narrows LP → APO-B Trust → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Leon Black → Narrows Holdings LLC → AP Narrows LP
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- EFTA00592208 — Haze Trust artwork transaction email and wire record (2016) → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → EFTA00592208 — Haze Trust artwork transaction email and wire record (2016)
+- Todd Blanche → Pam Bondi → US Department of Justice → Federal Bureau of Prisons → Ghislaine Maxwell → Todd Blanche
+- EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Flight 844 — 22 May 1996 (PBI → Santa Fe) → Ghislaine Maxwell → 9 East 71st Street → Les Wexner → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020)
+- HBRK Associates → Richard Kahn → TD Bank → Darren Indyke → Southern Trust Company → HBRK Associates
+- Jeffrey E. Epstein 2018 Trust → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- Todd Blanche → US Department of Justice → Epstein Files Transparency Act → Pam Bondi → Donald Trump → Todd Blanche
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- Jeffrey E. Epstein 2019 Trust → Darren Indyke → Southern Trust Company → HBRK Associates → Richard Kahn → Jeffrey E. Epstein 2019 Trust
+- Adam Perry → Andrew Mountbatten-Windsor → Ghislaine Maxwell → Flight 844 — 22 May 1996 (PBI → Santa Fe) → EFTA00159180 — FBI interview of pilot David Rodgers (7 Feb 2020) → Adam Perry
 - Ariane de Rothschild → Southern Trust–EdR contract, 5 Oct 2015 → Edmond de Rothschild Holding S.A. → Edmond de Rothschild group → Benjamin de Rothschild (d. 2021) → Ariane de Rothschild
+- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Richard Kahn → The Butterfly Trust
+- The Butterfly Trust → Darren Indyke → HBRK Associates → Southern Trust Company → Richard Kahn → The Butterfly Trust
+- Leon Black → EFTA00583700 — AP Narrows LP partnership agreement (2016) → Epstein-research corpus analysis (rhowardstone) → EFTA00592228 — ALL ART inventory (2017) → Pent Holdings, Inc. → Leon Black
+- JPMorgan email review — Exhibit 175 (2008–2013) → Mary Erdoes → Project Molecule — proposed donor-advised fund → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- Jeffrey E. Epstein 2018 Trust → Jeffrey E. Epstein 2019 Trust → Darren Indyke → TD Bank → Richard Kahn → Jeffrey E. Epstein 2018 Trust
+- JPMorgan email review — Exhibit 175 (2008–2013) → Project Molecule — proposed donor-advised fund → Mary Erdoes → JPMorgan Chase → Jes Staley → JPMorgan email review — Exhibit 175 (2008–2013)
+- Todd Blanche → Pam Bondi → Epstein Files Transparency Act → Justice Manual 9-27.760 (updated Feb 2024) → US Department of Justice → Todd Blanche
+- Todd Blanche → Pam Bondi → Donald Trump → Flight 934 — 5 Jan 1997 → Ghislaine Maxwell → Todd Blanche
+- The Butterfly Trust → Darren Indyke → Jeffrey E. Epstein 2019 Trust → Jeffrey E. Epstein 2018 Trust → Richard Kahn → The Butterfly Trust
 
 ## 4. Not-established edges (listed, never walked)
 

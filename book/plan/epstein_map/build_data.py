@@ -900,3 +900,6 @@ ids={x['id'] for x in N}
 bad=[x for x in E if x['f'] not in ids or x['t'] not in ids]
 print(len(N),'nodes',len(E),'edges','bad',bad)
 from collections import Counter; print(Counter(x['status'] for x in E))
+
+# per-node stored analysis profile (tier, degrees, centrality, money, loops, succession, flights, volumes)
+import qop_nodes; _q=qop_nodes.run(); print('qop profiles', _q['qop_meta'])

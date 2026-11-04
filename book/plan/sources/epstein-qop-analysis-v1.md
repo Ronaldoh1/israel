@@ -339,3 +339,53 @@ Lesley Groff, executive assistant 2001–2019 and scheduler, is the continuity i
 So the "injection" at Maxwell's height was filled from inside the pool of people the operation drew in. That is a pattern the book should describe carefully and never as blame.
 
 **To run this properly:** add Maxwell's documented operational ties from the 2021 trial record and court filings. That means staff she supervised, properties she managed, and introductions documented in testimony, each cited. No survivor is to be added unless she has gone public. Then rerun Sections 11 and 11b with dated edges.
+
+### 11c. Rerun with Maxwell's court-record ties (4 Nov 2026)
+
+**What was added** (each cited on the map):
+- Epstein → Maxwell, more than $30M, 1999–2007 (trial evidence, reported by Just the News).
+- Maxwell → Palm Beach house: "lady of the house" and the household manual telling staff to "see nothing" (Juan Alessi testimony, UPI).
+- Maxwell → New York house, Zorro Ranch, Palm Beach: conduct charged in the 2020 indictment, convicted December 2021 (DOJ).
+- Maxwell → Prince Andrew: the 2001 London photograph (NBC).
+- Reported only, not verified: Kellen's claim about Maxwell (CBS 2026); Maxwell's 2025 account to the Deputy Attorney General placing the Andrew introduction at Lynn Forester de Rothschild's house (CBS).
+
+**Result ✅ (computed on the documented-tie graph: 262 nodes, 370 ties)**
+- Maxwell's documented ties rise from 7 to **12**. Epstein has 153.
+- Removing Epstein still leaves **75 pieces**; removing both leaves 82. The hub-and-spoke finding stands.
+- Best person on Epstein's broker role: Paul Morris and Barak reach about 10% of his ties within two steps. The Kahn–Indyke office as a group directly touches 19 of 153. **No change: the office remains the only documented successor on the money side.**
+- Best person on Maxwell's operations role: no one reaches more than **2 of her 11** operational ties within two steps (Alessi, the house manager). **Sarah Kellen has one documented tie on the map, to Epstein, and none to the rest of the operation.**
+
+**Finding.** The rotation into Maxwell's position (Section 11b) shows up only in the pilot's log, not in the documented-tie graph. Two readings are possible and the record does not choose between them:
+1. the assistants who took her place on the plane did not take over her operational ties, or
+2. their ties exist but are not on the public record (much of it sits in sealed or redacted material).
+
+Either way, the operations side has no documented successor. That matches the outcome: after Maxwell's arrest the operation is not shown running again.
+
+## 12. Per-node profiles (stored with every node)
+
+From this build on, every node in `network.json` carries a `qop` object, computed by `qop_nodes.py` at the end of `build_data.py`. It means any node can be queried without recomputing the graph. When the library moves to a dynamic app, the same fields can be computed live.
+
+| Field | What it holds |
+|---|---|
+| `tier`, `kb_epstein`, `kb_maxwell`, `path_epstein` | Kevin Bacon position: degrees from each hub over documented ties, with the shortest chain to Epstein |
+| `ties` | edge counts by status, plus documented-tie degree |
+| `centrality` | betweenness and rank, with and without the two hubs (who bridges once the hubs are gone) |
+| `role` | broker / back office / sponsor / finance / operations / official / media / access |
+| `money_in`, `money_out` | verified money, banking, ownership and contract ties |
+| `loops` | short documented cycles not passing through Epstein (🔄) |
+| `succession` | share of Epstein's ties, his money ties and the operations ties reached within two steps if both hubs are removed |
+| `flight` | pilot's log legs, years, St Thomas legs |
+| `volumes` | other Library volumes that name the node (Pass 5) |
+| `sources` | distinct sources and DOJ release documents behind its edges |
+| `open_leads`, `functions` | to-verify edges; network function in the comparison framework |
+
+**Totals.** 154 nodes at 1°, 72 at 2°, 14 at 3°, 11 further out, 10 on the map but unconnected to Epstein by documented ties; the rest are records, comparisons or nodes with only unverified ties. 51 nodes are named in at least one other Library volume.
+
+**Query tool.** The explorer's Tools panel has an "Ask the nodes" box. Examples:
+- `flights>20 island>0`: frequent flyers with St Thomas legs.
+- `tier:1 role:finance ties>4`.
+- `bridge<10`: who holds the network together once both hubs are removed.
+- `volume:"Iran"`: nodes that also appear in the Iran volume.
+- `leads>0 tier:1`: direct contacts with open leads.
+
+**Caution.** Distance is not evidence. A node one step from Epstein knew him on paper; that shows nothing about what they knew of the abuse. The profile panel says so on every node.
