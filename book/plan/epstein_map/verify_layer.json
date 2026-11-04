@@ -190,6 +190,62 @@
    "kind": "program",
    "cluster": "comparative",
    "note": "Jury acquitted Sean Combs of racketeering conspiracy and sex trafficking in July 2025 and convicted on Mann Act transportation counts. A reminder that an 'enterprise' has to be proven, not inferred from wealth and staff."
+  },
+  {
+   "id": "ergo_ltd",
+   "name": "Ergo Ltd.",
+   "kind": "company",
+   "cluster": "abroad",
+   "note": "Israeli company described in a 17 Mar 2015 email as 'solely owned by EB' (Ehud Barak), to be general partner of the partnership investing in Reporty (later Carbyne). Received Southern Trust's $1M on 16 Mar 2015 at Bank Leumi, as a loan repayable in Reporty shares."
+  },
+  {
+   "id": "bank_leumi",
+   "name": "Bank Leumi le-Israel",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Israeli bank. Received Southern Trust's $1M 'Reporty Investment' wire (branch 771, Mar 2015) and HBRK's $40,000 to Achrayut Leumit (Ramat Gan branch, Mar 2017); Deutsche Bank sent it a reference letter for Southern Trust in Mar 2019. Separately settled a US tax-evasion case in Dec 2014, which Epstein emailed to Ruemmler and Ariane de Rothschild."
+  },
+  {
+   "id": "achrayut",
+   "name": "Achrayut Leumit Ltd.",
+   "kind": "institution",
+   "cluster": "politics",
+   "note": "Israeli company that Haaretz (via the Daily Beast, 2019) described as a platform meant to unite left-wing parties if Barak returned to politics. Received $40,000 from HBRK Associates on 16 Mar 2017."
+  },
+  {
+   "id": "nili_barak",
+   "name": "Nili Priell Barak",
+   "kind": "person",
+   "cluster": "abroad",
+   "note": "Ehud Barak's wife. In March 2017 she emailed Epstein the bank details for Achrayut Leumit. Only her own documented act is shown; nothing about her husband is attributed to her or the reverse."
+  },
+  {
+   "id": "oldfield",
+   "name": "Stewart Oldfield",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Deutsche Bank Wealth Management relationship manager. Handled the 2017 compliance inquiry into the Achrayut wire and wrote the 18 Mar 2019 reference letter for Southern Trust to Bank Leumi. Not accused of a crime."
+  },
+  {
+   "id": "db_case141374",
+   "name": "Deutsche Bank AML case 141374 (2017)",
+   "kind": "document",
+   "cluster": "evidence",
+   "note": "Compliance inquiry into HBRK's $40,000 wire to Achrayut Leumit, flagged 'at random' by audit. Answers given: purpose 'Contributions for public policy organization in Israel', relationship 'Friend', counterparty 'Public Policy Org'. Closed with thanks on 11 May 2017."
+  },
+  {
+   "id": "axon",
+   "name": "Axon Enterprise",
+   "kind": "company",
+   "cluster": "tech",
+   "note": "US police-technology company. Agreed in Nov 2025 to acquire Carbyne for $625M (closing expected Q1 2026). Nothing links Axon to Epstein; the edge records what became of a company he funded."
+  },
+  {
+   "id": "edr_agreement",
+   "name": "Southern Trust–Rothschild letter of agreement (draft, Sept 2015)",
+   "kind": "document",
+   "cluster": "evidence",
+   "note": "Draft in the release (EFTA00310331): Southern Trust to work with Ariane de Rothschild, her family and Edmond de Rothschild Holding on 'risk analysis and estate planning' and 'certain algorithms'; separate fee 'for Work specifically relating to outstanding matters' between the holding company and the US Justice Department: $25M if the penalty is $75M or less, $10M if $75–150M, payable within 30 days."
   }
  ],
  "node_notes": {
@@ -825,6 +881,198 @@
    "type": "comparative methodology",
    "status": "verified",
    "src": ""
+  },
+  {
+   "f": "southern_trust",
+   "t": "ergo_ltd",
+   "label": "$1,000,000 wire, 16 Mar 2015, ref. 'Reporty Investment', Bank Leumi branch 771 (memo from Indyke)",
+   "type": "loan",
+   "status": "verified",
+   "src": "EFTA01404004; EFTA01360536"
+  },
+  {
+   "f": "barak",
+   "t": "ergo_ltd",
+   "label": "sole owner ('solely owned by EB'), per Epstein's 17 Mar 2015 email on the loan terms",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA00862046"
+  },
+  {
+   "f": "ergo_ltd",
+   "t": "carbyne",
+   "label": "general partner of the partnership investing in Reporty; loan repayable in Reporty shares; $500K more on a milestone",
+   "type": "investment",
+   "status": "verified",
+   "src": "EFTA00862046"
+  },
+  {
+   "f": "ergo_ltd",
+   "t": "bank_leumi",
+   "label": "account at branch 771",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA01404004"
+  },
+  {
+   "f": "nili_barak",
+   "t": "epstein",
+   "label": "emailed Achrayut Leumit bank details, 6–12 Mar 2017",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02350723; EFTA02657336"
+  },
+  {
+   "f": "nili_barak",
+   "t": "barak",
+   "label": "wife",
+   "type": "kinship",
+   "status": "verified",
+   "src": "EFTA02657336"
+  },
+  {
+   "f": "epstein",
+   "t": "kahn",
+   "label": "forwarded the Achrayut details, 12–13 Mar 2017; Kahn: 'please advise on amount to send'",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02657848; EFTA02386927"
+  },
+  {
+   "f": "hbrk",
+   "t": "achrayut",
+   "label": "$40,000 wire, 16 Mar 2017, at Bank Leumi",
+   "type": "payment",
+   "status": "verified",
+   "src": "EFTA01426382; EFTA01364033"
+  },
+  {
+   "f": "achrayut",
+   "t": "bank_leumi",
+   "label": "account at the Ramat Gan branch",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA02350723"
+  },
+  {
+   "f": "achrayut",
+   "t": "barak",
+   "label": "platform for his political return (Haaretz via Daily Beast, 2019)",
+   "type": "association",
+   "status": "reported",
+   "src": "ep15_db_achrayut2019"
+  },
+  {
+   "f": "oldfield",
+   "t": "db_case141374",
+   "label": "relationship manager on the inquiry; 'Sorry, I have been out of the office'",
+   "type": "employment",
+   "status": "verified",
+   "src": "EFTA01364033"
+  },
+  {
+   "f": "db_case141374",
+   "t": "hbrk",
+   "label": "inquiry into the Achrayut wire; answered 'Friend'; closed May 2017",
+   "type": "reporting",
+   "status": "verified",
+   "src": "EFTA01364033; EFTA01432431"
+  },
+  {
+   "f": "oldfield",
+   "t": "deutsche_us",
+   "label": "relationship manager, Deutsche Bank Trust Company Americas",
+   "type": "employment",
+   "status": "verified",
+   "src": "EFTA01383623"
+  },
+  {
+   "f": "oldfield",
+   "t": "bank_leumi",
+   "label": "reference letter for Southern Trust, 18 Mar 2019 ('not aware of any problems')",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA01416824; EFTA01426547"
+  },
+  {
+   "f": "indyke",
+   "t": "carbyne",
+   "label": "handled the Carbyne warrants; 12 Mar 2019: 'I thought we did not want your name associated with this Investment'",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02634615"
+  },
+  {
+   "f": "axon",
+   "t": "carbyne",
+   "label": "agreed to acquire for $625M, Nov 2025",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_pulse2_axon2025"
+  },
+  {
+   "f": "southern_trust",
+   "t": "edr_agreement",
+   "label": "party (Epstein as president)",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00310331"
+  },
+  {
+   "f": "edr_agreement",
+   "t": "edr_npa",
+   "label": "fee tied to the DOJ penalty: $25M if $75M or less; $10M if $75–150M; within 30 days",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00310331"
+  },
+  {
+   "f": "epstein",
+   "t": "ariane",
+   "label": "1 Oct 2015: 'as we agreed DOJ setttlment should be settled before any further dealings'",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00844785"
+  },
+  {
+   "f": "ariane",
+   "t": "epstein",
+   "label": "2016 emails on the Malaysia (1MDB) pressure: 'What do Doj guys prefer?'",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00828304; EFTA02456426"
+  },
+  {
+   "f": "black",
+   "t": "ariane",
+   "label": "asked Epstein's office for her cell number, Jan 2016",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02474193"
+  },
+  {
+   "f": "ruemmler",
+   "t": "edr_holding",
+   "label": "'stuck working on Rothschild stuff', 15 Oct 2015 (Groff email)",
+   "type": "employment",
+   "status": "verified",
+   "src": "EFTA02715306"
+  },
+  {
+   "f": "wexner",
+   "t": "epstein",
+   "label": "testified (Feb 2026) Epstein came recommended by a Rothschild family member he had worked with (reported)",
+   "type": "testimony",
+   "status": "reported",
+   "src": "ep15_nbc_wexner2026"
+  },
+  {
+   "f": "house_oversight",
+   "t": "wexner",
+   "label": "named 'co-conspirator' in a 2019 FBI document read on the House floor; his lawyer says prosecutors called him a source, not a target",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep15_cbs_sixnames2026"
   }
  ],
  "status": [
@@ -931,6 +1179,22 @@
    "to-verify",
    "EFTA01268751",
    "=a Puerto Rico bank already held his companies' accounts from about 2009 (FirstBank memo, 2016); whether funds moved there after Deutsche closed is not shown"
+  ],
+  [
+   "thiel",
+   "carbyne",
+   "Founders Fund investment",
+   "reported",
+   "bylinetimes_thiel_epstein_valar",
+   "=Founders Fund led a 2018 funding round (reported)"
+  ],
+  [
+   "epstein",
+   "carbyne",
+   "invested via Barak's partnership",
+   "verified",
+   "EFTA00862046",
+   "=$1M loan via Barak's Ergo Ltd., Mar 2015, repayable in Reporty shares"
   ]
  ]
 }
