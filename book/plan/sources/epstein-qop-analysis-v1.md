@@ -249,3 +249,50 @@ Graph nodes found in other library volumes (exact-name matches):
 4. **USVI EDC approval files.** Who renewed Southern Trust's tax status, on what evidence.
 5. **Southern Trust's books.** What the $25M from EdR bought: deliverables, or none.
 6. **Pre-1995 flight-log pages, transcribed.** Completes Section 1's counts.
+
+---
+
+## 11. Succession test: remove the hub, see who rebalances (added 4 Nov 2026)
+
+**Question (Ron):** if Epstein is deleted, which node would have to be "injected" at his height to keep the network working? It would need to be someone who knows how the network is connected and run.
+
+**Method.** Run on the documented-tie graph.
+1. Remove Epstein, then Epstein + Maxwell.
+2. Score every remaining person and entity on four measures:
+   - share of Epstein's 154 documented ties reachable within two steps;
+   - share of his 60 money/ownership ties reachable within two steps;
+   - betweenness after removal;
+   - direct overlap.
+3. Rerun with the **office** merged: Kahn and Indyke plus the vehicles they documentably controlled as trustees, executors or signers (HBRK, Southern Trust, Financial Trust, the Butterfly and 2018/2019 trusts, Plan D, JEGE, Hyperion, LSJE, Kyara, Gratitude America).
+4. Measure "knowledge of operation" as how many of the map's clusters a person reaches within two steps.
+
+**Results ✅ (computed)**
+
+| Removal | Pieces left | Best single replacement covers |
+|---|---|---|
+| Epstein | 78 | 15 of 154 ties (10%): Butterfly Trust, Paul Morris |
+| Epstein + Maxwell | 82 | 15 of 154: Paul Morris; Southern Trust and Barak top the score |
+| Epstein, office merged | 76 | **The Kahn–Indyke office: 22 of 154 (14%); betweenness 0.21, twice Maxwell's 0.10; reaches 14 clusters** |
+
+Widest two-step reach across clusters among individuals:
+- Barak: 11 clusters.
+- Indyke: 10.
+- Kahn: 10.
+- Wexner: 8.
+- Black: 7.
+- Maxwell: 6.
+
+**Findings**
+1. **No node can rebalance the tree.** ✅ The network is a star, not a balanced tree. No single node holds more than about a tenth of the hub's ties, so removing the hub shatters it rather than rotating a successor into place. Compartmentalisation shows up as structure. Each sponsor, bank and guest knew Epstein, not each other.
+2. **The money side had a successor, and it is documented.** ✅ The only position that comes close is the office. It already held signature authority, trusteeships and the c/o address. After August 2019 that is what happened on paper: Kahn and Indyke became co-executors and controlled the estate and its companies until the estate's settlements. They deny any knowledge of or role in the abuse and settled without admission. This is structural position, not an accusation.
+3. **The operations side's successor was Maxwell**, the second-strongest node. She was removed by her 2020 arrest and 2021 conviction. No one else in the map holds that position.
+4. **The access side had no successor.** The introductions network (Barak, Black, Wexner, the guests) was held together only by Epstein. Barak has the widest cross-cluster reach of any individual, but his ties run through business introductions, not the operation.
+5. **Bias warning ❓.** This is an ego network built from Epstein's own record. Other people's independent ties are invisible, so their coverage is understated. A real successor could sit outside the map entirely. That is the limit of what this graph can show.
+
+**What would sharpen the test (graph upgrades):**
+- Edge **weights**: dollar amounts, message counts, flight counts.
+- **Direction**: who paid whom, who instructed whom.
+- **Dates**: start and end of each tie, so succession can be read as "who held the tie at time T".
+- Explicit **control edges**: signer, trustee, executor, director.
+
+With those, the same test can run year by year, for example in 2008 (jail) and 2019 (arrest).
