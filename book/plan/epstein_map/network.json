@@ -4723,6 +4723,39 @@
    "scenes": [],
    "apex": false,
    "sponsor": false
+  },
+  {
+   "id": "pilot_log",
+   "name": "Pilot's passenger log, 1991–2006 (trial exhibit)",
+   "kind": "document",
+   "cluster": "evidence",
+   "tier": "",
+   "note": "Passenger log kept by Epstein's pilot David Rodgers, obtained by the FBI in Feb 2020 and used as a trial exhibit in US v. Maxwell (minor victims' names redacted). Counts on this map come from a public transcription (flight-logs-explorer: 4,731 log rows, mostly 1995–2006, plus 270 FOIA rows), spot-checked against the FBI's summary of Rodgers's interview. Pages before 1995 are not in the transcription, so totals are minimums. A flight to St Thomas is not proof of a visit to Little St. James, and being on a flight is not evidence of a crime.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "ubs",
+   "name": "UBS",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Swiss bank. Received federal grand-jury subpoenas for Epstein-related records in Aug and Sep 2019 and June 2020 (subpoena returns in the release).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
+  },
+  {
+   "id": "citi",
+   "name": "Citibank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Received federal grand-jury subpoenas (Aug 2019, June 2020) and a US Virgin Islands civil subpoena (July 2020) for Epstein-related records.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false
   }
  ],
  "edges": [
@@ -10925,6 +10958,334 @@
    "type": "oversight",
    "status": "verified",
    "src": "ep15_cbs_sixnames2026"
+  },
+  {
+   "f": "pilot_log",
+   "t": "epstein",
+   "label": "1046 flight legs in the pilot's log, 1995–2006; 175 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "gmax",
+   "label": "517 flight legs in the pilot's log, 1995–2006; 83 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "kellen",
+   "label": "308 flight legs in the pilot's log, 2001–2006; 77 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "visoski",
+   "label": "158 flight legs in the pilot's log, 2001–2006; 43 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "brunel",
+   "label": "30 flight legs in the pilot's log, 2000–2005; 5 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "bclinton",
+   "label": "25 flight legs in the pilot's log, 2002–2003; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "dubin",
+   "label": "21 flight legs in the pilot's log, 1995–2004; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "dershowitz",
+   "label": "12 flight legs in the pilot's log, 1996–2005; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "paula",
+   "label": "11 flight legs in the pilot's log, 1996–2003; 1 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "cayne",
+   "label": "6 flight legs in the pilot's log, 1996–1998; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "summers",
+   "label": "4 flight legs in the pilot's log, 1998–2005; 1 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "mark_epstein",
+   "label": "4 flight legs in the pilot's log, 1996–2004; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "fekkai",
+   "label": "3 flight legs in the pilot's log, 2000–2002; 1 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "zicherman",
+   "label": "2 flight legs in the pilot's log, 1996–1996; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "pastrana",
+   "label": "2 flight legs in the pilot's log, 2003–2003; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "trump",
+   "label": "1 flight legs in the pilot's log, 1997–1997; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "ferguson",
+   "label": "1 flight legs in the pilot's log, 1998–1998; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "greenberg",
+   "label": "1 flight legs in the pilot's log, 1995–1995; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "brockman",
+   "label": "1 flight legs in the pilot's log, 2002–2002; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "pinker",
+   "label": "1 flight legs in the pilot's log, 2002–2002; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "pritzker",
+   "label": "1 flight legs in the pilot's log, 2000–2000; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "andrew",
+   "label": "1 flight legs in the pilot's log, 2000–2000; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "marcinko",
+   "label": "125 flight legs in the pilot's log, 2003–2006; 43 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "ross",
+   "label": "12 flight legs in the pilot's log, 2004–2005; 5 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "dennett",
+   "label": "1 flight legs in the pilot's log, 2002–2002; none to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "pilot_log",
+   "t": "adam_perry",
+   "label": "13 flight legs in the pilot's log, 1998–2001; 3 to or from St Thomas",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "ep15_fle_flightlogs; EFTA00172145"
+  },
+  {
+   "f": "fbi",
+   "t": "wexner",
+   "label": "subpoena ready to serve, 10 Jul 2019; withdrawn when his lawyers said he would sit for an interview",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA01249806"
+  },
+  {
+   "f": "sdny",
+   "t": "kahn",
+   "label": "grand-jury subpoena, 18 Oct 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00088989"
+  },
+  {
+   "f": "sdny",
+   "t": "indyke",
+   "label": "grand-jury subpoena, 18 Oct 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00088989"
+  },
+  {
+   "f": "sdny",
+   "t": "deutsche",
+   "label": "grand-jury subpoenas for records, from 11 Jul 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00095467; EFTA00096339"
+  },
+  {
+   "f": "sdny",
+   "t": "jpm",
+   "label": "grand-jury subpoenas for records, Aug–Nov 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00123486"
+  },
+  {
+   "f": "sdny",
+   "t": "bofa",
+   "label": "grand-jury subpoenas for records, Aug and Oct 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00123486"
+  },
+  {
+   "f": "sdny",
+   "t": "tdbank",
+   "label": "grand-jury subpoena for records, 17 Aug 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00123486"
+  },
+  {
+   "f": "sdny",
+   "t": "ubs",
+   "label": "grand-jury subpoenas, Aug–Sep 2019 and Jun 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00123486"
+  },
+  {
+   "f": "sdny",
+   "t": "citi",
+   "label": "grand-jury subpoenas, Aug 2019 and Jun 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00123486"
+  },
+  {
+   "f": "sdny",
+   "t": "boies",
+   "label": "grand-jury subpoena to his firm for civil-case material, 5 Feb 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA00098732"
+  },
+  {
+   "f": "usvi",
+   "t": "bank_leumi",
+   "label": "civil subpoena for Epstein-related account records, 20 Jul 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep15_jtn_usvisubpoenas2020"
+  },
+  {
+   "f": "usvi",
+   "t": "schwab",
+   "label": "civil subpoena, 20 Jul 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep15_jtn_usvisubpoenas2020"
+  },
+  {
+   "f": "usvi",
+   "t": "citi",
+   "label": "civil subpoena, 20 Jul 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "ep15_jtn_usvisubpoenas2020"
+  },
+  {
+   "f": "house_oversight",
+   "t": "jpm",
+   "label": "subpoenaed Epstein financial records, 18 Nov 2025",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep15_ho_comer2025"
+  },
+  {
+   "f": "house_oversight",
+   "t": "deutsche",
+   "label": "subpoenaed Epstein financial records, 18 Nov 2025",
+   "type": "oversight",
+   "status": "verified",
+   "src": "ep15_ho_comer2025"
   }
  ]
 }

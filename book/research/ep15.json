@@ -523,6 +523,88 @@
      "url": "https://www.businessday.co.za/world/international-companies/2026-02-12-likes-to-have-cash-inside-deutsche-banks-slow-split-from-epstein/"
     }
    ]
+  },
+  {
+   "id": "ep15_records",
+   "stage": "ep15",
+   "topic": "Who was made to hand over records; flight log mapped",
+   "claims": [
+    {
+     "text": "SDNY grand-jury subpoenas 2019–21 in the release: banks (JPMC, Deutsche, BofA, TD, Citi, UBS, FirstBank, Santander, UMB, Wells Fargo), Kahn and Indyke (18 Oct 2019), Boies Schiller (Feb 2019), tech and phone companies, airlines (Jan 2020), MCC and its staff (Aug 2019). FBI had a subpoena for Wexner 10 Jul 2019, withdrawn when he agreed to an interview. USVI civil subpoenas Jul 2020 incl. Bank Leumi, Schwab, Citi, Wells Fargo, SVB, Northern Trust, Fidelity, NFS. House Oversight subpoenaed JPM and Deutsche 18 Nov 2025. No legal process found in the files or reporting for EdR, Elysium/BV70, Southern Trust's Israeli counterparties beyond Leumi.",
+     "strength": "confirmed",
+     "sources": [
+      "ep15_doj_wexner302",
+      "ep15_doj_gjkahn",
+      "ep15_doj_gjdb",
+      "ep15_doj_gjjpm",
+      "ep15_doj_gjbsf",
+      "ep15_doj_gjfirstbank",
+      "ep15_doj_flightlogemail",
+      "ep15_jtn_usvisubpoenas2020",
+      "ep15_ho_comer2025"
+     ]
+    },
+    {
+     "text": "Flight-log transcription matched to map: Clinton 25 legs 2002–03, none to/from St Thomas; Kellen 308; Marcinko 125; Brunel 30 (5 St Thomas); Dubin 21; Dershowitz 12; Summers 4 (one to St Thomas, Dec 2005); Trump 1 (1997; pre-1995 pages not transcribed); Prince Andrew 1 (2000).",
+     "strength": "reported",
+     "sources": [
+      "ep15_fle_flightlogs",
+      "ep15_doj_flightlogemail"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep15_doj_wexner302",
+     "label": "DOJ Epstein release, EFTA01249806: FBI report, 10 Jul 2019: subpoena for Wexner withdrawn when he agreed to an interview",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA01249806.pdf"
+    },
+    {
+     "key": "ep15_doj_gjkahn",
+     "label": "DOJ Epstein release, EFTA00088989: grand-jury subpoena returns, Richard Kahn and Darren Indyke, 18 Oct 2019",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00088989.pdf"
+    },
+    {
+     "key": "ep15_doj_gjdb",
+     "label": "DOJ Epstein release, EFTA00095467: grand-jury subpoena returns, Deutsche Bank AG New York Branch",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00095467.pdf"
+    },
+    {
+     "key": "ep15_doj_gjjpm",
+     "label": "DOJ Epstein release, EFTA00123486: grand-jury subpoena returns, JPMorgan Chase, Aug 2019",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00123486.pdf"
+    },
+    {
+     "key": "ep15_doj_gjbsf",
+     "label": "DOJ Epstein release, EFTA00098732: grand-jury subpoena returns, Boies Schiller Flexner, 5 Feb 2019",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00098732.pdf"
+    },
+    {
+     "key": "ep15_doj_gjfirstbank",
+     "label": "DOJ Epstein release, EFTA00099233: SDNY grand-jury subpoena to FirstBank Puerto Rico, 31 Dec 2019",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00099233.pdf"
+    },
+    {
+     "key": "ep15_doj_flightlogemail",
+     "label": "DOJ Epstein release, EFTA00172145: FBI email on the pilot's flight log, masseuse list and address book, 19 Feb 2025",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00172145.pdf"
+    },
+    {
+     "key": "ep15_jtn_usvisubpoenas2020",
+     "label": "Just the News, Virgin Islands attorney general issues 15 subpoenas for Epstein financial accounts, Jul 2020",
+     "url": "https://justthenews.com/nation/crime/virgin-island-attorney-general-issues-15-sweeping-subpoenas-jeffrey-epstein-financial"
+    },
+    {
+     "key": "ep15_ho_comer2025",
+     "label": "House Oversight Committee, Chairman Comer subpoenas banks for Epstein records, 18 Nov 2025",
+     "url": "https://oversight.house.gov/release/chairman-comer-subpoenas-banks-for-epstein-records-seeks-information-from-usvi-attorney-general"
+    },
+    {
+     "key": "ep15_fle_flightlogs",
+     "label": "flight-logs-explorer (GitHub), transcription of the released Epstein flight logs: 5,001 rows, 1995–2015",
+     "url": "https://github.com/valinux/flight-logs-explorer"
+    }
+   ]
   }
  ]
 }
