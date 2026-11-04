@@ -296,3 +296,46 @@ Widest two-step reach across clusters among individuals:
 - Explicit **control edges**: signer, trustee, executor, director.
 
 With those, the same test can run year by year, for example in 2008 (jail) and 2019 (arrest).
+
+### 11b. Role-aware succession (Ron's correction: the two hubs had different jobs)
+
+Epstein and Maxwell held different roles:
+- **Epstein:** broker, money and access.
+- **Maxwell:** operations, companion, recruitment (her 2021 conviction).
+
+So each position is tested on its own role. Candidates are matched on **role, not sex**. The record puts men in the recruitment function (Brunel; the scout Siad) and women in the money and access function (Ariane de Rothschild, Lynn Forester de Rothschild).
+
+**Epstein's role**
+- *Money side:* passes to the Kahn–Indyke office (Section 11). ✅
+- *Access side:* no successor. ✅
+
+**Maxwell's role: the graph under-maps her.** She has only 7 documented ties on the map, against 154 for Epstein. Her trial-record role (recruiting, managing staff and houses) is mostly not yet encoded as edges. The best time-series signal is the pilot's log. It is a transcription, so 📰 REPORTED.
+
+Share of Epstein's logged flight legs with each person on board:
+
+| Year | Maxwell | Kellen | Marcinkova | Epstein legs |
+|---|---|---|---|---|
+| 1996 | 61% | — | — | 113 |
+| 1999 | 42% | — | — | 93 |
+| 2000 | 58% | — | — | 92 |
+| 2001 | 66% | 22% | — | 136 |
+| 2002 | 60% | **77%** | — | 120 |
+| 2003 | 45% | 74% | 5% | 103 |
+| 2004 | 18% | 70% | **79%** | 100 |
+| 2005 | 9% | 57% | 57% | 65 |
+
+**Finding 📰 (structural, not an accusation).** In the log, the position at Epstein's side rotated:
+- **Maxwell** held it from 1996 to 2002.
+- **Sarah Kellen** took it from 2002.
+- **Nadia Marcinkova** joined from 2004.
+- Maxwell's share fell to 9% by 2005.
+
+Lesley Groff, executive assistant 2001–2019 and scheduler, is the continuity in the office. She does not appear in the flight log.
+
+**The critical qualifier.** The people who rotated into Maxwell's position came from among the young women around Epstein, not from his peers.
+- Kellen has said she was herself a victim, abused by Maxwell and two named men. The DOJ did not dispute that she was also a victim.
+- All four assistants were named, and immunised, in the 2008 agreement. None has been charged.
+
+So the "injection" at Maxwell's height was filled from inside the pool of people the operation drew in. That is a pattern the book should describe carefully and never as blame.
+
+**To run this properly:** add Maxwell's documented operational ties from the 2021 trial record and court filings. That means staff she supervised, properties she managed, and introductions documented in testimony, each cited. No survivor is to be added unless she has gone public. Then rerun Sections 11 and 11b with dated edges.
