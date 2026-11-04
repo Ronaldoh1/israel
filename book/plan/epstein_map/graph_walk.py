@@ -12,7 +12,7 @@ E = d['edges']
 root = sys.argv[1] if len(sys.argv) > 1 else 'epstein'
 maxd = int(sys.argv[2]) if len(sys.argv) > 2 else 4
 PROBE = {'investigation', 'testimony', 'litigation', 'reporting', 'claim', 'complaint',
-         'oversight', 'allegation to Congress', 'forensic review', 'court ruling'}
+         'oversight', 'allegation to Congress', 'forensic review', 'court ruling', 'comparison', 'comparative methodology'}
 
 walk = [e for e in E if e['status'] != 'not-established']
 adj = defaultdict(list)          # undirected, for expansion

@@ -1,68 +1,943 @@
 {
  "_about": "Verification pass, 4 Nov 2026. Documents read in the DOJ release text (EFTA numbers link to justice.gov) and checked against news reports. Status upgrades, new documented ties, and five private individuals held back from the published map.",
- "hold_nodes": ["daphne_wallace","carluz_toylo","valdson_cotrin","janusz_banasiak","brice_gordon"],
+ "hold_nodes": [
+  "daphne_wallace",
+  "carluz_toylo",
+  "valdson_cotrin",
+  "janusz_banasiak",
+  "brice_gordon"
+ ],
  "nodes": [
-  {"id":"plan_d","name":"Plan D, LLC","kind":"company","cluster":"aviation","note":"US Virgin Islands company; Epstein signed as its sole member. Listed as the holder of the Gulfstream G550 N212JE, and the borrower of $30.5M from Leon Black's BV70 LLC in 2017."},
-  {"id":"bv70","name":"BV70 LLC","kind":"company","cluster":"finance","note":"New York company owned by Leon Black, addressed care of Elysium Management. Lent Epstein's Plan D $30.5M in 2017 (Dechert review for Apollo, 2021); reported as the route for Black's $10M to Gratitude America."},
-  {"id":"n212je","name":"Gulfstream G550 N212JE","kind":"place","cluster":"aviation","note":"Aircraft listed against Plan D, LLC in Epstein's own aircraft list in the release."},
-  {"id":"n908je","name":"Boeing 727 N908JE","kind":"place","cluster":"aviation","note":"Owned by JEGE, Inc., per a 2006 FBI interview with one of Epstein's pilots; seats up to 26."},
-  {"id":"n909je","name":"Gulfstream N909JE","kind":"place","cluster":"aviation","note":"Owned and operated by Hyperion Air, Inc., per the same 2006 FBI interview; seats up to 12. The pilot said Epstein kept a separate company for each plane for liability reasons."},
-  {"id":"plaskett","name":"Stacey Plaskett","kind":"person","cluster":"politics","tier":"association","note":"Delegate to Congress for the US Virgin Islands. Texted with Epstein during a February 2019 House hearing; a House censure resolution over it failed in November 2025. Received campaign donations from Epstein's accountants (reported). Not accused of a crime."},
-  {"id":"wbarr","name":"William Barr","kind":"person","cluster":"justice","note":"US Attorney General 2019–2020; in August 2019 said there were 'serious irregularities' at the jail where Epstein died. Son of Donald Barr, the Dalton headmaster. Nothing in the record ties him to the Dalton hire; the family tie is shown only so the two are not confused."},
-  {"id":"obama_wh","name":"White House tour, 27 Dec 2015","kind":"project","cluster":"politics","note":"Woody Allen, Soon-Yi Previn and Kathryn Ruemmler visited on 27 Dec 2015 after Epstein asked Ruemmler in May 2015 to show them the White House (NBC, from released emails and White House visitor records)."}
+  {
+   "id": "plan_d",
+   "name": "Plan D, LLC",
+   "kind": "company",
+   "cluster": "aviation",
+   "note": "US Virgin Islands company; Epstein signed as its sole member. Listed as the holder of the Gulfstream G550 N212JE, and the borrower of $30.5M from Leon Black's BV70 LLC in 2017."
+  },
+  {
+   "id": "bv70",
+   "name": "BV70 LLC",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "New York company owned by Leon Black, addressed care of Elysium Management. Lent Epstein's Plan D $30.5M in 2017 (Dechert review for Apollo, 2021); reported as the route for Black's $10M to Gratitude America."
+  },
+  {
+   "id": "n212je",
+   "name": "Gulfstream G550 N212JE",
+   "kind": "place",
+   "cluster": "aviation",
+   "note": "Aircraft listed against Plan D, LLC in Epstein's own aircraft list in the release."
+  },
+  {
+   "id": "n908je",
+   "name": "Boeing 727 N908JE",
+   "kind": "place",
+   "cluster": "aviation",
+   "note": "Owned by JEGE, Inc., per a 2006 FBI interview with one of Epstein's pilots; seats up to 26."
+  },
+  {
+   "id": "n909je",
+   "name": "Gulfstream N909JE",
+   "kind": "place",
+   "cluster": "aviation",
+   "note": "Owned and operated by Hyperion Air, Inc., per the same 2006 FBI interview; seats up to 12. The pilot said Epstein kept a separate company for each plane for liability reasons."
+  },
+  {
+   "id": "plaskett",
+   "name": "Stacey Plaskett",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "association",
+   "note": "Delegate to Congress for the US Virgin Islands. Texted with Epstein during a February 2019 House hearing; a House censure resolution over it failed in November 2025. Received campaign donations from Epstein's accountants (reported). Not accused of a crime."
+  },
+  {
+   "id": "wbarr",
+   "name": "William Barr",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "US Attorney General 2019–2020; in August 2019 said there were 'serious irregularities' at the jail where Epstein died. Son of Donald Barr, the Dalton headmaster. Nothing in the record ties him to the Dalton hire; the family tie is shown only so the two are not confused."
+  },
+  {
+   "id": "obama_wh",
+   "name": "White House tour, 27 Dec 2015",
+   "kind": "project",
+   "cluster": "politics",
+   "note": "Woody Allen, Soon-Yi Previn and Kathryn Ruemmler visited on 27 Dec 2015 after Epstein asked Ruemmler in May 2015 to show them the White House (NBC, from released emails and White House visitor records)."
+  },
+  {
+   "id": "pottinger",
+   "name": "Stanley Pottinger",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "Lawyer for Epstein survivors. In May 2016 he forwarded to an SDNY prosecutor Jean-Luc Brunel's description of Daniel Siad as a scout or recruiter for Epstein (email in the release)."
+  },
+  {
+   "id": "siad_payment",
+   "name": "Euro payment instruction to Daniel Siad, 30 Apr 2014",
+   "kind": "document",
+   "cluster": "evidence",
+   "note": "Attachment named 'DB JEE Custody Account_Daniel Siad Euros_4-30-2014' sent by Richard Kahn to Deutsche Bank on 25 Apr 2014, copied to Darren Indyke and Bella Klein. The release shows the instruction; the attachment's amount and the transfer's completion are not in the copy read."
+  },
+  {
+   "id": "pi_order_2009",
+   "name": "Court motion on Epstein's investigators, 2009",
+   "kind": "document",
+   "cluster": "evidence",
+   "note": "S.D. Fla. case 9:08-cv-80119, docket 299 (15 Sep 2009): records that Epstein 'employed private investigators to contact third-parties believed familiar with' plaintiffs to gather background on them; plaintiffs sought to stop the contacts."
+  },
+  {
+   "id": "fn_command",
+   "name": "Function: command and inner circle",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "How a network concentrates decisions in a few trusted people. Compared: Sinaloa (Guzmán's controlled phones), NXIVM (first-line 'masters'). Epstein record: Maxwell; four assistants named in the 2008 deal; office staff."
+  },
+  {
+   "id": "fn_recruit",
+   "name": "Function: recruitment through legitimate fronts",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: NXIVM's 'mentorship group' pretext; Nygård's company, modelling promises and staff screening. Epstein record: funding of MC2 Model Management; a scout paid from his account; 'massage' work."
+  },
+  {
+   "id": "fn_finance",
+   "name": "Function: payroll and money through companies",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: Nygård Group funds and payroll ('models', 'assistants'); cartel money handling. Epstein record: HBRK Associates, Southern Trust, LSJE payroll, Plan D, Kahn's payment instructions."
+  },
+  {
+   "id": "fn_logistics",
+   "name": "Function: logistics and transport",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: Sinaloa tunnels and aircraft. Epstein record: a separate company for each plane (JEGE, Hyperion, Plan D); private island; residences."
+  },
+  {
+   "id": "fn_officials",
+   "name": "Function: influence over officials",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: García Luna, convicted in 2023 of taking Sinaloa bribes. Epstein record: no bribe documented; political donations, tax breaks, texts with a delegate, and the 2008 deal are on file."
+  },
+  {
+   "id": "fn_silence",
+   "name": "Function: silencing accusers and reporters",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: Weinstein's hired intelligence firms (Black Cube, Kroll); Nygård's alleged paid false affidavits and threats. Epstein record: investigators contacting plaintiffs' acquaintances (2009 court motion); reported surveillance of victims' families."
+  },
+  {
+   "id": "fn_cover",
+   "name": "Function: institutions that were told and did not act",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: FBI and Nassar (2021 inspector general), BBC and Savile (2016 review), Pennsylvania dioceses (2018 grand jury). Epstein record: FBI complaint 1996; banks' internal warnings; a 2016 tip to SDNY."
+  },
+  {
+   "id": "fn_records",
+   "name": "Function: records and the insider who opens them",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Compared: Guzmán's IT technician who gave the FBI access to his encrypted phones. Epstein record: no insider cooperated publicly; the case rests on emails, bank records and survivors."
+  },
+  {
+   "id": "cmp_sinaloa",
+   "name": "Comparison case: Sinaloa cartel (Guzmán trial 2019; García Luna 2023)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Drug network. Documented at trial: encrypted phone system built by an IT technician who became an FBI informant; bribes to police and officials; cross-border tunnels. Mexico's former security chief convicted in New York in Feb 2023 of taking cartel bribes; sentenced to 38+ years."
+  },
+  {
+   "id": "cmp_nxivm",
+   "name": "Comparison case: NXIVM (Raniere, convicted 2019)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Convicted June 2019 of racketeering and sex trafficking; 120 years. Recruited women under the pretext of a women-only mentorship group; demanded 'collateral' to stop members leaving or talking."
+  },
+  {
+   "id": "cmp_nygard",
+   "name": "Comparison case: Nygård (charged 2020; convicted in Canada)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "US indictment (SDNY, Dec 2020; allegations): used his company's employees, funds and payroll to recruit and keep victims; 'pamper parties'; paid for false statements and threatened witnesses. Convicted in Toronto of four sexual assaults; sentenced to 11 years."
+  },
+  {
+   "id": "cmp_weinstein",
+   "name": "Comparison case: Weinstein's investigators",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "New Yorker reporting (2017): hired Kroll and Black Cube to gather information on accusers and journalists; one contract's stated aim was to stop publication."
+  },
+  {
+   "id": "cmp_nassar",
+   "name": "Comparison case: FBI and Nassar (inspector general, 2021)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "FBI Indianapolis told in 2015; little action for months; at least 40 more girls and women reported abuse over 14 months while the FBI knew; officials gave inaccurate information to internal inquiries."
+  },
+  {
+   "id": "cmp_savile",
+   "name": "Comparison case: BBC and Savile (Smith review, 2016)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "72 victims; complaints disbelieved or covered up; a junior worker told 'he is a VIP'; the BBC more concerned with reputation."
+  },
+  {
+   "id": "cmp_padioceses",
+   "name": "Comparison case: Pennsylvania dioceses (grand jury, 2018)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "300+ priests, 1,000+ children identified; euphemisms, untrained internal investigators, reassignment, police discouraged: a 'playbook for concealing the truth'."
+  },
+  {
+   "id": "cmp_combs",
+   "name": "Comparison case: Combs verdict (2025)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Jury acquitted Sean Combs of racketeering conspiracy and sex trafficking in July 2025 and convicted on Mann Act transportation counts. A reminder that an 'enterprise' has to be proven, not inferred from wealth and staff."
+  }
  ],
  "node_notes": {
   "bella_klein": "Assistant Controller at HBRK Associates, Richard Kahn's accounting firm, and an accountant there since November 1999, per a 2019 TD Bank suspicious-activity report in the release (a bank report, not a finding). Listed as a contact for HBRK's accounts. Not accused of a crime. Email counts come from a secondary research export and are not checked.",
-  "hbrk": "HBRK Associates Inc., 575 Lexington Avenue, New York: Richard Kahn's accounting firm. Wires from Epstein, Southern Trust, Southern Financial and Darren K. Indyke PLLC accounts were addressed 'c/o HBRK Associates' (TD Bank SAR, 2019). It described itself to the bank as serving ultra-high-net-worth clients other than Epstein."
+  "hbrk": "HBRK Associates Inc., 575 Lexington Avenue, New York: Richard Kahn's accounting firm. Wires from Epstein, Southern Trust, Southern Financial and Darren K. Indyke PLLC accounts were addressed 'c/o HBRK Associates' (TD Bank SAR, 2019). It described itself to the bank as serving ultra-high-net-worth clients other than Epstein.",
+  "firstbank": "FirstBank Puerto Rico / FirstBank VI. A 6 Apr 2016 internal memo calls Epstein a 'large non-borrowing deposit Platinum Banking client' with several companies' accounts, an average combined balance over $5.3M, banking there for over seven years; it waived his service and wire fees. A grand-jury subpoena went to the bank on 31 Dec 2019. Earlier reporting (WSJ) called him a 'legacy relationship' from its 2002 purchase of Chase's USVI operations.",
+  "network_functions": "Search framework built from documented cases (Sinaloa, NXIVM, Nygård, Weinstein, the FBI and Nassar, the BBC and Savile, Pennsylvania dioceses, the Combs verdict). Each function becomes a question asked of the Epstein files. Comparison nodes are not ties to Epstein; only Epstein-specific documents count as evidence."
  },
  "remove_edges": [
-  ["southern_trust","edr_invoice","issued, $15M (document as published; not independently checked)"],
-  ["edr_invoice","deutsche_us","payment instructions at Deutsche Bank Trust Co. Americas"],
-  ["bop","signet","camera project talks, Apr 2018; read as $698,108.99 contractor, Sep 20"],
-  ["bop","anixter","read as $34,089.28 wiring supplier, Sep 2018"],
-  ["signet","mcc","camera replacement (as Company 1), unfinished by Aug 2019"],
-  ["southern_trust","schwab","named in a 2019 FinCEN SAR (not a finding)"],
-  ["kahn","schwab","named in the same 2019 SAR (not a finding)"]
+  [
+   "southern_trust",
+   "edr_invoice",
+   "issued, $15M (document as published; not independently checked)"
+  ],
+  [
+   "edr_invoice",
+   "deutsche_us",
+   "payment instructions at Deutsche Bank Trust Co. Americas"
+  ],
+  [
+   "bop",
+   "anixter",
+   "read as $34,089.28 wiring supplier, Sep 2018"
+  ],
+  [
+   "signet",
+   "mcc",
+   "camera replacement (as Company 1), unfinished by Aug 2019"
+  ],
+  [
+   "southern_trust",
+   "schwab",
+   "named in a 2019 FinCEN SAR (not a finding)"
+  ],
+  [
+   "kahn",
+   "schwab",
+   "named in the same 2019 SAR (not a finding)"
+  ],
+  [
+   "bop",
+   "signet",
+   "camera project talks, Apr 2018; read as $698,108.99 contractor, Sep 2018"
+  ],
+  [
+   "pierce",
+   "epstein",
+   "correspondence; reported Coinbase-stake route"
+  ],
+  [
+   "siad",
+   "epstein",
+   "paid directly for scouting (files, reported)"
+  ],
+  [
+   "epstein",
+   "mc2",
+   "funded the agency (reported)"
+  ],
+  [
+   "colom",
+   "epstein",
+   "correspondence (reported)"
+  ],
+  [
+   "epstein",
+   "barak",
+   "arranged meetings with Ariane de Rothschild (reported)"
+  ],
+  [
+   "network_functions",
+   "epstein",
+   "comparison framework applied as research questions; not a factual tie"
+  ]
  ],
  "edges": [
-  {"f":"southern_trust","t":"edr_invoice","label":"issued, 15 Dec 2015: $15M 'pursuant to Agreement dated 3 November 2015' (other reporting dates the contract 5 Oct)","type":"payment","status":"verified","src":"EFTA00586695"},
-  {"f":"edr_invoice","t":"deutsche_us","label":"payment instructions: Deutsche Bank Trust Company Americas","type":"banking","status":"verified","src":"EFTA00586695"},
-  {"f":"bop","t":"signet","label":"contract $698,108 for 152 cameras, recorder and installation, 21 Sep 2018","type":"contract","status":"verified","src":"EFTA00128262; ep11_oig_cameras"},
-  {"f":"bop","t":"anixter","label":"contract $34,089.28 for wiring, 24 Sep 2018; final award $24,918.28, Oct 2019","type":"contract","status":"verified","src":"EFTA00128262"},
-  {"f":"signet","t":"mcc","label":"camera replacement, staff installing from Mar 2019; unfinished on 10 Aug 2019","type":"contract","status":"verified","src":"EFTA00128262; ep11_oig_cameras"},
-  {"f":"bop","t":"signet","label":"new contracts after the death: $160,508 licences and recorders (12 Sep 2019), $42,334.76 switches (14 Sep 2019)","type":"contract","status":"verified","src":"EFTA00128262"},
-  {"f":"southern_trust","t":"schwab","label":"account named in Schwab's 2019 suspicious-activity report (a bank report, not a finding)","type":"reporting","status":"verified","src":"EFTA01656452"},
-  {"f":"kahn","t":"schwab","label":"named in the same 2019 report as an HBRK senior executive (not a finding)","type":"reporting","status":"verified","src":"EFTA01656452"},
-  {"f":"kahn","t":"hbrk","label":"his accounting firm; sole authorised signer on its 2019 TD Bank accounts","type":"ownership","status":"verified","src":"EFTA01656524"},
-  {"f":"bella_klein","t":"hbrk","label":"Assistant Controller; accountant there since Nov 1999 (per bank report)","type":"employment","status":"verified","src":"EFTA01656524"},
-  {"f":"southern_trust","t":"hbrk","label":"Deutsche Bank account addressed c/o HBRK; $500,000 wire, 26 Mar 2019","type":"banking","status":"verified","src":"EFTA01656524"},
-  {"f":"indyke","t":"hbrk","label":"Darren K. Indyke PLLC account addressed c/o HBRK; three wires, $114,741","type":"banking","status":"verified","src":"EFTA01656524"},
-  {"f":"kahn","t":"plaskett","label":"campaign donations: $2,600 (2014), $5,400 (2016), $2,700 (2018) (reported)","type":"funding","status":"reported","src":"EFTA00163119"},
-  {"f":"bella_klein","t":"plaskett","label":"campaign donation $2,600 (2014) (reported)","type":"funding","status":"reported","src":"EFTA00163119"},
-  {"f":"epstein","t":"plaskett","label":"texted her during the Feb 2019 Cohen hearing; censure over it failed, Nov 2025","type":"correspondence","status":"verified","src":"ep15_axios_plaskett2025"},
-  {"f":"epstein","t":"plan_d","label":"sole member; signed its $30.5M note, 17 Apr 2017","type":"ownership","status":"verified","src":"EFTA00808900"},
-  {"f":"plan_d","t":"n212je","label":"listed holder of the G550","type":"ownership","status":"verified","src":"EFTA00492133"},
-  {"f":"jege","t":"n908je","label":"owner of the 727 (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
-  {"f":"hyperion","t":"n909je","label":"owner and operator of the Gulfstream (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
-  {"f":"epstein","t":"jege","label":"his company (pilot's account to the FBI, 2006)","type":"ownership","status":"verified","src":"EFTA01688746"},
-  {"f":"black","t":"bv70","label":"owner","type":"ownership","status":"verified","src":"ep15_dechert_apollo2021"},
-  {"f":"bv70","t":"plan_d","label":"loans of $22.5M and $8M, early 2017, for an art deal; $10M repaid 2018; rest unpaid at his death","type":"loan","status":"verified","src":"ep15_dechert_apollo2021; EFTA00808900"},
-  {"f":"elysium","t":"bv70","label":"administrative-services agreement covering BV70 (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
-  {"f":"elysium","t":"lbf_holdings","label":"administrative-services agreement covering LBF Holdings (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
-  {"f":"elysium","t":"ldb_2011_llc","label":"administrative-services agreement covering LDB 2011 (Jan 2016 email)","type":"contract","status":"verified","src":"EFTA02473864"},
-  {"f":"wbarr","t":"dbarr","label":"son","type":"kinship","status":"verified","src":"ep7_snopes_barr"},
-  {"f":"wbarr","t":"mcc","label":"as Attorney General: 'serious irregularities' at the jail, Aug 2019","type":"official act","status":"verified","src":"ep15_abc_barr2019"},
-  {"f":"epstein","t":"obama_wh","label":"asked Ruemmler, May 2015, to show Allen and Previn the White House","type":"correspondence","status":"verified","src":"ep15_nbc_allen2026"},
-  {"f":"ruemmler","t":"obama_wh","label":"took the visitors, 27 Dec 2015","type":"association","status":"verified","src":"ep15_nbc_allen2026"},
-  {"f":"allen","t":"obama_wh","label":"visited with Soon-Yi Previn, 27 Dec 2015","type":"association","status":"verified","src":"ep15_nbc_allen2026"}
+  {
+   "f": "southern_trust",
+   "t": "edr_invoice",
+   "label": "issued, 15 Dec 2015: $15M 'pursuant to Agreement dated 3 November 2015' (other reporting dates the contract 5 Oct)",
+   "type": "payment",
+   "status": "verified",
+   "src": "EFTA00586695"
+  },
+  {
+   "f": "edr_invoice",
+   "t": "deutsche_us",
+   "label": "payment instructions: Deutsche Bank Trust Company Americas",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA00586695"
+  },
+  {
+   "f": "bop",
+   "t": "signet",
+   "label": "contract $698,108 for 152 cameras, recorder and installation, 21 Sep 2018",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00128262; ep11_oig_cameras"
+  },
+  {
+   "f": "bop",
+   "t": "anixter",
+   "label": "contract $34,089.28 for wiring, 24 Sep 2018; final award $24,918.28, Oct 2019",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00128262"
+  },
+  {
+   "f": "signet",
+   "t": "mcc",
+   "label": "camera replacement, staff installing from Mar 2019; unfinished on 10 Aug 2019",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00128262; ep11_oig_cameras"
+  },
+  {
+   "f": "bop",
+   "t": "signet",
+   "label": "new contracts after the death: $160,508 licences and recorders (12 Sep 2019), $42,334.76 switches (14 Sep 2019)",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA00128262"
+  },
+  {
+   "f": "southern_trust",
+   "t": "schwab",
+   "label": "account named in Schwab's 2019 suspicious-activity report (a bank report, not a finding)",
+   "type": "reporting",
+   "status": "verified",
+   "src": "EFTA01656452"
+  },
+  {
+   "f": "kahn",
+   "t": "schwab",
+   "label": "named in the same 2019 report as an HBRK senior executive (not a finding)",
+   "type": "reporting",
+   "status": "verified",
+   "src": "EFTA01656452"
+  },
+  {
+   "f": "kahn",
+   "t": "hbrk",
+   "label": "his accounting firm; sole authorised signer on its 2019 TD Bank accounts",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA01656524"
+  },
+  {
+   "f": "bella_klein",
+   "t": "hbrk",
+   "label": "Assistant Controller; accountant there since Nov 1999 (per bank report)",
+   "type": "employment",
+   "status": "verified",
+   "src": "EFTA01656524"
+  },
+  {
+   "f": "southern_trust",
+   "t": "hbrk",
+   "label": "Deutsche Bank account addressed c/o HBRK; $500,000 wire, 26 Mar 2019",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA01656524"
+  },
+  {
+   "f": "indyke",
+   "t": "hbrk",
+   "label": "Darren K. Indyke PLLC account addressed c/o HBRK; three wires, $114,741",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA01656524"
+  },
+  {
+   "f": "kahn",
+   "t": "plaskett",
+   "label": "campaign donations: $2,600 (2014), $5,400 (2016), $2,700 (2018) (reported)",
+   "type": "funding",
+   "status": "reported",
+   "src": "EFTA00163119"
+  },
+  {
+   "f": "bella_klein",
+   "t": "plaskett",
+   "label": "campaign donation $2,600 (2014) (reported)",
+   "type": "funding",
+   "status": "reported",
+   "src": "EFTA00163119"
+  },
+  {
+   "f": "epstein",
+   "t": "plaskett",
+   "label": "texted her during the Feb 2019 Cohen hearing; censure over it failed, Nov 2025",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep15_axios_plaskett2025"
+  },
+  {
+   "f": "epstein",
+   "t": "plan_d",
+   "label": "sole member; signed its $30.5M note, 17 Apr 2017",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA00808900"
+  },
+  {
+   "f": "plan_d",
+   "t": "n212je",
+   "label": "listed holder of the G550",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA00492133"
+  },
+  {
+   "f": "jege",
+   "t": "n908je",
+   "label": "owner of the 727 (pilot's account to the FBI, 2006)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA01688746"
+  },
+  {
+   "f": "hyperion",
+   "t": "n909je",
+   "label": "owner and operator of the Gulfstream (pilot's account to the FBI, 2006)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA01688746"
+  },
+  {
+   "f": "epstein",
+   "t": "jege",
+   "label": "his company (pilot's account to the FBI, 2006)",
+   "type": "ownership",
+   "status": "verified",
+   "src": "EFTA01688746"
+  },
+  {
+   "f": "black",
+   "t": "bv70",
+   "label": "owner",
+   "type": "ownership",
+   "status": "verified",
+   "src": "ep15_dechert_apollo2021"
+  },
+  {
+   "f": "bv70",
+   "t": "plan_d",
+   "label": "loans of $22.5M and $8M, early 2017, for an art deal; $10M repaid 2018; rest unpaid at his death",
+   "type": "loan",
+   "status": "verified",
+   "src": "ep15_dechert_apollo2021; EFTA00808900"
+  },
+  {
+   "f": "elysium",
+   "t": "bv70",
+   "label": "administrative-services agreement covering BV70 (Jan 2016 email)",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "elysium",
+   "t": "lbf_holdings",
+   "label": "administrative-services agreement covering LBF Holdings (Jan 2016 email)",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "elysium",
+   "t": "ldb_2011_llc",
+   "label": "administrative-services agreement covering LDB 2011 (Jan 2016 email)",
+   "type": "contract",
+   "status": "verified",
+   "src": "EFTA02473864"
+  },
+  {
+   "f": "wbarr",
+   "t": "dbarr",
+   "label": "son",
+   "type": "kinship",
+   "status": "verified",
+   "src": "ep7_snopes_barr"
+  },
+  {
+   "f": "wbarr",
+   "t": "mcc",
+   "label": "as Attorney General: 'serious irregularities' at the jail, Aug 2019",
+   "type": "official act",
+   "status": "verified",
+   "src": "ep15_abc_barr2019"
+  },
+  {
+   "f": "epstein",
+   "t": "obama_wh",
+   "label": "asked Ruemmler, May 2015, to show Allen and Previn the White House",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "ep15_nbc_allen2026"
+  },
+  {
+   "f": "ruemmler",
+   "t": "obama_wh",
+   "label": "took the visitors, 27 Dec 2015",
+   "type": "association",
+   "status": "verified",
+   "src": "ep15_nbc_allen2026"
+  },
+  {
+   "f": "allen",
+   "t": "obama_wh",
+   "label": "visited with Soon-Yi Previn, 27 Dec 2015",
+   "type": "association",
+   "status": "verified",
+   "src": "ep15_nbc_allen2026"
+  },
+  {
+   "f": "kahn",
+   "t": "siad_payment",
+   "label": "sent the instruction to Deutsche Bank, 25 Apr 2014 (cc Indyke, Bella Klein)",
+   "type": "payment",
+   "status": "verified",
+   "src": "EFTA01365981"
+  },
+  {
+   "f": "siad_payment",
+   "t": "siad",
+   "label": "payee: euro payment from Epstein's Deutsche custody account, dated 30 Apr 2014",
+   "type": "payment",
+   "status": "verified",
+   "src": "EFTA01365981"
+  },
+  {
+   "f": "pottinger",
+   "t": "sdny",
+   "label": "May 2016: forwarded Brunel's description of Siad as a 'scout' or recruiter for Epstein to an SDNY prosecutor",
+   "type": "complaint",
+   "status": "verified",
+   "src": "EFTA01324971"
+  },
+  {
+   "f": "epstein",
+   "t": "colom",
+   "label": "his calendar: meetings with Olivier Colom, 21 and 24 Sep 2013",
+   "type": "meeting",
+   "status": "verified",
+   "src": "EFTA00383066"
+  },
+  {
+   "f": "epstein",
+   "t": "barak",
+   "label": "his calendar: breakfast with Ariane de Rothschild, Olivier Colom and Barak, 23 Sep 2013",
+   "type": "meeting",
+   "status": "verified",
+   "src": "EFTA00383066"
+  },
+  {
+   "f": "firstbank",
+   "t": "epstein",
+   "label": "2016 memo: 'Platinum' deposit client, >$5.3M average, 7+ years; fees waived",
+   "type": "banking",
+   "status": "verified",
+   "src": "EFTA01268751"
+  },
+  {
+   "f": "sdny",
+   "t": "firstbank",
+   "label": "grand-jury subpoena, 31 Dec 2019",
+   "type": "investigation",
+   "status": "verified",
+   "src": "EFTA01273238"
+  },
+  {
+   "f": "epstein",
+   "t": "mc2",
+   "label": "wire from his JPMorgan account to MC2 Model Management, 16 Nov 2012 (statement)",
+   "type": "payment",
+   "status": "verified",
+   "src": "EFTA01528262"
+  },
+  {
+   "f": "pierce",
+   "t": "epstein",
+   "label": "Feb 2018 email: Blockchain Capital 'wired $15m for half' his Coinbase position",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA02523986"
+  },
+  {
+   "f": "kahn",
+   "t": "blockchain_cap",
+   "label": "handled the Coinbase sale with its co-founder, Jan 2018 (email)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA00901772"
+  },
+  {
+   "f": "middleton",
+   "t": "epstein",
+   "label": "July 2013: asked Epstein's office for his contact details (email)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "EFTA01967191"
+  },
+  {
+   "f": "pi_order_2009",
+   "t": "epstein",
+   "label": "court record: his investigators contacted people who knew plaintiffs, 2009",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "EFTA00593771"
+  },
+  {
+   "f": "fn_recruit",
+   "t": "mc2",
+   "label": "framework question: who funded recruitment fronts? (Epstein record answers)",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA01528262"
+  },
+  {
+   "f": "fn_recruit",
+   "t": "siad_payment",
+   "label": "framework question: were scouts paid? (Epstein record answers)",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA01365981"
+  },
+  {
+   "f": "fn_finance",
+   "t": "hbrk",
+   "label": "framework question: which office moved the money?",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA01656524"
+  },
+  {
+   "f": "fn_logistics",
+   "t": "plan_d",
+   "label": "framework question: who held the aircraft?",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA00492133"
+  },
+  {
+   "f": "fn_officials",
+   "t": "plaskett",
+   "label": "framework question: what reached officials? (donations and texts; no bribe documented)",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "ep15_axios_plaskett2025"
+  },
+  {
+   "f": "fn_silence",
+   "t": "pi_order_2009",
+   "label": "framework question: were investigators used on accusers?",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA00593771"
+  },
+  {
+   "f": "fn_cover",
+   "t": "pottinger",
+   "label": "framework question: who was told, and when?",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "EFTA01324971"
+  },
+  {
+   "f": "cmp_sinaloa",
+   "t": "fn_records",
+   "label": "insider IT technician opened the encrypted phones to the FBI",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_cnn_chapoit2019"
+  },
+  {
+   "f": "cmp_sinaloa",
+   "t": "fn_officials",
+   "label": "security chief convicted of taking cartel bribes, 2023",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_aj_garcialuna2024"
+  },
+  {
+   "f": "cmp_sinaloa",
+   "t": "fn_logistics",
+   "label": "tunnels; bribes to officials (trial testimony)",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_nbc_zambada2018"
+  },
+  {
+   "f": "cmp_nxivm",
+   "t": "fn_recruit",
+   "label": "'mentorship group' pretext",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_doj_raniere2020"
+  },
+  {
+   "f": "cmp_nxivm",
+   "t": "fn_command",
+   "label": "first-line 'masters' under one leader",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_doj_raniere2020"
+  },
+  {
+   "f": "cmp_nygard",
+   "t": "fn_finance",
+   "label": "company funds and payroll used (alleged)",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_doj_nygard2020"
+  },
+  {
+   "f": "cmp_nygard",
+   "t": "fn_recruit",
+   "label": "staff screened party guests; modelling promises (alleged)",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_doj_nygard2020"
+  },
+  {
+   "f": "cmp_nygard",
+   "t": "fn_silence",
+   "label": "paid false affidavits; threatened witnesses (alleged)",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_doj_nygard2020"
+  },
+  {
+   "f": "cmp_weinstein",
+   "t": "fn_silence",
+   "label": "hired Kroll and Black Cube on accusers and journalists",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_axios_weinstein2017"
+  },
+  {
+   "f": "cmp_nassar",
+   "t": "fn_cover",
+   "label": "FBI told in 2015; months of inaction",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_ap_nassarig2021"
+  },
+  {
+   "f": "cmp_savile",
+   "t": "fn_cover",
+   "label": "complaints disbelieved; 'he is a VIP'",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_itv_savile2016"
+  },
+  {
+   "f": "cmp_padioceses",
+   "t": "fn_cover",
+   "label": "'playbook for concealing the truth'",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_wral_pagj2018"
+  },
+  {
+   "f": "cmp_combs",
+   "t": "fn_command",
+   "label": "jury rejected the enterprise charge, 2025",
+   "type": "comparison",
+   "status": "verified",
+   "src": "ep15_opb_combs2025"
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_command",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_recruit",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_finance",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_logistics",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_officials",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_silence",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_cover",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_records",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": ""
+  }
  ],
  "status": [
-  ["summers","epstein","correspondence after 2008","verified","ep15_ap_summers2025","=correspondence after 2008; stepped back from public roles, Nov 2025"],
-  ["musk","epstein","2012–13 emails about an island visit","verified","ep15_time_musk2026","=2012–13 emails discussing an island visit; he says he declined"],
-  ["lutnick","epstein","neighbour; 2012 island lunch","verified","ep15_cbs_lutnick2026",""],
-  ["ferguson","epstein","2011 correspondence","verified","ep15_stv_ferguson2025","=2011 email calling him a 'supreme friend', after his conviction"],
-  ["bannon","epstein","on-camera interview; strategy texts","verified","ep6_nbc_bannon2026",""],
-  ["binsulayem","epstein","correspondence; Great St. James","verified","ep15_wtop_dpworld2026","=correspondence; replaced as DP World chairman, Feb 2026"],
-  ["branson","epstein","2013 email; PR advice","verified","ep15_pa_branson2026","=2013 emails, including PR advice"]
+  [
+   "summers",
+   "epstein",
+   "correspondence after 2008",
+   "verified",
+   "ep15_ap_summers2025",
+   "=correspondence after 2008; stepped back from public roles, Nov 2025"
+  ],
+  [
+   "musk",
+   "epstein",
+   "2012–13 emails about an island visit",
+   "verified",
+   "ep15_time_musk2026",
+   "=2012–13 emails discussing an island visit; he says he declined"
+  ],
+  [
+   "lutnick",
+   "epstein",
+   "neighbour; 2012 island lunch",
+   "verified",
+   "ep15_cbs_lutnick2026",
+   ""
+  ],
+  [
+   "ferguson",
+   "epstein",
+   "2011 correspondence",
+   "verified",
+   "ep15_stv_ferguson2025",
+   "=2011 email calling him a 'supreme friend', after his conviction"
+  ],
+  [
+   "bannon",
+   "epstein",
+   "on-camera interview; strategy texts",
+   "verified",
+   "ep6_nbc_bannon2026",
+   ""
+  ],
+  [
+   "binsulayem",
+   "epstein",
+   "correspondence; Great St. James",
+   "verified",
+   "ep15_wtop_dpworld2026",
+   "=correspondence; replaced as DP World chairman, Feb 2026"
+  ],
+  [
+   "branson",
+   "epstein",
+   "2013 email; PR advice",
+   "verified",
+   "ep15_pa_branson2026",
+   "=2013 emails, including PR advice"
+  ],
+  [
+   "nikolic",
+   "gates",
+   "former science adviser",
+   "verified",
+   "EFTA01796015",
+   "=at Gates's private office bgC3 (his email signature, 2010)"
+  ],
+  [
+   "warsh",
+   "epstein",
+   "on a 2010 St. Barths",
+   "verified",
+   "EFTA00900412",
+   "=listed with Jane Lauder among people in St Barths over the holidays (list in the files)"
+  ],
+  [
+   "toshiba",
+   "lsj",
+   "renewable-energy installation",
+   "planned",
+   "EFTA01109946",
+   "=proposal to design solar and wind power for LSJ, LLC (proposal in the files)"
+  ],
+  [
+   "binsulayem",
+   "gsj",
+   "reported purchase vehicle",
+   "not-established",
+   "EFTA01684602",
+   "=claimed purchase role: the deeds name Great St Jim LLC as buyer, Jan 2016"
+  ],
+  [
+   "siad",
+   "brunel",
+   "scout; terms forwarded",
+   "verified",
+   "EFTA01324971",
+   "=Brunel described him as a 'scout' or recruiter for Epstein (forwarded to SDNY, 2016)"
+  ],
+  [
+   "deutsche",
+   "firstbank",
+   "funds reportedly moved",
+   "to-verify",
+   "EFTA01268751",
+   "=a Puerto Rico bank already held his companies' accounts from about 2009 (FirstBank memo, 2016); whether funds moved there after Deutsche closed is not shown"
+  ]
  ]
 }

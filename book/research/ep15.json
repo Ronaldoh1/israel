@@ -242,6 +242,135 @@
      "url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02473864.pdf"
     }
    ]
+  },
+  {
+   "id": "ep15_pattern",
+   "stage": "ep15",
+   "topic": "Other networks as a search framework",
+   "claims": [
+    {
+     "text": "Comparison cases: Sinaloa (IT insider; García Luna bribes conviction 2023, 38 yrs); NXIVM (pretext recruitment; collateral; 120 yrs); Nygård (company funds/payroll, screened parties, paid false affidavits — alleged; Toronto 11 yrs); Weinstein (Kroll, Black Cube); FBI/Nassar (2015 report, months of inaction, 40+ abused over 14 months); BBC/Savile (72 victims, 'he is a VIP'); PA dioceses ('playbook'); Combs (acquitted of racketeering and trafficking, 2025).",
+     "strength": "confirmed",
+     "sources": [
+      "ep15_cnn_chapoit2019",
+      "ep15_aj_garcialuna2024",
+      "ep15_nbc_zambada2018",
+      "ep15_doj_raniere2020",
+      "ep15_doj_nygard2020",
+      "ep15_abc_nygard2024",
+      "ep15_axios_weinstein2017",
+      "ep15_ap_nassarig2021",
+      "ep15_itv_savile2016",
+      "ep15_wral_pagj2018",
+      "ep15_opb_combs2025"
+     ]
+    },
+    {
+     "text": "Epstein-file results of the framework: Siad payment instruction 2014 (Kahn, cc Indyke, Klein); Pottinger tip to SDNY May 2016; calendar breakfast with Ariane de Rothschild, Colom, Barak 23 Sep 2013; FirstBank Platinum client memo 2016; JPMorgan wire to MC2 Nov 2012; Coinbase sale email 2018; 2009 court motion on investigators.",
+     "strength": "confirmed",
+     "sources": [
+      "ep15_doj_siad",
+      "ep15_doj_pottinger",
+      "ep15_doj_calendar",
+      "ep15_doj_firstbank",
+      "ep15_doj_mc2",
+      "ep15_doj_coinbase",
+      "ep15_doj_piorder"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep15_cnn_chapoit2019",
+     "label": "CNN, El Chapo's IT technician testifies, 9 Jan 2019",
+     "url": "https://edition.cnn.com/2019/01/09/americas/el-chapo-it-technician-rodriguez/index.html"
+    },
+    {
+     "key": "ep15_aj_garcialuna2024",
+     "label": "Al Jazeera, Mexico's former public security chief sentenced to 38 years in US drug case, 16 Oct 2024",
+     "url": "https://www.aljazeera.com/news/2024/10/16/mexicos-former-public-security-chief-to-be-sentenced-in-us-drug-case"
+    },
+    {
+     "key": "ep15_nbc_zambada2018",
+     "label": "NBC News, Witness: El Chapo told me to give $100,000 to a general, Nov 2018",
+     "url": "https://www.nbcnews.com/news/crime-courts/witness-el-chapo-told-me-give-100-000-general-n936726"
+    },
+    {
+     "key": "ep15_doj_raniere2020",
+     "label": "US Attorney, EDNY, NXIVM leader Keith Raniere sentenced to 120 years, 27 Oct 2020",
+     "url": "https://www.justice.gov/usao-edny/pr/nxivm-leader-keith-raniere-sentenced-120-years-prison-racketeering-and-sex-trafficking"
+    },
+    {
+     "key": "ep15_doj_nygard2020",
+     "label": "US Attorney, SDNY, Peter J. Nygard charged with sex trafficking and racketeering, Dec 2020",
+     "url": "https://www.justice.gov/usao-sdny/pr/canadian-fashion-executive-peter-j-nygard-charged-sex-trafficking-and-racketeering"
+    },
+    {
+     "key": "ep15_abc_nygard2024",
+     "label": "ABC News (AP), Peter Nygard sentenced to 11 years for sexual assault, Sep 2024",
+     "url": "https://abcnews.go.com/Business/wireStory/former-canadian-fashion-mogul-peter-nygard-sentenced-11-113538406"
+    },
+    {
+     "key": "ep15_axios_weinstein2017",
+     "label": "Axios, Weinstein hired investigators to spy on his accusers (New Yorker report), 2017",
+     "url": "https://www.axios.com/2017/12/15/weinstein-hired-investigators-to-spy-on-his-accusers-1513306719"
+    },
+    {
+     "key": "ep15_ap_nassarig2021",
+     "label": "AP via OPB, Watchdog: FBI greatly mishandled Nassar-USA Gymnastics case, 14 Jul 2021",
+     "url": "https://www.opb.org/article/2021/07/14/watchdog-fbi-greatly-mishandled-nassar-usa-gymnastics-case/"
+    },
+    {
+     "key": "ep15_itv_savile2016",
+     "label": "ITV News, Savile operated at BBC with impunity, report finds, 25 Feb 2016",
+     "url": "https://itv.com/news/2016-02-25/child-abuser-jimmy-savile-operated-at-bbc-with-impunity-report-finds"
+    },
+    {
+     "key": "ep15_wral_pagj2018",
+     "label": "WRAL (NYT), Catholic Church hid abuse of 1,000 children in Pennsylvania, grand jury finds, Aug 2018",
+     "url": "https://www.wral.com/catholic-church-hid-abuse-of-1-000-children-in-pennsylvania-grand-jury-finds/17770219/"
+    },
+    {
+     "key": "ep15_opb_combs2025",
+     "label": "AP via OPB, Sean 'Diddy' Combs acquitted of most serious charges, 2 Jul 2025",
+     "url": "https://www.opb.org/article/2025/07/02/sean-diddy-combs-acquitted-of-most-serious-charges-convicted-of-a-prostitution-related-offense"
+    },
+    {
+     "key": "ep15_doj_siad",
+     "label": "DOJ Epstein release, EFTA01365981: Kahn to Deutsche Bank with 'Daniel Siad Euros' payment instruction, 25 Apr 2014",
+     "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01365981.pdf"
+    },
+    {
+     "key": "ep15_doj_pottinger",
+     "label": "DOJ Epstein release, EFTA01324971: Pottinger to SDNY on Daniel Siad, May 2016 (forwarded Dec 2018)",
+     "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01324971.pdf"
+    },
+    {
+     "key": "ep15_doj_calendar",
+     "label": "DOJ Epstein release, EFTA00383066: Epstein's calendar, 21–24 Sep 2013",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00383066.pdf"
+    },
+    {
+     "key": "ep15_doj_firstbank",
+     "label": "DOJ Epstein release, EFTA01268751: FirstBank memo on Epstein accounts, 6 Apr 2016",
+     "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01268751.pdf"
+    },
+    {
+     "key": "ep15_doj_mc2",
+     "label": "DOJ Epstein release, EFTA01528262: Epstein JPMorgan statement, Nov 2012 (wire to MC2 Model Management)",
+     "url": "https://www.justice.gov/epstein/files/DataSet%2010/EFTA01528262.pdf"
+    },
+    {
+     "key": "ep15_doj_coinbase",
+     "label": "DOJ Epstein release, EFTA02523986: Brock Pierce to Epstein on the Coinbase sale, 22 Feb 2018",
+     "url": "https://www.justice.gov/epstein/files/DataSet%2011/EFTA02523986.pdf"
+    },
+    {
+     "key": "ep15_doj_piorder",
+     "label": "DOJ Epstein release, EFTA00593771: S.D. Fla. 9:08-cv-80119, docket 299, 15 Sep 2009 (investigators)",
+     "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00593771.pdf"
+    }
+   ]
   }
  ]
 }

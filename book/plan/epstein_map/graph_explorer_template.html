@@ -256,7 +256,7 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
 const DATA = __DATA__;
 const N = new Map(DATA.nodes.map(n => [n.id, n]));
 const E = DATA.edges;
-const PROBE = new Set(['investigation','testimony','litigation','reporting','claim','complaint','oversight','allegation to Congress','forensic review','court ruling']);
+const PROBE = new Set(['investigation','testimony','litigation','reporting','claim','complaint','oversight','allegation to Congress','forensic review','court ruling','comparison','comparative methodology']);
 const DEG=new Map(); E.forEach(e=>{ if(e.status==='not-established') return; DEG.set(e.f,(DEG.get(e.f)||0)+1); DEG.set(e.t,(DEG.get(e.t)||0)+1); });
 const KINDS = ['person','company','institution','government','place','document'];
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
