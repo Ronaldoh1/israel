@@ -95,7 +95,7 @@ schiff|Jacob Schiff|person|finance|Jacob Schiff;Schiff
 # ---------- Rothschild family (documented individuals and firms only) ----------
 mayer_amschel|Mayer Amschel Rothschild|person|rothschild|Mayer Amschel Rothschild;Mayer Amschel
 nathan_r|Nathan Mayer Rothschild|person|rothschild|Nathan Mayer Rothschild;Nathan Rothschild;Nathan Mayer
-james_mayer|James Mayer de Rothschild|person|rothschild|James Mayer de Rothschild;James Mayer;James de Rothschild@rd0;James@rd0
+james_mayer|James Mayer de Rothschild|person|rothschild|James Mayer de Rothschild;James Mayer
 lionel_r|Lionel de Rothschild|person|rothschild|Lionel de Rothschild;Lionel
 natty|Nathan "Natty" Rothschild, 1st Baron|person|rothschild|Natty;1st Baron Rothschild;Lord Rothschild@rd1
 walter_r|Walter Rothschild, 2nd Baron|person|rothschild|Walter Rothschild;Lord Walter Rothschild;Lord Rothschild@rd2;Lionel Walter
@@ -312,6 +312,20 @@ ezra_nehemiah|Operation Ezra and Nehemiah (1950-51)|event|israel state|Ezra and 
 magic_carpet|Operation Magic Carpet (1949-50)|event|israel state|Magic Carpet;On Eagles' Wings
 yachin|Operation Yachin (1961-64)|event|israel state|Operation Yachin;Yachin
 yemenite_affair|Yemenite Children Affair|event|israel state|Yemenite Children
+
+# ---------- colonies and Rothschild institutions (added Nov 2026) ----------
+rishon|Rishon LeZion (colony, 1882)|place|settlement|Rishon LeZion;Rishon Lezion;Rishon le-Zion
+zikhron|Zikhron Ya'akov (colony, 1882)|place|settlement|Zikhron Ya'akov;Zichron Ya'akov;Zikhron Yaakov
+rosh_pinna|Rosh Pinna (colony, 1882)|place|settlement|Rosh Pinna
+mazkeret|Mazkeret Batya (colony, 1883)|place|settlement|Mazkeret Batya
+ekron|Ekron (colony, 1884)|place|settlement|Ekron@rd0;Ekron@ch01
+metulla|Metulla (colony, 1896)|place|settlement|Metulla
+mikveh|Mikveh Israel (agricultural school, 1870)|place|settlement|Mikveh Israel
+mohilever|Rabbi Samuel Mohilever|person|zionist movement|Samuel Mohilever;Mohilever
+dorothy|Dorothy de Rothschild|person|rothschild|Dorothy de Rothschild;Dorothy
+yad_hanadiv|Yad Hanadiv (Rothschild charities in Israel)|institution|rothschild|Yad Hanadiv
+ramat_hanadiv|Ramat HaNadiv (memorial and burial site)|place|rothschild|Ramat HaNadiv;Ramat Hanadiv
+morgenthau|Henry Morgenthau Sr.|person|us government|Henry Morgenthau(?!,? Jr)
 """
 
 

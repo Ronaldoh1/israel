@@ -147,3 +147,21 @@ Tested 4 Nov 2026 on the local OCR copy of the DOJ release (Datasets 8–12 plus
    - Why the myth survives.
 
 *Next step when Ron opens this book: run the FAQ-mapping pass (2B.0D), then V/R/L sourcing per component.*
+
+## Added 4 Nov 2026: Vienna and London, 1919–1939 (from The Sovereign Ledger video, checked)
+
+**Confirmed**
+- First London gold fixing on 12 Sept 1919. N M Rothschild was put in charge of the proceedings by the Bank of England; the other firms were Mocatta & Goldsmid, Pixley & Abell, Samuel Montagu and Sharps & Wilkins ([LBMA](https://www.lbma.org.uk/wonders-of-gold/items/the-first-gold-fixing)).
+- The fixing was held at Rothschild's offices until 2004 ([Rothschild Archive](https://www.rothschildarchive.org/business/n_m_rothschild_and_sons_london/rothschild_and_gold)).
+- Royal Mint Refinery lease acquired in 1852 and kept "for well over a century" (same Archive page).
+- Louis von Rothschild tried to shore up the Creditanstalt. After the Anschluss he was imprisoned about a year and released in March 1939 after a "substantial ransom." About 250 works were returned in 1999 ([Wikipedia, Austrian branch](https://en.wikipedia.org/wiki/Rothschild_banking_family_of_Austria)).
+
+**To verify**
+- The 1929 Bodencreditanstalt merger forced on Louis.
+- 1931 loss figures (140 vs 828 million schillings).
+- The $21M ransom ("largest ever") and the Vitkovice transfer for £3.6M.
+- The Hotel Metropole detention and Himmler's visit.
+- The 12.5M oz refined in 1932.
+- The 1929/1931 dating of the Creditanstalt collapse (the Wikipedia page refers to 1929).
+
+**Use in the Rothschild book.** Contrast concentration and infrastructure across the branches (the video's thesis is interpretive). The documented spine is the London branch's gold-market role and the Vienna branch's exposure to the Austrian banking crisis and Nazi expropriation.

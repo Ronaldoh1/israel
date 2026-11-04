@@ -42,7 +42,7 @@ R = [
     # kinds: add 'event'
     ('--k-document:#e083ab;', '--k-document:#e083ab; --k-event:#e6c25a;'),
     ('--k-document:#a0476b;', '--k-document:#a0476b; --k-event:#8a6a0a;'),
-    ("const KINDS = ['person','company','institution','government','place','document'];", "const KINDS = ['person','institution','company','government','document','event'];"),
+    ("const KINDS = ['person','company','institution','government','place','document'];", "const KINDS = ['person','institution','company','government','document','event','place'];"),
     # status vocabulary: co-mention plays the part of 'not established' (shown only on request, never walked)
     ("'not-established'", "'co-mention'"), ('s-not-established', 's-co-mention'),
     ('<span>Not established</span>', '<span>Named together</span>'),
