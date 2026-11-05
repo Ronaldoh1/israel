@@ -12,7 +12,7 @@ ROLE = {'zionist movement': 'movement leadership', 'finance': 'finance and land'
         'militias': 'armed organization', 'ottoman': 'Ottoman state', 'arab leadership': 'Palestinian Arab leadership',
         'arab states': 'Arab states', 'us government': 'US government', 'us lobby': 'American organizing', 'nazi germany': 'Nazi Germany',
         'europe': 'European powers', 'soviet bloc': 'Soviet bloc', 'religion': 'religious institution or dissent',
-        'christian zionism': 'Christian Zionism', '1948 war': '1948 war', 'settlement': 'colony or settlement', 'intelligence': 'intelligence', 'us parties': 'US party politics'}
+        'christian zionism': 'Christian Zionism', '1948 war': '1948 war', 'settlement': 'colony or settlement', 'intelligence': 'intelligence', 'us parties': 'US party politics', 'cold war': 'Cold War event or pact'}
 
 
 def run(path=os.path.join(HERE, 'network.json')):

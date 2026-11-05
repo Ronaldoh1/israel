@@ -452,6 +452,71 @@ stern_a|Avraham Stern|person|militias|Avraham Stern;Abraham Stern
 bidault|Georges Bidault|person|europe|Georges Bidault;Bidault
 exodus|Exodus 1947 (ship)|event|militias|Exodus 1947;President Warfield
 cyprus_camps|Cyprus internment camps (1946-49)|place|british state|Cyprus
+# ---------- Cold War layer, 1949-1967 (added Nov 2026) ----------
+eisenhower|Dwight Eisenhower|person|us government|Dwight Eisenhower;Eisenhower
+dulles_jf|John Foster Dulles|person|us government|John Foster Dulles;Dulles@cw1;Dulles@cw2;Dulles@cw3
+allen_dulles|Allen Dulles|person|us government|Allen Dulles
+acheson|Dean Acheson|person|us government|Dean Acheson;Acheson
+jfk|John F. Kennedy|person|us government|John F\. Kennedy;President Kennedy;Kennedy@cw4;Kennedy@cw5;Kennedy@cw6
+rfk|Robert F. Kennedy|person|us government|Robert F\. Kennedy;Robert Kennedy;Attorney General Kennedy
+lbj|Lyndon Johnson|person|us government|Lyndon Johnson;Lyndon B\. Johnson;President Johnson;Johnson@cw6
+rusk|Dean Rusk|person|us government|Dean Rusk;Rusk
+barbour|Walworth Barbour|person|us government|Walworth Barbour;Ambassador Barbour;Barbour
+fulbright|J. William Fulbright|person|us government|William Fulbright;Fulbright
+sfrc|Senate Foreign Relations Committee|government|us government|Senate Foreign Relations Committee
+ja_american|Jewish Agency American Section|institution|us lobby|Jewish Agency's American Section;American Section@cw5
+hammer_g|Gottlieb Hammer|person|us lobby|Gottlieb Hammer
+boukstein|Maurice Boukstein|person|us lobby|Maurice Boukstein;Boukstein
+blaustein|Jacob Blaustein|person|us lobby|Jacob Blaustein;Blaustein
+mcghee|George McGhee|person|us government|George McGhee;McGhee
+douglas_p|Paul Douglas|person|us government|Paul Douglas;Senator Douglas
+mccormack|John McCormack|person|us government|John McCormack
+eban|Abba Eban|person|israel state|Abba Eban;Eban
+horowitz_d|David Horowitz (Finance; Bank of Israel)|person|israel state|David Horowitz
+eshkol|Levi Eshkol|person|israel state|Levi Eshkol;Eshkol
+peres|Shimon Peres|person|israel state|Shimon Peres;Peres
+lavon|Pinhas Lavon|person|israel state|Pinhas Lavon;Lavon(?! [Aa]ffair)
+susannah|Operation Susannah / the Lavon affair (1954)|event|intelligence|Operation Susannah;Lavon affair;Lavon Affair
+harel|Isser Harel|person|intelligence|Isser Harel;Harel
+shin_bet|Shin Bet|government|intelligence|Shin Bet
+aman|Aman (military intelligence)|government|intelligence|military intelligence directorate;\bAman\b
+dimona|Dimona reactor|place|israel state|Dimona
+numec|NUMEC (Apollo, Pennsylvania)|company|intelligence|NUMEC;Nuclear Materials and Equipment
+shapiro_z|Zalman Shapiro|person|intelligence|Zalman Shapiro
+bonds|State of Israel Bonds|institution|finance|Israel Bonds;State of Israel Bonds;Independence Issue
+lux_agreement|Luxembourg reparations agreement (1952)|document|finance|Luxembourg agreement;Luxembourg Agreement;reparations agreement
+west_germany|West Germany (government)|government|europe|West German government;West Germany;Bonn@cw4;Bonn@cw6
+adenauer|Konrad Adenauer|person|europe|Konrad Adenauer;Adenauer
+strauss_fj|Franz Josef Strauss|person|europe|Franz Josef Strauss;Strauss@cw4;Strauss@cw6
+claims_conf|Claims Conference|institution|finance|Claims Conference
+msa1951|Mutual Security Act of 1951|document|us government|Mutual Security Act
+faa1961|Foreign Assistance Act of 1961|document|us government|Foreign Assistance Act
+hawk|Hawk missile sale (1962)|event|us government|Hawk
+eden|Anthony Eden|person|british state|Anthony Eden;Eden@cw2;Eden@cw3
+mollet|Guy Mollet|person|europe|Guy Mollet;Mollet
+sevres|Protocol of Sèvres (Oct 1956)|document|europe|Sèvres;Sevres
+suez1956|Suez war (1956)|event|cold war|Suez war;Suez Crisis;Suez crisis;war of 1956
+baghdad_pact|Baghdad Pact (1955)|document|cold war|Baghdad Pact
+tripartite|Tripartite Declaration (1950)|document|cold war|Tripartite Declaration
+mossadegh|Mohammad Mosaddegh|person|international|Mossadegh;Mosaddegh;Mossadeq
+shah|Shah of Iran|person|international|Mohammad Reza Shah;Mohammad Reza Pahlavi;the Shah
+ajax|1953 coup in Iran|event|cold war|coup of August 1953;Operation Ajax;TPAJAX
+aioc|Anglo-Iranian Oil Company|company|finance|Anglo-Iranian Oil Company
+nioc|National Iranian Oil Company|company|finance|National Iranian Oil Company
+eilat_pipeline|Eilat pipeline|place|finance|Eilat pipeline
+johnston|Johnston mission (1953-55)|event|us government|Johnston mission;Eric Johnston;Johnston Plan
+unit101|Unit 101|institution|militias|Unit 101
+sharon|Ariel Sharon|person|israel state|Ariel Sharon
+qibya|Qibya raid (1953)|event|cold war|Qibya
+uss_liberty|USS Liberty attack (8 June 1967)|event|cold war|USS Liberty
+near_east_report|Near East Report|document|us lobby|Near East Report
+nation_assoc|Nation Associates|institution|us lobby|Nation Associates
+kirchwey|Freda Kirchwey|person|us lobby|Freda Kirchwey;Kirchwey
+max_ball|Max Ball (Interior Department oil division)|person|us government|Max Ball
+epstein_e|Eliahu Epstein (Elath)|person|zionist movement|Eliahu Epstein;Eliahu Elath
+bank_israel|Bank of Israel (1954)|government|israel state|Bank of Israel
+knesset_bldg|Knesset building (1966)|place|israel state|Knesset building
+pres_conf|Conference of Presidents of Major American Jewish Organizations|institution|us lobby|Conference of Presidents
 """
 
 

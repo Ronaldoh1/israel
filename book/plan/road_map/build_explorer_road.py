@@ -17,7 +17,7 @@ if m:
 m = re.search(r'<script id="citelabels" type="application/json">(.*?)</script>', idx, re.S)
 if m:
     for k, v in json.loads(m.group(1)).items(): KL.setdefault(k, v)
-SECS = set(os.path.basename(f)[:-5] for st in ['ch01'] + ['rd%d' % i for i in range(7)] for f in glob.glob(os.path.join(REPO, 'book/part1', st, '*.html')))
+SECS = set(os.path.basename(f)[:-5] for st in ['ch01'] + ['rd%d' % i for i in range(7)] + ['cw%d' % i for i in range(1, 7)] for f in glob.glob(os.path.join(REPO, 'book/part1', st, '*.html')))
 scenes = set(re.findall(r'"id":"([a-z0-9_]+)","(?:ch|era)"', idx))
 
 
@@ -36,8 +36,8 @@ D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'nodes': d['nodes'], 'edges
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [
-    ('<title>The Epstein Network 🕸️ Interactive Graph · The Library of Truth ✨</title>', '<title>The Road to 1948 Network 🕸️ Interactive Graph · The Library of Truth ✨</title>'),
-    ('<h1>The Epstein Network 🕸️ <span>Interactive Graph</span></h1>', '<h1>The Road to 1948 🕸️ <span>Network Map</span></h1>'),
+    ('<title>The Epstein Network 🕸️ Interactive Graph · The Library of Truth ✨</title>', '<title>The Road to 1948 and After 🕸️ Network Map · The Library of Truth ✨</title>'),
+    ('<h1>The Epstein Network 🕸️ <span>Interactive Graph</span></h1>', '<h1>The Road to 1948 and After 🕸️ <span>Network Map</span></h1>'),
     ('href="index.html#library"', 'href="index.html#library"'),
     # kinds: add 'event'
     ('--k-document:#e083ab;', '--k-document:#e083ab; --k-event:#e6c25a;'),
@@ -64,9 +64,9 @@ for a, b in R:
     t = t.replace(a, b)
 # lede
 t = re.sub(r'<p class="lede">[\s\S]*?</p>\s*<p class="lede">[\s\S]*?</p>',
-    '<p class="lede">The people, organizations, states, documents and events of The Baseline and The Road to 1948, from the Bank of England in 1694 to the armistices of 1949. '
+    '<p class="lede">The people, organizations, states, documents and events of The Baseline, The Road to 1948 and The Cold War Architecture, from the Bank of England in 1694 to the eve of the June 1967 war. '
     'Every solid line is a tie stated in the book and checked against its sentence, with the book\'s own source attached: founded, funded, led, wrote to, signed, opposed, expelled. '
-    'The American layer adds ties from named outside documents: US Zionist organizations from 1897, FARA orders, the FBI and the Haganah, Reuven Shiloah and the Mossad, the 1944 convention, the State Department split of 1948, the Rothschilds\' American agents, and Jekyll Island and the Federal Reserve. The world layer adds Congress from 1922, the arms routes and the governments that helped before 1948 (France, Poland, South Africa, Czechoslovakia, the Soviet Union, Nicaragua) and the UN vote. '
+    'The American layer adds ties from named outside documents: US Zionist organizations from 1897, FARA orders, the FBI and the Haganah, Reuven Shiloah and the Mossad, the 1944 convention, the State Department split of 1948, the Rothschilds\' American agents, and Jekyll Island and the Federal Reserve. The world layer adds Congress from 1922, the arms routes and the governments that helped before 1948 (France, Poland, South Africa, Czechoslovakia, the Soviet Union, Nicaragua) and the UN vote. The Cold War layer adds who paid for the new state (US aid, Israel Bonds, German reparations), the lobby and the 1962 FARA order, the Fulbright inquiry, the intelligence services, Operation Susannah, Dimona, NUMEC and German arms. '
     '“Named together” shows where the book names two nodes in one sentence without stating a tie; those are leads, never used for analysis. '
     'No ethnic or religious group is a node: ties come from documents, not identity.</p>', t, count=1)
 # profile: link to the book sections that name the node

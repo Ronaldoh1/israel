@@ -155,3 +155,55 @@ Built by `book/plan/road_map/world_layer.py`, which writes `world_layer.json` an
 - The ZOA FARA order of 1948 (Wikipedia) against the book's statement that the apparatus was not asked to register before 1962.
 - Schwimmer's pardon year: 2000 or 2001.
 - Winters's pardon: Bush 2008, or Clinton 2001.
+
+## The Cold War layer (4 Nov 2026, third pass): the map now runs to June 1967
+
+**What changed**
+- The corpus now includes The Cold War Architecture (cw1–cw6), 99 sections. The map is retitled "The Road to 1948 and After" and is linked from the Cold War volume.
+- 65 Cold War nodes were added to the registry.
+- `cold_layer.py` writes `cold_layer.json` (75 ties) and `book/research/road_cold_layer.json` (6 new sources). Its ties mostly cite the Cold War volume's own keys.
+- 225 extractor candidates were reviewed: 69 accepted, the rest kept as named-together leads.
+- Result: 487 nodes, 689 sourced ties, 47 reported.
+
+**Money: who paid for the new state**
+- US aid, 1949–59: $652.9M, economic only.
+- Israel Bonds (1951): $52M in the first year, and 35% of the development budget within six years.
+- Luxembourg reparations: $845M, or 3.5bn plus 0.45bn marks.
+- The first US grant (1951): $65M or about $68.8M. Douglas and Taft sponsored it, and Kenen worked the Senate floor; Feinberg went to McGhee "at the Suggestion of the President".
+- The Bank of Israel (Knesset law, 24 Aug 1954; state-owned; Horowitz governor; succeeded the Anglo-Palestine Bank's note issue).
+- The Knesset building, from a £1.25M James de Rothschild bequest (1966).
+
+**The lobby and FARA**
+- Kenen founded AIPAC's predecessor (1951/53/54); Eban suggested the move (reported).
+- 1962: the DOJ order to the AZC under RFK, never enforced to completion.
+- Jewish Agency money to the AZC: $5,100,001.02, 1955–62 (Senate record), against Barda's figure of $1.5M.
+- 1963: the Fulbright inquiry, Part 9 (Hammer, Boukstein, Neumann). The American Section was already a FARA registrant.
+- The Near East Report was funded through Council purchases.
+
+**Intelligence**
+- Ben-Gurion's 13 Dec 1949 directive founding the Mossad.
+- Harel at the Shin Bet; Aman.
+- Angleton's control of the CIA's Israel account from 1954.
+- Operation Susannah (1954), which targeted US information libraries in Cairo and Alexandria.
+
+**Nuclear**
+- Peres was delegated the programme in 1955; France supplied the reactor (1956).
+- The Kennedy–Ben-Gurion and Kennedy–Eshkol letters (1963); Johnson's continued pressure.
+- NUMEC (Shapiro): 93.8 kg of U-235 unexplained. The CIA's 1968 sampling report near Dimona is reported; the evidence is "strong but not incontrovertible."
+- Bar-Joseph's claim that Germany was the "major funder" of Dimona is contested.
+
+**German arms**
+- Peres and Strauss (1957); Adenauer's 240M DM list (1962); 150 M48 tanks with US kits (1964).
+
+**Oil**
+- Max Ball and Eliahu Epstein (1948). Gendzier: "not oil versus Israel but oil and Israel."
+
+**Advocacy around 1948**
+- The Nation Associates (Kirchwey) dossiers to the UN on the Arab Higher Committee's Axis ties (May 1947) and on Farouk (June 1948).
+
+**JFK**
+- The node note gives the documented disputes.
+- The Warren Commission and the HSCA identified no link to the assassination. Cohen and Hersh draw none. The book (s11c) treats the date as timing only, and the map records it as a date, not a tie.
+
+**Rothschild after 1948**
+- The node note on James Armand: visible institutions only (PICA to the JNF, Yad Hanadiv, the Knesset building). No document shows Rothschild ownership or control of the Bank of Israel.
