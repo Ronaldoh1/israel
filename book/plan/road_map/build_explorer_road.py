@@ -34,7 +34,7 @@ def resolve(src):
 unres = sum(1 for e in d['edges'] for r in resolve(e['src']) if not r['u'])
 import viability as _vb
 _M = _vb.model(d)
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [
@@ -84,7 +84,7 @@ t = t.replace('function delPanel(r){', 'function delPanel0(r){', 1)
 t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
 # profile line and query keys
 t = t.replace("  h+=`<dt>Sources</dt>", "  if(q.viability) h+=`<dt>If removed</dt><dd>${q.viability.V}% · ${esc(q.viability.rating)}${q.viability.drop>=0.5?' (down '+q.viability.drop+' points; weakest: '+esc(DATA.viab.labels[q.viability.weakest])+'; about '+Math.round(q.viability.delay)+' more years to rebuild)':''}</dd>`;\n  h+=`<dt>Sources</dt>", 1)
-t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear();", 1)
+t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vLS(VKEY,null); setTimeout(vPill,0);", 1)
 t = t.replace("mentions:q=>q.mentions||0,", "mentions:q=>q.mentions||0, viability:q=>q.viability?q.viability.V:100, rating:q=>q.viability?q.viability.rating:'',", 1)
 t = t.replace('volume volumes sources book mentions.', 'volume volumes sources book mentions viability rating.', 1)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))

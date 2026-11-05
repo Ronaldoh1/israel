@@ -205,7 +205,7 @@ def main():
         seen.setdefault(k, e)
     edges = list(seen.values())
     # curated corrections
-    for lp in [os.path.join(HERE, x) for x in ('road_layer.json', 'us_layer.json', 'world_layer.json', 'cold_layer.json', 'history_layer.json')]:
+    for lp in [os.path.join(HERE, x) for x in ('road_layer.json', 'us_layer.json', 'world_layer.json', 'cold_layer.json', 'history_layer.json', 'funding_layer.json')]:
         if not os.path.exists(lp): continue
         L = json.load(open(lp))
         rm = {tuple(x) for x in L.get('remove_edges', [])}
@@ -214,8 +214,9 @@ def main():
         for e in L.get('edges', []):
             edges.append(dict({'n': 1, 'sec': ''}, **e))
         for i, txt in L.get('node_notes', {}).items():
+            app = i.startswith('+'); i = i.lstrip('+')   # '+id' appends to the note already there
             for n in nodes:
-                if n['id'] == i: n['note'] = txt
+                if n['id'] == i: n['note'] = ((n.get('note') or '') + ' ' + txt).strip() if app else txt
     have = {n['id'] for n in nodes}
     for e in edges:
         for x in (e['f'], e['t']):

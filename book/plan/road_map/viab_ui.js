@@ -1,46 +1,166 @@
-/* ---------- viability reading (road map only); mirrors viability.py ---------- */
+/* ---------- survival model (road map only); mirrors viability.py ---------- */
 const VB = DATA.viab;
 const vDrop = new Set();          // ties dropped by a scenario (money raised in the US but carried by a non-American)
+const VKEY = 'road_removed_v1', VINTRO = 'road_model_intro_v1';
+function vLS(k, v){ try{ if(v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); if(v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
+function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } } } return out; }
 function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; (adj.get(f)||adj.set(f,[]).get(f)).push(t); (adj.get(t)||adj.set(t,[]).get(t)).push(f); }
   const seen=new Set(VB.core.filter(x=>!rem.has(x))), q=[...seen]; while(q.length){ const u=q.pop(); for(const v of adj.get(u)||[]) if(!seen.has(v)){ seen.add(v); q.push(v); } } return seen; }
-function vScore(rem){ const seen=vReach(rem), cap=[0,0,0,0,0], ties=[0,0,0,0,0], ties0=[0,0,0,0,0], funders=new Set(), funders0=new Set();
-  for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0) funders0.add(f);
-    if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0) funders.add(f); } }
+function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=[0,0,0,0,0], ties=[0,0,0,0,0], ties0=[0,0,0,0,0], funders=new Set(), funders0=new Set();
+  for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0&&v>0) funders0.add(f);
+    if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
-  const P=pc.reduce((a,b)=>a*b,100), delay=share.map((r,i)=>VB.tbuild[i]*(1-r));
-  return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size}; }
+  const P=pc.reduce((a,b,i)=>a*Math.pow(b,VB.exp[i]),100), delay=share.map((r,i)=>VB.tbuild[i]*(1-r));
+  const lostDocs=[...rem].filter(x=>!rem0.has(x));
+  return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs}; }
 const V0 = vScore(new Set());
 function vRating(V){ return V>=90?'Still possible':V>=75?'Still possible, with more work':V>=55?'Possible only with major outside help':V>=35?'Doubtful':V>=15?'Very unlikely':'Not possible on this record'; }
 function vColor(V){ return V>=75?'var(--ver)':V>=35?'var(--tov)':'var(--nest)'; }
 function vMoney(m){ return m>=1?'$'+(Math.round(m*10)/10)+' million':'$'+Math.round(m*1000)+',000'; }
+function vName(x){ const n=N.get(x); return n?n.name:x; }
+function vSave(){ vLS(VKEY, removed.size||vDrop.size ? {removed:[...removed], drop:[...vDrop]} : null); vPill(); }
+function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.exp[i]>1?' <em>×2</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
+function vDelayText(R){ const md=Math.max(...R.delay), mi=R.delay.indexOf(md);
+  if(R.pc.some(p=>p<0.005)) return `<p class="vtxt"><b>On this record the state is not founded.</b> ${esc(VB.labels[VB.channels[R.pc.indexOf(Math.min(...R.pc))]])} is gone entirely. Rebuilding it at the pace it was first built (from ${esc(VB.tfrom[mi])}) would take about ${Math.round(md)} years.</p>`;
+  if(md>=1) return `<p class="vtxt">Likely delay: about <b>${Math.round(md)} years</b> (founding around ${1948+Math.round(md)}), the time to rebuild the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} at the pace it was first built, from ${esc(VB.tfrom[mi])}.</p>`;
+  return '<p class="vtxt">No meaningful delay: the rest of the documented network covers what was taken away.</p>'; }
+function vNeed(R){ const weak=R.pc.map((x,i)=>[x,i]).filter(([x])=>x<0.95).sort((a,b)=>a[0]-b[0]);
+  return weak.length?`<p class="vtxt">To make up the loss the movement would need ${weak.slice(0,2).map(([x,i])=>esc(VB.need[VB.channels[i]])).join(', and ')}.</p>`:''; }
+function nodeWeights(id){ const q=(N.get(id)||{}).qop||{}, v=q.viability; if(!v) return '';
+  const parts=VB.channels.map((c,i)=>[c,v.weight[i]]).filter(([c,w])=>w>=0.005).sort((a,b)=>b[1]-a[1]).map(([c,w])=>`${esc(VB.labels[c].toLowerCase())} ${Math.round(w*100)}%`);
+  return `<p class="vtxt">Its own share of the network: ${parts.length?parts.join(', '):'under 1% of every channel'}. Taken out alone, the chance becomes <b>${v.V}%</b>${v.drop>=0.5?` (down ${v.drop} points)`:''}.</p>`; }
+
+/* ---------- styles ---------- */
+document.head.insertAdjacentHTML('beforeend', `<style>
+.viab{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 14px;background:color-mix(in srgb,var(--panel-2) 60%,transparent)}
+.vlabel{font:500 11px/1.3 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.vrow{display:grid;grid-template-columns:128px 1fr 46px;gap:8px;align-items:center;font-size:12.5px;margin:3px 0}
+.vrow em{font-style:normal;color:var(--gold);font-size:11px}
+.vbar{height:7px;border-radius:4px;background:var(--line);overflow:hidden}.vbar i{display:block;height:100%}
+.vnum{text-align:right;font-family:var(--f-mono)}
+.vtxt{margin:7px 0 0;font-size:13px;line-height:1.5;color:var(--ink,inherit)}
+.vbig{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px;flex-wrap:wrap}
+.vbig b{font:700 2.2rem/1 var(--f-display)}
+.vbtn{border:1px solid var(--gold-2);background:transparent;color:var(--gold);border-radius:999px;padding:8px 14px;font:600 13px/1 inherit;cursor:pointer}
+.vbtn.pri{background:var(--gold);color:var(--panel);border-color:var(--gold)}
+.vbtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.vmodal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.55);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.vmodal.on{display:flex}
+.vcard{width:min(540px,100%);max-height:calc(100dvh - 32px);overflow:auto;-webkit-overflow-scrolling:touch;background:var(--panel);border:1px solid var(--gold-2);border-radius:20px;padding:18px 18px calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.vcard h3{font:700 1.25rem/1.25 var(--f-display);margin:2px 0 6px}
+.vcard h4{font:600 .95rem/1.3 var(--f-display);margin:14px 0 2px}
+.vcard .kind{margin:0}
+.vcard ul{margin:6px 0 0;padding-left:18px;font-size:13px;line-height:1.5}
+.vcard table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}.vcard td{padding:4px 6px;border-top:1px solid var(--line);vertical-align:top}.vcard td:last-child{text-align:right;font-family:var(--f-mono);white-space:nowrap}
+.vpill{position:absolute;left:10px;top:64px;z-index:3;display:none;align-items:center;gap:8px;padding:6px 8px 6px 12px;border-radius:999px;border:1px solid var(--gold-2);background:color-mix(in srgb,var(--panel) 92%,transparent);font-size:12.5px;max-width:calc(100% - 70px)}
+.vpill.on{display:flex}.vpill button{border:0;background:transparent;color:var(--gold);font:600 12.5px/1 inherit;cursor:pointer;padding:4px 6px}
+.c-rm{margin-top:8px;width:100%}
+@media (max-width:820px){.vpill{top:auto;bottom:calc(96px + env(safe-area-inset-bottom,0px));left:10px}.vcard{border-radius:20px}}
+</style>`);
+document.body.insertAdjacentHTML('beforeend', '<div class="vmodal" id="vModal" role="dialog" aria-modal="true" aria-labelledby="vmH"><div class="vcard" id="vCard"></div></div>');
+const vModal=document.getElementById('vModal'), vCard=document.getElementById('vCard');
+vModal.addEventListener('click', e=>{ if(e.target===vModal) vClose(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape' && vModal.classList.contains('on')) vClose(); });
+function vOpen(h){ vCard.innerHTML=h; vModal.classList.add('on'); vCard.scrollTop=0; const b=vCard.querySelector('button'); if(b) try{ b.focus({preventScroll:true}); }catch(e){} }
+function vClose(){ vModal.classList.remove('on'); }
+
+/* ---------- the explainer: shown on the first visit, and from every reading ---------- */
+function vIntro(){
+  const heavy=[...N.values()].filter(n=>n.qop&&n.qop.viability).sort((a,b)=>b.qop.viability.drop-a.qop.viability.drop).slice(0,10);
+  const amts=Object.entries(VB.amounts).sort((a,b)=>b[1][0]-a[1][0]);
+  vOpen(`<div class="kind">How the chances are computed</div><h3 id="vmH">A model of what the state needed, built only from this map</h3>
+  <p class="vtxt">Take any node out and the map works out the chance that the state is still founded in 1948, how much money still reaches the movement, and how long the loss would delay it. It is a model built on the documented record, not a measured historical probability. Here is everything it does.</p>
+  <h4>1. Five things the state needed</h4>
+  <p class="vtxt">Every supportive tie dated before 1949 is sorted into one channel: <b>money</b>; <b>land and settlers</b>; <b>arms and force</b>; <b>diplomacy and law</b>; <b>organization</b>. Opposition, violence, ties on the Arab or Nazi side, and money that did not go to the project (Rothschild loans to the British treasury, the Suez purchase) are left out.</p>
+  <h4>2. Money counts most</h4>
+  <p class="vtxt">Without money nothing else could be bought, built or defended, so the money channel counts twice in the overall chance. Each money tie is weighted by the sum the record states, in 1948 dollars (francs at 5.18 to the dollar, sterling at $4.86, older sums brought to 1948 prices). Where the record states no sum the tie is assumed to carry ${vMoney(VB.default_m)}; that is an assumption, not a finding. Money passed along (the UJA to the UPA) or already inside a total (Edmond's colonies, inside his lifetime figure) is counted once.</p>
+  <table>${amts.map(([k,a])=>`<tr><td>${esc(a[1])}</td><td>${vMoney(a[0])}</td></tr>`).join('')}<tr><td>Total money in the record, 1948 dollars</td><td>${vMoney(VB.cap0[0])}</td></tr></table>
+  <h4>3. Connections count</h4>
+  <p class="vtxt">For the other four channels, a tie counts 1 if verified and 0.6 if only reported, multiplied by how connected its two ends are: from 1× for someone with a single tie to 2× for the best-connected node. A tie between two well-connected people (Herzl, Weizmann, Edmond or Walter Rothschild, Balfour) opens more doors than one between two minor figures.</p>
+  <h4>4. A document needs someone to give it force</h4>
+  <p class="vtxt">A declaration, mandate or resolution counts only while at least one of the bodies that issued or signed it remains. The Balfour Declaration rested on the War Cabinet, Balfour and the British government, and was endorsed by Wilson and Congress; the Mandate rested on San Remo and the League. Remove all of a document's issuers and the document falls too, with everything that leaned on it.</p>
+  <h4>5. Every removal is recalculated</h4>
+  <p class="vtxt">After each removal the whole network is walked again from the core (the Declaration, the provisional government, the Jewish Agency, the Zionist Organization, the Haganah, Resolution 181). A tie counts only if neither end is gone and it still connects to the core, so a funder cut off from the core no longer counts even if it is still on the map.</p>
+  <h4>6. From capacity to a chance</h4>
+  <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All five were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
+  <h4>7. Delay</h4>
+  <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>The heaviest nodes, each removed alone</h4>
+  <table>${heavy.map(n=>`<tr><td>${esc(n.name)}</td><td>${n.qop.viability.V}%</td></tr>`).join('')}</table>
+  <h4>What it cannot know</h4>
+  <p class="vtxt">That someone else might have stepped in; the size of ties with no stated sum; anything the record does not document. Group removals ("Without the United States", "Rothschild family and houses") are in the Remove a node panel.</p>
+  <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Start exploring</button></div>`);
+  vLS(VINTRO, 1);
+}
+
+/* ---------- the result of a removal ---------- */
+function vResult(what, before, ids){
+  const R=vScore(removed), cut=E.filter(e=>(ids||[]).some(x=>e.f===x||e.t===x)&&e.status!=='co-mention').length;
+  const lostM=V0.cap[0]-R.cap[0];
+  vOpen(`<div class="kind">Removed from the network</div><h3 id="vmH">${esc(what)}</h3>
+  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span></div>
+  <p class="vtxt">Chance the state is founded in 1948: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).</p>
+  ${vBars(R)}
+  <h4>What happened in the graph</h4>
+  <ul><li>${cut} documented tie${cut===1?'':'s'} cut.</li>
+  ${R.lostDocs.length?`<li>Lost its force: ${R.lostDocs.map(x=>esc(vName(x))).join(', ')} (every body that issued it is gone).</li>`:''}
+  <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone or cut off)`:''}, from ${R.funders} of ${R.funders0} funders.</li>
+  <li>${removed.size} node${removed.size===1?'':'s'} removed in total; they stay removed until you reset the graph.</li></ul>
+  ${vDelayText(R)}${vNeed(R)}
+  <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button>${ids&&ids.length?'<button class="vbtn" type="button" data-v="undo">Undo this removal</button>':''}<button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`);
+  vCard.dataset.ids=JSON.stringify(ids||[]); vCard.dataset.drop=JSON.stringify(what==='Without the United States'?VB.drop[what]||[]:[]);
+}
+vCard.addEventListener('click', e=>{ const b=e.target.closest('[data-v]'); if(!b) return; const a=b.dataset.v;
+  if(a==='close') vClose();
+  else if(a==='how') vIntro();
+  else if(a==='reset'){ vClose(); $('reset').click(); }
+  else if(a==='undo'){ JSON.parse(vCard.dataset.ids||'[]').forEach(x=>removed.delete(x)); JSON.parse(vCard.dataset.drop||'[]').forEach(x=>vDrop.delete(x)); vClose(); vRefresh(); }
+});
+function vRefresh(){ vSave(); if(mode==='del'){ const r=reconnect(); hiNodes=r.nodes; hiEdges=r.edges; delPanel(r); } else if(sel) side(sel); draw(); if(calloutId) showCallout(calloutId); }
+function vRemove(ids, what, drop){ const before=vScore(removed).P; ids.forEach(x=>removed.add(x)); (drop||[]).forEach(x=>vDrop.add(x)); vRefresh(); vResult(what, before, ids); }
+
+/* ---------- a small reminder on the graph while anything is removed ---------- */
+$('board').insertAdjacentHTML('beforeend','<div class="vpill" id="vPill"><span id="vPillT"></span><button type="button" id="vPillV">Details</button><button type="button" id="vPillR">Reset</button></div>');
+function vPill(){ const p=$('vPill'); if(!p) return; const n=removed.size; if(!n&&!vDrop.size){ p.classList.remove('on'); return; }
+  const R=vScore(removed); $('vPillT').innerHTML=`${n} removed · <b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b>`; p.classList.add('on'); }
+$('vPillV').onclick=()=>{ const R=vScore(removed); vOpen(`<div class="kind">The network as it stands</div><h3 id="vmH">${[...removed].map(vName).map(esc).join(', ')||'Scenario'}</h3>
+  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span></div>${vBars(R)}
+  <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}, from ${R.funders} of ${R.funders0} funders.</p>${vDelayText(R)}${vNeed(R)}
+  <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button><button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`); };
+$('vPillR').onclick=()=>$('reset').click();
+
+/* ---------- the reading at the top of the Remove a node panel ---------- */
 function viabBlock(){
-  const R=vScore(removed), any=removed.size||vDrop.size, md=Math.max(...R.delay), mi=R.delay.indexOf(md);
-  const weak=R.pc.map((x,i)=>[x,i]).filter(([x])=>x<0.95).sort((a,b)=>a[0]-b[0]);
+  const R=vScore(removed), any=removed.size||vDrop.size;
   const opts=Object.keys(VB.groups).map(g=>`<option value="${esc(g)}">${esc(g)} (${VB.groups[g].length})</option>`).join('');
-  const row=(lab,val,txt)=>`<div style="display:grid;grid-template-columns:118px 1fr 46px;gap:8px;align-items:center;font-size:12.5px;margin:3px 0"><span>${lab}</span><span style="height:7px;border-radius:4px;background:var(--line);overflow:hidden"><i style="display:block;height:100%;width:${Math.round(val*100)}%;background:${vColor(val*100)}"></i></span><span style="text-align:right;font-family:var(--f-mono)">${txt}</span></div>`;
-  let h=`<div class="viab" style="border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 14px;background:color-mix(in srgb,var(--panel-2) 60%,transparent)">
-  <div class="kind">Chance the state is founded in 1948, on this record</div>`;
-  h+=`<div style="display:flex;align-items:baseline;gap:10px;margin:6px 0 2px;flex-wrap:wrap"><b style="font:700 2rem/1 var(--f-display);color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span>${any?`<span class="note" style="margin:0">down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%</span>`:''}</div>`;
-  h+=VB.channels.map((c,i)=>row(esc(VB.labels[c]),R.pc[i],Math.round(R.pc[i]*100)+'%')).join('');
-  h+=`<p class="note" style="margin:8px 0 0">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p>`;
-  if(any){
-    if(R.pc.some(p=>p<0.005)) h+=`<p class="note" style="margin:6px 0 0"><b>On this record the state is not founded.</b> ${esc(VB.labels[VB.channels[R.pc.indexOf(Math.min(...R.pc))]])} is gone entirely. Rebuilding it at the pace it was first built (from ${esc(VB.tfrom[mi])}) would take about ${Math.round(md)} years.</p>`;
-    else if(md>=1) h+=`<p class="note" style="margin:6px 0 0">Likely delay: about <b>${Math.round(md)} years</b> (founding around ${1948+Math.round(md)}), the time to rebuild the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} at the pace it was first built, from ${esc(VB.tfrom[mi])}.</p>`;
-    if(weak.length) h+=`<p class="note" style="margin:6px 0 0">To make up the loss the movement would need ${weak.slice(0,2).map(([x,i])=>esc(VB.need[VB.channels[i]])).join(', and ')}.</p>`;
-    else h+=`<p class="note" style="margin:6px 0 0">The rest of the documented network covers what this removal takes away.</p>`;
-  } else h+=`<p class="note" style="margin:6px 0">Tap any node to remove it, or remove a whole group below. Every removal is recalculated against the rest of the network.</p>`;
+  let h=`<div class="viab"><div class="vlabel">Chance the state is founded in 1948, on this record</div>
+  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span>${any?`<span class="note" style="margin:0">down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%</span>`:''}</div>${vBars(R)}
+  <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p>`;
+  if(any) h+=vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
   h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><select id="vgrp" class="sel" style="flex:1 1 180px;padding:7px 30px 7px 10px">${opts}</select><button id="vgo" class="ghost" type="button">Remove group</button>${any?'<button id="vclr" class="ghost" type="button">Restore all</button>':''}</div>
-  <details style="margin-top:10px;font-size:12.5px;color:var(--muted)"><summary style="cursor:pointer">How this is computed</summary>
-  <p>This is a model built on the map, not a measured historical probability. It reads only the documented ties dated before 1949 (${VB.edges.length} of them). Each supportive tie goes to one of five channels the state needed: money; land and settlers; arms and force; diplomacy and law; organization. Ties of opposition or violence, ties on the Arab or Nazi side, and money that did not go to the project (such as Rothschild loans to the British treasury) are left out.</p>
-  <p><b>Weights.</b> A money tie is weighted by its sum in 1948 dollars where the record states one (${Object.keys(VB.amounts).length} ties: ${Object.values(VB.amounts).map(a=>esc(a[1])).join('; ')}). Francs are converted at the gold parity of 5.18 to the dollar and older sums brought to 1948 prices with the US consumer price index. A money tie with no stated sum is assumed to carry ${vMoney(VB.default_m)}; that is an assumption, not a finding. Other ties weigh 1 if verified and 0.6 if only reported. A node's weight is the share of each channel carried by its own ties.</p>
-  <p><b>Recalculation.</b> After any removal the whole network is walked again: a tie still counts only if neither end is gone and it still connects, through supportive ties, to the core (the Declaration, the provisional government, the Jewish Agency, the Zionist Organization, the Haganah, Resolution 181). A funder cut off from the core no longer counts, even if it is still on the map.</p>
-  <p><b>Probability.</b> Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>, where C is the capacity still connected and C₀ the full record's; k is set so the full record gives 99% per channel. Spare capacity therefore protects a channel, and losses bite harder as it empties. All five were needed, so the overall chance is their product (${Math.round(V0.P)}% on the full record).</p>
-  <p><b>Delay.</b> The lost share of a channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 years from 1882, arms over 28 years from 1920, diplomacy over 31 years from 1917. The longest of the five is the delay shown.</p>
-  <p><b>The United States scenario</b> removes American government, parties, Zionist organizations and US-based funders and arms buyers, and drops money raised in America but carried by others (Golda Meyerson's 1948 tour).</p>
-  <p>What it cannot know: that someone else might have stepped in, the size of ties with no stated sum, or anything the record does not document.</p></details></div>`;
+  <div class="vbtns" style="margin-top:8px"><button class="vbtn" type="button" id="vhow">How this is computed</button></div></div>`;
   return h;
 }
 function delPanel(r){ delPanel0(r); $('side').insertAdjacentHTML('afterbegin', viabBlock());
-  const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; VB.groups[g].forEach(x=>removed.add(x)); (VB.drop[g]||[]).forEach(x=>vDrop.add(x)); const rr=reconnect(); hiNodes=rr.nodes; hiEdges=rr.edges; delPanel(rr); draw(); };
-  const cl=$('vclr'); if(cl) cl.onclick=()=>{ removed.clear(); vDrop.clear(); hiNodes=new Set(); hiEdges=new Set(); delPanel(reconnect()); draw(); };
+  const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; vRemove(VB.groups[g], g, VB.drop[g]); };
+  const cl=$('vclr'); if(cl) cl.onclick=()=>$('reset').click();
+  const hw=$('vhow'); if(hw) hw.onclick=vIntro;
 }
+/* tapping a node in Remove mode removes it (or restores it) and shows what happened */
+const vPick0 = pick;
+pick = function(id){ if(mode!=='del') return vPick0(id); const had=removed.has(id), before=vScore(removed).P; vPick0(id); vSave(); if(!had) vResult(vName(id), before, [id]); };
+/* every node's summary and record carry a Remove button and its weights */
+const vCallout0 = showCallout;
+showCallout = function(id){ vCallout0(id); if(!N.get(id)) return; const on=removed.has(id);
+  callout.insertAdjacentHTML('beforeend', `<button class="vbtn c-rm${on?'':' pri'}" type="button">${on?'Restore to the network':'Remove from the network'}</button>`);
+  callout.querySelector('.c-rm').onclick=ev=>{ ev.stopPropagation(); if(on){ removed.delete(id); vRefresh(); } else vRemove([id], vName(id)); };
+  placeCallout(); };
+const vSide0 = side;
+side = function(id, msg){ vSide0(id, msg); if(!N.get(id)) return; const on=removed.has(id);
+  $('side').insertAdjacentHTML('afterbegin', `<div class="viab"><div class="vlabel">${on?'Removed from the network':'If this were removed'}</div>${nodeWeights(id)}
+  <div class="vbtns"><button class="vbtn${on?'':' pri'}" type="button" id="vSideRm">${on?'Restore to the network':'Remove from the network'}</button><button class="vbtn" type="button" id="vSideHow">How this is computed</button></div></div>`);
+  $('vSideRm').onclick=()=>{ if(on){ removed.delete(id); vRefresh(); } else vRemove([id], vName(id)); };
+  $('vSideHow').onclick=vIntro; };
+/* restore what the reader removed last time, and explain the model on the first visit */
+(function(){ const s=vLS(VKEY); if(s){ (s.removed||[]).forEach(x=>{ if(N.get(x)) removed.add(x); }); (s.drop||[]).forEach(x=>vDrop.add(x)); }
+  setTimeout(()=>{ vPill(); if(removed.size) draw(); if(!vLS(VINTRO)) vIntro(); }, 600); })();

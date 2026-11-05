@@ -369,7 +369,7 @@ function delPanel(r){
 /* ---------- graph ---------- */
 const svg=d3.select('#g'), gz=svg.append('g'), gl=gz.append('g'), gn=gz.append('g');
 let sim=null, posCache=new Map(), live=new Map(), curT=d3.zoomIdentity, needFit=true, calloutId=null;
-const zoom=d3.zoom().scaleExtent([.25,4]).on('zoom',ev=>{ curT=ev.transform; gz.attr('transform',curT); placeCallout(); labels(); });
+const zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',ev=>{ curT=ev.transform; gz.attr('transform',curT); placeCallout(); labels(); });
 svg.call(zoom);
 svg.on('click',ev=>{ if(ev.target===svg.node()) hideCallout(); });
 
@@ -408,7 +408,8 @@ function draw(){
   ng.select('text').text(d=>{ const s=N.get(d.id).name; return s.length>26?s.slice(0,24)+'…':s; });
   labels();
   ng.on('click',(ev,d)=>{ ev.stopPropagation(); pick(d.id); }).on('keydown',(ev,d)=>{ if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();pick(d.id);} });
-  ng.call(d3.drag().clickDistance(6).on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
+  /* on touch screens nodes are not draggable: a drag that starts on a node would swallow the second finger of a pinch */
+  if(!matchMedia('(pointer:coarse)').matches) ng.call(d3.drag().clickDistance(6).on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
     .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on('end',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
   if(sim) sim.stop();
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -430,7 +431,7 @@ function fit(animate=true){
   const pts=[...live.values()].filter(p=>isFinite(p.x)); if(!pts.length) return;
   const x0=d3.min(pts,p=>p.x),x1=d3.max(pts,p=>p.x),y0=d3.min(pts,p=>p.y),y1=d3.max(pts,p=>p.y);
   const bw=svg.node().clientWidth, top=isMobile()?64:56, vh=visibleH('peek')-0, pad=34;
-  const k=clamp(Math.min((bw-2*pad)/Math.max(1,x1-x0),(vh-top-pad)/Math.max(1,y1-y0),1.5),.25,4);
+  const k=clamp(Math.min((bw-2*pad)/Math.max(1,x1-x0),(vh-top-pad)/Math.max(1,y1-y0),1.5),.04,4);
   const cx=(x0+x1)/2, cy=(y0+y1)/2;
   setT(d3.zoomIdentity.translate(bw/2-k*cx, top+(vh-top)/2-k*cy).scale(k), animate?600:0);
 }

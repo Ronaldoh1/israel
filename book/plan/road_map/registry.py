@@ -621,6 +621,13 @@ andrews_l|Lewis Andrews|person|british state|Lewis Andrews
 morrison_h|Herbert Morrison|person|british state|Herbert Morrison
 klein_j|Julius Klein|person|us lobby|Julius Klein
 creech|Arthur Creech Jones|person|british state|Creech Jones
+# ---------- Funding layer: who paid for the movement before 1948 (added Nov 2026) ----------
+die_welt|Die Welt (Herzl's weekly, 1897)|company|zionist movement|Die Welt
+shekel|The Zionist shekel (membership dues)|institution|zionist movement|Zionist shekel;shekel-payers;shekel payers
+kofer|Kofer HaYishuv (defense levy, 1938)|institution|militias|Kofer HaYishuv;Kofer Hayishuv;Community ransom
+straus_n|Nathan Straus|person|us lobby|Nathan Straus
+pec_econ|Palestine Economic Corporation (1925)|company|finance|Palestine Economic Corporation
+angloam1924|Anglo-American Convention on Palestine (1924)|document|us government|Anglo-American Convention
 """
 
 

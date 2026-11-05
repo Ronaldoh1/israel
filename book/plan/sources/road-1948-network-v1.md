@@ -244,3 +244,42 @@ Readings:
 | Zionist movement leadership | 54% | Doubtful | | |
 | Armed groups | 0% | Not possible on this record | | |
 | Golda Meyerson alone | 78% | | | |
+
+## Pass: funding layer and model v3 (5 Nov 2026)
+
+New funding ties (funding_layer.py, 23 ties, live sources):
+- **Herzl:** paid for Die Welt himself (1897). The movement's own money came from shekel dues and the Jewish Colonial Trust share sale (£2M of capital, over 100,000 applicants by May 1899). Hirsch, Albert Rothschild and Edmond declined to fund his plan.
+- **Keren Hayesod:** £4,714,440 from 1921 to 1932, about half of it from the US.
+- **UJA:** $102M in 1946 and $150M in 1948. The UPA's share was $52M in 1946 and $74.7M in 1948.
+- **Edmond de Rothschild:** "over sixty million dollars" invested in Palestine (JTA, 1934). PICA held about 500,000 dunams.
+- **Smaller funds:**
+  - JNF: 936,000 dunams by statehood.
+  - Nathan Straus: $100,000 to the UPA, directed to Hadassah (1928), and $10,000 (1924).
+  - Kofer HaYishuv: a levy from 1938 that funded the Haganah.
+  - JDC: capital for the Palestine Economic Corporation (1925).
+- **The Balfour Declaration:** the 1924 Anglo-American Convention gave US consent to the Mandate, which carried the declaration. Weizmann's "greatest House in Jewry" letter to Walter Rothschild is added.
+
+Model v3:
+- **Money counts twice** in the overall chance, and money ties are weighted by their stated sums in 1948 dollars. Pass-through money is counted once.
+- **Connections count:** each non-money tie is multiplied by how connected its two ends are (1× to 2×).
+- **Documents need force:** a document loses its force when every body that issued or signed it is removed.
+- Full record = 94%.
+
+Readings:
+
+| Removed | Chance | Rating | Delay |
+|---|---|---|---|
+| Rothschild family and houses | 79% | Still possible, with more work | about 22 years |
+| Edmond alone | 81% | | about 22 years |
+| Without the United States | 65% | Possible only with major outside help | about 22 years |
+| Finance and banks | 65% | | about 33 years |
+| Zionist movement leadership | 60% | | |
+| Walter Rothschild alone | 94% | | |
+
+Removing Walter alone barely moves the chance. The declaration's force came from the War Cabinet, Balfour and the British government, with endorsement from Wilson and Congress, so it survives without its addressee.
+
+UI:
+- Tap a node, then use **Remove from the network**. A results window shows the outcome.
+- Removals are saved until you reset the graph.
+- A first-visit explainer covers the method and lists the heaviest nodes.
+- On phones, pinch-to-zoom works even when it starts on a node.

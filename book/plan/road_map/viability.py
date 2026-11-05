@@ -10,7 +10,7 @@ This is a disclosed structural model, not a historical probability. It reads onl
      was necessary: losing any one of them entirely gives 0).
 The same arithmetic runs in the browser (road-network.html) for any set of removed nodes; this file precomputes
 single-node and group readings for the stored profiles and checks that the two agree."""
-import json, os, re, collections
+import json, os, re, collections, math
 import registry
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -58,24 +58,35 @@ def channel(e, N):
 
 
 # Money is valued in 1948 US dollars where the record states a sum. Conversions are disclosed in the explorer:
-# francs at the gold parity of 5.18 to the dollar; US consumer prices (1899 = 8.0, 1914 = 10.0, 1947 = 22.3, 1948 = 24.1).
+# francs at the gold parity of 5.18 to the dollar, sterling at $4.86 (the pre-1931 parity); US consumer prices
+# (1899 = 8.0, 1913 = 9.9, 1914 = 10.0, 1924 = 17.1, 1926 = 17.7, 1928 = 17.1, 1946 = 19.5, 1947 = 22.3, 1948 = 24.1).
 AMOUNT = {   # (from, to): (millions of 1948 dollars, what the record says)
-    ('meir', 'czechoslovakia'): (50.0, 'about $50 million raised on the 1948 American tour'),
-    ('edmond_r', 'jca'): (8.7, '15 million francs (1899), about $2.9 million then'),
-    ('nicaragua', 'jewish_agency'): (3.0, '$3 million in letters of credit (1948)'),
-    ('schiff', 'jdc'): (0.12, '$50,000 (1914)'),
-    ('mickey_cohen', 'irgun'): (0.06, '$50,000-60,000 raised (1947)'),
-    ('siegel', 'dafni'): (0.06, 'about $50,000 (1946-47)'),
+    ('edmond_r', 'pica'): (146.0, 'Edmond de Rothschild: "over sixty million dollars" invested in Palestine, 1882-1934 (at 1913 prices)'),
+    ('upa', 'jewish_agency'): (89.0, 'United Palestine Appeal: $52 million (1946) and $74.7 million (1948), less the $50 million counted under Golda Meyerson'),
+    ('meir', 'czechoslovakia'): (50.0, 'Golda Meyerson: about $50 million raised on the 1948 American tour'),
+    ('keren_hayesod', 'jewish_agency'): (31.2, 'Keren Hayesod: £4,714,440 income, 1921-32 (half from the United States)'),
+    ('nicaragua', 'jewish_agency'): (3.0, 'Nicaragua: $3 million in letters of credit (1948)'),
+    ('straus_n', 'upa'): (0.14, 'Nathan Straus: $100,000 (1928)'),
+    ('schiff', 'jdc'): (0.12, 'Jacob Schiff: $50,000 (1914)'),
+    ('mickey_cohen', 'irgun'): (0.06, 'Mickey Cohen: $50,000-60,000 raised (1947)'),
+    ('siegel', 'dafni'): (0.06, 'Bugsy Siegel: about $50,000 (1946-47)'),
+    ('straus_n', 'hadassah'): (0.014, 'Nathan Straus: $10,000 (1924)'),
 }
-DEFAULT_M = 1.0          # ties with no stated sum are assumed to carry $1 million; disclosed, not documented
+# ties whose money is already counted in a total above (passed through, or part of a lifetime sum): kept for the
+# connections they make, valued at zero so nothing is counted twice
+CONDUIT = {('uja', 'upa'), ('upa', 'hadassah'), ('edmond_r', 'jca'), ('edmond_r', 'rishon'), ('edmond_r', 'zikhron'),
+           ('edmond_r', 'rosh_pinna'), ('edmond_r', 'mazkeret'), ('edmond_r', 'ekron'), ('edmond_r', 'metulla'), ('edmond_r', 'hebrew_univ')}
+DEFAULT_M = 1.0          # money ties with no stated sum are assumed to carry $1 million; disclosed, not documented
 NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock')}   # money that did not go to the project
 US_RAISED = [('meir', 'czechoslovakia')]   # money raised in the United States though carried by a non-American
 CAL = 0.99               # each channel is calibrated so the full record gives it 99%
+EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1}   # money counts twice in the overall chance
+ISSUE_T = {'official act', 'signatory'}   # who gave a document its force
 T_BUILD = {'money': 51, 'land': 66, 'force': 28, 'diplomacy': 31, 'organization': 51}   # years each channel took to build
 T_FROM = {'money': 'the first Zionist Congress, 1897', 'land': 'the first colonies, 1882', 'force': 'the founding of the Haganah, 1920',
           'diplomacy': 'the Balfour Declaration, 1917', 'organization': 'the first Zionist Congress, 1897'}
 US_EXTRA = ['sonneborn', 'sonneborn_inst', 'schwimmer', 'winters', 'greenspun', 'bernstein', 'lansky', 'mickey_cohen', 'siegel',
-            'schiff', 'warburg_f', 'warburg_p', 'kuhn_loeb', 'americans_haganah', 'montor', 'feinberg', 'jacobson']
+            'schiff', 'warburg_f', 'warburg_p', 'kuhn_loeb', 'americans_haganah', 'montor', 'feinberg', 'jacobson', 'straus_n']
 
 
 def model(d):
@@ -97,10 +108,19 @@ def model(d):
         w = 1.0 if e['status'] == 'verified' else 0.6
         k = (e['f'], e['t'], CHANNELS.index(c))
         if k not in best or best[k] < w: best[k] = w
+    deg = collections.Counter()
+    for (f, t, c) in best: deg[f] += 1; deg[t] += 1
+    mx = math.log2(1 + max(deg.values()))
+    cf = {n: 1 + math.log2(1 + k) / mx for n, k in deg.items()}   # 1 (one tie) to 2 (the best-connected node)
     edges = []
     for (f, t, c), w in best.items():
-        v = w * (AMOUNT.get((f, t), (DEFAULT_M,))[0] if c == 0 else 1.0)
+        if c == 0: v = 0.0 if (f, t) in CONDUIT else w * AMOUNT.get((f, t), (DEFAULT_M,))[0]
+        else: v = w * (cf[f] + cf[t]) / 2
         edges.append([f, t, c, w, round(v, 4)])
+    issuers = collections.defaultdict(set)
+    for e in d['edges']:
+        if e['status'] in ('verified', 'reported') and e['type'] in ISSUE_T and N[e['t']]['kind'] == 'document' and e['f'] not in post and e['t'] not in post:
+            issuers[e['t']].add(e['f'])
     groups = collections.OrderedDict()
     groups['Rothschild family and houses'] = sorted(n['id'] for n in d['nodes'] if n['cluster'] == 'rothschild')
     us = sorted(n['id'] for n in d['nodes'] if n['cluster'] in ('us government', 'us lobby', 'us parties') and n['id'] not in post)
@@ -118,8 +138,21 @@ def model(d):
     for e in edges: cap0[e[2]] += e[4]
     amounts = {f + '>' + t: [v, txt] for (f, t), (v, txt) in AMOUNT.items()}
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups,
+            'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
+            'conduit': [f + '>' + t for f, t in CONDUIT],
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
+
+
+def lost_force(M, removed):
+    """Documents whose every issuer (official act or signature) is removed lose their force, and count as removed;
+    repeated until nothing changes, so a treaty resting on a fallen document falls too only if its own issuers fall."""
+    out = set(removed); ch = True
+    while ch:
+        ch = False
+        for doc, iss in M['issuers'].items():
+            if doc not in out and iss and all(i in out for i in iss): out.add(doc); ch = True
+    return out
 
 
 def reach(M, removed, drop=()):
@@ -140,6 +173,7 @@ def score(M, removed, drop=()):
     """Capacity still connected to the core, per channel, turned into a probability by saturation:
     P_c = 1 - exp(-C_c / K_c), with K_c set so the full record gives CAL. Overall P = product of the five (all were needed).
     Delay: years to rebuild the lost share at the pace the channel was originally built."""
+    removed = lost_force(M, set(removed))
     seen = reach(M, removed, drop)
     cap = [0.0] * 5; ties = [0] * 5; ties0 = [0] * 5
     for f, t, c, w, v in M['edges']:
@@ -150,10 +184,10 @@ def score(M, removed, drop=()):
     k = -math.log(1 - M['cal'])
     P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(5)]
     tot = 100.0
-    for p in P: tot *= p
+    for i, p in enumerate(P): tot *= p ** M['exp'][i]
     r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(5)]
     delay = [M['tbuild'][i] * (1 - r[i]) for i in range(5)]
-    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0}
+    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed}
 
 
 def rating(V):
