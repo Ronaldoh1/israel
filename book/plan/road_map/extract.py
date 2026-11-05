@@ -2,7 +2,7 @@
 Writes mentions.json: [{sec, stage, sent, cites, ents:[[text,label]]}]"""
 import json, os, re, glob, html, spacy
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
-STAGES = ['ch01'] + ['rd%d' % i for i in range(7)]
+STAGES = ['ch01'] + ['rd%d' % i for i in range(7)] + ['cw%d' % i for i in range(1, 7)]
 nlp = spacy.load('en_core_web_sm', disable=['lemmatizer'])
 out = []
 for st in STAGES:

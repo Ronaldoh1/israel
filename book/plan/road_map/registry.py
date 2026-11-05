@@ -517,6 +517,110 @@ epstein_e|Eliahu Epstein (Elath)|person|zionist movement|Eliahu Epstein;Eliahu E
 bank_israel|Bank of Israel (1954)|government|israel state|Bank of Israel
 knesset_bldg|Knesset building (1966)|place|israel state|Knesset building
 pres_conf|Conference of Presidents of Major American Jewish Organizations|institution|us lobby|Conference of Presidents
+# ---------- Historical layer: Rothschild tree, British government, Paris, Rome, the Vatican (added Nov 2026) ----------
+amschel_m|Amschel Mayer Rothschild (Frankfurt)|person|rothschild|Amschel Mayer
+salomon_r|Salomon Mayer von Rothschild (Vienna)|person|rothschild|Salomon Mayer;Salomon von Rothschild;Salomon Rothschild
+carl_r|Carl (Kalman) Mayer von Rothschild (Naples)|person|rothschild|Carl Mayer von Rothschild;Kalman Mayer
+ma_rothschild|M. A. Rothschild & Söhne (Frankfurt)|company|rothschild|M\. A\. Rothschild
+sm_rothschild|S M von Rothschild (Vienna)|company|rothschild|S\. ?M\. von Rothschild;Vienna house
+cm_rothschild|C M de Rothschild & Figli (Naples)|company|rothschild|C\. ?M\. de Rothschild
+anthony_r|Sir Anthony de Rothschild, 1st Baronet|person|rothschild|Anthony de Rothschild
+nathaniel_paris|Nathaniel de Rothschild (1812-70, Paris)|person|rothschild|Nathaniel de Rothschild
+alfred_r|Alfred de Rothschild|person|rothschild|Alfred de Rothschild
+leopold_r|Leopold de Rothschild (1845-1917)|person|rothschild|Leopold de Rothschild
+charles_r|Charles Rothschild (1877-1923)|person|rothschild|Charles Rothschild;Charles de Rothschild
+victor_r|Victor Rothschild, 3rd Baron|person|rothschild|Victor Rothschild;3rd Baron Rothschild
+miriam_r|Miriam Rothschild|person|rothschild|Miriam Rothschild
+alphonse_r|Alphonse de Rothschild|person|rothschild|Alphonse de Rothschild;Baron Alphonse
+gustave_r|Gustave de Rothschild|person|rothschild|Gustave de Rothschild
+maurice_r|Maurice de Rothschild|person|rothschild|Maurice de Rothschild
+edouard_r|Édouard de Rothschild|person|rothschild|Édouard de Rothschild;Edouard de Rothschild
+guy_r|Guy de Rothschild|person|rothschild|Guy de Rothschild
+lionel_1882|Lionel Nathan de Rothschild (1882-1942)|person|rothschild|Lionel Nathan de Rothschild
+anthony_g|Anthony Gustav de Rothschild|person|rothschild|Anthony Gustav
+league_bj|League of British Jews (1917)|institution|religion|League of British Jews
+magnus_p|Sir Philip Magnus|person|religion|Philip Magnus
+swaythling|Louis Montagu, 2nd Baron Swaythling|person|religion|Swaythling
+curzon|Lord Curzon|person|british state|Lord Curzon;Curzon
+milner|Lord Milner|person|british state|Lord Milner;Alfred Milner;Milner
+amery|Leo Amery|person|british state|Leo Amery;Amery
+cecil_r|Lord Robert Cecil|person|british state|Robert Cecil
+ormsby_gore|William Ormsby-Gore|person|british state|Ormsby-Gore
+graham_r|Sir Ronald Graham|person|british state|Ronald Graham
+asquith|H. H. Asquith|person|british state|Asquith
+grey_e|Sir Edward Grey|person|british state|Edward Grey
+lansdowne|Lord Lansdowne|person|british state|Lansdowne
+hankey|Maurice Hankey|person|british state|Hankey
+greenberg_l|Leopold Greenberg|person|zionist movement|Leopold Greenberg
+uganda|British Uganda offer (1903)|document|british state|Uganda (?:offer|scheme|plan|proposal|Programme);Uganda
+samuel_memo|"The Future of Palestine" memorandum (Samuel, 1915)|document|british state|The Future of Palestine
+montagu_memo|Montagu memorandum (23 Aug 1917)|document|british state|Anti-Semitism of the Present Government
+plumer|Lord Plumer|person|british state|Plumer
+chancellor_j|Sir John Chancellor|person|british state|John Chancellor
+wauchope|Sir Arthur Wauchope|person|british state|Wauchope
+macmichael|Sir Harold MacMichael|person|british state|MacMichael
+gort|Lord Gort|person|british state|Lord Gort;Gort
+cunningham_a|Sir Alan Cunningham|person|british state|Alan Cunningham
+luke_h|Sir Harry Luke|person|british state|Harry Luke
+millerand|Alexandre Millerand|person|europe|Millerand
+berthelot|Philippe Berthelot|person|europe|Berthelot
+nitti|Francesco Saverio Nitti|person|europe|Nitti
+italy_gov|Italy (government)|government|europe|Italian government
+matsui|Keishirō Matsui|person|international|Matsui
+japan_gov|Japan (government)|government|international|Japanese government
+agliardi|Msgr. Antonio Agliardi (nuncio in Vienna)|person|religion|Agliardi
+merry_del_val|Cardinal Rafael Merry del Val|person|religion|Merry del Val
+benedict15|Pope Benedict XV|person|religion|Benedict XV
+gasparri|Cardinal Pietro Gasparri|person|religion|Gasparri
+tardini|Msgr. Domenico Tardini|person|religion|Tardini
+maglione|Cardinal Luigi Maglione|person|religion|Maglione
+paul6|Pope Paul VI|person|religion|Paul VI
+# --- actors the books name (added from a name pass over all three volumes) ---
+king_hussein|King Hussein of Jordan|person|arab states|King Hussein
+komer|Robert Komer|person|us government|Robert Komer;Komer
+mcnamara|Robert McNamara|person|us government|McNamara
+herter|Christian Herter|person|us government|Herter
+bundy|McGeorge Bundy|person|us government|McGeorge Bundy;Bundy
+harman_a|Avraham Harman|person|israel state|Avraham Harman;Harman
+byroade|Henry Byroade|person|us government|Henry Byroade;Byroade
+macmillan|Harold Macmillan|person|british state|Harold Macmillan;Macmillan
+couve|Maurice Couve de Murville|person|europe|Couve de Murville
+feldman_m|Myer Feldman|person|us government|Myer Feldman;Feldman@cw5;Feldman@cw6
+kaufmann_e|Ed Kaufmann|person|us lobby|Ed Kaufmann;Edmund Kaufmann
+szold|Henrietta Szold|person|us lobby|Henrietta Szold;Szold
+rashid_ali|Rashid Ali al-Gailani|person|arab states|Rashid Ali
+marzouk|Moshe Marzouk|person|intelligence|Moshe Marzouk
+azar_s|Shmuel Azar|person|intelligence|Shmuel Azar
+bennett_max|Max Bennett|person|intelligence|Max Bennett
+gibli|Binyamin Gibli|person|intelligence|Binyamin Gibli;Gibli
+motzkin|Leo Motzkin|person|zionist movement|Leo Motzkin;Motzkin
+levontin|Zalman David Levontin|person|finance|Levontin
+lipsky|Louis Lipsky|person|us lobby|Louis Lipsky;Lipsky
+golomb|Eliyahu Golomb|person|militias|Eliyahu Golomb;Golomb
+tehomi|Avraham Tehomi|person|militias|Avraham Tehomi;Tehomi
+lowenthal|Max Lowenthal|person|us government|Max Lowenthal;Lowenthal
+eytan|Walter Eytan|person|israel state|Walter Eytan
+dewey|Thomas Dewey|person|us parties|Thomas Dewey;Dewey
+malik|Charles Malik|person|arab states|Charles Malik
+zahedi|Fazlollah Zahedi|person|international|Zahedi
+hoover_jr|Herbert Hoover Jr.|person|us government|Herbert Hoover Jr
+pineau|Christian Pineau|person|europe|Christian Pineau;Pineau
+bourges|Maurice Bourgès-Maunoury|person|europe|Bourgès-Maunoury
+bergmann|Ernst David Bergmann|person|israel state|Ernst David Bergmann;Bergmann
+globke|Hans Globke|person|europe|Globke
+rostow|Walt Rostow|person|us government|Walt Rostow;Rostow
+shukairy|Ahmad Shukairy|person|arab leadership|Shukairy;Shuqayri
+weitz|Yosef Weitz|person|land|Yosef Weitz;Weitz
+rosenwald|Lessing Rosenwald|person|religion|Lessing Rosenwald
+qawuqji|Fawzi al-Qawuqji|person|arab states|Qawuqji;Qawukji
+cadogan|Alexander Cadogan|person|british state|Cadogan
+riad_solh|Riad al-Solh|person|arab states|Riad al-Solh
+eddy|William Eddy|person|us government|William Eddy
+shamir|Yitzhak Shamir|person|militias|Yitzhak Shamir
+andrews_l|Lewis Andrews|person|british state|Lewis Andrews
+morrison_h|Herbert Morrison|person|british state|Herbert Morrison
+klein_j|Julius Klein|person|us lobby|Julius Klein
+creech|Arthur Creech Jones|person|british state|Creech Jones
 """
 
 

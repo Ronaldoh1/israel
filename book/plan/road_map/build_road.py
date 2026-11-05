@@ -205,7 +205,7 @@ def main():
         seen.setdefault(k, e)
     edges = list(seen.values())
     # curated corrections
-    for lp in [os.path.join(HERE, x) for x in ('road_layer.json', 'us_layer.json', 'world_layer.json', 'cold_layer.json')]:
+    for lp in [os.path.join(HERE, x) for x in ('road_layer.json', 'us_layer.json', 'world_layer.json', 'cold_layer.json', 'history_layer.json')]:
         if not os.path.exists(lp): continue
         L = json.load(open(lp))
         rm = {tuple(x) for x in L.get('remove_edges', [])}

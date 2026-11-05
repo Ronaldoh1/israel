@@ -57,6 +57,8 @@ R = [
     ("const QHELP='Keys: tier epstein maxwell", "const QHELP='Keys: tier agency wzo"),
     ("epstein:q=>q.kb_epstein, maxwell:q=>q.kb_maxwell,", "agency:q=>q.kb_epstein, wzo:q=>q.kb_maxwell, book:q=>(q.sections||[]).join(' '), mentions:q=>q.mentions||0,"),
     ("n.id==='epstein'?' selected':''", "n.id==='herzl'?' selected':''"),
+    ('const DEFAULT_DEPTH = 1;', 'const DEFAULT_DEPTH = 5;'),
+    ('<input id="depth" type="range" min="1" max="5" value="1"><b id="dval">1</b>', '<input id="depth" type="range" min="1" max="5" value="5"><b id="dval">All</b>'),
 
 ]
 for a, b in R:

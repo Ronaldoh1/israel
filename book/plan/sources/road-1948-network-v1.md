@@ -207,3 +207,22 @@ Built by `book/plan/road_map/world_layer.py`, which writes `world_layer.json` an
 
 **Rothschild after 1948**
 - The node note on James Armand: visible institutions only (PICA to the JNF, Yad Hanadiv, the Knesset building). No document shows Rothschild ownership or control of the Bank of Israel.
+
+## Whole-network view and the historical layer (4 Nov 2026, fourth pass)
+
+**View.** Ron saw about 20 nodes because the map opened on Herzl at depth 1. The template now has an "All" depth and a "Whole network" button, and the Road map opens on the whole documented network: 482 nodes and 859 ties on screen. Hub labels scale with zoom. The Epstein map keeps depth 1 by default but gains the same button.
+
+**Layers and names**
+- `history_layer.py` adds 99 ties and 11 sources:
+  - The Rothschild family and its five houses: Frankfurt, Vienna, London, Naples, Paris. This covers the generations to Victor and Guy.
+  - Lionel in the Commons (1858) and the Suez Canal loan; Natty's peerage (1885).
+  - Lionel Nathan's anti-Zionist League of British Jews (1917).
+  - Chamberlain and the Uganda offer.
+  - The War Cabinet and the drafters of the declaration: Milner, Amery, Ormsby-Gore, Curzon's memo, Cecil, Graham, the Montagu memo, the Samuel memo.
+  - San Remo: Lloyd George, Curzon, Millerand, Berthelot, Nitti, Matsui, Hankey.
+  - All the High Commissioners.
+  - The Vatican: Agliardi, Merry del Val, Pius X, Benedict XV, Gasparri's note against the Mandate, Pacelli/Pius XII, Tardini, Maglione, Paul VI.
+- A name pass over all three volumes added about 60 actors the books name: Komer, Bundy, Rostow, Byroade, Harman, Couve de Murville, Pineau, Bourgès-Maunoury, Szold, Lipsky, Golomb, Tehomi, Shamir, Rosenwald, Weitz, Kaufmann, Lowenthal, Gibli, Bergmann, Globke and others.
+- 62 more candidates were reviewed.
+
+**Result.** 588 nodes; 815 sourced ties plus 57 reported (872 documented); 493 nodes with at least one documented tie. For comparison, the Epstein map has 419 nodes and about 800 ties.
