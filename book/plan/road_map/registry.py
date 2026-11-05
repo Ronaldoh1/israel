@@ -49,7 +49,6 @@ fedam|Federation of American Zionists|institution|us lobby|Federation of America
 zoa|Zionist Organization of America|institution|us lobby|Zionist Organization of America;ZOA
 hadassah|Hadassah|institution|us lobby|Hadassah
 azec|American Zionist Emergency Council|institution|us lobby|American Zionist Emergency Council;AZEC;Emergency Committee for Zionist Affairs;American Zionist Emergency Committee
-azc|American Zionist Council|institution|us lobby|American Zionist Council
 azcpa|American Zionist Committee for Public Affairs (later AIPAC)|institution|us lobby|American Zionist Committee for Public Affairs;AIPAC;American Israel Public Affairs Committee
 apc|American Palestine Committee|institution|us lobby|American Palestine Committee
 ccp|Christian Council on Palestine|institution|us lobby|Christian Council on Palestine
@@ -326,6 +325,79 @@ dorothy|Dorothy de Rothschild|person|rothschild|Dorothy de Rothschild;Dorothy
 yad_hanadiv|Yad Hanadiv (Rothschild charities in Israel)|institution|rothschild|Yad Hanadiv
 ramat_hanadiv|Ramat HaNadiv (memorial and burial site)|place|rothschild|Ramat HaNadiv;Ramat Hanadiv
 morgenthau|Henry Morgenthau Sr.|person|us government|Henry Morgenthau(?!,? Jr)
+
+# ---------- American layer: organizations, intelligence, parties, money (added Nov 2026) ----------
+shiloah|Reuven Shiloah (Zaslani)|person|intelligence|Reuven Shiloah;Reuven Zaslani;Shiloah;Zaslani
+mossad|Mossad (founded 1949-51)|government|intelligence|\bMossad\b(?![ -]?[Ll]e)
+ja_political|Jewish Agency Political Department|institution|intelligence|Jewish Agency's Political Department;Political Department of the Jewish Agency
+kollek|Teddy Kollek|person|militias|Teddy Kollek;Kollek
+hotel14|Hotel Fourteen (14 East 60th Street, New York)|place|militias|Hotel Fourteen
+arazi|Yehuda Arazi|person|militias|Yehuda Arazi;Arazi
+lansky|Meyer Lansky|person|militias|Meyer Lansky;Lansky
+mickey_cohen|Mickey Cohen|person|militias|Mickey Cohen
+siegel|Bugsy Siegel|person|militias|Bugsy Siegel;Benjamin Siegel
+dafni|Reuven Dafni|person|militias|Reuven Dafni
+americans_haganah|Americans for Haganah, Inc.|institution|us lobby|Americans for Haganah
+voorhis|Voorhis Act|document|us government|Voorhis Act
+neutrality|US Neutrality Acts|document|us government|Neutrality Acts?
+hoover|J. Edgar Hoover|person|us government|J\. Edgar Hoover;Edgar Hoover
+angleton|James Jesus Angleton|person|us government|James Jesus Angleton;James Angleton;Angleton
+dnc|Democratic National Committee|institution|us parties|Democratic National Committee;\bDNC\b
+conv1944|1944 Democratic National Convention|event|us parties|1944 Democratic (?:National )?[Cc]onvention
+hannegan|Robert Hannegan|person|us parties|Robert Hannegan;Hannegan
+pauley|Edwin Pauley|person|us parties|Edwin Pauley;Pauley
+flynn_e|Edward J. Flynn|person|us parties|Edward J\. Flynn;Ed Flynn
+walker_f|Frank C. Walker|person|us parties|Frank C\. Walker
+kelly_e|Edward J. Kelly (Mayor of Chicago)|person|us parties|Edward J\. Kelly
+allen_g|George E. Allen|person|us parties|George E\. Allen
+byrnes|James F. Byrnes|person|us government|James F\. Byrnes;James Byrnes;Byrnes
+kennan|George Kennan|person|us government|George Kennan;George F\. Kennan;Kennan
+pps|State Department Policy Planning Staff|government|us government|Policy Planning Staff
+pps_palestine|Policy Planning Staff report on Palestine (19 Jan 1948)|document|us government|PPS/19
+mcclintock|Robert McClintock|person|us government|Robert McClintock;McClintock
+connelly|Matthew Connelly|person|us government|Matthew Connelly
+may12|White House meeting on Palestine (12 May 1948)|event|us government|meeting of 12 May 1948
+recognition48|US recognition of Israel (14 May 1948)|event|us government|de facto recognition
+fdr_letter45|Roosevelt letter to Ibn Saud (5 Apr 1945)|document|us government|letter of 5 April 1945
+partition_notes|Truman administration notes on the partition vote (Nov 1947)|document|us government|notes on the partition vote
+liberia|Liberia (government)|government|international|Liberian government;Liberian delegation
+haiti|Haiti (government)|government|international|Haitian government;Haitian delegation
+philippines|Philippines (government)|government|international|Philippine government;Philippine delegation
+cuba|Cuba (government)|government|international|Cuban government;Cuban delegation
+greece|Greece (government)|government|international|Greek government;Greek delegation
+lansing|Robert Lansing|person|us government|Robert Lansing;Lansing
+lansing_letter|Lansing letter to Wilson on Palestine (Dec 1917)|document|us government|Lansing's letter
+frankfurter|Felix Frankfurter|person|us lobby|Felix Frankfurter;Frankfurter
+faisal_frankfurter|Faisal-Frankfurter letter (3 Mar 1919)|document|international|Faisal[- –]Frankfurter;Feisal[- –]Frankfurter
+gottheil|Richard Gottheil|person|us lobby|Richard Gottheil;Gottheil
+pec_zionist|Provisional Executive Committee for General Zionist Affairs|institution|us lobby|Provisional Executive Committee
+acpc|American Christian Palestine Committee|institution|christian zionism|American Christian Palestine Committee
+azc|American Zionist Council|institution|us lobby|American Zionist Council
+louis_marshall|Louis Marshall|person|us lobby|Louis Marshall
+ajrc|American Jewish Relief Committee (1914)|institution|us lobby|American Jewish Relief Committee
+technion|Technion (Haifa)|institution|zionist movement|Technion
+belmont|August Belmont|person|finance|August Belmont
+belmont_co|August Belmont & Co.|company|finance|Belmont & Co
+josephs|J.L. & S.I. Joseph & Co.|company|finance|J\.L\. (?:and|&) S\.I\. Joseph
+morgan|J. P. Morgan|person|finance|J\. ?P\. Morgan(?! &)(?! and Co);Pierpont Morgan
+jpm_co|J.P. Morgan & Co.|company|finance|J\. ?P\. Morgan (?:&|and) Co
+gold1895|Morgan-Belmont gold contract (8 Feb 1895)|document|finance|Morgan[- –]Belmont
+cleveland|Grover Cleveland|person|us government|Grover Cleveland
+treasury|US Treasury|government|us government|US Treasury;U\.S\. Treasury;Treasury Department
+jekyll|Jekyll Island meeting (Nov 1910)|event|finance|Jekyll Island
+aldrich|Nelson Aldrich|person|us government|Nelson Aldrich;Senator Aldrich
+piatt_andrew|A. Piatt Andrew|person|us government|Piatt Andrew
+davison|Henry P. Davison|person|finance|Henry P\. Davison;Henry Davison
+vanderlip|Frank Vanderlip|person|finance|Frank Vanderlip;Vanderlip
+national_city|National City Bank|company|finance|National City Bank
+kuhn_loeb|Kuhn, Loeb & Co.|company|finance|Kuhn,? Loeb
+aldrich_plan|Aldrich Plan (1911)|document|finance|Aldrich Plan
+fed_act|Federal Reserve Act (Dec 1913)|document|finance|Federal Reserve Act
+fed|Federal Reserve System|government|finance|Federal Reserve(?! Act)
+glass|Carter Glass|person|us government|Carter Glass
+owen_r|Robert L. Owen|person|us government|Robert L\. Owen
+house_em|Edward M. House|person|us government|Colonel House;Edward M\. House
+bernstein|Nahum (William) Bernstein|person|militias|William Bernstein;Nahum Bernstein
 """
 
 

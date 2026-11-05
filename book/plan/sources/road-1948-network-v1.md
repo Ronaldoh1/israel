@@ -59,3 +59,54 @@
 - **Arab and Palestinian institutions, the Ottoman side and the British administration** have fewer reviewed ties than the Zionist and American side. The cause is the heuristic, not the book: those chapters use more narrative phrasing. A review pass over those clusters should come next, so the map is not lopsided.
 - **The Baseline** is mostly concepts, words and traditions, so it contributes fewer actor ties. Its dissent institutions (Bund, Reform, Neturei Karta, Satmar, Agudah) are on the map.
 - **Next step:** review the remaining named-together pairs cluster by cluster and promote the real ties.
+
+## The American layer (4 Nov 2026)
+
+Built by `book/plan/road_map/us_layer.py`, which writes `us_layer.json` (ties) and `book/research/road_us_layer.json` (26 sources). The run added 70 nodes to the registry and 133 curated ties, plus 21 book-sentence ties reviewed in `review.json`. Result: 373 nodes; 430 sourced ties, 35 stated in the book or by a named secondary account, and 1,189 "named together" leads.
+
+**Sub-networks**
+
+1. **US Zionist organizations, 1897–1948**
+   - Federation of American Zionists (Gottheil, Wise), then Brandeis's wartime committee, then the ZOA.
+   - American Palestine Committee (Neumann, 1932; ZOA-funded; two-thirds of the Senate as members), merged in 1946 into the American Christian Palestine Committee.
+   - JDC and the 1914 Relief Committee (Schiff, Felix Warburg, Louis Marshall).
+2. **FARA**
+   - 1939: Jewish Agency registration (reported by IRmep).
+   - 25 Feb 1948: order to the ZOA, dropped after it changed its constitution.
+   - 1962: order to the American Zionist Council, and its tie to AIPAC (later).
+3. **Intelligence**
+   - Shiloah: Jewish Agency Political Department (1936); OSS ties in the Second World War; arranged the Sonneborn meeting; named by Ben-Gurion in 1949; first head of the Mossad (1951).
+   - Kollek: liaison to MI5; Haganah representative in Washington, 1947–48; Hotel Fourteen; Angleton, 1950.
+   - FBI under Hoover: Americans for Haganah, the Voorhis Act and the Neutrality Acts, 1947–48.
+   - Schwimmer: convicted in 1950.
+   - Lansky, Siegel and Cohen (reported, Rockaway/Tablet).
+4. **1944 convention**
+   - Hannegan, Walker, Pauley, Flynn, Kelly, Allen; Byrnes passed over; Roosevelt's letters; ballot results.
+   - No Zionist or Jewish organization is named in the record of the swap.
+5. **White House and State Department, 1945–48**
+   - Roosevelt's letter to Ibn Saud of 5 Apr 1945.
+   - Policy Planning Staff report of 19 Jan 1948: oil, the Soviets, and the view that partition "cannot be implemented without the use of force".
+   - The 12 May 1948 meeting (Marshall: "I would vote against the President").
+   - Recognition at 6:11 p.m. on 14 May.
+   - Administration notes on lobbying Liberia, Haiti and the Philippines before the vote.
+   - Export-Import Bank loan of $100M (reported, Aug 1948).
+6. **Money**
+   - Rothschild agents in America: Phillips, Cohen, the Josephs, then Belmont from 1837. Belmont chaired the DNC, 1860–72.
+   - 1895 Morgan–Belmont gold contract.
+   - Kuhn, Loeb under Schiff.
+   - Jekyll Island (1910), the Aldrich Plan, the Federal Reserve Act (1913), Paul Warburg on the Board (1916–18).
+   - The Baseline's s04ga finding stands: no documented institutional or financial link between the Fed and the Zionist Organization or its funds.
+
+**1917–19 groundwork**
+- Brandeis as Weizmann's channel to Wilson (Barda 2022, a working paper).
+- Lansing's letter of December 1917 and Wilson's "very unwilling" agreement.
+- The Faisal–Frankfurter letter of 3 Mar 1919.
+
+**Open leads for the next pass**
+- The Jewish Agency's 1939 FARA filing itself.
+- OSS files on the Jewish Agency.
+- Bernstein's FBI file.
+- Aramco and the oil companies' lobbying, 1947–48.
+- Baruch and other figures alleged to have pressed delegations at the UN.
+- Morgenthau Jr. and the War Refugee Board.
+- Christian Zionist organizations after 1946.

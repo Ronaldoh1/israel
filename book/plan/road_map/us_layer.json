@@ -1,0 +1,1076 @@
+{
+ "_note": "The American layer (Nov 2026). Built by us_layer.py; do not edit by hand.",
+ "node_notes": {
+  "fed": "Created by the Federal Reserve Act, signed by Wilson in December 1913, from a plan drafted at Jekyll Island in November 1910 by Senator Aldrich with bankers from J.P. Morgan, National City Bank and Kuhn, Loeb. The Baseline (s04ga) checks the often-repeated claim that the Fed and Zionist finance are one story and finds no documented institutional or financial link between the Act and the Zionist Organization or its funds.",
+  "belmont": "The Rothschilds never ran their own bank in the United States; they worked through agents (Phillips of Philadelphia, Cohen of Baltimore, the Josephs of New York) and, from May 1837, August Belmont, who later chaired the Democratic National Committee (1860-72). Rothschild Archive; Wikipedia.",
+  "conv1944": "The documented account names the party bosses who replaced Wallace with Truman (Hannegan, Walker, Pauley, Flynn, Kelly, Allen). It names no Zionist or Jewish organization; none was found in the sources checked.",
+  "mossad": "Ben-Gurion decided on an external intelligence service in 1949 under Reuven Shiloah; it took the form of the Mossad in March-April 1951. Not to be confused with the Mossad LeAliyah Bet (1938), the Haganah branch for clandestine immigration.",
+  "fara": "Foreign Agents Registration Act (1938). Pre-1948 uses in this map: the Jewish Agency registration of 1939 (reported) and the order to the ZOA of 25 Feb 1948, dropped after the ZOA changed its constitution. The 1962 order to the American Zionist Council came later."
+ },
+ "edges": [
+  {
+   "f": "gottheil",
+   "t": "fedam",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_zoa",
+   "label": "1897: the Federation of American Zionists, the first official US Zionist body, elected Richard Gottheil president."
+  },
+  {
+   "f": "wise",
+   "t": "fedam",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_zoa",
+   "label": "1897: Stephen S. Wise served as honorary secretary of the Federation of American Zionists."
+  },
+  {
+   "f": "brandeis",
+   "t": "pec_zionist",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_zoa",
+   "label": "Early in the First World War, Brandeis and others created the Provisional Executive Committee for General Zionist Affairs to direct Zionist work while the world movement was split by the war."
+  },
+  {
+   "f": "pec_zionist",
+   "t": "zoa",
+   "type": "succession",
+   "status": "reported",
+   "src": "us_wp_zoa",
+   "label": "The wartime committee and the Federation were reorganized as the ZOA (1917 or 1918; the date is uncited)."
+  },
+  {
+   "f": "doj",
+   "t": "zoa",
+   "type": "official act",
+   "status": "verified",
+   "src": "us_wp_zoa",
+   "label": "25 Feb 1948: the ZOA was ordered to register as a foreign agent; it changed its constitution and the registration effort was dropped."
+  },
+  {
+   "f": "fara",
+   "t": "zoa",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "us_wp_zoa",
+   "label": "The 1948 order to the ZOA was a foreign-agent registration order (Foreign Agents Registration Act)."
+  },
+  {
+   "f": "fara",
+   "t": "jewish_agency",
+   "type": "legal basis",
+   "status": "reported",
+   "src": "us_irmep_fara",
+   "label": "1939: the Jewish Agency was among 317 foreign agents registered in the United States (as stated by IRmep, 2013)."
+  },
+  {
+   "f": "doj",
+   "t": "azc",
+   "type": "official act",
+   "status": "reported",
+   "src": "us_irmep_fara",
+   "label": "21 Nov 1962: the Justice Department ordered the American Zionist Council to register as the Jewish Agency's foreign agent, after the Senate inquiry found Agency money flowing to it (IRmep, 2013)."
+  },
+  {
+   "f": "jewish_agency",
+   "t": "azc",
+   "type": "funding",
+   "status": "reported",
+   "src": "us_irmep_fara",
+   "label": "The 1963 Senate Foreign Relations inquiry found the Jewish Agency funnelled money to the American Zionist Council and its lobbying division (IRmep, 2013)."
+  },
+  {
+   "f": "azc",
+   "t": "azcpa",
+   "type": "branch",
+   "status": "reported",
+   "src": "us_irmep_fara",
+   "label": "The council's lobbying division, AIPAC, incorporated about six weeks after the 1962 order and continued its work (IRmep, 2013)."
+  },
+  {
+   "f": "neumann",
+   "t": "apc",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_apc",
+   "label": "Conceived late 1931 by Emanuel Neumann of the Zionist Executive; launched 17 Jan 1932 at a dinner in Washington."
+  },
+  {
+   "f": "zoa",
+   "t": "apc",
+   "type": "funding",
+   "status": "verified",
+   "src": "us_wp_apc",
+   "label": "The American Palestine Committee was funded on a large scale by the Zionist Organization of America; by the 1940s it counted two-thirds of the Senate among its 15,000 members."
+  },
+  {
+   "f": "apc",
+   "t": "acpc",
+   "type": "succession",
+   "status": "verified",
+   "src": "us_wp_apc",
+   "label": "1946: the American Palestine Committee merged with the Christian Council on Palestine to form the American Christian Palestine Committee."
+  },
+  {
+   "f": "ccp",
+   "t": "acpc",
+   "type": "succession",
+   "status": "verified",
+   "src": "us_wp_apc",
+   "label": "1946: the Christian Council on Palestine merged into the American Christian Palestine Committee."
+  },
+  {
+   "f": "zoa",
+   "t": "azcpa",
+   "type": "association",
+   "status": "reported",
+   "src": "us_wp_zoa",
+   "label": "After 1948 the ZOA became a charter member of the Conference of Presidents; it had 165,000 members at its 1939 peak."
+  },
+  {
+   "f": "schiff",
+   "t": "kuhn_loeb",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Jacob Schiff joined Kuhn, Loeb & Co. in 1875 and headed it from 1885 until his death in 1920."
+  },
+  {
+   "f": "warburg_f",
+   "t": "kuhn_loeb",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Felix Warburg married Schiff's daughter Frieda in 1895 and became a partner in Kuhn, Loeb & Co."
+  },
+  {
+   "f": "schiff",
+   "t": "warburg_f",
+   "type": "kinship",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Schiff was Felix Warburg's father-in-law (1895)."
+  },
+  {
+   "f": "warburg_p",
+   "t": "kuhn_loeb",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Paul Warburg attended Jekyll Island as a partner at Kuhn, Loeb and Co."
+  },
+  {
+   "f": "schiff",
+   "t": "jdc",
+   "type": "funding",
+   "status": "verified",
+   "src": "us_wp_jdc",
+   "label": "1914: Schiff gave the initial $50,000 that launched the Joint Distribution Committee."
+  },
+  {
+   "f": "schiff",
+   "t": "ajrc",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_jdc",
+   "label": "25 Oct 1914: Schiff, Felix Warburg and Louis Marshall were among the founders of the American Jewish Relief Committee, which raised money for the JDC."
+  },
+  {
+   "f": "warburg_f",
+   "t": "ajrc",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_jdc",
+   "label": "25 Oct 1914: Felix Warburg co-founded the American Jewish Relief Committee."
+  },
+  {
+   "f": "louis_marshall",
+   "t": "ajrc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_jdc",
+   "label": "Louis Marshall was president of the American Jewish Relief Committee."
+  },
+  {
+   "f": "ajrc",
+   "t": "jdc",
+   "type": "funding",
+   "status": "verified",
+   "src": "us_wp_jdc",
+   "label": "The American Jewish Relief Committee collected funds for the JDC."
+  },
+  {
+   "f": "schiff",
+   "t": "ajc",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Schiff helped establish and develop the American Jewish Committee."
+  },
+  {
+   "f": "schiff",
+   "t": "technion",
+   "type": "funding",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Schiff donated to the Technical Institute of Haifa (Technion)."
+  },
+  {
+   "f": "schiff",
+   "t": "wzo",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_schiff",
+   "label": "Schiff supported secular Zionism but never joined: he offered to join if he could publish his own statement, and the offer was refused; he feared Zionism would make Americans question his loyalty."
+  },
+  {
+   "f": "rothschild_freres",
+   "t": "belmont",
+   "type": "appointment",
+   "status": "verified",
+   "src": "us_ra_belmont1837; us_wp_belmont",
+   "label": "May 1837: sent by the Rothschilds toward Havana, Belmont reached New York in the crash, found their agent J.L. & S.I. Joseph & Co. had failed, and opened an office at 78 Wall Street; the Rothschilds made him their permanent US agent."
+  },
+  {
+   "f": "nm_rothschild",
+   "t": "belmont",
+   "type": "appointment",
+   "status": "verified",
+   "src": "us_wp_belmont",
+   "label": "The Paris and London Rothschild banks made Belmont their permanent US agent."
+  },
+  {
+   "f": "josephs",
+   "t": "rothschild_freres",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "us_ra_belmont1837",
+   "label": "Before 1837 the Rothschilds worked in America through agents: Phillips of Philadelphia, Cohen of Baltimore, then the Josephs of New York, who collapsed in the Panic of 1837. The family never ran its own US bank; it used agents."
+  },
+  {
+   "f": "belmont",
+   "t": "belmont_co",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_belmont",
+   "label": "1837: Belmont set up August Belmont & Co. at 78 Wall Street."
+  },
+  {
+   "f": "belmont",
+   "t": "dnc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_belmont",
+   "label": "Belmont chaired the Democratic National Committee from 23 June 1860 to 1872."
+  },
+  {
+   "f": "jpm_co",
+   "t": "gold1895",
+   "type": "signatory",
+   "status": "verified",
+   "src": "us_ecom_morgan_belmont",
+   "label": "8 Feb 1895: the houses of J.P. Morgan and August Belmont contracted to buy $62 million of 30-year US bonds, paid in gold, restoring the Treasury's gold reserve."
+  },
+  {
+   "f": "belmont_co",
+   "t": "gold1895",
+   "type": "signatory",
+   "status": "verified",
+   "src": "us_ecom_morgan_belmont",
+   "label": "August Belmont (Jr.), \"American representative of the Rothschilds of Paris\", was the second party to the 1895 gold contract."
+  },
+  {
+   "f": "treasury",
+   "t": "gold1895",
+   "type": "signatory",
+   "status": "verified",
+   "src": "us_ecom_morgan_belmont",
+   "label": "The Cleveland administration's Treasury signed the 1895 contract during the depression of 1893-97."
+  },
+  {
+   "f": "cleveland",
+   "t": "treasury",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_ecom_morgan_belmont",
+   "label": "The Cleveland administration turned to the financiers for help with the gold reserve."
+  },
+  {
+   "f": "morgan",
+   "t": "jpm_co",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_ecom_morgan_belmont",
+   "label": "J. P. Morgan's banking house was party to the 1895 contract."
+  },
+  {
+   "f": "aldrich",
+   "t": "jekyll",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "20-30 Nov 1910: Senator Nelson Aldrich, chair of the Senate Finance Committee, convened the Jekyll Island meeting."
+  },
+  {
+   "f": "piatt_andrew",
+   "t": "jekyll",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "A. Piatt Andrew, Harvard economist and later assistant Treasury secretary, attended Jekyll Island."
+  },
+  {
+   "f": "davison",
+   "t": "jekyll",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Henry Davison, a partner at J.P. Morgan, attended Jekyll Island."
+  },
+  {
+   "f": "davison",
+   "t": "jpm_co",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Henry Davison was a partner at J.P. Morgan."
+  },
+  {
+   "f": "vanderlip",
+   "t": "jekyll",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Frank Vanderlip, president of National City Bank, attended Jekyll Island."
+  },
+  {
+   "f": "vanderlip",
+   "t": "national_city",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Vanderlip was president of National City Bank."
+  },
+  {
+   "f": "warburg_p",
+   "t": "jekyll",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Paul Warburg of Kuhn, Loeb attended Jekyll Island."
+  },
+  {
+   "f": "jekyll",
+   "t": "aldrich_plan",
+   "type": "drafting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "The meeting produced the plan for a \"Reserve Association of America\"; Aldrich presented it in January 1911."
+  },
+  {
+   "f": "aldrich_plan",
+   "t": "fed_act",
+   "type": "influence",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "The Federal Reserve Act's technical details closely resembled the Aldrich Plan, though its political structure differed."
+  },
+  {
+   "f": "glass",
+   "t": "fed_act",
+   "type": "drafting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Carter Glass, chair of House Banking and Currency, introduced the bill and later claimed primary credit."
+  },
+  {
+   "f": "owen_r",
+   "t": "fed_act",
+   "type": "drafting",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Robert Owen, chair of the Senate banking committee, introduced the Senate bill."
+  },
+  {
+   "f": "wilson",
+   "t": "fed_act",
+   "type": "official act",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "December 1913: President Wilson signed the Federal Reserve Act."
+  },
+  {
+   "f": "fed_act",
+   "t": "fed",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "The Federal Reserve Act created the Federal Reserve System."
+  },
+  {
+   "f": "warburg_p",
+   "t": "fed",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Paul Warburg served as Federal Reserve vice governor, 1916-18."
+  },
+  {
+   "f": "warburg_p",
+   "t": "house_em",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Warburg advised Glass and Owen and corresponded with Wilson's adviser Col. E. M. House on the bill."
+  },
+  {
+   "f": "house_em",
+   "t": "wilson",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_frh_jekyll",
+   "label": "Colonel E. M. House was Wilson's adviser."
+  },
+  {
+   "f": "weizmann",
+   "t": "brandeis",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "us_barda2022",
+   "label": "Summer 1917: Weizmann turned to \"an American friend, Justice Louis Brandeis\" to help secure the declaration."
+  },
+  {
+   "f": "brandeis",
+   "t": "wilson",
+   "type": "pressure",
+   "status": "reported",
+   "src": "us_barda2022",
+   "label": "Brandeis and Wise played \"an instrumental role\" in Wilson's change of position and the adoption of the declaration (Barda, 2022, working paper)."
+  },
+  {
+   "f": "lansing",
+   "t": "lansing_letter",
+   "type": "authorship",
+   "status": "verified",
+   "src": "us_frus1917_lansing",
+   "label": "Lansing advised Wilson to move slowly on Palestine: the US was not at war with Turkey, Jews were divided over a national home, and Christian opinion would object (in his own words, to \"the race credited with the death of Christ\")."
+  },
+  {
+   "f": "lansing_letter",
+   "t": "wilson",
+   "type": "addressee",
+   "status": "verified",
+   "src": "us_frus1917_lansing",
+   "label": "14 Dec 1917: Wilson returned the letter at a Cabinet meeting, agreeing \"very unwillingly\", and noted that he believed the US had already assented to the British declaration."
+  },
+  {
+   "f": "lansing",
+   "t": "state_dept",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_frus1917_lansing",
+   "label": "Robert Lansing, Secretary of State."
+  },
+  {
+   "f": "faisal",
+   "t": "faisal_frankfurter",
+   "type": "authorship",
+   "status": "verified",
+   "src": "us_jvl_feisal_frankfurter",
+   "label": "3 Mar 1919, Paris: Faisal wrote that the Arabs \"look with the deepest sympathy on the Zionist movement.\""
+  },
+  {
+   "f": "faisal_frankfurter",
+   "t": "frankfurter",
+   "type": "addressee",
+   "status": "verified",
+   "src": "us_jvl_feisal_frankfurter",
+   "label": "Addressed to Felix Frankfurter, associate of Weizmann, who replied on behalf of the Zionist Organisation."
+  },
+  {
+   "f": "frankfurter",
+   "t": "weizmann",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "us_jvl_feisal_frankfurter",
+   "label": "Frankfurter acted at the Paris Peace Conference as Weizmann's associate for the Zionist Organisation."
+  },
+  {
+   "f": "fdr",
+   "t": "fdr_letter45",
+   "type": "authorship",
+   "status": "verified",
+   "src": "us_jvl_fdr_letter",
+   "label": "5 Apr 1945: Roosevelt assured Ibn Saud he would take no action \"which might prove hostile to the Arab people\", recalling their recent conversation."
+  },
+  {
+   "f": "fdr_letter45",
+   "t": "ibn_saud",
+   "type": "addressee",
+   "status": "verified",
+   "src": "us_jvl_fdr_letter",
+   "label": "Addressed to King Ibn Saud of Saudi Arabia."
+  },
+  {
+   "f": "walker_f",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Outgoing DNC chairman Frank Walker was one of the party leaders who opposed renominating Wallace and proposed Truman."
+  },
+  {
+   "f": "hannegan",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Incoming DNC chairman Robert Hannegan led the group that opposed Wallace and proposed Truman."
+  },
+  {
+   "f": "pauley",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Party treasurer Edwin Pauley was in the group (George Allen called it \"the Conspiracy of the Pure in Heart\")."
+  },
+  {
+   "f": "flynn_e",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Strategist Ed Flynn was in the anti-Wallace group."
+  },
+  {
+   "f": "kelly_e",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Chicago mayor Edward Kelly was in the anti-Wallace group; the convention met in Chicago Stadium, 19-21 July 1944."
+  },
+  {
+   "f": "allen_g",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Lobbyist George Allen was in the group and gave it its name."
+  },
+  {
+   "f": "hannegan",
+   "t": "dnc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Hannegan became DNC chairman in 1944."
+  },
+  {
+   "f": "walker_f",
+   "t": "dnc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Walker was the outgoing DNC chairman."
+  },
+  {
+   "f": "pauley",
+   "t": "dnc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Pauley was party treasurer."
+  },
+  {
+   "f": "fdr",
+   "t": "conv1944",
+   "type": "instruction",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "Roosevelt wrote that he would vote for Wallace as a delegate but would not dictate, then said he would accept Truman or William O. Douglas; he was in the Pacific during the convention."
+  },
+  {
+   "f": "conv1944",
+   "t": "truman",
+   "type": "appointment",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "21 July 1944: second ballot, Truman 1,031, Wallace 105 after shifts (first ballot: Wallace 429.5, Truman 319.5). The record of the swap names party bosses, not any Zionist or Jewish organization."
+  },
+  {
+   "f": "byrnes",
+   "t": "conv1944",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_dnc1944",
+   "label": "James Byrnes opposed Wallace and sought the nomination himself; he was passed over."
+  },
+  {
+   "f": "kennan",
+   "t": "pps",
+   "type": "leadership",
+   "status": "reported",
+   "src": "us_frus48_d10",
+   "label": "George Kennan headed the Policy Planning Staff (the FRUS excerpt names the Staff, not him)."
+  },
+  {
+   "f": "pps",
+   "t": "pps_palestine",
+   "type": "authorship",
+   "status": "verified",
+   "src": "us_frus48_d10",
+   "label": "19 Jan 1948 (top secret): the Policy Planning Staff report on the US position with respect to Palestine."
+  },
+  {
+   "f": "pps_palestine",
+   "t": "res181",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_frus48_d10",
+   "label": "Recommended no further US initiative on partition, no forces, keeping the arms embargo, and a return to the General Assembly for trusteeship or a federal state; it said partition \"cannot be implemented without the use of force\"."
+  },
+  {
+   "f": "pps_palestine",
+   "t": "ibn_saud",
+   "type": "influence",
+   "status": "verified",
+   "src": "us_frus48_d10",
+   "label": "Its reasons included Middle East oil for the Marshall Plan (about 800,000 of 2,000,000 barrels a day needed) and the Saudi oil concessions at stake."
+  },
+  {
+   "f": "pps_palestine",
+   "t": "ussr",
+   "type": "influence",
+   "status": "verified",
+   "src": "us_frus48_d10",
+   "label": "It argued the USSR would gain from an enforced partition by sending forces to Palestine and outflanking the US in Greece, Turkey and Iran."
+  },
+  {
+   "f": "marshall_g",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "12 May 1948: the Secretary of State told the President that if he followed Clifford's advice, \"if in the elections I were to vote, I would vote against the President.\""
+  },
+  {
+   "f": "lovett",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "Under Secretary Robert Lovett attended the 12 May meeting."
+  },
+  {
+   "f": "clifford",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "Clifford urged \"prompt recognition to the Jewish State\" after 15 May, before the Soviet Union recognized it."
+  },
+  {
+   "f": "niles",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "David Niles of the White House attended the 12 May meeting."
+  },
+  {
+   "f": "connelly",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "Matthew Connelly of the White House attended."
+  },
+  {
+   "f": "mcclintock",
+   "t": "may12",
+   "type": "drafting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "Robert McClintock (UN Affairs, State) attended and drafted the memorandum of the meeting."
+  },
+  {
+   "f": "truman",
+   "t": "may12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_frus48_d252",
+   "label": "The President chaired the 12 May meeting."
+  },
+  {
+   "f": "marshall_g",
+   "t": "clifford",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_frus48_d253",
+   "label": "Elsey's notes record Marshall's \"violent reaction\": \"just straight politics… You wouldn't get my OK.\""
+  },
+  {
+   "f": "lovett",
+   "t": "clifford",
+   "type": "coordination",
+   "status": "verified",
+   "src": "us_tl_recognition",
+   "label": "12-14 May 1948: Lovett and Clifford worked through the differences; Lovett reported Marshall would neither support nor oppose recognition."
+  },
+  {
+   "f": "truman",
+   "t": "recognition48",
+   "type": "official act",
+   "status": "verified",
+   "src": "us_tl_recognition",
+   "label": "14 May 1948, 6:11 p.m.: the White House announced de facto recognition of the provisional government; de jure recognition followed on 31 Jan 1949."
+  },
+  {
+   "f": "recognition48",
+   "t": "provisional",
+   "type": "official act",
+   "status": "verified",
+   "src": "us_tl_recognition",
+   "label": "The recognition was of the provisional government of Israel."
+  },
+  {
+   "f": "weizmann",
+   "t": "truman",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "us_tl_recognition",
+   "label": "13 May 1948: Weizmann wrote urging prompt recognition of the provisional government."
+  },
+  {
+   "f": "jacobson",
+   "t": "weizmann",
+   "type": "coordination",
+   "status": "verified",
+   "src": "us_tl_recognition",
+   "label": "13 Mar 1948: Jacobson pleaded with Truman to see Weizmann; Truman received him on 18 March."
+  },
+  {
+   "f": "partition_notes",
+   "t": "liberia",
+   "type": "pressure",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "Nov 1947 notes: \"We have been in touch with Liberian minister to try to get the government's instructions changed to support us.\" Liberia voted yes."
+  },
+  {
+   "f": "partition_notes",
+   "t": "haiti",
+   "type": "pressure",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "\"I think we have Haiti.\" Haiti voted yes."
+  },
+  {
+   "f": "partition_notes",
+   "t": "philippines",
+   "type": "pressure",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "\"We may get Philippines out of no into abstention or, with luck, yes.\" The Philippines voted yes."
+  },
+  {
+   "f": "partition_notes",
+   "t": "cuba",
+   "type": "pressure",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "\"Cuba still won't play.\" Cuba voted no."
+  },
+  {
+   "f": "partition_notes",
+   "t": "greece",
+   "type": "pressure",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "Greece was listed as uncertain; it voted no."
+  },
+  {
+   "f": "us_gov",
+   "t": "partition_notes",
+   "type": "authorship",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "Undated notes from an administration (cabinet) meeting, showing the US was lobbying governments before the vote."
+  },
+  {
+   "f": "partition_notes",
+   "t": "res181",
+   "type": "association",
+   "status": "verified",
+   "src": "us_jvl_truman_tallies",
+   "label": "The notes count votes on the partition resolution."
+  },
+  {
+   "f": "exim",
+   "t": "israel_gov",
+   "type": "funding",
+   "status": "reported",
+   "src": "us_jta_exim1948",
+   "label": "15 Aug 1948: a senior official called a $100 million Export-Import Bank loan to Israel a \"virtual certainty\", one of Truman's three points with de jure recognition and UN membership."
+  },
+  {
+   "f": "shiloah",
+   "t": "ja_political",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "1936: Shiloah joined the Jewish Agency's Political Department, ran intelligence missions in Lebanon and Syria and liaised with British intelligence."
+  },
+  {
+   "f": "ja_political",
+   "t": "jewish_agency",
+   "type": "branch",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "The Political Department of the Jewish Agency."
+  },
+  {
+   "f": "shiloah",
+   "t": "oss",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "In the Second World War Shiloah developed relationships with the OSS, the CIA's precursor, seeing the potential of ties with the United States."
+  },
+  {
+   "f": "shiloah",
+   "t": "sonneborn",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_wp_sonneborn",
+   "label": "Reuven Zaslani (Shiloah) arranged the clandestine meeting at Sonneborn's New York home with Ben-Gurion, Eliezer Kaplan and 17 American Jewish leaders (1 July 1945)."
+  },
+  {
+   "f": "bengurion",
+   "t": "shiloah",
+   "type": "appointment",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "1949, Ben-Gurion's diary: \"an external political intelligence service – Reuven Shiloah will head it.\""
+  },
+  {
+   "f": "shiloah",
+   "t": "mossad",
+   "type": "founding",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "March-April 1951: the central foreign-intelligence authority became the Mossad, under the Prime Minister's office; Shiloah was its founder and first head (to end 1952)."
+  },
+  {
+   "f": "shiloah",
+   "t": "israel_gov",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "1953-57: envoy at the Israeli embassy in Washington and secret adviser to Ben-Gurion."
+  },
+  {
+   "f": "kollek",
+   "t": "ja_political",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "1942: deputy head of intelligence for the Jewish Agency; Jan 1945 to May 1946 its chief liaison to MI5 and British military intelligence."
+  },
+  {
+   "f": "kollek",
+   "t": "irgun",
+   "type": "opposition",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "10 Aug 1945: Kollek gave MI5 the location of an Irgun training camp near Binyamina; 27 arrests followed."
+  },
+  {
+   "f": "kollek",
+   "t": "haganah",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "1947-48: represented the Haganah in Washington and helped obtain ammunition."
+  },
+  {
+   "f": "kollek",
+   "t": "hotel14",
+   "type": "leadership",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "From 1945 the Jewish Agency's arms-purchasing network ran from a suite at 14 East 60th Street; Kollek managed daily operations (Rockaway)."
+  },
+  {
+   "f": "hotel14",
+   "t": "jewish_agency",
+   "type": "branch",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "The Hotel Fourteen suite was the Jewish Agency's arms-purchasing base in New York."
+  },
+  {
+   "f": "kollek",
+   "t": "angleton",
+   "type": "meeting",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "1950: Kollek warned James Angleton that Kim Philby had been a Soviet agent; he helped build the Mossad-CIA alliance."
+  },
+  {
+   "f": "angleton",
+   "t": "cia",
+   "type": "membership",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "Angleton of the CIA, Kollek's counterpart in the Mossad-CIA liaison."
+  },
+  {
+   "f": "mossad",
+   "t": "cia",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "us_wp_kollek",
+   "label": "Kollek played a key role in building the Mossad-CIA alliance in the 1940s and 1950s."
+  },
+  {
+   "f": "oss",
+   "t": "cia",
+   "type": "succession",
+   "status": "verified",
+   "src": "us_wp_shiloah",
+   "label": "The OSS was the CIA's precursor."
+  },
+  {
+   "f": "hoover",
+   "t": "fbi",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_jvl_fbi_haganah",
+   "label": "The FBI director ordered the inquiry kept discreet to avoid \"undue criticism\" of the Bureau."
+  },
+  {
+   "f": "fbi",
+   "t": "americans_haganah",
+   "type": "surveillance",
+   "status": "verified",
+   "src": "us_jvl_fbi_haganah",
+   "label": "1947-48: the FBI examined whether Americans for Haganah, Inc. had to register under the Voorhis Act; the Haganah denied it did."
+  },
+  {
+   "f": "fbi",
+   "t": "haganah",
+   "type": "surveillance",
+   "status": "verified",
+   "src": "us_jvl_fbi_haganah",
+   "label": "July 1948 memo: \"develop all information indicating possible violations of the Neutrality Act and the Registration Act\"; the inquiry closed by end of November 1948, with monitoring continuing."
+  },
+  {
+   "f": "voorhis",
+   "t": "americans_haganah",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "us_jvl_fbi_haganah",
+   "label": "The Voorhis Act registration question was applied to Americans for Haganah, Inc."
+  },
+  {
+   "f": "neutrality",
+   "t": "haganah",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "us_jvl_fbi_haganah",
+   "label": "The FBI asked whether Americans recruited by the Haganah broke the Neutrality Acts."
+  },
+  {
+   "f": "americans_haganah",
+   "t": "haganah",
+   "type": "funding",
+   "status": "reported",
+   "src": "us_jvl_fbi_haganah",
+   "label": "Americans for Haganah, Inc. was the US support body the FBI examined."
+  },
+  {
+   "f": "sonneborn",
+   "t": "sonneborn_inst",
+   "type": "leadership",
+   "status": "verified",
+   "src": "us_wp_sonneborn",
+   "label": "The Sonneborn Institute (also \"Materials for Israel\") was a secretive nationwide network led by Sonneborn that raised millions for weapons, ammunition and machinery."
+  },
+  {
+   "f": "schwimmer",
+   "t": "haganah",
+   "type": "supply",
+   "status": "verified",
+   "src": "us_wp_schwimmer",
+   "label": "1948: Schwimmer recruited pilots and crew, mostly war veterans, and smuggled 30 surplus warplanes despite the US arms embargo."
+  },
+  {
+   "f": "doj",
+   "t": "schwimmer",
+   "type": "litigation",
+   "status": "verified",
+   "src": "us_wp_schwimmer",
+   "label": "1950: convicted of violating the Neutrality Acts; fined $10,000, stripped of voting rights and veterans benefits, no prison. Pardoned by President Clinton in 2001."
+  },
+  {
+   "f": "neutrality",
+   "t": "schwimmer",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "us_wp_schwimmer",
+   "label": "His 1950 conviction was under the Neutrality Acts."
+  },
+  {
+   "f": "arazi",
+   "t": "lansky",
+   "type": "coordination",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "At Yehuda Arazi's request, Meyer Lansky arranged for weapons to be loaded onto ships for Palestine, bringing in the dock bosses Albert Anastasia and Joe Adonis (Rockaway, citing Slater)."
+  },
+  {
+   "f": "lansky",
+   "t": "haganah",
+   "type": "supply",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "Lansky arranged dock loading of weapons bound for the Jewish forces (Rockaway)."
+  },
+  {
+   "f": "arazi",
+   "t": "haganah",
+   "type": "membership",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "Yehuda Arazi, Haganah arms agent (Rockaway)."
+  },
+  {
+   "f": "mickey_cohen",
+   "t": "irgun",
+   "type": "funding",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "1947: Mickey Cohen pledged $25,000 at an Irgun fundraiser at Slapsy Maxie's, Los Angeles; organizers put the take at $50,000-60,000 (Rockaway, citing Cohen and Ben-Ami)."
+  },
+  {
+   "f": "siegel",
+   "t": "dafni",
+   "type": "funding",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "1946-47: Bugsy Siegel gave Haganah emissary Reuven Dafni about $50,000 in weekly cash payments in Los Angeles (Rockaway, citing Dafni)."
+  },
+  {
+   "f": "dafni",
+   "t": "haganah",
+   "type": "membership",
+   "status": "reported",
+   "src": "us_tablet_gangsters",
+   "label": "Reuven Dafni, Haganah emissary in Los Angeles."
+  }
+ ]
+}
