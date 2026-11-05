@@ -22,7 +22,7 @@ SUBHEAD (rose-gold foil italic serif): "The documented record they never put in 
 STAT STRIP: five glossy espresso-glass tiles in one row, thin rose-gold borders, giant rose-gold foil numbers, ivory small-caps labels: "26" / "VOLUMES READY" · "8,939" / "CITED SOURCES" · "1.6M" / "WORDS" · "2,093" / "MAPS, CHARTS & TIMELINES" · "3" / "INTERACTIVE MAPS".
 
 FEATURED SHELF (the visual centrepiece under the stats): six tall book-plate tiles in two rows of three, each like a small framed leather bookplate with a rose-gold border, a tiny foil medallion, a bold ivory title and one short rose-gold italic line:
-"THE ISRAEL ARCHITECTURE" — "The full library series, Volumes I–XXIV"
+"THE ISRAEL ARCHITECTURE" — "18 volumes ready, more on the way"
 "THE ROAD TO 1948" — "+ the interactive network map: 643 nodes"
 "THE VATICAN ARCHITECTURE" — "Sovereignty, money and the inner traditions"
 "THE DIVINE 3+1" — "The 3 parents of Israel"
@@ -62,7 +62,7 @@ SUBHEAD (rose-gold foil italic serif): "The documented record they never put in 
 STAT STRIP: five glossy espresso-glass tiles in one row, thin rose-gold borders, giant rose-gold foil numbers, ivory small-caps labels: "26" / "VOLUMES READY" · "8,939" / "CITED SOURCES" · "1.6M" / "WORDS" · "2,093" / "MAPS, CHARTS & TIMELINES" · "3" / "INTERACTIVE MAPS".
 
 FEATURED SHELF (the visual centrepiece under the stats, larger tiles): six tall book-plate tiles in two rows of three, each like a small framed leather bookplate with a rose-gold border, a tiny foil medallion, a bold ivory title and one short rose-gold italic line:
-"THE ISRAEL ARCHITECTURE" — "The full library series, Volumes I–XXIV"
+"THE ISRAEL ARCHITECTURE" — "18 volumes ready, more on the way"
 "THE ROAD TO 1948" — "+ the interactive network map: 643 nodes"
 "THE VATICAN ARCHITECTURE" — "Sovereignty, money and the inner traditions"
 "THE DIVINE 3+1" — "The 3 parents of Israel"
