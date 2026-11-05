@@ -1,0 +1,41 @@
+{
+ "id": "al-01-clyde-jones-jr",
+ "cites": {
+  "cj_fd26": {
+   "t": "Clyde W. Jones Jr., Candidate Report (2026), filed Sept. 6, 2026 (Filing ID #10082789) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10082789.pdf"
+  },
+  "cj_fd25": {
+   "t": "Clyde W. Jones Jr., Candidate Report (2025), filed Sept. 6, 2026 (Filing ID #10082788) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10082788.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener/Justia blocked, Alacourt paywalled. No news coverage of any legal matter surfaced; a dedicated search was not run (search budget exhausted). UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Clyde Jones Jr. Mobile congressional candidate court') turned up no reporting of any civil or criminal case naming Clyde Jones Jr. as a party, so courts is 'news' (searched, nothing found).",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. House candidate reports (2025 and 2026, filed Sept. 6, 2026) list no foreign assets, income or positions. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13) with pdftotext. Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": -517993,
+   "max": 239995,
+   "year": 2025,
+   "c": [
+    "cj_fd26"
+   ]
+  },
+  "trades": null,
+  "note": {
+   "t": "Two candidate reports, both filed Sept. 6, 2026 (periods Jan. 2024–Sept. 24, 2025 and Jan. 1, 2025–Apr. 15, 2026). Assets of $197K–$530K: a New Orleans rental condo bought Oct. 2024 ($100K–$250K), a Fidelity FMC savings plan ($50K–$100K), a military retirement pension, a 50% VA disability rating, land in Charles City County, Va. ($15K–$50K) and a joint bank account. Income: military retirement pension ($36,908 in 2025), VA disability ($14,892 in 2025), condo rent and his spouse's Baldwin County School Board salary. Liabilities of $290K–$715K: a PennyMac home loan, a Nelnet college loan held by his spouse ($100K–$250K), a SoFi debt-consolidation loan, two auto loans and a credit card. No positions, no foreign assets or income.",
+   "c": [
+    "cj_fd26",
+    "cj_fd25"
+   ]
+  }
+ },
+ "research_notes": "Both candidate reports were filed on Sept. 6, 2026, including one covering a period that ended Sept. 24, 2025; the 30-day/May 15 deadlines suggest late filing — needs a human check against his FEC threshold date. Courts 'news' rests on a news search that surfaced nothing relevant. money_history stays 'news' (fec.gov not fetchable here)."
+}

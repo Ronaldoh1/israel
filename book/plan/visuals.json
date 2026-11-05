@@ -1,0 +1,2194 @@
+{
+ "how_to_embed": "Dashboard panel: <figure class=\"fig-dash\" data-ref=\"DASHBOARD_ID:TAB NAME:INDEX\"></figure> (INDEX is the panel position within the tab, from 0). Whole map: <figure class=\"fig-map\" data-map=\"MAP_ID\"></figure>. The reader draws the chart, numbers it, captions it with the panel title and links to the full dashboard or map. Only embed a panel whose numbers the section actually discusses; state the key numbers in the prose too, with their [cite:] keys from the scene that holds them.",
+ "dashboards": {
+  "aid_arms": {
+   "title": "US Aid & the Arms Pipeline",
+   "sub": "How US military aid to Israel began, how much it is, where the money actually goes, when Washington used it as leverage — and how it continued through nine wars. Every figure is drawn from cited scenes in 'Israel Aid Architecture' and 'The Arms Supply Architecture.'",
+   "panels": [
+    {
+     "ref": "aid_arms:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~$300B\", \"Total US aid to Israel, inflation-adjusted (Council on Foreign Relations estimate)\"], [\"$3.8B\", \"Per year under the 2016 agreement, FY2019–2028\"], [\"~80%\", \"Of ~$23B in post–Oct 7 aid flowing to US weapons makers\"], [\"$14.8B\", \"Israel's record defense exports in 2024 — about 3× the annu"
+    },
+    {
+     "ref": "aid_arms:Overview:1",
+     "type": "explain",
+     "title": "The short version",
+     "cap": "",
+     "preview": "[\"US aid to Israel is mostly <b>military financing that must be spent in the United States</b>. It flows from taxpayers, through Congress and the Pentagon, to American weapons makers, and arrives in Israel as hardware.\", \"It is not charity, and it is not a pure gift to Israel either: it serves US de"
+    },
+    {
+     "ref": "aid_arms:Overview:2",
+     "type": "flow",
+     "title": "How the aid relationship was built",
+     "cap": "",
+     "preview": "[[\"1948–1961\", \"Economic aid and loans only\", \"Washington avoided selling arms for fear of alienating Arab oil states.\"], [\"1962\", \"First US military aid — as loans\", \"\"], [\"1971\", \"Congress first earmarks aid for Israel\", \"\"], [\"1973\", \"Yom Kippur War: $2.2B emergency airlift\", \"The inflection poin"
+    },
+    {
+     "ref": "aid_arms:The Money:0",
+     "type": "stacked",
+     "title": "Each year of the 2016 agreement",
+     "cap": "Billions of dollars per year, FY2019–2028.",
+     "preview": "[[\"Annual total ($3.8B)\", [3.3, 0.5]]]"
+    },
+    {
+     "ref": "aid_arms:The Money:1",
+     "type": "hbar",
+     "title": "The size of the packages",
+     "cap": "Billions of US dollars, as appropriated or pledged.",
+     "preview": "[[\"10-year agreement, 2016\", 38], [\"Supplemental, Apr 2024\", 26.4], [\"Supplemental, Oct 2023\", 14.3], [\"One year of the agreement\", 3.8]]"
+    },
+    {
+     "ref": "aid_arms:The Money:2",
+     "type": "grid",
+     "title": "Where post–Oct 7 aid went",
+     "cap": "",
+     "preview": "[{\"type\": \"donut\", \"title\": \"Where post–Oct 7 aid went\", \"cap\": \"Of roughly $23B: share flowing directly to US weapons manufacturers (Boeing, Lockheed Martin, RTX, General Dynamics, Northrop Grumman).\", \"center\": \"~$23B\", \"centerSub\": \"post–Oct 7\", \"data\": [[\"US weapons makers\", 80, \"#FFC700\", \"~80%"
+    },
+    {
+     "ref": "aid_arms:The Pipeline:0",
+     "type": "flow",
+     "title": "Follow one dollar",
+     "cap": "",
+     "preview": "[[\"1 · TAXPAYERS\", \"US taxpayers fund the budget\", \"\"], [\"2 · CONGRESS\", \"Appropriates Foreign Military Financing\", \"Approved by both parties after every conflict.\"], [\"3 · PENTAGON\", \"Administers the purchases\", \"\"], [\"4 · CONTRACTORS\", \"Boeing, Lockheed Martin, RTX, General Dynamics, Northrop Grum"
+    },
+    {
+     "ref": "aid_arms:The Pipeline:1",
+     "type": "hbar",
+     "title": "Annual aid vs. Israel's own arms exports, 2024",
+     "cap": "",
+     "preview": "[[\"Israeli defense exports\", 14.8, \"#FFC700\"], [\"US aid, one year\", 3.8, \"#1B2A4A\"]]"
+    },
+    {
+     "ref": "aid_arms:The Pipeline:2",
+     "type": "line",
+     "title": "Israel's defense exports — a record year during the war",
+     "cap": "Billions of dollars. 2024 reported by Israel's Defense Ministry ($14.795B); 2023 and 2019 derived from its statements (+13% on 2023; double five years earlier).",
+     "preview": "[[2019, 7.4, \"~$7.4B\"], [2023, 13.1, \"~$13.1B\"], [2024, 14.8, \"$14.8B\"]]"
+    },
+    {
+     "ref": "aid_arms:The Pipeline:3",
+     "type": "grid",
+     "title": "Who bought (2024)",
+     "cap": "",
+     "preview": "[{\"type\": \"donut\", \"title\": \"Who bought (2024)\", \"center\": \"54%\", \"centerSub\": \"to Europe\", \"data\": [[\"Europe\", 54, \"#FFC700\", \"54%\"], [\"Rest of world\", 46, \"#1B2A4A\", \"46%\"]]}, {\"type\": \"donut\", \"title\": \"What sold (2024): missiles, rockets & air defense\", \"center\": \"48%\", \"centerSub\": \"of deals\", "
+    },
+    {
+     "ref": "aid_arms:Leverage & Law:0",
+     "type": "explain",
+     "title": "Proof the leverage works",
+     "cap": "",
+     "preview": "[\"Each time Washington clearly attached a condition, Israel changed course — the Lavi fighter, the Phalcon sale to China, settlement policy in 1992. The one wartime pause, in 2024, was narrow and short.\"]"
+    },
+    {
+     "ref": "aid_arms:Leverage & Law:1",
+     "type": "table",
+     "title": "When Washington said no",
+     "cap": "",
+     "preview": "[[\"1987\", \"Lavi fighter jet (~$1.8B US aid in the program)\", \"Israel's cabinet cancelled it under US pressure\"], [\"2000\", \"Phalcon radar sale to China ($1–2B deal)\", \"Cancelled the day before a House vote; Israel paid China $350M\"], [\"1991–92\", \"$10B loan guarantees\", \"Held 120 days over settlements"
+    },
+    {
+     "ref": "aid_arms:Leverage & Law:2",
+     "type": "table",
+     "title": "The laws already on the books",
+     "cap": "",
+     "preview": "[[\"Section 620I\", \"No aid to countries restricting US humanitarian aid\", \"2024: State–Defense report found Israel not blocking aid, over internal findings\"], [\"Leahy laws\", \"No aid to units credibly implicated in gross abuses\", \"A unique, slower review that has never disqualified an Israeli unit\"], "
+    },
+    {
+     "ref": "aid_arms:Nine Conflicts:0",
+     "type": "explain",
+     "title": "Who started what — and what aid did next",
+     "cap": "",
+     "preview": "[\"The simulation's own record: Israel initiated in 1967, 1982, and 2012; Arab or Palestinian forces in 1973, 2006, 2014, and on October 7; 2008–09 and 2021 were two-sided escalations.\", \"US military aid continued and grew after every one, approved by both parties.\"]"
+    },
+    {
+     "ref": "aid_arms:Nine Conflicts:1",
+     "type": "table",
+     "title": "The record, conflict by conflict",
+     "cap": "",
+     "preview": "[[\"1967\", \"Israel struck first (preemptive)\", \"—\", \"Aid relationship deepens\"], [\"1973\", \"Egypt and Syria\", \"—\", \"$2.2B emergency airlift\"], [\"1982\", \"Israel, on a pretext its own leaders knew was false\", \"—\", \"Aid continues\"], [\"2006\", \"Hezbollah raid\", \"~1,200 Lebanese civilians, 440 fighters\", \"U"
+    }
+   ]
+  },
+  "congress_money": {
+   "title": "Pro-Israel Money in Congress — The Dashboard",
+   "sub": "Career totals for the current Congress (FEC data compiled by Track AIPAC, as of 5 July 2026), the 2024 and 2026 unseating races, and the trip pipeline. All figures are cited in the chapter 'Pro-Israel Money in Congress — The Documented Record.'",
+   "panels": [
+    {
+     "ref": "congress_money:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$36.3M\", \"Highest career total in Congress — Rep. Haley Stevens, 96% outside spending\"], [\"$23.2M\", \"Spent by AIPAC's super PAC against Bowman and Bush in 2024\"], [\"$32.6M\", \"Ads in the Massie primary (2026), ~half from pro-Israel groups\"], [\"~75%\", \"Of congressional Israel trips paid by AIPAC's "
+    },
+    {
+     "ref": "congress_money:Overview:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>How to read these numbers.</b> Totals are <i>career</i> sums from all pro-Israel PACs (including J Street) and their large donors, plus outside spending made <i>on a member's behalf</i> — Track AIPAC's broad definition. Foreign governments may not give to US campaigns; this is American money adv"
+    },
+    {
+     "ref": "congress_money:Overview:2",
+     "type": "explain",
+     "title": "What you are looking at",
+     "cap": "",
+     "preview": "[\"Every member of Congress has a career total from pro-Israel PACs, their large donors, and outside spending made on the member's behalf — compiled from FEC filings by Track AIPAC. The largest totals are not contributions at all: they are <b>outside spending in primaries</b>.\", \"Foreign governments "
+    },
+    {
+     "ref": "congress_money:Overview:3",
+     "type": "donut",
+     "title": "Where the top-25 money sits",
+     "cap": "Combined career totals of the top 25 in each group (rounded).",
+     "preview": "[[\"Senate Democrats\", 22130393], [\"Senate Republicans\", 18938633], [\"House Democrats\", 128751587], [\"House Republicans\", 21813211]]"
+    },
+    {
+     "ref": "congress_money:The Money:0",
+     "type": "stacked",
+     "title": "House Democrats — direct contributions vs. outside spending",
+     "cap": "The top of the Democratic list is driven by outside spending in primaries, not contributions.",
+     "preview": "[[\"Haley Stevens (MI-11)\", [1366314, 34913946]], [\"George Latimer (NY-16)\", [2982052, 16200140]], [\"Wesley Bell (MO-01)\", [4396533, 13730045]], [\"Glenn Ivey (MD-04)\", [899013, 6421398]], [\"Shontel Brown (OH-11)\", [1536547, 3553898]], [\"Sarah Elfreth (MD-03)\", [20892, 4181838]], [\"Don Davis (NC-01)\","
+    },
+    {
+     "ref": "congress_money:The Money:1",
+     "type": "grid",
+     "title": "Senate Republicans — top 10",
+     "cap": "",
+     "preview": "[{\"type\": \"hbar\", \"title\": \"Senate Republicans — top 10\", \"unit\": \"$\", \"highlight\": 5, \"labelW\": 170, \"data\": [[\"Susan Collins (ME)\", 4131569], [\"Ted Cruz (TX)\", 1411545], [\"Tom Cotton (AR)\", 1127943], [\"John Cornyn (TX)\", 1079549], [\"Mitch McConnell (KY)\", 992646], [\"Dan Sullivan (AK)\", 789874], [\""
+    },
+    {
+     "ref": "congress_money:The Money:2",
+     "type": "hbar",
+     "title": "House Republicans — top 10",
+     "cap": "",
+     "preview": "[[\"Mark Messmer (IN-08)\", 2852335], [\"Don Bacon (NE-02)\", 1291908], [\"Juan Ciscomani (AZ-06)\", 1224703], [\"Mike Lawler (NY-17)\", 1181950], [\"Mike Johnson (LA-04)\", 1134227], [\"Ken Calvert (CA-41)\", 1115690], [\"Mike Rogers (AL-03)\", 1033286], [\"Steve Scalise (LA-01)\", 1030168], [\"M. Diaz-Balart (FL-2"
+    },
+    {
+     "ref": "congress_money:Unseating:0",
+     "type": "hbar",
+     "title": "Unseating races — outside money behind the challenger",
+     "cap": "Outside spending on behalf of the candidate who replaced a critic of Israel policy (career IE for Stevens).",
+     "preview": "[[\"Stevens over Levin (2022)\", 34913946], [\"Latimer over Bowman (2024)\", 16200140], [\"Gallrein over Massie (2026)\", 15458859], [\"Bell over Bush (2024)\", 13730045]]"
+    },
+    {
+     "ref": "congress_money:Unseating:1",
+     "type": "explain",
+     "title": "The pattern",
+     "cap": "",
+     "preview": "[\"The biggest checks went to <b>remove</b> members who broke with the lobby — Bowman and Bush in 2024, Levin in 2022, and Republican Thomas Massie in 2026, where pro-Israel groups funded about half the record $32.6M in ads.\", \"Massie's race also had Trump against him; the AP called Trump the key fac"
+    },
+    {
+     "ref": "congress_money:Unseating:2",
+     "type": "hbar",
+     "title": "Ilhan Omar's primaries vs. Bowman + Bush",
+     "cap": "Pro-Israel money behind her challengers (2020 raised by the challenger from pro-Israel groups; 2022 via AIPAC's super PAC; 2024 total against her) — compared with one year of spending against two Squad members.",
+     "preview": "[[\"Bowman + Bush, 2024\", 23200000], [\"Omar 2020 (challenger raised)\", 500000], [\"Omar 2022 (UDP, hidden)\", 350000], [\"Omar 2024\", 110000]]"
+    },
+    {
+     "ref": "congress_money:Trips:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~75%\", \"of congressional Israel trips paid by AIPAC's charity, AIEF\"], [\"4,100\", \"privately sponsored foreign trips reported since 2012 — over a quarter to Israel\"], [\"$10M+\", \"spent on those Israel trips, 2012–2023\"], [\"250\", \"state legislators flown by Israel's government, Sept 2025\"]]"
+    },
+    {
+     "ref": "congress_money:Trips:1",
+     "type": "table",
+     "title": "Who travels most on AIEF trips",
+     "cap": "Congressional offices (members and staff), 2012–2024.",
+     "preview": "[[\"Steny Hoyer\", \"22\"], [\"Kevin McCarthy\", \"19\"], [\"Hakeem Jeffries\", \"10\"], [\"Debbie Wasserman Schultz\", \"9\"], [\"Brendan Boyle\", \"6\"]]"
+    },
+    {
+     "ref": "congress_money:Trips:2",
+     "type": "explain",
+     "title": "Why a charity pays",
+     "cap": "",
+     "preview": "[\"The 2007 ethics law bars lobbyists from paying for congressional travel but exempts charities. AIEF shares AIPAC's offices and board and uses that exemption; its donors are redacted. A co-drafter of the law: <i>\\\"These trips would be illegal otherwise.\\\"</i>\"]"
+    },
+    {
+     "ref": "congress_money:Mechanism:0",
+     "type": "flow",
+     "title": "The documented mechanism",
+     "cap": "Each step is sourced in the chapter's scenes.",
+     "preview": "[[\"STEP 1 · ORIENTATION\", \"Sponsored trip to Israel\", \"AIEF (Congress) or Israel's government (state legislators, 2025); curated itinerary, Western Wall stop.\"], [\"STEP 2 · FUNDING\", \"Contributions and bundled donors\", \"Direct PAC money and donor networks, reported to the FEC.\"], [\"STEP 3 · ALIGNMEN"
+    }
+   ]
+  },
+  "prestate_funding": {
+   "title": "Funding the Pre-State Architecture, 1897–1948",
+   "sub": "How the money, land, people, and political support were assembled before independence — every figure from a cited scene in The Road to 1948 (Prelude and Parts 1–6).",
+   "panels": [
+    {
+     "ref": "prestate_funding:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"936,000\", \"Dunams held by the Jewish National Fund by 1947–48 — over half of Jewish-owned land\"], [\"~7%\", \"Share of Mandate Palestine's land in Jewish ownership in 1947\"], [\"56%\", \"Share of the land the 1947 UN plan allotted to the Jewish state\"], [\"376,415\", \"Jewish immigrants recorded by Britai"
+    },
+    {
+     "ref": "prestate_funding:Overview:1",
+     "type": "explain",
+     "title": "The point of this dashboard",
+     "cap": "",
+     "preview": "[\"Israel did not appear suddenly in 1948. A bank, a land fund, an American political machine, and a fundraising base were built over fifty years. These charts show the scale of that build-out, using only figures cited in the simulation.\"]"
+    },
+    {
+     "ref": "prestate_funding:Land:0",
+     "type": "line",
+     "title": "Jewish National Fund landholdings, 1903–1947",
+     "cap": "Dunams (1 dunam ≈ 1,000 m²). Land bought by the JNF was held permanently and not resold.",
+     "preview": "[[1903, 200, \"200\"], [1920, 22363, \"22,363\"], [1935, 362000, \"~362,000\"], [1940, 516000, \"516,000\"], [1947, 936000, \"~936,000\"]]"
+    },
+    {
+     "ref": "prestate_funding:Land:1",
+     "type": "grid",
+     "title": "Land ownership in 1947",
+     "cap": "",
+     "preview": "[{\"type\": \"donut\", \"title\": \"Land ownership in 1947\", \"cap\": \"Approximate, of ~26 million dunams. Most non-Jewish-owned land was Arab-owned or state/public land.\", \"center\": \"~26M\", \"centerSub\": \"dunams\", \"data\": [[\"Jewish-owned (incl. JNF)\", 2000000, \"#FFC700\"], [\"All other land\", 24000000, \"#1B2A4"
+    },
+    {
+     "ref": "prestate_funding:People:0",
+     "type": "line",
+     "title": "Jewish share of the population",
+     "cap": "Britain's 1922 census (757,182 people), 1931 census, and UNSCOP's late-1946 estimate (~1.85 million).",
+     "preview": "[[1922, 11, \"11%\"], [1931, 17, \"17%\"], [1946, 33, \"33%\"]]"
+    },
+    {
+     "ref": "prestate_funding:People:1",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"376,415\", \"Jewish immigrants recorded by Britain, 1920–1946\"], [\"757,182\", \"people counted in Britain's 1922 census\"], [\"~1.85M\", \"population in UNSCOP's late-1946 estimate\"]]"
+    },
+    {
+     "ref": "prestate_funding:Money:0",
+     "type": "hbar",
+     "title": "Documented fundraising and transfers (US dollars)",
+     "cap": "Golda Meyerson's 1948 tour; the Haavara Transfer Agreement (105M Reichsmarks, ~$40M at the time); Czechoslovak arms purchases; the 1921–22 delegation that met President Harding. Separate events, years, and currencies.",
+     "preview": "[[\"Golda's US tour, 1948\", 50000000], [\"Haavara, 1933–39\", 40000000], [\"Czech arms, 1948\", 14500000], [\"US delegation, 1921–22\", 5000000]]"
+    },
+    {
+     "ref": "prestate_funding:The Build:0",
+     "type": "flow",
+     "title": "The build, step by step",
+     "cap": "From scene 'The Whole Play, Step by Step 1897–1948.'",
+     "preview": "[[\"1897\", \"Basel Congress sets the goal\", \"\"], [\"1899–1902\", \"A bank and a land fund\", \"Jewish Colonial Trust (London), Jewish National Fund, Anglo-Palestine Bank.\"], [\"1912–18\", \"The American machine\", \"Hadassah, Justice Brandeis, the ZOA at 147,000.\"], [\"1917–22\", \"Promise and endorsement\", \"Balfo"
+    }
+   ]
+  },
+  "two_systems": {
+   "title": "US ⇄ Israel: Two Systems Compared",
+   "sub": "Scoped to what each government actually delivers to its own residents, Israel's system delivers more for its people than the US system does for its own — by a decisive margin (+1.21 of 5) — on an economy about 45× smaller in total. Decisively, not uniformly: the US wins two of eleven systems.",
+   "panels": [
+    {
+     "ref": "two_systems:The Verdict:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"3.71\", \"Israel's composite score, 11 citizen-facing systems (of 5)\"], [\"2.49\", \"The US composite score on the same 11 systems\"], [\"+1.21\", \"Israel's margin — the widest across every revision of this analysis\"], [\"45×\", \"Size of the US economy vs Israel's in total ($32.38T vs $719.8B)\"], [\"9 of 11"
+    },
+    {
+     "ref": "two_systems:The Verdict:1",
+     "type": "pair",
+     "title": "The scorecard — 11 citizen-facing systems, scored 0–5",
+     "cap": "Each system scored from sourced figures in this module. Bars share one 0–5 scale.",
+     "preview": "[[\"Healthcare\", 1.6, 5.0, \"1.6\", \"5\", \"\"], [\"Jobs & Safety Net\", 2.3, 4.0, \"2.3\", \"4\", \"\"], [\"Housing\", 3.0, 2.0, \"3\", \"2\", \"US ahead\"], [\"Social Services / Poverty\", 3.0, 2.0, \"3\", \"2\", \"US ahead\"], [\"Culture & Happiness\", 3.0, 5.0, \"3\", \"5\", \"\"], [\"Public Safety\", 1.5, 4.0, \"1.5\", \"4\", \"\"], [\"Emer"
+    },
+    {
+     "ref": "two_systems:The Verdict:2",
+     "type": "explain",
+     "title": "The defensible answer",
+     "cap": "",
+     "preview": "[\"Scoped to direct citizen provision — healthcare, jobs, housing, the safety net, happiness, public safety, emergency response, education, debt burden, transportation, and infrastructure — <b>Israel's system delivers more for its people than the US system does for its own, by a wide and decisive mar"
+    },
+    {
+     "ref": "two_systems:The Verdict:3",
+     "type": "explain",
+     "title": "Where the US still wins",
+     "cap": "",
+     "preview": "[\"Two of eleven categories outright: <b>Housing</b> (Israel's public housing stock is shrinking while its waitlist grows) and <b>Social Services/Poverty</b> (Israel's own National Insurance Institute reports a higher poverty rate than the US official measure). The Israel lead is decisive, not unifor"
+    },
+    {
+     "ref": "two_systems:The Verdict:4",
+     "type": "explain",
+     "title": "The wartime caveat",
+     "cap": "",
+     "preview": "[\"The composite describes structural system design. Israel's 2026 budget cut education, health, and welfare ministries by 3%+ to fund record defense spending — a real, current strain on exactly the systems scored highly. Both belong side by side.\"]"
+    },
+    {
+     "ref": "two_systems:The Rubric:0",
+     "type": "table",
+     "title": "Full scorecard",
+     "cap": "",
+     "preview": "[[\"Healthcare\", \"1.6\", \"5\"], [\"Jobs & Safety Net\", \"2.3\", \"4\"], [\"Housing\", \"3\", \"2\"], [\"Social Services / Poverty\", \"3\", \"2\"], [\"Culture & Happiness\", \"3\", \"5\"], [\"Public Safety\", \"1.5\", \"4\"], [\"Emergency Services\", \"3\", \"5\"], [\"Education\", \"3\", \"3.25\"], [\"Debt Burden\", \"1.5\", \"4.5\"], [\"Transportat"
+    },
+    {
+     "ref": "two_systems:The Rubric:1",
+     "type": "pair",
+     "title": "Two composites, two questions",
+     "cap": "Same underlying scores. The 21-system version adds Finance, Energy, Central Banking, Digital Infrastructure, Government Administration, Taxation, Telecommunications, Environment, and Immigration — measures of national economic and institutional scale, not citizen provision.",
+     "preview": "[[\"11 citizen systems\", 2.49, 3.71, \"2.49\", \"3.71\", \"primary\"], [\"All 21 systems\", 3.07, 3.23, \"3.07\", \"3.23\", \"secondary\"]]"
+    },
+    {
+     "ref": "two_systems:The Rubric:2",
+     "type": "explain",
+     "title": "Two corrections, stated plainly",
+     "cap": "",
+     "preview": "[\"<b>1.</b> Transportation and Construction & Infrastructure were first miscategorized as 'national scale' and excluded; adding them back <b>narrowed</b> an overstated gap.\", \"<b>2.</b> Public Safety first rested on a decade-old Israeli incarceration figure; current same-methodology data (US 541 vs "
+    },
+    {
+     "ref": "two_systems:The Rubric:3",
+     "type": "explain",
+     "title": "The equity pass",
+     "cap": "",
+     "preview": "[\"Run on both sides: US Black poverty 18.4% (2.4× white), Black–white wealth gap 4.3×; Israel's Haredi poverty 32.8% and Arab poverty 37.6% vs ~21% nationally. The disparities are comparable in scale. A full equity sub-score wasn't applied, because doing it for one system only would itself be a bias"
+    },
+    {
+     "ref": "two_systems:Health & Life:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Healthcare — US 1.6 · Israel 5.0. Culture & Happiness — US 3.0 · Israel 5.0.\""
+    },
+    {
+     "ref": "two_systems:Health & Life:1",
+     "type": "pair",
+     "title": "More money, shorter lives",
+     "cap": "The US spends about 3.7× as much per person and lives 4.8 years less. This is a system-design gap, not a resource gap.",
+     "preview": "[[\"Health spending per person\", 15474, 4224, \"$15,474\", \"$4,224\", \"\"], [\"Health spending, share of GDP\", 17.2, 7.2, \"17.2%\", \"7.2%\", \"\"], [\"Life expectancy\", 79.0, 83.8, \"79.0 yrs\", \"83.8 yrs\", \"higher is better\"]]"
+    },
+    {
+     "ref": "two_systems:Health & Life:2",
+     "type": "explain",
+     "title": "The design difference",
+     "cap": "",
+     "preview": "[\"Israel's 1995 law enrolls every resident in one of four nonprofit health funds with the same government-set basic package — no deductibles, small flat copays. In the US, coverage is a patchwork tied mostly to employment: <b>losing a job usually means losing insurance</b>.\"]"
+    },
+    {
+     "ref": "two_systems:Health & Life:3",
+     "type": "pair",
+     "title": "Life satisfaction",
+     "cap": "2026 World Happiness Report (life evaluation, not daily mood).",
+     "preview": "[[\"World Happiness Report rank\", 23, 8, \"23rd\", \"8th\", \"lower rank = happier\"]]"
+    },
+    {
+     "ref": "two_systems:Money & Debt:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Debt Burden — US 1.5 · Israel 4.5, the most one-sided category. Jobs & Safety Net — US 2.3 · Israel 4.0.\""
+    },
+    {
+     "ref": "two_systems:Money & Debt:1",
+     "type": "pair",
+     "title": "Debt",
+     "cap": "",
+     "preview": "[[\"National debt, share of GDP\", 123.9, 68.5, \"123.9%\", \"68.5%\", \"lower is better\"], [\"Household debt, share of GDP\", 60.3, 42.9, \"60.3%\", \"42.9%\", \"lower is better\"], [\"National debt per citizen\", 118562, 39414, \"$118,562\", \"$39,414\", \"\"]]"
+    },
+    {
+     "ref": "two_systems:Money & Debt:2",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"66.5%\", \"US bankruptcies driven mainly by medical bills\"], [\"100M\", \"Americans carrying medical debt\"], [\"$1.86T\", \"US student loan debt, 42.6M borrowers\"], [\"~0\", \"Medical bankruptcy — 'almost unheard of' outside the US\"]]"
+    },
+    {
+     "ref": "two_systems:Money & Debt:3",
+     "type": "pair",
+     "title": "Wages and jobs",
+     "cap": "",
+     "preview": "[[\"Average monthly wage\", 6228, 3925, \"$6,228\", \"$3,925\", \"higher in US\"], [\"Unemployment rate\", 4.2, 2.7, \"4.2%\", \"2.7%\", \"lower is better\"], [\"30-yr mortgage rate\", 6.8, 4.81, \"~6.8%\", \"4.81%\", \"lower is better\"]]"
+    },
+    {
+     "ref": "two_systems:Money & Debt:4",
+     "type": "pair",
+     "title": "Taxes",
+     "cap": "US figures are federal; most states add income tax (0–13.3%) and sales tax.",
+     "preview": "[[\"Top income-tax rate\", 37, 50, \"37% federal\", \"50%\", \"\"], [\"Corporate tax rate\", 21, 23, \"21%\", \"23%\", \"\"], [\"National VAT / sales tax\", 0.01, 17, \"none (state only)\", \"17%\", \"\"]]"
+    },
+    {
+     "ref": "two_systems:Cost of Living:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Context for daily life; housing scores US 3.0 · Israel 2.0 — a US win.\""
+    },
+    {
+     "ref": "two_systems:Cost of Living:1",
+     "type": "pair",
+     "title": "Where Israel costs more",
+     "cap": "Israel's small geography keeps home prices high; fuel is taxed heavily as policy. Overall cost of living ranges from about even to ~32% higher in Israel depending on method.",
+     "preview": "[[\"Typical home price\", 429000, 816500, \"$429,000\", \"~$816,500\", \"US cheaper\"], [\"Gasoline, per gallon\", 3.638, 10.5, \"$3.64\", \"~$10.50\", \"US cheaper\"]]"
+    },
+    {
+     "ref": "two_systems:Cost of Living:2",
+     "type": "explain",
+     "title": "The mortgage surprise",
+     "cap": "",
+     "preview": "[\"Both central banks sit near the same policy rate (Fed 3.50–3.75%, Bank of Israel 3.25%), yet Israeli mortgages run about <b>2 points lower</b> (4.81% vs ~6.8%).\"]"
+    },
+    {
+     "ref": "two_systems:Education:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Education — US 3.0 · Israel 3.25.\""
+    },
+    {
+     "ref": "two_systems:Education:1",
+     "type": "pair",
+     "title": "PISA test scores",
+     "cap": "PISA 2022. Israel also has one of the widest gaps between highest- and lowest-scoring students in the world.",
+     "preview": "[[\"PISA math\", 465, 458, \"465\", \"458\", \"OECD avg 472\"], [\"PISA reading\", 504, 474, \"504\", \"474\", \"OECD avg 476\"], [\"PISA science\", 499, 465, \"499\", \"465\", \"OECD avg 485\"]]"
+    },
+    {
+     "ref": "two_systems:Education:2",
+     "type": "hbar",
+     "title": "Four years of college, total cost",
+     "cap": "Including living costs. Israel has no private-university tier — all 11 universities are public.",
+     "preview": "[[\"US private\", 262000, \"#1B2A4A\"], [\"US public, out-of-state\", 204000, \"#1B2A4A\"], [\"Israel public (upper)\", 140000, \"#FFC700\"], [\"US public, in-state\", 120000, \"#1B2A4A\"], [\"Israel public (lower)\", 112000, \"#FFC700\"]]"
+    },
+    {
+     "ref": "two_systems:Education:3",
+     "type": "pair",
+     "title": "School spending priority",
+     "cap": "Israel spends the highest share of GDP on schools in the OECD, though less per student in absolute dollars.",
+     "preview": "[[\"K-12 spending, share of GDP\", 1.12, 4.8, \"1.12%\", \"4.8%\", \"\"]]"
+    },
+    {
+     "ref": "two_systems:Safety Net:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Public Safety — US 1.5 · Israel 4.0. Emergency Services — US 3.0 · Israel 5.0. Social Services/Poverty — US 3.0 · Israel 2.0 (US win).\""
+    },
+    {
+     "ref": "two_systems:Safety Net:1",
+     "type": "pair",
+     "title": "Public services and outcomes",
+     "cap": "",
+     "preview": "[[\"Ambulance response (avg)\", 7, 3, \"7 min\", \"<3 min\", \"faster is better\"], [\"Incarceration per 100,000\", 541, 217, \"541\", \"217\", \"\"], [\"Homelessness per 100,000\", 219, 4, \"~219\", \"~4 (dated)\", \"Israel data limited\"], [\"Overall poverty rate\", 10.6, 21, \"10.6%\", \"~21%\", \"higher in US\"]]"
+    },
+    {
+     "ref": "two_systems:Safety Net:2",
+     "type": "explain",
+     "title": "The single biggest gap: losing your job",
+     "cap": "",
+     "preview": "[\"Unemployment pay is similar — 40–60% of wages for about 26 weeks (US) vs ~60% for 138–175 days (Israel). The difference is health coverage: a laid-off Israeli's coverage <b>simply continues</b>. A laid-off American must choose between COBRA (up to 102% of the full premium), Medicaid, or a Marketpl"
+    },
+    {
+     "ref": "two_systems:Safety Net:3",
+     "type": "explain",
+     "title": "Inequality inside each country",
+     "cap": "",
+     "preview": "[\"US: the Black poverty rate is 18.4% — 2.4× the white rate — and the Black–white wealth gap is about 4.3×. Israel: deep poverty concentrates in Haredi and Arab communities. Both countries' averages hide large internal gaps.\"]"
+    },
+    {
+     "ref": "two_systems:Defense & the $3.8B:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Rubric:</b> Defense is not part of the citizen-provision composite; this tab shows what the aid is relative to Israel's own budget.\""
+    },
+    {
+     "ref": "two_systems:Defense & the $3.8B:1",
+     "type": "hbar",
+     "title": "Israel's own defense spending vs. US aid",
+     "cap": "Billions of dollars, 2025.",
+     "preview": "[[\"Israel's own defense spending\", 52, \"#1B2A4A\"], [\"US military aid, one year\", 3.8, \"#FFC700\"]]"
+    },
+    {
+     "ref": "two_systems:Defense & the $3.8B:2",
+     "type": "pair",
+     "title": "Whose budget leans harder on defense",
+     "cap": "Israel's 2026 defense budget (~$45.8B) is 'by far the largest component' of its national budget.",
+     "preview": "[[\"Defense share of the national budget\", 12, 19, \"~12%\", \"~17–21%\", \"\"]]"
+    },
+    {
+     "ref": "two_systems:Defense & the $3.8B:3",
+     "type": "hbar",
+     "title": "What $3.8B could fund at home, for one year",
+     "cap": "Illustrative only — 92% of current aid must be spent on US-made weapons, so it largely funds US defense jobs.",
+     "preview": "[[\"People in supportive housing\", 296875], [\"People covered by Medicaid\", 410600], [\"Teachers' full salaries\", 51000]]"
+    },
+    {
+     "ref": "two_systems:Defense & the $3.8B:4",
+     "type": "explain",
+     "title": "Could Israel fund itself?",
+     "cap": "",
+     "preview": "[\"Israel Policy Forum, a pro-cooperation group, says Israel was 'clearly capable' of covering peacetime defense without US aid before October 2023. Netanyahu has proposed tapering the aid to zero over 10 years.\"]"
+    }
+   ]
+  },
+  "occupation_economy": {
+   "title": "The Occupation Economy — Who Pays, Who Profits",
+   "sub": "What the occupation costs Palestinians, documented by the World Bank, IMF, and UNCTAD — and which companies the UN says profit from it, many of them American. Every figure is drawn from cited scenes in 'The Economic Architecture of Occupation.'",
+   "panels": [
+    {
+     "ref": "occupation_economy:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"87%\", \"Gaza's GDP lost in 2023–2024 (UNCTAD)\"], [\"$3.4B\", \"Lost Palestinian GDP every year from Area C restrictions (World Bank)\"], [\"$1.76B\", \"Palestinian tax revenue withheld or deducted by Israel, 2019–Apr 2025\"], [\"~48\", \"Companies named in the UN's June 2025 'economy of occupation' report\"],"
+    },
+    {
+     "ref": "occupation_economy:Overview:1",
+     "type": "explain",
+     "title": "Two sides of one ledger",
+     "cap": "",
+     "preview": "[\"On one side, international institutions have documented the cost of occupation to Palestinians in detail — and none of those findings has produced a binding consequence.\", \"On the other side, a UN report names the companies that supply the weapons, cloud, data, machinery, and tourism. The largest "
+    },
+    {
+     "ref": "occupation_economy:Overview:2",
+     "type": "explain",
+     "title": "What this dashboard cannot tell you",
+     "cap": "",
+     "preview": "[\"No company files a line item for 'occupation revenue,' and no study estimates what they would lose if it ended. This dashboard shows only <b>documented</b> money — contracts, aid flows, listings, and ownership stakes.\"]"
+    },
+    {
+     "ref": "occupation_economy:Cost to Palestinians:0",
+     "type": "hbar",
+     "title": "Economic collapse, compared",
+     "cap": "GDP decline (%). Gaza 2023–24 is the cumulative loss (UNCTAD); West Bank from the World Bank; Ukraine shown for scale after Russia's 2022 invasion.",
+     "preview": "[[\"Gaza, 2023–24\", 87, \"#C0392B\"], [\"Gaza, 2024\", 83, \"#C0392B\"], [\"Ukraine, 2022\", 29, \"#1B2A4A\"], [\"West Bank, 2024\", 17, \"#FFC700\"]]"
+    },
+    {
+     "ref": "occupation_economy:Cost to Palestinians:1",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"80%\", \"Gaza unemployment (UNCTAD)\"], [\"238%\", \"Gaza inflation\"], [\"$161\", \"Gaza GDP per person — among the world's lowest\"], [\"69 yrs\", \"Of human development erased (UNCTAD)\"], [\"70%\", \"Of Gaza's structures damaged or destroyed by April 2025\"], [\"2.3M\", \"People in Gaza below the poverty line — al"
+    },
+    {
+     "ref": "occupation_economy:Cost to Palestinians:2",
+     "type": "flow",
+     "title": "How Palestinian tax money flows — and gets withheld",
+     "cap": "",
+     "preview": "[[\"1 · IMPORTS\", \"Goods for Palestinians enter through Israeli-controlled ports\", \"The 1994 Paris Protocol created a single customs envelope.\"], [\"2 · COLLECTION\", \"Israel collects the customs duties and VAT\", \"\"], [\"3 · TRANSFER\", \"Israel is supposed to transfer the money to the Palestinian Authori"
+    },
+    {
+     "ref": "occupation_economy:Cost to Palestinians:3",
+     "type": "hbar",
+     "title": "The West Bank, by the numbers",
+     "cap": "Billions of dollars. Lost GDP from Area C restrictions (World Bank); tax revenue withheld or deducted by Israel, Jan 2019–Apr 2025 (UNCTAD).",
+     "preview": "[[\"Lost GDP, every year\", 3.4], [\"Withheld, 2019–2025\", 1.76]]"
+    },
+    {
+     "ref": "occupation_economy:Who Profits:0",
+     "type": "table",
+     "title": "Named in the UN report, by sector",
+     "cap": "A/HRC/59/23, June 2025. Companies dispute the report's framing.",
+     "preview": "[[\"Weapons\", \"Lockheed Martin, RTX, General Dynamics, Boeing (US) · Elbit, IAI · Leonardo · BAE\", \"F-35s, munitions, aircraft\"], [\"Cloud, AI & surveillance\", \"Microsoft, Alphabet, Amazon, IBM, HP, HPE, Palantir (US) · NSO\", \"Cloud, AI, data, targeting tools\"], [\"Heavy machinery\", \"Caterpillar (US) ·"
+    },
+    {
+     "ref": "occupation_economy:Who Profits:1",
+     "type": "explain",
+     "title": "Washington's response",
+     "cap": "",
+     "preview": "[\"Nine days after the report, Secretary of State Rubio <b>sanctioned the UN rapporteur</b> who wrote it, citing her push for ICC action against 'US and Israeli officials, companies, and executives' and accusing her of antisemitism. The UN's human rights chief called for the sanctions to be reversed."
+    },
+    {
+     "ref": "occupation_economy:Where the Money Lands:0",
+     "type": "hbar",
+     "title": "The documented dollars",
+     "cap": "Billions of dollars. About 80% of ~$23B in post–Oct 7 US aid went to Boeing, Lockheed Martin, RTX, General Dynamics, and Northrop Grumman; $3.3B a year in military financing runs 2019–2028; Project Nimbus is Google and Amazon's 2021 cloud contract.",
+     "preview": "[[\"Aid to 5 weapons makers\", 18.4, \"#1B2A4A\", \"~$18.4B\"], [\"US military aid, per year\", 3.3, \"#1B2A4A\"], [\"Project Nimbus\", 1.2, \"#FFC700\"]]"
+    },
+    {
+     "ref": "occupation_economy:Where the Money Lands:1",
+     "type": "grid",
+     "title": "Airbnb listings in settlements",
+     "cap": "",
+     "preview": "[{\"type\": \"line\", \"title\": \"Airbnb listings in settlements\", \"cap\": \"At up to 23% commission per booking.\", \"data\": [[2016, 139, \"139\"], [2025, 350, \"350\"]]}, {\"type\": \"line\", \"title\": \"Booking.com West Bank listings\", \"data\": [[2018, 26, \"26\"], [2023, 70, \"70\"]]}]"
+    },
+    {
+     "ref": "occupation_economy:Where the Money Lands:2",
+     "type": "explain",
+     "title": "The biggest trail is your tax money",
+     "cap": "",
+     "preview": "[\"The single largest documented corporate revenue stream tied to Israel's wars is <b>US aid, appropriated by Congress and spent at US weapons makers</b> — Boeing, Lockheed Martin, RTX, General Dynamics, and Northrop Grumman.\"]"
+    },
+    {
+     "ref": "occupation_economy:What If It Ended?:0",
+     "type": "explain",
+     "title": "Who has money at stake",
+     "cap": "",
+     "preview": "[\"There is no published estimate of what companies would lose. But the record shows exposure differs sharply by sector.\"]"
+    },
+    {
+     "ref": "occupation_economy:What If It Ended?:1",
+     "type": "table",
+     "title": "Exposure by sector, per the record",
+     "cap": "",
+     "preview": "[[\"US weapons makers\", \"$3.3B a year in military financing + supplementals; ~80% of ~$23B post–Oct 7\", \"A recurring, appropriated revenue stream — it ends only if Congress changes it\"], [\"Big Tech (cloud/AI)\", \"Nimbus $1.2B over several years\", \"A small share of companies earning hundreds of billion"
+    },
+    {
+     "ref": "occupation_economy:What If It Ended?:2",
+     "type": "flow",
+     "title": "Microsoft and Unit 8200, 2025",
+     "cap": "",
+     "preview": "[[\"6 AUG 2025\", \"The Guardian, +972 and Local Call report\", \"Unit 8200 stored millions of Palestinians' intercepted calls on Azure — about 8,000 terabytes.\"], [\"AUG 2025\", \"Employee protests and an internal review\", \"Workers in 'No Azure for Apartheid'; organizers had been fired for earlier protests"
+    },
+    {
+     "ref": "occupation_economy:Who Owns Them:0",
+     "type": "grid",
+     "title": "BlackRock's stake",
+     "cap": "",
+     "preview": "[{\"type\": \"hbar\", \"title\": \"BlackRock's stake\", \"cap\": \"Share of each company, per the UN report.\", \"unit\": \"%\", \"data\": [[\"Palantir\", 8.6], [\"IBM\", 8.6], [\"Microsoft\", 7.8], [\"Caterpillar\", 7.5], [\"Lockheed Martin\", 7.2], [\"Amazon\", 6.6], [\"Alphabet\", 6.6]]}, {\"type\": \"hbar\", \"title\": \"Vanguard's s"
+    },
+    {
+     "ref": "occupation_economy:Who Owns Them:1",
+     "type": "explain",
+     "title": "Two firms above the whole list",
+     "cap": "",
+     "preview": "[\"Weapons, cloud, machinery, and data companies share the same top shareholders. Because BlackRock and Vanguard run index funds, those stakes include <b>ordinary Americans' retirement savings</b>.\", \"Index managers hold stocks because they're in the index, not for their Israel business — the report "
+    }
+   ]
+  },
+  "epstein_money": {
+   "title": "The Epstein Network — Follow the Money",
+   "sub": "Where the fortune came from, where it went, which institutions took it, and how every enforcement system stopped short for thirty years — with every named figure tiered by what the record actually holds. Drawn from cited scenes in 'The Epstein Network Architecture.'",
+   "panels": [
+    {
+     "ref": "epstein_money:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$634.8M\", \"His estate's revised value at death (first filed at $577M)\"], [\"2\", \"Publicly documented clients: Les Wexner and Leon Black\"], [\"$437.5M\", \"Paid by three banks to settle — no admission of wrongdoing\"], [\"$3.1B\", \"Wexner stock sales Epstein oversaw, 1991–2006\"], [\"10 yrs\", \"From the 199"
+    },
+    {
+     "ref": "epstein_money:Overview:1",
+     "type": "explain",
+     "title": "The finding",
+     "cap": "",
+     "preview": "[\"Not whether he was guilty — he pleaded guilty in 2008, and Maxwell was convicted in 2021. The finding is what happened each time he met an enforcement system: a securities fraud, a 1996 federal complaint, a state investigation, and three banks' compliance systems <b>each independently stopped shor"
+    },
+    {
+     "ref": "epstein_money:Overview:2",
+     "type": "explain",
+     "title": "The fortune is real; its source is not",
+     "cap": "",
+     "preview": "[\"Every documented inflow traces to a handful of men — above all Wexner and Black. No audited client list, no registration consistent with managing billions, and no accounting for 1981–87 has ever surfaced.\"]"
+    },
+    {
+     "ref": "epstein_money:The Fortune:0",
+     "type": "donut",
+     "title": "The estate, as filed ($577M)",
+     "cap": "Items from the will signed two days before his death, held in \"The 1953 Trust.\" About $196.8M of the $577M was not itemized in the reporting; executors later revised the total to $634.8M.",
+     "preview": "[[\"Equities\", 112, null, \"$112M\"], [\"Islands (Little + Great St. James)\", 85, null, \"$85M\"], [\"Cash\", 56.5, null, \"$56.5M\"], [\"Manhattan house\", 55.9, null, \"$55.9M\"], [\"Aircraft, cars, boats\", 18.5, null, \"$18.5M\"], [\"New Mexico ranch\", 17.2, null, \"$17.2M\"], [\"Fixed income\", 14, null, \"$14M\"], [\"P"
+    },
+    {
+     "ref": "epstein_money:The Fortune:1",
+     "type": "hbar",
+     "title": "The estate, item by item",
+     "cap": "",
+     "preview": "[[\"Equities\", 112, \"#1B2A4A\", \"$112M\"], [\"Islands (Little + Great St. James)\", 85, \"#1B2A4A\", \"$85M\"], [\"Cash\", 56.5, \"#1B2A4A\", \"$56.5M\"], [\"Manhattan house\", 55.9, \"#1B2A4A\", \"$55.9M\"], [\"Aircraft, cars, boats\", 18.5, \"#1B2A4A\", \"$18.5M\"], [\"New Mexico ranch\", 17.2, \"#1B2A4A\", \"$17.2M\"], [\"Fixed i"
+    },
+    {
+     "ref": "epstein_money:The Fortune:2",
+     "type": "explain",
+     "title": "The largest asset today",
+     "cap": "",
+     "preview": "[\"About <b>$40 million</b> Epstein put into Peter Thiel's Valar Ventures in 2015–16 is now worth roughly <b>$170 million</b> — the largest asset still in the estate, per an analysis reviewed by the New York Times. Thiel solicited the investment; his spokesman denies 'co-owner' and confirms 'limited "
+    },
+    {
+     "ref": "epstein_money:Money In:0",
+     "type": "hbar",
+     "title": "Documented money from named sources",
+     "cap": "Millions of dollars. Wexner figure is the reported misappropriation; Black figure combines Apollo's review ($158M) with the Senate's additional $12M.",
+     "preview": "[[\"Leon Black, 2012–17\", 170, \"#FFC700\", \"~$170M\"], [\"Wexner (misappropriated)\", 46, \"#1B2A4A\", \"$46M+\"], [\"Hoffenberg loan, never repaid\", 2, \"#1B2A4A\", \"$2M\"]]"
+    },
+    {
+     "ref": "epstein_money:Money In:1",
+     "type": "table",
+     "title": "Every documented inflow",
+     "cap": "",
+     "preview": "[[\"Bear Stearns\", \"Limited partner; exit after an internal investigation\", \"to 1981\"], [\"Steven Hoffenberg / Towers Financial\", \"$25,000 a month + a $2M loan never repaid\", \"1987–93\"], [\"Les Wexner\", \"Full power of attorney; $3.1B in stock sales overseen; the Manhattan house; $46M+ reported misappro"
+    },
+    {
+     "ref": "epstein_money:Money In:2",
+     "type": "flow",
+     "title": "How the money moved",
+     "cap": "",
+     "preview": "[[\"IN\", \"A few wealthy clients\", \"Wexner's power of attorney; Black's payments.\"], [\"HELD\", \"J. Epstein & Co. → Southern Trust\", \"Moved to St. Thomas in 1996 for tax advantages; a ten-year tax break.\"], [\"SPENT\", \"Islands, houses, aircraft\", \"\"], [\"INVESTED\", \"~$40M into Thiel's Valar Ventures\", \"No"
+    },
+    {
+     "ref": "epstein_money:Banks & Institutions:0",
+     "type": "hbar",
+     "title": "What the banks paid",
+     "cap": "Settlements with victims, millions of dollars. None admitted wrongdoing.",
+     "preview": "[[\"JPMorgan Chase (2023)\", 290, null, \"~$290M\"], [\"Deutsche Bank (2023)\", 75, null, \"$75M\"], [\"Bank of America (2026)\", 72.5, null, \"$72.5M\"]]"
+    },
+    {
+     "ref": "epstein_money:Banks & Institutions:1",
+     "type": "table",
+     "title": "How long each bank kept him",
+     "cap": "",
+     "preview": "[[\"JPMorgan Chase\", \"1998–2013\", \"Kept five years past his 2008 conviction, despite internal warnings\"], [\"Deutsche Bank\", \"2013–2018\", \"Onboarded him the year JPMorgan dropped him\"], [\"Bank of America\", \"—\", \"Settled in 2026; said it did not facilitate trafficking\"]]"
+    },
+    {
+     "ref": "epstein_money:Banks & Institutions:2",
+     "type": "grid",
+     "title": "Reputation money — universities",
+     "cap": "",
+     "preview": "[{\"type\": \"hbar\", \"title\": \"Reputation money — universities\", \"cap\": \"Thousands of dollars.\", \"unit\": \"\", \"data\": [[\"Harvard, 1998–2007\", 9000, \"#1B2A4A\", \"~$9M\"], [\"MIT, 2002–2017\", 850, \"#FFC700\", \"$850K\"]]}, {\"type\": \"explain\", \"title\": \"Before vs. after the conviction\", \"icon\": \"🎓\", \"paras\": [\"H"
+    },
+    {
+     "ref": "epstein_money:Banks & Institutions:3",
+     "type": "explain",
+     "title": "The territory that acted",
+     "cap": "",
+     "preview": "[\"The government that sued the country's largest bank was the US Virgin Islands — about 100,000 people who cannot vote for president. Leon Black separately paid the territory $62.5 million in 2023.\"]"
+    },
+    {
+     "ref": "epstein_money:Every System Stopped Short:0",
+     "type": "flow",
+     "title": "Thirty years of enforcement, step by step",
+     "cap": "",
+     "preview": "[[\"1993\", \"Towers Financial collapses — a ~$500M Ponzi scheme\", \"His co-principal got twenty years. Epstein was never charged; no public record explains why.\"], [\"1996\", \"Maria Farmer reports him to the FBI\", \"Logged on September 3; no investigation opened until May 2006; released December 2025.\"], "
+    },
+    {
+     "ref": "epstein_money:How Names Are Tiered:0",
+     "type": "table",
+     "title": "What the record holds, tier by tier",
+     "cap": "",
+     "preview": "[[\"Adjudicated\", \"A court reached a result\", \"Maxwell's conviction; Prince Andrew's 2022 civil settlement without admission\"], [\"Sworn allegation\", \"Made under oath; not proven in court\", \"A handful of named individuals\"], [\"Contact only\", \"Flight logs, contact book, photos — contact, not conduct\", "
+    },
+    {
+     "ref": "epstein_money:How Names Are Tiered:1",
+     "type": "explain",
+     "title": "Checked and not used",
+     "cap": "",
+     "preview": "[\"That Epstein ran an intelligence blackmail operation — traced largely to a single source with serious credibility problems and no court record; excluded. That appearing in a flight log or contact book establishes wrongdoing — it establishes contact.\"]"
+    },
+    {
+     "ref": "epstein_money:How Names Are Tiered:2",
+     "type": "explain",
+     "title": "What remains open",
+     "cap": "",
+     "preview": "[\"Whether the 2008 deal was defensible; the cause of death (ruled suicide, disputed by a family-retained pathologist); the extent of Wexner's knowledge; the identities of unnamed co-conspirators covered by the 2008 agreement.\"]"
+    }
+   ]
+  },
+  "gaza_record": {
+   "title": "Gaza: The Documented Record",
+   "sub": "The toll, how reliable the counts are, the famine, the people who document it, Israeli lives under the same rules, what has happened since the ceasefire, and what the courts found. Figures from cited scenes in 'Gaza, Documented' and 'Products of the Machine — The Ledger.'",
+   "panels": [
+    {
+     "ref": "gaza_record:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~73,400\", \"Palestinians killed in Gaza (Health Ministry via UN OCHA, Aug 2026)\"], [\"~22,000\", \"Of them children\"], [\"171,912+\", \"Injured\"], [\"Aug 2025\", \"Famine confirmed — the first ever in the Middle East (IPC)\"], [\"209\", \"Journalists killed — the deadliest conflict CPJ has recorded\"], [\"1,200\""
+    },
+    {
+     "ref": "gaza_record:Overview:1",
+     "type": "explain",
+     "title": "How to read this dashboard",
+     "cap": "",
+     "preview": "[\"These are documented counts from named sources, each labeled. Israel disputes the Gaza Health Ministry's figures; the UN treats them as reliable, and two peer-reviewed studies found they likely <b>undercount</b> deaths.\", \"Israeli lives are counted on their own tab with Israel's official figures a"
+    },
+    {
+     "ref": "gaza_record:Are the Numbers Reliable?:0",
+     "type": "pair",
+     "title": "Reported deaths vs. independent estimates",
+     "cap": "Two peer-reviewed studies in The Lancet. Both found the reported count was lower than the true toll.",
+     "preview": "[[\"Lancet 2025 · to June 2024\", 37877, 64260, \"37,877\", \"64,260\", \"~41% under\"], [\"Lancet GH 2026 · 15 months\", 49000, 75000, \"~49,000\", \"75,000+\", \"survey\"]]"
+    },
+    {
+     "ref": "gaza_record:Are the Numbers Reliable?:1",
+     "type": "explain",
+     "title": "What the studies did — and did not — settle",
+     "cap": "",
+     "preview": "[\"The 2025 study used three independent lists (hospital records, a ministry survey, obituaries); the 2026 study was the first survey not relying on ministry records. Women, children, and the elderly were about <b>56%</b> of violent deaths — roughly matching the ministry's breakdown. A senior Israeli"
+    },
+    {
+     "ref": "gaza_record:Are the Numbers Reliable?:2",
+     "type": "table",
+     "title": "Earlier wars, for scale",
+     "cap": "",
+     "preview": "[[\"2008–09 (Cast Lead)\", \"1,391 (759 civilians, UN)\", \"—\"], [\"2014 (Protective Edge)\", \"2,251 (1,462 civilians, UN)\", \"73\"], [\"2021 (Guardian of the Walls)\", \"256\", \"13\"], [\"Oct 2023 – Aug 2026\", \"~73,400 (Health Ministry via OCHA)\", \"~1,950+ (civilians and security personnel)\"]]"
+    },
+    {
+     "ref": "gaza_record:Famine:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"100%\", \"Of Gaza's population in crisis-level hunger or worse (IPC, Aug 2025)\"], [\"641,000\", \"People in catastrophic famine conditions (IPC Phase 5, Sept 2025)\"], [\"43,400\", \"Children under five at severe risk of death (IPC projection)\"], [\"206\", \"Starvation deaths in 2025 by July (WHO)\"]]"
+    },
+    {
+     "ref": "gaza_record:Famine:1",
+     "type": "flow",
+     "title": "From blockade to confirmed famine",
+     "cap": "",
+     "preview": "[[\"2 MAR 2025\", \"Israel blocks almost all aid\", \"A total blockage lasting more than 60 days.\"], [\"27 MAY 2025\", \"The Gaza Humanitarian Foundation opens\", \"4 fortified distribution sites, guarded by US contractors, replacing ~400 UN sites.\"], [\"22 AUG 2025\", \"Famine confirmed\", \"The IPC called it 'en"
+    },
+    {
+     "ref": "gaza_record:Famine:2",
+     "type": "hbar",
+     "title": "Food distribution points",
+     "cap": "Before and after the aid system was replaced.",
+     "preview": "[[\"UN (UNRWA) sites\", 400, \"#1B2A4A\", \"~400\"], [\"GHF 'mega-sites'\", 4, \"#C0392B\", \"4\"]]"
+    },
+    {
+     "ref": "gaza_record:Those Who Document:0",
+     "type": "hbar",
+     "title": "Killed while documenting or helping",
+     "cap": "Each figure from the named monitoring body.",
+     "preview": "[[\"UNRWA staff\", 391, \"#1B2A4A\"], [\"Journalists (CPJ, confirmed)\", 209, \"#FFC700\"], [\"Health workers (confirmed)\", 176, \"#1B2A4A\", \"176+\"], [\"World Central Kitchen workers\", 7, \"#1B2A4A\"]]"
+    },
+    {
+     "ref": "gaza_record:Those Who Document:1",
+     "type": "explain",
+     "title": "Why the record is thin by design",
+     "cap": "",
+     "preview": "[\"Israel has barred international press from independent entry into Gaza throughout the war. The eyewitness record has been carried by resident Palestinian journalists, doctors, and aid workers — the same people on this chart.\", \"Brown University's Costs of War project found more journalists killed "
+    },
+    {
+     "ref": "gaza_record:Those Who Document:2",
+     "type": "explain",
+     "title": "April 1, 2024",
+     "cap": "",
+     "preview": "[\"Three sequential drone strikes hit three clearly marked World Central Kitchen vehicles on a route coordinated with the Israeli military, killing seven aid workers from Australia, Poland, Britain, the US/Canada, and Gaza. Israel called it unintentional and dismissed two officers. No criminal charge"
+    },
+    {
+     "ref": "gaza_record:Israeli Lives:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"778\", \"Israeli civilians killed on October 7 — including 58 children and 76 foreign nationals (NII)\"], [\"1,017\", \"Israeli civilians killed in hostile acts since October 7 (NII, 2026)\"], [\"~928\", \"Israeli security personnel killed since October 7 (Defense Ministry, Apr 2025)\"], [\"251\", \"Hostages t"
+    },
+    {
+     "ref": "gaza_record:Israeli Lives:1",
+     "type": "explain",
+     "title": "Every ledger, the same rules",
+     "cap": "",
+     "preview": "[\"Israeli civilians killed in attacks are part of the documented cost of this conflict. October 7 was the deadliest day for Jewish people since the Holocaust. Counting these deaths with the same discipline as Palestinian deaths — official source named, date stated — is what makes either count credib"
+    },
+    {
+     "ref": "gaza_record:Since the Ceasefire:0",
+     "type": "pair",
+     "title": "Killed since the October 10, 2025 ceasefire",
+     "cap": "As of August 2026.",
+     "preview": "[[\"Killed since the ceasefire\", 1250, 5, \"1,250+\", \"5\", \"incl. ~300 children\"]]"
+    },
+    {
+     "ref": "gaza_record:Since the Ceasefire:1",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"3,795+\", \"Reported Israeli ceasefire breaches (Gaza Government Media Office, via Al Jazeera — a Gaza government source)\"], [\"94%\", \"Of Gazans in need of shelter\"], [\"3+ / day\", \"Settler attacks in the West Bank in 2026 — up from one every three days in 2020\"], [\"107\", \"Palestinian communities dis"
+    },
+    {
+     "ref": "gaza_record:Since the Ceasefire:2",
+     "type": "explain",
+     "title": "The West Bank",
+     "cap": "",
+     "preview": "[\"At least 76 Palestinians were killed in the West Bank in 2026 by August 10, including 18 children; about 3,800 were displaced in 2026 alone. The UN told the Security Council in August 2026 the West Bank is 'at the breaking point.'\"]"
+    },
+    {
+     "ref": "gaza_record:The Law:0",
+     "type": "flow",
+     "title": "What the courts and the UN found",
+     "cap": "",
+     "preview": "[[\"DEC 2023\", \"South Africa files a genocide case at the ICJ\", \"Later joined by Brazil, Ireland, Spain, Mexico, Colombia, Turkey and others.\"], [\"JAN 2024\", \"ICJ orders provisional measures\", \"A 'plausible risk' ruling requiring Israel to prevent genocidal acts and allow aid — not a final verdict, w"
+    },
+    {
+     "ref": "gaza_record:The Law:1",
+     "type": "explain",
+     "title": "Israel's position",
+     "cap": "",
+     "preview": "[\"Israel rejects the genocide allegation, contests the ICJ orders and the ICC's jurisdiction, and says its operations target Hamas, which it accuses of embedding in civilian areas. Those positions are part of the record alongside the findings.\"]"
+    }
+   ]
+  },
+  "election_money": {
+   "title": "Pro-Israel Money, Election by Election: 2020 · 2022 · 2024 · 2026",
+   "sub": "How much pro-Israel PACs gave to candidates each cycle, what AIPAC's super PAC raised and spent, and where the biggest money went — from FEC filings as compiled by OpenSecrets and reported by named outlets. Where the record is thin, this dashboard says so.",
+   "panels": [
+    {
+     "ref": "election_money:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$12.7M\", \"PAC money to candidates, 2019–20 cycle\"], [\"$17.2M\", \"2021–22 cycle\"], [\"$44.7M\", \"2023–24 — more than the previous two cycles combined\"], [\"$100M+\", \"AIPAC's total 2024 election spending (PAC + super PAC)\"], [\"$104M\", \"Raised by AIPAC's super PAC for 2026, by June\"], [\"$93M\", \"Still on"
+    },
+    {
+     "ref": "election_money:Overview:1",
+     "type": "line",
+     "title": "Pro-Israel PAC contributions to congressional candidates, by cycle",
+     "cap": "Millions of dollars per two-year cycle, from FEC filings compiled by OpenSecrets and tabulated by the Washington Report on Middle East Affairs (an advocacy outlet; figures are FEC-derived).",
+     "preview": "[[2020, 12661440, \"$12.7M\"], [2022, 17175455, \"$17.2M\"], [2024, 44656374, \"$44.7M\"]]"
+    },
+    {
+     "ref": "election_money:Overview:2",
+     "type": "hbar",
+     "title": "AIPAC's super PAC (United Democracy Project), by cycle",
+     "cap": "Millions of dollars. Created January 2022; 2026 figure is spending through June plus cash on hand.",
+     "preview": "[[\"2022 — spent\", 32900000, \"#1B2A4A\", \"$32.9M\"], [\"2024 — spent\", 56000000, \"#1B2A4A\", \"~$56M\"], [\"2026 — raised by June\", 104000000, \"#FFC700\", \"$104M\"]]"
+    },
+    {
+     "ref": "election_money:Overview:3",
+     "type": "explain",
+     "title": "The pattern across cycles",
+     "cap": "",
+     "preview": "[\"Direct PAC giving tripled between 2020 and 2024. The bigger change was structural: AIPAC's super PAC, which did not exist in 2020, now spends tens of millions in primaries — and its ads generally don't mention Israel.\", \"The Guardian's analysis of the 2022 cycle found members who received more pro"
+    },
+    {
+     "ref": "election_money:2020:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$12.7M\", \"Pro-Israel PAC contributions to congressional candidates (2019–20)\"], [\"0\", \"AIPAC PAC or super PAC — neither existed yet\"], [\"$5.2M\", \"Joe Biden's career total from pro-Israel donors over 34 years — the most of any member (OpenSecrets)\"]]"
+    },
+    {
+     "ref": "election_money:2020:1",
+     "type": "explain",
+     "title": "What 2020 looked like",
+     "cap": "",
+     "preview": "[\"Pro-Israel money in 2020 came from individual donors and about two dozen independent PACs (NORPAC, Pro-Israel America, and others). Outside spending was small — Pro-Israel America's largest 2020 independent expenditure was about $11,000 for Rep. Elaine Luria.\", \"<b>Data gap:</b> a reliable per-can"
+    },
+    {
+     "ref": "election_money:2022:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$17.2M\", \"PAC money to candidates\"], [\"$35.9M\", \"Raised by AIPAC's new super PAC\"], [\"$32.9M\", \"Spent by it — $26.1M in independent expenditures\"], [\"$25M\", \"42% of pro-Israel giving went to just six centrist Democrats who beat progressives\"]]"
+    },
+    {
+     "ref": "election_money:2022:1",
+     "type": "table",
+     "title": "Where the 2022 money went",
+     "cap": "",
+     "preview": "[[\"Michigan — Haley Stevens vs. Rep. Andy Levin\", \"Levin, a Jewish Democrat, ousted in an incumbent-vs-incumbent primary\"], [\"Maryland — Glenn Ivey vs. Donna Edwards\", \"Edwards blocked after being targeted\"], [\"Ohio — Shontel Brown vs. Nina Turner\", \"Turner blocked\"], [\"Minnesota — Don Samuels vs. R"
+    },
+    {
+     "ref": "election_money:2022:2",
+     "type": "explain",
+     "title": "The Guardian's finding",
+     "cap": "",
+     "preview": "[\"Pro-Israel groups gave over <b>$58 million</b> to sitting members during their most recent elections; the top six recipients were centrist Democrats who defeated progressives, accounting for about 42% of the total. DMFI-backed candidates won over 80% of their 2022 races.\"]"
+    },
+    {
+     "ref": "election_money:2024:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$100M+\", \"AIPAC's total election spending by July 2024\"], [\"$44.8M\", \"AIPAC PAC spent — $42M to candidates, parties, and leadership PACs, mostly earmarked individual donations\"], [\"$68.4M\", \"Raised by the super PAC through August; ~$56M spent\"], [\"$44.7M\", \"All pro-Israel PAC money to candidates "
+    },
+    {
+     "ref": "election_money:2024:1",
+     "type": "hbar",
+     "title": "The super PAC's biggest 2024 bets",
+     "cap": "United Democracy Project independent expenditures, millions of dollars (FactCheck.org, from FEC filings).",
+     "preview": "[[\"Against Jamaal Bowman (NY-16)\", 9900000, \"#C0392B\", \"$9.9M\"], [\"Against Cori Bush (MO-01)\", 5200000, \"#C0392B\", \"$5.2M\"], [\"For George Latimer (NY-16)\", 4800000, \"#FFC700\", \"$4.8M\"], [\"Against Dave Min (CA-47)\", 4600000, \"#C0392B\", \"$4.6M\"], [\"For Wesley Bell (MO-01)\", 3300000, \"#FFC700\", \"$3.3M\""
+    },
+    {
+     "ref": "election_money:2024:2",
+     "type": "table",
+     "title": "Reported 2023–24 pro-Israel contributions, selected candidates",
+     "cap": "From FEC filings through September 2024 as tabulated by WRMEA. Figures moved between April and September filings.",
+     "preview": "[[\"George Latimer (D-NY)\", \"$2,524,866\"], [\"Wesley Bell (D-MO)\", \"$827,094+ (April filing)\"], [\"Sarah Elfreth (D-MD)\", \"$610,729\"], [\"Ted Cruz (R-TX)\", \"$440,009 (Sept.) · $671,578 (April)\"], [\"Ro Khanna (D-CA)\", \"$117,100\"]]"
+    },
+    {
+     "ref": "election_money:2024:3",
+     "type": "explain",
+     "title": "How the money hides",
+     "cap": "",
+     "preview": "[\"Wesley Bell's filings don't show AIPAC — but he raised over $650,000 through Democracy Engine, a donation platform that lets PACs obscure their giving and lists AIPAC as a client. The super PAC's spending was focused on Democratic House primaries: ~$12.4M supporting some Democrats, over $20M oppos"
+    },
+    {
+     "ref": "election_money:2026:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$104M\", \"Raised by AIPAC's super PAC by June 2026\"], [\"$20M\", \"Spent in four races by June — one win\"], [\"$93M\", \"Still on hand\"], [\"$32.6M\", \"Ads in the Massie primary — the most expensive House primary ever; ~half from pro-Israel groups\"], [\"40%+\", \"Of primary spending routed through pop-up PAC"
+    },
+    {
+     "ref": "election_money:2026:1",
+     "type": "flow",
+     "title": "How 2026 money reaches a race",
+     "cap": "",
+     "preview": "[[\"SOURCE\", \"AIPAC's super PAC ($104M)\", \"\"], [\"ROUTE A\", \"Direct independent expenditures\", \"$20M in four races by June; $15.5M behind Ed Gallrein against Thomas Massie.\"], [\"ROUTE B\", \"Transfers to pop-up PACs\", \"Groups with unrelated names — abortion rights, democracy — spend the money; voters do"
+    },
+    {
+     "ref": "election_money:2026:2",
+     "type": "explain",
+     "title": "Status check",
+     "cap": "",
+     "preview": "[\"These figures run through the June 2026 filings. The November 2026 general election has not yet happened; final cycle totals will not exist until early 2027. This tab will be updated as filings land.\"]"
+    },
+    {
+     "ref": "election_money:Data Gaps:0",
+     "type": "explain",
+     "title": "What this dashboard still lacks — stated plainly",
+     "cap": "",
+     "preview": "[\"<b>Per-candidate top-25 lists for each cycle.</b> OpenSecrets publishes them ('Pro-Israel → Recipients,' filtered by cycle), but this build could not retrieve them. The career totals on the Congress dashboard come from Track AIPAC instead.\", \"<b>2020 rankings.</b> Only the cycle total is documente"
+    }
+   ]
+  },
+  "us_costs_israel": {
+   "title": "What America Has Paid — Wars and Costs Tied to Israel's Security, 1948–2026",
+   "sub": "Every US military cost and casualty connected to Israel's wars or defense, conflict by conflict — with Israel's documented role graded in each, so the strongest links stand on their own. US service-member deaths are shown beside Israeli soldiers' deaths. Figures are from cited scenes and the sources listed.",
+   "panels": [
+    {
+     "ref": "us_costs_israel:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~$76B\", \"US cost of Israel-linked military action since Oct 2023: aid + regional operations + the 2026 war\"], [\"$43.6B\", \"The 2026 Iran war alone, through Sept 3, 2026 — rising ~$3B a month\"], [\"300\", \"US service members killed in conflicts graded Direct or Linked (Liberty, Beirut, Gaza-era opera"
+    },
+    {
+     "ref": "us_costs_israel:Overview:1",
+     "type": "hbar",
+     "title": "Since October 7, 2023: what the US has spent",
+     "cap": "Billions of dollars. Military aid and regional operations through Sept 2025 (Costs of War; regional ops shown at the midpoint of $9.65–12.07B); the Iran war through Sept 3, 2026 (CENTCOM).",
+     "preview": "[[\"Military aid to Israel\", 21.7, \"#FFC700\", \"$21.7B\"], [\"US regional operations\", 10.86, \"#1B2A4A\", \"$9.65–12.07B\"], [\"2026 Iran war\", 43.6, \"#C0392B\", \"$43.6B\"]]"
+    },
+    {
+     "ref": "us_costs_israel:Overview:2",
+     "type": "explain",
+     "title": "How to read this dashboard",
+     "cap": "",
+     "preview": "[\"Each conflict is graded by <b>Israel's documented role</b>: <b>Direct</b> (the US fought, deployed, or paid specifically to defend or resupply Israel, or jointly with it), <b>Linked</b> (US forces were drawn in by a war Israel was fighting), or <b>Indirect / disputed</b> (Israel advocated or was a"
+    },
+    {
+     "ref": "us_costs_israel:Conflict by Conflict:0",
+     "type": "table",
+     "title": "US costs and casualties, with Israel's role graded",
+     "cap": "",
+     "preview": "[[\"1967 — USS Liberty\", \"Direct: Israeli forces attacked a US ship\", \"34 / 171\", \"—\", \"~780 (the war)\"], [\"1973 — Operation Nickel Grass\", \"Direct: US airlift resupplied Israel\", \"0 / 0\", \"$2.2B emergency aid\", \"2,656\"], [\"1982–84 — Lebanon\", \"Linked: US Marines deployed after Israel's invasion\", \"2"
+    },
+    {
+     "ref": "us_costs_israel:Conflict by Conflict:1",
+     "type": "hbar",
+     "title": "US service members killed, by conflict (Iraq shown separately)",
+     "cap": "Iraq 2003–11 (4,400+ killed, a disputed link) would flatten this chart, so it appears as a figure below.",
+     "preview": "[[\"1991 Gulf War (indirect)\", 294, \"#8A94A6\", \"294\"], [\"1983 Beirut (linked)\", 241, \"#1B2A4A\", \"241\"], [\"1967 USS Liberty (direct)\", 34, \"#C0392B\", \"34\"], [\"2026 Iran war (direct)\", 20, \"#C0392B\", \"20+\"], [\"2023–25 Gaza/region (direct)\", 5, \"#C0392B\", \"5+\"]]"
+    },
+    {
+     "ref": "us_costs_israel:Conflict by Conflict:2",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"4,400+\", \"US killed in Iraq, 2003–11 — Netanyahu urged the war; historians dispute that Israel caused it\"], [\"~32,000\", \"US wounded in Iraq\"]]"
+    },
+    {
+     "ref": "us_costs_israel:Who Died:0",
+     "type": "pair",
+     "title": "US service members vs. Israeli soldiers killed, by conflict",
+     "cap": "Where US forces were involved. Israeli figures for 1967 and 1973 are whole-war totals.",
+     "preview": "[[\"1967 (Liberty)\", 34, 780, \"34\", \"~780\", \"\"], [\"1973 (airlift)\", 0, 2656, \"0\", \"2,656\", \"\"], [\"1982–84 Lebanon\", 241, 650, \"241\", \"~650\", \"\"], [\"2023–25 Gaza/region\", 5, 930, \"5+\", \"~930\", \"\"], [\"2026 Iran war\", 20, 53, \"20+\", \"40–53\", \"\"]]"
+    },
+    {
+     "ref": "us_costs_israel:Who Died:1",
+     "type": "hbar",
+     "title": "Israeli soldiers killed, by war",
+     "cap": "Whole-war totals for 1967, 1973 and 1982; Gaza-era security personnel to April 2025; the 2026 war per Israeli figures.",
+     "preview": "[[\"1973 Yom Kippur\", 2656, \"#FFC700\", \"2,656\"], [\"Gaza 2023–25\", 930, \"#FFC700\", \"~930\"], [\"1967 Six-Day War\", 780, \"#FFC700\", \"~780\"], [\"1982 Lebanon\", 650, \"#FFC700\", \"~650\"], [\"2026 Iran war\", 53, \"#FFC700\", \"40–53\"]]"
+    },
+    {
+     "ref": "us_costs_israel:Who Died:2",
+     "type": "explain",
+     "title": "The wars with Israel as a party",
+     "cap": "",
+     "preview": "[\"In conflicts where Israel was fighting, its own soldiers bore most of the military dead. American deaths cluster in two places: Beirut in 1983, after US Marines were deployed into Lebanon's war, and the Iraq war, whose link to Israel historians dispute.\"]"
+    },
+    {
+     "ref": "us_costs_israel:The Dollars:0",
+     "type": "hbar",
+     "title": "US military cost by conflict (documented)",
+     "cap": "Billions of dollars; Iraq (~$2.1 trillion) shown separately.",
+     "preview": "[[\"1991 Gulf War\", 61, \"#8A94A6\", \"$61B\"], [\"2026 Iran war (to Sept 3)\", 43.6, \"#C0392B\", \"$43.6B\"], [\"2023–25 Gaza war & region\", 32.6, \"#FFC700\", \"$31–34B\"], [\"1973 airlift + aid\", 2.2, \"#FFC700\", \"$2.2B\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The Dollars:1",
+     "type": "donut",
+     "title": "The $21.7B in post–Oct 7 military aid, by channel",
+     "cap": "October 2023 – September 2025, per William Hartung (Costs of War / Quincy Institute). \"Other\" is the remainder of the reported total.",
+     "preview": "[[\"Foreign Military Financing\", 8.1, null, \"$8.1B\"], [\"Missile defense\", 5.0, null, \"$5B\"], [\"Replenishing US stockpiles used by Israel\", 4.4, null, \"$4.4B\"], [\"Ammunition procurement\", 0.801, null, \"$0.8B\"], [\"Offshore procurement\", 0.725, null, \"$0.7B\"], [\"US arms production capacity\", 0.198, null"
+    },
+    {
+     "ref": "us_costs_israel:The Dollars:2",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~$300B\", \"Total US aid to Israel since 1948, inflation-adjusted\"], [\"$3.8B\", \"Annual aid under the 2016 MOU (FY2019–28)\"], [\"$87.6B\", \"Pending Pentagon supplemental for the Iran war\"], [\"~$2.1T\", \"Iraq war cost (disputed link)\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The 2026 War:0",
+     "type": "line",
+     "title": "The Iran war's cost, estimate by estimate",
+     "cap": "Cumulative US military cost in billions, by day of the war (day 1 = Feb 28, 2026): CSIS day 12; Pentagon Apr 29 and May 12; DoD Inspector General through Jun 19; Hegseth testimony Jul 21; CENTCOM Sept 3. (The CBO separately estimated $38B through Aug 1, rising ~$3B a month.)",
+     "preview": "[[12, 16.5, \"$16.5B\"], [60, 25, \"$25B\"], [73, 29, \"$29B\"], [111, 33.4, \"$33.4B\"], [143, 37.5, \"$37.5B\"], [187, 43.6, \"$43.6B\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The 2026 War:1",
+     "type": "donut",
+     "title": "Where the $43.6B went",
+     "cap": "CENTCOM estimate to Congress, Sept 3, 2026: weapons and munitions — mostly Patriot and THAAD interceptors — vs. everything else (operations, damage to bases, aircraft).",
+     "preview": "[[\"Weapons & munitions\", 28.1, \"#C0392B\", \"$28.1B\"], [\"Operations, repairs & losses\", 15.5, \"#1B2A4A\", \"$15.5B\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The 2026 War:2",
+     "type": "hbar",
+     "title": "THAAD interceptors fired defending against Iran",
+     "cap": "CSIS estimates; ~$12M each — about $1.8B+ in 2025 and $2.3–3.5B in 2026. 2026 shown at the midpoint of 190–290.",
+     "preview": "[[\"2025 twelve-day war\", 150, \"#1B2A4A\", \"150+\"], [\"2026 Iran war\", 240, \"#C0392B\", \"190–290\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The 2026 War:3",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"20+\", \"US service members killed; hundreds wounded\"], [\"40–53\", \"Israeli soldiers killed (plus 31 civilians)\"], [\"3,400+\", \"Iranian civilians killed (UN)\"], [\"~$11.5B\", \"Israel's own budgetary cost\"]]"
+    },
+    {
+     "ref": "us_costs_israel:The 2026 War:4",
+     "type": "flow",
+     "title": "From strikes to stalemate",
+     "cap": "",
+     "preview": "[[\"FEB 28\", \"US and Israel strike Iran together\", \"Khamenei killed; talks under way.\"], [\"MAR\", \"Iran strikes US bases across the Gulf\", \"Israel occupies southern Lebanon; Hormuz crisis.\"], [\"APR 8\", \"Conditional ceasefire\", \"Pakistan mediates.\"], [\"JUN 17\", \"Islamabad Memorandum\", \"Exchanges of fir"
+    }
+   ]
+  },
+  "money_1948": {
+   "title": "Follow the Money — How a State Was Financed, 1897–1949",
+   "sub": "Every documented money flow behind the pre-state architecture: who paid, how much, when, and what it bought. Each figure comes from a cited scene in The Road to 1948. Amounts stay in their original currency and year.",
+   "panels": [
+    {
+     "ref": "money_1948:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~$50M\", \"Golda Meyerson's US tour, Jan–Mar 1948 — mostly for arms\"], [\"~105M RM\", \"German Jewish assets moved as exports under Haavara, 1933–39 (~$40M then)\"], [\"~$14.5M\", \"Paid for Czechoslovak arms in 1948, with Stalin's approval\"], [\"936,000\", \"Dunams held permanently by the Jewish National Fu"
+    },
+    {
+     "ref": "money_1948:Overview:1",
+     "type": "explain",
+     "title": "The short version",
+     "cap": "",
+     "preview": "[\"The state was <b>financed before it was declared</b>. A bank (1899), a land fund (1901), a permanent fundraising arm (1920), an American donor base (1921 onward), a deal that moved German Jewish capital (1933), and a wartime arms-buying network (1945) were all in place before May 1948.\", \"The mone"
+    },
+    {
+     "ref": "money_1948:Overview:2",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>How to read these numbers.</b> Figures are in the currency and year they were reported. Pounds of 1899 and dollars of 1948 are not comparable without adjustment, so the charts never add them together. Every figure links back to a scene with its sources.\""
+    },
+    {
+     "ref": "money_1948:The Streams:0",
+     "type": "table",
+     "title": "Every documented stream, in order",
+     "cap": "",
+     "preview": "[[\"1882–1924\", \"Edmond de Rothschild's colonies\", \"Not totaled in the record\", \"—\", \"~30 settlements, later handed to PICA (1924)\"], [\"1899\", \"Jewish Colonial Trust\", \"£2M authorized; ~£250,000 raised in £1 shares\", \"~$47M (raised)\", \"The movement's own bank\"], [\"1901–1947\", \"Jewish National Fund (b"
+    },
+    {
+     "ref": "money_1948:Dollar Flows:0",
+     "type": "hbar",
+     "title": "US-dollar flows in the record, 1921–1949",
+     "cap": "Nominal dollars of the year reported — not inflation-adjusted. Haavara converted at the period estimate.",
+     "preview": "[[\"Ex-Im loan 1949 · $100M\", 100], [\"Golda tour 1948 · $50M\", 50], [\"Haavara 1933–39 · ~$40M\", 40], [\"Czech arms 1948 · $14.5M\", 14.5], [\"1921–22 tour · ~$5M\", 5], [\"Christian cttees · $0.15M\", 0.15], [\"Feinberg 1948 · $0.1M\", 0.1]]"
+    },
+    {
+     "ref": "money_1948:Dollar Flows:1",
+     "type": "explain",
+     "title": "Why the smallest bar matters most",
+     "cap": "",
+     "preview": "[\"The $100,000 from Abraham Feinberg and Ed Kaufman is the smallest figure here, and the only one the historical record ties to a <b>specific policy decision</b>: historian John Judis documents Truman backing off pressure on Israel over land and refugees while his campaign needed that money.\", \"Most"
+    },
+    {
+     "ref": "money_1948:Land & People:0",
+     "type": "line",
+     "title": "Jewish National Fund landholdings",
+     "cap": "Dunams (1 dunam ≈ 1,000 m²).",
+     "preview": "[[1903, 200, \"200\"], [1920, 22363, \"22,363\"], [1935, 362000, \"~362,000\"], [1940, 516000, \"516,000\"], [1947, 936000, \"~936,000\"]]"
+    },
+    {
+     "ref": "money_1948:Land & People:1",
+     "type": "grid",
+     "title": "Land in 1947",
+     "cap": "",
+     "preview": "[{\"type\": \"donut\", \"title\": \"Land in 1947\", \"cap\": \"Of ~26 million dunams.\", \"center\": \"~7%\", \"centerSub\": \"Jewish-owned\", \"data\": [[\"Jewish-owned (incl. JNF)\", 2000000, \"#FFC700\"], [\"All other land\", 24000000, \"#1B2A4A\"]]}, {\"type\": \"donut\", \"title\": \"The 1947 UN plan\", \"cap\": \"Share of territory a"
+    },
+    {
+     "ref": "money_1948:Land & People:2",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"376,415\", \"Jewish immigrants recorded by Britain, 1920–1946\"], [\"~60,000\", \"German Jews resettled through Haavara\"], [\"~700,000\", \"Palestinians displaced in 1948 (UN est. ~711,000)\"]]"
+    },
+    {
+     "ref": "money_1948:The Machine:0",
+     "type": "flow",
+     "title": "From blue box to battlefield",
+     "cap": "",
+     "preview": "[[\"1899–1902\", \"Build a bank\", \"The Jewish Colonial Trust and its Palestine branch give the movement its own financial system.\"], [\"1901\", \"Buy land that never returns to the market\", \"The JNF holds land permanently and leases it only to Jews.\"], [\"1920–1929\", \"Make fundraising permanent — and widen"
+    },
+    {
+     "ref": "money_1948:The Machine:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>What this dashboard does not claim.</b> It does not claim any government secretly funded the movement, or that money 'bought' every decision. The record documents private, organized finance and one specific money-for-policy episode in 1948. See 'Did Money Buy the Politicians?' for exactly where "
+    }
+   ]
+  },
+  "year_ledger": {
+   "title": "The Year Ledger, 1881–1950",
+   "sub": "One row per year: what happened, what it built, the money involved, and who objected. Read across a Part to watch the machine assemble, year by year.",
+   "panels": [
+    {
+     "ref": "year_ledger:How to read:0",
+     "type": "explain",
+     "title": "Why a ledger",
+     "cap": "",
+     "preview": "[\"Most histories jump from 1897 to 1917 to 1948. Those leaps hide the work. The ledger shows that almost every year added a piece: a bank, a fund, a militia, a lobby, a law.\", \"The <b>Who objected</b> column matters as much as the rest. Opposition existed in nearly every year — Palestinian, Jewish, "
+    },
+    {
+     "ref": "year_ledger:How to read:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"Each row summarizes scenes in the matching Part. Tap into the Part to see sources.\""
+    },
+    {
+     "ref": "year_ledger:Prelude:0",
+     "type": "table",
+     "title": "Prelude — year by year",
+     "cap": "",
+     "preview": "[[\"1881\", \"Pogroms in the Russian Empire\", \"Trigger for organized emigration and Zionist thought\", \"—\", \"Most emigrants chose America, not Palestine\"], [\"1882\", \"Edmond de Rothschild begins funding colonies\", \"Philanthropic settlement model\", \"Rothschild (Paris)\", \"—\"], [\"1885\", \"Reform Judaism's Pi"
+    },
+    {
+     "ref": "year_ledger:Part 1:0",
+     "type": "table",
+     "title": "Part 1 — year by year",
+     "cap": "",
+     "preview": "[[\"1896\", \"Der Judenstaat\", \"The program — weighs Argentina or Palestine\", \"—\", \"—\"], [\"1897\", \"First Zionist Congress, Basel\", \"The World Zionist Organization\", \"—\", \"Reform, the Bund, Orthodox rabbis\"], [\"1898\", \"Herzl meets the Kaiser\", \"Sponsor-shopping begins\", \"—\", \"—\"], [\"1899\", \"Jewish Colon"
+    },
+    {
+     "ref": "year_ledger:Part 2:0",
+     "type": "table",
+     "title": "Part 2 — year by year",
+     "cap": "",
+     "preview": "[[\"1917\", \"Balfour Declaration\", \"A great-power pledge\", \"—\", \"Edwin Montagu (Jewish cabinet minister)\"], [\"1918\", \"ZOA formed; Weizmann meets Faisal\", \"US political organization\", \"147,000 members\", \"—\"], [\"1919\", \"Paris; King–Crane survey\", \"Consent manufactured; evidence shelved\", \"—\", \"72% of pe"
+    },
+    {
+     "ref": "year_ledger:Part 3:0",
+     "type": "table",
+     "title": "Part 3 — year by year",
+     "cap": "",
+     "preview": "[[\"1923\", \"Transjordan separated; Betar founded\", \"Map changes; right wing forms\", \"—\", \"—\"], [\"1924\", \"Jacob de Haan assassinated\", \"Internal Jewish dissent silenced\", \"—\", \"Old Yishuv / Agudat Israel\"], [\"1925\", \"Revisionists split; Hebrew University opens\", \"The Likud line begins\", \"—\", \"—\"], [\"1"
+    },
+    {
+     "ref": "year_ledger:Part 4:0",
+     "type": "table",
+     "title": "Part 4 — year by year",
+     "cap": "",
+     "preview": "[[\"1936\", \"Arab Revolt begins\", \"Armed resistance\", \"—\", \"—\"], [\"1937\", \"Peel Commission: partition + 'transfer'\", \"First official transfer proposal\", \"—\", \"Arab Higher Committee\"], [\"1938\", \"Évian; Wingate's Night Squads; Kristallnacht\", \"Doors close; Britain trains Haganah\", \"—\", \"—\"], [\"1939\", \"W"
+    },
+    {
+     "ref": "year_ledger:Part 5:0",
+     "type": "table",
+     "title": "Part 5 — year by year",
+     "cap": "",
+     "preview": "[[\"1946\", \"Anglo-American Committee; King David bombing; Truman's Yom Kippur statement\", \"Pressure campaign; 'neither Jewish nor Arab state' set aside\", \"—\", \"Magnes/Ihud; Arab Office\"], [\"1947\", \"UNSCOP (Arab boycott); Exodus; CIA ORE-55; Resolution 181\", \"Vote secured; warnings overruled\", \"Pressu"
+    },
+    {
+     "ref": "year_ledger:Part 6:0",
+     "type": "table",
+     "title": "Part 6 — year by year",
+     "cap": "",
+     "preview": "[[\"1948 (Dec)\", \"Genocide Convention; UDHR; Resolution 194\", \"Rights written; return promised\", \"—\", \"—\"], [\"1949\", \"Armistices; UN admission; Lausanne; UNRWA\", \"Consolidation\", \"$100M US loan\", \"Lausanne return talks fail\"], [\"1950\", \"Absentees' Property Law\", \"Flight converted into permanent owner"
+    }
+   ]
+  },
+  "what_about_america": {
+   "title": "What About America? — The Bill, Side by Side",
+   "sub": "What the US spent on Israel and the 2026 Iran war, what the same money buys at home, who decided, and what Americans say. Government and academic figures only; comparisons show scale, not substitution.",
+   "panels": [
+    {
+     "ref": "what_about_america:The Bill:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$21.7B\", \"Military aid to Israel, Oct 2023–Oct 2025\"], [\"$9.65–12.07B\", \"US operations in Yemen, vs. Iran, and the region\"], [\"$43.6B\", \"Iran war through Sept 3, 2026 (CENTCOM); $33.4B by June 29 (Pentagon)\"], [\"19\", \"US service members dead — Pentagon disclosed count, Sept 23, 2026 (other tallie"
+    },
+    {
+     "ref": "what_about_america:The Bill:1",
+     "type": "stacked",
+     "title": "The Iran war's $33.4B, by category",
+     "cap": "Pentagon comptroller estimate through June 29, 2026.",
+     "preview": "[[\"Operation Epic Fury\", [22.3, 7.4, 3.7]]]"
+    },
+    {
+     "ref": "what_about_america:The Bill:2",
+     "type": "explain",
+     "title": "The short version",
+     "cap": "",
+     "preview": "[\"In under three years the US committed roughly <b>$75 billion</b> to Israel's wars and its own war with Iran, by the most conservative documented counts — $31–34B in aid and operations through October 2025, plus $43.6B for the Iran war through September 3, 2026, still rising about $3B a month.\"]"
+    },
+    {
+     "ref": "what_about_america:At Home:0",
+     "type": "hbar",
+     "title": "Years of each program the Iran war could fund (through Sept 2026)",
+     "cap": "$43.6B (CENTCOM, Sept 3) divided by each program's annual budget. Scale, not substitution.",
+     "preview": "[[\"LIHEAP heating aid · $4.0B/yr\", 10.8], [\"WIC nutrition · $8.2B/yr\", 5.3], [\"CDC · $9.2B/yr\", 4.7], [\"Head Start · $12.3B/yr\", 3.6]]"
+    },
+    {
+     "ref": "what_about_america:At Home:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Why 'scale, not substitution'.</b> War costs are largely borrowed and budgeted separately from these programs, so the chart shows the size of the choice — not that any program was cut to pay for the war.\""
+    },
+    {
+     "ref": "what_about_america:Who Decided:0",
+     "type": "flow",
+     "title": "Every dollar traces to a named decision",
+     "cap": "",
+     "preview": "[[\"2016\", \"Ten-year agreement\", \"$38B over FY2019–2028, signed under President Obama.\"], [\"2023–2024\", \"Supplementals\", \"Requested by the Biden administration and passed by Congress.\"], [\"March 2025\", \"Emergency waivers\", \"~$4B in arms expedited past congressional review under Secretary Rubio.\"], [\""
+    },
+    {
+     "ref": "what_about_america:What Americans Say:0",
+     "type": "hbar",
+     "title": "Key poll results, 2026",
+     "cap": "Quinnipiac (Mar 6–8, registered voters); Reuters/Ipsos (Jul 24–26, adults).",
+     "preview": "[[\"Oppose ground troops (Mar)\", 75], [\"Goals not clearly explained (Jul)\", 69], [\"Iran not an imminent threat (Mar)\", 55], [\"Oppose the war (Mar)\", 53], [\"Support the war (Jul)\", 33]]"
+    },
+    {
+     "ref": "what_about_america:What Americans Say:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>The counter-finding.</b> About six in ten voters in a Fox News poll called Iran a real national-security threat, and Republicans largely supported the war. Seeing a threat and supporting this war are different questions.\""
+    },
+    {
+     "ref": "what_about_america:Your Share:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"~$95\", \"Per American: aid + US operations since Oct 7 (through Oct 2025)\"], [\"~$128\", \"Per American: Iran war, through Sept 3, 2026\"], [\"~$36\", \"Per American per year: Head Start\"], [\"~$12\", \"Per American per year: LIHEAP\"]]"
+    },
+    {
+     "ref": "what_about_america:Your Share:1",
+     "type": "explain",
+     "title": "The other side, in fairness",
+     "cap": "",
+     "preview": "[\"Supporters argue most aid is spent with US manufacturers, that Israel shares intelligence, that missile defense is co-produced, and that deterring Iran protects US forces and shipping. Critics answer that it is still taxpayer money, concentrated in a few contractors — and that this war began with "
+    }
+   ]
+  },
+  "global_funding": {
+   "title": "Who Paid for It All? — The Global Funding Ledger, 1899–1949",
+   "sub": "Where the money for the entire pre-state operation came from, year by year and country by country — with every amount shown as it was then and in today's dollars.",
+   "panels": [
+    {
+     "ref": "global_funding:Overview:0",
+     "type": "kpis",
+     "title": "",
+     "cap": "",
+     "preview": "[[\"$150M → ~$2.0B\", \"UJA 1948 — then the largest non-government campaign in US history\"], [\"$124M+ → ~$2.4B\", \"UJA wartime giving, 1939–45\"], [\"$20.1M → ~$370M\", \"Keren Hayesod worldwide, 1921–29 — over half from the US\"], [\"~$40M → ~$930M\", \"German Jewish capital moved through Haavara, 1933–39\"], ["
+    },
+    {
+     "ref": "global_funding:Overview:1",
+     "type": "explain",
+     "title": "The short version",
+     "cap": "",
+     "preview": "[\"It wasn't cheap — and it wasn't secret. The bulk of the money came from <b>organized private giving</b>, overwhelmingly American by the 1940s: a million-plus donors giving through local federations to the United Jewish Appeal, plus decades of worldwide giving through Keren Hayesod and the Jewish N"
+    },
+    {
+     "ref": "global_funding:Overview:2",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>Today's dollars.</b> Amount × (CPI 2025 ÷ CPI of that year), using the BLS consumer price index — the method of the government's own inflation calculator. Pounds are converted at the period exchange rate first. Pre-1913 conversions use Minneapolis Fed estimates and are approximate.\""
+    },
+    {
+     "ref": "global_funding:Year by Year:0",
+     "type": "table",
+     "title": "Every documented stream — then and now",
+     "cap": "",
+     "preview": "[[\"1899–1901\", \"Jewish Colonial Trust shares (£250k raised)\", \"£250,000\", \"~$47M\", \"The movement's own bank\"], [\"1921–1929\", \"Keren Hayesod — worldwide\", \"$20.1M\", \"~$370M\", \"Immigration, settlement, defense, public works\"], [\"1926 (July)\", \"Keren Hayesod — record single month\", \"£75,073\", \"~$6.6M\","
+    },
+    {
+     "ref": "global_funding:Year by Year:1",
+     "type": "line",
+     "title": "United Jewish Appeal, in today's dollars",
+     "cap": "Annual campaign totals converted to 2025 dollars. 1939–45 shown as the wartime annual average.",
+     "preview": "[[1939, 324, \"~$0.32B\"], [1942, 350, \"~$0.35B/yr avg\"], [1946, 1651, \"~$1.65B\"], [1947, 1588, \"~$1.59B\"], [1948, 2004, \"~$2.0B\"]]"
+    },
+    {
+     "ref": "global_funding:By Country:0",
+     "type": "hbar",
+     "title": "Keren Hayesod income by country, 1921–1929",
+     "cap": "Dollars of the time (multiply by ~18 for today's dollars). From the fund's tenth-anniversary report.",
+     "preview": "[[\"United States · $11.0M\", 10.98], [\"South Africa · $1.5M\", 1.51], [\"Germany · $0.98M\", 0.98], [\"Romania · $0.88M\", 0.88], [\"Great Britain · $0.88M\", 0.88], [\"Poland · $0.82M\", 0.82], [\"Canada · $0.74M\", 0.74]]"
+    },
+    {
+     "ref": "global_funding:By Country:1",
+     "type": "explain",
+     "title": "America became the center of gravity",
+     "cap": "",
+     "preview": "[\"Over the fund's first twelve years the US gave about half of everything raised worldwide (£2.41M of £4.82M). In the late 1930s American Jews set up their own campaign, and by 1948 a single year of US giving ($150M) dwarfed the entire first decade of worldwide giving ($20M).\"]"
+    },
+    {
+     "ref": "global_funding:Where It Went:0",
+     "type": "grid",
+     "title": "The 1948 UJA dollar",
+     "cap": "",
+     "preview": "[{\"type\": \"donut\", \"title\": \"The 1948 UJA dollar\", \"cap\": \"Of $150M raised (≈$2.0B today).\", \"center\": \"$150M\", \"centerSub\": \"1948\", \"data\": [[\"United Palestine Appeal (Palestine/Israel)\", 74.7, \"#FFC700\"], [\"Joint Distribution Committee (Europe relief)\", 64.9, \"#1B2A4A\"], [\"US resettlement (USNA)\","
+    },
+    {
+     "ref": "global_funding:Where It Went:1",
+     "type": "explain",
+     "title": "What the Palestine share paid for",
+     "cap": "",
+     "preview": "[\"Keren Hayesod's own history lists immigration and absorption, settlement, <b>defense</b>, water development and public works as what it financed before statehood. In 1948, Golda Meyerson's campaign money went largely to weapons.\"]"
+    },
+    {
+     "ref": "global_funding:The Arms Bill:0",
+     "type": "table",
+     "title": "Paying for the 1948 war — what is documented",
+     "cap": "",
+     "preview": "[[\"Czechoslovak arms\", \"$14.5M – ~$90M\", \"~$0.19B – ~$1.2B\", \"Estimates vary up to six-fold\"], [\"Golda's tour\", \"~$50M\", \"~$0.67B\", \"Mostly for arms\"], [\"Somoza letters of credit\", \"$3M\", \"~$40M\", \"Nicaragua's support for arms buying\"], [\"Shai intelligence service\", \"~$700,000 / yr\", \"~$9.4M / yr\", "
+    },
+    {
+     "ref": "global_funding:The Arms Bill:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>No single total exists.</b> Purchases ran through front companies across Europe, the Americas and the Eastern bloc, and no audited grand total has been published. The ranges above are what the record supports.\""
+    },
+    {
+     "ref": "global_funding:Budgets & Britain:0",
+     "type": "table",
+     "title": "Operating budgets and Britain's bill — then and now",
+     "cap": "",
+     "preview": "[[\"1922–23\", \"Mandate civil government spending\", \"£P1.9M\", \"~$161M\", \"Palestine pound = sterling\"], [\"1923–24\", \"British garrison\", \"£1.5M\", \"~$129M\", \"Paid by Britain\"], [\"1934–35\", \"Mandate civil government spending\", \"£P3.2M\", \"~$388M\", \"Up 68% in 12 years\"], [\"1921–1937\", \"Jewish capital invest"
+    },
+    {
+     "ref": "global_funding:Budgets & Britain:1",
+     "type": "hbar",
+     "title": "The biggest bills, in today's dollars",
+     "cap": "Billions of 2025 dollars. Different payers and purposes — shown side by side for scale, not added together.",
+     "preview": "[[\"Jewish capital invested 1921–37\", 7.4], [\"Britain's military cost 1945–47\", 6.7], [\"Jewish capital imports 1940–44\", 3.0], [\"UJA wartime giving 1939–45\", 2.45], [\"UJA 1948\", 2.0], [\"Haavara 1933–39\", 0.93]]"
+    },
+    {
+     "ref": "global_funding:Defense Money:0",
+     "type": "flow",
+     "title": "From a cigarette levy to a charity channel",
+     "cap": "",
+     "preview": "[[\"1920s–30s\", \"Jewish Agency budget\", \"By 1939, an £80,000 line for 'security service (defense)' in a £720,000 budget.\"], [\"1938\", \"Kofer HaYishuv\", \"A community levy on cigarettes, restaurant bills and luxuries to fund the Haganah.\"], [\"1945–48\", \"Sonneborn network\", \"Wealthy US donors fund arms b"
+    },
+    {
+     "ref": "global_funding:Defense Money:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>The documented gap.</b> No audited total of the Haganah's budget is publicly available. The streams above are documented individually.\""
+    },
+    {
+     "ref": "global_funding:Gaps & Method:0",
+     "type": "explain",
+     "title": "What we could not total — yet",
+     "cap": "",
+     "preview": "[\"Now documented: Jewish Agency budgets (1939, 1944–46), Mandate civil spending, Britain's military cost, and the defense channels. Still not available as audited totals: the Haganah's own budget and the Jewish National Fund's full annual income series.\", \"Some streams overlap (Golda's 1948 money fl"
+    },
+    {
+     "ref": "global_funding:Gaps & Method:1",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"Sources are listed above; every figure links back to a scene in the Road to 1948. Corrections are welcome — the platform's correction pledge applies.\""
+    }
+   ]
+  },
+  "other_accords": {
+   "title": "The Other Accords — Country by Country",
+   "sub": "Bahrain, Morocco, Sudan and Kazakhstan: when they joined, what each received, and where each stands as of October 2026.",
+   "panels": [
+    {
+     "ref": "other_accords:The Table:0",
+     "type": "table",
+     "title": "What each country got",
+     "cap": "",
+     "preview": "[[\"Bahrain\", \"Sept 15, 2020\", \"Deeper security ties (hosts US Fifth Fleet)\", \"Cooled since Nov 2023 recall; still a member\", \"Protests during Gaza war\"], [\"Morocco\", \"Dec 2020\", \"US recognition of sovereignty over Western Sahara\", \"Upgraded to full embassies Sept 16, 2026\", \"Protests; normalization "
+    },
+    {
+     "ref": "other_accords:The Table:1",
+     "type": "explain",
+     "title": "The pattern",
+     "cap": "",
+     "preview": "[\"Every one of these deals was decided by a king or a general and paid for by Washington with something concrete. None was put to a public vote. That is why the Accords have survived the Gaza war at the level of governments while public anger has grown underneath them.\"]"
+    },
+    {
+     "ref": "other_accords:Who Paid:0",
+     "type": "note",
+     "title": "",
+     "cap": "",
+     "preview": "\"<b>The third parties.</b> Morocco's reward was recognition of its claim to Western Sahara, which the Polisario Front and Algeria contest and the UN has not resolved. Sudan's reward came as the country moved toward a military takeover. The Palestinians — the people the Accords' supporters said would"
+    }
+   ]
+  },
+  "claim_checker": {
+   "title": "Claim Checker — The Comment Section",
+   "sub": "Viral claims about Israel and Palestine, checked against the record. Tap a scene for the evidence.",
+   "panels": [
+    {
+     "ref": "claim_checker:Verdicts:0",
+     "type": "table",
+     "title": "Claim by claim",
+     "cap": "",
+     "preview": "[[\"Egypt and Jordan refuse Palestinians because of terrorism\", \"Mostly false\", \"Security concerns exist; Jordan hosts ~2M refugees; Egypt refuses permanent displacement\", \"cmt_s02\"], [\"Egypt sends no aid to Gaza\", \"False\", \"Rafah was a main route until Israel took it in May 2024\", \"cmt_s03\"], [\"Jord"
+    },
+    {
+     "ref": "claim_checker:How to Check:0",
+     "type": "flow",
+     "title": "Two questions for any viral claim",
+     "cap": "",
+     "preview": "[[\"1\", \"Is the fact true?\", \"Find the primary source or a credible record.\"], [\"2\", \"Does it prove the conclusion?\", \"A true fact can carry a false claim.\"], [\"3\", \"What's left out?\", \"The missing context usually decides it.\"]]"
+    }
+   ]
+  }
+ },
+ "maps": {
+  "state_build": {
+   "kind": "flow",
+   "title": "Building a State, 1897–1948",
+   "sub": "How a political program became a state in 51 years — the institutions, the patrons, and the votes, in order.",
+   "nodes": [
+    "Basel Congress",
+    "Zionist bank",
+    "Jewish National Fund",
+    "Balfour Declaration",
+    "British Mandate",
+    "Jewish Agency",
+    "US political machine",
+    "UNSCOP",
+    "Resolution 181",
+    "State of Israel"
+   ],
+   "scenes": [
+    "s04",
+    "s04d",
+    "s04e",
+    "s06",
+    "s07",
+    "s07f",
+    "s07i",
+    "s09",
+    "s10",
+    "us_s03"
+   ]
+  },
+  "aipac_machine": {
+   "kind": "flow",
+   "title": "The AIPAC Machine",
+   "sub": "How money, trips, and primaries connect — and loop back.",
+   "nodes": [
+    "Donors",
+    "AIPAC",
+    "AIPAC PAC",
+    "United Democracy Project",
+    "AIEF",
+    "Members of Congress",
+    "Primary spending",
+    "Votes & policy"
+   ],
+   "scenes": [
+    "cm_s00",
+    "cm_s01",
+    "cm_s03",
+    "cm_s05",
+    "cm_s10",
+    "s19",
+    "s19e"
+   ]
+  },
+  "aid_cycle": {
+   "kind": "flow",
+   "title": "The Aid Cycle",
+   "sub": "Where a US military-aid dollar goes — and why it keeps renewing.",
+   "nodes": [
+    "US taxpayers",
+    "Congress",
+    "Foreign Military Financing",
+    "US weapons makers",
+    "Israel's military",
+    "Israel's exports",
+    "Next MOU"
+   ],
+   "scenes": [
+    "exp_s01",
+    "iaa_s01",
+    "iaa_s02",
+    "iaa_s13",
+    "mou_s01",
+    "s19f"
+   ]
+  },
+  "phone_profile": {
+   "kind": "flow",
+   "title": "Phone to Profile",
+   "sub": "How data about anyone becomes an enforcement file — without a warrant.",
+   "nodes": [
+    "Your phone",
+    "Apps & ad code",
+    "Fake cell towers",
+    "Data brokers",
+    "Cellebrite",
+    "Federal agencies",
+    "Tax & Social Security data",
+    "Palantir",
+    "Enforcement"
+   ],
+   "scenes": [
+    "doge_s02",
+    "imm_s02",
+    "isr_s02",
+    "pal_s01",
+    "sr_s01",
+    "sur_s01",
+    "sur_s02",
+    "sur_s04"
+   ]
+  },
+  "ice_israel": {
+   "kind": "network",
+   "title": "The ICE–Israel Pipeline",
+   "sub": "Who supplies US immigration enforcement — and each supplier's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Israel Defense Ministry",
+    "Palantir",
+    "Paragon",
+    "Cellebrite",
+    "Elbit",
+    "ICE / DHS",
+    "Stephen Miller",
+    "GEO / CoreCivic"
+   ],
+   "scenes": [
+    "df_s01",
+    "imx_s01",
+    "isr_s02",
+    "isr_s03",
+    "sm_s03"
+   ]
+  },
+  "nypd_israel": {
+   "kind": "flow",
+   "title": "NYPD ↔ Israel",
+   "sub": "A city police force with a post inside Israel's national police — lawful, privately funded, outside the settlements.",
+   "nodes": [
+    "NYPD",
+    "International Liaison Program",
+    "NYC Police Foundation",
+    "Israel National Police HQ",
+    "Demographics Unit",
+    "\"Zero leads\"",
+    "Training trips",
+    "Outside the settlements"
+   ],
+   "scenes": [
+    "df_s03",
+    "gx_s02",
+    "nypd_s00",
+    "nypd_s03",
+    "nypd_s04"
+   ]
+  },
+  "fed_1913": {
+   "kind": "flow",
+   "title": "The Fed, 1913 — Structure vs. Myth",
+   "sub": "What the Federal Reserve actually is — and why the \"Zionist Fed\" claim fails the record.",
+   "nodes": [
+    "Banking panics",
+    "Federal Reserve Act",
+    "Board of Governors",
+    "12 regional Reserve Banks",
+    "Paul Warburg",
+    "Schiff & Felix Warburg",
+    "\"Zionist Fed\" claim"
+   ],
+   "scenes": [
+    "s04ga",
+    "s04gb"
+   ]
+  },
+  "net_kushner": {
+   "kind": "network",
+   "title": "Jared Kushner — Network",
+   "sub": "Documented ties, and each node's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Netanyahu",
+    "Friends of the IDF",
+    "Settlement groups",
+    "Kushner family foundation",
+    "Abraham Accords",
+    "Gaza masterplan",
+    "Jared Kushner",
+    "Donald Trump",
+    "Affinity Partners",
+    "Israeli insurers"
+   ],
+   "scenes": [
+    "tf_s01",
+    "tf_s02",
+    "tf_s03",
+    "tf_s05",
+    "tf_s07",
+    "tf_s09"
+   ]
+  },
+  "net_miller": {
+   "kind": "network",
+   "title": "Stephen Miller — Network",
+   "sub": "Documented ties, and each node's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Israel Defense Ministry",
+    "Palantir",
+    "ICE",
+    "Stephen Miller",
+    "Donald Trump",
+    "Jeff Sessions",
+    "Breitbart",
+    "America First Legal"
+   ],
+   "scenes": [
+    "df_s01",
+    "imx_s01",
+    "sm_s01",
+    "sm_s02",
+    "sm_s03",
+    "sm_s04"
+   ]
+  },
+  "net_shillman": {
+   "kind": "network",
+   "title": "The Shillman / TPUSA Hub",
+   "sub": "One donor behind several pro-Israel voices for young conservatives — and the paths to Israel.",
+   "nodes": [
+    "State of Israel",
+    "Friends of the IDF",
+    "IFCJ",
+    "Robert Shillman",
+    "Turning Point USA",
+    "Horowitz Center",
+    "Ben Shapiro",
+    "PragerU",
+    "Charlie Kirk",
+    "Im Tirtzu"
+   ],
+   "scenes": [
+    "kv_s01",
+    "kv_s02",
+    "kv_s03",
+    "kv_s07"
+   ]
+  },
+  "net_ellison": {
+   "kind": "network",
+   "title": "Larry Ellison — Network",
+   "sub": "Platforms, media, and documented paths to the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Friends of the IDF",
+    "Netanyahu",
+    "Larry Ellison",
+    "Oracle",
+    "TikTok US",
+    "Paramount / CBS"
+   ],
+   "scenes": [
+    "ell_s01",
+    "ell_s02",
+    "ell_tt01"
+   ]
+  },
+  "net_rubio": {
+   "kind": "network",
+   "title": "Marco Rubio — Network",
+   "sub": "Documented ties, and each node's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "~$4B arms, waived review",
+    "ICC + UN rapporteur",
+    "State Department",
+    "Marco Rubio",
+    "Pro-Israel PACs & donors",
+    "Laura Loomer",
+    "Gaza medical visas",
+    "Donald Trump",
+    "National Security Council"
+   ],
+   "scenes": [
+    "rb_s01",
+    "rb_s02",
+    "rb_s03",
+    "rb_s04",
+    "rb_s05"
+   ]
+  },
+  "net_epstein": {
+   "kind": "network",
+   "title": "Jeffrey Epstein — Network",
+   "sub": "The documented money and ties — and each node's distance from the State of Israel. Intelligence claims are marked where the record stops.",
+   "nodes": [
+    "State of Israel",
+    "Ehud Barak",
+    "Robert Maxwell",
+    "Carbyne",
+    "Ghislaine Maxwell",
+    "Jeffrey Epstein",
+    "Les Wexner",
+    "Leon Black",
+    "Thiel / Valar",
+    "\"Belonged to intelligence\""
+   ],
+   "scenes": [
+    "epf_s04",
+    "epf_s07b",
+    "epn_s03",
+    "epx_s03",
+    "epx_s07",
+    "epx_s08"
+   ]
+  },
+  "net_thiel": {
+   "kind": "network",
+   "title": "Peter Thiel — Network",
+   "sub": "Palantir, the funds, the politicians — and each node's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Israel Defense Ministry",
+    "Ehud Barak",
+    "Palantir",
+    "Carbyne",
+    "Peter Thiel",
+    "Founders Fund",
+    "ICE",
+    "Valar Ventures",
+    "J.D. Vance",
+    "Curtis Yarvin"
+   ],
+   "scenes": [
+    "de_s02",
+    "df_s01",
+    "epn_s03",
+    "epx_s08",
+    "imx_s01"
+   ]
+  },
+  "net_adelson": {
+   "kind": "network",
+   "title": "The Adelsons — Network",
+   "sub": "Over $550 million in political giving, a newspaper in Israel, and the policies they pressed for.",
+   "nodes": [
+    "State of Israel",
+    "Embassy to Jerusalem",
+    "Golan recognition",
+    "Israel Hayom",
+    "Donald Trump",
+    "Sheldon & Miriam Adelson",
+    "Preserve America PAC",
+    "Las Vegas Review-Journal",
+    "Annexation condition"
+   ],
+   "scenes": [
+    "kv_s09",
+    "tf_s01",
+    "tf_s03"
+   ]
+  },
+  "christian_zionism": {
+   "kind": "flow",
+   "title": "Christian Zionism — From a Footnote to a Foreign Policy",
+   "sub": "How an annotated Bible became a political constituency.",
+   "nodes": [
+    "Scofield Reference Bible",
+    "Dispensationalist churches",
+    "CUFI",
+    "IFCJ",
+    "Netanyahu",
+    "Turning Point USA",
+    "Congress & White House",
+    "Embassy move, 2018"
+   ],
+   "scenes": [
+    "bwm_src_s15",
+    "kv_s03",
+    "s05",
+    "tf_s03"
+   ]
+  },
+  "money_1948": {
+   "kind": "flow",
+   "title": "Follow the Money, 1897–1948",
+   "sub": "From blue-box coins to Czech fighters — every stream documented in the Road to 1948, in order.",
+   "nodes": [
+    "Small donors",
+    "Colonial Trust bank",
+    "Jewish National Fund",
+    "Anglo-Palestine Co.",
+    "936,000 dunams",
+    "Keren Hayesod",
+    "US donors",
+    "Haavara transfer",
+    "Sonneborn network",
+    "Golda's tour",
+    "Czech arms",
+    "$100,000 to Truman",
+    "State of Israel"
+   ],
+   "scenes": [
+    "cz_s01",
+    "hv_s01",
+    "s04c",
+    "s04d",
+    "s04e",
+    "s04i",
+    "s07d",
+    "s07f2",
+    "s10",
+    "us_s03",
+    "us_s07"
+   ]
+  },
+  "info_war": {
+   "kind": "flow",
+   "title": "The Information War, 1941–1948",
+   "sub": "Two machines — one rival, one mainstream — moving American opinion and Congress.",
+   "nodes": [
+    "Bergson committees",
+    "AZEC",
+    "Full-page ads & pageant",
+    "Local committees",
+    "Christian fronts",
+    "War Refugee Board",
+    "Congress & platforms",
+    "White House channel",
+    "Resolution 181"
+   ],
+   "scenes": [
+    "azc_s02",
+    "bg_s01",
+    "s07f",
+    "s09",
+    "us_s04",
+    "us_s05",
+    "wh_s01"
+   ]
+  },
+  "warnings_1947": {
+   "kind": "flow",
+   "title": "Warned, Then Overruled — 1946–1948",
+   "sub": "Every documented official warning against partition, and the political advice that prevailed.",
+   "nodes": [
+    "Anglo-American Cttee",
+    "State Dept (Henderson)",
+    "Joint Chiefs",
+    "Defense Sec. Forrestal",
+    "CIA ORE-55",
+    "Truman",
+    "Clifford & Niles",
+    "Eddie Jacobson",
+    "Res 181 & recognition"
+   ],
+   "scenes": [
+    "aac_s01",
+    "ore_s01",
+    "s07j",
+    "s08",
+    "s09",
+    "tr_s01",
+    "wh_s01"
+   ]
+  },
+  "net_bengvir": {
+   "kind": "network",
+   "title": "Itamar Ben-Gvir — Network",
+   "sub": "Documented ties, and each node's distance from the State of Israel.",
+   "nodes": [
+    "State of Israel",
+    "Netanyahu / Likud",
+    "National Security Ministry",
+    "Itamar Ben-Gvir",
+    "Kach / Kahane movement",
+    "Otzma Yehudit",
+    "Lehava",
+    "Chabad alliance",
+    "5-country sanctions",
+    "2026 defense-minister bid"
+   ],
+   "scenes": [
+    "bgv_s01",
+    "bgv_s02",
+    "bgv_s03",
+    "bgv_s05",
+    "bgv_s10"
+   ]
+  },
+  "me_layers": {
+   "kind": "flow",
+   "title": "How the Middle East Evolved, 1516–1979",
+   "sub": "The layers that stacked up — empire, democracy, oil, borders, kings, revolts, 1948, coups, revolution.",
+   "nodes": [
+    "Ottoman order",
+    "Iran's first democracy",
+    "Oil",
+    "The carve-up",
+    "Installed rulers",
+    "Revolts",
+    "1948",
+    "Iran's second democracy",
+    "Coup decade",
+    "1967 → 1979"
+   ],
+   "scenes": [
+    "me_s01",
+    "me_s02",
+    "me_s03",
+    "me_s04",
+    "me_s05",
+    "me_s06",
+    "me_s07",
+    "me_s08",
+    "me_s09"
+   ]
+  },
+  "syria_line": {
+   "kind": "flow",
+   "title": "The Golan Line, 1949–2026",
+   "sub": "From a declined peace offer to a fortification line inside Syria.",
+   "nodes": [
+    "1949 — Za'im's offer",
+    "DMZ & water war",
+    "June 1967",
+    "1974 line",
+    "1981 annexation",
+    "1991–2000",
+    "Recognition",
+    "Dec 2024",
+    "2026"
+   ],
+   "scenes": [
+    "sy_s01",
+    "sy_s02",
+    "sy_s03",
+    "sy_s04",
+    "sy_s05",
+    "sy_s06",
+    "sy_s09",
+    "sy_s10",
+    "sy_s12"
+   ]
+  },
+  "turkey_arc": {
+   "kind": "flow",
+   "title": "Turkey and Israel — From Ally to Rival",
+   "sub": "Four centuries of Ottoman rule, a quiet alliance, a raid, and a rivalry — with the oil that never stopped.",
+   "nodes": [
+    "Ottoman rule",
+    "1923 Lausanne",
+    "Allies 1949–2009",
+    "2010 Mavi Marmara",
+    "Repair & rupture",
+    "After Oct 7",
+    "Courts",
+    "The oil kept flowing",
+    "Rivals over Syria"
+   ],
+   "scenes": [
+    "tk_s01",
+    "tk_s02",
+    "tk_s03",
+    "tk_s04",
+    "tk_s05",
+    "tk_s06",
+    "tk_s07",
+    "tk_s08",
+    "tk_s09"
+   ]
+  },
+  "proxy_frame": {
+   "kind": "network",
+   "title": "The 'Proxy' Frame — Same Protocol, Different Origins",
+   "sub": "Iran backs all three. Each was born somewhere else — and Israel's own actions sit at the root of two.",
+   "nodes": [
+    "State of Israel",
+    "1982 invasion of Lebanon",
+    "1987 — 20 years of occupation",
+    "1990s Zaydi revival",
+    "Hezbollah",
+    "Hamas",
+    "Houthis (Ansar Allah)",
+    "Iran",
+    "Saudi-led war",
+    "2023–26 front with Israel"
+   ],
+   "scenes": [
+    "s14",
+    "s15",
+    "ye_s02",
+    "ye_s03",
+    "ye_s06",
+    "ye_s07"
+   ]
+  },
+  "uae_ledger": {
+   "kind": "network",
+   "title": "The UAE Ledger — Strong Ties, a Weak Promise",
+   "sub": "What the Abraham Accords locked in, and what they only promised.",
+   "nodes": [
+    "State of Israel",
+    "Iran",
+    "United States",
+    "United Arab Emirates",
+    "Trade & flights",
+    "Arms",
+    "Annexation paused",
+    "Pegasus",
+    "Iron Dome on UAE soil",
+    "A Palestinian state"
+   ],
+   "scenes": [
+    "ae_s02",
+    "ae_s03",
+    "ae_s04",
+    "ae_s05",
+    "ae_s07",
+    "ae_s08",
+    "ae_s09"
+   ]
+  },
+  "oil_for_arms": {
+   "kind": "network",
+   "title": "Oil for Arms — Azerbaijan, Israel, and the Pipeline Across Turkey",
+   "sub": "The documented swap, the route it travels, and who paid.",
+   "nodes": [
+    "Iran",
+    "Washington",
+    "Azerbaijan",
+    "State of Israel",
+    "BTC pipeline → Ceyhan",
+    "Nagorno-Karabakh",
+    "Turkey's \"severed\" ties"
+   ],
+   "scenes": [
+    "azb_s01",
+    "azb_s02",
+    "azb_s04",
+    "azb_s05",
+    "azb_s06",
+    "tk_s07"
+   ]
+  }
+ }
+}

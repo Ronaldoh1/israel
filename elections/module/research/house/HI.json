@@ -1,0 +1,111 @@
+{
+ "state": "HI",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_hi": {
+   "t": "2026 United States House of Representatives elections in Hawaii — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Hawaii"
+  },
+  "p1_hi": {
+   "t": "Politics1 — HI 2026 candidates",
+   "u": "https://politics1.com/hi.htm"
+  }
+ },
+ "races": [
+  {
+   "race": "HI-01",
+   "incumbent": {
+    "name": "Ed Case",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ed Case",
+     "party": "D",
+     "incumbent": true,
+     "rec": "hi-01-edward-case",
+     "fec": [
+      "H2HI02128",
+      "S6HI00180"
+     ]
+    },
+    {
+     "name": "Adriel Lam",
+     "party": "R",
+     "incumbent": false,
+     "rec": "hi-01-adriel-lam",
+     "fec": [
+      "H6HI01360",
+      "S4HI00177"
+     ]
+    },
+    {
+     "name": "Jordan Conley",
+     "party": "G",
+     "incumbent": false,
+     "rec": "hi-01-jordan-conley",
+     "fec": [
+      "H6HI01394"
+     ]
+    },
+    {
+     "name": "Nathan Berning",
+     "party": "I",
+     "incumbent": false,
+     "rec": "hi-01-nathan-berning",
+     "fec": [
+      "H6HI01386"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 8 primary: Case won D primary 58.5%. Berning is nonpartisan (Politics1).",
+   "c": [
+    "wiki_hi",
+    "p1_hi"
+   ]
+  },
+  {
+   "race": "HI-02",
+   "incumbent": {
+    "name": "Jill Tokuda",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jill Tokuda",
+     "party": "D",
+     "incumbent": true,
+     "rec": "hi-02-jill-tokuda",
+     "fec": [
+      "H2HI02581"
+     ]
+    },
+    {
+     "name": "Brenton Awa",
+     "party": "R",
+     "incumbent": false,
+     "rec": "hi-02-brenton-awa",
+     "fec": [
+      "H6HI02426"
+     ]
+    },
+    {
+     "name": "Edward Codelia",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Tokuda won D primary 91.5%. Codelia is nonpartisan per Politics1 (Wikipedia names him without ballot status); no FEC row. Wikipedia also names Randall Terry without a stated ballot line; not listed by Politics1, so omitted.",
+   "c": [
+    "wiki_hi",
+    "p1_hi"
+   ]
+  }
+ ]
+}

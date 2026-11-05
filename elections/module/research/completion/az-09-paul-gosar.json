@@ -1,0 +1,107 @@
+{
+ "id": "az-09-paul-gosar",
+ "cites": {
+  "kaz09paulgosar_wiki": {
+   "t": "Paul Gosar — Wikipedia (accessed 2026-10-08)",
+   "u": "https://en.wikipedia.org/wiki/Paul_Gosar"
+  },
+  "kaz09paulgosar_rules_hres789": {
+   "t": "H. Res. 789 — Censuring Representative Paul Gosar — House Rules Committee (Democrats) (accessed 2026-10-08)",
+   "u": "https://democrats-rules.house.gov/bill/117/h-res-789"
+  },
+  "bb_gosar21": {
+   "t": "Ethics Committee dismisses 'baseless' Democrat claim against Rep. Gosar over January 6 riots — Breitbart (June 15, 2021)",
+   "u": "https://www.breitbart.com/politics/2021/06/15/ethics-committee-dismisses-baseless-democrat-claim-against-rep-gosar-over-january-6-riots/amp/"
+  },
+  "kaz09paulgosar_hist": {
+   "t": "GOSAR, Paul — History, Art & Archives, U.S. House of Representatives (accessed 2026-10-08)",
+   "u": "https://history.house.gov/People/Detail/14283"
+  },
+  "kaz09paulgosar_legistorm": {
+   "t": "Rep. Paul Gosar — financial disclosure index — LegiStorm (accessed 2026-10-08)",
+   "u": "https://www.legistorm.com/pfd_office/member/Rep_Paul_Gosar/2726.html"
+  },
+  "kaz09paulgosar_rc2021_379": {
+   "t": "Final vote results for Roll Call 379 (Nov 17, 2021), H.Res. 789 censuring Rep. Paul Gosar — Office of the Clerk, U.S. House",
+   "u": "https://clerk.house.gov/evs/2021/roll379"
+  },
+  "kaz09paulgosar_bp": {
+   "t": "Paul Gosar — Ballotpedia (accessed 2026-10-08)",
+   "u": "https://ballotpedia.org/Paul_Gosar"
+  },
+  "coe_gosar21": {
+   "t": "House Committee on Ethics letter to Rep. Paul Gosar (June 11, 2021) — gosar.house.gov",
+   "u": "https://gosar.house.gov/uploadedfiles/20210611_coe_to_gosar.pdf"
+  },
+  "pfd_gosar25": {
+   "t": "Paul A. Gosar — Annual report, filing year 2025 (scanned paper form) — Clerk of the U.S. House (Apr. 29, 2026)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/9116160.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener and Justia could not be searched directly: the network proxy refuses both hosts and the fetch tool refuses unsearched URLs (Oct. 14, 2026). A site-restricted web search of courtlistener.com/justia.com was run instead, plus news searches. News/site-restricted searches found no criminal or civil case against him. Ethics: House Ethics Committee letter of June 11, 2021 read directly (below).",
+  "foreign": "Filing-year-2025 annual read directly (scanned form): no foreign assets, income or travel. FARA: exact-name search of the FARA bulk files (registrants, short forms, foreign principals), Oct. 13, 2026: no match.",
+  "claims": "Campaign site refused by the fetch tool; mechanical sample = every checkable claim on his official House biography (7 rated: 2 true, 2 partly, 3 unverifiable). No 2026 ads found in coverage. PolitiFact scorecard: 1 False, 1 Pants on Fire (statements on Katie Hobbs overseeing the 2022 election, Nov. 2022, and a photo of Obama with Rouhani, Jan. 2020); the page did not map ratings to statements, so they are not scored here.",
+  "democracy": "Clerk roll calls 10 and 11 of 2021 read directly; Wikipedia and KJZZ for statements. Not checked: Jan. 6, 2017 and Jan. 6, 2025 counts, and the Dec. 2020 Texas v. Pennsylvania amicus list."
+ },
+ "legal": [
+  {
+   "kind": "ethics-finding",
+   "d": "2021-11-17",
+   "t": "The House adopted H.Res. 789 censuring him (223–207; Democrats 221–0, Republicans 2–207 with Cheney and Kinzinger voting yes and one present) for posting an edited anime video depicting his likeness attacking figures resembling Rep. Alexandria Ocasio-Cortez and President Biden. The resolution removed him from the Oversight and Natural Resources committees. He called it an attack on his First Amendment rights and re-posted the video; his committee seats were restored after Republicans won the House in 2022.",
+   "short": "2021 House censure, committees stripped",
+   "status": "Censure adopted Nov. 17, 2021; committee seats restored after 2022 election",
+   "c": [
+    "kaz09paulgosar_rc2021_379",
+    "kaz09paulgosar_rules_hres789",
+    "kaz09paulgosar_hist",
+    "kaz09paulgosar_wiki",
+    "kaz09paulgosar_bp"
+   ]
+  },
+  {
+   "kind": "ethics-cleared",
+   "d": "2021-06-11",
+   "t": "The House Ethics Committee received a complaint naming him on Mar. 10, 2021 (Breitbart reported it concerned Jan. 6). A motion to set up an investigative subcommittee failed, and the committee said it would not review the complaint further.",
+   "short": "2021 ethics complaint not pursued",
+   "status": "Closed June 11, 2021; no investigative subcommittee",
+   "c": [
+    "coe_gosar21",
+    "bb_gosar21"
+   ]
+  }
+ ],
+ "finances": {
+  "networth": {
+   "min": 1750003,
+   "max": 10249999,
+   "year": 2025,
+   "c": [
+    "pfd_gosar25"
+   ],
+   "note": "Read from the scanned filing-year-2025 annual (OCR plus visual check of the checkboxes): three joint real-estate assets minus one mortgage."
+  },
+  "trades": {
+   "count": 0,
+   "period": "Filing-year 2025 annual (Schedule B answered 'No')",
+   "overlap": [],
+   "overlap_note": "No transactions reported; LegiStorm lists no periodic transaction reports.",
+   "c": [
+    "pfd_gosar25",
+    "kaz09paulgosar_legistorm"
+   ]
+  },
+  "note": {
+   "t": "All assets are joint Flagstaff, AZ real estate: Aunt Maude's Store ($250K–$500K), Raine Valley Rd property ($1M–$5M) and 222 E Cedar Ave ($1M–$5M, rental income $15K–$50K). Liability: joint 'new residence' mortgage ($250K–$500K). No outside earned income, positions, agreements or gifts. Sponsored travel: Conservative Partnership Institute, Feb. 7–9, 2025 (DC–Orlando–DC, lodging and food). No foreign assets or income. LegiStorm's index shows extension letters in 2013, 2015, 2019 and 2021; the 2025 annual was filed Apr. 29, 2026, before the May 15 deadline.",
+   "c": [
+    "pfd_gosar25",
+    "kaz09paulgosar_legistorm"
+   ]
+  }
+ },
+ "research_notes": "Only the filing-year-2025 annual was transcribed (scanned paper forms; earlier years on disk at /home/claude/data26/x/AZ/az-09-paul-gosar/house_disclosures/). Courts remain news-only; ethics.house.gov not opened directly beyond the committee letter."
+}

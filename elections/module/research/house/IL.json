@@ -1,0 +1,679 @@
+{
+ "state": "IL",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_il": {
+   "t": "2026 United States House of Representatives elections in Illinois — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Illinois"
+  },
+  "gp_il": {
+   "t": "The Green Papers: Illinois 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/IL"
+  },
+  "nbc_il": {
+   "t": "NBC Chicago — Who won the Illinois primary election (Mar 18, 2026)",
+   "u": "https://www.nbcchicago.com/illinois-election-2026/who-won-the-illinois-primary-election-heres-the-latest-results/3909949/?amp=1"
+  },
+  "nbcmap_il": {
+   "t": "NBC Chicago — How did Illinois vote in the primary: map of results",
+   "u": "https://www.nbcchicago.com/illinois-election-2026/how-did-illinois-vote-in-the-primary-election-heres-a-map-of-the-results/3910275/?amp=1"
+  },
+  "shaw_il": {
+   "t": "Shaw Local — What's next for northern Illinois congressional candidates (Mar 19, 2026)",
+   "u": "https://www.shawlocal.com/news/2026/03/19/whats-next-for-northern-illinois-congressional-candidates"
+  },
+  "cops_il": {
+   "t": "Co Public Strategies — Illinois Insights: 2026 Primary Election Results (3/18)",
+   "u": "https://copublicstrategies.com/illinois-insights-special-edition-2026-primary-election-results-3-18/"
+  },
+  "fox32_il": {
+   "t": "FOX 32 Chicago — Illinois U.S. House Primary Election Results 2026",
+   "u": "https://www.fox32chicago.com/news/us-house-2026-primary-election-results"
+  }
+ },
+ "races": [
+  {
+   "race": "IL-01",
+   "incumbent": {
+    "name": "Jonathan Jackson",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jonathan Jackson",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-01-jonathan-jackson",
+     "fec": [
+      "H2IL01349",
+      "H8IL07061"
+     ]
+    },
+    {
+     "name": "Christian Maxwell",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-01-christian-maxwell",
+     "fec": [
+      "H6IL01191"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Primary Mar 17, 2026: Maxwell beat Marcus Lewis 64.5%-35.5%. Green Papers also lists Je'Rico Brown as a write-in (not on printed ballot).",
+   "c": [
+    "wiki_il",
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  },
+  {
+   "race": "IL-02",
+   "incumbent": {
+    "name": "Robin Kelly",
+    "party": "D",
+    "status": "Ran for U.S. Senate (lost Democratic primary)"
+   },
+   "nominees": [
+    {
+     "name": "Donna Miller",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-02-donna-miller",
+     "fec": [
+      "H6IL02355"
+     ]
+    },
+    {
+     "name": "Michael Noack",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-02-michael-noack",
+     "fec": [
+      "H6IL02389"
+     ]
+    },
+    {
+     "name": "Ashley Banks",
+     "party": "I",
+     "incumbent": false,
+     "rec": "il-02-ashley-banks",
+     "fec": [
+      "H6IL02371"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Miller won Mar 17 Democratic primary 40.4% to Jesse Jackson Jr.'s 28.9%; Noack unopposed. Ashley Banks is listed as an independent in Wikipedia's results table (but as R in its finance table) and is absent from Green Papers; ballot status unconfirmed.",
+   "c": [
+    "wiki_il",
+    "gp_il",
+    "nbc_il",
+    "cops_il"
+   ]
+  },
+  {
+   "race": "IL-03",
+   "incumbent": {
+    "name": "Delia Ramirez",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Delia Ramirez",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-03-delia-ramirez",
+     "fec": [
+      "H2IL03162"
+     ]
+    },
+    {
+     "name": "Angel Oakley",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-03-angel-oakley",
+     "fec": [
+      "H6IL03163"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both nominees unopposed in Mar 17 primary.",
+   "c": [
+    "wiki_il",
+    "gp_il"
+   ]
+  },
+  {
+   "race": "IL-04",
+   "incumbent": {
+    "name": "Chuy García (Jesús García)",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Patty Garcia",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-04-patty-garcia",
+     "fec": [
+      "H6IL04153"
+     ]
+    },
+    {
+     "name": "Lupe Castillo",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-04-lupe-castillo",
+     "fec": [
+      "H4IL04117"
+     ]
+    },
+    {
+     "name": "Chris Getty",
+     "party": "I",
+     "incumbent": false,
+     "rec": "il-04-christopher-getty",
+     "fec": [
+      "H6IL04195"
+     ]
+    },
+    {
+     "name": "Ed Hershey",
+     "party": "I",
+     "incumbent": false,
+     "rec": "il-04-edward-hershey",
+     "fec": [
+      "H2IL04178"
+     ]
+    },
+    {
+     "name": "Lindsay Church",
+     "party": "I",
+     "incumbent": false,
+     "rec": "il-04-lindsay-church",
+     "fec": [
+      "H6IL04187"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. García withdrew after the filing deadline, leaving Patty Garcia unopposed in the Democratic primary; Castillo unopposed. Hershey is the Working Class Party candidate. Lindsay Church (I) is listed by Wikipedia but not Green Papers. Mayra Macías and Byron Sigcho-Lopez were disqualified.",
+   "c": [
+    "wiki_il",
+    "gp_il"
+   ]
+  },
+  {
+   "race": "IL-05",
+   "incumbent": {
+    "name": "Mike Quigley",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Quigley",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-05-mike-quigley",
+     "fec": [
+      "H0IL05096"
+     ]
+    },
+    {
+     "name": "Tommy Hanson",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-05-tommy-hanson",
+     "fec": [
+      "H2IL05241",
+      "H8IL05073"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Quigley won primary 64.8%; Hanson 72.0%.",
+   "c": [
+    "wiki_il",
+    "gp_il",
+    "nbc_il"
+   ]
+  },
+  {
+   "race": "IL-06",
+   "incumbent": {
+    "name": "Sean Casten",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sean Casten",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-06-sean-casten",
+     "fec": [
+      "H8IL06139"
+     ]
+    },
+    {
+     "name": "Niki Conforti",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-06-niki-conforti",
+     "fec": [
+      "H2IL06090"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "2024 rematch. Casten won primary 75.8% (Wikipedia); Conforti 82.2%.",
+   "c": [
+    "wiki_il",
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  },
+  {
+   "race": "IL-07",
+   "incumbent": {
+    "name": "Danny Davis",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "La Shawn Ford",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-07-la-ford",
+     "fec": [
+      "H6IL07354"
+     ]
+    },
+    {
+     "name": "Chad Koppie",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-07-chad-koppie",
+     "fec": [
+      "H2IL08203",
+      "S2IL00044"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Ford won the crowded Mar 17 Democratic primary with 23.8% (Co Public Strategies), defeating Melissa Conyears-Ervin and others. Wikipedia's page lacks final results for this district.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "nbcmap_il",
+    "cops_il",
+    "fox32_il"
+   ]
+  },
+  {
+   "race": "IL-08",
+   "incumbent": {
+    "name": "Raja Krishnamoorthi",
+    "party": "D",
+    "status": "Ran for U.S. Senate (lost Democratic primary)"
+   },
+   "nominees": [
+    {
+     "name": "Melissa Bean",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-08-melissa-bean",
+     "fec": [
+      "H2IL08088",
+      "H6IL08329"
+     ]
+    },
+    {
+     "name": "Jennifer Davis",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-08-jennifer-davis",
+     "fec": [
+      "H6IL08311"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Bean won Mar 17 Democratic primary with ~32% over Junaid Ahmed and others.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "nbcmap_il",
+    "shaw_il",
+    "cops_il",
+    "fox32_il"
+   ]
+  },
+  {
+   "race": "IL-09",
+   "incumbent": {
+    "name": "Jan Schakowsky",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Daniel Biss",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-09-daniel-biss",
+     "fec": [
+      "H6IL09228"
+     ]
+    },
+    {
+     "name": "John Elleson",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-09-john-elleson",
+     "fec": [
+      "H8IL09208",
+      "H8IL09224"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Biss won Mar 17 Democratic primary with 29.5% over Kat Abughazaleh and others.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "nbcmap_il",
+    "shaw_il",
+    "cops_il",
+    "fox32_il"
+   ]
+  },
+  {
+   "race": "IL-10",
+   "incumbent": {
+    "name": "Brad Schneider",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brad Schneider",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-10-bradley-schneider",
+     "fec": [
+      "H2IL10068"
+     ]
+    },
+    {
+     "name": "Carl Lambrecht",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-10-carl-lambrecht",
+     "fec": [
+      "H6IL10176"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Schneider defeated Morgan Coghill in primary. Green Papers lists Alexandria Keating-Sofiakis as a Green write-in (not on printed ballot).",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  },
+  {
+   "race": "IL-11",
+   "incumbent": {
+    "name": "Bill Foster",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Bill Foster",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-11-g-foster",
+     "fec": [
+      "H8IL14067"
+     ]
+    },
+    {
+     "name": "Jeff Walter",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-11-jeffrey-walter",
+     "fec": [
+      "H6IL11166"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Walter won four-way GOP primary with ~43%.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  },
+  {
+   "race": "IL-12",
+   "incumbent": {
+    "name": "Mike Bost",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Bost",
+     "party": "R",
+     "incumbent": true,
+     "rec": "il-12-michael-bost",
+     "fec": [
+      "H4IL12060"
+     ]
+    },
+    {
+     "name": "Julie Fortier",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-12-julie-fortier",
+     "fec": [
+      "H6IL12131"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Nominees per Green Papers only; NBC Chicago reports both primaries uncontested but does not name candidates.",
+   "c": [
+    "gp_il",
+    "nbc_il"
+   ]
+  },
+  {
+   "race": "IL-13",
+   "incumbent": {
+    "name": "Nikki Budzinski",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nikki Budzinski",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-13-nikki-budzinski",
+     "fec": [
+      "H2IL13153"
+     ]
+    },
+    {
+     "name": "Jeff Wilson",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-13-jeff-wilson",
+     "fec": [
+      "H6IL13154"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Budzinski defeated Dylan Blaha in primary.",
+   "c": [
+    "gp_il",
+    "nbc_il"
+   ]
+  },
+  {
+   "race": "IL-14",
+   "incumbent": {
+    "name": "Lauren Underwood",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lauren Underwood",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-14-lauren-underwood",
+     "fec": [
+      "H8IL14174"
+     ]
+    },
+    {
+     "name": "Jim Marter",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-14-james-marter",
+     "fec": [
+      "H8IL16153",
+      "S6IL00334"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Marter won GOP primary 75.1% over Gary Vician.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  },
+  {
+   "race": "IL-15",
+   "incumbent": {
+    "name": "Mary Miller",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mary Miller",
+     "party": "R",
+     "incumbent": true,
+     "rec": "il-15-mary-miller",
+     "fec": [
+      "H0IL15129",
+      "H2IL12106"
+     ]
+    },
+    {
+     "name": "Jennifer Todd",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-15-jennifer-todd",
+     "fec": [
+      "H6IL15092"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Miller defeated two primary challengers.",
+   "c": [
+    "gp_il",
+    "nbc_il"
+   ]
+  },
+  {
+   "race": "IL-16",
+   "incumbent": {
+    "name": "Darin LaHood",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Darin LaHood",
+     "party": "R",
+     "incumbent": true,
+     "rec": "il-16-darin-lahood",
+     "fec": [
+      "H6IL18088"
+     ]
+    },
+    {
+     "name": "Paul Nolley",
+     "party": "D",
+     "incumbent": false,
+     "rec": "il-16-paul-nolley",
+     "fec": [
+      "H6IL16108"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Nominees per Green Papers only; NBC Chicago reports both primaries uncontested but does not name candidates. Green Papers lists John Kitover as a Republican write-in (not on printed ballot).",
+   "c": [
+    "gp_il",
+    "nbc_il"
+   ]
+  },
+  {
+   "race": "IL-17",
+   "incumbent": {
+    "name": "Eric Sorensen",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Eric Sorensen",
+     "party": "D",
+     "incumbent": true,
+     "rec": "il-17-eric-sorensen",
+     "fec": [
+      "H2IL17147"
+     ]
+    },
+    {
+     "name": "Dillan Vancil",
+     "party": "R",
+     "incumbent": false,
+     "rec": "il-17-dillan-vancil",
+     "fec": [
+      "H6IL17247"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Vancil won GOP primary ~57% over Julie Bickelhaupt.",
+   "c": [
+    "gp_il",
+    "nbc_il",
+    "shaw_il"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1887 @@
+{
+ "state": "CA",
+ "checked": "2026-10-14",
+ "system": "Top-two primary (June 2, 2026); two candidates per district on Nov 3 ballot regardless of party.",
+ "cites": {
+  "sos_ca": {
+   "t": "Certified List of Candidates for the November 3, 2026, General Election — California Secretary of State (8/27/2026)",
+   "u": "https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/cert-list-candidates.pdf"
+  },
+  "wiki_ca": {
+   "t": "2026 United States House of Representatives elections in California — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California"
+  },
+  "gp_ca": {
+   "t": "The Green Papers: California 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/CA"
+  },
+  "calmatters": {
+   "t": "CalMatters 2026 voter guide — U.S. House",
+   "u": "https://calmatters.org/california-voter-guide-2026/us-house"
+  },
+  "ap_wahab": {
+   "t": "AP: California lawmaker Aisha Wahab wins special election to succeed Eric Swalwell in Congress (Aug 20, 2026)",
+   "u": "https://www.news4jax.com/news/politics/2026/08/20/california-lawmaker-aisha-wahab-wins-special-election-to-succeed-eric-swalwell-in-congress/"
+  },
+  "swalwell_resign": {
+   "t": "Roll Call: Rep. Eric Swalwell resigns, denies sexual assault allegations (Apr 13, 2026)",
+   "u": "https://rollcall.com/2026/04/13/rep-eric-swalwell-resigns-denies-sexual-assault-allegations/"
+  },
+  "gallagher_sworn": {
+   "t": "NSPR: James Gallagher sworn in to Congress, California 1st District special election (Jun 10, 2026)",
+   "u": "https://www.mynspr.org/2026-06-10/james-gallagher-sworn-in-congress-california-1st-district-special-election"
+  },
+  "bp_issa": {
+   "t": "Ballotpedia News: Rep. Darrell Issa becomes the 55th U.S. House member not seeking re-election in 2026",
+   "u": "https://news.ballotpedia.org/2026/03/09/rep-darrell-issa-becomes-the-55th-u-s-house-member-who-is-not-seeking-re-election-in-2026/"
+  }
+ },
+ "races": [
+  {
+   "race": "CA-01",
+   "incumbent": {
+    "name": "James Gallagher",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "James Gallagher",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-01-james-gallagher",
+     "fec": [
+      "H6CA01285"
+     ]
+    },
+    {
+     "name": "Mike McGuire",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-01-mike-mcguire",
+     "fec": [
+      "H6CA01269"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Doug LaMalfa (R) died in office; Gallagher won the June 2, 2026 special election (old lines) and was sworn in June 10. Regular top-two primary: Gallagher 42.1%, McGuire 41.8%, Audrey Denney (D) 14.2% (Wikipedia).",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "gallagher_sworn"
+   ]
+  },
+  {
+   "race": "CA-02",
+   "incumbent": {
+    "name": "Jared Huffman",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jared Huffman",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-02-jared-huffman",
+     "fec": [
+      "H2CA06259"
+     ]
+    },
+    {
+     "name": "Robin Littau",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-02-robin-littau",
+     "fec": [
+      "H6CA02309"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-03",
+   "incumbent": {
+    "name": "Kevin Kiley",
+    "party": "I",
+    "status": "Running in CA-06"
+   },
+   "nominees": [
+    {
+     "name": "Ami Bera",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-03-amerish-bera",
+     "fec": [
+      "H0CA03078"
+     ]
+    },
+    {
+     "name": "Robb Tucker",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-03-robb-tucker",
+     "fec": [
+      "H2CA37213",
+      "H6CA03174"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Post-Prop 50 map: incumbent Kiley (elected as R in 2024, switched to independent, still caucuses with House Republicans per Wikipedia) runs in CA-06; Ami Bera (incumbent CA-06) runs here.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-04",
+   "incumbent": {
+    "name": "Mike Thompson",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Thompson",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-04-mike-thompson",
+     "fec": [
+      "H8CA01109"
+     ]
+    },
+    {
+     "name": "Eric Jones",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-04-eric-jones",
+     "fec": [
+      "H0CA03060",
+      "H6CA04222"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats advanced (Thompson 41.0%, Jones 22.2%; Ray Riehle R third at 20.8% per Wikipedia).",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-05",
+   "incumbent": {
+    "name": "Tom McClintock",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Tom McClintock",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-05-thomas-mcclintock",
+     "fec": [
+      "H8CA04152"
+     ]
+    },
+    {
+     "name": "Michael Masuda",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-05-michael-masuda",
+     "fec": [
+      "H6CA05377"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-06",
+   "incumbent": {
+    "name": "Ami Bera",
+    "party": "D",
+    "status": "Running in CA-03"
+   },
+   "nominees": [
+    {
+     "name": "Kevin Kiley",
+     "party": "I",
+     "incumbent": true,
+     "rec": "ca-06-kevin-kiley",
+     "fec": [
+      "H2CA03157"
+     ]
+    },
+    {
+     "name": "Richard Pan",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-06-richard-pan",
+     "fec": [
+      "H6CA03158"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kiley (incumbent CA-03) is on the ballot as No Party Preference; Green Papers notes a '(Republican)' label context. Primary: Kiley 24.3%, Pan 23.2% (Wikipedia).",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-07",
+   "incumbent": {
+    "name": "Doris Matsui",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Doris Matsui",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-07-doris-matsui",
+     "fec": [
+      "H6CA05195"
+     ]
+    },
+    {
+     "name": "Mai Vang",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-07-mai-vang",
+     "fec": [
+      "H6CA07175"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters"
+   ]
+  },
+  {
+   "race": "CA-08",
+   "incumbent": {
+    "name": "John Garamendi",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "John Garamendi",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-08-john-garamendi",
+     "fec": [
+      "H0CA10149"
+     ]
+    },
+    {
+     "name": "Rudy Recile",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-08-rudy-recile",
+     "fec": [
+      "H2CA00153"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-09",
+   "incumbent": {
+    "name": "Josh Harder",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Josh Harder",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-09-josh-harder",
+     "fec": [
+      "H8CA10126"
+     ]
+    },
+    {
+     "name": "John McBride",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-09-john-mcbride",
+     "fec": [
+      "H4CA09101"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-10",
+   "incumbent": {
+    "name": "Mark DeSaulnier",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mark DeSaulnier",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-10-mark-desaulnier",
+     "fec": [
+      "H0CA10073"
+     ]
+    },
+    {
+     "name": "Jeff Frese",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-10-jeffrey-frese",
+     "fec": [
+      "H6CA10187"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-11",
+   "incumbent": {
+    "name": "Nancy Pelosi",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Scott Wiener",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-11-scott-wiener",
+     "fec": [
+      "H8CA11116"
+     ]
+    },
+    {
+     "name": "Connie Chan",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-11-connie-chan",
+     "fec": [
+      "H6CA11268"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat (Pelosi not seeking re-election); two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters"
+   ]
+  },
+  {
+   "race": "CA-12",
+   "incumbent": {
+    "name": "Lateefah Simon",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lateefah Simon",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-12-lateefah-simon",
+     "fec": [
+      "H4CA12154"
+     ]
+    },
+    {
+     "name": "Jamie Joyce",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-12-jamie-joyce",
+     "fec": [
+      "H6CA12209"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-13",
+   "incumbent": {
+    "name": "Adam Gray",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Adam Gray",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-13-adam-gray",
+     "fec": [
+      "H2CA13115"
+     ]
+    },
+    {
+     "name": "Kevin Lincoln",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-13-kevin-lincoln",
+     "fec": [
+      "H4CA09093"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters"
+   ]
+  },
+  {
+   "race": "CA-14",
+   "incumbent": {
+    "name": "Aisha Wahab",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Aisha Wahab",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-14-aisha-wahab",
+     "fec": [
+      "H0CA15213"
+     ]
+    },
+    {
+     "name": "Melissa Hernandez",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-14-melissa-hernandez",
+     "fec": [
+      "H2CA10145",
+      "H6CA14163"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Eric Swalwell (D) resigned in April 2026; Wahab beat Hernandez in the August 2026 special election (AP) and they meet again in November for the full term. Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "ap_wahab",
+    "swalwell_resign"
+   ]
+  },
+  {
+   "race": "CA-15",
+   "incumbent": {
+    "name": "Kevin Mullin",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Kevin Mullin",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-15-kevin-mullin",
+     "fec": [
+      "H2CA14162"
+     ]
+    },
+    {
+     "name": "Charles Hoelter",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-15-charles-hoelter",
+     "fec": [
+      "H6CA15194"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-16",
+   "incumbent": {
+    "name": "Sam Liccardo",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sam Liccardo",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-16-sam-liccardo",
+     "fec": [
+      "H4CA16197"
+     ]
+    },
+    {
+     "name": "Peter Sundin Soulé",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-16-peter-soule",
+     "fec": [
+      "H6CA16176"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-17",
+   "incumbent": {
+    "name": "Ro Khanna",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ro Khanna",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-17-rohit-khanna",
+     "fec": [
+      "H4CA12055"
+     ]
+    },
+    {
+     "name": "Ritesh Tandon",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-17-ritesh-tandon",
+     "fec": [
+      "H0CA17193"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-18",
+   "incumbent": {
+    "name": "Zoe Lofgren",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Zoe Lofgren",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-18-zoe-lofgren",
+     "fec": [
+      "H4CA16049"
+     ]
+    },
+    {
+     "name": "Shane Lewis",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-18-shane-lewis",
+     "fec": [
+      "H6CA18172"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-19",
+   "incumbent": {
+    "name": "Jimmy Panetta",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jimmy Panetta",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-19-jimmy-panetta",
+     "fec": [
+      "H6CA20152"
+     ]
+    },
+    {
+     "name": "Peter Coe Verbica",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-19-peter-verbica",
+     "fec": [
+      "H6CA19154"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-20",
+   "incumbent": {
+    "name": "Vince Fong",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Vince Fong",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-20-vince-fong",
+     "fec": [
+      "H4CA20181"
+     ]
+    },
+    {
+     "name": "Sandra Van Scotter",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-20-sandra-van-scotter",
+     "fec": [
+      "H6CA20228"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-21",
+   "incumbent": {
+    "name": "Jim Costa",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jim Costa",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-21-jim-costa",
+     "fec": [
+      "H4CA20082"
+     ]
+    },
+    {
+     "name": "Kyle Kirkland",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-21-kyle-kirkland",
+     "fec": [
+      "H4CA20223",
+      "H6CA13199"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-22",
+   "incumbent": {
+    "name": "David Valadao",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "David Valadao",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-22-david-valadao",
+     "fec": [
+      "H2CA20094"
+     ]
+    },
+    {
+     "name": "Randy Villegas",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-22-randy-villegas",
+     "fec": [
+      "H6CA22190"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters"
+   ]
+  },
+  {
+   "race": "CA-23",
+   "incumbent": {
+    "name": "Jay Obernolte",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jay Obernolte",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-23-jay-obernolte",
+     "fec": [
+      "H0CA08135"
+     ]
+    },
+    {
+     "name": "Tessa Lynn Hodge",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-23-tessa-hodge",
+     "fec": [
+      "H6CA23230"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-24",
+   "incumbent": {
+    "name": "Salud Carbajal",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Salud Carbajal",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-24-salud-carbajal",
+     "fec": [
+      "H6CA24303"
+     ]
+    },
+    {
+     "name": "Bob Smith",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-24-robert-smith",
+     "fec": [
+      "H2CA49150",
+      "H4CA03138",
+      "H6CA14106",
+      "H6CA24345",
+      "H6CA36141"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-25",
+   "incumbent": {
+    "name": "Raul Ruiz",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Raul Ruiz",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-25-raul-ruiz",
+     "fec": [
+      "H0CA36177",
+      "H2CA36439"
+     ]
+    },
+    {
+     "name": "Joe Males",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-25-joe-males",
+     "fec": [
+      "H6CA25219"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-26",
+   "incumbent": {
+    "name": "Julia Brownley",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Jacqui Irwin",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-26-jacqui-irwin",
+     "fec": [
+      "H6CA26266"
+     ]
+    },
+    {
+     "name": "Sam Gallucci",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-26-samuel-gallucci",
+     "fec": [
+      "H6CA26241"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat (Brownley not seeking re-election, per Green Papers).",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-27",
+   "incumbent": {
+    "name": "George Whitesides",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "George Whitesides",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-27-george-whitesides",
+     "fec": [
+      "H4CA27111"
+     ]
+    },
+    {
+     "name": "Jason Gibbs",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-27-jason-gibbs",
+     "fec": [
+      "H6CA27306"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-28",
+   "incumbent": {
+    "name": "Judy Chu",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Judy Chu",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-28-judy-chu",
+     "fec": [
+      "H0CA32101"
+     ]
+    },
+    {
+     "name": "April A. Verlato",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-28-april-verlato",
+     "fec": [
+      "H4CA28127"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-29",
+   "incumbent": {
+    "name": "Luz Rivas",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Luz Rivas",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-29-luz-rivas",
+     "fec": [
+      "H4CA29141"
+     ]
+    },
+    {
+     "name": "Angélica Dueñas",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-29-angelica-duenas",
+     "fec": [
+      "H8CA29100"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-30",
+   "incumbent": {
+    "name": "Laura Friedman",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Laura Friedman",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-30-laura-friedman",
+     "fec": [
+      "H4CA30149"
+     ]
+    },
+    {
+     "name": "Scott Alan Meyers",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-30-scott-meyers",
+     "fec": [
+      "H6CA30250"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-31",
+   "incumbent": {
+    "name": "Gil Cisneros",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Gil Cisneros",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-31-gilbert-cisneros",
+     "fec": [
+      "H8CA39174"
+     ]
+    },
+    {
+     "name": "Eric Ching",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-31-eric-ching",
+     "fec": [
+      "H2CA39151"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-32",
+   "incumbent": {
+    "name": "Brad Sherman",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brad Sherman",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-32-brad-sherman",
+     "fec": [
+      "H6CA24113"
+     ]
+    },
+    {
+     "name": "Larry Thompson",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-32-larry-thompson",
+     "fec": [
+      "H0CA37175",
+      "H2CA36405",
+      "H4CA32137"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-33",
+   "incumbent": {
+    "name": "Pete Aguilar",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Pete Aguilar",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-33-pete-aguilar",
+     "fec": [
+      "H2CA31125"
+     ]
+    },
+    {
+     "name": "Stephanie M. Vargas",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-33-stephanie-vargas",
+     "fec": [
+      "H6CA33114",
+      "H8CA39281"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-34",
+   "incumbent": {
+    "name": "Jimmy Gomez",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jimmy Gomez",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-34-jimmy-gomez",
+     "fec": [
+      "H8CA34266"
+     ]
+    },
+    {
+     "name": "Angela Gonzales-Torres",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-34-angela-gonzales-torres",
+     "fec": [
+      "H6CA34286"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-35",
+   "incumbent": {
+    "name": "Norma Torres",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Norma Torres",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-35-norma-torres",
+     "fec": [
+      "H4CA35031"
+     ]
+    },
+    {
+     "name": "Mike Cargile",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-35-mike-cargile",
+     "fec": [
+      "H0CA35146"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-36",
+   "incumbent": {
+    "name": "Ted Lieu",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ted Lieu",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-36-ted-lieu",
+     "fec": [
+      "H4CA33119"
+     ]
+    },
+    {
+     "name": "Houston Brignano",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-36-houston-brignano",
+     "fec": [
+      "H6CA36208"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-37",
+   "incumbent": {
+    "name": "Sydney Kamlager-Dove",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sydney Kamlager-Dove",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-37-sydney-kamlager-dove",
+     "fec": [
+      "H2CA37304"
+     ]
+    },
+    {
+     "name": "Samantha Mota",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-37-samantha-mota",
+     "fec": [
+      "H6CA37339"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Democrats.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-38",
+   "incumbent": {
+    "name": "Linda Sánchez",
+    "party": "D",
+    "status": "Running in CA-41"
+   },
+   "nominees": [
+    {
+     "name": "Hilda Solis",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-38-hilda-solis",
+     "fec": [
+      "H0CA31087",
+      "H6CA38139"
+     ]
+    },
+    {
+     "name": "Pedro Antonio Casas",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-38-pedro-casas",
+     "fec": [
+      "H4CA31212"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat under the new map: incumbent Sánchez runs in CA-41.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-39",
+   "incumbent": {
+    "name": "Mark Takano",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mark Takano",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-39-mark-takano",
+     "fec": [
+      "H2CA43245"
+     ]
+    },
+    {
+     "name": "Steve Manos",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-39-steve-manos",
+     "fec": [
+      "H6CA39145"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-40",
+   "incumbent": {
+    "name": "Young Kim",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Young Kim",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-40-young-kim",
+     "fec": [
+      "H8CA39240"
+     ]
+    },
+    {
+     "name": "Ken Calvert",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ca-40-ken-calvert",
+     "fec": [
+      "H0CA42209",
+      "H2CA37023"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Two Republican incumbents: Kim (CA-40) vs. Calvert (incumbent CA-41, drawn out by Prop 50 map).",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters"
+   ]
+  },
+  {
+   "race": "CA-41",
+   "incumbent": {
+    "name": "Ken Calvert",
+    "party": "R",
+    "status": "Running in CA-40"
+   },
+   "nominees": [
+    {
+     "name": "Linda Sánchez",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-41-linda-sanchez",
+     "fec": [
+      "H2CA39078"
+     ]
+    },
+    {
+     "name": "Mitch Clemmons",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-41-mitchell-clemmons",
+     "fec": [
+      "H2CA38260",
+      "H6CA41380"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Calvert runs in CA-40; Linda Sánchez (incumbent CA-38) runs here.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-42",
+   "incumbent": {
+    "name": "Robert Garcia",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Robert Garcia",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-42-robert-garcia",
+     "fec": [
+      "H2CA47188"
+     ]
+    },
+    {
+     "name": "Brian Burley",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-42-brian-burley",
+     "fec": [
+      "H0CA48172"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-43",
+   "incumbent": {
+    "name": "Maxine Waters",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Maxine Waters",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-43-maxine-waters",
+     "fec": [
+      "H4CA23011"
+     ]
+    },
+    {
+     "name": "Cristian Morales",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-43-cristian-morales",
+     "fec": [
+      "H6CA43188"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-44",
+   "incumbent": {
+    "name": "Nanette Barragán",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nanette Barragán",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-44-nanette-barragan",
+     "fec": [
+      "H6CA44103"
+     ]
+    },
+    {
+     "name": "Genevieve Angel",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-44-genevieve-angel",
+     "fec": [
+      "H6CA44210"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-45",
+   "incumbent": {
+    "name": "Derek Tran",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Derek Tran",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-45-derek-tran",
+     "fec": [
+      "H4CA45170"
+     ]
+    },
+    {
+     "name": "Chuong V. Vo",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-45-chuong-vo",
+     "fec": [
+      "H6CA45191"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-46",
+   "incumbent": {
+    "name": "Lou Correa",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lou Correa",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-46-lou-correa",
+     "fec": [
+      "H6CA46116"
+     ]
+    },
+    {
+     "name": "David Pan",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-46-david-pan",
+     "fec": [
+      "H4CA46137"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-47",
+   "incumbent": {
+    "name": "Dave Min",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Dave Min",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-47-dave-min",
+     "fec": [
+      "H4CA47085",
+      "H8CA45148"
+     ]
+    },
+    {
+     "name": "Jenny Rae Le Roux",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-47-jenny-le-roux",
+     "fec": [
+      "H6CA47114"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-48",
+   "incumbent": {
+    "name": "Darrell Issa",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Jim Desmond",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-48-jim-desmond",
+     "fec": [
+      "H6CA49128"
+     ]
+    },
+    {
+     "name": "Marni von Wilpert",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ca-48-marni-von-wilpert",
+     "fec": [
+      "H6CA48310"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat; Issa announced retirement at the March 2026 filing deadline.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca",
+    "calmatters",
+    "bp_issa"
+   ]
+  },
+  {
+   "race": "CA-49",
+   "incumbent": {
+    "name": "Mike Levin",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Levin",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-49-mike-levin",
+     "fec": [
+      "H8CA49058"
+     ]
+    },
+    {
+     "name": "Armen Kurdian",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-49-armen-kurdian",
+     "fec": [
+      "H6CA49169"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-50",
+   "incumbent": {
+    "name": "Scott Peters",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Scott Peters",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-50-scott-peters",
+     "fec": [
+      "H2CA52089"
+     ]
+    },
+    {
+     "name": "Steve Cohen",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-50-stephen-cohen",
+     "fec": [
+      "H6CA50324"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-51",
+   "incumbent": {
+    "name": "Sara Jacobs",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sara Jacobs",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-51-sara-jacobs",
+     "fec": [
+      "H8CA49074"
+     ]
+    },
+    {
+     "name": "Ricardo Cabrera",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-51-ricardo-cabrera",
+     "fec": [
+      "H6CA51140"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  },
+  {
+   "race": "CA-52",
+   "incumbent": {
+    "name": "Juan Vargas",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Juan Vargas",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ca-52-juan-vargas",
+     "fec": [
+      "H2CA50026"
+     ]
+    },
+    {
+     "name": "Jeff Belle",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ca-52-jeffery-belle",
+     "fec": [
+      "H6CA52163"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Top-two general set by June 2, 2026 primary.",
+   "c": [
+    "sos_ca",
+    "gp_ca",
+    "wiki_ca"
+   ]
+  }
+ ]
+}

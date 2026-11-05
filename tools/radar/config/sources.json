@@ -1,0 +1,39 @@
+{
+  "_about": "What to collect. Edit freely. 'official' accounts are institutions (governments, armies, lobbies, advocacy groups): their names are kept in the results. Everyone else is anonymised.",
+  "since_days": 365,
+  "searches": [
+    "zionism", "zionist", "anti-zionism antisemitism", "Palestine never existed", "Palestinians invented people",
+    "Jews indigenous Israel", "Arabs colonizers", "land without a people", "Sephardic Zionism", "Mizrahi colonizers",
+    "first Zionist", "Judea and Samaria", "human shields Hamas", "most moral army", "Pallywood",
+    "Hamas health ministry numbers", "Gaza genocide lie", "UNRWA Hamas", "Hamas steals aid", "only democracy in the Middle East",
+    "Israel right to defend itself", "Jordan is Palestine", "Arabs rejected partition", "850,000 Jewish refugees", "Mufti Hitler",
+    "Camp David offer rejected", "Gaza withdrawal 2005", "San Remo Israel legal", "river to the sea genocide", "Queers for Palestine",
+    "Jews bought the land", "Israel aircraft carrier best investment", "self-hating Jew", "paid protesters Qatar", "hasbara"
+  ],
+  "youtube": {
+    "official": [
+      {"name": "Israel Defense Forces", "handle": "@idfnadesk"},
+      {"name": "Israel Ministry of Foreign Affairs", "handle": "@IsraelMFA"},
+      {"name": "Prime Minister of Israel", "handle": "@IsraeliPM"},
+      {"name": "StandWithUs", "handle": "@StandWithUs"},
+      {"name": "AIPAC", "handle": "@AIPAC"},
+      {"name": "Christians United for Israel", "handle": "@CUFI"},
+      {"name": "CAMERA", "handle": "@CAMERAorg"},
+      {"name": "Israel (State of Israel official)", "handle": "@Israel"}
+    ],
+    "videos_per_channel": 40,
+    "comments_per_video": 100,
+    "search_videos_per_query": 10
+  },
+  "reddit": {
+    "subreddits": ["IsraelPalestine", "Israel", "worldnews", "PoliticalDiscussion", "AskMiddleEast", "badhistory", "AskHistorians"],
+    "posts_per_search": 50,
+    "comments_from_top_threads": 25
+  },
+  "bluesky": { "per_search": 100 },
+  "telegram": {
+    "official": ["idfofficial", "IsraelMFA", "IsraeliPM"],
+    "messages_per_channel": 300
+  },
+  "gdelt": { "per_search": 100, "timespan": "12m" }
+}

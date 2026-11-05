@@ -1,0 +1,99 @@
+{
+ "state": "RI",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ri": {
+   "t": "2026 United States House of Representatives elections in Rhode Island — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Rhode_Island"
+  },
+  "gp_ri": {
+   "t": "The Green Papers: RI 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/RI"
+  },
+  "nhpr_ri": {
+   "t": "NHPR/NENC — Rhode Island primary election results (Sept 10, 2026)",
+   "u": "https://www.nhpr.org/2026-09-10/rhode-island-primary-election-results-foulkes-and-morales-topple-incumbents"
+  }
+ },
+ "races": [
+  {
+   "race": "RI-01",
+   "incumbent": {
+    "name": "Gabe Amo",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Gabe Amo",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ri-01-gabriel-amo",
+     "fec": [
+      "H4RI01265"
+     ]
+    },
+    {
+     "name": "Kellie Keenan",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ri-01-kellie-keenan",
+     "fec": [
+      "H6RI01153"
+     ]
+    },
+    {
+     "name": "Pedro DeSouza",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ri-01-pedro-desouza",
+     "fec": [
+      "H6RI01161"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Amo and Keenan were unopposed in the Sept 9 primary.",
+   "c": [
+    "gp_ri",
+    "nhpr_ri",
+    "wiki_ri"
+   ]
+  },
+  {
+   "race": "RI-02",
+   "incumbent": {
+    "name": "Seth Magaziner",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Seth Magaziner",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ri-02-seth-magaziner",
+     "fec": [
+      "H2RI02184"
+     ]
+    },
+    {
+     "name": "Vic Mellor",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ri-02-victor-mellor",
+     "fec": [
+      "H6RI02318"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Sept 9 Republican primary: Mellor defeated Stephen Skoly (no margin reported). Armando Anzoli is write-in only (Green Papers).",
+   "c": [
+    "gp_ri",
+    "nhpr_ri",
+    "wiki_ri"
+   ]
+  }
+ ]
+}

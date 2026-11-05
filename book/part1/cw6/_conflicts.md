@@ -1,0 +1,30 @@
+# cw6 source conflicts (for merge into SOURCE-CONFLICTS.md)
+
+- First armed operation: 31 Dec 1964, "the PLO's first action" (Wolf) vs dawn 1 Jan 1965, Fatah, Ahmad Musa killed (IPS) vs night of 2 Jan 1965, Fatah, charge defused, leader shot after a Jordanian patrol intercepted the squad (Morris via COJS). cw6_fatah, cw6_water (ilb_s04, sy_s02)
+- Israeli strikes on the Arab diversion works, 1965: long-range tank fire, not aircraft (Wolf) vs "bombed" (Dombrowsky). cw6_water (sy_s02)
+- Span of the strikes on the diversion works: "1965–67" (sy_s02) vs March, May and August 1965, project abandoned 1966 (Wolf, Dombrowsky). cw6_water (sy_s02)
+- Ulbricht's departure from Egypt: 1 March 1965 (Serr) vs 2 March 1965 (KAS, Bundesarchiv). cw6_germany
+- Arab reaction to Bonn–Israel relations, May 1965: thirteen Arab states withdrew ambassadors (Serr) vs Jordan and nine others broke relations, ten in all (GlobalSecurity). cw6_germany
+- Reparations total: 3 billion DM to Israel under the Luxembourg Agreement (bpb) vs 2.4 billion marks in goods received by the agreement's last year, 1965–66 (JTA, March 1965); 600 million DM unaccounted. cw6_germany
+- Samu mine: laid by Fatah, two days before the raid (IDF archive) vs Israel attributed the mining of 12 November to the Palestine Liberation Front (CIA, 2 Dec 1966). cw6_samu, cw6_fatah
+- Jordanian dead at Samu: 15 soldiers and 3 civilians (UNTSO report totals) vs death certificates for 14 soldiers and 5 civilians (same UNTSO report) vs about 50, half soldiers (CIA, 18 Nov 1966). cw6_samu
+- Dates of the 1966 American visit to Israeli atomic sites: 31 March–1 April (State telegram, 11 June 1966) vs 31 March–4 April (DIA memorandum, 4 May 1966). s11d, fis_s07a
+- 1966 aircraft sale: "48 F–4s to Israel" (FRUS volume summary) vs 48 A-4E Skyhawks (FRUS docs 270, 273; Hoopes memcon). s11d
+- First Skyhawk delivery: four aircraft unloaded at Haifa, 29 Dec 1967 (IAF via Ynet) vs delivered 1968 (Wikipedia). s11d
+- Hawk sale described as "the first US sale of offensive weaponry" (wiki_israel_us_military_relations, s11d) vs a surface-to-air, air-defence missile (FRUS, Kennedy's own words). s11d (wa_s07)
+- M48 tanks "delivered in 1965" (s11d) vs 40 German M48s delivered before the halt, and 210 sold directly in July 1965 for delivery over two years or more (Komer, 29 July 1965). s11d, cw6_tanks
+- Dimona visits: six American visits 1964–69 with staged control rooms (s11d, attributed to the 2020 NSA release) vs nine AEC teams 1961–69, with the reprocessing plant concealed; no staging in the fetched sources (Burr and Cohen). s11d
+- Israel's nuclear pledge: "will not be the first to introduce nuclear weapons into the Arab-Israel area" (memorandum, 10 March 1965; reaffirmation dated 11 March by FRUS editors) vs "not to be the first power in the Middle East to manufacture nuclear weapons" (McNamara to Eban, 12 Feb 1966) vs not to go nuclear "unless others do" (Komer, Feb 1966). cw6_tanks, s11d
+- NUMEC quantities: 178 kg U-235 inventory difference, 93.8 kg unexplained (AEC, 6 April 1966) vs about 200 kg (NSA editors' introduction) vs about 260 kg recorded losses through 1966 (GAO, 20 June 1967) vs 269 kg before 1968 and 76 kg after (apolloaffair summary) vs "206 pounds", about 93 kg (common headline). fis_s07a
+- FBI and NUMEC: FBI investigated from 1965 to 1980 (apolloaffair summary) vs Seaborg's "an inquiry by the FBI is not now warranted" (14 Feb 1966) and an FBI interview in June 1966 on FARA only; investigation requested by the CIA in 1968 (NSA briefing book 565). fis_s07a
+- Soviet warning of 13 May 1967: about 11 Israeli brigades (Elbahtimy) vs two brigades (Library of Congress). cw6_may_crisis
+- UNEF withdrawal request: Fawzi's letter of 16 May and Riad's formal request of 18 May (UN record, FRUS) vs 16 May (Library of Congress) vs 18 May (GlobalSecurity) vs 19 May (Fanack). cw6_may_crisis
+- Strait of Tiran: closure announced 22 May and treated as casus belli (Nasser's speech, U Thant's report) vs Nasser never carried out the threat (Library of Congress). cw6_tiran_june4
+- Rabin's reading of Egyptian intent: saw no sign Nasser intended war on 22 May (Tal) vs called the blockade "to be or not to be" (Fanack, undated). cw6_tiran_june4
+- The 4 June 1967 decision: "to take military action to free Israel from the suffocating aggression grip" (IDF archives) vs authorizes the PM and Defence Minister "to take steps necessary for the protection of Israel" (MFA) vs "directed the IDF to break the Arab choke ring" (Lozowick, from the transcripts). cw6_tiran_june4
+- The 4 June 1967 vote: "by a majority of 18" (IDF archives) vs no tally and no formal dissent, Barzilai and Bentov wanting a final message to the powers first (Lozowick). cw6_tiran_june4 (iaa_s04)
+- Amit–McNamara, 1 June 1967: McNamara would convey Amit's views to the President (US memorandum for the record) vs "the president knows that you are here" (Amit's recollection, 1992). cw6_tiran_june4
+- Rafi's vote, 1965: 95,328 votes, 7.9% (IDI party profile) vs 42,654 votes beside the same 7.9% and 10 seats (IDI election table). cw6_israel_home
+- Egyptian Jewish businesses after Suez: about 450 confiscated (Beinin via Stroum Center) vs at least 500 sequestered, Nov 1956–Mar 1957 (Julius, Fathom). cw6_jews_arab_world
+- Departure of Egypt's Jews after Suez: "systematic expulsion" (Beinin; Julius) vs "most of Egypt's Jews were not expelled" (Bizawe, Haaretz). cw6_jews_arab_world
+- End of military government: abolished 1 December 1966 (JTA, ECF, Akevot file) vs full legal abolition in late 1968 (IPS encyclopedia). mg_s01

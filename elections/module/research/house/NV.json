@@ -1,0 +1,224 @@
+{
+ "state": "NV",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_nv": {
+   "t": "2026 United States House of Representatives elections in Nevada — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Nevada"
+  },
+  "p1_nv": {
+   "t": "Politics1 — NV 2026 candidates",
+   "u": "https://politics1.com/nv.htm"
+  },
+  "clark_nv": {
+   "t": "Clark County Election Department — Offices up for election, 2026 General",
+   "u": "https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3A1db09a57-4c1b-47e1-94d9-e7782c442571/original/as/officesup-26g.pdf"
+  },
+  "ap_nv2": {
+   "t": "Trump-backed David Flippo wins Republican primary in Nevada's 2nd Congressional District — AP via KTAR (2026-06-10)",
+   "u": "https://ktar.com/national-news/trump-backed-david-flippo-wins-republican-primary-in-nevadas-2nd-congressional-district/5878518/"
+  }
+ },
+ "races": [
+  {
+   "race": "NV-01",
+   "incumbent": {
+    "name": "Dina Titus",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Dina Titus",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nv-01-dina-titus",
+     "fec": [
+      "H8NV03036"
+     ]
+    },
+    {
+     "name": "Carrie Buck",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nv-01-carrie-buck",
+     "fec": [
+      "H6NV01331"
+     ]
+    },
+    {
+     "name": "Afzal \"Bobby\" Khan",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nv-01-afzal-khan",
+     "fec": [
+      "H6NV01315"
+     ]
+    },
+    {
+     "name": "Steven \"Chap\" St John",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nv-01-steve-stjohn",
+     "fec": [
+      "H4NV03134"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "June 9 primaries (Titus 75.9%, Buck 77.7%). Khan and St John are No Party (Clark County list, Politics1).",
+   "c": [
+    "wiki_nv",
+    "p1_nv",
+    "clark_nv"
+   ]
+  },
+  {
+   "race": "NV-02",
+   "incumbent": {
+    "name": "Mark Amodei",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "David Flippo",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nv-02-david-flippo",
+     "fec": [
+      "H4NV04108"
+     ]
+    },
+    {
+     "name": "Teresa Benitez-Thompson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nv-02-teresa-benitez-thompson",
+     "fec": [
+      "H6NV02362"
+     ]
+    },
+    {
+     "name": "Lynn Chapman",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nv-02-lynn-chapman",
+     "fec": [
+      "H4NV02219"
+     ]
+    },
+    {
+     "name": "Hillary Schieve",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Flippo won R primary 46.9%-34.5% over Settelmeyer; Benitez-Thompson won D 45.6%. Chapman is Independent American Party. Source conflict: Wikipedia lists Reno mayor Hillary Schieve (independent) on the general ballot; Politics1 and the AP primary report do not mention her, and she has no FEC row; not confirmed against SOS list.",
+   "c": [
+    "wiki_nv",
+    "p1_nv",
+    "ap_nv2"
+   ]
+  },
+  {
+   "race": "NV-03",
+   "incumbent": {
+    "name": "Susie Lee",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Susie Lee",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nv-03-susie-lee",
+     "fec": [
+      "H6NV04020"
+     ]
+    },
+    {
+     "name": "Marty O'Donnell",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nv-03-marty-o-donnell",
+     "fec": [
+      "H4NV03225",
+      "H6NV03204"
+     ]
+    },
+    {
+     "name": "Jon Kamerath",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nv-03-jon-kamerath",
+     "fec": [
+      "H4NV03241"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "O'Donnell won R primary with 42.3%. Kamerath is Independent American Party (Clark County list, Politics1).",
+   "c": [
+    "wiki_nv",
+    "p1_nv",
+    "clark_nv"
+   ]
+  },
+  {
+   "race": "NV-04",
+   "incumbent": {
+    "name": "Steven Horsford",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Steven Horsford",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nv-04-steven-horsford",
+     "fec": [
+      "H2NV04011"
+     ]
+    },
+    {
+     "name": "Cody K. Whipple",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nv-04-cody-whipple",
+     "fec": [
+      "H6NV04111"
+     ]
+    },
+    {
+     "name": "Russell Best",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nv-04-russell-best",
+     "fec": [
+      "H0NV02167"
+     ]
+    },
+    {
+     "name": "William Johnson",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Whipple won R primary 61.8%. Best is Independent American Party; Johnson is No Party (Clark County list, Politics1); no FEC row for Johnson.",
+   "c": [
+    "wiki_nv",
+    "p1_nv",
+    "clark_nv"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "dt1_claim": {
+  "topic": "What Thiel, Yarvin and Land said about democracy; the Framers' republic; the franchise extended in steps",
+  "claims": [
+   {
+    "text": "Federalist 10 (1787): pure democracies 'have ever been spectacles of turbulence and contention'; a republic is designed 'to refine and enlarge the public views, by passing them through the medium of a chosen body of citizens'",
+    "strength": "primary",
+    "sources": [
+     "dt1_fed10"
+    ]
+   },
+   {
+    "text": "National Archives: 15th Amendment (1870) 'extended voting rights to men of all races'; 17th Amendment (1913) direct election of senators; 19th (1920) 'prohibited the states from denying the vote on the basis of sex'; 24th (1964) prohibited the poll tax; Voting Rights Act of 1965 'secured voting rights for adult citizens of all races and genders'",
+    "strength": "primary",
+    "sources": [
+     "dt1_archives_voting"
+    ]
+   }
+  ],
+  "sources": {
+   "dt1_fed10": {
+    "url": "https://history.hanover.edu/courses/excerpts/111federalist.html",
+    "label": "James Madison ('Publius'), The Federalist No. 10, November 1787 (Hanover College excerpt)"
+   },
+   "dt1_archives_voting": {
+    "url": "https://www.archives.gov/news/topics/voting-rights",
+    "label": "U.S. National Archives, 'Voting Rights' (topic page)"
+   }
+  }
+ },
+ "dt1_symptoms": {
+  "topic": "Democracy indices, trust and opinion on money: where the critics are right about the symptoms",
+  "claims": [
+   {
+    "text": "Pew (15 Apr 2026): EIU Democracy Index US 7.65 in 2025 (7.85 in 2024), 'flawed democracy', lowest since the index began in 2006, below 8 since 2016; V-Dem Liberal Democracy Index 0.57 (0.75 in 2024), downgraded from liberal to electoral democracy, lowest since 1965, lowest in the G7; Freedom House 81 (84), below 90 since 2016; Polity +5 in 2020 against +10 in 2015",
+    "strength": "reported",
+    "sources": [
+     "dt1_pew_indices2026"
+    ]
+   },
+   {
+    "text": "Pew survey 23-29 Mar 2026 (n=3,507): 69% dissatisfied with how democracy is working (Democrats 86%, Republicans 51%); 68% say US democracy 'used to be a good example' but not recently, 24% a good example, 7% never; Republicans saying good example rose from 17% (2024) to 38%, Democrats fell from 22% to 12%",
+    "strength": "primary",
+    "sources": [
+     "dt1_pew_indices2026"
+    ]
+   },
+   {
+    "text": "EIU 2016 Democracy Index: US fell from 8.05 to 7.98, below the 8.00 threshold, downgraded from 'full democracy' to 'flawed democracy'; cause 'further erosion of trust in government and elected officials'; 'Even if there had been no presidential election in 2016, its score would have slipped below 8.00'",
+    "strength": "reported",
+    "sources": [
+     "dt1_eiu2016"
+    ]
+   },
+   {
+    "text": "Pew (10-16 Jul 2023, n=8,480): 72% say there should be limits on campaign spending by individuals and organizations, 11% oppose, 16% unsure; 80% say donors have too much influence on members of Congress; 73% say lobbyists and special interests have too much influence; 70% say constituents have too little influence; about 52% of Republicans and 57-76% of Democrats say effective laws are possible",
+    "strength": "primary",
+    "sources": [
+     "dt1_pew_money2023"
+    ]
+   }
+  ],
+  "sources": {
+   "dt1_pew_indices2026": {
+    "url": "https://www.pewresearch.org/short-reads/2026/04/15/multiple-indicators-show-a-decline-in-the-health-of-americas-democracy-in-2025/",
+    "label": "Jonathan Schulman and Richard Wike, Pew Research Center, 'Multiple indicators show a decline in the health of America's democracy in 2025', 15 April 2026"
+   },
+   "dt1_eiu2016": {
+    "url": "https://www.ajc.com/news/national/not-trump-fault-now-considered-flawed-democracy-report-says/bp4m8ZJVNitXN2cnm8iIMO/",
+    "label": "Atlanta Journal-Constitution, 'Not Trump's fault: US now considered flawed democracy, report says' (EIU Democracy Index 2016), January 2017"
+   },
+   "dt1_pew_money2023": {
+    "url": "https://www.pewresearch.org/short-reads/2023/10/23/7-facts-about-americans-views-of-money-in-politics/",
+    "label": "Pew Research Center, '7 facts about Americans' views of money in politics', 23 October 2023"
+   }
+  }
+ }
+}

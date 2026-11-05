@@ -1,0 +1,765 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad9_credit_and_scores",
+   "stage": "ad9",
+   "topic": "Household debt, card rates, the end of usury caps, credit scores",
+   "claims": [
+    {
+     "text": "Credit card interest rate, all accounts (Fed G.19, commercial banks, NSA): Nov 1995 15.81%, Nov 2000 15.99%, Nov 2003 12.35%, Nov 2008 12.03%, Nov 2013 11.85%, Nov 2019 14.87%, Nov 2021 14.51%, Nov 2022 19.07%, Nov 2023 21.47%, Nov 2024 21.47%, Nov 2025 20.97%, Aug 2026 21.19%.",
+     "strength": "primary",
+     "sources": [
+      "ad9_fred_ccall"
+     ]
+    },
+    {
+     "text": "Credit card interest rate, accounts assessed interest (G.19): Nov 2013 12.89%, Nov 2019 16.88%, Nov 2023 22.75%, Nov 2024 22.80%, Nov 2025 22.30%, Aug 2026 22.36%.",
+     "strength": "primary",
+     "sources": [
+      "ad9_fred_ccint"
+     ]
+    },
+    {
+     "text": "Household debt service ratio (TDSP): peak 15.85% Q4 2007; low 9.05% Q1 2021; 11.11% Q2 2026 (series in current vintage begins 2005).",
+     "strength": "primary",
+     "sources": [
+      "ad9_fred_tdsp"
+     ]
+    },
+    {
+     "text": "NY Fed Q4 2025: total household debt $18.776tn (+$740bn y/y); credit cards $1.277tn (+$66bn y/y); card flow into 90+ delinquency 7.13%; 4.8% of debt delinquent. Implied Q4 2024: total $18.04tn, cards $1.211tn.",
+     "strength": "primary",
+     "sources": [
+      "ad9_nyfed_q4_2025"
+     ]
+    },
+    {
+     "text": "NY Fed Q4 2022: total $16.90tn; cards $986bn (series high, above pre-pandemic high of $927bn); implied Q4 2021 total $15.58tn and cards $856bn.",
+     "strength": "primary",
+     "sources": [
+      "ad9_nyfed_q4_2022"
+     ]
+    },
+    {
+     "text": "NY Fed Q4 2019: total $14.15tn, cards $0.93tn; previous peak $12.68tn in Q3 2008.",
+     "strength": "primary",
+     "sources": [
+      "ad9_nyfed_q4_2019"
+     ]
+    },
+    {
+     "text": "NY Fed Q4 2016: total $12.58tn, cards $779bn. Q3 2013: total $11.28tn, cards $672bn. Q4 2011: total $11.53tn (as first published).",
+     "strength": "primary",
+     "sources": [
+      "ad9_nyfed_q4_2016",
+      "ad9_nyfed_q3_2013",
+      "ad9_nyfed_q4_2011"
+     ]
+    },
+    {
+     "text": "Q4 2023 total household debt about $17.5tn and card balances about $1.13tn.",
+     "strength": "reported",
+     "sources": [
+      "ad9_aba_q4_2023"
+     ]
+    },
+    {
+     "text": "Marquette (18 Dec 1978), unanimous, Brennan J.: a national bank may charge out-of-state cardholders the rate allowed in its home state (Nebraska 18% on first $999.99 vs Minnesota 12% cap); protecting state usury laws is for Congress.",
+     "strength": "primary",
+     "sources": [
+      "ad9_marquette"
+     ]
+    },
+    {
+     "text": "Smiley v. Citibank (3 Jun 1996), Scalia J.: deferred to OCC regulation 12 CFR 7.4001(a) (adopted 9 Feb 1996) treating late fees as 'interest' exportable under section 85; the regulation lists late fees, NSF fees, overlimit, annual, cash advance and membership fees.",
+     "strength": "primary",
+     "sources": [
+      "ad9_smiley"
+     ]
+    },
+    {
+     "text": "Janklow: South Dakota law passed in one day with an emergency clause; Citibank helped draft it; Citibank came in 1981; promised 400 jobs, later about 3,000 employees; he said he helped foster consumer-credit effects.",
+     "strength": "reported",
+     "sources": [
+      "ad9_janklow"
+     ]
+    },
+    {
+     "text": "Colorado opted out of state-bank rate exportation (DIDMCA s.525) in 2023; district court preliminary injunction; 2-1 Tenth Circuit panel upheld opt-out 10 Nov 2025; en banc rehearing granted 2 Apr 2026, panel decision vacated (National Ass'n of Industrial Bankers v. Weiser).",
+     "strength": "reported",
+     "sources": [
+      "ad9_cfm_colorado"
+     ]
+    },
+    {
+     "text": "CARD Act (effective 22 Feb 2010) statements must show payoff time and total cost at minimum payments and the monthly payment to pay off in 36 months.",
+     "strength": "reported",
+     "sources": [
+      "ad9_crl_card"
+     ]
+    },
+    {
+     "text": "CFPB (22 Feb 2024): average card APR rose from 12.9% (2013) to 22.8% (2023); APR margin over prime at all-time high (about 14.3 points in 2023); CFPB attributed it to issuers raising margins.",
+     "strength": "reported",
+     "sources": [
+      "ad9_orrick_margins"
+     ]
+    },
+    {
+     "text": "Consumer Bankers Association rebuttal (29 Feb 2024): CFPB large-vs-small comparison skewed by credit unions' 18% cap; gap 2.2-5 points; large issuers serve more subprime customers, offer more rewards.",
+     "strength": "reported",
+     "sources": [
+      "ad9_cba_math"
+     ]
+    },
+    {
+     "text": "FICO created its general-purpose credit score in 1989; all three bureaus used FICO scores by 1991.",
+     "strength": "reported",
+     "sources": [
+      "ad9_kgw_fico"
+     ]
+    },
+    {
+     "text": "FICO score weights: payment history 35%, amounts owed 30%, length of history 15%, new credit 10%, credit mix 10%; does not consider race, religion, national origin, sex, marital status, age, income, employment.",
+     "strength": "primary",
+     "sources": [
+      "ad9_myfico"
+     ]
+    },
+    {
+     "text": "FTC Section 319 study (Dec 2012): 1,001 consumers; 26% found at least one potentially material error; 13% had an error that changed their score; 5% had errors that lowered their score enough to likely raise the cost of credit.",
+     "strength": "primary",
+     "sources": [
+      "ad9_ftc_2013"
+     ]
+    },
+    {
+     "text": "CFPB (23 Jun 2025): corrected credit-invisible share for 2010 from 11.0% (25.9m) to 5.8% (13.5m); 2.7% (about 7.0m adults) in 2020; unscored records 9.8% of adults in 2020.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_invis2025"
+     ]
+    },
+    {
+     "text": "Fed 2007 report: scoring cut mortgage decision times from weeks to minutes and costs up to 50%; consistency may reduce discrimination; but very little evidence that expansion disproportionately benefited historically underserved groups (tentative).",
+     "strength": "primary",
+     "sources": [
+      "ad9_fed_scoring2007"
+     ]
+    },
+    {
+     "text": "FHFA 22 Apr 2026 announced limited initial VantageScore 4.0 use at the GSEs; Fannie Mae LL-2026-06 (9 Sep 2026) opened VantageScore 4.0 to all approved lenders, effective immediately, Classic FICO still allowed; tri-merge retained.",
+     "strength": "primary",
+     "sources": [
+      "ad9_bhfs_fhfa",
+      "ad9_fnma_ll2026"
+     ]
+    },
+    {
+     "text": "CFPB medical-debt credit-report rule vacated by Judge Sean Jordan (E.D. Tex.) in July 2025; it would have removed about $49bn from 15m reports; bureaus' voluntary 2023 changes (paid medical debt removed, under $500 not reported) remain.",
+     "strength": "reported",
+     "sources": [
+      "ad9_checkbook_med"
+     ]
+    },
+    {
+     "text": "FRED TERMCBCCALLNS (audit re-check), November values: 1998 15.67%, 2005 12.58%, 2010 13.44%, 2015 12.22%, 2018 14.73%; Nov 2023 and Nov 2024 both 21.47%.",
+     "strength": "primary",
+     "sources": [
+      "ad9_fred_ccall"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad9_fred_ccall",
+     "url": "https://fred.stlouisfed.org/data/TERMCBCCALLNS",
+     "label": "Federal Reserve Board G.19 via FRED, Commercial Bank Interest Rate on Credit Card Plans, All Accounts (TERMCBCCALLNS), accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad9_fred_ccint",
+     "url": "https://fred.stlouisfed.org/data/TERMCBCCINTNS",
+     "label": "Federal Reserve Board G.19 via FRED, Commercial Bank Interest Rate on Credit Card Plans, Accounts Assessed Interest (TERMCBCCINTNS), accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad9_fred_tdsp",
+     "url": "https://fred.stlouisfed.org/data/TDSP",
+     "label": "Federal Reserve Board via FRED, Household Debt Service Payments as a Percent of Disposable Personal Income (TDSP), table data, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad9_nyfed_q4_2025",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20260210",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q4 2025, press release, 10 Feb 2026"
+    },
+    {
+     "key": "ad9_nyfed_q4_2022",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2023/20230216",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q4 2022, press release, 16 Feb 2023"
+    },
+    {
+     "key": "ad9_nyfed_q4_2019",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2020/20200211",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q4 2019, press release, 11 Feb 2020"
+    },
+    {
+     "key": "ad9_nyfed_q4_2016",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2017/rp170216",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q4 2016, press release, 16 Feb 2017"
+    },
+    {
+     "key": "ad9_nyfed_q3_2013",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2013/rp131114",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q3 2013, press release, 14 Nov 2013"
+    },
+    {
+     "key": "ad9_nyfed_q4_2011",
+     "url": "https://www.newyorkfed.org/newsevents/news/research/2012/an120227",
+     "label": "Federal Reserve Bank of New York, Household Debt and Credit Report Q4 2011, press release, 27 Feb 2012"
+    },
+    {
+     "key": "ad9_aba_q4_2023",
+     "url": "http://bankingjournal.aba.com/2024/02/new-york-fed-household-debt-hit-17-5-trillion-in-q4-2023/",
+     "label": "ABA Banking Journal, 'New York Fed: Household debt hit $17.5 trillion in Q4 2023', Feb 2024"
+    },
+    {
+     "key": "ad9_marquette",
+     "url": "https://supreme.justia.com/cases/federal/us/439/299/case.html",
+     "label": "Marquette Nat. Bank of Minneapolis v. First of Omaha Service Corp., 439 U.S. 299 (18 Dec 1978)"
+    },
+    {
+     "key": "ad9_smiley",
+     "url": "https://www.law.cornell.edu/supremecourt/text/517/735",
+     "label": "Smiley v. Citibank (South Dakota), N.A., 517 U.S. 735 (3 Jun 1996)"
+    },
+    {
+     "key": "ad9_janklow",
+     "url": "https://www.pbs.org/wgbh/pages/frontline/shows/credit/interviews/janklow.html",
+     "label": "PBS Frontline, 'The Secret History of the Credit Card', interview with former South Dakota governor Bill Janklow, 24 Aug 2004"
+    },
+    {
+     "key": "ad9_cfm_colorado",
+     "url": "https://www.consumerfinancemonitor.com/2026/04/02/tenth-circuit-grants-rehearing-en-banc-in-colorado-opt-out-litigation/",
+     "label": "Ballard Spahr Consumer Finance Monitor, 'Tenth Circuit grants rehearing en banc in Colorado opt-out litigation', 2 Apr 2026"
+    },
+    {
+     "key": "ad9_crl_card",
+     "url": "https://www.responsiblelending.org/media/new-card-act-disclosures",
+     "label": "Center for Responsible Lending, 'New CARD Act disclosures', Feb 2010"
+    },
+    {
+     "key": "ad9_orrick_margins",
+     "url": "https://infobytes.orrick.com/2024-02-23/cfpb-reports-all-time-high-interest-rate-margins-credit-cards/",
+     "label": "Orrick InfoBytes, 'CFPB reports all-time high interest rate margins on credit cards', 23 Feb 2024 (reporting CFPB blog of 22 Feb 2024)"
+    },
+    {
+     "key": "ad9_cba_math",
+     "url": "https://www.consumerfinancemonitor.com/2024/03/04/cba-checks-the-math-on-recent-cfpb-credit-card-report-finding-large-bank-issuers-charge-higher-interest-rates-than-smaller-issuers/",
+     "label": "Consumer Finance Monitor, 'CBA checks the math on recent CFPB credit card report', 4 Mar 2024 (Consumer Bankers Association blog of 29 Feb 2024)"
+    },
+    {
+     "key": "ad9_kgw_fico",
+     "url": "https://www.kgw.com/article/news/verify/money-verify/fico-first-universal-general-purpose-credit-scores-invented-1989/536-56164106-e439-461e-b0fc-728e24d1135a",
+     "label": "KGW VERIFY, 'FICO introduced first universal general-purpose credit scores in 1989'"
+    },
+    {
+     "key": "ad9_myfico",
+     "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+     "label": "myFICO (FICO), 'What's in my FICO Scores?', accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad9_ftc_2013",
+     "url": "https://www.ftc.gov/sites/default/files/documents/public_statements/prepared-statement-federal-trade-commission-discussing-most-recent-commission-report-congress-under/130507fcra.pdf",
+     "label": "FTC, Prepared statement on the Section 319 report on credit report accuracy (Dec 2012 report), 7 May 2013"
+    },
+    {
+     "key": "ad9_cfpb_invis2025",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_update-credit-invisibles-estimate_2025-06.pdf",
+     "label": "CFPB, 'Technical Correction and Update to the CFPB's Credit Invisibles Estimate', 23 Jun 2025"
+    },
+    {
+     "key": "ad9_fed_scoring2007",
+     "url": "https://www.federalreserve.gov/boarddocs/RptCongress/creditscore/effects.htm",
+     "label": "Board of Governors of the Federal Reserve System, Report to Congress on Credit Scoring and Its Effects on the Availability and Affordability of Credit, Aug 2007"
+    },
+    {
+     "key": "ad9_bhfs_fhfa",
+     "url": "https://www.bhfs.com/insight/fhfa-and-hud-greenlight-credit-scoring-changes/",
+     "label": "Brownstein Hyatt Farber Schreck, 'FHFA and HUD greenlight credit scoring changes', 30 Apr 2026"
+    },
+    {
+     "key": "ad9_fnma_ll2026",
+     "url": "https://singlefamily.fanniemae.com/media/document/pdf/lender-letter-ll-2026-06-vantagescore-40-broad-lender-availability",
+     "label": "Fannie Mae, Lender Letter LL-2026-06, 'VantageScore 4.0 broad lender availability', 9 Sep 2026"
+    },
+    {
+     "key": "ad9_checkbook_med",
+     "url": "https://www.checkbook.org/national/consumers-notebook/articles/Federal-Judge-Kills-CFPB-Rule-that-Banned-Medical-Debt-in-Credit-Reports-7678",
+     "label": "Consumers' Checkbook, 'Federal judge kills CFPB rule that banned medical debt in credit reports', Jul 2025"
+    }
+   ]
+  },
+  {
+   "id": "ad9_fees_and_unbanked",
+   "stage": "ad9",
+   "topic": "Overdraft and late fees, the unbanked, check cashing and prepaid",
+   "claims": [
+    {
+     "text": "Public Law 119-10, approved 9 May 2025, disapproved the CFPB overdraft rule published 30 Dec 2024 (89 FR 106768).",
+     "strength": "primary",
+     "sources": [
+      "ad9_plaw_119_10"
+     ]
+    },
+    {
+     "text": "S.J.Res.18 passed Senate 52-48 (27 Mar 2025) and House 217-211 (9 Apr 2025); rule covered institutions over $10bn; options: $5 fee, breakeven fee, or TILA credit terms.",
+     "strength": "reported",
+     "sources": [
+      "ad9_ballotpedia_cra"
+     ]
+    },
+    {
+     "text": "CFPB final overdraft rule (Dec 2024): banks and credit unions over $10bn; $5 or breakeven; up to $5bn a year savings, $225 per overdraft-paying household; effective 1 Oct 2025; the Fed exempted overdraft from TILA in 1969.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_od_final"
+     ]
+    },
+    {
+     "text": "ABA (Rob Nichols, 5 Mar 2025): rule 'flawed and unlawful from the start'; most Americans value overdraft coverage; price limits would make the service harder to offer.",
+     "strength": "reported",
+     "sources": [
+      "ad9_aba_od"
+     ]
+    },
+    {
+     "text": "CFPB March 2024 late-fee rule set an $8 safe harbor (previously up to $30 first/$41 later); NCLC estimated $10bn a year; CFPB joined industry in a consent motion to vacate (filed 14 Apr 2025).",
+     "strength": "reported",
+     "sources": [
+      "ad9_nclc_late"
+     ]
+    },
+    {
+     "text": "Judge Mark Pittman (N.D. Tex.) vacated the late-fee rule 15 Apr 2025; the rule cut the safe harbor from $32 to $8; CFPB agreed it violated the CARD Act's 'reasonable and proportional' standard.",
+     "strength": "reported",
+     "sources": [
+      "ad9_hk_late"
+     ]
+    },
+    {
+     "text": "FDIC 2023: 4.2% of households (5.6m) unbanked (8.2% in 2011); 14.2% (19.0m) underbanked; main reason: not enough money for minimum balance (23.3%), distrust 15.7%; fee/minimum reasons 33.4%; Black 10.6%, Hispanic 9.5%, AIAN 12.2%; working-age disabled 11.2% vs 3.7%; 21.6% of unbanked used prepaid cards; 66.2% cash only; 78.4% of unbanked had no mainstream credit; two-thirds of decline since 2011 linked to socioeconomic change.",
+     "strength": "primary",
+     "sources": [
+      "ad9_fdic2023"
+     ]
+    },
+    {
+     "text": "New York caps check-cashing fees at 1.5% for government benefit checks and the greater of $1 or 2.2% for other checks (effective 18 Jan 2023).",
+     "strength": "primary",
+     "sources": [
+      "ad9_nydfs_cc"
+     ]
+    },
+    {
+     "text": "CFPB prepaid rule took effect 1 Apr 2019: short-form fee chart on package, error and fraud protection after registration, limits on overdraft features.",
+     "strength": "reported",
+     "sources": [
+      "ad9_nclc_prepaid"
+     ]
+    },
+    {
+     "text": "SHED 2025: 63% of adults would cover a $400 expense with cash or equivalent (68% in 2021); 94% of adults had a bank account (77% under $25,000 income); 16% used BNPL in 2025; 11% of BNPL users had a BNPL payment trigger an overdraft or NSF fee.",
+     "strength": "primary",
+     "sources": [
+      "ad9_shed2025"
+     ]
+    },
+    {
+     "text": "CFPB funding: on 25 Sep 2026 the D. Or. (State of New York v. Vought) held the acting director unlawfully requested $0 from the Fed; related cases on appeal; House committee advanced a bill to move CFPB to appropriations.",
+     "strength": "reported",
+     "sources": [
+      "ad9_goodwin_cfpb"
+     ]
+    },
+    {
+     "text": "NCLC (3 Jun 2026): top-20 bank overdraft revenue about $4bn in 2025, up 6.2% from 2023; about a quarter of people live in households that pay overdraft fees each year; BMO raised its overdraft fee from $15 to $20 in 2026 and cut its no-fee cushion from $50 to $20.",
+     "strength": "reported",
+     "sources": [
+      "us22_nclc_od26"
+     ]
+    },
+    {
+     "text": "CFPB (Apr 2024), banks over $1bn: overdraft/NSF revenue $11.96bn (2019), $7.61bn (2022), $5.83bn (2023); about $6.1bn annual reduction vs 2019, about $185 per overdrafting household; 'the vast majority of NSF fees have been eliminated'; earlier CFPB research: nearly 80% of fees paid by under 9% of accountholders (more than 10 overdrafts a year).",
+     "strength": "primary",
+     "sources": [
+      "us22_cfpb_od23"
+     ]
+    },
+    {
+     "text": "FDIC 2023 survey (audit re-check): responses from almost 30,000 households; White unbanked rate 1.9% (Figures ES.2/ES.6); Black-White and Hispanic-White gaps 'were present at every income level'; 10.0% of unbanked households had a traditional credit card vs 79.3% of banked; higher unbanked rates among lower-income, less-educated, Black, Hispanic, AIAN, working-age disabled, highly variable income and single-parent households; about two-thirds of the 2011-2023 decline associated with changes in household circumstances, mainly income and education.",
+     "strength": "primary",
+     "sources": [
+      "ad9_fdic2023"
+     ]
+    },
+    {
+     "text": "Goodwin (Oct 2026) on State of New York v. Vought, No. 6:25-cv-02384-AA (D. Or., 25 Sep 2026): partial summary judgment for 22 states and DC; acting director unlawfully declined to request FY2026 funding from the Fed (said '$0'); court vacated the decisions but did not enjoin FY2026 funding; NTEU v. Vought on appeal to D.C. Cir., Rise Economy v. Vought to 9th Cir.; House Financial Services advanced the CFPA Accountability and Reform Act of 2026 (appropriations).",
+     "strength": "reported",
+     "sources": [
+      "ad9_goodwin_cfpb"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad9_plaw_119_10",
+     "url": "https://www.congress.gov/119/plaws/publ10/PLAW-119publ10.htm",
+     "label": "Public Law 119-10 (S.J. Res. 18), disapproving CFPB rule 'Overdraft Lending: Very Large Financial Institutions', approved 9 May 2025"
+    },
+    {
+     "key": "ad9_ballotpedia_cra",
+     "url": "https://news.ballotpedia.org/2025/06/06/president-trump-congress-repeal-two-consumer-financial-protection-bureau-rules/",
+     "label": "Ballotpedia News, 'President Trump, Congress repeal two Consumer Financial Protection Bureau rules', 6 Jun 2025"
+    },
+    {
+     "key": "ad9_cfpb_od_final",
+     "url": "https://www.cuinsight.com/press-release/cfpb-closes-overdraft-loophole-to-save-americans-billions-in-fees/",
+     "label": "CFPB press release 'CFPB closes overdraft loophole to save Americans billions in fees', 12-13 Dec 2024 (reprinted by CUInsight)"
+    },
+    {
+     "key": "ad9_aba_od",
+     "url": "http://bankingjournal.aba.com/2025/03/house-committee-advances-resolution-to-overturn-cfpb-overdraft-rule/",
+     "label": "ABA Banking Journal, 'House committee advances resolution to overturn CFPB overdraft rule', 5 Mar 2025"
+    },
+    {
+     "key": "ad9_nclc_late",
+     "url": "https://nclc.org/cfpb-and-chamber-of-commerce-move-to-remove-limits-on-credit-card-late-fees",
+     "label": "National Consumer Law Center, 'CFPB and Chamber of Commerce move to remove limits on credit card late fees', 15 Apr 2025"
+    },
+    {
+     "key": "ad9_hk_late",
+     "url": "https://www.hklaw.com/en/insights/publications/2025/04/cfpb-credit-card-late-fees-rule-vacated-by-texas-district-court",
+     "label": "Holland & Knight, 'CFPB credit card late fees rule vacated by Texas district court', 22 Apr 2025"
+    },
+    {
+     "key": "ad9_fdic2023",
+     "url": "https://fdic.gov/household-survey/2023-fdic-national-survey-unbanked-and-underbanked-households-executive-summary",
+     "label": "FDIC, 2023 National Survey of Unbanked and Underbanked Households, executive summary, Nov 2024"
+    },
+    {
+     "key": "ad9_nydfs_cc",
+     "url": "https://www.dfs.ny.gov/industry_guidance/industry_letters/il20230130_max_check_casher_fee",
+     "label": "New York DFS, Industry letter on maximum check cashing fee, 30 Jan 2023"
+    },
+    {
+     "key": "ad9_nclc_prepaid",
+     "url": "https://www.nclc.org/no-fooling-new-prepaid-payroll-and-government-benefit-card-protections-take-effect-april-1/",
+     "label": "National Consumer Law Center, 'New prepaid, payroll and government benefit card protections take effect April 1', 28 Mar 2019"
+    },
+    {
+     "key": "ad9_shed2025",
+     "url": "https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf",
+     "label": "Board of Governors of the Federal Reserve System, Economic Well-Being of U.S. Households in 2025, May 2026"
+    },
+    {
+     "key": "ad9_goodwin_cfpb",
+     "url": "https://www.goodwinlaw.com/en/insights/blogs/2026/10/court-vacates-cfpb-directors-bid-to-zero-out-funds",
+     "label": "Goodwin Procter, 'Court vacates CFPB director's bid to zero out funds', Oct 2026"
+    },
+    {
+     "key": "us22_nclc_od26",
+     "url": "https://www.nclc.org/resources/overdraft-fees-rising-in-absence-of-cfpb-rule/",
+     "label": "National Consumer Law Center, Overdraft Fees Rising in Absence of CFPB Rule, issue brief, 3 Jun 2026"
+    },
+    {
+     "key": "us22_cfpb_od23",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_overdraft-nsf_data-spotlight_2024-04.pdf",
+     "label": "CFPB, Data Spotlight: Overdraft/NSF revenue in 2023 down more than 50% versus pre-pandemic levels, 24 Apr 2024"
+    }
+   ]
+  },
+  {
+   "id": "ad9_new_lenders",
+   "stage": "ad9",
+   "topic": "Payday, BNPL, earned-wage access, app lenders, medical credit cards",
+   "claims": [
+    {
+     "text": "CFPB: $15 per $100 for a two-week payday loan equals an APR of almost 400% ($15/14 days x 365 = about 391%).",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_apr"
+     ]
+    },
+    {
+     "text": "CFPB 2014: more than 80% of payday loans rolled over or renewed within 14 days; about half of loans in sequences of 10 or more; 22% of new loans renewed six or more times; one in five monthly-paid borrowers in debt all year.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_rollover"
+     ]
+    },
+    {
+     "text": "Pew 2012: 12m borrowers a year spend over $7bn; average eight loans of $375 a year, about $520 in interest, in debt about five months; 69% of first-time borrowers used for recurring expenses, 16% for emergencies; usage 2.9% in strictest states vs 6.6% in least regulated.",
+     "strength": "primary",
+     "sources": [
+      "ad9_pew2012"
+     ]
+    },
+    {
+     "text": "CFPB 2017 payday rule (Oct 2017); underwriting provisions rescinded 7 Jul 2020 before taking effect; payment provisions retained; 17 states and DC ban or limit rates (CRS 2020).",
+     "strength": "primary",
+     "sources": [
+      "ad9_crs_payday2020"
+     ]
+    },
+    {
+     "text": "Payment provisions (no further withdrawals after two consecutive failed attempts; notices) took effect 30 Mar 2025; CFPB said it would not prioritise enforcement; 2026 regulatory agenda (6 Jul 2026) planned a deregulatory NPRM to reconsider them.",
+     "strength": "reported",
+     "sources": [
+      "ad9_sheppard_payday"
+     ]
+    },
+    {
+     "text": "CRL: Rhode Island (signed 9 Jul 2025, effective 1 Jan 2027) became the 21st state plus DC to cap payday rates at 36%; typical RI payday APR 261%.",
+     "strength": "reported",
+     "sources": [
+      "ad9_crl_ri"
+     ]
+    },
+    {
+     "text": "Military Lending Act (2006) caps the military APR at 36% for covered credit; DoD 2015 rule extended coverage to most consumer credit (compliance 3 Oct 2016; cards 3 Oct 2017).",
+     "strength": "primary",
+     "sources": [
+      "ad9_fdic_mla"
+     ]
+    },
+    {
+     "text": "CFSA (Shaul, 2016): payday loans are demand-driven; often the least expensive option vs bounced checks and late fees; state regulation suffices; CFPB rule would 'effectively end payday lending as it currently exists'.",
+     "strength": "reported",
+     "sources": [
+      "ad9_cfsa_2016"
+     ]
+    },
+    {
+     "text": "Morse (JFE 2011): after natural disasters in California, foreclosures rose about 4.5 per 1,000 homes; access to payday lenders offset 1.0-1.3 of them; fewer larcenies; no effect for insured disasters.",
+     "strength": "primary",
+     "sources": [
+      "ad9_morse2011"
+     ]
+    },
+    {
+     "text": "CFPB withdrew the 2024 BNPL interpretive rule on 12 May 2025.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_bnpl_page"
+     ]
+    },
+    {
+     "text": "CFPB Jan 2025 BNPL report (six lenders): about 277m loans, $34bn GMV in 2022; over 60% of originations in 2021-22 to subprime or deep-subprime borrowers; about 63% had simultaneous loans; BNPL users' card utilisation 60-66% vs 34%; not evidence of causation.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_bnpl2025"
+     ]
+    },
+    {
+     "text": "CFPB advisory opinion (23 Dec 2025): payroll-deduction, non-recourse EWA within accrued wages, with no credit underwriting, is not credit under TILA; expedite fees and tips not finance charges; rescinded the July 2024 interpretive rule; California DFPI regulating EWA.",
+     "strength": "reported",
+     "sources": [
+      "ad9_mofo_ewa"
+     ]
+    },
+    {
+     "text": "California DFPI 2021 data (as summarised by NCLC): average APR 334% (tip-based) and 331% (non-tip) for EWA/fintech advances; about 36 advances per user per year; most $40-$100; about 10-day term; tips collected 73% of the time; 97% repaid.",
+     "strength": "reported",
+     "sources": [
+      "ad9_nclc_ewa"
+     ]
+    },
+    {
+     "text": "FTC v. Brigit (2 Nov 2023): $18m refunds; advertised 'instant' $250 advances few received; $9.99/month subscription hard to cancel; 99-cent 'free' transfer fee.",
+     "strength": "primary",
+     "sources": [
+      "ad9_ftc_brigit"
+     ]
+    },
+    {
+     "text": "FTC sued Dave 5 Nov 2024 (misleading advance amounts, undisclosed fees, tips without consent); DOJ amended complaint 30 Dec 2024 adding CEO.",
+     "strength": "primary",
+     "sources": [
+      "ad9_ftc_dave"
+     ]
+    },
+    {
+     "text": "Dave 10-K (2 Mar 2026): motion to dismiss denied 12 Sep 2025; answer filed 10 Oct 2025; no trial date or settlement disclosed; Baltimore sued 30 Dec 2025 (removed to federal court 29 Jan 2026).",
+     "strength": "primary",
+     "sources": [
+      "ad9_dave_10k"
+     ]
+    },
+    {
+     "text": "Dave called the suit 'government overreach'; eliminated optional tips and express fees for ExtraCash for new members from 4 Dec 2024.",
+     "strength": "reported",
+     "sources": [
+      "ad9_pd_dave"
+     ]
+    },
+    {
+     "text": "CFPB medical credit cards (May 2023): about $1bn deferred interest 2018-2020; typical APR 26.99% vs about 16% general cards; about one in five promotions not paid off in time; interest assessed averaged about 23% of purchase in 2020; $23bn purchase volume 2018-2020.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_medcc"
+     ]
+    },
+    {
+     "text": "CFPB 10 Dec 2013: GE Capital Retail Bank/CareCredit to refund up to $34.1m; enrollment at doctors' and dentists' offices; consumers thought cards interest-free; 26.99% deferred interest.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_carecredit"
+     ]
+    },
+    {
+     "text": "CFPB's May 2024 interpretive rule classified BNPL providers as credit card issuers under TILA/Regulation Z; on 6 May 2025 the CFPB said it would not prioritise enforcement and would consider rescinding it.",
+     "strength": "reported",
+     "sources": [
+      "ad9_orrick_bnpl"
+     ]
+    },
+    {
+     "text": "CFPB Jan 2025 BNPL report (audit re-check): consumers averaged just over 100,000 daily applications in 2019 and well over 1 million loans a day by 2022 (six lenders); scaled 277.3m originated loans and $33.8bn GMV in 2022; deep subprime 45.0% and subprime 16.0% of 2021-22 originations.",
+     "strength": "primary",
+     "sources": [
+      "ad9_cfpb_bnpl2025"
+     ]
+    },
+    {
+     "text": "Pew 2012 (audit re-check): in states with no payday stores, 5 of every 100 would-be borrowers borrow online and 95 do not; 'borrowers are not driven to seek payday loans online or from other sources'; 12m borrowers figure is for 2010; spending 'more than $7 billion' a year.",
+     "strength": "primary",
+     "sources": [
+      "ad9_pew2012"
+     ]
+    },
+    {
+     "text": "Sheppard (audit re-check): CFPB announced on 28 Mar 2025, two days before the 30 Mar 2025 compliance date, that it would not prioritise enforcement of the payday payment provisions; Jul 2026 agenda planned an NPRM; no issued NPRM reported on the page.",
+     "strength": "reported",
+     "sources": [
+      "ad9_sheppard_payday"
+     ]
+    },
+    {
+     "text": "As of Dave's Q2 2026 report (summarised 5 Aug 2026), the FTC/DOJ suit seeking injunctions and monetary relief was ongoing, with no trial date, settlement or ruling reported; contingency accruals about $10m at 30 Jun 2026, not attributed to this case.",
+     "strength": "reported",
+     "sources": [
+      "ad9_audit_dave_q2"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad9_cfpb_apr",
+     "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/",
+     "label": "CFPB, 'What is an APR and why is it higher than the interest rate for my payday loan?', Ask CFPB"
+    },
+    {
+     "key": "ad9_cfpb_rollover",
+     "url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-finds-four-out-of-five-payday-loans-are-rolled-over-or-renewed",
+     "label": "CFPB press release, 'CFPB finds four out of five payday loans are rolled over or renewed', 25 Mar 2014"
+    },
+    {
+     "key": "ad9_pew2012",
+     "url": "https://www.pew.org/research-and-analysis/reports/2012/07/19/who-borrows-where-they-borrow-and-why",
+     "label": "Pew Charitable Trusts, 'Payday Lending in America: Who Borrows, Where They Borrow, and Why', 19 Jul 2012"
+    },
+    {
+     "key": "ad9_crs_payday2020",
+     "url": "https://www.everycrsreport.com/reports/IN11059.html",
+     "label": "Congressional Research Service, 'CFPB Finalizes New Payday Lending Rule, Reversing Prior Regulation', IN11059, 10 Jul 2020"
+    },
+    {
+     "key": "ad9_sheppard_payday",
+     "url": "https://www.sheppard.com/insights/blogs/cfpbs-2026-regulatory-agenda-tees-up-long-awaited-nprm-to-reconsider-payday-lending-rule",
+     "label": "Sheppard Mullin, 'CFPB's 2026 regulatory agenda tees up long-awaited NPRM to reconsider payday lending rule', 16 Jul 2026"
+    },
+    {
+     "key": "ad9_crl_ri",
+     "url": "https://www.responsiblelending.org/media/rhode-island-governor-signs-law-interest-rate-cap-stops-payday-loan-debt-traps",
+     "label": "Center for Responsible Lending, 'RI becomes 21st state, alongside D.C., to prohibit triple-digit interest rate credit', 9 Jul 2025"
+    },
+    {
+     "key": "ad9_fdic_mla",
+     "url": "https://fdic.gov/news/financial-institution-letters/2015/fil15037.html",
+     "label": "FDIC, FIL-37-2015, 'Final rule amending the Military Lending Act regulation', 8 Sep 2015"
+    },
+    {
+     "key": "ad9_cfsa_2016",
+     "url": "https://financialservices.house.gov/uploadedfiles/hhrg-114-ba15-wstate-dshaul-20160211.pdf",
+     "label": "Dennis Shaul (CFSA), testimony to House Financial Services subcommittee, 11 Feb 2016"
+    },
+    {
+     "key": "ad9_morse2011",
+     "url": "https://academicnewsletter.sufe.edu.cn/info/356993",
+     "label": "Adair Morse, 'Payday lenders: Heroes or villains?', Journal of Financial Economics (2011), 28-44, doi 10.1016/j.jfineco.2011.03.022"
+    },
+    {
+     "key": "ad9_cfpb_bnpl_page",
+     "url": "https://www.consumerfinance.gov/compliance/compliance-resources/consumer-cards-resources/buy-now-pay-later-bnpl-products/",
+     "label": "CFPB, Buy Now, Pay Later (BNPL) products compliance page, last modified 1 Jul 2025"
+    },
+    {
+     "key": "ad9_cfpb_bnpl2025",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_BNPL_Report_2025_01.pdf",
+     "label": "CFPB Office of Research, 'Consumer Use of Buy Now, Pay Later and Other Unsecured Debt', Jan 2025"
+    },
+    {
+     "key": "ad9_mofo_ewa",
+     "url": "https://www.mofo.com/resources/insights/260107-cfpb-reestablishes-position-that-certain-earned-wage",
+     "label": "Morrison Foerster, 'CFPB reestablishes position that certain earned wage access programs are not credit', 7 Jan 2026"
+    },
+    {
+     "key": "ad9_nclc_ewa",
+     "url": "https://nclc.org/resources/data-on-earned-wage-advances-and-fintech-payday-loan-tips-show-high-costs-for-low-wage-workers",
+     "label": "National Consumer Law Center, 'Data on earned wage advances and fintech payday loan tips show high costs for low-wage workers' (summarising California DFPI 2021 data), 10 Apr 2023"
+    },
+    {
+     "key": "ad9_ftc_brigit",
+     "url": "https://ftc.gov/news-events/news/press-releases/2023/11/ftc-action-leads-18-million-refunds-brigit-consumers-harmed-deceptive-promises-about-cash-advances",
+     "label": "FTC press release, 'FTC action leads to $18 million in refunds for Brigit consumers', 2 Nov 2023"
+    },
+    {
+     "key": "ad9_ftc_dave",
+     "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/232-3014-dave-inc-ftc-v",
+     "label": "FTC, case page 'Dave, Inc., FTC v.', file 232 3014"
+    },
+    {
+     "key": "ad9_dave_10k",
+     "url": "https://app.edgar.tools/companies/DAVE/disclosures/commitments-contingencies",
+     "label": "Dave Inc., Form 10-K for FY2025 (filed 2 Mar 2026), commitments and contingencies, via edgar.tools"
+    },
+    {
+     "key": "ad9_pd_dave",
+     "url": "https://www.paymentsdive.com/news/fintech-dave-alters-fee-structure-blasts-doj-over-amended-lawsuit-jason-wilk/736858/",
+     "label": "Payments Dive, 'Fintech Dave alters fee structure, blasts DOJ over amended lawsuit', 9 Jan 2025"
+    },
+    {
+     "key": "ad9_cfpb_medcc",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_medical-credit-cards-and-financing-plans_2023-05.pdf",
+     "label": "CFPB, 'Medical Credit Cards and Financing Plans', May 2023"
+    },
+    {
+     "key": "ad9_cfpb_carecredit",
+     "url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-orders-ge-carecredit-to-refund-34-1-million-for-deceptive-health-care-credit-card-enrollment/",
+     "label": "CFPB press release, 'CFPB orders GE CareCredit to refund $34.1 million for deceptive health-care credit card enrollment', 10 Dec 2013"
+    },
+    {
+     "key": "ad9_orrick_bnpl",
+     "url": "https://infobytes.orrick.com/2025-05-09/cfpb-states-it-will-not-enforce-rule-targeting-buy-now-pay-later-loans/",
+     "label": "Orrick InfoBytes, 'CFPB states it will not enforce rule targeting buy now, pay later loans', 9 May 2025"
+    },
+    {
+     "key": "ad9_audit_dave_q2",
+     "url": "https://www.panabee.com/news/dave-earnings-q2-2026-report",
+     "label": "Panabee, 'Dave Earnings: 37% Revenue Growth Amidst Litigation and Refinancing Hurdles', 5 Aug 2026 (summary of Dave Q2 2026 10-Q)"
+    }
+   ]
+  }
+ ]
+}

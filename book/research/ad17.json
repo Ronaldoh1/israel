@@ -1,0 +1,239 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad17_families",
+   "stage": "ad17",
+   "topic": "Families through the machine: BLS CE 2024 quintile budgets, history 2020-2024, CE definitions, SCF 2025 by income percentile, shocks",
+   "claims": [
+    {
+     "text": "BLS CE income before taxes (USD per consumer unit) 2020-2024: lowest fifth 13,219; 13,165; 14,191; 15,596; 16,658. Total average annual expenditures lowest fifth 28,732; 30,869; 32,618; 33,776; 35,046.",
+     "strength": "primary",
+     "sources": [
+      "ad17_fred_q1inc",
+      "ad17_fred_q1exp"
+     ]
+    },
+    {
+     "text": "BLS CE second fifth (21st-40th percentile) income before taxes 2019-2024: 32,768; 34,550; 34,767; 37,441; 40,751; 42,925. Total expenditures 2020-2024: 39,899; 43,918; 47,665; 48,923; 50,054. Age of reference person 55.1 (2021), 55.2, 55.8, 56.0 (2024). 2024 healthcare 4,826 (2023 4,844); personal insurance and pensions 2,712; transportation 8,430.",
+     "strength": "primary",
+     "sources": [
+      "ad17_fred_q2inc",
+      "ad17_fred_q2exp",
+      "ad17_fred_q2age",
+      "ad17_fred_q2health",
+      "ad17_fred_q2inspen",
+      "ad17_fred_q2trans"
+     ]
+    },
+    {
+     "text": "BLS CE third fifth income before taxes 2020-2024: 59,422; 61,214; 65,659; 71,057; 74,474; expenditures 51,554; 55,914; 61,956; 65,487; 66,900. Fourth fifth income 97,221; 100,527; 108,730; 116,717; 121,548; expenditures 71,905; 75,284; 81,961; 87,922; 89,972.",
+     "strength": "primary",
+     "sources": [
+      "ad17_fred_q3inc",
+      "ad17_fred_q3exp",
+      "ad17_fred_q4inc",
+      "ad17_fred_q4exp"
+     ]
+    },
+    {
+     "text": "BLS 2024 release: unable to produce federal and state tax estimates or after-tax income for 2024 (tax model provider did not update); quintiles formed by sorting consumer units by income before taxes, about 27 million units each; lower bounds second $29,932, third $57,452, fourth $94,511, highest $155,925; all units personal insurance and pensions $9,797 incl. deductions for Social Security $6,684 and contributions to retirement plans $1,991; CE income includes wages, self-employment, Social Security and retirement, interest, dividends, rent, unemployment benefits, public assistance and other income.",
+     "strength": "primary",
+     "sources": [
+      "ad17_bls_cesan24"
+     ]
+    },
+    {
+     "text": "BLS CE glossary: expenditures are transaction costs including excise and sales taxes; periodic credit or installment payments on goods already acquired are excluded; owned dwellings include mortgage interest, home equity interest, property taxes and insurance; mortgage principal 'is not included in homeowner costs but is repayment of a loan'; vehicle purchases are net outlay; vehicle finance charges are interest on vehicle loans; income after taxes = income before taxes less federal, state and local income and other personal taxes; earner = member 14+ who worked at least one week in the past 12 months; consumer unit = family, financially independent single person, or persons sharing major expenses.",
+     "strength": "primary",
+     "sources": [
+      "ad17_bls_gloss"
+     ]
+    },
+    {
+     "text": "SCF 2025 (thousands of 2025 dollars, CPI-U-RS; families grouped by percentile of USUAL income): median income <20th pct 24.6, 20-39.9 50.5, 40-59.9 83.1, 60-79.9 129.2, 80-89.9 201.3, 90-100 387.2. Median net worth 2025 (2022): <20 14.4 (15.3); 20-39.9 77.1 (77.7); 40-59.9 188.2 (174.4); 60-79.9 362.5 (336.1); 80-89.9 814.6 (817.5); 90-100 3,669.9 (2,797.5). All families: 77.0% have debt, conditional median debt $88.1k, median payment-to-income ratio for debtors 15.4%, 8.6% with payments above 40% of income, 8.2% 60+ days late; transaction accounts median among holders $8.2k; upper-middle income group homeownership 80% to 78%, top decile 89% to 92% (Box 4).",
+     "strength": "primary",
+     "sources": [
+      "ad17_scf25_inc"
+     ]
+    },
+    {
+     "text": "Book arithmetic from BLS CE (income before taxes minus total expenditures, % of income), 2020-2024: lowest fifth -117.4, -134.5, -129.8, -116.6, -110.4; second -15.5, -26.3, -27.3, -20.1, -16.6; middle 13.2, 8.7, 5.6, 7.8, 10.2; fourth 26.0, 25.1, 24.6, 24.7, 26.0. 2024 after-tax estimate (2023 income-tax ratios 6.26%/10.42% plus 7.65%/15.3% payroll): middle fifth taxes $9,412 (12.6%), spending excl. personal insurance and pensions $60,652, left $4,410 (5.9%), of which ~$1,500 private pensions/life insurance; fourth fifth taxes $21,222 (17.5%), spending $78,038, left $22,288 (18.3%).",
+     "strength": "primary",
+     "sources": [
+      "ad17_fred_q1inc",
+      "ad17_fred_q1exp",
+      "ad17_fred_q2inc",
+      "ad17_fred_q2exp",
+      "ad17_fred_q3inc",
+      "ad17_fred_q3exp",
+      "ad17_fred_q4inc",
+      "ad17_fred_q4exp"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad17_fred_q1inc",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0102M",
+     "label": "FRED (BLS Consumer Expenditure Surveys), CXUINCBEFTXLB0102M, Income before taxes, lowest 20 percent, annual, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q1exp",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0102M",
+     "label": "FRED (BLS CE), CXUTOTALEXPLB0102M, Total average annual expenditures, lowest 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2inc",
+     "url": "https://fred.stlouisfed.org/data/CXUINCBFTAXLB0103M",
+     "label": "FRED (BLS CE), CXUINCBFTAXLB0103M, Consumer unit characteristics: income before taxes, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2exp",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0103M",
+     "label": "FRED (BLS CE), CXUTOTALEXPLB0103M, Total average annual expenditures, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2age",
+     "url": "https://fred.stlouisfed.org/data/CXU980020LB0103M",
+     "label": "FRED (BLS CE), CXU980020LB0103M, Age of reference person, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2health",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0103M",
+     "label": "FRED (BLS CE), CXUHEALTHLB0103M, Expenditures: healthcare, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2inspen",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0103M",
+     "label": "FRED (BLS CE), CXUINSPENSNLB0103M, Expenditures: personal insurance and pensions, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q2trans",
+     "url": "https://fred.stlouisfed.org/series/CXUTRANSLB0103M",
+     "label": "FRED (BLS CE), CXUTRANSLB0103M, Expenditures: transportation, second 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q3inc",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0104M",
+     "label": "FRED (BLS CE), CXUINCBEFTXLB0104M, Income before taxes, third 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q3exp",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0104M",
+     "label": "FRED (BLS CE), CXUTOTALEXPLB0104M, Total average annual expenditures, third 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q4inc",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0105M",
+     "label": "FRED (BLS CE), CXUINCBEFTXLB0105M, Income before taxes, fourth 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_q4exp",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0105M",
+     "label": "FRED (BLS CE), CXUTOTALEXPLB0105M, Total average annual expenditures, fourth 20 percent, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_bls_cesan24",
+     "url": "https://www.bls.gov/news.release/archives/cesan%5F12192025.htm",
+     "label": "US BLS, 'Consumer Expenditures - 2024', news release USDL-25-1586, 19 December 2025 (archived)"
+    },
+    {
+     "key": "ad17_bls_gloss",
+     "url": "https://www.bls.gov/cex/csxgloss.htm",
+     "label": "US BLS, Consumer Expenditure Surveys Glossary, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_scf25_inc",
+     "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+     "label": "Federal Reserve Board, 'Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer Finances', October 2026, Tables 1-5 and Box 4"
+    }
+   ]
+  },
+  {
+   "id": "ad17_life",
+   "stage": "ad17",
+   "topic": "A life in numbers: first-job earnings, rent and first-home prices, out-of-pocket limits",
+   "claims": [
+    {
+     "text": "BLS Q3 2026 (not seasonally adjusted) median usual weekly earnings of full-time wage and salary workers: 16-19 $682; 20-24 $802; 25-34 $1,173; 35-44 $1,414; 45-54 $1,407; 55-64 $1,376; 65+ $1,165. Book arithmetic x52: 20-24 $41,704; 25-34 $60,996; 35-44 $73,528.",
+     "strength": "primary",
+     "sources": [
+      "ad17_bls_wkyeng_q3"
+     ]
+    },
+    {
+     "text": "Census/HUD median sales price of new houses sold: 1990Q1 $123,900; 2000Q1 $165,300; 2019Q4 $327,100; 2024Q1 $426,800; 2025Q1 $423,100; 2026Q1 $408,500; 2026Q2 $410,700 (NSA).",
+     "strength": "primary",
+     "sources": [
+      "ad17_fred_mspus"
+     ]
+    },
+    {
+     "text": "Census HVS Q2 2026 (released 28 July 2026): homeownership 65.0% (65.0% Q2 2025); rental vacancy 7.3%; median asking rent for vacant for-rent units $1,531; median asking sales price for vacant for-sale units $343,800; homeownership under 35 35.2% (36.4% Q2 2025, the only age group with a significant fall), 35-44 60.9%, 45-54 69.7%, 55-64 75.1%, 65+ 78.6%.",
+     "strength": "primary",
+     "sources": [
+      "ad17_census_hvs_q226"
+     ]
+    },
+    {
+     "text": "HealthCare.gov: 2026 Marketplace out-of-pocket maximum $10,600 individual, $21,200 family; 2027 $12,000 / $24,000; premiums, non-covered services, out-of-network care and balance bills do not count toward it.",
+     "strength": "primary",
+     "sources": [
+      "ad17_hcgov_oop"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad17_bls_wkyeng_q3",
+     "url": "https://www.bls.gov/charts/usual-weekly-earnings/usual-weekly-earnings-current-quarter-by-age.htm",
+     "label": "US BLS, 'Usual weekly earnings of full-time wage and salary workers by age, 3rd quarter 2026' (chart data), accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_fred_mspus",
+     "url": "https://fred.stlouisfed.org:443/data/MSPUS.txt",
+     "label": "US Census Bureau and HUD via FRED, 'Median Sales Price of New Houses Sold for the United States' (MSPUS), quarterly, accessed 22 Oct 2026"
+    },
+    {
+     "key": "ad17_census_hvs_q226",
+     "url": "https://www.census.gov/housing/hvs/files/qtr226/Q226press.pdf",
+     "label": "US Census Bureau, 'Quarterly Residential Vacancies and Homeownership, Second Quarter 2026', CB26-116, 28 July 2026"
+    },
+    {
+     "key": "ad17_hcgov_oop",
+     "url": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/",
+     "label": "HealthCare.gov (CMS), 'Out-of-pocket maximum/limit' glossary, accessed 22 Oct 2026"
+    }
+   ]
+  },
+  {
+   "id": "ad17_audit",
+   "stage": "ad17",
+   "topic": "Audit re-checks for Part Seventeen",
+   "claims": [
+    {
+     "text": "Freddie Mac PMMS (re-checked 22 Oct 2026): 30-year fixed average 7.40% for the week of 15 October 2026, unchanged from the prior week (8 October), against 6.27% a year earlier; 15-year 6.71%. Earlier: 7.28% on 1 October 2026 (7.03% the week before; 6.34% a year earlier). Book arithmetic at 7.40%, 360 months: $369,630 loan (90% of $410,700) = $2,559.24/month, $30,711/yr = 35.1% of $87,460; $309,420 (90% of $343,800) = $2,142.36/month.",
+     "strength": "primary",
+     "sources": [
+      "ad17_audit_pmms",
+      "ad17_audit_te_pmms"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad17_audit_pmms",
+     "url": "https://www.freddiemac.com/pmms",
+     "label": "Freddie Mac, Primary Mortgage Market Survey, release of 15 October 2026 (re-checked 22 October 2026)"
+    },
+    {
+     "key": "ad17_audit_te_pmms",
+     "url": "https://tradingeconomics.com/united-states/30-year-mortgage-rate/news/588887",
+     "label": "Trading Economics, 'US Mortgage Rates Climb Further in October' (Freddie Mac PMMS, week of 1 October 2026)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+%% The Epstein Architecture — how the system worked, from the documented record
+%% Solid = documented. Dashed = alleged, reported or withheld. Paste into mermaid.live or any Mermaid renderer.
+%%{init: {'theme':'base','themeVariables':{'background':'#08191D','clusterBkg':'#0B2226','clusterBorder':'#D8B26A','titleColor':'#D8B26A','lineColor':'#D8B26A','edgeLabelBackground':'#0F2E33','primaryTextColor':'#FFFFFF','fontFamily':'Helvetica, Arial, sans-serif'}}}%%
+flowchart TD
+  classDef money fill:#0F2E33,stroke:#D8B26A,color:#FFFFFF,stroke-width:2px
+  classDef core fill:#B8432F,stroke:#D8B26A,color:#FFFFFF,stroke-width:3px
+  classDef ops fill:#12343B,stroke:#7FB3B0,color:#FFFFFF
+  classDef shield fill:#2A1E14,stroke:#D8B26A,color:#FFFFFF,stroke-width:2px
+  classDef gap fill:#1C1C1C,stroke:#B8432F,color:#FFFFFF,stroke-dasharray:5 4
+  classDef edge fill:#0B2A22,stroke:#6FCF97,color:#FFFFFF
+
+  subgraph S1["1 · SPONSORS (no documented self-made fortune)"]
+    WEX["Les Wexner<br/>power of attorney, 1991"]:::money
+    BLK["Leon Black<br/>$158M + $12M fees, 2012–17"]:::money
+    EDR["Edmond de Rothschild bank<br/>$25M fee tied to its DOJ penalty, 2015"]:::money
+    USVI["US Virgin Islands<br/>EDC tax break, $80.6M"]:::money
+  end
+
+  subgraph S2["2 · THE BANKS (warned, then kept him)"]
+    JPM["JPMorgan 1998–2013<br/>$290M settlement"]:::money
+    DB["Deutsche Bank 2013–18<br/>$150M NYDFS penalty"]:::money
+    BOA["Bank of America<br/>$72.5M settlement"]:::money
+    PM["Banker Paul Morris<br/>carried the account bank to bank"]:::ops
+  end
+
+  EP(("JEFFREY EPSTEIN<br/>the broker")):::core
+
+  subgraph S3["3 · THE OPERATION (court record)"]
+    GM["Ghislaine Maxwell<br/>convicted 2021, 20 years"]:::ops
+    STAFF["Schedulers and recruiters<br/>4 named in the 2008 deal"]:::ops
+    PROP["Properties<br/>NYC · Palm Beach · Little St. James · Zorro Ranch · Paris"]:::ops
+    SURV["Survivors<br/>about 150 compensated (a floor)"]:::edge
+  end
+
+  subgraph S4["4 · THE REPUTATION MACHINE"]
+    REP["Search clean-up · Osborne memo 2011<br/>publicists · universities · editors"]:::ops
+  end
+
+  subgraph S5["5 · THE SHIELD"]
+    FBI96["FBI told in writing, Sept 1996<br/>no case for ten years"]:::shield
+    NPA["2008 non-prosecution agreement<br/>immunity for 'any potential co-conspirators'"]:::shield
+    RULES["14 ordinary rules<br/>all discretion with the executive"]:::shield
+  end
+
+  subgraph S6["6 · THE FILES"]
+    ACT["Transparency Act, 427–1"]:::shield
+    REL["~3.5M of ~6M pages released<br/>43 of 47 victims' names left visible"]:::gap
+    HELD["Withheld: bank wires, deliberations,<br/>co-conspirator names"]:::gap
+  end
+
+  subgraph S7["7 · WHAT CAUGHT HIM (the edges)"]
+    EDGE["Palm Beach police · survivors' lawyers · a judge<br/>Miami Herald · USVI · New Mexico · inspectors general"]:::edge
+  end
+
+  WEX --> EP
+  BLK --> EP
+  BLK -. "alleged route" .-> BOA
+  EDR --> EP
+  USVI --> EP
+  JPM --> EP
+  DB --> EP
+  PM --- JPM
+  PM --- DB
+  PM --- BOA
+  EP --> GM
+  EP --> STAFF
+  EP --> PROP
+  STAFF --> SURV
+  GM --> SURV
+  EP --> REP
+  REP -. "made him respectable again" .-> EP
+  FBI96 -. "no action" .-> EP
+  NPA --> STAFF
+  NPA --> EP
+  RULES --> NPA
+  EDGE --> NPA
+  EDGE --> ACT
+  ACT --> REL
+  ACT -.-> HELD
+  HELD -. "would show how far it reaches" .-> S1

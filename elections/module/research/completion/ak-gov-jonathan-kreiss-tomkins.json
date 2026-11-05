@@ -1,0 +1,13 @@
+{
+ "id": "ak-gov-jonathan-kreiss-tomkins",
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "CourtListener was blocked by this environment's proxy. Alaska CourtView was not searched. Searched news (Alaska Beacon, Alaska Public Media, ADN, Juneau Independent, KTUU), Wikipedia and Ballotpedia for lawsuits, ethics complaints and APOC actions; none found.",
+  "foreign": "No foreign-government or foreign-business ties appear in news or biographies. His POFD was not retrieved. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate.",
+  "claims": "Campaign site jktforak.com could not be fetched (tool provenance block). As a stand-in for the bio/issues pages, used his candidate-authored Official Election Pamphlet statement (all checkable bio claims, plus the first checkable issue claim) and his KMXT interview. Ad scripts were not found; Wilson's 'Chat JKT' ad attacks him, but no JKT ad text was located. Six claims: 2 rated (true, partly), 4 unverifiable.",
+  "democracy": "Never held federal office, so no certification votes. Searched news and biographies for statements on the 2020 or 2024 presidential results; none found."
+ },
+ "research_notes": "Only FARA changed this pass. CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly."
+}

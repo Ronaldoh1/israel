@@ -1,0 +1,65 @@
+{
+ "id": "al-07-terri-sewell",
+ "cites": {
+  "sew_fd25a": {
+   "t": "Terri A. Sewell, Amended Annual Report for 2025, filed Sept. 25, 2026 (Filing ID #10082953) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10082953.pdf"
+  },
+  "sew_fd25": {
+   "t": "Terri A. Sewell, Annual Report for 2025, filed Aug. 13, 2026 (Filing ID #10081495) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10081495.pdf"
+  },
+  "kl07terrisewell_ptr2026": {
+   "t": "Terri A. Sewell, Periodic Transaction Report #20034384 (signed Apr 21, 2026) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034384.pdf"
+  },
+  "kl07terrisewell_ptr2025": {
+   "t": "Terri A. Sewell, Periodic Transaction Report #20030235 (signed May 12, 2025) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030235.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "legal": "Not done. CourtListener is blocked for this tool, Justia was not reached, Alacourt is paywalled, and no news search for lawsuits or charges was possible (the shared web-search budget ran out). House Ethics and OCC/OCE pages were not fetched. Nothing turned up in the Wikipedia, Ballotpedia, Reflector or ADN material reviewed. ETHICS (Oct 8): The Office of Congressional Conduct (formerly OCE) referral list was read directly. Pages covering Oct 2009–Feb 2010 and Mar 2017–Mar 2026 list no referral naming Sewell. Pages for roughly 2010–2016 returned duplicate content and could not be read, so 2011–2016 is not confirmed from that source. ethics.house.gov was refused by the fetch tool. Wikipedia and Ballotpedia mention no ethics complaint, investigation or finding. New news searches could not be run. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Terri Sewell sued lawsuit court congresswoman') turned up no reporting of any civil or criminal case naming Terri Sewell as a party, so courts is 'news' (searched, nothing found). Results were her own press releases on redistricting suits and House GOP litigation, in which she was not a party.",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2025 House annual report (amended Sept. 25, 2026) lists no foreign assets or income. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13). Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": -364981,
+   "max": 785996,
+   "year": 2025,
+   "c": [
+    "sew_fd25a"
+   ]
+  },
+  "trades": {
+   "count": 4,
+   "period": "Apr 2025–Mar 2026 (two PTRs found); none in 2023 annual",
+   "overlap": [
+    {
+     "d": "2026-03",
+     "asset": "GE HealthCare Technologies (GEHC) — sale, Mar. 25, 2026",
+     "amt": "$1K–$15K",
+     "sector": "Health-care equipment (Medicare-reimbursed imaging)",
+     "committee": "Ways and Means (Medicare/health tax jurisdiction)",
+     "c": [
+      "kl07terrisewell_ptr2026"
+     ]
+    }
+   ]
+  },
+  "note": {
+   "t": "Latest report: 2025 annual (filed Aug. 13, 2026 after a June extension; amended Sept. 25, 2026). Assets of $435K–$1.1M: Tapestry stock ($250K–$500K), small positions in Apple, Cisco, GE, GE Vernova, GE HealthCare, Nvidia and the Vanguard S&P 500 ETF, a Wells Fargo account and a Merrill Lynch IRA of mutual funds (American Funds, Columbia, Eaton Vance and others). Liabilities of $315K–$800K: a Regions mortgage on her Birmingham home, a co-op share loan and a Wells Fargo mortgage on her D.C. home ($100K–$250K each) and a Citibank credit card ($15K–$50K). The homes are not reportable assets, so the range understates net worth. 2025 transactions: purchases of Apple, Nvidia and the Vanguard S&P 500 ETF on Apr. 10, 2025 ($1K–$15K each). Uncompensated positions: Stennis Center for Public Service board; chair of the Congressional Black Caucus Foundation board. No foreign assets or income. Earlier PTRs: sold GE HealthCare and Tapestry Mar. 25, 2026.",
+   "c": [
+    "sew_fd25a",
+    "sew_fd25",
+    "kl07terrisewell_ptr2025",
+    "kl07terrisewell_ptr2026"
+   ]
+  }
+ },
+ "research_notes": "Finances updated from the 2023 report to the 2025 annual report and its Sept. 2026 amendment."
+}

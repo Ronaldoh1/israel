@@ -1,0 +1,539 @@
+{
+ "state": "NJ",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_nj": {
+   "t": "2026 United States House of Representatives elections in New Jersey — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_New_Jersey"
+  },
+  "nj_sos_gen": {
+   "t": "NJ Division of Elections — Candidates for House of Representatives, General Election 11/03/2026, Official List (07/27/2026)",
+   "u": "https://www.nj.gov/state/elections/assets/pdf/election-results/2026/2026-official-general-candidates-us-house.pdf"
+  },
+  "whyy_nj12": {
+   "t": "WHYY — Army surgeon Adam Hamawy wins crowded New Jersey primary in 12th Congressional District",
+   "u": "https://whyy.org/articles/new-jersey-election-2026-primary-12th-congressional-district-2/"
+  },
+  "njglobe_nj11": {
+   "t": "New Jersey Globe — Analilia Mejia wins NJ-11 special, keeping Sherrill's seat in Democratic hands",
+   "u": "https://newjerseyglobe.com/congress/analilia-mejia-wins-nj-11-special-keeping-sherrills-seat-in-democratic-hands/"
+  }
+ },
+ "races": [
+  {
+   "race": "NJ-01",
+   "incumbent": {
+    "name": "Donald Norcross",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Donald Norcross",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-01-donald-norcross",
+     "fec": [
+      "H4NJ01084"
+     ]
+    },
+    {
+     "name": "Damon Galdo",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-01-damon-galdo",
+     "fec": [
+      "H2NJ01187"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Wikipedia also lists Austin Johnson (For the People); he is not on the official 07/27/2026 state list.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-02",
+   "incumbent": {
+    "name": "Jeff Van Drew",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jeff Van Drew",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nj-02-jeff-van-drew",
+     "fec": [
+      "H8NJ02166"
+     ]
+    },
+    {
+     "name": "Zack Mullock",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nj-02-zack-mullock",
+     "fec": [
+      "H6NJ02251"
+     ]
+    },
+    {
+     "name": "Ramon Mora Jr.",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-02-ramon-mora",
+     "fec": [
+      "H6NJ02269"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Mullock won the June 2 Democratic primary with 39.8% (Alexander 27.4%).",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-03",
+   "incumbent": {
+    "name": "Herb Conaway",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Herb Conaway",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-03-herb-conaway",
+     "fec": [
+      "H4NJ03080"
+     ]
+    },
+    {
+     "name": "Michael P. McGuire",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-03-michael-mcguire",
+     "fec": [
+      "H6NJ03184"
+     ]
+    },
+    {
+     "name": "Ryan Michael Kelly",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-03-ryan-kelly",
+     "fec": [
+      "H6NJ03192"
+     ]
+    },
+    {
+     "name": "Steven Welzer",
+     "party": "G",
+     "incumbent": false,
+     "rec": "nj-03-steven-welzer",
+     "fec": [
+      "H4NJ03247",
+      "H8NJ04154"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kelly runs under the slogan 'Affordability, Accountability, People'. McGuire won the GOP primary with 57.9%.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-04",
+   "incumbent": {
+    "name": "Chris Smith",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Christopher H. Smith",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nj-04-christopher-smith",
+     "fec": [
+      "H8NJ04014"
+     ]
+    },
+    {
+     "name": "Rachel Peace",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nj-04-rachel-peace",
+     "fec": [
+      "H6NJ04257"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Peace won the Democratic primary with 72.8%.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-05",
+   "incumbent": {
+    "name": "Josh Gottheimer",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Josh Gottheimer",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-05-josh-gottheimer",
+     "fec": [
+      "H6NJ05171"
+     ]
+    },
+    {
+     "name": "Sean Kirrane",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-05-sean-kirrane",
+     "fec": [
+      "H6NJ05221"
+     ]
+    },
+    {
+     "name": "Adam Rueda",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-05-adam-rueda",
+     "fec": [
+      "H6NJ05247"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Rueda runs under the slogan 'Humane Sustainable Future'.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-06",
+   "incumbent": {
+    "name": "Frank Pallone",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Frank Pallone Jr.",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-06-frank-pallone",
+     "fec": [
+      "H8NJ03073",
+      "S6NJ00263"
+     ]
+    },
+    {
+     "name": "Hillary Herzig",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-06-hillary-herzig",
+     "fec": [
+      "H6NJ06278",
+      "H6NJ06286"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Pallone won the Democratic primary with 65.7% (Hsu 26.7%).",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-07",
+   "incumbent": {
+    "name": "Tom Kean Jr.",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Thomas H. Kean Jr.",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nj-07-thomas-kean",
+     "fec": [
+      "H0NJ07089",
+      "H0NJ07261",
+      "S6NJ00271"
+     ]
+    },
+    {
+     "name": "Rebecca Bennett",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nj-07-rebecca-bennett",
+     "fec": [
+      "H6NJ07201"
+     ]
+    },
+    {
+     "name": "Lana Leguía",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nj-07-lana-leguia",
+     "fec": [
+      "H4NJ07164"
+     ]
+    },
+    {
+     "name": "Seamus Patrick O'Toole",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Bennett won the Democratic primary with 45.3%. O'Toole runs under the slogan 'Stop Israel's Genocide'. Wikipedia also lists Randall Terry (Constitution); he is not on the official state list.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-08",
+   "incumbent": {
+    "name": "Rob Menendez",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rob Menendez",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-08-robert-menendez",
+     "fec": [
+      "H2NJ08232",
+      "H2NJ13075",
+      "S6NJ00289"
+     ]
+    },
+    {
+     "name": "Aristotle Eliopoulos",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Craig Honts",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Da'Shone Hughey",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-08-da-shone-hughey",
+     "fec": [
+      "H6NJ08217"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "No Republican nominee (none filed by the March 23 deadline). Honts runs under the slogan 'Socialist Workers Party', Hughey under 'We The People'. Menendez won the primary with 68.8%.",
+   "c": [
+    "nj_sos_gen",
+    "wiki_nj"
+   ]
+  },
+  {
+   "race": "NJ-09",
+   "incumbent": {
+    "name": "Nelida Pou",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nelida Pou",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-09-nelida-pou",
+     "fec": [
+      "H4NJ09194"
+     ]
+    },
+    {
+     "name": "Rosie Pino",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-09-rosemary-pino",
+     "fec": [
+      "H6NJ09264"
+     ]
+    },
+    {
+     "name": "Terrisa Bukovinac",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-09-terrisa-bukovinac",
+     "fec": [
+      "H6NJ09306"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Bukovinac runs under the slogan 'Save Our Babies'. Pino is listed in FEC records as Rosemary Pino.",
+   "c": [
+    "nj_sos_gen"
+   ]
+  },
+  {
+   "race": "NJ-10",
+   "incumbent": {
+    "name": "LaMonica McIver",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "LaMonica R. McIver",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-10-lamonica-mciver",
+     "fec": [
+      "H4NJ10176"
+     ]
+    },
+    {
+     "name": "Carmen Bucco",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-10-carmen-bucco",
+     "fec": [
+      "H4NJ10135"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "nj_sos_gen"
+   ]
+  },
+  {
+   "race": "NJ-11",
+   "incumbent": {
+    "name": "Analilia Mejia",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Analilia Mejia",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nj-11-analilia-mejia",
+     "fec": [
+      "H6NJ11286"
+     ]
+    },
+    {
+     "name": "Joe Hathaway",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-11-joe-hathaway",
+     "fec": [
+      "H6NJ11211"
+     ]
+    },
+    {
+     "name": "Alan B. Bond",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nj-11-alan-bond",
+     "fec": [
+      "H6NJ11328"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Mejia won the April 16, 2026 special election (about 60–40 over Hathaway) for the seat Mikie Sherrill vacated on becoming governor. This is a rematch. Bond runs under the slogan 'Hope For Tomorrow'.",
+   "c": [
+    "nj_sos_gen",
+    "njglobe_nj11"
+   ]
+  },
+  {
+   "race": "NJ-12",
+   "incumbent": {
+    "name": "Bonnie Watson Coleman",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Adam Hamawy",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nj-12-adam-hamawy",
+     "fec": [
+      "H6NJ12417"
+     ]
+    },
+    {
+     "name": "Gregg Mele",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nj-12-gregg-mele",
+     "fec": [
+      "H2NJ06210",
+      "H8NJ07264",
+      "S4NJ00409"
+     ]
+    },
+    {
+     "name": "Andres Jinete",
+     "party": "G",
+     "incumbent": false,
+     "rec": "nj-12-andres-jinete",
+     "fec": [
+      "H6NJ12441"
+     ]
+    },
+    {
+     "name": "Winston Jordan",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Hamawy won the June 2 Democratic primary with 27.4% in a 13-candidate field, and Mele was unopposed for the GOP nomination. Jordan runs under the slogan 'Get Money Out'.",
+   "c": [
+    "nj_sos_gen",
+    "whyy_nj12"
+   ]
+  }
+ ]
+}
