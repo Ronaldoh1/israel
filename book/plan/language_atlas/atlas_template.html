@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#070d1a">
+<title>Language Atlas · The Library of Truth ✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* The Library of Truth · Language atlas: the Semitic family as a tree, a map through time and a timeline,
+   and the Ashkenazi path through Europe with the languages spoken at each stage. */
+:root{
+  --bg:#060b17; --bg2:#0b1529; --panel:#0e182c; --panel-2:#13203a; --ink:#eaeef7; --muted:#9aa7bd; --line:#233450;
+  --gold:#f0c040; --on-gold:#1a1204; --sea:#0a1426; --land:#16243f; --border:#2a3c5e;
+  --shadow:0 24px 60px rgba(0,0,0,.55);
+  --f-display:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#f4efe4; --bg2:#fbf8f1; --panel:#fffdf8; --panel-2:#f3ecdc; --ink:#14203a; --muted:#566178; --line:#d9d0bc;
+  --gold:#a8760d; --on-gold:#fffaf0; --sea:#e4ebf0; --land:#f7f1e3; --border:#cdbf9f; --shadow:0 20px 50px rgba(40,30,10,.18); color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#f4efe4; --bg2:#fbf8f1; --panel:#fffdf8; --panel-2:#f3ecdc; --ink:#14203a; --muted:#566178; --line:#d9d0bc;
+  --gold:#a8760d; --on-gold:#fffaf0; --sea:#e4ebf0; --land:#f7f1e3; --border:#cdbf9f; --shadow:0 20px 50px rgba(40,30,10,.18); color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.5 var(--f-body);overflow:hidden;-webkit-text-size-adjust:100%;overflow-wrap:anywhere}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+a{color:var(--gold)}
+.app{height:100vh;height:100dvh;display:flex;flex-direction:column;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) 0 env(safe-area-inset-left,0)}
+.hd{flex:none;display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.back{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;text-decoration:none;color:var(--gold);border:1px solid var(--line);background:var(--panel);font-size:22px;line-height:1;padding-bottom:3px}
+h1{margin:0;font:700 clamp(1.05rem,4.4vw,1.45rem)/1.15 var(--f-display);flex:1;min-width:0;text-wrap:balance}
+h1 small{display:block;font:400 12.5px/1.35 var(--f-body);color:var(--muted);margin-top:2px}
+.tabs{flex:none;display:flex;gap:4px;padding:8px 12px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;background:var(--bg2)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 14px;font-weight:500;font-size:13.5px;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--gold);color:var(--on-gold);border-color:var(--gold)}
+.stage{flex:1;min-height:0;display:grid;grid-template-columns:1fr 400px}
+.view{min-width:0;min-height:0;overflow:auto;position:relative}
+.view[hidden]{display:none}
+.side{border-left:1px solid var(--line);background:var(--panel);overflow:auto;padding:18px 20px 40px}
+.side h2{font:700 1.35rem/1.2 var(--f-display);margin:0 0 6px}
+.side h3{font:600 12px/1.3 var(--f-body);color:var(--muted);margin:16px 0 4px;letter-spacing:.02em}
+.side p{margin:0 0 8px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel-2)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.src{margin:6px 0 0;padding:0;list-style:none;font-size:12.5px}
+.src li{margin:0 0 5px;padding-left:14px;position:relative}
+.src li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.btn{border:1px solid var(--line);background:var(--panel-2);border-radius:8px;padding:6px 12px;font-size:13px}
+.btn:hover{border-color:var(--gold)}
+.close{display:none}
+.intro p{color:var(--muted)}
+.intro b{color:var(--ink);font-weight:600}
+
+/* map */
+.mapwrap{display:flex;flex-direction:column;height:100%}
+.maptools{flex:none;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--panel);padding:6px 11px;font-size:13px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--panel-2);color:var(--ink);box-shadow:inset 0 -2px 0 var(--gold)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.mapbox{flex:1;min-height:260px;position:relative;background:var(--sea)}
+.mapbox svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.land{fill:var(--land);stroke:var(--border);stroke-width:1;vector-effect:non-scaling-stroke}
+.bord{fill:none;stroke:var(--border);stroke-width:.7;opacity:.6;vector-effect:non-scaling-stroke;stroke-dasharray:3 2}
+.route,.origin,.apath{vector-effect:non-scaling-stroke}
+.pt{cursor:pointer}
+.pt .c{stroke:var(--bg);transition:opacity .25s,r .2s}
+.pt text{font:500 var(--fs,4px)/1 var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:var(--sw,.9);pointer-events:none;transition:opacity .25s}
+.pt.off .c{opacity:.13}.pt.off text{opacity:.0}
+.pt.wr .c{fill-opacity:.15;stroke-width:var(--rw,.7)}
+.pt.sel .c{stroke:var(--gold);stroke-width:var(--rw,.9)}
+.route{fill:none;stroke-dasharray:5 4;stroke-width:1.6;opacity:.8;transition:opacity .25s}
+.route.off{opacity:0}
+.origin{fill:color-mix(in srgb,var(--gold) 10%,transparent);stroke:var(--gold);stroke-width:1.4;stroke-dasharray:4 3}
+.timebar{flex:none;padding:10px 14px 14px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:center}
+.year{font:600 1.25rem/1 var(--f-display);min-width:7.6em;font-variant-numeric:tabular-nums}
+.year small{display:block;font:400 11.5px/1.3 var(--f-body);color:var(--muted);margin-top:3px}
+input[type=range]{flex:1;accent-color:var(--gold);min-width:0}
+.play{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--panel);display:grid;place-items:center;flex:none}
+
+/* tree */
+.treewrap{padding:18px 18px 60px;max-width:980px}
+.lede{color:var(--muted);max-width:68ch;margin:0 0 14px}
+.sibs{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0 0}
+.sib{font-size:12px;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:2px 9px}
+ul.t,ul.t ul{list-style:none;margin:0;padding:0}
+ul.t ul{margin-left:16px;padding-left:16px;border-left:1px solid var(--line)}
+ul.t li{position:relative;padding:5px 0 0}
+ul.t ul>li::before{content:"";position:absolute;left:-16px;top:19px;width:14px;border-top:1px solid var(--line)}
+.node{display:inline-flex;flex-direction:column;gap:1px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel)}
+.node b{font:600 14px/1.25 var(--f-body)}
+.node small{color:var(--muted);font-size:12px;line-height:1.35;max-width:58ch}
+.leafs{display:flex;flex-wrap:wrap;gap:6px;padding-top:6px}
+.leaf{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:4px 11px 4px 8px;font-size:13px}
+.leaf:hover,.leaf.sel{border-color:var(--gold)}
+.leaf em{font-style:normal;color:var(--muted);font-size:11.5px}
+
+/* timeline */
+.tlwrap{padding:14px 0 50px}
+.tlwrap .lede{padding:0 18px}
+.tlscroll{overflow-x:auto;padding:0 18px}
+.tl{display:block}
+.tl .axis text{font:400 10.5px var(--f-mono);fill:var(--muted)}
+.tl .grid{stroke:var(--line)}
+.tl .row text.n{font:500 12px var(--f-body);fill:var(--ink)}
+.tl .row{cursor:pointer}
+.tl .row:hover text.n{fill:var(--gold)}
+.tl .row.sel text.n{fill:var(--gold);font-weight:600}
+.tl .grp{font:600 11.5px var(--f-body)}
+.tl .now{stroke:var(--gold);stroke-width:1.5}
+.tlkey{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);padding:0 18px 10px}
+.tlkey i{display:inline-block;width:26px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+
+/* ashkenazi */
+.ashk{display:grid;grid-template-rows:auto minmax(260px,46vh) auto;min-height:100%}
+.ashk .mapbox{min-height:260px}
+.steps{padding:14px 18px 60px;display:grid;gap:10px;max-width:980px}
+.step{display:grid;grid-template-columns:34px 1fr;gap:10px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:10px 12px;cursor:pointer;text-align:left}
+.step.sel{border-color:var(--gold)}
+.num{width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--on-gold);display:grid;place-items:center;font:600 13px var(--f-body)}
+.step h4{margin:0;font:600 15px/1.3 var(--f-body)}
+.step .when{color:var(--muted);font-size:12.5px}
+.langs{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.lg{font-size:12px;border-radius:6px;padding:2px 8px;background:var(--panel-2);border:1px solid var(--line)}
+.lg b{font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:10px 12px}
+.card h4{margin:0 0 4px;font:600 14px/1.3 var(--f-body)}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.sub{font:700 1.1rem/1.2 var(--f-display);margin:12px 0 2px}
+.stop text{font:600 var(--fs,4.4px) var(--f-body);fill:var(--on-gold);pointer-events:none}
+.stop .c{fill:var(--gold);stroke:var(--bg);stroke-width:.5;cursor:pointer}
+.stop.sel .c{stroke:var(--ink);stroke-width:1}
+.stop .lb{fill:var(--ink);font-weight:500;paint-order:stroke;stroke:var(--sea);stroke-width:.9}
+.apath{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:6 4;opacity:.85}
+
+@media (max-width:820px){
+  .stage{grid-template-columns:1fr}
+  .side{position:fixed;left:0;right:0;bottom:0;max-height:62dvh;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;box-shadow:var(--shadow);z-index:20;transform:translateY(105%);transition:transform .28s ease;padding-bottom:calc(30px + env(safe-area-inset-bottom,0px))}
+  .side.open{transform:none}
+  .close{display:block;position:sticky;top:-18px;margin:-18px -20px 8px;padding:8px 14px;background:var(--panel);border:0;border-bottom:1px solid var(--line);width:calc(100% + 40px);text-align:right;color:var(--muted);font-size:13px}
+  .year{min-width:6.4em;font-size:1.1rem}
+  h1 small{display:none}
+  .tab .lg-only{display:none}
+  .tabs .tab .sm-only{display:inline}
+  .legend{font-size:11px;gap:3px 10px}
+  .maptools{padding:8px 12px}
+}
+.tab .sm-only{display:none}
+.tab.about{display:none;order:9}
+@media (max-width:820px){.tabs .tab.about{display:inline-block}}
+.pt:focus,.stop:focus{outline:none}
+.pt:focus-visible .c,.stop:focus-visible .c{stroke:var(--ink);stroke-width:1.2px;vector-effect:non-scaling-stroke}
+.zoomhint{position:absolute;right:10px;top:10px;font-size:11.5px;color:var(--muted);background:color-mix(in srgb,var(--bg2) 80%,transparent);border:1px solid var(--line);border-radius:999px;padding:3px 10px;pointer-events:none}
+.mapbox svg{touch-action:none;cursor:grab}
+.mapbox svg:active{cursor:grabbing}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body><div class="app">
+<header class="hd">
+  <a class="back" href="index.html#library" aria-label="Back to the library">‹</a>
+  <h1>The Semitic Languages and the Ashkenazi Path <small>Who spoke what, where and when: a family tree, a map through time, a timeline, and the road of the Ashkenazim through Europe.</small></h1>
+</header>
+<nav class="tabs" role="tablist">
+  <button class="tab" role="tab" data-v="tree" aria-selected="true"><span class="lg-only">Family tree</span><span class="sm-only">Tree</span></button>
+  <button class="tab" role="tab" data-v="map" aria-selected="false">Map<span class="lg-only"> through time</span></button>
+  <button class="tab" role="tab" data-v="time" aria-selected="false">Timeline</button>
+  <button class="tab about" id="aboutBtn" aria-label="About this view">ⓘ About</button>
+  <button class="tab" role="tab" data-v="ashk" aria-selected="false"><span class="lg-only">The </span>Ashkenazi path</button>
+</nav>
+<main class="stage">
+  <section class="view" id="v-tree"><div class="treewrap" id="tree"></div></section>
+  <section class="view" id="v-map" hidden><div class="mapwrap">
+    <div class="maptools">
+      <div class="seg" id="mview"><button aria-pressed="true" data-k="all">Whole family</button><button aria-pressed="false" data-k="levant">Levant</button><button aria-pressed="false" data-k="south">Arabia and the Horn</button></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="mapbox" id="mapbox"></div>
+    <div class="timebar">
+      <button class="play" id="play" aria-label="Play through time"><svg width="14" height="14" viewBox="0 0 14 14"><path id="playIcon" d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg></button>
+      <div class="year" id="year"></div>
+      <input type="range" id="yr" min="-2600" max="2026" step="1" aria-label="Year">
+    </div>
+  </div></section>
+  <section class="view" id="v-time" hidden><div class="tlwrap" id="timeline"></div></section>
+  <section class="view" id="v-ashk" hidden><div class="ashk">
+    <div class="maptools"><div class="legend"><span>Numbered stops follow the order of the path. Tap a stop or a card.</span></div></div>
+    <div class="mapbox" id="amap"></div>
+    <div class="steps" id="steps"></div>
+  </div></section>
+  <aside class="side" id="side" aria-live="polite"></aside>
+</main>
+</div>
+<script>
+const D = __DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fy = y => y < 0 ? `${-y} BCE` : (y >= 2026 ? 'today' : `${y} CE`);
+const L = {}; D.langs.forEach(l => L[l.id] = l);
+const BR = D.branch, col = b => BR[b][1];
+const phone = () => matchMedia('(max-width:820px)').matches;
+let YEAR = -800, SEL = null, VIEW = 'tree';
+
+/* ---------- side panel ---------- */
+const side = $('#side');
+function srcList(keys){ return '<ul class="src">' + keys.map(k => { const s = D.src[k]; return `<li><a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`; }).join('') + '</ul>'; }
+function spanText(l){
+  if(l.modern) return 'Known from modern recording; its earlier history is not documented.' + (l.spans[0][1] < 2026 ? ` Last speakers in the ${Math.floor(l.spans[0][1]/100)+1}th century.` : '');
+  return l.spans.map(s => `${fy(s[0])} – ${fy(s[1])}: ${s[2] === 'spoken' ? 'spoken' : 'written, liturgical or scholarly use only'}`).join('<br>');
+}
+function showLang(id, opts={}){
+  const l = L[id]; SEL = id;
+  side.innerHTML = `<button class="close" onclick="closeSide()">Close ✕</button>
+  <h2>${esc(l.name)}</h2>
+  <span class="chip"><span class="dot" style="background:${col(l.branch)}"></span>${esc(BR[l.branch][0])}</span>
+  <h3>Where</h3><p>${esc(l.place)}</p>
+  <h3>Who spoke it</h3><p>${esc(l.people)}</p>
+  <h3>Writing</h3><p>${esc(l.script)}</p>
+  <h3>When</h3><p>${spanText(l)}</p>
+  ${l.phases ? `<h3>Phases</h3><p>${esc(l.phases)}</p>` : ''}
+  <h3>Today</h3><p>${esc(l.today)}</p>
+  <h3>Sources</h3>${srcList(l.src)}
+  <div class="acts"><button class="btn" onclick="goMap('${l.id}')">Show on the map</button><button class="btn" onclick="go('time');markTL()">Show on the timeline</button><button class="btn" onclick="go('tree');markTree()">Show in the tree</button></div>`;
+  side.scrollTop = 0; side.classList.add('open');
+  markTree(); markTL(); paintMap();
+}
+function closeSide(){ side.classList.remove('open'); }
+function intro(){
+  const v = VIEW;
+  const T = {
+    tree: `<h2>A family of languages</h2><p class="intro">Languages descend from one another the way families do. <b>Semitic</b> is one branch of the larger <b>Afroasiatic</b> family. It is a name for languages, not for a race or a people: Akkadians, Phoenicians, Israelites, Aramaeans, Arabs and Ethiopians all spoke Semitic languages.</p><p class="intro">The word comes from Shem, a son of Noah in Genesis 10. August Ludwig von Schlözer first used "Semitic" for these languages in 1781.</p><p class="intro">Tap any language for where it was spoken, who spoke it, how it was written and what became of it. Scholars disagree on parts of this tree; the notes say where.</p><h3>Sources</h3>${srcList(['la_rubin2010','la_wp_semitic','la_wp_afroasiatic','la_kitchen2009'])}`,
+    map: `<h2>Where, and when</h2><p class="intro">Drag the year. A language lights up while it was spoken; a hollow ring means it survived only in writing, scripture or liturgy. Arrows show documented movements once they have happened.</p><p class="intro">The dashed circle marks the proposed start of the family. ${esc(D.origin.note)}</p><p class="intro">Each dot is an approximate centre: many of these languages were spoken far more widely than one dot can show. Dates are rounded.</p><h3>Sources</h3>${srcList(D.origin.src)}`,
+    time: `<h2>Five thousand years</h2><p class="intro">Each bar is the documented life of one language. <b>Solid</b>: spoken. <b>Striped</b>: kept only in writing, scripture or liturgy. <b>Dotted outline</b>: known only from modern recording, with no earlier written record.</p><p class="intro">Hebrew shows both: spoken in antiquity, kept for 1,700 years in prayer and study, and spoken again from the late 19th century.</p>`,
+    ashk: `<h2>One lineage, many languages</h2><p class="intro">Ashkenazi Jews are one of several Jewish lineages, not the whole of the Jewish people. Others, such as the Sephardim, Mizrahim and Beta Israel, took different roads and spoke different languages, shown below the path.</p><p class="intro">At every stage Ashkenazim spoke more than one language: Yiddish at home, Hebrew and Aramaic for prayer and study, and the language of the country around them.</p><h3>Sources</h3>${srcList(['la_jvl_ashkenaz','la_ego_ashkenazi','la_wp_yiddish'])}`
+  };
+  side.innerHTML = T[v]; side.scrollTop = 0;
+}
+
+/* ---------- tabs ---------- */
+function go(v){
+  VIEW = v;
+  document.querySelectorAll('.tab[data-v]').forEach(b => b.setAttribute('aria-selected', b.dataset.v === v));
+  ['tree','map','time','ashk'].forEach(k => $('#v-'+k).hidden = k !== v);
+  if(v === 'map') drawMap();
+  if(v === 'time') drawTL();
+  if(v === 'ashk') drawAshk();
+  if(phone()) closeSide();
+  if(!SEL || v === 'ashk'){ intro(); }
+  try{ history.replaceState(null, '', '#' + v); }catch(e){}
+}
+$('#aboutBtn').onclick = () => { intro(); side.classList.add('open'); };
+document.querySelectorAll('.tab[data-v]').forEach(b => b.onclick = () => { if(VIEW==='ashk' || b.dataset.v==='ashk') SEL = null; go(b.dataset.v); });
+
+/* ---------- tree ---------- */
+function drawTree(){
+  const kids = {}; D.tree.forEach(n => (kids[n[2]] = kids[n[2]] || []).push(n));
+  const leaves = {}; D.langs.forEach(l => (leaves[l.tree] = leaves[l.tree] || []).push(l));
+  const span = l => l.modern ? 'modern' : `${fy(l.spans[0][0])}${l.spans[l.spans.length-1][1] >= 2026 ? ' →' : ''}`;
+  function li(n){
+    const lv = (leaves[n[0]] || []).map(l => `<button class="leaf" data-id="${l.id}"><span class="dot" style="background:${col(l.branch)}"></span>${esc(l.name)} <em>${esc(span(l))}</em></button>`).join('');
+    const sub = (kids[n[0]] || []).map(li).join('');
+    return `<li><div class="node"><b>${esc(n[1])}</b>${n[3] ? `<small>${esc(n[3])}</small>` : ''}</div>${n[0]==='afroasiatic' ? `<div class="sibs">${D.siblings.map(s => `<span class="sib">${esc(s)}</span>`).join('')}<span class="sib" style="border-style:solid">Semitic ↓</span></div>` : ''}${lv ? `<div class="leafs">${lv}</div>` : ''}${sub ? `<ul>${sub}</ul>` : ''}</li>`;
+  }
+  $('#tree').innerHTML = `<p class="lede">Read top to bottom: each line is a split. Under Afroasiatic, the five dashed branches are Semitic's sister families. Each pill is a language; the date is its first written record, and an arrow means it is still alive.</p><ul class="t">${li(D.tree[0])}</ul>`;
+  $('#tree').onclick = e => { const b = e.target.closest('.leaf'); if(b) showLang(b.dataset.id); };
+}
+function markTree(){ document.querySelectorAll('.leaf').forEach(b => b.classList.toggle('sel', b.dataset.id === SEL)); const b = document.querySelector('.leaf.sel'); if(b && VIEW==='tree') b.scrollIntoView({block:'nearest',behavior:'smooth'}); }
+
+/* ---------- map ---------- */
+const G = D.geo;
+const VIEWS = { all:[6, 60, 6, 43.5], levant:[33.2, 40.6, 29.6, 37.9], south:[34, 60, 6, 24] };
+const CROWD = ['ammonite','moabite','edomite','samalian','nabataean','levantine','maaloula','ugaritic','eblaite','minaic','qatabanic','hadramitic','harsusi','bathari','argobba','gafat','tigre','harari','turoyo','jewish_aramaic','jibbali','imperial_aramaic','gurage'];
+let MV = 'all';
+function proj(lat, lon){ return [(lon - G.lon0) * G.k, (G.lat1 - lat) * G.k]; }
+function vb(v){ const [a,b] = proj(v[3], v[0]), [c,d] = proj(v[2], v[1]); return [a, b, c - a, d - b]; }
+function alive(l, y){ for(const s of l.spans) if(y >= s[0] && y <= s[1]) return s[2]; return null; }
+function baseSVG(v){
+  const [x, y, w, h] = vb(v);
+  return `<svg viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid meet"><path class="land" d="${G.land}"/><path class="bord" d="${G.borders}"/>`;
+}
+function drawMap(){
+  const v = VIEWS[MV], u = (vb(v)[2]) / 100;
+  const r = MV === 'all' ? 1 * u : 1.5 * u;
+  let s = baseSVG(v);
+  s += `<style>#mapbox{--fs:${(MV==='all'?1.75:2.3)*u}px;--sw:${.45*u};--rw:${.35*u}}</style>`;
+  const o = proj(D.origin.lat, D.origin.lon);
+  s += `<circle class="origin" cx="${o[0]}" cy="${o[1]}" r="${(MV==='all'?3.6:MV==='levant'?4.5:1.6)*u}"/>`;
+  s += `<defs><marker id="ah" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0L6,3L0,6z" fill="var(--muted)"/></marker></defs>`;
+  D.routes.forEach((rt, i) => {
+    const a = proj(L[rt[0]].lat, L[rt[0]].lon), b = proj(L[rt[1]].lat, L[rt[1]].lon);
+    const mx = (a[0]+b[0])/2, my = (a[1]+b[1])/2, dx = b[0]-a[0], dy = b[1]-a[1];
+    const cx = mx - dy*.18, cy = my + dx*.18;
+    s += `<path class="route" data-y="${rt[3]}" d="M${a[0]},${a[1]}Q${cx},${cy} ${b[0]},${b[1]}" stroke="${col(L[rt[0]].branch)}" marker-end="url(#ah)"><title>${esc(rt[2])}</title></path>`;
+  });
+  const lab = {}; // simple label side choice to reduce overlap
+  D.langs.forEach(l => {
+    const p = proj(l.lat, l.lon);
+    const left = MV==='levant' ? ['phoenician','hebrew','edomite','levantine'].includes(l.id) : MV==='south' ? ['geez','amharic','gurage','gafat','tigre','sabaic','minaic','argobba'].includes(l.id) : ['phoenician','hebrew','punic'].includes(l.id);
+    const showLab = MV !== 'all' || !CROWD.includes(l.id);
+    s += `<g class="pt" data-id="${l.id}" tabindex="0" role="button" aria-label="${esc(l.name)}"><circle class="c" cx="${p[0]}" cy="${p[1]}" r="${r}" fill="${col(l.branch)}" stroke-width="${.25*u}"/>
+      <title>${esc(l.name)}</title>${showLab ? `<text x="${p[0] + (left ? -1 : 1) * (r + .7*u)}" y="${p[1] + .6*u}" text-anchor="${left ? 'end' : 'start'}">${esc(l.name)}</text>` : ''}</g>`;
+  });
+  s += `<text x="${o[0]}" y="${o[1] - (MV==='all'?4.3:5.2)*u}" text-anchor="middle" style="display:${MV==='south'?'none':'inline'};font:italic 500 ${(MV==='all'?1.6:2)*u}px var(--f-body);fill:var(--gold);paint-order:stroke;stroke:var(--sea);stroke-width:${.5*u}">${esc(D.origin.label)}</text></svg>`;
+  $('#mapbox').innerHTML = s + '<span class="zoomhint">Drag to move · pinch or scroll to zoom</span>';
+  panZoom($('#mapbox'), MV === 'all' ? 40 : null);
+  $('#legend').innerHTML = Object.keys(BR).map(k => `<span><span class="dot" style="background:${col(k)}"></span>${esc(BR[k][0])}</span>`).join('') + `<span><span class="dot" style="border:1.5px solid var(--muted)"></span>written only</span>`;
+  paintMap();
+}
+function paintMap(){
+  document.querySelectorAll('#mapbox .pt').forEach(g => {
+    const st = alive(L[g.dataset.id], YEAR);
+    g.classList.toggle('off', !st); g.classList.toggle('wr', st === 'written'); g.classList.toggle('sel', g.dataset.id === SEL);
+  });
+  document.querySelectorAll('#mapbox .route').forEach(p => p.classList.toggle('off', YEAR < +p.dataset.y));
+  const n = D.langs.filter(l => alive(l, YEAR) === 'spoken').length, w = D.langs.filter(l => alive(l, YEAR) === 'written').length;
+  $('#year').innerHTML = `${YEAR >= 2026 ? 'Today' : fy(YEAR)}<small>${n} spoken${w ? ` · ${w} written only` : ''}</small>`;
+  $('#yr').value = YEAR;
+  markTL();
+}
+$('#mapbox').onclick = e => { const g = e.target.closest('.pt'); if(g) showLang(g.dataset.id); };
+$('#mapbox').onkeydown = e => { const g = e.target.closest('.pt'); if(g && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); showLang(g.dataset.id); } };
+$('#yr').oninput = e => { YEAR = +e.target.value; paintMap(); };
+$('#mview').onclick = e => { const b = e.target.closest('button'); if(!b) return; MV = b.dataset.k; document.querySelectorAll('#mview button').forEach(x => x.setAttribute('aria-pressed', x === b)); drawMap(); };
+let timer = null;
+$('#play').onclick = () => {
+  if(timer){ clearInterval(timer); timer = null; $('#playIcon').setAttribute('d','M3 1.5v11l9-5.5z'); return; }
+  if(YEAR >= 2026) YEAR = -2600;
+  $('#playIcon').setAttribute('d','M3 1.5h3v11H3zM8 1.5h3v11H8z');
+  timer = setInterval(() => { YEAR = Math.min(2026, YEAR + 25); paintMap(); if(YEAR >= 2026){ clearInterval(timer); timer = null; $('#playIcon').setAttribute('d','M3 1.5v11l9-5.5z'); } }, 60);
+};
+function goMap(id){ const l = L[id]; if(!alive(l, YEAR)) YEAR = Math.max(-2600, l.spans[0][0] + (l.modern ? 200 : 0)); MV = ['phoenician','hebrew','moabite','ammonite','edomite','old_aramaic','maaloula','levantine','nabataean','ugaritic','eblaite','samalian'].includes(id) ? 'levant' : (['msa','ethio','sayhadic'].includes(l.branch) ? 'south' : 'all'); document.querySelectorAll('#mview button').forEach(x => x.setAttribute('aria-pressed', x.dataset.k === MV)); go('map'); if(phone()) closeSide(); }
+
+/* ---------- pan and zoom (drag, wheel, pinch) ---------- */
+function panZoom(box, focusLon){
+  const svg = box.querySelector('svg'); if(!svg) return;
+  let [x, y, w, h] = svg.getAttribute('viewBox').split(' ').map(Number);
+  const W0 = w, H0 = h, cx0 = x + w/2, cy0 = y + h/2;
+  const r = box.getBoundingClientRect(), ar = r.width / Math.max(1, r.height);
+  if(ar < w / h){ const nw = h * ar, fx = focusLon == null ? cx0 : (focusLon - G.lon0) * G.k; x = Math.max(x, Math.min(x + w - nw, fx - nw/2)); w = nw; }   // tall screen: crop the sides, keep the full height
+  const set = () => svg.setAttribute('viewBox', `${x} ${y} ${w} ${h}`); set();
+  const pts = new Map(); let last = null;
+  const toSvg = (cx, cy) => { const b = svg.getBoundingClientRect(); const s = Math.max(w / b.width, h / b.height); return [x + (cx - b.left - (b.width - w/s)/2) * s, y + (cy - b.top - (b.height - h/s)/2) * s, s]; };
+  function zoom(f, cx, cy){
+    const [px, py] = toSvg(cx, cy); const nw = Math.min(W0 * 1.4, Math.max(W0 / 8, w * f)), k = nw / w;
+    x = px - (px - x) * k; y = py - (py - y) * k; w = nw; h = h * k; set();
+  }
+  svg.addEventListener('wheel', e => { e.preventDefault(); zoom(e.deltaY > 0 ? 1.15 : 1/1.15, e.clientX, e.clientY); }, {passive:false});
+  svg.addEventListener('pointerdown', e => { pts.set(e.pointerId, [e.clientX, e.clientY]); last = null; svg._moved = 0; });
+  svg.addEventListener('pointermove', e => {
+    if(!pts.has(e.pointerId)) return;
+    const prev = pts.get(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]);
+    if(svg._moved > 0 && !svg.hasPointerCapture(e.pointerId)) try{ svg.setPointerCapture(e.pointerId); }catch(_){}
+    if(pts.size === 1){ const [,, s] = toSvg(e.clientX, e.clientY); const dx = (e.clientX - prev[0]) * s, dy = (e.clientY - prev[1]) * s; x -= dx; y -= dy; svg._moved += Math.abs(dx) + Math.abs(dy); set(); }
+    else if(pts.size === 2){ const [a, b] = [...pts.values()]; const d = Math.hypot(a[0]-b[0], a[1]-b[1]); if(last) zoom(last / d, (a[0]+b[0])/2, (a[1]+b[1])/2); last = d; svg._moved += 10; }
+  });
+  const up = e => { pts.delete(e.pointerId); if(pts.size < 2) last = null; };
+  svg.addEventListener('pointerup', up); svg.addEventListener('pointercancel', up);
+  svg.addEventListener('click', e => { if(svg._moved > 4 * (w / 100)) { e.stopPropagation(); e.preventDefault(); } }, true);
+}
+
+/* ---------- timeline ---------- */
+const T0 = -2600, T1 = 2026;
+function drawTL(){
+  const box = $('#timeline');
+  const W = Math.max(860, box.clientWidth - 36), LW = 190, RH = 21, X = y => LW + (y - T0) / (T1 - T0) * (W - LW - 14);
+  const groups = Object.keys(BR).map(b => [b, D.langs.filter(l => l.branch === b)]);
+  let H = 28; groups.forEach(g => H += 24 + g[1].length * RH);
+  let s = `<svg class="tl" width="${W}" height="${H + 10}" viewBox="0 0 ${W} ${H + 10}"><defs>`;
+  Object.keys(BR).forEach(b => s += `<pattern id="hz-${b}" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="${col(b)}" fill-opacity=".18"/><line x1="0" y1="0" x2="0" y2="5" stroke="${col(b)}" stroke-width="2"/></pattern>`);
+  s += `</defs><g class="axis">`;
+  for(let y = -2500; y <= 2000; y += 500){ s += `<line class="grid" x1="${X(y)}" x2="${X(y)}" y1="18" y2="${H}"/><text x="${X(y)}" y="12" text-anchor="middle">${y === 0 ? '1 CE' : (y < 0 ? -y + ' BCE' : y)}</text>`; }
+  s += `</g>`;
+  let yy = 28;
+  groups.forEach(([b, ls]) => {
+    s += `<text class="grp" x="0" y="${yy + 15}" fill="${col(b)}">${esc(BR[b][0])}</text>`; yy += 24;
+    ls.forEach(l => {
+      s += `<g class="row${l.id === SEL ? ' sel' : ''}" data-id="${l.id}"><rect x="0" y="${yy}" width="${W}" height="${RH}" fill="transparent"/><text class="n" x="10" y="${yy + 14.5}">${esc(l.name)}</text>`;
+      l.spans.forEach(sp => {
+        const x0 = X(Math.max(T0, sp[0])), x1 = Math.max(x0 + 3, X(sp[1]));
+        if(l.modern) s += `<rect x="${x0}" y="${yy + 5}" width="${x1 - x0}" height="${RH - 10}" rx="3" fill="${col(b)}" fill-opacity=".35" stroke="${col(b)}" stroke-dasharray="2 2"/>`;
+        else s += `<rect x="${x0}" y="${yy + 4}" width="${x1 - x0}" height="${RH - 8}" rx="3" fill="${sp[2] === 'spoken' ? col(b) : `url(#hz-${b})`}"><title>${esc(l.name)}: ${fy(sp[0])} – ${fy(sp[1])}, ${sp[2]}</title></rect>`;
+      });
+      s += `</g>`; yy += RH;
+    });
+  });
+  s += `<line class="now" id="tlnow" x1="${X(YEAR)}" x2="${X(YEAR)}" y1="18" y2="${H}"/></svg>`;
+  box.innerHTML = `<p class="lede">Each bar is a language's documented life. The gold line is the year set on the map; tap anywhere on the scale to move it.</p>
+    <div class="tlkey"><span><i style="background:var(--muted)"></i>spoken</span><span><i style="background:repeating-linear-gradient(45deg,var(--muted) 0 2px,transparent 2px 5px)"></i>written or liturgical only</span><span><i style="border:1px dashed var(--muted)"></i>known only from modern recording</span></div>
+    <div class="tlscroll">${s}</div>`;
+  box._X = X; box._W = W; box._LW = LW;
+  const svg = box.querySelector('svg');
+  svg.onclick = e => {
+    const row = e.target.closest('.row');
+    const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; const p = pt.matrixTransform(svg.getScreenCTM().inverse());
+    if(p.x > LW){ YEAR = Math.round(T0 + (p.x - LW) / (W - LW - 14) * (T1 - T0)); YEAR = Math.max(T0, Math.min(T1, YEAR)); markTL(); }
+    if(row) showLang(row.dataset.id);
+  };
+}
+function markTL(){
+  const box = $('#timeline'); if(!box._X) return;
+  const n = $('#tlnow'); if(n){ const x = box._X(YEAR); n.setAttribute('x1', x); n.setAttribute('x2', x); }
+  document.querySelectorAll('.tl .row').forEach(r => r.classList.toggle('sel', r.dataset.id === SEL));
+}
+
+/* ---------- Ashkenazi path ---------- */
+let AS = null;
+function drawAshk(){
+  const v = [-11, 40, 29.5, 57.5], u = vb(v)[2] / 100;
+  let s = baseSVG(v) + `<style>#amap{--fs:${2*u}px}</style><defs><marker id="aa" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L6,3L0,6z" fill="var(--gold)"/></marker></defs>`;
+  const LAB = {judea:['l',0], rome:['l',-1], cologne:['l',0], rhineland:['b',0], poland:['t',0], commonwealth:['r',0], migration:['r',0], today:['b',0]};
+  const route = D.ashk.filter(a => !a.out && a.id !== 'today');
+  const P = route.map(a => proj(a.lat, a.lon));
+  let d = '';
+  P.forEach((p, i) => { if(i === 0) d = `M${p[0]},${p[1]}`; else { const q = P[i-1]; const mx = (p[0]+q[0])/2, my = (p[1]+q[1])/2, dx = p[0]-q[0], dy = p[1]-q[1]; d += `Q${mx - dy*.15},${my + dx*.15} ${p[0]},${p[1]}`; } });
+  s += `<path class="apath" d="${d}"/>`;
+  D.ashk.filter(a => a.out).forEach(a => a.out.forEach(o => {
+    const p = proj(a.lat, a.lon), q = proj(o[0], o[1]), mx = (p[0]+q[0])/2, my = (p[1]+q[1])/2, dx = q[0]-p[0], dy = q[1]-p[1];
+    s += `<path class="apath" style="stroke-dasharray:2 3;opacity:.7" d="M${p[0]},${p[1]}Q${mx + dy*.2},${my - dx*.2} ${q[0]},${q[1]}" marker-end="url(#aa)"/>
+      <text x="${q[0] + (o[1] < 0 ? 1.2*u : 1.6*u)}" y="${q[1] + (o[1] < 0 ? -1.6*u : 3.2*u)}" text-anchor="start" style="font:italic 500 ${1.9*u}px var(--f-body);fill:var(--gold);paint-order:stroke;stroke:var(--sea);stroke-width:${.5*u}">${esc(o[2])}</text>`;
+  }));
+  D.ashk.forEach(a => {
+    const p = proj(a.lat, a.lon), r = 2*u, [side, dy] = LAB[a.id] || ['r', 0];
+    const tx = side === 'l' ? p[0] - r - .8*u : side === 'r' ? p[0] + r + .8*u : p[0];
+    const ty = side === 't' ? p[1] - r - 1*u : side === 'b' ? p[1] + r + 2.4*u : p[1] + .7*u + dy*2*u;
+    const anc = side === 'l' ? 'end' : side === 'r' ? 'start' : 'middle';
+    s += `<g class="stop${AS === a.id ? ' sel' : ''}" data-id="${a.id}" tabindex="0" role="button" aria-label="${esc(a.n + '. ' + a.title)}"><circle class="c" cx="${p[0]}" cy="${p[1]}" r="${r}" stroke-width="${.3*u}"/><text x="${p[0]}" y="${p[1] + .7*u}" text-anchor="middle">${a.n}</text>
+      <text class="lb" x="${tx}" y="${ty}" text-anchor="${anc}" style="stroke-width:${.5*u}">${esc(a.short || a.title)}</text></g>`;
+  });
+  $('#amap').innerHTML = s + '</svg><span class="zoomhint">Drag to move · pinch or scroll to zoom</span>';
+  panZoom($('#amap'), 17);
+  const lin = D.lineages.map(x => `<div class="card"><h4><span class="dot" style="display:inline-block;background:${esc(x.c)};margin-right:6px"></span>${esc(x.name)}</h4><p>${esc(x.place)}</p><p style="margin-top:4px"><b style="color:var(--ink);font-weight:600">${esc(x.lang)}</b></p></div>`).join('');
+  $('#steps').innerHTML = D.ashk.map(a => `<button class="step${AS === a.id ? ' sel' : ''}" data-id="${a.id}"><span class="num">${a.n}</span><span><h4>${esc(a.title)}</h4><span class="when">${esc(a.when)} · ${esc(a.place)}</span><span class="langs">${a.langs.map(l => `<span class="lg"><b>${esc(l[0])}</b>: ${esc(l[1])}</span>`).join('')}</span></span></button>`).join('')
+    + `<h3 class="sub">Ancestry and the origin of Yiddish</h3><div class="cards">${D.ancestry.map(c => `<div class="card"><h4>${esc(c[0])}</h4><p>${esc(c[1])}</p>${srcList(c[2])}</div>`).join('')}</div>`
+    + `<h3 class="sub">The other lineages and their languages</h3><p class="lede" style="margin:0">Jewish communities that took other roads, from the library's lineages map.</p><div class="cards">${lin}</div>`;
+}
+function showStage(id){
+  const a = D.ashk.find(x => x.id === id); AS = id;
+  side.innerHTML = `<button class="close" onclick="closeSide()">Close ✕</button><span class="chip"><span class="num" style="width:20px;height:20px;font-size:11px">${a.n}</span>${esc(a.when)}</span>
+    <h2 style="margin-top:8px">${esc(a.title)}</h2><p style="color:var(--muted)">${esc(a.place)}</p><p>${esc(a.text)}</p>
+    <h3>Languages at this stage</h3>${a.langs.map(l => `<p><b>${esc(l[0])}</b>: ${esc(l[1])}</p>`).join('')}
+    <h3>Sources</h3>${srcList(a.src)}`;
+  side.scrollTop = 0; side.classList.add('open');
+  document.querySelectorAll('.stop,.step').forEach(g => g.classList.toggle('sel', g.dataset.id === id));
+}
+$('#amap').onclick = e => { const g = e.target.closest('.stop'); if(g) showStage(g.dataset.id); };
+$('#steps').onclick = e => { const g = e.target.closest('.step'); if(g) showStage(g.dataset.id); };
+
+/* ---------- boot ---------- */
+drawTree();
+const h = (location.hash || '').slice(1);
+go(['tree','map','time','ashk'].includes(h) ? h : 'tree');
+addEventListener('hashchange', () => { const k = location.hash.slice(1); if(['tree','map','time','ashk'].includes(k) && k !== VIEW) go(k); });
+addEventListener('resize', () => { if(VIEW === 'time') drawTL(); });
+</script>
+</body></html>

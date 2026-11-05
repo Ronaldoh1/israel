@@ -652,7 +652,7 @@ body.book-open #libBanner{display:none}
   /* sources added by the library's own research (book/research/*.json) */
   Object.keys(LIB.cites || {}).forEach(function(k){ if(!CIT[k]) CIT[k] = LIB.cites[k][0]; if(!LBL[k]) LBL[k] = LIB.cites[k][1]; });
   var secOf = {}, where = {};  // scene id -> [book index, chapter index]; a section's own id and its main scene win over scenes it also draws on
-  var MAPS = {epstein:{f:'epstein-network.html', n:'Epstein network map', d:'Every person, company and document, with sources'}, road1948:{f:'road-network.html', n:'The Road to 1948 network map', d:'Founders, funds, states and documents, each tie with its source'}}; MAPS.baseline = MAPS.road1948;
+  var MAPS = {epstein:{f:'epstein-network.html', n:'Epstein network map', d:'Every person, company and document, with sources'}, road1948:{f:'road-network.html', n:'The Road to 1948 network map', d:'Founders, funds, states and documents, each tie with its source'}}; MAPS.baseline = MAPS.road1948; MAPS.atlas = {f:'language-atlas.html', n:'Language atlas', d:'The Semitic languages as a tree, a map through time and a timeline, and the Ashkenazi path through Europe'};
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; secOf[s.s] = s.s; }); }); });
   /* a section's own id always wins; a section's main scene maps to it only if no section carries that id */
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ if(s.scene && secOf[s.scene] !== s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
@@ -1203,6 +1203,7 @@ body.book-open #libBanner{display:none}
       '<button class="row" data-a="toc"><i>☰</i><span>Contents<small>' + esc(BOOK.title) + ' · ' + BOOK.chapters.length + ' ' + esc(BOOK.unit || 'chapters') + '</small></span></button>' +
       '<button class="row" data-a="sim"><i>◉</i><span>Switch to the simulation<small>Opens the scene you are reading</small></span></button>' +
       (MAPS[BOOK.id] ? '<button class="row" data-a="epmap"><i>🕸</i><span>' + esc(MAPS[BOOK.id].n) + '<small>' + esc(MAPS[BOOK.id].d) + '</small></span></button>' : '') +
+      (BOOK.id === 'baseline' ? '<button class="row" data-a="atlas"><i>🗺</i><span>' + esc(MAPS.atlas.n) + '<small>' + esc(MAPS.atlas.d) + '</small></span></button>' : '') +
       '<button class="row" data-a="mark"><i>🔖</i><span>Bookmark this page</span></button>' +
       '<button class="row" data-a="marks"><i>📑</i><span>Bookmarks<small>' + marks + ' saved</small></span></button>' +
       '<button class="row" data-a="note"><i>✎</i><span>Add a note here</span></button>' +
@@ -1268,6 +1269,7 @@ body.book-open #libBanner{display:none}
     else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:BOOK.title + ' · ' + SERN(BOOK), text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
     else if(a2 === 'epmap'){ hideAll(); openEpMap(BOOK && MAPS[BOOK.id] ? BOOK.id : 'epstein'); }
     else if(a2 === 'rdmap'){ hideAll(); openEpMap('road1948'); }
+    else if(a2 === 'atlas'){ hideAll(); openEpMap('atlas'); }
     else if(a2 === 'close') closeBook(null);
   });
   function openEpMap(id){ var f = (MAPS[id] || MAPS.epstein).f, w = null; try{ w = window.open(f, '_blank'); if(w) w.opener = null; }catch(er){} if(!w) location.href = f; }
@@ -1277,6 +1279,7 @@ body.book-open #libBanner{display:none}
       '<button class="row" data-a="lib-search"><i>⌕</i><span>Search the library<small>Titles, people, places, years</small></span></button>' +
       '<button class="row" data-a="epmap"><i>🕸</i><span>Epstein network map<small>The interactive map behind The Epstein Architecture</small></span></button>' +
       '<button class="row" data-a="rdmap"><i>🕸</i><span>The Road to 1948 network map<small>Founders, funds, states and documents from The Baseline and The Road to 1948</small></span></button>' +
+      '<button class="row" data-a="atlas"><i>🗺</i><span>Language atlas<small>The Semitic family through time, and the Ashkenazi path through Europe</small></span></button>' +
       '<div class="seg"><span>Page</span>' + ['paper','sepia','night'].map(function(t){ return '<button data-a="lth-' + t + '" class="' + (prefs.theme === t ? 'on' : '') + '">' + t.charAt(0).toUpperCase() + t.slice(1) + '</button>'; }).join('') + '</div>' +
       '<div class="seg"><span>Reading</span><button data-a="lmd-scroll" class="' + (paged() ? '' : 'on') + '">Scroll</button><button data-a="lmd-pages" class="' + (paged() ? 'on' : '') + '">Turn pages</button></div>' +
       '<button class="row" data-a="lib-tour"><i>?</i><span>How the library works<small>Replay the short tour</small></span></button>');

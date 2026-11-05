@@ -80,7 +80,7 @@ This video is for the Rothschild book, not the 1948 volumes. Its claims are file
 
 - The classification (East: Akkadian, Eblaite; West: Amorite, Ugaritic, Aramaic, Canaanite; then Arabic, South Arabian and Ethio-Semitic) is consistent with The Baseline's existing family tree in s00b.
 - The Levant origin about 5,750 years ago (Kitchen et al., 2009) is also already in s00b.
-- Its images are © Rimon Wehbi, Wikipedia and others, so they are not copied. The Baseline already has its own tree and map.
+- Its images are © Rimon Wehbi, Wikipedia and others, so they are not copied. The library now has an original **language atlas** (`language-atlas.html`, built by `book/plan/language_atlas/`): a tree, a map with a year slider, a timeline of 42 languages (dates from Rubin 2010), and the Ashkenazi path through Europe with the languages spoken at each stage. Linked from s00b, ch01_ancestry_language and the library menu.
 
 ## Changes made in the library
 
