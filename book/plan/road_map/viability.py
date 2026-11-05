@@ -116,6 +116,16 @@ DECISIONS = [
   'effects': {'remove': ['recognition48'], 'drop': ['us_gov>decl_indep']}},
 ]
 STANCE = {'wallace': 2, 'fdr': -1}   # a successor's own documented position: Wallace a supporter (met Ben-Gurion 1947, pressed Truman to end the embargo); Roosevelt's 5 Apr 1945 pledge to Ibn Saud
+# Blocs (treaties of 1947-48): a member that voted with its leader in 1947 keeps that vote, and its 1948 recognition, only at
+# the bloc's own measured independence if the leader is out. The share that followed is read from the partition vote itself.
+BLOCS = [
+ {'id': 'rio', 'name': 'the Americas (Rio Pact, 2 Sept 1947)', 'leader': 'us_gov',
+  'members': ['argentina', 'brazil', 'chile', 'colombia', 'costa_rica', 'dominican', 'el_salvador', 'guatemala', 'haiti', 'honduras', 'panama', 'paraguay', 'peru', 'uruguay', 'venezuela']},
+ {'id': 'marshall', 'name': 'Western Europe (Marshall Plan accord, April 1948)', 'leader': 'us_gov',
+  'members': ['belgium', 'denmark', 'france_gov', 'uk', 'greece', 'iceland', 'luxembourg', 'netherlands', 'norway', 'sweden', 'turkey']},
+ {'id': 'soviet', 'name': 'the Soviet side (Soviet republics and Moscow\'s allies)', 'leader': 'ussr',
+  'members': ['byelorussia', 'ukraine_ssr', 'poland48', 'czechoslovakia', 'yugoslavia']},
+]
 REC_UN = None           # Resolution 181 in force weighs as much as all the 1948 recognitions together (computed in model())
 VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
@@ -219,11 +229,17 @@ def model(d):
     actors = {i: [min(span[i]), max(span[i]), 'm' if N[i]['cluster'] in MOVEMENT_SIDE else 's'] for i in span
               if i in N and span[i] and N[i]['kind'] in ACTOR_KINDS}
     vote = {k: sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == ty}) for k, ty in [('yes', 'vote for'), ('no', 'vote against'), ('abstain', 'abstention')]}
+    blocs = []
+    for B in BLOCS:
+        mem = [m for m in B['members'] if m in N]
+        lead_yes = B['leader'] in vote['yes']
+        same = sum(1 for m in mem if (m in vote['yes']) == lead_yes)
+        blocs.append(dict(B, members=mem, follow=round(same / len(mem), 4) if mem else 0))
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
             'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N],
             'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'power': POWER, 'gdp1950': GDP1950,
-            'decisions': DECISIONS, 'stance': STANCE, 'tied': tied,
+            'decisions': DECISIONS, 'stance': STANCE, 'tied': tied, 'blocs': blocs,
             'incorp': [list(x) for x in incorp], 'framework': {k: v for k, v in FRAMEWORK.items() if k in N}, 'addressee': {k: sorted(v) for k, v in addressee.items()}, 'strict': False, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
@@ -237,6 +253,36 @@ def vote181(M, out, mode=None, novote=(), flip=()):
     y = len(yes) - len(gone) - fl; n = len(no - out) + fl + (len(gone) if mode == 'against' else 0)
     return {'yes': y, 'no': n, 'abstain': len(M['vote']['abstain']) + len(no & out) + (len(gone) if mode != 'against' else 0),
             'passes': y >= 2 * n and not ({'un', 'unga'} & out), 'need': 2 * n, 'un_gone': bool({'un', 'unga'} & out)}
+
+
+def leader_out(M, B, removed, drop=(), novote=(), flip=()):
+    L = B['leader']
+    return L in removed or L in novote or L in flip
+
+
+def vote_pass_prob(M, removed, mode=None, novote=(), flip=(), drop=()):
+    """Chance Resolution 181 still gets two-thirds when blocs lose their leader: members that followed the leader keep their
+    yes only at the bloc's independence (1 - share that followed); the count is otherwise the deterministic one."""
+    v = vote181(M, removed, mode, novote, flip)
+    if not v['passes'] or not M.get('blocs'): return (1.0 if v['passes'] else 0.0), v
+    yes = set(M['vote']['yes']); unsure = []
+    for B in M['blocs']:
+        if not leader_out(M, B, removed, drop, novote, flip): continue
+        for m in B['members']:
+            if m in yes and m not in removed and m not in novote and m not in flip: unsure.append(1 - B['follow'])
+    if not unsure: return 1.0, v
+    sure = v['yes'] - len(unsure); n = v['no']
+    dist = [1.0]                         # distribution of how many of the unsure keep their yes
+    for p in unsure:
+        nd = [0.0] * (len(dist) + 1)
+        for k, q in enumerate(dist): nd[k] += q * (1 - p); nd[k + 1] += q * p
+        dist = nd
+    lost_mode = mode or M.get('vote_mode', 'abstain')
+    ok = 0.0
+    for k, q in enumerate(dist):
+        y = sure + k; nn = n + ((len(unsure) - k) if lost_mode == 'against' else 0)
+        if y >= 2 * nn: ok += q
+    return ok, v
 
 
 def lost_force(M, removed, mode=None, strict=None, novote=(), flip=()):
@@ -353,6 +399,10 @@ def score(M, removed, drop=(), mode=None, strict=None, novote=(), flip=(), decid
         p, dec = decision_chance(M, D, removed, decider.get(D['id']))
         r = min(1.0, p / p0) if p0 else 1.0
         if r < 0.999 and D['act'] not in removed: rel.append((D, round(r, 4), dec))
+    lf = lost_force(M, removed, mode, strict, novote, flip)
+    pv = vote_pass_prob(M, lf, mode, novote, flip, drop)[0] if 'res181' not in lf else 1.0
+    if pv < 0.999:
+        rel.append(({'id': 'un_vote', 'name': 'The UN partition vote, with blocs following their leaders', 'act': 'res181', 'effects': {'remove': ['res181']}}, round(pv, 4), None))
     if not rel: R = score_base(M, removed, drop, mode, strict, novote, flip); R['decisions'] = []; return R
     mix = []
     for mask in range(1 << len(rel)):
@@ -374,12 +424,17 @@ def score_base(M, removed, drop=(), mode=None, strict=None, novote=(), flip=()):
     P_c = 1 - exp(-C_c / K_c), with K_c set so the full record gives CAL. Overall P = product of the five (all were needed).
     Delay: years to rebuild the lost share at the pace the channel was originally built."""
     removed = lost_force(M, set(removed), mode, strict, novote, flip)
+    keep = {}
+    for B in M.get('blocs', []):
+        lead_rec_gone = B['leader'] in removed or (B['leader'] + '>decl_indep') in drop
+        if lead_rec_gone:
+            for m in B['members']: keep[m] = min(keep.get(m, 1.0), 1 - B['follow'])
     seen = reach(M, removed, drop)
     cap = [0.0] * NC; ties = [0] * NC; ties0 = [0] * NC
     for f, t, c, w, v in M['edges']:
         ties0[c] += 1
         if f in removed or t in removed or (f + '>' + t) in drop: continue
-        if f in seen or t in seen: cap[c] += v; ties[c] += 1
+        if f in seen or t in seen: cap[c] += v * (keep.get(f, 1.0) if c == 5 else 1.0); ties[c] += 1
     nocarrier = all(c in removed for c in M.get('carriers', []))
     if nocarrier: cap = [0.0] * NC
     import math

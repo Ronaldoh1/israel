@@ -494,3 +494,23 @@ Three decisions are now modelled as decisions:
 The overall chance moves less than the decision chances because the USSR recognized Israel three days after the US, and the UN basis remains.
 
 The build now checks both scripts with `node --check` before writing the page.
+
+## Pass: blocs follow their leaders (5 Nov 2026)
+
+**Blocs, from treaties of the time:**
+- **The Americas:** the Rio Pact (2 Sept 1947). 15 members voted in 1947, and 67% voted with the US.
+- **Western Europe:** the Marshall Plan accord (April 1948). 11 members voted, and 73% voted with the US.
+- **The Soviet side:** the Soviet republics and Moscow's allies. 5 members voted, and 80% voted with the USSR.
+
+**The rule.** If a bloc's leader is out (removed, or not voting for partition), each member that followed it keeps its yes vote and its 1948 recognition only at the bloc's independence (1 − follow share). The vote's pass probability is then computed exactly, and enters the holistic mixture as a pseudo-decision. The same rule applies to both blocs.
+
+**Readings:**
+
+| Removed | On time | Ever | Verdict | Vote passes |
+|---|---|---|---|---|
+| US government alone | 64% | 89% | Still likely, but delayed | 0.17% |
+| USSR alone | 93% | | Happens on time | |
+| Without the United States (group) | 20% | 64% | Possible, with great difficulty | |
+| Healthy Roosevelt | 84% | | Still likely, but delayed | |
+
+New test: "What if only Moscow had backed partition, and Washington had stayed out?"

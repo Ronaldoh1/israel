@@ -12,6 +12,13 @@ function vVote(out){ const yes=VB.vote.yes, no=VB.vote.no;
   const fl=yes.filter(x=>vFlip.has(x)&&!out.has(x)).length, yr=yes.filter(x=>(out.has(x)||vNoVote.has(x))&&!vFlip.has(x)).length, nr=no.filter(x=>out.has(x)).length;
   const y=yes.length-yr-fl, n=no.length-nr+fl+(vMode==='against'?yr:0), unGone=out.has('un')||out.has('unga');
   return {yes:y, no:n, abstain:VB.vote.abstain.length+nr+(vMode==='against'?0:yr), passes:y>=2*n&&!unGone, need:2*n, unGone, yr, fl}; }
+/* blocs: without its leader, a member that followed it keeps its yes (and its 1948 recognition) only at the bloc's independence */
+function vLeaderOut(B, rem){ const L=B.leader; return rem.has(L)||vNoVote.has(L)||vFlip.has(L); }
+function vPassProb(rem){ const v=vVote(rem); if(!v.passes) return 0; const yes=new Set(VB.vote.yes), unsure=[];
+  for(const B of VB.blocs){ if(!vLeaderOut(B,rem)) continue; for(const m of B.members) if(yes.has(m)&&!rem.has(m)&&!vNoVote.has(m)&&!vFlip.has(m)) unsure.push(1-B.follow); }
+  if(!unsure.length) return 1; const sure=v.yes-unsure.length, n=v.no; let dist=[1];
+  for(const p of unsure){ const nd=Array(dist.length+1).fill(0); dist.forEach((q,k)=>{ nd[k]+=q*(1-p); nd[k+1]+=q*p; }); dist=nd; }
+  let ok=0; dist.forEach((q,k)=>{ const y=sure+k, nn=n+(vMode==='against'?unsure.length-k:0); if(y>=2*nn) ok+=q; }); return ok; }
 function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } }
   if(!out.has('res181') && !vVote(out).passes){ out.add('res181'); ch=true; }
   for(const [dep,src] of VB.incorp) if(out.has(src)&&!out.has(dep)&&!VB.core.includes(dep)){ out.add(dep); ch=true; }
@@ -35,6 +42,8 @@ function vDecisionChance(D, rem, dec0){ let dec=dec0||D.decider; const tied=VB.t
 function vScore(rem0){ const rel=[];
   for(const D of VB.decisions){ const p0=vDecisionChance(D,new Set())[0], [p,dec]=vDecisionChance(D,rem0,vDecider[D.id]), r=p0?Math.min(1,p/p0):1;
     if(r<0.999&&!rem0.has(D.act)) rel.push([D,Math.round(r*1e4)/1e4,dec]); }
+  const lf=vLost(rem0), pv=lf.has('res181')?1:vPassProb(lf);
+  if(pv<0.999) rel.push([{id:'un_vote',name:'The UN partition vote, with blocs following their leaders',act:'res181',effects:{remove:['res181']}},Math.round(pv*1e4)/1e4,null]);
   if(!rel.length){ const R=vScoreBase(rem0); R.decisions=[]; return R; }
   const mix=[], sd=new Set(vDrop), sn=new Set(vNoVote), sf=new Set(vFlip);
   for(let m=0;m<(1<<rel.length);m++){ let w=1; const rem2=new Set(rem0);
@@ -43,9 +52,9 @@ function vScore(rem0){ const rel=[];
     vDrop.clear(); sd.forEach(x=>vDrop.add(x)); vNoVote.clear(); sn.forEach(x=>vNoVote.add(x)); vFlip.clear(); sf.forEach(x=>vFlip.add(x)); }
   const top=mix.reduce((a,b)=>b[0]>a[0]?b:a)[1];
   return Object.assign({}, top, {P:mix.reduce((a,[w,x])=>a+w*x.P,0), mix, decisions:rel.map(([D,r,dec])=>({id:D.id,name:D.name,chance:r,decider:dec}))}); }
-function vScoreBase(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
+function vScoreBase(rem0){ const rem=vLost(rem0), keep={}; for(const B of VB.blocs){ if(rem.has(B.leader)||vDrop.has(B.leader+'>decl_indep')) for(const m of B.members) keep[m]=Math.min(keep[m]??1,1-B.follow); } const _k=keep, seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
   for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0&&v>0) funders0.add(f);
-    if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
+    if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v*(c===5?(_k[f]??1):1); ties[c]++; if(c===0&&v>0) funders.add(f); } }
   const nocarrier=VB.carriers.length>0&&VB.carriers.every(c=>rem.has(c)); if(nocarrier){ cap.fill(0); funders.clear(); }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
   const years=(vDrop.size||[...rem].some(x=>VB.actors[x]||VB.framework[x]))?vYears(rem,vDrop):{L:0,per:{},who:{}}, tau=Math.max(0,1-years.L/(VB.y1-VB.y0));
@@ -76,7 +85,7 @@ function vYears(rem, drop){ const A=VB.actors, ids=Object.keys(A), NCh=VB.channe
     per[y]=F; total+=F; }
   return {L:total, per, who}; }
 function vDecText(R){ if(!R.decisions||!R.decisions.length) return '';
-  return `<ul class="vul">${R.decisions.map(x=>{ const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one documented left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>
+  return `<ul class="vul">${R.decisions.map(x=>{ if(x.id==='un_vote') return `<li><b>${esc(x.name)}</b>: chance it still reaches two-thirds: <b>${Math.round(x.chance*100)}%</b>. A bloc whose leader is out keeps only its members' independent votes.</li>`; const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one documented left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>
   <p class="vtxt">A decision's chance is the documented push over push plus resistance, around whoever decides. Push aimed at the man himself (his staff, friends and correspondents) does not pass to a successor without his own documented tie; resistance stays.</p>`; }
 function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(R.years.who).length?`<p class="vtxt">No years of work lost: documented actors already active at the time could carry what was taken out.</p>`:'';
   const Y=R.years, rows=Object.entries(Y.who).filter(([a,r])=>r.years>=0.5).sort((a,b)=>b[1].years-a[1].years).slice(0,5);
@@ -176,6 +185,8 @@ function vIntro(){
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
   <h4>Key decisions, read as a whole</h4>
   <p class="vtxt">Three decisions are read as decisions, not just as ties: the Balfour Declaration (decided by the War Cabinet), the American vote and pressure for partition in November 1947, and American recognition on 14 May 1948 (both decided by Truman). For each, the map lists who pushed and who resisted, from ties on the map dated before the decision. Its chance of still happening is the push over push plus resistance, relative to the full record, where it happened. If the decider is removed, his documented successor decides (Henry Wallace, in Truman's place). Push aimed at the man himself (his staff, friends and correspondents) does not pass to the successor unless the successor has his own documented tie to that person; the resistance stays; the successor's own documented position counts for or against. The overall chance is then averaged over whether each decision still happens. Each push or resistance counts one; that is an assumption, disclosed here.</p>
+  <h4>Blocs follow their leaders</h4>
+  <p class="vtxt">In 1947-48 most governments moved with the bloc they depended on. Blocs are taken from the treaties of the time: the Americas (the Rio Pact, signed 2 September 1947), Western Europe (the Marshall Plan accord, April 1948) and the Soviet side (the Soviet republics and Moscow's allies). The partition vote itself measures how closely each followed its leader: ${VB.blocs.map(B=>`${esc(B.name)}, ${Math.round(B.follow*100)}%`).join('; ')}. If a leader is out (removed, or not voting for partition), each member that followed it keeps its vote for partition, and its 1948 recognition, only at the bloc's independence (100% minus that share). The vote then passes with a computed probability rather than for certain. The same rule applies to both sides; the Soviet side moved fewer votes, so losing its lead costs less.</p>
   <h4>The power of states</h4>
   <p class="vtxt">A tie with a great power counts for more than a tie with a small state. The five great powers named in the UN Charter are weighed by their economic output in 1950 (Angus Maddison's estimates), relative to France, the smallest of the five: the United States 6.6, the Soviet Union 2.3, Britain 1.6, China 1.1, France 1. Every other state weighs 1. The weight applies to diplomatic ties and to recognitions; in the UN vote every country still has one vote. In 1944 William Fox, who coined the word "superpower", named three: the United States, the Soviet Union and Britain.</p>
   <h4>The Mandate as a framework</h4>
