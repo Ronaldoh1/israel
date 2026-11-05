@@ -14,11 +14,13 @@ import json, os, re, collections, math
 import registry
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CHANNELS = ['money', 'land', 'force', 'diplomacy', 'organization']
-LABEL = {'money': 'Money', 'land': 'Land & settlers', 'force': 'Arms & force', 'diplomacy': 'Diplomacy & law', 'organization': 'Organization'}
+CHANNELS = ['money', 'land', 'force', 'diplomacy', 'organization', 'recognition']
+NC = len(CHANNELS)
+LABEL = {'money': 'Money', 'land': 'Land & settlers', 'force': 'Arms & force', 'diplomacy': 'Diplomacy & law', 'organization': 'Organization', 'recognition': 'Recognition'}
 NEED = {'money': 'another source of money on the same scale', 'land': 'another land-buying and settlement apparatus',
         'force': 'another arms supplier or armed force', 'diplomacy': 'another great-power sponsor, legal basis or UN majority',
-        'organization': 'another organizing body and leadership'}
+        'organization': 'another organizing body and leadership',
+        'recognition': 'another route to recognition as a state (a new UN majority, or recognition by the great powers)'}
 
 CORE = ['decl_indep', 'provisional', 'jewish_agency', 'wzo', 'haganah', 'res181']
 MONEY_T = {'funding', 'purchase', 'sale', 'ownership'}
@@ -47,6 +49,7 @@ def post_ids():
 
 
 def channel(e, N):
+    if e['type'] == 'recognition' or (e['f'], e['t']) == ('res181', 'decl_indep'): return 'recognition'
     if e['type'] not in SUPPORT: return None
     a, b = N[e['f']], N[e['t']]
     if a['cluster'] in NOT_SUPPORT_CL or b['cluster'] in NOT_SUPPORT_CL: return None
@@ -80,16 +83,19 @@ DEFAULT_M = 1.0          # money ties with no stated sum are assumed to carry $1
 NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock')}   # money that did not go to the project
 US_RAISED = [('meir', 'czechoslovakia')]   # money raised in the United States though carried by a non-American
 CAL = 0.99               # each channel is calibrated so the full record gives it 99%
-EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1}   # money counts twice in the overall chance
+EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1, 'recognition': 1}
+REC_UN = 22.0           # Resolution 181 in force: the UN's legal basis, weighed as much as all the 1948 recognitions together
+GREAT = {'us_gov': 3, 'ussr': 3}   # a great power's recognition weighs three; any other state's, one
+VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
 HAZARD = 0.02            # each year of delay loses 2% of the chance: the 1947-48 window (end of the Mandate, the UN vote, post-war
                          # sympathy, Soviet and American support at once) was not going to stay open
 HORIZONS = [10, 30]      # readings: founded by 1958, and within a generation (by 1978)
 VERDICT = [(85, 'on', 'Happens on time, in 1948'), (70, 'on', 'Still likely, but delayed'), (75, 'ever', 'Still likely, but delayed'), (55, 'ever', 'Possible, with great difficulty'),
            (30, 'ever', 'Unlikely'), (0, 'ever', 'Not possible on this record')]   # who gave a document its force
-T_BUILD = {'money': 51, 'land': 66, 'force': 28, 'diplomacy': 31, 'organization': 51}   # years each channel took to build
+T_BUILD = {'money': 51, 'land': 66, 'force': 28, 'diplomacy': 31, 'organization': 51, 'recognition': 3}   # years each channel took to build
 T_FROM = {'money': 'the first Zionist Congress, 1897', 'land': 'the first colonies, 1882', 'force': 'the founding of the Haganah, 1920',
-          'diplomacy': 'the Balfour Declaration, 1917', 'organization': 'the first Zionist Congress, 1897'}
+          'diplomacy': 'the Balfour Declaration, 1917', 'organization': 'the first Zionist Congress, 1897', 'recognition': 'the founding of the UN, 1945'}
 US_EXTRA = ['sonneborn', 'sonneborn_inst', 'schwimmer', 'winters', 'greenspun', 'bernstein', 'lansky', 'mickey_cohen', 'siegel',
             'schiff', 'warburg_f', 'warburg_p', 'kuhn_loeb', 'americans_haganah', 'montor', 'feinberg', 'jacobson', 'straus_n']
 
@@ -120,11 +126,12 @@ def model(d):
     edges = []
     for (f, t, c), w in best.items():
         if c == 0: v = 0.0 if (f, t) in CONDUIT else w * AMOUNT.get((f, t), (DEFAULT_M,))[0]
+        elif c == 5: v = REC_UN if (f, t) == ('res181', 'decl_indep') else w * GREAT.get(f, 1)
         else: v = w * (cf[f] + cf[t]) / 2
         edges.append([f, t, c, w, round(v, 4)])
     issuers = collections.defaultdict(set)
     for e in d['edges']:
-        if e['status'] in ('verified', 'reported') and e['type'] in ISSUE_T and N[e['t']]['kind'] == 'document' and e['f'] not in post and e['t'] not in post:
+        if e['status'] in ('verified', 'reported') and e['type'] in ISSUE_T and N[e['t']]['kind'] == 'document' and e['f'] not in post and e['t'] not in post and e['t'] not in ('res181', 'decl_indep'):
             issuers[e['t']].add(e['f'])
     groups = collections.OrderedDict()
     groups['Rothschild family and houses'] = sorted(n['id'] for n in d['nodes'] if n['cluster'] == 'rothschild')
@@ -134,22 +141,34 @@ def model(d):
                      ('soviet bloc', 'Soviet bloc'), ('finance', 'Finance and banks'), ('zionist movement', 'Zionist movement leadership'),
                      ('militias', 'Armed groups and arms network'), ('religion', 'Religious institutions'), ('christian zionism', 'Christian Zionism')]:
         groups[name] = sorted(n['id'] for n in d['nodes'] if n['cluster'] == cl and n['id'] not in post)
+    groups['The United Nations'] = [x for x in ['un', 'unga', 'unsc', 'unscop'] if x in N]
+    groups['Countries that voted for partition'] = sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == 'vote for'})
     groups['France'] = [x for x in ['france_gov', 'cambon', 'cambon_letter', 'bidault', 'millerand', 'berthelot', 'picot', 'clemenceau'] if x in N]
     groups['The Vatican'] = [x for x in ['vatican', 'pius10', 'pius12', 'benedict15', 'gasparri', 'merry_del_val', 'agliardi', 'tardini', 'maglione'] if x in N]
     core = [c for c in CORE if c in N]
     seen0 = reach({'edges': edges, 'core': core}, set())
     edges = [e for e in edges if e[0] in seen0 or e[1] in seen0]
-    cap0 = [0.0] * 5
+    cap0 = [0.0] * NC
     for e in edges: cap0[e[2]] += e[4]
     amounts = {f + '>' + t: [v, txt] for (f, t), (v, txt) in AMOUNT.items()}
-    return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups,
+    vote = {k: sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == ty}) for k, ty in [('yes', 'vote for'), ('no', 'vote against'), ('abstain', 'abstention')]}
+    return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
             'conduit': [f + '>' + t for f, t in CONDUIT], 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
 
-def lost_force(M, removed):
+def vote181(M, out, mode=None):
+    """Resolution 181 needs two-thirds of the votes cast (abstentions not counted): yes >= 2 x no. A removed no-vote does not
+    vote; a removed yes-vote abstains, or, in the harsher reading, votes against."""
+    mode = mode or M.get('vote_mode', 'abstain'); yes = set(M['vote']['yes']); no = set(M['vote']['no'])
+    y = len(yes - out); n = len(no - out) + (len(yes & out) if mode == 'against' else 0)
+    return {'yes': y, 'no': n, 'abstain': len(M['vote']['abstain']) + len(no & out) + (len(yes & out) if mode != 'against' else 0),
+            'passes': y >= 2 * n and not ({'un', 'unga'} & out), 'need': 2 * n, 'un_gone': bool({'un', 'unga'} & out)}
+
+
+def lost_force(M, removed, mode=None):
     """Documents whose every issuer (official act or signature) is removed lose their force, and count as removed;
     repeated until nothing changes, so a treaty resting on a fallen document falls too only if its own issuers fall."""
     out = set(removed); ch = True
@@ -157,6 +176,7 @@ def lost_force(M, removed):
         ch = False
         for doc, iss in M['issuers'].items():
             if doc not in out and iss and all(i in out for i in iss): out.add(doc); ch = True
+        if 'res181' not in out and M.get('vote') and not vote181(M, out, mode)['passes']: out.add('res181'); ch = True
     return out
 
 
@@ -174,24 +194,24 @@ def reach(M, removed, drop=()):
     return seen
 
 
-def score(M, removed, drop=()):
+def score(M, removed, drop=(), mode=None):
     """Capacity still connected to the core, per channel, turned into a probability by saturation:
     P_c = 1 - exp(-C_c / K_c), with K_c set so the full record gives CAL. Overall P = product of the five (all were needed).
     Delay: years to rebuild the lost share at the pace the channel was originally built."""
-    removed = lost_force(M, set(removed))
+    removed = lost_force(M, set(removed), mode)
     seen = reach(M, removed, drop)
-    cap = [0.0] * 5; ties = [0] * 5; ties0 = [0] * 5
+    cap = [0.0] * NC; ties = [0] * NC; ties0 = [0] * NC
     for f, t, c, w, v in M['edges']:
         ties0[c] += 1
         if f in removed or t in removed or (f + '>' + t) in drop: continue
         if f in seen or t in seen: cap[c] += v; ties[c] += 1
     import math
     k = -math.log(1 - M['cal'])
-    P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(5)]
+    P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(NC)]
     tot = 100.0
     for i, p in enumerate(P): tot *= p ** M['exp'][i]
-    r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(5)]
-    delay = [M['tbuild'][i] * (1 - r[i]) for i in range(5)]
+    r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(NC)]
+    delay = [M['tbuild'][i] * (1 - r[i]) for i in range(NC)]
     return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed}
 
 
@@ -232,18 +252,18 @@ def run(path=os.path.join(HERE, 'network.json')):
     d = json.load(open(path))
     M = model(d)
     R0 = score(M, set())
-    own = collections.defaultdict(lambda: [0.0] * 5)
+    own = collections.defaultdict(lambda: [0.0] * NC)
     for f, t, c, w, v in M['edges']:
         own[f][c] += v; own[t][c] += v
     for n in d['nodes']:
-        R = score(M, {n['id']}); k = min(range(5), key=lambda i: R['pc'][i])
+        R = score(M, {n['id']}); k = min(range(NC), key=lambda i: R['pc'][i])
         n.setdefault('qop', {})['viability'] = {
             'V': round(R['P'], 1), 'rating': rating(R['P']), 'weakest': CHANNELS[k], 'channels': [round(x, 3) for x in R['pc']],
             'delay': round(max(R['delay']), 1), 'drop': round(R0['P'] - R['P'], 1), 'read': readings(M, R),
-            'weight': [round(own[n['id']][i] / M['cap0'][i], 3) if M['cap0'][i] else 0 for i in range(5)]}
+            'weight': [round(own[n['id']][i] / M['cap0'][i], 3) if M['cap0'][i] else 0 for i in range(NC)]}
     G = {}
     for name, ids in M['groups'].items():
-        R = score(M, set(ids), set(M['drop'].get(name, []))); k = min(range(5), key=lambda i: R['pc'][i])
+        R = score(M, set(ids), set(M['drop'].get(name, []))); k = min(range(NC), key=lambda i: R['pc'][i])
         G[name] = {'V': round(R['P'], 1), 'rating': rating(R['P']), 'weakest': CHANNELS[k], 'n': len(ids), 'delay': round(max(R['delay']), 1),
                    'channels': [round(x, 3) for x in R['pc']], 'money_m': round(R['cap'][0], 2), 'read': readings(M, R)}
     d['viability_meta'] = {'baseline': round(R0['P'], 1), 'edges_counted': len(M['edges']), 'money_m': round(M['cap0'][0], 2),

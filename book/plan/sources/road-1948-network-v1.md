@@ -332,3 +332,39 @@ Combined readings:
 | Rothschild family + Herzl | 78% | 78% | Still likely, but delayed |
 | Rothschild family + Herzl + Weizmann | 76% | 77% | Still likely, but delayed |
 | Rothschild family + the United States | 11% | 52% | Unlikely (best retry 1969; rebuild about 45 years) |
+
+## Pass: the UN layer and the partition vote (5 Nov 2026)
+
+New layer (un_layer.py, 103 ties, 36 new nodes):
+- **The UN:** Charter signed 26 Jun 1945 by 50 countries; the UN came into existence 24 Oct 1945.
+- **UNSCOP:** formed May 1947, with its members. Its majority report (3 Sep 1947) proposed partition with economic union.
+- **The vote:** all 57 members' votes on Resolution 181 (29 Nov 1947), 33 for, 13 against, 10 abstaining. Siam was absent after its credentials were cancelled.
+- **The reported pressure campaign:**
+  - Philippines: a phone call from Washington.
+  - Haiti: a $5M loan.
+  - Liberia: pressure from Firestone and threatened aid cuts.
+  - France: Baruch implied that US aid could be blocked.
+  - A telegram from 26 senators to wavering countries.
+  - Lovett's "bribes and threats" report.
+  - Zemurray's reported pressure on Central American states.
+  - The three-day postponement.
+  - Nehru's bribery claim.
+  - Arab threats of an oil embargo.
+- **Recognitions in 1948:** 18 states with dates. The US was first, de facto on 14 May; the USSR was the first de jure, on 17 May.
+- **The Declaration:** it cites Resolution 181 among its legal bases, and was signed by the Provisional State Council.
+- **UN admission:** Resolution 273, 11 May 1949, 37–12–9.
+
+Model:
+- **A sixth channel, recognition.** Resolution 181 in force is weighted 22, as much as all the 1948 recognitions together. The US and USSR are weighted 3 each, every other recognizing state 1. Lost recognition is rebuilt over 3 years.
+- **The vote rule.** Resolution 181 passes only if the votes for are at least twice the votes against (two-thirds of votes cast), and only if the UN and the General Assembly remain. A removed yes-vote counts as an abstention by default; the user can switch to "votes against". A removed no-vote does not vote.
+- Full record = 93%.
+
+Readings:
+
+| Removed | Vote | On time | Verdict |
+|---|---|---|---|
+| The UN | no vote held | 84% | Still likely, but delayed |
+| Philippines, Haiti, Liberia (as abstentions) | 30–13, passes | 93% | Happens on time |
+| Philippines, Haiti, Liberia (as votes against) | 30–16, fails | 84% | Still likely, but delayed |
+| Countries that voted for partition | fails | 52% | Still likely, but delayed (ever 87%) |
+| Rothschilds + US | | 31% | Possible, with great difficulty |

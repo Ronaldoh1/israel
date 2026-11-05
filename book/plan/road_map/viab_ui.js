@@ -3,10 +3,19 @@ const VB = DATA.viab;
 const vDrop = new Set();          // ties dropped by a scenario (money raised in the US but carried by a non-American)
 const VKEY = 'road_removed_v1', VINTRO = 'road_model_intro_v1';
 function vLS(k, v){ try{ if(v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); if(v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
-function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } } } return out; }
+let vMode = vLS('road_vote_mode') || VB.vote_mode;
+/* Resolution 181 needs two-thirds of the votes cast: at least twice as many for as against */
+function vVote(out){ const yes=VB.vote.yes, no=VB.vote.no, yr=yes.filter(x=>out.has(x)).length, nr=no.filter(x=>out.has(x)).length;
+  const y=yes.length-yr, n=no.length-nr+(vMode==='against'?yr:0), unGone=out.has('un')||out.has('unga');
+  return {yes:y, no:n, abstain:VB.vote.abstain.length+nr+(vMode==='against'?0:yr), passes:y>=2*n&&!unGone, need:2*n, unGone, yr}; }
+function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } }
+  if(!out.has('res181') && !vVote(out).passes){ out.add('res181'); ch=true; } } return out; }
+function vVoteLine(rem0){ const v=vVote(vLost(rem0));
+  if(v.unGone) return `<b>The UN partition vote cannot happen</b>: without the United Nations there is no General Assembly to hold it.`;
+  return `UN partition vote: <b>${v.yes} for, ${v.no} against</b>, ${v.abstain} abstaining. ${v.passes?`<b>Passes</b> (two-thirds needed: at least ${v.need} for).`:`<b>Fails</b>: two-thirds of the votes cast were needed, at least ${v.need} for.`}${v.yr?` ${v.yr} removed yes-vote${v.yr===1?'':'s'} counted as ${vMode==='against'?'votes against':'abstentions'}.`:''}`; }
 function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; (adj.get(f)||adj.set(f,[]).get(f)).push(t); (adj.get(t)||adj.set(t,[]).get(t)).push(f); }
   const seen=new Set(VB.core.filter(x=>!rem.has(x))), q=[...seen]; while(q.length){ const u=q.pop(); for(const v of adj.get(u)||[]) if(!seen.has(v)){ seen.add(v); q.push(v); } } return seen; }
-function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=[0,0,0,0,0], ties=[0,0,0,0,0], ties0=[0,0,0,0,0], funders=new Set(), funders0=new Set();
+function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
   for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0&&v>0) funders0.add(f);
     if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
@@ -84,8 +93,8 @@ function vIntro(){
   const amts=Object.entries(VB.amounts).sort((a,b)=>b[1][0]-a[1][0]);
   vOpen(`<div class="kind">How the chances are computed</div><h3 id="vmH">A model of what the state needed, built only from this map</h3>
   <p class="vtxt">Take any node out and the map works out the chance that the state is still founded in 1948, how much money still reaches the movement, and how long the loss would delay it. It is a model built on the documented record, not a measured historical probability. Here is everything it does.</p>
-  <h4>1. Five things the state needed</h4>
-  <p class="vtxt">Every supportive tie dated before 1949 is sorted into one channel: <b>money</b>; <b>land and settlers</b>; <b>arms and force</b>; <b>diplomacy and law</b>; <b>organization</b>. Opposition, violence, ties on the Arab or Nazi side, and money that did not go to the project (Rothschild loans to the British treasury, the Suez purchase) are left out.</p>
+  <h4>1. Six things the state needed</h4>
+  <p class="vtxt">Every supportive tie dated before 1949 is sorted into one channel: <b>money</b>; <b>land and settlers</b>; <b>arms and force</b>; <b>diplomacy and law</b>; <b>organization</b>; <b>recognition</b> as a state. Opposition, violence, ties on the Arab or Nazi side, and money that did not go to the project (Rothschild loans to the British treasury, the Suez purchase) are left out.</p>
   <h4>2. Money counts most</h4>
   <p class="vtxt">Without money nothing else could be bought, built or defended, so the money channel counts twice in the overall chance. Each money tie is weighted by the sum the record states, in 1948 dollars (francs at 5.18 to the dollar, sterling at $4.86, older sums brought to 1948 prices). Where the record states no sum the tie is assumed to carry ${vMoney(VB.default_m)}; that is an assumption, not a finding. Money passed along (the UJA to the UPA) or already inside a total (Edmond's colonies, inside his lifetime figure) is counted once.</p>
   <table>${amts.map(([k,a])=>`<tr><td>${esc(a[1])}</td><td>${vMoney(a[0])}</td></tr>`).join('')}<tr><td>Total money in the record, 1948 dollars</td><td>${vMoney(VB.cap0[0])}</td></tr></table>
@@ -96,9 +105,12 @@ function vIntro(){
   <h4>5. Every removal is recalculated</h4>
   <p class="vtxt">After each removal the whole network is walked again from the core (the Declaration, the provisional government, the Jewish Agency, the Zionist Organization, the Haganah, Resolution 181). A tie counts only if neither end is gone and it still connects to the core, so a funder cut off from the core no longer counts even if it is still on the map.</p>
   <h4>6. From capacity to a chance</h4>
-  <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All five were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
+  <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All six were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>Recognition and the UN vote</h4>
+  <p class="vtxt">The UN was founded on 24 October 1945. On 29 November 1947 its General Assembly adopted partition, Resolution 181, by 33 votes to 13 with 10 abstentions; two-thirds of the votes cast were needed, so it needed at least twice as many votes for as against. The map holds that vote: remove countries that voted for it and they count as abstaining (or, if you choose the harsher reading, as voting against); remove countries that voted against and they do not vote. If the count falls below two-thirds, or the UN itself is removed, Resolution 181 loses its force.</p>
+  <p class="vtxt">The recognition channel weighs Resolution 181 in force as 10 (the UN's legal basis, which the Declaration of Independence cited), each great power's recognition in 1948 (the United States and the Soviet Union) as 3, and each other state's 1948 recognition as 1. A state could still be recognized without the UN vote, as the United States recognized Israel a year before its UN admission in May 1949, so losing the vote weakens recognition but does not end it. Lost recognition is rebuilt over three years, the time from the UN's founding to the vote.</p>
   <h4>8. Five readings of every removal</h4>
   <ul><li><b>Founded on time, in 1948</b>: the chance computed above.</li>
   <li><b>Founded by 1958</b> and <b>ever becomes a state</b>: the movement can wait while it rebuilds, but each year waited costs 2% of the chance, because the window of 1947-48 (the end of the Mandate, the UN vote, post-war sympathy, American and Soviet support at the same moment) was closing. The best year to try is chosen; the reading never falls below 1948's. A channel with nothing left cannot regrow from inside the record.</li>
@@ -120,10 +132,10 @@ function vResult(what, before, ids){
   vOpen(`<div class="kind">Removed from the network</div><h3 id="vmH">${esc(what)}</h3>
   ${vHead(R)}
   <p class="vtxt">${ids?`On time: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).`:`Everything removed is read together: ${Math.round(R.P)}% on time now, against ${Math.round(V0.P)}% on the full record.`}</p>
-  <h4>The five channels</h4>${vBars(R)}
+  <h4>The six channels</h4>${vBars(R)}
   <h4>What happened in the graph</h4>
-  <ul><li>${cut} documented tie${cut===1?'':'s'} cut.</li>
-  ${R.lostDocs.length?`<li>Lost its force: ${R.lostDocs.map(x=>esc(vName(x))).join(', ')} (every body that issued it is gone).</li>`:''}
+  <ul><li>${vVoteLine(removed)}</li><li>${cut} documented tie${cut===1?'':'s'} cut.</li>
+  ${R.lostDocs.filter(x=>x!=='res181').length?`<li>Lost their force: ${R.lostDocs.filter(x=>x!=='res181').map(x=>esc(vName(x))).join(', ')} (every body that issued them is gone).</li>`:''}${R.lostDocs.includes('res181')&&!removed.has('res181')?`<li>Resolution 181 never passes, so the Declaration loses its UN legal basis; recognition rests on individual states alone.</li>`:''}
   <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone or cut off)`:''}, from ${R.funders} of ${R.funders0} funders.</li>
   <li>${removed.size} node${removed.size===1?'':'s'} removed in total, read together; they stay removed until you reset the graph${removed.size?`: ${[...removed].slice(0,40).map(x=>esc(vName(x))).join(', ')}${removed.size>40?` and ${removed.size-40} more`:''}`:''}.</li></ul>
   ${vDelayText(R)}${vNeed(R)}
@@ -160,7 +172,7 @@ function vSignal(label, before){
   const n=removed.size, what=n?`${n} node${n===1?'':'s'} removed`:'Nothing removed';
   vSig.style.setProperty('--lc', lc);
   vSig.innerHTML=`<span class="lamp" aria-hidden="true"></span><div><div class="t1">${esc(rd.verdict)}${rd.verdict.indexOf('delayed')>=0?` · ~${Math.round(rd.delay)} yrs`:''}</div>
-   <div class="t2">${esc(label)} · ${what}<br><b>${Math.round(rd.on)}%</b> on time${d?` (${d>0?'+':''}${d})`:''} · <b>${Math.round(rd.ever)}%</b> ever · movement <b>${Math.round(rd.survive)}%</b> · tap for details</div></div>
+   <div class="t2">${esc(label)} · ${what}${vVote(vLost(removed)).passes?'':' · <b>the UN vote fails</b>'}<br><b>${Math.round(rd.on)}%</b> on time${d?` (${d>0?'+':''}${d})`:''} · <b>${Math.round(rd.ever)}%</b> ever · movement <b>${Math.round(rd.survive)}%</b> · tap for details</div></div>
    <button class="x" type="button" aria-label="Dismiss">×</button><span class="bar" id="vSigBar"></span>`;
   vSig.classList.add('on'); clearTimeout(vSigT);
   const bar=document.getElementById('vSigBar'); bar.animate([{transform:'scaleX(1)'},{transform:'scaleX(0)'}],{duration:6500,easing:'linear'});
@@ -181,8 +193,8 @@ $('board').insertAdjacentHTML('beforeend','<div class="vpill" id="vPill"><span i
 function vPill(){ const p=$('vPill'); if(!p) return; const n=removed.size; if(!n&&!vDrop.size){ p.classList.remove('on'); return; }
   const R=vScore(removed); $('vPillT').innerHTML=`${n} removed · <b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b> on time`; p.classList.add('on'); }
 $('vPillV').onclick=()=>{ const R=vScore(removed); vOpen(`<div class="kind">The network as it stands</div><h3 id="vmH">${[...removed].map(vName).map(esc).join(', ')||'Scenario'}</h3>
-  ${vHead(R)}<h4>The five channels</h4>${vBars(R)}
-  <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}, from ${R.funders} of ${R.funders0} funders.</p>${vDelayText(R)}${vNeed(R)}
+  ${vHead(R)}<h4>The six channels</h4>${vBars(R)}
+  <p class="vtxt">${vVoteLine(removed)}</p><p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}, from ${R.funders} of ${R.funders0} funders.</p>${vDelayText(R)}${vNeed(R)}
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button><button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`); };
 $('vPillR').onclick=()=>$('reset').click();
 
@@ -192,7 +204,8 @@ function viabBlock(){
   const opts=Object.keys(VB.groups).map(g=>`<option value="${esc(g)}">${esc(g)} (${VB.groups[g].length})</option>`).join('');
   let h=`<div class="viab"><div class="vlabel">The state&rsquo;s chances, on this record</div>
   ${vHead(R)}${any?`<p class="vtxt">On time: down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%.</p>`:''}${vBars(R)}
-  <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p>`;
+  <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p><p class="vtxt">${vVoteLine(removed)}</p>
+  <label class="vtxt" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">Removed yes-votes count as <select id="vmode" class="sel" style="padding:5px 26px 5px 8px"><option value="abstain"${vMode==='abstain'?' selected':''}>abstentions</option><option value="against"${vMode==='against'?' selected':''}>votes against</option></select></label>`;
   if(any) h+=vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
   h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><select id="vgrp" class="sel" style="flex:1 1 180px;padding:7px 30px 7px 10px">${opts}</select><button id="vgo" class="ghost" type="button">Remove group</button>${any?'<button id="vclr" class="ghost" type="button">Restore all</button>':''}</div>
   <div class="vbtns" style="margin-top:8px"><button class="vbtn" type="button" id="vhow">How this is computed</button></div></div>`;
@@ -202,6 +215,7 @@ function delPanel(r){ delPanel0(r); $('side').insertAdjacentHTML('afterbegin', v
   const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; vRemove(VB.groups[g], g==='Without the United States'?'the United States':g, VB.drop[g]); };
   const cl=$('vclr'); if(cl) cl.onclick=()=>$('reset').click();
   const hw=$('vhow'); if(hw) hw.onclick=vIntro;
+  const vm=$('vmode'); if(vm) vm.onchange=()=>{ const before=vScore(removed).P; vMode=vm.value; vLS('road_vote_mode', vMode); vRefresh(); vSignal('Removed yes-votes now count as '+(vMode==='against'?'votes against':'abstentions'), before); };
 }
 /* tapping a node in Remove mode removes it (or restores it) and shows what happened */
 const vPick0 = pick;

@@ -628,6 +628,43 @@ kofer|Kofer HaYishuv (defense levy, 1938)|institution|militias|Kofer HaYishuv;Ko
 straus_n|Nathan Straus|person|us lobby|Nathan Straus
 pec_econ|Palestine Economic Corporation (1925)|company|finance|Palestine Economic Corporation
 angloam1924|Anglo-American Convention on Palestine (1924)|document|us government|Anglo-American Convention
+# ---------- UN layer: every vote on partition, recognitions (added Nov 2026) ----------
+belgium|Belgium (government)|government|international|Belgian government
+bolivia|Bolivia (government)|government|international|Bolivian government
+byelorussia|Byelorussian SSR|government|soviet bloc|Byelorussian SSR;Byelorussia
+costa_rica|Costa Rica (government)|government|international|Costa Rican government
+denmark|Denmark (government)|government|international|Danish government
+dominican|Dominican Republic (government)|government|international|Dominican Republic
+ecuador|Ecuador (government)|government|international|Ecuadorian government
+iceland|Iceland (government)|government|international|Icelandic government
+luxembourg|Luxembourg (government)|government|international|Luxembourg government
+new_zealand|New Zealand (government)|government|international|New Zealand government
+norway|Norway (government)|government|international|Norwegian government
+paraguay|Paraguay (government)|government|international|Paraguayan government
+poland48|Poland (government, 1940s)|government|soviet bloc|Polish government@cw1
+ukraine_ssr|Ukrainian SSR|government|soviet bloc|Ukrainian SSR
+venezuela|Venezuela (government)|government|international|Venezuelan government
+afghanistan|Afghanistan (government)|government|international|Afghan government
+lebanon|Lebanon (government)|government|arab states|Lebanese government
+pakistan|Pakistan (government)|government|international|Pakistani government
+saudi|Saudi Arabia (government)|government|arab states|Saudi government
+turkey|Turkey (government)|government|international|Turkish government
+yemen|Yemen (government)|government|arab states|Yemeni government
+argentina|Argentina (government)|government|international|Argentine government
+chile|Chile (government)|government|international|Chilean government
+china|China (government)|government|international|Chinese government;Nationalist China
+colombia|Colombia (government)|government|international|Colombian government
+el_salvador|El Salvador (government)|government|international|Salvadoran government
+ethiopia|Ethiopia (government)|government|international|Ethiopian government
+honduras|Honduras (government)|government|international|Honduran government
+siam|Siam (government)|government|international|Siamese delegation
+hungary|Hungary (government)|government|soviet bloc|Hungarian government
+finland|Finland (government)|government|international|Finnish government
+romania|Romania (government)|government|soviet bloc|Romanian government
+bulgaria|Bulgaria (government)|government|soviet bloc|Bulgarian government
+baruch|Bernard Baruch|person|finance|Bernard Baruch;Baruch
+zemurray|Sam Zemurray|person|finance|Sam Zemurray;Zemurray
+res273|UN Resolution 273 (admission of Israel, 1949)|document|international|Resolution 273
 """
 
 

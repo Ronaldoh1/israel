@@ -1,0 +1,899 @@
+{
+ "_note": "UN layer (Nov 2026). Built by un_layer.py; do not edit by hand.",
+ "node_notes": {
+  "+un": "Founded 24 Oct 1945 (Charter signed 26 June 1945 by 50 countries), after the League of Nations had effectively closed in 1939. Partition needed two-thirds of the General Assembly votes cast.",
+  "+res181": "Adopted 29 Nov 1947, 33 to 13 with 10 abstentions (Siam absent). Two-thirds of votes cast was needed: 31 of 46. It would have failed with 3 fewer votes for and 3 more against, or with 8 votes for turned into abstentions.",
+  "res273": "UN admission of Israel, 11 May 1949 (37-12-9)."
+ },
+ "vote181": {
+  "yes": [
+   "australia",
+   "belgium",
+   "bolivia",
+   "brazil",
+   "byelorussia",
+   "canada",
+   "costa_rica",
+   "czechoslovakia",
+   "denmark",
+   "dominican",
+   "ecuador",
+   "france_gov",
+   "guatemala",
+   "haiti",
+   "iceland",
+   "liberia",
+   "luxembourg",
+   "netherlands",
+   "new_zealand",
+   "nicaragua",
+   "norway",
+   "panama",
+   "paraguay",
+   "peru",
+   "philippines",
+   "poland48",
+   "south_africa",
+   "sweden",
+   "ukraine_ssr",
+   "uruguay",
+   "us_gov",
+   "ussr",
+   "venezuela"
+  ],
+  "no": [
+   "afghanistan",
+   "cuba",
+   "egypt",
+   "greece",
+   "india",
+   "iran",
+   "iraq",
+   "lebanon",
+   "pakistan",
+   "saudi",
+   "syria",
+   "turkey",
+   "yemen"
+  ],
+  "abstain": [
+   "argentina",
+   "chile",
+   "china",
+   "colombia",
+   "el_salvador",
+   "ethiopia",
+   "honduras",
+   "mexico",
+   "uk",
+   "yugoslavia"
+  ],
+  "need": "2/3 of yes+no"
+ },
+ "edges": [
+  {
+   "f": "un",
+   "t": "unga",
+   "type": "branch",
+   "status": "verified",
+   "src": "u_wp_un",
+   "label": "Charter signed at San Francisco on 26 June 1945 by 50 countries; the UN came into existence on 24 Oct 1945. It replaced the League of Nations, which had effectively closed in 1939."
+  },
+  {
+   "f": "un",
+   "t": "unscop",
+   "type": "founding",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "May 1947: the UN formed the Special Committee on Palestine (UNSCOP)."
+  },
+  {
+   "f": "unscop",
+   "t": "res181",
+   "type": "proposal",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "3 Sept 1947: UNSCOP's majority (Canada, Czechoslovakia, Guatemala, the Netherlands, Peru, Sweden, Uruguay) proposed partition with economic union; India, Iran and Yugoslavia proposed a federal state; Australia abstained."
+  },
+  {
+   "f": "canada",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Canada sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Czechoslovakia sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "guatemala",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Guatemala sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "netherlands",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Netherlands sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "peru",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Peru sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "sweden",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Sweden sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "uruguay",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Uruguay sat on UNSCOP and backed its majority plan for partition."
+  },
+  {
+   "f": "india",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "India sat on UNSCOP and backed the minority plan for a federal state."
+  },
+  {
+   "f": "iran",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Iran sat on UNSCOP and backed the minority plan for a federal state."
+  },
+  {
+   "f": "yugoslavia",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Yugoslavia sat on UNSCOP and backed the minority plan for a federal state."
+  },
+  {
+   "f": "unga",
+   "t": "res181",
+   "type": "official act",
+   "status": "verified",
+   "src": "u_wp_part; u_jvl_181",
+   "label": "29 Nov 1947: adopted 33 to 13 with 10 abstentions and 1 absent. It needed two-thirds of the votes cast, abstentions not counted, among the 57 members; held on the original date it would have had a majority but not two-thirds."
+  },
+  {
+   "f": "australia",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Australia voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "belgium",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Belgium voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "bolivia",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Bolivia voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "brazil",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Brazil voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "byelorussia",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Byelorussian SSR voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "canada",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Canada voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "costa_rica",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Costa Rica voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Czechoslovakia voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "denmark",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Denmark voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "dominican",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Dominican Republic voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "ecuador",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Ecuador voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "france_gov",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "France voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "guatemala",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Guatemala voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "haiti",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Haiti voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "iceland",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Iceland voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "liberia",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Liberia voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "luxembourg",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Luxembourg voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "netherlands",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Netherlands voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "new_zealand",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "New Zealand voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "nicaragua",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Nicaragua voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "norway",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Norway voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "panama",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Panama voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "paraguay",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Paraguay voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "peru",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Peru voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "philippines",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Philippines voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "poland48",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Poland voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "sweden",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Sweden voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "ukraine_ssr",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Ukrainian SSR voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "south_africa",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Union of South Africa voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "us_gov",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "United States voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "ussr",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Soviet Union voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "uruguay",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Uruguay voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "venezuela",
+   "t": "res181",
+   "type": "vote for",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Venezuela voted for partition, 29 Nov 1947."
+  },
+  {
+   "f": "afghanistan",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Afghanistan voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "cuba",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Cuba voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "egypt",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Egypt voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "greece",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Greece voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "india",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "India voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "iran",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Iran voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "iraq",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Iraq voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "lebanon",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Lebanon voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "pakistan",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Pakistan voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "saudi",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Saudi Arabia voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "syria",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Syria voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "turkey",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Turkey voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "yemen",
+   "t": "res181",
+   "type": "vote against",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Yemen voted against partition, 29 Nov 1947."
+  },
+  {
+   "f": "argentina",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Argentina abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "chile",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Chile abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "china",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "China abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "colombia",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Colombia abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "el_salvador",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "El Salvador abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "ethiopia",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Ethiopia abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "honduras",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Honduras abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "mexico",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Mexico abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "uk",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "United Kingdom abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "yugoslavia",
+   "t": "res181",
+   "type": "abstention",
+   "status": "verified",
+   "src": "u_jvl_181",
+   "label": "Yugoslavia abstained on partition, 29 Nov 1947."
+  },
+  {
+   "f": "siam",
+   "t": "res181",
+   "type": "association",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "Siam was absent: its credentials were cancelled after it voted against partition in committee on 25 Nov 1947."
+  },
+  {
+   "f": "us_gov",
+   "t": "philippines",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "The Philippine delegate had argued against partition; \"after a phone call from Washington, the representative was recalled and the Philippines' vote changed.\""
+  },
+  {
+   "f": "us_gov",
+   "t": "haiti",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "\"The promise of a five million dollar loan may or may not have secured Haiti's vote for partition.\""
+  },
+  {
+   "f": "firestone",
+   "t": "liberia",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "Harvey S. Firestone Jr., with major holdings in Liberia, pressured the Liberian government; Liberia's ambassador complained the US delegation threatened aid cuts."
+  },
+  {
+   "f": "baruch",
+   "t": "france_gov",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "Bernard Baruch visited France's delegate and implied that a French vote against might block planned American aid to France."
+  },
+  {
+   "f": "us_congress",
+   "t": "res181",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "A telegram signed by 26 senators with influence over foreign-aid bills was sent to wavering countries."
+  },
+  {
+   "f": "lovett",
+   "t": "res181",
+   "type": "testimony",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "Under Secretary Robert Lovett reported that \"bribes and threats were being used, even of American sanctions against Liberia and Nicaragua.\""
+  },
+  {
+   "f": "zemurray",
+   "t": "res181",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "Sam Zemurray reportedly pressured Central American states."
+  },
+  {
+   "f": "aranha",
+   "t": "res181",
+   "type": "coordination",
+   "status": "verified",
+   "src": "u_wp_part",
+   "label": "The vote was postponed by three days after filibustering by the Zionist delegation; supporters used the delay to press states not yet backing the resolution."
+  },
+  {
+   "f": "india",
+   "t": "res181",
+   "type": "testimony",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "Nehru said \"the Zionists had tried to bribe India with millions\"; Ambassador Vijaya Lakshmi Pandit reportedly received threats unless she \"voted right\"."
+  },
+  {
+   "f": "arab_league",
+   "t": "res181",
+   "type": "pressure",
+   "status": "reported",
+   "src": "u_wp_part",
+   "label": "The Arab states warned that endorsing partition might bring an oil embargo or a realignment with the Soviet bloc."
+  },
+  {
+   "f": "res181",
+   "t": "decl_indep",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "u_wp_decl",
+   "label": "14 May 1948: the Declaration cited Resolution 181 among its legal bases."
+  },
+  {
+   "f": "provisional",
+   "t": "decl_indep",
+   "type": "signatory",
+   "status": "verified",
+   "src": "u_wp_decl",
+   "label": "All 37 members of the Provisional State Council were to sign; 25 signed at the Tel Aviv Museum on 14 May 1948, with spaces left for the 12 absent."
+  },
+  {
+   "f": "us_gov",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "14 May 1948: recognized Israel, de facto (de jure 31 Jan 1949)."
+  },
+  {
+   "f": "ussr",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "17 May 1948: recognized Israel, de jure, the first state to grant it."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "18 May 1948: recognized Israel, de jure."
+  },
+  {
+   "f": "poland48",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "18 May 1948: recognized Israel, de jure."
+  },
+  {
+   "f": "nicaragua",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "18 May 1948: recognized Israel, de facto and de jure."
+  },
+  {
+   "f": "guatemala",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "19 May 1948: recognized Israel, de facto."
+  },
+  {
+   "f": "uruguay",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "19 May 1948: recognized Israel, de facto, the first in Latin America."
+  },
+  {
+   "f": "hungary",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "24 May 1948: recognized Israel, de facto."
+  },
+  {
+   "f": "finland",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "11 June 1948: recognized Israel, de facto."
+  },
+  {
+   "f": "romania",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "12 June 1948: recognized Israel, de facto."
+  },
+  {
+   "f": "costa_rica",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "19 June 1948: recognized Israel."
+  },
+  {
+   "f": "panama",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "19 June 1948: recognized Israel."
+  },
+  {
+   "f": "venezuela",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "27 June 1948: recognized Israel."
+  },
+  {
+   "f": "paraguay",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "7 Sept 1948: recognized Israel."
+  },
+  {
+   "f": "el_salvador",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "11 Sept 1948: recognized Israel."
+  },
+  {
+   "f": "honduras",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "11 Sept 1948: recognized Israel, de facto; formal on 8 Nov 1948."
+  },
+  {
+   "f": "bulgaria",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "4 Dec 1948: recognized Israel."
+  },
+  {
+   "f": "dominican",
+   "t": "decl_indep",
+   "type": "recognition",
+   "status": "verified",
+   "src": "u_wp_recog",
+   "label": "29 Dec 1948: recognized Israel."
+  },
+  {
+   "f": "unsc",
+   "t": "res273",
+   "type": "proposal",
+   "status": "verified",
+   "src": "u_wp_273",
+   "label": "4 Mar 1949: Security Council Resolution 69 recommended admission."
+  },
+  {
+   "f": "unga",
+   "t": "res273",
+   "type": "official act",
+   "status": "verified",
+   "src": "u_wp_273",
+   "label": "11 May 1949: Israel admitted to the UN, 37 to 12 with 9 abstentions; the resolution recalls Resolutions 181 (Jerusalem) and 194 (refugees) and notes Israel's declarations on implementing them."
+  }
+ ]
+}
