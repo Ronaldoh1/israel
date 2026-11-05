@@ -98,6 +98,24 @@ POWER_CL = {'us government': 'US', 'british state': 'UK'}
 # Ottoman pace: about 90% of that period's land-and-settlers work is lost. Part of the difference came from persecution in Europe
 # in the 1930s, which this credits to the Mandate. The Mandate also needs its Mandatory power, Britain.
 FRAMEWORK = {'mandate': {'y': [1920, 1948], 'ch': 1, 'loss': round(1 - 2190 / 21850, 3), 'needs': ['uk']}}
+# Key decisions, read holistically: who decided, who pushed, who resisted (each from ties on the map, dated by the decision).
+# If the decider is removed, the successor decides; a push aimed at the man (his staff, friends, correspondents) reaches the
+# successor only if the successor has his own documented tie to that person; resistance stays. Chance = push / (push + resistance),
+# relative to the full record (where each decision happened). The overall chance averages over whether each decision happens.
+DECISIONS = [
+ {'id': 'balfour', 'name': 'The Balfour Declaration (2 Nov 1917)', 'act': 'balfour_decl', 'decider': 'war_cabinet', 'successor': None,
+  'levers': ['weizmann', 'sokolow', 'sykes', 'walter_r', 'milner', 'amery', 'ormsby_gore', 'smuts', 'cecil_r', 'graham_r', 'samuel', 'james_armand', 'cambon_letter'],
+  'oppose': ['curzon', 'montagu_memo'], 'effects': {'remove': ['balfour_decl']}},
+ {'id': 'us_partition', 'name': 'The American vote and pressure for partition (Nov 1947)', 'act': 'res181', 'decider': 'truman', 'successor': 'wallace',
+  'levers': ['clifford', 'niles', 'us_congress', 'azec', 'silver'],
+  'oppose': ['henderson', 'marshall_g', 'state_dept'],
+  'effects': {'novote': ['us_gov'], 'flip': ['philippines', 'haiti', 'liberia'], 'drop': ['us_gov>philippines', 'us_gov>haiti', 'us_congress>res181']}},
+ {'id': 'us_recognition', 'name': 'American recognition (14 May 1948)', 'act': 'recognition48', 'decider': 'truman', 'successor': 'wallace',
+  'levers': ['clifford', 'niles', 'jacobson', 'weizmann', 'kirchwey', 'wallace'],
+  'oppose': ['marshall_g', 'state_dept', 'pps_palestine', 'henderson', 'magnes'],
+  'effects': {'remove': ['recognition48'], 'drop': ['us_gov>decl_indep']}},
+]
+STANCE = {'wallace': 2, 'fdr': -1}   # a successor's own documented position: Wallace a supporter (met Ben-Gurion 1947, pressed Truman to end the embargo); Roosevelt's 5 Apr 1945 pledge to Ibn Saud
 REC_UN = None           # Resolution 181 in force weighs as much as all the 1948 recognitions together (computed in model())
 VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
@@ -163,6 +181,11 @@ def model(d):
     addressee = collections.defaultdict(set)
     for e in d['edges']:
         if e['type'] == 'addressee' and e['status'] in ('verified', 'reported') and N[e['f']]['kind'] == 'document': addressee[e['f']].add(e['t'])
+    tied = collections.defaultdict(set)   # who has a documented tie to whom (for personal levers)
+    for e in d['edges']:
+        if e['status'] in ('verified', 'reported') and e['type'] not in ('kinship', 'co-mention'):
+            tied[e['f']].add(e['t']); tied[e['t']].add(e['f'])
+    tied = {k: sorted(v) for k, v in tied.items() if any(D['decider'] == k or D['successor'] == k for D in DECISIONS) or k in STANCE}
     issuers = collections.defaultdict(set)
     for e in d['edges']:
         if e['status'] in ('verified', 'reported') and e['type'] in ISSUE_T and N[e['t']]['kind'] == 'document' and e['f'] not in post and e['t'] not in post and e['t'] not in ('res181', 'decl_indep'):
@@ -200,21 +223,23 @@ def model(d):
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
             'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N],
             'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'power': POWER, 'gdp1950': GDP1950,
+            'decisions': DECISIONS, 'stance': STANCE, 'tied': tied,
             'incorp': [list(x) for x in incorp], 'framework': {k: v for k, v in FRAMEWORK.items() if k in N}, 'addressee': {k: sorted(v) for k, v in addressee.items()}, 'strict': False, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
 
-def vote181(M, out, mode=None):
+def vote181(M, out, mode=None, novote=(), flip=()):
     """Resolution 181 needs two-thirds of the votes cast (abstentions not counted): yes >= 2 x no. A removed no-vote does not
     vote; a removed yes-vote abstains, or, in the harsher reading, votes against."""
     mode = mode or M.get('vote_mode', 'abstain'); yes = set(M['vote']['yes']); no = set(M['vote']['no'])
-    y = len(yes - out); n = len(no - out) + (len(yes & out) if mode == 'against' else 0)
-    return {'yes': y, 'no': n, 'abstain': len(M['vote']['abstain']) + len(no & out) + (len(yes & out) if mode != 'against' else 0),
+    fl = len({x for x in yes if x in flip and x not in out}); gone = {x for x in yes if (x in out or x in novote) and x not in flip}
+    y = len(yes) - len(gone) - fl; n = len(no - out) + fl + (len(gone) if mode == 'against' else 0)
+    return {'yes': y, 'no': n, 'abstain': len(M['vote']['abstain']) + len(no & out) + (len(gone) if mode != 'against' else 0),
             'passes': y >= 2 * n and not ({'un', 'unga'} & out), 'need': 2 * n, 'un_gone': bool({'un', 'unga'} & out)}
 
 
-def lost_force(M, removed, mode=None, strict=None):
+def lost_force(M, removed, mode=None, strict=None, novote=(), flip=()):
     """Documents whose every issuer (official act or signature) is removed lose their force, and count as removed;
     repeated until nothing changes, so a treaty resting on a fallen document falls too only if its own issuers fall."""
     out = set(removed); ch = True
@@ -222,7 +247,7 @@ def lost_force(M, removed, mode=None, strict=None):
         ch = False
         for doc, iss in M['issuers'].items():
             if doc not in out and iss and all(i in out for i in iss): out.add(doc); ch = True
-        if 'res181' not in out and M.get('vote') and not vote181(M, out, mode)['passes']: out.add('res181'); ch = True
+        if 'res181' not in out and M.get('vote') and not vote181(M, out, mode, novote, flip)['passes']: out.add('res181'); ch = True
         # a document that wrote another into its text loses that commitment with it (the Mandate carried the Balfour Declaration)
         for dep, src in M.get('incorp', []):
             if src in out and dep not in out and dep not in M['core']: out.add(dep); ch = True
@@ -300,11 +325,55 @@ def reach(M, removed, drop=()):
     return seen
 
 
-def score(M, removed, drop=(), mode=None, strict=None):
+def decision_chance(M, D, removed, decider=None):
+    """Chance a key decision still happens: documented push over push + resistance, around whoever decides."""
+    dec = decider or D['decider']
+    if dec in removed:
+        dec = D['successor'] if D['successor'] and D['successor'] not in removed else None
+    orig = D['decider']; tied = M.get('tied', {})
+    S = O = 0.0
+    for l in D['levers']:
+        if l in removed or l == dec: continue
+        personal = orig in tied.get(l, []) or l in tied.get(orig, [])
+        if personal and dec != orig and not (dec and (l in tied.get(dec, []))): continue   # the push aimed at the man does not pass to his successor
+        S += 1
+    O = sum(1 for o in D['oppose'] if o not in removed)
+    st = M.get('stance', {}).get(dec, 0) if dec != orig else 0
+    S += max(0, st); O += max(0, -st)
+    return S / (S + O) if S + O else 0.0, dec
+
+
+def score(M, removed, drop=(), mode=None, strict=None, novote=(), flip=(), decider=None, base=False):
+    """Holistic reading: the base reading averaged over whether each key decision still happens."""
+    if base or not M.get('decisions'): return score_base(M, removed, drop, mode, strict, novote, flip)
+    removed = set(removed); decider = decider or {}
+    rel = []
+    for D in M['decisions']:
+        p0 = decision_chance(M, D, set())[0]
+        p, dec = decision_chance(M, D, removed, decider.get(D['id']))
+        r = min(1.0, p / p0) if p0 else 1.0
+        if r < 0.999 and D['act'] not in removed: rel.append((D, round(r, 4), dec))
+    if not rel: R = score_base(M, removed, drop, mode, strict, novote, flip); R['decisions'] = []; return R
+    mix = []
+    for mask in range(1 << len(rel)):
+        w = 1.0; rem2 = set(removed); dr2 = set(drop); nv2 = set(novote); fl2 = set(flip)
+        for i, (D, r, dec) in enumerate(rel):
+            if mask >> i & 1:
+                w *= 1 - r; E = D['effects']
+                rem2 |= set(E.get('remove', [])); dr2 |= set(E.get('drop', [])); nv2 |= set(E.get('novote', [])); fl2 |= set(E.get('flip', []))
+            else: w *= r
+        if w > 1e-6: mix.append((w, score_base(M, rem2, dr2, mode, strict, nv2, fl2)))
+    top = max(mix, key=lambda x: x[0])[1]
+    R = dict(top); R['P'] = sum(w * x['P'] for w, x in mix); R['mix'] = mix
+    R['decisions'] = [{'id': D['id'], 'name': D['name'], 'chance': r, 'decider': dec} for D, r, dec in rel]
+    return R
+
+
+def score_base(M, removed, drop=(), mode=None, strict=None, novote=(), flip=()):
     """Capacity still connected to the core, per channel, turned into a probability by saturation:
     P_c = 1 - exp(-C_c / K_c), with K_c set so the full record gives CAL. Overall P = product of the five (all were needed).
     Delay: years to rebuild the lost share at the pace the channel was originally built."""
-    removed = lost_force(M, set(removed), mode, strict)
+    removed = lost_force(M, set(removed), mode, strict, novote, flip)
     seen = reach(M, removed, drop)
     cap = [0.0] * NC; ties = [0] * NC; ties0 = [0] * NC
     for f, t, c, w, v in M['edges']:
@@ -327,6 +396,17 @@ def score(M, removed, drop=(), mode=None, strict=None):
 
 
 def readings(M, R):
+    if R.get('mix'):
+        parts = [(w, readings1(M, x)) for w, x in R['mix']]
+        out = {k: round(sum(w * p[k] for w, p in parts), 1) for k in ('on', 'delay', 'survive', 'lost', 'by1958', 'by1978', 'ever')}
+        out['retry'] = max(parts, key=lambda x: x[0])[1]['retry']
+        for cut, key, txt in VERDICT:
+            if out[key] >= cut: out['verdict'] = txt; break
+        return out
+    return readings1(M, R)
+
+
+def readings1(M, R):
     """Five readings of the same removal: on time (1948), by 1958, by 1978, ever, and a verdict.
     A later founding waits while each lost channel is rebuilt at the pace it was first built (a channel with nothing left cannot
     regrow from inside the record); the chance at year t is the chance with what has been rebuilt by then, discounted by the

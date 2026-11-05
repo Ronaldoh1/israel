@@ -32,9 +32,13 @@ def resolve(src):
 
 
 unres = sum(1 for e in d['edges'] for r in resolve(e['src']) if not r['u'])
+import subprocess as _sp
+for _f in ('viab_ui.js', 'tests_ui.js'):   # a syntax error in either script would blank the whole page
+    _r = _sp.run(['node', '--check', os.path.join(HERE, _f)], capture_output=True, text=True)
+    assert _r.returncode == 0, _r.stderr
 import viability as _vb
 _M = _vb.model(d)
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'y0', 'y1', 'year_ch', 'power', 'gdp1950', 'incorp', 'addressee', 'strict', 'framework']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'y0', 'y1', 'year_ch', 'power', 'gdp1950', 'incorp', 'addressee', 'strict', 'framework', 'decisions', 'stance', 'tied']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [
@@ -84,7 +88,7 @@ t = t.replace('function delPanel(r){', 'function delPanel0(r){', 1)
 t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'tests_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
 # profile line and query keys
 t = t.replace("  h+=`<dt>Sources</dt>", "  if(q.viability) h+=`<dt>If removed</dt><dd>${esc(q.viability.read.verdict)}: ${q.viability.V}% on time, ${q.viability.read.ever}% ever${q.viability.drop>=0.5?' (weakest: '+esc(DATA.viab.labels[q.viability.weakest])+'; about '+Math.round(q.viability.delay)+' years of delay)':''}</dd>`;\n  h+=`<dt>Sources</dt>", 1)
-t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vNoVote.clear(); vFlip.clear(); vLS(VKEY,null); setTimeout(vPill,0);", 1)
+t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vNoVote.clear(); vFlip.clear(); for(const k in vDecider) delete vDecider[k]; vLS(VKEY,null); setTimeout(vPill,0);", 1)
 t = t.replace("mentions:q=>q.mentions||0,", "mentions:q=>q.mentions||0, viability:q=>q.viability?q.viability.V:100, rating:q=>q.viability?q.viability.rating:'',", 1)
 t = t.replace('volume volumes sources book mentions.', 'volume volumes sources book mentions viability rating.', 1)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))

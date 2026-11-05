@@ -467,3 +467,30 @@ The model now counts the years of work an actor carried, and whether anyone docu
 | Roosevelt healthy and keeping his 5 Apr 1945 pledge to Ibn Saud | 76% | 89% | Still likely, but delayed (~5 yrs) | No US vote, pressure or recognition; the Philippines, Haiti and Liberia vote no; partition fails 29–16 |
 
 New model features: a country can keep its record but not vote (novote), or vote against (flip).
+
+## Pass: key decisions read holistically (5 Nov 2026)
+
+Three decisions are now modelled as decisions:
+- the Balfour Declaration (decided by the War Cabinet);
+- the US vote and pressure for partition, Nov 1947 (decided by Truman);
+- US recognition, 14 May 1948 (decided by Truman).
+
+**How a decision is read:**
+- Each decision has a curated list of the people and bodies who pushed for it and who resisted it, all from ties on the map dated before the decision.
+- Its chance of happening = push / (push + resistance), relative to the full record.
+- If the decider is removed, the documented successor decides (Wallace in Truman's place). A test can also name the decider (Roosevelt in the healthy-Roosevelt test).
+- Pressure aimed at the man (anyone with a direct tie to him) does not pass to the successor without the successor's own tie to that person. Resistance stays.
+- The successor's own documented position counts for or against: Wallace +2 as a supporter, Roosevelt −1 for his 5 Apr 1945 pledge.
+- The overall chance averages over whether each decision happens, combining every outcome.
+
+**Readings:**
+
+| Removed | Decision chance (vs record) | On time | Ever | Verdict |
+|---|---|---|---|---|
+| Truman | Recognition under Wallace 52%; partition vote holds | 92% | | Happens on time |
+| Healthy Roosevelt (pledge kept) | Recognition 26%; partition vote and pressure 69% | 87% | 91% | Happens on time |
+| United States (whole) | | 25% | 64% | Possible, with great difficulty |
+
+The overall chance moves less than the decision chances because the USSR recognized Israel three days after the US, and the UN basis remains.
+
+The build now checks both scripts with `node --check` before writing the page.

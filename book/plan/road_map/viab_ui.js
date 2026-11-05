@@ -22,7 +22,28 @@ function vVoteLine(rem0){ const v=vVote(vLost(rem0));
   return `UN partition vote: <b>${v.yes} for, ${v.no} against</b>, ${v.abstain} abstaining. ${v.passes?`<b>Passes</b> (two-thirds needed: at least ${v.need} for).`:`<b>Fails</b>: two-thirds of the votes cast were needed, at least ${v.need} for.`}${v.yr?` ${v.yr} removed yes-vote${v.yr===1?'':'s'} counted as ${vMode==='against'?'votes against':'abstentions'}.`:''}${v.fl?` ${v.fl} yes-vote${v.fl===1?'':'s'} turned into vote${v.fl===1?'':'s'} against.`:''}`; }
 function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; (adj.get(f)||adj.set(f,[]).get(f)).push(t); (adj.get(t)||adj.set(t,[]).get(t)).push(f); }
   const seen=new Set(VB.core.filter(x=>!rem.has(x))), q=[...seen]; while(q.length){ const u=q.pop(); for(const v of adj.get(u)||[]) if(!seen.has(v)){ seen.add(v); q.push(v); } } return seen; }
-function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
+const vDecider = {};   /* a test can name who decides instead (for example Roosevelt in place of Truman) */
+function vDecisionChance(D, rem, dec0){ let dec=dec0||D.decider; const tied=VB.tied, orig=D.decider;
+  if(rem.has(dec)) dec=(D.successor&&!rem.has(D.successor))?D.successor:null;
+  let S=0, O=0;
+  for(const l of D.levers){ if(rem.has(l)||l===dec) continue; const personal=(tied[orig]||[]).includes(l);
+    if(personal&&dec!==orig&&!(dec&&(tied[dec]||[]).includes(l))) continue; S++; }
+  for(const o of D.oppose) if(!rem.has(o)) O++;
+  const st=dec!==orig?(VB.stance[dec]||0):0; S+=Math.max(0,st); O+=Math.max(0,-st);
+  return [S+O?S/(S+O):0, dec]; }
+/* holistic reading: the base reading averaged over whether each key decision still happens */
+function vScore(rem0){ const rel=[];
+  for(const D of VB.decisions){ const p0=vDecisionChance(D,new Set())[0], [p,dec]=vDecisionChance(D,rem0,vDecider[D.id]), r=p0?Math.min(1,p/p0):1;
+    if(r<0.999&&!rem0.has(D.act)) rel.push([D,Math.round(r*1e4)/1e4,dec]); }
+  if(!rel.length){ const R=vScoreBase(rem0); R.decisions=[]; return R; }
+  const mix=[], sd=new Set(vDrop), sn=new Set(vNoVote), sf=new Set(vFlip);
+  for(let m=0;m<(1<<rel.length);m++){ let w=1; const rem2=new Set(rem0);
+    rel.forEach(([D,r],i)=>{ if(m>>i&1){ w*=1-r; const E=D.effects; (E.remove||[]).forEach(x=>rem2.add(x)); (E.drop||[]).forEach(x=>vDrop.add(x)); (E.novote||[]).forEach(x=>vNoVote.add(x)); (E.flip||[]).forEach(x=>vFlip.add(x)); } else w*=r; });
+    if(w>1e-6) mix.push([w, vScoreBase(rem2)]);
+    vDrop.clear(); sd.forEach(x=>vDrop.add(x)); vNoVote.clear(); sn.forEach(x=>vNoVote.add(x)); vFlip.clear(); sf.forEach(x=>vFlip.add(x)); }
+  const top=mix.reduce((a,b)=>b[0]>a[0]?b:a)[1];
+  return Object.assign({}, top, {P:mix.reduce((a,[w,x])=>a+w*x.P,0), mix, decisions:rel.map(([D,r,dec])=>({id:D.id,name:D.name,chance:r,decider:dec}))}); }
+function vScoreBase(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
   for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0&&v>0) funders0.add(f);
     if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
   const nocarrier=VB.carriers.length>0&&VB.carriers.every(c=>rem.has(c)); if(nocarrier){ cap.fill(0); funders.clear(); }
@@ -54,6 +75,9 @@ function vYears(rem, drop){ const A=VB.actors, ids=Object.keys(A), NCh=VB.channe
       const r=who[doc]||(who[doc]={s:fw.y[0],e:fw.y[1],years:0,ch:fw.ch,subs:{},w:fw.loss,yk:{},framework:true}); r.yk[fw.ch]=(r.yk[fw.ch]||0)+fw.loss; r.years=r.yk[fw.ch]; }
     per[y]=F; total+=F; }
   return {L:total, per, who}; }
+function vDecText(R){ if(!R.decisions||!R.decisions.length) return '';
+  return `<ul class="vul">${R.decisions.map(x=>{ const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one documented left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>
+  <p class="vtxt">A decision's chance is the documented push over push plus resistance, around whoever decides. Push aimed at the man himself (his staff, friends and correspondents) does not pass to a successor without his own documented tie; resistance stays.</p>`; }
 function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(R.years.who).length?`<p class="vtxt">No years of work lost: documented actors already active at the time could carry what was taken out.</p>`:'';
   const Y=R.years, rows=Object.entries(Y.who).filter(([a,r])=>r.years>=0.5).sort((a,b)=>b[1].years-a[1].years).slice(0,5);
   const lostY=Object.entries(Y.per).filter(([y,f])=>f>=0.5).map(([y])=>+y), span=lostY.length?` (hardest hit: ${lostY[0]}${lostY.length>1?'–'+lostY[lostY.length-1]:''})`:'';
@@ -61,7 +85,12 @@ function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(
   <ul class="vul">${rows.map(([a,r])=>{ const ch=r.ch, q=r.subs[ch];
     if(r.framework) return `<li><b>${esc(vName(a))}</b> falls, so from ${r.s} to ${r.e} immigration and settlement go at the Ottoman-era pace: about 2,200 people a year instead of about 21,900. About ${Math.round(r.years)} years of land and settlement work lost.</li>`;
     return `<li><b>${esc(vName(a))}</b>, active ${r.s}${r.e>r.s?'–'+r.e:''}, carried ${Math.round(r.w*100)}% of the ${esc(VB.labels[VB.channels[ch]].toLowerCase())} work at its height. ${q?`Closest documented substitute: <b>${esc(vName(q[0]))}</b>, active from ${q[2]}, able to carry about ${Math.round(q[1]*100)}% of that role${q[2]>r.s?`; before ${q[2]} no one documented could`:''}.`:'No documented substitute in that role.'} About ${Math.round(r.years)} years of that role lost.</li>`; }).join('')}</ul>`; }
-function vRead(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, Ly=R.years?R.years.L:0, D=Math.max(Math.max(...R.delay),Ly), Lmin=Math.ceil(Ly);
+function vRead(R){ if(R.mix){ const parts=R.mix.map(([w,x])=>[w,vRead1(x)]), out={};
+    for(const k of ['on','delay','survive','lost','by1958','by1978','ever']) out[k]=parts.reduce((a,[w,p])=>a+w*p[k],0);
+    out.retry=parts.reduce((a,b)=>b[0]>a[0]?b:a)[1].retry; out.nocarrier=parts.every(([w,p])=>p.nocarrier);
+    for(const [cut,key,txt] of VB.verdict) if(out[key]>=cut){ out.verdict=txt; break; } return out; }
+  return vRead1(R); }
+function vRead1(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, Ly=R.years?R.years.L:0, D=Math.max(Math.max(...R.delay),Ly), Lmin=Math.ceil(Ly);
   const Pat=sh=>sh.reduce((p,x,i)=>p*Math.pow(1-Math.exp(-k*x),VB.exp[i]),1);
   const out={on:100*P0, delay:D, lost:Ly, survive:100*Math.pow(R.pc[0],2)*R.pc[4]}; let best=0, tb=0;
   for(let t=1;t<=100;t++){ const sh=R.share.map((s,i)=>s>0.001?Math.min(1,s+t/VB.tbuild[i]):0), p=t>=Lmin?Pat(sh)*Math.exp(-VB.hazard*t):0; if(p>best){ best=p; tb=t; } if(VB.horizons.includes(t)) out['by'+(1948+t)]=100*Math.max(P0,best); }
@@ -145,6 +174,8 @@ function vIntro(){
   <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All six were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>Key decisions, read as a whole</h4>
+  <p class="vtxt">Three decisions are read as decisions, not just as ties: the Balfour Declaration (decided by the War Cabinet), the American vote and pressure for partition in November 1947, and American recognition on 14 May 1948 (both decided by Truman). For each, the map lists who pushed and who resisted, from ties on the map dated before the decision. Its chance of still happening is the push over push plus resistance, relative to the full record, where it happened. If the decider is removed, his documented successor decides (Henry Wallace, in Truman's place). Push aimed at the man himself (his staff, friends and correspondents) does not pass to the successor unless the successor has his own documented tie to that person; the resistance stays; the successor's own documented position counts for or against. The overall chance is then averaged over whether each decision still happens. Each push or resistance counts one; that is an assumption, disclosed here.</p>
   <h4>The power of states</h4>
   <p class="vtxt">A tie with a great power counts for more than a tie with a small state. The five great powers named in the UN Charter are weighed by their economic output in 1950 (Angus Maddison's estimates), relative to France, the smallest of the five: the United States 6.6, the Soviet Union 2.3, Britain 1.6, China 1.1, France 1. Every other state weighs 1. The weight applies to diplomatic ties and to recognitions; in the UN vote every country still has one vote. In 1944 William Fox, who coined the word "superpower", named three: the United States, the Soviet Union and Britain.</p>
   <h4>The Mandate as a framework</h4>
@@ -186,7 +217,7 @@ function vResult(what, before, ids){
   ${R.lostDocs.filter(x=>x!=='res181').length?`<li>Lost their force: ${R.lostDocs.filter(x=>x!=='res181').map(x=>esc(vName(x))).join(', ')} (every body that issued them is gone).</li>`:''}${R.lostDocs.includes('res181')&&!removed.has('res181')?`<li>Resolution 181 never passes, so the Declaration loses its UN legal basis; recognition rests on individual states alone.</li>`:''}
   <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone or cut off)`:''}, from ${R.funders} of ${R.funders0} funders.</li>
   <li>${removed.size} node${removed.size===1?'':'s'} removed in total, read together; they stay removed until you reset the graph${removed.size?`: ${[...removed].slice(0,40).map(x=>esc(vName(x))).join(', ')}${removed.size>40?` and ${removed.size-40} more`:''}`:''}.</li></ul>
-  ${vYearsText(R)}${vDelayText(R)}${vNeed(R)}
+  ${R.decisions&&R.decisions.length?'<h4>Key decisions</h4>'+vDecText(R):''}${vYearsText(R)}${vDelayText(R)}${vNeed(R)}
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button>${ids&&ids.length?'<button class="vbtn" type="button" data-v="undo">Undo this removal</button>':''}<button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`);
   vCard.dataset.ids=JSON.stringify(ids||[]); vCard.dataset.drop=JSON.stringify(what==='the United States'?VB.drop['Without the United States']||[]:[]);
 }
@@ -255,7 +286,7 @@ function viabBlock(){
   <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p><p class="vtxt">${vVoteLine(removed)}</p>
   <label class="vtxt" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" id="vstrict"${vStrict?' checked':''} style="margin-top:3px"><span>Stricter reading: a document could not have been issued without its named addressee (for example, no Balfour Declaration without Walter Rothschild). An assumption, not a finding; off by default.</span></label>
   <label class="vtxt" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">Removed yes-votes count as <select id="vmode" class="sel" style="padding:5px 26px 5px 8px"><option value="abstain"${vMode==='abstain'?' selected':''}>abstentions</option><option value="against"${vMode==='against'?' selected':''}>votes against</option></select></label>`;
-  if(any) h+=vYearsText(R)+vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
+  if(any) h+=vDecText(R)+vYearsText(R)+vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
   h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><select id="vgrp" class="sel" style="flex:1 1 180px;padding:7px 30px 7px 10px">${opts}</select><button id="vgo" class="ghost" type="button">Remove group</button>${any?'<button id="vclr" class="ghost" type="button">Restore all</button>':''}</div>
   <div class="vbtns" style="margin-top:8px"><button class="vbtn" type="button" id="vhow">How this is computed</button></div></div>`;
   return h;
