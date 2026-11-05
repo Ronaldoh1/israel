@@ -12,7 +12,7 @@ const VTESTS=[
   read:'Without an organized movement there is no one to pursue the state: the money, the land purchases, the diplomacy and the organization all had the movement as their carrier. Outside support remains on the map (governments, the UN, donors, armed groups), but on this record none of it set out to build the state on its own. Compare "What if Theodor Herzl had never been in the picture?": the founder alone is not the movement.'},
  {id:'rothmoney', q:'What if the Rothschilds had not provided the funding?', drop:()=>vMoneyDrop(e=>ROTH().has(e[0])||ROTH().has(e[1])),
   what:'Every documented money tie to or from the Rothschild family and houses, including Edmond de Rothschild\'s investment (over $60 million in Palestine, reported in 1934) and the colonies and companies he funded. The family\'s other ties (letters, meetings, the Balfour Declaration) stay.',
-  read:'Edmond\'s money is the single largest sum in the record, so removing it takes the largest single bite out of the money channel. The rest of the money (the American appeals, Keren Hayesod, the 1948 tour) still reaches the movement, which is why the state remains likely, though later.'},
+  read:'Edmond\'s money is the single largest sum in the record, and for its first two decades almost the only money in it: from 1882 he carried the colonies when no one else documented could. Later money (Keren Hayesod from 1921, the American appeals, the 1948 tour) still reaches the movement, but it cannot give back the years before it existed.'},
  {id:'roth', q:'What if the Rothschild family had played no part at all?', ids:()=>VB.groups['Rothschild family and houses'],
   what:'Every member and house of the Rothschild family in the map, with all their ties: the money, the colonies, the letters and meetings, and Walter Rothschild\'s role as addressee and drafter of the Balfour Declaration.',
   read:'The Balfour Declaration still stands, because the bodies that issued it (the War Cabinet, Balfour, the British government) remain; it would have needed another addressee. The loss is mostly money and land.'},
@@ -77,6 +77,7 @@ function vAssess(x){
    <li>${vVoteLine(removed)}</li>
    <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone)`:''}, from ${R.funders} of ${R.funders0} funders.</li></ul>
   <h3 class="vsec">The six channels</h3>${vBars(R)}
+  <h3 class="vsec">Lost years, and who could have taken over</h3>${vYearsText(R)||'<p class="vtxt">No years of work lost.</p>'}
   ${vDelayText(R)}${vNeed(R)}
   <h3 class="vsec">Reading the result</h3><p class="vtxt">${esc(x.t.read)}</p>
   <div class="vbtns"><button class="vbtn pri" type="button" id="vtBack">All tests</button><button class="vbtn" type="button" id="vtReset">Reset the graph</button><button class="vbtn" type="button" id="vtHow">How this is computed</button></div>`;

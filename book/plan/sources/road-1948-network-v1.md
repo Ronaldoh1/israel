@@ -399,3 +399,26 @@ Readings:
 | American money | 81% | | Still likely, but delayed |
 | Armed groups | 0% | | Not possible |
 | Rothschilds + US | 11% | 51% | Unlikely |
+
+## Pass: lost years and substitutes (5 Nov 2026)
+
+The model now counts the years of work an actor carried, and whether anyone documented could have taken it over.
+
+**How it works:**
+- **Active years.** Every person, organization and government is active from its first to its last dated supporting tie (birth and death dates are ignored).
+- **Year by year.** For each year from 1882 to 1948 and each channel (money, land, force, diplomacy, organization), the model takes the share of that year's work the removed actors carried. That share is covered by the strongest documented actor on the same side (the movement and its backers, or the states) who was already active that year. A substitute covers at most its own documented weight in the channel, and counts only what it had apart from the removed actors: PICA's money was Edmond's.
+- **Lost years.** What nobody could cover is lost. Each year counts as lost in proportion to the worst-hit channel.
+- **Effect on the chances.** The on-time chance is multiplied by (1 − lost years / 66). A later founding cannot come before the lost years are made up. The delay is the longer of the channel rebuild time and the lost years.
+
+**Readings:**
+
+| Removed | On time | Ever | Years lost | Verdict | Detail |
+|---|---|---|---|---|---|
+| Edmond de Rothschild | 54% | 60% | ~22 | Possible, with great difficulty | Nobody could cover his money before the Jewish Agency in 1902 (86% of the role) |
+| Herzl | 82% | | ~8 | Still likely, but delayed | His diplomacy was only partly covered (Jewish Agency from 1902, 43%) |
+| Walter Rothschild | 93% | | 0 | | Weizmann was doing the same work at the same time |
+| Rothschild family | 53% | 60% | ~22 | Possible, with great difficulty | |
+| United States | 60% | 71% | ~4 | Possible, with great difficulty | |
+| Rothschilds + US | 5% | 45% | ~35 | Unlikely | |
+| Zionist movement | 0% | | | Not possible | |
+| Armed groups | 0% | | | Not possible | |

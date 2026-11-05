@@ -90,7 +90,14 @@ REC_UN = 22.0           # Resolution 181 in force: the UN's legal basis, weighed
 GREAT = {'us_gov': 3, 'ussr': 3}   # a great power's recognition weighs three; any other state's, one
 VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
-CARRIERS = ['wzo', 'jewish_agency', 'yishuv']   # the bodies that pursued the state; with all of them gone there is no project left
+CARRIERS = ['wzo', 'jewish_agency', 'yishuv']
+# --- lost years: the work an actor did over time, and whether anyone documented could have taken it over ---
+Y0, Y1 = 1882, 1948          # the build-up years, from the first colonies to the founding
+SPAN_T = Y1 - Y0             # 66
+YEAR_CH = [0, 1, 2, 3, 4]    # recognition is a 1947-48 event, so it is not spread over years
+MOVEMENT_SIDE = {'zionist movement', 'us lobby', 'finance', 'rothschild', 'land', 'settlement', 'militias', 'christian zionism', 'israel state'}
+ACTOR_KINDS = {'person', 'institution', 'company', 'government'}
+YR = re.compile(r'\b(1[6-9]\d\d)\b'); LIFE = re.compile(r'\(\s*(?:b\.\s*)?1[6-9]\d\d\s*[–-]\s*(?:1[6-9]\d\d|\d\d)?\s*\)')   # the bodies that pursued the state; with all of them gone there is no project left
 HAZARD = 0.02            # each year of delay loses 2% of the chance: the 1947-48 window (end of the Mandate, the UN vote, post-war
                          # sympathy, Soviet and American support at once) was not going to stay open
 HORIZONS = [10, 30]      # readings: founded by 1958, and within a generation (by 1978)
@@ -154,10 +161,21 @@ def model(d):
     cap0 = [0.0] * NC
     for e in edges: cap0[e[2]] += e[4]
     amounts = {f + '>' + t: [v, txt] for (f, t), (v, txt) in AMOUNT.items()}
+    labs = collections.defaultdict(list)
+    for e in d['edges']:
+        if e['status'] in ('verified', 'reported'): labs[(e['f'], e['t'])].append(e.get('label', ''))
+    span = collections.defaultdict(list)
+    for f, t, c, w, v in edges:
+        for lab in labs[(f, t)]:
+            ys = [int(y) for y in YR.findall(LIFE.sub('', lab)) if Y0 <= int(y) <= Y1]
+            span[f] += ys; span[t] += ys
+    actors = {i: [min(span[i]), max(span[i]), 'm' if N[i]['cluster'] in MOVEMENT_SIDE else 's'] for i in span
+              if i in N and span[i] and N[i]['kind'] in ACTOR_KINDS}
     vote = {k: sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == ty}) for k, ty in [('yes', 'vote for'), ('no', 'vote against'), ('abstain', 'abstention')]}
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
-            'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N], 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
+            'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N],
+            'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
@@ -181,6 +199,52 @@ def lost_force(M, removed, mode=None):
             if doc not in out and iss and all(i in out for i in iss): out.add(doc); ch = True
         if 'res181' not in out and M.get('vote') and not vote181(M, out, mode)['passes']: out.add('res181'); ch = True
     return out
+
+
+def lost_years(M, removed, drop=()):
+    """Years of the movement's work lost. Each actor (person, organization, government) is active from its first to its last
+    dated supporting tie. In each year, the share of a channel's active work that an actor carried and lost (removed, or its
+    ties cut) is covered by the strongest documented actor on the same side (the movement and its backers, or states) already
+    active that year, up to that actor's own weight in the channel. What no one could cover is lost; a year counts as lost in
+    proportion to the worst-hit channel. Returns the total, the lost share per year, and each actor's own loss and best substitute."""
+    A = M['actors']; NCh = len(M['channels'])
+    cap = {i: [0.0] * NCh for i in A}; live = {i: [0.0] * NCh for i in A}; avail = {i: [0.0] * NCh for i in A}
+    for f, t, c, w, v in M['edges']:
+        dropped = (f + '>' + t) in drop
+        for x in (f, t):
+            if x in cap:
+                cap[x][c] += v
+                # an actor loses a tie's work if it is removed itself, or the tie is cut; a partner of a removed actor does not
+                # (the removed actor's own loss already stands for that tie)
+                if not (x in removed or dropped): live[x][c] += v
+                if not (f in removed or t in removed or dropped): avail[x][c] += v
+    # a substitute can only bring what it had apart from the removed actors (PICA's money was Edmond's money)
+    order = {k: sorted((i for i in A if avail[i][k] > 0), key=lambda i: -avail[i][k]) for k in M['year_ch']}
+    total, per, who = 0.0, {}, {}
+    for y in range(M['y0'], M['y1'] + 1):
+        act = [i for i in A if A[i][0] <= y <= A[i][1]]
+        F = []
+        for k in M['year_ch']:
+            tot = sum(cap[i][k] for i in act)
+            if not tot: F.append(0); continue
+            lost = 0.0
+            for a in act:
+                l = cap[a][k] - live[a][k]
+                if l <= 1e-9: continue
+                sub = next((b for b in order[k] if b != a and b not in removed and A[b][2] == A[a][2] and A[b][0] <= y), None)
+                cov = min(1.0, avail[sub][k] / l) if sub else 0.0
+                lost += l / tot * (1 - cov)
+                r = who.setdefault(a, {'s': A[a][0], 'e': A[a][1], 'years': 0.0, 'ch': None, 'subs': {}, 'w': 0.0, 'yk': {}})
+                if l / tot > r['w']: r.update(ch=k, w=l / tot)
+                r['yk'][k] = r['yk'].get(k, 0.0) + l / tot * (1 - cov)
+                r['years'] = r['yk'].get(r['ch'], 0.0)   # years lost in the actor's main role
+                if sub:   # the best substitute per channel: who, how much of the role, and from when
+                    q = r['subs'].get(k)
+                    if q is None or cov > q[1]: r['subs'][k] = [sub, round(cov, 2), A[sub][0]]
+            F.append(min(1.0, lost))
+        f = max(F) if F else 0
+        per[y] = round(f, 3); total += f
+    return total, per, who
 
 
 def reach(M, removed, drop=()):
@@ -215,9 +279,12 @@ def score(M, removed, drop=(), mode=None):
     P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(NC)]
     tot = 100.0
     for i, p in enumerate(P): tot *= p ** M['exp'][i]
+    L = lost_years(M, removed, drop)[0] if (drop or any(x in M['actors'] for x in removed)) else 0.0
+    tau = max(0.0, 1 - L / SPAN_T)
+    tot *= tau
     r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(NC)]
     delay = [M['tbuild'][i] * (1 - r[i]) for i in range(NC)]
-    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed, 'nocarrier': nocarrier}
+    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed, 'nocarrier': nocarrier, 'lost_years': L, 'tau': tau}
 
 
 def readings(M, R):
@@ -225,17 +292,17 @@ def readings(M, R):
     A later founding waits while each lost channel is rebuilt at the pace it was first built (a channel with nothing left cannot
     regrow from inside the record); the chance at year t is the chance with what has been rebuilt by then, discounted by the
     closing window, e^(-HAZARD x t). 'By year Y' and 'ever' take the best year up to Y (or 100 years), and never less than 1948's."""
-    k = -math.log(1 - M['cal']); P0 = R['P'] / 100; D = max(R['delay'])
+    k = -math.log(1 - M['cal']); P0 = R['P'] / 100; D = max(max(R['delay']), R.get('lost_years', 0)); Lmin = math.ceil(R.get('lost_years', 0))
     def P_at(shares):
         p = 1.0
         for i, sh in enumerate(shares): p *= (1 - math.exp(-k * sh)) ** M['exp'][i]
         return p
     # the movement itself survives (keeps raising money and organizing) even where the state is delayed or blocked
-    out = {'on': round(100 * P0, 1), 'delay': round(D, 1), 'survive': round(100 * R['pc'][0] ** 2 * R['pc'][4], 1)}
+    out = {'on': round(100 * P0, 1), 'delay': round(D, 1), 'survive': round(100 * R['pc'][0] ** 2 * R['pc'][4], 1), 'lost': round(R.get('lost_years', 0), 1)}
     best, t_best = 0.0, 0
     for t in range(1, 101):    # the best later attempt by year t: capacity rebuilt so far, discounted by the closing window
         sh = [min(1, s + t / M['tbuild'][i]) if s > 0.001 else 0 for i, s in enumerate(R['share'])]
-        p = P_at(sh) * math.exp(-HAZARD * t)
+        p = P_at(sh) * math.exp(-HAZARD * t) if t >= Lmin else 0.0
         if p > best: best, t_best = p, t
         if t in HORIZONS: out['by%d' % (1948 + t)] = round(100 * max(P0, best), 1)
     out['ever'] = round(100 * max(P0, best), 1); out['retry'] = 1948 + t_best if best > P0 else None
