@@ -903,3 +903,6 @@ from collections import Counter; print(Counter(x['status'] for x in E))
 
 # per-node stored analysis profile (tier, degrees, centrality, money, loops, succession, flights, volumes)
 import qop_nodes; _q=qop_nodes.run(); print('qop profiles', _q['qop_meta'])
+
+# what-if model: the operation's chances with any node removed (ep_viability.py; mirrored in ep_viab_ui.js)
+import ep_viability; _w=ep_viability.run()[0]; print('what-if', _w['whatif_meta'])

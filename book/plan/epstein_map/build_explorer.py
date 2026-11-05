@@ -56,9 +56,29 @@ def resolve(src, base):
         if not u: u = efta_url(part)
         out.append({'t': part, 'u': u})
     return out
+import subprocess as _sp
+for _f in ('ep_viab_ui.js', 'ep_tests_ui.js'):   # a syntax error in either script would blank the whole page
+    _r = _sp.run(['node', '--check', os.path.join(HERE, _f)], capture_output=True, text=True)
+    assert _r.returncode == 0, _r.stderr
+import ep_viability as _vb
+_M = _vb.model(json.loads(json.dumps(d)))
+
+
 def build(base):
-    D = {'built': d['built'], 'qop_meta': d.get('qop_meta', {}), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
+    D = {'built': d['built'], 'qop_meta': d.get('qop_meta', {}), 'whatif_meta': d.get('whatif_meta'), 'viab': _M,
+         'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
     t = open(os.path.join(HERE, 'graph_explorer_template.html')).read()
+    R = [
+        ('function delPanel(r){', 'function delPanel0(r){'),
+        ('/* ---------- graph ---------- */', open(os.path.join(HERE, 'ep_viab_ui.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'ep_tests_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */'),
+        ("  h+=`<dt>Sources</dt>", "  if(q.whatif) h+=`<dt>If removed</dt><dd>${esc(q.whatif.verdict)}: ${q.whatif.P}% runs${q.whatif.drop>=0.5?' (down '+q.whatif.drop+')':''}${q.whatif.deal!=null&&q.whatif.deal<100?' · 2008 deal '+q.whatif.deal+'% as likely':''}${q.whatif.account!=null&&q.whatif.account<100?' · brought to account '+q.whatif.account+'% as likely':''}</dd>`;\n  h+=`<dt>Sources</dt>"),
+        ("ops:q=>q.succession?Math.round(q.succession.operations_cover*100):0,", "ops:q=>q.succession?Math.round(q.succession.operations_cover*100):0, whatif:q=>q.whatif?q.whatif.P:100,"),
+        ("efta cover ops sponsor.", "efta cover ops sponsor whatif."),
+        ("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vLS(VKEY,null); setTimeout(vPill,0);"),
+    ]
+    for a, b in R:
+        assert a in t, a[:60]
+        t = t.replace(a, b, 1)
     return t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
 _page = build('')
 if not _page.lstrip().lower().startswith('<!doctype'):   # the v1 template was a fragment; the Library of Truth template is a full page
