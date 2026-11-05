@@ -58,7 +58,7 @@ function vScoreBase(rem0){ const rem=vLost(rem0), keep={}; for(const B of VB.blo
   const nocarrier=VB.carriers.length>0&&VB.carriers.every(c=>rem.has(c)); if(nocarrier){ cap.fill(0); funders.clear(); }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
   const years=(vDrop.size||[...rem].some(x=>VB.actors[x]||VB.framework[x]))?vYears(rem,vDrop):{L:0,per:{},who:{}}, tau=Math.max(0,1-years.L/(VB.y1-VB.y0));
-  const P=pc.reduce((a,b,i)=>a*Math.pow(b,VB.exp[i]),100)*tau, delay=share.map((r,i)=>VB.tbuild[i]*(1-r));
+  const P=pc.reduce((a,b,i)=>a*Math.pow(b,VB.exp[i]),100)*tau, delay=share.map((r,i)=>r>0.001?Math.min(200,VB.tbuild[i]*(1-r)/r):200);
   const lostDocs=[...rem].filter(x=>!rem0.has(x));
   return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs,nocarrier,years,tau}; }
 const V0 = vScore(new Set());
@@ -102,13 +102,13 @@ function vRead(R){ if(R.mix){ const parts=R.mix.map(([w,x])=>[w,vRead1(x)]), out
 function vRead1(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, Ly=R.years?R.years.L:0, D=Math.max(Math.max(...R.delay),Ly), Lmin=Math.ceil(Ly);
   const Pat=sh=>sh.reduce((p,x,i)=>p*Math.pow(1-Math.exp(-k*x),VB.exp[i]),1);
   const out={on:100*P0, delay:D, lost:Ly, survive:100*Math.pow(R.pc[0],2)*R.pc[4]}; let best=0, tb=0;
-  for(let t=1;t<=100;t++){ const sh=R.share.map((s,i)=>s>0.001?Math.min(1,s+t/VB.tbuild[i]):0), p=t>=Lmin?Pat(sh)*Math.exp(-VB.hazard*t):0; if(p>best){ best=p; tb=t; } if(VB.horizons.includes(t)) out['by'+(1948+t)]=100*Math.max(P0,best); }
+  for(let t=1;t<=100;t++){ const sh=R.share.map((s,i)=>s>0.001?Math.min(1,s*(1+t/VB.tbuild[i])):0), p=t>=Lmin?Pat(sh)*Math.exp(-VB.hazard*t):0; if(p>best){ best=p; tb=t; } if(VB.horizons.includes(t)) out['by'+(1948+t)]=100*Math.max(P0,best); }
   out.ever=100*Math.max(P0,best); out.retry=best>P0?1948+tb:null; out.nocarrier=!!R.nocarrier;
   for(const [cut,key,txt] of VB.verdict) if(out[key]>=cut){ out.verdict=txt; break; }
   return out; }
 function vReadTable(rd){ const row=(l,v,sub)=>`<tr><td>${l}${sub?`<small style="display:block;color:var(--muted)">${sub}</small>`:''}</td><td style="color:${vColor(v)}">${Math.round(v)}%</td></tr>`;
   return `<table class="vread">${row('Founded on time, in 1948',rd.on)}${row('Founded by 1958',rd.by1958, rd.retry&&rd.retry<=1958?'best year to try again: '+rd.retry:'')}${row('Ever becomes a state',rd.ever,'later attempts lose 2% a year as the 1947-48 window closes')}${row('The movement itself survives',rd.survive,'keeps its money and organization, whatever happens to the state')}
-  <tr><td>Years of the movement's work lost</td><td>${rd.lost<0.5?'none':'about '+Math.round(rd.lost)}</td></tr><tr><td>Time to rebuild what was lost</td><td>${rd.nocarrier?'no one left':rd.delay<1?'none':'about '+Math.round(rd.delay)+' yrs'}</td></tr></table>`; }
+  <tr><td>Years of the movement's work lost</td><td>${rd.lost<0.5?'none':'about '+Math.round(rd.lost)}</td></tr><tr><td>Time to rebuild what was lost</td><td>${rd.nocarrier?'no one left':rd.delay<1?'none':rd.delay>100?'over a century':'about '+Math.round(rd.delay)+' yrs'}</td></tr></table>`; }
 function vHead(R){ const rd=vRead(R); return `<div class="vbig"><b style="color:${vColor(rd.on)}">${Math.round(rd.on)}%</b><span style="font-weight:600">${esc(rd.verdict)}${rd.verdict.indexOf('delayed')>=0?` (about ${Math.round(rd.delay)} years)`:''}</span></div>${vReadTable(rd)}`; }
 function vRating(V){ return V>=90?'Still possible':V>=75?'Still possible, with more work':V>=55?'Possible only with major outside help':V>=35?'Doubtful':V>=15?'Very unlikely':'Not possible on this record'; }
 function vColor(V){ return V>=75?'var(--ver)':V>=35?'var(--tov)':'var(--nest)'; }
@@ -119,7 +119,7 @@ function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(
 function vDelayText(R){ const md=Math.max(...R.delay), mi=R.delay.indexOf(md);
   if(R.nocarrier) return `<p class="vtxt"><b>No one is left to pursue the state.</b> The Zionist Organization, the Jewish Agency and the Jewish National Council (Va'ad Leumi) are all removed; on this record nothing else carried the goal, so every channel counts as empty.</p>`;
   if(R.pc.some(p=>p<0.005)) return `<p class="vtxt"><b>On this record the state is not founded.</b> ${esc(VB.labels[VB.channels[R.pc.indexOf(Math.min(...R.pc))]])} is gone entirely. Rebuilding it at the pace it was first built (from ${esc(VB.tfrom[mi])}) would take about ${Math.round(md)} years.</p>`;
-  if(md>=1){ const rd=vRead(R); return `<p class="vtxt">Rebuilding the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} fully, at the pace it was first built (from ${esc(VB.tfrom[mi])}), would take about <b>${Math.round(md)} years</b>.${rd.retry?` Because the 1947-48 window was closing, the best chance of a later founding comes sooner, around <b>${rd.retry}</b>, with what has been rebuilt by then.`:' Waiting would not raise the chance: the window was closing faster than the loss could be rebuilt.'}</p>`; }
+  if(md>=1){ const rd=vRead(R); return `<p class="vtxt">Rebuilding the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} fully would take ${md>100?'<b>over a century</b>':`about <b>${Math.round(md)} years</b>`}: the network that is left rebuilds it, at the pace the channel was first built (from ${esc(VB.tfrom[mi])}) scaled down to the share that remains.${rd.retry?` Because the 1947-48 window was closing, the best chance of a later founding comes sooner, around <b>${rd.retry}</b>, with what has been rebuilt by then.`:' Waiting would not raise the chance: the window was closing faster than the loss could be rebuilt.'}</p>`; }
   return '<p class="vtxt">No meaningful delay: the rest of the documented network covers what was taken away.</p>'; }
 function vNeed(R){ const weak=R.pc.map((x,i)=>[x,i]).filter(([x])=>x<0.95).sort((a,b)=>a[0]-b[0]);
   return weak.length?`<p class="vtxt">To make up the loss the movement would need ${weak.slice(0,2).map(([x,i])=>esc(VB.need[VB.channels[i]])).join(', and ')}.</p>`:''; }
@@ -182,7 +182,7 @@ function vIntro(){
   <h4>6. From capacity to a chance</h4>
   <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All six were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
-  <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <p class="vtxt">What is lost is rebuilt by the network that is left, so the pace scales with what remains. Each channel was first built over 51 years for money and organization (from 1897), 66 for land (from 1882), 28 for arms (from 1920) and 31 for diplomacy (from 1917); with half of a channel left it rebuilds at half that pace, with a quarter left at a quarter. The longest is the delay shown. The same scaled pace governs the "by 1958" and "ever" readings.</p>
   <h4>Key decisions, read as a whole</h4>
   <p class="vtxt">Three decisions are read as decisions, not just as ties: the Balfour Declaration (decided by the War Cabinet), the American vote and pressure for partition in November 1947, and American recognition on 14 May 1948 (both decided by Truman). For each, the map lists who pushed and who resisted, from ties on the map dated before the decision. Its chance of still happening is the push over push plus resistance, relative to the full record, where it happened. If the decider is removed, his documented successor decides (Henry Wallace, in Truman's place). Push aimed at the man himself (his staff, friends and correspondents) does not pass to the successor unless the successor has his own documented tie to that person; the resistance stays; the successor's own documented position counts for or against. The overall chance is then averaged over whether each decision still happens. Each push or resistance counts one; that is an assumption, disclosed here.</p>
   <h4>Blocs follow their leaders</h4>

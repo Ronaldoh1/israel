@@ -514,3 +514,17 @@ The build now checks both scripts with `node --check` before writing the page.
 | Healthy Roosevelt | 84% | | Still likely, but delayed | |
 
 New test: "What if only Moscow had backed partition, and Washington had stayed out?"
+
+## Pass: rebuilding scales with what remains (5 Nov 2026)
+
+What is lost is rebuilt by the network that is left: share_t = s × (1 + t/T). Full rebuild time = T × (1 − s)/s, capped at 200 years. A network left at half rebuilds at half the original pace.
+
+**Readings:**
+
+| Removed | On time | Ever | Verdict |
+|---|---|---|---|
+| Without the United States | 20% | 45% | Unlikely (rebuild over a century) |
+| Only Moscow backs partition | 64% | 81% | Still likely, but delayed |
+| Moscow alone out | 93% | | Happens on time |
+| Rothschilds + US | 2% | 13% | Not possible on this record |
+| Rothschilds | 52% | 58% | Possible, with great difficulty |

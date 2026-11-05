@@ -446,7 +446,8 @@ def score_base(M, removed, drop=(), mode=None, strict=None, novote=(), flip=()):
     tau = max(0.0, 1 - L / SPAN_T)
     tot *= tau
     r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(NC)]
-    delay = [M['tbuild'][i] * (1 - r[i]) for i in range(NC)]
+    # the network that is left does the rebuilding: half of it rebuilds at half the pace the channel was first built
+    delay = [min(200.0, M['tbuild'][i] * (1 - r[i]) / r[i]) if r[i] > 0.001 else 200.0 for i in range(NC)]
     return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed, 'nocarrier': nocarrier, 'lost_years': L, 'tau': tau}
 
 
@@ -475,7 +476,7 @@ def readings1(M, R):
     out = {'on': round(100 * P0, 1), 'delay': round(D, 1), 'survive': round(100 * R['pc'][0] ** 2 * R['pc'][4], 1), 'lost': round(R.get('lost_years', 0), 1)}
     best, t_best = 0.0, 0
     for t in range(1, 101):    # the best later attempt by year t: capacity rebuilt so far, discounted by the closing window
-        sh = [min(1, s + t / M['tbuild'][i]) if s > 0.001 else 0 for i, s in enumerate(R['share'])]
+        sh = [min(1, s * (1 + t / M['tbuild'][i])) if s > 0.001 else 0 for i, s in enumerate(R['share'])]
         p = P_at(sh) * math.exp(-HAZARD * t) if t >= Lmin else 0.0
         if p > best: best, t_best = p, t
         if t in HORIZONS: out['by%d' % (1948 + t)] = round(100 * max(P0, best), 1)
