@@ -84,7 +84,7 @@ t = t.replace('function delPanel(r){', 'function delPanel0(r){', 1)
 t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'tests_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
 # profile line and query keys
 t = t.replace("  h+=`<dt>Sources</dt>", "  if(q.viability) h+=`<dt>If removed</dt><dd>${esc(q.viability.read.verdict)}: ${q.viability.V}% on time, ${q.viability.read.ever}% ever${q.viability.drop>=0.5?' (weakest: '+esc(DATA.viab.labels[q.viability.weakest])+'; about '+Math.round(q.viability.delay)+' years of delay)':''}</dd>`;\n  h+=`<dt>Sources</dt>", 1)
-t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vLS(VKEY,null); setTimeout(vPill,0);", 1)
+t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vNoVote.clear(); vFlip.clear(); vLS(VKEY,null); setTimeout(vPill,0);", 1)
 t = t.replace("mentions:q=>q.mentions||0,", "mentions:q=>q.mentions||0, viability:q=>q.viability?q.viability.V:100, rating:q=>q.viability?q.viability.rating:'',", 1)
 t = t.replace('volume volumes sources book mentions.', 'volume volumes sources book mentions viability rating.', 1)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))

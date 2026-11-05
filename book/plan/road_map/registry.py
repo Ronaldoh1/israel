@@ -675,6 +675,9 @@ us_vetoes|US vetoes in the Security Council on Israel|event|us government|vetoed
 syria82|Move to review Israel's UN status (1982)|event|international|review Israel's status
 res3379|UN Resolution 3379 (1975)|document|international|Resolution 3379;Zionism is a form of racism
 res4686|UN Resolution 46/86 (1991)|document|international|Resolution 46/86
+# ---------- Presidents layer (added Nov 2026) ----------
+fdr_health|Roosevelt's hidden heart failure (1944-45)|event|us government|congestive heart failure
+wilson_stroke|Wilson's hidden stroke (1919)|event|us government|Wilson's stroke
 """
 
 

@@ -4,11 +4,14 @@ const vDrop = new Set();          // ties dropped by a scenario (money raised in
 const VKEY = 'road_removed_v1', VINTRO = 'road_model_intro_v1';
 function vLS(k, v){ try{ if(v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); if(v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
 let vMode = vLS('road_vote_mode') || VB.vote_mode;
-let vStrict = !!vLS('road_strict_v1');   /* the stricter reading: a document cannot be issued without its named addressee */
+let vStrict = !!vLS('road_strict_v1');
+const vNoVote = new Set();   /* states that keep their record but do not cast their partition vote (a test scenario) */
+const vFlip = new Set();     /* yes-voters that vote against instead (a test scenario) */   /* the stricter reading: a document cannot be issued without its named addressee */
 /* Resolution 181 needs two-thirds of the votes cast: at least twice as many for as against */
-function vVote(out){ const yes=VB.vote.yes, no=VB.vote.no, yr=yes.filter(x=>out.has(x)).length, nr=no.filter(x=>out.has(x)).length;
-  const y=yes.length-yr, n=no.length-nr+(vMode==='against'?yr:0), unGone=out.has('un')||out.has('unga');
-  return {yes:y, no:n, abstain:VB.vote.abstain.length+nr+(vMode==='against'?0:yr), passes:y>=2*n&&!unGone, need:2*n, unGone, yr}; }
+function vVote(out){ const yes=VB.vote.yes, no=VB.vote.no;
+  const fl=yes.filter(x=>vFlip.has(x)&&!out.has(x)).length, yr=yes.filter(x=>(out.has(x)||vNoVote.has(x))&&!vFlip.has(x)).length, nr=no.filter(x=>out.has(x)).length;
+  const y=yes.length-yr-fl, n=no.length-nr+fl+(vMode==='against'?yr:0), unGone=out.has('un')||out.has('unga');
+  return {yes:y, no:n, abstain:VB.vote.abstain.length+nr+(vMode==='against'?0:yr), passes:y>=2*n&&!unGone, need:2*n, unGone, yr, fl}; }
 function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } }
   if(!out.has('res181') && !vVote(out).passes){ out.add('res181'); ch=true; }
   for(const [dep,src] of VB.incorp) if(out.has(src)&&!out.has(dep)&&!VB.core.includes(dep)){ out.add(dep); ch=true; }
@@ -16,7 +19,7 @@ function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; f
   if(vStrict) for(const [doc,who] of Object.entries(VB.addressee)) if(!out.has(doc)&&who.length&&who.every(x=>out.has(x))){ out.add(doc); ch=true; } } return out; }
 function vVoteLine(rem0){ const v=vVote(vLost(rem0));
   if(v.unGone) return `<b>The UN partition vote cannot happen</b>: without the United Nations there is no General Assembly to hold it.`;
-  return `UN partition vote: <b>${v.yes} for, ${v.no} against</b>, ${v.abstain} abstaining. ${v.passes?`<b>Passes</b> (two-thirds needed: at least ${v.need} for).`:`<b>Fails</b>: two-thirds of the votes cast were needed, at least ${v.need} for.`}${v.yr?` ${v.yr} removed yes-vote${v.yr===1?'':'s'} counted as ${vMode==='against'?'votes against':'abstentions'}.`:''}`; }
+  return `UN partition vote: <b>${v.yes} for, ${v.no} against</b>, ${v.abstain} abstaining. ${v.passes?`<b>Passes</b> (two-thirds needed: at least ${v.need} for).`:`<b>Fails</b>: two-thirds of the votes cast were needed, at least ${v.need} for.`}${v.yr?` ${v.yr} removed yes-vote${v.yr===1?'':'s'} counted as ${vMode==='against'?'votes against':'abstentions'}.`:''}${v.fl?` ${v.fl} yes-vote${v.fl===1?'':'s'} turned into vote${v.fl===1?'':'s'} against.`:''}`; }
 function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; (adj.get(f)||adj.set(f,[]).get(f)).push(t); (adj.get(t)||adj.set(t,[]).get(t)).push(f); }
   const seen=new Set(VB.core.filter(x=>!rem.has(x))), q=[...seen]; while(q.length){ const u=q.pop(); for(const v of adj.get(u)||[]) if(!seen.has(v)){ seen.add(v); q.push(v); } } return seen; }
 function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
@@ -73,7 +76,7 @@ function vRating(V){ return V>=90?'Still possible':V>=75?'Still possible, with m
 function vColor(V){ return V>=75?'var(--ver)':V>=35?'var(--tov)':'var(--nest)'; }
 function vMoney(m){ return m>=1?'$'+(Math.round(m*10)/10)+' million':'$'+Math.round(m*1000)+',000'; }
 function vName(x){ const n=N.get(x); return n?n.name:x; }
-function vSave(){ vLS(VKEY, removed.size||vDrop.size ? {removed:[...removed], drop:[...vDrop]} : null); vPill(); }
+function vSave(){ vLS(VKEY, removed.size||vDrop.size||vNoVote.size||vFlip.size ? {removed:[...removed], drop:[...vDrop], novote:[...vNoVote], flip:[...vFlip]} : null); vPill(); }
 function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.exp[i]>1?' <em>×2</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
 function vDelayText(R){ const md=Math.max(...R.delay), mi=R.delay.indexOf(md);
   if(R.nocarrier) return `<p class="vtxt"><b>No one is left to pursue the state.</b> The Zionist Organization, the Jewish Agency and the Jewish National Council (Va'ad Leumi) are all removed; on this record nothing else carried the goal, so every channel counts as empty.</p>`;
@@ -235,7 +238,7 @@ vSig.addEventListener('touchend', e=>{ if(vSigY==null) return; const dy=e.change
 
 /* ---------- a small reminder on the graph while anything is removed ---------- */
 $('board').insertAdjacentHTML('beforeend','<div class="vpill" id="vPill"><span id="vPillT"></span><button type="button" id="vPillV">Details</button><button type="button" id="vPillR">Reset</button></div>');
-function vPill(){ const p=$('vPill'); if(!p) return; const n=removed.size; if(!n&&!vDrop.size){ p.classList.remove('on'); return; }
+function vPill(){ const p=$('vPill'); if(!p) return; const n=removed.size; if(!n&&!vDrop.size&&!vNoVote.size){ p.classList.remove('on'); return; }
   const R=vScore(removed); $('vPillT').innerHTML=`${n} removed · <b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b> on time`; p.classList.add('on'); }
 $('vPillV').onclick=()=>{ const R=vScore(removed); vOpen(`<div class="kind">The network as it stands</div><h3 id="vmH">${[...removed].map(vName).map(esc).join(', ')||'Scenario'}</h3>
   ${vHead(R)}<h4>The six channels</h4>${vBars(R)}
@@ -245,7 +248,7 @@ $('vPillR').onclick=()=>$('reset').click();
 
 /* ---------- the reading at the top of the Remove a node panel ---------- */
 function viabBlock(){
-  const R=vScore(removed), any=removed.size||vDrop.size;
+  const R=vScore(removed), any=removed.size||vDrop.size||vNoVote.size||vFlip.size;
   const opts=Object.keys(VB.groups).map(g=>`<option value="${esc(g)}">${esc(g)} (${VB.groups[g].length})</option>`).join('');
   let h=`<div class="viab"><div class="vlabel">The state&rsquo;s chances, on this record</div>
   ${vHead(R)}${any?`<p class="vtxt">On time: down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%.</p>`:''}${vBars(R)}
@@ -280,5 +283,5 @@ side = function(id, msg){ vSide0(id, msg); if(!N.get(id)) return; const on=remov
   $('vSideRm').onclick=()=>{ if(on){ const before=vScore(removed).P; removed.delete(id); vRefresh(); vSignal('Restored: '+vName(id), before); } else vRemove([id], vName(id)); };
   $('vSideHow').onclick=vIntro; };
 /* restore what the reader removed last time, and explain the model on the first visit */
-(function(){ const s=vLS(VKEY); if(s){ (s.removed||[]).forEach(x=>{ if(N.get(x)) removed.add(x); }); (s.drop||[]).forEach(x=>vDrop.add(x)); }
+(function(){ const s=vLS(VKEY); if(s){ (s.removed||[]).forEach(x=>{ if(N.get(x)) removed.add(x); }); (s.drop||[]).forEach(x=>vDrop.add(x)); (s.novote||[]).forEach(x=>vNoVote.add(x)); (s.flip||[]).forEach(x=>vFlip.add(x)); }
   setTimeout(()=>{ vPill(); if(removed.size) draw(); if(!vLS(VINTRO)) vIntro(); }, 600); })();

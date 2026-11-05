@@ -31,6 +31,12 @@ const VTESTS=[
  {id:'us', q:'What if the United States had stayed out?', ids:()=>VB.groups['Without the United States'], drop:()=>VB.drop['Without the United States']||[],
   what:'The American government, Congress and parties, the American Zionist organizations, and American funders and arms buyers, plus the money raised in America by others (Golda Meyerson\'s 1948 tour).',
   read:'This removes the largest share of money after Edmond\'s, the American votes and pressure at the UN, the first recognition of the state, and the American arms network at once.'},
+ {id:'truman', q:'What if Truman had never become vice president?', ids:()=>['truman'],
+  what:'Harry Truman and every documented tie he made as president: the recognition decision of 14 May 1948, the White House meeting of 12 May, the pressure on Attlee, and the access that Eddie Jacobson, Clark Clifford, David Niles and the 1948 donors (Abraham Feinberg and Ed Kaufmann) had through him. In this case Henry Wallace, the vice president the party leaders replaced in July 1944, becomes president when Roosevelt dies.',
+  read:'Removing Truman takes out the man who made the decisions, not the American state: Congress, the State Department, the American Zionist organizations and the money stay. The record also shows who would have been in his place. Henry Wallace was described as a supporter of Zionism; he met Ben-Gurion and Begin in Palestine in October 1947, and in 1948 he attacked Truman from the pro-Israel side, promising to end the arms embargo. So on this record a Wallace presidency is not a less favourable one, and the map finds Truman\'s role covered by others already at work.'},
+ {id:'fdr', q:'What if Roosevelt had been healthy and kept his April 1945 pledge to Ibn Saud?', ids:()=>['truman','recognition48'], novote:['us_gov'], flip:['philippines','haiti','liberia'], drop:()=>['us_gov>decl_indep','us_gov>philippines','us_gov>haiti','us_congress>res181'],
+  what:'Roosevelt lives and serves out his term to January 1949, so there is no Truman presidency. On 5 April 1945 Roosevelt assured Ibn Saud he would take no action "which might prove hostile to the Arab people" and would consult both sides before any basic change; this test assumes he kept it: no American vote for partition (counted under the vote setting, an abstention by default), no American pressure on the wavering delegations, so the three states reported as pressured (the Philippines, whose delegate had argued against partition, Haiti and Liberia) vote against it; and no American recognition on 14 May 1948. The rest of the American record stays.',
+  read:'This is an assumption about what Roosevelt would have done, taken from his own last written words on the subject; he also approved a State Department plan to keep the Palestine question out of public debate during the war, and weakened a statement Stephen Wise had drafted for him. He had also, at other times, said things the Zionist leaders welcomed, so the test is one reading, not a certainty. His illness was concealed: a Navy cardiologist found heart failure in March 1944, and he died on 12 April 1945. The one earlier president whose incapacity was hidden in the same way was Woodrow Wilson, after his stroke of October 1919.'},
  {id:'un', q:'What if the UN vote had never happened?', ids:()=>VB.groups['The United Nations'],
   what:'The United Nations, its General Assembly and Security Council, and its Special Committee on Palestine. Without them there is no Resolution 181.',
   read:'The state loses the legal basis its Declaration of Independence cited, but individual states could still recognize it: the United States did so in May 1948, a year before Israel joined the UN.'},
@@ -54,9 +60,9 @@ const VRECORD={id:'veto', q:'After 1948: what has protected Israel\'s standing a
   read:`<p class="vtxt">This one is a reading of the record, not a computed test: the 1948 model ends with the founding. Expelling or suspending a UN member needs a recommendation from the Security Council, where the United States has a veto; by 2023 it had vetoed Israel-related resolutions 46 times. When Syria moved in 1982 to "review Israel's status", the State Department warned that suspension or expulsion "would have serious consequences for continued U.S. participation in and support for the United Nations", and no majority for expulsion formed.</p>
   <p class="vtxt">The other operations on the map (aid to Africa aimed at UN votes, ELNET in Europe, the Israel Allies Foundation's caucuses, the state-funded campaigns) build and hold allies, but they have not held majorities: African states broke ties in 1973, the General Assembly passed "Zionism is racism" in 1975 by 72 to 35, and the ministry that ran the campaigns called them "a failure by every conceivable parameter". On this record, without the American veto Israel's membership would have rested on General Assembly majorities it has not had.</p>`};
 let vTestCache=null;
-function vRunScenario(t, fn){ const r0=new Set(removed), d0=new Set(vDrop), m0=vMode; removed.clear(); vDrop.clear(); vMode=t.mode||VB.vote_mode; const s0=vStrict; vStrict=!!t.strict;
+function vRunScenario(t, fn){ const r0=new Set(removed), d0=new Set(vDrop), m0=vMode; removed.clear(); vDrop.clear(); vMode=t.mode||VB.vote_mode; const s0=vStrict; vStrict=!!t.strict; const nv0=new Set(vNoVote), fl0=new Set(vFlip); vNoVote.clear(); vFlip.clear(); (t.novote||[]).forEach(x=>vNoVote.add(x)); (t.flip||[]).forEach(x=>vFlip.add(x));
   (t.ids?t.ids():[]).forEach(x=>removed.add(x)); (t.drop?t.drop():[]).forEach(x=>vDrop.add(x)); const out=fn();
-  removed.clear(); r0.forEach(x=>removed.add(x)); vDrop.clear(); d0.forEach(x=>vDrop.add(x)); vMode=m0; vStrict=s0; return out; }
+  removed.clear(); r0.forEach(x=>removed.add(x)); vDrop.clear(); d0.forEach(x=>vDrop.add(x)); vMode=m0; vStrict=s0; vNoVote.clear(); nv0.forEach(x=>vNoVote.add(x)); vFlip.clear(); fl0.forEach(x=>vFlip.add(x)); return out; }
 function vTestResults(){ if(vTestCache) return vTestCache;
   vTestCache=VTESTS.map(t=>vRunScenario(t,()=>{ const R=vScore(removed); return {t, R, rd:vRead(R), vote:vVote(vLost(removed)), n:removed.size, col:vCollapsed().length}; })); return vTestCache; }
 function vRing(v, label){ const [lc]=vLight(label), r=15, c=2*Math.PI*r, f=Math.max(0,Math.min(1,v/100));
@@ -70,14 +76,14 @@ function vTestsTable(){
 }
 vCard.addEventListener('click', e=>{ const b=e.target.closest('[data-test]'); if(!b) return; vClose(); const k=b.dataset.test; if(k==='record') vRecord(); else vRunTest(+k); });
 function vAssess(x){
-  const col=vCollapsed(), R=vScore(removed), lostM=V0.cap[0]-R.cap[0];
+  const col=vCollapsed(), R=vScore(removed), lostM=V0.cap[0]-R.cap[0], nv=[...vNoVote];
   return `<div class="kind">Test</div><h2>${esc(x.t.q)}</h2>
   <div class="viab">${vHead(R)}</div>
   <h3 class="vsec">What was taken out</h3><p class="vtxt">${esc(x.t.what)}</p>
   <h3 class="vsec">What collapsed</h3><ul class="vul">
    <li>${removed.size?removed.size+' node'+(removed.size===1?'':'s')+' removed':'No nodes removed'}${vDrop.size?`, ${vDrop.size} tie${vDrop.size===1?'':'s'} cut`:''}.</li>
    <li>${col.length} more node${col.length===1?'':'s'} cut off from the state-building core, shown on the map with red dashed rings${col.length?`: ${col.slice(0,30).map(x=>esc(vName(x))).join(', ')}${col.length>30?` and ${col.length-30} more`:''}`:''}.</li>
-   <li>${vVoteLine(removed)}</li>
+   ${nv.length?`<li>Not voting for partition: ${nv.map(x=>esc(vName(x))).join(', ')}.</li>`:''}${vFlip.size?`<li>Voting against instead of for: ${[...vFlip].map(x=>esc(vName(x))).join(', ')}.</li>`:''}<li>${vVoteLine(removed)}</li>
    <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone)`:''}, from ${R.funders} of ${R.funders0} funders.</li></ul>
   <h3 class="vsec">The six channels</h3>${vBars(R)}
   <h3 class="vsec">Lost years, and who could have taken over</h3>${vYearsText(R)||'<p class="vtxt">No years of work lost.</p>'}
@@ -90,7 +96,7 @@ function vShowWhole(){ if(+$('depth').value<5){ $('depth').value=5; $('dval').te
 function vRunTest(i){
   const x=vTestResults()[i], before=vScore(removed).P;
   if(mode!=='del') setMode('del');
-  vShowWhole(); removed.clear(); vDrop.clear(); vMode=x.t.mode||VB.vote_mode; vStrict=!!x.t.strict; vLS('road_strict_v1', vStrict?1:null);
+  vShowWhole(); removed.clear(); vDrop.clear(); vNoVote.clear(); vFlip.clear(); (x.t.novote||[]).forEach(v=>vNoVote.add(v)); (x.t.flip||[]).forEach(v=>vFlip.add(v)); vMode=x.t.mode||VB.vote_mode; vStrict=!!x.t.strict; vLS('road_strict_v1', vStrict?1:null);
   draw(); fit(true);
   const ids=x.t.ids?x.t.ids():[], drop=x.t.drop?x.t.drop():[];
   setTimeout(()=>{

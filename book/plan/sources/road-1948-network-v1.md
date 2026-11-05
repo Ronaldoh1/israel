@@ -449,3 +449,21 @@ The model now counts the years of work an actor carried, and whether anyone docu
 | Rothschilds | 53% | Possible, with great difficulty | |
 | Rothschilds + US | 3% | Unlikely | ever 42% |
 | Herzl | 89% | Happens on time | ~3 years lost |
+
+## Pass: the presidents (5 Nov 2026)
+
+**Presidents layer** (president_layer.py, 7 ties, 2 nodes):
+- **FDR's hidden heart failure.** Bruenn, 28 Mar 1944: "acute congestive heart failure", kept "a guarded secret". FDR died 12 Apr 1945.
+- **The 1944 running mate.** Party leaders' health concerns (History.com). Lahey memo of 10 July 1944, unpublished for six decades.
+- **Wallace.** Ballot figures; "a supporter of Zionism"; met Ben-Gurion and Begin, Oct 1947; promised to end the arms embargo.
+- **Feinberg.** His own account (Truman Library oral history, 1973): a $100,000 pledge for the whistle-stop tour; "without Truman, Israel would have had very difficult days"; the trip "would have been made one way or another".
+- **Wilson's hidden stroke** (2 Oct 1919), the comparable earlier case.
+
+**New tests:**
+
+| Test | On time | Ever | Verdict | Why |
+|---|---|---|---|---|
+| Truman never vice president | 92% | | Happens on time | Wallace, a documented supporter, would have been president |
+| Roosevelt healthy and keeping his 5 Apr 1945 pledge to Ibn Saud | 76% | 89% | Still likely, but delayed (~5 yrs) | No US vote, pressure or recognition; the Philippines, Haiti and Liberia vote no; partition fails 29–16 |
+
+New model features: a country can keep its record but not vote (novote), or vote against (flip).
