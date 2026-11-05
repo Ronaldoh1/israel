@@ -114,7 +114,17 @@ DECISIONS = [
   'levers': ['clifford', 'niles', 'jacobson', 'weizmann', 'kirchwey', 'wallace'],
   'oppose': ['marshall_g', 'state_dept', 'pps_palestine', 'henderson', 'magnes'],
   'effects': {'remove': ['recognition48'], 'drop': ['us_gov>decl_indep']}},
+ {'id': 'league_mandate', 'name': 'The League approves the Mandate (24 Jul 1922)', 'act': 'mandate', 'decider': 'league', 'successor': None,
+  'levers': ['uk', 'balfour'], 'oppose': ['gasparri', 'pal_arab_deleg'], 'effects': {'remove': ['mandate']}},
+ {'id': 'uk_to_un', 'name': 'Britain hands Palestine to the UN (Feb 1947)', 'act': 'unscop', 'decider': 'bevin', 'successor': 'attlee',
+  'levers': ['creech', 'ahc', 'jewish_agency'], 'oppose': [], 'effects': {'remove': ['unscop', 'res181']}},
+ {'id': 'soviet_support', 'name': 'Soviet support for partition (May 1947 to May 1948)', 'act': 'res181', 'decider': 'stalin', 'successor': '*',
+  'levers': ['gromyko'], 'oppose': [], 'effects': {'flip': ['ussr'], 'drop': ['ussr>decl_indep']}},
+ {'id': 'czech_arms', 'name': 'The Czechoslovak arms (Jan to Oct 1948)', 'act': 'balak', 'decider': 'czechoslovakia', 'successor': None,
+  'levers': ['stalin', 'masaryk', 'avriel', 'meir', 'jewish_agency'], 'oppose': ['us_gov'],
+  'effects': {'remove': ['balak'], 'drop': ['jewish_agency>czechoslovakia', 'meir>czechoslovakia', 'avriel>czechoslovakia', 'czechoslovakia>balak']}},
 ]
+UNKNOWN_SUCCESSOR = 1   # a successor with no documented position of his own: one unit of push and one of resistance (an even prior)
 STANCE = {'wallace': 2, 'fdr': -1}   # a successor's own documented position: Wallace a supporter (met Ben-Gurion 1947, pressed Truman to end the embargo); Roosevelt's 5 Apr 1945 pledge to Ibn Saud
 # Blocs (treaties of 1947-48): a member that voted with its leader in 1947 keeps that vote, and its 1948 recognition, only at
 # the bloc's own measured independence if the leader is out. The share that followed is read from the partition vote itself.
@@ -136,6 +146,37 @@ SPAN_T = Y1 - Y0             # 66
 YEAR_CH = [0, 1, 2, 3, 4]    # recognition is a 1947-48 event, so it is not spread over years
 MOVEMENT_SIDE = {'zionist movement', 'us lobby', 'finance', 'rothschild', 'land', 'settlement', 'militias', 'christian zionism', 'israel state'}
 ACTOR_KINDS = {'person', 'institution', 'company', 'government'}
+# Documented founding and end dates (within 1882-1948) for the main actors, where the dates read from ties would mislead
+# (a tie's label can name a year from before the body existed). Sources are listed in the book's method chapter.
+ACTOR_SPAN = {
+ 'jewish_agency': (1929, 1948, 'Jewish Agency constituted at the 16th Zionist Congress, Zurich, August 1929'),
+ 'palestine_office': (1908, 1921, 'Palestine Office opened in Jaffa under Arthur Ruppin in 1908; absorbed into the Zionist Executive in Palestine in 1921'),
+ 'wzo': (1897, 1948, 'Zionist Organization founded at the First Zionist Congress, Basel, 1897'),
+ 'jnf': (1901, 1948, 'Jewish National Fund founded at the Fifth Zionist Congress, 1901'),
+ 'jct': (1899, 1948, 'Jewish Colonial Trust incorporated in London, March 1899'),
+ 'apc_bank': (1902, 1948, 'Anglo-Palestine Company formed by the Trust in 1902'),
+ 'jca': (1891, 1948, 'Jewish Colonization Association founded by Baron Maurice de Hirsch, 1891'),
+ 'pica': (1924, 1948, 'PICA formed from the JCA Palestine branch in 1924'),
+ 'keren_hayesod': (1920, 1948, 'Keren Hayesod founded in London, 1920'),
+ 'upa': (1925, 1948, 'United Palestine Appeal formed 1925'),
+ 'uja': (1939, 1948, 'United Jewish Appeal formed 1939'),
+ 'hadassah': (1912, 1948, 'Hadassah founded 1912'),
+ 'haganah': (1920, 1948, 'Haganah founded 1920'),
+ 'jdc': (1914, 1948, 'Joint Distribution Committee founded 1914'),
+ 'irgun': (1931, 1948, 'Irgun formed 1931'),
+ 'edmond_r': (1882, 1934, 'Edmond de Rothschild funded Rishon LeZion from 1882; died 1934'),
+ 'hirsch': (1891, 1896, 'Baron de Hirsch founded the JCA in 1891; died 1896'),
+ 'herzl': (1895, 1904, 'Herzl began his Zionist work in 1895; died July 1904'),
+ 'hankin': (1890, 1945, 'Yehoshua Hankin bought land in Palestine from 1890 (Rehovot, Hadera) until his death in 1945'),
+ 'yishuv': (1920, 1948, 'The elected Assembly of Representatives and its National Council (Va\'ad Leumi) from 1920'),
+ 'ruppin': (1907, 1943, 'Ruppin first visited Palestine in 1907; died 1943'),
+}
+# the large sums and the years they were spent over
+AMOUNT_YEARS = {('edmond_r', 'pica'): (1882, 1934), ('upa', 'jewish_agency'): (1946, 1948), ('meir', 'czechoslovakia'): (1948, 1948),
+                ('keren_hayesod', 'jewish_agency'): (1921, 1932), ('nicaragua', 'jewish_agency'): (1948, 1948), ('straus_n', 'upa'): (1928, 1928),
+                ('schiff', 'jdc'): (1914, 1914), ('mickey_cohen', 'irgun'): (1947, 1947), ('siegel', 'dafni'): (1946, 1947), ('straus_n', 'hadassah'): (1924, 1924)}
+MATERIAL = 0.05   # a channel's shortfall counts once its record reaches 5% of its 1948 total: before that the record is too thin
+STOCK = True   # knock-on: work built stays built, so a lost year's shortfall carries forward until later work outgrows it
 YR = re.compile(r'\b(1[6-9]\d\d)\b'); LIFE = re.compile(r'\(\s*(?:b\.\s*)?1[6-9]\d\d\s*[–-]\s*(?:1[6-9]\d\d|\d\d)?\s*\)')   # the bodies that pursued the state; with all of them gone there is no project left
 HAZARD = 0.02            # each year of delay loses 2% of the chance: the 1947-48 window (end of the Mandate, the UN vote, post-war
                          # sympathy, Soviet and American support at once) was not going to stay open
@@ -228,6 +269,14 @@ def model(d):
             span[f] += ys; span[t] += ys
     actors = {i: [min(span[i]), max(span[i]), 'm' if N[i]['cluster'] in MOVEMENT_SIDE else 's'] for i in span
               if i in N and span[i] and N[i]['kind'] in ACTOR_KINDS}
+    for i, (a, b, _src) in ACTOR_SPAN.items():   # documented founding and end dates override the dates read from the ties
+        if i in actors: actors[i][0], actors[i][1] = a, b
+    # each tie's own years: a stated range for the large sums, otherwise the years its labels name (0, 0 if undated)
+    eyear = []
+    for f, t, c, w, v in edges:
+        if (f, t) in AMOUNT_YEARS: eyear.append(list(AMOUNT_YEARS[(f, t)])); continue
+        ys = [int(y) for lab in labs[(f, t)] for y in YR.findall(LIFE.sub('', lab)) if Y0 <= int(y) <= Y1]
+        eyear.append([min(ys), max(ys)] if ys else [0, 0])
     vote = {k: sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == ty}) for k, ty in [('yes', 'vote for'), ('no', 'vote against'), ('abstain', 'abstention')]}
     blocs = []
     for B in BLOCS:
@@ -238,8 +287,8 @@ def model(d):
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
             'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N],
-            'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'power': POWER, 'gdp1950': GDP1950,
-            'decisions': DECISIONS, 'stance': STANCE, 'tied': tied, 'blocs': blocs,
+            'actors': actors, 'eyear': eyear, 'stock': STOCK, 'material': MATERIAL, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'power': POWER, 'gdp1950': GDP1950,
+            'decisions': DECISIONS, 'stance': STANCE, 'unknown_successor': UNKNOWN_SUCCESSOR, 'tied': tied, 'blocs': blocs,
             'incorp': [list(x) for x in incorp], 'framework': {k: v for k, v in FRAMEWORK.items() if k in N}, 'addressee': {k: sorted(v) for k, v in addressee.items()}, 'strict': False, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
@@ -307,53 +356,70 @@ def lost_force(M, removed, mode=None, strict=None, novote=(), flip=()):
 
 
 def lost_years(M, removed, drop=()):
-    """Years of the movement's work lost. Each actor (person, organization, government) is active from its first to its last
-    dated supporting tie. In each year, the share of a channel's active work that an actor carried and lost (removed, or its
-    ties cut) is covered by the strongest documented actor on the same side (the movement and its backers, or states) already
-    active that year, up to that actor's own weight in the channel. What no one could cover is lost; a year counts as lost in
-    proportion to the worst-hit channel. Returns the total, the lost share per year, and each actor's own loss and best substitute."""
-    A = M['actors']; NCh = len(M['channels'])
-    cap = {i: [0.0] * NCh for i in A}; live = {i: [0.0] * NCh for i in A}; avail = {i: [0.0] * NCh for i in A}
-    for f, t, c, w, v in M['edges']:
+    """Years of the movement's work lost, year by year, 1882-1948.
+    Each tie's work is spread over the years it was done (its own dates; an undated tie over its actor's active years). In each
+    year and channel, the work a removed actor (or a cut tie) did that year is covered by the strongest documented actor on the
+    same side already founded, up to the yearly work that actor had shown by then. What no one covers is lost. Work built stays
+    built (the knock-on): the uncovered shortfall carries forward as a share of everything built so far, so a lost foundation keeps
+    counting until later work outgrows it. A year counts as lost in proportion to the worst-hit channel's shortfall."""
+    A = M['actors']; NCh = len(M['channels']); Ys = M['y1'] - M['y0'] + 1; y0 = M['y0']
+    Z = lambda: [[0.0] * Ys for _ in range(NCh)]
+    cap = {i: Z() for i in A}; live = {i: Z() for i in A}; avail = {i: Z() for i in A}
+    for (f, t, c, w, v), (ea, eb) in zip(M['edges'], M['eyear']):
+        if c not in M['year_ch'] or not v: continue
         dropped = (f + '>' + t) in drop
-        for x in (f, t):
-            if x in cap:
-                cap[x][c] += v
-                # an actor loses a tie's work if it is removed itself, or the tie is cut; a partner of a removed actor does not
-                # (the removed actor's own loss already stands for that tie)
-                if not (x in removed or dropped): live[x][c] += v
-                if not (f in removed or t in removed or dropped): avail[x][c] += v
-    # a substitute can only bring what it had apart from the removed actors (PICA's money was Edmond's money)
-    order = {k: sorted((i for i in A if avail[i][k] > 0), key=lambda i: -avail[i][k]) for k in M['year_ch']}
+        for x, o in ((f, t), (t, f)):
+            if x not in cap: continue
+            s0, s1 = A[x][0], A[x][1]
+            if ea: a, b = ea, eb
+            elif o in A and max(s0, A[o][0]) <= min(s1, A[o][1]): a, b = max(s0, A[o][0]), min(s1, A[o][1])
+            else: a, b = s0, s1
+            rate = v / (b - a + 1); lo, hi = max(a, s0), min(b, s1)
+            if lo > hi: lo = hi = min(max(a, s0), s1); rate = v   # a tie dated outside the actor's years falls in its nearest year
+            for y in range(lo, hi + 1):
+                cap[x][c][y - y0] += rate
+                if not (x in removed or dropped): live[x][c][y - y0] += rate
+                if not (f in removed or t in removed or dropped): avail[x][c][y - y0] += rate
     total, per, who = 0.0, {}, {}
+    S = [0.0] * NCh; D = [0.0] * NCh; Da = {}; cum = {i: [0.0] * NCh for i in A}
+    Sfin = [sum(cap[i][k][j] for i in A for j in range(Ys)) for k in range(NCh)]
+    lost_at = {a: [any(cap[a][k][j] - live[a][k][j] > 1e-9 for j in range(Ys)) for k in range(NCh)] for a in A}
     for y in range(M['y0'], M['y1'] + 1):
-        act = [i for i in A if A[i][0] <= y <= A[i][1]]
-        F = []
+        j = y - y0; F = [0.0] * NCh
         for k in M['year_ch']:
-            tot = sum(cap[i][k] for i in act)
-            if not tot: F.append(0); continue
-            lost = 0.0
-            for a in act:
-                l = cap[a][k] - live[a][k]
+            for i in A: cum[i][k] += avail[i][k][j]
+            tot = sum(cap[i][k][j] for i in A)
+            for a in A:
+                if not lost_at[a][k]: continue
+                l = cap[a][k][j] - live[a][k][j]
                 if l <= 1e-9: continue
-                sub = next((b for b in order[k] if b != a and b not in removed and A[b][2] == A[a][2] and A[b][0] <= y), None)
-                cov = min(1.0, avail[sub][k] / l) if sub else 0.0
-                lost += l / tot * (1 - cov)
+                best, bc = None, 0.0
+                for b in A:   # the strongest same-side actor founded by now, at the yearly work it had shown so far
+                    if b == a or b in removed or A[b][2] != A[a][2] or A[b][0] > y: continue
+                    rb = cum[b][k] / (y - A[b][0] + 1)
+                    if rb > bc: best, bc = b, rb
+                cov = min(1.0, bc / l) if best else 0.0
+                u = l * (1 - cov); D[k] += u; Da.setdefault(a, [0.0] * NCh)[k] += u
                 r = who.setdefault(a, {'s': A[a][0], 'e': A[a][1], 'years': 0.0, 'ch': None, 'subs': {}, 'w': 0.0, 'yk': {}})
-                if l / tot > r['w']: r.update(ch=k, w=l / tot)
-                r['yk'][k] = r['yk'].get(k, 0.0) + l / tot * (1 - cov)
-                r['years'] = r['yk'].get(r['ch'], 0.0)   # years lost in the actor's main role
-                if sub:   # the best substitute per channel: who, how much of the role, and from when
+                if tot and l / tot > r['w']: r.update(ch=k, w=l / tot)
+                if best:
                     q = r['subs'].get(k)
-                    if q is None or cov > q[1]: r['subs'][k] = [sub, round(cov, 2), A[sub][0]]
-            F.append(min(1.0, lost))
+                    if q is None or cov > q[1]: r['subs'][k] = [best, round(cov, 2), A[best][0]]
+            S[k] += tot
+            if S[k] >= M.get('material', 0.05) * Sfin[k] and S[k] > 0:   # counted once the channel's work has begun in earnest
+                F[k] = min(1.0, D[k] / S[k]) if M.get('stock', True) else 0.0
+                for a, da in Da.items():
+                    if da[k] > 0:
+                        r = who[a]; r['yk'][k] = r['yk'].get(k, 0.0) + da[k] / S[k]
         for doc, fw in M.get('framework', {}).items():
             if doc in removed and fw['y'][0] <= y <= fw['y'][1]:
                 F[fw['ch']] = max(F[fw['ch']], fw['loss'])
                 r = who.setdefault(doc, {'s': fw['y'][0], 'e': fw['y'][1], 'years': 0.0, 'ch': fw['ch'], 'subs': {}, 'w': fw['loss'], 'yk': {}, 'framework': True})
-                r['yk'][fw['ch']] = r['yk'].get(fw['ch'], 0.0) + fw['loss']; r['years'] = r['yk'][fw['ch']]
+                r['yk'][fw['ch']] = r['yk'].get(fw['ch'], 0.0) + fw['loss']
         f = max(F) if F else 0
         per[y] = round(f, 3); total += f
+    for a, r in who.items():
+        if r['ch'] is not None: r['years'] = r['yk'].get(r['ch'], 0.0)
     return total, per, who
 
 
@@ -377,6 +443,7 @@ def decision_chance(M, D, removed, decider=None):
     if dec in removed:
         dec = D['successor'] if D['successor'] and D['successor'] not in removed else None
     orig = D['decider']; tied = M.get('tied', {})
+    if not dec: return 0.0, None   # no one documented is left to take the decision
     S = O = 0.0
     for l in D['levers']:
         if l in removed or l == dec: continue
@@ -386,6 +453,7 @@ def decision_chance(M, D, removed, decider=None):
     O = sum(1 for o in D['oppose'] if o not in removed)
     st = M.get('stance', {}).get(dec, 0) if dec != orig else 0
     S += max(0, st); O += max(0, -st)
+    if dec and dec != orig and dec not in M.get('stance', {}): S += M.get('unknown_successor', 1); O += M.get('unknown_successor', 1)
     return S / (S + O) if S + O else 0.0, dec
 
 

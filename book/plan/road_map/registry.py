@@ -678,6 +678,9 @@ res4686|UN Resolution 46/86 (1991)|document|international|Resolution 46/86
 # ---------- Presidents layer (added Nov 2026) ----------
 fdr_health|Roosevelt's hidden heart failure (1944-45)|event|us government|congestive heart failure
 wilson_stroke|Wilson's hidden stroke (1919)|event|us government|Wilson's stroke
+# ---------- Decisions layer (added Nov 2026) ----------
+masaryk|Jan Masaryk|person|soviet bloc|Jan Masaryk;Masaryk
+avriel|Ehud Avriel|person|militias|Ehud Avriel;Avriel
 """
 
 

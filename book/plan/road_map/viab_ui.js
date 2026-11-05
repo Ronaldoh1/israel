@@ -32,11 +32,13 @@ function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.
 const vDecider = {};   /* a test can name who decides instead (for example Roosevelt in place of Truman) */
 function vDecisionChance(D, rem, dec0){ let dec=dec0||D.decider; const tied=VB.tied, orig=D.decider;
   if(rem.has(dec)) dec=(D.successor&&!rem.has(D.successor))?D.successor:null;
+  if(!dec) return [0, null];
   let S=0, O=0;
   for(const l of D.levers){ if(rem.has(l)||l===dec) continue; const personal=(tied[orig]||[]).includes(l);
     if(personal&&dec!==orig&&!(dec&&(tied[dec]||[]).includes(l))) continue; S++; }
   for(const o of D.oppose) if(!rem.has(o)) O++;
   const st=dec!==orig?(VB.stance[dec]||0):0; S+=Math.max(0,st); O+=Math.max(0,-st);
+  if(dec&&dec!==orig&&!(dec in VB.stance)){ const u=VB.unknown_successor==null?1:VB.unknown_successor; S+=u; O+=u; }
   return [S+O?S/(S+O):0, dec]; }
 /* holistic reading: the base reading averaged over whether each key decision still happens */
 function vScore(rem0){ const rel=[];
@@ -66,26 +68,35 @@ const V0 = vScore(new Set());
 /* five readings of one removal (mirrors viability.readings) */
 
 /* lost years and substitutes (mirrors viability.lost_years) */
-function vYears(rem, drop){ const A=VB.actors, ids=Object.keys(A), NCh=VB.channels.length, cap={}, live={}, avail={};
-  for(const i of ids){ cap[i]=Array(NCh).fill(0); live[i]=Array(NCh).fill(0); avail[i]=Array(NCh).fill(0); }
-  for(const [f,t,c,w,v] of VB.edges){ const dropped=drop.has(f+'>'+t);
-    for(const x of [f,t]) if(cap[x]){ cap[x][c]+=v; if(!(rem.has(x)||dropped)) live[x][c]+=v; if(!(rem.has(f)||rem.has(t)||dropped)) avail[x][c]+=v; } }
-  const order={}; for(const k of VB.year_ch) order[k]=ids.filter(i=>avail[i][k]>0).sort((a,b)=>avail[b][k]-avail[a][k]);
-  let total=0; const per={}, who={};
-  for(let y=VB.y0;y<=VB.y1;y++){ const act=ids.filter(i=>A[i][0]<=y&&y<=A[i][1]); let F=0;
-    for(const k of VB.year_ch){ let tot=0; for(const i of act) tot+=cap[i][k]; if(!tot) continue; let lost=0;
-      for(const a of act){ const l=cap[a][k]-live[a][k]; if(l<=1e-9) continue;
-        const sub=order[k].find(b=>b!==a&&!rem.has(b)&&A[b][2]===A[a][2]&&A[b][0]<=y), cov=sub?Math.min(1,avail[sub][k]/l):0;
-        lost+=l/tot*(1-cov);
-        const r=who[a]||(who[a]={s:A[a][0],e:A[a][1],years:0,ch:null,subs:{},w:0,yk:{}}); if(l/tot>r.w){ r.ch=k; r.w=l/tot; } r.yk[k]=(r.yk[k]||0)+l/tot*(1-cov); r.years=r.yk[r.ch]||0;
-        if(sub){ const q=r.subs[k]; if(!q||cov>q[1]) r.subs[k]=[sub,Math.round(cov*100)/100,A[sub][0]]; } }
-      F=Math.max(F,Math.min(1,lost)); }
-    for(const [doc,fw] of Object.entries(VB.framework)) if(rem.has(doc)&&fw.y[0]<=y&&y<=fw.y[1]){ F=Math.max(F,fw.loss);
-      const r=who[doc]||(who[doc]={s:fw.y[0],e:fw.y[1],years:0,ch:fw.ch,subs:{},w:fw.loss,yk:{},framework:true}); r.yk[fw.ch]=(r.yk[fw.ch]||0)+fw.loss; r.years=r.yk[fw.ch]; }
-    per[y]=F; total+=F; }
+function vYears(rem, drop){ const A=VB.actors, ids=Object.keys(A), NCh=VB.channels.length, y0=VB.y0, Ys=VB.y1-VB.y0+1;
+  const Z=()=>Array.from({length:NCh},()=>new Float64Array(Ys)), cap={}, live={}, avail={};
+  for(const i of ids){ cap[i]=Z(); live[i]=Z(); avail[i]=Z(); }
+  VB.edges.forEach(([f,t,c,w,v],n)=>{ if(!VB.year_ch.includes(c)||!v) return; const [ea,eb]=VB.eyear[n], dropped=drop.has(f+'>'+t);
+    for(const [x,o] of [[f,t],[t,f]]){ if(!cap[x]) continue; const s0=A[x][0], s1=A[x][1]; let a,b;
+      if(ea){ a=ea; b=eb; } else if(A[o]&&Math.max(s0,A[o][0])<=Math.min(s1,A[o][1])){ a=Math.max(s0,A[o][0]); b=Math.min(s1,A[o][1]); } else { a=s0; b=s1; }
+      let rate=v/(b-a+1), lo=Math.max(a,s0), hi=Math.min(b,s1); if(lo>hi){ lo=hi=Math.min(Math.max(a,s0),s1); rate=v; }
+      for(let y=lo;y<=hi;y++){ cap[x][c][y-y0]+=rate; if(!(rem.has(x)||dropped)) live[x][c][y-y0]+=rate; if(!(rem.has(f)||rem.has(t)||dropped)) avail[x][c][y-y0]+=rate; } } });
+  let total=0; const per={}, who={}, S=Array(NCh).fill(0), D=Array(NCh).fill(0), Da={}, cum={};
+  for(const i of ids) cum[i]=Array(NCh).fill(0);
+  const Sfin=[]; for(let k=0;k<NCh;k++){ let s=0; for(const i of ids) for(let j=0;j<Ys;j++) s+=cap[i][k][j]; Sfin.push(s); }
+  const lostAt={}; for(const a of ids){ lostAt[a]=[]; for(let k=0;k<NCh;k++){ let q=false; for(let j=0;j<Ys;j++) if(cap[a][k][j]-live[a][k][j]>1e-9){ q=true; break; } lostAt[a].push(q); } }
+  const material=VB.material==null?0.05:VB.material;
+  for(let y=VB.y0;y<=VB.y1;y++){ const j=y-y0, F=Array(NCh).fill(0);
+    for(const k of VB.year_ch){ for(const i of ids) cum[i][k]+=avail[i][k][j]; let tot=0; for(const i of ids) tot+=cap[i][k][j];
+      for(const a of ids){ if(!lostAt[a][k]) continue; const l=cap[a][k][j]-live[a][k][j]; if(l<=1e-9) continue;
+        let best=null, bc=0; for(const b of ids){ if(b===a||rem.has(b)||A[b][2]!==A[a][2]||A[b][0]>y) continue; const rb=cum[b][k]/(y-A[b][0]+1); if(rb>bc){ best=b; bc=rb; } }
+        const cov=best?Math.min(1,bc/l):0, u=l*(1-cov); D[k]+=u; (Da[a]||(Da[a]=Array(NCh).fill(0)))[k]+=u;
+        const r=who[a]||(who[a]={s:A[a][0],e:A[a][1],years:0,ch:null,subs:{},w:0,yk:{}}); if(tot&&l/tot>r.w){ r.ch=k; r.w=l/tot; }
+        if(best){ const q=r.subs[k]; if(!q||cov>q[1]) r.subs[k]=[best,Math.round(cov*100)/100,A[best][0]]; } }
+      S[k]+=tot;
+      if(S[k]>0&&S[k]>=material*Sfin[k]){ F[k]=VB.stock===false?0:Math.min(1,D[k]/S[k]); for(const a in Da) if(Da[a][k]>0) who[a].yk[k]=(who[a].yk[k]||0)+Da[a][k]/S[k]; } }
+    for(const [doc,fw] of Object.entries(VB.framework)) if(rem.has(doc)&&fw.y[0]<=y&&y<=fw.y[1]){ F[fw.ch]=Math.max(F[fw.ch],fw.loss);
+      const r=who[doc]||(who[doc]={s:fw.y[0],e:fw.y[1],years:0,ch:fw.ch,subs:{},w:fw.loss,yk:{},framework:true}); r.yk[fw.ch]=(r.yk[fw.ch]||0)+fw.loss; }
+    const f=Math.max(...F); per[y]=Math.round(f*1000)/1000; total+=f; }
+  for(const a in who){ const r=who[a]; if(r.ch!=null) r.years=r.yk[r.ch]||0; }
   return {L:total, per, who}; }
 function vDecText(R){ if(!R.decisions||!R.decisions.length) return '';
-  return `<ul class="vul">${R.decisions.map(x=>{ if(x.id==='un_vote') return `<li><b>${esc(x.name)}</b>: chance it still reaches two-thirds: <b>${Math.round(x.chance*100)}%</b>. A bloc whose leader is out keeps only its members' independent votes.</li>`; const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one documented left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>
+  return `<ul class="vul">${R.decisions.map(x=>{ if(x.id==='un_vote') return `<li><b>${esc(x.name)}</b>: chance it still reaches two-thirds: <b>${Math.round(x.chance*100)}%</b>. A bloc whose leader is out keeps only its members' independent votes.</li>`; const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${x.decider==='*'?'an unnamed successor':esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one documented left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>
   <p class="vtxt">A decision's chance is the documented push over push plus resistance, around whoever decides. Push aimed at the man himself (his staff, friends and correspondents) does not pass to a successor without his own documented tie; resistance stays.</p>`; }
 function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(R.years.who).length?`<p class="vtxt">No years of work lost: documented actors already active at the time could carry what was taken out.</p>`:'';
   const Y=R.years, rows=Object.entries(Y.who).filter(([a,r])=>r.years>=0.5).sort((a,b)=>b[1].years-a[1].years).slice(0,5);
@@ -184,7 +195,7 @@ function vIntro(){
   <h4>7. Delay</h4>
   <p class="vtxt">What is lost is rebuilt by the network that is left, so the pace scales with what remains. Each channel was first built over 51 years for money and organization (from 1897), 66 for land (from 1882), 28 for arms (from 1920) and 31 for diplomacy (from 1917); with half of a channel left it rebuilds at half that pace, with a quarter left at a quarter. The longest is the delay shown. The same scaled pace governs the "by 1958" and "ever" readings.</p>
   <h4>Key decisions, read as a whole</h4>
-  <p class="vtxt">Three decisions are read as decisions, not just as ties: the Balfour Declaration (decided by the War Cabinet), the American vote and pressure for partition in November 1947, and American recognition on 14 May 1948 (both decided by Truman). For each, the map lists who pushed and who resisted, from ties on the map dated before the decision. Its chance of still happening is the push over push plus resistance, relative to the full record, where it happened. If the decider is removed, his documented successor decides (Henry Wallace, in Truman's place). Push aimed at the man himself (his staff, friends and correspondents) does not pass to the successor unless the successor has his own documented tie to that person; the resistance stays; the successor's own documented position counts for or against. The overall chance is then averaged over whether each decision still happens. Each push or resistance counts one; that is an assumption, disclosed here.</p>
+  <p class="vtxt">Seven decisions are read as decisions, not just as ties: the Balfour Declaration (decided by the War Cabinet), the League of Nations' approval of the Mandate (24 July 1922), Britain's referral of Palestine to the UN (decided by Bevin's cabinet, February 1947), Soviet support for partition (decided by Stalin, 1947), the American vote and pressure for partition in November 1947 and American recognition on 14 May 1948 (both decided by Truman), and the Czechoslovak arms sales (January to October 1948). For each, the map lists who pushed and who resisted, from ties on the map dated before the decision. Its chance of still happening is the push over push plus resistance, relative to the full record, where it happened. If the decider is removed, his documented successor decides (Henry Wallace in Truman's place, Attlee in Bevin's, an unnamed successor in Stalin's); if there is none, the decision is not taken. Push aimed at the man himself (his staff, friends and correspondents) does not pass to the successor unless the successor has his own documented tie to that person; the resistance stays; the successor's own documented position counts for or against, and a successor with no documented position adds one unit to each side (an even chance). The overall chance is then averaged over whether each decision still happens. Each push or resistance counts one; that is an assumption, disclosed here.</p>
   <h4>Blocs follow their leaders</h4>
   <p class="vtxt">In 1947-48 most governments moved with the bloc they depended on. Blocs are taken from the treaties of the time: the Americas (the Rio Pact, signed 2 September 1947), Western Europe (the Marshall Plan accord, April 1948) and the Soviet side (the Soviet republics and Moscow's allies). The partition vote itself measures how closely each followed its leader: ${VB.blocs.map(B=>`${esc(B.name)}, ${Math.round(B.follow*100)}%`).join('; ')}. If a leader is out (removed, or not voting for partition), each member that followed it keeps its vote for partition, and its 1948 recognition, only at the bloc's independence (100% minus that share). The vote then passes with a computed probability rather than for certain. The same rule applies to both sides; the Soviet side moved fewer votes, so losing its lead costs less.</p>
   <h4>The power of states</h4>
@@ -194,7 +205,8 @@ function vIntro(){
   <h4>A stricter reading you can switch on</h4>
   <p class="vtxt">By default a document stands while any body that issued it remains. The Balfour Declaration was issued by the War Cabinet and signed by Balfour; it was addressed to Walter Rothschild, who also helped draft it. Some argue it could not have been issued without him. The record documents his role but not that Britain would have withheld it otherwise, so this is offered as a switch in the Remove a node panel, off by default: with it on, a document falls when its named addressee is removed.</p>
   <h4>Lost years, and who could have taken over</h4>
-  <p class="vtxt">Removing a funder or a leader also removes years of work. Every person, organization and government in the map is active from its first to its last dated supporting tie (birth and death dates are ignored). For each year from 1882 to 1948 the map asks, channel by channel: what share of that year's work did the removed actors carry, and could the strongest documented actor on the same side (the movement and its backers, or the states), already active that year, have taken it over? A substitute can bring only what it had apart from the removed actors, and covers at most its own documented weight. What no one could cover is lost; a year counts as lost in proportion to the worst-hit channel.</p>
+  <p class="vtxt">Removing a funder or a leader also removes years of work. Each tie's work is placed in the years it was done: its own dates where the record gives them (Edmond de Rothschild's money from 1882 to 1934, the American appeals' from 1946 to 1948), otherwise spread over the years its actor was active. Actors run from their first to their last dated tie, except where the founding and end are documented (the Jewish Agency from 1929, not earlier; the Palestine Office from 1908; Herzl from 1895 to 1904). For each year from 1882 to 1948 the map asks, channel by channel, what work the removed actors did that year, and whether the strongest documented actor on the same side, already founded, could have done it: a substitute covers only up to the yearly work it had actually shown by then, not money it raised decades later.</p>
+  <p class="vtxt">Work built stays built, so a loss carries forward. What no one covered is a shortfall against everything built so far, and it keeps counting each year until later work outgrows it: losing the first colonies matters for decades, losing one year's donation in 1947 matters for a year. A channel starts counting once its record reaches 5% of its 1948 total, because before that the record is too thin to say a year was lost. A year counts as lost in proportion to the worst-hit channel's shortfall.</p>
   <p class="vtxt">The lost years then lower the on-time chance in proportion to the 66 build-up years (losing 22 years leaves two-thirds), and a later founding cannot come before those years are made up. Each reading names the removed actors, the years they were active, the closest documented substitute, from when, and how much of the role it could carry. The map cannot know whether someone undocumented would have stepped in, or whether a substitute would have chosen to.</p>
   <h4>Someone has to pursue the goal</h4>
   <p class="vtxt">The state was the goal of an organized movement. If its three carrying bodies are all removed (the Zionist Organization, the Jewish Agency and the Jewish National Council of the Yishuv), there is no one left to pursue it, and every channel counts as empty however much support remains elsewhere.</p>

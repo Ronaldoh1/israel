@@ -528,3 +528,28 @@ What is lost is rebuilt by the network that is left: share_t = s × (1 + t/T). F
 | Moscow alone out | 93% | | Happens on time |
 | Rothschilds + US | 2% | 13% | Not possible on this record |
 | Rothschilds | 52% | 58% | Possible, with great difficulty |
+
+## Pass: lost years dated by year, four more key decisions, other homelands, the book appendix (5 Nov 2026)
+
+**Lost years, for every node.** Each tie's work sits in the years it was done (stated ranges for the large sums; else its labels' years; undated ties spread over the actor's span). Documented founding/end dates override tie-read spans (Jewish Agency 1929, Palestine Office 1908–21, Herzl 1895–1904, Hankin 1890–1945, Va'ad Leumi 1920, etc.). A substitute covers a year only up to the yearly work it had shown by then. Knock-on: uncovered work is a shortfall against everything built so far and keeps counting until later work outgrows it; a channel counts once its record reaches 5% of its 1948 total.
+
+**Key decisions now seven:** + League approval of the Mandate (1922), Britain to the UN (Feb 1947; Attlee as successor), Soviet support (Stalin; unnamed successor), Czechoslovak arms (1948). A successor with no documented position adds one unit to each side; no decider left means the decision is not taken. New ties in decision_layer.py (11), new nodes Masaryk and Avriel.
+
+**Other homelands** (alt_homeland.py, Tests panel): Argentina under 1%, British East Africa about 2%; shares are disclosed judgments on the same six channels.
+
+**Readings:**
+
+| Removed / test | On time | Ever | Years lost | Verdict |
+|---|---|---|---|---|
+| Edmond de Rothschild | 28% | 39% | 43 | Unlikely (was 54%, 21 yrs) |
+| Rothschild family | 27% | 39% | 43 | Unlikely |
+| Without the United States | 22% | 46% | 14 | Unlikely |
+| Britain | 48% | 53% | 28 | Unlikely |
+| Balfour Declaration | 56% | 56% | 26 | Possible, with great difficulty |
+| Only Moscow (US government out) | 64% | 81% | 0 | Still likely, but delayed |
+| Stalin | 93% | 93% | 0 | Happens on time |
+| Czechoslovak arms | 91% | 91% | 0 | Happens on time |
+| Rothschilds + US | 1% | 13% | 45 | Not possible on this record |
+| Yishuv institutions (Va'ad Leumi) | 93% | | 0 | Happens on time (was 60%, an artifact of the old rule) |
+
+Browser and Python agree on 143 sampled nodes. Book: new appendix "The Map and the Tests" in The Road to 1948 (book/part1/rd7, six sections).

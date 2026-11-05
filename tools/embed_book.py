@@ -141,12 +141,12 @@ base_chapters[-1]['outroTitle'] = 'What the Baseline establishes'
 # ---- Volume II: The Road to 1948, in stages ----
 STAGES = [('rd0', 'Prelude', 'The Board Before the Game', '1694–1896'), ('rd1', 'Stage One', 'Conceive', '1896–1917'), ('rd2', 'Stage Two', 'Secure', '1917–1922'),
           ('rd3', 'Stage Three', 'Build', '1922–1936'), ('rd4', 'Stage Four', 'Pivot to America', '1936–1945'), ('rd5', 'Stage Five', 'Execute', '1945–1948'),
-          ('rd6', 'Stage Six', 'Consolidate and Account', '1948–1950s')]
+          ('rd6', 'Stage Six', 'Consolidate and Account', '1948–1950s'), ('rd7', 'Appendix', 'The Map and the Tests', 'Measuring the record')]
 road = []
 for cid, label, title, sp in STAGES:
-    order = next(c for c in CH if c['id'] == cid)['scenes']
+    order = next((c for c in CH if c['id'] == cid), {'scenes': []})['scenes']
     road.append({'id': cid, 'label': label, 'title': title, 'span': sp, 'intro': read(os.path.join(ROOT, 'book', 'part1', cid, '_intro.html')),
-                 'outro': read(os.path.join(ROOT, 'book', 'part1', cid, '_outro.html')), 'outroTitle': 'What this stage built',
+                 'outro': read(os.path.join(ROOT, 'book', 'part1', cid, '_outro.html')), 'outroTitle': 'What the map shows' if cid == 'rd7' else 'What this stage built',
                  'sections': sections_for(cid, order)})
 
 # ---- Volume III: The Cold War Architecture, in stages (book/plan/volumes.json) ----
