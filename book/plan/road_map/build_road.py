@@ -231,3 +231,4 @@ def main():
 if __name__ == '__main__':
     main()
     import qop_road; print('profiles', qop_road.run()['qop_meta'])
+    import viability; print('viability', viability.run()[0]['viability_meta']['groups']['Rothschild family and houses'])

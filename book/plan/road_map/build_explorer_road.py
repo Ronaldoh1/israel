@@ -32,7 +32,9 @@ def resolve(src):
 
 
 unres = sum(1 for e in d['edges'] for r in resolve(e['src']) if not r['u'])
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+import viability as _vb
+_M = _vb.model(d)
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [
@@ -78,6 +80,13 @@ t = t.replace("if(q.open_leads.length) h+=`<dt>Open leads</dt>", "if(q.open_lead
 t = t.replace("An edge is a document: a payment, contract, email, flight, appointment or filing. Solid = verified; dashed = lead to verify; thick purple = withheld (a document known to exist and not released); dotted red = not established, shown only when switched on and never used to walk.",
               "An edge is a tie the book states, with the book's source: founded, funded, led, wrote to, signed, opposed. Solid = sourced; dashed = stated in the book without a citation in that paragraph; dotted = named together in one sentence with no stated tie, shown only when switched on and never used to walk.")
 t = re.sub(r"placeholder='e\.g\. tier:1[^']*'", "placeholder='e.g. role:finance ties>2   or   tier:1   or   volume:\"Vatican\"   or   Rothschild'", t)
+t = t.replace('function delPanel(r){', 'function delPanel0(r){', 1)
+t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
+# profile line and query keys
+t = t.replace("  h+=`<dt>Sources</dt>", "  if(q.viability) h+=`<dt>If removed</dt><dd>${q.viability.V}% · ${esc(q.viability.rating)}${q.viability.drop>=0.5?' (down '+q.viability.drop+' points; weakest: '+esc(DATA.viab.labels[q.viability.weakest])+'; about '+Math.round(q.viability.delay)+' more years to rebuild)':''}</dd>`;\n  h+=`<dt>Sources</dt>", 1)
+t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear();", 1)
+t = t.replace("mentions:q=>q.mentions||0,", "mentions:q=>q.mentions||0, viability:q=>q.viability?q.viability.V:100, rating:q=>q.viability?q.viability.rating:'',", 1)
+t = t.replace('volume volumes sources book mentions.', 'volume volumes sources book mentions viability rating.', 1)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO, 'road-network.html')
 open(out, 'w', encoding='utf-8').write(t)
