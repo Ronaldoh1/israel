@@ -368,3 +368,34 @@ Readings:
 | Philippines, Haiti, Liberia (as votes against) | 30–16, fails | 84% | Still likely, but delayed |
 | Countries that voted for partition | fails | 52% | Still likely, but delayed (ever 87%) |
 | Rothschilds + US | | 31% | Possible, with great difficulty |
+
+## Pass: the global layer after 1948, and the Tests panel (5 Nov 2026)
+
+**Global layer** (global_layer.py, 73 ties, 9 nodes; kept out of the 1948 model):
+- Israeli aid to Africa from the late 1950s, aimed in part at UN votes ("important for Israel to try to win as many African votes as possible"), and the African break with Israel in 1973.
+- ELNET (2007).
+- The Israel Allies Foundation's caucuses in foreign parliaments.
+- The state-funded campaigns: Kela Shlomo (128M shekels approved in 2018), Concert (25M shekels a year from 2022) and Voices of Israel (contract ended 2024). The ministry's own director general: "failed by every conceivable parameter".
+- US Security Council vetoes (46 by 2023), and the 1982 Syrian move to review Israel's UN status, with the US threat to withdraw from the UN.
+- Resolution 3379 (1975, 72–35–32), with the votes of every country already in the map, and its revocation in 1991 (46/86).
+
+**New rule.** The state needs someone to pursue it. If the Zionist Organization, the Jewish Agency and the Va'ad Leumi are all removed, every channel counts as empty. The cluster group is renamed "The Zionist movement (organizations and leaders)".
+
+**Tests panel** (a Tests chip in the mode row, and "Run a test" under Tools). There are 14 computed tests, each with a ring showing the 1948 chance and the verdict colour. Tapping a test runs it on the whole map: the removed nodes pulse out, cut ties flash red, and nodes cut off from the core get red dashed rings. A full assessment opens in the side panel. There is also one reading of the post-1948 record (US veto and UN standing).
+
+| Test | On time | Ever | Verdict |
+|---|---|---|---|
+| Herzl | 93% | 93% | Happens on time |
+| Zionism never organized | 0% | | Not possible |
+| Rothschild money | 81% | | Still likely, but delayed (~22 yrs) |
+| Rothschilds entirely | 78% | | Still likely, but delayed |
+| Edmond's land and colonies | 80% | | Still likely, but delayed |
+| Balfour Declaration | 93% | | Happens on time |
+| Britain | 92% | | Happens on time |
+| United States | 65% | | Possible, with great difficulty |
+| UN vote | 84% | | Still likely, but delayed (vote fails) |
+| Three pressured votes against | 84% | | Still likely, but delayed (vote fails) |
+| Soviet bloc | 89% | | Happens on time |
+| American money | 81% | | Still likely, but delayed |
+| Armed groups | 0% | | Not possible |
+| Rothschilds + US | 11% | 51% | Unlikely |

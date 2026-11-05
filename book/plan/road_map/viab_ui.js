@@ -18,10 +18,11 @@ function vReach(rem){ const adj=new Map(); for(const [f,t] of VB.edges){ if(rem.
 function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.map(()=>0), ties=VB.channels.map(()=>0), ties0=VB.channels.map(()=>0), funders=new Set(), funders0=new Set();
   for(const [f,t,c,w,v] of VB.edges){ ties0[c]++; if(c===0&&v>0) funders0.add(f);
     if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
+  const nocarrier=VB.carriers.length>0&&VB.carriers.every(c=>rem.has(c)); if(nocarrier){ cap.fill(0); funders.clear(); }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
   const P=pc.reduce((a,b,i)=>a*Math.pow(b,VB.exp[i]),100), delay=share.map((r,i)=>VB.tbuild[i]*(1-r));
   const lostDocs=[...rem].filter(x=>!rem0.has(x));
-  return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs}; }
+  return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs,nocarrier}; }
 const V0 = vScore(new Set());
 
 /* five readings of one removal (mirrors viability.readings) */
@@ -29,12 +30,12 @@ function vRead(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, D=Math.max(...R.dela
   const Pat=sh=>sh.reduce((p,x,i)=>p*Math.pow(1-Math.exp(-k*x),VB.exp[i]),1);
   const out={on:100*P0, delay:D, survive:100*Math.pow(R.pc[0],2)*R.pc[4]}; let best=0, tb=0;
   for(let t=1;t<=100;t++){ const sh=R.share.map((s,i)=>s>0.001?Math.min(1,s+t/VB.tbuild[i]):0), p=Pat(sh)*Math.exp(-VB.hazard*t); if(p>best){ best=p; tb=t; } if(VB.horizons.includes(t)) out['by'+(1948+t)]=100*Math.max(P0,best); }
-  out.ever=100*Math.max(P0,best); out.retry=best>P0?1948+tb:null;
+  out.ever=100*Math.max(P0,best); out.retry=best>P0?1948+tb:null; out.nocarrier=!!R.nocarrier;
   for(const [cut,key,txt] of VB.verdict) if(out[key]>=cut){ out.verdict=txt; break; }
   return out; }
 function vReadTable(rd){ const row=(l,v,sub)=>`<tr><td>${l}${sub?`<small style="display:block;color:var(--muted)">${sub}</small>`:''}</td><td style="color:${vColor(v)}">${Math.round(v)}%</td></tr>`;
   return `<table class="vread">${row('Founded on time, in 1948',rd.on)}${row('Founded by 1958',rd.by1958, rd.retry&&rd.retry<=1958?'best year to try again: '+rd.retry:'')}${row('Ever becomes a state',rd.ever,'later attempts lose 2% a year as the 1947-48 window closes')}${row('The movement itself survives',rd.survive,'keeps its money and organization, whatever happens to the state')}
-  <tr><td>Time to rebuild what was lost</td><td>${rd.delay<1?'none':'about '+Math.round(rd.delay)+' yrs'}</td></tr></table>`; }
+  <tr><td>Time to rebuild what was lost</td><td>${rd.nocarrier?'no one left':rd.delay<1?'none':'about '+Math.round(rd.delay)+' yrs'}</td></tr></table>`; }
 function vHead(R){ const rd=vRead(R); return `<div class="vbig"><b style="color:${vColor(rd.on)}">${Math.round(rd.on)}%</b><span style="font-weight:600">${esc(rd.verdict)}${rd.verdict.indexOf('delayed')>=0?` (about ${Math.round(rd.delay)} years)`:''}</span></div>${vReadTable(rd)}`; }
 function vRating(V){ return V>=90?'Still possible':V>=75?'Still possible, with more work':V>=55?'Possible only with major outside help':V>=35?'Doubtful':V>=15?'Very unlikely':'Not possible on this record'; }
 function vColor(V){ return V>=75?'var(--ver)':V>=35?'var(--tov)':'var(--nest)'; }
@@ -43,6 +44,7 @@ function vName(x){ const n=N.get(x); return n?n.name:x; }
 function vSave(){ vLS(VKEY, removed.size||vDrop.size ? {removed:[...removed], drop:[...vDrop]} : null); vPill(); }
 function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.exp[i]>1?' <em>×2</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
 function vDelayText(R){ const md=Math.max(...R.delay), mi=R.delay.indexOf(md);
+  if(R.nocarrier) return `<p class="vtxt"><b>No one is left to pursue the state.</b> The Zionist Organization, the Jewish Agency and the Jewish National Council (Va'ad Leumi) are all removed; on this record nothing else carried the goal, so every channel counts as empty.</p>`;
   if(R.pc.some(p=>p<0.005)) return `<p class="vtxt"><b>On this record the state is not founded.</b> ${esc(VB.labels[VB.channels[R.pc.indexOf(Math.min(...R.pc))]])} is gone entirely. Rebuilding it at the pace it was first built (from ${esc(VB.tfrom[mi])}) would take about ${Math.round(md)} years.</p>`;
   if(md>=1){ const rd=vRead(R); return `<p class="vtxt">Rebuilding the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} fully, at the pace it was first built (from ${esc(VB.tfrom[mi])}), would take about <b>${Math.round(md)} years</b>.${rd.retry?` Because the 1947-48 window was closing, the best chance of a later founding comes sooner, around <b>${rd.retry}</b>, with what has been rebuilt by then.`:' Waiting would not raise the chance: the window was closing faster than the loss could be rebuilt.'}</p>`; }
   return '<p class="vtxt">No meaningful delay: the rest of the documented network covers what was taken away.</p>'; }
@@ -108,6 +110,8 @@ function vIntro(){
   <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All six were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>Someone has to pursue the goal</h4>
+  <p class="vtxt">The state was the goal of an organized movement. If its three carrying bodies are all removed (the Zionist Organization, the Jewish Agency and the Jewish National Council of the Yishuv), there is no one left to pursue it, and every channel counts as empty however much support remains elsewhere.</p>
   <h4>Recognition and the UN vote</h4>
   <p class="vtxt">The UN was founded on 24 October 1945. On 29 November 1947 its General Assembly adopted partition, Resolution 181, by 33 votes to 13 with 10 abstentions; two-thirds of the votes cast were needed, so it needed at least twice as many votes for as against. The map holds that vote: remove countries that voted for it and they count as abstaining (or, if you choose the harsher reading, as voting against); remove countries that voted against and they do not vote. If the count falls below two-thirds, or the UN itself is removed, Resolution 181 loses its force.</p>
   <p class="vtxt">The recognition channel weighs Resolution 181 in force as 10 (the UN's legal basis, which the Declaration of Independence cited), each great power's recognition in 1948 (the United States and the Soviet Union) as 3, and each other state's 1948 recognition as 1. A state could still be recognized without the UN vote, as the United States recognized Israel a year before its UN admission in May 1949, so losing the vote weakens recognition but does not end it. Lost recognition is rebuilt over three years, the time from the UN's founding to the vote.</p>

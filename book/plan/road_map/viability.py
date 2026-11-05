@@ -45,6 +45,8 @@ def post_ids():
     i = raw.find('Cold War layer, 1949-1967'); j = raw.find('# ----------', i + 10)
     block = raw[i:j if j > 0 else None]
     out = set(re.findall(r'^([a-z0-9_]+)\|', block, re.M))
+    try: out |= set(json.load(open(os.path.join(HERE, 'global_layer.json'))).get('post', []))   # the global layer after 1948
+    except Exception: pass
     return out
 
 
@@ -88,6 +90,7 @@ REC_UN = 22.0           # Resolution 181 in force: the UN's legal basis, weighed
 GREAT = {'us_gov': 3, 'ussr': 3}   # a great power's recognition weighs three; any other state's, one
 VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
+CARRIERS = ['wzo', 'jewish_agency', 'yishuv']   # the bodies that pursued the state; with all of them gone there is no project left
 HAZARD = 0.02            # each year of delay loses 2% of the chance: the 1947-48 window (end of the Mandate, the UN vote, post-war
                          # sympathy, Soviet and American support at once) was not going to stay open
 HORIZONS = [10, 30]      # readings: founded by 1958, and within a generation (by 1978)
@@ -138,7 +141,7 @@ def model(d):
     us = sorted(n['id'] for n in d['nodes'] if n['cluster'] in ('us government', 'us lobby', 'us parties') and n['id'] not in post)
     groups['Without the United States'] = sorted(set(us) | {x for x in US_EXTRA if x in N})
     for cl, name in [('british state', 'British government'), ('us government', 'US government'), ('us lobby', 'American Zionist organizations'),
-                     ('soviet bloc', 'Soviet bloc'), ('finance', 'Finance and banks'), ('zionist movement', 'Zionist movement leadership'),
+                     ('soviet bloc', 'Soviet bloc'), ('finance', 'Finance and banks'), ('zionist movement', 'The Zionist movement (organizations and leaders)'),
                      ('militias', 'Armed groups and arms network'), ('religion', 'Religious institutions'), ('christian zionism', 'Christian Zionism')]:
         groups[name] = sorted(n['id'] for n in d['nodes'] if n['cluster'] == cl and n['id'] not in post)
     groups['The United Nations'] = [x for x in ['un', 'unga', 'unsc', 'unscop'] if x in N]
@@ -154,7 +157,7 @@ def model(d):
     vote = {k: sorted({e['f'] for e in d['edges'] if e['t'] == 'res181' and e['type'] == ty}) for k, ty in [('yes', 'vote for'), ('no', 'vote against'), ('abstain', 'abstention')]}
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
-            'conduit': [f + '>' + t for f, t in CONDUIT], 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
+            'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N], 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
@@ -205,6 +208,8 @@ def score(M, removed, drop=(), mode=None):
         ties0[c] += 1
         if f in removed or t in removed or (f + '>' + t) in drop: continue
         if f in seen or t in seen: cap[c] += v; ties[c] += 1
+    nocarrier = all(c in removed for c in M.get('carriers', []))
+    if nocarrier: cap = [0.0] * NC
     import math
     k = -math.log(1 - M['cal'])
     P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(NC)]
@@ -212,7 +217,7 @@ def score(M, removed, drop=(), mode=None):
     for i, p in enumerate(P): tot *= p ** M['exp'][i]
     r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(NC)]
     delay = [M['tbuild'][i] * (1 - r[i]) for i in range(NC)]
-    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed}
+    return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed, 'nocarrier': nocarrier}
 
 
 def readings(M, R):

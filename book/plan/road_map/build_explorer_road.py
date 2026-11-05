@@ -34,7 +34,7 @@ def resolve(src):
 unres = sum(1 for e in d['edges'] for r in resolve(e['src']) if not r['u'])
 import viability as _vb
 _M = _vb.model(d)
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [
@@ -81,7 +81,7 @@ t = t.replace("An edge is a document: a payment, contract, email, flight, appoin
               "An edge is a tie the book states, with the book's source: founded, funded, led, wrote to, signed, opposed. Solid = sourced; dashed = stated in the book without a citation in that paragraph; dotted = named together in one sentence with no stated tie, shown only when switched on and never used to walk.")
 t = re.sub(r"placeholder='e\.g\. tier:1[^']*'", "placeholder='e.g. role:finance ties>2   or   tier:1   or   volume:\"Vatican\"   or   Rothschild'", t)
 t = t.replace('function delPanel(r){', 'function delPanel0(r){', 1)
-t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
+t = t.replace('/* ---------- graph ---------- */', open(os.path.join(HERE, 'viab_ui.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'tests_ui.js'), encoding='utf-8').read() + '\n/* ---------- graph ---------- */', 1)
 # profile line and query keys
 t = t.replace("  h+=`<dt>Sources</dt>", "  if(q.viability) h+=`<dt>If removed</dt><dd>${esc(q.viability.read.verdict)}: ${q.viability.V}% on time, ${q.viability.read.ever}% ever${q.viability.drop>=0.5?' (weakest: '+esc(DATA.viab.labels[q.viability.weakest])+'; about '+Math.round(q.viability.delay)+' years of delay)':''}</dd>`;\n  h+=`<dt>Sources</dt>", 1)
 t = t.replace("$('reset').onclick=()=>{ removed.clear();", "$('reset').onclick=()=>{ removed.clear(); vDrop.clear(); vLS(VKEY,null); setTimeout(vPill,0);", 1)

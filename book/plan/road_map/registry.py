@@ -665,6 +665,16 @@ bulgaria|Bulgaria (government)|government|soviet bloc|Bulgarian government
 baruch|Bernard Baruch|person|finance|Bernard Baruch;Baruch
 zemurray|Sam Zemurray|person|finance|Sam Zemurray;Zemurray
 res273|UN Resolution 273 (admission of Israel, 1949)|document|international|Resolution 273
+# ---------- Global layer after 1948 (added Nov 2026) ----------
+africa_aid|Israeli aid to Africa (from the late 1950s)|event|israel state|aid to Africa;African aid program
+africa_break73|African states break with Israel (1973)|event|international|broke relations with Israel
+elnet|ELNET (European Leadership Network)|institution|europe|ELNET;European Leadership Network
+iaf|Israel Allies Foundation|institution|christian zionism|Israel Allies Foundation;Israel Allies Caucus
+concert|Kela Shlomo / Concert / Voices of Israel|institution|israel state|Kela Shlomo;Voices of Israel;Concert - Together for Israel
+us_vetoes|US vetoes in the Security Council on Israel|event|us government|vetoed
+syria82|Move to review Israel's UN status (1982)|event|international|review Israel's status
+res3379|UN Resolution 3379 (1975)|document|international|Resolution 3379;Zionism is a form of racism
+res4686|UN Resolution 46/86 (1991)|document|international|Resolution 46/86
 """
 
 
