@@ -40,7 +40,7 @@ E = [
  ('wise', 'fedam', 'leadership', V, 'us_wp_zoa', '1897: Stephen S. Wise served as honorary secretary of the Federation of American Zionists.'),
  ('brandeis', 'pec_zionist', 'leadership', V, 'us_wp_zoa', 'Early in the First World War, Brandeis and others created the Provisional Executive Committee for General Zionist Affairs to direct Zionist work while the world movement was split by the war.'),
  ('pec_zionist', 'zoa', 'succession', R, 'us_wp_zoa', 'The wartime committee and the Federation were reorganized as the ZOA (1917 or 1918; the date is uncited).'),
- ('doj', 'zoa', 'official act', V, 'us_wp_zoa', '25 Feb 1948: the ZOA was ordered to register as a foreign agent; it changed its constitution and the registration effort was dropped.'),
+ ('doj', 'zoa', 'official act', V, 'us_wp_zoa', '25 Feb 1948: the ZOA was ordered to register as a foreign agent; it changed its constitution and the registration effort was dropped (Wikipedia, uncited there). The book (fa_s01) says the main apparatus was not asked to register until 1962; the two accounts conflict.'),
  ('fara', 'zoa', 'legal basis', V, 'us_wp_zoa', 'The 1948 order to the ZOA was a foreign-agent registration order (Foreign Agents Registration Act).'),
  ('fara', 'jewish_agency', 'legal basis', R, 'us_irmep_fara', '1939: the Jewish Agency was among 317 foreign agents registered in the United States (as stated by IRmep, 2013).'),
  ('doj', 'azc', 'official act', R, 'us_irmep_fara', '21 Nov 1962: the Justice Department ordered the American Zionist Council to register as the Jewish Agency\'s foreign agent, after the Senate inquiry found Agency money flowing to it (IRmep, 2013).'),
@@ -169,7 +169,7 @@ E = [
  # --- arms and money networks, 1945-48 ---
  ('sonneborn', 'sonneborn_inst', 'leadership', V, 'us_wp_sonneborn', 'The Sonneborn Institute (also "Materials for Israel") was a secretive nationwide network led by Sonneborn that raised millions for weapons, ammunition and machinery.'),
  ('schwimmer', 'haganah', 'supply', V, 'us_wp_schwimmer', '1948: Schwimmer recruited pilots and crew, mostly war veterans, and smuggled 30 surplus warplanes despite the US arms embargo.'),
- ('doj', 'schwimmer', 'litigation', V, 'us_wp_schwimmer', '1950: convicted of violating the Neutrality Acts; fined $10,000, stripped of voting rights and veterans benefits, no prison. Pardoned by President Clinton in 2001.'),
+ ('doj', 'schwimmer', 'litigation', V, 'us_wp_schwimmer', '1950: convicted of violating the Neutrality Acts; fined $10,000, stripped of voting rights and veterans benefits, no prison. Pardoned by President Clinton in 2001 (Wikipedia; another account in the book says 2000).'),
  ('neutrality', 'schwimmer', 'legal basis', V, 'us_wp_schwimmer', 'His 1950 conviction was under the Neutrality Acts.'),
  ('arazi', 'lansky', 'coordination', R, 'us_tablet_gangsters', 'At Yehuda Arazi\'s request, Meyer Lansky arranged for weapons to be loaded onto ships for Palestine, bringing in the dock bosses Albert Anastasia and Joe Adonis (Rockaway, citing Slater).'),
  ('lansky', 'haganah', 'supply', R, 'us_tablet_gangsters', 'Lansky arranged dock loading of weapons bound for the Jewish forces (Rockaway).'),

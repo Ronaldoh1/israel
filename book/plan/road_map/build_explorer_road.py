@@ -66,7 +66,7 @@ for a, b in R:
 t = re.sub(r'<p class="lede">[\s\S]*?</p>\s*<p class="lede">[\s\S]*?</p>',
     '<p class="lede">The people, organizations, states, documents and events of The Baseline and The Road to 1948, from the Bank of England in 1694 to the armistices of 1949. '
     'Every solid line is a tie stated in the book and checked against its sentence, with the book\'s own source attached: founded, funded, led, wrote to, signed, opposed, expelled. '
-    'The American layer adds ties from named outside documents: US Zionist organizations from 1897, FARA orders, the FBI and the Haganah, Reuven Shiloah and the Mossad, the 1944 convention, the State Department split of 1948, the Rothschilds\' American agents, and Jekyll Island and the Federal Reserve. '
+    'The American layer adds ties from named outside documents: US Zionist organizations from 1897, FARA orders, the FBI and the Haganah, Reuven Shiloah and the Mossad, the 1944 convention, the State Department split of 1948, the Rothschilds\' American agents, and Jekyll Island and the Federal Reserve. The world layer adds Congress from 1922, the arms routes and the governments that helped before 1948 (France, Poland, South Africa, Czechoslovakia, the Soviet Union, Nicaragua) and the UN vote. '
     '“Named together” shows where the book names two nodes in one sentence without stating a tie; those are leads, never used for analysis. '
     'No ethnic or religious group is a node: ties come from documents, not identity.</p>', t, count=1)
 # profile: link to the book sections that name the node

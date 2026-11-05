@@ -110,3 +110,48 @@ Built by `book/plan/road_map/us_layer.py`, which writes `us_layer.json` (ties) a
 - Baruch and other figures alleged to have pressed delegations at the UN.
 - Morgenthau Jr. and the War Refugee Board.
 - Christian Zionist organizations after 1946.
+
+## The world layer (4 Nov 2026, second pass)
+
+Built by `book/plan/road_map/world_layer.py`, which writes `world_layer.json` and `book/research/road_world_layer.json`. The pass added 55 nodes and 115 ties; most cite the book's own sources, plus 6 new outside sources. 33 extractor candidates were reviewed. Result: 425 nodes, 554 sourced ties, 44 reported.
+
+**Congress**
+- 1922 Lodge–Fish resolution: Glazer's lobbying, the State Department's opposition, Harding's signature, and Sokolow's meeting with Harding.
+- 1944: the Wright–Compton and Wagner–Taft resolutions; the Emergency Council's letter campaign; Lazaron's opposition; deferrals by Marshall, Stimson and the State Department; Stimson's letter to Taft.
+- Both 1944 platforms: Taft and Silver (Republican), Celler and Wise (Democratic).
+- The 1945 concurrent resolution; Bloom and Celler.
+- No documented money from Zionist organizations to members of Congress before 1948 was found. That is stated in the node note.
+
+**Watchers**
+- Bergson's committee registered under FARA (June 1944).
+- The FBI investigated at the State Department's request; Waldman and Goldmann urged Bergson's deportation.
+- The OSS Palestine desk.
+- The Shai (1940).
+
+**Arms**
+- Transit through Czechoslovakia, Panama, Mexico, Canada and France: 800 shipments, about 2,400 tons.
+- Schwimmer's two cover airlines; the Winters and Greenspun convictions and pardons.
+- Meyerson's $50M.
+- Czechoslovakia: Operation Balak from Žatec (Zebra) to Nikšić in Yugoslavia; the Avia fighters; Široký's figure of $14.5M; Stalin's consent.
+- Nicaragua: $3M in letters of credit.
+- France's secret arms for the Altalena (153M francs, approved by Bidault).
+- Britain's supply to the Arab air forces.
+
+**Aliyah Bet**
+- The Mossad LeAliyah Bet (1938); Brihah through Italy, France, Yugoslavia and Greece; the Exodus; the Cyprus camps.
+
+**UN vote and recognitions**
+- Gromyko (May 1947); the USSR's vote and its de jure recognition (17 May 1948).
+- Aranha's postponement; pressure on Haiti, Liberia and the Philippines (Firestone reported); Romulo; Cuba.
+- UNSCOP's eleven members and Sandström; García Granados's Latin American lobby; Guatemala first in Latin America.
+- Britain's recognition (Jan 1949).
+
+**Before 1948**
+- The Cambon letter (June 1917).
+- Poland–Irgun arms and training, 1937–39 (reported, from the Irgun's own history).
+- Smuts and the Balfour drafting; South Africa's recognition.
+
+**Conflicts kept visible**
+- The ZOA FARA order of 1948 (Wikipedia) against the book's statement that the apparatus was not asked to register before 1962.
+- Schwimmer's pardon year: 2000 or 2001.
+- Winters's pardon: Bush 2008, or Clinton 2001.

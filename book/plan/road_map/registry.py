@@ -398,6 +398,60 @@ glass|Carter Glass|person|us government|Carter Glass
 owen_r|Robert L. Owen|person|us government|Robert L\. Owen
 house_em|Edward M. House|person|us government|Colonel House;Edward M\. House
 bernstein|Nahum (William) Bernstein|person|militias|William Bernstein;Nahum Bernstein
+
+# ---------- World layer: Congress, the arms network, foreign governments (added Nov 2026) ----------
+lodge|Henry Cabot Lodge|person|us government|Henry Cabot Lodge;Senator Lodge
+fish|Hamilton Fish III|person|us government|Hamilton Fish
+harding|Warren Harding|person|us government|Warren Harding;President Harding;Harding@rd2
+glazer|Rabbi Simon Glazer|person|us lobby|Simon Glazer
+lodge_fish|Lodge-Fish Resolution (1922)|document|us government|Lodge[- –]Fish
+wright_j|James Wright (Rep., Pennsylvania)|person|us government|James Wright
+compton_r|Ranulf Compton (Rep., Connecticut)|person|us government|Ranulf Compton
+wright_compton|Wright-Compton and Wagner-Taft resolutions (1944)|document|us government|Wright[- –]Compton;Wagner[- –]Taft
+concres1945|Congressional concurrent resolution on Palestine (Dec 1945)|document|us government|concurrent resolution
+platforms1944|Palestine planks in both 1944 party platforms|event|us parties|party platforms;Palestine planks
+celler|Emanuel Celler|person|us government|Emanuel Celler;Celler
+lazaron|Rabbi Morris Lazaron|person|religion|Morris Lazaron;Lazaron
+hull|Cordell Hull|person|us government|Cordell Hull
+waldman|Morris Waldman|person|us lobby|Morris Waldman
+hcnl|Hebrew Committee of National Liberation|institution|us lobby|Hebrew Committee of National Liberation;Hebrew Embassy
+shai|Shai (Haganah intelligence service)|institution|intelligence|\bShai\b;Sherut Yediot
+winters|Charles Winters|person|militias|Charles Winters;Charlie Winters;Winters@rd4;Winters@rd5
+greenspun|Hank Greenspun|person|militias|Hank Greenspun;Herman Greenspun;Greenspun
+service_airways|Service Airways Inc.|company|militias|Service Airways
+lap|Lineas Aereas de Panama|company|militias|Lineas Aereas de Panama
+zatec|Žatec airfield ("Zebra")|place|soviet bloc|Žatec;Zatec
+avia|Avia S-199 fighters|document|soviet bloc|Avia S-199;S-199
+siroky|Viliam Široký|person|soviet bloc|Široký;Siroky
+nicaragua|Nicaragua (Somoza government)|government|international|Somoza
+panama|Panama (government)|government|international|Panamanian government;Panama@rd5
+mexico|Mexico (government)|government|international|Mexican government;Mexico@rd5
+brazil|Brazil (government)|government|international|Brazilian government
+canada|Canada (government)|government|international|Canadian government;Canada@rd5
+australia|Australia (government)|government|international|Australian government;Australia@rd5
+sweden|Sweden (government)|government|international|Swedish government
+uruguay|Uruguay (government)|government|international|Uruguayan government;Uruguay@rd5
+guatemala|Guatemala (government)|government|international|Guatemalan government;Guatemala@rd5
+netherlands|Netherlands (government)|government|international|Dutch government;Netherlands@rd5
+peru|Peru (government)|government|international|Peruvian government;Peru@rd5
+india|India (government)|government|international|Indian government;India@rd5
+iran|Iran (government)|government|international|Iranian government;Iran@rd5
+yugoslavia|Yugoslavia (government)|government|soviet bloc|Yugoslav government;Yugoslavia
+poland_gov|Polish government (1930s)|government|europe|Polish government@rd3;Polish army@rd3
+south_africa|South Africa (Smuts government)|government|international|South African government;Smuts
+smuts|Jan Smuts|person|international|Jan Smuts;Smuts
+granados|Jorge García Granados|person|international|García Granados;Garcia Granados
+sandstrom|Emil Sandström|person|international|Sandström;Sandstrom
+aranha|Oswaldo Aranha|person|international|Oswaldo Aranha;Aranha
+romulo|Carlos Romulo|person|international|Carlos Romulo;Romulo
+firestone|Firestone Tire and Rubber Company|company|finance|Firestone
+cambon|Jules Cambon|person|europe|Jules Cambon;Cambon
+cambon_letter|Cambon letter (June 1917)|document|europe|Cambon letter
+beck|Józef Beck|person|europe|Józef Beck;Josef Beck
+stern_a|Avraham Stern|person|militias|Avraham Stern;Abraham Stern
+bidault|Georges Bidault|person|europe|Georges Bidault;Bidault
+exodus|Exodus 1947 (ship)|event|militias|Exodus 1947;President Warfield
+cyprus_camps|Cyprus internment camps (1946-49)|place|british state|Cyprus
 """
 
 
