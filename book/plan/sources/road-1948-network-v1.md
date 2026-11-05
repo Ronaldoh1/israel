@@ -226,3 +226,21 @@ Built by `book/plan/road_map/world_layer.py`, which writes `world_layer.json` an
 - 62 more candidates were reviewed.
 
 **Result.** 588 nodes; 815 sourced ties plus 57 reported (872 documented); 493 nodes with at least one documented tie. For comparison, the Epstein map has 419 nodes and about 800 ties.
+
+## Pass: removal model v2 (Nov 2026)
+
+What the "Remove a node" tool computes now:
+- **Money is weighted in 1948 dollars** where the record states a sum: Golda Meyerson's 1948 tour (about $50M), Edmond de Rothschild's 15M francs to the JCA in 1899 (about $8.7M in 1948 dollars), Nicaragua's $3M letters of credit, Schiff's $50,000 in 1914, Cohen's and Siegel's roughly $50,000 each. Money ties with no stated sum are assumed at $1M. That is a disclosed assumption. Money that didn't go to the project is left out (Rothschild loans to the British treasury, the Suez purchase, the Ottoman sale to the Sursocks).
+- **Every removal is recalculated** across the whole network. A tie only counts if it still connects to the state-building core.
+- **Probability per channel:** 1 − e^(−k·C/C₀), calibrated so the full record gives 99% per channel. Overall chance = the product of the five channels (95% on the full record).
+- **Delay:** the lost share of each channel is rebuilt at the pace it was first built. The delay shown is the longest of the five.
+
+Readings:
+
+| Removed | Chance | Rating | Rebuild delay | Weakest channel |
+|---|---|---|---|---|
+| Rothschild family and houses | 90% | Still possible, with more work | about 16 years | land |
+| Without the United States | 56% | Possible only with major outside help | about 37 years | money: $22M of $79M left |
+| Zionist movement leadership | 54% | Doubtful | | |
+| Armed groups | 0% | Not possible on this record | | |
+| Golda Meyerson alone | 78% | | | |
