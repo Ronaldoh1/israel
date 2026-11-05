@@ -422,3 +422,30 @@ The model now counts the years of work an actor carried, and whether anyone docu
 | Rothschilds + US | 5% | 45% | ~35 | Unlikely | |
 | Zionist movement | 0% | | | Not possible | |
 | Armed groups | 0% | | | Not possible | |
+
+## Pass: power of states, the Mandate as framework, stricter reading (5 Nov 2026)
+
+**Power of states.** The five great powers named in the UN Charter are weighted by their 1950 GDP (Maddison), relative to France: US 6.6, USSR 2.31, UK 1.58, China 1.11, France 1. This applies to their diplomatic and recognition ties; every other state weighs 1. Fox (1944) named the US, the USSR and the UK as the "super-powers". Resolution 181 in force counts as much as all the 1948 recognitions together.
+
+**Incorporation.** A document that wrote another into its text falls with it: the Mandate falls with the Balfour Declaration.
+
+**The Mandate as a framework.**
+- The Jewish population grew about 21,900 a year under the Mandate (83,794 in 1922 to 630,000 in 1947), against about 2,200 a year under Ottoman rule (24,000 in 1882 to 94,000 in 1914) (Jewish Virtual Library).
+- Without the Mandate, 90% of the land-and-settlers work of 1920–1948 counts as lost years.
+- The Mandate also needs its Mandatory power, Britain.
+- Caveat: part of the faster growth came from persecution in Europe in the 1930s, which this credits to the Mandate.
+
+**Stricter reading** (a switch, off by default): a document cannot be issued without its named addressee. It is added as the test "What if the Declaration needed Walter Rothschild?".
+
+**Readings:**
+
+| Removed | On time | Verdict | Notes |
+|---|---|---|---|
+| Balfour Declaration | 56% | Possible, with great difficulty | ~26 years lost |
+| Britain | 55% | Possible, with great difficulty | |
+| United States | 32% | Possible, with great difficulty | ever 64% |
+| Walter Rothschild (stricter reading) | 56% | Possible, with great difficulty | |
+| Walter Rothschild (default) | 93% | Happens on time | |
+| Rothschilds | 53% | Possible, with great difficulty | |
+| Rothschilds + US | 3% | Unlikely | ever 42% |
+| Herzl | 89% | Happens on time | ~3 years lost |

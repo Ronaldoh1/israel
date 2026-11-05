@@ -86,8 +86,19 @@ NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock
 US_RAISED = [('meir', 'czechoslovakia')]   # money raised in the United States though carried by a non-American
 CAL = 0.99               # each channel is calibrated so the full record gives it 99%
 EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1, 'recognition': 1}
-REC_UN = 22.0           # Resolution 181 in force: the UN's legal basis, weighed as much as all the 1948 recognitions together
-GREAT = {'us_gov': 3, 'ussr': 3}   # a great power's recognition weighs three; any other state's, one
+# Power of states: the five great powers of the UN Charter, weighed by 1950 GDP (Maddison, 1990 int'l $ millions) relative to
+# France, the smallest of the five: US 1,455,916; USSR 510,243; UK 347,850; China 244,985; France 220,492. Every other state weighs 1.
+GDP1950 = {'US': 1455916, 'USSR': 510243, 'UK': 347850, 'China': 244985, 'France': 220492}
+POWER = {k: round(v / GDP1950['France'], 2) for k, v in GDP1950.items()}   # US 6.6, USSR 2.31, UK 1.58, China 1.11, France 1
+POWER_IDS = {'USSR': ['ussr', 'stalin', 'gromyko'], 'France': ['france_gov', 'cambon', 'cambon_letter', 'bidault', 'millerand', 'berthelot', 'picot', 'clemenceau'],
+             'China': ['china']}
+POWER_CL = {'us government': 'US', 'british state': 'UK'}
+# The Mandate as a framework: under it the Jewish population grew about 21,900 a year (83,794 in 1922 to 630,000 in 1947), against
+# about 2,200 a year under Ottoman rule (24,000 in 1882 to 94,000 in 1914). Without it, settlement from 1920 to 1948 goes at the
+# Ottoman pace: about 90% of that period's land-and-settlers work is lost. Part of the difference came from persecution in Europe
+# in the 1930s, which this credits to the Mandate. The Mandate also needs its Mandatory power, Britain.
+FRAMEWORK = {'mandate': {'y': [1920, 1948], 'ch': 1, 'loss': round(1 - 2190 / 21850, 3), 'needs': ['uk']}}
+REC_UN = None           # Resolution 181 in force weighs as much as all the 1948 recognitions together (computed in model())
 VOTE_MODE = 'abstain'   # a removed yes-vote counts as an abstention ('against' is the harsher reading, offered in the explorer)   # money counts twice in the overall chance
 ISSUE_T = {'official act', 'signatory'}
 CARRIERS = ['wzo', 'jewish_agency', 'yishuv']
@@ -129,6 +140,11 @@ def model(d):
         w = 1.0 if e['status'] == 'verified' else 0.6
         k = (e['f'], e['t'], CHANNELS.index(c))
         if k not in best or best[k] < w: best[k] = w
+    pw = {}
+    for n in d['nodes']:
+        if n['cluster'] in POWER_CL: pw[n['id']] = POWER[POWER_CL[n['cluster']]]
+    for k, ids in POWER_IDS.items():
+        for i in ids: pw[i] = POWER[k]
     deg = collections.Counter()
     for (f, t, c) in best: deg[f] += 1; deg[t] += 1
     mx = math.log2(1 + max(deg.values()))
@@ -136,9 +152,17 @@ def model(d):
     edges = []
     for (f, t, c), w in best.items():
         if c == 0: v = 0.0 if (f, t) in CONDUIT else w * AMOUNT.get((f, t), (DEFAULT_M,))[0]
-        elif c == 5: v = REC_UN if (f, t) == ('res181', 'decl_indep') else w * GREAT.get(f, 1)
-        else: v = w * (cf[f] + cf[t]) / 2
+        elif c == 5: v = -1.0 if (f, t) == ('res181', 'decl_indep') else w * pw.get(f, 1)
+        else: v = w * (cf[f] + cf[t]) / 2 * (max(pw.get(f, 1), pw.get(t, 1)) if c == 3 else 1)
         edges.append([f, t, c, w, round(v, 4)])
+    rec_sum = sum(e[4] for e in edges if e[2] == 5 and e[4] > 0)
+    for e in edges:
+        if e[4] == -1.0: e[4] = round(rec_sum, 4)
+    incorp = sorted({(e['f'], e['t']) for e in d['edges'] if e['type'] == 'incorporation' and e['status'] in ('verified', 'reported')
+                     and N[e['f']]['kind'] == 'document' and N[e['t']]['kind'] == 'document'})
+    addressee = collections.defaultdict(set)
+    for e in d['edges']:
+        if e['type'] == 'addressee' and e['status'] in ('verified', 'reported') and N[e['f']]['kind'] == 'document': addressee[e['f']].add(e['t'])
     issuers = collections.defaultdict(set)
     for e in d['edges']:
         if e['status'] in ('verified', 'reported') and e['type'] in ISSUE_T and N[e['t']]['kind'] == 'document' and e['f'] not in post and e['t'] not in post and e['t'] not in ('res181', 'decl_indep'):
@@ -175,7 +199,8 @@ def model(d):
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups, 'vote': vote, 'vote_mode': VOTE_MODE,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
             'conduit': [f + '>' + t for f, t in CONDUIT], 'carriers': [c for c in CARRIERS if c in N],
-            'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
+            'actors': actors, 'y0': Y0, 'y1': Y1, 'year_ch': YEAR_CH, 'power': POWER, 'gdp1950': GDP1950,
+            'incorp': [list(x) for x in incorp], 'framework': {k: v for k, v in FRAMEWORK.items() if k in N}, 'addressee': {k: sorted(v) for k, v in addressee.items()}, 'strict': False, 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
@@ -189,7 +214,7 @@ def vote181(M, out, mode=None):
             'passes': y >= 2 * n and not ({'un', 'unga'} & out), 'need': 2 * n, 'un_gone': bool({'un', 'unga'} & out)}
 
 
-def lost_force(M, removed, mode=None):
+def lost_force(M, removed, mode=None, strict=None):
     """Documents whose every issuer (official act or signature) is removed lose their force, and count as removed;
     repeated until nothing changes, so a treaty resting on a fallen document falls too only if its own issuers fall."""
     out = set(removed); ch = True
@@ -198,6 +223,15 @@ def lost_force(M, removed, mode=None):
         for doc, iss in M['issuers'].items():
             if doc not in out and iss and all(i in out for i in iss): out.add(doc); ch = True
         if 'res181' not in out and M.get('vote') and not vote181(M, out, mode)['passes']: out.add('res181'); ch = True
+        # a document that wrote another into its text loses that commitment with it (the Mandate carried the Balfour Declaration)
+        for dep, src in M.get('incorp', []):
+            if src in out and dep not in out and dep not in M['core']: out.add(dep); ch = True
+        for doc, fw in M.get('framework', {}).items():
+            if doc not in out and any(x in out for x in fw['needs']): out.add(doc); ch = True
+        # the stricter reading, off by default: a document cannot be issued without its named addressee
+        if (M.get('strict') if strict is None else strict):
+            for doc, who in M.get('addressee', {}).items():
+                if doc not in out and who and all(x in out for x in who): out.add(doc); ch = True
     return out
 
 
@@ -242,6 +276,11 @@ def lost_years(M, removed, drop=()):
                     q = r['subs'].get(k)
                     if q is None or cov > q[1]: r['subs'][k] = [sub, round(cov, 2), A[sub][0]]
             F.append(min(1.0, lost))
+        for doc, fw in M.get('framework', {}).items():
+            if doc in removed and fw['y'][0] <= y <= fw['y'][1]:
+                F[fw['ch']] = max(F[fw['ch']], fw['loss'])
+                r = who.setdefault(doc, {'s': fw['y'][0], 'e': fw['y'][1], 'years': 0.0, 'ch': fw['ch'], 'subs': {}, 'w': fw['loss'], 'yk': {}, 'framework': True})
+                r['yk'][fw['ch']] = r['yk'].get(fw['ch'], 0.0) + fw['loss']; r['years'] = r['yk'][fw['ch']]
         f = max(F) if F else 0
         per[y] = round(f, 3); total += f
     return total, per, who
@@ -261,11 +300,11 @@ def reach(M, removed, drop=()):
     return seen
 
 
-def score(M, removed, drop=(), mode=None):
+def score(M, removed, drop=(), mode=None, strict=None):
     """Capacity still connected to the core, per channel, turned into a probability by saturation:
     P_c = 1 - exp(-C_c / K_c), with K_c set so the full record gives CAL. Overall P = product of the five (all were needed).
     Delay: years to rebuild the lost share at the pace the channel was originally built."""
-    removed = lost_force(M, set(removed), mode)
+    removed = lost_force(M, set(removed), mode, strict)
     seen = reach(M, removed, drop)
     cap = [0.0] * NC; ties = [0] * NC; ties0 = [0] * NC
     for f, t, c, w, v in M['edges']:
@@ -279,7 +318,7 @@ def score(M, removed, drop=(), mode=None):
     P = [1 - math.exp(-k * cap[i] / M['cap0'][i]) if M['cap0'][i] else 1 for i in range(NC)]
     tot = 100.0
     for i, p in enumerate(P): tot *= p ** M['exp'][i]
-    L = lost_years(M, removed, drop)[0] if (drop or any(x in M['actors'] for x in removed)) else 0.0
+    L = lost_years(M, removed, drop)[0] if (drop or any(x in M['actors'] or x in M.get('framework', {}) for x in removed)) else 0.0
     tau = max(0.0, 1 - L / SPAN_T)
     tot *= tau
     r = [cap[i] / M['cap0'][i] if M['cap0'][i] else 1 for i in range(NC)]

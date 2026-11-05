@@ -34,7 +34,7 @@ def resolve(src):
 unres = sum(1 for e in d['edges'] for r in resolve(e['src']) if not r['u'])
 import viability as _vb
 _M = _vb.model(d)
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'y0', 'y1', 'year_ch']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'y0', 'y1', 'year_ch', 'power', 'gdp1950', 'incorp', 'addressee', 'strict', 'framework']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
 R = [

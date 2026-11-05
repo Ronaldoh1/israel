@@ -19,6 +19,8 @@ S = {
  'f_jta_straus28': ('JTA, 1 Feb 1928: Nathan Straus $100,000 gift for United Palestine Appeal', 'https://www.jta.org/archive/nathan-straus-100000-gift-for-united-palestine-appeal-announced'),
  'f_wk_kofer': ('Wikiwand (Wikipedia): Community ransom (Kofer HaYishuv)', 'https://www.wikiwand.com/en/articles/Community_ransom'),
  'f_jc_roth': ('The Jewish Chronicle: A family that helped build a new nation', 'https://www.thejc.com/news/features/a-family-that-helped-build-a-new-nation-kkakggbe'),
+ 'f_jvl_pop': ('Jewish Virtual Library: Jewish and Non-Jewish Population of Israel/Palestine (1517-Present)', 'https://www.jewishvirtuallibrary.org/jewish-and-non-jewish-population-of-israel-palestine-1517-present'),
+ 'f_pq_mandate': ('PalQuest: the British Mandate for Palestine (chronology)', 'https://www.palquest.org/en/node/157'),
  'f_jvl_conv': ('Jewish Virtual Library: Convention between the U.S. and Great Britain regarding Palestine (1924)', 'https://www.jewishvirtuallibrary.org/convention-between-the-u-s-and-great-britain-regarding-palestine'),
 }
 V, R = 'verified', 'reported'
@@ -47,6 +49,7 @@ add('jdc', 'pec_econ', 'funding', V, 'f_wp_pec', 'Feb 1925: the Palestine Econom
 add('us_gov', 'angloam1924', 'signatory', V, 'f_jvl_conv', '3 Dec 1924: the United States and Britain signed the convention on Palestine; Washington read it narrowly, as protecting American interests.')
 add('uk', 'angloam1924', 'signatory', V, 'f_jvl_conv', 'Britain, the Mandatory power, was the other party.')
 add('angloam1924', 'mandate', 'legal basis', V, 'f_jvl_conv', 'Jewish opinion saw the convention as a "further international guarantee" for the Mandate, which had written the Balfour Declaration into its text.')
+add('mandate', 'yishuv', 'legal basis', V, 'f_pq_mandate; f_jvl_pop', 'The Mandate (approved 24 July 1922, in force 29 Sept 1923) repeated the Balfour commitment and made Britain responsible for "the establishment of the Jewish national home". Under it the Jewish population grew from 83,794 (1922) to 630,000 (1947), about 21,900 a year, against about 2,200 a year under Ottoman rule (24,000 in 1882 to 94,000 in 1914).')
 add('weizmann', 'walter_r', 'correspondence', V, 'f_jc_roth', 'After the declaration Weizmann wrote that "the name of the greatest House in Jewry was associated with the granting of the Magna Carta of Jewish liberties."')
 add('dorothy', 'weizmann', 'correspondence', V, 'f_jc_roth', '1914-16: Weizmann wrote to Dorothy de Rothschild 33 times; through her and James he reached a wider circle of the British establishment.')
 add('james_armand', 'balfour_decl', 'pressure', R, 'f_jc_roth', 'James de Rothschild, with his wife Dorothy, was involved in the diplomacy that led to the declaration.')

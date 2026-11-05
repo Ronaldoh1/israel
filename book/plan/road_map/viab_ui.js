@@ -4,12 +4,16 @@ const vDrop = new Set();          // ties dropped by a scenario (money raised in
 const VKEY = 'road_removed_v1', VINTRO = 'road_model_intro_v1';
 function vLS(k, v){ try{ if(v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); if(v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
 let vMode = vLS('road_vote_mode') || VB.vote_mode;
+let vStrict = !!vLS('road_strict_v1');   /* the stricter reading: a document cannot be issued without its named addressee */
 /* Resolution 181 needs two-thirds of the votes cast: at least twice as many for as against */
 function vVote(out){ const yes=VB.vote.yes, no=VB.vote.no, yr=yes.filter(x=>out.has(x)).length, nr=no.filter(x=>out.has(x)).length;
   const y=yes.length-yr, n=no.length-nr+(vMode==='against'?yr:0), unGone=out.has('un')||out.has('unga');
   return {yes:y, no:n, abstain:VB.vote.abstain.length+nr+(vMode==='against'?0:yr), passes:y>=2*n&&!unGone, need:2*n, unGone, yr}; }
 function vLost(rem){ const out=new Set(rem); let ch=true; while(ch){ ch=false; for(const [doc,iss] of Object.entries(VB.issuers)){ if(!out.has(doc) && iss.length && iss.every(i=>out.has(i))){ out.add(doc); ch=true; } }
-  if(!out.has('res181') && !vVote(out).passes){ out.add('res181'); ch=true; } } return out; }
+  if(!out.has('res181') && !vVote(out).passes){ out.add('res181'); ch=true; }
+  for(const [dep,src] of VB.incorp) if(out.has(src)&&!out.has(dep)&&!VB.core.includes(dep)){ out.add(dep); ch=true; }
+  for(const [doc,fw] of Object.entries(VB.framework)) if(!out.has(doc)&&fw.needs.some(x=>out.has(x))){ out.add(doc); ch=true; }
+  if(vStrict) for(const [doc,who] of Object.entries(VB.addressee)) if(!out.has(doc)&&who.length&&who.every(x=>out.has(x))){ out.add(doc); ch=true; } } return out; }
 function vVoteLine(rem0){ const v=vVote(vLost(rem0));
   if(v.unGone) return `<b>The UN partition vote cannot happen</b>: without the United Nations there is no General Assembly to hold it.`;
   return `UN partition vote: <b>${v.yes} for, ${v.no} against</b>, ${v.abstain} abstaining. ${v.passes?`<b>Passes</b> (two-thirds needed: at least ${v.need} for).`:`<b>Fails</b>: two-thirds of the votes cast were needed, at least ${v.need} for.`}${v.yr?` ${v.yr} removed yes-vote${v.yr===1?'':'s'} counted as ${vMode==='against'?'votes against':'abstentions'}.`:''}`; }
@@ -20,7 +24,7 @@ function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=VB.channels.
     if(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t)) continue; if(seen.has(f)||seen.has(t)){ cap[c]+=v; ties[c]++; if(c===0&&v>0) funders.add(f); } }
   const nocarrier=VB.carriers.length>0&&VB.carriers.every(c=>rem.has(c)); if(nocarrier){ cap.fill(0); funders.clear(); }
   const k=-Math.log(1-VB.cal), pc=cap.map((x,i)=>VB.cap0[i]?1-Math.exp(-k*x/VB.cap0[i]):1), share=cap.map((x,i)=>VB.cap0[i]?x/VB.cap0[i]:1);
-  const years=(vDrop.size||[...rem0].some(x=>VB.actors[x]))?vYears(rem,vDrop):{L:0,per:{},who:{}}, tau=Math.max(0,1-years.L/(VB.y1-VB.y0));
+  const years=(vDrop.size||[...rem].some(x=>VB.actors[x]||VB.framework[x]))?vYears(rem,vDrop):{L:0,per:{},who:{}}, tau=Math.max(0,1-years.L/(VB.y1-VB.y0));
   const P=pc.reduce((a,b,i)=>a*Math.pow(b,VB.exp[i]),100)*tau, delay=share.map((r,i)=>VB.tbuild[i]*(1-r));
   const lostDocs=[...rem].filter(x=>!rem0.has(x));
   return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs,nocarrier,years,tau}; }
@@ -43,6 +47,8 @@ function vYears(rem, drop){ const A=VB.actors, ids=Object.keys(A), NCh=VB.channe
         const r=who[a]||(who[a]={s:A[a][0],e:A[a][1],years:0,ch:null,subs:{},w:0,yk:{}}); if(l/tot>r.w){ r.ch=k; r.w=l/tot; } r.yk[k]=(r.yk[k]||0)+l/tot*(1-cov); r.years=r.yk[r.ch]||0;
         if(sub){ const q=r.subs[k]; if(!q||cov>q[1]) r.subs[k]=[sub,Math.round(cov*100)/100,A[sub][0]]; } }
       F=Math.max(F,Math.min(1,lost)); }
+    for(const [doc,fw] of Object.entries(VB.framework)) if(rem.has(doc)&&fw.y[0]<=y&&y<=fw.y[1]){ F=Math.max(F,fw.loss);
+      const r=who[doc]||(who[doc]={s:fw.y[0],e:fw.y[1],years:0,ch:fw.ch,subs:{},w:fw.loss,yk:{},framework:true}); r.yk[fw.ch]=(r.yk[fw.ch]||0)+fw.loss; r.years=r.yk[fw.ch]; }
     per[y]=F; total+=F; }
   return {L:total, per, who}; }
 function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(R.years.who).length?`<p class="vtxt">No years of work lost: documented actors already active at the time could carry what was taken out.</p>`:'';
@@ -50,6 +56,7 @@ function vYearsText(R){ if(!R.years||R.years.L<0.5) return R.years&&Object.keys(
   const lostY=Object.entries(Y.per).filter(([y,f])=>f>=0.5).map(([y])=>+y), span=lostY.length?` (hardest hit: ${lostY[0]}${lostY.length>1?'–'+lostY[lostY.length-1]:''})`:'';
   return `<p class="vtxt"><b>About ${Math.round(Y.L)} years of the movement's work lost</b>${span}. That slows the founding in proportion: the on-time chance is multiplied by ${Math.round(R.tau*100)}%, the share of the 66 build-up years (1882–1948) still delivered.</p>
   <ul class="vul">${rows.map(([a,r])=>{ const ch=r.ch, q=r.subs[ch];
+    if(r.framework) return `<li><b>${esc(vName(a))}</b> falls, so from ${r.s} to ${r.e} immigration and settlement go at the Ottoman-era pace: about 2,200 people a year instead of about 21,900. About ${Math.round(r.years)} years of land and settlement work lost.</li>`;
     return `<li><b>${esc(vName(a))}</b>, active ${r.s}${r.e>r.s?'–'+r.e:''}, carried ${Math.round(r.w*100)}% of the ${esc(VB.labels[VB.channels[ch]].toLowerCase())} work at its height. ${q?`Closest documented substitute: <b>${esc(vName(q[0]))}</b>, active from ${q[2]}, able to carry about ${Math.round(q[1]*100)}% of that role${q[2]>r.s?`; before ${q[2]} no one documented could`:''}.`:'No documented substitute in that role.'} About ${Math.round(r.years)} years of that role lost.</li>`; }).join('')}</ul>`; }
 function vRead(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, Ly=R.years?R.years.L:0, D=Math.max(Math.max(...R.delay),Ly), Lmin=Math.ceil(Ly);
   const Pat=sh=>sh.reduce((p,x,i)=>p*Math.pow(1-Math.exp(-k*x),VB.exp[i]),1);
@@ -135,6 +142,12 @@ function vIntro(){
   <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All six were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>The power of states</h4>
+  <p class="vtxt">A tie with a great power counts for more than a tie with a small state. The five great powers named in the UN Charter are weighed by their economic output in 1950 (Angus Maddison's estimates), relative to France, the smallest of the five: the United States 6.6, the Soviet Union 2.3, Britain 1.6, China 1.1, France 1. Every other state weighs 1. The weight applies to diplomatic ties and to recognitions; in the UN vote every country still has one vote. In 1944 William Fox, who coined the word "superpower", named three: the United States, the Soviet Union and Britain.</p>
+  <h4>The Mandate as a framework</h4>
+  <p class="vtxt">The Mandate (in force 1923) wrote the Balfour Declaration into its preamble and made Britain responsible for "the establishment of the Jewish national home". Under it the Jewish population grew about 21,900 a year (83,794 in 1922 to 630,000 in 1947); under Ottoman rule it grew about 2,200 a year (24,000 in 1882 to 94,000 in 1914). So if the Mandate falls (with the Balfour Declaration, or with Britain, its Mandatory power), immigration and settlement from 1920 to 1948 go at the Ottoman pace, and about 90% of that period's land-and-settlers work counts as lost years. Part of the faster growth came from persecution in Europe in the 1930s, which would have driven emigration anyway; this credits all of it to the Mandate.</p>
+  <h4>A stricter reading you can switch on</h4>
+  <p class="vtxt">By default a document stands while any body that issued it remains. The Balfour Declaration was issued by the War Cabinet and signed by Balfour; it was addressed to Walter Rothschild, who also helped draft it. Some argue it could not have been issued without him. The record documents his role but not that Britain would have withheld it otherwise, so this is offered as a switch in the Remove a node panel, off by default: with it on, a document falls when its named addressee is removed.</p>
   <h4>Lost years, and who could have taken over</h4>
   <p class="vtxt">Removing a funder or a leader also removes years of work. Every person, organization and government in the map is active from its first to its last dated supporting tie (birth and death dates are ignored). For each year from 1882 to 1948 the map asks, channel by channel: what share of that year's work did the removed actors carry, and could the strongest documented actor on the same side (the movement and its backers, or the states), already active that year, have taken it over? A substitute can bring only what it had apart from the removed actors, and covers at most its own documented weight. What no one could cover is lost; a year counts as lost in proportion to the worst-hit channel.</p>
   <p class="vtxt">The lost years then lower the on-time chance in proportion to the 66 build-up years (losing 22 years leaves two-thirds), and a later founding cannot come before those years are made up. Each reading names the removed actors, the years they were active, the closest documented substitute, from when, and how much of the role it could carry. The map cannot know whether someone undocumented would have stepped in, or whether a substitute would have chosen to.</p>
@@ -237,6 +250,7 @@ function viabBlock(){
   let h=`<div class="viab"><div class="vlabel">The state&rsquo;s chances, on this record</div>
   ${vHead(R)}${any?`<p class="vtxt">On time: down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%.</p>`:''}${vBars(R)}
   <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p><p class="vtxt">${vVoteLine(removed)}</p>
+  <label class="vtxt" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" id="vstrict"${vStrict?' checked':''} style="margin-top:3px"><span>Stricter reading: a document could not have been issued without its named addressee (for example, no Balfour Declaration without Walter Rothschild). An assumption, not a finding; off by default.</span></label>
   <label class="vtxt" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">Removed yes-votes count as <select id="vmode" class="sel" style="padding:5px 26px 5px 8px"><option value="abstain"${vMode==='abstain'?' selected':''}>abstentions</option><option value="against"${vMode==='against'?' selected':''}>votes against</option></select></label>`;
   if(any) h+=vYearsText(R)+vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
   h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><select id="vgrp" class="sel" style="flex:1 1 180px;padding:7px 30px 7px 10px">${opts}</select><button id="vgo" class="ghost" type="button">Remove group</button>${any?'<button id="vclr" class="ghost" type="button">Restore all</button>':''}</div>
@@ -247,6 +261,7 @@ function delPanel(r){ delPanel0(r); $('side').insertAdjacentHTML('afterbegin', v
   const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; vRemove(VB.groups[g], g==='Without the United States'?'the United States':g, VB.drop[g]); };
   const cl=$('vclr'); if(cl) cl.onclick=()=>$('reset').click();
   const hw=$('vhow'); if(hw) hw.onclick=vIntro;
+  const vs=$('vstrict'); if(vs) vs.onchange=()=>{ const before=vScore(removed).P; vStrict=vs.checked; vLS('road_strict_v1', vStrict?1:null); vTestCache=null; vRefresh(); vSignal('Stricter reading '+(vStrict?'on':'off'), before); };
   const vm=$('vmode'); if(vm) vm.onchange=()=>{ const before=vScore(removed).P; vMode=vm.value; vLS('road_vote_mode', vMode); vRefresh(); vSignal('Removed yes-votes now count as '+(vMode==='against'?'votes against':'abstentions'), before); };
 }
 /* tapping a node in Remove mode removes it (or restores it) and shows what happened */
