@@ -14,6 +14,19 @@ function vScore(rem0){ const rem=vLost(rem0), seen=vReach(rem), cap=[0,0,0,0,0],
   const lostDocs=[...rem].filter(x=>!rem0.has(x));
   return {P,pc,share,delay,cap,ties,ties0,funders:funders.size,funders0:funders0.size,lostDocs}; }
 const V0 = vScore(new Set());
+
+/* five readings of one removal (mirrors viability.readings) */
+function vRead(R){ const k=-Math.log(1-VB.cal), P0=R.P/100, D=Math.max(...R.delay);
+  const Pat=sh=>sh.reduce((p,x,i)=>p*Math.pow(1-Math.exp(-k*x),VB.exp[i]),1);
+  const out={on:100*P0, delay:D, survive:100*Math.pow(R.pc[0],2)*R.pc[4]}; let best=0, tb=0;
+  for(let t=1;t<=100;t++){ const sh=R.share.map((s,i)=>s>0.001?Math.min(1,s+t/VB.tbuild[i]):0), p=Pat(sh)*Math.exp(-VB.hazard*t); if(p>best){ best=p; tb=t; } if(VB.horizons.includes(t)) out['by'+(1948+t)]=100*Math.max(P0,best); }
+  out.ever=100*Math.max(P0,best); out.retry=best>P0?1948+tb:null;
+  for(const [cut,key,txt] of VB.verdict) if(out[key]>=cut){ out.verdict=txt; break; }
+  return out; }
+function vReadTable(rd){ const row=(l,v,sub)=>`<tr><td>${l}${sub?`<small style="display:block;color:var(--muted)">${sub}</small>`:''}</td><td style="color:${vColor(v)}">${Math.round(v)}%</td></tr>`;
+  return `<table class="vread">${row('Founded on time, in 1948',rd.on)}${row('Founded by 1958',rd.by1958, rd.retry&&rd.retry<=1958?'best year to try again: '+rd.retry:'')}${row('Ever becomes a state',rd.ever,'later attempts lose 2% a year as the 1947-48 window closes')}${row('The movement itself survives',rd.survive,'keeps its money and organization, whatever happens to the state')}
+  <tr><td>Time to rebuild what was lost</td><td>${rd.delay<1?'none':'about '+Math.round(rd.delay)+' yrs'}</td></tr></table>`; }
+function vHead(R){ const rd=vRead(R); return `<div class="vbig"><b style="color:${vColor(rd.on)}">${Math.round(rd.on)}%</b><span style="font-weight:600">${esc(rd.verdict)}${rd.verdict.indexOf('delayed')>=0?` (about ${Math.round(rd.delay)} years)`:''}</span></div>${vReadTable(rd)}`; }
 function vRating(V){ return V>=90?'Still possible':V>=75?'Still possible, with more work':V>=55?'Possible only with major outside help':V>=35?'Doubtful':V>=15?'Very unlikely':'Not possible on this record'; }
 function vColor(V){ return V>=75?'var(--ver)':V>=35?'var(--tov)':'var(--nest)'; }
 function vMoney(m){ return m>=1?'$'+(Math.round(m*10)/10)+' million':'$'+Math.round(m*1000)+',000'; }
@@ -22,13 +35,13 @@ function vSave(){ vLS(VKEY, removed.size||vDrop.size ? {removed:[...removed], dr
 function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.exp[i]>1?' <em>×2</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
 function vDelayText(R){ const md=Math.max(...R.delay), mi=R.delay.indexOf(md);
   if(R.pc.some(p=>p<0.005)) return `<p class="vtxt"><b>On this record the state is not founded.</b> ${esc(VB.labels[VB.channels[R.pc.indexOf(Math.min(...R.pc))]])} is gone entirely. Rebuilding it at the pace it was first built (from ${esc(VB.tfrom[mi])}) would take about ${Math.round(md)} years.</p>`;
-  if(md>=1) return `<p class="vtxt">Likely delay: about <b>${Math.round(md)} years</b> (founding around ${1948+Math.round(md)}), the time to rebuild the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} at the pace it was first built, from ${esc(VB.tfrom[mi])}.</p>`;
+  if(md>=1){ const rd=vRead(R); return `<p class="vtxt">Rebuilding the lost ${esc(VB.labels[VB.channels[mi]].toLowerCase())} fully, at the pace it was first built (from ${esc(VB.tfrom[mi])}), would take about <b>${Math.round(md)} years</b>.${rd.retry?` Because the 1947-48 window was closing, the best chance of a later founding comes sooner, around <b>${rd.retry}</b>, with what has been rebuilt by then.`:' Waiting would not raise the chance: the window was closing faster than the loss could be rebuilt.'}</p>`; }
   return '<p class="vtxt">No meaningful delay: the rest of the documented network covers what was taken away.</p>'; }
 function vNeed(R){ const weak=R.pc.map((x,i)=>[x,i]).filter(([x])=>x<0.95).sort((a,b)=>a[0]-b[0]);
   return weak.length?`<p class="vtxt">To make up the loss the movement would need ${weak.slice(0,2).map(([x,i])=>esc(VB.need[VB.channels[i]])).join(', and ')}.</p>`:''; }
 function nodeWeights(id){ const q=(N.get(id)||{}).qop||{}, v=q.viability; if(!v) return '';
   const parts=VB.channels.map((c,i)=>[c,v.weight[i]]).filter(([c,w])=>w>=0.005).sort((a,b)=>b[1]-a[1]).map(([c,w])=>`${esc(VB.labels[c].toLowerCase())} ${Math.round(w*100)}%`);
-  return `<p class="vtxt">Its own share of the network: ${parts.length?parts.join(', '):'under 1% of every channel'}. Taken out alone, the chance becomes <b>${v.V}%</b>${v.drop>=0.5?` (down ${v.drop} points)`:''}.</p>`; }
+  return `<p class="vtxt">Its own share of the network: ${parts.length?parts.join(', '):'under 1% of every channel'}. Taken out alone: <b>${esc(v.read.verdict)}</b>; ${v.V}% on time${v.drop>=0.5?` (down ${v.drop} points)`:''}, ${v.read.ever}% ever, and the movement survives at ${v.read.survive}%.</p>`; }
 
 /* ---------- styles ---------- */
 document.head.insertAdjacentHTML('beforeend', `<style>
@@ -51,6 +64,7 @@ document.head.insertAdjacentHTML('beforeend', `<style>
 .vcard h4{font:600 .95rem/1.3 var(--f-display);margin:14px 0 2px}
 .vcard .kind{margin:0}
 .vcard ul{margin:6px 0 0;padding-left:18px;font-size:13px;line-height:1.5}
+.vread{width:100%;border-collapse:collapse;font-size:12.8px;margin:6px 0 4px}.vread td{padding:5px 4px;border-top:1px solid var(--line);vertical-align:top}.vread td:last-child{text-align:right;font-family:var(--f-mono);white-space:nowrap;font-weight:600}
 .vcard table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}.vcard td{padding:4px 6px;border-top:1px solid var(--line);vertical-align:top}.vcard td:last-child{text-align:right;font-family:var(--f-mono);white-space:nowrap}
 .vpill{position:absolute;left:10px;top:64px;z-index:3;display:none;align-items:center;gap:8px;padding:6px 8px 6px 12px;border-radius:999px;border:1px solid var(--gold-2);background:color-mix(in srgb,var(--panel) 92%,transparent);font-size:12.5px;max-width:calc(100% - 70px)}
 .vpill.on{display:flex}.vpill button{border:0;background:transparent;color:var(--gold);font:600 12.5px/1 inherit;cursor:pointer;padding:4px 6px}
@@ -85,8 +99,14 @@ function vIntro(){
   <p class="vtxt">Each channel's chance is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>: C is what still connects, C₀ the full record, and k is set so the full record gives 99%. Spare capacity protects a channel; losses bite harder as it empties. All five were needed, so the overall chance is their product, with money squared: ${Math.round(V0.P)}% on the full record.</p>
   <h4>7. Delay</h4>
   <p class="vtxt">The lost share of each channel is rebuilt at the pace it was first built: money and organization over 51 years from 1897, land over 66 from 1882, arms over 28 from 1920, diplomacy over 31 from 1917. The longest is the delay shown.</p>
+  <h4>8. Five readings of every removal</h4>
+  <ul><li><b>Founded on time, in 1948</b>: the chance computed above.</li>
+  <li><b>Founded by 1958</b> and <b>ever becomes a state</b>: the movement can wait while it rebuilds, but each year waited costs 2% of the chance, because the window of 1947-48 (the end of the Mandate, the UN vote, post-war sympathy, American and Soviet support at the same moment) was closing. The best year to try is chosen; the reading never falls below 1948's. A channel with nothing left cannot regrow from inside the record.</li>
+  <li><b>The movement itself survives</b>: money (counted twice) and organization only. A movement can survive while its state is blocked.</li>
+  <li><b>Time to rebuild</b>: the delay described in step 7.</li></ul>
+  <p class="vtxt">The verdict: <b>Happens on time</b> if the 1948 chance is 85% or more; <b>Still likely, but delayed</b> if it is 70% or more, or the ever chance is 75% or more; <b>Possible, with great difficulty</b> from 55%; <b>Unlikely</b> from 30%; below that, <b>Not possible on this record</b>.</p>
   <h4>The heaviest nodes, each removed alone</h4>
-  <table>${heavy.map(n=>`<tr><td>${esc(n.name)}</td><td>${n.qop.viability.V}%</td></tr>`).join('')}</table>
+  <table>${heavy.map(n=>`<tr><td>${esc(n.name)}<small style="display:block;color:var(--muted)">${esc(n.qop.viability.read.verdict)}</small></td><td>${n.qop.viability.V}%</td></tr>`).join('')}</table>
   <h4>What it cannot know</h4>
   <p class="vtxt">That someone else might have stepped in; the size of ties with no stated sum; anything the record does not document. Group removals ("Without the United States", "Rothschild family and houses") are in the Remove a node panel.</p>
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Start exploring</button></div>`);
@@ -98,9 +118,9 @@ function vResult(what, before, ids){
   const R=vScore(removed), cut=E.filter(e=>(ids||[]).some(x=>e.f===x||e.t===x)&&e.status!=='co-mention').length;
   const lostM=V0.cap[0]-R.cap[0];
   vOpen(`<div class="kind">Removed from the network</div><h3 id="vmH">${esc(what)}</h3>
-  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span></div>
-  <p class="vtxt">Chance the state is founded in 1948: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).</p>
-  ${vBars(R)}
+  ${vHead(R)}
+  <p class="vtxt">On time: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).</p>
+  <h4>The five channels</h4>${vBars(R)}
   <h4>What happened in the graph</h4>
   <ul><li>${cut} documented tie${cut===1?'':'s'} cut.</li>
   ${R.lostDocs.length?`<li>Lost its force: ${R.lostDocs.map(x=>esc(vName(x))).join(', ')} (every body that issued it is gone).</li>`:''}
@@ -122,9 +142,9 @@ function vRemove(ids, what, drop){ const before=vScore(removed).P; ids.forEach(x
 /* ---------- a small reminder on the graph while anything is removed ---------- */
 $('board').insertAdjacentHTML('beforeend','<div class="vpill" id="vPill"><span id="vPillT"></span><button type="button" id="vPillV">Details</button><button type="button" id="vPillR">Reset</button></div>');
 function vPill(){ const p=$('vPill'); if(!p) return; const n=removed.size; if(!n&&!vDrop.size){ p.classList.remove('on'); return; }
-  const R=vScore(removed); $('vPillT').innerHTML=`${n} removed · <b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b>`; p.classList.add('on'); }
+  const R=vScore(removed); $('vPillT').innerHTML=`${n} removed · <b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b> on time`; p.classList.add('on'); }
 $('vPillV').onclick=()=>{ const R=vScore(removed); vOpen(`<div class="kind">The network as it stands</div><h3 id="vmH">${[...removed].map(vName).map(esc).join(', ')||'Scenario'}</h3>
-  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span></div>${vBars(R)}
+  ${vHead(R)}<h4>The five channels</h4>${vBars(R)}
   <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}, from ${R.funders} of ${R.funders0} funders.</p>${vDelayText(R)}${vNeed(R)}
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button><button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`); };
 $('vPillR').onclick=()=>$('reset').click();
@@ -133,8 +153,8 @@ $('vPillR').onclick=()=>$('reset').click();
 function viabBlock(){
   const R=vScore(removed), any=removed.size||vDrop.size;
   const opts=Object.keys(VB.groups).map(g=>`<option value="${esc(g)}">${esc(g)} (${VB.groups[g].length})</option>`).join('');
-  let h=`<div class="viab"><div class="vlabel">Chance the state is founded in 1948, on this record</div>
-  <div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${vRating(R.P)}</span>${any?`<span class="note" style="margin:0">down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%</span>`:''}</div>${vBars(R)}
+  let h=`<div class="viab"><div class="vlabel">The state&rsquo;s chances, on this record</div>
+  ${vHead(R)}${any?`<p class="vtxt">On time: down ${Math.round(V0.P-R.P)} from ${Math.round(V0.P)}%.</p>`:''}${vBars(R)}
   <p class="vtxt">Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])} (1948 dollars), from ${R.funders} of ${R.funders0} funders.</p>`;
   if(any) h+=vDelayText(R)+vNeed(R); else h+=`<p class="vtxt">Tap any node to remove it, or remove a whole group below.</p>`;
   h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><select id="vgrp" class="sel" style="flex:1 1 180px;padding:7px 30px 7px 10px">${opts}</select><button id="vgo" class="ghost" type="button">Remove group</button>${any?'<button id="vclr" class="ghost" type="button">Restore all</button>':''}</div>

@@ -283,3 +283,32 @@ UI:
 - Removals are saved until you reset the graph.
 - A first-visit explainer covers the method and lists the heaviest nodes.
 - On phones, pinch-to-zoom works even when it starts on a node.
+
+## Pass: five readings per removal (5 Nov 2026)
+
+Every removal now gives five readings:
+1. **On time:** founded in 1948.
+2. **By 1958.**
+3. **Ever becomes a state:** the lost capacity is rebuilt at its historical pace, but each year of waiting costs 2% as the 1947–48 window closes. The best year is chosen, and the result is never below the 1948 figure.
+4. **The movement itself survives:** money (counted twice) times organization.
+5. **Time to rebuild what was lost.**
+
+Verdict scale:
+
+| Verdict | Rule |
+|---|---|
+| Happens on time | on-time chance ≥85% |
+| Still likely, but delayed | on-time ≥70%, or ever ≥75% |
+| Possible, with great difficulty | ever ≥55% |
+| Unlikely | ever ≥30% |
+| Not possible on this record | below that |
+
+Readings:
+
+| Removed | On time | By 1958 | Ever | Movement survives | Rebuild | Verdict |
+|---|---|---|---|---|---|---|
+| Without the United States | 65% | 72% | 72% | 80% | ~22 yrs | Possible, with great difficulty (best retry 1955) |
+| Rothschild family and houses | 79% | | 79% | 84% | ~22 yrs | Still likely, but delayed |
+| Zionist movement leadership | 60% | | 67% | 70% | ~33 yrs | Possible, with great difficulty |
+| Finance and banks | 65% | | 69% | 75% | | Possible, with great difficulty |
+| Armed groups | 0% | | 0% | 97% | | Not possible on this record (the movement survives, but its state is blocked) |

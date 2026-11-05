@@ -81,7 +81,12 @@ NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock
 US_RAISED = [('meir', 'czechoslovakia')]   # money raised in the United States though carried by a non-American
 CAL = 0.99               # each channel is calibrated so the full record gives it 99%
 EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1}   # money counts twice in the overall chance
-ISSUE_T = {'official act', 'signatory'}   # who gave a document its force
+ISSUE_T = {'official act', 'signatory'}
+HAZARD = 0.02            # each year of delay loses 2% of the chance: the 1947-48 window (end of the Mandate, the UN vote, post-war
+                         # sympathy, Soviet and American support at once) was not going to stay open
+HORIZONS = [10, 30]      # readings: founded by 1958, and within a generation (by 1978)
+VERDICT = [(85, 'on', 'Happens on time, in 1948'), (70, 'on', 'Still likely, but delayed'), (75, 'ever', 'Still likely, but delayed'), (55, 'ever', 'Possible, with great difficulty'),
+           (30, 'ever', 'Unlikely'), (0, 'ever', 'Not possible on this record')]   # who gave a document its force
 T_BUILD = {'money': 51, 'land': 66, 'force': 28, 'diplomacy': 31, 'organization': 51}   # years each channel took to build
 T_FROM = {'money': 'the first Zionist Congress, 1897', 'land': 'the first colonies, 1882', 'force': 'the founding of the Haganah, 1920',
           'diplomacy': 'the Balfour Declaration, 1917', 'organization': 'the first Zionist Congress, 1897'}
@@ -139,7 +144,7 @@ def model(d):
     amounts = {f + '>' + t: [v, txt] for (f, t), (v, txt) in AMOUNT.items()}
     return {'channels': CHANNELS, 'labels': LABEL, 'need': NEED, 'core': core, 'edges': edges, 'groups': groups,
             'issuers': {k: sorted(v) for k, v in issuers.items()}, 'exp': [EXP[c] for c in CHANNELS],
-            'conduit': [f + '>' + t for f, t in CONDUIT],
+            'conduit': [f + '>' + t for f, t in CONDUIT], 'hazard': HAZARD, 'horizons': HORIZONS, 'verdict': VERDICT,
             'cap0': [round(x, 4) for x in cap0], 'cal': CAL, 'tbuild': [T_BUILD[c] for c in CHANNELS], 'tfrom': [T_FROM[c] for c in CHANNELS],
             'amounts': amounts, 'default_m': DEFAULT_M, 'drop': {'Without the United States': [f + '>' + t for f, t in US_RAISED]}}
 
@@ -190,6 +195,30 @@ def score(M, removed, drop=()):
     return {'P': tot, 'pc': P, 'share': r, 'delay': delay, 'cap': cap, 'ties': ties, 'ties0': ties0, 'removed': removed}
 
 
+def readings(M, R):
+    """Five readings of the same removal: on time (1948), by 1958, by 1978, ever, and a verdict.
+    A later founding waits while each lost channel is rebuilt at the pace it was first built (a channel with nothing left cannot
+    regrow from inside the record); the chance at year t is the chance with what has been rebuilt by then, discounted by the
+    closing window, e^(-HAZARD x t). 'By year Y' and 'ever' take the best year up to Y (or 100 years), and never less than 1948's."""
+    k = -math.log(1 - M['cal']); P0 = R['P'] / 100; D = max(R['delay'])
+    def P_at(shares):
+        p = 1.0
+        for i, sh in enumerate(shares): p *= (1 - math.exp(-k * sh)) ** M['exp'][i]
+        return p
+    # the movement itself survives (keeps raising money and organizing) even where the state is delayed or blocked
+    out = {'on': round(100 * P0, 1), 'delay': round(D, 1), 'survive': round(100 * R['pc'][0] ** 2 * R['pc'][4], 1)}
+    best, t_best = 0.0, 0
+    for t in range(1, 101):    # the best later attempt by year t: capacity rebuilt so far, discounted by the closing window
+        sh = [min(1, s + t / M['tbuild'][i]) if s > 0.001 else 0 for i, s in enumerate(R['share'])]
+        p = P_at(sh) * math.exp(-HAZARD * t)
+        if p > best: best, t_best = p, t
+        if t in HORIZONS: out['by%d' % (1948 + t)] = round(100 * max(P0, best), 1)
+    out['ever'] = round(100 * max(P0, best), 1); out['retry'] = 1948 + t_best if best > P0 else None
+    for cut, key, txt in VERDICT:
+        if out[key] >= cut: out['verdict'] = txt; break
+    return out
+
+
 def rating(V):
     if V >= 90: return 'Still possible'
     if V >= 75: return 'Still possible, with more work'
@@ -210,13 +239,13 @@ def run(path=os.path.join(HERE, 'network.json')):
         R = score(M, {n['id']}); k = min(range(5), key=lambda i: R['pc'][i])
         n.setdefault('qop', {})['viability'] = {
             'V': round(R['P'], 1), 'rating': rating(R['P']), 'weakest': CHANNELS[k], 'channels': [round(x, 3) for x in R['pc']],
-            'delay': round(max(R['delay']), 1), 'drop': round(R0['P'] - R['P'], 1),
+            'delay': round(max(R['delay']), 1), 'drop': round(R0['P'] - R['P'], 1), 'read': readings(M, R),
             'weight': [round(own[n['id']][i] / M['cap0'][i], 3) if M['cap0'][i] else 0 for i in range(5)]}
     G = {}
     for name, ids in M['groups'].items():
         R = score(M, set(ids), set(M['drop'].get(name, []))); k = min(range(5), key=lambda i: R['pc'][i])
         G[name] = {'V': round(R['P'], 1), 'rating': rating(R['P']), 'weakest': CHANNELS[k], 'n': len(ids), 'delay': round(max(R['delay']), 1),
-                   'channels': [round(x, 3) for x in R['pc']], 'money_m': round(R['cap'][0], 2)}
+                   'channels': [round(x, 3) for x in R['pc']], 'money_m': round(R['cap'][0], 2), 'read': readings(M, R)}
     d['viability_meta'] = {'baseline': round(R0['P'], 1), 'edges_counted': len(M['edges']), 'money_m': round(M['cap0'][0], 2),
                            'per_channel': dict(collections.Counter(CHANNELS[e[2]] for e in M['edges'])), 'groups': G}
     json.dump(d, open(path, 'w'), ensure_ascii=False, indent=1)
