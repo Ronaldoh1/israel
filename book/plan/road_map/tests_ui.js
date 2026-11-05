@@ -81,7 +81,7 @@ function vTestsTable(){
   vOpen(`<div class="kind">Tests</div><h3 id="vmH">What would have happened if…</h3>
   <p class="vtxt">Each test removes part of the documented network and recalculates the whole map. The ring shows the chance the state is still founded in 1948; its colour is the verdict (green on time, yellow likely or possible with difficulty, red unlikely or not possible). Tap a test to run it on the map.</p>
   <div class="vtlist">${rows}<button class="vtrow" type="button" data-test="record"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="15" fill="none" stroke="var(--line)" stroke-width="5" stroke-dasharray="3 3"/><text x="22" y="26" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor">1948+</text></svg><span class="vtq"><b>${esc(VRECORD.q)}</b><small>A reading of the record after the founding, not a computed test</small></span><span class="vtgo" aria-hidden="true">›</span></button></div>
-  <h3 class="vsec">Other homelands</h3><p class="vtxt">Not removals from this map but alternatives the record documents, measured on the same six channels against what the Palestine record had.</p>
+  <h3 class="vsec">Other homelands</h3><p class="vtxt">Not removals from this map but the other lands that were proposed, offered or studied, measured on the same six channels against what the Palestine record had, in the order they were raised.</p>
   <div class="vtlist">${(VB.alt?VB.alt.alts:[]).map((a,i)=>`<button class="vtrow" type="button" data-alt="${i}">${vRing(a.chance,a.verdict)}<span class="vtq"><b>${esc(a.name)}</b><small><span class="vtl" style="background:${vLight(a.verdict)[0]}"></span>${esc(a.verdict)} · ${a.chance<1?'under 1':Math.round(a.chance)}% chance of a state</small></span><span class="vtgo" aria-hidden="true">›</span></button>`).join('')}</div>
   <div class="vbtns"><button class="vbtn" type="button" data-v="how">How the chances are computed</button><button class="vbtn" type="button" data-v="close">Close</button></div>`);
 }
@@ -92,6 +92,7 @@ function vAlt(i){ const a=VB.alt.alts[i], P=VB.alt.palestine;
   <h3 class="vsec">What the record shows</h3><ul class="vul">${a.facts.map(([f,k])=>`<li>${esc(f)} <small style="color:var(--muted)">(${vAltSrc(k)})</small></li>`).join('')}</ul>
   <h3 class="vsec">The six channels, against the Palestine record</h3>${VB.channels.map(c=>{ const [s,why]=a.share[c]; return `<div class="vrow"><span>${esc(VB.labels[c])}</span><span class="vbar"><i style="width:${Math.round(s*100)}%;background:${vColor(s*100)}"></i></span><span class="vnum">${Math.round(s*100)}%</span></div><p class="vtxt" style="margin:0 0 6px">${esc(why)}</p>`; }).join('')}
   <p class="vtxt">These shares are judgments read from the record, not counts from the map; they are shown so you can disagree with any of them.</p>
+  <p class="vtxt"><b>Jewish settlers at the peak:</b> ${esc(a.peak)} (Palestine: ${esc(P.peak)}).</p>
   <h3 class="vsec">The likely path</h3><p class="vtxt">${esc(a.path)}</p>
   <h3 class="vsec">The cost</h3><p class="vtxt">${esc(a.cost)}</p>
   <h3 class="vsec">Palestine, for comparison</h3><ul class="vul">${P.facts.map(([f,k])=>`<li>${esc(f)} <small style="color:var(--muted)">(${vAltSrc(k)})</small></li>`).join('')}<li>${esc(P.path)} ${esc(P.cost)}</li></ul>

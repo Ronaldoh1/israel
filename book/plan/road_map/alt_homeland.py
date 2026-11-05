@@ -19,6 +19,18 @@ S = {
  'a_wp_ito': ('Wikipedia: Jewish Territorial Organization', 'https://en.wikipedia.org/wiki/Jewish_Territorial_Organization'),
  'a_wp_mandpal': ('Wikipedia: Mandatory Palestine', 'https://en.wikipedia.org/wiki/Mandatory_Palestine'),
  'a_wp_jnf': ('Wikipedia: Jewish National Fund', 'https://en.wikipedia.org/wiki/Jewish_National_Fund'),
+ 'a_jvl_elarish': ('Jewish Virtual Library: El-Arish, Egypt', 'https://www.jewishvirtuallibrary.org/jsource/vjw/elarish.html'),
+ 'a_wp_kessler': ('Wikipedia: Leopold Kessler (Zionist), the El Arish expedition of 1903', 'https://en.wikipedia.org/wiki/Leopold_Kessler_(Zionist)'),
+ 'a_wp_jao': ('Wikipedia: Jewish Autonomous Oblast', 'https://en.wikipedia.org/wiki/Jewish_Autonomous_Oblast'),
+ 'a_wp_jao_hist': ('Wikipedia: History of the Jews in the Jewish Autonomous Oblast', 'https://en.wikipedia.org/wiki/History_of_the_Jews_in_the_Jewish_Autonomous_Oblast'),
+ 'a_wp_madagascar': ('Wikipedia: Madagascar Plan', 'https://en.wikipedia.org/wiki/Madagascar_Plan'),
+ 'a_wp_slattery': ('Wikipedia: Slattery Report', 'https://en.wikipedia.org/wiki/Slattery_Report'),
+ 'a_jvl_dr': ('Jewish Virtual Library: The Dominican Republic as a haven for Jewish refugees', 'https://www.jewishvirtuallibrary.org/dominican-republic-as-haven-for-jewish-refugees'),
+ 'a_jvl_sosua': ('Jewish Virtual Library: Sosua', 'https://www.jewishvirtuallibrary.org/jsource/Holocaust/sosua.html'),
+ 'a_jta_sur47': ('JTA, 31 Jul 1947: Government of Holland approves plan to settle 30,000 homeless Jews in Surinam', 'https://www.jta.org/archive/government-of-holland-approves-plan-to-settle-30000-homeless-jews-in-surinam'),
+ 'a_jta_sur48a': ('JTA, 18 Apr 1948: Zionist reports Dutch government did not offer haven to 30,000 Jews in Surinam', 'https://www.jta.org/archive/zionist-reports-dutch-government-did-not-offer-haven-to-30000-jews-in-surinam'),
+ 'a_jta_sur48b': ('JTA, 10 Sep 1948: Governor of Surinam suspends negotiations on admission of Jews', 'https://jta.org/archive/governor-of-surinam-suspends-negotiations-in-admission-of-jews-into-his-territory'),
+ 'a_wp_scramble': ('Wikipedia: Scramble for Africa', 'https://en.wikipedia.org/wiki/Scramble_for_Africa'),
  'a_cojs_47': ('Center for Online Judaic Studies: British decision to abandon the Mandate, 18 Feb 1947', 'https://cojs.org/british_decision_to_abandon_the_mandate-_feb-_18-_1947/'),
 }
 
@@ -62,21 +74,124 @@ ALTS = [
   'path': 'At most a small self-governing settlement under British rule, opposed by the British settlers, on land taken from the Maasai. On the record the movement itself refused it, and those who did go looking for a territory found no ruler willing to give one.',
   'cost': 'Not a peaceful alternative: the land was already the Maasai\'s, and its settlers fought for it.'},
 ]
+ALTS += [
+ {'id': 'el_arish', 'name': 'El Arish, northern Sinai (1902-03)',
+  'facts': [
+   ('In 1902 Herzl met Joseph Chamberlain, and northern Sinai, including the Pelusian Plain, was designated for an autonomous Jewish settlement sponsored by the British government. The idea had been proposed by Davis Trietsch.', 'a_jvl_elarish'),
+   ('From 11 February to 25 March 1903 an expedition led by Leopold Kessler, with an agronomist, an architect, the physician of the Palestine colonies, a water engineer and a representative of the Egyptian government, toured the area. Its joint report found that everything depended on water, and recommended diverting some of the Nile.', 'a_wp_kessler'),
+   ('Egypt refused, calculating that the plan needed five times the water the engineer had estimated. Lord Cromer, Britain\'s consul-general in Egypt, upheld the refusal even after Herzl narrowed the scheme to the El Arish area and gave up any claim to Nile water.', 'a_wp_kessler; a_jvl_elarish'),
+  ],
+  'share': {
+   'money': (0.1, 'The movement\'s early funds only; none of the later sums.'),
+   'land': (0.15, 'Desert land whose settlement depended on water the ruling government would not give.'),
+   'force': (0.2, 'British protection, no Jewish force.'),
+   'diplomacy': (0.5, 'Britain sponsored it; Egypt, which held the water, refused.'),
+   'organization': (0.4, 'Herzl himself pursued it, and the movement\'s experts surveyed it.'),
+   'recognition': (0.1, 'An autonomous settlement under British and Egyptian authority, not a state.'),
+  },
+  'path': 'Refused before it began. Had Egypt agreed, a small autonomous settlement on irrigated land at the edge of Egypt, dependent on Cairo for its water.',
+  'cost': 'No settlement, so no conflict on the record; its whole future depended on a neighbour controlling its water.'},
+ {'id': 'birobidzhan', 'name': 'Birobidzhan, the Soviet Far East (1928-34)',
+  'facts': [
+   ('A Soviet decree of 28 March 1928 set aside the territory; on 7 May 1934 it became the Jewish Autonomous Region, with Yiddish as its official language. It covers about 36,271 square kilometres, more than Mandatory Palestine.', 'a_wp_jao; a_wp_jao_hist'),
+   ('It was created to show that Soviet Jews, like other Soviet nationalities, could have a territory for cultural autonomy within the socialist state.', 'a_wp_jao_hist'),
+   ('Settlement went badly from the start: by October 1928, 49.7 percent of the first settlers had left because of floods, anthrax and harsh conditions. Jews numbered about 20,000 in 1937, 17,695 in 1939 (16 percent of the population), and peaked at about 46,000 to 50,000 in the late 1940s, about a quarter.', 'a_wp_jao'),
+   ('By 1959 the Jewish population had fallen to 14,269; the 2021 census counted 837.', 'a_wp_jao'),
+  ],
+  'share': {
+   'money': (0.1, 'Soviet state investment; none of the movement\'s money.'),
+   'land': (0.6, 'A territory larger than Palestine, granted by the state that ruled it.'),
+   'force': (0.0, 'No Jewish force; Soviet rule.'),
+   'diplomacy': (0.3, 'The sovereign granted autonomy, inside the Soviet Union and never toward independence.'),
+   'organization': (0.15, 'Soviet institutions only; the Zionist movement had no part in it.'),
+   'recognition': (0.0, 'A region of the Soviet Union, never a candidate for statehood.'),
+  },
+  'path': 'What happened: a Jewish region inside the Soviet Union that never held more than about a quarter Jews and emptied after 1959. The only place where a government actually granted a Jewish territory, and few chose to live there.',
+  'cost': 'No war over it; the cost was borne by the settlers in a hard climate under Soviet rule.'},
+ {'id': 'madagascar', 'name': 'Madagascar (1937, 1940)',
+  'facts': [
+   ('The idea of sending Europe\'s Jews to Madagascar came from antisemites, first Paul de Lagarde in 1878. No Jewish organization is documented as seeking it.', 'a_wp_madagascar'),
+   ('In 1937 Poland, working with France, sent a commission to the French colony. Its head, Mieczysław Lepecki, estimated 5,000 to 7,000 families could settle there; its Jewish members estimated about 500 families or fewer, because of the climate and the lack of infrastructure.', 'a_wp_madagascar'),
+   ('In 1940 Nazi Germany planned to deport about a million Jews a year for four years to the island, to be run by the SS as a police state, expecting many to die. Ian Kershaw calls it genocide by another method. It was shelved after the Battle of Britain left the sea lanes in British hands, and formally in February 1942.', 'a_wp_madagascar'),
+  ],
+  'share': {
+   'money': (0.0, 'None.'),
+   'land': (0.05, 'A French colony with its own population; the Jewish members of the 1937 commission judged it able to take about 500 families.'),
+   'force': (0.0, 'None.'),
+   'diplomacy': (0.0, 'No ruler offered it as a home; France studied it as a place to send Jews, Germany as a place to deport them.'),
+   'organization': (0.0, 'No Jewish organization sought it.'),
+   'recognition': (0.0, 'None.'),
+  },
+  'path': 'Not an alternative homeland: a plan by others to remove Jews from Europe. In its 1940 form it was a plan for mass death.',
+  'cost': 'Had the Nazi plan been carried out, the record\'s own estimate is that many of the deportees would have died.'},
+ {'id': 'alaska', 'name': 'Alaska (1938-40)',
+  'facts': [
+   ('In November 1938 Interior Secretary Harold Ickes proposed settling European refugees, especially Jews from Germany and Austria, in Alaska; his department\'s report of 1939-40 named four sites, including Baranof Island and the Matanuska-Susitna Valley. Because Alaska was a territory, settlers could have entered outside the normal immigration quotas.', 'a_wp_slattery'),
+   ('Senator William King and Representative Franck Havenner introduced a bill. Skagway, Petersburg and Seward endorsed the plan; some opponents called the refugees "Trojan horses".', 'a_wp_slattery'),
+   ('Most American Jewish leaders opposed it; Rabbi Stephen Wise said it would give a "wrong and hurtful impression". Roosevelt would accept only 10,000 settlers a year for five years, no more than 10 percent of them Jews, never spoke of it in public, and it died.', 'a_wp_slattery'),
+  ],
+  'share': {
+   'money': (0.1, 'No funding beyond a proposed development corporation.'),
+   'land': (0.3, 'Open land in an American territory, at four named sites.'),
+   'force': (0.0, 'None; American rule.'),
+   'diplomacy': (0.05, 'The President capped Jews at 10 percent of a small quota.'),
+   'organization': (0.05, 'Most American Jewish leaders opposed it.'),
+   'recognition': (0.0, 'Part of the United States; no route to statehood of its own.'),
+  },
+  'path': 'At most a few thousand refugees settled as Americans in a territory that became a state of the Union in 1959. A refuge, never a homeland.',
+  'cost': 'None in violence; its cost was the refugees it did not save.'},
+ {'id': 'dominican', 'name': 'Sosúa, Dominican Republic (1938-44)',
+  'facts': [
+   ('At the Evian conference of July 1938 the Dominican Republic was the only state to offer to take a large number of refugees, 50,000 to 100,000 Jews. The reported motives of its dictator, Rafael Trujillo, were to repair his image after his army\'s massacre of about 25,000 Haitians in 1937, and to "whiten" the population.', 'a_jvl_dr'),
+   ('The Dominican Republic Settlement Association, backed by the Joint Distribution Committee, signed its contract on 30 January 1940; it bought about 26,000 acres at Sosúa, and each settler received 80 acres. The contract guaranteed "full freedom of religion" and protection from persecution.', 'a_jvl_sosua'),
+   ('About 50 refugees arrived in the first year and the community peaked at about 500 before the Nazis stopped Jewish emigration in October 1941. Most later left for the United States or Israel; about 25 families remain.', 'a_jvl_sosua; a_jvl_dr'),
+  ],
+  'share': {
+   'money': (0.1, 'The Joint Distribution Committee\'s settlement association.'),
+   'land': (0.1, 'About 26,000 acres bought, room for far more than came.'),
+   'force': (0.0, 'None; a dictatorship\'s protection.'),
+   'diplomacy': (0.2, 'A ruler offered refuge for his own reasons; no self-rule.'),
+   'organization': (0.1, 'A relief association, not a national movement.'),
+   'recognition': (0.0, 'None.'),
+  },
+  'path': 'What happened: a refuge of about 500 people that saved lives and ended as a dairy town. A haven under a dictator, not a homeland.',
+  'cost': 'No conflict over the land; the offer itself came from a regime that had just massacred its neighbours.'},
+ {'id': 'suriname', 'name': 'Suriname (1947-48)',
+  'facts': [
+   ('In April 1947 the Freeland League, the successor to the territorialists, reached a preliminary agreement in Paramaribo; on 27 June 1947 Suriname\'s Legislative Council voted to accept a plan to settle 30,000 homeless European Jews in an undeveloped area, and the Netherlands government approved it on 3 July.', 'a_jta_sur47'),
+   ('The terms were disputed: an American Zionist reported in April 1948 that only about 200 skilled workers had been agreed as a first group, on 75-year leases rather than ownership; the League called this "an absolute distortion", citing the Dutch delegate at the UN and the governor\'s own letter.', 'a_jta_sur48a'),
+   ('On 14 August 1948, three months after Israel\'s founding, the governor suspended the talks "in the light of the present international situation".', 'a_jta_sur48b'),
+  ],
+  'share': {
+   'money': (0.1, 'The Freeland League\'s own resources.'),
+   'land': (0.3, 'An undeveloped area offered by the governing power, on lease.'),
+   'force': (0.0, 'None; Dutch rule.'),
+   'diplomacy': (0.3, 'The colony and the Netherlands approved it, then suspended it.'),
+   'organization': (0.15, 'The Freeland League, opposed to a Jewish state; the Zionist movement disputed the offer.'),
+   'recognition': (0.0, 'A settlement inside a Dutch colony, not a state.'),
+  },
+  'path': 'At most 30,000 settlers in an autonomous community under Dutch rule, on leased land. Approved by a government, then withdrawn once Israel existed.',
+  'cost': 'Peaceful on the record; who lived in the area it targeted is not documented here and would have had to be established.'},
+]
+PEAK = {'argentina': 'over 20,000 colonists (1930)', 'east_africa': 'none', 'el_arish': 'none', 'birobidzhan': 'about 46,000 to 50,000 Jews (late 1940s)',
+        'madagascar': 'none', 'alaska': 'none', 'dominican': 'about 500 (1941)', 'suriname': 'none'}
+for _A in ALTS: _A['peak'] = PEAK[_A['id']]
 PALESTINE = {'name': 'Palestine (the record)', 'facts': [
   ('About 25,600 to 26,600 square kilometres; in 1945 about 1,061,000 Muslims, 136,000 Christians and 554,000 Jews.', 'a_wp_mandpal'),
   ('The two sides\' positions were an "irreconcilable conflict of principles", Bevin told the Commons on 18 February 1947: the Jews sought a sovereign state, and the Arabs opposed Jewish sovereignty anywhere in Palestine.', 'a_cojs_47')],
-  'path': 'The state, founded in 1948, through war.', 'cost': 'A war in 1947-49 and a conflict that has continued since.'}
+  'peak': 'about 630,000 Jews (1947)', 'path': 'The state, founded in 1948, through war.', 'cost': 'A war in 1947-49 and a conflict that has continued since.'}
 
 
-def chance(share):
+def chance(share, chans=None):
     k = -math.log(1 - V.CAL); p = 1.0
-    for c in V.CHANNELS: p *= (1 - math.exp(-k * share[c][0])) ** V.EXP[c]
-    return round(100 * p, 1)
+    for c in (chans or V.CHANNELS): p *= (1 - math.exp(-k * share[c][0])) ** V.EXP[c]
+    return round(100 * p, 2)
 
 
 def main():
     out = []
-    for A in ALTS:
+    ORDER = ['argentina', 'el_arish', 'east_africa', 'birobidzhan', 'madagascar', 'alaska', 'dominican', 'suriname']   # in the order they were raised
+    for A in sorted(ALTS, key=lambda a: ORDER.index(a['id'])):
         A = dict(A); A['chance'] = chance(A['share'])
         A['weakest'] = min(V.CHANNELS, key=lambda c: A['share'][c][0])
         A['verdict'] = next(t for cut, key, t in V.VERDICT if A['chance'] >= cut)
@@ -87,6 +202,6 @@ def main():
     entry = {'id': 'road_alt_layer', 'stage': 'rd3', 'topic': 'Other homelands: Argentina (Hirsch colonies) and British East Africa (1903 offer) measured on the same six channels (Nov 2026)',
              'claims': [f for A in ALTS + [PALESTINE] for f, _ in A['facts']], 'sources': [{'key': k, 'url': u, 'label': l, 'kind': 'web'} for k, (l, u) in S.items()]}
     json.dump({'volume': 'road_alt_layer', 'verified': '2026-11-05', 'entries': [entry]}, open(os.path.join(REPO, 'book/research/road_alt_layer.json'), 'w'), ensure_ascii=False, indent=1)
-    for A in out: print(A['id'], A['chance'], A['verdict'])
+    for A in out: print(A['id'], A['chance'], A['verdict'], A['peak'])
 
 if __name__ == '__main__': main()

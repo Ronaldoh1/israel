@@ -553,3 +553,7 @@ What is lost is rebuilt by the network that is left: share_t = s × (1 + t/T). F
 | Yishuv institutions (Va'ad Leumi) | 93% | | 0 | Happens on time (was 60%, an artifact of the old rule) |
 
 Browser and Python agree on 143 sampled nodes. Book: new appendix "The Map and the Tests" in The Road to 1948 (book/part1/rd7, six sections).
+
+## Pass: the other homelands as Appendix Two (5 Nov 2026)
+
+Eight alternatives, in the order raised, each told from its documents and scored on the six channels (same formula; shares are disclosed judgments): Argentina under 1%, El Arish about 1%, British East Africa about 2%, Birobidzhan under 1% (peak about 46,000-50,000 Jews), Madagascar 0 (a deportation plan, never an offer), Alaska under 1%, Sosúa under 1% (peak about 500), Suriname under 1% (approved 1947, suspended Aug 1948). Finding: by 1914 only Ethiopia and Liberia were outside European rule in Africa; no land combined a willing ruler, no resident population, and Jews willing to go. Book: The Road to 1948 now has Appendix One (The Map and the Tests, rd7) and Appendix Two (The Other Homelands, rd8, ten sections).
