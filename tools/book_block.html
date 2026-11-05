@@ -1363,15 +1363,24 @@ body.book-open #libBanner{display:none}
   /* the simulation's first-visit tour must not run underneath the library; it runs when the reader returns to the simulation */
   (function(){ var t = $('tourOverlay'); if(!t || !window.MutationObserver) return;
     new MutationObserver(function(){ if(t.classList.contains('active') && document.body.classList.contains('book-open')) t.classList.remove('active'); }).observe(t, {attributes:true, attributeFilter:['class']}); })();
-  /* arrive in the view the reader used last (a link to a scene, dashboard, map or Eleven Minutes still wins) */
-  window.addEventListener('load', function(){ setTimeout(function(){
-    if(ls('ots_view') !== 'library' || view.classList.contains('on')) return;
-    if((location.hash || '').replace('#', '')) return;
-    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return;
-    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return; }catch(e){}
-    window.__bookOpening = true; try{ if(shown($('welcomeOverlay')) && window.dismissWelcome) window.dismissWelcome(); }catch(e){}
-    setTimeout(function(){ window.__bookOpening = false; openBook(null); }, 450);
-  }, 650); });
+  /* arrive in the view the reader used last. The library is the default: only a reader who last left in the
+     simulation goes back to it. A link to a scene, dashboard, map or Eleven Minutes still wins. The welcome
+     screen is retired: it never shows, and the + menu no longer offers it. Lives here (not only in
+     tools/library_boot.py) so re-embedding the book keeps it. */
+  window.__welcomeReopen = function(){};
+  function libBootDone(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){ if(window.__otsBootOff) window.__otsBootOff(); else document.documentElement.classList.remove('ots-lib-boot'); }); }); }
+  function libBoot(){
+    try{ var w0 = $('welcomeOverlay'); if(w0){ if(window.dismissWelcome) window.dismissWelcome(); w0.style.display = 'none'; } }catch(e){}
+    if(/^#(book|library)/.test(location.hash || '')){ try{ deepEntry(); }catch(e){} return libBootDone(); }
+    if(ls('ots_view') === 'sim' || view.classList.contains('on')) return libBootDone();
+    if((location.hash || '').replace('#', '')) return libBootDone();
+    var ev = $('elevenOverlay'); if(ev && !ev.hidden) return libBootDone();
+    try{ if(window.parent !== window && (window.parent.__bookRoute || window.parent.__elevenRoute)) return libBootDone(); }catch(e){}
+    bootOpen = true; try{ openBook(null); }catch(e){} bootOpen = false;
+    libBootDone();
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(libBoot, 0); });
+  else setTimeout(libBoot, 0);
 })();
 </script>
 <!--BOOK-END-->

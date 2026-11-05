@@ -22,7 +22,7 @@ def swap(old, new, count=1):
 
 HEAD = ('<!--LIBBOOT-START--><script>(function(){try{'
         "var v=JSON.parse(localStorage.getItem('ots_view')||'null');"
-        "var h=location.hash||'',deep=/^#(book|library)/.test(h);if(window.parent!==window||(!deep&&((v!=='library'&&v!==null)||h.replace('#',''))))return;"
+        "var h=location.hash||'',deep=/^#(book|library)/.test(h);if(window.parent!==window||(!deep&&((v==='sim')||h.replace('#',''))))return;"
         "var p=JSON.parse(localStorage.getItem('ots_book_prefs')||'null')||{};"
         "var bg={sepia:'#F5EBD7',night:'#121212'}[p.theme]||'#FBF9F4',ink=p.theme==='night'?'#E6E2DA':'#1C1B19',mu=p.theme==='night'?'#A39E94':'#6B655B';"
         "var d=document.documentElement;d.classList.add('ots-lib-boot');d.style.setProperty('--ots-boot-bg',bg);d.style.setProperty('--ots-boot-ink',ink);d.style.setProperty('--ots-boot-mu',mu);"

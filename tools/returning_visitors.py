@@ -18,9 +18,7 @@ def swap(old, new, count=1):
     assert s.count(old) == count, ('not found exactly %d time(s): ' % count) + old[:100]
     s = s.replace(old, new)
 
-HEAD = ('<!--RETURN-START--><script>try{if(localStorage.getItem("ots_welcome_seen")||localStorage.getItem("ots_xp_chosen"))'
-        'document.documentElement.classList.add("ots-skip-welcome");}catch(e){}</script>'
-        '<style>html.ots-skip-welcome #welcomeOverlay{display:none !important}</style><!--RETURN-END-->')
+HEAD = '<!--RETURN-START-->'+'<script>document.documentElement.classList.add("ots-skip-welcome");try{localStorage.setItem("ots_welcome_seen","1");}catch(e){}</script><style>#welcomeOverlay{display:none !important}.om-it[data-a="welcome"]{display:none !important}</style>'+'<!--RETURN-END-->'  # Nov 2026: the welcome screen is retired
 m = re.search(r'<head[^>]*>', s)
 s = s[:m.end()] + HEAD + s[m.end():]
 
