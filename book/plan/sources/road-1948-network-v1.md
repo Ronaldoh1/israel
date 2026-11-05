@@ -312,3 +312,23 @@ Readings:
 | Zionist movement leadership | 60% | | 67% | 70% | ~33 yrs | Possible, with great difficulty |
 | Finance and banks | 65% | | 69% | 75% | | Possible, with great difficulty |
 | Armed groups | 0% | | 0% | 97% | | Not possible on this record (the movement survives, but its state is blocked) |
+
+## Pass: combined removals and the signal light (5 Nov 2026)
+
+Removals accumulate, and every reading is recalculated for the whole removed set together.
+
+Each change (removing or restoring a node or a group) shows a signal at the top of the screen:
+- **Green:** happens on time.
+- **Yellow:** still likely but delayed, or possible with great difficulty.
+- **Red:** unlikely, or not possible on this record.
+
+The signal shows the verdict, the on-time chance with its change, the ever chance and movement survival. It dismisses itself after 6.5 seconds, has an X, can be swiped up on a phone, and pauses while the mouse is over it. Tapping it opens the full window for everything removed.
+
+Combined readings:
+
+| Removed together | On time | Ever | Verdict |
+|---|---|---|---|
+| Rothschild family | 79% | 79% | Still likely, but delayed |
+| Rothschild family + Herzl | 78% | 78% | Still likely, but delayed |
+| Rothschild family + Herzl + Weizmann | 76% | 77% | Still likely, but delayed |
+| Rothschild family + the United States | 11% | 52% | Unlikely (best retry 1969; rebuild about 45 years) |

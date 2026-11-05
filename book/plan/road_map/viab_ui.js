@@ -115,20 +115,20 @@ function vIntro(){
 
 /* ---------- the result of a removal ---------- */
 function vResult(what, before, ids){
-  const R=vScore(removed), cut=E.filter(e=>(ids||[]).some(x=>e.f===x||e.t===x)&&e.status!=='co-mention').length;
+  const R=vScore(removed), cutSet=ids||[...removed], cut=E.filter(e=>cutSet.some(x=>e.f===x||e.t===x)&&e.status!=='co-mention').length;
   const lostM=V0.cap[0]-R.cap[0];
   vOpen(`<div class="kind">Removed from the network</div><h3 id="vmH">${esc(what)}</h3>
   ${vHead(R)}
-  <p class="vtxt">On time: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).</p>
+  <p class="vtxt">${ids?`On time: ${Math.round(before)}% before this removal, ${Math.round(R.P)}% now (${Math.round(V0.P)}% on the full record).`:`Everything removed is read together: ${Math.round(R.P)}% on time now, against ${Math.round(V0.P)}% on the full record.`}</p>
   <h4>The five channels</h4>${vBars(R)}
   <h4>What happened in the graph</h4>
   <ul><li>${cut} documented tie${cut===1?'':'s'} cut.</li>
   ${R.lostDocs.length?`<li>Lost its force: ${R.lostDocs.map(x=>esc(vName(x))).join(', ')} (every body that issued it is gone).</li>`:''}
   <li>Money still reaching the movement: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}${lostM>0.05?` (${vMoney(lostM)} gone or cut off)`:''}, from ${R.funders} of ${R.funders0} funders.</li>
-  <li>${removed.size} node${removed.size===1?'':'s'} removed in total; they stay removed until you reset the graph.</li></ul>
+  <li>${removed.size} node${removed.size===1?'':'s'} removed in total, read together; they stay removed until you reset the graph${removed.size?`: ${[...removed].slice(0,40).map(x=>esc(vName(x))).join(', ')}${removed.size>40?` and ${removed.size-40} more`:''}`:''}.</li></ul>
   ${vDelayText(R)}${vNeed(R)}
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button>${ids&&ids.length?'<button class="vbtn" type="button" data-v="undo">Undo this removal</button>':''}<button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`);
-  vCard.dataset.ids=JSON.stringify(ids||[]); vCard.dataset.drop=JSON.stringify(what==='Without the United States'?VB.drop[what]||[]:[]);
+  vCard.dataset.ids=JSON.stringify(ids||[]); vCard.dataset.drop=JSON.stringify(what==='the United States'?VB.drop['Without the United States']||[]:[]);
 }
 vCard.addEventListener('click', e=>{ const b=e.target.closest('[data-v]'); if(!b) return; const a=b.dataset.v;
   if(a==='close') vClose();
@@ -137,7 +137,44 @@ vCard.addEventListener('click', e=>{ const b=e.target.closest('[data-v]'); if(!b
   else if(a==='undo'){ JSON.parse(vCard.dataset.ids||'[]').forEach(x=>removed.delete(x)); JSON.parse(vCard.dataset.drop||'[]').forEach(x=>vDrop.delete(x)); vClose(); vRefresh(); }
 });
 function vRefresh(){ vSave(); if(mode==='del'){ const r=reconnect(); hiNodes=r.nodes; hiEdges=r.edges; delPanel(r); } else if(sel) side(sel); draw(); if(calloutId) showCallout(calloutId); }
-function vRemove(ids, what, drop){ const before=vScore(removed).P; ids.forEach(x=>removed.add(x)); (drop||[]).forEach(x=>vDrop.add(x)); vRefresh(); vResult(what, before, ids); }
+function vRemove(ids, what, drop){ const before=vScore(removed).P; ids.forEach(x=>removed.add(x)); (drop||[]).forEach(x=>vDrop.add(x)); vRefresh(); vSignal('Removed: '+what, before); }
+
+
+/* ---------- the signal: a light at the top after every change, gone by itself ---------- */
+document.head.insertAdjacentHTML('beforeend', `<style>
+.vsig{position:fixed;left:50%;top:calc(10px + env(safe-area-inset-top,0px));z-index:70;width:min(440px,calc(100% - 20px));transform:translate(-50%,-140%);transition:transform .32s cubic-bezier(.2,.85,.25,1),opacity .32s;opacity:0;
+  display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;padding:11px 10px 11px 12px;border-radius:16px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 96%,transparent);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 14px 40px rgba(0,0,0,.35);touch-action:pan-x;cursor:pointer}
+.vsig.on{transform:translate(-50%,0);opacity:1}
+.vsig .lamp{width:16px;height:16px;border-radius:50%;margin-top:3px;box-shadow:0 0 0 3px color-mix(in srgb,var(--lc) 25%,transparent),0 0 14px var(--lc);background:var(--lc)}
+.vsig .t1{font-weight:700;font-size:14px;line-height:1.3}.vsig .t2{font-size:12.5px;line-height:1.45;color:var(--muted);margin-top:2px}
+.vsig .t2 b{color:inherit}.vsig .x{border:0;background:transparent;color:var(--muted);font-size:20px;line-height:1;padding:2px 6px;cursor:pointer}
+.vsig .bar{grid-column:1/-1;height:2px;border-radius:2px;background:var(--lc);transform-origin:left;opacity:.6}
+@media (prefers-reduced-motion:reduce){.vsig{transition:none}}
+</style>`);
+document.body.insertAdjacentHTML('beforeend','<div class="vsig" id="vSig" role="status" aria-live="polite"></div>');
+const vSig=document.getElementById('vSig'); let vSigT=null, vSigY=null;
+function vLight(v){ return v==='Happens on time, in 1948'?['#2E9E5B','Green']:(v==='Still likely, but delayed'||v==='Possible, with great difficulty')?['#E0A800','Yellow']:['#D64545','Red']; }
+function vSignal(label, before){
+  const R=vScore(removed), rd=vRead(R), [lc]=vLight(rd.verdict), d=Math.round(rd.on)-Math.round(before);
+  const n=removed.size, what=n?`${n} node${n===1?'':'s'} removed`:'Nothing removed';
+  vSig.style.setProperty('--lc', lc);
+  vSig.innerHTML=`<span class="lamp" aria-hidden="true"></span><div><div class="t1">${esc(rd.verdict)}${rd.verdict.indexOf('delayed')>=0?` · ~${Math.round(rd.delay)} yrs`:''}</div>
+   <div class="t2">${esc(label)} · ${what}<br><b>${Math.round(rd.on)}%</b> on time${d?` (${d>0?'+':''}${d})`:''} · <b>${Math.round(rd.ever)}%</b> ever · movement <b>${Math.round(rd.survive)}%</b> · tap for details</div></div>
+   <button class="x" type="button" aria-label="Dismiss">×</button><span class="bar" id="vSigBar"></span>`;
+  vSig.classList.add('on'); clearTimeout(vSigT);
+  const bar=document.getElementById('vSigBar'); bar.animate([{transform:'scaleX(1)'},{transform:'scaleX(0)'}],{duration:6500,easing:'linear'});
+  vSigT=setTimeout(vSigOff, 6500);
+}
+function vSigOff(){ clearTimeout(vSigT); vSig.classList.remove('on'); vSig.style.transform=''; }
+vSig.addEventListener('click', e=>{ if(e.target.closest('.x')){ e.stopPropagation(); vSigOff(); return; } vSigOff(); vResult('The network as it stands', V0.P, null); });
+vSig.addEventListener('pointerenter', ()=>{ clearTimeout(vSigT); vSig.getAnimations({subtree:true}).forEach(a=>a.pause()); });
+vSig.addEventListener('pointerleave', e=>{ if(e.pointerType==='mouse' && vSig.classList.contains('on')){ vSig.getAnimations({subtree:true}).forEach(a=>a.play()); vSigT=setTimeout(vSigOff, 2500); } });
+/* swipe up to dismiss on a phone */
+vSig.addEventListener('touchstart', e=>{ vSigY=e.touches[0].clientY; clearTimeout(vSigT); }, {passive:true});
+vSig.addEventListener('touchmove', e=>{ if(vSigY==null) return; const dy=Math.min(0,e.touches[0].clientY-vSigY); vSig.style.transition='none'; vSig.style.transform=`translate(-50%,${dy}px)`; }, {passive:true});
+vSig.addEventListener('touchend', e=>{ if(vSigY==null) return; const dy=e.changedTouches[0].clientY-vSigY; vSigY=null; vSig.style.transition='';
+  if(dy<-30){ vSig.style.transform=''; vSigOff(); e.preventDefault(); } else { vSig.style.transform=''; vSigT=setTimeout(vSigOff, 3000); } });
 
 /* ---------- a small reminder on the graph while anything is removed ---------- */
 $('board').insertAdjacentHTML('beforeend','<div class="vpill" id="vPill"><span id="vPillT"></span><button type="button" id="vPillV">Details</button><button type="button" id="vPillR">Reset</button></div>');
@@ -162,24 +199,24 @@ function viabBlock(){
   return h;
 }
 function delPanel(r){ delPanel0(r); $('side').insertAdjacentHTML('afterbegin', viabBlock());
-  const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; vRemove(VB.groups[g], g, VB.drop[g]); };
+  const go=$('vgo'); if(go) go.onclick=()=>{ const g=$('vgrp').value; vRemove(VB.groups[g], g==='Without the United States'?'the United States':g, VB.drop[g]); };
   const cl=$('vclr'); if(cl) cl.onclick=()=>$('reset').click();
   const hw=$('vhow'); if(hw) hw.onclick=vIntro;
 }
 /* tapping a node in Remove mode removes it (or restores it) and shows what happened */
 const vPick0 = pick;
-pick = function(id){ if(mode!=='del') return vPick0(id); const had=removed.has(id), before=vScore(removed).P; vPick0(id); vSave(); if(!had) vResult(vName(id), before, [id]); };
+pick = function(id){ if(mode!=='del') return vPick0(id); const had=removed.has(id), before=vScore(removed).P; vPick0(id); vSave(); vSignal((had?'Restored: ':'Removed: ')+vName(id), before); };
 /* every node's summary and record carry a Remove button and its weights */
 const vCallout0 = showCallout;
 showCallout = function(id){ vCallout0(id); if(!N.get(id)) return; const on=removed.has(id);
   callout.insertAdjacentHTML('beforeend', `<button class="vbtn c-rm${on?'':' pri'}" type="button">${on?'Restore to the network':'Remove from the network'}</button>`);
-  callout.querySelector('.c-rm').onclick=ev=>{ ev.stopPropagation(); if(on){ removed.delete(id); vRefresh(); } else vRemove([id], vName(id)); };
+  callout.querySelector('.c-rm').onclick=ev=>{ ev.stopPropagation(); if(on){ const before=vScore(removed).P; removed.delete(id); vRefresh(); vSignal('Restored: '+vName(id), before); } else vRemove([id], vName(id)); };
   placeCallout(); };
 const vSide0 = side;
 side = function(id, msg){ vSide0(id, msg); if(!N.get(id)) return; const on=removed.has(id);
   $('side').insertAdjacentHTML('afterbegin', `<div class="viab"><div class="vlabel">${on?'Removed from the network':'If this were removed'}</div>${nodeWeights(id)}
   <div class="vbtns"><button class="vbtn${on?'':' pri'}" type="button" id="vSideRm">${on?'Restore to the network':'Remove from the network'}</button><button class="vbtn" type="button" id="vSideHow">How this is computed</button></div></div>`);
-  $('vSideRm').onclick=()=>{ if(on){ removed.delete(id); vRefresh(); } else vRemove([id], vName(id)); };
+  $('vSideRm').onclick=()=>{ if(on){ const before=vScore(removed).P; removed.delete(id); vRefresh(); vSignal('Restored: '+vName(id), before); } else vRemove([id], vName(id)); };
   $('vSideHow').onclick=vIntro; };
 /* restore what the reader removed last time, and explain the model on the first visit */
 (function(){ const s=vLS(VKEY); if(s){ (s.removed||[]).forEach(x=>{ if(N.get(x)) removed.add(x); }); (s.drop||[]).forEach(x=>vDrop.add(x)); }
