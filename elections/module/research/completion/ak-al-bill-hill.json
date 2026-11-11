@@ -1,0 +1,13 @@
+{
+ "id": "ak-al-bill-hill",
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "News searches for lawsuits, investigations and complaints tied to him or his superintendent tenure found nothing. CourtListener/Justia not reachable; Alaska CourtView not searched.",
+  "foreign": "House candidate disclosure read directly: all assets and income are Alaska-based; no foreign holdings. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate (name hits only for firms 'Concord Hill Strategies' and 'Hill and Knowlton', no individual match).",
+  "claims": "Campaign site not opened. Mechanical sample = every checkable claim in his paid 2026 Official Election Pamphlet statement (bio + text) plus the Beacon questionnaire bio. 10 rated: 6 true, 2 partly, 2 unverifiable. Highest-spending ads not identified in coverage.",
+  "democracy": "Beacon 2026 questionnaire (2020 winner question). Never held office, so no certification votes."
+ },
+ "research_notes": "Only FARA changed this pass. CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly."
+}

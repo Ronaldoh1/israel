@@ -1,0 +1,58 @@
+# cw4 — source contradictions presented in the prose
+
+One line each. Ids are the section ids (all research-led; research entries in `research/cw4.json`) plus any drawn scene involved.
+
+- Signing date of the 1957 French agreement: 3 Oct 1957 (FAS, JVL) vs 3 or 30 Oct (Burr & Cohen, EBB 510) vs dated 30 Sep, signed 1 Oct after the government fell (CIE; Goldschmidt; Peres memoir). — cw4_french_deal (cw4_french_nuclear_deal_1955_1960)
+- Terms of the 1957 deal: reactor plus unwritten reprocessing protocols (FAS, JVL) vs three contracts incl. 385 t uranium and joint weapons research (The National Interest only). — cw4_french_deal
+- What the 1960 Franco-Israeli compromise changed: real change, plutonium plant halted (FAS, Nuclear Weapon Archive) vs "little changed" (JVL). — cw4_french_deal
+- Dimona groundbreaking: early 1958 (Nuclear Weapon Archive) vs 1959 (told to the 1961 US visitors) vs "begun a year earlier" (Harman, 20 Dec 1960). — cw4_french_deal, cw4_dimona_december, cw4_kennedy_dimona
+- Ben-Gurion's 24 July 1958 "dam" sentence: "Nasserist–Soviet torrent" (Schonmann) vs "Nasser's wild Sovietism" (Liel, German). — cw4_periphery (cw4_periphery_doctrine_1957_1958)
+- Place of the August 1958 Turkish–Israeli agreement: Ben-Gurion's secret Ankara visit (Liel; Asa-El) vs not stated (Schonmann). — cw4_periphery (tk_s03)
+- Level of Turkish–Israeli relations after August 1958: upgraded to full embassies (Asa-El) vs ambassadorial only from Jan 1992 (Liel); agreed text speaks of envoys returning (STRASAM). — cw4_periphery (tk_s03)
+- US reception of the periphery: "lukewarm blessing" (Alpher) vs "not firm" (PPS, 11 Aug 1958) and "extreme caution" (Dulles, 18 Aug) (Schonmann). — cw4_periphery, cw4_overflights
+- Lebanon 1958: domestic cause, Chamoun's second-term bid (SNIE 36.4–58; Riedel; New Lines) vs UAR arms smuggling (Chamoun), not supported by UN observers. — cw4_1958 (me_s08)
+- Peak US strength in Lebanon 1958: "almost 15,000" (Riedel) vs about 14,000 (Cannon) vs never exceeded 14,000 (New Lines); deaths one (Riedel) vs one plus three accidental (Cannon). — cw4_1958
+- Why Israel stopped the overflights, 2 Aug 1958: Soviet note and cabinet pressure (Dulles; Lawson; Comay) vs not the Soviet note but domestic/British politics (Eban to Dulles and Herter; Israeli sources to JTA); Schonmann's "accidental crisis" as a third reading. — cw4_overflights
+- Elkrif shooting, 8 July 1959: arrest for drunk and disorderly, provocation disputed by witnesses (CIE) vs unjustified (the union's broadsheet). — cw4_wadi_salib
+- Ben-Harush's organization: Union of Migrants from North Africa (Naor) vs Union of North African Immigrants (encyclopedias). — cw4_wadi_salib
+- Cause of Wadi Salib: marginalization by the establishment (protesters; CIE; Naor) vs no deliberate institutional discrimination (Etzioni report, as summarized) vs Herut support (Mapai broadsheet). — cw4_wadi_salib
+- Fatah's founding: autumn 1957 in Kuwait (Institute for Palestine Studies) vs 1959 (some founders, EMMENA). — cw4_palestinian_politics (hma_src_s02)
+- Al-Ard's 1964 ban: ordered by Eshkol (Jiryis) vs by the Defence Minister (+972); Eshkol held both posts. — cw4_palestinian_politics
+- Bar-Joseph's Rotem study: dated 1995 (bibliographic record) vs cited as 1996 (Wikipedia). — cw4_borders
+- Tawafiq, 1960: Israel cleared forces "illegally entrenched" vs UAR/MAC: advance on Arab farmers, "almost total destruction." — cw4_borders (sy_s02)
+- Lake Tiberias, March 1962: Syrian fire on Israeli fishermen (Israel) vs Israeli raid in force from the DMZ (Syria); Israel's sovereignty claim "not finally established" (State legal adviser). — cw4_borders
+- Ben-Gurion's request at the Waldorf, 14 Mar 1960: $500 million loan (Borchard, KAS) vs $40–50 million a year for ten years (Bar-Joseph). — cw4_europe
+- "Aktion Geschäftsfreund" total: 629.4 million marks to 1965 (Bar-Joseph's German documents) vs almost 630 million DM to 1966 excl. weapons (KAS). — cw4_europe
+- German military aid 1962–early 1965: 340 million marks ("Frank/Kol" documents) vs 500 million (Stauber). — cw4_europe
+- Did German money fund Dimona: "major funder" (Bar-Joseph); "near certainty" (Die Welt via The National Interest) vs no Israeli record, no Waldorf transcript, Peres's denial, KAS "development aid". — cw4_europe, cw4_dimona_december
+- Peres on who paid half of Dimona (~$40 million): wealthy Jewish donors (Bar-Joseph) vs Israeli government funds (The National Interest). — cw4_europe
+- Globke's Nazi-era role: helped draft the Nuremberg Laws (Israel State Archives) vs wrote commentaries on them (Brenner). — cw4_eichmann, cw4_europe
+- Eichmann's capture: private "volunteers" (Israel's note, June 1960) vs Ben-Gurion-authorized Mossad operation (Israel State Archives). — cw4_eichmann
+- Resolution 138: condemned Israel (Israel State Archives) vs condemns no state by name, asks undefined "reparation" (text; Amadeo). — cw4_eichmann
+- Iran's de facto recognition of Israel: since 1949 (the Shah, as FRUS editors summarize) vs 1950 (The New Arab; "since 1950," Akhavi). — cw4_iran (ira_s00b)
+- Cause of the Egypt–Iran break, 1960: the Shah's statement on Israel (FRUS editors; The New Arab) vs perhaps Iran's ties to the Gulf Arab states (Akhavi). — cw4_iran
+- Order of the 1960 rupture: Nasser broke relations (Akhavi) vs Iran declared the UAR envoy persona non grata (FRUS editors). — cw4_iran
+- Year of FRUS 1958–60 vol. XII doc. 273 (Bakhtiar talk): file number reads August 1959 vs editors' note describes the Shah's July 1960 statement. — cw4_iran, cw4_periphery
+- U-2 and Dimona: construction photographed 1958, not identified until 1960 (FAS, JVL) vs probable reactor identified before end 1958 (Nuclear Weapon Archive) vs unclear; late-1960 photos from attachés (Burr & Cohen). — cw4_dimona_discovery
+- "Textile plant" helicopter ride: September 1960 vs February 1960 (both in the same EBB 510 collection). — cw4_dimona_discovery
+- Dimona reactor size: 60 MW (Anderson's source) vs ~250 MWt (Gomberg) vs 24 MW (1957 agreement; Harman). — cw4_dimona_discovery, cw4_dimona_december
+- Dimona cost: $40–80 million (Herter) vs $100–200 million (Eisenhower) vs $17.8 million + IL 29.2 million (embassy) vs ~$15 million + $20 million (Staebler and Croach). — cw4_dimona_december, cw4_kennedy_dimona
+- Date of Ben-Gurion's Knesset statement on Dimona: 21 Dec 1960 (Nuclear Weapon Archive; one EBB 510 passage) vs 22 Dec (Cohen & Burr 2025; another EBB 510 passage); quoted wording also differs between the two works. — cw4_dimona_december
+- NUMEC: arsenal built partly with stolen US uranium (cia_s16) vs contested and officially unresolved (NSA; NRC 2009). — cw4_dimona_december (cia_s16; fis_s07a)
+- Date of the first US visit to Dimona: moved to 18 May 1961 (FRUS editors) vs visited 20 May (NSA) vs tour 17–22 May (Wilson Center). — cw4_kennedy_dimona
+- What the 1961 visitors saw: "nothing was concealed," "no present evidence" (Staebler and Croach) vs staged visits, separation plant concealed (Cohen & Burr, citing a 1967 INR memo). — cw4_kennedy_dimona
+- Ben-Gurion on Dimona at the Waldorf, 30 May 1961: official memcon ("for the time being, only" peaceful) vs unedited draft (tacit weapons potential; reprocessing freedom) vs Israeli minutes ("we will see what happens in the Middle East"). — cw4_waldorf_1961
+- What Arab states were told: "for peaceful purposes only" (Talbot's briefing) vs "for the time being" (memcon). — cw4_waldorf_1961
+- Number of US visits to Dimona in the 1960s: eight 1961–69 (Cohen & Burr) vs seven (FAS). — cw4_waldorf_1961
+- Cohn committee, 1960: recommended further investigation (JTA) vs found evidence of perjury (Oren). — cw4_lavon (lv_s01)
+- Date of Lavon's second-round accusation: October 1960 (JTA; CIE) vs September 1961 (Britannica). — cw4_lavon
+- Ben-Gurion's Lavon resignation: "contributed to Ben-Gurion's resignation in 1963" (lv_s01) vs resignation of 31 Jan 1961 over the exoneration (CIE; Oren; Britannica). — cw4_lavon (lv_s01)
+- Section 620I's date: "of the Foreign Assistance Act of 1961" (law_s01) vs enacted 30 Sep 1996 by Public Law 104–208 (22 U.S.C. 2378-1 source credit; Finucane). — cw4_aid_law_1961 (law_s01)
+- Hawk's character: "first US sale of offensive weaponry" (s11d / Wikipedia) vs "a defensive weapon" (Kennedy, May 1961); "purely defensive" (State circular, 7 Sep 1962). — cw4_hawk (s11d)
+- When US military aid to Israel began: 1959, $0.4 million loan (CRS series) vs 1962, the Hawk (Komer; Kramer); dashboard row "1948–1961: economic aid and loans only." — cw4_hawk, cw4_aid_law_1961 (aid_arms:Overview:2)
+- Was Nasser told of the Hawk: "Nasser was not told" (Feldman, 1967 oral history) vs Rusk's review and 21 Aug 1962 telegram to Cairo. — cw4_hawk
+- Why Kennedy sold the Hawk: military balance and the Johnson refugee plan (Rusk, Feldman) vs domestic politics (Buchman, 2013). — cw4_hawk
+- Morocco's emigration ban: from 1956 (Aish; Point of No Return) vs formal from 1959 (Wikipedia, citing Laskier et al.). — cw4_morocco (oa_s03)
+- Egoz dead, 10 Jan 1961: 44 (Aish; Point of No Return) vs 46 (Wikipedia). — cw4_morocco
+- Clandestine departures from Morocco 1956–61: about 30,000 vs 29,400. — cw4_morocco
+- Operation Yachin total 1961–64: 90,000–97,000 (range) vs 97,005 (Abecassis) vs about 97,000 (w_yachin). — cw4_morocco (oa_s03)

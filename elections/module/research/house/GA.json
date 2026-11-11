@@ -1,0 +1,503 @@
+{
+ "state": "GA",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ga": {
+   "t": "2026 United States House of Representatives elections in Georgia — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Georgia"
+  },
+  "gp_ga": {
+   "t": "The Green Papers: Georgia 2026 General Election (partly out of date)",
+   "u": "https://m.thegreenpapers.com/G26/GA"
+  },
+  "ajc_ga2": {
+   "t": "AJC: U.S. House District 2 — Bishop avoids primary challenge in SW Georgia (Apr 2026)",
+   "u": "https://ajc.com/politics/2026/04/us-house-district-2-bishop-avoids-primary-challenge-in-sw-georgia/"
+  },
+  "rd_ga": {
+   "t": "Rough Draft Atlanta: Election guide, U.S. House (candidate list as of Mar 6, 2026)",
+   "u": "https://roughdraftatlanta.com/election-guide-u-s-house/"
+  },
+  "ajc_ga13": {
+   "t": "AJC: Everton Blair wins runoff to finish Rep. David Scott's term (Aug 2026)",
+   "u": "https://www.ajc.com/politics/2026/08/everton-blair-wins-runoff-to-finish-rep-david-scotts-term/"
+  },
+  "wabe_lp": {
+   "t": "WABE: Georgia Libertarians end efforts to get on 2026 general election ballot (Jul 10, 2026)",
+   "u": "https://www.wabe.org/georgia-libertarians-end-efforts-to-get-on-2026-general-election-ballot/"
+  }
+ },
+ "races": [
+  {
+   "race": "GA-01",
+   "incumbent": {
+    "name": "Buddy Carter",
+    "party": "R",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Jim Kingston",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-01-james-kingston",
+     "fec": [
+      "H6GA01109"
+     ]
+    },
+    {
+     "name": "Amanda Hollowell",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-01-amanda-hollowell",
+     "fec": [
+      "H6GA01158"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Kingston won May 19 GOP primary outright 52.4%; Hollowell won Jun 16 D runoff 53.0%-47.0% over Joyce Griggs.",
+   "c": [
+    "wiki_ga",
+    "gp_ga"
+   ]
+  },
+  {
+   "race": "GA-02",
+   "incumbent": {
+    "name": "Sanford Bishop",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sanford Bishop",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ga-02-sanford-bishop",
+     "fec": [
+      "H2GA02031"
+     ]
+    },
+    {
+     "name": "Matt Day",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-02-matt-day",
+     "fec": [
+      "H6GA01182",
+      "S6GA00135"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primaries. A March 2026 guide and Green Papers list Chuck Hand as the Republican; Wikipedia and AJC name Matt Day as nominee.",
+   "c": [
+    "wiki_ga",
+    "ajc_ga2",
+    "rd_ga"
+   ]
+  },
+  {
+   "race": "GA-03",
+   "incumbent": {
+    "name": "Brian Jack",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brian Jack",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-03-brian-jack",
+     "fec": [
+      "H4GA03126"
+     ]
+    },
+    {
+     "name": "Maura Keller",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-03-maura-keller",
+     "fec": [
+      "H4GA03100"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Keller won D primary 60.8%.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-04",
+   "incumbent": {
+    "name": "Hank Johnson",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Hank Johnson",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ga-04-henry-johnson",
+     "fec": [
+      "H6GA04129"
+     ]
+    },
+    {
+     "name": "James Duffie",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-04-jim-duffie",
+     "fec": [
+      "H6GA04194"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Johnson renominated 79.3%.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-05",
+   "incumbent": {
+    "name": "Nikema Williams",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nikema Williams",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ga-05-nikema-williams",
+     "fec": [
+      "H0GA05301"
+     ]
+    },
+    {
+     "name": "John Salvesen",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-05-john-o-salvesen",
+     "fec": [
+      "H4GA05063"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-06",
+   "incumbent": {
+    "name": "Lucy McBath",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Lucy McBath",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ga-06-lucia-mcbath",
+     "fec": [
+      "H8GA06393"
+     ]
+    },
+    {
+     "name": "Kevin Martin",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-06-kevin-martin",
+     "fec": [
+      "H6GA06181"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Martin won GOP primary 70.1%.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-07",
+   "incumbent": {
+    "name": "Rich McCormick",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rich McCormick",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-07-richard-mccormick",
+     "fec": [
+      "H0GA07273"
+     ]
+    },
+    {
+     "name": "Anthony Kozycki",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-07-anthony-kozycki",
+     "fec": [
+      "H6GA07221"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kozycki won Jun 16 D runoff 67.7% over Casey Norton.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-08",
+   "incumbent": {
+    "name": "Austin Scott",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Austin Scott",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-08-james-scott",
+     "fec": [
+      "H0GA08099"
+     ]
+    },
+    {
+     "name": "Kelly Esti",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-08-kelly-esti",
+     "fec": [
+      "H6GA08138"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Esti won D primary 53.5%.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-09",
+   "incumbent": {
+    "name": "Andrew Clyde",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Andrew Clyde",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-09-andrew-clyde",
+     "fec": [
+      "H0GA09246"
+     ]
+    },
+    {
+     "name": "Caitlyn Gegen",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-09-caitlyn-gegen",
+     "fec": [
+      "H6GA09284"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-10",
+   "incumbent": {
+    "name": "Mike Collins",
+    "party": "R",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Houston Gaines",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-10-houston-gaines",
+     "fec": [
+      "H6GA10175"
+     ]
+    },
+    {
+     "name": "Pamela DeLancy",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-10-pamela-delancy",
+     "fec": [
+      "H6GA10183"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Gaines won GOP primary 66.9%; DeLancy 54.4%.",
+   "c": [
+    "wiki_ga",
+    "gp_ga"
+   ]
+  },
+  {
+   "race": "GA-11",
+   "incumbent": {
+    "name": "Barry Loudermilk",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "John Cowan",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-11-john-cowan",
+     "fec": [
+      "H0GA14048"
+     ]
+    },
+    {
+     "name": "Chris Harden",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-11-christopher-harden",
+     "fec": [
+      "H6GA11116"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat (Loudermilk announced Feb 4, 2026 he would not run). Cowan won Jun 16 GOP runoff 65.0% over Rob Adkerson; Harden won D primary 74.8%.",
+   "c": [
+    "wiki_ga",
+    "gp_ga"
+   ]
+  },
+  {
+   "race": "GA-12",
+   "incumbent": {
+    "name": "Rick Allen",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rick Allen",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-12-richard-allen",
+     "fec": [
+      "H0GA02241",
+      "H2GA12121"
+     ]
+    },
+    {
+     "name": "Ceretta Smith",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-12-ceretta-smith",
+     "fec": [
+      "H6GA12080"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Smith won Jun 16 D runoff 55.8% over Traci George.",
+   "c": [
+    "wiki_ga"
+   ]
+  },
+  {
+   "race": "GA-13",
+   "incumbent": {
+    "name": "Everton Blair",
+    "party": "D",
+    "status": "Not on November ballot"
+   },
+   "nominees": [
+    {
+     "name": "Jasmine Clark",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-13-jasmine-clark",
+     "fec": [
+      "H6GA13070"
+     ]
+    },
+    {
+     "name": "Jonathan Chavez",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ga-13-jonathan-chavez",
+     "fec": [
+      "H2GA04201"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "David Scott (D) died Apr 22, 2026. Blair won the Aug 25 special runoff 54%-46% over Marcye Scott to finish the term; Clark won the regular D primary outright (56.1%) for the full term.",
+   "c": [
+    "wiki_ga",
+    "ajc_ga13"
+   ]
+  },
+  {
+   "race": "GA-14",
+   "incumbent": {
+    "name": "Clay Fuller",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Clay Fuller",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ga-14-clay-fuller",
+     "fec": [
+      "H0GA14030"
+     ]
+    },
+    {
+     "name": "Shawn Harris",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ga-14-shawn-harris",
+     "fec": [
+      "H4GA14057"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Fuller won the 2026 special after Marjorie Taylor Greene resigned Jan 5, 2026, and the GOP primary 81.3%. Conflict: Wikipedia lists Andrew Underwood (L), but WABE reports the Libertarian Party failed to qualify for the Nov ballot; Underwood not listed here.",
+   "c": [
+    "wiki_ga",
+    "wabe_lp"
+   ]
+  }
+ ]
+}

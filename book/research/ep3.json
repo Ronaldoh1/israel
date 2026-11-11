@@ -1,0 +1,267 @@
+{
+ "volume": "The Epstein Architecture",
+ "verified": "2026-10-31",
+ "entries": [
+  {
+   "id": "ep3_usvi",
+   "stage": "ep3",
+   "topic": "The Virgin Islands' cases",
+   "claims": [
+    {
+     "text": "JPMorgan paid USVI $75m (Sept 2023): $30m charities, $25m anti-trafficking law enforcement, $20m legal fees; no admission; USVI had sought at least $190m incl. a $150m civil penalty; alleged JPM kept him as a 'valued client' after 2006 arrest and 2008 plea; JPM 'deeply regrets any association'; Staley settled with JPM confidentially.",
+     "strength": "reported",
+     "sources": [
+      "ep3_aj_usvi_jpm2023"
+     ]
+    },
+    {
+     "text": "Estate paid USVI more than $105m (Dec 2022) plus half the proceeds of selling both islands; executors deny wrongdoing.",
+     "strength": "reported",
+     "sources": [
+      "ep3_fox_usvi_estate2022"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_aj_usvi_jpm2023",
+     "label": "Al Jazeera, 'JPMorgan to pay US Virgin Islands $75m to settle Epstein lawsuit', 26 Sept 2023",
+     "url": "https://www.aljazeera.com/economy/2023/9/26/jpmorgan-to-pay-us-virgin-islands-75m-to-settle-epstein-lawsuit"
+    },
+    {
+     "key": "ep3_fox_usvi_estate2022",
+     "label": "Fox Business / AP, 'Epstein estate reaches $105M settlement with US Virgin Islands', 1 Dec 2022",
+     "url": "https://foxbusiness.com/politics/epstein-estate-reaches-105m-settlement-us-virgin-islands-denies-liability-fault"
+    }
+   ]
+  },
+  {
+   "id": "ep3_banks",
+   "stage": "ep3",
+   "topic": "Bank findings",
+   "claims": [
+    {
+     "text": "NYDFS consent order, $150m (July 2020): Deutsche Bank onboarded Epstein 2013; failed to monitor despite public criminal record; hundreds of transactions totalling millions; payments to Russian models, women's tuition, hotel and rent, women with Eastern European surnames, alleged co-conspirators; over $7m settlements and over $6m to law firms; more than $800,000 suspicious cash withdrawals over about four years; Sewing: onboarding 'a critical mistake'.",
+     "strength": "primary (regulatory order, as reported)",
+     "sources": [
+      "ep3_cnbc_dfs_db2020"
+     ]
+    },
+    {
+     "text": "JPMorgan filed suspicious activity reports on over $1bn of Epstein-linked transactions weeks after his death in 2019 (NYT).",
+     "strength": "reported",
+     "sources": [
+      "ep3_sa_jpm_sars"
+     ]
+    },
+    {
+     "text": "UK tribunal (26 June 2025) upheld the FCA's 2023 ban on Jes Staley; fine cut from £1.8m to about £1.1m; FCA found Barclays' 2019 letter misleading and Staley reckless; contact via his daughter until at least Feb 2017; Barclays withheld £17.8m in awards.",
+     "strength": "reported",
+     "sources": [
+      "ep3_staley_tribunal2025"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_cnbc_dfs_db2020",
+     "label": "CNBC, 'Deutsche Bank fined $150 million penalty for relationship with Jeffrey Epstein', 7 July 2020",
+     "url": "https://www.cnbc.com/2020/07/07/jeffrey-epstein-case-deutsche-bank-fined-150-million-penalty-for-relationship.html"
+    },
+    {
+     "key": "ep3_sa_jpm_sars",
+     "label": "Seeking Alpha, citing the New York Times: JPMorgan reported over $1 billion in suspicious Epstein transactions weeks after his death",
+     "url": "https://seekingalpha.com/news/4512102-jpmorgan-filed-suspicious-activity-reports-related-to-epstein"
+    },
+    {
+     "key": "ep3_staley_tribunal2025",
+     "label": "AP/PTI, 'Ex-Barclays boss Staley loses bid to overturn UK ban over Epstein ties', 26 June 2025",
+     "url": "https://www.theweek.in/wire-updates/business/2025/06/26/fes25-uk-barclays-staley-epstein.html"
+    }
+   ]
+  },
+  {
+   "id": "ep3_currency",
+   "stage": "ep3",
+   "topic": "The currency-trading claim",
+   "claims": [
+    {
+     "text": "Epstein said he invested clients' fortunes in currency markets (Vanity Fair, per BI).",
+     "strength": "reported",
+     "sources": [
+      "ep3_bi_fortune2019"
+     ]
+    },
+    {
+     "text": "Claimed solo investing with ~150 back-office staff (New York mag figure) vs ~20 in a 2002 court filing; claimed to work only with billionaires; hedge-fund managers sceptical: 'It's hard to make a billion dollars quietly'; one guessed index fund or Treasuries.",
+     "strength": "reported",
+     "sources": [
+      "ep3_nymag_hedgefund2019"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_bi_fortune2019",
+     "label": "Business Insider, 'How financier Jeffrey Epstein made his fortune', July 2019 (citing Vanity Fair)",
+     "url": "https://businessinsider.nl/how-financier-jeffrey-epstein-made-his-fortune-2019-7/"
+    },
+    {
+     "key": "ep3_nymag_hedgefund2019",
+     "label": "Michelle Celarier, 'Real Hedge-Fund Managers Have Some Thoughts on What Epstein Was Actually Doing', New York magazine, 10 July 2019 (via Portside)",
+     "url": "https://portside.org/node/20483/printable/print"
+    }
+   ]
+  },
+  {
+   "id": "ep3_inside",
+   "stage": "ep3",
+   "topic": "Inside the banks: who decided",
+   "claims": [
+    {
+     "text": "Dimon deposition (26 May 2023): Mary Erdoes (private banking) and Jes Staley could have decided to retain Epstein; general counsel Stephen Cutler was the 'ultimate decider'; Cutler's July 2011 emails said Epstein 'should not be a client'; Dimon said he had no involvement and first learned of Epstein in 2019; Erdoes went to the townhouse to end the relationship in 2013.",
+     "strength": "documented",
+     "sources": [
+      "ep3_ab_dimon2023"
+     ]
+    },
+    {
+     "text": "Pension-fund derivative suit against JPMorgan's directors dismissed by Judge Rakoff, Aug 2023, for failure to make pre-suit demand on the board.",
+     "strength": "documented",
+     "sources": [
+      "ep3_pw_derivative2023"
+     ]
+    },
+    {
+     "text": "NYDFS consent order (2020): a relationship manager who had worked with Epstein proposed him in 2013; head of wealth management said the Americas AML head and Americas general counsel agreed he could skip the Reputational Risk Committee; that email was relied on to open other accounts; Feb 2015 committee decided 'business as usual' with conditions; 120 wires totalling $2.65M to Butterfly Trust beneficiaries or suspected prostitutes.",
+     "strength": "documented",
+     "sources": [
+      "ep3_rc_dbfailures2020"
+     ]
+    },
+    {
+     "text": "NYT via Fox Business (Jul 2020): relationship manager was Paul Morris, formerly on Epstein's JPMorgan account; approval by Charles Packard, head of US wealth management; both visited Epstein in Jan 2015.",
+     "strength": "reported",
+     "sources": [
+      "ep3_fox_dbexecs2020"
+     ]
+    },
+    {
+     "text": "ThinkAdvisor (28 May 2026): Morris worked on Epstein's JPMorgan account from about 2009, joined Deutsche late 2012 and moved the account in Sept 2013, joined Bank of America's Merrill in 2016; kept contacting Epstein until July 2019; gifts to Epstein and Lesley Groff; not accused of a crime, not a defendant; deposed 2023.",
+     "strength": "reported",
+     "sources": [
+      "ep3_ta_morris2026"
+     ]
+    },
+    {
+     "text": "Doe v. Bank of America (S.D.N.Y. 25-cv-08520) alleged Leon Black used BofA accounts to send $170M to Epstein, and that Maxwell used BofA accounts; Black not a defendant, denies wrongdoing; settlement let Black avoid a deposition set for 26 Mar 2026.",
+     "strength": "reported",
+     "sources": [
+      "ep3_cj_boa2026"
+     ]
+    },
+    {
+     "text": "PBS (Jul 2026): Staley led JPMorgan asset management and investment banking; Barclays CEO 2015-21; FCA lifetime ban upheld; House Oversight interview 23 Jul 2026.",
+     "strength": "reported",
+     "sources": [
+      "ep3_pbs_staley2026"
+     ]
+    },
+    {
+     "text": "finews.asia: Edmond de Rothschild bank owned by Benjamin de Rothschild until his death in Jan 2021; delisted 2019; Ariane chair, CEO from 2015; family company stakes held by his mother and half-sister.",
+     "strength": "reported",
+     "sources": [
+      "ep3_finews_edr2021"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_ab_dimon2023",
+     "label": "American Banker, Dimon testified JPMorgan Epstein ties decided by Erdoes, Cutler, 2023",
+     "url": "https://www.americanbanker.com/articles/dimon-testified-jpmorgan-epstein-ties-decided-by-erdoes-cutler"
+    },
+    {
+     "key": "ep3_pw_derivative2023",
+     "label": "Paul, Weiss, JPMorgan and its directors win dismissal of derivative suit over alleged Epstein connection, 9 Aug 2023",
+     "url": "https://www.paulweiss.com/insights/client-news/jpmorgan-and-its-directors-win-dismissal-of-derivative-suit-over-alleged-epstein-connection"
+    },
+    {
+     "key": "ep3_rc_dbfailures2020",
+     "label": "Radical Compliance, Deutsche Bank's many Epstein failures (NYDFS consent order), 9 Jul 2020",
+     "url": "https://www.radicalcompliance.com/2020/07/09/deutsche-bank-many-epstein-failures/"
+    },
+    {
+     "key": "ep3_fox_dbexecs2020",
+     "label": "Fox Business, Deutsche Bank execs responsible for Epstein relationship named by New York Times, Jul 2020",
+     "url": "https://www.foxbusiness.com/money/deutsche-bank-execs-responsible-for-epstein-relationship-named-by-the-new-york-times"
+    },
+    {
+     "key": "ep3_ta_morris2026",
+     "label": "ThinkAdvisor, Epstein files reveal long-running ties with one wealth manager, 28 May 2026",
+     "url": "https://www.thinkadvisor.com/amp/2026/05/28/epstein-files-reveal-long-running-ties-with-one-wealth-manager/"
+    },
+    {
+     "key": "ep3_cj_boa2026",
+     "label": "Claims Journal, BofA to pay $72.5 million to settle Epstein victim lawsuit, 30 Mar 2026",
+     "url": "https://amp.claimsjournal.com/news/national/2026/03/30/336586.htm"
+    },
+    {
+     "key": "ep3_pbs_staley2026",
+     "label": "PBS NewsHour, Who is Jes Staley, Jul 2026",
+     "url": "https://www.pbs.org/newshour/amp/politics/who-is-jes-staley-former-jpmorgan-executive-interviewed-about-epstein-ties"
+    },
+    {
+     "key": "ep3_finews_edr2021",
+     "label": "finews.asia, Edmond de Rothschild: all eyes on Ariane, 2021",
+     "url": "https://www.finews.asia/finance/33710-ariane-de-rothschild-edmond-de-rothschild-edmond-de-rothschild-wealth-management-asia-apac-hong-kong"
+    }
+   ]
+  },
+  {
+   "id": "ep3_wider",
+   "stage": "ep3",
+   "topic": "The wider banking web and Black's other payments",
+   "claims": [
+    {
+     "text": "Reuters (via TribLive): a JPMorgan SAR filed with FinCEN soon after Epstein's death, unsealed in USVI v. JPMorgan after NYT/WSJ requests, listed one Goldman Sachs account and three accounts at HSBC's Swiss private bank; flagged transfers, no amounts; Goldman: relationship ended, assets transferred out in 2010; HSBC declined comment.",
+     "strength": "reported",
+     "sources": [
+      "ep3_reuters_goldman2025"
+     ]
+    },
+    {
+     "text": "WSJ (via iTiger): Wells Fargo held Epstein or Epstein-related accounts in his later years; TD Bank closed accounts of his lawyer and accountant in 2019; FirstBank Puerto Rico called him a legacy relationship inherited when it bought Chase's USVI operations in 2002; Honeycomb Partners received at least $60M 2016-19 incl. $20M March 2019 (says no relationship); Boothbay ~$38M 2014-17, forced redemption after arrest; an Epstein entity invested in Tudor Futures Fund 2001-14, $13.5M received (Tudor: Jones did not know him); Valar >$20M; Blockchain Capital bought $15M of shares.",
+     "strength": "reported",
+     "sources": [
+      "ep3_wsj_firms"
+     ]
+    },
+    {
+     "text": "NYT via Boston Globe (25 Mar 2026): Black paid ~$20M to a dozen women; Oct 2015 agreement: $10M to Southern Trust plus $10M donation to Gratitude America, reportedly funded through BV70 LLC (Black's yacht company); Epstein appears to have helped set up payments to Guzel Ganieva ($18M over 15 years, NDA, Oct 2015) through a generically named trust; Black says payments to Epstein were for tax and estate work.",
+     "strength": "reported",
+     "sources": [
+      "ep3_globe_black2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ep3_reuters_goldman2025",
+     "label": "Reuters via TribLive, Jeffrey Epstein had accounts with Goldman Sachs and HSBC, documents show (Nov 2025)",
+     "url": "https://triblive.com/news/world/jeffrey-epstein-had-accounts-with-goldman-sachs-and-hsbc-documents-show"
+    },
+    {
+     "key": "ep3_wsj_firms",
+     "label": "Wall Street Journal (via iTiger), The Wall Street firms that kept ties with Jeffrey Epstein until the end",
+     "url": "https://www.itiger.com/news/2572537634"
+    },
+    {
+     "key": "ep3_globe_black2026",
+     "label": "New York Times via Boston Globe, Leon Black, Epstein and the money to women (25 Mar 2026)",
+     "url": "https://www.bostonglobe.com/2026/03/25/metro/epstein-leon-black-money-women/"
+    }
+   ]
+  }
+ ]
+}

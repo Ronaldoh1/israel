@@ -1,0 +1,191 @@
+{
+ "state": "IA",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ia": {
+   "t": "2026 United States House of Representatives elections in Iowa — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Iowa"
+  },
+  "gp_ia": {
+   "t": "The Green Papers: Iowa 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/IA"
+  },
+  "dm_ia": {
+   "t": "Des Moines County Elections — 2026 General Election",
+   "u": "https://dmcountyelections.iowa.gov/elections/info/2026_general_election_2026_11_03/"
+  }
+ },
+ "races": [
+  {
+   "race": "IA-01",
+   "incumbent": {
+    "name": "Mariannette Miller-Meeks",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mariannette Miller-Meeks",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ia-01-mariannette-miller-meeks",
+     "fec": [
+      "H8IA02043"
+     ]
+    },
+    {
+     "name": "Christina Bohannan",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ia-01-christina-bohannan",
+     "fec": [
+      "H2IA02111"
+     ]
+    },
+    {
+     "name": "Michael Bridgford",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ia-01-michael-bridgford",
+     "fec": [
+      "H6IA01213"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "June 2, 2026 primary: Miller-Meeks won 71.5% over David Pautsch. Third Miller-Meeks/Bohannan matchup. Des Moines County sample ballot confirms all three names.",
+   "c": [
+    "wiki_ia",
+    "gp_ia",
+    "dm_ia"
+   ]
+  },
+  {
+   "race": "IA-02",
+   "incumbent": {
+    "name": "Ashley Hinson",
+    "party": "R",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Joe Mitchell",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ia-02-joe-mitchell",
+     "fec": [
+      "H6IA02237"
+     ]
+    },
+    {
+     "name": "Lindsay James",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ia-02-lindsay-james",
+     "fec": [
+      "H6IA02211"
+     ]
+    },
+    {
+     "name": "Rick Stewart",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Dave Bushaw",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ia-02-dave-bushaw",
+     "fec": [
+      "H6IA02260"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Mitchell won GOP primary 61.5%; James won Democratic primary 57.8%. Stewart is Libertarian per Green Papers (survived State Objections Panel challenge); Wikipedia lists him without party. No FEC filing found for Stewart.",
+   "c": [
+    "wiki_ia",
+    "gp_ia"
+   ]
+  },
+  {
+   "race": "IA-03",
+   "incumbent": {
+    "name": "Zach Nunn",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Zach Nunn",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ia-03-zach-nunn",
+     "fec": [
+      "H2IA03119"
+     ]
+    },
+    {
+     "name": "Sarah Trone Garriott",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ia-03-sarah-trone-garriott",
+     "fec": [
+      "H6IA03268"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both unopposed in primary; Jennifer Konfrst withdrew.",
+   "c": [
+    "wiki_ia",
+    "gp_ia"
+   ]
+  },
+  {
+   "race": "IA-04",
+   "incumbent": {
+    "name": "Randy Feenstra",
+    "party": "R",
+    "status": "Running for governor"
+   },
+   "nominees": [
+    {
+     "name": "Chris McGowan",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ia-04-chris-mcgowan",
+     "fec": [
+      "H6IA04167"
+     ]
+    },
+    {
+     "name": "David Dawson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ia-04-dave-dawson",
+     "fec": [
+      "H6IA04217"
+     ]
+    },
+    {
+     "name": "Jermaine Decker",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ia-04-jermaine-decker",
+     "fec": [
+      "H6IA04233"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. McGowan unopposed in GOP primary; Dawson won Democratic primary 39.1%. Sources disagree on Jermaine Decker: Wikipedia lists him (no party; FEC lists him unaffiliated), Green Papers does not; ballot status unconfirmed.",
+   "c": [
+    "wiki_ia",
+    "gp_ia"
+   ]
+  }
+ ]
+}

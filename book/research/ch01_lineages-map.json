@@ -1,0 +1,420 @@
+{
+ "points": [
+  {
+   "id": "ashkenazi",
+   "name": "Ashkenazi Jews",
+   "family": "ashkenazi",
+   "place": "Rhineland (Mainz, Worms), later Poland–Lithuania",
+   "lat": 50.0,
+   "lon": 8.3,
+   "lang": "Yiddish",
+   "since": "from c. 10th century",
+   "today": "United States, Israel",
+   "key": "jl_jvl_ashkenazim"
+  },
+  {
+   "id": "poland_lithuania",
+   "name": "Poland–Lithuania (Ashkenazi centre)",
+   "family": "ashkenazi",
+   "place": "Polish–Lithuanian Commonwealth",
+   "lat": 52.4,
+   "lon": 22.5,
+   "lang": "Yiddish",
+   "since": "13th–14th c. settlement",
+   "today": "United States, Israel",
+   "key": "jl_ego_ashkenazi"
+  },
+  {
+   "id": "sephardi",
+   "name": "Sephardi Jews",
+   "family": "sephardi",
+   "place": "Iberian Peninsula, later Ottoman Empire",
+   "lat": 39.9,
+   "lon": -4.0,
+   "lang": "Judeo-Spanish (Judezmo/Ladino)",
+   "since": "Sepharad = Iberia by 9th c.; expelled 1492",
+   "today": "Israel; also France, US, Latin America",
+   "key": "jl_jvl_sephardim"
+  },
+  {
+   "id": "ottoman",
+   "name": "Ottoman Sephardim (Salonica)",
+   "family": "sephardi",
+   "place": "Salonica/Thessaloniki; also Istanbul, Izmir",
+   "lat": 40.6,
+   "lon": 22.9,
+   "lang": "Judeo-Spanish (Judezmo/Ladino)",
+   "since": "from 1492",
+   "today": "Israel, Turkey; Salonica community destroyed 1943",
+   "key": "jl_ushmm_salonika"
+  },
+  {
+   "id": "western_sephardi",
+   "name": "Western Sephardim (Spanish & Portuguese Jews)",
+   "family": "sephardi",
+   "place": "Amsterdam; later London, Atlantic world",
+   "lat": 52.4,
+   "lon": 4.9,
+   "lang": "Portuguese, Spanish",
+   "since": "Amsterdam from late 16th c.",
+   "today": "Small historic congregations (e.g. London, Amsterdam)",
+   "key": "jl_posen_western"
+  },
+  {
+   "id": "london",
+   "name": "Spanish & Portuguese Jews of London",
+   "family": "sephardi",
+   "place": "City of London (Bevis Marks)",
+   "lat": 51.5,
+   "lon": -0.1,
+   "lang": "Portuguese, Spanish, later English",
+   "since": "from 1656",
+   "today": "London",
+   "key": "jl_jcruk_bevis"
+  },
+  {
+   "id": "maghrebi",
+   "name": "Maghrebi Jews",
+   "family": "mizrahi",
+   "place": "Morocco (Fez), Algeria, Tunisia, Libya",
+   "lat": 34.0,
+   "lon": -5.0,
+   "lang": "Judeo-Arabic, Judeo-Berber; Haketia (northern Morocco)",
+   "since": "Morocco: epigraphy from 2nd c. CE",
+   "today": "Israel, France, Canada",
+   "key": "jl_jvl_morocco"
+  },
+  {
+   "id": "babylonian",
+   "name": "Iraqi (Babylonian) Jews",
+   "family": "mizrahi",
+   "place": "Baghdad and Mesopotamia",
+   "lat": 33.3,
+   "lon": 44.4,
+   "lang": "Judeo-Arabic (Baghdadi)",
+   "since": "from 6th c. BCE (exile)",
+   "today": "Israel",
+   "key": "jl_wiki_iraq"
+  },
+  {
+   "id": "persian",
+   "name": "Iranian (Persian) Jews",
+   "family": "mizrahi",
+   "place": "Iran",
+   "lat": 32.7,
+   "lon": 51.7,
+   "lang": "Judeo-Persian varieties",
+   "since": "roots to 6th c. BCE (per JVL)",
+   "today": "Israel, US (Los Angeles); c. 9,000 in Iran",
+   "key": "jl_jvl_iran"
+  },
+  {
+   "id": "yemenite",
+   "name": "Yemenite Jews (Teimanim)",
+   "family": "mizrahi",
+   "place": "Yemen (Sana'a)",
+   "lat": 15.4,
+   "lon": 44.2,
+   "lang": "Judeo-Yemeni Arabic",
+   "since": "evidence from 3rd c. CE",
+   "today": "Israel",
+   "key": "jl_jvl_yemen"
+  },
+  {
+   "id": "syrian",
+   "name": "Syrian Jews",
+   "family": "mizrahi",
+   "place": "Aleppo and Damascus",
+   "lat": 36.2,
+   "lon": 37.2,
+   "lang": "Judeo-Syrian Arabic",
+   "since": "from Seleucid period (per JVL)",
+   "today": "Israel; Brooklyn/New Jersey; Mexico",
+   "key": "jl_jvl_syria"
+  },
+  {
+   "id": "egyptian",
+   "name": "Egyptian Jews",
+   "family": "mizrahi",
+   "place": "Cairo (Fustat) and Alexandria",
+   "lat": 30.0,
+   "lon": 31.2,
+   "lang": "not verified (see notes)",
+   "since": "Fustat from 7th c.",
+   "today": "Dispersed (France, Italy, Israel, Americas)",
+   "key": "jl_jvl_cairo"
+  },
+  {
+   "id": "kurdish",
+   "name": "Kurdish Jews",
+   "family": "mizrahi",
+   "place": "Kurdistan (northern Iraq, NW Iran, SE Turkey)",
+   "lat": 37.0,
+   "lon": 44.0,
+   "lang": "Jewish Neo-Aramaic",
+   "since": "tradition: Assyrian exile",
+   "today": "Israel (many around Jerusalem)",
+   "key": "jl_ej_kurdistan"
+  },
+  {
+   "id": "bukharan",
+   "name": "Bukharan Jews",
+   "family": "mizrahi",
+   "place": "Bukhara, Samarkand, Tashkent",
+   "lat": 39.8,
+   "lon": 64.4,
+   "lang": "Bukhori (Judeo-Tajik)",
+   "since": "Merv inscriptions 5th–6th c.",
+   "today": "Israel; Queens, New York",
+   "key": "jl_ela_bukhori"
+  },
+  {
+   "id": "mountain",
+   "name": "Mountain Jews (Juhuro)",
+   "family": "mizrahi",
+   "place": "Eastern Caucasus: Quba (Azerbaijan), Derbent (Dagestan)",
+   "lat": 41.4,
+   "lon": 48.5,
+   "lang": "Juhuri (Judeo-Tat)",
+   "since": "before 5th c. (per JVL)",
+   "today": "Israel, US, Russia, Azerbaijan",
+   "key": "jl_ela_juhuri"
+  },
+  {
+   "id": "georgian",
+   "name": "Georgian Jews",
+   "family": "mizrahi",
+   "place": "Georgia (Mtskheta, later Tbilisi, Kutaisi)",
+   "lat": 41.8,
+   "lon": 44.7,
+   "lang": "Judeo-Georgian (Kivruli)",
+   "since": "tradition: after 586 BCE",
+   "today": "Israel",
+   "key": "jl_jlp_judeo_georgian"
+  },
+  {
+   "id": "romaniote",
+   "name": "Romaniote Jews",
+   "family": "other",
+   "place": "Greece (Ioannina, Arta, Chalkida)",
+   "lat": 39.7,
+   "lon": 20.9,
+   "lang": "Yevanic (Judaeo-Greek)",
+   "since": "Byzantine period or earlier",
+   "today": "Greece, Israel, United States",
+   "key": "jl_wiki_yevanic"
+  },
+  {
+   "id": "italian",
+   "name": "Italian Jews (Italkim)",
+   "family": "other",
+   "place": "Rome and the Italian peninsula",
+   "lat": 41.9,
+   "lon": 12.5,
+   "lang": "Judeo-Italian (Judeo-Roman)",
+   "since": "from 2nd c. BCE (161 BCE per JVL)",
+   "today": "Italy (Rome c. 15,000)",
+   "key": "jl_jvl_rome"
+  },
+  {
+   "id": "beta_israel",
+   "name": "Beta Israel",
+   "family": "other",
+   "place": "Northern Ethiopia (incl. Tigray; point approximate)",
+   "lat": 12.6,
+   "lon": 37.5,
+   "lang": "Amharic, Tigrinya; Ge'ez liturgy",
+   "since": "disputed: 1st–6th c. vs 14th–16th c.",
+   "today": "Israel (177,600 in 2024)",
+   "key": "jl_jvl_ethiopian"
+  },
+  {
+   "id": "bene_israel",
+   "name": "Bene Israel",
+   "family": "other",
+   "place": "Konkan coast, later Mumbai",
+   "lat": 18.6,
+   "lon": 72.9,
+   "lang": "Marathi",
+   "since": "tradition: over 2,100 years",
+   "today": "Israel (c. 80,000); c. 4,000 in India",
+   "key": "jl_ej_bene_israel"
+  },
+  {
+   "id": "cochin",
+   "name": "Cochin Jews",
+   "family": "other",
+   "place": "Kerala (Cranganore, Cochin)",
+   "lat": 10.0,
+   "lon": 76.3,
+   "lang": "Jewish Malayalam",
+   "since": "documented c. 1000 CE",
+   "today": "Israel",
+   "key": "jl_mjl_cochin"
+  },
+  {
+   "id": "baghdadi_india",
+   "name": "Baghdadi Jews of India",
+   "family": "mizrahi",
+   "place": "Kolkata and Mumbai (earlier Surat)",
+   "lat": 22.6,
+   "lon": 88.4,
+   "lang": "Arabic, later English",
+   "since": "late 18th c.",
+   "today": "UK, Canada, US, Australia, Israel",
+   "key": "jl_mjl_baghdadi"
+  },
+  {
+   "id": "kaifeng",
+   "name": "Kaifeng Jews",
+   "family": "other",
+   "place": "Kaifeng, Henan, China",
+   "lat": 34.8,
+   "lon": 114.3,
+   "lang": "Hebrew and Judeo-Persian in liturgical texts",
+   "since": "disputed; most scholars 12th c.",
+   "today": "c. 500–1,000 descendants in Kaifeng",
+   "key": "jl_iranica_kaifeng"
+  },
+  {
+   "id": "karaite",
+   "name": "Karaites",
+   "family": "other",
+   "place": "Iraq (origin); Cairo; Crimea; Trakai (Lithuania)",
+   "lat": 44.7,
+   "lon": 33.9,
+   "lang": "Karaim (Crimea/Lithuania); Arabic (Egypt)",
+   "since": "movement from 8th c.",
+   "today": "Israel (c. 12,000, near Ramla)",
+   "key": "jl_nwe_karaites"
+  },
+  {
+   "id": "abayudaya",
+   "name": "Abayudaya",
+   "family": "other",
+   "place": "Eastern Uganda (Nabagoye, near Mbale)",
+   "lat": 1.1,
+   "lon": 34.2,
+   "lang": "not verified (see notes)",
+   "since": "from 1919",
+   "today": "Uganda",
+   "key": "jl_ijn_abayudaya"
+  },
+  {
+   "id": "bnei_menashe",
+   "name": "Bnei Menashe (claimed descent)",
+   "family": "other",
+   "place": "Mizoram and Manipur, India",
+   "lat": 23.7,
+   "lon": 92.7,
+   "lang": "Chin-Kuki-Mizo languages",
+   "since": "modern movement; descent claim disputed",
+   "today": "India, Israel",
+   "key": "jl_eastmojo_bnei_menashe"
+  },
+  {
+   "id": "lemba",
+   "name": "Lemba (claimed descent)",
+   "family": "other",
+   "place": "NE South Africa and Zimbabwe",
+   "lat": -22.0,
+   "lon": 30.5,
+   "lang": "not verified (see notes)",
+   "since": "descent claim disputed",
+   "today": "South Africa, Zimbabwe",
+   "key": "jl_ency_lemba"
+  },
+  {
+   "id": "israel",
+   "name": "Israel",
+   "family": "other",
+   "place": "Jerusalem",
+   "lat": 31.8,
+   "lon": 35.2,
+   "lang": "Hebrew",
+   "since": "—",
+   "today": "—",
+   "key": "jl_jvl_ezra"
+  },
+  {
+   "id": "americas",
+   "name": "Americas (New York)",
+   "family": "other",
+   "place": "New York",
+   "lat": 40.7,
+   "lon": -74.0,
+   "lang": "English",
+   "since": "—",
+   "today": "—",
+   "key": "jl_jvl_us_immigration"
+  }
+ ],
+ "routes": [
+  {
+   "from": "ashkenazi",
+   "to": "poland_lithuania",
+   "label": "Eastward settlement, 13th–16th c.",
+   "key": "jl_ego_ashkenazi"
+  },
+  {
+   "from": "sephardi",
+   "to": "ottoman",
+   "label": "Expulsion from Spain, 1492",
+   "key": "jl_jvl_sephardim"
+  },
+  {
+   "from": "sephardi",
+   "to": "maghrebi",
+   "label": "Megorashim to North Africa after 1391 and 1492",
+   "key": "jl_wiki_toshavim"
+  },
+  {
+   "from": "sephardi",
+   "to": "western_sephardi",
+   "label": "Portuguese New Christians to Amsterdam, late 16th–17th c.",
+   "key": "jl_posen_western"
+  },
+  {
+   "from": "western_sephardi",
+   "to": "london",
+   "label": "Resettlement in England, 1656",
+   "key": "jl_jcruk_bevis"
+  },
+  {
+   "from": "poland_lithuania",
+   "to": "americas",
+   "label": "East European emigration, 1881–1924",
+   "key": "jl_jvl_us_immigration"
+  },
+  {
+   "from": "babylonian",
+   "to": "israel",
+   "label": "Operation Ezra and Nehemiah, 1950–52",
+   "key": "jl_jvl_ezra"
+  },
+  {
+   "from": "yemenite",
+   "to": "israel",
+   "label": "Operation Magic Carpet / On Wings of Eagles, 1949–50",
+   "key": "jl_cojs_magic_carpet"
+  },
+  {
+   "from": "beta_israel",
+   "to": "israel",
+   "label": "Operations Moses (1984–85) and Solomon (1991)",
+   "key": "jl_ency_ethiopian"
+  },
+  {
+   "from": "maghrebi",
+   "to": "israel",
+   "label": "Operation Yakhin from Morocco, 1961–64",
+   "key": "jl_jvl_morocco"
+  },
+  {
+   "from": "syrian",
+   "to": "americas",
+   "label": "Emigration after 1992, mainly Brooklyn",
+   "key": "jl_jvl_syria"
+  }
+ ]
+}

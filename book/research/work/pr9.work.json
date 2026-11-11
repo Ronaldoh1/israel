@@ -1,0 +1,42 @@
+{
+ "pr9_wb": {
+  "topic": "The West Bank press",
+  "claims": [
+   {
+    "text": "Shireen Abu Akleh, Palestinian American Al Jazeera journalist, killed in May 2022 near Jenin; IDF: 'high possibility' a soldier fired, believing he shot at a terrorist; no criminal investigation; US forensic test inconclusive but State Department said Israel likely responsible; family: Israel trying to 'avoid responsibility'.",
+    "strength": "reported",
+    "sources": [
+     "pr_npr_abuakleh"
+    ]
+   },
+   {
+    "text": "CPJ (9 Oct 2026): 118 arrests of journalists and a media worker since Oct 2023 (112 by Israel, 6 by PA); 39 still held; one journalist and one media worker died in Israeli custody; 31 Palestinian journalists held by Israel on 1 Dec 2025, most in administrative detention; 58 released journalists described torture or abuse; IDF: 'does not arrest journalists simply for being journalists'.",
+    "strength": "reported",
+    "sources": [
+     "pr_cpj_arrests"
+    ]
+   },
+   {
+    "text": "22 Sep 2024 masked Israeli soldiers raided Al Jazeera's Ramallah office live on air and ordered a 45-day closure; order accused it of 'incitement to and support of terrorism' (al-Omari); cameras confiscated.",
+    "strength": "reported",
+    "sources": [
+     "pr_newarab_ramallah"
+    ]
+   }
+  ],
+  "sources": {
+   "pr_npr_abuakleh": {
+    "url": "https://www.kunc.org/2022-09-05/israel-says-one-of-its-soldiers-likely-killed-a-palestinian-american-journalist",
+    "label": "NPR via KUNC, 'Israel says one of its soldiers likely killed a Palestinian American journalist', 5 Sep 2022"
+   },
+   "pr_cpj_arrests": {
+    "url": "https://cpj.org/2024/10/arrests-of-palestinian-journalists-since-start-of-israel-gaza-war",
+    "label": "CPJ, 'Arrests of Palestinian journalists since start of Israel-Gaza war' (updated 9 Oct 2026)"
+   },
+   "pr_newarab_ramallah": {
+    "url": "https://newarab.com/news/israel-forces-raid-al-jazeera-office-west-bank-order-45-day-closure",
+    "label": "The New Arab, 'Israel forces raid Al Jazeera office in West Bank, order 45-day closure', 22 Sep 2024"
+   }
+  }
+ }
+}

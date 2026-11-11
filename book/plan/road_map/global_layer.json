@@ -1,0 +1,604 @@
+{
+ "_note": "Global layer after 1948 (Nov 2026). Built by global_layer.py; do not edit by hand.",
+ "node_notes": {
+  "us_vetoes": "The US veto in the Security Council: 46 vetoes of Israel-related resolutions by 2023. Because expulsion or suspension needs a Council recommendation, the veto is what protects Israel's UN membership.",
+  "res3379": "Of the 33 states that voted for partition in 1947, 19 voted against this resolution in 1975 (sided with Israel), 7 abstained and 6 voted for it (the Soviet bloc and Brazil)."
+ },
+ "post": [
+  "africa_aid",
+  "africa_break73",
+  "elnet",
+  "iaf",
+  "concert",
+  "us_vetoes",
+  "syria82",
+  "res3379",
+  "res4686"
+ ],
+ "edges": [
+  {
+   "f": "israel_gov",
+   "t": "africa_aid",
+   "type": "funding",
+   "status": "verified",
+   "src": "g_jvl_africa",
+   "label": "From the late 1950s Israel sent aid to newly independent African states. Ben-Gurion: \"Our aid to the new countries... is not a matter of philanthropy.\""
+  },
+  {
+   "f": "africa_aid",
+   "t": "unga",
+   "type": "influence",
+   "status": "verified",
+   "src": "g_jvl_africa",
+   "label": "Israel had one UN vote against 18 Arab members, so \"it was important for Israel to try to win as many African votes as possible.\""
+  },
+  {
+   "f": "africa_aid",
+   "t": "africa_break73",
+   "type": "association",
+   "status": "verified",
+   "src": "g_jvl_africa",
+   "label": "After the October 1973 war \"all of Israel's friends on the continent\" cut ties; Ethiopia did so formally on 23 Oct 1973."
+  },
+  {
+   "f": "ethiopia",
+   "t": "africa_break73",
+   "type": "association",
+   "status": "verified",
+   "src": "g_jvl_africa",
+   "label": "23 Oct 1973: Ethiopia formally broke relations with Israel."
+  },
+  {
+   "f": "elnet",
+   "t": "israel_gov",
+   "type": "association",
+   "status": "verified",
+   "src": "g_wp_elnet",
+   "label": "Registered 22 Oct 2007; in Belgium, France, Germany, Poland, the UK, Italy and Israel; describes itself as \"the most influential pro-Israel advocacy organisation in Europe\"; takes European lawmakers and officials to Israel."
+  },
+  {
+   "f": "elnet",
+   "t": "parliament",
+   "type": "influence",
+   "status": "reported",
+   "src": "g_wp_elnet",
+   "label": "Declassified UK (2024): pro-Israel lobbyists including ELNET donated to 13 of the 25 members of Labour's cabinet; The Intercept (2025): US donors fund its American arm, FELNET."
+  },
+  {
+   "f": "iaf",
+   "t": "israel_gov",
+   "type": "association",
+   "status": "reported",
+   "src": "g_iaf_africa",
+   "label": "Builds pro-Israel caucuses of lawmakers in parliaments abroad; it launched six new caucuses in Africa."
+  },
+  {
+   "f": "israel_gov",
+   "t": "concert",
+   "type": "funding",
+   "status": "verified",
+   "src": "g_shomrim",
+   "label": "2018: 128 million shekels approved for Kela Shlomo (it raised about a fifth of the matching funds); 2022: 25 million shekels a year as \"Concert\"; later \"Voices of Israel\", whose contract the Diaspora Ministry ended in 2024. Its director general: \"this activity has failed by every conceivable parameter.\""
+  },
+  {
+   "f": "us_gov",
+   "t": "us_vetoes",
+   "type": "official act",
+   "status": "verified",
+   "src": "g_aj_veto",
+   "label": "By 2023 the US had vetoed Israel-related Security Council resolutions 46 times, and cast 34 of the 36 vetoes on Israel-Palestine drafts since 1945 (Al Jazeera count)."
+  },
+  {
+   "f": "us_vetoes",
+   "t": "unsc",
+   "type": "association",
+   "status": "verified",
+   "src": "g_aj_veto",
+   "label": "Expelling or suspending a UN member needs a Security Council recommendation, where the US holds a veto."
+  },
+  {
+   "f": "syria",
+   "t": "syria82",
+   "type": "proposal",
+   "status": "verified",
+   "src": "g_csm82",
+   "label": "April 1982: Syria moved that the General Assembly \"review Israel's status in the United Nations\", opening a later vote on suspension or expulsion; diplomats saw no majority for expulsion."
+  },
+  {
+   "f": "us_gov",
+   "t": "syria82",
+   "type": "opposition",
+   "status": "verified",
+   "src": "g_jta82",
+   "label": "Feb 1982: the State Department warned that suspending or expelling Israel \"would have serious consequences for continued U.S. participation in and support for the United Nations.\""
+  },
+  {
+   "f": "unga",
+   "t": "res3379",
+   "type": "official act",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "10 Nov 1975: \"Zionism is a form of racism\" adopted 72 to 35 with 32 abstaining."
+  },
+  {
+   "f": "unga",
+   "t": "res4686",
+   "type": "official act",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "16 Dec 1991: Resolution 46/86 revoked 3379, 111 to 25 with 13 abstaining."
+  },
+  {
+   "f": "res4686",
+   "t": "res3379",
+   "type": "opposition",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Revoked Resolution 3379 in 1991."
+  },
+  {
+   "f": "afghanistan",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "brazil",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "bulgaria",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "byelorussia",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "china",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "cuba",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "egypt",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "hungary",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "india",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "iran",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "iraq",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "lebanon",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "mexico",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "pakistan",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "poland48",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "saudi",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "syria",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "turkey",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "ukraine_ssr",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "ussr",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "yemen",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "yugoslavia",
+   "t": "res3379",
+   "type": "vote for",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted for Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "australia",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "belgium",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "canada",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "costa_rica",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "denmark",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "dominican",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "el_salvador",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "finland",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "france_gov",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "haiti",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "honduras",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "iceland",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "liberia",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "luxembourg",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "netherlands",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "new_zealand",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "nicaragua",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "norway",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "panama",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "sweden",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "uk",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "us_gov",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "uruguay",
+   "t": "res3379",
+   "type": "vote against",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Voted against Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "argentina",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "bolivia",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "chile",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "colombia",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "ecuador",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "ethiopia",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "greece",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "guatemala",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "paraguay",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "peru",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "philippines",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  },
+  {
+   "f": "venezuela",
+   "t": "res3379",
+   "type": "abstention",
+   "status": "verified",
+   "src": "g_wp_3379",
+   "label": "Abstained on Resolution 3379, 10 Nov 1975."
+  }
+ ]
+}

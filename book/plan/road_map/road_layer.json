@@ -1,0 +1,356 @@
+{
+ "_note": "Curated edges and corrections for the 1948 network. Every edge carries the book sentence and its library citation keys.",
+ "remove_edges": [
+  [
+   "balfour",
+   "walter_r",
+   "correspondence"
+  ]
+ ],
+ "edges": [
+  {
+   "f": "balfour",
+   "t": "walter_r",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "wb_bl_addms41178",
+   "label": "On 2 November 1917 Arthur Balfour sent his declaration to \"Lord Rothschild\" at 148 Piccadilly, and asked him to pass it to the Zionist Federation."
+  },
+  {
+   "f": "weizmann",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."
+  },
+  {
+   "f": "sokolow",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."
+  },
+  {
+   "f": "sykes",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "The letter was drafted by Weizmann, Sokolow and Sykes and signed by Balfour, the Foreign Secretary."
+  },
+  {
+   "f": "balfour",
+   "t": "balfour_decl",
+   "type": "official act",
+   "status": "verified",
+   "src": "schama_two_rothschilds; w_sinai_palestine",
+   "label": "Signed by Arthur Balfour, Foreign Secretary, on 2 November 1917."
+  },
+  {
+   "f": "arab_congress",
+   "t": "arab_exec",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_mca_palquest_musakazim",
+   "label": "The Third Congress, at Haifa in December 1920, declared the Balfour Declaration null and void and created a nine-member Arab Executive Committee, with Musa Kazim al-Husseini as its chairman."
+  },
+  {
+   "f": "doj",
+   "t": "azc",
+   "type": "official act",
+   "status": "verified",
+   "src": "azc_fara_doj",
+   "label": "The Internal Security Section of the Justice Department, under Attorney General Robert Kennedy, ordered the American Zionist Council to register as an agent of a foreign principal under the Foreign Agents Registration Act."
+  },
+  {
+   "f": "bengurion",
+   "t": "provisional",
+   "type": "leadership",
+   "status": "verified",
+   "src": "wiki_altalena_affair",
+   "label": "Twelve days after the declaration of independence, the provisional government headed by David Ben-Gurion issued an order establishing the Israel Defense Forces."
+  },
+  {
+   "f": "bengurion",
+   "t": "decl_indep",
+   "type": "official act",
+   "status": "verified",
+   "src": "trumanlibrary_recognition",
+   "label": "Eleven minutes after David Ben-Gurion declared the State of Israel in Tel Aviv, the United States extended de facto recognition."
+  },
+  {
+   "f": "mohilever",
+   "t": "edmond_r",
+   "type": "pressure",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "In 1882 Rabbi Samuel Mohilever appealed to Edmond to save the failing colony at Rishon LeZion, and Edmond accepted the appeal."
+  },
+  {
+   "f": "edmond_r",
+   "t": "rishon",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "Edmond began funding Rishon LeZion in 1882, months after its founding, when it was collapsing for want of water and agricultural knowledge."
+  },
+  {
+   "f": "edmond_r",
+   "t": "zikhron",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds; rs_rd0_firstaliyah_wiki",
+   "label": "From 1883 the settlers transferred Zikhron Ya'akov's assets to Edmond; the colony was named \"in memory of Jacob,\" his father James."
+  },
+  {
+   "f": "edmond_r",
+   "t": "rosh_pinna",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds; rs_rd0_firstaliyah_wiki",
+   "label": "Edmond funded Rosh Pinna in Upper Galilee from 1883."
+  },
+  {
+   "f": "edmond_r",
+   "t": "mazkeret",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "Edmond funded Mazkeret Batya from 1883; it was named for his mother, Betty (Batya)."
+  },
+  {
+   "f": "edmond_r",
+   "t": "ekron",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds; rs_rd0_firstaliyah_wiki",
+   "label": "Edmond funded Ekron on the coastal plain from 1884."
+  },
+  {
+   "f": "edmond_r",
+   "t": "metulla",
+   "type": "funding",
+   "status": "verified",
+   "src": "schama_two_rothschilds; rs_rd0_firstaliyah_wiki",
+   "label": "Edmond funded Metulla, the northernmost colony, from 1896."
+  },
+  {
+   "f": "edmond_r",
+   "t": "mikveh",
+   "type": "meeting",
+   "status": "verified",
+   "src": "rs_rd0_rh_visits",
+   "label": "On his first visit, from 2 April 1887, Edmond toured Mikveh Israel, Jerusalem and the colonies; he and his wife arrived at Jaffa anonymously, and Hamelitz reported it at once."
+  },
+  {
+   "f": "edmond_r",
+   "t": "jca",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd0_wiki_pica; rs_rd0_ej_edmond",
+   "label": "At the end of 1899 (1900 in another account) Edmond transferred title to his colonies to the JCA with fifteen (or fourteen) million francs."
+  },
+  {
+   "f": "edmond_r",
+   "t": "ottoman",
+   "type": "agreement",
+   "status": "verified",
+   "src": "rs_rd0_mandel1974",
+   "label": "In 1893 Rothschild obtained building permits after an agreement with the Porte on how many houses could be built in his colonies and how many settlers could live in them."
+  },
+  {
+   "f": "edmond_r",
+   "t": "pica",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_rd0_wiki_pica",
+   "label": "In 1924 Edmond reorganized the JCA's Palestine branch as PICA and appointed his son James president for life."
+  },
+  {
+   "f": "james_mayer",
+   "t": "edmond_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "schama_two_rothschilds",
+   "label": "Edmond was the youngest son of James Mayer de Rothschild of the Paris house."
+  },
+  {
+   "f": "edmond_r",
+   "t": "james_armand",
+   "type": "kinship",
+   "status": "verified",
+   "src": "rs_rd0_rh_james",
+   "label": "James Armand was Edmond's son; his father introduced him to Chaim Weizmann."
+  },
+  {
+   "f": "edmond_r",
+   "t": "weizmann",
+   "type": "collaboration",
+   "status": "reported",
+   "src": "rs_rd0_ej_edmond",
+   "label": "After his 1914 visit Edmond drew closer to the Zionist Organization and, during and after the war, aided Weizmann and Sokolow (another reference account says he remained separate)."
+  },
+  {
+   "f": "edmond_r",
+   "t": "jewish_agency",
+   "type": "leadership",
+   "status": "reported",
+   "src": "rs_rd0_ej_edmond",
+   "label": "When the Jewish Agency was enlarged in 1929 Edmond was chosen its honorary president."
+  },
+  {
+   "f": "edmond_r",
+   "t": "hebrew_univ",
+   "type": "funding",
+   "status": "reported",
+   "src": "rs_rd0_ej_edmond",
+   "label": "Edmond contributed funds to the establishment of the Hebrew University."
+  },
+  {
+   "f": "edmond_r",
+   "t": "ramat_hanadiv",
+   "type": "official act",
+   "status": "verified",
+   "src": "wiki_edmond_james_de_rothschild",
+   "label": "In 1954 Edmond's remains were carried to Haifa on a naval frigate and reburied at Ramat HaNadiv at a state funeral."
+  },
+  {
+   "f": "bengurion",
+   "t": "edmond_r",
+   "type": "testimony",
+   "status": "verified",
+   "src": "wiki_edmond_james_de_rothschild; betweenmyths_rothschild_israel",
+   "label": "Ben-Gurion gave the eulogy at the 1954 state funeral and called Edmond \"the builder of the Jewish Yishuv.\""
+  },
+  {
+   "f": "james_armand",
+   "t": "jewish_legion",
+   "type": "supply",
+   "status": "verified",
+   "src": "rs_rd0_rh_james",
+   "label": "Near the end of the First World War James recruited volunteers for the Jewish battalions under General Allenby."
+  },
+  {
+   "f": "james_armand",
+   "t": "weizmann",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "rs_rd0_rh_james",
+   "label": "James and Weizmann built a close personal and working relationship."
+  },
+  {
+   "f": "james_armand",
+   "t": "hebrew_univ",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_rd0_rh_james",
+   "label": "James was involved in initiating the establishment of the Hebrew University."
+  },
+  {
+   "f": "james_armand",
+   "t": "parliament",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd0_rh_james",
+   "label": "James sat in the British House of Commons for sixteen years."
+  },
+  {
+   "f": "james_armand",
+   "t": "pica",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_rd0_wiki_pica; rs_rd0_rh_james",
+   "label": "James was PICA's president for life from 1924."
+  },
+  {
+   "f": "pica",
+   "t": "jnf",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd0_wiki_pica",
+   "label": "PICA was wound up in 1957; James's will instructed it to transfer most of its land in Israel to the Jewish National Fund."
+  },
+  {
+   "f": "pica",
+   "t": "israel_gov",
+   "type": "official act",
+   "status": "verified",
+   "src": "rs_rd0_wiki_pica",
+   "label": "On 31 December 1958 PICA vested its rights to land in Syria and Lebanon in the State of Israel."
+  },
+  {
+   "f": "dorothy",
+   "t": "james_armand",
+   "type": "kinship",
+   "status": "verified",
+   "src": "rs_rd0_wiki_dorothy",
+   "label": "Dorothy de Rothschild was James Armand's wife."
+  },
+  {
+   "f": "dorothy",
+   "t": "yad_hanadiv",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_rd0_wiki_dorothy",
+   "label": "After 1957 Dorothy chaired Yad Hanadiv, the Rothschild family charities in Israel."
+  },
+  {
+   "f": "dorothy",
+   "t": "knesset",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd0_wiki_dorothy",
+   "label": "Dorothy saw through her husband's gift of funds to build the Knesset."
+  },
+  {
+   "f": "dorothy",
+   "t": "weizmann",
+   "type": "association",
+   "status": "verified",
+   "src": "rs_rd0_wiki_dorothy",
+   "label": "Dorothy was a close friend of Chaim Weizmann."
+  },
+  {
+   "f": "walter_r",
+   "t": "weizmann",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "rs_rd0_jvl_walter; wb_toi_wineman",
+   "label": "Walter Rothschild was a close friend of Weizmann and worked with him on the draft; on 19 June 1917 Balfour asked the two of them to submit a formula."
+  },
+  {
+   "f": "walter_r",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "rs_rd0_jvl_walter; w_balfour_decl",
+   "label": "Walter worked to formulate the draft declaration; its wording began with a draft formula he sent to Balfour on 18 July 1917."
+  },
+  {
+   "f": "natty",
+   "t": "walter_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "wb_wiki_walter",
+   "label": "Walter was the eldest son of Nathan \"Natty,\" the first Baron Rothschild."
+  },
+  {
+   "f": "us_gov",
+   "t": "morgenthau",
+   "type": "appointment",
+   "status": "verified",
+   "src": "rs_rd2_frus_d171",
+   "label": "In June 1917 the United States sent Henry Morgenthau on a mission whose real purpose was to sound out whether Turkey could be detached from Germany."
+  },
+  {
+   "f": "weizmann",
+   "t": "morgenthau",
+   "type": "meeting",
+   "status": "verified",
+   "src": "rs_rd2_frus_d152; rs_rd2_frus_d171",
+   "label": "At the talks from 4 July 1917 (Gibraltar), Weizmann represented Britain; the agents concluded the time was \"not now ripe\" to approach the Turkish leaders."
+  }
+ ]
+}

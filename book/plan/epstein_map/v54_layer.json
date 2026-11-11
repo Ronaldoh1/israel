@@ -1,0 +1,2103 @@
+{
+ "_note": "Additions made in the v54 build (10 Nov 2026): 50 nodes and 102 ties (Wexner and New Albany, the Maxwell and Giuffre cases and their judges, law firms, banks, the Senate Finance report, DP World). Each new tie keeps the refs it was built with.",
+ "nodes": [
+  {
+   "id": "recarey",
+   "name": "Joseph Recarey",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Lead Palm Beach Police detective on the 2005–06 Epstein investigation and writer of most of the case reports (Julie K. Brown). Died May 2018.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "robson",
+   "name": "Haley Robson",
+   "kind": "person",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Named in the Palm Beach police affidavits as having brought girls to Epstein's house in 2005, including a 14-year-old. She was a teenager herself when first approached, told police she brought six girls, and denies wrongdoing. Police reported probable cause as to her; the charging outcome was not checked.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "couq",
+   "name": "C.O.U.Q. Foundation",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Epstein charity; Darren Indyke was its vice president (Crimson). Tax filings reported by the Miami Herald and Jewish Insider show gifts of $15,000 (≈ $26,000 today) to the Jewish National Fund (Jun 2005), $25,000 (≈ $43,000 today) to Friends of the IDF (Mar 2005) and $100,000 (≈ $171,000 today) to the Columbus Jewish Foundation (May 2003), among many gifts to schools, synagogues, universities and medical charities. Some listed recipients told NBC News they never received the gifts. Not a finding about any recipient.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "epstein_vi",
+   "name": "Jeffrey Epstein VI Foundation",
+   "kind": "company",
+   "cluster": "money",
+   "tier": "",
+   "note": "Name on Epstein's science-philanthropy press releases. NBC reported its last tax filing was for 2002. Its releases claimed $30 million (≈ $56 million today) for Harvard's Program for Evolutionary Dynamics (BuzzFeed); Harvard and some recipients disputed or did not confirm gift sizes.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "jnf",
+   "name": "Jewish National Fund (recipient of a C.O.U.Q. gift)",
+   "kind": "institution",
+   "cluster": "money",
+   "tier": "",
+   "note": "Jewish institution that received a $15,000 (≈ $26,000 today) C.O.U.Q. gift in Jun 2005, per tax filings reported by Jewish Insider. Appears as a landowner node in the Road to 1948 map. A gift to a charity is not evidence of any role in Epstein's crimes.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "fidf",
+   "name": "Friends of the IDF",
+   "kind": "institution",
+   "cluster": "money",
+   "tier": "",
+   "note": "US charity that received $25,000 (≈ $43,000 today) from C.O.U.Q. in Mar 2005, per tax filings reported by Jewish Insider.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "columbus_jf",
+   "name": "Columbus Jewish Foundation",
+   "kind": "institution",
+   "cluster": "money",
+   "tier": "",
+   "note": "Ohio foundation that received $100,000 (≈ $181,000 today) from C.O.U.Q. in May 2003, per tax filings reported by Jewish Insider.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "us_v_maxwell",
+   "name": "United States v. Maxwell (20 Cr. 330, SDNY)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Indictment unsealed 29 Jun 2020. Maxwell convicted Dec 2021 and sentenced 28 Jun 2022 to 20 years. Second Circuit affirmed 17 Sep 2024; Supreme Court denied review 6 Oct 2025. Later rulings concern release of grand-jury material and the Epstein Files Transparency Act.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "giuffre_v_maxwell",
+   "name": "Giuffre v. Maxwell (15-cv-7433, SDNY)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Defamation suit by Virginia Giuffre, since settled. Documents sealed on Judge Sweet's order were reviewed and unsealed by Judge Preska from Dec 2019 after the Second Circuit remand; names in the unsealed documents were released from 1 Jan 2024. Miami Herald and Julie K. Brown were intervenors.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "nathan",
+   "name": "Judge Alison Nathan",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Presided over the Maxwell trial (conviction 2021) and sentenced her (2022); later elevated to the Second Circuit.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "engelmayer",
+   "name": "Judge Paul Engelmayer",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Took over the Maxwell case after Nathan's elevation; ruled on DOJ's motions to unseal grand-jury material (Dec 2025) and on lawmakers' bid to attach Epstein-files demands to the case (Jan 2026).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "preska",
+   "name": "Judge Loretta Preska",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Took over Giuffre v. Maxwell after Judge Sweet's death and ordered documents and names unsealed (2019–2024).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "sweet",
+   "name": "Judge Robert W. Sweet",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Sentenced Steven Hoffenberg to 20 years in 1997 and originally presided over Giuffre v. Maxwell, sealing its documents. Died 2019.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "towers",
+   "name": "Towers Financial Corporation",
+   "kind": "company",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Manhattan debt-collection company that ran a Ponzi scheme 1988–93; SEC civil action Feb 1993, bankruptcy Mar 1993. Hoffenberg pleaded guilty 1995 and was sentenced 1997 to 20 years, with restitution of about $463–475 million (≈ $961 million–986 million today) in 1997 (sources differ). Epstein was hired in 1987 as a consultant at $25,000 (≈ $73,000 today) a month for about six years; he was never charged. Hoffenberg's 2019 claim that Epstein was an 'uncharged co-conspirator' is an allegation.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "band",
+   "name": "Doug Band",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Senior aide to Bill Clinton, 2002–12. Appears on 2002 flights with Epstein and Clinton (flight manifests, as reported). Said in 2020 that he met Epstein in 2002 and urged Clinton to distance himself, and that Clinton visited Little St. James in Jan 2003. Emails with Maxwell 2002–06 reported; questioned by House Oversight (as reported). He denies any improper relationship.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "new_albany_co",
+   "name": "The New Albany Company",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Development firm Les Wexner co-founded in the 1980s that built New Albany, Ohio. Epstein was named a company president in a 1998 state filing (reported via WCMH-TV). The company says it, not Wexner personally, is the city's development partner.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "new_albany_oh",
+   "name": "New Albany, Ohio",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "Columbus suburb planned around the Wexner estate. Records show Epstein bought a house there in 1994, about half a mile from the Wexner home.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "wexner_foundation",
+   "name": "The Wexner Foundation",
+   "kind": "institution",
+   "cluster": "money",
+   "tier": "",
+   "note": "Foundation Les and Abigail Wexner created to support Jewish communities. Epstein was appointed to it; the foundation has said Epstein had no contact with its staff after September 2007.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "osu",
+   "name": "Ohio State University",
+   "kind": "institution",
+   "cluster": "culture",
+   "tier": "",
+   "note": "Wexner's alma mater, where he served two stints as trustee and where his name is on the medical center (2012, $100M gift), an arts center and a football complex. Naming-review requests are pending.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "columbus_partnership",
+   "name": "Columbus Partnership",
+   "kind": "institution",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Central Ohio civic-leadership nonprofit Wexner co-founded.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "sprague",
+   "name": "Robert Sprague",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Ohio State Treasurer. Sent a donation matching the $23,000 the Wexners gave his 2022 campaign to a housing-services group after the Epstein deposition.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "kirkland",
+   "name": "Kirkland & Ellis",
+   "kind": "company",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Law firm that represented Epstein on the 2008 plea deal, media disputes and a hedge-fund suit; Epstein paid it more than $3.1M between 2008 and 2011. Starr and Lefkowitz were its lawyers; Alexander Acosta had been a Kirkland litigator before the Labor Department.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "paul_weiss",
+   "name": "Paul, Weiss, Rifkind, Wharton & Garrison",
+   "kind": "company",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Law firm led by Brad Karp. The firm says it was adverse to Epstein and never represented him; Karp's contact grew out of representing Leon Black in a fee dispute. Emails show Karp reviewing Epstein's plea-deal strategy in 2019 and discussing Ruemmler's career.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "hogan_lovells",
+   "name": "Hogan Lovells",
+   "kind": "company",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Law firm that discussed a job for Kathryn Ruemmler in 2015; she forwarded the exchange to Epstein.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "weinberg",
+   "name": "Martin Weinberg",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Boston defense lawyer on Epstein's legal team; part of the July 2019 team that argued the 2008 non-prosecution agreement could not be reopened.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "dp_world",
+   "name": "DP World",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Dubai-owned global port and logistics operator led for years by Sultan Ahmed bin Sulayem. After the January 2026 DOJ release he resigned (13 Feb 2026); Essa Kazim became chairman and Yuvraj Narayan group CEO. UK development finance agency and Canada's La Caisse paused new investment.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "kazim",
+   "name": "Essa Kazim",
+   "kind": "person",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Governor of the Dubai International Financial Centre, named DP World chairman on 13 Feb 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "narayan",
+   "name": "Yuvraj Narayan",
+   "kind": "person",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "DP World's former CFO, named group CEO on 13 Feb 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "bii",
+   "name": "British International Investment",
+   "kind": "institution",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "UK development finance institution reported to have suspended new investment with DP World over the Epstein ties.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "la_caisse",
+   "name": "La Caisse (CDPQ)",
+   "kind": "institution",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Quebec pension fund that paused new DP World investment, then said DP World had taken appropriate measures and it would work with the new leadership.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "fidelity",
+   "name": "Fidelity Investments",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Subpoenaed in July 2020 by USVI Attorney General Denise George for records on Epstein and more than 30 linked entities. A subpoena is not proof of an account.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "northern_trust",
+   "name": "Northern Trust International Banking Corp.",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Subpoenaed in July 2020 by the USVI Attorney General in the Epstein estate case. A subpoena is not proof of an account.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "svb",
+   "name": "Silicon Valley Bank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Subpoenaed in July 2020 by the USVI Attorney General in the Epstein estate case. A subpoena is not proof of an account.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "bmo",
+   "name": "BMO (Bank of Montreal)",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Trustee bank on the AP Narrows Holding LP account already in the map.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "epstein_na_house",
+   "name": "Epstein's 1994 New Albany house",
+   "kind": "place",
+   "cluster": "places",
+   "tier": "",
+   "note": "House Epstein bought in New Albany, Ohio in 1994, about half a mile from the Wexner home (Axios Columbus, citing property records).",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "lbrands",
+   "name": "L Brands (The Limited)",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Retail group Les Wexner founded; parent of Victoria's Secret. Wexner stepped down as chairman in 2020 after investor pressure over his Epstein ties.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "wexner_depo_2026",
+   "name": "House Oversight deposition of Les Wexner (18 Feb 2026)",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "Deposition held at Wexner's New Albany home after January subpoenas to Wexner, Indyke and Kahn. NBC4 reported he paid Epstein about $200 million over the years; that figure needs the transcript.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "wexner_suit_2026",
+   "name": "Survivors' suit v. Wexner, the Wexner Foundation and Nine East 71st Street Corp. (2026)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Civil suit by eleven women in New York Supreme Court, reported 1 April 2026 (filed 30 March; one report says 6 March), later moved toward federal court. Alleges Wexner and the foundation paid Epstein $200M+ (1987–2007), that the Nine East townhouse and a plane were transferred, under the Gender-Motivated Violence Act. Allegations only; Wexner has not been charged and a spokesperson expressed sympathy for the victims.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "pcfc",
+   "name": "Ports, Customs and Free Zone Corporation (Dubai)",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Dubai government body that runs the emirate's ports and free zones. Bin Sulayem chaired it; Dubai's ruler decreed a new chairman on 13 Feb 2026.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "torture_email_2009",
+   "name": "April 2009 email: \"I loved the torture video\"",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "On 24 April 2009 Epstein wrote \"where are you? are you ok, I loved the torture video\" to an address the DOJ had redacted; Reps. Massie and Khanna identified it as bin Sulayem's on 10 Feb 2026. The recipient replied that he was in China. The video is unidentified and no criminal allegation has been made against bin Sulayem; US officials say appearing in the files is not indicative of wrongdoing.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "bnym",
+   "name": "Bank of New York Mellon",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Custodian bank. Senate Finance (Wyden) opened a probe in 2026 into hundreds of millions of dollars moved through BNY accounts for Epstein. A federal judge dismissed the Jane Doe class action against BNY on 29 Jan 2026; plaintiffs said they would appeal. BNY says it had no involvement in Epstein's crimes.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "senate_report",
+   "name": "Senate Finance report \"Looking the Other Way\" (4 Aug 2026)",
+   "kind": "document",
+   "cluster": "release",
+   "tier": "",
+   "note": "67-page report by Sen. Ron Wyden's Democratic staff after a four-year investigation. Says Bank of America likely violated anti-money-laundering law by failing to report $170M from Leon Black to Epstein, that JPMorgan executives coached Epstein on withdrawing cash through shell companies, and that 13 bankers at JPMorgan, Bank of America and Deutsche Bank merit investigation. A staff report, not a ruling.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "rakoff",
+   "name": "Judge Jed Rakoff",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Federal judge in Manhattan overseeing the Jane Doe class actions: dismissed the BNY case (29 Jan 2026), let two claims against Bank of America proceed, and approved its $72.5M settlement.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "janedoe_suit",
+   "name": "Jane Doe v. Bank of America and BNY (SDNY, filed 15 Oct 2025)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Proposed class actions by a Florida woman for Epstein victims. BNY dismissed 29 Jan 2026 (appeal planned); Bank of America settled for $72.5M, finally approved; earlier class settlements were JPMorgan $290M and Deutsche Bank $75M.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "npa_clause",
+   "name": "NPA clause on victims' counsel (Dec 2007–Sept 2008)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Draft agreement language to appoint a guardian ad litem for up to 40 identified victims. Files released in January 2026 show Kirkland's Jay Lefkowitz asked the US Attorney's Office to remove it, then threatened to take it \"to Washington.\" When Epstein signed, the legal-representation section had changed. DOJ's own 11 Dec 2007 letter to Lefkowitz says the agreement gave its Office the exclusive right to choose that attorney.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "weingarten",
+   "name": "Reid Weingarten",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Washington defense lawyer (Steptoe) reported on Epstein's 2008 defense team. Role not yet confirmed from a primary document.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "lefcourt",
+   "name": "Gerald Lefcourt",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "New York defense lawyer reported on Epstein's 2008 defense team. Role not yet confirmed from a primary document.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "guy_lewis",
+   "name": "Guy Lewis",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Former US Attorney for the Southern District of Florida, reported on Epstein's 2008 defense team. Role not yet confirmed from a primary document.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "steptoe",
+   "name": "Steptoe & Johnson",
+   "kind": "company",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Law firm of Reid Weingarten; link to Epstein not yet confirmed from a primary document.",
+   "scenes": [],
+   "apex": false
+  },
+  {
+   "id": "edwards_henderson",
+   "name": "Edwards Henderson (Bradley Edwards)",
+   "kind": "company",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Law firm of Bradley Edwards, who represented victims in the Crime Victims' Rights Act challenge to the 2008 non-prosecution agreement. Role to be confirmed against the docket.",
+   "scenes": [],
+   "apex": false
+  }
+ ],
+ "edges": [
+  {
+   "f": "recarey",
+   "t": "reiter",
+   "label": "detective on the chief's 2005–06 investigation",
+   "type": "reporting",
+   "status": "reported",
+   "src": "jkb; trib",
+   "refs": [
+    {
+     "t": "Julie K. Brown, Perversion of Justice (excerpt)",
+     "u": "https://the-line-up.com/perversion-of-justice-julie-k-brown-excerpt"
+    },
+    {
+     "t": "TribLive on the Palm Beach investigation (Recarey died May 2018)",
+     "u": "https://development.triblive.com/?p=2303312"
+    }
+   ]
+  },
+  {
+   "f": "recarey",
+   "t": "palm_beach",
+   "label": "lead detective, 2005–06 investigation (case opened Mar 2005)",
+   "type": "investigation",
+   "status": "reported",
+   "src": "jkb; trib",
+   "refs": [
+    {
+     "t": "Julie K. Brown, Perversion of Justice (excerpt)",
+     "u": "https://the-line-up.com/perversion-of-justice-julie-k-brown-excerpt"
+    },
+    {
+     "t": "TribLive on the Palm Beach investigation (Recarey died May 2018)",
+     "u": "https://development.triblive.com/?p=2303312"
+    }
+   ]
+  },
+  {
+   "f": "recarey",
+   "t": "epstein",
+   "label": "investigated Epstein; police served a search warrant at his Palm Beach home on 20 Oct 2005",
+   "type": "investigation",
+   "status": "reported",
+   "src": "jkb; ji",
+   "refs": [
+    {
+     "t": "Julie K. Brown, Perversion of Justice (excerpt)",
+     "u": "https://the-line-up.com/perversion-of-justice-julie-k-brown-excerpt"
+    }
+   ]
+  },
+  {
+   "f": "robson",
+   "t": "epstein",
+   "label": "Palm Beach police records (2005–06) describe her, as a teenager, bringing other girls to Epstein's house for pay; she has described herself as one of his victims.",
+   "type": "police affidavit",
+   "status": "reported",
+   "src": "db_doe1; doj_foia",
+   "refs": [
+    {
+     "t": "Daily Beast, Jane Doe #1 and the Palm Beach police affidavit",
+     "u": "https://thedailybeast.com/exclusive-before-randy-andys-accuser-a-jane-doe-1"
+    },
+    {
+     "t": "DOJ FOIA release, Epstein Part 21 (Palm Beach police report excerpt)",
+     "u": "https://www.justice.gov/multimedia/Freedom%20of%20Information%20Act%20(FOIA)/Florida/Epstein%20Part%2021%20(Redacted).pdf"
+    }
+   ]
+  },
+  {
+   "f": "recarey",
+   "t": "robson",
+   "label": "Named in the detective's case records; whether charges were sought against her is not established here.",
+   "type": "police affidavit",
+   "status": "to-verify",
+   "src": "db_doe1",
+   "refs": [
+    {
+     "t": "Daily Beast, Jane Doe #1 and the Palm Beach police affidavit",
+     "u": "https://thedailybeast.com/exclusive-before-randy-andys-accuser-a-jane-doe-1"
+    },
+    {
+     "t": "Michael Reiter (Wikipedia, citing the 1 May 2006 affidavits)",
+     "u": "https://en.wikipedia.org/wiki/Michael_Reiter"
+    }
+   ]
+  },
+  {
+   "f": "couq",
+   "t": "epstein",
+   "label": "charity he controlled",
+   "type": "ownership",
+   "status": "reported",
+   "src": "crimson",
+   "refs": [
+    {
+     "t": "Harvard Crimson, Epstein donation to Hasty Pudding Institute (19 Apr 2019)",
+     "u": "https://thecrimson.com/article/2019/4/19/epstein-donation-hasty-pudding"
+    }
+   ]
+  },
+  {
+   "f": "indyke",
+   "t": "couq",
+   "label": "vice president",
+   "type": "office",
+   "status": "reported",
+   "src": "crimson",
+   "refs": [
+    {
+     "t": "Harvard Crimson, Epstein donation to Hasty Pudding Institute (19 Apr 2019)",
+     "u": "https://thecrimson.com/article/2019/4/19/epstein-donation-hasty-pudding"
+    }
+   ]
+  },
+  {
+   "f": "couq",
+   "t": "jnf",
+   "label": "$15,000 (≈ $26,000 today) gift, Jun 2005 (tax filing)",
+   "type": "funding",
+   "status": "reported",
+   "src": "ji",
+   "refs": [
+    {
+     "t": "Jewish Insider, Jeffrey Epstein's history of Jewish giving (Jul 2019; from tax filings compiled by the Miami Herald)",
+     "u": "https://jewishinsider.com/2019/07/jeffrey-epsteins-history-of-jewish-giving"
+    }
+   ]
+  },
+  {
+   "f": "couq",
+   "t": "fidf",
+   "label": "$25,000 (≈ $43,000 today) gift, Mar 2005 (tax filing)",
+   "type": "funding",
+   "status": "reported",
+   "src": "ji",
+   "refs": [
+    {
+     "t": "Jewish Insider, Jeffrey Epstein's history of Jewish giving (Jul 2019; from tax filings compiled by the Miami Herald)",
+     "u": "https://jewishinsider.com/2019/07/jeffrey-epsteins-history-of-jewish-giving"
+    }
+   ]
+  },
+  {
+   "f": "couq",
+   "t": "columbus_jf",
+   "label": "$100,000 (≈ $181,000 today) gift, May 2003 (tax filing)",
+   "type": "funding",
+   "status": "reported",
+   "src": "ji",
+   "refs": [
+    {
+     "t": "Jewish Insider, Jeffrey Epstein's history of Jewish giving (Jul 2019; from tax filings compiled by the Miami Herald)",
+     "u": "https://jewishinsider.com/2019/07/jeffrey-epsteins-history-of-jewish-giving"
+    }
+   ]
+  },
+  {
+   "f": "couq",
+   "t": "epstein_vi",
+   "label": "sibling Epstein vehicle; some listed recipients told NBC they got no gifts",
+   "type": "association",
+   "status": "reported",
+   "src": "nbc_char",
+   "refs": [
+    {
+     "t": "NBC News, Charities say they never got the donations Epstein claims he made (2019)",
+     "u": "https://www.nbcnews.com/news/us-news/charities-say-they-never-got-donations-jeffrey-epstein-claims-he-n1028561"
+    }
+   ]
+  },
+  {
+   "f": "epstein_vi",
+   "t": "epstein",
+   "label": "name used on his science-philanthropy releases",
+   "type": "ownership",
+   "status": "reported",
+   "src": "bf; nbc_char",
+   "refs": [
+    {
+     "t": "BuzzFeed News, Epstein called himself a 'science philanthropist' (2019)",
+     "u": "https://www.buzzfeednews.com/article/peteraldhous/jeffrey-epstein-sex-trafficking-science-donations"
+    },
+    {
+     "t": "NBC News, Charities say they never got the donations Epstein claims he made (2019)",
+     "u": "https://www.nbcnews.com/news/us-news/charities-say-they-never-got-donations-jeffrey-epstein-claims-he-n1028561"
+    }
+   ]
+  },
+  {
+   "f": "epstein_vi",
+   "t": "nowak",
+   "label": "releases claimed $30 million for his Harvard program; claim not independently confirmed",
+   "type": "claim",
+   "status": "to-verify",
+   "src": "bf",
+   "refs": [
+    {
+     "t": "BuzzFeed News, Epstein called himself a 'science philanthropist' (2019)",
+     "u": "https://www.buzzfeednews.com/article/peteraldhous/jeffrey-epstein-sex-trafficking-science-donations"
+    }
+   ]
+  },
+  {
+   "f": "us_v_maxwell",
+   "t": "gmax",
+   "label": "conviction Dec 2021; sentence 20 years (28 Jun 2022); review denied 6 Oct 2025",
+   "type": "criminal case",
+   "status": "verified",
+   "src": "sdny25; cbs",
+   "refs": [
+    {
+     "t": "SDNY, United States v. Maxwell, Opinion & Order (Engelmayer, 9 Dec 2025)",
+     "u": "https://nysd.uscourts.gov/sites/default/files/2025-12/PAE%20Maxwell%20Opinion%202025.12.09%20%28As%20Docketed%29.pdf"
+    },
+    {
+     "t": "CBS News, Supreme Court declines Maxwell appeal (6 Oct 2025)",
+     "u": "https://www.cbsnews.com/news/supreme-court-ghislaine-maxwell-appeal"
+    }
+   ]
+  },
+  {
+   "f": "us_v_maxwell",
+   "t": "nathan",
+   "label": "presided over trial and sentencing",
+   "type": "official act",
+   "status": "verified",
+   "src": "sdny25",
+   "refs": [
+    {
+     "t": "SDNY, United States v. Maxwell, Opinion & Order (Engelmayer, 9 Dec 2025)",
+     "u": "https://nysd.uscourts.gov/sites/default/files/2025-12/PAE%20Maxwell%20Opinion%202025.12.09%20%28As%20Docketed%29.pdf"
+    }
+   ]
+  },
+  {
+   "f": "us_v_maxwell",
+   "t": "engelmayer",
+   "label": "took over the case; rulings on unsealing and the Transparency Act, Dec 2025–Jan 2026",
+   "type": "official act",
+   "status": "verified",
+   "src": "sdny25; sdny26; pbs",
+   "refs": [
+    {
+     "t": "SDNY, United States v. Maxwell, Opinion & Order (Engelmayer, 9 Dec 2025)",
+     "u": "https://nysd.uscourts.gov/sites/default/files/2025-12/PAE%20Maxwell%20Opinion%202025.12.09%20%28As%20Docketed%29.pdf"
+    },
+    {
+     "t": "SDNY, United States v. Maxwell, Opinion & Order (21 Jan 2026)",
+     "u": "https://wp.nysd.uscourts.gov/sites/default/files/2026-01/Maxwell%2020cr330%20-%20Opinion%20%26%20Order%201.21.26.pdf"
+    },
+    {
+     "t": "AP via PBS NewsHour, lawmakers and the Maxwell case (21 Jan 2026)",
+     "u": "https://www.pbs.org/newshour/politics/lawmakers-can-sue-to-ensure-epstein-files-release-but-not-as-part-of-maxwell-case-judge-says"
+    }
+   ]
+  },
+  {
+   "f": "us_v_maxwell",
+   "t": "sdny",
+   "label": "prosecuted by the Southern District of New York",
+   "type": "investigation",
+   "status": "verified",
+   "src": "sdny25",
+   "refs": [
+    {
+     "t": "SDNY, United States v. Maxwell, Opinion & Order (Engelmayer, 9 Dec 2025)",
+     "u": "https://nysd.uscourts.gov/sites/default/files/2025-12/PAE%20Maxwell%20Opinion%202025.12.09%20%28As%20Docketed%29.pdf"
+    }
+   ]
+  },
+  {
+   "f": "giuffre_v_maxwell",
+   "t": "giuffre",
+   "label": "plaintiff",
+   "type": "litigation",
+   "status": "verified",
+   "src": "ca2",
+   "refs": [
+    {
+     "t": "Second Circuit, Giuffre v. Maxwell, Nos. 24-182 / 24-203 (opinion)",
+     "u": "https://ww3.ca2.uscourts.gov/decisions/isysquery/dab26bfd-667b-4a65-9171-6518d172c7fa/1/doc/24-182_opn.pdf"
+    }
+   ]
+  },
+  {
+   "f": "giuffre_v_maxwell",
+   "t": "gmax",
+   "label": "defendant",
+   "type": "litigation",
+   "status": "verified",
+   "src": "ca2",
+   "refs": [
+    {
+     "t": "Second Circuit, Giuffre v. Maxwell, Nos. 24-182 / 24-203 (opinion)",
+     "u": "https://ww3.ca2.uscourts.gov/decisions/isysquery/dab26bfd-667b-4a65-9171-6518d172c7fa/1/doc/24-182_opn.pdf"
+    }
+   ]
+  },
+  {
+   "f": "giuffre_v_maxwell",
+   "t": "sweet",
+   "label": "original judge; sealed the documents",
+   "type": "official act",
+   "status": "verified",
+   "src": "ca2",
+   "refs": [
+    {
+     "t": "Second Circuit, Giuffre v. Maxwell, Nos. 24-182 / 24-203 (opinion)",
+     "u": "https://ww3.ca2.uscourts.gov/decisions/isysquery/dab26bfd-667b-4a65-9171-6518d172c7fa/1/doc/24-182_opn.pdf"
+    }
+   ]
+  },
+  {
+   "f": "giuffre_v_maxwell",
+   "t": "preska",
+   "label": "reassigned judge; reviewed and unsealed documents from Dec 2019",
+   "type": "official act",
+   "status": "verified",
+   "src": "ca2; ap_names",
+   "refs": [
+    {
+     "t": "Second Circuit, Giuffre v. Maxwell, Nos. 24-182 / 24-203 (opinion)",
+     "u": "https://ww3.ca2.uscourts.gov/decisions/isysquery/dab26bfd-667b-4a65-9171-6518d172c7fa/1/doc/24-182_opn.pdf"
+    },
+    {
+     "t": "AP via NewsNation, associates identified in unsealed documents (Jan 2024)",
+     "u": "https://digital-release.newsnationnow.com/?p=2570189"
+    }
+   ]
+  },
+  {
+   "f": "giuffre_v_maxwell",
+   "t": "miami_herald",
+   "label": "intervenor seeking unsealing, with Julie K. Brown",
+   "type": "litigation",
+   "status": "verified",
+   "src": "ca2",
+   "refs": [
+    {
+     "t": "Second Circuit, Giuffre v. Maxwell, Nos. 24-182 / 24-203 (opinion)",
+     "u": "https://ww3.ca2.uscourts.gov/decisions/isysquery/dab26bfd-667b-4a65-9171-6518d172c7fa/1/doc/24-182_opn.pdf"
+    }
+   ]
+  },
+  {
+   "f": "sweet",
+   "t": "hoffenberg",
+   "label": "sentenced him to 20 years, 1997",
+   "type": "official act",
+   "status": "verified",
+   "src": "wk_towers; inq",
+   "refs": [
+    {
+     "t": "Towers Financial Corporation (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Towers_Financial_Corporation"
+    },
+    {
+     "t": "Philadelphia Inquirer, Hoffenberg's 2019 claims about Epstein",
+     "u": "https://www.inquirer.com/business/jeffrey-epstein-hoffenberg-trump-clinton-20190711.html"
+    }
+   ]
+  },
+  {
+   "f": "hoffenberg",
+   "t": "towers",
+   "label": "founder, CEO and chairman",
+   "type": "office",
+   "status": "verified",
+   "src": "wk_towers",
+   "refs": [
+    {
+     "t": "Towers Financial Corporation (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Towers_Financial_Corporation"
+    },
+    {
+     "t": "Boston Globe, Steven Hoffenberg obituary (26 Aug 2022)",
+     "u": "https://www.bostonglobe.com/2022/08/26/metro/steven-hoffenberg-debt-baron-who-ran-vast-fraud-dies-77"
+    }
+   ]
+  },
+  {
+   "f": "towers",
+   "t": "epstein",
+   "label": "hired Epstein as consultant in 1987 at $25,000 (≈ $73,000 today) a month for about six years; he was never charged",
+   "type": "employment",
+   "status": "reported",
+   "src": "bg_hoff; wk_towers",
+   "refs": [
+    {
+     "t": "Boston Globe, Steven Hoffenberg obituary (26 Aug 2022)",
+     "u": "https://www.bostonglobe.com/2022/08/26/metro/steven-hoffenberg-debt-baron-who-ran-vast-fraud-dies-77"
+    },
+    {
+     "t": "Towers Financial Corporation (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Towers_Financial_Corporation"
+    }
+   ]
+  },
+  {
+   "f": "band",
+   "t": "bclinton",
+   "label": "senior aide, 2002–12",
+   "type": "employment",
+   "status": "reported",
+   "src": "wk_band",
+   "refs": [
+    {
+     "t": "Doug Band (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Doug_Band"
+    }
+   ]
+  },
+  {
+   "f": "band",
+   "t": "epstein",
+   "label": "on 2002 flights with Epstein and Clinton (manifests, as reported)",
+   "type": "flight passenger",
+   "status": "reported",
+   "src": "wex; nzh",
+   "refs": [
+    {
+     "t": "Washington Examiner, Clinton flight manifests",
+     "u": "https://www.washingtonexaminer.com/?p=2032841"
+    },
+    {
+     "t": "NZ Herald, Band on Clinton and Epstein (Vanity Fair 2020)",
+     "u": "https://nzherald.co.nz/world/bill-clintons-former-top-adviser-says-former-us-president-did-visit-jeffrey-epsteins-island/22OBMWHYFVEOI3UMQKATBHAKHE"
+    }
+   ]
+  },
+  {
+   "f": "band",
+   "t": "gmax",
+   "label": "emails 2002–06 reported; he denies any improper relationship",
+   "type": "correspondence",
+   "status": "reported",
+   "src": "fox_band",
+   "refs": [
+    {
+     "t": "Fox News, Band questioned by Congress over Epstein ties",
+     "u": "https://www.foxnews.com/politics/clinton-confidant-who-called-maxwell-his-lover-grilled-congress-over-epstein-ties.amp"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "new_albany_co",
+   "label": "Co-founded The New Albany Company in the 1980s.",
+   "type": "ownership",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "new_albany_co",
+   "label": "Named a company president in a 1998 state filing, per WCMH-TV.",
+   "type": "office",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "new_albany_oh",
+   "label": "Bought a house in New Albany in 1994, about half a mile from the Wexner home.",
+   "type": "ownership",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    },
+    {
+     "t": "AP via WESH",
+     "u": "https://www.wesh.com/article/les-wexner-epstein-deposition/70404524"
+    }
+   ]
+  },
+  {
+   "f": "new_albany_co",
+   "t": "new_albany_oh",
+   "label": "Major landowner and development partner of the city; the city says it works with the company, not Wexner personally.",
+   "type": "association",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "WSYX / WJLA",
+     "u": "https://wjla.com/news/nation-world/house-committee-on-oversight-and-government-reform-panel-to-question-les-wexner-on-jeffrey-epstein-reform-new-albany-wednesday"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "new_albany_oh",
+   "label": "Lives in New Albany; developed the town through his company.",
+   "type": "association",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "gmax",
+   "t": "new_albany_oh",
+   "label": "Maxwell told DOJ in 2025 that Epstein \"ran New Albany\" (her statement, not independently established).",
+   "type": "testimony",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "NBC News",
+     "u": "https://www.nbcnews.com/politics/politics-news/epstein-saga-engulfs-les-wexner-ohio-rcna258821"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "wexner_foundation",
+   "label": "Wexner appointed Epstein to the Wexner Foundation; the foundation says Epstein had no contact with staff after Sept 2007.",
+   "type": "appointment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "eJewishPhilanthropy",
+     "u": "https://ejewishphilanthropy.com/?p=169052"
+    },
+    {
+     "t": "Last American Vagabond (quoting foundation)",
+     "u": "https://derrickbroze.substack.com/p/les-wexners-very-bad-week-billionaire"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "wexner_foundation",
+   "label": "Les and Abigail Wexner created the foundation.",
+   "type": "ownership",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "osu",
+   "label": "Two stints as an Ohio State trustee; chairs the board of the Wexner Medical Center.",
+   "type": "office",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "NBC News",
+     "u": "https://www.nbcnews.com/politics/politics-news/epstein-saga-engulfs-les-wexner-ohio-rcna258821"
+    },
+    {
+     "t": "WSYX / WJLA",
+     "u": "https://wjla.com/news/nation-world/house-committee-on-oversight-and-government-reform-panel-to-question-les-wexner-on-jeffrey-epstein-reform-new-albany-wednesday"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "osu",
+   "label": "$100M gift renamed OSU's medical facilities in 2012; arts center and football complex also bear his name.",
+   "type": "philanthropy",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    },
+    {
+     "t": "WCMH via Yahoo",
+     "u": "https://www.yahoo.com/news/articles/les-wexner-congressional-testimony-compares-103000035.html"
+    }
+   ]
+  },
+  {
+   "f": "epstein_vi",
+   "t": "osu",
+   "label": "The check behind the football-complex naming gift came from Epstein's foundation; Ohio State says the money originated with Wexner trusts. Origin disputed.",
+   "type": "philanthropy",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "WYSO",
+     "u": "https://www.wyso.org/2026-02-20/les-wexner-denies-knowledge-of-epstein-foundation-donation-that-named-football-complex"
+    }
+   ]
+  },
+  {
+   "f": "house_oversight",
+   "t": "wexner",
+   "label": "Deposed for about six hours on 18 Feb 2026 at his New Albany home; said he was duped by a world-class con man.",
+   "type": "testimony",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "PBS NewsHour / AP",
+     "u": "https://www.pbs.org/newshour/world/billionaire-les-wexner-is-being-deposed-in-the-epstein-files-probe-heres-what-documents-show-about-their-relationship"
+    },
+    {
+     "t": "AP via PBS",
+     "u": "https://www.pbs.org/newshour/amp/politics/watch-live-house-democrats-speak-after-les-wexner-deposition-on-epstein-files"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "sprague",
+   "label": "Wexner and his wife gave $23,000 to Sprague in 2022; Sprague later matched it to a housing group.",
+   "type": "funding",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "NBC News",
+     "u": "https://www.nbcnews.com/politics/politics-news/epstein-saga-engulfs-les-wexner-ohio-rcna258821"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "columbus_partnership",
+   "label": "Co-founded the Columbus Partnership.",
+   "type": "ownership",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "kirkland",
+   "t": "epstein",
+   "label": "Represented Epstein on the 2008 plea deal; paid more than $3.1M between 2008 and 2011.",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "starr",
+   "t": "kirkland",
+   "label": "Ken Starr was a Kirkland partner who represented Epstein.",
+   "type": "employment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "lefkowitz",
+   "t": "kirkland",
+   "label": "Jay Lefkowitz was a Kirkland litigation partner who advised Epstein.",
+   "type": "employment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "acosta",
+   "t": "kirkland",
+   "label": "Acosta had been a Kirkland litigator before the Labor Department; he later resigned over criticism of the 2008 deal.",
+   "type": "employment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "karp_b",
+   "t": "paul_weiss",
+   "label": "Karp was Paul Weiss's chairman.",
+   "type": "office",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "paul_weiss",
+   "t": "black",
+   "label": "Paul Weiss, through Karp, represented Leon Black in a fee dispute with Epstein.",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/karp-advised-epstein-on-fight-over-plea-deal-months-before-death"
+    }
+   ]
+  },
+  {
+   "f": "paul_weiss",
+   "t": "epstein",
+   "label": "Firm says it was adverse to Epstein and never represented him; 2019 emails show Karp reviewing Epstein's plea-deal strategy.",
+   "type": "legal representation",
+   "status": "not-established",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/karp-advised-epstein-on-fight-over-plea-deal-months-before-death"
+    }
+   ]
+  },
+  {
+   "f": "karp_b",
+   "t": "epstein",
+   "label": "Emails show Karp discussing Ruemmler's career with Epstein (2015, 2018) and reviewing a draft on the plea deal (2019).",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    },
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/karp-advised-epstein-on-fight-over-plea-deal-months-before-death"
+    }
+   ]
+  },
+  {
+   "f": "latham",
+   "t": "epstein",
+   "label": "Latham told CNN Epstein was never a firm client; the privilege log lists Ruemmler in 300+ emails.",
+   "type": "legal representation",
+   "status": "not-established",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/?p=1693353"
+    },
+    {
+     "t": "CNN via ABC17",
+     "u": "https://abc17news.com/?p=1588299"
+    }
+   ]
+  },
+  {
+   "f": "ruemmler",
+   "t": "goldman",
+   "label": "Became Goldman's chief legal officer in 2021; resigned in Feb 2026 over her Epstein ties in the documents.",
+   "type": "employment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Dawn / Reuters",
+     "u": "https://www.dawn.com/news/1973090"
+    }
+   ]
+  },
+  {
+   "f": "ruemmler",
+   "t": "hogan_lovells",
+   "label": "Forwarded Epstein her Nov 2015 messages about a possible Hogan Lovells job.",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/esg/epstein-explored-big-law-careers-leadership-with-ruemmler-karp"
+    }
+   ]
+  },
+  {
+   "f": "weinberg",
+   "t": "epstein",
+   "label": "Part of the legal team that filed the July 2019 motion defending the non-prosecution agreement.",
+   "type": "legal representation",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/karp-advised-epstein-on-fight-over-plea-deal-months-before-death"
+    }
+   ]
+  },
+  {
+   "f": "binsulayem",
+   "t": "dp_world",
+   "label": "Chairman since 2007 and chairman and CEO since 2016 per Maritime Executive (other outlets say 2019).",
+   "type": "office",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Maritime Executive",
+     "u": "https://maritime-executive.com/article/dp-world-changes-leadership-responding-to-pressure-over-epstein-scandal"
+    },
+    {
+     "t": "Free Press Journal",
+     "u": "https://www.freepressjournal.in/amp/business/jeffrey-epstein-dp-world-sultan-ahmed-bin-sulayem-essa-kazim-yuvraj-narayan"
+    }
+   ]
+  },
+  {
+   "f": "dp_world",
+   "t": "binsulayem",
+   "label": "DP World said he resigned effective immediately on 13 Feb 2026.",
+   "type": "official act",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "ABC News",
+     "u": "https://abc11.com/post/emirati-billionaire-resigns-ceo-logistics-firm-following-epstein-revelations/18596169/"
+    },
+    {
+     "t": "Freightwaves",
+     "u": "https://www.freightwaves.com/?p=570501"
+    }
+   ]
+  },
+  {
+   "f": "kazim",
+   "t": "dp_world",
+   "label": "Appointed chairman on 13 Feb 2026.",
+   "type": "appointment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/news/2026/02/16/dubais-dp-world-replaces-chairman-amid-scrutiny-over-epstein-ties/"
+    }
+   ]
+  },
+  {
+   "f": "narayan",
+   "t": "dp_world",
+   "label": "Appointed group CEO on 13 Feb 2026.",
+   "type": "appointment",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/news/2026/02/16/dubais-dp-world-replaces-chairman-amid-scrutiny-over-epstein-ties/"
+    }
+   ]
+  },
+  {
+   "f": "bii",
+   "t": "dp_world",
+   "label": "UK development finance agency said it would suspend new investment with DP World.",
+   "type": "official act",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "AAP via The New Daily",
+     "u": "https://www.thenewdaily.com.au/news/world/2026/02/14/dp-world-boss-epstein"
+    }
+   ]
+  },
+  {
+   "f": "la_caisse",
+   "t": "dp_world",
+   "label": "Paused new investment, then said DP World took appropriate measures and it would work with the new leadership.",
+   "type": "official act",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/news/2026/02/16/dubais-dp-world-replaces-chairman-amid-scrutiny-over-epstein-ties/"
+    },
+    {
+     "t": "AAP via The New Daily",
+     "u": "https://www.thenewdaily.com.au/news/world/2026/02/14/dp-world-boss-epstein"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "dp_world",
+   "label": "Emails show Epstein advising on approaching the UK government for a London project and, in one, pitching DP World as a buyer of Israeli ports.",
+   "type": "proposal",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/news/2026/02/16/dubais-dp-world-replaces-chairman-amid-scrutiny-over-epstein-ties/"
+    }
+   ]
+  },
+  {
+   "f": "bannon",
+   "t": "binsulayem",
+   "label": "Emails show Epstein copied on Bannon–bin Sulayem exchanges about meetings in Washington.",
+   "type": "introduction",
+   "status": "reported",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "CNN via KRDO",
+     "u": "https://krdo.com/news/2026/02/16/dubais-dp-world-replaces-chairman-amid-scrutiny-over-epstein-ties/"
+    }
+   ]
+  },
+  {
+   "f": "khanna",
+   "t": "binsulayem",
+   "label": "Khanna and Massie identified bin Sulayem as the sender of a previously redacted email in the DOJ release.",
+   "type": "reporting",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "FreightWaves",
+     "u": "https://www.freightwaves.com/?p=570501"
+    },
+    {
+     "t": "Dawn",
+     "u": "https://www.dawn.com/news/1973090"
+    }
+   ]
+  },
+  {
+   "f": "usvi",
+   "t": "fidelity",
+   "label": "USVI Attorney General subpoenaed Fidelity in July 2020 for records on Epstein and 30+ linked entities.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    },
+    {
+     "t": "Bloomberg",
+     "u": "https://www.bloomberg.com/news/articles/2020-07-24/wells-fargo-leumi-5-others-asked-for-details-on-epstein-money"
+    }
+   ]
+  },
+  {
+   "f": "usvi",
+   "t": "northern_trust",
+   "label": "Subpoenaed by the USVI Attorney General in July 2020.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    }
+   ]
+  },
+  {
+   "f": "usvi",
+   "t": "svb",
+   "label": "Subpoenaed by the USVI Attorney General in July 2020.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    }
+   ]
+  },
+  {
+   "f": "fidelity",
+   "t": "epstein",
+   "label": "Whether Fidelity held Epstein accounts is not shown by the subpoena alone.",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    }
+   ]
+  },
+  {
+   "f": "northern_trust",
+   "t": "epstein",
+   "label": "Whether Northern Trust held Epstein accounts is not shown by the subpoena alone.",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    }
+   ]
+  },
+  {
+   "f": "svb",
+   "t": "epstein",
+   "label": "Whether SVB held Epstein accounts is not shown by the subpoena alone.",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/virgin-islands-government-subpoenas-multiple-banks-jeffrey-epsteins-72018117"
+    }
+   ]
+  },
+  {
+   "f": "bmo",
+   "t": "ap_narrows_account",
+   "label": "BMO is the trustee on the AP Narrows Holding LP account.",
+   "type": "trustee",
+   "status": "verified",
+   "src": "bfs1",
+   "refs": [
+    {
+     "t": "Map node: AP Narrows / BMO Trustee account",
+     "u": "index.html"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "epstein_na_house",
+   "label": "Epstein bought a house in New Albany in 1994, about half a mile from the Wexner home.",
+   "type": "ownership",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "epstein_na_house",
+   "t": "new_albany_oh",
+   "label": "The house is in New Albany, Ohio.",
+   "type": "association",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Axios Columbus",
+     "u": "https://www.axios.com/newsletters/axios-columbus-a96643d0-b40c-4d83-9a14-a3c7e61c18ba"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "lbrands",
+   "label": "Wexner founded L Brands (The Limited), parent of Victoria's Secret.",
+   "type": "ownership",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "The Lantern",
+     "u": "https://www.thelantern.com/2026/04/survivors-of-epstein-are-suing-les-wexner/"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "wexner_depo_2026",
+   "label": "Deposed on 18 Feb 2026 at his New Albany home; NBC4 reported he paid Epstein about $200M over the years (transcript not yet seen).",
+   "type": "testimony",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "PBS NewsHour / AP",
+     "u": "https://www.pbs.org/newshour/world/billionaire-les-wexner-is-being-deposed-in-the-epstein-files-probe-heres-what-documents-show-about-their-relationship"
+    }
+   ]
+  },
+  {
+   "f": "house_oversight",
+   "t": "wexner_depo_2026",
+   "label": "The committee took the deposition after January subpoenas to Wexner, Indyke and Kahn.",
+   "type": "testimony",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "PBS NewsHour / AP",
+     "u": "https://www.pbs.org/newshour/world/billionaire-les-wexner-is-being-deposed-in-the-epstein-files-probe-heres-what-documents-show-about-their-relationship"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "wexner_suit_2026",
+   "label": "Eleven women sued Wexner; he has not been charged and a spokesperson expressed sympathy for the victims.",
+   "type": "litigation",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "News From The States",
+     "u": "https://www.newsfromthestates.com/node/400422"
+    },
+    {
+     "t": "WVXU",
+     "u": "https://www.wvxu.org/2026-04-01/jeffrey-epstein-victims-sue-billionaire-les-wexner-over-claims-he-enabled-the-late-sex-offender"
+    }
+   ]
+  },
+  {
+   "f": "wexner_foundation",
+   "t": "wexner_suit_2026",
+   "label": "The foundation is a defendant; the suit also cites the decision giving Epstein power of attorney.",
+   "type": "litigation",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "The Lantern",
+     "u": "https://www.thelantern.com/2026/04/survivors-of-epstein-are-suing-les-wexner/"
+    },
+    {
+     "t": "Religion News Service",
+     "u": "https://religionnews.com/?p=4256814"
+    }
+   ]
+  },
+  {
+   "f": "nyc_house",
+   "t": "wexner_suit_2026",
+   "label": "Nine East 71st Street Corp. is a named defendant; plaintiffs say the townhouse was transferred to Epstein.",
+   "type": "litigation",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Sauder Schelkopf notice",
+     "u": "https://sauderschelkopf.com/?p=22459"
+    },
+    {
+     "t": "Religion News Service",
+     "u": "https://religionnews.com/?p=4256814"
+    }
+   ]
+  },
+  {
+   "f": "binsulayem",
+   "t": "pcfc",
+   "label": "Chaired the Ports, Customs and Free Zone Corporation; Dubai's ruler decreed a new chairman on 13 Feb 2026.",
+   "type": "office",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Malay Mail",
+     "u": "https://www.malaymail.com/news/world/2026/02/15/who-is-sultan-bin-sulayem-emirati-businessman-linked-to-epstein-files/209204"
+    },
+    {
+     "t": "Algemeiner / Reuters",
+     "u": "https://www.algemeiner.com/?p=765931"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "torture_email_2009",
+   "label": "Epstein wrote: \"where are you? are you ok, I loved the torture video\" (24 Apr 2009).",
+   "type": "email correspondence",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "The Independent via AOL",
+     "u": "https://www.aol.com/news/epstein-told-emirati-billionaire-loved-151638150.html"
+    },
+    {
+     "t": "GV Wire / NYT",
+     "u": "https://gvwire.com/2026/02/13/dubai-ports-boss-resigns-amid-fallout-from-epstein-files/"
+    }
+   ]
+  },
+  {
+   "f": "torture_email_2009",
+   "t": "binsulayem",
+   "label": "Massie and Khanna identified the redacted recipient address as bin Sulayem's; he is reported to have replied that he was in China. The video is unidentified and no criminal allegation has been made.",
+   "type": "email correspondence",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "The Independent via AOL",
+     "u": "https://www.aol.com/news/epstein-told-emirati-billionaire-loved-151638150.html"
+    },
+    {
+     "t": "Cyprus Mail",
+     "u": "https://cyprus-mail.com/2026/02/10/us-congressman-names-limassol-port-operator-in-epstein-torture-video-email"
+    }
+   ]
+  },
+  {
+   "f": "massie",
+   "t": "torture_email_2009",
+   "label": "Massie viewed the unredacted file at DOJ and publicly named the recipient.",
+   "type": "reporting",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Cyprus Mail",
+     "u": "https://cyprus-mail.com/2026/02/10/us-congressman-names-limassol-port-operator-in-epstein-torture-video-email"
+    },
+    {
+     "t": "The Independent via AOL",
+     "u": "https://www.aol.com/news/epstein-told-emirati-billionaire-loved-151638150.html"
+    }
+   ]
+  },
+  {
+   "f": "khanna",
+   "t": "torture_email_2009",
+   "label": "Khanna, with Massie, saw the unredacted file and named the recipient on 10 Feb 2026.",
+   "type": "reporting",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Il Sole 24 Ore",
+     "u": "https://en.ilsole24ore.com/art/epstein-case-six-names-powerful-men-unveiled-usa-deputies-censure-justice-department-AI3DADMB"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "senate_report",
+   "label": "Wyden released the 67-page report on 4 Aug 2026.",
+   "type": "authorship",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Senate Finance Committee",
+     "u": "https://www.finance.senate.gov/ranking-members-news/wyden-releases-new-report-on-failure-of-wall-street-banks-to-blow-the-whistle-on-jeffrey-epsteins-sex-trafficking-and-money-laundering-schemes"
+    },
+    {
+     "t": "Report PDF",
+     "u": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf"
+    }
+   ]
+  },
+  {
+   "f": "senate_report",
+   "t": "bofa",
+   "label": "Says Bank of America likely violated anti-money-laundering law by failing to report $170M from Leon Black to Epstein.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Report PDF",
+     "u": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf"
+    },
+    {
+     "t": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/8/4/senate-democrats-report-says-major-banks-looked-the-other-way-on-epstein"
+    }
+   ]
+  },
+  {
+   "f": "senate_report",
+   "t": "jpm",
+   "label": "Says JPMorgan executives coached Epstein on withdrawing cash through shell companies.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Report PDF",
+     "u": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf"
+    },
+    {
+     "t": "American Banker",
+     "u": "https://www.americanbanker.com/news/senate-report-three-big-banks-ignored-red-flags-on-epstein"
+    }
+   ]
+  },
+  {
+   "f": "senate_report",
+   "t": "deutsche",
+   "label": "Names Deutsche Bank bankers among the 13 whose conduct merits investigation.",
+   "type": "investigation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Report PDF",
+     "u": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf"
+    },
+    {
+     "t": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/8/4/senate-democrats-report-says-major-banks-looked-the-other-way-on-epstein"
+    }
+   ]
+  },
+  {
+   "f": "senate_report",
+   "t": "black",
+   "label": "Calls Leon Black the largest source of funding for Epstein; Black's lawyer disputes the report.",
+   "type": "payments",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Report PDF",
+     "u": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf"
+    },
+    {
+     "t": "American Banker",
+     "u": "https://www.americanbanker.com/news/senate-report-three-big-banks-ignored-red-flags-on-epstein"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "bnym",
+   "label": "Wyden expanded the Senate Finance probe to BNY Mellon and sent letters in January–March 2026.",
+   "type": "investigation",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Raw Story",
+     "u": "https://www.rawstory.com/raw-investigates/trump-epstein-banks/?rand=926"
+    }
+   ]
+  },
+  {
+   "f": "bnym",
+   "t": "epstein",
+   "label": "Senate letters say hundreds of millions of dollars moved through BNY accounts; BNY says it had no involvement in Epstein's crimes.",
+   "type": "banking",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Raw Story",
+     "u": "https://www.rawstory.com/raw-investigates/trump-epstein-banks/?rand=926"
+    },
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/bny-wins-dismissal-of-all-claims-in-epstein-victims-lawsuit"
+    }
+   ]
+  },
+  {
+   "f": "rakoff",
+   "t": "janedoe_suit",
+   "label": "Judge Rakoff oversees both Jane Doe class actions.",
+   "type": "official act",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/bny-wins-dismissal-of-all-claims-in-epstein-victims-lawsuit"
+    },
+    {
+     "t": "Reuters via Yahoo",
+     "u": "https://finance.yahoo.com/news/us-judge-says-bank-americas-005803050.html"
+    }
+   ]
+  },
+  {
+   "f": "janedoe_suit",
+   "t": "bnym",
+   "label": "Dismissed all claims against BNY on 29 Jan 2026; plaintiffs plan to appeal.",
+   "type": "litigation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bloomberglaw.com/banking-law/bny-wins-dismissal-of-all-claims-in-epstein-victims-lawsuit"
+    },
+    {
+     "t": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/4/3/lawyers-search-for-epstein-survivors-for-bank-of-america-72-5m-settlement"
+    }
+   ]
+  },
+  {
+   "f": "janedoe_suit",
+   "t": "bofa",
+   "label": "Two claims survived; Bank of America settled for $72.5M, finally approved, without admitting wrongdoing.",
+   "type": "litigation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Good Morning America",
+     "u": "https://www.goodmorningamerica.com/news/story/judge-final-approval-bank-americas-72-million-settlement-136002279"
+    },
+    {
+     "t": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/4/3/lawyers-search-for-epstein-survivors-for-bank-of-america-72-5m-settlement"
+    }
+   ]
+  },
+  {
+   "f": "boies",
+   "t": "janedoe_suit",
+   "label": "Boies is a lawyer for Jane Doe and said he would appeal the BNY dismissal.",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Reuters via ODT",
+     "u": "https://www.odt.co.nz/news/world/judge-rules-bank-must-face-lawsuit-over-epstein-ties"
+    }
+   ]
+  },
+  {
+   "f": "lefkowitz",
+   "t": "npa_clause",
+   "label": "Asked the US Attorney's Office to remove language appointing a guardian ad litem for up to 40 victims and threatened to escalate \"in Washington.\"",
+   "type": "proposal",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bgov.com/new-york-brief/epsteins-lawyer-sought-to-vet-influence-victims-attorneys"
+    }
+   ]
+  },
+  {
+   "f": "kirkland",
+   "t": "npa_clause",
+   "label": "Kirkland lawyers complained to DOJ leaders in Washington; when Epstein signed, the legal-representation section had changed.",
+   "type": "proposal",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bgov.com/new-york-brief/epsteins-lawyer-sought-to-vet-influence-victims-attorneys"
+    }
+   ]
+  },
+  {
+   "f": "npa_clause",
+   "t": "npa",
+   "label": "The clause is part of the 2008 non-prosecution agreement; DOJ's 11 Dec 2007 letter says the Office had the exclusive right to choose the victims' attorney.",
+   "type": "association",
+   "status": "verified",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "DOJ letter to Lefkowitz, EFTA00013538",
+     "u": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00013538.pdf"
+    },
+    {
+     "t": "Bloomberg Law",
+     "u": "https://news.bgov.com/new-york-brief/epsteins-lawyer-sought-to-vet-influence-victims-attorneys"
+    }
+   ]
+  },
+  {
+   "f": "weingarten",
+   "t": "epstein",
+   "label": "Represented Epstein after his July 2019 arrest, with Martin Weinberg and Marc Fernich (not the 2008 team).",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "nylj19",
+   "refs": [
+    {
+     "t": "New York Law Journal: Epstein attorneys argue for home detention (11 Jul 2019)",
+     "u": "https://law.com/newyorklawjournal/2019/07/11/epstein-attorneys-argue-for-home-detention-lay-out-14-conditions-for-release"
+    }
+   ]
+  },
+  {
+   "f": "lefcourt",
+   "t": "epstein",
+   "label": "Member of Epstein's 2007–08 defense team.",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "law18",
+   "refs": [
+    {
+     "t": "Law.com, Daily Dicta: Epstein's all-star defense team (5 Dec 2018)",
+     "u": "https://law.com/litigationdaily/2018/12/05/daily-dicta-why-jeffrey-epsteins-all-star-defense-team-may-be-the-victim-of-its-own-success"
+    }
+   ]
+  },
+  {
+   "f": "guy_lewis",
+   "t": "epstein",
+   "label": "Member of Epstein's 2007–08 defense team.",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "law18",
+   "refs": [
+    {
+     "t": "Law.com, Daily Dicta: Epstein's all-star defense team (5 Dec 2018)",
+     "u": "https://law.com/litigationdaily/2018/12/05/daily-dicta-why-jeffrey-epsteins-all-star-defense-team-may-be-the-victim-of-its-own-success"
+    }
+   ]
+  },
+  {
+   "f": "weingarten",
+   "t": "steptoe",
+   "label": "Weingarten is a Steptoe & Johnson partner.",
+   "type": "employment",
+   "status": "verified",
+   "src": "nylj19",
+   "refs": [
+    {
+     "t": "New York Law Journal: Epstein attorneys argue for home detention (11 Jul 2019)",
+     "u": "https://law.com/newyorklawjournal/2019/07/11/epstein-attorneys-argue-for-home-detention-lay-out-14-conditions-for-release"
+    }
+   ]
+  },
+  {
+   "f": "edwards_henderson",
+   "t": "npa",
+   "label": "Edwards' firm represented victims challenging the non-prosecution agreement under the Crime Victims' Rights Act.",
+   "type": "litigation",
+   "status": "reported",
+   "src": "bfs2",
+   "refs": [
+    {
+     "t": "Judge Marra ruling (HR Dive)",
+     "u": "https://gcp.hrdive.com/news/acosta-plea-deal-violated-federal-law-judge-rules/549073"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "state": "CT",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ct": {
+   "t": "2026 United States House of Representatives elections in Connecticut — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Connecticut"
+  },
+  "gp_ct": {
+   "t": "The Green Papers: CT 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/CT"
+  },
+  "ctmirror_ct1": {
+   "t": "CT Mirror — John Larson, Luke Bronin primary election results (Aug 11, 2026)",
+   "u": "https://ctmirror.org/2026/08/11/john-larson-luke-bronin-primary-election-results/"
+  },
+  "bp_ct1": {
+   "t": "Ballotpedia News — Bronin defeated incumbent Larson in CT-1 Democratic primary",
+   "u": "https://news.ballotpedia.org/2026/08/13/luke-bronin-d-defeated-incumbent-john-larson-d-ruth-fortune-d-and-jillian-gilchrest-d-in-the-democratic-primary-for-connecticuts-1st-congressional-district-on-august-11-2026/"
+  },
+  "sots_westport": {
+   "t": "CT Secretary of the State — Westport sample ballot, Nov 3 2026",
+   "u": "https://portal.ct.gov/-/media/sots/electionservices/town_ballots/2026/nov-2026/westport_sample.pdf"
+  },
+  "sots_nbranford": {
+   "t": "CT Secretary of the State — North Branford sample ballot, Nov 3 2026",
+   "u": "https://portal.ct.gov/-/media/sots/electionservices/town_ballots/2026/nov-2026/north-branford_sample.pdf"
+  },
+  "sots_avon": {
+   "t": "CT Secretary of the State — Avon sample ballot (ADA), Nov 3 2026",
+   "u": "https://portal.ct.gov/-/media/sots/electionservices/town_ballots/2026/nov-ada-2026/avon_sample_ada.pdf"
+  }
+ },
+ "races": [
+  {
+   "race": "CT-01",
+   "incumbent": {
+    "name": "John Larson",
+    "party": "D",
+    "status": "Lost renomination"
+   },
+   "nominees": [
+    {
+     "name": "Luke Bronin",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ct-01-luke-bronin",
+     "fec": [
+      "H6CT01206"
+     ]
+    },
+    {
+     "name": "Amy Chai",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ct-01-amy-chai",
+     "fec": [
+      "H2CT03102"
+     ]
+    },
+    {
+     "name": "Mary L. Sanders",
+     "party": "G",
+     "incumbent": false,
+     "rec": "ct-01-mary-sanders",
+     "fec": [
+      "H2CT01239"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 11 primary: Bronin 53.5%, Larson 34.7% (AP, ~51% counted, per CT Mirror); Bronin ousted the incumbent. The Wikipedia page fetched predated the primary. Sanders (Green) comes from Green Papers only; no official CT-1 ballot checked.",
+   "c": [
+    "gp_ct",
+    "ctmirror_ct1",
+    "bp_ct1",
+    "wiki_ct"
+   ]
+  },
+  {
+   "race": "CT-02",
+   "incumbent": {
+    "name": "Joe Courtney",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Joe Courtney",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ct-02-joseph-courtney",
+     "fec": [
+      "H2CT02112"
+     ]
+    },
+    {
+     "name": "George Austin",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ct-02-george-austin",
+     "fec": [
+      "H6CT02196"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Per Green Papers, Austin is also on the Independent Party of Connecticut line. Kyle Gauck is write-in only. No official CT-2 ballot checked.",
+   "c": [
+    "gp_ct",
+    "wiki_ct"
+   ]
+  },
+  {
+   "race": "CT-03",
+   "incumbent": {
+    "name": "Rosa DeLauro",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rosa DeLauro",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ct-03-rosa-delauro",
+     "fec": [
+      "H0CT03072"
+     ]
+    },
+    {
+     "name": "Christopher Lancia",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ct-03-christopher-lancia",
+     "fec": [
+      "H6CT03178"
+     ]
+    },
+    {
+     "name": "Thomas Egan",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Egan is on the Independent Party of Connecticut line (official sample ballot); no FEC filing found. Andrew Rice is write-in only.",
+   "c": [
+    "sots_nbranford",
+    "gp_ct",
+    "wiki_ct"
+   ]
+  },
+  {
+   "race": "CT-04",
+   "incumbent": {
+    "name": "Jim Himes",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jim Himes",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ct-04-jim-himes",
+     "fec": [
+      "H8CT04172"
+     ]
+    },
+    {
+     "name": "Michael Goldstein",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ct-04-michael-goldstein",
+     "fec": [
+      "H0CT04229",
+      "H4CT04163",
+      "H6CT04143"
+     ]
+    },
+    {
+     "name": "Benjamin Wesley",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Aug 11 Republican primary: Goldstein defeated Dan Miressi (CT Mirror). Wesley is on the Independent Party of Connecticut line (official sample ballot); no FEC filing found.",
+   "c": [
+    "sots_westport",
+    "ctmirror_ct1",
+    "gp_ct"
+   ]
+  },
+  {
+   "race": "CT-05",
+   "incumbent": {
+    "name": "Jahana Hayes",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jahana Hayes",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ct-05-jahana-hayes",
+     "fec": [
+      "H8CT05245"
+     ]
+    },
+    {
+     "name": "Chris Shea",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ct-05-chris-shea",
+     "fec": [
+      "H6CT05231"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Hayes is also on the Working Families line. Aug 11 Republican primary: Shea defeated Jonathan De Barros. Wikipedia lists Jackson Taddeo-Waite as an independent filer, but he is not on the official sample ballot.",
+   "c": [
+    "sots_avon",
+    "ctmirror_ct1",
+    "gp_ct",
+    "wiki_ct"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,439 @@
+# THE EPSTEIN NETWORK — MASTER RESEARCH DOCUMENT
+### Full record with citations, verdicts, corrections, and open nodes
+**Observe The System · Status as of November 1, 2026 · Compiled from this thread + live verification** (§17 added 1 Nov 2026: the Swiss bank contract, the bank layer, the Rothschild question)
+
+---
+
+## HOW TO READ THIS
+
+| Mark | Meaning |
+|---|---|
+| ✅ HOLDS | Primary source or court record; plainly documented |
+| 📰 REPORTED | Named-outlet reporting; no primary document in hand |
+| ⚠️ CONTESTED | Credible competing accounts |
+| 🔴 SIGNAL | Structurally plausible; not documented; warrants investigation |
+| ❓ INCONCLUSIVE | Searched; evidence insufficient |
+| ⊘ UNSUPPORTED | Evidence runs against it |
+| ◈ LENS | Interpretive reading, labeled, never fact |
+
+**Standard:** Mentions in files are not allegations. Flight-log presence is not proof of participation in abuse. Family members and associates are scored separately. Network ties come from documents (money, contracts, travel, correspondence), never from identity.
+
+---
+
+## 0. CORRECTIONS TO EARLIER DRAFTS IN THIS THREAD
+
+Compiling this against live sources exposed errors in my earlier articles. These are fixed below; treat the old versions as superseded.
+
+| Earlier claim | Corrected finding |
+|---|---|
+| Harvard took $6.5M "after the 2008 conviction" | Harvard's own review put total Epstein gifts at about $9.1M, all given **1998–2008**, before the conviction. The post-conviction issue was access (visits, an office-style presence), not new money. |
+| MIT received $1.7M | MIT's Goodwin Procter review found about **$850K** total. Joi Ito's concealment of Epstein as "anonymous" stands. |
+| DOJ IG death report dated Nov 2021 | The Inspector General report was released **June 2023**. It found serious failures but **no evidence contradicting suicide**. |
+| MCC guard charges were dropped "unexplained" | The two guards were charged in 2019 and entered **deferred prosecution agreements**; charges were dismissed in 2021 after conditions (community service) were met. The dismissal had a stated mechanism. |
+| Judge Marra's 2019 CVRA ruling is settled | The Eleventh Circuit **en banc reversed** in 2020, holding victims' rights hadn't attached pre-charge. The 2019 ruling is real but not the final word. |
+| Acosta "never denied" the intelligence remark | Acosta **denied under oath** to House Oversight (Sept 2025) that he said it. The original claim is secondhand (reported 2019). |
+| Clinton: 26 flights, "office confirmed" | Logs reportedly show about 26 entries; Clinton's spokesperson acknowledged **four trips (2002–03)** and denied visiting the island. |
+| Kevin Spacey flew to Africa with Prince Andrew | The 2002 Africa trip involved Clinton, Spacey and Chris Tucker. Andrew wasn't on it. |
+| Hawking flew to Little St. James | He attended an Epstein-funded 2006 science event in the Virgin Islands. A visit to the island isn't established. |
+| PROMIS backdoor via Maxwell/Mossad = HOLDS | The Inslaw/PROMIS misappropriation dispute is real; the **Maxwell/Mossad backdoor distribution remains ⚠️ CONTESTED** (a DOJ special counsel found no credible support). |
+| "Individual 1" in sealed Epstein papers | That label belongs to a different case. Removed. |
+| Ohio ranch trafficking tied to Wexner | No source in hand. Removed. |
+| Brunel died in "the same prison" as Epstein | Different institutions (Paris, La Santé). Pattern comparison only. |
+| Barak: $2M+ from Epstein entities | Reporting commonly cites about **$1M** into Reporty/Carbyne via Epstein's Southern Trust. Higher figures appear only in secondary compilations. |
+| Recordings are "the live node," unlocated | Evidence is thinner than I framed it. See §8. |
+| Rothschild $25M fee "unverified" | Now **✅/📰**: a 5 Oct 2015 contract between Epstein's Southern Trust and Edmond de Rothschild Holding, fee scaled to the bank's DOJ penalty. See §17. |
+| "The Rothschild family" was a paying client (Kahn via Comer) | Narrowed to **one company**, the Swiss bank Edmond de Rothschild. No other Rothschild bank or family member paid him. See §17. |
+| His money sources never connect except through him | **Barely.** One banker, Paul Morris, carried the account from JPMorgan to Deutsche Bank and later joined Bank of America. See §17. |
+
+---
+
+## 1. EXECUTIVE SUMMARY
+
+1. **Established beyond dispute:** Epstein sexually abused and trafficked minors for decades; Ghislaine Maxwell helped and was convicted; powerful institutions and individuals kept relationships with him after his 2008 conviction; the 2008 deal was extraordinarily lenient; his wealth has never been traced to a verified source.
+2. **Disputed:** whether Epstein worked for any intelligence service; whether a blackmail archive existed; whether his death was suicide.
+3. **Newly changed in 2025–26:** Congress forced a mass release (3M+ pages, Jan 30, 2026). DOJ says there is **no "client list"** and no blackmail evidence. Critics say about half of the roughly 6M pages collected remain unreleased and some records are missing.
+4. **Still no prosecution of any client or co-conspirator.** Maxwell is the only person convicted in the federal case.
+
+---
+
+## 2. TIMELINE
+
+| Date | Event | Source |
+|---|---|---|
+| Jan 20, 1953 | Epstein born, Brooklyn | Public record |
+| 1973–75 | Teaches at Dalton School | NYT/Vanity Fair |
+| mid-1970s–1981 | Bear Stearns; departs 1981 (circumstances reported, not fully documented) | Press |
+| 1991 | Wexner grants Epstein sweeping power of attorney (per NYT 2019); Robert Maxwell dies Nov 5 | NYT; Maxwell biographies |
+| 1991–92 | Ghislaine Maxwell relocates to New York, becomes Epstein's close associate | Preston, *Maxwell* biography; press |
+| 1994–2002 | Virginia Giuffre recruited at 16–17 per her account and litigation | Giuffre v. Maxwell |
+| 2005–06 | Palm Beach police investigation | Palm Beach PD records; Brown/Miami Herald |
+| 2007–08 | Non-Prosecution Agreement; state plea June 2008; ~13 months served with work release | NPA text; court records |
+| 2011–2014 | Documented post-conviction meetings with prominent figures | NYT, WSJ reporting |
+| Nov 2018 | Julie K. Brown's Miami Herald series | Miami Herald |
+| Jul 6, 2019 | Arrest, SDNY sex-trafficking charges | SDNY |
+| Aug 10, 2019 | Death, MCC New York | NYC ME; DOJ OIG |
+| Jul 2, 2020 | Maxwell arrested | DOJ |
+| Dec 29, 2021 | Maxwell convicted on five of six counts | SDNY |
+| Jun 2022 | Maxwell sentenced to 20 years | SDNY |
+| 2022–23 | USVI estate settlement ($105M); JPMorgan settlements (USVI $75M; survivors' class $290M) | Court/press |
+| Sep 17, 2024 | Second Circuit upholds conviction | 2d Cir. |
+| Apr 2025 | Giuffre dies | Press |
+| Jul 2025 | DOJ/FBI memo: no client list, suicide finding | DOJ |
+| Aug 2025 | Maxwell moved to a Texas minimum-security camp | Press |
+| Oct 6, 2025 | Supreme Court denies Maxwell's petition | SCOTUS |
+| Nov 2025 | Epstein Files Transparency Act signed | Congress |
+| Dec 19, 2025–Jan 30, 2026 | DOJ rolling releases; final tranche 3M+ pages, 2,000 videos, 180,000 images | DOJ; AP |
+| Feb 9, 2026 | Maxwell takes the Fifth before House Oversight; counsel ties testimony to clemency | AP/Reuters |
+| Jul 29, 2026 | Senate unanimously passes resolution opposing Maxwell clemency | The Hill via Anadolu |
+| Oct 2026 | Democrats release a 50-page report on DOJ's handling; D.C. Circuit refuses DOJ stay in a records case (*Phang v. Blanche*, per secondary reporting) | TNR; secondary |
+
+---
+
+## 3. THE PEOPLE AND ROLES (documented connection types only)
+
+### 3.1 Core operators
+| Person | Documented role | Verdict | Source |
+|---|---|---|---|
+| Jeffrey Epstein | Principal; abuser; died in custody 2019 | ✅ | SDNY indictment; NYC ME |
+| Ghislaine Maxwell | Recruiter/manager; convicted of sex-trafficking conspiracy and related counts | ✅ | *U.S. v. Maxwell*, 20-cr-330 (SDNY) |
+| Sarah Kellen, Nadia Marcinkova, others | Named in 2008 NPA as potential co-conspirators; immunity under that agreement | ✅ NPA text; ⚠️ conduct disputed | NPA; civil filings |
+| Jean-Luc Brunel | Modeling-agency figure; accused by survivors; arrested Dec 2020; found dead Feb 2022 | 📰 / ✅ death | French authorities; press |
+
+### 3.2 Financial and institutional connections
+| Person/entity | Connection | Verdict | Source |
+|---|---|---|---|
+| Les Wexner | Principal early patron; broad power of attorney; Manhattan townhouse passed from his control to Epstein; says Epstein misappropriated funds, he cut ties ~2007; never charged | ✅ documents; ❓ origin of Epstein's wealth | NYT 2019; Wexner letter 2019 |
+| Leon Black | Paid Epstein ~$158M (2012–17) for tax/estate work per Apollo's Dechert review; resigned as CEO 2021; denies wrongdoing | ✅ payments; ⚠️ nature | Dechert review (Jan 2021); Senate Finance inquiry |
+| JPMorgan | Kept Epstein as client post-conviction; paid settlements | ✅ | Court settlements 2023 |
+| Jes Staley | Ex-JPMorgan/Barclays exec; UK regulator banned him over his Epstein relationship (upheld on appeal 2025) | 📰 | FCA decisions |
+| Harvard | ~$9.1M gifts (1998–2008); post-conviction campus access | ✅ | Harvard review 2020 |
+| MIT Media Lab | ~$850K; Ito concealed donor identity | ✅ | Goodwin Procter report 2020; Farrow, *New Yorker* |
+| USVI government | Tax benefits to Epstein entities; USVI AG sued estate/JPMorgan | ✅ | USVI AG filings |
+
+### 3.3 Social and professional contacts (travel/meetings; not proof of abuse)
+| Person | Documented fact | Verdict | Notes |
+|---|---|---|---|
+| Bill Clinton | Flight-log entries (~26 reported); spokesperson admits four trips 2002–03; denies island visit; photos released by House Democrats Dec 2025 | ✅ presence; ⚠️ extent | No allegation of crimes in the DOJ memo |
+| Donald Trump | Palm Beach acquaintance; 2002 praise of Epstein; later rupture (accounts differ); named 1,000+ times in files | ✅ acquaintance; ⚠️ nature | Mentions ≠ allegations; DOJ says no basis for charges; disputed 2003 "birthday letter" (Trump denies) |
+| Prince Andrew (Andrew Mountbatten-Windsor) | Flights/visits documented; Giuffre alleged abuse; settled 2022 without admission; royal titles removed Oct 2025 | ✅ visits; ⚠️ allegations denied | Sealed settlement amounts reported only |
+| Bill Gates | Several meetings 2011–14 per NYT/WSJ; he calls them a mistake | 📰 | No allegation of crimes |
+| Alan Dershowitz | Epstein defense lawyer; accused by Giuffre; denies; claim withdrawn 2022 | ✅ role; ⚠️ allegation | |
+| Ehud Barak | See §7 | ✅ relationship | |
+| Others in logs/files (scientists, executives) | Presence recorded | ✅ presence only | Do not infer wrongdoing from appearance |
+
+---
+
+## 4. THE FINANCIAL ARCHITECTURE
+
+**Estate:** about **$577M** at death per USVI probate filings ✅. Estate management disputes followed.
+
+**Source of wealth:** Epstein described himself as a manager for billionaires. No registered advisory footprint matching that claim has been produced; Wexner is the one major named client ✅/❓. His own explanation of wealth was never tested in a trial.
+
+**Unusual flows documented:**
+- Wexner POA and property transfer (NYT 2019; city records).
+- Black's ~$158M fees (Dechert).
+- Maxwell received **tens of millions** from Epstein per reporting (about $30M cited; bail filings and trial evidence) — exact breakdown rests on press summaries.
+- Bank role: JPMorgan's post-conviction handling produced settlements and executive consequences.
+
+**Counter-reading (not ruled out):** large-scale personal fraud, tax structuring, and fee-for-influence arrangements can produce the same pattern without any intelligence sponsor. The money record alone cannot distinguish these.
+
+**CBS reporting (2026):** tens of thousands of financial-record pages absent from the public set ⚠️ (DOJ cites privilege/privacy).
+
+---
+
+## 5. THE 2008 DEAL
+
+**Facts (✅ NPA text and court record):**
+- The NPA, signed 2007, covered Epstein and **named** potential co-conspirators; it barred federal prosecution in the Southern District of Florida.
+- Victims weren't consulted before it was finalized.
+- Epstein pleaded to state charges (soliciting a minor for prostitution), served about 13 months with work release.
+- Alexander Acosta was U.S. Attorney; his decision-making was reviewed.
+
+**Legal aftermath:**
+- Judge Marra (2019) found DOJ violated the Crime Victims' Rights Act; the **Eleventh Circuit en banc reversed (2020)** on the pre-charge issue.
+- DOJ's Office of Professional Responsibility (Nov 2020) found Acosta exercised **poor judgment** but did not commit professional misconduct.
+- SCOTUS denied Maxwell's petition (Oct 2025), upholding the view that the Florida NPA didn't bind SDNY.
+
+**Why it's still anomalous (🔴 structural, ✅ facts):** victim non-consultation, the lenient charge, and the work-release terms are far from routine. The explanation could be prosecutorial weakness, defense pressure (elite counsel), judgment failure, or outside influence. The record **supports the first three**; the fourth is unproven.
+
+---
+
+## 6. PROPERTIES AND ABUSE INFRASTRUCTURE
+
+| Property | Documented fact |
+|---|---|
+| 9 E 71st St, Manhattan | Large townhouse; major site in trial testimony; searched by FBI in July 2019 |
+| Palm Beach (El Brillo Way) | 2005 police investigation site |
+| Little St. James, USVI | Private island; FBI search Aug 2019; trial and civil testimony |
+| Zorro Ranch, New Mexico | Epstein property; New Mexico authorities revisited it in 2026 per reporting |
+| Paris apartment | European base |
+
+**SDNY 2019 filings:** prosecutors described seized photographs and CDs from the Manhattan safe ✅. Survivors described cameras ✅ (testimony). **DOJ's 2025 memo said it found no evidence of blackmail or a client list** ⚠️. The 2026 release contains thousands of videos and images; DOJ says these don't establish a client list.
+
+---
+
+## 7. THE INTELLIGENCE QUESTION — WHAT HOLDS AND WHAT DOESN'T
+
+### 7.1 Robert Maxwell
+- Born Ján Hoch; MP; publisher; looted pension funds; died Nov 1991 off the Canary Islands ✅.
+- Close ties to Israeli officials and burial in Jerusalem with senior attendees 📰.
+- Claims he worked for Mossad (Thomas & Dillon, 2002) 📰 — drawn from named and unnamed sources; the book is contested by some historians.
+- Ghislaine's moves after 1991 ✅ (public record). Any inheritance of an "intelligence function" is 🔴.
+
+### 7.2 Ari Ben-Menashe
+Former Israeli military-intelligence figure who claims he met Epstein and Robert Maxwell together in the 1980s. Single witness; credibility has been contested over his career 🔴.
+
+### 7.3 Acosta
+- 2019: a Daily Beast report (Vicky Ward) quoted a transition-team recollection that Acosta said Epstein "belonged to intelligence" 📰 (secondhand).
+- Acosta resigned in July 2019 over the plea deal ✅.
+- **Sept 2025:** Acosta told House Oversight under oath he didn't say it ✅ (testimony). So: reported claim vs. sworn denial ⚠️ CONTESTED.
+- Secondary compilations cite an FBI **confidential-source** report repeating that Dershowitz told Acosta Epstein "belonged to both U.S. and allied intelligence." Such reports are uncorroborated tips and unverified in my primary check 🔴.
+
+### 7.4 Ehud Barak
+Established from the 2026 releases and prior reporting:
+- Long friendship and regular correspondence with Epstein, including Barak's wife; Barak says he **regrets** it (NBC, Feb 2026) ✅.
+- Epstein invested roughly $1M in Reporty (later Carbyne), a Barak-chaired emergency-tech startup; Carbyne was sold to Axon in 2025 (per JNS) 📰.
+- Barak has denied financial dependence ("didn't support me or pay me") ⚠️.
+- Barak was never charged or investigated by U.S. authorities per available reporting ✅ absence.
+
+Claims **not** established at primary level in my check:
+- Epstein as a "co-opted Mossad agent" trained by Barak (cited from FBI informant material in secondary sources) 🔴.
+- Israeli intelligence officer staying at Epstein's apartment for weeks (reported in secondary compilations) 📰/🔴 — verify against the DOJ file numbers cited there.
+- Epstein email line denying working for Mossad (Dec 2018), cited from the files by compilers 🔴 verify.
+- JNS and others argue the files **debunk** a Mossad-link theory and show a business/personal relationship instead ⚠️.
+
+**Net:** a close, documented Epstein–Barak relationship with business and brokering elements ✅; a *state-intelligence operation* is 🔴 SIGNAL at most, and the files released so far have not confirmed it.
+
+### 7.5 What the U.S. government says
+- **DOJ/FBI (July 2025):** no client list; no evidence of blackmail; death was suicide ✅ (DOJ position).
+- **Jan 30, 2026 release:** about 3M pages, 2,000 videos, 180,000 images ✅; Blanche said no client list and signaled it was the last major release ✅.
+- Critics: roughly half of ~6M collected pages unreleased; CBS found tens of thousands of files removed after publication, leaving about 2.7M public pages; classified/FBI-log items questioned ✅/⚠️.
+- DOJ's Inspector General has opened a compliance review ✅ (CBS).
+
+---
+
+## 8. THE "RECORDINGS" QUESTION (revised)
+
+- **Established:** survivors testified about cameras ✅; prosecutors described seized photos/CDs ✅.
+- **Not established:** a comprehensive blackmail archive of powerful visitors; custody by any agency or party ❓.
+- **DOJ position:** no blackmail evidence found ⚠️.
+- **Open:** the unreleased portion of the file, the redaction decisions, and the missing financial pages mean the absence of evidence is *not yet* clean evidence of absence.
+
+My earlier framing ("recordings are the live leverage node") should be read as a **hypothesis**, not a finding.
+
+---
+
+## 9. DEATH IN CUSTODY
+
+| Item | Finding | Source |
+|---|---|---|
+| Aug 10, 2019 death at MCC | NYC ME ruled suicide by hanging | NYC ME |
+| Camera/monitoring failures | Two cameras outside the cell unusable for footage; staffing and check failures | DOJ OIG (Jun 2023) ✅ |
+| Guards | Falsified check records; charged; DPAs; dismissed 2021 | SDNY ✅ |
+| Cellmate | Transferred before death; Epstein on and then off suicide watch | OIG ✅ |
+| Dr. Michael Baden | Retained by family; said injuries (incl. hyoid) looked more like homicide | Baden interviews 📰 |
+| OIG conclusion | No evidence contradicting suicide | OIG ✅ |
+| DOJ/FBI 2025 | Suicide; released jail footage with one minute missing (system reset explanation) | DOJ ✅ |
+
+**Verdict:** institutional failure ✅; suicide ⚠️ CONTESTED by one credentialed pathologist and public skepticism, supported by the ME, OIG, FBI and DOJ. Homicide is ❓ not shown by any primary evidence. "Faked death" is ⊘.
+
+**Related:** Brunel's death (Feb 2022, awaiting trial) ✅ fact; official suicide; any link beyond pattern comparison is 🔴.
+
+---
+
+## 10. MAXWELL: CONVICTION AND AFTERMATH
+
+- Convicted Dec 29, 2021 (five of six counts) ✅; 20 years ✅.
+- Second Circuit affirmed Sept 17, 2024 ✅; SCOTUS denied Oct 6, 2025 ✅.
+- Transferred Aug 2025 to a Texas minimum-security camp ✅.
+- Feb 9, 2026: took the Fifth; counsel offered testimony favorable to Trump and Clinton if granted clemency ✅ (AP/Reuters).
+- Senate resolution against clemency, July 2026 ✅; Trump hasn't ruled it out per reporting.
+- The Maxwell trial evidence (survivor testimony: Jane, Kate, Carolyn, Annie Farmer; financial records; photographs) ✅.
+
+---
+
+## 11. THE NSA / ISRAEL LAYER (kept separate on purpose)
+
+**Documented:**
+- NSA's bulk programs (PRISM, UPSTREAM, Section 215, XKeyscore, MUSCULAR) ✅ (Snowden documents; FISC order BR 13-80; PCLOB 2014; *ACLU v. Clapper*, 2d Cir. 2015).
+- NSA–ISNU 2009 memorandum on raw SIGINT sharing, which contemplates incidental U.S.-person data with minimization requirements ✅ (*Guardian*, Sept 2013).
+- Stuxnet as joint U.S.–Israeli (NYT/Sanger 2012) 📰.
+- Pegasus/NSO targeting; U.S. Entity List (Nov 2021) ✅.
+
+**Not documented:** any NSA data on Epstein's visitors being shared with Israel; any NSA role in Epstein's operation; any state taskings behind Epstein. Those are 🔴/❓ **structural speculation**. The two systems being "complementary" is an analytic observation, not evidence of coordination.
+
+---
+
+## 12. WHAT THE RECORD CANNOT SUPPORT (current)
+
+| Claim | Status | Why |
+|---|---|---|
+| Epstein was a Mossad/CIA agent | 🔴 / ❓ | Sworn denial by Acosta; DOJ finds no evidence; some uncorroborated informant material |
+| A "client list" exists | ⚠️ (DOJ: no) | Black book exists; "client list" not found by DOJ |
+| Systematic blackmail used by a named agency | ❓ | No primary evidence |
+| Epstein murdered | ❓ | No primary evidence; one pathologist's opinion |
+| Epstein alive | ⊘ | Contrary evidence |
+| Any ethnic or religious group directed it | ⊘ | Not supported; the actors are named individuals and institutions |
+| Barak/Wexner knew of the abuse | ❓ | Relationships documented; knowledge not shown |
+| All people in files are implicated | ⊘ | Mentions and presence are not wrongdoing |
+
+---
+
+## 13. OPEN NODES
+
+1. **What remains unreleased** (~3M pages) and the legal basis for each withholding.
+2. **Missing financial records** (CBS) and whether DOJ can account for them.
+3. **Identities redacted** (lawmakers said they found more potential co-conspirators' names redacted) — pending court and congressional review.
+4. **Why no co-conspirator was charged** after the 2025–26 releases.
+5. **Origin of Epstein's wealth** — not traced.
+6. **Barak/Epstein business dealings** — emails exist; nobody has formally investigated.
+7. **Maxwell's clemency** and any testimony deal.
+8. **IG compliance review** outcome; D.C. Circuit record-access litigation.
+9. **FBI informant material** — which tips were investigated and how.
+10. **Acosta vs. transition-team account** — sworn denial vs. reported statement.
+
+---
+
+## 14. INTERPRETIVE LENS (◈ — labeled, not evidence)
+
+Read through a **Solve et Coagula** lens, a network of mutual exposure turns autonomous actors into managed ones. Read through a **Panopticon** lens, the mere possibility of a hidden archive compresses elite behavior. These are metaphors for *how an unproven blackmail structure would work if it existed*. They do not establish that one did. The documented floor is stronger and plainer: abuse, protection by status, institutional failures, and unequal accountability.
+
+---
+
+## 15. SOURCE REGISTRY
+
+**Court and government**
+- *United States v. Maxwell*, 20-cr-330 (S.D.N.Y.), trial record, Dec 2021; Second Circuit decision Sept 17, 2024; SCOTUS denial Oct 6, 2025.
+- Epstein Non-Prosecution Agreement (2007), and plea records (2008).
+- *Doe v. United States* (11th Cir. en banc, 2020) and *Jane Doe 1 v. United States* (S.D. Fla., Marra, 2019).
+- DOJ Office of Professional Responsibility report on the Epstein investigation (Nov 2020).
+- DOJ Office of the Inspector General, report on Epstein's death at MCC New York (June 2023).
+- DOJ/FBI memorandum on Epstein (July 2025).
+- DOJ Epstein Library releases under the Epstein Files Transparency Act (Dec 2025–Jan 30, 2026).
+- NYC Office of the Chief Medical Examiner statement (Aug 2019).
+- USVI Attorney General filings; USVI v. JPMorgan; JPMorgan survivor class settlement (2023).
+- House Oversight Committee: Acosta testimony (Sept 2025); Maxwell deposition (Feb 9, 2026).
+- FISC order BR 13-80 (Apr 2013); PCLOB report on Section 215 (Jan 2014); *ACLU v. Clapper* (2d Cir. 2015).
+
+**Reports and reviews**
+- Dechert LLP review for Apollo (Jan 2021) — Leon Black payments.
+- Harvard internal review of Epstein gifts (2020).
+- Goodwin Procter report for MIT (Jan 2020).
+- UK FCA decision on Jes Staley and tribunal outcome (2023–25).
+
+**Journalism and books**
+- Julie K. Brown, *Perversion of Justice* (2021) and Miami Herald series (Nov 2018).
+- Vicky Ward, *Daily Beast* (Jul 2019) on the Acosta remark; Ward, *Vanity Fair* (2003).
+- Ronan Farrow, *The New Yorker* (Sept 2019) on MIT Media Lab.
+- NYT investigations on Wexner and Epstein (2019); WSJ/NYT on post-conviction relationships.
+- NBC News (Feb 2026): Barak regrets knowing Epstein after documents detail the friendship.
+- AP and Reuters (Jan 30 and Feb 9–10, 2026): final DOJ release; Maxwell deposition.
+- CBS News (2026): files removed after publication; IG compliance review; missing records.
+- The New Republic (Oct 26, 2026): Democrats' 50-page report on DOJ handling.
+- JNS (2026): the argument that the files rebut a Mossad link.
+- Anadolu Agency (Jul 30, 2026), citing The Hill: Senate resolution on Maxwell clemency.
+- John Preston, *Maxwell: Fall of the House of Mirror* (2021); Gordon Thomas & Martin Dillon, *Robert Maxwell, Israel's Superspy* (2002).
+- *The Guardian* (Sept 11, 2013): NSA–ISNU memorandum; Snowden documents via Guardian/WaPo/Der Spiegel.
+- David Sanger, NYT (June 1, 2012) on Stuxnet.
+
+**Secondary compilations (leads only, not relied on):** aggregator wikis and Substack summaries of the DOJ release that cite document numbers. Use them to *find* items, then confirm in the DOJ library before publishing.
+
+---
+
+## 16. PUBLICATION NOTES
+
+- Safe to state plainly: the conviction, the abuse, the NPA terms, the Wexner/Black/JPMorgan/Harvard/MIT facts as corrected above, the DOJ's current position, the release statistics, the Barak friendship, and the Maxwell appeal history.
+- Write as "reported" or "alleged": Giuffre-related allegations against named individuals; the Acosta remark; informant claims; anything from secondary compilations.
+- Hold back: intelligence-agency attribution, blackmail-archive claims, and homicide claims, unless new primary evidence appears.
+- Re-check before publishing: status of the D.C. Circuit records case, Maxwell clemency, any new DOJ release, and IG compliance findings.
+
+---
+
+## 17. UPDATE, 1 NOVEMBER 2026: THE SWISS BANK, THE BANK LAYER, THE ROTHSCHILD QUESTION
+
+### 17.1 The Swiss bank contract
+| Item | Finding | Mark | Source |
+|---|---|---|---|
+| DOJ resolution | 18 Dec 2015: Edmond de Rothschild (Suisse) and (Lugano) sign a non-prosecution agreement under the Swiss Bank Program; penalty **$45.245M** | ✅ | DOJ press release, 18 Dec 2015 |
+| The contract | 5 Oct 2015, Southern Trust Co. (Epstein, president) ↔ Edmond de Rothschild Holding S.A.; signed by Ariane de Rothschild; "risk analysis and application of certain algorithms" | 📰 (document reported by several outlets) | Private Banking Magazin; IBTimes; CBS |
+| Fee terms | **$25M if the penalty fell under $75M; $10M if $75–150M**; due within 3 days of settlement | 📰 | Private Banking Magazin |
+| Outcome | Penalty landed in the band that paid the larger fee; transfers reported 17 and 21 Dec 2015 | ✅ penalty / 📰 transfers | DOJ; CBS; PBM |
+| The lawyer | Epstein introduced Kathryn Ruemmler to Ariane de Rothschild (Sept 2014); Ruemmler's Latham & Watkins team represented the bank before DOJ | 📰 | CBS, 14 Jul 2026 |
+| Contact | Correspondence and meetings 2013–19; Reuters found no apparent evidence of criminal wrongdoing by her | 📰 | Reuters, 5 Feb 2026 |
+| Influence on the penalty | Nothing released shows Epstein contacting prosecutors | ❓ | — |
+| Leads only (Le Monde, not independently confirmed) | Rød-Larsen/Colom introduction chain; Barak meetings; Apollo offer for the asset-management arm (2016, not completed); Epstein to Thiel: "I represent the Rothschilds" (statement only) | 📰 lead | Le Monde, 5 Feb 2026 |
+| $15M invoice (EFTA00586695), Deutsche Bank Trust Co. Americas | Invoice is a request, not proof of payment; not independently checked | ❓ | document copy |
+| 2019 FinCEN SAR naming Schwab, Southern Trust, Kahn | A SAR is not a finding | ❓ | document copy |
+
+### 17.2 The bank layer: who decided
+| Bank | Decision-makers in the record | Mark | Source |
+|---|---|---|---|
+| JPMorgan | Dimon (sworn, May 2023): Erdoes and Staley could drop Epstein; GC Stephen Cutler the "ultimate decider"; Cutler 2011: "should not be a client"; kept to 2013 | ✅ testimony | American Banker |
+| JPMorgan board | Derivative suit dismissed by Rakoff (Aug 2023) on demand futility; no board decision on Epstein in the record | ✅ | Paul, Weiss |
+| Deutsche Bank | 2013 approval by email, skipping the reputational-risk committee; RM Paul Morris; approved by Charles Packard; Feb 2015 committee: "business as usual" | ✅ NYDFS / 📰 names (NYT) | NYDFS consent order; Fox Business citing NYT |
+| Bank of America | Suit alleged Black's $170M went through BofA accounts; settled $72.5M, no admission; Black denies | 📰 allegation | Claims Journal |
+| Barclays | Staley CEO 2015–21; FCA lifetime ban upheld | ✅ | PBS; FCA |
+| Parents | Deutsche Bank AG → Deutsche Bank Trust Co. Americas; Bank of America → Merrill Lynch; JPMorgan absorbed Bear Stearns (2008) | ✅ | public record |
+| **Paul Morris** | On Epstein's JPMorgan account c. 2009–12 → Deutsche (late 2012; account followed Sept 2013) → Merrill (2016); contact to Jul 2019; gifts to Epstein and Groff; not accused, not a defendant | 📰 | ThinkAdvisor, May 2026 |
+
+Excluded on purpose: shared institutional shareholders (index funds own stakes in every bank; that link exists regardless of Epstein).
+
+### 17.3 The Rothschild question
+| Person / entity | What the record shows | Mark |
+|---|---|---|
+| Edmond de Rothschild bank / Ariane de Rothschild | §17.1 | ✅/📰 |
+| Benjamin de Rothschild (d. 2021) | Owner of the bank; no document ties him to the contract | ✅ ownership only |
+| Maxwell | No document showing contact with Ariane or the bank. Her own 2025 claim: Lynn Forester de Rothschild introduced Prince Andrew | 📰 claim |
+| Lynn Forester de Rothschild | Accounts of introductions: Dershowitz (his account), Andrew (Maxwell's claim), Mandelson (met Epstein at a de Rothschild house, Martha's Vineyard, per 2026 emails). Epstein's claim of divorce-era financial help: denied ("one hundred percent false"). No payment or business | 📰 / ⚠️ |
+| Annabelle Neilson (d. 2018) | 2010–11 emails offering to arrange women for Epstein; ages not stated. **Not a Rothschild link** | 📰 |
+| Rothschild & Co, David, Jacob, Evelyn | No documented business with Epstein; Jacob appears only in a forwarded family-name message (Le Monde) | ❓ / ⊘ as a network tie |
+
+**Net:** of Kahn's five paying clients, "the Rothschild family" is one Swiss bank. Many sources circulating on this topic are openly antisemitic; none are used.
+
+### 17.4 What the graph now shows (275 nodes, 474 edges)
+- With Epstein and Maxwell removed, the largest connected piece grows from 85 to **106** nodes: the three US banks join through Morris; the Swiss bank joins through the Justice Department (its 2015 NPA beside Epstein's 2008 NPA).
+- Strongest connectors: 2008 NPA (0.109), Lesley Groff (0.108), DOJ (0.103), East 66th Street (0.082), Barak, Little St. James, Paul Morris.
+- Leon Black's money remains a separate island; only the BofA allegation would join it.
+- Remove Morris and the three US banks separate again: one banker's career carries the finding. Re-check him first before print.
+
+**Sources (§17):** DOJ, 18 Dec 2015 (justice.gov/opa/pr/justice-department-announces-joint-resolution-two-banks-under-swiss-bank-program); Private Banking Magazin (private-banking-magazin.de/ariane-de-rothschild-jeffrey-epstein-files/); CBS News, 14 Jul 2026; IBTimes UK, Feb 2026; Reuters via Aaj English, 5 Feb 2026; Le Monde, 5 Feb 2026 (leads); American Banker (Dimon testimony); Paul, Weiss (derivative suit); Radical Compliance (NYDFS order); Fox Business citing NYT, Jul 2020; ThinkAdvisor, 28 May 2026; Claims Journal, 30 Mar 2026; PBS NewsHour, Jul 2026; finews.asia (EdR ownership); Wikipedia, Lynn Forester de Rothschild (citing New Yorker 2019, Vanity Fair 2019, Telegraph 2025, Guardian 2026); PA via AOL, Feb 2026 (Neilson).
+
+### 17.5 Update, 1 Nov 2026 (later): banks, funds and the jail's camera contracts (Ron's v4 audit, checked live)
+| Item | Finding | Mark |
+|---|---|---|
+| JPMorgan post-death SAR (unsealed, USVI case) | Listed 1 Goldman Sachs account and 3 HSBC Swiss private-bank accounts; no amounts. Goldman: ended 2010. | 📰 Reuters |
+| Wells Fargo · TD Bank · FirstBank Puerto Rico | Later-years accounts; TD closed the lawyer's and accountant's accounts in 2019; FirstBank inherited him with Chase's USVI operations (2002). Ron's "Bank of Puerto Rico" lead most likely = FirstBank PR; the post-2019 transfer itself still to verify. | 📰 WSJ |
+| Money out | Honeycomb ≥$60M (2016–19, $20M in Mar 2019) · Boothbay ~$38M · Tudor fund 2001–14 ($13.5M back) · Valar >$20M · Blockchain Capital $15M shares. All firms deny relationships. | 📰 WSJ |
+| Black, Oct 2015 | $10M to Southern Trust + $10M to Gratitude America (reportedly via BV70 LLC); ~$20M to a dozen women; Epstein helped route Ganieva's $18M NDA payments | 📰 NYT |
+| MCC cameras | Warden sought $800K (6 Sep 2018); Company 1 $698,108.99 (21 Sep 2018), Company 2 $34,089.28 (24 Sep 2018); TDY technicians pulled to guard posts; DVR 2 failed 29 Jul, found 8 Aug 2019 | ✅ OIG |
+| SigNet / Anixter as Companies 1 and 2 | Apr 2018 MCC email confirms SigNet camera-project talks; contract identities not independently opened here | ❓ to verify |
+| GEO Group | Only a footnote about a different facility; correctly excluded | ⊘ as a tie |
+| HBRK Associates | Payments "c/o HBRK" reported; originals not pulled | ❓ |
+
+**Re-asked with Epstein's own vehicles removed (Southern Trust, Gratitude America, Butterfly Trust, shells):** the main piece is 101 nodes; Black, Goldman, HSBC, Wells Fargo and every fund remain separate spokes; JPMorgan, Deutsche, BofA, FirstBank and the Swiss bank connect only through staff (Groff, Morris), the 2008 deal and the DOJ. New loop: Indyke – TD Bank – Kahn – Southern Trust. Strongest connector: Lesley Groff (0.123).
+
+*observe.the.system · Observe. Collapse. Reignite.*
+
+## 17.6 Verification pass, 4 November 2026
+
+Read against the DOJ release text and checked against news reports. Map now 389 nodes / 718 edges (606 verified, 59 to verify, 27 reported/planned/probable/scheduled).
+
+- **Upgraded to verified from the originals:** Southern Trust invoice to Ariane de Rothschild, $15M "pursuant to Agreement dated 3 November 2015", payable at Deutsche Bank Trust Company Americas (EFTA00586695). Jail cameras: SigNet $698,108 for 152 cameras (21 Sep 2018), Anixter $34,089.28 (24 Sep 2018), then new SigNet contracts after the death, $160,508 (12 Sep 2019) and $42,334.76 (14 Sep 2019) (EFTA00128262). Schwab 2019 SAR naming Southern Trust and Kahn (EFTA01656452; a bank report, not a finding).
+- **New documented ties:** Leon Black's BV70 LLC lent Epstein's Plan D, LLC $22.5M + $8M in early 2017 (art deal); $10M repaid 2018, rest unpaid at death (Dechert/Apollo 8-K, 2021); the $30.5M demand note signed by Epstein, 17 Apr 2017 (EFTA00808900). Plan D holds the G550 N212JE (EFTA00492133); JEGE owns the 727 N908JE and Hyperion owns/operates N909JE (FBI 2006, EFTA01688746). Elysium's administrative-services agreements cover BV70, LBF Holdings, LDB 2011 (EFTA02473864). HBRK Associates = Kahn's firm; wires from Epstein, Southern Trust, Southern Financial and Indyke PLLC accounts marked c/o HBRK; Bella Klein its Assistant Controller since 1999 (TD Bank SAR, EFTA01656524). Kahn and Klein donations to Del. Plaskett (reported, article in the files); Epstein texted Plaskett in the Feb 2019 hearing; censure failed Nov 2025 (Axios). Epstein asked Ruemmler to show Woody Allen and Soon-Yi Previn the White House; visit 27 Dec 2015 (NBC). William Barr added as a separate node from his father Donald Barr (kinship only; no inherited finding).
+- **News-confirmed:** Summers (AP), Musk (Time), Lutnick (CBS), Ferguson (STV), Bannon (NBC), bin Sulayem (WTOP/AP), Branson (PA).
+- **Held out:** five private individuals who appear only in email counts, with no documented role, are kept off the published map.
+- **Re-asked:** with Epstein, Maxwell and his own companies removed, the verified graph splits into 95 pieces; Black's entities still reach Epstein only through his vehicles (BV70 → Plan D). Top connectors unchanged: the 2008 NPA, DOJ, Groff, 301 East 66th Street, Paul Morris. New short loop: Southern Trust – HBRK – Kahn.
+
+## 17.7 Comparison framework and second verification pass, 4 November 2026
+
+Other documented networks used as a search checklist, not as evidence about Epstein: Sinaloa (Guzmán trial IT insider; García Luna convicted 2023 of cartel bribes), NXIVM (pretext recruitment, collateral), Nygård (company staff, funds and payroll, paid false affidavits — alleged), Weinstein (Kroll, Black Cube), FBI and Nassar (IG 2021), BBC and Savile (2016), Pennsylvania dioceses (2018 grand jury), Combs (2025 acquittal on racketeering — enterprise must be proven). Eight functions: recruitment fronts, payroll/money, logistics, officials, silencing accusers, institutions told, command, the insider.
+
+Results from the files: Kahn sent Deutsche Bank a euro payment instruction to Daniel Siad from Epstein's custody account (25/30 Apr 2014; cc Indyke, Bella Klein; EFTA01365981). Stanley Pottinger forwarded Brunel's description of Siad as a "scout" or recruiter to SDNY in May 2016 (EFTA01324971). JPMorgan wire to MC2 Model Management, Nov 2012 (EFTA01528262). FirstBank memo, Apr 2016: Platinum deposit client, >$5.3M, 7+ years, fees waived (EFTA01268751); grand-jury subpoena 31 Dec 2019. Calendar: breakfast with Ariane de Rothschild, Olivier Colom and Barak, 23 Sep 2013 (EFTA00383066). Brock Pierce on the $15M Coinbase sale, Feb 2018 (EFTA02523986). 2009 S.D. Fla. motion: Epstein's investigators contacting people who knew plaintiffs (EFTA00593771). Nikolic at bgC3; Warsh on a St Barths list; Toshiba solar proposal; Middleton 2013 contact. Bin Sulayem purchase claim not established (deeds name Great St Jim LLC). No bribe to an official found. Map: 408 nodes, 751 edges; 649 verified, 47 to verify.
+
+## 17.8 Third pass: published Rothschild/Barak claims checked, 4 November 2026
+
+Ron's article set (Overlords, Dynasty, Kait Justice, Truth Expedition, Drop Site PDF, YouTube transcripts) checked against the release. Verified: Sept 2015 draft agreement with DOJ fee clause (EFTA00310331); "DOJ settlement should be settled before any further dealings" (EFTA00844785); Ariane's 1MDB emails; 2013 calendar breakfast with Barak; $1M Southern Trust → Ergo Ltd. ("solely owned by EB") at Bank Leumi as a loan repayable in Reporty shares; $40K HBRK → Achrayut Leumit via Nili Priell Barak's details; Deutsche AML case 141374 answered "Friend"; Deutsche reference letter to Bank Leumi, Mar 2019; "did not want your name associated". Not found: $3.6M Toor wire; $4.64M total. Name-count test: ~34,000 lines / 11,743 docs; 37% bank disclaimer, 46% Ariane's header; 76% of docs only those. New chapter ep15_charges ("Why No One Else Has Been Charged"). Rothschild book leads register: rothschild-book-leads-v1.md. Map: 416 nodes, 775 edges; 671 verified, 46 to verify.
+
+## 17.9 Records compelled and the flight log mapped, 4 November 2026
+
+Subpoenas in the release (SDNY grand jury 2019–21): banks (JPMC, Deutsche, BofA, TD, Citi, UBS, FirstBank, Santander, UMB, Wells Fargo), Kahn and Indyke (18 Oct 2019), Boies Schiller (Feb 2019), tech/phone companies, airlines (Jan 2020), MCC and guards (Aug 2019). FBI had a subpoena ready for Wexner on 10 Jul 2019; withdrawn when he agreed to an interview (EFTA01249806). USVI civil subpoenas Jul 2020 (Bank Leumi, Schwab, Citi, Wells Fargo, SVB, Northern Trust, Fidelity, NFS). House Oversight subpoenaed JPM and Deutsche 18 Nov 2025; Black failed to appear 2026. No compulsory process found for EdR, Elysium/BV70. Flight log (Rodgers, via public transcription, 1995–2006) matched to 25 map people: Kellen 308 legs (77 St Thomas), Marcinko 125 (43), Brunel 30 (5), Clinton 25 (2002–03, none St Thomas; 22 shared with Kellen), Dubin 21, Perry Lang 13 (3), Dershowitz 12, Ross 12 (5), Summers 4 (1 St Thomas, Dec 2005), Trump 1 (1997), Andrew 1 (2000). Pre-1995 pages not transcribed. Map 419 nodes / 816 edges.

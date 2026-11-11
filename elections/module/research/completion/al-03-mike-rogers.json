@@ -1,0 +1,103 @@
+{
+ "id": "al-03-mike-rogers",
+ "cites": {
+  "rog_fd25": {
+   "t": "Michael Dennis Rogers, Annual Report for 2025 (paper filing), received May 14, 2026 (Filing ID #9116167) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/9116167.pdf"
+  },
+  "rog_rc05": {
+   "t": "House Roll Call 7, Jan. 6, 2005 (objection to Ohio's electoral votes) — Clerk of the U.S. House",
+   "u": "https://clerk.house.gov/evs/2005/roll007.xml"
+  },
+  "kal03mikerogers_bp": {
+   "t": "Mike Rogers (Alabama) — Ballotpedia (accessed 2026-10-08)",
+   "u": "https://ballotpedia.org/Mike_Rogers_%28Alabama%29"
+  },
+  "kal03mikerogers_rc2021_11": {
+   "t": "Roll Call 11, 117th Congress — objection to Pennsylvania electoral votes (2021-01-07) — Clerk of the House",
+   "u": "https://clerk.house.gov/Votes/202111"
+  },
+  "kal03mikerogers_rc2021_10": {
+   "t": "Roll Call 10, 117th Congress — objection to Arizona electoral votes (2021-01-06) — Clerk of the House",
+   "u": "https://clerk.house.gov/Votes/202110"
+  },
+  "kal03mikerogers_wiki": {
+   "t": "Mike Rogers (Alabama politician) — Wikipedia (accessed 2026-10-08)",
+   "u": "https://en.wikipedia.org/wiki/Mike_Rogers_(Alabama_politician)"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "disclosures": "done"
+ },
+ "checks": {
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2025 House annual report (paper filing) lists no foreign assets, income or positions. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13). Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down.",
+  "democracy": "Clerk roll calls 10 and 11 of 2021 read directly; Ballotpedia and Wikipedia for the Texas v. Pennsylvania amicus and Jan. 2021 statements. No statement on 2024 results found. UPDATE 2026-10-14: added the 2005 Ohio objection vote from the House roll call in the records profile (Not Voting)."
+ },
+ "finances": {
+  "trades": {
+   "count": 0,
+   "period": "2012–2026 (LegiStorm index)",
+   "overlap": []
+  },
+  "note": {
+   "t": "2025 annual report, filed on paper (received May 14, 2026). This is a handwritten paper filing; values were read visually from the scanned checkboxes, so ranges are approximate. Assets of roughly $510K–$1.2M: a 41% stake in Venture Properties LLC, which owns three commercial rental properties in Anniston (1204 Quintard Ave. about $250K–$500K; 1310 Quintard Ave. $50K–$100K; 123 E. 13th St.), a 20% stake in Capital Development LLC ($50K–$100K; its sole asset is about 100 acres of land in Anniston; property-sale income $50,001–$100,000), his spouse's Noble Bank stock ($100K–$250K) and Southern Company stock ($15K–$50K), two Alfa whole-life policies, and his spouse's Retirement Systems of Alabama pension (value undetermined). Schedule B: sold his 50% interest in Initial Investments LLC (out of business) on Oct. 21, 2025 for $250,001–$500,000. Liabilities: a Shellpoint mortgage on the primary residence ($500K–$1M), a Congressional Federal Credit Union mortgage on a second (D.C.-area) residence noted as sold in March 2025 ($100K–$250K), and a Fifth Third auto loan ($10K–$15K). Spouse income sources: state judicial salary, Alabama retirement pension, Alabama Power retirement plan. Uncompensated positions in the three LLCs. No stock trades in defense companies; no foreign assets or income.",
+   "c": [
+    "rog_fd25"
+   ]
+  },
+  "networth": {
+   "min": -754992,
+   "max": 589997,
+   "year": 2025,
+   "c": [
+    "rog_fd25"
+   ]
+  }
+ },
+ "democracy": [
+  {
+   "kind": "statement",
+   "d": "2005-01-06",
+   "t": "Recorded as 'Not Voting' on the objection to Ohio's 2004 electoral votes (House Roll Call 7; the objection failed 31–267).",
+   "c": [
+    "rog_rc05"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2020-12",
+   "t": "Signed the House Republicans' December 2020 amicus brief backing Texas v. Pennsylvania, which sought to overturn results in four states; the Supreme Court declined the case.",
+   "c": [
+    "kal03mikerogers_wiki"
+   ]
+  },
+  {
+   "kind": "objected",
+   "d": "2021-01-06",
+   "t": "Voted Yea on the objection to Arizona's electoral votes (failed 121–303).",
+   "c": [
+    "kal03mikerogers_rc2021_10",
+    "kal03mikerogers_bp"
+   ]
+  },
+  {
+   "kind": "objected",
+   "d": "2021-01-07",
+   "t": "Voted Yea on the objection to Pennsylvania's electoral votes (failed 138–282).",
+   "c": [
+    "kal03mikerogers_rc2021_11",
+    "kal03mikerogers_bp"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2021-01-07",
+   "t": "Was at the Capitol during the attack; the next day tweeted that 'there is no place for political violence in America.'",
+   "c": [
+    "kal03mikerogers_wiki"
+   ]
+  }
+ ],
+ "research_notes": "Net worth is approximate (handwritten form); one property value (123 E. 13th St.) is ambiguous between two checkboxes. Courts, ethics and money_history stay 'news' (CourtListener, ethics.house.gov and fec.gov unreachable here)."
+}

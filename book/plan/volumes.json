@@ -1,0 +1,2238 @@
+{
+ "_note": "Stage definitions for volumes built in stages whose ids are not simulation chapters. 'own' = simulation scenes this stage must place (the volume's own chapter scenes, split by period). Tools fall back to this file when a stage id is not in window.CHAPTERS.",
+ "cold_war": {
+  "vol": 3,
+  "chapter": "ch05",
+  "title": "The Cold War Architecture",
+  "subtitle": "Alliances, the Bomb and the Lobby, 1949–1967",
+  "stages": [
+   {
+    "id": "cw1",
+    "label": "Stage One",
+    "title": "Align",
+    "span": "1949–1953",
+    "years": [
+     1949,
+     1953
+    ],
+    "own": [
+     "s11"
+    ]
+   },
+   {
+    "id": "cw2",
+    "label": "Stage Two",
+    "title": "Retaliate",
+    "span": "1953–1956",
+    "years": [
+     1953,
+     1956
+    ],
+    "own": [
+     "lv_s01"
+    ]
+   },
+   {
+    "id": "cw3",
+    "label": "Stage Three",
+    "title": "Strike and Withdraw",
+    "span": "1956–1957",
+    "years": [
+     1956,
+     1957
+    ],
+    "own": [
+     "mg_s01"
+    ]
+   },
+   {
+    "id": "cw4",
+    "label": "Stage Four",
+    "title": "Arm",
+    "span": "1957–1962",
+    "years": [
+     1957,
+     1962
+    ],
+    "own": []
+   },
+   {
+    "id": "cw5",
+    "label": "Stage Five",
+    "title": "Confront",
+    "span": "1962–1963",
+    "years": [
+     1962,
+     1963
+    ],
+    "own": [
+     "s11a",
+     "s11b",
+     "s11c"
+    ]
+   },
+   {
+    "id": "cw6",
+    "label": "Stage Six",
+    "title": "Escalate",
+    "span": "1963–June 1967",
+    "years": [
+     1963,
+     1967
+    ],
+    "own": [
+     "s11d"
+    ]
+   }
+  ]
+ },
+ "divine": {
+  "vol": 4,
+  "title": "The Divine 3+1",
+  "subtitle": "The 3 Parents of Israel",
+  "span": "1067–2026",
+  "stages": [
+   {
+    "id": "dv1",
+    "label": "Part One",
+    "title": "Not Ordinary Cities",
+    "span": "Sovereignty, status and what a parent is"
+   },
+   {
+    "id": "dv2",
+    "label": "Part Two",
+    "title": "London: The Financial Parent",
+    "span": "1067–2026"
+   },
+   {
+    "id": "dv3",
+    "label": "Part Three",
+    "title": "The Vatican: The Theological Parent",
+    "span": "1831–2026"
+   },
+   {
+    "id": "dv4",
+    "label": "Part Four",
+    "title": "Washington: The Military Parent",
+    "span": "1790–2026"
+   },
+   {
+    "id": "dv5",
+    "label": "Part Five",
+    "title": "The Child: Israel's Government",
+    "span": "1948–2026"
+   },
+   {
+    "id": "dv6",
+    "label": "Part Six",
+    "title": "The Composite",
+    "span": "Three parents, one child"
+   }
+  ],
+  "parts_total": 6,
+  "absorbs": []
+ },
+ "money": {
+  "slot": "ch54",
+  "title": "Follow the Money",
+  "subtitle": "The Pro-Israel Lobby in American Government and Around the World",
+  "span": "1951–2026",
+  "intro": "pm_intro.html",
+  "stages": [
+   {
+    "id": "pm1",
+    "label": "Part One",
+    "title": "What Counts, and How It Moves",
+    "span": "Definitions and the legal channels"
+   },
+   {
+    "id": "pm2",
+    "label": "Part Two",
+    "title": "AIPAC: The Architecture",
+    "span": "1951–2026"
+   },
+   {
+    "id": "pm3",
+    "label": "Part Three",
+    "title": "The Money, Cycle by Cycle",
+    "span": "1990–2026"
+   },
+   {
+    "id": "pm4",
+    "label": "Part Four",
+    "title": "The Recipients",
+    "span": "Top recipients by party, 2016–2026"
+   },
+   {
+    "id": "pm5",
+    "label": "Part Five",
+    "title": "The Unseating Campaigns",
+    "span": "2002–2026"
+   },
+   {
+    "id": "pm6",
+    "label": "Part Six",
+    "title": "Refusing the Money, and Leaving Under Fire",
+    "span": "2019–2026"
+   },
+   {
+    "id": "pm7",
+    "label": "Part Seven",
+    "title": "The Trips",
+    "span": "Congress, statehouses and the AIEF"
+   },
+   {
+    "id": "pm8",
+    "label": "Part Eight",
+    "title": "State and Local",
+    "span": "Anti-boycott laws, bonds, police and statehouses"
+   },
+   {
+    "id": "pm9",
+    "label": "Part Nine",
+    "title": "The Lobby Abroad",
+    "span": "UK, Canada, Europe, Australia, Latin America, Africa, Asia"
+   },
+   {
+    "id": "pm10",
+    "label": "Part Ten",
+    "title": "The Whole Architecture, and What It Costs",
+    "span": "Synthesis"
+   }
+  ],
+  "absorbs": [
+   "ch38"
+  ]
+ },
+ "gaza": {
+  "slot": "ch11",
+  "absorbs": [
+   "ch09",
+   "ch45",
+   "ch39",
+   "ch31"
+  ],
+  "title": "Gaza, Documented",
+  "subtitle": "Palestine Under the Architecture, 1917–2026",
+  "span": "1917–2026",
+  "intro": "gz_intro.html",
+  "stages": [
+   {
+    "id": "gz1",
+    "label": "Part One",
+    "title": "Gaza Before the State, and the Refugees",
+    "span": "1917–1949"
+   },
+   {
+    "id": "gz2",
+    "label": "Part Two",
+    "title": "Egyptian Rule and the Occupation",
+    "span": "1949–1987"
+   },
+   {
+    "id": "gz3",
+    "label": "Part Three",
+    "title": "Uprising, Oslo, Settlements and Withdrawal",
+    "span": "1987–2005"
+   },
+   {
+    "id": "gz4",
+    "label": "Part Four",
+    "title": "The Blockade, and How It Works",
+    "span": "2006–2023"
+   },
+   {
+    "id": "gz5",
+    "label": "Part Five",
+    "title": "The Wars, 2008–2021",
+    "span": "2008–2021"
+   },
+   {
+    "id": "gz6",
+    "label": "Part Six",
+    "title": "October 7, 2023",
+    "span": "2023"
+   },
+   {
+    "id": "gz7",
+    "label": "Part Seven",
+    "title": "The War Since: Deaths, Famine and the Courts",
+    "span": "2023–2026"
+   },
+   {
+    "id": "gz8",
+    "label": "Part Eight",
+    "title": "The Money: Occupation, Aid and Reconstruction",
+    "span": "1967–2026"
+   },
+   {
+    "id": "gz9",
+    "label": "Part Nine",
+    "title": "Who Decides",
+    "span": "1948–2026"
+   },
+   {
+    "id": "gz11",
+    "label": "Part Ten",
+    "title": "The Plans for Gaza",
+    "span": "2024–2026"
+   },
+   {
+    "id": "gz12",
+    "label": "Part Eleven",
+    "title": "What Americans Were Shown",
+    "span": "2023–2026"
+   },
+   {
+    "id": "gz10",
+    "label": "Part Twelve",
+    "title": "Settled, Contested and Open",
+    "span": "Synthesis"
+   }
+  ]
+ },
+ "westbank": {
+  "after": "ch11",
+  "title": "The West Bank, Documented",
+  "subtitle": "Settlements, Separation and Expansion, 1947–2026",
+  "span": "1947–2026",
+  "intro": "wb_intro.html",
+  "parts_total": 13,
+  "stages": [
+   {
+    "id": "wb1",
+    "label": "Part One",
+    "title": "The Hill Country and the Partition",
+    "span": "1947–1949"
+   },
+   {
+    "id": "wb2",
+    "label": "Part Two",
+    "title": "Under Jordan",
+    "span": "1948–1967"
+   },
+   {
+    "id": "wb3",
+    "label": "Part Three",
+    "title": "1967: Occupation, and the First Settlements",
+    "span": "1967–1977"
+   },
+   {
+    "id": "wb4",
+    "label": "Part Four",
+    "title": "The Settlement Enterprise",
+    "span": "1977–1993"
+   },
+   {
+    "id": "wb5",
+    "label": "Part Five",
+    "title": "Oslo's Map: Areas A, B and C",
+    "span": "1993–2000"
+   },
+   {
+    "id": "wb6",
+    "label": "Part Six",
+    "title": "The Wall, the Roads and the Islands",
+    "span": "2000–2026"
+   },
+   {
+    "id": "wb7",
+    "label": "Part Seven",
+    "title": "Two Legal Systems, and the Watchers",
+    "span": "1967–2026"
+   },
+   {
+    "id": "wb8",
+    "label": "Part Eight",
+    "title": "Displacement, House by House",
+    "span": "1967–2026"
+   },
+   {
+    "id": "wb9",
+    "label": "Part Nine",
+    "title": "Since October 2023",
+    "span": "2023–2026"
+   },
+   {
+    "id": "wb10",
+    "label": "Part Ten",
+    "title": "The Law, and Why It Isn't Enforced",
+    "span": "1949–2026"
+   },
+   {
+    "id": "wb11",
+    "label": "Part Eleven",
+    "title": "The Split: Fatah's West Bank, Hamas's Gaza",
+    "span": "2006–2026"
+   },
+   {
+    "id": "wb12",
+    "label": "Part Twelve",
+    "title": "The Money",
+    "span": "1994–2026"
+   },
+   {
+    "id": "wb13",
+    "label": "Part Thirteen",
+    "title": "Settled, Contested and Open",
+    "span": "Synthesis"
+   }
+  ]
+ },
+ "press": {
+  "after": "ch11",
+  "title": "PRESS",
+  "subtitle": "The Dead of Gaza and the West Bank, and the Journalists Killed Counting Them",
+  "span": "2022–2026",
+  "intro": "pr_intro.html",
+  "parts_total": 12,
+  "stages": [
+   {
+    "id": "pr1",
+    "label": "Part One",
+    "title": "The Count",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr2",
+    "label": "Part Two",
+    "title": "The Children",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr3",
+    "label": "Part Three",
+    "title": "Women, Mothers and the Unborn",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr4",
+    "label": "Part Four",
+    "title": "Hunger",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr5",
+    "label": "Part Five",
+    "title": "The Journalists",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr6",
+    "label": "Part Six",
+    "title": "The Named",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr7",
+    "label": "Part Seven",
+    "title": "“Journalists Are Not Terrorists”",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr8",
+    "label": "Part Eight",
+    "title": "The Gate",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr9",
+    "label": "Part Nine",
+    "title": "The West Bank Press",
+    "span": "2022–2026"
+   },
+   {
+    "id": "pr10",
+    "label": "Part Ten",
+    "title": "Keeping the Lights On",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr11",
+    "label": "Part Eleven",
+    "title": "What Reached America",
+    "span": "2023–2026"
+   },
+   {
+    "id": "pr12",
+    "label": "Part Twelve",
+    "title": "Settled, Contested and Open",
+    "span": "2023–2026"
+   }
+  ]
+ },
+ "hamas": {
+  "slot": "ch15",
+  "absorbs": [
+   "ch24"
+  ],
+  "title": "The Hamas Architecture",
+  "subtitle": "Origins, Power and the War, 1928–2026",
+  "span": "1928–2026",
+  "intro": "hm_intro.html",
+  "parts_total": 12,
+  "stages": [
+   {
+    "id": "hm1",
+    "label": "Part One",
+    "title": "Before Hamas",
+    "span": "1928–1987"
+   },
+   {
+    "id": "hm2",
+    "label": "Part Two",
+    "title": "The Founding",
+    "span": "1987–1988"
+   },
+   {
+    "id": "hm3",
+    "label": "Part Three",
+    "title": "Would Hamas Exist?",
+    "span": "1928–2026"
+   },
+   {
+    "id": "hm4",
+    "label": "Part Four",
+    "title": "Bombs and Ballots",
+    "span": "1989–2006"
+   },
+   {
+    "id": "hm5",
+    "label": "Part Five",
+    "title": "The Split and the Separation",
+    "span": "2006–2023"
+   },
+   {
+    "id": "hm6",
+    "label": "Part Six",
+    "title": "Hamas as Its Own Actor",
+    "span": "2007–2026"
+   },
+   {
+    "id": "hm7",
+    "label": "Part Seven",
+    "title": "October 7",
+    "span": "2023"
+   },
+   {
+    "id": "hm8",
+    "label": "Part Eight",
+    "title": "The Power Ledger",
+    "span": "2023–2026"
+   },
+   {
+    "id": "hm9",
+    "label": "Part Nine",
+    "title": "After the War",
+    "span": "2024–2026"
+   },
+   {
+    "id": "hm11",
+    "label": "Part Ten",
+    "title": "Always Hamas",
+    "span": "2023–2026"
+   },
+   {
+    "id": "hm12",
+    "label": "Part Eleven",
+    "title": "Ben-Gvir and the Broken Ceasefires",
+    "span": "2019–2026"
+   },
+   {
+    "id": "hm10",
+    "label": "Part Twelve",
+    "title": "Settled, Contested and Open",
+    "span": "1928–2026"
+   }
+  ]
+ },
+ "mirror": {
+  "slot": "ch42",
+  "absorbs": [
+   "ch43",
+   "ch29",
+   "ch30",
+   "ch32",
+   "ch35",
+   "ch33",
+   "ch26",
+   "ch13"
+  ],
+  "title": "The One-Way Mirror",
+  "subtitle": "Israel Inside the American State: The Laws, Agencies and Contracts, from the CIA to the Pentagon",
+  "span": "1948–2026",
+  "intro": "ow_intro.html",
+  "parts_total": 14,
+  "stages": [
+   {
+    "id": "ow1",
+    "label": "Part One",
+    "title": "The Legal Spine",
+    "span": "1948–2026"
+   },
+   {
+    "id": "ow2",
+    "label": "Part Two",
+    "title": "Who Voted It In",
+    "span": "1963–2026"
+   },
+   {
+    "id": "ow3",
+    "label": "Part Three",
+    "title": "The CIA and the Mossad",
+    "span": "1951–2026"
+   },
+   {
+    "id": "ow4",
+    "label": "Part Four",
+    "title": "The NSA and Unit 8200",
+    "span": "1952–2026"
+   },
+   {
+    "id": "ow5",
+    "label": "Part Five",
+    "title": "The FBI",
+    "span": "1941–2026"
+   },
+   {
+    "id": "ow6",
+    "label": "Part Six",
+    "title": "Homeland Security, ICE and the Police",
+    "span": "2002–2026"
+   },
+   {
+    "id": "ow7",
+    "label": "Part Seven",
+    "title": "The Pentagon and the Services",
+    "span": "1983–2026"
+   },
+   {
+    "id": "ow8",
+    "label": "Part Eight",
+    "title": "The Weapons Pipeline",
+    "span": "1962–2026"
+   },
+   {
+    "id": "ow9",
+    "label": "Part Nine",
+    "title": "Palantir and the Data Contractors",
+    "span": "2003–2026"
+   },
+   {
+    "id": "ow10",
+    "label": "Part Ten",
+    "title": "Israeli Spyware and Security Firms in America",
+    "span": "2010–2026"
+   },
+   {
+    "id": "ow11",
+    "label": "Part Eleven",
+    "title": "The Legal Shields",
+    "span": "1977–2026"
+   },
+   {
+    "id": "ow12",
+    "label": "Part Twelve",
+    "title": "Epstein: What Is Documented",
+    "span": "1991–2026"
+   },
+   {
+    "id": "ow13",
+    "label": "Part Thirteen",
+    "title": "The One-Way Mirror",
+    "span": "1948–2026"
+   },
+   {
+    "id": "ow14",
+    "label": "Part Fourteen",
+    "title": "Settled, Contested and Open",
+    "span": "1948–2026"
+   }
+  ]
+ },
+ "hezbollah": {
+  "slot": "ch46",
+  "absorbs": [
+   "ch65"
+  ],
+  "title": "The Hezbollah Architecture",
+  "subtitle": "Lebanon, the Houthis, the Iraqi Militias and the Wars That Never End",
+  "span": "1943–2026",
+  "intro": "hz_intro.html",
+  "parts_total": 13,
+  "stages": [
+   {
+    "id": "hz1",
+    "label": "Part One",
+    "title": "Before Hezbollah",
+    "span": "1943–1982"
+   },
+   {
+    "id": "hz2",
+    "label": "Part Two",
+    "title": "The Founding",
+    "span": "1982–1985"
+   },
+   {
+    "id": "hz3",
+    "label": "Part Three",
+    "title": "Would Hezbollah Exist?",
+    "span": "1978–2026"
+   },
+   {
+    "id": "hz4",
+    "label": "Part Four",
+    "title": "Occupation and Resistance",
+    "span": "1985–2000"
+   },
+   {
+    "id": "hz5",
+    "label": "Part Five",
+    "title": "The 2006 War",
+    "span": "2006–2008"
+   },
+   {
+    "id": "hz6",
+    "label": "Part Six",
+    "title": "Hezbollah as Its Own Actor",
+    "span": "1992–2026"
+   },
+   {
+    "id": "hz7",
+    "label": "Part Seven",
+    "title": "The Support Front",
+    "span": "2023–2024"
+   },
+   {
+    "id": "hz8",
+    "label": "Part Eight",
+    "title": "The Broken Ceasefire and the 2026 War",
+    "span": "2024–2026"
+   },
+   {
+    "id": "hz9",
+    "label": "Part Nine",
+    "title": "The Power Ledger",
+    "span": "2024–2026"
+   },
+   {
+    "id": "hz10",
+    "label": "Part Ten",
+    "title": "The Rest of the Axis",
+    "span": "1990s–2026"
+   },
+   {
+    "id": "hz11",
+    "label": "Part Eleven",
+    "title": "Always the Axis?",
+    "span": "1982–2026"
+   },
+   {
+    "id": "hz12",
+    "label": "Part Twelve",
+    "title": "Dragging America In",
+    "span": "1983–2026"
+   },
+   {
+    "id": "hz13",
+    "label": "Part Thirteen",
+    "title": "Settled, Contested and Open",
+    "span": "1943–2026"
+   }
+  ]
+ },
+ "iran": {
+  "slot": "ch16",
+  "title": "The Iran Architecture",
+  "subtitle": "Allies, Enemies and the Bomb That Never Came, 1948–2026",
+  "span": "1948–2026",
+  "intro": "ir_intro.html",
+  "parts_total": 15,
+  "stages": [
+   {
+    "id": "ir1",
+    "label": "Part One",
+    "title": "The Alliance",
+    "span": "1948–1979"
+   },
+   {
+    "id": "ir2",
+    "label": "Part Two",
+    "title": "Revolution and the Secret Arms Trade",
+    "span": "1979–1988"
+   },
+   {
+    "id": "ir3",
+    "label": "Part Three",
+    "title": "The Jews of Iran",
+    "span": "722 BCE–2026"
+   },
+   {
+    "id": "ir4",
+    "label": "Part Four",
+    "title": "The Atom",
+    "span": "1957–2026"
+   },
+   {
+    "id": "ir5",
+    "label": "Part Five",
+    "title": "Always a Year Away",
+    "span": "1976–2026"
+   },
+   {
+    "id": "ir6",
+    "label": "Part Six",
+    "title": "The Other Voices",
+    "span": "1992–2026"
+   },
+   {
+    "id": "ir7",
+    "label": "Part Seven",
+    "title": "The Deal and Its Killing",
+    "span": "2013–2019"
+   },
+   {
+    "id": "ir8",
+    "label": "Part Eight",
+    "title": "The Shadow War",
+    "span": "2007–2024"
+   },
+   {
+    "id": "ir9",
+    "label": "Part Nine",
+    "title": "Iran's Own Record",
+    "span": "1979–2026"
+   },
+   {
+    "id": "ir10",
+    "label": "Part Ten",
+    "title": "The Twelve Days",
+    "span": "2025"
+   },
+   {
+    "id": "ir11",
+    "label": "Part Eleven",
+    "title": "The 2026 War",
+    "span": "2026"
+   },
+   {
+    "id": "ir12",
+    "label": "Part Twelve",
+    "title": "Does Iran Want War With America?",
+    "span": "1979–2026"
+   },
+   {
+    "id": "ir13",
+    "label": "Part Thirteen",
+    "title": "Why Iran?",
+    "span": "1981–2026"
+   },
+   {
+    "id": "ir14",
+    "label": "Part Fourteen",
+    "title": "Dragged In: the American Bill",
+    "span": "1979–2026"
+   },
+   {
+    "id": "ir15",
+    "label": "Part Fifteen",
+    "title": "Settled, Contested and Open",
+    "span": "1948–2026"
+   }
+  ]
+ },
+ "_planned": [
+  {
+   "host": "ch19",
+   "title": "The Netanyahu Architecture",
+   "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
+   "merge": [
+    "ch10",
+    "ch61",
+    "ch14",
+    "ch41"
+   ],
+   "priority": 2
+  },
+  {
+   "host": "ch20",
+   "title": "Aid and Arms",
+   "subtitle": "What America Pays, What It Buys, and What About America",
+   "merge": [
+    "ch17"
+   ],
+   "priority": 3
+  },
+  {
+   "host": "ch57",
+   "title": "Washington",
+   "subtitle": "The Trump and Kushner Families, the Department of War and the State Department",
+   "merge": [
+    "ch58",
+    "ch59"
+   ],
+   "priority": 4
+  },
+  {
+   "host": "ch18",
+   "title": "The Information War",
+   "subtitle": "Media, Platforms, Campuses, the IHRA Definition, Project Esther and the Capability Stack",
+   "merge": [
+    "ch56",
+    "ch28",
+    "ch36",
+    "ch37",
+    "ch44",
+    "ch52"
+   ],
+   "priority": 5
+  },
+  {
+   "host": "ch06",
+   "title": "From 1967 to Oslo",
+   "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
+   "merge": [
+    "ch07",
+    "ch08"
+   ],
+   "priority": 7
+  },
+  {
+   "host": "ch23",
+   "title": "The Wider Region",
+   "subtitle": "The Lay of the Land, the Gulf, the Accords and the Periphery",
+   "merge": [
+    "ch62",
+    "ch27",
+    "ch64",
+    "ch66",
+    "ch67",
+    "ch68",
+    "ch69"
+   ],
+   "priority": 8
+  },
+  {
+   "host": "ch53",
+   "title": "The World Reads This Story",
+   "subtitle": "Latin America, Spain, Africa, Europe, the Americas, Asia and Oceania",
+   "merge": [
+    "ch55"
+   ],
+   "priority": 9
+  },
+  {
+   "host": "ch51",
+   "title": "Street Questions",
+   "subtitle": "Viral Claims, the Comment Section and the Ledger of the Machine",
+   "merge": [
+    "ch70",
+    "ch49"
+   ],
+   "priority": 10
+  }
+ ],
+ "greater": {
+  "slot": "ch21",
+  "absorbs": [
+   "ch22",
+   "ch25",
+   "ch63",
+   "ch47"
+  ],
+  "title": "The Greater Israel Architecture",
+  "subtitle": "Maps, Movements and the Land Beyond the Lines, 1896–2026",
+  "span": "1896–2026",
+  "intro": "gi_intro.html",
+  "parts_total": 18,
+  "stages": [
+   {
+    "id": "gi1",
+    "label": "Part One",
+    "title": "The Phrase and Its Meanings",
+    "span": "Genesis–2026"
+   },
+   {
+    "id": "gi2",
+    "label": "Part Two",
+    "title": "Founders' Maps",
+    "span": "1896–1937"
+   },
+   {
+    "id": "gi3",
+    "label": "Part Three",
+    "title": "Armistice Lines and the Sinai Test",
+    "span": "1948–1967"
+   },
+   {
+    "id": "gi4",
+    "label": "Part Four",
+    "title": "1967 and the Land of Israel Movement",
+    "span": "1967–1977"
+   },
+   {
+    "id": "gi5",
+    "label": "Part Five",
+    "title": "The Ideology in Government",
+    "span": "1977–2022"
+   },
+   {
+    "id": "gi6",
+    "label": "Part Six",
+    "title": "The Annexation Track",
+    "span": "2019–2026"
+   },
+   {
+    "id": "gi7",
+    "label": "Part Seven",
+    "title": "The Maps at the UN and the \"Very Much\" Interview",
+    "span": "2023–2025"
+   },
+   {
+    "id": "gi8",
+    "label": "Part Eight",
+    "title": "The Fronts",
+    "span": "1967–2023"
+   },
+   {
+    "id": "gi9",
+    "label": "Part Nine",
+    "title": "The Buffer Belt",
+    "span": "2024–2026"
+   },
+   {
+    "id": "gi10",
+    "label": "Part Ten",
+    "title": "The Documents and the Myths",
+    "span": "1898–2026"
+   },
+   {
+    "id": "gi11",
+    "label": "Part Eleven",
+    "title": "The Religious Engine",
+    "span": "1920s–2026"
+   },
+   {
+    "id": "gi12",
+    "label": "Part Twelve",
+    "title": "The Counter-Record",
+    "span": "1957–2026"
+   },
+   {
+    "id": "gi14",
+    "title": "The Ledger: Gaza, the West Bank and Lebanon",
+    "span": "2023–2026",
+    "label": "Part Thirteen"
+   },
+   {
+    "id": "gi15",
+    "title": "The Ledger: Syria, Iran, Iraq, Yemen and the Neighbours",
+    "span": "2013–2026",
+    "label": "Part Fourteen"
+   },
+   {
+    "id": "gi16",
+    "title": "The Bill and America's Role",
+    "span": "2016–2026",
+    "label": "Part Fifteen"
+   },
+   {
+    "id": "gi17",
+    "title": "The World's Response",
+    "span": "2023–2026",
+    "label": "Part Sixteen"
+   },
+   {
+    "id": "gi18",
+    "title": "Without 1948: The Uganda Test and the Question of Legitimacy",
+    "span": "1896–2026",
+    "label": "Part Seventeen"
+   },
+   {
+    "id": "gi13",
+    "title": "Settled, Contested and Open",
+    "span": "",
+    "label": "Part Eighteen"
+   }
+  ]
+ },
+ "vatican": {
+  "slot": "ch12",
+  "absorbs": [],
+  "title": "The Vatican Architecture",
+  "subtitle": "Sovereignty, Money, Zionism and the Inner Traditions",
+  "span": "c. 30–2026",
+  "intro": "vt_intro.html",
+  "parts_total": 36,
+  "stages": [
+   {
+    "id": "vt1",
+    "label": "Part One",
+    "title": "The Question: Refusal or Front?",
+    "span": "1904–2026"
+   },
+   {
+    "id": "vt2",
+    "label": "Part Two",
+    "title": "Why There Is a Vatican: 754 to 1929",
+    "span": "754–1929"
+   },
+   {
+    "id": "vt3",
+    "label": "Part Three",
+    "title": "The 1929 Deal, Then and Now",
+    "span": "1929–2026"
+   },
+   {
+    "id": "vt4",
+    "label": "Part Four",
+    "title": "How It Actually Runs",
+    "span": "2026"
+   },
+   {
+    "id": "vt5",
+    "label": "Part Five",
+    "title": "Sovereignty and Who Checks It",
+    "span": "1929–2026"
+   },
+   {
+    "id": "vt6",
+    "label": "Part Six",
+    "title": "Popes, Curia and the Myth of Hidden Popes",
+    "span": "2022–2026"
+   },
+   {
+    "id": "vt7",
+    "label": "Part Seven",
+    "title": "The Black Nobility and the Orsini",
+    "span": "1870–1968"
+   },
+   {
+    "id": "vt8",
+    "label": "Part Eight",
+    "title": "Orders and a Second Sovereign: Jesuits, Opus Dei, Malta",
+    "span": "1534–2026"
+   },
+   {
+    "id": "vt9",
+    "label": "Part Nine",
+    "title": "The Money: IOR, APSA, Peter's Pence",
+    "span": "1942–2026"
+   },
+   {
+    "id": "vt10",
+    "label": "Part Ten",
+    "title": "Scandal and Reform: Ambrosiano to the Becciu Retrial",
+    "span": "1974–2026"
+   },
+   {
+    "id": "vt11",
+    "label": "Part Eleven",
+    "title": "Rome and the Rothschilds: What the Documents Show",
+    "span": "1831–2026"
+   },
+   {
+    "id": "vt12",
+    "label": "Part Twelve",
+    "title": "Abuse and Cover-up",
+    "span": "1922–2026"
+   },
+   {
+    "id": "vt13",
+    "label": "Part Thirteen",
+    "title": "Reach: Schools, Universities, Bishops",
+    "span": "1789–2026"
+   },
+   {
+    "id": "vt14",
+    "label": "Part Fourteen",
+    "title": "Texts and Archives",
+    "span": "367–2026"
+   },
+   {
+    "id": "vt15",
+    "label": "Part Fifteen",
+    "title": "Emanuela Orlandi and Mirella Gregori",
+    "span": "1983–2026"
+   },
+   {
+    "id": "vt16",
+    "label": "Part Sixteen",
+    "title": "Rome and Zionism I: Herzl to the War, 1904–1945",
+    "span": "1904–1945"
+   },
+   {
+    "id": "vt17",
+    "label": "Part Seventeen",
+    "title": "Rome and Zionism II: Non-Recognition to Recognition, 1945–1993",
+    "span": "1945–1993"
+   },
+   {
+    "id": "vt18",
+    "label": "Part Eighteen",
+    "title": "Israel, Palestine and Gaza, 1994–2026",
+    "span": "1994–2026"
+   },
+   {
+    "id": "vt19",
+    "label": "Part Nineteen",
+    "title": "The Verdict on the Front Hypothesis",
+    "span": "Settled, probable, open"
+   },
+   {
+    "id": "vt20",
+    "label": "Part Twenty",
+    "title": "Yeshua, Paul and the First Followers",
+    "span": "c. 4 BCE–150 CE"
+   },
+   {
+    "id": "vt21",
+    "label": "Part Twenty-One",
+    "title": "Constantine: Emperor, Pontifex, Patron",
+    "span": "306–395"
+   },
+   {
+    "id": "vt22",
+    "label": "Part Twenty-Two",
+    "title": "Nicaea, 325",
+    "span": "318–381"
+   },
+   {
+    "id": "vt23",
+    "label": "Part Twenty-Three",
+    "title": "How the Bible Was Made",
+    "span": "c. 150–1546"
+   },
+   {
+    "id": "vt24",
+    "label": "Part Twenty-Four",
+    "title": "The Evangelical Gnostics",
+    "span": "c. 100–400"
+   },
+   {
+    "id": "vt25",
+    "label": "Part Twenty-Five",
+    "title": "The Nag Hammadi Library, Text by Text",
+    "span": "1945–1977"
+   },
+   {
+    "id": "vt26",
+    "label": "Part Twenty-Six",
+    "title": "Outside the Jar: Mary, Judas and Pistis Sophia",
+    "span": "1785–2006"
+   },
+   {
+    "id": "vt27",
+    "label": "Part Twenty-Seven",
+    "title": "The Ethiopian Bible",
+    "span": "330–1821"
+   },
+   {
+    "id": "vt28",
+    "label": "Part Twenty-Eight",
+    "title": "Cathars, Crusade and Inquisition",
+    "span": "1140–1330"
+   },
+   {
+    "id": "vt29",
+    "label": "Part Twenty-Nine",
+    "title": "Templars, Mystics and the Stake",
+    "span": "1119–1633"
+   },
+   {
+    "id": "vt30",
+    "label": "Part Thirty",
+    "title": "Fraternities, Witches and the Forbidden Arts",
+    "span": "1317–2023"
+   },
+   {
+    "id": "vt31",
+    "label": "Part Thirty-One",
+    "title": "Tithe, Sabbath and Obedience: Two Economies of the Sacred",
+    "span": "585–2026"
+   },
+   {
+    "id": "vt33",
+    "label": "Part Thirty-Two",
+    "title": "The Mysteries Closed",
+    "span": "c. 380–600"
+   },
+   {
+    "id": "vt34",
+    "label": "Part Thirty-Three",
+    "title": "The Inquisitions Beyond Rome",
+    "span": "1478–1834"
+   },
+   {
+    "id": "vt35",
+    "label": "Part Thirty-Four",
+    "title": "The Suppressed Suns",
+    "span": "1533–1978"
+   },
+   {
+    "id": "vt36",
+    "label": "Part Thirty-Five",
+    "title": "The Suppressed Feminine",
+    "span": "431–2025"
+   },
+   {
+    "id": "vt32",
+    "label": "Part Thirty-Six",
+    "title": "Verdict II: What Was Taken, Buried and Kept",
+    "span": "Documented, probable, not supported"
+   }
+  ]
+ },
+ "theology": {
+  "after": "ch12",
+  "title": "The Theology Shield",
+  "subtitle": "Christian Zionism from the Puritans to CUFI, 1600s–2026",
+  "span": "1600s–2026",
+  "intro": "ts_intro.html",
+  "parts_total": 14,
+  "stages": [
+   {
+    "id": "ts1",
+    "label": "Part One",
+    "title": "The Shield Defined",
+    "span": ""
+   },
+   {
+    "id": "ts2",
+    "label": "Part Two",
+    "title": "Before Darby: British Restorationism",
+    "span": "1600s–1891"
+   },
+   {
+    "id": "ts3",
+    "label": "Part Three",
+    "title": "Darby and the System Crossing the Atlantic",
+    "span": "1827–1909"
+   },
+   {
+    "id": "ts4",
+    "label": "Part Four",
+    "title": "Scofield the Man",
+    "span": "1843–1921"
+   },
+   {
+    "id": "ts5",
+    "label": "Part Five",
+    "title": "The Scofield Reference Bible",
+    "span": "1909–1967"
+   },
+   {
+    "id": "ts6",
+    "label": "Part Six",
+    "title": "Blackstone, Balfour and the 1940s Committees",
+    "span": "1891–1953"
+   },
+   {
+    "id": "ts7",
+    "label": "Part Seven",
+    "title": "Spreading the System",
+    "span": "1924–2026"
+   },
+   {
+    "id": "ts8",
+    "label": "Part Eight",
+    "title": "From Falwell to CUFI: the Political Machine",
+    "span": "1979–2026"
+   },
+   {
+    "id": "ts9",
+    "label": "Part Nine",
+    "title": "What Was in It for Them",
+    "span": "1977–2026"
+   },
+   {
+    "id": "ts10",
+    "label": "Part Ten",
+    "title": "How the Shield Works",
+    "span": "2006–2026"
+   },
+   {
+    "id": "ts11",
+    "label": "Part Eleven",
+    "title": "The Christian Counter-Record",
+    "span": "1904–2026"
+   },
+   {
+    "id": "ts12",
+    "label": "Part Twelve",
+    "title": "The Shield in Office",
+    "span": "2017–2026"
+   },
+   {
+    "id": "ts13",
+    "label": "Part Thirteen",
+    "title": "The Inner Reading",
+    "span": ""
+   },
+   {
+    "id": "ts14",
+    "label": "Part Fourteen",
+    "title": "Myths, Contested Claims and What Is Settled",
+    "span": ""
+   }
+  ]
+ },
+ "usisrael": {
+  "slot": "ch40",
+  "absorbs": [
+   "ch60"
+  ],
+  "title": "US System vs Israel System",
+  "subtitle": "Government, Rights, Money and the Cost of Living, Compared Over Time",
+  "span": "1980–2026",
+  "intro": "us_intro.html",
+  "parts_total": 22,
+  "stages": [
+   {
+    "id": "us1",
+    "label": "Part One",
+    "title": "The Question",
+    "span": ""
+   },
+   {
+    "id": "us2",
+    "label": "Part Two",
+    "title": "How the State Is Built",
+    "span": ""
+   },
+   {
+    "id": "us3",
+    "label": "Part Three",
+    "title": "Democracy",
+    "span": ""
+   },
+   {
+    "id": "us4",
+    "label": "Part Four",
+    "title": "Criminal Justice",
+    "span": ""
+   },
+   {
+    "id": "us5",
+    "label": "Part Five",
+    "title": "Public Safety and Guns",
+    "span": ""
+   },
+   {
+    "id": "us6",
+    "label": "Part Six",
+    "title": "Citizenship and Immigration",
+    "span": ""
+   },
+   {
+    "id": "us7",
+    "label": "Part Seven",
+    "title": "Religion and State",
+    "span": ""
+   },
+   {
+    "id": "us8",
+    "label": "Part Eight",
+    "title": "Equality Among Citizens",
+    "span": ""
+   },
+   {
+    "id": "us9",
+    "label": "Part Nine",
+    "title": "People Under Control Without Citizenship",
+    "span": ""
+   },
+   {
+    "id": "us10",
+    "label": "Part Ten",
+    "title": "Surveillance and Privacy",
+    "span": ""
+   },
+   {
+    "id": "us11",
+    "label": "Part Eleven",
+    "title": "The Economy",
+    "span": ""
+   },
+   {
+    "id": "us12",
+    "label": "Part Twelve",
+    "title": "Industries",
+    "span": ""
+   },
+   {
+    "id": "us13",
+    "label": "Part Thirteen",
+    "title": "Labour",
+    "span": ""
+   },
+   {
+    "id": "us14",
+    "label": "Part Fourteen",
+    "title": "Cost of Living Over Time",
+    "span": ""
+   },
+   {
+    "id": "us15",
+    "label": "Part Fifteen",
+    "title": "Housing, Land and Infrastructure",
+    "span": ""
+   },
+   {
+    "id": "us16",
+    "label": "Part Sixteen",
+    "title": "Health",
+    "span": ""
+   },
+   {
+    "id": "us17",
+    "label": "Part Seventeen",
+    "title": "Education",
+    "span": ""
+   },
+   {
+    "id": "us18",
+    "label": "Part Eighteen",
+    "title": "Family Policy and the Safety Net",
+    "span": ""
+   },
+   {
+    "id": "us19",
+    "label": "Part Nineteen",
+    "title": "Military and Security",
+    "span": ""
+   },
+   {
+    "id": "us20",
+    "label": "Part Twenty",
+    "title": "Foreign Policy and the Money Flow",
+    "span": ""
+   },
+   {
+    "id": "us21",
+    "label": "Part Twenty-One",
+    "title": "What About America?",
+    "span": ""
+   },
+   {
+    "id": "us22",
+    "label": "Part Twenty-Two",
+    "title": "The Scorecard",
+    "span": ""
+   }
+  ]
+ },
+ "dream": {
+  "after": "ch40",
+  "title": "The American Dream Architecture",
+  "subtitle": "The Promise as Taught and the System as Built",
+  "span": "1931–2026",
+  "intro": "ad_intro.html",
+  "parts_total": 18,
+  "stages": [
+   {
+    "id": "ad1",
+    "label": "Part One",
+    "title": "The Dream as Taught",
+    "span": ""
+   },
+   {
+    "id": "ad2",
+    "label": "Part Two",
+    "title": "What Holds",
+    "span": ""
+   },
+   {
+    "id": "ad3",
+    "label": "Part Three",
+    "title": "The Mobility Record",
+    "span": ""
+   },
+   {
+    "id": "ad4",
+    "label": "Part Four",
+    "title": "The Turn, 1973–1986",
+    "span": ""
+   },
+   {
+    "id": "ad5",
+    "label": "Part Five",
+    "title": "Work: Wages, Hours and the Frozen Floors",
+    "span": ""
+   },
+   {
+    "id": "ad6",
+    "label": "Part Six",
+    "title": "Housing: The Asset That Built the Dream",
+    "span": ""
+   },
+   {
+    "id": "ad7",
+    "label": "Part Seven",
+    "title": "Education: The Credential and the Debt",
+    "span": ""
+   },
+   {
+    "id": "ad8",
+    "label": "Part Eight",
+    "title": "Health: The System Inside the System",
+    "span": ""
+   },
+   {
+    "id": "ad9",
+    "label": "Part Nine",
+    "title": "Debt: Financing the Dream",
+    "span": ""
+   },
+   {
+    "id": "ad10",
+    "label": "Part Ten",
+    "title": "Retirement: From Pension to 401(k)",
+    "span": ""
+   },
+   {
+    "id": "ad11",
+    "label": "Part Eleven",
+    "title": "Taxes, Fees and the Benefits Cliff",
+    "span": ""
+   },
+   {
+    "id": "ad12",
+    "label": "Part Twelve",
+    "title": "Income vs Wealth",
+    "span": ""
+   },
+   {
+    "id": "ad13",
+    "label": "Part Thirteen",
+    "title": "Who Gets the Dream",
+    "span": ""
+   },
+   {
+    "id": "ad14",
+    "label": "Part Fourteen",
+    "title": "The Poverty Trap and the Criminal-Legal Bill",
+    "span": ""
+   },
+   {
+    "id": "ad15",
+    "label": "Part Fifteen",
+    "title": "Who Writes the Rules",
+    "span": ""
+   },
+   {
+    "id": "ad16",
+    "label": "Part Sixteen",
+    "title": "Why the Belief Survives",
+    "span": ""
+   },
+   {
+    "id": "ad17",
+    "label": "Part Seventeen",
+    "title": "Families Through the Machine",
+    "span": ""
+   },
+   {
+    "id": "ad18",
+    "label": "Part Eighteen",
+    "title": "The Verdict: Illusion, Mechanism or Promise?",
+    "span": ""
+   }
+  ]
+ },
+ "darkenlight": {
+  "after": "ch42",
+  "title": "The Ideas",
+  "subtitle": "The blog that said democracy failed, in its own words",
+  "span": "2007–2026",
+  "intro": "de_intro.html",
+  "parts_total": 8,
+  "stages": [
+   {
+    "id": "de1",
+    "label": "Part One",
+    "title": "The Question",
+    "span": ""
+   },
+   {
+    "id": "de2",
+    "label": "Part Two",
+    "title": "The Name and the Texts",
+    "span": "2007–2014"
+   },
+   {
+    "id": "de3",
+    "label": "Part Three",
+    "title": "The Inheritance",
+    "span": "1840s–2014"
+   },
+   {
+    "id": "de4",
+    "label": "Part Four",
+    "title": "Nick Land: the Engine",
+    "span": "1995–2026"
+   },
+   {
+    "id": "de5",
+    "label": "Part Five",
+    "title": "Curtis Yarvin: the Life",
+    "span": "1973–2026"
+   },
+   {
+    "id": "de6",
+    "label": "Part Six",
+    "title": "Curtis Yarvin: the Program and the Hard Posts",
+    "span": "2007–2026"
+   },
+   {
+    "id": "de7",
+    "label": "Part Seven",
+    "title": "The Diagnosis, Steelmanned",
+    "span": ""
+   },
+   {
+    "id": "de8",
+    "label": "Part Eight",
+    "title": "Where the Argument Breaks",
+    "span": ""
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 1
+ },
+ "de_money": {
+  "after": "ch42",
+  "title": "The Men and the Money",
+  "subtitle": "Follow the billionaires, the super PACs and the vice president",
+  "span": "1967–2026",
+  "intro": "de_book2_intro.html",
+  "parts_total": 8,
+  "stages": [
+   {
+    "id": "de9",
+    "label": "Part Nine",
+    "title": "Peter Thiel: the Life",
+    "span": "1967–2026"
+   },
+   {
+    "id": "de10",
+    "label": "Part Ten",
+    "title": "Peter Thiel: the Mind",
+    "span": "1987–2026"
+   },
+   {
+    "id": "de11",
+    "label": "Part Eleven",
+    "title": "Elon Musk: the Life",
+    "span": "1971–2026"
+   },
+   {
+    "id": "de12",
+    "label": "Part Twelve",
+    "title": "J.D. Vance: the Life",
+    "span": "1984–2026"
+   },
+   {
+    "id": "de13",
+    "label": "Part Thirteen",
+    "title": "The PayPal Network",
+    "span": "1998–2026"
+   },
+   {
+    "id": "de14",
+    "label": "Part Fourteen",
+    "title": "The Money",
+    "span": ""
+   },
+   {
+    "id": "de15",
+    "label": "Part Fifteen",
+    "title": "The Same Playbook, Twice",
+    "span": "2021–2022"
+   },
+   {
+    "id": "de16",
+    "label": "Part Sixteen",
+    "title": "The Adoption Layer",
+    "span": "2013–2026"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 2
+ },
+ "de_doge": {
+  "after": "ch42",
+  "title": "DOGE Architecture",
+  "subtitle": "See why you never got your $5,000 check",
+  "span": "2024–2026",
+  "intro": "de_book3_intro.html",
+  "parts_total": 5,
+  "stages": [
+   {
+    "id": "de17",
+    "label": "Part Seventeen",
+    "title": "The Deal: Campaign Money to an Office",
+    "span": "2024–2025"
+   },
+   {
+    "id": "de18",
+    "label": "Part Eighteen",
+    "title": "The Operators",
+    "span": "2025–2026"
+   },
+   {
+    "id": "de19",
+    "label": "Part Nineteen",
+    "title": "Inside the Systems",
+    "span": "2025–2026"
+   },
+   {
+    "id": "de20",
+    "label": "Part Twenty",
+    "title": "The Cuts and Who Paid",
+    "span": "2025–2026"
+   },
+   {
+    "id": "de21",
+    "label": "Part Twenty-One",
+    "title": "Promises, Conflicts and the Ending",
+    "span": "2024–2026"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 3
+ },
+ "de_exit": {
+  "after": "ch42",
+  "title": "Exit",
+  "subtitle": "What happens when the rich build their own country",
+  "span": "2008–2026",
+  "intro": "de_book4_intro.html",
+  "parts_total": 2,
+  "stages": [
+   {
+    "id": "de22",
+    "label": "Part Twenty-Two",
+    "title": "Exit Zones",
+    "span": "2008–2026"
+   },
+   {
+    "id": "de23",
+    "label": "Part Twenty-Three",
+    "title": "Urbit: the Digital Exit",
+    "span": "2002–2026"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 4
+ },
+ "de_eye": {
+  "after": "ch42",
+  "title": "The Eye",
+  "subtitle": "What they already know about you, and what happens if it is connected",
+  "span": "1945–2026",
+  "intro": "de_book5_intro.html",
+  "parts_total": 9,
+  "stages": [
+   {
+    "id": "de24",
+    "label": "Part Twenty-Four",
+    "title": "The Toolkit I: Data",
+    "span": "2009–2026"
+   },
+   {
+    "id": "de24b",
+    "label": "Part Twenty-Five",
+    "title": "The Records the State Already Holds",
+    "span": "1974–2026"
+   },
+   {
+    "id": "de25",
+    "label": "Part Twenty-Six",
+    "title": "The Toolkit II: Where You Are",
+    "span": "2007–2026"
+   },
+   {
+    "id": "de25b",
+    "label": "Part Twenty-Seven",
+    "title": "Moving: Travel, the Border and the Exit",
+    "span": "1958–2026"
+   },
+   {
+    "id": "de26",
+    "label": "Part Twenty-Eight",
+    "title": "The Toolkit III: Seeing, Paying, Building",
+    "span": "2017–2026"
+   },
+   {
+    "id": "de27",
+    "label": "Part Twenty-Nine",
+    "title": "Palantir",
+    "span": "2003–2026"
+   },
+   {
+    "id": "de28",
+    "label": "Part Thirty",
+    "title": "ICE and the Data Stack",
+    "span": "2014–2026"
+   },
+   {
+    "id": "de29",
+    "label": "Part Thirty-One",
+    "title": "When It Was Used at Home",
+    "span": "1945–2026"
+   },
+   {
+    "id": "de30",
+    "label": "Part Thirty-Two",
+    "title": "The Legal Architecture",
+    "span": "2012–2026"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 5
+ },
+ "de_force": {
+  "after": "ch42",
+  "title": "The Pathway and the Force",
+  "subtitle": "How the brakes come off, and who would knock on the door",
+  "span": "1878–2026",
+  "intro": "de_book6_intro.html",
+  "parts_total": 3,
+  "stages": [
+   {
+    "id": "de31",
+    "label": "Part Thirty-Three",
+    "title": "The Pathway: Removing the Brakes",
+    "span": "2017–2026"
+   },
+   {
+    "id": "de32",
+    "label": "Part Thirty-Four",
+    "title": "The Force: Who Would Enforce It",
+    "span": "1878–2026"
+   },
+   {
+    "id": "de33",
+    "label": "Part Thirty-Five",
+    "title": "Two Tests, One Result",
+    "span": "2024–2026"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 6
+ },
+ "de_test": {
+  "after": "ch42",
+  "title": "The Test",
+  "subtitle": "If it were enforced: your rights, the ladder and the verdict",
+  "span": "1865–2026",
+  "intro": "de_book7_intro.html",
+  "parts_total": 8,
+  "stages": [
+   {
+    "id": "de34",
+    "label": "Part Thirty-Six",
+    "title": "The Readiness Audit",
+    "span": "2026"
+   },
+   {
+    "id": "de35",
+    "label": "Part Thirty-Seven",
+    "title": "If It Were Enforced",
+    "span": "1865–2026"
+   },
+   {
+    "id": "de35b",
+    "label": "Part Thirty-Eight",
+    "title": "The Missing Election: Who Picks the CEO",
+    "span": "2008–2026"
+   },
+   {
+    "id": "de36",
+    "label": "Part Thirty-Nine",
+    "title": "Beyond America",
+    "span": "2014–2026"
+   },
+   {
+    "id": "de37",
+    "label": "Part Forty",
+    "title": "Israel: Documented Ties Only",
+    "span": "2024–2026"
+   },
+   {
+    "id": "de38",
+    "label": "Part Forty-One",
+    "title": "What Doesn’t Fit",
+    "span": "2007–2026"
+   },
+   {
+    "id": "de39",
+    "label": "Part Forty-Two",
+    "title": "The Reading Beneath the Record",
+    "span": ""
+   },
+   {
+    "id": "de40",
+    "label": "Part Forty-Three",
+    "title": "The Verdict and What to Watch",
+    "span": "2026–2029"
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 7
+ },
+ "democracy": {
+  "after": "ch42",
+  "title": "Democracy Hasn't Been Tried",
+  "subtitle": "Before you call democracy a failure, finish building it",
+  "span": "1787–2026",
+  "intro": "dt_intro.html",
+  "parts_total": 9,
+  "stages": [
+   {
+    "id": "dt1",
+    "label": "Part One",
+    "title": "The Claim",
+    "span": ""
+   },
+   {
+    "id": "dt2",
+    "label": "Part Two",
+    "title": "What We Actually Have: The Electoral College",
+    "span": ""
+   },
+   {
+    "id": "dt3",
+    "label": "Part Three",
+    "title": "Who Really Chooses",
+    "span": ""
+   },
+   {
+    "id": "dt4",
+    "label": "Part Four",
+    "title": "The Money",
+    "span": ""
+   },
+   {
+    "id": "dt5",
+    "label": "Part Five",
+    "title": "Free Speech for Whom",
+    "span": ""
+   },
+   {
+    "id": "dt6",
+    "label": "Part Six",
+    "title": "Ranked-Choice Voting",
+    "span": ""
+   },
+   {
+    "id": "dt7",
+    "label": "Part Seven",
+    "title": "The Other Fixes",
+    "span": ""
+   },
+   {
+    "id": "dt8",
+    "label": "Part Eight",
+    "title": "The Test",
+    "span": ""
+   },
+   {
+    "id": "dt9",
+    "label": "Part Nine",
+    "title": "What It Would Take",
+    "span": ""
+   }
+  ],
+  "series": "The Dark Enlightenment Series",
+  "book": 8
+ },
+ "epstein": {
+  "slot": "ch34",
+  "absorbs": [
+   "ch50"
+  ],
+  "title": "The Epstein Architecture",
+  "subtitle": "The Network, the Files and Power Protects Power",
+  "span": "1953–2026",
+  "intro": "ep_intro.html",
+  "parts_total": 15,
+  "stages": [
+   {
+    "id": "ep1",
+    "label": "Part One",
+    "title": "Before the Money",
+    "span": "1953–1991",
+    "own": [
+     "epf_y01",
+     "epf_y02",
+     "epf_y03",
+     "epf_y04",
+     "epf_y05",
+     "epf_y06",
+     "epx_s09",
+     "epf_y07",
+     "epf_s03",
+     "epf_y08",
+     "epf_s04",
+     "epx_s07"
+    ]
+   },
+   {
+    "id": "ep2",
+    "label": "Part Two",
+    "title": "How It Operated",
+    "span": "1990s–2019",
+    "own": [
+     "epx_s02",
+     "epf_s04a",
+     "epf_y09",
+     "epf_s05",
+     "epf_s12a",
+     "epf_y10",
+     "epf_s09a"
+    ]
+   },
+   {
+    "id": "ep3",
+    "label": "Part Three",
+    "title": "Follow the Money",
+    "span": "1976–2026",
+    "own": [
+     "epf_s09",
+     "epf_s09b",
+     "epx_s10",
+     "epx_s03"
+    ]
+   },
+   {
+    "id": "ep4",
+    "label": "Part Four",
+    "title": "Who Stayed",
+    "span": "1987–2026",
+    "own": [
+     "epf_s13",
+     "epf_s16",
+     "epf_s15",
+     "epf_s14",
+     "epn_s03",
+     "epn_s04"
+    ]
+   },
+   {
+    "id": "ep5",
+    "label": "Part Five",
+    "title": "The Names",
+    "span": "Biographies rebuilt from the record",
+    "own": []
+   },
+   {
+    "id": "ep6",
+    "label": "Part Six",
+    "title": "The Reputation Machine",
+    "span": "1998–2020",
+    "own": [
+     "epx_s04"
+    ]
+   },
+   {
+    "id": "ep7",
+    "label": "Part Seven",
+    "title": "The Agency Architectures",
+    "span": "1923–2026",
+    "own": [
+     "epn_s01",
+     "epn_s02",
+     "epx_s06",
+     "epx_s08",
+     "epn_s05"
+    ]
+   },
+   {
+    "id": "ep8",
+    "label": "Part Eight",
+    "title": "Power Protects Power",
+    "span": "1973–2026",
+    "own": [
+     "epf_y11",
+     "epf_s06",
+     "epf_y12",
+     "epf_s07",
+     "epf_s10",
+     "doj_s01",
+     "doj_s02",
+     "doj_s03",
+     "doj_s04",
+     "doj_s10",
+     "doj_s11",
+     "doj_s12",
+     "epf_s07c"
+    ]
+   },
+   {
+    "id": "ep9",
+    "label": "Part Nine",
+    "title": "The Files",
+    "span": "2008–2026",
+    "own": [
+     "epf_y13",
+     "epf_y14",
+     "epf_s08",
+     "epx_s05",
+     "epf_s07b",
+     "epf_s10b",
+     "epf_s10c",
+     "epf_s10d",
+     "doj_s08",
+     "doj_s09"
+    ]
+   },
+   {
+    "id": "ep10",
+    "label": "Part Ten",
+    "title": "The Network Did Not Shut Down",
+    "span": "2019–2026",
+    "own": []
+   },
+   {
+    "id": "ep11",
+    "label": "Part Eleven",
+    "title": "The Deaths",
+    "span": "1991–2026",
+    "own": []
+   },
+   {
+    "id": "ep12",
+    "label": "Part Twelve",
+    "title": "Not the Only One",
+    "span": "Precedents and the pattern",
+    "own": []
+   },
+   {
+    "id": "ep13",
+    "label": "Part Thirteen",
+    "title": "The Worst Case",
+    "span": "The Epstein network under the Dark Enlightenment",
+    "own": []
+   },
+   {
+    "id": "ep15",
+    "label": "Part Fourteen",
+    "title": "The Blind Spots",
+    "span": "What the record holds and almost no one has looked at",
+    "own": []
+   },
+   {
+    "id": "ep14",
+    "label": "Part Fifteen",
+    "title": "The Architecture, Stated Plainly",
+    "span": "Synthesis",
+    "own": [
+     "epf_s12",
+     "oc_ch34"
+    ]
+   }
+  ]
+ }
+}

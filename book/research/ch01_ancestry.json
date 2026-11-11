@@ -1,0 +1,116 @@
+{
+ "volume": "ch01",
+ "verified": "2026-10-17",
+ "entries": [
+  {
+   "id": "an_genetics",
+   "stage": "ch01",
+   "topic": "Ancestry and language: what the genome studies show for each Jewish community",
+   "claims": [
+    {
+     "text": "The study genotyped 121 people from 14 Jewish communities, among them Ashkenazi, Sephardi (Turkey, Bulgaria), Moroccan, Georgian, Azerbaijani, Iranian, Iraqi, Uzbekistani (Bukharan), Bene Israel (Mumbai), Cochini (Kerala), Ethiopian (Beta Israel) and Yemenite Jews.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pdf"
+     ]
+    },
+    {
+     "text": "Most Jewish samples form a tight cluster overlying Druze and Cypriot samples; the authors trace the origins of most Jewish diaspora communities to the Levant.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pubmed"
+     ]
+    },
+    {
+     "text": "Within that cluster, one subgroup is Ashkenazi, Moroccan and Sephardi Jews; another is the Middle Eastern (Iranian, Iraqi) and Caucasus (Azerbaijani, Georgian) Jewish communities. Yemenite Jews form a separate compact cluster that overlaps mainly with Bedouin and also with Saudi samples.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pdf"
+     ]
+    },
+    {
+     "text": "The European-associated ancestry component is more substantial in Ashkenazi, Moroccan and Sephardi Jews than in the Middle Eastern Jewish communities. The paper gives no admixture percentages.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pdf"
+     ]
+    },
+    {
+     "text": "Ethiopian Jews (Beta Israel) and Indian Jews (Bene Israel and Cochini) cluster with neighbouring local populations in Ethiopia and western India, despite a clear paternal link between the Bene Israel and the Levant.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pubmed"
+     ]
+    },
+    {
+     "text": "Ethiopian Jews clustered with Semitic-speaking rather than Cushitic-speaking Ethiopians.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_behar2010_pdf"
+     ]
+    },
+    {
+     "text": "A 2016 genome study of the Bene Israel found substantial Jewish and substantial Indian ancestry, mixed within the last thousand years (about 19–33 generations ago) and involving Middle Eastern Jews, with more Jewish ancestry on the male side and more local ancestry on the female side.",
+     "strength": "peer-reviewed",
+     "sources": [
+      "an_waldman2016"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "an_behar2010_pubmed",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/20531471",
+     "label": "PubMed — Behar et al., 'The genome-wide structure of the Jewish people', Nature 466 (2010): 238–242 (abstract)"
+    },
+    {
+     "key": "an_behar2010_pdf",
+     "url": "https://www.evolutsioon.ut.ee/MAIT/pdf/nature_jews.pdf",
+     "label": "Behar et al., Nature (2010), full text hosted by the University of Tartu (samples, clusters, admixture components)"
+    },
+    {
+     "key": "an_waldman2016",
+     "url": "https://doaj.org/article/82486e4fb7c14e67b5bb94ed2e7d7d6d",
+     "label": "Waldman et al., 'The Genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry', PLoS ONE 11(3), 2016"
+    }
+   ]
+  },
+  {
+   "id": "an_atlas_ashkenazi",
+   "stage": "ch01",
+   "topic": "The Ashkenazi path through Europe and its languages; the language atlas (Nov 2026)",
+   "claims": [
+    "A Jewish community in Rome is recorded from 161 BCE (JVL).",
+    "An imperial decree of 321 CE to the council of Cologne is the oldest evidence of Jews north of the Alps (Wikipedia, History of the Jews in Cologne).",
+    "Carmi et al. 2014 (Nature Communications 5:4835) model Ashkenazi Jews as an even admixture of European and likely Middle Eastern origins, with a recent bottleneck of about 350 individuals (abstract).",
+    "Rubin 2010 (Gorgias): Semitic classification and dated attestation spans used in the atlas."
+   ],
+   "sources": [
+    {
+     "key": "la_rubin2010",
+     "url": "https://gorgiaspress.com/a-brief-introduction-to-the-semitic-languages",
+     "label": "Aaron D. Rubin, A Brief Introduction to the Semitic Languages (Gorgias Handbooks 19, 2010)",
+     "kind": "web"
+    },
+    {
+     "key": "la_carmi2014",
+     "url": "https://cris.huji.ac.il/en/publications/sequencing-an-ashkenazi-reference-panel-supports-population-targe/",
+     "label": "Carmi et al., Nature Communications 5:4835 (2014): Sequencing an Ashkenazi reference panel (abstract)",
+     "kind": "web"
+    },
+    {
+     "key": "la_wp_cologne",
+     "url": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_Cologne",
+     "label": "Wikipedia: History of the Jews in Cologne (the decree of 321)",
+     "kind": "web"
+    },
+    {
+     "key": "la_jvl_rome",
+     "url": "https://www.jewishvirtuallibrary.org/rome-jewish-history-tour",
+     "label": "Jewish Virtual Library: Rome, Italy",
+     "kind": "web"
+    }
+   ]
+  }
+ ]
+}

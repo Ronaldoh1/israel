@@ -1,0 +1,481 @@
+{
+ "_note": "Rothschild breadth pass (11 Nov 2026): family members and institutions with a documented tie to Palestine, Zionism or Israel before 1967 that the map was missing. Each tie carries its own refs.",
+ "nodes": [
+  {
+   "id": "rozsika_r",
+   "name": "Rózsika Rothschild",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Rózsika Rothschild (née von Wertheimstein, 1870–1940), wife of Charles Rothschild. She brought Chaim Weizmann to her husband and to his brother Walter, and is credited with a key part in the run-up to the Balfour Declaration."
+  },
+  {
+   "id": "evelyn_r",
+   "name": "Evelyn Achille de Rothschild",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Evelyn Achille de Rothschild (1886–1917), son of Leopold. Major, Buckinghamshire Yeomanry; wounded at Mughar Ridge on 13 November 1917 in the British conquest of Palestine, eleven days after the Balfour Declaration; died 17 November; buried in the Jewish cemetery at Rishon LeZion."
+  },
+  {
+   "id": "albert_cohn",
+   "name": "Albert Cohn",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Albert Cohn (1814–1877), Paris scholar and the Paris Rothschilds' almoner. Sent to Jerusalem by James de Rothschild in 1854; founded the city's first Jewish hospital, named for Mayer Amschel Rothschild, and a girls' school beside it."
+  },
+  {
+   "id": "rothschild_hospital",
+   "name": "Meyer Rothschild Hospital, Jerusalem (1854)",
+   "kind": "institution",
+   "cluster": "rothschild",
+   "note": "Jerusalem's first Jewish hospital, founded in 1854 by Albert Cohn for the Paris Rothschilds and named after Mayer Amschel Rothschild. The family's first documented institution in Palestine, 28 years before Edmond's colonies."
+  },
+  {
+   "id": "evelina_school",
+   "name": "Evelina de Rothschild School, Jerusalem",
+   "kind": "institution",
+   "cluster": "rothschild",
+   "note": "The first girls' school in Jerusalem, opened in 1854 beside the Rothschild hospital. Lionel de Rothschild of London took over its sponsorship in 1867 and named it after his late daughter Evelina."
+  },
+  {
+   "id": "herzl_address_1895",
+   "name": "Herzl's \"Address to the Rothschilds\" (1895)",
+   "kind": "document",
+   "cluster": "zionist movement",
+   "note": "Herzl first conceived Der Judenstaat as a speech to the Rothschild family, titled \"Address to the Rothschilds\". It was never delivered; the pamphlet appeared in February 1896."
+  },
+  {
+   "id": "royal_comm_1902",
+   "name": "Royal Commission on Alien Immigration (1902–03)",
+   "kind": "institution",
+   "cluster": "british state",
+   "note": "British royal commission appointed 21 March 1902, reported 10 August 1903; Lord (Natty) Rothschild was one of its seven members. Herzl gave evidence on 7 July 1902."
+  },
+  {
+   "id": "cbf",
+   "name": "Central British Fund for German Jewry (1933)",
+   "kind": "institution",
+   "cluster": "finance",
+   "note": "British refugee-relief fund founded in 1933, with Anthony and Yvonne de Rothschild among its founders and its work coordinated from N M Rothschild's offices at New Court. The Rothschild Archive estimates it rescued 65,000 people in the 1930s and 1940s, including 10,000 children through the Kindertransport."
+  },
+  {
+   "id": "edmond_adolphe",
+   "name": "Edmond Adolphe de Rothschild",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Edmond Adolphe de Rothschild (1926–1997), grandson of Edmond and son of Maurice. Signed a 1958 memorandum with the State of Israel on Caesarea; the 1962 agreement made the state a partner in its development."
+  },
+  {
+   "id": "erf",
+   "name": "Edmond de Rothschild Foundation (Israel)",
+   "kind": "institution",
+   "cluster": "rothschild",
+   "note": "Rothschild family foundation in Israel; established the Caesarea Development Corporation in 1952 and gave about 35,000 dunams around Caesarea to the government, which leased them back to the foundation."
+  },
+  {
+   "id": "caesarea_dev",
+   "name": "Caesarea Development Corporation (1952)",
+   "kind": "company",
+   "cluster": "rothschild",
+   "note": "Founded in 1952 by the Edmond de Rothschild Foundation to develop Caesarea; the state became a partner through a 1958 memorandum and a 1962 agreement."
+  },
+  {
+   "id": "batsheva_r",
+   "name": "Bethsabée (Batsheva) de Rothschild",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Bethsabée de Rothschild (1914–1999), daughter of Édouard. Moved to Israel; co-founded the Batsheva Dance Company with Martha Graham in 1964."
+  },
+  {
+   "id": "batsheva_co",
+   "name": "Batsheva Dance Company (1964)",
+   "kind": "institution",
+   "cluster": "rothschild",
+   "note": "Israeli dance company founded on 24 December 1964 by Batsheva de Rothschild and Martha Graham."
+  }
+ ],
+ "edges": [
+  {
+   "f": "charles_r",
+   "t": "rozsika_r",
+   "type": "kinship",
+   "status": "verified",
+   "label": "Rózsika von Wertheimstein married Charles Rothschild in 1907.",
+   "refs": [
+    {
+     "t": "Rothschild Archive: Rózsika Rothschild",
+     "u": "https://family.rothschildarchive.org/people/198-rozsika-rothschild-nee-von-wertheimstein-1870-1940"
+    }
+   ]
+  },
+  {
+   "f": "rozsika_r",
+   "t": "weizmann",
+   "type": "association",
+   "status": "reported",
+   "label": "She drove the relationship between Weizmann and the Rothschilds, bringing him to her husband Charles and to Walter.",
+   "refs": [
+    {
+     "t": "Wikipedia: Rózsika Rothschild",
+     "u": "https://en.wikipedia.org/wiki/R%C3%B3zsika_Rothschild"
+    }
+   ]
+  },
+  {
+   "f": "rozsika_r",
+   "t": "walter_r",
+   "type": "introduction",
+   "status": "reported",
+   "label": "Brought Weizmann's cause to her brother-in-law Walter, the future addressee of the Balfour Declaration.",
+   "refs": [
+    {
+     "t": "Wikipedia: Rózsika Rothschild",
+     "u": "https://en.wikipedia.org/wiki/R%C3%B3zsika_Rothschild"
+    }
+   ]
+  },
+  {
+   "f": "leopold_r",
+   "t": "evelyn_r",
+   "type": "kinship",
+   "status": "verified",
+   "label": "Evelyn Achille was the eldest son of Leopold de Rothschild and Marie Perugia.",
+   "refs": [
+    {
+     "t": "Wikipedia: Evelyn de Rothschild (born 1886)",
+     "u": "https://en.wikipedia.org/wiki/Evelyn_de_Rothschild_(born_1886)"
+    }
+   ]
+  },
+  {
+   "f": "evelyn_r",
+   "t": "allenby",
+   "type": "operation",
+   "status": "verified",
+   "label": "Major in Allenby's Palestine campaign; mortally wounded at Mughar Ridge, 13 Nov 1917, died 17 Nov.",
+   "refs": [
+    {
+     "t": "Wikipedia: Evelyn de Rothschild (born 1886)",
+     "u": "https://en.wikipedia.org/wiki/Evelyn_de_Rothschild_(born_1886)"
+    },
+    {
+     "t": "CWGC: Major Evelyn Achille de Rothschild",
+     "u": "https://www.cwgc.org/find-war-dead/casualty/654326/"
+    }
+   ]
+  },
+  {
+   "f": "evelyn_r",
+   "t": "rishon",
+   "type": "association",
+   "status": "verified",
+   "label": "Buried in the Jewish cemetery at Rishon LeZion, the colony his cousin Edmond had financed.",
+   "refs": [
+    {
+     "t": "CWGC: Major Evelyn Achille de Rothschild",
+     "u": "https://www.cwgc.org/find-war-dead/casualty/654326/"
+    }
+   ]
+  },
+  {
+   "f": "james_mayer",
+   "t": "albert_cohn",
+   "type": "instruction",
+   "status": "verified",
+   "label": "In 1854 James de Rothschild began aid to the Jews of Palestine and sent Albert Cohn to Jerusalem.",
+   "refs": [
+    {
+     "t": "Ramat Hanadiv: The start of the Rothschilds' assistance to the Yishuv",
+     "u": "https://ramat-hanadiv.org.il/en/timeline/the-start-of-the-rothschilds-assistance-to-the-yishuv"
+    },
+    {
+     "t": "Jewish Encyclopedia: Cohn, Albert",
+     "u": "https://www.jewishencyclopedia.com/articles/4514"
+    }
+   ]
+  },
+  {
+   "f": "albert_cohn",
+   "t": "rothschild_hospital",
+   "type": "founding",
+   "status": "verified",
+   "label": "Cohn founded Jerusalem's first hospital, named after Mayer Amschel Rothschild (1854).",
+   "refs": [
+    {
+     "t": "Ramat Hanadiv: The start of the Rothschilds' assistance to the Yishuv",
+     "u": "https://ramat-hanadiv.org.il/en/timeline/the-start-of-the-rothschilds-assistance-to-the-yishuv"
+    },
+    {
+     "t": "Jewish Encyclopedia: Cohn, Albert",
+     "u": "https://www.jewishencyclopedia.com/articles/4514"
+    }
+   ]
+  },
+  {
+   "f": "rothschild_hospital",
+   "t": "mayer_amschel",
+   "type": "association",
+   "status": "verified",
+   "label": "Named after Mayer Amschel Rothschild, founder of the family bank.",
+   "refs": [
+    {
+     "t": "Ramat Hanadiv: The start of the Rothschilds' assistance to the Yishuv",
+     "u": "https://ramat-hanadiv.org.il/en/timeline/the-start-of-the-rothschilds-assistance-to-the-yishuv"
+    }
+   ]
+  },
+  {
+   "f": "albert_cohn",
+   "t": "evelina_school",
+   "type": "founding",
+   "status": "verified",
+   "label": "Cohn opened a girls' school beside the hospital, the first girls' school in Jerusalem (1854).",
+   "refs": [
+    {
+     "t": "Ramat Hanadiv: The start of the Rothschilds' assistance to the Yishuv",
+     "u": "https://ramat-hanadiv.org.il/en/timeline/the-start-of-the-rothschilds-assistance-to-the-yishuv"
+    },
+    {
+     "t": "Wikipedia: Evelina de Rothschild",
+     "u": "https://en.wikipedia.org/wiki/Evelina_de_Rothschild"
+    }
+   ]
+  },
+  {
+   "f": "lionel_r",
+   "t": "evelina_school",
+   "type": "funding",
+   "status": "verified",
+   "label": "Lionel de Rothschild took over its sponsorship in 1867 and named it after his late daughter Evelina.",
+   "refs": [
+    {
+     "t": "Wikipedia: Evelina de Rothschild",
+     "u": "https://en.wikipedia.org/wiki/Evelina_de_Rothschild"
+    },
+    {
+     "t": "Ramat Hanadiv: The start of the Rothschilds' assistance to the Yishuv",
+     "u": "https://ramat-hanadiv.org.il/en/timeline/the-start-of-the-rothschilds-assistance-to-the-yishuv"
+    }
+   ]
+  },
+  {
+   "f": "herzl",
+   "t": "herzl_address_1895",
+   "type": "authorship",
+   "status": "verified",
+   "label": "Herzl planned Der Judenstaat as a speech to the Rothschild family, under the title \"Address to the Rothschilds\"; it was published in February 1896 under its final title.",
+   "refs": [
+    {
+     "t": "Wikipedia: Der Judenstaat",
+     "u": "https://en.wikipedia.org/wiki/Der_Judenstaat"
+    }
+   ]
+  },
+  {
+   "f": "herzl_address_1895",
+   "t": "nm_rothschild",
+   "type": "proposal",
+   "status": "reported",
+   "label": "Planned as an appeal to the Rothschild family to lead the project; never delivered to them. Edmond rejected the plan.",
+   "refs": [
+    {
+     "t": "Wikipedia: Der Judenstaat",
+     "u": "https://en.wikipedia.org/wiki/Der_Judenstaat"
+    }
+   ]
+  },
+  {
+   "f": "natty",
+   "t": "royal_comm_1902",
+   "type": "membership",
+   "status": "verified",
+   "label": "Lord Rothschild was one of the seven members of the Royal Commission on Alien Immigration (appointed 21 Mar 1902). He was its Jewish member and almost alone defended continued Jewish immigration.",
+   "refs": [
+    {
+     "t": "British History Online: Royal commissions 1900–1909 (Alien Immigration, appointed 21 Mar 1902)",
+     "u": "https://www.british-history.ac.uk/office-holders/vol10/pp103-145"
+    },
+    {
+     "t": "Jewish Historical Society of England: Nathaniel Mayer Rothschild (1840–1915), the last of the shtadlanim",
+     "u": "https://www.jhse.org/pre-2015articles/nathaniel-mayer-rothschild-(1840-1915)%2C-the-last-of-the-shtadlanim"
+    }
+   ]
+  },
+  {
+   "f": "herzl",
+   "t": "royal_comm_1902",
+   "type": "testimony",
+   "status": "verified",
+   "label": "Herzl gave evidence to the Commission on 7 July 1902; the appearance brought him into contact with Joseph Chamberlain.",
+   "refs": [
+    {
+     "t": "Wikipedia: Theodor Herzl (Royal Commission evidence, 7 July 1902)",
+     "u": "https://en.wikipedia.org/wiki/Theodor_Herzl"
+    }
+   ]
+  },
+  {
+   "f": "natty",
+   "t": "herzl",
+   "type": "opposition",
+   "status": "verified",
+   "label": "In a letter to Herzl of 18 August 1902 Natty wrote that he \"should view with horror the establishment of a Jewish Colony pure and simple\".",
+   "refs": [
+    {
+     "t": "Jewish Historical Society of England: Nathaniel Mayer Rothschild (1840–1915), the last of the shtadlanim",
+     "u": "https://www.jhse.org/pre-2015articles/nathaniel-mayer-rothschild-(1840-1915)%2C-the-last-of-the-shtadlanim"
+    }
+   ]
+  },
+  {
+   "f": "anthony_g",
+   "t": "cbf",
+   "type": "founding",
+   "status": "verified",
+   "label": "Anthony and Yvonne de Rothschild were among the founders of the Central British Fund in 1933; he chaired its Emigration (Planning) Committee from December 1938.",
+   "refs": [
+    {
+     "t": "Rothschild Archive: Anthony Gustav de Rothschild",
+     "u": "https://family.rothschildarchive.org/people/107-anthony-gustav-tony-de-rothschild-1887-1961"
+    }
+   ]
+  },
+  {
+   "f": "nm_rothschild",
+   "t": "cbf",
+   "type": "operational",
+   "status": "verified",
+   "label": "The Fund's work was coordinated from N M Rothschild & Sons' offices at New Court.",
+   "refs": [
+    {
+     "t": "Rothschild Archive: Anthony Gustav de Rothschild",
+     "u": "https://family.rothschildarchive.org/people/107-anthony-gustav-tony-de-rothschild-1887-1961"
+    }
+   ]
+  },
+  {
+   "f": "maurice_r",
+   "t": "edmond_adolphe",
+   "type": "kinship",
+   "status": "verified",
+   "label": "Edmond Adolphe was the son of Maurice de Rothschild and grandson of Edmond.",
+   "refs": [
+    {
+     "t": "Rothschild Archive: Edmond Adolphe de Rothschild",
+     "u": "https://family.rothschildarchive.org/people/118-edmond-adolphe-maurice-jules-jacques-de-rothschild-1926-1997"
+    },
+    {
+     "t": "Wikipedia: Edmond Adolphe de Rothschild",
+     "u": "https://en.wikipedia.org/wiki/Edmond_Adolphe_de_Rothschild"
+    }
+   ]
+  },
+  {
+   "f": "erf",
+   "t": "caesarea_dev",
+   "type": "founding",
+   "status": "verified",
+   "label": "The Edmond de Rothschild Foundation established the Caesarea Development Corporation in 1952.",
+   "refs": [
+    {
+     "t": "Wikipedia: Caesarea Development Corporation",
+     "u": "https://en.wikipedia.org/wiki/Caesarea_Development_Corporation"
+    }
+   ]
+  },
+  {
+   "f": "erf",
+   "t": "israel_gov",
+   "type": "agreement",
+   "status": "verified",
+   "label": "Gave about 35,000 dunams around Caesarea to the government, which leased them back to the foundation.",
+   "refs": [
+    {
+     "t": "Wikipedia: Caesarea Development Corporation",
+     "u": "https://en.wikipedia.org/wiki/Caesarea_Development_Corporation"
+    }
+   ]
+  },
+  {
+   "f": "edmond_adolphe",
+   "t": "israel_gov",
+   "type": "agreement",
+   "status": "verified",
+   "label": "1958 memorandum with the State of Israel on Caesarea, followed by the 1962 agreement making the state a partner.",
+   "refs": [
+    {
+     "t": "Wikipedia: Caesarea Development Corporation",
+     "u": "https://en.wikipedia.org/wiki/Caesarea_Development_Corporation"
+    }
+   ]
+  },
+  {
+   "f": "edmond_adolphe",
+   "t": "erf",
+   "type": "leadership",
+   "status": "reported",
+   "label": "Edmond Adolphe directed the family foundation's work in Israel.",
+   "refs": [
+    {
+     "t": "Wikipedia: Edmond Adolphe de Rothschild",
+     "u": "https://en.wikipedia.org/wiki/Edmond_Adolphe_de_Rothschild"
+    }
+   ]
+  },
+  {
+   "f": "edouard_r",
+   "t": "batsheva_r",
+   "type": "kinship",
+   "status": "verified",
+   "label": "Bethsabée was a daughter of Édouard de Rothschild.",
+   "refs": [
+    {
+     "t": "Jewish Women's Archive: Bethsabée de Rothschild",
+     "u": "https://jwa.org/encyclopedia/article/rothschild-bethsabee-de"
+    }
+   ]
+  },
+  {
+   "f": "batsheva_r",
+   "t": "batsheva_co",
+   "type": "founding",
+   "status": "verified",
+   "label": "Co-founded the Batsheva Dance Company with Martha Graham; officially founded 24 Dec 1964.",
+   "refs": [
+    {
+     "t": "Wikipedia: Batsheva Dance Company",
+     "u": "https://en.wikipedia.org/wiki/Batsheva_Dance_Company"
+    },
+    {
+     "t": "Jewish Women's Archive: Bethsabée de Rothschild",
+     "u": "https://jwa.org/encyclopedia/article/rothschild-bethsabee-de"
+    }
+   ]
+  },
+  {
+   "f": "nm_rothschild",
+   "t": "ottoman",
+   "type": "funding",
+   "status": "reported",
+   "label": "1855: the Rothschilds' tender won the £5 million Turkish loan guaranteed by Britain and France, the start of the Ottoman public debt.",
+   "refs": [
+    {
+     "t": "Olive Anderson, \"Great Britain and the beginnings of the Ottoman public debt, 1854–55\", Historical Journal (1964)",
+     "u": "https://psi424.cankaya.edu.tr/uploads/files/Anderson,%20GB%20and%20Beginnings%20of%20the%20Ott%20Publi%20Debt,%201854-1855%20(1964).pdf"
+    },
+    {
+     "t": "Hansard: The Turkish loan (20 July 1855)",
+     "u": "https://api.parliament.uk/historic-hansard/commons/1855/jul/20/the-turkish-loan"
+    }
+   ]
+  }
+ ],
+ "edge_overrides": {},
+ "node_overrides": {},
+ "post": [
+  "edmond_adolphe",
+  "erf",
+  "caesarea_dev",
+  "batsheva_r",
+  "batsheva_co"
+ ]
+}

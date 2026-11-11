@@ -1,0 +1,2394 @@
+{
+ "_note": "Additions and corrections made in the v54 build (Nov 2026): new nodes and ties (several Rothschild, Sursock, Ottoman land-law and British-state nodes), and labels updated with today-dollar equivalents. Each new tie carries its own refs.",
+ "nodes": [
+  {
+   "id": "mond",
+   "name": "Alfred Mond, Lord Melchett",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Alfred Mond (1868–1930), industrialist and Liberal cabinet minister under Lloyd George (First Commissioner of Works 1916–21), first chairman of Imperial Chemical Industries. Became an active Zionist: gave £10,000 (≈ $609,000 today) to Jabotinsky in 1920, toured Palestine with Weizmann in 1921, sat on the board of the Palestine Electric Corporation, and presided over the English Zionist Federation.",
+   "mentions": 7,
+   "sections": []
+  },
+  {
+   "id": "ici",
+   "name": "Imperial Chemical Industries (ICI)",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Chemicals conglomerate whose first chairman was Alfred Mond.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "reading",
+   "name": "Rufus Isaacs, Marquess of Reading",
+   "kind": "person",
+   "cluster": "british state",
+   "note": "Rufus Isaacs (1860–1935): Lord Chief Justice, Viceroy of India, Foreign Secretary. Took up Zionist affairs late in life; with Mond and Herbert Samuel he was a founding chairman of the Palestine Electric Corporation and chaired it from 1926.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "hirst",
+   "name": "Hugo Hirst",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Director of the General Electric Company, invited by Rutenberg to sit on the council of the Palestine Electric Corporation alongside Lord Reading and Herbert Samuel.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "sieff",
+   "name": "Israel Sieff",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Israel Sieff (1889–1972), Marks & Spencer director and later chairman. Met Weizmann in 1913, served on the 1918 Zionist Commission, and with his wife Rebecca endowed the Daniel Sieff Research Institute at Rehovot (1934), later the Weizmann Institute of Science.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "marks_s",
+   "name": "Simon Marks",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Simon Marks (1888–1964), chairman of Marks & Spencer from 1916–17. Worked with Weizmann in negotiations with successive British governments and was a leading contributor to the Sieff Institute and the Weizmann Institute.",
+   "mentions": 4,
+   "sections": []
+  },
+  {
+   "id": "sacher",
+   "name": "Harry Sacher",
+   "kind": "person",
+   "cluster": "zionist movement",
+   "note": "Manchester Guardian journalist and Zionist, brother-in-law of Marks and Sieff, later a Marks & Spencer director. His annotated draft of the Zionist text for the 1917 declaration survives.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "m_and_s",
+   "name": "Marks & Spencer",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "British retailer led by Simon Marks and Israel Sieff; the two families funded the Daniel Sieff Research Institute.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "sieff_inst",
+   "name": "Daniel Sieff Research Institute (1934)",
+   "kind": "institution",
+   "cluster": "zionist movement",
+   "note": "Research institute at Rehovot founded in 1934 at Weizmann's suggestion, endowed by Israel and Rebecca Sieff with support from the Marks and Sacher families; renamed the Weizmann Institute of Science in 1949.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "cp_scott",
+   "name": "C. P. Scott",
+   "kind": "person",
+   "cluster": "british state",
+   "note": "C. P. Scott (1846–1932), editor and owner of the Manchester Guardian. Met Weizmann in 1914, introduced him to Lloyd George and Herbert Samuel, and backed the Jewish Legion editorially.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "guardian",
+   "name": "Manchester Guardian",
+   "kind": "institution",
+   "cluster": "british state",
+   "note": "Liberal daily edited by C. P. Scott; its staff included Zionist journalists Harry Sacher and Herbert Sidebotham.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "lg_firm",
+   "name": "Lloyd George, Roberts & Co. (solicitors)",
+   "kind": "company",
+   "cluster": "british state",
+   "note": "Lloyd George's law firm, which in 1903 drafted the Uganda scheme at the request of Herzl's go-between Leopold Greenberg: Lloyd George's first working contact with the Zionist movement.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "hechler",
+   "name": "William Hechler",
+   "kind": "person",
+   "cluster": "religion",
+   "note": "Anglican clergyman and chaplain at the British Embassy in Vienna; former tutor in the household of the Grand Duke of Baden. Introduced Herzl to the Grand Duke and, through him, to Kaiser Wilhelm II.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "baden",
+   "name": "Frederick I, Grand Duke of Baden",
+   "kind": "person",
+   "cluster": "europe",
+   "note": "German sovereign, uncle of Kaiser Wilhelm II. Received Herzl through Hechler and became an advocate for him with the Kaiser.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "adelheid_r",
+   "name": "Adelheid de Rothschild",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Wife of Edmond de Rothschild. Visited Jerusalem with him in 1887; the couple were reburied at Ramat HaNadiv in 1954.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "scheid",
+   "name": "Elie Scheid",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Edmond's chief supervisor of the Palestine colonies 1883–1900, working from Paris; appointed inspector when colonisation began in September 1883. Assisted land purchases and marketing of the Baron's wines.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "ossowetzky",
+   "name": "Yehoshua Ossowetzky",
+   "kind": "person",
+   "cluster": "rothschild",
+   "note": "Senior official (1858–1929) in Edmond de Rothschild's administration in Palestine.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "carmel_wine",
+   "name": "Carmel Wine Co. / Carmel Oriental",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Export and local marketing company for the Rishon LeZion and Zikhron Ya'akov wine cellars set up by Edmond de Rothschild (Carmel name from 1896; Carmel Oriental for the Ottoman market from 1902).",
+   "mentions": 4,
+   "sections": []
+  },
+  {
+   "id": "ott_1872_sale",
+   "name": "Ottoman state sale of Marj ibn Amir (1872)",
+   "kind": "event",
+   "cluster": "ottoman",
+   "note": "The Ottoman government sold the Jezreel Valley (Marj ibn Amir) to the Sursock family of Beirut in 1872 for about £20,000 (≈ $2.7 million today); the family went on to hold roughly 230,000–400,000 dunams there.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "elias_sursock",
+   "name": "Elias (Ilyas) Sursock",
+   "kind": "person",
+   "cluster": "land",
+   "note": "Beirut Greek Orthodox banker, merchant and landowner who in 1910–11 sold about 10,000 dunams around al-Fula to the Jewish National Fund.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "nagib_albert_s",
+   "name": "Nagib and Albert Sursock",
+   "kind": "person",
+   "cluster": "land",
+   "note": "Sursock family members who contracted in 1912 to sell a large Jezreel tract to the Palestine Land Development Company (stalled by the war); later sales include about 71,356 dunams with Tel Adashim.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "ott_1892_ban",
+   "name": "Ottoman ban on land sales to Jews (1892)",
+   "kind": "event",
+   "cluster": "ottoman",
+   "note": "1892 decision to prohibit the sale of land in Palestine to Jews, including Ottoman citizens. Preceded by restrictions on Jewish immigration to Palestine from 1881–82.",
+   "mentions": 4,
+   "sections": []
+  },
+  {
+   "id": "petition_1891",
+   "name": "Jerusalem notables' petition (24 June 1891)",
+   "kind": "event",
+   "cluster": "ottoman",
+   "note": "Petition to the Grand Vizier demanding an end to Russian-Jewish immigration and a ban on land acquisition; described as the first organised Arab protest against Zionist settlement.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "tahir_husayni",
+   "name": "Muhammad Tahir al-Husayni",
+   "kind": "person",
+   "cluster": "arab leadership",
+   "note": "Mufti of Jerusalem (1842–1908), chaired the Commission for Sale; used delay and bureaucratic obstruction against land sales to Jews, per a scholarly survey citing a German consul's complaint of May 1893.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "fo78_4476",
+   "name": "FO 78/4476: British Jews' petition on the Ottoman ban (1893)",
+   "kind": "document",
+   "cluster": "british state",
+   "note": "Foreign Office correspondence forwarding petitions from British-subject Jews in Jerusalem complaining of Ottoman regulations barring them from buying and selling real estate, and asking for protection.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "zadok_kahn",
+   "name": "Zadok Kahn",
+   "kind": "person",
+   "cluster": "zionist movement",
+   "note": "Chief Rabbi of France. Received Yusuf Diya al-Khalidi's 1 March 1899 letter and showed it to Herzl. Whether he advised Edmond de Rothschild is not established in the sources pulled this pass.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "khalidi_letter_1899",
+   "name": "Khalidi letter to Zadok Kahn (1 Mar 1899)",
+   "kind": "document",
+   "cluster": "arab leadership",
+   "note": "Seven-page letter in French from the mayor of Jerusalem warning that Zionism would collide with the existing population, written for passing on to Herzl. Often quoted for one line granting the Jews' historical tie, but it ends by urging that Palestine be left alone. Herzl replied 19 March 1899.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "opda",
+   "name": "Ottoman Public Debt Administration (1881)",
+   "kind": "institution",
+   "cluster": "ottoman",
+   "note": "Created by the Decree of Muharrem (Dec 1881) to collect revenues for European bondholders; run by creditor representatives (British/Dutch/Belgian, French, German, Austrian, Italian, Ottoman holders and the Ottoman Bank). Employed thousands of officials, at times more than the finance ministry.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "regie",
+   "name": "Société de la Régie des Tabacs (1883)",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Tobacco monopoly to which the OPDA farmed out Ottoman tobacco revenue on 27 May 1883. The syndicate included the Ottoman Bank, the Rothschild family's Vienna Creditanstalt and Bleichröder of Berlin.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "credit_anstalt",
+   "name": "Creditanstalt (Vienna)",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Vienna bank described in the source as the Rothschild family's; a member of the 1883 tobacco Régie syndicate.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "herzl_charter_1901",
+   "name": "Herzl–Abdülhamid audience (15 May 1901)",
+   "kind": "event",
+   "cluster": "zionist movement",
+   "note": "Herzl proposed consolidating the Ottoman public debt in exchange for a charter for Jewish settlement in Palestine. The Sultan gave him decorations, not a charter.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "najib_nassar",
+   "name": "Najib Nassar",
+   "kind": "person",
+   "cluster": "arab leadership",
+   "note": "Haifa Christian journalist (1865–1947/48). Founded al-Karmil in 1908; published the first Arabic book on Zionism (1911); in 1914 urged pressure on Arab landowners not to sell.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "al_karmil",
+   "name": "Al-Karmil (newspaper, Haifa, 1908)",
+   "kind": "institution",
+   "cluster": "arab leadership",
+   "note": "Weekly founded by Najib Nassar. Its early line favoured the Ottoman authorities; by 1911 it opposed the Committee of Union and Progress over perceived bias toward Zionism.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "fula_affair",
+   "name": "Al-Fula affair (1910–11)",
+   "kind": "event",
+   "cluster": "land",
+   "note": "Sale of lands around al-Fula to the Jewish National Fund, alongside a rumour that Lebanese landlord Najib al-Asfar's bid for a 95-year crown-lands lease was a Zionist front. Triggered a wave of Arab press opposition.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "najib_asfar",
+   "name": "Najib Ibrahim al-Asfar",
+   "kind": "person",
+   "cluster": "land",
+   "note": "Lebanese landowner who sought a 95-year lease of crown lands in Palestine and Syria in 1910; a false rumour said he was acting for Zionists.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "sursock_archive",
+   "name": "Sursuq Family Archive (USEK, Lebanon)",
+   "kind": "document",
+   "cluster": "land",
+   "note": "Family archive at the Phoenix Center, Holy Spirit University of Kaslik, with papers of buyers and sellers. A primary source to pull for the land sales.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "jezreel_evictions",
+   "name": "Eviction of Jezreel tenants",
+   "kind": "event",
+   "cluster": "land",
+   "note": "Sursock sales are credited with the eviction of 8,730 tenants, a figure attributed to the Shaw Commission.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "lto_1920",
+   "name": "Land Transfer Ordinance (1920)",
+   "kind": "document",
+   "cluster": "british state",
+   "note": "First Mandate-era land transfer law, 1 Oct 1920. Sources disagree on its effect: one says it removed Ottoman-era restrictions on sales to Jews, others stress consent and tenant-protection rules.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "ltr_1940",
+   "name": "Land Transfers Regulations (1940)",
+   "kind": "document",
+   "cluster": "british state",
+   "note": "Divided Palestine into zones restricting transfers from Arabs to non-Arabs (heaviest in Zone A), issued under the 1939 Order-in-Council. Municipal areas were exempt.",
+   "mentions": 3,
+   "sections": []
+  },
+  {
+   "id": "land_inquiry_1945",
+   "name": "Land Transfer Inquiry Committee (1945)",
+   "kind": "institution",
+   "cluster": "british state",
+   "note": "British inquiry into transfers under the 1940 regulations. The Jewish Agency declined to take part.",
+   "mentions": 2,
+   "sections": []
+  },
+  {
+   "id": "blue_box",
+   "name": "JNF Blue Box (small-donor tins)",
+   "kind": "institution",
+   "cluster": "finance",
+   "note": "Collection tins used by the Jewish National Fund from its start. A US archive finding aid says more than half of the land the JNF owned by 1948 was bought with Blue Box proceeds (single source, not independently checked).",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "jnf_holdings",
+   "name": "JNF land holdings by year",
+   "kind": "document",
+   "cluster": "land",
+   "note": "JNF land: 22,363 dunams by 1920, 516,000 by 1940, 936,000 by May 1948 (PIJ). The 936,000 dunams were about 54% of land held by Jews and under 4% of Mandate Palestine; a further 800,000 dunams were held by other Jewish bodies and individuals.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "pica_holdings",
+   "name": "PICA land holdings (about 500,000 dunams, 1934)",
+   "kind": "document",
+   "cluster": "land",
+   "note": "A 1934 JTA report, already cited on this map's PICA tie, puts PICA at about 500,000 dunams, about twice the JNF's holdings then. PICA's land went to the JNF in 1957-58. Against roughly 1.74 million dunams held by Jews in 1948 (936,000 JNF plus 800,000 others) that is on the order of 29%; this mixes 1934 and 1948 figures and is a rough estimate.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "kh_totals",
+   "name": "Keren Hayesod funds raised, 1920-1948",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Encyclopaedia Judaica table: $143,000,000 raised 1920-1948 (nominal; ≈ $3.6 billion today, midpoint-year estimate). A second account, citing Eliezer Kaplan (1946), says over £14.5 million by 1945 (≈ $1.2 billion today, midpoint-year estimate). The two do not reconcile and are left side by side.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "yishuv_capital",
+   "name": "Jewish capital formation in Mandate Palestine",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Jewish capital was about 60% of Palestine's fixed capital formation by the end of the Mandate, with Jews investing 39.3% of their GNP a year between the wars, largely private capital brought by immigrants (Metzer via Stein). Capital in Jewish industries rose from £4.39 million (≈ $469 million today) in 1939 to £12.09 million (≈ $994 million today) by 1942.",
+   "mentions": 1,
+   "sections": []
+  },
+  {
+   "id": "diaspora_1948",
+   "name": "Diaspora money in 1948",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "One secondary account puts diaspora contributions in 1948 at $250 million (≈ $3.5 billion today), with about 75% of the war's cost raised inside Israel. Single source, not independently checked.",
+   "mentions": 1,
+   "sections": []
+  }
+ ],
+ "edges": [
+  {
+   "f": "mond",
+   "t": "jabotinsky",
+   "type": "funding",
+   "label": "Mond donated £10,000 (≈ $609,000 today) to Jabotinsky in 1920.",
+   "status": "reported",
+   "src": "wiki_mond",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Alfred Mond, 1st Baron Melchett (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Alfred_Mond,_1st_Baron_Melchett"
+    },
+    {
+     "t": "Jewish Lives: Alfred Moritz Mond",
+     "u": "https://www.jewsfww.uk/alfred-moritz-mond-mp.php"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "pec",
+   "type": "leadership",
+   "label": "Mond sat on the board of the Palestine Electric Corporation.",
+   "status": "verified",
+   "src": "jta_melchett_1930",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "All World Jewry Mourns Death of Lord Melchett (JTA, 29 Dec 1930)",
+     "u": "https://www.jta.org/archive/all-world-jewry-mourns-death-of-lord-melchett-great-jewish-british-mind"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "efz",
+   "type": "leadership",
+   "label": "Mond was president of the English Zionist Federation.",
+   "status": "verified",
+   "src": "jta_melchett_1930",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "JTA obituary, 29 Dec 1930",
+     "u": "https://www.jta.org/archive/all-world-jewry-mourns-death-of-lord-melchett-great-jewish-british-mind"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "jewish_agency",
+   "type": "leadership",
+   "label": "Mond was chosen chairman of the Council of the Jewish Agency after Louis Marshall died, and resigned when Weizmann did over the 1930 Passfield White Paper.",
+   "status": "verified",
+   "src": "jta_melchett_1930",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "JTA obituary, 29 Dec 1930",
+     "u": "https://www.jta.org/archive/all-world-jewry-mourns-death-of-lord-melchett-great-jewish-british-mind"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "keren_hayesod",
+   "type": "signatory",
+   "label": "Mond signed the Keren Hayesod manifesto published in the Jewish Chronicle on 24 December 1920.",
+   "status": "reported",
+   "src": "fathom_mond",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Fathom Journal, on Alfred Mond",
+     "u": "https://fathomjournal.org/?p=11086"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "ici",
+   "type": "leadership",
+   "label": "Mond was the first chairman of Imperial Chemical Industries.",
+   "status": "verified",
+   "src": "wiki_mond",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Alfred Mond, 1st Baron Melchett (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Alfred_Mond,_1st_Baron_Melchett"
+    }
+   ]
+  },
+  {
+   "f": "mond",
+   "t": "lloydgeorge",
+   "type": "correspondence",
+   "label": "Mond served in Lloyd George's government as First Commissioner of Works (1916–21) and wrote to him in October 1919 objecting to Faisal's Arab-kingdom view of Palestine.",
+   "status": "reported",
+   "src": "fathom_mond",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Fathom Journal, on Alfred Mond",
+     "u": "https://fathomjournal.org/?p=11086"
+    },
+    {
+     "t": "Alfred Mond (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Alfred_Mond,_1st_Baron_Melchett"
+    }
+   ]
+  },
+  {
+   "f": "reading",
+   "t": "pec",
+   "type": "leadership",
+   "label": "Reading chaired the Palestine Electric Corporation from 1926 until his death in December 1935; Herbert Samuel succeeded him.",
+   "status": "verified",
+   "src": "jvl_reading",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Reading (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/reading"
+    },
+    {
+     "t": "JTA: Samuel named chairman of Palestine Electric (15 Jan 1936)",
+     "u": "https://www.jta.org/archive/samuel-named-chairman-of-palestine-electric"
+    }
+   ]
+  },
+  {
+   "f": "samuel",
+   "t": "pec",
+   "type": "leadership",
+   "label": "Herbert Samuel succeeded Lord Reading as chairman of the Palestine Electric Corporation on 15 January 1936.",
+   "status": "verified",
+   "src": "wiki_reading",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "JTA: Samuel named chairman of Palestine Electric (15 Jan 1936)",
+     "u": "https://www.jta.org/archive/samuel-named-chairman-of-palestine-electric"
+    }
+   ]
+  },
+  {
+   "f": "rutenberg",
+   "t": "reading",
+   "type": "association",
+   "label": "Rutenberg invited Lord Reading and Herbert Samuel to sit on the council of his corporation.",
+   "status": "reported",
+   "src": "wiki_rutenberg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Wikipedia: Pinhas Rutenberg",
+     "u": "https://en.wikipedia.org/wiki/Pinhas_Rutenberg"
+    }
+   ]
+  },
+  {
+   "f": "hirst",
+   "t": "pec",
+   "type": "membership",
+   "label": "Hugo Hirst, director of General Electric, was invited to the council of the Palestine Electric Corporation.",
+   "status": "reported",
+   "src": "wiki_rutenberg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Wikipedia: Pinhas Rutenberg",
+     "u": "https://en.wikipedia.org/wiki/Pinhas_Rutenberg"
+    }
+   ]
+  },
+  {
+   "f": "edmond_r",
+   "t": "rutenberg",
+   "type": "funding",
+   "label": "Baron Edmond de Rothschild gave significant financial support to Rutenberg's electrification scheme.",
+   "status": "verified",
+   "src": "jvl_rutenberg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Pinchas Rutenberg (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/jsource/biography/Rutenberg.html"
+    },
+    {
+     "t": "Pinhas Rutenberg (Wikipedia)",
+     "u": "https://en.wikipedia.com/wiki/Pinhas_Rutenberg"
+    }
+   ]
+  },
+  {
+   "f": "james_armand",
+   "t": "rutenberg",
+   "type": "funding",
+   "label": "James A. de Rothschild, with his father, financed the electrification plan.",
+   "status": "reported",
+   "src": "wiki_rutenberg2",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Pinhas Rutenberg (Wikipedia)",
+     "u": "https://en.wikipedia.com/wiki/Pinhas_Rutenberg"
+    }
+   ]
+  },
+  {
+   "f": "churchill",
+   "t": "rutenberg",
+   "type": "official act",
+   "label": "As Colonial Secretary, Churchill backed Rutenberg's concession; the September 1921 agreement was defended by him in the Commons.",
+   "status": "verified",
+   "src": "hansard_1922",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "HC Deb 31 May 1922, Concessions (Palestine), Mr Rutenberg",
+     "u": "https://api.parliament.uk/historic-hansard/written-answers/1922/may/31/concessions-palestine-mr-rutenberg"
+    },
+    {
+     "t": "Pinchas Rutenberg (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/jsource/biography/Rutenberg.html"
+    }
+   ]
+  },
+  {
+   "f": "jct",
+   "t": "pec",
+   "type": "funding",
+   "label": "The Jewish Colonial Trust and the Rothschild-funded PICA took part in financing the Palestine Electric Corporation.",
+   "status": "reported",
+   "src": "wiki_jordan_hydro",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "First Jordan Hydro-Electric Power House (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/First_Jordan_Hydro-Electric_Power_House"
+    }
+   ]
+  },
+  {
+   "f": "sieff",
+   "t": "weizmann",
+   "type": "association",
+   "label": "Sieff and Marks met Weizmann in 1913 and became his closest Manchester backers.",
+   "status": "verified",
+   "src": "ej_sieff",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Sieff, Israel Moses, Baron (Encyclopaedia Judaica)",
+     "u": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/sieff-israel-moses-baron"
+    },
+    {
+     "t": "Weizmann Institute: Daniel Sieff Research Institute",
+     "u": "https://weizmann.ac.il/philanthropy/1934.html"
+    }
+   ]
+  },
+  {
+   "f": "sieff",
+   "t": "sieff_inst",
+   "type": "funding",
+   "label": "Israel and Rebecca Sieff endowed the Daniel Sieff Research Institute in 1934 at Weizmann's suggestion.",
+   "status": "verified",
+   "src": "weizmann_1934",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Weizmann Institute: 1934",
+     "u": "https://weizmann.ac.il/philanthropy/1934.html"
+    }
+   ]
+  },
+  {
+   "f": "marks_s",
+   "t": "sieff_inst",
+   "type": "funding",
+   "label": "Marks and Sieff were leading contributors to the Sieff Institute and later the Weizmann Institute.",
+   "status": "verified",
+   "src": "ej_marks",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Marks, Simon, Baron (Encyclopaedia Judaica)",
+     "u": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/marks-simon-baron"
+    }
+   ]
+  },
+  {
+   "f": "sacher",
+   "t": "sieff_inst",
+   "type": "funding",
+   "label": "The Marks and Sacher families gave financial support to the endowment of the Sieff Institute.",
+   "status": "reported",
+   "src": "wiki_rsieff",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Wikipedia: Rebecca Sieff",
+     "u": "https://en.wikipedia.org/wiki/Rebecca_Sieff"
+    }
+   ]
+  },
+  {
+   "f": "sieff",
+   "t": "m_and_s",
+   "type": "leadership",
+   "label": "Sieff joined Simon Marks at Marks & Spencer in 1915–16, became joint managing director in 1926 and chairman in 1964.",
+   "status": "verified",
+   "src": "wiki_sieff",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Israel Sieff, Baron Sieff (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Israel_Sieff,_Baron_Sieff"
+    }
+   ]
+  },
+  {
+   "f": "marks_s",
+   "t": "m_and_s",
+   "type": "leadership",
+   "label": "Simon Marks was chairman of Marks & Spencer from 1916–17 until 1964.",
+   "status": "verified",
+   "src": "ej_marks",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Marks, Simon, Baron (Encyclopaedia Judaica)",
+     "u": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/marks-simon-baron"
+    }
+   ]
+  },
+  {
+   "f": "marks_s",
+   "t": "weizmann",
+   "type": "collaboration",
+   "label": "Marks took part with Weizmann and the Zionist leadership in negotiations with successive British governments.",
+   "status": "verified",
+   "src": "ej_marks",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Marks, Simon, Baron (Encyclopaedia Judaica)",
+     "u": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/marks-simon-baron"
+    }
+   ]
+  },
+  {
+   "f": "marks_s",
+   "t": "efz",
+   "type": "leadership",
+   "label": "Marks served as a vice-president of the Zionist Federation. Source is an advocacy site; to verify.",
+   "status": "to-verify",
+   "src": "cufi_marks",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "CUFI UK: Marks & Spencer",
+     "u": "https://www.cufi.org.uk/?p=38708"
+    }
+   ]
+  },
+  {
+   "f": "sacher",
+   "t": "guardian",
+   "type": "association",
+   "label": "Sacher worked as a Manchester Guardian journalist before moving into business and Zionist politics.",
+   "status": "verified",
+   "src": "jc_guardian",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "The Jewish Chronicle: When the Guardian was a Zionist newspaper",
+     "u": "https://www.thejc.com/news/features/when-the-guardian-was-a-zionist-newspaper-vjfz49fm"
+    }
+   ]
+  },
+  {
+   "f": "sacher",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "label": "An annotated draft of the Zionist text for the declaration, prepared under Sokolow with Manchester-circle input, is in Sacher's hand. Only source so far is a blog; to verify against Stein, The Balfour Declaration (1961).",
+   "status": "to-verify",
+   "src": "mcintyre_weizmann",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Chaim Weizmann: the Biochemist behind the Balfour Declaration",
+     "u": "https://jodymcintyre.substack.com/p/chaim-weizmann-the-biochemist-behind"
+    }
+   ]
+  },
+  {
+   "f": "cp_scott",
+   "t": "weizmann",
+   "type": "meeting",
+   "label": "Scott met Weizmann in 1914 and introduced him to Lloyd George, Herbert Samuel and other statesmen.",
+   "status": "verified",
+   "src": "jvl_scott",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Scott, Charles Prestwich (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/scott-charles-prestwich-x00b0"
+    },
+    {
+     "t": "The Jewish Chronicle: When the Guardian was a Zionist newspaper",
+     "u": "https://www.thejc.com/news/features/when-the-guardian-was-a-zionist-newspaper-vjfz49fm"
+    }
+   ]
+  },
+  {
+   "f": "cp_scott",
+   "t": "lloydgeorge",
+   "type": "meeting",
+   "label": "Scott arranged and prepared Weizmann's meeting with Lloyd George at 11 Downing Street.",
+   "status": "verified",
+   "src": "jc_guardian",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "The Jewish Chronicle: When the Guardian was a Zionist newspaper",
+     "u": "https://www.thejc.com/news/features/when-the-guardian-was-a-zionist-newspaper-vjfz49fm"
+    }
+   ]
+  },
+  {
+   "f": "cp_scott",
+   "t": "guardian",
+   "type": "leadership",
+   "label": "Scott was editor and later owner of the Manchester Guardian.",
+   "status": "verified",
+   "src": "jvl_scott",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Scott, Charles Prestwich (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/scott-charles-prestwich-x00b0"
+    }
+   ]
+  },
+  {
+   "f": "guardian",
+   "t": "jewish_legion",
+   "type": "recognition",
+   "label": "After Weizmann introduced Jabotinsky to Scott, the Guardian editorially supported the Jewish Legion.",
+   "status": "verified",
+   "src": "jvl_scott",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Scott, Charles Prestwich (Jewish Virtual Library)",
+     "u": "https://www.jewishvirtuallibrary.org/scott-charles-prestwich-x00b0"
+    }
+   ]
+  },
+  {
+   "f": "lg_firm",
+   "t": "uganda",
+   "type": "drafting",
+   "label": "In 1903 Lloyd George's law firm drafted the Uganda scheme at the request of Leopold Greenberg, Herzl's go-between.",
+   "status": "verified",
+   "src": "ej_lg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Lloyd George, David (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lloyd-george-daviddeg"
+    },
+    {
+     "t": "Balfour Project: Lloyd George",
+     "u": "https://balfourproject.org/?p=1223"
+    }
+   ]
+  },
+  {
+   "f": "greenberg_l",
+   "t": "lg_firm",
+   "type": "agreement",
+   "label": "Greenberg instructed the firm of Lloyd George, Roberts & Co. to prepare the draft Uganda scheme.",
+   "status": "verified",
+   "src": "ej_lg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Balfour Project: Lloyd George",
+     "u": "https://balfourproject.org/?p=1223"
+    }
+   ]
+  },
+  {
+   "f": "lloydgeorge",
+   "t": "lg_firm",
+   "type": "leadership",
+   "label": "Lloyd George was a practising solicitor in the firm that drafted the scheme.",
+   "status": "verified",
+   "src": "ej_lg",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Lloyd George, David (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lloyd-george-daviddeg"
+    }
+   ]
+  },
+  {
+   "f": "hechler",
+   "t": "herzl",
+   "type": "collaboration",
+   "label": "Hechler read Der Judenstaat, offered his help in 1896 and opened doors to the Grand Duke of Baden and Kaiser Wilhelm II.",
+   "status": "verified",
+   "src": "ej_hechler",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Hechler, William Henry (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg"
+    }
+   ]
+  },
+  {
+   "f": "hechler",
+   "t": "baden",
+   "type": "correspondence",
+   "label": "Hechler tutored the Grand Duke's household and wrote to him on 26 March 1896 about Herzl's book.",
+   "status": "verified",
+   "src": "ej_hechler",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Hechler, William Henry (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg"
+    }
+   ]
+  },
+  {
+   "f": "baden",
+   "t": "kaiser",
+   "type": "kinship",
+   "label": "The Grand Duke was the Kaiser's uncle and used that relationship to support Herzl.",
+   "status": "verified",
+   "src": "ej_hechler",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Hechler, William Henry (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg"
+    }
+   ]
+  },
+  {
+   "f": "baden",
+   "t": "herzl",
+   "type": "meeting",
+   "label": "The Grand Duke received Herzl in April 1896 and became a lifelong advocate.",
+   "status": "reported",
+   "src": "jewinthepew",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Encyclopaedia Judaica (encyclopedia.com): William Hechler",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg"
+    }
+   ]
+  },
+  {
+   "f": "hechler",
+   "t": "die_welt",
+   "type": "publication",
+   "label": "Hechler published an article in the second issue of Die Welt arguing that the time of redemption had come.",
+   "status": "verified",
+   "src": "ej_hechler",
+   "n": 1,
+   "sec": "exp_s01",
+   "refs": [
+    {
+     "t": "Hechler, William Henry (Encyclopaedia Judaica)",
+     "u": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg"
+    }
+   ]
+  },
+  {
+   "f": "edmond_r",
+   "t": "adelheid_r",
+   "type": "kinship",
+   "label": "Edmond's wife; visited Jerusalem with him in 1887; reburied together at Ramat HaNadiv (1954).",
+   "status": "verified",
+   "src": "ra",
+   "n": 1,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Rothschild Archive: Edmond James de Rothschild",
+     "u": "https://family.rothschildarchive.org/people/50-edmond-james-de-rothschild-1845-1934"
+    },
+    {
+     "t": "LittleSis: PICA supported by Dorothy de Rothschild",
+     "u": "https://littlesis.org/relationships/1738987"
+    }
+   ]
+  },
+  {
+   "f": "edmond_r",
+   "t": "scheid",
+   "type": "appointment",
+   "label": "Edmond appointed Scheid inspector when colonisation began in Sept 1883.",
+   "status": "verified",
+   "src": "je_scheid",
+   "n": 2,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Jewish Encyclopedia: Scheid, Elie",
+     "u": "https://www.jewishencyclopedia.com/articles/13255"
+    },
+    {
+     "t": "Anne Ussishkin, The JCA and a Rothschild in Palestine",
+     "u": "https://www.biknotes.com/_files/ugd/b8b6dc_43eadf3b9f4d4f59ac7f7ecd71d881a5.pdf"
+    }
+   ]
+  },
+  {
+   "f": "scheid",
+   "t": "carmel_wine",
+   "type": "operational",
+   "label": "Scheid assisted land purchases and promoted marketing of the Baron's wines. Source is an auction catalogue; to verify.",
+   "status": "to-verify",
+   "src": "kedem",
+   "n": 3,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Kedem auction 80 note on Elie Scheid",
+     "u": "https://kedem-auctions.com/en/node/116657"
+    }
+   ]
+  },
+  {
+   "f": "ossowetzky",
+   "t": "edmond_r",
+   "type": "employment",
+   "label": "Senior official in Edmond's Palestine administration.",
+   "status": "verified",
+   "src": "ejud_oss",
+   "n": 4,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Encyclopaedia Judaica: Ossowetzky, O. Yehoshua",
+     "u": "https://www.jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0015_0_15248.html"
+    }
+   ]
+  },
+  {
+   "f": "edmond_r",
+   "t": "carmel_wine",
+   "type": "funding",
+   "label": "Edmond set up the wineries and the Carmel marketing company.",
+   "status": "verified",
+   "src": "carmel",
+   "n": 5,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Jerusalem Post feature on Carmel (reprint)",
+     "u": "https://adammontefiore.com/wp-content/uploads/2026/02/The_French_Revolution.pdf"
+    },
+    {
+     "t": "Rothschild Archive: Edmond James de Rothschild",
+     "u": "https://family.rothschildarchive.org/people/50-edmond-james-de-rothschild-1845-1934"
+    }
+   ]
+  },
+  {
+   "f": "carmel_wine",
+   "t": "rishon",
+   "type": "operational",
+   "label": "Rishon cellars traded as Carmel Wine Co. (Europe/US) and Carmel Oriental (Ottoman Empire).",
+   "status": "reported",
+   "src": "carmel",
+   "n": 6,
+   "sec": "exp2_s01",
+   "refs": [
+    {
+     "t": "Jerusalem Post feature on Carmel (reprint)",
+     "u": "https://adammontefiore.com/wp-content/uploads/2026/02/The_French_Revolution.pdf"
+    }
+   ]
+  },
+  {
+   "f": "carmel_wine",
+   "t": "zikhron",
+   "type": "operational",
+   "label": "Zikhron Ya'akov cellars traded under the same Carmel names.",
+   "status": "reported",
+   "src": "carmel",
+   "n": 7,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Jerusalem Post feature on Carmel (reprint)",
+     "u": "https://adammontefiore.com/wp-content/uploads/2026/02/The_French_Revolution.pdf"
+    }
+   ]
+  },
+  {
+   "f": "ottoman",
+   "t": "ott_1872_sale",
+   "type": "sale",
+   "label": "Ottoman government sold Marj ibn Amir in 1872.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 8,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    },
+    {
+     "t": "Sursock family (Wikipedia mirror)",
+     "u": "https://cavac.at/cavacopedia/Sursock%20family"
+    }
+   ]
+  },
+  {
+   "f": "ott_1872_sale",
+   "t": "sursock",
+   "type": "sale",
+   "label": "Buyer: Sursock family of Beirut, ~£20,000 (≈ $2.7 million today) in 1872.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 9,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    },
+    {
+     "t": "Sursock family (Wikipedia mirror)",
+     "u": "https://cavac.at/cavacopedia/Sursock%20family"
+    }
+   ]
+  },
+  {
+   "f": "sursock",
+   "t": "elias_sursock",
+   "type": "kinship",
+   "label": "Family member who sold al-Fula lands.",
+   "status": "reported",
+   "src": "sursock_w",
+   "n": 10,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Sursock Purchase (Wikiwand)",
+     "u": "https://www.wikiwand.com/en/articles/Sursock_Purchase"
+    }
+   ]
+  },
+  {
+   "f": "elias_sursock",
+   "t": "jnf",
+   "type": "sale",
+   "label": "1910–11: sold ~10,000 dunams around al-Fula to the JNF.",
+   "status": "reported",
+   "src": "sursock_w",
+   "n": 11,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Sursock Purchase (Wikiwand)",
+     "u": "https://www.wikiwand.com/en/articles/Sursock_Purchase"
+    }
+   ]
+  },
+  {
+   "f": "nagib_albert_s",
+   "t": "pldc",
+   "type": "sale",
+   "label": "1912 contract for a large Jezreel tract (stalled by war); later ~71,356 dunams incl. Tel Adashim. Sources disagree on dates and acreage.",
+   "status": "reported",
+   "src": "timeline",
+   "n": 12,
+   "sec": "exp2_s02",
+   "refs": [
+    {
+     "t": "Timeline of intercommunal conflict in Mandatory Palestine (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Timeline_of_intercommunal_conflict_in_Mandatory_Palestine"
+    },
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    }
+   ]
+  },
+  {
+   "f": "sursock",
+   "t": "nagib_albert_s",
+   "type": "kinship",
+   "label": "Family members who sold to the PLDC.",
+   "status": "reported",
+   "src": "timeline",
+   "n": 13,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Timeline of intercommunal conflict in Mandatory Palestine (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Timeline_of_intercommunal_conflict_in_Mandatory_Palestine"
+    }
+   ]
+  },
+  {
+   "f": "abdulhamid",
+   "t": "ott_1892_ban",
+   "type": "decree",
+   "label": "1892 decision to prohibit land sales to Jews in Palestine.",
+   "status": "reported",
+   "src": "jlp",
+   "n": 14,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Jewish land purchase in Palestine (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Jewish_land_purchase_in_Palestine"
+    },
+    {
+     "t": "First Aliyah (Wikipedia)",
+     "u": "https://wikipedia.com/wiki/First_Aliya"
+    }
+   ]
+  },
+  {
+   "f": "ott_1892_ban",
+   "t": "land_code",
+   "type": "structure",
+   "label": "Restriction layered on a land-registration system that let notables and absentee owners hold title.",
+   "status": "reported",
+   "src": "jcurrents",
+   "n": 15,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Jewish Currents: Who Owns the Land",
+     "u": "https://jewishcurrents.org/who-owns-the-land"
+    },
+    {
+     "t": "Jewish land purchase in Palestine (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Jewish_land_purchase_in_Palestine"
+    }
+   ]
+  },
+  {
+   "f": "ott_1892_ban",
+   "t": "capitulations",
+   "type": "bypass",
+   "label": "Foreign passports and consular protection used to get round the ban; enforcement uneven.",
+   "status": "reported",
+   "src": "saleh",
+   "n": 16,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Mohsen Saleh, Palestinian people and land (Al-Zaytouna)",
+     "u": "https://www.alzaytouna.net/english/AcademicArticles/EPA_MohsenSaleh_Pls-People-Land_5-20.pdf"
+    },
+    {
+     "t": "All Israel News: legal case for Jewish land acquisition (partisan; same mechanism, opposite framing)",
+     "u": "https://allisraelnews.com/blog/the-legal-case-for-jewish-land-acquisition"
+    }
+   ]
+  },
+  {
+   "f": "petition_1891",
+   "t": "ottoman",
+   "type": "petition",
+   "label": "Jerusalem notables petitioned the Grand Vizier, 24 June 1891, for a ban on immigration and land acquisition.",
+   "status": "reported",
+   "src": "alzaytouna",
+   "n": 17,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Al-Zaytouna: Jerusalem dignitaries' petition, 24 June 1891",
+     "u": "https://eng.alzaytouna.net/?p=18291"
+    },
+    {
+     "t": "Jewish Currents: Who Owns the Land",
+     "u": "https://jewishcurrents.org/who-owns-the-land"
+    }
+   ]
+  },
+  {
+   "f": "tahir_husayni",
+   "t": "mutasarrif",
+   "type": "obstruction",
+   "label": "Used delay and obstruction in the Jerusalem Administrative Council and Commission for Sale to stall sales.",
+   "status": "reported",
+   "src": "beska",
+   "n": 18,
+   "sec": "exp2_s03",
+   "refs": [
+    {
+     "t": "Beska, Responses of prominent Arabs to Zionist aspirations before 1908",
+     "u": "https://www.sav.sk/journals/uploads/020310442_Be%C5%A1ka.pdf"
+    }
+   ]
+  },
+  {
+   "f": "fo78_4476",
+   "t": "foreign_office",
+   "type": "correspondence",
+   "label": "British-subject Jews petitioned the FO against Ottoman bans on buying and selling real estate (1893).",
+   "status": "reported",
+   "src": "fo78",
+   "n": 19,
+   "sec": "exp2_s04",
+   "refs": [
+    {
+     "t": "FO 78/4476, 14 June 1893 (COJS transcription)",
+     "u": "https://cojs.org/june-14-1893-arabs-say-no-jewish-homeland-state-israel/"
+    },
+    {
+     "t": "Open Jerusalem archive: petition of British Jews against Porte orders",
+     "u": "https://www.openjerusalem.org/ark:/58142/23K2v"
+    }
+   ]
+  },
+  {
+   "f": "fo78_4476",
+   "t": "ott_1892_ban",
+   "type": "correspondence",
+   "label": "Document records the 1890s Ottoman prohibition and the pressure it provoked from foreign powers.",
+   "status": "reported",
+   "src": "fo78",
+   "n": 20,
+   "sec": "exp2_s04",
+   "refs": [
+    {
+     "t": "FO 78/4476, 14 June 1893 (COJS transcription)",
+     "u": "https://cojs.org/june-14-1893-arabs-say-no-jewish-homeland-state-israel/"
+    }
+   ]
+  },
+  {
+   "f": "yusuf_khalidi",
+   "t": "khalidi_letter_1899",
+   "type": "authorship",
+   "label": "Khalidi wrote the letter on 1 March 1899.",
+   "status": "verified",
+   "src": "wk_khal",
+   "n": 1,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Yousef al-Khalidi (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Yousef_al-Khalidi"
+    },
+    {
+     "t": "Vridar: In the name of God, let Palestine be left alone (Rashid Khalidi excerpt)",
+     "u": "https://vridar.org/2020/11/21/in-the-name-of-god-let-palestine-be-left-alone"
+    }
+   ]
+  },
+  {
+   "f": "khalidi_letter_1899",
+   "t": "zadok_kahn",
+   "type": "addressee",
+   "label": "Addressed to the Chief Rabbi of France to be passed on to Herzl.",
+   "status": "verified",
+   "src": "wk_khal",
+   "n": 2,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Yousef al-Khalidi (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Yousef_al-Khalidi"
+    },
+    {
+     "t": "Palestine Remembered/PalQuest: Yusuf Diya al-Khalidi",
+     "u": "https://www.palquest.org/en/node/39653"
+    }
+   ]
+  },
+  {
+   "f": "zadok_kahn",
+   "t": "herzl",
+   "type": "correspondence",
+   "label": "Kahn showed the letter to Herzl.",
+   "status": "reported",
+   "src": "wk_khal",
+   "n": 3,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Yousef al-Khalidi (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Yousef_al-Khalidi"
+    },
+    {
+     "t": "Palestine Remembered/PalQuest: Yusuf Diya al-Khalidi",
+     "u": "https://www.palquest.org/en/node/39653"
+    }
+   ]
+  },
+  {
+   "f": "herzl",
+   "t": "yusuf_khalidi",
+   "type": "correspondence",
+   "label": "Herzl replied on 19 March 1899 that no one would send the non-Jewish population away.",
+   "status": "verified",
+   "src": "vridar",
+   "n": 4,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Vridar: In the name of God, let Palestine be left alone (Rashid Khalidi excerpt)",
+     "u": "https://vridar.org/2020/11/21/in-the-name-of-god-let-palestine-be-left-alone"
+    },
+    {
+     "t": "Yousef al-Khalidi (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Yousef_al-Khalidi"
+    }
+   ]
+  },
+  {
+   "f": "opda",
+   "t": "ottoman",
+   "type": "control",
+   "label": "Creditor-run body collecting Ottoman revenues for European bondholders.",
+   "status": "reported",
+   "src": "wk_opda",
+   "n": 5,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Ottoman Public Debt Administration (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Ottoman_Public_Debt_Administration"
+    },
+    {
+     "t": "Ottoman public debt (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Ottoman_public_debt"
+    }
+   ]
+  },
+  {
+   "f": "opda",
+   "t": "regie",
+   "type": "agreement",
+   "label": "OPDA farmed the tobacco revenue to the Régie on 27 May 1883.",
+   "status": "reported",
+   "src": "lse_opda",
+   "n": 6,
+   "sec": "exp3_s01",
+   "refs": [
+    {
+     "t": "Hellenic Observatory PhD Symposium paper on the OPDA and the Régie",
+     "u": "https://www.lse.ac.uk/Hellenic-Observatory/Assets/Documents/HO-PhD-Symposia/The-5th-HO-Phd-Symposium/3-June/Session-2/Panel-1-GREECE-THE-CHANGING-INTERNATIONAL-SYSTEM.pdf"
+    }
+   ]
+  },
+  {
+   "f": "credit_anstalt",
+   "t": "regie",
+   "type": "membership",
+   "label": "Member of the Régie syndicate with the Ottoman Bank and Bleichröder.",
+   "status": "reported",
+   "src": "lse_opda",
+   "n": 7,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "Hellenic Observatory PhD Symposium paper on the OPDA and the Régie",
+     "u": "https://www.lse.ac.uk/Hellenic-Observatory/Assets/Documents/HO-PhD-Symposia/The-5th-HO-Phd-Symposium/3-June/Session-2/Panel-1-GREECE-THE-CHANGING-INTERNATIONAL-SYSTEM.pdf"
+    }
+   ]
+  },
+  {
+   "f": "salomon_r",
+   "t": "credit_anstalt",
+   "type": "founding",
+   "label": "Salomon Mayer von Rothschild and his son Anselm founded the Creditanstalt in Vienna in 1855.",
+   "status": "verified",
+   "src": "lse_opda",
+   "n": 8,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "Wikipedia: Creditanstalt",
+     "u": "https://en.wikipedia.org/wiki/Creditanstalt"
+    }
+   ]
+  },
+  {
+   "f": "herzl",
+   "t": "herzl_charter_1901",
+   "type": "proposal",
+   "label": "Herzl offered debt consolidation for a charter at the May 1901 audience.",
+   "status": "verified",
+   "src": "raab",
+   "n": 9,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "Raab Collection: Herzl reports failure of negotiations with Turkey",
+     "u": "https://raabcollection.com/theodor-herzl-autograph/theodor-herzl-reports-failure-negotiation-turkey"
+    },
+    {
+     "t": "MESA abstract: Abdülhamid II and Herzl, May 1901",
+     "u": "https://my-mesa.org/program/abstracts/view/eyJpdiI6IlRUVkhqK2pHeG9yL2J4aUtqVURra3c9PSIsInZhbHVlIjoiTXhKQzc3THNKaUM5aHhxV3ZBdWNKQT09IiwibWFjIjoiZjA5NTJlMzY0N2RiNDA4NzkwMzg4M2I3YWU4ZTVlNjE4MDQxMmE5NWIyOTRkMmE4ZmQ3YTMxYzA1YzY2MmQ1NyIsInRhZyI6IiJ9"
+    }
+   ]
+  },
+  {
+   "f": "abdulhamid",
+   "t": "herzl_charter_1901",
+   "type": "official act",
+   "label": "The Sultan refused a charter and gave Herzl decorations.",
+   "status": "reported",
+   "src": "mesa",
+   "n": 10,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "MESA abstract: Abdülhamid II and Herzl, May 1901",
+     "u": "https://my-mesa.org/program/abstracts/view/eyJpdiI6IlRUVkhqK2pHeG9yL2J4aUtqVURra3c9PSIsInZhbHVlIjoiTXhKQzc3THNKaUM5aHhxV3ZBdWNKQT09IiwibWFjIjoiZjA5NTJlMzY0N2RiNDA4NzkwMzg4M2I3YWU4ZTVlNjE4MDQxMmE5NWIyOTRkMmE4ZmQ3YTMxYzA1YzY2MmQ1NyIsInRhZyI6IiJ9"
+    },
+    {
+     "t": "Raab Collection: Herzl reports failure of negotiations with Turkey",
+     "u": "https://raabcollection.com/theodor-herzl-autograph/theodor-herzl-reports-failure-negotiation-turkey"
+    }
+   ]
+  },
+  {
+   "f": "herzl_charter_1901",
+   "t": "opda",
+   "type": "legal basis",
+   "label": "The debt Herzl offered to consolidate was the debt administered by the OPDA.",
+   "status": "reported",
+   "src": "mesa",
+   "n": 11,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "MESA abstract: Abdülhamid II and Herzl, May 1901",
+     "u": "https://my-mesa.org/program/abstracts/view/eyJpdiI6IlRUVkhqK2pHeG9yL2J4aUtqVURra3c9PSIsInZhbHVlIjoiTXhKQzc3THNKaUM5aHhxV3ZBdWNKQT09IiwibWFjIjoiZjA5NTJlMzY0N2RiNDA4NzkwMzg4M2I3YWU4ZTVlNjE4MDQxMmE5NWIyOTRkMmE4ZmQ3YTMxYzA1YzY2MmQ1NyIsInRhZyI6IiJ9"
+    },
+    {
+     "t": "Ottoman Public Debt Administration (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Ottoman_Public_Debt_Administration"
+    }
+   ]
+  },
+  {
+   "f": "najib_nassar",
+   "t": "al_karmil",
+   "type": "founding",
+   "label": "Founded and edited al-Karmil from 1908.",
+   "status": "reported",
+   "src": "wk_karmil",
+   "n": 12,
+   "sec": "exp3_s02",
+   "refs": [
+    {
+     "t": "Al-Karmil (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Al-Karmil_(newspaper)"
+    },
+    {
+     "t": "PalQuest: Najib Nassar",
+     "u": "https://palquest.org/en/node/6570"
+    }
+   ]
+  },
+  {
+   "f": "al_karmil",
+   "t": "filastin",
+   "type": "association",
+   "label": "Named together as the two papers that shaped early Palestinian opposition to Zionism.",
+   "status": "reported",
+   "src": "wk_karmil",
+   "n": 13,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Al-Karmil (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Al-Karmil_(newspaper)"
+    },
+    {
+     "t": "Institute for Palestine Studies: Arab press and Zionism before 1914",
+     "u": "https://www.palestine-studies.org/ar/print/165370"
+    }
+   ]
+  },
+  {
+   "f": "al_karmil",
+   "t": "fula_affair",
+   "type": "pressure",
+   "label": "Press campaign: in late 1910 Nassar brought four Beirut and Damascus papers into anti-Zionist coverage.",
+   "status": "reported",
+   "src": "ips",
+   "n": 14,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Institute for Palestine Studies: Arab press and Zionism before 1914",
+     "u": "https://www.palestine-studies.org/ar/print/165370"
+    },
+    {
+     "t": "Jerusalem Quarterly 59 (2014): Political opposition to Zionism, 1910–1911",
+     "u": "https://www.academia.edu/8377489"
+    }
+   ]
+  },
+  {
+   "f": "najib_asfar",
+   "t": "fula_affair",
+   "type": "claim",
+   "label": "His crown-lands lease bid was falsely rumoured to be a Zionist front.",
+   "status": "reported",
+   "src": "jq59",
+   "n": 15,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Jerusalem Quarterly 59 (2014): Political opposition to Zionism, 1910–1911",
+     "u": "https://www.academia.edu/8377489"
+    }
+   ]
+  },
+  {
+   "f": "elias_sursock",
+   "t": "fula_affair",
+   "type": "sale",
+   "label": "His 1910–11 sale of al-Fula land to the JNF is the core of the affair.",
+   "status": "reported",
+   "src": "jq59",
+   "n": 16,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Jerusalem Quarterly 59 (2014): Political opposition to Zionism, 1910–1911",
+     "u": "https://www.academia.edu/8377489"
+    },
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    }
+   ]
+  },
+  {
+   "f": "sursock",
+   "t": "jezreel_evictions",
+   "type": "displacement",
+   "label": "Sales credited with the eviction of 8,730 tenants.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 17,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    }
+   ]
+  },
+  {
+   "f": "shaw",
+   "t": "jezreel_evictions",
+   "type": "testimony",
+   "label": "Figure attributed to the Shaw Commission.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 18,
+   "sec": "exp3_s03",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    }
+   ]
+  },
+  {
+   "f": "sursock_archive",
+   "t": "sursock",
+   "type": "archive",
+   "label": "Primary archive of the Sursuq family, with papers of buyers and sellers.",
+   "status": "reported",
+   "src": "cambridge",
+   "n": 19,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Cambridge Core: Sursuq land sales (draws on the Sursuq Family Archive, USEK)",
+     "u": "https://www.cambridge.org/core/product/834B11030F8973E29ACE8AC194CAA0F6/core-reader"
+    },
+    {
+     "t": "Insight Turkey: The Sursuk Family and Land Dealings in Ottoman Palestine, 1890–1920",
+     "u": "https://www.insightturkey.com/article/the-sursuk-family-and-land-dealings-in-ottoman-palestine-a-historical-perspective-1890-1920"
+    }
+   ]
+  },
+  {
+   "f": "lto_1920",
+   "t": "ott_1892_ban",
+   "type": "legal basis",
+   "label": "Mandate ordinance replaced the Ottoman ban; sources disagree whether it lifted or reshaped the limits.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 20,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    },
+    {
+     "t": "Jewish Refugees: papers on legal land ownership (summarising 1940 regulations)",
+     "u": "https://www.jewishrefugees.org.uk/2011/02/papers-show-that-jews-legally-own-land.html"
+    }
+   ]
+  },
+  {
+   "f": "mandate_admin",
+   "t": "lto_1920",
+   "type": "official act",
+   "label": "Issued by the Mandate administration.",
+   "status": "reported",
+   "src": "sursock_p",
+   "n": 21,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Sursock Purchases (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Sursock_Purchases"
+    }
+   ]
+  },
+  {
+   "f": "ltr_1940",
+   "t": "lto_1920",
+   "type": "legal basis",
+   "label": "Regulations apply in addition to the 1920 ordinance.",
+   "status": "verified",
+   "src": "lt1940",
+   "n": 22,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Land Transfers Regulations, 1940 (text, PalQuest)",
+     "u": "https://palquest.org/en/node/23188"
+    }
+   ]
+  },
+  {
+   "f": "ltr_1940",
+   "t": "wp1939",
+   "type": "legal basis",
+   "label": "Issued under the May 1939 Order-in-Council powers, the policy track of the 1939 White Paper.",
+   "status": "reported",
+   "src": "jrefs",
+   "n": 23,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Jewish Refugees: papers on legal land ownership (summarising 1940 regulations)",
+     "u": "https://www.jewishrefugees.org.uk/2011/02/papers-show-that-jews-legally-own-land.html"
+    },
+    {
+     "t": "COJS: British restrict land transfer to Jews, 28 Feb 1940",
+     "u": "https://cojs.org/?p=38893"
+    }
+   ]
+  },
+  {
+   "f": "land_inquiry_1945",
+   "t": "ltr_1940",
+   "type": "official act",
+   "label": "Inquiry into how land was transferred despite the 1940 regulations.",
+   "status": "reported",
+   "src": "cei1945",
+   "n": 24,
+   "sec": "exp3_s04",
+   "refs": [
+    {
+     "t": "Center for Israel Education: Land Transfer Inquiry Committee Report (Nov 1945)",
+     "u": "https://israeled.org/wp-content/uploads/2015/02/194511-November-Land-Transfer-Inquiry-Committee-Report-PICS.pdf"
+    }
+   ]
+  },
+  {
+   "f": "jewish_agency",
+   "t": "land_inquiry_1945",
+   "type": "opposition",
+   "label": "The Jewish Agency declined to give evidence.",
+   "status": "reported",
+   "src": "cei1945",
+   "n": 25,
+   "sec": "exp3_s05",
+   "refs": [
+    {
+     "t": "Center for Israel Education: Land Transfer Inquiry Committee Report (Nov 1945)",
+     "u": "https://israeled.org/wp-content/uploads/2015/02/194511-November-Land-Transfer-Inquiry-Committee-Report-PICS.pdf"
+    }
+   ]
+  },
+  {
+   "f": "blue_box",
+   "t": "jnf",
+   "type": "funding",
+   "label": "Small-donor tins fed the JNF land fund; per one finding aid they paid for over half its 1948 land.",
+   "status": "reported",
+   "src": "heinz",
+   "n": 1,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "Heinz History Center: Jewish National Fund records finding aid",
+     "u": "https://historicpittsburgh.org/islandora/object/pitt:US-QQS-mss318"
+    },
+    {
+     "t": "Jewish National Fund (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Jewish_National_Fund"
+    }
+   ]
+  },
+  {
+   "f": "jnf",
+   "t": "jnf_holdings",
+   "type": "land total",
+   "label": "JNF land total: 22,363 dunams (1920), 516,000 (1940), 936,000 (1948).",
+   "status": "reported",
+   "src": "pij",
+   "n": 2,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "PIJ: Jewish National Fund land acquisitions",
+     "u": "https://www.pij.org/details.php?id=410"
+    },
+    {
+     "t": "Jewish National Fund (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Jewish_National_Fund"
+    }
+   ]
+  },
+  {
+   "f": "pica",
+   "t": "pica_holdings",
+   "type": "land total",
+   "label": "JTA 1934: about 500,000 dunams, roughly twice the JNF's holdings at the time.",
+   "status": "reported",
+   "src": "jta34",
+   "n": 3,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "JTA 1934 (as cited on the PICA tie already in this map)",
+     "u": "https://www.jta.org/archive/record-j-n-f-income-a%C2%A4560000-reported-for-past-year"
+    }
+   ]
+  },
+  {
+   "f": "keren_hayesod",
+   "t": "kh_totals",
+   "type": "fundraising total",
+   "label": "Funds raised 1920-1948: $143 million (≈ $2.0 billion today) (EJ) or over £14.5 million (≈ $1.1 billion today) by 1945 (Kaplan); unreconciled.",
+   "status": "reported",
+   "src": "ejud_kh",
+   "n": 4,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "Encyclopaedia Judaica: Keren Hayesod (encyclopedia.com)",
+     "u": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/keren-hayesod"
+    },
+    {
+     "t": "Ken Stein / Scott Abramson: The economy of the Yishuv (israeled.org)",
+     "u": "https://israeled.org/the-economy-of-the-yishuv-and-the-state-of-israel/"
+    }
+   ]
+  },
+  {
+   "f": "yishuv",
+   "t": "yishuv_capital",
+   "type": "capital",
+   "label": "Jewish capital about 60% of fixed capital formation; mostly private immigrant capital.",
+   "status": "reported",
+   "src": "stein",
+   "n": 5,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "Ken Stein / Scott Abramson: The economy of the Yishuv (israeled.org)",
+     "u": "https://israeled.org/the-economy-of-the-yishuv-and-the-state-of-israel/"
+    },
+    {
+     "t": "Ken Stein: Zionist Jewish economic development in Palestine before 1948",
+     "u": "https://israeled.org/zionist-jewish-economic-development-in-palestine-before-1948"
+    },
+    {
+     "t": "Jacob Metzer, The Divided Economy of Mandatory Palestine (1998)",
+     "u": "https://yplus.ps/wp-content/uploads/2021/01/General-Metzer-Jacob-The-Divided-Economy-of-Mandatory-Palestine.pdf"
+    }
+   ]
+  },
+  {
+   "f": "diaspora_1948",
+   "t": "jewish_agency",
+   "type": "funding",
+   "label": "About $250 million (≈ $3.5 billion today) from the diaspora in 1948; about 75% of war cost raised domestically.",
+   "status": "reported",
+   "src": "stein",
+   "n": 6,
+   "sec": "exp4_s01",
+   "refs": [
+    {
+     "t": "Ken Stein / Scott Abramson: The economy of the Yishuv (israeled.org)",
+     "u": "https://israeled.org/the-economy-of-the-yishuv-and-the-state-of-israel/"
+    }
+   ]
+  }
+ ],
+ "edge_overrides": {
+  "nm_rothschild>uk|funding": {
+   "label": "N M Rothschild & Sons, London Advances £4,000,000 (≈ $591 million today) while Parliament is not sitting."
+  },
+  "hirsch>jca|founding": {
+   "label": "In 1891 Hirsch founded the Jewish Colonization Association with £2,000,000 (≈ $361 million today) of capital."
+  },
+  "jct>apc_bank|founding": {
+   "label": "On 27 February 1902, the Jewish Colonial Trust founded a subsidiary, the Anglo-Palestine Company, with initial capital of about £50,000 (≈ $9.4 million today)."
+  },
+  "jnf>jewish_agency|co-mention": {
+   "label": "In 1944 the Jewish National Fund spent $10.8 million (≈ $204 million today) and the Jewish Agency and Keren Hayesod together $14.9 million (≈ $282 million today) of money raised in the United States, some $25.7 million (≈ $486 million today) in all."
+  },
+  "sokolow>warburg_o|co-mention": {
+   "label": "Nov 1921 Second delegation Sokolow, Otto Warburg, Jabotinsky; nearly $5 million (≈ $93 million today)."
+  },
+  "sokolow>jabotinsky|co-mention": {
+   "label": "Nov 1921 Second delegation Sokolow, Otto Warburg, Jabotinsky; nearly $5 million (≈ $93 million today)."
+  },
+  "warburg_o>jabotinsky|co-mention": {
+   "label": "Nov 1921 Second delegation Sokolow, Otto Warburg, Jabotinsky; nearly $5 million (≈ $93 million today)."
+  },
+  "sokolow>keren_hayesod|co-mention": {
+   "label": "Nahum Sokolow had met Harding for nearly an hour on 13 January 1922, during the Keren Hayesod tour that raised nearly $5 million (≈ $100 million today)."
+  },
+  "harding>keren_hayesod|co-mention": {
+   "label": "Nahum Sokolow had met Harding for nearly an hour on 13 January 1922, during the Keren Hayesod tour that raised nearly $5 million (≈ $100 million today)."
+  },
+  "meir>nicaragua|co-mention": {
+   "label": "It sets this beside the reported $50 million (≈ $693 million today) from Golda Meyerson's American tour, spent mostly on arms, $3 million (≈ $42 million today) in letters of credit from Nicaragua's Somoza for arms buying, and Al Schwimmer's roughly 30 aircraft, whose cost the record does not total."
+  },
+  "meir>schwimmer|co-mention": {
+   "label": "It sets this beside the reported $50 million (≈ $693 million today) from Golda Meyerson's American tour, spent mostly on arms, $3 million (≈ $42 million today) in letters of credit from Nicaragua's Somoza for arms buying, and Al Schwimmer's roughly 30 aircraft, whose cost the record does not total."
+  },
+  "nicaragua>schwimmer|co-mention": {
+   "label": "It sets this beside the reported $50 million (≈ $693 million today) from Golda Meyerson's American tour, spent mostly on arms, $3 million (≈ $42 million today) in letters of credit from Nicaragua's Somoza for arms buying, and Al Schwimmer's roughly 30 aircraft, whose cost the record does not total."
+  },
+  "meir>czechoslovakia|funding": {
+   "label": "The reported $50 million (≈ $693 million today) that Golda Meyerson brought back from the United States financed weapons purchases, including those from Czechoslovakia, as told in Golda Meyerson's tour."
+  },
+  "czechoslovakia>meir|co-mention": {
+   "label": "The reported $50 million (≈ $693 million today) that Golda Meyerson brought back from the United States financed weapons purchases, including those from Czechoslovakia, as told in Golda Meyerson's tour."
+  },
+  "stalin>exim|co-mention": {
+   "label": "The library's summary of the money behind the state sets these sums side by side: the reported $50 million (≈ $693 million today) from the 1948 tour; about $14.5 million (≈ $201 million today) paid for Czechoslovak arms, with Stalin's approval; and a $100 million (≈ $1.4 billion today) US Export-Import Bank loan earmarked…"
+  },
+  "upa>jdc|co-mention": {
+   "label": "Even that figure cannot simply be counted as \"funding Israel\": $74.7 million (≈ $1.0 billion today) went to the United Palestine Appeal, $64.9 million (≈ $900 million today) to the Joint Distribution Committee for relief in Europe, and $10.4 million (≈ $144 million today) to resettling refugees in the United States"
+  },
+  "meir>uja|co-mention": {
+   "label": "Its Czechoslovak line spans a six-fold range, and Golda Meyerson's money flowed in part through the same community federations as the United Jewish Appeal, so that adding her $50 million (≈ $693 million today) to the appeal's $150 million (≈ $2.1 billion today) would count some dollars twice."
+  },
+  "meir>haganah|co-mention": {
+   "label": "The flow above follows the defense money from the £80,000 (≈ $8.5 million today) budget line of 1939 through the 1938 levy to the American arms network of 1945–48, Golda Meyerson's tour of 1948, which raised about $50 million (≈ $693 million today) largely for weapons, and the advertisement naming the…"
+  },
+  "truman>feinberg|co-mention": {
+   "label": "Judis documents that Truman folded on these impulses in part because he needed the $100,000 (≈ $1.4 million today) from Feinberg and Kaufmann for the whistle-stop tour at that moment."
+  },
+  "feinberg>exim|co-mention": {
+   "label": "Among the dollar flows the record documents between 1921 and 1949, the Feinberg–Kaufmann money is the smallest, about a tenth of a million dollars beside a $100 million (≈ $1.4 billion today) Export-Import Bank loan of 1949 and tens of millions raised for arms."
+  },
+  "uja>feinberg|co-mention": {
+   "label": "2°: UJA under Henry Montor The fundraising engine 3°: Donors Feinberg, Kaufmann; Golda's ~$50M (≈ $693 million today) tour."
+  },
+  "montor>feinberg|co-mention": {
+   "label": "2°: UJA under Henry Montor The fundraising engine 3°: Donors Feinberg, Kaufmann; Golda's ~$50M (≈ $693 million today) tour."
+  },
+  "doj>jewish_agency|co-mention": {
+   "label": "21 Nov 1962 Justice Department FARA order AZC told to register; over $5M (≈ $55 million today) from Jewish Agency alleged."
+  },
+  "jewish_agency>azc|funding": {
+   "label": "In November 1962 the Justice Department ordered the American Zionist Council to register as a foreign agent, alleging that it had received more than $5 million (≈ $55 million today) from the Jewish Agency over the preceding eight years."
+  },
+  "feinberg>truman|co-mention": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "kaufmann_e>truman|funding": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "kaufmann_e>meir|co-mention": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "truman>meir|co-mention": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "truman>montor|co-mention": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "meir>montor|co-mention": {
+   "label": "Among donors, Abraham Feinberg and Ed Kaufmann raised the $100,000 (≈ $1.4 million today) that Truman's 1948 campaign needed, and Golda Meyerson's tour of 1948 raised about $50 million (≈ $693 million today) through Montor's network, largely for arms."
+  },
+  "sonneborn>montor|co-mention": {
+   "label": "Henry Montor gathered the donors for the 1945 Sonneborn meeting; that meeting produced the arms network; Montor then secured Golda Meyerson's platform before American audiences in 1948; and her tour raised about $50 million (≈ $693 million today), largely for arms, which…"
+  },
+  "sonneborn>meir|co-mention": {
+   "label": "Henry Montor gathered the donors for the 1945 Sonneborn meeting; that meeting produced the arms network; Montor then secured Golda Meyerson's platform before American audiences in 1948; and her tour raised about $50 million (≈ $693 million today), largely for arms, which…"
+  },
+  "zoa>meir|co-mention": {
+   "label": "Two of them belong to it directly: the Zionist Organization of America's 147,000 members by 1918, the mass base of the first degree, and the roughly $50 million (≈ $693 million today) of Golda Meyerson's 1948 tour, the largest single return of the Montor loop."
+  },
+  "zoa>montor|co-mention": {
+   "label": "Two of them belong to it directly: the Zionist Organization of America's 147,000 members by 1918, the mass base of the first degree, and the roughly $50 million (≈ $693 million today) of Golda Meyerson's 1948 tour, the largest single return of the Montor loop."
+  },
+  "meir>harding|co-mention": {
+   "label": "The money panel sets four documented sums side by side: Golda Meyerson's tour at about $50 million (≈ $693 million today), the transfer of German Jewish capital in the 1930s, about $14.5 million (≈ $201 million today) for Czechoslovak arms in 1948, and the $5 million (≈ $69 million today) raised by the American delegation…"
+  },
+  "jdc>ezra_nehemiah|funding": {
+   "label": "The airlift, named Operation Ezra and Nehemiah after the biblical leaders of the return from Babylonian exile, was largely funded by the American Jewish Joint Distribution Committee, at a cost of about $4 million (≈ $51 million today)."
+  },
+  "truman>exim|co-mention": {
+   "label": "After Truman's re-election an Export-Import Bank loan of $100 million (≈ $1.4 billion today) was earmarked for Israel, a decision placed in its political sequence in Truman's decisions after the election."
+  },
+  "exim>truman|co-mention": {
+   "label": "After Truman's re-election an Export-Import Bank loan of $100 million (≈ $1.4 billion today) was earmarked for Israel, a decision placed in its political sequence in Truman's decisions after the election."
+  },
+  "meir>feinberg|co-mention": {
+   "label": "Among the American-dollar flows in the record from 1921 to 1949, the $100 million (≈ $1.4 billion today) loan of 1949 is the largest single sum, double the $50 million (≈ $693 million today) of Golda Meyerson's 1948 American tour and a thousand times the $100,000 (≈ $1.4 million today) that Abraham Feinberg and Ed Kaufmann…"
+  },
+  "meir>kaufmann_e|co-mention": {
+   "label": "Among the American-dollar flows in the record from 1921 to 1949, the $100 million (≈ $1.4 billion today) loan of 1949 is the largest single sum, double the $50 million (≈ $693 million today) of Golda Meyerson's 1948 American tour and a thousand times the $100,000 (≈ $1.4 million today) that Abraham Feinberg and Ed Kaufmann…"
+  },
+  "kaufmann_e>truman|co-mention": {
+   "label": "Among the American-dollar flows in the record from 1921 to 1949, the $100 million (≈ $1.4 billion today) loan of 1949 is the largest single sum, double the $50 million (≈ $693 million today) of Golda Meyerson's 1948 American tour and a thousand times the $100,000 (≈ $1.4 million today) that Abraham Feinberg and Ed Kaufmann…"
+  },
+  "fara>jewish_agency|co-mention": {
+   "label": "21 Nov 1962 Justice Department FARA order AZC told to register; over $5M (≈ $55 million today) from Jewish Agency alleged."
+  },
+  "weizmann>harding|co-mention": {
+   "label": "In 1921 Weizmann and Einstein toured the United States, and a $5 million (≈ $93 million today) delegation tour of 1921–22 met President Harding."
+  },
+  "einstein>harding|meeting": {
+   "label": "In 1921 Weizmann and Einstein toured the United States, and a $5 million (≈ $93 million today) delegation tour of 1921–22 met President Harding."
+  },
+  "platforms1944>jnf|co-mention": {
+   "label": "In 1944 both American party platforms adopted the movement's aims, and US-raised spending that year reached $10.8 million (≈ $204 million today) through the Jewish National Fund and $14.9 million (≈ $282 million today) through the Jewish Agency and Keren Hayesod"
+  },
+  "platforms1944>jewish_agency|co-mention": {
+   "label": "In 1944 both American party platforms adopted the movement's aims, and US-raised spending that year reached $10.8 million (≈ $204 million today) through the Jewish National Fund and $14.9 million (≈ $282 million today) through the Jewish Agency and Keren Hayesod"
+  },
+  "us_gov>exim|co-mention": {
+   "label": "The United States government gave $100.0 million (≈ $1.4 billion today) in 1949, through the Export-Import Bank and other channels, then nothing in 1950, $35.1 million (≈ $451 million today) in 1951 and $86.4 million (≈ $1.1 billion today) in 1952, all of it economic"
+  },
+  "eban>horowitz_d|co-mention": {
+   "label": "Abba Eban, Israel's ambassador, and David Horowitz of Israel's Finance Ministry handed Acheson a note asking for a grant-in-aid of $150 million (≈ $1.9 billion today) for the period from 1 July 1951 to 1 June 1952."
+  },
+  "eban>acheson|co-mention": {
+   "label": "Abba Eban, Israel's ambassador, and David Horowitz of Israel's Finance Ministry handed Acheson a note asking for a grant-in-aid of $150 million (≈ $1.9 billion today) for the period from 1 July 1951 to 1 June 1952."
+  },
+  "horowitz_d>acheson|co-mention": {
+   "label": "Abba Eban, Israel's ambassador, and David Horowitz of Israel's Finance Ministry handed Acheson a note asking for a grant-in-aid of $150 million (≈ $1.9 billion today) for the period from 1 July 1951 to 1 June 1952."
+  },
+  "douglas_p>taft|co-mention": {
+   "label": "On about 3 April 1951, according to the Jewish Telegraphic Agency's report at the time, Senators Paul Douglas, a Democrat from Illinois, and Robert Taft, a Republican from Ohio, introduced a bill for $150 million (≈ $1.9 billion today) in aid to Israel, the full sum of the…"
+  },
+  "douglas_p>mccormack|co-mention": {
+   "label": "On about 3 April 1951, according to the Jewish Telegraphic Agency's report at the time, Senators Paul Douglas, a Democrat from Illinois, and Robert Taft, a Republican from Ohio, introduced a bill for $150 million (≈ $1.9 billion today) in aid to Israel, the full sum of the…"
+  },
+  "taft>mccormack|co-mention": {
+   "label": "On about 3 April 1951, according to the Jewish Telegraphic Agency's report at the time, Senators Paul Douglas, a Democrat from Illinois, and Robert Taft, a Republican from Ohio, introduced a bill for $150 million (≈ $1.9 billion today) in aid to Israel, the full sum of the…"
+  },
+  "silver>taft|co-mention": {
+   "label": "In a letter from Washington to Abba Hillel Silver he described a Douglas amendment, backed by Taft, that raised the figure for Near East economic aid and, with it, Israel's total, to about $68.8 million (≈ $883 million today)."
+  },
+  "kenen>state_dept|co-mention": {
+   "label": "Kenen's obituary in the Jewish Telegraphic Agency, published in 1988, says that the 1951 campaign sought $150 million (≈ $1.9 billion today) and that, despite State Department opposition, Kenen won approval for $65 million (≈ $834 million today)."
+  },
+  "state_dept>kenen|opposition": {
+   "label": "Kenen's obituary in the Jewish Telegraphic Agency, published in 1988, says that the 1951 campaign sought $150 million (≈ $1.9 billion today) and that, despite State Department opposition, Kenen won approval for $65 million (≈ $834 million today)."
+  },
+  "un>msa1951|co-mention": {
+   "label": "The $50 million (≈ $642 million today) for the refugees through the UN agency agrees with the Mutual Security Act as Truman described it; the other figures are Barda's account and are not confirmed by the other sources."
+  },
+  "msa1951>truman|co-mention": {
+   "label": "The $50 million (≈ $642 million today) for the refugees through the UN agency agrees with the Mutual Security Act as Truman described it; the other figures are Barda's account and are not confirmed by the other sources."
+  },
+  "shah>zahedi|co-mention": {
+   "label": "The memorandum's own figure is a grand total of $5,330,000 (≈ $66 million today), spread across three phases: the operations up to Zahedi's installation, a follow-up phase to solidify the Shah and Zahedi, and emergency funds for the new government."
+  },
+  "cia>zahedi|co-mention": {
+   "label": "James Risen, writing in the New York Times in 2000, reported that the CIA covertly funnelled $5 million (≈ $62 million today) to Zahedi's government two days after the coup."
+  },
+  "eden>un|co-mention": {
+   "label": "What the documents used here do show is the structure that stood in spring 1957: British and French forces out of Egypt and Eden out of office; the United States committed by statute, with up to $200 million (≈ $2.4 billion today) of existing funds and an offer of force against…"
+  },
+  "herter>eisenhower|co-mention": {
+   "label": "Herter had put it at $40–80 million (≈ $451 million–901 million today) on 8 December; Eisenhower cited $100–200 million (≈ $1.1 billion–2.3 billion today) on 19 December."
+  },
+  "allen_dulles>unsc|co-mention": {
+   "label": "The same day, CIA Director Allen Dulles briefed the 470th meeting of the National Security Council, showing photographs taken by the US Army attaché, and Herter put the cost of the project at $40–80 million (≈ $451 million–901 million today)."
+  },
+  "allen_dulles>herter|co-mention": {
+   "label": "The same day, CIA Director Allen Dulles briefed the 470th meeting of the National Security Council, showing photographs taken by the US Army attaché, and Herter put the cost of the project at $40–80 million (≈ $451 million–901 million today)."
+  },
+  "unsc>herter|co-mention": {
+   "label": "The same day, CIA Director Allen Dulles briefed the 470th meeting of the National Security Council, showing photographs taken by the US Army attaché, and Herter put the cost of the project at $40–80 million (≈ $451 million–901 million today)."
+  },
+  "west_germany>peres|co-mention": {
+   "label": "The points that support him are in the record set out above: a loan of about $50 million (≈ $563 million today) a year, agreed at a meeting with no transcript, booked in Bonn's accounts under other countries' names, and arranged while the Peres–Strauss defence channel was open."
+  },
+  "doj>fulbright|co-mention": {
+   "label": "The Justice Department's order had alleged \"more than $5 million (≈ $62 million today)\" over eight years, and the Senate record carries a figure of $5,100,001.02 (≈ $63 million today) for the period from 1 January 1955 to 31 December 1962, which Fulbright entered into the committee's record."
+  },
+  "us_congress>fulbright|co-mention": {
+   "label": "The Justice Department's order had alleged \"more than $5 million (≈ $62 million today)\" over eight years, and the Senate record carries a figure of $5,100,001.02 (≈ $63 million today) for the period from 1 January 1955 to 31 December 1962, which Fulbright entered into the committee's record."
+  },
+  "us_congress>azc|co-mention": {
+   "label": "A more exact figure appears in the record of the Senate inquiry that followed: $5,100,001.02 (≈ $63 million today), paid by the Jewish Agency to the American Zionist Council between 1 January 1955 and 31 December 1962, which Fulbright entered into the Foreign Relations…"
+  },
+  "azc>fulbright|co-mention": {
+   "label": "A more exact figure appears in the record of the Senate inquiry that followed: $5,100,001.02 (≈ $63 million today), paid by the Jewish Agency to the American Zionist Council between 1 January 1955 and 31 December 1962, which Fulbright entered into the Foreign Relations…"
+  },
+  "schiff>jdc|funding": {
+   "label": "1914: Schiff gave the initial $50,000 (≈ $1.7 million today) that launched the Joint Distribution Committee."
+  },
+  "jpm_co>gold1895|signatory": {
+   "label": "8 Feb 1895: the houses of J.P. Morgan and August Belmont contracted to buy $62 million (≈ $2.5 billion today) of 30-year US bonds, paid in gold, restoring the Treasury's gold reserve."
+  },
+  "exim>israel_gov|funding": {
+   "label": "15 Aug 1948: a senior official called a $100 million (≈ $1.4 billion today) Export-Import Bank loan to Israel a \"virtual certainty\", one of Truman's three points with de jure recognition and UN membership."
+  },
+  "doj>schwimmer|litigation": {
+   "label": "1950: convicted of violating the Neutrality Acts; fined $10,000 (≈ $138,000 today), stripped of voting rights and veterans benefits, no prison. Pardoned by President Clinton in 2001 (Wikipedia; another account in the book says 2000)."
+  },
+  "mickey_cohen>irgun|funding": {
+   "label": "1947: Mickey Cohen pledged $25,000 (≈ $373,000 today) at an Irgun fundraiser at Slapsy Maxie's, Los Angeles; organizers put the take at $50,000 (≈ $746,000 today)-60,000 (Rockaway, citing Cohen and Ben-Ami)."
+  },
+  "siegel>dafni|funding": {
+   "label": "1946-47: Bugsy Siegel gave Haganah emissary Reuven Dafni about $50,000 (≈ $854,000 today) in weekly cash payments in Los Angeles (Rockaway, citing Dafni)."
+  },
+  "meir>czechoslovakia|funding#1": {
+   "label": "The reported $50 million (≈ $693 million today) from Golda Meyerson's 1948 American tour financed arms purchases, including Czechoslovakia's."
+  },
+  "siroky>czechoslovakia|membership": {
+   "label": "1952: Foreign Minister Široký reported receipts of almost $14.5 million (≈ $182 million today) from the sales."
+  },
+  "nicaragua>jewish_agency|funding": {
+   "label": "Somoza's Nicaragua extended $3 million (≈ $42 million today) in letters of credit for arms buying."
+  },
+  "us_gov>israel_gov|funding": {
+   "label": "US aid 1949-59 totalled $652.9M (≈ $9.1 billion today) (CRS table), economic aid and loans only; Washington withheld arms so as not to alienate Arab oil states. First military loan: $0.4M (≈ $4.6 million today) in 1959 (CRS) or 1962 (another study)."
+  },
+  "bonds>israel_gov|funding": {
+   "label": "1951 Independence Issue at 3.5%; first-year sales over $52M (≈ $668 million today); within six years 35% of the development budget (Water Carrier, Dead Sea Works, power, ports)."
+  },
+  "lux_agreement>israel_gov|funding": {
+   "label": "$845M (≈ $11 billion today) (JVL) or 3.5bn + 0.45bn marks (NLI); 30% as crude oil bought in Britain, 70% German goods; 12-14% of Israel's imports for a decade."
+  },
+  "lux_agreement>claims_conf|funding": {
+   "label": "$100M (≈ $1.3 billion today) of the total went to the Claims Conference (one source's figure)."
+  },
+  "eban>acheson|meeting": {
+   "label": "Mar 1951: Eban and David Horowitz handed Acheson a request for a $150M (≈ $1.9 billion today) grant-in-aid (immigrants, defence, UNRWA reintegration)."
+  },
+  "douglas_p>msa1951|drafting": {
+   "label": "About 3 Apr 1951: Senators Douglas and Taft introduced a $150M (≈ $1.9 billion today) aid bill, calling Israel \"a bulwark\" against Communism, \"particularly in Iran\"."
+  },
+  "truman>msa1951|official act": {
+   "label": "10 Oct 1951: Truman signed the Mutual Security Act of 1951 ($50M (≈ $642 million today) for the UN refugee programme)."
+  },
+  "msa1951>israel_gov|funding": {
+   "label": "First US grant to Israel: $65M (≈ $810 million today) (JTA) or about $68.8M (≈ $857 million today) authorized (Kenen); FY1953 a further $73M (≈ $916 million today) (June 1952)."
+  },
+  "state_dept>msa1951|opposition": {
+   "label": "The Administration proposed $23.5M (≈ $302 million today) for Israel, $23.5M (≈ $302 million today) for the Arab states and $50M (≈ $642 million today) for refugees (24 May 1951)."
+  },
+  "james_armand>knesset_bldg|funding": {
+   "label": "James de Rothschild left £1.25M (≈ $42 million today) in his will for the Knesset building (announced July 1957); inaugurated 30 Aug 1966."
+  },
+  "jewish_agency>azc|funding#1": {
+   "label": "Senate record: $5,100,001.02 (≈ $59 million today) from the Jewish Agency to the Council, 1955-62 (Barda gives $1.5M (≈ $19 million today); unreconciled)."
+  },
+  "lionel_r>uk|funding": {
+   "label": "The bank under Lionel financed the British government's £4M (≈ $591 million today) purchase of Egypt's Suez Canal shares (1875)."
+  },
+  "jct>apc_bank|funding": {
+   "label": "The Trust, incorporated in London on 20 Mar 1899 with £2 million (≈ $390 million today) of capital in £1 shares (applications from over 100,000 shareholders by the end of May 1899), formed the Anglo-Palestine Company in 1902."
+  },
+  "keren_hayesod>jewish_agency|funding#1": {
+   "label": "April 1921 to July 1932: Keren Hayesod income £4,714,440 (≈ $432 million today), about half of it (£2,395,977 (≈ $219 million today)) from the United States."
+  },
+  "upa>jewish_agency|funding": {
+   "label": "UPA share of the UJA: $52 million (≈ $889 million today) from the 1946 drive and $74.7 million (≈ $1.0 billion today) of the record $150 million (≈ $2.1 billion today) of 1948; over $125 million (≈ $1.7 billion today) was spent in Palestine in 1946-47, more than 73% of it from American Jews."
+  },
+  "straus_n>upa|funding": {
+   "label": "Feb 1928: $100,000 (≈ $1.9 million today) to the United Palestine Appeal for his 80th birthday, directed to the Hadassah Medical Organization."
+  },
+  "straus_n>hadassah|funding": {
+   "label": "1924: $10,000 (≈ $194,000 today) for infant welfare stations; a large Straus family gift built the Nathan and Lina Straus Health Center in Jerusalem (cornerstone 1927, opened 1929)."
+  },
+  "feinberg>truman|funding#1": {
+   "label": "Sept 1948, in Feinberg's own account: \"I will pledge on behalf of Ed Kaufmann and myself that within two weeks we'll have $100,000 (≈ $1.4 million today) towards this trip\"; donors understood that \"without Truman, Israel would have had very difficult days\". He also said the trip \"would have been made one way or another\"."
+  },
+  "masaryk>czechoslovakia|official act": {
+   "label": "14 Jan 1948: Foreign Minister Jan Masaryk signed the first sale: rifles, machine guns and ammunition (reported at $750,000 (≈ $10 million today)), routed on Ethiopian papers because Czech rules allowed sales only to states."
+  }
+ },
+ "node_overrides": {
+  "herzl": {
+   "mentions": 268
+  },
+  "weizmann": {
+   "mentions": 113
+  },
+  "jabotinsky": {
+   "mentions": 63
+  },
+  "rutenberg": {
+   "mentions": 10
+  },
+  "jewish_agency": {
+   "mentions": 226
+  },
+  "efz": {
+   "mentions": 8
+  },
+  "uja": {
+   "note": "When the United Jewish Appeal was formed in 1939, Keren Hayesod had already been running as a permanent, structured, international fundraising institution for nearly two decades. The joint American campaign from 1939: $102 million (≈ $1.7 billion today) in 1946 and a record $150 million (≈ $2.1 billion today) in 1948, divided between the UPA, the JDC and the USNA."
+  },
+  "upa": {
+   "note": "To protect the Keren Hayesod, the ZOA created a United Palestine Appeal under Rabbi Stephen Wise The Palestine half of American Jewish fundraising: $52 million (≈ $889 million today) in 1946 and $74.7 million (≈ $1.0 billion today) in 1948 through the United Jewish Appeal."
+  },
+  "jct": {
+   "note": "Decided at the Second Zionist Congress (1898); incorporated under English Companies Acts, March 20, 1899. Authorized capital £2,000,000 in £1 shares. Actual result: roughly 250,000 shares sold worldwide (~£250,000 (≈ $49 million today) raised) — far below target. Its stated aim was to acquire the capital and a \"charter\" to enable large-scale settlement in Palestine.",
+   "mentions": 26
+  },
+  "apc_bank": {
+   "note": "Founded as a JCT subsidiary, February 27, 1902, initial capital ~£50,000 (≈ $9.4 million today). Chairman: David Wolffsohn; manager: Zalman David Levontin (a founder of Rishon LeZion, 1882). First branch opened in Jaffa, 1903; expanded to Jerusalem, Beirut, Hebron, Haifa, Safed, Tiberias, Gaza by 1914. Renamed Anglo-Palestine Bank c.1930; became Bank Leumi in 1950–51."
+  },
+  "keren_hayesod": {
+   "note": "Founded at the London Zionist conference, December 24, 1920, as the WZO's central, permanent fundraising arm — open to non-Zionist donors as well. Originators: Hillel Zlatopolsky and Isaac Naiditch. Registered in Britain 1921; headquarters moved to Jerusalem 1926. Original five-year target: £25,000,000 (≈ $2.3 billion today).",
+   "mentions": 41
+  },
+  "pec": {
+   "mentions": 8
+  },
+  "edmond_r": {
+   "mentions": 78
+  },
+  "james_armand": {
+   "note": "After 1948 the documented Rothschild money in Israel ran through visible institutions: PICA's land passed to the JNF (1957-58); Yad Hanadiv; the Knesset building (£1.25M (≈ $36 million today) bequest, 1966). No document found shows Rothschild ownership or control of the Bank of Israel, which is state-owned and created by Knesset law in 1954.",
+   "mentions": 2
+  },
+  "lloydgeorge": {
+   "mentions": 6
+  },
+  "churchill": {
+   "mentions": 23
+  },
+  "samuel": {
+   "mentions": 16
+  },
+  "jewish_legion": {
+   "mentions": 13
+  },
+  "balfour_decl": {
+   "mentions": 109
+  },
+  "us_congress": {
+   "note": "Congress passed resolutions of support (1922 Lodge-Fish, the 1945 concurrent resolution) but never voted to create or recognize a state; those were executive acts. Named champions: Lodge, Fish, Wagner, Taft, Wright, Compton, Celler, Bloom; two-thirds of the Senate joined the American Palestine Committee. No documented campaign money from Zionist organizations to members of Congress before 1948 was found in the sources checked; the documented levers were letters, telegrams, platform planks and votes. The one documented campaign money in this map is Feinberg and Kaufmann's $100,000 (≈ $1.4 million today) for Truman in 1948."
+  },
+  "exim": {
+   "note": "Among the dollar flows the record documents between 1921 and 1949, the Feinberg–Kaufmann money is the smallest, about a tenth of a million dollars beside a $100 million (≈ $1.4 billion today) Export-Import Bank loan of 1949 and tens of millions raised for arms."
+  },
+  "kaiser": {
+   "mentions": 10
+  },
+  "stalin": {
+   "note": "Deliveries included some 35,000 German-pattern Karabiner 98k rifles and heavy weapons, many produced for the Wehrmacht; a 1952 report by Czechoslovak Foreign Minister Viliam Široký put receipts at almost $14.5 million (≈ $201 million today). Czechoslovakia, communist since the February 1948 coup, sold with Soviet consent while Britain supplied the Arab air forces and the US kept its embargo."
+  },
+  "gregory16": {
+   "note": "1832 £400,000 (≈ $65 million today) loan to Gregory XVI Through Carl Mayer, James as papal banker."
+  },
+  "siroky": {
+   "note": "1952 Široký's report Receipts of almost $14.5 million (≈ $182 million today)."
+  },
+  "nicaragua": {
+   "note": "The government of Somoza's Nicaragua extended $3 million (≈ $42 million today) in letters of credit for arms buying."
+  },
+  "acheson": {
+   "note": "Abba Eban, Israel's ambassador, and David Horowitz of Israel's Finance Ministry handed Acheson a note asking for a grant-in-aid of $150 million (≈ $1.9 billion today) for the period from 1 July 1951 to 1 June 1952."
+  },
+  "douglas_p": {
+   "note": "On about 3 April 1951, according to the Jewish Telegraphic Agency's report at the time, Senators Paul Douglas, a Democrat from Illinois, and Robert Taft, a Republican from Ohio, introduced a bill for $150 million (≈ $1.9 billion today) in aid to Israel, the full sum of the Israeli note, and the House Majority Leader, John McCormack, introduced a companion bill."
+  },
+  "mccormack": {
+   "note": "On about 3 April 1951, according to the Jewish Telegraphic Agency's report at the time, Senators Paul Douglas, a Democrat from Illinois, and Robert Taft, a Republican from Ohio, introduced a bill for $150 million (≈ $1.9 billion today) in aid to Israel, the full sum of the Israeli note, and the House Majority Leader, John McCormack, introduced a companion bill."
+  },
+  "near_east_report": {
+   "note": "1957 Near East Report started Paid for with a $700 (≈ $8,300 today) honorarium (JTA)."
+  },
+  "nathaniel_paris": {
+   "note": "Nathaniel de Rothschild bought the Bordeaux estate of Brane-Mouton in 1853 and renamed it Château Mouton Rothschild, for 1,175,000 francs (≈ $9.1 million today) according to a reference summary."
+  },
+  "curzon": {
+   "note": "19 Apr 1923 Curzon's revised draft Initialled with Naji al-Asil; £50,000 (≈ $4.5 million today) final payment."
+  },
+  "uganda": {
+   "mentions": 19
+  },
+  "kaufmann_e": {
+   "note": "The historian John Judis records that in mid-1948 Truman wanted Israel to stop taking territory beyond the United Nations partition lines and was disturbed by its refugee policy, but backed away from pressing either objection, in part because his nearly broke campaign needed $100,000 (≈ $1.4 million today) from Abraham Feinberg and Ed Kaufmann for a whistle-stop tour."
+  },
+  "die_welt": {
+   "mentions": 5
+  },
+  "greenberg_l": {
+   "mentions": 1
+  }
+ }
+}

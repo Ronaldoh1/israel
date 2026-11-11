@@ -1,0 +1,205 @@
+{
+ "_note": "Funding layer (Nov 2026). Built by funding_layer.py; do not edit by hand.",
+ "node_notes": {
+  "+herzl": "How his work was paid for: he founded Die Welt at his own expense (1897); the movement's own money came from shekel dues and the Jewish Colonial Trust's share sale to over 100,000 small subscribers (1899). Baron de Hirsch, Albert Rothschild of Vienna and Edmond de Rothschild of Paris did not fund his political plan.",
+  "+walter_r": "Head of the English Rothschilds from 1915, when he inherited the title. The Balfour Declaration was addressed to him at 148 Piccadilly; he had worked on its draft with Weizmann. Weizmann wrote afterwards that \"the name of the greatest House in Jewry\" was now associated with it.",
+  "+jnf": "Founded 1901. By the eve of statehood it had acquired 936,000 dunams, 54% of the land held by Jews; a further 800,000 dunams were held by other Jewish bodies or individuals (Wikipedia).",
+  "+upa": "The Palestine half of American Jewish fundraising: $52 million in 1946 and $74.7 million in 1948 through the United Jewish Appeal.",
+  "+uja": "The joint American campaign from 1939: $102 million in 1946 and a record $150 million in 1948, divided between the UPA, the JDC and the USNA.",
+  "angloam1924": "The treaty by which the United States accepted the British Mandate for Palestine, whose text carried the Balfour Declaration."
+ },
+ "edges": [
+  {
+   "f": "herzl",
+   "t": "die_welt",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_wp_herzl",
+   "label": "1897: Herzl founded the Zionist weekly Die Welt in Vienna \"at considerable personal expense\"."
+  },
+  {
+   "f": "die_welt",
+   "t": "wzo",
+   "type": "association",
+   "status": "reported",
+   "src": "f_wp_herzl",
+   "label": "Die Welt was the Zionist newspaper Herzl founded in the year of the first Congress."
+  },
+  {
+   "f": "herzl",
+   "t": "hirsch",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "f_wp_herzl",
+   "label": "1895: Herzl corresponded with Baron Maurice de Hirsch, who had founded the JCA in 1891; it \"led nowhere\"."
+  },
+  {
+   "f": "shekel",
+   "t": "wzo",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_ws_org",
+   "label": "Members joined by paying a nominal \"shekel\" (a shilling, franc or mark); every 200 shekel-payers elected a delegate to the Congress."
+  },
+  {
+   "f": "jct",
+   "t": "apc_bank",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_je_jct",
+   "label": "The Trust, incorporated in London on 20 Mar 1899 with £2 million of capital in £1 shares (applications from over 100,000 shareholders by the end of May 1899), formed the Anglo-Palestine Company in 1902."
+  },
+  {
+   "f": "wzo",
+   "t": "jnf",
+   "type": "founding",
+   "status": "verified",
+   "src": "f_wp_jnf",
+   "label": "1901: the Fifth Zionist Congress established the Jewish National Fund, proposed in 1897 by Hermann Schapira; between the wars about a million blue collection boxes stood in Jewish homes."
+  },
+  {
+   "f": "keren_hayesod",
+   "t": "jewish_agency",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_jta_kh33",
+   "label": "April 1921 to July 1932: Keren Hayesod income £4,714,440, about half of it (£2,395,977) from the United States."
+  },
+  {
+   "f": "uja",
+   "t": "upa",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_jta_uja46; f_jta_uja48",
+   "label": "The United Jewish Appeal (from 1939) split each campaign between the United Palestine Appeal, the Joint Distribution Committee and the United Service for New Americans."
+  },
+  {
+   "f": "upa",
+   "t": "jewish_agency",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_jta_uja46; f_jta_uja48; f_jta_upa48",
+   "label": "UPA share of the UJA: $52 million from the 1946 drive and $74.7 million of the record $150 million of 1948; over $125 million was spent in Palestine in 1946-47, more than 73% of it from American Jews."
+  },
+  {
+   "f": "edmond_r",
+   "t": "pica",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_jta_baron",
+   "label": "Edmond \"invested over sixty million dollars in Palestine\" (JTA, 1934); his PICA then held about half a million dunams, about twice the JNF's holdings."
+  },
+  {
+   "f": "straus_n",
+   "t": "upa",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_jta_straus28",
+   "label": "Feb 1928: $100,000 to the United Palestine Appeal for his 80th birthday, directed to the Hadassah Medical Organization."
+  },
+  {
+   "f": "straus_n",
+   "t": "hadassah",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_wp_hadassah",
+   "label": "1924: $10,000 for infant welfare stations; a large Straus family gift built the Nathan and Lina Straus Health Center in Jerusalem (cornerstone 1927, opened 1929)."
+  },
+  {
+   "f": "upa",
+   "t": "hadassah",
+   "type": "funding",
+   "status": "reported",
+   "src": "f_jta_straus28",
+   "label": "Straus's 1928 gift passed through the UPA to the Hadassah Medical Organization."
+  },
+  {
+   "f": "hadassah",
+   "t": "yishuv",
+   "type": "collaboration",
+   "status": "reported",
+   "src": "f_wp_hadassah",
+   "label": "1918: Hadassah's American Zionist Medical Unit (45 doctors, nurses, dentists and engineers); 9 May 1939: the Rothschild-Hadassah University Hospital on Mount Scopus opened."
+  },
+  {
+   "f": "yishuv",
+   "t": "kofer",
+   "type": "founding",
+   "status": "verified",
+   "src": "f_wk_kofer",
+   "label": "Imposed by the Jewish National Council (Va'ad Leumi), formally from 24 June 1938."
+  },
+  {
+   "f": "kofer",
+   "t": "haganah",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_wk_kofer",
+   "label": "1938-48: a levy on luxuries, cigarettes and restaurant bills to fund central defense and expand the Haganah."
+  },
+  {
+   "f": "jdc",
+   "t": "pec_econ",
+   "type": "funding",
+   "status": "verified",
+   "src": "f_wp_pec",
+   "label": "Feb 1925: the Palestine Economic Corporation was formed by merging the Palestine Co-operative Company with capital from the Joint Distribution Committee."
+  },
+  {
+   "f": "us_gov",
+   "t": "angloam1924",
+   "type": "signatory",
+   "status": "verified",
+   "src": "f_jvl_conv",
+   "label": "3 Dec 1924: the United States and Britain signed the convention on Palestine; Washington read it narrowly, as protecting American interests."
+  },
+  {
+   "f": "uk",
+   "t": "angloam1924",
+   "type": "signatory",
+   "status": "verified",
+   "src": "f_jvl_conv",
+   "label": "Britain, the Mandatory power, was the other party."
+  },
+  {
+   "f": "angloam1924",
+   "t": "mandate",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "f_jvl_conv",
+   "label": "Jewish opinion saw the convention as a \"further international guarantee\" for the Mandate, which had written the Balfour Declaration into its text."
+  },
+  {
+   "f": "mandate",
+   "t": "yishuv",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "f_pq_mandate; f_jvl_pop",
+   "label": "The Mandate (approved 24 July 1922, in force 29 Sept 1923) repeated the Balfour commitment and made Britain responsible for \"the establishment of the Jewish national home\". Under it the Jewish population grew from 83,794 (1922) to 630,000 (1947), about 21,900 a year, against about 2,200 a year under Ottoman rule (24,000 in 1882 to 94,000 in 1914)."
+  },
+  {
+   "f": "weizmann",
+   "t": "walter_r",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "f_jc_roth",
+   "label": "After the declaration Weizmann wrote that \"the name of the greatest House in Jewry was associated with the granting of the Magna Carta of Jewish liberties.\""
+  },
+  {
+   "f": "dorothy",
+   "t": "weizmann",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "f_jc_roth",
+   "label": "1914-16: Weizmann wrote to Dorothy de Rothschild 33 times; through her and James he reached a wider circle of the British establishment."
+  },
+  {
+   "f": "james_armand",
+   "t": "balfour_decl",
+   "type": "pressure",
+   "status": "reported",
+   "src": "f_jc_roth",
+   "label": "James de Rothschild, with his wife Dorothy, was involved in the diplomacy that led to the declaration."
+  }
+ ]
+}

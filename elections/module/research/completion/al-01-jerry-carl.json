@@ -1,0 +1,105 @@
+{
+ "id": "al-01-jerry-carl",
+ "cites": {
+  "carl_fd26": {
+   "t": "Jerry Lee Carl, Candidate Report, filed May 15, 2026 (Filing ID #10078455) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10078455.pdf"
+  },
+  "carl_aipac22": {
+   "t": "FEC itemized receipt: AIPAC PAC to Carl for Congress, $5,000 (2022-07-20), image 202212079547195941 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202212079547195941"
+  },
+  "carl_aipac23": {
+   "t": "FEC itemized receipt: AIPAC PAC to Carl for Congress, $5,000 (2023-06-01), image 202311069598951112 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202311069598951112"
+  },
+  "carl_aipac26a": {
+   "t": "FEC itemized receipt: AIPAC PAC to Carl for Congress, $5,000 (2026-07-09), image 202608209903330621 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202608209903330621"
+  },
+  "carl_aipac26b": {
+   "t": "FEC itemized receipt: AIPAC PAC to Carl for Congress, $5,000 (2026-07-23), image 202608209903330623 — FEC",
+   "u": "https://docquery.fec.gov/cgi-bin/fecimg/?202608209903330623"
+  },
+  "kal01jerrycarl_mb_trades": {
+   "t": "Jerry Carl congressional stock trades — MarketBeat (accessed Oct 8, 2026)",
+   "u": "https://www.marketbeat.com/congress-stock-trades/profiles/jerry-carl"
+  },
+  "kal01jerrycarl_fec_c24": {
+   "t": "JERRY CARL candidate page H0AL01055, 2024 cycle — FEC.gov",
+   "u": "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2024"
+  },
+  "kal01jerrycarl_fec_c20": {
+   "t": "JERRY CARL candidate page H0AL01055, 2020 cycle — FEC.gov",
+   "u": "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2020"
+  },
+  "kal01jerrycarl_adn_q4_0201": {
+   "t": "Marques outraises Carl entering 2026 in AL-1 race — Alabama Daily News (Feb 1, 2026)",
+   "u": "https://aldailynews.com/marques-outraises-carl-entering-2026-in-al-1-race/"
+  },
+  "kal01jerrycarl_fec_cm22": {
+   "t": "JERRY CARL FOR CONGRESS (C00697789), 2022 cycle — FEC.gov",
+   "u": "https://www.fec.gov/data/committee/C00697789/?cycle=2022"
+  },
+  "kal01jerrycarl_fec_c26": {
+   "t": "JERRY CARL candidate page H0AL01055, 2026 cycle — FEC.gov",
+   "u": "https://www.fec.gov/data/candidate/H0AL01055/?cycle=2026"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener/Justia not reachable (blocked), Alacourt paywalled. House Ethics/OCE not searched directly. Wikipedia lists no legal or ethics matters; no dedicated news search for lawsuits was run because the search budget ran out. Oct 8, 2026: House Ethics/OCE were not reachable directly (ethics.house.gov refused by the fetch tool), and no new news search could run. Wikipedia and The Lobby list no ethics matters, so ethics is marked \"news\" on secondary sources only. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('\"Jerry Carl\" Mobile lawsuit OR sued OR court case') turned up no reporting of any civil or criminal case naming Jerry Carl as a party, so courts is 'news' (searched, nothing found).",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2026 House candidate report (filed May 15, 2026) lists no foreign assets, income or positions. Disclosures: read the filed PDF from the House Clerk (local copy pulled 2026-10-13) with pdftotext. Net worth = sum of asset ranges minus sum of liability ranges as filed; a personal residence is not a reportable asset, so a mortgage on it pushes the range down."
+ },
+ "finances": {
+  "networth": {
+   "min": 2146013,
+   "max": 7864999,
+   "year": 2025,
+   "c": [
+    "carl_fd26"
+   ]
+  },
+  "trades": {
+   "count": 0,
+   "period": "2021–2025 (third-party tracker)",
+   "overlap": [],
+   "c": [
+    "kal01jerrycarl_mb_trades"
+   ],
+   "note": "MarketBeat reports 'No trade activity.' House periodic transaction reports were not checked directly."
+  },
+  "note": {
+   "t": "2026 candidate report (filed May 15, 2026; covers Jan. 1, 2025–Apr. 15, 2026). Assets of $2.4M–$8.0M are almost all cash and insurance products: a Stifel Nicolaus account listed at $1M–$5M (interest income $100,001–$1M so far in 2026, $50,001–$100,000 in 2025), two Prudential annuities ($250K–$500K each, one the spouse's), the spouse's Reliance Standard life-insurance cash value ($500K–$1M), AXA life-insurance sub-funds, Hancock Whitney, PNC, Trustmark and Community Bank accounts, and an Alabama RSA pension account. One liability: a Hancock Whitney line of credit (March 2019) of $100K–$250K. No earned income, no outside positions, no agreements, no foreign assets or income. Candidate reports have no stock-transaction schedule.",
+   "c": [
+    "carl_fd26"
+   ]
+  }
+ },
+ "money_flags": {
+  "corp": {
+   "t": "Business PACs: Blue Cross Blue Shield of Alabama and the Alabama Farmers Federation gave in Q4 2025 (Alabama Daily News). PAC/committee money was $387,000 (2020), $499,500 (2022), $634,500 (2024) and $303,059 (2025–Jul 2026), but FEC summaries do not split it into business and ideological PACs.",
+   "c": [
+    "kal01jerrycarl_adn_q4_0201",
+    "kal01jerrycarl_fec_c20",
+    "kal01jerrycarl_fec_cm22",
+    "kal01jerrycarl_fec_c24",
+    "kal01jerrycarl_fec_c26"
+   ]
+  },
+  "lobby": {
+   "t": "AIPAC PAC (C00797670), a PAC organized around U.S.–Israel policy, gave directly to his campaign: $2,900 (Mar. 2022), $5,000 (Jul. 2022), $2,100 (Nov. 2022), $5,000 (Jun. 2023), $5,000 (Jul. 9, 2026) and $5,000 (Jul. 23, 2026), per FEC itemized records. The same records show a run of -$500 entries dated Oct. 16, 2023 (refunds or redesignations); the net the records profile computes for 2022–2026 is $10,500.",
+   "c": [
+    "carl_aipac22",
+    "carl_aipac23",
+    "carl_aipac26a",
+    "carl_aipac26b"
+   ]
+  }
+ },
+ "research_notes": "Ethics stays 'news' (ethics.house.gov unreachable). money_history stays 'news' (fec.gov pages and Track AIPAC not fetchable here); the new AIPAC PAC lobby flag comes from the FEC itemized committee-contribution records in the local records profile. israel.aipac_pac could now be filled with the FEC direct-contribution figure ($10,500 net, 2022–2026) — left for the integrator."
+}

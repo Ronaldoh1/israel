@@ -1,0 +1,590 @@
+{
+ "state": "OH",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_oh": {
+   "t": "2026 United States House of Representatives elections in Ohio — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Ohio"
+  },
+  "gp_oh": {
+   "t": "The Green Papers: Ohio 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/OH"
+  },
+  "hamilton_boe": {
+   "t": "Hamilton County (OH) Board of Elections — November 2026 Candidate Profile (Aug 21, 2026)",
+   "u": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/08/November-2026-Candidate-Profile-1-3.pdf"
+  }
+ },
+ "races": [
+  {
+   "race": "OH-01",
+   "incumbent": {
+    "name": "Greg Landsman",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Greg Landsman",
+     "party": "D",
+     "incumbent": true,
+     "rec": "oh-01-greg-landsman",
+     "fec": [
+      "H2OH01194"
+     ]
+    },
+    {
+     "name": "Eric Conroy",
+     "party": "R",
+     "incumbent": false,
+     "rec": "oh-01-eric-conroy",
+     "fec": [
+      "H6OH01138"
+     ]
+    },
+    {
+     "name": "Nathan Weise",
+     "party": "L",
+     "incumbent": false,
+     "rec": "oh-01-nathan-weise",
+     "fec": [
+      "H6OH01229",
+      "H6OH01237"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Conroy won R primary 71.9%. John Hancock won the Libertarian primary; Hamilton County BOE lists Weise as 'certified to fill vacancy on ballot' (Wikipedia GE table and Green Papers also list Weise). District redrawn Oct 2025.",
+   "c": [
+    "wiki_oh",
+    "gp_oh",
+    "hamilton_boe"
+   ]
+  },
+  {
+   "race": "OH-02",
+   "incumbent": {
+    "name": "David Taylor",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "David Taylor",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-02-david-taylor",
+     "fec": [
+      "H4OH02248"
+     ]
+    },
+    {
+     "name": "Jen Mazzuckelli",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-02-jen-mazzuckelli",
+     "fec": [
+      "H6OH02326"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Mazzuckelli won D primary 53.3-46.7 over Todd Wilson. Libertarian Kenneth Dietz appears in Wikipedia candidate list but not its GE table or Green Papers.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-03",
+   "incumbent": {
+    "name": "Joyce Beatty",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Joyce Beatty",
+     "party": "D",
+     "incumbent": true,
+     "rec": "oh-03-joyce-beatty",
+     "fec": [
+      "H2OH03125"
+     ]
+    },
+    {
+     "name": "Cleophus Dulaney",
+     "party": "R",
+     "incumbent": false,
+     "rec": "oh-03-cleophus-dulaney",
+     "fec": [
+      "H0OH03137"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-04",
+   "incumbent": {
+    "name": "Jim Jordan",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jim Jordan",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-04-james-jordan",
+     "fec": [
+      "H6OH04082"
+     ]
+    },
+    {
+     "name": "Joshua Kolasinski",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-04-joshua-kolasinski",
+     "fec": [
+      "H6OH04181"
+     ]
+    },
+    {
+     "name": "Tracey Tackett",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Tackett (independent) has no FEC filing in the candidate file.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-05",
+   "incumbent": {
+    "name": "Bob Latta",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Bob Latta",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-05-robert-latta",
+     "fec": [
+      "H8OH05036"
+     ]
+    },
+    {
+     "name": "Brian Shaver",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-05-brian-shaver",
+     "fec": [
+      "H6OH05154"
+     ]
+    },
+    {
+     "name": "Michael Veloff",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Shaver won 4-way D primary with 28.7% (margin 2.9 pts). Veloff (L) won as primary write-in; no FEC filing. Dalton Franklin (I) in Wikipedia candidate list but not GE table or Green Papers.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-06",
+   "incumbent": {
+    "name": "Michael Rulli",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Michael Rulli",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-06-michael-rulli",
+     "fec": [
+      "H4OH06165"
+     ]
+    },
+    {
+     "name": "Elizabeth Kirtley",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-06-elizabeth-kirtley",
+     "fec": [
+      "H6OH06244"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kirtley won 7-way D primary with 31.5%.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-07",
+   "incumbent": {
+    "name": "Max Miller",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Max Miller",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-07-max-miller",
+     "fec": [
+      "H2OH16051"
+     ]
+    },
+    {
+     "name": "Brian Poindexter",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-07-brian-poindexter",
+     "fec": [
+      "H6OH07168"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Miller stayed in race after late-July 2026 allegations; Wikipedia says GOP can no longer replace him on the ballot. Poindexter won 8-way D primary with 37.0%. Green Papers lists write-ins Thahbia Asad and Andrey Martinichin (not on printed ballot).",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-08",
+   "incumbent": {
+    "name": "Warren Davidson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Warren Davidson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-08-warren-davidson",
+     "fec": [
+      "H6OH08315"
+     ]
+    },
+    {
+     "name": "Vanessa Enoch",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-08-vanessa-enoch",
+     "fec": [
+      "H8OH08097"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Both certified per Hamilton County BOE.",
+   "c": [
+    "wiki_oh",
+    "gp_oh",
+    "hamilton_boe"
+   ]
+  },
+  {
+   "race": "OH-09",
+   "incumbent": {
+    "name": "Marcy Kaptur",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Marcy Kaptur",
+     "party": "D",
+     "incumbent": true,
+     "rec": "oh-09-marcy-kaptur",
+     "fec": [
+      "H2OH09031"
+     ]
+    },
+    {
+     "name": "Derek Merrin",
+     "party": "R",
+     "incumbent": false,
+     "rec": "oh-09-derek-merrin",
+     "fec": [
+      "H4OH09169"
+     ]
+    },
+    {
+     "name": "Matthew Althaus",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Merrin won 5-way R primary 44.1% to Josh Williams 25.3%. Sources conflict on Libertarian: Wikipedia lists Althaus (won L primary 59.3%) in GE table; Green Papers omits him. Althaus has no FEC filing. District redrawn more Republican Oct 2025.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-10",
+   "incumbent": {
+    "name": "Mike Turner",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Turner",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-10-michael-turner",
+     "fec": [
+      "H2OH03067"
+     ]
+    },
+    {
+     "name": "Kristina Knickerbocker",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-10-kristina-knickerbocker",
+     "fec": [
+      "H6OH10121"
+     ]
+    },
+    {
+     "name": "Tom McMasters",
+     "party": "L",
+     "incumbent": false,
+     "rec": "oh-10-thomas-mcmasters",
+     "fec": [
+      "H0OH08110",
+      "H6OH10113"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Knickerbocker won 6-way D primary 32.7% to Janice Beckett 25.9%.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-11",
+   "incumbent": {
+    "name": "Shontel Brown",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Shontel Brown",
+     "party": "D",
+     "incumbent": true,
+     "rec": "oh-11-m-brown",
+     "fec": [
+      "H2OH11169"
+     ]
+    },
+    {
+     "name": "Mike Kirchner",
+     "party": "R",
+     "incumbent": false,
+     "rec": "oh-11-mike-kirchner",
+     "fec": [
+      "H6OH11210"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kirchner won R primary 65.6%. Wikipedia GE table misspells him 'Krichner'.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-12",
+   "incumbent": {
+    "name": "Troy Balderson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Troy Balderson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-12-william-balderson",
+     "fec": [
+      "H8OH12180"
+     ]
+    },
+    {
+     "name": "Jerrad Christian",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-12-jerrad-christian",
+     "fec": [
+      "H4OH12080"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-13",
+   "incumbent": {
+    "name": "Emilia Sykes",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Emilia Sykes",
+     "party": "D",
+     "incumbent": true,
+     "rec": "oh-13-emilia-sykes",
+     "fec": [
+      "H2OH13264"
+     ]
+    },
+    {
+     "name": "Carey Coleman",
+     "party": "R",
+     "incumbent": false,
+     "rec": "oh-13-carey-coleman",
+     "fec": [
+      "H6OH13307"
+     ]
+    },
+    {
+     "name": "Sandeep Dixit",
+     "party": "I",
+     "incumbent": false,
+     "rec": "oh-13-sandeep-dixit",
+     "fec": [
+      "H6OH13273"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Coleman won 5-way R primary 47.3%.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-14",
+   "incumbent": {
+    "name": "David Joyce",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "David Joyce",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-14-david-joyce",
+     "fec": [
+      "H2OH14064"
+     ]
+    },
+    {
+     "name": "Maria Jukic",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-14-maria-jukic",
+     "fec": [
+      "H6OH14248"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Joyce beat Nicole Frenchko 70.3-29.7 in R primary.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  },
+  {
+   "race": "OH-15",
+   "incumbent": {
+    "name": "Mike Carey",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Carey",
+     "party": "R",
+     "incumbent": true,
+     "rec": "oh-15-mike-carey",
+     "fec": [
+      "H2OH15228",
+      "H8OH18096"
+     ]
+    },
+    {
+     "name": "Don Leonard",
+     "party": "D",
+     "incumbent": false,
+     "rec": "oh-15-don-leonard",
+     "fec": [
+      "H6OH15112"
+     ]
+    },
+    {
+     "name": "Brennan Barrington",
+     "party": "L",
+     "incumbent": false,
+     "rec": "oh-15-brennan-barrington",
+     "fec": [
+      "H6OH15138"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Leonard won D primary 52.9-47.1.",
+   "c": [
+    "wiki_oh",
+    "gp_oh"
+   ]
+  }
+ ]
+}

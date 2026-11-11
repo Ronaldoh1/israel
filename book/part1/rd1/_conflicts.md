@@ -1,0 +1,28 @@
+# Stage One (rd1): source contradictions the prose presents
+
+- Jewish population of Palestine, 1914: Ottoman census 39,000 (38,754, subjects only) vs. McCarthy about 60,000 (PalQuest agrees) vs. long-standard 85,000 (per Owen) vs. Bachi 94,000; c.1890: census 18,000 vs. Bachi 43,000 (rd1_ottoman, rd1_wwi; research ottoman_palestine_1872_1914).
+- Jewish population fall in 1914–18: about a third left (PalQuest) vs. McCarthy, much less than the commonly cited quarter (rd1_wwi, rd1_ottoman; research wwi_palestine_1914_1917).
+- First Zionist Congress size: 208 delegates from 17 countries (Wikipedia) vs. some two hundred from seventeen countries (Posen) vs. "some 200" (JVL) vs. fourteen states (Grill) (s04; research basel_program_1897).
+- Move from Munich: protest of local Orthodox and Reform rabbis and the German Rabbinical Association vs. the 5 June press notice and the congregation board's letters as the first refusals (s04; research basel_program_1897).
+- Herzl's catalyst: the Dreyfus Affair (standard account) vs. Beller on Penslar, Dreyfus absent from the 1895 diary (s04).
+- East Africa vote, 1903: 295–178 with 98 abstentions vs. 295–177 (s04e, s04fa, zorg_s01; sixth_zionist_congress_1903 vs. rs_rd1_israeled_sixth).
+- Walkout, 1903: the Russian delegation vs. members of the Russian delegation (s04e).
+- Herzl's June 1895 diary passage: early transfer idea (Arieli) vs. about South America, peaceful means preferred (Beller on Penslar) (rd1_arabquestion; research herzl_arab_question_1895_1905).
+- JNF founding resolution: "eternal possession" applied to the fund (quoted text) vs. to the land (summaries) (s04d).
+- JNF share of Jewish-held land, 1947–48: "more than half" vs. ~936,000 of ~2 million dunams, a little under half (s04d, s04j; pm_s01).
+- ITO outcome: little success / failed Galveston effort vs. one modest, temporary success (s04f).
+- Agudat Israel, 1912: a countermeasure to Mizrachi (Grill) vs. a separation from secular Jewish nationalism (df_s13) (rd1_currents).
+- Second Aliyah size: about 35,000 (NLI) vs. 40,000 (JVL); departures "at least half" vs. "nearly half" (rd1_second_aliyah, s07a; research second_aliyah_1904_1914).
+- Ben-Gurion's arrival at Jaffa: 9 September 1906 (Ben-Gurion House) vs. 7 September 1907 (Center for Israel Education) (rd1_second_aliyah).
+- Degania founding: 28 October 1910 (CIE, the Hadera Commune) vs. 1909 (JVL) (rd1_second_aliyah, s07a).
+- ICA takeover of the Rothschild colonies: "since 1899" (Jewish Encyclopedia) vs. 1900 (year_ledger dashboard) (rd1_second_aliyah, s07a).
+- Palestine Land Development Company: founded 1908 vs. 1909; Thon "sole manager from 1907"; Warburg led it until 1938 vs. Hankin its head from 1932 (s04g, s04j, s04f).
+- Shukri al-Asali's execution: 6 May 1916 (biography) vs. AUB exhibit dating the Damascus and Beirut hangings to 6 May 1915 (rd1_wwi, s04j; research wwi_palestine_1914_1917, fula_emek_purchases_1910).
+- Mount Lebanon famine deaths: 20–30% of the population (AUB) vs. "nearly half" (locust-plague reference, unsourced) (rd1_wwi).
+- Jaffa/Tel Aviv deportation, April 1917: about 10,000 incl. 8,000 Jews vs. up to 16,000 from Tel Aviv vs. 8,000 Jews (US consular report) (rd1_wwi).
+- Hadassah founders: 38 vs. 122 (s04h).
+- Scofield: pre-tribulation rapture "18th-century" in origin vs. Darby in the 1830s (s05).
+- Jekyll Island: "five bankers and a former Treasury official" vs. the named list (three bankers, a serving Treasury official, a secretary, Aldrich) (s04ga).
+- Pius X's grounds, 1904: doctrinal (supersessionist) vs. Jerusalem and the holy sites (hz_s01; vat_s01, bc_s08).
+- Herzl's preference for Palestine in Der Judenstaat: political (rallying Jewish opinion; Avnery's "afterthought") vs. historic ("ever-memorable historic home") (s04fa; gia_src_s01).
+- Second Aliyah's institutions: forged by land-and-labor conflict (Shafir, per Beinin) vs. reluctant conquerors moved by ideals (Shapira, per Stein) (rd1_second_aliyah).

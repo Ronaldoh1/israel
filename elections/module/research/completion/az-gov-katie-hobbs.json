@@ -1,0 +1,52 @@
+{
+ "id": "az-gov-katie-hobbs",
+ "cites": {
+  "azm_cert_2020": {
+   "t": "Arizona certifies 2020 general election results — Arizona Mirror (2020-11-30)",
+   "u": "https://azmirror.com/?p=8828"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "foreign": "No foreign-government or foreign-business ties surfaced in news reviewed. Russia banned her from entry in May 2023, which is a sanction by Russia, not a tie. FARA: exact-name check of the bulk FARA files (registrants, short forms, foreign principals), searched 2026-10-13: no match.",
+  "democracy": "No congressional certification votes apply (never in Congress). Searched her 2020-era Secretary of State record and statements via Wikipedia and her 2022 Clean Elections statement. Her Nov 30, 2020 signing of the state canvass is now sourced to contemporaneous Arizona Mirror reporting (not the canvass document itself). No statement on 2024 results was found."
+ },
+ "democracy": [
+  {
+   "kind": "certified",
+   "d": "2020-11-30",
+   "t": "As Secretary of State, signed Arizona's official 2020 general-election canvass and passed it to Gov. Doug Ducey, who also signed (AG Brnovich and Chief Justice Brutinel also certified). She said the election was run with transparency, accuracy and fairness despite what she called numerous unfounded claims. This is a state certification act, not a congressional vote.",
+   "c": [
+    "azm_cert_2020"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2022",
+   "t": "As Secretary of State during 2020, said her office ran 'the safest and most secure election in our state's history.'",
+   "c": [
+    "kzgovkatiehobbs_cce_guide_2022"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2021-05",
+   "t": "As Secretary of State, wrote a letter criticizing the Senate-funded 2021 Maricopa County ballot review for lacking chain of custody. She received death threats and state police protection.",
+   "c": [
+    "kzgovkatiehobbs_wiki_hobbs"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2023-03",
+   "t": "Her 2022 opponent, Kari Lake, did not concede and sued. The Arizona Supreme Court declined review in March 2023 and again in May 2023 after a trial. Hobbs was the winner, not the challenger.",
+   "c": [
+    "kzgovkatiehobbs_wiki_hobbs"
+   ]
+  }
+ ],
+ "research_notes": "courts set to 'news' because news/Wikipedia were searched (per checks.legal); CourtListener/Justia remain unreachable from this tool. Her state financial disclosure statement (Arizona Secretary of State) was not located; disclosures stays 'no'. A search on 2026-10-14 found only reporting on her campaign-finance reporting gap (Arizona Republic), not her personal financial disclosure."
+}

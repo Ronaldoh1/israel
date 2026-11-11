@@ -1,0 +1,2111 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us22_happiness",
+   "stage": "us22",
+   "topic": "World Happiness Report ranks/scores, Israel vs US",
+   "claims": [
+    {
+     "text": "World Happiness Report 2026 (published 19 Mar 2026): Israel ranked 8th with a life-evaluation (Cantril ladder, 0-10) score of 7.187, three-year average of 2023-2025 Gallup World Poll responses.",
+     "strength": "strong",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_jvl_whr"
+     ]
+    },
+    {
+     "text": "World Happiness Report 2026: United States ranked 23rd with a life-evaluation (Cantril ladder) score of 6.816 (2023-2025 average); up from 24th in WHR 2025.",
+     "strength": "strong",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_fox5_whr26"
+     ]
+    },
+    {
+     "text": "WHR 2026 top 10 for context: Finland 7.764, Iceland 7.540, Denmark 7.539, Costa Rica 7.439, Sweden 7.255, Norway 7.242, Netherlands 7.223, Israel 7.187, Luxembourg 7.063, Switzerland 7.018. Primary data file is WHR26_Data_Figure_2.1.xlsx (not directly read; proxy/fetch blocked).",
+     "strength": "moderate",
+     "sources": [
+      "us22_whr26_hli",
+      "us22_whr26_ed"
+     ]
+    },
+    {
+     "text": "World Happiness Report 2020 (2017-2019 average): Israel ranked 14th (score 7.129); United States ranked 18th (score 6.940).",
+     "strength": "moderate",
+     "sources": [
+      "us22_whr_wiki",
+      "us22_jvl_whr"
+     ]
+    },
+    {
+     "text": "Israel's WHR rank trend per Jewish Virtual Library compilation: 2012 report 14th? -- NOT VERIFIED; JVL lists 11th for 2010-12 (WHR 2013), 11th in WHR 2015/2016-era editions, 14th for 2017-19 (WHR 2020), 11th in 2021, 9th 2022, 4th 2023, 5th 2024, 8th 2025, 8th 2026. Scores not given by JVL.",
+     "strength": "moderate",
+     "sources": [
+      "us22_jvl_whr"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_whr26_hli",
+     "url": "https://www.happierlivesinstitute.org/2026/03/19/world-happiness-report-2026-full-country-rankings-our-favourite-finding/",
+     "label": "Happier Lives Institute, World Happiness Report 2026: Full Rankings & Key Findings, 19 Mar 2026 (reproduces WHR 2026 Figure 2.1)"
+    },
+    {
+     "key": "us22_whr26_ed",
+     "url": "https://worldhappiness.report/ed/2026/",
+     "label": "World Happiness Report 2026 edition page (Figure 2.1 data: https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx)"
+    },
+    {
+     "key": "us22_whr_wiki",
+     "url": "https://en.wikipedia.org/wiki/World_Happiness_Report",
+     "label": "Wikipedia, World Happiness Report (2020 ranking table), accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_jvl_whr",
+     "url": "https://www.jewishvirtuallibrary.org/israel-s-rank-on-world-happiness-index",
+     "label": "Jewish Virtual Library, Israel's Rank on World Happiness Index (ranks only, citing WHR/SDSN and Times of Israel 19 Mar 2026)"
+    },
+    {
+     "key": "us22_fox5_whr26",
+     "url": "https://www.fox5atlanta.com/news/worlds-happiest-countries-2026-revealed-where-us-ranks",
+     "label": "FOX 5 Atlanta, World's happiest countries 2026 revealed; here's where US ranks, Mar 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_debtclaims",
+   "stage": "us22",
+   "topic": "Medical bankruptcy: two estimates",
+   "claims": [
+    {
+     "text": "Himmelstein et al. (AJPH, 2019), surveying 910 bankruptcy filers in 2013-16, reported that 66.5% cited medical issues (bills or illness-related income loss) as contributing to their bankruptcy; the figure counts contribution as reported by filers, not causation.",
+     "strength": "moderate",
+     "sources": [
+      "us22_himmelstein2019"
+     ]
+    },
+    {
+     "text": "Dobkin, Finkelstein, Kluender and Notowidigdo (NEJM, 2018), linking hospital records to credit and bankruptcy records, estimated that hospitalisations cause about 4% of bankruptcies among non-elderly adults, and argued that survey shares overstate causation because they count bills that would not by themselves have led to bankruptcy.",
+     "strength": "moderate",
+     "sources": [
+      "us22_dobkin2018"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_himmelstein2019",
+     "url": "https://doi.org/10.2105/AJPH.2018.304901",
+     "label": "Himmelstein, Lawless, Thorne, Foohey and Woolhandler, 'Medical Bankruptcy: Still Common Despite the Affordable Care Act', American Journal of Public Health, March 2019"
+    },
+    {
+     "key": "us22_dobkin2018",
+     "url": "https://doi.org/10.1056/NEJMp1716604",
+     "label": "Dobkin, Finkelstein, Kluender and Notowidigdo, 'Myth and Measurement — The Case of Medical Bankruptcies', New England Journal of Medicine, 22 March 2018"
+    }
+   ]
+  },
+  {
+   "id": "us22_poverty",
+   "stage": "us22",
+   "topic": "OECD relative poverty, US",
+   "claims": [
+    {
+     "text": "OECD relative poverty rate (share below half the median disposable income), United States: 18% in 2023 or the latest available year, among the highest in the OECD.",
+     "strength": "moderate",
+     "sources": [
+      "us22_statista_oecdpov"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_statista_oecdpov",
+     "url": "https://www.statista.com/statistics/233910/poverty-rates-in-oecd-countries",
+     "label": "Statista, 'Poverty rates in OECD countries 2023' (OECD Income Distribution Database, 2023 or latest available)"
+    }
+   ]
+  },
+  {
+   "id": "us22_childcare",
+   "stage": "us22",
+   "topic": "Childcare costs and Israel daycare subsidy",
+   "claims": [
+    {
+     "text": "OECD definition: net childcare cost = out-of-pocket cost of full-time centre-based care for two children aged 2 and 3, after childcare benefits, tax reliefs and benefit changes; the standard couple earns 100% + 67% of average earnings. The OECD PF3.4 text places the US among countries where net cost for this couple is at least 18% of average earnings (2021); no exact Israel figure is legible in the document (Israel data year 2020).",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_pf34"
+     ]
+    },
+    {
+     "text": "United States, 2022 (OECD data, reported by Statista): a couple with two young children, both working full-time at the average wage, spends 20% of disposable household income on childcare; a single parent on the average wage spends 37%.",
+     "strength": "moderate",
+     "sources": [
+      "us22_statista_ncc"
+     ]
+    },
+    {
+     "text": "Israel: no OECD net-childcare-cost value (as % of average wage or household net income) could be retrieved from an accessible source; the OECD Data Explorer requires JavaScript and the direct SDMX query was not reachable. Not estimated.",
+     "strength": "weak",
+     "sources": [
+      "us22_oecd_pf34"
+     ]
+    },
+    {
+     "text": "Israel daycare subsidy (age 0-3, state-supervised daycare centres): both parents must work or study; eligibility and subsidy level are set by per-capita household income and household size. Average monthly subsidy about NIS 2,300 (Haredi families), NIS 1,600 (Arab), NIS 1,500 (non-Haredi Jewish). In 2022, 89,250 households (103,981 children) used supervised centres; about 226,000 households with children 0-3 met the work/study test and about 140,000 also met the income test. Annual cost about NIS 1.2 billion. Most children in daycare are in private daycare not covered by the scheme.",
+     "strength": "strong",
+     "sources": [
+      "us22_idi_daycare"
+     ]
+    },
+    {
+     "text": "Israel daycare subsidy is run through certified centres supervised by the Ministry of Labor's daycare division; the work test is 24 hours a week for both parents; only about half of eligible mothers received the subsidy in 2018.",
+     "strength": "moderate",
+     "sources": [
+      "us22_kohelet_daycare"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_statista_ncc",
+     "url": "https://statista.com/chart/33438/share-of-disposable-household-income-spent-on-childcare",
+     "label": "Statista (citing OECD Data Explorer, net childcare costs), Share of disposable household income spent on childcare, 2024 chart, 2022 data"
+    },
+    {
+     "key": "us22_oecd_pf34",
+     "url": "https://t4.oecd.org/els/soc/PF3-4-Childcare-support.pdf",
+     "label": "OECD Family Database, PF3.4 Childcare support (indicator definitions; 2021 data, Israel 2020)"
+    },
+    {
+     "key": "us22_idi_daycare",
+     "url": "https://en.idi.org.il/articles/56417",
+     "label": "Israel Democracy Institute (Gabriel Gordon), Early Childhood Daycare Subsidies in Israel in Different Sectors, 31 Oct 2024"
+    },
+    {
+     "key": "us22_kohelet_daycare",
+     "url": "https://www.kohelet.org.il/wp-content/uploads/2024/05/Subsidizing-Early-Education-1.pdf",
+     "label": "Kohelet Policy Forum, Subsidizing Early Education, May 2024"
+    }
+   ]
+  },
+  {
+   "id": "us22_saving",
+   "stage": "us22",
+   "topic": "Household saving rate",
+   "claims": [
+    {
+     "text": "OECD household net saving rate = household net disposable income plus the adjustment for change in pension entitlements, minus household final consumption expenditure, as % of household net disposable income (households incl. NPISHs).",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_hhsav"
+     ]
+    },
+    {
+     "text": "United States: OECD household net saving rate 4.9% of household net disposable income, 2024 (as reported from OECD data).",
+     "strength": "moderate",
+     "sources": [
+      "us22_vc_hhsav"
+     ]
+    },
+    {
+     "text": "United States: BEA personal saving rate (personal saving as % of disposable personal income), annual: 5.6% (2023), 5.4% (2024), 4.6% (2025), as published March 2026; subject to BEA annual revision of 30 Sep 2026.",
+     "strength": "strong",
+     "sources": [
+      "us22_fred_psave"
+     ]
+    },
+    {
+     "text": "Israel: no OECD household net saving rate (% of household net disposable income) for a recent year could be found in an accessible source; Israel was absent from the OECD-based rankings checked. Not estimated.",
+     "strength": "weak",
+     "sources": [
+      "us22_vc_hhsav"
+     ]
+    },
+    {
+     "text": "Israel context: Bank of Israel estimates the mandatory pension reforms raised the household saving rate by at least 0.7% of GDP (2006-2019); national saving rose from an average 24.6% of GDP (1995-2004) to 27.2% (2015-2019).",
+     "strength": "strong",
+     "sources": [
+      "us22_boi_pensav"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_hhsav",
+     "url": "https://www.oecd.org/en/data/indicators/household-savings.html",
+     "label": "OECD, Household savings indicator (definition page)"
+    },
+    {
+     "key": "us22_vc_hhsav",
+     "url": "https://www.visualcapitalist.com/household-savings-rates-by-country-ranked/",
+     "label": "Visual Capitalist, Ranked: How Much People Save Around the World (OECD household net saving data, 2024 or latest)"
+    },
+    {
+     "key": "us22_fred_psave",
+     "url": "https://fred.stlouisfed.org/series/A072RC1A156NBEA",
+     "label": "BEA via FRED, Personal saving as a percentage of disposable personal income (A072RC1A156NBEA), updated 13 Mar 2026"
+    },
+    {
+     "key": "us22_boi_pensav",
+     "url": "https://www.boi.org.il/media/ogqjvbml/dp202508e.pdf",
+     "label": "Bank of Israel (Braude and Friedmann), The Effect of Israel's Pension System Reforms on the Savings Rate 2006-2019, Discussion Paper 2025.08, June 2025"
+    }
+   ]
+  },
+  {
+   "id": "us22_childsupport",
+   "stage": "us22",
+   "topic": "Child support enforcement and guaranteed maintenance",
+   "claims": [
+    {
+     "text": "Israel: under the Maintenance (Assurance of Payment) Law (in force since 1972), a resident woman holding an unpaid court maintenance judgment is paid monthly by the National Insurance Institute, which then collects from the debtor. The payment is the lower of the court award or the regulation amount (equal to the income-support rate for single-parent families); if NII collects more than it paid, the difference goes to the woman.",
+     "strength": "strong",
+     "sources": [
+      "us22_nii_mezonot23",
+      "us22_nii_alimony"
+     ]
+    },
+    {
+     "text": "Israel 2023: monthly average 11,564 women received NII maintenance payments (12,436 in 2022, -7.0%); NII paid NIS 318.1 million in 2023 and collected NIS 309.1 million from debtors (collections include debts relating to past as well as current recipients, so the two are not a like-for-like recovery rate); average monthly payment NIS 2,204 in Dec 2023 (about 18.6% of the average wage).",
+     "strength": "strong",
+     "sources": [
+      "us22_nii_mezonot23"
+     ]
+    },
+    {
+     "text": "United States FY2024 (preliminary): the IV-D child support program collected 65% of current support due; total distributed collections $29.5 billion (IV-D and non-IV-D); 12.2 million children served; 87% of cases had orders; 63% of cases with arrears had a collection.",
+     "strength": "strong",
+     "sources": [
+      "us22_ocss_fy24"
+     ]
+    },
+    {
+     "text": "United States FY2024: about $26.7 billion distributed ($25.8 billion paid to families); 65.3% of current support collected; more than 11.6 million cases; $115.7 billion of the $146.7 billion owed was past-due, of which $7.5 billion was paid.",
+     "strength": "strong",
+     "sources": [
+      "us22_crs_csbasics"
+     ]
+    },
+    {
+     "text": "United States, Census CPS Child Support Supplement, 2017 data: of 5.4 million custodial parents due support, 45.9% received the full amount, 24.0% partial, 30.2% none; $30.0 billion due, $18.6 billion (62.2%) received. The Census published a 2022-data report (P60-285, Aug 2025), but its full-receipt percentage could not be extracted.",
+     "strength": "strong",
+     "sources": [
+      "us22_census_p60269",
+      "us22_census_p60285"
+     ]
+    },
+    {
+     "text": "No US public guarantor exists equivalent to Israel's NII advance: US agencies enforce and collect but do not pay the custodial parent when the payer defaults (inference from program structure, not a single-source statement).",
+     "strength": "weak",
+     "sources": [
+      "us22_crs_csbasics"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_nii_mezonot23",
+     "url": "https://www.btl.gov.il/Publications/Skira_shnatit/2023/Documents/chap-3-02-mezonot.pdf",
+     "label": "National Insurance Institute of Israel, Annual Report 2023, ch. 3 Maintenance payments (Hebrew)"
+    },
+    {
+     "key": "us22_nii_alimony",
+     "url": "https://www.btl.gov.il/English%20Homepage/Benefits/Alimony/Pages/default.aspx",
+     "label": "National Insurance Institute of Israel, Maintenance (Alimony) benefit page"
+    },
+    {
+     "key": "us22_ocss_fy24",
+     "url": "https://acf.gov/css/policy-guidance/fy-2024-preliminary-data-report-and-tables",
+     "label": "HHS ACF Office of Child Support Services, FY 2024 Preliminary Data Report and Tables, 17 Jul 2025"
+    },
+    {
+     "key": "us22_crs_csbasics",
+     "url": "https://www.everycrsreport.com/files/2026-01-12_RS22380_d2dffdd562747695fcb9d54aa4540c195edf95ed.html",
+     "label": "Congressional Research Service RS22380, Child Support Enforcement: Program Basics, 12 Jan 2026"
+    },
+    {
+     "key": "us22_census_p60269",
+     "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p60-269.pdf",
+     "label": "US Census Bureau, Custodial Mothers and Fathers and Their Child Support: 2017 (P60-269), 2020"
+    },
+    {
+     "key": "us22_census_p60285",
+     "url": "https://www.census.gov/library/publications/2025/demo/p60-285.html",
+     "label": "US Census Bureau, Custodial Parents and Their Child Support: 2022 (P60-285), Aug 2025"
+    }
+   ]
+  },
+  {
+   "id": "us22_transport",
+   "stage": "us22",
+   "topic": "Transport spending and car ownership",
+   "claims": [
+    {
+     "text": "United States 2024 (BLS CE): transportation $13,318 = 17.0% of average annual expenditures per consumer unit ($78,535). Note: CE 'total expenditures' includes personal insurance and pensions (12.5%).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ce24"
+     ]
+    },
+    {
+     "text": "Israel 2023 (CBS HES): 'transport and communications' combined = 18.6% of average monthly consumption expenditure (NIS 18,088 incl. imputed housing services); the press release does not report transport separately.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23"
+     ]
+    },
+    {
+     "text": "Israel 2023: 71.9% of households own at least one car, 25.2% two or more (top decile 92.5%, bottom decile 41.1%).",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23"
+     ]
+    },
+    {
+     "text": "Israel end-2024: 421 motor vehicles and 366 private cars per 1,000 residents (CBS).",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_mv24"
+     ]
+    },
+    {
+     "text": "United States 2022: 282.2 million registered motor vehicles (99.7 million automobiles, 172.4 million trucks incl. light trucks/SUVs) per FHWA MV-1. US registrations do not separate 'passenger cars' comparably to Israel's 'private cars', because most US household vehicles are classed as light trucks.",
+     "strength": "strong",
+     "sources": [
+      "us22_fhwa_mv1_22"
+     ]
+    },
+    {
+     "text": "Same-table comparison (motor vehicles per 1,000 people): United States 779 (2023), Israel 439 (2022).",
+     "strength": "moderate",
+     "sources": [
+      "us22_wiki_mvpc"
+     ]
+    },
+    {
+     "text": "OECD comparative price level for cars (purchase of vehicles) for Israel vs US: not found in an accessible source. Not estimated.",
+     "strength": "weak",
+     "sources": [
+      "us22_wiki_mvpc"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ce24",
+     "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+     "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+    },
+    {
+     "key": "us22_cbs_hes23",
+     "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+     "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_cbs_mv24",
+     "url": "https://www.cbs.gov.il/he/publications/DocLib/2025/1978/e_print.pdf",
+     "label": "Israel CBS, Motor Vehicles in Israel 2024 (Publication 1978), Nov 2025"
+    },
+    {
+     "key": "us22_fhwa_mv1_22",
+     "url": "https://www.fhwa.dot.gov/policyinformation/statistics/2022/mv1.cfm",
+     "label": "US FHWA, Highway Statistics 2022, Table MV-1 State Motor-Vehicle Registrations"
+    },
+    {
+     "key": "us22_wiki_mvpc",
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_motor_vehicles_per_capita",
+     "label": "Wikipedia, List of countries and territories by motor vehicles per capita (accessed Oct 2026)"
+    }
+   ]
+  },
+  {
+   "id": "us22_foodshare",
+   "stage": "us22",
+   "topic": "Food share of household spending",
+   "claims": [
+    {
+     "text": "United States 2024 (BLS CE): food $10,169 = 12.9% of average annual expenditures (food at home $6,224, food away from home $3,945). Alcoholic beverages are separate (0.8%).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ce24_food"
+     ]
+    },
+    {
+     "text": "Israel 2023 (CBS HES): food including fruit and vegetables = 17.9% of average monthly consumption expenditure. Definitions differ: Israel's denominator is consumption incl. imputed housing services; the US denominator includes personal insurance and pensions.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23_food"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ce24_food",
+     "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+     "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+    },
+    {
+     "key": "us22_cbs_hes23_food",
+     "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+     "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_studentdebt",
+   "stage": "us22",
+   "topic": "Student debt and tuition",
+   "claims": [
+    {
+     "text": "United States, as of 31 Mar 2026: outstanding federal student loan portfolio about $1.7 trillion held by 42.6 million recipients (federally managed portion over $1.64 trillion, 40.9 million).",
+     "strength": "strong",
+     "sources": [
+      "us22_fsa_q2fy26"
+     ]
+    },
+    {
+     "text": "United States 2026: average federal student loan debt $40,467 per borrower (42.6 million borrowers, $1.724 trillion federal); total incl. private loans $1.863 trillion; average incl. private up to $43,521.",
+     "strength": "moderate",
+     "sources": [
+      "us22_edi_sld"
+     ]
+    },
+    {
+     "text": "Israel 2025/26: full annual bachelor's tuition at the Hebrew University NIS 12,017 for Israeli citizens (set by the Council for Higher Education, CPI-linked); non-citizens NIS 15,021.",
+     "strength": "strong",
+     "sources": [
+      "us22_huji_tuition"
+     ]
+    },
+    {
+     "text": "Israel: no national government student-loan program was found; proposals (Shochat Committee, 'Free to Learn' income-contingent scheme) were shelved as of 2008. Students borrow through banks, university/institutional funds and free-loan societies.",
+     "strength": "moderate",
+     "sources": [
+      "us22_neaman_loans",
+      "us22_nbn_loans"
+     ]
+    },
+    {
+     "text": "Israel: no national student-debt total was found in any official source. Not estimated.",
+     "strength": "weak",
+     "sources": [
+      "us22_neaman_loans"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_fsa_q2fy26",
+     "url": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-23/federal-student-aid-posts-updated-reports-fsa-data-center",
+     "label": "US Dept of Education FSA, GENERAL-26-38: FSA Posts Updated Reports to FSA Data Center (data through 31 Mar 2026), 23 Jun 2026"
+    },
+    {
+     "key": "us22_edi_sld",
+     "url": "https://educationdata.org/student-loan-debt-statistics",
+     "label": "Education Data Initiative, Student Loan Debt Statistics, updated 16 Jul 2026"
+    },
+    {
+     "key": "us22_huji_tuition",
+     "url": "https://en.studentsadmin.huji.ac.il/tuition-structure",
+     "label": "Hebrew University of Jerusalem, Student Administration, Tuition rates 2025/26"
+    },
+    {
+     "key": "us22_neaman_loans",
+     "url": "https://neaman.org.il/en/student-loans-israel-learning-international-practice/",
+     "label": "Samuel Neaman Institute (A. Ziderman), Student Loans for Israel: Learning from International Practice, Apr 2008"
+    },
+    {
+     "key": "us22_nbn_loans",
+     "url": "https://www.nbn.org.il/life-in-israel/education/higher-education/scholarships-and-loans-for-university-and-college-students/",
+     "label": "Nefesh B'Nefesh, Scholarships and Loans for University and College Students"
+    }
+   ]
+  },
+  {
+   "id": "us22_pension",
+   "stage": "us22",
+   "topic": "Workplace pension coverage",
+   "claims": [
+    {
+     "text": "United States, March 2025 (BLS NCS), private industry workers: 72% had access to employer retirement plans, 53% participated, take-up 73%; defined-contribution access 70%, defined-benefit access 14%; part-time workers 47% access / 23% participation; lowest wage decile 38% access / 15% participation.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ebs25"
+     ]
+    },
+    {
+     "text": "United States, March 2026 (BLS NCS): private industry retirement access 72%, participation 52%.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ebs26"
+     ]
+    },
+    {
+     "text": "Israel: mandatory pension contributions for all employees since 2008 under extension orders of the 2007 Histadrut-employers framework agreement; minimum rate phased up from about 1.66% (2008) to 12.5% of wages from 2017 (6% employee + 6.5% employer), applied up to the national average wage; young workers and first months of employment exempt.",
+     "strength": "strong",
+     "sources": [
+      "us22_boi_dp202508"
+     ]
+    },
+    {
+     "text": "Israel: on top of the 12.5% pension contribution, employers deposit a 6% severance component, giving 18.5% of wages in total (employee 6%, employer 12.5%).",
+     "strength": "moderate",
+     "sources": [
+      "us22_olam_pension",
+      "us22_boi_dp202508"
+     ]
+    },
+    {
+     "text": "Israel coverage: share of private-sector wage payments with no pension/provident contribution fell from 32% (2006) to 19% (2009) and 13% (2019); public sector 6% (2006) to 1% (2019). A headcount 'share of employees covered' figure was not found.",
+     "strength": "strong",
+     "sources": [
+      "us22_boi_dp202508"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ebs25",
+     "url": "https://www.bls.gov/news.release/archives/ebs2_09252025.htm",
+     "label": "US BLS, Employee Benefits in the United States, March 2025, released 25 Sep 2025"
+    },
+    {
+     "key": "us22_bls_ebs26",
+     "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+     "label": "US BLS, Employee Benefits in the United States, March 2026, released 25 Sep 2026"
+    },
+    {
+     "key": "us22_boi_dp202508",
+     "url": "https://www.boi.org.il/media/ogqjvbml/dp202508e.pdf",
+     "label": "Bank of Israel (Braude and Friedmann), Discussion Paper 2025.08, June 2025"
+    },
+    {
+     "key": "us22_olam_pension",
+     "url": "https://olam-haavoda.co.il/topics/pension",
+     "label": "Olam HaAvoda labor-law portal, Mandatory pension contributions (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_sickpay",
+   "stage": "us22",
+   "topic": "Paid sick leave",
+   "claims": [
+    {
+     "text": "Israel: under the Sick Pay Law (1976) every employee accrues 1.5 paid sick days per full month worked (18 a year), up to a cap of 90 days; accrual is automatic and days cannot normally be cashed out.",
+     "strength": "strong",
+     "sources": [
+      "us22_kolzchut_sick"
+     ]
+    },
+    {
+     "text": "Israel pay scale: day 1 of illness unpaid, days 2-3 at 50% of wages, day 4 onward 100%; full pay from day 1 for certain serious conditions (e.g. cancer treatment, dialysis).",
+     "strength": "moderate",
+     "sources": [
+      "us22_cxc_ilsick"
+     ]
+    },
+    {
+     "text": "United States: 'Federal law does not require sick leave' (DOL); FMLA provides up to 12 weeks of unpaid job-protected leave for eligible workers.",
+     "strength": "strong",
+     "sources": [
+      "us22_dol_sick"
+     ]
+    },
+    {
+     "text": "United States, March 2026 (BLS NCS): 81% of private industry workers had access to paid sick leave; full-time 88%, part-time 59%. A March 2025 all-private figure was not extracted.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ebs26_sick",
+      "us22_bls_worksick"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_kolzchut_sick",
+     "url": "https://www.kolzchut.org.il/he/פישוט:צבירת_ימי_מחלה",
+     "label": "Kol Zchut, Accrual of sick days (Hebrew), citing the Sick Pay Law and 1976 regulations"
+    },
+    {
+     "key": "us22_cxc_ilsick",
+     "url": "https://www.cxcglobal.com/global-hiring-guide/israel/leave-time-off-in-israel/",
+     "label": "CXC Global, Leave and time off in Israel (hiring guide)"
+    },
+    {
+     "key": "us22_dol_sick",
+     "url": "https://www.dol.gov/general/topic/benefits-leave/sickleave",
+     "label": "US Department of Labor, Sick Leave topic page"
+    },
+    {
+     "key": "us22_bls_ebs26_sick",
+     "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+     "label": "US BLS, Employee Benefits in the United States, March 2026, released 25 Sep 2026"
+    },
+    {
+     "key": "us22_bls_worksick",
+     "url": "https://www.bls.gov/charts/employee-benefits/percent-access-benefits-by-work-status.htm",
+     "label": "US BLS chart, Private industry workers with access to employer-provided benefits by work status, March 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_housingcost",
+   "stage": "us22",
+   "topic": "Housing cost burden",
+   "claims": [
+    {
+     "text": "United States 2024 (BLS CE): housing $26,266 = 33.4% of average annual expenditures (CE housing includes shelter, utilities, household operations, furnishings; owners' shelter is actual outlays, not imputed rent).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ce24_h"
+     ]
+    },
+    {
+     "text": "Israel 2023 (CBS HES): housing = 25.3% of average monthly consumption expenditure (housing services incl. imputed rent for owner-occupiers); dwelling maintenance and household a further 9.1%.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23_h"
+     ]
+    },
+    {
+     "text": "Same-source comparison (OECD national accounts, housing consumption as share of total household expenditure, 2019 or latest): Israel 21.1%, United States 16.5%, OECD average 17.8%. Values read from chart labels in the snapshots.",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_hpt_isr",
+      "us22_oecd_hpt_usa"
+     ]
+    },
+    {
+     "text": "Same-source comparison (OECD, share of bottom-quintile tenants in private rent spending more than 40% of disposable income on rent, 2018 or latest): Israel 54.1%, United States 48.3%, OECD average 35.2%. OECD notes US data use gross rather than disposable income.",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_hpt_isr",
+      "us22_oecd_hpt_usa",
+      "us22_oecd_hc12"
+     ]
+    },
+    {
+     "text": "Israel (2017 data, Bank of Israel calculations in OECD HC1.2): 54% of bottom-quintile private-market tenants are overburdened (>40% of disposable income on housing) vs 2% of tenants in subsidised rental housing. An overall-population overburden rate for either country was not found; the OECD total housing cost overburden indicator (HC1.2.4) covers only European countries and New Zealand.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_hc12"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ce24_h",
+     "url": "https://www.bls.gov/news.release/cesan.nr0.hTm",
+     "label": "US BLS, Consumer Expenditures 2024 (USDL-25-1586), 19 Dec 2025"
+    },
+    {
+     "key": "us22_cbs_hes23_h",
+     "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+     "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_oecd_hpt_isr",
+     "url": "https://housingpolicytoolkit.oecd.org/www/CountryFiches/housing-policy-Israel.pdf",
+     "label": "OECD Housing Policy Toolkit, Country snapshot: Israel, 10 Jun 2021"
+    },
+    {
+     "key": "us22_oecd_hpt_usa",
+     "url": "https://housingpolicytoolkit.oecd.org/www/CountryFiches/housing-policy-United%20States.pdf",
+     "label": "OECD Housing Policy Toolkit, Country snapshot: United States, 10 Jun 2021"
+    },
+    {
+     "key": "us22_oecd_hc12",
+     "url": "https://oecd.org/els/family/hc1-2-housing-costs-over-income.pdf",
+     "label": "OECD Affordable Housing Database, HC1.2 Housing costs over income, updated 15 Apr 2024"
+    }
+   ]
+  },
+  {
+   "id": "us22_taxwedge",
+   "stage": "us22",
+   "topic": "Labour tax wedge, net personal tax rates, VAT and sales tax: Israel vs US (OECD Taxing Wages)",
+   "claims": [
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data), tax wedge = income tax + employee and employer social security contributions less cash benefits, % of labour costs, single worker no children: at 67% of the average wage (AW) Israel 17.2%, US 27.6%; at 100% AW Israel 23.9%, US 30.1% (OECD average 34.9%); at 167% AW Israel 34.0%, US 34.4%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3",
+      "us22_oecd_tw25_ov"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data): tax wedge for a one-earner married couple with two children at 100% AW: Israel 18.9%, US 20.1% (OECD average 25.7%). Family-vs-single gap: Israel 5.0 points, US 10.0 points. Two-earner couple with two children (100%+67% AW): Israel 15.6%, US 24.8%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3",
+      "us22_oecd_tw25_ov"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2025 (2024 data), average net personal tax rate (income tax + employee contributions less cash benefits, % of gross wage), single no children: at 67% AW Israel 13.2%, US 21.6%; at 100% AW Israel 19.6%, US 24.4%; one-earner married couple with two children at 100% AW Israel 14.3%, US 13.6%.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw25_ch3"
+     ]
+    },
+    {
+     "text": "Revision note: Taxing Wages 2026 revised the 2024 figures (Table 5.1): Israel single 67% AW 18.1%, single 100% AW 25.0%, one-earner couple with two children 20.2%; US 27.6%, 30.1%, 20.1% (unchanged). Revised 2024 net personal rate single 67% AW: Israel 14.0%, US 21.6%. Cite edition explicitly when quoting.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw26_ch5"
+     ]
+    },
+    {
+     "text": "OECD Taxing Wages 2026 (2025 data), tax wedge % of labour costs: single 67% AW Israel 19.4%, US 27.5%; single 100% AW Israel 26.1%, US 30.0%; one-earner married couple two children 100% AW Israel 21.4%, US 19.6%. Net personal average tax rate single 67% AW (Table 3.3): Israel 14.9%, US 21.4%. Reason for Israel's 2025 rise not stated on the page fetched.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_tw26_ch3"
+     ]
+    },
+    {
+     "text": "Israel's standard VAT rate is 18% (PwC: 'The 2025 current rate of VAT is 18%'); it rose from 17% on 1 January 2025.",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_vat",
+      "us22_herzog_vat25"
+     ]
+    },
+    {
+     "text": "US has no federal VAT or sales tax. Tax Foundation: population-weighted average combined state and local sales tax rate 7.53% (rates as of 1 July 2026); highest Louisiana 10.13%, Tennessee 9.61%, Washington 9.57%; five states (AK, DE, MT, NH, OR) have no statewide sales tax.",
+     "strength": "strong",
+     "sources": [
+      "us22_tf_sales26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_tw25_ch3",
+     "url": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/effective-tax-rates-on-labour-income-in-2024_878e20ff.html",
+     "label": "OECD, Taxing Wages 2025, ch. 3 'Effective tax rates on labour income in 2024', Tables 3.1 and 3.3, 30 Apr 2025"
+    },
+    {
+     "key": "us22_oecd_tw25_ov",
+     "url": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/overview_715add19.html",
+     "label": "OECD, Taxing Wages 2025, ch. 1 Overview, Tables 1.1 and 1.4, 30 Apr 2025"
+    },
+    {
+     "key": "us22_oecd_tw26_ch5",
+     "url": "https://www.oecd.org/en/publications/2026/04/taxing-wages-2026_d1f39986/full-report/effective-tax-rates-on-labour-income-in-2024_c3449b14.html",
+     "label": "OECD, Taxing Wages 2026, ch. 5 'Effective tax rates on labour income in 2024' (revised), Tables 5.1 and 5.3, Apr 2026"
+    },
+    {
+     "key": "us22_oecd_tw26_ch3",
+     "url": "https://www.oecd.org/en/publications/2026/04/taxing-wages-2026_d1f39986/full-report/effective-tax-rates-on-labour-income-in-2025_b7bb1854.html",
+     "label": "OECD, Taxing Wages 2026, ch. 3 'Effective tax rates on labour income in 2025', Tables 3.1 and 3.3, Apr 2026"
+    },
+    {
+     "key": "us22_pwc_il_vat",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/other-taxes",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Other taxes, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_herzog_vat25",
+     "url": "https://herzoglaw.co.il/en/news-and-insights/vat-updates-for-2025-vat-rate-increase-israel-invoices-reform-and-the-economic-plan-bill/",
+     "label": "Herzog Fox & Neeman, 'VAT updates for 2025: VAT rate increase...', 2025"
+    },
+    {
+     "key": "us22_tf_sales26",
+     "url": "https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/",
+     "label": "Tax Foundation (Abir Mandal), 'State and Local Sales Tax Rates, Midyear 2026', 6 July 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_unemployment",
+   "stage": "us22",
+   "topic": "Unemployment insurance: replacement rates, duration, Israel benefit formula",
+   "claims": [
+    {
+     "text": "OECD net replacement rate (net household income in unemployment as % of disposable income before job loss), initial phase (2nd month), single person no children, no social assistance or housing benefit, 2025: previously earning 67% of the average wage, Israel 65%, US 55%; previously earning 100% AW, Israel 59%, US 38%. OECD tax-benefit models; US results are modelled on a reference state (not stated on the DBnomics pages).",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_nrr_isr67",
+      "us22_oecd_nrr_isr100",
+      "us22_oecd_nrr_usa67",
+      "us22_oecd_nrr_usa100"
+     ]
+    },
+    {
+     "text": "Range of the same OECD series: Israel 67% AW 2008-2025 min 65, max 78; Israel 100% AW min 59, max 69 (2025 is the series low for both); US 67% AW 2001-2025 min 47, max 63 (62 in 2001); US 100% AW min 33, max 60 (54 in 2001).",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_nrr_isr67",
+      "us22_oecd_nrr_isr100",
+      "us22_oecd_nrr_usa67",
+      "us22_oecd_nrr_usa100"
+     ]
+    },
+    {
+     "text": "US maximum regular state unemployment benefit duration (CBPP, Sept 2026): 26 weeks in 33 states plus DC; fewer than 26 weeks in 16 states (Florida, Louisiana, North Carolina, Tennessee 12; Alabama, Georgia 14; Arkansas, Iowa, Kansas, Kentucky, Oklahoma 16; Idaho, Missouri, South Carolina 20; Arizona, Montana 24); Massachusetts 30 weeks is the only state above 26.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbpp_uiweeks"
+     ]
+    },
+    {
+     "text": "Israel maximum unemployment benefit days (NII), by age and dependants (up to 2 / 3 or more): under 25: 50/138; 25-28: 67/138; 28-35: 100/138; 35-45: 138/175; 45+: 175/175; used within 12 months from first reporting to the Employment Service; vocational-training participants may be paid up to 138 days.",
+     "strength": "strong",
+     "sources": [
+      "us22_nii_uiperiod"
+     ]
+    },
+    {
+     "text": "Israel benefit formula (NII, from 1 Jan 2026): daily rate based on wages in the last 6 full months; tiered replacement on portions of the daily wage relative to the reference daily amount: up to half 80% (age 28+)/60% (under 28); half to three-quarters 50%/40%; three-quarters to full 45%/35%; above full 30%/25%. Maximum daily benefit NIS 550.76 for the first 125 payment days (equal to the average daily wage) and NIS 367.17 from day 126 (two-thirds). Hebrew page names a basic daily amount of NIS 415 for the tiers; translation checked by machine only.",
+     "strength": "moderate",
+     "sources": [
+      "us22_nii_hisuv",
+      "us22_nii_uiamount"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_nrr_isr67",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/ISR.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW67._Z.M2.NO.NO.A",
+     "label": "OECD Net replacement rates in unemployment (DSD_TAXBEN_NRR@DF_NRR) via DBnomics, Israel, single no children, 67% AW, month 2, no SA/HB"
+    },
+    {
+     "key": "us22_oecd_nrr_isr100",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/ISR.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW100._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, Israel, single no children, 100% AW, month 2"
+    },
+    {
+     "key": "us22_oecd_nrr_usa67",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/USA.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW67._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, United States, single no children, 67% AW, month 2"
+    },
+    {
+     "key": "us22_oecd_nrr_usa100",
+     "url": "https://db.nomics.world/OECD/DSD_TAXBEN_NRR@DF_NRR/USA.NHIDU.PT_INC_DISP_HH_BJL.S_C0.Y4_6.AW100._Z.M2.NO.NO.A",
+     "label": "OECD NRR via DBnomics, United States, single no children, 100% AW, month 2"
+    },
+    {
+     "key": "us22_nii_uiperiod",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Unemployment Insurance/Pages/PeriodEntitlement.aspx",
+     "label": "National Insurance Institute (Bituach Leumi), 'How long unemployment benefits may be received?', accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_nii_uiamount",
+     "url": "https://btl.gov.il/English Homepage/Benefits/Unemployment Insurance/Pages/BenefitAmount.aspx",
+     "label": "National Insurance Institute, 'Benefit's calculation method', accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_nii_hisuv",
+     "url": "https://www.btl.gov.il/benefits/Unemployment/Pages/hisuv.aspx",
+     "label": "National Insurance Institute (Hebrew), 'How unemployment benefit is calculated', amounts from 1 Jan 2026"
+    },
+    {
+     "key": "us22_cbpp_uiweeks",
+     "url": "https://www.cbpp.org/research/economy/how-many-weeks-of-unemployment-compensation-are-available",
+     "label": "CBPP, 'Policy Basics: How Many Weeks of Unemployment Compensation Are Available?', updated 28 Sep 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_oldage",
+   "stage": "us22",
+   "topic": "Old-age income poverty, Israel vs US (OECD IDD; NII)",
+   "claims": [
+    {
+     "text": "OECD Income Distribution Database, relative income poverty rate (share with equivalised disposable income below 50% of the national median) among people over 65 (the 66+ group used in Pensions at a Glance): Israel 15.3% (2022, latest; 23.8% in 2011, series max 24.1%); United States 22.9% (2023, latest; 20.6% in 2013, series max 23.1%).",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_idd_isr66",
+      "us22_oecd_idd_usa66"
+     ]
+    },
+    {
+     "text": "Context: OECD IDD total-population poverty rate (50% median) Israel 16.8% (2022), so on the OECD measure Israel's elderly poverty (15.3%) is now slightly below its overall rate, while US elderly poverty (22.9%, 2023) exceeds the US overall rate (about 18%, see us22_poverty).",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_idd_isrtot",
+      "us22_oecd_idd_isr66",
+      "us22_oecd_idd_usa66"
+     ]
+    },
+    {
+     "text": "Pensions at a Glance 2023/2025 'Old-age income poverty' tables could not be read directly (OECD pages render without data for the fetch tool); the IDD figures above are the underlying source for that indicator.",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_idd_isr66"
+     ]
+    },
+    {
+     "text": "NII Poverty Report for 2024 (published around 30 Jan 2026): poverty 20.7% of persons, 20.0% of families, about 28% of children; about 158,700 elderly people poor, described as above the OECD average. No 2024 elderly poverty percentage found in the press coverage or NII English release.",
+     "strength": "moderate",
+     "sources": [
+      "us22_inn_oni24"
+     ]
+    },
+    {
+     "text": "NII Poverty Report for 2023 (18 Dec 2024): about 158.5 thousand elderly poor; elderly poverty below the national average; 19.8% for elderly living alone vs 8.4% living with family. Mako reports elderly poverty incidence of 12.8% (persons, 2023) - not confirmed on the NII page.",
+     "strength": "moderate",
+     "sources": [
+      "us22_nii_oni23",
+      "us22_mako_oni23"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_idd_isr66",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/ISR.A.PR_INC_DISP._Z.PT_POP.Y_GT65.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database (DSD_WISE_IDD@DF_IDD) via DBnomics, Israel, poverty rate 50% median, over 65 (66+), income definition since 2012"
+    },
+    {
+     "key": "us22_oecd_idd_usa66",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/USA.A.PR_INC_DISP._Z.PT_POP.Y_GT65.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database via DBnomics, United States, poverty rate 50% median, over 65 (66+), income definition since 2012"
+    },
+    {
+     "key": "us22_oecd_idd_isrtot",
+     "url": "https://db.nomics.world/OECD/DSD_WISE_IDD@DF_IDD/ISR.A.PR_INC_DISP._Z.PT_POP._T.METH2012.D_CUR.PL_50",
+     "label": "OECD Income Distribution Database via DBnomics, Israel, poverty rate 50% median, total population"
+    },
+    {
+     "key": "us22_inn_oni24",
+     "url": "https://www.inn.co.il/news/688867",
+     "label": "Arutz Sheva (inn.co.il), NII Poverty Report for 2024, 30 Jan 2026"
+    },
+    {
+     "key": "us22_nii_oni23",
+     "url": "https://www.btl.gov.il/About/newspapers/Pages/ArchiveFolder/2025/DochOnI2024.aspx",
+     "label": "National Insurance Institute press release, Poverty and Inequality Report 2023, 18 Dec 2024"
+    },
+    {
+     "key": "us22_mako_oni23",
+     "url": "https://www.mako.co.il/finances-news/Article-e6516cbb769d391027.htm",
+     "label": "Mako (N12), coverage of NII Poverty Report 2023, 18 Dec 2024"
+    }
+   ]
+  },
+  {
+   "id": "us22_hale",
+   "stage": "us22",
+   "topic": "Healthy life expectancy (HALE) and life expectancy at birth, WHO 2021",
+   "claims": [
+    {
+     "text": "WHO healthy life expectancy (HALE) at birth, 2021 (latest WHO estimate): Israel 70.9 years (men 70.4, women 71.4); United States 63.2 years (men 62.2, women 64.3). Gap 7.7 years.",
+     "strength": "strong",
+     "sources": [
+      "us22_who_hale21"
+     ]
+    },
+    {
+     "text": "WHO life expectancy at birth, 2021: Israel 82.3 years (men 80.3, women 84.2); United States 76.4 (men 73.9, women 79.0). Book's arithmetic: years lived in less than full health (LE minus HALE) Israel 11.4, US 13.2. 2021 includes COVID-19 mortality, which hit the US harder.",
+     "strength": "strong",
+     "sources": [
+      "us22_who_le21",
+      "us22_who_hale21"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_who_hale21",
+     "url": "https://ghoapi.azureedge.net/api/WHOSIS_000002?$filter=SpatialDim%20in%20('ISR','USA')%20and%20TimeDim%20eq%202021",
+     "label": "WHO Global Health Observatory, indicator WHOSIS_000002 'Healthy life expectancy (HALE) at birth (years)', 2021 (GHE 2021 release)"
+    },
+    {
+     "key": "us22_who_le21",
+     "url": "https://ghoapi.azureedge.net/api/WHOSIS_000001?$filter=SpatialDim%20in%20('ISR','USA')%20and%20TimeDim%20eq%202021",
+     "label": "WHO Global Health Observatory, indicator WHOSIS_000001 'Life expectancy at birth (years)', 2021"
+    }
+   ]
+  },
+  {
+   "id": "us22_toptax",
+   "stage": "us22",
+   "topic": "Corporate and top personal tax rates, incentives and effective rates: Israel vs US",
+   "claims": [
+    {
+     "text": "Statutory corporate income tax: Israel 23% (2025 and 2026, PwC); US 21% federal, combined federal and average state statutory rate 25.57% (Tax Foundation 2025; OECD unweighted average 24.20%, worldwide average 23.58% across 181 jurisdictions).",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_cit",
+      "us22_tf_cit25"
+     ]
+    },
+    {
+     "text": "Israel's incentive regimes under the Law for the Encouragement of Capital Investments (PwC, June 2026): Preferred Enterprise 7.5% in Development Area A / 16% elsewhere; Special Preferred Enterprise 5% / 8% (for ten years); Preferred Technology Enterprise 7.5% / 12% on qualifying income; Special Preferred Technology Enterprise 6%. Dividends from PTE/SPTE to foreign parent companies (90%+ foreign-held) withheld at 4%, otherwise 20%.",
+     "strength": "strong",
+     "sources": [
+      "us22_pwc_il_incent"
+     ]
+    },
+    {
+     "text": "Intel Kiryat Gat deal (announced 26 Dec 2023): Israeli government grant $3.2bn, 12.8% of a planned $25bn investment in Fab 38; Intel committed to buy NIS 60bn (about $16.6bn) from Israeli suppliers over a decade; Finance Ministry official said Intel's corporate tax rate rose from 5% to 7.5% under the deal. Intel reportedly paused the Kiryat Gat project in June 2024; current status not verified here.",
+     "strength": "strong",
+     "sources": [
+      "us22_aj_intel",
+      "us22_ctech_intel",
+      "us22_jp_intelpause"
+     ]
+    },
+    {
+     "text": "Top personal income tax rates: US federal 37% for 2026 on taxable income above $640,600 (single) / $768,700 (married joint) (state income taxes extra); Israel 47% above ILS 560,280 plus 3% surtax above ILS 721,560 = 50% on labour income, and from 2025 an additional 2% surtax on capital income above that threshold (up to 52% marginal on capital income taxed at ordinary rates).",
+     "strength": "strong",
+     "sources": [
+      "us22_irs_ty26",
+      "us22_pwc_il_pit"
+     ]
+    },
+    {
+     "text": "ITEP (Feb 2024): 342 consistently profitable large US corporations paid an average effective federal income tax rate of 14.1% over 2018-2022 (statutory 21%); 109 paid zero federal income tax in at least one year; total tax breaks $275bn.",
+     "strength": "moderate",
+     "sources": [
+      "us22_itep_corp24"
+     ]
+    },
+    {
+     "text": "Israel State Comptroller (Nov 2022): estimated tax benefits (tax expenditures) NIS 67bn in 2019, up 34% from 2015. A more recent Tax Authority total (2023-2025) was not found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_mevaker_taxexp"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_pwc_il_cit",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/taxes-on-corporate-income",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Taxes on corporate income, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_pwc_il_incent",
+     "url": "https://taxsummaries.pwc.com/israel/corporate/tax-credits-and-incentives",
+     "label": "PwC Worldwide Tax Summaries, Israel - Corporate - Tax credits and incentives, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_pwc_il_pit",
+     "url": "https://taxsummaries.pwc.com/israel/individual/taxes-on-personal-income",
+     "label": "PwC Worldwide Tax Summaries, Israel - Individual - Taxes on personal income, reviewed 29 June 2026"
+    },
+    {
+     "key": "us22_tf_cit25",
+     "url": "https://taxfoundation.org/publications/corporate-tax-rates-around-the-world/",
+     "label": "Tax Foundation (Cristina Enache), 'Corporate Tax Rates Around the World, 2025', 17 Dec 2025"
+    },
+    {
+     "key": "us22_irs_ty26",
+     "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+     "label": "IRS, IR-2025-103, 'IRS releases tax inflation adjustments for tax year 2026...', 9 Oct 2025"
+    },
+    {
+     "key": "us22_itep_corp24",
+     "url": "https://itep.org/corporate-tax-avoidance-trump-tax-law/",
+     "label": "ITEP, 'Corporate Tax Avoidance in the First Five Years of the Trump Tax Law', 29 Feb 2024"
+    },
+    {
+     "key": "us22_ctech_intel",
+     "url": "https://www.calcalistech.com/ctechnews/article/skutpi9ta",
+     "label": "Calcalist CTech, interview with Finance Ministry deputy budget director Kfir Battat on Intel deal, 21 Jan 2024"
+    },
+    {
+     "key": "us22_aj_intel",
+     "url": "https://aljazeera.com/news/2023/12/26/israel-grants-intel-3-2bn-for-largest-ever-25bn-chip-plant-investment",
+     "label": "Al Jazeera, 'Israel grants Intel $3.2bn for largest-ever $25bn chip plant investment', 26 Dec 2023"
+    },
+    {
+     "key": "us22_jp_intelpause",
+     "url": "https://jewishpress.com/news/business-economy/intel-postpones-construction-of-new-25b-plant-in-kiryat-gat/2024/06/13",
+     "label": "Jewish Press, 'Intel postpones construction of new $25B plant in Kiryat Gat', 13 June 2024"
+    },
+    {
+     "key": "us22_mevaker_taxexp",
+     "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2022/2022.11/EN/2022.11-203-Tax-Taktzir-EN.pdf",
+     "label": "State Comptroller of Israel, audit report on tax benefits (English summary), Nov 2022"
+    }
+   ]
+  },
+  {
+   "id": "us22_otheraid",
+   "stage": "us22",
+   "topic": "Non-US official aid to Israel (German naval subsidies) and private philanthropic inflows",
+   "claims": [
+    {
+     "text": "German subsidies for Israel's Dolphin submarines (AFP/UPI 2012): the first two Dolphins were donated by Germany (the UPI account ties this to the 1953 reparations agreement; other accounts link it to the 1991 Gulf War - not resolved here); Germany paid half of the roughly $700m cost of the third; it agreed to pay one-third of the $1.27bn cost of the fourth and fifth (ordered 2006); for the sixth (signed March 2012, about $659m) Germany covered up to EUR 135m, described as about a third.",
+     "strength": "moderate",
+     "sources": [
+      "us22_solar_dolphin6",
+      "us22_ynet_dolphin11"
+     ]
+    },
+    {
+     "text": "AP (30 Nov 2011): Germany set aside EUR 135m ($180m) in its budget to pay about a third of another Dolphin submarine; of Israel's three Dolphins at the time, two were entirely funded and one half-funded by Berlin.",
+     "strength": "strong",
+     "sources": [
+      "us22_ynet_dolphin11"
+     ]
+    },
+    {
+     "text": "Sa'ar 6 corvettes (ordered May 2015): four ships from ThyssenKrupp for about NIS 1.8bn (about EUR 430m / $480m); German government contribution EUR 115m per AFP; Ynet reported Germany would subsidise one third.",
+     "strength": "moderate",
+     "sources": [
+      "us22_gulf_saar6",
+      "us22_wiki_saar6"
+     ]
+    },
+    {
+     "text": "Dakar-class submarines (agreement Jan 2022): three submarines from ThyssenKrupp for about EUR 3bn ($3.4bn); German government contribution EUR 540m under a 2017 bilateral agreement (about 18%, book's arithmetic).",
+     "strength": "moderate",
+     "sources": [
+      "us22_almon_dakar"
+     ]
+    },
+    {
+     "text": "No authoritative total of non-US official (state) aid to Israel was found; no other state military grant programme comparable to US FMF was found in this pass. Israel is not an OECD DAC ODA recipient in current data (not separately verified here).",
+     "strength": "weak",
+     "sources": [
+      "us22_almon_dakar"
+     ]
+    },
+    {
+     "text": "Private philanthropy: donations to Israeli nonprofits totalled $4.4bn in 2015 (all sources, per CBS), of which $2.8bn (about two-thirds) came from abroad (Tel Aviv University Institute for Law and Philanthropy); US funders: 1,179 organisations gave $1.8bn in 2015 (centralised bodies $707m, 'friends of' groups $752m, family foundations $87m); evangelical Christian groups under 3% of foreign donations. 2015 is the latest comprehensive year cited; no newer authoritative annual total found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_chron_giving"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_solar_dolphin6",
+     "url": "https://www.solardaily.com/reports/Israel_to_sign_deal_for_sixth_German_sub_999.html",
+     "label": "SpaceDaily/AFP-UPI, 'Israel to sign deal for sixth German sub', 20 Mar 2012"
+    },
+    {
+     "key": "us22_ynet_dolphin11",
+     "url": "https://www.ynetnews.com/article/4155447",
+     "label": "Ynetnews (AP), 'Germany OKs subsidized submarine sale to Israel', 30 Nov 2011"
+    },
+    {
+     "key": "us22_almon_dakar",
+     "url": "https://www.al-monitor.com/index%2Ephp/originals/2022/01/israel-signs-agreement-buy-three-more-german-submarines",
+     "label": "Al-Monitor, 'Israel signs agreement to buy three more German submarines', Jan 2022"
+    },
+    {
+     "key": "us22_gulf_saar6",
+     "url": "https://gulfnews.com/world/mena/germany-subsidises-sale-of-4-warships-to-israel-1.1508755",
+     "label": "Gulf News (AFP), 'Germany subsidises sale of 4 warships to Israel', May 2015 (page updated 2018)"
+    },
+    {
+     "key": "us22_wiki_saar6",
+     "url": "https://en.wikipedia.org/wiki/Sa%27ar_6-class_corvette",
+     "label": "Wikipedia, 'Sa'ar 6-class corvette' (citing Ynet 11 May 2015, i24news 13 Dec 2015)"
+    },
+    {
+     "key": "us22_chron_giving",
+     "url": "https://www.philanthropy.com/news/u-s-jews-and-christians-give-billions-to-israel/",
+     "label": "Chronicle of Philanthropy (Jamie Levine Daniel, from The Conversation), 'U.S. Jews and Christians give billions to Israel', 21 Apr 2023"
+    }
+   ]
+  },
+  {
+   "id": "us22_usforeignaid",
+   "stage": "us22",
+   "topic": "US foreign assistance totals and military share; host-nation support received by the US",
+   "claims": [
+    {
+     "text": "US foreign assistance disbursements (ForeignAssistance.gov, per Pew, constant 2025 dollars): FY2023 $85.1bn; FY2024 $73.5bn (category table gives $71.6bn); FY2025 $47.3bn; FY2026 through 1 July 2026 $7.0bn. Aid was 0.67% of federal spending in FY2025 (about 1% for most of FY2008-FY2021).",
+     "strength": "strong",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    },
+    {
+     "text": "Military/security share: the 'peace and security' category was $18.2bn in FY2024 (about 25% of the $71.6bn total, book's arithmetic) and $7.3bn in FY2025, 15.5% of FY2025 aid, the smallest share since FY2001. Pew's figures are disbursements; an obligations total for FY2024/FY2025 was not retrieved (ForeignAssistance.gov home page not reachable in this session).",
+     "strength": "moderate",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    },
+    {
+     "text": "Israel in FY2025: $3.31bn disbursed (Pew), 99.8% military; USAFacts gives about $3.3bn obligated in FY2025, all military, ranking first among 43 high-income recipients; Pew says Israel's FY2025 figure was down 51.4% from FY2024. Ukraine FY2025 $6.70bn (84.9% non-military).",
+     "strength": "strong",
+     "sources": [
+      "us22_pew_aid26",
+      "us22_usafacts_isr"
+     ]
+    },
+    {
+     "text": "Host-nation support is a different category from foreign aid: Japan pays for part of the cost of stationing US forces in Japan under a Special Measures Agreement - JPY 1,055.1bn (about $8.6bn at 2022 rates) over five years to March 2027 (about JPY 210bn a year, book's arithmetic); talks on the next agreement began in mid-2026.",
+     "strength": "strong",
+     "sources": [
+      "us22_ap_japanhns",
+      "us22_jiji_hns26"
+     ]
+    },
+    {
+     "text": "No source found that states in terms that the US receives foreign military aid; the US is a donor, and no foreign grant programme to the US comparable to FMF was found. The 'receives none' point rests on absence of evidence, not a direct citation.",
+     "strength": "weak",
+     "sources": [
+      "us22_pew_aid26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_pew_aid26",
+     "url": "https://www.pewresearch.org/short-reads/2026/07/21/us-foreign-aid-is-plunging-in-second-trump-administration/",
+     "label": "Pew Research Center (Drew DeSilver), 'US foreign aid is plunging in second Trump administration', 21 July 2026 (ForeignAssistance.gov data updated 1 July 2026)"
+    },
+    {
+     "key": "us22_usafacts_isr",
+     "url": "https://usafacts.org/answers/how-much-foreign-aid-does-the-us-provide/countries/israel/",
+     "label": "USAFacts, 'How much foreign aid does the US provide to Israel?', updated 29 Sep 2026 (ForeignAssistance.gov)"
+    },
+    {
+     "key": "us22_ap_japanhns",
+     "url": "https://www.clickondetroit.com/news/world/2022/03/25/japan-oks-bigger-budget-to-host-us-forces-step-up-alliance/",
+     "label": "AP via ClickOnDetroit, 'Japan OKs bigger budget to host US forces, step up alliance', 25 Mar 2022"
+    },
+    {
+     "key": "us22_jiji_hns26",
+     "url": "https://english.adnkronos.com/2026/08/05/exclusive-japan-u-s-begin-working-level-talks-on-host-nation-support/",
+     "label": "Jiji Press via Adnkronos, 'Japan, U.S. begin working-level talks on host nation support', 5 Aug 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_q_us",
+   "stage": "us22",
+   "topic": "Three Families: US BLS CE 2024 by income quintile (1, 3, 4)",
+   "claims": [
+    {
+     "text": "BLS CE 2024 is the latest calendar-year release (published 19 Dec 2025, delayed from the usual September; no 2025 calendar-year tables were listed on bls.gov/cex/tables.htm as of 21 Oct 2026). Quintiles are of consumer units ranked by income before taxes; 135,760 thousand consumer units in all. Quintile lower bounds: 2nd $29,932, 3rd $57,452, 4th $94,511, top $155,925.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_bls_cextables"
+     ]
+    },
+    {
+     "text": "BLS CE 2024: INCOME AFTER TAXES WAS NOT PUBLISHED for 2024 (BLS: the tax model provider did not update its model). Latest published after-tax incomes are 2023: all consumer units $87,869; third quintile $66,606; fourth quintile $104,559 (FRED shows no 2024 observation).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_fred_incafttxlb0101m",
+      "us22_fred_incafttxlb0104m",
+      "us22_fred_incafttxlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 income before taxes (mean, USD/year per consumer unit): all $104,207; lowest quintile $16,658 (2023: $15,596); third quintile $74,474 (2023: $71,057); fourth quintile $121,548 (2023: $116,717). Changes agree with BLS Report Table 5 (+$1,062, +$3,417, +$4,831).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_nr",
+      "us22_bls_cerep24",
+      "us22_fred_incbeftxlb0102m",
+      "us22_fred_incbeftxlb0104m",
+      "us22_fred_incbeftxlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 average annual expenditures (USD per consumer unit): all $78,535; lowest quintile $35,046; second $50,054; third $66,900; fourth $89,972; highest $150,342 (Table C).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cesan24_pdf",
+      "us22_bls_cesan24_nr",
+      "us22_fred_totalexplb0102m",
+      "us22_fred_totalexplb0104m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 housing (USD/yr): all $26,266; lowest quintile $14,563; third $24,093; fourth $29,374. Shelter: all $16,317; lowest $9,178; third $15,257; fourth $17,851. Definitions (BLS CE glossary, not re-read for this entry): CE housing = shelter + utilities + household operations + housekeeping supplies + furnishings; owners' shelter is actual outlays (mortgage interest, property tax, maintenance, insurance), NOT imputed rent; mortgage principal is excluded (counted as asset change).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_housinglb0102m",
+      "us22_fred_housinglb0104m",
+      "us22_fred_housinglb0105m",
+      "us22_fred_shelterlb0102m",
+      "us22_fred_shelterlb0104m",
+      "us22_fred_shelterlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 food (USD/yr, food at home + away; alcohol separate): all $10,169; lowest quintile $5,498; third $9,097; fourth: NOT RETRIEVED (FRED CXUFOODTOTLLB0105M under maintenance; BLS xlsx not reachable).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_foodtotllb0102m",
+      "us22_fred_foodtotllb0104m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 transportation (USD/yr): all $13,318; third quintile $11,657; fourth $15,952; lowest quintile: NOT RETRIEVED (BLS Report Table 5 gives only its 2023-24 change, +$188, +3.8%).",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_translb0104m",
+      "us22_fred_translb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 healthcare (USD/yr; out-of-pocket incl. health insurance premiums paid by the household, excl. employer-paid): all $6,197; lowest quintile $3,445; third $5,676; fourth $7,247.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_healthlb0102m",
+      "us22_fred_healthlb0104m",
+      "us22_fred_healthlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 education (USD/yr): all $1,569; lowest quintile $828; third $749; fourth $1,353. Caveat: FRED's 2023 values (727, 1,079, 1,176) do not match the 2023-24 changes in BLS Report Table 5 (+$113, -$232, +$250), though the 2024 levels are consistent with Table 5 within ~$2.",
+     "strength": "moderate",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_educatnlb0102m",
+      "us22_fred_educatnlb0104m",
+      "us22_fred_educatnlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 personal insurance and pensions (life insurance + Social Security and pension contributions; included in CE 'average annual expenditures'): all $9,797; lowest quintile $711; third $6,248; fourth $11,934.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_inspensnlb0102m",
+      "us22_fred_inspensnlb0104m",
+      "us22_fred_inspensnlb0105m"
+     ]
+    },
+    {
+     "text": "BLS CE 2024 average number of persons per consumer unit: all 2.4. By quintile: NOT RETRIEVED (published in the BLS quintile xlsx, which could not be read; no FRED series located). Number of consumer units in lowest quintile: 27,139 thousand.",
+     "strength": "moderate",
+     "sources": [
+      "us22_bls_cerep24",
+      "us22_fred_consunitlb0102m"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_fred_incbeftxlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0102M: Income before taxes, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incbeftxlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0104M: Income before taxes, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incbeftxlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCBEFTXLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCBEFTXLB0105M: Income before taxes, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0104M: Income after taxes, third 20% (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0105M: Income after taxes, fourth 20% (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_incafttxlb0101m",
+     "url": "https://fred.stlouisfed.org/series/CXUINCAFTTXLB0101M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINCAFTTXLB0101M: Income after taxes, all consumer units (latest 2023) by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_totalexplb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTOTALEXPLB0102M: Total average annual expenditures, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_totalexplb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUTOTALEXPLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTOTALEXPLB0104M: Total average annual expenditures, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_foodtotllb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUFOODTOTLLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUFOODTOTLLB0102M: Food, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_foodtotllb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUFOODTOTLLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUFOODTOTLLB0104M: Food, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0102M: Housing, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0104M: Housing, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_housinglb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUHOUSINGLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHOUSINGLB0105M: Housing, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0102M: Shelter, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0104M: Shelter, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_shelterlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUSHELTERLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUSHELTERLB0105M: Shelter, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_translb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUTRANSLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTRANSLB0104M: Transportation, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_translb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUTRANSLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUTRANSLB0105M: Transportation, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0102M: Healthcare, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0104M: Healthcare, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_healthlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUHEALTHLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUHEALTHLB0105M: Healthcare, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0102M: Education, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0104M: Education, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_educatnlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUEDUCATNLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUEDUCATNLB0105M: Education, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0102M: Personal insurance and pensions, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0104m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0104M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0104M: Personal insurance and pensions, third 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_inspensnlb0105m",
+     "url": "https://fred.stlouisfed.org/series/CXUINSPENSNLB0105M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUINSPENSNLB0105M: Personal insurance and pensions, fourth 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_consunitlb0102m",
+     "url": "https://fred.stlouisfed.org/series/CXUCONSUNITLB0102M",
+     "label": "FRED (St. Louis Fed), BLS Consumer Expenditure Surveys series CXUCONSUNITLB0102M: Number of consumer units, lowest 20% by quintiles of income before taxes, annual, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_bls_cesan24_nr",
+     "url": "https://www.bls.gov/news.release/cesan.nr0.htm",
+     "label": "US BLS, Consumer Expenditures - 2024 (USDL-25-1586), news release text incl. Table C, 19 Dec 2025"
+    },
+    {
+     "key": "us22_bls_cesan24_pdf",
+     "url": "https://www.bls.gov/news.release/pdf/cesan.pdf",
+     "label": "US BLS, Consumer Expenditures - 2024, news release PDF (Table C: average annual expenditures by income quintile), 19 Dec 2025"
+    },
+    {
+     "key": "us22_bls_cerep24",
+     "url": "https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm",
+     "label": "US BLS Reports, Consumer Expenditures in 2024 (Tables 2, 4, 5)"
+    },
+    {
+     "key": "us22_bls_cextables",
+     "url": "https://www.bls.gov/cex/tables.htm",
+     "label": "US BLS, Consumer Expenditure Surveys tables page (links calendar-year quintile table cu-income-quintiles-before-taxes-2024.xlsx; no 2025 calendar-year release listed), accessed 21 Oct 2026"
+    }
+   ]
+  },
+  {
+   "id": "us22_q_il",
+   "stage": "us22",
+   "topic": "Three Families: Israel CBS HES 2024/2023 by income decile/quintile",
+   "claims": [
+    {
+     "text": "Israel CBS Household Expenditure Survey 2024 (released ~13 Oct 2026) is the latest. National averages per household per month: gross money income NIS 27,173 (2023: 26,330); net money income NIS 22,555 (2023: 21,606); total consumption expenditure incl. imputed housing services NIS 18,695; money expenditure excl. imputed housing NIS 15,370; median gross income NIS 20,540; Gini 0.333 (2023: 0.349). Housing 25%, transport and communications 18.4%, food 17.9% of consumption.",
+     "strength": "strong",
+     "sources": [
+      "us22_bizp_hes24",
+      "us22_maariv_hes24",
+      "us22_calc_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2024 by decile of households ranked by net money income per standard person (NIS/household/month, as tabulated by Davar): net money income D1 7,276; D2 10,598; D3 13,513; D4 16,160; D5 18,565; D6 21,241; D7 25,310; D8 29,046; D9 34,286; D10 49,496. Expenditure D1 11,902; D2 11,174; D3 12,317; D4 13,647; D5 15,094; D6 15,477; D7 15,992; D8 17,173; D9 19,106; D10 21,800. Check: the decile means average to 22,549 (≈ net income 22,555) and 15,368 (≈ money expenditure 15,370), so the expenditure column is MONEY expenditure excluding imputed housing services, not total consumption (18,695).",
+     "strength": "moderate",
+     "sources": [
+      "us22_davar_hes24",
+      "us22_bizp_hes24",
+      "us22_calc_hes24"
+     ]
+    },
+    {
+     "text": "CBS quintile tables for HES 2024 (or 2023) were NOT reached; published quintile values not found in any accessible source. Derived from the decile table (CBS deciles each hold 10% of households, so a quintile mean = simple mean of its two deciles, rounding aside): net money income Q1 ≈ NIS 8,937, Q3 ≈ 19,903, Q4 ≈ 27,178; money expenditure (excl. imputed rent) Q1 ≈ 11,538, Q3 ≈ 15,286, Q4 ≈ 16,583 per household per month, 2024. These are book arithmetic, not CBS-published figures.",
+     "strength": "weak",
+     "sources": [
+      "us22_davar_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2024 bottom vs top decile: household size bottom decile 4.1 persons (Calcalist) or 3.9 (Bizportal; sources disagree), top decile 2.6 (Calcalist) or 2.7 (Bizportal); earners 0.9/0.8 vs 1.8/1.9; work share of income 60.9% vs 81%; home ownership 35.5% vs 79.5% (national 62.5%); renting 56.5% vs 18.3% (national 32.7%); average rent NIS 3,924. Gross money income, household size and category spending by quintile/decile for 2024 were not found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_hes24",
+      "us22_bizp_hes24"
+     ]
+    },
+    {
+     "text": "CBS HES 2023 (press release 1 Jan 2026), Table A, by decile of net money income per standard person: persons per household all 3.2, bottom decile 4.2, 4th decile 3.1, 7th decile 3.0, top decile 2.4; earners 1.5 / 0.9 / 1.4 / 1.6 / 1.7. National: gross money income NIS 26,330, net 21,606, consumption incl. imputed housing 18,088, money expenditure 14,823. Definitions: consumption includes imputed housing services for owner-occupied/rent-free/key-money dwellings valued at the rent of similar dwellings in the same locality; 'food' in the headline share (17.9%) INCLUDES fruit and vegetables; 2023 income is not comparable with earlier years (methodology change).",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes23_pr"
+     ]
+    },
+    {
+     "text": "Category spending by quintile (closest published proxy, NOT the HES table): CBS's Feb 2025 CPI-weights update (HES 2022-2023 data in 2024 prices) gives total monthly consumption per household: average NIS 19,319.89, bottom quintile 13,765.34, top quintile 25,848.33. Shares of consumption, bottom / middle (Q3) / top quintile: food EXCL. fruit and veg 19.8% / 16.0% / 13.2%; transport and communications 15.4% / 19.2% / ~20%; housing (incl. imputed owner-occupied housing services) 21.6% / 24.9% / ~28%. Bottom vs top only: education services 7.1% vs 4.5%; private medical services 2% vs 4%; rent 10% vs 5%. Fourth-quintile values and Q3 NIS total not given.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_cpiq",
+      "us22_calc_cpiw"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_davar_hes24",
+     "url": "https://www.davar1.co.il/701666/",
+     "label": "Davar, 'Top decile earns ~49k NIS a month, 7x the bottom' (CBS Household Expenditure Survey 2024 decile table), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_bizp_hes24",
+     "url": "https://www.bizportal.co.il/financialconsumerism/news/article/20044646",
+     "label": "Bizportal, 'How much does an Israeli family bring in? 22.6k NIS net a month' (CBS HES 2024), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_hes24",
+     "url": "https://www.calcalist.co.il/local_news/article/rkgpaknizl",
+     "label": "Calcalist, CBS report: inequality fell in 2024 (CBS HES 2024), 14 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_maariv_hes24",
+     "url": "https://www.maariv.co.il/economy/israel/article-1376692",
+     "label": "Maariv, 'How much does it really cost to live in Israel?' (CBS HES 2024), 13 Oct 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_cbs_hes23_pr",
+     "url": "https://www.cbs.gov.il/he/mediarelease/DocLib/2026/001/15_26_001b.pdf",
+     "label": "Israel CBS, Household Expenditure Survey 2023, press release 001/2026, 1 Jan 2026 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_cpiq",
+     "url": "https://www.calcalist.co.il/local_news/article/bjmqatpfke",
+     "label": "Calcalist (A. Pilot), consumption basket by income quintile from CBS CPI-weights update (HES 2022-2023 data, 2024 prices), 11 Feb 2025 (Hebrew)"
+    },
+    {
+     "key": "us22_calc_cpiw",
+     "url": "https://www.calcalist.co.il/local_news/article/hyvbrwwk1e",
+     "label": "Calcalist, CBS updates CPI basket weights from HES 2022-2023, 10 Feb 2025 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_ppp",
+   "stage": "us22",
+   "topic": "PPP conversion factors Israel vs US",
+   "claims": [
+    {
+     "text": "World Bank PPP conversion factor, private (household) consumption, LCU per international $ (US = 1.00 by construction): Israel 4.35 (2019), 4.28 (2020). PPP conversion factor, GDP: Israel 3.92 (2019), 3.85 (2020), 3.79 (2021). The 2023 and 2024 values (survey years) were NOT retrieved: the World Bank page did not render values and the WB/OECD/OWID data endpoints were blocked or unanswered.",
+     "strength": "moderate",
+     "sources": [
+      "us22_imx_ppp_il",
+      "us22_imx_ppp_rank",
+      "us22_wb_prvtpp"
+     ]
+    },
+    {
+     "text": "OECD price level of actual individual consumption for Israel (OECD = 100): 138 (2021), 139 (2022), 140 (2023); third most expensive in the West on this measure. Not a conversion factor; no NIS-per-dollar PPP given.",
+     "strength": "moderate",
+     "sources": [
+      "us22_calc_oecdpl"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_imx_ppp_il",
+     "url": "https://www.indexmundi.com/facts/israel/ppp-conversion-factor",
+     "label": "IndexMundi, Israel - PPP conversion factor (World Bank WDI/ICP), accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_imx_ppp_rank",
+     "url": "https://www.indexmundi.com/facts/indicators/PA.NUS.PRVT.PP/rankings",
+     "label": "IndexMundi, PPP conversion factor, private consumption (LCU per international $) - country ranking (WDI)"
+    },
+    {
+     "key": "us22_wb_prvtpp",
+     "url": "https://data.worldbank.org/indicator/PA.NUS.PRVT.PP?year=2023",
+     "label": "World Bank WDI, PA.NUS.PRVT.PP PPP conversion factor, households and NPISHs final consumption expenditure (LCU per international $) - indicator page (values not rendered)"
+    },
+    {
+     "key": "us22_calc_oecdpl",
+     "url": "https://www.calcalist.co.il/local_news/article/hj87iz11fye",
+     "label": "Calcalist, OECD price-level comparison for Israel, 13 Nov 2024 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_q_happy",
+   "stage": "us22",
+   "topic": "Life satisfaction by income, US and Israel",
+   "claims": [
+    {
+     "text": "United States, Gallup Mood of the Nation (phone, 2-15 Jan 2025, n=1,005): share 'very satisfied' with the way things are going in their personal life, by annual household income: under $40,000 38%; $40,000-$99,999 42%; $100,000+ 55% (2020: 54%, 66%, 76%). Total satisfied (very + somewhat), all adults: 81%. Income-group totals for very+somewhat not published. Verbatim question in the topline, not reproduced in the article.",
+     "strength": "strong",
+     "sources": [
+      "us22_gallup_pl25"
+     ]
+    },
+    {
+     "text": "Gallup's US life-evaluation measure (Cantril ladder, 0-10): 'On which step of the ladder would you say you personally feel you stand at this time?' and 'about five years from now'; thriving = current 7+ and future 8+. Gallup states life evaluation rises with income across the full distribution, but no recent thriving-by-income percentages were found in accessible releases.",
+     "strength": "moderate",
+     "sources": [
+      "us22_gallup_rip26"
+     ]
+    },
+    {
+     "text": "Israel CBS (Social Survey, released for Rosh Hashanah, Sep 2026): 92.2% of Israelis aged 20+ satisfied with their lives (Jews 92.6%, Arabs 90.6%); 70.2% satisfied with their financial situation. CBS Social Survey 2023: 91.1% satisfied. Question wording not given in these sources; the CBS Social Survey item is believed to be 'In general, are you satisfied with your life?' on a 4-point scale, with 'satisfied' = very satisfied + satisfied (NOT VERIFIED against a CBS questionnaire).",
+     "strength": "moderate",
+     "sources": [
+      "us22_ynet_cbs5787",
+      "us22_mako_ss23"
+     ]
+    },
+    {
+     "text": "Israel life satisfaction by income quintile from the CBS Social Survey: NOT FOUND in any accessible CBS release or press coverage (CBS tables not reachable). Not estimated. No cross-country survey giving both countries by income group was found (Gallup International 2024 reports income breakdowns only as a 37-country aggregate).",
+     "strength": "moderate",
+     "sources": [
+      "us22_ynet_cbs5787"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_gallup_pl25",
+     "url": "https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx",
+     "label": "Gallup, 'New Low Satisfied With Personal Life' (Mood of the Nation, Jan 2-15 2025), 23 Jan 2025"
+    },
+    {
+     "key": "us22_gallup_rip26",
+     "url": "https://www.gallup.com/file/analytics/715049/Gallup_Rippel_Report_2026.pdf",
+     "label": "Gallup, Rippel Report 2026 (US life evaluation; ladder question wording)"
+    },
+    {
+     "key": "us22_ynet_cbs5787",
+     "url": "https://www.ynetnews.com/article/rymfsha00ge",
+     "label": "Ynetnews, Israel's population surpasses 10 million as new Hebrew year begins (CBS Rosh Hashanah data), 9 Sep 2026"
+    },
+    {
+     "key": "us22_mako_ss23",
+     "url": "https://www.mako.co.il/news-money/2025_q4/Article-e3784a807a1ca91026.htm",
+     "label": "Mako/N12, CBS Social Survey 2023 life satisfaction in 20 largest cities, 27 Nov 2025 (Hebrew)"
+    }
+   ]
+  },
+  {
+   "id": "us22_families",
+   "stage": "us22",
+   "topic": "Three families: household budgets by income quintile",
+   "claims": [
+    {
+     "text": "BLS CE 2024, quintiles of income before taxes (per consumer unit, per year): third quintile income before taxes $74,474, 2.5 people, 1.4 earners, wages and salaries $55,348, self-employment $3,349, average annual expenditures $66,900 of which personal insurance and pensions $6,248, food $9,097, housing $24,093, transportation $11,657, healthcare $5,676 (health insurance $3,842), education $749; fourth quintile income $121,548, 2.9 people, 1.8 earners, wages $100,178, self-employment $5,867, expenditures $89,972 of which personal insurance and pensions $11,934, food $11,845, housing $29,374, transportation $15,952, healthcare $7,247 (health insurance $4,913), education $1,353; lowest quintile income $16,658, 1.6 people, 0.5 earners, expenditures $35,046, personal insurance and pensions $711, food $5,498, transportation $5,105, healthcare $3,445; income after taxes not published for 2024.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_ce24_q"
+     ]
+    },
+    {
+     "text": "CBS HES 2021 Table 2, deciles of households by net money income per standard person (NIS per household per month): deciles 5 and 6 gross money income 14,908 and 18,046, compulsory payments 1,310 and 1,992, net money income 13,599 and 16,054, money expenditure 10,564 and 12,024, mortgage payments (principal and interest, a savings item) 774 and 1,005, persons 3.25 and 3.21, food excl. fruit and vegetables 2,151 and 2,266, vegetables and fruit 570 and 588, health 784 and 948, education services 687 and 941, transport and communications 1,708 and 2,104; deciles 7 and 8 gross 21,618 and 26,740, compulsory 2,813 and 4,394, net 18,805 and 22,347, money expenditure 13,229 and 14,816, mortgage 1,180 and 1,256, persons 3.18 and 3.20, food 2,378 and 2,405, fruit and vegetables 591 and 635, health 954 and 1,246, education services 928 and 1,045, transport and communications 2,881 and 3,150; deciles 1 and 2 gross 4,320 and 7,070, compulsory 223 and 350, net 4,097 and 6,720, money expenditure 8,108 and 8,049, persons 3.79 and 3.26.",
+     "strength": "strong",
+     "sources": [
+      "us22_cbs_hes21_t2"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_ce24_q",
+     "url": "https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2024.xlsx",
+     "label": "US Bureau of Labor Statistics, Consumer Expenditure Survey, Table 1101: Quintiles of income before taxes, 2024"
+    },
+    {
+     "key": "us22_cbs_hes21_t2",
+     "url": "https://www.cbs.gov.il/he/publications/DocLib/2023/1924_household_income_expenditure_2021/t02.pdf",
+     "label": "Israel Central Bureau of Statistics, Household Income and Expenditure: Data from the 2021 Household Expenditure Survey, General Summary, Table 2: Monthly income and consumption expenditure in deciles of households"
+    }
+   ]
+  },
+  {
+   "id": "us22_multijobs",
+   "stage": "us22",
+   "topic": "Multiple jobholding US vs Israel",
+   "claims": [
+    {
+     "text": "US 2025 annual average (CPS): 8.800 million multiple jobholders = 5.4% of all employed (men 4.9%, women 5.9%). Definition: multiple jobholders as a percent of all employed people. BLS caveat: 2025 annual estimates are 11-month averages excluding October (no October 2025 survey) and are not strictly comparable with other years' annual averages.",
+     "strength": "strong",
+     "sources": [
+      "us22_bls_cpsaat36_25"
+     ]
+    },
+    {
+     "text": "US latest month: September 2026, 8.986 million multiple jobholders (seasonally adjusted), 5.5% of employed (SA); Aug 2026 5.4% / 8.805m; May 2026 5.2% / 8.428m.",
+     "strength": "strong",
+     "sources": [
+      "us22_fred_mjrate",
+      "us22_fred_mjlevel"
+     ]
+    },
+    {
+     "text": "Israel: no published CBS figure for the share or number of employed persons holding more than one job was found. CBS states its Labour Force Survey questionnaire (updated Jan 2018) asks the number of jobs each employed person has, and that weekly hours include hours at other workplaces, but employed persons are classified by their main job; no tabulated multiple-jobholding rate was located. No OECD/ILO dataset comparing multiple jobholding for both countries was found. NOT FOUND - do not estimate.",
+     "strength": "moderate",
+     "sources": [
+      "us22_cbs_shnaton_lab"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_bls_cpsaat36_25",
+     "url": "https://www.bls.gov/cps/cpsaat36.pdf",
+     "label": "BLS, CPS annual averages Table 36: Multiple jobholders by selected characteristics, 2025"
+    },
+    {
+     "key": "us22_fred_mjrate",
+     "url": "https://fred.stlouisfed.org/series/LNS12026620",
+     "label": "BLS via FRED, Multiple Jobholders as a Percent of Employed (LNS12026620), SA, monthly, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_mjlevel",
+     "url": "https://fred.stlouisfed.org/series/LNS12026619",
+     "label": "BLS via FRED, Multiple Jobholders (LNS12026619), thousands, SA, monthly, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_cbs_shnaton_lab",
+     "url": "https://www.cbs.gov.il/he/publications/doclib/2019/9.shnatonlabourmarket/st09_00.pdf",
+     "label": "Israel CBS, Statistical Abstract of Israel 2019, ch. 9 Labour Market, introduction/definitions"
+    }
+   ]
+  },
+  {
+   "id": "us22_hours",
+   "stage": "us22",
+   "topic": "Usual weekly hours, long hours, involuntary part-time (OECD)",
+   "claims": [
+    {
+     "text": "OECD average usual weekly hours on the main job, 2025, both sexes, all ages: Israel employees 40.2 hours (all workers incl. self-employed 40.2; full-time employees 43.3; full-time all workers 43.4; part-time employees 18.8). United States employees 38.2 hours (full-time employees 41.0; part-time employees 17.9). OECD publishes US only for employees, so the like-for-like comparison is employees: Israel 40.2 vs US 38.2 (all), 43.3 vs 41.0 (full-time). 2024: Israel employees 40.1 / full-time 43.4; US employees 38.4 / full-time 41.2. Full-time/part-time split uses OECD's common 30-usual-hours threshold.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_avgusl"
+     ]
+    },
+    {
+     "text": "OECD share of employees usually working 50+ hours/week in main job, 2025: Israel 10.4%, United States 8.9%. 2024: Israel 11.2%, US 9.2%; 2023: Israel 13.5%, US 9.5%. 60+ hours, 2025: Israel 2.5%, US 2.7%. (Israel all workers incl. self-employed 50+: 11.7% in 2025.) This is the indicator underlying the Better Life Index 'employees working very long hours'; OECD flags the dataflow as non-production.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_lnghrs"
+     ]
+    },
+    {
+     "text": "OECD Better Life Index country pages (edition year not stated) give older text: Israel 'almost 19% of employees work very long hours' vs OECD average 9%; US 'around 11%' vs OECD 9%. These differ from the 2023-2025 OECD dataset values and should not be used as current figures.",
+     "strength": "weak",
+     "sources": [
+      "us22_bli_isr",
+      "us22_bli_usa"
+     ]
+    },
+    {
+     "text": "OECD involuntary part-time employment (national part-time definitions), 2025: Israel 0.72% of total employment (3.3% of part-time employment); United States 0.81% of total employment (4.6% of part-time employment). 2023: Israel 1.0% / 4.3% of part-time; US 0.58% / 3.5% of part-time. OECD average 2025: 2.5% of employment, 12.7% of part-time employment. Caution: the OECD US series is far below BLS 'part-time for economic reasons' (which includes slack work/business conditions), so definitions are narrow and national; treat cross-country comparison as indicative only.",
+     "strength": "moderate",
+     "sources": [
+      "us22_oecd_invpt"
+     ]
+    },
+    {
+     "text": "OECD caution on annual hours: its average-annual-hours data 'are intended for comparisons of trends over time; they are unsuitable for comparisons of the level of average annual hours of work for a given year, because of differences in their sources.' Concept: total hours actually worked over the year divided by average number of people in employment.",
+     "strength": "strong",
+     "sources": [
+      "us22_oecd_annhrs_note"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_oecd_avgusl",
+     "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_HW@DF_AVG_USL_WK_WKD,1.0/ISR+USA..._T.........?startPeriod=2025&endPeriod=2025&format=jsondata",
+     "label": "OECD Data Explorer (SDMX), Average usual weekly hours worked on the main job (DSD_HW@DF_AVG_USL_WK_WKD), 2025, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_oecd_lnghrs",
+     "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_HW@DF_EMP_LNG_USL_WK_HRS,1.0/ISR+USA..._T.........?startPeriod=2023&format=jsondata",
+     "label": "OECD Data Explorer (SDMX), Incidence of employment by long usual weekly hours worked (DSD_HW@DF_EMP_LNG_USL_WK_HRS), 2023-2025, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_oecd_invpt",
+     "url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_INVPT_EMP@DF_INVPT_I,1.1/ISR+USA+OECD...._T..?startPeriod=2023&format=jsondata",
+     "label": "OECD Data Explorer (SDMX), Incidence of involuntary part time employment (DSD_INVPT_EMP@DF_INVPT_I v1.1), 2023-2025, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_oecd_annhrs_note",
+     "url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.SAE/DSD_HW@DF_AVG_ANN_HRS_WKD/latest",
+     "label": "OECD, dataflow description: Average annual hours actually worked per worker (DSD_HW@DF_AVG_ANN_HRS_WKD)"
+    },
+    {
+     "key": "us22_bli_isr",
+     "url": "https://www.oecdbetterlifeindex.org/countries/israel/",
+     "label": "OECD Better Life Index, Israel country page (accessed 21 Oct 2026; edition year not stated)"
+    },
+    {
+     "key": "us22_bli_usa",
+     "url": "https://www.oecdbetterlifeindex.org/countries/united-states/",
+     "label": "OECD Better Life Index, United States country page (accessed 21 Oct 2026; edition year not stated)"
+    }
+   ]
+  },
+  {
+   "id": "us22_debtservice",
+   "stage": "us22",
+   "topic": "Household debt service burden US vs Israel",
+   "claims": [
+    {
+     "text": "US household debt service ratio (required principal+interest on mortgage and consumer debt / disposable personal income), Q2 2026: 11.11% (Q1 2026 11.16%; Q4 2025 11.32%). Consumer (non-mortgage) DSR Q2 2026: 5.28%; mortgage DSR Q2 2026: 5.83%. Federal Reserve Board estimates, seasonally adjusted.",
+     "strength": "strong",
+     "sources": [
+      "us22_fred_tdsp",
+      "us22_fred_cdsp",
+      "us22_fred_mdsp"
+     ]
+    },
+    {
+     "text": "Israel: no aggregate household debt-service-to-disposable-income ratio was found in Bank of Israel Financial Stability Reports (H2 2024 report checked) or elsewhere; BIS DSR series do not cover Israel households. No like-for-like comparison with the US DSR exists. NOT FOUND.",
+     "strength": "moderate",
+     "sources": [
+      "us22_boi_fsr24h2"
+     ]
+    },
+    {
+     "text": "Israel, closest BoI measure (new mortgages only, not all debt): close to 42% of new mortgage borrowers pay more than 30% of income in mortgage repayments (payment-to-income, PTI), late 2024, 'over 40 percent' for the past two years. Bank of Israel caps PTI at 50%.",
+     "strength": "strong",
+     "sources": [
+      "us22_boi_fsr24h2"
+     ]
+    },
+    {
+     "text": "Israel, BoI data analyzed by State Comptroller (June 2026): share of new mortgages with PTI 30-40% rose from ~39% (Jan 2022) to ~56% (Jul 2025); high-risk new mortgages (LTV 60-75% and PTI 30-40%) ~30.8% in Jul 2025; average first monthly mortgage payment ~NIS 5,776 in mid-2025 vs ~NIS 4,200 for 2019 loans; outstanding household mortgage debt ~NIS 630bn (Jun 2025). These are new-loan flow measures, not comparable to the US stock-based DSR.",
+     "strength": "moderate",
+     "sources": [
+      "us22_mevaker_mortg26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_fred_tdsp",
+     "url": "https://fred.stlouisfed.org/series/TDSP",
+     "label": "Federal Reserve Board via FRED, Household Debt Service Payments as a Percent of Disposable Personal Income (TDSP), quarterly SA, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_cdsp",
+     "url": "https://fred.stlouisfed.org/series/CDSP",
+     "label": "Federal Reserve Board via FRED, Consumer Debt Service Payments as a Percent of Disposable Personal Income (CDSP), quarterly SA, accessed 21 Oct 2026"
+    },
+    {
+     "key": "us22_fred_mdsp",
+     "url": "https://fred.stlouisfed.org/series/MDSP",
+     "label": "Federal Reserve Board via FRED, Mortgage Debt Service Payments as a Percent of Disposable Personal Income (MDSP), updated 22 Sep 2026"
+    },
+    {
+     "key": "us22_boi_fsr24h2",
+     "url": "https://www.boi.org.il/media/slthngxe/fsr2024she.pdf",
+     "label": "Bank of Israel, Financial Stability Report, Second Half of 2024 (Feb 2025)"
+    },
+    {
+     "key": "us22_mevaker_mortg26",
+     "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2026/Economic-Report/2026-Economic-Report-201-Taktzir.pdf",
+     "label": "Israel State Comptroller, Economic Report 2026 - The Mortgage Market (summary), June 2026 (Bank of Israel data)"
+    }
+   ]
+  },
+  {
+   "id": "us22_carecost",
+   "stage": "us22",
+   "topic": "Forgoing medical care because of cost US vs Israel",
+   "claims": [
+    {
+     "text": "US: 28% of adults say that in the past 12 months they skipped or postponed health care they needed because of the cost (KFF Survey of Health Access and Caregiving, fielded May 4-26, 2026).",
+     "strength": "strong",
+     "sources": [
+      "us22_kff_costs26"
+     ]
+    },
+    {
+     "text": "US prescription cost coping, past 12 months (KFF Health Tracking Poll, Feb 24-Mar 2, 2026): 31% took an OTC drug instead of filling a prescription because of cost; 27% did not fill a prescription; 19% cut pills in half or skipped doses due to cost; 43% did at least one of these (up from 33% in 2025 and 31% in July 2023). All adults.",
+     "strength": "strong",
+     "sources": [
+      "us22_kff_costs26"
+     ]
+    },
+    {
+     "text": "Commonwealth Fund 2023 International Health Policy Survey covered 10 countries (Australia, Canada, France, Germany, Netherlands, New Zealand, Sweden, Switzerland, UK, US) - Israel NOT included, so no same-survey comparison exists. In the US, nearly half of lower/average-income adults and nearly one in three higher-income adults reported at least one cost-related access problem (skipped visit, test/treatment/follow-up, unfilled prescription or skipped doses); exact overall US figure not stated in the brief text.",
+     "strength": "moderate",
+     "sources": [
+      "us22_cmwf_ihp23"
+     ]
+    },
+    {
+     "text": "Israel: 12% of adults (22+) reported forgoing medical treatment, a consultation, or medication due to the required copayment (Myers-JDC-Brookdale 2024 population survey; telephone, Jun-Dec 2024, n=2,558, response rate 36%). Recall period not stated on the summary page (full Hebrew report S-241-25 not accessed). Not comparable in wording with KFF (copayment-specific vs. any cost; skip vs. postpone).",
+     "strength": "strong",
+     "sources": [
+      "us22_brookdale_hs24"
+     ]
+    },
+    {
+     "text": "Israel, advocacy survey (secondary report): Physicians for Human Rights Israel / GeoCartography 2026 (n=800): 42% said they gave up a needed health service or medication in the past year for any reason; cost and waiting times each cited by ~10%; low-income 55.7% vs high-income 29.8% gave up care for any reason; cost-related forgoing ~24.1% among Arab men, 12% Arab women, ~8% Jewish men and women. Reported by Israel Hayom 15 Sep 2026; primary report not checked.",
+     "strength": "weak",
+     "sources": [
+      "us22_ih_phri26"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_kff_costs26",
+     "url": "https://www.kff.org/health-costs/americans-challenges-with-health-care-costs/",
+     "label": "KFF, Americans' Challenges with Health Care Costs (updated 29 Sep 2026)"
+    },
+    {
+     "key": "us22_cmwf_ihp23",
+     "url": "https://www.commonwealthfund.org/publications/surveys/2023/nov/cost-not-getting-care-income-disparities-affordability-health",
+     "label": "Commonwealth Fund, 2023 International Health Policy Survey brief on cost-related access problems, Nov 2023"
+    },
+    {
+     "key": "us22_brookdale_hs24",
+     "url": "https://brookdale.jdc.org.il/en/publication/population_survey_on_the_level_of-service_and-health_care_system_performance_in_2024/",
+     "label": "Myers-JDC-Brookdale Institute (Laron, Fialco, Gorelik), Population Survey on the Level of Service and Health Care System Performance in 2024, publ. 2025"
+    },
+    {
+     "key": "us22_ih_phri26",
+     "url": "https://www.israelhayom.co.il/health/article/21423744",
+     "label": "Israel Hayom, 15 Sep 2026, reporting Physicians for Human Rights Israel / GeoCartography survey (n=800)"
+    }
+   ]
+  },
+  {
+   "id": "us22_fees",
+   "stage": "us22",
+   "topic": "Consumer interest and fee extraction: credit cards, overdraft, bank fees",
+   "claims": [
+    {
+     "text": "US credit cards, 2024: consumers were assessed $160 billion in interest charges (up from $105bn in 2022) and paid $31.3 billion in fees (up 23% from 2022). CFPB figures draw largely on Y-14+ large-issuer data, which CFPB says are a large portion of the market but not necessarily representative; nominal dollars.",
+     "strength": "strong",
+     "sources": [
+      "us22_cfpb_ccmr25"
+     ]
+    },
+    {
+     "text": "US bank overdraft/NSF fee revenue, latest CFPB figure: $5.83 billion in 2023 (banks with assets over $1 billion only; excludes smaller banks and credit unions), down 24% from 2022 and 51% from $11.96bn in 2019. No later CFPB total was found.",
+     "strength": "strong",
+     "sources": [
+      "us22_cfpb_od23"
+     ]
+    },
+    {
+     "text": "US overdraft, non-CFPB update: per NCLC (Jun 2026) the top 20 consumer banks earned $4 billion in overdraft fee revenue in 2025 (call reports); NCLC estimates all banks and credit unions collected ~$12.4bn in overdraft/NSF fees in 2025 (estimate extrapolated from top-20 growth; 2024 estimate $12.1bn from Financial Health Network). Different coverage from the CFPB $1bn+ bank series - do not splice.",
+     "strength": "moderate",
+     "sources": [
+      "us22_nclc_od26"
+     ]
+    },
+    {
+     "text": "Israel, 2025: fee income banks collected from households and small businesses totaled NIS 5.7 billion (NIS 5.4bn in 2024; households not separated from small businesses); average current-account management plus debit-card cost NIS 31.6 per account per month (NIS 29.1 in 2024). Credit card companies collected ~NIS 1.94 billion in fees from households and small businesses in Q1-Q3 2025 (breakdown new from Q2 2025, no 2024 comparison).",
+     "strength": "strong",
+     "sources": [
+      "us22_boi_fees25"
+     ]
+    },
+    {
+     "text": "Israel, whole banking system 2025 (all customers, not households only): interest income ~NIS 138bn (+4.2%) and fee income ~NIS 14.6bn (+10.6%), per Supervisor of Banks annual review as reported by Ynet. No Bank of Israel total for household credit card interest paid was found.",
+     "strength": "moderate",
+     "sources": [
+      "us22_ynet_sob25"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us22_cfpb_ccmr25",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2025.pdf",
+     "label": "CFPB, The Consumer Credit Card Market report, December 2025"
+    },
+    {
+     "key": "us22_cfpb_od23",
+     "url": "https://files.consumerfinance.gov/f/documents/cfpb_overdraft-nsf_data-spotlight_2024-04.pdf",
+     "label": "CFPB, Data Spotlight: Overdraft/NSF revenue in 2023 down more than 50% versus pre-pandemic levels, 24 Apr 2024"
+    },
+    {
+     "key": "us22_nclc_od26",
+     "url": "https://www.nclc.org/resources/overdraft-fees-rising-in-absence-of-cfpb-rule/",
+     "label": "National Consumer Law Center, Overdraft Fees Rising in Absence of CFPB Rule, issue brief, 3 Jun 2026"
+    },
+    {
+     "key": "us22_boi_fees25",
+     "url": "https://www.boi.org.il/publications/pressreleases/28-07-2026/",
+     "label": "Bank of Israel, Periodic report on prices of common banking services for households, 2025 (press release 28 Jul 2026)"
+    },
+    {
+     "key": "us22_ynet_sob25",
+     "url": "https://www.ynet.co.il/economy/article/b1rqqwdkfe",
+     "label": "Ynet (Gad Lior), May 2026, reporting Bank of Israel Supervisor of Banks annual review 2025"
+    }
+   ]
+  }
+ ]
+}

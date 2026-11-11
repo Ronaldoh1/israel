@@ -1,0 +1,113 @@
+flowchart TD
+
+%% ===== UPSTREAM: who built and funded him (walk backward) =====
+subgraph UP["UPSTREAM — who sent things to Epstein"]
+direction TB
+GREEN["Ace Greenberg · Bear Stearns<br/>hired 1976 ✓"]
+HOFF["Steven Hoffenberg · Towers<br/>consulting fee 1987 ✓"]
+LEESE["Douglas Leese<br/>mentor (Hoffenberg's account) ?"]
+WEX["Les Wexner<br/>power of attorney 1991 ✓"]
+BLACK["Leon Black<br/>~$158M, 2012–17 ✓"]
+USVI["USVI tax board<br/>~$300M in benefits ✓"]
+JPM["JPMorgan · Deutsche Bank<br/>banking after 2008 ✓"]
+end
+
+LEESE -.-> HOFF
+GREEN --> E
+HOFF --> E
+WEX --> E
+BLACK --> E
+USVI --> E
+JPM --> E
+
+E["JEFFREY EPSTEIN"]
+M["GHISLAINE MAXWELL<br/>paid from 1992 ✓"]
+M --> E
+
+%% ===== THE MIDDLE LAYER =====
+subgraph MID["MIDDLE LAYER — entities and administrators"]
+direction TB
+KAHN["Richard Kahn · accountant<br/>co-executor ✓"]
+INDYKE["Darren Indyke · lawyer<br/>co-executor ✓"]
+FTC["Financial Trust / Southern Trust ✓"]
+TRUST["The 1953 Trust ✓"]
+FOUND["Foundations: COUQ, Gratitude America,<br/>Enhanced Education ✓"]
+end
+
+E --> KAHN
+E --> INDYKE
+E --> FTC
+E --> TRUST
+E --> FOUND
+
+%% ===== DOWNSTREAM: who was paid to build and run it =====
+subgraph DESIGN["DESIGN AND BUILD"]
+direction TB
+RADYCA["Radyca · Ramon Alonso<br/>island redesign, Dec 2017 agreement,<br/>≥$150k, fired June 2018 ✓"]
+COUT["Robert Couturier · designer<br/>left; says he alerted FBI ✓"]
+PERMIT["USVI DPNR permits 2010–11<br/>'music pavilion' built differently ✓"]
+GENSLER["Gensler<br/>NOT FOUND — needs EFTA number ✗"]
+end
+
+E --> RADYCA
+E --> COUT
+E --> PERMIT
+E -.-> GENSLER
+
+subgraph OPS["RUNNING THE PROPERTIES"]
+direction TB
+MANUAL["LSJ Estate Manual<br/>EFTA00584804, 69 pp ✓"]
+STAFF["Household staff, managers, caretakers"]
+VEND["Vendors: power, IT, AV, security,<br/>cameras, marine, aviation"]
+EXP["2004 Household Operating<br/>Expenditure Report — needs EFTA number ?"]
+end
+
+E --> MANUAL
+MANUAL --> STAFF
+MANUAL --> VEND
+KAHN --> EXP
+
+subgraph PROPS["PROPERTIES"]
+direction TB
+LSJ["Little St. James<br/>bought 1998, $7.95M ✓"]
+GSJ["Great St. James<br/>2016, $22.5M via front ✓"]
+NY["9 East 71st Street ✓"]
+PB["Palm Beach, El Brillo Way ✓"]
+ZR["Zorro Ranch, NM ✓"]
+PAR["Paris, Avenue Foch ✓"]
+end
+
+E --> LSJ
+E --> GSJ
+E --> NY
+E --> PB
+E --> ZR
+E --> PAR
+
+%% ===== WHERE THE MONEY TRAIL ENDS =====
+subgraph END["ACCOUNTABILITY ENDPOINTS"]
+direction TB
+SAR["JPMorgan SARs > $1B flagged ✓"]
+DFS["Deutsche Bank $150M NYDFS fine ✓"]
+SETTLE["Kahn & Indyke class settlement<br/>$25–35M, Feb 2026, no admission ✓"]
+OPEN["Withheld: vendor invoices, wire records,<br/>bids, NDAs ?"]
+end
+
+JPM --> SAR
+JPM --> DFS
+KAHN --> SETTLE
+INDYKE --> SETTLE
+VEND --> OPEN
+
+classDef core fill:#594117,stroke:#FFC700,color:#fff
+classDef up fill:#182D4B,stroke:#8BA9D6,color:#fff
+classDef mid fill:#49336A,stroke:#C69AFF,color:#fff
+classDef down fill:#174B50,stroke:#54C7B5,color:#fff
+classDef bad fill:#5a1e1e,stroke:#FF6B6B,color:#fff
+classDef open fill:#45351D,stroke:#D9A441,color:#fff
+class E,M core
+class GREEN,HOFF,LEESE,WEX,BLACK,USVI,JPM up
+class KAHN,INDYKE,FTC,TRUST,FOUND mid
+class RADYCA,COUT,PERMIT,MANUAL,STAFF,VEND,LSJ,GSJ,NY,PB,ZR,PAR down
+class GENSLER bad
+class EXP,OPEN,SAR,DFS,SETTLE open

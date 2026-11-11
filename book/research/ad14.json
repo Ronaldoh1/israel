@@ -1,0 +1,462 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad14_povline",
+   "stage": "ad14",
+   "topic": "Poverty line: Orshansky, SPM, ALICE, guidelines, full-income critique",
+   "claims": [
+    {
+     "text": "Mollie Orshansky of the Social Security Administration developed the thresholds in 1963-64 (published January 1965 Social Security Bulletin), from the USDA economy food plan, which USDA described as 'designed for temporary or emergency use when funds are low'; multiplier 3 for families of 3+ (3.7 for two-person), from the 1955 Household Food Consumption Survey (food about one-third of after-tax income); OEO adopted May 1965; Bureau of the Budget made them the official statistical definition August 1969 and switched indexing to the CPI; 1981 removed farm and sex-of-head distinctions (124 to 48 thresholds); NAS panel May 1995 'Measuring Poverty: A New Approach'",
+     "strength": "primary",
+     "sources": [
+      "ad14_aspe_history"
+     ]
+    },
+    {
+     "text": "P60-290: official measure thresholds are 'Three times the cost of a minimum food diet in 1963'; SPM 13.1% in 2025, 2.9 points above the official+ rate of 10.2%; not statistically different from 2024; SPM children 13.4%, 65+ 15.4%; Social Security lifted 28.8m out of SPM poverty (-8.5 points); refundable tax credits 6.1m incl. 3.3m children (-1.8 points); medical expenses pushed 7.7m into poverty (+2.3 points); median work expenses $42/week; SPM thresholds set at 82% of median spending on food, clothing, shelter, utilities, telephone, internet, 5-year average of CE data, adjusted for housing tenure and local housing costs; Figure 4 labels 2009 SPM 15.1, official+ 14.4; all SPM estimates 2019-2024 use revised BLS thresholds of 17 July 2026",
+     "strength": "primary",
+     "sources": [
+      "ad14_census_p60290pdf"
+     ]
+    },
+    {
+     "text": "SPM 2019 11.8%, 2021 7.8%, 2022 12.4% (as first published)",
+     "strength": "primary",
+     "sources": [
+      "ad14_census_spm2022"
+     ]
+    },
+    {
+     "text": "P60-283 figure: SPM 2023 12.9%, official 2023 11.1%; 2009 SPM 15.1%, official 14.4% (labels)",
+     "strength": "primary",
+     "sources": [
+      "ad14_census_fig2023"
+     ]
+    },
+    {
+     "text": "Census correction: errors in imputations of in-kind benefits in SPM thresholds; corrected 2019-2023 rates 0.1-0.3 points lower than first published; 2024 marginally higher at 12.9-13.0%; thresholds rebased to 82% of median expenditures from 83%",
+     "strength": "primary",
+     "sources": [
+      "ad14_census_spmrevise"
+     ]
+    },
+    {
+     "text": "Census: official measure 'remained mostly unchanged since it was introduced in the mid-1960s'; updated by CPI-U; gross pre-tax cash income; ignores in-kind benefits, tax credits and regional cost differences; SPM developed after 2010 interagency working group drawing on the 1995 NAS report; National Academies April 2023 report 'An Updated Measure of Poverty: (Re)Drawing the Line'",
+     "strength": "primary",
+     "sources": [
+      "ad14_census_compare"
+     ]
+    },
+    {
+     "text": "ALICE (Asset Limited, Income Constrained, Employed), 2024 data: 131,939,401 households; 16,495,052 (13%) below the Federal Poverty Level; 38,027,832 (29%) ALICE; 54,522,884 (41%) below the ALICE Threshold; Household Survival Budget costs housing, child care, food, transportation, health care, technology for every county",
+     "strength": "reported",
+     "sources": [
+      "ad14_alice_national"
+     ]
+    },
+    {
+     "text": "HHS 2026 poverty guidelines, 48 contiguous states: 1 person $15,960; 2 $21,640; 3 $27,320; 4 $33,000",
+     "strength": "primary",
+     "sources": [
+      "ad14_hhs_guide2026"
+     ]
+    },
+    {
+     "text": "Burkhauser et al.: official poverty 19.5% (1963) to 10.5% (2019); absolute full-income poverty 19.5% to 1.6% (2019); relative full-income poverty 19.5% to 16.0%; attribute to doubled real median income and transfers/tax benefits not counted officially",
+     "strength": "reported",
+     "sources": [
+      "ad14_nber_fpm"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad14_aspe_history",
+     "url": "https://aspe.hhs.gov/history-poverty-thresholds",
+     "label": "Gordon M. Fisher, HHS ASPE, 'The Development and History of the Poverty Thresholds' (history page)"
+    },
+    {
+     "key": "ad14_census_p60290pdf",
+     "url": "https://www2.census.gov/library/publications/2026/demo/p60-290.pdf",
+     "label": "US Census Bureau, 'Poverty in the United States: 2025', P60-290 (PDF), September 2026"
+    },
+    {
+     "key": "ad14_census_spm2022",
+     "url": "https://www.census.gov/library/stories/2023/09/supplemental-poverty-measure.html",
+     "label": "US Census Bureau, 'Poverty Measure That Includes Government Assistance Increased to 12.4% in 2022, When Pandemic Relief Ended', September 2023"
+    },
+    {
+     "key": "ad14_census_fig2023",
+     "url": "https://census.gov/content/dam/Census/library/visualizations/2024/demo/p60-283/figure6.pdf",
+     "label": "US Census Bureau, P60-283 figure (official and SPM rates 2009-2023), September 2024"
+    },
+    {
+     "key": "ad14_census_spmrevise",
+     "url": "https://www.census.gov/library/working-papers/2026/demo/sehsd-wp2026-17.html",
+     "label": "US Census Bureau working paper SEHSD-WP2026-17, 'Revising Supplemental Poverty Measure Estimates from 2019 to 2024', 2026"
+    },
+    {
+     "key": "ad14_census_compare",
+     "url": "https://www.census.gov/newsroom/blogs/random-samplings/2026/09/comparing-poverty-measures.html",
+     "label": "US Census Bureau, Random Samplings blog, 'Comparing Poverty Measures', September 2026"
+    },
+    {
+     "key": "ad14_alice_national",
+     "url": "https://unitedforalice.org/national-overview",
+     "label": "United For ALICE (United Way), 'National Overview' (2024 data), accessed October 2026"
+    },
+    {
+     "key": "ad14_hhs_guide2026",
+     "url": "https://laborfiles.delaware.gov/main/dvr/publications/2026_Poverty_Guideline.pdf",
+     "label": "Delaware Division of Vocational Rehabilitation, '2026 Poverty Guideline' (HHS/ASPE 2026 poverty guidelines table)"
+    },
+    {
+     "key": "ad14_nber_fpm",
+     "url": "https://nber.org/papers/w26532",
+     "label": "Burkhauser, Corinth, Elwell and Larrimore, 'Evaluating the Success of the War on Poverty since 1963 Using an Absolute Full-Income Poverty Measure', NBER w26532 (2019, rev. 2021); Journal of Political Economy 132(1), 2024"
+    }
+   ]
+  },
+  {
+   "id": "ad14_justice",
+   "stage": "ad14",
+   "topic": "Criminal-legal costs: incarceration, bail, fines and fees, phones, commissary, labour, records, child support",
+   "claims": [
+    {
+     "text": "WPB trend (rate per 100k incl. jails): 1980 503,586 (220); 1985 744,208 (311); 1990 1,148,702 (457); 1995 1,585,586 (592); 2000 1,937,482 (683); 2008 2,307,504 (755); 2010 (731); 2014 (693); 2018 (642); 2020 1,674,200 (505); 2022 1,808,100 (541); 2023 1,833,700 (542) of which local jails 664,200, state 1,013,500, federal 156,000; pre-trial 25.5% (467,600)",
+     "strength": "primary",
+     "sources": [
+      "ad14_wpb_trend"
+     ]
+    },
+    {
+     "text": "Commercial bail: nonrefundable premium usually about 10% of the bond, collateral; about $2bn a year in premiums; sureties paid less than 1% in bail losses (Mother Jones review of 32 sureties); only the US and the Philippines have commercial bail; uncollected forfeitures e.g. Dallas County at least $35m",
+     "strength": "reported",
+     "sources": [
+      "ad14_ppi_bail"
+     ]
+    },
+    {
+     "text": "Illinois ended cash bail 18 September 2023 (Pretrial Fairness Act); Loyola first-year review: jail populations down about 14% (Cook and collar counties) and 25% (rural); failure to appear 22.8% vs 25.1% (21 counties); reported crime down 11% H1 2024 vs H1 2023, with authors noting crime fell everywhere",
+     "strength": "reported",
+     "sources": [
+      "ad14_loyola_il"
+     ]
+    },
+    {
+     "text": "Bearden v. Georgia (24 May 1983, O'Connor): court may not revoke probation for nonpayment without inquiring into the reasons; if the person cannot pay despite bona fide efforts, alternatives must be considered; 'it is fundamentally unfair to revoke probation automatically'",
+     "strength": "primary",
+     "sources": [
+      "ad14_bearden"
+     ]
+    },
+    {
+     "text": "DOJ Ferguson findings: fines and fees about 13% of the municipal budget 2012, budgeted 23% FY2015; 90,000 citations and summonses 2010-2014 in a city of 21,000; City Manager: the City cannot afford 'any decrease in our Fines and Forfeitures'",
+     "strength": "reported",
+     "sources": [
+      "ad14_ffjc_ferguson"
+     ]
+    },
+    {
+     "text": "California AB 1869 (2020) repealed 23 criminal administrative fees effective 1 July 2021, with $65m to backfill counties",
+     "strength": "reported",
+     "sources": [
+      "ad14_ffjc_ab1869"
+     ]
+    },
+    {
+     "text": "FCC adopted the 2024 IPCS order in July 2024 under the Martha Wright-Reed Act, lowering per-minute caps, capping video, banning site commissions; on 30 June 2025 the Wireline Competition Bureau waived compliance deadlines from 1 April 2026 to 1 April 2027",
+     "strength": "reported",
+     "sources": [
+      "ad14_filter_fcc"
+     ]
+    },
+    {
+     "text": "Oct 2025 FCC order raised interim audio caps per minute: prisons $0.06 to $0.11; large jails $0.06 to $0.10; medium $0.07 to $0.12; small $0.09 to $0.13; very small $0.12 to $0.15; extremely small $0.19; video prisons $0.16 to $0.25; site-commission ban retained; safety and security costs included in caps",
+     "strength": "reported",
+     "sources": [
+      "ad14_ppi_fcc2025"
+     ]
+    },
+    {
+     "text": "FCC DA 26-319 (3 April 2026): 2025 IPCS Order FCC 25-75 adopted 28 October 2025, published 5 December 2025, compliance date 6 April 2026; Securus granted waiver for video per-minute pricing to 6 July 2026",
+     "strength": "primary",
+     "sources": [
+      "ad14_fcc_da26319"
+     ]
+    },
+    {
+     "text": "PPI commissary (May 2018): average annual commissary spending $1,121 (IL), $1,207 (MA), $513 (WA), three-state average $947; typical prison job pays $180-$660 a year; a $1.87 pack of floss takes over 13 hours of work at 14 cents an hour in Massachusetts",
+     "strength": "reported",
+     "sources": [
+      "ad14_ppi_commissary"
+     ]
+    },
+    {
+     "text": "ACLU/GHRC Captive Labor (15 June 2022): about 800,000 incarcerated workers (65%); at least $2bn goods and $9bn prison maintenance services a year; average non-industry wages 15 to 52 cents an hour; Alabama, Arkansas, Florida, Georgia, Mississippi, South Carolina, Texas pay nothing for most jobs; over 80% do maintenance; up to 80% of pay withheld; 20 states have similar constitutional exception clauses",
+     "strength": "reported",
+     "sources": [
+      "ad14_aclu_labor"
+     ]
+    },
+    {
+     "text": "Brennan Center (15 Sept 2020): imprisonment reduces annual earnings by up to 51.7%; lifetime losses after imprisonment as a young adult $267,000 (white), $358,900 (Black), $511,500 (Latino); aggregate $372.3bn a year for people with a conviction or prison time ($55.2bn for formerly imprisoned); at least 7m have been in prison; 45m have a misdemeanor conviction, losing 16% of annual earnings",
+     "strength": "reported",
+     "sources": [
+      "ad14_brennan_earnings"
+     ]
+    },
+    {
+     "text": "Pager Milwaukee audit: callbacks white no record 34%, white with record 17%, Black no record 14%, Black with record 5%",
+     "strength": "reported",
+     "sources": [
+      "ad14_epi_pager"
+     ]
+    },
+    {
+     "text": "Agan and Starr: about 15,000 applications in NYC and NJ; applicants without records got 63% more callbacks; white-Black callback gap about 7% before Ban the Box, 45% after among affected employers; mechanism: statistical discrimination",
+     "strength": "reported",
+     "sources": [
+      "ad14_umich_agan"
+     ]
+    },
+    {
+     "text": "ASPE July 2020: about 20% of inmates have child support orders; average parent enters prison with about $10,000 in arrears and leaves with about $20,000 (NCSL 2019); as of July 2019 at least 9 states/territories treated incarceration as voluntary unemployment; the 2016 modernization rule prohibits that",
+     "strength": "reported",
+     "sources": [
+      "ad14_aspe_childsupport"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad14_wpb_trend",
+     "url": "https://prisonstudies.org/country/united-states-america",
+     "label": "World Prison Brief (ICPR, Birkbeck), 'United States of America', prison population trend 1980-2023 (BJS data, incl. local jails)"
+    },
+    {
+     "key": "ad14_ppi_bail",
+     "url": "https://www.prisonpolicy.org/reports/bail.html",
+     "label": "Wendy Sawyer, Prison Policy Initiative, 'All profit, no risk: How the bail industry exploits the legal system', October 2022"
+    },
+    {
+     "key": "ad14_loyola_il",
+     "url": "https://www.dailyherald.com/20240926/news/whats-happened-to-crime-rates-court-skipping-since-cash-bail-went-away/",
+     "label": "Daily Herald, 'What's happened to crime rates, court-skipping since cash bail went away', 26 September 2024 (Loyola University Chicago Center for Criminal Justice report)"
+    },
+    {
+     "key": "ad14_bearden",
+     "url": "https://www.law.cornell.edu/supremecourt/text/461/660",
+     "label": "Bearden v. Georgia, 461 U.S. 660 (24 May 1983), Cornell LII"
+    },
+    {
+     "key": "ad14_ffjc_ferguson",
+     "url": "https://finesandfeesjusticecenter.org/research-tools/investigation-ferguson-police-department/",
+     "label": "Fines and Fees Justice Center summary of US DOJ Civil Rights Division, 'Investigation of the Ferguson Police Department', March 2015"
+    },
+    {
+     "key": "ad14_ffjc_ab1869",
+     "url": "https://finesandfeesjusticecenter.org/articles/california-ab-1869-criminal-fees",
+     "label": "Fines and Fees Justice Center, 'California AB 1869: Criminal fees' (enacted 2020)"
+    },
+    {
+     "key": "ad14_filter_fcc",
+     "url": "https://filtermag.org/fcc-price-caps-incarcerated-peoples-communication-services/",
+     "label": "Kastalia Medrano, Filter, 'FCC Begins Quietly Backing Off From Phone Call Price Caps in Prisons, Jails', July 2025"
+    },
+    {
+     "key": "ad14_ppi_fcc2025",
+     "url": "https://www.prisonpolicy.org/blog/2025/10/30/fcc-new-caps/",
+     "label": "Prison Policy Initiative, 'Bowing to pressure from jails and companies, FCC raises phone rate caps', 30 October 2025"
+    },
+    {
+     "key": "ad14_fcc_da26319",
+     "url": "https://docs.fcc.gov/public/attachments/DA-26-319A1.pdf",
+     "label": "FCC Wireline Competition Bureau, Order DA 26-319 (Securus waiver), 3 April 2026"
+    },
+    {
+     "key": "ad14_ppi_commissary",
+     "url": "https://www.prisonpolicy.org/reports/commissary.html",
+     "label": "Stephen Raher, Prison Policy Initiative, 'The Company Store: A deeper look at prison commissaries', May 2018"
+    },
+    {
+     "key": "ad14_aclu_labor",
+     "url": "https://www.aclu.org/press-releases/new-aclughrc-report-finds-widespread-coercion-and-exploitation-incarcerated-workers",
+     "label": "ACLU and University of Chicago Global Human Rights Clinic, 'Captive Labor' press release, 15 June 2022"
+    },
+    {
+     "key": "ad14_brennan_earnings",
+     "url": "https://www.brennancenter.org/es/node/8634",
+     "label": "Terry-Ann Craigie and Ames Grawert, Brennan Center for Justice, 'Conviction, Imprisonment, and Lost Earnings', 15 September 2020"
+    },
+    {
+     "key": "ad14_epi_pager",
+     "url": "https://www.epi.org/publication/webfeatures_snapshots_archive_09172003/",
+     "label": "Economic Policy Institute, Economic Snapshot on Devah Pager's 'The Mark of a Criminal Record' (Milwaukee), 17 September 2003"
+    },
+    {
+     "key": "ad14_umich_agan",
+     "url": "https://news.umich.edu/ban-the-box-leads-to-increase-in-employer-racial-discrimination",
+     "label": "University of Michigan News, ''Ban the Box' leads to increase in employer racial discrimination' (Agan and Starr), 15 June 2016"
+    },
+    {
+     "key": "ad14_aspe_childsupport",
+     "url": "https://aspe.hhs.gov/sites/default/files/migrated_legacy_files/195476/cs-cj-issue-brief.pdf",
+     "label": "HHS ASPE (Aharpour, Ochoa, Stein, Zukiewicz), 'Child Support and Criminal Justice' issue brief, July 2020"
+    }
+   ]
+  },
+  {
+   "id": "ad14_homeless",
+   "stage": "ad14",
+   "topic": "Homelessness: HUD 2025 count, Grants Pass, 2025 executive order, CoC litigation, Housing First evidence",
+   "claims": [
+    {
+     "text": "HUD (29 May 2026): Jan 2025 PIT 745,652 homeless, 266,320 unsheltered, down 3% from 2024, up 27% since 2013; unsheltered up 36% and chronic up 81% since 2013; release attributes decline to 'decreases in Sanctuary Cities'; Turner: 'the status quo of housing first has failed to meaningfully reduce homelessness'; 2013-2025 taxpayer-funded beds up 151%, CoC spending up 111%; 1,456,923 homeless or in homeless-funded housing",
+     "strength": "primary",
+     "sources": [
+      "ad14_hud_pit2025"
+     ]
+    },
+    {
+     "text": "Grants Pass v. Johnson (28 June 2024, 6-3, Gorsuch): Eighth Amendment does not bar enforcement of general public-camping laws; Grants Pass ordinance: civil fines, then bans and short jail terms for repeat violations; Gorsuch: 'Homelessness is complex. Its causes are many.'; Sotomayor dissent (Kagan, Jackson): 'unconscionable and unconstitutional'",
+     "strength": "reported",
+     "sources": [
+      "ad14_ncc_grantspass"
+     ]
+    },
+    {
+     "text": "EO 'Ending Crime and Disorder on America's Streets' (24 July 2025): ends federal support for Housing First, prioritises treatment, HUD to condition participation on treatment; promotes civil commitment; SAMHSA not to fund harm reduction or safe consumption; grants to favour jurisdictions that enforce bans on open drug use, urban camping, loitering, squatting",
+     "strength": "reported",
+     "sources": [
+      "ad14_hma_eo"
+     ]
+    },
+    {
+     "text": "FY2025 CoC NOFO (13 Nov 2025) capped permanent supportive housing at 30% (PSH about 87% of CoC spending) and tier 1 at 30% (from about 90%); sued by 21 state AGs and local governments; HUD withdrew it 8 Dec 2025; under injunction restored prior-year competition; Consolidated Appropriations Act 2026 (3 Feb 2026, sec. 244) directed renewals of expiring projects",
+     "strength": "reported",
+     "sources": [
+      "ad14_naco_coc"
+     ]
+    },
+    {
+     "text": "CRS 18 Sept 2026: FY2026 CoC NOFO released 1 June 2026, modified 24 July 2026; tier 1 60% of annual renewal demand; $1.3bn of $4.04bn set aside for new transitional housing and supportive-services-only projects; points for treatment and recovery and for requiring participation in services; court vacated NOFO 7 Aug 2026 under APA; HUD appealed 13 Aug; First Circuit panel stayed vacatur 16 Sept 2026",
+     "strength": "primary",
+     "sources": [
+      "ad14_crs_coc2026"
+     ]
+    },
+    {
+     "text": "NACo: case National Alliance to End Homelessness v. HUD; court found the $1.3bn set-aside and criteria requiring adherence to executive orders unlawful; after the 16 Sept stay HUD reinstated the NOFO with a 30 Sept 2026 deadline",
+     "strength": "reported",
+     "sources": [
+      "ad14_naco_vacate"
+     ]
+    },
+    {
+     "text": "J-PAL review: At Home/Chez Soi Housing First participants stably housed 73% of two years vs 32%; HUD-VASH housed in 35 vs 223 days; health effects unclear; substance-use outcomes similar to treatment-first; cost largely offset by savings, evidence limited",
+     "strength": "reported",
+     "sources": [
+      "ad14_jpal_hf"
+     ]
+    },
+    {
+     "text": "NASEM 2018: 'the committee found no substantial evidence that PSH contributes to improved health outcomes' (limited data for HIV/AIDS); 'PSH increases an individual's ability to remain housed'; more cost-effectiveness research needed",
+     "strength": "primary",
+     "sources": [
+      "ad14_nasem_psh"
+     ]
+    },
+    {
+     "text": "Colburn and Aldern (2022): mental illness, drug use, poverty, weather, generosity of assistance do not explain regional variation in homelessness; housing market conditions, such as the cost and availability of rental housing, offer a far more convincing account",
+     "strength": "reported",
+     "sources": [
+      "ad14_ucp_colburn"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad14_hud_pit2025",
+     "url": "https://www.hud.gov/news/hud-no-26-037",
+     "label": "HUD, news release HUD No. 26-037, 2025 AHAR Part 1 Point-in-Time Estimates, 29 May 2026"
+    },
+    {
+     "key": "ad14_ncc_grantspass",
+     "url": "https://constitutioncenter.org/blog/supreme-court-upholds-ordinances-regulating-public-homeless-encampments",
+     "label": "National Constitution Center, 'Supreme Court upholds ordinances regulating public homeless encampments', 28 June 2024"
+    },
+    {
+     "key": "ad14_hma_eo",
+     "url": "https://www.healthmanagement.com/blog/executive-order-addressing-homelessness-the-federal-shift-toward-institutionalization/",
+     "label": "Health Management Associates, 'Executive Order Addressing Homelessness: The Federal Shift Toward Institutionalization' (summary of EO 'Ending Crime and Disorder on America's Streets', 24 July 2025)"
+    },
+    {
+     "key": "ad14_naco_coc",
+     "url": "https://www.naco.org/news/litigation-delays-new-funding-congress-directs-hud-renew-expired-continuum-care-projects",
+     "label": "National Association of Counties, 'As Litigation Delays New Funding, Congress Directs HUD to Renew Expired Continuum of Care Projects', 4 February 2026"
+    },
+    {
+     "key": "ad14_crs_coc2026",
+     "url": "https://www.everycrsreport.com/files/2026-09-18_IN12709_0955e2327c158a22f774a854854a58c5620c2c96.html",
+     "label": "Congressional Research Service, 'HUD's FY2026 Continuum of Care Program Competition', IN12709, 18 September 2026"
+    },
+    {
+     "key": "ad14_naco_vacate",
+     "url": "https://www.naco.org/news/court-vacates-fy-2026-continuum-care-grant-changes",
+     "label": "National Association of Counties, 'Court vacates FY 2026 Continuum of Care grant changes', August 2026 (with later updates)"
+    },
+    {
+     "key": "ad14_jpal_hf",
+     "url": "https://www.povertyactionlab.org/sites/default/files/publication/Housing%20First_Final.pdf",
+     "label": "J-PAL North America (Kate Christie), 'Housing First' evidence review"
+    },
+    {
+     "key": "ad14_nasem_psh",
+     "url": "https://www.nationalacademies.org/read/25133/chapter/11",
+     "label": "National Academies of Sciences, Engineering, and Medicine, 'Permanent Supportive Housing: Evaluating the Evidence for Improving Health Outcomes Among People Experiencing Chronic Homelessness' (2018), ch. 8"
+    },
+    {
+     "key": "ad14_ucp_colburn",
+     "url": "https://www.ucpress.edu/books/homelessness-is-a-housing-problem/epub-pdf",
+     "label": "Gregg Colburn and Clayton Page Aldern, 'Homelessness Is a Housing Problem' (University of California Press, March 2022), publisher's description"
+    }
+   ]
+  },
+  {
+   "id": "ad14_audit",
+   "stage": "ad14",
+   "topic": "Audit additions for Part Fourteen (Oct 2026)",
+   "claims": [
+    {
+     "text": "Loyola first-year review (21 counties): failure to appear for non-detainable felonies rose from 28.1% to 31%; overall fell 25.1% to 22.8%; authors called FTA changes 'minimal'; violent crime -7%, property -14% (H1 2024 vs H1 2023); share still held three days after arrest fell from 33% to 9%",
+     "strength": "reported",
+     "sources": [
+      "ad14_audit_dh_fta"
+     ]
+    },
+    {
+     "text": "WPB trend (audit re-fetch 22 Oct 2026): 2002 2,033,022 (703 per 100k); 2004 2,135,335 (725); 2006 2,258,792 (752); 2012 2,228,424 (707); 2016 2,157,800 (666)",
+     "strength": "primary",
+     "sources": [
+      "ad14_wpb_trend"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad14_audit_dh_fta",
+     "url": "https://www.dailyherald.com/20240926/news/whats-happened-to-crime-rates-court-skipping-since-cash-bail-went-away/",
+     "label": "Daily Herald, 'What's happened to crime rates, court-skipping since cash bail went away', 26 September 2024 (Loyola University Chicago Center for Criminal Justice report)"
+    },
+    {
+     "key": "ad14_wpb_trend",
+     "url": "https://prisonstudies.org/country/united-states-america",
+     "label": "World Prison Brief (ICPR, Birkbeck), 'United States of America', prison population trend 1980-2023 (BJS data, incl. local jails)"
+    }
+   ]
+  }
+ ]
+}

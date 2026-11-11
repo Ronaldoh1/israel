@@ -1,0 +1,13 @@
+{
+ "id": "al-06-gary-palmer",
+ "cites": {},
+ "checklist": {
+  "fara": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "legal": "Not done. CourtListener is blocked for this tool, Justia was not reached, Alacourt is paywalled, and no news search for lawsuits or charges was possible (the shared web-search budget ran out). House Ethics and OCC/OCE pages were not fetched. Nothing turned up in the Wikipedia, Ballotpedia, Reflector or BirminghamWatch material reviewed. UPDATE 2026-10-08 (ethics): ethics.house.gov could not be opened (fetch refused), so the House Ethics/OCE item is 'news'. Wikipedia's article lists no lawsuits or formal House Ethics/OCE matters. It notes two controversies that are not ethics findings: FTX-linked contributions reported by CoinDesk in Feb. 2023, with no response from his office on what was done with the funds, and the 2021 Northern Beltline earmark/vote criticism. Reflector and BirminghamWatch 2026 coverage mention no ethics matter. CourtListener/Justia still not searched, so courts stays 'no'. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Gary Palmer congressman Alabama sued court case') turned up no reporting of any civil or criminal case naming Gary Palmer as a party, so courts is 'news' (searched, nothing found). The only lawsuit that surfaced is one he joined as a plaintiff (House Republicans' 2020 challenge to proxy voting), which is not a legal finding against him.",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. 2025 House annual report lists no foreign assets or income."
+ },
+ "research_notes": "Ethics stays 'news' (ethics.house.gov unreachable)."
+}

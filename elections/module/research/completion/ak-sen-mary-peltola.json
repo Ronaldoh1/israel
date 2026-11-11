@@ -1,0 +1,83 @@
+{
+ "id": "ak-sen-mary-peltola",
+ "cites": {
+  "pfd_t2025": {
+   "t": "Financial Disclosure Report, Terminated Filer 2025, Hon. Mary Peltola — Clerk of the U.S. House (2025-03-10)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10063340.pdf"
+  },
+  "pfd_2023": {
+   "t": "Financial Disclosure Report, Annual 2023, Hon. Mary Peltola — Clerk of the U.S. House (2024-08-02)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2023/10060548.pdf"
+  },
+  "apm_qa22": {
+   "t": "Just answers: Alaska's US House candidates on the election of President Biden — Alaska Public Media (2022-07-07)",
+   "u": "https://alaskapublic.org/news/2022-07-07/just-answers-alaskas-us-house-candidates-on-the-election-of-president-biden"
+  },
+  "apm_nrsc": {
+   "t": "GOP group complains Peltola spent campaign money while mum about running for office — Alaska Public Media (2026-03-30)",
+   "u": "https://alaskapublic.org/news/politics/washington-d-c/2026-03-30/gop-group-complains-peltola-spent-campaign-money-while-mum-about-running-for-office"
+  },
+  "kyuk_suit": {
+   "t": "Peltola sues guiding service involved in late husband's plane crash for wrongful death — KYUK (2025-07-21)",
+   "u": "https://www.kyuk.org/public-safety/2025-07-21/peltola-sues-guiding-service-involved-in-late-husbands-plane-crash-for-wrongful-death"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "ethics": "news",
+  "disclosures": "done",
+  "democracy": "news"
+ },
+ "checks": {
+  "legal": "CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly. News searches found no charges or suits against her and no House Ethics or OCE matter. Pending: an NRSC complaint to the FEC (Mar. 2026) alleging personal use of 2025 House-committee funds on meals and travel (over $100,000); her campaign calls it a false attack; the FEC lacks a quorum, so it is unresolved. A complaint is not a finding and is not entered under legal. She is the plaintiff (not defendant) in a July 2025 Bethel Superior Court wrongful-death suit over her husband's crash.",
+  "foreign": "House 2023 annual and 2025 termination reports read directly: no foreign assets or income. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate.",
+  "claims": "Campaign 'My Story' and issues pages (marypeltola.com/story/, /affordability/) could not be opened (fetch refused). Bio sample = every checkable claim in her 2026 Official Election Pamphlet statement (6 rated). Issues sample = the 'Fixing the Rigged System' plan page (4 proposals, none checkable as facts; the 'millions of dark money dollars' line is opinion). Ads: 'pushed through the largest pay increase' (FactCheck.org, most-covered #1) and the September 2026 energy rollout claims reported by Fox News (#2). Also rated: her campaign's claims about Sullivan's trawl money and stock trading and her own no-stocks claim. The text of her first TV ad (May 19, $300K buy) was not found.",
+  "democracy": "Not in Congress for the 2017 or 2021 counts (records profile: no votes); served during the Jan. 6, 2025 count, at which no objection was voted on. Statement: July 2022 Alaska Public Media Q&A. Her Oct. 2024 debate coverage (Alaska Beacon) has no 2020 remark from her."
+ },
+ "democracy": [
+  {
+   "kind": "statement",
+   "d": "2022-07-07",
+   "t": "Said there is 'no question that Joe Biden won the 2020 presidential election fair and square.'",
+   "c": [
+    "apm_qa22"
+   ]
+  }
+ ],
+ "finances": {
+  "networth": null,
+  "trades": {
+   "count": 0,
+   "period": "2022–2025 House tenure",
+   "overlap": [],
+   "c": [
+    "ksenmarypeltola_current_0827"
+   ],
+   "note": "The Alaska Current says she reported no trades while in office."
+  },
+  "note": {
+   "t": "Terminated-filer report (filed Mar. 10, 2025, covering 2024 to departure): assets $61,005–$215,000 plus an Alaska Permanent Fund dividend of undetermined value — a dependent child's Alaska 529 plan ($15K–$50K), a Novagold USA retirement plan invested in the Dodge & Cox Global Bond Fund ($15K–$50K), two State of Alaska retirement funds ($15K–$50K each) and a rollover IRA in FDIC cash ($1K–$15K). No individual stocks, no transactions, no earned income listed, no outside positions, no gifts or travel. Liabilities $260,001–$515,000: a LoanDepot mortgage on her Bethel home (Apr. 2021, $250K–$500K) and a Wells Fargo credit card (Jan. 2025, $10K–$15K). Agreements: State of Alaska pension and a Novagold USA retirement plan from her former employer (no longer contributing). The personal residence need not be listed, so net worth is not computed. No foreign assets or foreign income; the global bond fund is a U.S. mutual fund. The 2023 annual report (filed Aug. 2, 2024) is similar and notes her late spouse's interests were removed. Annual reports for 2022 and 2023 were filed in August of the following year after extension requests. In July 2025 she sued a hunting guide and his companies in Bethel Superior Court over her husband's fatal crash (she is plaintiff).",
+   "c": [
+    "pfd_t2025",
+    "pfd_2023",
+    "kyuk_suit"
+   ]
+  },
+  "assets_range": {
+   "min": 61005,
+   "max": 215000,
+   "c": [
+    "pfd_t2025"
+   ]
+  },
+  "liabilities_range": {
+   "min": 260001,
+   "max": 515000,
+   "c": [
+    "pfd_t2025"
+   ]
+  }
+ },
+ "research_notes": "Disclosure timeliness: annual reports filed after extensions (Aug. 2023, Aug. 2024). Senate-candidate (2026) disclosure not read (eFD unreachable). NRSC FEC complaint pending."
+}

@@ -1,0 +1,703 @@
+"""Canonical nodes for the 1948 network (The Baseline + The Road to 1948).
+Each line: id | name | kind | cluster | aliases (regex, ';'-separated; case-sensitive).
+Kinds: person, institution, company, government, document, event.
+Only actors, institutions, documents and events: no ethnic or religious group is ever a node
+(ties come from documents, never identity). Historians and outlets cited as sources are not nodes."""
+
+RAW = r"""
+# ---------- the Zionist movement ----------
+herzl|Theodor Herzl|person|zionist movement|Theodor Herzl;Herzl
+weizmann|Chaim Weizmann|person|zionist movement|Chaim Weizmann;Weizmann
+sokolow|Nahum Sokolow|person|zionist movement|Nahum Sokolow;Sokolow
+wolffsohn|David Wolffsohn|person|zionist movement|David Wolffsohn;Wolffsohn
+nordau|Max Nordau|person|zionist movement|Max Nordau;Nordau
+bengurion|David Ben-Gurion|person|zionist movement|David Ben-Gurion;Ben-Gurion;Ben Gurion
+jabotinsky|Ze'ev Jabotinsky|person|zionist movement|Ze'ev Jabotinsky;Ze’ev Jabotinsky;Vladimir Jabotinsky;Jabotinsky
+ahadhaam|Ahad Ha'am|person|zionist movement|Ahad Ha'am;Ahad Ha’am;Asher Ginsberg
+pinsker|Leon Pinsker|person|zionist movement|Leon Pinsker;Pinsker
+hess|Moses Hess|person|zionist movement|Moses Hess
+alkalai|Yehuda Alkalai|person|zionist movement|Alkalai
+kalischer|Zvi Hirsch Kalischer|person|zionist movement|Kalischer
+birnbaum|Nathan Birnbaum|person|zionist movement|Nathan Birnbaum;Birnbaum
+zangwill|Israel Zangwill|person|zionist movement|Israel Zangwill;Zangwill
+ruppin|Arthur Ruppin|person|zionist movement|Arthur Ruppin;Ruppin
+hankin|Yehoshua Hankin|person|zionist movement|Yehoshua Hankin;Hankin
+arlosoroff|Chaim Arlosoroff|person|zionist movement|Chaim Arlosoroff;Arlosoroff
+sharett|Moshe Sharett|person|zionist movement|Moshe Sharett;Moshe Shertok;Sharett;Shertok
+meir|Golda Meir|person|zionist movement|Golda Meir;Golda Meyerson;Golda Myerson;Meyerson
+goldmann|Nahum Goldmann|person|zionist movement|Nahum Goldmann;Goldmann
+benzvi|Yitzhak Ben-Zvi|person|zionist movement|Yitzhak Ben-Zvi;Ben-Zvi
+begin|Menachem Begin|person|militias|Menachem Begin;Begin(?!ning|s\b)
+dayan|Moshe Dayan|person|militias|Moshe Dayan;Dayan
+allon|Yigal Allon|person|militias|Yigal Allon;Allon
+rabin|Yitzhak Rabin|person|militias|Yitzhak Rabin;Rabin
+magnes|Judah Magnes|person|zionist movement|Judah Magnes;Judah L. Magnes;Magnes
+buber|Martin Buber|person|zionist movement|Martin Buber;Buber
+rutenberg|Pinhas Rutenberg|person|finance|Pinhas Rutenberg;Rutenberg
+thon|Jacob Thon|person|zionist movement|Jacob Thon
+kahn_j|Jacobus Kahn|person|finance|Jacobus Kahn
+warburg_o|Otto Warburg|person|zionist movement|Otto Warburg
+wzo|World Zionist Organization|institution|zionist movement|World Zionist Organization;Zionist Organization(?! of America);WZO
+congress1897|First Zionist Congress (Basel, 1897)|event|zionist movement|First Zionist Congress;Basel Congress;Zionist Congress of 1897;Basel Program;Basel Programme
+zionist_congress|Zionist Congress|institution|zionist movement|(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Twelfth|\d+th) Zionist Congress;Zionist Congress(?:es)?(?! of 1897);(?:Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Twelfth|Twentieth|Twenty-\w+) Congress@rd1;(?:Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Twelfth) Congress@rd0
+actions_comm|Zionist Actions Committees|institution|zionist movement|Actions Committee;Zionist General Council
+jewish_agency|Jewish Agency|institution|zionist movement|Jewish Agency
+yishuv|Yishuv institutions (Va'ad Leumi)|institution|zionist movement|Va'ad Leumi;Vaad Leumi;National Council of the Yishuv
+palestine_office|Palestine Office (Jaffa)|institution|zionist movement|Palestine Office
+efz|English Zionist Federation|institution|zionist movement|English Zionist Federation
+fedam|Federation of American Zionists|institution|us lobby|Federation of American Zionists
+zoa|Zionist Organization of America|institution|us lobby|Zionist Organization of America;ZOA
+hadassah|Hadassah|institution|us lobby|Hadassah
+azec|American Zionist Emergency Council|institution|us lobby|American Zionist Emergency Council;AZEC;Emergency Committee for Zionist Affairs;American Zionist Emergency Committee
+azcpa|American Zionist Committee for Public Affairs (later AIPAC)|institution|us lobby|American Zionist Committee for Public Affairs;AIPAC;American Israel Public Affairs Committee
+apc|American Palestine Committee|institution|us lobby|American Palestine Committee
+ccp|Christian Council on Palestine|institution|us lobby|Christian Council on Palestine
+uja|United Jewish Appeal|institution|us lobby|United Jewish Appeal;UJA
+upa|United Palestine Appeal|institution|us lobby|United Palestine Appeal
+jdc|American Jewish Joint Distribution Committee|institution|us lobby|Joint Distribution Committee;\bJDC\b;the Joint\b
+ajc|American Jewish Committee|institution|us lobby|American Jewish Committee
+sonneborn_inst|Sonneborn Institute|institution|militias|Sonneborn Institute
+biltmore|Biltmore Program (1942)|document|zionist movement|Biltmore Program;Biltmore Conference;Biltmore
+ito|Jewish Territorial Organization|institution|zionist movement|Jewish Territorial Organization;\bITO\b
+mizrachi|Mizrachi movement|institution|zionist movement|Mizrachi(?! Jews)
+revisionists|Revisionist Zionist movement|institution|zionist movement|Revisionist Zionis[mt];New Zionist Organization;Revisionist movement;Revisionist party
+betar|Betar|institution|militias|Betar
+histadrut|Histadrut|institution|zionist movement|Histadrut;General Federation of Hebrew Workers
+solel_boneh|Solel Boneh|company|finance|Solel Boneh
+mapai|Mapai|institution|zionist movement|Mapai
+brit_shalom|Brit Shalom|institution|zionist movement|Brit Shalom
+hebrew_univ|Hebrew University|institution|zionist movement|Hebrew University
+bilu|BILU|institution|zionist movement|\bBILU\b
+hovevei|Hovevei Zion (Lovers of Zion)|institution|zionist movement|Hovevei Zion;Hibbat Zion;Lovers of Zion
+derjudenstaat|Der Judenstaat (1896)|document|zionist movement|Der Judenstaat;The Jewish State\b
+autoemancipation|Auto-Emancipation (1882)|document|zionist movement|Auto-Emancipation;Autoemancipation
+# ---------- finance and land ----------
+jct|Jewish Colonial Trust|company|finance|Jewish Colonial Trust
+apc_bank|Anglo-Palestine Company (Bank Leumi)|company|finance|Anglo-Palestine Company;Anglo-Palestine Bank;Bank Leumi
+jnf|Jewish National Fund|institution|finance|Jewish National Fund;\bJNF\b;Keren Kayemeth
+keren_hayesod|Keren Hayesod|institution|finance|Keren Hayesod
+pldc|Palestine Land Development Company|company|finance|Palestine Land Development Company;Palestine Land Development Co\.;\bPLDC\b
+jca|Jewish Colonization Association|institution|finance|Jewish Colonization Association;\bJCA\b;\bICA\b
+pica|Palestine Jewish Colonization Association (PICA)|institution|finance|Palestine Jewish Colonization Association;\bPICA\b
+haavara|Haavara Agreement (1933)|document|finance|Haavara
+pec|Palestine Electric Corporation|company|finance|Palestine Electric Corporation;Jaffa Electric Company;Rutenberg concession
+sursock|Sursock family|company|land|Sursock
+hirsch|Baron Maurice de Hirsch|person|finance|Maurice de Hirsch;Baron de Hirsch;Baron Maurice;Hirsch(?!feld)
+montefiore|Moses Montefiore|person|finance|Moses Montefiore;Montefiore
+feinberg|Abraham Feinberg|person|us lobby|Abraham Feinberg;Feinberg@rd4;Feinberg@rd5;Feinberg@rd6
+sonneborn|Rudolf Sonneborn|person|militias|Rudolf Sonneborn;Sonneborn(?! Institute)
+montor|Henry Montor|person|us lobby|Henry Montor;Montor
+schwimmer|Al Schwimmer|person|militias|Al Schwimmer;Adolph Schwimmer;Schwimmer
+warburg_f|Felix Warburg|person|finance|Felix Warburg
+warburg_p|Paul Warburg|person|finance|Paul Warburg
+schiff|Jacob Schiff|person|finance|Jacob Schiff;Schiff
+# ---------- Rothschild family (documented individuals and firms only) ----------
+mayer_amschel|Mayer Amschel Rothschild|person|rothschild|Mayer Amschel Rothschild;Mayer Amschel
+nathan_r|Nathan Mayer Rothschild|person|rothschild|Nathan Mayer Rothschild;Nathan Rothschild;Nathan Mayer
+james_mayer|James Mayer de Rothschild|person|rothschild|James Mayer de Rothschild;James Mayer
+lionel_r|Lionel de Rothschild|person|rothschild|Lionel de Rothschild;Lionel
+natty|Nathan "Natty" Rothschild, 1st Baron|person|rothschild|Natty;1st Baron Rothschild;Lord Rothschild@rd1
+walter_r|Walter Rothschild, 2nd Baron|person|rothschild|Walter Rothschild;Lord Walter Rothschild;Lord Rothschild@rd2;Lionel Walter
+edmond_r|Edmond de Rothschild|person|rothschild|Edmond de Rothschild;Baron Edmond;Edmond(?! Safra)
+james_armand|James Armand de Rothschild|person|rothschild|James Armand;James de Rothschild@rd2;James de Rothschild@rd3;James de Rothschild@rd5;James de Rothschild@rd6
+nm_rothschild|N M Rothschild & Sons|company|rothschild|N M Rothschild;N\. M\. Rothschild;NM Rothschild
+rothschild_freres|de Rothschild Frères|company|rothschild|de Rothschild Frères;Rothschild Frères
+torlonia|Torlonia bank|company|finance|Torlonia
+# ---------- British state ----------
+uk|British Government|government|british state|British government;British Government;His Majesty's Government;HM Government;Whitehall
+war_cabinet|British War Cabinet|government|british state|War Cabinet
+colonial_office|Colonial Office|government|british state|Colonial Office
+foreign_office|Foreign Office|government|british state|Foreign Office
+parliament|British Parliament|government|british state|House of Commons;House of Lords;Parliament
+mandate_admin|British Mandate administration|government|british state|Mandate government;Mandatory government;Mandate administration;Mandatory administration;Palestine government
+city_london|City of London Corporation|government|british state|City of London;Remembrancer
+balfour|Arthur Balfour|person|british state|Arthur Balfour;Arthur James Balfour;Lord Balfour;Balfour(?! Declaration)
+lloydgeorge|David Lloyd George|person|british state|Lloyd George
+churchill|Winston Churchill|person|british state|Winston Churchill;Churchill(?! White Paper)
+samuel|Herbert Samuel|person|british state|Herbert Samuel;Sir Herbert
+montagu|Edwin Montagu|person|british state|Edwin Montagu;Montagu
+chamberlain_j|Joseph Chamberlain|person|british state|Joseph Chamberlain
+chamberlain_n|Neville Chamberlain|person|british state|Neville Chamberlain
+sykes|Mark Sykes|person|british state|Mark Sykes;Sykes(?!-Picot)
+mcmahon|Henry McMahon|person|british state|Henry McMahon;McMahon(?!-Hussein| correspondence)
+allenby|Edmund Allenby|person|british state|Allenby
+storrs|Ronald Storrs|person|british state|Ronald Storrs;Storrs
+bevin|Ernest Bevin|person|british state|Ernest Bevin;Bevin
+attlee|Clement Attlee|person|british state|Clement Attlee;Attlee
+wingate|Orde Wingate|person|militias|Orde Wingate;Wingate
+palmerston|Lord Palmerston|person|british state|Palmerston
+shaftesbury|Lord Shaftesbury|person|british state|Shaftesbury
+disraeli|Benjamin Disraeli|person|british state|Disraeli
+cromer|Lord Cromer|person|british state|Cromer
+peel|Peel Commission (1937)|institution|british state|Peel Commission;Peel Report;Peel(?! Street)
+shaw|Shaw Commission (1930)|institution|british state|Shaw Commission;Shaw Report
+hopesimpson|Hope Simpson Report (1930)|document|british state|Hope Simpson;Hope-Simpson
+woodhead|Woodhead Commission (1938)|institution|british state|Woodhead
+wp1922|Churchill White Paper (1922)|document|british state|Churchill White Paper;1922 White Paper
+wp1930|Passfield White Paper (1930)|document|british state|Passfield
+wp1939|White Paper of 1939|document|british state|1939 White Paper;White Paper of 1939;MacDonald White Paper;White Paper(?! of 1922)
+bank_england|Bank of England|company|british state|Bank of England
+jewish_legion|Jewish Legion / Zion Mule Corps|institution|militias|Jewish Legion;Zion Mule Corps;Royal Fusiliers
+# ---------- documents and international decisions ----------
+balfour_decl|Balfour Declaration (1917)|document|international|Balfour Declaration
+sykes_picot|Sykes-Picot Agreement (1916)|document|international|Sykes-Picot;Sykes–Picot
+mcmahon_corr|Hussein-McMahon Correspondence (1915-16)|document|international|McMahon[- ]Hussein;Hussein[- ]McMahon;McMahon correspondence
+faisal_weizmann|Faisal-Weizmann Agreement (1919)|document|international|Faisal[- –]Weizmann
+san_remo|San Remo Conference (1920)|event|international|San Remo
+mandate|Mandate for Palestine (1922)|document|international|Mandate for Palestine;Palestine Mandate;British Mandate;the Mandate\b;Article 4 of the Mandate
+league|League of Nations|institution|international|League of Nations;Permanent Mandates Commission;League Council
+covenant22|League Covenant, Article 22|document|international|Article 22
+paris_conf|Paris Peace Conference (1919)|event|international|Paris Peace Conference;Peace Conference
+king_crane|King-Crane Commission (1919)|institution|international|King[- –]Crane
+lausanne|Lausanne Conference (1949)|event|international|Lausanne
+un|United Nations|institution|international|United Nations(?! Special| General| Relief| Security| Conciliation);\bUN\b(?! General| Security| Conciliation)
+unga|UN General Assembly|institution|international|General Assembly
+unsc|UN Security Council|institution|international|Security Council
+unscop|UNSCOP|institution|international|UNSCOP;United Nations Special Committee
+res181|UN Resolution 181 (Partition Plan)|document|international|Resolution 181;Partition Plan;partition resolution
+res194|UN Resolution 194|document|international|Resolution 194
+unrwa|UNRWA|institution|international|UNRWA
+ccp_un|UN Conciliation Commission for Palestine|institution|international|Conciliation Commission
+bernadotte|Folke Bernadotte|person|international|Folke Bernadotte;Count Bernadotte;Bernadotte
+bunche|Ralph Bunche|person|international|Ralph Bunche;Bunche
+anglo_am|Anglo-American Committee of Inquiry (1946)|institution|international|Anglo-American Committee
+armistice49|1949 Armistice Agreements|document|international|Armistice Agreements?;armistice agreements?;Rhodes
+decl_indep|Israeli Declaration of Independence (1948)|document|israel state|Declaration of Independence;Declaration of the Establishment
+law_return|Law of Return (1950)|document|israel state|Law of Return
+absentees|Absentees' Property Law (1950)|document|israel state|Absentees' Property Law;Absentees’ Property Law;Absentee Property Law
+provisional|Provisional Government of Israel|government|israel state|Provisional Government;Provisional State Council;Provisional Council of State;People's Council
+idf|Israel Defense Forces|institution|militias|Israel Defense Forces;\bIDF\b
+knesset|Knesset|government|israel state|Knesset
+israel_gov|Government of Israel|government|israel state|Israeli government;Government of Israel;government of Israel;Israeli cabinet
+plan_dalet|Plan Dalet (1948)|document|militias|Plan Dalet;Plan D\b
+# ---------- militias ----------
+haganah|Haganah|institution|militias|Haganah
+palmach|Palmach|institution|militias|Palmach
+irgun|Irgun|institution|militias|Irgun;Etzel
+lehi|Lehi (Stern Gang)|institution|militias|Lehi;Stern Gang;Stern Group
+mossad_aliyah|Mossad LeAliyah Bet|institution|militias|Mossad LeAliyah Bet;Aliyah Bet
+brihah|Brihah|institution|militias|Brihah;Bricha
+nili|NILI|institution|militias|\bNILI\b
+hashomer|Hashomer|institution|militias|Hashomer
+rekhesh|Rekhesh (arms procurement)|institution|militias|Rekhesh
+balak|Operation Balak (Czech arms airlift)|event|militias|Operation Balak;Balak
+deir_yassin|Deir Yassin killings (April 1948)|event|1948 war|Deir Yassin
+king_david|King David Hotel bombing (1946)|event|militias|King David Hotel
+altalena|Altalena affair (1948)|event|militias|Altalena
+lydda|Lydda and Ramle expulsions (July 1948)|event|1948 war|Lydda;Lod\b;Ramle;Ramla
+tantura|Tantura (1948)|event|1948 war|Tantura
+kafr_qasim|Kafr Qasim massacre (1956)|event|israel state|Kafr Qasim
+# ---------- Ottoman ----------
+ottoman|Ottoman Empire|government|ottoman|Ottoman Empire;Ottoman government;Sublime Porte;the Porte;Ottoman state
+abdulhamid|Sultan Abdul Hamid II|person|ottoman|Abdul Hamid II;Abdülhamid;Abdul Hamid
+land_code|Ottoman Land Code (1858)|document|ottoman|Ottoman Land Code;Land Code;1858 Land Law
+mutasarrif|Mutasarrifate of Jerusalem|government|ottoman|Mutasarrifate
+jamal_pasha|Jamal Pasha|person|ottoman|Jamal Pasha;Djemal Pasha
+capitulations|Capitulations|document|ottoman|Capitulations
+# ---------- Arab and Palestinian leadership ----------
+husseini_amin|Hajj Amin al-Husseini|person|arab leadership|Hajj Amin al-Husseini;Hajj Amin al-Husayni;Amin al-Husseini;Amin al-Husayni;Hajj Amin;the Mufti;Grand Mufti
+musa_kazim|Musa Kazim al-Husseini|person|arab leadership|Musa Kazim
+jamal_h|Jamal al-Husseini|person|arab leadership|Jamal al-Husseini;Jamal al-Husayni
+abd_qadir|Abd al-Qadir al-Husayni|person|arab leadership|Abd al-Qadir al-Husayni;Abd al-Qadir al-Husseini;Abd al-Qadir
+nashashibi_r|Raghib al-Nashashibi|person|arab leadership|Raghib al-Nashashibi;Raghib Nashashibi;Nashashibi
+ruhi_khalidi|Ruhi al-Khalidi|person|arab leadership|Ruhi al-Khalidi
+yusuf_khalidi|Yusuf Diya al-Khalidi|person|arab leadership|Yusuf Diya al-Khalidi;Yusuf Diya
+awni|Awni Abd al-Hadi|person|arab leadership|Awni Abd al-Hadi;Awni
+qassam|Izz al-Din al-Qassam|person|arab leadership|Izz al-Din al-Qassam;al-Qassam;Qassam
+ahc|Arab Higher Committee|institution|arab leadership|Arab Higher Committee
+smc|Supreme Muslim Council|institution|arab leadership|Supreme Muslim Council
+arab_exec|Arab Executive|institution|arab leadership|Arab Executive
+arab_congress|Palestine Arab Congress|institution|arab leadership|Palestine Arab Congress;Arab Congress;(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh) Congress@rd2;(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh) Congress@rd3
+pal_arab_deleg|Palestine Arab Delegation|institution|arab leadership|Palestine Arab Delegation
+all_pal_gov|All-Palestine Government|government|arab leadership|All-Palestine Government
+army_holy_war|Army of the Holy War|institution|arab leadership|Army of (?:the )?Holy War
+filastin|Filastin (newspaper)|company|arab leadership|Filastin
+alkarmil|al-Karmil (newspaper)|company|arab leadership|al-Karmil
+revolt36|Arab Revolt (1936-39)|event|arab leadership|Arab Revolt;1936[–-]39 revolt;Great Revolt
+# ---------- Arab states and leaders ----------
+hussein_sharif|Sharif Hussein of Mecca|person|arab states|Sharif Hussein;Hussein bin Ali;Sharif of Mecca
+faisal|Emir Faisal|person|arab states|Emir Faisal;Faisal(?![- –]Weizmann)
+abdullah|King Abdullah I of Transjordan|person|arab states|Emir Abdullah;King Abdullah;Abdullah
+ibn_saud|Ibn Saud|person|arab states|Ibn Saud;King Abdulaziz
+transjordan|Transjordan / Jordan|government|arab states|Transjordan;Hashemite Kingdom
+arab_legion|Arab Legion|institution|arab states|Arab Legion
+glubb|John Bagot Glubb|person|arab states|Glubb
+arab_league|Arab League|institution|arab states|Arab League
+ala|Arab Liberation Army|institution|arab states|Arab Liberation Army
+egypt|Egypt (government)|government|arab states|Egyptian government;Egypt(?:ian)? (?:army|forces)
+iraq|Iraq (government)|government|arab states|Iraqi government;Iraqi (?:army|forces)
+syria|Syria (government)|government|arab states|Syrian government;Syrian (?:army|forces)
+zaim|Husni al-Za'im|person|arab states|Husni al-Za'im;Za'im;Za’im
+farhud|Farhud (Baghdad, 1941)|event|arab states|Farhud
+nasser|Gamal Abdel Nasser|person|arab states|Nasser
+# ---------- United States ----------
+us_gov|US Government|government|us government|US government;U\.S\. government;United States government;American government
+white_house|White House|government|us government|White House
+state_dept|State Department|government|us government|State Department;Department of State
+jcs|Joint Chiefs of Staff|government|us government|Joint Chiefs
+pentagon|War / Defense Department|government|us government|War Department;Defense Department;Pentagon;Department of Defense
+cia|CIA|government|us government|\bCIA\b;Central Intelligence Agency
+oss|OSS|government|us government|\bOSS\b;Office of Strategic Services
+fbi|FBI|government|us government|\bFBI\b
+doj|Justice Department|government|us government|Justice Department;Department of Justice
+us_congress|US Congress|government|us government|US Congress;U\.S\. Congress;United States Congress;American Congress;House of Representatives;Senate Foreign Relations;the Senate\b;Congress(?! of| Committee|ional Research)@rd4;Congress(?! of| Committee|ional Research)@rd5;Congress(?! of| Committee|ional Research)@rd6
+exim|Export-Import Bank|government|us government|Export-Import Bank
+fara|Foreign Agents Registration Act|document|us government|Foreign Agents Registration Act;\bFARA\b
+fdr|Franklin D. Roosevelt|person|us government|Franklin Roosevelt;Franklin D\. Roosevelt;FDR;President Roosevelt;(?<!Kermit )(?<!Theodore )(?<!Eleanor )Roosevelt(?! Jr)
+truman|Harry Truman|person|us government|Harry Truman;Harry S\. Truman;Truman
+wilson|Woodrow Wilson|person|us government|Woodrow Wilson;President Wilson;Wilson
+marshall_g|George Marshall|person|us government|George Marshall;George C\. Marshall;Secretary Marshall;Marshall(?! Plan)@rd5;Marshall@rd6
+forrestal|James Forrestal|person|us government|James Forrestal;Forrestal
+lovett|Robert Lovett|person|us government|Robert Lovett;Lovett
+henderson|Loy Henderson|person|us government|Loy Henderson;Henderson@rd5
+clifford|Clark Clifford|person|us government|Clark Clifford;Clifford
+niles|David Niles|person|us government|David Niles;Niles
+jacobson|Eddie Jacobson|person|us lobby|Eddie Jacobson;Jacobson
+stimson|Henry Stimson|person|us government|Henry Stimson;Stimson
+wallace|Henry Wallace|person|us government|Henry Wallace;Wallace
+kermit|Kermit Roosevelt Jr.|person|us government|Kermit Roosevelt
+taft|Robert Taft|person|us government|Robert Taft;Taft
+wagner|Robert Wagner|person|us government|Robert Wagner;Senator Wagner
+bloom|Sol Bloom|person|us government|Sol Bloom
+brandeis|Louis Brandeis|person|us lobby|Louis Brandeis;Brandeis
+wise|Stephen Wise|person|us lobby|Stephen Wise;Stephen S\. Wise;Rabbi Wise
+silver|Abba Hillel Silver|person|us lobby|Abba Hillel Silver;Hillel Silver;Rabbi Silver;Silver@rd4;Silver@rd5
+neumann|Emanuel Neumann|person|us lobby|Emanuel Neumann;Neumann
+bergson|Peter Bergson (Hillel Kook)|person|us lobby|Peter Bergson;Hillel Kook;Bergson Group;Bergson
+kenen|Isaiah Kenen|person|us lobby|Isaiah Kenen;Si Kenen;Kenen
+einstein|Albert Einstein|person|us lobby|Albert Einstein;Einstein
+blackstone|William Blackstone|person|christian zionism|William Blackstone;Blackstone Memorial;Blackstone
+scofield|Cyrus Scofield / Scofield Reference Bible|document|christian zionism|Scofield
+darby|John Nelson Darby|person|christian zionism|John Nelson Darby;Darby
+# ---------- Europe / Germany / USSR ----------
+nazi_germany|Nazi Germany|government|nazi germany|Nazi Germany;Nazi government;Third Reich;Reich
+hitler|Adolf Hitler|person|nazi germany|Adolf Hitler;Hitler
+eichmann|Adolf Eichmann|person|nazi germany|Adolf Eichmann;Eichmann
+heydrich|Reinhard Heydrich|person|nazi germany|Reinhard Heydrich;Heydrich
+wannsee|Wannsee Conference (1942)|event|nazi germany|Wannsee
+nuremberg_laws|Nuremberg Laws (1935)|document|nazi germany|Nuremberg Laws
+evian|Évian Conference (1938)|event|international|Évian;Evian
+kaiser|Kaiser Wilhelm II|person|europe|Kaiser Wilhelm;Wilhelm II;the Kaiser
+plehve|Vyacheslav von Plehve|person|europe|Plehve
+russia_imp|Imperial Russia|government|europe|Imperial Russia;Russian Empire;Tsarist;tsarist government
+kishinev|Kishinev pogrom (1903)|event|europe|Kishinev
+dreyfus|Dreyfus Affair|event|europe|Dreyfus
+marr|Wilhelm Marr|person|europe|Wilhelm Marr;Marr\b
+ussr|Soviet Union|government|soviet bloc|Soviet Union;USSR;Soviet government;Moscow
+stalin|Joseph Stalin|person|soviet bloc|Stalin
+gromyko|Andrei Gromyko|person|soviet bloc|Andrei Gromyko;Gromyko
+czechoslovakia|Czechoslovakia (arms supplier)|government|soviet bloc|Czechoslovakia;Czechoslovak government
+france_gov|French Government|government|europe|French government;France(?:'s)? government
+napoleon|Napoleon Bonaparte|person|europe|Napoleon(?!ic)
+# ---------- religious institutions and dissent ----------
+vatican|Holy See / Vatican|government|religion|Holy See;Vatican;Papal States
+pius10|Pope Pius X|person|religion|Pius X\b
+pius12|Pope Pius XII|person|religion|Pius XII
+gregory16|Pope Gregory XVI|person|religion|Gregory XVI
+bund|Jewish Labor Bund|institution|religion|Jewish Labor Bund;\bBund\b
+reform|Reform Judaism (Pittsburgh Platform, 1885)|institution|religion|Pittsburgh Platform;Reform Judaism;Reform movement
+acj|American Council for Judaism|institution|religion|American Council for Judaism
+agudah|Agudat Israel|institution|religion|Agudat Israel;Agudath Israel;Agudah
+neturei|Neturei Karta|institution|religion|Neturei Karta
+satmar|Satmar / Joel Teitelbaum|person|religion|Satmar;Teitelbaum;Vayoel Moshe;VaYoel Moshe
+dehaan|Jacob Israel de Haan|person|religion|Jacob Israel de Haan;Jacob de Haan;de Haan;De Haan
+kook|Rav Abraham Isaac Kook|person|religion|Rav Kook;Abraham Isaac Kook
+# ---------- 1948 war and after ----------
+nakba|Nakba / 1948 displacement|event|1948 war|Nakba
+transfer_comm|Transfer Committee (1948)|institution|1948 war|Transfer Committee
+military_gov|Military Government over Arab citizens (1948-66)|government|israel state|military government@rd6;military rule@rd6;Military Government@rd6
+custodian|Custodian of Absentee Property|government|israel state|Custodian of Absentee Property;Custodian
+ezra_nehemiah|Operation Ezra and Nehemiah (1950-51)|event|israel state|Ezra and Nehemiah;Operation Ezra
+magic_carpet|Operation Magic Carpet (1949-50)|event|israel state|Magic Carpet;On Eagles' Wings
+yachin|Operation Yachin (1961-64)|event|israel state|Operation Yachin;Yachin
+yemenite_affair|Yemenite Children Affair|event|israel state|Yemenite Children
+
+# ---------- colonies and Rothschild institutions (added Nov 2026) ----------
+rishon|Rishon LeZion (colony, 1882)|place|settlement|Rishon LeZion;Rishon Lezion;Rishon le-Zion
+zikhron|Zikhron Ya'akov (colony, 1882)|place|settlement|Zikhron Ya'akov;Zichron Ya'akov;Zikhron Yaakov
+rosh_pinna|Rosh Pinna (colony, 1882)|place|settlement|Rosh Pinna
+mazkeret|Mazkeret Batya (colony, 1883)|place|settlement|Mazkeret Batya
+ekron|Ekron (colony, 1884)|place|settlement|Ekron@rd0;Ekron@ch01
+metulla|Metulla (colony, 1896)|place|settlement|Metulla
+mikveh|Mikveh Israel (agricultural school, 1870)|place|settlement|Mikveh Israel
+mohilever|Rabbi Samuel Mohilever|person|zionist movement|Samuel Mohilever;Mohilever
+dorothy|Dorothy de Rothschild|person|rothschild|Dorothy de Rothschild;Dorothy
+yad_hanadiv|Yad Hanadiv (Rothschild charities in Israel)|institution|rothschild|Yad Hanadiv
+ramat_hanadiv|Ramat HaNadiv (memorial and burial site)|place|rothschild|Ramat HaNadiv;Ramat Hanadiv
+morgenthau|Henry Morgenthau Sr.|person|us government|Henry Morgenthau(?!,? Jr)
+
+# ---------- American layer: organizations, intelligence, parties, money (added Nov 2026) ----------
+shiloah|Reuven Shiloah (Zaslani)|person|intelligence|Reuven Shiloah;Reuven Zaslani;Shiloah;Zaslani
+mossad|Mossad (founded 1949-51)|government|intelligence|\bMossad\b(?![ -]?[Ll]e)
+ja_political|Jewish Agency Political Department|institution|intelligence|Jewish Agency's Political Department;Political Department of the Jewish Agency
+kollek|Teddy Kollek|person|militias|Teddy Kollek;Kollek
+hotel14|Hotel Fourteen (14 East 60th Street, New York)|place|militias|Hotel Fourteen
+arazi|Yehuda Arazi|person|militias|Yehuda Arazi;Arazi
+lansky|Meyer Lansky|person|militias|Meyer Lansky;Lansky
+mickey_cohen|Mickey Cohen|person|militias|Mickey Cohen
+siegel|Bugsy Siegel|person|militias|Bugsy Siegel;Benjamin Siegel
+dafni|Reuven Dafni|person|militias|Reuven Dafni
+americans_haganah|Americans for Haganah, Inc.|institution|us lobby|Americans for Haganah
+voorhis|Voorhis Act|document|us government|Voorhis Act
+neutrality|US Neutrality Acts|document|us government|Neutrality Acts?
+hoover|J. Edgar Hoover|person|us government|J\. Edgar Hoover;Edgar Hoover
+angleton|James Jesus Angleton|person|us government|James Jesus Angleton;James Angleton;Angleton
+dnc|Democratic National Committee|institution|us parties|Democratic National Committee;\bDNC\b
+conv1944|1944 Democratic National Convention|event|us parties|1944 Democratic (?:National )?[Cc]onvention
+hannegan|Robert Hannegan|person|us parties|Robert Hannegan;Hannegan
+pauley|Edwin Pauley|person|us parties|Edwin Pauley;Pauley
+flynn_e|Edward J. Flynn|person|us parties|Edward J\. Flynn;Ed Flynn
+walker_f|Frank C. Walker|person|us parties|Frank C\. Walker
+kelly_e|Edward J. Kelly (Mayor of Chicago)|person|us parties|Edward J\. Kelly
+allen_g|George E. Allen|person|us parties|George E\. Allen
+byrnes|James F. Byrnes|person|us government|James F\. Byrnes;James Byrnes;Byrnes
+kennan|George Kennan|person|us government|George Kennan;George F\. Kennan;Kennan
+pps|State Department Policy Planning Staff|government|us government|Policy Planning Staff
+pps_palestine|Policy Planning Staff report on Palestine (19 Jan 1948)|document|us government|PPS/19
+mcclintock|Robert McClintock|person|us government|Robert McClintock;McClintock
+connelly|Matthew Connelly|person|us government|Matthew Connelly
+may12|White House meeting on Palestine (12 May 1948)|event|us government|meeting of 12 May 1948
+recognition48|US recognition of Israel (14 May 1948)|event|us government|de facto recognition
+fdr_letter45|Roosevelt letter to Ibn Saud (5 Apr 1945)|document|us government|letter of 5 April 1945
+partition_notes|Truman administration notes on the partition vote (Nov 1947)|document|us government|notes on the partition vote
+liberia|Liberia (government)|government|international|Liberian government;Liberian delegation
+haiti|Haiti (government)|government|international|Haitian government;Haitian delegation
+philippines|Philippines (government)|government|international|Philippine government;Philippine delegation
+cuba|Cuba (government)|government|international|Cuban government;Cuban delegation
+greece|Greece (government)|government|international|Greek government;Greek delegation
+lansing|Robert Lansing|person|us government|Robert Lansing;Lansing
+lansing_letter|Lansing letter to Wilson on Palestine (Dec 1917)|document|us government|Lansing's letter
+frankfurter|Felix Frankfurter|person|us lobby|Felix Frankfurter;Frankfurter
+faisal_frankfurter|Faisal-Frankfurter letter (3 Mar 1919)|document|international|Faisal[- –]Frankfurter;Feisal[- –]Frankfurter
+gottheil|Richard Gottheil|person|us lobby|Richard Gottheil;Gottheil
+pec_zionist|Provisional Executive Committee for General Zionist Affairs|institution|us lobby|Provisional Executive Committee
+acpc|American Christian Palestine Committee|institution|christian zionism|American Christian Palestine Committee
+azc|American Zionist Council|institution|us lobby|American Zionist Council
+louis_marshall|Louis Marshall|person|us lobby|Louis Marshall
+ajrc|American Jewish Relief Committee (1914)|institution|us lobby|American Jewish Relief Committee
+technion|Technion (Haifa)|institution|zionist movement|Technion
+belmont|August Belmont|person|finance|August Belmont
+belmont_co|August Belmont & Co.|company|finance|Belmont & Co
+josephs|J.L. & S.I. Joseph & Co.|company|finance|J\.L\. (?:and|&) S\.I\. Joseph
+morgan|J. P. Morgan|person|finance|J\. ?P\. Morgan(?! &)(?! and Co);Pierpont Morgan
+jpm_co|J.P. Morgan & Co.|company|finance|J\. ?P\. Morgan (?:&|and) Co
+gold1895|Morgan-Belmont gold contract (8 Feb 1895)|document|finance|Morgan[- –]Belmont
+cleveland|Grover Cleveland|person|us government|Grover Cleveland
+treasury|US Treasury|government|us government|US Treasury;U\.S\. Treasury;Treasury Department
+jekyll|Jekyll Island meeting (Nov 1910)|event|finance|Jekyll Island
+aldrich|Nelson Aldrich|person|us government|Nelson Aldrich;Senator Aldrich
+piatt_andrew|A. Piatt Andrew|person|us government|Piatt Andrew
+davison|Henry P. Davison|person|finance|Henry P\. Davison;Henry Davison
+vanderlip|Frank Vanderlip|person|finance|Frank Vanderlip;Vanderlip
+national_city|National City Bank|company|finance|National City Bank
+kuhn_loeb|Kuhn, Loeb & Co.|company|finance|Kuhn,? Loeb
+aldrich_plan|Aldrich Plan (1911)|document|finance|Aldrich Plan
+fed_act|Federal Reserve Act (Dec 1913)|document|finance|Federal Reserve Act
+fed|Federal Reserve System|government|finance|Federal Reserve(?! Act)
+glass|Carter Glass|person|us government|Carter Glass
+owen_r|Robert L. Owen|person|us government|Robert L\. Owen
+house_em|Edward M. House|person|us government|Colonel House;Edward M\. House
+bernstein|Nahum (William) Bernstein|person|militias|William Bernstein;Nahum Bernstein
+
+# ---------- World layer: Congress, the arms network, foreign governments (added Nov 2026) ----------
+lodge|Henry Cabot Lodge|person|us government|Henry Cabot Lodge;Senator Lodge
+fish|Hamilton Fish III|person|us government|Hamilton Fish
+harding|Warren Harding|person|us government|Warren Harding;President Harding;Harding@rd2
+glazer|Rabbi Simon Glazer|person|us lobby|Simon Glazer
+lodge_fish|Lodge-Fish Resolution (1922)|document|us government|Lodge[- –]Fish
+wright_j|James Wright (Rep., Pennsylvania)|person|us government|James Wright
+compton_r|Ranulf Compton (Rep., Connecticut)|person|us government|Ranulf Compton
+wright_compton|Wright-Compton and Wagner-Taft resolutions (1944)|document|us government|Wright[- –]Compton;Wagner[- –]Taft
+concres1945|Congressional concurrent resolution on Palestine (Dec 1945)|document|us government|concurrent resolution
+platforms1944|Palestine planks in both 1944 party platforms|event|us parties|party platforms;Palestine planks
+celler|Emanuel Celler|person|us government|Emanuel Celler;Celler
+lazaron|Rabbi Morris Lazaron|person|religion|Morris Lazaron;Lazaron
+hull|Cordell Hull|person|us government|Cordell Hull
+waldman|Morris Waldman|person|us lobby|Morris Waldman
+hcnl|Hebrew Committee of National Liberation|institution|us lobby|Hebrew Committee of National Liberation;Hebrew Embassy
+shai|Shai (Haganah intelligence service)|institution|intelligence|\bShai\b;Sherut Yediot
+winters|Charles Winters|person|militias|Charles Winters;Charlie Winters;Winters@rd4;Winters@rd5
+greenspun|Hank Greenspun|person|militias|Hank Greenspun;Herman Greenspun;Greenspun
+service_airways|Service Airways Inc.|company|militias|Service Airways
+lap|Lineas Aereas de Panama|company|militias|Lineas Aereas de Panama
+zatec|Žatec airfield ("Zebra")|place|soviet bloc|Žatec;Zatec
+avia|Avia S-199 fighters|document|soviet bloc|Avia S-199;S-199
+siroky|Viliam Široký|person|soviet bloc|Široký;Siroky
+nicaragua|Nicaragua (Somoza government)|government|international|Somoza
+panama|Panama (government)|government|international|Panamanian government;Panama@rd5
+mexico|Mexico (government)|government|international|Mexican government;Mexico@rd5
+brazil|Brazil (government)|government|international|Brazilian government
+canada|Canada (government)|government|international|Canadian government;Canada@rd5
+australia|Australia (government)|government|international|Australian government;Australia@rd5
+sweden|Sweden (government)|government|international|Swedish government
+uruguay|Uruguay (government)|government|international|Uruguayan government;Uruguay@rd5
+guatemala|Guatemala (government)|government|international|Guatemalan government;Guatemala@rd5
+netherlands|Netherlands (government)|government|international|Dutch government;Netherlands@rd5
+peru|Peru (government)|government|international|Peruvian government;Peru@rd5
+india|India (government)|government|international|Indian government;India@rd5
+iran|Iran (government)|government|international|Iranian government;Iran@rd5
+yugoslavia|Yugoslavia (government)|government|soviet bloc|Yugoslav government;Yugoslavia
+poland_gov|Polish government (1930s)|government|europe|Polish government@rd3;Polish army@rd3
+south_africa|South Africa (Smuts government)|government|international|South African government;Smuts
+smuts|Jan Smuts|person|international|Jan Smuts;Smuts
+granados|Jorge García Granados|person|international|García Granados;Garcia Granados
+sandstrom|Emil Sandström|person|international|Sandström;Sandstrom
+aranha|Oswaldo Aranha|person|international|Oswaldo Aranha;Aranha
+romulo|Carlos Romulo|person|international|Carlos Romulo;Romulo
+firestone|Firestone Tire and Rubber Company|company|finance|Firestone
+cambon|Jules Cambon|person|europe|Jules Cambon;Cambon
+cambon_letter|Cambon letter (June 1917)|document|europe|Cambon letter
+beck|Józef Beck|person|europe|Józef Beck;Josef Beck
+stern_a|Avraham Stern|person|militias|Avraham Stern;Abraham Stern
+bidault|Georges Bidault|person|europe|Georges Bidault;Bidault
+exodus|Exodus 1947 (ship)|event|militias|Exodus 1947;President Warfield
+cyprus_camps|Cyprus internment camps (1946-49)|place|british state|Cyprus
+# ---------- Cold War layer, 1949-1967 (added Nov 2026) ----------
+eisenhower|Dwight Eisenhower|person|us government|Dwight Eisenhower;Eisenhower
+dulles_jf|John Foster Dulles|person|us government|John Foster Dulles;Dulles@cw1;Dulles@cw2;Dulles@cw3
+allen_dulles|Allen Dulles|person|us government|Allen Dulles
+acheson|Dean Acheson|person|us government|Dean Acheson;Acheson
+jfk|John F. Kennedy|person|us government|John F\. Kennedy;President Kennedy;Kennedy@cw4;Kennedy@cw5;Kennedy@cw6
+rfk|Robert F. Kennedy|person|us government|Robert F\. Kennedy;Robert Kennedy;Attorney General Kennedy
+lbj|Lyndon Johnson|person|us government|Lyndon Johnson;Lyndon B\. Johnson;President Johnson;Johnson@cw6
+rusk|Dean Rusk|person|us government|Dean Rusk;Rusk
+barbour|Walworth Barbour|person|us government|Walworth Barbour;Ambassador Barbour;Barbour
+fulbright|J. William Fulbright|person|us government|William Fulbright;Fulbright
+sfrc|Senate Foreign Relations Committee|government|us government|Senate Foreign Relations Committee
+ja_american|Jewish Agency American Section|institution|us lobby|Jewish Agency's American Section;American Section@cw5
+hammer_g|Gottlieb Hammer|person|us lobby|Gottlieb Hammer
+boukstein|Maurice Boukstein|person|us lobby|Maurice Boukstein;Boukstein
+blaustein|Jacob Blaustein|person|us lobby|Jacob Blaustein;Blaustein
+mcghee|George McGhee|person|us government|George McGhee;McGhee
+douglas_p|Paul Douglas|person|us government|Paul Douglas;Senator Douglas
+mccormack|John McCormack|person|us government|John McCormack
+eban|Abba Eban|person|israel state|Abba Eban;Eban
+horowitz_d|David Horowitz (Finance; Bank of Israel)|person|israel state|David Horowitz
+eshkol|Levi Eshkol|person|israel state|Levi Eshkol;Eshkol
+peres|Shimon Peres|person|israel state|Shimon Peres;Peres
+lavon|Pinhas Lavon|person|israel state|Pinhas Lavon;Lavon(?! [Aa]ffair)
+susannah|Operation Susannah / the Lavon affair (1954)|event|intelligence|Operation Susannah;Lavon affair;Lavon Affair
+harel|Isser Harel|person|intelligence|Isser Harel;Harel
+shin_bet|Shin Bet|government|intelligence|Shin Bet
+aman|Aman (military intelligence)|government|intelligence|military intelligence directorate;\bAman\b
+dimona|Dimona reactor|place|israel state|Dimona
+numec|NUMEC (Apollo, Pennsylvania)|company|intelligence|NUMEC;Nuclear Materials and Equipment
+shapiro_z|Zalman Shapiro|person|intelligence|Zalman Shapiro
+bonds|State of Israel Bonds|institution|finance|Israel Bonds;State of Israel Bonds;Independence Issue
+lux_agreement|Luxembourg reparations agreement (1952)|document|finance|Luxembourg agreement;Luxembourg Agreement;reparations agreement
+west_germany|West Germany (government)|government|europe|West German government;West Germany;Bonn@cw4;Bonn@cw6
+adenauer|Konrad Adenauer|person|europe|Konrad Adenauer;Adenauer
+strauss_fj|Franz Josef Strauss|person|europe|Franz Josef Strauss;Strauss@cw4;Strauss@cw6
+claims_conf|Claims Conference|institution|finance|Claims Conference
+msa1951|Mutual Security Act of 1951|document|us government|Mutual Security Act
+faa1961|Foreign Assistance Act of 1961|document|us government|Foreign Assistance Act
+hawk|Hawk missile sale (1962)|event|us government|Hawk
+eden|Anthony Eden|person|british state|Anthony Eden;Eden@cw2;Eden@cw3
+mollet|Guy Mollet|person|europe|Guy Mollet;Mollet
+sevres|Protocol of Sèvres (Oct 1956)|document|europe|Sèvres;Sevres
+suez1956|Suez war (1956)|event|cold war|Suez war;Suez Crisis;Suez crisis;war of 1956
+baghdad_pact|Baghdad Pact (1955)|document|cold war|Baghdad Pact
+tripartite|Tripartite Declaration (1950)|document|cold war|Tripartite Declaration
+mossadegh|Mohammad Mosaddegh|person|international|Mossadegh;Mosaddegh;Mossadeq
+shah|Shah of Iran|person|international|Mohammad Reza Shah;Mohammad Reza Pahlavi;the Shah
+ajax|1953 coup in Iran|event|cold war|coup of August 1953;Operation Ajax;TPAJAX
+aioc|Anglo-Iranian Oil Company|company|finance|Anglo-Iranian Oil Company
+nioc|National Iranian Oil Company|company|finance|National Iranian Oil Company
+eilat_pipeline|Eilat pipeline|place|finance|Eilat pipeline
+johnston|Johnston mission (1953-55)|event|us government|Johnston mission;Eric Johnston;Johnston Plan
+unit101|Unit 101|institution|militias|Unit 101
+sharon|Ariel Sharon|person|israel state|Ariel Sharon
+qibya|Qibya raid (1953)|event|cold war|Qibya
+uss_liberty|USS Liberty attack (8 June 1967)|event|cold war|USS Liberty
+near_east_report|Near East Report|document|us lobby|Near East Report
+nation_assoc|Nation Associates|institution|us lobby|Nation Associates
+kirchwey|Freda Kirchwey|person|us lobby|Freda Kirchwey;Kirchwey
+max_ball|Max Ball (Interior Department oil division)|person|us government|Max Ball
+epstein_e|Eliahu Epstein (Elath)|person|zionist movement|Eliahu Epstein;Eliahu Elath
+bank_israel|Bank of Israel (1954)|government|israel state|Bank of Israel
+knesset_bldg|Knesset building (1966)|place|israel state|Knesset building
+pres_conf|Conference of Presidents of Major American Jewish Organizations|institution|us lobby|Conference of Presidents
+# ---------- Historical layer: Rothschild tree, British government, Paris, Rome, the Vatican (added Nov 2026) ----------
+amschel_m|Amschel Mayer Rothschild (Frankfurt)|person|rothschild|Amschel Mayer
+salomon_r|Salomon Mayer von Rothschild (Vienna)|person|rothschild|Salomon Mayer;Salomon von Rothschild;Salomon Rothschild
+carl_r|Carl (Kalman) Mayer von Rothschild (Naples)|person|rothschild|Carl Mayer von Rothschild;Kalman Mayer
+ma_rothschild|M. A. Rothschild & Söhne (Frankfurt)|company|rothschild|M\. A\. Rothschild
+sm_rothschild|S M von Rothschild (Vienna)|company|rothschild|S\. ?M\. von Rothschild;Vienna house
+cm_rothschild|C M de Rothschild & Figli (Naples)|company|rothschild|C\. ?M\. de Rothschild
+anthony_r|Sir Anthony de Rothschild, 1st Baronet|person|rothschild|Anthony de Rothschild
+nathaniel_paris|Nathaniel de Rothschild (1812-70, Paris)|person|rothschild|Nathaniel de Rothschild
+alfred_r|Alfred de Rothschild|person|rothschild|Alfred de Rothschild
+leopold_r|Leopold de Rothschild (1845-1917)|person|rothschild|Leopold de Rothschild
+charles_r|Charles Rothschild (1877-1923)|person|rothschild|Charles Rothschild;Charles de Rothschild
+victor_r|Victor Rothschild, 3rd Baron|person|rothschild|Victor Rothschild;3rd Baron Rothschild
+miriam_r|Miriam Rothschild|person|rothschild|Miriam Rothschild
+alphonse_r|Alphonse de Rothschild|person|rothschild|Alphonse de Rothschild;Baron Alphonse
+gustave_r|Gustave de Rothschild|person|rothschild|Gustave de Rothschild
+maurice_r|Maurice de Rothschild|person|rothschild|Maurice de Rothschild
+edouard_r|Édouard de Rothschild|person|rothschild|Édouard de Rothschild;Edouard de Rothschild
+guy_r|Guy de Rothschild|person|rothschild|Guy de Rothschild
+lionel_1882|Lionel Nathan de Rothschild (1882-1942)|person|rothschild|Lionel Nathan de Rothschild
+anthony_g|Anthony Gustav de Rothschild|person|rothschild|Anthony Gustav
+league_bj|League of British Jews (1917)|institution|religion|League of British Jews
+magnus_p|Sir Philip Magnus|person|religion|Philip Magnus
+swaythling|Louis Montagu, 2nd Baron Swaythling|person|religion|Swaythling
+curzon|Lord Curzon|person|british state|Lord Curzon;Curzon
+milner|Lord Milner|person|british state|Lord Milner;Alfred Milner;Milner
+amery|Leo Amery|person|british state|Leo Amery;Amery
+cecil_r|Lord Robert Cecil|person|british state|Robert Cecil
+ormsby_gore|William Ormsby-Gore|person|british state|Ormsby-Gore
+graham_r|Sir Ronald Graham|person|british state|Ronald Graham
+asquith|H. H. Asquith|person|british state|Asquith
+grey_e|Sir Edward Grey|person|british state|Edward Grey
+lansdowne|Lord Lansdowne|person|british state|Lansdowne
+hankey|Maurice Hankey|person|british state|Hankey
+greenberg_l|Leopold Greenberg|person|zionist movement|Leopold Greenberg
+uganda|British Uganda offer (1903)|document|british state|Uganda (?:offer|scheme|plan|proposal|Programme);Uganda
+samuel_memo|"The Future of Palestine" memorandum (Samuel, 1915)|document|british state|The Future of Palestine
+montagu_memo|Montagu memorandum (23 Aug 1917)|document|british state|Anti-Semitism of the Present Government
+plumer|Lord Plumer|person|british state|Plumer
+chancellor_j|Sir John Chancellor|person|british state|John Chancellor
+wauchope|Sir Arthur Wauchope|person|british state|Wauchope
+macmichael|Sir Harold MacMichael|person|british state|MacMichael
+gort|Lord Gort|person|british state|Lord Gort;Gort
+cunningham_a|Sir Alan Cunningham|person|british state|Alan Cunningham
+luke_h|Sir Harry Luke|person|british state|Harry Luke
+millerand|Alexandre Millerand|person|europe|Millerand
+berthelot|Philippe Berthelot|person|europe|Berthelot
+nitti|Francesco Saverio Nitti|person|europe|Nitti
+italy_gov|Italy (government)|government|europe|Italian government
+matsui|Keishirō Matsui|person|international|Matsui
+japan_gov|Japan (government)|government|international|Japanese government
+agliardi|Msgr. Antonio Agliardi (nuncio in Vienna)|person|religion|Agliardi
+merry_del_val|Cardinal Rafael Merry del Val|person|religion|Merry del Val
+benedict15|Pope Benedict XV|person|religion|Benedict XV
+gasparri|Cardinal Pietro Gasparri|person|religion|Gasparri
+tardini|Msgr. Domenico Tardini|person|religion|Tardini
+maglione|Cardinal Luigi Maglione|person|religion|Maglione
+paul6|Pope Paul VI|person|religion|Paul VI
+# --- actors the books name (added from a name pass over all three volumes) ---
+king_hussein|King Hussein of Jordan|person|arab states|King Hussein
+komer|Robert Komer|person|us government|Robert Komer;Komer
+mcnamara|Robert McNamara|person|us government|McNamara
+herter|Christian Herter|person|us government|Herter
+bundy|McGeorge Bundy|person|us government|McGeorge Bundy;Bundy
+harman_a|Avraham Harman|person|israel state|Avraham Harman;Harman
+byroade|Henry Byroade|person|us government|Henry Byroade;Byroade
+macmillan|Harold Macmillan|person|british state|Harold Macmillan;Macmillan
+couve|Maurice Couve de Murville|person|europe|Couve de Murville
+feldman_m|Myer Feldman|person|us government|Myer Feldman;Feldman@cw5;Feldman@cw6
+kaufmann_e|Ed Kaufmann|person|us lobby|Ed Kaufmann;Edmund Kaufmann
+szold|Henrietta Szold|person|us lobby|Henrietta Szold;Szold
+rashid_ali|Rashid Ali al-Gailani|person|arab states|Rashid Ali
+marzouk|Moshe Marzouk|person|intelligence|Moshe Marzouk
+azar_s|Shmuel Azar|person|intelligence|Shmuel Azar
+bennett_max|Max Bennett|person|intelligence|Max Bennett
+gibli|Binyamin Gibli|person|intelligence|Binyamin Gibli;Gibli
+motzkin|Leo Motzkin|person|zionist movement|Leo Motzkin;Motzkin
+levontin|Zalman David Levontin|person|finance|Levontin
+lipsky|Louis Lipsky|person|us lobby|Louis Lipsky;Lipsky
+golomb|Eliyahu Golomb|person|militias|Eliyahu Golomb;Golomb
+tehomi|Avraham Tehomi|person|militias|Avraham Tehomi;Tehomi
+lowenthal|Max Lowenthal|person|us government|Max Lowenthal;Lowenthal
+eytan|Walter Eytan|person|israel state|Walter Eytan
+dewey|Thomas Dewey|person|us parties|Thomas Dewey;Dewey
+malik|Charles Malik|person|arab states|Charles Malik
+zahedi|Fazlollah Zahedi|person|international|Zahedi
+hoover_jr|Herbert Hoover Jr.|person|us government|Herbert Hoover Jr
+pineau|Christian Pineau|person|europe|Christian Pineau;Pineau
+bourges|Maurice Bourgès-Maunoury|person|europe|Bourgès-Maunoury
+bergmann|Ernst David Bergmann|person|israel state|Ernst David Bergmann;Bergmann
+globke|Hans Globke|person|europe|Globke
+rostow|Walt Rostow|person|us government|Walt Rostow;Rostow
+shukairy|Ahmad Shukairy|person|arab leadership|Shukairy;Shuqayri
+weitz|Yosef Weitz|person|land|Yosef Weitz;Weitz
+rosenwald|Lessing Rosenwald|person|religion|Lessing Rosenwald
+qawuqji|Fawzi al-Qawuqji|person|arab states|Qawuqji;Qawukji
+cadogan|Alexander Cadogan|person|british state|Cadogan
+riad_solh|Riad al-Solh|person|arab states|Riad al-Solh
+eddy|William Eddy|person|us government|William Eddy
+shamir|Yitzhak Shamir|person|militias|Yitzhak Shamir
+andrews_l|Lewis Andrews|person|british state|Lewis Andrews
+morrison_h|Herbert Morrison|person|british state|Herbert Morrison
+klein_j|Julius Klein|person|us lobby|Julius Klein
+creech|Arthur Creech Jones|person|british state|Creech Jones
+# ---------- Funding layer: who paid for the movement before 1948 (added Nov 2026) ----------
+die_welt|Die Welt (Herzl's weekly, 1897)|company|zionist movement|Die Welt
+shekel|The Zionist shekel (membership dues)|institution|zionist movement|Zionist shekel;shekel-payers;shekel payers
+kofer|Kofer HaYishuv (defense levy, 1938)|institution|militias|Kofer HaYishuv;Kofer Hayishuv;Community ransom
+straus_n|Nathan Straus|person|us lobby|Nathan Straus
+pec_econ|Palestine Economic Corporation (1925)|company|finance|Palestine Economic Corporation
+angloam1924|Anglo-American Convention on Palestine (1924)|document|us government|Anglo-American Convention
+# ---------- UN layer: every vote on partition, recognitions (added Nov 2026) ----------
+belgium|Belgium (government)|government|international|Belgian government
+bolivia|Bolivia (government)|government|international|Bolivian government
+byelorussia|Byelorussian SSR|government|soviet bloc|Byelorussian SSR;Byelorussia
+costa_rica|Costa Rica (government)|government|international|Costa Rican government
+denmark|Denmark (government)|government|international|Danish government
+dominican|Dominican Republic (government)|government|international|Dominican Republic
+ecuador|Ecuador (government)|government|international|Ecuadorian government
+iceland|Iceland (government)|government|international|Icelandic government
+luxembourg|Luxembourg (government)|government|international|Luxembourg government
+new_zealand|New Zealand (government)|government|international|New Zealand government
+norway|Norway (government)|government|international|Norwegian government
+paraguay|Paraguay (government)|government|international|Paraguayan government
+poland48|Poland (government, 1940s)|government|soviet bloc|Polish government@cw1
+ukraine_ssr|Ukrainian SSR|government|soviet bloc|Ukrainian SSR
+venezuela|Venezuela (government)|government|international|Venezuelan government
+afghanistan|Afghanistan (government)|government|international|Afghan government
+lebanon|Lebanon (government)|government|arab states|Lebanese government
+pakistan|Pakistan (government)|government|international|Pakistani government
+saudi|Saudi Arabia (government)|government|arab states|Saudi government
+turkey|Turkey (government)|government|international|Turkish government
+yemen|Yemen (government)|government|arab states|Yemeni government
+argentina|Argentina (government)|government|international|Argentine government
+chile|Chile (government)|government|international|Chilean government
+china|China (government)|government|international|Chinese government;Nationalist China
+colombia|Colombia (government)|government|international|Colombian government
+el_salvador|El Salvador (government)|government|international|Salvadoran government
+ethiopia|Ethiopia (government)|government|international|Ethiopian government
+honduras|Honduras (government)|government|international|Honduran government
+siam|Siam (government)|government|international|Siamese delegation
+hungary|Hungary (government)|government|soviet bloc|Hungarian government
+finland|Finland (government)|government|international|Finnish government
+romania|Romania (government)|government|soviet bloc|Romanian government
+bulgaria|Bulgaria (government)|government|soviet bloc|Bulgarian government
+baruch|Bernard Baruch|person|finance|Bernard Baruch;Baruch
+zemurray|Sam Zemurray|person|finance|Sam Zemurray;Zemurray
+res273|UN Resolution 273 (admission of Israel, 1949)|document|international|Resolution 273
+# ---------- Global layer after 1948 (added Nov 2026) ----------
+africa_aid|Israeli aid to Africa (from the late 1950s)|event|israel state|aid to Africa;African aid program
+africa_break73|African states break with Israel (1973)|event|international|broke relations with Israel
+elnet|ELNET (European Leadership Network)|institution|europe|ELNET;European Leadership Network
+iaf|Israel Allies Foundation|institution|christian zionism|Israel Allies Foundation;Israel Allies Caucus
+concert|Kela Shlomo / Concert / Voices of Israel|institution|israel state|Kela Shlomo;Voices of Israel;Concert - Together for Israel
+us_vetoes|US vetoes in the Security Council on Israel|event|us government|vetoed
+syria82|Move to review Israel's UN status (1982)|event|international|review Israel's status
+res3379|UN Resolution 3379 (1975)|document|international|Resolution 3379;Zionism is a form of racism
+res4686|UN Resolution 46/86 (1991)|document|international|Resolution 46/86
+# ---------- Presidents layer (added Nov 2026) ----------
+fdr_health|Roosevelt's hidden heart failure (1944-45)|event|us government|congestive heart failure
+wilson_stroke|Wilson's hidden stroke (1919)|event|us government|Wilson's stroke
+# ---------- Decisions layer (added Nov 2026) ----------
+masaryk|Jan Masaryk|person|soviet bloc|Jan Masaryk;Masaryk
+avriel|Ehud Avriel|person|militias|Ehud Avriel;Avriel
+"""
+
+
+def load():
+    nodes = []
+    for line in RAW.strip().splitlines():
+        line = line.strip()
+        if not line or line.startswith('#'): continue
+        i, name, kind, cluster, al = [x.strip() for x in line.split('|', 4)]
+        aliases = []
+        for a in al.split(';'):
+            a = a.strip()
+            if not a: continue
+            stage = None
+            if '@' in a: a, stage = a.rsplit('@', 1)
+            aliases.append((a, stage))
+        nodes.append({'id': i, 'name': name, 'kind': kind, 'cluster': cluster, 'aliases': aliases})
+    ids = [n['id'] for n in nodes]
+    assert len(ids) == len(set(ids)), [x for x in ids if ids.count(x) > 1]
+    return nodes

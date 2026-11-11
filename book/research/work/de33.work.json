@@ -1,0 +1,47 @@
+{
+ "de33_tests": {
+  "topic": "Two tests (Urbit, DOGE) and Book VI closing: checks on the executive — Guard ruling and withdrawal, the 2025 rescissions act",
+  "claims": [
+   {
+    "text": "Trump v. Illinois, 23 Dec 2025: in an unsigned order at a preliminary stage the Supreme Court refused to let the administration deploy National Guard troops in the Chicago area; the government 'failed to identify a source of authority that would allow the military to execute the laws in Illinois'; Alito, Thomas and Gorsuch dissented; Kavanaugh concurred in part; interim, not a merits ruling",
+    "strength": "reported",
+    "sources": [
+     "de33_rollcall_illinois",
+     "de33_stlpr_illinois"
+    ]
+   },
+   {
+    "text": "31 Dec 2025: Trump said he was removing Guard troops from Chicago, Los Angeles and Portland for now: 'We will come back, perhaps in a much different and stronger form, when crime begins to soar again'; troops had left LA, and those sent to Chicago and Portland never reached the streets because of legal challenges; AP calls the Supreme Court order temporary",
+    "strength": "reported",
+    "sources": [
+     "de33_pbs_guard"
+    ]
+   },
+   {
+    "text": "24 Jul 2025: Trump signed a bill cancelling about $9bn of previously approved spending, the bulk foreign assistance and about $1.1bn for the Corporation for Public Broadcasting; AP: programmes 'targeted by the White House's Department of Government Efficiency'",
+    "strength": "reported",
+    "sources": [
+     "de33_wdbj_rescission"
+    ]
+   }
+  ],
+  "sources": {
+   "de33_rollcall_illinois": {
+    "url": "https://rollcall.com/2025/12/23/supreme-court-sides-with-chicago-over-trump-in-dispute-over-guard/",
+    "label": "Roll Call, 'Supreme Court sides with Chicago over Trump in dispute over Guard', 23 December 2025"
+   },
+   "de33_stlpr_illinois": {
+    "url": "https://www.stlpr.org/law-order/2025-12-23/u-s-supreme-court-rules-against-trump-national-guard-deployment-illinois",
+    "label": "St. Louis Public Radio (AP), 'U.S. Supreme Court rules against Trump National Guard deployment in Illinois', 23 December 2025"
+   },
+   "de33_pbs_guard": {
+    "url": "https://www.pbs.org/newshour/politics/trump-says-hes-dropping-push-for-national-guard-in-chicago-and-other-cities",
+    "label": "AP via PBS NewsHour, 'Trump says he's dropping push for National Guard in Chicago and other cities', 31 December 2025"
+   },
+   "de33_wdbj_rescission": {
+    "url": "https://www.wdbj7.com/2025/07/24/trump-signs-bill-cancel-9-billion-foreign-aid-public-broadcasting-funding/?outputType=amp",
+    "label": "AP via WDBJ7, 'Trump signs bill to cancel $9 billion in foreign aid, public broadcasting funding', 24 July 2025"
+   }
+  }
+ }
+}

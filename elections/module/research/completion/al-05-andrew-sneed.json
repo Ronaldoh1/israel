@@ -1,0 +1,13 @@
+{
+ "id": "al-05-andrew-sneed",
+ "cites": {},
+ "checklist": {
+  "fara": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "legal": "CourtListener blocked (known limit); Justia/Alacourt and news-archive legal searches not run (search budget exhausted). Profiles reviewed mention no legal matters. UPDATE 2026-10-14 (courts): CourtListener and Justia could not be searched directly: this environment's network proxy refuses both hosts and the fetch tool refuses their search URLs (re-tested 2026-10-14). Alacourt is paywalled. A news web search ('Andrew Sneed Huntsville congressional candidate lawsuit court') turned up no reporting of any civil or criminal case naming Andrew Sneed as a party, so courts is 'news' (searched, nothing found).",
+  "foreign": "FARA: the bulk FARA files (all registrants, short-form registrants, foreign principals) were searched by exact name on 2026-10-13 by the records collector and re-checked here; the loose name matches in that output are other people, and nothing matches this candidate. No House financial disclosure was available to check for foreign assets."
+ },
+ "research_notes": "Disclosures stays 'no': the House Clerk disclosure index pulled 2026-10-13 holds no filing under his name, but this tool could not search the Clerk site itself, so a missing or late candidate report is possible but unconfirmed — needs a human check. Democracy stays 'news'."
+}
