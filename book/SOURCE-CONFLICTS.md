@@ -348,3 +348,12 @@ One line each: the conflict, the versions, the scenes involved (section where th
 - Mayor of London in 1215: Hardell vs Serlo le Mercer (dv2_square_mile; research dv2_charters).
 - The Remembrancer on the Commons floor: claimed in bc_s01/bc_s06, contradicted by the Remembrancer sources; corrected (dv2_remembrancer, bc_s01, bc_s06; research dv2_remembrancer).
 - City business vote: ~24,000 (2009) vs ~32,000 business / ~9,000 resident (2013, Green Party) (dv2_how_it_governs).
+
+## The Divine 3+1, Parts Three to Six (added 11 November 2026)
+- Herzl–Pius X audience: 25 January 1904 (Jewish Virtual Library) vs 26 January (bc_s08). Used 25 January. (dv3)
+- François Pauly as CEO of the Edmond de Rothschild group: 2019–2023 (bc_s08) vs from June 2021 (Citywire, Paperjam). Used June 2021. (dv3)
+- 1831 Rothschild–Holy See contract: "exclusive right of first refusal" (bc_s03) vs notice and preference on equal terms (Wikipedia). Used the narrower terms. (dv3)
+- Banco Ambrosiano payment: US$224 million (Wikipedia, IOR) vs $244 million (Book 9 notes). Used $224 million. (dv3)
+- US vetoes on Israel: 51 through Sept 2025 (Jewish Virtual Library) vs 45 of 89 as of Dec 2023 (Chicago Council). Both given. (dv4)
+- Cumulative US aid: ~$175 bn current dollars (CRS, FY2025) vs ~$298 bn constant 2024 dollars (CRS) vs "more than $300 bn" (CFR). Methods explained. (dv4)
+- Trump's 3 Nov 2026 statement on ending aid: "by the end of the year" (Times of Israel) vs "by 2027" (Antiwar.com summary of Ynet). Quoted Times of Israel and Rubio. (dv4)

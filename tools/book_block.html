@@ -336,6 +336,25 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-more{text-align:center;margin:18px 0 6px;font-size:15px;color:var(--muted)}
 .lb-more b{color:var(--ink)}
 .lb-empty{text-align:center;color:var(--muted);font-style:italic;padding:30px 0}
+/* sections: a coloured bar marks each architecture's heading */
+.lb-sec h2{border-left:5px solid color-mix(in srgb,var(--sc,var(--accent)) 72%,var(--ink));padding-left:11px;line-height:1.2}
+.lb-sec .sub{padding-left:16px}
+/* video tiles on the shelf: same size as a cover, dark "screen" with a play icon */
+.cv:has(.maptag) .ser{padding-right:28%;padding-left:0}
+.cv.vd{--c:#1B2133}
+.cv.vd::before{content:'';position:absolute;left:3.2cqw;top:6cqw;bottom:6cqw;width:3cqw;border-radius:1px;background:repeating-linear-gradient(to bottom,rgba(245,216,142,.55) 0 3.2cqw,transparent 3.2cqw 6.4cqw);opacity:.75}
+.cv.vd .vp{display:block;width:44%;aspect-ratio:1;margin:auto 0 6%;flex:none;filter:drop-shadow(0 0 7px rgba(245,216,142,.38));transition:transform .25s}
+.lb-book:hover .cv.vd .vp,.lb-book:focus-visible .cv.vd .vp{transform:scale(1.1)}
+.cv.vd .tt{font-size:6.4cqw;line-height:1.18;-webkit-line-clamp:4}
+.cv.vd .st{font-size:4.8cqw;margin:5% 0 auto;font-style:italic;font-weight:400;opacity:.92;-webkit-line-clamp:2}
+.cv.vd .vol{font-size:4.2cqw;color:#F5D88E;opacity:.95;letter-spacing:.1em}
+.lb-metas .vmeta .vl{color:inherit;text-decoration:none}
+.lb-metas .vmeta .vl:hover b,.lb-metas .vmeta .vl:focus-visible b{text-decoration:underline;text-underline-offset:3px}
+.lb-metas .vmeta .vl:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.lb-metas .vmeta .vchip{color:#6D28D9;border-color:color-mix(in srgb,#6D28D9 55%,transparent);background:color-mix(in srgb,#6D28D9 8%,transparent);cursor:help}
+#bookView[data-theme="night"] .lb-metas .vmeta .vchip{color:#CDABE6;border-color:color-mix(in srgb,#CDABE6 55%,transparent);background:color-mix(in srgb,#CDABE6 10%,transparent)}
+@container (max-width:130px){.cv.vd .vol{display:none}.cv.vd .tt{font-size:7.4cqw}}
+@media (prefers-reduced-motion:reduce){.cv.vd .vp{transition:none}}
 /* book title page */
 .bk-bt{text-align:center;padding:10px 0 34px}
 .bk-bt .cv{width:min(220px,58%);margin:0 auto 26px}
@@ -568,6 +587,29 @@ body.book-open #libBanner{display:none}
 (function(){
   var $ = function(id){ return document.getElementById(id); };
   var LIB = JSON.parse($('book_data').textContent), BOOKS = LIB.books, curBook = 0, BOOK = BOOKS[0];
+  /* ---------- sections: each architecture gets its own labelled shelf ----------
+     The Israel Architecture (no series tag), The Epstein Network Architecture, The Dark Enlightenment Architecture.
+     Epstein is moved out of the Israel volumes here (tagged like the Dark Enlightenment books), and the Israel
+     volumes after it are renumbered so the shelf has no gap. */
+  var SER_EP = 'The Epstein Network Architecture', SER_DE = 'The Dark Enlightenment Architecture';
+  (function(){
+    BOOKS.forEach(function(b){ if(b.ser === 'The Dark Enlightenment Series') b.ser = SER_DE; });
+    var ep = BOOKS.filter(function(b){ return b.id === 'epstein'; })[0];
+    if(ep && ep.ser !== SER_EP){
+      BOOKS.splice(BOOKS.indexOf(ep), 1);
+      var n = 0; BOOKS.forEach(function(b){ if(!b.ser) b.vol = ++n; });
+      ep.ser = SER_EP; ep.vol = 1; ep.serCover = 'Epstein Network';
+      var at = 0; while(at < BOOKS.length && !BOOKS[at].ser) at++;
+      BOOKS.splice(at, 0, ep);
+    }
+  })();
+  /* cover colours for videos, used in order when a video has no color of its own */
+  var VPAL = ['#5A2340','#1F5A4A','#6B4A12','#3A2A6B','#7A2E1E','#1E4A6B'];
+  /* videos on the shelf: add one object per video (optional color:'#hex' sets its tile colour). sec is the section it sits in; url opens in a new tab. */
+  var VIDEOS = [
+    {video:true, sec:'epstein', id:'6MgmsmTqA0M', title:'Occult Infrastructure Behind the Epstein Network', by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=6MgmsmTqA0M&t=20s'},
+    {video:true, sec:'epstein', id:'j6wjwCvdWDg', title:'The SATANIC RITUAL Network Hidden Inside the Epstein Files', by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=j6wjwCvdWDg&rco=1'}
+  ];
   var CLOTH = ['#5B1F1A','#1E2D4F','#23402F','#6B4A1B','#3A2F4A','#2F3E46','#4A2328','#1F3A3D','#4B3B1E','#2B2F4A'];
   function SERN(b){ return (b && b.ser) || 'The Israel Architecture'; }
   function VL(b){ return (b && b.ser ? 'Book ' : 'Volume ') + roman(b.vol); }
@@ -635,11 +677,11 @@ body.book-open #libBanner{display:none}
     return function(b){ var k = BY[b.id] || KEYS[(b.vol || 1) % KEYS.length]; return '<svg class="sg" viewBox="-38 -38 76 76" aria-hidden="true" focusable="false"><title>' + NAME[k] + '</title>' + G[k]() + '</svg>'; };
   })();
   /* cloth colours: one per volume, spaced around the colour wheel at the same depth so no two neighbours look alike */
-  var VCLOTH = {baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23', darkenlight:'#6B1E2B', de_money:'#145A45', de_doge:'#1F3F8A', de_exit:'#0E5E66', de_eye:'#3D2B7E', de_force:'#7A3517', de_test:'#5E1F5A', democracy:'#1C4F75'};
+  var VCLOTH = {epstein:'#2B3B4E', baseline:'#6A2E22', road1948:'#1E2D55', coldwar:'#2C4148', divine:'#3E2660', ch06:'#5A4A1C', money:'#1D4E36', ch57:'#55203F', gaza:'#73301C', westbank:'#3E5220', press:'#26272B', vatican:'#6E1A2C', theology:'#1A4466', hamas:'#174F4B', iran:'#0E5260', ch18:'#4A2A55', ch19:'#2F3A5E', ch20:'#5E3A1A', greater:'#4B4416', ch23:'#235040', ch34:'#3A2230', usisrael:'#2A3F6E', mirror:'#3C4A4E', hezbollah:'#2E5228', ch53:'#5C2A4E', ch51:'#46332A', dream:'#7E1F23', darkenlight:'#6B1E2B', de_money:'#145A45', de_doge:'#1F3F8A', de_exit:'#0E5E66', de_eye:'#3D2B7E', de_force:'#7A3517', de_test:'#5E1F5A', democracy:'#1C4F75'};
   function cover(b, cls){
     if(b.cover) return '<div class="cv ' + (cls || '') + '"><img src="' + esc(b.cover) + '" alt=""></div>';
     var col = VCLOTH[b.id] || CLOTH[(b.vol - 1) % CLOTH.length];
-    return '<div class="cv ' + (cls || '') + (b.ser ? ' sr' : '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true">' + (b.id === 'epstein' && b.status === 'ready' ? '<span class="maptag"><b>🕸</b>NETWORK MAP</span>' : '') + '<div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
+    return '<div class="cv ' + (cls || '') + (b.ser ? ' sr' : '') + (b.status !== 'ready' ? ' prep' : '') + '" style="--c:' + col + '" aria-hidden="true">' + (b.id === 'epstein' && b.status === 'ready' ? '<span class="maptag"><b>🕸</b>NETWORK MAP</span>' : '') + '<div class="in' + ((b.subtitle || '').length > 36 ? ' long' : '') + '"><div class="ser">' + esc(b.serCover || SERN(b)) + '</div><div class="rule"></div>' + SIG(b) + '<div class="tt' + ((b.title.length > 16 || Math.max.apply(null, b.title.split(/\s+/).map(function(w){ return w.length; })) > 9) ? ' lg' : '') + '">' + esc(b.title) + '</div><div class="st' + (b.title.length > 14 ? ' s2' : '') + '">' + esc(b.subtitle || '') + '</div><div class="vol">' + VL(b) + '</div></div>' + (b.status !== 'ready' ? '<div class="ribbon">Coming soon</div>' : '') + '</div>';
   }
   var view = $('bookView'), scroller = $('bkScroll'), page = $('bkPage'), sheet = $('bkSheet'), shade = $('bkShade'), pop = $('bkPop');
   function plain(t){ return String(t == null ? '' : t).replace(/&(amp|lt|gt|quot|#39|nbsp);/g, function(m, x){ return {amp:'&',lt:'<',gt:'>',quot:'"','#39':"'",nbsp:' '}[x]; }); }
@@ -652,7 +694,7 @@ body.book-open #libBanner{display:none}
   /* sources added by the library's own research (book/research/*.json) */
   Object.keys(LIB.cites || {}).forEach(function(k){ if(!CIT[k]) CIT[k] = LIB.cites[k][0]; if(!LBL[k]) LBL[k] = LIB.cites[k][1]; });
   var secOf = {}, where = {};  // scene id -> [book index, chapter index]; a section's own id and its main scene win over scenes it also draws on
-  var MAPS = {epstein:{f:'epstein-network.html', n:'Epstein network map', d:'Every person, company and document, with sources'}, road1948:{f:'road-network.html', n:'The Road to 1948 and After network map', d:'Founders, funds, states and documents from 1694 to 1967, each tie with its source'}}; MAPS.baseline = MAPS.road1948; MAPS.cold_war = MAPS.road1948; MAPS.atlas = {f:'language-atlas.html', n:'Language atlas', d:'The Semitic languages as a tree, a map through time and a timeline, and the Ashkenazi path through Europe'};
+  var MAPS = {epstein:{f:'epstein-network.html', n:'Epstein network map', d:'Every person, company and document, with sources'}, road1948:{f:'road-network.html', n:'The Road to 1948 and After network map', d:'Founders, funds, states and documents from 1694 to 1967, each tie with its source'}}; MAPS.cold_war = MAPS.road1948; MAPS.atlas = {f:'language-atlas.html', n:'Language atlas', d:'The Semitic languages as a tree, a map through time and a timeline, and the Ashkenazi path through Europe'};
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ where[s.s] = [bi, k]; secOf[s.s] = s.s; }); }); });
   /* a section's own id always wins; a section's main scene maps to it only if no section carries that id */
   BOOKS.forEach(function(b, bi){ (b.chapters || []).forEach(function(c, k){ c.sections.forEach(function(s){ if(s.scene && secOf[s.scene] !== s.scene){ where[s.scene] = [bi, k]; secOf[s.scene] = s.s; } }); }); });
@@ -855,11 +897,11 @@ body.book-open #libBanner{display:none}
     if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>' + esc(c.outroTitle || 'In sum') + '</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
     h += '<section class="bk-notes bk-pgbreak" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = srcLabel(key);
       return '<li id="bkn-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
-    var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1];
+    var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1]; if(nb && (nb.ser || '') !== (BOOK.ser || '')) nb = null;
     if(!nx) h += bibliography();
     if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>' + esc(nx.label) + '</small>' + esc(nx.title) + '</button>';
     else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: ' + (nb.ser && !BOOK.ser ? esc(nb.ser) + ', ' : '') + VL(nb) + '</small>' + esc(nb.title) + '</button>';
-    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '. The volumes after it are being written; the simulation carries the full record in the meantime.</p>' +
+    else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.' + (BOOK.ser ? '' : ' The volumes after it are being written; the simulation carries the full record in the meantime.') + '</p>' +
       '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
     fillCharts(page);
@@ -1010,6 +1052,16 @@ body.book-open #libBanner{display:none}
   function cols(){ var w = lib.clientWidth || window.innerWidth; return w < 520 ? 2 : w < 760 ? 3 : w < 1100 ? 4 : 6; }
   function eraStart(b){ if(b.eraKey != null) return b.eraKey; var m = String(b.span || '').match(/(\d+)\s*BCE/i); if(m) return -(+m[1]); m = String(b.span || '').match(/\d{4}/); return m ? +m[0] : 9999; }
   function libText(b){ return (b.title + ' ' + (b.subtitle || '') + ' ' + (b.span || '') + ' ' + (b.keywords || '') + ' ' + (b.chapters || []).map(function(c){ return c.title + ' ' + c.sections.map(function(x){ return x.h; }).join(' '); }).join(' ')).toLowerCase(); }
+  /* a video on the shelf: a tile the same size as a cover, with a play icon, and its name underneath; opens YouTube in a new tab */
+  function vtile(v){
+    return '<a class="lb-book lb-vid" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc('Video: ' + v.title + ', by ' + v.by + '. Opens on YouTube in a new tab.') + '">' +
+      '<div class="cv vd sr" style="--c:' + esc(v.color || VPAL[VIDEOS.indexOf(v) % VPAL.length]) + '" aria-hidden="true"><div class="in"><div class="ser">Video</div><div class="rule"></div>' +
+      '<svg class="vp" viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="29" fill="rgba(245,216,142,.10)" stroke="#F5D88E" stroke-width="2.2"/><circle cx="32" cy="32" r="23" fill="none" stroke="#F5D88E" stroke-opacity=".35" stroke-width="1"/><path d="M26 20.5L45.5 32L26 43.5Z" fill="#F5D88E" stroke="#F5D88E" stroke-width="2" stroke-linejoin="round"/></svg>' +
+      '<div class="tt">' + esc(v.title) + '</div><div class="st">' + esc(v.by) + '</div><div class="vol">Watch on YouTube \u2197</div></div></div></a>';
+  }
+  function vmeta(v){
+    return '<div class="meta vmeta"><a class="vl" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(v.title) + '</b></a><small>' + esc(v.by) + '</small><small>Opens on YouTube \u2197</small></div>';
+  }
   function shelf(list){
     if(!list.length) return '';
     var n = cols(), pr = ls('ots_book_progress') || {}, h = '';
@@ -1017,9 +1069,11 @@ body.book-open #libBanner{display:none}
       var row = list.slice(i, i + n);
       h += '<div class="lb-row" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b);
+        if(b.video) return vtile(b);
         if(b.status !== 'ready') return '<div class="lb-book soon" role="img" aria-label="' + esc(b.title + ', Volume ' + roman(b.vol) + ', in progress, coming soon') + '">' + cover(b) + '</div>';
         return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
+        if(b.video) return vmeta(b);
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
         return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (MAPS[b.id] ? '<button class="lb-map" type="button" data-epmap="' + b.id + '" aria-label="Explore the ' + esc(MAPS[b.id].n) + '">🏷️ 🕸 Network map</button>' : '') + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
@@ -1036,12 +1090,16 @@ body.book-open #libBanner{display:none}
     else if(libSort === 'priority') list.sort(function(a, b){ var pa = a.status === 'ready' ? 0 : (a.priority || 99), pb = b.status === 'ready' ? 0 : (b.priority || 99); return pa - pb || a.vol - b.vol; });
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
     var series = list.filter(function(b){ return b.ser; }); list = list.filter(function(b){ return !b.ser; });
+    var epB = series.filter(function(b){ return b.ser === SER_EP; }), deB = series.filter(function(b){ return b.ser !== SER_EP; });
+    var epV = VIDEOS.filter(function(v){ return v.sec === 'epstein' && (!q || q.split(/\s+/).every(function(w){ return (v.title + ' ' + v.by + ' video youtube').toLowerCase().indexOf(w) >= 0; })); });
+    var epShelf = epB.concat(epV);
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
-    $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (series.length ? '<section class="lb-sec lb-series"><h2>The Dark Enlightenment Series</h2><p class="sub">A separate series on a story still unfolding: a body of ideas that calls democracy a failure, the money and people around it, and the machinery of 2025\u20132026, each tested against the record. Not part of The Israel Architecture, which covers events that have already happened.</p>' + shelf(series) + '</section>' : '') +
+    $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec lb-is"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
+      (epShelf.length ? '<section class="lb-sec lb-series lb-ep" style="--sc:#2B3B4E"><h2>The Epstein Network Architecture</h2><p class="sub">A separate section: the book, its interactive network map and outside videos, on one shelf. Not part of The Israel Architecture. Videos open on YouTube in a new tab and are each creator\u2019s own argument, not part of the sourced book.</p>' + shelf(epShelf) + '</section>' : '') +
+      (deB.length ? '<section class="lb-sec lb-series lb-de" style="--sc:#6B1E2B"><h2>The Dark Enlightenment Architecture</h2><p class="sub">A separate section on a story still unfolding: a body of ideas that calls democracy a failure, the money and people around it, and the machinery of 2025\u20132026, each tested against the record. Not part of The Israel Architecture, which covers events that have already happened.</p>' + shelf(deB) + '</section>' : '') +
       (prep.length ? '<section class="lb-sec lb-soon"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
         (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
-      (!ready.length && !prep.length && !series.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
+      (!ready.length && !prep.length && !epShelf.length && !deB.length ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
   function toLibrary(){ if(history.state && history.state.fromLib && !view.classList.contains('lib')) history.back(); else showLibrary(); }
@@ -1067,7 +1125,7 @@ body.book-open #libBanner{display:none}
   var LT = [
     {t:'Welcome to the library', b:'Every chapter of the simulation becomes a book here, written as continuous history with every claim tied to its source. There is no set order: pick whichever book you want.'},
     {sel:'.lb-sec .lb-book:not(.soon)', t:'Ready to read', b:'These volumes are finished. Tap a cover to open it. The Baseline lays the ground before the history; The Road to 1948 tells the founding stage by stage. Start with either one.'},
-    {sel:'.lb-series h2', t:'A separate series', b:'Below the Israel volumes sits The Dark Enlightenment Series: eight books on a story still unfolding, numbered Book I to VIII so they are never confused with the volumes above.'},
+    {sel:'.lb-ep h2', t:'Separate sections', b:'Below the Israel volumes sit two more sections, each with its own label: The Epstein Network Architecture (the book, its interactive map and outside videos, which open on YouTube in a new tab) and The Dark Enlightenment Architecture (eight books, numbered I to VIII). Their numbering is separate, so they are never confused with the Israel volumes.'},
     {sel:'.lb-soon h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
     {sel:'.lb-ctl', t:'Search and sort', b:'Search every volume by title, person, place or year, and sort the shelf by reading order, era or title.'},
     {sel:'#bkFab', t:'Back to the simulation, any time', b:'Tap + and choose "Simulation, scene by scene" to return to the scene-by-scene view. The same menu changes the page to paper, sepia or night and replays this tour. Next time you visit, we open whichever view you used last.'},
@@ -1101,7 +1159,7 @@ body.book-open #libBanner{display:none}
   window.libraryTour = function(){ if(!view.classList.contains('on')) openBook(null); setTimeout(function(){ libTour(true); }, 400); };
   window.openLibrary = function(){ openBook(null); };
   lib.addEventListener('click', function(e){
-    var em = e.target.closest('[data-epmap]'); if(em){ openEpMap(em.getAttribute('data-epmap')); return; }
+    var em = e.target.closest('[data-epmap]'); if(em){ openEpMap(em.getAttribute('data-epmap'), em.getAttribute('data-epmap')); return; }
     var b = e.target.closest('[data-b]'); if(b){ if(b.classList.contains('meta')) b = lib.querySelector('.lb-book[data-b="' + b.getAttribute('data-b') + '"]'); var bk = BOOKS[+b.getAttribute('data-b')];
       if(bk.status === 'ready') openReader(+b.getAttribute('data-b'), null, null, true);
       else openSheet('<h3>' + esc(bk.title) + '</h3><p style="font-size:15px;line-height:1.5;margin:0 0 10px">Volume ' + roman(bk.vol) + ' is being written. Its ' + bk.count + ' parts are already in the simulation, each with its sources.</p><div class="bk-btns"><button data-a="dismiss">Back to the library</button><button class="pri" data-sim-open="' + esc(bk.first) + '">Open it in the simulation</button></div>');
@@ -1267,12 +1325,14 @@ body.book-open #libBanner{display:none}
     else if(a2.indexOf('lth-') === 0){ prefs.theme = a2.slice(4); applyPrefs(); var tb = lib.querySelector('[data-lib-theme]'); if(tb) tb.textContent = 'Page: ' + prefs.theme.replace(/^./, function(x){ return x.toUpperCase(); }); libMenu(); }
     else if(a2.indexOf('th-') === 0){ prefs.theme = a2.slice(3); applyPrefs(); menu(); }
     else if(a2 === 'share'){ var u = location.href.split('#')[0] + '#book=' + (curSec || ''); hideAll(); if(navigator.share) navigator.share({title:BOOK.title + ' · ' + SERN(BOOK), text:curHeading(), url:u}).catch(function(){}); else { try{ navigator.clipboard.writeText(u); toast('Link copied'); }catch(er){} } }
-    else if(a2 === 'epmap'){ hideAll(); openEpMap(BOOK && MAPS[BOOK.id] ? BOOK.id : 'epstein'); }
-    else if(a2 === 'rdmap'){ hideAll(); openEpMap('road1948'); }
-    else if(a2 === 'atlas'){ hideAll(); openEpMap('atlas'); }
+    else if(a2 === 'epmap'){ var fr = fromRef(); hideAll(); openEpMap(BOOK && MAPS[BOOK.id] ? BOOK.id : 'epstein', fr); }
+    else if(a2 === 'rdmap'){ var fr = fromRef(); hideAll(); openEpMap('road1948', fr); }
+    else if(a2 === 'atlas'){ var fr = fromRef(); hideAll(); openEpMap('atlas', fr); }
     else if(a2 === 'close') closeBook(null);
   });
-  function openEpMap(id){ var f = (MAPS[id] || MAPS.epstein).f, w = null; try{ w = window.open(f, '_blank'); if(w) w.opener = null; }catch(er){} if(!w) location.href = f; }
+  /* maps open in this tab and remember where they were opened from, so Back returns to that book (and section), not the shelf */
+  function fromRef(){ var inBook = view.classList.contains('on') && !view.classList.contains('lib'); return (inBook && curSec) ? curSec : (BOOK ? BOOK.id : ''); }
+  function openEpMap(id, from){ var f = (MAPS[id] || MAPS.epstein).f; if(from) f += '?from=' + encodeURIComponent(from); location.href = f; }
   function libMenu(){
     openSheet('<h3>Library</h3>' +
       '<button class="row" data-a="close"><i>◉</i><span>Simulation, scene by scene<small>Back to the scene you were on</small></span></button>' +
