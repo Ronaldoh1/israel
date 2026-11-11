@@ -225,6 +225,17 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
 .prof dt{font-weight:700;opacity:1}.prof dd{margin:0;overflow-wrap:anywhere}.prof small{font-size:12px}
 .pl{margin:0;padding-left:16px}.pl li{margin:0 0 2px}.pn{font-style:italic}
 #q{width:100%}
+svg line{vector-effect:non-scaling-stroke}
+.zoom #lblBtn{display:none;font-size:13px;font-weight:700}.zoom #lblBtn.on{display:grid}
+.lblPop{display:none;position:absolute;right:46px;top:134px;width:200px;padding:10px 12px;border-radius:14px;border:1px solid var(--gold-2);background:var(--panel);box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:12px;color:var(--ink)}
+.lblPop.open{display:block}.lblRow{display:flex;justify-content:space-between;margin-bottom:6px;color:var(--muted)}.lblRow b{font-weight:600;color:var(--ink)}
+.lblPop input{width:100%}.zoom .lblPop button{width:auto;height:auto;margin-top:6px;padding:4px 10px;border-radius:8px;font-size:12px;display:inline-block}
+svg#g{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+g.n{-webkit-tap-highlight-color:transparent}
+@media (pointer:coarse){
+  g.n.sel .halo{animation:none;opacity:.55;transform:scale(1.5)}
+  .hd,.legend,.zoom button{backdrop-filter:none;-webkit-backdrop-filter:none}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head>
 <body>
@@ -265,7 +276,7 @@ g.n.sel .halo{opacity:1;animation:pulse 1.8s ease-out infinite;transform-box:fil
     <section class="board" id="board" aria-label="Network graph">
       <svg id="g" role="img" aria-label="Network graph. Tap a node for details."></svg>
       <div class="hud"><div class="legend" id="legend"></div><div class="stat" id="stat"></div></div>
-      <div class="zoom"><button id="zIn" type="button" aria-label="Zoom in">+</button><button id="zOut" type="button" aria-label="Zoom out">−</button><button id="zFit" type="button" aria-label="Fit graph to screen">⤢</button></div>
+      <div class="zoom"><button id="zIn" type="button" aria-label="Zoom in">+</button><button id="zOut" type="button" aria-label="Zoom out">−</button><button id="zFit" type="button" aria-label="Fit graph to screen">⤢</button><button id="lblBtn" type="button" aria-label="How many labels to show">Aa</button><div class="lblPop" id="lblPop"><div class="lblRow"><b>Labels in view</b><span id="lblVal">auto</span></div><input id="lblRange" type="range" min="3" max="24" step="1" value="10" aria-label="Number of labels"><button id="lblAuto" type="button">Auto</button></div></div>
       <div class="callout" id="callout" role="dialog" aria-label="Node summary"></div>
     </section>
     <aside class="sheet" id="sheet" data-state="peek">
@@ -318,7 +329,9 @@ function shortestPath(a,b){
   const nodes=new Set([b]), edges=new Set(); let c=b; while(prev.get(c)){ const [p,i]=prev.get(c); edges.add(i); nodes.add(p); c=p; }
   return {nodes,edges};
 }
-function findLoops(){
+let _lc=null;
+function findLoops(){ const k=$('root').value+'|'+E.length; if(!_lc||_lc.k!==k) _lc={k,v:findLoopsRaw()}; return _lc.v; }
+function findLoopsRaw(){
   const root=$('root').value, tie=new Map(), key=new Map();
   E.forEach((e,i)=>{ if(e.status!=='verified'||PROBE.has(e.type)||e.f===root||e.t===root) return;
     [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!tie.has(u)) tie.set(u,new Set()); tie.get(u).add(v); key.set(u+'|'+v,i); }); });
@@ -369,17 +382,89 @@ function delPanel(r){
 /* ---------- graph ---------- */
 const svg=d3.select('#g'), gz=svg.append('g'), gl=gz.append('g'), gn=gz.append('g');
 let sim=null, posCache=new Map(), live=new Map(), curT=d3.zoomIdentity, needFit=true, calloutId=null;
-const zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',ev=>{ curT=ev.transform; gz.attr('transform',curT); placeCallout(); labels(); });
+const zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',ev=>{ curT=ev.transform; gz.attr('transform',curT); placeCallout(); labelsSoon(); });
 svg.call(zoom);
-svg.on('click',ev=>{ if(ev.target===svg.node()) hideCallout(); });
+/* ---------- touch guards: keep a tap, a pinch and a transition from fighting each other ---------- */
+svg.on('dblclick.zoom',null);                     /* double-tap zoom raced the node-focus transition */
+let focusTimer=null, lastPickAt=0, lastPickId=null, lastAnyPick=0, pendPick=null, picking=false, pinchUntil=0, simDeadline=0, pcRaf=0, lbRaf=0, lastSig='', errN=0, errAt=0;
+(function(){ const el=svg.node();
+  el.addEventListener('pointerdown',()=>{ clearTimeout(focusTimer); clearTimeout(pendPick); svg.interrupt(); },{passive:true,capture:true});
+  ['touchstart','touchend','touchcancel'].forEach(t=>el.addEventListener(t,e=>{ if(e.touches.length>1||(t!=='touchstart'&&e.touches.length>0)||t==='touchcancel') pinchUntil=Date.now()+450; },{passive:true,capture:true}));
+})();
+const labelsSoon=()=>{ if(lbRaf) return; lbRaf=requestAnimationFrame(()=>{ lbRaf=0; try{ labels(); }catch(_){} }); };
+/* back to a clean, idle state without reloading the page */
+function recover(){
+  try{ clearTimeout(focusTimer); clearTimeout(pendPick); svg.interrupt(); if(sim){ sim.alphaTarget(0); sim.stop(); }
+    picking=false; sel=null; pathA=null; hiNodes=new Set(); hiEdges=new Set(); hideCallout(); draw(true); }catch(_){}
+}
+window.addEventListener('error',()=>{ const t=Date.now(); if(t-errAt>4000) errN=0; errAt=t; if(++errN<=3) setTimeout(recover,0); });
+window.addEventListener('unhandledrejection',()=>{ const t=Date.now(); if(t-errAt>4000) errN=0; errAt=t; if(++errN<=3) setTimeout(recover,0); });
+/* tap on empty canvas (or an edge) clears the selection */
+function deselect(){
+  if(Date.now()<pinchUntil) return;
+  clearTimeout(focusTimer);
+  if(mode==='del'){ hideCallout(); return; }
+  if(sel==null && !calloutId) return;
+  sel=null; pathA=null; hiNodes=new Set(); hiEdges=new Set(); hideCallout(); draw(true); intro(); if(isMobile()) setSheet('peek');
+}
+svg.on('click',ev=>{ if(!ev.target.closest('g.n')) deselect(); });
 
 function palette(){ const c={}; KINDS.forEach(k=>c[k]=css('--k-'+k)); return Object.assign(c,{hi:css('--hi'),nest:css('--nest'),line:css('--edge'),wh:css('--wh'),tov:css('--tov'),panel:css('--panel'),gold:css('--gold')}); }
 let C=palette();
 const kc = id => C[KINDS.includes(N.get(id).kind)?N.get(id).kind:'place'];
-function visLabel(d,count){ return count<40||d.id===sel||hiNodes.has(d.id)||d.id===$('root').value||(DEG.get(d.id)||0)>=(count>200?16:7)||curT.k>=(count>200?2.2:1.7); }
-function labels(){ const count=live.size, fs=count>200?Math.min(26,Math.max(11,13/Math.max(curT.k,.25))):11; gn.selectAll('g.n text').attr('opacity',d=>visLabel(d,count)?1:0).attr('font-size',fs).attr('dy',count>200?-fs*0.9:-12); }
+/* ---------- adaptive labels: device-aware, ranked by each node's weight in the current state, centred on what you are looking at ---------- */
+let fitK=1, lastK=-1, lastMob=null, lbTick=0, liveDeg=new Map(), impKey='', impMap=new Map(), lblN=null;
+const dotBase=d=>d.id===$('root').value?11:d.d===0?10:(DEG.get(d.id)||0)>=10?8.5:7;
+const rs=()=>Math.pow(Math.max(curT.k,.5),-.6);          /* dots grow slower than the zoom so they never swallow the screen */
+function device(){ const W=svg.node().clientWidth||600, H=svg.node().clientHeight||600, mobile=W<700||(matchMedia('(pointer:coarse)').matches&&W<900);
+  return mobile?{W,H,mobile,fs:12,zout:7,zin:10,zmax:24,chars:22,top:64}:{W,H,mobile,fs:13,zout:16,zin:26,zmax:70,chars:30,top:56}; }
+/* weight of every node in the CURRENT scenario: its share of what is still standing, so removing a node re-ranks everyone; restoring puts it back */
+function importance(){
+  const key=[...removed].sort().join(',')+'|'+((typeof vDrop!=='undefined')?[...vDrop].join(',')+'|'+[...vNoVote].join(',')+'|'+[...vFlip].join(','):'')+'|'+lastSig.length;
+  if(key===impKey&&impMap.size) return impMap;
+  const m=new Map(), bump=(id,s)=>m.set(id,(m.get(id)||0)+s);
+  try{ if(typeof VB!=='undefined'&&VB.edges){
+    const road=typeof vLost==='function'; let ok;
+    if(road){ const rem=vLost(removed), seen=vReach(rem); ok=(f,t)=>!(rem.has(f)||rem.has(t)||vDrop.has(f+'>'+t))&&(seen.has(f)||seen.has(t)); }
+    else { const al=vAlive(removed); ok=(f,t)=>!(removed.has(f)||removed.has(t))&&(al.has(f)||al.has(t))&&!(VENT.has(f)&&!al.has(f))&&!(VENT.has(t)&&!al.has(t)); }
+    for(const e of VB.edges){ const f=e[0], t=e[1], c=e[2], val=road?e[4]:e[3]; if(!val||!ok(f,t)) continue; const s=((VB.exp&&VB.exp[c])||1)*val/((VB.cap0&&VB.cap0[c])||1); bump(f,s); bump(t,s); }
+  } }catch(_){ m.clear(); }
+  const alive=[...live.keys()].filter(id=>!removed.has(id)); let maxS=1e-9, maxD=1; for(const id of alive){ maxS=Math.max(maxS,m.get(id)||0); maxD=Math.max(maxD,liveDeg.get(id)||0); }
+  const sorted=alive.map(id=>[id,(m.get(id)||0)/maxS*.85+(liveDeg.get(id)||0)/maxD*.15]).sort((a,b)=>b[1]-a[1]);
+  const out=new Map(); sorted.forEach(([id],i)=>out.set(id,1-i/Math.max(1,sorted.length)));
+  impKey=key; impMap=out; return out; }
+function labels(){
+  const dv=device(), k=curT.k, count=live.size, r=k/Math.max(fitK,.01), fs=dv.fs, small=count<40;
+  const t=Math.max(0,Math.min(1,(r-1.25)/.9));                       /* 0 = overview, 1 = zoomed in */
+  const nIn=lblN==null?dv.zin:lblN, nOut=Math.round(dv.zout*(.7+.3*Math.min(r,1.25)/1.25));
+  const n=small?count:Math.round(nOut*(1-t)+nIn*t);
+  const imp=importance(), vh=Math.min(dv.H,visibleH()), cx=dv.W/2, cy=dv.top+(vh-dv.top)/2, maxD=Math.hypot(dv.W/2,(vh-dv.top)/2)||1;
+  const pin=new Set([sel,calloutId,$('root').value].filter(Boolean)); [...hiNodes].sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,10).forEach(x=>pin.add(x));
+  const cand=[], f=rs();
+  for(const [id,p] of live){ if(!isFinite(p.x)) continue; const sx=curT.x+k*p.x, sy=curT.y+k*p.y, isPin=pin.has(id);
+    if(!isPin&&!small&&(sx<-10||sx>dv.W+10||sy<-10||sy>vh+10)) continue;
+    const cent=1-Math.min(1,Math.hypot(sx-cx,sy-cy)/maxD), w=imp.get(id)||0;
+    cand.push({id,sx,sy,pin:isPin,s:isPin?10:(1-t)*w+t*(.7*cent+.3*w)}); }
+  cand.sort((a,b)=>b.s-a.s);
+  const keep=new Set(), boxes=[], nm=id=>{ const s=N.get(id).name; return s.length>dv.chars?s.slice(0,dv.chars-2)+'…':s; };
+  for(const c of cand){ if(!small&&!c.pin&&keep.size>=n) break;
+    if(!small){ const text=nm(c.id), w=text.length*fs*.62+10, h=fs*1.25, x0=c.sx-w/2, y0=c.sy-dotBase(live.get(c.id))*f*k-3-h;
+      if(!c.pin&&(x0<4||x0+w>dv.W-4||y0<4)) continue;
+      if(!c.pin&&boxes.some(b=>x0<b[2]&&x0+w>b[0]&&y0<b[3]&&y0+h>b[1])) continue; boxes.push([x0-2,y0-1,x0+w+2,y0+h+1]); }
+    keep.add(c.id); }
+  const restyle=Math.abs(k-lastK)>.005||lastMob!==dv.mobile; lastK=k; lastMob=dv.mobile;
+  if(restyle){ gn.selectAll('circle.dot').attr('r',d=>dotBase(d)*f); gn.selectAll('circle.halo').attr('r',14*f); gn.selectAll('circle.hit').attr('r',Math.min(26,Math.max(17*f,18/k))); }
+  gn.selectAll('g.n text').each(function(d){ const on=keep.has(d.id), el=d3.select(this);
+    if(restyle||this.__on!==on){ el.attr('display',on?null:'none'); if(on){ el.text(nm(d.id)).attr('font-size',fs/k).attr('dy',-(dotBase(d)*f+4/k)).style('stroke-width',(3.2/k)+'px'); } }
+    this.__on=on; });
+  const zin=r>=1.3, b=$('lblBtn'), pop=$('lblPop'); b.classList.toggle('on',zin); if(!zin) pop.classList.remove('open');
+  const sl=$('lblRange'); if(+sl.max!==dv.zmax) sl.max=dv.zmax; if(document.activeElement!==sl) sl.value=nIn; $('lblVal').textContent=lblN==null?'auto':String(nIn); }
+$('lblBtn').onclick=()=>$('lblPop').classList.toggle('open');
+$('lblRange').oninput=e=>{ lblN=+e.target.value; labels(); };
+$('lblAuto').onclick=()=>{ lblN=null; labels(); };
+window.addEventListener('resize',()=>labelsSoon());
 
-function draw(){
+function draw(soft){
   C=palette();
   const depth=visibleSet(), ids=[...depth.keys()];
   const W=svg.node().clientWidth||600, H=svg.node().clientHeight||600;
@@ -389,6 +474,9 @@ function draw(){
   const links=[]; E.forEach((e,i)=>{ if(!depth.has(e.f)||!depth.has(e.t)) return;
     if(e.status==='not-established' && !$('ne').checked) return; if(e.status==='withheld'&&!$('wh').checked) return; if(!['verified','withheld','not-established'].includes(e.status)&&!$('tv').checked) return;
     links.push({source:e.f,target:e.t,i}); });
+  const sig=ids.join('|')+'#'+links.map(l=>l.i).join(',');
+  liveDeg=new Map(); links.forEach(l=>{ liveDeg.set(l.source,(liveDeg.get(l.source)||0)+1); liveDeg.set(l.target,(liveDeg.get(l.target)||0)+1); });
+  const sameGraph=soft===true&&sig===lastSig; lastSig=sig;
   $('stat').textContent = `${nodes.length} nodes · ${links.length} edges`;
   const rem=d=>removed.has(E[d.i].f)||removed.has(E[d.i].t);
   const ls=gl.selectAll('line').data(links,d=>d.i).join('line')
@@ -401,23 +489,26 @@ function draw(){
       g.append('circle').attr('class','halo').attr('r',14); g.append('circle').attr('class','dot'); g.append('circle').attr('class','hit').attr('r',17).attr('fill','transparent');
       g.append('title'); g.append('text').attr('dy',-12).attr('text-anchor','middle').attr('font-size',11); return g; });
   ng.attr('aria-label',d=>N.get(d.id).name).classed('sel',d=>d.id===sel); ng.select('title').text(d=>N.get(d.id).name);
-  ng.select('circle.dot').attr('r',d=>d.id===$('root').value?11:d.d===0?10:(DEG.get(d.id)||0)>=10?8.5:7)
+  ng.select('circle.dot').attr('r',d=>dotBase(d)*rs())
     .attr('fill',d=>kc(d.id))
     .attr('stroke',d=>(d.id===sel||hiNodes.has(d.id))?C.hi:C.panel).attr('stroke-width',d=>(d.id===sel||hiNodes.has(d.id))?3:1.6)
     .attr('opacity',d=>removed.has(d.id)?.25:hiNodes.size&&!hiNodes.has(d.id)?.35:1);
   ng.select('text').text(d=>{ const s=N.get(d.id).name; return s.length>26?s.slice(0,24)+'…':s; });
-  labels();
+  lastK=-1; labels();
   ng.on('click',(ev,d)=>{ ev.stopPropagation(); pick(d.id); }).on('keydown',(ev,d)=>{ if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();pick(d.id);} });
   /* on touch screens nodes are not draggable: a drag that starts on a node would swallow the second finger of a pinch */
-  if(!matchMedia('(pointer:coarse)').matches) ng.call(d3.drag().clickDistance(6).on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
-    .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on('end',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+  if(!matchMedia('(pointer:coarse)').matches) ng.call(d3.drag().clickDistance(6).on('start',(ev,d)=>{ simDeadline=Infinity; if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
+    .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on('end',(ev,d)=>{ simDeadline=Date.now()+3000; if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
   if(sim) sim.stop();
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const paint=()=>{ ls.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+  const paint=()=>{ if(Date.now()>simDeadline&&sim){ sim.alphaTarget(0); sim.stop(); labelsSoon(); } if(++lbTick%12===0) labelsSoon();
+  ls.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
       ng.attr('transform',d=>`translate(${d.x},${d.y})`); nodes.forEach(n=>posCache.set(n.id,{x:n.x,y:n.y})); placeCallout(); };
   sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(d=>d.id).distance(l=>nodes.length>120?46:70).strength(.5))
     .force('charge',d3.forceManyBody().strength(nodes.length>120?-120:-170)).force('center',d3.forceCenter(W/2,H/2)).force('collide',d3.forceCollide(15))
-    .alpha(needFit?1:.45).on('tick',paint);
+    .alpha(needFit?1:.45).on('tick',paint).on('end',()=>labelsSoon());
+  simDeadline=Date.now()+8000;
+  if(sameGraph&&!needFit){ sim.alpha(0); sim.stop(); paint(); }   /* same nodes and edges: restyle only, no re-shake */
   if(needFit||reduce){ for(let k=0;k<(reduce?250:170);k++) sim.tick(); paint(); }
   if(needFit){ fit(false); needFit=false; }
   if(reduce) sim.stop();
@@ -431,7 +522,7 @@ function fit(animate=true){
   const pts=[...live.values()].filter(p=>isFinite(p.x)); if(!pts.length) return;
   const x0=d3.min(pts,p=>p.x),x1=d3.max(pts,p=>p.x),y0=d3.min(pts,p=>p.y),y1=d3.max(pts,p=>p.y);
   const bw=svg.node().clientWidth, top=isMobile()?64:56, vh=visibleH('peek')-0, pad=34;
-  const k=clamp(Math.min((bw-2*pad)/Math.max(1,x1-x0),(vh-top-pad)/Math.max(1,y1-y0),1.5),.04,4);
+  const k=clamp(Math.min((bw-2*pad)/Math.max(1,x1-x0),(vh-top-pad)/Math.max(1,y1-y0),1.5),.04,4); fitK=k;
   const cx=(x0+x1)/2, cy=(y0+y1)/2;
   setT(d3.zoomIdentity.translate(bw/2-k*cx, top+(vh-top)/2-k*cy).scale(k), animate?600:0);
 }
@@ -466,7 +557,8 @@ function showCallout(id){
   callout.classList.add('on'); placeCallout();
 }
 function hideCallout(){ calloutId=null; callout.classList.remove('on'); }
-function placeCallout(){
+function placeCallout(){ if(pcRaf) return; pcRaf=requestAnimationFrame(()=>{ pcRaf=0; try{ placeCalloutNow(); }catch(_){} }); }
+function placeCalloutNow(){
   if(!calloutId) return; const p=live.get(calloutId); if(!p||!isFinite(p.x)){ return; }
   const bw=svg.node().clientWidth, bh=svg.node().clientHeight;
   const sx=curT.applyX(p.x), sy=curT.applyY(p.y);
@@ -500,12 +592,21 @@ new MutationObserver(()=>{ const s=$('side'); const k=s.querySelector('.kind'), 
 
 /* ---------- selection ---------- */
 function pick(id){
+  const now=Date.now();
+  if(now<pinchUntil) return;                                   /* finger count changed: a pinch, not a tap */
+  if(id===lastPickId&&now-lastPickAt<350) return;              /* touch + click double fire */
+  if(now-lastAnyPick<140){ clearTimeout(pendPick); pendPick=setTimeout(()=>pick(id),140-(now-lastAnyPick)+5); return; }
+  if(picking) return;
+  lastPickId=id; lastPickAt=lastAnyPick=now; picking=true;
+  try{ pickNow(id); }catch(err){ console.error(err); recover(); }finally{ picking=false; }
+}
+function pickNow(id){
   if(mode==='expand'){ sel=id; expanded.add(id); hiNodes=new Set(); hiEdges=new Set(); }
-  else if(mode==='del'){ if(removed.has(id)) removed.delete(id); else removed.add(id); sel=id; const r=reconnect(); hiNodes=r.nodes; hiEdges=r.edges; delPanel(r); hideCallout(); draw(); setSheet('mid'); return; }
+  else if(mode==='del'){ if(removed.has(id)) removed.delete(id); else removed.add(id); sel=id; const r=reconnect(); hiNodes=r.nodes; hiEdges=r.edges; delPanel(r); hideCallout(); draw(true); setSheet('mid'); return; }
   else if(mode==='up'){ sel=id; const r=upwardFrom(id); hiNodes=r.nodes; hiEdges=r.edges; }
   else if(mode==='path'){ if(!pathA||pathA===id){ pathA=id; sel=id; hiNodes=new Set([id]); hiEdges=new Set(); }
-    else { const r=shortestPath(pathA,id); sel=id; hiNodes=r?r.nodes:new Set([pathA,id]); hiEdges=r?r.edges:new Set(); side(id, r?null:'No documented path between these two.'); pathA=null; draw(); showCallout(id); setSheet('mid'); return; } }
-  side(id); draw(); showCallout(id); setSheet('mid'); focusNode(id); setTimeout(()=>{ if(sel===id) focusNode(id); },650);
+    else { const r=shortestPath(pathA,id); sel=id; hiNodes=r?r.nodes:new Set([pathA,id]); hiEdges=r?r.edges:new Set(); side(id, r?null:'No documented path between these two.'); pathA=null; draw(true); showCallout(id); setSheet('mid'); return; } }
+  side(id); draw(true); showCallout(id); setSheet('mid'); focusNode(id); clearTimeout(focusTimer); focusTimer=setTimeout(()=>{ if(sel===id) focusNode(id); },650);
 }
 
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
@@ -627,5 +728,14 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
 new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 const T0=Date.now(); let rt=null; new ResizeObserver(()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(Date.now()-T0<2500) fit(false); if(sim){ sim.force('center',d3.forceCenter(svg.node().clientWidth/2,svg.node().clientHeight/2)); } placeCallout(); },120); }).observe($('board'));
 draw(); intro(); fit(false);
+</script>
+<script>
+/* Back returns to the book (and section) this map was opened from; the map entry is replaced so Back from the book goes on to the shelf */
+(function(){ var a=document.querySelector('a.back'); if(!a) return;
+  var m=location.search.match(/[?&]from=([^&]+)/), from=m?m[1]:'';
+  if(!(from&&/^[\w.%\-]+$/.test(from))) return;
+  a.href='index.html#book='+from;
+  a.addEventListener('click',function(e){ e.preventDefault(); location.replace(a.href); });
+})();
 </script>
 </html>

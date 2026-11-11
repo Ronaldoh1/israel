@@ -38,7 +38,7 @@ for _f in ('viab_ui.js', 'tests_ui.js'):   # a syntax error in either script wou
     assert _r.returncode == 0, _r.stderr
 import viability as _vb
 _M = _vb.model(d)
-D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'eyear', 'stock', 'material', 'y0', 'y1', 'year_ch', 'power', 'gdp1950', 'incorp', 'addressee', 'strict', 'framework', 'decisions', 'stance', 'unknown_successor', 'tied', 'blocs']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'])) for e in d['edges']]}
+D = {'built': d['built'], 'qop_meta': d['qop_meta'], 'viab': {k: _M[k] for k in ['channels', 'labels', 'need', 'core', 'edges', 'groups', 'cap0', 'cal', 'tbuild', 'tfrom', 'amounts', 'default_m', 'drop', 'issuers', 'exp', 'conduit', 'hazard', 'horizons', 'verdict', 'vote', 'vote_mode', 'carriers', 'actors', 'eyear', 'stock', 'material', 'y0', 'y1', 'year_ch', 'power', 'gdp1950', 'incorp', 'addressee', 'strict', 'framework', 'decisions', 'stance', 'unknown_successor', 'tied', 'blocs']}, 'viability_meta': d.get('viability_meta'), 'nodes': d['nodes'], 'edges': [dict(e, refs=e.get('refs') or resolve(e['src'])) for e in d['edges']]}
 D['viab']['alt'] = json.load(open(os.path.join(HERE, 'alt_layer.json')))   # other homelands, measured on the same six channels
 t = open(os.path.join(REPO, 'book/plan/epstein_map/graph_explorer_template.html'), encoding='utf-8').read()
 A, B = d['qop_meta']['anchor_names']
@@ -94,5 +94,8 @@ t = t.replace("mentions:q=>q.mentions||0,", "mentions:q=>q.mentions||0, viabilit
 t = t.replace('volume volumes sources book mentions.', 'volume volumes sources book mentions viability rating.', 1)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO, 'road-network.html')
+for _a, _b in json.load(open(os.path.join(HERE, 'road_page_patch.json')))['patches']:   # road-only page changes (v54)
+    assert t.count(_a) == 1, 'road patch context not found: ' + _a[:80]
+    t = t.replace(_a, _b)
 open(out, 'w', encoding='utf-8').write(t)
 print('built', out, len(d['nodes']), 'nodes', len(d['edges']), 'edges; unresolved source parts', unres)

@@ -43,7 +43,7 @@ function vReadTable(R){ const row=(l,v,sub)=>`<tr><td>${l}${sub?`<small style="d
   if(R.deal==null) return `<table class="vread">${row('The operation runs as documented, 1991–2019',R.P/100)}<tr><td colspan="2" style="text-align:left;font-family:inherit;font-weight:400">With Epstein removed there is no operation of his to shield or to bring to account.</td></tr></table>`;
   return `<table class="vread">${row('The operation runs as documented, 1991–2019',R.P/100)}${row('The 2008 deal is still made',R.deal,'against the record, where it was made')}${row('The 2019 arrest still comes',R.arrest,'against the record, where it came')}${row('He is brought to account (2008 or 2019)',R.account,'no deal means a federal case in 2008')}</table>`; }
 function vHead(R){ const v=vVerdict(R.P); return `<div class="vbig"><b style="color:${vColor(R.P)}">${Math.round(R.P)}%</b><span style="font-weight:600">${esc(v)}</span></div>${vReadTable(R)}`; }
-function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.cover.includes(i)?' <em>half weight</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
+function vBars(R){ return VB.channels.map((c,i)=>`<div class="vrow"><span>${esc(VB.labels[c])}${VB.cover.includes(i)?' <em>cover</em>':''}</span><span class="vbar"><i style="width:${Math.round(R.pc[i]*100)}%;background:${vColor(R.pc[i]*100)}"></i></span><span class="vnum">${Math.round(R.pc[i]*100)}%</span></div>`).join(''); }
 function vDecText(R){ if(!R.decisions||!R.decisions.length) return '';
   return `<ul class="vul">${R.decisions.map(x=>{ const D=VB.decisions.find(d=>d.id===x.id); return `<li><b>${esc(x.name)}</b>: ${x.decider?`decided by ${esc(vName(x.decider))}${x.decider!==D.decider?` instead of ${esc(vName(D.decider))}`:''}`:'no one left to decide'}; chance it still happens, against the record: <b>${Math.round(x.chance*100)}%</b>.</li>`; }).join('')}</ul>`; }
 function vNeed(R){ if(R.gone) return `<p class="vtxt"><b>No one is left to run it.</b> Epstein and Maxwell are both removed; the companies, trusts, properties and aircraft fall with them, so every channel counts as empty.</p>`;
@@ -84,19 +84,140 @@ document.head.insertAdjacentHTML('beforeend', `<style>
 .vsig .x{border:0;background:transparent;color:var(--muted);font-size:20px;line-height:1;padding:2px 6px;cursor:pointer}
 .vsig .bar{grid-column:1/-1;height:2px;border-radius:2px;background:var(--lc);transform-origin:left;opacity:.6}
 @media (prefers-reduced-motion:reduce){.vsig{transition:none}}
+
+.vmodal.ipm{background:radial-gradient(90% 70% at 50% 8%,rgba(40,30,70,.42),rgba(3,6,14,.86));-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px)}
+.vcard.ivc{--ia:var(--gold);position:relative;width:min(660px,100%);max-height:min(780px,calc(100dvh - 32px));padding:0;display:flex;flex-direction:column;overflow:hidden;border-radius:26px;border:1px solid color-mix(in srgb,var(--ia) 42%,var(--line));background:radial-gradient(120% 65% at 0% 0%,color-mix(in srgb,var(--ia) 22%,transparent),transparent 62%),radial-gradient(80% 55% at 100% 100%,color-mix(in srgb,var(--ia) 13%,transparent),transparent 66%),linear-gradient(180deg,color-mix(in srgb,var(--panel-2) 78%,var(--panel)),var(--panel));box-shadow:0 44px 110px rgba(0,0,0,.6),0 0 60px -20px color-mix(in srgb,var(--ia) 55%,transparent),inset 0 1px 0 color-mix(in srgb,var(--ia) 40%,transparent);transition:border-color .4s,box-shadow .4s}
+.vcard.ivc::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--ia) 30%,var(--ia) 70%,transparent);z-index:3}
+.ip-wm{position:absolute;right:20px;top:46px;font:900 150px/1 var(--f-display);color:var(--ia);opacity:.07;pointer-events:none;user-select:none;letter-spacing:-.04em;z-index:0;transition:color .4s}
+.ip-top{position:relative;z-index:2;display:flex;align-items:center;gap:14px;padding:18px 18px 4px 22px}
+.ip-prog{flex:1;display:flex;gap:5px}
+.ip-prog i{position:relative;flex:1;height:4px;border-radius:4px;background:color-mix(in srgb,var(--ink) 13%,transparent);overflow:hidden}
+.ip-prog i::after{content:"";position:absolute;inset:0;border-radius:4px;background:var(--seg);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.ip-prog i.done::after,.ip-prog i.on::after{transform:scaleX(1)}
+.ip-prog i.on::after{box-shadow:0 0 12px var(--seg)}
+.ip-x{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--muted);font:400 20px/1 var(--f-body);cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.ip-x:hover,.ip-x:focus-visible{background:color-mix(in srgb,var(--ia) 22%,transparent);color:var(--ink);outline:none}
+.ip-body{position:relative;z-index:1;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:16px 24px 20px;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ia) 55%,transparent) transparent;-webkit-mask-image:linear-gradient(transparent 0,#000 14px,#000 calc(100% - 26px),transparent 100%);mask-image:linear-gradient(transparent 0,#000 14px,#000 calc(100% - 26px),transparent 100%)}
+.ip-page.inr{animation:ipR .38s cubic-bezier(.2,.8,.2,1) both}.ip-page.inl{animation:ipL .38s cubic-bezier(.2,.8,.2,1) both}
+@keyframes ipR{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:none}}
+@keyframes ipL{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}
+.ip-k{font:600 11px/1 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--ia);display:flex;align-items:center;gap:10px}
+.ip-k::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,color-mix(in srgb,var(--ia) 55%,transparent),transparent)}
+.vcard.ivc .ip-t{font:700 1.8rem/1.14 var(--f-display);letter-spacing:-.012em;margin:14px 0 6px;max-width:90%;color:var(--ink)}
+.ip-sub{font-size:13.5px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:92%}
+.ip-s{margin-top:14px;padding:14px 16px 8px;border-radius:16px;border:1px solid color-mix(in srgb,var(--ia) 20%,var(--line));border-left:3px solid var(--ia);background:linear-gradient(180deg,color-mix(in srgb,var(--ia) 7%,transparent),color-mix(in srgb,var(--ink) 3%,transparent))}
+.ip-s h4{display:flex;gap:9px;align-items:flex-start;margin:0 0 7px;font:600 .98rem/1.3 var(--f-display);color:var(--ink)}
+.ip-s h4::before{content:"";flex:none;width:8px;height:8px;margin-top:6px;border-radius:2px;transform:rotate(45deg);background:var(--ia);box-shadow:0 0 10px color-mix(in srgb,var(--ia) 70%,transparent)}
+.ip-s .vtxt,.ip-s p,.ip-s li{font-size:13.8px;line-height:1.68;color:color-mix(in srgb,var(--ink) 90%,transparent)}
+.ip-s p{margin:0 0 9px}.ip-s ul{margin:2px 0 8px;padding-left:18px}.ip-s b{color:var(--ink);font-weight:600}
+.ip-s table{width:100%;border-collapse:collapse;font-size:12.6px;margin:6px 0 8px}
+.ip-s td{padding:6px 4px;border-top:1px solid color-mix(in srgb,var(--ia) 16%,var(--line));vertical-align:top}
+.ip-s td:last-child{text-align:right;white-space:nowrap;font-family:var(--f-mono);font-weight:600;color:var(--ia)}
+.vcard.ivc .ip-cover .ip-t{font-size:2.1rem;line-height:1.1;margin-top:16px}
+.ip-lede{font-size:14.2px;line-height:1.68;color:color-mix(in srgb,var(--ink) 88%,transparent);margin:10px 0 18px;max-width:94%}
+.ip-toc{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ip-toc button{--ia:var(--gold);position:relative;display:flex;align-items:center;gap:11px;text-align:left;padding:11px 12px;border-radius:14px;cursor:pointer;color:var(--ink);font:600 13px/1.25 var(--f-body);border:1px solid color-mix(in srgb,var(--ia) 28%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--ia) 12%,transparent),color-mix(in srgb,var(--ink) 3%,transparent));transition:transform .18s,border-color .18s,background .18s}
+.ip-toc button:hover,.ip-toc button:focus-visible{transform:translateY(-2px);border-color:var(--ia);outline:none}
+.ip-toc b{flex:none;width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font:700 12px/1 var(--f-mono);background:var(--ia);color:var(--on-accent)}
+.ip-toc span small{display:block;margin-top:2px;font:500 11px/1.2 var(--f-body);color:var(--muted)}
+.ip-foot{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:12px 18px calc(14px + env(safe-area-inset-bottom,0px)) 22px;border-top:1px solid color-mix(in srgb,var(--ia) 24%,var(--line));background:color-mix(in srgb,var(--panel) 78%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.ip-dots{display:flex;align-items:center;gap:6px;flex:1;min-width:0}
+.ip-dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:color-mix(in srgb,var(--ink) 24%,transparent);cursor:pointer;transition:width .25s,background .25s}
+.ip-dots button[aria-current="true"]{width:24px;border-radius:6px;background:var(--ia)}
+.ip-cnt{font:600 11px/1 var(--f-mono);letter-spacing:.1em;color:var(--muted);margin-left:6px;white-space:nowrap}
+.ip-btns{display:flex;gap:8px;flex:none}
+.ip-btn{min-height:40px;padding:0 18px;border-radius:999px;cursor:pointer;font:600 13px/1 var(--f-body);border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);background:transparent;color:var(--ink);transition:transform .15s,opacity .2s,background .2s}
+.ip-btn:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}.ip-btn[disabled]{opacity:.3;cursor:default;pointer-events:none}
+.ip-btn.ip-next{border:0;padding:0 22px;color:var(--on-accent);background:linear-gradient(135deg,var(--ia),color-mix(in srgb,var(--ia) 62%,var(--ink)));box-shadow:0 8px 22px -8px var(--ia)}
+.ip-btn.ip-next:hover{transform:translateY(-1px);background:linear-gradient(135deg,var(--ia),color-mix(in srgb,var(--ia) 62%,var(--ink)))}
+.ip-btn:focus-visible,.ip-dots button:focus-visible{outline:2px solid var(--ia);outline-offset:2px}
+@media (max-width:820px){.vmodal.ipm{align-items:flex-end;padding:0}.vcard.ivc{width:100%;max-height:93dvh;border-radius:26px 26px 0 0}.vcard.ivc .ip-t{font-size:1.5rem}.vcard.ivc .ip-cover .ip-t{font-size:1.75rem}.ip-toc{grid-template-columns:1fr}.ip-wm{font-size:120px}.ip-body{padding:14px 18px 18px}.ip-cnt{display:none}.ip-btn{min-height:44px}}
+@media (prefers-reduced-motion:reduce){.ip-page.inr,.ip-page.inl{animation:none}.ip-prog i::after,.vcard.ivc{transition:none}}
 </style>`);
 document.body.insertAdjacentHTML('beforeend', '<div class="vmodal" id="vModal" role="dialog" aria-modal="true" aria-labelledby="vmH"><div class="vcard" id="vCard"></div></div><div class="vsig" id="vSig" role="status" aria-live="polite"></div>');
 const vModal=document.getElementById('vModal'), vCard=document.getElementById('vCard');
 vModal.addEventListener('click', e=>{ if(e.target===vModal) vClose(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape' && vModal.classList.contains('on')) vClose(); });
-function vOpen(h){ vCard.innerHTML=h; vModal.classList.add('on'); vCard.scrollTop=0; const b=vCard.querySelector('button'); if(b) try{ b.focus({preventScroll:true}); }catch(e){} }
-function vClose(){ vModal.classList.remove('on'); }
+function vOpen(h){ vModal.classList.remove('ipm'); vCard.classList.remove('ivc'); vCard.style.removeProperty('--ia'); vCard.innerHTML=h; vModal.classList.add('on'); vCard.scrollTop=0; const b=vCard.querySelector('button'); if(b) try{ b.focus({preventScroll:true}); }catch(e){} }
+function vClose(){ vModal.classList.remove('on'); vModal.classList.remove('ipm'); }
+
+/* ---------- the explainer as a paged, colour-keyed walkthrough (the text itself is unchanged) ---------- */
+const VPAGES = [{k:"The inputs",t:"What counts as the operation",s:"The nodes that ran the business, and the six channels that supported it.",c:"var(--k-government)",m:/^1\.|^2\./i},{k:"The weights",t:"Money, banking and the other channels",s:"Money as a stock built year by year, and how verified and reported ties count.",c:"var(--k-institution)",m:/^3\.|^4\./i},{k:"The arithmetic",t:"Running, cover and two decisions",s:"Why four channels ran it, how cover protected it, and the 2008 deal and 2019 arrest.",c:"var(--k-company)",m:/^5\.|^6\./i},{k:"The readings",t:"Reading the result",s:"The verdict thresholds, the heaviest nodes, and what the model cannot know.",c:"var(--k-document)",m:/^7\.|heaviest|cannot know/i}];
+let ipI = 0, ipList = [];
+function vOpenIntro(h){
+  const box = document.createElement('div'); box.innerHTML = h;
+  const cover = [], secs = []; let cur = null;
+  for(const el of [...box.children]){
+    if(el.classList.contains('vbtns')) continue;
+    if(el.tagName === 'H4'){ cur = {h: el.textContent, nodes: [el]}; secs.push(cur); }
+    else if(cur) cur.nodes.push(el); else cover.push(el);
+  }
+  const defs = VPAGES.map(d => Object.assign({secs: []}, d));
+  for(const s of secs){ const d = defs.find(d => d.m.test(s.h)) || defs[defs.length - 1]; d.secs.push(s); }
+  const kicker = (cover.find(e => e.classList.contains('kind')) || {}).textContent || '';
+  const title = (cover.find(e => e.tagName === 'H3') || {}).textContent || '';
+  const lede = cover.filter(e => e.tagName === 'P').map(e => e.outerHTML).join('');
+  ipList = defs.filter(d => d.secs.length);
+  const total = ipList.length + 1;
+  ipList.forEach((d, i) => { d.n = i + 1; });
+  ipList.unshift({c: 'var(--gold)', t: title, cover: true, n: 0, kicker});
+  ipList[0].lede = lede;
+  vModal.classList.add('ipm');
+  vCard.className = 'vcard ivc';
+  vCard.innerHTML = `<div class="ip-wm" id="ipWm" aria-hidden="true"></div>
+    <div class="ip-top"><div class="ip-prog" aria-hidden="true">${ipList.map(d => `<i style="--seg:${d.c}"></i>`).join('')}</div><button class="ip-x" type="button" data-v="close" aria-label="Close">&times;</button></div>
+    <div class="ip-body" id="ipBody"><div class="ip-page" id="ipPage"></div></div>
+    <div class="ip-foot"><div class="ip-dots" role="tablist" aria-label="Pages">${ipList.map((d, i) => `<button type="button" role="tab" data-ip-go="${i}" aria-label="Page ${i + 1}: ${esc(d.cover ? 'Overview' : d.t)}"></button>`).join('')}<span class="ip-cnt" id="ipCnt"></span></div>
+      <div class="ip-btns"><button class="ip-btn" type="button" data-ip="back" id="ipBack">Back</button><button class="ip-btn ip-next" type="button" data-ip="next" id="ipNext">Next</button></div></div>`;
+  ipShow(0, 1);
+  vModal.classList.add('on');
+}
+function ipShow(i, dir){
+  i = Math.max(0, Math.min(ipList.length - 1, i));
+  const d = ipList[i], last = i === ipList.length - 1, pg = document.getElementById('ipPage');
+  vCard.style.setProperty('--ia', d.c);
+  let body;
+  if(d.cover){
+    body = `<div class="ip-cover"><div class="ip-k">${esc(d.kicker)}</div><h3 class="ip-t" id="vmH">${esc(d.t)}</h3><div class="ip-lede">${d.lede}</div>
+      <div class="ip-toc">${ipList.slice(1).map((p, k) => `<button type="button" data-ip-go="${k + 1}" style="--ia:${p.c}"><b>${String(k + 1).padStart(2, '0')}</b><span>${esc(p.t)}<small>${p.secs.length} ${p.secs.length === 1 ? 'section' : 'sections'}</small></span></button>`).join('')}</div></div>`;
+  } else {
+    body = `<div class="ip-k">Step ${i} of ${ipList.length - 1} &middot; ${esc(d.k)}</div><h3 class="ip-t" id="vmH">${esc(d.t)}</h3>${d.s ? `<p class="ip-sub">${esc(d.s)}</p>` : ''}` +
+      d.secs.map(s => `<section class="ip-s">${s.nodes.map(n => n.outerHTML).join('')}</section>`).join('');
+  }
+  pg.className = 'ip-page ' + (dir < 0 ? 'inl' : 'inr'); pg.innerHTML = body; void pg.offsetWidth;
+  document.getElementById('ipBody').scrollTop = 0;
+  document.getElementById('ipWm').textContent = i ? String(i).padStart(2, '0') : '';
+  vCard.querySelectorAll('.ip-prog i').forEach((e, k) => { e.className = k < i ? 'done' : k === i ? 'on' : ''; });
+  vCard.querySelectorAll('.ip-dots button').forEach((e, k) => e.setAttribute('aria-current', k === i ? 'true' : 'false'));
+  document.getElementById('ipCnt').textContent = i === 0 ? 'OVERVIEW' : String(i).padStart(2, '0') + ' / ' + String(ipList.length - 1).padStart(2, '0');
+  const b = document.getElementById('ipBack'), n = document.getElementById('ipNext');
+  b.disabled = i === 0;
+  n.textContent = last ? 'Start exploring' : i === 0 ? 'Begin' : 'Next';
+  n.dataset.ip = last ? 'done' : 'next';
+  ipI = i;
+  try{ n.focus({preventScroll: true}); }catch(e){}
+}
+function ipOn(){ return vModal.classList.contains('on') && vCard.classList.contains('ivc'); }
+vCard.addEventListener('click', e => { const b = e.target.closest('[data-ip],[data-ip-go]'); if(!b || !ipOn()) return;
+  if(b.dataset.ipGo != null) ipShow(+b.dataset.ipGo, +b.dataset.ipGo < ipI ? -1 : 1);
+  else if(b.dataset.ip === 'next') ipShow(ipI + 1, 1);
+  else if(b.dataset.ip === 'back') ipShow(ipI - 1, -1);
+  else if(b.dataset.ip === 'done') vClose(); });
+document.addEventListener('keydown', e => { if(!ipOn() || e.metaKey || e.ctrlKey || e.altKey) return;
+  if(e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); ipShow(ipI + 1, 1); }
+  else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); ipShow(ipI - 1, -1); }
+  else if(e.key === 'Home'){ e.preventDefault(); ipShow(0, -1); }
+  else if(e.key === 'End'){ e.preventDefault(); ipShow(ipList.length - 1, 1); } });
+(function(){ let x0 = null, y0 = 0; vCard.addEventListener('touchstart', e => { if(!ipOn()) return; x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive: true});
+  vCard.addEventListener('touchend', e => { if(x0 == null || !ipOn()) return; const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+    if(Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.6) ipShow(ipI + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1); }, {passive: true}); })();
+
 
 /* ---------- the explainer ---------- */
 function vIntro(){
   const heavy=[...N.values()].filter(n=>n.qop&&n.qop.whatif&&!['epstein','gmax'].includes(n.id)).sort((a,b)=>b.qop.whatif.drop-a.qop.whatif.drop).slice(0,10);
   const amts=Object.entries(VB.amounts).sort((a,b)=>b[1][0]-a[1][0]), D1=VB.decisions[0], D2=VB.decisions[1], p1=vDecisionChance(D1,new Set())[0], p2=vDecisionChance(D2,new Set())[0];
-  vOpen(`<div class="kind">How the chances are computed</div><h3 id="vmH">A model of what the operation needed, built only from this map</h3>
+  vOpenIntro(`<div class="kind">How the chances are computed</div><h3 id="vmH">A model of what the operation needed, built only from this map</h3>
   <p class="vtxt">Take any node out and the map works out the chance that the operation still runs as the record documents it, from 1991 to 2019, and whether the 2008 deal and the 2019 arrest still happen. It is a model of the documented ties, not a measured probability, and it is the same arithmetic as the Road to 1948 map. Here is everything it does.</p>
   <h4>1. What counts as the operation</h4>
   <p class="vtxt">Epstein, Maxwell, the office and companies that carried his business (Indyke, Kahn, HBRK, Southern Trust, Financial Trust, the trusts, JEGE, Plan D, Hyperion and others), and the properties and aircraft they owned: ${VB.ent.length} nodes. An owned company, trust or property falls with whoever owned it.</p>

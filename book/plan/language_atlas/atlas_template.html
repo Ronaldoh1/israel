@@ -462,4 +462,13 @@ go(['tree','map','time','ashk'].includes(h) ? h : 'tree');
 addEventListener('hashchange', () => { const k = location.hash.slice(1); if(['tree','map','time','ashk'].includes(k) && k !== VIEW) go(k); });
 addEventListener('resize', () => { if(VIEW === 'time') drawTL(); });
 </script>
+<script>
+/* Back returns to the book (and section) this map was opened from; the map entry is replaced so Back from the book goes on to the shelf */
+(function(){ var a=document.querySelector('a.back'); if(!a) return;
+  var m=location.search.match(/[?&]from=([^&]+)/), from=m?m[1]:'';
+  if(!(from&&/^[\w.%\-]+$/.test(from))) return;
+  a.href='index.html#book='+from;
+  a.addEventListener('click',function(e){ e.preventDefault(); location.replace(a.href); });
+})();
+</script>
 </body></html>

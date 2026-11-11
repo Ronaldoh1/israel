@@ -66,7 +66,7 @@ _M = _vb.model(json.loads(json.dumps(d)))
 
 def build(base):
     D = {'built': d['built'], 'qop_meta': d.get('qop_meta', {}), 'whatif_meta': d.get('whatif_meta'), 'viab': _M,
-         'nodes': d['nodes'], 'edges': [dict(e, refs=resolve(e['src'], base)) for e in d['edges']]}
+         'nodes': d['nodes'], 'edges': [dict(e, refs=e.get('refs') or resolve(e['src'], base)) for e in d['edges']]}
     t = open(os.path.join(HERE, 'graph_explorer_template.html')).read()
     R = [
         ('function delPanel(r){', 'function delPanel0(r){'),

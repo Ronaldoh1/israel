@@ -1,0 +1,49 @@
+{
+ "_note": "Road-only page changes from v54 (first view on the Rothschild family, Balfour and the Vatican). Applied to the built page after the shared template.",
+ "patches": [
+  [
+   "let sim=null, posCache=new Map(), live=new Map(), curT=d3.zoomIdentity, needFit=true, calloutId=null;\nconst zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',ev=>{ curT=ev.transform; gz.attr('transform',curT); placeCallout(); labelsSoon(); });\nsvg.call(zoom);",
+   "let sim=null, posCache=new Map(), live=new Map(), curT=d3.zoomIdentity, needFit=true, calloutId=null;\nconst zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',ev=>{ curT=ev.transform; if(ev.sourceEvent) endLanding(); gz.attr('transform',curT); placeCallout(); labelsSoon(); });\nsvg.call(zoom);"
+  ],
+  [
+   "let fitK=1, lastK=-1, lastMob=null, lbTick=0, liveDeg=new Map(), impKey='', impMap=new Map(), lblN=null;\nconst dotBase=d=>d.id===$('root').value?11:d.d===0?10:(DEG.get(d.id)||0)>=10?8.5:7;\nconst rs=()=>Math.pow(Math.max(curT.k,.5),-.6);          /* dots grow slower than the zoom so they never swallow the screen */",
+   "let fitK=1, lastK=-1, lastMob=null, lbTick=0, liveDeg=new Map(), impKey='', impMap=new Map(), lblN=null;\nconst land={on:false,ids:new Set()}; let firstFit=true;\nconst dotBase=d=>(land.on&&land.ids.has(d.id)?1.25:1)*(d.id===$('root').value?11:d.d===0?10:(DEG.get(d.id)||0)>=10?8.5:7);\nfunction endLanding(){ if(!land.on) return; land.on=false; lastK=-1; labelsSoon(); }\n/* first view: the Rothschild family and the Balfour Declaration, with the Vatican and the heaviest events in frame */\nfunction landingFit(){\n  const imp=importance(), all=[...live.keys()], P=id=>live.get(id), okp=p=>p&&isFinite(p.x);\n  const base=all.filter(id=>/rothschild/i.test(N.get(id).name)||['balfour','balfour_decl','yad_hanadiv','vatican'].includes(id));\n  if(base.length<3) return false;\n  const bb=ids=>{ const pts=ids.map(P).filter(okp); return {x0:d3.min(pts,p=>p.x),x1:d3.max(pts,p=>p.x),y0:d3.min(pts,p=>p.y),y1:d3.max(pts,p=>p.y)}; };\n  const core=[...new Set([...base.sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,11),'balfour','balfour_decl','vatican'].filter(id=>live.has(id)))];\n  const b0=bb(core), reach=.45*Math.max(b0.x1-b0.x0,b0.y1-b0.y0,1);\n  /* heaviest events that sit close to the family are framed too; the rest stay out of the way */\n  const near=id=>{ const p=P(id); if(!okp(p)) return false; const dx=Math.max(b0.x0-p.x,0,p.x-b0.x1), dy=Math.max(b0.y0-p.y,0,p.y-b0.y1); return Math.hypot(dx,dy)<=reach; };\n  const evs=all.filter(id=>N.get(id).kind==='event'&&near(id)).sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,5);\n  const ids=new Set([...base,...evs]);\n  fit(false);                                         /* sets fitK to the whole-graph scale */\n  const {x0,x1,y0,y1}=bb([...core,...evs]);\n  const dv=device(), vh=visibleH('peek'), pad=dv.mobile?28:60, top=dv.top;\n  const k=clamp(Math.min((dv.W-2*pad)/Math.max(1,x1-x0),(vh-top-pad)/Math.max(1,y1-y0),1.5),.04,4);\n  /* label the heaviest events everywhere on the map too, they just may not be in frame */\n  all.filter(id=>N.get(id).kind==='event').sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,6).forEach(id=>ids.add(id));\n  land.ids=ids; land.on=true; lastK=-1;\n  setT(d3.zoomIdentity.translate(dv.W/2-k*(x0+x1)/2, top+(vh-top)/2-k*(y0+y1)/2).scale(k),0); return true; }\nconst rs=()=>Math.pow(Math.max(curT.k,.5),-.6);          /* dots grow slower than the zoom so they never swallow the screen */"
+  ],
+  [
+   "  const pin=new Set([sel,calloutId,$('root').value].filter(Boolean)); [...hiNodes].sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,10).forEach(x=>pin.add(x));\n  const cand=[], f=rs();\n  for(const [id,p] of live){ if(!isFinite(p.x)) continue; const sx=curT.x+k*p.x, sy=curT.y+k*p.y, isPin=pin.has(id);\n    if(!isPin&&!small&&(sx<-10||sx>dv.W+10||sy<-10||sy>vh+10)) continue;",
+   "  const pin=new Set([sel,calloutId,$('root').value].filter(Boolean)); [...hiNodes].sort((a,b)=>(imp.get(b)||0)-(imp.get(a)||0)).slice(0,10).forEach(x=>pin.add(x));\n  const cand=[], f=rs(), L=land.on?land.ids:null;\n  for(const [id,p] of live){ if(!isFinite(p.x)) continue; const sx=curT.x+k*p.x, sy=curT.y+k*p.y, isPin=pin.has(id), isL=!!(L&&L.has(id));\n    if(!isPin&&!small&&(sx<-10||sx>dv.W+10||sy<-10||sy>vh+10)) continue;"
+  ],
+  [
+   "    const cent=1-Math.min(1,Math.hypot(sx-cx,sy-cy)/maxD), w=imp.get(id)||0;\n    cand.push({id,sx,sy,pin:isPin,s:isPin?10:(1-t)*w+t*(.7*cent+.3*w)}); }\n  cand.sort((a,b)=>b.s-a.s);",
+   "    const cent=1-Math.min(1,Math.hypot(sx-cx,sy-cy)/maxD), w=imp.get(id)||0;\n    cand.push({id,sx,sy,pin:isPin,land:isL,s:isPin?10:isL?(['vatican','balfour_decl','balfour'].includes(id)?8:5)+w:(1-t)*w+t*(.7*cent+.3*w)}); }\n  cand.sort((a,b)=>b.s-a.s);"
+  ],
+  [
+   "  const keep=new Set(), boxes=[], nm=id=>{ const s=N.get(id).name; return s.length>dv.chars?s.slice(0,dv.chars-2)+'…':s; };\n  for(const c of cand){ if(!small&&!c.pin&&keep.size>=n) break;\n    if(!small){ const text=nm(c.id), w=text.length*fs*.62+10, h=fs*1.25, x0=c.sx-w/2, y0=c.sy-dotBase(live.get(c.id))*f*k-3-h;",
+   "  const keep=new Set(), boxes=[], nm=id=>{ const s=N.get(id).name; return s.length>dv.chars?s.slice(0,dv.chars-2)+'…':s; };\n  for(const c of cand){ if(!small&&!c.pin&&!c.land&&keep.size>=n) break;\n    if(!small){ const text=nm(c.id), w=text.length*fs*.62+10, h=fs*1.25, x0=c.sx-w/2, y0=c.sy-dotBase(live.get(c.id))*f*k-3-h;"
+  ],
+  [
+   "  gn.selectAll('g.n text').each(function(d){ const on=keep.has(d.id), el=d3.select(this);\n    if(restyle||this.__on!==on){ el.attr('display',on?null:'none'); if(on){ el.text(nm(d.id)).attr('font-size',fs/k).attr('dy',-(dotBase(d)*f+4/k)).style('stroke-width',(3.2/k)+'px'); } }\n    this.__on=on; });",
+   "  gn.selectAll('g.n text').each(function(d){ const on=keep.has(d.id), el=d3.select(this);\n    if(restyle||this.__on!==on){ el.attr('display',on?null:'none'); if(on){ const isL=!!(L&&L.has(d.id)); el.text(nm(d.id)).attr('font-size',fs*(isL?1.1:1)/k).style('font-weight',isL?'700':null).attr('dy',-(dotBase(d)*f+4/k)).style('stroke-width',(3.2/k)+'px'); } }\n    this.__on=on; });"
+  ],
+  [
+   "  if(needFit||reduce){ for(let k=0;k<(reduce?250:170);k++) sim.tick(); paint(); }\n  if(needFit){ fit(false); needFit=false; }\n  if(reduce) sim.stop();",
+   "  if(needFit||reduce){ for(let k=0;k<(reduce?250:170);k++) sim.tick(); paint(); }\n  if(needFit){ if(!(firstFit&&landingFit())) fit(false); firstFit=false; needFit=false; }\n  if(reduce) sim.stop();"
+  ],
+  [
+   "function pickNow(id){\n  if(mode==='expand'){ sel=id; expanded.add(id); hiNodes=new Set(); hiEdges=new Set(); }",
+   "function pickNow(id){\n  endLanding();\n  if(mode==='expand'){ sel=id; expanded.add(id); hiNodes=new Set(); hiEdges=new Set(); }"
+  ],
+  [
+   "  if(q.flight) h+=`<dt>Pilot's log</dt><dd>${q.flight.n} legs, ${q.flight.y0}–${q.flight.y1}; ${q.flight.stt} to or from St Thomas</dd>`;\n  h+=`<dt>Receives (money, banking, contracts)</dt><dd>${li(q.money_in)}</dd><dt>Provides (money, banking, contracts)</dt><dd>${li(q.money_out)}</dd>`;\n  if(q.loops.length) h+=`<dt>Loops</dt><dd>${li(q.loops)}</dd>`;",
+   "  if(q.flight) h+=`<dt>Pilot's log</dt><dd>${q.flight.n} legs, ${q.flight.y0}–${q.flight.y1}; ${q.flight.stt} to or from St Thomas</dd>`;\n  h+=`<dt>Receives (money, banking, contracts)</dt><dd>${li(q.money_in)}</dd><dt>Provides (money, banking, contracts)</dt><dd>${li(q.money_out)}</dd>${(q.money_in.concat(q.money_out)).some(x=>String(x).includes('≈ $'))?'<dd style=\"opacity:.7;font-size:.85em\">≈ = approximate value in today\\'s dollars (US consumer prices, Sep 2026 basis; sterling converted at that year\\'s rate). An estimate, not a finding.</dd>':''}`;\n  if(q.loops.length) h+=`<dt>Loops</dt><dd>${li(q.loops)}</dd>`;"
+  ],
+  [
+   "$('whole').onclick=()=>{ $('depth').value=5; $('dval').textContent='All'; needFit=true; draw(); };\n$('root').onchange=()=>{ expanded.clear(); sel=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); needFit=true; hideCallout(); draw(); intro(); if(isMobile()) setSheet('peek'); };\n$('tv').onchange=draw; $('ne').onchange=draw; $('wh').onchange=draw;",
+   "$('whole').onclick=()=>{ $('depth').value=5; $('dval').textContent='All'; needFit=true; draw(); };\n$('root').onchange=()=>{ endLanding(); expanded.clear(); sel=null; hiNodes=new Set(); hiEdges=new Set(); posCache.clear(); needFit=true; hideCallout(); draw(); intro(); if(isMobile()) setSheet('peek'); };\n$('tv').onchange=draw; $('ne').onchange=draw; $('wh').onchange=draw;"
+  ],
+  [
+   "new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});\nconst T0=Date.now(); let rt=null; new ResizeObserver(()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(Date.now()-T0<2500) fit(false); if(sim){ sim.force('center',d3.forceCenter(svg.node().clientWidth/2,svg.node().clientHeight/2)); } placeCallout(); },120); }).observe($('board'));\ndraw(); intro(); fit(false);\n</script>",
+   "new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});\n['zIn','zOut','zFit'].forEach(id=>{ const fn=$(id).onclick; $(id).onclick=function(e){ endLanding(); return fn.call(this,e); }; });\nconst T0=Date.now(); let rt=null; new ResizeObserver(()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(Date.now()-T0<2500){ if(land.on&&landingFit()){} else fit(false); } if(sim){ sim.force('center',d3.forceCenter(svg.node().clientWidth/2,svg.node().clientHeight/2)); } placeCallout(); },120); }).observe($('board'));\ndraw(); intro(); if(!land.on) fit(false);\n</script>"
+  ]
+ ]
+}

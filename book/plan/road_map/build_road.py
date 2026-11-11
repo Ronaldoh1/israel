@@ -217,13 +217,32 @@ def main():
             app = i.startswith('+'); i = i.lstrip('+')   # '+id' appends to the note already there
             for n in nodes:
                 if n['id'] == i: n['note'] = ((n.get('note') or '') + ' ' + txt).strip() if app else txt
+    # v54 additions (Nov 2026): node and tie edits made in the built page, carried back into the source
+    vp = os.path.join(HERE, 'v54_layer.json')
+    if os.path.exists(vp):
+        V = json.load(open(vp)); seen = {}
+        for e in edges:
+            k = e['f'] + '>' + e['t'] + '|' + e['type']; j = seen.get(k, 0); seen[k] = j + 1
+            o = V['edge_overrides'].get(k + ('#%d' % j if j else ''))
+            if o: e.update(o)
+        byid = {n['id']: n for n in nodes}
+        for i, o in V['node_overrides'].items():
+            if i in byid: byid[i].update(o)
+        for n in V['nodes']:
+            if n['id'] not in byid: nodes.append(dict(n)); byid[n['id']] = nodes[-1]
+        for e in V['edges']: edges.append(dict({'n': 1, 'sec': ''}, **e))
     have = {n['id'] for n in nodes}
     for e in edges:
         for x in (e['f'], e['t']):
             if x not in have:
                 n = NID[x]; have.add(x)
                 nodes.append({'id': x, 'name': n['name'], 'kind': n['kind'], 'cluster': n['cluster'], 'note': notes.get(x, ''), 'mentions': 0, 'sections': []})
-    json.dump({'built': '2026-11-04', 'title': 'The Road to 1948 Network', 'nodes': nodes, 'edges': edges},
+    if os.path.exists(vp):   # overrides also reach nodes added above from tie endpoints
+        byid = {n['id']: n for n in nodes}
+        for i, o in V['node_overrides'].items():
+            if i in byid: byid[i].update(o)
+        for n in V['nodes']: byid[n['id']]['new'] = True
+    json.dump({'built': '2026-11-11', 'title': 'The Road to 1948 Network', 'nodes': nodes, 'edges': edges},
               open(os.path.join(HERE, 'network.json'), 'w'), ensure_ascii=False, indent=1)
     c = collections.Counter(e['status'] for e in edges); ct = collections.Counter(e['type'] for e in edges)
     print(len(nodes), 'nodes', len(edges), 'edges', dict(c)); print(dict(ct.most_common()))

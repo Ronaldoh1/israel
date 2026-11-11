@@ -882,20 +882,20 @@ def _apply(path):
     rm={tuple(r) for r in L.get('remove_edges',[])}
     E[:]=[x for x in E if (x['f'],x['t'],x['label']) not in rm]
     for x in L.get('edges',[]):
-        E.append(dict(f=x['f'],t=x['t'],label=x['label'],type=x.get('type',''),status=x['status'],src=x.get('src','')))
+        E.append(dict(f=x['f'],t=x['t'],label=x['label'],type=x.get('type',''),status=x['status'],src=x.get('src',''),**({'refs':x['refs']} if x.get('refs') else {})))
     for s in L.get('status',[]):   # [f, t, label-prefix, new status, new src, note]
         for x in E:
             if x['f']==s[0] and x['t']==s[1] and x['label'].startswith(s[2]):
                 x['status']=s[3]
                 if s[4]: x['src']=(x['src']+'; '+s[4]).strip('; ')
                 if len(s)>5 and s[5]: x['label']=s[5][1:] if s[5].startswith('=') else x['label']+' — '+s[5]
-_apply('ron_layer.json'); _apply('verify_layer.json')
+_apply('ron_layer.json'); _apply('verify_layer.json'); _apply('v54_layer.json')
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
 for x in N: x['sponsor']= x['id'] in SP
 
-json.dump({'built':'2026-11-04','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
+json.dump({'built':'2026-11-10','nodes':N,'edges':E},open('network.json','w'),ensure_ascii=False,indent=1)
 ids={x['id'] for x in N}
 bad=[x for x in E if x['f'] not in ids or x['t'] not in ids]
 print(len(N),'nodes',len(E),'edges','bad',bad)
