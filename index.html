@@ -5847,6 +5847,8 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-book:hover .cv.vd .vp,.lb-book:focus-visible .cv.vd .vp{transform:scale(1.1)}
 .cv.vd .tt{font-size:6.4cqw;line-height:1.18;-webkit-line-clamp:4}
 .cv.vd .st{font-size:4.8cqw;margin:5% 0 auto;font-style:italic;font-weight:400;opacity:.92;-webkit-line-clamp:2}
+.cv.vd .vtag{align-self:flex-start;margin:3% 0 0;padding:1.2cqw 4cqw;border-radius:99px;background:#B794F4;color:#1A1030;font-size:4.4cqw;font-weight:700;letter-spacing:.08em;line-height:1.2}
+.vtag-s{display:inline-block;padding:0 .45em;border-radius:99px;background:#B794F4;color:#1A1030;font-weight:700;font-size:.85em;margin-right:.3em}
 .cv.vd .vol{font-size:4.2cqw;color:#F5D88E;opacity:.95;letter-spacing:.1em}
 .lb-metas .vmeta .vl{color:inherit;text-decoration:none}
 .lb-metas .vmeta .vl:hover b,.lb-metas .vmeta .vl:focus-visible b{text-decoration:underline;text-underline-offset:3px}
@@ -6805,8 +6807,12 @@ body.book-open #libBanner{display:none}
   var VPAL = ['#5A2340','#1F5A4A','#6B4A12','#3A2A6B','#7A2E1E','#1E4A6B'];
   /* videos on the shelf: add one object per video (optional color:'#hex' sets its tile colour). sec is the section it sits in; url opens in a new tab. */
   var VIDEOS = [
-    {video:true, sec:'epstein', id:'6MgmsmTqA0M', title:'Occult Infrastructure Behind the Epstein Network', by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=6MgmsmTqA0M&t=20s'},
-    {video:true, sec:'epstein', id:'j6wjwCvdWDg', title:'The SATANIC RITUAL Network Hidden Inside the Epstein Files', by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=j6wjwCvdWDg&rco=1'}
+    {video:true, sec:'epstein', tag:'Esoteric', id:'6MgmsmTqA0M', title:"Occult Infrastructure Behind the Epstein Network", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=6MgmsmTqA0M&t=20s'},
+    {video:true, sec:'epstein', tag:'Esoteric', id:'j6wjwCvdWDg', title:"The SATANIC RITUAL Network Hidden Inside the Epstein Files", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=j6wjwCvdWDg&rco=1'},
+    {video:true, sec:'epstein', tag:'Esoteric', id:'URTZktvpZaE', title:"The TERRIFYING Esoteric Pantheon of the Global Elite", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=URTZktvpZaE'},
+    {video:true, sec:'epstein', tag:'Esoteric', id:'wCUxEckYIZ8', title:"Why the Elites Worship the BLACK CUBE – The TERRIFYING Cult of Saturn Explained", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=wCUxEckYIZ8'},
+    {video:true, sec:'epstein', tag:'Esoteric', id:'0bWeENFuR_Q', title:"The Depraved ‘Illuminati Party’ of Madame Rothschild", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=0bWeENFuR_Q'},
+    {video:true, sec:'epstein', tag:'Esoteric', id:'HsLczJ2Aorc', title:"The Enigma of the All-Seeing Eye – The Great Architect of the Universe and Global Control", by:'Esoteric Guardian', url:'https://www.youtube.com/watch?v=HsLczJ2Aorc'}
   ];
   var CLOTH = ['#5B1F1A','#1E2D4F','#23402F','#6B4A1B','#3A2F4A','#2F3E46','#4A2328','#1F3A3D','#4B3B1E','#2B2F4A'];
   function SERN(b){ return (b && b.ser) || 'The Israel Architecture'; }
@@ -7252,13 +7258,13 @@ body.book-open #libBanner{display:none}
   function libText(b){ return (b.title + ' ' + (b.subtitle || '') + ' ' + (b.span || '') + ' ' + (b.keywords || '') + ' ' + (b.chapters || []).map(function(c){ return c.title + ' ' + c.sections.map(function(x){ return x.h; }).join(' '); }).join(' ')).toLowerCase(); }
   /* a video on the shelf: a tile the same size as a cover, with a play icon, and its name underneath; opens YouTube in a new tab */
   function vtile(v){
-    return '<a class="lb-book lb-vid" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc('Video: ' + v.title + ', by ' + v.by + '. Opens on YouTube in a new tab.') + '">' +
-      '<div class="cv vd sr" style="--c:' + esc(v.color || VPAL[VIDEOS.indexOf(v) % VPAL.length]) + '" aria-hidden="true"><div class="in"><div class="ser">Video</div><div class="rule"></div>' +
+    return '<a class="lb-book lb-vid" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc((v.tag ? v.tag + ' video: ' : 'Video: ') + v.title + ', by ' + v.by + '. Opens on YouTube in a new tab.') + '">' +
+      '<div class="cv vd sr" style="--c:' + esc(v.color || VPAL[VIDEOS.indexOf(v) % VPAL.length]) + '" aria-hidden="true"><div class="in"><div class="ser">Video</div>' + (v.tag ? '<div class="vtag">' + esc(v.tag) + '</div>' : '') + '<div class="rule"></div>' +
       '<svg class="vp" viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="29" fill="rgba(245,216,142,.10)" stroke="#F5D88E" stroke-width="2.2"/><circle cx="32" cy="32" r="23" fill="none" stroke="#F5D88E" stroke-opacity=".35" stroke-width="1"/><path d="M26 20.5L45.5 32L26 43.5Z" fill="#F5D88E" stroke="#F5D88E" stroke-width="2" stroke-linejoin="round"/></svg>' +
       '<div class="tt">' + esc(v.title) + '</div><div class="st">' + esc(v.by) + '</div><div class="vol">Watch on YouTube \u2197</div></div></div></a>';
   }
   function vmeta(v){
-    return '<div class="meta vmeta"><a class="vl" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(v.title) + '</b></a><small>' + esc(v.by) + '</small><small>Opens on YouTube \u2197</small></div>';
+    return '<div class="meta vmeta"><a class="vl" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(v.title) + '</b></a><small>' + (v.tag ? '<span class="vtag-s">' + esc(v.tag) + '</span> ' : '') + esc(v.by) + '</small><small>Opens on YouTube \u2197</small></div>';
   }
   function shelf(list){
     if(!list.length) return '';
@@ -7289,11 +7295,11 @@ body.book-open #libBanner{display:none}
     else if(libSort === 'recent'){ var pr = ls('ots_book_progress') || {}; list.sort(function(a, b){ var ta = (ls('ots_book_pos_' + a.id) || {}).at || 0, tb = (ls('ots_book_pos_' + b.id) || {}).at || 0; return tb - ta || a.vol - b.vol; }); }
     var series = list.filter(function(b){ return b.ser; }); list = list.filter(function(b){ return !b.ser; });
     var epB = series.filter(function(b){ return b.ser === SER_EP; }), deB = series.filter(function(b){ return b.ser !== SER_EP; });
-    var epV = VIDEOS.filter(function(v){ return v.sec === 'epstein' && (!q || q.split(/\s+/).every(function(w){ return (v.title + ' ' + v.by + ' video youtube').toLowerCase().indexOf(w) >= 0; })); });
+    var epV = VIDEOS.filter(function(v){ return v.sec === 'epstein' && (!q || q.split(/\s+/).every(function(w){ return (v.title + ' ' + v.by + ' ' + (v.tag || '') + ' video youtube').toLowerCase().indexOf(w) >= 0; })); });
     var epShelf = epB.concat(epV);
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec lb-is"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
-      (epShelf.length ? '<section class="lb-sec lb-series lb-ep" style="--sc:#2B3B4E"><h2>The Epstein Network Architecture</h2><p class="sub">A separate section: the book, its interactive network map and outside videos, on one shelf. Not part of The Israel Architecture. Videos open on YouTube in a new tab and are each creator\u2019s own argument, not part of the sourced book.</p>' + shelf(epShelf) + '</section>' : '') +
+      (epShelf.length ? '<section class="lb-sec lb-series lb-ep" style="--sc:#2B3B4E"><h2>The Epstein Network Architecture</h2><p class="sub">A separate section: the book, its interactive network map and outside videos, on one shelf. Not part of The Israel Architecture. Videos open on YouTube in a new tab and are each creator\u2019s own argument, not part of the sourced book. Those marked Esoteric read the network through symbolic and occult frameworks; they are interpretations, not documents.</p>' + shelf(epShelf) + '</section>' : '') +
       (deB.length ? '<section class="lb-sec lb-series lb-de" style="--sc:#6B1E2B"><h2>The Dark Enlightenment Architecture</h2><p class="sub">A separate section on a story still unfolding: a body of ideas that calls democracy a failure, the money and people around it, and the machinery of 2025\u20132026, each tested against the record. Not part of The Israel Architecture, which covers events that have already happened.</p>' + shelf(deB) + '</section>' : '') +
       (prep.length ? '<section class="lb-sec lb-soon"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
         (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
