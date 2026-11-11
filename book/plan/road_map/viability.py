@@ -47,10 +47,28 @@ def post_ids():
     out = set(re.findall(r'^([a-z0-9_]+)\|', block, re.M))
     try: out |= set(json.load(open(os.path.join(HERE, 'global_layer.json'))).get('post', []))   # the global layer after 1948
     except Exception: pass
+    try: out |= set(json.load(open(os.path.join(HERE, 'rothschild_layer.json'))).get('post', []))   # Rothschild ties after 1948
+    except Exception: pass
     return out
 
 
+# Ties kept on the map for context but not counted as support for the founding: business roles outside the
+# project, Ottoman debt and banking, the land-law instruments (Ottoman bans, Mandate ordinances and regulations,
+# which restricted rather than supported), the Old Yishuv hospital and school, a soldier's war service and burial,
+# Herzl's undelivered address, the 1902 immigration commission, and a 1948 diaspora total that overlaps the appeals.
+CONTEXT = {('mond', 'ici'), ('sieff', 'm_and_s'), ('marks_s', 'm_and_s'), ('opda', 'regie'), ('credit_anstalt', 'regie'),
+           ('salomon_r', 'credit_anstalt'), ('herzl_charter_1901', 'opda'), ('abdulhamid', 'herzl_charter_1901'),
+           ('fo78_4476', 'foreign_office'), ('fo78_4476', 'ott_1892_ban'), ('lto_1920', 'ott_1892_ban'), ('mandate_admin', 'lto_1920'),
+           ('ltr_1940', 'lto_1920'), ('ltr_1940', 'wp1939'), ('land_inquiry_1945', 'ltr_1940'), ('ottoman', 'ott_1872_sale'),
+           ('ott_1872_sale', 'sursock'), ('elias_sursock', 'fula_affair'), ('evelyn_r', 'rishon'), ('evelyn_r', 'allenby'),
+           ('james_mayer', 'albert_cohn'), ('albert_cohn', 'rothschild_hospital'), ('rothschild_hospital', 'mayer_amschel'),
+           ('albert_cohn', 'evelina_school'), ('lionel_r', 'evelina_school'), ('herzl_address_1895', 'nm_rothschild'),
+           ('natty', 'royal_comm_1902'), ('herzl', 'royal_comm_1902'), ('anthony_g', 'cbf'), ('nm_rothschild', 'cbf'),
+           ('nm_rothschild', 'ottoman'), ('diaspora_1948', 'jewish_agency'), ('mond', 'lloydgeorge'), ('lionel_1882', 'league_bj')}
+
+
 def channel(e, N):
+    if (e['f'], e['t']) in CONTEXT: return None
     if e['type'] == 'recognition' or (e['f'], e['t']) == ('res181', 'decl_indep'): return 'recognition'
     if e['type'] not in SUPPORT: return None
     a, b = N[e['f']], N[e['t']]
