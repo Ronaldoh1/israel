@@ -5,7 +5,7 @@
  "pool": 59,
  "pool3": 26,
  "searched": {
-  "singles": 728,
+  "singles": 729,
   "groups": 15,
   "group_pairs": 105,
   "pairs": 1711,
@@ -19,29 +19,29 @@
    "names": [
     "Edmond de Rothschild"
    ],
-   "V": 31.6,
-   "rating": "Very unlikely",
+   "V": 35.2,
+   "rating": "Doubtful",
    "weakest": "money",
    "channels": [
-    0.928,
+    0.947,
     0.98,
     0.99,
     0.99,
     0.989,
     0.99
    ],
-   "lost_years": 40.2,
+   "lost_years": 38.4,
    "knocked_out": [],
    "decisions": [],
    "read": {
-    "on": 31.6,
-    "delay": 40.2,
-    "survive": 85.2,
-    "lost": 40.2,
-    "by1958": 31.6,
-    "by1978": 31.6,
-    "ever": 41.1,
-    "retry": 1989,
+    "on": 35.2,
+    "delay": 38.4,
+    "survive": 88.6,
+    "lost": 38.4,
+    "by1958": 35.2,
+    "by1978": 35.2,
+    "ever": 42.7,
+    "retry": 1987,
     "verdict": "Unlikely"
    }
   }
@@ -61,7 +61,7 @@
     0.0,
     0.0
    ],
-   "lost_years": 12.9,
+   "lost_years": 12.5,
    "knocked_out": [
     "haavara"
    ],
@@ -79,7 +79,7 @@
     "on": 0.0,
     "delay": 200.0,
     "survive": 0.0,
-    "lost": 13.4,
+    "lost": 13.0,
     "by1958": 0.0,
     "by1978": 0.0,
     "ever": 0.0,
@@ -101,14 +101,14 @@
     0.99,
     0.989
    ],
-   "lost_years": 16.5,
+   "lost_years": 12.2,
    "knocked_out": [],
    "decisions": [],
    "read": {
     "on": 0.0,
     "delay": 200.0,
     "survive": 96.9,
-    "lost": 16.5,
+    "lost": 12.2,
     "by1958": 0.0,
     "by1978": 0.0,
     "ever": 0.0,
@@ -118,15 +118,15 @@
   },
   {
    "group": "Without the United States",
-   "n": 132,
-   "V": 26.1,
+   "n": 133,
+   "V": 28.4,
    "rating": "Very unlikely",
    "weakest": "diplomacy",
    "channels": [
-    0.926,
+    0.945,
     0.99,
-    0.922,
-    0.617,
+    0.969,
+    0.613,
     0.943,
     0.701
    ],
@@ -146,32 +146,70 @@
     }
    ],
    "read": {
-    "on": 26.1,
-    "delay": 117.9,
-    "survive": 80.9,
+    "on": 28.4,
+    "delay": 119.2,
+    "survive": 84.3,
     "lost": 12.0,
-    "by1958": 26.1,
-    "by1978": 49.4,
-    "ever": 49.4,
-    "retry": 1960,
+    "by1958": 28.4,
+    "by1978": 51.1,
+    "ever": 51.1,
+    "retry": 1961,
     "verdict": "Unlikely"
+   }
+  },
+  {
+   "group": "Countries that voted for partition",
+   "n": 33,
+   "V": 33.4,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.988,
+    0.871,
+    0.983,
+    0.99,
+    0.419
+   ],
+   "lost_years": 0.9,
+   "knocked_out": [
+    "balak",
+    "cambon_letter",
+    "res181"
+   ],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 33.4,
+    "delay": 34.9,
+    "survive": 95.4,
+    "lost": 0.9,
+    "by1958": 66.1,
+    "by1978": 66.2,
+    "ever": 66.2,
+    "retry": 1959,
+    "verdict": "Possible, with great difficulty"
    }
   },
   {
    "group": "Rothschild family and houses",
    "n": 46,
-   "V": 30.7,
+   "V": 34.2,
    "rating": "Very unlikely",
    "weakest": "money",
    "channels": [
-    0.928,
+    0.946,
     0.977,
-    0.989,
+    0.99,
     0.989,
     0.977,
     0.99
    ],
-   "lost_years": 40.2,
+   "lost_years": 38.4,
    "knocked_out": [],
    "decisions": [
     {
@@ -180,14 +218,14 @@
     }
    ],
    "read": {
-    "on": 30.7,
-    "delay": 40.5,
-    "survive": 84.1,
-    "lost": 40.5,
-    "by1958": 30.7,
-    "by1978": 30.7,
-    "ever": 40.9,
-    "retry": 1989,
+    "on": 34.2,
+    "delay": 38.7,
+    "survive": 87.5,
+    "lost": 38.7,
+    "by1958": 34.2,
+    "by1978": 34.2,
+    "ever": 42.5,
+    "retry": 1987,
     "verdict": "Unlikely"
    }
   },
@@ -200,7 +238,7 @@
    "channels": [
     0.99,
     0.99,
-    0.987,
+    0.989,
     0.645,
     0.99,
     0.701
@@ -233,53 +271,46 @@
    }
   },
   {
-   "group": "Countries that voted for partition",
-   "n": 33,
-   "V": 37.4,
+   "group": "Finance and banks",
+   "n": 56,
+   "V": 42.4,
    "rating": "Doubtful",
-   "weakest": "recognition",
+   "weakest": "money",
    "channels": [
-    0.98,
-    0.988,
-    0.976,
-    0.983,
+    0.827,
+    0.896,
     0.99,
-    0.419
+    0.986,
+    0.964,
+    0.99
    ],
-   "lost_years": 0.6,
+   "lost_years": 16.9,
    "knocked_out": [
-    "balak",
-    "cambon_letter",
-    "res181"
+    "blackstone_1891"
    ],
-   "decisions": [
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
+   "decisions": [],
    "read": {
-    "on": 37.4,
-    "delay": 22.4,
-    "survive": 95.0,
-    "lost": 0.6,
-    "by1958": 69.8,
-    "by1978": 69.8,
-    "ever": 69.8,
-    "retry": 1958,
-    "verdict": "Possible, with great difficulty"
+    "on": 42.4,
+    "delay": 83.0,
+    "survive": 65.9,
+    "lost": 16.9,
+    "by1958": 42.4,
+    "by1978": 52.5,
+    "ever": 52.5,
+    "retry": 1965,
+    "verdict": "Unlikely"
    }
   },
   {
    "group": "British government",
    "n": 71,
-   "V": 46.5,
+   "V": 46.6,
    "rating": "Doubtful",
    "weakest": "recognition",
    "channels": [
     0.99,
     0.988,
-    0.987,
+    0.988,
     0.975,
     0.99,
     0.885
@@ -306,11 +337,11 @@
     }
    ],
    "read": {
-    "on": 46.5,
+    "on": 46.6,
     "delay": 28.4,
     "survive": 97.0,
     "lost": 28.4,
-    "by1958": 46.5,
+    "by1958": 46.6,
     "by1978": 52.2,
     "ever": 52.2,
     "retry": 1977,
@@ -318,46 +349,15 @@
    }
   },
   {
-   "group": "Finance and banks",
-   "n": 56,
-   "V": 48.9,
-   "rating": "Doubtful",
-   "weakest": "money",
-   "channels": [
-    0.873,
-    0.896,
-    0.99,
-    0.986,
-    0.964,
-    0.99
-   ],
-   "lost_years": 15.3,
-   "knocked_out": [
-    "blackstone_1891"
-   ],
-   "decisions": [],
-   "read": {
-    "on": 48.9,
-    "delay": 68.3,
-    "survive": 73.5,
-    "lost": 15.3,
-    "by1958": 48.9,
-    "by1978": 57.0,
-    "ever": 57.0,
-    "retry": 1964,
-    "verdict": "Possible, with great difficulty"
-   }
-  },
-  {
    "group": "American Zionist organizations",
    "n": 37,
-   "V": 75.3,
+   "V": 76.5,
    "rating": "Still possible, with more work",
    "weakest": "organization",
    "channels": [
-    0.964,
+    0.97,
     0.99,
-    0.985,
+    0.987,
     0.981,
     0.95,
     0.99
@@ -375,14 +375,54 @@
     }
    ],
    "read": {
-    "on": 75.3,
+    "on": 76.4,
     "delay": 27.3,
-    "survive": 88.3,
+    "survive": 89.4,
     "lost": 5.1,
-    "by1958": 78.2,
-    "by1978": 78.2,
-    "ever": 78.2,
+    "by1958": 79.0,
+    "by1978": 79.0,
+    "ever": 79.0,
     "retry": 1954,
+    "verdict": "Still likely, but delayed"
+   }
+  },
+  {
+   "group": "Soviet bloc",
+   "n": 15,
+   "V": 81.5,
+   "rating": "Still possible, with more work",
+   "weakest": "force",
+   "channels": [
+    0.982,
+    0.988,
+    0.897,
+    0.989,
+    0.99,
+    0.981
+   ],
+   "lost_years": 0.5,
+   "knocked_out": [
+    "balak"
+   ],
+   "decisions": [
+    {
+     "name": "Soviet support for partition (May 1947 to May 1948)",
+     "chance": 50
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 81.5,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 0.5,
+    "by1958": 82.4,
+    "by1978": 82.4,
+    "ever": 82.4,
+    "retry": 1949,
     "verdict": "Still likely, but delayed"
    }
   },
@@ -420,55 +460,15 @@
    }
   },
   {
-   "group": "Soviet bloc",
-   "n": 15,
-   "V": 89.5,
-   "rating": "Still possible, with more work",
-   "weakest": "money",
-   "channels": [
-    0.98,
-    0.988,
-    0.984,
-    0.989,
-    0.99,
-    0.981
-   ],
-   "lost_years": 0.2,
-   "knocked_out": [
-    "balak"
-   ],
-   "decisions": [
-    {
-     "name": "Soviet support for partition (May 1947 to May 1948)",
-     "chance": 50
-    },
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 89.5,
-    "delay": 8.7,
-    "survive": 95.2,
-    "lost": 0.2,
-    "by1958": 89.5,
-    "by1978": 89.5,
-    "ever": 89.5,
-    "retry": null,
-    "verdict": "Happens on time, in 1948"
-   }
-  },
-  {
    "group": "France",
    "n": 6,
-   "V": 91.8,
+   "V": 91.9,
    "rating": "Still possible",
-   "weakest": "force",
+   "weakest": "land",
    "channels": [
     0.99,
     0.988,
-    0.988,
+    0.989,
     0.99,
     0.99,
     0.99
@@ -482,13 +482,13 @@
     }
    ],
    "read": {
-    "on": 91.8,
+    "on": 91.9,
     "delay": 2.9,
     "survive": 97.0,
     "lost": 0.7,
-    "by1958": 91.8,
-    "by1978": 91.8,
-    "ever": 91.8,
+    "by1958": 91.9,
+    "by1978": 91.9,
+    "ever": 91.9,
     "retry": null,
     "verdict": "Happens on time, in 1948"
    }
@@ -588,17 +588,17 @@
     "US government"
    ],
    "alone": [
-    46.5,
+    46.6,
     37.3
    ],
-   "V": 11.5,
+   "V": 11.7,
    "rating": "Not possible on this record",
    "weakest": "diplomacy",
    "channels": [
     0.99,
     0.988,
-    0.983,
-    0.358,
+    0.987,
+    0.362,
     0.99,
     0.657
    ],
@@ -633,60 +633,15 @@
     }
    ],
    "read": {
-    "on": 11.5,
+    "on": 11.7,
     "delay": 200.0,
     "survive": 97.0,
     "lost": 31.7,
-    "by1958": 11.5,
-    "by1978": 11.5,
-    "ever": 29.5,
+    "by1958": 11.7,
+    "by1978": 11.7,
+    "ever": 29.7,
     "retry": 1980,
     "verdict": "Not possible on this record"
-   }
-  },
-  {
-   "groups": [
-    "Finance and banks",
-    "Countries that voted for partition"
-   ],
-   "alone": [
-    48.9,
-    37.4
-   ],
-   "V": 14.2,
-   "rating": "Not possible on this record",
-   "weakest": "recognition",
-   "channels": [
-    0.741,
-    0.876,
-    0.976,
-    0.976,
-    0.964,
-    0.419
-   ],
-   "lost_years": 15.5,
-   "knocked_out": [
-    "balak",
-    "blackstone_1891",
-    "cambon_letter",
-    "res181"
-   ],
-   "decisions": [
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 14.2,
-    "delay": 123.0,
-    "survive": 52.9,
-    "lost": 15.5,
-    "by1958": 14.2,
-    "by1978": 43.4,
-    "ever": 43.4,
-    "retry": 1964,
-    "verdict": "Unlikely"
    }
   },
   {
@@ -695,21 +650,21 @@
     "Finance and banks"
    ],
    "alone": [
-    75.3,
-    48.9
+    76.5,
+    42.4
    ],
-   "V": 15.5,
-   "rating": "Very unlikely",
+   "V": 12.0,
+   "rating": "Not possible on this record",
    "weakest": "money",
    "channels": [
-    0.547,
+    0.489,
     0.896,
-    0.985,
+    0.987,
     0.972,
     0.853,
     0.99
    ],
-   "lost_years": 17.6,
+   "lost_years": 19.2,
    "knocked_out": [
     "blackstone_1891"
    ],
@@ -724,124 +679,15 @@
     }
    ],
    "read": {
-    "on": 15.5,
+    "on": 12.0,
     "delay": 200.0,
-    "survive": 25.5,
-    "lost": 17.6,
-    "by1958": 15.5,
-    "by1978": 25.6,
-    "ever": 25.6,
-    "retry": 1968,
+    "survive": 20.4,
+    "lost": 19.2,
+    "by1958": 12.0,
+    "by1978": 21.2,
+    "ever": 21.2,
+    "retry": 1971,
     "verdict": "Not possible on this record"
-   }
-  },
-  {
-   "groups": [
-    "British government",
-    "Countries that voted for partition"
-   ],
-   "alone": [
-    46.5,
-    37.4
-   ],
-   "V": 16.6,
-   "rating": "Very unlikely",
-   "weakest": "recognition",
-   "channels": [
-    0.98,
-    0.986,
-    0.968,
-    0.964,
-    0.99,
-    0.333
-   ],
-   "lost_years": 28.4,
-   "knocked_out": [
-    "angloam1924",
-    "balak",
-    "balfour_decl",
-    "cambon_letter",
-    "mandate",
-    "res181",
-    "unscop"
-   ],
-   "decisions": [
-    {
-     "name": "The Balfour Declaration (2 Nov 1917)",
-     "chance": 0
-    },
-    {
-     "name": "The League approves the Mandate (24 Jul 1922)",
-     "chance": 0
-    },
-    {
-     "name": "Britain hands Palestine to the UN (Feb 1947)",
-     "chance": 0
-    },
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 16.6,
-    "delay": 31.1,
-    "survive": 95.0,
-    "lost": 28.4,
-    "by1958": 16.6,
-    "by1978": 52.0,
-    "ever": 52.0,
-    "retry": 1977,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "groups": [
-    "US government",
-    "Countries that voted for partition"
-   ],
-   "alone": [
-    37.3,
-    37.4
-   ],
-   "V": 20.0,
-   "rating": "Very unlikely",
-   "weakest": "recognition",
-   "channels": [
-    0.98,
-    0.988,
-    0.97,
-    0.605,
-    0.99,
-    0.419
-   ],
-   "lost_years": 8.7,
-   "knocked_out": [
-    "balak",
-    "cambon_letter",
-    "fed_act",
-    "res181"
-   ],
-   "decisions": [
-    {
-     "name": "The American vote and pressure for partition (Nov 1947)",
-     "chance": 0
-    },
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 20.0,
-    "delay": 122.9,
-    "survive": 95.0,
-    "lost": 8.7,
-    "by1958": 49.8,
-    "by1978": 50.7,
-    "ever": 50.7,
-    "retry": 1962,
-    "verdict": "Unlikely"
    }
   },
   {
@@ -851,20 +697,20 @@
    ],
    "alone": [
     37.3,
-    48.9
+    42.4
    ],
-   "V": 21.2,
+   "V": 18.6,
    "rating": "Very unlikely",
    "weakest": "diplomacy",
    "channels": [
-    0.873,
+    0.826,
     0.896,
-    0.987,
+    0.989,
     0.612,
     0.964,
     0.701
    ],
-   "lost_years": 15.8,
+   "lost_years": 17.0,
    "knocked_out": [
     "blackstone_1891",
     "res181"
@@ -880,14 +726,14 @@
     }
    ],
    "read": {
-    "on": 21.2,
+    "on": 18.6,
     "delay": 119.9,
-    "survive": 73.5,
-    "lost": 15.8,
-    "by1958": 21.2,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1964,
+    "survive": 65.9,
+    "lost": 17.0,
+    "by1958": 18.6,
+    "by1978": 40.7,
+    "ever": 40.7,
+    "retry": 1966,
     "verdict": "Unlikely"
    }
   },
@@ -898,20 +744,20 @@
    ],
    "alone": [
     37.3,
-    89.5
+    81.5
    ],
-   "V": 21.7,
+   "V": 19.5,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.98,
+    0.982,
     0.988,
-    0.98,
+    0.883,
     0.62,
     0.99,
     0.436
    ],
-   "lost_years": 8.6,
+   "lost_years": 8.8,
    "knocked_out": [
     "balak",
     "fed_act",
@@ -936,63 +782,15 @@
     }
    ],
    "read": {
-    "on": 21.7,
+    "on": 19.5,
     "delay": 116.4,
-    "survive": 95.1,
-    "lost": 8.6,
-    "by1958": 51.5,
-    "by1978": 52.2,
-    "ever": 52.2,
-    "retry": 1961,
+    "survive": 95.5,
+    "lost": 8.8,
+    "by1958": 49.2,
+    "by1978": 50.6,
+    "ever": 50.6,
+    "retry": 1963,
     "verdict": "Unlikely"
-   }
-  },
-  {
-   "groups": [
-    "Soviet bloc",
-    "Countries that voted for partition"
-   ],
-   "alone": [
-    89.5,
-    37.4
-   ],
-   "V": 21.9,
-   "rating": "Very unlikely",
-   "weakest": "recognition",
-   "channels": [
-    0.98,
-    0.986,
-    0.976,
-    0.983,
-    0.99,
-    0.246
-   ],
-   "lost_years": 0.6,
-   "knocked_out": [
-    "balak",
-    "cambon_letter",
-    "res181"
-   ],
-   "decisions": [
-    {
-     "name": "Soviet support for partition (May 1947 to May 1948)",
-     "chance": 50
-    },
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 21.9,
-    "delay": 46.0,
-    "survive": 95.0,
-    "lost": 0.6,
-    "by1958": 54.4,
-    "by1978": 56.9,
-    "ever": 56.9,
-    "retry": 1964,
-    "verdict": "Possible, with great difficulty"
    }
   },
   {
@@ -1001,16 +799,16 @@
     "Finance and banks"
    ],
    "alone": [
-    46.5,
-    48.9
+    46.6,
+    42.4
    ],
-   "V": 25.9,
+   "V": 23.2,
    "rating": "Very unlikely",
    "weakest": "money",
    "channels": [
-    0.872,
+    0.825,
     0.88,
-    0.987,
+    0.988,
     0.965,
     0.956,
     0.885
@@ -1038,51 +836,46 @@
     }
    ],
    "read": {
-    "on": 25.9,
-    "delay": 77.6,
-    "survive": 72.7,
+    "on": 23.2,
+    "delay": 83.5,
+    "survive": 65.1,
     "lost": 34.3,
-    "by1958": 25.9,
-    "by1978": 25.9,
-    "ever": 43.0,
+    "by1958": 23.2,
+    "by1978": 23.2,
+    "ever": 41.1,
     "retry": 1983,
     "verdict": "Unlikely"
    }
   },
   {
    "groups": [
-    "American Zionist organizations",
-    "Countries that voted for partition"
+    "Soviet bloc",
+    "Finance and banks"
    ],
    "alone": [
-    75.3,
-    37.4
+    81.5,
+    42.4
    ],
-   "V": 28.9,
+   "V": 26.0,
    "rating": "Very unlikely",
-   "weakest": "recognition",
+   "weakest": "money",
    "channels": [
-    0.926,
-    0.988,
+    0.693,
+    0.878,
+    0.897,
+    0.984,
     0.964,
-    0.968,
-    0.95,
-    0.419
+    0.981
    ],
-   "lost_years": 5.3,
+   "lost_years": 17.2,
    "knocked_out": [
     "balak",
-    "cambon_letter",
-    "res181"
+    "blackstone_1891"
    ],
    "decisions": [
     {
-     "name": "The American vote and pressure for partition (Nov 1947)",
-     "chance": 80
-    },
-    {
-     "name": "American recognition (14 May 1948)",
-     "chance": 92
+     "name": "Soviet support for partition (May 1947 to May 1948)",
+     "chance": 50
     },
     {
      "name": "The Czechoslovak arms (Jan to Oct 1948)",
@@ -1090,15 +883,15 @@
     }
    ],
    "read": {
-    "on": 28.9,
-    "delay": 39.2,
-    "survive": 81.5,
-    "lost": 5.3,
-    "by1958": 63.7,
-    "by1978": 64.1,
-    "ever": 64.1,
-    "retry": 1960,
-    "verdict": "Possible, with great difficulty"
+    "on": 26.0,
+    "delay": 148.0,
+    "survive": 46.3,
+    "lost": 17.2,
+    "by1958": 26.0,
+    "by1978": 39.1,
+    "ever": 39.1,
+    "retry": 1966,
+    "verdict": "Unlikely"
    }
   },
   {
@@ -1108,20 +901,20 @@
    ],
    "alone": [
     37.3,
-    75.3
+    76.5
    ],
-   "V": 30.9,
+   "V": 31.3,
    "rating": "Very unlikely",
    "weakest": "diplomacy",
    "channels": [
-    0.964,
+    0.97,
     0.99,
-    0.981,
-    0.627,
+    0.986,
+    0.623,
     0.95,
     0.701
    ],
-   "lost_years": 11.8,
+   "lost_years": 11.9,
    "knocked_out": [
     "fed_act",
     "res181"
@@ -1137,13 +930,13 @@
     }
    ],
    "read": {
-    "on": 30.9,
-    "delay": 113.9,
-    "survive": 88.3,
-    "lost": 11.8,
-    "by1958": 30.9,
-    "by1978": 53.6,
-    "ever": 53.6,
+    "on": 31.3,
+    "delay": 115.2,
+    "survive": 89.4,
+    "lost": 11.9,
+    "by1958": 31.3,
+    "by1978": 53.8,
+    "ever": 53.8,
     "retry": 1960,
     "verdict": "Unlikely"
    }
@@ -1163,7 +956,7 @@
    "channels": [
     0.99,
     0.99,
-    0.987,
+    0.989,
     0.59,
     0.99,
     0.701
@@ -1183,90 +976,47 @@
    ],
    "read": {
     "on": 34.1,
-    "delay": 129.2,
+    "delay": 129.0,
     "survive": 97.0,
     "lost": 8.7,
-    "by1958": 53.7,
-    "by1978": 53.7,
-    "ever": 53.7,
+    "by1958": 53.8,
+    "by1978": 53.8,
+    "ever": 53.8,
     "retry": 1957,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "groups": [
-    "Soviet bloc",
-    "Finance and banks"
-   ],
-   "alone": [
-    89.5,
-    48.9
-   ],
-   "V": 34.8,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.751,
-    0.878,
-    0.984,
-    0.984,
-    0.964,
-    0.981
-   ],
-   "lost_years": 15.4,
-   "knocked_out": [
-    "balak",
-    "blackstone_1891"
-   ],
-   "decisions": [
-    {
-     "name": "Soviet support for partition (May 1947 to May 1948)",
-     "chance": 50
-    },
-    {
-     "name": "The Czechoslovak arms (Jan to Oct 1948)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 34.8,
-    "delay": 118.0,
-    "survive": 54.4,
-    "lost": 15.4,
-    "by1958": 34.8,
-    "by1978": 45.4,
-    "ever": 45.4,
-    "retry": 1964,
     "verdict": "Unlikely"
    }
   }
  ],
- "pairs": [
+ "pairs": [],
+ "triples": [
   {
    "ids": [
     "pica",
-    "jewish_agency"
+    "jewish_agency",
+    "apc_bank"
    ],
    "names": [
     "Palestine Jewish Colonization Association (PICA)",
-    "Jewish Agency"
+    "Jewish Agency",
+    "Anglo-Palestine Company (Bank Leumi)"
    ],
    "alone": [
-    81.0,
-    83.0
+    84.3,
+    85.2,
+    88.7
    ],
-   "V": 31.7,
+   "V": 24.5,
    "rating": "Very unlikely",
    "weakest": "money",
    "channels": [
-    0.606,
+    0.543,
     0.986,
-    0.989,
     0.99,
-    0.984,
+    0.99,
+    0.983,
     0.99
    ],
-   "lost_years": 3.2,
+   "lost_years": 5.5,
    "knocked_out": [],
    "decisions": [
     {
@@ -1275,47 +1025,94 @@
     }
    ],
    "read": {
-    "on": 31.7,
+    "on": 24.5,
     "delay": 200.0,
-    "survive": 34.9,
-    "lost": 3.2,
-    "by1958": 34.1,
-    "by1978": 34.1,
-    "ever": 34.1,
-    "retry": 1954,
-    "verdict": "Unlikely"
+    "survive": 28.0,
+    "lost": 5.5,
+    "by1958": 27.8,
+    "by1978": 27.8,
+    "ever": 27.8,
+    "retry": 1958,
+    "verdict": "Not possible on this record"
    }
-  }
- ],
- "triples": [
+  },
   {
    "ids": [
     "pica",
-    "upa",
-    "czechoslovakia"
+    "jewish_agency",
+    "zionist_congress"
    ],
    "names": [
     "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal",
-    "Czechoslovakia (arms supplier)"
+    "Jewish Agency",
+    "Zionist Congress"
    ],
    "alone": [
-    81.0,
-    88.4,
-    90.5
+    84.3,
+    85.2,
+    88.9
    ],
-   "V": 26.3,
+   "V": 25.4,
    "rating": "Very unlikely",
    "weakest": "money",
    "channels": [
-    0.533,
-    0.986,
-    0.984,
+    0.546,
+    0.983,
     0.99,
     0.989,
+    0.982,
+    0.99
+   ],
+   "lost_years": 3.9,
+   "knocked_out": [
+    "haavara"
+   ],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 25.4,
+    "delay": 200.0,
+    "survive": 28.3,
+    "lost": 3.9,
+    "by1958": 28.1,
+    "by1978": 28.1,
+    "ever": 28.1,
+    "retry": 1957,
+    "verdict": "Not possible on this record"
+   }
+  },
+  {
+   "ids": [
+    "czechoslovakia",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "Czechoslovakia (arms supplier)",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    82.4,
+    84.3,
+    85.2
+   ],
+   "V": 28.9,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.599,
+    0.986,
+    0.894,
+    0.989,
+    0.984,
     0.989
    ],
-   "lost_years": 1.0,
+   "lost_years": 3.2,
    "knocked_out": [
     "balak"
    ],
@@ -1326,249 +1123,14 @@
     }
    ],
    "read": {
-    "on": 26.3,
+    "on": 28.9,
     "delay": 200.0,
-    "survive": 28.1,
-    "lost": 1.0,
-    "by1958": 27.9,
-    "by1978": 27.9,
-    "ever": 27.9,
-    "retry": 1958,
-    "verdict": "Not possible on this record"
-   }
-  },
-  {
-   "ids": [
-    "war_cabinet",
-    "pica",
-    "upa"
-   ],
-   "names": [
-    "British War Cabinet",
-    "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal"
-   ],
-   "alone": [
-    56.1,
-    81.0,
-    88.4
-   ],
-   "V": 33.1,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.762,
-    0.986,
-    0.99,
-    0.986,
-    0.989,
-    0.99
-   ],
-   "lost_years": 26.1,
-   "knocked_out": [
-    "balfour_decl",
-    "mandate"
-   ],
-   "decisions": [
-    {
-     "name": "The Balfour Declaration (2 Nov 1917)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 33.1,
-    "delay": 112.6,
-    "survive": 57.5,
-    "lost": 26.1,
+    "survive": 35.3,
+    "lost": 3.2,
     "by1958": 33.1,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1975,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "ids": [
-    "balfour_decl",
-    "pica",
-    "upa"
-   ],
-   "names": [
-    "Balfour Declaration (1917)",
-    "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal"
-   ],
-   "alone": [
-    56.2,
-    81.0,
-    88.4
-   ],
-   "V": 33.1,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.762,
-    0.986,
-    0.99,
-    0.987,
-    0.989,
-    0.99
-   ],
-   "lost_years": 26.1,
-   "knocked_out": [
-    "mandate"
-   ],
-   "decisions": [],
-   "read": {
-    "on": 33.1,
-    "delay": 112.6,
-    "survive": 57.5,
-    "lost": 26.1,
-    "by1958": 33.1,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1975,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "ids": [
-    "uk",
-    "pica",
-    "upa"
-   ],
-   "names": [
-    "British Government",
-    "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal"
-   ],
-   "alone": [
-    56.3,
-    81.0,
-    88.4
-   ],
-   "V": 33.2,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.762,
-    0.986,
-    0.99,
-    0.988,
-    0.989,
-    0.99
-   ],
-   "lost_years": 26.1,
-   "knocked_out": [
-    "mandate",
-    "wp1939"
-   ],
-   "decisions": [
-    {
-     "name": "The League approves the Mandate (24 Jul 1922)",
-     "chance": 67
-    }
-   ],
-   "read": {
-    "on": 33.2,
-    "delay": 112.6,
-    "survive": 57.5,
-    "lost": 26.1,
-    "by1958": 33.2,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1975,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "ids": [
-    "league",
-    "pica",
-    "upa"
-   ],
-   "names": [
-    "League of Nations",
-    "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal"
-   ],
-   "alone": [
-    56.3,
-    81.0,
-    88.4
-   ],
-   "V": 33.2,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.762,
-    0.986,
-    0.99,
-    0.989,
-    0.989,
-    0.99
-   ],
-   "lost_years": 26.1,
-   "knocked_out": [
-    "mandate"
-   ],
-   "decisions": [
-    {
-     "name": "The League approves the Mandate (24 Jul 1922)",
-     "chance": 0
-    }
-   ],
-   "read": {
-    "on": 33.2,
-    "delay": 112.6,
-    "survive": 57.5,
-    "lost": 26.1,
-    "by1958": 33.2,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1975,
-    "verdict": "Unlikely"
-   }
-  },
-  {
-   "ids": [
-    "mandate",
-    "pica",
-    "upa"
-   ],
-   "names": [
-    "Mandate for Palestine (1922)",
-    "Palestine Jewish Colonization Association (PICA)",
-    "United Palestine Appeal"
-   ],
-   "alone": [
-    56.3,
-    81.0,
-    88.4
-   ],
-   "V": 33.2,
-   "rating": "Very unlikely",
-   "weakest": "money",
-   "channels": [
-    0.762,
-    0.986,
-    0.99,
-    0.989,
-    0.989,
-    0.99
-   ],
-   "lost_years": 26.1,
-   "knocked_out": [],
-   "decisions": [],
-   "read": {
-    "on": 33.2,
-    "delay": 112.6,
-    "survive": 57.5,
-    "lost": 26.1,
-    "by1958": 33.2,
-    "by1978": 43.8,
-    "ever": 43.8,
-    "retry": 1975,
+    "by1978": 33.2,
+    "ever": 33.2,
+    "retry": 1961,
     "verdict": "Unlikely"
    }
   },
@@ -1576,25 +1138,25 @@
    "ids": [
     "war_cabinet",
     "us_gov",
-    "pica"
+    "haganah"
    ],
    "names": [
     "British War Cabinet",
     "US Government",
-    "Palestine Jewish Colonization Association (PICA)"
+    "Haganah"
    ],
    "alone": [
     56.1,
     65.7,
-    81.0
+    74.6
    ],
-   "V": 34.7,
+   "V": 32.4,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.928,
-    0.986,
     0.99,
+    0.988,
+    0.812,
     0.982,
     0.99,
     0.701
@@ -1603,6 +1165,7 @@
    "knocked_out": [
     "balfour_decl",
     "mandate",
+    "plan_dalet",
     "res181"
    ],
    "decisions": [
@@ -1616,13 +1179,13 @@
     }
    ],
    "read": {
-    "on": 34.7,
-    "delay": 38.1,
-    "survive": 85.3,
+    "on": 32.4,
+    "delay": 49.0,
+    "survive": 97.0,
     "lost": 26.1,
-    "by1958": 34.7,
-    "by1978": 53.5,
-    "ever": 53.5,
+    "by1958": 32.4,
+    "by1978": 52.8,
+    "ever": 52.8,
     "retry": 1975,
     "verdict": "Unlikely"
    }
@@ -1631,25 +1194,25 @@
    "ids": [
     "balfour_decl",
     "us_gov",
-    "pica"
+    "haganah"
    ],
    "names": [
     "Balfour Declaration (1917)",
     "US Government",
-    "Palestine Jewish Colonization Association (PICA)"
+    "Haganah"
    ],
    "alone": [
     56.2,
     65.7,
-    81.0
+    74.6
    ],
-   "V": 34.7,
+   "V": 32.4,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.928,
-    0.986,
     0.99,
+    0.988,
+    0.812,
     0.982,
     0.99,
     0.701
@@ -1657,6 +1220,7 @@
    "lost_years": 26.1,
    "knocked_out": [
     "mandate",
+    "plan_dalet",
     "res181"
    ],
    "decisions": [
@@ -1666,13 +1230,13 @@
     }
    ],
    "read": {
-    "on": 34.7,
-    "delay": 38.1,
-    "survive": 85.3,
+    "on": 32.4,
+    "delay": 49.0,
+    "survive": 97.0,
     "lost": 26.1,
-    "by1958": 34.7,
-    "by1978": 53.5,
-    "ever": 53.5,
+    "by1958": 32.4,
+    "by1978": 52.8,
+    "ever": 52.8,
     "retry": 1975,
     "verdict": "Unlikely"
    }
@@ -1681,25 +1245,25 @@
    "ids": [
     "uk",
     "us_gov",
-    "pica"
+    "haganah"
    ],
    "names": [
     "British Government",
     "US Government",
-    "Palestine Jewish Colonization Association (PICA)"
+    "Haganah"
    ],
    "alone": [
     56.3,
     65.7,
-    81.0
+    74.6
    ],
-   "V": 34.8,
+   "V": 32.5,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.928,
-    0.986,
     0.99,
+    0.988,
+    0.812,
     0.985,
     0.99,
     0.701
@@ -1708,6 +1272,7 @@
    "knocked_out": [
     "angloam1924",
     "mandate",
+    "plan_dalet",
     "res181",
     "wp1939"
    ],
@@ -1722,13 +1287,13 @@
     }
    ],
    "read": {
-    "on": 34.8,
-    "delay": 38.1,
-    "survive": 85.3,
+    "on": 32.5,
+    "delay": 49.0,
+    "survive": 97.0,
     "lost": 26.1,
-    "by1958": 34.8,
-    "by1978": 53.5,
-    "ever": 53.5,
+    "by1958": 32.5,
+    "by1978": 52.8,
+    "ever": 52.8,
     "retry": 1975,
     "verdict": "Unlikely"
    }
@@ -1737,25 +1302,25 @@
    "ids": [
     "league",
     "us_gov",
-    "pica"
+    "haganah"
    ],
    "names": [
     "League of Nations",
     "US Government",
-    "Palestine Jewish Colonization Association (PICA)"
+    "Haganah"
    ],
    "alone": [
     56.3,
     65.7,
-    81.0
+    74.6
    ],
-   "V": 34.8,
+   "V": 32.5,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.928,
-    0.986,
     0.99,
+    0.988,
+    0.812,
     0.986,
     0.99,
     0.701
@@ -1763,6 +1328,7 @@
    "lost_years": 26.1,
    "knocked_out": [
     "mandate",
+    "plan_dalet",
     "res181"
    ],
    "decisions": [
@@ -1776,13 +1342,13 @@
     }
    ],
    "read": {
-    "on": 34.8,
-    "delay": 38.1,
-    "survive": 85.3,
+    "on": 32.5,
+    "delay": 49.0,
+    "survive": 97.0,
     "lost": 26.1,
-    "by1958": 34.8,
-    "by1978": 53.5,
-    "ever": 53.5,
+    "by1958": 32.5,
+    "by1978": 52.8,
+    "ever": 52.8,
     "retry": 1975,
     "verdict": "Unlikely"
    }
@@ -1791,31 +1357,32 @@
    "ids": [
     "mandate",
     "us_gov",
-    "pica"
+    "haganah"
    ],
    "names": [
     "Mandate for Palestine (1922)",
     "US Government",
-    "Palestine Jewish Colonization Association (PICA)"
+    "Haganah"
    ],
    "alone": [
     56.3,
     65.7,
-    81.0
+    74.6
    ],
-   "V": 34.8,
+   "V": 32.5,
    "rating": "Very unlikely",
    "weakest": "recognition",
    "channels": [
-    0.928,
-    0.986,
     0.99,
+    0.988,
+    0.812,
     0.986,
     0.99,
     0.701
    ],
    "lost_years": 26.1,
    "knocked_out": [
+    "plan_dalet",
     "res181"
    ],
    "decisions": [
@@ -1825,17 +1392,563 @@
     }
    ],
    "read": {
-    "on": 34.8,
-    "delay": 38.1,
-    "survive": 85.3,
+    "on": 32.5,
+    "delay": 49.0,
+    "survive": 97.0,
     "lost": 26.1,
-    "by1958": 34.8,
-    "by1978": 53.5,
-    "ever": 53.5,
+    "by1958": 32.5,
+    "by1978": 52.8,
+    "ever": 52.8,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "British War Cabinet",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    56.1,
+    84.3,
+    85.2
+   ],
+   "V": 33.3,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.774,
+    0.986,
+    0.99,
+    0.986,
+    0.984,
+    0.99
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "balfour_decl",
+    "mandate"
+   ],
+   "decisions": [
+    {
+     "name": "The Balfour Declaration (2 Nov 1917)",
+     "chance": 0
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 33.3,
+    "delay": 110.8,
+    "survive": 58.0,
+    "lost": 26.1,
+    "by1958": 33.3,
+    "by1978": 44.1,
+    "ever": 44.1,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "Balfour Declaration (1917)",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    56.2,
+    84.3,
+    85.2
+   ],
+   "V": 33.3,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.774,
+    0.986,
+    0.99,
+    0.986,
+    0.984,
+    0.99
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "mandate"
+   ],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 33.3,
+    "delay": 110.8,
+    "survive": 58.0,
+    "lost": 26.1,
+    "by1958": 33.3,
+    "by1978": 44.1,
+    "ever": 44.1,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "uk",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "British Government",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    56.3,
+    84.3,
+    85.2
+   ],
+   "V": 33.3,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.774,
+    0.986,
+    0.99,
+    0.988,
+    0.984,
+    0.99
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "mandate",
+    "wp1939"
+   ],
+   "decisions": [
+    {
+     "name": "The League approves the Mandate (24 Jul 1922)",
+     "chance": 67
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 33.4,
+    "delay": 110.8,
+    "survive": 58.0,
+    "lost": 26.1,
+    "by1958": 33.4,
+    "by1978": 44.1,
+    "ever": 44.1,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "league",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "League of Nations",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    56.3,
+    84.3,
+    85.2
+   ],
+   "V": 33.4,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.774,
+    0.986,
+    0.99,
+    0.989,
+    0.984,
+    0.99
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "mandate"
+   ],
+   "decisions": [
+    {
+     "name": "The League approves the Mandate (24 Jul 1922)",
+     "chance": 0
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 33.4,
+    "delay": 110.8,
+    "survive": 58.0,
+    "lost": 26.1,
+    "by1958": 33.4,
+    "by1978": 44.1,
+    "ever": 44.1,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "mandate",
+    "pica",
+    "jewish_agency"
+   ],
+   "names": [
+    "Mandate for Palestine (1922)",
+    "Palestine Jewish Colonization Association (PICA)",
+    "Jewish Agency"
+   ],
+   "alone": [
+    56.3,
+    84.3,
+    85.2
+   ],
+   "V": 33.4,
+   "rating": "Very unlikely",
+   "weakest": "money",
+   "channels": [
+    0.774,
+    0.986,
+    0.99,
+    0.989,
+    0.984,
+    0.99
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 96
+    }
+   ],
+   "read": {
+    "on": 33.4,
+    "delay": 110.8,
+    "survive": 58.0,
+    "lost": 26.1,
+    "by1958": 33.4,
+    "by1978": 44.1,
+    "ever": 44.1,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "names": [
+    "British War Cabinet",
+    "US Government",
+    "Czechoslovakia (arms supplier)"
+   ],
+   "alone": [
+    56.1,
+    65.7,
+    82.4
+   ],
+   "V": 33.9,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.99,
+    0.897,
+    0.982,
+    0.99,
+    0.674
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "balak",
+    "balfour_decl",
+    "mandate",
+    "res181"
+   ],
+   "decisions": [
+    {
+     "name": "The Balfour Declaration (2 Nov 1917)",
+     "chance": 0
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    },
+    {
+     "name": "The UN partition vote, with blocs following their leaders",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 33.9,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 26.1,
+    "by1958": 33.9,
+    "by1978": 54.2,
+    "ever": 54.2,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "names": [
+    "Balfour Declaration (1917)",
+    "US Government",
+    "Czechoslovakia (arms supplier)"
+   ],
+   "alone": [
+    56.2,
+    65.7,
+    82.4
+   ],
+   "V": 33.9,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.99,
+    0.897,
+    0.982,
+    0.99,
+    0.674
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "balak",
+    "mandate",
+    "res181"
+   ],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    },
+    {
+     "name": "The UN partition vote, with blocs following their leaders",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 33.9,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 26.1,
+    "by1958": 33.9,
+    "by1978": 54.2,
+    "ever": 54.2,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "names": [
+    "British Government",
+    "US Government",
+    "Czechoslovakia (arms supplier)"
+   ],
+   "alone": [
+    56.3,
+    65.7,
+    82.4
+   ],
+   "V": 34.0,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.99,
+    0.897,
+    0.984,
+    0.99,
+    0.674
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "angloam1924",
+    "balak",
+    "mandate",
+    "res181",
+    "wp1939"
+   ],
+   "decisions": [
+    {
+     "name": "The League approves the Mandate (24 Jul 1922)",
+     "chance": 67
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    },
+    {
+     "name": "The UN partition vote, with blocs following their leaders",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 34.0,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 26.1,
+    "by1958": 34.0,
+    "by1978": 54.2,
+    "ever": 54.2,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "league",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "names": [
+    "League of Nations",
+    "US Government",
+    "Czechoslovakia (arms supplier)"
+   ],
+   "alone": [
+    56.3,
+    65.7,
+    82.4
+   ],
+   "V": 34.1,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.99,
+    0.897,
+    0.985,
+    0.99,
+    0.674
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "balak",
+    "mandate",
+    "res181"
+   ],
+   "decisions": [
+    {
+     "name": "The League approves the Mandate (24 Jul 1922)",
+     "chance": 0
+    },
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    },
+    {
+     "name": "The UN partition vote, with blocs following their leaders",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 34.1,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 26.1,
+    "by1958": 34.1,
+    "by1978": 54.2,
+    "ever": 54.2,
+    "retry": 1975,
+    "verdict": "Unlikely"
+   }
+  },
+  {
+   "ids": [
+    "mandate",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "names": [
+    "Mandate for Palestine (1922)",
+    "US Government",
+    "Czechoslovakia (arms supplier)"
+   ],
+   "alone": [
+    56.3,
+    65.7,
+    82.4
+   ],
+   "V": 34.1,
+   "rating": "Very unlikely",
+   "weakest": "recognition",
+   "channels": [
+    0.982,
+    0.99,
+    0.897,
+    0.986,
+    0.99,
+    0.674
+   ],
+   "lost_years": 26.1,
+   "knocked_out": [
+    "balak",
+    "res181"
+   ],
+   "decisions": [
+    {
+     "name": "The Czechoslovak arms (Jan to Oct 1948)",
+     "chance": 0
+    },
+    {
+     "name": "The UN partition vote, with blocs following their leaders",
+     "chance": 0
+    }
+   ],
+   "read": {
+    "on": 34.1,
+    "delay": 28.7,
+    "survive": 95.5,
+    "lost": 26.1,
+    "by1958": 34.1,
+    "by1978": 54.2,
+    "ever": 54.2,
     "retry": 1975,
     "verdict": "Unlikely"
    }
   }
  ],
- "secs": 307.4
+ "secs": 217.2
 }

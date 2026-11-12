@@ -102,6 +102,7 @@ AMOUNT = {   # (from, to): (millions of 1948 dollars, what the record says)
     ('kaufmann_e', 'truman'): (0.05, 'Feinberg and Kaufmann: $100,000 pledged for Truman\'s 1948 campaign tour (half each)'),
     ('jct', 'apc_bank'): (0.68, 'Anglo-Palestine Company: initial capital about £50,000 from the Jewish Colonial Trust (1902)'),
     ('mond', 'jabotinsky'): (0.044, 'Alfred Mond: £10,000 to Jabotinsky (1920, at about $3.66 to the pound)'),
+    ('haavara', 'apc_bank'): (60.7, 'Haavara: 105 million Reichsmarks, about $35 million, transferred 1933-39 through the Anglo-Palestine Bank'),
     ('wissotzky', 'technion'): (0.13, 'Wissotzky estate: 100,000 rubles (about $51,500 at the ruble gold parity) to the Technion (c. 1908-12)'),
 }
 # ties whose money is already counted in a total above (passed through, or part of a lifetime sum): kept for the
@@ -124,6 +125,9 @@ POWER_CL = {'us government': 'US', 'british state': 'UK'}
 # about 2,200 a year under Ottoman rule (24,000 in 1882 to 94,000 in 1914). Without it, settlement from 1920 to 1948 goes at the
 # Ottoman pace: about 90% of that period's land-and-settlers work is lost. Part of the difference came from persecution in Europe
 # in the 1930s, which this credits to the Mandate. The Mandate also needs its Mandatory power, Britain.
+# Arms weighed by quantity where the record gives it: the share of the force in hand on 14 May 1948 that a supply tie carried.
+# Czechoslovakia: about 14,700 rifles and 1,655 machine guns before 15 May, for a force of about 30,000 of whom many were unarmed.
+FORCE_SHARE = {('czechoslovakia', 'haganah'): (0.45, 'Czech rifles before 15 May 1948 could arm close to half the Haganah\'s 30,000')}
 FRAMEWORK = {'mandate': {'y': [1920, 1948], 'ch': 1, 'loss': round(1 - 2190 / 21850, 3), 'needs': ['uk']}}
 # Key decisions, read holistically: who decided, who pushed, who resisted (each from ties on the map, dated by the decision).
 # If the decider is removed, the successor decides; a push aimed at the man (his staff, friends, correspondents) reaches the
@@ -149,10 +153,10 @@ DECISIONS = [
   'levers': ['gromyko'], 'oppose': [], 'effects': {'flip': ['ussr'], 'drop': ['ussr>decl_indep']}},
  {'id': 'czech_arms', 'name': 'The Czechoslovak arms (Jan to Oct 1948)', 'act': 'balak', 'decider': 'czechoslovakia', 'successor': None,
   'levers': ['stalin', 'masaryk', 'avriel', 'meir', 'jewish_agency'], 'oppose': ['us_gov'],
-  'effects': {'remove': ['balak'], 'drop': ['jewish_agency>czechoslovakia', 'meir>czechoslovakia', 'avriel>czechoslovakia', 'czechoslovakia>balak']}},
+  'effects': {'remove': ['balak'], 'drop': ['czechoslovakia>haganah', 'jewish_agency>czechoslovakia', 'meir>czechoslovakia', 'avriel>czechoslovakia', 'czechoslovakia>balak']}},
 ]
 UNKNOWN_SUCCESSOR = 1   # a successor with no documented position of his own: one unit of push and one of resistance (an even prior)
-STANCE = {'wallace': 2, 'fdr': -1}   # a successor's own documented position: Wallace a supporter (met Ben-Gurion 1947, pressed Truman to end the embargo); Roosevelt's 5 Apr 1945 pledge to Ibn Saud
+STANCE = {'wallace': 2, 'fdr': -1, 'dewey': 2}   # a successor's own documented position: Dewey a supporter (Jewish commonwealth, 15 Oct 1944; 'several hundreds of thousands', 7 Oct 1946); Wallace a supporter (met Ben-Gurion 1947, pressed Truman to end the embargo); Roosevelt's 5 Apr 1945 pledge to Ibn Saud
 # Blocs (treaties of 1947-48): a member that voted with its leader in 1947 keeps that vote, and its 1948 recognition, only at
 # the bloc's own measured independence if the leader is out. The share that followed is read from the partition vote itself.
 BLOCS = [
@@ -200,7 +204,7 @@ ACTOR_SPAN = {
 }
 # the large sums and the years they were spent over
 AMOUNT_YEARS = {('edmond_r', 'pica'): (1882, 1934), ('upa', 'jewish_agency'): (1946, 1948), ('meir', 'czechoslovakia'): (1948, 1948),
-                ('keren_hayesod', 'jewish_agency'): (1921, 1932), ('nicaragua', 'jewish_agency'): (1948, 1948), ('straus_n', 'upa'): (1928, 1928), ('warburg_f', 'jewish_agency'): (1929, 1929), ('mond', 'jewish_agency'): (1929, 1929), ('wissotzky', 'technion'): (1908, 1912), ('feinberg', 'truman'): (1948, 1948), ('kaufmann_e', 'truman'): (1948, 1948), ('jct', 'apc_bank'): (1902, 1902), ('mond', 'jabotinsky'): (1920, 1920),
+                ('keren_hayesod', 'jewish_agency'): (1921, 1932), ('nicaragua', 'jewish_agency'): (1948, 1948), ('straus_n', 'upa'): (1928, 1928), ('warburg_f', 'jewish_agency'): (1929, 1929), ('mond', 'jewish_agency'): (1929, 1929), ('wissotzky', 'technion'): (1908, 1912), ('haavara', 'apc_bank'): (1933, 1939), ('feinberg', 'truman'): (1948, 1948), ('kaufmann_e', 'truman'): (1948, 1948), ('jct', 'apc_bank'): (1902, 1902), ('mond', 'jabotinsky'): (1920, 1920),
                 ('schiff', 'jdc'): (1914, 1914), ('mickey_cohen', 'irgun'): (1947, 1947), ('siegel', 'dafni'): (1946, 1947), ('straus_n', 'hadassah'): (1924, 1924)}
 MATERIAL = 0.05   # a channel's shortfall counts once its record reaches 5% of its 1948 total: before that the record is too thin
 STOCK = True   # knock-on: work built stays built, so a lost year's shortfall carries forward until later work outgrows it
@@ -251,6 +255,10 @@ def model(d):
         elif c == 5: v = -1.0 if (f, t) == ('res181', 'decl_indep') else w * pw.get(f, 1)
         else: v = w * (cf[f] + cf[t]) / 2 * (max(pw.get(f, 1), pw.get(t, 1)) if c == 3 else 1)
         edges.append([f, t, c, w, round(v, 4)])
+    for (f, t), (sh, _txt) in FORCE_SHARE.items():
+        other = sum(e[4] for e in edges if e[2] == 2 and (e[0], e[1]) != (f, t))
+        for e in edges:
+            if (e[0], e[1]) == (f, t) and e[2] == 2: e[4] = round(e[3] * sh / (1 - sh) * other, 4)
     rec_sum = sum(e[4] for e in edges if e[2] == 5 and e[4] > 0)
     for e in edges:
         if e[4] == -1.0: e[4] = round(rec_sum, 4)

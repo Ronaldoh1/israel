@@ -1,0 +1,129 @@
+{
+ "_note": "Gaps filled, Nov 2026: Haavara capital as money; Czech arms weighed by quantity; the 1944 alternatives to Roosevelt.",
+ "nodes": [
+  {
+   "id": "dewey",
+   "name": "Thomas E. Dewey",
+   "kind": "person",
+   "cluster": "us parties",
+   "note": "Thomas E. Dewey (1902–1971), governor of New York and Republican nominee for president in 1944 and 1948. On 15 October 1944, after meeting Abba Hillel Silver, he declared for 'a free and democratic Jewish Commonwealth' in Palestine with unrestricted immigration; on 7 October 1946 he called for immigration of 'not 100,000, but of several hundreds of thousands'.",
+   "mentions": 0,
+   "sections": []
+  },
+  {
+   "id": "gop_platform44",
+   "name": "Republican platform, Palestine plank (1944)",
+   "kind": "document",
+   "cluster": "us parties",
+   "note": "Adopted 26 June 1944: called for opening Palestine to unrestricted Jewish immigration and land ownership under the Balfour Declaration and the Mandate, and condemned 'the failure of the President to insist' that Britain honour them.",
+   "mentions": 0,
+   "sections": []
+  },
+  {
+   "id": "fdr_health",
+   "name": "Roosevelt's heart failure, concealed (1944)",
+   "kind": "event",
+   "cluster": "us government",
+   "note": "On 28 March 1944 the cardiologist Howard Bruenn found Roosevelt in acute congestive heart failure. On 10 July 1944 Frank Lahey wrote that over another term 'he would again have heart failure and be unable to complete it'. The memo was suppressed for wartime security and published decades later; Roosevelt ran for a fourth term and died on 12 April 1945.",
+   "mentions": 0,
+   "sections": []
+  }
+ ],
+ "edges": [
+  {
+   "f": "haavara",
+   "t": "apc_bank",
+   "type": "funding",
+   "status": "verified",
+   "label": "Through the Anglo-Palestine Bank and Haavara Ltd: 105 million Reichsmarks by the end of 1939, about $35 million at the time (≈ $850 million today), with about 39% of emigrants' funds going to Jewish communal economic projects. Khalidi, citing Black, gives about $100 million.",
+   "refs": [
+    {
+     "t": "Wikipedia: Haavara Agreement (figures from JTA, 8 Mar 1938 and 8 Sep 1939)",
+     "u": "https://en.wikipedia.org/wiki/Haavara_Agreement"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "haganah",
+   "type": "supply",
+   "status": "verified",
+   "label": "Before 15 May 1948: about 14,700 rifles and 1,655 machine guns with some 21 million rounds (31 Mar–1 Apr airlift; Nora, 2 Apr; sea shipment, 28 Apr), when the Haganah fielded about 15,000 men in March and 30,000 in May, and in November only one in three was armed. By October 1948: 34,500 rifles, 5,515 MG 34s, 25 Avia and 61 Spitfire fighters.",
+   "refs": [
+    {
+     "t": "Wikipedia: Arms shipments from Czechoslovakia to Israel",
+     "u": "https://en.wikipedia.org/wiki/Arms_shipments_from_Czechoslovakia_to_Israel"
+    },
+    {
+     "t": "Wikipedia: 1947–1948 civil war in Mandatory Palestine",
+     "u": "https://en.wikipedia.org/wiki/1947%E2%80%931948_civil_war_in_Mandatory_Palestine"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "dewey",
+   "t": "silver",
+   "type": "meeting",
+   "status": "verified",
+   "label": "October 1944: met Silver before declaring for a Jewish commonwealth.",
+   "refs": [
+    {
+     "t": "JTA, 15 Oct 1944: Dewey supports establishment of Jewish Commonwealth on basis of Balfour Declaration",
+     "u": "https://www.jta.org/archive/dewey-supports-establishment-of-jewish-commonwealth-on-basis-of-balfour-declaration"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "dewey",
+   "t": "gop_platform44",
+   "type": "association",
+   "status": "verified",
+   "label": "Republican nominee on the 1944 platform.",
+   "refs": [
+    {
+     "t": "Jewish Virtual Library: Republican platform calls for implementation of Balfour Declaration (26 Jun 1944)",
+     "u": "https://www.jewishvirtuallibrary.org/republican-platform-calls-for-implementation-of-balfour-declaration"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "gop_platform44",
+   "t": "fdr",
+   "type": "pressure",
+   "status": "verified",
+   "label": "Condemned 'the failure of the President to insist' on the Balfour Declaration and the Mandate.",
+   "refs": [
+    {
+     "t": "Jewish Virtual Library: Republican platform calls for implementation of Balfour Declaration (26 Jun 1944)",
+     "u": "https://www.jewishvirtuallibrary.org/republican-platform-calls-for-implementation-of-balfour-declaration"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "fdr_health",
+   "t": "fdr",
+   "type": "context",
+   "status": "verified",
+   "label": "Diagnosed March 1944; the prognosis was kept from the public through the 1944 election.",
+   "refs": [
+    {
+     "t": "History.com: FDR was gravely ill in his final term (Bruenn, March 1944; Lahey memo, 10 July 1944)",
+     "u": "https://www.history.com/news/franklin-d-roosevelt-health-final-term"
+    },
+    {
+     "t": "Wikipedia: Frank Lahey",
+     "u": "https://en.wikipedia.org/wiki/Frank_Lahey"
+    }
+   ],
+   "sec": ""
+  }
+ ],
+ "edge_overrides": {},
+ "node_overrides": {},
+ "post": []
+}

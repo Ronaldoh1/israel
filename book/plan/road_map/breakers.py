@@ -40,7 +40,7 @@ def main():
         Va = next(x['V'] for x in groups if x['group'] == a); Vb = next(x['V'] for x in groups if x['group'] == b)
         if R['P'] < CUT and Va >= CUT and Vb >= CUT: gpairs.append(dict(groups=[a, b], alone=[Va, Vb], **chain(M, R, ids)))
     pool = [i for i, p in sorted(single.items(), key=lambda x: x[1]) if p < base - 0.05 and N[i]['kind'] != 'document' or i in ('balfour_decl', 'mandate', 'res181')][:POOL]
-    pool = [i for i in pool if single[i] >= CUT]
+    pool = [i for i in pool if single[i] >= CUT + 5]   # anyone who alone is within five points of the line (Edmond) is shown on his own, not as half of a pair
     pairs = []; broken = set()
     for a, b in itertools.combinations(pool, 2):
         R = V.score(M, {a, b})
