@@ -64,7 +64,9 @@ CONTEXT = {('mond', 'ici'), ('sieff', 'm_and_s'), ('marks_s', 'm_and_s'), ('opda
            ('james_mayer', 'albert_cohn'), ('albert_cohn', 'rothschild_hospital'), ('rothschild_hospital', 'mayer_amschel'),
            ('albert_cohn', 'evelina_school'), ('lionel_r', 'evelina_school'), ('herzl_address_1895', 'nm_rothschild'),
            ('natty', 'royal_comm_1902'), ('herzl', 'royal_comm_1902'), ('anthony_g', 'cbf'), ('nm_rothschild', 'cbf'),
-           ('nm_rothschild', 'ottoman'), ('diaspora_1948', 'jewish_agency'), ('mond', 'lloydgeorge'), ('lionel_1882', 'league_bj')}
+           ('nm_rothschild', 'ottoman'), ('diaspora_1948', 'jewish_agency'), ('mond', 'lloydgeorge'), ('lionel_1882', 'league_bj'),
+           ('touro', 'mishkenot'), ('montefiore', 'mishkenot'), ('rockefeller_jd', 'blackstone_1891'), ('morgan', 'blackstone_1891'),
+           ('blackstone_1891', 'bharrison'), ('mandate_admin', 'kadoorie_tulkarm'), ('mandate_admin', 'kadoorie_tavor')}   # 1860 almshouse for the Old Yishuv; the 1891 petition Harrison did not act on; the Mandate's two Kadoorie schools
 
 
 def channel(e, N):
@@ -94,13 +96,20 @@ AMOUNT = {   # (from, to): (millions of 1948 dollars, what the record says)
     ('mickey_cohen', 'irgun'): (0.06, 'Mickey Cohen: $50,000-60,000 raised (1947)'),
     ('siegel', 'dafni'): (0.06, 'Bugsy Siegel: about $50,000 (1946-47)'),
     ('straus_n', 'hadassah'): (0.014, 'Nathan Straus: $10,000 (1924)'),
+    ('warburg_f', 'jewish_agency'): (0.70, 'Felix Warburg: $500,000 subscribed to the Agency finance corporation (1929)'),
+    ('mond', 'jewish_agency'): (0.70, 'Lord Melchett: $500,000 subscribed to the Agency finance corporation (1929)'),
+    ('feinberg', 'truman'): (0.05, 'Feinberg and Kaufmann: $100,000 pledged for Truman\'s 1948 campaign tour (half each)'),
+    ('kaufmann_e', 'truman'): (0.05, 'Feinberg and Kaufmann: $100,000 pledged for Truman\'s 1948 campaign tour (half each)'),
+    ('jct', 'apc_bank'): (0.68, 'Anglo-Palestine Company: initial capital about £50,000 from the Jewish Colonial Trust (1902)'),
+    ('mond', 'jabotinsky'): (0.044, 'Alfred Mond: £10,000 to Jabotinsky (1920, at about $3.66 to the pound)'),
+    ('wissotzky', 'technion'): (0.13, 'Wissotzky estate: 100,000 rubles (about $51,500 at the ruble gold parity) to the Technion (c. 1908-12)'),
 }
 # ties whose money is already counted in a total above (passed through, or part of a lifetime sum): kept for the
 # connections they make, valued at zero so nothing is counted twice
-CONDUIT = {('uja', 'upa'), ('upa', 'hadassah'), ('edmond_r', 'jca'), ('edmond_r', 'rishon'), ('edmond_r', 'zikhron'),
+CONDUIT = {('uja', 'upa'), ('edmond_r', 'rutenberg'), ('edmond_r', 'carmel_wine'), ('avriel', 'czechoslovakia'), ('upa', 'hadassah'), ('edmond_r', 'jca'), ('edmond_r', 'rishon'), ('edmond_r', 'zikhron'),
            ('edmond_r', 'rosh_pinna'), ('edmond_r', 'mazkeret'), ('edmond_r', 'ekron'), ('edmond_r', 'metulla'), ('edmond_r', 'hebrew_univ')}
 DEFAULT_M = 1.0          # money ties with no stated sum are assumed to carry $1 million; disclosed, not documented
-NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock')}   # money that did not go to the project
+NOT_PROJECT = {('nm_rothschild', 'uk'), ('lionel_r', 'uk'), ('ottoman', 'sursock'), ('kadoorie_e', 'mandate_admin')}   # money that did not go to the project
 US_RAISED = [('meir', 'czechoslovakia')]   # money raised in the United States though carried by a non-American
 CAL = 0.99               # each channel is calibrated so the full record gives it 99%
 EXP = {'money': 2, 'land': 1, 'force': 1, 'diplomacy': 1, 'organization': 1, 'recognition': 1}
@@ -191,7 +200,7 @@ ACTOR_SPAN = {
 }
 # the large sums and the years they were spent over
 AMOUNT_YEARS = {('edmond_r', 'pica'): (1882, 1934), ('upa', 'jewish_agency'): (1946, 1948), ('meir', 'czechoslovakia'): (1948, 1948),
-                ('keren_hayesod', 'jewish_agency'): (1921, 1932), ('nicaragua', 'jewish_agency'): (1948, 1948), ('straus_n', 'upa'): (1928, 1928),
+                ('keren_hayesod', 'jewish_agency'): (1921, 1932), ('nicaragua', 'jewish_agency'): (1948, 1948), ('straus_n', 'upa'): (1928, 1928), ('warburg_f', 'jewish_agency'): (1929, 1929), ('mond', 'jewish_agency'): (1929, 1929), ('wissotzky', 'technion'): (1908, 1912), ('feinberg', 'truman'): (1948, 1948), ('kaufmann_e', 'truman'): (1948, 1948), ('jct', 'apc_bank'): (1902, 1902), ('mond', 'jabotinsky'): (1920, 1920),
                 ('schiff', 'jdc'): (1914, 1914), ('mickey_cohen', 'irgun'): (1947, 1947), ('siegel', 'dafni'): (1946, 1947), ('straus_n', 'hadassah'): (1924, 1924)}
 MATERIAL = 0.05   # a channel's shortfall counts once its record reaches 5% of its 1948 total: before that the record is too thin
 STOCK = True   # knock-on: work built stays built, so a lost year's shortfall carries forward until later work outgrows it

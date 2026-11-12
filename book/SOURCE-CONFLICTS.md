@@ -365,3 +365,12 @@ One line each: the conflict, the versions, the scenes involved (section where th
 - UN Security Council Resolution 2334 "passed 14–1" (ch. 6); it passed 14–0 with the United States abstaining. (pv_khalidi)
 - Marshall to Jedda, 17 August 1948, cited as FRUS 1948 vol. 2 pt. 2, 1318; Near East material for 1948 is in vol. 5. Volume omitted on the map tie. (khalidi_layer)
 - Khan Yunis and Rafah, November 1956: "more than 450" killed (Khalidi, summing UNRWA lists 275 + 111 + 66) vs the UNRWA report itself, which for Khan Yunis gave lists of 275 individuals whose number of dead "is not known" (cw3_gaza_killings). Both given; the report's caution noted. (pv_khalidi, cw3_gaza_killings)
+
+## Today-dollar conversions on the 1948 map, checked (added 12 November 2026)
+Method: US CPI-U (BLS, Sept 2026 = 336.94; annual averages from the Minneapolis Fed, pre-1913 rebased from its 1800- series), sterling at the year's exchange rate (gold par about $4.87; about $3.66 in 1920 and $3.85 in 1921; $4.03 from 1940).
+- Keren Hayesod 1920-48, $143 million: label said ≈ $2.0 bn, note said ≈ $3.6 bn. Now ≈ $2.0–3.7 bn, depending on the year each sum was raised.
+- Kaplan's £14.5 million by 1945: ≈ $1.1 bn (label) vs ≈ $1.2 bn (note). Now ≈ $1.1–1.8 bn.
+- $125 million spent in Palestine 1946-47: ≈ $1.7 bn corrected to ≈ $1.9–2.2 bn.
+- Keren Hayesod target £25 million (1921): ≈ $2.3 bn (gold par) corrected to ≈ $1.8 bn at the 1921 rate.
+- Jewish Agency money to the AZC, 1955-62: ≈ $55, 59, 62, 63 million in different labels; aligned to ≈ $58 million ("more than $5 million") and ≈ $59 million ($5,100,001.02).
+- The other 56 conversions check within about 5% (most run about 1% low, consistent with an earlier CPI month).
