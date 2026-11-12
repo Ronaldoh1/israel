@@ -218,7 +218,7 @@ def main():
             for n in nodes:
                 if n['id'] == i: n['note'] = ((n.get('note') or '') + ' ' + txt).strip() if app else txt
     # v54 additions (Nov 2026): node and tie edits made in the built page, carried back into the source
-    for vp in [os.path.join(HERE, x) for x in ('v54_layer.json', 'rothschild_layer.json')]:
+    for vp in [os.path.join(HERE, x) for x in ('v54_layer.json', 'rothschild_layer.json', 'khalidi_layer.json')]:
         if not os.path.exists(vp): continue
         V = json.load(open(vp)); seen = {}
         for e in edges:
@@ -237,7 +237,7 @@ def main():
             if x not in have:
                 n = NID[x]; have.add(x)
                 nodes.append({'id': x, 'name': n['name'], 'kind': n['kind'], 'cluster': n['cluster'], 'note': notes.get(x, ''), 'mentions': 0, 'sections': []})
-    for vp in [os.path.join(HERE, x) for x in ('v54_layer.json', 'rothschild_layer.json')]:   # overrides also reach nodes added from tie endpoints
+    for vp in [os.path.join(HERE, x) for x in ('v54_layer.json', 'rothschild_layer.json', 'khalidi_layer.json')]:   # overrides also reach nodes added from tie endpoints
         if not os.path.exists(vp): continue
         V = json.load(open(vp)); byid = {n['id']: n for n in nodes}
         for i, o in V['node_overrides'].items():

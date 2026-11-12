@@ -357,3 +357,11 @@ One line each: the conflict, the versions, the scenes involved (section where th
 - US vetoes on Israel: 51 through Sept 2025 (Jewish Virtual Library) vs 45 of 89 as of Dec 2023 (Chicago Council). Both given. (dv4)
 - Cumulative US aid: ~$175 bn current dollars (CRS, FY2025) vs ~$298 bn constant 2024 dollars (CRS) vs "more than $300 bn" (CFR). Methods explained. (dv4)
 - Trump's 3 Nov 2026 statement on ending aid: "by the end of the year" (Times of Israel) vs "by 2027" (Antiwar.com summary of Ynet). Quoted Times of Israel and Rubio. (dv4)
+
+## Rashid Khalidi, The Hundred Years' War on Palestine (added 12 November 2026)
+- Edmond de Rothschild called "the British peer and financier" (intro); he was a French baron, and PICA was founded by him in 1924 as a separate body. Corrected in prose (pv_khalidi).
+- "Hayward Commission" (ch. 1 and index); the 1921 Jaffa riots inquiry was the Haycraft Commission. (pv_khalidi)
+- Balfour's memorandum dated September 1919 (ch. 1), 11 August 1919 (notes) and 1917 (conclusion). Used the notes' date. (pv_khalidi)
+- UN Security Council Resolution 2334 "passed 14–1" (ch. 6); it passed 14–0 with the United States abstaining. (pv_khalidi)
+- Marshall to Jedda, 17 August 1948, cited as FRUS 1948 vol. 2 pt. 2, 1318; Near East material for 1948 is in vol. 5. Volume omitted on the map tie. (khalidi_layer)
+- Khan Yunis and Rafah, November 1956: "more than 450" killed (Khalidi, summing UNRWA lists 275 + 111 + 66) vs the UNRWA report itself, which for Khan Yunis gave lists of 275 individuals whose number of dead "is not known" (cw3_gaza_killings). Both given; the report's caution noted. (pv_khalidi, cw3_gaza_killings)
