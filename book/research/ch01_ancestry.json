@@ -111,6 +111,39 @@
      "kind": "web"
     }
    ]
+  },
+  {
+   "id": "an_mixed",
+   "stage": "ch01",
+   "topic": "Ashkenazi ancestry as a mix",
+   "claims": [
+    {
+     "text": "Costa 2013: Ashkenazi maternal lineages mostly European (prehistoric European origin), converts mainly women, especially Italy.",
+     "strength": "reported",
+     "sources": [
+      "an_costa2013"
+     ]
+    },
+    {
+     "text": "Costa estimated 65-81% European mtDNA; Behar disputed; Hammer 2000 paternal Middle Eastern; Erfurt (Waldman 2022) Middle Eastern 19-43%, Mediterranean European 37-65%; Elhaik 2012 Khazar, Behar 2013 rejected.",
+     "strength": "reference",
+     "sources": [
+      "an_gsj"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "an_costa2013",
+     "url": "https://sciencedaily.com/releases/2013/10/131008112539.htm",
+     "label": "ScienceDaily, on Costa et al., 'A substantial prehistoric European ancestry amongst Ashkenazi maternal lineages', Nature Communications, Oct 2013"
+    },
+    {
+     "key": "an_gsj",
+     "url": "https://en.wikipedia.org/wiki/Genetic_studies_of_Jews",
+     "label": "Wikipedia, Genetic studies of Jews"
+    }
+   ]
   }
  ]
 }
