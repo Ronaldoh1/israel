@@ -913,15 +913,6 @@
    "priority": 8
   },
   {
-   "host": "ch53",
-   "title": "The World Reads This Story",
-   "subtitle": "Latin America, Spain, Africa, Europe, the Americas, Asia and Oceania",
-   "merge": [
-    "ch55"
-   ],
-   "priority": 9
-  },
-  {
    "host": "ch51",
    "title": "Street Questions",
    "subtitle": "Viral Claims, the Comment Section and the Ledger of the Machine",
@@ -2234,5 +2225,12 @@
     ]
    }
   ]
+ },
+ "_baseline_absorbs": {
+  "absorbs": [
+   "ch53",
+   "ch55"
+  ],
+  "_note": "The World Reads This Story (ch53, ch55) is told in Volume I, The Baseline, part 'The Same Event, Nation by Nation' (ch01_world_reads draws its scenes)."
  }
 }
