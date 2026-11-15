@@ -1,0 +1,75 @@
+{
+ "volume": "baseline",
+ "verified": "2026-11-14",
+ "entries": [
+  {
+   "id": "def_fight",
+   "stage": "ch01",
+   "topic": "The definition fight: adoption, opposition and status",
+   "claims": [
+    {
+     "text": "CAM 2025 report: 1,334 adoptions worldwide by 31 Dec 2025; 47 countries; 37 US states (18 legislation, 19 executive); 386 educational institutions; 67 new in 2025; Ireland 26th EU state, Malta the only EU state not; Harvard, Yale, Columbia adopted in 2025; NYC's adoption rescinded Jan 2026; European Commission, Parliament, Council of Europe, OAS adopted.",
+     "strength": "reported",
+     "sources": [
+      "def_cam_2025"
+     ]
+    },
+    {
+     "text": "JDA released 25 Mar 2021; drafting from June 2020; core definition; 15 guidelines in three sections; ~200 initial signatories; criticisms (Hirsh, Nelson, Steinberg/Romirowsky).",
+     "strength": "reference",
+     "sources": [
+      "def_wiki_jda"
+     ]
+    },
+    {
+     "text": "Apr 2023: 104 organizations (founding 13 incl. ACLU, Amnesty, HRW, B'Tselem, Adalah, Al-Haq) urged UN not to adopt IHRA; cite Achiume.",
+     "strength": "primary",
+     "sources": [
+      "def_hrw_un2023"
+     ]
+    },
+    {
+     "text": "EO 'Additional Measures to Combat Anti-Semitism' 29 Jan 2025 expands EO 13899 (Dec 2019); Title VI inventory; visa inadmissibility; institutions may monitor and report alien students.",
+     "strength": "reported",
+     "sources": [
+      "def_wh_eo2025"
+     ]
+    },
+    {
+     "text": "2 Jan 2026: Mamdani revoked Adams's IHRA and anti-boycott orders; kept Office to Combat Antisemitism; Israeli consul general Akunis criticized; CAIR-NY welcomed.",
+     "strength": "reported",
+     "sources": [
+      "def_abc_mamdani2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "def_cam_2025",
+     "url": "https://combatantisemitism.org/wp-content/uploads/2026/07/2025IHRAAdoptionsReport.pdf",
+     "label": "Combat Antisemitism Movement, 2025 IHRA Adoptions Report (2026)"
+    },
+    {
+     "key": "def_wiki_jda",
+     "url": "https://en.wikipedia.org/wiki/Jerusalem_Declaration_on_Antisemitism",
+     "label": "Wikipedia, Jerusalem Declaration on Antisemitism"
+    },
+    {
+     "key": "def_hrw_un2023",
+     "url": "https://www.hrw.org/news/2023/04/04/human-rights-and-other-civil-society-groups-urge-united-nations-respect-human",
+     "label": "Human Rights Watch, joint letter urging the UN not to adopt the IHRA definition, 4 Apr 2023 (updated 20 Apr)"
+    },
+    {
+     "key": "def_wh_eo2025",
+     "url": "https://www.wilmerhale.com/en/insights/client-alerts/20250131-president-trump-issues-executive-order-on-combatting-antisemitism",
+     "label": "WilmerHale, 'President Trump Issues Executive Order on Combatting Anti-Semitism', 31 Jan 2025"
+    },
+    {
+     "key": "def_abc_mamdani2026",
+     "url": "https://abc7ny.com/post/nyc-mayor-zohran-mamdani-revokes-eric-adams-executive-orders-israel/18342832/",
+     "label": "ABC7 New York, 'Mayor Zohran Mamdani revokes Eric Adams' executive orders on Israel', 2 Jan 2026"
+    }
+   ]
+  }
+ ]
+}
