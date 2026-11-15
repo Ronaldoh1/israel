@@ -123,3 +123,4 @@ Every new section is written to the Road to 1948 standard: inline sources that r
 
 ## Progress
 - 14 Nov 2026: "Who Holds the Pen" written as Baseline chapter basepen (6 sections, research ch01_pen.json, shipped v64). s00a Maxwell trimmed to a pointer. Still to do: Ravitch/FitzGerald chapter is in; university chapter, three school systems, Jewish education, Nation by Nation, Never Again record, definition fight (IHRA/JDA), Parts 2-4 additions, Clock the Pattern.
+- 14 Nov 2026: "How Jewish Students Are Taught" written as chapter basejed (4 sections, research ch01_jed.json, shipped v65).
