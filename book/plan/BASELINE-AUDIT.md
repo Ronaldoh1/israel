@@ -120,3 +120,6 @@ Every new section is written to the Road to 1948 standard: inline sources that r
 - **"Never audited"** is documented as law and practice: no federal review (§1232a), state adoption, publisher self-certification. No new claim is needed to make the point.
 - **The words.** "Semitic" was coined by Schlözer in 1781 for a language family. "Antisemitism" was popularized by Marr in 1879 for hatred of Jews in Europe. The definition fight is presented with each definition's own text.
 - Book Zero's discipline lines carry over: institutions are named, never peoples; Jewish dissent is carried throughout; the strongest case for the other side is kept.
+
+## Progress
+- 14 Nov 2026: "Who Holds the Pen" written as Baseline chapter basepen (6 sections, research ch01_pen.json, shipped v64). s00a Maxwell trimmed to a pointer. Still to do: Ravitch/FitzGerald chapter is in; university chapter, three school systems, Jewish education, Nation by Nation, Never Again record, definition fight (IHRA/JDA), Parts 2-4 additions, Clock the Pattern.
