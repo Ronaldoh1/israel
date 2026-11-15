@@ -1,0 +1,50 @@
+{
+ "volume": "baseline",
+ "verified": "2026-11-15",
+ "entries": [
+  {
+   "id": "fwm_birthplaces",
+   "stage": "ch01",
+   "topic": "Where Zionism's ideas and organizations began, 1838–1897, and where the first settlers came from",
+   "claims": [
+    {"text": "Shaftesbury repeatedly lobbied Palmerston to encourage Jewish return; a British consul was appointed in Jerusalem in 1838.", "strength": "reported", "sources": ["fwm_wiki_cz_uk"]},
+    {"text": "Kalischer lived in Thorn (Toruń), acting rabbi for more than forty years; Derishat Zion published 1862 in Lyck.", "strength": "reference", "sources": ["fwm_wiki_kalischer"]},
+    {"text": "Bilu began in Russia in January 1882; Belkind's group in Kharkov was its first base ('Kharkov became the Bilu headquarters'); 14 members reached Jaffa on 6 July 1882; Gederah settled December 1884.", "strength": "reference", "sources": ["fwm_jvl_bilu"]},
+    {"text": "Katowice Conference opened 6 Nov 1884 in Kattowitz (Germany, now Poland); 32 delegates (22 from Russia); chaired by Pinsker; central committee based in Odessa.", "strength": "reference", "sources": ["fwm_wiki_katowice"]},
+    {"text": "First Aliyah: estimates 25,000–60,000; 50–70% later left; Romanian expeditions from Galați, about 600 settled in moshavot including Rosh Pinna and Zichron Ya'akov; a few hundred Jews left Sanaa in 1881–82, arriving about seven months before most Eastern Europeans; Rishon LeZion, Zikhron Ya'akov, Rosh Pinna, Petah Tikva (re-established) 1882.", "strength": "reference", "sources": ["fwm_wiki_firstaliyah"]},
+    {"text": "JVL: nearly 35,000 came in the First Aliyah; almost half left within several years.", "strength": "reference", "sources": ["fw_jvl_firstaliyah"]}
+   ],
+   "sources": [
+    {"key": "fwm_wiki_cz_uk", "url": "https://en.wikipedia.org/wiki/Christian_Zionism_in_the_United_Kingdom", "label": "Wikipedia, 'Christian Zionism in the United Kingdom' (Shaftesbury; British consul in Jerusalem, 1838), accessed 2026-11-15"},
+    {"key": "fwm_wiki_kalischer", "url": "https://en.wikipedia.org/wiki/Zvi_Hirsch_Kalischer", "label": "Wikipedia, 'Zvi Hirsch Kalischer' (Thorn; Derishat Zion, 1862), accessed 2026-11-15"},
+    {"key": "fwm_jvl_bilu", "url": "https://www.jewishvirtuallibrary.org/bilu-2", "label": "Jewish Virtual Library, 'Bilu' (from Encyclopaedia Judaica), accessed 2026-11-15"},
+    {"key": "fwm_wiki_katowice", "url": "https://en.wikipedia.org/wiki/Katowice_Conference", "label": "Wikipedia, 'Katowice Conference' (1884), accessed 2026-11-15"},
+    {"key": "fwm_wiki_firstaliyah", "url": "https://en.wikipedia.org/wiki/First_Aliyah", "label": "Wikipedia, 'First Aliyah' (numbers, Romanian and Yemenite immigrants, settlements of 1882), accessed 2026-11-15"}
+   ]
+  },
+  {
+   "id": "fwm_emigration",
+   "stage": "ch01",
+   "topic": "Where Jews leaving Eastern Europe went, 1881–1914",
+   "claims": [
+    {"text": "Posen Library: about 1,700,000 Jews to the US 1881–1914; about 300,000 to England, 100,000 Argentina, 80,000 France, 60,000 Canada, 50,000 South Africa; about 60,000 to Palestine.", "strength": "reference", "sources": ["fwm_posen_migration"]},
+    {"text": "My Jewish Learning: more than 2.5 million Jews left Eastern Europe 1881–1914, 'some two million' to the US; 1905–06 from Russia: 3,500 to Palestine.", "strength": "reference", "sources": ["fwm_mjl_emigration"]}
+   ],
+   "sources": [
+    {"key": "fwm_posen_migration", "url": "https://www.posenlibrary.com/node/12125", "label": "Posen Library of Jewish Culture and Civilization, 'The Mass Migration of Jews', accessed 2026-11-15"},
+    {"key": "fwm_mjl_emigration", "url": "https://www.myjewishlearning.com/article/jewish-emigration-in-the-19th-century/", "label": "My Jewish Learning, 'Jewish Emigration in the 19th Century', accessed 2026-11-15"}
+   ]
+  },
+  {
+   "id": "fwm_today",
+   "stage": "ch01",
+   "topic": "Where Jews live today, by country (Jewish Agency / DellaPergola, 2024)",
+   "claims": [
+    {"text": "JNS, 2 Oct 2024, Jewish Agency data from Sergio DellaPergola: Israel 7.3m, US 6.3m, France 438,500, Canada 400,000, Britain 313,000, Argentina 170,000, Germany 125,000, Russia 123,000, Australia 117,000; 'core' definition.", "strength": "reported", "sources": ["fwm_jns_2024"]}
+   ],
+   "sources": [
+    {"key": "fwm_jns_2024", "url": "https://www.jns.org/jewish-population-hits-15-8-million-globally/", "label": "JNS, 'Jewish population hits 15.8 million globally', 2 Oct 2024 (Jewish Agency; Sergio DellaPergola)"}
+   ]
+  }
+ ]
+}
