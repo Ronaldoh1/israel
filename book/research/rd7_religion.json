@@ -1,0 +1,81 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "rl_pass",
+   "stage": "rd7",
+   "topic": "Religious institutions, both sides, added to the network map (Nov 2026)",
+   "claims": [
+    {
+     "text": "London Society founded 1809 by evangelical Anglicans (Wilberforce, Simeon); agenda included the physical restoration of the Jewish people; Jerusalem clinic 1836; Christ Church 1849; supported the 1841 bishopric, whose first bishop Michael Solomon Alexander was its worker.",
+     "strength": "reported",
+     "sources": [
+      "rl_cmj",
+      "rl_bish"
+     ]
+    },
+    {
+     "text": "Chief Rabbinate elected 24 Feb 1921 (Kook, Jacob Meir); Palestine Gazette 1 Apr 1921: government recognizes the Council as sole authority in Jewish law.",
+     "strength": "reported",
+     "sources": [
+      "rl_kook"
+     ]
+    },
+    {
+     "text": "Pittsburgh Platform 1885: 'no longer a nation, but a religious community'; Columbus Platform 1937: 'the obligation of all Jewry to aid in its upbuilding as a Jewish homeland'; American Council for Judaism founded 1942.",
+     "strength": "reported",
+     "sources": [
+      "rl_reform"
+     ]
+    },
+    {
+     "text": "Status quo letter, 19 June 1947, Ben-Gurion to Agudat Israel, four days after UNSCOP began its tour; Sabbath, kashrut, religious family law, school autonomy.",
+     "strength": "reported",
+     "sources": [
+      "rl_sq"
+     ]
+    },
+    {
+     "text": "Jacob de Haan, representative of Rabbi Sonnenfeld's community, lobbied the British (Northcliffe 1922), planned a London delegation; shot 30 June 1924 by Haganah member Avraham Tehomi; Yosef Hecht testified in 1952 that he and the Jerusalem commander decided it.",
+     "strength": "reported",
+     "sources": [
+      "rl_dehaan"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "rl_cmj",
+     "url": "https://en.wikipedia.org/wiki/Church%27s_Ministry_Among_Jewish_People",
+     "label": "Wikipedia, 'Church's Ministry Among Jewish People' (London Society for Promoting Christianity Amongst the Jews)"
+    },
+    {
+     "key": "rl_bish",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Prussian_bishopric_in_Jerusalem",
+     "label": "Wikipedia, 'Anglo-Prussian bishopric in Jerusalem'"
+    },
+    {
+     "key": "rl_kook",
+     "url": "https://en.wikipedia.org/wiki/Abraham_Isaac_Kook",
+     "label": "Wikipedia, 'Abraham Isaac Kook' (citing the Palestine Gazette, 1 April 1921)"
+    },
+    {
+     "key": "rl_reform",
+     "url": "https://en.wikipedia.org/wiki/Reform_anti-Zionism",
+     "label": "Wikipedia, 'Reform anti-Zionism'"
+    },
+    {
+     "key": "rl_sq",
+     "url": "https://en.wikipedia.org/wiki/Status_quo_(Israel)",
+     "label": "Wikipedia, 'Status quo (Israel)'"
+    },
+    {
+     "key": "rl_dehaan",
+     "url": "https://en.wikipedia.org/wiki/Jacob_Isra%C3%ABl_de_Haan",
+     "label": "Wikipedia, 'Jacob Israël de Haan'"
+    }
+   ]
+  }
+ ]
+}
