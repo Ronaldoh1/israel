@@ -1,0 +1,63 @@
+{
+ "volume": "dv5",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "sa_arch",
+   "stage": "dv5",
+   "topic": "How the state is built: features shared and the combination (Nov 2026)",
+   "claims": [
+    {
+     "text": "State of emergency declared under section 9 of the Law and Administration Ordinance, 19 May 1948; in continuous effect; renewed annually; Basic Law: The Government s.38 allows renewal without limit; emergency regulations may modify laws; ACRI petition (1999) dismissed in 2012.",
+     "strength": "reported",
+     "sources": [
+      "sa_emergency"
+     ]
+    },
+    {
+     "text": "Ben-Gurion before independence: 'When we declare the State we do not have to determine borders nor do we have to seek international recognition'; the borders have never been legally determined.",
+     "strength": "reported",
+     "sources": [
+      "sa_jta_borders"
+     ]
+    },
+    {
+     "text": "States with uncodified constitutions: United Kingdom, New Zealand, Saudi Arabia, Israel, San Marino, Canada.",
+     "strength": "reported",
+     "sources": [
+      "sa_uncodified"
+     ]
+    },
+    {
+     "text": "Ethnic-origin citizenship or return laws exist in Armenia, Bulgaria, Croatia, Finland, Germany (Art. 116), Greece, Lithuania, Serbia, South Korea, Spain (Sephardic descendants), Turkey and others, as well as Israel's Law of Return.",
+     "strength": "reported",
+     "sources": [
+      "sa_jus_sanguinis"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "sa_emergency",
+     "url": "https://en.wikipedia.org/wiki/Israeli_state_of_emergency",
+     "label": "Wikipedia, 'Israeli state of emergency'"
+    },
+    {
+     "key": "sa_jta_borders",
+     "url": "https://jta.org/archive/ben-gurions-diary-remarks-just-before-independence-now-public",
+     "label": "JTA, 'Ben-Gurion's Diary Remarks Just Before Independence Now Public'"
+    },
+    {
+     "key": "sa_uncodified",
+     "url": "https://en.wikipedia.org/wiki/Uncodified_constitution",
+     "label": "Wikipedia, 'Uncodified constitution'"
+    },
+    {
+     "key": "sa_jus_sanguinis",
+     "url": "https://www.wikiwand.com/en/articles/Jus_sanguinis",
+     "label": "Wikipedia (via Wikiwand), 'Jus sanguinis' (ethnic-origin citizenship and return laws by country)"
+    }
+   ]
+  }
+ ]
+}
