@@ -1,0 +1,52 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "lg_channel",
+   "stage": "rd7",
+   "topic": "The legitimacy channel added to the network map (Nov 2026): the survivors' case and public and Christian support",
+   "claims": [
+    {"text": "Harrison sent June 1945; visited 30 camps; report delivered to Truman 24 Aug 1945; cited Jewish Agency request for 100,000 certificates; Truman forwarded it to Attlee recommending 100,000; Attlee rejected; British set up the Anglo-American Committee to ease tensions; April 1946 report recommended 100,000.", "strength": "reference", "sources": ["lg_ushmm_harrison"]},
+    {"text": "UNSCOP 37th meeting, Jerusalem, 19 July 1947: the chairman reported on the Exodus 1947; with Mr. Simic he went to Haifa.", "strength": "primary", "sources": ["lg_unscop37"]},
+    {"text": "Aug 1947: Fabregat, Hood and Garcia Granados returned from a tour of DP camps; report described as most effective; UNSCOP considerably sobered.", "strength": "reported", "sources": ["lg_jta_dp"]},
+    {"text": "Lodge-Fish resolution: House 30 June 1922, Senate 13 July, Harding signed 21 Sept 1922.", "strength": "reference", "sources": ["lg_wiki_lodgefish"]},
+    {"text": "American Palestine Committee: founded 1932 (Neumann); by the 1940s 15,000 members including two-thirds of the Senate; worked with AZEC on the 1945 resolution; merged 1946 into the American Christian Palestine Committee.", "strength": "reference", "sources": ["lg_wiki_apc"]}
+   ],
+   "sources": [
+    {"key": "lg_ushmm_harrison", "url": "https://encyclopedia.ushmm.org/content/en/article/the-harrison-report", "label": "United States Holocaust Memorial Museum, Holocaust Encyclopedia, 'The Harrison Report'"},
+    {"key": "lg_unscop37", "url": "https://www.un.org/unispal/document/auto-insert-186653/", "label": "UN Special Committee on Palestine, summary record of the thirty-seventh meeting (private), Jerusalem, 19 July 1947 (UNISPAL)"},
+    {"key": "lg_jta_dp", "url": "https://www.jta.org/archive/unscop-in-final-stages-of-palestine-inquiry-sub-committee-reports-on-european-dp-camps", "label": "Jewish Telegraphic Agency, 'UNSCOP in final stages of Palestine inquiry; sub-committee reports on European DP camps', August 1947"},
+    {"key": "lg_wiki_lodgefish", "url": "https://en.wikipedia.org/wiki/Lodge%E2%80%93Fish_Resolution", "label": "Wikipedia, 'Lodge–Fish Resolution', accessed 2026-11-19"},
+    {"key": "lg_wiki_apc", "url": "https://en.wikipedia.org/wiki/American_Palestine_Committee", "label": "Wikipedia, 'American Palestine Committee', accessed 2026-11-19"}
+   ]
+  },
+  {
+   "id": "cb_search",
+   "stage": "rd7",
+   "topic": "Following the money to the central banks: documented ties between central banks and the movement, 1855–1948",
+   "claims": [
+    {"text": "EJ via JVL: total Haavara transfer LP 8,100,000; Reichsbank provided LP 2,600,000 in coordination with Haavara; about 60,000 German Jews immigrated 1933–39 with the transfer's help; emigrants paid into the PALTREU account.", "strength": "reference", "sources": ["cb_jvl_haavara"]},
+    {"text": "JTA 10 Aug 1934: the Reichsbank would control transferred Jewish capital even in Palestine; uncertified property passes to the Reichsbank; the money settled German export bills, giving the regime sterling.", "strength": "reported", "sources": ["cb_jta_1934"]},
+    {"text": "JTA 9 Apr 1936: the Reichsbank will no longer transact business under the agreement; a government order gave operation to Haavara and two banks, the Warburg bank of Hamburg and A. E. Wassermann of Berlin.", "strength": "reported", "sources": ["cb_jta_1936"]},
+    {"text": "EJ via JVL: Max Warburg appointed to the Reichsbank General Council in 1924; helped emigrants move money through the Palaestina-Treuhand; intensified interest in Zionism from the late 1920s; emigrated to New York 1938.", "strength": "reference", "sources": ["cb_jvl_mwarburg"]},
+    {"text": "Alphonse de Rothschild appointed a regent of the Banque de France in 1855, a position he held for the rest of his life (d. 1905).", "strength": "reference", "sources": ["cb_wiki_alphonse"]},
+    {"text": "Palestine Currency Board appointed by the Colonial Secretary 1926, based in London, Palestine pound at par with sterling, dissolved May 1948; Anglo-Palestine Bank issued new notes August 1948.", "strength": "reference", "sources": ["cb_wiki_palpound"]},
+    {"text": "FRUS 20 Feb 1948: the UK would block Palestine's sterling balances (about £100 million) from 22 Feb, leaving £7 million for working balances to mid-May; Palestine to leave the sterling area.", "strength": "primary", "sources": ["cb_frus48"]},
+    {"text": "Eugene Meyer, Fed chairman 1930–33, first World Bank president 1946; the article records no position on Zionism or Palestine.", "strength": "reference", "sources": ["cb_wiki_meyer"]},
+    {"text": "Bank Notes Ordinance 1948 effective 17 Aug 1948; Anglo-Palestine Bank Issue Department; Bank of Israel Law 24 Aug 1954; bank established 1 Dec 1954; first governor David Horowitz.", "strength": "reference", "sources": ["cb_jvl_boi"]}
+   ],
+   "sources": [
+    {"key": "cb_jvl_haavara", "url": "https://www.jewishvirtuallibrary.org/haavara", "label": "Jewish Virtual Library, 'Haavara' (from Encyclopaedia Judaica), accessed 2026-11-19"},
+    {"key": "cb_jta_1934", "url": "https://jta.org/archive/reich-controls-jewish-funds-in-holy-land", "label": "Jewish Telegraphic Agency, 'Reich controls Jewish funds in Holy Land', 10 August 1934"},
+    {"key": "cb_jta_1936", "url": "https://www.jta.org/archive/reich-turns-over-operation-of-transfer-pact-to-haavara-2-banks", "label": "Jewish Telegraphic Agency, 'Reich turns over operation of transfer pact to Haavara, 2 banks', 9 April 1936"},
+    {"key": "cb_jvl_mwarburg", "url": "https://www.jewishvirtuallibrary.org/warburg-max-m", "label": "Jewish Virtual Library, 'Warburg, Max M.' (from Encyclopaedia Judaica), accessed 2026-11-19"},
+    {"key": "cb_wiki_alphonse", "url": "https://en.wikipedia.org/wiki/Alphonse_James_de_Rothschild", "label": "Wikipedia, 'Alphonse James de Rothschild', accessed 2026-11-19"},
+    {"key": "cb_wiki_palpound", "url": "https://en.wikipedia.org/wiki/Palestine_pound", "label": "Wikipedia, 'Palestine pound' (Palestine Currency Board), accessed 2026-11-19"},
+    {"key": "cb_frus48", "url": "https://history.state.gov/historicaldocuments/frus1948v05p2/d48", "label": "Foreign Relations of the United States, 1948, vol. V, part 2, document 48: Ness to Humelsine on Palestine's sterling balances, 20 February 1948"},
+    {"key": "cb_wiki_meyer", "url": "https://en.wikipedia.org/wiki/Eugene_Meyer_(financier)", "label": "Wikipedia, 'Eugene Meyer (financier)', accessed 2026-11-19"},
+    {"key": "cb_jvl_boi", "url": "https://jewishvirtuallibrary.org/the-bank-of-israel", "label": "Jewish Virtual Library, 'The Bank of Israel', accessed 2026-11-19"}
+   ]
+  }
+ ]
+}
