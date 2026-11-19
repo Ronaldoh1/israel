@@ -1,0 +1,27 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "pp_channel",
+   "stage": "rd7",
+   "topic": "The people channel added to the network map (Nov 2026): immigration and population, 1880-1948",
+   "claims": [
+    {"text": "Year-by-year Jewish immigration 1919-1941 (Porath): 1919-23 35,183; 1924-29 72,594; 1930-32 21,552; 1933-39 235,170; 1940-41 15,235; total 379,734.", "strength": "reference", "sources": ["pp_jvl_table"]},
+    {"text": "Clandestine immigration 1939-48 about 110,000 by sea; 66 voyages carried about 70,000; total Mandate immigration legal and illegal about 480,000.", "strength": "reference", "sources": ["pp_jvl_bet"]},
+    {"text": "1880 Jewish population 20,000-25,000; 650,000 at the founding of the state.", "strength": "reference", "sources": ["pp_wiki_aliyah"]},
+    {"text": "Mandate Article 6: the Administration shall facilitate Jewish immigration under suitable conditions and encourage close settlement.", "strength": "primary", "sources": ["pp_mandate_text"]},
+    {"text": "1924 Act limited each country to 2% of its 1890 US residents; many European Jews turned to aliyah; Fourth Aliyah 82,000 (1924-29).", "strength": "reference", "sources": ["pp_israeled_1924"]},
+    {"text": "Meyerson argues the share of Jewish emigrants going to Palestine rose from about 3% to 46% (1932-39) after the US closed its doors.", "strength": "reported", "sources": ["pp_meyerson_1924"]}
+   ],
+   "sources": [
+    {"key": "pp_jvl_table", "url": "https://www.jewishvirtuallibrary.org/jewish-immigrantion-to-palestine-1919-1941", "label": "Jewish Virtual Library, 'Jewish Immigration to Palestine, 1919-1941' (from Yehoshua Porath)"},
+    {"key": "pp_jvl_bet", "url": "https://www.jewishvirtuallibrary.org/aliyah-bet-1939-1948", "label": "Jewish Virtual Library, 'Aliyah Bet, 1939-1948'"},
+    {"key": "pp_wiki_aliyah", "url": "https://en.wikipedia.org/wiki/Aliyah", "label": "Wikipedia, 'Aliyah', accessed 2026-11-19"},
+    {"key": "pp_mandate_text", "url": "https://sourcebooks.web.fordham.edu/mod/1922mandate.asp", "label": "The Mandate for Palestine, 1922 (Fordham University, Modern History Sourcebook)"},
+    {"key": "pp_israeled_1924", "url": "https://israeled.org/?p=5023", "label": "Center for Israel Education, 'Restrictive U.S. 1924 Immigration Act Boosts Jewish Immigration to Palestine'"},
+    {"key": "pp_meyerson_1924", "url": "https://prospect.org/world/2024-05-06-who-created-israel-palestine-conflict/", "label": "Harold Meyerson, 'Who Created the Israel-Palestine Conflict?', The American Prospect, 6 May 2024"}
+   ]
+  }
+ ]
+}
