@@ -1,0 +1,153 @@
+{
+ "nodes": [
+  {
+   "id": "elie_r",
+   "name": "Élie de Rothschild (1917–2007)",
+   "kind": "person",
+   "cluster": "origins",
+   "note": "French banker of the Paris branch: helped rebuild the family bank, de Rothschild Frères, after the war, and ran Château Lafite from 1946 to 1974. Died in 2007. In his written statement to House Oversight (Feb 2026), Wexner says Epstein offered him as a reference and that he 'highly recommended' Epstein for work done for his family. That is Wexner's account; no Rothschild record of any work by Epstein has been published, so the work itself is not established. A different branch from the Edmond de Rothschild group, whose documented contract with Epstein dates from 2015."
+  },
+  {
+   "id": "study_group",
+   "name": "The Study Group (\"Mega Group\"), 1991",
+   "kind": "institution",
+   "cluster": "origins",
+   "note": "A club of wealthy businessmen for Jewish philanthropy, founded in 1991 by Les Wexner and Charles Bronfman and made public by the Wall Street Journal in May 1998; it met twice a year and seeded programs such as Birthright Israel. Checked for a tie to Epstein: none documented. The only link in circulation is a former intelligence officer's blog claim, not a finding."
+  }
+ ],
+ "edges": [
+  {
+   "f": "meister",
+   "t": "wexner",
+   "label": "introduced him to Epstein, mid-to-late 1980s (Wexner's statement to Congress, Feb 2026)",
+   "type": "introduction",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Statement of Leslie H. Wexner submitted to the House Oversight Committee (Feb 2026), via NBC4",
+     "u": "https://www.nbc4i.com/wp-content/uploads/sites/18/2026/02/Statement-of-Leslie-H.-Wexner.pdf"
+    },
+    {
+     "t": "WYSU, 16 Dec 2025: New York Times details how Les Wexner met Jeffrey Epstein",
+     "u": "https://wysu.org/ohio-news/2025-12-16/new-york-times-details-how-les-wexner-met-sex-trafficker-jeffrey-epstein-as-he-built-wealth"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "greenberg",
+   "label": "checked Epstein's references with him; endorsed (Wexner's statement, Feb 2026)",
+   "type": "reference check",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Statement of Leslie H. Wexner submitted to the House Oversight Committee (Feb 2026), via NBC4",
+     "u": "https://www.nbc4i.com/wp-content/uploads/sites/18/2026/02/Statement-of-Leslie-H.-Wexner.pdf"
+    },
+    {
+     "t": "Fox News, Feb 2026: ex-Victoria's Secret CEO tells House investigators he was 'conned' by Epstein",
+     "u": "https://www.foxnews.com/politics/ex-victorias-secret-ceo-tells-house-investigators-conned-epstein-closed-door-deposition"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "cayne",
+   "label": "checked Epstein's references with him; endorsed (Wexner's statement, Feb 2026)",
+   "type": "reference check",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Statement of Leslie H. Wexner submitted to the House Oversight Committee (Feb 2026), via NBC4",
+     "u": "https://www.nbc4i.com/wp-content/uploads/sites/18/2026/02/Statement-of-Leslie-H.-Wexner.pdf"
+    },
+    {
+     "t": "Fox News, Feb 2026: ex-Victoria's Secret CEO tells House investigators he was 'conned' by Epstein",
+     "u": "https://www.foxnews.com/politics/ex-victorias-secret-ceo-tells-house-investigators-conned-epstein-closed-door-deposition"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "elie_r",
+   "label": "says Élie de Rothschild \"highly recommended\" Epstein (Wexner's statement, Feb 2026)",
+   "type": "reference check",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Statement of Leslie H. Wexner submitted to the House Oversight Committee (Feb 2026), via NBC4",
+     "u": "https://www.nbc4i.com/wp-content/uploads/sites/18/2026/02/Statement-of-Leslie-H.-Wexner.pdf"
+    },
+    {
+     "t": "Fox News, Feb 2026: ex-Victoria's Secret CEO tells House investigators he was 'conned' by Epstein",
+     "u": "https://www.foxnews.com/politics/ex-victorias-secret-ceo-tells-house-investigators-conned-epstein-closed-door-deposition"
+    },
+    {
+     "t": "The Rothschild Archive: Elie Robert de Rothschild (1917–2007)",
+     "u": "https://family.rothschildarchive.org/people/117-elie-robert-de-rothschild-1917-2007"
+    }
+   ]
+  },
+  {
+   "f": "elie_r",
+   "t": "epstein",
+   "label": "work for the Rothschild family in France: Wexner's account only; not established",
+   "type": "claim",
+   "status": "to-verify",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Statement of Leslie H. Wexner submitted to the House Oversight Committee (Feb 2026), via NBC4",
+     "u": "https://www.nbc4i.com/wp-content/uploads/sites/18/2026/02/Statement-of-Leslie-H.-Wexner.pdf"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "new_albany_co",
+   "label": "signed its incorporation papers as president (Ohio state records)",
+   "type": "appointment",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Commercial Observer, Nov 2019: how Les Wexner created the richest town in Ohio",
+     "u": "https://commercialobserver.com/2019/11/how-les-wexner-created-the-richest-town-in-ohio/"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "study_group",
+   "label": "co-founded with Charles Bronfman, 1991",
+   "type": "founding",
+   "status": "verified",
+   "src": "pass 13 (upstream of Wexner), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia: Study Group (Jewish group), citing the Wall Street Journal, May 1998",
+     "u": "https://en.wikipedia.org/wiki/Study_Group_(Jewish_group)"
+    }
+   ]
+  }
+ ],
+ "status": [
+  [
+   "wexner",
+   "epstein",
+   "testified (Feb 2026) Epstein came recommended",
+   "verified",
+   "Statement of Leslie H. Wexner to House Oversight, Feb 2026",
+   "=written statement to House Oversight (Feb 2026): introduced by Bob Meister; references from Ace Greenberg and Jimmy Cayne of Bear Stearns and from Élie de Rothschild"
+  ]
+ ],
+ "node_notes": {
+  "wexner": "L Brands founder. His wealth is his own company's: he opened the first Limited store in Columbus in August 1963 with a $5,000 loan from his aunt and a matching bank loan, took the company public in 1969, bought Mast Industries (1978), Lane Bryant and Victoria's Secret (1982), Lerner and Henri Bendel (1985) and Abercrombie & Fitch (1988); sales passed $1 billion in 1984 and $4 billion in 1988. Met Epstein in the mid-to-late 1980s through Bob Meister, a former vice chairman of Aon, and checked references with Ace Greenberg and Jimmy Cayne of Bear Stearns and with Élie de Rothschild (his statement to Congress, Feb 2026). Gave Epstein full power of attorney (1991); $3.1B in stock sales overseen through 2006; revoked it in September 2007 and later said Epstein misappropriated vast sums. Deposed Feb 2026; not charged.",
+  "lbrands": "Retail group Les Wexner founded as The Limited (first store, Columbus, 1963; public 1969); grew by buying Mast Industries (1978), Lane Bryant and Victoria's Secret (1982), Lerner and Henri Bendel (1985) and Abercrombie & Fitch (1988). Parent of Victoria's Secret. Wexner stepped down as chairman in 2020 after investor pressure over his Epstein ties.",
+  "meister": "Bob Meister, insurance executive and former vice chairman of Aon; friend of Wexner. Sat next to Epstein on a flight to Palm Beach (NYT), and by Wexner's own statement introduced the two in the mid-to-late 1980s and suggested Epstein could help with Wexner's finances. Wexner says he trusted Meister for insurance, not business, advice."
+ }
+}
