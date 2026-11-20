@@ -60,3 +60,7 @@ After the passes: coverage audit (lead-only nodes, untied names, country counts)
 9. Continuity after 2019 (done)
 10. Comparison cases (topped up as each pass names a pattern): done (pass 10)
 11. Coverage audit (done, pass 11), stress test (done, pass 12), tests and cards
+
+## To do (20 Nov 2026)
+- Books updated 20 Nov 2026: The Epstein Architecture gains an appendix, "The Network Map" (book/part1/ep16: the map, how a removal is weighed, the tests with ranges, the seat tests, earliest dates and Wexner upstream, limits), a November 2026 update in Part Ten (ep10_update) and Wexner's own account in Part One (ep1_wexner). The Road to 1948: "Reading a figure" in rd7_rules, "What it takes to fall below 30 percent" in rd7_tests, and the other-homelands chapter now says six of the nine needs. The Baseline: its map figures checked against the live map; all current.
+- Next, cards (after the books): the Epstein tests least likely first, the seat tests, the earliest dates, and the trail up from Wexner.
