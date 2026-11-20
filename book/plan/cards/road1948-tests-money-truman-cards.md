@@ -34,7 +34,7 @@ TABLE PANEL (one tall translucent indigo-glass panel with a thin gold-foil borde
 "No Theodor Herzl" — "91%"
 Below the last row, a gold-foil line across the panel and the row "THE FULL RECORD" — "93%" in larger gold foil.
 
-ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "ONE MAN COUNTED LESS THAN ONE FAMILY'S MONEY."
+ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "WITHOUT HERZL: 91%. WITHOUT THE ROTHSCHILDS: 34%."
 (If the card gets crowded, cut the hero first, then the callout.)
 
 CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN ALL 81 TESTS YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
@@ -80,7 +80,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette of exactly four colors: deep ink-indigo background in a vertical gradient from #0B1026 at the top to #161E45 at the bottom; bold crimson #D7263D for bars and callouts; brilliant white #FFFFFF for type; antique-gold metallic foil #E8B44A with real foil sheen and highlights for premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-HERO (top third): an antique brass mantel clock engraved in gold foil, its hands at 6:11, beside a single typed telegram-style sheet with a gold seal stamped "RECOGNIZED". Behind them, a vintage railway observation car rear platform with brass rails and a draped bunting-free railing, softly lit, with gold light rays along the tracks receding into the distance. No people. Fades into the indigo background.
+HERO (top third): an antique brass mantel clock engraved in gold foil, its hands at 6:11, beside a single typed telegram-style sheet with a gold seal stamped "RECOGNIZED". Behind them, a vintage railway observation car rear platform with brass rails, softly lit, with gold light rays along the tracks receding into the distance. No people. Fades into the indigo background.
 
 LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "THE ROAD TO 1948 · 14 MAY 1948".
 
