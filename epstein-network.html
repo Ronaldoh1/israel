@@ -756,10 +756,12 @@ function vTestsTable(){
   <p class="vtxt">Each test removes part of the documented network and recalculates the whole map. The ring shows the chance the operation still runs as the record documents it, 1991–2019; its colour is the verdict (green runs, yellow weakened or crippled, red very unlikely or not at all). Where a test moves the 2008 deal or the 2019 arrest, that is shown too. Tap a test to run it on the map.</p>
   <div class="vtlist">${rows}</div>
   <h3 class="vsec">Who could take over?</h3><p class="vtxt">These tests remove a hub, then ask which documented nodes sit at or beside the ties that were lost. They rank documented position, not who did or would have done anything.</p><div class="vtlist">${succTestRows()}</div>
+  <h3 class="vsec">Who could have sat in his place?</h3><p class="vtxt">These tests put someone else in Epstein's place and keep only the ties that would have carried over.</p><div class="vtlist">${seatRows()}</div>
   <div class="vbtns"><button class="vbtn" type="button" data-v="how">How the chances are computed</button><button class="vbtn" type="button" data-v="close">Close</button></div>`); }
 vCard.addEventListener('click', e=>{ const sb=e.target.closest('[data-succ]'); if(sb){ vClose(); vRunSucc(+sb.dataset.succ); return; } const b=e.target.closest('[data-test]'); if(!b) return; vClose(); vRunTest(+b.dataset.test); });
 function vAssess(x){ const col=vCollapsed(), R=vScore(removed);
-  return `<div class="kind">Test</div><h2>${esc(x.t.q)}</h2><div class="viab">${vHead(R)}</div>
+  const ri=VTESTS.indexOf(x.t), rg=EP_RANGES[ri];
+  return `<div class="kind">Test</div><h2>${esc(x.t.q)}</h2><div class="viab">${vHead(R)}${rg&&rg[1]>rg[0]?`<p class="vtxt small">Under other reasonable weights: ${rg[0]}–${rg[1]}%.</p>`:''}</div>
   <h3 class="vsec">What was taken out</h3><p class="vtxt">${esc(x.t.what)}</p>
   <h3 class="vsec">What collapsed</h3><ul class="vul"><li>${removed.size} node${removed.size===1?'':'s'} removed.</li>
    <li>${col.length} more node${col.length===1?'':'s'} cut off from the operation, shown on the map with red dashed rings${col.length?`: ${col.slice(0,30).map(x=>esc(vName(x))).join(', ')}${col.length>30?` and ${col.length-30} more`:''}`:''}.</li>
@@ -842,6 +844,38 @@ function vRunSucc(i){ const t=SUCC_TESTS[i], before=vScore(removed).P; if(mode!=
     $('side').innerHTML=succPanel(i,false); succWire(i,false); setSheet('mid'); vSignal('Test: '+t.q, before); },650); }
 function succTestRows(){ return SUCC_TESTS.map((t,i)=>{ const R=succRun(t.ids,false), ranked=R.drop>=5&&R.rows.length, v=vVerdict(R.noneP);
   return `<button class="vtrow" type="button" data-succ="${i}">${vRing(R.noneP,v)}<span class="vtq"><b>${esc(t.q)}</b><small>${ranked?`best-placed covers ${sPct(R.rows[0].avg)} · ${R.n50?R.n50+' nodes to cover half':'no combination reaches half'}`:'nothing to replace on this record'}</small></span><span class="vtgo" aria-hidden="true">›</span></button>`; }).join(''); }
+
+
+/* ---------- ranges and seat tests (mirror tools/stress/ep_stress.py) ---------- */
+// Lowest and highest chance for each test above when each channel is weighed at half or double, reported ties at 30% or 100%,
+// the $1M default at $0.25M or $4M, default bank years at 1 or 10, the cover floor at 25% or 75%, and the decision weights varied.
+const EP_RANGES=[[0, 0], [91, 94], [0, 0], [19, 64], [87, 94], [6, 49], [91, 95], [7, 49], [31, 65], [89, 93], [71, 83], [94, 96], [94, 96], [94, 95], [66, 86], [87, 93], [94, 95]];
+const SEAT_PROBE=new Set(["allegation to Congress", "claim", "communications aggregate", "comparative methodology", "comparison", "complaint", "court ruling", "custody", "document", "document evidence", "document provenance", "flight passenger", "forensic review", "investigation", "kinship", "knowledge of spouse's connection", "legal position (rejected)", "legislation", "litigation", "oversight", "reporting", "research archive / source corpus", "research lead", "research provenance", "sworn allegation", "testimony", "testimony / interview"]);
+const SEAT_KINDS=new Set(['institution','company','government','place','trust','project']);
+const SEAT_TESTS=[
+ {rule:'maxwell', q:'What if Maxwell had sat in his place?',
+  what:'Epstein taken out and Maxwell put in his place. Each of his ties passes to her only where she had her own documented tie to the same person or institution; the companies, houses and aircraft stay with the seat.',
+  read:'Almost nothing runs. Banking, places and staff partly carry over, but very little of the money does: on this record she had no tie of her own to Wexner, Black or his other payers. Her conviction shows how much of the day-to-day she handled; the record does not show that she could have paid for it.'},
+ {rule:'institutions', q:'What if someone else had held his place, with the same banks, lawyers and houses but none of his personal relationships?',
+  what:'Epstein taken out and an unnamed person put in his place. Every tie to an institution, company, government or property passes to the newcomer; every tie to a person (his payers, friends and contacts) is lost.',
+  read:'The banks, law firms, houses, staff and the Virgin Islands tax regime carry over almost whole, because they served any rich client. The money does not: it came through personal relationships, Wexner above all. On this record the seat could have been filled; the patron could not.'}];
+const SEAT_CACHE={};
+function seatRun(rule){ if(SEAT_CACHE[rule]) return SEAT_CACHE[rule];
+  const own=new Set(); for(const e of E){ if(!['verified','reported'].includes(e.status)||SEAT_PROBE.has(e.type)) continue; if(e.f==='gmax'&&e.t!=='epstein') own.add(e.t); if(e.t==='gmax'&&e.f!=='epstein') own.add(e.f); }
+  const keep=x=>rule==='maxwell'?(own.has(x)||VENT.has(x)):(SEAT_KINDS.has((N.get(x)||{}).kind)||VENT.has(x));
+  const saved=VB.edges; let lost=0, R;
+  VB.edges=saved.map(r=>{ const [f,t]=r; if(f!=='epstein'&&t!=='epstein') return r; const x=f==='epstein'?t:f; if(keep(x)) return r; lost++; return ['x_lost',x,r[2],r[3],r[4]]; });
+  try{ R=vScore(new Set(['x_lost'])); } finally { VB.edges=saved; }
+  return SEAT_CACHE[rule]={R, lost, v:vVerdict(R.P)}; }
+function seatRows(){ return SEAT_TESTS.map((t,i)=>{ const S=seatRun(t.rule); return `<button class="vtrow" type="button" data-seat="${i}">${vRing(S.R.P,S.v)}<span class="vtq"><b>${esc(t.q)}</b><small><span class="vtl" style="background:${vLight(S.v)[0]}"></span>${esc(S.v)} · ${Math.round(S.R.P)}% runs · ${S.lost} ties lost</small></span><span class="vtgo" aria-hidden="true">›</span></button>`; }).join(''); }
+function seatPanel(i){ const t=SEAT_TESTS[i], S=seatRun(t.rule), R=S.R;
+  return `<div class="kind">Seat test</div><h2>${esc(t.q)}</h2><div class="viab"><p class="vtxt">The operation runs at <b>${Math.round(R.P)}%</b> on the model (from ${Math.round(vScore(new Set()).P)}%). ${S.lost} of his ties do not carry over.</p></div>
+  <h3 class="vsec">Who sits in his place</h3><p class="vtxt">${esc(t.what)}</p>
+  <h3 class="vsec">The six channels</h3>${vBars(R)}
+  <h3 class="vsec">Reading the result</h3><p class="vtxt">${esc(t.read)}</p>
+  <details class="scwhy"><summary>Why this test exists</summary><p class="vtxt small">Removing Epstein gives 0% almost by definition, because the operation is defined as what he and Maxwell owned and ran. These tests ask the harder question: if the place he held had been filled by someone else, how much of the documented structure would have carried over? They count only documented ties and name no one as a real or possible successor.</p></details>
+  <div class="vbtns"><button class="vbtn pri" type="button" id="vtBack">All tests</button><button class="vbtn" type="button" id="vtHow">How this is computed</button></div>`; }
+vCard.addEventListener('click', e=>{ const b=e.target.closest('[data-seat]'); if(!b) return; vClose(); $('side').innerHTML=seatPanel(+b.dataset.seat); vWire(); setSheet('mid'); });
 
 const vDraw0 = draw;
 draw = function(...a){ vDraw0(...a); try{ vDecorate(); }catch(e){} };
