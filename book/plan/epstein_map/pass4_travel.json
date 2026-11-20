@@ -1,0 +1,297 @@
+{
+ "nodes": [
+  {
+   "id": "stt_airport",
+   "name": "Cyril E. King Airport, St Thomas",
+   "kind": "place",
+   "cluster": "travel",
+   "note": "The airport where Epstein's jets landed for the islands, with US customs pre-clearance on site; from there by helicopter or boat to Little St. James."
+  },
+  {
+   "id": "cbp",
+   "name": "US Customs and Border Protection",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "Six officers, five on St Thomas and one in Palm Beach, were in contact with Epstein between 2012 and 2019, per FBI memos in the DOJ release (The Guardian). The FBI opened a preliminary inquiry in Oct 2019. No officer was charged; the Guardian found no evidence any knew of or took part in the crimes."
+  },
+  {
+   "id": "routch",
+   "name": "Timothy \"Bill\" Routch",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "CBP agricultural inspector at the St Thomas airport. In contact with Epstein from late 2012 until he left the territory in 2016; visited Little St. James at least once. Interviewed by the FBI in April 2021; says the contact was business and calls the inquiry a \"wild goose chase\". Not charged."
+  },
+  {
+   "id": "heil",
+   "name": "James Heil",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "CBP supervisor on St Thomas. The FBI memos say he expedited Epstein's customs matters and received a holiday food gift. Not charged."
+  },
+  {
+   "id": "gmartinez",
+   "name": "Gerardo Martinez",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "CBP supervisor in Palm Beach. In regular contact with Epstein in 2018-19, including questions about carrying cash and passport matters (FBI memos, The Guardian). Not charged; the files show no investigation of him."
+  },
+  {
+   "id": "fbi_cbp_inquiry",
+   "name": "FBI inquiry into CBP officers (2019-21)",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Preliminary investigation opened by FBI New York in October 2019 on a report, disputed, that an officer had befriended Epstein and helped him; Routch interviewed April 2021; credit reports subpoenaed for four officers. No charges; outcome unclear."
+  },
+  {
+   "id": "raskin",
+   "name": "Jamie Raskin",
+   "kind": "person",
+   "cluster": "politics",
+   "note": "Ranking member, House Judiciary Committee. Wrote to Columbia, NYU and other universities on 14 Jan 2026 asking for records of Epstein-linked tuition payments and donations."
+  },
+  {
+   "id": "raskin_letters",
+   "name": "Raskin letters to universities (14 Jan 2026)",
+   "kind": "document",
+   "cluster": "research",
+   "note": "Letters to Columbia and NYU (among others) setting out survivors' accounts: tuition paid for women, sometimes above cost; admissions promised; Indyke and Kahn arranging tuition and paperwork; Epstein paying visas for MC2 models (Miami Herald). Allegations put to the universities, with requests for records; not findings."
+  },
+  {
+   "id": "columbia",
+   "name": "Columbia University",
+   "kind": "institution",
+   "cluster": "culture",
+   "note": "Received Epstein donations 2010-12 (foundation records), including to its dental school. Survivors say Epstein paid for at least two women to attend, around 2002 and 2004-07 (Raskin letter)."
+  },
+  {
+   "id": "nyu",
+   "name": "New York University",
+   "kind": "institution",
+   "cluster": "culture",
+   "note": "Received Epstein donations 2010-12. Survivors say he promised several women admission and paid some tuition, roughly 1993-2005 (Raskin letter). Allegations, with records requested."
+  }
+ ],
+ "edges": [
+  {
+   "f": "cbp",
+   "t": "stt_airport",
+   "label": "pre-clearance at the airport",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "routch",
+   "t": "cbp",
+   "label": "agricultural inspector, St Thomas",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "heil",
+   "t": "cbp",
+   "label": "supervisor, St Thomas",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "gmartinez",
+   "t": "cbp",
+   "label": "supervisor, Palm Beach",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "routch",
+   "t": "epstein",
+   "label": "in contact from late 2012; visited the island at least once (he calls it business)",
+   "type": "social contact",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "heil",
+   "t": "epstein",
+   "label": "expedited his customs matters; received a holiday food gift (FBI memo)",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "gmartinez",
+   "t": "epstein",
+   "label": "regular contact 2018-19, incl. questions on carrying cash and passports (FBI memo)",
+   "type": "official contact",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "fbi",
+   "t": "fbi_cbp_inquiry",
+   "label": "opened Oct 2019 (FBI New York); no charges",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "fbi_cbp_inquiry",
+   "t": "routch",
+   "label": "interviewed April 2021; credit report subpoenaed",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Guardian (Julia Carrie Wong), via inkl: Epstein cultivated relationships with CBP officers on St Thomas; FBI preliminary investigation (DOJ files)",
+     "u": "https://www.inkl.com/news/revealed-epstein-cultivated-relationship-with-cbp-officer-causing-us-investigation"
+    }
+   ]
+  },
+  {
+   "f": "raskin",
+   "t": "raskin_letters",
+   "label": "wrote, 14 Jan 2026",
+   "type": "authorship",
+   "status": "verified",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to Columbia, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-shipman-columbia-re-epstein_0.pdf"
+    },
+    {
+     "t": "House Judiciary Democrats: Raskin to NYU, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-mills-nyu-re-epstein.pdf"
+    }
+   ]
+  },
+  {
+   "f": "raskin_letters",
+   "t": "columbia",
+   "label": "asks for payments and tuition records, 1990 to date",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to Columbia, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-shipman-columbia-re-epstein_0.pdf"
+    }
+   ]
+  },
+  {
+   "f": "raskin_letters",
+   "t": "nyu",
+   "label": "asks for payments and tuition records, 1990 to date",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to NYU, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-mills-nyu-re-epstein.pdf"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "columbia",
+   "label": "paid tuition for women, c.2002 and 2004-07 (survivors' accounts in the letter)",
+   "type": "tuition payment",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to Columbia, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-shipman-columbia-re-epstein_0.pdf"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "nyu",
+   "label": "promised admission and paid some tuition, c.1993-2005 (survivors' accounts in the letter)",
+   "type": "tuition payment",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to NYU, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-mills-nyu-re-epstein.pdf"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "mc2",
+   "label": "paid visas for the agency's models (Miami Herald, cited in the letters)",
+   "type": "visa sponsorship",
+   "status": "reported",
+   "src": "pass 4 (aviation, travel, immigration), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "House Judiciary Democrats: Raskin to Columbia, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-shipman-columbia-re-epstein_0.pdf"
+    },
+    {
+     "t": "House Judiciary Democrats: Raskin to NYU, 14 Jan 2026",
+     "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-mills-nyu-re-epstein.pdf"
+    }
+   ]
+  }
+ ],
+ "node_notes": {
+  "n908je": "Boeing 727-100, built 1969 (TWA to 1979). Owned by JEGE, Inc. 2001-16 (Business Insider); seats up to 26 (2006 FBI interview with a pilot). Sold in 2017 (The Guardian); stored for a decade at Brunswick Golden Isles Airport, Georgia (AJC, March 2026)."
+ }
+}

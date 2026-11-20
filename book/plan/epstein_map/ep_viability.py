@@ -37,7 +37,7 @@ PROBE = {'investigation', 'testimony', 'litigation', 'reporting', 'claim', 'comp
          'document evidence', 'document provenance', 'kinship', "knowledge of spouse's connection", 'document'}
 MONEY_IN = {'funding', 'payment', 'contract', 'loan', 'trust grantor', 'client', 'payment instruction'}
 BANK_T = {'banking', 'bank accounts'}
-STAFF_T = {'employment', 'scheduling', 'travel coordination', 'criminal case', 'employment / office', 'employment / corporate name'}
+STAFF_T = {'tuition payment', 'visa sponsorship', 'employment', 'scheduling', 'travel coordination', 'criminal case', 'employment / office', 'employment / corporate name'}
 PLACES_CL = {'places', 'aviation', 'travel'}
 STAFF_CL = {'operations', 'vendors'}
 SHIELD_IDS = {'npa', 'krischer', 'usvi_edc', 'usvi', 'acosta', 'doj', 'dag_2008', 'menchel'}

@@ -890,7 +890,7 @@ def _apply(path):
                 if s[4]: x['src']=(x['src']+'; '+s[4]).strip('; ')
                 if len(s)>5 and s[5]: x['label']=s[5][1:] if s[5].startswith('=') else x['label']+' — '+s[5]
 _apply('ron_layer.json'); _apply('verify_layer.json'); _apply('v54_layer.json')
-_apply('pass1_properties.json'); _apply('pass2_legal.json'); _apply('pass3_banks.json')   # coverage pass 1 (Nov 2026): properties, islands, sellers, buyers, attempted purchases
+_apply('pass1_properties.json'); _apply('pass2_legal.json'); _apply('pass3_banks.json'); _apply('pass4_travel.json')   # coverage pass 1 (Nov 2026): properties, islands, sellers, buyers, attempted purchases
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}
