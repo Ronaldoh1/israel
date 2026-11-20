@@ -81,7 +81,7 @@ GROUPS = {
     'The defence lawyers (2005-08)': ['lefkowitz', 'starr', 'dershowitz', 'sanchez', 'roy_black', 'goldberger'],
     'The properties': ['nyc_house', 'palm_beach', 'lsj', 'gsj', 'zorro', 'paris_apt', 'apt66'],
     'The aircraft and pilots': ['n212je', 'n908je', 'n909je', 'jege', 'plan_d', 'hyperion', 'shmitka_air', 'visoski', 'rodgers'],
-    'The reputation managers': ['seckel', 'ph_seo', 'osborne', 'siegal', 'couri_hay'],
+    'The reputation managers': ['seckel', 'ph_seo', 'osborne', 'siegal', 'couri_hay', 'galbraith', 'hendricks'],
     'The big payers (Wexner and Black)': ['wexner', 'black', 'bv70'],
     'The Miami Herald and its series': ['herald_series', 'jkbrown', 'miami_herald'],
     'The office (Indyke, Kahn and their firms)': ['indyke', 'kahn', 'hbrk', 'hyperion', 'slk', 'bella_klein'],
