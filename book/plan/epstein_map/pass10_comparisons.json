@@ -1,0 +1,425 @@
+{
+ "nodes": [
+  {
+   "id": "cmp_rkelly",
+   "name": "Comparison case: R. Kelly enterprise (convicted 2021)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Convicted by a federal jury in Brooklyn on 27 Sept 2021 on all nine counts, including racketeering; sentenced to 30 years in June 2022. Prosecutors charged an enterprise: Kelly and a circle of managers, bodyguards, drivers, assistants and runners who escorted girls and women from concerts and arranged their travel and lodging. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "cmp_rotherham",
+   "name": "Comparison case: Rotherham (Jay report, 2014)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Alexis Jay's independent inquiry (26 Aug 2014) estimated about 1,400 children were sexually exploited in Rotherham from 1997 to 2013. Police did not treat it as a priority; three earlier reports, from 2002 on, were effectively suppressed; the council leader resigned. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "cmp_dutroux",
+   "name": "Comparison case: Dutroux (Belgium, 1995–96)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Gendarmes searched Marc Dutroux's house in December 1995 while two girls were held in a hidden cellar; an officer heard voices and did not follow it up, and seized tapes went unwatched. About 300,000 people joined the White March of October 1996. A parliamentary commission found serious errors but ruled out an organised cover-up; police and judicial reforms followed. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "cmp_bsa",
+   "name": "Comparison case: Boy Scouts of America files and bankruptcy",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "More than 1,200 confidential files (1960s–1985) were made public in October 2012 on the order of the Oregon Supreme Court, after a 2010 Portland trial ended in an $18.5 million punitive judgment; they show hundreds of alleged molesters not reported to police. In the 2022 bankruptcy, more than 80,000 abuse claims were settled through a $2.46 billion plan. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "cmp_kincora",
+   "name": "Comparison case: Kincora boys’ home (Hart inquiry, 2017)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Three staff abused at least 38 boys at Kincora in Belfast and were convicted. For decades it was alleged that intelligence services protected the abusers. The Hart inquiry (20 Jan 2017) found no evidence that security agencies were complicit or used the home to entrap men, though it criticised MI5 for obstructing a later police inquiry. The closest documented test of an 'intelligence protection' claim. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "cmp_midland",
+   "name": "Comparison case: Operation Midland (false VIP ring)",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "London police investigated Carl Beech's claims of a VIP abuse-and-murder ring of politicians, generals and intelligence chiefs (2014–16). Sir Richard Henriques's review (2016) found the accused were victims of false allegations; Beech was convicted on 22 July 2019 of perverting the course of justice and fraud and sentenced to 18 years. Kept on the map as the cost of a pattern claim without documents. No documented tie to Epstein; a comparison only."
+  },
+  {
+   "id": "fn_helpers",
+   "name": "Function: the helpers charged, or shielded",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "Whether the staff around the principal are charged as an enterprise or protected. Compared: R. Kelly (enterprise charged and convicted, 2021); NXIVM (Bronfman and others charged and sentenced). Epstein record: the 2008 deal immunised four named assistants and unnamed co-conspirators; no staff member has been charged since 2019."
+  },
+  {
+   "id": "fn_time",
+   "name": "Function: time, death and limits close cases",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "How cases end before they are tried. Compared: Savile (died in 2011, never prosecuted); Pennsylvania dioceses (2018 grand jury: nearly all abuse too old to prosecute); North Fox Island (owner left the country, never prosecuted). Epstein record: died in jail in August 2019 before trial; the charges against him were dismissed."
+  },
+  {
+   "id": "fn_claims",
+   "name": "Function: claimed protection networks, tested",
+   "kind": "program",
+   "cluster": "comparative",
+   "note": "What happens when a claim of high-level or intelligence protection is put to an inquiry. Compared: Kincora (no evidence of security-agency complicity, 2017); Dutroux (commission ruled out an organised cover-up); Operation Midland (the claimed VIP ring was invented). Epstein record: intelligence claims stay 'not established' on this map for every state alike; the Justice Department said in April 2026 it had no credible evidence of a wider network."
+  }
+ ],
+ "edges": [
+  {
+   "f": "cmp_rkelly",
+   "t": "fn_command",
+   "label": "enterprise of managers, bodyguards and assistants under one man",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 27 Sep 2021: R. Kelly convicted on all counts by federal jury in Brooklyn",
+     "u": "https://www.justice.gov/usao-edny/pr/r-kelly-convicted-all-counts-federal-jury-brooklyn"
+    }
+   ]
+  },
+  {
+   "f": "cmp_rkelly",
+   "t": "fn_recruit",
+   "label": "girls and women picked out at concerts and escorted backstage",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 27 Sep 2021: R. Kelly convicted on all counts by federal jury in Brooklyn",
+     "u": "https://www.justice.gov/usao-edny/pr/r-kelly-convicted-all-counts-federal-jury-brooklyn"
+    }
+   ]
+  },
+  {
+   "f": "cmp_rkelly",
+   "t": "fn_logistics",
+   "label": "staff arranged travel and lodging",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 27 Sep 2021: R. Kelly convicted on all counts by federal jury in Brooklyn",
+     "u": "https://www.justice.gov/usao-edny/pr/r-kelly-convicted-all-counts-federal-jury-brooklyn"
+    }
+   ]
+  },
+  {
+   "f": "cmp_rkelly",
+   "t": "fn_helpers",
+   "label": "enterprise charged under racketeering law; convicted 2021, 30 years",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 27 Sep 2021: R. Kelly convicted on all counts by federal jury in Brooklyn",
+     "u": "https://www.justice.gov/usao-edny/pr/r-kelly-convicted-all-counts-federal-jury-brooklyn"
+    },
+    {
+     "t": "US Attorney's Office EDNY: R. Kelly sentenced to 30 years in prison",
+     "u": "https://www.justice.gov/usao-edny/pr/r-kelly-sentenced-30-years-prison"
+    }
+   ]
+  },
+  {
+   "f": "cmp_nxivm",
+   "t": "fn_helpers",
+   "label": "board member Bronfman pleaded guilty (2019), 81 months (2020)",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 30 Sep 2020: NXIVM board member Clare Bronfman sentenced to 81 months",
+     "u": "https://www.justice.gov/usao-edny/pr/nxivm-executive-board-member-clare-bronfman-sentenced-81-months-prison-identity-theft"
+    }
+   ]
+  },
+  {
+   "f": "cmp_nxivm",
+   "t": "fn_finance",
+   "label": "Bronfman used a dead partner's card details to keep money out of Raniere's name",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "US Attorney's Office EDNY, 30 Sep 2020: NXIVM board member Clare Bronfman sentenced to 81 months",
+     "u": "https://www.justice.gov/usao-edny/pr/nxivm-executive-board-member-clare-bronfman-sentenced-81-months-prison-identity-theft"
+    }
+   ]
+  },
+  {
+   "f": "cmp_nxivm",
+   "t": "fn_records",
+   "label": "former members took evidence to the New York Times, Oct 2017, after state agencies had not acted",
+   "type": "comparison",
+   "status": "reported",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Jezebel, 18 Oct 2017, on the New York Times report (17 Oct 2017) on NXIVM branding",
+     "u": "https://jezebel.com/new-york-times-report-secretive-group-called-nxivm-bur-1819645424"
+    }
+   ]
+  },
+  {
+   "f": "cmp_rotherham",
+   "t": "fn_cover",
+   "label": "police and council failed to act; earlier reports suppressed",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 26 Aug 2014: UK town 'ignored abuse of 1,400 children' (Jay report)",
+     "u": "https://www.aljazeera.com/news/2014/8/26/uk-town-ignored-abuse-of-1400-children"
+    },
+    {
+     "t": "Alexis Jay, Independent Inquiry into Child Sexual Exploitation in Rotherham 1997–2013 (2014)",
+     "u": "https://content.govdelivery.com/attachments/UKLGIU/2014/09/11/file_attachments/323357/Child+Sexual+Exploitation+in+Rotherham+-+Alexis+Jay+report.pdf"
+    }
+   ]
+  },
+  {
+   "f": "cmp_dutroux",
+   "t": "fn_cover",
+   "label": "house searched while girls were held; voices heard, not followed up",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Brussels Times: the Dutroux case, 30 years on: why Belgian police failed to catch a killer",
+     "u": "https://brusselstimes.com/belgium/2267788/the-infamous-dutroux-case-30-years-on-why-belgian-police-failed-to-catch-a-killer/"
+    }
+   ]
+  },
+  {
+   "f": "cmp_dutroux",
+   "t": "fn_claims",
+   "label": "parliamentary commission ruled out an organised cover-up",
+   "type": "comparison",
+   "status": "reported",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Brussels Times: the Dutroux case, 30 years on: why Belgian police failed to catch a killer",
+     "u": "https://brusselstimes.com/belgium/2267788/the-infamous-dutroux-case-30-years-on-why-belgian-police-failed-to-catch-a-killer/"
+    },
+    {
+     "t": "Brussels Times: 25 years ago, 300,000 people marched in white against child abuse",
+     "u": "https://www.brusselstimes.com/belgium/190010/25-years-ago-today-300000-people-marched-in-white-against-child-abuse/"
+    }
+   ]
+  },
+  {
+   "f": "cmp_bsa",
+   "t": "fn_records",
+   "label": "internal files opened by a 2010 trial and a 2012 court order",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 18 Oct 2012: on court order, Boy Scouts' confidential 'perversion files' go public",
+     "u": "https://www.npr.org/sections/thetwo-way/2012/10/18/163157869/on-court-order-boy-scouts-confidential-perversion-files-go-public"
+    }
+   ]
+  },
+  {
+   "f": "cmp_bsa",
+   "t": "fn_cover",
+   "label": "hundreds of alleged molesters not reported to police",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 18 Oct 2012: on court order, Boy Scouts' confidential 'perversion files' go public",
+     "u": "https://www.npr.org/sections/thetwo-way/2012/10/18/163157869/on-court-order-boy-scouts-confidential-perversion-files-go-public"
+    }
+   ]
+  },
+  {
+   "f": "cmp_bsa",
+   "t": "fn_silence",
+   "label": "80,000+ claims settled through a $2.46 billion plan, 2022",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC New York, 8 Sep 2022: judge approves $2.46 billion Boy Scouts reorganization plan amid abuse claims",
+     "u": "https://www.nbcnewyork.com/news/national-international/judge-approves-2-46-billion-boy-scouts-reorganization-plan-amid-abuse-claims/3857770/"
+    }
+   ]
+  },
+  {
+   "f": "cmp_weinstein",
+   "t": "fn_silence",
+   "label": "settlements with at least eight women (New York Times, Oct 2017)",
+   "type": "comparison",
+   "status": "reported",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Pacific Standard, Oct 2017: Weinstein reached settlements with eight women (New York Times report)",
+     "u": "https://psmag.com/?p=12225"
+    },
+    {
+     "t": "Pulitzer Prizes, 2018 Public Service: The New York Times and The New Yorker",
+     "u": "https://www.pulitzer.org/winners/new-york-times-and-new-yorker"
+    }
+   ]
+  },
+  {
+   "f": "cmp_savile",
+   "t": "fn_officials",
+   "label": "given keys to Broadmoor wards and a place on its 1988 task force without assessment",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Heart (Thames Valley), 26 Jun 2014: report into Savile abuse at Broadmoor",
+     "u": "https://www.heart.co.uk/thamesvalley/news/local/crowthorne-report-into-savile-abuse-at-broadmoor/"
+    },
+    {
+     "t": "Kirkup and Marshall, Jimmy Savile investigation: Broadmoor Hospital (June 2014)",
+     "u": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/323458/Broadmoor_report.pdf"
+    }
+   ]
+  },
+  {
+   "f": "cmp_savile",
+   "t": "fn_time",
+   "label": "died in 2011 without ever being prosecuted",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "RNZ, 26 Feb 2016: Jimmy Savile report finds 'culture of fear' at the BBC",
+     "u": "https://www.rnz.co.nz/news/world/297474/jimmy-savile-report-'culture-of-fear'-at-the-bbc"
+    }
+   ]
+  },
+  {
+   "f": "cmp_padioceses",
+   "t": "fn_time",
+   "label": "nearly all abuse found was too old to prosecute",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "PBS NewsHour, 15 Aug 2018: how Catholic churches in Pennsylvania hid decades of abuse",
+     "u": "https://www.pbs.org/newshour/nation/how-catholic-churches-in-pennsylvania-hid-decades-of-abuse"
+    }
+   ]
+  },
+  {
+   "f": "cmp_northfox",
+   "t": "fn_time",
+   "label": "owner left the country and was never prosecuted",
+   "type": "comparison",
+   "status": "reported",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Michigan Advance / Source NM: before 'Epstein's Island', North Fox Island (no documented tie to Epstein)",
+     "u": "https://sourcenm.com/?p=27356"
+    }
+   ]
+  },
+  {
+   "f": "cmp_kincora",
+   "t": "fn_claims",
+   "label": "inquiry found no evidence of security-agency complicity",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Irish Times, 20 Jan 2017: Kincora was not a homosexual brothel, abuse inquiry finds",
+     "u": "https://www.irishtimes.com/news/crime-and-law/kincora-was-not-a-homosexual-brothel-abuse-inquiry-finds-1.2945364"
+    }
+   ]
+  },
+  {
+   "f": "cmp_kincora",
+   "t": "fn_cover",
+   "label": "missed opportunities; MI5 obstructed a later police inquiry",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Irish Times, 20 Jan 2017: Kincora was not a homosexual brothel, abuse inquiry finds",
+     "u": "https://www.irishtimes.com/news/crime-and-law/kincora-was-not-a-homosexual-brothel-abuse-inquiry-finds-1.2945364"
+    }
+   ]
+  },
+  {
+   "f": "cmp_midland",
+   "t": "fn_claims",
+   "label": "claimed VIP ring invented; accuser convicted 2019, 18 years",
+   "type": "comparison",
+   "status": "verified",
+   "src": "pass 10 (comparison cases), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia: Operation Midland (Henriques report 2016; Beech convicted 22 Jul 2019)",
+     "u": "https://en.wikipedia.org/wiki/Operation_Midland"
+    },
+    {
+     "t": "Express & Star, 3 Oct 2019: timeline of the 'Westminster paedophile ring' probe",
+     "u": "https://www.expressandstar.com/news/uk-news/2019/10/03/timeline-how-westminster-paedophile-ring-probe-unfolded/"
+    }
+   ]
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_helpers",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "",
+   "refs": []
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_time",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "",
+   "refs": []
+  },
+  {
+   "f": "network_functions",
+   "t": "fn_claims",
+   "label": "framework",
+   "type": "comparative methodology",
+   "status": "verified",
+   "src": "",
+   "refs": []
+  }
+ ],
+ "node_notes": {
+  "fn_command": "How a network concentrates decisions in a few trusted people. Compared: Sinaloa (Guzmán's controlled phones), NXIVM (first-line 'masters'), R. Kelly (an enterprise of managers and assistants, convicted 2021); and, the other way, the Combs jury (2025), which rejected the enterprise charge. Epstein record: Maxwell; four assistants named in the 2008 deal; office staff.",
+  "fn_recruit": "Compared: NXIVM's 'mentorship group' pretext; Nygård's company, modelling promises and staff screening; R. Kelly's staff escorting girls from concerts; North Fox Island's boys' charity. Epstein record: funding of MC2 Model Management; a scout paid from his account; 'massage' work.",
+  "fn_finance": "Compared: Nygård Group funds and payroll ('models', 'assistants'); NXIVM, where board member Clare Bronfman used a dead partner's card details to keep money out of Raniere's name (sentenced 2020). Epstein record: HBRK Associates, Southern Trust, LSJE payroll, Plan D, Kahn's payment instructions.",
+  "fn_logistics": "Compared: Sinaloa tunnels and aircraft; R. Kelly's staff arranging travel and lodging. Epstein record: a separate company for each plane (JEGE, Hyperion, Plan D); private island; residences.",
+  "fn_officials": "Compared: García Luna, convicted in 2023 of taking Sinaloa bribes; Savile, given keys to Broadmoor's wards and a place on its 1988 task force without assessment (Kirkup report, 2014). Epstein record: no bribe documented; political donations, tax breaks, texts with a delegate, and the 2008 deal are on file.",
+  "fn_silence": "Compared: Weinstein's hired intelligence firms (Black Cube, Kroll) and settlements with at least eight women; Nygård's alleged paid false affidavits and threats; the Boy Scouts' $2.46 billion settlement of 80,000+ claims. Epstein record: investigators contacting plaintiffs' acquaintances (2009 court motion); reported surveillance of victims' families; bank and estate settlements without admission.",
+  "fn_cover": "Compared: FBI and Nassar (2021 inspector general), BBC and Savile (2016 review), Pennsylvania dioceses (2018 grand jury), Rotherham (Jay report, 2014), Dutroux (1995 search), the Boy Scouts' unreported files, Kincora. Epstein record: FBI complaint 1996; banks' internal warnings; a 2016 tip to SDNY.",
+  "fn_records": "Compared: Guzmán's IT technician who gave the FBI access to his encrypted phones; NXIVM's former members who took evidence to the New York Times (2017); the Boy Scouts' files opened by a 2010 trial and a 2012 court order. Epstein record: no insider cooperated publicly; the case rests on emails, bank records, survivors and court-ordered releases.",
+  "network_functions": "Search framework built from documented cases (Sinaloa, NXIVM, Nygård, R. Kelly, Weinstein, the FBI and Nassar, the BBC and Savile, Pennsylvania dioceses, Rotherham, Dutroux, the Boy Scouts, Kincora, Operation Midland, North Fox Island, the Combs verdict). Each function becomes a question asked of the Epstein files, and each now has at least two documented comparison cases. Comparison nodes are not ties to Epstein; only Epstein-specific documents count as evidence. Three cases (Dutroux's commission, Kincora, Midland) are kept because a claimed protection network was tested and not found."
+ }
+}
