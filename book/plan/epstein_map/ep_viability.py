@@ -41,7 +41,7 @@ STAFF_T = {'employment', 'scheduling', 'travel coordination', 'criminal case', '
 PLACES_CL = {'places', 'aviation', 'travel'}
 STAFF_CL = {'operations', 'vendors'}
 SHIELD_IDS = {'npa', 'krischer', 'usvi_edc', 'usvi', 'acosta', 'doj', 'dag_2008', 'menchel'}
-OUT_OF_SCOPE = {'provenance', 'origins', 'comparative', 'evidence', 'records', 'research', 'withheld', 'release', 'reporters', 'witnesses'}
+OUT_OF_SCOPE = {'flows', 'provenance', 'origins', 'comparative', 'evidence', 'records', 'research', 'withheld', 'release', 'reporters', 'witnesses'}
 SW = {'verified': 1.0, 'reported': 0.6, 'probable': 0.6, 'planned': 0.6, 'scheduled': 0.6}
 
 # Money is weighted by the sum the record states, in millions of dollars; a money tie with no stated sum counts $1M
@@ -77,7 +77,7 @@ TIED = {'acosta': ['lefkowitz'], 'berman': []}   # push aimed at the decider per
 UNKNOWN_SUCCESSOR = 1
 
 GROUPS = {
-    'The banks': ['jpm', 'deutsche', 'bofa', 'goldman', 'hsbc', 'wells', 'firstbank', 'tdbank', 'citi', 'ubs', 'bank_leumi', 'deutsche_us', 'schwab'],
+    'The banks': ['jpm', 'deutsche', 'bofa', 'goldman', 'hsbc', 'wells', 'firstbank', 'tdbank', 'citi', 'ubs', 'bank_leumi', 'deutsche_us', 'schwab', 'hsbc_fr', 'bnp', 'sberbank', 'alfa_bank'],
     'The defence lawyers (2005-08)': ['lefkowitz', 'starr', 'dershowitz', 'sanchez', 'roy_black', 'goldberger'],
     'The properties': ['nyc_house', 'palm_beach', 'lsj', 'gsj', 'zorro', 'paris_apt', 'apt66'],
     'The aircraft and pilots': ['n212je', 'n908je', 'n909je', 'jege', 'plan_d', 'hyperion', 'shmitka_air', 'visoski', 'rodgers'],

@@ -20,10 +20,10 @@
     "kb_maxwell": 1,
     "path_epstein": [],
     "ties": {
-     "total": 290,
+     "total": 300,
      "verified": 230,
-     "reported": 29,
-     "to_verify": 18,
+     "reported": 37,
+     "to_verify": 20,
      "withheld": 1,
      "not_established": 12,
      "documented": 161
@@ -68,7 +68,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 196,
+     "distinct": 197,
      "doj_efta": 38
     },
     "open_leads": [
@@ -86,11 +86,11 @@
      "verdict": "Does not run on this record",
      "pc": [
       0.0,
-      0.0,
+      0.174,
       0.0,
       0.295,
       0.0,
-      0.123
+      0.121
      ],
      "deal": null,
      "account": null,
@@ -120,9 +120,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 34,
+     "total": 35,
      "verified": 26,
-     "reported": 5,
+     "reported": 6,
      "to_verify": 2,
      "withheld": 0,
      "not_established": 1,
@@ -156,7 +156,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 32,
+     "distinct": 33,
      "doj_efta": 2
     },
     "open_leads": [
@@ -165,12 +165,12 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 93.0,
-     "drop": 2.1,
+     "P": 92.8,
+     "drop": 2.3,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
-      0.99,
+      0.988,
       0.976,
       0.982,
       0.99,
@@ -280,9 +280,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 23,
+     "total": 24,
      "verified": 16,
-     "reported": 5,
+     "reported": 6,
      "to_verify": 1,
      "withheld": 1,
      "not_established": 0,
@@ -316,7 +316,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 14,
+     "distinct": 15,
      "doj_efta": 2
     },
     "open_leads": [
@@ -601,9 +601,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 19,
-     "verified": 18,
-     "reported": 0,
+     "total": 24,
+     "verified": 20,
+     "reported": 3,
      "to_verify": 0,
      "withheld": 1,
      "not_established": 0,
@@ -638,18 +638,18 @@
      "The Eye": 1
     },
     "sources": {
-     "distinct": 16,
+     "distinct": 17,
      "doj_efta": 1
     },
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 93.2,
-     "drop": 1.9,
+     "P": 93.6,
+     "drop": 1.5,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
-      0.97,
+      0.974,
       0.99,
       0.99,
       0.99,
@@ -720,12 +720,12 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 94.2,
-     "drop": 0.9,
+     "P": 94.4,
+     "drop": 0.7,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
-      0.981,
+      0.982,
       0.99,
       0.99,
       0.99,
@@ -3741,16 +3741,16 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 50.9,
-     "drop": 44.2,
+     "P": 50.5,
+     "drop": 44.6,
      "verdict": "Badly crippled",
      "pc": [
       0.614,
-      0.943,
+      0.937,
       0.985,
       0.968,
       0.971,
-      0.869
+      0.867
      ],
      "deal": 0,
      "account": 100,
@@ -4035,7 +4035,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -7251,8 +7251,8 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 94.3,
-     "drop": 0.8,
+     "P": 94.4,
+     "drop": 0.7,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -7335,8 +7335,8 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 94.7,
-     "drop": 0.4,
+     "P": 94.8,
+     "drop": 0.3,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -7684,7 +7684,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.983,
@@ -15109,9 +15109,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 3,
-     "verified": 2,
-     "reported": 1,
+     "total": 5,
+     "verified": 3,
+     "reported": 2,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -15139,7 +15139,7 @@
      "The Eye": 9
     },
     "sources": {
-     "distinct": 2,
+     "distinct": 3,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -16311,7 +16311,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -16383,7 +16383,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -16451,7 +16451,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -16519,7 +16519,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -16587,7 +16587,7 @@
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.987,
@@ -16647,12 +16647,12 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 93.8,
-     "drop": 1.3,
+     "P": 93.7,
+     "drop": 1.4,
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.989,
@@ -16718,12 +16718,12 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 93.8,
-     "drop": 1.3,
+     "P": 93.7,
+     "drop": 1.4,
      "verdict": "Runs as documented",
      "pc": [
       0.979,
-      0.989,
+      0.988,
       0.99,
       0.989,
       0.989,
@@ -20042,8 +20042,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 94.6,
-     "drop": 0.5,
+     "P": 94.7,
+     "drop": 0.4,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -20117,12 +20117,12 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 92.0,
-     "drop": 3.1,
+     "P": 92.6,
+     "drop": 2.5,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
-      0.958,
+      0.964,
       0.99,
       0.99,
       0.99,
@@ -20150,9 +20150,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 1,
+     "total": 2,
      "verified": 1,
-     "reported": 0,
+     "reported": 1,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -20178,7 +20178,7 @@
      "The Eye": 10
     },
     "sources": {
-     "distinct": 1,
+     "distinct": 2,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -20207,7 +20207,7 @@
    "kind": "government",
    "cluster": "finance",
    "tier": "",
-   "note": "Regulator: $150M consent order against Deutsche Bank over Epstein, July 2020.",
+   "note": "New York regulator. $150M consent order against Deutsche Bank, 7 Jul 2020: hundreds of Epstein transactions totalling millions that should have drawn scrutiny, including settlement payments over $7M, more than $6M to law firms, payments to Russian models, tuition, hotel and rent for women, payments to numerous women with Eastern European surnames, payments to people alleged to have helped him, and cash withdrawals over $800,000 across about four years. Conditions set by a risk committee were not passed on or were misread.",
    "scenes": [],
    "apex": false,
    "sponsor": false,
@@ -20331,8 +20331,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 94.3,
-     "drop": 0.8,
+     "P": 94.4,
+     "drop": 0.7,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -28936,9 +28936,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 1,
+     "total": 3,
      "verified": 1,
-     "reported": 0,
+     "reported": 2,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -28962,18 +28962,18 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 1,
+     "distinct": 2,
      "doj_efta": 1
     },
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 95.1,
-     "drop": 0.0,
+     "P": 94.8,
+     "drop": 0.3,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
-      0.99,
+      0.986,
       0.99,
       0.99,
       0.99,
@@ -28981,7 +28981,7 @@
      ],
      "deal": 100,
      "account": 100,
-     "weakest": 0
+     "weakest": 1
     }
    }
   },
@@ -34546,6 +34546,839 @@
      "rank_without_hubs": null
     },
     "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "jpm_sars_2019",
+   "name": "JPMorgan's suspicious-activity reports after the arrest (2019)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Filed with Treasury in 2019, six years after JPMorgan ended the relationship. USVI lawyers told the court in 2023 that they identified more than $1B in suspicious transactions. A SAR is a bank's alert, not a finding.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "jpm_spreadsheet",
+   "name": "JPMorgan's transaction spreadsheet (2005-19)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Produced in the USVI case: more than 9,000 transactions to Epstein-related persons, 2005-2019, over $2.4B combined. The USVI says it shows more than $1.1M paid to \"girls or women\" after the bank cut him off, $320,000 of it to people with no earlier recorded payments, many with Eastern European surnames. JPMorgan denies wrongdoing.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 1,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "treasury_records",
+   "name": "Treasury records reviewed by Senate Finance staff (2024)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Viewed by committee staff at Treasury in 2024 and not released. Wyden: about 4,700 wire transfers at one bank, more than $1B in and out of one account; several Russian banks, now under sanctions, used for payments; many of the women and girls came from Russia, Belarus, Turkey and Turkmenistan. These are his descriptions of records the public has not seen.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "wyden_jpm_q",
+   "name": "Wyden's questions to JPMorgan (20 Oct 2025)",
+   "kind": "document",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Senate Finance letter to Jamie Dimon: more than $1.7M in cash withdrawn from Epstein's accounts in 2004-05 (public reports); asks for transactions through correspondent accounts at Sberbank, Alfa Bank and FCB, and for named executives' records. Questions, not findings.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 4,
+     "verified": 4,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "sberbank",
+   "name": "Sberbank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Russian state bank. Named in Wyden's Oct 2025 questions about correspondent-account transactions; no transaction has been published. Under US sanctions since 2022.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 1,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [
+     "Jeffrey Epstein: payments through correspondent accounts (not published)"
+    ],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "alfa_bank",
+   "name": "Alfa-Bank",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Russian private bank. Named in the same questions; no transaction has been published. Under US sanctions since 2022.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 1,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [
+     "Jeffrey Epstein: payments through correspondent accounts (not published)"
+    ],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "langford",
+   "name": "William Langford",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "JPMorgan head of compliance. Reported to have urged, in 2010-11, a \"rapid response\" review of whether to exit Epstein (Wyden's letter, citing reporting).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "jnelson",
+   "name": "Justin Nelson",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "JPMorgan banker named in Wyden's questions about the management of Epstein's accounts and 2013 memos.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "hsbc_fr",
+   "name": "HSBC France (Paris branch)",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Ended Epstein's Paris account by letter a few days before Christmas 2007, with a month's notice. Bloomberg's sources say compliance had flagged payments linked to young women tied to Brunel's agency, round-dollar deposits and withdrawals. HSBC declined to comment.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.989,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 1
+    }
+   }
+  },
+  {
+   "id": "bnp",
+   "name": "BNP Paribas",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Held an Epstein current account, savings and card, inherited from Fortis, from Feb 2008 to mid-2018 (Le Monde, 21 Feb 2026). What it was used for is not known.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.989,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 1
+    }
+   }
+  },
+  {
+   "id": "julius_baer",
+   "name": "Julius Baer",
+   "kind": "company",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Swiss private bank. In spring 2017 its chief executive Boris Collardi and finance chief Dieter Enkelmann corresponded with Epstein about working with or buying Edmond de Rothschild; nothing came of it (finews.ch, from the Jan 2026 release).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 5
+    }
+   }
+  },
+  {
+   "id": "collardi",
+   "name": "Boris Collardi",
+   "kind": "person",
+   "cluster": "finance",
+   "tier": "",
+   "note": "Julius Baer chief executive to 2017. Met and corresponded with Epstein about Edmond de Rothschild in 2017; says the contact was professional.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "finance",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 5
+    }
+   }
+  },
+  {
+   "id": "wexner_fund_2008",
+   "name": "Wexner-linked charitable fund (Jan 2008 transfer)",
+   "kind": "institution",
+   "cluster": "flows",
+   "tier": "",
+   "note": "Received $46M from Epstein in January 2008 (tax records). Wexner's 2019 letter called it a \"portion\" of the money Epstein had misappropriated.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
@@ -43437,6 +44270,356 @@
      "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
     }
    ]
+  },
+  {
+   "f": "jpm",
+   "t": "jpm_sars_2019",
+   "label": "filed in 2019, after the arrest; more than $1B in suspicious transactions identified",
+   "type": "filing",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "American Banker / Bloomberg, 1 Sep 2023: JPMorgan identified more than $1B in suspicious Epstein transactions to Treasury after his death (USVI, in court)",
+     "u": "https://www.americanbanker.com/articles/jpmorgan-found-1-billion-in-suspicious-epstein-activity-u-s-virgin-islands-says"
+    },
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "jpm_sars_2019",
+   "t": "fincen",
+   "label": "filed with Treasury",
+   "type": "filing",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "American Banker / Bloomberg, 1 Sep 2023: JPMorgan identified more than $1B in suspicious Epstein transactions to Treasury after his death (USVI, in court)",
+     "u": "https://www.americanbanker.com/articles/jpmorgan-found-1-billion-in-suspicious-epstein-activity-u-s-virgin-islands-says"
+    }
+   ]
+  },
+  {
+   "f": "jpm",
+   "t": "jpm_spreadsheet",
+   "label": "produced in the USVI case (2023)",
+   "type": "filing",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "CNBC, 31 Jul 2023: JPMorgan moved $1.1M from Epstein to 'girls or women' after terminating him; its spreadsheet lists 9,000+ transactions, $2.4B, 2005-19 (USVI filing)",
+     "u": "https://www.cnbc.com/2023/07/31/jpmorgan-handled-more-than-1-million-in-payments-from-jeffrey-epstein-after-bank-terminated-him-as-client-us-virgin-islands.html"
+    }
+   ]
+  },
+  {
+   "f": "jpm_spreadsheet",
+   "t": "epstein",
+   "label": "9,000+ transactions to Epstein-related persons, 2005-19, $2.4B; $1.1M to women after the 2013 exit (USVI)",
+   "type": "transaction record",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "CNBC, 31 Jul 2023: JPMorgan moved $1.1M from Epstein to 'girls or women' after terminating him; its spreadsheet lists 9,000+ transactions, $2.4B, 2005-19 (USVI filing)",
+     "u": "https://www.cnbc.com/2023/07/31/jpmorgan-handled-more-than-1-million-in-payments-from-jeffrey-epstein-after-bank-terminated-him-as-client-us-virgin-islands.html"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "treasury_records",
+   "label": "his staff reviewed them at Treasury, 2024",
+   "type": "oversight",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WSHU / NPR, 25 Jul 2025: Wyden on the Treasury records (about 4,700 wire transfers at one bank; 'apparently Russian banks')",
+     "u": "https://www.wshu.org/2025-07-25/a-democratic-senator-was-already-investigating-jeffrey-epsteins-finances"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "treasury_records",
+   "t": "epstein",
+   "label": "about 4,700 wires at one bank; over $1B through one account (his account of the records)",
+   "type": "transaction record",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WSHU / NPR, 25 Jul 2025: Wyden on the Treasury records (about 4,700 wire transfers at one bank; 'apparently Russian banks')",
+     "u": "https://www.wshu.org/2025-07-25/a-democratic-senator-was-already-investigating-jeffrey-epsteins-finances"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "wyden_jpm_q",
+   "label": "sent to Dimon, 20 Oct 2025",
+   "type": "authorship",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "jpm",
+   "label": "questions on cash withdrawals, correspondent accounts and executives",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "sberbank",
+   "label": "asks for transactions through its correspondent accounts",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "alfa_bank",
+   "label": "asks for transactions through its correspondent accounts",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "sberbank",
+   "t": "epstein",
+   "label": "payments through correspondent accounts (not published)",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "alfa_bank",
+   "t": "epstein",
+   "label": "payments through correspondent accounts (not published)",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "langford",
+   "t": "jpm",
+   "label": "head of compliance; urged an exit review, 2010-11 (reported)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "jnelson",
+   "t": "jpm",
+   "label": "managed Epstein's accounts (per the questions)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "hsbc_fr",
+   "t": "epstein",
+   "label": "Paris account, ended by letter Dec 2007 (closure early 2008)",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Independent (via AOL), citing Bloomberg: HSBC Paris ended Epstein's account (letter, Dec 2007)",
+     "u": "https://www.aol.com/news/one-bank-stood-epstein-over-194529949.html"
+    },
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "bnp",
+   "t": "epstein",
+   "label": "current account, savings and card, Feb 2008 to mid-2018",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "ubs",
+   "t": "epstein",
+   "label": "credit card, 2014; closed Sept 2014 for \"reputational risk\" (accountant's email)",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters, via ThePrint, 8 Feb 2026: UBS banked Ghislaine Maxwell for years; Epstein's UBS card closed in 2014",
+     "u": "https://theprint.in/world/ubs-banked-ghislaine-maxwell-for-years-moved-her-money-after-epsteins-arrest/2849143"
+    },
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "ubs",
+   "t": "gmax",
+   "label": "personal and business accounts from 2014, up to $19M; moved $130,000 for her on 22 Jul 2019",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters, via ThePrint, 8 Feb 2026: UBS banked Ghislaine Maxwell for years; Epstein's UBS card closed in 2014",
+     "u": "https://theprint.in/world/ubs-banked-ghislaine-maxwell-for-years-moved-her-money-after-epsteins-arrest/2849143"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "julius_baer",
+   "label": "brokered talks about working with or buying Edmond de Rothschild, spring 2017",
+   "type": "business talks",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "collardi",
+   "t": "julius_baer",
+   "label": "chief executive; corresponded with Epstein, 2017",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "collardi",
+   "t": "epstein",
+   "label": "met and corresponded about Edmond de Rothschild, 2017",
+   "type": "correspondence",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "wexner_fund_2008",
+   "label": "transferred $46M, Jan 2008 (tax records)",
+   "type": "payment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Business Insider, Aug 2019: Wexner's letter to his foundation; a $46M Epstein contribution to a Wexner-linked fund in Jan 2008 (tax records, WSJ) was a 'portion' of the money",
+     "u": "https://www.businessinsider.in/leslie-wexner-the-billionaire-behind-victorias-secret-says-disgraced-financier-jeffrey-epstein-misappropriated-at-least-46-million-from-him/articleshow/70582000.cms"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "wexner_fund_2008",
+   "label": "said in 2019 the $46M was a \"portion\" of what Epstein misappropriated",
+   "type": "statement",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Business Insider, Aug 2019: Wexner's letter to his foundation; a $46M Epstein contribution to a Wexner-linked fund in Jan 2008 (tax records, WSJ) was a 'portion' of the money",
+     "u": "https://www.businessinsider.in/leslie-wexner-the-billionaire-behind-victorias-secret-says-disgraced-financier-jeffrey-epstein-misappropriated-at-least-46-million-from-him/articleshow/70582000.cms"
+    }
+   ]
   }
  ],
  "qop_meta": {
@@ -43450,6 +44633,6 @@
   "P0": 95.1,
   "deal0": 100,
   "account0": 100,
-  "ties": 238
+  "ties": 244
  }
 }
