@@ -41,7 +41,7 @@ STAFF_T = {'employment', 'scheduling', 'travel coordination', 'criminal case', '
 PLACES_CL = {'places', 'aviation', 'travel'}
 STAFF_CL = {'operations', 'vendors'}
 SHIELD_IDS = {'npa', 'krischer', 'usvi_edc', 'usvi', 'acosta', 'doj', 'dag_2008', 'menchel'}
-OUT_OF_SCOPE = {'origins', 'comparative', 'evidence', 'records', 'research', 'withheld', 'release', 'reporters', 'witnesses'}
+OUT_OF_SCOPE = {'provenance', 'origins', 'comparative', 'evidence', 'records', 'research', 'withheld', 'release', 'reporters', 'witnesses'}
 SW = {'verified': 1.0, 'reported': 0.6, 'probable': 0.6, 'planned': 0.6, 'scheduled': 0.6}
 
 # Money is weighted by the sum the record states, in millions of dollars; a money tie with no stated sum counts $1M
