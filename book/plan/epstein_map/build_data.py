@@ -874,6 +874,9 @@ def _apply(path):
     for k,v in L.get('node_notes',{}).items():
         for x in N:
             if x['id']==k: x['note']=v
+    for k,v in L.get('node_clusters',{}).items():   # move a node to another cluster (documented reason in the layer)
+        for x in N:
+            if x['id']==k: x['cluster']=v
     hold=set(L.get('hold_nodes',[]))   # kept out of the published map (private individuals with no documented role); see held_research.json
     if hold and not _os.path.exists('held_research.json'):
         json.dump({'nodes':[x for x in N if x['id'] in hold],'edges':[x for x in E if x['f'] in hold or x['t'] in hold]},open('held_research.json','w'),ensure_ascii=False,indent=1)
@@ -890,7 +893,7 @@ def _apply(path):
                 if s[4]: x['src']=(x['src']+'; '+s[4]).strip('; ')
                 if len(s)>5 and s[5]: x['label']=s[5][1:] if s[5].startswith('=') else x['label']+' — '+s[5]
 _apply('ron_layer.json'); _apply('verify_layer.json'); _apply('v54_layer.json')
-_apply('pass1_properties.json'); _apply('pass2_legal.json'); _apply('pass3_banks.json'); _apply('pass4_travel.json')   # coverage pass 1 (Nov 2026): properties, islands, sellers, buyers, attempted purchases
+_apply('pass1_properties.json'); _apply('pass2_legal.json'); _apply('pass3_banks.json'); _apply('pass4_travel.json'); _apply('pass5_recruit.json')   # coverage pass 1 (Nov 2026): properties, islands, sellers, buyers, attempted purchases
 
 # sponsors: nodes documented as sending Epstein money, work, property, office, banking or legal protection
 SP={'dubin','sinofsky','wexner','wexner_poa','black','hoffenberg','jpm','deutsche','bofa','rothschild_group','dalton','greenberg','bear','usvi_edc','acosta','npa','dershowitz','roy_black','leese'}

@@ -20,9 +20,9 @@
     "kb_maxwell": 1,
     "path_epstein": [],
     "ties": {
-     "total": 306,
+     "total": 313,
      "verified": 230,
-     "reported": 43,
+     "reported": 50,
      "to_verify": 20,
      "withheld": 1,
      "not_established": 12,
@@ -68,7 +68,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 198,
+     "distinct": 199,
      "doj_efta": 38
     },
     "open_leads": [
@@ -88,7 +88,7 @@
       0.0,
       0.174,
       0.0,
-      0.284,
+      0.271,
       0.0,
       0.12
      ],
@@ -165,8 +165,8 @@
     ],
     "functions": [],
     "whatif": {
-     "P": 92.8,
-     "drop": 2.3,
+     "P": 92.9,
+     "drop": 2.2,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -3333,9 +3333,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 5,
+     "total": 7,
      "verified": 3,
-     "reported": 1,
+     "reported": 3,
      "to_verify": 1,
      "withheld": 0,
      "not_established": 0,
@@ -3369,7 +3369,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 8,
+     "distinct": 9,
      "doj_efta": 2
     },
     "open_leads": [
@@ -5393,8 +5393,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 93.8,
-     "drop": 1.3,
+     "P": 93.9,
+     "drop": 1.2,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -5849,9 +5849,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 4,
+     "total": 5,
      "verified": 4,
-     "reported": 0,
+     "reported": 1,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -5877,7 +5877,7 @@
      "The Vatican Architecture": 1
     },
     "sources": {
-     "distinct": 4,
+     "distinct": 5,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -6052,9 +6052,9 @@
    "id": "siad",
    "name": "Daniel Siad",
    "kind": "person",
-   "cluster": "witnesses",
+   "cluster": "operations",
    "tier": "",
-   "note": "Model scout. Brunel forwarded his terms to Epstein in 2010 (per the files; to pull). Complaints in France including rape (denied); had asked to give investigators his account. Died 20 Jul 2026; no violence or toxic cause; cardiac condition; case closed 22 Oct 2026, no criminal offence.",
+   "note": "Daniel Siad (1957-2026). Model scout (What's Up Management; MC2 on commission), based in Stockholm with ties to Paris and Barcelona. The released files mention him about 2,000 times: from the late 2000s to at least 2017 he sent Epstein profiles, photos and sometimes videos of young women, with scouting reported in Poland, the Czech Republic, Slovakia, Hungary, Bulgaria, Latvia, South Africa, Spain, France, Morocco and Cuba. At least five women accuse him of rape or trafficking, which he denied. Reported to be under investigation by the Paris prosecutor from Feb 2026; never charged; found dead at home near Paris in July 2026 (cause not determined).",
    "scenes": [],
    "apex": false,
    "sponsor": false,
@@ -6068,9 +6068,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 3,
+     "total": 6,
      "verified": 3,
-     "reported": 0,
+     "reported": 3,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -6082,7 +6082,7 @@
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 106
     },
-    "role": "official / agency",
+    "role": "operations / logistics",
     "money_in": [],
     "money_out": [],
     "loops": [],
@@ -6094,26 +6094,26 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 5,
+     "distinct": 6,
      "doj_efta": 2
     },
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 95.1,
-     "drop": 0.0,
+     "P": 95.0,
+     "drop": 0.1,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
       0.99,
       0.99,
-      0.99,
+      0.989,
       0.99,
       0.99
      ],
      "deal": 100,
      "account": 100,
-     "weakest": 0
+     "weakest": 3
     }
    }
   },
@@ -6736,7 +6736,7 @@
       0.99,
       0.99,
       0.99,
-      0.984,
+      0.985,
       0.99,
       0.99
      ],
@@ -8631,8 +8631,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 94.7,
-     "drop": 0.4,
+     "P": 94.8,
+     "drop": 0.3,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -9101,9 +9101,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 4,
+     "total": 5,
      "verified": 3,
-     "reported": 1,
+     "reported": 2,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -9130,7 +9130,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 3,
+     "distinct": 4,
      "doj_efta": 1
     },
     "open_leads": [],
@@ -36063,6 +36063,396 @@
      "weakest": 3
     }
    }
+  },
+  {
+   "id": "karin_models",
+   "name": "Karin Models of America",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Jean-Luc Brunel's US agency before MC2. Used, with MC2, to recruit young South American women and to sponsor their US visas, per women interviewed by the BBC.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.989,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 3
+    }
+   }
+  },
+  {
+   "id": "guayaquil_2004",
+   "name": "Modelling competition, Guayaquil, Ecuador (Aug 2004)",
+   "kind": "event",
+   "cluster": "operations",
+   "tier": "",
+   "note": "Competition attended by Brunel's team with young Brazilian entrants. US government files place Epstein in Guayaquil on 24-25 Aug 2004, at the final (BBC). A 16-year-old was offered a flight to New York; her mother refused.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "operations / logistics",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.989,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 3
+    }
+   }
+  },
+  {
+   "id": "brazil_mpf",
+   "name": "Brazil Federal Public Prosecutor's Office (MPF)",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Opened an inquiry in February 2026 into whether an Epstein-linked recruitment network operated in Brazil; the women are not targets (BBC).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "latvia_police",
+   "name": "Latvian State Police",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Opened a criminal investigation on 5 Feb 2026 into the possible recruitment of Latvian nationals for sexual exploitation in the United States, after files showed passport data and travel details for several Latvian women (Reuters).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "natalie_agency",
+   "name": "Natalie modelling agency (Riga)",
+   "kind": "company",
+   "cluster": "vendors",
+   "tier": "",
+   "note": "Latvian agency mentioned in the released files; its head, Eriks Neisans, denied any knowledge of wrongdoing (Reuters).",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.989,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 3
+    }
+   }
+  },
+  {
+   "id": "lithuania_probe",
+   "name": "Lithuanian human-trafficking investigation (2026)",
+   "kind": "government",
+   "cluster": "abroad",
+   "tier": "",
+   "note": "Opened in early February 2026. LRT's review of 600+ documents found a Lithuanian woman, introduced to Epstein in April 2010, who introduced other women and arranged meetings; LRT found no payments to her and says the files do not show what happened at the meetings.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
   }
  ],
  "edges": [
@@ -45489,6 +45879,164 @@
      "u": "https://democrats-judiciary.house.gov/sites/evo-subsites/democrats-judiciary.house.gov/files/evo-media-document/2026-01-14-raskin-to-mills-nyu-re-epstein.pdf"
     }
    ]
+  },
+  {
+   "f": "brunel",
+   "t": "karin_models",
+   "label": "ran the agency (before MC2)",
+   "type": "ownership",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "karin_models",
+   "t": "epstein",
+   "label": "used to recruit young South American women and sponsor their visas (women's accounts to the BBC)",
+   "type": "visa sponsorship",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "brunel",
+   "t": "guayaquil_2004",
+   "label": "his team ran the trip to the competition, 2004",
+   "type": "event",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "guayaquil_2004",
+   "label": "in Guayaquil 24-25 Aug 2004 (US government files)",
+   "type": "travel",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "brazil_mpf",
+   "t": "epstein",
+   "label": "inquiry into an Epstein-linked recruitment network in Brazil, Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "latvia_police",
+   "t": "epstein",
+   "label": "criminal investigation opened 5 Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    }
+   ]
+  },
+  {
+   "f": "natalie_agency",
+   "t": "epstein",
+   "label": "named in the released files; head denies knowledge",
+   "type": "mention",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    }
+   ]
+  },
+  {
+   "f": "lithuania_probe",
+   "t": "epstein",
+   "label": "trafficking investigation opened Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    },
+    {
+     "t": "LRT, 5 Feb 2026: Epstein's recruitment network, on the trail of one Lithuanian woman (600+ documents reviewed)",
+     "u": "https://www.lrt.lt/en/news-in-english/19/2827102/epstein-s-recruitment-network-on-the-trail-of-one-lithuanian-woman"
+    }
+   ]
+  },
+  {
+   "f": "siad",
+   "t": "mc2",
+   "label": "scout on commission for MC2; Brunel called him a recruiter \"for J. Epstein\" (DOJ file)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
+  },
+  {
+   "f": "siad",
+   "t": "epstein",
+   "label": "sent profiles, photos and videos of young women and models, late 2000s to at least 2017 (emails in the release)",
+   "type": "scheduling",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "siad",
+   "label": "under investigation in the Feb 2026 trafficking probe (reported); not charged; died July 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
   }
  ],
  "qop_meta": {
@@ -45502,6 +46050,6 @@
   "P0": 95.1,
   "deal0": 100,
   "account0": 100,
-  "ties": 250
+  "ties": 254
  }
 }
