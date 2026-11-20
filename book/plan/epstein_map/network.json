@@ -20,16 +20,16 @@
     "kb_maxwell": 1,
     "path_epstein": [],
     "ties": {
-     "total": 321,
-     "verified": 237,
-     "reported": 53,
+     "total": 323,
+     "verified": 238,
+     "reported": 54,
      "to_verify": 18,
      "withheld": 1,
      "not_established": 12,
-     "documented": 165
+     "documented": 166
     },
     "centrality": {
-     "betweenness": 0.844,
+     "betweenness": 0.8441,
      "rank": 1,
      "betweenness_without_hubs": 0,
      "rank_without_hubs": null
@@ -68,7 +68,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 203,
+     "distinct": 204,
      "doj_efta": 38
     },
     "open_leads": [
@@ -120,16 +120,16 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 38,
-     "verified": 28,
+     "total": 39,
+     "verified": 29,
      "reported": 7,
      "to_verify": 2,
      "withheld": 0,
      "not_established": 1,
-     "documented": 13
+     "documented": 14
     },
     "centrality": {
-     "betweenness": 0.0343,
+     "betweenness": 0.0346,
      "rank": 6,
      "betweenness_without_hubs": 0,
      "rank_without_hubs": null
@@ -141,7 +141,7 @@
     ],
     "money_out": [],
     "loops": [
-     "Ghislaine Maxwell – Todd Blanche – US Department of Justice – Maurene Comey",
+     "Todd Blanche – US Department of Justice – Maurene Comey – Ghislaine Maxwell",
      "El Brillo Way, Palm Beach – Juan Alessi – Ghislaine Maxwell"
     ],
     "succession": null,
@@ -156,7 +156,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 35,
+     "distinct": 36,
      "doj_efta": 2
     },
     "open_leads": [
@@ -291,7 +291,7 @@
     "centrality": {
      "betweenness": 0.0193,
      "rank": 15,
-     "betweenness_without_hubs": 0.0231,
+     "betweenness_without_hubs": 0.0229,
      "rank_without_hubs": 13
     },
     "role": "sponsor / payer",
@@ -371,9 +371,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.0574,
+     "betweenness": 0.0572,
      "rank": 3,
-     "betweenness_without_hubs": 0.0459,
+     "betweenness_without_hubs": 0.0456,
      "rank_without_hubs": 3
     },
     "role": "sponsor / payer",
@@ -524,9 +524,9 @@
      "documented": 9
     },
     "centrality": {
-     "betweenness": 0.0283,
+     "betweenness": 0.0282,
      "rank": 9,
-     "betweenness_without_hubs": 0.0602,
+     "betweenness_without_hubs": 0.0597,
      "rank_without_hubs": 1
     },
     "role": "back office / vehicle",
@@ -612,7 +612,7 @@
     "centrality": {
      "betweenness": 0.013,
      "rank": 25,
-     "betweenness_without_hubs": 0.026,
+     "betweenness_without_hubs": 0.0258,
      "rank_without_hubs": 10
     },
     "role": "sponsor / payer",
@@ -693,7 +693,7 @@
     "centrality": {
      "betweenness": 0.0183,
      "rank": 22,
-     "betweenness_without_hubs": 0.0286,
+     "betweenness_without_hubs": 0.0284,
      "rank_without_hubs": 8
     },
     "role": "sponsor / payer",
@@ -705,7 +705,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -845,8 +845,8 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 46,
+     "betweenness": 0.0063,
+     "rank": 58,
      "betweenness_without_hubs": 0.0027,
      "rank_without_hubs": 38
     },
@@ -857,7 +857,7 @@
      "Jes Staley – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -915,7 +915,7 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0189,
+     "betweenness": 0.0188,
      "rank": 19,
      "betweenness_without_hubs": 0.0074,
      "rank_without_hubs": 24
@@ -1149,9 +1149,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.01,
+     "betweenness": 0.0099,
      "rank": 35,
-     "betweenness_without_hubs": 0.02,
+     "betweenness_without_hubs": 0.0199,
      "rank_without_hubs": 14
     },
     "role": "access / association",
@@ -1834,7 +1834,7 @@
      "documented": 12
     },
     "centrality": {
-     "betweenness": 0.0619,
+     "betweenness": 0.0616,
      "rank": 2,
      "betweenness_without_hubs": 0.0034,
      "rank_without_hubs": 36
@@ -1844,7 +1844,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -2087,7 +2087,7 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.019,
+     "betweenness": 0.0189,
      "rank": 18,
      "betweenness_without_hubs": 0.0002,
      "rank_without_hubs": 65
@@ -2239,7 +2239,7 @@
     "centrality": {
      "betweenness": 0.006,
      "rank": 64,
-     "betweenness_without_hubs": 0.0601,
+     "betweenness_without_hubs": 0.0597,
      "rank_without_hubs": 2
     },
     "role": "official / agency",
@@ -2319,7 +2319,7 @@
     "centrality": {
      "betweenness": 0.0252,
      "rank": 12,
-     "betweenness_without_hubs": 0.0148,
+     "betweenness_without_hubs": 0.0147,
      "rank_without_hubs": 19
     },
     "role": "official / agency",
@@ -2329,7 +2329,7 @@
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -2402,8 +2402,8 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 47,
+     "betweenness": 0.0063,
+     "rank": 46,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 94
     },
@@ -2632,9 +2632,9 @@
      "documented": 7
     },
     "centrality": {
-     "betweenness": 0.0128,
+     "betweenness": 0.0127,
      "rank": 27,
-     "betweenness_without_hubs": 0.0163,
+     "betweenness_without_hubs": 0.0162,
      "rank_without_hubs": 16
     },
     "role": "access / association",
@@ -2646,7 +2646,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.022,
      "operations_cover": 0.08
     },
@@ -2714,7 +2714,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -3051,7 +3051,7 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0315,
+     "betweenness": 0.0314,
      "rank": 7,
      "betweenness_without_hubs": 0.0001,
      "rank_without_hubs": 77
@@ -3201,7 +3201,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -3332,8 +3332,8 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 48,
+     "betweenness": 0.0063,
+     "rank": 47,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 86
     },
@@ -3494,7 +3494,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.111,
      "operations_cover": 0.0
     },
@@ -3568,8 +3568,8 @@
     "money_in": [],
     "money_out": [],
     "loops": [
-     "Ghislaine Maxwell – Todd Blanche – US Department of Justice – Maurene Comey",
-     "Pam Bondi – Todd Blanche – US Department of Justice"
+     "Todd Blanche – US Department of Justice – Maurene Comey – Ghislaine Maxwell",
+     "Todd Blanche – Pam Bondi – US Department of Justice"
     ],
     "succession": {
      "broker_cover": 0.006,
@@ -3638,8 +3638,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0186,
-     "rank": 20,
+     "betweenness": 0.0185,
+     "rank": 21,
      "betweenness_without_hubs": 0.0008,
      "rank_without_hubs": 59
     },
@@ -3990,8 +3990,8 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 49,
+     "betweenness": 0.0063,
+     "rank": 59,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 82
     },
@@ -4080,10 +4080,10 @@
     "money_in": [],
     "money_out": [],
     "loops": [
-     "Pam Bondi – Todd Blanche – US Department of Justice"
+     "Todd Blanche – Pam Bondi – US Department of Justice"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4148,8 +4148,8 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0186,
-     "rank": 21,
+     "betweenness": 0.0185,
+     "rank": 20,
      "betweenness_without_hubs": 0.0007,
      "rank_without_hubs": 61
     },
@@ -4157,11 +4157,11 @@
     "money_in": [],
     "money_out": [],
     "loops": [
-     "Ghislaine Maxwell – Todd Blanche – US Department of Justice – Maurene Comey",
-     "Pam Bondi – Todd Blanche – US Department of Justice"
+     "Todd Blanche – US Department of Justice – Maurene Comey – Ghislaine Maxwell",
+     "Todd Blanche – Pam Bondi – US Department of Justice"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4227,9 +4227,9 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0246,
+     "betweenness": 0.0245,
      "rank": 13,
-     "betweenness_without_hubs": 0.001,
+     "betweenness_without_hubs": 0.0009,
      "rank_without_hubs": 58
     },
     "role": "official / agency",
@@ -4237,7 +4237,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4911,8 +4911,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 50,
+     "betweenness": 0.0063,
+     "rank": 48,
      "betweenness_without_hubs": 0.0027,
      "rank_without_hubs": 40
     },
@@ -5215,7 +5215,7 @@
      "Les Wexner – Maple Inc. – 9 East 71st Street"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -5276,7 +5276,7 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0125,
+     "betweenness": 0.0124,
      "rank": 33,
      "betweenness_without_hubs": 0.0001,
      "rank_without_hubs": 72
@@ -5351,9 +5351,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.0407,
+     "betweenness": 0.0406,
      "rank": 4,
-     "betweenness_without_hubs": 0.0248,
+     "betweenness_without_hubs": 0.0246,
      "rank_without_hubs": 12
     },
     "role": "operations / logistics",
@@ -5503,7 +5503,7 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0253,
+     "betweenness": 0.0252,
      "rank": 11,
      "betweenness_without_hubs": 0.0001,
      "rank_without_hubs": 73
@@ -5717,7 +5717,7 @@
     "centrality": {
      "betweenness": 0.0067,
      "rank": 43,
-     "betweenness_without_hubs": 0.0078,
+     "betweenness_without_hubs": 0.0077,
      "rank_without_hubs": 22
     },
     "role": "operations / logistics",
@@ -5727,7 +5727,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -6415,9 +6415,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0141,
+     "betweenness": 0.014,
      "rank": 24,
-     "betweenness_without_hubs": 0.0013,
+     "betweenness_without_hubs": 0.0012,
      "rank_without_hubs": 56
     },
     "role": "official / agency",
@@ -6695,7 +6695,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 88,
-     "betweenness_without_hubs": 0.0149,
+     "betweenness_without_hubs": 0.0148,
      "rank_without_hubs": 18
     },
     "role": "operations / logistics",
@@ -6703,7 +6703,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.111,
      "operations_cover": 0.0
     },
@@ -7199,9 +7199,9 @@
      "documented": 12
     },
     "centrality": {
-     "betweenness": 0.0377,
+     "betweenness": 0.0376,
      "rank": 5,
-     "betweenness_without_hubs": 0.0407,
+     "betweenness_without_hubs": 0.0404,
      "rank_without_hubs": 5
     },
     "role": "back office / vehicle",
@@ -7286,7 +7286,7 @@
     "centrality": {
      "betweenness": 0.0145,
      "rank": 23,
-     "betweenness_without_hubs": 0.0252,
+     "betweenness_without_hubs": 0.0251,
      "rank_without_hubs": 11
     },
     "role": "back office / vehicle",
@@ -7378,7 +7378,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -7642,8 +7642,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 51,
+     "betweenness": 0.0063,
+     "rank": 49,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 118
     },
@@ -8164,8 +8164,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 52,
+     "betweenness": 0.0063,
+     "rank": 50,
      "betweenness_without_hubs": 0.0001,
      "rank_without_hubs": 79
     },
@@ -8251,7 +8251,7 @@
      "Les Wexner – Maple Inc. – 9 East 71st Street"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -8662,9 +8662,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0098,
+     "betweenness": 0.0097,
      "rank": 36,
-     "betweenness_without_hubs": 0.0412,
+     "betweenness_without_hubs": 0.041,
      "rank_without_hubs": 4
     },
     "role": "operations / logistics",
@@ -8679,7 +8679,7 @@
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments"
     ],
     "succession": {
-     "broker_cover": 0.098,
+     "broker_cover": 0.097,
      "broker_money_cover": 0.156,
      "operations_cover": 0.08
     },
@@ -9599,7 +9599,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -9667,7 +9667,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -9739,7 +9739,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -9938,8 +9938,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 53,
+     "betweenness": 0.0063,
+     "rank": 51,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 137
     },
@@ -10286,8 +10286,8 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 54,
+     "betweenness": 0.0063,
+     "rank": 52,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 88
     },
@@ -10647,7 +10647,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 89,
-     "betweenness_without_hubs": 0.0079,
+     "betweenness_without_hubs": 0.0078,
      "rank_without_hubs": 21
     },
     "role": "finance",
@@ -10659,7 +10659,7 @@
      "Coinbase – Brock Pierce – Blockchain Capital"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.044,
      "operations_cover": 0.0
     },
@@ -10807,7 +10807,7 @@
      "Blockstream – Kyara Investments III – Joi Ito"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.111,
      "operations_cover": 0.0
     },
@@ -11083,7 +11083,7 @@
     "centrality": {
      "betweenness": 0.0004,
      "rank": 80,
-     "betweenness_without_hubs": 0.0049,
+     "betweenness_without_hubs": 0.0048,
      "rank_without_hubs": 32
     },
     "role": "official / agency",
@@ -11362,8 +11362,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 55,
+     "betweenness": 0.0063,
+     "rank": 53,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 151
     },
@@ -12015,7 +12015,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.022,
      "operations_cover": 0.08
     },
@@ -14149,7 +14149,7 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0029,
+     "betweenness": 0.0028,
      "rank": 73,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 178
@@ -14988,7 +14988,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -16944,7 +16944,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17012,7 +17012,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17080,7 +17080,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17148,7 +17148,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17216,7 +17216,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17287,7 +17287,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17994,7 +17994,7 @@
     "centrality": {
      "betweenness": 0.0005,
      "rank": 77,
-     "betweenness_without_hubs": 0.0075,
+     "betweenness_without_hubs": 0.0074,
      "rank_without_hubs": 23
     },
     "role": "sponsor / payer",
@@ -18075,7 +18075,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.022,
      "operations_cover": 0.04
     },
@@ -18271,7 +18271,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.022,
      "operations_cover": 0.04
     },
@@ -18828,7 +18828,7 @@
      "Mary Erdoes – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -18896,7 +18896,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -18965,7 +18965,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -19034,7 +19034,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -19094,7 +19094,7 @@
     "centrality": {
      "betweenness": 0.0035,
      "rank": 67,
-     "betweenness_without_hubs": 0.0339,
+     "betweenness_without_hubs": 0.0337,
      "rank_without_hubs": 6
     },
     "role": "finance",
@@ -19508,8 +19508,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 56,
+     "betweenness": 0.0063,
+     "rank": 54,
      "betweenness_without_hubs": 0.0027,
      "rank_without_hubs": 46
     },
@@ -19522,7 +19522,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.044,
      "operations_cover": 0.04
     },
@@ -19593,7 +19593,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.044,
      "operations_cover": 0.04
     },
@@ -20015,7 +20015,7 @@
      "Darren Indyke – TD Bank – Richard Kahn – HBRK Associates"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.044,
      "operations_cover": 0.04
     },
@@ -20088,7 +20088,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -20286,7 +20286,7 @@
     "centrality": {
      "betweenness": 0.008,
      "rank": 40,
-     "betweenness_without_hubs": 0.0277,
+     "betweenness_without_hubs": 0.0275,
      "rank_without_hubs": 9
     },
     "role": "back office / vehicle",
@@ -21333,7 +21333,7 @@
     "centrality": {
      "betweenness": 0.0005,
      "rank": 78,
-     "betweenness_without_hubs": 0.017,
+     "betweenness_without_hubs": 0.0169,
      "rank_without_hubs": 15
     },
     "role": "back office / vehicle",
@@ -21422,7 +21422,7 @@
      "Jeffrey E. Epstein 2018 Trust – Jeffrey E. Epstein 2019 Trust – Richard Kahn"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.044,
      "operations_cover": 0.08
     },
@@ -23736,7 +23736,7 @@
      "Mary Erdoes – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.067,
      "operations_cover": 0.04
     },
@@ -24953,7 +24953,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.037,
+     "broker_cover": 0.036,
      "broker_money_cover": 0.044,
      "operations_cover": 0.04
     },
@@ -25076,8 +25076,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 57,
+     "betweenness": 0.0063,
+     "rank": 55,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 256
     },
@@ -26499,7 +26499,7 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0206,
+     "betweenness": 0.0205,
      "rank": 14,
      "betweenness_without_hubs": 0.0027,
      "rank_without_hubs": 47
@@ -26575,9 +26575,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0254,
+     "betweenness": 0.0253,
      "rank": 10,
-     "betweenness_without_hubs": 0.0155,
+     "betweenness_without_hubs": 0.0154,
      "rank_without_hubs": 17
     },
     "role": "finance",
@@ -27004,8 +27004,8 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 58,
+     "betweenness": 0.0063,
+     "rank": 56,
      "betweenness_without_hubs": 0.0027,
      "rank_without_hubs": 48
     },
@@ -28312,7 +28312,7 @@
     "centrality": {
      "betweenness": 0.0069,
      "rank": 41,
-     "betweenness_without_hubs": 0.0298,
+     "betweenness_without_hubs": 0.0296,
      "rank_without_hubs": 7
     },
     "role": "access / association",
@@ -30066,7 +30066,7 @@
      "The New Albany Company – New Albany, Ohio – Les Wexner"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -30137,7 +30137,7 @@
      "The New Albany Company – New Albany, Ohio – Les Wexner"
     ],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -30207,7 +30207,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -30276,7 +30276,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.043,
+     "broker_cover": 0.042,
      "broker_money_cover": 0.089,
      "operations_cover": 0.04
     },
@@ -32046,8 +32046,8 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0064,
-     "rank": 59,
+     "betweenness": 0.0063,
+     "rank": 57,
      "betweenness_without_hubs": 0.0,
      "rank_without_hubs": 279
     },
@@ -34336,7 +34336,7 @@
      "Darren Indyke – Estate of Jeffrey Epstein – Richard Kahn – HBRK Associates"
     ],
     "succession": {
-     "broker_cover": 0.049,
+     "broker_cover": 0.048,
      "broker_money_cover": 0.044,
      "operations_cover": 0.04
     },
@@ -37732,7 +37732,7 @@
     "money_in": [],
     "money_out": [],
     "loops": [
-     "Ghislaine Maxwell – Todd Blanche – US Department of Justice – Maurene Comey"
+     "Todd Blanche – US Department of Justice – Maurene Comey – Ghislaine Maxwell"
     ],
     "succession": {
      "broker_cover": 0.0,
@@ -38639,6 +38639,135 @@
      "broker_money_cover": 0,
      "operations_cover": 0
     },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "interlochen",
+   "name": "Interlochen Center for the Arts (Michigan)",
+   "kind": "institution",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Summer arts camp near Traverse City, Michigan. Interlochen says Epstein was a donor from 1990 to 2003 and that its records hold no complaint about him. 'Jane', the first witness at Maxwell's 2021 trial, testified under oath that Epstein and Maxwell approached her there in the summer of 1994, when she was 14; a 2020 lawsuit released in the files says the same. The earliest point at which the record places Epstein and Maxwell together approaching a minor.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "Direct 1°",
+    "kb_epstein": 1,
+    "kb_maxwell": 1,
+    "path_epstein": [
+     "Interlochen Center for the Arts (Michigan)",
+     "Jeffrey Epstein"
+    ],
+    "ties": {
+     "total": 2,
+     "verified": 2,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 2
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 298,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 296
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.006,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "jd_suit_2019",
+   "name": "Nine Jane Does v. the Epstein estate (Manhattan, Dec 2019)",
+   "kind": "document",
+   "cluster": "origins",
+   "tier": "",
+   "note": "Civil suit filed in New York state court on 3 Dec 2019 by nine women. Jane Doe II alleges abuse from about 1985, when she was 23; Jane Doe I from about 1990, when she was 14. Allegations in a lawsuit, not findings. The earliest dates any accuser has put on the record.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "evidence / record",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
     "flight": null,
     "volumes": {},
     "sources": {
@@ -49202,13 +49331,59 @@
      "u": "https://www.bnnbloomberg.ca/epstein-s-11th-hour-executor-is-ex-science-advisor-to-bill-gates-1.1303888"
     }
    ]
+  },
+  {
+   "f": "epstein",
+   "t": "interlochen",
+   "label": "donor, 1990–2003 (Interlochen's own statement)",
+   "type": "donation",
+   "status": "verified",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Yahoo News, Dec 2025: Epstein met first known victim at Michigan arts camp, files reveal",
+     "u": "https://www.yahoo.com/news/articles/epstein-met-first-known-victim-180654215.html"
+    }
+   ]
+  },
+  {
+   "f": "gmax",
+   "t": "interlochen",
+   "label": "approached \"Jane\", 14, there with Epstein in summer 1994 (her sworn testimony, Nov 2021)",
+   "type": "sworn allegation",
+   "status": "verified",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 1 Dec 2021: Ghislaine Maxwell's first accuser testifies in sex abuse trial",
+     "u": "https://www.aljazeera.com/news/2021/12/1/ghislaine-maxwell-first-accuser-testifies-in-sex-abuse-trial"
+    },
+    {
+     "t": "Yahoo News, Dec 2025: Epstein met first known victim at Michigan arts camp, files reveal",
+     "u": "https://www.yahoo.com/news/articles/epstein-met-first-known-victim-180654215.html"
+    }
+   ]
+  },
+  {
+   "f": "jd_suit_2019",
+   "t": "epstein",
+   "label": "alleges abuse from about 1985 (Jane Doe II) and about 1990 (Jane Doe I)",
+   "type": "claim",
+   "status": "reported",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Irish Times (Reuters), 3 Dec 2019: Jeffrey Epstein's sexual abuses began by 1985, claims lawsuit",
+     "u": "https://www.irishtimes.com/news/world/us/jeffrey-epstein-s-sexual-abuses-began-by-1985-claims-lawsuit-1.4103824"
+    }
+   ]
   }
  ],
  "qop_meta": {
   "graph": "documented ties: verified, non-probe, non-kinship, no document nodes",
-  "nodes": 297,
-  "edges": 414,
-  "broker_neighbours": 164,
+  "nodes": 298,
+  "edges": 416,
+  "broker_neighbours": 165,
   "operations_neighbours": 25
  },
  "whatif_meta": {
