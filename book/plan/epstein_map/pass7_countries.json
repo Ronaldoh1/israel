@@ -1,0 +1,211 @@
+{
+ "nodes": [
+  {
+   "id": "okokrim",
+   "name": "Økokrim (Norway)",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Norway's white-collar crime unit. Opened an aggravated-corruption investigation into former PM Thorbjørn Jagland on 5 Feb 2026 (\"whether gifts, travel and loans were received in connection with his position\") and asked for his Council of Europe immunity to be lifted. Jagland, Terje Rød-Larsen and Mona Juul were later charged (reported Feb 2026). Status as of Feb 2026."
+  },
+  {
+   "id": "brende",
+   "name": "Børge Brende",
+   "kind": "person",
+   "cluster": "abroad",
+   "note": "Norway's foreign minister 2013-17; World Economic Forum president 2017-26. Three business dinners with Epstein (2018, at Terje Rød-Larsen's invitation, and twice in 2019) and a few emails and texts; says he did not know his past. Resigned 26 Feb 2026 after a WEF review he requested found no further concerns. No police case reported."
+  },
+  {
+   "id": "wef",
+   "name": "World Economic Forum",
+   "kind": "institution",
+   "cluster": "abroad",
+   "note": "Ran an outside-counsel review of its president's Epstein contacts in Feb 2026; co-chairs Hoffmann and Fink said it found nothing beyond what he had disclosed."
+  },
+  {
+   "id": "poland_tf",
+   "name": "Polish government task force (Feb 2026)",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Set up by PM Donald Tusk on 3 Feb 2026 under the justice minister: to find whether Polish girls or women were harmed and to examine claims that Epstein was involved with or used by Russian intelligence. No findings published on the intelligence question."
+  },
+  {
+   "id": "poland_npo",
+   "name": "Polish National Prosecutor's Office",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Opened a full investigation on 11 Mar 2026 into suspected trafficking by an Epstein-linked group that recruited girls and women in Poland for sexual exploitation, 2009-19, under the pretence of modelling; names Daniel Siad's 2009 email about recruiting in Kraków. A potential suspect identified; no charges."
+  },
+  {
+   "id": "starmer",
+   "name": "Keir Starmer",
+   "kind": "person",
+   "cluster": "politics",
+   "note": "UK prime minister. Appointed Peter Mandelson ambassador to the United States and dismissed him in September 2025 over his Epstein links."
+  },
+  {
+   "id": "mcsweeney",
+   "name": "Morgan McSweeney",
+   "kind": "person",
+   "cluster": "politics",
+   "note": "Starmer's chief of staff. Resigned on 8 Feb 2026, saying the decision to appoint Mandelson was wrong and that he had advised it."
+  }
+ ],
+ "edges": [
+  {
+   "f": "okokrim",
+   "t": "jagland",
+   "label": "aggravated-corruption investigation opened 5 Feb 2026; later charged",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 6 Feb 2026: Norway police investigate former PM Jagland over Epstein ties (Økokrim; Brende review)",
+     "u": "https://www.aljazeera.com/economy/2026/2/6/norway-police-probes-former-pm-jagland-over-epstein-ties"
+    },
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "okokrim",
+   "t": "juul",
+   "label": "charged (reported Feb 2026)",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "okokrim",
+   "t": "rodlarsen",
+   "label": "charged (reported Feb 2026)",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "brende",
+   "t": "epstein",
+   "label": "three business dinners (2018-19) and a few emails and texts (his account)",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 6 Feb 2026: Norway police investigate former PM Jagland over Epstein ties (Økokrim; Brende review)",
+     "u": "https://www.aljazeera.com/economy/2026/2/6/norway-police-probes-former-pm-jagland-over-epstein-ties"
+    },
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "rodlarsen",
+   "t": "brende",
+   "label": "invited him to the first dinner with Epstein, 2018",
+   "type": "introduction",
+   "status": "reported",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "wef",
+   "t": "brende",
+   "label": "outside review, Feb 2026; he resigned 26 Feb 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 26 Feb 2026: WEF head Børge Brende quits after Epstein links revealed",
+     "u": "https://www.aljazeera.com/news/2026/2/26/world-economic-forum-head-borge-brende-quits-after-epstein-links-revealed"
+    }
+   ]
+  },
+  {
+   "f": "poland_tf",
+   "t": "epstein",
+   "label": "inquiry into Polish victims and the Russian-intelligence claims, from 3 Feb 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Notes from Poland, 12 Mar 2026: Polish prosecutors investigate alleged human trafficking by an Epstein-linked group; Tusk's task force",
+     "u": "https://notesfrompoland.com/2026/03/12/polish-prosecutors-investigate-alleged-human-trafficking-by-epstein-linked-group/"
+    },
+    {
+     "t": "Chancellery of the Prime Minister of Poland: government sets up task force to probe Epstein scandal",
+     "u": "https://www.gov.pl/web/primeminister/government-sets-up-task-force-to-probe-epstein-scandal"
+    }
+   ]
+  },
+  {
+   "f": "poland_npo",
+   "t": "siad",
+   "label": "named in the trafficking investigation (2009 email about recruiting in Kraków)",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Notes from Poland, 12 Mar 2026: Polish prosecutors investigate alleged human trafficking by an Epstein-linked group; Tusk's task force",
+     "u": "https://notesfrompoland.com/2026/03/12/polish-prosecutors-investigate-alleged-human-trafficking-by-epstein-linked-group/"
+    }
+   ]
+  },
+  {
+   "f": "starmer",
+   "t": "mandelson",
+   "label": "appointed him US ambassador; dismissed him Sept 2025",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Dawn (AFP), 9 Feb 2026: UK PM's top aide quits as Epstein fallout widens",
+     "u": "https://www.dawn.com/news/1971939/uk-pms-top-aide-quits-as-epstein-fallout-widens"
+    }
+   ]
+  },
+  {
+   "f": "mcsweeney",
+   "t": "mandelson",
+   "label": "advised the appointment; resigned 8 Feb 2026 saying it was wrong",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 7 (governments by country), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Dawn (AFP), 9 Feb 2026: UK PM's top aide quits as Epstein fallout widens",
+     "u": "https://www.dawn.com/news/1971939/uk-pms-top-aide-quits-as-epstein-fallout-widens"
+    },
+    {
+     "t": "LabourList, Feb 2026: Morgan McSweeney resigns as Starmer's chief of staff over Mandelson scandal",
+     "u": "https://labourlist.org/2026/02/morgan-mcsweeney-resigns-peter-mandelson/"
+    }
+   ]
+  }
+ ]
+}
