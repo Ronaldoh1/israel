@@ -1,0 +1,13 @@
+const {chromium}=require('playwright');const fs=require('fs');
+const SP='/tmp/claude-0/-home-claude/e022d494-4813-5195-a8e3-0f7e50b32600/scratchpad/';
+(async()=>{const b=await chromium.launch();const p=await b.newPage();
+await p.route('**/d3.min.js',r=>r.fulfill({body:fs.readFileSync(SP+'graph/node_modules/d3/dist/d3.min.js'),contentType:'application/javascript'}));
+const errs=[];p.on('pageerror',e=>errs.push(e.message));
+await p.addInitScript(()=>{try{localStorage.setItem('road_model_intro_v1','1')}catch(e){}});
+await p.goto('file:///home/claude/israel/road-network.html');await p.waitForTimeout(4000);
+const out=await p.evaluate(()=>{const base=vRead(vScore(new Set()));
+ const rows=vTestResults().map(x=>({id:x.t.id,q:x.t.q,feat:!!x.t.feat,tag:x.t.featTag||'',strict:!!x.t.strict,on:x.rd.on,ever:x.rd.ever,verdict:x.rd.verdict,years:x.rd.years??x.R.years??null,vote:x.vote.passes,n:x.n,lost:x.rd.lost,delay:x.rd.delay}));
+ const disp=vDispResults().map(x=>({id:x.t.id,q:x.t.q,on:x.rd.on,ever:x.rd.ever,lost:x.rd.lost,verdict:x.rd.verdict}));const V=vScore(new Set());const L=V.cap[8],L0=VB.cap0[8];return {legit:[L,L0,V.pc],disp,base:{on:base.on,ever:base.ever,verdict:base.verdict},nodes:(typeof nodes!=='undefined'?nodes.length:null),rows};});
+console.log(JSON.stringify(errs));fs.writeFileSync('/home/claude/israel/tools/stress/tests_live.json',JSON.stringify(out,null,1));
+console.log(JSON.stringify(out.legit),JSON.stringify(out.base),out.nodes,out.rows.length,JSON.stringify(out.rows[0].keys));
+await b.close();})();
