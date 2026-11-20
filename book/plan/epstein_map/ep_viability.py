@@ -32,7 +32,7 @@ OFFICE = ['kahn', 'indyke', 'hbrk', 'southern_trust', 'financial_trust', 'butter
 OWN_T = {'ownership', 'asset ownership', 'residence', 'trustee', 'corporate office'}
 PROBE = {'investigation', 'testimony', 'litigation', 'reporting', 'claim', 'complaint', 'oversight',
          'allegation to Congress', 'forensic review', 'court ruling', 'comparison', 'comparative methodology',
-         'communications aggregate', 'flight passenger', 'custody', 'legislation', 'sworn allegation',
+         'communications aggregate', 'flight passenger', 'legal position (rejected)', 'custody', 'legislation', 'sworn allegation',
          'testimony / interview', 'research lead', 'research provenance', 'research archive / source corpus',
          'document evidence', 'document provenance', 'kinship', "knowledge of spouse's connection", 'document'}
 MONEY_IN = {'funding', 'payment', 'contract', 'loan', 'trust grantor', 'client', 'payment instruction'}

@@ -20,16 +20,16 @@
     "kb_maxwell": 1,
     "path_epstein": [],
     "ties": {
-     "total": 285,
-     "verified": 226,
-     "reported": 28,
+     "total": 290,
+     "verified": 230,
+     "reported": 29,
      "to_verify": 18,
      "withheld": 1,
      "not_established": 12,
-     "documented": 159
+     "documented": 161
     },
     "centrality": {
-     "betweenness": 0.8705,
+     "betweenness": 0.8593,
      "rank": 1,
      "betweenness_without_hubs": 0,
      "rank_without_hubs": null
@@ -68,7 +68,7 @@
     },
     "volumes": {},
     "sources": {
-     "distinct": 195,
+     "distinct": 196,
      "doj_efta": 38
     },
     "open_leads": [
@@ -129,7 +129,7 @@
      "documented": 12
     },
     "centrality": {
-     "betweenness": 0.0245,
+     "betweenness": 0.0239,
      "rank": 14,
      "betweenness_without_hubs": 0,
      "rank_without_hubs": null
@@ -216,7 +216,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 91,
-     "betweenness_without_hubs": 0.0056,
+     "betweenness_without_hubs": 0.0054,
      "rank_without_hubs": 30
     },
     "role": "official / agency",
@@ -289,9 +289,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.0207,
+     "betweenness": 0.0202,
      "rank": 16,
-     "betweenness_without_hubs": 0.025,
+     "betweenness_without_hubs": 0.0243,
      "rank_without_hubs": 13
     },
     "role": "sponsor / payer",
@@ -305,11 +305,11 @@
      "The Wexner Foundation: Les and Abigail Wexner created the foundation."
     ],
     "loops": [
-     "Les Wexner – Maple Inc. – 9 East 71st Street",
-     "The New Albany Company – New Albany, Ohio – Les Wexner"
+     "The New Albany Company – New Albany, Ohio – Les Wexner",
+     "9 East 71st Street – Maple Inc. – Les Wexner"
     ],
     "succession": {
-     "broker_cover": 0.057,
+     "broker_cover": 0.056,
      "broker_money_cover": 0.091,
      "operations_cover": 0.04
     },
@@ -371,9 +371,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.0613,
+     "betweenness": 0.0599,
      "rank": 3,
-     "betweenness_without_hubs": 0.0496,
+     "betweenness_without_hubs": 0.0483,
      "rank_without_hubs": 3
     },
     "role": "sponsor / payer",
@@ -388,7 +388,7 @@
      "AP Narrows LP – Narrows Holdings LLC – Leon Black"
     ],
     "succession": {
-     "broker_cover": 0.063,
+     "broker_cover": 0.062,
      "broker_money_cover": 0.091,
      "operations_cover": 0.04
     },
@@ -451,10 +451,10 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0136,
-     "rank": 25,
+     "betweenness": 0.0133,
+     "rank": 26,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 72
+     "rank_without_hubs": 73
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -524,9 +524,9 @@
      "documented": 9
     },
     "centrality": {
-     "betweenness": 0.0302,
+     "betweenness": 0.0296,
      "rank": 8,
-     "betweenness_without_hubs": 0.0647,
+     "betweenness_without_hubs": 0.0631,
      "rank_without_hubs": 1
     },
     "role": "back office / vehicle",
@@ -542,15 +542,12 @@
      "Ergo Ltd.: $1,000,000 wire, 16 Mar 2015, ref. 'Reporty Investment', Bank Leumi branch 771 (memo from Indyke)"
     ],
     "loops": [
-     "HBRK Associates – Achrayut Leumit Ltd. – Bank Leumi le-Israel – Ergo Ltd. – Southern Trust Company",
-     "Darren Indyke – Carbyne (Reporty) – Ergo Ltd. – Southern Trust Company",
-     "Darren Indyke – HBRK Associates – Southern Trust Company",
-     "Richard Kahn – HBRK Associates – Southern Trust Company",
-     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Southern Trust Company",
-     "Darren Indyke – TD Bank – Richard Kahn – Southern Trust Company"
+     "Southern Trust Company – HBRK Associates – Richard Kahn",
+     "Southern Trust Company – Ergo Ltd. – Bank Leumi le-Israel – Achrayut Leumit Ltd. – HBRK Associates",
+     "Darren Indyke – Southern Trust Company – Richard Kahn – Estate of Jeffrey Epstein"
     ],
     "succession": {
-     "broker_cover": 0.082,
+     "broker_cover": 0.081,
      "broker_money_cover": 0.114,
      "operations_cover": 0.04
     },
@@ -565,8 +562,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 94.6,
-     "drop": 0.5,
+     "P": 94.7,
+     "drop": 0.4,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -604,8 +601,8 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 18,
-     "verified": 17,
+     "total": 19,
+     "verified": 18,
      "reported": 0,
      "to_verify": 0,
      "withheld": 1,
@@ -613,9 +610,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.014,
-     "rank": 23,
-     "betweenness_without_hubs": 0.0281,
+     "betweenness": 0.0136,
+     "rank": 24,
+     "betweenness_without_hubs": 0.0273,
      "rank_without_hubs": 10
     },
     "role": "sponsor / payer",
@@ -631,7 +628,7 @@
      "Mary Erdoes – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.082,
+     "broker_cover": 0.081,
      "broker_money_cover": 0.091,
      "operations_cover": 0.08
     },
@@ -641,7 +638,7 @@
      "The Eye": 1
     },
     "sources": {
-     "distinct": 15,
+     "distinct": 16,
      "doj_efta": 1
     },
     "open_leads": [],
@@ -694,9 +691,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0196,
+     "betweenness": 0.0191,
      "rank": 21,
-     "betweenness_without_hubs": 0.0302,
+     "betweenness_without_hubs": 0.0297,
      "rank_without_hubs": 8
     },
     "role": "sponsor / payer",
@@ -708,7 +705,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -773,7 +770,7 @@
      "betweenness": 0.0032,
      "rank": 70,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 86
+     "rank_without_hubs": 87
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -848,9 +845,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 44,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 37
     },
     "role": "finance",
@@ -860,7 +857,7 @@
      "Jes Staley – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -918,9 +915,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0202,
+     "betweenness": 0.0197,
      "rank": 20,
-     "betweenness_without_hubs": 0.0081,
+     "betweenness_without_hubs": 0.0079,
      "rank_without_hubs": 24
     },
     "role": "sponsor / payer",
@@ -1001,9 +998,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 105,
+     "rank": 106,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 87
+     "rank_without_hubs": 88
     },
     "role": "finance",
     "money_in": [],
@@ -1075,9 +1072,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 106,
+     "rank": 107,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 88
+     "rank_without_hubs": 89
     },
     "role": "access / association",
     "money_in": [
@@ -1152,9 +1149,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0106,
+     "betweenness": 0.0104,
      "rank": 34,
-     "betweenness_without_hubs": 0.0194,
+     "betweenness_without_hubs": 0.0197,
      "rank_without_hubs": 14
     },
     "role": "access / association",
@@ -1165,11 +1162,10 @@
     ],
     "money_out": [],
     "loops": [
-     "Ehud Barak – Carbyne (Reporty) – Ergo Ltd.",
-     "Darren Indyke – Carbyne (Reporty) – Ergo Ltd. – Southern Trust Company"
+     "Ergo Ltd. – Carbyne (Reporty) – Ehud Barak"
     ],
     "succession": {
-     "broker_cover": 0.076,
+     "broker_cover": 0.075,
      "broker_money_cover": 0.091,
      "operations_cover": 0.08
     },
@@ -1234,10 +1230,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 59,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 73
+     "rank_without_hubs": 74
     },
     "role": "access / association",
     "money_in": [],
@@ -1321,7 +1317,7 @@
      "betweenness": 0.0,
      "rank": 94,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 70
+     "rank_without_hubs": 71
     },
     "role": "access / association",
     "money_in": [
@@ -1401,9 +1397,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 112,
+     "rank": 113,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 97
+     "rank_without_hubs": 98
     },
     "role": "access / association",
     "money_in": [],
@@ -1478,10 +1474,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 46,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 98
+     "rank_without_hubs": 99
     },
     "role": "access / association",
     "money_in": [],
@@ -1549,9 +1545,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 114,
+     "rank": 115,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 100
+     "rank_without_hubs": 101
     },
     "role": "access / association",
     "money_in": [],
@@ -1622,9 +1618,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0021,
+     "betweenness": 0.002,
      "rank": 73,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 41
     },
     "role": "access / association",
@@ -1694,9 +1690,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 113,
+     "rank": 114,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 99
+     "rank_without_hubs": 100
     },
     "role": "access / association",
     "money_in": [],
@@ -1766,9 +1762,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 115,
+     "rank": 116,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 101
+     "rank_without_hubs": 102
     },
     "role": "access / association",
     "money_in": [],
@@ -1840,9 +1836,9 @@
      "documented": 12
     },
     "centrality": {
-     "betweenness": 0.0722,
+     "betweenness": 0.0705,
      "rank": 2,
-     "betweenness_without_hubs": 0.0036,
+     "betweenness_without_hubs": 0.0035,
      "rank_without_hubs": 35
     },
     "role": "access / association",
@@ -1853,7 +1849,7 @@
      "Todd Blanche – Pam Bondi – Donald Trump"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -1938,9 +1934,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 103,
+     "rank": 104,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 81
+     "rank_without_hubs": 82
     },
     "role": "access / association",
     "money_in": [],
@@ -2021,9 +2017,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 125,
+     "rank": 126,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 113
+     "rank_without_hubs": 114
     },
     "role": "access / association",
     "money_in": [
@@ -2096,10 +2092,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0067,
+     "betweenness": 0.0066,
      "rank": 62,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 89
+     "rank_without_hubs": 90
     },
     "role": "access / association",
     "money_in": [],
@@ -2172,9 +2168,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 99,
+     "rank": 100,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 74
+     "rank_without_hubs": 75
     },
     "role": "access / association",
     "money_in": [
@@ -2246,9 +2242,9 @@
      "documented": 8
     },
     "centrality": {
-     "betweenness": 0.0065,
+     "betweenness": 0.0063,
      "rank": 64,
-     "betweenness_without_hubs": 0.0642,
+     "betweenness_without_hubs": 0.0628,
      "rank_without_hubs": 2
     },
     "role": "official / agency",
@@ -2258,10 +2254,10 @@
     ],
     "loops": [
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments",
-     "Ehud Barak – Carbyne (Reporty) – Ergo Ltd."
+     "Ergo Ltd. – Carbyne (Reporty) – Ehud Barak"
     ],
     "succession": {
-     "broker_cover": 0.076,
+     "broker_cover": 0.075,
      "broker_money_cover": 0.136,
      "operations_cover": 0.08
     },
@@ -2327,9 +2323,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.027,
+     "betweenness": 0.0264,
      "rank": 12,
-     "betweenness_without_hubs": 0.0161,
+     "betweenness_without_hubs": 0.0156,
      "rank_without_hubs": 19
     },
     "role": "official / agency",
@@ -2339,7 +2335,7 @@
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -2412,10 +2408,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 45,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 90
+     "rank_without_hubs": 91
     },
     "role": "access / association",
     "money_in": [],
@@ -2491,9 +2487,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 107,
+     "rank": 108,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 91
+     "rank_without_hubs": 92
     },
     "role": "access / association",
     "money_in": [],
@@ -2567,9 +2563,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 108,
+     "rank": 109,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 92
+     "rank_without_hubs": 93
     },
     "role": "access / association",
     "money_in": [],
@@ -2642,9 +2638,9 @@
      "documented": 7
     },
     "centrality": {
-     "betweenness": 0.0137,
-     "rank": 24,
-     "betweenness_without_hubs": 0.0175,
+     "betweenness": 0.0133,
+     "rank": 25,
+     "betweenness_without_hubs": 0.0171,
      "rank_without_hubs": 16
     },
     "role": "access / association",
@@ -2656,7 +2652,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.023,
      "operations_cover": 0.08
     },
@@ -2717,16 +2713,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 109,
+     "rank": 110,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 93
+     "rank_without_hubs": 94
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -2784,10 +2780,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0066,
+     "betweenness": 0.0065,
      "rank": 63,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 94
+     "rank_without_hubs": 95
     },
     "role": "access / association",
     "money_in": [],
@@ -2860,9 +2856,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 110,
+     "rank": 111,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 95
+     "rank_without_hubs": 96
     },
     "role": "access / association",
     "money_in": [],
@@ -2928,9 +2924,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 111,
+     "rank": 112,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 96
+     "rank_without_hubs": 97
     },
     "role": "access / association",
     "money_in": [],
@@ -2996,9 +2992,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 191,
+     "rank": 192,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 186
+     "rank_without_hubs": 187
     },
     "role": "access / association",
     "money_in": [],
@@ -3063,10 +3059,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0337,
+     "betweenness": 0.0329,
      "rank": 6,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 71
+     "rank_without_hubs": 72
     },
     "role": "finance",
     "money_in": [],
@@ -3133,9 +3129,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 263,
+     "rank": 264,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 260
+     "rank_without_hubs": 261
     },
     "role": "access / association",
     "money_in": [],
@@ -3204,9 +3200,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 156,
+     "rank": 157,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 147
+     "rank_without_hubs": 148
     },
     "role": "access / association",
     "money_in": [],
@@ -3277,9 +3273,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 116,
+     "rank": 117,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 102
+     "rank_without_hubs": 103
     },
     "role": "access / association",
     "money_in": [],
@@ -3346,10 +3342,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 47,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 82
+     "rank_without_hubs": 83
     },
     "role": "access / association",
     "money_in": [],
@@ -3429,7 +3425,7 @@
     },
     "centrality": {
      "betweenness": 0.0001,
-     "rank": 87,
+     "rank": 88,
      "betweenness_without_hubs": 0.0002,
      "rank_without_hubs": 62
     },
@@ -3508,7 +3504,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.114,
      "operations_cover": 0.0
     },
@@ -3573,7 +3569,7 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0328,
+     "betweenness": 0.032,
      "rank": 7,
      "betweenness_without_hubs": 0.0019,
      "rank_without_hubs": 48
@@ -3649,7 +3645,7 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0204,
+     "betweenness": 0.02,
      "rank": 17,
      "betweenness_without_hubs": 0.0009,
      "rank_without_hubs": 57
@@ -3745,15 +3741,15 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 50.8,
-     "drop": 44.3,
+     "P": 50.9,
+     "drop": 44.2,
      "verdict": "Badly crippled",
      "pc": [
       0.614,
       0.943,
       0.985,
       0.968,
-      0.969,
+      0.971,
       0.869
      ],
      "deal": 0,
@@ -3794,9 +3790,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 204,
+     "rank": 205,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 200
+     "rank_without_hubs": 201
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -3828,7 +3824,7 @@
       0.986,
       0.99,
       0.988,
-      0.988,
+      0.989,
       0.981
      ],
      "deal": 92,
@@ -3863,9 +3859,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 209,
+     "rank": 210,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 205
+     "rank_without_hubs": 206
     },
     "role": "official / agency",
     "money_in": [],
@@ -4001,10 +3997,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 48,
-     "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 78
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 79
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -4042,7 +4038,7 @@
       0.989,
       0.99,
       0.989,
-      0.986,
+      0.987,
       0.986
      ],
      "deal": 97,
@@ -4082,7 +4078,7 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0115,
+     "betweenness": 0.0113,
      "rank": 33,
      "betweenness_without_hubs": 0.0007,
      "rank_without_hubs": 58
@@ -4094,7 +4090,7 @@
      "Todd Blanche – Pam Bondi – Donald Trump"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4159,7 +4155,7 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0274,
+     "betweenness": 0.0268,
      "rank": 9,
      "betweenness_without_hubs": 0.0007,
      "rank_without_hubs": 59
@@ -4172,7 +4168,7 @@
      "Todd Blanche – Pam Bondi – Donald Trump"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4238,9 +4234,9 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0269,
+     "betweenness": 0.0262,
      "rank": 13,
-     "betweenness_without_hubs": 0.0011,
+     "betweenness_without_hubs": 0.001,
      "rank_without_hubs": 56
     },
     "role": "official / agency",
@@ -4248,7 +4244,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -4589,9 +4585,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 187,
+     "rank": 188,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 180
+     "rank_without_hubs": 181
     },
     "role": "official / agency",
     "money_in": [],
@@ -4856,9 +4852,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 117,
+     "rank": 118,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 103
+     "rank_without_hubs": 104
     },
     "role": "official / agency",
     "money_in": [],
@@ -4926,9 +4922,9 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 49,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 38
     },
     "role": "official / agency",
@@ -5073,9 +5069,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 168,
+     "rank": 169,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 160
+     "rank_without_hubs": 161
     },
     "role": "media / reputation",
     "money_in": [],
@@ -5144,9 +5140,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 148,
+     "rank": 149,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 138
+     "rank_without_hubs": 139
     },
     "role": "media / reputation",
     "money_in": [],
@@ -5213,9 +5209,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0071,
+     "betweenness": 0.007,
      "rank": 41,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 36
     },
     "role": "operations / logistics",
@@ -5227,7 +5223,7 @@
     ],
     "money_out": [],
     "loops": [
-     "Les Wexner – Maple Inc. – 9 East 71st Street"
+     "9 East 71st Street – Maple Inc. – Les Wexner"
     ],
     "succession": {
      "broker_cover": 0.044,
@@ -5291,10 +5287,10 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0133,
-     "rank": 30,
+     "betweenness": 0.013,
+     "rank": 31,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 68
+     "rank_without_hubs": 66
     },
     "role": "operations / logistics",
     "money_in": [
@@ -5366,9 +5362,9 @@
      "documented": 10
     },
     "centrality": {
-     "betweenness": 0.0435,
+     "betweenness": 0.0425,
      "rank": 4,
-     "betweenness_without_hubs": 0.0268,
+     "betweenness_without_hubs": 0.0261,
      "rank_without_hubs": 11
     },
     "role": "operations / logistics",
@@ -5384,7 +5380,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.057,
+     "broker_cover": 0.056,
      "broker_money_cover": 0.114,
      "operations_cover": 0.04
     },
@@ -5444,9 +5440,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.01,
+     "betweenness": 0.0097,
      "rank": 36,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 39
     },
     "role": "operations / logistics",
@@ -5509,19 +5505,19 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 10,
+     "total": 11,
      "verified": 9,
-     "reported": 1,
+     "reported": 2,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0271,
+     "betweenness": 0.0264,
      "rank": 11,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 69
+     "rank_without_hubs": 67
     },
     "role": "operations / logistics",
     "money_in": [
@@ -5539,7 +5535,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 12,
+     "distinct": 13,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -5593,9 +5589,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 118,
+     "rank": 119,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 104
+     "rank_without_hubs": 105
     },
     "role": "operations / logistics",
     "money_in": [
@@ -5650,9 +5646,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 2,
+     "total": 3,
      "verified": 2,
-     "reported": 0,
+     "reported": 1,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -5676,7 +5672,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 3,
+     "distinct": 4,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -5730,9 +5726,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0072,
+     "betweenness": 0.0071,
      "rank": 40,
-     "betweenness_without_hubs": 0.0085,
+     "betweenness_without_hubs": 0.0083,
      "rank_without_hubs": 22
     },
     "role": "operations / logistics",
@@ -5742,7 +5738,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -5935,9 +5931,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0133,
-     "rank": 31,
-     "betweenness_without_hubs": 0.0013,
+     "betweenness": 0.0129,
+     "rank": 32,
+     "betweenness_without_hubs": 0.0012,
      "rank_without_hubs": 55
     },
     "role": "official / agency",
@@ -6082,9 +6078,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 119,
+     "rank": 120,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 105
+     "rank_without_hubs": 106
     },
     "role": "official / agency",
     "money_in": [],
@@ -6156,9 +6152,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 120,
+     "rank": 121,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 106
+     "rank_without_hubs": 107
     },
     "role": "official / agency",
     "money_in": [],
@@ -6356,9 +6352,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 121,
+     "rank": 122,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 107
+     "rank_without_hubs": 108
     },
     "role": "official / agency",
     "money_in": [],
@@ -6430,8 +6426,8 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0153,
-     "rank": 22,
+     "betweenness": 0.015,
+     "rank": 23,
      "betweenness_without_hubs": 0.0013,
      "rank_without_hubs": 54
     },
@@ -6633,9 +6629,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 122,
+     "rank": 123,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 108
+     "rank_without_hubs": 109
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -6710,7 +6706,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 86,
-     "betweenness_without_hubs": 0.0165,
+     "betweenness_without_hubs": 0.016,
      "rank_without_hubs": 18
     },
     "role": "operations / logistics",
@@ -6718,7 +6714,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.114,
      "operations_cover": 0.0
     },
@@ -6930,9 +6926,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 123,
+     "rank": 124,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 109
+     "rank_without_hubs": 110
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7001,9 +6997,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 124,
+     "rank": 125,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 110
+     "rank_without_hubs": 111
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7068,10 +7064,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0032,
+     "betweenness": 0.0031,
      "rank": 71,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 111
+     "rank_without_hubs": 112
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7146,10 +7142,10 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0069,
+     "betweenness": 0.0068,
      "rank": 42,
-     "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 79
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 80
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7205,18 +7201,18 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 17,
-     "verified": 15,
+     "total": 18,
+     "verified": 16,
      "reported": 1,
      "to_verify": 1,
      "withheld": 0,
      "not_established": 0,
-     "documented": 11
+     "documented": 12
     },
     "centrality": {
-     "betweenness": 0.0369,
+     "betweenness": 0.0393,
      "rank": 5,
-     "betweenness_without_hubs": 0.0394,
+     "betweenness_without_hubs": 0.0399,
      "rank_without_hubs": 5
     },
     "role": "back office / vehicle",
@@ -7232,20 +7228,22 @@
      "HBRK Associates: Darren K. Indyke PLLC account addressed c/o HBRK; three wires, $114,741"
     ],
     "loops": [
-     "Darren Indyke – Carbyne (Reporty) – Ergo Ltd. – Southern Trust Company",
-     "Darren Indyke – HBRK Associates – Southern Trust Company",
-     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Southern Trust Company",
-     "Darren Indyke – TD Bank – Richard Kahn – Southern Trust Company"
+     "Darren Indyke – HBRK Associates – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – The Butterfly Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Jeffrey E. Epstein 2018 Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – TD Bank – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Southern Trust Company – Richard Kahn – Estate of Jeffrey Epstein"
     ],
     "succession": {
-     "broker_cover": 0.076,
+     "broker_cover": 0.075,
      "broker_money_cover": 0.091,
      "operations_cover": 0.08
     },
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 14,
+     "distinct": 15,
      "doj_efta": 7
     },
     "open_leads": [
@@ -7289,18 +7287,18 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 21,
-     "verified": 18,
+     "total": 22,
+     "verified": 19,
      "reported": 2,
      "to_verify": 1,
      "withheld": 0,
      "not_established": 0,
-     "documented": 8
+     "documented": 9
     },
     "centrality": {
-     "betweenness": 0.0122,
-     "rank": 32,
-     "betweenness_without_hubs": 0.0251,
+     "betweenness": 0.0151,
+     "rank": 22,
+     "betweenness_without_hubs": 0.0252,
      "rank_without_hubs": 12
     },
     "role": "back office / vehicle",
@@ -7314,20 +7312,22 @@
      "HBRK Associates: his accounting firm; sole authorised signer on its 2019 TD Bank accounts"
     ],
     "loops": [
-     "Richard Kahn – HBRK Associates – Southern Trust Company",
-     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Southern Trust Company",
+     "Southern Trust Company – HBRK Associates – Richard Kahn",
+     "Darren Indyke – HBRK Associates – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – The Butterfly Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Estate of Jeffrey Epstein",
      "Jeffrey E. Epstein 2018 Trust – Jeffrey E. Epstein 2019 Trust – Richard Kahn",
-     "Darren Indyke – TD Bank – Richard Kahn – Southern Trust Company"
+     "Darren Indyke – Jeffrey E. Epstein 2018 Trust – Richard Kahn – Estate of Jeffrey Epstein"
     ],
     "succession": {
-     "broker_cover": 0.076,
+     "broker_cover": 0.075,
      "broker_money_cover": 0.091,
      "operations_cover": 0.08
     },
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 20,
+     "distinct": 21,
      "doj_efta": 12
     },
     "open_leads": [
@@ -7383,7 +7383,7 @@
      "betweenness": 0.0001,
      "rank": 90,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 112
+     "rank_without_hubs": 113
     },
     "role": "access / association",
     "money_in": [],
@@ -7392,7 +7392,7 @@
      "Todd Blanche – Donald Trump – Melania Trump – Ghislaine Maxwell"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -7656,10 +7656,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 50,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 114
+     "rank_without_hubs": 115
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -7679,8 +7679,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 93.4,
-     "drop": 1.7,
+     "P": 93.5,
+     "drop": 1.6,
      "verdict": "Runs as documented",
      "pc": [
       0.979,
@@ -7725,9 +7725,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 127,
+     "rank": 128,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 116
+     "rank_without_hubs": 117
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7794,9 +7794,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 126,
+     "rank": 127,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 115
+     "rank_without_hubs": 116
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -7862,9 +7862,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 128,
+     "rank": 129,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 117
+     "rank_without_hubs": 118
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -8178,10 +8178,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 51,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 75
+     "rank_without_hubs": 76
     },
     "role": "official / agency",
     "money_in": [],
@@ -8249,9 +8249,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 129,
+     "rank": 130,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 118
+     "rank_without_hubs": 119
     },
     "role": "finance",
     "money_in": [
@@ -8262,7 +8262,7 @@
      "9 East 71st Street: holding entity"
     ],
     "loops": [
-     "Les Wexner – Maple Inc. – 9 East 71st Street"
+     "9 East 71st Street – Maple Inc. – Les Wexner"
     ],
     "succession": {
      "broker_cover": 0.044,
@@ -8325,9 +8325,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 130,
+     "rank": 131,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 119
+     "rank_without_hubs": 120
     },
     "role": "finance",
     "money_in": [],
@@ -8396,9 +8396,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 131,
+     "rank": 132,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 120
+     "rank_without_hubs": 121
     },
     "role": "finance",
     "money_in": [],
@@ -8467,9 +8467,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 132,
+     "rank": 133,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 121
+     "rank_without_hubs": 122
     },
     "role": "finance",
     "money_in": [],
@@ -8538,9 +8538,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 133,
+     "rank": 134,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 122
+     "rank_without_hubs": 123
     },
     "role": "back office / vehicle",
     "money_in": [],
@@ -8605,9 +8605,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0097,
+     "betweenness": 0.0095,
      "rank": 37,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 40
     },
     "role": "back office / vehicle",
@@ -8676,9 +8676,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0105,
+     "betweenness": 0.0102,
      "rank": 35,
-     "betweenness_without_hubs": 0.0447,
+     "betweenness_without_hubs": 0.0435,
      "rank_without_hubs": 4
     },
     "role": "operations / logistics",
@@ -8693,7 +8693,7 @@
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments"
     ],
     "succession": {
-     "broker_cover": 0.101,
+     "broker_cover": 0.1,
      "broker_money_cover": 0.159,
      "operations_cover": 0.08
     },
@@ -8753,9 +8753,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 134,
+     "rank": 135,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 123
+     "rank_without_hubs": 124
     },
     "role": "access / association",
     "money_in": [],
@@ -8826,7 +8826,7 @@
      "betweenness": 0.0,
      "rank": 96,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 76
+     "rank_without_hubs": 77
     },
     "role": "access / association",
     "money_in": [
@@ -8897,9 +8897,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 135,
+     "rank": 136,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 124
+     "rank_without_hubs": 125
     },
     "role": "access / association",
     "money_in": [],
@@ -8968,9 +8968,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 136,
+     "rank": 137,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 125
+     "rank_without_hubs": 126
     },
     "role": "access / association",
     "money_in": [],
@@ -9039,8 +9039,8 @@
     },
     "centrality": {
      "betweenness": 0.0001,
-     "rank": 88,
-     "betweenness_without_hubs": 0.0015,
+     "rank": 89,
+     "betweenness_without_hubs": 0.0014,
      "rank_without_hubs": 51
     },
     "role": "official / agency",
@@ -9052,7 +9052,7 @@
      "Ehud Barak – State of Israel (government) – Israel's Permanent Mission to the UN – 301 East 66th Street apartments"
     ],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.045,
      "operations_cover": 0.0
     },
@@ -9111,9 +9111,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 137,
+     "rank": 138,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 126
+     "rank_without_hubs": 127
     },
     "role": "access / association",
     "money_in": [
@@ -9183,10 +9183,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0136,
-     "rank": 26,
+     "betweenness": 0.0133,
+     "rank": 27,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 83
+     "rank_without_hubs": 84
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -9253,9 +9253,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 138,
+     "rank": 139,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 127
+     "rank_without_hubs": 128
     },
     "role": "access / association",
     "money_in": [],
@@ -9323,16 +9323,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 139,
+     "rank": 140,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 128
+     "rank_without_hubs": 129
     },
     "role": "sponsor / payer",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.023,
      "operations_cover": 0.08
     },
@@ -9400,7 +9400,7 @@
     "centrality": {
      "betweenness": 0.0002,
      "rank": 80,
-     "betweenness_without_hubs": 0.0077,
+     "betweenness_without_hubs": 0.0075,
      "rank_without_hubs": 25
     },
     "role": "sponsor / payer",
@@ -9410,7 +9410,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.07,
+     "broker_cover": 0.069,
      "broker_money_cover": 0.068,
      "operations_cover": 0.08
     },
@@ -9604,9 +9604,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 140,
+     "rank": 141,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 129
+     "rank_without_hubs": 130
     },
     "role": "access / association",
     "money_in": [],
@@ -9672,9 +9672,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 141,
+     "rank": 142,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 130
+     "rank_without_hubs": 131
     },
     "role": "access / association",
     "money_in": [],
@@ -9742,7 +9742,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 83,
-     "betweenness_without_hubs": 0.0057,
+     "betweenness_without_hubs": 0.0056,
      "rank_without_hubs": 27
     },
     "role": "sponsor / payer",
@@ -9753,7 +9753,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -9813,9 +9813,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 142,
+     "rank": 143,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 131
+     "rank_without_hubs": 132
     },
     "role": "finance",
     "money_in": [],
@@ -9885,9 +9885,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 143,
+     "rank": 144,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 132
+     "rank_without_hubs": 133
     },
     "role": "finance",
     "money_in": [],
@@ -9952,10 +9952,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 52,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 133
+     "rank_without_hubs": 134
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10025,9 +10025,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 144,
+     "rank": 145,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 134
+     "rank_without_hubs": 135
     },
     "role": "media / reputation",
     "money_in": [
@@ -10095,9 +10095,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 145,
+     "rank": 146,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 135
+     "rank_without_hubs": 136
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10165,9 +10165,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 146,
+     "rank": 147,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 136
+     "rank_without_hubs": 137
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10233,9 +10233,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 147,
+     "rank": 148,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 137
+     "rank_without_hubs": 138
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10300,10 +10300,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 53,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 84
+     "rank_without_hubs": 85
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10370,9 +10370,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 166,
+     "rank": 167,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 158
+     "rank_without_hubs": 159
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10439,9 +10439,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 149,
+     "rank": 150,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 139
+     "rank_without_hubs": 140
     },
     "role": "media / reputation",
     "money_in": [],
@@ -10512,9 +10512,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 151,
+     "rank": 152,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 141
+     "rank_without_hubs": 142
     },
     "role": "access / association",
     "money_in": [
@@ -10584,7 +10584,7 @@
      "betweenness": 0.002,
      "rank": 74,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 142
+     "rank_without_hubs": 143
     },
     "role": "finance",
     "money_in": [
@@ -10660,8 +10660,8 @@
     },
     "centrality": {
      "betweenness": 0.0001,
-     "rank": 89,
-     "betweenness_without_hubs": 0.0085,
+     "rank": 87,
+     "betweenness_without_hubs": 0.0083,
      "rank_without_hubs": 21
     },
     "role": "finance",
@@ -10673,7 +10673,7 @@
      "Coinbase – Brock Pierce – Blockchain Capital"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.045,
      "operations_cover": 0.0
     },
@@ -10732,9 +10732,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 152,
+     "rank": 153,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 143
+     "rank_without_hubs": 144
     },
     "role": "finance",
     "money_in": [
@@ -10806,8 +10806,8 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 100,
-     "betweenness_without_hubs": 0.0002,
+     "rank": 101,
+     "betweenness_without_hubs": 0.0001,
      "rank_without_hubs": 65
     },
     "role": "finance",
@@ -10821,7 +10821,7 @@
      "Blockstream – Joi Ito – Kyara Investments III"
     ],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.114,
      "operations_cover": 0.0
     },
@@ -10880,9 +10880,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 153,
+     "rank": 154,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 144
+     "rank_without_hubs": 145
     },
     "role": "finance",
     "money_in": [
@@ -10950,9 +10950,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 154,
+     "rank": 155,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 145
+     "rank_without_hubs": 146
     },
     "role": "access / association",
     "money_in": [
@@ -11023,9 +11023,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 155,
+     "rank": 156,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 146
+     "rank_without_hubs": 147
     },
     "role": "access / association",
     "money_in": [],
@@ -11097,7 +11097,7 @@
     "centrality": {
      "betweenness": 0.0004,
      "rank": 78,
-     "betweenness_without_hubs": 0.0054,
+     "betweenness_without_hubs": 0.0052,
      "rank_without_hubs": 31
     },
     "role": "official / agency",
@@ -11226,8 +11226,8 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 101,
-     "betweenness_without_hubs": 0.0029,
+     "rank": 102,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 42
     },
     "role": "access / association",
@@ -11303,9 +11303,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 157,
+     "rank": 158,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 149
+     "rank_without_hubs": 150
     },
     "role": "access / association",
     "money_in": [],
@@ -11376,10 +11376,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 54,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 148
+     "rank_without_hubs": 149
     },
     "role": "access / association",
     "money_in": [
@@ -11447,9 +11447,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 150,
+     "rank": 151,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 140
+     "rank_without_hubs": 141
     },
     "role": "media / reputation",
     "money_in": [],
@@ -11942,16 +11942,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 158,
+     "rank": 159,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 150
+     "rank_without_hubs": 151
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.023,
      "operations_cover": 0.08
     },
@@ -12017,9 +12017,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0033,
+     "betweenness": 0.0032,
      "rank": 69,
-     "betweenness_without_hubs": 0.0039,
+     "betweenness_without_hubs": 0.0037,
      "rank_without_hubs": 34
     },
     "role": "access / association",
@@ -12029,7 +12029,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.023,
      "operations_cover": 0.08
     },
@@ -12088,9 +12088,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 159,
+     "rank": 160,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 151
+     "rank_without_hubs": 152
     },
     "role": "access / association",
     "money_in": [],
@@ -12164,9 +12164,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 160,
+     "rank": 161,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 152
+     "rank_without_hubs": 153
     },
     "role": "access / association",
     "money_in": [],
@@ -12232,9 +12232,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 161,
+     "rank": 162,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 153
+     "rank_without_hubs": 154
     },
     "role": "access / association",
     "money_in": [],
@@ -12367,9 +12367,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 162,
+     "rank": 163,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 154
+     "rank_without_hubs": 155
     },
     "role": "access / association",
     "money_in": [],
@@ -12437,7 +12437,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 84,
-     "betweenness_without_hubs": 0.0057,
+     "betweenness_without_hubs": 0.0056,
      "rank_without_hubs": 28
     },
     "role": "access / association",
@@ -12447,7 +12447,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.045,
      "operations_cover": 0.0
     },
@@ -12507,9 +12507,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 163,
+     "rank": 164,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 155
+     "rank_without_hubs": 156
     },
     "role": "access / association",
     "money_in": [],
@@ -12705,9 +12705,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 164,
+     "rank": 165,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 156
+     "rank_without_hubs": 157
     },
     "role": "media / reputation",
     "money_in": [],
@@ -12770,9 +12770,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 165,
+     "rank": 166,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 157
+     "rank_without_hubs": 158
     },
     "role": "media / reputation",
     "money_in": [],
@@ -12835,9 +12835,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 167,
+     "rank": 168,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 159
+     "rank_without_hubs": 160
     },
     "role": "official / agency",
     "money_in": [],
@@ -12907,9 +12907,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 169,
+     "rank": 170,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 161
+     "rank_without_hubs": 162
     },
     "role": "official / agency",
     "money_in": [],
@@ -12972,9 +12972,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 170,
+     "rank": 171,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 162
+     "rank_without_hubs": 163
     },
     "role": "official / agency",
     "money_in": [],
@@ -13027,9 +13027,9 @@
     "kb_maxwell": null,
     "path_epstein": [],
     "ties": {
-     "total": 2,
+     "total": 3,
      "verified": 2,
-     "reported": 0,
+     "reported": 1,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -13037,9 +13037,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 171,
+     "rank": 172,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 163
+     "rank_without_hubs": 164
     },
     "role": "official / agency",
     "money_in": [],
@@ -13053,7 +13053,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 1,
+     "distinct": 2,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -13105,9 +13105,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 172,
+     "rank": 173,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 164
+     "rank_without_hubs": 165
     },
     "role": "access / association",
     "money_in": [
@@ -13175,9 +13175,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 173,
+     "rank": 174,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 165
+     "rank_without_hubs": 166
     },
     "role": "access / association",
     "money_in": [],
@@ -13251,9 +13251,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 174,
+     "rank": 175,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 166
+     "rank_without_hubs": 167
     },
     "role": "access / association",
     "money_in": [
@@ -13323,9 +13323,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 175,
+     "rank": 176,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 167
+     "rank_without_hubs": 168
     },
     "role": "access / association",
     "money_in": [
@@ -13393,9 +13393,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 176,
+     "rank": 177,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 168
+     "rank_without_hubs": 169
     },
     "role": "access / association",
     "money_in": [
@@ -13463,9 +13463,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 177,
+     "rank": 178,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 169
+     "rank_without_hubs": 170
     },
     "role": "access / association",
     "money_in": [
@@ -13533,9 +13533,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 178,
+     "rank": 179,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 170
+     "rank_without_hubs": 171
     },
     "role": "access / association",
     "money_in": [],
@@ -13609,9 +13609,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 179,
+     "rank": 180,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 171
+     "rank_without_hubs": 172
     },
     "role": "access / association",
     "money_in": [],
@@ -13679,9 +13679,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 180,
+     "rank": 181,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 172
+     "rank_without_hubs": 173
     },
     "role": "access / association",
     "money_in": [],
@@ -13952,9 +13952,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 181,
+     "rank": 182,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 173
+     "rank_without_hubs": 174
     },
     "role": "access / association",
     "money_in": [],
@@ -14020,9 +14020,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 182,
+     "rank": 183,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 174
+     "rank_without_hubs": 175
     },
     "role": "access / association",
     "money_in": [],
@@ -14088,9 +14088,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 183,
+     "rank": 184,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 175
+     "rank_without_hubs": 176
     },
     "role": "access / association",
     "money_in": [],
@@ -14166,7 +14166,7 @@
      "betweenness": 0.003,
      "rank": 72,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 176
+     "rank_without_hubs": 177
     },
     "role": "access / association",
     "money_in": [],
@@ -14232,9 +14232,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 184,
+     "rank": 185,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 177
+     "rank_without_hubs": 178
     },
     "role": "media / reputation",
     "money_in": [],
@@ -14300,9 +14300,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 185,
+     "rank": 186,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 178
+     "rank_without_hubs": 179
     },
     "role": "official / agency",
     "money_in": [],
@@ -14365,9 +14365,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 186,
+     "rank": 187,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 179
+     "rank_without_hubs": 180
     },
     "role": "access / association",
     "money_in": [],
@@ -14499,9 +14499,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 188,
+     "rank": 189,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 181
+     "rank_without_hubs": 182
     },
     "role": "official / agency",
     "money_in": [],
@@ -14633,9 +14633,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 189,
+     "rank": 190,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 182
+     "rank_without_hubs": 183
     },
     "role": "official / agency",
     "money_in": [],
@@ -14715,10 +14715,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 60,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 183
+     "rank_without_hubs": 184
     },
     "role": "official / agency",
     "money_in": [],
@@ -14784,10 +14784,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0067,
      "rank": 43,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 77
+     "rank_without_hubs": 78
     },
     "role": "official / agency",
     "money_in": [],
@@ -14852,10 +14852,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 61,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 184
+     "rank_without_hubs": 185
     },
     "role": "official / agency",
     "money_in": [],
@@ -14923,9 +14923,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 190,
+     "rank": 191,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 185
+     "rank_without_hubs": 186
     },
     "role": "official / agency",
     "money_in": [],
@@ -14993,9 +14993,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 192,
+     "rank": 193,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 187
+     "rank_without_hubs": 188
     },
     "role": "official / agency",
     "money_in": [],
@@ -15451,9 +15451,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 193,
+     "rank": 194,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 188
+     "rank_without_hubs": 189
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -15527,9 +15527,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 194,
+     "rank": 195,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 189
+     "rank_without_hubs": 190
     },
     "role": "sponsor / payer",
     "money_in": [],
@@ -15595,9 +15595,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 195,
+     "rank": 196,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 190
+     "rank_without_hubs": 191
     },
     "role": "official / agency",
     "money_in": [],
@@ -15666,9 +15666,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 196,
+     "rank": 197,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 191
+     "rank_without_hubs": 192
     },
     "role": "official / agency",
     "money_in": [],
@@ -15734,9 +15734,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 197,
+     "rank": 198,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 192
+     "rank_without_hubs": 193
     },
     "role": "finance",
     "money_in": [],
@@ -15802,9 +15802,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 198,
+     "rank": 199,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 193
+     "rank_without_hubs": 194
     },
     "role": "access / association",
     "money_in": [],
@@ -15935,9 +15935,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 199,
+     "rank": 200,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 194
+     "rank_without_hubs": 195
     },
     "role": "official / agency",
     "money_in": [],
@@ -15946,7 +15946,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.045,
      "operations_cover": 0.04
     },
@@ -15959,8 +15959,8 @@
     "open_leads": [],
     "functions": [],
     "whatif": {
-     "P": 94.9,
-     "drop": 0.2,
+     "P": 95.0,
+     "drop": 0.1,
      "verdict": "Runs as documented",
      "pc": [
       0.99,
@@ -16005,9 +16005,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 200,
+     "rank": 201,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 195
+     "rank_without_hubs": 196
     },
     "role": "official / agency",
     "money_in": [],
@@ -16073,9 +16073,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 201,
+     "rank": 202,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 196
+     "rank_without_hubs": 197
     },
     "role": "official / agency",
     "money_in": [],
@@ -16149,9 +16149,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 202,
+     "rank": 203,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 197
+     "rank_without_hubs": 198
     },
     "role": "finance",
     "money_in": [],
@@ -16274,9 +16274,9 @@
      "Jeffrey Epstein"
     ],
     "ties": {
-     "total": 2,
-     "verified": 2,
-     "reported": 0,
+     "total": 4,
+     "verified": 3,
+     "reported": 1,
      "to_verify": 0,
      "withheld": 0,
      "not_established": 0,
@@ -16284,9 +16284,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 203,
+     "rank": 204,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 198
+     "rank_without_hubs": 199
     },
     "role": "official / agency",
     "money_in": [],
@@ -16300,7 +16300,7 @@
     "flight": null,
     "volumes": {},
     "sources": {
-     "distinct": 3,
+     "distinct": 4,
      "doj_efta": 0
     },
     "open_leads": [],
@@ -16314,7 +16314,7 @@
       0.989,
       0.99,
       0.989,
-      0.986,
+      0.987,
       0.986
      ],
      "deal": 97,
@@ -16353,10 +16353,10 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0034,
+     "betweenness": 0.0033,
      "rank": 68,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 199
+     "rank_without_hubs": 200
     },
     "role": "official / agency",
     "money_in": [],
@@ -16386,7 +16386,7 @@
       0.989,
       0.99,
       0.989,
-      0.986,
+      0.987,
       0.986
      ],
      "deal": 97,
@@ -16424,9 +16424,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 205,
+     "rank": 206,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 201
+     "rank_without_hubs": 202
     },
     "role": "official / agency",
     "money_in": [],
@@ -16454,7 +16454,7 @@
       0.989,
       0.99,
       0.989,
-      0.986,
+      0.987,
       0.986
      ],
      "deal": 97,
@@ -16479,74 +16479,6 @@
     "kb_maxwell": 2,
     "path_epstein": [
      "Jack Goldberger",
-     "Jeffrey Epstein"
-    ],
-    "ties": {
-     "total": 1,
-     "verified": 1,
-     "reported": 0,
-     "to_verify": 0,
-     "withheld": 0,
-     "not_established": 0,
-     "documented": 1
-    },
-    "centrality": {
-     "betweenness": 0.0,
-     "rank": 206,
-     "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 202
-    },
-    "role": "official / agency",
-    "money_in": [],
-    "money_out": [],
-    "loops": [],
-    "succession": {
-     "broker_cover": 0.006,
-     "broker_money_cover": 0.0,
-     "operations_cover": 0.0
-    },
-    "flight": null,
-    "volumes": {},
-    "sources": {
-     "distinct": 1,
-     "doj_efta": 0
-    },
-    "open_leads": [],
-    "functions": [],
-    "whatif": {
-     "P": 93.6,
-     "drop": 1.5,
-     "verdict": "Runs as documented",
-     "pc": [
-      0.979,
-      0.989,
-      0.99,
-      0.989,
-      0.986,
-      0.986
-     ],
-     "deal": 97,
-     "account": 100,
-     "weakest": 0
-    }
-   }
-  },
-  {
-   "id": "sanchez",
-   "name": "Lilly Ann Sanchez",
-   "kind": "person",
-   "cluster": "justice",
-   "tier": "",
-   "note": "Former member of the SD Fla. US Attorney's office; negotiated for Epstein with Villafaña's supervisor.",
-   "scenes": [],
-   "apex": false,
-   "sponsor": false,
-   "qop": {
-    "tier": "Direct 1°",
-    "kb_epstein": 1,
-    "kb_maxwell": 2,
-    "path_epstein": [
-     "Lilly Ann Sanchez",
      "Jeffrey Epstein"
     ],
     "ties": {
@@ -16590,7 +16522,75 @@
       0.989,
       0.99,
       0.989,
-      0.986,
+      0.987,
+      0.986
+     ],
+     "deal": 97,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "sanchez",
+   "name": "Lilly Ann Sanchez",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Former member of the SD Fla. US Attorney's office; negotiated for Epstein with Villafaña's supervisor.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "Direct 1°",
+    "kb_epstein": 1,
+    "kb_maxwell": 2,
+    "path_epstein": [
+     "Lilly Ann Sanchez",
+     "Jeffrey Epstein"
+    ],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 1
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 208,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 204
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.006,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 93.6,
+     "drop": 1.5,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.979,
+      0.989,
+      0.99,
+      0.989,
+      0.987,
       0.986
      ],
      "deal": 97,
@@ -16625,9 +16625,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 208,
+     "rank": 209,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 204
+     "rank_without_hubs": 205
     },
     "role": "official / agency",
     "money_in": [],
@@ -16696,9 +16696,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 210,
+     "rank": 211,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 206
+     "rank_without_hubs": 207
     },
     "role": "official / agency",
     "money_in": [],
@@ -16949,16 +16949,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 211,
+     "rank": 212,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 207
+     "rank_without_hubs": 208
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17017,16 +17017,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 212,
+     "rank": 213,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 208
+     "rank_without_hubs": 209
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17085,16 +17085,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 213,
+     "rank": 214,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 209
+     "rank_without_hubs": 210
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17153,16 +17153,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 214,
+     "rank": 215,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 210
+     "rank_without_hubs": 211
     },
     "role": "finance",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17221,16 +17221,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 215,
+     "rank": 216,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 211
+     "rank_without_hubs": 212
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17292,16 +17292,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 216,
+     "rank": 217,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 212
+     "rank_without_hubs": 213
     },
     "role": "access / association",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.0,
      "operations_cover": 0.04
     },
@@ -17738,7 +17738,7 @@
     "centrality": {
      "betweenness": 0.0002,
      "rank": 81,
-     "betweenness_without_hubs": 0.0057,
+     "betweenness_without_hubs": 0.0056,
      "rank_without_hubs": 29
     },
     "role": "operations / logistics",
@@ -17809,9 +17809,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 217,
+     "rank": 218,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 213
+     "rank_without_hubs": 214
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -18008,7 +18008,7 @@
     "centrality": {
      "betweenness": 0.0006,
      "rank": 76,
-     "betweenness_without_hubs": 0.0083,
+     "betweenness_without_hubs": 0.008,
      "rank_without_hubs": 23
     },
     "role": "sponsor / payer",
@@ -18016,7 +18016,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.068,
      "operations_cover": 0.0
     },
@@ -18075,7 +18075,7 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0001,
+     "betweenness": 0.0,
      "rank": 92,
      "betweenness_without_hubs": 0.0017,
      "rank_without_hubs": 49
@@ -18089,7 +18089,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.023,
      "operations_cover": 0.04
     },
@@ -18273,7 +18273,7 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0001,
+     "betweenness": 0.0,
      "rank": 93,
      "betweenness_without_hubs": 0.0017,
      "rank_without_hubs": 50
@@ -18285,7 +18285,7 @@
      "Latham & Watkins – Edmond de Rothschild group – Edmond de Rothschild Holding S.A. – Kathryn Ruemmler"
     ],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.023,
      "operations_cover": 0.04
     },
@@ -18409,9 +18409,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 264,
+     "rank": 265,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 261
+     "rank_without_hubs": 262
     },
     "role": "finance",
     "money_in": [],
@@ -18481,9 +18481,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 218,
+     "rank": 219,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 214
+     "rank_without_hubs": 215
     },
     "role": "finance",
     "money_in": [],
@@ -18618,7 +18618,7 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0061,
+     "betweenness": 0.0059,
      "rank": 65,
      "betweenness_without_hubs": 0.0013,
      "rank_without_hubs": 53
@@ -18690,8 +18690,8 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 104,
-     "betweenness_without_hubs": 0.0029,
+     "rank": 105,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 43
     },
     "role": "finance",
@@ -18701,7 +18701,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.091,
      "operations_cover": 0.0
     },
@@ -18761,9 +18761,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 223,
+     "rank": 224,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 219
+     "rank_without_hubs": 220
     },
     "role": "finance",
     "money_in": [],
@@ -18831,9 +18831,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 220,
+     "rank": 221,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 216
+     "rank_without_hubs": 217
     },
     "role": "finance",
     "money_in": [],
@@ -18842,7 +18842,7 @@
      "Mary Erdoes – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -18901,16 +18901,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 221,
+     "rank": 222,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 217
+     "rank_without_hubs": 218
     },
     "role": "finance",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -18970,16 +18970,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 219,
+     "rank": 220,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 215
+     "rank_without_hubs": 216
     },
     "role": "finance",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -19039,16 +19039,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 222,
+     "rank": 223,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 218
+     "rank_without_hubs": 219
     },
     "role": "finance",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -19106,9 +19106,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0038,
+     "betweenness": 0.0037,
      "rank": 66,
-     "betweenness_without_hubs": 0.0365,
+     "betweenness_without_hubs": 0.0356,
      "rank_without_hubs": 6
     },
     "role": "finance",
@@ -19118,7 +19118,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.095,
+     "broker_cover": 0.094,
      "broker_money_cover": 0.136,
      "operations_cover": 0.04
     },
@@ -19179,9 +19179,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 224,
+     "rank": 225,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 220
+     "rank_without_hubs": 221
     },
     "role": "finance",
     "money_in": [],
@@ -19248,9 +19248,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 225,
+     "rank": 226,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 221
+     "rank_without_hubs": 222
     },
     "role": "finance",
     "money_in": [],
@@ -19389,9 +19389,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 226,
+     "rank": 227,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 222
+     "rank_without_hubs": 223
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -19522,9 +19522,9 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 55,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 44
     },
     "role": "back office / vehicle",
@@ -19536,7 +19536,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.045,
      "operations_cover": 0.04
     },
@@ -19596,9 +19596,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 227,
+     "rank": 228,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 223
+     "rank_without_hubs": 224
     },
     "role": "finance",
     "money_in": [
@@ -19607,7 +19607,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.045,
      "operations_cover": 0.04
     },
@@ -19666,9 +19666,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 228,
+     "rank": 229,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 224
+     "rank_without_hubs": 225
     },
     "role": "back office / vehicle",
     "money_in": [
@@ -19802,9 +19802,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 229,
+     "rank": 230,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 225
+     "rank_without_hubs": 226
     },
     "role": "finance",
     "money_in": [
@@ -19872,9 +19872,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 230,
+     "rank": 231,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 226
+     "rank_without_hubs": 227
     },
     "role": "finance",
     "money_in": [
@@ -19942,9 +19942,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 231,
+     "rank": 232,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 227
+     "rank_without_hubs": 228
     },
     "role": "finance",
     "money_in": [
@@ -20017,7 +20017,7 @@
      "betweenness": 0.0,
      "rank": 97,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 66
+     "rank_without_hubs": 68
     },
     "role": "finance",
     "money_in": [],
@@ -20026,7 +20026,7 @@
      "Richard Kahn: accounts closed 2019 (accountant)"
     ],
     "loops": [
-     "Darren Indyke – TD Bank – Richard Kahn – Southern Trust Company"
+     "Darren Indyke – TD Bank – Richard Kahn – Estate of Jeffrey Epstein"
     ],
     "succession": {
      "broker_cover": 0.044,
@@ -20088,9 +20088,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 232,
+     "rank": 233,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 228
+     "rank_without_hubs": 229
     },
     "role": "finance",
     "money_in": [
@@ -20102,7 +20102,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -20231,9 +20231,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 233,
+     "rank": 234,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 229
+     "rank_without_hubs": 230
     },
     "role": "finance",
     "money_in": [],
@@ -20298,9 +20298,9 @@
      "documented": 6
     },
     "centrality": {
-     "betweenness": 0.0082,
+     "betweenness": 0.008,
      "rank": 38,
-     "betweenness_without_hubs": 0.0291,
+     "betweenness_without_hubs": 0.0286,
      "rank_without_hubs": 9
     },
     "role": "back office / vehicle",
@@ -20314,9 +20314,11 @@
      "Darren Indyke: added to beneficiary roster, 9 Dec 2014",
      "Richard Kahn: added to beneficiary roster, 9 Dec 2014"
     ],
-    "loops": [],
+    "loops": [
+     "Darren Indyke – The Butterfly Trust – Richard Kahn – Estate of Jeffrey Epstein"
+    ],
     "succession": {
-     "broker_cover": 0.063,
+     "broker_cover": 0.062,
      "broker_money_cover": 0.091,
      "operations_cover": 0.04
     },
@@ -20375,9 +20377,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 234,
+     "rank": 235,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 230
+     "rank_without_hubs": 231
     },
     "role": "finance",
     "money_in": [
@@ -20445,9 +20447,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 235,
+     "rank": 236,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 231
+     "rank_without_hubs": 232
     },
     "role": "finance",
     "money_in": [
@@ -20515,9 +20517,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 236,
+     "rank": 237,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 232
+     "rank_without_hubs": 233
     },
     "role": "finance",
     "money_in": [
@@ -20585,9 +20587,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 237,
+     "rank": 238,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 233
+     "rank_without_hubs": 234
     },
     "role": "back office / vehicle",
     "money_in": [
@@ -20656,9 +20658,9 @@
      "documented": 5
     },
     "centrality": {
-     "betweenness": 0.0135,
-     "rank": 29,
-     "betweenness_without_hubs": 0.005,
+     "betweenness": 0.0132,
+     "rank": 30,
+     "betweenness_without_hubs": 0.0049,
      "rank_without_hubs": 32
     },
     "role": "back office / vehicle",
@@ -20671,12 +20673,12 @@
      "Achrayut Leumit Ltd.: $40,000 wire, 16 Mar 2017, at Bank Leumi"
     ],
     "loops": [
-     "HBRK Associates – Achrayut Leumit Ltd. – Bank Leumi le-Israel – Ergo Ltd. – Southern Trust Company",
-     "Darren Indyke – HBRK Associates – Southern Trust Company",
-     "Richard Kahn – HBRK Associates – Southern Trust Company"
+     "Southern Trust Company – HBRK Associates – Richard Kahn",
+     "Darren Indyke – HBRK Associates – Richard Kahn – Estate of Jeffrey Epstein",
+     "Southern Trust Company – Ergo Ltd. – Bank Leumi le-Israel – Achrayut Leumit Ltd. – HBRK Associates"
     ],
     "succession": {
-     "broker_cover": 0.057,
+     "broker_cover": 0.056,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -20743,9 +20745,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 253,
+     "rank": 254,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 249
+     "rank_without_hubs": 250
     },
     "role": "official / agency",
     "money_in": [
@@ -20822,9 +20824,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 254,
+     "rank": 255,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 250
+     "rank_without_hubs": 251
     },
     "role": "official / agency",
     "money_in": [
@@ -21344,7 +21346,7 @@
     "centrality": {
      "betweenness": 0.0005,
      "rank": 77,
-     "betweenness_without_hubs": 0.0182,
+     "betweenness_without_hubs": 0.0178,
      "rank_without_hubs": 15
     },
     "role": "back office / vehicle",
@@ -21355,10 +21357,11 @@
     ],
     "money_out": [],
     "loops": [
-     "Jeffrey E. Epstein 2018 Trust – Jeffrey E. Epstein 2019 Trust – Richard Kahn"
+     "Jeffrey E. Epstein 2018 Trust – Jeffrey E. Epstein 2019 Trust – Richard Kahn",
+     "Darren Indyke – Jeffrey E. Epstein 2018 Trust – Richard Kahn – Estate of Jeffrey Epstein"
     ],
     "succession": {
-     "broker_cover": 0.063,
+     "broker_cover": 0.062,
      "broker_money_cover": 0.068,
      "operations_cover": 0.08
     },
@@ -21419,7 +21422,7 @@
      "betweenness": 0.0,
      "rank": 98,
      "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 67
+     "rank_without_hubs": 69
     },
     "role": "back office / vehicle",
     "money_in": [
@@ -21428,11 +21431,11 @@
     ],
     "money_out": [],
     "loops": [
-     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Southern Trust Company",
+     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Estate of Jeffrey Epstein",
      "Jeffrey E. Epstein 2018 Trust – Jeffrey E. Epstein 2019 Trust – Richard Kahn"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.045,
      "operations_cover": 0.08
     },
@@ -21492,9 +21495,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 238,
+     "rank": 239,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 234
+     "rank_without_hubs": 235
     },
     "role": "operations / logistics",
     "money_in": [
@@ -21565,9 +21568,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 239,
+     "rank": 240,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 235
+     "rank_without_hubs": 236
     },
     "role": "finance",
     "money_in": [],
@@ -21633,9 +21636,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0136,
-     "rank": 27,
-     "betweenness_without_hubs": 0.0058,
+     "betweenness": 0.0133,
+     "rank": 28,
+     "betweenness_without_hubs": 0.0056,
      "rank_without_hubs": 26
     },
     "role": "finance",
@@ -21705,9 +21708,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 243,
+     "rank": 244,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 239
+     "rank_without_hubs": 240
     },
     "role": "finance",
     "money_in": [],
@@ -21777,9 +21780,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 241,
+     "rank": 242,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 237
+     "rank_without_hubs": 238
     },
     "role": "finance",
     "money_in": [],
@@ -21912,9 +21915,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 242,
+     "rank": 243,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 238
+     "rank_without_hubs": 239
     },
     "role": "finance",
     "money_in": [],
@@ -22042,9 +22045,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 278,
+     "rank": 279,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 275
+     "rank_without_hubs": 276
     },
     "role": "finance",
     "money_in": [
@@ -22115,9 +22118,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0204,
+     "betweenness": 0.0199,
      "rank": 18,
-     "betweenness_without_hubs": 0.0086,
+     "betweenness_without_hubs": 0.0084,
      "rank_without_hubs": 20
     },
     "role": "finance",
@@ -22191,9 +22194,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 240,
+     "rank": 241,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 236
+     "rank_without_hubs": 237
     },
     "role": "finance",
     "money_in": [],
@@ -22262,9 +22265,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 261,
+     "rank": 262,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 258
+     "rank_without_hubs": 259
     },
     "role": "finance",
     "money_in": [
@@ -23324,9 +23327,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 245,
+     "rank": 246,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 241
+     "rank_without_hubs": 242
     },
     "role": "access / association",
     "money_in": [],
@@ -23401,9 +23404,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 244,
+     "rank": 245,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 240
+     "rank_without_hubs": 241
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -23530,9 +23533,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 246,
+     "rank": 247,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 242
+     "rank_without_hubs": 243
     },
     "role": "finance",
     "money_in": [],
@@ -23598,9 +23601,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 247,
+     "rank": 248,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 243
+     "rank_without_hubs": 244
     },
     "role": "finance",
     "money_in": [],
@@ -23666,9 +23669,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 248,
+     "rank": 249,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 244
+     "rank_without_hubs": 245
     },
     "role": "finance",
     "money_in": [],
@@ -23734,9 +23737,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 102,
+     "rank": 103,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 85
+     "rank_without_hubs": 86
     },
     "role": "finance",
     "money_in": [],
@@ -23746,7 +23749,7 @@
      "Mary Erdoes – Project Molecule — proposed donor-advised fund – JPMorgan Chase"
     ],
     "succession": {
-     "broker_cover": 0.051,
+     "broker_cover": 0.05,
      "broker_money_cover": 0.068,
      "operations_cover": 0.04
     },
@@ -24175,9 +24178,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 249,
+     "rank": 250,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 245
+     "rank_without_hubs": 246
     },
     "role": "access / association",
     "money_in": [],
@@ -24425,8 +24428,8 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0136,
-     "rank": 28,
+     "betweenness": 0.0133,
+     "rank": 29,
      "betweenness_without_hubs": 0.0002,
      "rank_without_hubs": 64
     },
@@ -24495,9 +24498,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 250,
+     "rank": 251,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 246
+     "rank_without_hubs": 247
     },
     "role": "access / association",
     "money_in": [],
@@ -24564,9 +24567,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 251,
+     "rank": 252,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 247
+     "rank_without_hubs": 248
     },
     "role": "access / association",
     "money_in": [],
@@ -24954,16 +24957,16 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 252,
+     "rank": 253,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 248
+     "rank_without_hubs": 249
     },
     "role": "operations / logistics",
     "money_in": [],
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.038,
+     "broker_cover": 0.037,
      "broker_money_cover": 0.045,
      "operations_cover": 0.04
     },
@@ -25086,10 +25089,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 56,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 254
+     "rank_without_hubs": 255
     },
     "role": "back office / vehicle",
     "money_in": [
@@ -25294,9 +25297,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 260,
+     "rank": 261,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 257
+     "rank_without_hubs": 258
     },
     "role": "finance",
     "money_in": [
@@ -26435,9 +26438,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 255,
+     "rank": 256,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 251
+     "rank_without_hubs": 252
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -26509,9 +26512,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.022,
+     "betweenness": 0.0215,
      "rank": 15,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 45
     },
     "role": "back office / vehicle",
@@ -26585,9 +26588,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0271,
+     "betweenness": 0.0265,
      "rank": 10,
-     "betweenness_without_hubs": 0.0168,
+     "betweenness_without_hubs": 0.0163,
      "rank_without_hubs": 17
     },
     "role": "finance",
@@ -26600,7 +26603,7 @@
     ],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.091,
      "operations_cover": 0.0
     },
@@ -26660,9 +26663,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 257,
+     "rank": 258,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 253
+     "rank_without_hubs": 254
     },
     "role": "operations / logistics",
     "money_in": [
@@ -26731,9 +26734,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 258,
+     "rank": 259,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 255
+     "rank_without_hubs": 256
     },
     "role": "operations / logistics",
     "money_in": [
@@ -26803,9 +26806,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 259,
+     "rank": 260,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 256
+     "rank_without_hubs": 257
     },
     "role": "operations / logistics",
     "money_in": [
@@ -26873,9 +26876,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 256,
+     "rank": 257,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 252
+     "rank_without_hubs": 253
     },
     "role": "access / association",
     "money_in": [],
@@ -26947,9 +26950,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 262,
+     "rank": 263,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 259
+     "rank_without_hubs": 260
     },
     "role": "official / agency",
     "money_in": [],
@@ -27014,9 +27017,9 @@
      "documented": 3
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 57,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 46
     },
     "role": "access / association",
@@ -28320,9 +28323,9 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0074,
+     "betweenness": 0.0072,
      "rank": 39,
-     "betweenness_without_hubs": 0.033,
+     "betweenness_without_hubs": 0.0319,
      "rank_without_hubs": 7
     },
     "role": "access / association",
@@ -28335,12 +28338,11 @@
      "Bank Leumi le-Israel: account at branch 771"
     ],
     "loops": [
-     "HBRK Associates – Achrayut Leumit Ltd. – Bank Leumi le-Israel – Ergo Ltd. – Southern Trust Company",
-     "Ehud Barak – Carbyne (Reporty) – Ergo Ltd.",
-     "Darren Indyke – Carbyne (Reporty) – Ergo Ltd. – Southern Trust Company"
+     "Ergo Ltd. – Carbyne (Reporty) – Ehud Barak",
+     "Southern Trust Company – Ergo Ltd. – Bank Leumi le-Israel – Achrayut Leumit Ltd. – HBRK Associates"
     ],
     "succession": {
-     "broker_cover": 0.076,
+     "broker_cover": 0.075,
      "broker_money_cover": 0.114,
      "operations_cover": 0.08
     },
@@ -28402,7 +28404,7 @@
     "centrality": {
      "betweenness": 0.001,
      "rank": 75,
-     "betweenness_without_hubs": 0.0041,
+     "betweenness_without_hubs": 0.004,
      "rank_without_hubs": 33
     },
     "role": "finance",
@@ -28413,7 +28415,7 @@
     ],
     "money_out": [],
     "loops": [
-     "HBRK Associates – Achrayut Leumit Ltd. – Bank Leumi le-Israel – Ergo Ltd. – Southern Trust Company"
+     "Southern Trust Company – Ergo Ltd. – Bank Leumi le-Israel – Achrayut Leumit Ltd. – HBRK Associates"
     ],
     "succession": {
      "broker_cover": 0.019,
@@ -28489,7 +28491,7 @@
      "Bank Leumi le-Israel: account at the Ramat Gan branch"
     ],
     "loops": [
-     "HBRK Associates – Achrayut Leumit Ltd. – Bank Leumi le-Israel – Ergo Ltd. – Southern Trust Company"
+     "Southern Trust Company – Ergo Ltd. – Bank Leumi le-Israel – Achrayut Leumit Ltd. – HBRK Associates"
     ],
     "succession": {
      "broker_cover": 0.019,
@@ -28551,9 +28553,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 265,
+     "rank": 266,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 262
+     "rank_without_hubs": 263
     },
     "role": "access / association",
     "money_in": [],
@@ -28753,9 +28755,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 266,
+     "rank": 267,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 263
+     "rank_without_hubs": 264
     },
     "role": "access / association",
     "money_in": [],
@@ -29862,9 +29864,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 267,
+     "rank": 268,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 264
+     "rank_without_hubs": 265
     },
     "role": "official / agency",
     "money_in": [],
@@ -29931,9 +29933,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 268,
+     "rank": 269,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 265
+     "rank_without_hubs": 266
     },
     "role": "access / association",
     "money_in": [],
@@ -30065,9 +30067,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 269,
+     "rank": 270,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 266
+     "rank_without_hubs": 267
     },
     "role": "finance",
     "money_in": [
@@ -30138,9 +30140,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 270,
+     "rank": 271,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 267
+     "rank_without_hubs": 268
     },
     "role": "operations / logistics",
     "money_in": [],
@@ -30208,9 +30210,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 271,
+     "rank": 272,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 268
+     "rank_without_hubs": 269
     },
     "role": "finance",
     "money_in": [
@@ -30279,9 +30281,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 272,
+     "rank": 273,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 269
+     "rank_without_hubs": 270
     },
     "role": "access / association",
     "money_in": [],
@@ -30478,10 +30480,10 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0034,
+     "betweenness": 0.0033,
      "rank": 67,
-     "betweenness_without_hubs": 0.0001,
-     "rank_without_hubs": 80
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 81
     },
     "role": "official / agency",
     "money_in": [],
@@ -30551,7 +30553,7 @@
     "centrality": {
      "betweenness": 0.0001,
      "rank": 85,
-     "betweenness_without_hubs": 0.0029,
+     "betweenness_without_hubs": 0.0028,
      "rank_without_hubs": 47
     },
     "role": "official / agency",
@@ -30559,7 +30561,7 @@
     "money_out": [],
     "loops": [],
     "succession": {
-     "broker_cover": 0.032,
+     "broker_cover": 0.031,
      "broker_money_cover": 0.068,
      "operations_cover": 0.0
     },
@@ -30619,9 +30621,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 273,
+     "rank": 274,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 270
+     "rank_without_hubs": 271
     },
     "role": "official / agency",
     "money_in": [],
@@ -30752,7 +30754,7 @@
      "documented": 4
     },
     "centrality": {
-     "betweenness": 0.0204,
+     "betweenness": 0.0199,
      "rank": 19,
      "betweenness_without_hubs": 0.0002,
      "rank_without_hubs": 61
@@ -30823,9 +30825,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 274,
+     "rank": 275,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 271
+     "rank_without_hubs": 272
     },
     "role": "access / association",
     "money_in": [],
@@ -30893,9 +30895,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 275,
+     "rank": 276,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 272
+     "rank_without_hubs": 273
     },
     "role": "access / association",
     "money_in": [],
@@ -31028,9 +31030,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 276,
+     "rank": 277,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 273
+     "rank_without_hubs": 274
     },
     "role": "access / association",
     "money_in": [],
@@ -31294,9 +31296,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 277,
+     "rank": 278,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 274
+     "rank_without_hubs": 275
     },
     "role": "finance",
     "money_in": [],
@@ -31617,9 +31619,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 279,
+     "rank": 280,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 276
+     "rank_without_hubs": 277
     },
     "role": "official / agency",
     "money_in": [],
@@ -32058,10 +32060,10 @@
      "documented": 2
     },
     "centrality": {
-     "betweenness": 0.0068,
+     "betweenness": 0.0066,
      "rank": 58,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 277
+     "rank_without_hubs": 278
     },
     "role": "official / agency",
     "money_in": [],
@@ -32127,9 +32129,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 280,
+     "rank": 281,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 278
+     "rank_without_hubs": 279
     },
     "role": "official / agency",
     "money_in": [],
@@ -32195,9 +32197,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 281,
+     "rank": 282,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 279
+     "rank_without_hubs": 280
     },
     "role": "official / agency",
     "money_in": [],
@@ -32264,9 +32266,9 @@
     },
     "centrality": {
      "betweenness": 0.0,
-     "rank": 282,
+     "rank": 283,
      "betweenness_without_hubs": 0.0,
-     "rank_without_hubs": 280
+     "rank_without_hubs": 281
     },
     "role": "official / agency",
     "money_in": [],
@@ -33439,6 +33441,1111 @@
      "rank_without_hubs": null
     },
     "role": "comparison framework",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "pbso",
+   "name": "Palm Beach County Sheriff's Office",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Held Epstein for about 13 months (2008-09), most of it on work release: up to 12 hours a day, six days a week, outside the jail. In 2019 the sheriff opened an internal inquiry, handed it to the state, and ended the work-release programme.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "Direct 1°",
+    "kb_epstein": 1,
+    "kb_maxwell": 2,
+    "path_epstein": [
+     "Palm Beach County Sheriff's Office",
+     "Jeffrey Epstein"
+    ],
+    "ties": {
+     "total": 3,
+     "verified": 2,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 1
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 284,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 282
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.006,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.0,
+     "drop": 0.1,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.987,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 4
+    }
+   }
+  },
+  {
+   "id": "bradshaw",
+   "name": "Ric Bradshaw",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Palm Beach County sheriff. Asked in 2019 for the state (FDLE) to take over oversight of his office's review of Epstein's custody.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "fdle",
+   "name": "Florida Department of Law Enforcement",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Asked by Gov. DeSantis in August 2019 to review the state case, the plea and the custody. Reported in 2021: no evidence of criminal activity by officials and no evidence the State Attorney colluded with the defence; it found \"differential treatment\" in custody and that sex during work release was \"possible\" but not provable.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 3,
+     "verified": 3,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "desantis",
+   "name": "Ron DeSantis",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "Florida governor. Asked FDLE to review the state's handling of the Epstein case (August 2019); signed the 2024 law allowing release of the 2006 grand jury testimony.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 2,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "fl_gj_2006",
+   "name": "Palm Beach County grand jury (2006)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Heard the state case in 2006 and returned a single solicitation charge. Its testimony was released in July 2024 under the new state law.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 3,
+     "verified": 2,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "fl_gj_law",
+   "name": "Florida grand jury disclosure law (2024)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Passed unanimously and signed on 29 Feb 2024 (Senate sponsor Tina Polsky); in force 1 Jul 2024. Widened the exception to grand-jury secrecy so the 2006 Epstein testimony could be released.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 2,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "delgado",
+   "name": "Judge Luis Delgado",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Palm Beach circuit judge. In February 2024 held the request until the new law took effect; the transcripts were then released.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "manhattan_da",
+   "name": "Manhattan District Attorney's Office",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "At Epstein's 2011 New York sex-offender hearing, an assistant DA conceded he should be rated level one, the lowest risk; the judge rated him level three, and the appeals court said the concession was a mistake.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "Direct 1°",
+    "kb_epstein": 1,
+    "kb_maxwell": 2,
+    "path_epstein": [
+     "Manhattan District Attorney's Office",
+     "Jeffrey Epstein"
+    ],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 1
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 285,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 283
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.006,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "pickholz",
+   "name": "Justice Ruth Pickholz",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "New York Supreme Court justice. Rated Epstein a level three sex offender in 2011, over the DA's concession of level one; affirmed on appeal.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 2,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "ny_sora_2011",
+   "name": "People v Epstein (New York sex-offender level, 2011)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Appellate Division, First Department, 17 Nov 2011: unanimously affirmed level three. He was rated level one in Florida and the US Virgin Islands.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "nypd",
+   "name": "New York Police Department",
+   "kind": "government",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Required 90-day address checks for a level three offender; Epstein never checked in. He had listed the Virgin Islands as his primary residence and New York as a vacation home, and the NYPD held that his monitoring was not its responsibility.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 0,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0,
+     "broker_money_cover": 0,
+     "operations_cover": 0
+    },
+    "flight": null,
+    "volumes": {
+     "US System vs Israel System": 1,
+     "The One-Way Mirror": 2
+    },
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "nm_registry",
+   "name": "New Mexico registry gap",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Epstein was not required to register in New Mexico: the Florida victim in his plea was 17, the state's age of consent. After his 2019 arrest the attorney general sought to make any sex-trafficking conviction registrable.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 2,
+     "verified": 0,
+     "reported": 2,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "ny_cva",
+   "name": "New York Child Victims Act (2019)",
+   "kind": "document",
+   "cluster": "justice",
+   "tier": "",
+   "note": "Opened a one-year window, from 14 Aug 2019, for claims that had expired; suits against Epstein's estate were filed on the first day.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": null,
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "epstein_estate",
+   "name": "Estate of Jeffrey Epstein",
+   "kind": "institution",
+   "cluster": "provenance",
+   "tier": "",
+   "note": "Executors Darren Indyke and Richard Kahn. Funded the victims' compensation programme (2020); settled with the US Virgin Islands for $105M (Dec 2022), forfeiting the islands' sale proceeds in part to a victims' trust; sold every property 2021-23.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "Operational 2°",
+    "kb_epstein": 2,
+    "kb_maxwell": 3,
+    "path_epstein": [
+     "Estate of Jeffrey Epstein",
+     "Darren Indyke",
+     "Jeffrey Epstein"
+    ],
+    "ties": {
+     "total": 5,
+     "verified": 4,
+     "reported": 1,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 2
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 99,
+     "betweenness_without_hubs": 0.0001,
+     "rank_without_hubs": 70
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [
+     "Darren Indyke – HBRK Associates – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – The Butterfly Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Jeffrey E. Epstein 2019 Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Jeffrey E. Epstein 2018 Trust – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – TD Bank – Richard Kahn – Estate of Jeffrey Epstein",
+     "Darren Indyke – Southern Trust Company – Richard Kahn – Estate of Jeffrey Epstein"
+    ],
+    "succession": {
+     "broker_cover": 0.044,
+     "broker_money_cover": 0.045,
+     "operations_cover": 0.04
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "dgeorge",
+   "name": "Denise George",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "US Virgin Islands attorney general, May 2019 to Dec 2022. Sued the estate (2020; $105M settlement, Dec 2022) and filed suit against JPMorgan on 27 Dec 2022; dismissed four days later. Her later account to the FBI (released Jan 2026) is her allegation.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "unconnected to Epstein",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 3,
+     "verified": 3,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 1
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 287,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 285
+    },
+    "role": "official / agency",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.0,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "abryan",
+   "name": "Albert Bryan",
+   "kind": "person",
+   "cluster": "politics",
+   "tier": "",
+   "note": "US Virgin Islands governor. Appointed and then dismissed Attorney General Denise George on 31 Dec 2022, saying he had been \"blindsided\" by the JPMorgan suit filed without consulting him.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "unconnected to Epstein",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 1
+    },
+    "centrality": {
+     "betweenness": 0.0,
+     "rank": 286,
+     "betweenness_without_hubs": 0.0,
+     "rank_without_hubs": 284
+    },
+    "role": "access / association",
+    "money_in": [],
+    "money_out": [],
+    "loops": [],
+    "succession": {
+     "broker_cover": 0.0,
+     "broker_money_cover": 0.0,
+     "operations_cover": 0.0
+    },
+    "flight": null,
+    "volumes": {},
+    "sources": {
+     "distinct": 1,
+     "doj_efta": 0
+    },
+    "open_leads": [],
+    "functions": [],
+    "whatif": {
+     "P": 95.1,
+     "drop": 0.0,
+     "verdict": "Runs as documented",
+     "pc": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+     ],
+     "deal": 100,
+     "account": 100,
+     "weakest": 0
+    }
+   }
+  },
+  {
+   "id": "rmberman",
+   "name": "Judge Richard M. Berman",
+   "kind": "person",
+   "cluster": "justice",
+   "tier": "",
+   "note": "SDNY judge in the 2019 case. Denied bail on 18 Jul 2019, finding Epstein a danger to the community and a flight risk, against a bail package offered against his Manhattan house.",
+   "scenes": [],
+   "apex": false,
+   "sponsor": false,
+   "qop": {
+    "tier": "off the documented-tie map (record, comparison or unverified ties only)",
+    "kb_epstein": null,
+    "kb_maxwell": null,
+    "path_epstein": [],
+    "ties": {
+     "total": 1,
+     "verified": 1,
+     "reported": 0,
+     "to_verify": 0,
+     "withheld": 0,
+     "not_established": 0,
+     "documented": 0
+    },
+    "centrality": {
+     "betweenness": 0,
+     "rank": null,
+     "betweenness_without_hubs": 0,
+     "rank_without_hubs": null
+    },
+    "role": "official / agency",
     "money_in": [],
     "money_out": [],
     "loops": [],
@@ -41980,19 +43087,369 @@
      "u": "https://sourcenm.com/?p=27356"
     }
    ]
+  },
+  {
+   "f": "pbso",
+   "t": "epstein",
+   "label": "work release 2008-09: up to 12 hours a day, six days a week, outside the jail",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    },
+    {
+     "t": "WPTV: PBSO stops its work-release program after the Epstein case",
+     "u": "https://www.wptv.com/news/epstein/pbso-stops-work-release-program-following-controversial-jeffrey-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "bradshaw",
+   "t": "pbso",
+   "label": "sheriff; handed his office's Epstein review to the state, 2019",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "desantis",
+   "t": "fdle",
+   "label": "asked FDLE to review the state case, plea and custody, Aug 2019",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "fdle",
+   "t": "pbso",
+   "label": "2021: no evidence of criminal activity; \"differential treatment\" in custody",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "fdle",
+   "t": "krischer",
+   "label": "2021: no evidence the State Attorney colluded with the defence",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "krischer",
+   "t": "fl_gj_2006",
+   "label": "presented the state case; a single solicitation charge, 2006",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    }
+   ]
+  },
+  {
+   "f": "desantis",
+   "t": "fl_gj_law",
+   "label": "signed, 29 Feb 2024",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    }
+   ]
+  },
+  {
+   "f": "fl_gj_law",
+   "t": "fl_gj_2006",
+   "label": "allowed the 2006 testimony to be released (from 1 Jul 2024)",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    },
+    {
+     "t": "Florida Politics: unsealed Epstein grand jury records now viewable online (2024)",
+     "u": "https://floridapolitics.com/archives/682400-unsealed-jeffrey-epsteins-grand-jury-records-now-viewable-online"
+    }
+   ]
+  },
+  {
+   "f": "delgado",
+   "t": "fl_gj_2006",
+   "label": "held the request in Feb 2024; records released under the new law",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    },
+    {
+     "t": "Florida Politics: unsealed Epstein grand jury records now viewable online (2024)",
+     "u": "https://floridapolitics.com/archives/682400-unsealed-jeffrey-epsteins-grand-jury-records-now-viewable-online"
+    }
+   ]
+  },
+  {
+   "f": "manhattan_da",
+   "t": "epstein",
+   "label": "conceded at the 2011 hearing that he should be level one (lowest risk)",
+   "type": "legal position (rejected)",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    },
+    {
+     "t": "CNN, 9 Jul 2019: Manhattan DA's office asked a judge to lower Epstein's sex-offender status in 2011",
+     "u": "https://www.kxlf.com/cnn-national/2019/07/09/manhattan-das-office-asked-judge-to-lower-jeffrey-epsteins-sex-offender-status-in-2011/"
+    }
+   ]
+  },
+  {
+   "f": "pickholz",
+   "t": "epstein",
+   "label": "rated him a level three sex offender, 2011",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    },
+    {
+     "t": "CNN, 9 Jul 2019: Manhattan DA's office asked a judge to lower Epstein's sex-offender status in 2011",
+     "u": "https://www.kxlf.com/cnn-national/2019/07/09/manhattan-das-office-asked-judge-to-lower-jeffrey-epsteins-sex-offender-status-in-2011/"
+    }
+   ]
+  },
+  {
+   "f": "ny_sora_2011",
+   "t": "pickholz",
+   "label": "affirmed unanimously, 17 Nov 2011",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    }
+   ]
+  },
+  {
+   "f": "nypd",
+   "t": "epstein",
+   "label": "90-day checks required; he never checked in (residence listed as USVI)",
+   "type": "oversight",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    }
+   ]
+  },
+  {
+   "f": "nm_registry",
+   "t": "zorro",
+   "label": "no registration required in New Mexico (victim in the plea was 17)",
+   "type": "legislation",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    },
+    {
+     "t": "Governing, 16 Jul 2019: registered as a sex offender in two states; in New Mexico he didn't have to",
+     "u": "https://www.governing.com/archive/Jeffrey-Epstein-Registered-as-a-Sex-Offender-in-2-States-In-New-Mexico-He-Didnt-Have-To.html"
+    }
+   ]
+  },
+  {
+   "f": "nm_ag",
+   "t": "nm_registry",
+   "label": "sought a law change after the 2019 arrest",
+   "type": "legislation",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    }
+   ]
+  },
+  {
+   "f": "ny_cva",
+   "t": "epstein_estate",
+   "label": "claim window from 14 Aug 2019; suits filed on the first day",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Claims Journal / AP, 16 Aug 2019: New York's Child Victims Act window opens; Epstein among the targets",
+     "u": "https://www.claimsjournal.com/news/east/2019/08/16/292598.htm"
+    }
+   ]
+  },
+  {
+   "f": "epstein_estate",
+   "t": "vcp",
+   "label": "funded the compensation programme, 2020",
+   "type": "funding",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: since 2019 the estate has paid over $160M to victims (compensation programme), $105M to the USVI",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
+  },
+  {
+   "f": "dgeorge",
+   "t": "epstein_estate",
+   "label": "sued the estate (2020); $105M settlement, Dec 2022",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    }
+   ]
+  },
+  {
+   "f": "dgeorge",
+   "t": "jpm",
+   "label": "filed suit, 27 Dec 2022",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    }
+   ]
+  },
+  {
+   "f": "abryan",
+   "t": "dgeorge",
+   "label": "appointed (2019); dismissed her 31 Dec 2022, four days after the JPMorgan suit; said he was \"blindsided\"",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    },
+    {
+     "t": "VI Consortium: Virgin Islands Attorney General Denise George has been terminated",
+     "u": "https://viconsortium.com/vi-government/virgin-islands-attorneygeneral-denise-george-has-been-terminated-"
+    }
+   ]
+  },
+  {
+   "f": "rmberman",
+   "t": "epstein",
+   "label": "denied bail, 18 Jul 2019: danger to the community and flight risk",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 18 Jul 2019: Epstein denied bail, must remain behind bars until trial",
+     "u": "https://www.nbcnews.com/news/us-news/jeffrey-epstein-denied-bail-must-remain-behind-bars-until-sex-n1031171"
+    }
+   ]
+  },
+  {
+   "f": "indyke",
+   "t": "epstein_estate",
+   "label": "co-executor",
+   "type": "executor",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: the estate, its executors and where the money went",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
+  },
+  {
+   "f": "kahn",
+   "t": "epstein_estate",
+   "label": "co-executor",
+   "type": "executor",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: the estate, its executors and where the money went",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
   }
  ],
  "qop_meta": {
   "graph": "documented ties: verified, non-probe, non-kinship, no document nodes",
-  "nodes": 282,
-  "edges": 396,
-  "broker_neighbours": 158,
+  "nodes": 287,
+  "edges": 401,
+  "broker_neighbours": 160,
   "operations_neighbours": 25
  },
  "whatif_meta": {
   "P0": 95.1,
   "deal0": 100,
   "account0": 100,
-  "ties": 237
+  "ties": 238
  }
 }
