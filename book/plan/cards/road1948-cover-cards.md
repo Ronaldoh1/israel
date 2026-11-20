@@ -20,7 +20,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): a vast glowing network map seen at a slight angle, hundreds of small gold-foil nodes joined by fine luminous gold threads, drawn like an engraved blueprint, floating above an aged parchment document whose bottom edge carries a deep crimson wax seal embossed "1948". Faint gold light rays fan out behind the network. One single node near the center is missing, leaving a small dark gap with broken threads around it, lit by a thin crimson glow. The hero fades smoothly into the indigo background.
 
-LABEL TAG: a small indigo pill with a thin gold-foil edge, white small caps: "THE LIBRARY OF TRUTH ✨ · NETWORK MAP".
+LABEL TAG: a small indigo pill with a thin gold-foil edge, white small caps: "THE LIBRARY OF TRUTH ✨ · NETWORK MAP · 1 OF 3".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, three lines: "THE ROAD / TO 1948 / AND AFTER".
 
@@ -42,7 +42,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): a close-up of two glowing gold-foil nodes joined by one luminous gold thread; attached to the thread is a small engraved parchment tag, like a museum label, with a gold-foil checkmark and the white word "SOURCE". Behind it, out of focus, the wider network glows faintly in gold. Soft gold light rays. Fades into the indigo background.
 
-LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "HOW THE MAP WAS BUILT · 1 OF 3".
+LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "HOW THE MAP WAS BUILT · 2 OF 3".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow: "EVERY LINE / HAS A SOURCE".
 
@@ -73,7 +73,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): an engraved antique brass balance scale glowing in gold foil. On the left pan sits a small glowing network of gold nodes; on the right pan sits an hourglass with gold sand running out. Behind it, faint gold light rays and a soft engraved grid like a ledger page. Fades into the indigo background.
 
-LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "HOW THE CHANCES WORK · 2 OF 3".
+LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "HOW THE CHANCES WORK · 3 OF 3".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow: "TAKE ONE / PART AWAY".
 
