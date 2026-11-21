@@ -2007,6 +2007,110 @@
      "kind": "news"
     }
    ]
+  },
+  {
+   "id": "word_claims_check",
+   "stage": "ch01",
+   "topic": "Claims that circulate about the word: a 1917 law, a capital crime, and Trotsky's 'racist'",
+   "claims": [
+    {
+     "text": "The first decrees of Soviet power, on 8 November 1917, were on peace, on land and on establishing the government; no 1917 decree concerned antisemitism.",
+     "strength": "reference",
+     "sources": [
+      "rs_ch01_wiki_soviet_decrees"
+     ]
+    },
+    {
+     "text": "The Council of People's Commissars' decree against antisemitism and anti-Jewish pogroms, signed by Lenin, Bonch-Bruevich and Gorbunov, dates from late July 1918 and orders that pogromists and those agitating for pogroms be declared outlaws; it states no death penalty and does not mention anti-communists.",
+     "strength": "primary",
+     "sources": [
+      "rs_ch01_decree1918",
+      "rs_ch01_cup_soviet1918"
+     ]
+    },
+    {
+     "text": "A Cambridge study notes that in their first nine months the Bolsheviks did not raise the question of antisemitism once.",
+     "strength": "scholarship",
+     "sources": [
+      "rs_ch01_cup_soviet1918"
+     ]
+    },
+    {
+     "text": "The Yevsektsiya, from 1918, worked to dismantle traditional Jewish religious life, the Zionist movement and Hebrew culture; the Doctors' Plot of 1953 accused mostly Jewish doctors of plotting against Stalin.",
+     "strength": "reference",
+     "sources": [
+      "rs_ch01_wiki_soviet_antisem"
+     ]
+    },
+    {
+     "text": "'Jewish Bolshevism' is described as an antisemitic, anti-communist conspiracy theory that arose during the First World War, was spread by the White movement and became a central Nazi belief.",
+     "strength": "reference",
+     "sources": [
+      "rs_ch01_wiki_jewish_bolshevism"
+     ]
+    },
+    {
+     "text": "The French 'raciste' was in print by the 1890s, the first OED-recorded English 'racism' is Richard Henry Pratt's in 1902, and Trotsky used the word in 1930 and 1933.",
+     "strength": "reference",
+     "sources": [
+      "rs_ch01_npr_racism",
+      "rs_ch01_se_racist"
+     ]
+    }
+   ],
+   "disputes": [
+    {
+     "text": "Sources give the decree's date as 25, 26 or 27 July 1918; 27 July is usually its publication date.",
+     "sources": [
+      "rs_ch01_decree1918",
+      "rs_ch01_cup_soviet1918"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "rs_ch01_decree1918",
+     "url": "https://www.marxists.org/francais/lenin/works/1918/07/lenine%20antisemitisme.htm",
+     "label": "Council of People's Commissars, decree on the struggle against antisemitism and anti-Jewish pogroms, July 1918 (French text, marxists.org)",
+     "kind": "primary"
+    },
+    {
+     "key": "rs_ch01_cup_soviet1918",
+     "url": "https://www.cambridge.org/core/books/antisemitism-and-the-russian-revolution/soviet-response-to-antisemitism-1918/91634A0E7454309DA307B192FE5379E0",
+     "label": "Soviet response to antisemitism, 1918, in Antisemitism and the Russian Revolution (Cambridge University Press)",
+     "kind": "scholarship"
+    },
+    {
+     "key": "rs_ch01_wiki_soviet_decrees",
+     "url": "https://en.wikipedia.org/wiki/Soviet_Decree",
+     "label": "Soviet Decree: the first decrees of Soviet power, 1917 (Wikipedia)",
+     "kind": "reference"
+    },
+    {
+     "key": "rs_ch01_wiki_soviet_antisem",
+     "url": "https://en.wikipedia.org/wiki/Antisemitism_in_the_Soviet_Union",
+     "label": "Antisemitism in the Soviet Union: the Yevsektsiya and the Doctors' Plot (Wikipedia)",
+     "kind": "reference"
+    },
+    {
+     "key": "rs_ch01_wiki_jewish_bolshevism",
+     "url": "https://en.wikipedia.org/wiki/Jewish_Bolshevism",
+     "label": "Jewish Bolshevism: an antisemitic conspiracy theory (Wikipedia)",
+     "kind": "reference"
+    },
+    {
+     "key": "rs_ch01_npr_racism",
+     "url": "https://www.npr.org/sections/codeswitch/2014/01/05/260006815/the-ugly-fascinating-history-of-the-word-racism",
+     "label": "The Ugly, Fascinating History of the Word 'Racism' (NPR Code Switch, 2014)",
+     "kind": "reporting"
+    },
+    {
+     "key": "rs_ch01_se_racist",
+     "url": "https://kiwix.lema.org/skeptics.stackexchange.com_en_all_2023-11/questions/27982/was-the-word-racist-coined-by-trotsky-in-1927",
+     "label": "Was the word 'racist' coined by Trotsky? Sourced answers citing the OED and Taguieff (Skeptics Stack Exchange archive)",
+     "kind": "reference"
+    }
+   ]
   }
  ]
 }
