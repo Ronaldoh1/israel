@@ -1,6 +1,6 @@
-# "Semitic" and the word: a five-card series (20 Nov 2026)
+# "Semitic" and the word: a six-card series (20 Nov 2026)
 
-Five 9:16 cards from Volume I, *The Baseline*: the sections "'Semitic': A Family of Languages", "'Antisemitism': A Word Named by the Haters" and "An Old Hatred, Before and After Its Name". Every figure comes from those sections. The cards use one shared look: midnight navy, the Baseline's brick red as the accent, gold foil and white, so the five read as a set. The word itself appears only in quotation marks, as the subject being explained. Each prompt below is in its own copy block.
+Six 9:16 cards from Volume I, *The Baseline*: the sections "'Semitic': A Family of Languages", "'Antisemitism': A Word Named by the Haters" and "An Old Hatred, Before and After Its Name", plus, for card 6, "How the Story Is Taught", "The Platforms", "Who Coordinates What Gets Posted" and "The Definition Fight, Where It Stands". Every figure comes from those sections. The cards use one shared look: midnight navy, the Baseline's brick red as the accent, gold foil and white, so the six read as a set. The word itself appears only in quotation marks, as the subject being explained. Each prompt below is in its own copy block.
 
 Card order:
 1. "Semitic" is a family of languages
@@ -8,6 +8,7 @@ Card order:
 3. Who the Semitic peoples are
 4. How the word was named, 1781–2015
 5. The word as a shield
+6. Who held the pen
 
 ---
 
@@ -17,7 +18,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): an open antique scholar's ledger lit by a single warm lamp, its right page showing an engraved gold family tree whose trunk is labelled "SHEM" and whose branches end in small gold leaves; the left page shows faint, decorative handwritten columns of grammar tables (no readable words needed). Fine gold dust floats in the lamplight. The scene fades into the navy background below.
 
-LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 1 OF 5".
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 1 OF 6".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "\"SEMITIC\" IS A / FAMILY OF LANGUAGES".
 
@@ -50,7 +51,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top 30%): an engraved antique map in gold line on navy, covering Mesopotamia, the Levant, the Arabian Peninsula, the Horn of Africa, North Africa and the island of Malta. Glowing gold dots mark where languages were spoken, with thin dotted gold arrows showing documented spreads: from the Levant coast west to Carthage, from Syria east across Mesopotamia, and from Arabia west across Egypt and North Africa. Small white place labels: "MESOPOTAMIA", "LEVANT", "ARABIA", "ETHIOPIA", "MALTA". Light rays glow faintly behind the map.
 
-LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 2 OF 5".
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 2 OF 6".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "ONE FAMILY, / FOUR BRANCHES".
 
@@ -81,7 +82,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): a row of six tall carved stone tablets standing side by side in soft gold light, each engraved with decorative calligraphic letterforms in a different script style: square Hebrew, flowing Arabic, Syriac, Ge'ez syllabary, Latin-script Maltese, and ancient cuneiform wedges. The letterforms are ornamental texture only; no readable words needed. Gold light runs along the carved grooves. The tablets fade into the navy below.
 
-LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 3 OF 5".
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 3 OF 6".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "WHO ARE THE / SEMITIC PEOPLES?"
 
@@ -111,7 +112,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top quarter): an old 19th-century printing press in dramatic side light, a single sheet of paper rising from it; on the sheet, in large engraved type, only the word "SEMITISCH" crossed through by a thin gold line. Ink-black shadows, gold rim light. No people.
 
-LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 4 OF 5".
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 4 OF 6".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "WHO NAMED / THE WORD?"
 
@@ -141,7 +142,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top quarter): a heavy medieval-style shield of polished dark steel with a gold-foil rim, standing upright in cinematic side light. Engraved across its face in gold capitals is the single word "LABEL". Behind the shield, partly hidden by it, a stack of documents and a question mark rendered in glowing white light, as if the shield is held up to block the question. Gold light rays behind. No people, no flags, no religious symbols.
 
-LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 5 OF 5".
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 5 OF 6".
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "THE WORD AS / A SHIELD 🛡".
 
@@ -174,6 +175,42 @@ Anti-cram rule: if space runs short, drop Panel 2 first, then the third bullet o
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
+
+## Card 6 · Who held the pen
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette of exactly four colors: deep midnight navy #0A1230 fading to #050914 for the background; Baseline brick red #B23A26 for the accent bar, label tag and callouts; brilliant white #FFFFFF for type; antique-gold metallic foil #E8B44A with real foil sheen and highlights. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+HERO (top quarter): a giant antique gold fountain pen, nib down, in dramatic cinematic light, writing a single glowing line of gold ink across a heavy open rulebook. As the ink line leaves the page it splits into five glowing gold streams that flow down the card into five small engraved icons in a row: a government dome, a university gate, a smartphone, a folded newspaper and a schoolbook. Tiny white labels under the icons: "GOVERNMENTS", "CAMPUSES", "PLATFORMS", "NEWSROOMS", "CLASSROOMS". No people, no faces, no flags, no religious symbols.
+
+LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 6 OF 6".
+
+HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "WHO HELD / THE PEN 🖊".
+
+SUBHEAD: gold italic serif: "One side of an open argument, written into the rules."
+
+STAT STRIP (four glossy navy tiles in one row, gold-foil borders, gold numbers, white labels):
+Tile 1: "1,334" — "ADOPTIONS OF THE IHRA TEXT BY END OF 2025"
+Tile 2: "47" — "NATIONAL GOVERNMENTS"
+Tile 3: "37" — "US STATES"
+Tile 4: "386" — "UNIVERSITIES AND SCHOOL BODIES"
+Tiny white line beneath the strip: "Count by the Combat Antisemitism Movement, a group that promotes the definition."
+
+PANEL (navy glass with a thin gold border; header in gold caps "THE PEN IN EVERY ROOM"; each row starts with a small gold icon matching the hero icons, then a white heavy-caps label and white text):
+PLATFORMS — Meta began treating "Zionist" as a stand-in for Jews in some cases (2024); TikTok followed. Israel's Cyber Unit sent 9,500 takedown requests in six weeks after 7 October 2023, with 94% reported compliance.
+NEWSROOMS — In the first seven weeks of the war, the New York Times called Israeli deaths a "massacre" 53 times and Palestinian deaths once (The Intercept, 1,000+ articles).
+CAMPUSES — Columbia lost $400 million in federal funding within four days (2025). Harvard, Yale and Columbia adopted the IHRA text that year.
+MESSAGING — Israel's foreign ministry secured $150 million for public diplomacy (Dec 2024); justice filings show paid influencers at roughly $7,000 per post.
+
+CALLOUT BAR: full-width brick-red bar, white heavy caps: "THE SCHOLARS NEVER AGREED. THE RULES WERE WRITTEN ANYWAY."
+Small white line beneath: "104 rights groups, including the ACLU, Amnesty, Human Rights Watch and B'Tselem, asked the UN not to adopt it (2023). New York City revoked it in January 2026."
+
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "SEE WHO WROTE WHAT, WITH SOURCES"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+
+Anti-cram rule: if space runs short, drop the MESSAGING row first, then the tiny line under the strip, then shrink the pen; never drop the strip, the callout, the URL or the social pills.
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
 ---
 
 ## Sources behind the cards (from The Baseline)
@@ -189,3 +226,4 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 - The word as a shield (card 5): Baseline s00b1 — IHRA adopted by the US government and 35 states plus DC (Aug 2024); Kenneth Stern, The Guardian, Dec 2019 ("I drafted the definition of antisemitism. Rightwing Jews are weaponizing it"); Columbia's $400M loss in four days (2025); ADL record count of 9,354 incidents in 2024.
 - Zionism and Judaism (card 5): Baseline s00c — Basel 1897, Pittsburgh Platform 1885, the Bund 1897, Satmar's VaYoel Moshe 1958.
 - Norwich 1144: Baseline ch01_hatred.
+- Who held the pen (card 6): Baseline ch01_definition_fight (adoption counts from the Combat Antisemitism Movement, end of 2025; the 2023 letter of 104 organizations to the UN; New York's revocation, 2 January 2026); s00a2 (Meta's "Zionist" proxy policy, 2024; TikTok; Israel's Cyber Unit, 9,500 requests and 94% reported compliance, 7 Oct–14 Nov 2023); gx_s07 (The Intercept's study of 1,000+ articles, "massacre" 53 to 1); s00b1 (Columbia, $400M); s00a3 ($150M public-diplomacy allocation, Dec 2024; FARA filings, roughly $6,100–7,400 per post).
