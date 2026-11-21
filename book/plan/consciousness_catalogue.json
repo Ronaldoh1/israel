@@ -9,7 +9,7 @@
   {
    "id": "start",
    "title": "Start here",
-   "note": "The canon, and the pattern every later shelf repeats.",
+   "note": "Who chose the Bible, and the pattern every later shelf repeats.",
    "color": "#4B3A8C",
    "open": true,
    "items": [
@@ -24,220 +24,62 @@
       "Councils",
       "The Index"
      ],
-     "sig": "tetractys"
-    },
-    {
-     "id": "pattern",
-     "kind": "Booklet",
-     "title": "The Pattern",
-     "subtitle": "Why every inner tradition met the same fate",
-     "span": "c. 180–1750",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "labyrinth"
+     "sig": "tetractys",
+     "includes": [
+      "How the canon formed, from the 2nd-century lists to Athanasius in 367",
+      "The Nicaea myth and what the council actually decided",
+      "The pattern: why every inner tradition met the same fate",
+      "The Index of Prohibited Books, 1559–1966"
+     ]
     }
    ]
   },
   {
-   "id": "nh",
-   "title": "The Nag Hammadi Library",
-   "note": "Thirteen codices found in a sealed jar in Upper Egypt in December 1945.",
+   "id": "scripture",
+   "title": "The lost scriptures",
+   "note": "The texts left out of the Bible, buried in a jar, or kept in Ethiopia.",
    "color": "#5A3E1E",
    "open": true,
    "items": [
     {
-     "id": "nag_hammadi",
+     "id": "gnostics",
      "kind": "Book",
-     "title": "The Nag Hammadi Library",
-     "subtitle": "Fifty-two texts in a sealed jar, 1945",
-     "span": "c. 350–1945",
-     "labels": [
-      "Nag Hammadi Library"
-     ],
-     "sig": "vesica"
-    },
-    {
-     "id": "thomas",
-     "kind": "Booklet",
-     "title": "The Gospel of Thomas",
-     "subtitle": "114 sayings, and the kingdom within",
-     "span": "Codex II",
+     "title": "The Gnostics",
+     "subtitle": "The Nag Hammadi Library and the gospels they buried",
+     "span": "c. 100–1945",
      "labels": [
       "Nag Hammadi Library",
-      "Gospel"
-     ],
-     "sig": "seed"
-    },
-    {
-     "id": "apocryphon_john",
-     "kind": "Booklet",
-     "title": "The Apocryphon of John",
-     "subtitle": "Sophia, the Demiurge and the Archons",
-     "span": "Codices II, III, IV",
-     "labels": [
-      "Nag Hammadi Library",
-      "Sethian"
-     ],
-     "sig": "metatron"
-    },
-    {
-     "id": "philip",
-     "kind": "Booklet",
-     "title": "The Gospel of Philip",
-     "subtitle": "The bridal chamber and Mary Magdalene",
-     "span": "Codex II",
-     "labels": [
-      "Nag Hammadi Library",
-      "Valentinian"
-     ],
-     "sig": "twin"
-    },
-    {
-     "id": "truth",
-     "kind": "Booklet",
-     "title": "The Gospel of Truth",
-     "subtitle": "Forgetting, and the return of knowing",
-     "span": "Codices I, XII",
-     "labels": [
-      "Nag Hammadi Library",
-      "Valentinian"
-     ],
-     "sig": "lotus"
-    },
-    {
-     "id": "origin_world",
-     "kind": "Booklet",
-     "title": "On the Origin of the World",
-     "subtitle": "The Archons' own creation story",
-     "span": "Codex II",
-     "labels": [
-      "Nag Hammadi Library"
-     ],
-     "sig": "spiral"
-    },
-    {
-     "id": "thunder",
-     "kind": "Booklet",
-     "title": "Thunder, Perfect Mind",
-     "subtitle": "The divine feminine speaks in paradox",
-     "span": "Codex VI",
-     "labels": [
-      "Nag Hammadi Library",
-      "Divine feminine"
-     ],
-     "sig": "heptagram"
-    },
-    {
-     "id": "eighth_ninth",
-     "kind": "Booklet",
-     "title": "The Eighth and the Ninth",
-     "subtitle": "The Hermetic texts bound into the jar",
-     "span": "Codex VI",
-     "labels": [
-      "Nag Hammadi Library",
-      "Hermetic"
-     ],
-     "sig": "enneagram"
-    }
-   ]
-  },
-  {
-   "id": "codices",
-   "title": "Beyond the jar",
-   "note": "Gnostic texts that survived in other codices, often filed with Nag Hammadi but found elsewhere.",
-   "color": "#3E2A5A",
-   "open": false,
-   "items": [
-    {
-     "id": "mary",
-     "kind": "Booklet",
-     "title": "The Gospel of Mary",
-     "subtitle": "The disciple Peter would not hear",
-     "span": "Berlin Codex",
-     "labels": [
-      "Gnostic codices",
-      "Divine feminine"
-     ],
-     "sig": "flower"
-    },
-    {
-     "id": "pistis_sophia",
-     "kind": "Booklet",
-     "title": "Pistis Sophia",
-     "subtitle": "Wisdom's fall and her repentances",
-     "span": "Askew Codex",
-     "labels": [
-      "Gnostic codices",
-      "Sophia"
-     ],
-     "sig": "sri"
-    },
-    {
-     "id": "judas",
-     "kind": "Booklet",
-     "title": "The Gospel of Judas",
-     "subtitle": "The lost codex published in 2006",
-     "span": "Codex Tchacos",
-     "labels": [
       "Gnostic codices"
      ],
-     "sig": "ouroboros"
-    }
-   ]
-  },
-  {
-   "id": "ethiopia",
-   "title": "The Ethiopian canon and the Dead Sea Scrolls",
-   "note": "Books kept in Ethiopia's Bible and found again in the caves of Qumran.",
-   "color": "#1E4A3A",
-   "open": true,
-   "items": [
+     "sig": "vesica",
+     "includes": [
+      "Gnosis: knowing, not believing",
+      "The jar of 1945: fifty-two texts",
+      "The Gospel of Thomas",
+      "The Apocryphon of John: Sophia, the Demiurge and the Archons",
+      "The Gospels of Philip and Truth",
+      "On the Origin of the World and Thunder, Perfect Mind",
+      "The Hermetic texts in the jar",
+      "Beyond the jar: the Gospels of Mary and Judas, and Pistis Sophia"
+     ]
+    },
     {
      "id": "ethiopian_bible",
      "kind": "Book",
      "title": "The Ethiopian Bible",
-     "subtitle": "The largest Bible in Christianity",
+     "subtitle": "81 books, and the ones the rest set aside",
      "span": "c. 330–today",
      "labels": [
-      "Ethiopian canon"
-     ],
-     "sig": "compass"
-    },
-    {
-     "id": "enoch",
-     "kind": "Booklet",
-     "title": "The Book of Enoch",
-     "subtitle": "Watchers, giants and the heavenly tablets",
-     "span": "c. 300–100 BCE",
-     "labels": [
       "Ethiopian canon",
       "Dead Sea Scrolls"
      ],
-     "sig": "heptagram"
-    },
-    {
-     "id": "jubilees",
-     "kind": "Booklet",
-     "title": "The Book of Jubilees",
-     "subtitle": "Genesis retold by an angel",
-     "span": "c. 160–150 BCE",
-     "labels": [
-      "Ethiopian canon",
-      "Dead Sea Scrolls"
-     ],
-     "sig": "goldrect"
-    },
-    {
-     "id": "kebra_nagast",
-     "kind": "Booklet",
-     "title": "The Kebra Nagast",
-     "subtitle": "Solomon, Sheba and the Ark",
-     "span": "c. 1320s",
-     "labels": [
-      "Ethiopian tradition"
-     ],
-     "sig": "cube"
+     "sig": "compass",
+     "includes": [
+      "The largest Bible in Christianity",
+      "The Book of Enoch: Watchers and giants",
+      "The Book of Jubilees",
+      "The Kebra Nagast: Solomon, Sheba and the Ark"
+     ]
     },
     {
      "id": "dead_sea",
@@ -248,28 +90,39 @@
      "labels": [
       "Dead Sea Scrolls"
      ],
-     "sig": "fruit"
+     "sig": "fruit",
+     "includes": [
+      "The caves and the community",
+      "Enoch and Jubilees among the scrolls",
+      "What the scrolls change about the Bible"
+     ]
     }
    ]
   },
   {
    "id": "inner",
    "title": "The inner traditions",
-   "note": "The experiential core inside each Abrahamic faith, studied in its own sources. Built from Sophia's Ascension of Consciousness pillar.",
+   "note": "The experiential core inside each faith, in its own sources.",
    "color": "#24406E",
    "open": true,
    "items": [
     {
-     "id": "gnostics",
+     "id": "kabbalah",
      "kind": "Book",
-     "title": "The Gnostics",
-     "subtitle": "Gnosis: knowing, not believing",
-     "span": "c. 100–400",
+     "title": "Kabbalah",
+     "subtitle": "The Tree of Life and the receivers",
+     "span": "c. 100 BCE–today",
      "labels": [
       "Inner traditions",
-      "Christianity"
+      "Judaism"
      ],
-     "sig": "vesica"
+     "sig": "tree",
+     "includes": [
+      "Merkabah: ascent through the seven palaces",
+      "The Zohar and the Safed circle",
+      "Sabbateans and Frankists",
+      "Early Hasidism: the Baal Shem Tov"
+     ]
     },
     {
      "id": "sufism",
@@ -281,487 +134,179 @@
       "Inner traditions",
       "Islam"
      ],
-     "sig": "sri"
-    },
-    {
-     "id": "kabbalah",
-     "kind": "Book",
-     "title": "Kabbalah",
-     "subtitle": "Receiving: the Tree of Life",
-     "span": "c. 1200–today",
-     "labels": [
-      "Inner traditions",
-      "Judaism"
-     ],
-     "sig": "tree"
+     "sig": "sri",
+     "includes": [
+      "Origins and the hadith of Gabriel",
+      "Dhikr and the teacher",
+      "Rumi, Hafez and the school of love",
+      "Al-Hallaj and the marginalization",
+      "The Nizari Isma'ilis and the Brethren of Purity"
+     ]
     },
     {
      "id": "hermetic",
      "kind": "Book",
      "title": "The Hermetic Tradition",
-     "subtitle": "As above, so below",
-     "span": "c. 100–1614",
-     "labels": [
-      "Inner traditions"
-     ],
-     "sig": "square"
-    },
-    {
-     "id": "merkabah",
-     "kind": "Booklet",
-     "title": "Merkabah and Hekhalot",
-     "subtitle": "Ascent through the seven palaces",
-     "span": "c. 100 BCE–1000 CE",
+     "subtitle": "As above, so below, and the alchemists",
+     "span": "c. 100–1700",
      "labels": [
       "Inner traditions",
-      "Judaism"
+      "Interpretive"
      ],
-     "sig": "heptagram"
-    },
-    {
-     "id": "hasidism",
-     "kind": "Booklet",
-     "title": "Early Hasidism",
-     "subtitle": "The Baal Shem Tov and devekut",
-     "span": "1740s–1800s",
-     "labels": [
-      "Inner traditions",
-      "Judaism"
-     ],
-     "sig": "flower"
+     "sig": "square",
+     "includes": [
+      "The Corpus Hermeticum and the Emerald Tablet",
+      "Ficino, Pico and the Renaissance",
+      "Alchemy: solve et coagula",
+      "Theurgy and ritual magic"
+     ]
     }
    ]
   },
   {
-   "id": "lineages",
-   "title": "The suppressed lineages",
-   "note": "Everyone who taught direct contact with the divine without a priesthood in between, and what happened to them.",
+   "id": "suppressed",
+   "title": "The suppressed",
+   "note": "The lineages, orders and old gods the institution burned, dissolved or absorbed.",
    "color": "#5E1F2E",
-   "open": false,
+   "open": true,
    "items": [
     {
-     "id": "cathars",
+     "id": "heretics",
      "kind": "Book",
-     "title": "The Cathars",
-     "subtitle": "The heresy a crusade was raised to end",
-     "span": "1140s–1321",
+     "title": "The Heretics",
+     "subtitle": "Cathars, Bogomils and the illuminated",
+     "span": "10th–17th c.",
      "labels": [
-      "Suppressed lineages",
-      "Inquisition"
+      "Suppressed lineages"
      ],
-     "sig": "pentagons"
+     "sig": "pentagons",
+     "includes": [
+      "The Bogomils",
+      "The Cathars and the Albigensian Crusade",
+      "The Beguines",
+      "The Alumbrados",
+      "The Quietists"
+     ]
     },
     {
-     "id": "templars",
+     "id": "orders",
      "kind": "Book",
-     "title": "The Knights Templar",
-     "subtitle": "Bankers, monks and the arrests of 1307",
-     "span": "1119–1314",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "cube"
-    },
-    {
-     "id": "bogomils",
-     "kind": "Booklet",
-     "title": "The Bogomils",
-     "subtitle": "The Balkan dualists before the Cathars",
-     "span": "10th–15th c.",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "tetra"
-    },
-    {
-     "id": "beguines",
-     "kind": "Booklet",
-     "title": "The Beguines",
-     "subtitle": "Women who lived the faith without vows",
-     "span": "12th–14th c.",
+     "title": "The Orders",
+     "subtitle": "Templars, Rosicrucians, Illuminati and Masons",
+     "span": "1119–today",
      "labels": [
       "Suppressed lineages",
-      "Divine feminine"
+      "Secret societies"
      ],
-     "sig": "lotus"
-    },
-    {
-     "id": "alumbrados",
-     "kind": "Booklet",
-     "title": "The Alumbrados",
-     "subtitle": "The illuminated of Spain",
-     "span": "16th c.",
-     "labels": [
-      "Suppressed lineages",
-      "Inquisition"
-     ],
-     "sig": "compass"
-    },
-    {
-     "id": "quietists",
-     "kind": "Booklet",
-     "title": "The Quietists",
-     "subtitle": "Molinos, Guyon and silent prayer",
-     "span": "1675–1699",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "seed"
-    },
-    {
-     "id": "nizari",
-     "kind": "Booklet",
-     "title": "The Nizari Isma'ilis",
-     "subtitle": "Alamut, and the myth of the Assassins",
-     "span": "1090–1256",
-     "labels": [
-      "Suppressed lineages",
-      "Islam"
-     ],
-     "sig": "dodeca"
-    },
-    {
-     "id": "ikhwan",
-     "kind": "Booklet",
-     "title": "The Brethren of Purity",
-     "subtitle": "The fifty-two epistles of Basra",
-     "span": "10th c.",
-     "labels": [
-      "Suppressed lineages",
-      "Islam"
-     ],
-     "sig": "icosa"
-    },
-    {
-     "id": "sabbateans",
-     "kind": "Booklet",
-     "title": "Sabbateans and Frankists",
-     "subtitle": "The messiah of 1665",
-     "span": "1665–1800s",
-     "labels": [
-      "Suppressed lineages",
-      "Judaism"
-     ],
-     "sig": "archspiral"
-    },
-    {
-     "id": "rosicrucians",
-     "kind": "Book",
-     "title": "The Rosicrucians",
-     "subtitle": "Three manifestos, one invisible college",
-     "span": "1614–today",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "borromean"
-    },
-    {
-     "id": "illuminati",
-     "kind": "Booklet",
-     "title": "The Original Illuminati",
-     "subtitle": "Ingolstadt, 1 May 1776",
-     "span": "1776–1785",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "necker"
-    },
-    {
-     "id": "freemasonry",
-     "kind": "Booklet",
-     "title": "Freemasonry",
-     "subtitle": "From stonemasons to the Grand Lodge",
-     "span": "1717–today",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "square"
-    },
-    {
-     "id": "cunning",
-     "kind": "Booklet",
-     "title": "The Cunning Folk",
-     "subtitle": "Healers, midwives and charmers",
-     "span": "c. 1400–1900",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "fruit"
-    },
-    {
-     "id": "witch_trials",
-     "kind": "Book",
-     "title": "The Witch Trials",
-     "subtitle": "Europe, 1450 to 1750",
-     "span": "1450–1750",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "pentagons"
+     "sig": "borromean",
+     "includes": [
+      "The Knights Templar and the arrests of 1307",
+      "The Rosicrucian manifestos",
+      "The original Illuminati, 1776",
+      "Freemasonry and the Grand Lodge"
+     ]
     },
     {
      "id": "inquisitions",
      "kind": "Book",
      "title": "The Inquisitions",
-     "subtitle": "From Languedoc to Goa",
+     "subtitle": "Fire from Languedoc to Goa, and the witch trials",
      "span": "1184–1834",
      "labels": [
       "Inquisition"
      ],
-     "sig": "labyrinth"
+     "sig": "labyrinth",
+     "includes": [
+      "The medieval Inquisition",
+      "Spain, Portugal and Goa",
+      "The Roman Inquisition and the Index",
+      "The cunning folk",
+      "The witch trials, 1450–1750"
+     ]
     },
     {
-     "id": "indigenous",
-     "kind": "Booklet",
-     "title": "Shamanic and Indigenous Traditions",
-     "subtitle": "What the missions tried to erase",
-     "span": "1492–today",
-     "labels": [
-      "Suppressed lineages"
-     ],
-     "sig": "spiral"
-    }
-   ]
-  },
-  {
-   "id": "divine",
-   "title": "Suppressed images of the divine",
-   "note": "Gods, goddesses and schools the institution replaced or absorbed.",
-   "color": "#6E4A12",
-   "open": false,
-   "items": [
-    {
-     "id": "solar",
+     "id": "old_gods",
      "kind": "Book",
-     "title": "The Solar Gods",
-     "subtitle": "The sun the missions came to replace",
-     "span": "c. 1400–1700",
+     "title": "The Old Gods",
+     "subtitle": "The sun, the goddess and the mystery schools",
+     "span": "c. 1500 BCE–1700",
      "labels": [
-      "Solar gods"
-     ],
-     "sig": "compass"
-    },
-    {
-     "id": "feminine",
-     "kind": "Book",
-     "title": "The Divine Feminine",
-     "subtitle": "Sophia, the Magdalene and Guadalupe",
-     "span": "c. 100–1531",
-     "labels": [
-      "Divine feminine"
-     ],
-     "sig": "vesica"
-    },
-    {
-     "id": "mysteries",
-     "kind": "Book",
-     "title": "The Mystery Schools",
-     "subtitle": "Eleusis, Isis and the initiates",
-     "span": "c. 1500 BCE–392 CE",
-     "labels": [
+      "Solar gods",
+      "Divine feminine",
       "Mystery schools"
      ],
-     "sig": "seed"
+     "sig": "seed",
+     "includes": [
+      "The mystery schools: Eleusis and Isis",
+      "The divine feminine: Sophia, the Magdalene, Guadalupe",
+      "The solar gods of the Americas",
+      "Shamanic and Indigenous traditions"
+     ]
     }
    ]
   },
   {
-   "id": "arts",
-   "title": "The forbidden arts",
-   "note": "Practices declared heresy, superstition or evil: the documented history first, the inner reading marked as a reading.",
+   "id": "practice",
+   "title": "The practices",
+   "note": "What was forbidden, and what science says about consciousness. Inner readings are marked as readings.",
    "color": "#3A2A52",
-   "open": false,
+   "open": true,
    "items": [
     {
-     "id": "kundalini",
+     "id": "forbidden_arts",
+     "kind": "Book",
+     "title": "The Forbidden Arts",
+     "subtitle": "Tarot, astrology, plants and the oracles",
+     "span": "",
+     "labels": [
+      "Forbidden arts"
+     ],
+     "sig": "goldrect",
+     "includes": [
+      "Tarot",
+      "Astrology",
+      "Scrying, geomancy and the I Ching",
+      "Gematria and sacred number",
+      "Herbalism and entheogens",
+      "Ancestor veneration",
+      "Mediumship and psychic research, Delphi to Stargate"
+     ]
+    },
+    {
+     "id": "serpent",
      "kind": "Booklet",
-     "title": "Kundalini: The Serpent",
-     "subtitle": "The coiled energy, and Genesis 3",
+     "title": "The Serpent and the Spine",
+     "subtitle": "Kundalini, the sacred secretion and the breath",
      "span": "",
      "labels": [
       "Forbidden arts",
       "Interpretive"
      ],
-     "sig": "ouroboros"
+     "sig": "ouroboros",
+     "includes": [
+      "Kundalini and the serpent of Genesis 3",
+      "The sacrum and the sacred secretion",
+      "Breath and trance",
+      "The pineal gland"
+     ]
     },
-    {
-     "id": "secretion",
-     "kind": "Booklet",
-     "title": "The Sacred Secretion",
-     "subtitle": "The sacrum and the rising oil",
-     "span": "",
-     "labels": [
-      "Forbidden arts",
-      "Interpretive"
-     ],
-     "sig": "tree"
-    },
-    {
-     "id": "breath",
-     "kind": "Booklet",
-     "title": "Breath and Trance",
-     "subtitle": "Pranayama, dhikr and the Jesus Prayer",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "spiral"
-    },
-    {
-     "id": "tarot",
-     "kind": "Booklet",
-     "title": "Tarot",
-     "subtitle": "From card game to the Major Arcana",
-     "span": "1440–today",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "goldrect"
-    },
-    {
-     "id": "astrology",
-     "kind": "Booklet",
-     "title": "Astrology",
-     "subtitle": "Babylon, Kepler and the zodiac",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "compass"
-    },
-    {
-     "id": "alchemy",
-     "kind": "Booklet",
-     "title": "Alchemy",
-     "subtitle": "Solve et coagula",
-     "span": "",
-     "labels": [
-      "Forbidden arts",
-      "Interpretive"
-     ],
-     "sig": "ouroboros"
-    },
-    {
-     "id": "herbalism",
-     "kind": "Booklet",
-     "title": "Herbalism and Plant Medicine",
-     "subtitle": "The healers' pharmacopoeia",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "flower"
-    },
-    {
-     "id": "entheogens",
-     "kind": "Booklet",
-     "title": "Entheogens",
-     "subtitle": "Eleusis and the kykeon",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "lotus"
-    },
-    {
-     "id": "gematria",
-     "kind": "Booklet",
-     "title": "Gematria and Sacred Number",
-     "subtitle": "Letters as numbers, geometry as prayer",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "tetractys"
-    },
-    {
-     "id": "divination",
-     "kind": "Booklet",
-     "title": "Scrying, Geomancy and the I Ching",
-     "subtitle": "Mirrors, sixteen figures and the Changes",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "twin"
-    },
-    {
-     "id": "theurgy",
-     "kind": "Booklet",
-     "title": "Theurgy and Ritual Magic",
-     "subtitle": "Iamblichus to the Golden Dawn",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "heptagram"
-    },
-    {
-     "id": "ancestors",
-     "kind": "Booklet",
-     "title": "Ancestor Veneration",
-     "subtitle": "Condemned as necromancy",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "seed"
-    },
-    {
-     "id": "mediumship",
-     "kind": "Booklet",
-     "title": "Mediumship and Psychic Research",
-     "subtitle": "Delphi to the CIA's Stargate",
-     "span": "",
-     "labels": [
-      "Forbidden arts"
-     ],
-     "sig": "mirror"
-    },
-    {
-     "id": "astral",
-     "kind": "Booklet",
-     "title": "Astral Projection",
-     "subtitle": "Monroe's out-of-body research",
-     "span": "",
-     "labels": [
-      "Forbidden arts",
-      "Interpretive"
-     ],
-     "sig": "torus"
-    }
-   ]
-  },
-  {
-   "id": "observer",
-   "title": "Consciousness and the observer",
-   "note": "What science documents about consciousness, and where the esoteric readings begin.",
-   "color": "#1E3A5A",
-   "open": false,
-   "items": [
     {
      "id": "observer",
      "kind": "Book",
      "title": "The Observer",
-     "subtitle": "What quantum physics says about consciousness, and what it doesn't",
+     "subtitle": "What physics says about consciousness, and what it doesn't",
      "span": "",
      "labels": [
       "Science",
       "Interpretive"
      ],
-     "sig": "torus"
-    },
-    {
-     "id": "pineal",
-     "kind": "Booklet",
-     "title": "The Pineal Gland",
-     "subtitle": "Descartes' seat of the soul",
-     "span": "1649–today",
-     "labels": [
-      "Science",
-      "Interpretive"
-     ],
-     "sig": "seed"
+     "sig": "torus",
+     "includes": [
+      "The observer effect, read correctly",
+      "Theories of consciousness",
+      "Out-of-body research: Monroe",
+      "Where science stops and the readings begin"
+     ]
     }
    ]
   }

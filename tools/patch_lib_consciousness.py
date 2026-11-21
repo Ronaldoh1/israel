@@ -18,7 +18,7 @@ def items_js():
         for b in g['items']:
             n += 1
             out.append({'cs': 1, 'g': g['id'], 'id': 'cs_' + b['id'], 'vol': n, 'status': 'soon', 'ser': CAT['section'], 'kind': b['kind'], 'title': b['title'],
-                        'subtitle': b['subtitle'], 'span': b.get('span', ''), 'labels': b.get('labels', []), 'sig': b.get('sig'), 'color': b.get('color') or g['color']})
+                        'subtitle': b['subtitle'], 'span': b.get('span', ''), 'labels': b.get('labels', []), 'inc': b.get('includes', []), 'sig': b.get('sig'), 'color': b.get('color') or g['color']})
     groups = [{'id': g['id'], 'h': g['title'], 'note': g.get('note', ''), 'open': bool(g.get('open'))} for g in CAT['groups']]
     return 'var CONSC = ' + json.dumps(out, ensure_ascii=False) + ', CONSC_G = ' + json.dumps(groups, ensure_ascii=False) + ', CONSC_SEC = ' + json.dumps({'h': CAT['section'], 'tag': CAT['tagline'], 'sub': CAT['note'], 'cross': CAT.get('cross', [])}, ensure_ascii=False) + ';'
 

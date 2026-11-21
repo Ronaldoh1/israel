@@ -17,12 +17,12 @@ HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-f
 
 SUBHEAD: gold-foil italic serif, two lines: "The knowledge they buried, / burned and banned."
 
-SHELF (below the hero): a row of eight premium cloth-bound books standing upright on a dark wooden shelf, each with a small gold sacred-geometry emblem and gold spine lettering, spelled exactly, left to right: "THE NAG HAMMADI LIBRARY" (deep umber #5A3E1E), "THE GOSPEL OF THOMAS" (umber #6B4A24), "THE ETHIOPIAN BIBLE" (forest #1E4A3A), "THE BOOK OF ENOCH" (deep green #24563F), "KABBALAH" (sapphire #24406E), "SUFISM" (midnight blue #1E3A5A), "THE CATHARS" (wine #5E1F2E), "THE VATICAN ARCHITECTURE" (crimson #6E1A2C, this one standing slightly forward with a small gold tag "READ IT NOW").
+SHELF (below the hero): a row of eight premium cloth-bound books standing upright on a dark wooden shelf, each with a small gold sacred-geometry emblem and gold spine lettering, spelled exactly, left to right: "THE GNOSTICS" (deep umber #5A3E1E), "THE ETHIOPIAN BIBLE" (forest #1E4A3A), "THE DEAD SEA SCROLLS" (umber #6B4A24), "KABBALAH" (sapphire #24406E), "SUFISM" (midnight blue #1E3A5A), "THE HERETICS" (wine #5E1F2E), "THE ORDERS" (deep plum #3A2A52), "THE VATICAN ARCHITECTURE" (crimson #6E1A2C, this one standing slightly forward with a small gold tag "READ IT NOW").
 
 LABEL STRIP (one row of five slim amethyst pills with gold-foil edges, white small caps): "NAG HAMMADI" · "ETHIOPIAN CANON" · "DEAD SEA SCROLLS" · "INNER TRADITIONS" · "FORBIDDEN ARTS".
 
 STAT STRIP (three glossy indigo-glass tiles with gold-foil borders, gold numbers, white labels):
-Tile 1: "59" — "BOOKS AND BOOKLETS COMING"
+Tile 1: "14" — "BOOKS COMING"
 Tile 2: "1945" — "THE YEAR THE JAR WAS OPENED"
 Tile 3: "1559–1966" — "THE VATICAN'S INDEX OF BANNED BOOKS"
 
@@ -30,9 +30,9 @@ ACTION BAR: full-width amethyst bar with a thin gold border, white heavy caps: "
 
 CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/thetruthlibrary" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Start now with The Vatican Architecture, free"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
-Anti-cram rule: if space runs short, drop the label strip first, then shrink the shelf to six books (keep The Nag Hammadi Library, The Ethiopian Bible, The Book of Enoch, Kabbalah, Sufism and The Vatican Architecture); never shrink the headline, the URL or the social pills.
+Anti-cram rule: if space runs short, drop the label strip first, then shrink the shelf to six books (keep The Gnostics, The Ethiopian Bible, The Dead Sea Scrolls, Kabbalah, The Heretics and The Vatican Architecture); never shrink the headline, the URL or the social pills.
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-**Facts on the card:** 59 planned titles (consciousness catalogue, 21 Nov 2026); the Nag Hammadi jar was found in December 1945; the Index Librorum Prohibitorum ran from 1559 until it was abolished in 1966.
+**Facts on the card:** 14 planned titles (13 books and 1 booklet) (consciousness catalogue, 21 Nov 2026); the Nag Hammadi jar was found in December 1945; the Index Librorum Prohibitorum ran from 1559 until it was abolished in 1966.
