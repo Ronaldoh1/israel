@@ -14,7 +14,7 @@
 
 *Who chose the Bible, and the pattern every later shelf repeats.*
 
-**1. The Canon** (Book, c. 150–1966) — Who chose the Bible, and what was left out  
+**1. The Canon** (Book, 144–1966) — **WRITTEN 21 Nov 2026** (9 parts, 18 sections, ~18,000 words, 21 figures; files book/part1/cn1–cn9, sources book/research/cn.json) — Who chose the Bible, and what was left out  
 Labels: Canon, Councils, The Index  
 Includes:
 - How the canon formed, from the 2nd-century lists to Athanasius in 367
