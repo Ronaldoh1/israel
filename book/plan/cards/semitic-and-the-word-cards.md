@@ -7,7 +7,7 @@ Card order:
 2. The family tree and where it was spoken
 3. Who the Semitic peoples are
 4. How the word was named, 1781–2015
-5. What it means now, and how it is used
+5. The word as a shield
 
 ---
 
@@ -135,32 +135,41 @@ Anti-cram rule: if space runs short, drop the subhead first, then shrink the pre
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 5 · What it means now, and how it is used
+## Card 5 · The word as a shield
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette of exactly four colors: deep midnight navy #0A1230 fading to #050914 for the background; Baseline brick red #B23A26 for the accent bar, label tag and callouts; brilliant white #FFFFFF for type; antique-gold metallic foil #E8B44A with real foil sheen and highlights. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-HERO (top quarter): a polished brass balance scale in cinematic light. On the left pan, a small stack of documents with a gold seal; on the right pan, a second stack with a brick-red seal. The beam sits level. A soft gold glow behind it. No people, no flags.
+HERO (top quarter): a heavy medieval-style shield of polished dark steel with a gold-foil rim, standing upright in cinematic side light. Engraved across its face in gold capitals is the single word "LABEL". Behind the shield, partly hidden by it, a stack of documents and a question mark rendered in glowing white light, as if the shield is held up to block the question. Gold light rays behind. No people, no flags, no religious symbols.
 
 LABEL TAG: a small brick-red pill with a gold-foil edge, white small caps: "VOLUME I · THE BASELINE · 5 OF 5".
 
-HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "WHAT THE WORD / MEANS NOW".
+HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow, two lines: "THE WORD AS / A SHIELD 🛡".
 
-SUBHEAD: gold italic serif: "The root is a misnomer. The meaning is settled: hostility to Jews."
+SUBHEAD: gold italic serif: "A question about a government is not hatred of a people."
 
-TWO-COLUMN PANEL (navy glass with a thin gold border; gold header "TWO ARGUMENTS THAT DON'T HOLD"; two columns divided by a thin gold rule; each column has a white heavy-caps quote at top and white text beneath):
-Left column quote: "\"ARABS ARE SEMITES TOO\"" — text: "Since the 1880s the word has meant hostility to Jews. Its parts don't change that."
-Right column quote: "\"CRITICIZING ISRAEL IS ANTISEMITIC BY DEFINITION\"" — text: "Whether it applies depends on the target and the content, not the label."
+PANEL 1 (navy glass with a thin gold border; header in gold caps "A STATE AND A MOVEMENT, NOT A PEOPLE"; gold star bullets, white text):
+★ Zionism is a political movement, organized at Basel in 1897. Judaism is a religion thousands of years old.
+★ Palestinian Arabs and the Jews of the land are both Semitic, by language and by shared ancestry.
+★ Jews drew the line themselves: Reform Judaism (1885), the Bund (1897), Satmar (1958), Jewish Voice for Peace and B'Tselem today.
 
-DISPUTE STRIP (two glossy navy tiles side by side, gold-foil borders, gold numbers, white labels):
-Tile 1: gold "7 OF 11" — white "IHRA examples (2016) tie some criticism of Israel to it. Its text adds: criticism like that of any other country is not."
-Tile 2: gold "200+" — white "Scholars signed the Jerusalem Declaration (2021): boycotts and criticism of Zionism are not, in themselves."
-Small white line under the strip: "Each side has named critics. The dispute is open."
+GIANT QUOTE BLOCK (centrepiece, gold-foil quotation marks, white serif text, small gold attribution beneath):
+"Criticism of Israel similar to that leveled against any other country cannot be regarded as antisemitic."
+— the IHRA definition's own text, 2016
 
-CALLOUT BAR: full-width brick-red bar, white heavy caps: "JUDGE THE TARGET AND THE CONTENT, NOT THE LABEL".
+STAT STRIP (three glossy navy tiles with gold-foil borders, gold numbers, white labels):
+Tile 1: "7 OF 11" — "IHRA EXAMPLES AIMED AT ISRAEL"
+Tile 2: "35 + DC" — "US STATES THAT ADOPTED IT (AUG 2024)"
+Tile 3: "$400M" — "PULLED FROM COLUMBIA IN 4 DAYS (2025)"
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE BASELINE FREE"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+PANEL 2 (navy glass with a thin gold border; header in gold caps "EVEN ITS AUTHOR WARNED"; white text):
+"I drafted the definition of antisemitism… it is being weaponized." — Kenneth Stern, its lead drafter, The Guardian, December 2019. He said it was written to count hate, never to chill speech on campus.
 
-Anti-cram rule: if space runs short, drop the small line under the strip first, then shrink the scale; never shrink the two-column panel, the URL or the social pills.
+CALLOUT BAR: full-width brick-red bar, white heavy caps: "ASK OF ISRAEL WHAT YOU'D ASK OF ANY COUNTRY".
+Small white line beneath: "Hatred of Jews is real, and at a record high (ADL, 2024). Calling a political question hatred weakens the word for the people it protects."
+
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE FULL RECORD FREE"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+
+Anti-cram rule: if space runs short, drop Panel 2 first, then the third bullet of Panel 1, then shrink the shield; never shrink the quote block, the URL or the social pills.
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -176,5 +185,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 - Renan 1855, Steinschneider 1860, Marr 1879, Pinsker 1882: Baseline s00b0 (Zimmermann 1986; Wikipedia "Antisemitism").
 - IHRA spelling memo, April 2015; New York Times, 2021.
 - IHRA definition 2016 (11 examples, 7 on Israel or Zionism) and its line on criticism "similar to that leveled against any other country": European Commission page on the definition.
-- Jerusalem Declaration, 25 March 2021, 200+ signatories; critics at the Begin-Sadat Center and NGO Monitor: Baseline s00b and s00b1.
+- Jerusalem Declaration, 25 March 2021, 200+ signatories: Baseline s00b and s00b1.
+- The word as a shield (card 5): Baseline s00b1 — IHRA adopted by the US government and 35 states plus DC (Aug 2024); Kenneth Stern, The Guardian, Dec 2019 ("I drafted the definition of antisemitism. Rightwing Jews are weaponizing it"); Columbia's $400M loss in four days (2025); ADL record count of 9,354 incidents in 2024.
+- Zionism and Judaism (card 5): Baseline s00c — Basel 1897, Pittsburgh Platform 1885, the Bund 1897, Satmar's VaYoel Moshe 1958.
 - Norwich 1144: Baseline ch01_hatred.
