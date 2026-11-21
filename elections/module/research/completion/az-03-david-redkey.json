@@ -1,0 +1,68 @@
+{
+ "id": "az-03-david-redkey",
+ "cites": {
+  "pfd_redkey25": {
+   "t": "Financial Disclosure Report, Candidate Report 2025, David Wayne Redkey (filed 2025-08-16) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10072224.pdf"
+  },
+  "pfd_redkey26": {
+   "t": "Financial Disclosure Report, Candidate Report 2026, David Wayne Redkey (filed 2026-08-03) — Clerk of the U.S. House",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10075608.pdf"
+  },
+  "ktar_redkey": {
+   "t": "Arizona congressional candidate arrested for alleged threats against judge, attorney's office — KTAR (2026-09-22)",
+   "u": "https://ktar.com/?p=5909851"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "disclosures": "done"
+ },
+ "checks": {
+  "foreign": "2025 and 2026 House candidate reports read directly: no foreign assets or income. FARA: exact-name check of the bulk FARA files (registrants, short forms, foreign principals), searched 2026-10-13: no match.",
+  "legal": "News only: AZFamily/KOLD, KTAR and The Blaze (Sep 21–22, 2026). Maricopa County Superior Court and CourtListener records not reachable; arrest records were sealed at prosecutors' request. A news search on Oct 8 found no reporting after Sep 22 (no plea, indictment, release or trial date reported). Recheck 2026-10-14: a news search again found nothing after Sep 22. KTAR describes the counts as booked 'on suspicion of'; the formal charging document was not seen. His own civil appeals (Redkey v. Clarke, Redkey v. McCollum) appear in his disclosure; they are cases he filed, not cases against him, and are not entered in legal[]."
+ },
+ "legal": [
+  {
+   "kind": "charge-pending",
+   "d": "2026-09-19",
+   "t": "Contacted by the Maricopa County Sheriff's Office Threat Management Unit and booked into jail on Sept 19, 2026. Per KTAR, charged with two felonies (using an electronic communication to intimidate, threaten or harass; computer tampering) and one misdemeanor (threatening or intimidating); AZFamily, citing court records, describes multiple counts of threatening or intimidating plus one count of computer tampering. Prosecutors say he sent threatening emails mentioning guns to a Superior Court judge and an attorney's office; they said no gun was recovered. The sheriff's office says he admitted sending the communications. Bond was set at $150,000 and the arrest documents were sealed to protect the victims. Felony class and case number were not reported.",
+   "short": "Charged: threats to judge, computer tampering",
+   "status": "Charged, not convicted. A hearing was set for about Sept 24, 2026; no plea, indictment, release or later status was reported as of 2026-10-14 (a news search that day returned only the Sep 21–22 reports).",
+   "c": [
+    "kz03davidredkey_ktar_redkey",
+    "kz03davidredkey_azfamily_redkey",
+    "kz03davidredkey_kold_redkey",
+    "kz03davidredkey_blaze_redkey"
+   ]
+  }
+ ],
+ "finances": {
+  "networth": {
+   "min": 100002,
+   "max": 200000,
+   "year": 2025,
+   "c": [
+    "pfd_redkey25"
+   ],
+   "note": "From his 2025 candidate report (period Jan 1, 2024–Jul 21, 2025): two accounts of a court-supervised conservatorship estate, $50K–$100K each. The liabilities listed are court-ordered payments of legal and conservator fees from that estate, not debts. His 2026 report lists nothing, so no 2026 figure."
+  },
+  "trades": {
+   "count": null,
+   "period": "",
+   "overlap": [],
+   "c": [
+    "pfd_redkey25"
+   ],
+   "note": "Candidate reports; no transaction schedule."
+  },
+  "note": {
+   "t": "2025 candidate report and four same-day amendments (Aug 16, 2025): assets are a brokerage account and an operating account of a conservatorship estate that he says came from an accident injury settlement. Earned income: Washington Elementary School District teacher pay ($21,120 in 2025 to filing; $18,120 in 2024; contract about $54,000). Schedule D lists court-ordered payments of attorney and conservator fees from the estate, which he labels in hostile terms; those labels are his allegations, not findings. He lists his own appeals, Redkey v. Clarke (1 CA-CV 24-0476 PB) and Redkey v. McCollum (1 CA-CV 25-0236 PB), plus a superior court suit (CV2023-051893). His 2026 candidate report (Aug 3, 2026, after an extension) discloses nothing on every schedule; in a comment he blames the conservatorship for the missing information.",
+   "c": [
+    "pfd_redkey25",
+    "pfd_redkey26"
+   ]
+  }
+ },
+ "research_notes": "Criminal case: no case number, plea or later status found; recheck the Maricopa County docket by hand. KTAR says he is booked 'on suspicion of' the counts, so whether formal charges were filed needs confirming. His 2026 disclosure is blank on every schedule; whether that is complete or deficient has not been judged. democracy not searched."
+}

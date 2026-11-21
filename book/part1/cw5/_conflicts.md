@@ -1,0 +1,26 @@
+# cw5 — source contradictions presented in the prose
+
+- Jewish Agency payments to the AZC, 1955–62: "more than $5 million" over eight years (DOJ order) vs $5,100,001.02 (Senate record, entered by Fulbright, runs past the order's date) vs $1.5 million (Barda 2026, unsourced). Scenes: s11a, fis_s06; sections cw5_jewish_agency_hearing, cw5_fulbright_inquiry.
+- Did the AZC register? Never registered (Smith, Arikat, ACJ/library accounts, DOJ 1964 report silent) vs "forced the AZC to register" (Wikipedia, 7 March 2016 version). Scenes: s11a, s11c.
+- AIPAC's origin: committee founded 1951 (Wikipedia/Nelson), 1953 (Kenen, 13 Sept 1963), March 1954 (Barda), divested 1954, vs still a subcommittee inside the AZC in Nov 1962 and split off / incorporated about six weeks after the order (library accounts, Smith, Wikipedia 2016). Scenes: s11a, s07g.
+- AIPAC name adopted 1958 (Barda) vs 1959 (Wikipedia, citing Rossinow). Scene: s11a.
+- Why FARA enforcement stopped: "gradually falls apart" after 22 Nov 1963 / "Kennedy's death stopped that effort" / "lost momentum" under Johnson (Smith, Giraldi, Arikat) vs moot because the lobby had separated from Agency money by 1962 (Barda); neither side cites a decision document. Scenes: s11a, s11c, fis_s06.
+- Near East Report start: board decision of 25 January 1955 (AZC records, per Barda) vs began 1957 as a biweekly (Kenen, 1963). Section: cw5_jewish_agency_hearing.
+- Boukstein described as the AZC's counsel (earlier library account) vs the Jewish Agency's attorney (JTA, 28 June 1963). Section: cw5_jewish_agency_hearing.
+- Peres's assurance of 2 April 1963: "will not introduce nuclear weapons ... not be the first" (Israeli record) vs "would not do anything in this field" (Feldman's US record). Scene: s11b.
+- Kennedy's May 1963 letter dated 17 May (telegram 835) vs 18 May (published summaries) vs 19 May (another document). Scenes: s11b; section cw5_eshkol_agreement.
+- Ben-Gurion's 27 May 1963 reply: request for delay, silent on schedule (NSA editors) vs proposal of more limited alternative inspections (Times of Israel, citing Sandler). Scene: s11b.
+- Ben-Gurion's resignation dated 16 June 1963 (NSA document) vs 15 June (NSA editors' introduction) vs 26 June as end of term (Wikipedia). Section: cw5_bengurion_resigns.
+- Dimona start-up: critical 26 December 1963 (Israeli account) vs operations from July 1963 (IAEC Hebrew website). Scene: s11c; section cw5_eshkol_agreement.
+- Number of US visits to Dimona, 1964–69: six (NSA 2019 briefing book) vs seven (Cohen and Burr 2025). Scenes: s11c, s11b; section cw5_eshkol_agreement.
+- NSAM 231 addressees: State, Defense and CIA (NSA editors) vs State, AEC and DCI (the document). Section: cw5_intelligence_alarm.
+- Kennedy to Couve de Murville, 25 May 1963: "we would be blamed equally" (French record) vs "a pretext to the Russians" (US record). Section: cw5_intelligence_alarm.
+- Second Dimona visit, Sept 1962: "no evidence" of weapons preparation (State circular CA-4726, Oct 1962) vs a "fiasco" (Burr and Cohen). Section: cw5_palm_beach.
+- Soviet recognition of the Yemen Arab Republic: 30 September 1962 (UN) vs 1 October (Riedel). Section: cw5_yemen.
+- Heinz Krug's killer: Otto Skorzeny (Raviv and Melman) vs a Mossad squad (Bergman). Section: cw5_damocles.
+- Iraq coup deaths, Feb 1963: 300–5,000 communist sympathizers plus ~80 Ba'athists (Ahram) vs 1,500–5,000 suspected communists (Gibson). Section: cw5_bathist_coups.
+- US role in the Feb 1963 Iraqi coup: "open secret" / "ample evidence" / "condoned ... contributed" (Wolfe-Hunnicutt, Jacobsen, Citino) vs "was not behind" / "no evidence" (Gibson, Hahn, Barrett, West); Komer memo dated 8 Feb (Wikipedia citation) vs "the day after the coup" (Gibson). Section: cw5_bathist_coups.
+- Syria's NCRC: formed 9 March 1963 (Wikipedia) vs provisional constitution confirming it 24 March (Library of Congress). Section: cw5_bathist_coups.
+- Damascus coup attempt of 18 July 1963: 40–70 casualties vs "hundreds". Section: cw5_bathist_coups.
+- Part 9 of the Fulbright inquiry: Agency money funding US lobbying (Smith, ACJ 1997; Shukairy at the UN) vs "absolutely nothing damaging", "no wrong doing" (Neumann) and an "absolute" separation (Barda). Sections: cw5_jewish_agency_hearing, cw5_fulbright_inquiry, cw5_shukairy_un.
+- Not in the prose, noted for the merge: the s11a/azc entity text in src says "The DOJ later withdrew the registration demand", which conflicts with Smith's account that the order was kept secret and never withdrawn or enforced. Scene: s11a.

@@ -1,0 +1,248 @@
+{
+ "nodes": [
+  {
+   "id": "harvard_report",
+   "name": "Harvard's review of its Epstein ties (May 2020)",
+   "kind": "document",
+   "cluster": "culture",
+   "note": "$9.1M in gifts, 1998-2008, none accepted after the conviction; $6.5M (2003) helped create the Program for Evolutionary Dynamics; Visiting Fellow in 2005 though he lacked the usual qualifications; more than 40 visits to the programme's offices 2010-18, with key cards, the passcode and a key to \"Jeffrey's Office\"; after the conviction he helped steer another donor's gift, which development officers knew of. $200,937 unspent went to two survivor charities."
+  },
+  {
+   "id": "ped",
+   "name": "Program for Evolutionary Dynamics (Harvard)",
+   "kind": "institution",
+   "cluster": "culture",
+   "note": "Created with Epstein's $6.5M gift (2003), directed by Martin Nowak. Gave Epstein access cards, the office passcode and a key to an office it called \"Jeffrey's Office\" before 2017 (Harvard review)."
+  },
+  {
+   "id": "kosslyn",
+   "name": "Stephen Kosslyn",
+   "kind": "person",
+   "cluster": "culture",
+   "note": "Harvard psychology chair. Received $200,000 from Epstein 1998-2002 and recommended him as a Visiting Fellow in 2005 (Harvard review)."
+  },
+  {
+   "id": "mit_report",
+   "name": "MIT's Goodwin Procter report (Jan 2020)",
+   "kind": "document",
+   "cluster": "culture",
+   "note": "$850,000 in ten gifts 2002-17, nine after the conviction: $525,000 to the Media Lab, $225,000 to Seth Lloyd, $100,000 for Marvin Minsky (2002). Three vice presidents learned of his record in 2013 and approved later gifts under an informal framework; nine campus visits 2013-17 driven by Ito or Lloyd; President Reif did not know."
+  },
+  {
+   "id": "mit_vps",
+   "name": "MIT vice presidents Morgan, Newton and Ruiz",
+   "kind": "person",
+   "cluster": "culture",
+   "note": "R. Gregory Morgan, Jeffrey Newton and Israel Ruiz learned in 2013 of the Media Lab gifts and his sex-offence record and approved later gifts under an informal framework they set up (Goodwin Procter report)."
+  },
+  {
+   "id": "forbes_pub",
+   "name": "Forbes (contributor network)",
+   "kind": "company",
+   "cluster": "reputation",
+   "note": "Ran a 2013 contributor piece praising Epstein as a \"science funder\"; removed in 2019 for failing editorial standards after a New York Times inquiry."
+  },
+  {
+   "id": "natreview",
+   "name": "National Review Online",
+   "kind": "company",
+   "cluster": "reputation",
+   "note": "Ran a 2013 piece under the byline of Christina Galbraith, who worked as Epstein's publicist; removed in 2019."
+  },
+  {
+   "id": "huffpost",
+   "name": "HuffPost (contributor network)",
+   "kind": "company",
+   "cluster": "reputation",
+   "note": "Ran a 2017 contributor piece praising his work with scientists; removed in 2019 at the author's request."
+  },
+  {
+   "id": "hendricks",
+   "name": "Drew Hendricks",
+   "kind": "person",
+   "cluster": "reputation",
+   "note": "Forbes contributor. The New York Times reported that a PR firm supplied his 2013 piece on Epstein and that he was paid $600 to post it under his name."
+  },
+  {
+   "id": "galbraith",
+   "name": "Christina Galbraith",
+   "kind": "person",
+   "cluster": "reputation",
+   "note": "Worked as a publicist for Epstein (New York Times); a 2013 National Review piece under her byline praised him."
+  }
+ ],
+ "edges": [
+  {
+   "f": "harvard_report",
+   "t": "harvard",
+   "label": "the university's own review, 1 May 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Harvard Magazine, May 2020: Harvard reports Jeffrey Epstein gifts (the university's review)",
+     "u": "https://www.harvardmagazine.com/2020/05/harvard-report-jeffrey-epstein-gifts"
+    },
+    {
+     "t": "Harvard University, Report regarding Jeffrey Epstein's connections to Harvard (1 May 2020)",
+     "u": "https://www.harvard.edu/president/news/2020/report-regarding-jeffrey-epstein-s-connections-to-harvard"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "ped",
+   "label": "$6.5M gift, 2003; office, key cards and passcode; 40+ visits 2010-18",
+   "type": "funding",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Harvard Magazine, May 2020: Harvard reports Jeffrey Epstein gifts (the university's review)",
+     "u": "https://www.harvardmagazine.com/2020/05/harvard-report-jeffrey-epstein-gifts"
+    }
+   ]
+  },
+  {
+   "f": "nowak",
+   "t": "ped",
+   "label": "director",
+   "type": "employment",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Harvard Magazine, May 2020: Harvard reports Jeffrey Epstein gifts (the university's review)",
+     "u": "https://www.harvardmagazine.com/2020/05/harvard-report-jeffrey-epstein-gifts"
+    }
+   ]
+  },
+  {
+   "f": "kosslyn",
+   "t": "epstein",
+   "label": "received $200,000 1998-2002; recommended him as Visiting Fellow, 2005",
+   "type": "sponsorship",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Harvard Magazine, May 2020: Harvard reports Jeffrey Epstein gifts (the university's review)",
+     "u": "https://www.harvardmagazine.com/2020/05/harvard-report-jeffrey-epstein-gifts"
+    }
+   ]
+  },
+  {
+   "f": "mit_report",
+   "t": "mit",
+   "label": "fact-finding by Goodwin Procter, 10 Jan 2020",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "MIT News, 10 Jan 2020: MIT releases results of fact-finding on engagements with Jeffrey Epstein (Goodwin Procter)",
+     "u": "https://news.mit.edu/2020/mit-releases-results-fact-finding-report-jeffrey-epstein-0110"
+    }
+   ]
+  },
+  {
+   "f": "mit_vps",
+   "t": "epstein",
+   "label": "approved post-conviction gifts from 2013 under an informal framework",
+   "type": "gift approval",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "MIT News, 10 Jan 2020: MIT releases results of fact-finding on engagements with Jeffrey Epstein (Goodwin Procter)",
+     "u": "https://news.mit.edu/2020/mit-releases-results-fact-finding-report-jeffrey-epstein-0110"
+    }
+   ]
+  },
+  {
+   "f": "mit_vps",
+   "t": "mit",
+   "label": "vice presidents",
+   "type": "employment",
+   "status": "verified",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "MIT News, 10 Jan 2020: MIT releases results of fact-finding on engagements with Jeffrey Epstein (Goodwin Procter)",
+     "u": "https://news.mit.edu/2020/mit-releases-results-fact-finding-report-jeffrey-epstein-0110"
+    }
+   ]
+  },
+  {
+   "f": "hendricks",
+   "t": "forbes_pub",
+   "label": "posted the 2013 piece under his name (supplied by a PR firm; paid $600, per the NYT)",
+   "type": "publication",
+   "status": "reported",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "TheWrap, July 2019: three publishers delete pro-Epstein stories after a New York Times inquiry",
+     "u": "https://www.thewrap.com/3-publishers-delete-pro-jeffrey-epstein-stories-after-ny-times-inquiry/"
+    }
+   ]
+  },
+  {
+   "f": "hendricks",
+   "t": "epstein",
+   "label": "2013 piece praising him as a \"science funder\"",
+   "type": "publication",
+   "status": "reported",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "TheWrap, July 2019: three publishers delete pro-Epstein stories after a New York Times inquiry",
+     "u": "https://www.thewrap.com/3-publishers-delete-pro-jeffrey-epstein-stories-after-ny-times-inquiry/"
+    }
+   ]
+  },
+  {
+   "f": "galbraith",
+   "t": "epstein",
+   "label": "worked as his publicist (NYT)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "TheWrap, July 2019: three publishers delete pro-Epstein stories after a New York Times inquiry",
+     "u": "https://www.thewrap.com/3-publishers-delete-pro-jeffrey-epstein-stories-after-ny-times-inquiry/"
+    }
+   ]
+  },
+  {
+   "f": "galbraith",
+   "t": "natreview",
+   "label": "2013 piece under her byline; removed 2019",
+   "type": "publication",
+   "status": "reported",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "TheWrap, July 2019: three publishers delete pro-Epstein stories after a New York Times inquiry",
+     "u": "https://www.thewrap.com/3-publishers-delete-pro-jeffrey-epstein-stories-after-ny-times-inquiry/"
+    }
+   ]
+  },
+  {
+   "f": "huffpost",
+   "t": "epstein",
+   "label": "2017 contributor piece praising him; removed 2019",
+   "type": "publication",
+   "status": "reported",
+   "src": "pass 6 (institutions and reputation), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "TheWrap, July 2019: three publishers delete pro-Epstein stories after a New York Times inquiry",
+     "u": "https://www.thewrap.com/3-publishers-delete-pro-jeffrey-epstein-stories-after-ny-times-inquiry/"
+    }
+   ]
+  }
+ ]
+}

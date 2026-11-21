@@ -1,0 +1,182 @@
+{
+ "nodes": [
+  {
+   "id": "oversight_report_2026",
+   "name": "House Oversight majority report (10 Nov 2026)",
+   "kind": "document",
+   "cluster": "release",
+   "note": "137 pages after a 15-month inquiry (19 interviews): abuse from 2005 could have been prevented but for failures by federal prosecutors in South Florida and Washington; possible conflicts of interest of former prosecutors Menchel and Reinhart; Acosta's hands-off approach; banks that missed trafficking and immigration-fraud signs; MCC lapses; a rushed release that exposed survivors. Recommends the DOJ re-interview witnesses and investigate associates, Treasury review banks' reporting, and a law against NDAs that conceal abuse. Says the facts do not implicate Trump; Democrats (Garcia, incoming chair from January) call it partisan and incomplete. The DOJ says its recommendations \"have already been addressed\"; Attorney General Blanche says the case \"is not closed\"."
+  },
+  {
+   "id": "demarchelier",
+   "name": "Patrick Demarchelier",
+   "kind": "person",
+   "cluster": "witnesses",
+   "note": "Fashion photographer (d. 2022). Named by Kellen to House Oversight (May 2026): introduced her to Epstein, whom he described as a Victoria's Secret scout, and exposed himself to her. No response reported; never charged."
+  },
+  {
+   "id": "gmax_commutation",
+   "name": "Maxwell's commutation application (2025)",
+   "kind": "document",
+   "cluster": "release",
+   "note": "A whistleblower told House Judiciary Democrats in Nov 2025 that Maxwell was seeking commutation of her 20-year sentence; NBC saw her email headed \"commutation application\". The White House said a pardon was not something Trump had thought about; Blanche told Congress on 19 May 2026 he would not recommend one. No decision reported as of 20 Nov 2026."
+  },
+  {
+   "id": "doj_no_network",
+   "name": "DOJ position: no credible evidence of a wider network (2026)",
+   "kind": "document",
+   "cluster": "release",
+   "note": "The DOJ told NPR (April 2026) that \"there has not been credible evidence that their activities extended to Epstein's network\" and that it would act if prosecutable evidence emerged. No US arrest has followed the 2025-26 releases; Maxwell remains the only associate convicted. Former prosecutors cite the burden of proof, victims' fear of testifying and expired limitation periods for some charges (NPR)."
+  }
+ ],
+ "edges": [
+  {
+   "f": "comer",
+   "t": "oversight_report_2026",
+   "label": "issued the majority report, 10 Nov 2026",
+   "type": "authorship",
+   "status": "verified",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR via GPB, 10 Nov 2026: federal government failed to hold Epstein accountable, Republican committee says",
+     "u": "https://www.gpb.org/news/2026/11/10/federal-government-failed-hold-epstein-accountable-republican-committee-says"
+    },
+    {
+     "t": "Al Jazeera, 11 Nov 2026: GOP-led House report slams systemic failures in handling of Epstein case (137 pages)",
+     "u": "https://aljazeera.com/news/2026/11/11/gop-led-house-report-slams-systemic-failures-in-handling-of-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "oversight_report_2026",
+   "t": "doj",
+   "label": "recommends re-interviewing witnesses and investigating associates",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR via GPB, 10 Nov 2026: federal government failed to hold Epstein accountable, Republican committee says",
+     "u": "https://www.gpb.org/news/2026/11/10/federal-government-failed-hold-epstein-accountable-republican-committee-says"
+    },
+    {
+     "t": "Al Jazeera, 11 Nov 2026: GOP-led House report slams systemic failures in handling of Epstein case (137 pages)",
+     "u": "https://aljazeera.com/news/2026/11/11/gop-led-house-report-slams-systemic-failures-in-handling-of-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "oversight_report_2026",
+   "t": "acosta",
+   "label": "faults his hands-off approach",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 11 Nov 2026: GOP-led House report slams systemic failures in handling of Epstein case (137 pages)",
+     "u": "https://aljazeera.com/news/2026/11/11/gop-led-house-report-slams-systemic-failures-in-handling-of-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "oversight_report_2026",
+   "t": "mcc",
+   "label": "12 skipped patrols and three counts; cell unmonitored nearly eight hours",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 11 Nov 2026: GOP-led House report slams systemic failures in handling of Epstein case (137 pages)",
+     "u": "https://aljazeera.com/news/2026/11/11/gop-led-house-report-slams-systemic-failures-in-handling-of-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "kellen",
+   "t": "demarchelier",
+   "label": "named him in her House Oversight interview, May 2026 (introduced her to Epstein; exposure)",
+   "type": "testimony",
+   "status": "reported",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "CNN via KEYT, 22 May 2026: who Epstein's longtime assistant accused of sexual abuse",
+     "u": "https://keyt.com/politics/cnn-us-politics/2026/05/22/here-is-who-epsteins-longtime-assistant-accused-of-sexual-abuse/"
+    }
+   ]
+  },
+  {
+   "f": "kellen",
+   "t": "fekkai",
+   "label": "named him in her House Oversight interview, May 2026; he says he \"never assaulted anyone\"",
+   "type": "testimony",
+   "status": "reported",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "CNN via KEYT, 22 May 2026: who Epstein's longtime assistant accused of sexual abuse",
+     "u": "https://keyt.com/politics/cnn-us-politics/2026/05/22/here-is-who-epsteins-longtime-assistant-accused-of-sexual-abuse/"
+    }
+   ]
+  },
+  {
+   "f": "gmax",
+   "t": "gmax_commutation",
+   "label": "application reported Nov 2025; no decision as of 20 Nov 2026",
+   "type": "claim",
+   "status": "reported",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News (via NBC Bay Area), 10 Nov 2025: Ghislaine Maxwell seeking commutation, whistleblower tells House Democrats",
+     "u": "https://www.nbcbayarea.com/news/national-international/ghislaine-maxwell-seeking-commutation-prison-sentence-trump-whistleblower/3978541/"
+    }
+   ]
+  },
+  {
+   "f": "blanche",
+   "t": "gmax_commutation",
+   "label": "told Congress he would not recommend a pardon, 19 May 2026",
+   "type": "testimony",
+   "status": "reported",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News (via NBC Bay Area), 10 Nov 2025: Ghislaine Maxwell seeking commutation, whistleblower tells House Democrats",
+     "u": "https://www.nbcbayarea.com/news/national-international/ghislaine-maxwell-seeking-commutation-prison-sentence-trump-whistleblower/3978541/"
+    }
+   ]
+  },
+  {
+   "f": "doj",
+   "t": "doj_no_network",
+   "label": "told NPR there was no credible evidence the activities extended to a wider network (Apr 2026)",
+   "type": "claim",
+   "status": "reported",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 3 Apr 2026: after the release of the Epstein files, why have there been so few arrests?",
+     "u": "https://www.npr.org/2026/04/03/nx-s1-5766260/epstein-files-arrests-doj-prosecutors"
+    }
+   ]
+  },
+  {
+   "f": "nm_commission",
+   "t": "zorro",
+   "label": "initial report 5 Aug 2026: at least 5 victims at the ranch 1996-2012; 227 flights; SDNY, the FAA and JPMorgan did not answer subpoenas; final report due 31 Dec 2026",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 9 (continuity after 2019), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "KOB, 5 Aug 2026: New Mexico's Epstein commission releases initial report",
+     "u": "https://kob.com/new-mexico/new-mexicos-epstein-commission-releases-initial-report"
+    }
+   ]
+  }
+ ]
+}

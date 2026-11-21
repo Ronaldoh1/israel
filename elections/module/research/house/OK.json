@@ -1,0 +1,226 @@
+{
+ "state": "OK",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ok": {
+   "t": "2026 United States House of Representatives elections in Oklahoma — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Oklahoma"
+  },
+  "kosu_ok": {
+   "t": "2026 Oklahoma primary election results — KOSU",
+   "u": "https://www.kosu.org/2026-oklahoma-primary-election-results"
+  },
+  "fox23_lahmeyer": {
+   "t": "Jackson Lahmeyer withdraws from Oklahoma's 1st Congressional District race — FOX23",
+   "u": "https://fox23.com/news/local/jackson-lahmeyer-withdraws-from-oklahomas-1st-congressional-district-race"
+  }
+ },
+ "races": [
+  {
+   "race": "OK-01",
+   "incumbent": {
+    "name": "Kevin Hern",
+    "party": "R",
+    "status": "Running for U.S. Senate"
+   },
+   "nominees": [
+    {
+     "name": "Mark Tedford",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ok-01-mark-tedford",
+     "fec": [
+      "H6OK01235"
+     ]
+    },
+    {
+     "name": "John Croisant",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ok-01-john-croisant",
+     "fec": [
+      "H6OK01201"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. June 16 R primary: Tedford 32.2%, Jackson Lahmeyer 25.9%; Lahmeyer withdrew from the Aug 25 runoff (notice filed June 19), leaving Tedford the nominee.",
+   "c": [
+    "wiki_ok",
+    "kosu_ok",
+    "fox23_lahmeyer"
+   ]
+  },
+  {
+   "race": "OK-02",
+   "incumbent": {
+    "name": "Josh Brecheen",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Josh Brecheen",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ok-02-josh-brecheen",
+     "fec": [
+      "H2OK02315"
+     ]
+    },
+    {
+     "name": "Brandon Wade",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ok-02-brandon-wade",
+     "fec": [
+      "H4OK02196",
+      "S2OK00285"
+     ]
+    },
+    {
+     "name": "Ronnie Hopkins",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ok-02-ronnie-hopkins",
+     "fec": [
+      "H4OK02204"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "wiki_ok",
+    "kosu_ok"
+   ]
+  },
+  {
+   "race": "OK-03",
+   "incumbent": {
+    "name": "Frank Lucas",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Frank Lucas",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ok-03-frank-lucas",
+     "fec": [
+      "H4OK06056"
+     ]
+    },
+    {
+     "name": "Suzie Byrd",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ok-03-suzanne-byrd",
+     "fec": [
+      "H6OK03272"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Lucas 70.8% in primary; Byrd 67.4%.",
+   "c": [
+    "wiki_ok",
+    "kosu_ok"
+   ]
+  },
+  {
+   "race": "OK-04",
+   "incumbent": {
+    "name": "Tom Cole",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Tom Cole",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ok-04-tom-cole",
+     "fec": [
+      "H2OK04055"
+     ]
+    },
+    {
+     "name": "Mitchell Jacob",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ok-04-mitchell-jacob",
+     "fec": [
+      "H6OK04155"
+     ]
+    },
+    {
+     "name": "Rocco Bonacci",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "wiki_ok",
+    "kosu_ok"
+   ]
+  },
+  {
+   "race": "OK-05",
+   "incumbent": {
+    "name": "Stephanie Bice",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Stephanie Bice",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ok-05-stephanie-bice",
+     "fec": [
+      "H0OK05205"
+     ]
+    },
+    {
+     "name": "Jena Nelson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ok-05-jena-nelson",
+     "fec": [
+      "H6OK05293"
+     ]
+    },
+    {
+     "name": "Robert Henri",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ok-05-robert-henri",
+     "fec": [
+      "H6OK05301"
+     ]
+    },
+    {
+     "name": "Austin Nieves",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ok-05-austin-nieves",
+     "fec": [
+      "H4OK04176"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Bice had no primary opponent (KOSU); Nelson won D primary 56.7%.",
+   "c": [
+    "wiki_ok",
+    "kosu_ok"
+   ]
+  }
+ ]
+}

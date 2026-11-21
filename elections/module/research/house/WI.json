@@ -1,0 +1,333 @@
+{
+ "state": "WI",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_wi": {
+   "t": "2026 United States House of Representatives elections in Wisconsin — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Wisconsin"
+  },
+  "gp_wi": {
+   "t": "The Green Papers: Wisconsin 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/WI"
+  }
+ },
+ "races": [
+  {
+   "race": "WI-01",
+   "incumbent": {
+    "name": "Bryan Steil",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Bryan Steil",
+     "party": "R",
+     "incumbent": true,
+     "rec": "wi-01-bryan-steil",
+     "fec": [
+      "H8WI01156"
+     ]
+    },
+    {
+     "name": "Mitchell Berman",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-01-mitchell-berman",
+     "fec": [
+      "H6WI01283"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 11, 2026 primary: Berman won Democratic primary 44.1% over Peter Burgelis (withdrew, stayed on ballot).",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-02",
+   "incumbent": {
+    "name": "Mark Pocan",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mark Pocan",
+     "party": "D",
+     "incumbent": true,
+     "rec": "wi-02-mark-pocan",
+     "fec": [
+      "H2WI02124"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Unopposed: no Republican filed (both sources).",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-03",
+   "incumbent": {
+    "name": "Derrick Van Orden",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Derrick Van Orden",
+     "party": "R",
+     "incumbent": true,
+     "rec": "wi-03-derrick-van-orden",
+     "fec": [
+      "H0WI03175"
+     ]
+    },
+    {
+     "name": "Rebecca Cooke",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-03-rebecca-cooke",
+     "fec": [
+      "H2WI03130",
+      "H4WI03169"
+     ]
+    },
+    {
+     "name": "Alexander Kent",
+     "party": "I",
+     "incumbent": false,
+     "rec": "wi-03-alexander-kent",
+     "fec": [
+      "H6WI03230"
+     ]
+    },
+    {
+     "name": "Rustin Provance",
+     "party": "I",
+     "incumbent": false,
+     "rec": "wi-03-rustin-provance",
+     "fec": [
+      "H2WI03163"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Cooke won Democratic primary 60.5% over Emily Berge. Independents Kent and Provance are listed by Green Papers (Provance survived a petition challenge) but not by Wikipedia.",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-04",
+   "incumbent": {
+    "name": "Gwen Moore",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Gwen Moore",
+     "party": "D",
+     "incumbent": true,
+     "rec": "wi-04-gwen-moore",
+     "fec": [
+      "H4WI04183"
+     ]
+    },
+    {
+     "name": "Tim Rogers",
+     "party": "R",
+     "incumbent": false,
+     "rec": "wi-04-tim-rogers",
+     "fec": [
+      "H4WI04274",
+      "H8WI04069"
+     ]
+    },
+    {
+     "name": "Arthur Burks",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Moore won primary 71.9% over Amy Donahue. Burks is an independent per Green Papers (Wikipedia lists him without party); no FEC filing found.",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-05",
+   "incumbent": {
+    "name": "Scott Fitzgerald",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Scott Fitzgerald",
+     "party": "R",
+     "incumbent": true,
+     "rec": "wi-05-scott-fitzgerald",
+     "fec": [
+      "H0WI05113"
+     ]
+    },
+    {
+     "name": "Andrew Beck",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-05-andrew-beck",
+     "fec": [
+      "H6WI05136"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-06",
+   "incumbent": {
+    "name": "Glenn Grothman",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Glenn Grothman",
+     "party": "R",
+     "incumbent": true,
+     "rec": "wi-06-glenn-grothman",
+     "fec": [
+      "H4WI06048"
+     ]
+    },
+    {
+     "name": "Brad Smith",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-06-bradley-smith",
+     "fec": [
+      "H6WI06191"
+     ]
+    },
+    {
+     "name": "Matthew Arndt",
+     "party": "G",
+     "incumbent": false,
+     "rec": "wi-06-matthew-arndt",
+     "fec": [
+      "H6WI06274"
+     ]
+    },
+    {
+     "name": "Elizabeth Fitzgibbon",
+     "party": "I",
+     "incumbent": false,
+     "rec": "wi-06-elizabeth-fitzgibbon",
+     "fec": [
+      "H6WI06241"
+     ]
+    },
+    {
+     "name": "Michael Thurow",
+     "party": "I",
+     "incumbent": false,
+     "rec": "wi-06-michael-thurow",
+     "fec": [
+      "H6WI06233"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Smith won Democratic primary by 367 votes (50.2%-49.7%) over Amanda Bell. Arndt is Wisconsin Green per Green Papers (no party on Wikipedia); Fitzgibbon listed by Green Papers only.",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-07",
+   "incumbent": {
+    "name": "Tom Tiffany",
+    "party": "R",
+    "status": "Running for governor"
+   },
+   "nominees": [
+    {
+     "name": "Michael Alfonso",
+     "party": "R",
+     "incumbent": false,
+     "rec": "wi-07-michael-alfonso",
+     "fec": [
+      "H6WI07223"
+     ]
+    },
+    {
+     "name": "Fred Clark",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-07-frederic-clark",
+     "fec": [
+      "H6WI07207"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Alfonso won GOP primary 49.0% to Kevin Hermening's 26.6%; Clark won Democratic primary 37.7% to Ginger Murray's 31.8%.",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  },
+  {
+   "race": "WI-08",
+   "incumbent": {
+    "name": "Tony Wied",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Tony Wied",
+     "party": "R",
+     "incumbent": true,
+     "rec": "wi-08-tony-wied",
+     "fec": [
+      "H4WI08119"
+     ]
+    },
+    {
+     "name": "Rick Crosson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "wi-08-rick-crosson",
+     "fec": [
+      "H6WI08205"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Crosson won Democratic primary 35.2% to Mark Scheffler's 33.0%.",
+   "c": [
+    "wiki_wi",
+    "gp_wi"
+   ]
+  }
+ ]
+}

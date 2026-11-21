@@ -1,0 +1,204 @@
+{
+ "state": "KS",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ks": {
+   "t": "2026 United States House of Representatives elections in Kansas — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Kansas"
+  },
+  "gp_ks": {
+   "t": "The Green Papers: Kansas 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/KS"
+  },
+  "bp_musser": {
+   "t": "Craig Musser — Ballotpedia",
+   "u": "https://ballotpedia.org/Craig_Musser"
+  }
+ },
+ "races": [
+  {
+   "race": "KS-01",
+   "incumbent": {
+    "name": "Tracey Mann",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Tracey Mann",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ks-01-tracey-mann",
+     "fec": [
+      "H0KS01123"
+     ]
+    },
+    {
+     "name": "Lauren Reinhold",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ks-01-lauren-reinhold",
+     "fec": [
+      "H6KS01203"
+     ]
+    },
+    {
+     "name": "Steven Robert Jacob",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ks-01-steven-jacob",
+     "fec": [
+      "H6KS01229"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 4: Mann 81.0% over Craig Musser; Reinhold 64.1%. Ballotpedia says Musser declared an independent bid; Wikipedia lists him as 'United Kansas' with unclear status; Green Papers omits him. Not listed.",
+   "c": [
+    "wiki_ks",
+    "gp_ks",
+    "bp_musser"
+   ]
+  },
+  {
+   "race": "KS-02",
+   "incumbent": {
+    "name": "Derek Schmidt",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Derek Schmidt",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ks-02-derek-schmidt",
+     "fec": [
+      "H4KS02164"
+     ]
+    },
+    {
+     "name": "Don Coover",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ks-02-don-coover",
+     "fec": [
+      "H6KS02276"
+     ]
+    },
+    {
+     "name": "John Hauer",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ks-02-john-hauer",
+     "fec": [
+      "H4KS02230"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Schmidt 79.9% in primary. Hauer (L) from Green Papers only.",
+   "c": [
+    "wiki_ks",
+    "gp_ks"
+   ]
+  },
+  {
+   "race": "KS-03",
+   "incumbent": {
+    "name": "Sharice Davids",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Sharice Davids",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ks-03-sharice-davids",
+     "fec": [
+      "H8KS03155"
+     ]
+    },
+    {
+     "name": "Eric Jenkins",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ks-03-eric-jenkins",
+     "fec": [
+      "H6KS03308"
+     ]
+    },
+    {
+     "name": "Steve Hohe",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ks-03-steven-hohe",
+     "fec": [
+      "H0KS03269",
+      "H6KS03225"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Jenkins won R primary 78.7%. Hohe (L) from Green Papers only.",
+   "c": [
+    "wiki_ks",
+    "gp_ks"
+   ]
+  },
+  {
+   "race": "KS-04",
+   "incumbent": {
+    "name": "Ron Estes",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ron Estes",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ks-04-ron-estes",
+     "fec": [
+      "H8KS04112",
+      "H8KS04187"
+     ]
+    },
+    {
+     "name": "Katy Tyndell",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ks-04-katy-tyndell",
+     "fec": [
+      "H6KS04272"
+     ]
+    },
+    {
+     "name": "Drew Cranmer",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ks-04-andrew-cranmer",
+     "fec": [
+      "H6KS04280"
+     ]
+    },
+    {
+     "name": "Paul Catanese",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ks-04-paul-catanese",
+     "fec": [
+      "H6KS04256"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Tyndell won D primary 66.1%. Catanese (I) listed by Wikipedia but not Green Papers; Cranmer (L) listed by Green Papers.",
+   "c": [
+    "wiki_ks",
+    "gp_ks"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,800 @@
+{
+ "_note": "Historical layer (Nov 2026). Built by history_layer.py; do not edit by hand.",
+ "node_notes": {
+  "nm_rothschild": "London house of the Rothschild bank (Nathan Mayer, then Lionel, Natty, and from the 1910s Lionel Nathan and Anthony Gustav). Documented acts in this map: the Suez Canal shares loan (1875), the London gold fixing at its offices from 1919, and the 1917 address of the Balfour letter to Walter, a family member who was not a partner. Family members were on both sides of Zionism: Walter and Edmond for, Lionel Nathan's League of British Jews against."
+ },
+ "edges": [
+  {
+   "f": "mayer_amschel",
+   "t": "amschel_m",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of Mayer Amschel Rothschild (1744-1812), court factor to Hesse-Kassel; ran the Frankfurt house."
+  },
+  {
+   "f": "amschel_m",
+   "t": "ma_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Head of the Frankfurt house."
+  },
+  {
+   "f": "mayer_amschel",
+   "t": "salomon_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of Mayer Amschel Rothschild (1744-1812), court factor to Hesse-Kassel; ran the Vienna house."
+  },
+  {
+   "f": "salomon_r",
+   "t": "sm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Head of the Vienna house."
+  },
+  {
+   "f": "mayer_amschel",
+   "t": "nathan_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of Mayer Amschel Rothschild (1744-1812), court factor to Hesse-Kassel; ran the London house."
+  },
+  {
+   "f": "nathan_r",
+   "t": "nm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Head of the London house."
+  },
+  {
+   "f": "mayer_amschel",
+   "t": "carl_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of Mayer Amschel Rothschild (1744-1812), court factor to Hesse-Kassel; ran the Naples house."
+  },
+  {
+   "f": "carl_r",
+   "t": "cm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Head of the Naples house."
+  },
+  {
+   "f": "mayer_amschel",
+   "t": "james_mayer",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of Mayer Amschel Rothschild (1744-1812), court factor to Hesse-Kassel; ran the Paris house."
+  },
+  {
+   "f": "james_mayer",
+   "t": "rothschild_freres",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Head of the Paris house."
+  },
+  {
+   "f": "cm_rothschild",
+   "t": "carl_r",
+   "type": "association",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "The Naples house closed in 1863."
+  },
+  {
+   "f": "nathan_r",
+   "t": "lionel_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Lionel (1808-79), Nathan's eldest son, succeeded him in London."
+  },
+  {
+   "f": "lionel_r",
+   "t": "nm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Lionel led N M Rothschild & Sons after his father."
+  },
+  {
+   "f": "nathan_r",
+   "t": "nathaniel_paris",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Nathaniel (1812-70), Nathan's fourth child, moved to Paris."
+  },
+  {
+   "f": "nathan_r",
+   "t": "anthony_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Anthony (1810-76), 1st Baronet, of Nathan's line."
+  },
+  {
+   "f": "lionel_r",
+   "t": "natty",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_lionel",
+   "label": "Child of Lionel de Rothschild (children: Leonora, Evelina, Nathan Mayer, Alfred Charles, Leopold)."
+  },
+  {
+   "f": "lionel_r",
+   "t": "alfred_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_lionel",
+   "label": "Child of Lionel de Rothschild (children: Leonora, Evelina, Nathan Mayer, Alfred Charles, Leopold)."
+  },
+  {
+   "f": "lionel_r",
+   "t": "leopold_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_lionel",
+   "label": "Child of Lionel de Rothschild (children: Leonora, Evelina, Nathan Mayer, Alfred Charles, Leopold)."
+  },
+  {
+   "f": "lionel_r",
+   "t": "parliament",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_wp_lionel",
+   "label": "Elected for the City of London in 1847; seated 26 July 1858 as the first practising Jew in the Commons, after the Jews Relief Act."
+  },
+  {
+   "f": "lionel_r",
+   "t": "uk",
+   "type": "funding",
+   "status": "verified",
+   "src": "h_wp_lionel; h_wp_rfamily",
+   "label": "The bank under Lionel financed the British government's £4M purchase of Egypt's Suez Canal shares (1875)."
+  },
+  {
+   "f": "natty",
+   "t": "walter_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_natty",
+   "label": "Child of Natty, 1st Baron Rothschild (children: Walter 1868-1937, Evelina, Charles 1877-1923)."
+  },
+  {
+   "f": "natty",
+   "t": "charles_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_natty",
+   "label": "Child of Natty, 1st Baron Rothschild (children: Walter 1868-1937, Evelina, Charles 1877-1923)."
+  },
+  {
+   "f": "natty",
+   "t": "parliament",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_wp_natty; h_ra_natty",
+   "label": "1885: created Baron Rothschild; the first Jewish member of the Lords who had not converted."
+  },
+  {
+   "f": "natty",
+   "t": "nm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_ra_natty",
+   "label": "Senior partner of the London house."
+  },
+  {
+   "f": "charles_r",
+   "t": "victor_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Victor (1910-90), 3rd Baron, of Charles's line."
+  },
+  {
+   "f": "charles_r",
+   "t": "miriam_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Miriam (1908-2005), of Charles's line."
+  },
+  {
+   "f": "james_mayer",
+   "t": "alphonse_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of James Mayer de Rothschild of Paris (Alphonse eldest; Edmond youngest)."
+  },
+  {
+   "f": "james_mayer",
+   "t": "gustave_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of James Mayer de Rothschild of Paris (Alphonse eldest; Edmond youngest)."
+  },
+  {
+   "f": "james_mayer",
+   "t": "edmond_r",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Son of James Mayer de Rothschild of Paris (Alphonse eldest; Edmond youngest)."
+  },
+  {
+   "f": "alphonse_r",
+   "t": "rothschild_freres",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Alphonse, eldest son, succeeded to the Paris house."
+  },
+  {
+   "f": "edmond_r",
+   "t": "james_armand",
+   "type": "kinship",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "James Armand (1878-1957), son of Edmond."
+  },
+  {
+   "f": "edmond_r",
+   "t": "maurice_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Maurice (1881-1957), of Edmond's line."
+  },
+  {
+   "f": "alphonse_r",
+   "t": "edouard_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Édouard (1868-1949), of Alphonse's line."
+  },
+  {
+   "f": "edouard_r",
+   "t": "guy_r",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Guy (1909-2007), of Édouard's line."
+  },
+  {
+   "f": "edouard_r",
+   "t": "rothschild_freres",
+   "type": "leadership",
+   "status": "reported",
+   "src": "h_wp_rfamily",
+   "label": "Paris house, next generation."
+  },
+  {
+   "f": "lionel_1882",
+   "t": "nm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Lionel Nathan (1882-1942) and Anthony Gustav (1887-1961) ran the London bank."
+  },
+  {
+   "f": "anthony_g",
+   "t": "nm_rothschild",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_rfamily",
+   "label": "Anthony Gustav ran the London bank with Lionel Nathan."
+  },
+  {
+   "f": "lionel_1882",
+   "t": "league_bj",
+   "type": "founding",
+   "status": "verified",
+   "src": "h_wp_lbj",
+   "label": "Nov 1917: co-founder and first president of the League of British Jews."
+  },
+  {
+   "f": "magnus_p",
+   "t": "league_bj",
+   "type": "founding",
+   "status": "verified",
+   "src": "h_wp_lbj",
+   "label": "Sir Philip Magnus, vice-president."
+  },
+  {
+   "f": "swaythling",
+   "t": "league_bj",
+   "type": "founding",
+   "status": "verified",
+   "src": "h_wp_lbj",
+   "label": "Louis Montagu, 2nd Baron Swaythling, vice-president."
+  },
+  {
+   "f": "league_bj",
+   "t": "balfour_decl",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_wp_lbj",
+   "label": "Anti-Zionist: opposed the declaration and the claim that Jews are a separate nationality."
+  },
+  {
+   "f": "walter_r",
+   "t": "balfour",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "18 July 1917: Walter sent Balfour the 46-word draft formula."
+  },
+  {
+   "f": "chamberlain_j",
+   "t": "herzl",
+   "type": "proposal",
+   "status": "verified",
+   "src": "h_wp_uganda",
+   "label": "1902-03: Colonial Secretary Chamberlain, who knew Herzl through the Rothschilds, discussed Cyprus, Sinai and El Arish, then proposed East Africa."
+  },
+  {
+   "f": "chamberlain_j",
+   "t": "uganda",
+   "type": "proposal",
+   "status": "verified",
+   "src": "h_wp_uganda",
+   "label": "The British offer of East African land for Jewish settlement (1903)."
+  },
+  {
+   "f": "lansdowne",
+   "t": "uganda",
+   "type": "association",
+   "status": "verified",
+   "src": "h_wp_uganda",
+   "label": "Chamberlain agreed to discuss El Arish with Foreign Secretary Lansdowne."
+  },
+  {
+   "f": "greenberg_l",
+   "t": "uganda",
+   "type": "coordination",
+   "status": "verified",
+   "src": "h_wp_uganda",
+   "label": "Leopold Greenberg, Herzl's main negotiator, obtained the Foreign Office letter offering a colony with autonomy."
+  },
+  {
+   "f": "uganda",
+   "t": "zionist_congress",
+   "type": "association",
+   "status": "verified",
+   "src": "h_wp_uganda",
+   "label": "1903, Sixth Congress: 295-178 to send a commission to East Africa; Britain withdrew the offer in 1905."
+  },
+  {
+   "f": "balfour",
+   "t": "weizmann",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "19 June 1917: Balfour asked Rothschild and Weizmann for a draft; Weizmann had met him on 22 March."
+  },
+  {
+   "f": "lloydgeorge",
+   "t": "war_cabinet",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Prime Minister from December 1916; the War Cabinet approved the declaration on 31 Oct 1917."
+  },
+  {
+   "f": "war_cabinet",
+   "t": "balfour_decl",
+   "type": "official act",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "31 Oct 1917: the War Cabinet decision."
+  },
+  {
+   "f": "milner",
+   "t": "war_cabinet",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Lord Milner, War Cabinet minister without portfolio."
+  },
+  {
+   "f": "milner",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "His late-August 1917 draft changed the scope to \"in Palestine\"; co-author of the 4 Oct Milner-Amery draft."
+  },
+  {
+   "f": "amery",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Leo Amery co-drafted the safeguard clauses with Milner (Oct 1917)."
+  },
+  {
+   "f": "ormsby_gore",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "reported",
+   "src": "h_wp_balfour",
+   "label": "Claimed co-authorship of the final draft with Amery."
+  },
+  {
+   "f": "curzon",
+   "t": "balfour_decl",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "26 Oct 1917: Curzon's memorandum questioned what \"National Home\" would mean."
+  },
+  {
+   "f": "cecil_r",
+   "t": "balfour_decl",
+   "type": "pressure",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Under-Secretary Robert Cecil backed the policy by June 1917; 2 Dec 1917: \"Judea [is] for the Jews.\""
+  },
+  {
+   "f": "graham_r",
+   "t": "balfour_decl",
+   "type": "pressure",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Ronald Graham of the Foreign Office recorded on 13 June 1917 that the PM, Foreign Secretary and Cecil favoured the policy."
+  },
+  {
+   "f": "sykes",
+   "t": "war_cabinet",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Sept 1917: Sykes reported to the War Cabinet after talks with Zionist leaders from Feb 1917."
+  },
+  {
+   "f": "samuel",
+   "t": "samuel_memo",
+   "type": "authorship",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Jan 1915: Samuel circulated \"The Future of Palestine\" to the Cabinet."
+  },
+  {
+   "f": "asquith",
+   "t": "uk",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Prime Minister until Dec 1916; favoured reform of the Ottoman Empire over partition."
+  },
+  {
+   "f": "grey_e",
+   "t": "uk",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_wp_balfour",
+   "label": "Foreign Secretary under Asquith."
+  },
+  {
+   "f": "montagu",
+   "t": "montagu_memo",
+   "type": "authorship",
+   "status": "verified",
+   "src": "h_wp_montagu",
+   "label": "23 Aug 1917: called Zionism \"a mischievous political creed\" and the declaration antisemitic."
+  },
+  {
+   "f": "montagu_memo",
+   "t": "balfour_decl",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_wp_montagu",
+   "label": "Montagu's opposition modified the declaration's terms."
+  },
+  {
+   "f": "samuel",
+   "t": "montagu",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_wp_montagu",
+   "label": "Cousins on opposite sides: Samuel the moderate Zionist, Montagu the opponent."
+  },
+  {
+   "f": "montagu",
+   "t": "swaythling",
+   "type": "kinship",
+   "status": "reported",
+   "src": "h_wp_montagu; h_wp_lbj",
+   "label": "Edwin was a son of the 1st Baron Swaythling; Louis was the 2nd Baron."
+  },
+  {
+   "f": "sokolow",
+   "t": "benedict15",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_balfour; h_jvl_vatican",
+   "label": "6 May 1917: Benedict XV received Sokolow; per Sokolow's notes he expressed general sympathy, stressing the holy places."
+  },
+  {
+   "f": "lloydgeorge",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: British Prime Minister at San Remo."
+  },
+  {
+   "f": "curzon",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: Foreign Secretary at San Remo."
+  },
+  {
+   "f": "hankey",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: secretary to the British delegation at San Remo."
+  },
+  {
+   "f": "millerand",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: French premier at San Remo."
+  },
+  {
+   "f": "berthelot",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: French foreign ministry at San Remo."
+  },
+  {
+   "f": "matsui",
+   "t": "san_remo",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "19-26 April 1920: Japanese ambassador at San Remo."
+  },
+  {
+   "f": "nitti",
+   "t": "san_remo",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "Italian Prime Minister Nitti presided."
+  },
+  {
+   "f": "millerand",
+   "t": "france_gov",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "President of the French Council of Ministers (1920)."
+  },
+  {
+   "f": "nitti",
+   "t": "italy_gov",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "Prime Minister of Italy (1920)."
+  },
+  {
+   "f": "matsui",
+   "t": "japan_gov",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "Japan's ambassador."
+  },
+  {
+   "f": "san_remo",
+   "t": "mandate",
+   "type": "official act",
+   "status": "verified",
+   "src": "h_wp_sanremo",
+   "label": "25 April 1920: Britain named Mandatory for Palestine, to implement the Balfour Declaration while protecting non-Jewish communities' civil and religious rights."
+  },
+  {
+   "f": "samuel",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 1 July 1920 - 30 June 1925."
+  },
+  {
+   "f": "plumer",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 25 Aug 1925 - 31 July 1928."
+  },
+  {
+   "f": "luke_h",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, (acting) 31 July - 6 Dec 1928."
+  },
+  {
+   "f": "chancellor_j",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 6 Dec 1928 - 3 Sept 1931."
+  },
+  {
+   "f": "wauchope",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 20 Nov 1931 - 1 Mar 1938."
+  },
+  {
+   "f": "macmichael",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 3 Mar 1938 - 30 Aug 1944."
+  },
+  {
+   "f": "gort",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 31 Oct 1944 - 5 Nov 1945."
+  },
+  {
+   "f": "cunningham_a",
+   "t": "mandate_admin",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_wp_hc",
+   "label": "High Commissioner for Palestine, 21 Nov 1945 - 14 May 1948."
+  },
+  {
+   "f": "agliardi",
+   "t": "herzl",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "19 May 1896: Herzl proposed extraterritorial status for the holy places to the nuncio in Vienna."
+  },
+  {
+   "f": "merry_del_val",
+   "t": "herzl",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "22 Jan 1904: the Secretary of State told Herzl the holy places could not be separated from the Holy Land."
+  },
+  {
+   "f": "pius10",
+   "t": "herzl",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "25 Jan 1904: \"We cannot prevent the Jews from going to Jerusalem but we could never sanction it.\""
+  },
+  {
+   "f": "merry_del_val",
+   "t": "vatican",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "Cardinal Secretary of State."
+  },
+  {
+   "f": "sokolow",
+   "t": "gasparri",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "Apr-May 1917: Gasparri sought a \"reserved zone\" (Jerusalem, Bethlehem, Nazareth, Tiberias, Jericho)."
+  },
+  {
+   "f": "sokolow",
+   "t": "pius12",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "1917: Sokolow met Msgr. Eugenio Pacelli, the future Pius XII."
+  },
+  {
+   "f": "gasparri",
+   "t": "vatican",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "Cardinal Secretary of State."
+  },
+  {
+   "f": "gasparri",
+   "t": "mandate",
+   "type": "opposition",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "15 May 1922: note to the League opposing a \"privileged and preponderant position\" for Jews; 18 Dec 1917 he had opposed a Jewish state."
+  },
+  {
+   "f": "tardini",
+   "t": "vatican",
+   "type": "membership",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "Mar 1943: the Holy See \"has never approved\" making Palestine a Jewish home."
+  },
+  {
+   "f": "maglione",
+   "t": "vatican",
+   "type": "leadership",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "May 1943: Cardinal Maglione suggested other territories for a Jewish homeland."
+  },
+  {
+   "f": "pius12",
+   "t": "sharett",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "10 Apr 1945: Pius XII received Shertok but gave no support."
+  },
+  {
+   "f": "pius12",
+   "t": "un",
+   "type": "pressure",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "1948-49: three encyclicals calling for an internationally guaranteed Jerusalem, a campaign run with France."
+  },
+  {
+   "f": "vatican",
+   "t": "res181",
+   "type": "association",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "1947: the Holy See avoided interfering, likely to protect the corpus separatum for Jerusalem."
+  },
+  {
+   "f": "paul6",
+   "t": "israel_gov",
+   "type": "meeting",
+   "status": "verified",
+   "src": "h_jvl_vatican",
+   "label": "5 Jan 1964: the first papal visit to Israel (no diplomatic relations until 1993-94)."
+  }
+ ]
+}

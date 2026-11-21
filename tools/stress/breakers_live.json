@@ -1,0 +1,532 @@
+{
+ "built": "2026-11-19",
+ "cut": 35,
+ "baseline": 93.2,
+ "searched": {
+  "singles": 798,
+  "groups": 15,
+  "group_pairs": 105,
+  "pairs": 1711,
+  "triples": 2600
+ },
+ "pool": 59,
+ "pool3": 26,
+ "items": [
+  {
+   "kind": "single",
+   "label": "Without Edmond de Rothschild",
+   "ids": [
+    "edmond_r"
+   ],
+   "V": 35.1,
+   "verdict": "Unlikely",
+   "ever": 42.7,
+   "lost": 38.4,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "group",
+   "label": "Without the banks and land and finance companies",
+   "groups": [
+    "Finance and banks"
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 31.9,
+   "weakest": "holdings",
+   "dec": []
+  },
+  {
+   "kind": "group",
+   "label": "Without the organized Zionist movement",
+   "groups": [
+    "The Zionist movement (organizations and leaders)"
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 16.9,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "group",
+   "label": "Without the armed groups and the arms network",
+   "groups": [
+    "Armed groups and arms network"
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 12.4,
+   "weakest": "force",
+   "dec": []
+  },
+  {
+   "kind": "group",
+   "label": "Without the United States (government, organizations and money)",
+   "groups": [
+    "Without the United States"
+   ],
+   "V": 24,
+   "verdict": "Unlikely",
+   "ever": 48.2,
+   "lost": 12.9,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "group",
+   "label": "Without the US government",
+   "groups": [
+    "US government"
+   ],
+   "V": 31.7,
+   "verdict": "Unlikely",
+   "ever": 53.3,
+   "lost": 9.1,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "group",
+   "label": "Without the states that voted for partition",
+   "groups": [
+    "Countries that voted for partition"
+   ],
+   "V": 33.5,
+   "verdict": "Possible, with great difficulty",
+   "ever": 66.4,
+   "lost": 0.9,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "group",
+   "label": "Without the Rothschild family",
+   "groups": [
+    "Rothschild family and houses"
+   ],
+   "V": 34.1,
+   "verdict": "Unlikely",
+   "ever": 42.5,
+   "lost": 38.7,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "groups",
+   "label": "Without the British government and the American Zionist organizations",
+   "groups": [
+    "British government",
+    "American Zionist organizations"
+   ],
+   "alone": [
+    35.6,
+    74.8
+   ],
+   "V": 27.6,
+   "verdict": "Unlikely",
+   "ever": 46.3,
+   "lost": 30.5,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "Britain hands Palestine to the UN (Feb 1947)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the British government and the Soviet bloc",
+   "groups": [
+    "British government",
+    "Soviet bloc"
+   ],
+   "alone": [
+    35.6,
+    81.8
+   ],
+   "V": 27.6,
+   "verdict": "Unlikely",
+   "ever": 47.7,
+   "lost": 28.4,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "Britain hands Palestine to the UN (Feb 1947)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the British government and Christian Zionism",
+   "groups": [
+    "British government",
+    "Christian Zionism"
+   ],
+   "alone": [
+    35.6,
+    92.1
+   ],
+   "V": 34.9,
+   "verdict": "Unlikely",
+   "ever": 47.8,
+   "lost": 28.5,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "Britain hands Palestine to the UN (Feb 1947)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Jewish National Fund and Land held by other Jewish owners (1948)",
+   "ids": [
+    "jnf",
+    "other_holdings"
+   ],
+   "alone": [
+    82.8,
+    83.2
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 2,
+   "weakest": "holdings",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British Mandate administration and Land held by other Jewish owners (1948)",
+   "ids": [
+    "mandate_admin",
+    "other_holdings"
+   ],
+   "alone": [
+    72.4,
+    83.2
+   ],
+   "V": 4,
+   "verdict": "Not possible on this record",
+   "ever": 4,
+   "lost": 0.2,
+   "weakest": "holdings",
+   "dec": []
+  },
+  {
+   "ids": [
+    "pica",
+    "jewish_agency",
+    "apc_bank"
+   ],
+   "V": 23.9,
+   "verdict": "Not possible on this record",
+   "ever": 27.6,
+   "lost": 5.5,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Anglo-Palestine Company (Bank Leumi)",
+   "alone": [
+    82.5,
+    85.1,
+    88.7
+   ]
+  },
+  {
+   "ids": [
+    "pica",
+    "jewish_agency",
+    "zionist_congress"
+   ],
+   "V": 24.5,
+   "verdict": "Not possible on this record",
+   "ever": 27.9,
+   "lost": 4.2,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Zionist Congress",
+   "alone": [
+    82.5,
+    85.1,
+    87.9
+   ]
+  },
+  {
+   "ids": [
+    "pica",
+    "czechoslovakia",
+    "jewish_agency"
+   ],
+   "V": 28.4,
+   "verdict": "Unlikely",
+   "ever": 33,
+   "lost": 3.2,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without Palestine Jewish Colonization Association (PICA), Czechoslovakia (arms supplier) and Jewish Agency",
+   "alone": [
+    82.5,
+    82.7,
+    85.1
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "us_gov",
+    "mandate_admin"
+   ],
+   "V": 31,
+   "verdict": "Unlikely",
+   "ever": 49.4,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "mandate_admin"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "league",
+    "mandate"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and British Mandate administration, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, League of Nations, Mandate for Palestine (1922)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "pica"
+   ],
+   "V": 32.2,
+   "verdict": "Unlikely",
+   "ever": 43.2,
+   "lost": 26.1,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate_admin",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without British Mandate administration and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "us_gov",
+    "haganah"
+   ],
+   "V": 32.4,
+   "verdict": "Unlikely",
+   "ever": 52.7,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "haganah"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Haganah, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "pica",
+    "jewish_agency"
+   ],
+   "V": 32.6,
+   "verdict": "Unlikely",
+   "ever": 44,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "pica",
+    "jewish_agency"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Palestine Jewish Colonization Association (PICA) and Jewish Agency, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "mandate_admin",
+    "pica",
+    "jewish_agency"
+   ],
+   "V": 33.2,
+   "verdict": "Unlikely",
+   "ever": 37.3,
+   "lost": 2.9,
+   "weakest": "holdings",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without British Mandate administration, Palestine Jewish Colonization Association (PICA) and Jewish Agency",
+   "alone": [
+    72.4,
+    82.5,
+    85.1
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "V": 34.2,
+   "verdict": "Unlikely",
+   "ever": 54.3,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Czechoslovakia (arms supplier), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  }
+ ]
+}

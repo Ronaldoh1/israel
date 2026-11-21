@@ -1,0 +1,77 @@
+{
+ "state": "RI",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ri_gov": {
+   "t": "2026 Rhode Island gubernatorial election — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_Rhode_Island_gubernatorial_election"
+  },
+  "greenpapers_ri": {
+   "t": "The Green Papers: Rhode Island 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/RI"
+  },
+  "wbur_ri_primary": {
+   "t": "Foulkes wins Rhode Island governor primary — WBUR",
+   "u": "https://www.wbur.org/news/2026/09/10/foulkes-wins-rhode-island-governor-primary-mckee-providence"
+  },
+  "turnto10_recount": {
+   "t": "Rhode Island Board of Elections approves recount in Republican primary for governor — WJAR",
+   "u": "https://turnto10.com/newsletter-daily/rhode-island-board-of-elections-to-consider-recount-in-republican-primary-for-governor-sept-14-2026"
+  }
+ },
+ "races": [
+  {
+   "race": "RI-GOV",
+   "incumbent": {
+    "name": "Dan McKee",
+    "party": "D",
+    "status": "Lost primary"
+   },
+   "nominees": [
+    {
+     "name": "Helena Foulkes",
+     "party": "D",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Aaron Guckian",
+     "party": "R",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Ken Block",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Jay Gotra",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "C. D. Reynolds",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Sep 9 primary: D Foulkes 62.5% ousted incumbent McKee 37.5%; R Guckian 50.6% vs Elaine Pelino 49.4% (259 votes per Wikipedia, 271 unofficial). Pelino got a machine-data recount approved Sep 14; outcome not found in any source reached, and the Wikipedia infobox still says TBD, though Green Papers lists Guckian as nominee. Independents conflict: Wikipedia lists only Block; Green Papers and Politics1 also list Gotra and Reynolds. Ballotpedia page stale.",
+   "c": [
+    "wiki_ri_gov",
+    "greenpapers_ri",
+    "wbur_ri_primary",
+    "turnto10_recount"
+   ]
+  }
+ ]
+}

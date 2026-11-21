@@ -1,0 +1,57 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-12",
+ "entries": [
+  {
+   "id": "rd7_tests_update",
+   "stage": "rd7",
+   "topic": "Sources for the presidential and theology tests (Nov 2026)",
+   "claims": [
+    {
+     "text": "Bruenn diagnosed acute congestive heart failure on 28 March 1944; Lahey wrote on 10 July 1944 that Roosevelt would again have heart failure and be unable to complete another term; the memo was suppressed and published decades later.",
+     "strength": "reported",
+     "sources": [
+      "rd7_history_fdr_health",
+      "rd7_wiki_lahey"
+     ]
+    },
+    {
+     "text": "Dewey declared for a free and democratic Jewish Commonwealth on 15 Oct 1944 after meeting Silver; on 7 Oct 1946 called for immigration of several hundreds of thousands; the 26 Jun 1944 Republican platform condemned the President's failure to insist on the Balfour Declaration and the Mandate.",
+     "strength": "reported",
+     "sources": [
+      "rd7_jta_dewey_1944",
+      "rd7_jta_dewey_1946",
+      "rd7_jvl_gop_1944"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "rd7_history_fdr_health",
+     "url": "https://www.history.com/news/franklin-d-roosevelt-health-final-term",
+     "label": "History.com: FDR was gravely ill in his final term (Bruenn, March 1944; Lahey memo, 10 July 1944)"
+    },
+    {
+     "key": "rd7_wiki_lahey",
+     "url": "https://en.wikipedia.org/wiki/Frank_Lahey",
+     "label": "Wikipedia: Frank Lahey"
+    },
+    {
+     "key": "rd7_jta_dewey_1944",
+     "url": "https://www.jta.org/archive/dewey-supports-establishment-of-jewish-commonwealth-on-basis-of-balfour-declaration",
+     "label": "JTA, 15 Oct 1944: Dewey supports establishment of Jewish Commonwealth on basis of Balfour Declaration"
+    },
+    {
+     "key": "rd7_jta_dewey_1946",
+     "url": "https://www.jta.org/archive/dewey-backs-truman-demand-for-palestine-immigration-says-issue-is-bi-partisan",
+     "label": "JTA, 7 Oct 1946: Dewey backs Truman demand for Palestine immigration"
+    },
+    {
+     "key": "rd7_jvl_gop_1944",
+     "url": "https://www.jewishvirtuallibrary.org/republican-platform-calls-for-implementation-of-balfour-declaration",
+     "label": "Jewish Virtual Library: Republican platform calls for implementation of Balfour Declaration (26 Jun 1944)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+<h2>Capability Is Not Intent: What the Software Does and What Its Makers Say</h2>
+<p>Every argument about Palantir turns on one distinction, which this book holds to throughout: what a tool can do is documented by how it is built and used; what anyone intends to do with it is documented only by their own words or acts. This section sets out both, then the strongest case on each side of the question that matters here, whether Palantir is neutral plumbing or something more.</p>
+<h3>Integration, not collection</h3>
+<p>Palantir's software does not go out into the world and gather information. It has no cameras, phone taps or web crawlers of its own. It works on records the customer already holds or chooses to load: case files, border-crossing logs, police reports, purchased commercial data, sensor feeds. Its job is integration, in three steps. It connects to many separate databases, often through an API, an application programming interface, the standard doorway by which one program asks another for data. It performs what engineers call entity resolution: deciding that the "J. Smith" in one file, the "John Smith" at the same address in another and the owner of a particular phone in a third are one person, and linking those records. And it lets analysts search, map and chart the linked result, and set alerts when something new appears. [cite:de27_pal_notdata]</p>
+<p>The company's own account is precise. "We do not collect, store, or sell personal data," it says; its customers "define what can and cannot be done with their data," and "We do not and cannot reuse or transfer our clients' data for our own purposes." [cite:de27_pal_notdata] It builds in fine-grained permissions, so that an analyst sees only what his role allows, and a default configuration that records every user's actions, an audit log. It adds a caution that bears on everything that follows: "technical controls alone cannot avert negative societal outcomes." [cite:de27_pal_pcl]</p>
+<p>One common misreading should be cleared here. Palantir's documentation lists ready-made "connectors" to a long roster of systems: databases, cloud storage, business software such as SAP and Salesforce, messaging tools such as Slack and Microsoft Teams, and social and advertising platforms including Facebook, Instagram and LinkedIn, for "connectivity between Foundry and your systems." [cite:de27_pal_connectors] A connector is a plug, not a key. It lets a customer pull in data from an account it already controls, such as its own advertising account, with its own credentials; it does not open Facebook's or Microsoft's users to Palantir or anyone else. A list of connectors documents what a customer could wire in, not what any customer has: connector is not access.</p>
+<figure class="fig-flow">
+<figcaption>How a fusion platform turns separate records into a lead (mechanism, not any single documented case)</figcaption>
+<ol>
+<li><b>Sources</b> The customer connects its own systems and any data it has bought or been given</li>
+<li><b>Resolution</b> The software matches records that refer to the same person, phone, car or address</li>
+<li><b>Graph</b> The linked records form a map: person to phones, addresses, vehicles, associates, events</li>
+<li><b>Query and alert</b> Analysts search, filter and score the map and set alerts</li>
+<li><b>Output</b> A case file, a priority list, an address with a confidence score</li>
+<li><b>Action and record</b> Officers act; the system logs who searched for what, if the customer keeps and reads the logs</li>
+</ol>
+<p class="fig-src">Sources: [cite:de27_pal_notdata] [cite:de27_pal_pcl] [cite:ow9_fortune_elite]</p>
+</figure>
+<h3>What the men who run it say it is for</h3>
+<p>The people who run Palantir have said a great deal about what they built it to do, and their words are the right evidence for their own purposes. Karp's are unusually direct. In an Axios interview broadcast on HBO in May 2020 he said the product was used "on occasion" to target and kill, describing the hunt for a terrorist: "you're probably doing the operation that actually takes out the person with another product we built." Asked whether he regretted the ICE work, he said, "No, no, no." [cite:de27_inverse_karp2020] On a call with investors in early February 2025 he said Palantir was there, when necessary, "to scare enemies and on occasion kill them." [cite:de27_giz_karp2025] His book with Nicholas Zamiska, Palantir's head of corporate affairs, The Technological Republic (18 February 2025), indicts "Silicon Valley's failure to come to the defense of the nation that made its rise possible"; a 22-point summary the company posted on 18 April 2026 added that "National service should be a universal duty." [cite:de27_prh_techrep] [cite:de27_reason_manifesto]</p>
+<p>Read on their own terms, these statements describe a company that sees itself as an arm of national defence and law enforcement, proud of lethal work against foreign enemies and of its immigration contracts. They are not statements of intent to watch domestic political opponents, and none by Karp, Thiel or Cohen found here says so. The words are hard and should be quoted as hard, not converted into something they do not say. Thiel's own 2016 account of the founding purpose was that helping the government make sense of its data could "end indiscriminate surveillance"; how that claim fares against his later politics is examined in [scene:de10_philosophy_vs_practice|Part Ten]. [cite:de10_fortune_palantir]</p>
+<h3>The strongest case that it is only a tool</h3>
+<p>The case that Palantir is a sophisticated database program and nothing more rests on documented points. The data belongs to the customer, which decides what goes in and who may see it. [cite:de27_pal_notdata] Audit logs make misuse more traceable than in the scattered systems the software replaces. [cite:de27_pal_pcl] The company's government work has limits it did not set: the NSA relationship ended in 2015 without a contract, and in 2025 Palantir said it "is not a vendor on any master database project to unify databases across federal agencies." [cite:ow9_bf_karp2015] [cite:de19_palantir_record] And what a customer may do is bounded by the customer's law, not by Palantir's code. On this view the right target for anyone worried about surveillance is the law of data acquisition, where [scene:de28_brokers_and_doctrine|Part Thirty] turns.</p>
+<h3>The strongest case that it is more</h3>
+<p>The case that it is more also rests on documented points. Integration is itself the power: records harmless apart can be revealing together, which is why stripping names protects less than it seems ([scene:de24_the_myth_of_anonymous_data|Part Twenty-Four]). Joined data has reached people with no direct link to wrongdoing: the sociologist Sarah Brayne's 2017 study of the Los Angeles police, based on interviews with 75 officers and staff, found that its Palantir system held people who had never had direct contact with the police, linked to a "person of interest" by something as slight as a car accident with a gang member, and that a points system for "risk" sent officers to stop the same people again, adding more points; Palantir and the department declined to comment. [cite:de27_cnn_brayne] [cite:de27_asa_brayne] The company's engineers work inside customers, reviewing their data sources and adding new ones, so "the customer decides" is thinner than in an ordinary licence. [cite:de10_fortune_palantir] Lock-in makes the platform a hub: ICE has called Palantir "the only source that can provide the required capabilities," and a data broker's 2026 work statement requires connections to "the Palantir platform." [cite:ow9_reg_immos] [cite:de28_bu_lexis] And the outputs are judgements: ICE's ELITE tool gives each person's address a "confidence score." [cite:ow9_fortune_elite]</p>
+<p>One documented incident shows both cases at once. In the suit by more than twenty states over Medicaid data sharing, government filings disclosed in July 2026 that the Centers for Medicare and Medicaid Services had sent ICE, on 7 January 2026, a dataset covering millions of people, including lawful residents, beyond what the court allowed. ICE shared it with Palantir, which runs ELITE, "over a Microsoft Teams chat," then deleted it; Palantir said "the dataset in question was purged pursuant to government instruction." CMS later re-sent the dataset by mistake, and about six ICE users were found still holding copies. Judge Vince Chhabria, who had allowed a narrow five-field exchange in December 2025, paused the sharing in late May 2026; at a hearing on 3 September he said valid visa holders' data should not be shared and that the court would go "category by category," but no formal ruling had been located as of October 2026. [cite:de27_npr_medicaid] [cite:de24b_chn_medicaid] The data was the government's and the vendor acted on instruction, as Palantir's account says; and once it was in a chat window, the safeguards depended on people finding every copy.</p>
+<p>Drawn as an engineer would draw it, the platform has a source layer, a data model, a control layer, an analytics layer and an output, and the Medicaid file entered at none of the designed points.</p>
+<figure class="fig-arch">
+<figcaption>Palantir's platform as the company documents it, with the one documented bypass (as of October 2026)</figcaption>
+<div class="arch">
+<section class="ly"><h4>L1 · sources the customer connects</h4>
+<p>Palantir collects nothing itself; every source is the customer's or bought by the customer</p>
+<div class="nodes">
+<div class="nd"><b>Customer's own systems</b><span>Case files, border-crossing logs, police reports</span><code>SEVIS, APIS searched in ICE's systems (2014–22 records)</code></div>
+<div class="nd"><b>Sensor feeds</b><span>Plate-reader reads in the LAPD system</span><code>ALPR reads; Brayne, 2017</code></div>
+<div class="nd"><b>Foundry connectors</b><span>Databases, cloud stores, SAP, Salesforce, Slack, Teams, Facebook, Instagram, LinkedIn</span><code>customer's own accounts and credentials: connector ≠ access</code></div>
+<div class="nd"><b>Bought data: LexisNexis</b><span>People-search profiles</span><code>2026 work statement: APIs to "the Palantir platform"</code></div>
+<div class="nd"><b>Medicaid file (CMS → ICE)</b><span>Sent to Palantir over a Microsoft Teams chat, 7 Jan 2026, beyond a court's limits</span><code>not a connector; purged on instruction; ICE copies found later</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>records pulled by API or connector into datasets the customer controls</span></p>
+<p class="lk rep"><span><i>Reported</i>Probable: LexisNexis people-search data into ICE's Palantir systems, because the 2026 work statement requires the API</span></p>
+<section class="ly"><h4>L2 · datasets and the Ontology</h4>
+<div class="nodes">
+<div class="nd"><b>Backing datasets</b><span>Rows and columns, as loaded</span></div>
+<div class="nd hub"><b>Ontology</b><span>Maps datasets to object types, properties, link types and action types</span><code>object type ≈ dataset · object ≈ row · property ≈ column · link type ≈ join</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>entity resolution: records for one person, phone, car or address linked as one object</span></p>
+<section class="ly"><h4>L3 · access control and audit</h4>
+<div class="nodes">
+<div class="nd"><b>Markings (mandatory)</b><span>A user must hold every marking on a resource; markings follow derived data</span></div>
+<div class="nd"><b>Roles (discretionary)</b><span>Owner, Editor, Viewer, Discoverer</span><code>row and column filters do not follow exports</code></div>
+<div class="nd"><b>Audit log</b><span>Records users' actions by default, for detecting and investigating abuse</span><code>only as useful as the customer's review of it</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>analysts query only what their markings and roles allow</span></p>
+<section class="ly"><h4>L4 · analytics and AI</h4>
+<div class="nodes">
+<div class="nd"><b>Gotham and Foundry applications</b><span>Search, map, chart, alert</span></div>
+<div class="nd"><b>AIP</b><span>Language models over data already in the platform</span><code>Claude at IL6 via AWS since Nov 2024</code></div>
+</div></section>
+<p class="lk"><span><i>Documented</i>leads, lists and scores to the customer's officers</span></p>
+<section class="ly"><h4>Output · judgements</h4>
+<div class="nodes">
+<div class="nd"><b>ICE: ELITE</b><span>An address with a "confidence score"</span><code>draws on Medicaid and other data (reported Jan 2026)</code></div>
+<div class="nd"><b>LAPD</b><span>Risk points; people with no police contact linked to a "person of interest"</span><code>Brayne, 75 interviews; Palantir at LAPD since 2011</code></div>
+</div></section>
+</div>
+<p class="fig-src">Sources: [cite:de27_pal_notdata] [cite:de28_guardian_icm] [cite:de27_asa_brayne] [cite:de27_cnn_brayne] [cite:de27_pal_connectors] [cite:de28_bu_lexis] [cite:de27_npr_medicaid] [cite:de27_arch_ontology] [cite:de27_arch_markings] [cite:de27_arch_security] [cite:de27_pal_pcl] [cite:de26_reg_claudepal] [cite:ow9_fortune_elite]</p>
+</figure>
+<figure class="fig-compare">
+<figcaption>Palantir's account of itself, set against the record</figcaption>
+<table>
+<thead><tr><th></th><th>What the company says</th><th>The record</th></tr></thead>
+<tbody>
+<tr><th>Data</th><td>"We do not collect, store, or sell personal data"</td><td>No document shows Palantir collecting on its own account; customers load bought and held data</td></tr>
+<tr><th>Control</th><td>Customers "define what can and cannot be done with their data"</td><td>True by contract; engineers work inside customers; ICE calls it "the only source"</td></tr>
+<tr><th>Safeguards</th><td>Audit logs and fine-grained permissions</td><td>Medicaid data passed by chat beyond a court's limits, January 2026; copies found later</td></tr>
+<tr><th>Purpose</th><td>Defence; work used "on occasion" to kill enemies</td><td>No statement of intent against domestic critics</td></tr>
+<tr><th>Reach</th><td>Not building a "master database"</td><td>None documented; joined systems at LAPD and ICE reached people with no police contact or by scored addresses</td></tr>
+</tbody>
+</table>
+<p class="fig-src">Sources: [cite:de27_pal_notdata] [cite:de27_pal_pcl] [cite:de27_inverse_karp2020] [cite:de19_palantir_record] [cite:de27_cnn_brayne] [cite:de27_npr_medicaid] [cite:ow9_fortune_elite]</p>
+</figure>
+<h3>If it were connected</h3>
+<p>A platform built to be joined invites the question of which joins exist. Documented: Medicaid records reached Palantir through ICE, once, outside a court's limits. [cite:de27_npr_medicaid] Probable: a standing feed from LexisNexis's people-search data into ICE's Palantir systems, because the August 2026 work statement requires the API. [cite:de28_bu_lexis] Possible, with no document: a join to the "common API layer" Palantir has been building for the Treasury's IRS modernisation since September 2025, which would let a government check a taxpayer's records against an enforcement list on one screen; it would need an agreement between agencies and a connection built by the customer, and tax-confidentiality law and the courts stand in the way, as [scene:de30_silos_and_subpoenas|Part Thirty-Two] shows for the tax-address agreement. [cite:de27_treasury_api] Not supported: a join between ICE's systems and the Army's Personnel Data Environment, which Palantir maintains under a separate $3.68 million order to 15 November 2026 for a separate customer, with nothing showing data moving between them; nor that Palantir itself holds a cross-government dataset, which the company denies and no record shows. [cite:de27_govly_pde] [cite:de19_palantir_record] The capability to turn scattered records into a list of people and likely addresses exists at ICE today; whether it reaches beyond the people the law already targets is a question of law, policy and courts, taken up in the next part, after the money.</p>

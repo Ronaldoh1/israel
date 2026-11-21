@@ -1,0 +1,98 @@
+{
+ "_note": "Decisions layer (Nov 2026). Built by decision_layer.py; do not edit by hand.",
+ "node_notes": {
+  "masaryk": "Jan Masaryk (1886-1948), Czechoslovak foreign minister, signed the first arms sale to the Haganah on 14 January 1948; he died in March 1948.",
+  "avriel": "Ehud Avriel (1917-1980), the Haganah's purchasing agent in Prague in 1948.",
+  "+czechoslovakia": "Through October 1948: 34,500 rifles, 5,515 MG 34 machine guns, 900 heavy machine guns, 25 Avia S-199 and 61 Spitfire fighters (only 18 Spitfires arrived during the war). Ben-Gurion: \"Without these weapons, we would have not survived.\""
+ },
+ "edges": [
+  {
+   "f": "balfour",
+   "t": "league",
+   "type": "proposal",
+   "status": "verified",
+   "src": "d_spec22",
+   "label": "July 1922, London: at the League Council session that approved the Mandates, Balfour spoke for Britain; he said the Mandates would operate together and appealed to Arabs and Jews to live in peace."
+  },
+  {
+   "f": "league",
+   "t": "mandate",
+   "type": "official act",
+   "status": "verified",
+   "src": "d_jvl_league; d_oj_league",
+   "label": "24 Jul 1922: the League Council confirmed the Mandate, which carried the Balfour Declaration. France held up the Palestine mandate until the Syria mandate was settled with Italy; both entered into force on 29 Sept 1923."
+  },
+  {
+   "f": "bevin",
+   "t": "un",
+   "type": "proposal",
+   "status": "verified",
+   "src": "d_frus_736; d_cojs_47",
+   "label": "14 Feb 1947: the Cabinet agreed with Bevin and Creech Jones that, with neither Arabs nor Jews accepting the British plan, the question must go to the UN \"without British recommendations\"; Bevin announced it to the Commons on 18 Feb, citing an \"irreconcilable conflict of principles\"."
+  },
+  {
+   "f": "creech",
+   "t": "bevin",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "d_frus_736",
+   "label": "Feb 1947: the Colonial Secretary, Arthur Creech Jones, joined Bevin in the proposal the Cabinet accepted."
+  },
+  {
+   "f": "ahc",
+   "t": "uk",
+   "type": "opposition",
+   "status": "verified",
+   "src": "d_frus_736; d_cojs_47",
+   "label": "Feb 1947: the Arab delegates at the London Conference rejected the British plan and any Jewish sovereignty; their refusal and the Jewish Agency's were the deadlock Bevin cited."
+  },
+  {
+   "f": "jewish_agency",
+   "t": "uk",
+   "type": "opposition",
+   "status": "verified",
+   "src": "d_cojs_47",
+   "label": "Feb 1947: the Jewish side sought a sovereign Jewish state and rejected the British plan."
+  },
+  {
+   "f": "gromyko",
+   "t": "ussr",
+   "type": "membership",
+   "status": "verified",
+   "src": "d_frus_765",
+   "label": "14 May 1947: Gromyko, for the USSR, preferred one \"dual, democratic\" Arab-Jewish state, and called partition justifiable only if relations proved too bad for it."
+  },
+  {
+   "f": "stalin",
+   "t": "ussr",
+   "type": "leadership",
+   "status": "reported",
+   "src": "d_mef_prague; d_jvl_sov",
+   "label": "By spring 1947 Stalin backed a Jewish state; the reasons reported are to get Britain out of Palestine and the hope of a pro-Soviet state."
+  },
+  {
+   "f": "masaryk",
+   "t": "czechoslovakia",
+   "type": "official act",
+   "status": "verified",
+   "src": "d_wp_czarms; d_mef_prague",
+   "label": "14 Jan 1948: Foreign Minister Jan Masaryk signed the first sale: rifles, machine guns and ammunition (reported at $750,000), routed on Ethiopian papers because Czech rules allowed sales only to states."
+  },
+  {
+   "f": "avriel",
+   "t": "czechoslovakia",
+   "type": "purchase",
+   "status": "verified",
+   "src": "d_mef_prague",
+   "label": "1948: Ehud Avriel, the Haganah's man in Prague, arranged the first contract and from April 1948 bought Czech aircraft."
+  },
+  {
+   "f": "avriel",
+   "t": "haganah",
+   "type": "membership",
+   "status": "verified",
+   "src": "d_mef_prague",
+   "label": "Avriel represented the Haganah in Prague."
+  }
+ ]
+}

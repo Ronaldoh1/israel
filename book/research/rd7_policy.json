@@ -1,0 +1,31 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "pl_pass",
+   "stage": "rd7",
+   "topic": "Policy instruments and land held, added to the network map (Nov 2026)",
+   "claims": [
+    {"text": "JNF holdings 22,363 dunams (1920), 516,000 (1940), 936,000 (May 1948); Jews owned only about 7% of the land of Palestine before 1948.", "strength": "reported", "sources": ["pl_pij"]},
+    {"text": "About 450,000 dunams bought before 1917; about 2 million by May 1948; JNF acquired 390,000 dunams in 1940-46, 238,000 from Arabs; the 1940 regulations (Zone A 63%, Zone B 32%, free zone 5%) widely circumvented; the UN partition map substantially mirrors concentrations of Jewish land purchase.", "strength": "reported", "sources": ["pl_stein"]},
+    {"text": "Sursock family sales of about 240,000 dunams (Shaw Commission table), 1,746 families displaced; 1921-25 about 80,000 acres to the American Zion Commonwealth.", "strength": "reference", "sources": ["pl_sursock"]},
+    {"text": "1940 Land Transfers Regulations: Zone A transfers to non-Arabs prohibited; Zone B require High Commissioner's sanction; no restriction elsewhere, including municipal areas.", "strength": "reference", "sources": ["pl_cojs1940"]},
+    {"text": "MacDonald letter, 13 Feb 1931, to Weizmann, considered a withdrawal of the Passfield White Paper; reaffirmed support for continued immigration and land purchase.", "strength": "reference", "sources": ["pl_macdonald"]},
+    {"text": "June 1922 White Paper: 'as of right and not on the sufferance'; immigration not to exceed the economic capacity of the country to absorb new arrivals.", "strength": "primary", "sources": ["pl_wp1922"]},
+    {"text": "Permanent Mandates Commission, report public 18 Aug 1939: four of seven voting members could not find the White Paper in conformity with the Mandate.", "strength": "reported", "sources": ["pl_pmc1939"]},
+    {"text": "JTA 4 Nov 1934: PICA owns in Palestine about half a million dunams.", "strength": "reported", "sources": ["pl_jta34"]}
+   ],
+   "sources": [
+    {"key": "pl_pij", "url": "https://www.pij.org/details.php?id=410", "label": "Dan Leon, 'The Jewish National Fund: How the Land Was \"Redeemed\"', Palestine-Israel Journal 12:4 (2005)"},
+    {"key": "pl_stein", "url": "https://israeled.org/ken-stein-zionist-land-acquisition-a-core-element-in-establishing-israel", "label": "Kenneth W. Stein, 'Zionist Land Acquisition: A Core Element in Establishing Israel', Center for Israel Education"},
+    {"key": "pl_sursock", "url": "https://en.wikipedia.org/wiki/Sursock_Purchases", "label": "Wikipedia, 'Sursock Purchases', accessed 2026-11-19"},
+    {"key": "pl_cojs1940", "url": "https://cojs.org/february-28-1940-british-restrict-land-transfer/", "label": "Center for Online Judaic Studies, 'February 28, 1940: British Restrict Land Transfer to Jews'"},
+    {"key": "pl_macdonald", "url": "https://en.wikipedia.org/wiki/MacDonald_letter", "label": "Wikipedia, 'MacDonald letter', accessed 2026-11-19"},
+    {"key": "pl_wp1922", "url": "https://www.bu.edu/mzank/Jerusalem/tx/whitepaper1922.htm", "label": "British White Paper of June 1922 (text, Boston University)"},
+    {"key": "pl_pmc1939", "url": "https://www.jta.org/archive/league-body-majority-holds-white-paper-violates-mandate-partition-urged-as-solution", "label": "Jewish Telegraphic Agency, 'League body majority holds White Paper violates mandate', 18 August 1939"},
+    {"key": "pl_jta34", "url": "https://www.jta.org/archive/the-baron", "label": "Jewish Telegraphic Agency, 'The Baron', 4 November 1934"}
+   ]
+  }
+ ]
+}

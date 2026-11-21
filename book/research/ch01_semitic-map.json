@@ -1,0 +1,372 @@
+{
+ "points": [
+  {
+   "id": "akkadian",
+   "name": "Akkadian",
+   "family": "east",
+   "place": "Mesopotamia (Babylon, Assyria)",
+   "lat": 32.5,
+   "lon": 44.4,
+   "lang": "cuneiform",
+   "since": "3rd mill. BCE – 1st c. CE",
+   "today": "extinct",
+   "key": "sm_eb_akkadian"
+  },
+  {
+   "id": "eblaite",
+   "name": "Eblaite",
+   "family": "east",
+   "place": "Ebla (Tell Mardikh), Syria",
+   "lat": 35.8,
+   "lon": 36.8,
+   "lang": "cuneiform",
+   "since": "c. 2500–2240 BCE",
+   "today": "extinct",
+   "key": "sm_eb_eblaite"
+  },
+  {
+   "id": "ugaritic",
+   "name": "Ugaritic",
+   "family": "nw",
+   "place": "Ugarit (Ras Shamra), Syria",
+   "lat": 35.6,
+   "lon": 35.8,
+   "lang": "alphabetic cuneiform",
+   "since": "14th–13th c. BCE",
+   "today": "extinct",
+   "key": "sm_cojs_ugarit_tablet"
+  },
+  {
+   "id": "phoenician",
+   "name": "Phoenician",
+   "family": "nw",
+   "place": "Tyre, Sidon, Byblos (Lebanon)",
+   "lat": 33.9,
+   "lon": 35.5,
+   "lang": "Phoenician alphabet",
+   "since": "11th c. BCE – 1st c. BCE",
+   "today": "extinct",
+   "key": "sm_eb_phoenician"
+  },
+  {
+   "id": "punic",
+   "name": "Punic",
+   "family": "nw",
+   "place": "Carthage (Tunisia)",
+   "lat": 36.9,
+   "lon": 10.3,
+   "lang": "Punic alphabet",
+   "since": "from c. 814 BCE; used to 6th c. CE",
+   "today": "extinct",
+   "key": "sm_eb_phoenician"
+  },
+  {
+   "id": "hebrew",
+   "name": "Hebrew",
+   "family": "nw",
+   "place": "Land of Israel / Palestine",
+   "lat": 31.8,
+   "lon": 35.2,
+   "lang": "Hebrew (square) script; earlier Paleo-Hebrew",
+   "since": "ancient; spoken to c. 200 CE; revived late 19th c.",
+   "today": "about 9 million speakers",
+   "key": "sm_wp_hebrew"
+  },
+  {
+   "id": "moabite",
+   "name": "Moabite",
+   "family": "nw",
+   "place": "Moab (Dhiban, Jordan)",
+   "lat": 31.5,
+   "lon": 35.8,
+   "lang": "Moabite (Phoenician-type) alphabet",
+   "since": "9th c. BCE (Mesha Stele)",
+   "today": "extinct",
+   "key": "sm_eb_moabite"
+  },
+  {
+   "id": "ammonite",
+   "name": "Ammonite",
+   "family": "nw",
+   "place": "Ammon (Amman, Jordan)",
+   "lat": 32.0,
+   "lon": 35.9,
+   "lang": "Phoenician-type alphabet",
+   "since": "9th–6th c. BCE",
+   "today": "extinct",
+   "key": "sm_wilsonwright"
+  },
+  {
+   "id": "aramaic",
+   "name": "Old Aramaic",
+   "family": "nw",
+   "place": "Aram (Aramaean states of Syria)",
+   "lat": 33.5,
+   "lon": 36.3,
+   "lang": "Aramaic alphabet",
+   "since": "from c. 11th–10th c. BCE",
+   "today": "descendants still spoken",
+   "key": "sm_eb_aramaic"
+  },
+  {
+   "id": "imperial_aramaic",
+   "name": "Imperial Aramaic",
+   "family": "nw",
+   "place": "Achaemenid Persian empire (Susa)",
+   "lat": 32.2,
+   "lon": 48.3,
+   "lang": "Aramaic alphabet",
+   "since": "lingua franca 7th–4th c. BCE",
+   "today": "replaced by Greek after Alexander",
+   "key": "sm_eb_aramaic"
+  },
+  {
+   "id": "syriac",
+   "name": "Syriac",
+   "family": "nw",
+   "place": "Edessa (Şanlıurfa, Turkey)",
+   "lat": 37.2,
+   "lon": 38.8,
+   "lang": "Syriac alphabet",
+   "since": "1st c. CE onward",
+   "today": "liturgical; literary",
+   "key": "sm_gedsh_syriac"
+  },
+  {
+   "id": "neo_aramaic",
+   "name": "Neo-Aramaic (northeastern)",
+   "family": "nw",
+   "place": "Northern Iraq, NW Iran, SE Turkey",
+   "lat": 36.7,
+   "lon": 43.1,
+   "lang": "Syriac alphabet",
+   "since": "modern",
+   "today": "c. 0.6–1 million speakers (weakly sourced)",
+   "key": "sm_wp_neoaramaic"
+  },
+  {
+   "id": "maaloula",
+   "name": "Western Neo-Aramaic",
+   "family": "nw",
+   "place": "Maaloula & Jubb'adin, Syria",
+   "lat": 33.8,
+   "lon": 36.5,
+   "lang": "mostly oral",
+   "since": "modern",
+   "today": "endangered; a few villages",
+   "key": "sm_natgeo_maaloula"
+  },
+  {
+   "id": "arabic",
+   "name": "Old Arabic",
+   "family": "arabic",
+   "place": "Northern Arabia & Syrian desert",
+   "lat": 29.0,
+   "lon": 39.5,
+   "lang": "Safaitic, Hismaic, Nabataean scripts",
+   "since": "1st mill. BCE; Namara 328 CE",
+   "today": "ancestor of modern Arabic",
+   "key": "sm_wp_arabic"
+  },
+  {
+   "id": "levantine",
+   "name": "Levantine / Palestinian Arabic",
+   "family": "arabic",
+   "place": "Palestine, Syria, Lebanon, Jordan",
+   "lat": 32.2,
+   "lon": 35.3,
+   "lang": "Arabic script",
+   "since": "from 7th c. CE",
+   "today": "about 60 million speakers",
+   "key": "sm_wp_levantine"
+  },
+  {
+   "id": "egyptian_arabic",
+   "name": "Arabic in Egypt",
+   "family": "arabic",
+   "place": "Egypt (Fustat/Cairo)",
+   "lat": 30.0,
+   "lon": 31.2,
+   "lang": "Arabic script",
+   "since": "spoken majority from 9th c. CE",
+   "today": "Egyptian Arabic, major dialect",
+   "key": "sm_rubenson"
+  },
+  {
+   "id": "maghreb_arabic",
+   "name": "Arabic in the Maghreb",
+   "family": "arabic",
+   "place": "North Africa (Kairouan, Tunisia)",
+   "lat": 35.7,
+   "lon": 10.1,
+   "lang": "Arabic script",
+   "since": "from late 7th c. CE",
+   "today": "Maghrebi Arabic dialects",
+   "key": "sm_wp_arabic"
+  },
+  {
+   "id": "siculo_arabic",
+   "name": "Siculo-Arabic",
+   "family": "arabic",
+   "place": "Sicily",
+   "lat": 37.9,
+   "lon": 13.6,
+   "lang": "Arabic script",
+   "since": "c. 10th–13th c. CE",
+   "today": "extinct; ancestor of Maltese",
+   "key": "sm_brincat_maltese"
+  },
+  {
+   "id": "maltese",
+   "name": "Maltese",
+   "family": "arabic",
+   "place": "Malta",
+   "lat": 35.9,
+   "lon": 14.4,
+   "lang": "Latin alphabet",
+   "since": "from 11th c. CE (Arabic settlement 1048)",
+   "today": "about 0.5 million speakers; EU official",
+   "key": "sm_wp_maltese"
+  },
+  {
+   "id": "sabaean",
+   "name": "Sabaean (Old South Arabian)",
+   "family": "south",
+   "place": "Saba (Marib, Yemen)",
+   "lat": 15.4,
+   "lon": 45.3,
+   "lang": "Ancient South Arabian script",
+   "since": "8th c. BCE – 6th c. CE",
+   "today": "extinct",
+   "key": "sm_eb_southarabian"
+  },
+  {
+   "id": "mehri",
+   "name": "Mehri (Modern South Arabian)",
+   "family": "south",
+   "place": "Mahra (Yemen) and Dhofar (Oman)",
+   "lat": 16.6,
+   "lon": 52.6,
+   "lang": "unwritten traditionally",
+   "since": "modern",
+   "today": "c. 100,000–250,000; endangered",
+   "key": "sm_leeds_msal"
+  },
+  {
+   "id": "soqotri",
+   "name": "Soqotri",
+   "family": "south",
+   "place": "Socotra island, Yemen",
+   "lat": 12.5,
+   "lon": 53.9,
+   "lang": "unwritten traditionally",
+   "since": "modern",
+   "today": "c. 50,000–60,000; endangered",
+   "key": "sm_leeds_msal"
+  },
+  {
+   "id": "geez",
+   "name": "Ge'ez",
+   "family": "south",
+   "place": "Aksum (Tigray, Ethiopia)",
+   "lat": 14.1,
+   "lon": 38.7,
+   "lang": "Ge'ez (Ethiopic) script",
+   "since": "3rd–4th c. CE onward",
+   "today": "liturgical only",
+   "key": "sm_eb_geez"
+  },
+  {
+   "id": "amharic",
+   "name": "Amharic",
+   "family": "south",
+   "place": "Central/northern Ethiopian highlands",
+   "lat": 11.6,
+   "lon": 38.0,
+   "lang": "Ge'ez (Ethiopic) script",
+   "since": "14th c. CE onward",
+   "today": "c. 34 million L1 + 25 million L2",
+   "key": "sm_wp_amharic"
+  },
+  {
+   "id": "tigrinya",
+   "name": "Tigrinya",
+   "family": "south",
+   "place": "Eritrea and Tigray (Asmara)",
+   "lat": 15.3,
+   "lon": 38.9,
+   "lang": "Ge'ez (Ethiopic) script",
+   "since": "modern",
+   "today": "about 5.8 million speakers",
+   "key": "sm_eb_tigrinya"
+  },
+  {
+   "id": "tigre",
+   "name": "Tigré",
+   "family": "south",
+   "place": "Northwestern Eritrea",
+   "lat": 16.5,
+   "lon": 37.6,
+   "lang": "Ge'ez (Ethiopic) script",
+   "since": "modern",
+   "today": "over 1 million speakers",
+   "key": "sm_eb_tigre"
+  }
+ ],
+ "routes": [
+  {
+   "from": "phoenician",
+   "to": "punic",
+   "label": "Phoenician colonization: Carthage founded from Tyre, traditionally 814/813 BCE",
+   "key": "sm_livius_carthage"
+  },
+  {
+   "from": "aramaic",
+   "to": "akkadian",
+   "label": "Aramaic replaces Akkadian as spoken lingua franca, 8th–6th c. BCE",
+   "key": "sm_eb_aramaic"
+  },
+  {
+   "from": "aramaic",
+   "to": "imperial_aramaic",
+   "label": "Aramaic as official language of the Achaemenid empire, 559–330 BCE",
+   "key": "sm_eb_aramaic"
+  },
+  {
+   "from": "arabic",
+   "to": "levantine",
+   "label": "Muslim conquest of the Levant, 634–640 CE; gradual shift from Aramaic",
+   "key": "sm_wp_levantine"
+  },
+  {
+   "from": "arabic",
+   "to": "egyptian_arabic",
+   "label": "Arab conquest of Egypt, mid-7th c.; Arabic spoken majority by 9th c.",
+   "key": "sm_rubenson"
+  },
+  {
+   "from": "arabic",
+   "to": "maghreb_arabic",
+   "label": "Arabic spreads with the early Muslim conquests of North Africa",
+   "key": "sm_wp_arabic"
+  },
+  {
+   "from": "maghreb_arabic",
+   "to": "siculo_arabic",
+   "label": "Maghrebi Arabic dialect develops in Sicily (c. 1000 CE)",
+   "key": "sm_brincat_maltese"
+  },
+  {
+   "from": "siculo_arabic",
+   "to": "maltese",
+   "label": "Arabic-speaking settlers reach Malta, 1048; Norman conquest 1090",
+   "key": "sm_brincat_maltese"
+  },
+  {
+   "from": "sabaean",
+   "to": "geez",
+   "label": "DISPUTED: Ethiopian Semitic introduced from southern Arabia c. 800 BCE (Kitchen et al. 2009)",
+   "key": "sm_kitchen2009"
+  }
+ ]
+}

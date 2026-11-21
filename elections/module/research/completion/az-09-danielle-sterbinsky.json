@@ -1,0 +1,49 @@
+{
+ "id": "az-09-danielle-sterbinsky",
+ "cites": {
+  "pfd_sterb25": {
+   "t": "Danielle Sterbinsky — Candidate report, filing year 2025 — Clerk of the U.S. House (Sept. 21, 2026)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10082915.pdf"
+  },
+  "pfd_sterb26": {
+   "t": "Danielle Sterbinsky — Candidate report, filing year 2026 — Clerk of the U.S. House (Sept. 21, 2026)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10082916.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done",
+  "democracy": "news"
+ },
+ "checks": {
+  "legal": "CourtListener and Justia could not be searched directly: the network proxy refuses both hosts and the fetch tool refuses unsearched URLs (Oct. 14, 2026). A site-restricted web search of courtlistener.com/justia.com was run instead, plus news searches. News searches on the candidate's name (Oct. 14, 2026) found no lawsuit, charge, lien or judgment.",
+  "foreign": "2025 and 2026 House candidate reports read directly: no foreign assets or income. FARA: exact-name search of the FARA bulk files (registrants, short forms, foreign principals), Oct. 13, 2026: no match.",
+  "claims": "Campaign site refused by fetch tool; iVoterGuide questionnaire unanswered. Sample = checkable claims in her Ballotpedia 2025 survey (6 rated: 2 true, 4 unverifiable).",
+  "democracy": "Never in office. News search found no statement on the 2020 or 2024 results."
+ },
+ "finances": {
+  "networth": {
+   "min": -98999,
+   "max": -35001,
+   "year": 2026,
+   "c": [
+    "pfd_sterb26"
+   ],
+   "note": "Assets minus liabilities from the 2026 candidate report (Jan. 1, 2025–Apr. 15, 2026)."
+  },
+  "trades": {
+   "count": null,
+   "period": "",
+   "overlap": []
+  },
+  "note": {
+   "t": "One asset: Micron Technology stock in a personal investment account ($1K–$15K; dividends listed as $1,001–$2,500). Liability: joint Nelnet student loans ($50K–$100K). Earned income: salary as a university counselor at Grand Canyon Education ($75,000 in 2024; $85,000 in 2025). Both reports were filed Sept. 21, 2026. No foreign assets or income.",
+   "c": [
+    "pfd_sterb26",
+    "pfd_sterb25"
+   ]
+  }
+ },
+ "research_notes": "Both candidate reports were filed Sept. 21, 2026, although her committee had raised $354,383 by July 1, 2026; likely late (the filing-year-2025 report covers to May 10, 2025), but no late-fee record was checked, so not scored as a violation."
+}

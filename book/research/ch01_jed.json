@@ -1,0 +1,58 @@
+{
+ "volume": "baseline",
+ "verified": "2026-11-14",
+ "entries": [
+  {"id": "jed_schools", "stage": "ch01", "topic": "Jewish day schools and supplementary schools",
+   "claims": [
+    {"text": "AVI CHAI 2018-19 census: a little over 900 day schools, nearly 300,000 students, at least 37 states; ~87% of students in Orthodox schools, two-thirds in ultra-Orthodox; non-Orthodox schools enroll 35% of students outside NY and NJ.", "strength": "reported", "sources": ["jed_fwd_census2019"]},
+    {"text": "Supplementary (Hebrew) school enrollment: ~280,000 (1987), 230,000+ (2006), ~141,000 (2020); 700+ schools closed 2006-2020; Chabad share of enrollment 4% to 10%.", "strength": "reported", "sources": ["jed_jw_hebrewschool2023"]},
+    {"text": "Hearts and Minds (2014), Pomson, Wertheimer, Hacohen-Wolf, funded by AVI CHAI: 'Israel is rarely contested in day schools'; Israel serves as a unifying force.", "strength": "reported", "sources": ["jed_prizmah_hearts"]},
+    {"text": "Satmar: Joel Teitelbaum (b. 1887) rebuilt the community in Williamsburg and Kiryas Joel; Vayoel Moshe; literal reading of the Three Oaths makes a state built by human effort a sin.", "strength": "reported", "sources": ["jed_toi_satmar"]},
+    {"text": "JIMENA toolkit (Feb 2024): schools built when Jewish life was 'Ashkenormative'; Pew 2020: at least 10% of American Jews Sephardi, Mizrahi or mixed.", "strength": "reported", "sources": ["jed_ejp_jimena2024"]}
+   ],
+   "sources": [
+    {"key": "jed_fwd_census2019", "url": "https://forward.com/fast-forward/456572/jewish-day-schools-orthodox/", "label": "Forward, '37 states have a Jewish school', on the AVI CHAI 2018-19 census"},
+    {"key": "jed_jw_hebrewschool2023", "url": "https://jweekly.com/2023/04/20/hebrew-school-enrollment-across-us-down-by-nearly-half-since-2006-report-says/", "label": "J. The Jewish News of Northern California, 'Hebrew school enrollment across US down by nearly half since 2006', 20 Apr 2023 (Jewish Education Project census)"},
+    {"key": "jed_prizmah_hearts", "url": "https://www.prizmah.org/knowledge/resource/hearts-and-minds-israel-north-american-jewish-day-schools", "label": "Prizmah, Hearts and Minds: Israel in North American Jewish Day Schools (Pomson, Wertheimer, Hacohen-Wolf, AVI CHAI, 2014)"},
+    {"key": "jed_toi_satmar", "url": "https://blogs.timesofisrael.com/the-hungarian-roots-of-ultra-orthodox-anti-zionism/", "label": "Yehuda Lukacs, 'The Hungarian roots of ultra-Orthodox anti-Zionism', Times of Israel blogs"},
+    {"key": "jed_ejp_jimena2024", "url": "https://ejewishphilanthropy.com/jimena-launches-new-tool-kit-for-day-schools-to-better-teach-include-sephardi-and-mizrahi-jewry", "label": "eJewishPhilanthropy, JIMENA toolkit for day schools, 8 Feb 2024"}
+   ]},
+  {"id": "jed_camps", "stage": "ch01", "topic": "Camps, emissaries, IfNotNow",
+   "claims": [
+    {"text": "2025: Jewish Agency sent a record 2,050 summer shlichim to 190 North American camps, reaching 150,000+ campers, staff and community members.", "strength": "reported", "sources": ["jed_jns_shlichim2025"]},
+    {"text": "May 2018 IfNotNow counselor training; Ramah national director Mitchell Cohen: 'First we teach a love for Israel. Then we teach the nuances and the conflict.'", "strength": "reported", "sources": ["jed_jta_counselors2018"]},
+    {"text": "'You Never Told Me' campaign (IfNotNow, 2018) asking camps, schools and youth groups to teach the occupation and Palestinian narratives; Liberation Syllabus.", "strength": "reported", "sources": ["jed_972_ynt2018"]}
+   ],
+   "sources": [
+    {"key": "jed_jns_shlichim2025", "url": "https://www.jns.org/wire/the-jewish-agency/jewish-agency-clears-travel-hurdles-to-send-record-2050-camp-shlichim-to-north-america", "label": "JNS (Jewish Agency release), 'Jewish Agency clears travel hurdles to send record 2,050 camp shlichim to North America', 30 Jun 2025"},
+    {"key": "jed_jta_counselors2018", "url": "https://jta.org/?p=1555666", "label": "JTA, 'These Jewish camp counselors want to teach their kids about the occupation', 31 May 2018"},
+    {"key": "jed_972_ynt2018", "url": "https://972mag.com/you-never-told-me-confronting-american-jewish-myths-about-israel/136298/", "label": "Emma Goldberg, ''You never told me': Confronting American Jewish myths about Israel', +972 Magazine, 19 Jun 2018"}
+   ]},
+  {"id": "jed_trip", "stage": "ch01", "topic": "Birthright route, design and walk-offs",
+   "claims": [
+    {"text": "Sample itinerary: Tzfat, Golan with a mandatory geopolitics lecture, Western Wall, Yad Vashem and Mount Herzl, Masada, Bedouin village, Tel Aviv Independence Hall; groups may meet Israeli soldiers and young professionals.", "strength": "primary", "sources": ["jed_br_itinerary"]},
+    {"text": "Feldman (2011): Western Wall and Masada required; itineraries approved by Birthright's Jerusalem office; Chazan: 'emotionally overwhelming experience'; Gidi Mark: participants to tell campus critics 'I was there'; no provider had taken groups into a West Bank Palestinian town; Bronfman: 'Israel does its magic'.", "strength": "reported", "sources": ["jed_nation_feldman2011"]},
+    {"text": "28 Jun 2018: five participants walked off with IfNotNow and went to Hebron with Breaking the Silence; Birthright called the video misleading.", "strength": "reported", "sources": ["jed_fwd_walkoff2018"]},
+    {"text": "Thirteen walked off in summer 2018; Birthright rescinded return flights and said it 'will not tolerate any attempts to use this experience to promote ideological agendas'.", "strength": "reported", "sources": ["jed_alma_walkoffs"]}
+   ],
+   "sources": [
+    {"key": "jed_br_itinerary", "url": "https://birthrightisrael.foundation/itinerary", "label": "Birthright Israel Foundation, sample itinerary"},
+    {"key": "jed_nation_feldman2011", "url": "https://www.thenation.com/article/archive/romance-birthright-israel/", "label": "Kiera Feldman, 'The Romance of Birthright Israel', The Nation, 15 Jun 2011"},
+    {"key": "jed_fwd_walkoff2018", "url": "https://forward.com/fast-forward/404314/birthright-participants-publicly-walk-off-trip-to-visit-west-bank", "label": "Forward, 'Birthright Participants Publicly Walk Off Trip To Visit West Bank', 28 Jun 2018"},
+    {"key": "jed_alma_walkoffs", "url": "https://www.heyalma.com/birthright-participants-walking-off-trips/", "label": "Hey Alma, on Birthright participants walking off trips, 2018"}
+   ]},
+  {"id": "jed_views", "stage": "ch01", "topic": "Surveys of American Jews",
+   "claims": [
+    {"text": "JEI/GBAO, 800 Jewish voters, 28 Jun-1 Jul 2021: 25% agree Israel is an apartheid state (over a third under 40); 22% genocide (a third under 40); statements asked only of those who first said they were not hateful.", "strength": "reported", "sources": ["jed_toi_jei2021"]},
+    {"text": "Pew Feb 2024: under 35, 52% call Israel's conduct of the war acceptable, 42% unacceptable; 68% acceptable among 50+.", "strength": "primary", "sources": ["jed_pew_2024"]},
+    {"text": "JFNA survey (Mar 2025, released Feb 2026): 18-34: 35% Zionist, 32% anti- or non-Zionist, 76% support Israel as Jewish and democratic state, 57% emotionally attached; 75+: 88% attached.", "strength": "reported", "sources": ["jed_ji_jfna2026"]},
+    {"text": "AP-NORC 2026, 1,022 Jewish adults: about a quarter of religiously affiliated and about 4 in 10 unaffiliated say Israel committed genocide in Gaza; support for Israel less central to younger adults' identity.", "strength": "reported", "sources": ["jed_apnorc_2026"]}
+   ],
+   "sources": [
+    {"key": "jed_toi_jei2021", "url": "https://www.timesofisrael.com/poll-finds-a-quarter-of-us-jews-think-israel-is-apartheid-state/", "label": "Times of Israel, 'Poll finds a quarter of US Jews think Israel is apartheid state', 13 Jul 2021"},
+    {"key": "jed_pew_2024", "url": "https://www.pewresearch.org/short-reads/2024/04/02/how-us-jews-are-experiencing-the-israel-hamas-war/", "label": "Pew Research Center, 'How U.S. Jews are experiencing the Israel-Hamas war', 2 Apr 2024"},
+    {"key": "jed_ji_jfna2026", "url": "https://jewishinsider.com/2026/02/survey-american-jews-israel-support-zionism-jewish-federations-of-north-america/", "label": "Jewish Insider, JFNA survey of American Jews on Israel and Zionism, Feb 2026"},
+    {"key": "jed_apnorc_2026", "url": "https://www.inquirer.com/news/nation-world/poll-jewish-adults-us-israel-gaza-genocide-antisemitism-politicians-trump-20260719.html", "label": "Associated Press (via Philadelphia Inquirer), AP-NORC poll of US Jewish adults, 19 Jul 2026"}
+   ]}
+ ]
+}

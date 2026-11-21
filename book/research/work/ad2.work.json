@@ -1,0 +1,269 @@
+{
+ "ad2_what_holds": {
+  "topic": "Where the taught American Dream holds: income levels, mobility of immigrants' children, place, Black and Hispanic gains, GI Bill era, goods",
+  "claims": [
+   {
+    "text": "Chetty et al. (Science 2017): share of children earning more than their parents (absolute mobility) about 90% for the 1940 birth cohort, about 50% for children born in the 1980s; decline robust to alternative price deflators, income definitions and tax/transfer adjustments; higher GDP growth alone would not restore it; 1940-cohort distribution of growth would reverse more than 70% of the decline",
+    "strength": "primary",
+    "sources": [
+     "ad2_chetty_fading"
+    ]
+   },
+   {
+    "text": "Opportunity Insights summary: sons vs fathers' earnings 95% (1940) and 41% (1984 cohort); absolute mobility fell in all 50 states, most in industrial Midwest (Michigan, Illinois); 1940s-50s GDP growth with today's distribution raises mobility only to 62%; today's GDP distributed as in the 1940s raises it to 80%",
+    "strength": "primary",
+    "sources": [
+     "ad2_oi_fading"
+    ]
+   },
+   {
+    "text": "Abramitzky et al. (AER 2021): using millions of father-son pairs over more than 100 years, children of immigrants from nearly every sending country have higher upward mobility than children of US-born parents, historically and today; part of the advantage comes from immigrant families locating in places with better opportunities",
+    "strength": "primary",
+    "sources": [
+     "ad2_abramitzky_aer"
+    ]
+   },
+   {
+    "text": "Abramitzky et al. (NBER WP): sons of immigrant fathers at the 25th percentile reached ranks 3-4 percentiles above sons of US-born fathers (1880-1910); about 5 percentile points in modern data (Opportunity Insights and GSS); exceptions in modern data include Haiti and Jamaica",
+    "strength": "primary",
+    "sources": [
+     "ad2_abramitzky_nber"
+    ]
+   },
+   {
+    "text": "Chetty, Dobbie, Goldman, Porter, Yang (2024): between the 1978 and 1992 birth cohorts Black children's earnings rose at all parental income levels; white-Black earnings gaps for children from low-income families fell 30%; class gaps among white children widened 30%; same pattern for education, test scores, mortality",
+    "strength": "primary",
+    "sources": [
+     "ad2_changing_opp"
+    ]
+   },
+   {
+    "text": "Chetty, Hendren, Jones, Porter: 'Hispanic Americans are moving up significantly in the income distribution across generations' with relatively high intergenerational mobility; Black Americans have substantially lower upward mobility than whites",
+    "strength": "primary",
+    "sources": [
+     "ad2_oi_race_hisp"
+    ]
+   },
+   {
+    "text": "Chetty, Hendren, Kline, Saez (QJE 2014): probability that a child raised in the bottom fifth reaches the top fifth about 4.4% in Charlotte vs 12.9% in San Jose; higher mobility areas have less residential segregation, less income inequality, better primary schools, more social capital, more family stability; data on 40m+ children",
+    "strength": "primary",
+    "sources": [
+     "ad2_land_opp"
+    ]
+   },
+   {
+    "text": "VA: Roosevelt signed the GI Bill 22 June 1944; veterans were 49% of college admissions in 1947; by 25 July 1956, 7.8 million of 16 million WWII veterans had used education or training benefits; VA backed nearly 2.4 million home loans 1944-1952",
+    "strength": "primary",
+    "sources": [
+     "ad2_va_gibill"
+    ]
+   },
+   {
+    "text": "Turner and Bound: WWII service plus GI Bill raised college attainment about 0.4 years for Black men born outside the South and about 0.3 years for white men, but Southern-born Black veterans saw few gains; the bill 'exacerbated rather than narrowed' Black-white gaps among Southern men; about 100 institutions open to Black students in the South",
+    "strength": "reported",
+    "sources": [
+     "ad2_turner_bound"
+    ]
+   },
+   {
+    "text": "USDA ERS (2026): Americans spent 9.7% of disposable personal income on food in 2025 (4.8% at home, 4.9% away) vs 10.4% in 1997; in 2024 the lowest income quintile spent 33.0% of before-tax income on food vs 6.4% for the highest",
+    "strength": "primary",
+    "sources": [
+     "ad2_ers_food"
+    ]
+   },
+   {
+    "text": "USDA ERS (2020 chart): total food took 17.0% of disposable personal income in 1960 and 9.5% in 2019",
+    "strength": "primary",
+    "sources": [
+     "ad2_ers_food1960"
+    ]
+   },
+   {
+    "text": "Census C25: share of new one-family houses completed with air-conditioning 49% (1973), 63% (1980), 76% (1990), 85% (2000), 89% (2008)",
+    "strength": "primary",
+    "sources": [
+     "ad2_census_chars"
+    ]
+   },
+   {
+    "text": "OECD Society at a Glance 2024 Fig 4.1 (via Wikipedia table): median equivalised household disposable income 2021, USD PPP: Luxembourg 49,748, United States 46,625 (2nd), Norway 41,621, Switzerland 39,698, Canada 39,388",
+    "strength": "reported",
+    "sources": [
+     "ad2_oecd_median"
+    ]
+   },
+   {
+    "text": "OECD Better Life Index: in the United States the top 20% of the population earn about eight times as much as the bottom 20%",
+    "strength": "primary",
+    "sources": [
+     "ad2_oecd_bli"
+    ]
+   }
+  ],
+  "sources": {
+   "ad2_chetty_fading": {
+    "url": "https://www.nber.org/papers/w22910",
+    "label": "Chetty, Grusky, Hell, Hendren, Manduca and Narang, 'The Fading American Dream: Trends in Absolute Income Mobility Since 1940', NBER WP 22910 (Dec 2016, rev. Mar 2017); Science 356(6336), 2017"
+   },
+   "ad2_oi_fading": {
+    "url": "https://opportunityinsights.org/paper/the-fading-american-dream/",
+    "label": "Opportunity Insights, 'The Fading American Dream' paper page and summary"
+   },
+   "ad2_abramitzky_aer": {
+    "url": "https://www.aeaweb.org/doi/10.1257/aer.20191586",
+    "label": "Abramitzky, Boustan, Jacome and Perez, 'Intergenerational Mobility of Immigrants in the United States over Two Centuries', American Economic Review 111(2), Feb 2021, 580-608"
+   },
+   "ad2_abramitzky_nber": {
+    "url": "https://www.nber.org/papers/w26408.pdf",
+    "label": "Abramitzky, Boustan, Jacome and Perez, NBER WP 26408 (working-paper version of the AER 2021 article)"
+   },
+   "ad2_changing_opp": {
+    "url": "https://www.nber.org/papers/w32697",
+    "label": "Chetty, Dobbie, Goldman, Porter and Yang, 'Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility', NBER WP 32697, Jul 2024 (rev. Dec 2025)"
+   },
+   "ad2_oi_race_hisp": {
+    "url": "https://opportunityinsights.org/paper/race/",
+    "label": "Chetty, Hendren, Jones and Porter, 'Race and Economic Opportunity in the United States', Opportunity Insights (QJE 2020), abstract"
+   },
+   "ad2_land_opp": {
+    "url": "https://www.nber.org/papers/w19843",
+    "label": "Chetty, Hendren, Kline and Saez, 'Where is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States', NBER WP 19843 (2014); QJE 129(4), 2014"
+   },
+   "ad2_va_gibill": {
+    "url": "https://www.va.gov/opa/publications/celebrate/gi-bill.pdf",
+    "label": "US Department of Veterans Affairs, 'Born of Controversy: The GI Bill of Rights'"
+   },
+   "ad2_turner_bound": {
+    "url": "https://www.nber.org/digest/dec02/w9044.html",
+    "label": "NBER Digest (Les Picker), 'The G.I. Bill, World War II, and the Education of Black Americans', Dec 2002, summarising Turner and Bound, NBER WP 9044"
+   },
+   "ad2_ers_food": {
+    "url": "https://www.ers.usda.gov/data-products/ag-and-food-statistics-charting-the-essentials/food-prices-and-spending",
+    "label": "USDA Economic Research Service, 'Ag and Food Statistics: Charting the Essentials – Food Prices and Spending', updated 1 Jun 2026"
+   },
+   "ad2_ers_food1960": {
+    "url": "https://www.ers.usda.gov/data-products/charts-of-note/100002",
+    "label": "USDA ERS Chart of Note, 'Average share of income spent on food at home in the U.S. has fallen over time…', 11 Dec 2020"
+   },
+   "ad2_census_chars": {
+    "url": "https://www.census.gov/construction/chars/pdf/c25ann2008.pdf",
+    "label": "US Census Bureau, Characteristics of New Housing 2008 (C25), table 'Presence of Air-Conditioning in New One-Family Houses Completed'"
+   },
+   "ad2_oecd_median": {
+    "url": "https://en.wikipedia.org/wiki/Disposable_household_and_per_capita_income",
+    "label": "Wikipedia, 'Disposable household and per capita income', table reproducing OECD, Society at a Glance 2024, Figure 4.1 (median equivalised household disposable income, 2021, USD PPP)"
+   },
+   "ad2_oecd_bli": {
+    "url": "https://www.oecdbetterlifeindex.org/countries/united-states/",
+    "label": "OECD Better Life Index, 'United States' country page"
+   }
+  }
+ },
+ "ad2_how_to_measure": {
+  "topic": "How to measure the Dream: absolute vs relative mobility, income vs wealth, median vs mean, real vs nominal, household vs individual, price index",
+  "claims": [
+   {
+    "text": "Chetty et al. (2014): percentile rank-based intergenerational mobility 'extremely stable' for the 1971-1993 birth cohorts; probability of moving from bottom fifth to top fifth 8.4% (1971 cohort) and 9.0% (1986 cohort); 'the rungs of the ladder have grown further apart'; consequences of the 'birth lottery' larger today than in the past",
+    "strength": "primary",
+    "sources": [
+     "ad2_chetty_trends"
+    ]
+   },
+   {
+    "text": "NBER Digest: college attendance gap between highest- and lowest-income children 74.5 points (1984 cohort) and 69.2 points (1993 cohort); mobility fairly stable in each of nine census divisions",
+    "strength": "reported",
+    "sources": [
+     "ad2_nber_trends"
+    ]
+   },
+   {
+    "text": "SCF 2025 Table 1 (2024 income, 2025 dollars): median family income $82.2k, mean $145.2k; median by race: White non-Hispanic $95.3k, Black non-Hispanic $49.4k, Hispanic $66.8k. Table 2: median net worth all $215.9k, mean $1,241.5k; White $332.1k, Black $36.8k, Hispanic $79.6k. Report gives standard errors for subgroups only online",
+    "strength": "primary",
+    "sources": [
+     "ad2_scf_t1"
+    ]
+   },
+   {
+    "text": "Real median household income (2025 C-CPI-U dollars): 1984 $61,910; 1989 $67,880; 1993 $64,240; 1999 $73,760; 2007 $74,810; 2012 $69,070; 2016 $77,230; 2019 $85,320; 2022 $81,460; 2024 $85,210; 2025 $87,460",
+    "strength": "primary",
+    "sources": [
+     "ad2_fred_mhi"
+    ]
+   },
+   {
+    "text": "Census uses the chained CPI-U (C-CPI-U) to adjust income from 2000 onward (adopted 2023 after an interagency working group recommendation) and the R-CPI-U-RS and earlier series before 2000; median household income 2023 $80,610 nominal = $82,690 in 2024 dollars; C-CPI-U prices +2.6% 2023-24",
+    "strength": "primary",
+    "sources": [
+     "ad2_census_ccpiu"
+    ]
+   },
+   {
+    "text": "Census (Dec 2025): 39.7 million one-person households in 2025, 29% of households, up from 20% in 1975",
+    "strength": "primary",
+    "sources": [
+     "ad2_census_hh2025"
+    ]
+   },
+   {
+    "text": "Reeves and Halikias (Brookings 2017), summarising Scott Winship: adjusting for smaller family size raises the share of 1980s-born children better off than parents from 50% to 60%; replicating in PSID and switching from CPI-U-RS to the PCE deflator raises it to 67%; including transfer income to 68%",
+    "strength": "reported",
+    "sources": [
+     "ad2_reeves_winship"
+    ]
+   },
+   {
+    "text": "BLS: the C-CPI-U uses a superlative formula to account for consumers substituting across item categories, with weights varying monthly; the CPI-U assumes no substitution across categories and updates weights annually; C-CPI-U published from July 2002 data; December-to-December difference averaged about 0.2 percentage points lower, 2001-2023, though occasionally higher",
+    "strength": "primary",
+    "sources": [
+     "ad2_bls_ccpiu"
+    ]
+   },
+   {
+    "text": "BEA: CPI and PCE price index differ by formula (PCE Fisher-Ideal vs CPI modified Laspeyres), weights and scope: PCE covers 'spending by and on behalf of the personal sector', CPI 'out-of-pocket spending by households'",
+    "strength": "primary",
+    "sources": [
+     "ad2_bea_cpipce"
+    ]
+   }
+  ],
+  "sources": {
+   "ad2_chetty_trends": {
+    "url": "https://eml.berkeley.edu/%7Esaez/trendssummary.pdf",
+    "label": "Chetty, Hendren, Kline, Saez and Turner, 'Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility', executive summary of NBER WP 19844 (AER P&P 2014)"
+   },
+   "ad2_nber_trends": {
+    "url": "https://www.nber.org/digest/jul14/w19844.html",
+    "label": "NBER Digest (Matt Nesvisky), 'Recent Trends in Intergenerational Mobility', Jul 2014"
+   },
+   "ad2_scf_t1": {
+    "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+    "label": "Federal Reserve Board, 'Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer Finances', Oct 2026, Tables 1-2"
+   },
+   "ad2_fred_mhi": {
+    "url": "https://fred.stlouisfed.org/data/MEHOINUSA672N",
+    "label": "US Census Bureau via FRED, Real Median Household Income in the United States (MEHOINUSA672N), 2025 C-CPI-U dollars, updated 16 Sep 2026"
+   },
+   "ad2_census_ccpiu": {
+    "url": "https://www.census.gov/newsroom/blogs/research-matters/2025/09/inflation-affects-income-earnings-estimate.html",
+    "label": "Michael D. King and Melissa Kollar, US Census Bureau, 'How Inflation Affects the Census Bureau's Income and Earnings Estimates', 2 Sep 2025"
+   },
+   "ad2_census_hh2025": {
+    "url": "https://www.census.gov/newsroom/press-releases/2025/families-and-living-arrangements.html",
+    "label": "US Census Bureau, 'Census Bureau Releases New Estimates on America's Families and Living Arrangements', CB25-TPS.78, 2 Dec 2025"
+   },
+   "ad2_reeves_winship": {
+    "url": "https://www.brookings.edu/articles/how-to-lift-the-u-s-mobility-rate-from-50-to-68-in-three-simple-steps/",
+    "label": "Richard V. Reeves and Dimitrios Halikias, Brookings, 'How to lift the U.S. mobility rate from 50% to 68% in three simple steps', 13 Apr 2017 (summarising Scott Winship's re-estimates)"
+   },
+   "ad2_bls_ccpiu": {
+    "url": "https://www.bls.gov/cpi/additional-resources/chained-cpi-questions-and-answers.htm",
+    "label": "US Bureau of Labor Statistics, 'Frequently Asked Questions about the Chained Consumer Price Index for All Urban Consumers (C-CPI-U)'"
+   },
+   "ad2_bea_cpipce": {
+    "url": "https://bea.gov/help/faq/555",
+    "label": "US Bureau of Economic Analysis, FAQ 'How does the PCE price index differ from the CPI?'"
+   }
+  }
+ }
+}

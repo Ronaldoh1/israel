@@ -1,0 +1,732 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de25_location",
+   "stage": "de25",
+   "topic": "Location data: bidstream, brokers sold to government, carriers, Hemisphere/DAS, court limits",
+   "claims": [
+    {
+     "text": "FTC proposed order 9 Jan 2024 against X-Mode/Outlogic: sold precise location tied to mobile advertising IDs, not anonymised; clients included private government contractors; no sensitive-location filtering until May 2023; vote 3-0",
+     "strength": "primary",
+     "sources": [
+      "de25_ftc_xmode"
+     ]
+    },
+    {
+     "text": "FTC technology blog 3 Dec 2024: ad auctions broadcast consumer data, sometimes including location, to dozens of bidders in milliseconds; Mobilewalla allegedly kept data from auctions it lost; 'location data is sensitive data, full stop'",
+     "strength": "primary",
+     "sources": [
+      "de25_ftc_rtb",
+      "de25_wh_mobilewalla"
+     ]
+    },
+    {
+     "text": "FTC final order vs Gravy Analytics and Venntel, 14 Jan 2025, 5-0: bans sale/use of sensitive location data except in limited national security or law enforcement circumstances; complaint alleged collection without consent for commercial and government uses",
+     "strength": "primary",
+     "sources": [
+      "de25_ftc_gravy"
+     ]
+    },
+    {
+     "text": "CBP paid just under $476,000 for Venntel software on 5 Aug 2020; Venntel sells app-derived phone movements searchable by area or device ID; WSJ Feb 2020 reported agencies used it for border crossings and arrests; IRS-CI used Venntel for a year and located no targets (Wyden's office)",
+     "strength": "reported",
+     "sources": [
+      "de25_vice_venntel"
+     ]
+    },
+    {
+     "text": "DHS OIG-23-61 (Sept 2023): CBP, ICE and Secret Service did not follow DHS privacy policy or obtain Privacy Impact Assessments required by the E-Government Act before buying commercial telemetry data; shared passwords, no supervisory review; a CBP employee used the data to track coworkers (reported 20 Aug 2020); recommended ICE stop using it until PIAs approved",
+     "strength": "primary",
+     "sources": [
+      "de25_oig_ctd",
+      "de25_hst_ctd"
+     ]
+    },
+    {
+     "text": "404 Media 8 Jan 2026: ICE's Penlink Webloc can watch a neighbourhood for phones and follow devices over time, from data on hundreds of millions of phones; an internal ICE legal analysis said it can be queried without a warrant",
+     "strength": "reported",
+     "sources": [
+      "de25_404_webloc",
+      "de25_db_webloc"
+     ]
+    },
+    {
+     "text": "70 members of Congress wrote to DHS IG Cuffari on 3 Mar 2026 asking for a probe of ICE location purchases incl. the no-bid Penlink contract with a Webloc licence; ICE cancelled a hearing appearance in Feb 2026",
+     "strength": "reported",
+     "sources": [
+      "de25_keyt_letter"
+     ]
+    },
+    {
+     "text": "EFF/AP 1 Sep 2022: Fog Data Science sold police app-derived location histories, claiming billions of points on 250m+ devices, for under $10,000 a year; at least 18 agency clients; searches often without warrants",
+     "strength": "reported",
+     "sources": [
+      "de25_eff_fog"
+     ]
+    },
+    {
+     "text": "FBI Director Patel told the Senate on 18 Mar 2026 'We do purchase commercially available information that is consistent with the Constitution and the laws'; Wray had said in 2023 the FBI previously bought location data but was not currently doing so",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_patel"
+     ]
+    },
+    {
+     "text": "FCC fined carriers in Apr 2024 for selling customer location to aggregators without consent: AT&T ~$57m, Verizon ~$46.9m, T-Mobile $80m, Sprint ~$12m (~$200m total); the Supreme Court upheld the AT&T and Verizon fines 8-1 on 4 Jun 2026 (Roberts; Thomas dissenting), rejecting the jury-trial challenge; Fifth Circuit had sided with AT&T, Second Circuit with FCC",
+     "strength": "reported",
+     "sources": [
+      "de25_rec_fcc",
+      "de25_wcc_fcc",
+      "de25_aa_fcc"
+     ]
+    },
+    {
+     "text": "Wyden letter 20 Nov 2023: Hemisphere (2009-13 name) / Data Analytical Services pays AT&T to search domestic call records back to 1987, ~4bn records added daily, 'trillions' of records; searches often by subpoena; ONDCP funding paused 2013, resumed 2017, paused 2021, $270k in 2022",
+     "strength": "primary",
+     "sources": [
+      "de25_wyden_hemisphere"
+     ]
+    },
+    {
+     "text": "Chatrie v. United States, 29 Jun 2026: Kagan for five, Gorsuch concurring in judgment, Alito, Thomas, Barrett dissenting; accessing Google Location History via geofence is a search; warrant's probable cause and particularity remanded; 150 m radius, one hour around a bank robbery; Google moved Location History on-device in 2023",
+     "strength": "reported",
+     "sources": [
+      "de25_crs_chatrie"
+     ]
+    },
+    {
+     "text": "Judge Carlton Reeves (S.D. Miss.), Aug 2026: tower-dump warrants are general warrants and per se unconstitutional; upheld magistrate's denials of requests for towers near nine crime scenes; 'The government cannot have access to an entire haystack because it may contain a needle'",
+     "strength": "reported",
+     "sources": [
+      "de25_wlox_tower"
+     ]
+    },
+    {
+     "text": "NYT, early September 2013: DEA's Hemisphere programme, launched 2007, embedded AT&T staff with drug agents, records back to 1987; a slide told officials to 'never refer to Hemisphere in any official document'",
+     "strength": "reported",
+     "sources": [
+      "de25_reg_hemisphere"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25_ftc_xmode",
+     "url": "https://ftc.gov/news-events/news/press-releases/2024/01/ftc-order-prohibits-data-broker-x-mode-social-outlogic-selling-sensitive-location-data",
+     "label": "Federal Trade Commission, 'FTC Order Prohibits Data Broker X-Mode Social and Outlogic from Selling Sensitive Location Data', 9 January 2024"
+    },
+    {
+     "key": "de25_ftc_rtb",
+     "url": "https://data.aclum.org/storage/2025/01/FTC_www_ftc_gov_policy_advocacy-research_tech-at-ftc_2024_12_unpacking-real-time-bidding-through-ftcs-case-mobilewalla.pdf",
+     "label": "FTC Office of Technology, 'Unpacking Real Time Bidding through FTC's case on Mobilewalla', 3 December 2024 (archived copy)"
+    },
+    {
+     "key": "de25_ftc_gravy",
+     "url": "https://www.ftc.gov/node/87189",
+     "label": "Federal Trade Commission, 'FTC Finalizes Order with Gravy Analytics and Venntel', 14 January 2025"
+    },
+    {
+     "key": "de25_wh_mobilewalla",
+     "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20241216-ftc-continues-to-bring-enforcement-actions-against-data-brokers",
+     "label": "WilmerHale, 'FTC Continues to Bring Enforcement Actions Against Data Brokers', 16 December 2024"
+    },
+    {
+     "key": "de25_vice_venntel",
+     "url": "https://www.vice.com/en/article/customs-border-protection-venntel-location-data-dhs",
+     "label": "Joseph Cox, Vice/Motherboard, 'CBP Bought Location Data from Venntel', 25 August 2020"
+    },
+    {
+     "key": "de25_oig_ctd",
+     "url": "https://www.oversight.gov/reports/audit/cbp-ice-and-secret-service-did-not-adhere-privacy-policies-or-develop-sufficient",
+     "label": "DHS Office of Inspector General, OIG-23-61, 'CBP, ICE, and Secret Service Did Not Adhere to Privacy Policies or Develop Sufficient Policies Before Procuring and Using Commercial Telemetry Data', September 2023"
+    },
+    {
+     "key": "de25_hst_ctd",
+     "url": "https://www.hstoday.us/?p=176302",
+     "label": "Homeland Security Today, summary of DHS OIG report OIG-23-61 on commercial telemetry data, September 2023"
+    },
+    {
+     "key": "de25_404_webloc",
+     "url": "https://404media.co/inside-ices-tool-to-monitor-phones-in-entire-neighborhoods/",
+     "label": "404 Media, 'Inside ICE's Tool to Monitor Phones in Entire Neighborhoods', 8 January 2026"
+    },
+    {
+     "key": "de25_db_webloc",
+     "url": "https://www.thedailybeast.com/ice-buys-sinister-tool-built-to-map-your-everyday-movements/",
+     "label": "Daily Beast (on 404 Media procurement reporting), ICE and HSI buy Penlink location tool, 1 October 2025"
+    },
+    {
+     "key": "de25_keyt_letter",
+     "url": "https://keyt.com/news/california/2026/03/04/congressional-members-demand-investigation-into-purchase-of-americans-cellular-location-data/",
+     "label": "KEYT, 'Congressional members demand investigation into purchase of Americans' cellular location data', 4 March 2026"
+    },
+    {
+     "key": "de25_eff_fog",
+     "url": "https://www.eff.org/press/releases/data-broker-helps-police-see-everywhere-youve-been-click-mouse-eff-investigation",
+     "label": "Electronic Frontier Foundation, 'Data Broker Helps Police See Everywhere You've Been with the Click of a Mouse', 1 September 2022"
+    },
+    {
+     "key": "de25_tc_patel",
+     "url": "https://techcrunch.com/?p=3103731",
+     "label": "TechCrunch, FBI Director Patel tells Senate the FBI buys commercially available information, 18 March 2026"
+    },
+    {
+     "key": "de25_rec_fcc",
+     "url": "https://therecord.media/supreme-court-rules-fcc-fines-telecom-location-data-legal",
+     "label": "The Record, 'Supreme Court rules FCC fines over telecom location data legal', 4 June 2026"
+    },
+    {
+     "key": "de25_wcc_fcc",
+     "url": "https://wccftech.com/att-and-verizon-tried-to-use-the-u-s-supreme-court-to-dodge-a-104-million-fcc-fine-for-selling-user-location-data-but-utterly-lost-the-gambit/amp/",
+     "label": "Wccftech, AT&T and Verizon lose Supreme Court challenge to FCC location-data fines, 5 June 2026"
+    },
+    {
+     "key": "de25_aa_fcc",
+     "url": "https://www.androidauthority.com/supreme-court-verizon-att-3631934",
+     "label": "Android Authority, Supreme Court to hear AT&T and Verizon challenges to FCC location fines, 12 January 2026"
+    },
+    {
+     "key": "de25_wyden_hemisphere",
+     "url": "https://www.wyden.senate.gov/imo/media/doc/wyden_hemisphere_surveillance_letter_112023.pdf",
+     "label": "Sen. Ron Wyden, letter to Attorney General Merrick Garland on Hemisphere/Data Analytical Services, 20 November 2023"
+    },
+    {
+     "key": "de25_crs_chatrie",
+     "url": "https://www.everycrsreport.com/files/2026-06-30_LSB11274_da2739d321d1d12ff92e47949779ceceda5af3a7.html",
+     "label": "Congressional Research Service, LSB11274, on Chatrie v. United States, 30 June 2026"
+    },
+    {
+     "key": "de25_wlox_tower",
+     "url": "https://www.wlox.com/2026/08/06/your-phone-your-privacy-mississippi-federal-judge-rules-mass-cell-tower-data-searches-violate-constitution/",
+     "label": "WLOX, 'Mississippi federal judge rules mass cell tower data searches violate Constitution', 6 August 2026"
+    },
+    {
+     "key": "de25_reg_hemisphere",
+     "url": "https://www.theregister.com/2013/09/04/att_dea_hemisphere_program/",
+     "label": "The Register (on the New York Times), 'AT&T and DEA Hemisphere programme', 4 September 2013"
+    }
+   ]
+  },
+  {
+   "id": "de25_spyware",
+   "stage": "de25",
+   "topic": "Spyware, phone extraction and cell-site simulators",
+   "claims": [
+    {
+     "text": "FORCEDENTRY (NSO, 2021) reached iPhones through iMessage with only a number or Apple ID; a file named .gif was parsed as a PDF with JBIG2 data; an integer overflow let attackers build a small computer from 70,000+ JBIG2 commands; patched 13 Sep 2021 (iOS 14.8, CVE-2021-30860); 'one of the most technically sophisticated exploits we've ever seen'",
+     "strength": "primary",
+     "sources": [
+      "de25_pz_forcedentry"
+     ]
+    },
+    {
+     "text": "Amnesty Security Lab found a Cellebrite UFED-linked zero-day chain (USB driver flaws, CVE-2024-53104 etc.) used to unlock a Serbian student activist's Samsung phone in police custody on 25 Dec 2024, followed by an attempt to install spyware; Cellebrite suspended 'certain Serbian customers' on 25 Feb 2025",
+     "strength": "reported",
+     "sources": [
+      "de25_ci_serbia"
+     ]
+    },
+    {
+     "text": "NSO published a transparency report on 8 Jan 2026 seeking US government business; its 2025 bid to leave the Entity List was reported denied; no US government customer reported",
+     "strength": "disputed",
+     "sources": [
+      "de25_wpn_nso"
+     ]
+    },
+    {
+     "text": "DHS OIG-23-17 (2023): Secret Service and ICE did not always adhere to statute and policy on cell-site simulators; recommendations on distinguishing policy exigency from statutory emergencies and on documenting data deletion",
+     "strength": "primary",
+     "sources": [
+      "de25_oig_css"
+     ]
+    },
+    {
+     "text": "ICE bought cell-site simulator vehicles from TOSV: $818,000 (Sep 2024) and $825,000 modification (8 May 2025); ICE used simulators at least 466 times 2017-19 (ACLU) and 1,885+ times 2013-17 (BuzzFeed)",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_tosv"
+     ]
+    },
+    {
+     "text": "DOJ policy 3 Sep 2015: warrant on probable cause required for cell-site simulators, with exigent/exceptional exceptions; data deleted once the device is located and at least daily; no content collection",
+     "strength": "primary",
+     "sources": [
+      "de25_doj_css"
+     ]
+    },
+    {
+     "text": "DHS forecast (May 2026): five-year ICE/HSI IDIQ with Cellebrite, $100m ceiling, phones and drones; HSI calls its extraction tool 'the most widely utilized and deployed computer forensic tool'; Cellebrite says use requires valid legal authorization",
+     "strength": "reported",
+     "sources": [
+      "de25_fs_forecast"
+     ]
+    },
+    {
+     "text": "HSI signed a $3m Magnet Forensics licence contract (Sep 2025), likely GrayKey, plus smaller GrayKey renewals; a $5m GrayKey contract in 2024 reported by Forbes; ICE declined to say if used on arrested migrants' phones",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_graykey"
+     ]
+    },
+    {
+     "text": "CBP searched a record 55,318 electronic devices in FY2025, up about 17% on the prior year; basic searches 50,922; searches of US citizens' devices 13,590",
+     "strength": "reported",
+     "sources": [
+      "de25_dn_cbp",
+      "de25_iptp_cbp"
+     ]
+    },
+    {
+     "text": "Italy: Rome and Naples prosecutors confirmed in March 2026 that Fanpage journalist Francesco Cancellato's phone was hacked (Graphite per Citizen Lab); could not confirm for Ciro Pellegrino; COPASIR (June 2025) found targeting of Mediterranea activists lawful; Paragon cancelled contracts with AISE/AISI and had not answered prosecutors as of April 2026; Meloni government denies hacking journalists",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_italy",
+      "de25_cl_cancellato"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25_pz_forcedentry",
+     "url": "https://projectzero.google/2021/12/a-deep-dive-into-nso-zero-click.html",
+     "label": "Ian Beer and Samuel Groß, Google Project Zero, 'A deep dive into an NSO zero-click iMessage exploit', 15 December 2021"
+    },
+    {
+     "key": "de25_ci_serbia",
+     "url": "https://cyberinsider.com/serbia-used-cellebrite-zero-day-android-attack-on-student-activist/",
+     "label": "CyberInsider, 'Serbia used Cellebrite zero-day Android attack on student activist' (on Amnesty International Security Lab findings), 28 February 2025"
+    },
+    {
+     "key": "de25_wpn_nso",
+     "url": "https://www.webpronews.com/nso-group-seeks-us-market-entry-with-2026-transparency-report-amid-skepticism",
+     "label": "WebProNews, on NSO Group's January 2026 transparency report and US market push, January 2026"
+    },
+    {
+     "key": "de25_oig_css",
+     "url": "https://www.oversight.gov/reports/audit/secret-service-and-ice-did-not-always-adhere-statute-and-policies-governing-use-cell",
+     "label": "DHS Office of Inspector General, OIG-23-17, 'Secret Service and ICE Did Not Always Adhere to Statute and Policies Governing Use of Cell-Site Simulators', 2023"
+    },
+    {
+     "key": "de25_tc_tosv",
+     "url": "https://techcrunch.com/?p=3054996",
+     "label": "TechCrunch, ICE buys more cell-site simulator vehicles from TechOps Specialty Vehicles, 7 October 2025"
+    },
+    {
+     "key": "de25_doj_css",
+     "url": "https://www.justice.gov/archives/opa/pr/justice-department-announces-enhanced-policy-use-cell-site-simulators",
+     "label": "US Department of Justice, 'Justice Department Announces Enhanced Policy for Use of Cell-Site Simulators', 3 September 2015"
+    },
+    {
+     "key": "de25_fs_forecast",
+     "url": "https://fedscoop.com/dhs-cellebrite-privacy-drones-data-mobile-devices-ice/",
+     "label": "FedScoop, DHS forecast plans $100m ICE/HSI Cellebrite contract covering phones and drones, 11 May 2026"
+    },
+    {
+     "key": "de25_tc_graykey",
+     "url": "https://techcrunch.com/2025/09/18/ice-unit-signs-new-3-million-contract-for-phone-hacking-tech",
+     "label": "TechCrunch, 'ICE unit signs new $3 million contract for phone-hacking tech', 18 September 2025"
+    },
+    {
+     "key": "de25_dn_cbp",
+     "url": "https://www.democracynow.org/2025/10/29/headlines/wired_cbp_searched_a_record_number_of_phones_at_the_us_border_over_the_past_year",
+     "label": "Democracy Now! headline (citing Wired), 'CBP searched a record number of phones at the US border', 29 October 2025"
+    },
+    {
+     "key": "de25_iptp_cbp",
+     "url": "https://immpolicytracking.org/policies/reported-cbp-increases-searches-of-electronic-devices-at-the-border/",
+     "label": "Immigration Policy Tracking Project, 'Reported: CBP increases searches of electronic devices at the border' (citing CBC News, October 2025 and March 2026)"
+    },
+    {
+     "key": "de25_tc_italy",
+     "url": "https://techcrunch.com/2026/04/28/paragon-is-not-collaborating-with-italian-authorities-probing-spyware-attacks-report-says",
+     "label": "TechCrunch, 'Paragon is not collaborating with Italian authorities probing spyware attacks, report says', 28 April 2026"
+    },
+    {
+     "key": "de25_cl_cancellato",
+     "url": "https://citizenlab.ca/italian-prosecutors-confirm-journalist-was-hacked-with-paragon-spyware/",
+     "label": "Citizen Lab, 'Italian Prosecutors Confirm Journalist Was Hacked with Paragon Spyware', 18 March 2026"
+    }
+   ]
+  },
+  {
+   "id": "de25_cars_home",
+   "stage": "de25",
+   "topic": "Cars, wearables, smart home: collection, state access and enforcement",
+   "claims": [
+    {
+     "text": "FTC final order vs GM/OnStar (Jan 2026, 2-0): 20-year order; five-year ban on sharing geolocation and driver-behaviour data with consumer reporting agencies; affirmative express consent; access, deletion, ability to disable precise geolocation; first-responder exception; Khan said data was sometimes collected every 3 seconds",
+     "strength": "reported",
+     "sources": [
+      "de25_rdn_gm",
+      "de25_tc_gm"
+     ]
+    },
+    {
+     "text": "NYT (Kashmir Hill, 11 Mar 2024): GM driving data (hard braking, acceleration, miles) reached LexisNexis and insurers; reports ran to hundreds of pages; a salesman said he always clicked yes on enrolment; GM ended broker sharing and Smart Driver",
+     "strength": "reported",
+     "sources": [
+      "de25_mkt_gm"
+     ]
+    },
+    {
+     "text": "Texas AG sued GM (Aug 2024): trip data from most 2015-and-newer GM vehicles sold to firms, at least two producing 'Driving Scores' for insurers; over 1.5m Texans",
+     "strength": "primary",
+     "sources": [
+      "de25_tx_gm"
+     ]
+    },
+    {
+     "text": "Wyden-Markey letter 30 Apr 2024: GM, Honda, Ford, Tesla, Stellantis require a warrant for location (absent emergency/consent); Hyundai warrant or court order; Toyota, Nissan, Subaru, BMW, Mazda, Mercedes-Benz, Kia disclose on subpoena; VW subpoena up to 6 days; Hyundai keeps location up to 15 years, Toyota 10, Honda 7; only Tesla notifies customers; Tesla receives location only for 'a critical safety event'",
+     "strength": "primary",
+     "sources": [
+      "de25_wm_letter"
+     ]
+    },
+    {
+     "text": "Tesla law-enforcement guidelines: requests need legal basis or consent; emergency disclosure on good-faith belief of 'danger of death or serious physical injury'; preservation 90 days plus one 90-day extension; reasonable efforts to notify customers unless barred by order",
+     "strength": "primary",
+     "sources": [
+      "de25_tesla_ler"
+     ]
+    },
+    {
+     "text": "Reuters 7 Apr 2023: nine former Tesla employees said staff shared customer car-camera recordings in internal chats 2019-2022, incl. intimate scenes and a crash with a child; seven said the tool showed where recordings were made; Tesla notice says recordings 'remain anonymous and are not linked to you or your vehicle'; Tesla did not respond",
+     "strength": "reported",
+     "sources": [
+      "de25_reu_tesla"
+     ]
+    },
+    {
+     "text": "Oakland police obtained court orders to tow Teslas in at least three 2024 incidents to retrieve Sentry Mode footage stored on in-car USB; footage from a 13 July shooting helped charge two suspects with murder",
+     "strength": "reported",
+     "sources": [
+      "de25_p1_oakland"
+     ]
+    },
+    {
+     "text": "After the 1 Jan 2025 Las Vegas Cybertruck explosion, Sheriff McMahill said Musk sent Tesla charging-station footage directly to investigators and explained how the vehicle locked; Musk posted that vehicle telemetry was positive; no legal process reported",
+     "strength": "reported",
+     "sources": [
+      "de25_bi_vegas"
+     ]
+    },
+    {
+     "text": "Blumenthal letters 5 Feb 2025 asked Tesla and other Musk firms whether they received nonpublic data from DOGE or supplied servers/AI models; the letters are questions, not evidence of transfer",
+     "strength": "primary",
+     "sources": [
+      "de25_blum_letters"
+     ]
+    },
+    {
+     "text": "Berla iVe extracts texts, call logs, contacts, GPS and door/ignition events from 20,752 vehicle types (Mar 2022); CBP paid $450k+ for five kits (Intercept 2021); DHS said in 2023 it 'no longer partners' with Berla; courts in at least six states allowed warrantless vehicle downloads",
+     "strength": "reported",
+     "sources": [
+      "de25_rec_berla"
+     ]
+    },
+    {
+     "text": "HSI sole-source notice 28 Aug 2026 to renew Berla iVe (after ~$130k 2025 order); Sep 2025 award of $311,250 for 325 Ensurity covert GPS trackers",
+     "strength": "reported",
+     "sources": [
+      "de25_bu_berla"
+     ]
+    },
+    {
+     "text": "Connie Dabate was killed 23 Dec 2015; her Fitbit showed movement about an hour after the time her husband said she was shot; he was sentenced to 65 years on 18 Aug 2022",
+     "strength": "reported",
+     "sources": [
+      "de25_ct_dabate"
+     ]
+    },
+    {
+     "text": "Jury found Meta violated CIPA by collecting Flo users' menstrual data (5 Aug 2025); Google and Flo settled; Meta 'vigorously disagree[s]'",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_flo"
+     ]
+    },
+    {
+     "text": "Apple: Health app data is end-to-end encrypted with recent OS, 2FA and passcode, 'not readable by anyone — even Apple'; Apple 'does not sell' consumer health data; disclosure 'when required by applicable law'",
+     "strength": "primary",
+     "sources": [
+      "de25_apple_health"
+     ]
+    },
+    {
+     "text": "Kennedy, 24 Jun 2025: wearables are 'a way people can take control of their own health'; promised a large HHS campaign; 'within the next four years' is reporters' paraphrase; consumer wearable data is outside HIPAA and governed by terms of service",
+     "strength": "reported",
+     "sources": [
+      "de25_ahcj_rfk"
+     ]
+    },
+    {
+     "text": "Washington My Health My Data Act: passed Apr 2023, effective Mar 2024, covers health status, biometric and precise location data, private right of action; first suit Maxwell v. Amazon (10 Feb 2025) over an ad SDK",
+     "strength": "reported",
+     "sources": [
+      "de25_wh_mhmda"
+     ]
+    },
+    {
+     "text": "FTC/NJ vs Vizio, 6 Feb 2017: $2.2m; 11m TVs captured second-by-second viewing data since Feb 2014, added demographics and sold to third parties without consent",
+     "strength": "primary",
+     "sources": [
+      "de25_ftc_vizio"
+     ]
+    },
+    {
+     "text": "Texas AG sued Sony, Samsung, LG, Hisense and TCL (Dec 2025) alleging ACR screenshots 'as often as every half second'; Samsung settled by Mar 2026, agreeing not to collect ACR data from Texans without explicit informed consent",
+     "strength": "reported",
+     "sources": [
+      "de25_pg_acr",
+      "de25_mb_samsung"
+     ]
+    },
+    {
+     "text": "Amazon ended 'Do Not Send Voice Recordings' on 28 Mar 2025 for Echo Dot 4th gen, Echo Show 10 and 15, sending all recordings to the cloud for Alexa+",
+     "strength": "reported",
+     "sources": [
+      "de25_tc_alexa"
+     ]
+    },
+    {
+     "text": "Bates (Bentonville, Ark.): Amazon refused Echo data without a valid legal demand, released it after Bates consented; a smart water meter showed night-time use; charges dropped by nolle prosequi in Nov 2017",
+     "strength": "reported",
+     "sources": [
+      "de25_npr_bates"
+     ]
+    },
+    {
+     "text": "FTC, May-June 2023: Alexa $25m COPPA penalty (children's recordings kept); Ring $5.8m refunds — an employee viewed thousands of female users' videos incl. bathrooms and bedrooms; 55,000+ accounts compromised Jan 2019-Mar 2020",
+     "strength": "reported",
+     "sources": [
+      "de25_thn_ring"
+     ]
+    },
+    {
+     "text": "Amazon told Markey (public 13 Jul 2022) Ring gave footage to police without consent 11 times in 2022 on 'imminent danger' findings; 2,161 agencies were on Neighbors",
+     "strength": "reported",
+     "sources": [
+      "de25_ax_ring"
+     ]
+    },
+    {
+     "text": "Ring cancelled its planned Flock integration (Feb 2026); says it has no partnership with ICE and federal agencies cannot submit Community Requests; local police requests run through Axon Evidence and owners may decline",
+     "strength": "reported",
+     "sources": [
+      "de25_cnn_ring"
+     ]
+    },
+    {
+     "text": "Guthrie case (Feb 2026): FBI Director Patel said Nest video was 'recovered from residual data located in backend systems'; the sheriff said she had no subscription that would save video; Google gave no details",
+     "strength": "reported",
+     "sources": [
+      "de25_nbc_nest"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25_rdn_gm",
+     "url": "https://www.repairerdrivennews.com/2026/01/27/ftc-finalizes-20-year-gm-onstar-data-collection-order/",
+     "label": "Repairer Driven News, 'FTC finalizes 20-year GM, OnStar data collection order', 27 January 2026"
+    },
+    {
+     "key": "de25_tc_gm",
+     "url": "https://techcrunch.com/2026/01/14/the-ftcs-data-sharing-order-against-gm-is-finally-settled",
+     "label": "TechCrunch, 'The FTC's data-sharing order against GM is finally settled', 14 January 2026"
+    },
+    {
+     "key": "de25_mkt_gm",
+     "url": "https://www.marketplace.org/story/2024/04/25/gm-was-collecting-and-sharing-drivers-data-often-without-their-knowledge",
+     "label": "Marketplace, interview with Kashmir Hill (New York Times) on GM driver data, 25 April 2024"
+    },
+    {
+     "key": "de25_tx_gm",
+     "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sues-general-motors-unlawfully-collecting-drivers-private-data-and",
+     "label": "Texas Attorney General, 'Attorney General Ken Paxton Sues General Motors for Unlawfully Collecting Drivers' Private Data', August 2024"
+    },
+    {
+     "key": "de25_wm_letter",
+     "url": "https://www.wyden.senate.gov/imo/media/doc/signed_wyden_markey_letter_to_ftc_with_attachmentpdf.pdf",
+     "label": "Sens. Ron Wyden and Edward Markey, letter to FTC Chair Lina Khan on automakers' location-data practices, 30 April 2024"
+    },
+    {
+     "key": "de25_tesla_ler",
+     "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/LER-Guidelines-Test.pdf",
+     "label": "Tesla, 'Law Enforcement Request Guidelines' (PDF, accessed 28 October 2026)"
+    },
+    {
+     "key": "de25_reu_tesla",
+     "url": "https://www.khaleejtimes.com/world/we-could-see-their-kids-tesla-workers-shared-sensitive-images-recorded-by-customer-cars",
+     "label": "Reuters (via Khaleej Times), 'Tesla workers shared sensitive images recorded by customer cars', 7 April 2023"
+    },
+    {
+     "key": "de25_p1_oakland",
+     "url": "https://police1.com/investigations/calif-police-are-using-search-warrants-to-obtain-video-evidence-of-crimes-captured-by-tesla-cameras",
+     "label": "Police1 (citing San Francisco Chronicle), Oakland police use warrants to tow Teslas for Sentry Mode footage, 4 September 2024"
+    },
+    {
+     "key": "de25_bi_vegas",
+     "url": "https://www.yahoo.com/news/las-vegas-police-thanked-elon-053648196.html",
+     "label": "Business Insider (via Yahoo), Las Vegas police thank Musk for Cybertruck explosion data, 3 January 2025"
+    },
+    {
+     "key": "de25_blum_letters",
+     "url": "https://www.blumenthal.senate.gov/newsroom/press/release/musks-illegal-power-grab-blumenthal-demands-answers-from-billionaires-companies-on-glaring-conflicts-of-interest-and-data-heist",
+     "label": "Sen. Richard Blumenthal, letters to Tesla, SpaceX, X, xAI, Boring Company and Neuralink on DOGE, 5 February 2025"
+    },
+    {
+     "key": "de25_rec_berla",
+     "url": "https://therecord.media/cars-computers-on-wheels-law-enforcement-berla-corporation",
+     "label": "The Record, 'Cars are computers on wheels' (Berla iVe and law enforcement), 18 December 2023"
+    },
+    {
+     "key": "de25_bu_berla",
+     "url": "https://www.biometricupdate.com/202608/ice-expands-vehicle-surveillance-capabilities-with-forensics-platform-covert-gps-trackers",
+     "label": "Biometric Update, 'ICE expands vehicle surveillance capabilities with forensics platform, covert GPS trackers', August 2026"
+    },
+    {
+     "key": "de25_ct_dabate",
+     "url": "https://www.courttv.com/news/husband-sentenced-to-65-years-in-fitbit-murder-case/",
+     "label": "Court TV, 'Husband sentenced to 65 years in Fitbit murder case', 18 August 2022"
+    },
+    {
+     "key": "de25_tc_flo",
+     "url": "https://techcrunch.com/2025/08/05/jury-rules-meta-violated-california-privacy-laws-by-collecting-menstrual-health-data-from-flo",
+     "label": "TechCrunch, 'Jury rules Meta violated California privacy laws by collecting menstrual health data from Flo', 5 August 2025"
+    },
+    {
+     "key": "de25_apple_health",
+     "url": "https://apple.com/legal/privacy/consumer-health-personal-data/en-ww",
+     "label": "Apple, 'Consumer Health Personal Data Privacy Policy' (accessed 28 October 2026)"
+    },
+    {
+     "key": "de25_ahcj_rfk",
+     "url": "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/",
+     "label": "Association of Health Care Journalists, 'RFK Jr. wants us all to wear health trackers. Will it work?', July 2025"
+    },
+    {
+     "key": "de25_wh_mhmda",
+     "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250220-first-lawsuit-filed-under-washingtons-my-health-my-data-act",
+     "label": "WilmerHale, 'First Lawsuit Filed Under Washington's My Health My Data Act', 20 February 2025"
+    },
+    {
+     "key": "de25_ftc_vizio",
+     "url": "https://ftc.gov/news-events/news/press-releases/2017/02/vizio-pay-22-million-ftc-state-new-jersey-settle-charges-it-collected-viewing-histories-11-million",
+     "label": "Federal Trade Commission, 'VIZIO to Pay $2.2 Million to FTC, State of New Jersey to Settle Charges It Collected Viewing Histories on 11 Million Smart Televisions', 6 February 2017"
+    },
+    {
+     "key": "de25_pg_acr",
+     "url": "https://www.privacyguides.org/news/2025/12/24/texas-sues-smart-tv-makers-for-spying-on-peoples-watch-habits/",
+     "label": "Privacy Guides, 'Texas sues smart TV makers for spying on people's watch habits', 24 December 2025"
+    },
+    {
+     "key": "de25_mb_samsung",
+     "url": "https://www.malwarebytes.com/blog/news/2026/03/samsung-tvs-stop-spying-on-viewers-in-texas-heres-how-to-disable-acr-anywhere",
+     "label": "Malwarebytes, 'Samsung TVs stop spying on viewers in Texas', 2 March 2026"
+    },
+    {
+     "key": "de25_tc_alexa",
+     "url": "https://techcrunch.com/2025/03/15/amazons-echo-will-send-all-voice-recordings-to-the-cloud-starting-march-28",
+     "label": "TechCrunch, 'Amazon's Echo will send all voice recordings to the cloud, starting March 28', 15 March 2025"
+    },
+    {
+     "key": "de25_npr_bates",
+     "url": "https://www.npr.org/sections/thetwo-way/2017/11/29/567305812/arkansas-prosecutors-drop-murder-case-that-hinged-on-evidence-from-amazon-echo",
+     "label": "NPR, 'Arkansas Prosecutors Drop Murder Case That Hinged On Evidence From Amazon Echo', 29 November 2017"
+    },
+    {
+     "key": "de25_thn_ring",
+     "url": "https://thehackernews.com/2023/06/ftc-slams-amazon-with-308m-fine-for.html",
+     "label": "The Hacker News, 'FTC Slams Amazon with $30.8M Fine for Privacy Violations Involving Alexa and Ring', 3 June 2023"
+    },
+    {
+     "key": "de25_ax_ring",
+     "url": "https://www.axios.com/2022/07/13/amazon-ring-doorbell-footage-law-enforcement",
+     "label": "Axios, Amazon's Ring gave police footage without consent 11 times in 2022, 13 July 2022"
+    },
+    {
+     "key": "de25_cnn_ring",
+     "url": "https://cnn.com/2026/02/13/tech/amazon-ring-flock-partnership-ice",
+     "label": "CNN, Ring cancels Flock partnership; says it has no partnership with ICE, 13 February 2026"
+    },
+    {
+     "key": "de25_nbc_nest",
+     "url": "https://www.nbcnewyork.com/news/national-international/nancy-guthrie-google-nest-camera-video-from-backend-systems/6459531/",
+     "label": "NBC News, Guthrie case: Nest video recovered from 'residual data located in backend systems', 10 February 2026"
+    }
+   ]
+  },
+  {
+   "id": "de25_joins",
+   "stage": "de25",
+   "topic": "If it were connected: documented and reported joins between location/phone tools and integration platforms",
+   "claims": [
+    {
+     "text": "DHS told NPR (May 2026) 'ICE has no relationship with Paragon Solutions, Inc. or with the company that acquired them' and had not entered another contract; a procurement notice shows the contract closed out 20 Jan 2026; DHS would 'not … confirm or deny' capabilities; Lyons (1 Apr 2026) said he approved HSI's procurement and operational use",
+     "strength": "reported",
+     "sources": [
+      "de25_npr_paragon"
+     ]
+    },
+    {
+     "text": "ICE agreed in fall 2025 to pay Penlink $2.3m covering Tangles (AI open-source intelligence incl. face detection) and Webloc (search an area and time for phone movements, trace a phone); ICE bought licences, not the company; Spire Capital controlling investor since 2022; Penlink acquired Cobwebs in 2023; Penlink: tools 'exclusively use publicly or commercially available data'",
+     "strength": "reported",
+     "sources": [
+      "de25_ffp_penlink"
+     ]
+    },
+    {
+     "text": "Guardian (Just Futures Law FOIA, 2014-2022 ICE/HSI documents): agents could import Cellebrite phone extractions into Palantir tools and search SEVIS (4.9m records) and APIS; NCIC listed as import source; CLEAR not natively connected; Palantir calls itself a 'data processor'",
+     "strength": "reported",
+     "sources": [
+      "de25_gdn_palantir"
+     ]
+    },
+    {
+     "text": "Letter of 14 Apr 2026 (33 signatories incl. Goldman, Velázquez, Wyden) to DHS and ICE asks which government and commercial datasets are in Palantir-developed systems; names ELITE, Clearview, PenLink, L3Harris Stingray and Paragon; deadline 24 Apr 2026",
+     "strength": "primary",
+     "sources": [
+      "de25_goldman_letter"
+     ]
+    },
+    {
+     "text": "ICE notice of intent 10 Aug 2026: ~$6.7m sole-source LexisNexis bridge; work statement requires APIs to ICE applications 'such as but not limited to' the Palantir platform, PenLink and ICE Data Analytics; Accurint Virtual Crime Center includes device-geolocation analysis",
+     "strength": "reported",
+     "sources": [
+      "de25_bu_lexis"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de25_npr_paragon",
+     "url": "https://www.npr.org/2026/05/22/nx-s1-5831577/dhs-ice-spyware-paragon",
+     "label": "NPR, DHS says ICE has 'no relationship' with Paragon, May 2026"
+    },
+    {
+     "key": "de25_ffp_penlink",
+     "url": "https://flatwaterfreepress.org/this-nebraska-company-is-supplying-ice-with-surveillance-tech/",
+     "label": "Flatwater Free Press, 'This Nebraska company is supplying ICE with surveillance tech', 20 February 2026"
+    },
+    {
+     "key": "de25_gdn_palantir",
+     "url": "https://www.inkl.com/news/documents-offer-rare-insight-on-ice-s-close-relationship-with-palantir",
+     "label": "Johana Bhuiyan, The Guardian (via inkl), 'Documents offer rare insight on ICE's close relationship with Palantir', September 2025"
+    },
+    {
+     "key": "de25_goldman_letter",
+     "url": "https://goldman.house.gov/sites/evo-subsites/goldman.house.gov/files/evo-media-document/final-april-2026-letter-to-dhs-ice-re-oversight-of-palantir-data-surveillance-contracts.pdf",
+     "label": "Rep. Dan Goldman, Rep. Nydia Velázquez, Sen. Ron Wyden and 30 others, letter to DHS Secretary Mullin and Acting ICE Director Lyons on Palantir and surveillance contracts, 14 April 2026"
+    },
+    {
+     "key": "de25_bu_lexis",
+     "url": "https://www.biometricupdate.com/202608/ice-seeks-expanded-lexisnexis-investigative-data-access-with-palantir-integration",
+     "label": "Biometric Update, 'ICE seeks expanded LexisNexis investigative data access with Palantir integration', 12 August 2026"
+    }
+   ]
+  }
+ ]
+}

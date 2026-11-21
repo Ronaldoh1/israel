@@ -1,0 +1,223 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us20_aid",
+   "stage": "us20",
+   "topic": "US government channels to Israel: MOU, FMF, OSP, loan guarantees, missile defence, intelligence sharing, in today's dollars",
+   "claims": [
+    {
+     "text": "CRS RL33222 (28 May 2025): US has provided 'over $6 billion' for Iron Dome batteries, interceptors, co-production and maintenance; Table 5 lists Iron Dome $6,075.281m, Iron Beam $1,200m (FY2024 supplemental), and US missile-defence funding for Israel FY2006–FY2025 totalling $14,816.853m",
+     "strength": "primary",
+     "sources": [
+      "gi16_crs_aid2025"
+     ]
+    },
+    {
+     "text": "CRS RL33222: under a Special Billing Arrangement Israel may use national cash reserves for FMS costs beyond the MOU's funding amounts or duration; if no new MOU is reached and Congress does not appropriate FMF, Israel would have to pay for existing contracts with national funds, find other financing or terminate contracts; Israel's MOD reportedly spends about one-third of annual FMF on direct commercial contracts; Israel cannot use accrued interest for procurement inside Israel; P.L. 119-4 s.11208(c) reauthorizes loan guarantees through 2030",
+     "strength": "primary",
+     "sources": [
+      "gi16_crs_aid2025"
+     ]
+    },
+    {
+     "text": "1992 loan guarantees: Congress authorized $10bn for loans tied to Israel's effort 'to resettle and absorb immigrants', in annual increments of $2bn over five years; 1993–97 settlement reductions $1,358.8m less $585m security offset = net $773.8m, $9,226.2m available",
+     "strength": "reported",
+     "sources": [
+      "us20_jvl_loans"
+     ]
+    },
+    {
+     "text": "2003 loan guarantees: $9bn over three years; reductions of $289.5m and $795.8m (total $1,085.3m); as of 2025 Israel had issued $4.1bn in US-backed bonds and might still be authorized to issue up to $3.814bn; authorized through end of FY2030; JVL says Israel has never defaulted and paid the US fees, so the cost to US government was zero unless default",
+     "strength": "reported",
+     "sources": [
+      "us20_jvl_loans"
+     ]
+    },
+    {
+     "text": "BLS: CPI-U index level 336.940 (1982-84=100) in September 2026; 334.980 in August 2026",
+     "strength": "primary",
+     "sources": [
+      "us20_bls_cpi_sep26"
+     ]
+    },
+    {
+     "text": "CPI-U annual averages (BLS): 1985 107.6; 1992 140.3; 1994 148.2; 2003 184.0; 2007 207.342; 2013 232.954; 2015 237.017; 2016 240.007; 2021 270.970; 2024 313.689; 2025 321.943",
+     "strength": "primary",
+     "sources": [
+      "us20_bls_cpi_annual"
+     ]
+    },
+    {
+     "text": "Book's arithmetic (CPI-U, Sept 2026 = 336.940): 1985 aid $3.68bn = ~$11.5bn today; 1992 guarantees $10bn = ~$24.0bn; 2003 guarantees $9bn = ~$16.5bn; CRS $298bn (2024$) = ~$320bn; $3.8bn fixed in 2016 is worth ~$2.7bn in 2016 prices by Sept 2026 (~29% erosion); Costs of War $21.7bn ≈ $23.3bn",
+     "strength": "primary",
+     "sources": [
+      "us20_bls_cpi_annual",
+      "us20_bls_cpi_sep26"
+     ]
+    },
+    {
+     "text": "Guardian (Snowden documents), via Al Jazeera 12 Sept 2013: NSA agreed a secret deal with Israel for routine sharing of raw intelligence, including unfiltered telephone and internet data on US citizens; the undated memorandum does not require NSA to remove US-person information and reportedly places no limits on Israel's use; Israel must 'destroy upon recognition' communications to or from US government officials; reached in principle March 2009; NSA said US-person information is handled under procedures designed to protect privacy",
+     "strength": "reported",
+     "sources": [
+      "us20_aje_nsa"
+     ]
+    },
+    {
+     "text": "6 Feb 2019: Israel's MOD and the US DoD confirmed US Army purchase of two Iron Dome batteries (12 launchers, two radars, two battle management centres, 240 interceptors) for $373m ($289m redirected 2019 funds + $83.9m FY2020) as interim cruise-missile defence; Rafael developed it, Raytheon US marketing rights (2011) and 2014 co-production",
+     "strength": "reported",
+     "sources": [
+      "us20_toi_armyirondome"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "gi16_crs_aid2025",
+     "url": "https://www.everycrsreport.com/files/2025-05-28_RL33222_5306b5d4e077538d2db80d05cd10ca8c08501669.html",
+     "label": "Jeremy M. Sharp, 'U.S. Foreign Aid to Israel: Overview and Developments since October 7, 2023', Congressional Research Service RL33222, 28 May 2025"
+    },
+    {
+     "key": "us20_jvl_loans",
+     "url": "https://www.jewishvirtuallibrary.org/loan-guarantees-for-israel",
+     "label": "Jewish Virtual Library, 'U.S. Foreign Aid to Israel: Loan Guarantees for Israel' (CRS RL33222 data), accessed 21 October 2026"
+    },
+    {
+     "key": "us20_bls_cpi_sep26",
+     "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+     "label": "US Bureau of Labor Statistics, 'Consumer Price Index – September 2026', 14 October 2026"
+    },
+    {
+     "key": "us20_bls_cpi_annual",
+     "url": "https://lmi.idaho.gov/wp-content/uploads/2026/03/2026-CPI.pdf",
+     "label": "Idaho Department of Labor, 'Consumer Price Index' table, CPI-U US city average annual averages 1980–2025 (source: Bureau of Labor Statistics), 2026"
+    },
+    {
+     "key": "us20_aje_nsa",
+     "url": "https://www.aljazeera.com/news/2013/9/12/report-nsa-shares-data-with-israel",
+     "label": "Al Jazeera, 'Report: NSA shares data with Israel' (on The Guardian's Snowden-document report), 12 September 2013"
+    },
+    {
+     "key": "us20_toi_armyirondome",
+     "url": "https://www.timesofisrael.com/netanyahu-hails-us-purchase-of-israeli-iron-dome-batteries/",
+     "label": "Times of Israel, 'Netanyahu hails US purchase of Israeli Iron Dome batteries', 6 February 2019"
+    }
+   ]
+  },
+  {
+   "id": "us20_flows",
+   "stage": "us20",
+   "topic": "Private and commercial money flows between the US and Israel in both directions: tax-deductible donations, settlements, Israel Bonds, investment, arms trade",
+   "claims": [
+    {
+     "text": "Haaretz investigation (Uri Blau, Pulitzer Center-funded), reported 7 Dec 2015: some 50 American organizations raised $281m in 2009–2013 in tax-deductible donations from private individuals, of which $224m was transferred to settlements via Israeli nonprofits; named Honenu (2013 grant to the family of Ami Popper, who murdered seven Palestinian labourers in 1990), Central Fund of Israel, Hebron Fund; White House official: the administration 'never defended or supported any activity associated with the settlements'",
+     "strength": "reported",
+     "sources": [
+      "us20_toi_settlements"
+     ]
+    },
+    {
+     "text": "Fleisch and Sasson (Brandeis, 2012), from IRS documents: American giving to Israeli organizations $283m (1975), $461m (1985), $774m (1994) in current dollars; total raised $2.059bn in 2007 ($1.646bn donated after fundraising costs and endowment activity); 774 organizations, 667 'American Friends' groups (86%), up from 265 at end of 1980s and 436 by 2000; settlements raised about $40m in 2007, religious education $167m, progressive groups $46m",
+     "strength": "primary",
+     "sources": [
+      "us20_brandeis_philanthropy"
+     ]
+    },
+    {
+     "text": "Fleisch and Sasson: since 1938 gifts to foreign NGOs are deductible only if routed through a US-incorporated not-for-profit with a mostly American board, the foreign NGO is equivalent to a US tax-exempt body, and the US nonprofit oversees its foreign grants; 'American Friends' organizations are US nonprofits set up to support one Israeli organization",
+     "strength": "primary",
+     "sources": [
+      "us20_brandeis_philanthropy"
+     ]
+    },
+    {
+     "text": "NYU–Tel Aviv University study (reported 31 Mar 2025): over $2.65bn from American donors to Israel's nonprofit sector in 2021; about 1,200 US NGOs; 161 (7%) gave over 80%; 'Friends of' organizations gave $824m in 2015 (43%) and over $1.2bn in 2021 (45%); Jewish communal institutions 37% (2015) to 29% (2021), $772m; excludes post-7 Oct 2023 giving",
+     "strength": "reported",
+     "sources": [
+      "us20_ejp_giving2021"
+     ]
+    },
+    {
+     "text": "JFNA data (Birmingham Jewish Federation, 11 Nov 2025): $683m raised for the Israel Emergency Campaign in calendar 2024",
+     "strength": "reported",
+     "sources": [
+      "us20_bjf_iec2024"
+     ]
+    },
+    {
+     "text": "SelectUSA (Aug 2026): Israeli FDI position in the US (by ultimate beneficial owner) $22.2bn in 2025 ($24.5bn 2021, $22.5bn 2022, $21.9bn 2023, $23.6bn 2024); US FDI position in Israel $59.7bn in 2025, 2025 flow $16.6bn; software and IT services the top sector for Israeli FDI projects in the US",
+     "strength": "primary",
+     "sources": [
+      "us20_selectusa_israel"
+     ]
+    },
+    {
+     "text": "Book's arithmetic (CPI-U): US giving to Israeli organizations ~$1.44bn (1985), ~$1.76bn (1994), ~$3.35bn raised (2007), ~$3.30bn (2021) in Sept 2026 dollars; settlement transfers $224m 2009–13 ≈ $320m at 2013 prices; Israel Bonds $1.7bn Oct 2023–Jul 2024 ≈ $1.8bn; IMOD 13% of $19.2bn 2025 exports to North America ≈ $2.5bn",
+     "strength": "primary",
+     "sources": [
+      "us20_brandeis_philanthropy",
+      "us20_ejp_giving2021",
+      "us20_toi_settlements"
+     ]
+    },
+    {
+     "text": "Book's arithmetic: 2021 private US giving to Israeli non-profits ($2.65bn) ≈ 70% of the $3.8bn military grant that year; the 2026 grant ($3.8bn) is about one third of the real value of 1985 aid (~$11.5bn in Sept 2026 dollars)",
+     "strength": "primary",
+     "sources": [
+      "us20_ejp_giving2021",
+      "us20_brandeis_philanthropy"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us20_toi_settlements",
+     "url": "https://www.timesofisrael.com/us-nonprofits-gave-220m-to-settlements-over-five-years-report/",
+     "label": "AP and Raoul Wootliff, 'US nonprofits gave $220m to settlements over five years — report', Times of Israel, 7 December 2015 (on Uri Blau's Haaretz investigation)"
+    },
+    {
+     "key": "us20_brandeis_philanthropy",
+     "url": "https://bjpa.org/content/upload/bjpa/c__c/TheNewPhilanthropy.pdf",
+     "label": "Eric Fleisch and Theodore Sasson, 'The New Philanthropy: American Jewish Giving to Israeli Organizations', Cohen Center for Modern Jewish Studies, Brandeis University, April 2012"
+    },
+    {
+     "key": "us20_ejp_giving2021",
+     "url": "https://ejewishphilanthropy.com/your-daily-phil-giving-to-israel-increasingly-decentralized-study/",
+     "label": "eJewishPhilanthropy, 'Your Daily Phil: Giving to Israel increasingly decentralized — study' (NYU–Tel Aviv University study), 31 March 2025"
+    },
+    {
+     "key": "us20_bjf_iec2024",
+     "url": "https://www.bjf.org/fedbeat/amid-war-jewish-federation-giving-rose-1-billion-in-2024",
+     "label": "Birmingham Jewish Federation, 'Amid War, Jewish Federation giving rose $1 Billion in 2024' (JFNA data), 11 November 2025"
+    },
+    {
+     "key": "us20_selectusa_israel",
+     "url": "https://www.trade.gov/sites/default/files/2026-08/Israel_508.pdf",
+     "label": "SelectUSA, US Department of Commerce, 'Israel' FDI fact sheet, August 2026"
+    }
+   ]
+  },
+  {
+   "id": "us20_audit",
+   "stage": "us20",
+   "topic": "Audit re-checks: loan guarantee reduction years",
+   "claims": [
+    {
+     "text": "Audit re-fetch: JVL table for the 1992 guarantees (FY1993-97) shows no reduction in 1993; settlement reductions were made in 1994-97 (total $1,358.8m, $585m reinstated, net $773.8m, $9,226.2m available). Corrects the earlier '1993-97' note. Israel paid annual fees 'amounting to several hundred million dollars'; it has never defaulted",
+     "strength": "reported",
+     "sources": [
+      "us20_jvl_loans"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us20_jvl_loans",
+     "url": "https://www.jewishvirtuallibrary.org/loan-guarantees-for-israel",
+     "label": "Jewish Virtual Library (CRS data), 'Loan Guarantees for Israel'"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "state": "SD",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_sd": {
+   "t": "2026 United States House of Representatives election in South Dakota — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_in_South_Dakota"
+  },
+  "gp_sd": {
+   "t": "The Green Papers: SD 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/SD"
+  },
+  "sdsl_sd": {
+   "t": "South Dakota Searchlight — 2026 U.S. House general election voter guide",
+   "u": "https://southdakotasearchlight.com/voter-guides/contests/2026-u-s-house-general-election-race/"
+  }
+ },
+ "races": [
+  {
+   "race": "SD-AL",
+   "incumbent": {
+    "name": "Dusty Johnson",
+    "party": "R",
+    "status": "Running for governor"
+   },
+   "nominees": [
+    {
+     "name": "Marty Jackley",
+     "party": "R",
+     "incumbent": false,
+     "rec": "sd-00-marty-jackley",
+     "fec": [
+      "H6SD01109"
+     ]
+    },
+    {
+     "name": "Nikki Gronli",
+     "party": "D",
+     "incumbent": false,
+     "rec": "sd-00-nicole-gronli",
+     "fec": [
+      "H6SD01141"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. June 2 primary: Jackley 79.2% over James Bialota Jr.; Gronli unopposed. Wikipedia also lists Jack Pittman (no party); Green Papers and SD Searchlight list only Jackley and Gronli, so he is left out.",
+   "c": [
+    "wiki_sd",
+    "gp_sd",
+    "sdsl_sd"
+   ]
+  }
+ ]
+}

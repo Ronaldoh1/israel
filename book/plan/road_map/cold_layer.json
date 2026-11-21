@@ -1,0 +1,611 @@
+{
+ "_note": "Cold War layer (Nov 2026). Built by cold_layer.py; do not edit by hand.",
+ "node_notes": {
+  "jfk": "Documented: the Dimona letters (1963), the FARA order to the American Zionist Council under his brother's Justice Department (Nov 1962), and the Fulbright inquiry. On the assassination: the Warren Commission and the House Select Committee did not identify Dimona, the lobby or Israel as a factor, and the standard historians of the nuclear dispute (Avner Cohen, Seymour Hersh) draw no connection. The map records 22 November 1963 as a date, not a tie. See the book, section s11c.",
+  "max_ball": "Irene Gendzier, from Ball's papers, FRUS and Israeli records: the choice in Washington was \"not oil versus Israel but rather oil and Israel\".",
+  "nation_assoc": "An advocacy group that put the Arab leadership's wartime Axis ties before the UN and the President in 1947-48. The Mufti's collaboration is itself documented (Volume II). No funding link between the Nation Associates and Zionist bodies was found in the sources checked.",
+  "james_armand": "After 1948 the documented Rothschild money in Israel ran through visible institutions: PICA's land passed to the JNF (1957-58); Yad Hanadiv; the Knesset building (£1.25M bequest, 1966). No document found shows Rothschild ownership or control of the Bank of Israel, which is state-owned and created by Knesset law in 1954."
+ },
+ "edges": [
+  {
+   "f": "us_gov",
+   "t": "israel_gov",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd6_jvl_usaid_table; merip_us_aid_israel_1990",
+   "label": "US aid 1949-59 totalled $652.9M (CRS table), economic aid and loans only; Washington withheld arms so as not to alienate Arab oil states. First military loan: $0.4M in 1959 (CRS) or 1962 (another study)."
+  },
+  {
+   "f": "bengurion",
+   "t": "bonds",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_rd6_jvl_bonds",
+   "label": "Sept 1950: Ben-Gurion convened American Jewish leaders at the King David Hotel; sales launched in the US in spring 1951 at Madison Square Garden."
+  },
+  {
+   "f": "bonds",
+   "t": "israel_gov",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd6_jvl_bonds",
+   "label": "1951 Independence Issue at 3.5%; first-year sales over $52M; within six years 35% of the development budget (Water Carrier, Dead Sea Works, power, ports)."
+  },
+  {
+   "f": "knesset",
+   "t": "lux_agreement",
+   "type": "official act",
+   "status": "verified",
+   "src": "rs_rd6_jvl_reparations",
+   "label": "9 Jan 1952: the Knesset voted 61-50 to negotiate directly with West Germany, amid demonstrations."
+  },
+  {
+   "f": "begin",
+   "t": "lux_agreement",
+   "type": "opposition",
+   "status": "verified",
+   "src": "rs_rd6_nli_reparations",
+   "label": "Begin led the opposition at mass demonstrations: \"blood money\" from the \"land of the murderers\"."
+  },
+  {
+   "f": "sharett",
+   "t": "lux_agreement",
+   "type": "signatory",
+   "status": "verified",
+   "src": "rs_rd6_nli_reparations; rs_rd6_jvl_reparations",
+   "label": "Signed in Luxembourg, 10 Sept 1952, by Sharett, Goldmann and Adenauer; in force 21 Mar 1953."
+  },
+  {
+   "f": "goldmann",
+   "t": "lux_agreement",
+   "type": "signatory",
+   "status": "verified",
+   "src": "rs_rd6_nli_reparations",
+   "label": "Nahum Goldmann signed for the Claims Conference side."
+  },
+  {
+   "f": "adenauer",
+   "t": "lux_agreement",
+   "type": "signatory",
+   "status": "verified",
+   "src": "rs_rd6_nli_reparations",
+   "label": "Chancellor Adenauer signed for West Germany."
+  },
+  {
+   "f": "west_germany",
+   "t": "lux_agreement",
+   "type": "signatory",
+   "status": "verified",
+   "src": "rs_rd6_nli_reparations",
+   "label": "West Germany paid in kind, 1953-66."
+  },
+  {
+   "f": "lux_agreement",
+   "t": "israel_gov",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd6_jvl_reparations; rs_rd6_nli_reparations",
+   "label": "$845M (JVL) or 3.5bn + 0.45bn marks (NLI); 30% as crude oil bought in Britain, 70% German goods; 12-14% of Israel's imports for a decade."
+  },
+  {
+   "f": "lux_agreement",
+   "t": "claims_conf",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_rd6_jvl_reparations",
+   "label": "$100M of the total went to the Claims Conference (one source's figure)."
+  },
+  {
+   "f": "eban",
+   "t": "acheson",
+   "type": "meeting",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_eban_request",
+   "label": "Mar 1951: Eban and David Horowitz handed Acheson a request for a $150M grant-in-aid (immigrants, defence, UNRWA reintegration)."
+  },
+  {
+   "f": "horowitz_d",
+   "t": "acheson",
+   "type": "meeting",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_eban_request",
+   "label": "Horowitz of the Finance Ministry joined Eban in the grant request."
+  },
+  {
+   "f": "douglas_p",
+   "t": "msa1951",
+   "type": "drafting",
+   "status": "verified",
+   "src": "rs_cw1_jta_douglas_taft_1951",
+   "label": "About 3 Apr 1951: Senators Douglas and Taft introduced a $150M aid bill, calling Israel \"a bulwark\" against Communism, \"particularly in Iran\"."
+  },
+  {
+   "f": "taft",
+   "t": "msa1951",
+   "type": "drafting",
+   "status": "verified",
+   "src": "rs_cw1_jta_douglas_taft_1951; rs_cw1_kenen_silver_letter",
+   "label": "Taft co-sponsored the bill and backed the Douglas amendment of Aug 1951."
+  },
+  {
+   "f": "mccormack",
+   "t": "msa1951",
+   "type": "drafting",
+   "status": "verified",
+   "src": "rs_cw1_jta_douglas_taft_1951",
+   "label": "House Majority Leader McCormack introduced the companion bill (\"a dependable ally\")."
+  },
+  {
+   "f": "truman",
+   "t": "msa1951",
+   "type": "official act",
+   "status": "verified",
+   "src": "rs_cw1_truman_unrpr_letter",
+   "label": "10 Oct 1951: Truman signed the Mutual Security Act of 1951 ($50M for the UN refugee programme)."
+  },
+  {
+   "f": "msa1951",
+   "t": "israel_gov",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_cw1_jta_kenen_obit; rs_cw1_kenen_silver_letter",
+   "label": "First US grant to Israel: $65M (JTA) or about $68.8M authorized (Kenen); FY1953 a further $73M (June 1952)."
+  },
+  {
+   "f": "state_dept",
+   "t": "msa1951",
+   "type": "opposition",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_feinberg_memo",
+   "label": "The Administration proposed $23.5M for Israel, $23.5M for the Arab states and $50M for refugees (24 May 1951)."
+  },
+  {
+   "f": "mcghee",
+   "t": "blaustein",
+   "type": "opposition",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_feinberg_memo",
+   "label": "McGhee declined Jacob Blaustein's request for $75M each."
+  },
+  {
+   "f": "feinberg",
+   "t": "mcghee",
+   "type": "pressure",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_feinberg_memo",
+   "label": "July 1951: Feinberg visited McGhee \"at the Suggestion of the President\"."
+  },
+  {
+   "f": "truman",
+   "t": "feinberg",
+   "type": "instruction",
+   "status": "verified",
+   "src": "rs_cw1_frus1951_feinberg_memo",
+   "label": "The memo records Feinberg came at the President's suggestion."
+  },
+  {
+   "f": "kenen",
+   "t": "msa1951",
+   "type": "pressure",
+   "status": "verified",
+   "src": "rs_cw1_kenen_silver_letter",
+   "label": "Aug 1951: Kenen worked the Senate floor; Israel's share rose from about 1% to 5.2% of the bill."
+  },
+  {
+   "f": "kenen",
+   "t": "silver",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "rs_cw1_kenen_silver_letter",
+   "label": "Kenen reported to Silver: \"all this is still an authorization.\""
+  },
+  {
+   "f": "eban",
+   "t": "kenen",
+   "type": "instruction",
+   "status": "reported",
+   "src": "rs_cw1_israelhayom_barda",
+   "label": "Eban suggested Kenen move to Washington (Barda, via Israel Hayom)."
+  },
+  {
+   "f": "kenen",
+   "t": "israel_gov",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_cw1_jta_kenen_obit",
+   "label": "1949: member of Israel's first UN delegation; 1947-48 the Jewish Agency's information director at the UN."
+  },
+  {
+   "f": "kenen",
+   "t": "azcpa",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_cw1_jta_kenen_obit; rs_cw1_jvl_aipac; rs_cw5_kenen_uja_1963",
+   "label": "Founded the American Zionist Committee for Public Affairs (1951, 1953 or 1954 by different accounts), renamed AIPAC."
+  },
+  {
+   "f": "knesset",
+   "t": "bank_israel",
+   "type": "founding",
+   "status": "verified",
+   "src": "c_wp_boi",
+   "label": "24 Aug 1954: the Knesset passed the Bank of Israel Law; the central bank is state-owned (Ministry of Finance)."
+  },
+  {
+   "f": "horowitz_d",
+   "t": "bank_israel",
+   "type": "leadership",
+   "status": "verified",
+   "src": "c_wp_boi",
+   "label": "David Horowitz was the first governor, for 17 years."
+  },
+  {
+   "f": "apc_bank",
+   "t": "bank_israel",
+   "type": "succession",
+   "status": "verified",
+   "src": "c_wp_boi",
+   "label": "Before 1954 the currency was issued by the Anglo-Palestine Bank (Bank Leumi from 1950)."
+  },
+  {
+   "f": "james_armand",
+   "t": "knesset_bldg",
+   "type": "funding",
+   "status": "verified",
+   "src": "c_wp_knesset_bldg",
+   "label": "James de Rothschild left £1.25M in his will for the Knesset building (announced July 1957); inaugurated 30 Aug 1966."
+  },
+  {
+   "f": "knesset_bldg",
+   "t": "knesset",
+   "type": "association",
+   "status": "verified",
+   "src": "c_wp_knesset_bldg",
+   "label": "Home of the Knesset from 1966."
+  },
+  {
+   "f": "rfk",
+   "t": "doj",
+   "type": "leadership",
+   "status": "verified",
+   "src": "israellobby_org_fara_doj_order",
+   "label": "Robert F. Kennedy was Attorney General 1961-63; the Internal Security Section acted under his authority."
+  },
+  {
+   "f": "doj",
+   "t": "azc",
+   "type": "official act",
+   "status": "verified",
+   "src": "israellobby_org_fara_doj_order; acjna_fara",
+   "label": "21 Nov 1962: ordered the American Zionist Council to register as agent of a foreign principal. Never enforced to completion; the Council never registered (one 2016 Wikipedia version says otherwise)."
+  },
+  {
+   "f": "jewish_agency",
+   "t": "azc",
+   "type": "funding",
+   "status": "verified",
+   "src": "azc_fara_doj; jta_fulbright_jewish_agency_hearing",
+   "label": "Senate record: $5,100,001.02 from the Jewish Agency to the Council, 1955-62 (Barda gives $1.5M; unreconciled)."
+  },
+  {
+   "f": "fulbright",
+   "t": "sfrc",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw5_djn_19630628",
+   "label": "Fulbright chaired the Senate Foreign Relations Committee inquiry (S. Res. 362 and 26, 1963)."
+  },
+  {
+   "f": "sfrc",
+   "t": "ja_american",
+   "type": "surveillance",
+   "status": "verified",
+   "src": "rs_cw5_ol_hearings; rs_cw5_djn_19630628",
+   "label": "Part 9 of the 13-part inquiry into agents of foreign principals concerned the Jewish Agency; closed sessions, June-Aug 1963."
+  },
+  {
+   "f": "hammer_g",
+   "t": "sfrc",
+   "type": "testimony",
+   "status": "verified",
+   "src": "rs_cw5_djn_19630628",
+   "label": "Gottlieb Hammer testified in closed session, 28 June 1963."
+  },
+  {
+   "f": "boukstein",
+   "t": "sfrc",
+   "type": "testimony",
+   "status": "verified",
+   "src": "jta_fulbright_jewish_agency_hearing",
+   "label": "Agency attorney Boukstein rejected Fulbright's premise: the Agency was \"a completely independent body\"."
+  },
+  {
+   "f": "ja_american",
+   "t": "jewish_agency",
+   "type": "branch",
+   "status": "verified",
+   "src": "rs_cw5_djn_19630628",
+   "label": "The American Section of the Jewish Agency."
+  },
+  {
+   "f": "ja_american",
+   "t": "fara",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "rs_cw5_djn_19630628; rs_cw5_doj_fara_1964",
+   "label": "The American Section was already a FARA registrant in 1963, as agent of the WZO and the Jewish Agency in Jerusalem."
+  },
+  {
+   "f": "neumann",
+   "t": "ja_american",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw5_djn_19630816",
+   "label": "Aug 1963: Neumann, chairman of the American Section, called the result a vindication."
+  },
+  {
+   "f": "azc",
+   "t": "near_east_report",
+   "type": "funding",
+   "status": "verified",
+   "src": "rs_cw5_barda_2026",
+   "label": "25 Jan 1955: the Council's board decided to launch the newsletter and bought 5,500 copies at 15 cents (Barda, from Council records)."
+  },
+  {
+   "f": "kenen",
+   "t": "near_east_report",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw5_barda_2026",
+   "label": "Kenen ran the Near East Report; his affidavit said Council purchases never exceeded 23% and ended in 1962."
+  },
+  {
+   "f": "fbi",
+   "t": "azc",
+   "type": "association",
+   "status": "reported",
+   "src": "rs_cw5_smith_podcast",
+   "label": "Oct 1963: the FBI offered to help enforce the order (Grant F. Smith, IRmep)."
+  },
+  {
+   "f": "bengurion",
+   "t": "mossad",
+   "type": "founding",
+   "status": "verified",
+   "src": "rs_cw1_jvl_mossad_directive",
+   "label": "13 Dec 1949: secret directive establishing \"an institute ... to co-ordinate state intelligence agencies\", Shiloah to head it, about IL20,000 for 1950-51."
+  },
+  {
+   "f": "harel",
+   "t": "shin_bet",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw1_jvl_isa",
+   "label": "Isser Harel headed the internal security service (Shin Bet), created 1948."
+  },
+  {
+   "f": "aman",
+   "t": "idf",
+   "type": "branch",
+   "status": "verified",
+   "src": "rs_cw1_jvl_isa",
+   "label": "Military intelligence (Aman) went to the army when the Haganah intelligence service dissolved, 30 June 1948."
+  },
+  {
+   "f": "angleton",
+   "t": "mossad",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "rs_cw2_robarge",
+   "label": "From 1954 Angleton ran the CIA's Counterintelligence Staff and controlled the Israel account, \"an administrative anomaly\" (CIA chief historian); he \"saw Israel as a bastion against the Soviet Union\"."
+  },
+  {
+   "f": "aman",
+   "t": "susannah",
+   "type": "operation",
+   "status": "verified",
+   "src": "wiki_lavon_affair; rs_cw2_mod_lavon",
+   "label": "July 1954: Aman activated Unit 131, Egyptian Jews trained for sabotage, to damage Egypt's relations with the West during the Suez base talks."
+  },
+  {
+   "f": "susannah",
+   "t": "us_gov",
+   "type": "violence",
+   "status": "verified",
+   "src": "wiki_lavon_affair; rs_cw2_mod_lavon",
+   "label": "Targets included the American information libraries in Cairo and Alexandria (14 July 1954) and British cinemas, with blame meant to fall on Egyptians."
+  },
+  {
+   "f": "susannah",
+   "t": "egypt",
+   "type": "violence",
+   "status": "verified",
+   "src": "wiki_lavon_affair",
+   "label": "Incendiary devices in Cairo and Alexandria; the cell was caught."
+  },
+  {
+   "f": "peres",
+   "t": "dimona",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw4_ebb510",
+   "label": "1955: Ben-Gurion launched a secret feasibility initiative and delegated it to Peres."
+  },
+  {
+   "f": "france_gov",
+   "t": "dimona",
+   "type": "supply",
+   "status": "verified",
+   "src": "rs_cw4_fas_israel; rs_cw4_jvl_nuclear; rs_cw4_goldschmidt",
+   "label": "Autumn 1956: France agreed to supply a reactor; a reprocessing (plutonium separation) plant followed after internal resistance at the CEA."
+  },
+  {
+   "f": "jfk",
+   "t": "bengurion",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "rs_cw5_nsa_letters",
+   "label": "The battle of the letters, 27 Mar-15 June 1963: Kennedy pressed for regular inspections of Dimona."
+  },
+  {
+   "f": "jfk",
+   "t": "eshkol",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "rs_cw5_nsa_letters",
+   "label": "19 Aug 1963: Eshkol accepted regular visits in principle, not the twice-yearly interval; Kennedy's 26 Aug reply assumed \"basic agreement\"."
+  },
+  {
+   "f": "jfk",
+   "t": "dimona",
+   "type": "pressure",
+   "status": "verified",
+   "src": "rs_cw5_nsa_letters",
+   "label": "Kennedy demanded inspections; the first visit under the 1963 arrangement came on 18 Jan 1964."
+  },
+  {
+   "f": "lbj",
+   "t": "dimona",
+   "type": "pressure",
+   "status": "verified",
+   "src": "rs_cw5_cns_duplicity; rs_cw5_frus6468_summary",
+   "label": "Johnson kept insisting on the visits; inspectors found no weapons programme while suspicions continued."
+  },
+  {
+   "f": "shapiro_z",
+   "t": "numec",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_cw6_nsa_numec",
+   "label": "NUMEC founded 1957 at Apollo, Pennsylvania; Zalman Shapiro a founder and later president."
+  },
+  {
+   "f": "numec",
+   "t": "israel_gov",
+   "type": "association",
+   "status": "reported",
+   "src": "rs_cw6_nsa_numec",
+   "label": "1965-66: 93.8 kg of government-owned U-235 unexplained. The archive editors call evidence of diversion to Israel \"strong but not incontrovertible\"; the AEC found no evidence of theft and did not look; CIA records remain redacted."
+  },
+  {
+   "f": "strauss_fj",
+   "t": "peres",
+   "type": "meeting",
+   "status": "verified",
+   "src": "rs_cw6_serr_bpb",
+   "label": "Winter 1957: Peres and Strauss met secretly; the channel ran without a German embassy in Israel."
+  },
+  {
+   "f": "adenauer",
+   "t": "israel_gov",
+   "type": "supply",
+   "status": "verified",
+   "src": "rs_cw6_serr_bpb",
+   "label": "Aug 1962: Adenauer approved a secret Israeli wish list of 240M DM, including tanks."
+  },
+  {
+   "f": "west_germany",
+   "t": "israel_gov",
+   "type": "supply",
+   "status": "verified",
+   "src": "rs_cw6_frus18_d99",
+   "label": "1964: 150 M48 tanks from West Germany \"as is\", with an option on 82 more."
+  },
+  {
+   "f": "us_gov",
+   "t": "west_germany",
+   "type": "coordination",
+   "status": "verified",
+   "src": "rs_cw6_frus18_d99",
+   "label": "The US sold $24M of modernization kits on credit and sped replacement tanks to Germany; the deal could be cancelled if it became public."
+  },
+  {
+   "f": "rusk",
+   "t": "lbj",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "rs_cw6_frus18_d99",
+   "label": "Oct 1964: Rusk's memo \"FY-1965 Help to Israel\" to Johnson."
+  },
+  {
+   "f": "hawk",
+   "t": "israel_gov",
+   "type": "supply",
+   "status": "verified",
+   "src": "merip_us_aid_israel_1990",
+   "label": "1962: the first American military aid, as loans (the Hawk decision)."
+  },
+  {
+   "f": "west_germany",
+   "t": "dimona",
+   "type": "funding",
+   "status": "reported",
+   "src": "rs_cw4_barjoseph",
+   "label": "Contested: the historian Uri Bar-Joseph argues West Germany was the \"major funder\" of Dimona through the Negev loan; Peres denied it and Germany has been silent."
+  },
+  {
+   "f": "numec",
+   "t": "dimona",
+   "type": "association",
+   "status": "reported",
+   "src": "nsarchive_numec",
+   "label": "The National Security Archive reports a CIA conclusion that 1968 sampling near Dimona found uranium of the same unusual enrichment as NUMEC's missing material; Helms raised it with Johnson (still classified). A 1978 GAO study said a concerted effort could have resolved the question \"if they desired to do so\"."
+  },
+  {
+   "f": "max_ball",
+   "t": "epstein_e",
+   "type": "meeting",
+   "status": "verified",
+   "src": "c_gendzier_salon",
+   "label": "1948: Max Ball, head of the Interior Department's oil and gas division, met Eliahu Epstein of the Jewish Agency; Gendzier calls it the basis of the \"oil connection\" (from Ball's papers)."
+  },
+  {
+   "f": "epstein_e",
+   "t": "jewish_agency",
+   "type": "membership",
+   "status": "verified",
+   "src": "c_gendzier_salon",
+   "label": "Eliahu Epstein, the Jewish Agency's representative in Washington."
+  },
+  {
+   "f": "kirchwey",
+   "t": "nation_assoc",
+   "type": "founding",
+   "status": "verified",
+   "src": "c_wp_kirchwey",
+   "label": "1943: Freda Kirchwey created the Nation Associates, a sponsor-funded nonprofit, when she sold her ownership of The Nation."
+  },
+  {
+   "f": "kirchwey",
+   "t": "truman",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "c_wp_kirchwey",
+   "label": "Letters to Truman of 10 May and 19 June 1948."
+  },
+  {
+   "f": "nation_assoc",
+   "t": "ahc",
+   "type": "opposition",
+   "status": "verified",
+   "src": "c_djn_19470523",
+   "label": "May 1947: Kirchwey gave UN delegates a 75-page dossier from the Mufti's files arguing the Arab Higher Committee was in \"active partnership with Rome and Tokyo\"."
+  },
+  {
+   "f": "nation_assoc",
+   "t": "un",
+   "type": "testimony",
+   "status": "verified",
+   "src": "c_djn_19470523; c_hathi_farouk",
+   "label": "Submissions to the UN in May 1947 and June 1948 (the second on King Farouk's and the Mufti's Nazi ties)."
+  },
+  {
+   "f": "nation_assoc",
+   "t": "egypt",
+   "type": "opposition",
+   "status": "verified",
+   "src": "c_hathi_farouk",
+   "label": "June 1948 memorandum: \"The record of collaboration of King Farouk of Egypt with the Nazis and their ally, the Mufti\"."
+  }
+ ]
+}

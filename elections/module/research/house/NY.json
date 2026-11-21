@@ -1,0 +1,1002 @@
+{
+ "state": "NY",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_ny": {
+   "t": "2026 United States House of Representatives elections in New York — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_New_York"
+  },
+  "nysboe_gen": {
+   "t": "NYS Board of Elections — Certification for the November 3, 2026 General Election (09/02/2026, county-hosted copy)",
+   "u": "https://www.chenangocountyny.gov/DocumentCenter/View/7428"
+  },
+  "nysboe_gen_ontario": {
+   "t": "NYS Board of Elections — Certification for the November 3, 2026 General Election (version of 09/03/2026, Ontario County copy)",
+   "u": "https://www.ontariocountyny.gov/DocumentCenter/View/64060"
+  },
+  "nysboe_pri": {
+   "t": "NYS Board of Elections — Certification, June 23, 2026 Primary Election",
+   "u": "https://elections.ny.gov/certification-june-23-2026-primary-election"
+  },
+  "greenpapers_ny": {
+   "t": "The Green Papers — New York 2026 General Election (pre-primary candidate list)",
+   "u": "https://m.thegreenpapers.com/G26/NY"
+  },
+  "sinclair_nyc": {
+   "t": "Mamdani-backed House candidates in NYC win primaries, oust incumbents (WEAR/Sinclair)",
+   "u": "https://weartv.com/news/nation-world/mamdani-backed-house-candidates-in-nyc-win-primaries-oust-incumbents-democratic-socialists-of-america-adriano-espaillat-dan-goldman-nydia-velazquez"
+  },
+  "wxxi_ny21": {
+   "t": "WXXI — Constantino earns a decisive victory in GOP primary in NY-21",
+   "u": "https://www.wxxinews.org/2026-06-23/ny-primary-election-2026-ny-21-republican-constantino"
+  }
+ },
+ "races": [
+  {
+   "race": "NY-01",
+   "incumbent": {
+    "name": "Nick LaLota",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nick LaLota",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-01-lalota-nick",
+     "fec": [
+      "H2NY01190"
+     ]
+    },
+    {
+     "name": "Chris Gallant",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-01-christopher-gallant",
+     "fec": [
+      "H6NY01159"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "LaLota: Republican and Conservative lines. Gallant: Democratic line only (no Working Families candidate). Gallant won the Democratic primary with 62.9%.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny",
+    "nysboe_gen_ontario"
+   ]
+  },
+  {
+   "race": "NY-02",
+   "incumbent": {
+    "name": "Andrew Garbarino",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Andrew R. Garbarino",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-02-andrew-garbarino",
+     "fec": [
+      "H0NY02234"
+     ]
+    },
+    {
+     "name": "Patrick Halpin",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-02-patrick-halpin",
+     "fec": [
+      "H6NY02140"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Garbarino: Republican and Conservative lines. Halpin: Democratic and Working Families lines.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-03",
+   "incumbent": {
+    "name": "Tom Suozzi",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Thomas R. Suozzi",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-03-thomas-suozzi",
+     "fec": [
+      "H6NY03247"
+     ]
+    },
+    {
+     "name": "Mike LiPetri",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-03-mike-lipetri",
+     "fec": [
+      "H0NY02267"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Suozzi: Democratic line only. LiPetri: Republican and Conservative lines. Primaries: Suozzi 79.6%, LiPetri 81.9%.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-04",
+   "incumbent": {
+    "name": "Laura Gillen",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Laura A. Gillen",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-04-laura-gillen",
+     "fec": [
+      "H2NY04244"
+     ]
+    },
+    {
+     "name": "Jeanine C. Driscoll",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-04-jeanine-driscoll",
+     "fec": [
+      "H6NY04211"
+     ]
+    },
+    {
+     "name": "Blay Tarnoff",
+     "party": "L",
+     "incumbent": false,
+     "rec": "ny-04-blay-tarnoff",
+     "fec": [
+      "H6NY04237"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Gillen: Democratic line only. Driscoll: Republican and Conservative lines. Tarnoff: Libertarian line. Driscoll won the GOP primary with 90.8%.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-05",
+   "incumbent": {
+    "name": "Gregory Meeks",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Gregory W. Meeks",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-05-gregory-meeks",
+     "fec": [
+      "H8NY06048"
+     ]
+    },
+    {
+     "name": "George Marsh",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-05-george-marsh",
+     "fec": [
+      "H6NY05127"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Meeks: Democratic line only. Marsh: Republican and Queens United lines. There is no Conservative candidate.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-06",
+   "incumbent": {
+    "name": "Grace Meng",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Grace Meng",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-06-grace-meng",
+     "fec": [
+      "H2NY06116"
+     ]
+    },
+    {
+     "name": "Joseph Chou",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-06-joseph-chou",
+     "fec": [
+      "H4NY06047"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Meng: Democratic line only. Chou: Republican and Conservative lines. Meng won the primary with 56.8% (Chuck Park 42.9%).",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-07",
+   "incumbent": {
+    "name": "Nydia Velázquez",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Claire Valdez",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-07-claire-valdez",
+     "fec": [
+      "H6NY07214"
+     ]
+    },
+    {
+     "name": "Melvin Rivera",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-07-melvin-rivera",
+     "fec": [
+      "H6NY07271"
+     ]
+    },
+    {
+     "name": "Priscilla Ghaznavi",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ny-07-priscilla-ghaznavi",
+     "fec": [
+      "H6NY07255"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Valdez: Democratic and Working Families lines; she won the primary with 56.1% (Reynoso 35.8%). Rivera: Republican and Conservative lines. Ghaznavi: 'Our Future' independent line.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny",
+    "sinclair_nyc"
+   ]
+  },
+  {
+   "race": "NY-08",
+   "incumbent": {
+    "name": "Hakeem Jeffries",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Hakeem S. Jeffries",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-08-hakeem-jeffries",
+     "fec": [
+      "H2NY10092"
+     ]
+    },
+    {
+     "name": "Lewis Mizrahi",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-08-lewis-mizrahi",
+     "fec": [
+      "H6NY08188"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Jeffries: Democratic line only. Mizrahi: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-09",
+   "incumbent": {
+    "name": "Yvette Clarke",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Yvette D. Clarke",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-09-yvette-clarke",
+     "fec": [
+      "H4NY11138"
+     ]
+    },
+    {
+     "name": "Joel Anabilah-Azumah",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-09-joel-anabilah-azumah",
+     "fec": [
+      "H4NY09090",
+      "H6NY09145",
+      "S2NY00341"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Clarke: Democratic line only; she won the primary with 68.6%. Anabilah-Azumah (listed on the ballot as 'Joel Azumah'): Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny"
+   ]
+  },
+  {
+   "race": "NY-10",
+   "incumbent": {
+    "name": "Dan Goldman",
+    "party": "D",
+    "status": "Lost renomination"
+   },
+   "nominees": [
+    {
+     "name": "Brad Lander",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-10-brad-lander",
+     "fec": [
+      "H6NY10176"
+     ]
+    },
+    {
+     "name": "Jennifer E. Moore",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-10-jennifer-moore",
+     "fec": [
+      "H6NY10218"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Lander beat Goldman in the June 23 Democratic primary and holds the Democratic and Working Families lines. Moore: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "wiki_ny",
+    "sinclair_nyc"
+   ]
+  },
+  {
+   "race": "NY-11",
+   "incumbent": {
+    "name": "Nicole Malliotakis",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nicole Malliotakis",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-11-nicole-malliotakis",
+     "fec": [
+      "H0NY11078"
+     ]
+    },
+    {
+     "name": "Mike DeCillis",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-11-michael-decillis",
+     "fec": [
+      "H6NY11265",
+      "H8NY11097"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Malliotakis: Republican and Conservative lines. DeCillis: Democratic line only.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-12",
+   "incumbent": {
+    "name": "Jerry Nadler",
+    "party": "D",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Micah C. Lasher",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-12-micah-lasher",
+     "fec": [
+      "H6NY12172"
+     ]
+    },
+    {
+     "name": "Caroline Shinkle",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-12-caroline-shinkle",
+     "fec": [
+      "H6NY12404"
+     ]
+    },
+    {
+     "name": "Wilneida Negron",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ny-12-wilneida-negron",
+     "fec": [
+      "H6NY12313"
+     ]
+    },
+    {
+     "name": "Karen Ortiz",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ny-12-karen-ortiz",
+     "fec": [
+      "H6NY12297"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Lasher: Democratic line only (no Working Families candidate). Shinkle: Republican and Conservative lines. Negron: 'For All of Us' line. Ortiz: her own 'Karen Ortiz' independent line.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-13",
+   "incumbent": {
+    "name": "Adriano Espaillat",
+    "party": "D",
+    "status": "Lost renomination"
+   },
+   "nominees": [
+    {
+     "name": "Darializa Avila Chevalier",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-13-darializa-avila-chevalier",
+     "fec": [
+      "H6NY13279"
+     ]
+    },
+    {
+     "name": "Jomo M. Williams",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-13-jomo-williams",
+     "fec": [
+      "H6NY13303"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Avila Chevalier beat Espaillat in the June 23 Democratic primary and holds the Democratic and Working Families lines. Williams: Republican line only (no Conservative candidate).",
+   "c": [
+    "nysboe_gen",
+    "sinclair_nyc",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-14",
+   "incumbent": {
+    "name": "Alexandria Ocasio-Cortez",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Alexandria Ocasio-Cortez",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-14-alexandria-ocasio-cortez",
+     "fec": [
+      "H8NY15148"
+     ]
+    },
+    {
+     "name": "Diamant Hysenaj",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-14-diamant-hysenaj",
+     "fec": [
+      "H6NY14251"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Ocasio-Cortez: Democratic and Working Families lines. Hysenaj: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-15",
+   "incumbent": {
+    "name": "Ritchie Torres",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ritchie Torres",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-15-ritchie-torres",
+     "fec": [
+      "H0NY15160"
+     ]
+    },
+    {
+     "name": "Stylo Sapaskis",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-15-stylo-sapaskis",
+     "fec": [
+      "H6NY16140"
+     ]
+    },
+    {
+     "name": "Gonzalo Duran",
+     "party": "Conservative",
+     "incumbent": false,
+     "rec": "ny-15-gonzalo-duran",
+     "fec": [
+      "H4NY15154"
+     ]
+    },
+    {
+     "name": "Andre Easton",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ny-15-andre-easton",
+     "fec": [
+      "H6NY15167"
+     ]
+    },
+    {
+     "name": "Jose Vega",
+     "party": "I",
+     "incumbent": false,
+     "rec": "ny-15-jose-vega",
+     "fec": [
+      "H4NY15147"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Torres: Democratic line only. Sapaskis: Republican line only. Duran: Conservative line only. Easton: 'Socialism PSL' line. Vega: 'Speak The Truth' line (the FEC lists Vega as DEM). Green Papers notes that Duran's website lists him for lieutenant governor.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-16",
+   "incumbent": {
+    "name": "George Latimer",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "George S. Latimer",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-16-george-latimer",
+     "fec": [
+      "H4NY16087"
+     ]
+    },
+    {
+     "name": "Joseph J. Cinquemani",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-16-joseph-cinquemani",
+     "fec": [
+      "H4NY07052"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Latimer: Democratic line only. Cinquemani: Republican line only (no Conservative or Working Families candidate).",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-17",
+   "incumbent": {
+    "name": "Mike Lawler",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Lawler",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-17-michael-lawler",
+     "fec": [
+      "H2NY17162"
+     ]
+    },
+    {
+     "name": "Cait Conley",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-17-cait-conley",
+     "fec": [
+      "H6NY17171"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Lawler: Republican and Conservative lines. Conley won the five-way Democratic primary and holds the Democratic and Working Families lines; Phillips-Staley had the WFP line in the primary.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-18",
+   "incumbent": {
+    "name": "Pat Ryan",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Pat Ryan",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-18-patrick-ryan",
+     "fec": [
+      "H8NY19223"
+     ]
+    },
+    {
+     "name": "Jackie Mary Auringer",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-18-jackie-auringer",
+     "fec": [
+      "H6NY18252"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Ryan: Democratic and Working Families lines. Auringer: Republican and Conservative lines. Green Papers' pre-primary list had Sharanjit Thind as the Republican.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-19",
+   "incumbent": {
+    "name": "Josh Riley",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Josh Riley",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-19-josh-riley",
+     "fec": [
+      "H8NY22177"
+     ]
+    },
+    {
+     "name": "Peter K. Oberacker",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-19-peter-oberacker",
+     "fec": [
+      "H6NY19268"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Riley: Democratic and Working Families lines. Oberacker: Republican and Conservative lines; he won the GOP primary over Portelli.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-20",
+   "incumbent": {
+    "name": "Paul Tonko",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Paul D. Tonko",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-20-paul-tonko",
+     "fec": [
+      "H8NY21203"
+     ]
+    },
+    {
+     "name": "Ralph F. Ambrosio",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-20-ralph-ambrosio",
+     "fec": [
+      "H6NY20225"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Tonko: Democratic and Working Families lines. Ambrosio: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-21",
+   "incumbent": {
+    "name": "Elise Stefanik",
+    "party": "R",
+    "status": "Retiring"
+   },
+   "nominees": [
+    {
+     "name": "Anthony Constantino",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-21-anthony-constantino",
+     "fec": [
+      "H6NY21157"
+     ]
+    },
+    {
+     "name": "Blake Gendebien",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-21-blake-gendebien",
+     "fec": [
+      "H6NY21199"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Constantino won the GOP primary with about 60% over Smullen and holds the Republican and Taxpayer Rights lines. Gendebien: Democratic line only. Sources conflict: WXXI (June 23) said Smullen would stay on the Conservative line, but the 09/02 state certification shows no Conservative candidate (a Daily Gazette headline reports Smullen dropped out).",
+   "c": [
+    "nysboe_gen",
+    "wxxi_ny21",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-22",
+   "incumbent": {
+    "name": "John Mannion",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "John W. Mannion",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-22-john-mannion",
+     "fec": [
+      "H4NY22085"
+     ]
+    },
+    {
+     "name": "Kailee Buller",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-22-kailee-buller",
+     "fec": [
+      "H6NY22213"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Mannion: Democratic and Working Families lines. Buller: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-23",
+   "incumbent": {
+    "name": "Nick Langworthy",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Nicholas A. Langworthy",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-23-nick-langworthy",
+     "fec": [
+      "H2NY23228"
+     ]
+    },
+    {
+     "name": "Aaron Gies",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-23-aaron-gies",
+     "fec": [
+      "H6NY23559"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Langworthy: Republican and Conservative lines. Gies won the Democratic primary over Stocker and holds the Democratic and Working Families lines.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  },
+  {
+   "race": "NY-24",
+   "incumbent": {
+    "name": "Claudia Tenney",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Claudia Tenney",
+     "party": "R",
+     "incumbent": true,
+     "rec": "ny-24-claudia-tenney",
+     "fec": [
+      "H4NY22051"
+     ]
+    },
+    {
+     "name": "Alissa J. Ellman",
+     "party": "D",
+     "incumbent": false,
+     "rec": "ny-24-alissa-ellman",
+     "fec": [
+      "H6NY24219"
+     ]
+    }
+   ],
+   "status": "pending",
+   "note": "The state certification (09/02, unchanged in the 09/03 version) marks this race 'Litigation Pending'; I could not identify the case or its status. Tenney: Republican and Conservative lines. Ellman: Democratic and Working Families lines; she won the primary over Kastenbaum.",
+   "c": [
+    "nysboe_gen",
+    "nysboe_gen_ontario",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-25",
+   "incumbent": {
+    "name": "Joe Morelle",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Joseph D. Morelle",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-25-joseph-morelle",
+     "fec": [
+      "H8NY25105"
+     ]
+    },
+    {
+     "name": "Virginia E. McIntyre",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-25-virginia-mcintyre",
+     "fec": [
+      "H6NY25208"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Morelle: Democratic and Working Families lines; he won the primary over Wilt and Traywick. McIntyre: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "nysboe_gen_ontario",
+    "greenpapers_ny"
+   ]
+  },
+  {
+   "race": "NY-26",
+   "incumbent": {
+    "name": "Tim Kennedy",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Timothy M. Kennedy",
+     "party": "D",
+     "incumbent": true,
+     "rec": "ny-26-timothy-kennedy",
+     "fec": [
+      "H4NY26078",
+      "H4NY30039"
+     ]
+    },
+    {
+     "name": "Dennis E. Hannon",
+     "party": "R",
+     "incumbent": false,
+     "rec": "ny-26-dennis-hannon",
+     "fec": [
+      "H6NY26131"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Kennedy: Democratic line only. Hannon: Republican and Conservative lines.",
+   "c": [
+    "nysboe_gen",
+    "greenpapers_ny",
+    "nysboe_pri"
+   ]
+  }
+ ]
+}

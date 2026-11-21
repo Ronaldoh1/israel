@@ -1,0 +1,35 @@
+{
+ "id": "ak-al-jim-mcdermott",
+ "cites": {
+  "pfd14": {
+   "t": "Financial Disclosure Report, Candidate 2014, Jim C. McDermott — Clerk of the U.S. House (2014-10-06)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2014/10004488.pdf"
+  },
+  "beacon_top4": {
+   "t": "Jim McDermott, a Libertarian from Fairbanks, makes top four for Alaska's U.S. House race — Alaska Beacon / States Newsroom (2026-09-01)",
+   "u": "https://www.newsfromthestates.com/node/425399"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "disclosures": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "legal": "CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly. News search and the Sept. 1, 2026 States Newsroom profile (Air Force NCO, Fairbanks since 2006, 2014 House run) report no legal matters.",
+  "foreign": "2014 House candidate report read directly: nothing disclosed. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate (hits are other McDermotts and law firms; no match).",
+  "claims": "Campaign site could not be opened. Mechanical sample = every checkable claim in his paid 2026 Official Election Pamphlet bio. 7 rated: 5 true, 1 partly, 1 unverifiable. No ads found.",
+  "democracy": "Beacon 2026 questionnaire. Never held elected office."
+ },
+ "finances": {
+  "networth": null,
+  "trades": null,
+  "note": {
+   "t": "His only House financial disclosure on file is a 2014 candidate report (signed Oct. 6, 2014): 'None disclosed' on every schedule — no assets, earned income, liabilities, positions or agreements. No 2026 candidate report is on file, and FEC shows no 2026 committee activity, so he may be under the $5,000 filing threshold.",
+   "c": [
+    "pfd14"
+   ]
+  }
+ },
+ "research_notes": "DATA CHECK: records profile shows $231,500 in 2026 supporting spending by Cornerstone Founders PAC for FEC ID H2AK00143, while the committee reports no 2026 activity; verify the attribution. Disclosure is 12 years old."
+}

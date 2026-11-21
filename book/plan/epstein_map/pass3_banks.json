@@ -1,0 +1,450 @@
+{
+ "nodes": [
+  {
+   "id": "jpm_sars_2019",
+   "name": "JPMorgan's suspicious-activity reports after the arrest (2019)",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Filed with Treasury in 2019, six years after JPMorgan ended the relationship. USVI lawyers told the court in 2023 that they identified more than $1B in suspicious transactions. A SAR is a bank's alert, not a finding."
+  },
+  {
+   "id": "jpm_spreadsheet",
+   "name": "JPMorgan's transaction spreadsheet (2005-19)",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Produced in the USVI case: more than 9,000 transactions to Epstein-related persons, 2005-2019, over $2.4B combined. The USVI says it shows more than $1.1M paid to \"girls or women\" after the bank cut him off, $320,000 of it to people with no earlier recorded payments, many with Eastern European surnames. JPMorgan denies wrongdoing."
+  },
+  {
+   "id": "treasury_records",
+   "name": "Treasury records reviewed by Senate Finance staff (2024)",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Viewed by committee staff at Treasury in 2024 and not released. Wyden: about 4,700 wire transfers at one bank, more than $1B in and out of one account; several Russian banks, now under sanctions, used for payments; many of the women and girls came from Russia, Belarus, Turkey and Turkmenistan. These are his descriptions of records the public has not seen."
+  },
+  {
+   "id": "wyden_jpm_q",
+   "name": "Wyden's questions to JPMorgan (20 Oct 2025)",
+   "kind": "document",
+   "cluster": "finance",
+   "note": "Senate Finance letter to Jamie Dimon: more than $1.7M in cash withdrawn from Epstein's accounts in 2004-05 (public reports); asks for transactions through correspondent accounts at Sberbank, Alfa Bank and FCB, and for named executives' records. Questions, not findings."
+  },
+  {
+   "id": "sberbank",
+   "name": "Sberbank",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Russian state bank. Named in Wyden's Oct 2025 questions about correspondent-account transactions; no transaction has been published. Under US sanctions since 2022."
+  },
+  {
+   "id": "alfa_bank",
+   "name": "Alfa-Bank",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Russian private bank. Named in the same questions; no transaction has been published. Under US sanctions since 2022."
+  },
+  {
+   "id": "langford",
+   "name": "William Langford",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "JPMorgan head of compliance. Reported to have urged, in 2010-11, a \"rapid response\" review of whether to exit Epstein (Wyden's letter, citing reporting)."
+  },
+  {
+   "id": "jnelson",
+   "name": "Justin Nelson",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "JPMorgan banker named in Wyden's questions about the management of Epstein's accounts and 2013 memos."
+  },
+  {
+   "id": "hsbc_fr",
+   "name": "HSBC France (Paris branch)",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Ended Epstein's Paris account by letter a few days before Christmas 2007, with a month's notice. Bloomberg's sources say compliance had flagged payments linked to young women tied to Brunel's agency, round-dollar deposits and withdrawals. HSBC declined to comment."
+  },
+  {
+   "id": "bnp",
+   "name": "BNP Paribas",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Held an Epstein current account, savings and card, inherited from Fortis, from Feb 2008 to mid-2018 (Le Monde, 21 Feb 2026). What it was used for is not known."
+  },
+  {
+   "id": "julius_baer",
+   "name": "Julius Baer",
+   "kind": "company",
+   "cluster": "finance",
+   "note": "Swiss private bank. In spring 2017 its chief executive Boris Collardi and finance chief Dieter Enkelmann corresponded with Epstein about working with or buying Edmond de Rothschild; nothing came of it (finews.ch, from the Jan 2026 release)."
+  },
+  {
+   "id": "collardi",
+   "name": "Boris Collardi",
+   "kind": "person",
+   "cluster": "finance",
+   "note": "Julius Baer chief executive to 2017. Met and corresponded with Epstein about Edmond de Rothschild in 2017; says the contact was professional."
+  },
+  {
+   "id": "wexner_fund_2008",
+   "name": "Wexner-linked charitable fund (Jan 2008 transfer)",
+   "kind": "institution",
+   "cluster": "flows",
+   "note": "Received $46M from Epstein in January 2008 (tax records). Wexner's 2019 letter called it a \"portion\" of the money Epstein had misappropriated."
+  }
+ ],
+ "edges": [
+  {
+   "f": "jpm",
+   "t": "jpm_sars_2019",
+   "label": "filed in 2019, after the arrest; more than $1B in suspicious transactions identified",
+   "type": "filing",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "American Banker / Bloomberg, 1 Sep 2023: JPMorgan identified more than $1B in suspicious Epstein transactions to Treasury after his death (USVI, in court)",
+     "u": "https://www.americanbanker.com/articles/jpmorgan-found-1-billion-in-suspicious-epstein-activity-u-s-virgin-islands-says"
+    },
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "jpm_sars_2019",
+   "t": "fincen",
+   "label": "filed with Treasury",
+   "type": "filing",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "American Banker / Bloomberg, 1 Sep 2023: JPMorgan identified more than $1B in suspicious Epstein transactions to Treasury after his death (USVI, in court)",
+     "u": "https://www.americanbanker.com/articles/jpmorgan-found-1-billion-in-suspicious-epstein-activity-u-s-virgin-islands-says"
+    }
+   ]
+  },
+  {
+   "f": "jpm",
+   "t": "jpm_spreadsheet",
+   "label": "produced in the USVI case (2023)",
+   "type": "filing",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "CNBC, 31 Jul 2023: JPMorgan moved $1.1M from Epstein to 'girls or women' after terminating him; its spreadsheet lists 9,000+ transactions, $2.4B, 2005-19 (USVI filing)",
+     "u": "https://www.cnbc.com/2023/07/31/jpmorgan-handled-more-than-1-million-in-payments-from-jeffrey-epstein-after-bank-terminated-him-as-client-us-virgin-islands.html"
+    }
+   ]
+  },
+  {
+   "f": "jpm_spreadsheet",
+   "t": "epstein",
+   "label": "9,000+ transactions to Epstein-related persons, 2005-19, $2.4B; $1.1M to women after the 2013 exit (USVI)",
+   "type": "transaction record",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "CNBC, 31 Jul 2023: JPMorgan moved $1.1M from Epstein to 'girls or women' after terminating him; its spreadsheet lists 9,000+ transactions, $2.4B, 2005-19 (USVI filing)",
+     "u": "https://www.cnbc.com/2023/07/31/jpmorgan-handled-more-than-1-million-in-payments-from-jeffrey-epstein-after-bank-terminated-him-as-client-us-virgin-islands.html"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "treasury_records",
+   "label": "his staff reviewed them at Treasury, 2024",
+   "type": "oversight",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WSHU / NPR, 25 Jul 2025: Wyden on the Treasury records (about 4,700 wire transfers at one bank; 'apparently Russian banks')",
+     "u": "https://www.wshu.org/2025-07-25/a-democratic-senator-was-already-investigating-jeffrey-epsteins-finances"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "treasury_records",
+   "t": "epstein",
+   "label": "about 4,700 wires at one bank; over $1B through one account (his account of the records)",
+   "type": "transaction record",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WSHU / NPR, 25 Jul 2025: Wyden on the Treasury records (about 4,700 wire transfers at one bank; 'apparently Russian banks')",
+     "u": "https://www.wshu.org/2025-07-25/a-democratic-senator-was-already-investigating-jeffrey-epsteins-finances"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "wyden",
+   "t": "wyden_jpm_q",
+   "label": "sent to Dimon, 20 Oct 2025",
+   "type": "authorship",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "jpm",
+   "label": "questions on cash withdrawals, correspondent accounts and executives",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "sberbank",
+   "label": "asks for transactions through its correspondent accounts",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "wyden_jpm_q",
+   "t": "alfa_bank",
+   "label": "asks for transactions through its correspondent accounts",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "sberbank",
+   "t": "epstein",
+   "label": "payments through correspondent accounts (not published)",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "alfa_bank",
+   "t": "epstein",
+   "label": "payments through correspondent accounts (not published)",
+   "type": "banking",
+   "status": "to-verify",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    },
+    {
+     "t": "Times of Central Asia, 30 Jul 2025: Wyden says the files show multiple now-sanctioned Russian banks, and women and girls from Russia, Belarus, Turkey and Turkmenistan",
+     "u": "https://timesca.com/u-s-senator-says-epstein-targeted-women-girls-in-turkmenistan-other-countries/"
+    }
+   ]
+  },
+  {
+   "f": "langford",
+   "t": "jpm",
+   "label": "head of compliance; urged an exit review, 2010-11 (reported)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "jnelson",
+   "t": "jpm",
+   "label": "managed Epstein's accounts (per the questions)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Senate Finance Committee (ranking member), 20 Oct 2025: Wyden's questions to JPMorgan (cash withdrawals, Sberbank, Alfa Bank and FCB correspondent accounts, named executives)",
+     "u": "https://www.finance.senate.gov/ranking-members-news/with-jpmorgan-chase-dodging-epstein-inquiry-wyden-investigation-drills-down-on-bank-executives-unexplained-conduct"
+    }
+   ]
+  },
+  {
+   "f": "hsbc_fr",
+   "t": "epstein",
+   "label": "Paris account, ended by letter Dec 2007 (closure early 2008)",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "The Independent (via AOL), citing Bloomberg: HSBC Paris ended Epstein's account (letter, Dec 2007)",
+     "u": "https://www.aol.com/news/one-bank-stood-epstein-over-194529949.html"
+    },
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "bnp",
+   "t": "epstein",
+   "label": "current account, savings and card, Feb 2008 to mid-2018",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "ubs",
+   "t": "epstein",
+   "label": "credit card, 2014; closed Sept 2014 for \"reputational risk\" (accountant's email)",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters, via ThePrint, 8 Feb 2026: UBS banked Ghislaine Maxwell for years; Epstein's UBS card closed in 2014",
+     "u": "https://theprint.in/world/ubs-banked-ghislaine-maxwell-for-years-moved-her-money-after-epsteins-arrest/2849143"
+    },
+    {
+     "t": "l0g.fr, Epstein and European banks: what the records prove (BNP Paribas account 2008-18, per Le Monde 21 Feb 2026; HSBC; UBS; Barclays)",
+     "u": "https://l0g.fr/en/analysis/epstein-european-banks-six-relationships-not-to-confuse/"
+    }
+   ]
+  },
+  {
+   "f": "ubs",
+   "t": "gmax",
+   "label": "personal and business accounts from 2014, up to $19M; moved $130,000 for her on 22 Jul 2019",
+   "type": "banking",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters, via ThePrint, 8 Feb 2026: UBS banked Ghislaine Maxwell for years; Epstein's UBS card closed in 2014",
+     "u": "https://theprint.in/world/ubs-banked-ghislaine-maxwell-for-years-moved-her-money-after-epsteins-arrest/2849143"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "julius_baer",
+   "label": "brokered talks about working with or buying Edmond de Rothschild, spring 2017",
+   "type": "business talks",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "collardi",
+   "t": "julius_baer",
+   "label": "chief executive; corresponded with Epstein, 2017",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "collardi",
+   "t": "epstein",
+   "label": "met and corresponded about Edmond de Rothschild, 2017",
+   "type": "correspondence",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "finews.ch, 2 Feb 2026: Epstein, Julius Baer (Collardi, Enkelmann) and Edmond de Rothschild, 2017; UBS interest, July 2015",
+     "u": "https://www.finews.ch/news/finanzplatz/71030-jeffrey-epstein-julius-baer-boris-collardi-ariane-de-rothschild-edmond-de-rothschild"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "wexner_fund_2008",
+   "label": "transferred $46M, Jan 2008 (tax records)",
+   "type": "payment",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Business Insider, Aug 2019: Wexner's letter to his foundation; a $46M Epstein contribution to a Wexner-linked fund in Jan 2008 (tax records, WSJ) was a 'portion' of the money",
+     "u": "https://www.businessinsider.in/leslie-wexner-the-billionaire-behind-victorias-secret-says-disgraced-financier-jeffrey-epstein-misappropriated-at-least-46-million-from-him/articleshow/70582000.cms"
+    }
+   ]
+  },
+  {
+   "f": "wexner",
+   "t": "wexner_fund_2008",
+   "label": "said in 2019 the $46M was a \"portion\" of what Epstein misappropriated",
+   "type": "statement",
+   "status": "reported",
+   "src": "pass 3 (banks and money), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Business Insider, Aug 2019: Wexner's letter to his foundation; a $46M Epstein contribution to a Wexner-linked fund in Jan 2008 (tax records, WSJ) was a 'portion' of the money",
+     "u": "https://www.businessinsider.in/leslie-wexner-the-billionaire-behind-victorias-secret-says-disgraced-financier-jeffrey-epstein-misappropriated-at-least-46-million-from-him/articleshow/70582000.cms"
+    }
+   ]
+  }
+ ],
+ "node_notes": {
+  "nysdfs": "New York regulator. $150M consent order against Deutsche Bank, 7 Jul 2020: hundreds of Epstein transactions totalling millions that should have drawn scrutiny, including settlement payments over $7M, more than $6M to law firms, payments to Russian models, tuition, hotel and rent for women, payments to numerous women with Eastern European surnames, payments to people alleged to have helped him, and cash withdrawals over $800,000 across about four years. Conditions set by a risk committee were not passed on or were misread."
+ }
+}

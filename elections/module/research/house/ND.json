@@ -1,0 +1,69 @@
+{
+ "state": "ND",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_nd": {
+   "t": "2026 United States House of Representatives election in North Dakota — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_in_North_Dakota"
+  },
+  "gp_nd": {
+   "t": "The Green Papers: ND 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/ND"
+  }
+ },
+ "races": [
+  {
+   "race": "ND-AL",
+   "incumbent": {
+    "name": "Julie Fedorchak",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Julie Fedorchak",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nd-00-julie-fedorchak",
+     "fec": [
+      "H4ND00061"
+     ]
+    },
+    {
+     "name": "Trygve Hammer",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nd-00-trygve-hammer",
+     "fec": [
+      "H4ND01044",
+      "H6ND01049"
+     ]
+    },
+    {
+     "name": "Helene Neville",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nd-00-helene-neville",
+     "fec": [
+      "H6ND01056"
+     ]
+    },
+    {
+     "name": "Charles Tuttle",
+     "party": "I",
+     "incumbent": false,
+     "rec": "nd-00-charles-tuttle",
+     "fec": [
+      "H8ND00138"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "June 9 primary: Fedorchak 72.9% over Alex Balazs; Hammer (Democratic-NPL) unopposed. Neville and Tuttle are independents listed by Green Papers; Wikipedia lists no independents.",
+   "c": [
+    "wiki_nd",
+    "gp_nd"
+   ]
+  }
+ ]
+}

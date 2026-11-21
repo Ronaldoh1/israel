@@ -1,0 +1,475 @@
+{
+ "nodes": [
+  {
+   "id": "pbso",
+   "name": "Palm Beach County Sheriff's Office",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "Held Epstein for about 13 months (2008-09), most of it on work release: up to 12 hours a day, six days a week, outside the jail. In 2019 the sheriff opened an internal inquiry, handed it to the state, and ended the work-release programme."
+  },
+  {
+   "id": "bradshaw",
+   "name": "Ric Bradshaw",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "Palm Beach County sheriff. Asked in 2019 for the state (FDLE) to take over oversight of his office's review of Epstein's custody."
+  },
+  {
+   "id": "fdle",
+   "name": "Florida Department of Law Enforcement",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "Asked by Gov. DeSantis in August 2019 to review the state case, the plea and the custody. Reported in 2021: no evidence of criminal activity by officials and no evidence the State Attorney colluded with the defence; it found \"differential treatment\" in custody and that sex during work release was \"possible\" but not provable."
+  },
+  {
+   "id": "desantis",
+   "name": "Ron DeSantis",
+   "kind": "person",
+   "cluster": "politics",
+   "note": "Florida governor. Asked FDLE to review the state's handling of the Epstein case (August 2019); signed the 2024 law allowing release of the 2006 grand jury testimony."
+  },
+  {
+   "id": "fl_gj_2006",
+   "name": "Palm Beach County grand jury (2006)",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Heard the state case in 2006 and returned a single solicitation charge. Its testimony was released in July 2024 under the new state law."
+  },
+  {
+   "id": "fl_gj_law",
+   "name": "Florida grand jury disclosure law (2024)",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Passed unanimously and signed on 29 Feb 2024 (Senate sponsor Tina Polsky); in force 1 Jul 2024. Widened the exception to grand-jury secrecy so the 2006 Epstein testimony could be released."
+  },
+  {
+   "id": "delgado",
+   "name": "Judge Luis Delgado",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "Palm Beach circuit judge. In February 2024 held the request until the new law took effect; the transcripts were then released."
+  },
+  {
+   "id": "manhattan_da",
+   "name": "Manhattan District Attorney's Office",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "At Epstein's 2011 New York sex-offender hearing, an assistant DA conceded he should be rated level one, the lowest risk; the judge rated him level three, and the appeals court said the concession was a mistake."
+  },
+  {
+   "id": "pickholz",
+   "name": "Justice Ruth Pickholz",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "New York Supreme Court justice. Rated Epstein a level three sex offender in 2011, over the DA's concession of level one; affirmed on appeal."
+  },
+  {
+   "id": "ny_sora_2011",
+   "name": "People v Epstein (New York sex-offender level, 2011)",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Appellate Division, First Department, 17 Nov 2011: unanimously affirmed level three. He was rated level one in Florida and the US Virgin Islands."
+  },
+  {
+   "id": "nypd",
+   "name": "New York Police Department",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "Required 90-day address checks for a level three offender; Epstein never checked in. He had listed the Virgin Islands as his primary residence and New York as a vacation home, and the NYPD held that his monitoring was not its responsibility."
+  },
+  {
+   "id": "nm_registry",
+   "name": "New Mexico registry gap",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Epstein was not required to register in New Mexico: the Florida victim in his plea was 17, the state's age of consent. After his 2019 arrest the attorney general sought to make any sex-trafficking conviction registrable."
+  },
+  {
+   "id": "ny_cva",
+   "name": "New York Child Victims Act (2019)",
+   "kind": "document",
+   "cluster": "justice",
+   "note": "Opened a one-year window, from 14 Aug 2019, for claims that had expired; suits against Epstein's estate were filed on the first day."
+  },
+  {
+   "id": "epstein_estate",
+   "name": "Estate of Jeffrey Epstein",
+   "kind": "institution",
+   "cluster": "provenance",
+   "note": "Executors Darren Indyke and Richard Kahn. Funded the victims' compensation programme (2020); settled with the US Virgin Islands for $105M (Dec 2022), forfeiting the islands' sale proceeds in part to a victims' trust; sold every property 2021-23."
+  },
+  {
+   "id": "dgeorge",
+   "name": "Denise George",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "US Virgin Islands attorney general, May 2019 to Dec 2022. Sued the estate (2020; $105M settlement, Dec 2022) and filed suit against JPMorgan on 27 Dec 2022; dismissed four days later. Her later account to the FBI (released Jan 2026) is her allegation."
+  },
+  {
+   "id": "abryan",
+   "name": "Albert Bryan",
+   "kind": "person",
+   "cluster": "politics",
+   "note": "US Virgin Islands governor. Appointed and then dismissed Attorney General Denise George on 31 Dec 2022, saying he had been \"blindsided\" by the JPMorgan suit filed without consulting him."
+  },
+  {
+   "id": "rmberman",
+   "name": "Judge Richard M. Berman",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "SDNY judge in the 2019 case. Denied bail on 18 Jul 2019, finding Epstein a danger to the community and a flight risk, against a bail package offered against his Manhattan house."
+  }
+ ],
+ "edges": [
+  {
+   "f": "pbso",
+   "t": "epstein",
+   "label": "work release 2008-09: up to 12 hours a day, six days a week, outside the jail",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    },
+    {
+     "t": "WPTV: PBSO stops its work-release program after the Epstein case",
+     "u": "https://www.wptv.com/news/epstein/pbso-stops-work-release-program-following-controversial-jeffrey-epstein-case"
+    }
+   ]
+  },
+  {
+   "f": "bradshaw",
+   "t": "pbso",
+   "label": "sheriff; handed his office's Epstein review to the state, 2019",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "desantis",
+   "t": "fdle",
+   "label": "asked FDLE to review the state case, plea and custody, Aug 2019",
+   "type": "oversight",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "fdle",
+   "t": "pbso",
+   "label": "2021: no evidence of criminal activity; \"differential treatment\" in custody",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "fdle",
+   "t": "krischer",
+   "label": "2021: no evidence the State Attorney colluded with the defence",
+   "type": "investigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 2021: Florida authorities find no evidence of criminal activity in the state's handling of Epstein (work release, FDLE)",
+     "u": "https://www.nbcnews.com/news/us-news/florida-authorities-no-evidence-criminal-activity-state-s-handling-jeffrey-n1266888"
+    }
+   ]
+  },
+  {
+   "f": "krischer",
+   "t": "fl_gj_2006",
+   "label": "presented the state case; a single solicitation charge, 2006",
+   "type": "official act",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    }
+   ]
+  },
+  {
+   "f": "desantis",
+   "t": "fl_gj_law",
+   "label": "signed, 29 Feb 2024",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    }
+   ]
+  },
+  {
+   "f": "fl_gj_law",
+   "t": "fl_gj_2006",
+   "label": "allowed the 2006 testimony to be released (from 1 Jul 2024)",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    },
+    {
+     "t": "Florida Politics: unsealed Epstein grand jury records now viewable online (2024)",
+     "u": "https://floridapolitics.com/archives/682400-unsealed-jeffrey-epsteins-grand-jury-records-now-viewable-online"
+    }
+   ]
+  },
+  {
+   "f": "delgado",
+   "t": "fl_gj_2006",
+   "label": "held the request in Feb 2024; records released under the new law",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "WLRN, 1 Mar 2024: DeSantis signs law allowing release of the Epstein grand jury testimony (Sen. Tina Polsky)",
+     "u": "https://www.wlrn.org/law-justice/2024-03-01/jeffrey-epstein-grand-jury-testimony"
+    },
+    {
+     "t": "Florida Politics: unsealed Epstein grand jury records now viewable online (2024)",
+     "u": "https://floridapolitics.com/archives/682400-unsealed-jeffrey-epsteins-grand-jury-records-now-viewable-online"
+    }
+   ]
+  },
+  {
+   "f": "manhattan_da",
+   "t": "epstein",
+   "label": "conceded at the 2011 hearing that he should be level one (lowest risk)",
+   "type": "legal position (rejected)",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    },
+    {
+     "t": "CNN, 9 Jul 2019: Manhattan DA's office asked a judge to lower Epstein's sex-offender status in 2011",
+     "u": "https://www.kxlf.com/cnn-national/2019/07/09/manhattan-das-office-asked-judge-to-lower-jeffrey-epsteins-sex-offender-status-in-2011/"
+    }
+   ]
+  },
+  {
+   "f": "pickholz",
+   "t": "epstein",
+   "label": "rated him a level three sex offender, 2011",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    },
+    {
+     "t": "CNN, 9 Jul 2019: Manhattan DA's office asked a judge to lower Epstein's sex-offender status in 2011",
+     "u": "https://www.kxlf.com/cnn-national/2019/07/09/manhattan-das-office-asked-judge-to-lower-jeffrey-epsteins-sex-offender-status-in-2011/"
+    }
+   ]
+  },
+  {
+   "f": "ny_sora_2011",
+   "t": "pickholz",
+   "label": "affirmed unanimously, 17 Nov 2011",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "People v Epstein, 2011 NY Slip Op 08293 (App. Div. 1st Dept, 17 Nov 2011): level three affirmed; the People had 'mistakenly conceded' level one",
+     "u": "https://www.nycourts.gov/REPORTER/3dseries/2011/2011_08293.htm"
+    }
+   ]
+  },
+  {
+   "f": "nypd",
+   "t": "epstein",
+   "label": "90-day checks required; he never checked in (residence listed as USVI)",
+   "type": "oversight",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    }
+   ]
+  },
+  {
+   "f": "nm_registry",
+   "t": "zorro",
+   "label": "no registration required in New Mexico (victim in the plea was 17)",
+   "type": "legislation",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    },
+    {
+     "t": "Governing, 16 Jul 2019: registered as a sex offender in two states; in New Mexico he didn't have to",
+     "u": "https://www.governing.com/archive/Jeffrey-Epstein-Registered-as-a-Sex-Offender-in-2-States-In-New-Mexico-He-Didnt-Have-To.html"
+    }
+   ]
+  },
+  {
+   "f": "nm_ag",
+   "t": "nm_registry",
+   "label": "sought a law change after the 2019 arrest",
+   "type": "legislation",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Fox News, 2019: Epstein's sex-offender registry loopholes (NYPD check-ins, USVI, New Mexico)",
+     "u": "https://www.foxnews.com/us/jeffrey-epstein-sex-offender-registry-loopholes"
+    }
+   ]
+  },
+  {
+   "f": "ny_cva",
+   "t": "epstein_estate",
+   "label": "claim window from 14 Aug 2019; suits filed on the first day",
+   "type": "legislation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Claims Journal / AP, 16 Aug 2019: New York's Child Victims Act window opens; Epstein among the targets",
+     "u": "https://www.claimsjournal.com/news/east/2019/08/16/292598.htm"
+    }
+   ]
+  },
+  {
+   "f": "epstein_estate",
+   "t": "vcp",
+   "label": "funded the compensation programme, 2020",
+   "type": "funding",
+   "status": "reported",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: since 2019 the estate has paid over $160M to victims (compensation programme), $105M to the USVI",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
+  },
+  {
+   "f": "dgeorge",
+   "t": "epstein_estate",
+   "label": "sued the estate (2020); $105M settlement, Dec 2022",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    }
+   ]
+  },
+  {
+   "f": "dgeorge",
+   "t": "jpm",
+   "label": "filed suit, 27 Dec 2022",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    }
+   ]
+  },
+  {
+   "f": "abryan",
+   "t": "dgeorge",
+   "label": "appointed (2019); dismissed her 31 Dec 2022, four days after the JPMorgan suit; said he was \"blindsided\"",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Denise George (citing Reuters 1 Dec 2022, NYT 28 Dec 2022, St. Thomas Source, VI Consortium 30 Jan 2026)",
+     "u": "https://en.wikipedia.org/wiki/Denise_George"
+    },
+    {
+     "t": "VI Consortium: Virgin Islands Attorney General Denise George has been terminated",
+     "u": "https://viconsortium.com/vi-government/virgin-islands-attorneygeneral-denise-george-has-been-terminated-"
+    }
+   ]
+  },
+  {
+   "f": "rmberman",
+   "t": "epstein",
+   "label": "denied bail, 18 Jul 2019: danger to the community and flight risk",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "NBC News, 18 Jul 2019: Epstein denied bail, must remain behind bars until trial",
+     "u": "https://www.nbcnews.com/news/us-news/jeffrey-epstein-denied-bail-must-remain-behind-bars-until-sex-n1031171"
+    }
+   ]
+  },
+  {
+   "f": "indyke",
+   "t": "epstein_estate",
+   "label": "co-executor",
+   "type": "executor",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: the estate, its executors and where the money went",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
+  },
+  {
+   "f": "kahn",
+   "t": "epstein_estate",
+   "label": "co-executor",
+   "type": "executor",
+   "status": "verified",
+   "src": "pass 2 (legal architecture), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Forbes Australia: the estate, its executors and where the money went",
+     "u": "https://www.forbes.com.au/news/billionaires/what-happened-to-jeffrey-epstein-tainted-property-empire/"
+    }
+   ]
+  }
+ ]
+}

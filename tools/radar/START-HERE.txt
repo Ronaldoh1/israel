@@ -1,0 +1,55 @@
+TALKING-POINT RADAR
+===================
+Collects public posts about Israel and Zionism, finds the recurring pro-Israel / Zionist talking points people
+repeat, counts how many different accounts repeat each one, and checks each against what the Israel module
+already answers. Output: output/report.html (open in a browser) and output/gaps.md (the to-do list).
+
+START
+    cd ~/Desktop && unzip -o ~/Downloads/TalkingPointRadar.zip && cd TalkingPointRadar
+    chmod +x run.sh
+    ./run.sh            asks for keys once, checks them, then runs in the background
+    ./run.sh status     progress
+    ./run.sh report     rebuild and open the report
+    ./run.sh stop       stop (collected posts are kept)
+Run it again any week: only new posts are added, so you can watch which talking points are rising.
+
+KEYS (all free; each one adds a platform; skip any you don't want)
+  YouTube   console.cloud.google.com > create a project > "APIs & Services" > enable "YouTube Data API v3" >
+            Credentials > Create credentials > API key. 10,000 units a day: enough for one full run a day.
+  Reddit    reddit.com/prefs/apps > "create another app" > choose "script" > redirect uri http://localhost >
+            the ID is under the app name, the secret is labelled "secret".
+  Bluesky   bsky.app > Settings > Privacy and security > App passwords > Add. (Not your real password.)
+  No key needed: Telegram public channels, news headlines worldwide (GDELT), and your inbox (below).
+
+WHAT IT LOOKS AT (edit config/sources.json)
+  - Official and advocacy accounts: Israel's army, foreign ministry and prime minister, StandWithUs, AIPAC,
+    Christians United for Israel, CAMERA (YouTube videos and the comments under them; Telegram channels).
+    If a YouTube handle is wrong it finds the channel by name and says so in logs/youtube.log: check it.
+  - Searches for 35 phrases on YouTube, Reddit (7 subreddits incl. r/IsraelPalestine) and Bluesky.
+  - News headlines for the same phrases.
+
+TIKTOK, INSTAGRAM AND X
+  None of them lets an individual collect posts or comments without paying (X) or being an approved
+  researcher (TikTok, Instagram). Scraping them while signed in can get the account restricted, and your
+  Instagram is already flagged, so this kit does not do it. Instead: paste anything you see into a text file in
+  data/inbox/ (e.g. data/inbox/tiktok.txt). Put the link on the first line if you have it, the text under it, and
+  separate posts with a line of three dashes:
+      https://www.tiktok.com/@someone/video/123
+      The first Zionist was a Sephardic Jew...
+      ---
+      next comment...
+  The comments on your own videos are the most useful thing to paste.
+
+PRIVACY
+  Only the official/advocacy accounts listed in config/sources.json keep their names. Every other author is
+  stored as a one-way code, so the report can say "repeated by 40 different accounts" without naming anyone.
+  The point is to map arguments, not people.
+
+THE TALKING-POINT LIST (config/talking_points.json)
+  46 talking points, each with the phrasings that identify it. config/coverage.json says where the module already
+  answers each one (a keyword check of the simulation and the library, made Oct 17 2026; read the places it lists
+  before trusting it). Posts that mention the topic but match none of the 46 are scanned for phrases repeated by
+  3+ different accounts: these appear under "New phrases to review". The real arguments among them become new
+  entries in the list.
+  Posts that quote a talking point to knock it down ("myth", "propaganda", "debunk"...) are counted as rebuttals,
+  not repeats. This is a word check, so a few will be miscounted.

@@ -1,0 +1,44 @@
+{
+ "id": "az-04-zuhdi-jasser",
+ "cites": {
+  "pfd_jasser26": {
+   "t": "M. Zuhdi Jasser — Candidate report, filing year 2026 — Clerk of the U.S. House (June 21, 2026)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026/10075802.pdf"
+  },
+  "pfd_jasser25": {
+   "t": "M. Zuhdi Jasser — Candidate report, filing year 2025 — Clerk of the U.S. House (Dec. 6, 2025)",
+   "u": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10072907.pdf"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "disclosures": "done"
+ },
+ "checks": {
+  "legal": "CourtListener and Justia could not be searched directly: the network proxy refuses both hosts and the fetch tool refuses unsearched URLs (Oct. 14, 2026). A site-restricted web search of courtlistener.com/justia.com was run instead, plus news searches. News search for his name with lawsuit/court terms returned only commentary on his advocacy; no case naming him as a party found.",
+  "foreign": "2026 and 2025 House candidate reports read directly: no foreign-located assets or foreign income (international index/bond funds only). FARA: exact-name search of the FARA bulk files (registrants, short forms, foreign principals), Oct. 13, 2026: no match.",
+  "claims": "Campaign site unreachable. Mechanical sample = every checkable bio claim in his own Ballotpedia survey answers (5), the Arizona Medical Association's announcement of his run (3), and the campaign-biography claim quoted by FOX 10 (1). 9 rated: 6 true, 1 partly, 2 unverifiable. Ads not identified.",
+  "democracy": "Ballotpedia survey; Wikipedia."
+ },
+ "finances": {
+  "networth": {
+   "min": 877091,
+   "max": 3682999,
+   "year": 2026,
+   "c": [
+    "pfd_jasser26"
+   ],
+   "note": "Sum of all 91 Schedule A value ranges minus the two Schedule D liabilities, from the 2026 candidate report (period Jan. 1, 2025–May 22, 2026). Includes spouse and dependent-child assets."
+  },
+  "trades": null,
+  "note": {
+   "t": "Largest holdings: his medical practice M. Zuhdi Jasser, MD PC (100%, $500K–$1M, S-corp income $50K–$100K), held through the Jasser Revocable Trust with a BMO account ($100K–$250K); a Peoria, AZ rental property ($100K–$250K, rent $2.5K–$5K); Z Liberty LLC consulting (100%, $50K–$100K); Schwab 401(k)/profit-sharing index funds; Interpretive Translation of the Koran, LLC (100%, $15K–$50K, owns book rights); Z Leasing LLC (inactive). Spouse holds retirement accounts (Mayo 403(b), Merrill Lynch IRA, AZ Center for Hematology plan) and small individual stocks (Tesla, NVIDIA, Apple, Amazon, Merck, GE, Newmont) each under $15K. Earned income 2025: $58,876 from his practice, $79,204 from Advanced Nuclear Cardiology PLLC, $75,000 from Z Liberty LLC; spouse salaries from Banner Health Network and Mayo Clinic Arizona. Liabilities: office lease with CHP 1010 McDowell LLC through Feb. 2030 ($250K–$500K) and an American Express balance ($10K–$15K). Positions: president of the American Islamic Forum for Democracy; senior fellow, Center for Security Policy; medical director for bioethics, Banner Health Network; boards of the Arizona Medical Association, NotMyKid and the Maricopa County Sheriff's Office advisory board. No foreign assets or income.",
+   "c": [
+    "pfd_jasser26",
+    "pfd_jasser25"
+   ]
+  }
+ },
+ "research_notes": "CourtListener/Justia blocked from this environment; courts is news-only. Maricopa County Superior Court records not searched. Democracy left as is (no new statements found)."
+}

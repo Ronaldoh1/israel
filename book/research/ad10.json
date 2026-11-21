@@ -1,0 +1,358 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad10_pension",
+   "stage": "ad10",
+   "topic": "Defined benefit to defined contribution: ERISA, PBGC, Studebaker, section 401(k), participation, balances, fees, auto-enrolment",
+   "claims": [
+    {
+     "text": "PBGC: Studebaker terminated its pension plan in 1963 and more than 8,500 workers at its South Bend plant lost some or all promised benefits; Ford signed ERISA on 2 September 1974, creating PBGC; first PBGC check $140.75 on 28 February 1975; about 926,000 retirees in more than 5,000 failed plans now paid by PBGC, another 428,000 to be paid; PBGC protects about 30 million in private DB plans",
+     "strength": "primary",
+     "sources": [
+      "ad10_pbgc_history"
+     ]
+    },
+    {
+     "text": "PBGC: at Studebaker about 3,600 retirees received full benefits; about 4,000 active employees received about 15% of expected benefits; thousands under 40 received nothing",
+     "strength": "primary",
+     "sources": [
+      "ad10_pbgc_studebaker"
+     ]
+    },
+    {
+     "text": "DOL EBSA Table E7 active participants (thousands): 1975 DB 27,214 / DC 11,217; 1980 30,100/18,886; 1984 30,073/30,545 (first year DC exceeds DB); 1990 26,205/35,340; 2000 22,218/50,874; 2010 17,172/73,429; 2020 12,010/85,290; 2023 11,077/96,369. Plans 1975 DB 103,346; 1985 170,172; 2023 46,233 vs DC 790,610. Revised 2004 definition; counts are plan participants (a worker in two plans counted twice)",
+     "strength": "primary",
+     "sources": [
+      "ad10_dol_hist"
+     ]
+    },
+    {
+     "text": "ICI 2006: Congress added section 401(k) in 1978 effective 1980; IRS proposed regulations 10 November 1981; CODAs since 1950s, approved by 1956 revenue ruling; ICI attributes the DB to DC shift mainly to industry composition, DB sponsors adding DC plans, new firms choosing DC; few firms replaced DB with 401(k) outright (ICI is the fund industry's trade association)",
+     "strength": "reported",
+     "sources": [
+      "ad10_ici_retro"
+     ]
+    },
+    {
+     "text": "NAPA (Adams 2024): Revenue Act of 1978 signed 6 November 1978 by Carter, mainly tax cuts; added section 401(k); promoted by Rep. Barber Conable; 401(k)s were 'never intended (nor designed) to replace defined benefit pensions'; Benna/Johnson Companies story more nuanced",
+     "strength": "reported",
+     "sources": [
+      "ad10_napa_1978"
+     ]
+    },
+    {
+     "text": "Vanguard HAS 2026 (2025 data, ~1,300 plans, 4.6m accounts): average balance $167,970, median $44,115; participation 83% participant-weighted; auto-enrolment plans 94% vs voluntary 64%; 61% of plans auto-enrol; participation by income under $15k 43%, $15-30k 57%, $30-50k 74%, $50-75k 86%, $100-150k 90%, $150k+ 95%; average deferral 7.6%, total contribution 12.1%; 13% have loans; 6% hardship withdrawals (median $1,900)",
+     "strength": "primary",
+     "sources": [
+      "ad10_vanguard_has26"
+     ]
+    },
+    {
+     "text": "SCF 2025: 54.9% of families hold retirement accounts (54.3% in 2022); conditional median $106,000 (2025$); any plan (IRA/DC/DB) 65.1% of families with head 64 or younger; mean IRA/DC balance among holders 55-64 $670,200; DB plans held by about one-fourth of families",
+     "strength": "primary",
+     "sources": [
+      "ad10_scf26"
+     ]
+    },
+    {
+     "text": "BLS NCS March 2026 private industry: access 72%, participation 52%; DC access 70% participation 49%; DB access 14% participation 9%; state and local government DB access 86%, participation rate 75%",
+     "strength": "primary",
+     "sources": [
+      "ad10_bls_ebs26"
+     ]
+    },
+    {
+     "text": "ICI: 401(k) equity mutual fund asset-weighted expense ratio 0.76% (2000) to 0.26% (2024); target-date funds 0.67% (2008) to 0.29% (2024); industrywide equity average 0.40%",
+     "strength": "reported",
+     "sources": [
+      "ad10_ici_fees25"
+     ]
+    },
+    {
+     "text": "DOL fee illustration: $25,000, 35 years, 7% return, 0.5% vs 1.5% fees: $227,000 vs $163,000, 28% less; PolitiFact rated 'a third of savings to fees' Mostly False; Deloitte/ICI 2009 median all-in fee 0.72%",
+     "strength": "reported",
+     "sources": [
+      "ad10_politifact_fees"
+     ]
+    },
+    {
+     "text": "ICI: US retirement assets $51.2tn at 30 June 2026; IRAs $19.9tn; DC $15.0tn of which 401(k) $10.8tn; private DB $3.2tn; government DB $10.4tn; mutual funds hold 58% of 401(k) assets ($6.2tn)",
+     "strength": "reported",
+     "sources": [
+      "ad10_ici_q2_26"
+     ]
+    },
+    {
+     "text": "SECURE 2.0 s.101 (IRC 414A): new 401(k)/403(b) plans established after 29 Dec 2022 must auto-enrol from plan years after 31 Dec 2024, 3-10% default rising 1 point a year to 10-15%; exempt employers with 10 or fewer employees, businesses under 3 years, church and government plans; final regs sent to OIRA 23 June 2026",
+     "strength": "reported",
+     "sources": [
+      "ad10_asppa_auto"
+     ]
+    },
+    {
+     "text": "AARP PPI: 17 states have passed legislation establishing auto-IRA programmes",
+     "strength": "reported",
+     "sources": [
+      "ad10_aarp_autoira"
+     ]
+    },
+    {
+     "text": "DOL proposed rule 30 March 2026 creating a fiduciary safe harbour for alternative assets (private equity, crypto, real estate) in 401(k) plans, implementing an August 2025 executive order",
+     "strength": "reported",
+     "sources": [
+      "ad10_block_alts"
+     ]
+    },
+    {
+     "text": "DOL EBSA Table E7 (audit re-check), active participants DB/DC, thousands: 1978 29,036/15,628; 1987 28,427/34,853; 1993 24,986/39,408; 1996 23,133/44,337; 2004 20,586/52,158; 2004r 20,797/61,320; 2007 19,407/66,873; 2013 15,245/76,710; 2016 13,866/79,985; 2019 12,602/85,504; 2021 11,642/87,901 (DB share 65.0, 44.9, 38.8, 34.3, 28.3, 25.3, 22.5, 16.6, 14.8, 12.8, 11.7% by book arithmetic).",
+     "strength": "primary",
+     "sources": [
+      "ad10_dol_hist"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad10_pbgc_history",
+     "url": "https://www.pbgc.gov/about/who-we-are/history",
+     "label": "Pension Benefit Guaranty Corporation, 'History of PBGC'"
+    },
+    {
+     "key": "ad10_pbgc_studebaker",
+     "url": "https://www.pbgc.gov/about/pbgc-pensions-studebaker",
+     "label": "Pension Benefit Guaranty Corporation, 'PBGC, Pensions and Studebaker'"
+    },
+    {
+     "key": "ad10_dol_hist",
+     "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf",
+     "label": "US Department of Labor, EBSA, 'Private Pension Plan Bulletin Historical Tables and Graphs, 1975-2023', September 2025"
+    },
+    {
+     "key": "ad10_ici_retro",
+     "url": "https://idc.org/system/files/attachments/per12-02.pdf",
+     "label": "Sarah Holden, Peter Brady and Michael Hadley, Investment Company Institute, '401(k) Plans: A 25-Year Retrospective', ICI Research Perspective 12(2), November 2006"
+    },
+    {
+     "key": "ad10_napa_1978",
+     "url": "https://www.napa-net.org/news/2024/11/talking-points-an-unintended-consequence/",
+     "label": "Nevin E. Adams, NAPA, 'Talking Points: An Unintended Consequence', 5 November 2024"
+    },
+    {
+     "key": "ad10_vanguard_has26",
+     "url": "https://workplace.vanguard.com/content/dam/inst/iig-transformation/has/2026/pdf/HowAmericaSaves2026.pdf",
+     "label": "Vanguard, 'How America Saves 2026' (2025 data), June 2026"
+    },
+    {
+     "key": "ad10_scf26",
+     "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+     "label": "Federal Reserve Board, 'Changes in U.S. Family Finances from 2022 to 2025', October 2026, Table 3, Table A and Box 2"
+    },
+    {
+     "key": "ad10_bls_ebs26",
+     "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+     "label": "US Bureau of Labor Statistics, 'Employee Benefits in the United States, March 2026', 25 September 2026"
+    },
+    {
+     "key": "ad10_ici_fees25",
+     "url": "https://www.ici.org/news-release/25-low-expense-ratios-benefit-retirement-savers",
+     "label": "Investment Company Institute, 'Mutual Fund Expense Ratios Remain at Historic Lows for Retirement Savers', news release, July 2025"
+    },
+    {
+     "key": "ad10_politifact_fees",
+     "url": "https://politifact.com/factchecks/2011/oct/28/rachel-maddow/rachel-maddow-says-wall-street-fees-claim-third-40/",
+     "label": "PolitiFact, 'Rachel Maddow says Wall Street fees claim a third of 401(k)s', 28 October 2011"
+    },
+    {
+     "key": "ad10_ici_q2_26",
+     "url": "https://www.ici.org/statistical-report/ret_26_q1",
+     "label": "Investment Company Institute, 'Retirement Assets Total $51.2 Trillion in Second Quarter 2026', 17 September 2026"
+    },
+    {
+     "key": "ad10_asppa_auto",
+     "url": "https://www.asppa-net.org/news/2026/6/auto-enrollment-requirement-under-review/",
+     "label": "Ted Godbout, ASPPA, 'Auto Enrollment Requirement Under Review', 25 June 2026"
+    },
+    {
+     "key": "ad10_aarp_autoira",
+     "url": "https://www.aarp.org/ppi/state-retirement-plans",
+     "label": "AARP Public Policy Institute, 'State Retirement Plans' resource page (updated 2026)"
+    },
+    {
+     "key": "ad10_block_alts",
+     "url": "https://www.theblock.co/post/395797/us-labor-department-proposes-401k-plans-crypto",
+     "label": "Timmy Shen, The Block, 'US Labor Department proposes opening 401(k) plans to crypto to implement Trump order', 30 March 2026"
+    }
+   ]
+  },
+  {
+   "id": "ad10_socsec",
+   "stage": "ad10",
+   "topic": "Social Security design, record, financing, cap, retirement age; old-age poverty; Elder Index; older workers",
+   "claims": [
+    {
+     "text": "Census Table A-3, official poverty, people 65+: 1959 35.2%; 1966 28.5; 1970 24.6; 1975 15.3; 1980 15.7; 1985 12.6; 1990 12.2; 1995 10.5; 2000 9.9; 2005 10.1; 2010 8.9; 2015 8.8; 2020 8.9; 2022 10.2; 2024 9.9; 1960-65 not available",
+     "strength": "primary",
+     "sources": [
+      "ad10_census_a3"
+     ]
+    },
+    {
+     "text": "AARP timeline: Act signed 14 Aug 1935; first monthly benefit 31 Jan 1940 ($22.54, Ida M. Fuller); 1950 first COLA (+77%); 1956 disability; 1961 age 62 for all; automatic COLA signed 1 July 1972 from 1975; SSI Oct 1972; 1983 amendments signed 20 April 1983 (FRA 65 to 67; up to 50% taxable); 2026 Trustees Report 9 June 2026",
+     "strength": "reported",
+     "sources": [
+      "ad10_aarp_sstl"
+     ]
+    },
+    {
+     "text": "SSA: 1983 amendments signed 20 April 1983 on recommendations of the National Commission on Social Security Reform; FRA raised in two stages to 67 by 2027, first affecting those born 1938; benefits taxable up to half above $25,000/$32,000 from 1984; COLA delayed six months; employee rate schedule accelerated to 7.65% by 1990 (incl. HI); new federal employees covered from 1 Jan 1984",
+     "strength": "primary",
+     "sources": [
+      "ad10_ssa_1983"
+     ]
+    },
+    {
+     "text": "CRS 2023: 90% of covered earnings taxable in 1982 (goal of 1977 amendments) vs 81% in 2021; about 6% of workers earn above the base",
+     "strength": "reported",
+     "sources": [
+      "ad10_crs_base"
+     ]
+    },
+    {
+     "text": "NAPA 14 Oct 2026: 2027 COLA 3.6%; taxable maximum $184,500 (2026) to $192,300 (2027); average monthly benefit about $2,088 (2026), about $2,163 from January 2027; more than 76 million receive Social Security or SSI",
+     "strength": "reported",
+     "sources": [
+      "ad10_napa_cola27"
+     ]
+    },
+    {
+     "text": "CRS on 2026 Trustees: OASI depleted Q4 2032; OASDI Q3 2034; then about 83% payable falling to 65% by 2100; DI not depleted; deficit 4.42% of payroll vs 3.82%, due to lower fertility (1.90 to 1.75), lower immigration, and P.L. 119-21 reducing income from taxation of benefits; 2025 income: payroll tax 91.3%, benefit taxation 4.0%, interest 4.8%",
+     "strength": "primary",
+     "sources": [
+      "ad10_crs_tr26"
+     ]
+    },
+    {
+     "text": "AARP Foundation (Census data): SPM poverty 65+ 15.4% in 2025, up from 9.4% in 2020; over 10 million older adults below SPM; LeadingAge: 12.7% in 2019; men 13.7%, women 16.8% (2025)",
+     "strength": "reported",
+     "sources": [
+      "ad10_aarp_spm65",
+      "ad10_leadingage"
+     ]
+    },
+    {
+     "text": "UMass Boston 2019 Elder Index: 50% of single older adults and 23% of older couples had incomes below the Elder Index; 18.2% of singles below poverty and 32.1% 'in the gap'; average Elder Index $25,416 single renter, $36,204 couple (2019)",
+     "strength": "reported",
+     "sources": [
+      "ad10_umb_2019"
+     ]
+    },
+    {
+     "text": "UMass Boston 2026: Massachusetts 60% of older single adults below Elder Index (2nd among states), couples 27% (5th)",
+     "strength": "reported",
+     "sources": [
+      "ad10_umb_ma25"
+     ]
+    },
+    {
+     "text": "Pew 2023: 19% of adults 65+ working vs 11% in 1987 and 18% in early 1960s; 75+ 9% vs 4% in 1987; ~11m older workers; 45% of employed older adults consider themselves retired (Fed survey); BLS projects 65+ participation 19% to 21% by 2032",
+     "strength": "reported",
+     "sources": [
+      "ad10_pew_older"
+     ]
+    },
+    {
+     "text": "SSA history: from 1937 until 1940 Social Security paid benefits as single lump-sum payments; the 1939 Amendments added benefits for the spouse and minor children of a retired worker and survivors benefits; first monthly retirement check to Ida May Fuller, 31 Jan 1940, $22.54.",
+     "strength": "primary",
+     "sources": [
+      "ad10_audit_ssa_hist"
+     ]
+    },
+    {
+     "text": "SSA 1983 amendments summary (audit re-check): covered all Members of Congress, the President and Vice-President, federal judges and other executive-level political appointees, effective 1 Jan 1984 (later modified by P.L. 98-118 and 98-369).",
+     "strength": "primary",
+     "sources": [
+      "ad10_ssa_1983"
+     ]
+    },
+    {
+     "text": "Census Table A-3 (audit re-check): 65+ official poverty 2019 8.9%, 2020 8.9%, 2021 10.3%, 2022 10.2%, 2023 9.7%, 2024 9.9%.",
+     "strength": "primary",
+     "sources": [
+      "ad10_census_a3"
+     ]
+    },
+    {
+     "text": "Pew 2023 (audit re-check): the 65+ workforce has 'nearly quadrupled' since the mid-1980s to about 11 million; factors cited: more education, better health, shift from pensions to 401(k)-style plans, full retirement age rising to 67, more age-friendly jobs.",
+     "strength": "reported",
+     "sources": [
+      "ad10_pew_older"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad10_census_a3",
+     "url": "https://cps.ipums.org/cps/resources/poverty/TableA3_24.pdf",
+     "label": "US Census Bureau, 'Poverty in the United States: 2024', Table A-3, Poverty Status of People by Age, 1959 to 2024 (reproduced by IPUMS CPS)"
+    },
+    {
+     "key": "ad10_aarp_sstl",
+     "url": "https://www.aarp.org/social-security/history-timeline/",
+     "label": "AARP, 'Key Moments in the History of Social Security' timeline"
+    },
+    {
+     "key": "ad10_ssa_1983",
+     "url": "https://www.ssa.gov/history/1983amend.html",
+     "label": "Social Security Administration, 'Summary of P.L. 98-21 (H.R. 1900), Social Security Amendments of 1983', 26 November 1984"
+    },
+    {
+     "key": "ad10_crs_base",
+     "url": "https://www.everycrsreport.com/reports/IF12360.html",
+     "label": "Congressional Research Service, 'Social Security Taxable Earnings Base: An Overview', IF12360, 27 March 2023"
+    },
+    {
+     "key": "ad10_napa_cola27",
+     "url": "https://www.napa-net.org/news/2026/10/breaking-2027-social-security-cola-largest-increase-in-5-years/",
+     "label": "Ted Godbout, NAPA, '2027 Social Security COLA Largest Increase in 5 Years', 14 October 2026"
+    },
+    {
+     "key": "ad10_crs_tr26",
+     "url": "https://www.everycrsreport.com/reports/IF13256.html",
+     "label": "Congressional Research Service, 'Social Security: Selected Findings of the 2026 Annual Report', IF13256, 25 June 2026"
+    },
+    {
+     "key": "ad10_aarp_spm65",
+     "url": "https://www.aarp.org/press/releases/2026-09-15-aarp-foundation-responds-to-new-census-data-on-rising-poverty-among-older-adults.html",
+     "label": "AARP Foundation, 'AARP Foundation Responds to New Census Data on Rising Poverty Among Older Adults', 15 September 2026"
+    },
+    {
+     "key": "ad10_leadingage",
+     "url": "https://leadingage.org/?p=1173546",
+     "label": "Marley Sherman, LeadingAge, 'Report: Poverty Rates Continue to Climb for Older Adults', October 2026"
+    },
+    {
+     "key": "ad10_umb_2019",
+     "url": "https://www.newswire.com/news/half-of-single-older-adults-in-u-s-lack-income-to-pay-for-basic-needs-21035210",
+     "label": "UMass Boston Gerontology Institute, 'Half of Single Older Adults in U.S. Lack Income to Pay for Basic Needs', 19 November 2019"
+    },
+    {
+     "key": "ad10_umb_ma25",
+     "url": "https://scholarworks.umb.edu/demographyofaging/119/",
+     "label": "Coyle, Ward, Velasco Roldan, Somerville and Mutchler, UMass Boston, 'Living Between the Lines: Insecurity in Massachusetts, 2025', March 2026"
+    },
+    {
+     "key": "ad10_pew_older",
+     "url": "https://www.pewresearch.org/social-trends/2023/12/14/the-growth-of-the-older-workforce/",
+     "label": "Pew Research Center, 'The Growth of the Older Workforce', 14 December 2023"
+    },
+    {
+     "key": "ad10_audit_ssa_hist",
+     "url": "https://www.ssa.gov/history/briefhistory3.html",
+     "label": "Social Security Administration, Historical Background and Development of Social Security"
+    }
+   ]
+  }
+ ]
+}

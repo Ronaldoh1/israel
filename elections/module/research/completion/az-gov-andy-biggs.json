@@ -1,0 +1,85 @@
+{
+ "id": "az-gov-andy-biggs",
+ "cites": {
+  "occ": {
+   "t": "Investigations table (all public OCE/OCC referrals, 2009–Mar 2026) — Office of Congressional Conduct, U.S. House (accessed 2026-10-14)",
+   "u": "https://conduct.house.gov/docs/investigations"
+  },
+  "rollcall_ref": {
+   "t": "House Jan. 6 panel ends probe with referrals on crimes, ethics — Roll Call (2022-12-19)",
+   "u": "https://www.rollcall.com/2022/12/19/house-jan-6-panel-ends-probe-with-referrals-on-crimes-ethics/"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news"
+ },
+ "checks": {
+  "foreign": "CY2025 House financial disclosure read directly: no foreign assets or income. FARA: exact-name check of the bulk FARA files (registrants, short forms, foreign principals), searched 2026-10-13: no match.",
+  "legal": "CourtListener and Justia were not reached (outside this tool's provenance set). News, Wikipedia and Ballotpedia were searched. No criminal charges or civil judgments against Biggs were found. The Jan 6 committee's Ethics referral (2022) is recorded under democracy because it is a referral, not a finding. ethics.house.gov was not opened directly. Ethics, 2026-10-14: Office of Congressional Conduct (formerly OCE) public investigations table read directly, all pages covering Oct 2016–Mar 4, 2026 (pages 1–5 of 13): no referral names him. The table excludes matters closed in preliminary review and dismissals the Committee accepted. ethics.house.gov (the Ethics Committee's own statements) was refused by the fetch tool and could not be read; no Committee action was found in news."
+ },
+ "democracy": [
+  {
+   "kind": "objected",
+   "d": "2021-01-06",
+   "t": "Voted Yea on the objection to Arizona's electoral votes (Roll Call 10; failed 121–303).",
+   "c": [
+    "kazgovandybiggs_clerk_2021_10",
+    "kazgovandybiggs_bp_biggs"
+   ]
+  },
+  {
+   "kind": "objected",
+   "d": "2021-01-07",
+   "t": "Voted Yea on the objection to Pennsylvania's electoral votes (Roll Call 11; failed 138–282). The Clerk's page does not name the state; Ballotpedia identifies it as Pennsylvania with the same tally.",
+   "c": [
+    "kazgovandybiggs_clerk_2021_11",
+    "kazgovandybiggs_bp_biggs"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2020-12",
+   "t": "Among 126 House Republicans who signed the amicus brief backing Texas v. Pennsylvania, which the Supreme Court rejected. Earlier in 2020 he appeared in a video with Rep. Paul Gosar claiming widespread fraud and calling for an audit of Maricopa County's count.",
+   "c": [
+    "kazgovandybiggs_wiki_biggs"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2020-12",
+   "t": "Spoke at 'Stop the Steal' rallies. Organizer Ali Alexander testified to the Jan 6 committee that he spoke with Biggs in person beforehand. Biggs denied Rolling Stone's report that he helped plan the events, and he blamed antifa for the Capitol attack.",
+   "c": [
+    "kazgovandybiggs_wiki_biggs"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2021-01-06",
+   "t": "Then-Arizona House Speaker Rusty Bowers testified (June 21, 2022) that Biggs called him the morning of Jan 6 to press him to decertify Arizona's electors. Witnesses at the June 23, 2022 hearing said Biggs had sought a presidential pardon related to the certification.",
+   "c": [
+    "kazgovandybiggs_wiki_biggs"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2022-12-19",
+   "t": "Subpoenaed by the Jan 6 committee (May 12, 2022) and refused to comply. On Dec 19, 2022 the committee unanimously referred him, with McCarthy, Jordan and Perry, to the House Ethics Committee; no Ethics Committee outcome is reported in sources read. Roll Call reported that experts saw little sign the incoming Republican-controlled House would pursue the referrals. He does not appear in the Office of Congressional Conduct's public referral table.",
+   "c": [
+    "kazgovandybiggs_wiki_biggs",
+    "kazgovandybiggs_wiki_j6com",
+    "rollcall_ref",
+    "occ"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2025-01-27",
+   "t": "His campaign's announcement article describes him as having supported failed efforts to overturn Trump's 2020 loss.",
+   "c": [
+    "kazgovandybiggs_biggs_launch"
+   ]
+  }
+ ],
+ "research_notes": "ethics left at 'news': the OCC table was read directly and does not name him, but the open item is the Ethics Committee's disposition of the Dec 2022 Jan 6 committee referral, which only ethics.house.gov would show (unreachable). courts set to 'news' (news/Wikipedia/Ballotpedia searched; CourtListener/Justia unreachable). No search for statements on the 2024 results."
+}
