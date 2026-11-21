@@ -162,7 +162,7 @@ Tile 2: "35 + DC" — "US STATES THAT ADOPTED IT (AUG 2024)"
 Tile 3: "$400M" — "PULLED FROM COLUMBIA IN 4 DAYS (2025)"
 
 PANEL 2 (navy glass with a thin gold border; header in gold caps "EVEN ITS AUTHOR WARNED"; white text):
-"I drafted the definition of antisemitism… it is being weaponized." — Kenneth Stern, its lead drafter, The Guardian, December 2019. He said it was written to count hate, never to chill speech on campus.
+"I drafted the definition of antisemitism. Rightwing Jews are weaponizing it." — headline of Kenneth Stern's op-ed, The Guardian, December 2019. Stern was its lead drafter. He said it was written to count hate, never to chill speech on campus.
 
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "ASK OF ISRAEL WHAT YOU'D ASK OF ANY COUNTRY".
 Small white line beneath: "Hatred of Jews is real, and at a record high (ADL, 2024). Calling a political question hatred weakens the word for the people it protects."
