@@ -26,7 +26,7 @@ Includes:
 
 *The texts left out of the Bible, buried in a jar, or kept in Ethiopia.*
 
-**2. The Gnostics** (Book, c. 100–1945) — The Nag Hammadi Library and the gospels they buried  
+**2. The Gnostics** (Book, c. 100–1945) — **WRITTEN 21 Nov 2026** (8 parts, 16 sections, ~12,600 words, 15 figures; files book/part1/gn1–gn8, sources book/research/gn.json) — The Nag Hammadi Library and the gospels they buried  
 Labels: Nag Hammadi Library, Gnostic codices  
 Includes:
 - Gnosis: knowing, not believing
