@@ -161,3 +161,6 @@ Books I–III each gained a closing part, **The Inner Reading** (Canon X, Gnosti
 
 ## Update, 22 Nov 2026
 Book IV, **The Dead Sea Scrolls**, WRITTEN (8 parts, 13 sections, ~8,300 words; files book/part1/ds1–ds8 and ds_intro.html, sources book/research/ds.json, 25 keys). Bundle v120. Next: Kabbalah.
+
+## Update, 22 Nov 2026 (evening)
+Book V, **Kabbalah**, WRITTEN (8 parts, 10 sections, ~6,000 words; files book/part1/kb1–kb8 and kb_intro.html, sources book/research/kb.json, 18 keys). Bundle v121. Next: Sufism.
