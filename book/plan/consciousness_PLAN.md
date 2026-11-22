@@ -154,3 +154,7 @@ Includes:
 ## Also on this shelf
 
 **The Vatican Architecture** (written; Israel Volume XI) — Sovereignty, Money, Zionism and the Inner Traditions.
+
+
+## Update, 21 Nov 2026
+Books I–III each gained a closing part, **The Inner Reading** (Canon X, Gnostics IX, Ethiopian Bible IX). Seed research for *The Observer* is in `book/research/ob.json`. Register: `book/plan/inner-readings-and-patterns-register.md`.
