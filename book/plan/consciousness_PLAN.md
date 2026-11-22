@@ -158,3 +158,6 @@ Includes:
 
 ## Update, 21 Nov 2026
 Books I–III each gained a closing part, **The Inner Reading** (Canon X, Gnostics IX, Ethiopian Bible IX). Seed research for *The Observer* is in `book/research/ob.json`. Register: `book/plan/inner-readings-and-patterns-register.md`.
+
+## Update, 22 Nov 2026
+Book IV, **The Dead Sea Scrolls**, WRITTEN (8 parts, 13 sections, ~8,300 words; files book/part1/ds1–ds8 and ds_intro.html, sources book/research/ds.json, 25 keys). Bundle v120. Next: Kabbalah.
