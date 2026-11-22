@@ -38,7 +38,7 @@ Includes:
 - The Hermetic texts in the jar
 - Beyond the jar: the Gospels of Mary and Judas, and Pistis Sophia
 
-**3. The Ethiopian Bible** (Book, c. 330–today) — 81 books, and the ones the rest set aside  
+**3. The Ethiopian Bible** (Book, c. 330–today) — **WRITTEN 21 Nov 2026** (8 parts, 11 sections, ~8,900 words, 11 figures; files book/part1/et1–et8, sources book/research/et.json) — 81 books, and the ones the rest set aside  
 Labels: Ethiopian canon, Dead Sea Scrolls  
 Includes:
 - The largest Bible in Christianity
