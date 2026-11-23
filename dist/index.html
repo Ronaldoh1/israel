@@ -5898,6 +5898,10 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 /* video tiles on the shelf: same size as a cover, dark "screen" with a play icon */
 .cv:has(.maptag) .ser{padding-right:28%;padding-left:0}
 .cv.vd{--c:#1B2133}
+.cv.vd.mp .mflag{position:absolute;z-index:2;top:4.5cqw;right:5cqw;width:17cqw;height:12.4cqw;border-radius:1px;box-shadow:0 0 0 1px rgba(255,255,255,.4),0 2px 6px rgba(0,0,0,.45)}
+.cv.vd.mp .vtag{align-self:center;background:#E8B44A;color:#1A1030}
+.cv.vd.mp .vp{filter:drop-shadow(0 0 8px rgba(232,180,74,.45))}
+.lb-metas .lb-mlink{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
 .cv.vd::before{content:'';position:absolute;left:3.2cqw;top:6cqw;bottom:6cqw;width:3cqw;border-radius:1px;background:repeating-linear-gradient(to bottom,rgba(245,216,142,.55) 0 3.2cqw,transparent 3.2cqw 6.4cqw);opacity:.75}
 .cv.vd .vp{display:block;width:44%;aspect-ratio:1;margin:auto 0 6%;flex:none;filter:drop-shadow(0 0 7px rgba(245,216,142,.38));transition:transform .25s}
 .lb-book:hover .cv.vd .vp,.lb-book:focus-visible .cv.vd .vp{transform:scale(1.1)}
@@ -7342,6 +7346,21 @@ body.book-open #libBanner{display:none}
   function vmeta(v){
     return '<div class="meta vmeta"><a class="vl" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer"><b>' + esc(v.title) + '</b></a><small>' + (v.tag ? '<span class="vtag-s">' + esc(v.tag) + '</span> ' : '') + esc(v.by) + '</small><small>Opens on YouTube \u2197</small></div>';
   }
+  /* a network map on the shelf: a tile the same size as a cover; opens the interactive map */
+  var MTILE = {epstein:{t:'The Epstein Network Map', s:'Who built, paid for and protected the operation', c:'#2A1A2E', ring:'<circle cx="32" cy="32" r="9.5" fill="none" stroke="#D7263D" stroke-width="2"/>'},
+               road1948:{t:'The Israel Network Map', s:'The Road to 1948 and After, 1694\u20131967', c:'#14244A', ring:'<circle cx="32" cy="32" r="9.5" fill="none" stroke="#F4EFE3" stroke-width="1.4" stroke-dasharray="2.4 2.4"/>'}};
+  var MFLAG = '<svg class="mflag" viewBox="0 0 44 32" role="img" aria-label="Flag of Israel"><rect width="44" height="32" rx="2" fill="#FFFFFF"/><rect y="3" width="44" height="4.6" fill="#0038B8"/><rect y="24.4" width="44" height="4.6" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="1.5" stroke-linejoin="round"><path d="M22 9.6L27.6 19.3H16.4Z"/><path d="M22 22.4L16.4 12.7H27.6Z"/></g></svg>';
+  function mtile(id){
+    var m = MTILE[id];
+    return '<button class="lb-book lb-mapt" type="button" data-epmap="' + id + '" aria-label="' + esc(m.t + ': interactive network map, every tie with its source') + '">' +
+      '<div class="cv vd mp" style="--c:' + m.c + '" aria-hidden="true">' + MFLAG + '<div class="in"><div class="ser">Network map</div><div class="vtag">Interactive</div><div class="rule"></div>' +
+      '<svg class="vp" viewBox="0 0 64 64" focusable="false"><g stroke="#E8B44A" stroke-width="1.6" fill="none" opacity=".8"><path d="M32 32L12 14M32 32L52 12M32 32L54 42M32 32L16 52M32 32L38 56M12 14L52 12M54 42L38 56M12 14L6 34L16 52"/></g><g fill="#E8B44A"><circle cx="32" cy="32" r="6"/><circle cx="12" cy="14" r="3.6"/><circle cx="52" cy="12" r="3.6"/><circle cx="54" cy="42" r="3.6"/><circle cx="16" cy="52" r="3.6"/><circle cx="38" cy="56" r="3.6"/><circle cx="6" cy="34" r="2.8"/></g>' + m.ring + '</svg>' +
+      '<div class="tt">' + esc(m.t) + '</div><div class="st">' + esc(m.s) + '</div><div class="vol">Open the map \u2192</div></div></div></button>';
+  }
+  function mmeta(id){
+    var m = MTILE[id];
+    return '<div class="meta vmeta"><button class="vl lb-mlink" type="button" data-epmap="' + id + '"><b>' + esc(m.t) + '</b></button><small>Interactive · every tie with its source</small><small>Tap any name to see its ties</small></div>';
+  }
   function shelf(list){
     if(!list.length) return '';
     var n = cols(), pr = ls('ots_book_progress') || {}, h = '';
@@ -7349,10 +7368,12 @@ body.book-open #libBanner{display:none}
       var row = list.slice(i, i + n);
       h += '<div class="lb-row" style="--cols:' + n + '">' + row.map(function(b){
         var bi = BOOKS.indexOf(b);
+        if(b.mapt) return mtile(b.mapt);
         if(b.video) return vtile(b);
         if(b.status !== 'ready') return '<div class="lb-book soon" role="img" aria-label="' + esc(b.title + ', Volume ' + roman(b.vol) + ', in progress, coming soon') + '">' + cover(b) + '</div>';
         return '<button class="lb-book" type="button" data-b="' + bi + '" aria-label="' + esc(b.title) + '">' + cover(b) + '</button>'; }).join('') + '</div><div class="lb-plank" aria-hidden="true"></div>' +
         '<div class="lb-row lb-metas" style="--cols:' + n + '">' + row.map(function(b){
+        if(b.mapt) return mmeta(b.mapt);
         if(b.video) return vmeta(b);
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.cs) return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>' + esc(b.kind) + (b.span ? ' · ' + esc(b.span) : '') + '</small><div>' + (b.labels || []).map(function(l){ return '<span class="lbl">' + esc(l) + '</span>'; }).join('') + '</div><span class="chip">Coming soon</span></div>';
@@ -7394,8 +7415,10 @@ body.book-open #libBanner{display:none}
     var series = list.filter(function(b){ return b.ser; }); list = list.filter(function(b){ return !b.ser; });
     var epB = series.filter(function(b){ return b.ser === SER_EP; }), deB = series.filter(function(b){ return b.ser !== SER_EP && b.ser !== CONSC_SEC.h; });
     var epV = VIDEOS.filter(function(v){ return v.sec === 'epstein' && (!q || q.split(/\s+/).every(function(w){ return (v.title + ' ' + v.by + ' ' + (v.tag || '') + ' video youtube').toLowerCase().indexOf(w) >= 0; })); });
-    var epShelf = epB.concat(epV);
+    var mq = function(id){ return !q || q.split(/\s+/).every(function(w){ return (MTILE[id].t + ' ' + MTILE[id].s + ' network map interactive').toLowerCase().indexOf(w) >= 0; }); };
+    var epShelf = epB.concat(mq('epstein') ? [{mapt:'epstein'}] : [], epV);
     var ready = list.filter(function(b){ return b.status === 'ready'; }), prep = list.filter(function(b){ return b.status !== 'ready'; });
+    if(mq('road1948')){ var ri = -1; ready.forEach(function(b, k){ if(b.id === 'road1948') ri = k; }); ready.splice(ri >= 0 ? ri + 1 : ready.length, 0, {mapt:'road1948'}); }
     var csHtml = '';
     $('lbShelves').innerHTML = (ready.length ? '<section class="lb-sec lb-is"><h2>The Israel Architecture · Ready to read</h2><p class="sub">Written as continuous history, every claim tied to its source.</p>' + shelf(ready) + '</section>' : '') +
       (epShelf.length ? '<section class="lb-sec lb-series lb-ep" style="--sc:#2B3B4E"><h2>The Epstein Network Architecture</h2><p class="sub">A separate section: the book, its interactive network map and outside videos, on one shelf. Not part of The Israel Architecture. Videos open on YouTube in a new tab and are each creator\u2019s own argument, not part of the sourced book. Those marked Esoteric read the network through symbolic and occult frameworks; they are interpretations, not documents.</p>' + shelf(epShelf) + '</section>' : '') +
