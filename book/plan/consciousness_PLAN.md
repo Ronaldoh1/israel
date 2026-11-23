@@ -169,4 +169,4 @@ Book V, **Kabbalah**, WRITTEN (8 parts, 10 sections, ~6,000 words; files book/pa
 Book VI, **Sufism**, WRITTEN (8 parts, 10 sections, ~5,800 words; files book/part1/sf1–sf8 and sf_intro.html, sources book/research/sf.json, 19 keys). Bundle v122. Next: The Hermetic Tradition.
 
 ## Update, 22 Nov 2026 (late)
-Book VII, **The Hermetic Tradition**, WRITTEN (8 parts, 10 sections; files book/part1/hm1–hm8 and hm_intro.html, sources book/research/hm.json, 13 keys). Bundle v123. Next: The Heretics.
+Book VII, **The Hermetic Tradition**, WRITTEN (8 parts, 10 sections; files book/part1/ht1–ht8 and ht_intro.html, sources book/research/ht.json, 13 keys). Bundle v124 (v123 was withdrawn: it reused the "hm" prefix of The Hamas Architecture and broke that book; restored). Next: The Heretics.
