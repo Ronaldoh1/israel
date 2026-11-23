@@ -164,3 +164,6 @@ Book IV, **The Dead Sea Scrolls**, WRITTEN (8 parts, 13 sections, ~8,300 words; 
 
 ## Update, 22 Nov 2026 (evening)
 Book V, **Kabbalah**, WRITTEN (8 parts, 10 sections, ~6,000 words; files book/part1/kb1–kb8 and kb_intro.html, sources book/research/kb.json, 18 keys). Bundle v121. Next: Sufism.
+
+## Update, 22 Nov 2026 (night)
+Book VI, **Sufism**, WRITTEN (8 parts, 10 sections, ~5,800 words; files book/part1/sf1–sf8 and sf_intro.html, sources book/research/sf.json, 19 keys). Bundle v122. Next: The Hermetic Tradition.
