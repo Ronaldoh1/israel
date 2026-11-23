@@ -112,7 +112,7 @@ Includes:
 - The cunning folk
 - The witch trials, 1450–1750
 
-**11. The Old Gods** (Book, c. 1500 BCE–1700) — The sun, the goddess and the mystery schools  
+**11. The Old Gods** (Book, c. 1500 BCE–1700) — Sun gods, the goddess and the mystery schools  
 Labels: Solar gods, Divine feminine, Mystery schools  
 Includes:
 - The mystery schools: Eleusis and Isis
