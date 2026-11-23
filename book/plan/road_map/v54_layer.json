@@ -797,15 +797,15 @@
    "f": "marks_s",
    "t": "efz",
    "type": "leadership",
-   "label": "Marks served as a vice-president of the Zionist Federation. Source is an advocacy site; to verify.",
-   "status": "to-verify",
-   "src": "cufi_marks",
+   "label": "Marks became a vice-president of the Zionist Federation (Encyclopaedia Judaica).",
+   "status": "verified",
+   "src": "ej_marks",
    "n": 1,
    "sec": "exp_s01",
    "refs": [
     {
-     "t": "CUFI UK: Marks & Spencer",
-     "u": "https://www.cufi.org.uk/?p=38708"
+     "t": "Marks, Simon, Baron (Encyclopaedia Judaica)",
+     "u": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/marks-simon-baron"
     }
    ]
   },
@@ -829,14 +829,18 @@
    "f": "sacher",
    "t": "balfour_decl",
    "type": "drafting",
-   "label": "An annotated draft of the Zionist text for the declaration, prepared under Sokolow with Manchester-circle input, is in Sacher's hand. Only source so far is a blog; to verify against Stein, The Balfour Declaration (1961).",
-   "status": "to-verify",
+   "label": "Sacher worked closely with Weizmann and \"contributed to early drafts of the Balfour Declaration\" (Wikipedia). The further claim that an annotated draft is in his hand rests on a blog and is not established.",
+   "status": "reported",
    "src": "mcintyre_weizmann",
    "n": 1,
    "sec": "exp_s01",
    "refs": [
     {
-     "t": "Chaim Weizmann: the Biochemist behind the Balfour Declaration",
+     "t": "Wikipedia: Harry Sacher",
+     "u": "https://en.wikipedia.org/wiki/Harry_Sacher"
+    },
+    {
+     "t": "Chaim Weizmann: the Biochemist behind the Balfour Declaration (blog)",
      "u": "https://jodymcintyre.substack.com/p/chaim-weizmann-the-biochemist-behind"
     }
    ]
@@ -1085,8 +1089,8 @@
    "f": "scheid",
    "t": "carmel_wine",
    "type": "operational",
-   "label": "Scheid assisted land purchases and promoted marketing of the Baron's wines. Source is an auction catalogue; to verify.",
-   "status": "to-verify",
+   "label": "Claimed (auction catalogue): Scheid assisted land purchases and promoted the Baron's wines. Not found in the Jewish Encyclopedia's account of his post; not established.",
+   "status": "not-established",
    "src": "kedem",
    "n": 3,
    "sec": "exp2_s01",
@@ -1978,6 +1982,22 @@
     {
      "t": "Ken Stein / Scott Abramson: The economy of the Yishuv (israeled.org)",
      "u": "https://israeled.org/the-economy-of-the-yishuv-and-the-state-of-israel/"
+    }
+   ]
+  },
+  {
+   "f": "scheid",
+   "t": "edmond_r",
+   "type": "employment",
+   "status": "verified",
+   "src": "",
+   "n": 1,
+   "sec": "exp2_s01",
+   "label": "Edmond de Rothschild appointed Scheid inspector of his Palestine colonization work in 1883; he visited the colonies yearly, supervising the settlers, until he retired on 31 December 1899.",
+   "refs": [
+    {
+     "t": "Jewish Encyclopedia (1906): Scheid, Elie",
+     "u": "https://www.jewishencyclopedia.com/articles/13255"
     }
    ]
   }

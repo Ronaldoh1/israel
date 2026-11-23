@@ -83,3 +83,6 @@ Map: 777 nodes, 3,422 ties (1,167 verified, 184 reported, 2,059 named-together l
 - Kinship is not a tie; identity is never a tie.
 - New channels are normalized so the baseline and unrelated tests stay fixed; every shift is reported.
 - A probabilistic counterfactual cannot be "airtight"; the aim is transparent, reproducible and robust, with every weight disclosed.
+
+## Verification pass, 23 Nov 2026
+All 8 "to verify" ties closed: Kofer HaYishuv (1938), UN Resolution 273 (two ties: 11 May 1949, 37–12–9), the Prague indictment's description of Avriel (JTA, 24 Nov 1952), Simon Marks as vice-president of the Zionist Federation (Encyclopaedia Judaica) verified; Harry Sacher and the Balfour drafts "reported" (Wikipedia; the hand-written draft claim stays unestablished); Elie Scheid and the Carmel wines "not established", with a new verified tie: inspector of Edmond de Rothschild's colonies, 1883–1899 (Jewish Encyclopedia); the 1948 Shoreditch arms fund "reported" as a claim on the Commons record (Hansard, 3 Feb 1948). 12 new candidate sentences from the book reviewed (6 accepted, 2 retyped, 4 set to co-mention). The 85 ties that looked unsourced carry direct reference links. Result: 1,110 verified, 162 reported, 0 to verify, 1 not established; 2,076 co-mentions shown as such.
