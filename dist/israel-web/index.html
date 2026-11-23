@@ -5759,6 +5759,15 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-hd .s{font-variant:small-caps;letter-spacing:.14em;color:var(--accent);font-size:15px}
 .lb-hd h1{font-size:clamp(34px,6vw,54px);line-height:1.05;margin:.12em 0 .2em;letter-spacing:-.01em}
 .lb-hd p{color:var(--muted);font-style:italic;margin:0 auto;max-width:34em;font-size:17px;line-height:1.5}
+.lb-social{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;max-width:980px;margin:6px auto 10px;font:600 14px/1.2 system-ui,-apple-system,sans-serif}
+.lb-social .fl{color:var(--muted);font-weight:600;margin-right:2px}
+.lb-social a,.lb-social .sh{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);color:var(--ink);text-decoration:none;background:transparent;font:inherit;cursor:pointer}
+.lb-social a b{color:var(--accent);font-weight:800}
+.lb-social a:hover{border-color:var(--ink)}
+.lb-social .sh{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.lb-social .sh:hover{filter:brightness(1.08)}
+.lb-social a:focus-visible,.lb-social .sh:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:520px){.lb-social{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lb-social .fl{grid-column:1/-1;text-align:center;font-size:12.5px;margin:0}.lb-social a{flex-direction:column;justify-content:center;gap:1px;padding:6px 8px;border-radius:14px;font-size:12px;line-height:1.15;text-align:center}.lb-social a b{font-size:14px}.lb-social .sh{grid-column:1/-1;justify-content:center}}
 .lb-promos{display:grid;gap:14px;max-width:980px;margin:6px auto 22px}
 .lb-promo{position:relative;border-radius:16px;padding:20px 20px 18px;color:#F4EFE3;background:radial-gradient(120% 140% at 100% 0%,#1E2A5C 0%,#0B1026 62%);border:1px solid rgba(232,180,74,.55);box-shadow:0 14px 36px rgba(11,16,38,.28),inset 0 1px 0 rgba(255,255,255,.06);font-family:var(--serif,'EB Garamond',Georgia,serif);overflow:hidden}
 .lb-promo.vid{background:radial-gradient(120% 160% at 0% 0%,#3A1020 0%,#14091A 58%,#0B1026 100%);border-color:rgba(215,38,61,.6)}
@@ -7399,9 +7408,10 @@ body.book-open #libBanner{display:none}
   }
 
   /* ---------- banners at the top of the library: dismissed ones stay hidden until the page is loaded again ---------- */
-  var PROMO_X = {};
+  var PROMO_X = {}, PROMO_FIRST = (function(){ try{ if(localStorage.getItem('ots_promos_seen')) return false; localStorage.setItem('ots_promos_seen', new Date().toISOString().slice(0, 10)); }catch(e){} return true; })();
   function promos(){
     var h = '';
+    if(!PROMO_FIRST) return '';
     if(!PROMO_X.maps) h += '<section class="lb-promo" data-promo="maps" aria-label="The network maps"><button class="px" type="button" data-promo-x="maps" aria-label="Dismiss this banner">×</button>' +
       '<p class="pk">Interactive, every tie with its source</p><h3>Explore the network maps</h3><div class="maps">' +
       '<button class="pm" type="button" data-epmap="epstein"><svg viewBox="0 0 52 52" aria-hidden="true"><g stroke="#E8B44A" stroke-width="1.4" fill="none" opacity=".75"><path d="M26 26L10 12M26 26L42 10M26 26L44 34M26 26L14 42M26 26L30 46M10 12L42 10M44 34L30 46"/></g><g fill="#E8B44A"><circle cx="26" cy="26" r="5"/><circle cx="10" cy="12" r="3"/><circle cx="42" cy="10" r="3"/><circle cx="44" cy="34" r="3"/><circle cx="14" cy="42" r="3"/><circle cx="30" cy="46" r="3"/></g><circle cx="26" cy="26" r="9" fill="none" stroke="#D7263D" stroke-width="1.6"/></svg><span><b>The Epstein Network Map</b><small>Who built, paid for and protected the operation, and what happens when any part is taken away.</small><span class="go">Open the map</span></span></button>' +
@@ -7419,6 +7429,7 @@ body.book-open #libBanner{display:none}
     var last = ls('ots_lib_last'), lb = last ? BOOKS[bookIndex(last.book)] : null, pos = lb ? ls('ots_book_pos_' + lb.id) : null, cont = '';
     if(lb && pos && lb.chapters[pos.ch]){ var c = lb.chapters[pos.ch]; cont = '<button class="lb-cont" type="button" data-cont="' + bookIndex(lb.id) + '"><span class="mini">' + cover(lb) + '</span><span><small>CONTINUE READING</small><b>' + esc(lb.title) + '</b><span style="font-size:14px;color:var(--muted)">' + esc(c.label + ' · ' + c.title) + '</span></span><span class="go">Resume →</span></button>'; }
     lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-tour="1">How it works</button><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
+      '<div class="lb-social"><span class="fl">Follow</span><a href="https://www.tiktok.com/@chosenron13" target="_blank" rel="noopener">TikTok <b>@chosenron13</b></a><a href="https://www.instagram.com/chosen.ron13/" target="_blank" rel="noopener">Instagram <b>@chosen.ron13</b></a><button type="button" class="sh" data-lib-share="1"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>Share the library</button></div>' +
       '<p class="lb-reach" id="lbReach" hidden></p>' + promos() + '<div class="lb-hd"><h1>The Library of Truth ✨</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
       '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
       '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option><option value="priority">Writing priority</option></select></div>' +
@@ -7479,6 +7490,9 @@ body.book-open #libBanner{display:none}
       else openSheet('<h3>' + esc(bk.title) + '</h3><p style="font-size:15px;line-height:1.5;margin:0 0 10px">Volume ' + roman(bk.vol) + ' is being written. Its ' + bk.count + ' parts are already in the simulation, each with its sources.</p><div class="bk-btns"><button data-a="dismiss">Back to the library</button><button class="pri" data-sim-open="' + esc(bk.first) + '">Open it in the simulation</button></div>');
       return; }
     var c = e.target.closest('[data-cont]'); if(c){ openReader(+c.getAttribute('data-cont'), null, null, true); return; }
+    if(e.target.closest('[data-lib-share]')){ var su = 'https://www.tinyurl.com/thetruthlibrary';
+      if(navigator.share) navigator.share({title:'The Library of Truth ✨', text:'Free books on the documented record: every fact with its source.', url:su}).catch(function(){});
+      else { try{ navigator.clipboard.writeText(su).then(function(){ toast('Link copied'); }, function(){ toast(su); }); }catch(er){ toast(su); } } return; }
     if(e.target.closest('[data-lib-tour]')){ libTour(true); return; }
     if(e.target.closest('[data-lib-close]')){ closeBook(null); return; }
     if(e.target.closest('[data-lib-theme]')){ var t = ['paper','sepia','night']; prefs.theme = t[(t.indexOf(prefs.theme || 'paper') + 1) % 3]; applyPrefs(); showLibrary(); }
