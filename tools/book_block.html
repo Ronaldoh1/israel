@@ -294,6 +294,10 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-search input{flex:1;min-width:0;min-height:44px;border:0;outline:0;background:transparent;color:var(--ink);font:500 16px/1.2 inherit}
 .lb-search input::-webkit-search-cancel-button{display:none}
 .lb-sort{min-height:46px;border:1px solid var(--rule);border-radius:10px;background:var(--card);color:var(--ink);font:600 14px/1 inherit;padding:0 12px;cursor:pointer}
+.lb-reach{text-align:center;margin:10px 0 0;font:600 14px/1.4 system-ui,sans-serif;color:var(--muted);letter-spacing:.02em}
+.lb-reach b{color:var(--accent);font-size:17px;font-weight:800}
+.lb-metas .meta small.lb-reads{color:var(--accent);font-weight:600}
+.lb-metas .meta small.lb-reads:empty{display:none}
 .lb-count{text-align:center;color:var(--muted);font:500 13px/1.4 system-ui,sans-serif;margin:6px 0 4px;min-height:18px}
 .lb-sec{margin-top:26px}
 .lb-sec h2{font-size:22px;font-weight:600;margin:0 0 4px}
@@ -1063,7 +1067,7 @@ body.book-open #libBanner{display:none}
   /* ---------- open / close ---------- */
   function bookIndex(id){ for(var i = 0; i < BOOKS.length; i++) if(BOOKS[i].id === id) return i; return -1; }
   function openReader(bi, k, sec, resume){
-    useBook(bi); var y = null;
+    useBook(bi); hit('b:' + BOOK.id); var y = null;
     if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; if((p.mode || 'scroll') === (prefs.mode || 'scroll')) y = paged() ? p.pg : p.y; else sec = p.sec; } } }
     var wasLib = view.classList.contains('lib') && view.classList.contains('on'), prevBook = (location.hash || '').indexOf('#book=') === 0 ? where[decodeURIComponent(location.hash.slice(6))] || null : null;
     view.classList.remove('lib'); render(k, sec); if(y != null){ if(paged()) showPage(y, true); else scroller.scrollTop = y; } onScroll();
@@ -1093,6 +1097,26 @@ body.book-open #libBanner{display:none}
 
   /* ---------- the library ---------- */
   var lib = $('bkLib'), libQ = '', libSort = ls('ots_lib_sort') || 'order';
+  /* ---------- reach counter: counts are kept by the site's own Cloudflare worker (/api/hit, /api/stats, a D1 table).
+     One count per browser per day for the site and for each book; no cookies, nothing personal is sent. ---------- */
+  var STATS = null, HIT_MEM = {};
+  function hit(k){
+    k = String(k).toLowerCase(); if(!/^https?:$/.test(location.protocol) || HIT_MEM[k]) return; HIT_MEM[k] = 1;
+    var d = new Date().toISOString().slice(0, 10);
+    try{ if(localStorage.getItem('ots_hit_' + k) === d) return; localStorage.setItem('ots_hit_' + k, d); }catch(e){}
+    try{ fetch('/api/hit', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({k:k}), keepalive:true}).catch(function(){}); }catch(e){}
+  }
+  function loadStats(){
+    if(STATS || !/^https?:$/.test(location.protocol)) return;
+    try{ fetch('/api/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(x){ if(x && typeof x.base === 'number'){ STATS = x; paintStats(); } }).catch(function(){}); }catch(e){}
+  }
+  function paintStats(){
+    if(!STATS) return;
+    var f = function(n){ return Number(n).toLocaleString('en-US'); }, r = $('lbReach');
+    if(r){ r.innerHTML = '<b>' + f(STATS.base + (STATS.site || 0)) + '</b> people reached'; r.title = 'Includes a starting figure of ' + f(STATS.base) + ', set when the counter began on 23 November 2026, for readers and viewers reached before then; every visit since is counted.'; r.hidden = false; }
+    [].forEach.call(lib.querySelectorAll('[data-reads]'), function(el){ var n = (STATS.books || {})[el.getAttribute('data-reads').toLowerCase()] || 0; el.textContent = n ? f(n) + (n === 1 ? ' reader' : ' readers') : ''; });
+  }
+  hit('site');
   function cols(){ var w = lib.clientWidth || window.innerWidth; return w < 520 ? 2 : w < 760 ? 3 : w < 1100 ? 4 : 6; }
   function eraStart(b){ if(b.eraKey != null) return b.eraKey; var m = String(b.span || '').match(/(\d+)\s*BCE/i); if(m) return -(+m[1]); m = String(b.span || '').match(/\d{4}/); return m ? +m[0] : 9999; }
   function libText(b){ return (b.title + ' ' + (b.subtitle || '') + ' ' + (b.span || '') + ' ' + (b.keywords || '') + ' ' + (b.chapters || []).map(function(c){ return c.title + ' ' + c.sections.map(function(x){ return x.h; }).join(' '); }).join(' ')).toLowerCase(); }
@@ -1121,7 +1145,7 @@ body.book-open #libBanner{display:none}
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.cs) return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>' + esc(b.kind) + (b.span ? ' · ' + esc(b.span) : '') + '</small><div>' + (b.labels || []).map(function(l){ return '<span class="lbl">' + esc(l) + '</span>'; }).join('') + '</div><span class="chip">Coming soon</span></div>';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
-        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (MAPS[b.id] ? '<button class="lb-map" type="button" data-epmap="' + b.id + '" aria-label="Explore the ' + esc(MAPS[b.id].n) + '">🏷️ 🕸 Network map</button>' : '') + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
+        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (MAPS[b.id] ? '<button class="lb-map" type="button" data-epmap="' + b.id + '" aria-label="Explore the ' + esc(MAPS[b.id].n) + '">🏷️ 🕸 Network map</button>' : '') + '<small class="lb-reads" data-reads="' + esc(b.id) + '"></small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }
     return h;
   }
@@ -1168,6 +1192,7 @@ body.book-open #libBanner{display:none}
       (prep.length ? '<section class="lb-sec lb-soon"><h2>The Israel Architecture · Coming soon</h2><p class="sub">In progress. These volumes are being written to the same standard; their research already lives in the simulation.</p>' + shelf(q ? prep : prep.slice(0, SHOW_SOON)) +
         (!q && prep.length > SHOW_SOON ? '<p class="lb-more"><b>+' + (prep.length - SHOW_SOON) + ' more volumes</b> in progress. Search above to find any of them.</p>' : '') + '</section>' : '') +
       (!ready.length && !prep.length && !epShelf.length && !deB.length && !csHtml ? '<p class="lb-empty">No volume matches “' + esc(libQ) + '”.</p>' : '');
+    paintStats();
     $('lbCount').textContent = q ? (list.length + (list.length === 1 ? ' volume' : ' volumes') + ' match') : (function(){ var r = BOOKS.filter(function(b){ return b.status === 'ready'; }).length; return r + ' volumes ready to read · ' + (BOOKS.length - r) + ' in preparation'; })();
   }
 
@@ -1192,14 +1217,14 @@ body.book-open #libBanner{display:none}
     var last = ls('ots_lib_last'), lb = last ? BOOKS[bookIndex(last.book)] : null, pos = lb ? ls('ots_book_pos_' + lb.id) : null, cont = '';
     if(lb && pos && lb.chapters[pos.ch]){ var c = lb.chapters[pos.ch]; cont = '<button class="lb-cont" type="button" data-cont="' + bookIndex(lb.id) + '"><span class="mini">' + cover(lb) + '</span><span><small>CONTINUE READING</small><b>' + esc(lb.title) + '</b><span style="font-size:14px;color:var(--muted)">' + esc(c.label + ' · ' + c.title) + '</span></span><span class="go">Resume →</span></button>'; }
     lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-tour="1">How it works</button><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
-      promos() + '<div class="lb-hd"><h1>The Library of Truth ✨</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
+      promos() + '<div class="lb-hd"><h1>The Library of Truth ✨</h1><p>' + esc(LIB.tagline) + '</p><p class="lb-reach" id="lbReach" hidden></p></div>' + cont +
       '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
       '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option><option value="priority">Writing priority</option></select></div>' +
       '<div class="lb-count" id="lbCount" aria-live="polite"></div><div id="lbShelves"></div></div>';
     $('lbSort').value = libSort;
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
-    renderLib(); lib.scrollTop = 0;
+    renderLib(); lib.scrollTop = 0; loadStats();
     try{ if(window.__otsBootReady) window.__otsBootReady(); }catch(e){}
     if(!ls('ots_library_tour_v2')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
     nav('#library', !bootOpen);
