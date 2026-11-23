@@ -112,7 +112,7 @@ Includes:
 - The cunning folk
 - The witch trials, 1450–1750
 
-**11. The Old Gods** (Book, c. 1500 BCE–1700) — Sun gods, the goddess and the mystery schools  
+**11. The Old Gods** (Book, 4th c. BCE–today) — Sun gods, the goddess and the mystery schools  
 Labels: Solar gods, Divine feminine, Mystery schools  
 Includes:
 - The mystery schools: Eleusis and Isis
@@ -175,3 +175,4 @@ Book VII, **The Hermetic Tradition**, WRITTEN (8 parts, 10 sections; files book/
 Book VIII, **The Heretics**, WRITTEN (8 parts, 10 sections, ~5,400 words; files book/part1/hr1–hr8 and hr_intro.html, sources book/research/hr.json, 13 keys). Bundle v125. Next: The Orders. Rule: check a new prefix is unused in book/part1, book/research and volumes.json stage ids before writing.
 - 2026-11-23: Book IX The Orders (od1–od8, prefix od checked free; od.json 5 keys, reuses vt29/vt30 keys) — v126.
 - 2026-11-23: Book X The Inquisitions (iq1–iq8, prefix iq checked free; iq.json 3 keys, reuses vt28/vt29/vt30/vt34/vt14 keys) — v127.
+- 2026-11-23: Book XI The Old Gods (og1–og8, prefix og checked free; og.json 4 keys, reuses ts13/vt21/vt26/vt33–vt36 keys); subtitle 'Sun gods, the goddess and the mystery schools' — v128.
