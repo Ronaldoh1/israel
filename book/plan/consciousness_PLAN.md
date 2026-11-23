@@ -176,3 +176,4 @@ Book VIII, **The Heretics**, WRITTEN (8 parts, 10 sections, ~5,400 words; files 
 - 2026-11-23: Book IX The Orders (od1–od8, prefix od checked free; od.json 5 keys, reuses vt29/vt30 keys) — v126.
 - 2026-11-23: Book X The Inquisitions (iq1–iq8, prefix iq checked free; iq.json 3 keys, reuses vt28/vt29/vt30/vt34/vt14 keys) — v127.
 - 2026-11-23: Book XI The Old Gods (og1–og8, prefix og checked free; og.json 4 keys, reuses ts13/vt21/vt26/vt33–vt36 keys); subtitle 'Sun gods, the goddess and the mystery schools' — v128.
+- 2026-11-23: Book XII The Forbidden Arts (fa1–fa8, prefix fa checked free; fa.json 9 keys, reuses vt30/vt33/vt34/ht/og keys); reach counter moved to the top of the library — v130.
