@@ -5915,6 +5915,19 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-mapt .cv.mp::before{content:'';position:absolute;inset:-6px;border-radius:inherit;pointer-events:none;z-index:-1;background:radial-gradient(closest-side,rgba(255,206,92,.55),rgba(255,206,92,0) 100%);filter:blur(10px);opacity:.6;animation:mpHalo 2.8s ease-in-out infinite}
 .lb-mapt .cv.mp .vp{animation:mpIcon 2.8s ease-in-out infinite}
 .lb-mapt:hover .cv.mp,.lb-mapt:focus-visible .cv.mp{animation-duration:1.4s}
+.cv.mp .spots{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.cv.mp .spots i{position:absolute;bottom:-2%;width:46%;height:112%;transform-origin:50% 100%;clip-path:polygon(44% 100%,56% 100%,100% 0,0 0);background:linear-gradient(to top,rgba(255,240,190,.62) 0%,rgba(255,226,150,.30) 38%,rgba(255,220,140,.10) 70%,rgba(255,220,140,0) 92%);mix-blend-mode:screen;filter:blur(1.5px)}
+.cv.mp .spots i:nth-child(1){left:-12%;transform:rotate(24deg);animation:spotL 6s ease-in-out infinite}
+.cv.mp .spots i:nth-child(2){right:-12%;transform:rotate(-24deg);animation:spotR 6s ease-in-out infinite -3s}
+.cv.mp .spots b{position:absolute;bottom:-3.5cqw;width:16cqw;height:7cqw;border-radius:50%;background:radial-gradient(closest-side,#FFF6D8,rgba(255,214,120,.65) 45%,rgba(255,214,120,0));animation:lamp 3s ease-in-out infinite}
+.cv.mp .spots b:nth-of-type(1){left:7%}
+.cv.mp .spots b:nth-of-type(2){right:7%;animation-delay:-1.5s}
+.cv.mp .spots::after{content:'';position:absolute;left:50%;top:44%;width:70%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,232,160,.30),rgba(255,232,160,0));mix-blend-mode:screen;animation:pool 6s ease-in-out infinite}
+@keyframes spotL{0%,100%{transform:rotate(16deg)}50%{transform:rotate(34deg)}}
+@keyframes spotR{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(-34deg)}}
+@keyframes lamp{0%,100%{opacity:.75}50%{opacity:1}}
+@keyframes pool{0%,100%{opacity:.55}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.cv.mp .spots i,.cv.mp .spots b,.cv.mp .spots::after{animation:none}}
 @keyframes mpGlow{0%,100%{box-shadow:0 0 0 1.5px rgba(255,206,92,.55),0 0 14px 2px rgba(255,190,70,.35),0 6px 14px rgba(0,0,0,.3)}50%{box-shadow:0 0 0 2px rgba(255,220,120,.95),0 0 30px 8px rgba(255,190,70,.6),0 6px 14px rgba(0,0,0,.3)}}
 @keyframes mpHalo{0%,100%{opacity:.35;transform:scale(.98)}50%{opacity:.85;transform:scale(1.04)}}
 @keyframes mpIcon{0%,100%{filter:drop-shadow(0 0 6px rgba(232,180,74,.45))}50%{filter:drop-shadow(0 0 16px rgba(255,214,110,.95))}}
@@ -7372,7 +7385,7 @@ body.book-open #libBanner{display:none}
   function mtile(id){
     var m = MTILE[id];
     return '<button class="lb-book lb-mapt" type="button" data-epmap="' + id + '" aria-label="' + esc(m.t + ': interactive network map, every tie with its source') + '">' +
-      '<div class="cv vd mp" style="--c:' + m.c + '" aria-hidden="true">' + (m.noflag ? '' : MFLAG) + '<div class="in"><div class="ser">Network map</div><div class="vtag">Interactive</div><div class="rule"></div>' +
+      '<div class="cv vd mp" style="--c:' + m.c + '" aria-hidden="true">' + (m.noflag ? '' : MFLAG) + '<span class="spots"><i></i><i></i><b></b><b></b></span><div class="in"><div class="ser">Network map</div><div class="vtag">Interactive</div><div class="rule"></div>' +
       '<svg class="vp" viewBox="0 0 64 64" focusable="false"><g stroke="#E8B44A" stroke-width="1.6" fill="none" opacity=".8"><path d="M32 32L12 14M32 32L52 12M32 32L54 42M32 32L16 52M32 32L38 56M12 14L52 12M54 42L38 56M12 14L6 34L16 52"/></g><g fill="#E8B44A"><circle cx="32" cy="32" r="6"/><circle cx="12" cy="14" r="3.6"/><circle cx="52" cy="12" r="3.6"/><circle cx="54" cy="42" r="3.6"/><circle cx="16" cy="52" r="3.6"/><circle cx="38" cy="56" r="3.6"/><circle cx="6" cy="34" r="2.8"/></g>' + m.ring + '</svg>' +
       '<div class="tt">' + esc(m.t) + '</div><div class="st">' + esc(m.s) + '</div><div class="vol">Open the map \u2192</div></div></div></button>';
   }
