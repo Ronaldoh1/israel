@@ -271,7 +271,9 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .lb-social a:hover,.lb-social .sh:hover{filter:brightness(1.1)}
 .lb-social a:focus-visible,.lb-social .sh:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media (max-width:520px){.lb-social{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lb-social .fl{grid-column:1/-1;text-align:center;font-size:12.5px;margin:0}.lb-social a{justify-content:flex-start;gap:7px;padding:6px 10px 6px 6px;border-radius:16px;font-size:11.5px;line-height:1.15}.lb-social a span.t{display:flex;flex-direction:column;min-width:0}.lb-social a b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lb-social .sh{grid-column:1/-1;justify-content:center}}
-.lb-promos{position:sticky;top:calc(6px + env(safe-area-inset-top,0px));z-index:40;display:grid;grid-template-columns:minmax(0,1fr);max-width:560px;margin:4px auto 30px;padding-bottom:16px;pointer-events:none}
+.lb-promos{position:absolute;left:50%;top:calc(8px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:60;width:min(560px,calc(100% - 20px));display:none;grid-template-columns:minmax(0,1fr);padding-bottom:16px;pointer-events:none}
+#bookView.lib .lb-promos.on{display:grid}
+#bookView:not(.lib) .lb-promos{display:none !important}
 .lb-promos .lb-promo:first-child{pointer-events:auto}
 .lb-promo{grid-area:1/1;position:relative;display:flex;align-items:center;gap:12px;min-height:64px;padding:9px 46px 9px 10px;border-radius:18px;color:#F4EFE3;background:rgba(13,17,38,.9);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(232,180,74,.5);box-shadow:0 12px 30px rgba(11,16,38,.32);font-family:system-ui,-apple-system,sans-serif;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:pointer;transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .32s;will-change:transform}
 .lb-promo.vid{border-color:rgba(215,38,61,.6)}
@@ -1250,7 +1252,7 @@ body.book-open #libBanner{display:none}
 
   /* ---------- first-visit banners: a stack of phone-style notifications pinned to the top while the library scrolls; swipe one away or tap × ---------- */
   var PROMO_X = (function(){ try{ return JSON.parse(localStorage.getItem('ots_promo_x') || '{}') || {}; }catch(e){ return {}; } })(),
-      PROMO_FIRST = (function(){ try{ if(localStorage.getItem('ots_promos_seen')) return false; localStorage.setItem('ots_promos_seen', new Date().toISOString().slice(0, 10)); }catch(e){} return true; })();
+      PROMO_FIRST = (function(){ try{ return !localStorage.getItem('ots_promos_seen'); }catch(e){ return true; } })();
   var PGRAPH = function(ring){ return '<svg class="g" viewBox="0 0 52 52" aria-hidden="true"><g stroke="#E8B44A" stroke-width="1.5" fill="none" opacity=".8"><path d="M26 26L10 12M26 26L42 10M26 26L44 34M26 26L14 42M26 26L30 46M10 12L42 10M44 34L30 46"/></g><g fill="#E8B44A"><circle cx="26" cy="26" r="5"/><circle cx="10" cy="12" r="3"/><circle cx="42" cy="10" r="3"/><circle cx="44" cy="34" r="3"/><circle cx="14" cy="42" r="3"/><circle cx="30" cy="46" r="3"/></g>' + ring + '</svg>'; };
   var PFLAG = '<svg class="flag" viewBox="0 0 44 32" role="img" aria-label="Flag of Israel"><rect width="44" height="32" rx="2" fill="#FFFFFF"/><rect y="3" width="44" height="4.6" fill="#0038B8"/><rect y="24.4" width="44" height="4.6" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="1.5" stroke-linejoin="round"><path d="M22 9.6L27.6 19.3H16.4Z"/><path d="M22 22.4L16.4 12.7H27.6Z"/></g></svg>';
   var PROMOS = [
@@ -1263,29 +1265,39 @@ body.book-open #libBanner{display:none}
     if(!PROMO_FIRST) return '';
     var live = PROMOS.filter(function(p){ return !PROMO_X[p.id] && (!p.map || MAPS[p.map]); });
     if(!live.length) return '';
-    return '<div class="lb-promos" id="lbPromos" role="region" aria-label="New in the library">' + live.map(function(p){
+    return live.map(function(p){
       return '<div class="lb-promo' + (p.vid ? ' vid' : '') + '" role="button" tabindex="0" data-promo="' + p.id + '"' + (p.map ? ' data-epmap="' + p.map + '"' : ' data-promo-vid="1"') + ' aria-label="' + esc(p.t + ': ' + p.s) + '">' +
         '<span class="pi" aria-hidden="true">' + p.ic + '</span><span class="pt"><small>' + esc(p.k) + '</small><b>' + esc(p.t) + '</b><span>' + esc(p.s) + '</span></span>' +
         '<button class="px" type="button" data-promo-x="' + p.id + '" aria-label="Dismiss for good">×</button></div>';
-    }).join('') + (live.length > 1 ? '<span class="cnt" aria-hidden="true">' + live.length + ' new · swipe to see the next</span>' : '') + '</div>';
+    }).join('') + (live.length > 1 ? '<span class="cnt" aria-hidden="true">' + live.length + ' new · swipe to see the next</span>' : '');
   }
+  var notes = document.createElement('div'); notes.className = 'lb-promos'; notes.id = 'lbPromos'; notes.setAttribute('role', 'region'); notes.setAttribute('aria-label', 'New in the library'); view.appendChild(notes);
+  function paintNotes(){ var h = (ltOn || !ls('ots_library_tour_v2')) ? '' : promos(); notes.innerHTML = h; notes.classList.toggle('on', !!h); if(h){ try{ localStorage.setItem('ots_promos_seen', new Date().toISOString().slice(0, 10)); }catch(e){} } }
   function promoGone(el, dir, forever){
     var id = el.getAttribute('data-promo'); PROMO_X[id] = 1;
     if(forever){ try{ var st = JSON.parse(localStorage.getItem('ots_promo_x') || '{}') || {}; st[id] = 1; localStorage.setItem('ots_promo_x', JSON.stringify(st)); }catch(e){} }
     el.classList.remove('drag'); el.classList.add('gone'); el.style.transform = dir === 'up' ? 'translateY(-120%)' : 'translateX(' + (dir === 'left' ? '-' : '') + '120%)';
-    setTimeout(function(){ var box = el.parentNode; el.remove(); if(!box) return; var n = box.querySelectorAll('.lb-promo').length, c = box.querySelector('.cnt'); if(!n) box.remove(); else if(c){ if(n > 1) c.textContent = n + ' new · swipe to see the next'; else c.remove(); } }, 300);
+    setTimeout(function(){ var box = notes; el.remove(); var n = box.querySelectorAll('.lb-promo').length, c = box.querySelector('.cnt'); if(!n){ box.classList.remove('on'); box.innerHTML = ''; } else if(c){ if(n > 1) c.textContent = n + ' new · swipe to see the next'; else c.remove(); } }, 300);
   }
   var pSw = null, pSuppress = 0;
-  lib.addEventListener('pointerdown', function(e){ var el = e.target.closest('.lb-promo'); if(!el || e.target.closest('.px') || el !== el.parentNode.firstElementChild) return; pSw = {el:el, x:e.clientX, y:e.clientY, dx:0, dy:0, on:false}; try{ el.setPointerCapture(e.pointerId); }catch(er){} });
-  lib.addEventListener('pointermove', function(e){ if(!pSw) return; var dx = e.clientX - pSw.x, dy = e.clientY - pSw.y;
+  notes.addEventListener('pointerdown', function(e){ var el = e.target.closest('.lb-promo'); if(!el || e.target.closest('.px') || el !== el.parentNode.firstElementChild) return; pSw = {el:el, x:e.clientX, y:e.clientY, dx:0, dy:0, on:false}; try{ el.setPointerCapture(e.pointerId); }catch(er){} });
+  notes.addEventListener('pointermove', function(e){ if(!pSw) return; var dx = e.clientX - pSw.x, dy = e.clientY - pSw.y;
     if(!pSw.on){ if(Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) pSw.on = 'x'; else if(dy < -8 && -dy > Math.abs(dx)) pSw.on = 'y'; else if(Math.abs(dy) > 10){ pSw = null; return; } else return; pSw.el.classList.add('drag'); }
     pSw.dx = dx; pSw.dy = Math.min(0, dy); pSw.el.style.transform = pSw.on === 'x' ? 'translateX(' + dx + 'px) rotate(' + (dx / 40) + 'deg)' : 'translateY(' + pSw.dy + 'px)'; pSw.el.style.opacity = String(Math.max(.25, 1 - Math.abs(pSw.on === 'x' ? dx : pSw.dy) / 260)); });
   function pEnd(){ if(!pSw) return; var s = pSw; pSw = null; if(!s.on) return; pSuppress = Date.now();
     if(s.on === 'x' && Math.abs(s.dx) > 80) promoGone(s.el, s.dx < 0 ? 'left' : 'right', false);
     else if(s.on === 'y' && s.dy < -40) promoGone(s.el, 'up', false);
     else { s.el.classList.remove('drag'); s.el.style.transform = ''; s.el.style.opacity = ''; } }
-  lib.addEventListener('pointerup', pEnd); lib.addEventListener('pointercancel', pEnd);
-  lib.addEventListener('keydown', function(e){ var el = e.target.closest && e.target.closest('.lb-promo'); if(!el || e.target !== el) return; if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); el.click(); } else if(e.key === 'Delete' || e.key === 'Backspace'){ e.preventDefault(); promoGone(el, 'right', true); } });
+  notes.addEventListener('pointerup', pEnd); notes.addEventListener('pointercancel', pEnd);
+  notes.addEventListener('click', function(e){
+    if(Date.now() - pSuppress < 400) return;
+    var px = e.target.closest('[data-promo-x]'); if(px){ promoGone(px.closest('.lb-promo'), 'right', true); return; }
+    var el = e.target.closest('.lb-promo'); if(!el) return;
+    if(el.hasAttribute('data-epmap')){ openEpMap(el.getAttribute('data-epmap'), el.getAttribute('data-epmap')); return; }
+    promoGone(el, 'up', false); var v = lib.querySelector('.lb-ep .lb-vid'); if(!v){ libQ = ''; var q = $('lbQ'); if(q) q.value = ''; renderLib(); v = lib.querySelector('.lb-ep .lb-vid'); }
+    if(v){ v.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'center'}); v.classList.remove('lb-flash'); void v.offsetWidth; v.classList.add('lb-flash'); }
+  });
+  notes.addEventListener('keydown', function(e){ var el = e.target.closest && e.target.closest('.lb-promo'); if(!el || e.target !== el) return; if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); el.click(); } else if(e.key === 'Delete' || e.key === 'Backspace'){ e.preventDefault(); promoGone(el, 'right', true); } });
   function toLibrary(){ if(history.state && history.state.fromLib && !view.classList.contains('lib')) history.back(); else showLibrary(); }
   function showLibrary(){
     view.classList.add('lib'); hideAll();
@@ -1293,14 +1305,14 @@ body.book-open #libBanner{display:none}
     if(lb && pos && lb.chapters[pos.ch]){ var c = lb.chapters[pos.ch]; cont = '<button class="lb-cont" type="button" data-cont="' + bookIndex(lb.id) + '"><span class="mini">' + cover(lb) + '</span><span><small>CONTINUE READING</small><b>' + esc(lb.title) + '</b><span style="font-size:14px;color:var(--muted)">' + esc(c.label + ' · ' + c.title) + '</span></span><span class="go">Resume →</span></button>'; }
     lib.innerHTML = '<div class="lb-wrap"><div class="lb-top"><button type="button" data-lib-tour="1">How it works</button><button type="button" data-lib-theme="1">Page: ' + esc((prefs.theme || 'paper').replace(/^./, function(x){ return x.toUpperCase(); })) + '</button><button type="button" data-lib-close="1">Simulation view</button></div>' +
       '<div class="lb-social"><span class="fl">Follow</span><a class="tt" href="https://www.tiktok.com/@chosenron13" target="_blank" rel="noopener" aria-label="Follow on TikTok: @chosenron13"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 1 0 5.4 6.3V8.6a7.9 7.9 0 0 0 4.4 1.4V6.6a4.5 4.5 0 0 1-4.4-4.6z" fill="#25F4EE" transform="translate(-.8 -.6)"/><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 1 0 5.4 6.3V8.6a7.9 7.9 0 0 0 4.4 1.4V6.6a4.5 4.5 0 0 1-4.4-4.6z" fill="#FE2C55" transform="translate(.8 .6)"/><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 1 0 5.4 6.3V8.6a7.9 7.9 0 0 0 4.4 1.4V6.6a4.5 4.5 0 0 1-4.4-4.6z" fill="#FFFFFF"/></svg></span><span class="t"><span class="nm">TikTok</span> <b>@chosenron13</b></span></a><a class="ig" href="https://www.instagram.com/chosen.ron13/" target="_blank" rel="noopener" aria-label="Follow on Instagram: @chosen.ron13"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#FFFFFF" stroke="none"/></svg></span><span class="t"><span class="nm">Instagram</span> <b>@chosen.ron13</b></span></a><button type="button" class="sh" data-lib-share="1"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>Share the library</button></div>' +
-      '<p class="lb-reach" id="lbReach" hidden></p>' + promos() + '<div class="lb-hd"><h1>The Library of Truth ✨</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
+      '<p class="lb-reach" id="lbReach" hidden></p><div class="lb-hd"><h1>The Library of Truth ✨</h1><p>' + esc(LIB.tagline) + '</p></div>' + cont +
       '<div class="lb-ctl"><label class="lb-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="lbQ" placeholder="Search titles, people, places, years" value="' + esc(libQ) + '" autocomplete="off"></label>' +
       '<select class="lb-sort" id="lbSort" aria-label="Sort the library"><option value="order">Reading order</option><option value="era">By era</option><option value="title">Title A–Z</option><option value="recent">Recently read</option><option value="priority">Writing priority</option></select></div>' +
       '<div class="lb-count" id="lbCount" aria-live="polite"></div><div id="lbShelves"></div></div>';
     $('lbSort').value = libSort;
     $('lbQ').addEventListener('input', function(){ libQ = this.value; renderLib(); });
     $('lbSort').addEventListener('change', function(){ libSort = this.value; ls('ots_lib_sort', libSort); renderLib(); });
-    renderLib(); lib.scrollTop = 0; loadStats();
+    renderLib(); lib.scrollTop = 0; loadStats(); paintNotes();
     try{ if(window.__otsBootReady) window.__otsBootReady(); }catch(e){}
     if(!ls('ots_library_tour_v2')) setTimeout(function(){ if(view.classList.contains('lib') && view.classList.contains('on')) libTour(false); }, 450);
     nav('#library', !bootOpen);
@@ -1308,17 +1320,12 @@ body.book-open #libBanner{display:none}
   }
   /* ---------- the library walkthrough (once, on the first visit; replay with "How it works") ---------- */
   var LT = [
-    {t:'Welcome to the library', b:'Every chapter of the simulation becomes a book here, written as continuous history with every claim tied to its source. There is no set order: pick whichever book you want.'},
-    {sel:'.lb-sec .lb-book:not(.soon)', t:'Ready to read', b:'These volumes are finished. Tap a cover to open it. The Baseline lays the ground before the history; The Road to 1948 tells the founding stage by stage. Start with either one.'},
-    {sel:'.lb-ep h2', t:'Separate sections', b:'Below the Israel volumes sit two more sections, each with its own label: The Epstein Network Architecture (the book, its interactive map and outside videos, which open on YouTube in a new tab) and The Dark Enlightenment Architecture (eight books, numbered I to VIII). Their numbering is separate, so they are never confused with the Israel volumes.'},
-    {sel:'.lb-soon h2', t:'Coming soon', b:'The other volumes are being written to the same standard. They stay greyed out until they are ready, and their research is already in the simulation.'},
-    {sel:'.lb-ctl', t:'Search and sort', b:'Search every volume by title, person, place or year, and sort the shelf by reading order, era or title.'},
-    {sel:'#bkFab', t:'Back to the simulation, any time', b:'Tap + and choose "Simulation, scene by scene" to return to the scene-by-scene view. The same menu changes the page to paper, sepia or night and replays this tour. Next time you visit, we open whichever view you used last.'},
-    {t:'Inside a book', b:'Tap a note number to see its source, and a name in a diagram for its detail. Double-tap the page to hide the menus, and use the + button for contents, bookmarks and notes. Your place is saved, and "Continue reading" brings you back.', last:true}
+    {sel:'.lb-sec .lb-book:not(.soon)', n:0, t:'Start here: Volume I', b:'Welcome to the library. Every book is written as continuous history, with every claim tied to its source. The Baseline lays the ground: tap its cover to open it.'},
+    {sel:'.lb-sec .lb-book:not(.soon)', n:1, t:'Then Volume II', b:'The Road to 1948 tells the founding stage by stage. Inside a book, tap a note number to see its source; the + button holds contents, bookmarks and the way back to the simulation.', last:true}
   ];
   var ltI = 0, ltOn = false;
   function ltPlace(){
-    var st = LT[ltI], ov = $('ltOv'), hole = $('ltHole'), card = $('ltCard'), el = st.sel ? view.querySelector(st.sel) : null;
+    var st = LT[ltI], ov = $('ltOv'), hole = $('ltHole'), card = $('ltCard'), el = st.sel ? view.querySelectorAll(st.sel)[st.n || 0] : null;
     $('ltStep').textContent = (ltI + 1) + ' of ' + LT.length; $('ltTitle').textContent = st.t; $('ltBody').textContent = st.b;
     $('ltBack').disabled = ltI === 0; $('ltNext').textContent = st.last ? 'Choose a book' : 'Next';
     var W = ov.clientWidth, H = ov.clientHeight, cw = card.offsetWidth, ch = card.offsetHeight;
@@ -1332,10 +1339,10 @@ body.book-open #libBanner{display:none}
   }
   function libTour(force){
     if(!force && ls('ots_library_tour_v2')) return;
-    ltI = 0; ltOn = true; lib.scrollTop = 0; $('ltOv').classList.add('on'); $('ltOv').setAttribute('aria-hidden', 'false'); ltPlace();
+    ltI = 0; ltOn = true; notes.classList.remove('on'); lib.scrollTop = 0; $('ltOv').classList.add('on'); $('ltOv').setAttribute('aria-hidden', 'false'); ltPlace();
     setTimeout(function(){ try{ $('ltNext').focus(); }catch(e){} }, 60);
   }
-  function ltEnd(){ ltOn = false; ls('ots_library_tour_v2', 1); $('ltOv').classList.remove('on'); $('ltOv').setAttribute('aria-hidden', 'true'); lib.scrollTop = 0; try{ lib.focus({preventScroll:true}); }catch(e){} }
+  function ltEnd(){ ltOn = false; ls('ots_library_tour_v2', 1); $('ltOv').classList.remove('on'); $('ltOv').setAttribute('aria-hidden', 'true'); lib.scrollTop = 0; setTimeout(paintNotes, 350); try{ lib.focus({preventScroll:true}); }catch(e){} }
   $('ltNext').addEventListener('click', function(){ if(ltI >= LT.length - 1) ltEnd(); else { ltI++; ltPlace(); } });
   $('ltBack').addEventListener('click', function(){ if(ltI > 0){ ltI--; ltPlace(); } });
   $('ltSkip').addEventListener('click', ltEnd);
@@ -1344,8 +1351,6 @@ body.book-open #libBanner{display:none}
   window.libraryTour = function(){ if(!view.classList.contains('on')) openBook(null); setTimeout(function(){ libTour(true); }, 400); };
   window.openLibrary = function(){ openBook(null); };
   lib.addEventListener('click', function(e){
-    if(Date.now() - pSuppress < 400 && e.target.closest('.lb-promo')) return;
-    var px = e.target.closest('[data-promo-x]'); if(px){ promoGone(px.closest('.lb-promo'), 'right', true); return; }
     if(e.target.closest('[data-promo-vid]')){ var v = lib.querySelector('.lb-ep .lb-vid'); if(!v){ libQ = ''; var q = $('lbQ'); if(q) q.value = ''; renderLib(); v = lib.querySelector('.lb-ep .lb-vid'); }
       if(v){ v.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'center'}); v.classList.remove('lb-flash'); void v.offsetWidth; v.classList.add('lb-flash'); setTimeout(function(){ try{ v.focus({preventScroll:true}); }catch(err){} }, 600); } return; }
     var em = e.target.closest('[data-epmap]'); if(em){ openEpMap(em.getAttribute('data-epmap'), em.getAttribute('data-epmap')); return; }
