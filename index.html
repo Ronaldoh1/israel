@@ -5916,18 +5916,23 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .cv.vd.mp .st{margin:3% 0 4%}
 .cv.vd.mp .vp{width:36%;margin:0 0 auto}
 .cv.mp .spots{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.cv.mp .spots i{position:absolute;bottom:-2%;width:46%;height:112%;transform-origin:50% 100%;clip-path:polygon(44% 100%,56% 100%,100% 0,0 0);background:linear-gradient(to top,rgba(255,240,190,.62) 0%,rgba(255,226,150,.30) 38%,rgba(255,220,140,.10) 70%,rgba(255,220,140,0) 92%);mix-blend-mode:screen;filter:blur(1.5px)}
-.cv.mp .spots i:nth-child(1){left:-12%;transform:rotate(24deg);animation:spotL 6s ease-in-out infinite}
-.cv.mp .spots i:nth-child(2){right:-12%;transform:rotate(-24deg);animation:spotR 6s ease-in-out infinite -3s}
-.cv.mp .spots b{position:absolute;bottom:-3.5cqw;width:16cqw;height:7cqw;border-radius:50%;background:radial-gradient(closest-side,#FFF6D8,rgba(255,214,120,.65) 45%,rgba(255,214,120,0));animation:lamp 3s ease-in-out infinite}
-.cv.mp .spots b:nth-of-type(1){left:7%}
-.cv.mp .spots b:nth-of-type(2){right:7%;animation-delay:-1.5s}
+.cv.mp .spots .lt{position:absolute;bottom:4.5cqw;width:46%;height:112%;transform-origin:50% 100%}
+.cv.mp .spots .lt:nth-of-type(1){left:-12%;transform:rotate(24deg);animation:spotL 6s ease-in-out infinite}
+.cv.mp .spots .lt:nth-of-type(2){right:-12%;transform:rotate(-24deg);animation:spotR 6s ease-in-out infinite -3s}
+.cv.mp .spots .lt i{position:absolute;inset:0 0 3cqw;clip-path:polygon(40% 100%,60% 100%,100% 0,0 0);background:linear-gradient(to top,rgba(255,244,205,.78) 0%,rgba(255,226,150,.34) 34%,rgba(255,220,140,.11) 68%,rgba(255,220,140,0) 92%);mix-blend-mode:screen;filter:blur(1.2px)}
+.cv.mp .spots .lt em{position:absolute;left:50%;bottom:-5.5cqw;width:15cqw;height:18cqw;transform:translateX(-50%);filter:drop-shadow(0 2px 3px rgba(0,0,0,.6))}
+.cv.mp .spots .lt em svg{display:block;width:100%;height:100%;overflow:visible}
+.cv.mp .spots .lt em svg ellipse:last-child{animation:lamp 3s ease-in-out infinite}
+.cv.mp .spots u{position:absolute;bottom:0;width:14cqw;height:7cqw;transform:translateX(-50%)}
+.cv.mp .spots u:nth-of-type(1){left:11%}
+.cv.mp .spots u:nth-of-type(2){left:89%}
+.cv.mp .spots u svg{display:block;width:100%;height:100%}
 .cv.mp .spots::after{content:'';position:absolute;left:50%;top:50%;width:80%;aspect-ratio:1.3;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,232,160,.32),rgba(255,232,160,0));mix-blend-mode:screen;animation:pool 6s ease-in-out infinite}
 @keyframes spotL{0%,100%{transform:rotate(16deg)}50%{transform:rotate(34deg)}}
 @keyframes spotR{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(-34deg)}}
-@keyframes lamp{0%,100%{opacity:.75}50%{opacity:1}}
+@keyframes lamp{0%,100%{opacity:.25}50%{opacity:.6}}
 @keyframes pool{0%,100%{opacity:.55}50%{opacity:1}}
-@media (prefers-reduced-motion:reduce){.cv.mp .spots i,.cv.mp .spots b,.cv.mp .spots::after{animation:none}}
+@media (prefers-reduced-motion:reduce){.cv.mp .spots .lt,.cv.mp .spots .lt em svg ellipse,.cv.mp .spots::after{animation:none}}
 @keyframes mpGlow{0%,100%{box-shadow:0 0 0 1.5px rgba(255,206,92,.55),0 0 14px 2px rgba(255,190,70,.35),0 6px 14px rgba(0,0,0,.3)}50%{box-shadow:0 0 0 2px rgba(255,220,120,.95),0 0 30px 8px rgba(255,190,70,.6),0 6px 14px rgba(0,0,0,.3)}}
 @keyframes mpHalo{0%,100%{opacity:.35;transform:scale(.98)}50%{opacity:.85;transform:scale(1.04)}}
 @keyframes mpIcon{0%,100%{filter:drop-shadow(0 0 6px rgba(232,180,74,.45))}50%{filter:drop-shadow(0 0 16px rgba(255,214,110,.95))}}
@@ -7385,7 +7390,7 @@ body.book-open #libBanner{display:none}
   function mtile(id){
     var m = MTILE[id];
     return '<button class="lb-book lb-mapt" type="button" data-epmap="' + id + '" aria-label="' + esc(m.t + ': interactive network map, every tie with its source') + '">' +
-      '<div class="cv vd mp" style="--c:' + m.c + '" aria-hidden="true">' + (m.noflag ? '' : MFLAG) + '<span class="spots"><i></i><i></i><b></b><b></b></span><div class="in"><div class="ser">Network map</div><div class="vtag">Interactive</div><div class="rule"></div>' +
+      '<div class="cv vd mp" style="--c:' + m.c + '" aria-hidden="true">' + (m.noflag ? '' : MFLAG) + '<span class="spots"><u><svg viewBox="0 0 40 20" aria-hidden="true"><path d="M20 0v10" stroke="#1A1A20" stroke-width="3"/><path d="M8 14q12-6 24 0" fill="none" stroke="#1A1A20" stroke-width="3"/><rect x="5" y="15" width="30" height="4" rx="1.5" fill="#101014"/><path d="M7 15.6h26" stroke="#5A5A64" stroke-width=".8"/></svg></u><u><svg viewBox="0 0 40 20" aria-hidden="true"><path d="M20 0v10" stroke="#1A1A20" stroke-width="3"/><path d="M8 14q12-6 24 0" fill="none" stroke="#1A1A20" stroke-width="3"/><rect x="5" y="15" width="30" height="4" rx="1.5" fill="#101014"/><path d="M7 15.6h26" stroke="#5A5A64" stroke-width=".8"/></svg></u><span class="lt"><i></i><em><svg viewBox="0 0 40 48" aria-hidden="true"><defs><linearGradient id="lmB" x1="0" x2="1"><stop offset="0" stop-color="#16161B"/><stop offset=".45" stop-color="#5A5A64"/><stop offset=".6" stop-color="#2E2E36"/><stop offset="1" stop-color="#0E0E12"/></linearGradient><radialGradient id="lmL"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#FFF3C4"/><stop offset="1" stop-color="#F0B94A"/></radialGradient></defs><path d="M9 44h22l-2-4H11z" fill="#0E0E12"/><path d="M8 12h24l-3 30H11z" fill="url(#lmB)" stroke="#000" stroke-width=".6"/><g stroke="#000" stroke-opacity=".55" stroke-width=".9"><path d="M12.5 20h15M12.8 25h14.4M13.1 30h13.8M13.4 35h13.2"/></g><path d="M2 4l7 8M38 4l-7 8" stroke="#2A2A31" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="20" cy="12" rx="13" ry="3.6" fill="#3A3A42" stroke="#C9A24A" stroke-width=".9"/><ellipse cx="20" cy="11.6" rx="10.6" ry="2.6" fill="url(#lmL)"/><ellipse cx="20" cy="10" rx="16" ry="7" fill="#FFE9A8" opacity=".35"/></svg></em></span><span class="lt"><i></i><em><svg viewBox="0 0 40 48" aria-hidden="true"><defs><linearGradient id="lmB" x1="0" x2="1"><stop offset="0" stop-color="#16161B"/><stop offset=".45" stop-color="#5A5A64"/><stop offset=".6" stop-color="#2E2E36"/><stop offset="1" stop-color="#0E0E12"/></linearGradient><radialGradient id="lmL"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#FFF3C4"/><stop offset="1" stop-color="#F0B94A"/></radialGradient></defs><path d="M9 44h22l-2-4H11z" fill="#0E0E12"/><path d="M8 12h24l-3 30H11z" fill="url(#lmB)" stroke="#000" stroke-width=".6"/><g stroke="#000" stroke-opacity=".55" stroke-width=".9"><path d="M12.5 20h15M12.8 25h14.4M13.1 30h13.8M13.4 35h13.2"/></g><path d="M2 4l7 8M38 4l-7 8" stroke="#2A2A31" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="20" cy="12" rx="13" ry="3.6" fill="#3A3A42" stroke="#C9A24A" stroke-width=".9"/><ellipse cx="20" cy="11.6" rx="10.6" ry="2.6" fill="url(#lmL)"/><ellipse cx="20" cy="10" rx="16" ry="7" fill="#FFE9A8" opacity=".35"/></svg></em></span></span><div class="in"><div class="ser">Network map</div><div class="vtag">Interactive</div><div class="rule"></div>' +
       '<div class="tt">' + esc(m.t) + '</div><div class="st">' + esc(m.s) + '</div>' +
       '<svg class="vp" viewBox="0 0 64 64" focusable="false"><g stroke="#E8B44A" stroke-width="1.6" fill="none" opacity=".8"><path d="M32 32L12 14M32 32L52 12M32 32L54 42M32 32L16 52M32 32L38 56M12 14L52 12M54 42L38 56M12 14L6 34L16 52"/></g><g fill="#E8B44A"><circle cx="32" cy="32" r="6"/><circle cx="12" cy="14" r="3.6"/><circle cx="52" cy="12" r="3.6"/><circle cx="54" cy="42" r="3.6"/><circle cx="16" cy="52" r="3.6"/><circle cx="38" cy="56" r="3.6"/><circle cx="6" cy="34" r="2.8"/></g>' + m.ring + '</svg>' +
       '<div class="vol">Open the map \u2192</div></div></div></button>';
