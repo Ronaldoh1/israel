@@ -5898,6 +5898,15 @@ body.book-open .fab-wrap,body.book-open #sheetToggle,body.book-open #uxToast{dis
 .cv.vd.mp .mflag{position:absolute;z-index:2;top:4.5cqw;right:5cqw;width:17cqw;height:12.4cqw;border-radius:1px;box-shadow:0 0 0 1px rgba(255,255,255,.4),0 2px 6px rgba(0,0,0,.45)}
 .cv.vd.mp .vtag{align-self:center;background:#E8B44A;color:#1A1030}
 .cv.vd.mp .vp{filter:drop-shadow(0 0 8px rgba(232,180,74,.45))}
+.lb-mapt{position:relative}
+.lb-mapt .cv.mp{animation:mpGlow 2.8s ease-in-out infinite}
+.lb-mapt .cv.mp::before{content:'';position:absolute;inset:-6px;border-radius:inherit;pointer-events:none;z-index:-1;background:radial-gradient(closest-side,rgba(255,206,92,.55),rgba(255,206,92,0) 100%);filter:blur(10px);opacity:.6;animation:mpHalo 2.8s ease-in-out infinite}
+.lb-mapt .cv.mp .vp{animation:mpIcon 2.8s ease-in-out infinite}
+.lb-mapt:hover .cv.mp,.lb-mapt:focus-visible .cv.mp{animation-duration:1.4s}
+@keyframes mpGlow{0%,100%{box-shadow:0 0 0 1.5px rgba(255,206,92,.55),0 0 14px 2px rgba(255,190,70,.35),0 6px 14px rgba(0,0,0,.3)}50%{box-shadow:0 0 0 2px rgba(255,220,120,.95),0 0 30px 8px rgba(255,190,70,.6),0 6px 14px rgba(0,0,0,.3)}}
+@keyframes mpHalo{0%,100%{opacity:.35;transform:scale(.98)}50%{opacity:.85;transform:scale(1.04)}}
+@keyframes mpIcon{0%,100%{filter:drop-shadow(0 0 6px rgba(232,180,74,.45))}50%{filter:drop-shadow(0 0 16px rgba(255,214,110,.95))}}
+@media (prefers-reduced-motion:reduce){.lb-mapt .cv.mp,.lb-mapt .cv.mp::before,.lb-mapt .cv.mp .vp{animation:none}.lb-mapt .cv.mp{box-shadow:0 0 0 2px rgba(255,214,110,.9),0 0 22px 6px rgba(255,190,70,.5)}}
 .lb-metas .lb-mlink{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
 .cv.vd::before{content:'';position:absolute;left:3.2cqw;top:6cqw;bottom:6cqw;width:3cqw;border-radius:1px;background:repeating-linear-gradient(to bottom,rgba(245,216,142,.55) 0 3.2cqw,transparent 3.2cqw 6.4cqw);opacity:.75}
 .cv.vd .vp{display:block;width:44%;aspect-ratio:1;margin:auto 0 6%;flex:none;filter:drop-shadow(0 0 7px rgba(245,216,142,.38));transition:transform .25s}
