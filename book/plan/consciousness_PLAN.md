@@ -177,3 +177,6 @@ Book VIII, **The Heretics**, WRITTEN (8 parts, 10 sections, ~5,400 words; files 
 - 2026-11-23: Book X The Inquisitions (iq1–iq8, prefix iq checked free; iq.json 3 keys, reuses vt28/vt29/vt30/vt34/vt14 keys) — v127.
 - 2026-11-23: Book XI The Old Gods (og1–og8, prefix og checked free; og.json 4 keys, reuses ts13/vt21/vt26/vt33–vt36 keys); subtitle 'Sun gods, the goddess and the mystery schools' — v128.
 - 2026-11-23: Book XII The Forbidden Arts (fa1–fa8, prefix fa checked free; fa.json 9 keys, reuses vt30/vt33/vt34/ht/og keys); reach counter moved to the top of the library — v130.
+
+## Update, 25 Nov 2026
+Book XIII, **The Serpent and the Spine** (booklet), WRITTEN (6 parts, 6 sections, ~4,000 words; files book/part1/sp1–sp6 and sp_intro.html, sources book/research/sp.json, 22 new keys). Finding: the 'sacred secretion' teaching is first documented in George W. Carey, The Anti-Christ (1918), where the seed rises by the vagus nerve, not the spine. Bundle v144. Next: The Observer.
