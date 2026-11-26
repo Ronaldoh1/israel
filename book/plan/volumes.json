@@ -843,15 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch20",
-   "title": "Aid and Arms",
-   "subtitle": "What America Pays, What It Buys, and What About America",
-   "merge": [
-    "ch17"
-   ],
-   "priority": 3
-  },
-  {
    "host": "ch57",
    "title": "Washington",
    "subtitle": "The Trump and Kushner Families, the Department of War and the State Department",
@@ -3215,6 +3206,73 @@
    {
     "id": "ny11",
     "label": "Part Eleven",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "aid": {
+  "slot": "ch20",
+  "absorbs": [
+   "ch17"
+  ],
+  "title": "Aid and Arms",
+  "subtitle": "What America Pays, What It Buys, and What About America",
+  "span": "1948–2026",
+  "intro": "aa_intro.html",
+  "parts_total": 9,
+  "stages": [
+   {
+    "id": "aa1",
+    "label": "Part One",
+    "title": "How It Began",
+    "span": "1948–2016"
+   },
+   {
+    "id": "aa2",
+    "label": "Part Two",
+    "title": "The Terms",
+    "span": ""
+   },
+   {
+    "id": "aa3",
+    "label": "Part Three",
+    "title": "Where the Money Goes",
+    "span": ""
+   },
+   {
+    "id": "aa4",
+    "label": "Part Four",
+    "title": "The War Bill",
+    "span": "2023–2025"
+   },
+   {
+    "id": "aa5",
+    "label": "Part Five",
+    "title": "The Laws on the Books",
+    "span": "2024–2025"
+   },
+   {
+    "id": "aa6",
+    "label": "Part Six",
+    "title": "Aid After Every War",
+    "span": "1973–2025"
+   },
+   {
+    "id": "aa7",
+    "label": "Part Seven",
+    "title": "What About America?",
+    "span": ""
+   },
+   {
+    "id": "aa8",
+    "label": "Part Eight",
+    "title": "After 2028",
+    "span": "2026"
+   },
+   {
+    "id": "aa9",
+    "label": "Part Nine",
     "title": "Settled, Contested and Open",
     "span": ""
    }
