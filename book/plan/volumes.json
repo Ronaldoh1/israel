@@ -843,16 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch06",
-   "title": "From 1967 to Oslo",
-   "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
-   "merge": [
-    "ch07",
-    "ch08"
-   ],
-   "priority": 7
-  },
-  {
    "host": "ch23",
    "title": "The Wider Region",
    "subtitle": "The Lay of the Land, the Gulf, the Accords and the Periphery",
@@ -3389,6 +3379,86 @@
    {
     "id": "iw10",
     "label": "Part Ten",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "oslo": {
+  "slot": "ch06",
+  "absorbs": [
+   "ch07",
+   "ch08"
+  ],
+  "title": "From 1967 to Oslo",
+  "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
+  "span": "1967–2025",
+  "intro": "os_intro.html",
+  "parts_total": 11,
+  "stages": [
+   {
+    "id": "os1",
+    "label": "Part One",
+    "title": "Six Days",
+    "span": "1967"
+   },
+   {
+    "id": "os2",
+    "label": "Part Two",
+    "title": "The Upheaval and the Peace",
+    "span": "1973–1982"
+   },
+   {
+    "id": "os3",
+    "label": "Part Three",
+    "title": "The Pretoria Alliance",
+    "span": "1975–1994"
+   },
+   {
+    "id": "os4",
+    "label": "Part Four",
+    "title": "Lebanon",
+    "span": "1982–2000"
+   },
+   {
+    "id": "os5",
+    "label": "Part Five",
+    "title": "AWACS",
+    "span": "1981"
+   },
+   {
+    "id": "os6",
+    "label": "Part Six",
+    "title": "The First Intifada and Madrid",
+    "span": "1987–1991"
+   },
+   {
+    "id": "os7",
+    "label": "Part Seven",
+    "title": "Oslo",
+    "span": "1993–1995"
+   },
+   {
+    "id": "os8",
+    "label": "Part Eight",
+    "title": "Camp David, 2000",
+    "span": "2000–2001"
+   },
+   {
+    "id": "os9",
+    "label": "Part Nine",
+    "title": "The Second Intifada and the Withdrawal",
+    "span": "2000–2007"
+   },
+   {
+    "id": "os10",
+    "label": "Part Ten",
+    "title": "Two States, After Oslo",
+    "span": "2016–2025"
+   },
+   {
+    "id": "os11",
+    "label": "Part Eleven",
     "title": "Settled, Contested and Open",
     "span": ""
    }
