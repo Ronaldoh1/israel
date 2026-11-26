@@ -175,9 +175,9 @@ books = [
   {'id': 'baseline', 'vol': 1, 'status': 'ready', 'title': 'The Baseline', 'subtitle': 'The Ground Before the Flag', 'span': 'Antiquity to today', 'eraKey': -3000, 'unit': 'chapters',
    'intro': read(os.path.join(ROOT, 'book', 'part1', 'ch01', '_intro.html')), 'chapters': base_chapters, 'first': ch01[0]},
   {'id': 'road1948', 'vol': 2, 'status': 'ready', 'title': 'The Road to 1948', 'subtitle': 'The Stages That Built a State', 'span': '1694–1950s', 'unit': 'stages',
-   'intro': '', 'chapters': road, 'first': 'bc_s01'},
+   'intro': read(os.path.join(ROOT, 'book', 'part1', 'rd_intro.html')), 'chapters': road, 'first': 'bc_s01'},
   {'id': 'coldwar', 'vol': 3, 'status': 'ready', 'title': cw['title'], 'subtitle': cw['subtitle'], 'span': '1949–1967', 'unit': 'stages',
-   'intro': '', 'chapters': cold, 'first': cold[0]['sections'][0]['s'] if cold[0]['sections'] else 'cw1'},
+   'intro': read(os.path.join(ROOT, 'book', 'part1', 'cw_intro.html')), 'chapters': cold, 'first': cold[0]['sections'][0]['s'] if cold[0]['sections'] else 'cw1'},
 ]
 if divine:
     books.append({'id': 'divine', 'vol': 4, 'status': 'ready', 'title': dv['title'], 'subtitle': dv['subtitle'], 'span': dv['span'], 'unit': 'parts', 'total': dv.get('parts_total'),
