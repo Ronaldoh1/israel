@@ -843,20 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch18",
-   "title": "The Information War",
-   "subtitle": "Media, Platforms, Campuses, the IHRA Definition, Project Esther and the Capability Stack",
-   "merge": [
-    "ch56",
-    "ch28",
-    "ch36",
-    "ch37",
-    "ch44",
-    "ch52"
-   ],
-   "priority": 5
-  },
-  {
    "host": "ch06",
    "title": "From 1967 to Oslo",
    "subtitle": "Six Days, Two Fronts, the Interregnum and the Machine, 1967–2000",
@@ -3325,6 +3311,84 @@
    {
     "id": "wa8",
     "label": "Part Eight",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "infowar": {
+  "slot": "ch18",
+  "absorbs": [
+   "ch56",
+   "ch28",
+   "ch36",
+   "ch37",
+   "ch44",
+   "ch52"
+  ],
+  "title": "The Information War",
+  "subtitle": "Media, Platforms, Campuses, the IHRA Definition, Project Esther and the Capability Stack",
+  "span": "1983–2026",
+  "intro": "iw_intro.html",
+  "parts_total": 10,
+  "stages": [
+   {
+    "id": "iw1",
+    "label": "Part One",
+    "title": "Who Owns the News",
+    "span": "1983–2025"
+   },
+   {
+    "id": "iw2",
+    "label": "Part Two",
+    "title": "The Coverage of the War",
+    "span": "2023–2026"
+   },
+   {
+    "id": "iw3",
+    "label": "Part Three",
+    "title": "The Platforms",
+    "span": "2015–2026"
+   },
+   {
+    "id": "iw4",
+    "label": "Part Four",
+    "title": "The Paid Campaign",
+    "span": "2017–2026"
+   },
+   {
+    "id": "iw5",
+    "label": "Part Five",
+    "title": "The Voices on the Right",
+    "span": "2012–2026"
+   },
+   {
+    "id": "iw6",
+    "label": "Part Six",
+    "title": "The Definition",
+    "span": "2016–2025"
+   },
+   {
+    "id": "iw7",
+    "label": "Part Seven",
+    "title": "Project Esther",
+    "span": "2024–2026"
+   },
+   {
+    "id": "iw8",
+    "label": "Part Eight",
+    "title": "The Campuses and the Visas",
+    "span": "2025–2026"
+   },
+   {
+    "id": "iw9",
+    "label": "Part Nine",
+    "title": "The Tools",
+    "span": "2019–2025"
+   },
+   {
+    "id": "iw10",
+    "label": "Part Ten",
     "title": "Settled, Contested and Open",
     "span": ""
    }
