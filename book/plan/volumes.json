@@ -843,16 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch57",
-   "title": "Washington",
-   "subtitle": "The Trump and Kushner Families, the Department of War and the State Department",
-   "merge": [
-    "ch58",
-    "ch59"
-   ],
-   "priority": 4
-  },
-  {
    "host": "ch18",
    "title": "The Information War",
    "subtitle": "Media, Platforms, Campuses, the IHRA Definition, Project Esther and the Capability Stack",
@@ -3273,6 +3263,68 @@
    {
     "id": "aa9",
     "label": "Part Nine",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "washington": {
+  "slot": "ch57",
+  "absorbs": [
+   "ch58",
+   "ch59"
+  ],
+  "title": "Washington",
+  "subtitle": "The Trump and Kushner Families, the Department of War and the State Department",
+  "span": "2017–2026",
+  "intro": "wa_intro.html",
+  "parts_total": 8,
+  "stages": [
+   {
+    "id": "wa1",
+    "label": "Part One",
+    "title": "The Families",
+    "span": "1973–2026"
+   },
+   {
+    "id": "wa2",
+    "label": "Part Two",
+    "title": "The First Term",
+    "span": "2017–2021"
+   },
+   {
+    "id": "wa3",
+    "label": "Part Three",
+    "title": "The Gulf Money",
+    "span": "2021–2026"
+   },
+   {
+    "id": "wa4",
+    "label": "Part Four",
+    "title": "Gaza as Property",
+    "span": "2024–2026"
+   },
+   {
+    "id": "wa5",
+    "label": "Part Five",
+    "title": "The Secretary of State",
+    "span": "1971–2026"
+   },
+   {
+    "id": "wa6",
+    "label": "Part Six",
+    "title": "The Department of War",
+    "span": "2017–2026"
+   },
+   {
+    "id": "wa7",
+    "label": "Part Seven",
+    "title": "The Iran War, from Washington",
+    "span": "2018–2026"
+   },
+   {
+    "id": "wa8",
+    "label": "Part Eight",
     "title": "Settled, Contested and Open",
     "span": ""
    }
