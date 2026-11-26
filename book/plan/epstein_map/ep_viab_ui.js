@@ -131,6 +131,7 @@ document.head.insertAdjacentHTML('beforeend', `<style>
 .ip-btn.ip-next{border:0;padding:0 22px;color:var(--on-accent);background:linear-gradient(135deg,var(--ia),color-mix(in srgb,var(--ia) 62%,var(--ink)));box-shadow:0 8px 22px -8px var(--ia)}
 .ip-btn.ip-next:hover{transform:translateY(-1px);background:linear-gradient(135deg,var(--ia),color-mix(in srgb,var(--ia) 62%,var(--ink)))}
 .ip-btn:focus-visible,.ip-dots button:focus-visible{outline:2px solid var(--ia);outline-offset:2px}
+@media (max-width:820px){.ip-s td,.vread td,.vcard td{white-space:normal!important;overflow-wrap:anywhere}.ip-s tr,.vread tr{display:flex;flex-direction:column}.ip-s td:last-child,.vread td:last-child{text-align:left;border-top:0;padding-top:0}}
 @media (max-width:820px){.vmodal.ipm{align-items:flex-end;padding:0}.vcard.ivc{width:100%;max-height:93dvh;border-radius:26px 26px 0 0}.vcard.ivc .ip-t{font-size:1.5rem}.vcard.ivc .ip-cover .ip-t{font-size:1.75rem}.ip-toc{grid-template-columns:1fr}.ip-wm{font-size:120px}.ip-body{padding:14px 18px 18px}.ip-cnt{display:none}.ip-btn{min-height:44px}}
 @media (prefers-reduced-motion:reduce){.ip-page.inr,.ip-page.inl{animation:none}.ip-prog i::after,.vcard.ivc{transition:none}}
 </style>`);
