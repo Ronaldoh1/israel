@@ -856,16 +856,6 @@
     "ch69"
    ],
    "priority": 8
-  },
-  {
-   "host": "ch51",
-   "title": "Street Questions",
-   "subtitle": "Viral Claims, the Comment Section and the Ledger of the Machine",
-   "merge": [
-    "ch70",
-    "ch49"
-   ],
-   "priority": 10
   }
  ],
  "greater": {
@@ -3459,6 +3449,80 @@
    {
     "id": "os11",
     "label": "Part Eleven",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "street": {
+  "slot": "ch51",
+  "absorbs": [
+   "ch70",
+   "ch49"
+  ],
+  "title": "Street Questions",
+  "subtitle": "Viral Claims, the Comment Section and the Ledger of the Machine",
+  "span": "1843–2026",
+  "intro": "sq_intro.html",
+  "parts_total": 10,
+  "stages": [
+   {
+    "id": "sq1",
+    "label": "Part One",
+    "title": "How a Viral Claim Works",
+    "span": ""
+   },
+   {
+    "id": "sq2",
+    "label": "Part Two",
+    "title": "The Land and the People",
+    "span": "1843–2022"
+   },
+   {
+    "id": "sq3",
+    "label": "Part Three",
+    "title": "The Neighbours",
+    "span": "1954–2026"
+   },
+   {
+    "id": "sq4",
+    "label": "Part Four",
+    "title": "The Armed Movements",
+    "span": "1931–1987"
+   },
+   {
+    "id": "sq5",
+    "label": "Part Five",
+    "title": "The Laws of War",
+    "span": "2004–2026"
+   },
+   {
+    "id": "sq6",
+    "label": "Part Six",
+    "title": "The Institutions",
+    "span": "1980–2025"
+   },
+   {
+    "id": "sq7",
+    "label": "Part Seven",
+    "title": "The Authority",
+    "span": "1995–2026"
+   },
+   {
+    "id": "sq8",
+    "label": "Part Eight",
+    "title": "Who Says What",
+    "span": "2024–2025"
+   },
+   {
+    "id": "sq9",
+    "label": "Part Nine",
+    "title": "The Ledger",
+    "span": "1901–2026"
+   },
+   {
+    "id": "sq10",
+    "label": "Part Ten",
     "title": "Settled, Contested and Open",
     "span": ""
    }
