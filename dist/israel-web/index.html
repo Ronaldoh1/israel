@@ -7079,8 +7079,8 @@ body.book-open #libBanner{display:none}
       h += '<button class="bk-next" type="button" data-resume="1"><small>Continue where you stopped</small>' + esc(c.label) + ': ' + esc(c.title) + (sh ? '<br><span style="font-weight:400;font-size:.8em">' + esc(plain(sh)) + '</span>' : '') + ' ›</button>' +
         '<button class="alt" type="button" data-go-id="' + f.id + '">Start from the beginning</button>';
     } else h += '<button class="bk-next" type="button" data-go-id="' + f.id + '"><small>Start reading</small>' + esc(f.t) + ' ›</button>';
-    if(!low) h += '<button class="alt" type="button" data-go-id="contents">See all ' + BOOK.chapters.length + ' ' + (BOOK.unit === 'stages' ? 'stages' : BOOK.unit === 'chapters' ? 'chapters' : 'parts') + '</button>' +
-      '<p class="how">Each part ends with a button to the next. The bar at the bottom moves between parts: ‹ back, › forward, the middle to jump.</p>';
+    if(!low) h += '<button class="alt" type="button" data-go-id="contents">Contents</button>' +
+      '<p class="how">' + (paged() ? 'Swipe or tap the right edge to turn the page.' : 'Keep scrolling: the whole book runs on, part after part.') + '</p>';
     return h + '</div>';
   }
   function frontMatter(){
@@ -7098,7 +7098,7 @@ body.book-open #libBanner{display:none}
       BOOK.chapters.map(function(c, k){ var d = chDesc(c);
         return '<li><small class="cl">' + esc(c.label) + ' · ' + esc(c.span) + '</small><button class="r" type="button" data-ch="' + k + '"><span class="t">' + esc(c.title) + '</span><span class="ld"></span><span class="pg">' + P.ch[k].start + '</span></button>' + (d ? '<p class="d">' + esc(d) + '</p>' : '') +
           '<ol>' + c.sections.map(function(x){ return '<li><button class="r" type="button" data-go="' + esc(x.s) + '"><span class="t">' + esc(plain(x.h)) + '</span><span class="ld"></span><span class="pg">' + P.sec[x.s].start + '</span></button></li>'; }).join('') + '</ol></li>'; }).join('') +
-      '</ol><p class="d" style="margin-top:1em">Page numbers count a printed page of about 300 words, so they are the same on every screen.</p>' + startCard(true) + '</section>';
+      '</ol><p class="d" style="margin-top:1em">Page numbers count a printed page of about 300 words, so they are the same on every screen.</p></section>';
     
     var FK = [['fk-flow','Process','How a decision or mechanism moved, step by step.'],['fk-money','Money trail','Five steps, one colour each: where the money came from, how it moved, what multiplied it, who gained, and who bore the cost.'],['fk-time','Timeline','Dated events in order.'],['fk-compare','Comparison','Two or more accounts, documents or periods side by side.'],['fk-tree','Power structure','Who sat above whom.'],['fk-stats','Key figures','The numbers a section turns on.'],['fk-arch','System architecture','How the technical systems are built and wired: layers of components, with each link marked documented (solid), reported (dashed), possible but not shown connected (dotted), or blocked by law or a court (red, crossed).'],['fk-net','Network','Who was connected, and how. Box colours show the kind of party, line colours the kind of tie; dashed means disputed.']];
     h += '<section class="bk-fm bk-leaf" id="bk-figkey" aria-label="How to read this book"><h2>How to read this book</h2><p>' + esc(LIB.note || '') + '</p><p>Every figure carries a coloured tag that says what kind of figure it is, and a line of sources underneath. Each network diagram also has a plain-words reading under it: open “Read this diagram in words.”</p><ul class="bk-fkey">' +
@@ -7116,7 +7116,7 @@ body.book-open #libBanner{display:none}
   var curCh = -1, notesMap = {}, noteList = [];
   function cite(key){
     if(!notesMap[key]){ noteList.push(key); notesMap[key] = noteList.length; }
-    var n = notesMap[key]; return '<a class="bk-n" href="#bkn-' + n + '" data-k="' + esc(key) + '" aria-label="Note ' + n + '">' + n + '</a>';
+    var n = notesMap[key]; return '<a class="bk-n" href="#bkn-' + buildCh + '-' + n + '" data-k="' + esc(key) + '" aria-label="Note ' + n + '">' + n + '</a>';
   }
   function prose(html){
     return String(html || '')
@@ -7216,8 +7216,9 @@ body.book-open #libBanner{display:none}
       (nb && nb.status === 'ready' ? '<button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: ' + VL(nb) + '</small>' + esc(nb.title) + ' ›</button><br>' : '') +
       '<button class="alt" type="button" data-lib="1">Back to the library</button><p class="sub">The sources for this ' + unit + ' and the bibliography follow below.</p></div>';
   }
-  function render(k, target){
-    var c = BOOK.chapters[k]; if(!c) return; curCh = k; notesMap = {}; noteList = [];
+  var built = null, buildCh = 0;
+  function chapterHtml(k){
+    var c = BOOK.chapters[k]; buildCh = k; notesMap = {}; noteList = [];
     var h = '';
     if(k === 0) h += frontMatter() +
       (BOOK.intro ? '<div class="bk-open" id="bk-intro"><div class="lab">Introduction</div></div><div class="bk-intro">' + prose(BOOK.intro).replace('<p>', '<p class="first bk-drop">') + '</div><div class="bk-fl" aria-hidden="true">❦</div>' : '');
@@ -7239,32 +7240,41 @@ body.book-open #libBanner{display:none}
       h += '<div class="bk-acts">' + acts.join('') + '</div></section>';
     });
     if(c.outro) h += '<div class="bk-fl" aria-hidden="true">❦</div><div class="bk-out"><h3>' + esc(c.outroTitle || 'In sum') + '</h3>' + prose(c.outro).replace('<p>', '<p class="first">') + '</div>';
-    h += keepCard(k);
     h += '<section class="bk-notes bk-pgbreak" aria-label="Notes"><h3>Notes</h3><ol>' + noteList.map(function(key, i){ var u = CIT[key], l = srcLabel(key);
-      return '<li id="bkn-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
-    var nx = BOOK.chapters[k + 1], nb = BOOKS[curBook + 1]; if(nb && (nb.ser || '') !== (BOOK.ser || '')) nb = null;
+      return '<li id="bkn-' + k + '-' + (i + 1) + '">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(l) + '</a>' : esc(l)) + '</li>'; }).join('') + '</ol></section>';
+    return h;
+  }
+  function build(){
+    var h = '';
+    BOOK.chapters.forEach(function(c, k){ h += '<div class="bk-chap" id="bk-ch-' + k + '" data-ch="' + k + '">' + chapterHtml(k) + '</div>'; });
+    var nx = null, nb = BOOKS[curBook + 1]; if(nb && (nb.ser || '') !== (BOOK.ser || '')) nb = null;
     if(!nx) h += bibliography();
-    if(nx) h += '<button class="bk-next" type="button" data-ch="' + (k + 1) + '"><small>Continue to ' + esc(nx.label) + '</small>' + esc(nx.title) + ' ›</button>';
-    else if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: ' + (nb.ser && !BOOK.ser ? esc(nb.ser) + ', ' : '') + VL(nb) + '</small>' + esc(nb.title) + '</button>';
+    if(nb && nb.status === 'ready') h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.</p><button class="bk-next" type="button" data-book="' + (curBook + 1) + '"><small>Next: ' + (nb.ser && !BOOK.ser ? esc(nb.ser) + ', ' : '') + VL(nb) + '</small>' + esc(nb.title) + '</button>';
     else h += '<p style="text-align:center;color:var(--muted);margin-top:3em;font-style:italic;text-indent:0">End of ' + VL(BOOK) + '.' + (BOOK.ser ? '' : ' The volumes after it are being written; the simulation carries the full record in the meantime.') + '</p>' +
       '<button class="bk-next" type="button" data-lib="1"><small>Back to</small>The library</button>';
     page.innerHTML = h;
     fillCharts(page);
+    [].forEach.call(page.querySelectorAll('.bk-chap'), function(box){ var k = +box.getAttribute('data-ch'), c = BOOK.chapters[k];
     /* number every figure in reading order; wrap wide tables so they scroll instead of overflowing */
-    [].forEach.call(page.querySelectorAll('figure'), function(f, i){
+    [].forEach.call(box.querySelectorAll('figure'), function(f, i){
       var cap = f.querySelector('figcaption'); if(!cap) return; var cn = chN(c.label), lab = 'Figure ' + (cn != null ? cn : (/prelude/i.test(c.label) ? 0 : k + 1)) + '.' + (i + 1) + '.';
       var kc = Object.keys(KN).filter(function(x){ return f.classList.contains(x); })[0], chip = (f.getAttribute('data-kind') || kc) ? '<span class="fkind">' + esc(f.getAttribute('data-kind') || KN[kc]) + '</span>' : '';
       var fn = cap.querySelector('.fnum'); if(fn){ fn.textContent = lab; if(chip) fn.insertAdjacentHTML('afterend', ' ' + chip); } else cap.insertAdjacentHTML('afterbegin', '<span class="fnum">' + lab + '</span>' + chip); });
+    });
     [].forEach.call(page.querySelectorAll('figure.fig-arch'), function(f){ if(f.querySelector('.arch-key')) return; var has = function(s){ return !!f.querySelector(s); }, k = '<em>Documented link</em>' + (has('.lk.rep') ? '<em class="rep">Reported link</em>' : '') + (has('.lk.pos,.nd.pos') ? '<em class="pos">Possible join, not shown connected</em>' : '') + (has('.lk.none') ? '<em class="none">Blocked by law or a court</em>' : '') + (has('.nd.hub') ? '<em class="hub">Hub that other systems feed</em>' : ''); var src = f.querySelector('.fig-src'), d = document.createElement('p'); d.className = 'arch-key'; d.innerHTML = k; if(src) f.insertBefore(d, src); else f.appendChild(d); });
     [].forEach.call(page.querySelectorAll('.fig-compare table'), function(t){ if(t.parentNode.className !== 'tw'){ var w = document.createElement('div'); w.className = 'tw'; t.parentNode.insertBefore(w, t); w.appendChild(t); }
       /* tables with 4+ columns become labelled cards on phones: each cell carries its column heading */
       var hs = [].map.call(t.querySelectorAll('thead th'), function(th){ return th.textContent.trim(); });
       if(hs.length >= 4){ t.classList.add('stackable'); [].forEach.call(t.querySelectorAll('tbody tr'), function(tr){ [].forEach.call(tr.children, function(td, j){ if(hs[j]) td.setAttribute('data-h', hs[j]); }); }); } });
-    $('bkHeadT').textContent = c.label + ' · ' + c.title;
+  }
+  function render(k, target){
+    var c = BOOK.chapters[k]; if(!c) return;
+    if(built !== BOOK.id){ build(); built = BOOK.id; }
+    curCh = k; $('bkHeadT').textContent = c.label + ' · ' + c.title;
     layout();
-    if(target === '__end'){ if(paged()) showPage(pg.total - 1, true); else scroller.scrollTop = scroller.scrollHeight; return; }
+    if(target === '__end'){ var nb2 = document.getElementById('bk-ch-' + (k + 1)); if(paged()){ var b0 = page.getBoundingClientRect().left; showPage(nb2 ? Math.floor((nb2.getBoundingClientRect().left - b0 + 4) / pg.w) - 1 : pg.total - 1, true); } else scroller.scrollTop = nb2 ? nb2.offsetTop - scroller.clientHeight : scroller.scrollHeight; return; }
     if(target && jumpTo(target, false)) return;
-    if(paged()) showPage(0, true); else scroller.scrollTop = 0;
+    if(k === 0){ if(paged()) showPage(0, true); else scroller.scrollTop = 0; } else jumpTo('top-' + c.id, false);
   }
 
   /* ---------- page by page: the chapter is laid out in columns one screen wide; turning a page moves one screen ---------- */
@@ -7280,6 +7290,7 @@ body.book-open #libBanner{display:none}
     view.style.setProperty('--pgH', H + 'px'); view.style.setProperty('--pgIn', (H - top - bot) + 'px');
     pg.w = W; scroller.scrollLeft = 0; var base = page.getBoundingClientRect().left, last = page.lastElementChild, right = last ? last.getBoundingClientRect().right - base : W;
     pg.total = Math.max(1, Math.ceil((right - 4) / W));
+    pg.chs = [].map.call(page.querySelectorAll('.bk-chap'), function(el){ return Math.max(0, Math.floor((el.getBoundingClientRect().left - base + 4) / W)); });
     pg.secs = [].map.call(page.querySelectorAll('.bk-sec'), function(el){ return {s:el.getAttribute('data-s'), p:Math.max(0, Math.floor((el.getBoundingClientRect().left - base + 4) / W))}; });
   }
   function showPage(n, instant){
@@ -7293,8 +7304,8 @@ body.book-open #libBanner{display:none}
   function turn(d){
     if(!paged() || sheet.classList.contains('on')) return;
     var n = pg.cur + d;
-    if(n >= pg.total){ if(BOOK.chapters[curCh + 1]){ render(curCh + 1); onScroll(); } else toast('End of the volume'); }
-    else if(n < 0){ if(curCh > 0){ render(curCh - 1, '__end'); onScroll(); } }
+    if(n >= pg.total){ toast('End of the volume'); }
+    else if(n < 0){ }
     else showPage(n);
   }
   function jumpTo(sid, smooth){
@@ -7314,7 +7325,7 @@ body.book-open #libBanner{display:none}
   function barInfo(frac, at){
     var P = paginate(BOOK), ch = BOOK.chapters[curCh]; if(!ch) return;
     var bp = (curSec && P.sec[curSec]) ? P.sec[curSec].start + Math.min(P.sec[curSec].len - 1, Math.floor(frac * P.sec[curSec].len)) : P.ch[curCh].start;
-    var unit = BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter', left = paged() ? Math.max(0, pg.total - 1 - at) : null;
+    var unit = BOOK.unit === 'stages' ? 'stage' : BOOK.unit === 'parts' ? 'part' : 'chapter', left = paged() ? Math.max(0, ((pg.chs && pg.chs[curCh + 1] != null) ? pg.chs[curCh + 1] : pg.total) - 1 - at) : null;
     $('bkMidT').textContent = ch.label + ' · ' + ch.title;
     $('bkMidS').textContent = left == null ? 'Page ' + bp + ' of ' + P.total : 'p. ' + bp + ' · ' + (left ? left + ' left in ' + unit : 'end of ' + unit);
     $('bkMidS').title = 'Page ' + bp + ' of ' + P.total + (left == null ? '' : ', ' + left + ' screen pages left in this ' + unit);
@@ -7337,30 +7348,34 @@ body.book-open #libBanner{display:none}
   /* ---------- where the reader is ---------- */
   var curSec = null, saveT = null, urlT = null;
   function onScroll(){
-    var ch = BOOK.chapters[curCh]; if(!ch) return;
+    if(!BOOK.chapters[curCh]) return;
     var P = paged(), st, frac = 0, prog, at = null, i;
     if(P){
       if(scroller.scrollLeft) scroller.scrollLeft = 0; st = pg.cur; var nx = null;
       for(i = 0; i < pg.secs.length; i++){ if(pg.secs[i].p <= st){ at = pg.secs[i]; nx = pg.secs[i + 1]; } else break; }
       curSec = at ? at.s : null; if(at) frac = (st - at.p) / Math.max(1, (nx ? nx.p : pg.total) - at.p);
+      if(pg.chs){ for(i = 0; i < pg.chs.length; i++){ if(pg.chs[i] <= st) curCh = i; else break; } }
       prog = pg.total > 1 ? st / (pg.total - 1) : 1;
     } else {
-      st = scroller.scrollTop; var max = scroller.scrollHeight - scroller.clientHeight, secs = page.querySelectorAll('.bk-sec'), el = null;
+      st = scroller.scrollTop; var max = scroller.scrollHeight - scroller.clientHeight, secs = page.querySelectorAll('.bk-sec'), el = null, chs = page.querySelectorAll('.bk-chap');
+      for(i = 0; i < chs.length; i++){ if(chs[i].offsetTop - 160 <= st) curCh = +chs[i].getAttribute('data-ch'); else break; }
       for(i = 0; i < secs.length; i++){ if(secs[i].offsetTop - 120 <= st) el = secs[i]; else break; }
       curSec = el ? el.getAttribute('data-s') : null; if(el) frac = Math.max(0, Math.min(.999, (st + 120 - el.offsetTop) / Math.max(1, el.offsetHeight)));
       prog = max > 0 ? st / max : 0;
       if(st > lastY + 12 && st > 200) view.classList.add('scrolling-down'); else if(st < lastY - 12) view.classList.remove('scrolling-down');
       lastY = st;
     }
+    var ch = BOOK.chapters[curCh];
+    if(curSec && !ch.sections.some(function(x){ return x.s === curSec; })){ curSec = null; frac = 0; }
     $('bkProg').style.width = (prog * 100) + '%';
     var hs = curSec && document.getElementById('bk-' + curSec), head = hs ? hs.querySelector('h2').textContent : '';
     $('bkHeadT').textContent = ch.label + ' · ' + (head || ch.title);
     barInfo(frac, st);
     if(curSec && view.classList.contains('on') && !view.classList.contains('lib')){ clearTimeout(urlT); urlT = setTimeout(function(){ if(curSec && !view.classList.contains('lib')) nav('#book=' + encodeURIComponent(curSec), false); }, 350); }
-    if(prog > .85){ var dn = ls('ots_book_done_' + BOOK.id) || {}; if(!dn[curCh]){ dn[curCh] = 1; ls('ots_book_done_' + BOOK.id, dn); } }
+    if(curCh > 0 || prog > .98){ var dn = ls('ots_book_done_' + BOOK.id) || {}, dk = prog > .98 ? curCh : curCh - 1; if(!dn[dk]){ dn[dk] = 1; ls('ots_book_done_' + BOOK.id, dn); } }
     inFront = !P && curCh === 0 && (function(){ var e = document.getElementById(BOOK.intro ? 'bk-intro' : 'bk-top-' + ch.id); return e ? st < e.offsetTop - 160 : false; })();
     if(inFront){ $('bkMidT').textContent = BOOK.title; $('bkMidS').textContent = 'Opening pages · tap to see the contents'; }
-    clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos_' + BOOK.id, {ch:curCh, sec:curSec, y:P ? null : st, pg:P ? st : null, mode:prefs.mode || 'scroll', at:Date.now()});
+    clearTimeout(saveT); saveT = setTimeout(function(){ ls('ots_book_pos_' + BOOK.id, {v:2, ch:curCh, sec:curSec, y:P ? null : st, pg:P ? st : null, mode:prefs.mode || 'scroll', at:Date.now()});
       var pr = ls('ots_book_progress') || {}, idx = 0, tot = 0; BOOK.chapters.forEach(function(c, k){ if(k < curCh) idx += c.sections.length; tot += c.sections.length; });
       var inCh = BOOK.chapters[curCh].sections.map(function(x){ return x.s; }).indexOf(curSec); idx += Math.max(0, inCh) + (curSec ? 1 : 0);
       pr[BOOK.id] = Math.max(pr[BOOK.id] || 0, Math.min(1, idx / Math.max(1, tot))); ls('ots_book_progress', pr); ls('ots_lib_last', {book:BOOK.id, at:Date.now()}); }, 500);
@@ -7371,15 +7386,13 @@ body.book-open #libBanner{display:none}
   function bookIndex(id){ for(var i = 0; i < BOOKS.length; i++) if(BOOKS[i].id === id) return i; return -1; }
   function openReader(bi, k, sec, resume){
     useBook(bi); hit('b:' + BOOK.id); var y = null;
-    if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; if((p.mode || 'scroll') === (prefs.mode || 'scroll')) y = paged() ? p.pg : p.y; else sec = p.sec; } } }
+    if(k == null){ k = 0; if(resume){ var p = ls('ots_book_pos_' + BOOK.id); if(p && BOOK.chapters[p.ch]){ k = p.ch; if(p.v === 2 && (p.mode || 'scroll') === (prefs.mode || 'scroll')) y = paged() ? p.pg : p.y; else sec = p.sec; } } }
     var wasLib = view.classList.contains('lib') && view.classList.contains('on'), prevBook = (location.hash || '').indexOf('#book=') === 0 ? where[decodeURIComponent(location.hash.slice(6))] || null : null;
     view.classList.remove('lib'); render(k, sec); if(y != null){ if(paged()) showPage(y, true); else scroller.scrollTop = y; } onScroll();
     var same = prevBook && prevBook[0] === bi;   /* moving within one book replaces the entry; a new book (from the shelf or a link) adds one, so Back returns */
     nav('#book=' + encodeURIComponent(curSec || BOOK.chapters[k].sections[0].s), !same, {ots:1, fromLib:wasLib});
-    var willTour = +(ls('ots_reader_tour_n') || 0) < 2;
-    if(willTour) setTimeout(function(){ readerTour(false); }, 450);
     var hk = 'ots_book_hint_' + (paged() ? 'pages2' : 'scroll');
-    if(!willTour && !ls(hk)){ ls(hk, 1); var hn = $('bkHint'); hn.textContent = paged() ? 'Drag the page, or tap its right edge, to turn it like a book' : 'Double-tap the page to hide or show the menu'; hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
+    if(false && !ls(hk)){ ls(hk, 1); var hn = $('bkHint'); hn.textContent = paged() ? 'Drag the page, or tap its right edge, to turn it like a book' : 'Double-tap the page to hide or show the menu'; hn.classList.add('on'); setTimeout(function(){ hn.classList.remove('on'); }, 4200); }
     setTimeout(function(){ try{ scroller.focus({preventScroll:true}); }catch(e){} }, 50);
   }
   function openBook(target){
@@ -7598,9 +7611,9 @@ body.book-open #libBanner{display:none}
   ];
   /* the reading walkthrough: the first two times a reader opens a book */
   var RT = [
-    {sel:'#bk-start', t:'Where to begin', b:'Tap Start reading to begin at the introduction. Once you have read some of a book, this button becomes Continue where you stopped.', scroll:1},
+    {sel:'#bk-start', t:'Where to begin', b:'Tap Start reading, or just keep scrolling. Once you have read some of a book, this button becomes Continue where you stopped.', scroll:1},
     {sel:'#bk-contents', t:'Or pick a part', b:'The contents list every part and its sections. Tap any of them to go straight there.', scroll:1},
-    {sel:'#bkBar', t:'Moving through the book', b:'‹ goes back a part and › goes on to the next. Tap the middle to see every part, which ones you have read, and where you are. Each part also ends with a Continue button.'},
+    {sel:'#bkBar', t:'Moving through the book', b:'The book runs on as one scroll, or page by page if you choose Turn pages. ‹ and › jump a whole part; tap the middle to see every part, which ones you have read, and where you are.'},
     {sel:'#bkFab', t:'Everything else', b:'The + button holds the full contents with every section, bookmarks, your notes and reading settings. Double-tap the page to hide or show these controls.', last:true}
   ];
   var ltI = 0, ltOn = false, TOUR = LT, tourMode = 'lib';
@@ -7721,7 +7734,7 @@ body.book-open #libBanner{display:none}
     else if(b.dataset.dash){ try{ window.openDashboard(b.dataset.dash); }catch(er){} }
     else if(b.dataset.sim){ closeBook(b.dataset.sim); }
     else if(b.dataset.resume){ var rp = savedPos(); if(rp){ render(rp.ch, rp.sec); onScroll(); } }
-    else if(b.dataset.ch){ if(b.closest('.bk-keep')) ls('ots_book_keep_n', +(ls('ots_book_keep_n') || 0) + 1); render(+b.dataset.ch); onScroll(); }
+    else if(b.dataset.ch){ render(+b.dataset.ch); onScroll(); }
     else if(b.dataset.book){ openReader(+b.dataset.book, 0); }
     else if(b.dataset.lib){ toLibrary(); }
     else if(b.dataset.close){ closeBook(null); }
