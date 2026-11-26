@@ -180,3 +180,7 @@ Book VIII, **The Heretics**, WRITTEN (8 parts, 10 sections, ~5,400 words; files 
 
 ## Update, 25 Nov 2026
 Book XIII, **The Serpent and the Spine** (booklet), WRITTEN (6 parts, 6 sections, ~4,000 words; files book/part1/sp1–sp6 and sp_intro.html, sources book/research/sp.json, 22 new keys). Finding: the 'sacred secretion' teaching is first documented in George W. Carey, The Anti-Christ (1918), where the seed rises by the vagus nerve, not the spine. Bundle v144. Next: The Observer.
+
+## Update 2026-11-25: Book XIV, The Observer, written (8 parts)
+Parts: observer effect read correctly (decoherence); consciousness causes collapse (von Neumann 1932, London–Bauer 1939, Wigner's retreat 1982, 2/33 poll 2011); delayed choice and Bell/Nobel 2022; the hard problem (Chalmers 1994–95, PhilPapers 2020 62.4/29.7); theories tested (Cogitate, Nature 1 May 2025; 124-scholar IIT letter Sep 2023; Orch-OR vs Tegmark); Monroe, Hemi-Sync and McDonnell's 1983 Gateway assessment (declassified 2003; not a finding); AWARE 2014 and AWARE II 2023; Inner Reading (marked): the observer as the one who sees; the motto read as metaphor, not law.
+The Consciousness shelf is complete: 14 books.
