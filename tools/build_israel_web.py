@@ -10,6 +10,7 @@ reader of those blocks keeps working unchanged. The restored text is checked byt
 
 dist/index.html stays the single-file version for opening locally (requests do not work from file://).
 Run after tools/build_dist.py. Usage: python3 tools/build_israel_web.py"""
+import json
 import base64, os, re, shutil, zlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -55,6 +56,10 @@ print('dist/israel-web/index.html: %.2f MB; %d data blocks in %d files (largest 
       % (os.path.getsize(os.path.join(OUT, 'index.html')) / 1e6, n, files, big / 1e6))
 
 # companion pages linked from the book (the Epstein network map) must sit next to the page
+# guard: the Road to 1948 map must carry its full model (nine channels); a rebuild from the road_map JSON alone drops three
+_rn = open(os.path.join(ROOT, 'road-network.html'), encoding='utf-8').read()
+_m = re.search(r'"channels": (\[[^\]]*\])', _rn)
+assert _m and len(json.loads(_m.group(1))) == 9, 'road-network.html has lost channels: run python3 tools/restore_model.py'
 for extra in ['epstein-network.html', 'road-network.html', 'de-network.html', 'road-1948.html', 'language-atlas.html']:
     src = os.path.join(ROOT, extra)
     if os.path.exists(src):

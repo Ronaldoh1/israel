@@ -55,6 +55,9 @@ def main():
     new = {'built': time.strftime('%Y-%m-%d'), 'qop_meta': d['qop_meta'], 'viab': M, 'viability_meta': d['viability_meta'], 'nodes': d['nodes'], 'edges': d['edges']}
     t = t[:m.start()] + 'const DATA = ' + json.dumps(new, ensure_ascii=False) + ';' + t[m.end():]
     open(p, 'w').write(t)
+    # the road_map JSON does not hold the channels added by tools/patch_*.py on 19 Nov 2026; put them back
+    import subprocess, sys as _s
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'restore_model.py'), p], check=True)
     return M.get('breakers')
 
 if __name__ == '__main__':
