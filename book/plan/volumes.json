@@ -841,23 +841,7 @@
    }
   ]
  },
- "_planned": [
-  {
-   "host": "ch23",
-   "title": "The Wider Region",
-   "subtitle": "The Lay of the Land, the Gulf, the Accords and the Periphery",
-   "merge": [
-    "ch62",
-    "ch27",
-    "ch64",
-    "ch66",
-    "ch67",
-    "ch68",
-    "ch69"
-   ],
-   "priority": 8
-  }
- ],
+ "_planned": [],
  "greater": {
   "slot": "ch21",
   "absorbs": [
@@ -3522,6 +3506,85 @@
    },
    {
     "id": "sq10",
+    "label": "Part Ten",
+    "title": "Settled, Contested and Open",
+    "span": ""
+   }
+  ]
+ },
+ "region": {
+  "slot": "ch23",
+  "absorbs": [
+   "ch62",
+   "ch27",
+   "ch64",
+   "ch66",
+   "ch67",
+   "ch68",
+   "ch69"
+  ],
+  "title": "The Wider Region",
+  "subtitle": "The Lay of the Land, the Gulf, the Accords and the Periphery",
+  "span": "1516–2026",
+  "intro": "wr_intro.html",
+  "parts_total": 10,
+  "stages": [
+   {
+    "id": "wr1",
+    "label": "Part One",
+    "title": "The Lay of the Land",
+    "span": "1516–1979"
+   },
+   {
+    "id": "wr2",
+    "label": "Part Two",
+    "title": "The Kingdom and the Cause",
+    "span": "1945–1991"
+   },
+   {
+    "id": "wr3",
+    "label": "Part Three",
+    "title": "The Deal That Wasn't",
+    "span": "2002–2026"
+   },
+   {
+    "id": "wr4",
+    "label": "Part Four",
+    "title": "Turkey, Partner to Rival",
+    "span": "1896–2026"
+   },
+   {
+    "id": "wr5",
+    "label": "Part Five",
+    "title": "The Emirates",
+    "span": "2010–2026"
+   },
+   {
+    "id": "wr6",
+    "label": "Part Six",
+    "title": "The Other Signatories",
+    "span": "1961–2026"
+   },
+   {
+    "id": "wr7",
+    "label": "Part Seven",
+    "title": "Azerbaijan, Oil for Arms",
+    "span": "1991–2026"
+   },
+   {
+    "id": "wr8",
+    "label": "Part Eight",
+    "title": "Pakistan, the Unrecognised Relationship",
+    "span": "1947–2026"
+   },
+   {
+    "id": "wr9",
+    "label": "Part Nine",
+    "title": "The Airlifts",
+    "span": "1973–2019"
+   },
+   {
+    "id": "wr10",
     "label": "Part Ten",
     "title": "Settled, Contested and Open",
     "span": ""
