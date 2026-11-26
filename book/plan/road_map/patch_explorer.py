@@ -58,6 +58,7 @@ def main():
     # the road_map JSON does not hold the channels added by tools/patch_*.py on 19 Nov 2026; put them back
     import subprocess, sys as _s
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'restore_model.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_after1948.py'), p], check=True)
     return M.get('breakers')
 
 if __name__ == '__main__':

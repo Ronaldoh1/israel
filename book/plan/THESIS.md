@@ -29,4 +29,4 @@ Road to 1948 map, Tests panel, section "Tests of the case" (tools/patch_case_tes
 - L4 Haganah, Palmach, Shai removed: 73 / 74 (Irgun + Lehi removed: 92; all force: 0)
 - L5 all legitimacy (Christian theology, survivors' case, US Christian/public support, campaign, press): 48 / 49 (each alone 88-93; survivors' case + US support: 68)
 - L6 American Zionist organizations: 77 / 81; American government only: 32 / 54; everything American: 25 / 48
-- L7 not testable on this map (it stops in 1948)
+- L7 (after-1948 red layer, tools/patch_after1948.py; causes from the later volumes, necessary causes marked): declaration removed: 42 of 52 later events lose every cause, 3 weakened (Mujamma, Hamas, Hezbollah); occupation: 19/51, Hamas weakened; displacement: 6/52; US support: 4/52; 1953 coup: 3/51 (revolution, IRGC in Bekaa, June 2025 war) - the independent chain; Lebanon 1982: 1/51

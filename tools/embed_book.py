@@ -141,12 +141,12 @@ base_chapters[-1]['outroTitle'] = 'What the Baseline establishes'
 # ---- Volume II: The Road to 1948, in stages ----
 STAGES = [('rd0', 'Prelude', 'The Board Before the Game', '1694–1896'), ('rd1', 'Stage One', 'Conceive', '1896–1917'), ('rd2', 'Stage Two', 'Secure', '1917–1922'),
           ('rd3', 'Stage Three', 'Build', '1922–1936'), ('rd4', 'Stage Four', 'Pivot to America', '1936–1945'), ('rd5', 'Stage Five', 'Execute', '1945–1948'),
-          ('rd6', 'Stage Six', 'Consolidate and Account', '1948–1950s'), ('rdpv', 'From the Land', 'The Same Road, Seen From the Land', '1882–1949'), ('rd7', 'Appendix One', 'The Map and the Tests', 'Measuring the record'), ('rd8', 'Appendix Two', 'The Other Homelands', '1891–1948')]
+          ('rd6', 'Stage Six', 'Consolidate and Account', '1948–1950s'), ('rdpv', 'From the Land', 'The Same Road, Seen From the Land', '1882–1949'), ('rda', 'Stage Seven', 'What the Founding Set in Motion', '1949–2026'), ('rd7', 'Appendix One', 'The Map and the Tests', 'Measuring the record'), ('rd8', 'Appendix Two', 'The Other Homelands', '1891–1948')]
 road = []
 for cid, label, title, sp in STAGES:
     order = next((c for c in CH if c['id'] == cid), {'scenes': []})['scenes']
     road.append({'id': cid, 'label': label, 'title': title, 'span': sp, 'intro': read(os.path.join(ROOT, 'book', 'part1', cid, '_intro.html')),
-                 'outro': read(os.path.join(ROOT, 'book', 'part1', cid, '_outro.html')), 'outroTitle': {'rd7': 'What the map shows', 'rd8': 'What the other homelands show', 'rdpv': 'What the land saw'}.get(cid) or 'What this stage built',
+                 'outro': read(os.path.join(ROOT, 'book', 'part1', cid, '_outro.html')), 'outroTitle': {'rd7': 'What the map shows', 'rd8': 'What the other homelands show', 'rdpv': 'What the land saw', 'rda': 'What the founding set in motion'}.get(cid) or 'What this stage built',
                  'sections': sections_for(cid, order)})
 
 # ---- Volume III: The Cold War Architecture, in stages (book/plan/volumes.json) ----
@@ -174,7 +174,7 @@ if dv:
 books = [
   {'id': 'baseline', 'vol': 1, 'status': 'ready', 'title': 'The Baseline', 'subtitle': 'The Ground Before the Flag', 'span': 'Antiquity to today', 'eraKey': -3000, 'unit': 'chapters',
    'intro': read(os.path.join(ROOT, 'book', 'part1', 'ch01', '_intro.html')), 'chapters': base_chapters, 'first': ch01[0]},
-  {'id': 'road1948', 'vol': 2, 'status': 'ready', 'title': 'The Road to 1948', 'subtitle': 'The Stages That Built a State', 'span': '1694–1950s', 'unit': 'stages',
+  {'id': 'road1948', 'vol': 2, 'status': 'ready', 'title': 'The Road to 1948', 'subtitle': 'The Stages That Built a State', 'span': '1694–2026', 'unit': 'stages',
    'intro': read(os.path.join(ROOT, 'book', 'part1', 'rd_intro.html')), 'chapters': road, 'first': 'bc_s01'},
   {'id': 'coldwar', 'vol': 3, 'status': 'ready', 'title': cw['title'], 'subtitle': cw['subtitle'], 'span': '1949–1967', 'unit': 'stages',
    'intro': read(os.path.join(ROOT, 'book', 'part1', 'cw_intro.html')), 'chapters': cold, 'first': cold[0]['sections'][0]['s'] if cold[0]['sections'] else 'cw1'},
