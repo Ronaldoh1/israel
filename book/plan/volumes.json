@@ -843,18 +843,6 @@
  },
  "_planned": [
   {
-   "host": "ch19",
-   "title": "The Netanyahu Architecture",
-   "subtitle": "The Man, the Government and the Coalition, from the Cabinet to Ben-Gvir",
-   "merge": [
-    "ch10",
-    "ch61",
-    "ch14",
-    "ch41"
-   ],
-   "priority": 2
-  },
-  {
    "host": "ch20",
    "title": "Aid and Arms",
    "subtitle": "What America Pays, What It Buys, and What About America",
@@ -3146,6 +3134,88 @@
     "id": "ob8",
     "label": "Part Eight",
     "title": "The Inner Reading",
+    "span": ""
+   }
+  ]
+ },
+ "netanyahu": {
+  "slot": "ch19",
+  "absorbs": [
+   "ch10",
+   "ch61",
+   "ch14",
+   "ch41"
+  ],
+  "title": "The Netanyahu Architecture",
+  "subtitle": "The Man, the Government and the Coalition, 1910–2026",
+  "span": "1910–2026",
+  "intro": "ny_intro.html",
+  "parts_total": 11,
+  "stages": [
+   {
+    "id": "ny1",
+    "label": "Part One",
+    "title": "The Inheritance",
+    "span": "1910–1978"
+   },
+   {
+    "id": "ny2",
+    "label": "Part Two",
+    "title": "The Salesman",
+    "span": "1982–1993"
+   },
+   {
+    "id": "ny3",
+    "label": "Part Three",
+    "title": "Oslo, Rabin and the First Term",
+    "span": "1993–2001"
+   },
+   {
+    "id": "ny4",
+    "label": "Part Four",
+    "title": "The Long Reign",
+    "span": "2009–2021"
+   },
+   {
+    "id": "ny5",
+    "label": "Part Five",
+    "title": "The Cases",
+    "span": "2016–2026"
+   },
+   {
+    "id": "ny6",
+    "label": "Part Six",
+    "title": "The Partners",
+    "span": "1994–2026"
+   },
+   {
+    "id": "ny7",
+    "label": "Part Seven",
+    "title": "The Overhaul",
+    "span": "2023–2025"
+   },
+   {
+    "id": "ny8",
+    "label": "Part Eight",
+    "title": "The Command",
+    "span": ""
+   },
+   {
+    "id": "ny9",
+    "label": "Part Nine",
+    "title": "The War, the Warrant and the Questions",
+    "span": "2023–2026"
+   },
+   {
+    "id": "ny10",
+    "label": "Part Ten",
+    "title": "The Election of 2026",
+    "span": "Oct–Nov 2026"
+   },
+   {
+    "id": "ny11",
+    "label": "Part Eleven",
+    "title": "Settled, Contested and Open",
     "span": ""
    }
   ]
