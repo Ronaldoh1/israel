@@ -53,6 +53,7 @@ Gold-star bullets in white:
 Crimson callout bar, white heavy caps: "EARLY MONEY BUILT THE GROUND EVERYTHING ELSE STOOD ON"
 
 Strip of two glossy tiles with gold foil numbers and white labels: tile 1 "36%" / "Chance of a state in 1948 without his money"; tile 2 "60%" / "Chance with ONLY his money".
+Small white line beneath the strip: "Every other Rothschild branch, checked: about $1 million in documented gifts before 1948, in today's dollars."
 
 CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering with metallic shine on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills side by side: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
