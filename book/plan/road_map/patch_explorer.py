@@ -67,6 +67,7 @@ def main():
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_count_from_1882.py'), p], check=True)
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_sub_circle.py'), p], check=True)
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_years_combined.py'), p], check=True)
+    subprocess.run(['node', os.path.join(ROOT, 'tools', 'node_readings.js'), p], check=True)
     return M.get('breakers')
 
 if __name__ == '__main__':

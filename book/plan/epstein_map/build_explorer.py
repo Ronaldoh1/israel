@@ -40,11 +40,23 @@ def efta_url(part):
     for a, b, ds in DS:
         if a <= n <= b: return 'https://www.justice.gov/epstein/files/DataSet%%20%s/EFTA%s.pdf' % (ds, m.group(1))
     return None
+CIT = json.loads(re.search(r'<script id="citationdata" type="application/json">(.*?)</script>', idx, re.S).group(1))
+_pos = sorted((m.start(), m.group(1)) for m in re.finditer(r'"id":"([a-z0-9_]+)","(?:ch|era)"', idx))
+SCENE_CITES = {}
+for _i, (_p, _sid) in enumerate(_pos):
+    _end = _pos[_i + 1][0] if _i + 1 < len(_pos) else len(idx)
+    _keys = []
+    for _k in re.findall(r'\[cite:([A-Za-z0-9_]+)\]', idx[_p:_end]):
+        if _k not in _keys and (_k in CIT or _k in K): _keys.append(_k)
+    SCENE_CITES[_sid] = _keys
+def scene_sources(sid, n=3):
+    """27 Nov 2026: a tie sourced only to a library scene also carries the scene's own first sources, so every tie resolves."""
+    return [{'t': KL.get(k, k), 'u': CIT.get(k) or K.get(k)} for k in SCENE_CITES.get(sid, [])[:n]]
 def resolve(src, base):
     out = []
     for part in [p.strip() for p in src.split(';') if p.strip()]:
         if part in scenes:
-            out.append({'t': 'library scene', 'u': (base + 'index.html#scene=' + part) if base is not None else None}); continue
+            out.append({'t': 'library scene', 'u': (base + 'index.html#scene=' + part) if base is not None else None}); out.extend(scene_sources(part)); continue
         if part in K:
             out.append({'t': KL[part], 'u': K[part]}); continue
         u = None
@@ -83,7 +95,13 @@ def build(base):
 _page = build('')
 if not _page.lstrip().lower().startswith('<!doctype'):   # the v1 template was a fragment; the Library of Truth template is a full page
     _page = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + _page + '\n</html>\n'
-open(os.path.join(REPO, 'epstein-network.html'), 'w').write(_page)
+# 27 Nov 2026: the live page carries code edited after the template (the landing focus and others), so a rebuild replaces only its data
+_live = os.path.join(REPO, 'epstein-network.html')
+if os.path.exists(_live) and 'const DATA = ' in open(_live).read():
+    _old = open(_live).read(); _k = _old.find('const DATA = ') + len('const DATA = '); _, _e = json.JSONDecoder().raw_decode(_old, _k)
+    _nk = _page.find('const DATA = ') + len('const DATA = '); _nd, _ne = json.JSONDecoder().raw_decode(_page, _nk)
+    _page = _old[:_k] + _page[_nk:_ne] + _old[_e:]
+open(_live, 'w').write(_page)
 if '--artifact' in sys.argv:
     open(sys.argv[sys.argv.index('--artifact') + 1], 'w').write(build(None))
 linked = sum(1 for e in d['edges'] for r in resolve(e['src'], '') if r['u'])

@@ -42,7 +42,7 @@ PLACES_CL = {'places', 'aviation', 'travel'}
 STAFF_CL = {'operations', 'vendors'}
 SHIELD_IDS = {'npa', 'krischer', 'usvi_edc', 'usvi', 'acosta', 'doj', 'dag_2008', 'menchel'}
 OUT_OF_SCOPE = {'flows', 'provenance', 'origins', 'comparative', 'evidence', 'records', 'research', 'withheld', 'release', 'reporters', 'witnesses'}
-SW = {'verified': 1.0, 'reported': 0.6, 'probable': 0.6, 'planned': 0.6, 'scheduled': 0.6}
+SW = {'verified': 1.0, 'reported': 0.6, 'probable': 0.6}  # 27 Nov 2026: 'planned' and 'scheduled' ties are proposals, not capacity, so they no longer count
 
 # Money is weighted by the sum the record states, in millions of dollars; a money tie with no stated sum counts $1M
 # (an assumption, disclosed in the explorer). Banking ties are weighted by the years the account ran, 3 if unstated.

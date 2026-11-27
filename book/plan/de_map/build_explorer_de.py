@@ -22,11 +22,20 @@ SECS = set(os.path.basename(f)[:-5] for st in build_de.STAGES for f in glob.glob
 scenes = set(re.findall(r'"id":"([a-z0-9_]+)","(?:ch|era)"', idx))
 
 
+SECFILE = {os.path.basename(f)[:-5]: f for st in build_de.STAGES for f in glob.glob(os.path.join(REPO, 'book/part1', st, '*.html'))}
+def sec_sources(sec, n=3):
+    """27 Nov 2026: a tie sourced only to a book section also carries that section's first sources, so every tie resolves."""
+    keys = []
+    for k in re.findall(r'\[cite:([A-Za-z0-9_]+)\]', open(SECFILE[sec], encoding='utf-8').read()):
+        if k in K and k not in keys: keys.append(k)
+    return [{'t': KL.get(k, k), 'u': K[k]} for k in keys[:n]]
+
+
 def resolve(src):
     out = []
     for part in [p.strip() for p in src.split(';') if p.strip()]:
         if part in K: out.append({'t': KL.get(part, part), 'u': K[part]})
-        elif part in SECS: out.append({'t': 'the book, section', 'u': 'index.html#book=' + part})
+        elif part in SECS: out.append({'t': 'the book, section', 'u': 'index.html#book=' + part}); out.extend(sec_sources(part))
         elif part in scenes: out.append({'t': 'library scene', 'u': 'index.html#scene=' + part})
         else: out.append({'t': part, 'u': None})
     return out
@@ -72,5 +81,10 @@ t = t.replace("An edge is a document: a payment, contract, email, flight, appoin
 t = re.sub(r"placeholder='e\.g\. tier:1[^']*'", "placeholder='e.g. role:DOGE ties>2   or   tier:1   or   cluster:surveillance   or   Yarvin'", t)
 t = t.replace('__DATA__', json.dumps(D, ensure_ascii=False).replace('</', '<\\/'))
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO, 'de-network.html')
+# 27 Nov 2026: keep code edited on the live page; a rebuild replaces only its data
+if os.path.exists(out) and 'const DATA = ' in open(out, encoding='utf-8').read():
+    _old = open(out, encoding='utf-8').read(); _k = _old.find('const DATA = ') + len('const DATA = '); _, _e = json.JSONDecoder().raw_decode(_old, _k)
+    _nk = t.find('const DATA = ') + len('const DATA = '); _, _ne = json.JSONDecoder().raw_decode(t, _nk)
+    t = _old[:_k] + t[_nk:_ne] + _old[_e:]
 open(out, 'w', encoding='utf-8').write(t)
 print('built', out, len(d['nodes']), 'nodes', len(d['edges']), 'edges; unresolved source parts', unres)
