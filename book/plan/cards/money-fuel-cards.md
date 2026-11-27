@@ -1,6 +1,6 @@
 # Money Was the Fuel — card series (8 cards)
 
-Theme: **Engraved Banknote**, deep banknote green with gold foil, crimson bars and cyan labels; this theme isn't used by any earlier set. All figures come from the Road to 1948 Network Map, which counts the money in the documented record in 1948 dollars. Status as of 26 November 2026. CTAs: www.1948scam.com, TikTok @chosenron13, Instagram @chosen.ron13.
+Theme: **Engraved Banknote**, deep banknote green with gold foil, crimson bars and cyan labels; this theme isn't used by any earlier set. All money figures are the documented sums on the Road to 1948 Network Map, each converted from the year it was given to today's dollars (October 2026); chances come from the map's tests. Status as of 26 November 2026. CTAs: www.1948scam.com, TikTok @chosenron13, Instagram @chosen.ron13.
 
 ---
 
@@ -16,8 +16,8 @@ Headline, huge heavy condensed sans (Montserrat Black), white with thin gold foi
 Subhead in gold foil italic serif: "A movement doesn't build a state on ideas alone."
 
 One translucent dark-green glass panel with thin gold foil border:
-Giant gold foil number: "$404 MILLION"
-Cyan small-caps label under it: "DOCUMENTED MONEY INTO THE BUILD, 1882–1948 (IN 1948 DOLLARS)"
+Giant gold foil number: "$5.4 BILLION"
+Cyan small-caps label under it: "DOCUMENTED MONEY INTO THE BUILD, 1882–1948, EACH SUM IN TODAY'S DOLLARS"
 Three gold-star bullets in white:
 "Land bought, colonies founded, arms purchased"
 "Five sources carried most of it"
@@ -43,11 +43,11 @@ Headline, Montserrat Black, white with gold foil edge: "ONE MAN PAID FIRST"
 Subhead, gold foil italic serif: "Edmond de Rothschild, Paris, from 1882"
 
 Translucent dark-green glass panel with thin gold foil border:
-Giant gold foil number: "36%"
-Cyan small caps under it: "OF ALL DOCUMENTED MONEY ON THE MAP"
+Giant gold foil number: "$2 BILLION"
+Cyan small caps under it: "IN TODAY'S DOLLARS — 38% OF ALL DOCUMENTED MONEY"
 Gold-star bullets in white:
 "Funded the early colonies when almost no one else did"
-"Reported in 1934 to have put over $60 million into Palestine"
+"Reported in 1934: over $60 million put into Palestine"
 "His land company, PICA, became the largest Jewish landowner"
 
 Crimson callout bar, white heavy caps: "EARLY MONEY BUILT THE GROUND EVERYTHING ELSE STOOD ON"
@@ -78,7 +78,7 @@ Gold-star bullets in white:
 "Let German Jews move their assets as German goods"
 "Paid through the Anglo-Palestine Bank"
 
-Crimson callout bar, white heavy caps: "15% OF ALL DOCUMENTED MONEY ON THE MAP"
+Crimson callout bar, white heavy caps: "ABOUT $850 MILLION IN TODAY'S DOLLARS"
 
 CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
@@ -102,7 +102,7 @@ Cyan small caps: "GOLDA MEYERSON'S 1948 AMERICAN TOUR — RAISED FOR ARMS"
 Gold-star bullets in white:
 "United Palestine Appeal: $52M in 1946, $74.7M in 1948"
 "$100,000 pledged for Truman's 1948 campaign tour"
-"American money: 37% of all documented money"
+"American money: about $2 billion in today's dollars"
 
 Crimson callout bar, white heavy caps: "IT ARRIVED LATE — AFTER THE GROUND WAS BUILT"
 
@@ -120,15 +120,15 @@ HERO (top third): five tall columns of stacked gold coins on a dark polished sur
 
 Pill label, crimson with gold foil edge, white small caps: "PART 5 · WHOSE MONEY?".
 Headline, Montserrat Black, white with gold foil edge: "FIVE SOURCES CARRIED IT"
-Subhead, gold foil italic serif: "$404 million documented, 1882–1948 (1948 dollars)"
+Subhead, gold foil italic serif: "$5.4 billion documented, 1882–1948, in today's dollars"
 
 A clean horizontal bar chart on a translucent dark-green glass panel with thin gold foil border. Each bar is glossy gold foil, with a white label on the left and a gold foil figure on the right, in this order and with these exact lengths relative to each other:
-"Edmond de Rothschild" — "$146M"
-"United Palestine Appeal (US)" — "$89M"
-"Haavara transfer (1933–39)" — "$61M"
-"Golda Meyerson's 1948 US tour" — "$50M"
-"Keren Hayesod (1921–32)" — "$31M"
-Under the chart, cyan small caps: "THE MOVEMENT'S OWN DUES AND DONATION TINS: ABOUT 10%"
+"Edmond de Rothschild" — "$2.0B"
+"United Palestine Appeal (US)" — "$1.25B"
+"Haavara transfer (1933–39)" — "$850M"
+"Golda Meyerson's 1948 US tour" — "$700M"
+"Keren Hayesod (1921–32)" — "$440M"
+Under the chart, cyan small caps: "THE MOVEMENT'S OWN FUNDS ON RECORD: ABOUT 8%"
 
 Crimson callout bar, white heavy caps: "THE SMALL DONORS COULDN'T HAVE CARRIED IT ALONE"
 
@@ -137,31 +137,31 @@ CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE REC
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 6 — In Today's Dollars
+## Card 6 — Then and Now
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette: deep banknote green background #071A12 fading to #0E2E20; crimson #D7263D for bars and callouts; electric cyan #22D3EE for labels; brilliant white #FFFFFF for type; gold foil #F5C518 with real foil sheen. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. Faint engraved guilloche linework. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-HERO (top third): an engraved 1948 banknote on the left transforming into a crisp modern banknote on the right, joined by a glowing gold arrow, both rendered as generic engraved notes with no real portraits, seals or national symbols; soft gold rays; fades into the background.
+HERO (top third): an engraved antique banknote on the left transforming into a crisp modern banknote on the right, joined by a glowing gold arrow, both rendered as generic engraved notes with no real portraits, seals or national symbols; soft gold rays; fades into the background.
 
-Pill label, crimson with gold foil edge, white small caps: "PART 6 · IN TODAY'S DOLLARS".
+Pill label, crimson with gold foil edge, white small caps: "PART 6 · THEN AND NOW".
 Headline, Montserrat Black, white with gold foil edge: "WHAT IT WOULD COST TODAY"
-Subhead, gold foil italic serif: "1948 dollars × 14 = 2026 dollars"
+Subhead, gold foil italic serif: "Each sum converted from the year it was given"
 
-Giant gold foil numbers side by side with a crimson arrow between them: "$404M" → "$5.7 BILLION"
-Cyan small caps under them: "ALL DOCUMENTED MONEY, 1882–1948, IN OCTOBER 2026 DOLLARS"
+Giant gold foil numbers side by side with a crimson arrow between them: "$249M" → "$5.4 BILLION"
+Cyan small caps under them: "DOCUMENTED MONEY AS GIVEN, 1882–1948 → IN TODAY'S DOLLARS"
 
-A clean horizontal bar chart on a translucent dark-green glass panel with thin gold foil border; glossy gold foil bars, white labels on the left, gold foil figures on the right, in this order and with these exact lengths relative to each other:
-"Edmond de Rothschild" — "$2.0B"
-"United Palestine Appeal (US)" — "$1.2B"
-"Haavara transfer (1933–39)" — "$850M"
-"Golda Meyerson's 1948 US tour" — "$700M"
-"Keren Hayesod (1921–32)" — "$440M"
-Under the chart, cyan small caps: "THE MOVEMENT'S OWN DUES AND TINS: ABOUT $570M"
+A clean ledger on a translucent dark-green glass panel with thin gold foil border, five rows, each row with a white label and year on the left, a white "then" figure in the middle and a gold foil "today" figure on the right, thin gold rules between rows:
+"Edmond de Rothschild · 1882–1934" — "$60M" — "$2.0B"
+"United Palestine Appeal · 1946, 1948" — "$77M" — "$1.25B"
+"Haavara transfer · 1933–39" — "$35M" — "$850M"
+"Golda Meyerson's tour · 1948" — "$50M" — "$700M"
+"Keren Hayesod · 1921–32" — "$23M" — "$440M"
+Small cyan column headers above the figures: "THEN" and "TODAY".
 
-Crimson callout bar, white heavy caps: "US AID SINCE 1946 IS MORE THAN 50 TIMES THIS"
+Crimson callout bar, white heavy caps: "US AID SINCE 1946 IS ABOUT 60 TIMES THIS"
 
-Small white line at the bottom of the content area: "Converted with the US consumer price index: 1948 average 24.1, October 2026 337.5."
+Small white line at the bottom of the content area: "US consumer price index for each year, to October 2026. Rothschild sum valued at 1913 prices (at 1934 prices: $1.5B)."
 
 CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
@@ -227,7 +227,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 ---
 
 **Sources behind the figures**
-- Today's dollars: BLS CPI-U, 1948 annual average 24.1 and October 2026 337.511 (factor about 14.0); US aid of $298 billion in 2024 dollars is about $321 billion in 2026 dollars, more than 50 times $5.7 billion.
+- Today's dollars: each documented sum converted from the year it was given with the BLS CPI-U (1913 9.9; 1926 17.7 for Keren Hayesod 1921-32; 1929 17.1; 1933-39 about 13.9; 1946 19.5; 1948 24.1) to October 2026 (337.511). 18 documented sums: $249 million as given, $5.36 billion today. Sterling at $4.86. The map's $404 million (1948 dollars) also includes $21 million of placeholders ($1 million or less for 37 ties whose sums the record does not give); the cards count documented sums only. US aid of $298 billion (2024 dollars) is about $321 billion today, about 60 times $5.4 billion.
 - Network map money record: Edmond de Rothschild (JTA 1934, "over sixty million dollars"); United Palestine Appeal ($52M 1946, $74.7M 1948); Haavara (105M Reichsmarks, about $35M); Golda Meyerson's 1948 tour (about $50M); Keren Hayesod (£4.7M, 1921–32).
 - Map tests: run on the restored model, 26 Nov 2026.
 - After 1948: CRS RL33222 and the 2025 aid figures; Hartung, Quincy Institute and Costs of War (2025); vetoes (Chicago Council, to December 2023); AIPAC/UDP spending (Sludge, 2026).
