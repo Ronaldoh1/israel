@@ -59,6 +59,7 @@ def main():
     import subprocess, sys as _s
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'restore_model.py'), p], check=True)
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_after1948.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_rothschild_branches.py'), p], check=True)
     return M.get('breakers')
 
 if __name__ == '__main__':
