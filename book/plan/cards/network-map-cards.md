@@ -13,7 +13,7 @@
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, bold and vibrant like a blockbuster movie poster. Background: deep teal-navy #062A36 blending to ocean blue #0B3D5C, with glowing gold light. COLOUR SYSTEM — every part of the card has its own colour so nothing blends together: rich metallic gold foil #F0C040 with bright bevelled highlights (headline, big numbers, frames and borders); crimson red #C8102E (the callout bar and the main CTA button); electric cyan #4EC9E0 (small spaced-out section labels and thin dividers); brilliant white #FFFFFF (body text and handles); each book keeps its own cloth colour. Saturated, glossy, high contrast — NOT pastel, NOT faded, NOT muted, NOT monotone. Glossy glass depth, warm gold glow, subtle film grain, soft cinematic vignette.
 
-HERO (top 40%): a glowing gold network of hundreds of small nodes and fine connecting lines floating in dark teal-navy space, organized loosely around a bright central cluster; in front of it, a sleek phone in dark glass shows the same map on its screen with one node highlighted and a small results panel reading "REMOVED: 1 · ON TIME 28%". Thin gold light rays behind, warm dust in the air.
+HERO (top 40%): a glowing gold network of hundreds of small nodes and fine connecting lines floating in dark teal-navy space, organized loosely around a bright central cluster; in front of it, a sleek phone in dark glass shows the same map on its screen with one node highlighted and a small results panel reading "REMOVED: 1 · ON TIME 70%". Thin gold light rays behind, warm dust in the air.
 
 LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE LIBRARY OF TRUTH · INTERACTIVE".
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE NETWORK MAP"
@@ -477,7 +477,7 @@ HERO (top quarter): an antique gold-line world map with eight glowing pins in Ar
 
 LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK MAP · THE TESTS WE RAN · 14/15".
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "ANYWHERE ELSE?"
-SUBHEAD (white italic serif): "Eight alternatives, scored on the same six things."
+SUBHEAD (white italic serif): "Eight alternatives, scored on the same nine things."
 
 GIANT GOLD FOIL NUMBER at the left of the panel: "≤ 2%" with an electric cyan small-caps label "CHANCE OF A STATE IN EVERY ALTERNATIVE".
 
