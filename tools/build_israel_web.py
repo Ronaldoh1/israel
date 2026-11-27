@@ -58,9 +58,9 @@ print('dist/israel-web/index.html: %.2f MB; %d data blocks in %d files (largest 
 # companion pages linked from the book (the Epstein network map) must sit next to the page
 # guard: the Road to 1948 map must carry its full model (nine channels); a rebuild from the road_map JSON alone drops three
 _rn = open(os.path.join(ROOT, 'road-network.html'), encoding='utf-8').read()
-_m = re.search(r'"channels": (\[[^\]]*\])', _rn)
-assert _m and len(json.loads(_m.group(1))) == 9, 'road-network.html has lost channels: run python3 tools/restore_model.py'
-assert '"after1948": true' in _rn, 'road-network.html has lost the after-1948 layer: run python3 tools/patch_after1948.py'
+_k = _rn.find('const DATA = ') + len('const DATA = '); _D, _ = json.JSONDecoder().raw_decode(_rn, _k)
+assert len(_D['viab']['channels']) == 9, 'road-network.html has lost channels: run python3 tools/restore_model.py'
+assert _D.get('after1948') is True, 'road-network.html has lost the after-1948 layer: run python3 tools/patch_after1948.py'
 for extra in ['epstein-network.html', 'road-network.html', 'de-network.html', 'road-1948.html', 'language-atlas.html']:
     src = os.path.join(ROOT, extra)
     if os.path.exists(src):
