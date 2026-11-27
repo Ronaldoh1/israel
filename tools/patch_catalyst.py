@@ -47,7 +47,7 @@ def rep(a, b):
 if 'let vCat=' not in s:
     # the factor each dependent's work keeps: 1 minus the share that stood on removed land
     rep('function vKnockSet(rem){',
-        "let vCat=false;\n"
+        "let vCat=true;\n"
         "function vCatScale(rem){ const sc={}; if(!vCat||!VB.builds) return sc; for(const [dep,base,sh] of VB.builds) if(rem.has(base)&&!rem.has(dep)) sc[dep]=(sc[dep]??1)*(1-sh); return sc; }\n"
         "function vCatRem(rem0){ if(!vCat||!VB.built_by) return rem0; const out=new Set(rem0); for(const [who,list] of Object.entries(VB.built_by)){ const m=VB.edges.filter(e=>e[2]===0&&e[0]===who&&e[4]>0); if(m.length&&m.every(e=>vDrop.has(e[0]+'>'+e[1]))) list.forEach(x=>out.add(x)); } return out; }\n"
         "function vKnockSet(rem){")

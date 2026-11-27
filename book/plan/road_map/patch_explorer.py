@@ -60,6 +60,13 @@ def main():
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'restore_model.py'), p], check=True)
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_after1948.py'), p], check=True)
     subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_rothschild_branches.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_money_streams.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_catalyst.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_causes.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_roth_wzo.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_count_from_1882.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_sub_circle.py'), p], check=True)
+    subprocess.run([_s.executable, os.path.join(ROOT, 'tools', 'patch_years_combined.py'), p], check=True)
     return M.get('breakers')
 
 if __name__ == '__main__':

@@ -54,22 +54,27 @@ CAUSES = [  # cause, effect, could not exist without it (1/0), why, source
  ['imm_ottoman', 'private_capital_interwar', 0, 'It went into a Jewish community already there: the colonies, their groves and Tel Aviv.', FIRST],
  ['mandate', 'private_capital_war', 0, 'Wartime capital came into the Mandate\'s economy.', W + 'Mandatory_Palestine'],
  ['nazi_germany', 'private_capital_war', 0, 'Much of it was refugee capital.', FIFTH],
+ ['pogroms_1881', 'hovevei', 0, 'Hovevei Zion\'s societies spread in response to the pogroms of 1881-82.', W + 'Hovevei_Zion'],
+ ['may_laws', 'hovevei', 0, 'The May Laws of 1882 confined Russia\'s Jews further and added to the push.', FIRST],
+ ['pogroms_1881', 'bilu', 0, 'BILU was formed by students in Kharkov in 1882 after the pogroms.', FIRST],
+ ['may_laws', 'bilu', 0, 'The May Laws added to the push.', FIRST],
+ ['pogroms_1881', 'pinsker', 0, 'Pinsker, an assimilationist before 1881, wrote Auto-Emancipation (1882) in response to the pogroms.', W + 'Leon_Pinsker'],
  ['nazi_germany', 'haavara', 1, 'The Haavara was an agreement with the Nazi government.', W + 'Haavara_Agreement'],
  ['wzo', 'haavara', 0, 'Zionist bodies made it, through the Anglo-Palestine Bank.', W + 'Haavara_Agreement'],
 ]
 
 def apply(V):
-    V['causes'] = CAUSES
+    C = V.setdefault('causes', []); seen = {(c[0], c[1]) for c in C}
+    for c in CAUSES:
+        if (c[0], c[1]) not in seen: C.append(c)
 
 s = open(P, encoding='utf-8').read()
 k = s.find('const DATA = ') + len('const DATA = ')
 D, end = json.JSONDecoder().raw_decode(s, k)
-if not D.get('causes_pre'):
-    apply(D['viab']); D['causes_pre'] = True
-    s = s[:k] + json.dumps(D, ensure_ascii=False) + s[end:]
+apply(D['viab']); D['causes_pre'] = True
+s = s[:k] + json.dumps(D, ensure_ascii=False) + s[end:]
 S = json.load(open(SNAP, encoding='utf-8'))
-if not S.get('causes_pre'):
-    apply(S['viab']); S['causes_pre'] = True; json.dump(S, open(SNAP, 'w', encoding='utf-8'), ensure_ascii=False)
+apply(S['viab']); S['causes_pre'] = True; json.dump(S, open(SNAP, 'w', encoding='utf-8'), ensure_ascii=False)
 
 def rep(a, b):
     global s
