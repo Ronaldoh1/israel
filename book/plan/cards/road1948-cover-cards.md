@@ -6,7 +6,7 @@ The first three cards of the series: the hook, how the map was built, how the ch
 Headline "THE ROAD / TO 1948 / AND AFTER". Subhead "What if one part had been missing?" Giant number 862 (people, organizations, states and documents); 1,539 ties, each with a cited source; 630 sources. Callout: "TAKE ANY ONE AWAY. SEE WHAT'S LEFT." Hero: a gold network over a parchment with a crimson 1948 seal, one node missing.
 
 ## Card 2: how it was built
-Headline "EVERY LINE / HAS A SOURCE". Subhead "Ties come from what people did, never from who they were." Strip: 1,235 verified (counts in full), 206 reported (a little over half), 2,059 named together (counts zero, NOT EVIDENCE). Callout: "APPEARING ON THE SAME PAGE IS NOT A TIE."
+Headline "EVERY LINE / HAS A SOURCE". Subhead "Ties come from what people did, never from who they were." Strip: 1,338 verified (counts in full), 201 reported (a little over half), 2,076 named together (counts zero, NOT EVIDENCE). Callout: "APPEARING ON THE SAME PAGE IS NOT A TIE."
 
 ## Card 3: how the chances work
 Headline "TAKE ONE / PART AWAY". Equation: 93.2% × 92% (of the nine needs left) × 77% (of the years of work kept) ≈ 64% (the Rothschild family removed). Strip: without the United States 29%, without Britain's backing 32%, without the Balfour Declaration 49%. Callout: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
@@ -54,9 +54,9 @@ BODY PANEL 1 (translucent indigo-glass panel with a thin gold-foil border), thre
 "Every tie shows its sentence and its source."
 
 STAT STRIP (three glossy indigo tiles in a row, gold-foil numbers, white labels):
-Tile 1: "1,235" — "VERIFIED · counts in full"
-Tile 2: "206" — "REPORTED · counts a little over half"
-Tile 3: "2,059" — "NAMED TOGETHER · counts zero" with a tiny crimson tag "NOT EVIDENCE"
+Tile 1: "1,338" — "VERIFIED · counts in full"
+Tile 2: "201" — "REPORTED · counts a little over half"
+Tile 3: "2,076" — "NAMED TOGETHER · counts zero" with a tiny crimson tag "NOT EVIDENCE"
 (If the card gets crowded, cut Body Panel 1 first.)
 
 ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "APPEARING ON THE SAME PAGE IS NOT A TIE."

@@ -64,9 +64,9 @@ A tie is an act: funded, founded, signed, voted, sold, armed. Each one shows the
 
 ### Every tie is graded by how directly its source states it
 
-- Verified, 1,235: the cited page states the act directly. Counts in full.
-- Reported, 206: stated indirectly or in someone else's account. Counts a little over half.
-- Named together, 2,059: only appear on the same page. Kept for searching, count for nothing.
+- Verified, 1,338: the cited page states the act directly. Counts in full.
+- Reported, 201: stated indirectly or in someone else's account. Counts a little over half.
+- Named together, 2,076: only appear on the same page. Kept for searching, count for nothing.
 
 A further 11 ties rest on a single source and are marked as still to be checked; they count for nothing until a second source confirms them.
 
