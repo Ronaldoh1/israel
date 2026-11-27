@@ -3,7 +3,7 @@
 16 prompts for ChatGPT image generation, 1080×1920 (9:16). Paste each code block on its own.
 
 - Cards 1–6 explain how the map and its probability model are built. Cards 7–8 show what you can do on it, including running your own tests. Cards 9–14 are the tests we ran, with their results. Card 15 sets out the limits.
-- Every figure comes from the live map as of 5 November 2026 (643 nodes, 1,090 sourced ties, 513 sources, 20 prepared tests). Re-check the test results if the map is rebuilt.
+- Every figure comes from the live map as of 27 November 2026 (862 nodes, 1,539 sourced ties, 630 sources, 82 prepared tests), after the cause-and-effect audit. Re-check the test results if the map is rebuilt.
 - Colours: the bright system (gold foil headlines and numbers, crimson red callout bar and CTA button, electric cyan section labels, white text) on a teal-navy background; each book keeps its real cloth colour. Large CTA block on every card: www.tinyurl.com/thetruthlibrary · TikTok @chosenron13 · Instagram @chosen.ron13.
 
 ---
@@ -19,7 +19,7 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE LIBRARY
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE NETWORK MAP"
 SUBHEAD (white italic serif): "Remove any piece of the record. Watch what falls."
 
-TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "643" / "PEOPLE, BODIES, STATES & DOCUMENTS" · "1,090" / "DOCUMENTED TIES, EACH WITH ITS SOURCE" · "513" / "DISTINCT SOURCES BEHIND THE TIES" · "20" / "PREPARED TESTS, PLUS YOUR OWN" · "7" / "KEY DECISIONS READ AS DECISIONS" · "8" / "OTHER HOMELANDS MEASURED".
+TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "862" / "PEOPLE, BODIES, STATES & DOCUMENTS" · "1,539" / "DOCUMENTED TIES, EACH WITH ITS SOURCE" · "630" / "DISTINCT SOURCES BEHIND THE TIES" · "82" / "PREPARED TESTS, PLUS YOUR OWN" · "7" / "KEY DECISIONS READ AS DECISIONS" · "8" / "OTHER HOMELANDS MEASURED".
 
 PANEL ONE (dark glass, gold border), header in electric cyan spaced caps "WHERE THE RECORD COMES FROM", white text:
 "Built from Volumes I and II: State Dept. records, UN documents, the Rothschild Archive, JTA's archive, Hansard, Maddison's historical GDP data, and the historians cited in the books"
@@ -50,11 +50,11 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE RECORD, DRAWN WHOLE"
 SUBHEAD (white italic serif): "Every person, fund, state and document from 1694 to 1967."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "1,090" with an electric cyan small-caps label "TIES BACKED BY A SOURCE".
+GIANT GOLD FOIL NUMBER at the left of the panel: "1,539" with an electric cyan small-caps label "TIES BACKED BY A SOURCE".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  313 people, 101 governments, 92 institutions, 55 documents, 40 events, 28 companies and 14 places.
-2  1,016 ties are "verified" (the source states the act); 74 are "reported" and count a little over half as much.
+1  365 people, 144 institutions, 102 governments, 100 events, 94 documents, 36 companies and 21 places.
+2  1,338 ties are "verified" (the source states the act); 201 are "reported" and count a little over half as much.
 3  Names that merely appear together on a page count for nothing.
 4  Ties come from what documents say someone did — never from who they were.
 5  Tap any node or line to read the exact sentence and open its source.
@@ -72,12 +72,12 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 
 ---
 
-## 2 · Six things a state needed
+## 2 · Nine things a state needed
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, bold and vibrant like a blockbuster movie poster. Background: deep teal-navy #062A36 blending to ocean blue #0B3D5C, with glowing gold light. COLOUR SYSTEM — every part of the card has its own colour so nothing blends together: rich metallic gold foil #F0C040 with bright bevelled highlights (headline, big numbers, frames and borders); crimson red #C8102E (the callout bar and the main CTA button); electric cyan #4EC9E0 (small spaced-out section labels and thin dividers); brilliant white #FFFFFF (body text and handles); each book keeps its own cloth colour. Saturated, glossy, high contrast — NOT pastel, NOT faded, NOT muted, NOT monotone. Glossy glass depth, warm gold glow, subtle film grain, soft cinematic vignette.
 
-HERO (top quarter): six tall glowing gold pillars rising from a dark marble floor, each labelled at its base in white small caps: "MONEY", "LAND & SETTLERS", "ARMS & FORCE", "DIPLOMACY & LAW", "ORGANIZATION", "RECOGNITION"; the MONEY pillar twice as thick as the rest. Dramatic warm gold light, a bright rim light, faint gold dust in the air.
+HERO (top quarter): nine tall glowing gold pillars rising from a dark marble floor, each labelled at its base in white small caps: "MONEY", "LAND & SETTLERS", "ARMS & FORCE", "DIPLOMACY & LAW", "ORGANIZATION", "RECOGNITION", "LEGITIMACY", "PEOPLE", "LAND HELD"; the MONEY pillar twice as thick as the rest. Dramatic warm gold light, a bright rim light, faint gold dust in the air.
 
 LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK MAP · HOW IT'S BUILT · 2/15".
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "SIX THINGS A STATE NEEDED"
@@ -88,7 +88,7 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "×2" with an electric cyan sma
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Money is counted in 1948 dollars where the record states a sum: Edmond de Rothschild about $146M, the American appeals about $89M, Golda Meyerson's 1948 tour $50M.
 2  A money tie with no stated sum counts as $1 million — an assumption the map shows wherever it's used.
-3  Other ties are weighed by connection: a tie between well-connected nodes counts up to twice as much.
+3  What grew from a removed part weakens with it, and only the same circle can step in for a removed actor.
 4  Great powers count more: by 1950 GDP, the US 6.6×, the USSR 2.3×, Britain 1.6×, China 1.1×, France 1× — every other state once.
 5  With every tie in place, the map reads about 93% for a founding in 1948 — a calibration, not a finding.
 
@@ -182,14 +182,14 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "LOST YEARS"
 SUBHEAD (white italic serif): "Work is dated by when it was done — and what's built stays built."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "43 YEARS" with an electric cyan small-caps label "OF MONEY WORK LOST WITHOUT EDMOND DE ROTHSCHILD".
+GIANT GOLD FOIL NUMBER at the left of the panel: "13 YEARS" with an electric cyan small-caps label "OF THE MOVEMENT'S WORK LOST WITHOUT EDMOND DE ROTHSCHILD".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Each tie's work sits in the years it was done: Edmond's money 1882–1934, the American appeals 1946–48.
 2  Founding dates are documented: the Jewish Agency counts from 1929, not earlier.
 3  A substitute can cover a year only with the work it had shown by then — money raised in 1946 can't replace 1890.
 4  What no one covered keeps counting until later work outgrows it: a lost foundation matters for decades.
-5  Lost years lower the on-time chance across the 66 years from 1882 to 1948.
+5  Lost years lower the on-time chance across the 66 years from 1882 to 1948, every channel counted together.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "WE FIXED THIS FOR EVERY NODE, NOT ONE"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
@@ -281,10 +281,10 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "RUN YOUR OWN TESTS"
 SUBHEAD (white italic serif): "Prepared questions — or your own combination."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "20" with an electric cyan small-caps label "PREPARED TESTS, EACH ANIMATED ON THE MAP".
+GIANT GOLD FOIL NUMBER at the left of the panel: "82" with an electric cyan small-caps label "PREPARED TESTS, EACH ANIMATED ON THE MAP".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  The Tests panel lists 20 what-ifs; tap one and the removed nodes pulse out, cut ties flash, and what collapsed gets red dashed rings.
+1  The Tests panel lists 82 what-ifs; tap one and the removed nodes pulse out, cut ties flash, and what collapsed gets red dashed rings.
 2  15 ready-made groups: the Rothschilds, the US, Britain, the Soviet bloc, the UN, the Vatican, Christian Zionism and more.
 3  A "stricter reading" switch: a document can't be issued without its named addressee.
 4  A harsher UN-vote reading: removed yes-votes count as no.
@@ -314,16 +314,16 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT IF THE MONEY HAD NEVER COME?"
 SUBHEAD (white italic serif): "The two largest sources, removed."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "28%" with an electric cyan small-caps label "ON TIME WITHOUT EDMOND DE ROTHSCHILD — "UNLIKELY"".
+GIANT GOLD FOIL NUMBER at the left of the panel: "70%" with an electric cyan small-caps label "ON TIME WITHOUT EDMOND DE ROTHSCHILD — DELAYED".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Without Edmond: 28% on time, 39% ever, about 43 years of money work lost.
-2  Without any Rothschild money: 30% on time, 40% ever.
-3  Without the whole Rothschild family: 27% on time, 39% ever.
-4  Without American money alone: 80% on time — delayed, not stopped.
-5  Without both the Rothschilds and the United States: 1% on time, 13% ever — not possible on this record.
+1  Without Edmond, his money and his actions: 70% on time, 71% ever, about 13 years of work lost.
+2  Without any Rothschild money: 79% on time.
+3  Without the whole Rothschild family: 64% on time, 68% ever.
+4  Without American money alone: 91% on time — it came late.
+5  Without both the Rothschilds and the United States: 14% on time, 39% ever — not possible on this record.
 
-CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "TWO SOURCES OF MONEY MATTERED MORE THAN ANY LEADER"
+CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "THE FIRST MONEY BOUGHT TIME NO ONE ELSE COULD"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
 
 CTA BLOCK (bottom 30% of the card, the second most eye-catching area after the headline):
@@ -347,14 +347,14 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WASHINGTON OR MOSCOW?"
 SUBHEAD (white italic serif): "Both voted yes in 1947. Only one moved a bloc."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "22%" with an electric cyan small-caps label "ON TIME IF THE UNITED STATES HAD STAYED OUT".
+GIANT GOLD FOIL NUMBER at the left of the panel: "29%" with an electric cyan small-caps label "ON TIME IF THE UNITED STATES HAD STAYED OUT".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Without the United States (government, Congress, lobby, donors): 22% on time, 46% ever — unlikely.
-2  Only Moscow backing partition, Washington out: 64% on time, 81% ever — delayed.
-3  Without the Soviet bloc: 89% — the vote still clears two-thirds.
+1  Without the United States (government, Congress, lobby, donors): 29% on time, 50% ever — unlikely.
+2  Only Moscow backing partition, Washington out: 66% on time, 82% ever — delayed.
+3  Without the Soviet bloc: 83% — the vote still clears two-thirds.
 4  Without Stalin: 93%.
-5  Without the Czechoslovak arms: 91% — the map measures the founding, not the war, and says so.
+5  Without the Czechoslovak arms: 84% — the map measures the founding, not the war, and says so.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "THE DIFFERENCE WAS THE BLOC THAT FOLLOWED"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
@@ -383,10 +383,10 @@ SUBHEAD (white italic serif): "The framework the settlers came under."
 GIANT GOLD FOIL NUMBER at the left of the panel: "26 YEARS" with an electric cyan small-caps label "OF SETTLEMENT WORK LOST WITHOUT THE BALFOUR DECLARATION".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  No Balfour Declaration: 56% on time — possible, with great difficulty.
-2  Without the British state: 48% on time, 53% ever — unlikely.
+1  No Balfour Declaration: 49% on time, 54% ever — unlikely.
+2  Without the British state: 32% on time, 47% ever — unlikely.
 3  Under the Mandate the Jewish population grew about 21,900 a year; under Ottoman rule, about 2,200.
-4  The stricter reading (no Declaration without Walter Rothschild): 56%, because it removes the same document.
+4  The stricter reading (no Declaration without Walter Rothschild): 49%, because it removes the same document.
 5  The record shows the letter was addressed to him — not that it would have been withheld otherwise.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "BRITAIN BUILT THE FRAMEWORK"
@@ -413,16 +413,16 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE NETWORK
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE MEN OR THE DECISIONS?"
 SUBHEAD (white italic serif): "Remove the decider — someone else decides."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "92%" with an electric cyan small-caps label "ON TIME WITHOUT TRUMAN — HENRY WALLACE DECIDES INSTEAD".
+GIANT GOLD FOIL NUMBER at the left of the panel: "89%" with an electric cyan small-caps label "ON TIME WITHOUT TRUMAN — HENRY WALLACE DECIDES INSTEAD".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Without Truman: 92% — Wallace, the vice-president replaced in 1944, was on record as a supporter.
-2  Roosevelt healthy and keeping his April 1945 pledge to Ibn Saud: 84% on time — delayed.
-3  Without Herzl: 92% — the institutions he founded carried on without him.
+1  Without Truman: 89% — Wallace, the vice-president replaced in 1944, was on record as a supporter.
+2  Roosevelt healthy and keeping his April 1945 pledge to Ibn Saud: 82% on time — delayed.
+3  Without Herzl: 69% — no Zionist Organization, and what grew from it weakens.
 4  Without the organized Zionist movement: 0% — no one left to pursue the state.
 5  Without the armed groups and arms network: 0% — nothing outside them could fill the gap.
 
-CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "INSTITUTIONS OUTLASTED THE MEN"
+CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "THE FOUNDERS MATTERED; PRESIDENTS LESS"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
 
 CTA BLOCK (bottom 30% of the card, the second most eye-catching area after the headline):
@@ -452,7 +452,7 @@ PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps h
 1  Resolution 181 passed 33 to 13 with 10 abstentions; it needed two-thirds of votes cast.
 2  The Philippines, Haiti and Liberia were reported as pressured; flipped to no, the count is 30–16 and the resolution fails.
 3  Even then: 84% on time — states could still recognize the new state, as the US did a year before Israel joined the UN.
-4  Without the UN entirely: 85% on time, 89% ever.
+4  Without the UN entirely: 84% on time, 88% ever.
 5  The vote mattered. Recognition by the great powers mattered more.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "TWO-THIRDS, BY THREE VOTES"
@@ -519,7 +519,7 @@ PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps h
 2  It counts only what's documented: an undocumented substitute can't step in.
 3  Its weights are assumptions — money twice, $1M for unstated sums, 2% a year — each shown on the map.
 4  It shows what the network would have lacked, not what people would have done instead.
-5  Python and browser give the same numbers: checked on 143 nodes, no mismatches.
+5  Python and browser give the same numbers: every node checked, no mismatches.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "CHECK EVERY NUMBER YOURSELF"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.

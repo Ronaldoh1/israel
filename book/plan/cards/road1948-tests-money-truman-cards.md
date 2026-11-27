@@ -1,10 +1,10 @@
-# Road to 1948: tests, money and Truman cards (20 Nov 2026)
+# Road to 1948: tests, money and Truman cards (27 Nov 2026)
 
-Three cards to follow the three cover cards. Figures from a live run of the map on 20 Nov 2026; today's dollars use the same consumer-price conversion as the book (1948 dollars × about 13.9).
+Three cards to follow the three cover cards. Figures from a live run of the map on 27 Nov 2026; today's dollars use the same consumer-price conversion as the book (1948 dollars × about 13.9).
 
 **Facts behind each card**
-- Tests: 81 tests on the map (72 plus 9 on often-denied parts); on-time chances from tools/stress/tests_live.json.
-- Money: amounts are the map's own (DATA.viab.amounts): Edmond $146M (1948 dollars, from JTA 1934 "over sixty million dollars" at 1913 prices); UPA $74.7M (1948); Haavara 105M Reichsmarks, about $35M (1933–39); Golda Meyerson about $50M (1948); Keren Hayesod £4,714,440 (1921–32); Feinberg and Kaufmann $100,000 (1948). Map total $402.4M of 1948, Edmond's share 36%.
+- Tests: 82 tests on the map (73 plus 9 on often-denied parts); on-time chances from tools/stress/tests_live.json.
+- Money: amounts are the map's own (DATA.viab.amounts): Edmond $146M (1948 dollars, from JTA 1934 "over sixty million dollars" at 1913 prices); UPA $74.7M (1948); Haavara 105M Reichsmarks, about $35M (1933–39); Golda Meyerson about $50M (1948); Keren Hayesod £4,714,440 (1921–32); Feinberg and Kaufmann $100,000 (1948). Private and immigrant capital about $709M (1948 dollars), estimated from documented totals. Map total about $1.38B of 1948, Edmond's share about 11%.
 - Truman: recognition "only eleven minutes after its creation" (Truman Library); de facto 14 May 1948, de jure 31 Jan 1949 (National Archives). $100,000 from Feinberg and Kaufmann for the whistle-stop tour and Truman's retreat on territory and refugees: John Judis's account (one historian, as the book says). Feinberg financed the tour and Truman believed it made his election possible: Journal of Palestine Studies, citing Feinberg's oral history. The money was raised after recognition.
 
 Sources: https://www.trumanlibrary.gov/education/presidential-inquiries/recognition-israel · https://www.archives.gov/milestone-documents/press-release-announcing-us-recognition-of-Israel · https://mondoweiss.net/2014/04/judiss-landmark-zionism/ · https://digitalprojects.palestine-studies.org/jps/fulltext/42336 · https://www.jta.org/archive/the-baron · https://cdn.jwa.org/thisweek/jan/21/1948/golda-meir
@@ -19,25 +19,26 @@ LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "THE ROAD 
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow: "WHAT 1948 / COULD NOT LOSE".
 
-SUBHEAD: gold-foil italic serif: "81 tests. Least likely first."
+SUBHEAD: gold-foil italic serif: "82 tests. Least likely first."
 
 TABLE PANEL (one tall translucent indigo-glass panel with a thin gold-foil border). Two columns: on the left a white label, on the right a gold-foil percentage, right-aligned, labeled at the top "CHANCE OF A STATE IN 1948". Thin gold hairlines between rows. The percentage of each row sits on a small glossy tile: crimson tiles for rows below 30%, indigo tiles with gold edges for the rest. Rows, in exactly this order:
 "Zionism never organized as a movement" — "0%"
 "No armed groups or arms network" — "0%"
-"Neither the Rothschilds nor the United States" — "5%"
 "Every often-denied part at once" — "13%"
-"The United States stays out" — "24%"
-"No Rothschild family" — "34%"
-"No British backing" — "36%"
-"No Balfour Declaration" — "56%"
+"Neither the Rothschilds nor the United States" — "14%"
+"The United States stays out" — "29%"
+"No British backing" — "32%"
+"No Balfour Declaration" — "49%"
+"No Rothschild family" — "64%"
+"No Theodor Herzl" — "69%"
+"No Edmond de Rothschild" — "70%"
 "No UN vote" — "84%"
-"No Theodor Herzl" — "91%"
 Below the last row, a gold-foil line across the panel and the row "THE FULL RECORD" — "93%" in larger gold foil.
 
-ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "WITHOUT HERZL: 91%. WITHOUT THE ROTHSCHILDS: 34%."
+ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "WITHOUT HERZL: 69%. WITHOUT EDMOND DE ROTHSCHILD: 70%."
 (If the card gets crowded, cut the hero first, then the callout.)
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN ALL 81 TESTS YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN ALL 82 TESTS YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```
@@ -55,6 +56,7 @@ HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-f
 GIANT NUMBER: a giant gold-foil "$2 BILLION" with the white label beneath: "Edmond de Rothschild, 1882–1934, in today's dollars".
 
 LEDGER PANEL (translucent indigo-glass panel with a thin gold-foil border), three columns per row: white name on the left, white "then" figure in the middle, gold-foil "today" figure on the right; column headings in white small caps "THEN" and "TODAY"; thin gold hairlines between rows. Rows in exactly this order:
+"Private and immigrant capital, 1919–44 (estimated)" — "$709M" — "≈ $9.9B"
 "Edmond de Rothschild: colonies and land company, 1882–1934" — "$146M" — "≈ $2.0B"
 "United Palestine Appeal, 1948 campaign" — "$74.7M" — "≈ $1.0B"
 "Transfer of emigrants' assets from Germany, 1933–39" — "$35M" — "≈ $840M"
@@ -63,15 +65,15 @@ LEDGER PANEL (translucent indigo-glass panel with a thin gold-foil border), thre
 "Truman's campaign train tour, 1948" — "$100,000" — "≈ $1.4M"
 
 STAT STRIP (two glossy indigo tiles, gold-foil numbers, white labels):
-Tile 1: "≈ $5.6B" — "ALL THE MONEY ON THE MAP, IN TODAY'S DOLLARS"
-Tile 2: "36%" — "OF IT FROM ONE MAN"
+Tile 1: "≈ $19.3B" — "ALL THE MONEY ON THE MAP, IN TODAY'S DOLLARS"
+Tile 2: "11%" — "OF IT FROM ONE MAN"
 
-ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "THE LARGEST SINGLE SUM ON THE MAP CAME FROM ONE BARON."
+ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "THE LARGEST SUM FROM ANY ONE GIVER CAME FROM ONE BARON."
 
 FOOTNOTE (small white text above the CTA): "Today's dollars use US consumer prices. Edmond's 'over sixty million dollars' (reported 1934) is counted at 1913 prices, as the map counts it."
 (If the card gets crowded, cut the stat strip first.)
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "SEE WHERE EVERY DOLLAR WENT"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "SEE WHERE EVERY DOLLAR WENT"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```
@@ -103,7 +105,7 @@ ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "THE MONEY CAME AF
 SMALL LINE (white, above the CTA): "Truman believed Feinberg's money made his election possible (Feinberg's oral history)."
 (If the card gets crowded, cut the small line first.)
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "READ THE 11 MINUTES IN FULL"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "READ THE 11 MINUTES IN FULL"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```

@@ -4,7 +4,7 @@
 
 - The book has 10 parts. Ten facts each would be 100 facts, too many for 15 cards, so each card holds 5. Stages One, Three, Four and Five and the new part "Seen From the Land" get 2 cards (10 facts each); the Prelude, Stage Two, Stage Six and the two appendices get 1 card each (5 facts).
 - Every fact is taken from the book's own cited sections (November 2026 edition).
-- Cover figures were counted from the book itself: 1,199 citations, 356 distinct publishers, archives and outlets, 196 sections, 382 figures, tables and timelines. The network map holds 643 nodes and 1,090 sourced ties.
+- Cover figures were counted from the book itself: 1,199 citations, 356 distinct publishers, archives and outlets, 196 sections, 382 figures, tables and timelines. The network map holds 862 nodes and 1,539 sourced ties (27 November 2026).
 - Colours: the bright system (gold foil headlines and numbers, crimson red callout bar and CTA button, electric cyan section labels, white text) on a sapphire background; each book keeps its real cloth colour. Large CTA block on every card: www.tinyurl.com/thetruthlibrary · TikTok @chosenron13 · Instagram @chosen.ron13.
 
 ---
@@ -20,7 +20,7 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE LIBRARY
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE ROAD TO 1948"
 SUBHEAD (white italic serif): "Fifty-one years from a bank to a state — documented step by step."
 
-TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "1,199" / "CITATIONS, EACH ONE CLICKABLE" · "356" / "DISTINCT PUBLISHERS, ARCHIVES & OUTLETS" · "196" / "SECTIONS IN 10 PARTS" · "382" / "FIGURES, TABLES & TIMELINES" · "643" / "PEOPLE, BODIES & DOCUMENTS MAPPED" · "1,090" / "SOURCED CONNECTIONS IN THE NETWORK MAP".
+TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "1,199" / "CITATIONS, EACH ONE CLICKABLE" · "356" / "DISTINCT PUBLISHERS, ARCHIVES & OUTLETS" · "196" / "SECTIONS IN 10 PARTS" · "382" / "FIGURES, TABLES & TIMELINES" · "862" / "PEOPLE, BODIES & DOCUMENTS MAPPED" · "1,539" / "SOURCED CONNECTIONS IN THE NETWORK MAP".
 
 PANEL ONE (dark glass, gold border), header in electric cyan spaced caps "WHERE THE RECORD COMES FROM", white text:
 "U.S. State Dept., Foreign Relations of the United States · United Nations records · The Rothschild Archive · Yale's Avalon Project · Harvard's Nuremberg Trials Project · Princeton's Einstein Papers · National Library of Israel · American Jewish Archives · Hansard"
@@ -480,16 +480,16 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "VOLUME II �
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT IF A PIECE WAS MISSING?"
 SUBHEAD (white italic serif): "The record as a network, tested."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "43 YEARS" with an electric cyan small-caps label "OF THE MOVEMENT'S MONEY WORK LOST WITHOUT EDMOND DE ROTHSCHILD".
+GIANT GOLD FOIL NUMBER at the left of the panel: "13 YEARS" with an electric cyan small-caps label "OF THE MOVEMENT'S WORK LOST WITHOUT EDMOND DE ROTHSCHILD".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Remove the organized movement, or the armed groups, and no state is possible on this record.
-2  Without Edmond de Rothschild: 28% on time — "unlikely." His money carried the colonies almost alone for two decades.
-3  Without the United States: 22% on time. Without the Soviet Union: still about 93%.
-4  No Balfour Declaration: 56% — immigration falls back to the Ottoman pace, about 26 years of work lost.
-5  Without Herzl: 92%. Without Truman: 92% — Henry Wallace, a supporter, decides instead.
+2  Without Edmond de Rothschild, his money and his actions: 70% on time — delayed. He carried the colonies almost alone for two decades.
+3  Without the United States: 29% on time. Without the Soviet bloc: still about 83%.
+4  No Balfour Declaration: 49% — immigration falls back to the Ottoman pace, about 26 years of work lost.
+5  Without Herzl: 69%, about the same as Edmond. Without Truman: 89% — Henry Wallace, a supporter, decides instead.
 
-CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "MOST LEADERS COULD BE REPLACED. THE MONEY COULD NOT."
+CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "PRESIDENTS COULD BE REPLACED. THE FOUNDERS AND THE MONEY COULD NOT."
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
 
 CTA BLOCK (bottom 30% of the card, the second most eye-catching area after the headline):

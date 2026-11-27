@@ -1,17 +1,17 @@
-# Road to 1948 map: three cover cards (20 Nov 2026)
+# Road to 1948 map: three cover cards (27 Nov 2026)
 
-The first three cards of the series: the hook, how the map was built, how the chances work. Figures from a live run of the map on 20 Nov 2026 (see road-1948.html). Paste each block into ChatGPT image generation.
+The first three cards of the series: the hook, how the map was built, how the chances work. Figures from a live run of the map on 27 Nov 2026 (see road-1948.html). Paste each block into ChatGPT image generation.
 
 ## Card 1: the hook
-Headline "THE ROAD / TO 1948 / AND AFTER". Subhead "What if one part had been missing?" Giant number 802 (people, organizations, states and documents); 1,441 ties, each with a cited source; 555 sources. Callout: "TAKE ANY ONE AWAY. SEE WHAT'S LEFT." Hero: a gold network over a parchment with a crimson 1948 seal, one node missing.
+Headline "THE ROAD / TO 1948 / AND AFTER". Subhead "What if one part had been missing?" Giant number 862 (people, organizations, states and documents); 1,539 ties, each with a cited source; 630 sources. Callout: "TAKE ANY ONE AWAY. SEE WHAT'S LEFT." Hero: a gold network over a parchment with a crimson 1948 seal, one node missing.
 
 ## Card 2: how it was built
 Headline "EVERY LINE / HAS A SOURCE". Subhead "Ties come from what people did, never from who they were." Strip: 1,235 verified (counts in full), 206 reported (a little over half), 2,059 named together (counts zero, NOT EVIDENCE). Callout: "APPEARING ON THE SAME PAGE IS NOT A TIE."
 
 ## Card 3: how the chances work
-Headline "TAKE ONE / PART AWAY". Equation: 93.2% × 89% (of the nine needs left) × 41% (of the years of work kept) = 34% (the Rothschild family removed). Strip: without the United States 24%, without Britain's backing 36%, without the Balfour Declaration 56%. Callout: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
+Headline "TAKE ONE / PART AWAY". Equation: 93.2% × 92% (of the nine needs left) × 77% (of the years of work kept) ≈ 64% (the Rothschild family removed). Strip: without the United States 29%, without Britain's backing 32%, without the Balfour Declaration 49%. Callout: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
 
-Full prompts: palette ink-indigo #0B1026→#161E45, crimson #D7263D, white, antique-gold foil #E8B44A; CTA order: crimson action bar, hero URL www.tinyurl.com/1948scam in gold foil, "Full library → www.tinyurl.com/thetruthlibrary", TikTok @chosenron13 (PRIMARY), Instagram @chosen.ron13; closing line on legibility and no people, faces, logos or flags. The complete prompts follow.
+Full prompts: palette ink-indigo #0B1026→#161E45, crimson #D7263D, white, antique-gold foil #E8B44A; CTA order: crimson action bar, hero URL www.1948scam.com in gold foil, "Full library → www.tinyurl.com/thetruthlibrary", TikTok @chosenron13 (PRIMARY), Instagram @chosen.ron13; closing line on legibility and no people, faces, logos or flags. The complete prompts follow.
 
 
 ## Card 1 prompt: the hook
@@ -26,11 +26,11 @@ HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-f
 
 SUBHEAD: gold-foil italic serif: "What if one part had been missing?"
 
-BODY PANEL (one translucent indigo-glass panel with a thin gold-foil border): a giant gold-foil number "802" with the white label "people, organizations, states and documents", and beneath it a row of two smaller gold-foil numbers, "1,441" labeled "ties, each with a cited source" and "555" labeled "sources", each number marked by a small gold-foil star.
+BODY PANEL (one translucent indigo-glass panel with a thin gold-foil border): a giant gold-foil number "862" with the white label "people, organizations, states and documents", and beneath it a row of two smaller gold-foil numbers, "1,539" labeled "ties, each with a cited source" and "630" labeled "sources", each number marked by a small gold-foil star.
 
 ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "TAKE ANY ONE AWAY. SEE WHAT'S LEFT."
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```
@@ -61,7 +61,7 @@ Tile 3: "2,059" — "NAMED TOGETHER · counts zero" with a tiny crimson tag "NOT
 
 ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "APPEARING ON THE SAME PAGE IS NOT A TIE."
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "CHECK ANY LINE IN ONE TAP"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "CHECK ANY LINE IN ONE TAP"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```
@@ -77,27 +77,27 @@ LABEL TAG: small indigo pill with a gold-foil edge, white small caps: "HOW THE C
 
 HEADLINE: huge heavy condensed sans (Montserrat Black), white with a thin gold-foil edge and soft drop shadow: "TAKE ONE / PART AWAY".
 
-SUBHEAD: white small caps on a slim crimson bar: "THREE NUMBERS, MULTIPLIED".
+SUBHEAD: white small caps on a slim crimson bar: "THREE NUMBERS, MULTIPLIED (ROUGHLY)".
 
 BODY PANEL (translucent indigo-glass panel with a thin gold-foil border), one equation laid out in large type across the panel:
 "93.2%" in white, labeled beneath "full record"
 "×" in gold
-"89%" in white, labeled "of the nine needs left"
+"92%" in white, labeled "of the nine needs left"
 "×" in gold
-"41%" in white, labeled "of the years of work kept"
-"=" in gold
-and then a GIANT gold-foil "34%" labeled "chance of a state in 1948".
+"77%" in white, labeled "of the years of work kept"
+"≈" in gold
+and then a GIANT gold-foil "64%" labeled "chance of a state in 1948".
 Above the equation, a white line: "Example: the Rothschild family removed."
 
 STAT STRIP (three glossy indigo tiles in a row, gold-foil numbers, white labels):
-Tile 1: "24%" — "WITHOUT THE UNITED STATES"
-Tile 2: "36%" — "WITHOUT BRITAIN'S BACKING"
-Tile 3: "56%" — "WITHOUT THE BALFOUR DECLARATION"
+Tile 1: "29%" — "WITHOUT THE UNITED STATES"
+Tile 2: "32%" — "WITHOUT BRITAIN'S BACKING"
+Tile 3: "49%" — "WITHOUT THE BALFOUR DECLARATION"
 (If the card gets crowded, cut the "Example" line first.)
 
 ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
 
-CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
+CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos, no flags.
 ```

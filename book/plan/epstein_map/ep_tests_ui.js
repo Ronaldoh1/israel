@@ -9,7 +9,7 @@ const VTESTS=[
   read:'Nothing runs. Every documented payer paid him, every account was his or his companies\', and the properties and aircraft were his. Maxwell\'s own ties remain, but on this record none of them carried money, banking or property. The record does not show an operation that existed apart from him.'},
  {q:'What if Ghislaine Maxwell had never been in the picture?', ids:()=>['gmax'],
   what:'Ghislaine Maxwell and her documented ties: her conviction as his co-conspirator (December 2021), the more than $30 million he transferred to her (1999–2007), the travel schedules she gave his pilot, the staff manual she issued at the Palm Beach house, and her social ties.',
-  read:'On the documented ties the operation still runs: the money, the accounts, the properties and most of the staff ties were his, not hers. This is where a model that counts ties reaches its limit. Her conviction covers years of conduct and counts here as one tie. The map does not say who would have done what she did, and it names no one as her successor; it shows only that the rest of the documented network, most of it his staff, his office and his houses, is still there.'},
+  read:'Recruitment is what falls. Her conviction (December 2021, five of six counts) proved that she recruited and groomed girls for him from 1994 to 2004, and for those years the court proved no one else doing it; his own 2008 plea covers only Palm Beach in 2004 and 2005. Read year by year, the recruitment the courts proved loses ten of its twelve years outright and half of another. The money, the accounts, the properties and most of the staff ties were his, not hers, and they stay. The model counts only what a court proved: people named but never charged are not counted, and it names no one as her successor.'},
  {q:'What if neither Epstein nor Maxwell had been in the picture?', ids:()=>['epstein','gmax'],
   what:'Both, with everything they owned.',
   read:'With both gone no one is left to run it: the companies, trusts, properties and aircraft fall with their owners, and every channel is empty.'},
@@ -30,7 +30,7 @@ const VTESTS=[
   read:'Banking is the channel nothing else in the record could supply. Without a bank to hold his accounts, the money, the payroll, the property costs and the wires have no route. It is the clearest structural finding of the model: the operation depended on banks keeping him after the red flags, a point regulators later made (Deutsche Bank\'s $150 million New York penalty, 2020).'},
  {q:'What if there had been no 2008 deal?', ids:()=>['npa'],
   what:'The 2008 non-prosecution agreement, and with it the immunity it gave him and the four people it named.',
-  read:'Without the deal the case goes federal in 2008: Marie Villafaña had drafted a 60-count indictment. The model takes that to end the operation\'s later years, so everything documented after 2008 drops out: Black\'s money, the Deutsche Bank years, the Great St. James purchase, the later aircraft. What is left is the operation as it stood in 2008. The model cannot say what a federal jury would have decided.'},
+  read:'Without the deal the case goes federal in 2008: Marie Villafaña had drafted a 60-count indictment. The model takes that to end the operation\'s later years, so everything documented after 2008 drops out: Black\'s money, the Deutsche Bank years, the Great St. James purchase, the later aircraft. What is left is the operation as it stood in 2008, and its later years count as not run in every channel, recruitment included. The model cannot say what a federal jury would have decided.'},
  {q:'What if Alexander Acosta had not been the US Attorney?', ids:()=>['acosta'],
   what:'Alexander Acosta, the US Attorney in Miami who approved the deal.',
   read:'Removing Acosta alone barely changes the deal. On the record the push for it came from a large defence team, from the supervisor who negotiated the plea route and from the state attorney\'s lesser charge; the resistance came from the line prosecutor, the police chief and the FBI agents. An unnamed successor faces the same push, minus Jay Lefkowitz\'s personal approaches to Acosta. The Justice Department\'s own review (2020) found "poor judgment", not misconduct.'},
@@ -77,7 +77,7 @@ function vAssess(x){ const col=vCollapsed(), R=vScore(removed);
   <h3 class="vsec">What collapsed</h3><ul class="vul"><li>${removed.size} node${removed.size===1?'':'s'} removed.</li>
    <li>${col.length} more node${col.length===1?'':'s'} cut off from the operation, shown on the map with red dashed rings${col.length?`: ${col.slice(0,30).map(x=>esc(vName(x))).join(', ')}${col.length>30?` and ${col.length-30} more`:''}`:''}.</li>
    <li>Money in still reaching him: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}.</li></ul>
-  <h3 class="vsec">The six channels</h3>${vBars(R)}
+  <h3 class="vsec">The seven channels</h3>${vBars(R)}
   ${R.decisions&&R.decisions.length?'<h3 class="vsec">Key decisions</h3>'+vDecText(R):''}${vNeed(R)}
   <h3 class="vsec">Reading the result</h3><p class="vtxt">${esc(x.t.read)}</p>
   <div class="vbtns"><button class="vbtn pri" type="button" id="vtBack">All tests</button><button class="vbtn" type="button" id="vtReset">Reset the graph</button><button class="vbtn" type="button" id="vtHow">How this is computed</button></div>`; }
@@ -142,7 +142,7 @@ function succPanel(i,ext){ const t=SUCC_TESTS[i], R=succRun(t.ids,ext), ranked=R
   return `<div class="kind">Succession test</div><h2>${esc(t.q)}</h2>
   <div class="viab"><p class="vtxt">Without ${t.ids.length>1?'them':(t.ids[0]==='gmax'?'her':'him')} the operation runs at <b>${Math.round(R.noneP)}%</b> on the model (from ${Math.round(R.baseP)}%).</p></div>
   ${ranked?`<div class="sctog"><button class="vbtn${ext?'':' pri'}" type="button" data-ext="0">Documented ties only</button><button class="vbtn${ext?' pri':''}" type="button" data-ext="1">Within two steps</button></div>
-  <h3 class="vsec">Best positioned on documented ties</h3><p class="vtxt small">Share of the network's capacity (average of six channels) that sits at or beside each node's own documented ties. Tap a row for the six channels.</p>${succRows(R)}${team}`:''}
+  <h3 class="vsec">Best positioned on documented ties</h3><p class="vtxt small">Share of the network's capacity (average of seven channels) that sits at or beside each node's own documented ties. Tap a row for the seven channels.</p>${succRows(R)}${team}`:''}
   <h3 class="vsec">Reading the result</h3><p class="vtxt">${succRead(R,t)}</p>
   <details class="scwhy"><summary>How this is computed</summary><p class="vtxt small">The test removes the hub and everything he owned. For each other node it then asks which of the lost ties it is documented on, or directly tied to the other end of (verified, non-kinship ties only; the hubs are not used as bridges), and credits the model's capacity for those ties. Within two steps gives half credit to ties one further link away. Capacity is scored per channel with the same formula as the other tests. A subpoena, claim or unverified tie earns nothing.</p></details>
   <div class="vbtns"><button class="vbtn pri" type="button" id="vtBack">All tests</button><button class="vbtn" type="button" id="vtReset">Reset the graph</button></div>`; }
@@ -160,7 +160,7 @@ function succTestRows(){ return SUCC_TESTS.map((t,i)=>{ const R=succRun(t.ids,fa
 /* ---------- ranges and seat tests (mirror tools/stress/ep_stress.py) ---------- */
 // Lowest and highest chance for each test above when each channel is weighed at half or double, reported ties at 30% or 100%,
 // the $1M default at $0.25M or $4M, default bank years at 1 or 10, the cover floor at 25% or 75%, and the decision weights varied.
-const EP_RANGES=[[0, 0], [91, 94], [0, 0], [19, 64], [87, 94], [6, 49], [91, 95], [7, 49], [31, 65], [89, 93], [71, 83], [94, 96], [94, 96], [94, 95], [66, 86], [87, 93], [94, 95]];
+const EP_RANGES=[[0, 0], [39, 74], [0, 0], [19, 64], [86, 93], [6, 48], [91, 94], [6, 47], [19, 40], [87, 91], [67, 74], [93, 95], [93, 95], [93, 94], [61, 84], [87, 93], [93, 95]];
 const SEAT_PROBE=new Set(["allegation to Congress", "claim", "communications aggregate", "comparative methodology", "comparison", "complaint", "court ruling", "custody", "document", "document evidence", "document provenance", "flight passenger", "forensic review", "investigation", "kinship", "knowledge of spouse's connection", "legal position (rejected)", "legislation", "litigation", "oversight", "reporting", "research archive / source corpus", "research lead", "research provenance", "sworn allegation", "testimony", "testimony / interview"]);
 const SEAT_KINDS=new Set(['institution','company','government','place','trust','project']);
 const SEAT_TESTS=[
@@ -182,7 +182,7 @@ function seatRows(){ return SEAT_TESTS.map((t,i)=>{ const S=seatRun(t.rule); ret
 function seatPanel(i){ const t=SEAT_TESTS[i], S=seatRun(t.rule), R=S.R;
   return `<div class="kind">Seat test</div><h2>${esc(t.q)}</h2><div class="viab"><p class="vtxt">The operation runs at <b>${Math.round(R.P)}%</b> on the model (from ${Math.round(vScore(new Set()).P)}%). ${S.lost} of his ties do not carry over.</p></div>
   <h3 class="vsec">Who sits in his place</h3><p class="vtxt">${esc(t.what)}</p>
-  <h3 class="vsec">The six channels</h3>${vBars(R)}
+  <h3 class="vsec">The seven channels</h3>${vBars(R)}
   <h3 class="vsec">Reading the result</h3><p class="vtxt">${esc(t.read)}</p>
   <details class="scwhy"><summary>Why this test exists</summary><p class="vtxt small">Removing Epstein gives 0% almost by definition, because the operation is defined as what he and Maxwell owned and ran. These tests ask the harder question: if the place he held had been filled by someone else, how much of the documented structure would have carried over? They count only documented ties and name no one as a real or possible successor.</p></details>
   <div class="vbtns"><button class="vbtn pri" type="button" id="vtBack">All tests</button><button class="vbtn" type="button" id="vtHow">How this is computed</button></div>`; }

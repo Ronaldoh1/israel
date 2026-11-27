@@ -2,7 +2,7 @@
 
 Twelve one-minute scripts from Volume IV, *The Divine 3+1: The 3 Parents of Israel*. There are three scripts for each "parent" city, London, the Vatican and Washington, each on what makes that city unlike any other, and three on how Israel's government works. Each script is about 150 spoken words, with a short "on screen" note. Every figure comes from the volume. The figures on Israel's government are as of mid-November 2026; coalition talks were still going on 15 November.
 
-Closing line on every script: "It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13."
+Closing line on every script: "It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13."
 
 ---
 
@@ -22,7 +22,7 @@ At the last election, in March 2025, 45 of the 100 council seats were filled wit
 
 It's not a country. It still needs Parliament's permission to change its own rules. But no other council in Britain works like this.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### London 2: The City's own officer in Parliament
 
@@ -36,7 +36,7 @@ You may have heard he sits on the floor of the House of Commons. He doesn't. Par
 
 But the record shows what the office has done when the City's privileges were threatened. Between 1835 and 1875, by one account, its lobbying helped defeat reform at least twelve times. In 1884 a campaign it largely ran killed a government bill to reform London, and the Remembrancer later admitted paying a go-between to have men break up meetings.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### London 3: The money machine, and what London actually did
 
@@ -52,7 +52,7 @@ The City of London Corporation, the medieval council, appears in none of those d
 
 And Britain didn't stay a parent. From 1939 it capped immigration. In 1947 it abstained on partition. In 1948 it blocked Palestine's sterling.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ---
 
@@ -70,7 +70,7 @@ And it was paid to exist. In 1929 Mussolini's government handed the Holy See 750
 
 Full sovereignty, almost no territory, and dependent on its neighbour for everything except authority.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Vatican 2: The pope's bankers
 
@@ -86,7 +86,7 @@ More recently, the Vatican lost about €140 million on a London building. In 20
 
 And in 2026 the Vatican Bank got a new president: a Luxembourg banker who once ran the Edmond de Rothschild group, a different firm from the 1831 lenders.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Vatican 3: Parent of the idea, opponent of the state
 
@@ -100,7 +100,7 @@ During the 1947 vote it stayed silent, but for its own aim: the plan put Jerusal
 
 But here's the twist. The Christian theology that became Israel's most loyal support grew out of the Vatican's church, through the Protestant break. In 1944 the Vatican ruled internally that it "cannot safely be taught", and never said so publicly.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ---
 
@@ -118,7 +118,7 @@ The President appoints DC's judges and its chief prosecutor, and commands its Na
 
 The capital was born in 1790 from a deal over war debts.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Washington 2: Eleven minutes, and an embargo
 
@@ -134,7 +134,7 @@ That changed later. From 1962 came the first arms sales, from 1968 the US was Is
 
 The volume's verdict: Washington wasn't the parent at birth. It's the parent by adoption, the one who raised and armed the child.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Washington 3: Three parents, three verdicts
 
@@ -150,7 +150,7 @@ Washington: recognition in eleven minutes, then an arms embargo. It became the g
 
 And the record shows no document of the three working together. These were separate governments making separate choices.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ---
 
@@ -168,7 +168,7 @@ Other states share pieces of this. Britain has no written constitution either. W
 
 Israel's government says a small state facing enemies needed room to act. Critics say the same design keeps its limits open-ended.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Israel 2: How small parties hold big power
 
@@ -182,7 +182,7 @@ Meanwhile the prime minister, Benjamin Netanyahu, has been on trial for bribery,
 
 The October 2026 election left neither side with a majority. Gadi Eisenkot was asked to form a government. As of mid-November, talks were still going, with a deadline of 20 December.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ### Israel 3: The people who can't vote for it
 
@@ -196,4 +196,4 @@ In February 2026 the security cabinet approved its biggest West Bank package in 
 
 Nineteen months earlier, the International Court of Justice had found the occupation unlawful. Israel rejected the opinion. And at the Security Council, the one UN body whose decisions bind, more than fifty American vetoes have shielded it.
 
-It's free, and every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.

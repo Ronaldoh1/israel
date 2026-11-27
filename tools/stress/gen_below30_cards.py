@@ -50,12 +50,12 @@ TC.append(tcard('roth_web', "BELOW 30% · ASSUMPTION", "THE ROTHSCHILDS AND EVER
 TC.append(tcard('roth_web_inst', "BELOW 30% · ASSUMPTION", "THE ROTHSCHILDS AND THEIR INSTITUTIONS", "The people stay; the bodies tied to them go",
   "one bright cluster and the institutions around it are dark, cut in crimson",
   ["The family", "Every institution and wealth vehicle with a documented tie to it, including the Jewish Agency and the British Parliament"],
-  ["Assumes none of those bodies had support apart from the family", "The money channel falls to 77%"],
+  ["Assumes none of those bodies had support apart from the family", f"The money channel falls to {T['roth_web_inst']['pc'][0]}%"],
   "AN ASSUMPTION, NOT THE RECORD", "the assumption that every tied institution falls with the family; labelled as such on the map", 2))
 TC.append(tcard('d_all', "BELOW 30% · OFTEN DENIED", "EVERY DENIED PART, AT ONCE", "The record that is usually played down",
   "scattered nodes across the whole map are dark and severed",
   ["The imperial sponsor", "The pressured votes", "Money and access to Truman", "Irgun and Lehi", "Arms from abroad", "The Transfer Agreement", "Absentee land sales", "Plan Dalet"],
-  ["Without Britain the rest still cut it to 48%"], "NO SINGLE DENIAL CARRIED IT ALL; TOGETHER THEY DID", removed(T['d_all']['n'])))
+  [f"Arms and force fall to {T['d_all']['pc'][2]}%, the people channel to {T['d_all']['pc'][7]}%"], "NO SINGLE DENIAL CARRIED IT ALL; TOGETHER THEY DID", removed(T['d_all']['n'])))
 TC.append(tcard('roth_decl', "BELOW 30% · ASSUMPTION", "NO ROTHSCHILDS, NO DECLARATION", "If Britain would not have issued it without them",
   "one bright cluster is dark and a parchment node beside it is cut in crimson",
   ["The family", "And the Balfour Declaration, on the assumption it needed its addressee"],
@@ -85,6 +85,7 @@ TC.append(tcard(B('Without Palestine Jewish Colonization Association (PICA), Cze
   ["Czechoslovakia as arms supplier", "PICA", "The Jewish Agency", "Each alone: 83 to 85%"], ["Close to half the rifles in hand on 14 May, gone"],
   "NO RIFLES, NO LAND COMPANY, NO AGENCY", "3 nodes removed; found by testing all 2,600 triples among the 26 costliest nodes"))
 TC.sort(key=lambda x: x[0])
+TC = [x for x in TC if x[0] < 30]   # 27 Nov 2026: tests that rose above 30% on the corrected model leave the set
 
 ranges = S
 D = []
@@ -102,7 +103,7 @@ D.append(card("Disclosure 2 — How A Chance Is Computed", "HOW IT WORKS · 2 OF
 D.append(card("Disclosure 3 — The Chain Reaction", "HOW IT WORKS · 3 OF 5", "THE CHAIN REACTION", "What happens when a part is removed",
   "a row of engraved gold dominoes on an indigo plinth, the first ones fallen, a faint glowing network map behind them.",
   "7", "KEY DECISIONS RE-WEIGHED IN EVERY TEST", "WHEN A NODE IS REMOVED",
-  ["Its ties go", "Whatever is left cut off from the core goes too: the Agency, the Haganah, the declaration, the UN vote", "A document whose every issuer is gone is never issued"],
+  ["Its ties go", "What grew from it weakens with it: no Zionist Organization, no Keren Hayesod", "Only the same circle can step in for a removed actor", "Whatever is left cut off from the core goes too: the Agency, the Haganah, the declaration, the UN vote", "A document whose every issuer is gone is never issued"],
   "THE DECISIONS", ["Balfour, the Mandate, the UN referral, the US vote, US recognition, Soviet support, Czech arms", "Each weighs documented push against documented resistance", "Push aimed at one man does not pass to his successor", "Without their leader, allied states keep only their measured independence: the Americas one vote in three, Western Europe about one in four, the Soviet side one in five", "Resolution 181 still needs two-thirds"],
   "REMOVE ONE LINK AND WHAT HUNG ON IT FALLS TOO"))
 tb = d['tbuild']
@@ -132,18 +133,18 @@ for on, c in TC:
     rows.append(f"{SHORT.get(head, head)}: {on}%")
 IDX = card("Index — Below The Line", "BELOW 30% · ALL RESULTS", "BELOW THE LINE", "Every test under a 30% chance of a state in 1948",
   "a tall engraved gold thermometer-style gauge on the left edge with a bright crimson line at 30 percent, a faint glowing network map behind it.",
-  str(len(TC)), "RESULTS UNDER 30%", "LOWEST FIRST", rows[:8], "AND", rows[8:] + ["No single person or institution falls below 30%: the lowest is Edmond de Rothschild, 35%"],
+  str(len(TC)), "RESULTS UNDER 30%", "LOWEST FIRST", rows[:8], "AND", rows[8:] + ["No single person or institution falls below 30%: the lowest is the British War Cabinet, 49%"],
   "IT TOOK WHOLE CATEGORIES, NOT ONE NAME", cut='If the card gets crowded, set both panels in two narrow columns; never cut a result.')
 
 hdr = f"""# Below 30% — card prompts (ChatGPT image generation)
 
-Built 19 November 2026 from the live network map (v95). Every test that leaves less than a 30% chance of a state in 1948, lowest first, with five cards that disclose how the map was built and how each chance is computed, and an index card. One prompt per card; paste each code block into ChatGPT image generation.
+Rebuilt 27 November 2026 from the live network map (v165), after the cause-and-effect audit. Every test that leaves less than a 30% chance of a state in 1948, lowest first, with five cards that disclose how the map was built and how each chance is computed, and an index card. One prompt per card; paste each code block into ChatGPT image generation.
 
 **Order to post:** Disclosure 1–5, then the index, then the test cards. Each test card also carries a one-line note on how that result was measured.
 
-**Theme:** ink-indigo, signal crimson, antique-gold foil, white (same as the probability set). **CTA on every card:** www.tinyurl.com/1948scam, www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (primary), Instagram @chosen.ron13.
+**Theme:** ink-indigo, signal crimson, antique-gold foil, white (same as the probability set). **CTA on every card:** www.1948scam.com, www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (primary), Instagram @chosen.ron13.
 
-**Re-check before posting:** figures as of 19 Nov 2026 (v95); they move whenever the map changes. Three cards rest on assumptions and say so (tagged ASSUMPTION).
+**Re-check before posting:** figures as of 27 Nov 2026 (v165); they move whenever the map changes. Three cards rest on assumptions and say so (tagged ASSUMPTION).
 
 """
 body = '\n'.join(D) + '\n' + IDX + '\n' + '\n'.join(re.sub(r'^## ', f'## Test {i} — ', c, count=1) for i, (on, c) in enumerate(TC, 1))

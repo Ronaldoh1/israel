@@ -10,7 +10,7 @@ LAB = d['labels']; CH = d['channels']
 CL = {'money':'money','land':'land and settlers','force':'arms and force','diplomacy':'diplomacy and law','organization':'organization','recognition':'recognition','legitimacy':'legitimacy','people':'people','holdings':'land-held'}
 
 PAL = ("Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.")
-CTA = ("CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line \"RUN EVERY TEST YOURSELF\"; then the hero URL \"www.tinyurl.com/1948scam\" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text \"The full library → www.tinyurl.com/thetruthlibrary\"; then two social pills side by side: \"TikTok @chosenron13\" with a small gold tag \"PRIMARY\", and \"Instagram @chosen.ron13\".")
+CTA = ("CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line \"RUN EVERY TEST YOURSELF\"; then the hero URL \"www.1948scam.com\" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text \"The full library → www.tinyurl.com/thetruthlibrary\"; then two social pills side by side: \"TikTok @chosenron13\" with a small gold tag \"PRIMARY\", and \"Instagram @chosen.ron13\".")
 END = "All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos."
 MAP = "a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background"
 
@@ -66,7 +66,7 @@ M.append(card("Card 3 — How The Chance Is Set", "THE METHOD · 3 OF 6", "HOW T
   "an engraved antique-gold probability dial, its gauge ring filled to 93 percent, floating in front of a faint glowing network map, light rays behind it.",
   "93%", "THE FULL RECORD, NOTHING REMOVED", "WHEN A NODE IS REMOVED",
   ["Its ties go, and everything left cut off from the core goes with it", "Each channel is recounted; full strength reads 99%"],
-  "THE CHAIN REACTION", ["Seven key decisions are re-weighed: documented push against documented resistance", "Push aimed at one man does not pass to his successor", "Allied states keep their vote only at their bloc's measured independence", "Resolution 181 still needs two-thirds"],
+  "THE CHAIN REACTION", ["Seven key decisions are re-weighed: documented push against documented resistance", "What grew from a removed part weakens with it; only the same circle can step in", "Push aimed at one man does not pass to his successor", "Allied states keep their vote only at their bloc's measured independence", "Resolution 181 still needs two-thirds"],
   "REMOVE ONE LINK AND WHAT HUNG ON IT FALLS TOO"))
 tb = d['tbuild']
 M.append(card("Card 4 — The Cost Of Starting Over", "THE METHOD · 4 OF 6", "THE COST OF STARTING OVER", "What falls out of 1948 must be rebuilt later",
@@ -106,10 +106,10 @@ TC.append(test_card('rothus', "TEST · TWO PILLARS", "NO ROTHSCHILDS, NO UNITED 
   "two large clusters are dark, cut away by crimson lines", ["Every Rothschild house and heir", "The US government, Congress, lobby and donors"], [], "THE TWO LARGEST SUPPORTS, GONE TOGETHER"))
 TC.append(test_card('d_all', "TEST · OFTEN DENIED", "EVERY DENIED PART, AT ONCE", "The record that is usually played down",
   "scattered nodes across the whole map are dark and severed", ["The imperial sponsor", "The pressured votes", "Money and access to Truman", "Irgun and Lehi", "Arms from abroad", "The Transfer Agreement", "Absentee land sales", "Plan Dalet"],
-  ["Without Britain the rest still cut it to 48%"], "NO SINGLE DENIAL CARRIED IT ALL; TOGETHER THEY DID"))
+  [f"Arms and force fall to {T['d_all']['pc'][2]}%, the people channel to {T['d_all']['pc'][7]}%"], "NO SINGLE DENIAL CARRIED IT ALL; TOGETHER THEY DID"))
 TC.append(test_card('roth_pre', "TEST · BEFORE HERZL", "NO ROTHSCHILDS, NO EARLY NETWORK", "The family and everything before 1897",
   "an old, deep cluster at the root of the map is dark, its threads cut in crimson", ["Every Rothschild house and heir", "The Lovers of Zion, the Odessa Committee, the Alliance and the early donors and colonies", f"With Herzl removed too: {r(T['roth_herzl_pre']['rd']['on'])}%"],
-  ["The cost is time: decades of settlement work that no one else was funding", "Herzl himself adds only about two points"], "THE ROOTS OF THE MONEY, CUT"))
+  ["The cost is time: decades of settlement work that no one else was funding", f"Herzl alone: {r(T['herzl']['rd']['on'])}%; with the early network gone too, his loss costs far more"], "THE ROOTS OF THE MONEY, CUT"))
 TC.append(test_card(B('Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Anglo-Palestine Company (Bank Leumi)'), "TEST · FOUND BY SEARCH", "THREE INSTITUTIONS", "The land company, the Agency and the bank",
   "three bright central nodes are dark, severed by crimson lines", ["PICA (the Rothschild land company)", "The Jewish Agency", "The Anglo-Palestine Bank (or the Zionist Congress: " + str(r(T[B('Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Zionist Congress')]['rd']['on'])) + "%)"],
   [], "THREE NODES, AND THE MONEY CHANNEL CRACKS"))
@@ -127,7 +127,7 @@ TC.append(test_card(B('Without the states that voted for partition'), "TEST · F
   "a ring of 33 small gold nodes, all dark", ["All 33 states that voted for partition on 29 Nov 1947"], ["No resolution, no international basis"], "NO VOTE, NO LEGAL BASIS IN 1948"))
 TC.append(test_card('roth', "TEST · ONE FAMILY", "THE ROTHSCHILDS PLAY NO PART", "The family, the Paris house, or Edmond alone",
   "one bright cluster of nodes is dark, its money threads cut in crimson",
-  [f"Every Rothschild house and heir: {r(T['roth']['rd']['on'])}%", f"The Paris house: {r(T['roth_paris']['rd']['on'])}%", f"Edmond alone: {r(T['edmond']['rd']['on'])}%", f"Their funding only: {r(T['rothmoney']['rd']['on'])}%"],
+  [f"Every Rothschild house and heir: {r(T['roth']['rd']['on'])}%", f"The Paris house: {r(T['roth_paris']['rd']['on'])}%", f"Edmond, with everything he did: {r(T['edmond_all']['rd']['on'])}%", f"Their funding only: {r(T['rothmoney']['rd']['on'])}%"],
   ["The cost is time: the colonies Edmond funded from 1882, when almost no one else did", "PICA's land, about 500,000 dunams in 1934, is lost with them; private buyers' land is not"], "ONE MAN'S MONEY CARRIED DECADES OF IT", 3))
 TC.append(test_card('britain', "TEST · ONE GOVERNMENT", "NO IMPERIAL SPONSOR", "The British state that issued, held and enforced",
   "the British cluster is dark, severed by crimson lines", ["The War Cabinet, the Mandate government, Parliament and officials"], [], f"{r(T['britain']['rd']['lost'])} YEARS OF WORK BUILT INSIDE AN EMPIRE"))

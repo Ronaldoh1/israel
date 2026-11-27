@@ -23,12 +23,12 @@ Right: a slim dark screen in a brass frame showing a grid of six small video til
 
 STAT STRIP (three glossy navy tiles with gold-foil borders, gold numbers, white labels):
 Tile 1: "570" — "PEOPLE, FIRMS AND PLACES MAPPED"
-Tile 2: "1,095" — "TIES, EACH WITH ITS SOURCE"
+Tile 2: "1,092" — "TIES, EACH WITH ITS SOURCE"
 Tile 3: "1953–2026" — "THE WHOLE RECORD"
 
 ACTION BAR: full-width sapphire-blue bar, white heavy caps: "READ THE BOOK. EXPLORE THE MAP. FREE."
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/thetruthlibrary" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "The Israel Architecture → www.tinyurl.com/1948scam"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/thetruthlibrary" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "The Israel Architecture → www.1948scam.com"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -65,7 +65,7 @@ Tile 3: "EVERY CLAIM" — "TIED TO ITS SOURCE"
 
 ACTION BAR: full-width sapphire-blue bar, white heavy caps: "READ ALL EIGHT. FREE."
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/thetruthlibrary" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "The Israel Architecture → www.tinyurl.com/1948scam"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/thetruthlibrary" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "The Israel Architecture → www.1948scam.com"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```

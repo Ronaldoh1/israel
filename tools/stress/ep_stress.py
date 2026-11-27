@@ -17,7 +17,7 @@ TESTS = [('epstein', ['epstein']), ('gmax', ['gmax']), ('both', ['epstein', 'gma
          ('herald', G['The Miami Herald and its series']), ('giuffre', ['giuffre', 'boies']), ('usvi', ['usvi_edc', 'usvi']),
          ('properties', G['The properties']), ('aircraft', G['The aircraft and pilots']), ('reputation', G['The reputation managers'])]
 
-EXP = [1.0] * 6; FLOOR = 0.5
+EXP = [1.0] * len(V.CHANNELS); FLOOR = 0.5
 _base = V.base
 def base(M, removed, after=None):
     R = _base(M, removed, after)
@@ -54,7 +54,7 @@ def variant(**kw):
 res = {'published': variant()}
 for i, c in enumerate(V.CHANNELS):
     for m in (0.5, 2.0):
-        e = [1.0] * 6; e[i] = m; res[f'exp_{c}_x{m}'] = variant(exp=e)
+        e = [1.0] * len(V.CHANNELS); e[i] = m; res[f'exp_{c}_x{m}'] = variant(exp=e)
 for v in (0.3, 1.0): res[f'reported_{v}'] = variant(reported=v)
 for v in (0.25, 4.0): res[f'default_m_{v}'] = variant(DEFAULT_M=v)
 for v in (1, 10): res[f'bank_years_{v}'] = variant(DEFAULT_BANK_YEARS=v)

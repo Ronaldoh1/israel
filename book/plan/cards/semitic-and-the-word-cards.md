@@ -38,7 +38,7 @@ Tile 2: gold "SEMITIC" — white "Hebrew, Arabic, Aramaic, Amharic. Named after 
 
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "IT NAMES LANGUAGES, THE WAY \"ROMANCE\" DOES".
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE BASELINE FREE"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE BASELINE FREE"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop the fourth bullet first, then shrink the hero; never shrink the URL or the social pills.
 
@@ -69,7 +69,7 @@ Tile 3: "3RD MILL. BCE" — "OLDEST WRITTEN: AKKADIAN, EBLAITE"
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "YIDDISH IS GERMANIC. LADINO IS ROMANCE."
 Small white line beneath: "Not every Jewish language is Semitic. Maltese is the only Semitic language written in the Latin alphabet."
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "SEE THE FULL LANGUAGE ATLAS"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "SEE THE FULL LANGUAGE ATLAS"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop the small line under the callout first, then shrink the map; never shrink the tree boxes, the URL or the social pills.
 
@@ -99,7 +99,7 @@ GIANT NUMBER: gold-foil "1 FAMILY", with a white caption beneath: "Shared langua
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "A LANGUAGE FAMILY, NOT A RACE".
 Small white line beneath: "Race theories of a \"Semitic race\" are rejected by modern scholarship (USHMM; historian Shmuel Almog)."
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE BASELINE FREE"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE BASELINE FREE"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop the giant number first, then the small line under the callout; never shrink the panel, the URL or the social pills.
 
@@ -129,7 +129,7 @@ TIMELINE (centrepiece): a vertical gold line with six glowing gold nodes. At eac
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "NAMED BY THE HATERS, NOT THE HATED".
 Small white line beneath: "The hatred is far older than the word: the blood libel dates to Norwich, 1144."
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE WHOLE PAPER TRAIL"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE WHOLE PAPER TRAIL"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop the subhead first, then shrink the press; never drop a timeline node, the URL or the social pills.
 
@@ -168,7 +168,7 @@ PANEL 2 (navy glass with a thin gold border; header in gold caps "EVEN ITS AUTHO
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "ASK OF ISRAEL WHAT YOU'D ASK OF ANY COUNTRY".
 Small white line beneath: "Hatred of Jews is real, and at a record high (ADL, 2024). Calling a political question hatred weakens the word for the people it protects."
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE FULL RECORD FREE"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "READ THE FULL RECORD FREE"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop Panel 2 first, then the third bullet of Panel 1, then shrink the shield; never shrink the quote block, the URL or the social pills.
 
@@ -204,7 +204,7 @@ MESSAGING — Israel's foreign ministry secured $150 million for public diplomac
 CALLOUT BAR: full-width brick-red bar, white heavy caps: "THE SCHOLARS NEVER AGREED. THE RULES WERE WRITTEN ANYWAY."
 Small white line beneath: "104 rights groups, including the ACLU, Amnesty, Human Rights Watch and B'Tselem, asked the UN not to adopt it (2023). New York City revoked it in January 2026."
 
-CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "SEE WHO WROTE WHAT, WITH SOURCES"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): a full-width brick-red bar with white heavy caps "SEE WHO WROTE WHAT, WITH SOURCES"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small brick-red tag "⚠ FLAGGED — follow TikTok first".
 
 Anti-cram rule: if space runs short, drop the MESSAGING row first, then the tiny line under the strip, then shrink the pen; never drop the strip, the callout, the URL or the social pills.
 

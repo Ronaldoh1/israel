@@ -2,7 +2,7 @@
 
 One script per finished volume, plus three for The Greater Israel Architecture. Each runs about 150–170 words, roughly a minute at a steady pace. Figures come from the volume itself, as of October 2026. Every script ends on the same call to action.
 
-**Closing line for every script:** "It's free, every claim is tied to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13."
+**Closing line for every script:** "It's free, every claim is tied to its source. Link in my bio: www.1948scam.com. Follow @chosenron13."
 
 ---
 
@@ -28,9 +28,9 @@ How do you build a state in fifty years? You follow the money, the paper and the
 
 It starts in 1694, with the Bank of England. Then Herzl's pamphlet in 1896. Then a promise from Britain in 1917, about a country Britain didn't yet govern. Then the Mandate, the land funds, the pivot to America, and on 14 May 1948, a state.
 
-This book doesn't just tell that story. It maps it: 802 people, funds, states and documents, and 1,441 ties, every one with its source. Then it asks what happens if you take one away.
+This book doesn't just tell that story. It maps it: 862 people, funds, states and documents, and 1,539 ties, every one with its source. Then it asks what happens if you take one away.
 
-On the full record, a state on time reads at about 93%. Take away the Rothschild family, and it falls to about 34%. No single person drops it below 30%. Whole parts of the network do: the organization, the armed groups, the banks and land companies.
+On the full record, a state on time reads at about 93%. Take away Edmond de Rothschild, with everything he did, and it falls to about 70%: about thirteen years of the work lost. No single person drops it below 30%. Whole parts of the network do: the organization, the armed groups, the banks and land companies.
 
 And eight other homelands, from Argentina to Uganda, tested one by one.
 

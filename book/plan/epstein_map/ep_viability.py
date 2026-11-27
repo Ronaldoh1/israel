@@ -21,9 +21,9 @@ The same arithmetic runs in the browser (epstein-network.html, ep_viab_ui.js); r
 import json, os, re, math, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CHANNELS = ['money', 'banking', 'places', 'staff', 'cover', 'access']
+CHANNELS = ['money', 'banking', 'places', 'staff', 'cover', 'access', 'recruit']
 LABEL = {'money': 'Money in', 'banking': 'Banking', 'places': 'Places & aircraft', 'staff': 'Staff & operations',
-         'cover': 'Legal & official cover', 'access': 'Access & reputation'}
+         'cover': 'Legal & official cover', 'access': 'Access & reputation', 'recruit': 'Recruitment (proven in court)'}
 COVER = [4, 5]                    # channel indexes taken as 0.5 + 0.5 x strength
 CAL = 0.99
 HUBS = ['epstein', 'gmax']
@@ -57,7 +57,14 @@ PAYERS = {'wexner', 'black', 'rothschild_group', 'bv70', 'dubin', 'sinofsky', 'h
 CONDUIT = {('black', 'southern_trust'), ('black', 'gratitude'), ('wexner', 'nyc_house'), ('wexner', 'maple')}   # inside a total above
 DEFAULT_M = 1.0
 DEFAULT_BANK_YEARS = 3
-Y0, Y1 = 1991, 2019   # the operation's span on this record: Wexner's power of attorney (1991) to the arrest (2019)
+Y0, Y1 = 1991, 2019
+# 27 Nov 2026: recruitment, built only on what a court proved. Each strand is a conviction: who, the years of conduct it
+# covers, and the record. Nobody named but never charged or convicted is counted. A year with no proven strand is read
+# as unchanged by any removal (the court proved nothing about it either way), so a removal can take only what was proved.
+RECRUIT = [
+    ['gmax', 1994, 2004, 'Ghislaine Maxwell: convicted 29 Dec 2021 (S.D.N.Y.) on five of six counts, including sex trafficking of a minor, for recruiting and grooming girls for Epstein, 1994-2004; 20 years'],
+    ['epstein', 2004, 2005, 'Jeffrey Epstein: pleaded guilty in Florida, June 2008, to procuring a person under 18 for prostitution (Palm Beach, 2004-05)'],
+]   # the operation's span on this record: Wexner's power of attorney (1991) to the arrest (2019)
 
 DECISIONS = [
     {'id': 'npa', 'name': 'The 2008 federal deal (non-prosecution agreement)', 'decider': 'acosta', 'successor': '*', 'year': 2008,
@@ -164,7 +171,7 @@ def model(d):
     return {'channels': CHANNELS, 'labels': LABEL, 'cover': COVER, 'cal': CAL, 'hubs': HUBS, 'ent': sorted(ent), 'owner': owner,
             'edges': rows, 'cap0': [round(x, 3) for x in cap0], 'decisions': DECISIONS, 'tied': TIED, 'unknown_successor': UNKNOWN_SUCCESSOR,
             'groups': GROUPS, 'verdict': VERDICT, 'amounts': {f + '>' + t: v for (f, t), v in AMOUNT.items()}, 'default_m': DEFAULT_M,
-            'default_bank_years': DEFAULT_BANK_YEARS, 'y0': Y0, 'y1': Y1}
+            'default_bank_years': DEFAULT_BANK_YEARS, 'y0': Y0, 'y1': Y1, 'recruit': RECRUIT}
 
 
 def alive_ent(M, removed):
@@ -218,6 +225,14 @@ def base(M, removed, after=None):
             s += w
         yrs.append(1 - math.exp(-k * s / s0) if s0 else 1)
     pc[0] = sum(yrs) / len(yrs)
+    ry = []   # recruitment, year by year, against the strands a court proved for that year
+    for Y in range(M['y0'], M['y1'] + 1):
+        if hubs_gone or (after and Y > after): ry.append(0.0); continue
+        on = [r for r in M['recruit'] if r[1] <= Y <= r[2]]
+        if not on: ry.append(M['cal']); continue
+        s = sum(1 for r in on if r[0] not in removed)
+        ry.append(1 - math.exp(-k * s / len(on)))
+    pc[6] = sum(ry) / len(ry)
     eff = [0.5 + 0.5 * p if i in M['cover'] else p for i, p in enumerate(pc)]
     P = 100 * math.prod(eff)
     return {'P': P, 'pc': pc, 'cap': cap, 'hubs_gone': hubs_gone}

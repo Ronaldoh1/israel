@@ -59,6 +59,11 @@ def resolve(src, base):
             out.append({'t': 'library scene', 'u': (base + 'index.html#scene=' + part) if base is not None else None}); out.extend(scene_sources(part)); continue
         if part in K:
             out.append({'t': KL[part], 'u': K[part]}); continue
+        if part in CIT:   # 27 Nov 2026: library citation keys
+            out.append({'t': KL.get(part, part), 'u': CIT[part] if isinstance(CIT[part], str) else CIT[part][0]}); continue
+        _m = re.search(r'https?://\S+', part)   # a label with its own URL
+        if _m:
+            out.append({'t': part[:_m.start()].rstrip(' :(').strip() or part, 'u': _m.group(0).rstrip(').,;')}); continue
         u = None
         for lab, k in LABEL.items():
             if part.startswith(lab): u = K.get(k); break
@@ -101,6 +106,10 @@ if os.path.exists(_live) and 'const DATA = ' in open(_live).read():
     _old = open(_live).read(); _k = _old.find('const DATA = ') + len('const DATA = '); _, _e = json.JSONDecoder().raw_decode(_old, _k)
     _nk = _page.find('const DATA = ') + len('const DATA = '); _nd, _ne = json.JSONDecoder().raw_decode(_page, _nk)
     _page = _old[:_k] + _page[_nk:_ne] + _old[_e:]
+    # the model and tests scripts are this folder's own files, so they are replaced too (between their fixed markers)
+    _a = _page.find('/* ---------- what-if model (Epstein map)'); _b = _page.find('/* ---------- graph ---------- */')
+    assert 0 < _a < _b, 'model script markers'
+    _page = _page[:_a] + open(os.path.join(HERE, 'ep_viab_ui.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'ep_tests_ui.js'), encoding='utf-8').read() + '\n' + _page[_b:]
 open(_live, 'w').write(_page)
 if '--artifact' in sys.argv:
     open(sys.argv[sys.argv.index('--artifact') + 1], 'w').write(build(None))

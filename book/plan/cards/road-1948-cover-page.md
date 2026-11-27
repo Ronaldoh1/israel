@@ -4,50 +4,52 @@ The companion network map
 
 Every person, fund, government and document behind the founding of Israel, laid out as one network, and a way to ask of each of them: what if they had been missing?
 
-The map holds **802** people, organizations, states, documents and events. Between them run **1,441** ties that a cited source states, drawn from **555** distinct sources, from the Bank of England in 1694 to the eve of the June 1967 war.
+The map holds **862** people, organizations, states, documents and events. Between them run **1,539** ties that a cited source states, drawn from **630** distinct sources, from the Bank of England in 1694 to the eve of the June 1967 war.
 
 
 
 
 ## Take one part away
-On the full record, the map gives a founding in 1948 a chance of about 93.2%. The figure for any removal is always the product of three things: that starting point, how much of the nine things a state needed would remain, and how much of the years of work since 1882 would survive.
+On the full record, the map gives a founding in 1948 a chance of about 93.2%. The figure for any removal comes from three things: that starting point, how much of the nine things a state needed would remain, and how much of the years of work since 1882 would survive. Roughly:
 
-**Chance in 1948 = 93.2% × share of the nine needs left × share of the 66 years of work kept**
+**Chance in 1948 ≈ 93.2% × share of the nine needs left × share of the 66 years of work kept**
+
+The map reads cause and effect: what grew from a removed part weakens with it, so without the Zionist Organization there is no Keren Hayesod, and without the Keren Hayesod a weaker United Palestine Appeal. Only the same circle can step in for a removed actor, and every channel's years are counted together from 1882.
 
 | Remove | Needs left | Years kept | In 1948 | By 1958 | By 1978 | Ever | Verdict |
 |---|---|---|---|---|---|---|---|
 | Nothing: the full record | 100% | 100% | 93% | 93% | 93% | 93% | Happens on time, in 1948 |
-| The Rothschild family | 89% | 41% | 34% | 34% | 34% | 42% | Unlikely |
-| The United States | 32% | 80% | 24% | 24% | 48% | 48% | Unlikely |
-| Britain's backing | 67% | 57% | 36% | 36% | 48% | 48% | Unlikely |
-| The Balfour Declaration | 99% | 60% | 56% | 56% | 56% | 56% | Possible, with great difficulty |
+| The Rothschild family | 92% | 77% | 64% | 64% | 67% | 68% | Possible, with great difficulty |
+| The United States | 35% | 90% | 29% | 50% | 50% | 50% | Unlikely |
+| Britain's backing | 60% | 59% | 32% | 32% | 47% | 47% | Unlikely |
+| The Balfour Declaration | 91% | 60% | 49% | 49% | 54% | 54% | Unlikely |
 | The UN vote | 90% | 100% | 84% | 88% | 88% | 88% | Still likely, but delayed |
-| The Soviet bloc's arms and votes | 88% | 99% | 82% | 83% | 83% | 83% | Still likely, but delayed |
-| The Czechoslovak arms | 89% | 100% | 83% | 83% | 83% | 83% | Still likely, but delayed |
+| The Soviet bloc's arms and votes | 90% | 100% | 83% | 84% | 84% | 84% | Still likely, but delayed |
+| The Czechoslovak arms | 91% | 100% | 84% | 84% | 84% | 84% | Still likely, but delayed |
 | The Mandate's immigration certificates | 84% | 100% | 78% | 78% | 78% | 78% | Still likely, but delayed |
 | The Holocaust survivors' case | 95% | 100% | 88% | 88% | 88% | 88% | Happens on time, in 1948 |
-| Theodor Herzl | 100% | 98% | 91% | 91% | 91% | 91% | Happens on time, in 1948 |
+| Theodor Herzl | 86% | 90% | 69% | 73% | 73% | 73% | Possible, with great difficulty |
 | Truman | 97% | 100% | 89% | 89% | 89% | 89% | Happens on time, in 1948 |
-| Zionism as an organized movement | 0% | 72% | 0% | 0% | 0% | 0% | Not possible on this record |
+| Zionism as an organized movement | 0% | 50% | 0% | 0% | 0% | 0% | Not possible on this record |
 
 **How much of each need is left** (share of what the full record gave it)
 
 | Remove | Money | Land and settlers | Arms and force | Diplomacy and law | Organization | Recognition | Legitimacy | People | Land held |
 |---|---|---|---|---|---|---|---|---|---|
-| The Rothschild family | 64% | 80% | 99% | 98% | 81% | 100% | 100% | 100% | 100% |
-| The United States | 63% | 100% | 76% | 21% | 63% | 26% | 40% | 100% | 100% |
-| Britain's backing | 100% | 97% | 97% | 80% | 99% | 47% | 76% | 39% | 54% |
-| The Balfour Declaration | 100% | 100% | 100% | 94% | 99% | 100% | 92% | 100% | 100% |
-| The UN vote | 100% | 100% | 100% | 95% | 100% | 50% | 84% | 100% | 100% |
-| The Soviet bloc's arms and votes | 88% | 97% | 50% | 98% | 100% | 86% | 100% | 100% | 100% |
-| The Czechoslovak arms | 88% | 100% | 50% | 99% | 100% | 98% | 100% | 100% | 100% |
-| The Mandate's immigration certificates | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 39% | 100% |
-| The Holocaust survivors' case | 100% | 100% | 100% | 100% | 100% | 100% | 60% | 100% | 100% |
-| Theodor Herzl | 100% | 100% | 100% | 98% | 97% | 100% | 100% | 100% | 100% |
-| Truman | 100% | 100% | 100% | 90% | 100% | 100% | 71% | 100% | 100% |
+| The Rothschild family | 98% | 98% | 100% | 100% | 99% | 100% | 100% | 100% | 98% |
+| The United States | 99% | 100% | 98% | 63% | 96% | 71% | 85% | 100% | 100% |
+| Britain's backing | 96% | 100% | 100% | 98% | 99% | 89% | 98% | 79% | 93% |
+| The Balfour Declaration | 96% | 100% | 100% | 100% | 99% | 100% | 100% | 96% | 100% |
+| The UN vote | 100% | 100% | 100% | 100% | 100% | 91% | 99% | 100% | 100% |
+| The Soviet bloc's arms and votes | 100% | 100% | 91% | 100% | 100% | 99% | 100% | 100% | 100% |
+| The Czechoslovak arms | 100% | 100% | 91% | 100% | 100% | 100% | 100% | 100% | 100% |
+| The Mandate's immigration certificates | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 84% | 100% |
+| The Holocaust survivors' case | 100% | 100% | 100% | 100% | 100% | 100% | 95% | 100% | 100% |
+| Theodor Herzl | 97% | 99% | 100% | 100% | 98% | 100% | 100% | 100% | 92% |
+| Truman | 100% | 100% | 100% | 99% | 100% | 100% | 97% | 100% | 100% |
 | Zionism as an organized movement | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% |
 
-Example: removing the Rothschild family gives 93.2% × 89% × 41% = 34%. The bigger loss is time: about 39 of the 66 years of work would have to be done again. Money keeps 64% of what the full record gave it.
+Example: removing the Rothschild family leaves 92% of the needs and 77% of the years, and the map reads 64% in 1948. The bigger loss is time: about 15 of the 66 years of work would have to be done again. Money keeps 98% of what the full record gave it.
 
 
 ## How the map was built
@@ -141,15 +143,15 @@ Every weight on the map is a choice the record does not make by itself, so each 
 | Test | Published | Lowest | Highest |
 |---|---|---|---|
 | Full record | 93% | 91% | 94% |
-| Without Herzl | 91% | 89% | 92% |
+| Without Herzl | 69% | 58% | 74% |
 | Without the UN vote | 84% | 75% | 88% |
-| Without the Balfour Declaration | 56% | 55% | 56% |
-| Without Britain's backing | 36% | 30% | 39% |
-| Without the Rothschild family | 34% | 31% | 36% |
-| Without the United States | 24% | 15% | 31% |
+| Without the Balfour Declaration | 49% | 44% | 52% |
+| Without the Rothschild family | 64% | 58% | 67% |
+| Without Britain's backing | 32% | 25% | 36% |
+| Without the United States | 29% | 17% | 37% |
 | Every often-denied part at once | 13% | 7% | 18% |
 
-The map was also run 52 more times, each time leaving out one of the most-used sources. No single source moves the Rothschild result by more than a few points. The largest shift anywhere is in the test that removes the Mandate's immigration certificates, which leans on one immigration table.
+On the 19 November build the map was also run 52 more times, each time leaving out one of the most-used sources, and the ranking held; that check has not yet been repeated on the cause-and-effect build, so read these ranges as covering the weights, not the sources.
 
 ## What the map cannot know
 
@@ -157,7 +159,7 @@ The map was also run 52 more times, each time leaving out one of the most-used s
 
 **It counts only what is documented.** Someone who would have stepped in but left no record cannot be a substitute.
 
-**It cannot weigh a cause.** The pogroms of 1881 or the writings of Hess and Kalischer score nothing when removed. A zero means the map cannot measure them, not that they did not matter.
+**It weighs a cause only through what it caused.** The pogroms of 1881 and the May Laws now count through the movements they set off: without the pogroms the map reads 83% in 1948. Ideas with no documented route to an act, such as the writings of Hess and Kalischer, still score nothing; a zero means the map cannot measure them, not that they did not matter.
 
 **Legitimacy is a judgment about weight.** No document says how much public sympathy weighed beside money or arms. The map counts it like the other needs, and the tests above vary it.
 
@@ -169,8 +171,8 @@ The map was also run 52 more times, each time leaving out one of the most-used s
 
 
 
-Share: [www.tinyurl.com/1948scam](https://www.tinyurl.com/1948scam)
+Share: [www.1948scam.com](https://www.1948scam.com)
 TikTok [@chosenron13](https://www.tiktok.com/@chosenron13)
 Instagram [@chosen.ron13](https://www.instagram.com/chosen.ron13)
 
-Figures from a live run of the map on 20 November 2026. The map's opening panel, its Tests list and the book's appendix give every removal in full, with the people and documents behind each figure.
+Figures from a live run of the map on 27 November 2026. The map's opening panel, its Tests list and the book's appendix give every removal in full, with the people and documents behind each figure.

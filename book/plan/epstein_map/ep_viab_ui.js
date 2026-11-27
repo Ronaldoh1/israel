@@ -20,6 +20,8 @@ function vBase(rem, after){ const live=vAlive(rem), cap=VB.channels.map(()=>0);
   const yrs=[]; for(let Y=VB.y0;Y<=VB.y1;Y++){ if(gone||(after&&Y>after)){ yrs.push(0); continue; } let s=0, s0=0;
     for(const [f,t,c,w,y] of VB.edges){ if(c!==0||(y&&y>Y)) continue; s0+=w; if(ok(f,t)) s+=w; } yrs.push(s0?1-Math.exp(-VK*s/s0):1); }
   pc[0]=yrs.reduce((a,b)=>a+b,0)/yrs.length;
+  const ry=[]; for(let Y=VB.y0;Y<=VB.y1;Y++){ if(gone||(after&&Y>after)){ ry.push(0); continue; } const on=VB.recruit.filter(r=>r[1]<=Y&&Y<=r[2]); if(!on.length){ ry.push(VB.cal); continue; } ry.push(1-Math.exp(-VK*on.filter(r=>!rem.has(r[0])).length/on.length)); }
+  pc[6]=ry.reduce((a,b)=>a+b,0)/ry.length;
   const eff=pc.map((p,i)=>VB.cover.includes(i)?0.5+0.5*p:p);
   return {P:100*eff.reduce((a,b)=>a*b,1), pc, cap, gone}; }
 function vScore(rem0){ const rem=new Set(rem0);
@@ -143,7 +145,7 @@ function vOpen(h){ vModal.classList.remove('ipm'); vCard.classList.remove('ivc')
 function vClose(){ vModal.classList.remove('on'); vModal.classList.remove('ipm'); }
 
 /* ---------- the explainer as a paged, colour-keyed walkthrough (the text itself is unchanged) ---------- */
-const VPAGES = [{k:"The inputs",t:"What counts as the operation",s:"The nodes that ran the business, and the six channels that supported it.",c:"var(--k-government)",m:/^1\.|^2\./i},{k:"The weights",t:"Money, banking and the other channels",s:"Money as a stock built year by year, and how verified and reported ties count.",c:"var(--k-institution)",m:/^3\.|^4\./i},{k:"The arithmetic",t:"Running, cover and two decisions",s:"Why four channels ran it, how cover protected it, and the 2008 deal and 2019 arrest.",c:"var(--k-company)",m:/^5\.|^6\./i},{k:"The readings",t:"Reading the result",s:"The verdict thresholds, the heaviest nodes, and what the model cannot know.",c:"var(--k-document)",m:/^7\.|heaviest|cannot know/i}];
+const VPAGES = [{k:"The inputs",t:"What counts as the operation",s:"The nodes that ran the business, and the seven channels that supported it.",c:"var(--k-government)",m:/^1\.|^2\./i},{k:"The weights",t:"Money, banking and the other channels",s:"Money as a stock built year by year, and how verified and reported ties count.",c:"var(--k-institution)",m:/^3\.|^4\./i},{k:"The arithmetic",t:"Running, cover and two decisions",s:"Why five channels ran it, how cover protected it, and the 2008 deal and 2019 arrest.",c:"var(--k-company)",m:/^5\.|^6\./i},{k:"The readings",t:"Reading the result",s:"The verdict thresholds, the heaviest nodes, and what the model cannot know.",c:"var(--k-document)",m:/^7\.|heaviest|cannot know/i}];
 let ipI = 0, ipList = [];
 function vOpenIntro(h){
   const box = document.createElement('div'); box.innerHTML = h;
@@ -222,15 +224,15 @@ function vIntro(){
   <p class="vtxt">Take any node out and the map works out the chance that the operation still runs as the record documents it, from 1991 to 2019, and whether the 2008 deal and the 2019 arrest still happen. It is a model of the documented ties, not a measured probability, and it is the same arithmetic as the Road to 1948 map. Here is everything it does.</p>
   <h4>1. What counts as the operation</h4>
   <p class="vtxt">Epstein, Maxwell, the office and companies that carried his business (Indyke, Kahn, HBRK, Southern Trust, Financial Trust, the trusts, JEGE, Plan D, Hyperion and others), and the properties and aircraft they owned: ${VB.ent.length} nodes. An owned company, trust or property falls with whoever owned it.</p>
-  <h4>2. Six channels</h4>
-  <p class="vtxt">Every documented tie between the operation and an outside node is sorted into one: <b>money in</b> (people documented as paying him); <b>banking</b>; <b>places and aircraft</b>; <b>staff and operations</b>; <b>legal and official cover</b> (his lawyers, the deals, the Virgin Islands tax break); <b>access and reputation</b> (correspondence, introductions, the people and causes his money reached). Investigations, testimony, lawsuits, reporting, flight-log entries and records are not support and are left out. ${VB.edges.length} ties count.</p>
+  <h4>2. Seven channels</h4>
+  <p class="vtxt">Every documented tie between the operation and an outside node is sorted into one: <b>money in</b> (people documented as paying him); <b>banking</b>; <b>places and aircraft</b>; <b>staff and operations</b>; <b>legal and official cover</b> (his lawyers, the deals, the Virgin Islands tax break); <b>access and reputation</b> (correspondence, introductions, the people and causes his money reached); and <b>recruitment</b>, built only on what a court proved: ${VB.recruit.map(r=>esc(r[3])).join('; ')}. Recruitment is read year by year from those convictions; a year no conviction covers is left as it is by any removal, and no one named but never charged is counted. Investigations, testimony, lawsuits, reporting, flight-log entries and records are not support and are left out. ${VB.edges.length} ties count.</p>
   <h4>3. Money is a stock, built year by year</h4>
   <p class="vtxt">Each money tie carries the sum the record states, in millions of dollars; a tie with no stated sum counts ${vMoney(VB.default_m)}, an assumption. Each year from ${VB.y0} to ${VB.y1} is read against the money that had come in by then, so money that arrived early (Wexner's, from 1991) carries more years than money that came late (Black's, from 2012).</p>
   <table>${amts.map(([k,a])=>`<tr><td>${esc(a[1])}</td><td>${vMoney(a[0])}</td></tr>`).join('')}</table>
   <h4>4. The other channels</h4>
   <p class="vtxt">A verified tie counts 1, a reported one 0.6; leads still to verify count nothing. A bank tie counts the years the account ran (${VB.default_bank_years} if unstated). Each channel's strength is 1 &minus; e<sup>&minus;k&middot;C/C₀</sup>, where C is what still connects, C₀ the full record and k is set so the full record gives 99%: spare capacity protects a channel, and losses bite harder as it empties.</p>
   <h4>5. Running and cover</h4>
-  <p class="vtxt">Money, banking, places and staff ran the operation: all four were needed, so the chance is their product. Legal cover and access protected it rather than ran it, so each enters as half plus half its strength: losing all of either halves the chance instead of ending it. On the full record: ${Math.round(V0.P)}%.</p>
+  <p class="vtxt">Money, banking, places, staff and recruitment ran the operation: all five were needed, so the chance is their product. Legal cover and access protected it rather than ran it, so each enters as half plus half its strength: losing all of either halves the chance instead of ending it. On the full record: ${Math.round(V0.P)}%.</p>
   <h4>6. Two decisions</h4>
   <p class="vtxt"><b>${esc(D1.name)}</b>, decided by Alexander Acosta. ${esc(D1.why)} On the record its chance is the push over push plus resistance: ${Math.round(p1*100)}%; the readings show it relative to that. If Acosta is removed an unnamed successor decides, with one unit added to each side, and Lefkowitz's personal approaches to Acosta do not pass to him. Without the deal, the case is taken to go federal in 2008, so the operation's ties that begin after 2008 never happen.</p>
   <p class="vtxt"><b>${esc(D2.name)}</b>, decided by Geoffrey Berman's office. ${esc(D2.why)} On the record: ${Math.round(p2*100)}%. "Brought to account" is the chance of either: a federal case in 2008, or, with the deal, the 2019 arrest.</p>
@@ -239,7 +241,7 @@ function vIntro(){
   <h4>The heaviest nodes, each removed alone</h4>
   <table>${heavy.map(n=>`<tr><td>${esc(n.name)}<small style="display:block;color:var(--muted)">${esc(n.qop.whatif.verdict)}</small></td><td>${n.qop.whatif.P}%</td></tr>`).join('')}</table>
   <h4>What it cannot know, and what it does not do</h4>
-  <p class="vtxt">It counts documented ties, not their gravity: a criminal conviction covering ten years of conduct counts as one tie. It cannot know whether someone undocumented would have stepped in. And it names no one as a successor to Epstein or Maxwell: where the readings show work still covered, that means other documented ties remain, not that anyone would have taken their place. Group removals are in the Remove a node panel.</p>
+  <p class="vtxt">It counts documented ties, not their gravity: outside recruitment, a criminal conviction covering ten years of conduct counts as one tie. It cannot know whether someone undocumented would have stepped in. And it names no one as a successor to Epstein or Maxwell: where the readings show work still covered, that means other documented ties remain, not that anyone would have taken their place. Group removals are in the Remove a node panel.</p>
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Start exploring</button></div>`);
   vLS(VINTRO, 1);
 }
@@ -249,7 +251,7 @@ function vResult(what, before, ids){
   const R=vScore(removed), cutSet=ids||[...removed], cut=E.filter(e=>cutSet.some(x=>e.f===x||e.t===x)&&e.status!=='not-established').length;
   vOpen(`<div class="kind">Removed from the network</div><h3 id="vmH">${esc(what)}</h3>${vHead(R)}
   <p class="vtxt">${ids?`Before this removal ${Math.round(before)}%, now ${Math.round(R.P)}% (${Math.round(V0.P)}% on the full record).`:`Everything removed is read together: ${Math.round(R.P)}% against ${Math.round(V0.P)}% on the full record.`}</p>
-  <h4>The six channels</h4>${vBars(R)}
+  <h4>The seven channels</h4>${vBars(R)}
   <h4>What happened in the graph</h4><ul><li>${cut} documented tie${cut===1?'':'s'} cut.</li><li>Money in still reaching him: ${vMoney(R.cap[0])} of ${vMoney(VB.cap0[0])}.</li><li>${removed.size} node${removed.size===1?'':'s'} removed in total, read together.</li></ul>
   ${R.decisions&&R.decisions.length?'<h4>Key decisions</h4>'+vDecText(R):''}${vNeed(R)}
   <div class="vbtns"><button class="vbtn pri" type="button" data-v="close">Keep exploring</button>${ids&&ids.length?'<button class="vbtn" type="button" data-v="undo">Undo this removal</button>':''}<button class="vbtn" type="button" data-v="reset">Reset the graph</button><button class="vbtn" type="button" data-v="how">How this is computed</button></div>`);

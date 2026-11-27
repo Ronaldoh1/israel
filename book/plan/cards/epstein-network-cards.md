@@ -3,7 +3,7 @@
 16 prompts for ChatGPT image generation, 1080×1920 (9:16). Paste each code block on its own.
 
 - Cards 1–5 explain how the map and its what-if model are built. Cards 6–7 show what you can do on it, including running your own tests. Cards 8–14 are the tests we ran, with their results. Card 15 sets out the limits.
-- Every figure comes from the live map as of 5 November 2026: 419 nodes, 825 ties, 375 distinct sources (84 of them DOJ release documents) and 17 prepared tests. Re-check the test results if the map is rebuilt.
+- Every figure comes from the live map as of 27 November 2026: 570 nodes, 1,092 ties, 542 distinct sources (83 of them DOJ release documents) and 17 prepared tests. Re-check the test results if the map is rebuilt.
 - The cover shows the library's own Epstein volume (plum cloth, gold ouroboros). No person is depicted on any card.
 - Colours: the bright system (gold foil headlines and numbers, crimson red callout bar and CTA button, electric cyan section labels, white text) on a plum-black background; each book keeps its real cloth colour. Large CTA block on every card: www.tinyurl.com/thetruthlibrary · TikTok @chosenron13 · Instagram @chosen.ron13.
 
@@ -20,7 +20,7 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE LIBRARY
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "THE EPSTEIN NETWORK MAP"
 SUBHEAD (white italic serif): "Take any piece out. See what still runs."
 
-TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "419" / "PEOPLE, FIRMS, AGENCIES & DOCUMENTS" · "825" / "DOCUMENTED TIES" · "375" / "DISTINCT SOURCES BEHIND THEM" · "84" / "DOJ RELEASE DOCUMENTS CITED" · "17" / "PREPARED TESTS, PLUS YOUR OWN" · "0" / "HIDDEN WEIGHTS".
+TRUST GRID (the heart of the card, built to earn trust at first glance): six glossy dark-glass tiles in a 3×2 grid, thick gold borders, each with a giant gold foil number and a white small-caps label: "570" / "PEOPLE, FIRMS, AGENCIES & DOCUMENTS" · "1,092" / "DOCUMENTED TIES" · "542" / "DISTINCT SOURCES BEHIND THEM" · "83" / "DOJ RELEASE DOCUMENTS CITED" · "17" / "PREPARED TESTS, PLUS YOUR OWN" · "0" / "HIDDEN WEIGHTS".
 
 PANEL ONE (dark glass, gold border), header in electric cyan spaced caps "WHERE THE RECORD COMES FROM", white text:
 "Court filings and settlements, the 2008 deal and the Justice Department's own review, House Oversight transcripts, the DOJ's Epstein Files release, bank settlements and regulators, and named reporting from the Miami Herald, the New York Times, Reuters, NPR and others"
@@ -106,27 +106,27 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 
 ---
 
-## 3 · Six channels
+## 3 · Seven channels
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, bold and vibrant like a blockbuster movie poster. Background: deep plum-black #1A0E1F blending to wine #3A1630, with glowing gold light. COLOUR SYSTEM — every part of the card has its own colour so nothing blends together: rich metallic gold foil #F0C040 with bright bevelled highlights (headline, big numbers, frames and borders); crimson red #C8102E (the callout bar and the main CTA button); electric cyan #4EC9E0 (small spaced-out section labels and thin dividers); brilliant white #FFFFFF (body text and handles); each book keeps its own cloth colour. Saturated, glossy, high contrast — NOT pastel, NOT faded, NOT muted, NOT monotone. Glossy glass depth, warm gold glow, subtle film grain, soft cinematic vignette.
 
-HERO (top quarter): six tall glowing gold pillars in a dark vault, labelled at their bases in white small caps: "MONEY IN", "BANKING", "PLACES & AIRCRAFT", "STAFF", "LEGAL COVER", "ACCESS"; the last two pillars translucent, half as solid as the others. Dramatic warm gold light, a bright rim light, faint gold dust in the air.
+HERO (top quarter): seven tall glowing gold pillars in a dark vault, labelled at their bases in white small caps: "MONEY IN", "BANKING", "PLACES & AIRCRAFT", "STAFF", "RECRUITMENT", "LEGAL COVER", "ACCESS"; the last two pillars translucent, half as solid as the others. Dramatic warm gold light, a bright rim light, faint gold dust in the air.
 
 LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN NETWORK MAP · HOW IT'S BUILT · 3/15".
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT THE OPERATION RAN ON"
-SUBHEAD (white italic serif): "Every supporting tie feeds one of six channels."
+SUBHEAD (white italic serif): "Every supporting tie feeds one of seven channels."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "220" with an electric cyan small-caps label "DOCUMENTED TIES THAT FED THE OPERATION".
+GIANT GOLD FOIL NUMBER at the left of the panel: "267" with an electric cyan small-caps label "DOCUMENTED TIES THAT FED THE OPERATION".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Running it: money in, banking, places and aircraft, staff and operations.
+1  Running it: money in, banking, places and aircraft, staff, and recruitment as proven in court.
 2  Protecting it: legal and official cover, and access and reputation.
 3  The operation is Epstein, Maxwell, his office, companies and trusts, and the houses and planes they owned: 29 nodes.
 4  A company, trust or house falls with whoever owned it.
-5  Losing all cover halves the chance; losing any of the four running channels ends it.
+5  Losing all cover halves the chance; losing any of the five running channels ends it.
 
-CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "ALL FOUR RUNNING CHANNELS WERE NEEDED"
+CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "ALL FIVE RUNNING CHANNELS WERE NEEDED"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
 
 CTA BLOCK (bottom 30% of the card, the second most eye-catching area after the headline):
@@ -221,7 +221,7 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "1 TAP" with an electric cyan s
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Tap any node, then "Remove from the network": one, or several in a row.
 2  A light flashes green, yellow or red with the new chance, then fades on its own.
-3  The results show the chance it still runs, whether the 2008 deal and 2019 arrest still happen, and all six channels.
+3  The results show the chance it still runs, whether the 2008 deal and 2019 arrest still happen, and all seven channels.
 4  Your removals are saved until you press Reset.
 5  Tap "How this is computed" any time for every rule and every weight.
 
@@ -276,7 +276,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality, bold and vibrant like a blockbuster movie poster. Background: deep plum-black #1A0E1F blending to wine #3A1630, with glowing gold light. COLOUR SYSTEM — every part of the card has its own colour so nothing blends together: rich metallic gold foil #F0C040 with bright bevelled highlights (headline, big numbers, frames and borders); crimson red #C8102E (the callout bar and the main CTA button); electric cyan #4EC9E0 (small spaced-out section labels and thin dividers); brilliant white #FFFFFF (body text and handles); each book keeps its own cloth colour. Saturated, glossy, high contrast — NOT pastel, NOT faded, NOT muted, NOT monotone. Glossy glass depth, warm gold glow, subtle film grain, soft cinematic vignette.
 
-HERO (top quarter): two glass display cases side by side in a dark vault: the left one empty and dark with its gold label reading "0%", the right one still lit, its label reading "93%". Dramatic warm gold light, a bright rim light, faint gold dust in the air.
+HERO (top quarter): two glass display cases side by side in a dark vault: the left one empty and dark with its gold label reading "0%", the right one still lit, its label reading "60%", half its lights out. Dramatic warm gold light, a bright rim light, faint gold dust in the air.
 
 LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN NETWORK MAP · THE TESTS WE RAN · 8/15".
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHOSE OPERATION WAS IT?"
@@ -286,8 +286,8 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "0%" with an electric cyan smal
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Without Epstein: 0%. The money came to him; the accounts, companies, trusts, houses and planes were his.
-2  Without Maxwell: 93% on the documented ties.
-3  That is the map's limit: her conviction covers years of conduct and counts here as one tie.
+2  Without Maxwell: 60%, badly crippled. The recruitment a court proved loses ten of its twelve years.
+3  Recruitment counts only convictions: hers (2021, recruiting girls 1994–2004) and his 2008 plea (Palm Beach, 2004–05).
 4  The map names no one as anyone's successor; it shows only which documented ties remain.
 5  Without both: 0%. No one is left to run it.
 
@@ -315,11 +315,11 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT IF THE MONEY HAD NEVER COME?"
 SUBHEAD (white italic serif): "The two biggest payers, removed."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "43%" with an electric cyan small-caps label "RUNS WITHOUT LES WEXNER: "BADLY CRIPPLED"".
+GIANT GOLD FOIL NUMBER at the left of the panel: "42%" with an electric cyan small-caps label "RUNS WITHOUT LES WEXNER: "BADLY CRIPPLED"".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Without Wexner: 43%. From 1991 to 2011 almost all the money the record quantifies is his.
-2  Without Leon Black: 91%. His $170M came from 2012, after the houses, island and staff were in place.
+1  Without Wexner: 42%. From 1991 to 2011 almost all the money the record quantifies is his.
+2  Without Leon Black: 90%. His $170M came from 2012, after the houses, island and staff were in place.
 3  Without both: 25%, very unlikely to run.
 4  Wexner has said Epstein misappropriated vast sums, and that Epstein returned $46M in 2008.
 5  Black denies wrongdoing and says the payments were for tax advice.
@@ -348,13 +348,13 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT IF NO BANK HAD KEPT HIM?"
 SUBHEAD (white italic serif): "One bank, then every bank."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "19%" with an electric cyan small-caps label "RUNS IF NO BANK HAD KEPT HIM AS A CLIENT".
+GIANT GOLD FOIL NUMBER at the left of the panel: "24%" with an electric cyan small-caps label "RUNS IF NO BANK HAD KEPT HIM AS A CLIENT".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Without JPMorgan alone: 93%. Other banks held his accounts too.
 2  JPMorgan kept him from 1998 to 2013, through his 2006 arrest and 2008 plea; it paid $290M to settle the victims' class action in 2023, without admitting liability.
 3  Deutsche Bank took him on in 2013 and paid a $150M New York penalty in 2020.
-4  Without every bank: 19%. Nothing else in the record could do what a bank did.
+4  Without every bank: 24%. Nothing else in the record could do what a bank did.
 5  The clearest finding on the map: the operation needed banks that kept him.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "NO BANK, NO OPERATION"
@@ -381,12 +381,12 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHAT IF THERE HAD BEEN NO DEAL?"
 SUBHEAD (white italic serif): "The non-prosecution agreement of 2008."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "50%" with an electric cyan small-caps label "RUNS WITHOUT THE DEAL: ITS LATER YEARS NEVER HAPPEN".
+GIANT GOLD FOIL NUMBER at the left of the panel: "31%" with an electric cyan small-caps label "RUNS WITHOUT THE DEAL: ITS LATER YEARS NEVER HAPPEN".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  No deal: 50%. A federal case in 2008 cuts everything dated after it: Black's money, the Deutsche Bank years, the later planes.
+1  No deal: 31%. A federal case in 2008 cuts everything dated after it: Black's money, the Deutsche Bank years, the later planes.
 2  Without Alexander Acosta: the deal is still 92% as likely; the push for it came from the defence and above him.
-3  Without the six defence lawyers: the deal is two-thirds as likely, and the operation 75%.
+3  Without the six defence lawyers: the deal is two-thirds as likely, and the operation 71%.
 4  The prosecutor Marie Villafaña had drafted a 60-count indictment.
 5  The Justice Department's own 2020 review found "poor judgment", not misconduct.
 
@@ -419,7 +419,7 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "86%" with an electric cyan sma
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Without the Miami Herald's "Perversion of Justice": 86% — other pushes remain on the map.
 2  The record credits the arrest largely to the series, more than a count of pushes can weigh.
-3  Without Virginia Giuffre's litigation: 95%.
+3  Without Virginia Giuffre's litigation: the 2019 arrest is 95% as likely.
 4  Without the SDNY's US Attorney: 91%; an unnamed successor still faces the same push.
 5  None of these changes whether the operation ran; they change whether it ended.
 
@@ -452,7 +452,7 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "75%" with an electric cyan sma
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Without the houses and the island: 75%, weakened. His money could have bought others.
 2  Without the aircraft and pilots: 91%.
-3  Without his reputation managers: 95%: they served his image, not the operation.
+3  Without his reputation managers: 94%: they served his image, not the operation.
 4  Without the Virgin Islands tax breaks ($219.8M and $80.6M in benefits): 94%.
 5  The places are where the documented conduct happened; the map counts what they did for the operation.
 
@@ -480,16 +480,16 @@ LABEL TAG: dark glass pill with a gold foil edge, white small caps: "THE EPSTEIN
 HEADLINE (huge, heavy condensed sans like Montserrat Black, bevelled metallic gold foil with a bright shine and a deep drop shadow): "WHO MATTERED MOST"
 SUBHEAD (white italic serif): "Each node removed alone, ranked."
 
-GIANT GOLD FOIL NUMBER at the left of the panel: "43%" with an electric cyan small-caps label "LES WEXNER: THE HEAVIEST SINGLE NODE AFTER EPSTEIN".
+GIANT GOLD FOIL NUMBER at the left of the panel: "31%" with an electric cyan small-caps label "THE 2008 DEAL: THE HEAVIEST SINGLE NODE AFTER EPSTEIN".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Epstein: 0%. Without him there is nothing to run.
-2  Les Wexner: 43%. The money that built it, from 1991.
-3  The 2008 deal: 50%. Without it, the last eleven years never happen.
-4  Then far behind: Black 92%, Acosta 92%, FirstBank 92%, JPMorgan 93%, Maxwell 93%.
+2  The 2008 deal: 31%. Without it, the last eleven years never happen.
+3  Les Wexner: 42%. The money that built it, from 1991. Then Maxwell: 60%, the recruitment a court proved.
+4  Then far behind: Acosta 89%, Black 91%, FirstBank 92%, JPMorgan 93%.
 5  Most of the map is access: hundreds of ties that mattered for standing, not for running it.
 
-CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "THREE THINGS HELD IT UP"
+CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "FOUR THINGS HELD IT UP"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.
 
 CTA BLOCK (bottom 30% of the card, the second most eye-catching area after the headline):
@@ -520,7 +520,7 @@ PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps h
 2  It can't know who undocumented might have stepped in, and it names no successors.
 3  Its weights are assumptions: $1M for unstated sums, cover at half weight, each shown on the map.
 4  It cannot say what a jury would have decided in 2008.
-5  Browser and code give the same numbers: checked on all 419 nodes, no mismatches.
+5  Browser and code give the same numbers: checked on all 570 nodes, no mismatches.
 
 CALLOUT BAR (a full-width crimson red #C8102E bar, white heavy condensed caps): "CHECK EVERY NUMBER YOURSELF"
 Anti-cram rule: if space runs short, shorten fact 5 first; never shrink the URL or the social buttons.

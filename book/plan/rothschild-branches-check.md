@@ -26,4 +26,5 @@ James: 410,000 pounds (1954); IL 6M for the Knesset (after his death, 1957). Dor
 ## Corrections made
 - Volume II, Prelude: new section bc_s04b "Every Branch of the Family, Checked".
 - bc_s04: "money overwhelmingly from mass small-donor giving" corrected: by documented sums Edmond ~38%, mass fund drives ~44%, Haavara ~16%.
+- 27 Nov 2026: with the movement's own funds and private capital now on the map, bc_s04 reads Edmond and James about 11%, private and immigrant capital about half, the fund drives about a third, Haavara about 4%.
 - Network map: Louis von Rothschild, Robert de Rothschild, the 1929 Paris relief fund, Edmond's 1918 hospital gift; after 1948: the 1954 gift and the Supreme Court building (red). Tests unchanged (Vienna money too small to move any figure).

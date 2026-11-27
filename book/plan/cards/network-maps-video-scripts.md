@@ -1,9 +1,9 @@
-# The two network maps: video scripts (20 Nov 2026)
+# The two network maps: video scripts (27 Nov 2026)
 
-Two-minute explainers for each map (one technical, one for the general public), and ten one-minute highlights from the Epstein Network Map. Two minutes is about 290 spoken words; one minute about 150. Every figure comes from the maps as of 20 November 2026.
+Two-minute explainers for each map (one technical, one for the general public), and ten one-minute highlights from the Epstein Network Map. Two minutes is about 290 spoken words; one minute about 150. Every figure comes from the maps as of 27 November 2026.
 
 Closing line on every script, so the account reads the same each time: "It's free, and every tie is linked to its source. Link in my bio. Follow @chosenron13."
-Links: Israel map → www.tinyurl.com/1948scam · Epstein map and the full library → www.tinyurl.com/thetruthlibrary
+Links: Israel map → www.1948scam.com · Epstein map and the full library → www.tinyurl.com/thetruthlibrary
 
 ---
 
@@ -13,19 +13,19 @@ Links: Israel map → www.tinyurl.com/1948scam · Epstein map and the full libra
 
 Here's how the Israel Network Map actually works, for anyone who wants to check the method.
 
-It holds 802 people, organizations, states, documents and events, from the Bank of England in 1694 to the eve of the 1967 war. Between them run 1,441 ties, drawn from 555 sources. A tie is an act: funded, founded, signed, voted, sold, armed. Nothing goes on the map because of who someone was.
+It holds 862 people, organizations, states, documents and events, from the Bank of England in 1694 to the eve of the 1967 war. Between them run 1,539 ties, drawn from 630 sources. A tie is an act: funded, founded, signed, voted, sold, armed. Nothing goes on the map because of who someone was.
 
-Every tie is graded. 1,235 are verified: the cited page states the act directly, and they count in full. 206 are reported, stated indirectly, and count a little over half. Over 2,000 more are names that only appear on the same page. Those are kept for searching and count for nothing.
+Every tie is graded. 1,338 are verified: the cited page states the act directly, and they count in full. 201 are reported, stated indirectly, and count a little over half. Over 2,000 more are names that only appear on the same page. Those are kept for searching and count for nothing.
 
 To weigh what the founding depended on, the map measures nine needs: money, land and settlers, arms, diplomacy and law, organization, recognition, legitimacy, people and land held. Money counts twice, because everything else ran on it. Each need follows a curve where the first part counts for more than the last.
 
-Then you take a part away and recalculate. A tie only counts if it still reaches the bodies that founded the state. The UN vote needs its two-thirds. Seven key decisions are read as push over push plus resistance. Lost years are rebuilt at the original pace, and every year of delay costs two percent.
+Then you take a part away and recalculate. A tie only counts if it still reaches the bodies that founded the state. The UN vote needs its two-thirds. Seven key decisions are read as push over push plus resistance. It reads cause and effect: what grew from a removed part weakens with it, and only the same circle can step in for a removed actor. Lost years are rebuilt at the original pace, and every year of delay costs two percent.
 
-The result is one formula: the 93.2 percent starting point, times the share of the needs left, times the share of the years kept. Take away the Rothschild family and you get 34 percent. Take away the United States: 24.
+Roughly, the result is the 93.2 percent starting point, times the share of the needs left, times the share of the years kept. Take away Edmond de Rothschild, with everything he did, and you get 70 percent. Take away the United States: 29.
 
-And every weight was stress-tested at half and at double, and the map was rerun 52 times leaving out one source each time.
+And every weight was stress-tested at half and at double, and on the earlier build the map was rerun 52 times leaving out one source each time.
 
-It's free, and every tie is linked to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every tie is linked to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ---
 
@@ -35,41 +35,41 @@ It's free, and every tie is linked to its source. Link in my bio: www.tinyurl.co
 
 What if you could take apart the founding of Israel, piece by piece, and see what it really depended on?
 
-That's what this map does. It holds 802 people, banks, governments, documents and events, from 1694 to 1967. Every line between them is something a source says actually happened: someone paid, someone signed, someone voted. Tap any line and you see the sentence and the source behind it.
+That's what this map does. It holds 862 people, banks, governments, documents and events, from 1694 to 1967. Every line between them is something a source says actually happened: someone paid, someone signed, someone voted. Tap any line and you see the sentence and the source behind it.
 
 Then you can ask: what if this part had been missing?
 
 On the full record, the map gives Israel's founding in 1948 about a 93 percent chance. That's just the starting line. It says the state was founded.
 
-Now take a piece away. Remove Theodor Herzl, the man most people credit with the whole idea, and it barely moves: 91 percent. Remove Truman: 89. The movement had already built enough.
+Now take a piece away. Remove Theodor Herzl, the man most people credit with the whole idea, and it falls to 69 percent: no Zionist Organization, and everything that grew from it is weaker. Remove Edmond de Rothschild, who paid for the first colonies from 1882: 70. The two founders count about the same. Remove Truman: 89.
 
-But remove the Rothschild family, and the chance in 1948 drops to 34 percent. Their money and their land work carried decades of the effort, and that time would have to be done again.
+Remove the whole Rothschild family: 64 percent. Their money and land work carried decades of the effort, and that time would have to be done again.
 
-Remove Britain's backing: 36 percent. Remove the United States: 24. Remove every part people usually deny or play down, all at once: 13 percent.
+Remove Britain's backing: 32 percent. Remove the United States: 29. Remove every part people usually deny or play down, all at once: 13 percent.
 
 The founding didn't come from one man or one vote. It came from money, empires and decades of organized work, and the map shows you each piece.
 
 These figures aren't predictions. They're a way of asking which parts of the documented record the founding needed. And you can run every test yourself.
 
-It's free, and every tie is linked to its source. Link in my bio: www.tinyurl.com/1948scam. Follow @chosenron13.
+It's free, and every tie is linked to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
 ---
 
 ## 3. The Epstein Network Map: how it works (technical, 2 min)
 
-**On screen:** the map, the six channels, then the Tests table with its ranges.
+**On screen:** the map, the seven channels, then the Tests table with its ranges.
 
 Here's how the Epstein Network Map is built, and how it weighs who and what the operation depended on.
 
-It holds 570 nodes and 1,095 ties. 834 are verified: the cited page states the act directly. 165 are reported. 51 rest on a single source and count for nothing until a second one confirms them. 18 are marked not established, including every claim that Epstein worked for an intelligence service, whichever country the claim names.
+It holds 570 nodes and 1,092 ties. 836 are verified: the cited page states the act directly. 188 are reported. 22 are leads still to verify, and count for nothing until a second source confirms them. 20 are marked not established, including every claim that Epstein worked for an intelligence service, whichever country the claim names.
 
 A tie is an act: a deed, a contract, a payment, an appointment, sworn testimony. Being in the files, a contact book or a photo is not a tie. Family members are separate, and nothing passes between them without a joint act.
 
-The operation is defined as Epstein, Maxwell, and the companies, trusts, properties and aircraft that carried his business. The map weighs six channels. Four ran it: money in, banking, places and aircraft, and staff. Two protected it: legal and official cover, and access and reputation. The protecting two count at half weight, because losing cover would have exposed the operation, not stopped it.
+The operation is defined as Epstein, Maxwell, and the companies, trusts, properties and aircraft that carried his business. The map weighs seven channels. Five ran it: money in, banking, places and aircraft, staff, and recruitment, counted only from what a court proved: Maxwell's 2021 conviction and Epstein's 2008 plea. Two protected it: legal and official cover, and access and reputation. The protecting two count at half weight, because losing cover would have exposed the operation, not stopped it.
 
 Money is weighed by the sums the record states, year by year from 1991 to 2019, because a payment in 2015 couldn't pay for 1995. Where no sum is given, it counts as one million dollars. The 2008 deal and the 2019 arrest are read as decisions: the push for each over push plus resistance.
 
-The full record reads 95 percent. Then you remove a part. Without Wexner: 43. Without every bank: 25. Without the 2008 deal: 51. Without Maxwell: 93, a limit of counting ties, not a verdict on her.
+The full record reads 94 percent. Then you remove a part. Without the 2008 deal: 31. Without Wexner: 42. Without every bank: 24. Without Maxwell: 60, because for ten of the twelve years the convictions cover, she is the only recruiter a court proved.
 
 Every weight was varied, and the map was rerun 40 times leaving out one source. The biggest shift was 11 points.
 
@@ -89,11 +89,11 @@ Then you can switch parts off and see what still runs.
 
 On the full record, the operation runs. Now remove the famous names, the people in the photos and on the flight lists. It barely moves. They're there, but the operation didn't run on them.
 
-Remove the money, and it collapses. Without Les Wexner, the chance it runs as documented falls to 43 percent. Without Wexner and Leon Black, the two men who paid him the most, 25.
+Remove the money, and it collapses. Without Les Wexner, the chance it runs as documented falls to 42 percent. Without Wexner and Leon Black, the two men who paid him the most, 25.
 
-Remove the banks: 25 percent. JPMorgan kept him through his arrest and his plea. When it let him go, Deutsche Bank took him on.
+Remove the banks: 24 percent. JPMorgan kept him through his arrest and his plea. When it let him go, Deutsche Bank took him on.
 
-Remove the 2008 plea deal, the one that ended with 13 months in a county jail and work release, and it falls to about half.
+Remove the 2008 plea deal, the one that ended with 13 months in a county jail and work release, and it falls to about a third.
 
 And the most striking test: could someone else have sat in his chair? Put Maxwell there, and it drops to about 1 percent, because the money came to him personally, not to her. Give a newcomer all his banks, houses and companies, and it's still only 8.
 
@@ -115,7 +115,7 @@ Les Wexner, the founder of the company behind Victoria's Secret. In 1991 he gave
 
 Leon Black, co-founder of Apollo. About $170 million between 2012 and 2017, by the Senate Finance Committee's count, for what was called tax advice. Black denies any misconduct.
 
-Take Wexner away, and the chance the operation runs as documented drops from 95 percent to 43. Take both away: 25. On this record, without them, it could not have been paid for.
+Take Wexner away, and the chance the operation runs as documented drops from 94 percent to 42. Take both away: 25. On this record, without them, it could not have been paid for.
 
 It's free, and every tie is linked to its source. Link in my bio. Follow @chosenron13.
 
@@ -165,7 +165,7 @@ Bank of America: a $72.5 million settlement approved in August 2026, also withou
 
 In August 2026, Senate Finance Committee staff published a report called "Looking the Other Way". It said JPMorgan executives coached Epstein on taking out cash through shell companies, and that 13 bankers at three banks merit investigation. That's a staff report, not a ruling.
 
-On the map, remove every bank and the chance the operation runs drops from 95 percent to 25. Remove one bank, and another takes its place.
+On the map, remove every bank and the chance the operation runs drops from 94 percent to 24. Remove one bank, and another takes its place.
 
 It's free, and every tie is linked to its source. Link in my bio. Follow @chosenron13.
 
@@ -179,7 +179,7 @@ He pleaded guilty in Florida state court and served about 13 months, with work r
 
 Before it was finalised, his lawyer Jay Lefkowitz had breakfast with the US Attorney, Alexander Acosta, in October 2007, and later thanked him for "genuine finality". Acosta became Labor Secretary and resigned in 2019. A Justice Department review in 2020 found he used poor judgment.
 
-On the map, remove the deal and the operation's chance falls from 95 percent to about 51. But remove Acosta himself, and it barely moves. The push for the deal came from a large defence team and from inside the office, not from one man.
+On the map, remove the deal and the operation's chance falls from 94 percent to about 31, because everything after 2008, recruitment included, never happens. But remove Acosta himself, and it barely moves. The push for the deal came from a large defence team and from inside the office, not from one man.
 
 And after 2019? Maxwell was moved to a minimum-security camp in August 2025, after two days of interviews with the Deputy Attorney General.
 

@@ -1,14 +1,14 @@
 # How the 1948 Road Was Measured — card prompts (ChatGPT image generation)
 
-Rebuilt 19 November 2026 from the live network map (v95), after the twelve research passes, the coverage audit and the stress test. 6 method cards, then every test from 0% to 80% chance of a state in 1948, lowest first (including the combinations found by searching the whole map), then the three Washington vs Moscow cards. One prompt per card; paste each code block into ChatGPT image generation.
+Rebuilt 27 November 2026 from the live network map (v165), after the cause-and-effect audit. 6 method cards, then every test from 0% to 80% chance of a state in 1948, lowest first (including the combinations found by searching the whole map), then the three Washington vs Moscow cards. One prompt per card; paste each code block into ChatGPT image generation.
 
-**What changed since the 12 November set:** nine channels instead of six (legitimacy, people and land held added); 802 nodes and 3,511 ties; opposition inside governments now counted against each decision; a stress-test card; new cards for the Ottoman war, the Mandate's open door, the immigration certificates and the Latin American bloc. The Rothschild figure is 34% (a wiring fault that tied private buyers' land to the family's land company was corrected; earlier builds showed 30%). Britain 36%, the United States 24%.
+**What changed since the 19 November set:** the map now reads cause and effect: what grew from a removed part weakens with it (no Zionist Organization, no Keren Hayesod), only the same circle can step in for a removed actor, years are counted from 1882 and all channels are read together. The money map gained the movement's own funds and private capital. Edmond de Rothschild, with everything he did: 70%. The Rothschild family: 64%. Herzl: 69%. Britain 32%, the United States 29%.
 
 **Theme:** ink-indigo, signal crimson, antique-gold foil, white. Hero motif: the network map with removed parts gone dark, and a gold probability dial.
 
-**CTA on every card:** www.tinyurl.com/1948scam (the map), www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (primary), Instagram @chosen.ron13.
+**CTA on every card:** www.1948scam.com (the map), www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (primary), Instagram @chosen.ron13.
 
-**Re-check before posting:** the figures move whenever the map changes; these are as of 19 Nov 2026 (v95).
+**Re-check before posting:** the figures move whenever the map changes; these are as of 27 Nov 2026 (v165).
 
 ## Card 1 — The Road To 1948, Mapped
 
@@ -19,13 +19,13 @@ Hero, top third: a glowing constellation-style network map of hundreds of small 
 
 Type: a small crimson pill with a gold foil edge and white small caps "THE METHOD · 1 OF 6"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE ROAD TO 1948, MAPPED"; beneath it a gold foil italic serif subhead: "Every person, body and document, 1840 to 1948".
 
-Anchor stat: a giant antique-gold foil number "802" with the white small-caps caption "PEOPLE, BODIES, DOCUMENTS AND EVENTS".
+Anchor stat: a giant antique-gold foil number "862" with the white small-caps caption "PEOPLE, BODIES, DOCUMENTS AND EVENTS".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT IS ON IT": "3,511 ties between them" · "1,441 counted: 1,235 verified, 206 reported" · "2,059 shared mentions shown, never counted" · "Every tie links to its source". Second panel, titled "HOW TO USE IT": "Tap any node for its record" · "Remove any node, or any group, and the map recounts everything". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT IS ON IT": "3,620 ties between them" · "1,539 counted: 1,338 verified, 201 reported" · "2,076 shared mentions shown, never counted" · "Every tie links to its source". Second panel, titled "HOW TO USE IT": "Tap any node for its record" · "Remove any node, or any group, and the map recounts everything". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "EVERY TIE HAS A SOURCE YOU CAN OPEN".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -45,7 +45,7 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "ONE EMPTY CHANNEL AND THE WHOLE STATE FAILS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -61,11 +61,11 @@ Type: a small crimson pill with a gold foil edge and white small caps "THE METHO
 
 Anchor stat: a giant antique-gold foil number "93%" with the white small-caps caption "THE FULL RECORD, NOTHING REMOVED".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHEN A NODE IS REMOVED": "Its ties go, and everything left cut off from the core goes with it" · "Each channel is recounted; full strength reads 99%". Second panel, titled "THE CHAIN REACTION": "Seven key decisions are re-weighed: documented push against documented resistance" · "Push aimed at one man does not pass to his successor" · "Allied states keep their vote only at their bloc's measured independence" · "Resolution 181 still needs two-thirds". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHEN A NODE IS REMOVED": "Its ties go, and everything left cut off from the core goes with it" · "Each channel is recounted; full strength reads 99%". Second panel, titled "THE CHAIN REACTION": "Seven key decisions are re-weighed: documented push against documented resistance" · "What grew from a removed part weakens with it; only the same circle can step in" · "Push aimed at one man does not pass to his successor" · "Allied states keep their vote only at their bloc's measured independence" · "Resolution 181 still needs two-thirds". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "REMOVE ONE LINK AND WHAT HUNG ON IT FALLS TOO".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -85,7 +85,7 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "EVERY YEAR LATE, THE WINDOW CLOSES FURTHER".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -105,7 +105,7 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "A RESULT OF THE RECORD, NOT A PROPHECY".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -121,11 +121,11 @@ Type: a small crimson pill with a gold foil edge and white small caps "THE METHO
 
 Anchor stat: a giant antique-gold foil number "91–94%" with the white small-caps caption "THE FULL RECORD, EVERY WEIGHT HALVED OR DOUBLED".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT WAS TESTED": "Each of the nine channels counted half and double" · "Reported ties counted at 0.3 and at full weight" · "British training counted ten times" · "Each single source left out in turn". Second panel, titled "WHAT HELD": "Britain 36% (range 30–39%)" · "United States 24% (15–31%)" · "Rothschilds 34% (31–36%)" · "Balfour 56% (55–56%)" · "The order of the findings held". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT WAS TESTED": "Each of the nine channels counted half and double" · "Reported ties counted at 0.3 and at full weight" · "British training counted ten times" · "Each single source left out in turn". Second panel, titled "WHAT HELD": "Britain 32% (range 25–36%)" · "United States 29% (17–37%)" · "Rothschilds 64% (58–67%)" · "Balfour 49% (44–52%)" · "The order of the findings held". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "THE RANKING HELD; THE EXACT FIGURES ARE A RANGE".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -141,11 +141,11 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · T
 
 Anchor stat: a giant antique-gold foil number "0%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The World Zionist Organization, the Jewish Agency, the Zionist Congress and the leaders who ran them". Second panel, titled "WHAT FALLS WITH IT": "Every channel collapses" · "No one is left to pursue a state". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "19 YRS" / "WORK LOST", "NO ONE LEFT" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The World Zionist Organization, the Jewish Agency, the Zionist Congress and the leaders who ran them". Second panel, titled "WHAT FALLS WITH IT": "Every channel collapses" · "No one is left to pursue a state". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "33 YRS" / "WORK LOST", "NO ONE LEFT" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "NOTHING ELSE COULD REPLACE THE MOVEMENT".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -161,11 +161,11 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · F
 
 Anchor stat: a giant antique-gold foil number "0%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Haganah, Palmach, Irgun and Lehi" · "The arms buyers and smugglers". Second panel, titled "WHAT FALLS WITH IT": "The force channel is empty" · "Nothing outside it could fill it". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "12 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Haganah, Palmach, Irgun and Lehi" · "The arms buyers and smugglers". Second panel, titled "WHAT FALLS WITH IT": "The force channel is empty" · "Nothing outside it could fill it". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "1 YR" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "NO FORCE, NO STATE, ON ANY DATE".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -181,11 +181,11 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · F
 
 Anchor stat: a giant antique-gold foil number "0%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Jewish National Fund, PICA, the Anglo-Palestine Bank, Keren Hayesod, the land company and the other finance houses". Second panel, titled "WHAT FALLS WITH IT": "The money channel falls to 83%" · "The land-held channel falls to 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "32 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Jewish National Fund, PICA, the Anglo-Palestine Bank, Keren Hayesod, the land company and the other finance houses". Second panel, titled "WHAT FALLS WITH IT": "The land-held channel falls to 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "0%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE LAND HAD TO BE BOUGHT, AND BANKED".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -201,36 +201,16 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · T
 
 Anchor stat: a giant antique-gold foil number "0–2%" with the white small-caps caption "CHANCE OF A STATE, EVERY OTHER LAND".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "THE OTHER LANDS": "Uganda offer, 1903: 1.6%" · "El Arish, 1902-03: 1.1%" · "Argentina, Birobidzhan, Madagascar, Alaska, Sosúa, Suriname: 0%". Second panel, titled "WHY": "No Christian or Jewish religious pull to draw money, settlers and powers" · "The Zionist Congress rejected Uganda in 1905: it was not Zion" · "The Christian attachment alone, removed: 90%". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "THE OTHER LANDS": "Uganda offer, 1903: 1.6%" · "El Arish, 1902-03: 1.1%" · "Argentina, Birobidzhan, Madagascar, Alaska, Sosúa, Suriname: 0%". Second panel, titled "WHY": "No Christian or Jewish religious pull to draw money, settlers and powers" · "The Zionist Congress rejected Uganda in 1905: it was not Zion" · "The Christian attachment alone, removed: 91%". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "THE CHOICE OF LAND WAS THE SHIELD".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 11 — NO ROTHSCHILDS, NO UNITED STATES (5%)
-
-```
-Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
-
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two large clusters are dark, cut away by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 5 percent of its circumference, with faint light rays behind it.
-
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · TWO PILLARS"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ROTHSCHILDS, NO UNITED STATES"; beneath it a gold foil italic serif subhead: "The two largest sources of money and backing".
-
-Anchor stat: a giant antique-gold foil number "5%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
-
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The US government, Congress, lobby and donors". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The money channel falls to 71%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "28%" / "EVER", "41 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1989" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
-
-Callout: one full-width crimson bar with white heavy caps: "THE TWO LARGEST SUPPORTS, GONE TOGETHER".
-
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
-
-All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
-```
-
-## Card 12 — EVERY DENIED PART, AT ONCE (13%)
+## Card 11 — EVERY DENIED PART, AT ONCE (13%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
@@ -241,136 +221,116 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · O
 
 Anchor stat: a giant antique-gold foil number "13%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The imperial sponsor" · "The pressured votes" · "Money and access to Truman" · "Irgun and Lehi" · "Arms from abroad" · "The Transfer Agreement" · "Absentee land sales" · "Plan Dalet". Second panel, titled "WHAT FALLS WITH IT": "Without Britain the rest still cut it to 48%" · "Balfour Declaration: 0%" · "League approves the Mandate: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "35%" / "EVER", "28 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1977" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The imperial sponsor" · "The pressured votes" · "Money and access to Truman" · "Irgun and Lehi" · "Arms from abroad" · "The Transfer Agreement" · "Absentee land sales" · "Plan Dalet". Second panel, titled "WHAT FALLS WITH IT": "Arms and force fall to 54%, the people channel to 72%" · "Balfour Declaration: 0%" · "League approves the Mandate: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "35%" / "EVER", "27 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1976" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "NO SINGLE DENIAL CARRIED IT ALL; TOGETHER THEY DID".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 13 — NO ROTHSCHILDS, NO EARLY NETWORK (23%)
+## Card 12 — NO ROTHSCHILDS, NO UNITED STATES (14%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; an old, deep cluster at the root of the map is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 23 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two large clusters are dark, cut away by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 14 percent of its circumference, with faint light rays behind it.
 
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · BEFORE HERZL"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ROTHSCHILDS, NO EARLY NETWORK"; beneath it a gold foil italic serif subhead: "The family and everything before 1897".
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · TWO PILLARS"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ROTHSCHILDS, NO UNITED STATES"; beneath it a gold foil italic serif subhead: "The two largest sources of money and backing".
 
-Anchor stat: a giant antique-gold foil number "23%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "14%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The Lovers of Zion, the Odessa Committee, the Alliance and the early donors and colonies" · "With Herzl removed too: 21%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: decades of settlement work that no one else was funding" · "Herzl himself adds only about two points". Then a strip of four glossy indigo tiles with foil numbers and white labels: "36%" / "EVER", "47 YRS" / "WORK LOST", "47 YEARS" / "TO REBUILD", "1996" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The US government, Congress, lobby and donors". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The diplomacy and law channel falls to 54%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "39%" / "EVER", "24 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1972" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
-Callout: one full-width crimson bar with white heavy caps: "THE ROOTS OF THE MONEY, CUT".
+Callout: one full-width crimson bar with white heavy caps: "THE TWO LARGEST SUPPORTS, GONE TOGETHER".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 14 — THREE INSTITUTIONS (24%)
+## Card 13 — NO LONDON, NO AMERICAN ORGANIZERS (25%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; three bright central nodes are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 24 percent of its circumference, with faint light rays behind it.
-
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THREE INSTITUTIONS"; beneath it a gold foil italic serif subhead: "The land company, the Agency and the bank".
-
-Anchor stat: a giant antique-gold foil number "24%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
-
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "PICA (the Rothschild land company)" · "The Jewish Agency" · "The Anglo-Palestine Bank (or the Zionist Congress: 25%)". Second panel, titled "WHAT FALLS WITH IT": "The money channel falls to 54%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "28%" / "EVER", "6 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1959" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
-
-Callout: one full-width crimson bar with white heavy caps: "THREE NODES, AND THE MONEY CHANNEL CRACKS".
-
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
-
-All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
-```
-
-## Card 15 — THE UNITED STATES STAYS OUT (24%)
-
-```
-Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
-
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the whole American cluster is dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 24 percent of its circumference, with faint light rays behind it.
-
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE COUNTRY"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE UNITED STATES STAYS OUT"; beneath it a gold foil italic serif subhead: "Government, Congress, lobby and money".
-
-Anchor stat: a giant antique-gold foil number "24%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
-
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government and Congress" · "The American Zionist organizations" · "American donors and arms buyers". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The diplomacy and law channel falls to 62%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "48%" / "EVER", "13 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1961" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
-
-Callout: one full-width crimson bar with white heavy caps: "WITHOUT AMERICA: UNLIKELY IN 1948".
-
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
-
-All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
-```
-
-## Card 16 — NO LONDON, NO AMERICAN ORGANIZERS (28%)
-
-```
-Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
-
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 28 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 25 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO LONDON, NO AMERICAN ORGANIZERS"; beneath it a gold foil italic serif subhead: "The sponsor and the organizers who pressed Washington".
 
-Anchor stat: a giant antique-gold foil number "28%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "25%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The American Zionist organizations". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "46%" / "EVER", "30 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1979" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The American Zionist organizations". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "46%" / "EVER", "29 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1977" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE FRAMEWORK AND THE PRESSURE, BOTH GONE".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 17 — WASHINGTON AND THE BRITISH CHAIN (31%)
+## Card 14 — WASHINGTON AND THE BRITISH CHAIN (26%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a chain of five gold nodes with links snapped in crimson, the rest dimmed; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 31 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a chain of five gold nodes with links snapped in crimson, the rest dimmed; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 26 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "WASHINGTON AND THE BRITISH CHAIN"; beneath it a gold foil italic serif subhead: "Remove the US government and two British links".
 
-Anchor stat: a giant antique-gold foil number "31%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "26%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government" · "The Mandate administration" · "Any one of: War Cabinet, Balfour Declaration, British government, League of Nations, Mandate". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The recognition channel falls to 70%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "49%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government" · "The Mandate administration" · "Any one of: War Cabinet, Balfour Declaration, British government, League of Nations, Mandate". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The recognition channel falls to 70%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "48%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "ONE LINK BREAKS THE WHOLE BRITISH CHAIN".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 18 — WASHINGTON STAYS OUT (32%)
+## Card 15 — THE UNITED STATES STAYS OUT (29%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one large government node is dark, the threads of the Americas around it severed in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 32 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the whole American cluster is dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 29 percent of its circumference, with faint light rays behind it.
 
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE GOVERNMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "WASHINGTON STAYS OUT"; beneath it a gold foil italic serif subhead: "The American state alone; lobby and donors stay".
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE COUNTRY"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE UNITED STATES STAYS OUT"; beneath it a gold foil italic serif subhead: "Government, Congress, lobby and money".
 
-Anchor stat: a giant antique-gold foil number "32%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "29%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government: the vote, the pressure, the recognition" · "Congress, the lobby and donors stay". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The diplomacy and law channel falls to 65%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "53%" / "EVER", "9 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1958" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government and Congress" · "The American Zionist organizations" · "American donors and arms buyers". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The diplomacy and law channel falls to 62%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "50%" / "EVER", "7 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1958" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
-Callout: one full-width crimson bar with white heavy caps: "WITHOUT THE AMERICAN STATE, THE VOTE FAILS".
+Callout: one full-width crimson bar with white heavy caps: "WITHOUT AMERICA: UNLIKELY IN 1948".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 19 — THE 33 YES VOTES (34%)
+## Card 16 — NO IMPERIAL SPONSOR (32%)
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the British cluster is dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 32 percent of its circumference, with faint light rays behind it.
+
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE GOVERNMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO IMPERIAL SPONSOR"; beneath it a gold foil italic serif subhead: "The British state that issued, held and enforced".
+
+Anchor stat: a giant antique-gold foil number "32%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The War Cabinet, the Mandate government, Parliament and officials". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "47%" / "EVER", "27 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1976" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+
+Callout: one full-width crimson bar with white heavy caps: "27 YEARS OF WORK BUILT INSIDE AN EMPIRE".
+
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
+## Card 17 — THE 33 YES VOTES (34%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
@@ -381,96 +341,116 @@ Type: a small crimson pill with a gold foil edge and white small caps "TEST · F
 
 Anchor stat: a giant antique-gold foil number "34%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "All 33 states that voted for partition on 29 Nov 1947". Second panel, titled "WHAT FALLS WITH IT": "No resolution, no international basis" · "Czechoslovak arms: 0%" · "The arms and force channel falls to 88%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "66%" / "EVER", "1 YR" / "WORK LOST", "34 YEARS" / "TO REBUILD", "1959" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "All 33 states that voted for partition on 29 Nov 1947". Second panel, titled "WHAT FALLS WITH IT": "No resolution, no international basis" · "Czechoslovak arms: 0%" · "The arms and force channel falls to 88%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "66%" / "EVER", "0 YRS" / "WORK LOST", "34 YEARS" / "TO REBUILD", "1959" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "NO VOTE, NO LEGAL BASIS IN 1948".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 20 — THE ROTHSCHILDS PLAY NO PART (34%)
+## Card 18 — WASHINGTON STAYS OUT (36%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster of nodes is dark, its money threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 34 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one large government node is dark, the threads of the Americas around it severed in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 36 percent of its circumference, with faint light rays behind it.
 
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE FAMILY"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE ROTHSCHILDS PLAY NO PART"; beneath it a gold foil italic serif subhead: "The family, the Paris house, or Edmond alone".
-
-Anchor stat: a giant antique-gold foil number "34%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
-
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir: 34%" · "The Paris house: 34%" · "Edmond alone: 35%" · "Their funding only: 36%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: the colonies Edmond funded from 1882, when almost no one else did" · "PICA's land, about 500,000 dunams in 1934, is lost with them; private buyers' land is not". Then a strip of four glossy indigo tiles with foil numbers and white labels: "42%" / "EVER", "39 YRS" / "WORK LOST", "39 YEARS" / "TO REBUILD", "1987" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
-
-Callout: one full-width crimson bar with white heavy caps: "ONE MAN'S MONEY CARRIED DECADES OF IT".
-
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
-
-All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
-```
-
-## Card 21 — NO IMPERIAL SPONSOR (36%)
-
-```
-Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
-
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the British cluster is dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 36 percent of its circumference, with faint light rays behind it.
-
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE GOVERNMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO IMPERIAL SPONSOR"; beneath it a gold foil italic serif subhead: "The British state that issued, held and enforced".
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE GOVERNMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "WASHINGTON STAYS OUT"; beneath it a gold foil italic serif subhead: "The American state alone; lobby and donors stay".
 
 Anchor stat: a giant antique-gold foil number "36%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The War Cabinet, the Mandate government, Parliament and officials". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "48%" / "EVER", "28 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1977" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The US government: the vote, the pressure, the recognition" · "Congress, the lobby and donors stay". Second panel, titled "WHAT FALLS WITH IT": "American vote and pressure for partition: 0%" · "UN partition vote, with blocs following their leaders: 0%" · "The diplomacy and law channel falls to 65%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "54%" / "EVER", "2 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1957" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
-Callout: one full-width crimson bar with white heavy caps: "28 YEARS OF WORK BUILT INSIDE AN EMPIRE".
+Callout: one full-width crimson bar with white heavy caps: "WITHOUT THE AMERICAN STATE, THE VOTE FAILS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 22 — THE OTTOMANS STAY OUT OF THE WAR (43%)
+## Card 19 — THE OTTOMANS STAY OUT OF THE WAR (37%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the old imperial cluster at one edge glows unbroken while the British threads into Palestine are cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 43 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the old imperial cluster at one edge glows unbroken while the British threads into Palestine are cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 37 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · ASSUMPTION"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE OTTOMANS STAY OUT OF THE WAR"; beneath it a gold foil italic serif subhead: "No war, so no British war aim in Palestine".
 
-Anchor stat: a giant antique-gold foil number "43%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "37%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Ottoman entry into the First World War, October 1914" · "And with it the British conquest of Palestine". Second panel, titled "WHAT FALLS WITH IT": "No British war aim in Palestine: no Declaration, no Mandate" · "The money, the settlers already there and the later American and Soviet decisions remain" · "The people channel falls to 83%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "49%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Ottoman entry into the First World War, October 1914" · "And with it the British conquest of Palestine". Second panel, titled "WHAT FALLS WITH IT": "No British war aim in Palestine: no Declaration, no Mandate" · "The money, the settlers already there and the later American and Soviet decisions remain" · "The people channel falls to 78%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "48%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE LARGEST SINGLE TURN OF CHANCE ON THE MAP".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 23 — NO BALFOUR DECLARATION (56%)
+## Card 20 — NO ROTHSCHILDS, NO EARLY NETWORK (46%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a single glowing parchment node at the center is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 56 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; an old, deep cluster at the root of the map is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 46 percent of its circumference, with faint light rays behind it.
 
-Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE DOCUMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO BALFOUR DECLARATION"; beneath it a gold foil italic serif subhead: "Or a Declaration that needed Walter Rothschild".
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · BEFORE HERZL"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ROTHSCHILDS, NO EARLY NETWORK"; beneath it a gold foil italic serif subhead: "The family and everything before 1897".
 
-Anchor stat: a giant antique-gold foil number "56%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "46%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The letter of 2 November 1917" · "Same result if it could not issue without its addressee: 56%". Second panel, titled "WHAT FALLS WITH IT": "No Mandate built on it" · "Immigration and settlement at the Ottoman pace". Then a strip of four glossy indigo tiles with foil numbers and white labels: "56%" / "EVER", "26 YRS" / "WORK LOST", "26 YEARS" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The Lovers of Zion, the Odessa Committee, the Alliance and the early donors and colonies" · "With Herzl removed too: 23%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: decades of settlement work that no one else was funding" · "Herzl alone: 69%; with the early network gone too, his loss costs far more". Then a strip of four glossy indigo tiles with foil numbers and white labels: "55%" / "EVER", "25 YRS" / "WORK LOST", "38 YEARS" / "TO REBUILD", "1973" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
-Callout: one full-width crimson bar with white heavy caps: "ONE LETTER, 26 YEARS".
+Callout: one full-width crimson bar with white heavy caps: "THE ROOTS OF THE MONEY, CUT".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 24 — ONLY MOSCOW BACKS IT (66%)
+## Card 21 — NO BALFOUR DECLARATION (49%)
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a single glowing parchment node at the center is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 49 percent of its circumference, with faint light rays behind it.
+
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE DOCUMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO BALFOUR DECLARATION"; beneath it a gold foil italic serif subhead: "Or a Declaration that needed Walter Rothschild".
+
+Anchor stat: a giant antique-gold foil number "49%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The letter of 2 November 1917" · "Same result if it could not issue without its addressee: 49%". Second panel, titled "WHAT FALLS WITH IT": "No Mandate built on it" · "Immigration and settlement at the Ottoman pace". Then a strip of four glossy indigo tiles with foil numbers and white labels: "54%" / "EVER", "26 YRS" / "WORK LOST", "34 YEARS" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+
+Callout: one full-width crimson bar with white heavy caps: "ONE LETTER, 26 YEARS".
+
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
+## Card 22 — THE ROTHSCHILDS PLAY NO PART (64%)
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster of nodes is dark, its money threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 64 percent of its circumference, with faint light rays behind it.
+
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE FAMILY"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE ROTHSCHILDS PLAY NO PART"; beneath it a gold foil italic serif subhead: "The family, the Paris house, or Edmond alone".
+
+Anchor stat: a giant antique-gold foil number "64%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir: 64%" · "The Paris house: 68%" · "Edmond, with everything he did: 70%" · "Their funding only: 79%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: the colonies Edmond funded from 1882, when almost no one else did" · "PICA's land, about 500,000 dunams in 1934, is lost with them; private buyers' land is not". Then a strip of four glossy indigo tiles with foil numbers and white labels: "68%" / "EVER", "15 YRS" / "WORK LOST", "23 YEARS" / "TO REBUILD", "1963" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+
+Callout: one full-width crimson bar with white heavy caps: "ONE MAN'S MONEY CARRIED DECADES OF IT".
+
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
+## Card 23 — ONLY MOSCOW BACKS IT (66%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
@@ -485,52 +465,52 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "MOSCOW ALONE CANNOT CARRY TWO-THIRDS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 25 — NO ARMS FROM ABROAD (66%)
+## Card 24 — NO ARMS FROM ABROAD (69%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the arms cluster is dark, threads crossing an ocean cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 66 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the arms cluster is dark, threads crossing an ocean cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 69 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · OFTEN DENIED"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ARMS FROM ABROAD"; beneath it a gold foil italic serif subhead: "British training, the secret US network, Czech arms".
 
-Anchor stat: a giant antique-gold foil number "66%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "69%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "British arming of Jewish forces 1936-39" · "The Sonneborn network and smugglers" · "Czech rifles before 15 May". Second panel, titled "WHAT FALLS WITH IT": "Close to half the rifles of 14 May, gone" · "The arms and force channel falls to 73%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "68%" / "EVER", "1 YR" / "WORK LOST", "70 YEARS" / "TO REBUILD", "1950" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "British arming of Jewish forces 1936-39" · "The Sonneborn network and smugglers" · "Czech rifles before 15 May". Second panel, titled "WHAT FALLS WITH IT": "Close to half the rifles of 14 May, gone" · "The arms and force channel falls to 74%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "69%" / "EVER", "0 YRS" / "WORK LOST", "67 YEARS" / "TO REBUILD", "1949" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "NOT DAVID ALONE: THE ARMS CAME FROM ABROAD".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 26 — NO NETWORK BEFORE 1897 (70%)
+## Card 25 — NO NETWORK BEFORE 1897 (72%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the oldest cluster at the root of the map is dark; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 70 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the oldest cluster at the root of the map is dark; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 72 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · BEFORE HERZL"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO NETWORK BEFORE 1897"; beneath it a gold foil italic serif subhead: "Forerunners, organizers, donors and the Alliance".
 
-Anchor stat: a giant antique-gold foil number "70%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "72%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Kalischer and Hess, the Lovers of Zion, the Odessa Committee, the Alliance Israélite Universelle and the early donors". Second panel, titled "WHAT FALLS WITH IT": "Almost all of the loss is the settlement money, not the ideas". Then a strip of four glossy indigo tiles with foil numbers and white labels: "70%" / "EVER", "16 YRS" / "WORK LOST", "16 YEARS" / "TO REBUILD", "NONE BETTER THAN 1948" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Kalischer and Hess, the Lovers of Zion, the Odessa Committee, the Alliance Israélite Universelle and the early donors". Second panel, titled "WHAT FALLS WITH IT": "Almost all of the loss is the settlement money, not the ideas". Then a strip of four glossy indigo tiles with foil numbers and white labels: "72%" / "EVER", "12 YRS" / "WORK LOST", "15 YEARS" / "TO REBUILD", "1961" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE EARLY MONEY MATTERED, NOT THE EARLY IDEAS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 27 — NO OPEN DOOR IN THE MANDATE (73%)
+## Card 26 — NO OPEN DOOR IN THE MANDATE (73%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
@@ -545,7 +525,27 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "THE MANDATE'S WORDING OPENED THE DOOR".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
+## Card 27 — THREE INSTITUTIONS (78%)
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; three bright central nodes are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 78 percent of its circumference, with faint light rays behind it.
+
+Type: a small crimson pill with a gold foil edge and white small caps "TEST · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THREE INSTITUTIONS"; beneath it a gold foil italic serif subhead: "The land company, the Agency and the bank".
+
+Anchor stat: a giant antique-gold foil number "78%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "PICA (the Rothschild land company)" · "The Jewish Agency" · "The Anglo-Palestine Bank (or the Zionist Congress: 76%)". Second panel, titled "WHAT FALLS WITH IT": . Then a strip of four glossy indigo tiles with foil numbers and white labels: "78%" / "EVER", "1 YR" / "WORK LOST", "39 YEARS" / "TO REBUILD", "1949" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+
+Callout: one full-width crimson bar with white heavy caps: "THREE NODES, AND THE MONEY CHANNEL CRACKS".
+
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -565,7 +565,7 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "THE PERMITS FILLED THE COUNTRY".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -585,14 +585,16 @@ Panel (translucent indigo glass, thin gold border, small gold node icons as bull
 
 Callout: one full-width crimson bar with white heavy caps: "THIRTEEN VOTES MADE THE TWO-THIRDS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
+
+# Washington vs Moscow — three cards
 # Washington vs Moscow — three cards
 
-Figures: GDP 1950 (Maddison, 1990 international dollars, as used on the map); Marshall Plan $13.3 billion, 17 countries (George C. Marshall Foundation); vote list (UN, A/RES/181(II)); recognitions (Jewish Virtual Library); Soviet break of relations, 11 Feb 1953 (Jewish Chronicle). Bloc independence and test results from the map as of 19 Nov 2026.
+Figures: GDP 1950 (Maddison, 1990 international dollars, as used on the map); Marshall Plan $13.3 billion, 17 countries (George C. Marshall Foundation); vote list (UN, A/RES/181(II)); recognitions (Jewish Virtual Library); Soviet break of relations, 11 Feb 1953 (Jewish Chronicle). Bloc independence and test results from the map as of 12 Nov 2026.
 
 ## Card 30 — The Two Powers Of 1947
 
@@ -611,7 +613,7 @@ Second panel, titled "HOW THE MAP WEIGHS POWER": "Each great power counts by its
 
 Callout: one full-width crimson bar with white heavy caps: "THE FIRST POWER ON EARTH WAS THE ONE TO WIN".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -633,7 +635,7 @@ Second panel, titled "THE RULE": "Two-thirds of those voting: 33 yes, 13 no, 10 
 
 Callout: one full-width crimson bar with white heavy caps: "WITHOUT MOSCOW IT PASSES; WITHOUT WASHINGTON IT FAILS".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -647,15 +649,15 @@ Hero, top third: an engraved antique-gold globe split down the middle by a thin 
 
 Type: a small crimson pill with a gold foil edge and white small caps "WASHINGTON VS MOSCOW · 3 OF 3"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "WHAT EACH ONE GAVE, AND FOR HOW LONG"; beneath it a gold foil italic serif subhead: "A tactical ally against a lasting guardian".
 
-Anchor stat: a giant antique-gold foil number "24% VS 82%" with the white small-caps caption "CHANCE OF A STATE IN 1948, WITHOUT WASHINGTON AND WITHOUT MOSCOW".
+Anchor stat: a giant antique-gold foil number "29% VS 83%" with the white small-caps caption "CHANCE OF A STATE IN 1948, WITHOUT WASHINGTON AND WITHOUT MOSCOW".
 
 Comparison panel (translucent indigo glass, thin gold border), two identical columns with gold foil headers "WASHINGTON" and "MOSCOW", the same rows on both sides, each row label in small white caps on the left edge: row "VOTES": left "Its own and its blocs, with pressure on three states", right "5" · row "RECOGNITION": left "De facto, 11 minutes after, 14 May 1948", right "De jure, the first, 17 May 1948" · row "ARMS IN 1948": left "Embargo from December 1947", right "Czech rifles: close to half of those in hand on 14 May" · row "MONEY, 1945-48": left "The largest appeals, and $50 million raised by Golda Meir in early 1948", right "None given; the Czech arms were sold, not donated" · row "AFTERWARDS": left "Aid, arms and the veto for decades", right "Broke off relations, 11 Feb 1953".
 
-Second panel, titled "WHAT THE MAP SHOWS": "Without everything American: 24%, unlikely" · "Without Moscow and its bloc: 82%, still likely" · "Moscow backing it alone, Washington out as a state: 66%". If the card gets crowded, cut this second panel to its first line.
+Second panel, titled "WHAT THE MAP SHOWS": "Without everything American: 29%, unlikely" · "Without Moscow and its bloc: 83%, still likely" · "Moscow backing it alone, Washington out as a state: 66%". If the card gets crowded, cut this second panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "MOSCOW GAVE 1948. WASHINGTON GAVE EVERY YEAR AFTER.".
 
-CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: a full-width crimson bar with the white heavy-caps line "RUN EVERY TEST YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine on a deep-indigo pill with a glowing gold outline; then smaller white text "The full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: "TikTok @chosenron13" with a small gold tag "PRIMARY", and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```

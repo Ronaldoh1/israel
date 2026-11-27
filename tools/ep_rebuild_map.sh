@@ -1,15 +1,9 @@
 #!/bin/sh
-# Rebuild the Epstein map data and write it into the live page, keeping the page's current interface code.
-# (build_explorer.py's template predates interface changes made directly in epstein-network.html, so only the DATA line is taken from it.)
+# Rebuild the Epstein map data and write it into the live page.
+# build_explorer.py keeps the live page's interface code and replaces only its DATA and the model and tests scripts
+# (ep_viab_ui.js, ep_tests_ui.js); the link fixes of 27 Nov 2026 are reapplied after build_data.py.
 set -e
 cd "$(dirname "$0")/.."
-cp epstein-network.html /tmp/ep_live_page.html
-( cd book/plan/epstein_map && python3 build_data.py && python3 build_explorer.py )
-python3 - <<'PY'
-import json
-def part(p):
-    s=open(p,encoding='utf-8').read(); k=s.find('const DATA = ')+13; D,end=json.JSONDecoder().raw_decode(s,k); return s,k,end
-nb,kb,eb=part('epstein-network.html'); ol,ko,eo=part('/tmp/ep_live_page.html')
-open('epstein-network.html','w',encoding='utf-8').write(ol[:ko]+nb[kb:eb]+ol[eo:])
-print('DATA spliced into the live page')
-PY
+( cd book/plan/epstein_map && python3 build_data.py )
+python3 tools/patch_ep_links_nov27.py
+( cd book/plan/epstein_map && python3 ep_viability.py >/dev/null && python3 build_explorer.py )

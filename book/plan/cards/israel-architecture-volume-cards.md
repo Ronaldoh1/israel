@@ -1,6 +1,6 @@
 # The Israel Architecture: series card, 17 volume cards and TikTok scripts (20 Nov 2026)
 
-CTAs on every card: www.tinyurl.com/1948scam (hero), www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (PRIMARY), Instagram @chosen.ron13 (flagged). Volume numbers match the library shelf. Every figure is taken from the volume it advertises, as of October 2026.
+CTAs on every card: www.1948scam.com (hero), www.tinyurl.com/thetruthlibrary, TikTok @chosenron13 (PRIMARY), Instagram @chosen.ron13 (flagged). Volume numbers match the library shelf. Every figure is taken from the volume it advertises, as of October 2026.
 
 ## Series card (replaces the @awakenwithsophia version)
 ```
@@ -25,7 +25,7 @@ Tile 3: "EVERY CLAIM" — "TIED TO ITS SOURCE"
 
 ACTION BAR: full-width sapphire-blue bar, white heavy caps: "READ THE BOOKS. EXPLORE THE MAPS. FREE."
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -54,7 +54,7 @@ ACCENT BAR 1: full-width bar in #6A2E22 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #6A2E22, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -75,7 +75,7 @@ SUBHEAD: gold-foil italic serif, at most two lines: "The six stages that built a
 
 BULLETS (white sans, each led by a small gold-foil diamond):
 "From the Bank of England in 1694 to a state declared on 14 May 1948"
-"Without the Rothschild family, a state on time falls from 93% to about 34%"
+"Without Edmond de Rothschild, a state on time falls from 93% to about 70%, thirteen years of work lost"
 "Eight other proposed homelands, from Argentina to Uganda, tested one by one"
 (If the card gets crowded, cut the third bullet first.)
 
@@ -83,7 +83,7 @@ ACCENT BAR 1: full-width bar in #1E2D55 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #1E2D55, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -112,7 +112,7 @@ ACCENT BAR 1: full-width bar in #2C4148 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #2C4148, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -141,7 +141,7 @@ ACCENT BAR 1: full-width bar in #3E2660 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #3E2660, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -170,7 +170,7 @@ ACCENT BAR 1: full-width bar in #1D4E36 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #1D4E36, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -199,7 +199,7 @@ ACCENT BAR 1: full-width bar in #73301C with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #73301C, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -228,7 +228,7 @@ ACCENT BAR 1: full-width bar in #3E5220 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #3E5220, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -257,7 +257,7 @@ ACCENT BAR 1: full-width bar in #26272B with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #26272B, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -286,7 +286,7 @@ ACCENT BAR 1: full-width bar in #6E1A2C with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #6E1A2C, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -315,7 +315,7 @@ ACCENT BAR 1: full-width bar in #1A4466 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #1A4466, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -344,7 +344,7 @@ ACCENT BAR 1: full-width bar in #174F4B with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #174F4B, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -373,7 +373,7 @@ ACCENT BAR 1: full-width bar in #0E5260 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #0E5260, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -402,7 +402,7 @@ ACCENT BAR 1: full-width bar in #4B4416 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #4B4416, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -431,7 +431,7 @@ ACCENT BAR 1: full-width bar in #2A3F6E with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #2A3F6E, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -460,7 +460,7 @@ ACCENT BAR 1: full-width bar in #7E1F23 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #7E1F23, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -489,7 +489,7 @@ ACCENT BAR 1: full-width bar in #3C4A4E with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #3C4A4E, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -518,7 +518,7 @@ ACCENT BAR 1: full-width bar in #2E5228 with a thin gold border, white heavy cap
 
 ACCENT BAR 2: full-width bar in #2E5228, white heavy caps: "READ IT FREE"
 
-CTA BLOCK (bottom quarter, in this order): the hero URL "www.tinyurl.com/1948scam" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
+CTA BLOCK (bottom quarter, in this order): the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on a navy pill with a glowing gold-foil outline; then small white caps: "THE LIBRARY OF TRUTH ✨ · EVERY VOLUME FREE → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a gold tag "PRIMARY", and Instagram "@chosen.ron13" with a small crimson tag "⚠ FLAGGED — follow TikTok first".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
