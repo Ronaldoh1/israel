@@ -1,6 +1,6 @@
-# Money Was the Fuel — card series (7 cards)
+# Money Was the Fuel — card series (8 cards)
 
-Theme: **Engraved Banknote**, deep banknote green with gold foil, crimson bars and cyan labels; this theme isn't used by any earlier set. All figures come from the Road to 1948 Network Map, which counts the money in the documented record in 1948 dollars. Status as of 26 November 2026. CTAs: www.tinyurl.com/thetruthlibrary, TikTok @chosenron13, Instagram @chosen.ron13.
+Theme: **Engraved Banknote**, deep banknote green with gold foil, crimson bars and cyan labels; this theme isn't used by any earlier set. All figures come from the Road to 1948 Network Map, which counts the money in the documented record in 1948 dollars. Status as of 26 November 2026. CTAs: www.1948scam.com, TikTok @chosenron13, Instagram @chosen.ron13.
 
 ---
 
@@ -11,7 +11,7 @@ Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial pos
 
 HERO (top third): a large, photoreal antique brass fuel gauge whose dial face is engraved like a banknote, the needle pinned at "FULL", glowing warm gold from behind with faint light rays; the gauge fades softly into the green background.
 
-Small pill label at top, crimson with gold foil edge, white small caps: "THE ROAD TO 1948 · PART 1 OF 7".
+Small pill label at top, crimson with gold foil edge, white small caps: "THE ROAD TO 1948 · PART 1 OF 8".
 Headline, huge heavy condensed sans (Montserrat Black), white with thin gold foil edge and soft drop shadow: "MONEY WAS THE FUEL"
 Subhead in gold foil italic serif: "A movement doesn't build a state on ideas alone."
 
@@ -26,7 +26,7 @@ Three gold-star bullets in white:
 Crimson callout bar, white heavy caps: "FOLLOW THE MONEY. THEN REMOVE IT."
 Small white line beneath: "Named institutions and donors, not a people."
 
-CTA block, bottom quarter, in this order: full-width crimson bar with white heavy caps "SEE THE RECORD YOURSELF"; then the hero URL, the largest text after the headline, thick gold foil lettering with metallic shine on a dark-green pill with a glowing gold outline: "www.tinyurl.com/thetruthlibrary"; then smaller white text: "Open The Road to 1948 Network Map → Tests"; then two social pills side by side, dark green with gold outline and white text: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter, in this order: full-width crimson bar with white heavy caps "SEE THE RECORD YOURSELF"; then the hero URL, the largest text after the headline, thick gold foil lettering with metallic shine on a dark-green pill with a glowing gold outline: "www.1948scam.com"; then smaller white text: "Open The Road to 1948 Network Map → Tests"; then two social pills side by side, dark green with gold outline and white text: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -54,7 +54,7 @@ Crimson callout bar, white heavy caps: "EARLY MONEY BUILT THE GROUND EVERYTHING 
 
 Strip of two glossy tiles with gold foil numbers and white labels: tile 1 "36%" / "Chance of a state in 1948 without his money"; tile 2 "60%" / "Chance with ONLY his money".
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering with metallic shine on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills side by side: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering with metallic shine on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills side by side: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -80,7 +80,7 @@ Gold-star bullets in white:
 
 Crimson callout bar, white heavy caps: "15% OF ALL DOCUMENTED MONEY ON THE MAP"
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -106,7 +106,7 @@ Gold-star bullets in white:
 
 Crimson callout bar, white heavy caps: "IT ARRIVED LATE — AFTER THE GROUND WAS BUILT"
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -132,19 +132,50 @@ Under the chart, cyan small caps: "THE MOVEMENT'S OWN DUES AND DONATION TINS: AB
 
 Crimson callout bar, white heavy caps: "THE SMALL DONORS COULDN'T HAVE CARRIED IT ALONE"
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 6 — The Test: Take the Money Out
+## Card 6 — In Today's Dollars
+
+```
+Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette: deep banknote green background #071A12 fading to #0E2E20; crimson #D7263D for bars and callouts; electric cyan #22D3EE for labels; brilliant white #FFFFFF for type; gold foil #F5C518 with real foil sheen. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. Faint engraved guilloche linework. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
+
+HERO (top third): an engraved 1948 banknote on the left transforming into a crisp modern banknote on the right, joined by a glowing gold arrow, both rendered as generic engraved notes with no real portraits, seals or national symbols; soft gold rays; fades into the background.
+
+Pill label, crimson with gold foil edge, white small caps: "PART 6 · IN TODAY'S DOLLARS".
+Headline, Montserrat Black, white with gold foil edge: "WHAT IT WOULD COST TODAY"
+Subhead, gold foil italic serif: "1948 dollars × 14 = 2026 dollars"
+
+Giant gold foil numbers side by side with a crimson arrow between them: "$404M" → "$5.7 BILLION"
+Cyan small caps under them: "ALL DOCUMENTED MONEY, 1882–1948, IN OCTOBER 2026 DOLLARS"
+
+A clean horizontal bar chart on a translucent dark-green glass panel with thin gold foil border; glossy gold foil bars, white labels on the left, gold foil figures on the right, in this order and with these exact lengths relative to each other:
+"Edmond de Rothschild" — "$2.0B"
+"United Palestine Appeal (US)" — "$1.2B"
+"Haavara transfer (1933–39)" — "$850M"
+"Golda Meyerson's 1948 US tour" — "$700M"
+"Keren Hayesod (1921–32)" — "$440M"
+Under the chart, cyan small caps: "THE MOVEMENT'S OWN DUES AND TINS: ABOUT $570M"
+
+Crimson callout bar, white heavy caps: "US AID SINCE 1946 IS MORE THAN 50 TIMES THIS"
+
+Small white line at the bottom of the content area: "Converted with the US consumer price index: 1948 average 24.1, October 2026 337.5."
+
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+
+All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
+```
+
+## Card 7 — The Test: Take the Money Out
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette: deep banknote green background #071A12 fading to #0E2E20; crimson #D7263D for bars and callouts; electric cyan #22D3EE for labels; brilliant white #FFFFFF for type; gold foil #F5C518 with real foil sheen. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. Faint engraved guilloche linework. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
 HERO (top third): the same antique brass banknote-engraved fuel gauge as the cover, now with the needle dropped hard to "EMPTY", a thin crimson warning glow around the dial, dramatic side light; fades into the background.
 
-Pill label, crimson with gold foil edge, white small caps: "PART 6 · THE TEST".
+Pill label, crimson with gold foil edge, white small caps: "PART 7 · THE TEST".
 Headline, Montserrat Black, white with gold foil edge: "TAKE THE MONEY OUT"
 Subhead, gold foil italic serif: "Chance of a state in 1948, on the documented record"
 
@@ -162,19 +193,19 @@ Translucent dark-green glass panel with thin gold foil border, white text:
 
 Crimson callout bar, white heavy caps: "NO MONEY, NO STATE"
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "RUN THE TEST YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "RUN THE TEST YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Tests"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 7 — The Fuel Never Stopped (after 1948)
+## Card 8 — The Fuel Never Stopped (after 1948)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette: deep banknote green background #071A12 fading to #0E2E20; crimson #D7263D for bars and callouts; electric cyan #22D3EE for labels; brilliant white #FFFFFF for type; gold foil #F5C518 with real foil sheen. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. Faint engraved guilloche linework. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
 HERO (top third): a polished gold pipeline running from left to right across a night horizon, joints glowing, an engraved neoclassical domed government building silhouetted in gold linework at its start; fades into the background. No flags, no seals, no people.
 
-Pill label, crimson with gold foil edge, white small caps: "PART 7 · AFTER 1948".
+Pill label, crimson with gold foil edge, white small caps: "PART 8 · AFTER 1948".
 Headline, Montserrat Black, white with gold foil edge: "THE FUEL NEVER STOPPED"
 Subhead, gold foil italic serif: "From 1949, the patron was Washington"
 
@@ -188,7 +219,7 @@ Gold-star bullets in white:
 
 Crimson callout bar, white heavy caps: "45 US VETOES SHIELDING ISRAEL AT THE UN (TO DEC 2023)"
 
-CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.tinyurl.com/thetruthlibrary"; smaller white text "Open The Road to 1948 Network Map → Switch to After 1948"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
+CTA block, bottom quarter: full-width crimson bar, white heavy caps "SEE THE RECORD YOURSELF"; hero URL in thick gold foil lettering on a dark-green pill with glowing gold outline, the second-largest text on the card: "www.1948scam.com"; smaller white text "Open The Road to 1948 Network Map → Switch to After 1948"; social pills: "TikTok @chosenron13" and "Instagram @chosen.ron13".
 
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
@@ -196,6 +227,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 ---
 
 **Sources behind the figures**
+- Today's dollars: BLS CPI-U, 1948 annual average 24.1 and October 2026 337.511 (factor about 14.0); US aid of $298 billion in 2024 dollars is about $321 billion in 2026 dollars, more than 50 times $5.7 billion.
 - Network map money record: Edmond de Rothschild (JTA 1934, "over sixty million dollars"); United Palestine Appeal ($52M 1946, $74.7M 1948); Haavara (105M Reichsmarks, about $35M); Golda Meyerson's 1948 tour (about $50M); Keren Hayesod (£4.7M, 1921–32).
 - Map tests: run on the restored model, 26 Nov 2026.
 - After 1948: CRS RL33222 and the 2025 aid figures; Hartung, Quincy Institute and Costs of War (2025); vetoes (Chicago Council, to December 2023); AIPAC/UDP spending (Sludge, 2026).
