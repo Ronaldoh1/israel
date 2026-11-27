@@ -151,7 +151,7 @@ Every weight on the map is a choice the record does not make by itself, so each 
 | Without the United States | 29% | 17% | 37% |
 | Every often-denied part at once | 13% | 7% | 18% |
 
-On the 19 November build the map was also run 52 more times, each time leaving out one of the most-used sources, and the ranking held; that check has not yet been repeated on the cause-and-effect build, so read these ranges as covering the weights, not the sources.
+The map was also run 50 more times on this build, each time leaving out one of the sources that carry ties alone. No single source moves the Rothschild family or Edmond de Rothschild by more than about 4 points, Britain by more than 7, or Herzl by more than 7; Herzl and Edmond, about level, can swap places. The largest shift anywhere, 13 points, is in the test that removes the Mandate's immigration certificates, which leans on one immigration table.
 
 ## What the map cannot know
 

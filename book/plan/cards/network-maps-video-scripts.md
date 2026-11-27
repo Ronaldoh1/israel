@@ -23,7 +23,7 @@ Then you take a part away and recalculate. A tie only counts if it still reaches
 
 Roughly, the result is the 93.2 percent starting point, times the share of the needs left, times the share of the years kept. Take away Edmond de Rothschild, with everything he did, and you get 70 percent. Take away the United States: 29.
 
-And every weight was stress-tested at half and at double, and on the earlier build the map was rerun 52 times leaving out one source each time.
+And every weight was stress-tested at half and at double, and the map was rerun 50 times leaving out one source each time. The biggest shift was 13 points, on the immigration-certificates test.
 
 It's free, and every tie is linked to its source. Link in my bio: www.1948scam.com. Follow @chosenron13.
 
