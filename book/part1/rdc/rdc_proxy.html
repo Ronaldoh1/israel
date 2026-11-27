@@ -1,0 +1,27 @@
+<h2>NSProxy: The Agency in Between</h2>
+<p>An <code>NSProxy</code> is an object that is not the real thing. It stands in for another object and forwards every message it receives to that object. Whoever talks to the proxy is really talking to what stands behind it.</p>
+<figure class="fig-code"><figcaption>One recognised body between the Mandate government and the movement</figcaption><div class="cbar"><i></i><i></i><i></i><b>JewishAgency.m</b></div><pre><span class="k">@interface</span> <span class="t">JewishAgency</span> : <span class="t">NSProxy</span>
+<span class="c">// the Zionist Organization;</span>
+<span class="c">// the Agency itself from 1929</span>
+<span class="k">@property</span> (<span class="k">strong</span>) <span class="k">id</span> target;
+<span class="k">@end</span>
+
+<span class="k">@implementation</span> <span class="t">JewishAgency</span>
+- (<span class="k">void</span>)forwardInvocation:
+    (<span class="t">NSInvocation</span> *)call {
+  [call <span class="m">invokeWithTarget</span>:<span class="k">self</span>.target];
+}
+<span class="k">@end</span>
+
+<span class="c">// The Administration addresses it...</span>
+[mandateGov <span class="m">consult</span>:jewishAgency
+  <span class="m">on</span>:<span class="s">@&quot;the national home&quot;</span>]; <span class="c">// Art. 4</span>
+[mandateGov <span class="m">arrange</span>:jewishAgency
+  <span class="k">for</span>:<span class="s">@&quot;public works&quot;</span>];     <span class="c">// Art. 11</span>
+
+<span class="c">// ...and it forwards to the movement</span>
+<span class="c">// and the force it commanded:</span>
+[jewishAgency <span class="m">command</span>:<span class="t">Haganah</span>];
+  <span class="c">// parity command from 1931</span>
+[jewishAgency.chairman declareState];
+  <span class="c">// Ben-Gurion, 14 May 1948</span></pre><div class="plain"><h5>In plain language</h5><p>Article 4 of the Mandate recognised "an appropriate Jewish agency" as a public body to advise and cooperate with the Administration, and Article 11 let the Administration make arrangements with it for public works. The Zionist Organization filled the role, and the Jewish Agency proper was established in 1929.</p><p>The Haganah came under a parity command in 1931. David Ben-Gurion, chairman of the Jewish Agency Executive and the de facto head of the Jewish community of Palestine, declared the state on 14 May 1948. The body the Mandate recognised as its partner became the state's government in waiting.</p><p>There was no Arab equivalent. Britain offered an Arab Agency in 1923, with members its High Commissioner would choose, and the offer was rejected in October 1923.</p></div><p class="fig-src">Sources: [cite:rs_md_avalon] [cite:wiki_palestine_office] [cite:rs_rd3_ej_haganah] [cite:mexico_arms_1948] [cite:rs_rd5_jvl_declaration] [cite:rs_lc_cojs_arabagency]</p></figure>

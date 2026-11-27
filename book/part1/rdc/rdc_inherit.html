@@ -1,0 +1,22 @@
+<h2>Inheritance Without Override: Each Line Built on the Last</h2>
+<p>A subclass inherits everything from the class above it. If it overrides nothing, every limit the parent set still stands on paper and none of them is applied; the new class simply adds what it does.</p>
+<figure class="fig-code"><figcaption>Partition, armistice and occupation as a chain of classes</figcaption><div class="cbar"><i></i><i></i><i></i><b>TheLines.m</b></div><pre><span class="k">@interface</span> <span class="t">FoundingScope</span> : <span class="t">NSObject</span>
+<span class="c">// Balfour, 1917</span>
+- (<span class="k">void</span>)protectRightsOf:
+    (<span class="k">id</span>)existingNonJewishCommunities;
+<span class="k">@end</span>
+
+<span class="c">// 1947: about 55-56% of the land</span>
+<span class="k">@interface</span> <span class="t">Partition181</span>
+  : <span class="t">FoundingScope</span> <span class="k">@end</span>
+<span class="c">// 1949: about 78%</span>
+<span class="k">@interface</span> <span class="t">Armistice1949</span>
+  : <span class="t">Partition181</span> <span class="k">@end</span>
+<span class="c">// 1967: the rest (Stage Seven)</span>
+<span class="k">@interface</span> <span class="t">Occupation1967</span>
+  : <span class="t">Armistice1949</span> <span class="k">@end</span>
+
+<span class="c">// No subclass overrides</span>
+<span class="c">// -protectRightsOf:</span>
+<span class="c">// Every class inherits the clause;</span>
+<span class="c">// none calls it.</span></pre><div class="plain"><h5>In plain language</h5><p>The Balfour letter promised that nothing would be done to prejudice "the civil and religious rights of existing non-Jewish communities." Resolution 181 in 1947 gave the proposed Jewish state about 55 to 56 percent of the territory, when land in Jewish ownership was about 7 percent. By the armistices of 1949 about 78 percent of Mandate Palestine was under Israeli control, and in June 1967 Israel took the rest.</p><p>Each line was built on the one before and none was formally redrawn by those who held the land. Roughly 700,000 to 750,000 Palestinians were displaced in the war of 1947–49, and the clause about their rights stayed in the founding letter.</p></div><p class="fig-src">Sources: [cite:balfour_letter] [cite:britannica_res181] [cite:rs_rd5_yusuf_2002] [cite:morris_1948] [cite:rs_rd6_mfa_armistice_map] [cite:wiki_six_day_war] [cite:wiki_nakba]</p></figure>

@@ -1,0 +1,33 @@
+<h2>The Whole Program</h2>
+<p>The five techniques ran at the same time, inside one larger structure: a state needs money, land, people, arms, diplomacy, organisation and recognition, and the <a href="road-network.html">network map</a> treats each as necessary. Written as one program, with the map's own results as its output:</p>
+<figure class="fig-code"><figcaption>The road to 1948 as one program, with the network map's results</figcaption><div class="cbar"><i></i><i></i><i></i><b>Road1948.m</b></div><pre><span class="k">int</span> main(<span class="k">void</span>) {
+  [<span class="t">MandatePalestine</span> load];
+  [<span class="t">NationalHome</span> install];
+  <span class="k">id</span> agency = [<span class="t">JewishAgency</span>
+    <span class="m">proxyFor</span>:zionistOrganization];
+  route(movementMoney,
+        <span class="t">AngloPalestineBank</span>);
+
+  double chance = <span class="n">1.0</span>;
+  <span class="k">for</span> (<span class="t">Channel</span> *c <span class="k">in</span> @[money, land,
+        people, arms, diplomacy,
+        organisation, recognition]) {
+    chance *= [c strength];
+    <span class="c">// any channel at zero: no state</span>
+  }
+  <span class="t">NSLog</span>(<span class="s">@&quot;State in 1948: %.0f%%&quot;</span>,
+        chance * <span class="n">100</span>);
+  <span class="k">return</span> <span class="n">0</span>;
+}
+
+<span class="c">// Output on the record, 26 Nov 2026</span>
+<span class="c">// full record ............ 93%</span>
+<span class="c">// no money ...............  0%</span>
+<span class="c">// no armed groups ........  0%</span>
+<span class="c">// no Rothschilds ......... 34%</span>
+<span class="c">// no British backing ..... 36%</span>
+<span class="c">// no United States ....... 25%</span>
+<span class="c">// no immigrants .......... 17%</span>
+<span class="c">//   (every power kept)</span>
+<span class="c">// no great power .........  1%</span></pre><div class="plain"><h5>In plain language</h5><p>The map counts what a state needed and multiplies the parts, so the absence of any one of them is fatal. On the full record the chance of a state in 1948 is about 93 percent. Take away all the money or all the armed groups and it is zero; take away the Rothschilds and it falls to about a third; take away British backing or the United States and it falls further.</p><p>It also limits the case: without the immigrants, with every power kept, the chance is 17 percent. The powers did not found the state alone; the people who came through the door they held open were needed too.</p></div><p class="fig-src">Sources: [cite:zionism_founding_1897] [cite:balfour_letter] [cite:pp_mandate_text]</p></figure>
+<p>The tests are live on the <a href="road-network.html">network map</a>, under Tests, where each can be run and read in full.</p>

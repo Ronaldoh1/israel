@@ -1,0 +1,38 @@
+<h2>+load: Installed Before Anyone Could Object</h2>
+<p>In Objective-C, a class's <code>+load</code> method runs as the program starts, before the program's own code has run a single line. Nothing written later can stop it; by the time the program begins, the class is already in place.</p>
+<figure class="fig-code"><figcaption>The founding commitments, loaded before the population was consulted</figcaption><div class="cbar"><i></i><i></i><i></i><b>MandatePalestine.m</b></div><pre><span class="k">@implementation</span> <span class="t">MandatePalestine</span>
+
++ (<span class="k">void</span>)load {
+  <span class="c">// 29-31 Aug 1897, Basel</span>
+  [<span class="t">ZionistOrg</span> <span class="m">adopt</span>:
+    <span class="s">@&quot;a home in Palestine&quot;</span>];
+    <span class="c">// &quot;secured under public law&quot;</span>
+
+  <span class="c">// 2 Nov 1917: a cabinet letter</span>
+  <span class="c">// addressed to Lord Rothschild</span>
+  [<span class="t">BritishCabinet</span> <span class="m">declare</span>:
+    <span class="s">@&quot;a national home&quot;</span>];
+    <span class="c">// &quot;for the Jewish people&quot;</span>
+
+  <span class="c">// 1922: written into the Mandate</span>
+  [<span class="t">Mandate</span> <span class="m">article</span>:<span class="n">2</span>
+    <span class="m">duty</span>:<span class="s">@&quot;secure the national home&quot;</span>];
+  [<span class="t">Mandate</span> <span class="m">article</span>:<span class="n">4</span>
+    <span class="m">recognise</span>:<span class="t">JewishAgency</span>.<span class="k">class</span>];
+  [<span class="t">Mandate</span> <span class="m">article</span>:<span class="n">6</span>
+    <span class="m">duty</span>:<span class="s">@&quot;facilitate immigration&quot;</span>];
+}
+
+<span class="k">@end</span>
+
+<span class="k">int</span> main(<span class="k">void</span>) {
+  <span class="c">// Aug 1922, Nablus: the majority</span>
+  <span class="c">// answers only now</span>
+  [<span class="t">ArabCongress</span>
+    <span class="m">boycott</span>:<span class="t">LegislativeCouncil</span>];
+  <span class="c">// 1923: members to be chosen by</span>
+  <span class="c">// the High Commissioner; rejected</span>
+  [<span class="t">Britain</span> <span class="m">offer</span>:<span class="t">ArabAgency</span>];
+  <span class="k">return</span> <span class="n">0</span>;  <span class="c">// already loaded</span>
+}</pre><div class="plain"><h5>In plain language</h5><p>The programme was adopted at Basel in 1897, the promise made by a British cabinet in 1917, and both were written into the Mandate in 1922: Article 2 made Britain responsible for securing the national home, Article 4 recognised a Jewish agency as a public body, and Article 6 required Britain to facilitate Jewish immigration.</p><p>Palestine's Arabs, about nine-tenths of the population, had not been asked. Their answer came afterwards, at the Fifth Palestine Arab Congress in Nablus in August 1922, which boycotted the elections to the Legislative Council; Britain then offered an "Arab Agency" whose members its High Commissioner would choose. The framework was already in force.</p></div><p class="fig-src">Sources: [cite:zionism_founding_1897] [cite:balfour_letter] [cite:rs_md_avalon] [cite:rs_lc_cojs_boycott] [cite:rs_lc_albright] [cite:rs_lc_cojs_arabagency]</p></figure>
+<p>This is the first link of the case set out in The Case: the commitments that carried the movement were made in London and Geneva, about a country whose majority had no part in making them. [cite:balfour_letter]</p>
