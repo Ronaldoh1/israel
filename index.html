@@ -6021,6 +6021,11 @@ body.book-open #libBanner{display:none}
 @keyframes mtShine{0%{transform:translateY(-120%)}45%,100%{transform:translateY(120%)}}
 .lb-metas .lb-map{display:inline-flex;align-items:center;gap:6px;margin-top:7px;padding:6px 11px 6px 9px;border:1px solid #B8432F;border-radius:999px;background:color-mix(in srgb,#B8432F 10%,transparent);color:#B8432F;font:650 12px/1.2 system-ui,sans-serif;cursor:pointer;text-align:left;animation:mapCall 2.4s ease-in-out .8s 4}
 #bookView[data-theme="night"] .lb-metas .lb-map{color:#F0A28F;border-color:#F0A28F}
+.lb-pdf{display:inline-flex;align-items:center;margin:7px 0 0 6px;padding:6px 11px;border:1px solid #8A6A22;border-radius:999px;background:color-mix(in srgb,#B8862B 10%,transparent);color:#7A5A12;font:650 12px/1.2 system-ui,sans-serif;text-decoration:none;vertical-align:top}
+.lb-pdf::before{content:"";width:9px;height:11px;margin-right:6px;background:currentColor;clip-path:polygon(35% 0,65% 0,65% 45%,90% 45%,50% 85%,10% 45%,35% 45%);flex:none}
+.lb-metas .lb-pdf:hover{background:color-mix(in srgb,#B8862B 20%,transparent)}
+#bookView[data-theme="night"] .lb-metas .lb-pdf{color:#E3B65A;border-color:#E3B65A}
+.bk-go a.alt{text-decoration:none}
 .lb-metas .lb-map:hover{background:color-mix(in srgb,#B8432F 18%,transparent)}
 .lb-metas .lb-map:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @keyframes mapCall{0%,100%{box-shadow:0 0 0 0 rgba(184,67,47,.45)}50%{box-shadow:0 0 0 7px rgba(184,67,47,0)}}
@@ -7104,6 +7109,7 @@ body.book-open #libBanner{display:none}
         '<button class="alt" type="button" data-go-id="' + f.id + '">Start from the beginning</button>';
     } else h += '<button class="bk-next" type="button" data-go-id="' + f.id + '"><small>Start reading</small>' + esc(f.t) + ' ›</button>';
     if(!low) h += '<button class="alt" type="button" data-go-id="contents">Contents</button>' +
+      '<a class="alt bk-pdf" href="pdf/' + esc(BOOK.id) + '.pdf" download>Download the PDF</a>' +
       '<p class="how">' + (paged() ? 'Swipe or tap the right edge to turn the page.' : 'Keep scrolling: the whole book runs on, part after part.') + '</p>';
     return h + '</div>';
   }
@@ -7506,7 +7512,7 @@ body.book-open #libBanner{display:none}
         var bi = BOOKS.indexOf(b), p = pr[b.id] || 0, cnt = b.status === 'ready' ? (b.total && b.chapters.length < b.total ? (b.chapters.length === 1 ? 'Part 1' : 'Parts 1\u2013' + b.chapters.length) + ' of ' + b.total + ' · in progress' : b.chapters.length + ' ' + (b.unit || 'chapters')) : b.count + ' parts in the simulation';
         if(b.cs) return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>' + esc(b.kind) + (b.span ? ' · ' + esc(b.span) : '') + '</small><div>' + (b.labels || []).map(function(l){ return '<span class="lbl">' + esc(l) + '</span>'; }).join('') + '</div><span class="chip">Coming soon</span></div>';
         if(b.status !== 'ready') return '<div class="meta soon"><b>' + esc(b.title) + '</b><small>Vol. ' + roman(b.vol) + ' · ' + esc(b.span || '') + '</small><span class="chip">In progress</span></div>';
-        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (MAPS[b.id] ? '<button class="lb-map" type="button" data-epmap="' + b.id + '" aria-label="Explore the ' + esc(MAPS[b.id].n) + '">🏷️ 🕸 Network map</button>' : '') + '<small class="lb-reads" data-reads="' + esc(b.id) + '"></small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
+        return '<div class="meta" data-b="' + bi + '"><b>' + esc(b.title) + '</b><small>' + VLs(b) + ' · ' + esc(b.span || '') + '</small><small>' + esc(cnt) + '</small>' + (MAPS[b.id] ? '<button class="lb-map" type="button" data-epmap="' + b.id + '" aria-label="Explore the ' + esc(MAPS[b.id].n) + '">🏷️ 🕸 Network map</button>' : '') + '<a class="lb-pdf" href="pdf/' + esc(b.id) + '.pdf" download onclick="event.stopPropagation()" aria-label="Download ' + esc(b.title) + ' as a PDF">Download PDF</a>' + '<small class="lb-reads" data-reads="' + esc(b.id) + '"></small>' + (p > 0 ? '<div class="pbar"><i style="width:' + Math.round(p * 100) + '%"></i></div>' : '') + '</div>'; }).join('') + '</div>';
     }
     return h;
   }
