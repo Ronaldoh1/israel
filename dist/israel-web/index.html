@@ -7689,6 +7689,28 @@ body.book-open #libBanner{display:none}
   window.addEventListener('resize', function(){ if(ltOn) ltPlace(); });
   window.libraryTour = function(){ if(!view.classList.contains('on')) openBook(null); setTimeout(function(){ libTour(true); }, 400); };
   window.openLibrary = function(){ openBook(null); };
+  /* 27 Nov 2026: warm the network maps so they open fast. A map is fetched into the browser cache the moment a finger or
+     pointer lands on anything that opens it; on a good connection the Road to 1948 map is also fetched quietly a few
+     seconds after the library opens. The fetch is low priority and happens once per page load. */
+  var warmed = {};
+  function warmMap(f){
+    if(!f || warmed[f] || location.protocol === 'file:') return; warmed[f] = 1;
+    try{ fetch(f, {credentials: 'same-origin', priority: 'low'}).catch(function(){}); }catch(_){}
+    if(!warmed.d3){ warmed.d3 = 1; try{ fetch('vendor/d3-7.8.5.min.js', {priority: 'low'}).catch(function(){}); }catch(_){} }
+  }
+  function mapFileOf(el){
+    var em = el.closest && el.closest('[data-epmap]'); if(em){ var m = MAPS[em.getAttribute('data-epmap')] || MAPS.epstein; return m && m.f; }
+    var a = el.closest && el.closest('a[href]'); if(a){ var h = a.getAttribute('href') || ''; var k = h.match(/^([\w-]+-network\.html)/); if(k) return k[1]; }
+    return null;
+  }
+  ['pointerdown', 'mouseover', 'focusin'].forEach(function(ev){
+    document.addEventListener(ev, function(e){ var f = e.target && mapFileOf(e.target); if(f) warmMap(f); }, {passive: true, capture: true});
+  });
+  setTimeout(function(){
+    var c = navigator.connection; if(c && (c.saveData || /(^|-)2g|3g/.test(c.effectiveType || ''))) return;
+    var go = function(){ if(view.classList.contains('lib') || view.classList.contains('on')) warmMap(MAPS.road1948 && MAPS.road1948.f); };
+    if(window.requestIdleCallback) requestIdleCallback(go, {timeout: 8000}); else go();
+  }, 4000);
   lib.addEventListener('click', function(e){
     if(e.target.closest('[data-promo-vid]')){ var v = lib.querySelector('.lb-ep .lb-vid'); if(!v){ libQ = ''; var q = $('lbQ'); if(q) q.value = ''; renderLib(); v = lib.querySelector('.lb-ep .lb-vid'); }
       if(v){ v.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'center'}); v.classList.remove('lb-flash'); void v.offsetWidth; v.classList.add('lb-flash'); setTimeout(function(){ try{ v.focus({preventScroll:true}); }catch(err){} }, 600); } return; }

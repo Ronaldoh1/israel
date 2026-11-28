@@ -36,6 +36,13 @@ export default {
       for (const r of results || []) { if (r.k === 'site') site = r.n; else if (r.k.startsWith('b:')) books[r.k.slice(2)] = r.n; }
       return json({ base: BASE, site, books, since: SINCE }, 200, { 'Cache-Control': 'public, max-age=60' });
     }
-    return env.ASSETS.fetch(req);
+    const res = await env.ASSETS.fetch(req);
+    // versioned libraries (vendor/<name>-<version>.js) never change, so phones keep them instead of asking again
+    if (url.pathname.startsWith('/vendor/') && res.ok) {
+      const r = new Response(res.body, res);
+      r.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+      return r;
+    }
+    return res;
   },
 };

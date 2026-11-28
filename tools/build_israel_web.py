@@ -71,3 +71,7 @@ os.makedirs(os.path.join(OUT, 'data'), exist_ok=True)
 for f in ('aid-tally.xlsx', 'aid-tally.csv'):
     src = os.path.join(ROOT, 'book', 'plan', 'aid_tally', f)
     if os.path.exists(src): shutil.copy(src, os.path.join(OUT, 'data', f)); print('copied', f, 'into dist/israel-web/data/')
+# the network maps load d3 from this site (tools/patch_map_speed.py), next to the pages in both dist/ and dist/israel-web/
+for d in (os.path.join(ROOT, 'dist', 'vendor'), os.path.join(OUT, 'vendor')):
+    os.makedirs(d, exist_ok=True); shutil.copy(os.path.join(ROOT, 'tools', 'vendor', 'd3-7.8.5.min.js'), d)
+print('copied vendor/d3-7.8.5.min.js beside the map pages')
