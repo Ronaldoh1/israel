@@ -222,7 +222,7 @@ Tile 1: "58%" — "of Americans want military support cut or ended (Oct 2026 pol
 Tile 2: "~$11B" — "more in US interceptors fired defending Israel (est.)"
 Tile 3: "2028" — "when the current 10-year aid deal runs out"
 
-ACCENT BAR: full-width crimson bar with a thin gold border, white heavy caps: "$425 BILLION IN. NOTHING BACK TO THE TREASURY."
+ACCENT BAR: full-width crimson bar with a thin gold border, white heavy caps: "$356 BILLION IN GRANTS. NOT ONE DOLLAR BACK."
 
 CTA BLOCK (bottom quarter, in this order): "www.1948scam.com" in thick antique-gold foil, the largest text after the headline, on a navy pill with a glowing gold-foil outline; then smaller white text "See every year → www.1948scam.com/data/aid-tally.xlsx"; then two social pills: TikTok "@chosenron13" and Instagram "@chosen.ron13".
 
