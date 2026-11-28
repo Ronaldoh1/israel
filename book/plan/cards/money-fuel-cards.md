@@ -161,7 +161,7 @@ A clean ledger on a translucent dark-green glass panel with thin gold foil borde
 "Keren Hayesod · 1921–32" — "$23M" — "$440M"
 Small cyan column headers above the figures: "THEN" and "TODAY".
 
-Crimson callout bar, white heavy caps: "US AID SINCE 1946 IS ABOUT 15 TIMES THIS"
+Crimson callout bar, white heavy caps: "US AID SINCE 1949 IS ABOUT 22 TIMES THIS, IN TODAY'S DOLLARS"
 
 Small white line at the bottom of the content area: "US consumer price index for each year, to October 2026. Rothschild sum valued at 1913 prices (at 1934 prices: $1.5B)."
 
@@ -212,8 +212,8 @@ Headline, Montserrat Black, white with gold foil edge: "THE FUEL NEVER STOPPED"
 Subhead, gold foil italic serif: "From 1949, the patron was Washington"
 
 Translucent dark-green glass panel with thin gold foil border:
-Giant gold foil number: "$298 BILLION"
-Cyan small caps: "US AID TO ISRAEL, 1946–2024 (IN 2024 DOLLARS, CRS)"
+Giant gold foil number: "$425 BILLION"
+Cyan small caps: "US AID TO ISRAEL, 1949–2026, EACH YEAR IN TODAY'S DOLLARS"
 Gold-star bullets in white:
 "$3.8 billion a year pledged, 2019–2028"
 "$21.7 billion in military aid, Oct 2023–Sept 2025"
@@ -229,7 +229,7 @@ All text spelled exactly as written, razor-sharp and fully legible, high contras
 ---
 
 **Sources behind the figures**
-- Today's dollars: each documented sum converted from the year it was given with the BLS CPI-U (1913 9.9; 1926 17.7 for Keren Hayesod 1921-32; 1929 17.1; 1933-39 about 13.9; 1946 19.5; 1948 24.1) to October 2026 (337.511). The map records about $1.38 billion in 1948 dollars, about $19.3 billion today: about $647 million in sums the record states (about $9.1 billion today), about $709 million of private and immigrant capital estimated from documented totals (about P£75 million 1919-39 and P£19 million 1940-44; about $9.9 billion today), and about $20 million of placeholders ($1 million or less for each tie whose sum the record does not give). Shares are of the 1948-dollar total. Sterling at $4.86. US aid of $298 billion (2024 dollars) is about $321 billion today, about 15 times $19.3 billion.
+- Today's dollars: each documented sum converted from the year it was given with the BLS CPI-U (1913 9.9; 1926 17.7 for Keren Hayesod 1921-32; 1929 17.1; 1933-39 about 13.9; 1946 19.5; 1948 24.1) to October 2026 (337.511). The map records about $1.38 billion in 1948 dollars, about $19.3 billion today: about $647 million in sums the record states (about $9.1 billion today), about $709 million of private and immigrant capital estimated from documented totals (about P£75 million 1919-39 and P£19 million 1940-44; about $9.9 billion today), and about $20 million of placeholders ($1 million or less for each tie whose sum the record does not give). Shares are of the 1948-dollar total. Sterling at $4.86. US aid, FY1949–FY2026, each year converted from its own prices to October 2026 dollars, is about $425 billion (the Aid and Arms volume, Part Two; the Research Service's own figure is about $298 billion in 2024 dollars for 1946–2024), about 22 times $19.3 billion.
 - Network map money record: Edmond de Rothschild (JTA 1934, "over sixty million dollars"); United Palestine Appeal ($52M 1946, $74.7M 1948); Haavara (105M Reichsmarks, about $35M); Golda Meyerson's 1948 tour (about $50M); Keren Hayesod (£4.7M, 1921–32).
 - Map tests: run on the cause-and-effect model, 27 Nov 2026.
 - After 1948: CRS RL33222 and the 2025 aid figures; Hartung, Quincy Institute and Costs of War (2025); vetoes (Chicago Council, to December 2023); AIPAC/UDP spending (Sludge, 2026).

@@ -206,6 +206,22 @@ And the paradox: Iran's constitution reserves a seat in parliament for its Jewis
 
 ---
 
+## Volume XVII · Aid and Arms
+
+How much has America actually given Israel? Most people quote one number. This book counts every year.
+
+The first US aid was a $100 million loan in 1949. The big turn came with the October 1973 war, and from 1985 it was all grants: about $3 billion a year. Since 2019 it's $3.8 billion a year, under a ten-year agreement signed in 2016.
+
+Here's the catch. A dollar of 1980 isn't a dollar of today. So the book converts every single year at its own prices. Counted that way, from 1949 to 2026, the total is about $425 billion in today's dollars. About $356 billion of it was grants, never repaid.
+
+The Research Service's own figure, about $298 billion, is in 2024 dollars and leaves out the Pentagon's missile-defence money. The book shows both, and why they differ.
+
+Then the war years: $21.7 billion in military aid in two years. And where it goes: most of it is spent in America, with American arms makers.
+
+*[Closing line]*
+
+---
+
 ## Volume XVIII · The Greater Israel Architecture (script 1 of 3: the overview)
 
 "Greater Israel." "From the Nile to the Euphrates." You've heard it. This book traces it.

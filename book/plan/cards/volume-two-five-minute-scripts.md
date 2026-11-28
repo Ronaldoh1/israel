@@ -274,7 +274,7 @@ Hamas. The Muslim Brotherhood opened branches in Gaza in the 1940s. After 1967 A
 
 The peace plans. Madrid in 1991. The Oslo Accords: mutual recognition in 1993, and the West Bank cut into Areas A, B and C in 1995, with every hard question left for later. Prime Minister Rabin was assassinated by an Israeli opponent of the deal. The final status was never settled.
 
-The patron. From 1949 the patron was the United States. No country has received more American aid since the Second World War: about $298 billion from 1946 to 2024, in 2024 dollars, according to the Congressional Research Service. The current agreement pledges $3.8 billion a year from 2019 to 2028. From October 2023 to September 2025, US military aid to Israel came to $21.7 billion.
+The patron. From 1949 the patron was the United States. No country has received more American aid since the Second World War: about $298 billion from 1946 to 2024, in 2024 dollars, according to the Congressional Research Service. Count it year by year in today's dollars, through 2026, and it's about $425 billion. The current agreement pledges $3.8 billion a year from 2019 to 2028. From October 2023 to September 2025, US military aid to Israel came to $21.7 billion.
 
 Iran is a chain with its own root. Iran recognized Israel de facto in 1950. In August 1953 a coup, which the CIA's own history says it directed, restored the Shah, and a hidden alliance with Israel grew under him. The 1979 revolution ended it within weeks: Israel's mission in Tehran was handed to the PLO. That chain didn't start with Israel's founding, and the book says so.
 
