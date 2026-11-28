@@ -66,3 +66,8 @@ for extra in ['epstein-network.html', 'road-network.html', 'de-network.html', 'r
     if os.path.exists(src):
         shutil.copy(src, os.path.join(ROOT, 'dist', extra)); shutil.copy(src, os.path.join(OUT, extra))
         print('copied', extra, 'into dist/ and dist/israel-web/')
+# the downloadable data behind the Aid and Arms tally (book/plan/aid_tally/tally.py writes them)
+os.makedirs(os.path.join(OUT, 'data'), exist_ok=True)
+for f in ('aid-tally.xlsx', 'aid-tally.csv'):
+    src = os.path.join(ROOT, 'book', 'plan', 'aid_tally', f)
+    if os.path.exists(src): shutil.copy(src, os.path.join(OUT, 'data', f)); print('copied', f, 'into dist/israel-web/data/')
