@@ -38,6 +38,6 @@ const out=await p.evaluate(()=>{
    else items.push(Object.assign({},x,{kind:'triple',label:'Without '+x.ids.slice(0,-1).map(nm).join(', ')+' and '+nm(x.ids[2]),alone:x.ids.map(i=>single[i])})); }
  items.splice(items.length,0); const all=items.filter(x=>x.kind!=='pair').concat([]); // keep order: singles, groups, group pairs, then pairs, then triples
  const ordered=[...items.filter(x=>x.kind==='single'),...items.filter(x=>x.kind==='group').sort((a,b)=>a.V-b.V),...items.filter(x=>x.kind==='groups').sort((a,b)=>a.V-b.V),...pairs,...items.filter(x=>x.kind==='triple')];
- return {built:'2026-11-19',cut:CUT,baseline:base,searched:{singles:Object.keys(single).length,groups:gnames.length,group_pairs:gp,pairs:pool.length*(pool.length-1)/2,triples:nt},pool:pool.length,pool3:P3.length,items:ordered};
+ return {built:new Date().toISOString().slice(0,10),cut:CUT,baseline:base,searched:{singles:Object.keys(single).length,groups:gnames.length,group_pairs:gp,pairs:pool.length*(pool.length-1)/2,triples:nt},pool:pool.length,pool3:P3.length,items:ordered};
 });
 console.log(JSON.stringify(errs).slice(0,300)); fs.writeFileSync(SP+'breakers_live.json',JSON.stringify(out,null,1)); console.log(out.items.length, JSON.stringify(out.searched)); await b.close();})();

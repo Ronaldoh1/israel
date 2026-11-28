@@ -1,30 +1,17 @@
 {
- "built": "2026-11-19",
+ "built": "2026-11-27",
  "cut": 35,
  "baseline": 93.2,
  "searched": {
-  "singles": 798,
+  "singles": 858,
   "groups": 15,
   "group_pairs": 105,
-  "pairs": 1711,
+  "pairs": 1770,
   "triples": 2600
  },
- "pool": 59,
+ "pool": 60,
  "pool3": 26,
  "items": [
-  {
-   "kind": "single",
-   "label": "Without Edmond de Rothschild",
-   "ids": [
-    "edmond_r"
-   ],
-   "V": 35.1,
-   "verdict": "Unlikely",
-   "ever": 42.7,
-   "lost": 38.4,
-   "weakest": "money",
-   "dec": []
-  },
   {
    "kind": "group",
    "label": "Without the banks and land and finance companies",
@@ -34,7 +21,7 @@
    "V": 0,
    "verdict": "Not possible on this record",
    "ever": 0,
-   "lost": 31.9,
+   "lost": 25.5,
    "weakest": "holdings",
    "dec": []
   },
@@ -47,7 +34,7 @@
    "V": 0,
    "verdict": "Not possible on this record",
    "ever": 0,
-   "lost": 16.9,
+   "lost": 33.2,
    "weakest": "money",
    "dec": []
   },
@@ -60,7 +47,7 @@
    "V": 0,
    "verdict": "Not possible on this record",
    "ever": 0,
-   "lost": 12.4,
+   "lost": 0.9,
    "weakest": "force",
    "dec": []
   },
@@ -70,10 +57,10 @@
    "groups": [
     "Without the United States"
    ],
-   "V": 24,
+   "V": 28.9,
    "verdict": "Unlikely",
-   "ever": 48.2,
-   "lost": 12.9,
+   "ever": 50.3,
+   "lost": 6.9,
    "weakest": "diplomacy",
    "dec": [
     [
@@ -88,22 +75,26 @@
   },
   {
    "kind": "group",
-   "label": "Without the US government",
+   "label": "Without the British government",
    "groups": [
-    "US government"
+    "British government"
    ],
    "V": 31.7,
    "verdict": "Unlikely",
-   "ever": 53.3,
-   "lost": 9.1,
-   "weakest": "diplomacy",
+   "ever": 46.9,
+   "lost": 27.1,
+   "weakest": "people",
    "dec": [
     [
-     "The American vote and pressure for partition (Nov 1947)",
+     "The Balfour Declaration (2 Nov 1917)",
      0
     ],
     [
-     "The UN partition vote, with blocs following their leaders",
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "Britain hands Palestine to the UN (Feb 1947)",
      0
     ]
    ]
@@ -114,10 +105,10 @@
    "groups": [
     "Countries that voted for partition"
    ],
-   "V": 33.5,
+   "V": 34.4,
    "verdict": "Possible, with great difficulty",
-   "ever": 66.4,
-   "lost": 0.9,
+   "ever": 66.5,
+   "lost": 0.2,
    "weakest": "recognition",
    "dec": [
     [
@@ -127,114 +118,238 @@
    ]
   },
   {
-   "kind": "group",
-   "label": "Without the Rothschild family",
+   "kind": "groups",
+   "label": "Without the US government and the Soviet bloc",
    "groups": [
-    "Rothschild family and houses"
+    "US government",
+    "Soviet bloc"
    ],
-   "V": 34.1,
+   "alone": [
+    35.7,
+    83.4
+   ],
+   "V": 18.9,
    "verdict": "Unlikely",
-   "ever": 42.5,
-   "lost": 38.7,
+   "ever": 48.3,
+   "lost": 2.2,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the Rothschild family and the US government",
+   "groups": [
+    "Rothschild family and houses",
+    "US government"
+   ],
+   "alone": [
+    63.9,
+    35.7
+   ],
+   "V": 21.9,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 17.4,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the US government and the United Nations",
+   "groups": [
+    "US government",
+    "The United Nations"
+   ],
+   "alone": [
+    35.7,
+    83.6
+   ],
+   "V": 26,
+   "verdict": "Unlikely",
+   "ever": 42.1,
+   "lost": 2.1,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the US government and the American Zionist organizations",
+   "groups": [
+    "US government",
+    "American Zionist organizations"
+   ],
+   "alone": [
+    35.7,
+    78.2
+   ],
+   "V": 30.6,
+   "verdict": "Unlikely",
+   "ever": 51.2,
+   "lost": 6.2,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the US government and the religious institutions",
+   "groups": [
+    "US government",
+    "Religious institutions"
+   ],
+   "alone": [
+    35.7,
+    92.9
+   ],
+   "V": 34.7,
+   "verdict": "Unlikely",
+   "ever": 52.5,
+   "lost": 2.3,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "groups",
+   "label": "Without the US government and France",
+   "groups": [
+    "US government",
+    "France"
+   ],
+   "alone": [
+    35.7,
+    92.3
+   ],
+   "V": 34.7,
+   "verdict": "Unlikely",
+   "ever": 52.7,
+   "lost": 2.5,
+   "weakest": "diplomacy",
+   "dec": [
+    [
+     "The American vote and pressure for partition (Nov 1947)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Theodor Herzl and Land held by other Jewish owners (1948)",
+   "ids": [
+    "herzl",
+    "other_holdings"
+   ],
+   "alone": [
+    69.2,
+    83.2
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 6.9,
+   "weakest": "holdings",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Theodor Herzl and Yishuv institutions (Va'ad Leumi)",
+   "ids": [
+    "herzl",
+    "yishuv"
+   ],
+   "alone": [
+    69.2,
+    91
+   ],
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 6.9,
    "weakest": "money",
    "dec": []
   },
   {
-   "kind": "groups",
-   "label": "Without the British government and the American Zionist organizations",
-   "groups": [
-    "British government",
-    "American Zionist organizations"
+   "kind": "pair",
+   "label": "Without both World Zionist Organization and Land held by other Jewish owners (1948)",
+   "ids": [
+    "wzo",
+    "other_holdings"
    ],
    "alone": [
-    35.6,
-    74.8
+    71.4,
+    83.2
    ],
-   "V": 27.6,
-   "verdict": "Unlikely",
-   "ever": 46.3,
-   "lost": 30.5,
-   "weakest": "people",
-   "dec": [
-    [
-     "The Balfour Declaration (2 Nov 1917)",
-     0
-    ],
-    [
-     "The League approves the Mandate (24 Jul 1922)",
-     0
-    ],
-    [
-     "Britain hands Palestine to the UN (Feb 1947)",
-     0
-    ]
-   ]
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 5.2,
+   "weakest": "holdings",
+   "dec": []
   },
   {
-   "kind": "groups",
-   "label": "Without the British government and the Soviet bloc",
-   "groups": [
-    "British government",
-    "Soviet bloc"
+   "kind": "pair",
+   "label": "Without both World Zionist Organization and Yishuv institutions (Va'ad Leumi)",
+   "ids": [
+    "wzo",
+    "yishuv"
    ],
    "alone": [
-    35.6,
-    81.8
+    71.4,
+    91
    ],
-   "V": 27.6,
-   "verdict": "Unlikely",
-   "ever": 47.7,
-   "lost": 28.4,
-   "weakest": "recognition",
-   "dec": [
-    [
-     "The Balfour Declaration (2 Nov 1917)",
-     0
-    ],
-    [
-     "The League approves the Mandate (24 Jul 1922)",
-     0
-    ],
-    [
-     "Britain hands Palestine to the UN (Feb 1947)",
-     0
-    ],
-    [
-     "The Czechoslovak arms (Jan to Oct 1948)",
-     0
-    ]
-   ]
-  },
-  {
-   "kind": "groups",
-   "label": "Without the British government and Christian Zionism",
-   "groups": [
-    "British government",
-    "Christian Zionism"
-   ],
-   "alone": [
-    35.6,
-    92.1
-   ],
-   "V": 34.9,
-   "verdict": "Unlikely",
-   "ever": 47.8,
-   "lost": 28.5,
-   "weakest": "people",
-   "dec": [
-    [
-     "The Balfour Declaration (2 Nov 1917)",
-     0
-    ],
-    [
-     "The League approves the Mandate (24 Jul 1922)",
-     0
-    ],
-    [
-     "Britain hands Palestine to the UN (Feb 1947)",
-     0
-    ]
-   ]
+   "V": 0,
+   "verdict": "Not possible on this record",
+   "ever": 0,
+   "lost": 5.3,
+   "weakest": "money",
+   "dec": []
   },
   {
    "kind": "pair",
@@ -244,13 +359,13 @@
     "other_holdings"
    ],
    "alone": [
-    82.8,
+    80.6,
     83.2
    ],
    "V": 0,
    "verdict": "Not possible on this record",
    "ever": 0,
-   "lost": 2,
+   "lost": 2.4,
    "weakest": "holdings",
    "dec": []
   },
@@ -262,90 +377,366 @@
     "other_holdings"
    ],
    "alone": [
-    72.4,
+    72.6,
     83.2
    ],
    "V": 4,
    "verdict": "Not possible on this record",
    "ever": 4,
-   "lost": 0.2,
+   "lost": 0,
    "weakest": "holdings",
    "dec": []
   },
   {
+   "kind": "pair",
+   "label": "Without both Theodor Herzl and Jewish economy of Mandate Palestine",
    "ids": [
-    "pica",
-    "jewish_agency",
-    "apc_bank"
+    "herzl",
+    "jewish_economy"
    ],
-   "V": 23.9,
-   "verdict": "Not possible on this record",
-   "ever": 27.6,
-   "lost": 5.5,
-   "weakest": "money",
-   "dec": [],
-   "kind": "triple",
-   "label": "Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Anglo-Palestine Company (Bank Leumi)",
    "alone": [
-    82.5,
-    85.1,
-    88.7
-   ]
-  },
-  {
-   "ids": [
-    "pica",
-    "jewish_agency",
-    "zionist_congress"
+    69.2,
+    70.1
    ],
-   "V": 24.5,
-   "verdict": "Not possible on this record",
-   "ever": 27.9,
-   "lost": 4.2,
-   "weakest": "money",
-   "dec": [],
-   "kind": "triple",
-   "label": "Without Palestine Jewish Colonization Association (PICA), Jewish Agency and Zionist Congress",
-   "alone": [
-    82.5,
-    85.1,
-    87.9
-   ]
-  },
-  {
-   "ids": [
-    "pica",
-    "czechoslovakia",
-    "jewish_agency"
-   ],
-   "V": 28.4,
+   "V": 23.1,
    "verdict": "Unlikely",
-   "ever": 33,
-   "lost": 3.2,
+   "ever": 31,
+   "lost": 12.6,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Jewish economy of Mandate Palestine and World Zionist Organization",
+   "ids": [
+    "jewish_economy",
+    "wzo"
+   ],
+   "alone": [
+    70.1,
+    71.4
+   ],
+   "V": 24.1,
+   "verdict": "Unlikely",
+   "ever": 31.1,
+   "lost": 11,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British War Cabinet and Jewish economy of Mandate Palestine",
+   "ids": [
+    "war_cabinet",
+    "jewish_economy"
+   ],
+   "alone": [
+    49.1,
+    70.1
+   ],
+   "V": 29.2,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 26.1,
    "weakest": "money",
    "dec": [
     [
-     "The Czechoslovak arms (Jan to Oct 1948)",
+     "The Balfour Declaration (2 Nov 1917)",
      0
     ]
-   ],
-   "kind": "triple",
-   "label": "Without Palestine Jewish Colonization Association (PICA), Czechoslovakia (arms supplier) and Jewish Agency",
-   "alone": [
-    82.5,
-    82.7,
-    85.1
    ]
   },
   {
+   "kind": "pair",
+   "label": "Without both Balfour Declaration (1917) and Jewish economy of Mandate Palestine",
+   "ids": [
+    "balfour_decl",
+    "jewish_economy"
+   ],
+   "alone": [
+    49.1,
+    70.1
+   ],
+   "V": 29.2,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British Government and Jewish economy of Mandate Palestine",
+   "ids": [
+    "uk",
+    "jewish_economy"
+   ],
+   "alone": [
+    49.8,
+    70.1
+   ],
+   "V": 29.6,
+   "verdict": "Unlikely",
+   "ever": 41.6,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Mandate for Palestine (1922) and Jewish economy of Mandate Palestine",
+   "ids": [
+    "mandate",
+    "jewish_economy"
+   ],
+   "alone": [
+    49.9,
+    70.1
+   ],
+   "V": 29.6,
+   "verdict": "Unlikely",
+   "ever": 41.6,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both League of Nations and Jewish economy of Mandate Palestine",
+   "ids": [
+    "league",
+    "jewish_economy"
+   ],
+   "alone": [
+    49.9,
+    70.1
+   ],
+   "V": 29.6,
+   "verdict": "Unlikely",
+   "ever": 41.6,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British War Cabinet and Edmond de Rothschild",
    "ids": [
     "war_cabinet",
-    "us_gov",
-    "mandate_admin"
+    "edmond_r"
    ],
-   "V": 31,
+   "alone": [
+    49.1,
+    69.7
+   ],
+   "V": 29.9,
    "verdict": "Unlikely",
-   "ever": 49.4,
+   "ever": 43.1,
+   "lost": 36.4,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Balfour Declaration (1917) and Edmond de Rothschild",
+   "ids": [
+    "balfour_decl",
+    "edmond_r"
+   ],
+   "alone": [
+    49.1,
+    69.7
+   ],
+   "V": 29.9,
+   "verdict": "Unlikely",
+   "ever": 43.1,
+   "lost": 36.4,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British Government and Edmond de Rothschild",
+   "ids": [
+    "uk",
+    "edmond_r"
+   ],
+   "alone": [
+    49.8,
+    69.7
+   ],
+   "V": 30.4,
+   "verdict": "Unlikely",
+   "ever": 43.1,
+   "lost": 36.4,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Mandate for Palestine (1922) and Edmond de Rothschild",
+   "ids": [
+    "mandate",
+    "edmond_r"
+   ],
+   "alone": [
+    49.9,
+    69.7
+   ],
+   "V": 30.4,
+   "verdict": "Unlikely",
+   "ever": 43.1,
+   "lost": 36.4,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both League of Nations and Edmond de Rothschild",
+   "ids": [
+    "league",
+    "edmond_r"
+   ],
+   "alone": [
+    49.9,
+    69.7
+   ],
+   "V": 30.4,
+   "verdict": "Unlikely",
+   "ever": 43.1,
+   "lost": 36.4,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British War Cabinet and Private and immigrant capital (1919-1939)",
+   "ids": [
+    "war_cabinet",
+    "private_capital_interwar"
+   ],
+   "alone": [
+    49.1,
+    78.7
+   ],
+   "V": 33,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Balfour Declaration (1917) and Private and immigrant capital (1919-1939)",
+   "ids": [
+    "balfour_decl",
+    "private_capital_interwar"
+   ],
+   "alone": [
+    49.1,
+    78.7
+   ],
+   "V": 33,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British Government and Private and immigrant capital (1919-1939)",
+   "ids": [
+    "uk",
+    "private_capital_interwar"
+   ],
+   "alone": [
+    49.8,
+    78.7
+   ],
+   "V": 33.5,
+   "verdict": "Unlikely",
+   "ever": 45,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Mandate for Palestine (1922) and Private and immigrant capital (1919-1939)",
+   "ids": [
+    "mandate",
+    "private_capital_interwar"
+   ],
+   "alone": [
+    49.9,
+    78.7
+   ],
+   "V": 33.6,
+   "verdict": "Unlikely",
+   "ever": 45,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": []
+  },
+  {
+   "kind": "pair",
+   "label": "Without both League of Nations and Private and immigrant capital (1919-1939)",
+   "ids": [
+    "league",
+    "private_capital_interwar"
+   ],
+   "alone": [
+    49.9,
+    78.7
+   ],
+   "V": 33.6,
+   "verdict": "Unlikely",
+   "ever": 45,
+   "lost": 26.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both British War Cabinet and US Government",
+   "ids": [
+    "war_cabinet",
+    "us_gov"
+   ],
+   "alone": [
+    49.1,
+    65.8
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 54.1,
    "lost": 26.1,
    "weakest": "recognition",
    "dec": [
@@ -357,20 +748,265 @@
      "The UN partition vote, with blocs following their leaders",
      0
     ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Balfour Declaration (1917) and US Government",
+   "ids": [
+    "balfour_decl",
+    "us_gov"
+   ],
+   "alone": [
+    49.1,
+    65.8
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 54.1,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "label": "Without both Theodor Herzl and Edmond de Rothschild",
+   "ids": [
+    "herzl",
+    "edmond_r"
+   ],
+   "alone": [
+    69.2,
+    69.7
+   ],
+   "V": 34.8,
+   "verdict": "Unlikely",
+   "ever": 46.3,
+   "lost": 20.4,
+   "weakest": "holdings",
+   "dec": []
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "private_capital_interwar"
+   ],
+   "V": 12.6,
+   "verdict": "Not possible on this record",
+   "ever": 22.4,
+   "lost": 21.4,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild, World Zionist Organization and Private and immigrant capital (1919-1939)",
+   "alone": [
+    69.7,
+    71.4,
+    78.7
+   ]
+  },
+  {
+   "ids": [
+    "herzl",
+    "private_capital_interwar",
+    "pica"
+   ],
+   "V": 16.2,
+   "verdict": "Not possible on this record",
+   "ever": 22.7,
+   "lost": 10.4,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Theodor Herzl, Private and immigrant capital (1919-1939) and Palestine Jewish Colonization Association (PICA)",
+   "alone": [
+    69.2,
+    78.7,
+    88
+   ]
+  },
+  {
+   "ids": [
+    "wzo",
+    "private_capital_interwar",
+    "pica"
+   ],
+   "V": 16.8,
+   "verdict": "Not possible on this record",
+   "ever": 22.8,
+   "lost": 8.8,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without World Zionist Organization, Private and immigrant capital (1919-1939) and Palestine Jewish Colonization Association (PICA)",
+   "alone": [
+    71.4,
+    78.7,
+    88
+   ]
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "jewish_economy",
+    "jnf"
+   ],
+   "V": 19.1,
+   "verdict": "Unlikely",
+   "ever": 30.2,
+   "lost": 20.7,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild, Jewish economy of Mandate Palestine and Jewish National Fund",
+   "alone": [
+    69.7,
+    70.1,
+    80.6
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "pica"
+   ],
+   "V": 23.4,
+   "verdict": "Unlikely",
+   "ever": 38.7,
+   "lost": 29.9,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
    ],
    "fixed": [
-    "us_gov",
-    "mandate_admin"
+    "herzl",
+    "pica"
    ],
    "alts": [
     "war_cabinet",
     "balfour_decl",
     "uk",
-    "league",
-    "mandate"
+    "mandate",
+    "league"
    ],
    "kind": "triple",
-   "label": "Without US Government and British Mandate administration, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, League of Nations, Mandate for Palestine (1922)"
+   "label": "Without Theodor Herzl and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "pica"
+   ],
+   "V": 24.3,
+   "verdict": "Unlikely",
+   "ever": 39.1,
+   "lost": 28.8,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "wzo",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "jewish_economy",
+    "jnf",
+    "pica"
+   ],
+   "V": 25.4,
+   "verdict": "Unlikely",
+   "ever": 31.1,
+   "lost": 8,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Jewish economy of Mandate Palestine, Jewish National Fund and Palestine Jewish Colonization Association (PICA)",
+   "alone": [
+    70.1,
+    80.6,
+    88
+   ]
+  },
+  {
+   "ids": [
+    "us_gov",
+    "herzl",
+    "private_capital_interwar"
+   ],
+   "V": 26.3,
+   "verdict": "Unlikely",
+   "ever": 44.4,
+   "lost": 9.7,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "herzl"
+   ],
+   "alts": [
+    "private_capital_interwar",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Theodor Herzl, plus any one of: Private and immigrant capital (1919-1939), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "edmond_r",
+    "wzo"
+   ],
+   "V": 26.2,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 18.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Edmond de Rothschild and World Zionist Organization",
+   "alone": [
+    65.8,
+    69.7,
+    71.4
+   ]
   },
   {
    "ids": [
@@ -378,9 +1014,9 @@
     "mandate_admin",
     "pica"
    ],
-   "V": 32.2,
+   "V": 26.7,
    "verdict": "Unlikely",
-   "ever": 43.2,
+   "ever": 39.8,
    "lost": 26.1,
    "weakest": "holdings",
    "dec": [
@@ -405,20 +1041,271 @@
   },
   {
    "ids": [
-    "war_cabinet",
+    "uk",
     "us_gov",
-    "haganah"
+    "mandate_admin"
    ],
-   "V": 32.4,
+   "V": 26.7,
    "verdict": "Unlikely",
-   "ever": 52.7,
+   "ever": 47.6,
    "lost": 26.1,
    "weakest": "recognition",
    "dec": [
     [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "mandate_admin"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and British Mandate administration, plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "wzo",
+    "private_capital_interwar"
+   ],
+   "V": 27.3,
+   "verdict": "Unlikely",
+   "ever": 44.7,
+   "lost": 8.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "wzo"
+   ],
+   "alts": [
+    "private_capital_interwar",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and World Zionist Organization, plus any one of: Private and immigrant capital (1919-1939), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "jnf",
+    "pica"
+   ],
+   "V": 27.8,
+   "verdict": "Unlikely",
+   "ever": 41.2,
+   "lost": 27.4,
+   "weakest": "holdings",
+   "dec": [
+    [
      "The Balfour Declaration (2 Nov 1917)",
      0
+    ]
+   ],
+   "fixed": [
+    "jnf",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Jewish National Fund and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "technion"
+   ],
+   "V": 27.4,
+   "verdict": "Unlikely",
+   "ever": 47.2,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "uk",
+    "us_gov"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and US Government, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "us_gov",
+    "technion"
+   ],
+   "V": 27.4,
+   "verdict": "Unlikely",
+   "ever": 47.2,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate",
+    "us_gov"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and US Government, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "us_gov",
+    "technion"
+   ],
+   "V": 27.4,
+   "verdict": "Unlikely",
+   "ever": 47.2,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
     ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "us_gov"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and US Government, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "mandate_admin"
+   ],
+   "V": 28.2,
+   "verdict": "Unlikely",
+   "ever": 39.4,
+   "lost": 18.1,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "edmond_r",
+    "mandate_admin"
+   ],
+   "alts": [
+    "wzo",
+    "jewish_economy"
+   ],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild and British Mandate administration, plus any one of: World Zionist Organization, Jewish economy of Mandate Palestine"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "private_capital_interwar",
+    "jnf"
+   ],
+   "V": 28,
+   "verdict": "Unlikely",
+   "ever": 38.9,
+   "lost": 17.9,
+   "weakest": "holdings",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild, Private and immigrant capital (1919-1939) and Jewish National Fund",
+   "alone": [
+    69.7,
+    78.7,
+    80.6
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "technion"
+   ],
+   "V": 28.6,
+   "verdict": "Unlikely",
+   "ever": 42.5,
+   "lost": 37.4,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "technion"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Technion (Haifa), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "haganah"
+   ],
+   "V": 28.1,
+   "verdict": "Unlikely",
+   "ever": 52.3,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
     [
      "The UN partition vote, with blocs following their leaders",
      0
@@ -429,25 +1316,23 @@
     "haganah"
    ],
    "alts": [
-    "war_cabinet",
-    "balfour_decl",
     "uk",
     "mandate",
     "league"
    ],
    "kind": "triple",
-   "label": "Without US Government and Haganah, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+   "label": "Without US Government and Haganah, plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
   },
   {
    "ids": [
     "war_cabinet",
-    "pica",
-    "jewish_agency"
+    "herzl",
+    "hovevei"
    ],
-   "V": 32.6,
+   "V": 28.2,
    "verdict": "Unlikely",
-   "ever": 44,
-   "lost": 26.1,
+   "ever": 42.5,
+   "lost": 37.4,
    "weakest": "money",
    "dec": [
     [
@@ -456,8 +1341,307 @@
     ]
    ],
    "fixed": [
-    "pica",
-    "jewish_agency"
+    "war_cabinet",
+    "herzl"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Theodor Herzl, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 28.2,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "herzl",
+    "hovevei"
+   ],
+   "V": 28.2,
+   "verdict": "Unlikely",
+   "ever": 42.5,
+   "lost": 37.4,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "herzl"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Theodor Herzl, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 28.2,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 28.5,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 28.5,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 28.5,
+   "verdict": "Unlikely",
+   "ever": 41.5,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "herzl",
+    "mandate_admin",
+    "private_capital_interwar"
+   ],
+   "V": 29.1,
+   "verdict": "Unlikely",
+   "ever": 36.5,
+   "lost": 9.7,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "herzl",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "mandate_admin",
+    "czechoslovakia",
+    "haganah"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Private and immigrant capital (1919-1939), plus any one of: British Mandate administration, Czechoslovakia (arms supplier), Haganah"
+  },
+  {
+   "ids": [
+    "uk",
+    "herzl",
+    "hovevei"
+   ],
+   "V": 28.6,
+   "verdict": "Unlikely",
+   "ever": 42.6,
+   "lost": 37.4,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "herzl"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Theodor Herzl, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "herzl",
+    "hovevei"
+   ],
+   "V": 28.7,
+   "verdict": "Unlikely",
+   "ever": 42.6,
+   "lost": 37.4,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "herzl"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Theodor Herzl, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "herzl",
+    "hovevei"
+   ],
+   "V": 28.7,
+   "verdict": "Unlikely",
+   "ever": 42.6,
+   "lost": 37.4,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "herzl"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Theodor Herzl, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "jewish_economy",
+    "pogroms_1881"
+   ],
+   "V": 28.9,
+   "verdict": "Unlikely",
+   "ever": 41.1,
+   "lost": 23.4,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild, Jewish economy of Mandate Palestine and Russian pogroms (1881-84)",
+   "alone": [
+    69.7,
+    70.1,
+    82.7
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "haganah"
+   ],
+   "V": 29.7,
+   "verdict": "Unlikely",
+   "ever": 47.5,
+   "lost": 29.9,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "haganah"
    ],
    "alts": [
     "war_cabinet",
@@ -467,44 +1651,383 @@
     "league"
    ],
    "kind": "triple",
-   "label": "Without Palestine Jewish Colonization Association (PICA) and Jewish Agency, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+   "label": "Without Theodor Herzl and Haganah, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
   },
   {
    "ids": [
-    "mandate_admin",
-    "pica",
-    "jewish_agency"
+    "uk",
+    "us_gov",
+    "pogroms_1881"
    ],
-   "V": 33.2,
+   "V": 29.3,
    "verdict": "Unlikely",
-   "ever": 37.3,
-   "lost": 2.9,
+   "ever": 49.6,
+   "lost": 30.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "pogroms_1881"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Russian pogroms (1881-84), plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "haganah"
+   ],
+   "V": 30,
+   "verdict": "Unlikely",
+   "ever": 44.3,
+   "lost": 18.2,
    "weakest": "holdings",
    "dec": [],
+   "fixed": [
+    "edmond_r",
+    "wzo"
+   ],
+   "alts": [
+    "haganah",
+    "technion",
+    "hovevei",
+    "wissotzky",
+    "balfour"
+   ],
    "kind": "triple",
-   "label": "Without British Mandate administration, Palestine Jewish Colonization Association (PICA) and Jewish Agency",
-   "alone": [
-    72.4,
-    82.5,
-    85.1
-   ]
+   "label": "Without Edmond de Rothschild and World Zionist Organization, plus any one of: Haganah, Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky, Arthur Balfour"
   },
   {
    "ids": [
     "war_cabinet",
-    "us_gov",
-    "czechoslovakia"
+    "herzl",
+    "mandate_admin"
    ],
-   "V": 34.2,
+   "V": 29.7,
    "verdict": "Unlikely",
-   "ever": 54.3,
-   "lost": 26.1,
-   "weakest": "recognition",
+   "ever": 43.5,
+   "lost": 29.9,
+   "weakest": "people",
    "dec": [
     [
      "The Balfour Declaration (2 Nov 1917)",
      0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "mandate_admin"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and British Mandate administration, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "technion"
+   ],
+   "V": 29.6,
+   "verdict": "Unlikely",
+   "ever": 43.2,
+   "lost": 36.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "wzo"
+   ],
+   "alts": [
+    "technion",
+    "wissotzky",
+    "hovevei"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and World Zionist Organization, plus any one of: Technion (Haifa), Kalonymus Ze'ev Wissotzky, Hovevei Zion (Lovers of Zion)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "wzo",
+    "technion"
+   ],
+   "V": 29.6,
+   "verdict": "Unlikely",
+   "ever": 43.2,
+   "lost": 36.1,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "wzo"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and World Zionist Organization, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "wzo",
+    "mandate_admin",
+    "private_capital_interwar"
+   ],
+   "V": 30.1,
+   "verdict": "Unlikely",
+   "ever": 36.7,
+   "lost": 8.1,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "wzo",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "mandate_admin",
+    "czechoslovakia",
+    "haganah"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Private and immigrant capital (1919-1939), plus any one of: British Mandate administration, Czechoslovakia (arms supplier), Haganah"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "pogroms_1881"
+   ],
+   "V": 29.9,
+   "verdict": "Unlikely",
+   "ever": 42.6,
+   "lost": 30.6,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate_admin",
+    "pogroms_1881"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without British Mandate administration and Russian pogroms (1881-84), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "haganah"
+   ],
+   "V": 30.2,
+   "verdict": "Unlikely",
+   "ever": 45.9,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate_admin",
+    "haganah"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without British Mandate administration and Haganah, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "jnf"
+   ],
+   "V": 29.9,
+   "verdict": "Unlikely",
+   "ever": 51.5,
+   "lost": 27.4,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "jnf"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Jewish National Fund, plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "wzo",
+    "technion"
+   ],
+   "V": 30,
+   "verdict": "Unlikely",
+   "ever": 43.3,
+   "lost": 36.1,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "wzo"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and World Zionist Organization, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "wzo",
+    "technion"
+   ],
+   "V": 30,
+   "verdict": "Unlikely",
+   "ever": 43.3,
+   "lost": 36.1,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "wzo"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and World Zionist Organization, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "wzo",
+    "technion"
+   ],
+   "V": 30,
+   "verdict": "Unlikely",
+   "ever": 43.3,
+   "lost": 36.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "wzo"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and World Zionist Organization, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "V": 30.1,
+   "verdict": "Unlikely",
+   "ever": 53.8,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
     ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "uk",
+    "us_gov"
+   ],
+   "alts": [
+    "czechoslovakia",
+    "pica"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and US Government, plus any one of: Czechoslovakia (arms supplier), Palestine Jewish Colonization Association (PICA)"
+  },
+  {
+   "ids": [
+    "mandate",
+    "us_gov",
+    "czechoslovakia"
+   ],
+   "V": 30.1,
+   "verdict": "Unlikely",
+   "ever": 53.8,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
     [
      "The Czechoslovak arms (Jan to Oct 1948)",
      0
@@ -519,6 +2042,66 @@
     "czechoslovakia"
    ],
    "alts": [
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Czechoslovakia (arms supplier), plus any one of: Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "league",
+    "us_gov",
+    "pica"
+   ],
+   "V": 30.2,
+   "verdict": "Unlikely",
+   "ever": 51.7,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "pica"
+   ],
+   "alts": [
+    "league",
+    "mandate"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Palestine Jewish Colonization Association (PICA), plus any one of: League of Nations, Mandate for Palestine (1922)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "haganah"
+   ],
+   "V": 30.8,
+   "verdict": "Unlikely",
+   "ever": 48.2,
+   "lost": 28.8,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "wzo",
+    "haganah"
+   ],
+   "alts": [
     "war_cabinet",
     "balfour_decl",
     "uk",
@@ -526,7 +2109,2177 @@
     "league"
    ],
    "kind": "triple",
-   "label": "Without US Government and Czechoslovakia (arms supplier), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+   "label": "Without World Zionist Organization and Haganah, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "haganah",
+    "technion"
+   ],
+   "V": 30.4,
+   "verdict": "Unlikely",
+   "ever": 46.1,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "haganah"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Haganah, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "haganah",
+    "technion"
+   ],
+   "V": 30.4,
+   "verdict": "Unlikely",
+   "ever": 46.1,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "haganah"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Haganah, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "mandate_admin"
+   ],
+   "V": 30.8,
+   "verdict": "Unlikely",
+   "ever": 44.1,
+   "lost": 28.8,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "wzo",
+    "mandate_admin"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and British Mandate administration, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "jewish_economy",
+    "technion"
+   ],
+   "V": 30.7,
+   "verdict": "Unlikely",
+   "ever": 43.2,
+   "lost": 26.2,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "edmond_r",
+    "jewish_economy"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild and Jewish economy of Mandate Palestine, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "herzl",
+    "balfour",
+    "private_capital_interwar"
+   ],
+   "V": 31.4,
+   "verdict": "Unlikely",
+   "ever": 40.9,
+   "lost": 16.4,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "herzl",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "balfour",
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Private and immigrant capital (1919-1939), plus any one of: Arthur Balfour, Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "haganah",
+    "technion"
+   ],
+   "V": 30.9,
+   "verdict": "Unlikely",
+   "ever": 46.2,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "haganah"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Haganah, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "haganah",
+    "technion"
+   ],
+   "V": 30.9,
+   "verdict": "Unlikely",
+   "ever": 46.2,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "haganah"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Haganah, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "haganah",
+    "technion"
+   ],
+   "V": 30.9,
+   "verdict": "Unlikely",
+   "ever": 46.2,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "haganah"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Haganah, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "edmond_r",
+    "mandate_admin"
+   ],
+   "V": 30.9,
+   "verdict": "Unlikely",
+   "ever": 50.7,
+   "lost": 12.7,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Edmond de Rothschild and British Mandate administration",
+   "alone": [
+    65.8,
+    69.7,
+    72.6
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "pogroms_1881"
+   ],
+   "V": 31.5,
+   "verdict": "Unlikely",
+   "ever": 44.5,
+   "lost": 34.1,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "pogroms_1881"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Russian pogroms (1881-84), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "other_holdings"
+   ],
+   "V": 31.4,
+   "verdict": "Unlikely",
+   "ever": 52.1,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "other_holdings"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Land held by other Jewish owners (1948), plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "pica"
+   ],
+   "V": 31.5,
+   "verdict": "Unlikely",
+   "ever": 44.7,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "technion",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl"
+   ],
+   "kind": "triple",
+   "label": "Without Technion (Haifa) and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "hovevei",
+    "pica"
+   ],
+   "V": 31.6,
+   "verdict": "Unlikely",
+   "ever": 44.7,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "pica"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Palestine Jewish Colonization Association (PICA), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "hovevei",
+    "pica"
+   ],
+   "V": 31.6,
+   "verdict": "Unlikely",
+   "ever": 44.7,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "pica"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Palestine Jewish Colonization Association (PICA), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "edmond_r",
+    "jewish_economy"
+   ],
+   "V": 31.7,
+   "verdict": "Unlikely",
+   "ever": 53.8,
+   "lost": 17.7,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Edmond de Rothschild and Jewish economy of Mandate Palestine",
+   "alone": [
+    65.8,
+    69.7,
+    70.1
+   ]
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "czechoslovakia"
+   ],
+   "V": 32.1,
+   "verdict": "Unlikely",
+   "ever": 45.7,
+   "lost": 18.1,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "edmond_r",
+    "wzo"
+   ],
+   "alts": [
+    "czechoslovakia",
+    "pogroms_1881"
+   ],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild and World Zionist Organization, plus any one of: Czechoslovakia (arms supplier), Russian pogroms (1881-84)"
+  },
+  {
+   "ids": [
+    "wzo",
+    "balfour",
+    "private_capital_interwar"
+   ],
+   "V": 32.7,
+   "verdict": "Unlikely",
+   "ever": 41.2,
+   "lost": 15,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "wzo",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "balfour",
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Private and immigrant capital (1919-1939), plus any one of: Arthur Balfour, Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "czechoslovakia"
+   ],
+   "V": 32.6,
+   "verdict": "Unlikely",
+   "ever": 48.4,
+   "lost": 29.9,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Czechoslovakia (arms supplier), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "technion",
+    "pica"
+   ],
+   "V": 32.1,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "pica"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Palestine Jewish Colonization Association (PICA), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "technion",
+    "pica"
+   ],
+   "V": 32.1,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "technion",
+    "pica"
+   ],
+   "alts": [
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Technion (Haifa) and Palestine Jewish Colonization Association (PICA), plus any one of: Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "mandate",
+    "hovevei",
+    "pica"
+   ],
+   "V": 32.2,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "pica"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Palestine Jewish Colonization Association (PICA), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "hovevei",
+    "pica"
+   ],
+   "V": 32.2,
+   "verdict": "Unlikely",
+   "ever": 44.8,
+   "lost": 33.6,
+   "weakest": "money",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "pica"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Palestine Jewish Colonization Association (PICA), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "pogroms_1881"
+   ],
+   "V": 32.9,
+   "verdict": "Unlikely",
+   "ever": 46,
+   "lost": 32.9,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "wzo",
+    "pogroms_1881"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Russian pogroms (1881-84), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "jnf"
+   ],
+   "V": 32.9,
+   "verdict": "Unlikely",
+   "ever": 45.2,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "technion",
+    "jnf"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Technion (Haifa) and Jewish National Fund, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "haganah",
+    "pogroms_1881"
+   ],
+   "V": 33,
+   "verdict": "Unlikely",
+   "ever": 48.1,
+   "lost": 30.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "haganah",
+    "pogroms_1881"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Haganah and Russian pogroms (1881-84), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "hovevei",
+    "jnf"
+   ],
+   "V": 32.4,
+   "verdict": "Unlikely",
+   "ever": 45.2,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "jnf"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Jewish National Fund, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "hovevei",
+    "jnf"
+   ],
+   "V": 32.4,
+   "verdict": "Unlikely",
+   "ever": 45.2,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "jnf"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Jewish National Fund, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "us_gov",
+    "imm_1933_39"
+   ],
+   "V": 32.6,
+   "verdict": "Unlikely",
+   "ever": 52.4,
+   "lost": 26.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "fixed": [
+    "us_gov",
+    "imm_1933_39"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without US Government and Immigration 1933-1939 (Fifth Aliyah), plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "edmond_r",
+    "jnf"
+   ],
+   "V": 32.6,
+   "verdict": "Unlikely",
+   "ever": 52.8,
+   "lost": 15.2,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Edmond de Rothschild and Jewish National Fund",
+   "alone": [
+    65.8,
+    69.7,
+    80.6
+   ]
+  },
+  {
+   "ids": [
+    "uk",
+    "hovevei",
+    "jnf"
+   ],
+   "V": 32.9,
+   "verdict": "Unlikely",
+   "ever": 45.3,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "jnf"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Jewish National Fund, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "hovevei",
+    "jnf"
+   ],
+   "V": 32.9,
+   "verdict": "Unlikely",
+   "ever": 45.3,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "jnf"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Jewish National Fund, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "hovevei",
+    "jnf"
+   ],
+   "V": 32.9,
+   "verdict": "Unlikely",
+   "ever": 45.3,
+   "lost": 34.8,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "jnf"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Jewish National Fund, plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "pogroms_1881",
+    "pica"
+   ],
+   "V": 33.1,
+   "verdict": "Unlikely",
+   "ever": 46.2,
+   "lost": 30.6,
+   "weakest": "money",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "pogroms_1881",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl"
+   ],
+   "kind": "triple",
+   "label": "Without Russian pogroms (1881-84) and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "imm_1933_39"
+   ],
+   "V": 33.2,
+   "verdict": "Unlikely",
+   "ever": 46.7,
+   "lost": 29.9,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "herzl",
+    "imm_1933_39"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Immigration 1933-1939 (Fifth Aliyah), plus any one of: British War Cabinet, Balfour Declaration (1917)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "czechoslovakia"
+   ],
+   "V": 33.5,
+   "verdict": "Unlikely",
+   "ever": 47.2,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate_admin",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without British Mandate administration and Czechoslovakia (arms supplier), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "haganah",
+    "jnf"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 49.6,
+   "lost": 27.4,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "haganah",
+    "jnf"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Haganah and Jewish National Fund, plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "herzl",
+    "un"
+   ],
+   "V": 33.3,
+   "verdict": "Unlikely",
+   "ever": 49,
+   "lost": 29.9,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "herzl"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Theodor Herzl, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "czechoslovakia"
+   ],
+   "V": 33.8,
+   "verdict": "Unlikely",
+   "ever": 49.1,
+   "lost": 28.8,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "wzo",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl",
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Czechoslovakia (arms supplier), plus any one of: British War Cabinet, Balfour Declaration (1917), British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "herzl",
+    "un"
+   ],
+   "V": 33.3,
+   "verdict": "Unlikely",
+   "ever": 49,
+   "lost": 29.9,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "herzl"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Theodor Herzl, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "haganah",
+    "pica"
+   ],
+   "V": 33.4,
+   "verdict": "Unlikely",
+   "ever": 49.6,
+   "lost": 26.1,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "haganah",
+    "pica"
+   ],
+   "alts": [
+    "war_cabinet",
+    "balfour_decl"
+   ],
+   "kind": "triple",
+   "label": "Without Haganah and Palestine Jewish Colonization Association (PICA), plus any one of: British War Cabinet, Balfour Declaration (1917)"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "jewish_economy",
+    "jnf"
+   ],
+   "V": 33.4,
+   "verdict": "Unlikely",
+   "ever": 52.7,
+   "lost": 7.8,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Jewish economy of Mandate Palestine and Jewish National Fund",
+   "alone": [
+    65.8,
+    70.1,
+    80.6
+   ]
+  },
+  {
+   "ids": [
+    "herzl",
+    "private_capital_interwar",
+    "un"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 44.4,
+   "lost": 9.7,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "herzl",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "pogroms_1881"
+   ],
+   "kind": "triple",
+   "label": "Without Theodor Herzl and Private and immigrant capital (1919-1939), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Russian pogroms (1881-84)"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "mandate_admin",
+    "technion"
+   ],
+   "V": 34,
+   "verdict": "Unlikely",
+   "ever": 43.9,
+   "lost": 21,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "edmond_r",
+    "mandate_admin"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky",
+    "pogroms_1881",
+    "private_capital_interwar"
+   ],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild and British Mandate administration, plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky, Russian pogroms (1881-84), Private and immigrant capital (1919-1939)"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "jewish_economy",
+    "balfour"
+   ],
+   "V": 33.6,
+   "verdict": "Unlikely",
+   "ever": 44.3,
+   "lost": 24,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild, Jewish economy of Mandate Palestine and Arthur Balfour",
+   "alone": [
+    69.7,
+    70.1,
+    78.6
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "czechoslovakia"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 46.8,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Czechoslovakia (arms supplier), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "technion",
+    "czechoslovakia"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 46.8,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "balfour_decl",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Czechoslovakia (arms supplier), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "pogroms_1881",
+    "pica"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 46.4,
+   "lost": 30.6,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "pogroms_1881",
+    "pica"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Russian pogroms (1881-84) and Palestine Jewish Colonization Association (PICA), plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "un"
+   ],
+   "V": 33.7,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 18,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "edmond_r",
+    "wzo"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Edmond de Rothschild and World Zionist Organization, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "uk",
+    "herzl",
+    "un"
+   ],
+   "V": 34.2,
+   "verdict": "Unlikely",
+   "ever": 49.1,
+   "lost": 29.9,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "herzl"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Theodor Herzl, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "mandate",
+    "herzl",
+    "un"
+   ],
+   "V": 34.3,
+   "verdict": "Unlikely",
+   "ever": 49.1,
+   "lost": 29.9,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "herzl"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Theodor Herzl, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "league",
+    "herzl",
+    "un"
+   ],
+   "V": 34.3,
+   "verdict": "Unlikely",
+   "ever": 49.1,
+   "lost": 29.9,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "herzl"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Theodor Herzl, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "herzl",
+    "pica"
+   ],
+   "V": 33.8,
+   "verdict": "Unlikely",
+   "ever": 53,
+   "lost": 7.1,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, Theodor Herzl and Palestine Jewish Colonization Association (PICA)",
+   "alone": [
+    65.8,
+    69.2,
+    88
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "mandate_admin",
+    "un"
+   ],
+   "V": 34.5,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "mandate_admin"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "jnf",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and British Mandate administration, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Jewish National Fund, Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "other_holdings"
+   ],
+   "V": 34,
+   "verdict": "Unlikely",
+   "ever": 45.7,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "other_holdings"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Land held by other Jewish owners (1948), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "mandate_admin",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "mandate_admin"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "jnf",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and British Mandate administration, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Jewish National Fund, Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "technion",
+    "other_holdings"
+   ],
+   "V": 34,
+   "verdict": "Unlikely",
+   "ever": 45.7,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "other_holdings"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Land held by other Jewish owners (1948), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "haganah",
+    "pica"
+   ],
+   "V": 34,
+   "verdict": "Unlikely",
+   "ever": 49.8,
+   "lost": 26.1,
+   "weakest": "force",
+   "dec": [],
+   "fixed": [
+    "haganah",
+    "pica"
+   ],
+   "alts": [
+    "uk",
+    "mandate",
+    "league"
+   ],
+   "kind": "triple",
+   "label": "Without Haganah and Palestine Jewish Colonization Association (PICA), plus any one of: British Government, Mandate for Palestine (1922), League of Nations"
+  },
+  {
+   "ids": [
+    "uk",
+    "technion",
+    "czechoslovakia"
+   ],
+   "V": 34.3,
+   "verdict": "Unlikely",
+   "ever": 46.9,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "uk",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Czechoslovakia (arms supplier), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "uk",
+    "mandate_admin",
+    "un"
+   ],
+   "V": 34.8,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "mandate_admin"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "jnf",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and British Mandate administration, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Jewish National Fund, Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "mandate",
+    "mandate_admin",
+    "un"
+   ],
+   "V": 34.9,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "mandate_admin"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "jnf",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and British Mandate administration, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Jewish National Fund, Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "mandate",
+    "technion",
+    "czechoslovakia"
+   ],
+   "V": 34.3,
+   "verdict": "Unlikely",
+   "ever": 46.9,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "mandate",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Czechoslovakia (arms supplier), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "mandate_admin",
+    "un"
+   ],
+   "V": 34.9,
+   "verdict": "Unlikely",
+   "ever": 47.6,
+   "lost": 26.1,
+   "weakest": "people",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "mandate_admin"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181",
+    "jnf",
+    "imm_1933_39"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and British Mandate administration, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan), Jewish National Fund, Immigration 1933-1939 (Fifth Aliyah)"
+  },
+  {
+   "ids": [
+    "league",
+    "technion",
+    "czechoslovakia"
+   ],
+   "V": 34.3,
+   "verdict": "Unlikely",
+   "ever": 46.9,
+   "lost": 33.6,
+   "weakest": "force",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ],
+    [
+     "The Czechoslovak arms (Jan to Oct 1948)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "czechoslovakia"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Czechoslovakia (arms supplier), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "edmond_r",
+    "wzo",
+    "imm_1933_39"
+   ],
+   "V": 34.5,
+   "verdict": "Unlikely",
+   "ever": 45.9,
+   "lost": 18,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "wzo",
+    "imm_1933_39"
+   ],
+   "alts": [
+    "edmond_r",
+    "war_cabinet",
+    "balfour_decl"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Immigration 1933-1939 (Fifth Aliyah), plus any one of: Edmond de Rothschild, British War Cabinet, Balfour Declaration (1917)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "imm_1933_39"
+   ],
+   "V": 34.4,
+   "verdict": "Unlikely",
+   "ever": 45.1,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "imm_1933_39"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Immigration 1933-1939 (Fifth Aliyah), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "technion",
+    "imm_1933_39"
+   ],
+   "V": 34.4,
+   "verdict": "Unlikely",
+   "ever": 45.1,
+   "lost": 33.6,
+   "weakest": "people",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "imm_1933_39"
+   ],
+   "alts": [
+    "technion",
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Immigration 1933-1939 (Fifth Aliyah), plus any one of: Technion (Haifa), Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wzo",
+    "un"
+   ],
+   "V": 34.5,
+   "verdict": "Unlikely",
+   "ever": 49.8,
+   "lost": 28.8,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "wzo"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and World Zionist Organization, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "technion",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "technion"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Technion (Haifa), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "wzo",
+    "un"
+   ],
+   "V": 34.5,
+   "verdict": "Unlikely",
+   "ever": 49.8,
+   "lost": 28.8,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "wzo"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and World Zionist Organization, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "uk",
+    "technion",
+    "other_holdings"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 45.8,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "technion",
+    "other_holdings"
+   ],
+   "alts": [
+    "uk",
+    "league",
+    "mandate"
+   ],
+   "kind": "triple",
+   "label": "Without Technion (Haifa) and Land held by other Jewish owners (1948), plus any one of: British Government, League of Nations, Mandate for Palestine (1922)"
+  },
+  {
+   "ids": [
+    "herzl",
+    "private_capital_interwar",
+    "imm_1933_39"
+   ],
+   "V": 34.5,
+   "verdict": "Unlikely",
+   "ever": 42.5,
+   "lost": 9.7,
+   "weakest": "money",
+   "dec": [],
+   "kind": "triple",
+   "label": "Without Theodor Herzl, Private and immigrant capital (1919-1939) and Immigration 1933-1939 (Fifth Aliyah)",
+   "alone": [
+    69.2,
+    78.7,
+    87.4
+   ]
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "hovevei",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "hovevei"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Hovevei Zion (Lovers of Zion), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "war_cabinet",
+    "wissotzky",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The Balfour Declaration (2 Nov 1917)",
+     0
+    ]
+   ],
+   "fixed": [
+    "war_cabinet",
+    "wissotzky"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without British War Cabinet and Kalonymus Ze'ev Wissotzky, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "technion",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "technion"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Technion (Haifa), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "hovevei",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "hovevei"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Hovevei Zion (Lovers of Zion), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "balfour_decl",
+    "wissotzky",
+    "un"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 47.1,
+   "lost": 33.6,
+   "weakest": "recognition",
+   "dec": [],
+   "fixed": [
+    "balfour_decl",
+    "wissotzky"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without Balfour Declaration (1917) and Kalonymus Ze'ev Wissotzky, plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "uk",
+    "hovevei",
+    "other_holdings"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 45.8,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "uk",
+    "other_holdings"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without British Government and Land held by other Jewish owners (1948), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "mandate",
+    "hovevei",
+    "other_holdings"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 45.8,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [],
+   "fixed": [
+    "mandate",
+    "other_holdings"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without Mandate for Palestine (1922) and Land held by other Jewish owners (1948), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "league",
+    "hovevei",
+    "other_holdings"
+   ],
+   "V": 34.6,
+   "verdict": "Unlikely",
+   "ever": 45.8,
+   "lost": 33.6,
+   "weakest": "holdings",
+   "dec": [
+    [
+     "The League approves the Mandate (24 Jul 1922)",
+     0
+    ]
+   ],
+   "fixed": [
+    "league",
+    "other_holdings"
+   ],
+   "alts": [
+    "hovevei",
+    "wissotzky"
+   ],
+   "kind": "triple",
+   "label": "Without League of Nations and Land held by other Jewish owners (1948), plus any one of: Hovevei Zion (Lovers of Zion), Kalonymus Ze'ev Wissotzky"
+  },
+  {
+   "ids": [
+    "wzo",
+    "private_capital_interwar",
+    "un"
+   ],
+   "V": 34.7,
+   "verdict": "Unlikely",
+   "ever": 44.7,
+   "lost": 8.1,
+   "weakest": "money",
+   "dec": [],
+   "fixed": [
+    "wzo",
+    "private_capital_interwar"
+   ],
+   "alts": [
+    "un",
+    "unga",
+    "res181"
+   ],
+   "kind": "triple",
+   "label": "Without World Zionist Organization and Private and immigrant capital (1919-1939), plus any one of: United Nations, UN General Assembly, UN Resolution 181 (Partition Plan)"
+  },
+  {
+   "ids": [
+    "us_gov",
+    "wzo",
+    "pica"
+   ],
+   "V": 34.9,
+   "verdict": "Unlikely",
+   "ever": 53.2,
+   "lost": 5.4,
+   "weakest": "recognition",
+   "dec": [
+    [
+     "The UN partition vote, with blocs following their leaders",
+     0
+    ]
+   ],
+   "kind": "triple",
+   "label": "Without US Government, World Zionist Organization and Palestine Jewish Colonization Association (PICA)",
+   "alone": [
+    65.8,
+    71.4,
+    88
+   ]
   }
  ]
 }
