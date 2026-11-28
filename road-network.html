@@ -394,6 +394,13 @@ function delPanel0(r){
 /* nov27_texts */
 /* ---------- survival model (road map only); mirrors viability.py ---------- */
 const VB = DATA.viab;
+/* 27 Nov 2026: who held a role because of whom: a later actor in the same circle tied to an earlier one by kinship, appointment
+   or employment, directly or through one person. Such an heir or appointee cannot stand in for the person removed (see vYears). */
+VB.heirs=(()=>{ const A=VB.actors||{}, C=VB.circle||{}, T=new Set(['kinship','appointment','employment']), adj=new Map(), out={};
+  DATA.edges.forEach(e=>{ if(!T.has(e.type)||!(e.status==='verified'||e.status==='reported')) return; [[e.f,e.t],[e.t,e.f]].forEach(([u,v])=>{ if(!adj.has(u)) adj.set(u,new Set()); adj.get(u).add(v); }); });
+  for(const a of Object.keys(A)){ const seen=new Set([a]); let fr=[a]; for(let d=0;d<2;d++){ const nx=[]; for(const u of fr) for(const v of adj.get(u)||[]) if(!seen.has(v)){ seen.add(v); nx.push(v); } fr=nx; }
+    const h=[...seen].filter(b=>b!==a&&A[b]&&C[b]&&C[b]===C[a]&&A[b][0]>=A[a][0]); if(h.length) out[a]=h; }
+  return out; })();
 const vDrop = new Set();          // ties dropped by a scenario (money raised in the US but carried by a non-American)
 const VKEY = 'road_removed_v1', VINTRO = 'road_model_intro_v1';
 function vLS(k, v){ try{ if(v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); if(v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
@@ -489,7 +496,7 @@ function vYears(rem, drop, csc){ csc=csc||{}; const A=VB.actors, ids=Object.keys
   for(let y=VB.y0;y<=VB.y1;y++){ const j=y-y0, F=Array(NCh).fill(0);
     for(const k of VB.year_ch){ for(const i of ids) cum[i][k]+=avail[i][k][j]; let tot=0; for(const i of ids) tot+=cap[i][k][j];
       for(const a of ids){ if(!lostAt[a][k]) continue; const l=cap[a][k][j]-live[a][k][j]; if(l<=1e-9) continue;
-        let best=null, bc=0; for(const b of ids){ if(b===a||rem.has(b)||A[b][2]!==A[a][2]||A[b][0]>y||(VB.circle&&VB.circle[b]!==VB.circle[a])) continue; const rb=cum[b][k]/(y-A[b][0]+1); if(rb>bc){ best=b; bc=rb; } }
+        let best=null, bc=0; for(const b of ids){ if(b===a||rem.has(b)||A[b][2]!==A[a][2]||A[b][0]>y||(VB.circle&&VB.circle[b]!==VB.circle[a])||(VB.heirs&&VB.heirs[a]&&VB.heirs[a].includes(b))) continue; const rb=cum[b][k]/(y-A[b][0]+1); if(rb>bc){ best=b; bc=rb; } }
         const cov=best?Math.min(1,bc/l):0, u=l*(1-cov); D[k]+=u; (Da[a]||(Da[a]=Array(NCh).fill(0)))[k]+=u;
         const r=who[a]||(who[a]={s:A[a][0],e:A[a][1],years:0,ch:null,subs:{},w:0,yk:{}}); if(tot&&l/tot>r.w){ r.ch=k; r.w=l/tot; }
         if(best){ const q=r.subs[k]; if(!q||cov>q[1]) r.subs[k]=[best,Math.round(cov*100)/100,A[best][0]]; } }
