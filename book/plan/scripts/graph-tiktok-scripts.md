@@ -81,7 +81,7 @@ Tap "How this is computed" and every rule is there in writing. Next video: the t
 ## Israel Map 3 of 4 · "Remove the money. Remove the great powers. Here's what happens."
 
 **[0:00] HOOK**
-ON SCREEN: "Without Edmond de Rothschild: 70% · 13 years lost".
+ON SCREEN: "Without Edmond de Rothschild: 69% · 13 years lost".
 I removed one baron from the history of Israel, his money and everything he did, and the founding lost thirteen years of work. Here are the tests on money and the great powers, and what each one shows.
 
 **[0:15] TEST: EDMOND DE ROTHSCHILD**

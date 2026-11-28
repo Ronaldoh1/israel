@@ -9,7 +9,7 @@ Headline "THE ROAD / TO 1948 / AND AFTER". Subhead "What if one part had been mi
 Headline "EVERY LINE / HAS A SOURCE". Subhead "Ties come from what people did, never from who they were." Strip: 1,338 verified (counts in full), 201 reported (a little over half), 2,076 named together (counts zero, NOT EVIDENCE). Callout: "APPEARING ON THE SAME PAGE IS NOT A TIE."
 
 ## Card 3: how the chances work
-Headline "TAKE ONE / PART AWAY". Equation: 93.2% × 92% (of the nine needs left) × 77% (of the years of work kept) ≈ 64% (the Rothschild family removed). Strip: without the United States 29%, without Britain's backing 32%, without the Balfour Declaration 49%. Callout: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
+Headline "TAKE ONE / PART AWAY". Equation: 93.2% × 89% (of the nine needs left) × 76% (of the years of work kept) ≈ 63% (the Rothschild family removed). Strip: without the United States 29%, without Britain's backing 32%, without the Balfour Declaration 50%. Callout: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."
 
 Full prompts: palette ink-indigo #0B1026→#161E45, crimson #D7263D, white, antique-gold foil #E8B44A; CTA order: crimson action bar, hero URL www.1948scam.com in gold foil, "Full library → www.tinyurl.com/thetruthlibrary", TikTok @chosenron13 (PRIMARY), Instagram @chosen.ron13; closing line on legibility and no people, faces, logos or flags. The complete prompts follow.
 
@@ -82,17 +82,17 @@ SUBHEAD: white small caps on a slim crimson bar: "THREE NUMBERS, MULTIPLIED (ROU
 BODY PANEL (translucent indigo-glass panel with a thin gold-foil border), one equation laid out in large type across the panel:
 "93.2%" in white, labeled beneath "full record"
 "×" in gold
-"92%" in white, labeled "of the nine needs left"
+"89%" in white, labeled "of the nine needs left"
 "×" in gold
-"77%" in white, labeled "of the years of work kept"
+"76%" in white, labeled "of the years of work kept"
 "≈" in gold
-and then a GIANT gold-foil "64%" labeled "chance of a state in 1948".
+and then a GIANT gold-foil "63%" labeled "chance of a state in 1948".
 Above the equation, a white line: "Example: the Rothschild family removed."
 
 STAT STRIP (three glossy indigo tiles in a row, gold-foil numbers, white labels):
 Tile 1: "29%" — "WITHOUT THE UNITED STATES"
 Tile 2: "32%" — "WITHOUT BRITAIN'S BACKING"
-Tile 3: "49%" — "WITHOUT THE BALFOUR DECLARATION"
+Tile 3: "50%" — "WITHOUT THE BALFOUR DECLARATION"
 (If the card gets crowded, cut the "Example" line first.)
 
 ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "NOT A PREDICTION. A TEST OF WHAT 1948 DEPENDED ON."

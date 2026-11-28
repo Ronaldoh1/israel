@@ -29,13 +29,13 @@ TABLE PANEL (one tall translucent indigo-glass panel with a thin gold-foil borde
 "The United States stays out" — "29%"
 "No British backing" — "32%"
 "No Balfour Declaration" — "49%"
-"No Rothschild family" — "64%"
+"No Rothschild family" — "63%"
 "No Theodor Herzl" — "69%"
-"No Edmond de Rothschild" — "70%"
+"No Edmond de Rothschild" — "69%"
 "No UN vote" — "84%"
 Below the last row, a gold-foil line across the panel and the row "THE FULL RECORD" — "93%" in larger gold foil.
 
-ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "WITHOUT HERZL: 69%. WITHOUT EDMOND DE ROTHSCHILD: 70%."
+ACCENT CALLOUT BAR: full-width crimson bar, white heavy caps: "WITHOUT HERZL: 69%. WITHOUT EDMOND DE ROTHSCHILD: 69%."
 (If the card gets crowded, cut the hero first, then the callout.)
 
 CTA BLOCK (bottom quarter, in this order): a full-width crimson bar with white heavy caps "RUN ALL 82 TESTS YOURSELF"; then the hero URL "www.1948scam.com" as the largest text after the headline, thick antique-gold foil lettering with metallic shine, on an indigo pill with a glowing gold-foil outline; then smaller white text "Full library → www.tinyurl.com/thetruthlibrary"; then two social pills side by side: TikTok "@chosenron13" with a tiny crimson tag "PRIMARY", and Instagram "@chosen.ron13".

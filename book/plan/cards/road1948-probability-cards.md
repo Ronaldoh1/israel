@@ -2,7 +2,7 @@
 
 Rebuilt 27 November 2026 from the live network map (v165), after the cause-and-effect audit. 6 method cards, then every test from 0% to 80% chance of a state in 1948, lowest first (including the combinations found by searching the whole map), then the three Washington vs Moscow cards. One prompt per card; paste each code block into ChatGPT image generation.
 
-**What changed since the 19 November set:** the map now reads cause and effect: what grew from a removed part weakens with it (no Zionist Organization, no Keren Hayesod), only the same circle can step in for a removed actor, years are counted from 1882 and all channels are read together. The money map gained the movement's own funds and private capital. Edmond de Rothschild, with everything he did: 70%. The Rothschild family: 64%. Herzl: 69%. Britain 32%, the United States 29%.
+**What changed since the 19 November set:** the map now reads cause and effect: what grew from a removed part weakens with it (no Zionist Organization, no Keren Hayesod), only the same circle can step in for a removed actor, years are counted from 1882 and all channels are read together. The money map gained the movement's own funds and private capital. Edmond de Rothschild, with everything he did: 69%. The Rothschild family: 63%. Herzl: 69%. Britain 32%, the United States 29%.
 
 **Theme:** ink-indigo, signal crimson, antique-gold foil, white. Hero motif: the network map with removed parts gone dark, and a gold probability dial.
 
@@ -121,7 +121,7 @@ Type: a small crimson pill with a gold foil edge and white small caps "THE METHO
 
 Anchor stat: a giant antique-gold foil number "91–94%" with the white small-caps caption "THE FULL RECORD, EVERY WEIGHT HALVED OR DOUBLED".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT WAS TESTED": "Each of the nine channels counted half and double" · "Reported ties counted at 0.3 and at full weight" · "British training counted ten times" · "Each single source left out in turn". Second panel, titled "WHAT HELD": "Britain 32% (range 25–36%)" · "United States 29% (17–37%)" · "Rothschilds 64% (58–67%)" · "Balfour 49% (44–52%)" · "The order of the findings held". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "WHAT WAS TESTED": "Each of the nine channels counted half and double" · "Reported ties counted at 0.3 and at full weight" · "British training counted ten times" · "Each single source left out in turn". Second panel, titled "WHAT HELD": "Britain 32% (range 25–36%)" · "United States 29% (17–37%)" · "Rothschilds 63% (57–67%)" · "Balfour 50% (45–52%)" · "The order of the findings held". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "THE RANKING HELD; THE EXACT FIGURES ARE A RANGE".
 
@@ -250,16 +250,16 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 13 — NO LONDON, NO AMERICAN ORGANIZERS (25%)
+## Card 13 — NO LONDON, NO AMERICAN ORGANIZERS (26%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 25 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 26 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO LONDON, NO AMERICAN ORGANIZERS"; beneath it a gold foil italic serif subhead: "The sponsor and the organizers who pressed Washington".
 
-Anchor stat: a giant antique-gold foil number "25%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "26%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
 Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The American Zionist organizations". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "46%" / "EVER", "29 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1977" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
@@ -370,16 +370,16 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 19 — THE OTTOMANS STAY OUT OF THE WAR (37%)
+## Card 19 — THE OTTOMANS STAY OUT OF THE WAR (38%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the old imperial cluster at one edge glows unbroken while the British threads into Palestine are cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 37 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the old imperial cluster at one edge glows unbroken while the British threads into Palestine are cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 38 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · ASSUMPTION"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE OTTOMANS STAY OUT OF THE WAR"; beneath it a gold foil italic serif subhead: "No war, so no British war aim in Palestine".
 
-Anchor stat: a giant antique-gold foil number "37%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "38%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
 Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The Ottoman entry into the First World War, October 1914" · "And with it the British conquest of Palestine". Second panel, titled "WHAT FALLS WITH IT": "No British war aim in Palestine: no Declaration, no Mandate" · "The money, the settlers already there and the later American and Soviet decisions remain" · "The people channel falls to 78%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "48%" / "EVER", "26 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
@@ -390,18 +390,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 20 — NO ROTHSCHILDS, NO EARLY NETWORK (46%)
+## Card 20 — NO ROTHSCHILDS, NO EARLY NETWORK (44%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; an old, deep cluster at the root of the map is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 46 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; an old, deep cluster at the root of the map is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 44 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · BEFORE HERZL"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO ROTHSCHILDS, NO EARLY NETWORK"; beneath it a gold foil italic serif subhead: "The family and everything before 1897".
 
-Anchor stat: a giant antique-gold foil number "46%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "44%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The Lovers of Zion, the Odessa Committee, the Alliance and the early donors and colonies" · "With Herzl removed too: 23%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: decades of settlement work that no one else was funding" · "Herzl alone: 69%; with the early network gone too, his loss costs far more". Then a strip of four glossy indigo tiles with foil numbers and white labels: "55%" / "EVER", "25 YRS" / "WORK LOST", "38 YEARS" / "TO REBUILD", "1973" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir" · "The Lovers of Zion, the Odessa Committee, the Alliance and the early donors and colonies" · "With Herzl removed too: 21%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: decades of settlement work that no one else was funding" · "Herzl alone: 69%; with the early network gone too, his loss costs far more". Then a strip of four glossy indigo tiles with foil numbers and white labels: "54%" / "EVER", "25 YRS" / "WORK LOST", "45 YEARS" / "TO REBUILD", "1973" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE ROOTS OF THE MONEY, CUT".
 
@@ -410,18 +410,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 21 — NO BALFOUR DECLARATION (49%)
+## Card 21 — NO BALFOUR DECLARATION (50%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a single glowing parchment node at the center is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 49 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; a single glowing parchment node at the center is dark, its threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 50 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE DOCUMENT"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO BALFOUR DECLARATION"; beneath it a gold foil italic serif subhead: "Or a Declaration that needed Walter Rothschild".
 
-Anchor stat: a giant antique-gold foil number "49%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "50%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The letter of 2 November 1917" · "Same result if it could not issue without its addressee: 49%". Second panel, titled "WHAT FALLS WITH IT": "No Mandate built on it" · "Immigration and settlement at the Ottoman pace". Then a strip of four glossy indigo tiles with foil numbers and white labels: "54%" / "EVER", "26 YRS" / "WORK LOST", "34 YEARS" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The letter of 2 November 1917" · "Same result if it could not issue without its addressee: 50%". Second panel, titled "WHAT FALLS WITH IT": "No Mandate built on it" · "Immigration and settlement at the Ottoman pace". Then a strip of four glossy indigo tiles with foil numbers and white labels: "54%" / "EVER", "26 YRS" / "WORK LOST", "34 YEARS" / "TO REBUILD", "1975" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "ONE LETTER, 26 YEARS".
 
@@ -430,18 +430,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 22 — THE ROTHSCHILDS PLAY NO PART (64%)
+## Card 22 — THE ROTHSCHILDS PLAY NO PART (63%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster of nodes is dark, its money threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 64 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster of nodes is dark, its money threads cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 63 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · ONE FAMILY"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE ROTHSCHILDS PLAY NO PART"; beneath it a gold foil italic serif subhead: "The family, the Paris house, or Edmond alone".
 
-Anchor stat: a giant antique-gold foil number "64%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "63%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir: 64%" · "The Paris house: 68%" · "Edmond, with everything he did: 70%" · "Their funding only: 79%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: the colonies Edmond funded from 1882, when almost no one else did" · "PICA's land, about 500,000 dunams in 1934, is lost with them; private buyers' land is not". Then a strip of four glossy indigo tiles with foil numbers and white labels: "68%" / "EVER", "15 YRS" / "WORK LOST", "23 YEARS" / "TO REBUILD", "1963" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Every Rothschild house and heir: 63%" · "The Paris house: 67%" · "Edmond, with everything he did: 69%" · "Their funding only: 79%". Second panel, titled "WHAT FALLS WITH IT": "The cost is time: the colonies Edmond funded from 1882, when almost no one else did" · "PICA's land, about 500,000 dunams in 1934, is lost with them; private buyers' land is not". Then a strip of four glossy indigo tiles with foil numbers and white labels: "67%" / "EVER", "16 YRS" / "WORK LOST", "23 YEARS" / "TO REBUILD", "1964" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "ONE MAN'S MONEY CARRIED DECADES OF IT".
 
@@ -490,18 +490,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Card 25 — NO NETWORK BEFORE 1897 (72%)
+## Card 25 — NO NETWORK BEFORE 1897 (70%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the oldest cluster at the root of the map is dark; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 72 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; the oldest cluster at the root of the map is dark; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 70 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "TEST · BEFORE HERZL"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO NETWORK BEFORE 1897"; beneath it a gold foil italic serif subhead: "Forerunners, organizers, donors and the Alliance".
 
-Anchor stat: a giant antique-gold foil number "72%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "70%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Kalischer and Hess, the Lovers of Zion, the Odessa Committee, the Alliance Israélite Universelle and the early donors". Second panel, titled "WHAT FALLS WITH IT": "Almost all of the loss is the settlement money, not the ideas". Then a strip of four glossy indigo tiles with foil numbers and white labels: "72%" / "EVER", "12 YRS" / "WORK LOST", "15 YEARS" / "TO REBUILD", "1961" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "Kalischer and Hess, the Lovers of Zion, the Odessa Committee, the Alliance Israélite Universelle and the early donors". Second panel, titled "WHAT FALLS WITH IT": "Almost all of the loss is the settlement money, not the ideas". Then a strip of four glossy indigo tiles with foil numbers and white labels: "71%" / "EVER", "12 YRS" / "WORK LOST", "17 YEARS" / "TO REBUILD", "1961" / "BEST YEAR TO RETRY". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE EARLY MONEY MATTERED, NOT THE EARLY IDEAS".
 

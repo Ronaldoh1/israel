@@ -4,7 +4,7 @@
 const {chromium}=require('playwright');const fs=require('fs');const path=require('path');
 const SP='/tmp/claude-0/-home-claude/e022d494-4813-5195-a8e3-0f7e50b32600/scratchpad/'; const OUT=path.join(__dirname,'loso_'+new Date().toISOString().slice(0,10)+'.json');
 (async()=>{const b=await chromium.launch();const p=await b.newPage();
-await p.route('**/d3.min.js',r=>r.fulfill({body:fs.readFileSync(SP+'graph/node_modules/d3/dist/d3.min.js'),contentType:'application/javascript'}));
+await p.route('**/d3*.min.js',r=>r.fulfill({body:fs.readFileSync(SP+'graph/node_modules/d3/dist/d3.min.js'),contentType:'application/javascript'}));
 const errs=[];p.on('pageerror',e=>errs.push(e.message));
 await p.addInitScript(()=>{try{localStorage.setItem('road_model_intro_v1','1')}catch(e){}});
 await p.goto('file://'+path.join(__dirname,'..','..','road-network.html'));await p.waitForTimeout(4000);

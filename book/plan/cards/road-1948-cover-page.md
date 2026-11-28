@@ -19,10 +19,10 @@ The map reads cause and effect: what grew from a removed part weakens with it, s
 | Remove | Needs left | Years kept | In 1948 | By 1958 | By 1978 | Ever | Verdict |
 |---|---|---|---|---|---|---|---|
 | Nothing: the full record | 100% | 100% | 93% | 93% | 93% | 93% | Happens on time, in 1948 |
-| The Rothschild family | 92% | 77% | 64% | 64% | 67% | 68% | Possible, with great difficulty |
+| The Rothschild family | 89% | 76% | 63% | 63% | 66% | 67% | Possible, with great difficulty |
 | The United States | 35% | 90% | 29% | 50% | 50% | 50% | Unlikely |
-| Britain's backing | 60% | 59% | 32% | 32% | 47% | 47% | Unlikely |
-| The Balfour Declaration | 91% | 60% | 49% | 49% | 54% | 54% | Unlikely |
+| Britain's backing | 58% | 59% | 32% | 32% | 47% | 47% | Unlikely |
+| The Balfour Declaration | 88% | 61% | 50% | 50% | 54% | 54% | Unlikely |
 | The UN vote | 90% | 100% | 84% | 88% | 88% | 88% | Still likely, but delayed |
 | The Soviet bloc's arms and votes | 90% | 100% | 83% | 84% | 84% | 84% | Still likely, but delayed |
 | The Czechoslovak arms | 91% | 100% | 84% | 84% | 84% | 84% | Still likely, but delayed |
@@ -49,7 +49,7 @@ The map reads cause and effect: what grew from a removed part weakens with it, s
 | Truman | 100% | 100% | 100% | 99% | 100% | 100% | 97% | 100% | 100% |
 | Zionism as an organized movement | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% |
 
-Example: removing the Rothschild family leaves 92% of the needs and 77% of the years, and the map reads 64% in 1948. The bigger loss is time: about 15 of the 66 years of work would have to be done again. Money keeps 98% of what the full record gave it.
+Example: removing the Rothschild family leaves 89% of the needs and 76% of the years, and the map reads 63% in 1948. The bigger loss is time: about 16 of the 66 years of work would have to be done again. Money keeps 98% of what the full record gave it.
 
 
 ## How the map was built
@@ -145,8 +145,8 @@ Every weight on the map is a choice the record does not make by itself, so each 
 | Full record | 93% | 91% | 94% |
 | Without Herzl | 69% | 58% | 74% |
 | Without the UN vote | 84% | 75% | 88% |
-| Without the Balfour Declaration | 49% | 44% | 52% |
-| Without the Rothschild family | 64% | 58% | 67% |
+| Without the Balfour Declaration | 50% | 45% | 52% |
+| Without the Rothschild family | 63% | 57% | 67% |
 | Without Britain's backing | 32% | 25% | 36% |
 | Without the United States | 29% | 17% | 37% |
 | Every often-denied part at once | 13% | 7% | 18% |

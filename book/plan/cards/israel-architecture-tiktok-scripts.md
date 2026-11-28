@@ -30,7 +30,7 @@ It starts in 1694, with the Bank of England. Then Herzl's pamphlet in 1896. Then
 
 This book doesn't just tell that story. It maps it: 862 people, funds, states and documents, and 1,539 ties, every one with its source. Then it asks what happens if you take one away.
 
-On the full record, a state on time reads at about 93%. Take away Edmond de Rothschild, with everything he did, and it falls to about 70%: about thirteen years of the work lost. No single person drops it below 30%. Whole parts of the network do: the organization, the armed groups, the banks and land companies.
+On the full record, a state on time reads at about 93%. Take away Edmond de Rothschild, with everything he did, and it falls to about 69%: about thirteen years of the work lost. No single person drops it below 30%. Whole parts of the network do: the organization, the armed groups, the banks and land companies.
 
 And eight other homelands, from Argentina to Uganda, tested one by one.
 

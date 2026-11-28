@@ -99,7 +99,7 @@ Type: a small crimson pill with a gold foil edge and white small caps "HOW IT WO
 
 Anchor stat: a giant antique-gold foil number "91–94%" with the white small-caps caption "THE FULL RECORD, EVERY WEIGHT HALVED OR DOUBLED".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "STRESS-TESTED": "Britain 32% (range 25–36%)" · "United States 29% (17–37%)" · "Rothschilds 64% (58–67%)" · "Each source left out in turn; the order held". Second panel, titled "THE LIMITS": "Assumptions are labelled on every card that uses one" · "Persuasion with no documented route to a decision is not counted" · "It measures the founding, not the war or the expulsions after it" · "Counted on a straight line, population would weigh more". If the card gets crowded, cut the second panel first.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "STRESS-TESTED": "Britain 32% (range 25–36%)" · "United States 29% (17–37%)" · "Rothschilds 63% (57–67%)" · "Each source left out in turn; the order held". Second panel, titled "THE LIMITS": "Assumptions are labelled on every card that uses one" · "Persuasion with no documented route to a decision is not counted" · "It measures the founding, not the war or the expulsions after it" · "Counted on a straight line, population would weigh more". If the card gets crowded, cut the second panel first.
 
 Callout: one full-width crimson bar with white heavy caps: "READ THE FIGURES AGAINST EACH OTHER".
 
@@ -119,7 +119,7 @@ Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30%
 
 Anchor stat: a giant antique-gold foil number "12" with the white small-caps caption "RESULTS UNDER 30%".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "LOWEST FIRST": "No organized movement: 0%" · "No armed groups: 0%" · "No banks, land companies or funds: 0%" · "No land in Jewish hands: 0%" · "Rothschilds and everyone tied to them (assumption): 13%" · "Every often-denied part at once: 13%" · "No Rothschilds, no United States: 14%" · "No London, no Moscow: 24%". Second panel, titled "AND": "No London, no American organizers: 25%" · "Rothschilds and their institutions (assumption): 27%" · "No Rothschilds, no Declaration (assumption): 28%" · "The United States stays out: 29%" · "No single person or institution falls below 30%: the lowest is the British War Cabinet, 49%". If the card gets crowded, set both panels in two narrow columns; never cut a result.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "LOWEST FIRST": "No organized movement: 0%" · "No armed groups: 0%" · "No banks, land companies or funds: 0%" · "No land in Jewish hands: 0%" · "Rothschilds and everyone tied to them (assumption): 12%" · "Every often-denied part at once: 13%" · "No Rothschilds, no United States: 14%" · "No London, no Moscow: 25%". Second panel, titled "AND": "No London, no American organizers: 26%" · "Rothschilds and their institutions (assumption): 27%" · "No Rothschilds, no Declaration (assumption): 28%" · "The United States stays out: 29%" · "No single person or institution falls below 30%: the lowest is the British War Cabinet, 50%". If the card gets crowded, set both panels in two narrow columns; never cut a result.
 
 Callout: one full-width crimson bar with white heavy caps: "IT TOOK WHOLE CATEGORIES, NOT ONE NAME".
 
@@ -208,18 +208,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Test 5 — THE ROTHSCHILDS AND EVERYONE TIED TO THEM (13%)
+## Test 5 — THE ROTHSCHILDS AND EVERYONE TIED TO THEM (12%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster and every node it touches are dark, cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 13 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; one bright cluster and every node it touches are dark, cut in crimson; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 12 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30% · ASSUMPTION"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "THE ROTHSCHILDS AND EVERYONE TIED TO THEM"; beneath it a gold foil italic serif subhead: "An upper bound, not a finding".
 
-Anchor stat: a giant antique-gold foil number "13%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "12%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family, and every person and body with a documented tie to it" · "That list includes Herzl, Weizmann, Balfour and the Jewish Agency". Second panel, titled "WHAT FALLS WITH IT": "Assumes all of them would have vanished with the family; the record does not show that" · "On the documented record alone: 64%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "32%" / "EVER", "42 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1991" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that everyone tied to the family falls with it; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family, and every person and body with a documented tie to it" · "That list includes Herzl, Weizmann, Balfour and the Jewish Agency". Second panel, titled "WHAT FALLS WITH IT": "Assumes all of them would have vanished with the family; the record does not show that" · "On the documented record alone: 63%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "32%" / "EVER", "43 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1991" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that everyone tied to the family falls with it; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "CLOSER TO REMOVING THE MOVEMENT THAN A FAMILY".
 
@@ -268,18 +268,18 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Test 8 — NO LONDON, NO MOSCOW (24%)
+## Test 8 — NO LONDON, NO MOSCOW (25%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters at opposite edges of the map are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 24 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters at opposite edges of the map are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 25 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30% · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO LONDON, NO MOSCOW"; beneath it a gold foil italic serif subhead: "The empire that built the frame and the bloc that armed it".
 
-Anchor stat: a giant antique-gold foil number "24%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "25%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The Soviet Union and its bloc, Czechoslovakia's arms included" · "Alone: Britain 32%, the Soviet bloc 83%". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "46%" / "EVER", "27 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1976" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the two documented groups removed together; found by testing all 105 pairs of groups". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The Soviet Union and its bloc, Czechoslovakia's arms included" · "Alone: Britain 32%, the Soviet bloc 83%". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "47%" / "EVER", "27 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1976" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the two documented groups removed together; found by testing all 105 pairs of groups". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "THE FRAME AND THE RIFLES, BOTH GONE".
 
@@ -288,16 +288,16 @@ CTA block, bottom quarter, in this order: a full-width crimson bar with the whit
 All text spelled exactly as written, razor-sharp and fully legible, high contrast. No gray or faded text. No people, no faces, no real logos.
 ```
 
-## Test 9 — NO LONDON, NO AMERICAN ORGANIZERS (25%)
+## Test 9 — NO LONDON, NO AMERICAN ORGANIZERS (26%)
 
 ```
 Ultra-premium vertical social card, 1080×1920px (9:16), cinematic editorial poster quality. Palette, exactly four colors: deep ink-indigo background #0B1026 graded to #161E45; signal crimson #D7263D for bars, callouts and cut lines; brilliant white #FFFFFF for type; antique-gold foil #E8B44A with real foil sheen and highlights for numbers, borders and premium touches. Rich, deeply saturated — NOT pastel, NOT faded, NOT vintage. High contrast, glossy depth, subtle film grain, soft cinematic vignette.
 
-Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 25 percent of its circumference, with faint light rays behind it.
+Hero, top third: a glowing constellation-style network map of hundreds of small gold nodes joined by fine gold threads, lit cinematically and fading into the background; two clusters on either side of an ocean are dark, severed by crimson lines; in front of it, an engraved antique-gold probability dial, a circular gauge ring filled crimson to 26 percent of its circumference, with faint light rays behind it.
 
 Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30% · FOUND BY SEARCH"; the headline in huge, heavy condensed sans (Montserrat Black), white with a thin gold foil edge and soft drop shadow: "NO LONDON, NO AMERICAN ORGANIZERS"; beneath it a gold foil italic serif subhead: "The sponsor and the organizers who pressed Washington".
 
-Anchor stat: a giant antique-gold foil number "25%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
+Anchor stat: a giant antique-gold foil number "26%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
 Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The British government and Mandate" · "The American Zionist organizations, from the Emergency Council to the appeals" · "Britain alone: 32%". Second panel, titled "WHAT FALLS WITH IT": "Balfour Declaration: 0%" · "League approves the Mandate: 0%" · "Britain hands Palestine to the UN: 0%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "46%" / "EVER", "29 YRS" / "WORK LOST", "OVER A CENTURY" / "TO REBUILD", "1977" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the two documented groups removed together; found by testing all 105 pairs of groups". If the card gets crowded, cut the first panel to its first line.
 
@@ -319,7 +319,7 @@ Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30%
 
 Anchor stat: a giant antique-gold foil number "27%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family" · "Every institution and wealth vehicle with a documented tie to it, including the Jewish Agency and the British Parliament". Second panel, titled "WHAT FALLS WITH IT": "Assumes none of those bodies had support apart from the family" · "The money channel falls to 88%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "42%" / "EVER", "38 YRS" / "WORK LOST", "59 YEARS" / "TO REBUILD", "1987" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that every tied institution falls with the family; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family" · "Every institution and wealth vehicle with a documented tie to it, including the Jewish Agency and the British Parliament". Second panel, titled "WHAT FALLS WITH IT": "Assumes none of those bodies had support apart from the family" · "The money channel falls to 88%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "42%" / "EVER", "38 YRS" / "WORK LOST", "56 YEARS" / "TO REBUILD", "1987" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that every tied institution falls with the family; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "AN ASSUMPTION, NOT THE RECORD".
 
@@ -339,7 +339,7 @@ Type: a small crimson pill with a gold foil edge and white small caps "BELOW 30%
 
 Anchor stat: a giant antique-gold foil number "28%" with the white small-caps caption "CHANCE OF A STATE IN 1948".
 
-Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family" · "And the Balfour Declaration, on the assumption it needed its addressee". Second panel, titled "WHAT FALLS WITH IT": "The record shows the letter was addressed to Walter Rothschild and that he worked on the draft" · "It does not show Britain would have withheld it otherwise" · "With the Declaration standing: 64%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "42%" / "EVER", "38 YRS" / "WORK LOST", "59 YEARS" / "TO REBUILD", "1986" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that the Declaration depended on its addressee; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
+Panel (translucent indigo glass, thin gold border, small gold node icons as bullets), titled "TAKEN OUT": "The family" · "And the Balfour Declaration, on the assumption it needed its addressee". Second panel, titled "WHAT FALLS WITH IT": "The record shows the letter was addressed to Walter Rothschild and that he worked on the draft" · "It does not show Britain would have withheld it otherwise" · "With the Declaration standing: 63%". Then a strip of four glossy indigo tiles with foil numbers and white labels: "43%" / "EVER", "38 YRS" / "WORK LOST", "55 YEARS" / "TO REBUILD", "1986" / "BEST YEAR TO RETRY". Beneath the strip, one line of small white text on a thin gold hairline: "HOW THIS WAS MEASURED: the assumption that the Declaration depended on its addressee; labelled as such on the map". If the card gets crowded, cut the first panel to its first line.
 
 Callout: one full-width crimson bar with white heavy caps: "AN ASSUMPTION ABOUT ONE LETTER".
 

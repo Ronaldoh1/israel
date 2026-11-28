@@ -21,7 +21,7 @@ To weigh what the founding depended on, the map measures nine needs: money, land
 
 Then you take a part away and recalculate. A tie only counts if it still reaches the bodies that founded the state. The UN vote needs its two-thirds. Seven key decisions are read as push over push plus resistance. It reads cause and effect: what grew from a removed part weakens with it, and only the same circle can step in for a removed actor. Lost years are rebuilt at the original pace, and every year of delay costs two percent.
 
-Roughly, the result is the 93.2 percent starting point, times the share of the needs left, times the share of the years kept. Take away Edmond de Rothschild, with everything he did, and you get 70 percent. Take away the United States: 29.
+Roughly, the result is the 93.2 percent starting point, times the share of the needs left, times the share of the years kept. Take away Edmond de Rothschild, with everything he did, and you get 69 percent. Take away the United States: 29.
 
 And every weight was stress-tested at half and at double, and the map was rerun 50 times leaving out one source each time. The biggest shift was 13 points, on the immigration-certificates test.
 
@@ -43,7 +43,7 @@ On the full record, the map gives Israel's founding in 1948 about a 93 percent c
 
 Now take a piece away. Remove Theodor Herzl, the man most people credit with the whole idea, and it falls to 69 percent: no Zionist Organization, and everything that grew from it is weaker. Remove Edmond de Rothschild, who paid for the first colonies from 1882: 70. The two founders count about the same. Remove Truman: 89.
 
-Remove the whole Rothschild family: 64 percent. Their money and land work carried decades of the effort, and that time would have to be done again.
+Remove the whole Rothschild family: 63 percent. Their money and land work carried decades of the effort, and that time would have to be done again.
 
 Remove Britain's backing: 32 percent. Remove the United States: 29. Remove every part people usually deny or play down, all at once: 13 percent.
 

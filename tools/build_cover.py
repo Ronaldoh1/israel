@@ -42,13 +42,14 @@ for tid, label in ORDER:
                   'b58': round(r['by1958'], 2), 'b78': round(r['by1978'], 2), 'lost': round(r['lost'] or 0, 1),
                   'verdict': r['verdict'], 'retry': r['retry'], 'needs': round(100 * needs, 1),
                   'kept': round(100 * kept, 1), 'share': [round(100 * x) for x in share]})
-R = json.load(open(ROOT + '/tools/stress/stress_ranges_2026-11-19.json'))
+import glob
+R = json.load(open(sorted(glob.glob(ROOT + '/tools/stress/stress_ranges_2*.json'))[-1]))
 RANGE = [('base', 'Full record'), ('herzl', 'Without Herzl'), ('un', 'Without the UN vote'),
          ('balfour', 'Without the Balfour Declaration'), ('britain', "Without Britain's backing"),
          ('roth', 'Without the Rothschild family'), ('us', 'Without the United States'),
          ('d_all', 'Every often-denied part at once')]
 ranges = [{'label': l, 'v': min(100, R[i][0]), 'lo': min(100, R[i][1]), 'hi': min(100, R[i][2])} for i, l in RANGE]
-LOSO = json.load(open(ROOT + '/tools/stress/stress_loso_2026-11-19.json'))
+LOSO = json.load(open(sorted(glob.glob(ROOT + '/tools/stress/loso_2*.json'))[-1]))
 fmt = lambda n: f'{n:,}'
 sub = {
     '%%VERRAW%%': str(st.get('verified', 0)), '%%REPRAW%%': str(st.get('reported', 0)), '%%COMRAW%%': str(st.get('co-mention', 0)),

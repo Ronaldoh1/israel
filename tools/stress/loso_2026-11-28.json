@@ -1,0 +1,977 @@
+{
+ "base": {
+  "britain": 31.96679908885699,
+  "us": 28.881683287584238,
+  "roth": 63.24061382801442,
+  "balfour": 49.565269677549836,
+  "herzl": 68.7212973126869,
+  "edmond_all": 68.68863022226401,
+  "un": 83.57761742943806,
+  "truman": 89.16959320987903,
+  "people_mandate": 78.3658532944945,
+  "d_all": 13.280310340328212,
+  "movement": 0,
+  "armed": 0,
+  "base": 93.20653479069898
+ },
+ "edge0": [
+  "pinsker",
+  "hovevei",
+  1,
+  1,
+  1.2634
+ ],
+ "loso": {
+  "https://www.jewishvirtuallibrary.org/jewish-immigrantion-to-palestine-1919-1941": {
+   "n": 10,
+   "shift": 13.4,
+   "test": "people_mandate",
+   "all": {
+    "britain": 7.1,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0.9,
+    "herzl": -0.4,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 13.4,
+    "d_all": 3.8,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://catalog.hathitrust.org/Record/102940085": {
+   "n": 7,
+   "shift": -0.3,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.3,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.2,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/marks-simon-baron": {
+   "n": 3,
+   "shift": -0.1,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": -0.1,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hechler-william-henrydeg": {
+   "n": 3,
+   "shift": 0.2,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": -0.2,
+    "roth": -0.1,
+    "balfour": 0,
+    "herzl": 0.2,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/History_of_the_Technion_%E2%80%93_Israel_Institute_of_Technology": {
+   "n": 3,
+   "shift": -0.9,
+   "test": "roth",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": -0.9,
+    "balfour": 0,
+    "herzl": -0.1,
+    "edmond_all": -0.9,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://encyclopedia.ushmm.org/content/en/article/the-harrison-report": {
+   "n": 3,
+   "shift": -2.6,
+   "test": "us",
+   "all": {
+    "britain": -0.4,
+    "us": -2.6,
+    "roth": 0,
+    "balfour": -0.1,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": -0.5,
+    "truman": 0.2,
+    "people_mandate": 0,
+    "d_all": -0.2,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/all-world-jewry-mourns-death-of-lord-melchett-great-jewish-british-mind": {
+   "n": 2,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": -0.1,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Pinhas_Rutenberg": {
+   "n": 2,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.thejc.com/news/features/when-the-guardian-was-a-zionist-newspaper-vjfz49fm": {
+   "n": 2,
+   "shift": -0.2,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.2,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jewishvirtuallibrary.org/scott-charles-prestwich-x00b0": {
+   "n": 2,
+   "shift": -1.5,
+   "test": "us",
+   "all": {
+    "britain": 0.3,
+    "us": -1.5,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": -0.7,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.2,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://jewishvirtuallibrary.org/jsource/biography/Aaronsohn.html": {
+   "n": 2,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jewishvirtuallibrary.org/republican-platform-calls-for-implementation-of-balfour-declaration": {
+   "n": 2,
+   "shift": 0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": 0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/baron-edmond-de-rothschild-responds-to-dr-weizmanns-appeal-for-help-for-jewish-agency-in-view-of-p": {
+   "n": 1,
+   "shift": 0.1,
+   "test": "roth",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0.1,
+    "balfour": 0,
+    "herzl": 0.1,
+    "edmond_all": 0.1,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://fathomjournal.org/?p=11086": {
+   "n": 1,
+   "shift": 0.3,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": -0.1,
+    "balfour": 0,
+    "herzl": 0.3,
+    "edmond_all": -0.1,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/samuel-named-chairman-of-palestine-electric": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.com/wiki/Pinhas_Rutenberg": {
+   "n": 1,
+   "shift": 0,
+   "test": "roth",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/First_Jordan_Hydro-Electric_Power_House": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://weizmann.ac.il/philanthropy/1934.html": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Rebecca_Sieff": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://balfourproject.org/?p=1223": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lloyd-george-daviddeg": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.wikiwand.com/en/articles/Sursock_Purchase": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/R%C3%B3zsika_Rothschild": {
+   "n": 1,
+   "shift": 0,
+   "test": "roth",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Aaron_Aaronsohn": {
+   "n": 1,
+   "shift": 0.4,
+   "test": "roth",
+   "all": {
+    "britain": 0.2,
+    "us": 0,
+    "roth": 0.4,
+    "balfour": 0,
+    "herzl": -0.1,
+    "edmond_all": 0.4,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/felix-m-warburg-and-lord-melchett-contribute-half-million-dollars-each-for-palestine-work": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://archives.jdc.org/?p=53823": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Bricha": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "edmond_all",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": -0.1,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/henry-morgenthau-jr-heads-170000000-united-jewish-appeal-campaign": {
+   "n": 1,
+   "shift": 0,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://encyclopedia.ushmm.org/content/en/article/ben-hecht": {
+   "n": 1,
+   "shift": 0,
+   "test": "herzl",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Haavara_Agreement": {
+   "n": 1,
+   "shift": -0.3,
+   "test": "roth",
+   "all": {
+    "britain": -0.2,
+    "us": 0,
+    "roth": -0.3,
+    "balfour": -0.3,
+    "herzl": 0.2,
+    "edmond_all": -0.3,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.2,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/dewey-supports-establishment-of-jewish-commonwealth-on-basis-of-balfour-declaration": {
+   "n": 1,
+   "shift": 0,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://encyclopedia.ushmm.org/content/en/article/exodus-1947": {
+   "n": 1,
+   "shift": -1.5,
+   "test": "us",
+   "all": {
+    "britain": -0.1,
+    "us": -1.5,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": -0.1,
+    "truman": -0.4,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.un.org/unispal/document/auto-insert-186653/": {
+   "n": 1,
+   "shift": -1.5,
+   "test": "us",
+   "all": {
+    "britain": 0.3,
+    "us": -1.5,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0.5,
+    "truman": -0.4,
+    "people_mandate": 0,
+    "d_all": 0.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/unscop-in-final-stages-of-palestine-inquiry-sub-committee-reports-on-european-dp-camps": {
+   "n": 1,
+   "shift": -1.5,
+   "test": "us",
+   "all": {
+    "britain": 0.3,
+    "us": -1.5,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0.5,
+    "truman": -0.4,
+    "people_mandate": 0,
+    "d_all": 0.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Aliyah": {
+   "n": 1,
+   "shift": -2.2,
+   "test": "people_mandate",
+   "all": {
+    "britain": -1.3,
+    "us": 0,
+    "roth": 0,
+    "balfour": -0.2,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": -2.2,
+    "d_all": -0.8,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/Second_Aliyah": {
+   "n": 1,
+   "shift": -3.3,
+   "test": "people_mandate",
+   "all": {
+    "britain": -2,
+    "us": 0,
+    "roth": 0,
+    "balfour": -0.3,
+    "herzl": 0.1,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": -3.3,
+    "d_all": -1.3,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jewishvirtuallibrary.org/haavara": {
+   "n": 1,
+   "shift": -6.5,
+   "test": "people_mandate",
+   "all": {
+    "britain": -0.9,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0.2,
+    "herzl": 0.2,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": -6.5,
+    "d_all": 0.7,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jewishvirtuallibrary.org/aliyah-bet-1939-1948": {
+   "n": 1,
+   "shift": -8,
+   "test": "people_mandate",
+   "all": {
+    "britain": -4.9,
+    "us": 0,
+    "roth": -0.1,
+    "balfour": -0.7,
+    "herzl": -0.1,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": -8,
+    "d_all": -3.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.pij.org/details.php?id=410": {
+   "n": 1,
+   "shift": 5.7,
+   "test": "herzl",
+   "all": {
+    "britain": 2.5,
+    "us": 0,
+    "roth": -3.4,
+    "balfour": 0,
+    "herzl": 5.7,
+    "edmond_all": -3.7,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jta.org/archive/the-baron": {
+   "n": 1,
+   "shift": -6.8,
+   "test": "herzl",
+   "all": {
+    "britain": -2.9,
+    "us": 0,
+    "roth": 1.4,
+    "balfour": 0,
+    "herzl": -6.8,
+    "edmond_all": 1.5,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": -1.2,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://en.wikipedia.org/wiki/MacDonald_letter": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.mideastweb.org/us_supportforstate.htm": {
+   "n": 1,
+   "shift": 0.5,
+   "test": "truman",
+   "all": {
+    "britain": -0.1,
+    "us": 0.5,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": -0.1,
+    "truman": 0.5,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.jewishvirtuallibrary.org/charles-orde-wingate": {
+   "n": 1,
+   "shift": 0.1,
+   "test": "d_all",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://wikiwand.com/en/Jewish_Supernumerary_Police": {
+   "n": 1,
+   "shift": 0.1,
+   "test": "d_all",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0.1,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://jewishvirtuallibrary.org/the-jewish-community-under-the-palestine-mandate": {
+   "n": 1,
+   "shift": 0,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/palestine-land-development-company": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "edmond_all",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": -0.1,
+    "balfour": 0,
+    "herzl": -0.1,
+    "edmond_all": -0.1,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://api.parliament.uk/historic-hansard/commons/1948/feb/03/money-transfers-palestine": {
+   "n": 1,
+   "shift": 0,
+   "test": "balfour",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://www.nbcnews.com/id/wbna28368672": {
+   "n": 1,
+   "shift": -0.3,
+   "test": "d_all",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": -0.3,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://cojs.org/august-11-1840/": {
+   "n": 1,
+   "shift": -0.1,
+   "test": "us",
+   "all": {
+    "britain": 0,
+    "us": -0.1,
+    "roth": 0.1,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0.1,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  },
+  "https://israeled.org/wp-content/uploads/2022/10/Metzer-Jacob-The-Divided-Economy-of-Mandatory-Palestine-1998-essential.pdf": {
+   "n": 1,
+   "shift": 0,
+   "test": "",
+   "all": {
+    "britain": 0,
+    "us": 0,
+    "roth": 0,
+    "balfour": 0,
+    "herzl": 0,
+    "edmond_all": 0,
+    "un": 0,
+    "truman": 0,
+    "people_mandate": 0,
+    "d_all": 0,
+    "movement": 0,
+    "armed": 0
+   }
+  }
+ },
+ "nsrc": 52
+}

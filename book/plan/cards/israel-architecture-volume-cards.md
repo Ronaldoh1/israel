@@ -75,7 +75,7 @@ SUBHEAD: gold-foil italic serif, at most two lines: "The six stages that built a
 
 BULLETS (white sans, each led by a small gold-foil diamond):
 "From the Bank of England in 1694 to a state declared on 14 May 1948"
-"Without Edmond de Rothschild, a state on time falls from 93% to about 70%, thirteen years of work lost"
+"Without Edmond de Rothschild, a state on time falls from 93% to about 69%, thirteen years of work lost"
 "Eight other proposed homelands, from Argentina to Uganda, tested one by one"
 (If the card gets crowded, cut the third bullet first.)
 

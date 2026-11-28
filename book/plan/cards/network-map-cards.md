@@ -317,9 +317,9 @@ SUBHEAD (white italic serif): "The two largest sources, removed."
 GIANT GOLD FOIL NUMBER at the left of the panel: "70%" with an electric cyan small-caps label "ON TIME WITHOUT EDMOND DE ROTHSCHILD — DELAYED".
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
-1  Without Edmond, his money and his actions: 70% on time, 71% ever, about 13 years of work lost.
+1  Without Edmond, his money and his actions: 69% on time, 70% ever, about 13 years of work lost.
 2  Without any Rothschild money: 79% on time.
-3  Without the whole Rothschild family: 64% on time, 68% ever.
+3  Without the whole Rothschild family: 63% on time, 67% ever.
 4  Without American money alone: 91% on time — it came late.
 5  Without both the Rothschilds and the United States: 14% on time, 39% ever — not possible on this record.
 

@@ -484,7 +484,7 @@ GIANT GOLD FOIL NUMBER at the left of the panel: "13 YEARS" with an electric cya
 
 PANEL (dark glass with a thick gold border), a small electric cyan spaced-caps header "THE RECORD", then five facts, each starting with a small glowing gold diamond, white text, generous line spacing, thin gold rules between rows:
 1  Remove the organized movement, or the armed groups, and no state is possible on this record.
-2  Without Edmond de Rothschild, his money and his actions: 70% on time — delayed. He carried the colonies almost alone for two decades.
+2  Without Edmond de Rothschild, his money and his actions: 69% on time — delayed. He carried the colonies almost alone for two decades.
 3  Without the United States: 29% on time. Without the Soviet bloc: still about 83%.
 4  No Balfour Declaration: 49% — immigration falls back to the Ottoman pace, about 26 years of work lost.
 5  Without Herzl: 69%, about the same as Edmond. Without Truman: 89% — Henry Wallace, a supporter, decides instead.
