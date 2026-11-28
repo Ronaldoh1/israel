@@ -454,7 +454,7 @@ function vScore(rem0){ const rel=[];
 let vKnock=(vLS('road_knock_v1')!==0);
 let vCat=true;
 function vCatScale(rem){ const sc={}; if(!vCat||!VB.builds) return sc; for(const [dep,base,sh] of VB.builds) if(rem.has(base)&&!rem.has(dep)) sc[dep]=(sc[dep]??1)*(1-sh); return sc; }
-function vCatRem(rem0){ if(!vCat||!VB.built_by) return rem0; const out=new Set(rem0); for(const [who,list] of Object.entries(VB.built_by)){ const m=VB.edges.filter(e=>e[2]===0&&e[0]===who&&e[4]>0); if(m.length&&m.every(e=>vDrop.has(e[0]+'>'+e[1]))) list.forEach(x=>out.add(x)); } return out; }
+function vCatRem(rem0){ if(!vCat||!VB.built_by) return rem0; const out=new Set(rem0); for(const [who,list] of Object.entries(VB.built_by)){ const m=VB.edges.filter(e=>e[2]===0&&e[0]===who&&e[4]>0); if(m.length&&(rem0.has(who)||m.every(e=>vDrop.has(e[0]+'>'+e[1])))) list.forEach(x=>out.add(x)); } return out; }
 function vCauseK(rem){ const inc=new Map(), k=new Map(); for(const [c,e,nd] of VB.causes||[]){ if(!inc.has(e)) inc.set(e,[]); inc.get(e).push([c,nd]); }
   const g=x=>rem.has(x)?0:(k.has(x)?k.get(x):1); for(let it=0;it<10;it++) for(const [e,cs] of inc){ if(rem.has(e)){ k.set(e,0); continue; } let s=0, nd1=1; for(const [c,nd] of cs){ const v=g(c); s+=v; if(nd) nd1=Math.min(nd1,v); } k.set(e,Math.min(nd1,s/cs.length)); }
   return k; }
