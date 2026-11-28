@@ -1,0 +1,7 @@
+{
+  "name": "israel",
+  "compatibility_date": "2025-01-01",
+  "main": "src/worker.js",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "d1_databases": [{ "binding": "DB", "database_name": "israel-stats" }]
+}

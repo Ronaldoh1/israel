@@ -1,0 +1,225 @@
+{
+ "volume": "dream",
+ "verified": "2026-10-22",
+ "entries": [
+  {
+   "id": "ad18_levers",
+   "stage": "ad18",
+   "topic": "Documented policy levers and their evidence on both sides: 2021 CTC, minimum wage, Medicaid expansion, zoning/supply reform, baby bonds",
+   "claims": [
+    {
+     "text": "Ananat et al. (NBER 29823, March 2022; Columbia discussion paper Oct 2021), Census Household Pulse data April-September 2021: 'very small, inconsistently signed, and statistically insignificant' effects of the monthly expanded CTC on employment and labour-force participation of adults with children.",
+     "strength": "primary",
+     "sources": [
+      "ad18_nber_ananat"
+     ]
+    },
+    {
+     "text": "Corinth, Meyer, Stadnicki and Wu (NBER 29366): replacing the CTC with the 2021-style child allowance would cut child poverty about 34% (deep child poverty 39%) before behavioural effects; about 1.5 million working parents (2.6%) would leave the labour force; after that response child poverty would fall at most 22% and deep child poverty not at all. This is a projection from estimated elasticities, not observed outcomes.",
+     "strength": "primary",
+     "sources": [
+      "ad18_nber_corinth"
+     ]
+    },
+    {
+     "text": "CBS (12 Oct 2021): Stanford's Jacob Goldin called the key employment assumption 'really not credible'; CBPP said about 95% of recipient families had a working parent or one between jobs, ill, disabled or caring for a child under 2.",
+     "strength": "reported",
+     "sources": [
+      "ad18_cbs_ctc"
+     ]
+    },
+    {
+     "text": "CBO (Feb 2021) on raising the federal minimum to $15 by 2025: about 1.4 million fewer workers employed (central estimate), 900,000 fewer people in poverty, net pay to affected workers +$333bn ($509bn higher wages minus $175bn lost to unemployment).",
+     "strength": "reported",
+     "sources": [
+      "ad18_bt_cbo2021"
+     ]
+    },
+    {
+     "text": "Cengiz, Dube, Lindner, Zipperer (138 state minimum-wage increases 1979-2016, bunching estimator): number of low-wage jobs essentially unchanged over five years after increases; some wage spillovers; reduced employment in tradable sectors.",
+     "strength": "primary",
+     "sources": [
+      "ad18_nber_cengiz"
+     ]
+    },
+    {
+     "text": "Neumark and Shirley (2022): 79.2% of the preferred employment elasticities in the US literature since the early 1990s are negative; 46.2% negative and significant at 5%; for directly affected workers mean elasticity -0.270, median -0.130; evidence stronger for teens, young adults, less-educated.",
+     "strength": "primary",
+     "sources": [
+      "ad18_nber_neumark"
+     ]
+    },
+    {
+     "text": "Miller, Altekruse, Johnson, Wherry: ACA Medicaid expansion reduced annual mortality among low-income adults aged 55-64 by 0.132 percentage points (about 9.4% of the mean); roughly 15,600 deaths would have been averted in non-expansion states had they expanded.",
+     "strength": "primary",
+     "sources": [
+      "ad18_ucd_wherry"
+     ]
+    },
+    {
+     "text": "Oregon Health Insurance Experiment (NEJM 2013, lottery): no statistically significant effects on blood pressure, cholesterol or HbA1c after about two years; depression down 9.2 points (30%); catastrophic out-of-pocket spending down 4.5 points (base 5.5%), nearly eliminated; borrowing/skipping bills for medical costs down 14.2 points; use and spending up about 35% (about $1,200 a year).",
+     "strength": "primary",
+     "sources": [
+      "ad18_ohp_nejm"
+     ]
+    },
+    {
+     "text": "Bjoerkheim (Feb 2023): the mortality reduction among those uninsured before expansion (0.150 points) is only slightly larger than the full-sample effect (0.132), so the mechanism is unclear; Oregon and RAND HIE found little direct health or mortality effect.",
+     "strength": "reported",
+     "sources": [
+      "ad18_ohp_bjoerkheim"
+     ]
+    },
+    {
+     "text": "Pew (4 Jan 2024): 2017-2022 Minneapolis housing stock +12% vs +4% rest of Minnesota; rents +1% vs +14%; about 21,000 units permitted, 87% in buildings of 20+ units, about 1% in 2-4 unit buildings; reforms: parking minimums ended citywide 2021, apartments along corridors (Minneapolis 2040), duplex/triplex on all lots (modest effect so far).",
+     "strength": "reported",
+     "sources": [
+      "ad18_pew_mpls"
+     ]
+    },
+    {
+     "text": "Axios (25 June 2026, on NMHC/NYU report): researchers attribute part of the slow rent growth to weaker demand after the 2020 unrest and to low interest rates fuelling construction; the slow-rent period has ended; Twin Cities rent growth fourth-fastest in the US per Yardi Matrix.",
+     "strength": "reported",
+     "sources": [
+      "ad18_axios_mpls"
+     ]
+    },
+    {
+     "text": "CT Baby Bonds: $3,200 invested for each child born on or after 1 July 2023 whose birth was covered by HUSKY (Medicaid); claim between ages 18 and 30 for a Connecticut home, business, education/training or retirement savings; financial-literacy course and residency required; projected $11,000-$24,000; about 15,000-16,000 eligible births a year; funded for 12 years of births.",
+     "strength": "primary",
+     "sources": [
+      "ad18_ct_babybonds"
+     ]
+    },
+    {
+     "text": "Zewde (2018 simulation, PSID): a universal baby-bond programme would cut the young-adult white/Black median wealth ratio from about 15:1 ($45,000 vs $3,005) to about 1.6:1.",
+     "strength": "reported",
+     "sources": [
+      "ad18_zewde"
+     ]
+    },
+    {
+     "text": "Bruenig (Jan 2019): median-based gap measures overstate baby bonds' effect; mean gap $760,700 (SCF 2016); a programme of about $80bn a year 'is not going to nearly close' a total gap over $15 trillion.",
+     "strength": "reported",
+     "sources": [
+      "ad18_ppp_bruenig"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad18_nber_ananat",
+     "url": "https://www.nber.org/papers/w29823",
+     "label": "Ananat, Glasner, Hamilton and Parolin, 'Effects of the Expanded Child Tax Credit on Employment Outcomes', NBER WP 29823, March 2022"
+    },
+    {
+     "key": "ad18_nber_corinth",
+     "url": "https://www.nber.org/papers/w29366",
+     "label": "Corinth, Meyer, Stadnicki and Wu, 'The Anti-Poverty, Targeting, and Labor Supply Effects of Replacing a Child Tax Credit with a Child Allowance', NBER WP 29366, Oct 2021 (rev. March 2022)"
+    },
+    {
+     "key": "ad18_cbs_ctc",
+     "url": "https://www.cbsnews.com/amp/news/child-tax-credit-work-requirement-debate/",
+     "label": "CBS News, 'Child Tax Credit could spur 1.5 million parents to leave the workforce, study says', 12 Oct 2021"
+    },
+    {
+     "key": "ad18_bt_cbo2021",
+     "url": "https://btlaw.com/en/insights/alerts/2021/congressional-budge-office-analyzes-impact-of-increasing-federal-minimum-wage",
+     "label": "Barnes & Thornburg, 'Congressional Budget Office Analyzes Impact of Increasing Federal Minimum Wage' (summary of CBO, Feb 2021), 11 Feb 2021"
+    },
+    {
+     "key": "ad18_nber_cengiz",
+     "url": "https://www.nber.org/papers/w25434",
+     "label": "Cengiz, Dube, Lindner and Zipperer, 'The Effect of Minimum Wages on Low-Wage Jobs', NBER WP 25434 (QJE 2019)"
+    },
+    {
+     "key": "ad18_nber_neumark",
+     "url": "https://www.nber.org/system/files/working_papers/w28388/w28388.pdf",
+     "label": "Neumark and Shirley, 'Myth or Measurement: What Does the New Minimum Wage Research Say about Minimum Wages and Job Loss in the United States?', NBER WP 28388 (Industrial Relations 61(4), 2022)"
+    },
+    {
+     "key": "ad18_ucd_wherry",
+     "url": "https://www.poverty.ucdavis.edu/sites/main/files/file-attachments/wherry_medicaid_mortality_brief.pdf",
+     "label": "Miller, Altekruse, Johnson and Wherry, 'Medicaid and Mortality', UC Davis Center for Poverty Research policy brief 8(3), Nov 2019 (QJE 2021)"
+    },
+    {
+     "key": "ad18_ohp_nejm",
+     "url": "https://www.nber.org/sites/default/files/2020-02/summary-nejm-2013-05-02.pdf",
+     "label": "Oregon Health Insurance Experiment, summary of Baicker et al., NEJM, 2 May 2013 (NBER)"
+    },
+    {
+     "key": "ad18_ohp_bjoerkheim",
+     "url": "https://www.openhealthpolicy.com/p/medicaid-expansion-mortality-interpretation",
+     "label": "Markus Bjoerkheim, 'If Medicaid Expansion Saves Lives, We Still Don't Know How' (Mercatus/Open Health Policy), 10 Feb 2023"
+    },
+    {
+     "key": "ad18_pew_mpls",
+     "url": "https://www.pew.org/en/research-and-analysis/articles/2024/01/04/minneapolis-land-use-reforms-offer-a-blueprint-for-housing-affordability",
+     "label": "Liang, Staveski and Horowitz (Pew), 'Minneapolis Land Use Reforms Offer a Blueprint for Housing Affordability', 4 Jan 2024"
+    },
+    {
+     "key": "ad18_axios_mpls",
+     "url": "https://www.axios.com/local/twin-cities/2026/06/25/how-minneapolis-kept-aparment-rents-down",
+     "label": "Nick Halter, Axios Twin Cities, on NMHC/NYU report, 25 June 2026"
+    },
+    {
+     "key": "ad18_ct_babybonds",
+     "url": "https://portal.ct.gov/ott/ct-baby-bonds/overview",
+     "label": "Connecticut Office of the Treasurer, 'CT Baby Bonds: Overview'"
+    },
+    {
+     "key": "ad18_zewde",
+     "url": "https://appam.confex.com/appam/2018/webprogram/Paper28112.html",
+     "label": "Naomi Zewde, 'Universal Baby Bonds Reduce Racial Wealth Inequality…', APPAM 2018 paper"
+    },
+    {
+     "key": "ad18_ppp_bruenig",
+     "url": "https://peoplespolicyproject.org/2019/01/22/baby-bonds-only-modestly-reduce-the-racial-wealth-gap/",
+     "label": "Matt Bruenig (People's Policy Project), 'Baby Bonds Only Modestly Reduce the Racial Wealth Gap', 22 Jan 2019"
+    }
+   ]
+  },
+  {
+   "id": "ad18_scoring",
+   "stage": "ad18",
+   "topic": "Additional measures used in the Dream scorecard",
+   "claims": [
+    {
+     "text": "NHIS 2025: 8.3% of all ages (28.0m) uninsured; adults 18-64 11.6% (13.5% in 2021); by race/ethnicity, adults 18-64: Hispanic 21.9%, Black non-Hispanic 11.3%, White non-Hispanic 8.5%, Asian non-Hispanic 4.9%; adults in non-expansion states 18.1% vs 9.0% in Medicaid expansion states.",
+     "strength": "primary",
+     "sources": [
+      "ad18_nchs_unins25"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad18_nchs_unins25",
+     "url": "https://cdc.gov/nchs/pressroom/releases/20260528.html",
+     "label": "CDC/NCHS, 'U.S. Uninsured Rate Unchanged in 2025' (NHIS early release), 28 May 2026"
+    }
+   ]
+  },
+  {
+   "id": "ad18_audit",
+   "stage": "ad18",
+   "topic": "ad18 audit additions (22 Oct 2026)",
+   "claims": [
+    {
+     "text": "IRS (IR-2026-42, 31 Mar 2026): Trump Accounts created by the 2025 budget law (P.L. 119-21); $1,000 federal pilot contribution for US-citizen children with a valid SSN born 1 Jan 2025 to 31 Dec 2028; contributions begin 4 July 2026; more than 4 million children signed up, more than 1 million covered by pilot elections.",
+     "strength": "strong",
+     "sources": [
+      "ad18_audit_irs_trumpacct"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ad18_audit_irs_trumpacct",
+     "url": "https://www.irs.gov/node/158231",
+     "label": "Internal Revenue Service, '4 million children have been signed up for Trump Accounts with 1 million claiming the $1,000 pilot program contribution', IR-2026-42, 31 March 2026"
+    }
+   ]
+  }
+ ]
+}

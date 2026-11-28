@@ -1,0 +1,212 @@
+{
+ "nodes": [
+  {
+   "id": "karin_models",
+   "name": "Karin Models of America",
+   "kind": "company",
+   "cluster": "vendors",
+   "note": "Jean-Luc Brunel's US agency before MC2. Used, with MC2, to recruit young South American women and to sponsor their US visas, per women interviewed by the BBC."
+  },
+  {
+   "id": "guayaquil_2004",
+   "name": "Modelling competition, Guayaquil, Ecuador (Aug 2004)",
+   "kind": "event",
+   "cluster": "operations",
+   "note": "Competition attended by Brunel's team with young Brazilian entrants. US government files place Epstein in Guayaquil on 24-25 Aug 2004, at the final (BBC). A 16-year-old was offered a flight to New York; her mother refused."
+  },
+  {
+   "id": "brazil_mpf",
+   "name": "Brazil Federal Public Prosecutor's Office (MPF)",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Opened an inquiry in February 2026 into whether an Epstein-linked recruitment network operated in Brazil; the women are not targets (BBC)."
+  },
+  {
+   "id": "latvia_police",
+   "name": "Latvian State Police",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Opened a criminal investigation on 5 Feb 2026 into the possible recruitment of Latvian nationals for sexual exploitation in the United States, after files showed passport data and travel details for several Latvian women (Reuters)."
+  },
+  {
+   "id": "natalie_agency",
+   "name": "Natalie modelling agency (Riga)",
+   "kind": "company",
+   "cluster": "vendors",
+   "note": "Latvian agency mentioned in the released files; its head, Eriks Neisans, denied any knowledge of wrongdoing (Reuters)."
+  },
+  {
+   "id": "lithuania_probe",
+   "name": "Lithuanian human-trafficking investigation (2026)",
+   "kind": "government",
+   "cluster": "abroad",
+   "note": "Opened in early February 2026. LRT's review of 600+ documents found a Lithuanian woman, introduced to Epstein in April 2010, who introduced other women and arranged meetings; LRT found no payments to her and says the files do not show what happened at the meetings."
+  }
+ ],
+ "edges": [
+  {
+   "f": "brunel",
+   "t": "karin_models",
+   "label": "ran the agency (before MC2)",
+   "type": "ownership",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "karin_models",
+   "t": "epstein",
+   "label": "used to recruit young South American women and sponsor their visas (women's accounts to the BBC)",
+   "type": "visa sponsorship",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "brunel",
+   "t": "guayaquil_2004",
+   "label": "his team ran the trip to the competition, 2004",
+   "type": "event",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "epstein",
+   "t": "guayaquil_2004",
+   "label": "in Guayaquil 24-25 Aug 2004 (US government files)",
+   "type": "travel",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "brazil_mpf",
+   "t": "epstein",
+   "label": "inquiry into an Epstein-linked recruitment network in Brazil, Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "BBC (via AOL): Epstein used modelling agent to recruit girls, Brazilian women say; Brazil's federal prosecutors open inquiry",
+     "u": "https://www.aol.com/articles/epstein-used-modelling-agent-recruit-000557788.html"
+    }
+   ]
+  },
+  {
+   "f": "latvia_police",
+   "t": "epstein",
+   "label": "criminal investigation opened 5 Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    }
+   ]
+  },
+  {
+   "f": "natalie_agency",
+   "t": "epstein",
+   "label": "named in the released files; head denies knowledge",
+   "type": "mention",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    }
+   ]
+  },
+  {
+   "f": "lithuania_probe",
+   "t": "epstein",
+   "label": "trafficking investigation opened Feb 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Reuters (via The Star), 5 Feb 2026: Latvia launches human trafficking investigation after Epstein file release",
+     "u": "https://www.thestar.com.my/news/world/2026/02/05/latvia-launches-human-trafficking-investigation-after-epstein-file-release"
+    },
+    {
+     "t": "LRT, 5 Feb 2026: Epstein's recruitment network, on the trail of one Lithuanian woman (600+ documents reviewed)",
+     "u": "https://www.lrt.lt/en/news-in-english/19/2827102/epstein-s-recruitment-network-on-the-trail-of-one-lithuanian-woman"
+    }
+   ]
+  },
+  {
+   "f": "siad",
+   "t": "mc2",
+   "label": "scout on commission for MC2; Brunel called him a recruiter \"for J. Epstein\" (DOJ file)",
+   "type": "employment",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
+  },
+  {
+   "f": "siad",
+   "t": "epstein",
+   "label": "sent profiles, photos and videos of young women and models, late 2000s to at least 2017 (emails in the release)",
+   "type": "scheduling",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
+  },
+  {
+   "f": "paris_prosecutor",
+   "t": "siad",
+   "label": "under investigation in the Feb 2026 trafficking probe (reported); not charged; died July 2026",
+   "type": "investigation",
+   "status": "reported",
+   "src": "pass 5 (recruitment), 19 Nov 2026",
+   "refs": [
+    {
+     "t": "Wikipedia, Daniel Siad (citing the DOJ files, AFP/France 24, ZDF/Der Spiegel and others)",
+     "u": "https://en.wikipedia.org/wiki/Daniel_Siad"
+    }
+   ]
+  }
+ ],
+ "node_notes": {
+  "siad": "Daniel Siad (1957-2026). Model scout (What's Up Management; MC2 on commission), based in Stockholm with ties to Paris and Barcelona. The released files mention him about 2,000 times: from the late 2000s to at least 2017 he sent Epstein profiles, photos and sometimes videos of young women, with scouting reported in Poland, the Czech Republic, Slovakia, Hungary, Bulgaria, Latvia, South Africa, Spain, France, Morocco and Cuba. At least five women accuse him of rape or trafficking, which he denied. Reported to be under investigation by the Paris prosecutor from Feb 2026; never charged; found dead at home near Paris in July 2026 (cause not determined)."
+ },
+ "node_clusters": {
+  "siad": "operations"
+ }
+}

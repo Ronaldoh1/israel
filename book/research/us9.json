@@ -1,0 +1,267 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us9_westbank",
+   "stage": "us9",
+   "topic": "West Bank and East Jerusalem: populations, two legal systems, residency, votes",
+   "claims": [
+    {
+     "text": "HaMoked, from Interior Ministry data: 14,808 East Jerusalem residency revocations 1967–2022; e.g. 105 (1967), 395 (1968), 158 (1980), 616 (1983), 2 (1988), 1,067 (1997), 1,363 (2006), 4,577 (2008, peak), 191 (2010), 84 (2015), 18 (2020), 81 (2022); no data for 2002; 2001 covers Jan–Apr only.",
+     "strength": "primary",
+     "sources": [
+      "us9_hamoked_revoc"
+     ]
+    },
+    {
+     "text": "Reuters (22 Mar 2017): about 330,000 Palestinians in East Jerusalem, 37% of the city; family citizenship applications 69 (2003), 547 (2008), 704 (2013), 1,081 (2016); about 15,000 Palestinians requested citizenship since 2003, fewer than 6,000 reportedly approved; per Times of Israel figures (Sept 2016) of more than 4,000 applications since 2014, 84 approved and 161 rejected, rest pending.",
+     "strength": "reported",
+     "sources": [
+      "us9_reuters_ejcit"
+     ]
+    },
+    {
+     "text": "Al Jazeera (22 Feb 2024): about 362,000 Palestinians live in East Jerusalem; most hold residency status and are stateless; residents may vote in municipal but not national elections; they have collectively boycotted municipal elections since 1967.",
+     "strength": "reported",
+     "sources": [
+      "us9_aje_ejvote"
+     ]
+    },
+    {
+     "text": "Jerusalem municipal election held 27 Feb 2024 (delayed from 31 Oct 2023); turnout 33.75% of 690,707 registered voters; Palestinians of East Jerusalem are permanent residents, not citizens, and may vote municipally but not for the Knesset; the Kol Toshaveha list won 2,455 votes (1.07%) and no seats.",
+     "strength": "reported",
+     "sources": [
+      "us9_wiki_jlm2024"
+     ]
+    },
+    {
+     "text": "PCBS (31 Dec 2025): estimated Palestinian population end-2025 State of Palestine 5.56m (West Bank 3.43m, Gaza 2.13m); 1.86m Palestinians inside Israel; Gaza's population fell about 254,000 (10.6%) against pre-war estimates.",
+     "strength": "primary",
+     "sources": [
+      "us9_pcbs_2025"
+     ]
+    },
+    {
+     "text": "JTA (7 Jun 2022): the 'Judea and Samaria' regulations, based on post-1967 emergency statutes, extend Israeli law to Israeli settlers and must be renewed every five years; without them Israeli courts could not enforce some claims and holding Palestinian prisoners in Israeli jails would lose its legal basis; renewal failed 58–52 on 6 Jun 2022.",
+     "strength": "reported",
+     "sources": [
+      "us9_jta_regs2022"
+     ]
+    },
+    {
+     "text": "New Arab (10 Jan 2023): renewal bill passed first reading 58–13; it was last extended in 2017; Justice Minister Yariv Levin introduced it; the regulations allow Palestinians from the West Bank to be imprisoned inside Israel.",
+     "strength": "reported",
+     "sources": [
+      "us9_tna_regs2023"
+     ]
+    },
+    {
+     "text": "Jewish Press (24 Jan 2023): third reading passed 39–12, extending the regulations five years to 15 February 2028; they apply Israeli law to Israeli citizens in Judea and Samaria (tax, National Insurance, military service).",
+     "strength": "reported",
+     "sources": [
+      "us9_jp_regs2023"
+     ]
+    },
+    {
+     "text": "The National (8 Oct 2026): Palestinian legislative elections scheduled for 28 Nov 2026 likely to be postponed; election commission cited Israel blocking ballot boxes and ink into Gaza; in 2021 Israel's refusal to let East Jerusalem voters take part was cited when Abbas called off the vote; last legislative elections 2006.",
+     "strength": "reported",
+     "sources": [
+      "us9_nat_elect"
+     ]
+    },
+    {
+     "text": "AFP (10 Oct 2026): Abbas postponed legislative (28 Nov 2026) and presidential elections to 11 Sep 2027, citing 'obstacles imposed by Israeli measures'; PA said Israel refused access for election officials to East Jerusalem and Gaza; Saar accused Abbas of 'fooling the international community'; PLC has not met since 2007; Abbas's term should have expired in 2009 and he rules by decree.",
+     "strength": "reported",
+     "sources": [
+      "us9_kt_postpone"
+     ]
+    },
+    {
+     "text": "AP (13 Sep 2019), Mas'ha: settlers in neighbouring Elkana vote in Knesset elections while Mas'ha residents, separated by a wall and gate, cannot; about 2.5 million West Bank Palestinians have no say in choosing Israel's government; the PA had held no presidential or parliamentary elections since 2006.",
+     "strength": "reported",
+     "sources": [
+      "us9_ap_masha"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us9_hamoked_revoc",
+     "url": "https://hamoked.org/files/2023/1666113_eng.pdf",
+     "label": "HaMoked, 'East Jerusalem Residency Revocations in the framework of the Quiet Deportation' (Interior Ministry data, 1967–2022)"
+    },
+    {
+     "key": "us9_reuters_ejcit",
+     "url": "https://www.ynetnews.com/articles/0,7340,L-4939026,00.html",
+     "label": "Reuters via Ynetnews, 'Breaking taboo, Jerusalem Palestinians seek Israeli citizenship', 22 Mar 2017"
+    },
+    {
+     "key": "us9_aje_ejvote",
+     "url": "https://www.aljazeera.com/features/2024/2/22/will-occupied-palestinians-boycott-israeli-municipal-elections",
+     "label": "Mat Nashed, ''We resist silently': Many Palestinians to boycott Israel's municipal vote', Al Jazeera, 22 Feb 2024"
+    },
+    {
+     "key": "us9_wiki_jlm2024",
+     "url": "https://en.wikipedia.org/wiki/2024_Jerusalem_municipal_election",
+     "label": "Wikipedia, '2024 Jerusalem municipal election'"
+    },
+    {
+     "key": "us9_pcbs_2025",
+     "url": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_PalPeopleEnd2025E.pdf",
+     "label": "Palestinian Central Bureau of Statistics, 'The Status of the Palestinian People at the End of 2025', 31 Dec 2025"
+    },
+    {
+     "key": "us9_jta_regs2022",
+     "url": "https://jta.org/?p=1811846",
+     "label": "Ron Kampeas, JTA, 'Vote on extending Israeli protections to Jewish settlers fails and threatens Bennett government', 7 Jun 2022"
+    },
+    {
+     "key": "us9_tna_regs2023",
+     "url": "https://www.newarab.com/news/israel-knesset-votes-extend-apartheid-law-west-bank",
+     "label": "The New Arab, 'Israel's Knesset votes to extend 'apartheid' emergency law in West Bank', 10 Jan 2023"
+    },
+    {
+     "key": "us9_jp_regs2023",
+     "url": "https://www.jewishpress.com/news/israel/judea-samaria-israel/without-fanfare-knesset-passes-judea-samaria-regulation-law/2023/01/24/",
+     "label": "Jewish Press, 'Without fanfare, Knesset passes Judea and Samaria regulation law', 24 Jan 2023"
+    },
+    {
+     "key": "us9_nat_elect",
+     "url": "https://www.thenationalnews.com/news/2026/10/08/highly-anticipated-palestinian-elections-likely-to-be-postponed-sources-say/",
+     "label": "Nada AlTaher, 'Highly anticipated Palestinian elections likely to be postponed, sources say', The National, 8 Oct 2026"
+    },
+    {
+     "key": "us9_kt_postpone",
+     "url": "https://www.khaleejtimes.com/world/mena/palestine-president-postpones-legislative-elections",
+     "label": "AFP via Khaleej Times, 'Palestinian president postpones legislative elections to September 2027', 10 Oct 2026"
+    },
+    {
+     "key": "us9_ap_masha",
+     "url": "https://www.ksl.com/article/46637415/unable-to-vote-palestinians-shrug-off-israels-elections",
+     "label": "Joseph Krauss and Mohammed Daraghmeh, AP via KSL, 'Unable to vote, Palestinians shrug off Israel's elections', 13 Sep 2019"
+    }
+   ]
+  },
+  {
+   "id": "us9_us",
+   "stage": "us9",
+   "topic": "Non-citizens and non-voters under US control: territories, occupation, detention",
+   "claims": [
+    {
+     "text": "On 17 Oct 2022 the US Supreme Court declined to hear the American Samoa citizenship appeal, leaving a Denver appeals ruling that Congress should decide; people born in American Samoa are US nationals who cannot vote for president; their only federal vote is for a nonvoting House delegate; the Court declined to overturn the Insular Cases (from 1901); Gorsuch had written that they 'have no foundation in the Constitution' and rest on 'racial stereotypes'; American Samoa's government and the Biden administration opposed the suit.",
+     "strength": "reported",
+     "sources": [
+      "us9_ap_samoa"
+     ]
+    },
+    {
+     "text": "Civil Beat (13 Sep 2024): nearly 4 million people live in five inhabited territories; residents may vote in presidential primaries but not general elections; each territory elects one House representative who cannot vote on legislation; the Insular Cases holding that the Constitution applies only partly remain in force though the Justice Department criticised their 'racist rhetoric and reasoning'.",
+     "strength": "reported",
+     "sources": [
+      "us9_cb_territories"
+     ]
+    },
+    {
+     "text": "2020 Census: American Samoa 49,710; Guam 153,836; Northern Mariana Islands 47,329; US Virgin Islands 87,146.",
+     "strength": "primary",
+     "sources": [
+      "us9_census_island"
+     ]
+    },
+    {
+     "text": "CRS R48522 (Jan 2026): Puerto Rico 3,285,874 in 2020 (about 3.2m mid-2024); five territories more than 3.6 million residents, who are US citizens or nationals; all represented by nonvoting delegates (Puerto Rico by a Resident Commissioner); the five are unincorporated territories that belong to but are not part of the United States.",
+     "strength": "primary",
+     "sources": [
+      "us9_crs_territories"
+     ]
+    },
+    {
+     "text": "US detention in Iraq peaked at 26,000 in November 2007, 22,000 at Camp Bucca; some held three years without charge; under the security agreement effective January 2009 the US had to transfer detainees to Iraqi custody for prosecution or release them; about 5,600 freed and 1,400 handed over in 2009 before Bucca closed.",
+     "strength": "reported",
+     "sources": [
+      "us9_ap_bucca"
+     ]
+    },
+    {
+     "text": "UNSC Resolution 1483 (22 May 2003, 14–0, Syria not voting) recognised the US and UK as 'occupying powers under unified command (the \"Authority\")' and called on all to comply with the Geneva Conventions and Hague Regulations.",
+     "strength": "primary",
+     "sources": [
+      "us9_icrc_1483",
+      "us9_wiki_1483"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us9_ap_samoa",
+     "url": "https://www.westernmassnews.com/2022/10/17/supreme-court-rejects-appeal-give-american-samoans-citizenship/",
+     "label": "AP via Western Mass News, 'Supreme Court rejects appeal to give American Samoans citizenship', 17 Oct 2022"
+    },
+    {
+     "key": "us9_cb_territories",
+     "url": "https://civilbeat.org/2024/09/debate-persists-over-rights-denied-to-millions-from-u-s-territories/",
+     "label": "Eshaan Sarup, 'Debate persists over rights denied to millions from US territories', Honolulu Civil Beat / News21, 13 Sep 2024"
+    },
+    {
+     "key": "us9_census_island",
+     "url": "https://census.gov/library/stories/2021/10/first-2020-census-united-states-island-areas-data-released-today.html",
+     "label": "US Census Bureau, 'First 2020 Census United States Island Areas Data Released Today', 28 Oct 2021"
+    },
+    {
+     "key": "us9_crs_territories",
+     "url": "https://www.everycrsreport.com/changes/2025-05-02_R48522_25343732a1547265abd2c6ee4a5ebd43e454b133__2026-01-30_R48522_9b58e9d57642f291c027638205977950ceaab32e.html",
+     "label": "Congressional Research Service, 'Federal Statistical Data for U.S. Territories: Issues and Resources', R48522, updated 30 Jan 2026"
+    },
+    {
+     "key": "us9_ap_bucca",
+     "url": "https://www.nbcnews.com/id/wbna32884156",
+     "label": "NBC News, 'U.S. closes big military prison in Iraq', Sept 2009"
+    },
+    {
+     "key": "us9_icrc_1483",
+     "url": "https://casebook.icrc.org/case-study/iraq-occupation-and-peacebuilding",
+     "label": "ICRC Casebook, 'Iraq, Occupation and Peacebuilding' (UNSC Resolution 1483, 2003)"
+    },
+    {
+     "key": "us9_wiki_1483",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_1483",
+     "label": "Wikipedia, 'United Nations Security Council Resolution 1483'"
+    }
+   ]
+  },
+  {
+   "id": "us9_audit",
+   "stage": "us9",
+   "topic": "Audit re-verification (us9)",
+   "claims": [
+    {
+     "text": "JTA: Netanyahu instructed Likud and right-wing backers to vote against the regulations' extension, aiming to 'force a crisis in which he would replace Bennett'; two left-wing coalition members opposed it because they 'oppose the dual system'; most MKs back the law.",
+     "strength": "reported",
+     "sources": [
+      "us9a_jta"
+     ]
+    },
+    {
+     "text": "Reuters 2017: fewer than 6,000 of ~15,000 applications since 2003 'reportedly' approved; 2014–Sept 2016 figures (84 approved, 161 rejected, rest pending) first published by Times of Israel; Interior Ministry attributed slowdown to workload; applying 'still carries the stigma of implied acceptance of Israeli control'.",
+     "strength": "reported",
+     "sources": [
+      "us9a_reuters"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us9a_jta",
+     "url": "https://jta.org/?p=1811846",
+     "label": "JTA, Knesset fails to renew West Bank regulations, 7 June 2022"
+    },
+    {
+     "key": "us9a_reuters",
+     "url": "https://www.ynetnews.com/articles/0,7340,L-4939026,00.html",
+     "label": "Reuters via Ynet, East Jerusalem Palestinians seek Israeli citizenship, 22 March 2017"
+    }
+   ]
+  }
+ ]
+}

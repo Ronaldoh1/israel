@@ -1,0 +1,32 @@
+<h2>Method Swizzling: A Home That Ran as a State</h2>
+<p>Swizzling swaps the code behind a method while its name stays the same. Every caller still asks for the same thing and gets something different, and nothing on the surface changes.</p>
+<figure class="fig-code"><figcaption>The public word and the program behind it</figcaption><div class="cbar"><i></i><i></i><i></i><b>NationalHome.m</b></div><pre><span class="k">@implementation</span> <span class="t">NationalHome</span>
+- (<span class="k">void</span>)build {
+  <span class="c">// the published word: a &quot;home&quot;</span>
+  <span class="c">// (Basel 1897, Balfour 1917)</span>
+}
+- (<span class="k">void</span>)build_state {
+  <span class="c">// the programme of Herzl&#x27;s</span>
+  <span class="c">// The Jewish State, 1896</span>
+}
+<span class="k">@end</span>
+
+<span class="k">static</span> <span class="k">void</span> install(<span class="k">void</span>) {
+  <span class="t">Method</span> home = class_getInstanceMethod(
+    <span class="t">NationalHome</span>.<span class="k">class</span>,
+    <span class="k">@selector</span>(build));
+  <span class="t">Method</span> state = class_getInstanceMethod(
+    <span class="t">NationalHome</span>.<span class="k">class</span>,
+    <span class="k">@selector</span>(build_state));
+  method_exchangeImplementations(
+    home, state);
+}
+
+<span class="c">// 1922 White Paper: not &quot;as Jewish</span>
+<span class="c">//   as England is English&quot;</span>
+<span class="c">//   -&gt; the label holds</span>
+<span class="c">// 1942 Biltmore: &quot;a Jewish</span>
+<span class="c">//   Commonwealth&quot;</span>
+<span class="c">//   -&gt; the program shows</span>
+<span class="c">// 1948 [nationalHome build]</span>
+<span class="c">//   returns a State</span></pre><div class="plain"><h5>In plain language</h5><p>Herzl's pamphlet of 1896 was called The Jewish State and argued for one. The programme adopted at Basel a year later asked instead for "a home", and the Balfour letter of 1917 promised a "national home". In 1922 Britain's White Paper stated that Palestine would not become "as Jewish as England is English."</p><p>In May 1942 the Biltmore Program called openly for a "Jewish Commonwealth", the movement's first explicit public demand for statehood, best read as the culmination of the institution-building before it rather than its start. Six years later the "home" was a state.</p><p>The swap was not secret: Herzl's title was public from the start. What the technique names is the documented gap between the word used in public commitments and the program those commitments carried.</p></div><p class="fig-src">Sources: [cite:herzl_judenstaat_1896] [cite:zionism_founding_1897] [cite:balfour_letter] [cite:wiki_churchill_wp_1922] [cite:biltmore_wiki] [cite:biltmore_medoff]</p></figure>

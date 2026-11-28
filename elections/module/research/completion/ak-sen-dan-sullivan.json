@@ -1,0 +1,60 @@
+{
+ "id": "ak-sen-dan-sullivan",
+ "cites": {
+  "adn_1214": {
+   "t": "Alaska Sen. Dan Sullivan acknowledges President-elect Joe Biden's win — Anchorage Daily News (2020-12-14)",
+   "u": "https://www.adn.com/alaska-news/2020/12/14/alaska-sen-dan-sullivan-acknowledges-president-elect-joe-bidens-win/"
+  },
+  "apm_jan4": {
+   "t": "Murkowski says she'll affirm Biden's win; Sullivan is mum — Alaska Public Media (2021-01-04)",
+   "u": "https://alaskapublic.org/2021/01/04/murkowski-says-shell-affirm-bidens-win-sullivan-is-mum/"
+  }
+ },
+ "checklist": {
+  "fara": "done",
+  "courts": "news",
+  "ethics": "news"
+ },
+ "checks": {
+  "legal": "CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly. News searches (this pass: Senate Ethics complaint; earlier pass: lawsuits/charges) found no lawsuit, charge or Senate Ethics complaint against Sen. Dan S. Sullivan; the 2026 complaints found concern the other candidate, Dan J. Sullivan of Petersburg. Only compliance item remains the late STOCK Act reports (2018, 2022).",
+  "foreign": "Senate eFD unreachable; news coverage of his disclosures mentions no foreign assets. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate (the only near match is a 'Daniel J. Sullivan III' of SST Aerospace, Greenville SC, 2019 — a different person).",
+  "claims": "Mechanical sample: (a) every checkable claim on the campaign 'Meet Dan' page (dansullivanforalaska.com/meet-dan/): 11 rated (items on independent-voter share and his winning coalition are not checkable/opinion); (b) the first 10 items on the Issues page (first section 'Getting It Done in Washington'): intro claim (25 years/only serving senator) rated misleading, #8 ocean cleanup rated true, #5 judges unverifiable; #1 COVID, #2 ANWR/NPR-A, #3 '25% Obama cuts', #4 $300M water/sewer, #6 2A, #7 Green New Deal, #9 $50M public safety, #10 Alaska Native are opinion or were not checked. The Issues page appears to be largely 2020-era text. (c) Ad spend unknown; most-covered items: the campaign's 'pay raise' ad (FactCheck.org) and his Sept. 3, 2026 'zero bills' remarks. Also rated: his sham-candidate accusation against Dan J. Sullivan.",
+  "democracy": "Certification votes from senate.gov roll calls (records profile: Nay on the Arizona and Pennsylvania objections, 2021). Statements: ADN Dec. 14, 2020 (acknowledged Biden as president-elect); Alaska Public Media Jan. 4, 2021 reported he had not said in advance how he would vote. No 2024-result statement searched beyond this."
+ },
+ "democracy": [
+  {
+   "kind": "certified",
+   "d": "2021-01-06",
+   "t": "Voted against the objection to Arizona's electoral votes (objection failed 6–93).",
+   "c": [
+    "ksendansullivan_oti_cert",
+    "ksendansullivan_dem_rc_0107"
+   ]
+  },
+  {
+   "kind": "certified",
+   "d": "2021-01-07",
+   "t": "Voted against the objection to Pennsylvania's electoral votes (failed 7–92).",
+   "c": [
+    "ksendansullivan_sen_rc_117_2"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2021-05-28",
+   "t": "Voted against creating an independent commission to investigate the Jan. 6 Capitol attack.",
+   "c": [
+    "ksendansullivan_wiki"
+   ]
+  },
+  {
+   "kind": "statement",
+   "d": "2020-12-14",
+   "t": "After the Electoral College vote, acknowledged Joe Biden as president-elect, saying his oath is to the Constitution and the laws of the nation, though the result was not what he and many Alaska Trump voters hoped for.",
+   "c": [
+    "adn_1214"
+   ]
+  }
+ ],
+ "research_notes": "Courts/ethics remain news-level because CourtListener, Justia and the Senate Ethics site were unreachable. Senate eFD still not read directly; money_history left at 'news' (FEC pages and super PAC funder pages could not be fetched)."
+}

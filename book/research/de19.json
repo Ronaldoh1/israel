@@ -1,0 +1,367 @@
+{
+ "volume": "darkenlight",
+ "verified": "2026-10-28",
+ "entries": [
+  {
+   "id": "de19_access",
+   "stage": "de19",
+   "topic": "DOGE access to federal systems: Treasury, SSA, NLRB, IRS, six agencies; audits and whistleblowers",
+   "claims": [
+    {
+     "text": "GAO-26-108131: reviewed Treasury DOGE team access 20 Jan-11 Apr 2025; one DOGE employee had access to three BFS payment systems Jan-Feb 2025 and could view, copy and print data; was 'inadvertently granted temporary access to create, modify, and delete data' in one system; GAO found no evidence data was changed; employee sent payment information unencrypted to another agency's DOGE team without approval; BFS fully implemented 5 of 14 selected controls; did not ensure employee agreed to IT security rules before receiving laptop; DLP not configured to block unencrypted payment information; six recommendations, all open, BFS agreed with three",
+     "strength": "primary",
+     "sources": [
+      "de19_gao_treasury"
+     ]
+    },
+    {
+     "text": "GAO-26-108192 (29 Sep 2026): CFPB, Education, NOAA and SEC reported DOGE teams had access to more than 23 systems; extent 'could not be determined'; SBA and VA did not identify systems; only SEC documented background investigations; CFPB and Education gave none; agencies did not let GAO observe logs; NOAA and SEC questioned GAO's authority, VA would not address requests; 'Congress and the public lack assurance' systems and data were protected; CFPB disputed accuracy",
+     "strength": "primary",
+     "sources": [
+      "de19_gao_sixagency"
+     ]
+    },
+    {
+     "text": "GAO-26-108583: about 378,000 separations from 22 CFO Act agencies in 2025 (65% in second half), about 127,000 hires incl. temporary; net decline nearly 256,000, more than 11%, Dec 2024 to Jan 2026; from about 1% at DHS to over 45% at Education; 18 of 22 agencies fell more than 10%; SBA and USAID did not provide data",
+     "strength": "primary",
+     "sources": [
+      "de19_gao_workforce"
+     ]
+    },
+    {
+     "text": "Borges complaint (Aug 2025): DOGE staff moved NUMIDENT (SSNs, names, addresses, birthplaces, parents' names; more than 300 million Americans) in June 2025 to a cloud environment only DOGE could access 'without any independent security or oversight mechanisms'; CIO Aram Moghaddassi's 15 July memo: 'the business need is higher than the security risk'; SSA security assessment warned of 'catastrophic impact' if breached; SSA: data 'walled off from the internet', 'not aware of any compromise'",
+     "strength": "reported",
+     "sources": [
+      "de19_nbc_borges"
+     ]
+    },
+    {
+     "text": "DOJ filing disclosed 20 Jan 2026: DOGE members at SSA used Cloudflare to share SSA data; 'Cloudflare is not approved for storing SSA data'; SSA 'has not been able to determine exactly what data were shared'; unnamed advocacy group contacted two SSA DOGE members in March 2025 aiming 'to find evidence of voter fraud and to overturn election results in certain States'; one signed an agreement possibly involving SSA data to match voter rolls; filing does not say whether data was shared; SSA referred two employees to OSC for possible Hatch Act violations late Dec 2025; filing corrects earlier SSA testimony",
+     "strength": "primary",
+     "sources": [
+      "de19_abc_hatch"
+     ]
+    },
+    {
+     "text": "SSA OIG letter 6 Mar 2026: reviewing anonymous complaint on 'potential misuse of SSA data by a former DOGE employee'; reported allegations (Washington Post) of NUMIDENT and Death Master File copies, thumb drive; SSA: allegations 'strongly refuted by all named parties'; no findings",
+     "strength": "reported",
+     "sources": [
+      "de19_npr_ssaoig"
+     ]
+    },
+    {
+     "text": "Berulis (NLRB security architect) letter to Senate Intelligence Committee 14 Apr 2025: DOGE 'tenant admin' accounts from 3 Mar; about 10 GB moved from NxGen early 4 Mar; logs missing and network watcher off; 20+ login attempts from Russian IP with valid credentials blocked; threatening note 7 Apr; NLRB: DOGE 'neither requested nor received access', 'no breach of agency systems occurred'",
+     "strength": "disputed",
+     "sources": [
+      "de19_krebs_nlrb"
+     ]
+    },
+    {
+     "text": "GAO-26-108774 (28 Apr 2026): two GSA detailees as NLRB DOGE team 16 Apr-25 Jul 2025 requested access to seven HR systems; two accounts created 24 Apr never activated, later disabled; 'no evidence that DOGE accessed the systems during the agreement period'; GAO did not review before 16 Apr to avoid overlapping NLRB IG investigation of the March 2025 allegation, which remains open",
+     "strength": "primary",
+     "sources": [
+      "de19_gao_nlrb"
+     ]
+    },
+    {
+     "text": "Wired via TechCrunch 5 Apr 2025: DOGE staffers Gavin Kliger and Sam Corcos planned IRS hackathon for 'one new API to rule them all' over taxpayer names, addresses, SSNs, returns, employment data; Palantir 'consistently' mentioned as candidate vendor; IRS worker: 'an open door controlled by Musk'",
+     "strength": "reported",
+     "sources": [
+      "de19_tc_irsapi"
+     ]
+    },
+    {
+     "text": "Treasury OIG-26-032 (8 June 2026 per Warren-Wyden letter): BFS sensitive payment systems controls 'generally adequate' but weaknesses; nine significant recommendations incl. Rules of Behavior before access and controls on unsecured external transmission of PII",
+     "strength": "primary",
+     "sources": [
+      "de19_oig_treasury",
+      "de19_ww_letter"
+     ]
+    },
+    {
+     "text": "Warren-Wyden letter 21 Jul 2026: per GAO, the DOGE employee sent unencrypted payment information about foreign aid to GSA, potentially exposing PII of over 350 individuals; a second DOGE employee had 'over the shoulder access' and BFS could not list what he viewed; OIG: '[n]egligence of access controls could lead to data breaches and system outages'",
+     "strength": "primary",
+     "sources": [
+      "de19_ww_letter"
+     ]
+    },
+    {
+     "text": "EO 14243 (20 Mar 2025): agency heads to ensure designated federal officials 'have full and prompt access to all unclassified agency records, data, software systems, and information technology systems'; does not mention DOGE",
+     "strength": "primary",
+     "sources": [
+      "de19_eo14243"
+     ]
+    },
+    {
+     "text": "Palantir: 'not a vendor on any master database project to unify databases across federal agencies'; 'has no contracts with DOGE'; acts as data processor",
+     "strength": "primary",
+     "sources": [
+      "de19_palantir_record"
+     ]
+    },
+    {
+     "text": "EO 14158 sec. 4(b): agency heads to 'ensure USDS has full and prompt access to all unclassified agency records, software systems, and IT systems'; sec. 3(b) temporary organization 'shall terminate on July 4, 2026'; sec. 3(c) DOGE Team of at least four employees in each agency; purpose 'modernizing Federal technology and software to maximize governmental efficiency and productivity'",
+     "strength": "primary",
+     "sources": [
+      "de19_eo14158"
+     ]
+    },
+    {
+     "text": "2 Feb 2025: two USAID security chiefs (John Vorhees, Brian McGill) placed on leave after refusing DOGE access to classified material in restricted areas; DOGE reportedly lacked sufficient clearance; Musk on X: 'USAID is a criminal organization. Time for it to die.'",
+     "strength": "reported",
+     "sources": [
+      "de19_pbs_usaid"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de19_gao_treasury",
+     "url": "https://www.gao.gov/products/GAO-26-108131",
+     "label": "GAO, GAO-26-108131, Treasury DOGE team access to Bureau of the Fiscal Service payment systems, April 2026"
+    },
+    {
+     "key": "de19_gao_sixagency",
+     "url": "https://www.gao.gov/assets/gao-26-108192.pdf",
+     "label": "GAO, GAO-26-108192, DOGE team access to systems at CFPB, Education, NOAA, SEC, SBA and VA, 29 September 2026"
+    },
+    {
+     "key": "de19_gao_workforce",
+     "url": "https://www.gao.gov/products/gao-26-108583",
+     "label": "GAO, GAO-26-108583, Federal workforce changes, 17 June 2026"
+    },
+    {
+     "key": "de19_nbc_borges",
+     "url": "https://www.nbcnews.com/news/rcna227259",
+     "label": "NBC News, SSA chief data officer Charles Borges whistleblower complaint on NUMIDENT copy, 26 August 2025"
+    },
+    {
+     "key": "de19_abc_hatch",
+     "url": "https://abc7news.com/post/2-doge-staffers-social-security-agency-may-have-violated-hatch-act-doj-says/18439826/",
+     "label": "ABC News, '2 DOGE staffers at Social Security agency may have violated Hatch Act, DOJ says', 20 January 2026"
+    },
+    {
+     "key": "de19_npr_ssaoig",
+     "url": "https://www.opb.org/article/2026/03/12/new-investigations-look-at-doge-and-social-security-data/",
+     "label": "NPR via OPB, 'New investigations look at DOGE and Social Security data', 12 March 2026"
+    },
+    {
+     "key": "de19_krebs_nlrb",
+     "url": "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
+     "label": "Brian Krebs, KrebsOnSecurity, 'Whistleblower: DOGE Siphoned NLRB Case Data', April 2025"
+    },
+    {
+     "key": "de19_gao_nlrb",
+     "url": "https://www.gao.gov/products/gao-26-108774",
+     "label": "GAO, GAO-26-108774, DOGE team access to NLRB systems, 28 April 2026"
+    },
+    {
+     "key": "de19_tc_irsapi",
+     "url": "https://techcrunch.com/2025/04/05/doge-reportedly-planning-a-hackathon-to-build-mega-api-for-irs-data/",
+     "label": "TechCrunch (citing Wired), 'DOGE reportedly planning a hackathon to build mega API for IRS data', 5 April 2025"
+    },
+    {
+     "key": "de19_oig_treasury",
+     "url": "https://www.oversight.gov/reports/audit/fiscal-services-sensitive-payment-systems-controls-are-generally-adequate-weaknesses",
+     "label": "Treasury OIG, OIG-26-032, 'Fiscal Service's Sensitive Payment Systems' Controls are Generally Adequate but Weaknesses and Deficiencies Exist' (oversight.gov summary)"
+    },
+    {
+     "key": "de19_ww_letter",
+     "url": "https://www.banking.senate.gov/imo/media/doc/20260720_letter_to_treasury_re_gao_doge_access_reportpdf.pdf",
+     "label": "Sens. Elizabeth Warren and Ron Wyden, letter to Treasury Secretary Bessent on GAO and OIG DOGE access findings, 21 July 2026"
+    },
+    {
+     "key": "de19_eo14243",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-03-25/html/2025-05214.htm",
+     "label": "Executive Order 14243, 'Stopping Waste, Fraud, and Abuse by Eliminating Information Silos', 20 March 2025, 90 FR 13681"
+    },
+    {
+     "key": "de19_palantir_record",
+     "url": "https://blog.palantir.com/correcting-the-record-responses-to-the-may-30-2025-new-york-times-article-on-palantir-55b60ae107da",
+     "label": "Palantir, 'Correcting the Record: Responses to the May 30, 2025 New York Times Article on Palantir' (company blog, June 2025)"
+    },
+    {
+     "key": "de19_eo14158",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-29/html/2025-02005.htm",
+     "label": "Executive Order 14158, 'Establishing and Implementing the President's \"Department of Government Efficiency\"', 20 January 2025, 90 FR 8441"
+    },
+    {
+     "key": "de19_pbs_usaid",
+     "url": "https://www.pbs.org/newshour/politics/usaid-security-chiefs-put-on-leave-after-trying-to-stop-musks-team-from-accessing-classified-info-officials-say",
+     "label": "AP via PBS NewsHour, USAID security chiefs put on leave after trying to stop Musk's team from accessing classified information, 2 February 2025"
+    }
+   ]
+  },
+  {
+   "id": "de19_courts",
+   "stage": "de19",
+   "topic": "DOGE litigation: Privacy Act suits, AFSCME v. SSA, CREW FOIA case, Does v. Musk, AFGE v. OPM, New York v. Trump",
+   "claims": [
+    {
+     "text": "CRS LSB11370 (17 Sep 2025): 10 pending Privacy Act suits over DOGE access (Treasury, Labor, CFPB, Education, OPM, IRS, SSA); PIs denied for no irreparable harm in Alliance for Retired Americans v. Bessent, AFL-CIO v. Department of Labor, EPIC v. OPM; PI granted in AFGE v. OPM (S.D.N.Y.); AFT v. Bessent PI vacated by 4th Cir 12 Aug 2025; NY v. Trump modified PI on appeal; SCOTUS stayed AFSCME v. SSA PI 6 Jun 2025",
+     "strength": "primary",
+     "sources": [
+      "de19_crs_lsb11370"
+     ]
+    },
+    {
+     "text": "AFSCME v. SSA: filed 21 Feb 2025 (D. Md.); Hollander TRO 20 Mar 2025; PI 17 Apr 2025 barring access to PII systems and ordering DOGE to delete non-anonymized PII; 4th Cir en banc denied stay 30 Apr; SCOTUS granted stay 6 Jun 2025, Kagan noting disagreement, Jackson dissent joined by Sotomayor; Notice of Corrections 16 Jan 2026 (Cloudflare, advocacy-group agreement, material misstatements); 4th Cir en banc 10 Apr 2026 vacated PI; 26 Jun 2026 district court allowed discovery into DOGE data handling citing government misrepresentations; ongoing",
+     "strength": "primary",
+     "sources": [
+      "de19_ch_afscme"
+     ]
+    },
+    {
+     "text": "4th Cir en banc 10 Apr 2026 (Heytens): Part III (nine judges) plaintiffs likely have standing by analogy to intrusion upon seclusion; Part IV (joined only by Diaz and Harris) no irreparable harm shown on district record; refers to 'the even more recent—and even more alarming—allegations' not in the appellate record; Wilkinson n.2: 'The whistleblower report has not yet been substantiated'; King dissent joined by five: facts now known are much worse",
+     "strength": "primary",
+     "sources": [
+      "de19_ca4_afscme"
+     ]
+    },
+    {
+     "text": "SCOTUS 6 Jun 2025 In re U.S. DOGE Service: vacated D.C. Circuit denial of mandamus; stayed April 15 and May 20 discovery orders; parts requiring disclosure of content of USDS recommendations 'are not appropriately tailored'; 'separation of powers concerns counsel judicial deference and restraint'; did not decide whether USDS is a FOIA agency; Sotomayor, Kagan, Jackson would deny",
+     "strength": "primary",
+     "sources": [
+      "de19_scotus_crew"
+     ]
+    },
+    {
+     "text": "NCC 15 Oct 2026: Supreme Court will hear CREW case (No. 25-1103) on discovery into whether USDS 'wields independent authority or is merely a board that exists to advise the president'; Judge Cooper found USDS 'likely an agency subject to FOIA'; argument early 2027",
+     "strength": "reported",
+     "sources": [
+      "de19_ncc_cert"
+     ]
+    },
+    {
+     "text": "Does 1-26 v. Musk: Chuang PI 18 Mar 2025; 4th Cir stayed 28 Mar 2025; class certified 18 Aug 2025; 4th Cir mandamus 4 Mar 2026 blocked depositions of senior officials incl. Musk; in discovery as of Sept 2026",
+     "strength": "primary",
+     "sources": [
+      "de19_ch_does"
+     ]
+    },
+    {
+     "text": "Chuang 18 Mar 2025: if Musk 'actually exercising significant authority', Appointments Clause cannot be a 'technical formality'; decision 'usurped the authority of the public's elected representatives in Congress'",
+     "strength": "reported",
+     "sources": [
+      "de19_upi_chuang"
+     ]
+    },
+    {
+     "text": "AFGE v. OPM (S.D.N.Y., Cote J.) 20 Oct 2026: OPM violated Privacy Act by giving DOGE access; plaintiffs win APA claims; case not moot but relief uncertain; DOGE dissolved, no DOGE access to sensitive OPM data since Sept 2025; government 'barely defend[s] its legality'",
+     "strength": "reported",
+     "sources": [
+      "de19_bgov_afge"
+     ]
+    },
+    {
+     "text": "New York v. Trump (19 states, Treasury): PI Feb 2025 limiting access without vetting; modified 27 May 2025; Vargas dismissed access claims as moot (DOGE team gone) and payment-review claims (no specific payment frozen) on 23 Sep 2026",
+     "strength": "reported",
+     "sources": [
+      "de19_or_nyvtrump",
+      "de19_fox_vargas"
+     ]
+    },
+    {
+     "text": "NewsNation 20 Mar 2025: nearly a fifth of 132 cases against the administration related to Musk and DOGE",
+     "strength": "reported",
+     "sources": [
+      "de19_nn_count"
+     ]
+    },
+    {
+     "text": "Reuters 23 May 2025: three sources said DOGE expanding use of customized Grok to analyse federal data; two said DOGE staff told DHS officials to use Grok though not approved there; Reuters could not determine what data entered; DHS denied pushing tools; Painter: appearance of pressure to enrich Musk and xAI",
+     "strength": "reported",
+     "sources": [
+      "de19_reuters_grok"
+     ]
+    },
+    {
+     "text": "DHS 22 Apr 2025: DHS, USCIS and DOGE announced 'comprehensive optimization' of SAVE: free searches, streamlined bulk checks, integration of criminal records, immigration timelines, addresses",
+     "strength": "primary",
+     "sources": [
+      "de19_dhs_save"
+     ]
+    },
+    {
+     "text": "SAVE linked for first time to SSA records; DHS encouraged states to upload entire voter rolls; government says more than 65 million voters across 26 states verified since May 2025, 28,635 flagged; in Texas 18M run, 2,724 flagged, about 20% later found citizens; Judge Sooknanan (June 2026) found violations of Social Security Act, Privacy Act and APA ('knowingly trampled on the privacy rights'); SCOTUS 25 Sep 2026 stayed her order, relying on 1996 IIRIRA provision; Jackson, Sotomayor, Kagan dissented",
+     "strength": "reported",
+     "sources": [
+      "de19_npr_save"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "de19_crs_lsb11370",
+     "url": "https://www.everycrsreport.com/reports/LSB11370.html",
+     "label": "Congressional Research Service, Legal Sidebar LSB11370, Privacy Act lawsuits and DOGE, 17 September 2025"
+    },
+    {
+     "key": "de19_ch_afscme",
+     "url": "https://clearinghouse.net/case/46174/",
+     "label": "Civil Rights Litigation Clearinghouse, AFSCME v. Social Security Administration, No. 1:25-cv-00596 (D. Md.), case summary (checked 28 October 2026)"
+    },
+    {
+     "key": "de19_ca4_afscme",
+     "url": "https://www.ca4.uscourts.gov/opinions/251411.P.pdf",
+     "label": "U.S. Court of Appeals for the Fourth Circuit (en banc), AFSCME v. SSA, No. 25-1411, opinion, 10 April 2026"
+    },
+    {
+     "key": "de19_scotus_crew",
+     "url": "https://www.citizensforethics.org/wp-content/uploads/2025/07/24A1122-Order.pdf",
+     "label": "Supreme Court of the United States, In re U.S. DOGE Service, No. 24A1122, order, 6 June 2025"
+    },
+    {
+     "key": "de19_ncc_cert",
+     "url": "https://constitutioncenter.org/blog/supreme-court-takes-open-records-case-involving-doge",
+     "label": "National Constitution Center, 'Supreme Court takes open-records case involving DOGE', 15 October 2026"
+    },
+    {
+     "key": "de19_ch_does",
+     "url": "https://clearinghouse.net/case/46119",
+     "label": "Civil Rights Litigation Clearinghouse, Does 1-26 v. Musk, No. 8:25-cv-00462 (D. Md.), case summary (docket updated 26 October 2026)"
+    },
+    {
+     "key": "de19_upi_chuang",
+     "url": "https://www.upi.com/Top_News/US/2025/03/18/judge-ruling-Elon-Musk-doge-usaid-unconstitutional/2801742330598/",
+     "label": "UPI, Judge Chuang rules Musk's DOGE role at USAID likely unconstitutional, 18 March 2025"
+    },
+    {
+     "key": "de19_bgov_afge",
+     "url": "https://news.bgov.com/immigration/doge-unlawfully-accessed-government-personnel-data-judge-rules",
+     "label": "Bloomberg Government, 'DOGE unlawfully accessed government personnel data, judge rules', 20 October 2026"
+    },
+    {
+     "key": "de19_or_nyvtrump",
+     "url": "https://www.doj.state.or.us/oregon-department-of-justice/federal-oversight/federal-litigation-tracker/doge-access-to-treasury-payment-systems-new-york-v-trump-s-d-n-y-125-cv-01144/",
+     "label": "Oregon Department of Justice, federal litigation tracker, New York v. Trump, S.D.N.Y. 1:25-cv-01144"
+    },
+    {
+     "key": "de19_fox_vargas",
+     "url": "https://www.foxnews.com/politics/biden-appointed-judge-hands-letitia-james-setback-latest-trump-legal-clash.amp",
+     "label": "Fox News, 'Biden-appointed judge hands Letitia James setback in latest Trump legal clash', 24 September 2026"
+    },
+    {
+     "key": "de19_nn_count",
+     "url": "https://digital-release.newsnationnow.com/politics/doge-legal-roadblocks",
+     "label": "NewsNation, 'What roadblocks is DOGE facing in over 130 legal cases?', 20 March 2025"
+    },
+    {
+     "key": "de19_reuters_grok",
+     "url": "https://www.cp24.com/news/money/2025/05/23/musks-doge-expanding-his-grok-ai-in-us-government-raising-conflict-concerns-reuters-exclusive/",
+     "label": "Reuters via CP24, 'Musk's DOGE expanding his Grok AI in U.S. government, raising conflict concerns', 23 May 2025"
+    },
+    {
+     "key": "de19_dhs_save",
+     "url": "https://www.globalsecurity.org/security/library/news/2025/04/sec-250422-dhs01.htm",
+     "label": "DHS press release (via GlobalSecurity.org), 'DHS, USCIS, DOGE Overhaul Systematic Alien Verification for Entitlements Database', 22 April 2025"
+    },
+    {
+     "key": "de19_npr_save",
+     "url": "https://www.kaxe.org/news/2026-09-25/the-supreme-court-revives-a-controversial-data-system-for-citizenship-checks",
+     "label": "NPR via KAXE, 'The Supreme Court revives a controversial data system for citizenship checks', 25 September 2026"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "state": "WY",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_wy_gov": {
+   "t": "2026 Wyoming gubernatorial election — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_Wyoming_gubernatorial_election"
+  },
+  "kota_wy_primary": {
+   "t": "Barlow wins GOP nomination for Wyoming governor, defeating Trump-backed rival — KOTA",
+   "u": "https://www.kotatv.com/2026/08/19/barlow-wins-gop-nomination-wyoming-governor-defeating-trump-backed-rival/"
+  }
+ },
+ "races": [
+  {
+   "race": "WY-GOV",
+   "incumbent": {
+    "name": "Mark Gordon",
+    "party": "R",
+    "status": "Term-limited"
+   },
+   "nominees": [
+    {
+     "name": "Eric Barlow",
+     "party": "R",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Kenneth Casner",
+     "party": "D",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    }
+   ],
+   "status": "set",
+   "note": "Open seat. Aug 18 primary: R Barlow 45.1% over Megan Degenfelder 29.7%, Brent Bien 23.6%; D Casner unopposed. Wikipedia lists no independent/third-party nominees. No governor rows in records list.",
+   "c": [
+    "wiki_wy_gov",
+    "kota_wy_primary"
+   ]
+  }
+ ]
+}

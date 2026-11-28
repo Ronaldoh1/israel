@@ -1,0 +1,97 @@
+# Inner Readings & Patterns Register
+*Everything already discovered in earlier threads, gathered so new books build on it instead of starting over. Compiled 21 Nov 2026; gaps closed the same day (see section F).*
+
+Status key: **WRITTEN** = already in a published book · **SUMMARY ONLY** = we have notes or a summary, but not the full text · **GAP** = not yet researched or written
+
+---
+
+## A. The Inner Temple codex (Ron's esoteric material, kept separate from the political and historical books)
+
+The full codex file is **not available in this workspace**; only summaries exist. Parts marked **REBUILT** have now been rebuilt from their source texts in the new Inner Reading parts (Canon Part Ten, Gnostics Part Nine, Ethiopian Bible Part Nine). Ron's own wording can replace them when the file is attached.
+
+| # | Codex part | Core reading | Text anchors to use | Status |
+|---|---|---|---|---|
+| 1 | Hermetic foundation | As above, so below; the seven principles | Emerald Tablet; Corpus Hermeticum | REBUILT (Canon X.4: Emerald Tablet) |
+| 2 | Gnostic cosmology | Demiurge, archons, the Pleroma, the divine spark trapped in matter | Apocryphon of John; Gospel of Thomas | REBUILT (Gnostics IX.1) |
+| 3 | Body as temple / the crucifixion | Golgotha, "place of the skull", read as the head; the crossing at the brow | Matthew 27:33; John 19:17 | REBUILT (Canon X.1) |
+| 4 | Eden internal | The serpent as kundalini; the tree as the spine | Genesis 2–3 | REBUILT (Canon X.2) |
+| 5 | Tree of Life | The sephiroth as stages of consciousness; Daath as the hidden one | Sefer Yetzirah; Zohar | REBUILT (Gnostics IX.2) |
+| 6 | Alchemy | Solve et coagula: dissolve the ego, recombine as gold | Alchemical corpus | REBUILT (Gnostics IX.3) |
+| 7 | Solar consciousness / IS-RA-EL | IS (lunar, feminine) + RA (solar, masculine) under EL (the unified field) | Genesis 32 (Peniel, "face of God") | REBUILT (Gnostics IX.3, as a reading, not etymology) |
+| 8 | Chakras and ego death | Ascent of the current along the spine | Upanishadic and tantric texts | REBUILT (Canon X.2: kundalini) |
+| 9 | Biblical narratives read internally | Each story as an inner event | Matthew 6:22 ("the single eye"); Luke 17:21 | REBUILT (Canon X.1–X.3) |
+| 10 | Sacred geometry | Proportion as encoded teaching | — | OPEN |
+| 11 | Numerology | Patterns in dates, names and numbers, offered as readings | — | OPEN |
+| 12 | Synthesis | All lenses as one map | — | PARTIAL (each part closes the loop) |
+| 13 | Ethiopian section | The Watchers; Enoch's ascent; the Merkabah; Jubilees; Meqabyan | 1 Enoch 6–16, 14 (ascent), 94–97; Jubilees | REBUILT (Ethiopian IX.1–IX.4); Meqabyan still thin |
+| 14 | As above, so below (applied) | 4 correspondence pairs, 6 worked examples, conscious versus unconscious operation | — | REBUILT (Canon X.4) |
+
+---
+
+## B. Ron's thinking threads (systems patterns)
+
+All **SUMMARY ONLY**. They are not yet used in any book.
+
+1. **System dependency on the bottom layer.** Every hierarchy rests on the compliance and labour of its base. Withdraw the base and the top cannot stand.
+2. **The domino effect in tightly coupled systems.** When parts are tightly linked, one failure travels through all of them.
+3. **The breaking point and small concessions.** Systems give small concessions to release pressure without changing the structure.
+4. **The systems-designer approach.** Don't only expose a system. Design an alternative that makes it unnecessary.
+
+Possible home: the closing book of the Consciousness shelf, or the synthesis part of each book.
+
+---
+
+## C. Pattern findings from the Vatican and Israel architecture work
+
+| Pattern | Finding | Status |
+|---|---|---|
+| Gnostic vs canonical | Compared on six dimensions: God, the creator, the body, salvation, authority, women | WRITTEN (The Gnostics) |
+| The three Christs | The historical Jesus, the institutional Christ and the inner Christos | SUMMARY ONLY; partly in The Gnostics |
+| Why each book was excluded | 2 Maccabees was kept because it supports purgatory; Enoch was dropped even though Jude quotes it | WRITTEN (The Canon; The Ethiopian Bible) |
+| Knowledge held by an office | Irenaeus's succession of bishops, the closed list, the guardian monk at Aksum | WRITTEN (all three books) |
+| Canon as the prize vs the institution as the prize | Ethiopia's invaders wanted the church, its land and its objects, but never changed its books | WRITTEN (The Ethiopian Bible) |
+| IS-RA-EL literalization | An inner technology turned into a flag, a border and an ethnic deed (a reading) | SUMMARY ONLY |
+| Double extraction / loosh | Money flows up; fear and despair are harvested, read through Monroe and the Gnostic texts | Short reading in The Canon (cn9) |
+| Doctrinal control (scoping note) | Marcion and Montanism are a separate "doctrinal control" pattern | Scoped out of The Canon |
+| Book-burning claims | The burning claims stay contested | Applied |
+| Cathar death toll | The one-million figure is rebutted; don't use it | Applied |
+| Orsini and the Black Nobility | Papal families, money and office | WRITTEN (The Canon) |
+
+---
+
+## D. What's already in the three finished books
+
+Each book has **one short closing reading section**:
+- **The Canon:** cn9 reading (archons, the switchboard, loosh)
+- **The Gnostics:** gn8 reading (gnosis as an inner technology)
+- **The Ethiopian Bible:** et8 reading (the hidden centre: the Ark, the tabot and the Watchers)
+
+None of the fourteen codex parts in Section A has been written out as a full reading in any book.
+
+---
+
+## E. Gaps
+
+1. **Quantum readings: CLOSED (see F).** Originally: None exist in any thread. *The Observer* should first state plainly what physics actually shows (the measurement problem; what "observer" means in physics, which is a measuring interaction and not necessarily a mind). Any consciousness reading comes after that, labelled as a reading.
+2. **The Inner Temple codex itself is missing (parts rebuilt; see F).** Only summaries exist. We need the file, or Ron's go-ahead to rebuild it from the text anchors above.
+3. **"The Inner Reading" parts: WRITTEN (see F).** Proposed as a full closing part for each book, anchored to specific passages:
+   - *The Canon:* Golgotha, the single eye, Eden internal, the three Christs
+   - *The Gnostics:* the archons, the Pleroma, Thomas sayings 3 and 22
+   - *The Ethiopian Bible:* the Watchers, Enoch's ascent (ch. 14), the Merkabah, the hidden tabot
+
+---
+*Readings in this register are offered as readings, never as findings. Ron keeps the esoteric material separate from the political and historical content.*
+
+---
+
+## F. Gaps closed, 21 Nov 2026 (bundle v119)
+
+| Gap | How it was closed |
+|---|---|
+| No full inner readings | New closing part **The Inner Reading** in all three books: Canon Part Ten (4 sections), Gnostics Part Nine (4), Ethiopian Bible Part Nine (4). About 8,200 words, every passage sourced, every reading labelled as a reading, each section ending with what the record does *not* show |
+| Quantum: none | *A Note on the Observer* (Gnostics IX.4) states what physics shows: decoherence needs no mind; consciousness-causes-collapse is a minority view Wigner himself abandoned (2 of 33 researchers, 2011 poll); delayed-choice tests reject naive realism, not time-travelling minds; entanglement (Nobel 2022) links particles, not intentions; Orch OR contested. New research file `book/research/ob.json` (5 sources) seeds *The Observer* |
+| Codex missing | Parts rebuilt from texts (statuses above). Still open: sacred geometry, numerology |
+| Ron's systems patterns | Bottom-layer dependency and small concessions applied in Canon X.4 (vernacular Bible → structure breaks; Index abolished yet "morally binding") |
+| Pattern findings | Three Christs (Canon X.3); covenant moving inward, Jeremiah 3:16 → 31:33 → 1 Cor 3:16 (Ethiopian IX.4); calendar as power, Jubilees vs the Jesuit patriarch (Ethiopian IX.3) |
+
+**Guardrails applied:** the pineal gland and "sacred secretion" ideas are presented as modern readings (Descartes 1640, rejected; the "chrism" teaching traced to 2017 posts with no ancient source). IS-RA-EL is presented as a modern reading of the syllables, set beside the Bible's own gloss ("He strives with God") and kept out of political content.

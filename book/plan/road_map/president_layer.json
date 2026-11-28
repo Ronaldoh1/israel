@@ -1,0 +1,65 @@
+{
+ "_note": "Presidents layer (Nov 2026). Built by president_layer.py; do not edit by hand.",
+ "node_notes": {
+  "fdr_health": "Roosevelt's heart failure, diagnosed in March 1944 and kept secret; he died on 12 April 1945. The closest earlier case is Woodrow Wilson's hidden stroke of 1919.",
+  "wilson_stroke": "Woodrow Wilson's stroke (2 Oct 1919), concealed from the Cabinet, Congress and the public; the comparable case to Roosevelt's hidden illness."
+ },
+ "edges": [
+  {
+   "f": "fdr",
+   "t": "fdr_health",
+   "type": "association",
+   "status": "verified",
+   "src": "p_navy; p_hist_fdr",
+   "label": "28 Mar 1944: Navy cardiologist Howard Bruenn found hypertension and \"acute congestive heart failure\"; his condition was kept \"a guarded secret\". Blood pressure up to 240/130 in March 1945. Died 12 Apr 1945 of a cerebral hemorrhage, 82 days into his fourth term."
+  },
+  {
+   "f": "fdr_health",
+   "t": "conv1944",
+   "type": "influence",
+   "status": "reported",
+   "src": "p_hist_fdr",
+   "label": "\"Concerns about Roosevelt's health among other Democratic leaders turned the question of his running mate in 1944 into a matter of much debate.\" A memo by Dr. Frank Lahey (10 July 1944), unpublished for six decades, predicted he would not finish another term."
+  },
+  {
+   "f": "wallace",
+   "t": "conv1944",
+   "type": "association",
+   "status": "verified",
+   "src": "p_wp_1944",
+   "label": "Roosevelt's preferred running mate and popular with rank-and-file Democrats; first ballot Wallace 429.5, Truman 319.5. Party leaders thought him too far left and too close to labor."
+  },
+  {
+   "f": "wallace",
+   "t": "bengurion",
+   "type": "meeting",
+   "status": "verified",
+   "src": "p_aish_wallace",
+   "label": "Oct 1947: on a trip to Palestine Wallace met Ben-Gurion and Begin and predicted the Zionists would make the Negev \"a veritable garden\"."
+  },
+  {
+   "f": "wallace",
+   "t": "truman",
+   "type": "pressure",
+   "status": "verified",
+   "src": "p_wp_wallace; p_aish_wallace",
+   "label": "1948: \"a supporter of Zionism\", Wallace promised to end the arms embargo on Israel and accused Truman of \"playing politics with the lives of the people of Israel\"."
+  },
+  {
+   "f": "feinberg",
+   "t": "truman",
+   "type": "funding",
+   "status": "verified",
+   "src": "p_truman_feinberg",
+   "label": "Sept 1948, in Feinberg's own account: \"I will pledge on behalf of Ed Kaufmann and myself that within two weeks we'll have $100,000 towards this trip\"; donors understood that \"without Truman, Israel would have had very difficult days\". He also said the trip \"would have been made one way or another\"."
+  },
+  {
+   "f": "wilson",
+   "t": "wilson_stroke",
+   "type": "association",
+   "status": "verified",
+   "src": "p_hist_wilson",
+   "label": "2 Oct 1919: a massive stroke left his left side paralyzed; the White House never acknowledged it, and it was hidden from the Cabinet, Congress and the public. Edith Wilson controlled access to him; he never fully resumed his duties and left office in 1921."
+  }
+ ]
+}

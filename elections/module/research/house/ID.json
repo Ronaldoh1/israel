@@ -1,0 +1,130 @@
+{
+ "state": "ID",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_id": {
+   "t": "2026 United States House of Representatives elections in Idaho — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Idaho"
+  }
+ },
+ "races": [
+  {
+   "race": "ID-01",
+   "incumbent": {
+    "name": "Russ Fulcher",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Russ Fulcher",
+     "party": "R",
+     "incumbent": true,
+     "rec": "id-01-russell-fulcher",
+     "fec": [
+      "H8ID01124"
+     ]
+    },
+    {
+     "name": "Kaylee Peterson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "id-01-kaylee-peterson",
+     "fec": [
+      "H2ID01192"
+     ]
+    },
+    {
+     "name": "Brendan Gomez",
+     "party": "I",
+     "incumbent": false,
+     "rec": "id-01-brendan-gomez",
+     "fec": [
+      "H4ID01149"
+     ]
+    },
+    {
+     "name": "Sarah Zabel Peterson",
+     "party": "I",
+     "incumbent": false,
+     "rec": "id-01-sarah-zabel",
+     "fec": [
+      "H6ID01318"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "May 19 primaries (Fulcher 78.2%). Gomez is Constitution Party. Wikipedia spells the independent both 'Sarah Zabel Peterson' and 'Sarah Zabel' (FEC: Sarah Zabel).",
+   "c": [
+    "wiki_id"
+   ]
+  },
+  {
+   "race": "ID-02",
+   "incumbent": {
+    "name": "Mike Simpson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mike Simpson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "id-02-michael-simpson",
+     "fec": [
+      "H8ID02064"
+     ]
+    },
+    {
+     "name": "Elinor Gilbreath",
+     "party": "D",
+     "incumbent": false,
+     "rec": "id-02-elinor-gilbreath",
+     "fec": [
+      "H6ID02274"
+     ]
+    },
+    {
+     "name": "Will Johanson",
+     "party": "L",
+     "incumbent": false,
+     "rec": "id-02-will-johanson",
+     "fec": [
+      "H6ID02290"
+     ]
+    },
+    {
+     "name": "Carta Sierra Peterson",
+     "party": "I",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Emre Houser",
+     "party": "I",
+     "incumbent": false,
+     "rec": "id-02-emre-houser",
+     "fec": [
+      "H6ID02282"
+     ]
+    },
+    {
+     "name": "Tripp Hutchinson",
+     "party": "I",
+     "incumbent": false,
+     "rec": "id-02-tripp-hutchinson",
+     "fec": [
+      "H6ID02241"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Simpson won R primary with 63.3%. Carta Sierra Peterson is Constitution Party (Wikipedia also writes 'Carta Sierra'); no FEC row.",
+   "c": [
+    "wiki_id"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,596 @@
+{
+ "state": "NC",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_nc": {
+   "t": "2026 United States House of Representatives elections in North Carolina — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_North_Carolina"
+  },
+  "gp_nc": {
+   "t": "The Green Papers: North Carolina 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/NC"
+  },
+  "ncnl_nc04": {
+   "t": "Allam concedes tight NC-04 Democratic primary to Foushee — NC Newsline (2026-03-04)",
+   "u": "https://ncnewsline.com/2026/03/04/allam-concedes-tight-nc-04-democratic-primary-to-foushee/"
+  },
+  "yahoo_nc05": {
+   "t": "Foxx, Hubbard set for rematch in North Carolina's 5th Congressional District — Yahoo News",
+   "u": "https://www.yahoo.com/news/foxx-hubbard-set-rematch-north-163046145.html"
+  }
+ },
+ "races": [
+  {
+   "race": "NC-01",
+   "incumbent": {
+    "name": "Don Davis",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Don Davis",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nc-01-don-davis",
+     "fec": [
+      "H0NC11175",
+      "H2NC02287",
+      "H4NC01053",
+      "H6NC11222"
+     ]
+    },
+    {
+     "name": "Laurie Buckhout",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nc-01-laurie-buckhout",
+     "fec": [
+      "H4NC01137"
+     ]
+    },
+    {
+     "name": "Tom Bailey",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-01-tom-bailey",
+     "fec": [
+      "H8NC13075",
+      "S4NC00113"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Buckhout won the March 3 GOP primary with 39.5% to Asa Buck's 34.5% (above the 30% runoff threshold).",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-02",
+   "incumbent": {
+    "name": "Deborah Ross",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Deborah Ross",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nc-02-deborah-ross",
+     "fec": [
+      "H0NC02125",
+      "S6NC00266"
+     ]
+    },
+    {
+     "name": "Eugene Douglass",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nc-02-eugene-douglass",
+     "fec": [
+      "H4NC02135"
+     ]
+    },
+    {
+     "name": "Matthew Laszacs",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-02-matthew-lasacs",
+     "fec": [
+      "H6NC02205"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Brian McGinnis (Green) is a write-in candidate, not a ballot nominee. FEC file spells Laszacs as 'Lasacs'.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-03",
+   "incumbent": {
+    "name": "Greg Murphy",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Greg Murphy",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-03-gregory-murphy",
+     "fec": [
+      "H0NC03172"
+     ]
+    },
+    {
+     "name": "Raymond Smith Jr.",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-03-raymond-smith",
+     "fec": [
+      "H6NC03229",
+      "H6NC11263"
+     ]
+    },
+    {
+     "name": "Daniel Cavender",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-03-daniel-cavender",
+     "fec": [
+      "H6NC03237"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Smith won the Democratic primary 56.7% to 43.3% over Allison Jaslow.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-04",
+   "incumbent": {
+    "name": "Valerie Foushee",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Valerie Foushee",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nc-04-valerie-foushee",
+     "fec": [
+      "H2NC06114"
+     ]
+    },
+    {
+     "name": "Max Ganorkar",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nc-04-mahesh-ganorkar",
+     "fec": [
+      "H2NC06106",
+      "H4NC02150"
+     ]
+    },
+    {
+     "name": "Guy Meilleur",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-04-guy-meilleur",
+     "fec": [
+      "H4NC04149"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Foushee beat Nida Allam 49.2% to 48.2% (about 1,171 votes) in the March 3 primary; Allam conceded rather than pursue a recount.",
+   "c": [
+    "wiki_nc",
+    "gp_nc",
+    "ncnl_nc04"
+   ]
+  },
+  {
+   "race": "NC-05",
+   "incumbent": {
+    "name": "Virginia Foxx",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Virginia Foxx",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-05-virginia-foxx",
+     "fec": [
+      "H4NC05146"
+     ]
+    },
+    {
+     "name": "Chuck Hubbard",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-05-chuck-hubbard",
+     "fec": [
+      "H4NC05294"
+     ]
+    },
+    {
+     "name": "Robert Luffman",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-05-robert-luffman",
+     "fec": [
+      "H6NC05174"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Sources differ on independent David Clayton: Wikipedia's ballot table lists him but cites a campaign suspension; Green Papers omits him. He is left off here pending the official list.",
+   "c": [
+    "wiki_nc",
+    "gp_nc",
+    "yahoo_nc05"
+   ]
+  },
+  {
+   "race": "NC-06",
+   "incumbent": {
+    "name": "Addison McDowell",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Addison McDowell",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-06-addison-mcdowell",
+     "fec": [
+      "H4NC06177"
+     ]
+    },
+    {
+     "name": "Cyril Jefferson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-06-cyril-jefferson",
+     "fec": [
+      "H6NC06164"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Jefferson won the Democratic primary with 39.2% to Alysa Kassay's 34.1%.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-07",
+   "incumbent": {
+    "name": "David Rouzer",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "David Rouzer",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-07-david-rouzer",
+     "fec": [
+      "H2NC07096"
+     ]
+    },
+    {
+     "name": "Kimberly Hardy",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-07-kimberly-hardy",
+     "fec": [
+      "H6NC07196"
+     ]
+    },
+    {
+     "name": "Maad Abu-Ghazalah",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-07-maad-abu-ghazalah",
+     "fec": [
+      "H6NC07204"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-08",
+   "incumbent": {
+    "name": "Mark Harris",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Mark Harris",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-08-mark-harris",
+     "fec": [
+      "H4NC08066",
+      "H6NC09200",
+      "S4NC00154"
+     ]
+    },
+    {
+     "name": "Colby Watson",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-08-colby-watson",
+     "fec": [
+      "H6NC08202"
+     ]
+    },
+    {
+     "name": "Bo Whitehead",
+     "party": "G",
+     "incumbent": false,
+     "rec": "nc-08-robert-whitehead",
+     "fec": [
+      "H6NC08210"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Watson won the Democratic primary with 47.9% to Kevin Clark's 37.2%.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-09",
+   "incumbent": {
+    "name": "Richard Hudson",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Richard Hudson",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-09-richard-hudson",
+     "fec": [
+      "H2NC08185"
+     ]
+    },
+    {
+     "name": "Richard Ojeda",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-09-richard-ojeda",
+     "fec": [
+      "H6NC09218"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Ojeda won the Democratic primary with 41.8% to Nigel Bristow's 26.7%.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-10",
+   "incumbent": {
+    "name": "Pat Harrigan",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Pat Harrigan",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-10-pat-harrigan",
+     "fec": [
+      "H2NC13243"
+     ]
+    },
+    {
+     "name": "Ashley Bell",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-10-ashley-bell",
+     "fec": [
+      "H6NC10174"
+     ]
+    },
+    {
+     "name": "Steve Feldman",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-10-steven-feldman",
+     "fec": [
+      "H4NC10146"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-11",
+   "incumbent": {
+    "name": "Chuck Edwards",
+    "party": "R",
+    "status": "Withdrew"
+   },
+   "nominees": [
+    {
+     "name": "Jennifer Balkcom",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nc-11-jennifer-balkcom",
+     "fec": [
+      "H6NC11321"
+     ]
+    },
+    {
+     "name": "Jamie Ager",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-11-jamie-ager",
+     "fec": [
+      "H6NC11248"
+     ]
+    },
+    {
+     "name": "Travis Groo",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-11-travis-groo",
+     "fec": [
+      "H6NC11313"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Open seat: Edwards won renomination (70.1%) but ended his bid on Aug 5, 2026 after a House Ethics censure recommendation; the NC GOP committee named state Rep. Jennifer Balkcom the replacement nominee (Aug 10 per Green Papers). Groo is listed by Green Papers; Wikipedia lists him without a confirmed ballot status.",
+   "c": [
+    "wiki_nc",
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-12",
+   "incumbent": {
+    "name": "Alma Adams",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Alma Adams",
+     "party": "D",
+     "incumbent": true,
+     "rec": "nc-12-alma-adams",
+     "fec": [
+      "H4NC12100"
+     ]
+    },
+    {
+     "name": "Jack Codiga",
+     "party": "R",
+     "incumbent": false,
+     "rec": "nc-12-john-codiga",
+     "fec": [
+      "H6NC12113"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "The fetched Wikipedia text did not reach districts 12–14; nominees are from Green Papers.",
+   "c": [
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-13",
+   "incumbent": {
+    "name": "Brad Knott",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Brad Knott",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-13-brad-knott",
+     "fec": [
+      "H4NC13116"
+     ]
+    },
+    {
+     "name": "Paul Barringer III",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-13-paul-barringer",
+     "fec": [
+      "H6NC13228"
+     ]
+    },
+    {
+     "name": "Steven Swinton",
+     "party": "L",
+     "incumbent": false,
+     "rec": "nc-13-steven-swinton",
+     "fec": [
+      "H6NC13251"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Nominees from Green Papers only (Wikipedia section not retrievable).",
+   "c": [
+    "gp_nc"
+   ]
+  },
+  {
+   "race": "NC-14",
+   "incumbent": {
+    "name": "Tim Moore",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Tim Moore",
+     "party": "R",
+     "incumbent": true,
+     "rec": "nc-14-tim-moore",
+     "fec": [
+      "H4NC14015"
+     ]
+    },
+    {
+     "name": "LaKesha Womack",
+     "party": "D",
+     "incumbent": false,
+     "rec": "nc-14-lakesha-womack",
+     "fec": [
+      "H6NC14069"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Nominees from Green Papers only (Wikipedia section not retrievable).",
+   "c": [
+    "gp_nc"
+   ]
+  }
+ ]
+}

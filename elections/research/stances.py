@@ -5,7 +5,7 @@ C = {
  'cbo_hr1_dist': ('CBO — Distributional effects of H.R. 1 (2025)', 'https://www.cbo.gov/publication/61387'),
  'scotus_ieepa': ('U.S. Supreme Court strikes down IEEPA tariffs — Steptoe (2026)', 'https://www.steptoe.com/en/news-publications/global-trade-and-investment-law-blog/us-supreme-court-strikes-down-ieepa-tariffs.html'),
  'kff_aca': ('KFF projections on the enhanced ACA subsidy lapse (via MEXC News)', 'https://www.mexc.com/news/91669'),
- 'sophia_t2': ('Sophia — Trump Second-Term Promise Ledger (t01 OBBBA, t02 tariffs, t05 ACA subsidies, t_crypto)', 'https://bit.ly/sophia-v3#sim/trump2'),
+ 'sophia_t2': ('Sophia — Trump Second-Term Promise Ledger (t01 OBBBA, t02 tariffs, t05 ACA subsidies, t_crypto)', 'https://awakenwithsophia.sophia13.workers.dev/#sim/trump2'),
  'aclu_aaa': ('ACLU opposes the Antisemitism Awareness Act — ACLU', 'https://www.aclu.org/documents/aclu-opposes-antisemitism-awareness-act'),
 }
 S = {

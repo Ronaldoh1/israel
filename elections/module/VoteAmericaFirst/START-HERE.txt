@@ -1,0 +1,77 @@
+VOTE AMERICA FIRST: 2026 SCORECARD DATA
+Updated October 15, 2026
+
+Everything for the 2026 candidate scorecards, collected one state at a time,
+for the 1,354 candidates on the November 3 ballot only.
+
+=====================================================================
+THE ONLY COMMANDS YOU NEED
+=====================================================================
+Open Terminal and go to this folder:
+    cd ~/Desktop/VoteAmericaFirst
+
+Run the next 3 states (closest races first):
+    ./run_states.sh next 3
+
+Or pick states yourself:
+    ./run_states.sh GA NC MI
+
+See what's done and what's left:
+    ./run_states.sh status
+
+The first time, it asks for your CourtListener token and FEC key and saves
+them in keys.txt in this folder. Never upload or share keys.txt.
+
+Each state takes roughly 15 minutes to an hour. Leave Terminal open. If the
+internet drops, it waits and carries on. If it stops, run the same command
+again and it continues where it left off. States already uploaded are
+skipped (add --redo to run one again).
+
+=====================================================================
+WHAT HAPPENS FOR EACH STATE
+=====================================================================
+1. Collects the data (list below) into data/
+2. Checks every candidate against the scoring rubric. Anything that failed
+   to download gets one more try automatically.
+3. Zips the state into uploads/state-GA.zip and uploads it to GitHub
+   (Ronaldoh1/2026electiondata, release "states").
+4. Records it in progress.csv, so it knows what's done.
+
+Each state's zip also includes _coverage.csv: one row per candidate showing
+which records each part of the score rests on, and anything still missing.
+
+=====================================================================
+WHAT IT COLLECTS
+=====================================================================
+FOR THE SCORE                          SOURCE
+Court cases naming them                CourtListener (federal courts)
+Senate financial disclosures           efdsearch.senate.gov
+Ethics Committee documents             House and Senate Ethics Committees
+Floor votes, missed-vote rate          Voteview (anyone who served in Congress)
+Bills and committee seats              congress.gov
+FEC notices to their campaign          FEC (requests for additional information)
+Fact-checks of their statements        PolitiFact
+Their claims and positions             their campaign website, Ballotpedia
+Background, education, career          Wikipedia, Ballotpedia
+Photo, with license                    official portraits, Wikimedia
+
+ALREADY COLLECTED (in your part 1 and part 2 uploads; not repeated):
+money by cycle, PAC money by type, outside spending, House financial
+disclosures, FARA foreign-agent checks, Jan 6 certification votes.
+
+=====================================================================
+WHAT NO SCRIPT CAN COLLECT (scored from news reporting, marked provisional)
+=====================================================================
+- State trial-court cases. There is no national database of them.
+- Governor candidates' campaign money, financial disclosures and ethics
+  records. These are state records, kept differently in every state.
+- State legislators' votes. Not part of the score; it only counts
+  congressional votes.
+
+=====================================================================
+EXTRAS (separate projects, not needed for the scorecards)
+=====================================================================
+extras/ots_aipac_spending.py      AIPAC dashboard data (you're running it)
+extras/ots_members_money.py       money behind everyone in office now
+extras/ots_members_money_pass2.py  (run after the one above)
+extras/filter_to_ballot.py        optional: ballot-only copy of your old data

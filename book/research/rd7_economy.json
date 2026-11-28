@@ -1,0 +1,81 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "ec_pass",
+   "stage": "rd7",
+   "topic": "Economy and infrastructure (Nov 2026)",
+   "claims": [
+    {
+     "text": "Kirkuk–Haifa pipeline built 1932–34 by the Iraq Petroleum Company; oil at Haifa 14 Oct 1934; 27 million barrels in 1935; 'strategically important' to the British Government; Haifa refinery from 29 Nov 1939, shut 12 Apr 1948.",
+     "strength": "reported",
+     "sources": [
+      "ec_pipe"
+     ]
+    },
+    {
+     "text": "Dead Sea concession granted in principle to Novomeysky and Tulloch, Dec 1927; leasehold; profits shared with the Palestine and Transjordan governments.",
+     "strength": "verified",
+     "sources": [
+      "ec_ds"
+     ]
+    },
+    {
+     "text": "Hevrat ha-Ovdim founded 1923 as the Histadrut's economic arm.",
+     "strength": "reported",
+     "sources": [
+      "ec_hev"
+     ]
+    },
+    {
+     "text": "Second World War: 10% Jewish unemployment at first; boom from 1942 as industry supplied the British army; about 30,000 Jews of Palestine enlisted.",
+     "strength": "reported",
+     "sources": [
+      "ec_ww2"
+     ]
+    },
+    {
+     "text": "The acetone 'reward' explanation of the Balfour Declaration appeared in Lloyd George's memoirs (1933); listed by historians as one explanation among several, all 'subject to debate'.",
+     "strength": "contested",
+     "sources": [
+      "ec_acet",
+      "ec_acet2"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "ec_pipe",
+     "url": "https://en.wikipedia.org/wiki/Kirkuk%E2%80%93Haifa_oil_pipeline",
+     "label": "Wikipedia, 'Kirkuk–Haifa oil pipeline'"
+    },
+    {
+     "key": "ec_ds",
+     "url": "https://www.jta.org/archive/novomejski-tulloch-will-get-dead-sea-concession-british-government-says",
+     "label": "JTA, 'Novomejski-Tulloch Will Get Dead Sea Concession, British Government Says', 2 December 1927"
+    },
+    {
+     "key": "ec_hev",
+     "url": "https://encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hevrat-ha-ovedim",
+     "label": "Encyclopedia.com, 'Hevrat ha-Ovedim'"
+    },
+    {
+     "key": "ec_ww2",
+     "url": "https://archive.jewishagency.org/israel/content/23390",
+     "label": "Jewish Agency archive, the Yishuv in the Second World War"
+    },
+    {
+     "key": "ec_acet",
+     "url": "https://www.jewishvirtuallibrary.org/commentary-on-the-balfour-declaration",
+     "label": "Jewish Virtual Library, 'History of the Balfour Declaration'"
+    },
+    {
+     "key": "ec_acet2",
+     "url": "https://en.wikipedia.org/wiki/Arthur_and_the_Acetone",
+     "label": "Wikipedia, 'Arthur and the Acetone'"
+    }
+   ]
+  }
+ ]
+}

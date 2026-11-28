@@ -1,0 +1,201 @@
+{
+ "_note": "Patterns pass, Nov 2026: ties documented while writing The Same Machine (today's patterns, first seen on the road to 1948). Each tie carries its own refs.",
+ "nodes": [
+  {
+   "id": "bclinton",
+   "name": "Bill Clinton",
+   "kind": "person",
+   "cluster": "us",
+   "note": "US president 1993–2001. In 2000 he pardoned Al Schwimmer, convicted in 1950 under the Neutrality Acts for exporting aircraft to the Haganah.",
+   "mentions": 0,
+   "sections": []
+  },
+  {
+   "id": "gwbush",
+   "name": "George W. Bush",
+   "kind": "person",
+   "cluster": "us",
+   "note": "US president 2001–2009. In December 2008 he granted a posthumous pardon to Charles Winters, convicted for his part in the 1948 aircraft exports to the Haganah.",
+   "mentions": 0,
+   "sections": []
+  }
+ ],
+ "edges": [
+  {
+   "f": "doj",
+   "t": "feinberg",
+   "type": "official act",
+   "status": "verified",
+   "label": "1952: ordered to register under the Foreign Agents Registration Act for publishing the bimonthly Israel Speaks; he closed the publication rather than register.",
+   "refs": [
+    {
+     "t": "feinberg_fbi_file",
+     "u": "https://www.prnewswire.com/news-releases/israel-lobbyist-abraham-feinbergs-fbi-file-released-117526018.html"
+    },
+    {
+     "t": "israellobby_feinberg_fbi",
+     "u": "https://www.israellobby.org/feinberg/"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "acj",
+   "t": "doj",
+   "type": "support",
+   "status": "reported",
+   "label": "The American Council for Judaism welcomed the Justice Department's November 1962 order that the American Zionist Council register as a foreign agent (Grant F. Smith).",
+   "refs": [
+    {
+     "t": "Grant F. Smith (IRmep), \"How Israel Made AIPAC\", episode 11, \"Fighting Justice\" (podcast description)",
+     "u": "https://ms.player.fm/series/how-israel-made-aipac/episode-11-fighting-justice"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "neutrality",
+   "t": "greenspun",
+   "type": "legal basis",
+   "status": "verified",
+   "label": "Hank Greenspun was convicted for his part in the 1948 arms exports to the Haganah and served no prison time.",
+   "refs": [
+    {
+     "t": "Wikipedia, 'Israeli espionage in the United States' (accessed 19 Oct 2026)",
+     "u": "https://en.wikipedia.org/wiki/Israeli_espionage_in_the_United_States"
+    },
+    {
+     "t": "nbc_bush_pardons_winters",
+     "u": "https://www.nbcnews.com/id/wbna28368672"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "jfk",
+   "t": "greenspun",
+   "type": "official act",
+   "status": "verified",
+   "label": "1961: Kennedy pardoned Greenspun for his Neutrality Act conviction.",
+   "refs": [
+    {
+     "t": "nbc_bush_pardons_winters",
+     "u": "https://www.nbcnews.com/id/wbna28368672"
+    },
+    {
+     "t": "Wikipedia, 'Israeli espionage in the United States' (accessed 19 Oct 2026)",
+     "u": "https://en.wikipedia.org/wiki/Israeli_espionage_in_the_United_States"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "bclinton",
+   "t": "schwimmer",
+   "type": "official act",
+   "status": "verified",
+   "label": "2000: Clinton pardoned Al Schwimmer, convicted in 1950 for exporting aircraft to the Haganah.",
+   "refs": [
+    {
+     "t": "nbc_bush_pardons_winters",
+     "u": "https://www.nbcnews.com/id/wbna28368672"
+    },
+    {
+     "t": "Wikipedia, 'Israeli espionage in the United States' (accessed 19 Oct 2026)",
+     "u": "https://en.wikipedia.org/wiki/Israeli_espionage_in_the_United_States"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "gwbush",
+   "t": "winters",
+   "type": "official act",
+   "status": "verified",
+   "label": "December 2008: a posthumous pardon for Charles Winters, who had served 18 months for the aircraft exports.",
+   "refs": [
+    {
+     "t": "nbc_bush_pardons_winters",
+     "u": "https://www.nbcnews.com/id/wbna28368672"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "gibli",
+   "t": "susannah",
+   "type": "operation",
+   "status": "verified",
+   "label": "Binyamin Gibli, head of military intelligence, ran the 1954 sabotage operation in Egypt; he said the order came verbally from Lavon.",
+   "refs": [
+    {
+     "t": "\"The 'Unfortunate' or the Lavon affair\", IDF and Defense Establishment Archives, Israel Ministry of Defense",
+     "u": "https://archives.mod.gov.il/sites/English/Exhibitions/Pages/The-Lavon-affair.aspx"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "lavon",
+   "t": "susannah",
+   "type": "instruction",
+   "status": "reported",
+   "label": "Disputed: Gibli said Defense Minister Lavon gave a verbal instruction for the operation; Lavon denied any knowledge. Prime Minister Sharett was kept out of the loop.",
+   "refs": [
+    {
+     "t": "\"The 'Unfortunate' or the Lavon affair\", IDF and Defense Establishment Archives, Israel Ministry of Defense",
+     "u": "https://archives.mod.gov.il/sites/English/Exhibitions/Pages/The-Lavon-affair.aspx"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "palmerston",
+   "t": "ottoman",
+   "type": "instruction",
+   "status": "verified",
+   "label": "Dispatch of 11 August 1840: asked the Sultan to admit Jewish settlers as \"a check upon any future evil designs of Mehemet Ali\"; no appeal to scripture. The Sultan declined.",
+   "refs": [
+    {
+     "t": "Viscount Palmerston to Viscount Ponsonby, 11 August 1840, FO 78/390 (No. 134), text published by the Center for Online Judaic Studies",
+     "u": "https://cojs.org/august-11-1840/"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "blackstone",
+   "t": "bharrison",
+   "type": "petition",
+   "status": "verified",
+   "label": "1891: Blackstone presented President Harrison with a memorial of more than four hundred signers urging support for a Jewish homeland.",
+   "refs": [
+    {
+     "t": "wiki_christian_zionism",
+     "u": "https://en.wikipedia.org/wiki/Christian_Zionism"
+    }
+   ],
+   "sec": ""
+  },
+  {
+   "f": "kenen",
+   "t": "israel_gov",
+   "type": "employment",
+   "status": "verified",
+   "label": "Before founding the American committee that became AIPAC, Kenen was a registered foreign-agent lobbyist and worked for Israel's information office at the United Nations.",
+   "refs": [
+    {
+     "t": "wrmea_aipac",
+     "u": "https://www.wrmea.org/north-america/aipac-election-role-raises-question-of-foreign-agent-registration.html"
+    },
+    {
+     "t": "Kobby Barda, \"Senator Fulbright's 1963 AIPAC Hearing in the Shadow of the JFK Assassination Conspiracy\", Modern Judaism 46:2 (May 2026), pp. 103–117",
+     "u": "https://academic.oup.com/mj/article/46/2/103/8707527"
+    }
+   ],
+   "sec": ""
+  }
+ ],
+ "edge_overrides": {},
+ "node_overrides": {}
+}

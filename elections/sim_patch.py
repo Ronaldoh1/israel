@@ -5,7 +5,7 @@
 import json, re, sys
 P = sys.argv[1] if len(sys.argv) > 1 else '/mnt/user-data/outputs/Israel-simulationv1.0.html'
 s = open(P, encoding='utf-8').read()
-SOPHIA_LINK = 'https://bit.ly/sophia-v3#elections2026-card'
+SOPHIA_LINK = 'https://awakenwithsophia.sophia13.workers.dev/#elections2026-card'
 
 def block(s, bid):
     m = re.search(r'(<script[^>]*id="%s"[^>]*>)(.*?)(</script>)' % bid, s, re.S); assert m, bid

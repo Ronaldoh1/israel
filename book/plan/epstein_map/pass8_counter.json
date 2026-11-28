@@ -1,0 +1,164 @@
+{
+ "nodes": [
+  {
+   "id": "cassell",
+   "name": "Paul Cassell",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "University of Utah law professor and former federal judge. With Bradley Edwards, represented Courtney Wild in the Crime Victims' Rights Act case against the 2008 deal, from the district court to the en banc Eleventh Circuit (lost 7-4, 2021) and a Supreme Court petition (Sept 2021)."
+  },
+  {
+   "id": "cwild",
+   "name": "Courtney Wild",
+   "kind": "person",
+   "cluster": "reporters",
+   "note": "Survivor. The \"Jane Doe\" whose Crime Victims' Rights Act petition (filed 7 Jul 2008) argued that the victims were kept in the dark about the deal; the district court agreed in 2019. Spoke at the 27 Aug 2019 hearing after Epstein's death."
+  },
+  {
+   "id": "mcomey",
+   "name": "Maurene Comey",
+   "kind": "person",
+   "cluster": "justice",
+   "note": "SDNY prosecutor for about ten years; worked on the Epstein (2019) and Maxwell cases. Fired in July 2025 without a stated reason. On 26 Oct 2026 Judge Jesse Furman ruled the firing unlawful (due process) and ordered back pay; the DOJ says it will appeal."
+  },
+  {
+   "id": "scotus",
+   "name": "US Supreme Court",
+   "kind": "government",
+   "cluster": "justice",
+   "note": "Declined to hear Maxwell's appeal on 6 Oct 2025, leaving her conviction in place; she had argued the 2007 deal's co-conspirator clause protected her. Earlier declined the victims' Crime Victims' Rights Act petition (In re Wild)."
+  }
+ ],
+ "edges": [
+  {
+   "f": "cassell",
+   "t": "cwild",
+   "label": "co-counsel with Bradley Edwards in the CVRA case",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "University of Utah Law, Sept 2021: Professor Paul Cassell takes the fight for Epstein's victims to the Supreme Court (with Bradley Edwards; Eleventh Circuit 7-4)",
+     "u": "https://www.law.utah.edu/news-articles/professor-paul-cassell-takes-fight-on-behalf-of-jeffrey-epstein-victims-to-u-s-supreme-court/"
+    }
+   ]
+  },
+  {
+   "f": "edwards_henderson",
+   "t": "cwild",
+   "label": "co-counsel in the CVRA case, from 2008",
+   "type": "legal representation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "University of Utah Law, Sept 2021: Professor Paul Cassell takes the fight for Epstein's victims to the Supreme Court (with Bradley Edwards; Eleventh Circuit 7-4)",
+     "u": "https://www.law.utah.edu/news-articles/professor-paul-cassell-takes-fight-on-behalf-of-jeffrey-epstein-victims-to-u-s-supreme-court/"
+    },
+    {
+     "t": "NPR, 25 Jul 2025: tracing the legal cases that led to the sex-trafficking charges (CVRA suit 7 Jul 2008; Herald unsealing motion 2017; Edwards settlement 4 Dec 2018)",
+     "u": "https://www.npr.org/2025/07/25/nx-s1-5478620/jeffrey-epstein-crimes-ti"
+    }
+   ]
+  },
+  {
+   "f": "cwild",
+   "t": "npa",
+   "label": "CVRA petition filed 7 Jul 2008: victims not told of the deal",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 25 Jul 2025: tracing the legal cases that led to the sex-trafficking charges (CVRA suit 7 Jul 2008; Herald unsealing motion 2017; Edwards settlement 4 Dec 2018)",
+     "u": "https://www.npr.org/2025/07/25/nx-s1-5478620/jeffrey-epstein-crimes-ti"
+    }
+   ]
+  },
+  {
+   "f": "cassell",
+   "t": "wild_ruling",
+   "label": "argued the en banc appeal (lost 7-4) and petitioned the Supreme Court, Sept 2021",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "University of Utah Law, Sept 2021: Professor Paul Cassell takes the fight for Epstein's victims to the Supreme Court (with Bradley Edwards; Eleventh Circuit 7-4)",
+     "u": "https://www.law.utah.edu/news-articles/professor-paul-cassell-takes-fight-on-behalf-of-jeffrey-epstein-victims-to-u-s-supreme-court/"
+    }
+   ]
+  },
+  {
+   "f": "edwards_henderson",
+   "t": "epstein",
+   "label": "Epstein settled his defamation suit against Edwards on 4 Dec 2018, the eve of the first victim testimony in court",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 25 Jul 2025: tracing the legal cases that led to the sex-trafficking charges (CVRA suit 7 Jul 2008; Herald unsealing motion 2017; Edwards settlement 4 Dec 2018)",
+     "u": "https://www.npr.org/2025/07/25/nx-s1-5478620/jeffrey-epstein-crimes-ti"
+    }
+   ]
+  },
+  {
+   "f": "miami_herald",
+   "t": "giuffre_v_maxwell",
+   "label": "moved to unseal the case records, 2017",
+   "type": "litigation",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR, 25 Jul 2025: tracing the legal cases that led to the sex-trafficking charges (CVRA suit 7 Jul 2008; Herald unsealing motion 2017; Edwards settlement 4 Dec 2018)",
+     "u": "https://www.npr.org/2025/07/25/nx-s1-5478620/jeffrey-epstein-crimes-ti"
+    }
+   ]
+  },
+  {
+   "f": "mcomey",
+   "t": "gmax",
+   "label": "prosecuted the Maxwell case (convicted 2021)",
+   "type": "prosecution",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR via OPB, 26 Oct 2026: judge says DOJ illegally fired Maurene Comey",
+     "u": "https://www.opb.org/article/2026/10/26/maurene-comey-was-illegally-fired-from-doj-judge-finds/"
+    }
+   ]
+  },
+  {
+   "f": "doj",
+   "t": "mcomey",
+   "label": "fired her, July 2025; ruled unlawful 26 Oct 2026 (Judge Furman); appeal pending",
+   "type": "official act",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "NPR via OPB, 26 Oct 2026: judge says DOJ illegally fired Maurene Comey",
+     "u": "https://www.opb.org/article/2026/10/26/maurene-comey-was-illegally-fired-from-doj-judge-finds/"
+    }
+   ]
+  },
+  {
+   "f": "scotus",
+   "t": "gmax",
+   "label": "declined her appeal, 6 Oct 2025",
+   "type": "court ruling",
+   "status": "verified",
+   "src": "pass 8 (counterforces), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Global News (AP), 6 Oct 2025: Supreme Court rejects Ghislaine Maxwell's appeal",
+     "u": "https://globalnews.ca/news/11466191/ghislaine-maxwell-appeal-rejected-supreme-court/"
+    }
+   ]
+  }
+ ]
+}

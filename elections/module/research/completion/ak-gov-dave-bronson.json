@@ -1,0 +1,13 @@
+{
+ "id": "ak-gov-dave-bronson",
+ "checklist": {
+  "fara": "done"
+ },
+ "checks": {
+  "legal": "CourtListener was blocked. Alaska CourtView was not searched directly. Searched news (Alaska Beacon, Alaska Public Media, ADN, KTUU, Sol de Medianoche) and the APOC final order (via DocumentCloud). Found: the 2021 APOC campaign-finance penalty and the Demboski lawsuit (settled 2024). No criminal matters found. Anchorage Board of Ethics records were not searched.",
+  "foreign": "No foreign ties found in news or his pamphlet. Exact-name check of the DOJ FARA bulk files (registrants, short forms, foreign principals), searched 2026-10-13: no row names this candidate.",
+  "claims": "Campaign site davebronson.com could not be fetched (tool provenance block). As a stand-in, used his candidate-authored Official Election Pamphlet statement (which has almost no checkable figures), his 2024 concession statement, and his forum remarks. No ad scripts were found. Five claims: 2 rated true, 3 unverifiable.",
+  "democracy": "Never in Congress. Searched news for statements on 2020/2024 presidential results (none found), his 2022 municipal election audit request, and his 2024 concession."
+ },
+ "research_notes": "Only FARA changed this pass. CourtListener, Justia, Senate eFD, House/Senate Ethics, APOC and Alaska CourtView were all unreachable from this environment (proxy 403 / fetch provenance block), so no court or ethics database was searched directly."
+}

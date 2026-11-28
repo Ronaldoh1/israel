@@ -1,0 +1,13 @@
+<h2>The Machine in Code</h2>
+<p>For readers who think in code, one debugging setting describes this case. In Apple's programming environment, a developer chasing a hard bug can switch on a setting called NSZombieEnabled. Normally, when an object is released from memory, it is gone, and any later message to it fails. With the setting on, the system keeps a ghost of the released object, and if anything still talks to it, the ghost answers. A ghost that answers is proof that something was declared finished but was never really let go.</p>
+<pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace;font-size:.82em;line-height:1.5;background:rgba(127,127,127,.12);padding:12px 14px;border-radius:6px;overflow-x:auto"><code>Case *epstein = [Case new];
+// a reference that outlives the release
+__unsafe_unretained Case *ghost = epstein;
+// 2008: the agreement; the case is "closed"
+epstein = nil;
+
+[ghost recordsFor:@"2019"];   // federal indictment
+[ghost recordsFor:@"2024"];   // unsealed court files
+[ghost recordsFor:@"2025"];   // the government's own release
+[ghost recordsFor:@"2026"];   // New Mexico, Paris, the courts</code></pre>
+<p>In plain words: the 2008 agreement was meant to end the case. Every question asked of it since, by a prosecutor in 2019, a judge in 2024, Congress in 2025, a state in 2026, has been answered with more records, more names and more victims. A case that was really over would not answer. This one has never stopped. The agreement closed the case on paper. It did not close it in fact, and the record of the eighteen years since is the proof. [cite:ep9_npr_brown2021] [cite:ep9_pbs_unseal2024] [cite:ep9_rollcall_final] [cite:ep10_kob_interim2026]</p>

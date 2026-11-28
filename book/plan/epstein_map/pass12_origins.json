@@ -1,0 +1,66 @@
+{
+ "nodes": [
+  {
+   "id": "interlochen",
+   "name": "Interlochen Center for the Arts (Michigan)",
+   "kind": "institution",
+   "cluster": "origins",
+   "note": "Summer arts camp near Traverse City, Michigan. Interlochen says Epstein was a donor from 1990 to 2003 and that its records hold no complaint about him. 'Jane', the first witness at Maxwell's 2021 trial, testified under oath that Epstein and Maxwell approached her there in the summer of 1994, when she was 14; a 2020 lawsuit released in the files says the same. The earliest point at which the record places Epstein and Maxwell together approaching a minor."
+  },
+  {
+   "id": "jd_suit_2019",
+   "name": "Nine Jane Does v. the Epstein estate (Manhattan, Dec 2019)",
+   "kind": "document",
+   "cluster": "origins",
+   "note": "Civil suit filed in New York state court on 3 Dec 2019 by nine women. Jane Doe II alleges abuse from about 1985, when she was 23; Jane Doe I from about 1990, when she was 14. Allegations in a lawsuit, not findings. The earliest dates any accuser has put on the record."
+  }
+ ],
+ "edges": [
+  {
+   "f": "epstein",
+   "t": "interlochen",
+   "label": "donor, 1990–2003 (Interlochen's own statement)",
+   "type": "donation",
+   "status": "verified",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Yahoo News, Dec 2025: Epstein met first known victim at Michigan arts camp, files reveal",
+     "u": "https://www.yahoo.com/news/articles/epstein-met-first-known-victim-180654215.html"
+    }
+   ]
+  },
+  {
+   "f": "gmax",
+   "t": "interlochen",
+   "label": "approached \"Jane\", 14, there with Epstein in summer 1994 (her sworn testimony, Nov 2021)",
+   "type": "sworn allegation",
+   "status": "verified",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Al Jazeera, 1 Dec 2021: Ghislaine Maxwell's first accuser testifies in sex abuse trial",
+     "u": "https://www.aljazeera.com/news/2021/12/1/ghislaine-maxwell-first-accuser-testifies-in-sex-abuse-trial"
+    },
+    {
+     "t": "Yahoo News, Dec 2025: Epstein met first known victim at Michigan arts camp, files reveal",
+     "u": "https://www.yahoo.com/news/articles/epstein-met-first-known-victim-180654215.html"
+    }
+   ]
+  },
+  {
+   "f": "jd_suit_2019",
+   "t": "epstein",
+   "label": "alleges abuse from about 1985 (Jane Doe II) and about 1990 (Jane Doe I)",
+   "type": "claim",
+   "status": "reported",
+   "src": "pass 12 (origins and stress test), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "Irish Times (Reuters), 3 Dec 2019: Jeffrey Epstein's sexual abuses began by 1985, claims lawsuit",
+     "u": "https://www.irishtimes.com/news/world/us/jeffrey-epstein-s-sexual-abuses-began-by-1985-claims-lawsuit-1.4103824"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+<h2>objc_msgSend: One Bank for the Movement's Money</h2>
+<p>In Objective-C every message between objects passes through one function, <code>objc_msgSend</code>. Whoever controls that function controls every call.</p>
+<figure class="fig-code"><figcaption>The money ran through one institution</figcaption><div class="cbar"><i></i><i></i><i></i><b>MovementBank.m</b></div><pre><span class="c">// 1899 the Jewish Colonial Trust:</span>
+<span class="c">//      the movement&#x27;s bank</span>
+<span class="c">// 1902 its Palestine arm, later the</span>
+<span class="c">//      Anglo-Palestine Bank</span>
+<span class="k">id</span> objc_msgSend(<span class="k">id</span> bank, <span class="t">SEL</span> op, ...);
+
+<span class="k">for</span> (<span class="t">Transfer</span> *t <span class="k">in</span> movementMoney) {
+  objc_msgSend(<span class="t">AngloPalestineBank</span>,
+    <span class="k">@selector</span>(settle:), t);
+}
+
+<span class="c">// 1933-39 Haavara: about 105 million</span>
+<span class="c">//   Reichsmarks of German goods</span>
+objc_msgSend(<span class="t">AngloPalestineBank</span>,
+  <span class="k">@selector</span>(settle:), haavara);
+
+<span class="c">// 1950-51 renamed Bank Leumi</span></pre><div class="plain"><h5>In plain language</h5><p>The Jewish Colonial Trust was founded as the movement's bank, and its Palestine company became the Anglo-Palestine Bank around 1930 and Bank Leumi in 1950–51. The Anglo-Palestine Bank carried the movement's money under the Mandate.</p><p>The transfer agreement of 1933 with Nazi Germany, Haavara, moved about 105 million Reichsmarks of German goods by the outbreak of war, about 4 percent of all the money on the network map. On the map, taking all the money out leaves no state; taking out the Rothschilds' money alone, and what it built, cuts the chance in 1948 to about 79 percent.</p></div><p class="fig-src">Sources: [cite:jewishencyclopedia_colonial_trust] [cite:apc_wiki] [cite:wiki_palestine_pound] [cite:wiki_haavara_agreement] [cite:rs_rd3_frus1939_d828]</p></figure>

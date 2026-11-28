@@ -1,0 +1,467 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us10_israel",
+   "stage": "us10",
+   "topic": "Israel: domestic surveillance law and episodes (Shin Bet Law s.11 'the Tool', COVID tracking 2020-21, police Pegasus affair 2022, biometric database, camera-hacking emergency law, Privacy Protection Law Amendment 13)",
+   "claims": [
+    {
+     "text": "HCJ 26 April 2020 (petitions by ACRI, Adalah/Joint List, Journalists' Union, Ben Meir): the GSS Law 2002 does not let the government use the Shin Bet beyond national security; no authority for COVID surveillance of citizens without legislation; first recognised limit on Shin Bet powers; interim continuation allowed",
+     "strength": "primary",
+     "sources": [
+      "us10_adalah_hcj2020",
+      "us10_newarab_hcj2020"
+     ]
+    },
+    {
+     "text": "Netanyahu approved Shin Bet tracking in March 2020 by emergency regulation bypassing the Knesset; court required Knesset legislation and journalists' protection; court: 'a suitable alternative, compatible with the principles of privacy, must be found'",
+     "strength": "reported",
+     "sources": [
+      "us10_newarab_hcj2020",
+      "us10_adalah_hcj2020"
+     ]
+    },
+    {
+     "text": "Knesset law (July 2020): government may order Shin Bet location tracking of contacts of confirmed cases in 21-day orders, only when more than 200 new cases a day, approved by a Knesset committee; appeal to Health Ministry within 24 hours; Privacy Protection Authority opposed it ('egregiously violates' privacy); in force until January 2021",
+     "strength": "reported",
+     "sources": [
+      "us10_pc_law2020"
+     ]
+    },
+    {
+     "text": "AP/ToI 1 Jan 2021: 'the Tool' collects metadata (location, browsing, calls and texts, not content) and per Yedioth has been used about two decades; Health Ministry: since July 2020, 950,000 quarantined via the tool, 46,000 found infected, vs ~900,000 / 63,000 by traditional tracing; IDI's Shwartz Altshuler estimated at least 100,000 wrongly quarantined; State Comptroller interim report Oct 2020: contact tracing significantly more effective and Shin Bet did not always delete data",
+     "strength": "reported",
+     "sources": [
+      "us10_toi_tool"
+     ]
+    },
+    {
+     "text": "HCJ ruling (7 justices, Hayut presiding; reported 3 March 2021) on ACRI, PHRI and Adalah petition: from 14 March 2021 tracking limited to people who refuse to cooperate with tracers; court strongly recommended ending it; Justice Baron dissented to stop immediately; enabling law expired 20 January 2021",
+     "strength": "reported",
+     "sources": [
+      "us10_nif_hcj2021"
+     ]
+    },
+    {
+     "text": "Bennett government reinstated Shin Bet tracking for Omicron carriers (announced ~27 Nov 2021); four rights groups incl. ACRI petitioned; Health Ministry said use would be 'surgical'",
+     "strength": "reported",
+     "sources": [
+      "us10_ih_omicron"
+     ]
+    },
+    {
+     "text": "Section 11 of the ISA (Shin Bet) Law lets the prime minister require telecom providers to transfer data, including communications data but not content; no ex ante judicial review; ISA director authorises use for up to six months, renewable; rules classified; oversight by AG and annual report to Knesset subcommittee; ACRI petition pending; Justice Ministry draft amendment published 11 Dec 2023",
+     "strength": "reported",
+     "sources": [
+      "us10_lawfare_isalaw"
+     ]
+    },
+    {
+     "text": "Calcalist (18 Jan 2022) alleged police used Pegasus without warrants against mayors, former officials and leaders of protests against Netanyahu; Public Security Minister Barlev: no hacking 'without the approval of a judge'; AG, State Comptroller and police opened inquiries",
+     "strength": "reported",
+     "sources": [
+      "us10_jurist_calcalist"
+     ]
+    },
+    {
+     "text": "Marari interim report 21 Feb 2022: 'no indication' police infected phones of anyone on the published list without a court order; police hold a Pegasus licence and another tool; three named people had hacking orders, two targeted, one hacked; Sa'ar: report 'incorrect', no need for state commission; Calcalist said it would re-examine",
+     "strength": "reported",
+     "sources": [
+      "us10_toi_saar"
+     ]
+    },
+    {
+     "text": "Marari further findings Aug 2022: no use without judicial order found, but police collected information beyond what warrants covered, a 'violation of authority'; ACRI cited 'major failures' and urged a bar until legislation",
+     "strength": "reported",
+     "sources": [
+      "us10_ih_marari"
+     ]
+    },
+    {
+     "text": "Biometric database law 2009 began with voluntary pilot; Knesset made it permanent (reported 7 March 2017): facial image mandatory for ID/passport; fingerprints stored unless applicant opts out (opt-out gets 5-year documents); no fingerprints for under-16s; police barred until Knesset regulations",
+     "strength": "reported",
+     "sources": [
+      "us10_lawcoil_biometric"
+     ]
+    },
+    {
+     "text": "Oct 2023 emergency regulations (IDF 14 Oct, Shin Bet 17 Oct) allowed hacking computers running stationary cameras without owner's knowledge or court order; reporting monthly to Knesset committee and AG, confidential; no court review or Privacy Protection Authority role",
+     "strength": "reported",
+     "sources": [
+      "us10_ctech_cameras"
+     ]
+    },
+    {
+     "text": "Knesset passed 13-4 on 25 June 2025 a six-month extension to 31 December 2025 of the IDF/Shin Bet authority to covertly access civilian security cameras, 'in light of the continuation of the fighting'",
+     "strength": "reported",
+     "sources": [
+      "us10_toi_cameras2025"
+     ]
+    },
+    {
+     "text": "Amendment 13 to the Protection of Privacy Law 5741-1981 took effect 14 August 2025: privacy officers, data-broker rules, broader sensitive data, administrative fines and orders for the Privacy Protection Authority",
+     "strength": "reported",
+     "sources": [
+      "us10_iapp_amend13"
+     ]
+    },
+    {
+     "text": "Basic Law: Human Dignity and Liberty (1992) s.7(a): 'All persons have the right to privacy and to intimacy'; Wiretap Law 5739-1979 requires a district court president's warrant (up to 3 months, renewable); 2007 Criminal Procedure (Telecommunications Data) law lets police obtain metadata by court order, or without for 24 hours in some circumstances",
+     "strength": "reported",
+     "sources": [
+      "us10_coda_israel"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us10_adalah_hcj2020",
+     "url": "https://www.adalah.org/en/content/view/10031",
+     "label": "Adalah, 'In milestone decision, Supreme Court rules Israel can't legally use Shin Bet for COVID-19 surveillance of citizens', 26 April 2020"
+    },
+    {
+     "key": "us10_newarab_hcj2020",
+     "url": "https://newarab.com/news/israels-top-court-halts-controversial-coronavirus-phone-tracking",
+     "label": "The New Arab (AFP), 'Israel's top court halts controversial coronavirus phone tracking', 27 April 2020"
+    },
+    {
+     "key": "us10_pc_law2020",
+     "url": "https://www.pearlcohen.com/new-law-authorizing-israel-security-agency-to-track-individuals-amid-the-fight-against-covid-19/",
+     "label": "Pearl Cohen, 'New Law Authorizing Israel Security Agency to Track Individuals Amid the Fight Against COVID-19', 30 July 2020"
+    },
+    {
+     "key": "us10_toi_tool",
+     "url": "https://www.timesofisrael.com/questionable-virus-surveillance-tool-puts-israels-democracy-to-the-test/",
+     "label": "AP via Times of Israel, 'Questionable virus surveillance tool puts Israel's democracy to the test', 1 January 2021"
+    },
+    {
+     "key": "us10_nif_hcj2021",
+     "url": "https://www.nif.org/stories/human-rights-democracy/victory-against-unlawful-state-surveillance/",
+     "label": "New Israel Fund, 'Victory against unlawful state surveillance', 3 March 2021"
+    },
+    {
+     "key": "us10_ih_omicron",
+     "url": "https://israelhayom.com/2021/11/30/rights-groups-petition-supreme-court-over-omicron-phone-tracking",
+     "label": "Israel Hayom (Reuters), 'Rights groups petition Supreme Court over Omicron phone tracking', 30 November 2021"
+    },
+    {
+     "key": "us10_lawfare_isalaw",
+     "url": "https://www.lawfaremedia.org/article/expanding-surveillance-powers-israel-s-draft-bill-to-revise-shin-bet-law",
+     "label": "Amir Cahane, Lawfare, 'Expanding Surveillance Powers? Israel's Draft Bill to Revise Shin Bet Law', 21 March 2024"
+    },
+    {
+     "key": "us10_jurist_calcalist",
+     "url": "https://www.jurist.org/news/2022/01/israel-police-accused-of-using-pegasus-spyware-to-illegally-spy-on-citizens",
+     "label": "JURIST, 'Israel police accused of using Pegasus spyware to illegally spy on citizens', 20 January 2022"
+    },
+    {
+     "key": "us10_toi_saar",
+     "url": "https://www.timesofisrael.com/saar-report-on-illegal-nso-spyware-use-was-incorrect-no-need-for-state-inquiry/",
+     "label": "Times of Israel, 'Sa'ar: Report on illegal NSO spyware use was incorrect, no need for state inquiry', 22 February 2022"
+    },
+    {
+     "key": "us10_ih_marari",
+     "url": "https://www.israelhayom.com/2022/08/02/probe-clears-israel-police-after-report-alleges-spyware-abuse",
+     "label": "Israel Hayom, 'Probe clears Israel police after report alleges spyware abuse', 2 August 2022"
+    },
+    {
+     "key": "us10_lawcoil_biometric",
+     "url": "https://law.co.il/en/news/2017/03/07/israeli-parliament-finalizes-biometric-bill-enactment",
+     "label": "Haim Ravia and Dotan Hammer (Pearl Cohen), law.co.il, 'Israeli parliament finalizes biometric bill enactment', 7 March 2017"
+    },
+    {
+     "key": "us10_ctech_cameras",
+     "url": "https://www.calcalistech.com/ctechnews/article/mij68s0ui",
+     "label": "Calcalist (CTech), on the emergency regulations and Defence Ministry memorandum on hacking stationary cameras, November 2023"
+    },
+    {
+     "key": "us10_toi_cameras2025",
+     "url": "https://www.timesofisrael.com/liveblog_entry/mks-pass-bill-extending-idf-shin-bets-authority-to-hack-into-civilian-security-cameras/",
+     "label": "Times of Israel liveblog, 'MKs pass bill extending IDF, Shin Bet's authority to hack into civilian security cameras', 25 June 2025"
+    },
+    {
+     "key": "us10_iapp_amend13",
+     "url": "https://iapp.org/news/a/israel-marks-a-new-era-in-privacy-law-amendment-13-ushers-in-sweeping-reform",
+     "label": "IAPP, 'Israel marks a new era in privacy law: Amendment 13 ushers in sweeping reform', August 2025"
+    },
+    {
+     "key": "us10_coda_israel",
+     "url": "https://codamail.com/articles/privacy-law-directory/international/israel.html",
+     "label": "CodaMail, 'Privacy law directory: Israel' (secondary summary of statutes)"
+    }
+   ]
+  },
+  {
+   "id": "us10_us",
+   "stage": "us10",
+   "topic": "United States: FISA, Section 702 over time and its 2026 lapse, wiretap reports, IRS-ICE data sharing, PCLOB",
+   "claims": [
+    {
+     "text": "Senate created the Church Committee 27 Jan 1975 (82-4); it documented COINTELPRO and NSA's SHAMROCK and MINARET; final report 29 Apr 1976: 'Intelligence agencies have undermined the constitutional rights of citizens'; led to the Senate Intelligence Committee (1976) and FISA (1978), which created the FISA Court",
+     "strength": "primary",
+     "sources": [
+      "us10_senate_church"
+     ]
+    },
+    {
+     "text": "Guardian revealed the FISC Verizon call-records order in June 2013; Second Circuit (7 May 2015, ACLU v. Clapper) held the bulk telephone metadata program 'exceeds the scope of what Congress has authorized' under Section 215; USA FREEDOM Act passed 2 June 2015 restricting such collection",
+     "strength": "reported",
+     "sources": [
+      "us10_wiki_clapper"
+     ]
+    },
+    {
+     "text": "ODNI's first transparency report (June 2014) counted 89,138 Section 702 targets for 2013; 'targets' include groups and facilities",
+     "strength": "reported",
+     "sources": [
+      "us10_db_2013targets"
+     ]
+    },
+    {
+     "text": "FBI ran nearly 3.4 million US person queries of 702 data in 2021 (a query may include many terms; ~1.9m terms related to potential victims); over 200,000 702 targets in 2021",
+     "strength": "reported",
+     "sources": [
+      "us10_jurist_fbi2021"
+     ]
+    },
+    {
+     "text": "ODNI ASTR (April 2026): 702 targets 268,590 (2023), 291,824 (2024), 349,823 (2025); FBI US person queries 57,094 (Dec22-Nov23), 5,518 (Dec23-Nov24), 7,413 (Dec24-Nov25); Title I/III and 703/704 targets 759, 602, 606",
+     "strength": "primary",
+     "sources": [
+      "us10_odni_astr2026"
+     ]
+    },
+    {
+     "text": "April 2026: House failed to pass a five-year or 18-month 702 renewal; 10-day extension to 30 April; nearly 350,000 targets; dispute over court approval before agents review Americans' data",
+     "strength": "reported",
+     "sources": [
+      "us10_npr_702april"
+     ]
+    },
+    {
+     "text": "30 April 2026: House voted 261-111 for a six-week extension to 12 June",
+     "strength": "reported",
+     "sources": [
+      "us10_bgov_702"
+     ]
+    },
+    {
+     "text": "Section 702 expired at midnight 12 June 2026 without renewal; EFF ties the lapse to the dispute over the nomination of Bill Pulte as DNI after Tulsi Gabbard resigned",
+     "strength": "reported",
+     "sources": [
+      "us10_eff_702lapse"
+     ]
+    },
+    {
+     "text": "Brennan Center (22 Sep 2026): FISC approved certifications 17 March 2026, valid until 17 March 2027; collection continues under them despite the lapse; government reportedly argued for renewal by November 2026",
+     "strength": "reported",
+     "sources": [
+      "us10_bcj_702"
+     ]
+    },
+    {
+     "text": "US Courts Wiretap Report 2025: 1,735 wiretaps authorized (873 federal, 862 state), down 24% from 2024 and 58% from 4,148 in 2015; narcotics 51% of applications",
+     "strength": "primary",
+     "sources": [
+      "us10_usc_wiretap2025"
+     ]
+    },
+    {
+     "text": "Treasury-DHS data-sharing agreement signed April 2025 (Bessent, Noem); ICE requested ~1.28m names; IRS verified ~47,000; DC Circuit panel (Edwards) 24 Feb 2026 declined to block sharing in the Centro de Trabajadores Unidos case",
+     "strength": "reported",
+     "sources": [
+      "us10_abc_irs_feb"
+     ]
+    },
+    {
+     "text": "Judge Kollar-Kotelly (D.D.C.) stayed the IRS-ICE agreement Nov 2025 and in Feb 2026 found the IRS broke the law 'approximately 42,695 times'; DC Circuit (Pillard, unanimous) on 8 Sep 2026 affirmed the block in the Center for Taxpayer Rights case",
+     "strength": "reported",
+     "sources": [
+      "us10_cpa_irs_sep"
+     ]
+    },
+    {
+     "text": "Trump removed PCLOB Democrats LeBlanc and Felten in 2025, leaving the board sub-quorum; Judge Walton ruled 21 May 2025 the removals unlawful; White House expected 'ultimate victory'",
+     "strength": "reported",
+     "sources": [
+      "us10_rec_pclob"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us10_senate_church",
+     "url": "https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm",
+     "label": "US Senate, 'Church Committee' (Senate Historical Office)"
+    },
+    {
+     "key": "us10_wiki_clapper",
+     "url": "https://en.wikipedia.org/wiki/American_Civil_Liberties_Union_v._Clapper",
+     "label": "Wikipedia, 'American Civil Liberties Union v. Clapper'"
+    },
+    {
+     "key": "us10_db_2013targets",
+     "url": "https://www.thedailybeast.com/us-spied-on-89000-in-last-year",
+     "label": "Daily Beast, 'U.S. Spied on 89,000 in Last Year', 28 June 2014"
+    },
+    {
+     "key": "us10_jurist_fbi2021",
+     "url": "https://www.jurist.org/news/2022/05/fbi-reports-3-4m-warrantless-us-data-searches-in-2021/",
+     "label": "JURIST, 'FBI reports 3.4M warrantless US data searches in 2021', 3 May 2022"
+    },
+    {
+     "key": "us10_odni_astr2026",
+     "url": "https://archive.dni.gov/files/CLPT/documents/2026_ASTR_for_CY2025.pdf",
+     "label": "ODNI, Annual Statistical Transparency Report Regarding the Intelligence Community's Use of National Security Surveillance Authorities, Calendar Year 2025, April 2026"
+    },
+    {
+     "key": "us10_npr_702april",
+     "url": "https://www.wamc.org/2026-04-17/house-extends-surveillance-powers-for-10-days",
+     "label": "NPR via WAMC, 'House extends surveillance powers for 10 days', 17 April 2026"
+    },
+    {
+     "key": "us10_bgov_702",
+     "url": "https://news.bgov.com/bloomberg-government-news/congress-approves-six-week-patch-of-controversial-spy-powers",
+     "label": "Bloomberg Government, 'Congress Approves Six-Week Patch of Controversial Spy Powers', 30 April 2026"
+    },
+    {
+     "key": "us10_eff_702lapse",
+     "url": "https://www.eff.org/deeplinks/2026/06/victory-702-has-expired",
+     "label": "India McKinney, EFF, 'Victory: 702 Has Expired', 12 June 2026"
+    },
+    {
+     "key": "us10_bcj_702",
+     "url": "https://www.brennancenter.org/media/16217/download/bcj-702-march-2027-deadline-one-pager-9.22.26.pdf",
+     "label": "Brennan Center for Justice, 'Section 702: The March 2027 Deadline' (one-pager), 22 September 2026"
+    },
+    {
+     "key": "us10_usc_wiretap2025",
+     "url": "https://www.uscourts.gov/data-news/reports/statistical-reports/wiretap-reports/wiretap-report-2025",
+     "label": "Administrative Office of the US Courts, 'Wiretap Report 2025'"
+    },
+    {
+     "key": "us10_abc_irs_feb",
+     "url": "https://abc7news.com/post/court-says-irs-can-continue-share-immigrants-taxpayer-data-ice/18646151/",
+     "label": "AP via ABC7, 'Court says the IRS can continue to share immigrants' taxpayer data with ICE', 25 February 2026"
+    },
+    {
+     "key": "us10_cpa_irs_sep",
+     "url": "https://www.cpapracticeadvisor.com/2026/09/09/appeals-court-upholds-block-on-irs-ice-taxpayer-data-sharing-deal/189889/",
+     "label": "CPA Practice Advisor, 'Appeals Court Upholds Block on IRS-ICE Taxpayer Data Sharing Agreement', 9 September 2026"
+    },
+    {
+     "key": "us10_rec_pclob",
+     "url": "https://therecord.media/intel-oversight-firings-illegal-judge",
+     "label": "The Record, 'Judge rules Trump's firing of intel oversight board members illegal', 21 May 2025"
+    }
+   ]
+  },
+  {
+   "id": "us10_audit",
+   "stage": "us10",
+   "topic": "Audit re-verification (us10)",
+   "claims": [
+    {
+     "text": "ISA Law s.11: classified reports quarterly to the attorney general and prime minister and annually to the Knesset Intelligence and Secret Services Subcommittee; 'the Tool' is the ISA communications metadata database; ACRI petition pending as of 21 March 2024.",
+     "strength": "reported",
+     "sources": [
+      "us10a_lawfare"
+     ]
+    },
+    {
+     "text": "Wiretap Law expanded in 1995 to mobile phones, computer communications and email; Israel has no statutory mandatory retention period for ISPs/telecoms; 'Shin Bet's \"The Tool\" effectively operates as a state-run retention system'.",
+     "strength": "reported",
+     "sources": [
+      "us10a_coda"
+     ]
+    },
+    {
+     "text": "Marari team included two former Shin Bet officials; former police commissioner Roni Alsheich had denied police access to Pegasus; Sa'ar: report 'incorrect and certainly not accurate', no need for state commission; interim report published 21 Feb 2022.",
+     "strength": "reported",
+     "sources": [
+      "us10a_toi_saar"
+     ]
+    },
+    {
+     "text": "Government approved 15 July 2026 Shin Bet role vs crime in Arab communities; Netanyahu: 'We won't accept a situation of violence, extortion and murder on the streets'; ACRI: exceeds Shin Bet authority, organised crime in the Jewish community handled by police with regular tools; Abraham Initiatives: 'Crime is not terror'; Mossawa: diverts development funds.",
+     "strength": "reported",
+     "sources": [
+      "us10a_toi_shinbet"
+     ]
+    },
+    {
+     "text": "Barlev (Jan 2022): 'there is no practice of wiretapping or hacking into devices by the Israel Police without the approval of a judge'.",
+     "strength": "reported",
+     "sources": [
+      "us10a_jurist"
+     ]
+    },
+    {
+     "text": "EFF: 702 expired at midnight 12 June 2026; EFF credits Trump's nomination of Bill Pulte (FHFA director) as DNI, replacing Tulsi Gabbard who had announced her resignation the previous month, as the trigger; Senate Democrats then refused to move their reauthorisation bill and the House refused a short-term renewal.",
+     "strength": "reported",
+     "sources": [
+      "us10a_eff"
+     ]
+    },
+    {
+     "text": "AP Feb 2026: the administration argued the IRS-ICE agreement 'helps carry out President Donald Trump's agenda to secure U.S. borders'; AG Pam Bondi called the D.C. Circuit ruling (Edwards, 24 Feb 2026) a 'crucial victory'.",
+     "strength": "reported",
+     "sources": [
+      "us10a_abc"
+     ]
+    },
+    {
+     "text": "NPR 17 Apr 2026: Section 702 set to expire Monday 20 April 2026; House votes on five-year and the 18-month renewal Trump demanded failed; 10-day extension to 30 April.",
+     "strength": "reported",
+     "sources": [
+      "us10a_wamc"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us10a_lawfare",
+     "url": "https://www.lawfaremedia.org/article/expanding-surveillance-powers-israel-s-draft-bill-to-revise-shin-bet-law",
+     "label": "Lawfare, 'Expanding Surveillance Powers: Israel's Draft Bill to Revise Shin Bet Law', 21 March 2024"
+    },
+    {
+     "key": "us10a_coda",
+     "url": "https://codamail.com/articles/privacy-law-directory/international/israel.html",
+     "label": "Codamail, Privacy law directory: Israel"
+    },
+    {
+     "key": "us10a_toi_saar",
+     "url": "https://www.timesofisrael.com/saar-report-on-illegal-nso-spyware-use-was-incorrect-no-need-for-state-inquiry/",
+     "label": "Times of Israel, Sa'ar: report on illegal NSO spyware use was incorrect, 22 February 2022"
+    },
+    {
+     "key": "us10a_toi_shinbet",
+     "url": "https://www.timesofisrael.com/government-okays-shin-bet-to-fight-crime-in-arab-society-sparking-rights-concerns/",
+     "label": "Times of Israel, Government okays Shin Bet to fight crime in Arab society, 16 July 2026"
+    },
+    {
+     "key": "us10a_jurist",
+     "url": "https://www.jurist.org/news/2022/01/israel-police-accused-of-using-pegasus-spyware-to-illegally-spy-on-citizens",
+     "label": "Jurist, Israel police accused of using Pegasus spyware, January 2022"
+    },
+    {
+     "key": "us10a_eff",
+     "url": "https://www.eff.org/deeplinks/2026/06/victory-702-has-expired",
+     "label": "EFF, 'Victory: 702 Has Expired', June 2026"
+    },
+    {
+     "key": "us10a_abc",
+     "url": "https://abc7news.com/post/court-says-irs-can-continue-share-immigrants-taxpayer-data-ice/18646151/",
+     "label": "AP via ABC7, 'Court says IRS can continue to share immigrants' taxpayer data with ICE', 24 February 2026"
+    },
+    {
+     "key": "us10a_wamc",
+     "url": "https://www.wamc.org/2026-04-17/house-extends-surveillance-powers-for-10-days",
+     "label": "NPR via WAMC, 'House extends surveillance powers for 10 days', 17 April 2026"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "nodes": [],
+ "edges": [
+  {
+   "f": "nikolic",
+   "t": "epstein_estate",
+   "label": "named successor executor in the will Epstein signed days before his death (Aug 2019); said he was not consulted and would not serve",
+   "type": "executor",
+   "status": "verified",
+   "src": "pass 11 (coverage audit), 20 Nov 2026",
+   "refs": [
+    {
+     "t": "BNN Bloomberg, 19 Aug 2019: Epstein's 11th-hour executor is ex-science adviser to Bill Gates",
+     "u": "https://www.bnnbloomberg.ca/epstein-s-11th-hour-executor-is-ex-science-advisor-to-bill-gates-1.1303888"
+    }
+   ]
+  }
+ ],
+ "remove_edges": [
+  [
+   "ruemmler",
+   "epstein",
+   "correspondence; gifts (reported)"
+  ]
+ ],
+ "status": [
+  [
+   "johnson",
+   "efta",
+   "House sent home early",
+   "verified",
+   "PBS NewsHour/AP, 22 Jul 2025: speaker ends House session early as GOP clashes over Epstein files vote (https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote)",
+   "=ended the House session early on 22 July 2025 rather than allow an Epstein files vote; said the White House should release them itself"
+  ],
+  [
+   "chomsky",
+   "epstein",
+   "met after 2008",
+   "verified",
+   "Times of Israel, 19 May 2023, on the Wall Street Journal report (https://www.timesofisrael.com/epstein-linked-accounts-transferred-funds-to-noam-chomsky-bard-college-head/)",
+   "=said he \"knew him and we met occasionally\" after 2008; about $270,000 of his own money moved through Epstein's office (his account); Epstein arranged a 2015 meeting with Ehud Barak"
+  ]
+ ]
+}

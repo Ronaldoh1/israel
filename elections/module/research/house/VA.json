@@ -1,0 +1,522 @@
+{
+ "state": "VA",
+ "checked": "2026-10-14",
+ "cites": {
+  "wiki_va": {
+   "t": "2026 United States House of Representatives elections in Virginia — Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Virginia"
+  },
+  "gp_va": {
+   "t": "The Green Papers: Virginia 2026 General Election",
+   "u": "https://www.thegreenpapers.com/G26/VA"
+  },
+  "whro_va02": {
+   "t": "Luria and Kiggans rematch in Virginia's 2nd Congressional District — WHRO (2026-09-28)",
+   "u": "https://www.whro.org/elections/2026-09-28/luria-and-kiggans-rematch-in-virginias-2nd-congressional-district-among-most-watched-races-in-nation"
+  },
+  "vascope_sep": {
+   "t": "Virginia Scope, September 2026 archive (Luria lawsuit over independent candidates' signatures)",
+   "u": "https://www.virginiascope.com/2026/09/"
+  }
+ },
+ "races": [
+  {
+   "race": "VA-01",
+   "incumbent": {
+    "name": "Rob Wittman",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Rob Wittman",
+     "party": "R",
+     "incumbent": true,
+     "rec": "va-01-robert-wittman",
+     "fec": [
+      "H8VA01147"
+     ]
+    },
+    {
+     "name": "Shannon Taylor",
+     "party": "D",
+     "incumbent": false,
+     "rec": "va-01-shannon-taylor",
+     "fec": [
+      "H6VA01299"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Taylor won the Aug 4 Democratic primary with 52.8% to Salaam Bhatti's 19.9%. The 2021 map is in use after the Virginia Supreme Court voided the April 2026 redistricting referendum on May 8.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-02",
+   "incumbent": {
+    "name": "Jen Kiggans",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jen Kiggans",
+     "party": "R",
+     "incumbent": true,
+     "rec": "va-02-jennifer-kiggans",
+     "fec": [
+      "H2VA02064"
+     ]
+    },
+    {
+     "name": "Elaine Luria",
+     "party": "D",
+     "incumbent": false,
+     "rec": "va-02-elaine-luria",
+     "fec": [
+      "H6VA02198",
+      "H8VA02111"
+     ]
+    },
+    {
+     "name": "Matt Baker",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-02-matthew-baker",
+     "fec": [
+      "H6VA02263"
+     ]
+    },
+    {
+     "name": "Bishop Staten",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-02-geral-staten",
+     "fec": [
+      "H6VA02222"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Luria sued to remove Staten over his petition signatures but dropped the suit in September (WHRO).",
+   "c": [
+    "wiki_va",
+    "gp_va",
+    "whro_va02",
+    "vascope_sep"
+   ]
+  },
+  {
+   "race": "VA-03",
+   "incumbent": {
+    "name": "Bobby Scott",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Bobby Scott",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-03-robert-scott",
+     "fec": [
+      "H6VA01117"
+     ]
+    },
+    {
+     "name": "Edwin Rivera Jr.",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-03-edwin-rivera",
+     "fec": [
+      "H6VA03121"
+     ]
+    },
+    {
+     "name": "Makiba Gaines",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-03-makiba-gaines",
+     "fec": [
+      "H6VA02248"
+     ]
+    },
+    {
+     "name": "Steve Woll",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-03-stephen-woll",
+     "fec": [
+      "H6VA03139"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Dawn Vasquez (I) appears in Wikipedia's candidate list but on neither source's ballot list.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-04",
+   "incumbent": {
+    "name": "Jennifer McClellan",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Jennifer McClellan",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-04-jennifer-mcclellan",
+     "fec": [
+      "H4VA04066"
+     ]
+    },
+    {
+     "name": "Robert Murray Jr.",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-04-robert-murray",
+     "fec": [
+      "H6VA04129"
+     ]
+    },
+    {
+     "name": "Joan Andrews Bell",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-04-joan-bell",
+     "fec": [
+      "H6VA04137"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-05",
+   "incumbent": {
+    "name": "John McGuire",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "John McGuire",
+     "party": "R",
+     "incumbent": true,
+     "rec": "va-05-john-mcguire",
+     "fec": [
+      "H0VA07133",
+      "H2VA07196"
+     ]
+    },
+    {
+     "name": "Tom Perriello",
+     "party": "D",
+     "incumbent": false,
+     "rec": "va-05-thomas-perriello",
+     "fec": [
+      "H6VA05217",
+      "H8VA05106"
+     ]
+    },
+    {
+     "name": "Cooke Harvey",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-05-cooke-harvey",
+     "fec": [
+      "H6VA05241"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Aug 4 primaries: McGuire 84.2% (R); Perriello 79.8% (D).",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-06",
+   "incumbent": {
+    "name": "Ben Cline",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Ben Cline",
+     "party": "R",
+     "incumbent": true,
+     "rec": "va-06-benjamin-cline",
+     "fec": [
+      "H8VA06104"
+     ]
+    },
+    {
+     "name": "Beth Macy",
+     "party": "D",
+     "incumbent": false,
+     "rec": "va-06-beth-macy",
+     "fec": [
+      "H6VA06173"
+     ]
+    }
+   ],
+   "status": "set",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-07",
+   "incumbent": {
+    "name": "Eugene Vindman",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Eugene Vindman",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-07-yevgeny-vindman",
+     "fec": [
+      "H4VA07234"
+     ]
+    },
+    {
+     "name": "Doug Ollivant",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-07-douglas-ollivant",
+     "fec": [
+      "H6VA07205"
+     ]
+    },
+    {
+     "name": "Taner Lopez",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Alaha Ahrar",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-07-alaha-ahrar",
+     "fec": [
+      "H6VA07353"
+     ]
+    },
+    {
+     "name": "Joshua Ertle",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-07-joshua-ertle",
+     "fec": [
+      "H6VA07346"
+     ]
+    },
+    {
+     "name": "Randall Terry",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-07-randall-terry",
+     "fec": [
+      "H6VA07312"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Ollivant won the Aug 4 GOP primary with 56.6% to Phillip Harding's 30.6%. Wikipedia notes he pulled out of a forum for health reasons but does not say he left the race.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-08",
+   "incumbent": {
+    "name": "Don Beyer",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Don Beyer",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-08-donald-beyer",
+     "fec": [
+      "H4VA08224"
+     ]
+    },
+    {
+     "name": "Tony Sabio",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-08-tony-sabio",
+     "fec": [
+      "H6VA08252"
+     ]
+    },
+    {
+     "name": "Shelly Arnoldi",
+     "party": "L",
+     "incumbent": false,
+     "rec": "",
+     "fec": []
+    },
+    {
+     "name": "Tim Sharman",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-08-tim-sharman",
+     "fec": [
+      "H6VA08336"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Beyer won renomination 67.1% to Mo Seifeldein's 18.0%.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-09",
+   "incumbent": {
+    "name": "Morgan Griffith",
+    "party": "R",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Morgan Griffith",
+     "party": "R",
+     "incumbent": true,
+     "rec": "va-09-h-griffith",
+     "fec": [
+      "H0VA09055"
+     ]
+    },
+    {
+     "name": "Joy Powers",
+     "party": "D",
+     "incumbent": false,
+     "rec": "va-09-joy-powers",
+     "fec": [
+      "H6VA09136"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Powers won the Democratic primary 51.7% to Adam Murphy's 36.4%.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-10",
+   "incumbent": {
+    "name": "Suhas Subramanyam",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "Suhas Subramanyam",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-10-suhas-subramanyam",
+     "fec": [
+      "H4VA10279"
+     ]
+    },
+    {
+     "name": "Dave Beckwith",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-10-david-beckwith",
+     "fec": [
+      "H2VA10273"
+     ]
+    },
+    {
+     "name": "Ahsen Malik",
+     "party": "I",
+     "incumbent": false,
+     "rec": "va-10-ahsen-malik",
+     "fec": [
+      "H6VA10274"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Beckwith won the GOP primary with 72.6%. Green Papers lists Malik on the ballot; Wikipedia lists him without a clear ballot status. Steven Goforth and Omar Morsy are write-ins.",
+   "c": [
+    "wiki_va",
+    "gp_va"
+   ]
+  },
+  {
+   "race": "VA-11",
+   "incumbent": {
+    "name": "James Walkinshaw",
+    "party": "D",
+    "status": "Running"
+   },
+   "nominees": [
+    {
+     "name": "James Walkinshaw",
+     "party": "D",
+     "incumbent": true,
+     "rec": "va-11-james-walkinshaw",
+     "fec": [
+      "H6VA11066"
+     ]
+    },
+    {
+     "name": "Arthur Purves",
+     "party": "R",
+     "incumbent": false,
+     "rec": "va-11-arthur-purves",
+     "fec": [
+      "H6VA11249"
+     ]
+    },
+    {
+     "name": "Dianne Blais",
+     "party": "G",
+     "incumbent": false,
+     "rec": "va-11-dianne-blais",
+     "fec": [
+      "H4VA10154"
+     ]
+    }
+   ],
+   "status": "set",
+   "note": "Nominees are from Green Papers only; the fetched Wikipedia text did not reach this district.",
+   "c": [
+    "gp_va"
+   ]
+  }
+ ]
+}

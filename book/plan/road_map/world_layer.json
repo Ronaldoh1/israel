@@ -1,0 +1,928 @@
+{
+ "_note": "World layer (Nov 2026). Built by world_layer.py; do not edit by hand.",
+ "node_notes": {
+  "us_congress": "Congress passed resolutions of support (1922 Lodge-Fish, the 1945 concurrent resolution) but never voted to create or recognize a state; those were executive acts. Named champions: Lodge, Fish, Wagner, Taft, Wright, Compton, Celler, Bloom; two-thirds of the Senate joined the American Palestine Committee. No documented campaign money from Zionist organizations to members of Congress before 1948 was found in the sources checked; the documented levers were letters, telegrams, platform planks and votes. The one documented campaign money in this map is Feinberg and Kaufmann's $100,000 for Truman in 1948."
+ },
+ "edges": [
+  {
+   "f": "glazer",
+   "t": "lodge_fish",
+   "type": "pressure",
+   "status": "verified",
+   "src": "jvl_lodge_fish",
+   "label": "American Zionist leaders asked Lodge and Fish to introduce the resolution; the JVL credits the lobbying work of Rabbi Simon Glazer."
+  },
+  {
+   "f": "lodge",
+   "t": "lodge_fish",
+   "type": "drafting",
+   "status": "verified",
+   "src": "jvl_lodge_fish; wiki_lodge_fish",
+   "label": "Senator Henry Cabot Lodge (R-Mass.) introduced the resolution endorsing the Balfour Declaration."
+  },
+  {
+   "f": "fish",
+   "t": "lodge_fish",
+   "type": "drafting",
+   "status": "verified",
+   "src": "jvl_lodge_fish; wiki_lodge_fish",
+   "label": "Representative Hamilton Fish III (R-N.Y.) introduced it in the House."
+  },
+  {
+   "f": "state_dept",
+   "t": "lodge_fish",
+   "type": "opposition",
+   "status": "verified",
+   "src": "jvl_lodge_fish; wjc_lodge_fish",
+   "label": "The State Department (and the New York Times) opposed the resolution."
+  },
+  {
+   "f": "us_congress",
+   "t": "lodge_fish",
+   "type": "official act",
+   "status": "verified",
+   "src": "jvl_lodge_fish; wjc_lodge_fish",
+   "label": "House passed it 30 June 1922; the Senate by unanimous consent 13 July 1922."
+  },
+  {
+   "f": "harding",
+   "t": "lodge_fish",
+   "type": "official act",
+   "status": "verified",
+   "src": "wiki_lodge_fish; jvl_lodge_fish",
+   "label": "21 Sep 1922: Harding signed Public Resolution 67-73, favouring a national home and protecting the rights of \"Christian and all other non-Jewish communities\"."
+  },
+  {
+   "f": "sokolow",
+   "t": "harding",
+   "type": "meeting",
+   "status": "verified",
+   "src": "israeled_sokolow_harding",
+   "label": "13 Jan 1922: Sokolow met Harding for nearly an hour during the Keren Hayesod tour (whether it touched the resolution is not recorded)."
+  },
+  {
+   "f": "lodge_fish",
+   "t": "balfour_decl",
+   "type": "association",
+   "status": "verified",
+   "src": "wiki_lodge_fish; balfour_letter",
+   "label": "The resolution repeated the Balfour Declaration's phrase \"a national home for the Jewish people\"."
+  },
+  {
+   "f": "wright_j",
+   "t": "wright_compton",
+   "type": "drafting",
+   "status": "verified",
+   "src": "djn_1944_hearings; aja_azec_dec1944",
+   "label": "Jan 1944: Rep. James Wright (D-Pa.) co-sponsored the House resolution for a \"free and democratic Jewish commonwealth\"."
+  },
+  {
+   "f": "compton_r",
+   "t": "wright_compton",
+   "type": "drafting",
+   "status": "verified",
+   "src": "djn_1944_hearings; aja_azec_dec1944",
+   "label": "Rep. Ranulf Compton (R-Conn.) co-sponsored it."
+  },
+  {
+   "f": "wagner",
+   "t": "wright_compton",
+   "type": "drafting",
+   "status": "verified",
+   "src": "djn_1944_hearings; aja_azec_dec1944",
+   "label": "Sen. Robert Wagner (D-N.Y.) sponsored the Senate version."
+  },
+  {
+   "f": "taft",
+   "t": "wright_compton",
+   "type": "drafting",
+   "status": "verified",
+   "src": "djn_1944_hearings; aja_azec_dec1944",
+   "label": "Sen. Robert Taft (R-Ohio) co-sponsored the Senate version."
+  },
+  {
+   "f": "azec",
+   "t": "wright_compton",
+   "type": "pressure",
+   "status": "verified",
+   "src": "aja_azec_local_1944",
+   "label": "Jan 1944: the Emergency Council's local committees began their first nationwide letter campaign for the resolutions."
+  },
+  {
+   "f": "lazaron",
+   "t": "wright_compton",
+   "type": "opposition",
+   "status": "verified",
+   "src": "djn_1944_hearings",
+   "label": "Rabbi Morris Lazaron testified against: Zionism was an internal Jewish matter, not one for Congress."
+  },
+  {
+   "f": "marshall_g",
+   "t": "wright_compton",
+   "type": "opposition",
+   "status": "verified",
+   "src": "djn_1944_marshall",
+   "label": "Mar 1944: Army Chief of Staff Marshall asked Congress to postpone action for military reasons."
+  },
+  {
+   "f": "stimson",
+   "t": "wright_compton",
+   "type": "opposition",
+   "status": "verified",
+   "src": "djn_1944_marshall; aja_azec_dec1944",
+   "label": "Mar 1944: Secretary of War Stimson opposed it on military grounds; it was put aside."
+  },
+  {
+   "f": "stimson",
+   "t": "taft",
+   "type": "correspondence",
+   "status": "verified",
+   "src": "aja_silver_1944",
+   "label": "Oct 1944: Stimson wrote to Taft that political considerations now outweighed military ones; the objection was withdrawn days before the election."
+  },
+  {
+   "f": "state_dept",
+   "t": "wright_compton",
+   "type": "opposition",
+   "status": "verified",
+   "src": "aja_azec_dec1944; aja_silver_1944",
+   "label": "Dec 1944: after House committee approval (30 Nov), action deferred again at the State Department's insistence."
+  },
+  {
+   "f": "azec",
+   "t": "platforms1944",
+   "type": "pressure",
+   "status": "verified",
+   "src": "aja_azec_appraisal_1944",
+   "label": "Summer 1944: both parties adopted Palestine planks, \"the first time in American history\", by the council's own appraisal."
+  },
+  {
+   "f": "taft",
+   "t": "platforms1944",
+   "type": "leadership",
+   "status": "verified",
+   "src": "w_jrb_1944",
+   "label": "Taft chaired the Republican Resolutions Committee and invited Silver to give the convention benediction; the GOP plank called for \"unrestricted immigration and land ownership\"."
+  },
+  {
+   "f": "silver",
+   "t": "taft",
+   "type": "collaboration",
+   "status": "verified",
+   "src": "w_jrb_1944",
+   "label": "Silver had a close relationship with Taft and lobbied Republican leaders on the plank."
+  },
+  {
+   "f": "celler",
+   "t": "platforms1944",
+   "type": "pressure",
+   "status": "verified",
+   "src": "w_jrb_1944",
+   "label": "Celler sat on the Democratic Resolutions Committee and backed Wise's push for a stronger plank; he warned the White House of Jewish voters' anger over the White Paper."
+  },
+  {
+   "f": "wise",
+   "t": "platforms1944",
+   "type": "pressure",
+   "status": "verified",
+   "src": "w_jrb_1944",
+   "label": "Wise lobbied Democratic delegates in Chicago for a plank to match the Republicans'."
+  },
+  {
+   "f": "wise",
+   "t": "fdr",
+   "type": "meeting",
+   "status": "verified",
+   "src": "w_jrb_1944",
+   "label": "Wise secured a meeting with Roosevelt, who weakened the Palestine statement Wise had drafted."
+  },
+  {
+   "f": "us_congress",
+   "t": "concres1945",
+   "type": "official act",
+   "status": "verified",
+   "src": "frus1945_concres",
+   "label": "17 and 19 Dec 1945: both houses adopted a concurrent resolution, now calling for a \"democratic commonwealth\" with equal rights \"regardless of race or creed\"."
+  },
+  {
+   "f": "apc",
+   "t": "concres1945",
+   "type": "pressure",
+   "status": "verified",
+   "src": "wiki_american_palestine_committee",
+   "label": "The 1945 resolution had the American Palestine Committee's support."
+  },
+  {
+   "f": "ccp",
+   "t": "concres1945",
+   "type": "pressure",
+   "status": "verified",
+   "src": "wiki_american_palestine_committee",
+   "label": "And the Christian Council on Palestine's."
+  },
+  {
+   "f": "celler",
+   "t": "us_congress",
+   "type": "membership",
+   "status": "verified",
+   "src": "w_celler",
+   "label": "Rep. Emanuel Celler of Brooklyn, a leading House supporter."
+  },
+  {
+   "f": "bloom",
+   "t": "us_congress",
+   "type": "leadership",
+   "status": "verified",
+   "src": "w_sol_bloom",
+   "label": "Sol Bloom chaired the House Foreign Affairs Committee and was a leading supporter."
+  },
+  {
+   "f": "azec",
+   "t": "bloom",
+   "type": "pressure",
+   "status": "verified",
+   "src": "aja_azec_local_1944",
+   "label": "Bloom was a target of the council's telegram campaigns: it pressed allies as well as opponents."
+  },
+  {
+   "f": "hcnl",
+   "t": "fara",
+   "type": "legal basis",
+   "status": "verified",
+   "src": "djn_bergson_fara_1944; ushmm_peter_bergson",
+   "label": "June 1944: the Hebrew Committee of National Liberation registered as a foreign agent, naming the \"Hebrew nation\" as principal."
+  },
+  {
+   "f": "bergson",
+   "t": "hcnl",
+   "type": "leadership",
+   "status": "verified",
+   "src": "djn_bergson_fara_1944",
+   "label": "Hillel Kook (\"Peter Bergson\") led it and opened a \"Hebrew Embassy\" in Washington."
+  },
+  {
+   "f": "state_dept",
+   "t": "fbi",
+   "type": "instruction",
+   "status": "verified",
+   "src": "jta_bergson_fbi",
+   "label": "FBI files (FOIA, Wyman Institute): the Bergson investigation began at the State Department's instigation; informants, mail opening, trash searches."
+  },
+  {
+   "f": "bergson",
+   "t": "hull",
+   "type": "opposition",
+   "status": "verified",
+   "src": "jta_bergson_fbi",
+   "label": "An FBI memo: Bergson had \"been in the hair of\" Secretary of State Cordell Hull."
+  },
+  {
+   "f": "waldman",
+   "t": "bergson",
+   "type": "opposition",
+   "status": "verified",
+   "src": "jta_bergson_fbi; jewishpress_bergson_part2",
+   "label": "Morris Waldman of the American Jewish Committee urged officials to deport or draft Kook."
+  },
+  {
+   "f": "goldmann",
+   "t": "bergson",
+   "type": "opposition",
+   "status": "verified",
+   "src": "jta_bergson_fbi; jewishpress_bergson_part2",
+   "label": "Nahum Goldmann also urged deportation or the draft."
+  },
+  {
+   "f": "waldman",
+   "t": "ajc",
+   "type": "membership",
+   "status": "verified",
+   "src": "jta_bergson_fbi",
+   "label": "Waldman of the American Jewish Committee."
+  },
+  {
+   "f": "oss",
+   "t": "jewish_agency",
+   "type": "surveillance",
+   "status": "verified",
+   "src": "forward_oss_palestine_desk",
+   "label": "The OSS Foreign Nationalities Branch ran a Palestine desk tracking Zionist activity, largely from volunteered information."
+  },
+  {
+   "f": "oss",
+   "t": "sharett",
+   "type": "surveillance",
+   "status": "verified",
+   "src": "forward_oss_palestine_desk",
+   "label": "Its list reportedly included Moshe Shertok (Sharett)."
+  },
+  {
+   "f": "haganah",
+   "t": "shai",
+   "type": "branch",
+   "status": "verified",
+   "src": "shai_wiki",
+   "label": "1940: the Haganah founded the Shai, its intelligence and counter-espionage service."
+  },
+  {
+   "f": "shai",
+   "t": "fbi",
+   "type": "association",
+   "status": "reported",
+   "src": "medium_zionist; ips_espionage",
+   "label": "One account: the Shai had unregistered American branches in New York and Detroit, the FBI knew, and the Justice Department declined to act (contested)."
+  },
+  {
+   "f": "fbi",
+   "t": "bernstein",
+   "type": "surveillance",
+   "status": "reported",
+   "src": "ips_espionage",
+   "label": "According to the FBI, attorney Bernstein trained Mossad agents, incorporated arms-smuggling companies and watched Arab UN delegates."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "czechoslovakia",
+   "type": "operation",
+   "status": "verified",
+   "src": "mexico_arms",
+   "label": "Purchases were routed through neutral countries: Czechoslovakia, Panama, Mexico, Canada and France."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "panama",
+   "type": "operation",
+   "status": "verified",
+   "src": "mexico_arms",
+   "label": "Panama was a documented transit country."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "mexico",
+   "type": "operation",
+   "status": "verified",
+   "src": "mexico_arms",
+   "label": "Mexico was a named, documented transit point."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "canada",
+   "type": "operation",
+   "status": "verified",
+   "src": "mexico_arms",
+   "label": "Canada was a documented transit country."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "france_gov",
+   "type": "operation",
+   "status": "verified",
+   "src": "mexico_arms",
+   "label": "France was a documented transit country."
+  },
+  {
+   "f": "sonneborn_inst",
+   "t": "haganah",
+   "type": "supply",
+   "status": "verified",
+   "src": "mexico_arms_1948",
+   "label": "Some 800 disguised shipments, about 2,400 tons; most arrived."
+  },
+  {
+   "f": "schwimmer",
+   "t": "lap",
+   "type": "operation",
+   "status": "verified",
+   "src": "schwimmer_wiki",
+   "label": "One account: a fictitious Panamanian airline, Lineas Aereas de Panama, carried the aircraft."
+  },
+  {
+   "f": "schwimmer",
+   "t": "service_airways",
+   "type": "operation",
+   "status": "verified",
+   "src": "sdjw_schwimmer",
+   "label": "Other account: the charter firm Service Airways Inc. was the cover."
+  },
+  {
+   "f": "schwimmer",
+   "t": "brazil",
+   "type": "operation",
+   "status": "verified",
+   "src": "schwimmer_wiki",
+   "label": "About 30 surplus warplanes went via Panama, Brazil and Casablanca."
+  },
+  {
+   "f": "winters",
+   "t": "haganah",
+   "type": "supply",
+   "status": "verified",
+   "src": "schwimmer_wiki; sdjw_winters",
+   "label": "Charles Winters exported B-17 bombers (two or three by different accounts)."
+  },
+  {
+   "f": "doj",
+   "t": "winters",
+   "type": "litigation",
+   "status": "verified",
+   "src": "nbc_bush_pardons_winters; sdjw_winters",
+   "label": "Convicted under the Neutrality Act (1949); served 18 months; pardoned posthumously (2008, Bush; another account says 2001, Clinton)."
+  },
+  {
+   "f": "doj",
+   "t": "greenspun",
+   "type": "litigation",
+   "status": "verified",
+   "src": "nbc_bush_pardons_winters",
+   "label": "Hank Greenspun convicted under the Neutrality Act, no prison; pardoned by Kennedy in 1961."
+  },
+  {
+   "f": "greenspun",
+   "t": "haganah",
+   "type": "supply",
+   "status": "verified",
+   "src": "nbc_bush_pardons_winters",
+   "label": "Greenspun was part of the arms operation tried after the war."
+  },
+  {
+   "f": "meir",
+   "t": "czechoslovakia",
+   "type": "funding",
+   "status": "verified",
+   "src": "reformjudaism_golda; jwa_golda_50m",
+   "label": "The reported $50 million from Golda Meyerson's 1948 American tour financed arms purchases, including Czechoslovakia's."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "balak",
+   "type": "operation",
+   "status": "verified",
+   "src": "wiki_operation_balak",
+   "label": "May-Aug 1948: the airlift from Žatec (\"Zebra\") to Ekron carried arms and about 25 Avia S-199 fighters (101 Squadron)."
+  },
+  {
+   "f": "balak",
+   "t": "zatec",
+   "type": "operation",
+   "status": "verified",
+   "src": "wiki_operation_balak",
+   "label": "Base: Žatec airfield, code-named \"Zebra\"."
+  },
+  {
+   "f": "avia",
+   "t": "balak",
+   "type": "supply",
+   "status": "verified",
+   "src": "machal_avia_s199",
+   "label": "Avia S-199, a Czech-built Messerschmitt Bf 109 derivative, flown in crated."
+  },
+  {
+   "f": "balak",
+   "t": "yugoslavia",
+   "type": "operation",
+   "status": "verified",
+   "src": "wiki_operation_balak",
+   "label": "After a defector exposed Zebra, operations moved to Nikšić in Yugoslavia."
+  },
+  {
+   "f": "us_gov",
+   "t": "balak",
+   "type": "opposition",
+   "status": "verified",
+   "src": "wiki_operation_balak",
+   "label": "The United States pressed the UN to close the Zebra base."
+  },
+  {
+   "f": "siroky",
+   "t": "czechoslovakia",
+   "type": "membership",
+   "status": "verified",
+   "src": "jpost_czech_arms_saved_israel; wiki_czech_arms_israel",
+   "label": "1952: Foreign Minister Široký reported receipts of almost $14.5 million from the sales."
+  },
+  {
+   "f": "stalin",
+   "t": "czechoslovakia",
+   "type": "instruction",
+   "status": "verified",
+   "src": "jpost_czech_arms_saved_israel",
+   "label": "The sales went ahead with Stalin's consent."
+  },
+  {
+   "f": "uk",
+   "t": "arab_league",
+   "type": "supply",
+   "status": "verified",
+   "src": "jpost_czech_arms_saved_israel; wiki_czech_arms_israel",
+   "label": "Britain supplied aircraft and training to the Arab air forces."
+  },
+  {
+   "f": "nicaragua",
+   "t": "jewish_agency",
+   "type": "funding",
+   "status": "verified",
+   "src": "israelaffairs_italy",
+   "label": "Somoza's Nicaragua extended $3 million in letters of credit for arms buying."
+  },
+  {
+   "f": "france_gov",
+   "t": "irgun",
+   "type": "supply",
+   "status": "verified",
+   "src": "w_wp_altalena",
+   "label": "Secret agreement approved by Foreign Minister Bidault: weapons worth 153 million francs for the Altalena, sailed from Port-de-Bouc 11 June 1948 (text of the agreement not found; motives unclear)."
+  },
+  {
+   "f": "bidault",
+   "t": "france_gov",
+   "type": "leadership",
+   "status": "verified",
+   "src": "w_wp_altalena",
+   "label": "Georges Bidault, French Foreign Minister."
+  },
+  {
+   "f": "altalena",
+   "t": "irgun",
+   "type": "operation",
+   "status": "verified",
+   "src": "w_wp_altalena",
+   "label": "The Irgun's arms ship (about 940 volunteers)."
+  },
+  {
+   "f": "mossad_aliyah",
+   "t": "haganah",
+   "type": "branch",
+   "status": "verified",
+   "src": "ushmm_aliyah_bet",
+   "label": "1938: the Mossad LeAliyah Bet was created as a branch of the Haganah to organize clandestine immigration."
+  },
+  {
+   "f": "brihah",
+   "t": "mossad_aliyah",
+   "type": "coordination",
+   "status": "verified",
+   "src": "hsb_aliyah_bet_exodus",
+   "label": "Brihah, run with Mossad emissaries, partisans and youth movements, moved nearly 200,000 survivors from DP camps to ports in Italy, France, Yugoslavia and Greece."
+  },
+  {
+   "f": "brihah",
+   "t": "yugoslavia",
+   "type": "operation",
+   "status": "verified",
+   "src": "hsb_aliyah_bet_exodus",
+   "label": "Yugoslav ports were among the exits."
+  },
+  {
+   "f": "brihah",
+   "t": "greece",
+   "type": "operation",
+   "status": "verified",
+   "src": "hsb_aliyah_bet_exodus",
+   "label": "Greek ports were among the exits."
+  },
+  {
+   "f": "brihah",
+   "t": "france_gov",
+   "type": "operation",
+   "status": "verified",
+   "src": "hsb_aliyah_bet_exodus",
+   "label": "French ports were among the exits."
+  },
+  {
+   "f": "mossad_aliyah",
+   "t": "exodus",
+   "type": "operation",
+   "status": "verified",
+   "src": "rs_rd5_ushmm_exodus; ushmm_aliyah_bet",
+   "label": "July 1947: the Exodus 1947 sailed from Sète, France, with more than 4,500 passengers."
+  },
+  {
+   "f": "uk",
+   "t": "exodus",
+   "type": "violence",
+   "status": "verified",
+   "src": "ushmm_cyprus_camps",
+   "label": "Boarded in international waters; passengers returned to camps in Germany."
+  },
+  {
+   "f": "uk",
+   "t": "cyprus_camps",
+   "type": "official act",
+   "status": "verified",
+   "src": "ushmm_cyprus_camps",
+   "label": "From Aug 1946 Britain interned intercepted immigrants on Cyprus: about 52,000 by 1948; last camp closed Feb 1949."
+  },
+  {
+   "f": "gromyko",
+   "t": "unga",
+   "type": "proposal",
+   "status": "verified",
+   "src": "israeled_gromyko_speech",
+   "label": "14 May 1947: Gromyko said a single state was preferred but partition was a justifiable alternative, reversing decades of Soviet anti-Zionism."
+  },
+  {
+   "f": "ussr",
+   "t": "res181",
+   "type": "official act",
+   "status": "verified",
+   "src": "washinst_who_saved_israel",
+   "label": "Nov 1947: the USSR and its satellites voted for partition; in March 1948 Moscow held to it at the Security Council while Washington turned to trusteeship."
+  },
+  {
+   "f": "ussr",
+   "t": "israel_gov",
+   "type": "official act",
+   "status": "verified",
+   "src": "wiki_soviet_arab_israeli",
+   "label": "17 May 1948: the first de jure recognition of Israel."
+  },
+  {
+   "f": "aranha",
+   "t": "res181",
+   "type": "official act",
+   "status": "verified",
+   "src": "un_181_records",
+   "label": "Assembly president Oswaldo Aranha arranged the three-day postponement before the decisive vote."
+  },
+  {
+   "f": "us_gov",
+   "t": "haiti",
+   "type": "pressure",
+   "status": "verified",
+   "src": "militaryhistory_partition_plan",
+   "label": "Haiti moved to yes after direct communication from the American executive."
+  },
+  {
+   "f": "us_gov",
+   "t": "liberia",
+   "type": "pressure",
+   "status": "verified",
+   "src": "militaryhistory_partition_plan",
+   "label": "Liberia's ambassador complained the US delegation threatened aid cuts."
+  },
+  {
+   "f": "us_gov",
+   "t": "philippines",
+   "type": "pressure",
+   "status": "verified",
+   "src": "militaryhistory_partition_plan",
+   "label": "The Philippines came under pressure through economic ties and switched to yes."
+  },
+  {
+   "f": "firestone",
+   "t": "liberia",
+   "type": "influence",
+   "status": "reported",
+   "src": "militaryhistory_partition_plan",
+   "label": "Firestone held a rubber concession of about 1.1 million acres, Liberia's dominant employer; Michael Cohen ties it to Liberia's switch (historian's reading)."
+  },
+  {
+   "f": "romulo",
+   "t": "philippines",
+   "type": "membership",
+   "status": "verified",
+   "src": "sagepub_price_resisting_partition",
+   "label": "Gen. Carlos Romulo wrote of being recalled and overruled by his own president."
+  },
+  {
+   "f": "cuba",
+   "t": "res181",
+   "type": "opposition",
+   "status": "verified",
+   "src": "sagepub_price_resisting_partition",
+   "label": "Cuba voted no \"in spite of the pressure that has been brought to bear upon us.\""
+  },
+  {
+   "f": "sandstrom",
+   "t": "unscop",
+   "type": "leadership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "2 June 1947: Justice Emil Sandström of Sweden elected chairman."
+  },
+  {
+   "f": "canada",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "czechoslovakia",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "guatemala",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "netherlands",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "peru",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "sweden",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "uruguay",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the majority of seven that recommended partition with economic union."
+  },
+  {
+   "f": "india",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the minority of three that recommended a single federal state."
+  },
+  {
+   "f": "iran",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the minority of three that recommended a single federal state."
+  },
+  {
+   "f": "yugoslavia",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member; one of the minority of three that recommended a single federal state."
+  },
+  {
+   "f": "australia",
+   "t": "unscop",
+   "type": "membership",
+   "status": "verified",
+   "src": "rs_rd5_unscop_report",
+   "label": "UNSCOP member (abstained on the report)."
+  },
+  {
+   "f": "granados",
+   "t": "guatemala",
+   "type": "membership",
+   "status": "verified",
+   "src": "w_wp_granados",
+   "label": "Guatemala's UN ambassador and UNSCOP member."
+  },
+  {
+   "f": "granados",
+   "t": "res181",
+   "type": "pressure",
+   "status": "verified",
+   "src": "w_wp_granados",
+   "label": "Organized a lobby of Central and South American states for partition."
+  },
+  {
+   "f": "guatemala",
+   "t": "israel_gov",
+   "type": "official act",
+   "status": "verified",
+   "src": "w_wp_granados",
+   "label": "First Latin American state to recognize Israel."
+  },
+  {
+   "f": "uk",
+   "t": "israel_gov",
+   "type": "official act",
+   "status": "verified",
+   "src": "rs_rd5_langham_exit",
+   "label": "Britain recognized Israel in January 1949; Bevin's acceptance was \"grudging\"."
+  },
+  {
+   "f": "cambon",
+   "t": "cambon_letter",
+   "type": "authorship",
+   "status": "verified",
+   "src": "w_wp_cambon",
+   "label": "June 1917: the French diplomat Jules Cambon wrote of \"the renaissance of the Jewish nationality in that Land\", months before Balfour."
+  },
+  {
+   "f": "cambon_letter",
+   "t": "sokolow",
+   "type": "addressee",
+   "status": "verified",
+   "src": "w_wp_cambon",
+   "label": "Addressed to Nahum Sokolow."
+  },
+  {
+   "f": "france_gov",
+   "t": "cambon_letter",
+   "type": "official act",
+   "status": "verified",
+   "src": "w_wp_cambon",
+   "label": "A statement of French government sympathy (unpublished at the time)."
+  },
+  {
+   "f": "cambon_letter",
+   "t": "balfour_decl",
+   "type": "influence",
+   "status": "reported",
+   "src": "w_wp_cambon",
+   "label": "Martin Kramer argues French assent, with the Vatican's, was a precondition for Balfour."
+  },
+  {
+   "f": "beck",
+   "t": "jabotinsky",
+   "type": "meeting",
+   "status": "reported",
+   "src": "w_etzel_poland",
+   "label": "1936: Jabotinsky met Polish Foreign Minister Józef Beck and laid a basis for cooperation (Irgun's own history)."
+  },
+  {
+   "f": "beck",
+   "t": "poland_gov",
+   "type": "leadership",
+   "status": "reported",
+   "src": "w_etzel_poland",
+   "label": "Józef Beck, Polish Foreign Minister."
+  },
+  {
+   "f": "stern_a",
+   "t": "poland_gov",
+   "type": "meeting",
+   "status": "reported",
+   "src": "w_etzel_poland",
+   "label": "Nov 1937: Avraham Stern met senior officials in Warsaw to arrange army-Irgun cooperation."
+  },
+  {
+   "f": "poland_gov",
+   "t": "irgun",
+   "type": "supply",
+   "status": "reported",
+   "src": "w_etzel_poland",
+   "label": "1937-39: weapons from Polish army depots were shipped to Palestine; Polish officers in civilian clothes trained Irgun commanders (Carpathians, 25 Mar 1939). Warsaw hoped a Jewish state would draw Jewish emigration from Poland."
+  },
+  {
+   "f": "stern_a",
+   "t": "irgun",
+   "type": "membership",
+   "status": "reported",
+   "src": "w_etzel_poland",
+   "label": "Stern, then of the Irgun (later founder of Lehi)."
+  },
+  {
+   "f": "smuts",
+   "t": "balfour_decl",
+   "type": "drafting",
+   "status": "verified",
+   "src": "w_ecom_smuts",
+   "label": "Member of Britain's Imperial War Cabinet; helped formulate the Balfour Declaration and the Mandate."
+  },
+  {
+   "f": "smuts",
+   "t": "weizmann",
+   "type": "association",
+   "status": "verified",
+   "src": "w_ecom_smuts",
+   "label": "A personal friend of Weizmann and long-standing supporter."
+  },
+  {
+   "f": "smuts",
+   "t": "south_africa",
+   "type": "leadership",
+   "status": "verified",
+   "src": "w_ecom_smuts",
+   "label": "Prime Minister of South Africa."
+  },
+  {
+   "f": "south_africa",
+   "t": "israel_gov",
+   "type": "official act",
+   "status": "verified",
+   "src": "w_ecom_smuts",
+   "label": "1948: Smuts's government quickly granted de facto recognition, shortly before losing the election."
+  }
+ ]
+}

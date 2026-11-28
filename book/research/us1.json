@@ -1,0 +1,290 @@
+{
+ "volume": "usisrael",
+ "verified": "2026-10-21",
+ "entries": [
+  {
+   "id": "us1_aid",
+   "stage": "us1",
+   "topic": "What US aid to Israel is, its weight in Israel's economy and defence spending 1985-2025, and what it frees up",
+   "claims": [
+    {
+     "text": "CRS data (JVL table, $m, current): total US aid to Israel 1985 3,676.7 (military 1,700, economic 1,950); 1990 3,486.9 (military 1,792.3, economic 1,194.8); 1995 3,149.8; 2000 4,007.8 (military 2,841.3, economic 1,022.1); 2005 2,921.74 (economic 482.1); 2008 2,624.97 (economic 44.3); 2010 3,068.83 (economic 36.3); 2019 3,852.5 (economic 8.5); 2020 3,805; 2023 3,808.3; 2024 12,511.26 (military 6,800); 2025 3,804.13; economic column blank from 2020",
+     "strength": "reported",
+     "sources": [
+      "us1_jvl_aidtable"
+     ]
+    },
+    {
+     "text": "World Bank WDI (via FRED), Israel GDP current US$: 1985 $28.89bn; 1990 $61.98bn; 2000 $136.41bn; 2010 $239.37bn; 2019 $399.21bn; 2024 $542.28bn; 2025 $610.78bn",
+     "strength": "primary",
+     "sources": [
+      "us1_fred_ilgdp"
+     ]
+    },
+    {
+     "text": "Book's arithmetic (US fiscal-year aid over Israeli calendar-year GDP, both current $): 12.7% (1985), 5.6% (1990), 2.9% (2000), 1.3% (2010), 1.0% (2019), 2.3% (2024, incl. supplemental), 0.6% (2025)",
+     "strength": "primary",
+     "sources": [
+      "us1_jvl_aidtable",
+      "us1_fred_ilgdp"
+     ]
+    },
+    {
+     "text": "Melnick and Mealem (2009): defence expenditure fell 'from more than 20% of GDP in the mid-1980s' to 'less than 10% recently'; inflation 'of over 400%' before the 1985 plan; plan's success 'was supported by the U.S. grant in the amount of $1.5 billion (over a two-year period)'; US loans for defence acquisitions converted into grants",
+     "strength": "reported",
+     "sources": [
+      "us1_jvl_melnick"
+     ]
+    },
+    {
+     "text": "Even (INSS, 2010): total defence cost incl. additional costs 10% of GDP in 1993, 8.2% in 2000, 7.8% in 2005; 7.0% in 2009 (CBS model); 2010 defence budget 6.7% of GDP; under the 2007 MOU 74% of aid for procurement in the US, 26% convertible to shekels; 2010 aid about $2.775bn",
+     "strength": "reported",
+     "sources": [
+      "us1_inss_even2010"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us1_jvl_aidtable",
+     "url": "https://www.jewishvirtuallibrary.org/total-u-s-foreign-aid-to-israel-1949-present",
+     "label": "Jewish Virtual Library, 'Total U.S. Foreign Aid to Israel (1949-Present)' (table compiled from CRS, Jeremy M. Sharp, 'U.S. Foreign Aid to Israel', 28 May 2025; $ millions)"
+    },
+    {
+     "key": "us1_fred_ilgdp",
+     "url": "https://fred.stlouisfed.org/data/MKTGDPILA646NWDB",
+     "label": "World Bank, World Development Indicators via FRED, 'Gross Domestic Product for Israel' (MKTGDPILA646NWDB), current US$"
+    },
+    {
+     "key": "us1_jvl_melnick",
+     "url": "https://jewishvirtuallibrary.org/israel-studies-an-anthology-israel-s-economy",
+     "label": "Rafi Melnick and Yosef Mealem, 'Israel's Economy: 1986-2008', Israel Studies: An Anthology (Jewish Virtual Library), September 2009"
+    },
+    {
+     "key": "us1_inss_even2010",
+     "url": "https://www.inss.org.il/wp-content/uploads/2022/12/fe-3648613404.pdf",
+     "label": "Shmuel Even, 'Israel's Defense Expenditure', INSS Strategic Assessment, February 2010"
+    }
+   ]
+  },
+  {
+   "id": "us1_compare",
+   "stage": "us1",
+   "topic": "Why people compare the US and Israeli systems; scale of the aid in the US budget; the healthcare claim; the two systems at a glance and how the book measures",
+   "claims": [
+    {
+     "text": "CBO via CRFB: FY2025 federal outlays $7.0 trillion (up 4%), revenues $5.2 trillion, deficit $1.8 trillion (5.9% of GDP); net interest passed $1 trillion for the first time",
+     "strength": "primary",
+     "sources": [
+      "us1_crfb_fy2025",
+      "us1_cbo_fy2025"
+     ]
+    },
+    {
+     "text": "Census Vintage 2025: US population 341.8 million on 1 July 2025, up about 1.8 million (0.5%) from 2024",
+     "strength": "reported",
+     "sources": [
+      "us1_wa_uspop",
+      "us1_iowa_uspop"
+     ]
+    },
+    {
+     "text": "Book's arithmetic: $3.8bn a year is about 0.05% of FY2025 federal outlays of $7.0tn and about $11 per US resident",
+     "strength": "primary",
+     "sources": [
+      "us1_crfb_fy2025",
+      "us1_wa_uspop"
+     ]
+    },
+    {
+     "text": "CBS 'Israel in Numbers' (Sept 2026, provisional): population about 10.305 million: Jews and others 7.828m (78.3%), Arabs 2.173m (21.7%), plus about 304,000 foreign nationals counted separately",
+     "strength": "reported",
+     "sources": [
+      "us1_jpost_ilpop"
+     ]
+    },
+    {
+     "text": "Freedom House 2026: Israel 73/100, Free (political rights 34/40, civil liberties 39/60); scores 'do not reflect the actions of the Israeli military or Jewish Israeli settlers in the Gaza Strip or the West Bank, as conditions there are examined in separate reports'; West Bank 22/100 and Gaza Strip 2/100, Not Free",
+     "strength": "primary",
+     "sources": [
+      "us1_fh_israel2026"
+     ]
+    },
+    {
+     "text": "Freedom House 2026: United States 81/100, Free (political rights 32/40, civil liberties 49/60), down 3 points from 84",
+     "strength": "primary",
+     "sources": [
+      "us1_fh_us2026"
+     ]
+    },
+    {
+     "text": "US general election Tuesday 3 November 2026: all 435 House seats and 35 Senate seats",
+     "strength": "reported",
+     "sources": [
+      "us1_wjla_midterms"
+     ]
+    },
+    {
+     "text": "House rejected Greene's amendment to remove about $500m in annual missile-defence funding for Israel from the FY2026 defence funding bill 422-6 (July 2025); yes: Greene, Omar, Al Green, Summer Lee, Massie, Tlaib; Greene called it 'money we don't have'",
+     "strength": "reported",
+     "sources": [
+      "us1_ji_greene"
+     ]
+    },
+    {
+     "text": "Opinion column (Jewish News, 22 Jan 2026) documents that a claim that America pays for Israel's healthcare circulates among US commentators of left and right; the author states US aid to Israel is military only",
+     "strength": "reported",
+     "sources": [
+      "us1_jn_claim"
+     ]
+    },
+    {
+     "text": "Commonwealth Fund: Israel's National Health Insurance Law of 1995 'introduced universal health care for all citizens and permanent residents'; four nonprofit plans (Clalit, Maccabi, Meuhedet, Leumit); funded by a health tax (3.2% of income up to 60% of the average wage, 5.2% above) plus government funding; collected by the NII; government spending 65% of health expenditure in 2024, out-of-pocket 19.9%; asylum seekers, undocumented migrants and foreign workers excluded",
+     "strength": "reported",
+     "sources": [
+      "us1_cmwf_israel"
+     ]
+    },
+    {
+     "text": "Census P60-291: 26.7 million people (7.9%) uninsured for all of 2025, not statistically different from 2024",
+     "strength": "primary",
+     "sources": [
+      "us1_census_uninsured"
+     ]
+    },
+    {
+     "text": "World Bank WDI (via FRED), US GDP per capita current US$: 1985 $18,237; 1990 $23,889; 2000 $36,330; 2010 $48,643; 2019 $65,228; 2024 $86,170; 2025 $90,027",
+     "strength": "primary",
+     "sources": [
+      "us1_fred_uspc"
+     ]
+    },
+    {
+     "text": "Book's arithmetic with ir13_fred_ilpc (Israel GDP per capita 1985 $6,824; 1990 $13,300; 2000 $21,690; 2010 $31,399; 2019 $44,092; 2025 $60,337): Israel's GDP per person at market exchange rates was 37% of the US level in 1985, 56% in 1990, 60% in 2000, 65% in 2010, 68% in 2019 and 67% in 2025",
+     "strength": "primary",
+     "sources": [
+      "us1_fred_uspc"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us1_crfb_fy2025",
+     "url": "https://www.crfb.org/blogs/cbo-estimates-2025-deficit-totaled-18-trillion",
+     "label": "Committee for a Responsible Federal Budget, 'CBO Estimates 2025 Deficit Totaled $1.8 Trillion', 9 Oct 2025"
+    },
+    {
+     "key": "us1_cbo_fy2025",
+     "url": "https://cbo.gov/publication/61307",
+     "label": "Congressional Budget Office, 'Monthly Budget Review: Summary for Fiscal Year 2025', 10 Nov 2025"
+    },
+    {
+     "key": "us1_wa_uspop",
+     "url": "https://www.worldatlas.com/articles/how-many-people-are-in-the-us.html",
+     "label": "WorldAtlas, 'How many people are in the US', citing Census Bureau Vintage 2025 estimates"
+    },
+    {
+     "key": "us1_iowa_uspop",
+     "url": "https://www.iowadatacenter.org/index.php/blog/2025-population-estimates-us-and-states",
+     "label": "Iowa State Data Center, '2025 Population estimates for the U.S. and States' (Census Vintage 2025), 27 Jan 2026"
+    },
+    {
+     "key": "us1_jpost_ilpop",
+     "url": "https://www.jpost.com/israel-news/article-908103",
+     "label": "Jerusalem Post, on CBS 'Israel in Numbers' ahead of Rosh Hashanah, 9 Sep 2026"
+    },
+    {
+     "key": "us1_fh_israel2026",
+     "url": "https://freedomhouse.org/country/israel/freedom-world/2026",
+     "label": "Freedom House, 'Freedom in the World 2026: Israel'"
+    },
+    {
+     "key": "us1_fh_us2026",
+     "url": "https://freedomhouse.org/country/united-states/freedom-world/2026",
+     "label": "Freedom House, 'Freedom in the World 2026: United States'"
+    },
+    {
+     "key": "us1_wjla_midterms",
+     "url": "https://wjla.com/news/nation-world/fact-check-team-435-house-seats-and-35-senate-races-hit-the-ballot-in-november-election-day-congress-candidates-voters",
+     "label": "WJLA/The National Desk, 'Fact Check Team: 435 House seats and 35 Senate races hit the ballot in November', 18 Sep 2026"
+    },
+    {
+     "key": "us1_ji_greene",
+     "url": "https://jewishinsider.com/2025/07/marjorie-taylor-greene-amendment-missile-defense-aid-israel/",
+     "label": "Jewish Insider, 'House votes 422-6 to reject MTG bid to cut missile defense aid for Israel', July 2025"
+    },
+    {
+     "key": "us1_jn_claim",
+     "url": "https://www.jewishnews.co.uk/why-extremists-are-pushing-a-america-is-paying-for-israels-free-healthcare-lie/",
+     "label": "Gary Cohen, 'Why extremists are pushing a \"America is paying for Israel's free healthcare\" lie', Jewish News (opinion), 22 Jan 2026"
+    },
+    {
+     "key": "us1_cmwf_israel",
+     "url": "https://www.commonwealthfund.org/international-health-policy-center/countries/israel",
+     "label": "Commonwealth Fund, International Health Care System Profiles: Israel (online 1 May 2026)"
+    },
+    {
+     "key": "us1_census_uninsured",
+     "url": "https://www.census.gov/library/publications/2026/demo/p60-291.html",
+     "label": "Lisa N. Bunch and Halelujha Ketema, 'Health Insurance Coverage in the United States: 2025', US Census Bureau P60-291, 15 Sep 2026"
+    },
+    {
+     "key": "us1_fred_uspc",
+     "url": "https://fred.stlouisfed.org/data/PCAGDPUSA646NWDB",
+     "label": "World Bank, World Development Indicators via FRED, 'GDP Per Capita for the United States' (PCAGDPUSA646NWDB), current US$"
+    }
+   ]
+  },
+  {
+   "id": "us1_audit",
+   "stage": "us1",
+   "topic": "Audit re-checks for Part One (aid weight 1995, INSS on the aid's role, Bismuth's role)",
+   "claims": [
+    {
+     "text": "World Bank (via FRED): Israel GDP 1995 $105.43bn current US$; JVL/CRS table: 1995 economic aid $1,200m, military $1,800m, total $3,149.8m; book's arithmetic: economic aid about 1.1% of GDP in 1995",
+     "strength": "primary",
+     "sources": [
+      "us1a_fred_ilgdp",
+      "us1a_jvl_aidtable"
+     ]
+    },
+    {
+     "text": "INSS (11 Feb 2026): aid is 'not merely a funding source but part of a deep security-technological relationship that shapes the IDF's force buildup'; it 'serves as an institutional, political, and symbolic anchor of the alliance'; 'the provision of aid grants the United States a lever of influence over Israeli policy'",
+     "strength": "reported",
+     "sources": [
+      "us1a_inss_aid"
+     ]
+    },
+    {
+     "text": "Boaz Bismuth, MK and chair of the Knesset Foreign Affairs and Defense Committee, said about NIS 22bn of the 2026 defence budget is expenditure 'contingent on income, including the U.S. aid grant and other revenues'",
+     "strength": "reported",
+     "sources": [
+      "us1a_bd_budget2026"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "us1a_fred_ilgdp",
+     "url": "https://fred.stlouisfed.org/data/MKTGDPILA646NWDB",
+     "label": "World Bank WDI via FRED, 'Gross Domestic Product for Israel' (MKTGDPILA646NWDB), current US$, checked 21 Oct 2026"
+    },
+    {
+     "key": "us1a_jvl_aidtable",
+     "url": "https://www.jewishvirtuallibrary.org/total-u-s-foreign-aid-to-israel-1949-present",
+     "label": "Jewish Virtual Library, 'Total U.S. Foreign Aid to Israel (1949-Present)' (CRS data), checked 21 Oct 2026"
+    },
+    {
+     "key": "us1a_inss_aid",
+     "url": "https://www.inss.org.il/publication/us-aid-to-israel/",
+     "label": "Ben Sasson-Gordis, Fadlon and Klor, 'Reducing US Military Aid to Israel', INSS Insight No. 2094, 11 Feb 2026"
+    },
+    {
+     "key": "us1a_bd_budget2026",
+     "url": "https://breakingdefense.com/2026/03/israel-approves-45b-defense-budget-as-iran-war-rages/",
+     "label": "Breaking Defense, 'Israel approves $45B defense budget as Iran war rages', 30 Mar 2026"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "volume": "road1948",
+ "verified": "2026-11-19",
+ "entries": [
+  {
+   "id": "cg_pass",
+   "stage": "rd7",
+   "topic": "Contingency and timing (Nov 2026)",
+   "claims": [
+    {
+     "text": "Britain at war with the Ottoman Empire, early Nov 1914; Asquith, 9 Nov: the Ottoman government 'rung the death knell of Ottoman dominion'; Samuel memorandum from 21 Jan 1915; Lloyd George 'very keen to see a Jewish state'.",
+     "strength": "reported",
+     "sources": [
+      "cg_fop"
+     ]
+    },
+    {
+     "text": "Kishinev, 19–21 April 1903: 47–49 killed; led Herzl to the Uganda scheme; self-defence leagues (Jabotinsky); 'tens of thousands' left for the West or Palestine.",
+     "strength": "reported",
+     "sources": [
+      "cg_kish"
+     ]
+    },
+    {
+     "text": "Ottoman wartime persecution: ~7,000 Jewish refugees to Alexandria by early 1915; ~8,000 expelled from Jaffa in April 1917.",
+     "strength": "reported",
+     "sources": [
+      "cg_jamal"
+     ]
+    },
+    {
+     "text": "Farhud, 1–2 June 1941: 128 killed (official), 150–180 (other estimate); afterwards many young Iraqi Jews turned to Zionism; Iraqi Jews included in Zionist immigration plans in 1943.",
+     "strength": "verified",
+     "sources": [
+      "cg_farhud"
+     ]
+    },
+    {
+     "text": "Bevin, 18 Feb 1947: referral to the UN; the Mandate 'proved to be unworkable in practice'; no power 'to award the country'.",
+     "strength": "verified",
+     "sources": [
+      "cg_hansard"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "key": "cg_fop",
+     "url": "https://en.wikipedia.org/wiki/The_Future_of_Palestine",
+     "label": "Wikipedia, 'The Future of Palestine'"
+    },
+    {
+     "key": "cg_kish",
+     "url": "https://wikiwand.com/en/Kishinev_Pogrom",
+     "label": "Wikipedia (via Wikiwand), 'Kishinev pogrom'"
+    },
+    {
+     "key": "cg_jamal",
+     "url": "https://www.jns.org/opinion/how-jews-in-palestine-were-persecuted-during-the-1915-armenian-genocide/",
+     "label": "Uzay Bulut, JNS (2021), on Ottoman wartime persecution of the Jews of Palestine"
+    },
+    {
+     "key": "cg_farhud",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-farhud",
+     "label": "USHMM Holocaust Encyclopedia, 'The Farhud'"
+    },
+    {
+     "key": "cg_hansard",
+     "url": "https://api.parliament.uk/historic-hansard/commons/1947/feb/18/palestine-conference-government-policy",
+     "label": "Hansard, House of Commons, 18 February 1947"
+    }
+   ]
+  }
+ ]
+}
